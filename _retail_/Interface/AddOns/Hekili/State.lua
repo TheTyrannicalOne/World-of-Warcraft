@@ -1637,6 +1637,9 @@ local mt_state = {
         elseif k == 'execute_remains' then
             return ( state:IsCasting( t.this_action, true ) and max( state:QueuedCastRemains( t.this_action, true ), state.gcd.remains ) ) or ( state.prev[1][ t.this_action ] and state.gcd.remains ) or 0
 
+        elseif k == 'prowling' then
+            return t.buff.prowl.up or ( t.buff.cat_form.up and t.buff.shadowform.up )        
+
         elseif type(k) == 'string' and k:sub(1, 16) == 'incoming_damage_' then
             local remains = k:sub(17)
             local time = remains:match("^(%d+)[m]?s")
@@ -1769,8 +1772,10 @@ local mt_state = {
         elseif k == 'cast_regen' then
             return ( max( state.gcd.execute, ability.cast or 0 ) * state[ ability.spendType or class.primaryResource ].regen ) -- - ( ability and ability.spend or 0 )
 
-        elseif k == 'prowling' then
-            return t.buff.prowl.up or ( t.buff.cat_form.up and t.buff.shadowform.up )
+        elseif k == 'crit_pct_current' or k == 'crit_percent_current' then
+            -- This is the crit % of the current ability.
+            -- Pulse from the ability's 'critical' value or uses current character sheet crit.
+            return ability and ability.critical or t.stat.crit
 
         end
 
@@ -1849,11 +1854,11 @@ local mt_state = {
         if t.settings[k] ~= nil then return t.settings[k] end
         if t.toggle[k] ~= nil then return t.toggle[k] end
 
-        --[[ local stack = debugstack()
-        -- if stack then stack = stack:match( "^(.-\n?.-\n?.-)\n" ) end
+        local stack = debugstack()
+        if stack then stack = stack:match( "^(.-\n?.-\n?.-)\n" ) end
 
         Hekili:Error( "Returned unknown string '" .. k .. "' in state metatable." .. ( stack and ( "\n" .. stack ) or "" ) )
-        return nil ]]
+        return nil
     end,
     __newindex = function(t, k, v)
         rawset(t, k, v)
@@ -2598,62 +2603,42 @@ local mt_prev_lookup = {
         if state.time == 0 then return false end
 
         local idx = t.index
+        local preds, prev
+        local action
+        
+        if t.meta == 'castsAll' then preds, prev = state.predictions, state.prev
+        elseif t.meta == 'castsOn' then preds, prev = state.predictionsOn, state.prev_gcd
+        elseif t.meta == 'castsOff' then preds, prev = state.predictionsOff, state.prev_off_gcd end
 
-        if t.meta == 'castsAll' then
-            -- Check predictions first.
-            if state.predictions[ idx ] then return state.predictions[ idx ] == k end
+        if k == 'spell' then
+            -- Return the actual spell for the slot, for lookups.
+            if preds[ idx ] then return preds[ idx ] end
 
-            -- There isn't a prediction for that entry yet, go back to actual collected data.
             if state.player.queued_ability then
-                if idx == #state.predictions + 1 then
-                    return state.player.queued_ability
-                end
-                return state.prev.history[ idx - #state.predictions + 1 ]
+                if idx == #preds + 1 then return state.player.queued_ability end
+                return prev.history[ idx - #preds + 1 ]
             end
-
-            if idx == 1 and state.prev.override then
-                return state.prev.override == k
+    
+            if idx == 1 and prev.override then
+                return prev.override
             end
-
-            return state.prev.history[ idx - #state.predictions ] == k
-
-        elseif t.meta == 'castsOn' then
-            -- Check predictions first.
-            if state.predictionsOn[ idx ] then return state.predictionsOn[ idx ] == k end
-
-            -- There isn't a prediction for that entry yet, go back to actual collected data.
-            if state.player.queued_ability and state.player.queued_gcd then
-                if idx == #state.predictionsOn + 1 then
-                    return state.player.queued_ability
-                end
-                return state.prev_gcd.history[ idx - #state.predictionsOn + 1 ]
-            end
-
-            if idx == 1 and state.prev_gcd.override then
-                return state.prev_gcd.override == k
-            end
-
-            return state.prev_gcd.history[ idx - #state.predictionsOn ] == k
-
+    
+            return prev.history[ idx - #preds ]
         end
 
-        -- castsOff
-        if state.predictionsOff[ idx ] then return state.predictionsOff[ idx ] == k end
+        if preds[ idx ] then return preds[ idx ] == k end
 
-        if state.player.queued_ability and state.player.queued_off then
-            if idx == #state.predictionsOff + 1 then
-                return state.player.queued_ability
-            end
-            return state.prev_off_gcd.history[ idx - #state.predictionsOff + 1 ]
+        if state.player.queued_ability then
+            if idx == #preds + 1 then return state.player.queued_ability == k end
+            return prev.history[ idx - #preds + 1 ] == k
         end
 
-        if idx == 1 and state.prev_off_gcd.override then
-            return state.prev_off_gcd.override == k
+        if idx == 1 and prev.override then
+            return prev.override == k
         end
 
-        return state.prev_off_gcd.history[ idx - #state.predictionsOff ] == k
-
-    end
+        return prev.history[ idx - #preds ] == k
+    end,
 }
 
 local prev_lookup = setmetatable( {
@@ -3945,19 +3930,19 @@ local mt_default_action = {
             return max( value, t.cast_time )
 
         elseif k == 'charges' then
-            return class.abilities[ t.action ].charges and state.cooldown[ t.action ].charges or 0
+            return ability.charges and state.cooldown[ t.action ].charges or 0
 
         elseif k == 'charges_fractional' then
             return state.cooldown[ t.action ].charges_fractional
 
         elseif k == 'recharge_time' then
-            return class.abilities[ t.action ].recharge or 0
+            return ability.recharge or 0
 
         elseif k == 'max_charges' then
-            return class.abilities[ t.action ].charges or 0
+            return ability.charges or 0
 
         elseif k == 'time_to_max_charges' or k == 'full_recharge_time' then
-            return ( class.abilities[ t.action ].charges - state.cooldown[ t.action ].charges_fractional ) * class.abilities[ t.action ].recharge
+            return ( ability.charges - state.cooldown[ t.action ].charges_fractional ) * ability.recharge
 
         elseif k == 'ready_time' then
             return state:IsUsable( t.action ) and state:TimeToReady( t.action ) or 999
@@ -3966,10 +3951,13 @@ local mt_default_action = {
             return state:IsUsable( t.action ) and state:IsReady( t.action )
 
         elseif k == 'cast_time' then
-            return class.abilities[ t.action ].cast
+            return ability.cast
 
         elseif k == 'cooldown' then
-            return class.abilities[ t.action ].cooldown
+            return ability.cooldown
+
+        elseif k == 'crit_pct_current' then
+            return ability.critical or state.stat.crit
 
         elseif k == 'ticking' then
             return ( state.dot[ aura ].ticking )
@@ -3988,7 +3976,7 @@ local mt_default_action = {
 
         elseif k == 'travel_time' then
             -- NYI: maybe capture the last travel time for the spell and use that?
-            local v = class.abilities[ t.action ].velocity
+            local v = ability.velocity
 
             if v and v > 0 then return state.target.maxR / v end
             return 0
@@ -4006,10 +3994,10 @@ local mt_default_action = {
             return floor( max( state.gcd.execute, t.cast_time ) * state[ class.primaryResource ].regen ) -- - ( ability and t.cost or 0 )
 
         elseif k == 'cost' then
-            local a = class.abilities[ t.action ].spend
+            local a = ability.spend
             if not a then return 0 end
             if type( a ) == 'function' then a = a() end
-            if a > 0 and a < 1 then a = a * state[ class.abilities[ t.action ].spendType or class.primaryResource ].modmax end
+            if a > 0 and a < 1 then a = a * state[ ability.spendType or class.primaryResource ].modmax end
             return a
 
         elseif k == 'in_flight' then
@@ -4033,7 +4021,7 @@ local mt_default_action = {
             return ( state:IsCasting( t.action, true ) and max( state:QueuedCastRemains( t.action, true ), state.gcd.remains ) ) or ( state.prev[1][ t.action ] and state.gcd.remains ) or 0
 
         else
-            local val = class.abilities[ t.action ][ k ]
+            local val = ability[ k ]
 
             if val ~= nil then
                 if type( val ) == 'function' then return val() end

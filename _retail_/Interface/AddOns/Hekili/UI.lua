@@ -907,7 +907,7 @@ do
                             outOfRange = ( LRC:GetRange( "target" ) or 50 ) > 7
                         elseif conf.range.type == "ability" and UnitExists( "target" ) and UnitCanAttack( "player", "target" ) then
                             if a.item then
-                                outOfRange = IsItemInRange( a.item, "target" ) == false
+                                outOfRange = IsItemInRange( a.itemCd or a.item, "target" ) == false
                             else
                                 local name = a.range and class.abilities[ a.range ] and class.abilities[ a.range ].name
                                 name = name or a.actualName or a.name
@@ -1624,6 +1624,7 @@ do
         for i, d in pairs( ns.UI.Displays ) do        
             d.criticalUpdate = true
             if d.firstForce == 0 then d.firstForce = GetTime() end
+            self.freshFrame = false
         end
     end    
 

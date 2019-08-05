@@ -2,2633 +2,2656 @@
 RCLootCouncilDB = {
 	["global"] = {
 		["log"] = {
-			"18:39:40 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1]
-			"18:39:40 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [2]
-			"18:39:40 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SplayerInfo^N3^SLillys-Blackhand^N4^SHUNTER^N5^SDAMAGER^N6^SWarlord^N8^N0^N9^N359.25^N10^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [3]
-			"18:39:40 - Comm received:^1^SplayerInfo^T^N1^SLillys-Blackhand^N2^SHUNTER^N3^SDAMAGER^N4^SWarlord^N6^N0^N7^N359.25^N8^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (WHISPER)", -- [4]
-			"18:39:40 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (Warlord) (nil) (0) (359.25) (253)", -- [5]
-			"18:39:44 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^Scouncil_request^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [6]
-			"18:39:44 - Comm received:^1^Scouncil_request^T^t^^ (from:) (Lillys-Blackhand) (distri:) (WHISPER)", -- [7]
-			"18:39:45 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [8]
-			"18:39:45 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [9]
-			"18:39:45 - VotingFrame:Update() without lootTable!!", -- [10]
-			"18:40:05 - VotingFrame:Update() without lootTable!!", -- [11]
-			"18:40:11 - VotingFrame:Update() without lootTable!!", -- [12]
-			"18:40:12 - VotingFrame:Update() without lootTable!!", -- [13]
-			"18:40:25 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [14]
-			"18:40:25 - GetML()", -- [15]
-			"18:40:28 - VotingFrame:Update() without lootTable!!", -- [16]
-			"18:40:55 - VotingFrame:Update() without lootTable!!", -- [17]
-			"18:41:10 - VotingFrame:Update() without lootTable!!", -- [18]
-			"18:43:10 - VotingFrame:Update() without lootTable!!", -- [19]
-			"18:47:19 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [20]
-			"18:47:19 - GetML()", -- [21]
-			"18:47:20 - VotingFrame:Update() without lootTable!!", -- [22]
-			"18:48:31 - VotingFrame:Update() without lootTable!!", -- [23]
-			"18:50:25 - VotingFrame:Update() without lootTable!!", -- [24]
-			"18:51:21 - Event: (LOOT_READY) (true)", -- [25]
-			"18:51:37 - Event: (LOOT_READY) (true)", -- [26]
-			"18:51:41 - ML event (PLAYER_REGEN_ENABLED)", -- [27]
-			"18:51:41 - Event: (LOOT_READY) (true)", -- [28]
-			"18:51:41 - Event: (LOOT_READY) (true)", -- [29]
-			"18:51:42 - Event: (LOOT_READY) (true)", -- [30]
-			"18:52:54 - Event: (LOOT_READY) (true)", -- [31]
-			"18:53:17 - Event: (LOOT_READY) (true)", -- [32]
-			"18:53:17 - Event: (LOOT_READY) (true)", -- [33]
-			"18:53:48 - Event: (LOOT_READY) (true)", -- [34]
-			"18:54:08 - ML event (PLAYER_REGEN_ENABLED)", -- [35]
-			"18:54:09 - Event: (LOOT_READY) (true)", -- [36]
-			"18:54:09 - Event: (LOOT_READY) (true)", -- [37]
-			"18:55:15 - Event: (LOOT_READY) (true)", -- [38]
-			"18:55:40 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169497) (|cffa335ee|Hitem:169497::::::::120:71::::::|h[Recipe: Superior Battle Potion of Intellect]|h|r) (1) (Lillys-Blackhand) (HUNTER)", -- [39]
-			"18:55:43 - ML event (PLAYER_REGEN_ENABLED)", -- [40]
-			"18:55:43 - Event: (LOOT_READY) (true)", -- [41]
-			"18:55:56 - ML event (PLAYER_REGEN_ENABLED)", -- [42]
-			"18:55:56 - Event: (LOOT_READY) (true)", -- [43]
-			"18:56:03 - Event: (LOOT_READY) (true)", -- [44]
-			"18:56:03 - Event: (LOOT_READY) (true)", -- [45]
-			"18:56:03 - ML event (PLAYER_REGEN_ENABLED)", -- [46]
-			"18:56:20 - Event: (LOOT_READY) (true)", -- [47]
-			"18:56:20 - Event: (LOOT_READY) (true)", -- [48]
-			"18:56:21 - Event: (LOOT_READY) (true)", -- [49]
-			"18:56:21 - ML event (PLAYER_REGEN_ENABLED)", -- [50]
-			"18:56:38 - Event: (LOOT_READY) (true)", -- [51]
-			"18:56:38 - Event: (LOOT_READY) (true)", -- [52]
-			"18:56:39 - ML event (PLAYER_REGEN_ENABLED)", -- [53]
-			"18:56:44 - Event: (LOOT_READY) (true)", -- [54]
-			"18:57:06 - Event: (LOOT_READY) (true)", -- [55]
-			"18:57:07 - ML event (PLAYER_REGEN_ENABLED)", -- [56]
-			"18:57:20 - ML event (PLAYER_REGEN_ENABLED)", -- [57]
-			"18:57:21 - Event: (LOOT_READY) (true)", -- [58]
-			"18:57:49 - ML event (PLAYER_REGEN_ENABLED)", -- [59]
-			"18:57:49 - Event: (LOOT_READY) (true)", -- [60]
-			"18:59:08 - ML event (PLAYER_REGEN_ENABLED)", -- [61]
-			"18:59:09 - Event: (LOOT_READY) (true)", -- [62]
-			"18:59:36 - Event: (LOOT_READY) (true)", -- [63]
-			"18:59:40 - ML event (PLAYER_REGEN_ENABLED)", -- [64]
-			"18:59:40 - Event: (LOOT_READY) (true)", -- [65]
-			"18:59:53 - Event: (LOOT_READY) (true)", -- [66]
-			"18:59:53 - ML event (PLAYER_REGEN_ENABLED)", -- [67]
-			"19:00:34 - VotingFrame:Update() without lootTable!!", -- [68]
-			"19:01:02 - VotingFrame:Update() without lootTable!!", -- [69]
-			"19:01:35 - Event: (LOOT_READY) (true)", -- [70]
-			"19:01:36 - Event: (LOOT_READY) (true)", -- [71]
-			"19:01:36 - ML event (PLAYER_REGEN_ENABLED)", -- [72]
-			"19:03:35 - VotingFrame:Update() without lootTable!!", -- [73]
-			"19:07:42 - VotingFrame:Update() without lootTable!!", -- [74]
-			"19:07:59 - VotingFrame:Update() without lootTable!!", -- [75]
-			"19:10:16 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [76]
-			"19:10:16 - GetML()", -- [77]
-			"19:10:17 - VotingFrame:Update() without lootTable!!", -- [78]
-			"19:10:43 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [79]
-			"19:10:43 - GetML()", -- [80]
-			"19:10:44 - VotingFrame:Update() without lootTable!!", -- [81]
-			"19:10:48 - VotingFrame:Update() without lootTable!!", -- [82]
-			"19:11:13 - VotingFrame:Update() without lootTable!!", -- [83]
-			"19:11:52 - VotingFrame:Update() without lootTable!!", -- [84]
-			"19:11:58 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [85]
-			"19:11:58 - GetML()", -- [86]
-			"19:11:59 - VotingFrame:Update() without lootTable!!", -- [87]
-			"19:13:05 - VotingFrame:Update() without lootTable!!", -- [88]
-			"19:14:47 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [89]
-			"19:14:47 - GetML()", -- [90]
-			"19:14:49 - VotingFrame:Update() without lootTable!!", -- [91]
-			"19:16:13 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [92]
-			"19:16:13 - GetML()", -- [93]
-			"19:16:13 - Event: (PARTY_LEADER_CHANGED)", -- [94]
-			"19:16:13 - GetML()", -- [95]
-			"19:16:13 - Stop handling loot", -- [96]
-			"19:16:13 - ML Disabled", -- [97]
-			"19:16:13 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [98]
-			"19:16:14 - VotingFrame:Update() without lootTable!!", -- [99]
-			"19:17:24 - Event: (LOOT_READY) (true)", -- [100]
-			"19:17:24 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:159140::::::::120:71::::::|h[Lifeless Clay]|h|r) (0) (1) (Creature-0-3019-2207-14913-151638-000033A0B8) (1)", -- [101]
-			"19:17:24 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:157844::::::::120:71::::::|h[Iridescent Speck]|h|r) (0) (1) (Creature-0-3019-2207-14913-151638-0000B3A0B8) (1)", -- [102]
-			"19:17:24 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:157844::::::::120:71::::::|h[Iridescent Speck]|h|r) (0)", -- [103]
-			"19:17:24 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:159140::::::::120:71::::::|h[Lifeless Clay]|h|r) (0)", -- [104]
-			"19:17:24 - Event: (LOOT_CLOSED)", -- [105]
-			"19:17:24 - Event: (LOOT_CLOSED)", -- [106]
-			"19:17:24 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [107]
-			"19:17:24 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [108]
-			"19:17:24 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [109]
-			"19:17:24 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [110]
-			"19:17:57 - Event: (LOOT_READY) (true)", -- [111]
-			"19:17:57 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:159140::::::::120:71::::::|h[Lifeless Clay]|h|r) (0) (1) (Creature-0-3019-2207-14913-151639-0001B3A0B8) (1)", -- [112]
-			"19:17:57 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:159140::::::::120:71::::::|h[Lifeless Clay]|h|r) (0)", -- [113]
-			"19:17:57 - Event: (LOOT_CLOSED)", -- [114]
-			"19:17:57 - Event: (LOOT_CLOSED)", -- [115]
-			"19:17:57 - Comm received:^1^Slooted^T^N1^S151639^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [116]
-			"19:17:57 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [117]
-			"19:17:57 - Comm received:^1^Slooted^T^N1^S151639^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [118]
-			"19:17:57 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [119]
-			"19:17:59 - Event: (LOOT_READY) (true)", -- [120]
-			"19:17:59 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:155631::::::::120:71::::::|h[Inert Stone]|h|r) (0) (1) (Creature-0-3019-2207-14913-151639-0001B3A0B8) (1)", -- [121]
-			"19:17:59 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:155631::::::::120:71::::::|h[Inert Stone]|h|r) (0)", -- [122]
-			"19:17:59 - Event: (LOOT_CLOSED)", -- [123]
-			"19:17:59 - Event: (LOOT_CLOSED)", -- [124]
-			"19:17:59 - Comm received:^1^Slooted^T^N1^S151639^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [125]
-			"19:17:59 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [126]
-			"19:17:59 - Comm received:^1^Slooted^T^N1^S151639^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [127]
-			"19:17:59 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [128]
-			"19:18:37 - Event: (LOOT_READY) (true)", -- [129]
-			"19:18:37 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:157844::::::::120:71::::::|h[Iridescent Speck]|h|r) (0) (3) (Creature-0-3019-2207-14913-151638-0002B3A0B8) (1) (Creature-0-3019-2207-14913-151638-000233A0B8) (1) (Creature-0-3019-2207-14913-151638-000333A0B8) (1)", -- [130]
-			"19:18:37 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:157844::::::::120:71::::::|h[Iridescent Speck]|h|r) (0)", -- [131]
-			"19:18:37 - Event: (LOOT_CLOSED)", -- [132]
-			"19:18:37 - Event: (LOOT_CLOSED)", -- [133]
-			"19:18:37 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [134]
-			"19:18:37 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [135]
-			"19:18:37 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [136]
-			"19:18:37 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [137]
-			"19:18:41 - Event: (LOOT_READY) (true)", -- [138]
-			"19:18:41 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:155631::::::::120:71::::::|h[Inert Stone]|h|r) (0) (1) (Creature-0-3019-2207-14913-151638-000333A0B8) (1)", -- [139]
-			"19:18:41 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:155631::::::::120:71::::::|h[Inert Stone]|h|r) (0)", -- [140]
-			"19:18:41 - Event: (LOOT_CLOSED)", -- [141]
-			"19:18:41 - Event: (LOOT_CLOSED)", -- [142]
-			"19:18:41 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [143]
-			"19:18:41 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [144]
-			"19:18:41 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [145]
-			"19:18:41 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [146]
-			"19:18:43 - Event: (LOOT_READY) (true)", -- [147]
-			"19:18:43 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:155631::::::::120:71::::::|h[Inert Stone]|h|r) (0) (1) (Creature-0-3019-2207-14913-151638-000233A0B8) (1)", -- [148]
-			"19:18:43 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:155631::::::::120:71::::::|h[Inert Stone]|h|r) (0)", -- [149]
-			"19:18:43 - Event: (LOOT_CLOSED)", -- [150]
-			"19:18:43 - Event: (LOOT_CLOSED)", -- [151]
-			"19:18:43 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [152]
-			"19:18:43 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [153]
-			"19:18:43 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [154]
-			"19:18:43 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [155]
-			"19:18:45 - Event: (LOOT_READY) (true)", -- [156]
-			"19:18:45 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:155631::::::::120:71::::::|h[Inert Stone]|h|r) (0) (1) (Creature-0-3019-2207-14913-151638-0002B3A0B8) (1)", -- [157]
-			"19:18:45 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:155631::::::::120:71::::::|h[Inert Stone]|h|r) (0)", -- [158]
-			"19:18:45 - Event: (LOOT_CLOSED)", -- [159]
-			"19:18:45 - Event: (LOOT_CLOSED)", -- [160]
-			"19:18:46 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [161]
-			"19:18:46 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [162]
-			"19:18:46 - Comm received:^1^Slooted^T^N1^S151638^t^^ (from:) (Shanyt) (distri:) (INSTANCE_CHAT)", -- [163]
-			"19:18:46 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [164]
-			"19:21:38 - Event: (LOOT_READY) (true)", -- [165]
-			"19:21:38 - Event: (LOOT_CLOSED)", -- [166]
-			"19:21:38 - Event: (LOOT_CLOSED)", -- [167]
-			"19:21:38 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (167830) (|cffe6cc80|Hitem:167830::::::::120:71::::::|h[Petrified Ebony Scale]|h|r) (1) (Shanyt) (WARRIOR)", -- [168]
-			"19:23:25 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [169]
-			"19:23:25 - GetML()", -- [170]
-			"19:23:25 - Event: (GROUP_LEFT) (2) (Party-75-000031440ECB)", -- [171]
-			"19:23:25 - GetML()", -- [172]
-			"19:23:25 - Resetting council as we have a new ML!", -- [173]
-			"19:23:25 - MasterLooter =  (Shanyt-ArgentDawn)", -- [174]
-			"19:23:25 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [175]
-			"19:23:25 - ML:NewML (Shanyt-ArgentDawn)", -- [176]
-			"19:23:25 - UpdateMLdb", -- [177]
-			"19:23:25 - OnMLDBReceived", -- [178]
-			"19:23:25 - UpdateGroup (true)", -- [179]
-			"19:23:25 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [180]
-			"19:23:25 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [181]
-			"19:23:25 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [182]
-			"19:23:25 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [183]
-			"19:23:25 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [184]
-			"19:23:26 - VotingFrame:Update() without lootTable!!", -- [185]
-			"19:23:27 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [186]
-			"19:23:28 - Comm received:^1^SplayerInfo^T^N1^SShanyt-ArgentDawn^N2^SWARRIOR^N3^SDAMAGER^N4^SAhroun^N6^N0^N7^N392.6875^N8^N71^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [187]
-			"19:23:28 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (Ahroun) (nil) (0) (392.6875) (71)", -- [188]
-			"19:23:30 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [189]
-			"19:23:30 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [190]
-			"19:23:30 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [191]
-			"19:23:35 - UpdateGroup (table: 00000275E2C2F980)", -- [192]
-			"19:23:35 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [193]
-			"19:23:35 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [194]
-			"19:23:35 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [195]
-			"19:23:40 - Timer MLdb_check passed", -- [196]
-			"19:23:45 - VotingFrame:Update() without lootTable!!", -- [197]
-			"19:24:13 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [198]
-			"19:24:13 - GetML()", -- [199]
-			"19:24:14 - VotingFrame:Update() without lootTable!!", -- [200]
-			"19:24:27 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [201]
-			"19:24:27 - GetML()", -- [202]
-			"19:24:28 - VotingFrame:Update() without lootTable!!", -- [203]
-			"19:24:37 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [204]
-			"19:24:37 - GetML()", -- [205]
-			"19:24:39 - VotingFrame:Update() without lootTable!!", -- [206]
-			"19:24:46 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [207]
-			"19:24:46 - GetML()", -- [208]
-			"19:24:46 - VotingFrame:Update() without lootTable!!", -- [209]
-			"19:24:46 - VotingFrame:Update() without lootTable!!", -- [210]
-			"19:24:52 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^Scouncil_request^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [211]
-			"19:24:52 - Comm received:^1^Scouncil_request^T^t^^ (from:) (Lillys-Blackhand) (distri:) (WHISPER)", -- [212]
-			"19:24:52 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [213]
-			"19:24:52 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [214]
-			"19:25:08 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [215]
-			"19:25:08 - GetML()", -- [216]
-			"19:25:09 - VotingFrame:Update() without lootTable!!", -- [217]
-			"19:26:26 - VotingFrame:Update() without lootTable!!", -- [218]
-			"19:26:57 - VotingFrame:Update() without lootTable!!", -- [219]
-			"19:27:03 - VotingFrame:Update() without lootTable!!", -- [220]
-			"19:27:08 - VotingFrame:Update() without lootTable!!", -- [221]
-			"19:27:29 - VotingFrame:Update() without lootTable!!", -- [222]
-			"19:28:53 - VotingFrame:Update() without lootTable!!", -- [223]
-			"19:29:01 - VotingFrame:Update() without lootTable!!", -- [224]
-			"19:29:49 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [225]
-			"19:29:49 - GetML()", -- [226]
-			"19:29:50 - VotingFrame:Update() without lootTable!!", -- [227]
-			"19:29:53 - VotingFrame:Update() without lootTable!!", -- [228]
-			"19:30:02 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [229]
-			"19:30:02 - GetML()", -- [230]
-			"19:30:03 - VotingFrame:Update() without lootTable!!", -- [231]
-			"19:30:12 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [232]
-			"19:30:12 - GetML()", -- [233]
-			"19:30:14 - VotingFrame:Update() without lootTable!!", -- [234]
-			"19:31:28 - VotingFrame:Update() without lootTable!!", -- [235]
-			"19:33:56 - VotingFrame:Update() without lootTable!!", -- [236]
-			"19:35:23 - VotingFrame:Update() without lootTable!!", -- [237]
-			"19:35:57 - VotingFrame:Update() without lootTable!!", -- [238]
-			"19:37:43 - VotingFrame:Update() without lootTable!!", -- [239]
-			"19:41:59 - Event: (LOOT_READY) (true)", -- [240]
-			"19:41:59 - Event: (LOOT_READY) (true)", -- [241]
-			"19:42:19 - VotingFrame:Update() without lootTable!!", -- [242]
-			"19:42:20 - Event: (LOOT_READY) (true)", -- [243]
-			"19:42:40 - VotingFrame:Update() without lootTable!!", -- [244]
-			"19:42:41 - Event: (LOOT_READY) (true)", -- [245]
-			"19:43:21 - VotingFrame:Update() without lootTable!!", -- [246]
-			"19:43:25 - Event: (LOOT_READY) (true)", -- [247]
-			"19:43:25 - Event: (LOOT_READY) (true)", -- [248]
-			"19:43:30 - Event: (LOOT_READY) (true)", -- [249]
-			"19:43:30 - ML event (PLAYER_REGEN_ENABLED)", -- [250]
-			"19:44:27 - ML event (PLAYER_REGEN_ENABLED)", -- [251]
-			"19:44:27 - Event: (LOOT_READY) (true)", -- [252]
-			"19:44:53 - ML event (PLAYER_REGEN_ENABLED)", -- [253]
-			"19:44:54 - Event: (LOOT_READY) (true)", -- [254]
-			"19:51:20 - VotingFrame:Update() without lootTable!!", -- [255]
-			"19:51:26 - VotingFrame:Update() without lootTable!!", -- [256]
-			"19:51:28 - ML event (PLAYER_REGEN_ENABLED)", -- [257]
-			"19:51:29 - Event: (LOOT_READY) (true)", -- [258]
-			"19:51:29 - Event: (LOOT_READY) (true)", -- [259]
-			"19:51:29 - VotingFrame:Update() without lootTable!!", -- [260]
-			"19:51:39 - Event: (LOOT_READY) (true)", -- [261]
-			"19:51:43 - Event: (LOOT_READY) (true)", -- [262]
-			"19:51:43 - Event: (LOOT_READY) (true)", -- [263]
-			"19:51:44 - ML event (PLAYER_REGEN_ENABLED)", -- [264]
-			"19:52:07 - Event: (LOOT_READY) (true)", -- [265]
-			"19:52:08 - Event: (LOOT_READY) (true)", -- [266]
-			"19:52:08 - ML event (PLAYER_REGEN_ENABLED)", -- [267]
-			"19:52:24 - Event: (LOOT_READY) (true)", -- [268]
-			"19:52:29 - Event: (LOOT_READY) (true)", -- [269]
-			"19:52:30 - ML event (PLAYER_REGEN_ENABLED)", -- [270]
-			"19:52:40 - ML event (PLAYER_REGEN_ENABLED)", -- [271]
-			"19:52:49 - Event: (LOOT_READY) (true)", -- [272]
-			"19:52:50 - ML event (PLAYER_REGEN_ENABLED)", -- [273]
-			"19:52:56 - ML event (PLAYER_REGEN_ENABLED)", -- [274]
-			"19:52:56 - Event: (LOOT_READY) (true)", -- [275]
-			"19:53:41 - Event: (LOOT_READY) (true)", -- [276]
-			"19:53:42 - Event: (LOOT_READY) (true)", -- [277]
-			"19:53:46 - ML event (PLAYER_REGEN_ENABLED)", -- [278]
-			"19:53:46 - Event: (LOOT_READY) (true)", -- [279]
-			"19:53:46 - Event: (LOOT_READY) (true)", -- [280]
-			"19:54:04 - Event: (LOOT_READY) (true)", -- [281]
-			"19:54:04 - Event: (LOOT_READY) (true)", -- [282]
-			"19:54:59 - Event: (LOOT_READY) (true)", -- [283]
-			"19:54:59 - Event: (LOOT_READY) (true)", -- [284]
-			"19:56:00 - ML event (PLAYER_REGEN_ENABLED)", -- [285]
-			"19:56:00 - Event: (LOOT_READY) (true)", -- [286]
-			"19:59:17 - ML event (PLAYER_REGEN_ENABLED)", -- [287]
-			"19:59:17 - Event: (LOOT_READY) (true)", -- [288]
-			"19:59:17 - Event: (LOOT_READY) (true)", -- [289]
-			"19:59:25 - Event: (LOOT_READY) (true)", -- [290]
-			"19:59:26 - Event: (LOOT_READY) (true)", -- [291]
-			"20:00:11 - ML event (PLAYER_REGEN_ENABLED)", -- [292]
-			"20:00:13 - Event: (LOOT_READY) (true)", -- [293]
-			"20:00:27 - ML event (PLAYER_REGEN_ENABLED)", -- [294]
-			"20:00:28 - Event: (LOOT_READY) (true)", -- [295]
-			"20:01:38 - Event: (LOOT_READY) (true)", -- [296]
-			"20:01:39 - ML event (PLAYER_REGEN_ENABLED)", -- [297]
-			"20:01:39 - Event: (LOOT_READY) (true)", -- [298]
-			"20:01:48 - Event: (LOOT_READY) (true)", -- [299]
-			"20:01:48 - Event: (LOOT_READY) (true)", -- [300]
-			"20:01:53 - Event: (LOOT_READY) (true)", -- [301]
-			"20:01:53 - Event: (LOOT_READY) (true)", -- [302]
-			"20:02:18 - Event: (LOOT_READY) (true)", -- [303]
-			"20:02:37 - VotingFrame:Update() without lootTable!!", -- [304]
-			"20:02:47 - VotingFrame:Update() without lootTable!!", -- [305]
-			"20:03:39 - ML event (PLAYER_REGEN_ENABLED)", -- [306]
-			"20:03:40 - Event: (LOOT_READY) (true)", -- [307]
-			"20:03:40 - Event: (LOOT_READY) (true)", -- [308]
-			"20:04:38 - Event: (LOOT_READY) (true)", -- [309]
-			"20:04:39 - Event: (LOOT_READY) (true)", -- [310]
-			"20:05:13 - ML event (PLAYER_REGEN_ENABLED)", -- [311]
-			"20:05:13 - Event: (LOOT_READY) (true)", -- [312]
-			"20:06:19 - ML event (PLAYER_REGEN_ENABLED)", -- [313]
-			"20:06:20 - Event: (LOOT_READY) (true)", -- [314]
-			"20:06:20 - Event: (LOOT_READY) (true)", -- [315]
-			"20:06:25 - Event: (LOOT_READY) (true)", -- [316]
-			"20:06:51 - VotingFrame:Update() without lootTable!!", -- [317]
-			"20:07:09 - VotingFrame:Update() without lootTable!!", -- [318]
-			"20:07:34 - Event: (LOOT_READY) (true)", -- [319]
-			"20:07:34 - ML event (PLAYER_REGEN_ENABLED)", -- [320]
-			"20:07:47 - VotingFrame:Update() without lootTable!!", -- [321]
-			"20:08:19 - VotingFrame:Update() without lootTable!!", -- [322]
-			"20:08:20 - VotingFrame:Update() without lootTable!!", -- [323]
-			"20:10:02 - VotingFrame:Update() without lootTable!!", -- [324]
-			"20:10:15 - VotingFrame:Update() without lootTable!!", -- [325]
-			"20:12:24 - VotingFrame:Update() without lootTable!!", -- [326]
-			"20:12:33 - VotingFrame:Update() without lootTable!!", -- [327]
-			"20:13:17 - VotingFrame:Update() without lootTable!!", -- [328]
-			"20:13:20 - VotingFrame:Update() without lootTable!!", -- [329]
-			"20:13:22 - VotingFrame:Update() without lootTable!!", -- [330]
-			"20:13:28 - VotingFrame:Update() without lootTable!!", -- [331]
-			"20:13:33 - VotingFrame:Update() without lootTable!!", -- [332]
-			"20:13:34 - VotingFrame:Update() without lootTable!!", -- [333]
-			"20:13:39 - VotingFrame:Update() without lootTable!!", -- [334]
-			"20:13:50 - ML event (PLAYER_REGEN_ENABLED)", -- [335]
-			"20:13:52 - Event: (LOOT_READY) (true)", -- [336]
-			"20:15:09 - Event: (LOOT_READY) (true)", -- [337]
-			"20:15:10 - Event: (LOOT_READY) (true)", -- [338]
-			"20:15:10 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169334) (|cff0070dd|Hitem:169334::::::::120:71::::::|h[Strange Oceanic Sediment]|h|r) (1) (Shanyt) (WARRIOR)", -- [339]
-			"20:15:10 - ML event (PLAYER_REGEN_ENABLED)", -- [340]
-			"20:15:46 - VotingFrame:Update() without lootTable!!", -- [341]
-			"20:16:04 - VotingFrame:Update() without lootTable!!", -- [342]
-			"20:16:09 - Event: (LOOT_READY) (true)", -- [343]
-			"20:16:09 - Event: (LOOT_READY) (true)", -- [344]
-			"20:16:13 - Event: (LOOT_READY) (true)", -- [345]
-			"20:17:11 - ML event (PLAYER_REGEN_ENABLED)", -- [346]
-			"20:17:12 - Event: (LOOT_READY) (true)", -- [347]
-			"20:17:13 - Event: (LOOT_READY) (true)", -- [348]
-			"20:19:27 - ML event (PLAYER_REGEN_ENABLED)", -- [349]
-			"20:19:28 - Event: (LOOT_READY) (true)", -- [350]
-			"20:19:41 - ML event (PLAYER_REGEN_ENABLED)", -- [351]
-			"20:19:47 - ML event (PLAYER_REGEN_ENABLED)", -- [352]
-			"20:20:09 - ML event (PLAYER_REGEN_ENABLED)", -- [353]
-			"20:20:52 - ML event (PLAYER_REGEN_ENABLED)", -- [354]
-			"20:20:53 - Event: (LOOT_READY) (true)", -- [355]
-			"20:22:05 - ML event (PLAYER_REGEN_ENABLED)", -- [356]
-			"20:22:05 - Event: (LOOT_READY) (true)", -- [357]
-			"20:22:06 - Event: (LOOT_READY) (true)", -- [358]
-			"20:22:18 - ML event (PLAYER_REGEN_ENABLED)", -- [359]
-			"20:22:25 - VotingFrame:Update() without lootTable!!", -- [360]
-			"20:22:38 - Event: (LOOT_READY) (true)", -- [361]
-			"20:22:39 - ML event (PLAYER_REGEN_ENABLED)", -- [362]
-			"20:23:05 - ML event (PLAYER_REGEN_ENABLED)", -- [363]
-			"20:23:05 - Event: (LOOT_READY) (true)", -- [364]
-			"20:23:15 - Event: (LOOT_READY) (true)", -- [365]
-			"20:23:30 - Event: (LOOT_READY) (true)", -- [366]
-			"20:23:30 - ML event (PLAYER_REGEN_ENABLED)", -- [367]
-			"20:24:09 - ML event (PLAYER_REGEN_ENABLED)", -- [368]
-			"20:24:09 - Event: (LOOT_READY) (true)", -- [369]
-			"20:24:10 - Event: (LOOT_READY) (true)", -- [370]
-			"20:24:20 - Event: (LOOT_READY) (true)", -- [371]
-			"20:24:20 - Event: (LOOT_READY) (true)", -- [372]
-			"20:24:47 - Event: (LOOT_READY) (true)", -- [373]
-			"20:24:47 - Event: (LOOT_READY) (true)", -- [374]
-			"20:24:52 - Event: (LOOT_READY) (true)", -- [375]
-			"20:24:52 - Event: (LOOT_READY) (true)", -- [376]
-			"20:24:52 - ML event (PLAYER_REGEN_ENABLED)", -- [377]
-			"20:25:20 - Event: (LOOT_READY) (true)", -- [378]
-			"20:25:20 - Event: (LOOT_READY) (true)", -- [379]
-			"20:26:04 - Event: (LOOT_READY) (true)", -- [380]
-			"20:26:04 - Event: (LOOT_READY) (true)", -- [381]
-			"20:26:04 - Event: (LOOT_READY) (true)", -- [382]
-			"20:26:05 - ML event (PLAYER_REGEN_ENABLED)", -- [383]
-			"20:26:39 - ML event (PLAYER_REGEN_ENABLED)", -- [384]
-			"20:26:40 - Event: (LOOT_READY) (true)", -- [385]
-			"20:26:40 - Event: (LOOT_READY) (true)", -- [386]
-			"20:26:53 - Event: (LOOT_READY) (true)", -- [387]
-			"20:26:53 - Event: (LOOT_READY) (true)", -- [388]
-			"20:26:54 - ML event (PLAYER_REGEN_ENABLED)", -- [389]
-			"20:27:09 - VotingFrame:Update() without lootTable!!", -- [390]
-			"20:28:24 - ML event (PLAYER_REGEN_ENABLED)", -- [391]
-			"20:28:25 - Event: (LOOT_READY) (true)", -- [392]
-			"20:28:25 - Event: (LOOT_READY) (true)", -- [393]
-			"20:30:39 - Event: (LOOT_READY) (true)", -- [394]
-			"20:30:39 - ML event (PLAYER_REGEN_ENABLED)", -- [395]
-			"20:30:40 - Event: (LOOT_READY) (true)", -- [396]
-			"20:31:05 - Event: (LOOT_READY) (true)", -- [397]
-			"20:31:38 - ML event (PLAYER_REGEN_ENABLED)", -- [398]
-			"20:31:42 - VotingFrame:Update() without lootTable!!", -- [399]
-			"20:31:54 - VotingFrame:Update() without lootTable!!", -- [400]
-			"20:31:58 - VotingFrame:Update() without lootTable!!", -- [401]
-			"20:32:49 - VotingFrame:Update() without lootTable!!", -- [402]
-			"20:32:58 - Event: (LOOT_READY) (true)", -- [403]
-			"20:33:07 - ML event (PLAYER_REGEN_ENABLED)", -- [404]
-			"20:33:08 - Event: (LOOT_READY) (true)", -- [405]
-			"20:33:38 - Event: (LOOT_READY) (true)", -- [406]
-			"20:33:38 - Event: (LOOT_READY) (true)", -- [407]
-			"20:33:38 - ML event (PLAYER_REGEN_ENABLED)", -- [408]
-			"20:34:47 - ML event (PLAYER_REGEN_ENABLED)", -- [409]
-			"20:34:48 - Event: (LOOT_READY) (true)", -- [410]
-			"20:34:48 - Event: (LOOT_READY) (true)", -- [411]
-			"20:35:11 - Event: (LOOT_READY) (true)", -- [412]
-			"20:35:12 - Event: (LOOT_READY) (true)", -- [413]
-			"20:35:28 - Event: (LOOT_READY) (true)", -- [414]
-			"20:35:38 - Event: (LOOT_READY) (true)", -- [415]
-			"20:35:38 - Event: (LOOT_READY) (true)", -- [416]
-			"20:35:52 - Event: (LOOT_READY) (true)", -- [417]
-			"20:36:22 - ML event (PLAYER_REGEN_ENABLED)", -- [418]
-			"20:36:50 - Event: (LOOT_READY) (true)", -- [419]
-			"20:36:50 - Event: (LOOT_READY) (true)", -- [420]
-			"20:36:51 - ML event (PLAYER_REGEN_ENABLED)", -- [421]
-			"20:36:56 - Event: (LOOT_READY) (true)", -- [422]
-			"20:36:56 - Event: (LOOT_READY) (true)", -- [423]
-			"20:37:13 - ML event (PLAYER_REGEN_ENABLED)", -- [424]
-			"20:37:16 - Event: (LOOT_READY) (true)", -- [425]
-			"20:37:16 - Event: (LOOT_READY) (true)", -- [426]
-			"20:37:20 - VotingFrame:Update() without lootTable!!", -- [427]
-			"20:37:54 - ML event (PLAYER_REGEN_ENABLED)", -- [428]
-			"20:37:55 - Event: (LOOT_READY) (true)", -- [429]
-			"20:37:55 - Event: (LOOT_READY) (true)", -- [430]
-			"20:38:12 - VotingFrame:Update() without lootTable!!", -- [431]
-			"20:38:54 - ML event (PLAYER_REGEN_ENABLED)", -- [432]
-			"20:38:55 - VotingFrame:Update() without lootTable!!", -- [433]
-			"20:39:01 - VotingFrame:Update() without lootTable!!", -- [434]
-			"20:39:02 - VotingFrame:Update() without lootTable!!", -- [435]
-			"20:39:46 - VotingFrame:Update() without lootTable!!", -- [436]
-			"20:40:04 - VotingFrame:Update() without lootTable!!", -- [437]
-			"20:40:36 - ML event (PLAYER_REGEN_ENABLED)", -- [438]
-			"20:40:51 - Event: (LOOT_READY) (true)", -- [439]
-			"20:40:51 - Event: (LOOT_READY) (true)", -- [440]
-			"20:41:07 - ML event (PLAYER_REGEN_ENABLED)", -- [441]
-			"20:41:30 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [442]
-			"20:41:30 - GetML()", -- [443]
-			"20:41:32 - VotingFrame:Update() without lootTable!!", -- [444]
-			"20:41:49 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [445]
-			"20:41:49 - GetML()", -- [446]
-			"20:41:50 - VotingFrame:Update() without lootTable!!", -- [447]
-			"20:42:01 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [448]
-			"20:42:01 - GetML()", -- [449]
-			"20:42:03 - VotingFrame:Update() without lootTable!!", -- [450]
-			"20:42:26 - VotingFrame:Update() without lootTable!!", -- [451]
-			"20:43:58 - VotingFrame:Update() without lootTable!!", -- [452]
-			"20:45:01 - VotingFrame:Update() without lootTable!!", -- [453]
-			"20:45:32 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [454]
-			"20:45:32 - GetML()", -- [455]
-			"20:45:33 - VotingFrame:Update() without lootTable!!", -- [456]
-			"20:49:28 - ML event (PLAYER_REGEN_ENABLED)", -- [457]
-			"20:49:45 - ML event (PLAYER_REGEN_ENABLED)", -- [458]
-			"20:49:46 - Event: (LOOT_READY) (true)", -- [459]
-			"20:49:49 - Event: (LOOT_READY) (true)", -- [460]
-			"20:49:49 - Event: (LOOT_READY) (true)", -- [461]
-			"20:50:16 - Event: (LOOT_READY) (true)", -- [462]
-			"20:50:54 - VotingFrame:Update() without lootTable!!", -- [463]
-			"20:51:02 - Event: (LOOT_READY) (true)", -- [464]
-			"20:54:11 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [465]
-			"20:54:11 - GetML()", -- [466]
-			"20:54:12 - VotingFrame:Update() without lootTable!!", -- [467]
-			"20:54:19 - VotingFrame:Update() without lootTable!!", -- [468]
-			"20:58:19 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [469]
-			"20:58:19 - GetML()", -- [470]
-			"20:58:20 - VotingFrame:Update() without lootTable!!", -- [471]
-			"20:58:23 - VotingFrame:Update() without lootTable!!", -- [472]
-			"20:58:56 - VotingFrame:Update() without lootTable!!", -- [473]
-			"20:59:37 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [474]
-			"20:59:37 - GetML()", -- [475]
-			"20:59:38 - VotingFrame:Update() without lootTable!!", -- [476]
-			"21:00:18 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [477]
-			"21:00:18 - GetML()", -- [478]
-			"21:00:20 - VotingFrame:Update() without lootTable!!", -- [479]
-			"21:00:31 - VotingFrame:Update() without lootTable!!", -- [480]
-			"21:00:56 - VotingFrame:Update() without lootTable!!", -- [481]
-			"21:01:34 - Event: (LOOT_READY) (true)", -- [482]
-			"21:02:25 - ML event (PLAYER_REGEN_ENABLED)", -- [483]
-			"21:03:12 - ML event (PLAYER_REGEN_ENABLED)", -- [484]
-			"21:03:53 - VotingFrame:Update() without lootTable!!", -- [485]
-			"21:08:18 - VotingFrame:Update() without lootTable!!", -- [486]
-			"21:08:23 - VotingFrame:Update() without lootTable!!", -- [487]
-			"21:08:24 - VotingFrame:Update() without lootTable!!", -- [488]
-			"21:09:39 - Event: (LOOT_READY) (true)", -- [489]
-			"21:09:39 - Event: (LOOT_READY) (true)", -- [490]
-			"21:10:31 - ML event (PLAYER_REGEN_ENABLED)", -- [491]
-			"21:10:32 - Event: (LOOT_READY) (true)", -- [492]
-			"21:10:32 - Event: (LOOT_READY) (true)", -- [493]
-			"21:11:08 - Event: (LOOT_READY) (true)", -- [494]
-			"21:11:08 - Event: (LOOT_READY) (true)", -- [495]
-			"21:11:10 - ML event (PLAYER_REGEN_ENABLED)", -- [496]
-			"21:11:12 - Event: (LOOT_READY) (true)", -- [497]
-			"21:11:47 - Event: (LOOT_READY) (true)", -- [498]
-			"21:11:49 - VotingFrame:Update() without lootTable!!", -- [499]
-			"21:11:56 - ML event (PLAYER_REGEN_ENABLED)", -- [500]
-			"21:12:27 - VotingFrame:Update() without lootTable!!", -- [501]
-			"21:12:49 - ML event (PLAYER_REGEN_ENABLED)", -- [502]
-			"21:12:49 - Event: (LOOT_READY) (true)", -- [503]
-			"21:13:03 - Event: (LOOT_READY) (true)", -- [504]
-			"21:13:03 - ML event (PLAYER_REGEN_ENABLED)", -- [505]
-			"21:13:09 - VotingFrame:Update() without lootTable!!", -- [506]
-			"21:13:13 - ML event (PLAYER_REGEN_ENABLED)", -- [507]
-			"21:13:14 - Event: (LOOT_READY) (true)", -- [508]
-			"21:13:14 - Event: (LOOT_READY) (true)", -- [509]
-			"21:13:28 - ML event (PLAYER_REGEN_ENABLED)", -- [510]
-			"21:13:29 - Event: (LOOT_READY) (true)", -- [511]
-			"21:13:38 - Event: (LOOT_READY) (true)", -- [512]
-			"21:13:51 - Event: (LOOT_READY) (true)", -- [513]
-			"21:13:52 - Event: (LOOT_READY) (true)", -- [514]
-			"21:13:54 - Event: (LOOT_READY) (true)", -- [515]
-			"21:13:56 - ML event (PLAYER_REGEN_ENABLED)", -- [516]
-			"21:14:11 - Event: (LOOT_READY) (true)", -- [517]
-			"21:14:11 - Event: (LOOT_READY) (true)", -- [518]
-			"21:14:33 - ML event (PLAYER_REGEN_ENABLED)", -- [519]
-			"21:14:33 - Event: (LOOT_READY) (true)", -- [520]
-			"21:14:38 - Event: (LOOT_READY) (true)", -- [521]
-			"21:15:22 - VotingFrame:Update() without lootTable!!", -- [522]
-			"21:15:50 - VotingFrame:Update() without lootTable!!", -- [523]
-			"21:16:57 - VotingFrame:Update() without lootTable!!", -- [524]
-			"21:17:26 - VotingFrame:Update() without lootTable!!", -- [525]
-			"21:17:42 - VotingFrame:Update() without lootTable!!", -- [526]
-			"21:17:59 - VotingFrame:Update() without lootTable!!", -- [527]
-			"21:18:54 - ML event (PLAYER_REGEN_ENABLED)", -- [528]
-			"21:18:54 - Event: (LOOT_READY) (true)", -- [529]
-			"21:18:55 - Event: (LOOT_READY) (true)", -- [530]
-			"21:18:57 - Event: (LOOT_READY) (true)", -- [531]
-			"21:18:58 - Event: (LOOT_READY) (true)", -- [532]
-			"21:19:35 - ML event (PLAYER_REGEN_ENABLED)", -- [533]
-			"21:19:43 - Event: (LOOT_READY) (true)", -- [534]
-			"21:20:02 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [535]
-			"21:20:02 - GetML()", -- [536]
-			"21:20:03 - VotingFrame:Update() without lootTable!!", -- [537]
-			"21:20:04 - VotingFrame:Update() without lootTable!!", -- [538]
-			"07/20/19", -- [539]
-			"23:34:00 - Logged In", -- [540]
-			"23:34:00 - ML initialized!", -- [541]
-			"23:34:00 - TradeUI enabled", -- [542]
-			"23:34:15 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [543]
-			"23:34:15 - ActivateSkin (bfa)", -- [544]
-			"23:34:20 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [545]
-			"23:34:20 - GetML()", -- [546]
-			"23:34:20 - UpdatePlayersData()", -- [547]
-			"23:34:26 - GetPlayersGuildRank()", -- [548]
-			"23:34:26 - Found Guild Rank: Ahroun", -- [549]
-			"23:34:28 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [550]
-			"23:34:43 - Event: (PARTY_LEADER_CHANGED)", -- [551]
-			"23:34:43 - GetML()", -- [552]
-			"23:34:43 - Resetting council as we have a new ML!", -- [553]
-			"23:34:43 - MasterLooter =  (Shanyt-ArgentDawn)", -- [554]
-			"23:34:43 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [555]
-			"23:34:43 - ML:NewML (Shanyt-ArgentDawn)", -- [556]
-			"23:34:43 - UpdateMLdb", -- [557]
-			"23:34:43 - OnMLDBReceived", -- [558]
-			"23:34:43 - UpdateGroup (true)", -- [559]
-			"23:34:43 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [560]
-			"23:34:43 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [561]
-			"23:34:44 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [562]
-			"23:34:44 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [563]
-			"23:34:44 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [564]
-			"23:34:44 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [565]
-			"23:34:44 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [566]
-			"23:34:44 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [567]
-			"23:34:44 - GetLootDBStatistics()", -- [568]
-			"23:34:44 - GetGuildRankNum()", -- [569]
-			"23:34:44 - RCVotingFrame (enabled)", -- [570]
-			"23:34:44 - Comm received:^1^SplayerInfo^T^N1^SShanyt-ArgentDawn^N2^SWARRIOR^N3^SDAMAGER^N4^SAhroun^N6^N0^N7^N393^N8^N71^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [571]
-			"23:34:44 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (Ahroun) (nil) (0) (393) (71)", -- [572]
-			"23:34:54 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [573]
-			"23:34:54 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [574]
-			"23:34:54 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [575]
-			"23:34:58 - Timer MLdb_check passed", -- [576]
-			"23:35:14 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [577]
-			"23:35:14 - GetML()", -- [578]
-			"23:35:15 - VotingFrame:Update() without lootTable!!", -- [579]
-			"23:35:31 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [580]
-			"23:35:31 - GetML()", -- [581]
-			"23:35:32 - VotingFrame:Update() without lootTable!!", -- [582]
-			"23:35:43 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [583]
-			"23:35:43 - GetML()", -- [584]
-			"23:35:44 - Event: (GROUP_LEFT) (1) (Party-75-00003144E65A)", -- [585]
-			"23:35:44 - GetML()", -- [586]
-			"23:35:44 - Stop handling loot", -- [587]
-			"23:35:44 - ML Disabled", -- [588]
-			"23:35:44 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [589]
-			"23:35:45 - VotingFrame:Update() without lootTable!!", -- [590]
-			"23:35:51 - Event: (PARTY_LEADER_CHANGED)", -- [591]
-			"23:35:51 - GetML()", -- [592]
-			"23:35:51 - Resetting council as we have a new ML!", -- [593]
-			"23:35:51 - MasterLooter =  (Shanyt-ArgentDawn)", -- [594]
-			"23:35:51 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [595]
-			"23:35:51 - ML:NewML (Shanyt-ArgentDawn)", -- [596]
-			"23:35:51 - UpdateMLdb", -- [597]
-			"23:35:51 - OnMLDBReceived", -- [598]
-			"23:35:51 - UpdateGroup (true)", -- [599]
-			"23:35:51 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [600]
-			"23:35:51 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [601]
-			"23:35:51 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [602]
-			"23:35:51 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [603]
-			"23:35:51 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [604]
-			"23:35:51 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [605]
-			"23:35:51 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [606]
-			"23:35:51 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [607]
-			"23:35:51 - Comm received:^1^SplayerInfo^T^N1^SShanyt-ArgentDawn^N2^SWARRIOR^N3^SDAMAGER^N4^SAhroun^N6^N0^N7^N393^N8^N71^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [608]
-			"23:35:51 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (Ahroun) (nil) (0) (393) (71)", -- [609]
-			"23:35:55 - VotingFrame:Update() without lootTable!!", -- [610]
-			"23:35:59 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [611]
-			"23:35:59 - GetML()", -- [612]
-			"23:36:00 - VotingFrame:Update() without lootTable!!", -- [613]
-			"23:36:01 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [614]
-			"23:36:01 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [615]
-			"23:36:01 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [616]
-			"23:36:03 - UpdateGroup (table: 0000015CF87B4C10)", -- [617]
-			"23:36:03 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [618]
-			"23:36:03 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [619]
-			"23:36:04 - Comm received:^1^Sxrealm^T^N1^SLillys-Blackhand^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [620]
-			"23:36:04 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SplayerInfo^N3^SLillys-Blackhand^N4^SHUNTER^N5^SDAMAGER^N6^SWarlord^N8^N0^N9^N369.6875^N10^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [621]
-			"23:36:04 - Comm received:^1^SplayerInfo^T^N1^SLillys-Blackhand^N2^SHUNTER^N3^SDAMAGER^N4^SWarlord^N6^N0^N7^N369.6875^N8^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (WHISPER)", -- [622]
-			"23:36:04 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (Warlord) (nil) (0) (369.6875) (253)", -- [623]
-			"23:36:04 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [624]
-			"23:36:04 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [625]
-			"23:36:06 - Timer MLdb_check passed", -- [626]
-			"23:36:14 - VotingFrame:Update() without lootTable!!", -- [627]
-			"23:36:24 - VotingFrame:Update() without lootTable!!", -- [628]
-			"23:36:29 - VotingFrame:Update() without lootTable!!", -- [629]
-			"23:37:02 - ML event (PLAYER_REGEN_ENABLED)", -- [630]
-			"23:37:29 - Event: (LOOT_READY) (true)", -- [631]
-			"23:37:29 - Event: (LOOT_READY) (true)", -- [632]
-			"23:37:29 - ML event (PLAYER_REGEN_ENABLED)", -- [633]
-			"23:37:55 - VotingFrame:Update() without lootTable!!", -- [634]
-			"23:38:45 - VotingFrame:Update() without lootTable!!", -- [635]
-			"23:39:58 - Event: (LOOT_READY) (true)", -- [636]
-			"23:39:58 - ML event (PLAYER_REGEN_ENABLED)", -- [637]
-			"23:40:19 - VotingFrame:Update() without lootTable!!", -- [638]
-			"23:40:27 - VotingFrame:Update() without lootTable!!", -- [639]
-			"23:40:39 - ML event (PLAYER_REGEN_ENABLED)", -- [640]
-			"23:40:39 - Event: (LOOT_READY) (true)", -- [641]
-			"23:41:17 - ML event (PLAYER_REGEN_ENABLED)", -- [642]
-			"23:41:17 - Event: (LOOT_READY) (true)", -- [643]
-			"23:41:17 - Event: (LOOT_READY) (true)", -- [644]
-			"23:42:21 - ML event (PLAYER_REGEN_ENABLED)", -- [645]
-			"23:42:21 - Event: (LOOT_READY) (true)", -- [646]
-			"23:42:22 - Event: (LOOT_READY) (true)", -- [647]
-			"23:42:47 - VotingFrame:Update() without lootTable!!", -- [648]
-			"23:42:53 - VotingFrame:Update() without lootTable!!", -- [649]
-			"23:42:56 - VotingFrame:Update() without lootTable!!", -- [650]
-			"23:43:19 - VotingFrame:Update() without lootTable!!", -- [651]
-			"23:43:35 - VotingFrame:Update() without lootTable!!", -- [652]
-			"23:43:46 - VotingFrame:Update() without lootTable!!", -- [653]
-			"23:44:07 - VotingFrame:Update() without lootTable!!", -- [654]
-			"23:44:17 - VotingFrame:Update() without lootTable!!", -- [655]
-			"23:44:43 - VotingFrame:Update() without lootTable!!", -- [656]
-			"23:52:04 - VotingFrame:Update() without lootTable!!", -- [657]
-			"23:52:16 - VotingFrame:Update() without lootTable!!", -- [658]
-			"23:53:04 - ML event (PLAYER_REGEN_ENABLED)", -- [659]
-			"23:54:12 - VotingFrame:Update() without lootTable!!", -- [660]
-			"23:54:39 - VotingFrame:Update() without lootTable!!", -- [661]
-			"23:55:53 - VotingFrame:Update() without lootTable!!", -- [662]
-			"23:55:54 - VotingFrame:Update() without lootTable!!", -- [663]
-			"23:55:57 - VotingFrame:Update() without lootTable!!", -- [664]
-			"23:56:09 - VotingFrame:Update() without lootTable!!", -- [665]
-			"23:58:37 - Event: (LOOT_READY) (true)", -- [666]
-			"23:58:48 - ML event (PLAYER_REGEN_ENABLED)", -- [667]
-			"23:58:49 - Event: (LOOT_READY) (true)", -- [668]
-			"23:58:57 - Event: (LOOT_READY) (true)", -- [669]
-			"23:58:57 - ML event (PLAYER_REGEN_ENABLED)", -- [670]
-			"23:59:27 - ML event (PLAYER_REGEN_ENABLED)", -- [671]
-			"23:59:28 - Event: (LOOT_READY) (true)", -- [672]
-			"23:59:45 - Event: (LOOT_READY) (true)", -- [673]
-			"23:59:46 - Event: (LOOT_READY) (true)", -- [674]
-			"23:59:46 - VotingFrame:Update() without lootTable!!", -- [675]
-			"23:59:47 - ML event (PLAYER_REGEN_ENABLED)", -- [676]
-			"23:59:52 - VotingFrame:Update() without lootTable!!", -- [677]
-			"00:00:11 - ML event (PLAYER_REGEN_ENABLED)", -- [678]
-			"00:00:16 - Event: (LOOT_READY) (true)", -- [679]
-			"00:00:16 - Event: (LOOT_READY) (true)", -- [680]
-			"00:00:16 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (170472) (|cff0070dd|Hitem:170472::::::::120:71::::::|h[Encrusted Coin]|h|r) (1) (Shanyt) (WARRIOR)", -- [681]
-			"00:01:27 - ML event (PLAYER_REGEN_ENABLED)", -- [682]
-			"00:01:28 - Event: (LOOT_READY) (true)", -- [683]
-			"00:02:11 - ML event (PLAYER_REGEN_ENABLED)", -- [684]
-			"00:03:02 - Event: (LOOT_READY) (true)", -- [685]
-			"00:03:02 - ML event (PLAYER_REGEN_ENABLED)", -- [686]
-			"00:03:59 - ML event (PLAYER_REGEN_ENABLED)", -- [687]
-			"00:04:00 - Event: (LOOT_READY) (true)", -- [688]
-			"00:04:00 - Event: (LOOT_READY) (true)", -- [689]
-			"00:04:31 - Event: (LOOT_READY) (true)", -- [690]
-			"00:04:31 - Event: (LOOT_READY) (true)", -- [691]
-			"00:04:31 - ML event (PLAYER_REGEN_ENABLED)", -- [692]
-			"00:05:12 - VotingFrame:Update() without lootTable!!", -- [693]
-			"00:05:21 - VotingFrame:Update() without lootTable!!", -- [694]
-			"00:05:26 - VotingFrame:Update() without lootTable!!", -- [695]
-			"00:05:31 - VotingFrame:Update() without lootTable!!", -- [696]
-			"00:05:42 - VotingFrame:Update() without lootTable!!", -- [697]
-			"00:05:47 - VotingFrame:Update() without lootTable!!", -- [698]
-			"00:06:24 - VotingFrame:Update() without lootTable!!", -- [699]
-			"00:08:56 - VotingFrame:Update() without lootTable!!", -- [700]
-			"00:08:57 - VotingFrame:Update() without lootTable!!", -- [701]
-			"00:09:03 - VotingFrame:Update() without lootTable!!", -- [702]
-			"00:09:08 - VotingFrame:Update() without lootTable!!", -- [703]
-			"00:09:13 - VotingFrame:Update() without lootTable!!", -- [704]
-			"00:09:19 - VotingFrame:Update() without lootTable!!", -- [705]
-			"00:09:39 - VotingFrame:Update() without lootTable!!", -- [706]
-			"00:10:07 - VotingFrame:Update() without lootTable!!", -- [707]
-			"00:10:22 - VotingFrame:Update() without lootTable!!", -- [708]
-			"00:10:28 - VotingFrame:Update() without lootTable!!", -- [709]
-			"00:10:43 - ML event (PLAYER_REGEN_ENABLED)", -- [710]
-			"00:10:43 - VotingFrame:Update() without lootTable!!", -- [711]
-			"00:10:49 - Event: (LOOT_READY) (true)", -- [712]
-			"00:10:50 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169333) (|cff0070dd|Hitem:169333::::::::120:71::::::|h[Strange Volcanic Rock]|h|r) (1) (Shanyt) (WARRIOR)", -- [713]
-			"00:11:06 - Event: (LOOT_READY) (true)", -- [714]
-			"00:11:06 - ML event (PLAYER_REGEN_ENABLED)", -- [715]
-			"00:11:31 - Event: (LOOT_READY) (true)", -- [716]
-			"00:12:13 - ML event (PLAYER_REGEN_ENABLED)", -- [717]
-			"00:12:13 - Event: (LOOT_READY) (true)", -- [718]
-			"00:12:14 - Event: (LOOT_READY) (true)", -- [719]
-			"00:12:28 - ML event (PLAYER_REGEN_ENABLED)", -- [720]
-			"00:12:29 - Event: (LOOT_READY) (true)", -- [721]
-			"00:12:42 - Event: (LOOT_READY) (true)", -- [722]
-			"00:12:57 - Event: (LOOT_READY) (true)", -- [723]
-			"00:12:57 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169333) (|cff0070dd|Hitem:169333::::::::120:71::::::|h[Strange Volcanic Rock]|h|r) (1) (Shanyt) (WARRIOR)", -- [724]
-			"00:13:13 - Event: (LOOT_READY) (true)", -- [725]
-			"00:13:14 - ML event (PLAYER_REGEN_ENABLED)", -- [726]
-			"00:13:19 - Event: (LOOT_READY) (true)", -- [727]
-			"00:13:29 - Event: (LOOT_READY) (true)", -- [728]
-			"00:13:32 - Event: (LOOT_READY) (true)", -- [729]
-			"00:13:43 - VotingFrame:Update() without lootTable!!", -- [730]
-			"00:14:05 - Event: (LOOT_READY) (true)", -- [731]
-			"00:14:09 - Event: (LOOT_READY) (true)", -- [732]
-			"00:14:11 - ML event (PLAYER_REGEN_ENABLED)", -- [733]
-			"00:14:24 - VotingFrame:Update() without lootTable!!", -- [734]
-			"00:14:28 - Event: (LOOT_READY) (true)", -- [735]
-			"00:14:31 - ML event (PLAYER_REGEN_ENABLED)", -- [736]
-			"00:14:31 - Event: (LOOT_READY) (true)", -- [737]
-			"00:14:52 - VotingFrame:Update() without lootTable!!", -- [738]
-			"00:15:11 - VotingFrame:Update() without lootTable!!", -- [739]
-			"00:15:38 - Event: (LOOT_READY) (true)", -- [740]
-			"00:15:38 - Event: (LOOT_READY) (true)", -- [741]
-			"00:15:47 - ML event (PLAYER_REGEN_ENABLED)", -- [742]
-			"00:15:47 - Event: (LOOT_READY) (true)", -- [743]
-			"00:16:11 - ML event (PLAYER_REGEN_ENABLED)", -- [744]
-			"00:16:11 - Event: (LOOT_READY) (true)", -- [745]
-			"00:16:12 - Event: (LOOT_READY) (true)", -- [746]
-			"00:18:55 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (170502) (|cffa335ee|Hitem:170502::::::::120:71::::::|h[Waterlogged Toolbox]|h|r) (1) (Lillys-Blackhand) (HUNTER)", -- [747]
-			"00:20:16 - VotingFrame:Update() without lootTable!!", -- [748]
-			"00:20:22 - VotingFrame:Update() without lootTable!!", -- [749]
-			"00:21:42 - Event: (LOOT_READY) (true)", -- [750]
-			"00:21:43 - Event: (LOOT_READY) (true)", -- [751]
-			"00:21:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (170502) (|cffa335ee|Hitem:170502::::::::120:71::::::|h[Waterlogged Toolbox]|h|r) (1) (Shanyt) (WARRIOR)", -- [752]
-			"00:22:20 - ML event (PLAYER_REGEN_ENABLED)", -- [753]
-			"00:22:21 - Event: (LOOT_READY) (true)", -- [754]
-			"00:23:02 - Event: (LOOT_READY) (true)", -- [755]
-			"00:23:10 - Event: (LOOT_READY) (true)", -- [756]
-			"00:23:18 - Event: (LOOT_READY) (true)", -- [757]
-			"00:23:32 - ML event (PLAYER_REGEN_ENABLED)", -- [758]
-			"00:23:33 - Event: (LOOT_READY) (true)", -- [759]
-			"00:23:45 - Event: (LOOT_READY) (true)", -- [760]
-			"00:23:47 - VotingFrame:Update() without lootTable!!", -- [761]
-			"00:24:00 - Event: (LOOT_READY) (true)", -- [762]
-			"00:24:03 - Event: (LOOT_READY) (true)", -- [763]
-			"00:24:24 - Event: (LOOT_READY) (true)", -- [764]
-			"00:24:24 - Event: (LOOT_READY) (true)", -- [765]
-			"00:24:29 - Event: (LOOT_READY) (true)", -- [766]
-			"00:24:33 - Event: (LOOT_READY) (true)", -- [767]
-			"00:24:33 - Event: (LOOT_READY) (true)", -- [768]
-			"00:24:42 - Event: (LOOT_READY) (true)", -- [769]
-			"00:24:43 - ML event (PLAYER_REGEN_ENABLED)", -- [770]
-			"00:24:59 - VotingFrame:Update() without lootTable!!", -- [771]
-			"00:25:18 - Event: (LOOT_READY) (true)", -- [772]
-			"00:25:19 - ML event (PLAYER_REGEN_ENABLED)", -- [773]
-			"00:26:00 - VotingFrame:Update() without lootTable!!", -- [774]
-			"00:26:25 - Event: (LOOT_READY) (true)", -- [775]
-			"00:26:26 - ML event (PLAYER_REGEN_ENABLED)", -- [776]
-			"00:26:42 - VotingFrame:Update() without lootTable!!", -- [777]
-			"00:27:05 - Event: (LOOT_READY) (true)", -- [778]
-			"00:27:05 - Event: (LOOT_READY) (true)", -- [779]
-			"00:27:05 - ML event (PLAYER_REGEN_ENABLED)", -- [780]
-			"00:27:45 - Event: (LOOT_READY) (true)", -- [781]
-			"00:27:46 - Event: (LOOT_READY) (true)", -- [782]
-			"00:27:46 - ML event (PLAYER_REGEN_ENABLED)", -- [783]
-			"00:28:06 - Event: (LOOT_READY) (true)", -- [784]
-			"00:28:38 - ML event (PLAYER_REGEN_ENABLED)", -- [785]
-			"00:28:39 - Event: (LOOT_READY) (true)", -- [786]
-			"00:28:55 - VotingFrame:Update() without lootTable!!", -- [787]
-			"00:28:57 - Event: (LOOT_READY) (true)", -- [788]
-			"00:28:57 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (167893) (|cff0070dd|Hitem:167893::::::::120:71::::::|h[Prismatic Crystal]|h|r) (1) (Shanyt) (WARRIOR)", -- [789]
-			"00:29:12 - Event: (LOOT_READY) (true)", -- [790]
-			"00:29:12 - VotingFrame:Update() without lootTable!!", -- [791]
-			"00:29:37 - ML event (PLAYER_REGEN_ENABLED)", -- [792]
-			"00:29:37 - Event: (LOOT_READY) (true)", -- [793]
-			"00:30:01 - VotingFrame:Update() without lootTable!!", -- [794]
-			"00:30:16 - ML event (PLAYER_REGEN_ENABLED)", -- [795]
-			"00:30:53 - Event: (LOOT_READY) (true)", -- [796]
-			"00:31:18 - ML event (PLAYER_REGEN_ENABLED)", -- [797]
-			"00:31:19 - Event: (LOOT_READY) (true)", -- [798]
-			"00:31:19 - Event: (LOOT_READY) (true)", -- [799]
-			"00:31:35 - ML event (PLAYER_REGEN_ENABLED)", -- [800]
-			"00:31:35 - Event: (LOOT_READY) (true)", -- [801]
-			"00:31:53 - Event: (LOOT_READY) (true)", -- [802]
-			"00:32:01 - Event: (LOOT_READY) (true)", -- [803]
-			"00:32:01 - Event: (LOOT_READY) (true)", -- [804]
-			"00:32:02 - ML event (PLAYER_REGEN_ENABLED)", -- [805]
-			"00:32:37 - Event: (LOOT_READY) (true)", -- [806]
-			"00:33:36 - Event: (LOOT_READY) (true)", -- [807]
-			"00:33:37 - ML event (PLAYER_REGEN_ENABLED)", -- [808]
-			"00:34:01 - VotingFrame:Update() without lootTable!!", -- [809]
-			"00:34:11 - Event: (LOOT_READY) (true)", -- [810]
-			"00:34:21 - Event: (LOOT_READY) (true)", -- [811]
-			"00:34:21 - Event: (LOOT_READY) (true)", -- [812]
-			"00:34:30 - Event: (LOOT_READY) (true)", -- [813]
-			"00:34:31 - ML event (PLAYER_REGEN_ENABLED)", -- [814]
-			"00:34:33 - VotingFrame:Update() without lootTable!!", -- [815]
-			"00:34:43 - VotingFrame:Update() without lootTable!!", -- [816]
-			"00:34:44 - Event: (LOOT_READY) (true)", -- [817]
-			"00:34:44 - ML event (PLAYER_REGEN_ENABLED)", -- [818]
-			"00:34:49 - VotingFrame:Update() without lootTable!!", -- [819]
-			"00:34:59 - VotingFrame:Update() without lootTable!!", -- [820]
-			"00:35:07 - ML event (PLAYER_REGEN_ENABLED)", -- [821]
-			"00:36:17 - ML event (PLAYER_REGEN_ENABLED)", -- [822]
-			"00:36:20 - Event: (LOOT_READY) (true)", -- [823]
-			"00:37:16 - UpdateGroup (table: 0000015CF87B4C10)", -- [824]
-			"00:37:47 - Event: (LOOT_READY) (true)", -- [825]
-			"00:37:48 - Event: (LOOT_READY) (true)", -- [826]
-			"00:37:48 - Event: (LOOT_READY) (true)", -- [827]
-			"00:38:13 - Event: (LOOT_READY) (true)", -- [828]
-			"00:38:13 - Event: (LOOT_READY) (true)", -- [829]
-			"00:38:14 - ML event (PLAYER_REGEN_ENABLED)", -- [830]
-			"00:38:36 - Event: (LOOT_READY) (true)", -- [831]
-			"00:38:36 - Event: (LOOT_READY) (true)", -- [832]
-			"00:38:36 - ML event (PLAYER_REGEN_ENABLED)", -- [833]
-			"00:39:12 - ML event (PLAYER_REGEN_ENABLED)", -- [834]
-			"00:39:12 - Event: (LOOT_READY) (true)", -- [835]
-			"00:39:12 - Event: (LOOT_READY) (true)", -- [836]
-			"00:46:46 - Event: (LOOT_READY) (true)", -- [837]
-			"00:46:46 - Event: (LOOT_READY) (true)", -- [838]
-			"00:46:46 - Event: (LOOT_READY) (true)", -- [839]
-			"00:46:46 - ML event (PLAYER_REGEN_ENABLED)", -- [840]
-			"00:47:05 - ML event (PLAYER_REGEN_ENABLED)", -- [841]
-			"00:47:05 - Event: (LOOT_READY) (true)", -- [842]
-			"00:47:05 - Event: (LOOT_READY) (true)", -- [843]
-			"00:47:20 - ML event (PLAYER_REGEN_ENABLED)", -- [844]
-			"00:47:20 - Event: (LOOT_READY) (true)", -- [845]
-			"00:47:20 - Event: (LOOT_READY) (true)", -- [846]
-			"00:53:54 - Event: (GROUP_LEFT) (1) (Party-75-00003144E6DA)", -- [847]
-			"00:53:54 - GetML()", -- [848]
-			"00:53:54 - Stop handling loot", -- [849]
-			"00:53:54 - ML Disabled", -- [850]
-			"00:53:54 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [851]
-			"00:54:10 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [852]
-			"00:54:10 - GetML()", -- [853]
-			"00:54:11 - VotingFrame:Update() without lootTable!!", -- [854]
-			"00:56:21 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [855]
-			"00:56:21 - GetML()", -- [856]
-			"00:56:22 - VotingFrame:Update() without lootTable!!", -- [857]
-			"01:00:27 - Event: (LOOT_READY) (true)", -- [858]
-			"01:00:45 - Event: (LOOT_READY) (true)", -- [859]
-			"01:01:11 - Event: (LOOT_READY) (true)", -- [860]
-			"01:07:34 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [861]
-			"01:07:34 - GetML()", -- [862]
-			"01:07:35 - VotingFrame:Update() without lootTable!!", -- [863]
-			"01:13:53 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [864]
-			"01:13:53 - GetML()", -- [865]
-			"01:13:54 - VotingFrame:Update() without lootTable!!", -- [866]
-			"02:03:16 - VotingFrame:Update() without lootTable!!", -- [867]
-			"02:04:11 - VotingFrame:Update() without lootTable!!", -- [868]
-			"02:05:03 - VotingFrame:Update() without lootTable!!", -- [869]
-			"02:05:26 - VotingFrame:Update() without lootTable!!", -- [870]
-			"02:07:13 - VotingFrame:Update() without lootTable!!", -- [871]
-			"02:07:28 - Event: (RAID_INSTANCE_WELCOME) (Onyxia's Lair (25 Player)) (204752) (0) (0)", -- [872]
-			"02:07:28 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [873]
-			"02:07:28 - GetML()", -- [874]
-			"02:08:06 - Event: (LOOT_READY) (true)", -- [875]
-			"02:08:06 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-249-15865-12129-000134011D) (6051)", -- [876]
-			"02:08:06 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:33412::::::::120:71::::::|h[Frost-Worn Plate Belt]|h|r) (0) (1) (Creature-0-3134-249-15865-12129-000134011D) (1)", -- [877]
-			"02:08:06 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:33412::::::::120:71::::::|h[Frost-Worn Plate Belt]|h|r) (0)", -- [878]
-			"02:08:06 - OnLootSlotCleared() (1) (nil) (1)", -- [879]
-			"02:08:06 - Event: (LOOT_CLOSED)", -- [880]
-			"02:08:06 - Event: (LOOT_CLOSED)", -- [881]
-			"02:08:06 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [882]
-			"02:08:06 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [883]
-			"02:08:06 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [884]
-			"02:08:06 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [885]
-			"02:08:12 - Event: (LOOT_READY) (true)", -- [886]
-			"02:08:12 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-249-15865-12129-0001B4011D) (9736)", -- [887]
-			"02:08:12 - OnLootSlotCleared() (1) (nil) (1)", -- [888]
-			"02:08:12 - Event: (LOOT_CLOSED)", -- [889]
-			"02:08:12 - Event: (LOOT_CLOSED)", -- [890]
-			"02:08:13 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [891]
-			"02:08:13 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [892]
-			"02:08:13 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [893]
-			"02:08:13 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [894]
-			"02:08:18 - Event: (LOOT_READY) (true)", -- [895]
-			"02:08:18 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-249-15865-12129-000034011D) (10348)", -- [896]
-			"02:08:18 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:33422::::::::120:71::::::|h[Shattered Bow]|h|r) (0) (1) (Creature-0-3134-249-15865-12129-000034011D) (1)", -- [897]
-			"02:08:18 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:33422::::::::120:71::::::|h[Shattered Bow]|h|r) (0)", -- [898]
-			"02:08:18 - OnLootSlotCleared() (1) (nil) (1)", -- [899]
-			"02:08:18 - Event: (LOOT_CLOSED)", -- [900]
-			"02:08:18 - Event: (LOOT_CLOSED)", -- [901]
-			"02:08:18 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [902]
-			"02:08:18 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [903]
-			"02:08:18 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [904]
-			"02:08:18 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [905]
-			"02:08:26 - Event: (LOOT_READY) (true)", -- [906]
-			"02:08:26 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-249-15865-12129-0000B4011D) (11037)", -- [907]
-			"02:08:26 - OnLootSlotCleared() (1) (nil) (1)", -- [908]
-			"02:08:26 - Event: (LOOT_CLOSED)", -- [909]
-			"02:08:26 - Event: (LOOT_CLOSED)", -- [910]
-			"02:08:26 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [911]
-			"02:08:26 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [912]
-			"02:08:26 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [913]
-			"02:08:26 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [914]
-			"02:08:44 - Event: (ENCOUNTER_START) (1084) (Onyxia) (4) (25)", -- [915]
-			"02:08:44 - UpdatePlayersData()", -- [916]
-			"02:09:30 - Event: (ENCOUNTER_END) (1084) (Onyxia) (4) (25) (1)", -- [917]
-			"02:09:31 - Event: (LOOT_READY) (true)", -- [918]
-			"02:09:31 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-249-15865-10184-000034011C) (97193)", -- [919]
-			"02:09:31 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r) (4) (1) (Creature-0-3134-249-15865-10184-000034011C) (1)", -- [920]
-			"02:09:31 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r) (4) (1) (Creature-0-3134-249-15865-10184-000034011C) (1)", -- [921]
-			"02:09:31 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r) (4) (1) (Creature-0-3134-249-15865-10184-000034011C) (1)", -- [922]
-			"02:09:31 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (4) (1) (Creature-0-3134-249-15865-10184-000034011C) (1)", -- [923]
-			"02:09:31 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (4) (1) (Creature-0-3134-249-15865-10184-000034011C) (1)", -- [924]
-			"02:09:32 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (4)", -- [925]
-			"02:09:32 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (4)", -- [926]
-			"02:09:32 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r) (4)", -- [927]
-			"02:09:32 - Event: (LOOT_READY) (true)", -- [928]
-			"02:09:32 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-249-15865-10184-000034011C) (97193)", -- [929]
-			"02:09:32 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r) (4) (1) (Creature-0-3134-249-15865-10184-000034011C) (1)", -- [930]
-			"02:09:32 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r) (4) (1) (Creature-0-3134-249-15865-10184-000034011C) (1)", -- [931]
-			"02:09:32 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r) (4)", -- [932]
-			"02:09:32 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r) (4)", -- [933]
-			"02:09:32 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49294) (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (1) (Shanyt) (WARRIOR)", -- [934]
-			"02:09:32 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49295) (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (1) (Shanyt) (WARRIOR)", -- [935]
-			"02:09:32 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49473) (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r) (1) (Shanyt) (WARRIOR)", -- [936]
-			"02:09:32 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49483) (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r) (1) (Shanyt) (WARRIOR)", -- [937]
-			"02:09:32 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49466) (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r) (1) (Shanyt) (WARRIOR)", -- [938]
-			"02:09:32 - OnLootSlotCleared() (1) (nil) (1)", -- [939]
-			"02:09:32 - Event: (LOOT_CLOSED)", -- [940]
-			"02:09:32 - Event: (LOOT_CLOSED)", -- [941]
-			"02:09:32 - Comm received:^1^Slooted^T^N1^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [942]
-			"02:09:32 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [943]
-			"02:09:32 - Comm received:^1^Slooted^T^N1^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [944]
-			"02:09:32 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [945]
-			"02:09:34 - Storage:New (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (temp)", -- [946]
-			"02:09:34 - Storage: searching for item: (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r)", -- [947]
-			"02:09:34 - Found item at (1) (25)", -- [948]
-			"02:09:34 - Storage:New (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (temp)", -- [949]
-			"02:09:34 - Storage: searching for item: (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r)", -- [950]
-			"02:09:34 - Found item at (1) (26)", -- [951]
-			"02:09:34 - Error - Couldn't find item", -- [952]
-			"02:09:34 - Storage:New (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r) (temp)", -- [953]
-			"02:09:34 - Storage: searching for item: (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r)", -- [954]
-			"02:09:34 - Found item at (1) (27)", -- [955]
-			"02:09:34 - Error - Couldn't find item", -- [956]
-			"02:09:34 - Comm received:^1^Stradable^T^N1^S|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen~`Sack~`of~`Gems]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [957]
-			"02:09:34 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged~`Onyxia~`Hide~`Backpack]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [958]
-			"02:09:34 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage~`Cover]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [959]
-			"02:09:34 - Storage:New (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r) (temp)", -- [960]
-			"02:09:34 - Storage: searching for item: (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r)", -- [961]
-			"02:09:34 - Found item at (1) (28)", -- [962]
-			"02:09:34 - Error - Couldn't find item", -- [963]
-			"02:09:34 - Storage:New (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r) (temp)", -- [964]
-			"02:09:34 - Storage: searching for item: (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r)", -- [965]
-			"02:09:34 - Found item at (1) (29)", -- [966]
-			"02:09:34 - Error - Couldn't find item", -- [967]
-			"02:09:34 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo~`of~`Transcendence]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [968]
-			"02:09:34 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged~`Helm]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [969]
-			"02:09:36 - Event: (LOOT_READY) (true)", -- [970]
-			"02:09:36 - Event: (LOOT_CLOSED)", -- [971]
-			"02:09:36 - Event: (LOOT_CLOSED)", -- [972]
-			"02:10:12 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [973]
-			"02:10:12 - GetML()", -- [974]
-			"02:10:13 - VotingFrame:Update() without lootTable!!", -- [975]
-			"02:11:46 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [976]
-			"02:11:46 - GetML()", -- [977]
-			"02:11:49 - VotingFrame:Update() without lootTable!!", -- [978]
-			"02:13:01 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [979]
-			"02:13:01 - GetML()", -- [980]
-			"02:13:03 - VotingFrame:Update() without lootTable!!", -- [981]
-			"07/21/19", -- [982]
-			"11:00:11 - Storage:New (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (temp) (restored) (table: 0000020FB027B8C0)", -- [983]
-			"11:00:11 - Storage: searching for item: (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r)", -- [984]
-			"11:00:11 - Error - Couldn't find item", -- [985]
-			"11:00:11 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r)", -- [986]
-			"11:00:11 - Storage:RemoveItem (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r)", -- [987]
-			"11:00:11 - Storage:New (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r) (temp) (restored) (table: 0000020FB027BBE0)", -- [988]
-			"11:00:11 - Storage: searching for item: (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r)", -- [989]
-			"11:00:11 - Error - Couldn't find item", -- [990]
-			"11:00:11 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r)", -- [991]
-			"11:00:11 - Storage:RemoveItem (|cffa335ee|Hitem:49473::::::::120:71::::::|h[Stormrage Cover]|h|r)", -- [992]
-			"11:00:11 - Storage:New (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r) (temp) (restored) (table: 0000020FB027BE60)", -- [993]
-			"11:00:11 - Storage: searching for item: (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r)", -- [994]
-			"11:00:11 - Error - Couldn't find item", -- [995]
-			"11:00:11 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r)", -- [996]
-			"11:00:11 - Storage:RemoveItem (|cffa335ee|Hitem:49466::::::::120:71::::::|h[Frostforged Helm]|h|r)", -- [997]
-			"11:00:11 - Logged In", -- [998]
-			"11:00:11 - ML initialized!", -- [999]
-			"11:00:11 - TradeUI enabled", -- [1000]
-			"11:00:23 - Vancard-Zul'jin (2.12.2) (nil)", -- [1001]
-			"11:00:23 - ActivateSkin (bfa)", -- [1002]
-			"11:00:27 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [1003]
-			"11:00:27 - GetML()", -- [1004]
-			"11:00:27 - UpdatePlayersData()", -- [1005]
-			"07/21/19", -- [1006]
-			"11:02:56 - Storage:New (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (temp) (restored) (table: 0000020F9EB69CE0)", -- [1007]
-			"11:02:56 - Storage: searching for item: (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r)", -- [1008]
-			"11:02:56 - Error - Couldn't find item", -- [1009]
-			"11:02:56 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r)", -- [1010]
-			"11:02:56 - Storage:RemoveItem (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r)", -- [1011]
-			"11:02:56 - Logged In", -- [1012]
-			"11:02:56 - ML initialized!", -- [1013]
-			"11:02:56 - TradeUI enabled", -- [1014]
-			"11:03:06 - Durlok-BlackDragonflight (2.12.2) (nil)", -- [1015]
-			"11:03:06 - ActivateSkin (bfa)", -- [1016]
-			"11:03:10 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [1017]
-			"11:03:10 - GetML()", -- [1018]
-			"11:03:10 - UpdatePlayersData()", -- [1019]
-			"07/21/19", -- [1020]
-			"11:06:41 - Storage:New (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r) (temp) (restored) (table: 000002101E83CD10)", -- [1021]
-			"11:06:41 - Storage: searching for item: (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r)", -- [1022]
-			"11:06:41 - Error - Couldn't find item", -- [1023]
-			"11:06:41 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r)", -- [1024]
-			"11:06:41 - Storage:RemoveItem (|cffa335ee|Hitem:49483::::::::120:71::::::|h[Halo of Transcendence]|h|r)", -- [1025]
-			"11:06:41 - Logged In", -- [1026]
-			"11:06:41 - ML initialized!", -- [1027]
-			"11:06:41 - TradeUI enabled", -- [1028]
-			"11:06:53 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [1029]
-			"11:06:53 - ActivateSkin (bfa)", -- [1030]
-			"11:06:59 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [1031]
-			"11:06:59 - GetML()", -- [1032]
-			"11:06:59 - UpdatePlayersData()", -- [1033]
-			"11:07:04 - GetPlayersGuildRank()", -- [1034]
-			"11:07:04 - Found Guild Rank: Ahroun", -- [1035]
-			"11:07:06 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [1036]
-			"11:07:56 - Event: (LOOT_READY) (true)", -- [1037]
-			"11:11:45 - Event: (LOOT_READY) (true)", -- [1038]
-			"11:11:46 - Event: (LOOT_READY) (true)", -- [1039]
-			"11:11:47 - Event: (LOOT_READY) (true)", -- [1040]
-			"11:11:50 - Event: (LOOT_READY) (true)", -- [1041]
-			"11:11:50 - Event: (LOOT_READY) (true)", -- [1042]
-			"11:15:10 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1043]
-			"11:15:10 - GetML()", -- [1044]
-			"11:15:42 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1045]
-			"11:15:42 - GetML()", -- [1046]
-			"11:16:38 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1047]
-			"11:16:38 - GetML()", -- [1048]
-			"11:16:53 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1049]
-			"11:16:53 - GetML()", -- [1050]
-			"11:36:05 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1051]
-			"11:36:05 - GetML()", -- [1052]
-			"11:37:57 - Event: (LOOT_READY) (true)", -- [1053]
-			"11:42:23 - Event: (LOOT_READY) (true)", -- [1054]
-			"11:46:40 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1055]
-			"11:46:40 - GetML()", -- [1056]
-			"11:48:35 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1057]
-			"11:48:35 - GetML()", -- [1058]
-			"11:58:13 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1059]
-			"11:58:13 - GetML()", -- [1060]
-			"11:58:31 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1061]
-			"11:58:31 - GetML()", -- [1062]
-			"11:59:36 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1063]
-			"11:59:36 - GetML()", -- [1064]
-			"12:00:01 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1065]
-			"12:00:01 - GetML()", -- [1066]
-			"07/21/19", -- [1067]
-			"15:17:18 - Logged In", -- [1068]
-			"15:17:18 - ML initialized!", -- [1069]
-			"15:17:18 - TradeUI enabled", -- [1070]
-			"15:17:29 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [1071]
-			"15:17:29 - ActivateSkin (bfa)", -- [1072]
-			"15:17:35 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [1073]
-			"15:17:35 - GetML()", -- [1074]
-			"15:17:35 - UpdatePlayersData()", -- [1075]
-			"15:17:40 - GetPlayersGuildRank()", -- [1076]
-			"15:17:40 - Found Guild Rank: Ahroun", -- [1077]
-			"15:17:42 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [1078]
-			"15:18:52 - Event: (LOOT_READY) (true)", -- [1079]
-			"15:20:41 - Event: (LOOT_READY) (true)", -- [1080]
-			"15:21:23 - Event: (LOOT_READY) (true)", -- [1081]
-			"15:21:23 - Event: (LOOT_READY) (true)", -- [1082]
-			"15:22:43 - Event: (LOOT_READY) (true)", -- [1083]
-			"15:26:33 - Event: (LOOT_READY) (true)", -- [1084]
-			"15:26:33 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (167893) (|cff0070dd|Hitem:167893::::::::120:71::::::|h[Prismatic Crystal]|h|r) (1) (Shanyt) (WARRIOR)", -- [1085]
-			"15:27:25 - Event: (PARTY_LEADER_CHANGED)", -- [1086]
-			"15:27:25 - GetML()", -- [1087]
-			"15:27:25 - Resetting council as we have a new ML!", -- [1088]
-			"15:27:25 - MasterLooter =  (Shanyt-ArgentDawn)", -- [1089]
-			"15:27:25 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1090]
-			"15:27:25 - ML:NewML (Shanyt-ArgentDawn)", -- [1091]
-			"15:27:25 - UpdateMLdb", -- [1092]
-			"15:27:25 - OnMLDBReceived", -- [1093]
-			"15:27:25 - UpdateGroup (true)", -- [1094]
-			"15:27:25 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1095]
-			"15:27:25 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1096]
-			"15:27:26 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1097]
-			"15:27:26 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1098]
-			"15:27:26 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1099]
-			"15:27:26 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1100]
-			"15:27:26 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1101]
-			"15:27:26 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1102]
-			"15:27:26 - GetLootDBStatistics()", -- [1103]
-			"15:27:26 - GetGuildRankNum()", -- [1104]
-			"15:27:26 - RCVotingFrame (enabled)", -- [1105]
-			"15:27:26 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (Ahroun) (nil) (0) (393) (71)", -- [1106]
-			"15:27:26 - Comm received:^1^SplayerInfo^T^N1^SShanyt-ArgentDawn^N2^SWARRIOR^N3^SDAMAGER^N4^SAhroun^N6^N0^N7^N393^N8^N71^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1107]
-			"15:27:30 - VotingFrame:Update() without lootTable!!", -- [1108]
-			"15:27:36 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1109]
-			"15:27:36 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1110]
-			"15:27:36 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1111]
-			"15:27:39 - UpdateGroup (table: 0000026067EB8810)", -- [1112]
-			"15:27:39 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1113]
-			"15:27:39 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1114]
-			"15:27:39 - Comm received:^1^Sxrealm^T^N1^SLillys-Blackhand^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1115]
-			"15:27:39 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1116]
-			"15:27:39 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1117]
-			"15:27:39 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (Warlord) (nil) (0) (369.8125) (253)", -- [1118]
-			"15:27:39 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SplayerInfo^N3^SLillys-Blackhand^N4^SHUNTER^N5^SDAMAGER^N6^SWarlord^N8^N0^N9^N369.8125^N10^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1119]
-			"15:27:39 - Comm received:^1^SplayerInfo^T^N1^SLillys-Blackhand^N2^SHUNTER^N3^SDAMAGER^N4^SWarlord^N6^N0^N7^N369.8125^N8^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (WHISPER)", -- [1120]
-			"15:27:40 - Timer MLdb_check passed", -- [1121]
-			"15:27:43 - VotingFrame:Update() without lootTable!!", -- [1122]
-			"15:28:38 - VotingFrame:Update() without lootTable!!", -- [1123]
-			"15:28:42 - Event: (LOOT_READY) (true)", -- [1124]
-			"15:28:43 - Event: (LOOT_READY) (true)", -- [1125]
-			"15:28:48 - Event: (LOOT_READY) (true)", -- [1126]
-			"15:28:50 - ML event (PLAYER_REGEN_ENABLED)", -- [1127]
-			"15:28:52 - Event: (LOOT_READY) (true)", -- [1128]
-			"15:29:08 - Event: (LOOT_READY) (true)", -- [1129]
-			"15:29:08 - ML event (PLAYER_REGEN_ENABLED)", -- [1130]
-			"15:29:48 - Event: (LOOT_READY) (true)", -- [1131]
-			"15:29:48 - Event: (LOOT_READY) (true)", -- [1132]
-			"15:30:09 - VotingFrame:Update() without lootTable!!", -- [1133]
-			"15:30:13 - Event: (LOOT_READY) (true)", -- [1134]
-			"15:30:14 - ML event (PLAYER_REGEN_ENABLED)", -- [1135]
-			"15:31:03 - ML event (PLAYER_REGEN_ENABLED)", -- [1136]
-			"15:31:04 - Event: (LOOT_READY) (true)", -- [1137]
-			"15:31:20 - Event: (LOOT_READY) (true)", -- [1138]
-			"15:31:29 - ML event (PLAYER_REGEN_ENABLED)", -- [1139]
-			"15:31:29 - Event: (LOOT_READY) (true)", -- [1140]
-			"15:32:03 - ML event (PLAYER_REGEN_ENABLED)", -- [1141]
-			"15:32:04 - Event: (LOOT_READY) (true)", -- [1142]
-			"15:32:04 - Event: (LOOT_READY) (true)", -- [1143]
-			"15:32:31 - ML event (PLAYER_REGEN_ENABLED)", -- [1144]
-			"15:32:50 - ML event (PLAYER_REGEN_ENABLED)", -- [1145]
-			"15:33:54 - Event: (LOOT_READY) (true)", -- [1146]
-			"15:33:58 - ML event (PLAYER_REGEN_ENABLED)", -- [1147]
-			"15:34:16 - ML event (PLAYER_REGEN_ENABLED)", -- [1148]
-			"15:34:17 - Event: (LOOT_READY) (true)", -- [1149]
-			"15:35:00 - ML event (PLAYER_REGEN_ENABLED)", -- [1150]
-			"15:35:07 - Event: (LOOT_READY) (true)", -- [1151]
-			"15:35:12 - ML event (PLAYER_REGEN_ENABLED)", -- [1152]
-			"15:35:22 - ML event (PLAYER_REGEN_ENABLED)", -- [1153]
-			"15:36:11 - Event: (LOOT_READY) (true)", -- [1154]
-			"15:36:25 - Event: (LOOT_READY) (true)", -- [1155]
-			"15:36:26 - Event: (LOOT_READY) (true)", -- [1156]
-			"15:36:57 - ML event (PLAYER_REGEN_ENABLED)", -- [1157]
-			"15:36:58 - Event: (LOOT_READY) (true)", -- [1158]
-			"15:36:58 - Event: (LOOT_READY) (true)", -- [1159]
-			"15:37:11 - ML event (PLAYER_REGEN_ENABLED)", -- [1160]
-			"15:37:11 - Event: (LOOT_READY) (true)", -- [1161]
-			"15:37:21 - Event: (LOOT_READY) (true)", -- [1162]
-			"15:37:25 - ML event (PLAYER_REGEN_ENABLED)", -- [1163]
-			"15:37:26 - Event: (LOOT_READY) (true)", -- [1164]
-			"15:37:31 - Event: (LOOT_READY) (true)", -- [1165]
-			"15:37:47 - ML event (PLAYER_REGEN_ENABLED)", -- [1166]
-			"15:37:47 - Event: (LOOT_READY) (true)", -- [1167]
-			"15:37:47 - Event: (LOOT_READY) (true)", -- [1168]
-			"15:37:57 - ML event (PLAYER_REGEN_ENABLED)", -- [1169]
-			"15:37:57 - Event: (LOOT_READY) (true)", -- [1170]
-			"15:37:57 - Event: (LOOT_READY) (true)", -- [1171]
-			"15:38:24 - Event: (LOOT_READY) (true)", -- [1172]
-			"15:38:26 - VotingFrame:Update() without lootTable!!", -- [1173]
-			"15:38:26 - Event: (LOOT_READY) (true)", -- [1174]
-			"15:38:26 - Event: (LOOT_READY) (true)", -- [1175]
-			"15:38:26 - ML event (PLAYER_REGEN_ENABLED)", -- [1176]
-			"15:38:38 - VotingFrame:Update() without lootTable!!", -- [1177]
-			"15:38:45 - ML event (PLAYER_REGEN_ENABLED)", -- [1178]
-			"15:38:46 - Event: (LOOT_READY) (true)", -- [1179]
-			"15:38:47 - Event: (LOOT_READY) (true)", -- [1180]
-			"15:39:08 - ML event (PLAYER_REGEN_ENABLED)", -- [1181]
-			"15:39:08 - Event: (LOOT_READY) (true)", -- [1182]
-			"15:39:08 - Event: (LOOT_READY) (true)", -- [1183]
-			"15:39:45 - Event: (LOOT_READY) (true)", -- [1184]
-			"15:39:45 - Event: (LOOT_READY) (true)", -- [1185]
-			"15:39:54 - ML event (PLAYER_REGEN_ENABLED)", -- [1186]
-			"15:40:23 - VotingFrame:Update() without lootTable!!", -- [1187]
-			"15:40:37 - VotingFrame:Update() without lootTable!!", -- [1188]
-			"15:40:44 - Event: (LOOT_READY) (true)", -- [1189]
-			"15:40:48 - Event: (LOOT_READY) (true)", -- [1190]
-			"15:40:48 - Event: (LOOT_READY) (true)", -- [1191]
-			"15:41:04 - Event: (LOOT_READY) (true)", -- [1192]
-			"15:41:08 - ML event (PLAYER_REGEN_ENABLED)", -- [1193]
-			"15:41:12 - Event: (LOOT_READY) (true)", -- [1194]
-			"15:41:18 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (167893) (|cff0070dd|Hitem:167893::::::::120:71::::::|h[Prismatic Crystal]|h|r) (1) (Lillys-Blackhand) (HUNTER)", -- [1195]
-			"15:41:24 - VotingFrame:Update() without lootTable!!", -- [1196]
-			"15:41:30 - Event: (LOOT_READY) (true)", -- [1197]
-			"15:41:47 - Event: (LOOT_READY) (true)", -- [1198]
-			"15:41:55 - VotingFrame:Update() without lootTable!!", -- [1199]
-			"15:41:58 - VotingFrame:Update() without lootTable!!", -- [1200]
-			"15:42:02 - VotingFrame:Update() without lootTable!!", -- [1201]
-			"15:42:16 - Event: (LOOT_READY) (true)", -- [1202]
-			"15:42:16 - Event: (LOOT_READY) (true)", -- [1203]
-			"15:42:20 - ML event (PLAYER_REGEN_ENABLED)", -- [1204]
-			"15:42:21 - Event: (LOOT_READY) (true)", -- [1205]
-			"15:42:40 - Event: (LOOT_READY) (true)", -- [1206]
-			"15:42:49 - VotingFrame:Update() without lootTable!!", -- [1207]
-			"15:42:51 - Event: (LOOT_READY) (true)", -- [1208]
-			"15:43:06 - ML event (PLAYER_REGEN_ENABLED)", -- [1209]
-			"15:43:06 - Event: (LOOT_READY) (true)", -- [1210]
-			"15:43:19 - Event: (LOOT_READY) (true)", -- [1211]
-			"15:43:30 - Event: (LOOT_READY) (true)", -- [1212]
-			"15:43:45 - VotingFrame:Update() without lootTable!!", -- [1213]
-			"15:43:48 - Event: (LOOT_READY) (true)", -- [1214]
-			"15:43:48 - Event: (LOOT_READY) (true)", -- [1215]
-			"15:44:00 - ML event (PLAYER_REGEN_ENABLED)", -- [1216]
-			"15:44:00 - Event: (LOOT_READY) (true)", -- [1217]
-			"15:44:07 - ML event (PLAYER_REGEN_ENABLED)", -- [1218]
-			"15:44:07 - Event: (LOOT_READY) (true)", -- [1219]
-			"15:44:08 - Event: (LOOT_READY) (true)", -- [1220]
-			"15:44:08 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169332) (|cff0070dd|Hitem:169332::::::::120:71::::::|h[Strange Mineralized Water]|h|r) (1) (Shanyt) (WARRIOR)", -- [1221]
-			"15:44:16 - Event: (LOOT_READY) (true)", -- [1222]
-			"15:44:17 - ML event (PLAYER_REGEN_ENABLED)", -- [1223]
-			"15:44:29 - Event: (LOOT_READY) (true)", -- [1224]
-			"15:44:32 - Event: (LOOT_READY) (true)", -- [1225]
-			"15:44:32 - Event: (LOOT_READY) (true)", -- [1226]
-			"15:44:32 - ML event (PLAYER_REGEN_ENABLED)", -- [1227]
-			"15:44:41 - ML event (PLAYER_REGEN_ENABLED)", -- [1228]
-			"15:44:41 - Event: (LOOT_READY) (true)", -- [1229]
-			"15:44:55 - ML event (PLAYER_REGEN_ENABLED)", -- [1230]
-			"15:44:55 - Event: (LOOT_READY) (true)", -- [1231]
-			"15:45:13 - Event: (LOOT_READY) (true)", -- [1232]
-			"15:45:14 - ML event (PLAYER_REGEN_ENABLED)", -- [1233]
-			"15:45:23 - Event: (LOOT_READY) (true)", -- [1234]
-			"15:45:23 - ML event (PLAYER_REGEN_ENABLED)", -- [1235]
-			"15:45:46 - VotingFrame:Update() without lootTable!!", -- [1236]
-			"15:46:06 - ML event (PLAYER_REGEN_ENABLED)", -- [1237]
-			"15:46:06 - Event: (LOOT_READY) (true)", -- [1238]
-			"15:46:06 - Event: (LOOT_READY) (true)", -- [1239]
-			"15:46:50 - Event: (LOOT_READY) (true)", -- [1240]
-			"15:46:57 - VotingFrame:Update() without lootTable!!", -- [1241]
-			"15:47:06 - Event: (LOOT_READY) (true)", -- [1242]
-			"15:47:13 - VotingFrame:Update() without lootTable!!", -- [1243]
-			"15:47:22 - Event: (LOOT_READY) (true)", -- [1244]
-			"15:47:23 - VotingFrame:Update() without lootTable!!", -- [1245]
-			"15:47:35 - Event: (LOOT_READY) (true)", -- [1246]
-			"15:48:02 - VotingFrame:Update() without lootTable!!", -- [1247]
-			"15:48:57 - VotingFrame:Update() without lootTable!!", -- [1248]
-			"15:49:04 - VotingFrame:Update() without lootTable!!", -- [1249]
-			"15:49:10 - VotingFrame:Update() without lootTable!!", -- [1250]
-			"15:49:50 - Event: (LOOT_READY) (true)", -- [1251]
-			"15:49:51 - Event: (LOOT_READY) (true)", -- [1252]
-			"15:49:51 - ML event (PLAYER_REGEN_ENABLED)", -- [1253]
-			"15:50:11 - ML event (PLAYER_REGEN_ENABLED)", -- [1254]
-			"15:50:11 - Event: (LOOT_READY) (true)", -- [1255]
-			"15:50:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169333) (|cff0070dd|Hitem:169333::::::::120:71::::::|h[Strange Volcanic Rock]|h|r) (1) (Shanyt) (WARRIOR)", -- [1256]
-			"15:50:31 - Event: (LOOT_READY) (true)", -- [1257]
-			"15:50:31 - Event: (LOOT_READY) (true)", -- [1258]
-			"15:50:32 - ML event (PLAYER_REGEN_ENABLED)", -- [1259]
-			"15:50:41 - Event: (LOOT_READY) (true)", -- [1260]
-			"15:50:42 - ML event (PLAYER_REGEN_ENABLED)", -- [1261]
-			"15:51:09 - ML event (PLAYER_REGEN_ENABLED)", -- [1262]
-			"15:51:09 - Event: (LOOT_READY) (true)", -- [1263]
-			"15:51:18 - ML event (PLAYER_REGEN_ENABLED)", -- [1264]
-			"15:51:19 - Event: (LOOT_READY) (true)", -- [1265]
-			"15:51:20 - VotingFrame:Update() without lootTable!!", -- [1266]
-			"15:51:23 - VotingFrame:Update() without lootTable!!", -- [1267]
-			"15:51:35 - ML event (PLAYER_REGEN_ENABLED)", -- [1268]
-			"15:51:35 - Event: (LOOT_READY) (true)", -- [1269]
-			"15:51:38 - VotingFrame:Update() without lootTable!!", -- [1270]
-			"15:51:44 - VotingFrame:Update() without lootTable!!", -- [1271]
-			"15:52:07 - VotingFrame:Update() without lootTable!!", -- [1272]
-			"15:52:33 - ML event (PLAYER_REGEN_ENABLED)", -- [1273]
-			"15:52:45 - ML event (PLAYER_REGEN_ENABLED)", -- [1274]
-			"15:52:57 - ML event (PLAYER_REGEN_ENABLED)", -- [1275]
-			"15:53:14 - ML event (PLAYER_REGEN_ENABLED)", -- [1276]
-			"15:53:43 - ML event (PLAYER_REGEN_ENABLED)", -- [1277]
-			"15:54:02 - VotingFrame:Update() without lootTable!!", -- [1278]
-			"15:54:04 - ML event (PLAYER_REGEN_ENABLED)", -- [1279]
-			"15:54:15 - ML event (PLAYER_REGEN_ENABLED)", -- [1280]
-			"15:54:16 - VotingFrame:Update() without lootTable!!", -- [1281]
-			"15:54:21 - VotingFrame:Update() without lootTable!!", -- [1282]
-			"15:54:28 - VotingFrame:Update() without lootTable!!", -- [1283]
-			"15:54:49 - VotingFrame:Update() without lootTable!!", -- [1284]
-			"15:55:37 - VotingFrame:Update() without lootTable!!", -- [1285]
-			"15:55:53 - VotingFrame:Update() without lootTable!!", -- [1286]
-			"15:57:17 - ML event (PLAYER_REGEN_ENABLED)", -- [1287]
-			"15:57:17 - Event: (LOOT_READY) (true)", -- [1288]
-			"15:57:17 - Event: (LOOT_READY) (true)", -- [1289]
-			"15:57:17 - Event: (LOOT_READY) (true)", -- [1290]
-			"15:57:42 - ML event (PLAYER_REGEN_ENABLED)", -- [1291]
-			"15:57:43 - Event: (LOOT_READY) (true)", -- [1292]
-			"15:57:44 - Event: (LOOT_READY) (true)", -- [1293]
-			"15:58:05 - ML event (PLAYER_REGEN_ENABLED)", -- [1294]
-			"15:58:06 - Event: (LOOT_READY) (true)", -- [1295]
-			"15:58:06 - Event: (LOOT_READY) (true)", -- [1296]
-			"15:58:48 - Event: (LOOT_READY) (true)", -- [1297]
-			"15:58:48 - Event: (LOOT_READY) (true)", -- [1298]
-			"15:58:48 - ML event (PLAYER_REGEN_ENABLED)", -- [1299]
-			"15:59:26 - ML event (PLAYER_REGEN_ENABLED)", -- [1300]
-			"16:00:05 - Event: (LOOT_READY) (true)", -- [1301]
-			"16:00:06 - Event: (LOOT_READY) (true)", -- [1302]
-			"16:00:22 - ML event (PLAYER_REGEN_ENABLED)", -- [1303]
-			"16:00:23 - Event: (LOOT_READY) (true)", -- [1304]
-			"16:00:23 - Event: (LOOT_READY) (true)", -- [1305]
-			"16:01:06 - VotingFrame:Update() without lootTable!!", -- [1306]
-			"16:01:14 - Event: (LOOT_READY) (true)", -- [1307]
-			"16:01:14 - ML event (PLAYER_REGEN_ENABLED)", -- [1308]
-			"16:01:29 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169332) (|cff0070dd|Hitem:169332::::::::120:71::::::|h[Strange Mineralized Water]|h|r) (1) (Lillys-Blackhand) (HUNTER)", -- [1309]
-			"16:01:43 - Event: (LOOT_READY) (true)", -- [1310]
-			"16:01:43 - ML event (PLAYER_REGEN_ENABLED)", -- [1311]
-			"16:01:43 - Event: (LOOT_READY) (true)", -- [1312]
-			"16:01:50 - ML event (PLAYER_REGEN_ENABLED)", -- [1313]
-			"16:01:58 - Event: (LOOT_READY) (true)", -- [1314]
-			"16:01:58 - Event: (LOOT_READY) (true)", -- [1315]
-			"16:02:09 - Event: (LOOT_READY) (true)", -- [1316]
-			"16:02:09 - Event: (LOOT_READY) (true)", -- [1317]
-			"16:02:09 - Event: (LOOT_READY) (true)", -- [1318]
-			"16:02:44 - Event: (LOOT_READY) (true)", -- [1319]
-			"16:02:44 - Event: (LOOT_READY) (true)", -- [1320]
-			"16:02:45 - ML event (PLAYER_REGEN_ENABLED)", -- [1321]
-			"16:03:41 - ML event (PLAYER_REGEN_ENABLED)", -- [1322]
-			"16:03:41 - Event: (LOOT_READY) (true)", -- [1323]
-			"16:03:42 - Event: (LOOT_READY) (true)", -- [1324]
-			"16:03:44 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169332) (|cff0070dd|Hitem:169332::::::::120:71::::::|h[Strange Mineralized Water]|h|r) (1) (Lillys-Blackhand) (HUNTER)", -- [1325]
-			"16:04:22 - VotingFrame:Update() without lootTable!!", -- [1326]
-			"16:04:42 - ML event (PLAYER_REGEN_ENABLED)", -- [1327]
-			"16:04:42 - Event: (LOOT_READY) (true)", -- [1328]
-			"16:05:32 - ML event (PLAYER_REGEN_ENABLED)", -- [1329]
-			"16:05:32 - Event: (LOOT_READY) (true)", -- [1330]
-			"16:06:11 - VotingFrame:Update() without lootTable!!", -- [1331]
-			"16:06:23 - ML event (PLAYER_REGEN_ENABLED)", -- [1332]
-			"16:06:23 - Event: (LOOT_READY) (true)", -- [1333]
-			"16:06:43 - ML event (PLAYER_REGEN_ENABLED)", -- [1334]
-			"16:06:43 - Event: (LOOT_READY) (true)", -- [1335]
-			"16:06:43 - Event: (LOOT_READY) (true)", -- [1336]
-			"16:06:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (169332) (|cff0070dd|Hitem:169332::::::::120:71::::::|h[Strange Mineralized Water]|h|r) (1) (Shanyt) (WARRIOR)", -- [1337]
-			"16:07:04 - ML event (PLAYER_REGEN_ENABLED)", -- [1338]
-			"16:07:04 - Event: (LOOT_READY) (true)", -- [1339]
-			"16:07:42 - Event: (LOOT_READY) (true)", -- [1340]
-			"16:08:07 - VotingFrame:Update() without lootTable!!", -- [1341]
-			"16:09:06 - ML event (PLAYER_REGEN_ENABLED)", -- [1342]
-			"16:09:07 - Event: (LOOT_READY) (true)", -- [1343]
-			"16:09:07 - Event: (LOOT_READY) (true)", -- [1344]
-			"16:10:49 - ML event (PLAYER_REGEN_ENABLED)", -- [1345]
-			"16:10:51 - Event: (LOOT_READY) (true)", -- [1346]
-			"16:11:36 - VotingFrame:Update() without lootTable!!", -- [1347]
-			"16:11:43 - Event: (LOOT_READY) (true)", -- [1348]
-			"16:11:43 - Event: (LOOT_READY) (true)", -- [1349]
-			"16:11:43 - ML event (PLAYER_REGEN_ENABLED)", -- [1350]
-			"16:11:46 - Event: (LOOT_READY) (true)", -- [1351]
-			"16:11:55 - Event: (LOOT_READY) (true)", -- [1352]
-			"16:11:56 - ML event (PLAYER_REGEN_ENABLED)", -- [1353]
-			"16:12:41 - ML event (PLAYER_REGEN_ENABLED)", -- [1354]
-			"16:12:55 - ML event (PLAYER_REGEN_ENABLED)", -- [1355]
-			"16:13:20 - ML event (PLAYER_REGEN_ENABLED)", -- [1356]
-			"16:14:18 - ML event (PLAYER_REGEN_ENABLED)", -- [1357]
-			"16:14:27 - VotingFrame:Update() without lootTable!!", -- [1358]
-			"16:15:03 - VotingFrame:Update() without lootTable!!", -- [1359]
-			"16:15:13 - Event: (LOOT_READY) (true)", -- [1360]
-			"16:20:30 - Event: (LOOT_READY) (true)", -- [1361]
-			"16:21:31 - ML event (PLAYER_REGEN_ENABLED)", -- [1362]
-			"16:22:16 - VotingFrame:Update() without lootTable!!", -- [1363]
-			"16:22:25 - UpdateGroup (table: 0000026067EB8810)", -- [1364]
-			"16:22:25 - ML:AddCandidate (Fatalila-Ragnaros) (PALADIN) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1365]
-			"16:22:25 - ML:AddCandidate (Flipsy-Ragnaros) (WARLOCK) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1366]
-			"16:22:25 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1367]
-			"16:22:25 - Comm received:^1^Sxrealm^T^N1^SFatalila-Ragnaros^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1368]
-			"16:22:25 - Comm received:^1^Sxrealm^T^N1^SFlipsy-Ragnaros^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1369]
-			"16:22:25 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1370]
-			"16:22:25 - Comm received:^1^Scandidates^T^N1^T^SFlipsy-Ragnaros^T^Srole^SDAMAGER^Sclass^SWARLOCK^Srank^S^t^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SFatalila-Ragnaros^T^Srole^SDAMAGER^Sclass^SPALADIN^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1371]
-			"16:22:35 - UpdateGroup (table: 0000026067EB8810)", -- [1372]
-			"16:22:35 - ML:RemoveCandidate (Flipsy-Ragnaros)", -- [1373]
-			"16:22:35 - ML:RemoveCandidate (Fatalila-Ragnaros)", -- [1374]
-			"16:22:35 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1375]
-			"16:22:35 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1376]
-			"16:22:35 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1377]
-			"16:22:37 - Event: (LOOT_READY) (true)", -- [1378]
-			"16:22:37 - Event: (LOOT_READY) (true)", -- [1379]
-			"16:23:18 - Event: (LOOT_READY) (true)", -- [1380]
-			"16:23:19 - Event: (LOOT_READY) (true)", -- [1381]
-			"16:23:44 - VotingFrame:Update() without lootTable!!", -- [1382]
-			"16:23:47 - VotingFrame:Update() without lootTable!!", -- [1383]
-			"16:23:53 - UpdateGroup (table: 0000026067EB8810)", -- [1384]
-			"16:23:53 - ML:AddCandidate (Maggìe-Thrall) (DEATHKNIGHT) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1385]
-			"16:23:53 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1386]
-			"16:23:53 - Comm received:^1^Sxrealm^T^N1^SMaggìe-Thrall^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1387]
-			"16:23:53 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1388]
-			"16:23:53 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SMaggìe-Thrall^T^Srole^SDAMAGER^Sclass^SDEATHKNIGHT^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1389]
-			"16:26:01 - VotingFrame:Update() without lootTable!!", -- [1390]
-			"16:26:10 - UpdateGroup (table: 0000026067EB8810)", -- [1391]
-			"16:26:10 - ML:AddCandidate (Roverorc-Korialstrasz) (HUNTER) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1392]
-			"16:26:10 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1393]
-			"16:26:10 - Comm received:^1^Sxrealm^T^N1^SRoverorc-Korialstrasz^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1394]
-			"16:26:10 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1395]
-			"16:26:10 - Comm received:^1^Scandidates^T^N1^T^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SMaggìe-Thrall^T^Srole^SDAMAGER^Sclass^SDEATHKNIGHT^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1396]
-			"16:26:45 - ML event (PLAYER_REGEN_ENABLED)", -- [1397]
-			"16:27:11 - ML event (PLAYER_REGEN_ENABLED)", -- [1398]
-			"16:27:12 - Event: (LOOT_READY) (true)", -- [1399]
-			"16:27:12 - Event: (LOOT_READY) (true)", -- [1400]
-			"16:27:36 - ML event (PLAYER_REGEN_ENABLED)", -- [1401]
-			"16:27:36 - Event: (LOOT_READY) (true)", -- [1402]
-			"16:27:45 - ML event (PLAYER_REGEN_ENABLED)", -- [1403]
-			"16:27:45 - Event: (LOOT_READY) (true)", -- [1404]
-			"16:27:47 - VotingFrame:Update() without lootTable!!", -- [1405]
-			"16:27:56 - UpdateGroup (table: 0000026067EB8810)", -- [1406]
-			"16:27:56 - ML:AddCandidate (Loperodrigue-Ragnaros) (PRIEST) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1407]
-			"16:27:56 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1408]
-			"16:27:56 - Comm received:^1^Sxrealm^T^N1^SLoperodrigue-Ragnaros^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1409]
-			"16:27:56 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1410]
-			"16:27:56 - Comm received:^1^Scandidates^T^N1^T^SMaggìe-Thrall^T^Srole^SDAMAGER^Sclass^SDEATHKNIGHT^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SLoperodrigue-Ragnaros^T^Srole^SDAMAGER^Sclass^SPRIEST^Srank^S^t^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1411]
-			"16:27:56 - ML:AddCandidate (Loperodrigue-Ragnaros) (PRIEST) (DAMAGER) (Alter) (nil) (0) (415.375) (258)", -- [1412]
-			"16:27:56 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SplayerInfo^N3^SLoperodrigue-Ragnaros^N4^SPRIEST^N5^SDAMAGER^N6^SAlter^N8^N0^N9^N415.375^N10^N258^t^^ (from:) (Loperodrigue-Ragnaros) (distri:) (PARTY)", -- [1413]
-			"16:27:56 - Comm received:^1^SplayerInfo^T^N1^SLoperodrigue-Ragnaros^N2^SPRIEST^N3^SDAMAGER^N4^SAlter^N6^N0^N7^N415.375^N8^N258^t^^ (from:) (Loperodrigue-Ragnaros) (distri:) (WHISPER)", -- [1414]
-			"16:27:57 - Event: (LOOT_READY) (true)", -- [1415]
-			"16:27:57 - VotingFrame:Update() without lootTable!!", -- [1416]
-			"16:27:58 - ML event (PLAYER_REGEN_ENABLED)", -- [1417]
-			"16:28:01 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^Scouncil_request^t^^ (from:) (Loperodrigue-Ragnaros) (distri:) (PARTY)", -- [1418]
-			"16:28:01 - Comm received:^1^Scouncil_request^T^t^^ (from:) (Loperodrigue-Ragnaros) (distri:) (WHISPER)", -- [1419]
-			"16:28:02 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1420]
-			"16:28:02 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1421]
-			"16:28:03 - ML event (PLAYER_REGEN_ENABLED)", -- [1422]
-			"16:28:29 - VotingFrame:Update() without lootTable!!", -- [1423]
-			"16:28:38 - VotingFrame:Update() without lootTable!!", -- [1424]
-			"16:28:55 - Event: (LOOT_READY) (true)", -- [1425]
-			"16:28:56 - Event: (LOOT_READY) (true)", -- [1426]
-			"16:29:08 - ML event (PLAYER_REGEN_ENABLED)", -- [1427]
-			"16:29:17 - VotingFrame:Update() without lootTable!!", -- [1428]
-			"16:29:18 - VotingFrame:Update() without lootTable!!", -- [1429]
-			"16:29:26 - UpdateGroup (table: 0000026067EB8810)", -- [1430]
-			"16:29:26 - ML:RemoveCandidate (Loperodrigue-Ragnaros)", -- [1431]
-			"16:29:26 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1432]
-			"16:29:26 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1433]
-			"16:29:26 - Comm received:^1^Scandidates^T^N1^T^SMaggìe-Thrall^T^Srole^SDAMAGER^Sclass^SDEATHKNIGHT^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1434]
-			"16:29:54 - VotingFrame:Update() without lootTable!!", -- [1435]
-			"16:29:56 - VotingFrame:Update() without lootTable!!", -- [1436]
-			"16:30:05 - UpdateGroup (table: 0000026067EB8810)", -- [1437]
-			"16:30:05 - ML:RemoveCandidate (Maggìe-Thrall)", -- [1438]
-			"16:30:05 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1439]
-			"16:30:05 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1440]
-			"16:30:05 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1441]
-			"16:30:34 - VotingFrame:Update() without lootTable!!", -- [1442]
-			"16:30:54 - VotingFrame:Update() without lootTable!!", -- [1443]
-			"16:30:55 - VotingFrame:Update() without lootTable!!", -- [1444]
-			"16:31:00 - VotingFrame:Update() without lootTable!!", -- [1445]
-			"16:31:03 - UpdateGroup (table: 0000026067EB8810)", -- [1446]
-			"16:31:03 - ML:AddCandidate (Aauron-Tichondrius) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1447]
-			"16:31:03 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1448]
-			"16:31:03 - Comm received:^1^Sxrealm^T^N1^SAauron-Tichondrius^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1449]
-			"16:31:03 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1450]
-			"16:31:03 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SAauron-Tichondrius^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1451]
-			"16:31:11 - VotingFrame:Update() without lootTable!!", -- [1452]
-			"16:31:19 - ML event (PLAYER_REGEN_ENABLED)", -- [1453]
-			"16:31:20 - Event: (LOOT_READY) (true)", -- [1454]
-			"16:31:39 - ML event (PLAYER_REGEN_ENABLED)", -- [1455]
-			"16:31:39 - Event: (LOOT_READY) (true)", -- [1456]
-			"16:32:43 - ML event (PLAYER_REGEN_ENABLED)", -- [1457]
-			"16:32:44 - Event: (LOOT_READY) (true)", -- [1458]
-			"16:32:52 - VotingFrame:Update() without lootTable!!", -- [1459]
-			"16:33:00 - UpdateGroup (table: 0000026067EB8810)", -- [1460]
-			"16:33:00 - ML:AddCandidate (Hunterhorde-Cho'gall) (HUNTER) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1461]
-			"16:33:00 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1462]
-			"16:33:01 - Comm received:^1^Sxrealm^T^N1^SHunterhorde-Cho'gall^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1463]
-			"16:33:01 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1464]
-			"16:33:01 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SAauron-Tichondrius^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^SHunterhorde-Cho'gall^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1465]
-			"16:33:30 - Event: (LOOT_READY) (true)", -- [1466]
-			"16:33:31 - ML event (PLAYER_REGEN_ENABLED)", -- [1467]
-			"16:33:33 - VotingFrame:Update() without lootTable!!", -- [1468]
-			"16:33:37 - UpdateGroup (table: 0000026067EB8810)", -- [1469]
-			"16:33:37 - ML:RemoveCandidate (Hunterhorde-Cho'gall)", -- [1470]
-			"16:33:37 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1471]
-			"16:33:37 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1472]
-			"16:33:37 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SAauron-Tichondrius^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1473]
-			"16:33:44 - VotingFrame:Update() without lootTable!!", -- [1474]
-			"16:34:46 - ML event (PLAYER_REGEN_ENABLED)", -- [1475]
-			"16:34:47 - Event: (LOOT_READY) (true)", -- [1476]
-			"16:35:13 - UpdateGroup (table: 0000026067EB8810)", -- [1477]
-			"16:35:13 - ML:RemoveCandidate (Aauron-Tichondrius)", -- [1478]
-			"16:35:13 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1479]
-			"16:35:13 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1480]
-			"16:35:13 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1481]
-			"16:35:53 - Event: (GROUP_LEFT) (1) (Party-75-00003146C1E9)", -- [1482]
-			"16:35:53 - GetML()", -- [1483]
-			"16:35:53 - Stop handling loot", -- [1484]
-			"16:35:53 - ML Disabled", -- [1485]
-			"16:35:54 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1486]
-			"16:36:17 - Event: (PARTY_LEADER_CHANGED)", -- [1487]
-			"16:36:17 - GetML()", -- [1488]
-			"16:36:17 - Resetting council as we have a new ML!", -- [1489]
-			"16:36:17 - MasterLooter =  (Lillys-Blackhand)", -- [1490]
-			"16:36:19 - VotingFrame:Update() without lootTable!!", -- [1491]
-			"16:36:27 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SplayerInfoRequest^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1492]
-			"16:36:27 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Lillys-Blackhand) (distri:) (WHISPER)", -- [1493]
-			"16:36:27 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1494]
-			"16:36:27 - OnMLDBReceived", -- [1495]
-			"16:36:27 - Comm received:^1^Scandidates^T^N1^T^SRoverorc-Korialstrasz^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1496]
-			"16:36:28 - Comm received:^1^Sxrealm^T^N1^SLillys-Blackhand^N2^SplayerInfo^N3^SShanyt-ArgentDawn^N4^SWARRIOR^N5^SDAMAGER^N6^SAhroun^N8^N0^N9^N393^N10^N71^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1497]
-			"16:36:32 - Timer MLdb_check passed", -- [1498]
-			"16:36:32 - Comm received:^1^Sxrealm^T^N1^SLillys-Blackhand^N2^Scouncil_request^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1499]
-			"16:36:33 - Comm received:^1^Scouncil^T^N1^T^N1^SLillys-Blackhand^t^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1500]
-			"16:36:33 - false = (IsCouncil) (Shanyt-ArgentDawn)", -- [1501]
-			"16:36:33 - Hide VotingFrame", -- [1502]
-			"16:37:48 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1503]
-			"16:37:48 - OnMLDBReceived", -- [1504]
-			"16:37:48 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1505]
-			"16:38:14 - Event: (PARTY_LEADER_CHANGED)", -- [1506]
-			"16:38:14 - GetML()", -- [1507]
-			"16:38:14 - Resetting council as we have a new ML!", -- [1508]
-			"16:38:14 - MasterLooter =  (Shanyt-ArgentDawn)", -- [1509]
-			"16:38:14 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1510]
-			"16:38:14 - ML:NewML (Shanyt-ArgentDawn)", -- [1511]
-			"16:38:14 - UpdateMLdb", -- [1512]
-			"16:38:14 - OnMLDBReceived", -- [1513]
-			"16:38:14 - UpdateGroup (true)", -- [1514]
-			"16:38:14 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1515]
-			"16:38:14 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1516]
-			"16:38:14 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1517]
-			"16:38:14 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1518]
-			"16:38:14 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1519]
-			"16:38:14 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1520]
-			"16:38:14 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1521]
-			"16:38:14 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1522]
-			"16:38:14 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1523]
-			"16:38:14 - GetLootDBStatistics()", -- [1524]
-			"16:38:14 - GetGuildRankNum()", -- [1525]
-			"16:38:14 - RCVotingFrame (enabled)", -- [1526]
-			"16:38:14 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1527]
-			"16:38:14 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (Warlord) (nil) (0) (369.8125) (253)", -- [1528]
-			"16:38:14 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SplayerInfo^N3^SLillys-Blackhand^N4^SHUNTER^N5^SDAMAGER^N6^SWarlord^N8^N0^N9^N369.8125^N10^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1529]
-			"16:38:14 - Comm received:^1^SplayerInfo^T^N1^SLillys-Blackhand^N2^SHUNTER^N3^SDAMAGER^N4^SWarlord^N6^N0^N7^N369.8125^N8^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (WHISPER)", -- [1530]
-			"16:38:14 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (Ahroun) (nil) (0) (393) (71)", -- [1531]
-			"16:38:14 - Comm received:^1^SplayerInfo^T^N1^SShanyt-ArgentDawn^N2^SWARRIOR^N3^SDAMAGER^N4^SAhroun^N6^N0^N7^N393^N8^N71^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1532]
-			"16:38:24 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1533]
-			"16:38:24 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1534]
-			"16:38:24 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^SspecID^N253^Senchant_lvl^N0^Sclass^SHUNTER^Srank^SWarlord^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1535]
-			"16:38:29 - Timer MLdb_check passed", -- [1536]
-			"16:38:52 - Event: (GROUP_LEFT) (1) (Party-75-00003146C1E9)", -- [1537]
-			"16:38:52 - GetML()", -- [1538]
-			"16:38:52 - Stop handling loot", -- [1539]
-			"16:38:52 - ML Disabled", -- [1540]
-			"16:38:52 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1541]
-			"16:38:52 - Event: (PARTY_LEADER_CHANGED)", -- [1542]
-			"16:38:52 - GetML()", -- [1543]
-			"16:38:52 - Unknown ML", -- [1544]
-			"16:38:52 - GetML()", -- [1545]
-			"16:38:52 - Resetting council as we have a new ML!", -- [1546]
-			"16:38:52 - MasterLooter =  (Etellis-Suramar)", -- [1547]
-			"16:38:53 - VotingFrame:Update() without lootTable!!", -- [1548]
-			"16:38:57 - VotingFrame:Update() without lootTable!!", -- [1549]
-			"16:39:02 - Event: (LOOT_READY) (true)", -- [1550]
-			"16:39:06 - Event: (LOOT_READY) (true)", -- [1551]
-			"16:39:06 - Event: (LOOT_READY) (true)", -- [1552]
-			"16:39:06 - Event: (LOOT_READY) (true)", -- [1553]
-			"16:39:07 - Timer MLdb_check passed", -- [1554]
-			"16:39:08 - Comm received:^1^Sxrealm^T^N1^SEtellis-Suramar^N2^Scouncil_request^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1555]
-			"16:39:08 - Comm received:^1^Sxrealm^T^N1^SEtellis-Suramar^N2^Scouncil_request^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1556]
-			"16:39:24 - Event: (LOOT_READY) (true)", -- [1557]
-			"16:39:25 - Event: (LOOT_READY) (true)", -- [1558]
-			"16:41:03 - Event: (LOOT_READY) (true)", -- [1559]
-			"16:41:04 - Event: (LOOT_READY) (true)", -- [1560]
-			"16:41:23 - Event: (GROUP_LEFT) (1) (Party-113-000019F77659)", -- [1561]
-			"16:41:23 - GetML()", -- [1562]
-			"16:41:33 - Event: (PARTY_LEADER_CHANGED)", -- [1563]
-			"16:41:33 - GetML()", -- [1564]
-			"16:41:33 - Resetting council as we have a new ML!", -- [1565]
-			"16:41:33 - MasterLooter =  (Shanyt-ArgentDawn)", -- [1566]
-			"16:41:33 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1567]
-			"16:41:33 - ML:NewML (Shanyt-ArgentDawn)", -- [1568]
-			"16:41:33 - UpdateMLdb", -- [1569]
-			"16:41:33 - OnMLDBReceived", -- [1570]
-			"16:41:33 - UpdateGroup (true)", -- [1571]
-			"16:41:33 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1572]
-			"16:41:33 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1573]
-			"16:41:33 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1574]
-			"16:41:33 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1575]
-			"16:41:33 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1576]
-			"16:41:33 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1577]
-			"16:41:33 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1578]
-			"16:41:33 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1579]
-			"16:41:33 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (Ahroun) (nil) (0) (393) (71)", -- [1580]
-			"16:41:33 - Comm received:^1^SplayerInfo^T^N1^SShanyt-ArgentDawn^N2^SWARRIOR^N3^SDAMAGER^N4^SAhroun^N6^N0^N7^N393^N8^N71^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1581]
-			"16:41:38 - Event: (GROUP_LEFT) (1) (Party-75-000031470297)", -- [1582]
-			"16:41:38 - GetML()", -- [1583]
-			"16:41:38 - Stop handling loot", -- [1584]
-			"16:41:38 - ML Disabled", -- [1585]
-			"16:41:38 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1586]
-			"16:41:39 - Event: (PARTY_LEADER_CHANGED)", -- [1587]
-			"16:41:39 - GetML()", -- [1588]
-			"16:41:39 - Resetting council as we have a new ML!", -- [1589]
-			"16:41:39 - MasterLooter =  (Shanyt-ArgentDawn)", -- [1590]
-			"16:41:39 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1591]
-			"16:41:39 - ML:NewML (Shanyt-ArgentDawn)", -- [1592]
-			"16:41:39 - UpdateMLdb", -- [1593]
-			"16:41:39 - OnMLDBReceived", -- [1594]
-			"16:41:39 - UpdateGroup (true)", -- [1595]
-			"16:41:39 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1596]
-			"16:41:39 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1597]
-			"16:41:40 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1598]
-			"16:41:40 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1599]
-			"16:41:40 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1600]
-			"16:41:40 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1601]
-			"16:41:40 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1602]
-			"16:41:40 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1603]
-			"16:41:40 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (Ahroun) (nil) (0) (393) (71)", -- [1604]
-			"16:41:40 - Comm received:^1^SplayerInfo^T^N1^SShanyt-ArgentDawn^N2^SWARRIOR^N3^SDAMAGER^N4^SAhroun^N6^N0^N7^N393^N8^N71^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1605]
-			"16:41:43 - Event: (GROUP_LEFT) (1) (Party-75-0000314702A0)", -- [1606]
-			"16:41:43 - GetML()", -- [1607]
-			"16:41:43 - Stop handling loot", -- [1608]
-			"16:41:43 - ML Disabled", -- [1609]
-			"16:41:43 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1610]
-			"16:41:45 - Event: (PARTY_LEADER_CHANGED)", -- [1611]
-			"16:41:45 - GetML()", -- [1612]
-			"16:41:45 - Resetting council as we have a new ML!", -- [1613]
-			"16:41:45 - MasterLooter =  (Shanyt-ArgentDawn)", -- [1614]
-			"16:41:45 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1615]
-			"16:41:45 - ML:NewML (Shanyt-ArgentDawn)", -- [1616]
-			"16:41:45 - UpdateMLdb", -- [1617]
-			"16:41:45 - OnMLDBReceived", -- [1618]
-			"16:41:45 - UpdateGroup (true)", -- [1619]
-			"16:41:45 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1620]
-			"16:41:45 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1621]
-			"16:41:45 - Comm received:^1^SplayerInfoRequest^T^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1622]
-			"16:41:45 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1623]
-			"16:41:45 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1624]
-			"16:41:45 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^Sclass^SWARRIOR^Srank^S^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1625]
-			"16:41:45 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1626]
-			"16:41:45 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1627]
-			"16:41:45 - ML:AddCandidate (Shanyt-ArgentDawn) (WARRIOR) (DAMAGER) (Ahroun) (nil) (0) (393) (71)", -- [1628]
-			"16:41:45 - Comm received:^1^SplayerInfo^T^N1^SShanyt-ArgentDawn^N2^SWARRIOR^N3^SDAMAGER^N4^SAhroun^N6^N0^N7^N393^N8^N71^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1629]
-			"16:41:48 - Timer MLdb_check passed", -- [1630]
-			"16:41:48 - VotingFrame:Update() without lootTable!!", -- [1631]
-			"16:41:51 - VotingFrame:Update() without lootTable!!", -- [1632]
-			"16:41:54 - Timer MLdb_check passed", -- [1633]
-			"16:41:55 - Comm received:^1^Scouncil^T^N1^T^N1^SShanyt-ArgentDawn^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1634]
-			"16:41:55 - true = (IsCouncil) (Shanyt-ArgentDawn)", -- [1635]
-			"16:41:55 - Comm received:^1^Scandidates^T^N1^T^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1636]
-			"16:41:56 - UpdateGroup (table: 00000260232BF160)", -- [1637]
-			"16:41:56 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (nil) (nil) (nil) (nil) (nil)", -- [1638]
-			"16:41:56 - GetCouncilInGroup (Shanyt-ArgentDawn)", -- [1639]
-			"16:41:57 - Comm received:^1^Sxrealm^T^N1^SLillys-Blackhand^N2^SplayerInfoRequest^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1640]
-			"16:41:57 - Comm received:^1^SMLdb^T^N1^T^SallowNotes^B^Stimeout^N60^SselfVote^B^Sresponses^T^Sdefault^T^t^t^SmultiVote^B^Sbuttons^T^Sdefault^T^SnumButtons^N3^t^t^SnumButtons^N3^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1641]
-			"16:41:57 - Comm received:^1^Scandidates^T^N1^T^SLillys-Blackhand^T^Srole^SDAMAGER^Sclass^SHUNTER^Srank^S^t^SShanyt-ArgentDawn^T^Srole^SDAMAGER^SspecID^N71^Senchant_lvl^N0^Sclass^SWARRIOR^Srank^SAhroun^t^t^t^^ (from:) (Shanyt) (distri:) (PARTY)", -- [1642]
-			"16:41:57 - ML:AddCandidate (Lillys-Blackhand) (HUNTER) (DAMAGER) (Warlord) (nil) (0) (369.8125) (253)", -- [1643]
-			"16:41:57 - Comm received:^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SplayerInfo^N3^SLillys-Blackhand^N4^SHUNTER^N5^SDAMAGER^N6^SWarlord^N8^N0^N9^N369.8125^N10^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (PARTY)", -- [1644]
-			"16:41:57 - Comm received:^1^SplayerInfo^T^N1^SLillys-Blackhand^N2^SHUNTER^N3^SDAMAGER^N4^SWarlord^N6^N0^N7^N369.8125^N8^N253^t^^ (from:) (Lillys-Blackhand) (distri:) (WHISPER)", -- [1645]
-			"16:42:00 - Timer MLdb_check passed", -- [1646]
-			"16:43:04 - ML event (PLAYER_REGEN_ENABLED)", -- [1647]
-			"16:43:11 - ML event (PLAYER_REGEN_ENABLED)", -- [1648]
-			"16:43:35 - ML event (PLAYER_REGEN_ENABLED)", -- [1649]
-			"16:43:36 - Event: (LOOT_READY) (true)", -- [1650]
-			"16:43:56 - ML event (PLAYER_REGEN_ENABLED)", -- [1651]
-			"16:43:56 - Event: (LOOT_READY) (true)", -- [1652]
-			"16:44:42 - ML event (PLAYER_REGEN_ENABLED)", -- [1653]
-			"16:45:04 - Event: (LOOT_READY) (true)", -- [1654]
-			"16:45:05 - Event: (LOOT_READY) (true)", -- [1655]
-			"16:45:23 - ML event (PLAYER_REGEN_ENABLED)", -- [1656]
-			"16:45:24 - Event: (LOOT_READY) (true)", -- [1657]
-			"16:45:24 - Event: (LOOT_READY) (true)", -- [1658]
-			"16:46:45 - ML event (PLAYER_REGEN_ENABLED)", -- [1659]
-			"16:46:46 - Event: (LOOT_READY) (true)", -- [1660]
-			"16:47:57 - ML event (PLAYER_REGEN_ENABLED)", -- [1661]
-			"16:48:03 - Event: (LOOT_READY) (true)", -- [1662]
-			"16:48:42 - ML event (PLAYER_REGEN_ENABLED)", -- [1663]
-			"16:48:56 - ML event (PLAYER_REGEN_ENABLED)", -- [1664]
-			"16:48:56 - Event: (LOOT_READY) (true)", -- [1665]
-			"16:48:56 - Event: (LOOT_READY) (true)", -- [1666]
-			"16:49:02 - Event: (LOOT_READY) (true)", -- [1667]
-			"16:50:11 - VotingFrame:Update() without lootTable!!", -- [1668]
-			"16:50:26 - VotingFrame:Update() without lootTable!!", -- [1669]
-			"16:50:42 - VotingFrame:Update() without lootTable!!", -- [1670]
-			"16:51:34 - ML event (PLAYER_REGEN_ENABLED)", -- [1671]
-			"16:51:39 - ML event (PLAYER_REGEN_ENABLED)", -- [1672]
-			"16:51:39 - Event: (LOOT_READY) (true)", -- [1673]
-			"16:51:42 - Event: (LOOT_READY) (true)", -- [1674]
-			"16:51:48 - ML event (PLAYER_REGEN_ENABLED)", -- [1675]
-			"16:51:49 - Event: (LOOT_READY) (true)", -- [1676]
-			"16:52:10 - Event: (LOOT_READY) (true)", -- [1677]
-			"16:52:12 - Event: (LOOT_READY) (true)", -- [1678]
-			"16:52:13 - ML event (PLAYER_REGEN_ENABLED)", -- [1679]
-			"16:52:20 - Event: (LOOT_READY) (true)", -- [1680]
-			"16:52:21 - ML event (PLAYER_REGEN_ENABLED)", -- [1681]
-			"16:53:26 - ML event (PLAYER_REGEN_ENABLED)", -- [1682]
-			"16:53:26 - Event: (LOOT_READY) (true)", -- [1683]
-			"16:53:26 - Event: (LOOT_READY) (true)", -- [1684]
-			"16:53:38 - ML event (PLAYER_REGEN_ENABLED)", -- [1685]
-			"16:53:43 - Event: (LOOT_READY) (true)", -- [1686]
-			"16:53:44 - Event: (LOOT_READY) (true)", -- [1687]
-			"16:53:47 - ML event (PLAYER_REGEN_ENABLED)", -- [1688]
-			"16:53:48 - Event: (LOOT_READY) (true)", -- [1689]
-			"16:53:55 - Event: (LOOT_READY) (true)", -- [1690]
-			"16:53:55 - ML event (PLAYER_REGEN_ENABLED)", -- [1691]
-			"16:54:42 - ML event (PLAYER_REGEN_ENABLED)", -- [1692]
-			"16:54:42 - Event: (LOOT_READY) (true)", -- [1693]
-			"16:54:48 - VotingFrame:Update() without lootTable!!", -- [1694]
-			"16:55:01 - VotingFrame:Update() without lootTable!!", -- [1695]
-			"16:55:17 - VotingFrame:Update() without lootTable!!", -- [1696]
-			"16:55:18 - VotingFrame:Update() without lootTable!!", -- [1697]
-			"16:55:22 - VotingFrame:Update() without lootTable!!", -- [1698]
-			"16:55:23 - VotingFrame:Update() without lootTable!!", -- [1699]
-			"16:57:43 - VotingFrame:Update() without lootTable!!", -- [1700]
-			"16:57:45 - VotingFrame:Update() without lootTable!!", -- [1701]
-			"16:57:51 - VotingFrame:Update() without lootTable!!", -- [1702]
-			"16:58:11 - VotingFrame:Update() without lootTable!!", -- [1703]
-			"17:02:03 - VotingFrame:Update() without lootTable!!", -- [1704]
-			"17:02:07 - VotingFrame:Update() without lootTable!!", -- [1705]
-			"17:06:00 - VotingFrame:Update() without lootTable!!", -- [1706]
-			"17:07:41 - VotingFrame:Update() without lootTable!!", -- [1707]
-			"17:08:03 - VotingFrame:Update() without lootTable!!", -- [1708]
-			"17:08:17 - VotingFrame:Update() without lootTable!!", -- [1709]
-			"17:08:25 - VotingFrame:Update() without lootTable!!", -- [1710]
-			"17:08:59 - ML event (PLAYER_REGEN_ENABLED)", -- [1711]
-			"17:08:59 - Event: (LOOT_READY) (true)", -- [1712]
-			"17:09:00 - Event: (LOOT_READY) (true)", -- [1713]
-			"17:09:00 - Event: (LOOT_READY) (true)", -- [1714]
-			"17:11:06 - VotingFrame:Update() without lootTable!!", -- [1715]
-			"17:11:19 - Event: (LOOT_READY) (true)", -- [1716]
-			"17:12:27 - Event: (LOOT_READY) (true)", -- [1717]
-			"17:12:42 - ML event (PLAYER_REGEN_ENABLED)", -- [1718]
-			"17:13:21 - VotingFrame:Update() without lootTable!!", -- [1719]
-			"17:13:42 - Event: (LOOT_READY) (true)", -- [1720]
-			"17:13:42 - Event: (LOOT_READY) (true)", -- [1721]
-			"17:13:42 - ML event (PLAYER_REGEN_ENABLED)", -- [1722]
-			"17:14:46 - VotingFrame:Update() without lootTable!!", -- [1723]
-			"17:14:52 - VotingFrame:Update() without lootTable!!", -- [1724]
-			"17:16:07 - Event: (LOOT_READY) (true)", -- [1725]
-			"17:16:07 - Event: (LOOT_READY) (true)", -- [1726]
-			"17:16:24 - ML event (PLAYER_REGEN_ENABLED)", -- [1727]
-			"17:16:30 - ML event (PLAYER_REGEN_ENABLED)", -- [1728]
-			"17:16:34 - ML event (PLAYER_REGEN_ENABLED)", -- [1729]
-			"17:16:35 - ML event (PLAYER_REGEN_ENABLED)", -- [1730]
-			"17:16:41 - ML event (PLAYER_REGEN_ENABLED)", -- [1731]
-			"17:16:58 - ML event (PLAYER_REGEN_ENABLED)", -- [1732]
-			"17:17:05 - ML event (PLAYER_REGEN_ENABLED)", -- [1733]
-			"17:17:11 - ML event (PLAYER_REGEN_ENABLED)", -- [1734]
-			"17:17:36 - ML event (PLAYER_REGEN_ENABLED)", -- [1735]
-			"17:17:36 - Event: (LOOT_READY) (true)", -- [1736]
-			"17:17:59 - VotingFrame:Update() without lootTable!!", -- [1737]
-			"17:18:41 - VotingFrame:Update() without lootTable!!", -- [1738]
-			"17:22:16 - VotingFrame:Update() without lootTable!!", -- [1739]
-			"17:22:19 - Event: (LOOT_READY) (true)", -- [1740]
-			"17:23:04 - Event: (LOOT_READY) (true)", -- [1741]
-			"17:23:05 - VotingFrame:Update() without lootTable!!", -- [1742]
-			"17:23:10 - VotingFrame:Update() without lootTable!!", -- [1743]
-			"17:23:14 - Event: (LOOT_READY) (true)", -- [1744]
-			"17:23:21 - VotingFrame:Update() without lootTable!!", -- [1745]
-			"17:23:22 - Event: (LOOT_READY) (true)", -- [1746]
-			"17:23:38 - VotingFrame:Update() without lootTable!!", -- [1747]
-			"17:23:55 - Event: (LOOT_READY) (true)", -- [1748]
-			"17:24:11 - Event: (LOOT_READY) (true)", -- [1749]
-			"17:24:25 - Event: (LOOT_READY) (true)", -- [1750]
-			"17:24:41 - ML event (PLAYER_REGEN_ENABLED)", -- [1751]
-			"17:24:42 - Event: (LOOT_READY) (true)", -- [1752]
-			"17:24:48 - ML event (PLAYER_REGEN_ENABLED)", -- [1753]
-			"17:24:48 - Event: (LOOT_READY) (true)", -- [1754]
-			"17:24:56 - ML event (PLAYER_REGEN_ENABLED)", -- [1755]
-			"17:24:56 - Event: (LOOT_READY) (true)", -- [1756]
-			"17:25:17 - ML event (PLAYER_REGEN_ENABLED)", -- [1757]
-			"17:25:17 - Event: (LOOT_READY) (true)", -- [1758]
-			"17:25:17 - Event: (LOOT_READY) (true)", -- [1759]
-			"17:25:18 - VotingFrame:Update() without lootTable!!", -- [1760]
-			"17:25:26 - VotingFrame:Update() without lootTable!!", -- [1761]
-			"17:25:38 - VotingFrame:Update() without lootTable!!", -- [1762]
-			"17:25:51 - VotingFrame:Update() without lootTable!!", -- [1763]
-			"17:26:45 - VotingFrame:Update() without lootTable!!", -- [1764]
-			"17:27:17 - VotingFrame:Update() without lootTable!!", -- [1765]
-			"17:27:32 - VotingFrame:Update() without lootTable!!", -- [1766]
-			"17:28:55 - ML event (PLAYER_REGEN_ENABLED)", -- [1767]
-			"17:30:16 - ML event (PLAYER_REGEN_ENABLED)", -- [1768]
-			"17:30:16 - Event: (LOOT_READY) (true)", -- [1769]
-			"17:30:16 - Event: (LOOT_READY) (true)", -- [1770]
-			"17:34:07 - VotingFrame:Update() without lootTable!!", -- [1771]
-			"17:34:19 - UpdateGroup (table: 00000260232BF160)", -- [1772]
-			"17:37:31 - Event: (GROUP_LEFT) (1) (Party-75-0000314702AF)", -- [1773]
-			"17:37:31 - GetML()", -- [1774]
-			"17:37:31 - Stop handling loot", -- [1775]
-			"17:37:31 - ML Disabled", -- [1776]
-			"17:37:31 - Comm received:^1^SStopHandleLoot^T^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1777]
-			"17:40:40 - Event: (LOOT_READY) (true)", -- [1778]
-			"17:42:36 - Event: (LOOT_READY) (true)", -- [1779]
-			"17:43:08 - Event: (LOOT_READY) (true)", -- [1780]
-			"17:43:41 - Event: (LOOT_READY) (true)", -- [1781]
-			"17:44:00 - Event: (LOOT_READY) (true)", -- [1782]
-			"17:44:18 - Event: (LOOT_READY) (true)", -- [1783]
-			"17:44:18 - Event: (LOOT_READY) (true)", -- [1784]
-			"17:44:30 - Event: (LOOT_READY) (true)", -- [1785]
-			"17:44:35 - Event: (LOOT_READY) (true)", -- [1786]
-			"17:44:42 - Event: (LOOT_READY) (true)", -- [1787]
-			"17:45:32 - Event: (LOOT_READY) (true)", -- [1788]
-			"17:45:43 - Event: (LOOT_READY) (true)", -- [1789]
-			"17:45:43 - Event: (LOOT_READY) (true)", -- [1790]
-			"17:46:10 - Event: (LOOT_READY) (true)", -- [1791]
-			"17:46:29 - Event: (LOOT_READY) (true)", -- [1792]
-			"17:46:37 - Event: (LOOT_READY) (true)", -- [1793]
-			"17:46:48 - Event: (LOOT_READY) (true)", -- [1794]
-			"17:47:12 - Event: (LOOT_READY) (true)", -- [1795]
-			"17:47:12 - Event: (LOOT_READY) (true)", -- [1796]
-			"17:47:17 - Event: (LOOT_READY) (true)", -- [1797]
-			"17:47:28 - Event: (LOOT_READY) (true)", -- [1798]
-			"17:47:44 - Event: (LOOT_READY) (true)", -- [1799]
-			"17:47:53 - Event: (LOOT_READY) (true)", -- [1800]
-			"17:48:11 - Event: (LOOT_READY) (true)", -- [1801]
-			"17:48:11 - Event: (LOOT_READY) (true)", -- [1802]
-			"17:48:44 - Event: (PARTY_LEADER_CHANGED)", -- [1803]
-			"17:48:44 - GetML()", -- [1804]
-			"17:48:44 - Unknown ML", -- [1805]
-			"17:48:45 - GetML()", -- [1806]
-			"17:48:45 - Resetting council as we have a new ML!", -- [1807]
-			"17:48:45 - MasterLooter =  (Twinketteh-Runetotem)", -- [1808]
-			"17:48:46 - VotingFrame:Update() without lootTable!!", -- [1809]
-			"17:48:49 - VotingFrame:Update() without lootTable!!", -- [1810]
-			"17:48:54 - VotingFrame:Update() without lootTable!!", -- [1811]
-			"17:49:00 - Timer MLdb_check passed", -- [1812]
-			"17:49:00 - Comm received:^1^Sxrealm^T^N1^STwinketteh-Runetotem^N2^Scouncil_request^t^^ (from:) (Shanyt) (distri:) (RAID)", -- [1813]
-			"17:49:49 - VotingFrame:Update() without lootTable!!", -- [1814]
-			"17:49:52 - VotingFrame:Update() without lootTable!!", -- [1815]
-			"17:50:01 - VotingFrame:Update() without lootTable!!", -- [1816]
-			"17:50:09 - VotingFrame:Update() without lootTable!!", -- [1817]
-			"17:50:26 - VotingFrame:Update() without lootTable!!", -- [1818]
-			"17:50:47 - VotingFrame:Update() without lootTable!!", -- [1819]
-			"17:50:48 - VotingFrame:Update() without lootTable!!", -- [1820]
-			"17:50:50 - VotingFrame:Update() without lootTable!!", -- [1821]
-			"17:50:51 - VotingFrame:Update() without lootTable!!", -- [1822]
-			"17:51:11 - VotingFrame:Update() without lootTable!!", -- [1823]
-			"17:51:23 - VotingFrame:Update() without lootTable!!", -- [1824]
-			"17:51:47 - VotingFrame:Update() without lootTable!!", -- [1825]
-			"17:51:48 - VotingFrame:Update() without lootTable!!", -- [1826]
-			"17:51:49 - VotingFrame:Update() without lootTable!!", -- [1827]
-			"17:51:50 - Event: (PARTY_LEADER_CHANGED)", -- [1828]
-			"17:51:50 - GetML()", -- [1829]
-			"17:51:50 - Resetting council as we have a new ML!", -- [1830]
-			"17:51:50 - MasterLooter =  (Gärona-Zul'jin)", -- [1831]
-			"17:51:50 - VotingFrame:Update() without lootTable!!", -- [1832]
-			"17:51:51 - VotingFrame:Update() without lootTable!!", -- [1833]
-			"17:51:52 - VotingFrame:Update() without lootTable!!", -- [1834]
-			"17:51:55 - VotingFrame:Update() without lootTable!!", -- [1835]
-			"17:51:59 - Event: (PARTY_LEADER_CHANGED)", -- [1836]
-			"17:51:59 - GetML()", -- [1837]
-			"17:51:59 - Resetting council as we have a new ML!", -- [1838]
-			"17:51:59 - MasterLooter =  (Ivanká-Illidan)", -- [1839]
-			"17:52:00 - VotingFrame:Update() without lootTable!!", -- [1840]
-			"17:52:01 - Event: (GROUP_LEFT) (1) (Party-151-000014719D78)", -- [1841]
-			"17:52:01 - GetML()", -- [1842]
-			"17:52:05 - Timer MLdb_check passed", -- [1843]
-			"17:52:14 - Timer MLdb_check passed", -- [1844]
-			"17:56:51 - Event: (LOOT_READY) (true)", -- [1845]
-			"18:05:31 - Event: (LOOT_READY) (true)", -- [1846]
-			"18:05:31 - Event: (LOOT_READY) (true)", -- [1847]
-			"18:05:31 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (170182) (|cff0070dd|Hitem:170182::::::::120:71::::::|h[Voltscale Shield]|h|r) (1) (Shanyt) (WARRIOR)", -- [1848]
-			"18:07:20 - Event: (LOOT_READY) (true)", -- [1849]
-			"18:07:22 - Event: (LOOT_READY) (true)", -- [1850]
-			"18:07:24 - Event: (LOOT_READY) (true)", -- [1851]
-			"18:07:24 - Event: (LOOT_READY) (true)", -- [1852]
-			"18:08:48 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1853]
-			"18:08:48 - GetML()", -- [1854]
-			"18:08:49 - VotingFrame:Update() without lootTable!!", -- [1855]
-			"18:09:21 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1856]
-			"18:09:21 - GetML()", -- [1857]
-			"18:09:22 - VotingFrame:Update() without lootTable!!", -- [1858]
-			"18:10:50 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1859]
-			"18:10:50 - GetML()", -- [1860]
-			"18:10:51 - VotingFrame:Update() without lootTable!!", -- [1861]
-			"18:11:31 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1862]
-			"18:11:31 - GetML()", -- [1863]
-			"18:11:32 - VotingFrame:Update() without lootTable!!", -- [1864]
-			"18:14:58 - Event: (LOOT_READY) (true)", -- [1865]
-			"18:14:59 - Event: (LOOT_READY) (true)", -- [1866]
-			"18:14:59 - Event: (LOOT_READY) (true)", -- [1867]
-			"18:17:21 - VotingFrame:Update() without lootTable!!", -- [1868]
-			"18:20:34 - Event: (LOOT_READY) (true)", -- [1869]
-			"18:20:35 - Event: (LOOT_READY) (true)", -- [1870]
-			"18:20:35 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (116794) (|cffa335ee|Hitem:116794::::::::120:71::::::|h[Garn Nighthowl]|h|r) (1) (Shanyt) (WARRIOR)", -- [1871]
-			"18:21:27 - VotingFrame:Update() without lootTable!!", -- [1872]
-			"18:22:47 - Event: (LOOT_READY) (true)", -- [1873]
-			"18:25:15 - VotingFrame:Update() without lootTable!!", -- [1874]
-			"18:28:36 - VotingFrame:Update() without lootTable!!", -- [1875]
-			"18:29:43 - VotingFrame:Update() without lootTable!!", -- [1876]
-			"18:33:03 - VotingFrame:Update() without lootTable!!", -- [1877]
-			"18:36:13 - VotingFrame:Update() without lootTable!!", -- [1878]
-			"18:37:56 - VotingFrame:Update() without lootTable!!", -- [1879]
-			"18:40:30 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1880]
-			"18:40:30 - GetML()", -- [1881]
-			"18:40:31 - VotingFrame:Update() without lootTable!!", -- [1882]
-			"18:55:33 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1883]
-			"18:55:33 - GetML()", -- [1884]
-			"18:55:33 - VotingFrame:Update() without lootTable!!", -- [1885]
-			"18:55:49 - VotingFrame:Update() without lootTable!!", -- [1886]
-			"18:56:00 - VotingFrame:Update() without lootTable!!", -- [1887]
-			"18:56:55 - Event: (LOOT_READY) (true)", -- [1888]
-			"18:57:46 - VotingFrame:Update() without lootTable!!", -- [1889]
-			"18:58:58 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1890]
-			"18:58:58 - GetML()", -- [1891]
-			"18:58:59 - VotingFrame:Update() without lootTable!!", -- [1892]
-			"19:01:06 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1893]
-			"19:01:06 - GetML()", -- [1894]
-			"19:01:08 - VotingFrame:Update() without lootTable!!", -- [1895]
-			"19:01:20 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1896]
-			"19:01:20 - GetML()", -- [1897]
-			"19:01:21 - VotingFrame:Update() without lootTable!!", -- [1898]
-			"19:05:54 - Event: (PARTY_LEADER_CHANGED)", -- [1899]
-			"19:05:54 - GetML()", -- [1900]
-			"19:06:00 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1901]
-			"19:06:00 - GetML()", -- [1902]
-			"19:06:01 - VotingFrame:Update() without lootTable!!", -- [1903]
-			"19:06:01 - VotingFrame:Update() without lootTable!!", -- [1904]
-			"19:06:02 - VotingFrame:Update() without lootTable!!", -- [1905]
-			"19:06:03 - VotingFrame:Update() without lootTable!!", -- [1906]
-			"19:06:04 - VotingFrame:Update() without lootTable!!", -- [1907]
-			"19:06:08 - VotingFrame:Update() without lootTable!!", -- [1908]
-			"19:06:11 - VotingFrame:Update() without lootTable!!", -- [1909]
-			"19:06:45 - VotingFrame:Update() without lootTable!!", -- [1910]
-			"19:07:04 - VotingFrame:Update() without lootTable!!", -- [1911]
-			"19:07:08 - VotingFrame:Update() without lootTable!!", -- [1912]
-			"19:07:22 - VotingFrame:Update() without lootTable!!", -- [1913]
-			"19:07:25 - VotingFrame:Update() without lootTable!!", -- [1914]
-			"19:07:55 - Event: (LOOT_READY) (true)", -- [1915]
-			"19:07:55 - Ignoring (|cffffffff|Hcurrency:1540:7|h[Wood]|h|r) (as it's a currency)", -- [1916]
-			"19:07:55 - Event: (LOOT_CLOSED)", -- [1917]
-			"19:07:55 - Event: (LOOT_CLOSED)", -- [1918]
-			"19:07:58 - VotingFrame:Update() without lootTable!!", -- [1919]
-			"19:08:09 - Event: (LOOT_READY) (true)", -- [1920]
-			"19:08:09 - Ignoring (|cffffffff|Hcurrency:1540:10|h[Wood]|h|r) (as it's a currency)", -- [1921]
-			"19:08:09 - Event: (LOOT_CLOSED)", -- [1922]
-			"19:08:09 - Event: (LOOT_CLOSED)", -- [1923]
-			"19:08:13 - VotingFrame:Update() without lootTable!!", -- [1924]
-			"19:08:14 - Event: (LOOT_READY) (true)", -- [1925]
-			"19:08:14 - Ignoring (|cffffffff|Hcurrency:1540:7|h[Wood]|h|r) (as it's a currency)", -- [1926]
-			"19:08:15 - Event: (LOOT_CLOSED)", -- [1927]
-			"19:08:15 - Event: (LOOT_CLOSED)", -- [1928]
-			"19:08:21 - VotingFrame:Update() without lootTable!!", -- [1929]
-			"19:08:21 - Event: (LOOT_READY) (true)", -- [1930]
-			"19:08:21 - Ignoring (|cffffffff|Hcurrency:1540:5|h[Wood]|h|r) (as it's a currency)", -- [1931]
-			"19:08:21 - Event: (LOOT_CLOSED)", -- [1932]
-			"19:08:21 - Event: (LOOT_CLOSED)", -- [1933]
-			"19:08:52 - Event: (LOOT_READY) (true)", -- [1934]
-			"19:08:52 - Ignoring (|cffffffff|Hcurrency:1540:13|h[Wood]|h|r) (as it's a currency)", -- [1935]
-			"19:08:52 - Event: (LOOT_CLOSED)", -- [1936]
-			"19:08:52 - Event: (LOOT_CLOSED)", -- [1937]
-			"19:09:46 - Event: (LOOT_READY) (true)", -- [1938]
-			"19:09:46 - Ignoring (|cffffffff|Hcurrency:1540:10|h[Wood]|h|r) (as it's a currency)", -- [1939]
-			"19:09:46 - Event: (LOOT_CLOSED)", -- [1940]
-			"19:09:46 - Event: (LOOT_CLOSED)", -- [1941]
-			"19:10:10 - VotingFrame:Update() without lootTable!!", -- [1942]
-			"19:10:18 - VotingFrame:Update() without lootTable!!", -- [1943]
-			"19:10:31 - Event: (LOOT_READY) (true)", -- [1944]
-			"19:10:31 - Ignoring (|cffffffff|Hcurrency:1540:13|h[Wood]|h|r) (as it's a currency)", -- [1945]
-			"19:10:31 - Event: (LOOT_CLOSED)", -- [1946]
-			"19:10:31 - Event: (LOOT_CLOSED)", -- [1947]
-			"19:10:42 - Event: (LOOT_READY) (true)", -- [1948]
-			"19:10:42 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1949]
-			"19:10:43 - Event: (LOOT_CLOSED)", -- [1950]
-			"19:10:43 - Event: (LOOT_CLOSED)", -- [1951]
-			"19:10:49 - Event: (LOOT_READY) (true)", -- [1952]
-			"19:10:49 - Ignoring (|cffffffff|Hcurrency:1540:10|h[Wood]|h|r) (as it's a currency)", -- [1953]
-			"19:10:49 - Event: (LOOT_CLOSED)", -- [1954]
-			"19:10:49 - Event: (LOOT_CLOSED)", -- [1955]
-			"19:11:12 - Event: (LOOT_CLOSED)", -- [1956]
-			"19:11:12 - Event: (LOOT_READY) (true)", -- [1957]
-			"19:11:12 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1958]
-			"19:11:12 - Event: (LOOT_READY) (true)", -- [1959]
-			"19:11:12 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1960]
-			"19:11:13 - Event: (LOOT_READY) (true)", -- [1961]
-			"19:11:13 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1962]
-			"19:11:13 - Event: (LOOT_CLOSED)", -- [1963]
-			"19:11:19 - Event: (LOOT_READY) (true)", -- [1964]
-			"19:11:19 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1965]
-			"19:11:19 - Event: (LOOT_READY) (true)", -- [1966]
-			"19:11:19 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1967]
-			"19:11:20 - Event: (LOOT_READY) (true)", -- [1968]
-			"19:11:20 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1969]
-			"19:11:21 - Event: (LOOT_CLOSED)", -- [1970]
-			"19:11:49 - Event: (LOOT_READY) (true)", -- [1971]
-			"19:11:49 - Ignoring (|cffffffff|Hcurrency:1540:8|h[Wood]|h|r) (as it's a currency)", -- [1972]
-			"19:11:49 - Event: (LOOT_READY) (true)", -- [1973]
-			"19:11:49 - Ignoring (|cffffffff|Hcurrency:1540:8|h[Wood]|h|r) (as it's a currency)", -- [1974]
-			"19:11:50 - Event: (LOOT_READY) (true)", -- [1975]
-			"19:11:50 - Ignoring (|cffffffff|Hcurrency:1540:8|h[Wood]|h|r) (as it's a currency)", -- [1976]
-			"19:11:50 - Event: (LOOT_CLOSED)", -- [1977]
-			"19:12:13 - VotingFrame:Update() without lootTable!!", -- [1978]
-			"19:12:19 - VotingFrame:Update() without lootTable!!", -- [1979]
-			"19:12:20 - VotingFrame:Update() without lootTable!!", -- [1980]
-			"19:12:32 - Event: (LOOT_READY) (true)", -- [1981]
-			"19:12:32 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1982]
-			"19:12:33 - Event: (LOOT_READY) (true)", -- [1983]
-			"19:12:33 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1984]
-			"19:12:33 - Event: (LOOT_READY) (true)", -- [1985]
-			"19:12:33 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1986]
-			"19:12:34 - Event: (LOOT_CLOSED)", -- [1987]
-			"19:12:42 - Event: (LOOT_CLOSED)", -- [1988]
-			"19:12:42 - Event: (LOOT_READY) (true)", -- [1989]
-			"19:12:42 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1990]
-			"19:12:42 - Event: (LOOT_CLOSED)", -- [1991]
-			"19:12:42 - Event: (LOOT_CLOSED)", -- [1992]
-			"19:12:51 - Event: (LOOT_READY) (true)", -- [1993]
-			"19:12:51 - Ignoring (|cffffffff|Hcurrency:1540:8|h[Wood]|h|r) (as it's a currency)", -- [1994]
-			"19:12:51 - Event: (LOOT_CLOSED)", -- [1995]
-			"19:12:51 - Event: (LOOT_CLOSED)", -- [1996]
-			"19:12:58 - Event: (LOOT_READY) (true)", -- [1997]
-			"19:12:58 - Ignoring (|cffffffff|Hcurrency:1540:9|h[Wood]|h|r) (as it's a currency)", -- [1998]
-			"19:12:58 - Event: (LOOT_CLOSED)", -- [1999]
-			"19:12:58 - Event: (LOOT_CLOSED)", -- [2000]
-			"19:13:02 - VotingFrame:Update() without lootTable!!", -- [2001]
-			"19:13:03 - VotingFrame:Update() without lootTable!!", -- [2002]
-			"19:13:04 - VotingFrame:Update() without lootTable!!", -- [2003]
-			"19:13:05 - VotingFrame:Update() without lootTable!!", -- [2004]
-			"19:13:06 - VotingFrame:Update() without lootTable!!", -- [2005]
-			"19:13:11 - Event: (LOOT_READY) (true)", -- [2006]
-			"19:13:11 - Ignoring (|cffffffff|Hcurrency:1540:8|h[Wood]|h|r) (as it's a currency)", -- [2007]
-			"19:13:11 - Event: (LOOT_CLOSED)", -- [2008]
-			"19:13:11 - Event: (LOOT_CLOSED)", -- [2009]
-			"19:13:19 - VotingFrame:Update() without lootTable!!", -- [2010]
-			"19:13:20 - VotingFrame:Update() without lootTable!!", -- [2011]
-			"19:13:32 - Event: (LOOT_READY) (true)", -- [2012]
-			"19:13:32 - Ignoring (|cffffffff|Hcurrency:1541:2|h[Iron]|h|r) (as it's a currency)", -- [2013]
-			"19:13:32 - Event: (LOOT_CLOSED)", -- [2014]
-			"19:13:32 - Event: (LOOT_CLOSED)", -- [2015]
-			"19:13:33 - VotingFrame:Update() without lootTable!!", -- [2016]
-			"19:13:34 - VotingFrame:Update() without lootTable!!", -- [2017]
-			"19:13:38 - VotingFrame:Update() without lootTable!!", -- [2018]
-			"19:13:43 - VotingFrame:Update() without lootTable!!", -- [2019]
-			"19:13:52 - VotingFrame:Update() without lootTable!!", -- [2020]
-			"19:14:26 - VotingFrame:Update() without lootTable!!", -- [2021]
-			"19:14:29 - VotingFrame:Update() without lootTable!!", -- [2022]
-			"19:14:44 - VotingFrame:Update() without lootTable!!", -- [2023]
-			"19:14:45 - VotingFrame:Update() without lootTable!!", -- [2024]
-			"19:14:46 - VotingFrame:Update() without lootTable!!", -- [2025]
-			"19:14:47 - VotingFrame:Update() without lootTable!!", -- [2026]
-			"19:14:50 - VotingFrame:Update() without lootTable!!", -- [2027]
-			"19:14:55 - VotingFrame:Update() without lootTable!!", -- [2028]
-			"19:14:56 - VotingFrame:Update() without lootTable!!", -- [2029]
-			"19:14:57 - VotingFrame:Update() without lootTable!!", -- [2030]
-			"19:15:00 - VotingFrame:Update() without lootTable!!", -- [2031]
-			"19:15:01 - VotingFrame:Update() without lootTable!!", -- [2032]
-			"19:15:07 - VotingFrame:Update() without lootTable!!", -- [2033]
-			"19:15:12 - VotingFrame:Update() without lootTable!!", -- [2034]
-			"19:15:13 - VotingFrame:Update() without lootTable!!", -- [2035]
-			"19:15:16 - VotingFrame:Update() without lootTable!!", -- [2036]
-			"19:15:17 - VotingFrame:Update() without lootTable!!", -- [2037]
-			"19:15:21 - VotingFrame:Update() without lootTable!!", -- [2038]
-			"19:15:22 - VotingFrame:Update() without lootTable!!", -- [2039]
-			"19:15:39 - VotingFrame:Update() without lootTable!!", -- [2040]
-			"19:15:40 - VotingFrame:Update() without lootTable!!", -- [2041]
-			"19:15:44 - VotingFrame:Update() without lootTable!!", -- [2042]
-			"19:15:49 - VotingFrame:Update() without lootTable!!", -- [2043]
-			"19:15:50 - VotingFrame:Update() without lootTable!!", -- [2044]
-			"19:15:53 - VotingFrame:Update() without lootTable!!", -- [2045]
-			"19:16:04 - VotingFrame:Update() without lootTable!!", -- [2046]
-			"19:16:05 - VotingFrame:Update() without lootTable!!", -- [2047]
-			"19:16:06 - VotingFrame:Update() without lootTable!!", -- [2048]
-			"19:16:19 - VotingFrame:Update() without lootTable!!", -- [2049]
-			"19:16:23 - VotingFrame:Update() without lootTable!!", -- [2050]
-			"19:16:34 - Event: (LOOT_READY) (true)", -- [2051]
-			"19:16:34 - Ignoring (|cffffffff|Hcurrency:1540:6|h[Wood]|h|r) (as it's a currency)", -- [2052]
-			"19:16:34 - Event: (LOOT_CLOSED)", -- [2053]
-			"19:16:34 - Event: (LOOT_CLOSED)", -- [2054]
-			"19:17:04 - VotingFrame:Update() without lootTable!!", -- [2055]
-			"19:17:10 - VotingFrame:Update() without lootTable!!", -- [2056]
-			"19:17:11 - VotingFrame:Update() without lootTable!!", -- [2057]
-			"19:17:12 - VotingFrame:Update() without lootTable!!", -- [2058]
-			"19:17:26 - VotingFrame:Update() without lootTable!!", -- [2059]
-			"19:17:35 - VotingFrame:Update() without lootTable!!", -- [2060]
-			"19:17:47 - VotingFrame:Update() without lootTable!!", -- [2061]
-			"19:17:47 - Event: (LOOT_READY) (true)", -- [2062]
-			"19:17:47 - Ignoring (|cffffffff|Hcurrency:1540:10|h[Wood]|h|r) (as it's a currency)", -- [2063]
-			"19:17:47 - Event: (LOOT_CLOSED)", -- [2064]
-			"19:17:47 - Event: (LOOT_CLOSED)", -- [2065]
-			"19:17:54 - VotingFrame:Update() without lootTable!!", -- [2066]
-			"19:17:57 - VotingFrame:Update() without lootTable!!", -- [2067]
-			"19:17:58 - VotingFrame:Update() without lootTable!!", -- [2068]
-			"19:18:02 - VotingFrame:Update() without lootTable!!", -- [2069]
-			"19:18:06 - VotingFrame:Update() without lootTable!!", -- [2070]
-			"19:18:08 - VotingFrame:Update() without lootTable!!", -- [2071]
-			"19:18:09 - VotingFrame:Update() without lootTable!!", -- [2072]
-			"19:18:20 - VotingFrame:Update() without lootTable!!", -- [2073]
-			"19:18:24 - VotingFrame:Update() without lootTable!!", -- [2074]
-			"19:18:29 - VotingFrame:Update() without lootTable!!", -- [2075]
-			"19:18:30 - VotingFrame:Update() without lootTable!!", -- [2076]
-			"19:18:36 - VotingFrame:Update() without lootTable!!", -- [2077]
-			"19:18:39 - VotingFrame:Update() without lootTable!!", -- [2078]
-			"19:18:45 - VotingFrame:Update() without lootTable!!", -- [2079]
-			"19:18:48 - VotingFrame:Update() without lootTable!!", -- [2080]
-			"19:18:49 - VotingFrame:Update() without lootTable!!", -- [2081]
-			"19:18:50 - Event: (LOOT_READY) (true)", -- [2082]
-			"19:18:50 - Ignoring (|cffffffff|Hcurrency:1540:7|h[Wood]|h|r) (as it's a currency)", -- [2083]
-			"19:18:50 - VotingFrame:Update() without lootTable!!", -- [2084]
-			"19:18:50 - Event: (LOOT_CLOSED)", -- [2085]
-			"19:18:50 - Event: (LOOT_CLOSED)", -- [2086]
-			"19:18:53 - VotingFrame:Update() without lootTable!!", -- [2087]
-			"19:18:54 - VotingFrame:Update() without lootTable!!", -- [2088]
-			"19:18:56 - VotingFrame:Update() without lootTable!!", -- [2089]
-			"19:18:57 - VotingFrame:Update() without lootTable!!", -- [2090]
-			"19:19:03 - VotingFrame:Update() without lootTable!!", -- [2091]
-			"19:19:09 - VotingFrame:Update() without lootTable!!", -- [2092]
-			"19:19:10 - VotingFrame:Update() without lootTable!!", -- [2093]
-			"19:19:11 - VotingFrame:Update() without lootTable!!", -- [2094]
-			"19:19:12 - VotingFrame:Update() without lootTable!!", -- [2095]
-			"19:19:13 - VotingFrame:Update() without lootTable!!", -- [2096]
-			"19:19:14 - VotingFrame:Update() without lootTable!!", -- [2097]
-			"19:19:17 - VotingFrame:Update() without lootTable!!", -- [2098]
-			"19:19:18 - VotingFrame:Update() without lootTable!!", -- [2099]
-			"19:20:03 - VotingFrame:Update() without lootTable!!", -- [2100]
-			"19:20:08 - VotingFrame:Update() without lootTable!!", -- [2101]
-			"19:20:14 - VotingFrame:Update() without lootTable!!", -- [2102]
-			"19:20:15 - VotingFrame:Update() without lootTable!!", -- [2103]
-			"19:20:21 - VotingFrame:Update() without lootTable!!", -- [2104]
-			"19:20:42 - VotingFrame:Update() without lootTable!!", -- [2105]
-			"19:20:48 - VotingFrame:Update() without lootTable!!", -- [2106]
-			"19:20:51 - VotingFrame:Update() without lootTable!!", -- [2107]
-			"19:20:52 - VotingFrame:Update() without lootTable!!", -- [2108]
-			"19:20:59 - VotingFrame:Update() without lootTable!!", -- [2109]
-			"19:21:07 - VotingFrame:Update() without lootTable!!", -- [2110]
-			"19:21:08 - VotingFrame:Update() without lootTable!!", -- [2111]
-			"19:21:29 - VotingFrame:Update() without lootTable!!", -- [2112]
-			"19:21:45 - VotingFrame:Update() without lootTable!!", -- [2113]
-			"19:21:57 - VotingFrame:Update() without lootTable!!", -- [2114]
-			"19:21:58 - VotingFrame:Update() without lootTable!!", -- [2115]
-			"19:22:24 - VotingFrame:Update() without lootTable!!", -- [2116]
-			"19:22:51 - VotingFrame:Update() without lootTable!!", -- [2117]
-			"19:22:56 - VotingFrame:Update() without lootTable!!", -- [2118]
-			"19:23:11 - VotingFrame:Update() without lootTable!!", -- [2119]
-			"19:23:17 - VotingFrame:Update() without lootTable!!", -- [2120]
-			"19:23:23 - VotingFrame:Update() without lootTable!!", -- [2121]
-			"19:23:28 - VotingFrame:Update() without lootTable!!", -- [2122]
-			"19:23:32 - VotingFrame:Update() without lootTable!!", -- [2123]
-			"19:23:33 - VotingFrame:Update() without lootTable!!", -- [2124]
-			"19:23:38 - VotingFrame:Update() without lootTable!!", -- [2125]
-			"19:23:39 - VotingFrame:Update() without lootTable!!", -- [2126]
-			"19:23:48 - VotingFrame:Update() without lootTable!!", -- [2127]
-			"19:23:55 - VotingFrame:Update() without lootTable!!", -- [2128]
-			"19:24:01 - Event: (LOOT_READY) (true)", -- [2129]
-			"19:24:01 - Ignoring (|cffffffff|Hcurrency:1540:13|h[Wood]|h|r) (as it's a currency)", -- [2130]
-			"19:24:01 - Event: (LOOT_CLOSED)", -- [2131]
-			"19:24:01 - Event: (LOOT_CLOSED)", -- [2132]
-			"19:24:07 - VotingFrame:Update() without lootTable!!", -- [2133]
-			"19:24:17 - VotingFrame:Update() without lootTable!!", -- [2134]
-			"19:24:31 - VotingFrame:Update() without lootTable!!", -- [2135]
-			"19:24:37 - VotingFrame:Update() without lootTable!!", -- [2136]
-			"19:24:42 - VotingFrame:Update() without lootTable!!", -- [2137]
-			"19:24:51 - VotingFrame:Update() without lootTable!!", -- [2138]
-			"19:24:53 - VotingFrame:Update() without lootTable!!", -- [2139]
-			"19:24:59 - VotingFrame:Update() without lootTable!!", -- [2140]
-			"19:25:12 - VotingFrame:Update() without lootTable!!", -- [2141]
-			"19:25:20 - VotingFrame:Update() without lootTable!!", -- [2142]
-			"19:25:27 - VotingFrame:Update() without lootTable!!", -- [2143]
-			"19:25:36 - VotingFrame:Update() without lootTable!!", -- [2144]
-			"19:25:41 - VotingFrame:Update() without lootTable!!", -- [2145]
-			"19:25:46 - VotingFrame:Update() without lootTable!!", -- [2146]
-			"19:25:51 - VotingFrame:Update() without lootTable!!", -- [2147]
-			"19:25:52 - VotingFrame:Update() without lootTable!!", -- [2148]
-			"19:26:02 - VotingFrame:Update() without lootTable!!", -- [2149]
-			"19:26:03 - VotingFrame:Update() without lootTable!!", -- [2150]
-			"19:26:06 - VotingFrame:Update() without lootTable!!", -- [2151]
-			"19:26:17 - VotingFrame:Update() without lootTable!!", -- [2152]
-			"19:26:20 - VotingFrame:Update() without lootTable!!", -- [2153]
-			"19:26:26 - VotingFrame:Update() without lootTable!!", -- [2154]
-			"19:26:28 - VotingFrame:Update() without lootTable!!", -- [2155]
-			"19:26:40 - VotingFrame:Update() without lootTable!!", -- [2156]
-			"19:26:45 - VotingFrame:Update() without lootTable!!", -- [2157]
-			"19:26:46 - VotingFrame:Update() without lootTable!!", -- [2158]
-			"19:26:51 - VotingFrame:Update() without lootTable!!", -- [2159]
-			"19:26:57 - VotingFrame:Update() without lootTable!!", -- [2160]
-			"19:27:07 - VotingFrame:Update() without lootTable!!", -- [2161]
-			"19:27:13 - VotingFrame:Update() without lootTable!!", -- [2162]
-			"19:27:18 - VotingFrame:Update() without lootTable!!", -- [2163]
-			"19:27:23 - VotingFrame:Update() without lootTable!!", -- [2164]
-			"19:27:26 - VotingFrame:Update() without lootTable!!", -- [2165]
-			"19:27:28 - VotingFrame:Update() without lootTable!!", -- [2166]
-			"19:27:38 - VotingFrame:Update() without lootTable!!", -- [2167]
-			"19:27:56 - VotingFrame:Update() without lootTable!!", -- [2168]
-			"19:27:59 - VotingFrame:Update() without lootTable!!", -- [2169]
-			"19:28:00 - VotingFrame:Update() without lootTable!!", -- [2170]
-			"19:28:06 - VotingFrame:Update() without lootTable!!", -- [2171]
-			"19:28:19 - VotingFrame:Update() without lootTable!!", -- [2172]
-			"19:28:21 - VotingFrame:Update() without lootTable!!", -- [2173]
-			"19:28:32 - VotingFrame:Update() without lootTable!!", -- [2174]
-			"19:28:37 - VotingFrame:Update() without lootTable!!", -- [2175]
-			"19:28:38 - VotingFrame:Update() without lootTable!!", -- [2176]
-			"19:28:39 - VotingFrame:Update() without lootTable!!", -- [2177]
-			"19:28:43 - VotingFrame:Update() without lootTable!!", -- [2178]
-			"19:28:44 - VotingFrame:Update() without lootTable!!", -- [2179]
-			"19:28:49 - VotingFrame:Update() without lootTable!!", -- [2180]
-			"19:28:54 - VotingFrame:Update() without lootTable!!", -- [2181]
-			"19:28:55 - VotingFrame:Update() without lootTable!!", -- [2182]
-			"19:29:19 - VotingFrame:Update() without lootTable!!", -- [2183]
-			"19:29:23 - VotingFrame:Update() without lootTable!!", -- [2184]
-			"19:29:38 - VotingFrame:Update() without lootTable!!", -- [2185]
-			"19:29:40 - VotingFrame:Update() without lootTable!!", -- [2186]
-			"19:29:44 - VotingFrame:Update() without lootTable!!", -- [2187]
-			"19:29:49 - VotingFrame:Update() without lootTable!!", -- [2188]
-			"19:29:59 - VotingFrame:Update() without lootTable!!", -- [2189]
-			"19:30:17 - VotingFrame:Update() without lootTable!!", -- [2190]
-			"19:30:27 - VotingFrame:Update() without lootTable!!", -- [2191]
-			"19:30:33 - VotingFrame:Update() without lootTable!!", -- [2192]
-			"19:30:48 - VotingFrame:Update() without lootTable!!", -- [2193]
-			"19:30:55 - VotingFrame:Update() without lootTable!!", -- [2194]
-			"19:31:16 - VotingFrame:Update() without lootTable!!", -- [2195]
-			"19:31:32 - VotingFrame:Update() without lootTable!!", -- [2196]
-			"19:31:35 - VotingFrame:Update() without lootTable!!", -- [2197]
-			"19:31:38 - Event: (LOOT_READY) (true)", -- [2198]
-			"19:31:38 - Ignoring (|cffffffff|Hcurrency:1540:26|h[Wood]|h|r) (as it's a currency)", -- [2199]
-			"19:31:39 - Event: (LOOT_CLOSED)", -- [2200]
-			"19:31:39 - Event: (LOOT_CLOSED)", -- [2201]
-			"19:31:39 - VotingFrame:Update() without lootTable!!", -- [2202]
-			"19:31:42 - VotingFrame:Update() without lootTable!!", -- [2203]
-			"19:32:56 - VotingFrame:Update() without lootTable!!", -- [2204]
-			"19:33:02 - VotingFrame:Update() without lootTable!!", -- [2205]
-			"19:34:26 - Event: (GROUP_LEFT) (2) (Party-3017-0000332CE49B)", -- [2206]
-			"19:34:26 - GetML()", -- [2207]
-			"19:34:34 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2208]
-			"19:34:34 - GetML()", -- [2209]
-			"19:34:35 - VotingFrame:Update() without lootTable!!", -- [2210]
-			"19:36:38 - Event: (LOOT_READY) (true)", -- [2211]
-			"19:36:39 - Event: (LOOT_READY) (true)", -- [2212]
-			"19:36:58 - Event: (LOOT_READY) (true)", -- [2213]
-			"19:36:58 - Event: (LOOT_READY) (true)", -- [2214]
-			"19:37:10 - Event: (LOOT_READY) (true)", -- [2215]
-			"19:37:25 - Event: (LOOT_READY) (true)", -- [2216]
-			"19:37:25 - Event: (LOOT_READY) (true)", -- [2217]
-			"19:37:33 - Event: (PARTY_LEADER_CHANGED)", -- [2218]
-			"19:37:33 - GetML()", -- [2219]
-			"19:37:37 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2220]
-			"19:37:37 - GetML()", -- [2221]
-			"19:37:39 - VotingFrame:Update() without lootTable!!", -- [2222]
-			"19:37:43 - VotingFrame:Update() without lootTable!!", -- [2223]
-			"19:42:14 - VotingFrame:Update() without lootTable!!", -- [2224]
-			"19:42:21 - VotingFrame:Update() without lootTable!!", -- [2225]
-			"19:43:24 - Event: (PARTY_LEADER_CHANGED)", -- [2226]
-			"19:43:24 - GetML()", -- [2227]
-			"19:43:25 - Event: (GROUP_LEFT) (2) (Party-3017-0000332D0540)", -- [2228]
-			"19:43:25 - GetML()", -- [2229]
-			"19:43:31 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2230]
-			"19:43:31 - GetML()", -- [2231]
-			"19:43:32 - VotingFrame:Update() without lootTable!!", -- [2232]
-			"19:43:58 - Event: (LOOT_READY) (true)", -- [2233]
-			"19:43:59 - Event: (LOOT_READY) (true)", -- [2234]
-			"19:44:09 - Event: (LOOT_READY) (true)", -- [2235]
-			"19:44:09 - Event: (LOOT_READY) (true)", -- [2236]
-			"19:44:30 - Event: (LOOT_READY) (true)", -- [2237]
-			"19:44:31 - Event: (LOOT_READY) (true)", -- [2238]
-			"19:44:43 - Event: (LOOT_READY) (true)", -- [2239]
-			"19:44:55 - Event: (LOOT_READY) (true)", -- [2240]
-			"19:45:04 - Event: (LOOT_READY) (true)", -- [2241]
-			"19:45:04 - Event: (LOOT_READY) (true)", -- [2242]
-			"19:45:06 - Event: (PARTY_LEADER_CHANGED)", -- [2243]
-			"19:45:06 - GetML()", -- [2244]
-			"19:45:09 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2245]
-			"19:45:09 - GetML()", -- [2246]
-			"19:45:10 - VotingFrame:Update() without lootTable!!", -- [2247]
-			"19:45:11 - VotingFrame:Update() without lootTable!!", -- [2248]
-			"19:45:12 - VotingFrame:Update() without lootTable!!", -- [2249]
-			"19:53:14 - Event: (GROUP_LEFT) (2) (Party-3017-0000332D0B57)", -- [2250]
-			"19:53:14 - GetML()", -- [2251]
-			"19:53:19 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2252]
-			"19:53:19 - GetML()", -- [2253]
-			"19:53:21 - VotingFrame:Update() without lootTable!!", -- [2254]
-			"19:53:42 - Event: (LOOT_READY) (true)", -- [2255]
-			"19:54:00 - Event: (LOOT_READY) (true)", -- [2256]
-			"19:54:12 - Event: (LOOT_READY) (true)", -- [2257]
-			"19:54:29 - Event: (LOOT_READY) (true)", -- [2258]
-			"19:54:54 - Event: (PARTY_LEADER_CHANGED)", -- [2259]
-			"19:54:54 - GetML()", -- [2260]
-			"19:54:57 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2261]
-			"19:54:57 - GetML()", -- [2262]
-			"19:54:59 - VotingFrame:Update() without lootTable!!", -- [2263]
-			"20:00:49 - VotingFrame:Update() without lootTable!!", -- [2264]
-			"20:01:59 - VotingFrame:Update() without lootTable!!", -- [2265]
-			"20:02:00 - Event: (GROUP_LEFT) (2) (Party-3017-0000332D171E)", -- [2266]
-			"20:02:00 - GetML()", -- [2267]
-			"20:02:06 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2268]
-			"20:02:06 - GetML()", -- [2269]
-			"20:02:07 - VotingFrame:Update() without lootTable!!", -- [2270]
-			"20:02:30 - Event: (LOOT_READY) (true)", -- [2271]
-			"20:02:45 - Event: (LOOT_READY) (true)", -- [2272]
-			"20:02:57 - Event: (LOOT_READY) (true)", -- [2273]
-			"20:03:10 - Event: (LOOT_READY) (true)", -- [2274]
-			"20:03:21 - Event: (LOOT_READY) (true)", -- [2275]
-			"20:03:34 - Event: (LOOT_READY) (true)", -- [2276]
-			"20:03:34 - Event: (LOOT_READY) (true)", -- [2277]
-			"20:03:36 - Event: (PARTY_LEADER_CHANGED)", -- [2278]
-			"20:03:36 - GetML()", -- [2279]
-			"20:03:41 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2280]
-			"20:03:41 - GetML()", -- [2281]
-			"20:03:43 - VotingFrame:Update() without lootTable!!", -- [2282]
-			"20:03:46 - VotingFrame:Update() without lootTable!!", -- [2283]
-			"20:06:02 - VotingFrame:Update() without lootTable!!", -- [2284]
-			"20:11:19 - VotingFrame:Update() without lootTable!!", -- [2285]
-			"20:11:20 - Event: (PARTY_LEADER_CHANGED)", -- [2286]
-			"20:11:20 - GetML()", -- [2287]
-			"20:11:21 - Event: (GROUP_LEFT) (2) (Party-3017-0000332D1DEC)", -- [2288]
-			"20:11:21 - GetML()", -- [2289]
-			"20:11:27 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2290]
-			"20:11:27 - GetML()", -- [2291]
-			"20:11:28 - VotingFrame:Update() without lootTable!!", -- [2292]
-			"20:15:21 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2293]
-			"20:15:21 - GetML()", -- [2294]
-			"20:15:22 - VotingFrame:Update() without lootTable!!", -- [2295]
-			"20:15:34 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2296]
-			"20:15:34 - GetML()", -- [2297]
-			"20:15:36 - VotingFrame:Update() without lootTable!!", -- [2298]
-			"20:17:15 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2299]
-			"20:17:15 - GetML()", -- [2300]
-			"20:17:16 - VotingFrame:Update() without lootTable!!", -- [2301]
-			"20:17:25 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2302]
-			"20:17:25 - GetML()", -- [2303]
-			"20:17:26 - VotingFrame:Update() without lootTable!!", -- [2304]
-			"20:17:46 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2305]
-			"20:17:46 - GetML()", -- [2306]
-			"20:17:47 - VotingFrame:Update() without lootTable!!", -- [2307]
-			"20:19:45 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2308]
-			"20:19:45 - GetML()", -- [2309]
-			"20:19:46 - VotingFrame:Update() without lootTable!!", -- [2310]
-			"07/22/19", -- [2311]
-			"01:11:15 - Logged In", -- [2312]
-			"01:11:15 - ML initialized!", -- [2313]
-			"01:11:15 - TradeUI enabled", -- [2314]
-			"01:11:29 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [2315]
-			"01:11:29 - ActivateSkin (bfa)", -- [2316]
-			"01:11:35 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2317]
-			"01:11:35 - GetML()", -- [2318]
-			"01:11:35 - UpdatePlayersData()", -- [2319]
-			"01:11:40 - GetPlayersGuildRank()", -- [2320]
-			"01:11:40 - Found Guild Rank: Ahroun", -- [2321]
-			"01:11:42 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [2322]
-			"01:13:08 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2323]
-			"01:13:08 - GetML()", -- [2324]
-			"07/22/19", -- [2325]
-			"01:21:06 - Logged In", -- [2326]
-			"01:21:06 - ML initialized!", -- [2327]
-			"01:21:06 - TradeUI enabled", -- [2328]
-			"01:21:15 - Durlok-BlackDragonflight (2.12.2) (nil)", -- [2329]
-			"01:21:15 - ActivateSkin (bfa)", -- [2330]
-			"01:21:20 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2331]
-			"01:21:20 - GetML()", -- [2332]
-			"01:21:20 - UpdatePlayersData()", -- [2333]
-			"07/22/19", -- [2334]
-			"18:52:21 - Logged In", -- [2335]
-			"18:52:21 - ML initialized!", -- [2336]
-			"18:52:21 - TradeUI enabled", -- [2337]
-			"18:52:33 - Durlok-BlackDragonflight (2.12.2) (nil)", -- [2338]
-			"18:52:33 - ActivateSkin (bfa)", -- [2339]
-			"18:52:38 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2340]
-			"18:52:38 - GetML()", -- [2341]
-			"18:52:38 - UpdatePlayersData()", -- [2342]
-			"07/22/19", -- [2343]
-			"18:53:50 - Logged In", -- [2344]
-			"18:53:50 - ML initialized!", -- [2345]
-			"18:53:50 - TradeUI enabled", -- [2346]
-			"18:54:19 - Vancard-Zul'jin (2.12.2) (nil)", -- [2347]
-			"18:54:19 - ActivateSkin (bfa)", -- [2348]
-			"18:54:25 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2349]
-			"18:54:25 - GetML()", -- [2350]
-			"18:54:25 - UpdatePlayersData()", -- [2351]
-			"07/22/19", -- [2352]
-			"18:55:49 - Logged In", -- [2353]
-			"18:55:49 - ML initialized!", -- [2354]
-			"18:55:49 - TradeUI enabled", -- [2355]
-			"18:56:01 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [2356]
-			"18:56:01 - ActivateSkin (bfa)", -- [2357]
-			"18:56:07 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2358]
-			"18:56:07 - GetML()", -- [2359]
-			"18:56:07 - UpdatePlayersData()", -- [2360]
-			"18:56:12 - GetPlayersGuildRank()", -- [2361]
-			"18:56:12 - Found Guild Rank: Ahroun", -- [2362]
-			"18:56:14 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [2363]
-			"07/23/19", -- [2364]
-			"18:53:47 - Logged In", -- [2365]
-			"18:53:47 - ML initialized!", -- [2366]
-			"18:53:47 - TradeUI enabled", -- [2367]
-			"18:53:59 - Vancard-Zul'jin (2.12.2) (nil)", -- [2368]
-			"18:53:59 - ActivateSkin (bfa)", -- [2369]
-			"18:54:05 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2370]
-			"18:54:05 - GetML()", -- [2371]
-			"18:54:05 - UpdatePlayersData()", -- [2372]
-			"07/23/19", -- [2373]
-			"18:58:57 - Logged In", -- [2374]
-			"18:58:57 - ML initialized!", -- [2375]
-			"18:58:57 - TradeUI enabled", -- [2376]
-			"18:59:06 - Durlok-BlackDragonflight (2.12.2) (nil)", -- [2377]
-			"18:59:06 - ActivateSkin (bfa)", -- [2378]
-			"18:59:12 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2379]
-			"18:59:12 - GetML()", -- [2380]
-			"18:59:12 - UpdatePlayersData()", -- [2381]
-			"07/23/19", -- [2382]
-			"19:03:13 - Logged In", -- [2383]
-			"19:03:13 - ML initialized!", -- [2384]
-			"19:03:13 - TradeUI enabled", -- [2385]
-			"19:03:26 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [2386]
-			"19:03:26 - ActivateSkin (bfa)", -- [2387]
-			"19:03:32 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2388]
-			"19:03:32 - GetML()", -- [2389]
-			"19:03:32 - UpdatePlayersData()", -- [2390]
-			"19:03:46 - GetPlayersGuildRank()", -- [2391]
-			"19:03:46 - Found Guild Rank: Ahroun", -- [2392]
-			"19:03:49 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [2393]
-			"20:08:51 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2394]
-			"20:08:51 - GetML()", -- [2395]
-			"20:09:21 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2396]
-			"20:09:21 - GetML()", -- [2397]
-			"20:10:59 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2398]
-			"20:10:59 - GetML()", -- [2399]
-			"20:11:13 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2400]
-			"20:11:13 - GetML()", -- [2401]
-			"20:12:26 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2402]
-			"20:12:26 - GetML()", -- [2403]
-			"20:12:47 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2404]
-			"20:12:47 - GetML()", -- [2405]
-			"20:13:00 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2406]
-			"20:13:00 - GetML()", -- [2407]
-			"20:14:44 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2408]
-			"20:14:44 - GetML()", -- [2409]
-			"07/23/19", -- [2410]
-			"22:05:47 - Logged In", -- [2411]
-			"22:05:47 - ML initialized!", -- [2412]
-			"22:05:47 - TradeUI enabled", -- [2413]
-			"22:06:01 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [2414]
-			"22:06:01 - ActivateSkin (bfa)", -- [2415]
-			"22:06:07 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2416]
-			"22:06:07 - GetML()", -- [2417]
-			"22:06:07 - UpdatePlayersData()", -- [2418]
-			"22:06:14 - GetPlayersGuildRank()", -- [2419]
-			"22:06:14 - Found Guild Rank: Ahroun", -- [2420]
-			"22:06:16 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [2421]
-			"22:12:19 - Event: (RAID_INSTANCE_WELCOME) (Onyxia's Lair (25 Player)) (564460) (0) (0)", -- [2422]
-			"22:12:20 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2423]
-			"22:12:20 - GetML()", -- [2424]
-			"22:13:36 - Event: (LOOT_READY) (true)", -- [2425]
-			"22:13:36 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3019-249-20111-12129-0001B7BE81) (8518) (Creature-0-3019-249-20111-12129-000037BE81) (8677) (Creature-0-3019-249-20111-12129-0000B7BE81) (2048) (Creature-0-3019-249-20111-12129-000137BE81) (8265)", -- [2426]
-			"22:13:37 - OnLootSlotCleared() (1) (nil) (1)", -- [2427]
-			"22:13:37 - Event: (LOOT_CLOSED)", -- [2428]
-			"22:13:37 - Event: (LOOT_CLOSED)", -- [2429]
-			"22:13:37 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2430]
-			"22:13:37 - Comm received:^1^Slooted^T^N1^S12129^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2431]
-			"22:13:50 - Event: (ENCOUNTER_START) (1084) (Onyxia) (4) (25)", -- [2432]
-			"22:13:50 - UpdatePlayersData()", -- [2433]
-			"22:14:30 - Event: (ENCOUNTER_END) (1084) (Onyxia) (4) (25) (1)", -- [2434]
-			"22:14:30 - Event: (LOOT_READY) (true)", -- [2435]
-			"22:14:30 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3019-249-20111-10184-000037BE80) (95640)", -- [2436]
-			"22:14:30 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (4) (1) (Creature-0-3019-249-20111-10184-000037BE80) (1)", -- [2437]
-			"22:14:30 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r) (4) (1) (Creature-0-3019-249-20111-10184-000037BE80) (1)", -- [2438]
-			"22:14:30 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (4) (1) (Creature-0-3019-249-20111-10184-000037BE80) (1)", -- [2439]
-			"22:14:30 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r) (4) (1) (Creature-0-3019-249-20111-10184-000037BE80) (1)", -- [2440]
-			"22:14:30 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r) (4) (1) (Creature-0-3019-249-20111-10184-000037BE80) (1)", -- [2441]
-			"22:14:30 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r) (4)", -- [2442]
-			"22:14:30 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r) (4)", -- [2443]
-			"22:14:30 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (4)", -- [2444]
-			"22:14:30 - Event: (LOOT_READY) (true)", -- [2445]
-			"22:14:30 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3019-249-20111-10184-000037BE80) (95640)", -- [2446]
-			"22:14:30 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (4) (1) (Creature-0-3019-249-20111-10184-000037BE80) (1)", -- [2447]
-			"22:14:30 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r) (4) (1) (Creature-0-3019-249-20111-10184-000037BE80) (1)", -- [2448]
-			"22:14:30 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r) (4)", -- [2449]
-			"22:14:30 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (4)", -- [2450]
-			"22:14:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49494) (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r) (1) (Shanyt) (WARRIOR)", -- [2451]
-			"22:14:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49476) (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r) (1) (Shanyt) (WARRIOR)", -- [2452]
-			"22:14:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49294) (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (1) (Shanyt) (WARRIOR)", -- [2453]
-			"22:14:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49484) (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r) (1) (Shanyt) (WARRIOR)", -- [2454]
-			"22:14:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1084) (49295) (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (1) (Shanyt) (WARRIOR)", -- [2455]
-			"22:14:30 - OnLootSlotCleared() (1) (nil) (1)", -- [2456]
-			"22:14:30 - Event: (LOOT_CLOSED)", -- [2457]
-			"22:14:30 - Event: (LOOT_CLOSED)", -- [2458]
-			"22:14:30 - Comm received:^1^Slooted^T^N1^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2459]
-			"22:14:30 - Comm received:^1^Slooted^T^N1^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2460]
-			"22:14:32 - Storage:New (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r) (temp)", -- [2461]
-			"22:14:32 - Storage: searching for item: (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r)", -- [2462]
-			"22:14:32 - Found item at (1) (25)", -- [2463]
-			"22:14:32 - Error - Couldn't find item", -- [2464]
-			"22:14:32 - Storage:New (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r) (temp)", -- [2465]
-			"22:14:32 - Storage: searching for item: (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r)", -- [2466]
-			"22:14:32 - Found item at (1) (26)", -- [2467]
-			"22:14:32 - Error - Couldn't find item", -- [2468]
-			"22:14:32 - Storage:New (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (temp)", -- [2469]
-			"22:14:32 - Storage: searching for item: (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r)", -- [2470]
-			"22:14:32 - Found item at (1) (27)", -- [2471]
-			"22:14:32 - Storage:New (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (temp)", -- [2472]
-			"22:14:32 - Storage: searching for item: (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r)", -- [2473]
-			"22:14:32 - Found item at (1) (29)", -- [2474]
-			"22:14:32 - Error - Couldn't find item", -- [2475]
-			"22:14:32 - Storage:New (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r) (temp)", -- [2476]
-			"22:14:32 - Storage: searching for item: (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r)", -- [2477]
-			"22:14:32 - Found item at (1) (28)", -- [2478]
-			"22:14:32 - Error - Couldn't find item", -- [2479]
-			"22:14:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed~`Fang~`of~`the~`Mystics]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2480]
-			"22:14:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment~`Crown]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2481]
-			"22:14:32 - Comm received:^1^Stradable^T^N1^S|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen~`Sack~`of~`Gems]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2482]
-			"22:14:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged~`Onyxia~`Hide~`Backpack]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2483]
-			"22:14:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis~`Skullcap]|h|r^N2^S10184^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2484]
-			"22:15:01 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2485]
-			"22:15:01 - GetML()", -- [2486]
-			"22:17:23 - Event: (LOOT_READY) (true)", -- [2487]
-			"22:22:26 - Event: (LOOT_READY) (true)", -- [2488]
-			"22:22:27 - Event: (ENCOUNTER_LOOT_RECEIVED) (0) (116794) (|cffa335ee|Hitem:116794::::::::120:71::::::|h[Garn Nighthowl]|h|r) (1) (Shanyt) (WARRIOR)", -- [2489]
-			"22:47:11 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2490]
-			"22:47:11 - GetML()", -- [2491]
-			"22:49:23 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2492]
-			"22:49:23 - GetML()", -- [2493]
-			"22:53:58 - Event: (LOOT_READY) (true)", -- [2494]
-			"23:01:42 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2495]
-			"23:01:42 - GetML()", -- [2496]
-			"23:03:53 - Event: (LOOT_READY) (true)", -- [2497]
-			"23:04:24 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2498]
-			"23:04:24 - GetML()", -- [2499]
-			"23:14:30 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2500]
-			"23:14:30 - GetML()", -- [2501]
-			"23:17:21 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2502]
-			"23:17:21 - GetML()", -- [2503]
-			"07/28/19", -- [2504]
-			"23:21:02 - Storage:New (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r) (temp) (restored) (table: 000002952F5F49D0)", -- [2505]
-			"23:21:02 - Storage: searching for item: (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r)", -- [2506]
-			"23:21:02 - Error - Couldn't find item", -- [2507]
-			"23:21:02 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r)", -- [2508]
-			"23:21:02 - Storage:RemoveItem (|cffa335ee|Hitem:49494::::::::120:71::::::|h[Honed Fang of the Mystics]|h|r)", -- [2509]
-			"23:21:02 - Storage:New (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r) (temp) (restored) (table: 000002952F5F4C50)", -- [2510]
-			"23:21:02 - Storage: searching for item: (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r)", -- [2511]
-			"23:21:02 - Error - Couldn't find item", -- [2512]
-			"23:21:02 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r)", -- [2513]
-			"23:21:02 - Storage:RemoveItem (|cffa335ee|Hitem:49294::::::::120:71::::::|h[Ashen Sack of Gems]|h|r)", -- [2514]
-			"23:21:02 - Storage:New (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r) (temp) (restored) (table: 000002952F5F4ED0)", -- [2515]
-			"23:21:02 - Storage: searching for item: (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r)", -- [2516]
-			"23:21:02 - Error - Couldn't find item", -- [2517]
-			"23:21:02 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r)", -- [2518]
-			"23:21:02 - Storage:RemoveItem (|cffa335ee|Hitem:49484::::::::120:71::::::|h[Nemesis Skullcap]|h|r)", -- [2519]
-			"23:21:02 - Logged In", -- [2520]
-			"23:21:02 - ML initialized!", -- [2521]
-			"23:21:02 - TradeUI enabled", -- [2522]
-			"23:21:14 - Vancard-Zul'jin (2.12.2) (nil)", -- [2523]
-			"23:21:14 - ActivateSkin (bfa)", -- [2524]
-			"23:21:20 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2525]
-			"23:21:20 - GetML()", -- [2526]
-			"23:21:20 - UpdatePlayersData()", -- [2527]
-			"23:22:11 - Event: (LOOT_READY) (true)", -- [2528]
-			"23:22:11 - Event: (LOOT_READY) (true)", -- [2529]
-			"07/28/19", -- [2530]
-			"23:25:12 - Storage:New (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r) (temp) (restored) (table: 0000029568694BF0)", -- [2531]
-			"23:25:12 - Storage: searching for item: (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r)", -- [2532]
-			"23:25:12 - Error - Couldn't find item", -- [2533]
-			"23:25:12 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r)", -- [2534]
-			"23:25:12 - Storage:RemoveItem (|cffa335ee|Hitem:49476::::::::120:71::::::|h[Judgment Crown]|h|r)", -- [2535]
-			"23:25:12 - Logged In", -- [2536]
-			"23:25:12 - ML initialized!", -- [2537]
-			"23:25:12 - TradeUI enabled", -- [2538]
-			"23:25:41 - Durlok-BlackDragonflight (2.12.2) (nil)", -- [2539]
-			"23:25:41 - ActivateSkin (bfa)", -- [2540]
-			"23:25:47 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2541]
-			"23:25:47 - GetML()", -- [2542]
-			"23:25:47 - UpdatePlayersData()", -- [2543]
-			"07/29/19", -- [2544]
-			"00:04:09 - Storage:New (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r) (temp) (restored) (table: 0000028FAFE2BF60)", -- [2545]
-			"00:04:09 - Storage: searching for item: (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r)", -- [2546]
-			"00:04:09 - Error - Couldn't find item", -- [2547]
-			"00:04:09 - Error - ItemStorage, db item no longer in bags (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r)", -- [2548]
-			"00:04:09 - Storage:RemoveItem (|cffa335ee|Hitem:49295::::::::120:71::::::|h[Enlarged Onyxia Hide Backpack]|h|r)", -- [2549]
-			"00:04:09 - Logged In", -- [2550]
-			"00:04:09 - ML initialized!", -- [2551]
-			"00:04:09 - TradeUI enabled", -- [2552]
-			"00:04:24 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [2553]
-			"00:04:24 - ActivateSkin (bfa)", -- [2554]
-			"00:04:30 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2555]
-			"00:04:30 - GetML()", -- [2556]
-			"00:04:30 - UpdatePlayersData()", -- [2557]
-			"00:04:32 - GetPlayersGuildRank()", -- [2558]
-			"00:04:32 - Found Guild Rank: Ahroun", -- [2559]
-			"00:04:34 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [2560]
-			"07/29/19", -- [2561]
-			"21:54:09 - Logged In", -- [2562]
-			"21:54:09 - ML initialized!", -- [2563]
-			"21:54:09 - TradeUI enabled", -- [2564]
-			"21:54:21 - Vancard-Zul'jin (2.12.2) (nil)", -- [2565]
-			"21:54:21 - ActivateSkin (bfa)", -- [2566]
-			"21:54:26 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2567]
-			"21:54:26 - GetML()", -- [2568]
-			"21:54:26 - UpdatePlayersData()", -- [2569]
-			"07/29/19", -- [2570]
-			"21:56:41 - Logged In", -- [2571]
-			"21:56:41 - ML initialized!", -- [2572]
-			"21:56:41 - TradeUI enabled", -- [2573]
-			"21:57:11 - Durlok-BlackDragonflight (2.12.2) (nil)", -- [2574]
-			"21:57:11 - ActivateSkin (bfa)", -- [2575]
-			"21:57:17 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2576]
-			"21:57:17 - GetML()", -- [2577]
-			"21:57:17 - UpdatePlayersData()", -- [2578]
-			"07/29/19", -- [2579]
-			"21:59:05 - Logged In", -- [2580]
-			"21:59:05 - ML initialized!", -- [2581]
-			"21:59:05 - TradeUI enabled", -- [2582]
-			"21:59:16 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [2583]
-			"21:59:16 - ActivateSkin (bfa)", -- [2584]
-			"21:59:22 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2585]
-			"21:59:22 - GetML()", -- [2586]
-			"21:59:22 - UpdatePlayersData()", -- [2587]
-			"21:59:30 - GetPlayersGuildRank()", -- [2588]
-			"21:59:30 - Found Guild Rank: Ahroun", -- [2589]
-			"21:59:33 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [2590]
-			"22:01:08 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2591]
-			"22:01:08 - GetML()", -- [2592]
-			"22:05:04 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2593]
-			"22:05:04 - GetML()", -- [2594]
-			"07/31/19", -- [2595]
-			"03:35:11 - Logged In", -- [2596]
-			"03:35:11 - ML initialized!", -- [2597]
-			"03:35:11 - TradeUI enabled", -- [2598]
-			"03:35:26 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [2599]
-			"03:35:26 - ActivateSkin (bfa)", -- [2600]
-			"03:35:32 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2601]
-			"03:35:32 - GetML()", -- [2602]
-			"03:35:32 - UpdatePlayersData()", -- [2603]
-			"03:35:43 - GetPlayersGuildRank()", -- [2604]
-			"03:35:43 - Found Guild Rank: Ahroun", -- [2605]
-			"03:35:45 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [2606]
-			"08/01/19", -- [2607]
-			"00:51:28 - Logged In", -- [2608]
-			"00:51:28 - ML initialized!", -- [2609]
-			"00:51:28 - TradeUI enabled", -- [2610]
-			"00:51:42 - Shanyt-ArgentDawn (2.12.2) (nil)", -- [2611]
-			"00:51:42 - ActivateSkin (bfa)", -- [2612]
-			"00:51:48 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [2613]
-			"00:51:48 - GetML()", -- [2614]
-			"00:51:48 - UpdatePlayersData()", -- [2615]
-			"00:51:52 - GetPlayersGuildRank()", -- [2616]
-			"00:51:52 - Found Guild Rank: Ahroun", -- [2617]
-			"00:51:54 - Comm received:^1^SverTest^T^N1^S2.12.2^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [2618]
+			"12:02:27 - Error - Couldn't find item", -- [1]
+			"12:02:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124183::::::::120:71::5:2:1798:1475:::|h[Powder-Singed~`Bracers]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2]
+			"12:02:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124298::::::::120:71::5:2:1798:1475:::|h[Iron~`Dragoon's~`Pantaloons]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [3]
+			"12:02:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124289::::::::120:71::5:4:1798:1475:5850:3441:::|h[Hand~`Loader~`Gauntlets]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [4]
+			"12:02:27 - Storage:New (|cffa335ee|Hitem:124270::::::::120:71::5:2:1798:1475:::|h[Rangefinder's Spaulders]|h|r) (temp)", -- [5]
+			"12:02:27 - Storage: searching for item: (|cffa335ee|Hitem:124270::::::::120:71::5:2:1798:1475:::|h[Rangefinder's Spaulders]|h|r)", -- [6]
+			"12:02:27 - Found item at (2) (6)", -- [7]
+			"12:02:27 - Error - Couldn't find item", -- [8]
+			"12:02:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124270::::::::120:71::5:3:1798:40:1475:::|h[Rangefinder's~`Spaulders]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [9]
+			"12:02:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124270::::::::120:71::5:2:1798:1475:::|h[Rangefinder's~`Spaulders]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [10]
+			"12:04:48 - Event: (LOOT_READY) (true)", -- [11]
+			"12:04:48 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-94916-0002470037) (6174) (Creature-0-3134-1448-26639-94806-0002C70037) (29421)", -- [12]
+			"12:04:48 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3134-1448-26639-94804-0000470037) (1)", -- [13]
+			"12:04:48 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [14]
+			"12:04:48 - OnLootSlotCleared() (1) (nil) (1)", -- [15]
+			"12:04:48 - Event: (LOOT_CLOSED)", -- [16]
+			"12:04:48 - Event: (LOOT_CLOSED)", -- [17]
+			"12:04:48 - Comm received:^1^Slooted^T^N1^S94804^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [18]
+			"12:04:48 - Comm received:^1^Slooted^T^N1^S94804^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [19]
+			"12:05:12 - Event: (LOOT_READY) (true)", -- [20]
+			"12:05:12 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-94924-0002470037) (16147)", -- [21]
+			"12:05:12 - OnLootSlotCleared() (1) (nil) (1)", -- [22]
+			"12:05:12 - Event: (LOOT_CLOSED)", -- [23]
+			"12:05:12 - Event: (LOOT_CLOSED)", -- [24]
+			"12:05:12 - Comm received:^1^Slooted^T^N1^S94924^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [25]
+			"12:05:12 - Comm received:^1^Slooted^T^N1^S94924^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [26]
+			"12:05:51 - Event: (LOOT_READY) (true)", -- [27]
+			"12:05:51 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-94832-0002C70037) (5708)", -- [28]
+			"12:05:51 - OnLootSlotCleared() (1) (nil) (1)", -- [29]
+			"12:05:51 - Event: (LOOT_CLOSED)", -- [30]
+			"12:05:51 - Event: (LOOT_CLOSED)", -- [31]
+			"12:05:51 - Comm received:^1^Slooted^T^N1^S94832^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [32]
+			"12:05:51 - Comm received:^1^Slooted^T^N1^S94832^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [33]
+			"12:06:56 - Event: (ENCOUNTER_START) (1787) (Kormrok) (15) (10)", -- [34]
+			"12:06:56 - UpdatePlayersData()", -- [35]
+			"12:07:02 - Event: (ENCOUNTER_END) (1787) (Kormrok) (15) (10) (1)", -- [36]
+			"12:07:02 - Event: (LOOT_READY) (true)", -- [37]
+			"12:07:02 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-90435-0000470036) (261303)", -- [38]
+			"12:07:02 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:139627::::::::120:71::5:3:1798:564:1475:::|h[Ferroleather Hood]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [39]
+			"12:07:02 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124263::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Felblade Hood]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [40]
+			"12:07:02 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124297::::::::120:71::5:2:1798:1475:::|h[Crown of the Living Mountain]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [41]
+			"12:07:02 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124304::::::::120:71::5:2:1798:1475:::|h[Rugged Stoneshaped Pauldrons]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [42]
+			"12:07:02 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124151::::::::120:71::5:2:1798:1475:::|h[Craggy Gloves of Grasping]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [43]
+			"12:07:02 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124139::::::::120:71::5:2:1798:1475:::|h[Polymorphic Cloak of Absorption]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [44]
+			"12:07:03 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124139::::::::120:71::5:2:1798:1475:::|h[Polymorphic Cloak of Absorption]|h|r) (4)", -- [45]
+			"12:07:03 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124151::::::::120:71::5:2:1798:1475:::|h[Craggy Gloves of Grasping]|h|r) (4)", -- [46]
+			"12:07:03 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124304::::::::120:71::5:2:1798:1475:::|h[Rugged Stoneshaped Pauldrons]|h|r) (4)", -- [47]
+			"12:07:03 - Event: (LOOT_READY) (true)", -- [48]
+			"12:07:03 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-90435-0000470036) (261303)", -- [49]
+			"12:07:03 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:139627::::::::120:71::5:3:1798:564:1475:::|h[Ferroleather Hood]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [50]
+			"12:07:03 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124263::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Felblade Hood]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [51]
+			"12:07:03 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124297::::::::120:71::5:2:1798:1475:::|h[Crown of the Living Mountain]|h|r) (4) (1) (Creature-0-3134-1448-26639-90435-0000470036) (1)", -- [52]
+			"12:07:03 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124297::::::::120:71::5:2:1798:1475:::|h[Crown of the Living Mountain]|h|r) (4)", -- [53]
+			"12:07:03 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124263::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Felblade Hood]|h|r) (4)", -- [54]
+			"12:07:03 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:139627::::::::120:71::5:3:1798:564:1475:::|h[Ferroleather Hood]|h|r) (4)", -- [55]
+			"12:07:03 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124139) (|cffa335ee|Hitem:124139::::::::120:71::5:2:1798:1475:::|h[Polymorphic Cloak of Absorption]|h|r) (1) (Shanyt) (WARRIOR)", -- [56]
+			"12:07:03 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124151) (|cffa335ee|Hitem:124151::::::::120:71::5:2:1798:1475:::|h[Craggy Gloves of Grasping]|h|r) (1) (Shanyt) (WARRIOR)", -- [57]
+			"12:07:03 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124304) (|cffa335ee|Hitem:124304::::::::120:71::5:2:1798:1475:::|h[Rugged Stoneshaped Pauldrons]|h|r) (1) (Shanyt) (WARRIOR)", -- [58]
+			"12:07:03 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124297) (|cffa335ee|Hitem:124297::::::::120:71::5:2:1798:1475:::|h[Crown of the Living Mountain]|h|r) (1) (Shanyt) (WARRIOR)", -- [59]
+			"12:07:03 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124263) (|cffa335ee|Hitem:124263::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Felblade Hood]|h|r) (1) (Shanyt) (WARRIOR)", -- [60]
+			"12:07:03 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (139627) (|cffa335ee|Hitem:139627::::::::120:71::5:3:1798:564:1475:::|h[Ferroleather Hood]|h|r) (1) (Shanyt) (WARRIOR)", -- [61]
+			"12:07:03 - OnLootSlotCleared() (1) (nil) (1)", -- [62]
+			"12:07:03 - Event: (LOOT_CLOSED)", -- [63]
+			"12:07:03 - Event: (LOOT_CLOSED)", -- [64]
+			"12:07:03 - Comm received:^1^Slooted^T^N1^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [65]
+			"12:07:03 - Comm received:^1^Slooted^T^N1^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [66]
+			"12:07:05 - Storage:New (|cffa335ee|Hitem:124139::::::::120:71::5:2:1798:1475:::|h[Polymorphic Cloak of Absorption]|h|r) (temp)", -- [67]
+			"12:07:05 - Storage: searching for item: (|cffa335ee|Hitem:124139::::::::120:71::5:2:1798:1475:::|h[Polymorphic Cloak of Absorption]|h|r)", -- [68]
+			"12:07:05 - Found item at (1) (28)", -- [69]
+			"12:07:05 - Error - Couldn't find item", -- [70]
+			"12:07:05 - Storage:New (|cffa335ee|Hitem:124151::::::::120:71::5:2:1798:1475:::|h[Craggy Gloves of Grasping]|h|r) (temp)", -- [71]
+			"12:07:05 - Storage: searching for item: (|cffa335ee|Hitem:124151::::::::120:71::5:2:1798:1475:::|h[Craggy Gloves of Grasping]|h|r)", -- [72]
+			"12:07:05 - Found item at (1) (29)", -- [73]
+			"12:07:05 - Error - Couldn't find item", -- [74]
+			"12:07:05 - Storage:New (|cffa335ee|Hitem:124304::::::::120:71::5:2:1798:1475:::|h[Rugged Stoneshaped Pauldrons]|h|r) (temp)", -- [75]
+			"12:07:05 - Storage: searching for item: (|cffa335ee|Hitem:124304::::::::120:71::5:2:1798:1475:::|h[Rugged Stoneshaped Pauldrons]|h|r)", -- [76]
+			"12:07:05 - Found item at (1) (30)", -- [77]
+			"12:07:05 - Error - Couldn't find item", -- [78]
+			"12:07:05 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124139::::::::120:71::5:2:1798:1475:::|h[Polymorphic~`Cloak~`of~`Absorption]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [79]
+			"12:07:05 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124151::::::::120:71::5:2:1798:1475:::|h[Craggy~`Gloves~`of~`Grasping]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [80]
+			"12:07:05 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124304::::::::120:71::5:2:1798:1475:::|h[Rugged~`Stoneshaped~`Pauldrons]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [81]
+			"12:07:05 - Storage:New (|cffa335ee|Hitem:124263::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Felblade Hood]|h|r) (temp)", -- [82]
+			"12:07:05 - Storage: searching for item: (|cffa335ee|Hitem:124263::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Felblade Hood]|h|r)", -- [83]
+			"12:07:05 - Found item at (2) (2)", -- [84]
+			"12:07:05 - Error - Couldn't find item", -- [85]
+			"12:07:05 - Storage:New (|cffa335ee|Hitem:124297::::::::120:71::5:2:1798:1475:::|h[Crown of the Living Mountain]|h|r) (temp)", -- [86]
+			"12:07:05 - Storage: searching for item: (|cffa335ee|Hitem:124297::::::::120:71::5:2:1798:1475:::|h[Crown of the Living Mountain]|h|r)", -- [87]
+			"12:07:05 - Found item at (2) (1)", -- [88]
+			"12:07:05 - Error - Couldn't find item", -- [89]
+			"12:07:05 - Storage:New (|cffa335ee|Hitem:139627::::::::120:71::5:3:1798:564:1475:::|h[Ferroleather Hood]|h|r) (temp)", -- [90]
+			"12:07:05 - Storage: searching for item: (|cffa335ee|Hitem:139627::::::::120:71::5:3:1798:564:1475:::|h[Ferroleather Hood]|h|r)", -- [91]
+			"12:07:05 - Found item at (2) (3)", -- [92]
+			"12:07:05 - Error - Couldn't find item", -- [93]
+			"12:07:05 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124263::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Felblade~`Hood]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [94]
+			"12:07:05 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124297::::::::120:71::5:2:1798:1475:::|h[Crown~`of~`the~`Living~`Mountain]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [95]
+			"12:07:05 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:139627::::::::120:71::5:3:1798:564:1475:::|h[Ferroleather~`Hood]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [96]
+			"12:08:09 - Event: (LOOT_READY) (true)", -- [97]
+			"12:08:09 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-94947-0000470036) (13679) (Creature-0-3134-1448-26639-94947-0001C70036) (6217)", -- [98]
+			"12:08:09 - OnLootSlotCleared() (1) (nil) (1)", -- [99]
+			"12:08:09 - Event: (LOOT_CLOSED)", -- [100]
+			"12:08:09 - Event: (LOOT_CLOSED)", -- [101]
+			"12:08:09 - Comm received:^1^Slooted^T^N1^S94947^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [102]
+			"12:08:09 - Comm received:^1^Slooted^T^N1^S94947^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [103]
+			"12:08:37 - Event: (LOOT_READY) (true)", -- [104]
+			"12:08:37 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-94947-0001470037) (17650)", -- [105]
+			"12:08:38 - OnLootSlotCleared() (1) (nil) (1)", -- [106]
+			"12:08:38 - Event: (LOOT_CLOSED)", -- [107]
+			"12:08:38 - Event: (LOOT_CLOSED)", -- [108]
+			"12:08:38 - Comm received:^1^Slooted^T^N1^S94947^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [109]
+			"12:08:38 - Comm received:^1^Slooted^T^N1^S94947^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [110]
+			"12:09:41 - Event: (ENCOUNTER_START) (1798) (Hellfire High Council) (15) (10)", -- [111]
+			"12:09:41 - UpdatePlayersData()", -- [112]
+			"12:09:50 - Event: (ENCOUNTER_END) (1798) (Hellfire High Council) (15) (10) (1)", -- [113]
+			"12:09:51 - Event: (LOOT_READY) (true)", -- [114]
+			"12:09:51 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92144-0000470036) (266802)", -- [115]
+			"12:09:51 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124258::::::::120:71::5:2:1798:1475:::|h[Gurtogg's Discarded Hood]|h|r) (4) (1) (Creature-0-3134-1448-26639-92144-0000470036) (1)", -- [116]
+			"12:09:51 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124224::::::::120:71::5:3:1798:564:1475:::|h[Mirror of the Blademaster]|h|r) (4) (1) (Creature-0-3134-1448-26639-92144-0000470036) (1)", -- [117]
+			"12:09:51 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124163::::::::120:71::5:2:1798:1475:::|h[Dia's Nightmarish Leggings]|h|r) (4) (1) (Creature-0-3134-1448-26639-92144-0000470036) (1)", -- [118]
+			"12:09:51 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124133::::::::120:71::5:2:1798:1475:::|h[Windswept Wanderer's Drape]|h|r) (4) (1) (Creature-0-3134-1448-26639-92144-0000470036) (1)", -- [119]
+			"12:09:51 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124312::::::::120:71::5:2:1798:1475:::|h[Bloody Berserker's Bracers]|h|r) (4) (1) (Creature-0-3134-1448-26639-92144-0000470036) (1)", -- [120]
+			"12:09:51 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124312::::::::120:71::5:2:1798:1475:::|h[Bloody Berserker's Bracers]|h|r) (4)", -- [121]
+			"12:09:51 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124133::::::::120:71::5:2:1798:1475:::|h[Windswept Wanderer's Drape]|h|r) (4)", -- [122]
+			"12:09:51 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124163::::::::120:71::5:2:1798:1475:::|h[Dia's Nightmarish Leggings]|h|r) (4)", -- [123]
+			"12:09:51 - Event: (LOOT_READY) (true)", -- [124]
+			"12:09:51 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92144-0000470036) (266802)", -- [125]
+			"12:09:51 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124258::::::::120:71::5:2:1798:1475:::|h[Gurtogg's Discarded Hood]|h|r) (4) (1) (Creature-0-3134-1448-26639-92144-0000470036) (1)", -- [126]
+			"12:09:51 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124224::::::::120:71::5:3:1798:564:1475:::|h[Mirror of the Blademaster]|h|r) (4) (1) (Creature-0-3134-1448-26639-92144-0000470036) (1)", -- [127]
+			"12:09:51 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124224::::::::120:71::5:3:1798:564:1475:::|h[Mirror of the Blademaster]|h|r) (4)", -- [128]
+			"12:09:51 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124258::::::::120:71::5:2:1798:1475:::|h[Gurtogg's Discarded Hood]|h|r) (4)", -- [129]
+			"12:09:51 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124312) (|cffa335ee|Hitem:124312::::::::120:71::5:2:1798:1475:::|h[Bloody Berserker's Bracers]|h|r) (1) (Shanyt) (WARRIOR)", -- [130]
+			"12:09:51 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124133) (|cffa335ee|Hitem:124133::::::::120:71::5:2:1798:1475:::|h[Windswept Wanderer's Drape]|h|r) (1) (Shanyt) (WARRIOR)", -- [131]
+			"12:09:51 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124163) (|cffa335ee|Hitem:124163::::::::120:71::5:2:1798:1475:::|h[Dia's Nightmarish Leggings]|h|r) (1) (Shanyt) (WARRIOR)", -- [132]
+			"12:09:51 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124224) (|cffa335ee|Hitem:124224::::::::120:71::5:3:1798:564:1475:::|h[Mirror of the Blademaster]|h|r) (1) (Shanyt) (WARRIOR)", -- [133]
+			"12:09:51 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124258) (|cffa335ee|Hitem:124258::::::::120:71::5:2:1798:1475:::|h[Gurtogg's Discarded Hood]|h|r) (1) (Shanyt) (WARRIOR)", -- [134]
+			"12:09:51 - OnLootSlotCleared() (1) (nil) (1)", -- [135]
+			"12:09:51 - Event: (LOOT_CLOSED)", -- [136]
+			"12:09:51 - Event: (LOOT_CLOSED)", -- [137]
+			"12:09:51 - Comm received:^1^Slooted^T^N1^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [138]
+			"12:09:51 - Comm received:^1^Slooted^T^N1^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [139]
+			"12:09:53 - Storage:New (|cffa335ee|Hitem:124312::::::::120:71::5:2:1798:1475:::|h[Bloody Berserker's Bracers]|h|r) (temp)", -- [140]
+			"12:09:53 - Storage: searching for item: (|cffa335ee|Hitem:124312::::::::120:71::5:2:1798:1475:::|h[Bloody Berserker's Bracers]|h|r)", -- [141]
+			"12:09:53 - Found item at (1) (27)", -- [142]
+			"12:09:53 - Error - Couldn't find item", -- [143]
+			"12:09:53 - Storage:New (|cffa335ee|Hitem:124133::::::::120:71::5:2:1798:1475:::|h[Windswept Wanderer's Drape]|h|r) (temp)", -- [144]
+			"12:09:53 - Storage: searching for item: (|cffa335ee|Hitem:124133::::::::120:71::5:2:1798:1475:::|h[Windswept Wanderer's Drape]|h|r)", -- [145]
+			"12:09:53 - Found item at (1) (28)", -- [146]
+			"12:09:53 - Error - Couldn't find item", -- [147]
+			"12:09:53 - Storage:New (|cffa335ee|Hitem:124163::::::::120:71::5:2:1798:1475:::|h[Dia's Nightmarish Leggings]|h|r) (temp)", -- [148]
+			"12:09:53 - Storage: searching for item: (|cffa335ee|Hitem:124163::::::::120:71::5:2:1798:1475:::|h[Dia's Nightmarish Leggings]|h|r)", -- [149]
+			"12:09:53 - Found item at (1) (29)", -- [150]
+			"12:09:53 - Error - Couldn't find item", -- [151]
+			"12:09:53 - Storage:New (|cffa335ee|Hitem:124224::::::::120:71::5:3:1798:564:1475:::|h[Mirror of the Blademaster]|h|r) (temp)", -- [152]
+			"12:09:53 - Storage: searching for item: (|cffa335ee|Hitem:124224::::::::120:71::5:3:1798:564:1475:::|h[Mirror of the Blademaster]|h|r)", -- [153]
+			"12:09:53 - Found item at (1) (30)", -- [154]
+			"12:09:53 - Error - Couldn't find item", -- [155]
+			"12:09:53 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124312::::::::120:71::5:2:1798:1475:::|h[Bloody~`Berserker's~`Bracers]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [156]
+			"12:09:53 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124133::::::::120:71::5:2:1798:1475:::|h[Windswept~`Wanderer's~`Drape]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [157]
+			"12:09:53 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124163::::::::120:71::5:2:1798:1475:::|h[Dia's~`Nightmarish~`Leggings]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [158]
+			"12:09:53 - Storage:New (|cffa335ee|Hitem:124258::::::::120:71::5:2:1798:1475:::|h[Gurtogg's Discarded Hood]|h|r) (temp)", -- [159]
+			"12:09:53 - Storage: searching for item: (|cffa335ee|Hitem:124258::::::::120:71::5:2:1798:1475:::|h[Gurtogg's Discarded Hood]|h|r)", -- [160]
+			"12:09:53 - Found item at (2) (1)", -- [161]
+			"12:09:53 - Error - Couldn't find item", -- [162]
+			"12:09:53 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124224::::::::120:71::5:3:1798:564:1475:::|h[Mirror~`of~`the~`Blademaster]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [163]
+			"12:09:53 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124258::::::::120:71::5:2:1798:1475:::|h[Gurtogg's~`Discarded~`Hood]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [164]
+			"12:10:23 - Event: (LOOT_READY) (true)", -- [165]
+			"12:10:23 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92041-0001470037) (18892)", -- [166]
+			"12:10:23 - OnLootSlotCleared() (1) (nil) (1)", -- [167]
+			"12:10:23 - Event: (LOOT_CLOSED)", -- [168]
+			"12:10:23 - Event: (LOOT_CLOSED)", -- [169]
+			"12:10:24 - Comm received:^1^Slooted^T^N1^S92041^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [170]
+			"12:10:24 - Comm received:^1^Slooted^T^N1^S92041^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [171]
+			"12:10:39 - Event: (LOOT_READY) (true)", -- [172]
+			"12:10:39 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92041-0000C70037) (4384) (Creature-0-3134-1448-26639-92039-0001C70036) (5012)", -- [173]
+			"12:10:39 - OnLootSlotCleared() (1) (nil) (1)", -- [174]
+			"12:10:39 - Event: (LOOT_CLOSED)", -- [175]
+			"12:10:39 - Event: (LOOT_CLOSED)", -- [176]
+			"12:10:39 - Comm received:^1^Slooted^T^N1^S92041^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [177]
+			"12:10:39 - Comm received:^1^Slooted^T^N1^S92041^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [178]
+			"12:11:08 - Event: (LOOT_READY) (true)", -- [179]
+			"12:11:08 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92038-0000C70037) (16350)", -- [180]
+			"12:11:09 - OnLootSlotCleared() (1) (nil) (1)", -- [181]
+			"12:11:09 - Event: (LOOT_CLOSED)", -- [182]
+			"12:11:09 - Event: (LOOT_CLOSED)", -- [183]
+			"12:11:09 - Comm received:^1^Slooted^T^N1^S92038^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [184]
+			"12:11:09 - Comm received:^1^Slooted^T^N1^S92038^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [185]
+			"12:11:32 - Event: (ENCOUNTER_START) (1786) (Kilrogg Deadeye) (15) (10)", -- [186]
+			"12:11:32 - UpdatePlayersData()", -- [187]
+			"12:11:41 - Event: (ENCOUNTER_END) (1786) (Kilrogg Deadeye) (15) (10) (1)", -- [188]
+			"12:11:42 - Event: (LOOT_READY) (true)", -- [189]
+			"12:11:42 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-90378-0000470036) (262612)", -- [190]
+			"12:11:42 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124364::::::::120:71::5:2:1798:1475:::|h[Fallen Warlord's Mindcarver]|h|r) (4) (1) (Creature-0-3134-1448-26639-90378-0000470036) (1)", -- [191]
+			"12:11:42 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124137::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Shawl of Sanguinary Ritual]|h|r) (4) (1) (Creature-0-3134-1448-26639-90378-0000470036) (1)", -- [192]
+			"12:11:42 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124325::::::::120:71::5:4:1798:1475:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (4) (1) (Creature-0-3134-1448-26639-90378-0000470036) (1)", -- [193]
+			"12:11:42 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124366::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ruinous Gutripper]|h|r) (4) (1) (Creature-0-3134-1448-26639-90378-0000470036) (1)", -- [194]
+			"12:11:42 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124169::::::::120:71::5:2:1798:1475:::|h[Ancient Gorestained Wrap]|h|r) (4) (1) (Creature-0-3134-1448-26639-90378-0000470036) (1)", -- [195]
+			"12:11:42 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124169::::::::120:71::5:2:1798:1475:::|h[Ancient Gorestained Wrap]|h|r) (4)", -- [196]
+			"12:11:42 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124366::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ruinous Gutripper]|h|r) (4)", -- [197]
+			"12:11:42 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124325::::::::120:71::5:4:1798:1475:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (4)", -- [198]
+			"12:11:42 - Event: (LOOT_READY) (true)", -- [199]
+			"12:11:42 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-90378-0000470036) (262612)", -- [200]
+			"12:11:42 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124364::::::::120:71::5:2:1798:1475:::|h[Fallen Warlord's Mindcarver]|h|r) (4) (1) (Creature-0-3134-1448-26639-90378-0000470036) (1)", -- [201]
+			"12:11:42 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124137::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Shawl of Sanguinary Ritual]|h|r) (4) (1) (Creature-0-3134-1448-26639-90378-0000470036) (1)", -- [202]
+			"12:11:42 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124137::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Shawl of Sanguinary Ritual]|h|r) (4)", -- [203]
+			"12:11:42 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124364::::::::120:71::5:2:1798:1475:::|h[Fallen Warlord's Mindcarver]|h|r) (4)", -- [204]
+			"12:11:42 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124169) (|cffa335ee|Hitem:124169::::::::120:71::5:2:1798:1475:::|h[Ancient Gorestained Wrap]|h|r) (1) (Shanyt) (WARRIOR)", -- [205]
+			"12:11:42 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124366) (|cffa335ee|Hitem:124366::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ruinous Gutripper]|h|r) (1) (Shanyt) (WARRIOR)", -- [206]
+			"12:11:42 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124325) (|cffa335ee|Hitem:124325::::::::120:71::5:4:1798:1475:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (1) (Shanyt) (WARRIOR)", -- [207]
+			"12:11:42 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124137) (|cffa335ee|Hitem:124137::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Shawl of Sanguinary Ritual]|h|r) (1) (Shanyt) (WARRIOR)", -- [208]
+			"12:11:42 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124364) (|cffa335ee|Hitem:124364::::::::120:71::5:2:1798:1475:::|h[Fallen Warlord's Mindcarver]|h|r) (1) (Shanyt) (WARRIOR)", -- [209]
+			"12:11:42 - OnLootSlotCleared() (1) (nil) (1)", -- [210]
+			"12:11:42 - Event: (LOOT_CLOSED)", -- [211]
+			"12:11:42 - Event: (LOOT_CLOSED)", -- [212]
+			"12:11:43 - Comm received:^1^Slooted^T^N1^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [213]
+			"12:11:43 - Comm received:^1^Slooted^T^N1^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [214]
+			"12:11:44 - Storage:New (|cffa335ee|Hitem:124169::::::::120:71::5:2:1798:1475:::|h[Ancient Gorestained Wrap]|h|r) (temp)", -- [215]
+			"12:11:44 - Storage: searching for item: (|cffa335ee|Hitem:124169::::::::120:71::5:2:1798:1475:::|h[Ancient Gorestained Wrap]|h|r)", -- [216]
+			"12:11:44 - Found item at (2) (2)", -- [217]
+			"12:11:44 - Error - Couldn't find item", -- [218]
+			"12:11:44 - Storage:New (|cffa335ee|Hitem:124366::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ruinous Gutripper]|h|r) (temp)", -- [219]
+			"12:11:44 - Storage: searching for item: (|cffa335ee|Hitem:124366::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ruinous Gutripper]|h|r)", -- [220]
+			"12:11:44 - Found item at (2) (3)", -- [221]
+			"12:11:44 - Error - Couldn't find item", -- [222]
+			"12:11:44 - Storage:New (|cffa335ee|Hitem:124325::::::::120:71::5:4:1798:1475:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (temp)", -- [223]
+			"12:11:44 - Storage: searching for item: (|cffa335ee|Hitem:124325::::::::120:71::5:4:1798:1475:5850:3441:::|h[Crimson Throatgrabbers]|h|r)", -- [224]
+			"12:11:44 - Found item at (2) (4)", -- [225]
+			"12:11:44 - Error - Couldn't find item", -- [226]
+			"12:11:44 - Storage:New (|cffa335ee|Hitem:124137::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Shawl of Sanguinary Ritual]|h|r) (temp)", -- [227]
+			"12:11:44 - Storage: searching for item: (|cffa335ee|Hitem:124137::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Shawl of Sanguinary Ritual]|h|r)", -- [228]
+			"12:11:44 - Found item at (2) (5)", -- [229]
+			"12:11:44 - Error - Couldn't find item", -- [230]
+			"12:11:44 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124169::::::::120:71::5:2:1798:1475:::|h[Ancient~`Gorestained~`Wrap]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [231]
+			"12:11:44 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124366::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ruinous~`Gutripper]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [232]
+			"12:11:44 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124325::::::::120:71::5:4:1798:1475:5850:3441:::|h[Crimson~`Throatgrabbers]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [233]
+			"12:11:44 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124137::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Shawl~`of~`Sanguinary~`Ritual]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [234]
+			"12:11:44 - Storage:New (|cffa335ee|Hitem:124364::::::::120:71::5:2:1798:1475:::|h[Fallen Warlord's Mindcarver]|h|r) (temp)", -- [235]
+			"12:11:44 - Storage: searching for item: (|cffa335ee|Hitem:124364::::::::120:71::5:2:1798:1475:::|h[Fallen Warlord's Mindcarver]|h|r)", -- [236]
+			"12:11:44 - Found item at (2) (6)", -- [237]
+			"12:11:44 - Error - Couldn't find item", -- [238]
+			"12:11:44 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124364::::::::120:71::5:2:1798:1475:::|h[Fallen~`Warlord's~`Mindcarver]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [239]
+			"12:13:19 - Event: (LOOT_READY) (true)", -- [240]
+			"12:13:19 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92391-0000C70036) (19099)", -- [241]
+			"12:13:19 - OnLootSlotCleared() (1) (nil) (1)", -- [242]
+			"12:13:19 - Event: (LOOT_CLOSED)", -- [243]
+			"12:13:19 - Event: (LOOT_CLOSED)", -- [244]
+			"12:13:20 - Comm received:^1^Slooted^T^N1^S92391^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [245]
+			"12:13:20 - Comm received:^1^Slooted^T^N1^S92391^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [246]
+			"12:13:26 - Event: (LOOT_READY) (true)", -- [247]
+			"12:13:26 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92391-0000470036) (27278)", -- [248]
+			"12:13:26 - OnLootSlotCleared() (1) (nil) (1)", -- [249]
+			"12:13:26 - Event: (LOOT_CLOSED)", -- [250]
+			"12:13:26 - Event: (LOOT_CLOSED)", -- [251]
+			"12:13:26 - Comm received:^1^Slooted^T^N1^S92391^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [252]
+			"12:13:26 - Comm received:^1^Slooted^T^N1^S92391^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [253]
+			"12:13:46 - Event: (LOOT_READY) (true)", -- [254]
+			"12:13:46 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92391-0001470037) (17425)", -- [255]
+			"12:13:47 - OnLootSlotCleared() (1) (nil) (1)", -- [256]
+			"12:13:47 - Event: (LOOT_CLOSED)", -- [257]
+			"12:13:47 - Event: (LOOT_CLOSED)", -- [258]
+			"12:13:47 - Comm received:^1^Slooted^T^N1^S92391^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [259]
+			"12:13:47 - Comm received:^1^Slooted^T^N1^S92391^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [260]
+			"12:14:20 - Event: (LOOT_READY) (true)", -- [261]
+			"12:14:20 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-92961-0000C70036) (17370)", -- [262]
+			"12:14:20 - OnLootSlotCleared() (1) (nil) (1)", -- [263]
+			"12:14:20 - Event: (LOOT_CLOSED)", -- [264]
+			"12:14:20 - Event: (LOOT_CLOSED)", -- [265]
+			"12:14:21 - Comm received:^1^Slooted^T^N1^S92961^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [266]
+			"12:14:21 - Comm received:^1^Slooted^T^N1^S92961^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [267]
+			"12:14:39 - Event: (ENCOUNTER_START) (1783) (Gorefiend) (15) (10)", -- [268]
+			"12:14:39 - UpdatePlayersData()", -- [269]
+			"12:14:46 - Event: (ENCOUNTER_END) (1783) (Gorefiend) (15) (10) (1)", -- [270]
+			"12:14:47 - Event: (LOOT_READY) (true)", -- [271]
+			"12:14:47 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Vehicle-0-3134-1448-26639-90199-0000470036) (251116)", -- [272]
+			"12:14:47 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124166::::::::120:71::5:2:1798:1475:::|h[Pious Leggings]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [273]
+			"12:14:47 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124339::::::::120:71::5:5:1798:40:1475:5850:3441:::|h[Greaves of the Ceaseless Vigil]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [274]
+			"12:14:47 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124269::::::::120:71::5:2:1798:1475:::|h[Felblade Leggings]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [275]
+			"12:14:47 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124380::::::::120:71::5:2:1798:1475:::|h[Spur of the Great Devourer]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [276]
+			"12:14:47 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124244::::::::120:71::5:4:1798:1475:5850:3441:::|h[Chestguard of Gnawing Desire]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [277]
+			"12:14:47 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124157::::::::120:71::5:2:1798:1475:::|h[Cowl of a Thousand Hungers]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [278]
+			"12:14:47 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124157::::::::120:71::5:2:1798:1475:::|h[Cowl of a Thousand Hungers]|h|r) (4)", -- [279]
+			"12:14:47 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124244::::::::120:71::5:4:1798:1475:5850:3441:::|h[Chestguard of Gnawing Desire]|h|r) (4)", -- [280]
+			"12:14:47 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124380::::::::120:71::5:2:1798:1475:::|h[Spur of the Great Devourer]|h|r) (4)", -- [281]
+			"12:14:47 - Event: (LOOT_READY) (true)", -- [282]
+			"12:14:47 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Vehicle-0-3134-1448-26639-90199-0000470036) (251116)", -- [283]
+			"12:14:47 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124166::::::::120:71::5:2:1798:1475:::|h[Pious Leggings]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [284]
+			"12:14:47 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124339::::::::120:71::5:5:1798:40:1475:5850:3441:::|h[Greaves of the Ceaseless Vigil]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [285]
+			"12:14:47 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124269::::::::120:71::5:2:1798:1475:::|h[Felblade Leggings]|h|r) (4) (1) (Vehicle-0-3134-1448-26639-90199-0000470036) (1)", -- [286]
+			"12:14:48 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124269::::::::120:71::5:2:1798:1475:::|h[Felblade Leggings]|h|r) (4)", -- [287]
+			"12:14:48 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124339::::::::120:71::5:5:1798:40:1475:5850:3441:::|h[Greaves of the Ceaseless Vigil]|h|r) (4)", -- [288]
+			"12:14:48 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124166::::::::120:71::5:2:1798:1475:::|h[Pious Leggings]|h|r) (4)", -- [289]
+			"12:14:48 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124157) (|cffa335ee|Hitem:124157::::::::120:71::5:2:1798:1475:::|h[Cowl of a Thousand Hungers]|h|r) (1) (Shanyt) (WARRIOR)", -- [290]
+			"12:14:48 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124244) (|cffa335ee|Hitem:124244::::::::120:71::5:4:1798:1475:5850:3441:::|h[Chestguard of Gnawing Desire]|h|r) (1) (Shanyt) (WARRIOR)", -- [291]
+			"12:14:48 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124380) (|cffa335ee|Hitem:124380::::::::120:71::5:2:1798:1475:::|h[Spur of the Great Devourer]|h|r) (1) (Shanyt) (WARRIOR)", -- [292]
+			"12:14:48 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124269) (|cffa335ee|Hitem:124269::::::::120:71::5:2:1798:1475:::|h[Felblade Leggings]|h|r) (1) (Shanyt) (WARRIOR)", -- [293]
+			"12:14:48 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124339) (|cffa335ee|Hitem:124339::::::::120:71::5:5:1798:40:1475:5850:3441:::|h[Greaves of the Ceaseless Vigil]|h|r) (1) (Shanyt) (WARRIOR)", -- [294]
+			"12:14:48 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124166) (|cffa335ee|Hitem:124166::::::::120:71::5:2:1798:1475:::|h[Pious Leggings]|h|r) (1) (Shanyt) (WARRIOR)", -- [295]
+			"12:14:48 - OnLootSlotCleared() (1) (nil) (1)", -- [296]
+			"12:14:48 - Event: (LOOT_CLOSED)", -- [297]
+			"12:14:48 - Event: (LOOT_CLOSED)", -- [298]
+			"12:14:48 - Comm received:^1^Slooted^T^N1^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [299]
+			"12:14:48 - Comm received:^1^Slooted^T^N1^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [300]
+			"12:14:49 - Storage:New (|cffa335ee|Hitem:124157::::::::120:71::5:2:1798:1475:::|h[Cowl of a Thousand Hungers]|h|r) (temp)", -- [301]
+			"12:14:49 - Storage: searching for item: (|cffa335ee|Hitem:124157::::::::120:71::5:2:1798:1475:::|h[Cowl of a Thousand Hungers]|h|r)", -- [302]
+			"12:14:49 - Found item at (2) (7)", -- [303]
+			"12:14:49 - Error - Couldn't find item", -- [304]
+			"12:14:49 - Storage:New (|cffa335ee|Hitem:124244::::::::120:71::5:4:1798:1475:5850:3441:::|h[Chestguard of Gnawing Desire]|h|r) (temp)", -- [305]
+			"12:14:49 - Storage: searching for item: (|cffa335ee|Hitem:124244::::::::120:71::5:4:1798:1475:5850:3441:::|h[Chestguard of Gnawing Desire]|h|r)", -- [306]
+			"12:14:49 - Found item at (2) (8)", -- [307]
+			"12:14:49 - Error - Couldn't find item", -- [308]
+			"12:14:49 - Storage:New (|cffa335ee|Hitem:124380::::::::120:71::5:2:1798:1475:::|h[Spur of the Great Devourer]|h|r) (temp)", -- [309]
+			"12:14:49 - Storage: searching for item: (|cffa335ee|Hitem:124380::::::::120:71::5:2:1798:1475:::|h[Spur of the Great Devourer]|h|r)", -- [310]
+			"12:14:49 - Found item at (2) (9)", -- [311]
+			"12:14:49 - Error - Couldn't find item", -- [312]
+			"12:14:50 - Storage:New (|cffa335ee|Hitem:124269::::::::120:71::5:2:1798:1475:::|h[Felblade Leggings]|h|r) (temp)", -- [313]
+			"12:14:50 - Storage: searching for item: (|cffa335ee|Hitem:124269::::::::120:71::5:2:1798:1475:::|h[Felblade Leggings]|h|r)", -- [314]
+			"12:14:50 - Found item at (2) (10)", -- [315]
+			"12:14:50 - Error - Couldn't find item", -- [316]
+			"12:14:50 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124157::::::::120:71::5:2:1798:1475:::|h[Cowl~`of~`a~`Thousand~`Hungers]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [317]
+			"12:14:50 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124244::::::::120:71::5:4:1798:1475:5850:3441:::|h[Chestguard~`of~`Gnawing~`Desire]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [318]
+			"12:14:50 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124380::::::::120:71::5:2:1798:1475:::|h[Spur~`of~`the~`Great~`Devourer]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [319]
+			"12:14:50 - Storage:New (|cffa335ee|Hitem:124339::::::::120:71::5:5:1798:40:1475:5850:3441:::|h[Greaves of the Ceaseless Vigil]|h|r) (temp)", -- [320]
+			"12:14:50 - Storage: searching for item: (|cffa335ee|Hitem:124339::::::::120:71::5:5:1798:40:1475:5850:3441:::|h[Greaves of the Ceaseless Vigil]|h|r)", -- [321]
+			"12:14:50 - Found item at (2) (11)", -- [322]
+			"12:14:50 - Error - Couldn't find item", -- [323]
+			"12:14:50 - Storage:New (|cffa335ee|Hitem:124166::::::::120:71::5:2:1798:1475:::|h[Pious Leggings]|h|r) (temp)", -- [324]
+			"12:14:50 - Storage: searching for item: (|cffa335ee|Hitem:124166::::::::120:71::5:2:1798:1475:::|h[Pious Leggings]|h|r)", -- [325]
+			"12:14:50 - Found item at (2) (12)", -- [326]
+			"12:14:50 - Error - Couldn't find item", -- [327]
+			"12:14:50 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124269::::::::120:71::5:2:1798:1475:::|h[Felblade~`Leggings]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [328]
+			"12:14:50 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124339::::::::120:71::5:5:1798:40:1475:5850:3441:::|h[Greaves~`of~`the~`Ceaseless~`Vigil]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [329]
+			"12:14:50 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124166::::::::120:71::5:2:1798:1475:::|h[Pious~`Leggings]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [330]
+			"12:15:40 - Event: (LOOT_READY) (true)", -- [331]
+			"12:15:40 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-93955-0002C70036) (27481)", -- [332]
+			"12:15:41 - OnLootSlotCleared() (1) (nil) (1)", -- [333]
+			"12:15:41 - Event: (LOOT_CLOSED)", -- [334]
+			"12:15:41 - Event: (LOOT_CLOSED)", -- [335]
+			"12:15:41 - Comm received:^1^Slooted^T^N1^S93955^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [336]
+			"12:15:41 - Comm received:^1^Slooted^T^N1^S93955^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [337]
+			"12:15:52 - Event: (ENCOUNTER_START) (1788) (Shadow-Lord Iskar) (15) (10)", -- [338]
+			"12:15:52 - UpdatePlayersData()", -- [339]
+			"12:16:41 - Event: (ENCOUNTER_END) (1788) (Shadow-Lord Iskar) (15) (10) (1)", -- [340]
+			"12:16:42 - Event: (LOOT_READY) (true)", -- [341]
+			"12:16:42 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-90316-0000470037) (250180)", -- [342]
+			"12:16:42 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124282::::::::120:71::5:2:1798:1475:::|h[Vestment of Illusory Might]|h|r) (4) (1) (Creature-0-3134-1448-26639-90316-0000470037) (1)", -- [343]
+			"12:16:42 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124294::::::::120:71::5:2:1798:1475:::|h[Coif of Untrue Sight]|h|r) (4) (1) (Creature-0-3134-1448-26639-90316-0000470037) (1)", -- [344]
+			"12:16:42 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r) (4) (1) (Creature-0-3134-1448-26639-90316-0000470037) (1)", -- [345]
+			"12:16:42 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r) (4) (1) (Creature-0-3134-1448-26639-90316-0000470037) (1)", -- [346]
+			"12:16:42 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124259::::::::120:71::5:2:1798:1475:::|h[Helm of Imagined Horrors]|h|r) (4) (1) (Creature-0-3134-1448-26639-90316-0000470037) (1)", -- [347]
+			"12:16:43 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124259::::::::120:71::5:2:1798:1475:::|h[Helm of Imagined Horrors]|h|r) (4)", -- [348]
+			"12:16:43 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r) (4)", -- [349]
+			"12:16:43 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r) (4)", -- [350]
+			"12:16:43 - Event: (LOOT_READY) (true)", -- [351]
+			"12:16:43 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-90316-0000470037) (250180)", -- [352]
+			"12:16:43 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124282::::::::120:71::5:2:1798:1475:::|h[Vestment of Illusory Might]|h|r) (4) (1) (Creature-0-3134-1448-26639-90316-0000470037) (1)", -- [353]
+			"12:16:43 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124294::::::::120:71::5:2:1798:1475:::|h[Coif of Untrue Sight]|h|r) (4) (1) (Creature-0-3134-1448-26639-90316-0000470037) (1)", -- [354]
+			"12:16:43 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124294::::::::120:71::5:2:1798:1475:::|h[Coif of Untrue Sight]|h|r) (4)", -- [355]
+			"12:16:43 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124282::::::::120:71::5:2:1798:1475:::|h[Vestment of Illusory Might]|h|r) (4)", -- [356]
+			"12:16:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124259) (|cffa335ee|Hitem:124259::::::::120:71::5:2:1798:1475:::|h[Helm of Imagined Horrors]|h|r) (1) (Shanyt) (WARRIOR)", -- [357]
+			"12:16:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124194) (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r) (1) (Shanyt) (WARRIOR)", -- [358]
+			"12:16:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124194) (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r) (1) (Shanyt) (WARRIOR)", -- [359]
+			"12:16:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124294) (|cffa335ee|Hitem:124294::::::::120:71::5:2:1798:1475:::|h[Coif of Untrue Sight]|h|r) (1) (Shanyt) (WARRIOR)", -- [360]
+			"12:16:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124282) (|cffa335ee|Hitem:124282::::::::120:71::5:2:1798:1475:::|h[Vestment of Illusory Might]|h|r) (1) (Shanyt) (WARRIOR)", -- [361]
+			"12:16:43 - OnLootSlotCleared() (1) (nil) (1)", -- [362]
+			"12:16:43 - Event: (LOOT_CLOSED)", -- [363]
+			"12:16:43 - Event: (LOOT_CLOSED)", -- [364]
+			"12:16:43 - Comm received:^1^Slooted^T^N1^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [365]
+			"12:16:43 - Comm received:^1^Slooted^T^N1^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [366]
+			"12:16:45 - Storage:New (|cffa335ee|Hitem:124259::::::::120:71::5:2:1798:1475:::|h[Helm of Imagined Horrors]|h|r) (temp)", -- [367]
+			"12:16:45 - Storage: searching for item: (|cffa335ee|Hitem:124259::::::::120:71::5:2:1798:1475:::|h[Helm of Imagined Horrors]|h|r)", -- [368]
+			"12:16:45 - Found item at (2) (13)", -- [369]
+			"12:16:45 - Error - Couldn't find item", -- [370]
+			"12:16:45 - Storage:New (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r) (temp)", -- [371]
+			"12:16:45 - Storage: searching for item: (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r)", -- [372]
+			"12:16:45 - Found item at (2) (14)", -- [373]
+			"12:16:45 - Found item at (2) (15)", -- [374]
+			"12:16:45 - Error - Couldn't find item", -- [375]
+			"12:16:45 - Storage:New (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r) (temp)", -- [376]
+			"12:16:45 - Storage: searching for item: (|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r)", -- [377]
+			"12:16:45 - Found item at (2) (14)", -- [378]
+			"12:16:45 - Found item at (2) (15)", -- [379]
+			"12:16:45 - Error - Couldn't find item", -- [380]
+			"12:16:45 - Storage:New (|cffa335ee|Hitem:124294::::::::120:71::5:2:1798:1475:::|h[Coif of Untrue Sight]|h|r) (temp)", -- [381]
+			"12:16:45 - Storage: searching for item: (|cffa335ee|Hitem:124294::::::::120:71::5:2:1798:1475:::|h[Coif of Untrue Sight]|h|r)", -- [382]
+			"12:16:45 - Found item at (2) (16)", -- [383]
+			"12:16:45 - Error - Couldn't find item", -- [384]
+			"12:16:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124259::::::::120:71::5:2:1798:1475:::|h[Helm~`of~`Imagined~`Horrors]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [385]
+			"12:16:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring~`of~`Foul~`Temptation]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [386]
+			"12:16:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring~`of~`Foul~`Temptation]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [387]
+			"12:16:45 - Storage:New (|cffa335ee|Hitem:124282::::::::120:71::5:2:1798:1475:::|h[Vestment of Illusory Might]|h|r) (temp)", -- [388]
+			"12:16:45 - Storage: searching for item: (|cffa335ee|Hitem:124282::::::::120:71::5:2:1798:1475:::|h[Vestment of Illusory Might]|h|r)", -- [389]
+			"12:16:45 - Found item at (2) (17)", -- [390]
+			"12:16:45 - Error - Couldn't find item", -- [391]
+			"12:16:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124294::::::::120:71::5:2:1798:1475:::|h[Coif~`of~`Untrue~`Sight]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [392]
+			"12:16:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124282::::::::120:71::5:2:1798:1475:::|h[Vestment~`of~`Illusory~`Might]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [393]
+			"12:17:10 - Event: (LOOT_READY) (true)", -- [394]
+			"12:17:10 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0) (1) (Creature-0-3134-1448-26639-95632-0004470037) (1)", -- [395]
+			"12:17:10 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0) (1) (Creature-0-3134-1448-26639-95632-0005C70037) (1)", -- [396]
+			"12:17:10 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0)", -- [397]
+			"12:17:10 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0)", -- [398]
+			"12:17:10 - Event: (LOOT_CLOSED)", -- [399]
+			"12:17:10 - Event: (LOOT_CLOSED)", -- [400]
+			"12:17:11 - Comm received:^1^Slooted^T^N1^S95632^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [401]
+			"12:17:11 - Comm received:^1^Slooted^T^N1^S95632^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [402]
+			"12:17:36 - Event: (LOOT_READY) (true)", -- [403]
+			"12:17:36 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0) (1) (Creature-0-3134-1448-26639-95636-0002C70037) (1)", -- [404]
+			"12:17:36 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0)", -- [405]
+			"12:17:36 - Event: (LOOT_CLOSED)", -- [406]
+			"12:17:36 - Event: (LOOT_CLOSED)", -- [407]
+			"12:17:36 - Comm received:^1^Slooted^T^N1^S95636^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [408]
+			"12:17:36 - Comm received:^1^Slooted^T^N1^S95636^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [409]
+			"12:17:44 - Event: (LOOT_READY) (true)", -- [410]
+			"12:17:44 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3134-1448-26639-95632-0003470037) (1)", -- [411]
+			"12:17:44 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0) (1) (Creature-0-3134-1448-26639-95632-0001C70037) (1)", -- [412]
+			"12:17:44 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0)", -- [413]
+			"12:17:45 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [414]
+			"12:17:45 - Event: (LOOT_CLOSED)", -- [415]
+			"12:17:45 - Event: (LOOT_CLOSED)", -- [416]
+			"12:17:45 - Comm received:^1^Slooted^T^N1^S95632^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [417]
+			"12:17:45 - Comm received:^1^Slooted^T^N1^S95632^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [418]
+			"12:17:53 - Event: (LOOT_READY) (true)", -- [419]
+			"12:17:53 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3134-1448-26639-95640-0004470037) (1)", -- [420]
+			"12:17:53 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [421]
+			"12:17:53 - Event: (LOOT_CLOSED)", -- [422]
+			"12:17:53 - Event: (LOOT_CLOSED)", -- [423]
+			"12:17:54 - Comm received:^1^Slooted^T^N1^S95640^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [424]
+			"12:17:54 - Comm received:^1^Slooted^T^N1^S95640^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [425]
+			"12:18:02 - Event: (LOOT_READY) (true)", -- [426]
+			"12:18:02 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0) (3) (Creature-0-3134-1448-26639-95640-0005470037) (1) (Creature-0-3134-1448-26639-95636-0004C70037) (1) (Creature-0-3134-1448-26639-95640-0004C70037) (1)", -- [427]
+			"12:18:02 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0)", -- [428]
+			"12:18:02 - Event: (LOOT_CLOSED)", -- [429]
+			"12:18:02 - Event: (LOOT_CLOSED)", -- [430]
+			"12:18:02 - Comm received:^1^Slooted^T^N1^S95640^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [431]
+			"12:18:02 - Comm received:^1^Slooted^T^N1^S95640^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [432]
+			"12:18:40 - Event: (LOOT_READY) (true)", -- [433]
+			"12:18:40 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3134-1448-26639-95603-0000470037) (1)", -- [434]
+			"12:18:40 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [435]
+			"12:18:40 - Event: (LOOT_CLOSED)", -- [436]
+			"12:18:40 - Event: (LOOT_CLOSED)", -- [437]
+			"12:18:41 - Comm received:^1^Slooted^T^N1^S95603^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [438]
+			"12:18:41 - Comm received:^1^Slooted^T^N1^S95603^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [439]
+			"12:19:04 - Event: (ENCOUNTER_START) (1794) (Socrethar the Eternal) (15) (10)", -- [440]
+			"12:19:04 - UpdatePlayersData()", -- [441]
+			"12:19:17 - Event: (ENCOUNTER_END) (1794) (Socrethar the Eternal) (15) (10) (1)", -- [442]
+			"12:19:25 - Event: (LOOT_READY) (true)", -- [443]
+			"12:19:25 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3134-1448-26639-243567-0000470586) (274876)", -- [444]
+			"12:19:25 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124255::::::::120:71::5:2:1798:1475:::|h[Oathclaw Gauntlets]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [445]
+			"12:19:25 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:139626::::::::120:71::5:2:1798:1475:::|h[Ferroleather Gloves]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [446]
+			"12:19:25 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124255::::::::120:71::5:3:1798:41:1475:::|h[Oathclaw Gauntlets]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [447]
+			"12:19:25 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124233::::::::120:71::5:2:1798:1475:::|h[Demonic Phylactery]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [448]
+			"12:19:25 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124141::::::::120:71::5:2:1798:1475:::|h[Drape of Beckoned Souls]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [449]
+			"12:19:25 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124225::::::::120:71::5:3:1798:40:1475:::|h[Soul Capacitor]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [450]
+			"12:19:25 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124225::::::::120:71::5:3:1798:40:1475:::|h[Soul Capacitor]|h|r) (4)", -- [451]
+			"12:19:25 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124141::::::::120:71::5:2:1798:1475:::|h[Drape of Beckoned Souls]|h|r) (4)", -- [452]
+			"12:19:25 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124233::::::::120:71::5:2:1798:1475:::|h[Demonic Phylactery]|h|r) (4)", -- [453]
+			"12:19:25 - Event: (LOOT_READY) (true)", -- [454]
+			"12:19:25 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3134-1448-26639-243567-0000470586) (274876)", -- [455]
+			"12:19:25 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124255::::::::120:71::5:2:1798:1475:::|h[Oathclaw Gauntlets]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [456]
+			"12:19:25 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:139626::::::::120:71::5:2:1798:1475:::|h[Ferroleather Gloves]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [457]
+			"12:19:25 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124255::::::::120:71::5:3:1798:41:1475:::|h[Oathclaw Gauntlets]|h|r) (4) (1) (GameObject-0-3134-1448-26639-243567-0000470586) (1)", -- [458]
+			"12:19:25 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124255::::::::120:71::5:3:1798:41:1475:::|h[Oathclaw Gauntlets]|h|r) (4)", -- [459]
+			"12:19:25 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:139626::::::::120:71::5:2:1798:1475:::|h[Ferroleather Gloves]|h|r) (4)", -- [460]
+			"12:19:25 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124255::::::::120:71::5:2:1798:1475:::|h[Oathclaw Gauntlets]|h|r) (4)", -- [461]
+			"12:19:25 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124225) (|cffa335ee|Hitem:124225::::::::120:71::5:3:1798:40:1475:::|h[Soul Capacitor]|h|r) (1) (Shanyt) (WARRIOR)", -- [462]
+			"12:19:25 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124141) (|cffa335ee|Hitem:124141::::::::120:71::5:2:1798:1475:::|h[Drape of Beckoned Souls]|h|r) (1) (Shanyt) (WARRIOR)", -- [463]
+			"12:19:25 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124233) (|cffa335ee|Hitem:124233::::::::120:71::5:2:1798:1475:::|h[Demonic Phylactery]|h|r) (1) (Shanyt) (WARRIOR)", -- [464]
+			"12:19:25 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124255) (|cffa335ee|Hitem:124255::::::::120:71::5:3:1798:41:1475:::|h[Oathclaw Gauntlets]|h|r) (1) (Shanyt) (WARRIOR)", -- [465]
+			"12:19:25 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (139626) (|cffa335ee|Hitem:139626::::::::120:71::5:2:1798:1475:::|h[Ferroleather Gloves]|h|r) (1) (Shanyt) (WARRIOR)", -- [466]
+			"12:19:25 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124255) (|cffa335ee|Hitem:124255::::::::120:71::5:2:1798:1475:::|h[Oathclaw Gauntlets]|h|r) (1) (Shanyt) (WARRIOR)", -- [467]
+			"12:19:25 - OnLootSlotCleared() (1) (nil) (1)", -- [468]
+			"12:19:25 - Event: (LOOT_CLOSED)", -- [469]
+			"12:19:25 - Event: (LOOT_CLOSED)", -- [470]
+			"12:19:26 - Comm received:^1^Slooted^T^N1^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [471]
+			"12:19:26 - Comm received:^1^Slooted^T^N1^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [472]
+			"12:19:27 - Storage:New (|cffa335ee|Hitem:124225::::::::120:71::5:3:1798:40:1475:::|h[Soul Capacitor]|h|r) (temp)", -- [473]
+			"12:19:27 - Storage: searching for item: (|cffa335ee|Hitem:124225::::::::120:71::5:3:1798:40:1475:::|h[Soul Capacitor]|h|r)", -- [474]
+			"12:19:27 - Found item at (2) (21)", -- [475]
+			"12:19:27 - Error - Couldn't find item", -- [476]
+			"12:19:27 - Storage:New (|cffa335ee|Hitem:124141::::::::120:71::5:2:1798:1475:::|h[Drape of Beckoned Souls]|h|r) (temp)", -- [477]
+			"12:19:27 - Storage: searching for item: (|cffa335ee|Hitem:124141::::::::120:71::5:2:1798:1475:::|h[Drape of Beckoned Souls]|h|r)", -- [478]
+			"12:19:27 - Found item at (2) (22)", -- [479]
+			"12:19:27 - Error - Couldn't find item", -- [480]
+			"12:19:27 - Storage:New (|cffa335ee|Hitem:124233::::::::120:71::5:2:1798:1475:::|h[Demonic Phylactery]|h|r) (temp)", -- [481]
+			"12:19:27 - Storage: searching for item: (|cffa335ee|Hitem:124233::::::::120:71::5:2:1798:1475:::|h[Demonic Phylactery]|h|r)", -- [482]
+			"12:19:27 - Found item at (2) (23)", -- [483]
+			"12:19:27 - Error - Couldn't find item", -- [484]
+			"12:19:27 - Storage:New (|cffa335ee|Hitem:124255::::::::120:71::5:3:1798:41:1475:::|h[Oathclaw Gauntlets]|h|r) (temp)", -- [485]
+			"12:19:27 - Storage: searching for item: (|cffa335ee|Hitem:124255::::::::120:71::5:3:1798:41:1475:::|h[Oathclaw Gauntlets]|h|r)", -- [486]
+			"12:19:27 - Found item at (2) (24)", -- [487]
+			"12:19:27 - Error - Couldn't find item", -- [488]
+			"12:19:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124225::::::::120:71::5:3:1798:40:1475:::|h[Soul~`Capacitor]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [489]
+			"12:19:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124141::::::::120:71::5:2:1798:1475:::|h[Drape~`of~`Beckoned~`Souls]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [490]
+			"12:19:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124233::::::::120:71::5:2:1798:1475:::|h[Demonic~`Phylactery]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [491]
+			"12:19:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124255::::::::120:71::5:3:1798:41:1475:::|h[Oathclaw~`Gauntlets]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [492]
+			"12:19:27 - Storage:New (|cffa335ee|Hitem:139626::::::::120:71::5:2:1798:1475:::|h[Ferroleather Gloves]|h|r) (temp)", -- [493]
+			"12:19:27 - Storage: searching for item: (|cffa335ee|Hitem:139626::::::::120:71::5:2:1798:1475:::|h[Ferroleather Gloves]|h|r)", -- [494]
+			"12:19:27 - Found item at (2) (25)", -- [495]
+			"12:19:27 - Error - Couldn't find item", -- [496]
+			"12:19:27 - Storage:New (|cffa335ee|Hitem:124255::::::::120:71::5:2:1798:1475:::|h[Oathclaw Gauntlets]|h|r) (temp)", -- [497]
+			"12:19:27 - Storage: searching for item: (|cffa335ee|Hitem:124255::::::::120:71::5:2:1798:1475:::|h[Oathclaw Gauntlets]|h|r)", -- [498]
+			"12:19:27 - Found item at (2) (26)", -- [499]
+			"12:19:27 - Error - Couldn't find item", -- [500]
+			"12:19:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:139626::::::::120:71::5:2:1798:1475:::|h[Ferroleather~`Gloves]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [501]
+			"12:19:27 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124255::::::::120:71::5:2:1798:1475:::|h[Oathclaw~`Gauntlets]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [502]
+			"12:21:23 - Event: (LOOT_READY) (true)", -- [503]
+			"12:21:23 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3134-1448-26639-93162-0001C70036) (1)", -- [504]
+			"12:21:23 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [505]
+			"12:21:23 - Event: (LOOT_CLOSED)", -- [506]
+			"12:21:23 - Event: (LOOT_CLOSED)", -- [507]
+			"12:21:24 - Comm received:^1^Slooted^T^N1^S93162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [508]
+			"12:21:24 - Comm received:^1^Slooted^T^N1^S93162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [509]
+			"12:21:58 - Event: (LOOT_READY) (true)", -- [510]
+			"12:21:58 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0) (1) (Creature-0-3134-1448-26639-91648-0000C70037) (1)", -- [511]
+			"12:21:58 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0)", -- [512]
+			"12:21:58 - Event: (LOOT_CLOSED)", -- [513]
+			"12:21:58 - Event: (LOOT_CLOSED)", -- [514]
+			"12:21:59 - Comm received:^1^Slooted^T^N1^S91648^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [515]
+			"12:21:59 - Comm received:^1^Slooted^T^N1^S91648^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [516]
+			"12:22:02 - Event: (LOOT_READY) (true)", -- [517]
+			"12:22:02 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3134-1448-26639-91646-0002470037) (1)", -- [518]
+			"12:22:02 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [519]
+			"12:22:02 - Event: (LOOT_CLOSED)", -- [520]
+			"12:22:02 - Event: (LOOT_CLOSED)", -- [521]
+			"12:22:03 - Comm received:^1^Slooted^T^N1^S91646^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [522]
+			"12:22:03 - Comm received:^1^Slooted^T^N1^S91646^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [523]
+			"12:22:08 - Event: (LOOT_READY) (true)", -- [524]
+			"12:22:08 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0) (1) (Creature-0-3134-1448-26639-91520-0000470036) (1)", -- [525]
+			"12:22:08 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0)", -- [526]
+			"12:22:08 - Event: (LOOT_CLOSED)", -- [527]
+			"12:22:08 - Event: (LOOT_CLOSED)", -- [528]
+			"12:22:08 - Comm received:^1^Slooted^T^N1^S91520^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [529]
+			"12:22:08 - Comm received:^1^Slooted^T^N1^S91520^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [530]
+			"12:22:11 - Event: (ENCOUNTER_START) (1784) (Tyrant Velhari) (15) (10)", -- [531]
+			"12:22:11 - UpdatePlayersData()", -- [532]
+			"12:22:20 - Event: (ENCOUNTER_END) (1784) (Tyrant Velhari) (15) (10) (1)", -- [533]
+			"12:22:21 - Event: (LOOT_READY) (true)", -- [534]
+			"12:22:21 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-90269-0000470036) (272187)", -- [535]
+			"12:22:21 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124242::::::::120:71::5:4:1798:1475:5850:3441:::|h[Tyrant's Decree]|h|r) (4) (1) (Creature-0-3134-1448-26639-90269-0000470036) (1)", -- [536]
+			"12:22:21 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124376::::::::120:71::5:2:1798:1475:::|h[Warhammer of Arrogance]|h|r) (4) (1) (Creature-0-3134-1448-26639-90269-0000470036) (1)", -- [537]
+			"12:22:21 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124326::::::::120:71::5:2:1798:1475:::|h[Gauntlets of Derision]|h|r) (4) (1) (Creature-0-3134-1448-26639-90269-0000470036) (1)", -- [538]
+			"12:22:21 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124251::::::::120:71::5:4:1798:1475:5850:3441:::|h[Oppressor's Merciless Treads]|h|r) (4) (1) (Creature-0-3134-1448-26639-90269-0000470036) (1)", -- [539]
+			"12:22:21 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124219::::::::120:71::5:3:1798:41:1475:::|h[Choker of Sneering Superiority]|h|r) (4) (1) (Creature-0-3134-1448-26639-90269-0000470036) (1)", -- [540]
+			"12:22:21 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124219::::::::120:71::5:3:1798:41:1475:::|h[Choker of Sneering Superiority]|h|r) (4)", -- [541]
+			"12:22:21 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124251::::::::120:71::5:4:1798:1475:5850:3441:::|h[Oppressor's Merciless Treads]|h|r) (4)", -- [542]
+			"12:22:21 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124326::::::::120:71::5:2:1798:1475:::|h[Gauntlets of Derision]|h|r) (4)", -- [543]
+			"12:22:21 - Event: (LOOT_READY) (true)", -- [544]
+			"12:22:21 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-90269-0000470036) (272187)", -- [545]
+			"12:22:21 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124242::::::::120:71::5:4:1798:1475:5850:3441:::|h[Tyrant's Decree]|h|r) (4) (1) (Creature-0-3134-1448-26639-90269-0000470036) (1)", -- [546]
+			"12:22:21 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124376::::::::120:71::5:2:1798:1475:::|h[Warhammer of Arrogance]|h|r) (4) (1) (Creature-0-3134-1448-26639-90269-0000470036) (1)", -- [547]
+			"12:22:21 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124376::::::::120:71::5:2:1798:1475:::|h[Warhammer of Arrogance]|h|r) (4)", -- [548]
+			"12:22:21 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124242::::::::120:71::5:4:1798:1475:5850:3441:::|h[Tyrant's Decree]|h|r) (4)", -- [549]
+			"12:22:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124219) (|cffa335ee|Hitem:124219::::::::120:71::5:3:1798:41:1475:::|h[Choker of Sneering Superiority]|h|r) (1) (Shanyt) (WARRIOR)", -- [550]
+			"12:22:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124251) (|cffa335ee|Hitem:124251::::::::120:71::5:4:1798:1475:5850:3441:::|h[Oppressor's Merciless Treads]|h|r) (1) (Shanyt) (WARRIOR)", -- [551]
+			"12:22:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124326) (|cffa335ee|Hitem:124326::::::::120:71::5:2:1798:1475:::|h[Gauntlets of Derision]|h|r) (1) (Shanyt) (WARRIOR)", -- [552]
+			"12:22:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124376) (|cffa335ee|Hitem:124376::::::::120:71::5:2:1798:1475:::|h[Warhammer of Arrogance]|h|r) (1) (Shanyt) (WARRIOR)", -- [553]
+			"12:22:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124242) (|cffa335ee|Hitem:124242::::::::120:71::5:4:1798:1475:5850:3441:::|h[Tyrant's Decree]|h|r) (1) (Shanyt) (WARRIOR)", -- [554]
+			"12:22:21 - OnLootSlotCleared() (1) (nil) (1)", -- [555]
+			"12:22:21 - Event: (LOOT_CLOSED)", -- [556]
+			"12:22:21 - Event: (LOOT_CLOSED)", -- [557]
+			"12:22:22 - Comm received:^1^Slooted^T^N1^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [558]
+			"12:22:22 - Comm received:^1^Slooted^T^N1^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [559]
+			"12:22:23 - Storage:New (|cffa335ee|Hitem:124219::::::::120:71::5:3:1798:41:1475:::|h[Choker of Sneering Superiority]|h|r) (temp)", -- [560]
+			"12:22:23 - Storage: searching for item: (|cffa335ee|Hitem:124219::::::::120:71::5:3:1798:41:1475:::|h[Choker of Sneering Superiority]|h|r)", -- [561]
+			"12:22:23 - Found item at (2) (27)", -- [562]
+			"12:22:23 - Error - Couldn't find item", -- [563]
+			"12:22:23 - Storage:New (|cffa335ee|Hitem:124251::::::::120:71::5:4:1798:1475:5850:3441:::|h[Oppressor's Merciless Treads]|h|r) (temp)", -- [564]
+			"12:22:23 - Storage: searching for item: (|cffa335ee|Hitem:124251::::::::120:71::5:4:1798:1475:5850:3441:::|h[Oppressor's Merciless Treads]|h|r)", -- [565]
+			"12:22:23 - Found item at (2) (28)", -- [566]
+			"12:22:23 - Error - Couldn't find item", -- [567]
+			"12:22:23 - Storage:New (|cffa335ee|Hitem:124326::::::::120:71::5:2:1798:1475:::|h[Gauntlets of Derision]|h|r) (temp)", -- [568]
+			"12:22:23 - Storage: searching for item: (|cffa335ee|Hitem:124326::::::::120:71::5:2:1798:1475:::|h[Gauntlets of Derision]|h|r)", -- [569]
+			"12:22:23 - Found item at (2) (29)", -- [570]
+			"12:22:23 - Error - Couldn't find item", -- [571]
+			"12:22:23 - Storage:New (|cffa335ee|Hitem:124376::::::::120:71::5:2:1798:1475:::|h[Warhammer of Arrogance]|h|r) (temp)", -- [572]
+			"12:22:23 - Storage: searching for item: (|cffa335ee|Hitem:124376::::::::120:71::5:2:1798:1475:::|h[Warhammer of Arrogance]|h|r)", -- [573]
+			"12:22:23 - Found item at (2) (30)", -- [574]
+			"12:22:23 - Error - Couldn't find item", -- [575]
+			"12:22:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124219::::::::120:71::5:3:1798:41:1475:::|h[Choker~`of~`Sneering~`Superiority]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [576]
+			"12:22:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124251::::::::120:71::5:4:1798:1475:5850:3441:::|h[Oppressor's~`Merciless~`Treads]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [577]
+			"12:22:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124326::::::::120:71::5:2:1798:1475:::|h[Gauntlets~`of~`Derision]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [578]
+			"12:22:23 - Storage:New (|cffa335ee|Hitem:124242::::::::120:71::5:4:1798:1475:5850:3441:::|h[Tyrant's Decree]|h|r) (temp)", -- [579]
+			"12:22:23 - Storage: searching for item: (|cffa335ee|Hitem:124242::::::::120:71::5:4:1798:1475:5850:3441:::|h[Tyrant's Decree]|h|r)", -- [580]
+			"12:22:23 - Found item at (3) (1)", -- [581]
+			"12:22:23 - Error - Couldn't find item", -- [582]
+			"12:22:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124376::::::::120:71::5:2:1798:1475:::|h[Warhammer~`of~`Arrogance]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [583]
+			"12:22:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124242::::::::120:71::5:4:1798:1475:5850:3441:::|h[Tyrant's~`Decree]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [584]
+			"12:23:44 - Event: (LOOT_READY) (true)", -- [585]
+			"12:23:44 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3134-1448-26639-93913-000147003C) (1)", -- [586]
+			"12:23:44 - Adding to self.lootSlotInfo (2) (|cff1eff00|Hitem:116687::::::::120:71::5:2:164:551:::|h[Oshu'gun Amulet of the Aurora]|h|r) (2) (1) (Creature-0-3134-1448-26639-93913-000147003C) (1)", -- [587]
+			"12:23:45 - OnLootSlotCleared() (2) (|cff1eff00|Hitem:116687::::::::120:71::5:2:164:551:::|h[Oshu'gun Amulet of the Aurora]|h|r) (2)", -- [588]
+			"12:23:45 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [589]
+			"12:23:45 - Event: (LOOT_CLOSED)", -- [590]
+			"12:23:45 - Event: (LOOT_CLOSED)", -- [591]
+			"12:23:45 - Comm received:^1^Slooted^T^N1^S93913^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [592]
+			"12:23:45 - Comm received:^1^Slooted^T^N1^S93913^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [593]
+			"12:23:47 - Storage:New (|cff1eff00|Hitem:116687::::::::120:71::5:2:164:551:::|h[Oshu'gun Amulet of the Aurora]|h|r) (temp)", -- [594]
+			"12:23:47 - Storage: searching for item: (|cff1eff00|Hitem:116687::::::::120:71::5:2:164:551:::|h[Oshu'gun Amulet of the Aurora]|h|r)", -- [595]
+			"12:23:47 - Found item at (3) (2)", -- [596]
+			"12:23:47 - Comm received:^1^Stradable^T^N1^S|cff1eff00|Hitem:116687::::::::120:71::5:2:164:551:::|h[Oshu'gun~`Amulet~`of~`the~`Aurora]|h|r^N2^S93913^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [597]
+			"12:24:24 - Event: (ENCOUNTER_START) (1800) (Xhul'horac) (15) (10)", -- [598]
+			"12:24:24 - UpdatePlayersData()", -- [599]
+			"12:24:30 - Event: (ENCOUNTER_END) (1800) (Xhul'horac) (15) (10) (1)", -- [600]
+			"12:24:31 - Event: (LOOT_READY) (true)", -- [601]
+			"12:24:31 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-93068-0000470036) (253233)", -- [602]
+			"12:24:31 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124272::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Oathclaw Mantle]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [603]
+			"12:24:31 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124274::::::::120:71::5:4:1798:1475:5850:3441:::|h[Felblade Spaulders]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [604]
+			"12:24:31 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:139629::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ferroleather Spaulders]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [605]
+			"12:24:31 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124353::::::::120:71::5:2:1798:1475:::|h[Breach-Scarred Wristplates]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [606]
+			"12:24:31 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124374::::::::120:71::5:4:1798:1475:5850:3441:::|h[Fiendsbreath Warmace]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [607]
+			"12:24:31 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124147::::::::120:71::5:3:1798:564:1475:::|h[Void Lord's Wizened Cloak]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [608]
+			"12:24:31 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124147::::::::120:71::5:3:1798:564:1475:::|h[Void Lord's Wizened Cloak]|h|r) (4)", -- [609]
+			"12:24:31 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124374::::::::120:71::5:4:1798:1475:5850:3441:::|h[Fiendsbreath Warmace]|h|r) (4)", -- [610]
+			"12:24:31 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124353::::::::120:71::5:2:1798:1475:::|h[Breach-Scarred Wristplates]|h|r) (4)", -- [611]
+			"12:24:31 - Event: (LOOT_READY) (true)", -- [612]
+			"12:24:31 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-93068-0000470036) (253233)", -- [613]
+			"12:24:31 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124272::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Oathclaw Mantle]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [614]
+			"12:24:31 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124274::::::::120:71::5:4:1798:1475:5850:3441:::|h[Felblade Spaulders]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [615]
+			"12:24:31 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:139629::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ferroleather Spaulders]|h|r) (4) (1) (Creature-0-3134-1448-26639-93068-0000470036) (1)", -- [616]
+			"12:24:31 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:139629::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ferroleather Spaulders]|h|r) (4)", -- [617]
+			"12:24:31 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124274::::::::120:71::5:4:1798:1475:5850:3441:::|h[Felblade Spaulders]|h|r) (4)", -- [618]
+			"12:24:31 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124272::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Oathclaw Mantle]|h|r) (4)", -- [619]
+			"12:24:31 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124147) (|cffa335ee|Hitem:124147::::::::120:71::5:3:1798:564:1475:::|h[Void Lord's Wizened Cloak]|h|r) (1) (Shanyt) (WARRIOR)", -- [620]
+			"12:24:31 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124374) (|cffa335ee|Hitem:124374::::::::120:71::5:4:1798:1475:5850:3441:::|h[Fiendsbreath Warmace]|h|r) (1) (Shanyt) (WARRIOR)", -- [621]
+			"12:24:31 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124353) (|cffa335ee|Hitem:124353::::::::120:71::5:2:1798:1475:::|h[Breach-Scarred Wristplates]|h|r) (1) (Shanyt) (WARRIOR)", -- [622]
+			"12:24:31 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (139629) (|cffa335ee|Hitem:139629::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ferroleather Spaulders]|h|r) (1) (Shanyt) (WARRIOR)", -- [623]
+			"12:24:31 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124274) (|cffa335ee|Hitem:124274::::::::120:71::5:4:1798:1475:5850:3441:::|h[Felblade Spaulders]|h|r) (1) (Shanyt) (WARRIOR)", -- [624]
+			"12:24:31 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124272) (|cffa335ee|Hitem:124272::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Oathclaw Mantle]|h|r) (1) (Shanyt) (WARRIOR)", -- [625]
+			"12:24:31 - OnLootSlotCleared() (1) (nil) (1)", -- [626]
+			"12:24:31 - Event: (LOOT_CLOSED)", -- [627]
+			"12:24:31 - Event: (LOOT_CLOSED)", -- [628]
+			"12:24:32 - Comm received:^1^Slooted^T^N1^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [629]
+			"12:24:32 - Comm received:^1^Slooted^T^N1^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [630]
+			"12:24:33 - Storage:New (|cffa335ee|Hitem:124147::::::::120:71::5:3:1798:564:1475:::|h[Void Lord's Wizened Cloak]|h|r) (temp)", -- [631]
+			"12:24:33 - Storage: searching for item: (|cffa335ee|Hitem:124147::::::::120:71::5:3:1798:564:1475:::|h[Void Lord's Wizened Cloak]|h|r)", -- [632]
+			"12:24:33 - Found item at (3) (3)", -- [633]
+			"12:24:33 - Error - Couldn't find item", -- [634]
+			"12:24:33 - Storage:New (|cffa335ee|Hitem:124374::::::::120:71::5:4:1798:1475:5850:3441:::|h[Fiendsbreath Warmace]|h|r) (temp)", -- [635]
+			"12:24:33 - Storage: searching for item: (|cffa335ee|Hitem:124374::::::::120:71::5:4:1798:1475:5850:3441:::|h[Fiendsbreath Warmace]|h|r)", -- [636]
+			"12:24:33 - Found item at (3) (4)", -- [637]
+			"12:24:33 - Error - Couldn't find item", -- [638]
+			"12:24:33 - Storage:New (|cffa335ee|Hitem:124353::::::::120:71::5:2:1798:1475:::|h[Breach-Scarred Wristplates]|h|r) (temp)", -- [639]
+			"12:24:33 - Storage: searching for item: (|cffa335ee|Hitem:124353::::::::120:71::5:2:1798:1475:::|h[Breach-Scarred Wristplates]|h|r)", -- [640]
+			"12:24:33 - Found item at (3) (5)", -- [641]
+			"12:24:33 - Error - Couldn't find item", -- [642]
+			"12:24:33 - Storage:New (|cffa335ee|Hitem:139629::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ferroleather Spaulders]|h|r) (temp)", -- [643]
+			"12:24:33 - Storage: searching for item: (|cffa335ee|Hitem:139629::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ferroleather Spaulders]|h|r)", -- [644]
+			"12:24:33 - Found item at (3) (6)", -- [645]
+			"12:24:33 - Error - Couldn't find item", -- [646]
+			"12:24:33 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124147::::::::120:71::5:3:1798:564:1475:::|h[Void~`Lord's~`Wizened~`Cloak]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [647]
+			"12:24:33 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124374::::::::120:71::5:4:1798:1475:5850:3441:::|h[Fiendsbreath~`Warmace]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [648]
+			"12:24:33 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124353::::::::120:71::5:2:1798:1475:::|h[Breach-Scarred~`Wristplates]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [649]
+			"12:24:33 - Storage:New (|cffa335ee|Hitem:124274::::::::120:71::5:4:1798:1475:5850:3441:::|h[Felblade Spaulders]|h|r) (temp)", -- [650]
+			"12:24:33 - Storage: searching for item: (|cffa335ee|Hitem:124274::::::::120:71::5:4:1798:1475:5850:3441:::|h[Felblade Spaulders]|h|r)", -- [651]
+			"12:24:33 - Found item at (3) (7)", -- [652]
+			"12:24:33 - Error - Couldn't find item", -- [653]
+			"12:24:33 - Storage:New (|cffa335ee|Hitem:124272::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Oathclaw Mantle]|h|r) (temp)", -- [654]
+			"12:24:33 - Storage: searching for item: (|cffa335ee|Hitem:124272::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Oathclaw Mantle]|h|r)", -- [655]
+			"12:24:33 - Found item at (3) (8)", -- [656]
+			"12:24:33 - Error - Couldn't find item", -- [657]
+			"12:24:33 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:139629::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ferroleather~`Spaulders]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [658]
+			"12:24:33 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124274::::::::120:71::5:4:1798:1475:5850:3441:::|h[Felblade~`Spaulders]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [659]
+			"12:24:33 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124272::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Oathclaw~`Mantle]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [660]
+			"12:26:04 - Event: (ENCOUNTER_START) (1777) (Fel Lord Zakuun) (15) (10)", -- [661]
+			"12:26:04 - UpdatePlayersData()", -- [662]
+			"12:26:10 - Event: (ENCOUNTER_END) (1777) (Fel Lord Zakuun) (15) (10) (1)", -- [663]
+			"12:26:10 - Event: (LOOT_READY) (true)", -- [664]
+			"12:26:10 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-89890-0000470036) (252139)", -- [665]
+			"12:26:10 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124368::::::::120:71::5:2:1798:1475:::|h[Demonblade Eviscerator]|h|r) (4) (1) (Creature-0-3134-1448-26639-89890-0000470036) (1)", -- [666]
+			"12:26:10 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124203::::::::120:71::5:2:1798:1475:::|h[Zakuun's Signet of Command]|h|r) (4) (1) (Creature-0-3134-1448-26639-89890-0000470036) (1)", -- [667]
+			"12:26:10 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124265::::::::120:71::5:2:1798:1475:::|h[Leggings of Eternal Terror]|h|r) (4) (1) (Creature-0-3134-1448-26639-89890-0000470036) (1)", -- [668]
+			"12:26:10 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124280::::::::120:71::5:4:1798:1475:5850:3441:::|h[Manacles of the Multitudes]|h|r) (4) (1) (Creature-0-3134-1448-26639-89890-0000470036) (1)", -- [669]
+			"12:26:10 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124369::::::::120:71::5:4:1798:1475:5850:3441:::|h[Mindscythe of the Legion]|h|r) (4) (1) (Creature-0-3134-1448-26639-89890-0000470036) (1)", -- [670]
+			"12:26:10 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124369::::::::120:71::5:4:1798:1475:5850:3441:::|h[Mindscythe of the Legion]|h|r) (4)", -- [671]
+			"12:26:10 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124280::::::::120:71::5:4:1798:1475:5850:3441:::|h[Manacles of the Multitudes]|h|r) (4)", -- [672]
+			"12:26:10 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124265::::::::120:71::5:2:1798:1475:::|h[Leggings of Eternal Terror]|h|r) (4)", -- [673]
+			"12:26:10 - Event: (LOOT_READY) (true)", -- [674]
+			"12:26:10 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-89890-0000470036) (252139)", -- [675]
+			"12:26:10 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124368::::::::120:71::5:2:1798:1475:::|h[Demonblade Eviscerator]|h|r) (4) (1) (Creature-0-3134-1448-26639-89890-0000470036) (1)", -- [676]
+			"12:26:10 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124203::::::::120:71::5:2:1798:1475:::|h[Zakuun's Signet of Command]|h|r) (4) (1) (Creature-0-3134-1448-26639-89890-0000470036) (1)", -- [677]
+			"12:26:10 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124203::::::::120:71::5:2:1798:1475:::|h[Zakuun's Signet of Command]|h|r) (4)", -- [678]
+			"12:26:11 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124368::::::::120:71::5:2:1798:1475:::|h[Demonblade Eviscerator]|h|r) (4)", -- [679]
+			"12:26:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124369) (|cffa335ee|Hitem:124369::::::::120:71::5:4:1798:1475:5850:3441:::|h[Mindscythe of the Legion]|h|r) (1) (Shanyt) (WARRIOR)", -- [680]
+			"12:26:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124280) (|cffa335ee|Hitem:124280::::::::120:71::5:4:1798:1475:5850:3441:::|h[Manacles of the Multitudes]|h|r) (1) (Shanyt) (WARRIOR)", -- [681]
+			"12:26:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124265) (|cffa335ee|Hitem:124265::::::::120:71::5:2:1798:1475:::|h[Leggings of Eternal Terror]|h|r) (1) (Shanyt) (WARRIOR)", -- [682]
+			"12:26:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124203) (|cffa335ee|Hitem:124203::::::::120:71::5:2:1798:1475:::|h[Zakuun's Signet of Command]|h|r) (1) (Shanyt) (WARRIOR)", -- [683]
+			"12:26:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124368) (|cffa335ee|Hitem:124368::::::::120:71::5:2:1798:1475:::|h[Demonblade Eviscerator]|h|r) (1) (Shanyt) (WARRIOR)", -- [684]
+			"12:26:11 - OnLootSlotCleared() (1) (nil) (1)", -- [685]
+			"12:26:11 - Event: (LOOT_CLOSED)", -- [686]
+			"12:26:11 - Event: (LOOT_CLOSED)", -- [687]
+			"12:26:11 - Comm received:^1^Slooted^T^N1^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [688]
+			"12:26:11 - Comm received:^1^Slooted^T^N1^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [689]
+			"12:26:12 - Storage:New (|cffa335ee|Hitem:124369::::::::120:71::5:4:1798:1475:5850:3441:::|h[Mindscythe of the Legion]|h|r) (temp)", -- [690]
+			"12:26:12 - Storage: searching for item: (|cffa335ee|Hitem:124369::::::::120:71::5:4:1798:1475:5850:3441:::|h[Mindscythe of the Legion]|h|r)", -- [691]
+			"12:26:12 - Found item at (3) (9)", -- [692]
+			"12:26:12 - Error - Couldn't find item", -- [693]
+			"12:26:12 - Storage:New (|cffa335ee|Hitem:124280::::::::120:71::5:4:1798:1475:5850:3441:::|h[Manacles of the Multitudes]|h|r) (temp)", -- [694]
+			"12:26:12 - Storage: searching for item: (|cffa335ee|Hitem:124280::::::::120:71::5:4:1798:1475:5850:3441:::|h[Manacles of the Multitudes]|h|r)", -- [695]
+			"12:26:12 - Found item at (3) (10)", -- [696]
+			"12:26:12 - Error - Couldn't find item", -- [697]
+			"12:26:12 - Storage:New (|cffa335ee|Hitem:124265::::::::120:71::5:2:1798:1475:::|h[Leggings of Eternal Terror]|h|r) (temp)", -- [698]
+			"12:26:12 - Storage: searching for item: (|cffa335ee|Hitem:124265::::::::120:71::5:2:1798:1475:::|h[Leggings of Eternal Terror]|h|r)", -- [699]
+			"12:26:12 - Found item at (3) (11)", -- [700]
+			"12:26:12 - Error - Couldn't find item", -- [701]
+			"12:26:12 - Storage:New (|cffa335ee|Hitem:124203::::::::120:71::5:2:1798:1475:::|h[Zakuun's Signet of Command]|h|r) (temp)", -- [702]
+			"12:26:12 - Storage: searching for item: (|cffa335ee|Hitem:124203::::::::120:71::5:2:1798:1475:::|h[Zakuun's Signet of Command]|h|r)", -- [703]
+			"12:26:12 - Found item at (3) (12)", -- [704]
+			"12:26:12 - Error - Couldn't find item", -- [705]
+			"12:26:12 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124369::::::::120:71::5:4:1798:1475:5850:3441:::|h[Mindscythe~`of~`the~`Legion]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [706]
+			"12:26:12 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124280::::::::120:71::5:4:1798:1475:5850:3441:::|h[Manacles~`of~`the~`Multitudes]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [707]
+			"12:26:12 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124265::::::::120:71::5:2:1798:1475:::|h[Leggings~`of~`Eternal~`Terror]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [708]
+			"12:26:13 - Storage:New (|cffa335ee|Hitem:124368::::::::120:71::5:2:1798:1475:::|h[Demonblade Eviscerator]|h|r) (temp)", -- [709]
+			"12:26:13 - Storage: searching for item: (|cffa335ee|Hitem:124368::::::::120:71::5:2:1798:1475:::|h[Demonblade Eviscerator]|h|r)", -- [710]
+			"12:26:13 - Found item at (3) (13)", -- [711]
+			"12:26:13 - Error - Couldn't find item", -- [712]
+			"12:26:13 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124203::::::::120:71::5:2:1798:1475:::|h[Zakuun's~`Signet~`of~`Command]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [713]
+			"12:26:13 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124368::::::::120:71::5:2:1798:1475:::|h[Demonblade~`Eviscerator]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [714]
+			"12:27:11 - Event: (ENCOUNTER_START) (1795) (Mannoroth) (15) (10)", -- [715]
+			"12:27:11 - UpdatePlayersData()", -- [716]
+			"12:27:59 - Event: (ENCOUNTER_END) (1795) (Mannoroth) (15) (10) (1)", -- [717]
+			"12:28:00 - Event: (LOOT_READY) (true)", -- [718]
+			"12:28:00 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-91349-0000470036) (250916)", -- [719]
+			"12:28:00 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124317::::::::120:71::5:2:1798:1475:::|h[Demongaze Chestplate]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [720]
+			"12:28:00 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124248::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felblade Chestguard]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [721]
+			"12:28:00 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124248::::::::120:71::5:2:1798:1475:::|h[Felblade Chestguard]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [722]
+			"12:28:00 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [723]
+			"12:28:00 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124266::::::::120:71::5:4:1798:1475:5850:3441:::|h[Empowered Demonskin Kilt]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [724]
+			"12:28:00 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [725]
+			"12:28:00 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r) (4)", -- [726]
+			"12:28:00 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124266::::::::120:71::5:4:1798:1475:5850:3441:::|h[Empowered Demonskin Kilt]|h|r) (4)", -- [727]
+			"12:28:00 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r) (4)", -- [728]
+			"12:28:00 - Event: (LOOT_READY) (true)", -- [729]
+			"12:28:00 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-91349-0000470036) (250916)", -- [730]
+			"12:28:00 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124317::::::::120:71::5:2:1798:1475:::|h[Demongaze Chestplate]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [731]
+			"12:28:00 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124248::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felblade Chestguard]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [732]
+			"12:28:00 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124248::::::::120:71::5:2:1798:1475:::|h[Felblade Chestguard]|h|r) (4) (1) (Creature-0-3134-1448-26639-91349-0000470036) (1)", -- [733]
+			"12:28:00 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124248::::::::120:71::5:2:1798:1475:::|h[Felblade Chestguard]|h|r) (4)", -- [734]
+			"12:28:01 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124248::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felblade Chestguard]|h|r) (4)", -- [735]
+			"12:28:01 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124317::::::::120:71::5:2:1798:1475:::|h[Demongaze Chestplate]|h|r) (4)", -- [736]
+			"12:28:01 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124349) (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r) (1) (Shanyt) (WARRIOR)", -- [737]
+			"12:28:01 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124266) (|cffa335ee|Hitem:124266::::::::120:71::5:4:1798:1475:5850:3441:::|h[Empowered Demonskin Kilt]|h|r) (1) (Shanyt) (WARRIOR)", -- [738]
+			"12:28:01 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124349) (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r) (1) (Shanyt) (WARRIOR)", -- [739]
+			"12:28:01 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124248) (|cffa335ee|Hitem:124248::::::::120:71::5:2:1798:1475:::|h[Felblade Chestguard]|h|r) (1) (Shanyt) (WARRIOR)", -- [740]
+			"12:28:01 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124248) (|cffa335ee|Hitem:124248::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felblade Chestguard]|h|r) (1) (Shanyt) (WARRIOR)", -- [741]
+			"12:28:01 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124317) (|cffa335ee|Hitem:124317::::::::120:71::5:2:1798:1475:::|h[Demongaze Chestplate]|h|r) (1) (Shanyt) (WARRIOR)", -- [742]
+			"12:28:01 - OnLootSlotCleared() (1) (nil) (1)", -- [743]
+			"12:28:01 - Event: (LOOT_CLOSED)", -- [744]
+			"12:28:01 - Event: (LOOT_CLOSED)", -- [745]
+			"12:28:01 - Comm received:^1^Slooted^T^N1^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [746]
+			"12:28:01 - Comm received:^1^Slooted^T^N1^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [747]
+			"12:28:02 - Storage:New (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r) (temp)", -- [748]
+			"12:28:02 - Storage: searching for item: (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r)", -- [749]
+			"12:28:02 - Found item at (3) (14)", -- [750]
+			"12:28:02 - Found item at (3) (16)", -- [751]
+			"12:28:02 - Error - Couldn't find item", -- [752]
+			"12:28:02 - Storage:New (|cffa335ee|Hitem:124266::::::::120:71::5:4:1798:1475:5850:3441:::|h[Empowered Demonskin Kilt]|h|r) (temp)", -- [753]
+			"12:28:02 - Storage: searching for item: (|cffa335ee|Hitem:124266::::::::120:71::5:4:1798:1475:5850:3441:::|h[Empowered Demonskin Kilt]|h|r)", -- [754]
+			"12:28:02 - Found item at (3) (15)", -- [755]
+			"12:28:02 - Error - Couldn't find item", -- [756]
+			"12:28:02 - Storage:New (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r) (temp)", -- [757]
+			"12:28:02 - Storage: searching for item: (|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r)", -- [758]
+			"12:28:02 - Found item at (3) (14)", -- [759]
+			"12:28:02 - Found item at (3) (16)", -- [760]
+			"12:28:02 - Error - Couldn't find item", -- [761]
+			"12:28:02 - Storage:New (|cffa335ee|Hitem:124248::::::::120:71::5:2:1798:1475:::|h[Felblade Chestguard]|h|r) (temp)", -- [762]
+			"12:28:02 - Storage: searching for item: (|cffa335ee|Hitem:124248::::::::120:71::5:2:1798:1475:::|h[Felblade Chestguard]|h|r)", -- [763]
+			"12:28:02 - Found item at (3) (17)", -- [764]
+			"12:28:02 - Error - Couldn't find item", -- [765]
+			"12:28:02 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's~`Waistplate]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [766]
+			"12:28:02 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124266::::::::120:71::5:4:1798:1475:5850:3441:::|h[Empowered~`Demonskin~`Kilt]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [767]
+			"12:28:02 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's~`Waistplate]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [768]
+			"12:28:03 - Storage:New (|cffa335ee|Hitem:124248::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felblade Chestguard]|h|r) (temp)", -- [769]
+			"12:28:03 - Storage: searching for item: (|cffa335ee|Hitem:124248::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felblade Chestguard]|h|r)", -- [770]
+			"12:28:03 - Found item at (3) (18)", -- [771]
+			"12:28:03 - Error - Couldn't find item", -- [772]
+			"12:28:03 - Storage:New (|cffa335ee|Hitem:124317::::::::120:71::5:2:1798:1475:::|h[Demongaze Chestplate]|h|r) (temp)", -- [773]
+			"12:28:03 - Storage: searching for item: (|cffa335ee|Hitem:124317::::::::120:71::5:2:1798:1475:::|h[Demongaze Chestplate]|h|r)", -- [774]
+			"12:28:03 - Found item at (3) (19)", -- [775]
+			"12:28:03 - Error - Couldn't find item", -- [776]
+			"12:28:03 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124248::::::::120:71::5:2:1798:1475:::|h[Felblade~`Chestguard]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [777]
+			"12:28:03 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124248::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felblade~`Chestguard]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [778]
+			"12:28:03 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124317::::::::120:71::5:2:1798:1475:::|h[Demongaze~`Chestplate]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [779]
+			"12:30:14 - Event: (ENCOUNTER_START) (1799) (Archimonde) (15) (10)", -- [780]
+			"12:30:14 - UpdatePlayersData()", -- [781]
+			"12:30:20 - Event: (ENCOUNTER_END) (1799) (Archimonde) (15) (10) (1)", -- [782]
+			"12:30:21 - Event: (LOOT_READY) (true)", -- [783]
+			"12:30:21 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-91331-0000470791) (255220)", -- [784]
+			"12:30:21 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124159::::::::120:71::5:4:1798:1475:5850:3441:::|h[Demon Prince's Ascendant Crown]|h|r) (4) (1) (Creature-0-3134-1448-26639-91331-0000470791) (1)", -- [785]
+			"12:30:21 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124343::::::::120:71::5:4:1798:1475:5850:3441:::|h[Doomcrier's Shoulderplates]|h|r) (4) (1) (Creature-0-3134-1448-26639-91331-0000470791) (1)", -- [786]
+			"12:30:21 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124389::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Calamity's Edge]|h|r) (4) (1) (Creature-0-3134-1448-26639-91331-0000470791) (1)", -- [787]
+			"12:30:21 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124382::::::::120:71::5:2:1798:1475:::|h[Edict of Argus]|h|r) (4) (1) (Creature-0-3134-1448-26639-91331-0000470791) (1)", -- [788]
+			"12:30:21 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124176::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Mantle of the Eredar Lord]|h|r) (4) (1) (Creature-0-3134-1448-26639-91331-0000470791) (1)", -- [789]
+			"12:30:21 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124176::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Mantle of the Eredar Lord]|h|r) (4)", -- [790]
+			"12:30:21 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124382::::::::120:71::5:2:1798:1475:::|h[Edict of Argus]|h|r) (4)", -- [791]
+			"12:30:21 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124389::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Calamity's Edge]|h|r) (4)", -- [792]
+			"12:30:21 - Event: (LOOT_READY) (true)", -- [793]
+			"12:30:21 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3134-1448-26639-91331-0000470791) (255220)", -- [794]
+			"12:30:21 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124159::::::::120:71::5:4:1798:1475:5850:3441:::|h[Demon Prince's Ascendant Crown]|h|r) (4) (1) (Creature-0-3134-1448-26639-91331-0000470791) (1)", -- [795]
+			"12:30:21 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124343::::::::120:71::5:4:1798:1475:5850:3441:::|h[Doomcrier's Shoulderplates]|h|r) (4) (1) (Creature-0-3134-1448-26639-91331-0000470791) (1)", -- [796]
+			"12:30:21 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124343::::::::120:71::5:4:1798:1475:5850:3441:::|h[Doomcrier's Shoulderplates]|h|r) (4)", -- [797]
+			"12:30:21 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124159::::::::120:71::5:4:1798:1475:5850:3441:::|h[Demon Prince's Ascendant Crown]|h|r) (4)", -- [798]
+			"12:30:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124176) (|cffa335ee|Hitem:124176::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Mantle of the Eredar Lord]|h|r) (1) (Shanyt) (WARRIOR)", -- [799]
+			"12:30:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124382) (|cffa335ee|Hitem:124382::::::::120:71::5:2:1798:1475:::|h[Edict of Argus]|h|r) (1) (Shanyt) (WARRIOR)", -- [800]
+			"12:30:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124389) (|cffa335ee|Hitem:124389::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Calamity's Edge]|h|r) (1) (Shanyt) (WARRIOR)", -- [801]
+			"12:30:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124343) (|cffa335ee|Hitem:124343::::::::120:71::5:4:1798:1475:5850:3441:::|h[Doomcrier's Shoulderplates]|h|r) (1) (Shanyt) (WARRIOR)", -- [802]
+			"12:30:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124159) (|cffa335ee|Hitem:124159::::::::120:71::5:4:1798:1475:5850:3441:::|h[Demon Prince's Ascendant Crown]|h|r) (1) (Shanyt) (WARRIOR)", -- [803]
+			"12:30:21 - OnLootSlotCleared() (1) (nil) (1)", -- [804]
+			"12:30:21 - Event: (LOOT_CLOSED)", -- [805]
+			"12:30:21 - Event: (LOOT_CLOSED)", -- [806]
+			"12:30:22 - Comm received:^1^Slooted^T^N1^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [807]
+			"12:30:22 - Comm received:^1^Slooted^T^N1^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [808]
+			"12:30:23 - Storage:New (|cffa335ee|Hitem:124176::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Mantle of the Eredar Lord]|h|r) (temp)", -- [809]
+			"12:30:23 - Storage: searching for item: (|cffa335ee|Hitem:124176::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Mantle of the Eredar Lord]|h|r)", -- [810]
+			"12:30:23 - Found item at (1) (28)", -- [811]
+			"12:30:23 - Error - Couldn't find item", -- [812]
+			"12:30:23 - Storage:New (|cffa335ee|Hitem:124382::::::::120:71::5:2:1798:1475:::|h[Edict of Argus]|h|r) (temp)", -- [813]
+			"12:30:23 - Storage: searching for item: (|cffa335ee|Hitem:124382::::::::120:71::5:2:1798:1475:::|h[Edict of Argus]|h|r)", -- [814]
+			"12:30:23 - Found item at (1) (29)", -- [815]
+			"12:30:23 - Error - Couldn't find item", -- [816]
+			"12:30:23 - Storage:New (|cffa335ee|Hitem:124389::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Calamity's Edge]|h|r) (temp)", -- [817]
+			"12:30:23 - Storage: searching for item: (|cffa335ee|Hitem:124389::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Calamity's Edge]|h|r)", -- [818]
+			"12:30:23 - Found item at (1) (30)", -- [819]
+			"12:30:23 - Error - Couldn't find item", -- [820]
+			"12:30:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124176::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Mantle~`of~`the~`Eredar~`Lord]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [821]
+			"12:30:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124382::::::::120:71::5:2:1798:1475:::|h[Edict~`of~`Argus]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [822]
+			"12:30:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124389::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Calamity's~`Edge]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [823]
+			"12:30:23 - Storage:New (|cffa335ee|Hitem:124343::::::::120:71::5:4:1798:1475:5850:3441:::|h[Doomcrier's Shoulderplates]|h|r) (temp)", -- [824]
+			"12:30:23 - Storage: searching for item: (|cffa335ee|Hitem:124343::::::::120:71::5:4:1798:1475:5850:3441:::|h[Doomcrier's Shoulderplates]|h|r)", -- [825]
+			"12:30:23 - Found item at (2) (1)", -- [826]
+			"12:30:23 - Error - Couldn't find item", -- [827]
+			"12:30:23 - Storage:New (|cffa335ee|Hitem:124159::::::::120:71::5:4:1798:1475:5850:3441:::|h[Demon Prince's Ascendant Crown]|h|r) (temp)", -- [828]
+			"12:30:23 - Storage: searching for item: (|cffa335ee|Hitem:124159::::::::120:71::5:4:1798:1475:5850:3441:::|h[Demon Prince's Ascendant Crown]|h|r)", -- [829]
+			"12:30:23 - Found item at (2) (2)", -- [830]
+			"12:30:23 - Error - Couldn't find item", -- [831]
+			"12:30:24 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124343::::::::120:71::5:4:1798:1475:5850:3441:::|h[Doomcrier's~`Shoulderplates]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [832]
+			"12:30:24 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124159::::::::120:71::5:4:1798:1475:5850:3441:::|h[Demon~`Prince's~`Ascendant~`Crown]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [833]
+			"12:31:07 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [834]
+			"12:31:07 - GetML()", -- [835]
+			"12:31:53 - Event: (RAID_INSTANCE_WELCOME) (Hellfire Citadel (Normal)) (167286) (0) (0)", -- [836]
+			"12:31:54 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [837]
+			"12:31:54 - GetML()", -- [838]
+			"12:32:06 - Event: (LOOT_READY) (true)", -- [839]
+			"12:32:06 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-94697-0000C70878) (2752)", -- [840]
+			"12:32:06 - OnLootSlotCleared() (1) (nil) (1)", -- [841]
+			"12:32:06 - Event: (LOOT_CLOSED)", -- [842]
+			"12:32:06 - Event: (LOOT_CLOSED)", -- [843]
+			"12:32:06 - Comm received:^1^Slooted^T^N1^S94697^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [844]
+			"12:32:06 - Comm received:^1^Slooted^T^N1^S94697^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [845]
+			"12:32:17 - Event: (LOOT_READY) (true)", -- [846]
+			"12:32:17 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-93830-0002470877) (7862)", -- [847]
+			"12:32:17 - OnLootSlotCleared() (1) (nil) (1)", -- [848]
+			"12:32:17 - Event: (LOOT_CLOSED)", -- [849]
+			"12:32:17 - Event: (LOOT_CLOSED)", -- [850]
+			"12:32:17 - Comm received:^1^Slooted^T^N1^S93830^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [851]
+			"12:32:17 - Comm received:^1^Slooted^T^N1^S93830^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [852]
+			"12:32:34 - Event: (LOOT_READY) (true)", -- [853]
+			"12:32:34 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-94697-0002470878) (2098) (Creature-0-3133-1448-11459-94697-0000470878) (8166)", -- [854]
+			"12:32:34 - OnLootSlotCleared() (1) (nil) (1)", -- [855]
+			"12:32:34 - Event: (LOOT_CLOSED)", -- [856]
+			"12:32:34 - Event: (LOOT_CLOSED)", -- [857]
+			"12:32:34 - Comm received:^1^Slooted^T^N1^S94697^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [858]
+			"12:32:34 - Comm received:^1^Slooted^T^N1^S94697^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [859]
+			"12:32:48 - Event: (LOOT_READY) (true)", -- [860]
+			"12:32:48 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-93830-0004C70876) (4184)", -- [861]
+			"12:32:48 - OnLootSlotCleared() (1) (nil) (1)", -- [862]
+			"12:32:48 - Event: (LOOT_CLOSED)", -- [863]
+			"12:32:48 - Event: (LOOT_CLOSED)", -- [864]
+			"12:32:48 - Comm received:^1^Slooted^T^N1^S93830^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [865]
+			"12:32:48 - Comm received:^1^Slooted^T^N1^S93830^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [866]
+			"12:33:05 - Event: (LOOT_READY) (true)", -- [867]
+			"12:33:05 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Vehicle-0-3133-1448-11459-94873-0000470876) (16306)", -- [868]
+			"12:33:05 - OnLootSlotCleared() (1) (nil) (1)", -- [869]
+			"12:33:05 - Event: (LOOT_CLOSED)", -- [870]
+			"12:33:05 - Event: (LOOT_CLOSED)", -- [871]
+			"12:33:05 - Comm received:^1^Slooted^T^N1^S94873^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [872]
+			"12:33:05 - Comm received:^1^Slooted^T^N1^S94873^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [873]
+			"12:33:20 - Event: (LOOT_READY) (true)", -- [874]
+			"12:33:20 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-94693-0000470877) (4454)", -- [875]
+			"12:33:20 - OnLootSlotCleared() (1) (nil) (1)", -- [876]
+			"12:33:20 - Event: (LOOT_CLOSED)", -- [877]
+			"12:33:20 - Event: (LOOT_CLOSED)", -- [878]
+			"12:33:21 - Comm received:^1^Slooted^T^N1^S94693^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [879]
+			"12:33:21 - Comm received:^1^Slooted^T^N1^S94693^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [880]
+			"12:33:35 - Event: (LOOT_READY) (true)", -- [881]
+			"12:33:35 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-94803-0000470877) (26850)", -- [882]
+			"12:33:35 - OnLootSlotCleared() (1) (nil) (1)", -- [883]
+			"12:33:35 - Event: (LOOT_CLOSED)", -- [884]
+			"12:33:35 - Event: (LOOT_CLOSED)", -- [885]
+			"12:33:35 - Comm received:^1^Slooted^T^N1^S94803^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [886]
+			"12:33:35 - Comm received:^1^Slooted^T^N1^S94803^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [887]
+			"12:34:02 - Event: (LOOT_READY) (true)", -- [888]
+			"12:34:02 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-94693-0001C70878) (8566)", -- [889]
+			"12:34:02 - OnLootSlotCleared() (1) (nil) (1)", -- [890]
+			"12:34:02 - Event: (LOOT_CLOSED)", -- [891]
+			"12:34:02 - Event: (LOOT_CLOSED)", -- [892]
+			"12:34:02 - Comm received:^1^Slooted^T^N1^S94693^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [893]
+			"12:34:02 - Comm received:^1^Slooted^T^N1^S94693^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [894]
+			"12:34:16 - Event: (LOOT_READY) (true)", -- [895]
+			"12:34:16 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-93858-0001470876) (10666)", -- [896]
+			"12:34:16 - Adding to self.lootSlotInfo (2) (|cff1eff00|Hitem:116624::::::::120:71::3:2:33:550:::|h[Gorian Sword of the Fireflash]|h|r) (2) (1) (Creature-0-3133-1448-11459-93858-0001470876) (1)", -- [897]
+			"12:34:16 - OnLootSlotCleared() (2) (|cff1eff00|Hitem:116624::::::::120:71::3:2:33:550:::|h[Gorian Sword of the Fireflash]|h|r) (2)", -- [898]
+			"12:34:16 - OnLootSlotCleared() (1) (nil) (1)", -- [899]
+			"12:34:16 - Event: (LOOT_CLOSED)", -- [900]
+			"12:34:16 - Event: (LOOT_CLOSED)", -- [901]
+			"12:34:16 - Comm received:^1^Slooted^T^N1^S93858^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [902]
+			"12:34:16 - Comm received:^1^Slooted^T^N1^S93858^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [903]
+			"12:34:18 - Storage:New (|cff1eff00|Hitem:116624::::::::120:71::3:2:33:550:::|h[Gorian Sword of the Fireflash]|h|r) (temp)", -- [904]
+			"12:34:18 - Storage: searching for item: (|cff1eff00|Hitem:116624::::::::120:71::3:2:33:550:::|h[Gorian Sword of the Fireflash]|h|r)", -- [905]
+			"12:34:18 - Found item at (1) (28)", -- [906]
+			"12:34:18 - Comm received:^1^Stradable^T^N1^S|cff1eff00|Hitem:116624::::::::120:71::3:2:33:550:::|h[Gorian~`Sword~`of~`the~`Fireflash]|h|r^N2^S93858^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [907]
+			"12:34:43 - Event: (ENCOUNTER_START) (1778) (Hellfire Assault) (14) (10)", -- [908]
+			"12:34:43 - UpdatePlayersData()", -- [909]
+			"12:36:36 - Event: (ENCOUNTER_END) (1778) (Hellfire Assault) (14) (10) (1)", -- [910]
+			"12:36:45 - Event: (LOOT_READY) (true)", -- [911]
+			"12:36:45 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3133-1448-11459-243290-0000470994) (252431)", -- [912]
+			"12:36:45 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124190::::::::120:71::3:2:1801:1472:::|h[Sootstained Felsworn Signet]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243290-0000470994) (1)", -- [913]
+			"12:36:45 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124216::::::::120:71::3:2:1801:1472:::|h[Bolt-Latched Felsteel Gorget]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243290-0000470994) (1)", -- [914]
+			"12:36:45 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124216::::::::120:71::3:4:1801:1472:5855:3441:::|h[Bolt-Latched Felsteel Gorget]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243290-0000470994) (1)", -- [915]
+			"12:36:45 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124168::::::::120:71::3:2:1801:1472:::|h[Felgrease-Smudged Robes]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243290-0000470994) (1)", -- [916]
+			"12:36:45 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124270::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rangefinder's Spaulders]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243290-0000470994) (1)", -- [917]
+			"12:36:46 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124270::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rangefinder's Spaulders]|h|r) (4)", -- [918]
+			"12:36:46 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124168::::::::120:71::3:2:1801:1472:::|h[Felgrease-Smudged Robes]|h|r) (4)", -- [919]
+			"12:36:46 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124216::::::::120:71::3:4:1801:1472:5855:3441:::|h[Bolt-Latched Felsteel Gorget]|h|r) (4)", -- [920]
+			"12:36:46 - Event: (LOOT_READY) (true)", -- [921]
+			"12:36:46 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3133-1448-11459-243290-0000470994) (252431)", -- [922]
+			"12:36:46 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124190::::::::120:71::3:2:1801:1472:::|h[Sootstained Felsworn Signet]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243290-0000470994) (1)", -- [923]
+			"12:36:46 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124216::::::::120:71::3:2:1801:1472:::|h[Bolt-Latched Felsteel Gorget]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243290-0000470994) (1)", -- [924]
+			"12:36:46 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124216::::::::120:71::3:2:1801:1472:::|h[Bolt-Latched Felsteel Gorget]|h|r) (4)", -- [925]
+			"12:36:46 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124190::::::::120:71::3:2:1801:1472:::|h[Sootstained Felsworn Signet]|h|r) (4)", -- [926]
+			"12:36:46 - Event: (ENCOUNTER_LOOT_RECEIVED) (1778) (124270) (|cffa335ee|Hitem:124270::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rangefinder's Spaulders]|h|r) (1) (Shanyt) (WARRIOR)", -- [927]
+			"12:36:46 - Event: (ENCOUNTER_LOOT_RECEIVED) (1778) (124168) (|cffa335ee|Hitem:124168::::::::120:71::3:2:1801:1472:::|h[Felgrease-Smudged Robes]|h|r) (1) (Shanyt) (WARRIOR)", -- [928]
+			"12:36:46 - Event: (ENCOUNTER_LOOT_RECEIVED) (1778) (124216) (|cffa335ee|Hitem:124216::::::::120:71::3:4:1801:1472:5855:3441:::|h[Bolt-Latched Felsteel Gorget]|h|r) (1) (Shanyt) (WARRIOR)", -- [929]
+			"12:36:46 - Event: (ENCOUNTER_LOOT_RECEIVED) (1778) (124216) (|cffa335ee|Hitem:124216::::::::120:71::3:2:1801:1472:::|h[Bolt-Latched Felsteel Gorget]|h|r) (1) (Shanyt) (WARRIOR)", -- [930]
+			"12:36:46 - Event: (ENCOUNTER_LOOT_RECEIVED) (1778) (124190) (|cffa335ee|Hitem:124190::::::::120:71::3:2:1801:1472:::|h[Sootstained Felsworn Signet]|h|r) (1) (Shanyt) (WARRIOR)", -- [931]
+			"12:36:46 - OnLootSlotCleared() (1) (nil) (1)", -- [932]
+			"12:36:46 - Event: (LOOT_CLOSED)", -- [933]
+			"12:36:46 - Event: (LOOT_CLOSED)", -- [934]
+			"12:36:46 - Comm received:^1^Slooted^T^N1^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [935]
+			"12:36:46 - Comm received:^1^Slooted^T^N1^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [936]
+			"12:36:48 - Storage:New (|cffa335ee|Hitem:124270::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rangefinder's Spaulders]|h|r) (temp)", -- [937]
+			"12:36:48 - Storage: searching for item: (|cffa335ee|Hitem:124270::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rangefinder's Spaulders]|h|r)", -- [938]
+			"12:36:48 - Found item at (1) (29)", -- [939]
+			"12:36:48 - Error - Couldn't find item", -- [940]
+			"12:36:48 - Storage:New (|cffa335ee|Hitem:124168::::::::120:71::3:2:1801:1472:::|h[Felgrease-Smudged Robes]|h|r) (temp)", -- [941]
+			"12:36:48 - Storage: searching for item: (|cffa335ee|Hitem:124168::::::::120:71::3:2:1801:1472:::|h[Felgrease-Smudged Robes]|h|r)", -- [942]
+			"12:36:48 - Found item at (1) (30)", -- [943]
+			"12:36:48 - Error - Couldn't find item", -- [944]
+			"12:36:48 - Storage:New (|cffa335ee|Hitem:124216::::::::120:71::3:4:1801:1472:5855:3441:::|h[Bolt-Latched Felsteel Gorget]|h|r) (temp)", -- [945]
+			"12:36:48 - Storage: searching for item: (|cffa335ee|Hitem:124216::::::::120:71::3:4:1801:1472:5855:3441:::|h[Bolt-Latched Felsteel Gorget]|h|r)", -- [946]
+			"12:36:48 - Found item at (2) (1)", -- [947]
+			"12:36:48 - Error - Couldn't find item", -- [948]
+			"12:36:48 - Storage:New (|cffa335ee|Hitem:124216::::::::120:71::3:2:1801:1472:::|h[Bolt-Latched Felsteel Gorget]|h|r) (temp)", -- [949]
+			"12:36:48 - Storage: searching for item: (|cffa335ee|Hitem:124216::::::::120:71::3:2:1801:1472:::|h[Bolt-Latched Felsteel Gorget]|h|r)", -- [950]
+			"12:36:48 - Found item at (2) (2)", -- [951]
+			"12:36:48 - Error - Couldn't find item", -- [952]
+			"12:36:48 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124270::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rangefinder's~`Spaulders]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [953]
+			"12:36:48 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124168::::::::120:71::3:2:1801:1472:::|h[Felgrease-Smudged~`Robes]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [954]
+			"12:36:48 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124216::::::::120:71::3:4:1801:1472:5855:3441:::|h[Bolt-Latched~`Felsteel~`Gorget]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [955]
+			"12:36:48 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124216::::::::120:71::3:2:1801:1472:::|h[Bolt-Latched~`Felsteel~`Gorget]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [956]
+			"12:36:48 - Storage:New (|cffa335ee|Hitem:124190::::::::120:71::3:2:1801:1472:::|h[Sootstained Felsworn Signet]|h|r) (temp)", -- [957]
+			"12:36:48 - Storage: searching for item: (|cffa335ee|Hitem:124190::::::::120:71::3:2:1801:1472:::|h[Sootstained Felsworn Signet]|h|r)", -- [958]
+			"12:36:48 - Found item at (2) (3)", -- [959]
+			"12:36:48 - Error - Couldn't find item", -- [960]
+			"12:36:48 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124190::::::::120:71::3:2:1801:1472:::|h[Sootstained~`Felsworn~`Signet]|h|r^N2^S243290^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [961]
+			"12:37:24 - Event: (ENCOUNTER_START) (1785) (Iron Reaver) (14) (10)", -- [962]
+			"12:37:24 - UpdatePlayersData()", -- [963]
+			"12:37:28 - Event: (ENCOUNTER_END) (1785) (Iron Reaver) (14) (10) (1)", -- [964]
+			"12:37:29 - Event: (LOOT_READY) (true)", -- [965]
+			"12:37:29 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Vehicle-0-3133-1448-11459-90284-0000470876) (273186)", -- [966]
+			"12:37:29 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:40:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90284-0000470876) (1)", -- [967]
+			"12:37:29 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90284-0000470876) (1)", -- [968]
+			"12:37:29 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124145::::::::120:71::3:2:1801:1472:::|h[Ironthread Greatcloak]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90284-0000470876) (1)", -- [969]
+			"12:37:29 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124351::::::::120:71::3:2:1801:1472:::|h[Hot-Rolled Iron Bracers]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90284-0000470876) (1)", -- [970]
+			"12:37:29 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124223::::::::120:71::3:2:1801:1472:::|h[Fel-Spring Coil]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90284-0000470876) (1)", -- [971]
+			"12:37:29 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124223::::::::120:71::3:2:1801:1472:::|h[Fel-Spring Coil]|h|r) (4)", -- [972]
+			"12:37:29 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124351::::::::120:71::3:2:1801:1472:::|h[Hot-Rolled Iron Bracers]|h|r) (4)", -- [973]
+			"12:37:29 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124145::::::::120:71::3:2:1801:1472:::|h[Ironthread Greatcloak]|h|r) (4)", -- [974]
+			"12:37:29 - Event: (LOOT_READY) (true)", -- [975]
+			"12:37:29 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Vehicle-0-3133-1448-11459-90284-0000470876) (273186)", -- [976]
+			"12:37:29 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:40:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90284-0000470876) (1)", -- [977]
+			"12:37:29 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90284-0000470876) (1)", -- [978]
+			"12:37:29 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (4)", -- [979]
+			"12:37:29 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:40:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (4)", -- [980]
+			"12:37:29 - Event: (ENCOUNTER_LOOT_RECEIVED) (1785) (124223) (|cffa335ee|Hitem:124223::::::::120:71::3:2:1801:1472:::|h[Fel-Spring Coil]|h|r) (1) (Shanyt) (WARRIOR)", -- [981]
+			"12:37:29 - Event: (ENCOUNTER_LOOT_RECEIVED) (1785) (124351) (|cffa335ee|Hitem:124351::::::::120:71::3:2:1801:1472:::|h[Hot-Rolled Iron Bracers]|h|r) (1) (Shanyt) (WARRIOR)", -- [982]
+			"12:37:29 - Event: (ENCOUNTER_LOOT_RECEIVED) (1785) (124145) (|cffa335ee|Hitem:124145::::::::120:71::3:2:1801:1472:::|h[Ironthread Greatcloak]|h|r) (1) (Shanyt) (WARRIOR)", -- [983]
+			"12:37:29 - Event: (ENCOUNTER_LOOT_RECEIVED) (1785) (124253) (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (1) (Shanyt) (WARRIOR)", -- [984]
+			"12:37:29 - Event: (ENCOUNTER_LOOT_RECEIVED) (1785) (124253) (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:40:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (1) (Shanyt) (WARRIOR)", -- [985]
+			"12:37:29 - OnLootSlotCleared() (1) (nil) (1)", -- [986]
+			"12:37:29 - Event: (LOOT_CLOSED)", -- [987]
+			"12:37:29 - Event: (LOOT_CLOSED)", -- [988]
+			"12:37:30 - Comm received:^1^Slooted^T^N1^S90284^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [989]
+			"12:37:30 - Comm received:^1^Slooted^T^N1^S90284^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [990]
+			"12:37:31 - Storage:New (|cffa335ee|Hitem:124223::::::::120:71::3:2:1801:1472:::|h[Fel-Spring Coil]|h|r) (temp)", -- [991]
+			"12:37:31 - Storage: searching for item: (|cffa335ee|Hitem:124223::::::::120:71::3:2:1801:1472:::|h[Fel-Spring Coil]|h|r)", -- [992]
+			"12:37:31 - Found item at (2) (4)", -- [993]
+			"12:37:31 - Error - Couldn't find item", -- [994]
+			"12:37:31 - Storage:New (|cffa335ee|Hitem:124351::::::::120:71::3:2:1801:1472:::|h[Hot-Rolled Iron Bracers]|h|r) (temp)", -- [995]
+			"12:37:31 - Storage: searching for item: (|cffa335ee|Hitem:124351::::::::120:71::3:2:1801:1472:::|h[Hot-Rolled Iron Bracers]|h|r)", -- [996]
+			"12:37:31 - Found item at (2) (5)", -- [997]
+			"12:37:31 - Error - Couldn't find item", -- [998]
+			"12:37:31 - Storage:New (|cffa335ee|Hitem:124145::::::::120:71::3:2:1801:1472:::|h[Ironthread Greatcloak]|h|r) (temp)", -- [999]
+			"12:37:31 - Storage: searching for item: (|cffa335ee|Hitem:124145::::::::120:71::3:2:1801:1472:::|h[Ironthread Greatcloak]|h|r)", -- [1000]
+			"12:37:31 - Found item at (2) (6)", -- [1001]
+			"12:37:31 - Error - Couldn't find item", -- [1002]
+			"12:37:31 - Storage:New (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (temp)", -- [1003]
+			"12:37:31 - Storage: searching for item: (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r)", -- [1004]
+			"12:37:31 - Found item at (2) (7)", -- [1005]
+			"12:37:31 - Error - Couldn't find item", -- [1006]
+			"12:37:31 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124223::::::::120:71::3:2:1801:1472:::|h[Fel-Spring~`Coil]|h|r^N2^S90284^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1007]
+			"12:37:31 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124351::::::::120:71::3:2:1801:1472:::|h[Hot-Rolled~`Iron~`Bracers]|h|r^N2^S90284^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1008]
+			"12:37:31 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124145::::::::120:71::3:2:1801:1472:::|h[Ironthread~`Greatcloak]|h|r^N2^S90284^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1009]
+			"12:37:31 - Storage:New (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:40:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r) (temp)", -- [1010]
+			"12:37:31 - Storage: searching for item: (|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:40:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r)", -- [1011]
+			"12:37:31 - Found item at (2) (8)", -- [1012]
+			"12:37:31 - Error - Couldn't find item", -- [1013]
+			"12:37:31 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Insulated~`Wirer's~`Gloves]|h|r^N2^S90284^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1014]
+			"12:37:31 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:40:1472:5850:3441:::|h[Insulated~`Wirer's~`Gloves]|h|r^N2^S90284^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1015]
+			"12:40:18 - Event: (ENCOUNTER_START) (1787) (Kormrok) (14) (10)", -- [1016]
+			"12:40:18 - UpdatePlayersData()", -- [1017]
+			"12:40:22 - Event: (ENCOUNTER_END) (1787) (Kormrok) (14) (10) (1)", -- [1018]
+			"12:40:23 - Event: (LOOT_READY) (true)", -- [1019]
+			"12:40:23 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-90435-0000470876) (273091)", -- [1020]
+			"12:40:23 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124162::::::::120:71::3:3:1801:563:1472:::|h[Deathrattle Mask]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1021]
+			"12:40:23 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124262::::::::120:71::3:2:1801:1472:::|h[Mask of the Hurricane's Eye]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1022]
+			"12:40:23 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124261::::::::120:71::3:3:1801:563:1472:::|h[Oathclaw Helm]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1023]
+			"12:40:23 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124304::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1024]
+			"12:40:23 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124304::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1025]
+			"12:40:23 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124139::::::::120:71::3:4:1801:1472:5850:3441:::|h[Polymorphic Cloak of Absorption]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1026]
+			"12:40:23 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124139::::::::120:71::3:4:1801:1472:5850:3441:::|h[Polymorphic Cloak of Absorption]|h|r) (4)", -- [1027]
+			"12:40:23 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124304::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (4)", -- [1028]
+			"12:40:23 - Event: (LOOT_READY) (true)", -- [1029]
+			"12:40:23 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-90435-0000470876) (273091)", -- [1030]
+			"12:40:23 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124162::::::::120:71::3:3:1801:563:1472:::|h[Deathrattle Mask]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1031]
+			"12:40:23 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124262::::::::120:71::3:2:1801:1472:::|h[Mask of the Hurricane's Eye]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1032]
+			"12:40:23 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124261::::::::120:71::3:3:1801:563:1472:::|h[Oathclaw Helm]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1033]
+			"12:40:23 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124304::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (4) (1) (Creature-0-3133-1448-11459-90435-0000470876) (1)", -- [1034]
+			"12:40:23 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124304::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (4)", -- [1035]
+			"12:40:23 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124261::::::::120:71::3:3:1801:563:1472:::|h[Oathclaw Helm]|h|r) (4)", -- [1036]
+			"12:40:23 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124262::::::::120:71::3:2:1801:1472:::|h[Mask of the Hurricane's Eye]|h|r) (4)", -- [1037]
+			"12:40:23 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124162::::::::120:71::3:3:1801:563:1472:::|h[Deathrattle Mask]|h|r) (4)", -- [1038]
+			"12:40:23 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124139) (|cffa335ee|Hitem:124139::::::::120:71::3:4:1801:1472:5850:3441:::|h[Polymorphic Cloak of Absorption]|h|r) (1) (Shanyt) (WARRIOR)", -- [1039]
+			"12:40:23 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124304) (|cffa335ee|Hitem:124304::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (1) (Shanyt) (WARRIOR)", -- [1040]
+			"12:40:23 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124304) (|cffa335ee|Hitem:124304::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (1) (Shanyt) (WARRIOR)", -- [1041]
+			"12:40:23 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124261) (|cffa335ee|Hitem:124261::::::::120:71::3:3:1801:563:1472:::|h[Oathclaw Helm]|h|r) (1) (Shanyt) (WARRIOR)", -- [1042]
+			"12:40:23 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124262) (|cffa335ee|Hitem:124262::::::::120:71::3:2:1801:1472:::|h[Mask of the Hurricane's Eye]|h|r) (1) (Shanyt) (WARRIOR)", -- [1043]
+			"12:40:23 - Event: (ENCOUNTER_LOOT_RECEIVED) (1787) (124162) (|cffa335ee|Hitem:124162::::::::120:71::3:3:1801:563:1472:::|h[Deathrattle Mask]|h|r) (1) (Shanyt) (WARRIOR)", -- [1044]
+			"12:40:23 - OnLootSlotCleared() (1) (nil) (1)", -- [1045]
+			"12:40:23 - Event: (LOOT_CLOSED)", -- [1046]
+			"12:40:23 - Event: (LOOT_CLOSED)", -- [1047]
+			"12:40:23 - Comm received:^1^Slooted^T^N1^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1048]
+			"12:40:23 - Comm received:^1^Slooted^T^N1^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1049]
+			"12:40:25 - Storage:New (|cffa335ee|Hitem:124139::::::::120:71::3:4:1801:1472:5850:3441:::|h[Polymorphic Cloak of Absorption]|h|r) (temp)", -- [1050]
+			"12:40:25 - Storage: searching for item: (|cffa335ee|Hitem:124139::::::::120:71::3:4:1801:1472:5850:3441:::|h[Polymorphic Cloak of Absorption]|h|r)", -- [1051]
+			"12:40:25 - Found item at (1) (29)", -- [1052]
+			"12:40:25 - Error - Couldn't find item", -- [1053]
+			"12:40:25 - Storage:New (|cffa335ee|Hitem:124304::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (temp)", -- [1054]
+			"12:40:25 - Storage: searching for item: (|cffa335ee|Hitem:124304::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r)", -- [1055]
+			"12:40:25 - Found item at (1) (30)", -- [1056]
+			"12:40:25 - Error - Couldn't find item", -- [1057]
+			"12:40:25 - Storage:New (|cffa335ee|Hitem:124304::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r) (temp)", -- [1058]
+			"12:40:25 - Storage: searching for item: (|cffa335ee|Hitem:124304::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r)", -- [1059]
+			"12:40:25 - Found item at (2) (1)", -- [1060]
+			"12:40:25 - Error - Couldn't find item", -- [1061]
+			"12:40:25 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124139::::::::120:71::3:4:1801:1472:5850:3441:::|h[Polymorphic~`Cloak~`of~`Absorption]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1062]
+			"12:40:25 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124304::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Rugged~`Stoneshaped~`Pauldrons]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1063]
+			"12:40:25 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124304::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rugged~`Stoneshaped~`Pauldrons]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1064]
+			"12:40:25 - Storage:New (|cffa335ee|Hitem:124261::::::::120:71::3:3:1801:563:1472:::|h[Oathclaw Helm]|h|r) (temp)", -- [1065]
+			"12:40:25 - Storage: searching for item: (|cffa335ee|Hitem:124261::::::::120:71::3:3:1801:563:1472:::|h[Oathclaw Helm]|h|r)", -- [1066]
+			"12:40:25 - Found item at (2) (2)", -- [1067]
+			"12:40:25 - Error - Couldn't find item", -- [1068]
+			"12:40:25 - Storage:New (|cffa335ee|Hitem:124262::::::::120:71::3:2:1801:1472:::|h[Mask of the Hurricane's Eye]|h|r) (temp)", -- [1069]
+			"12:40:25 - Storage: searching for item: (|cffa335ee|Hitem:124262::::::::120:71::3:2:1801:1472:::|h[Mask of the Hurricane's Eye]|h|r)", -- [1070]
+			"12:40:25 - Found item at (2) (3)", -- [1071]
+			"12:40:25 - Error - Couldn't find item", -- [1072]
+			"12:40:25 - Storage:New (|cffa335ee|Hitem:124162::::::::120:71::3:3:1801:563:1472:::|h[Deathrattle Mask]|h|r) (temp)", -- [1073]
+			"12:40:25 - Storage: searching for item: (|cffa335ee|Hitem:124162::::::::120:71::3:3:1801:563:1472:::|h[Deathrattle Mask]|h|r)", -- [1074]
+			"12:40:25 - Found item at (2) (4)", -- [1075]
+			"12:40:25 - Error - Couldn't find item", -- [1076]
+			"12:40:25 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124261::::::::120:71::3:3:1801:563:1472:::|h[Oathclaw~`Helm]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1077]
+			"12:40:25 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124262::::::::120:71::3:2:1801:1472:::|h[Mask~`of~`the~`Hurricane's~`Eye]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1078]
+			"12:40:25 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124162::::::::120:71::3:3:1801:563:1472:::|h[Deathrattle~`Mask]|h|r^N2^S90435^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1079]
+			"12:40:30 - Event: (LOOT_READY) (true)", -- [1080]
+			"12:40:30 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:107603::::::::120:71::::::|h[Eroded Tusk]|h|r) (0) (1) (Creature-0-3133-1448-11459-94779-0000470876) (1)", -- [1081]
+			"12:40:31 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:107603::::::::120:71::::::|h[Eroded Tusk]|h|r) (0)", -- [1082]
+			"12:40:31 - Event: (LOOT_CLOSED)", -- [1083]
+			"12:40:31 - Event: (LOOT_CLOSED)", -- [1084]
+			"12:40:31 - Comm received:^1^Slooted^T^N1^S94779^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1085]
+			"12:40:31 - Comm received:^1^Slooted^T^N1^S94779^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1086]
+			"12:42:47 - Event: (ENCOUNTER_START) (1798) (Hellfire High Council) (14) (10)", -- [1087]
+			"12:42:47 - UpdatePlayersData()", -- [1088]
+			"12:42:54 - Event: (ENCOUNTER_END) (1798) (Hellfire High Council) (14) (10) (1)", -- [1089]
+			"12:42:56 - Event: (LOOT_READY) (true)", -- [1090]
+			"12:42:56 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-92144-0000470876) (254442)", -- [1091]
+			"12:42:56 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124133::::::::120:71::3:2:1801:1472:::|h[Windswept Wanderer's Drape]|h|r) (4) (1) (Creature-0-3133-1448-11459-92144-0000470876) (1)", -- [1092]
+			"12:42:56 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124142::::::::120:71::3:2:1801:1472:::|h[Rugged Bloodcaked Drape]|h|r) (4) (1) (Creature-0-3133-1448-11459-92144-0000470876) (1)", -- [1093]
+			"12:42:56 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124271::::::::120:71::3:4:1801:1472:5855:3441:::|h[Blood-Tanned Pauldrons]|h|r) (4) (1) (Creature-0-3133-1448-11459-92144-0000470876) (1)", -- [1094]
+			"12:42:56 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124220::::::::120:71::3:2:1801:1472:::|h[Spiked Bloodstone Pendant]|h|r) (4) (1) (Creature-0-3133-1448-11459-92144-0000470876) (1)", -- [1095]
+			"12:42:56 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124258::::::::120:71::3:2:1801:1472:::|h[Gurtogg's Discarded Hood]|h|r) (4) (1) (Creature-0-3133-1448-11459-92144-0000470876) (1)", -- [1096]
+			"12:42:56 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124258::::::::120:71::3:2:1801:1472:::|h[Gurtogg's Discarded Hood]|h|r) (4)", -- [1097]
+			"12:42:56 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124220::::::::120:71::3:2:1801:1472:::|h[Spiked Bloodstone Pendant]|h|r) (4)", -- [1098]
+			"12:42:56 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124271::::::::120:71::3:4:1801:1472:5855:3441:::|h[Blood-Tanned Pauldrons]|h|r) (4)", -- [1099]
+			"12:42:56 - Event: (LOOT_READY) (true)", -- [1100]
+			"12:42:56 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-92144-0000470876) (254442)", -- [1101]
+			"12:42:56 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124133::::::::120:71::3:2:1801:1472:::|h[Windswept Wanderer's Drape]|h|r) (4) (1) (Creature-0-3133-1448-11459-92144-0000470876) (1)", -- [1102]
+			"12:42:56 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124142::::::::120:71::3:2:1801:1472:::|h[Rugged Bloodcaked Drape]|h|r) (4) (1) (Creature-0-3133-1448-11459-92144-0000470876) (1)", -- [1103]
+			"12:42:56 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124142::::::::120:71::3:2:1801:1472:::|h[Rugged Bloodcaked Drape]|h|r) (4)", -- [1104]
+			"12:42:56 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124133::::::::120:71::3:2:1801:1472:::|h[Windswept Wanderer's Drape]|h|r) (4)", -- [1105]
+			"12:42:56 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124258) (|cffa335ee|Hitem:124258::::::::120:71::3:2:1801:1472:::|h[Gurtogg's Discarded Hood]|h|r) (1) (Shanyt) (WARRIOR)", -- [1106]
+			"12:42:56 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124220) (|cffa335ee|Hitem:124220::::::::120:71::3:2:1801:1472:::|h[Spiked Bloodstone Pendant]|h|r) (1) (Shanyt) (WARRIOR)", -- [1107]
+			"12:42:56 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124271) (|cffa335ee|Hitem:124271::::::::120:71::3:4:1801:1472:5855:3441:::|h[Blood-Tanned Pauldrons]|h|r) (1) (Shanyt) (WARRIOR)", -- [1108]
+			"12:42:56 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124142) (|cffa335ee|Hitem:124142::::::::120:71::3:2:1801:1472:::|h[Rugged Bloodcaked Drape]|h|r) (1) (Shanyt) (WARRIOR)", -- [1109]
+			"12:42:56 - Event: (ENCOUNTER_LOOT_RECEIVED) (1798) (124133) (|cffa335ee|Hitem:124133::::::::120:71::3:2:1801:1472:::|h[Windswept Wanderer's Drape]|h|r) (1) (Shanyt) (WARRIOR)", -- [1110]
+			"12:42:56 - OnLootSlotCleared() (1) (nil) (1)", -- [1111]
+			"12:42:56 - Event: (LOOT_CLOSED)", -- [1112]
+			"12:42:56 - Event: (LOOT_CLOSED)", -- [1113]
+			"12:42:56 - Comm received:^1^Slooted^T^N1^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1114]
+			"12:42:56 - Comm received:^1^Slooted^T^N1^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1115]
+			"12:42:58 - Storage:New (|cffa335ee|Hitem:124258::::::::120:71::3:2:1801:1472:::|h[Gurtogg's Discarded Hood]|h|r) (temp)", -- [1116]
+			"12:42:58 - Storage: searching for item: (|cffa335ee|Hitem:124258::::::::120:71::3:2:1801:1472:::|h[Gurtogg's Discarded Hood]|h|r)", -- [1117]
+			"12:42:58 - Found item at (2) (5)", -- [1118]
+			"12:42:58 - Error - Couldn't find item", -- [1119]
+			"12:42:58 - Storage:New (|cffa335ee|Hitem:124220::::::::120:71::3:2:1801:1472:::|h[Spiked Bloodstone Pendant]|h|r) (temp)", -- [1120]
+			"12:42:58 - Storage: searching for item: (|cffa335ee|Hitem:124220::::::::120:71::3:2:1801:1472:::|h[Spiked Bloodstone Pendant]|h|r)", -- [1121]
+			"12:42:58 - Found item at (2) (6)", -- [1122]
+			"12:42:58 - Error - Couldn't find item", -- [1123]
+			"12:42:58 - Storage:New (|cffa335ee|Hitem:124271::::::::120:71::3:4:1801:1472:5855:3441:::|h[Blood-Tanned Pauldrons]|h|r) (temp)", -- [1124]
+			"12:42:58 - Storage: searching for item: (|cffa335ee|Hitem:124271::::::::120:71::3:4:1801:1472:5855:3441:::|h[Blood-Tanned Pauldrons]|h|r)", -- [1125]
+			"12:42:58 - Found item at (2) (7)", -- [1126]
+			"12:42:58 - Error - Couldn't find item", -- [1127]
+			"12:42:58 - Storage:New (|cffa335ee|Hitem:124142::::::::120:71::3:2:1801:1472:::|h[Rugged Bloodcaked Drape]|h|r) (temp)", -- [1128]
+			"12:42:58 - Storage: searching for item: (|cffa335ee|Hitem:124142::::::::120:71::3:2:1801:1472:::|h[Rugged Bloodcaked Drape]|h|r)", -- [1129]
+			"12:42:58 - Found item at (2) (8)", -- [1130]
+			"12:42:58 - Error - Couldn't find item", -- [1131]
+			"12:42:58 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124258::::::::120:71::3:2:1801:1472:::|h[Gurtogg's~`Discarded~`Hood]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1132]
+			"12:42:58 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124220::::::::120:71::3:2:1801:1472:::|h[Spiked~`Bloodstone~`Pendant]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1133]
+			"12:42:58 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124271::::::::120:71::3:4:1801:1472:5855:3441:::|h[Blood-Tanned~`Pauldrons]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1134]
+			"12:42:58 - Storage:New (|cffa335ee|Hitem:124133::::::::120:71::3:2:1801:1472:::|h[Windswept Wanderer's Drape]|h|r) (temp)", -- [1135]
+			"12:42:58 - Storage: searching for item: (|cffa335ee|Hitem:124133::::::::120:71::3:2:1801:1472:::|h[Windswept Wanderer's Drape]|h|r)", -- [1136]
+			"12:42:58 - Found item at (2) (9)", -- [1137]
+			"12:42:58 - Error - Couldn't find item", -- [1138]
+			"12:42:58 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124142::::::::120:71::3:2:1801:1472:::|h[Rugged~`Bloodcaked~`Drape]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1139]
+			"12:42:58 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124133::::::::120:71::3:2:1801:1472:::|h[Windswept~`Wanderer's~`Drape]|h|r^N2^S92144^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1140]
+			"12:43:47 - Event: (LOOT_READY) (true)", -- [1141]
+			"12:43:47 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-92039-0005470876) (13411)", -- [1142]
+			"12:43:47 - OnLootSlotCleared() (1) (nil) (1)", -- [1143]
+			"12:43:47 - Event: (LOOT_CLOSED)", -- [1144]
+			"12:43:47 - Event: (LOOT_CLOSED)", -- [1145]
+			"12:43:47 - Comm received:^1^Slooted^T^N1^S92039^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1146]
+			"12:43:47 - Comm received:^1^Slooted^T^N1^S92039^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1147]
+			"12:44:11 - Event: (LOOT_READY) (true)", -- [1148]
+			"12:44:11 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-92038-0001C70876) (12569)", -- [1149]
+			"12:44:11 - OnLootSlotCleared() (1) (nil) (1)", -- [1150]
+			"12:44:11 - Event: (LOOT_CLOSED)", -- [1151]
+			"12:44:11 - Event: (LOOT_CLOSED)", -- [1152]
+			"12:44:11 - Comm received:^1^Slooted^T^N1^S92038^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1153]
+			"12:44:11 - Comm received:^1^Slooted^T^N1^S92038^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1154]
+			"12:44:44 - Event: (ENCOUNTER_START) (1786) (Kilrogg Deadeye) (14) (10)", -- [1155]
+			"12:44:44 - UpdatePlayersData()", -- [1156]
+			"12:44:50 - Event: (ENCOUNTER_END) (1786) (Kilrogg Deadeye) (14) (10) (1)", -- [1157]
+			"12:44:51 - Event: (LOOT_READY) (true)", -- [1158]
+			"12:44:51 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-90378-0000470876) (274056)", -- [1159]
+			"12:44:51 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124325::::::::120:71::3:4:1801:1472:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (4) (1) (Creature-0-3133-1448-11459-90378-0000470876) (1)", -- [1160]
+			"12:44:51 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124279::::::::120:71::3:2:1801:1472:::|h[Bloodcult Bracers]|h|r) (4) (1) (Creature-0-3133-1448-11459-90378-0000470876) (1)", -- [1161]
+			"12:44:51 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124232::::::::120:71::3:2:1801:1472:::|h[Intuition's Gift]|h|r) (4) (1) (Creature-0-3133-1448-11459-90378-0000470876) (1)", -- [1162]
+			"12:44:51 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124152::::::::120:71::3:2:1801:1472:::|h[Velvet Bloodweaver Gloves]|h|r) (4) (1) (Creature-0-3133-1448-11459-90378-0000470876) (1)", -- [1163]
+			"12:44:51 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124197::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Congealed Globule Loop]|h|r) (4) (1) (Creature-0-3133-1448-11459-90378-0000470876) (1)", -- [1164]
+			"12:44:51 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124197::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Congealed Globule Loop]|h|r) (4)", -- [1165]
+			"12:44:51 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124152::::::::120:71::3:2:1801:1472:::|h[Velvet Bloodweaver Gloves]|h|r) (4)", -- [1166]
+			"12:44:51 - Event: (LOOT_READY) (true)", -- [1167]
+			"12:44:51 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-90378-0000470876) (274056)", -- [1168]
+			"12:44:51 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124325::::::::120:71::3:4:1801:1472:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (4) (1) (Creature-0-3133-1448-11459-90378-0000470876) (1)", -- [1169]
+			"12:44:51 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124279::::::::120:71::3:2:1801:1472:::|h[Bloodcult Bracers]|h|r) (4) (1) (Creature-0-3133-1448-11459-90378-0000470876) (1)", -- [1170]
+			"12:44:51 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124232::::::::120:71::3:2:1801:1472:::|h[Intuition's Gift]|h|r) (4) (1) (Creature-0-3133-1448-11459-90378-0000470876) (1)", -- [1171]
+			"12:44:52 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124232::::::::120:71::3:2:1801:1472:::|h[Intuition's Gift]|h|r) (4)", -- [1172]
+			"12:44:52 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124279::::::::120:71::3:2:1801:1472:::|h[Bloodcult Bracers]|h|r) (4)", -- [1173]
+			"12:44:52 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124325::::::::120:71::3:4:1801:1472:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (4)", -- [1174]
+			"12:44:52 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124197) (|cffa335ee|Hitem:124197::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Congealed Globule Loop]|h|r) (1) (Shanyt) (WARRIOR)", -- [1175]
+			"12:44:52 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124152) (|cffa335ee|Hitem:124152::::::::120:71::3:2:1801:1472:::|h[Velvet Bloodweaver Gloves]|h|r) (1) (Shanyt) (WARRIOR)", -- [1176]
+			"12:44:52 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124232) (|cffa335ee|Hitem:124232::::::::120:71::3:2:1801:1472:::|h[Intuition's Gift]|h|r) (1) (Shanyt) (WARRIOR)", -- [1177]
+			"12:44:52 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124279) (|cffa335ee|Hitem:124279::::::::120:71::3:2:1801:1472:::|h[Bloodcult Bracers]|h|r) (1) (Shanyt) (WARRIOR)", -- [1178]
+			"12:44:52 - Event: (ENCOUNTER_LOOT_RECEIVED) (1786) (124325) (|cffa335ee|Hitem:124325::::::::120:71::3:4:1801:1472:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (1) (Shanyt) (WARRIOR)", -- [1179]
+			"12:44:52 - OnLootSlotCleared() (1) (nil) (1)", -- [1180]
+			"12:44:52 - Event: (LOOT_CLOSED)", -- [1181]
+			"12:44:52 - Event: (LOOT_CLOSED)", -- [1182]
+			"12:44:52 - Comm received:^1^Slooted^T^N1^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1183]
+			"12:44:52 - Comm received:^1^Slooted^T^N1^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1184]
+			"12:44:53 - Storage:New (|cffa335ee|Hitem:124197::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Congealed Globule Loop]|h|r) (temp)", -- [1185]
+			"12:44:53 - Storage: searching for item: (|cffa335ee|Hitem:124197::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Congealed Globule Loop]|h|r)", -- [1186]
+			"12:44:53 - Found item at (2) (10)", -- [1187]
+			"12:44:53 - Error - Couldn't find item", -- [1188]
+			"12:44:53 - Storage:New (|cffa335ee|Hitem:124152::::::::120:71::3:2:1801:1472:::|h[Velvet Bloodweaver Gloves]|h|r) (temp)", -- [1189]
+			"12:44:53 - Storage: searching for item: (|cffa335ee|Hitem:124152::::::::120:71::3:2:1801:1472:::|h[Velvet Bloodweaver Gloves]|h|r)", -- [1190]
+			"12:44:53 - Found item at (2) (11)", -- [1191]
+			"12:44:53 - Error - Couldn't find item", -- [1192]
+			"12:44:54 - Storage:New (|cffa335ee|Hitem:124232::::::::120:71::3:2:1801:1472:::|h[Intuition's Gift]|h|r) (temp)", -- [1193]
+			"12:44:54 - Storage: searching for item: (|cffa335ee|Hitem:124232::::::::120:71::3:2:1801:1472:::|h[Intuition's Gift]|h|r)", -- [1194]
+			"12:44:54 - Found item at (2) (12)", -- [1195]
+			"12:44:54 - Error - Couldn't find item", -- [1196]
+			"12:44:54 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124197::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Congealed~`Globule~`Loop]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1197]
+			"12:44:54 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124152::::::::120:71::3:2:1801:1472:::|h[Velvet~`Bloodweaver~`Gloves]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1198]
+			"12:44:54 - Storage:New (|cffa335ee|Hitem:124279::::::::120:71::3:2:1801:1472:::|h[Bloodcult Bracers]|h|r) (temp)", -- [1199]
+			"12:44:54 - Storage: searching for item: (|cffa335ee|Hitem:124279::::::::120:71::3:2:1801:1472:::|h[Bloodcult Bracers]|h|r)", -- [1200]
+			"12:44:54 - Found item at (2) (13)", -- [1201]
+			"12:44:54 - Error - Couldn't find item", -- [1202]
+			"12:44:54 - Storage:New (|cffa335ee|Hitem:124325::::::::120:71::3:4:1801:1472:5850:3441:::|h[Crimson Throatgrabbers]|h|r) (temp)", -- [1203]
+			"12:44:54 - Storage: searching for item: (|cffa335ee|Hitem:124325::::::::120:71::3:4:1801:1472:5850:3441:::|h[Crimson Throatgrabbers]|h|r)", -- [1204]
+			"12:44:54 - Found item at (2) (14)", -- [1205]
+			"12:44:54 - Error - Couldn't find item", -- [1206]
+			"12:44:54 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124232::::::::120:71::3:2:1801:1472:::|h[Intuition's~`Gift]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1207]
+			"12:44:54 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124279::::::::120:71::3:2:1801:1472:::|h[Bloodcult~`Bracers]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1208]
+			"12:44:54 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124325::::::::120:71::3:4:1801:1472:5850:3441:::|h[Crimson~`Throatgrabbers]|h|r^N2^S90378^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1209]
+			"12:46:40 - Event: (LOOT_READY) (true)", -- [1210]
+			"12:46:40 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-92391-0000C70876) (19616)", -- [1211]
+			"12:46:40 - OnLootSlotCleared() (1) (nil) (1)", -- [1212]
+			"12:46:40 - Event: (LOOT_CLOSED)", -- [1213]
+			"12:46:40 - Event: (LOOT_CLOSED)", -- [1214]
+			"12:46:40 - Comm received:^1^Slooted^T^N1^S92391^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1215]
+			"12:46:40 - Comm received:^1^Slooted^T^N1^S92391^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1216]
+			"12:47:49 - Event: (ENCOUNTER_START) (1783) (Gorefiend) (14) (10)", -- [1217]
+			"12:47:49 - UpdatePlayersData()", -- [1218]
+			"12:47:57 - Event: (ENCOUNTER_END) (1783) (Gorefiend) (14) (10) (1)", -- [1219]
+			"12:47:58 - Event: (LOOT_READY) (true)", -- [1220]
+			"12:47:58 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Vehicle-0-3133-1448-11459-90199-0000470876) (256951)", -- [1221]
+			"12:47:58 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124166::::::::120:71::3:2:1801:1472:::|h[Pious Leggings]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1222]
+			"12:47:58 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124340::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Legplates of Iron Wrath]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1223]
+			"12:47:58 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124338::::::::120:71::3:3:1801:563:1472:::|h[Demongaze Legplates]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1224]
+			"12:47:58 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124244::::::::120:71::3:2:1801:1472:::|h[Chestguard of Gnawing Desire]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1225]
+			"12:47:58 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124157::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cowl of a Thousand Hungers]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1226]
+			"12:47:58 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124140::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cloak of Insatiable Greed]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1227]
+			"12:47:58 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124140::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cloak of Insatiable Greed]|h|r) (4)", -- [1228]
+			"12:47:58 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124157::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cowl of a Thousand Hungers]|h|r) (4)", -- [1229]
+			"12:47:58 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124244::::::::120:71::3:2:1801:1472:::|h[Chestguard of Gnawing Desire]|h|r) (4)", -- [1230]
+			"12:47:58 - Event: (LOOT_READY) (true)", -- [1231]
+			"12:47:58 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Vehicle-0-3133-1448-11459-90199-0000470876) (256951)", -- [1232]
+			"12:47:58 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124166::::::::120:71::3:2:1801:1472:::|h[Pious Leggings]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1233]
+			"12:47:58 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124340::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Legplates of Iron Wrath]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1234]
+			"12:47:58 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124338::::::::120:71::3:3:1801:563:1472:::|h[Demongaze Legplates]|h|r) (4) (1) (Vehicle-0-3133-1448-11459-90199-0000470876) (1)", -- [1235]
+			"12:47:58 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124338::::::::120:71::3:3:1801:563:1472:::|h[Demongaze Legplates]|h|r) (4)", -- [1236]
+			"12:47:58 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124340::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Legplates of Iron Wrath]|h|r) (4)", -- [1237]
+			"12:47:58 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124166::::::::120:71::3:2:1801:1472:::|h[Pious Leggings]|h|r) (4)", -- [1238]
+			"12:47:59 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124140) (|cffa335ee|Hitem:124140::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cloak of Insatiable Greed]|h|r) (1) (Shanyt) (WARRIOR)", -- [1239]
+			"12:47:59 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124157) (|cffa335ee|Hitem:124157::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cowl of a Thousand Hungers]|h|r) (1) (Shanyt) (WARRIOR)", -- [1240]
+			"12:47:59 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124244) (|cffa335ee|Hitem:124244::::::::120:71::3:2:1801:1472:::|h[Chestguard of Gnawing Desire]|h|r) (1) (Shanyt) (WARRIOR)", -- [1241]
+			"12:47:59 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124338) (|cffa335ee|Hitem:124338::::::::120:71::3:3:1801:563:1472:::|h[Demongaze Legplates]|h|r) (1) (Shanyt) (WARRIOR)", -- [1242]
+			"12:47:59 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124340) (|cffa335ee|Hitem:124340::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Legplates of Iron Wrath]|h|r) (1) (Shanyt) (WARRIOR)", -- [1243]
+			"12:47:59 - Event: (ENCOUNTER_LOOT_RECEIVED) (1783) (124166) (|cffa335ee|Hitem:124166::::::::120:71::3:2:1801:1472:::|h[Pious Leggings]|h|r) (1) (Shanyt) (WARRIOR)", -- [1244]
+			"12:47:59 - OnLootSlotCleared() (1) (nil) (1)", -- [1245]
+			"12:47:59 - Event: (LOOT_CLOSED)", -- [1246]
+			"12:47:59 - Event: (LOOT_CLOSED)", -- [1247]
+			"12:47:59 - Comm received:^1^Slooted^T^N1^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1248]
+			"12:47:59 - Comm received:^1^Slooted^T^N1^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1249]
+			"12:48:00 - Storage:New (|cffa335ee|Hitem:124140::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cloak of Insatiable Greed]|h|r) (temp)", -- [1250]
+			"12:48:00 - Storage: searching for item: (|cffa335ee|Hitem:124140::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cloak of Insatiable Greed]|h|r)", -- [1251]
+			"12:48:00 - Found item at (2) (15)", -- [1252]
+			"12:48:00 - Error - Couldn't find item", -- [1253]
+			"12:48:00 - Storage:New (|cffa335ee|Hitem:124157::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cowl of a Thousand Hungers]|h|r) (temp)", -- [1254]
+			"12:48:00 - Storage: searching for item: (|cffa335ee|Hitem:124157::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cowl of a Thousand Hungers]|h|r)", -- [1255]
+			"12:48:00 - Found item at (2) (16)", -- [1256]
+			"12:48:00 - Error - Couldn't find item", -- [1257]
+			"12:48:00 - Storage:New (|cffa335ee|Hitem:124244::::::::120:71::3:2:1801:1472:::|h[Chestguard of Gnawing Desire]|h|r) (temp)", -- [1258]
+			"12:48:00 - Storage: searching for item: (|cffa335ee|Hitem:124244::::::::120:71::3:2:1801:1472:::|h[Chestguard of Gnawing Desire]|h|r)", -- [1259]
+			"12:48:00 - Found item at (2) (17)", -- [1260]
+			"12:48:00 - Error - Couldn't find item", -- [1261]
+			"12:48:00 - Storage:New (|cffa335ee|Hitem:124338::::::::120:71::3:3:1801:563:1472:::|h[Demongaze Legplates]|h|r) (temp)", -- [1262]
+			"12:48:00 - Storage: searching for item: (|cffa335ee|Hitem:124338::::::::120:71::3:3:1801:563:1472:::|h[Demongaze Legplates]|h|r)", -- [1263]
+			"12:48:00 - Found item at (2) (18)", -- [1264]
+			"12:48:00 - Error - Couldn't find item", -- [1265]
+			"12:48:00 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124140::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cloak~`of~`Insatiable~`Greed]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1266]
+			"12:48:00 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124157::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cowl~`of~`a~`Thousand~`Hungers]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1267]
+			"12:48:00 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124244::::::::120:71::3:2:1801:1472:::|h[Chestguard~`of~`Gnawing~`Desire]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1268]
+			"12:48:00 - Storage:New (|cffa335ee|Hitem:124340::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Legplates of Iron Wrath]|h|r) (temp)", -- [1269]
+			"12:48:00 - Storage: searching for item: (|cffa335ee|Hitem:124340::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Legplates of Iron Wrath]|h|r)", -- [1270]
+			"12:48:00 - Found item at (2) (19)", -- [1271]
+			"12:48:00 - Error - Couldn't find item", -- [1272]
+			"12:48:00 - Storage:New (|cffa335ee|Hitem:124166::::::::120:71::3:2:1801:1472:::|h[Pious Leggings]|h|r) (temp)", -- [1273]
+			"12:48:00 - Storage: searching for item: (|cffa335ee|Hitem:124166::::::::120:71::3:2:1801:1472:::|h[Pious Leggings]|h|r)", -- [1274]
+			"12:48:00 - Found item at (2) (20)", -- [1275]
+			"12:48:00 - Error - Couldn't find item", -- [1276]
+			"12:48:01 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124338::::::::120:71::3:3:1801:563:1472:::|h[Demongaze~`Legplates]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1277]
+			"12:48:01 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124340::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Legplates~`of~`Iron~`Wrath]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1278]
+			"12:48:01 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124166::::::::120:71::3:2:1801:1472:::|h[Pious~`Leggings]|h|r^N2^S90199^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1279]
+			"12:48:51 - Event: (LOOT_READY) (true)", -- [1280]
+			"12:48:51 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-93955-0002C70876) (6807)", -- [1281]
+			"12:48:51 - OnLootSlotCleared() (1) (nil) (1)", -- [1282]
+			"12:48:51 - Event: (LOOT_CLOSED)", -- [1283]
+			"12:48:51 - Event: (LOOT_CLOSED)", -- [1284]
+			"12:48:51 - Comm received:^1^Slooted^T^N1^S93955^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1285]
+			"12:48:51 - Comm received:^1^Slooted^T^N1^S93955^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1286]
+			"12:48:55 - Event: (ENCOUNTER_START) (1788) (Shadow-Lord Iskar) (14) (10)", -- [1287]
+			"12:48:55 - UpdatePlayersData()", -- [1288]
+			"12:49:54 - Event: (ENCOUNTER_END) (1788) (Shadow-Lord Iskar) (14) (10) (1)", -- [1289]
+			"12:49:55 - Event: (LOOT_READY) (true)", -- [1290]
+			"12:49:55 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-90316-0000470876) (271327)", -- [1291]
+			"12:49:55 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124286::::::::120:71::3:2:1801:1472:::|h[Surefooted Chain Treads]|h|r) (4) (1) (Creature-0-3133-1448-11459-90316-0000470876) (1)", -- [1292]
+			"12:49:55 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124259::::::::120:71::3:3:1801:563:1472:::|h[Helm of Imagined Horrors]|h|r) (4) (1) (Creature-0-3133-1448-11459-90316-0000470876) (1)", -- [1293]
+			"12:49:55 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124202::::::::120:71::3:2:1801:1472:::|h[Filigreed Loop of Zealotry]|h|r) (4) (1) (Creature-0-3133-1448-11459-90316-0000470876) (1)", -- [1294]
+			"12:49:55 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124229::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Unblinking Gaze of Sethe]|h|r) (4) (1) (Creature-0-3133-1448-11459-90316-0000470876) (1)", -- [1295]
+			"12:49:55 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124282::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Vestment of Illusory Might]|h|r) (4) (1) (Creature-0-3133-1448-11459-90316-0000470876) (1)", -- [1296]
+			"12:49:55 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124282::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Vestment of Illusory Might]|h|r) (4)", -- [1297]
+			"12:49:55 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124229::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Unblinking Gaze of Sethe]|h|r) (4)", -- [1298]
+			"12:49:55 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124202::::::::120:71::3:2:1801:1472:::|h[Filigreed Loop of Zealotry]|h|r) (4)", -- [1299]
+			"12:49:55 - Event: (LOOT_READY) (true)", -- [1300]
+			"12:49:55 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-90316-0000470876) (271327)", -- [1301]
+			"12:49:55 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124286::::::::120:71::3:2:1801:1472:::|h[Surefooted Chain Treads]|h|r) (4) (1) (Creature-0-3133-1448-11459-90316-0000470876) (1)", -- [1302]
+			"12:49:55 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124259::::::::120:71::3:3:1801:563:1472:::|h[Helm of Imagined Horrors]|h|r) (4) (1) (Creature-0-3133-1448-11459-90316-0000470876) (1)", -- [1303]
+			"12:49:55 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124259::::::::120:71::3:3:1801:563:1472:::|h[Helm of Imagined Horrors]|h|r) (4)", -- [1304]
+			"12:49:55 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124286::::::::120:71::3:2:1801:1472:::|h[Surefooted Chain Treads]|h|r) (4)", -- [1305]
+			"12:49:55 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124282) (|cffa335ee|Hitem:124282::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Vestment of Illusory Might]|h|r) (1) (Shanyt) (WARRIOR)", -- [1306]
+			"12:49:55 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124229) (|cffa335ee|Hitem:124229::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Unblinking Gaze of Sethe]|h|r) (1) (Shanyt) (WARRIOR)", -- [1307]
+			"12:49:55 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124202) (|cffa335ee|Hitem:124202::::::::120:71::3:2:1801:1472:::|h[Filigreed Loop of Zealotry]|h|r) (1) (Shanyt) (WARRIOR)", -- [1308]
+			"12:49:55 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124259) (|cffa335ee|Hitem:124259::::::::120:71::3:3:1801:563:1472:::|h[Helm of Imagined Horrors]|h|r) (1) (Shanyt) (WARRIOR)", -- [1309]
+			"12:49:55 - Event: (ENCOUNTER_LOOT_RECEIVED) (1788) (124286) (|cffa335ee|Hitem:124286::::::::120:71::3:2:1801:1472:::|h[Surefooted Chain Treads]|h|r) (1) (Shanyt) (WARRIOR)", -- [1310]
+			"12:49:55 - OnLootSlotCleared() (1) (nil) (1)", -- [1311]
+			"12:49:55 - Event: (LOOT_CLOSED)", -- [1312]
+			"12:49:55 - Event: (LOOT_CLOSED)", -- [1313]
+			"12:49:56 - Comm received:^1^Slooted^T^N1^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1314]
+			"12:49:56 - Comm received:^1^Slooted^T^N1^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1315]
+			"12:49:57 - Storage:New (|cffa335ee|Hitem:124282::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Vestment of Illusory Might]|h|r) (temp)", -- [1316]
+			"12:49:57 - Storage: searching for item: (|cffa335ee|Hitem:124282::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Vestment of Illusory Might]|h|r)", -- [1317]
+			"12:49:57 - Found item at (2) (21)", -- [1318]
+			"12:49:57 - Error - Couldn't find item", -- [1319]
+			"12:49:57 - Storage:New (|cffa335ee|Hitem:124229::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Unblinking Gaze of Sethe]|h|r) (temp)", -- [1320]
+			"12:49:57 - Storage: searching for item: (|cffa335ee|Hitem:124229::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Unblinking Gaze of Sethe]|h|r)", -- [1321]
+			"12:49:57 - Found item at (2) (22)", -- [1322]
+			"12:49:57 - Error - Couldn't find item", -- [1323]
+			"12:49:57 - Storage:New (|cffa335ee|Hitem:124202::::::::120:71::3:2:1801:1472:::|h[Filigreed Loop of Zealotry]|h|r) (temp)", -- [1324]
+			"12:49:57 - Storage: searching for item: (|cffa335ee|Hitem:124202::::::::120:71::3:2:1801:1472:::|h[Filigreed Loop of Zealotry]|h|r)", -- [1325]
+			"12:49:57 - Found item at (2) (23)", -- [1326]
+			"12:49:57 - Error - Couldn't find item", -- [1327]
+			"12:49:57 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124282::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Vestment~`of~`Illusory~`Might]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1328]
+			"12:49:57 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124229::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Unblinking~`Gaze~`of~`Sethe]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1329]
+			"12:49:57 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124202::::::::120:71::3:2:1801:1472:::|h[Filigreed~`Loop~`of~`Zealotry]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1330]
+			"12:49:57 - Storage:New (|cffa335ee|Hitem:124259::::::::120:71::3:3:1801:563:1472:::|h[Helm of Imagined Horrors]|h|r) (temp)", -- [1331]
+			"12:49:57 - Storage: searching for item: (|cffa335ee|Hitem:124259::::::::120:71::3:3:1801:563:1472:::|h[Helm of Imagined Horrors]|h|r)", -- [1332]
+			"12:49:57 - Found item at (2) (24)", -- [1333]
+			"12:49:57 - Error - Couldn't find item", -- [1334]
+			"12:49:57 - Storage:New (|cffa335ee|Hitem:124286::::::::120:71::3:2:1801:1472:::|h[Surefooted Chain Treads]|h|r) (temp)", -- [1335]
+			"12:49:57 - Storage: searching for item: (|cffa335ee|Hitem:124286::::::::120:71::3:2:1801:1472:::|h[Surefooted Chain Treads]|h|r)", -- [1336]
+			"12:49:57 - Found item at (2) (25)", -- [1337]
+			"12:49:57 - Error - Couldn't find item", -- [1338]
+			"12:49:58 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124259::::::::120:71::3:3:1801:563:1472:::|h[Helm~`of~`Imagined~`Horrors]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1339]
+			"12:49:58 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124286::::::::120:71::3:2:1801:1472:::|h[Surefooted~`Chain~`Treads]|h|r^N2^S90316^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1340]
+			"12:50:22 - Event: (LOOT_READY) (true)", -- [1341]
+			"12:50:22 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0) (1) (Creature-0-3133-1448-11459-95632-0008470876) (1)", -- [1342]
+			"12:50:22 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0) (1) (Creature-0-3133-1448-11459-95632-0006C70876) (1)", -- [1343]
+			"12:50:22 - Adding to self.lootSlotInfo (3) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3133-1448-11459-95640-0003470876) (1)", -- [1344]
+			"12:50:22 - OnLootSlotCleared() (3) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [1345]
+			"12:50:22 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0)", -- [1346]
+			"12:50:22 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0)", -- [1347]
+			"12:50:22 - Event: (LOOT_CLOSED)", -- [1348]
+			"12:50:22 - Event: (LOOT_CLOSED)", -- [1349]
+			"12:50:22 - Comm received:^1^Slooted^T^N1^S95640^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1350]
+			"12:50:22 - Comm received:^1^Slooted^T^N1^S95640^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1351]
+			"12:50:33 - Event: (LOOT_READY) (true)", -- [1352]
+			"12:50:33 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0) (1) (Creature-0-3133-1448-11459-95636-0003C70876) (1)", -- [1353]
+			"12:50:33 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0)", -- [1354]
+			"12:50:33 - Event: (LOOT_CLOSED)", -- [1355]
+			"12:50:33 - Event: (LOOT_CLOSED)", -- [1356]
+			"12:50:33 - Comm received:^1^Slooted^T^N1^S95636^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1357]
+			"12:50:33 - Comm received:^1^Slooted^T^N1^S95636^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1358]
+			"12:50:53 - Event: (LOOT_READY) (true)", -- [1359]
+			"12:50:53 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3133-1448-11459-95632-0005C70876) (1)", -- [1360]
+			"12:50:53 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [1361]
+			"12:50:53 - Event: (LOOT_CLOSED)", -- [1362]
+			"12:50:53 - Event: (LOOT_CLOSED)", -- [1363]
+			"12:50:53 - Comm received:^1^Slooted^T^N1^S95632^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1364]
+			"12:50:53 - Comm received:^1^Slooted^T^N1^S95632^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1365]
+			"12:51:01 - Event: (LOOT_READY) (true)", -- [1366]
+			"12:51:01 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0) (1) (Creature-0-3133-1448-11459-95636-0000470876) (1)", -- [1367]
+			"12:51:01 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106867::::::::120:71::::::|h[Dulled Claw]|h|r) (0)", -- [1368]
+			"12:51:01 - Event: (LOOT_CLOSED)", -- [1369]
+			"12:51:01 - Event: (LOOT_CLOSED)", -- [1370]
+			"12:51:01 - Comm received:^1^Slooted^T^N1^S95636^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1371]
+			"12:51:01 - Comm received:^1^Slooted^T^N1^S95636^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1372]
+			"12:51:11 - Event: (LOOT_READY) (true)", -- [1373]
+			"12:51:11 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0) (1) (Creature-0-3133-1448-11459-95640-0005470876) (1)", -- [1374]
+			"12:51:11 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0)", -- [1375]
+			"12:51:11 - Event: (LOOT_CLOSED)", -- [1376]
+			"12:51:11 - Event: (LOOT_CLOSED)", -- [1377]
+			"12:51:11 - Comm received:^1^Slooted^T^N1^S95640^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1378]
+			"12:51:11 - Comm received:^1^Slooted^T^N1^S95640^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1379]
+			"12:52:11 - Event: (ENCOUNTER_START) (1794) (Socrethar the Eternal) (14) (10)", -- [1380]
+			"12:52:11 - UpdatePlayersData()", -- [1381]
+			"12:52:16 - Event: (ENCOUNTER_END) (1794) (Socrethar the Eternal) (14) (10) (1)", -- [1382]
+			"12:52:24 - Event: (LOOT_READY) (true)", -- [1383]
+			"12:52:24 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3133-1448-11459-243567-0000470D40) (270735)", -- [1384]
+			"12:52:24 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1385]
+			"12:52:24 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1386]
+			"12:52:24 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124329::::::::120:71::3:2:1801:1472:::|h[Gauntlets of Iron Wrath]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1387]
+			"12:52:24 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124191::::::::120:71::3:2:1801:1472:::|h[Seal of the Traitorous Councilor]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1388]
+			"12:52:24 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124221::::::::120:71::3:2:1801:1472:::|h[Contained Fel Orb Locket]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1389]
+			"12:52:24 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124141::::::::120:71::3:2:1801:1472:::|h[Drape of Beckoned Souls]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1390]
+			"12:52:24 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124141::::::::120:71::3:2:1801:1472:::|h[Drape of Beckoned Souls]|h|r) (4)", -- [1391]
+			"12:52:24 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124221::::::::120:71::3:2:1801:1472:::|h[Contained Fel Orb Locket]|h|r) (4)", -- [1392]
+			"12:52:24 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124191::::::::120:71::3:2:1801:1472:::|h[Seal of the Traitorous Councilor]|h|r) (4)", -- [1393]
+			"12:52:24 - Event: (LOOT_READY) (true)", -- [1394]
+			"12:52:24 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3133-1448-11459-243567-0000470D40) (270735)", -- [1395]
+			"12:52:24 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1396]
+			"12:52:24 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1397]
+			"12:52:24 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124329::::::::120:71::3:2:1801:1472:::|h[Gauntlets of Iron Wrath]|h|r) (4) (1) (GameObject-0-3133-1448-11459-243567-0000470D40) (1)", -- [1398]
+			"12:52:24 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124329::::::::120:71::3:2:1801:1472:::|h[Gauntlets of Iron Wrath]|h|r) (4)", -- [1399]
+			"12:52:24 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (4)", -- [1400]
+			"12:52:24 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (4)", -- [1401]
+			"12:52:24 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124141) (|cffa335ee|Hitem:124141::::::::120:71::3:2:1801:1472:::|h[Drape of Beckoned Souls]|h|r) (1) (Shanyt) (WARRIOR)", -- [1402]
+			"12:52:24 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124221) (|cffa335ee|Hitem:124221::::::::120:71::3:2:1801:1472:::|h[Contained Fel Orb Locket]|h|r) (1) (Shanyt) (WARRIOR)", -- [1403]
+			"12:52:24 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124191) (|cffa335ee|Hitem:124191::::::::120:71::3:2:1801:1472:::|h[Seal of the Traitorous Councilor]|h|r) (1) (Shanyt) (WARRIOR)", -- [1404]
+			"12:52:24 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124329) (|cffa335ee|Hitem:124329::::::::120:71::3:2:1801:1472:::|h[Gauntlets of Iron Wrath]|h|r) (1) (Shanyt) (WARRIOR)", -- [1405]
+			"12:52:24 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124328) (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (1) (Shanyt) (WARRIOR)", -- [1406]
+			"12:52:24 - Event: (ENCOUNTER_LOOT_RECEIVED) (1794) (124328) (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (1) (Shanyt) (WARRIOR)", -- [1407]
+			"12:52:24 - OnLootSlotCleared() (1) (nil) (1)", -- [1408]
+			"12:52:24 - Event: (LOOT_CLOSED)", -- [1409]
+			"12:52:24 - Event: (LOOT_CLOSED)", -- [1410]
+			"12:52:25 - Comm received:^1^Slooted^T^N1^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1411]
+			"12:52:25 - Comm received:^1^Slooted^T^N1^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1412]
+			"12:52:26 - Storage:New (|cffa335ee|Hitem:124141::::::::120:71::3:2:1801:1472:::|h[Drape of Beckoned Souls]|h|r) (temp)", -- [1413]
+			"12:52:26 - Storage: searching for item: (|cffa335ee|Hitem:124141::::::::120:71::3:2:1801:1472:::|h[Drape of Beckoned Souls]|h|r)", -- [1414]
+			"12:52:26 - Found item at (2) (29)", -- [1415]
+			"12:52:26 - Error - Couldn't find item", -- [1416]
+			"12:52:26 - Storage:New (|cffa335ee|Hitem:124221::::::::120:71::3:2:1801:1472:::|h[Contained Fel Orb Locket]|h|r) (temp)", -- [1417]
+			"12:52:26 - Storage: searching for item: (|cffa335ee|Hitem:124221::::::::120:71::3:2:1801:1472:::|h[Contained Fel Orb Locket]|h|r)", -- [1418]
+			"12:52:26 - Found item at (2) (30)", -- [1419]
+			"12:52:26 - Error - Couldn't find item", -- [1420]
+			"12:52:26 - Storage:New (|cffa335ee|Hitem:124191::::::::120:71::3:2:1801:1472:::|h[Seal of the Traitorous Councilor]|h|r) (temp)", -- [1421]
+			"12:52:26 - Storage: searching for item: (|cffa335ee|Hitem:124191::::::::120:71::3:2:1801:1472:::|h[Seal of the Traitorous Councilor]|h|r)", -- [1422]
+			"12:52:26 - Found item at (3) (1)", -- [1423]
+			"12:52:26 - Error - Couldn't find item", -- [1424]
+			"12:52:26 - Storage:New (|cffa335ee|Hitem:124329::::::::120:71::3:2:1801:1472:::|h[Gauntlets of Iron Wrath]|h|r) (temp)", -- [1425]
+			"12:52:26 - Storage: searching for item: (|cffa335ee|Hitem:124329::::::::120:71::3:2:1801:1472:::|h[Gauntlets of Iron Wrath]|h|r)", -- [1426]
+			"12:52:26 - Found item at (3) (2)", -- [1427]
+			"12:52:26 - Error - Couldn't find item", -- [1428]
+			"12:52:26 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124141::::::::120:71::3:2:1801:1472:::|h[Drape~`of~`Beckoned~`Souls]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1429]
+			"12:52:26 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124221::::::::120:71::3:2:1801:1472:::|h[Contained~`Fel~`Orb~`Locket]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1430]
+			"12:52:26 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124191::::::::120:71::3:2:1801:1472:::|h[Seal~`of~`the~`Traitorous~`Councilor]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1431]
+			"12:52:26 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124329::::::::120:71::3:2:1801:1472:::|h[Gauntlets~`of~`Iron~`Wrath]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1432]
+			"12:52:26 - Storage:New (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (temp)", -- [1433]
+			"12:52:26 - Storage: searching for item: (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r)", -- [1434]
+			"12:52:26 - Found item at (3) (3)", -- [1435]
+			"12:52:26 - Found item at (3) (4)", -- [1436]
+			"12:52:26 - Error - Couldn't find item", -- [1437]
+			"12:52:26 - Storage:New (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r) (temp)", -- [1438]
+			"12:52:26 - Storage: searching for item: (|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r)", -- [1439]
+			"12:52:26 - Found item at (3) (3)", -- [1440]
+			"12:52:26 - Found item at (3) (4)", -- [1441]
+			"12:52:26 - Error - Couldn't find item", -- [1442]
+			"12:52:26 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets~`of~`the~`Ceaseless~`Vigil]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1443]
+			"12:52:26 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets~`of~`the~`Ceaseless~`Vigil]|h|r^N2^S243567^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1444]
+			"12:53:57 - Event: (LOOT_READY) (true)", -- [1445]
+			"12:53:57 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3133-1448-11459-93162-0002470876) (1)", -- [1446]
+			"12:53:58 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [1447]
+			"12:53:58 - Event: (LOOT_CLOSED)", -- [1448]
+			"12:53:58 - Event: (LOOT_CLOSED)", -- [1449]
+			"12:53:58 - Comm received:^1^Slooted^T^N1^S93162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1450]
+			"12:53:58 - Comm received:^1^Slooted^T^N1^S93162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1451]
+			"12:54:59 - Event: (LOOT_READY) (true)", -- [1452]
+			"12:54:59 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0) (1) (Creature-0-3133-1448-11459-91648-0000C70876) (1)", -- [1453]
+			"12:55:00 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0)", -- [1454]
+			"12:55:00 - Event: (LOOT_CLOSED)", -- [1455]
+			"12:55:00 - Event: (LOOT_CLOSED)", -- [1456]
+			"12:55:00 - Comm received:^1^Slooted^T^N1^S91648^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1457]
+			"12:55:00 - Comm received:^1^Slooted^T^N1^S91648^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1458]
+			"12:55:11 - Event: (ENCOUNTER_START) (1784) (Tyrant Velhari) (14) (10)", -- [1459]
+			"12:55:11 - UpdatePlayersData()", -- [1460]
+			"12:55:18 - Event: (ENCOUNTER_END) (1784) (Tyrant Velhari) (14) (10) (1)", -- [1461]
+			"12:55:19 - Event: (LOOT_READY) (true)", -- [1462]
+			"12:55:19 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-90269-0000470876) (250691)", -- [1463]
+			"12:55:19 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124226::::::::120:71::3:2:1801:1472:::|h[Malicious Censer]|h|r) (4) (1) (Creature-0-3133-1448-11459-90269-0000470876) (1)", -- [1464]
+			"12:55:19 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124306::::::::120:71::3:5:1801:42:1472:5850:3441:::|h[Pauldrons of Contempt]|h|r) (4) (1) (Creature-0-3133-1448-11459-90269-0000470876) (1)", -- [1465]
+			"12:55:19 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124251::::::::120:71::3:2:1801:1472:::|h[Oppressor's Merciless Treads]|h|r) (4) (1) (Creature-0-3133-1448-11459-90269-0000470876) (1)", -- [1466]
+			"12:55:19 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124186::::::::120:71::3:3:1801:42:1472:::|h[Contemptuous Wristguards]|h|r) (4) (1) (Creature-0-3133-1448-11459-90269-0000470876) (1)", -- [1467]
+			"12:55:19 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124192::::::::120:71::3:2:1801:1472:::|h[Loathful Encrusted Band]|h|r) (4) (1) (Creature-0-3133-1448-11459-90269-0000470876) (1)", -- [1468]
+			"12:55:19 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124192::::::::120:71::3:2:1801:1472:::|h[Loathful Encrusted Band]|h|r) (4)", -- [1469]
+			"12:55:19 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124186::::::::120:71::3:3:1801:42:1472:::|h[Contemptuous Wristguards]|h|r) (4)", -- [1470]
+			"12:55:20 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124251::::::::120:71::3:2:1801:1472:::|h[Oppressor's Merciless Treads]|h|r) (4)", -- [1471]
+			"12:55:20 - Event: (LOOT_READY) (true)", -- [1472]
+			"12:55:20 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-90269-0000470876) (250691)", -- [1473]
+			"12:55:20 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124226::::::::120:71::3:2:1801:1472:::|h[Malicious Censer]|h|r) (4) (1) (Creature-0-3133-1448-11459-90269-0000470876) (1)", -- [1474]
+			"12:55:20 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124306::::::::120:71::3:5:1801:42:1472:5850:3441:::|h[Pauldrons of Contempt]|h|r) (4) (1) (Creature-0-3133-1448-11459-90269-0000470876) (1)", -- [1475]
+			"12:55:20 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124306::::::::120:71::3:5:1801:42:1472:5850:3441:::|h[Pauldrons of Contempt]|h|r) (4)", -- [1476]
+			"12:55:20 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124226::::::::120:71::3:2:1801:1472:::|h[Malicious Censer]|h|r) (4)", -- [1477]
+			"12:55:20 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124192) (|cffa335ee|Hitem:124192::::::::120:71::3:2:1801:1472:::|h[Loathful Encrusted Band]|h|r) (1) (Shanyt) (WARRIOR)", -- [1478]
+			"12:55:20 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124186) (|cffa335ee|Hitem:124186::::::::120:71::3:3:1801:42:1472:::|h[Contemptuous Wristguards]|h|r) (1) (Shanyt) (WARRIOR)", -- [1479]
+			"12:55:20 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124251) (|cffa335ee|Hitem:124251::::::::120:71::3:2:1801:1472:::|h[Oppressor's Merciless Treads]|h|r) (1) (Shanyt) (WARRIOR)", -- [1480]
+			"12:55:20 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124306) (|cffa335ee|Hitem:124306::::::::120:71::3:5:1801:42:1472:5850:3441:::|h[Pauldrons of Contempt]|h|r) (1) (Shanyt) (WARRIOR)", -- [1481]
+			"12:55:20 - Event: (ENCOUNTER_LOOT_RECEIVED) (1784) (124226) (|cffa335ee|Hitem:124226::::::::120:71::3:2:1801:1472:::|h[Malicious Censer]|h|r) (1) (Shanyt) (WARRIOR)", -- [1482]
+			"12:55:20 - OnLootSlotCleared() (1) (nil) (1)", -- [1483]
+			"12:55:20 - Event: (LOOT_CLOSED)", -- [1484]
+			"12:55:20 - Event: (LOOT_CLOSED)", -- [1485]
+			"12:55:20 - Comm received:^1^Slooted^T^N1^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1486]
+			"12:55:20 - Comm received:^1^Slooted^T^N1^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1487]
+			"12:55:21 - Storage:New (|cffa335ee|Hitem:124192::::::::120:71::3:2:1801:1472:::|h[Loathful Encrusted Band]|h|r) (temp)", -- [1488]
+			"12:55:21 - Storage: searching for item: (|cffa335ee|Hitem:124192::::::::120:71::3:2:1801:1472:::|h[Loathful Encrusted Band]|h|r)", -- [1489]
+			"12:55:21 - Found item at (3) (5)", -- [1490]
+			"12:55:21 - Error - Couldn't find item", -- [1491]
+			"12:55:21 - Storage:New (|cffa335ee|Hitem:124186::::::::120:71::3:3:1801:42:1472:::|h[Contemptuous Wristguards]|h|r) (temp)", -- [1492]
+			"12:55:21 - Storage: searching for item: (|cffa335ee|Hitem:124186::::::::120:71::3:3:1801:42:1472:::|h[Contemptuous Wristguards]|h|r)", -- [1493]
+			"12:55:21 - Found item at (3) (6)", -- [1494]
+			"12:55:21 - Error - Couldn't find item", -- [1495]
+			"12:55:22 - Storage:New (|cffa335ee|Hitem:124251::::::::120:71::3:2:1801:1472:::|h[Oppressor's Merciless Treads]|h|r) (temp)", -- [1496]
+			"12:55:22 - Storage: searching for item: (|cffa335ee|Hitem:124251::::::::120:71::3:2:1801:1472:::|h[Oppressor's Merciless Treads]|h|r)", -- [1497]
+			"12:55:22 - Found item at (3) (7)", -- [1498]
+			"12:55:22 - Error - Couldn't find item", -- [1499]
+			"12:55:22 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124192::::::::120:71::3:2:1801:1472:::|h[Loathful~`Encrusted~`Band]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1500]
+			"12:55:22 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124186::::::::120:71::3:3:1801:42:1472:::|h[Contemptuous~`Wristguards]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1501]
+			"12:55:22 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124251::::::::120:71::3:2:1801:1472:::|h[Oppressor's~`Merciless~`Treads]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1502]
+			"12:55:22 - Storage:New (|cffa335ee|Hitem:124306::::::::120:71::3:5:1801:42:1472:5850:3441:::|h[Pauldrons of Contempt]|h|r) (temp)", -- [1503]
+			"12:55:22 - Storage: searching for item: (|cffa335ee|Hitem:124306::::::::120:71::3:5:1801:42:1472:5850:3441:::|h[Pauldrons of Contempt]|h|r)", -- [1504]
+			"12:55:22 - Found item at (3) (8)", -- [1505]
+			"12:55:22 - Error - Couldn't find item", -- [1506]
+			"12:55:22 - Storage:New (|cffa335ee|Hitem:124226::::::::120:71::3:2:1801:1472:::|h[Malicious Censer]|h|r) (temp)", -- [1507]
+			"12:55:22 - Storage: searching for item: (|cffa335ee|Hitem:124226::::::::120:71::3:2:1801:1472:::|h[Malicious Censer]|h|r)", -- [1508]
+			"12:55:22 - Found item at (3) (9)", -- [1509]
+			"12:55:22 - Error - Couldn't find item", -- [1510]
+			"12:55:22 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124306::::::::120:71::3:5:1801:42:1472:5850:3441:::|h[Pauldrons~`of~`Contempt]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1511]
+			"12:55:22 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124226::::::::120:71::3:2:1801:1472:::|h[Malicious~`Censer]|h|r^N2^S90269^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1512]
+			"12:56:44 - Event: (LOOT_READY) (true)", -- [1513]
+			"12:56:44 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0) (1) (Creature-0-3133-1448-11459-92554-0000470876) (1)", -- [1514]
+			"12:56:44 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:108979::::::::120:71::::::|h[Bleached Bones]|h|r) (0)", -- [1515]
+			"12:56:45 - Event: (LOOT_CLOSED)", -- [1516]
+			"12:56:45 - Event: (LOOT_CLOSED)", -- [1517]
+			"12:56:45 - Comm received:^1^Slooted^T^N1^S92554^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1518]
+			"12:56:45 - Comm received:^1^Slooted^T^N1^S92554^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1519]
+			"12:56:47 - Event: (LOOT_READY) (true)", -- [1520]
+			"12:56:47 - Adding to self.lootSlotInfo (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0) (1) (Creature-0-3133-1448-11459-93913-000247087C) (1)", -- [1521]
+			"12:56:47 - OnLootSlotCleared() (1) (|cff9d9d9d|Hitem:106876::::::::120:71::::::|h[Ritual Stone]|h|r) (0)", -- [1522]
+			"12:56:47 - Event: (LOOT_CLOSED)", -- [1523]
+			"12:56:47 - Event: (LOOT_CLOSED)", -- [1524]
+			"12:56:47 - Comm received:^1^Slooted^T^N1^S93913^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1525]
+			"12:56:47 - Comm received:^1^Slooted^T^N1^S93913^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1526]
+			"12:57:26 - Event: (ENCOUNTER_START) (1800) (Xhul'horac) (14) (10)", -- [1527]
+			"12:57:26 - UpdatePlayersData()", -- [1528]
+			"12:57:33 - Event: (ENCOUNTER_END) (1800) (Xhul'horac) (14) (10) (1)", -- [1529]
+			"12:57:36 - Event: (LOOT_READY) (true)", -- [1530]
+			"12:57:36 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-93068-0000470876) (256810)", -- [1531]
+			"12:57:36 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124178::::::::120:71::3:2:1801:1472:::|h[Pious Mantle]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1532]
+			"12:57:36 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124346::::::::120:71::3:2:1801:1472:::|h[Pauldrons of Iron Wrath]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1533]
+			"12:57:36 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124177::::::::120:71::3:2:1801:1472:::|h[Mantle of the Arcanic Conclave]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1534]
+			"12:57:36 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124199::::::::120:71::3:2:1801:1472:::|h[Loop of Beckoned Shadows]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1535]
+			"12:57:36 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124371::::::::120:71::3:2:1801:1472:::|h[Hammer of Wicked Infusion]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1536]
+			"12:57:36 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124374::::::::120:71::3:4:1801:1472:5850:3441:::|h[Fiendsbreath Warmace]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1537]
+			"12:57:36 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124374::::::::120:71::3:4:1801:1472:5850:3441:::|h[Fiendsbreath Warmace]|h|r) (4)", -- [1538]
+			"12:57:36 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124371::::::::120:71::3:2:1801:1472:::|h[Hammer of Wicked Infusion]|h|r) (4)", -- [1539]
+			"12:57:36 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124199::::::::120:71::3:2:1801:1472:::|h[Loop of Beckoned Shadows]|h|r) (4)", -- [1540]
+			"12:57:36 - Event: (LOOT_READY) (true)", -- [1541]
+			"12:57:36 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-93068-0000470876) (256810)", -- [1542]
+			"12:57:36 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124178::::::::120:71::3:2:1801:1472:::|h[Pious Mantle]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1543]
+			"12:57:36 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124346::::::::120:71::3:2:1801:1472:::|h[Pauldrons of Iron Wrath]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1544]
+			"12:57:36 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124177::::::::120:71::3:2:1801:1472:::|h[Mantle of the Arcanic Conclave]|h|r) (4) (1) (Creature-0-3133-1448-11459-93068-0000470876) (1)", -- [1545]
+			"12:57:36 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124177::::::::120:71::3:2:1801:1472:::|h[Mantle of the Arcanic Conclave]|h|r) (4)", -- [1546]
+			"12:57:36 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124346::::::::120:71::3:2:1801:1472:::|h[Pauldrons of Iron Wrath]|h|r) (4)", -- [1547]
+			"12:57:36 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124178::::::::120:71::3:2:1801:1472:::|h[Pious Mantle]|h|r) (4)", -- [1548]
+			"12:57:36 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124374) (|cffa335ee|Hitem:124374::::::::120:71::3:4:1801:1472:5850:3441:::|h[Fiendsbreath Warmace]|h|r) (1) (Shanyt) (WARRIOR)", -- [1549]
+			"12:57:36 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124371) (|cffa335ee|Hitem:124371::::::::120:71::3:2:1801:1472:::|h[Hammer of Wicked Infusion]|h|r) (1) (Shanyt) (WARRIOR)", -- [1550]
+			"12:57:36 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124199) (|cffa335ee|Hitem:124199::::::::120:71::3:2:1801:1472:::|h[Loop of Beckoned Shadows]|h|r) (1) (Shanyt) (WARRIOR)", -- [1551]
+			"12:57:36 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124177) (|cffa335ee|Hitem:124177::::::::120:71::3:2:1801:1472:::|h[Mantle of the Arcanic Conclave]|h|r) (1) (Shanyt) (WARRIOR)", -- [1552]
+			"12:57:36 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124346) (|cffa335ee|Hitem:124346::::::::120:71::3:2:1801:1472:::|h[Pauldrons of Iron Wrath]|h|r) (1) (Shanyt) (WARRIOR)", -- [1553]
+			"12:57:36 - Event: (ENCOUNTER_LOOT_RECEIVED) (1800) (124178) (|cffa335ee|Hitem:124178::::::::120:71::3:2:1801:1472:::|h[Pious Mantle]|h|r) (1) (Shanyt) (WARRIOR)", -- [1554]
+			"12:57:36 - OnLootSlotCleared() (1) (nil) (1)", -- [1555]
+			"12:57:36 - Event: (LOOT_CLOSED)", -- [1556]
+			"12:57:36 - Event: (LOOT_CLOSED)", -- [1557]
+			"12:57:37 - Comm received:^1^Slooted^T^N1^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1558]
+			"12:57:37 - Comm received:^1^Slooted^T^N1^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1559]
+			"12:57:38 - Storage:New (|cffa335ee|Hitem:124374::::::::120:71::3:4:1801:1472:5850:3441:::|h[Fiendsbreath Warmace]|h|r) (temp)", -- [1560]
+			"12:57:38 - Storage: searching for item: (|cffa335ee|Hitem:124374::::::::120:71::3:4:1801:1472:5850:3441:::|h[Fiendsbreath Warmace]|h|r)", -- [1561]
+			"12:57:38 - Found item at (3) (10)", -- [1562]
+			"12:57:38 - Error - Couldn't find item", -- [1563]
+			"12:57:38 - Storage:New (|cffa335ee|Hitem:124371::::::::120:71::3:2:1801:1472:::|h[Hammer of Wicked Infusion]|h|r) (temp)", -- [1564]
+			"12:57:38 - Storage: searching for item: (|cffa335ee|Hitem:124371::::::::120:71::3:2:1801:1472:::|h[Hammer of Wicked Infusion]|h|r)", -- [1565]
+			"12:57:38 - Found item at (3) (11)", -- [1566]
+			"12:57:38 - Error - Couldn't find item", -- [1567]
+			"12:57:38 - Storage:New (|cffa335ee|Hitem:124199::::::::120:71::3:2:1801:1472:::|h[Loop of Beckoned Shadows]|h|r) (temp)", -- [1568]
+			"12:57:38 - Storage: searching for item: (|cffa335ee|Hitem:124199::::::::120:71::3:2:1801:1472:::|h[Loop of Beckoned Shadows]|h|r)", -- [1569]
+			"12:57:38 - Found item at (3) (12)", -- [1570]
+			"12:57:38 - Error - Couldn't find item", -- [1571]
+			"12:57:38 - Storage:New (|cffa335ee|Hitem:124177::::::::120:71::3:2:1801:1472:::|h[Mantle of the Arcanic Conclave]|h|r) (temp)", -- [1572]
+			"12:57:38 - Storage: searching for item: (|cffa335ee|Hitem:124177::::::::120:71::3:2:1801:1472:::|h[Mantle of the Arcanic Conclave]|h|r)", -- [1573]
+			"12:57:38 - Found item at (3) (13)", -- [1574]
+			"12:57:38 - Error - Couldn't find item", -- [1575]
+			"12:57:38 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124374::::::::120:71::3:4:1801:1472:5850:3441:::|h[Fiendsbreath~`Warmace]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1576]
+			"12:57:38 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124371::::::::120:71::3:2:1801:1472:::|h[Hammer~`of~`Wicked~`Infusion]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1577]
+			"12:57:38 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124199::::::::120:71::3:2:1801:1472:::|h[Loop~`of~`Beckoned~`Shadows]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1578]
+			"12:57:38 - Storage:New (|cffa335ee|Hitem:124346::::::::120:71::3:2:1801:1472:::|h[Pauldrons of Iron Wrath]|h|r) (temp)", -- [1579]
+			"12:57:38 - Storage: searching for item: (|cffa335ee|Hitem:124346::::::::120:71::3:2:1801:1472:::|h[Pauldrons of Iron Wrath]|h|r)", -- [1580]
+			"12:57:38 - Found item at (3) (14)", -- [1581]
+			"12:57:38 - Error - Couldn't find item", -- [1582]
+			"12:57:38 - Storage:New (|cffa335ee|Hitem:124178::::::::120:71::3:2:1801:1472:::|h[Pious Mantle]|h|r) (temp)", -- [1583]
+			"12:57:38 - Storage: searching for item: (|cffa335ee|Hitem:124178::::::::120:71::3:2:1801:1472:::|h[Pious Mantle]|h|r)", -- [1584]
+			"12:57:38 - Found item at (3) (15)", -- [1585]
+			"12:57:38 - Error - Couldn't find item", -- [1586]
+			"12:57:38 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124177::::::::120:71::3:2:1801:1472:::|h[Mantle~`of~`the~`Arcanic~`Conclave]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1587]
+			"12:57:38 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124346::::::::120:71::3:2:1801:1472:::|h[Pauldrons~`of~`Iron~`Wrath]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1588]
+			"12:57:38 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124178::::::::120:71::3:2:1801:1472:::|h[Pious~`Mantle]|h|r^N2^S93068^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1589]
+			"12:59:13 - Event: (ENCOUNTER_START) (1777) (Fel Lord Zakuun) (14) (10)", -- [1590]
+			"12:59:13 - UpdatePlayersData()", -- [1591]
+			"12:59:18 - Event: (ENCOUNTER_END) (1777) (Fel Lord Zakuun) (14) (10) (1)", -- [1592]
+			"12:59:20 - Event: (LOOT_READY) (true)", -- [1593]
+			"12:59:20 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-89890-0000470876) (256636)", -- [1594]
+			"12:59:20 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124214::::::::120:71::3:2:1801:1472:::|h[Choker of Whispered Promises]|h|r) (4) (1) (Creature-0-3133-1448-11459-89890-0000470876) (1)", -- [1595]
+			"12:59:20 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124181::::::::120:71::3:2:1801:1472:::|h[Sash of Unending Anguish]|h|r) (4) (1) (Creature-0-3133-1448-11459-89890-0000470876) (1)", -- [1596]
+			"12:59:20 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124310::::::::120:71::3:4:1801:1472:5850:3441:::|h[Girdle of the Legion General]|h|r) (4) (1) (Creature-0-3133-1448-11459-89890-0000470876) (1)", -- [1597]
+			"12:59:20 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124237::::::::120:71::3:2:1801:1472:::|h[Discordant Chorus]|h|r) (4) (1) (Creature-0-3133-1448-11459-89890-0000470876) (1)", -- [1598]
+			"12:59:20 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124280::::::::120:71::3:3:1801:563:1472:::|h[Manacles of the Multitudes]|h|r) (4) (1) (Creature-0-3133-1448-11459-89890-0000470876) (1)", -- [1599]
+			"12:59:20 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124280::::::::120:71::3:3:1801:563:1472:::|h[Manacles of the Multitudes]|h|r) (4)", -- [1600]
+			"12:59:20 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124237::::::::120:71::3:2:1801:1472:::|h[Discordant Chorus]|h|r) (4)", -- [1601]
+			"12:59:20 - Event: (LOOT_READY) (true)", -- [1602]
+			"12:59:20 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-89890-0000470876) (256636)", -- [1603]
+			"12:59:20 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124214::::::::120:71::3:2:1801:1472:::|h[Choker of Whispered Promises]|h|r) (4) (1) (Creature-0-3133-1448-11459-89890-0000470876) (1)", -- [1604]
+			"12:59:20 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124181::::::::120:71::3:2:1801:1472:::|h[Sash of Unending Anguish]|h|r) (4) (1) (Creature-0-3133-1448-11459-89890-0000470876) (1)", -- [1605]
+			"12:59:20 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124310::::::::120:71::3:4:1801:1472:5850:3441:::|h[Girdle of the Legion General]|h|r) (4) (1) (Creature-0-3133-1448-11459-89890-0000470876) (1)", -- [1606]
+			"12:59:20 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124310::::::::120:71::3:4:1801:1472:5850:3441:::|h[Girdle of the Legion General]|h|r) (4)", -- [1607]
+			"12:59:20 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124181::::::::120:71::3:2:1801:1472:::|h[Sash of Unending Anguish]|h|r) (4)", -- [1608]
+			"12:59:20 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124214::::::::120:71::3:2:1801:1472:::|h[Choker of Whispered Promises]|h|r) (4)", -- [1609]
+			"12:59:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124280) (|cffa335ee|Hitem:124280::::::::120:71::3:3:1801:563:1472:::|h[Manacles of the Multitudes]|h|r) (1) (Shanyt) (WARRIOR)", -- [1610]
+			"12:59:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124237) (|cffa335ee|Hitem:124237::::::::120:71::3:2:1801:1472:::|h[Discordant Chorus]|h|r) (1) (Shanyt) (WARRIOR)", -- [1611]
+			"12:59:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124310) (|cffa335ee|Hitem:124310::::::::120:71::3:4:1801:1472:5850:3441:::|h[Girdle of the Legion General]|h|r) (1) (Shanyt) (WARRIOR)", -- [1612]
+			"12:59:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124181) (|cffa335ee|Hitem:124181::::::::120:71::3:2:1801:1472:::|h[Sash of Unending Anguish]|h|r) (1) (Shanyt) (WARRIOR)", -- [1613]
+			"12:59:21 - Event: (ENCOUNTER_LOOT_RECEIVED) (1777) (124214) (|cffa335ee|Hitem:124214::::::::120:71::3:2:1801:1472:::|h[Choker of Whispered Promises]|h|r) (1) (Shanyt) (WARRIOR)", -- [1614]
+			"12:59:21 - OnLootSlotCleared() (1) (nil) (1)", -- [1615]
+			"12:59:21 - Event: (LOOT_CLOSED)", -- [1616]
+			"12:59:21 - Event: (LOOT_CLOSED)", -- [1617]
+			"12:59:21 - Comm received:^1^Slooted^T^N1^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1618]
+			"12:59:21 - Comm received:^1^Slooted^T^N1^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1619]
+			"12:59:22 - Storage:New (|cffa335ee|Hitem:124280::::::::120:71::3:3:1801:563:1472:::|h[Manacles of the Multitudes]|h|r) (temp)", -- [1620]
+			"12:59:22 - Storage: searching for item: (|cffa335ee|Hitem:124280::::::::120:71::3:3:1801:563:1472:::|h[Manacles of the Multitudes]|h|r)", -- [1621]
+			"12:59:22 - Found item at (3) (16)", -- [1622]
+			"12:59:22 - Error - Couldn't find item", -- [1623]
+			"12:59:22 - Storage:New (|cffa335ee|Hitem:124237::::::::120:71::3:2:1801:1472:::|h[Discordant Chorus]|h|r) (temp)", -- [1624]
+			"12:59:22 - Storage: searching for item: (|cffa335ee|Hitem:124237::::::::120:71::3:2:1801:1472:::|h[Discordant Chorus]|h|r)", -- [1625]
+			"12:59:22 - Found item at (3) (17)", -- [1626]
+			"12:59:22 - Error - Couldn't find item", -- [1627]
+			"12:59:22 - Storage:New (|cffa335ee|Hitem:124310::::::::120:71::3:4:1801:1472:5850:3441:::|h[Girdle of the Legion General]|h|r) (temp)", -- [1628]
+			"12:59:22 - Storage: searching for item: (|cffa335ee|Hitem:124310::::::::120:71::3:4:1801:1472:5850:3441:::|h[Girdle of the Legion General]|h|r)", -- [1629]
+			"12:59:22 - Found item at (3) (18)", -- [1630]
+			"12:59:22 - Error - Couldn't find item", -- [1631]
+			"12:59:22 - Storage:New (|cffa335ee|Hitem:124181::::::::120:71::3:2:1801:1472:::|h[Sash of Unending Anguish]|h|r) (temp)", -- [1632]
+			"12:59:22 - Storage: searching for item: (|cffa335ee|Hitem:124181::::::::120:71::3:2:1801:1472:::|h[Sash of Unending Anguish]|h|r)", -- [1633]
+			"12:59:22 - Found item at (3) (19)", -- [1634]
+			"12:59:22 - Error - Couldn't find item", -- [1635]
+			"12:59:22 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124280::::::::120:71::3:3:1801:563:1472:::|h[Manacles~`of~`the~`Multitudes]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1636]
+			"12:59:22 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124237::::::::120:71::3:2:1801:1472:::|h[Discordant~`Chorus]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1637]
+			"12:59:22 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124310::::::::120:71::3:4:1801:1472:5850:3441:::|h[Girdle~`of~`the~`Legion~`General]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1638]
+			"12:59:22 - Storage:New (|cffa335ee|Hitem:124214::::::::120:71::3:2:1801:1472:::|h[Choker of Whispered Promises]|h|r) (temp)", -- [1639]
+			"12:59:22 - Storage: searching for item: (|cffa335ee|Hitem:124214::::::::120:71::3:2:1801:1472:::|h[Choker of Whispered Promises]|h|r)", -- [1640]
+			"12:59:22 - Found item at (3) (20)", -- [1641]
+			"12:59:22 - Error - Couldn't find item", -- [1642]
+			"12:59:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124181::::::::120:71::3:2:1801:1472:::|h[Sash~`of~`Unending~`Anguish]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1643]
+			"12:59:23 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124214::::::::120:71::3:2:1801:1472:::|h[Choker~`of~`Whispered~`Promises]|h|r^N2^S89890^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1644]
+			"13:00:21 - Event: (ENCOUNTER_START) (1795) (Mannoroth) (14) (10)", -- [1645]
+			"13:00:21 - UpdatePlayersData()", -- [1646]
+			"13:01:10 - Event: (ENCOUNTER_END) (1795) (Mannoroth) (14) (10) (1)", -- [1647]
+			"13:01:11 - Event: (LOOT_READY) (true)", -- [1648]
+			"13:01:11 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-91349-0000470876) (250518)", -- [1649]
+			"13:01:11 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe of the Arcanic Conclave]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1650]
+			"13:01:11 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle Robe]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1651]
+			"13:01:11 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade Chestguard]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1652]
+			"13:01:11 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124349::::::::120:71::3:2:1801:1472:::|h[Annihilan's Waistplate]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1653]
+			"13:01:11 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124266::::::::120:71::3:2:1801:1472:::|h[Empowered Demonskin Kilt]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1654]
+			"13:01:11 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:124361::::::::120:71::3:2:1801:1472:::|h[Cursed Demonbone Longbow]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1655]
+			"13:01:11 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:124361::::::::120:71::3:2:1801:1472:::|h[Cursed Demonbone Longbow]|h|r) (4)", -- [1656]
+			"13:01:11 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124266::::::::120:71::3:2:1801:1472:::|h[Empowered Demonskin Kilt]|h|r) (4)", -- [1657]
+			"13:01:11 - Event: (LOOT_READY) (true)", -- [1658]
+			"13:01:11 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-91349-0000470876) (250518)", -- [1659]
+			"13:01:11 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe of the Arcanic Conclave]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1660]
+			"13:01:11 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle Robe]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1661]
+			"13:01:11 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade Chestguard]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1662]
+			"13:01:11 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124349::::::::120:71::3:2:1801:1472:::|h[Annihilan's Waistplate]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1663]
+			"13:01:11 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124349::::::::120:71::3:2:1801:1472:::|h[Annihilan's Waistplate]|h|r) (4)", -- [1664]
+			"13:01:11 - Event: (LOOT_READY) (true)", -- [1665]
+			"13:01:11 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-91349-0000470876) (250518)", -- [1666]
+			"13:01:11 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe of the Arcanic Conclave]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1667]
+			"13:01:11 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle Robe]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1668]
+			"13:01:11 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade Chestguard]|h|r) (4) (1) (Creature-0-3133-1448-11459-91349-0000470876) (1)", -- [1669]
+			"13:01:11 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade Chestguard]|h|r) (4)", -- [1670]
+			"13:01:11 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle Robe]|h|r) (4)", -- [1671]
+			"13:01:11 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe of the Arcanic Conclave]|h|r) (4)", -- [1672]
+			"13:01:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124361) (|cffa335ee|Hitem:124361::::::::120:71::3:2:1801:1472:::|h[Cursed Demonbone Longbow]|h|r) (1) (Shanyt) (WARRIOR)", -- [1673]
+			"13:01:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124266) (|cffa335ee|Hitem:124266::::::::120:71::3:2:1801:1472:::|h[Empowered Demonskin Kilt]|h|r) (1) (Shanyt) (WARRIOR)", -- [1674]
+			"13:01:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124349) (|cffa335ee|Hitem:124349::::::::120:71::3:2:1801:1472:::|h[Annihilan's Waistplate]|h|r) (1) (Shanyt) (WARRIOR)", -- [1675]
+			"13:01:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124248) (|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade Chestguard]|h|r) (1) (Shanyt) (WARRIOR)", -- [1676]
+			"13:01:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124173) (|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle Robe]|h|r) (1) (Shanyt) (WARRIOR)", -- [1677]
+			"13:01:11 - Event: (ENCOUNTER_LOOT_RECEIVED) (1795) (124171) (|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe of the Arcanic Conclave]|h|r) (1) (Shanyt) (WARRIOR)", -- [1678]
+			"13:01:11 - OnLootSlotCleared() (1) (nil) (1)", -- [1679]
+			"13:01:11 - Event: (LOOT_CLOSED)", -- [1680]
+			"13:01:11 - Event: (LOOT_CLOSED)", -- [1681]
+			"13:01:12 - Comm received:^1^Slooted^T^N1^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1682]
+			"13:01:12 - Comm received:^1^Slooted^T^N1^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1683]
+			"13:01:13 - Storage:New (|cffa335ee|Hitem:124361::::::::120:71::3:2:1801:1472:::|h[Cursed Demonbone Longbow]|h|r) (temp)", -- [1684]
+			"13:01:13 - Storage: searching for item: (|cffa335ee|Hitem:124361::::::::120:71::3:2:1801:1472:::|h[Cursed Demonbone Longbow]|h|r)", -- [1685]
+			"13:01:13 - Found item at (3) (21)", -- [1686]
+			"13:01:13 - Error - Couldn't find item", -- [1687]
+			"13:01:13 - Storage:New (|cffa335ee|Hitem:124266::::::::120:71::3:2:1801:1472:::|h[Empowered Demonskin Kilt]|h|r) (temp)", -- [1688]
+			"13:01:13 - Storage: searching for item: (|cffa335ee|Hitem:124266::::::::120:71::3:2:1801:1472:::|h[Empowered Demonskin Kilt]|h|r)", -- [1689]
+			"13:01:13 - Found item at (3) (22)", -- [1690]
+			"13:01:13 - Error - Couldn't find item", -- [1691]
+			"13:01:13 - Storage:New (|cffa335ee|Hitem:124349::::::::120:71::3:2:1801:1472:::|h[Annihilan's Waistplate]|h|r) (temp)", -- [1692]
+			"13:01:13 - Storage: searching for item: (|cffa335ee|Hitem:124349::::::::120:71::3:2:1801:1472:::|h[Annihilan's Waistplate]|h|r)", -- [1693]
+			"13:01:13 - Found item at (3) (23)", -- [1694]
+			"13:01:13 - Error - Couldn't find item", -- [1695]
+			"13:01:13 - Storage:New (|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade Chestguard]|h|r) (temp)", -- [1696]
+			"13:01:13 - Storage: searching for item: (|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade Chestguard]|h|r)", -- [1697]
+			"13:01:13 - Found item at (3) (24)", -- [1698]
+			"13:01:13 - Error - Couldn't find item", -- [1699]
+			"13:01:13 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124361::::::::120:71::3:2:1801:1472:::|h[Cursed~`Demonbone~`Longbow]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1700]
+			"13:01:13 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124266::::::::120:71::3:2:1801:1472:::|h[Empowered~`Demonskin~`Kilt]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1701]
+			"13:01:13 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124349::::::::120:71::3:2:1801:1472:::|h[Annihilan's~`Waistplate]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1702]
+			"13:01:13 - Storage:New (|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle Robe]|h|r) (temp)", -- [1703]
+			"13:01:13 - Storage: searching for item: (|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle Robe]|h|r)", -- [1704]
+			"13:01:13 - Found item at (3) (25)", -- [1705]
+			"13:01:13 - Error - Couldn't find item", -- [1706]
+			"13:01:13 - Storage:New (|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe of the Arcanic Conclave]|h|r) (temp)", -- [1707]
+			"13:01:13 - Storage: searching for item: (|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe of the Arcanic Conclave]|h|r)", -- [1708]
+			"13:01:13 - Found item at (3) (26)", -- [1709]
+			"13:01:13 - Error - Couldn't find item", -- [1710]
+			"13:01:13 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade~`Chestguard]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1711]
+			"13:01:13 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle~`Robe]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1712]
+			"13:01:13 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe~`of~`the~`Arcanic~`Conclave]|h|r^N2^S91349^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1713]
+			"13:02:36 - Event: (ENCOUNTER_START) (1799) (Archimonde) (14) (10)", -- [1714]
+			"13:02:36 - UpdatePlayersData()", -- [1715]
+			"13:02:43 - Event: (ENCOUNTER_END) (1799) (Archimonde) (14) (10) (1)", -- [1716]
+			"13:02:44 - Event: (LOOT_READY) (true)", -- [1717]
+			"13:02:44 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-91331-0000470F57) (262560)", -- [1718]
+			"13:02:44 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124176::::::::120:71::3:2:1801:1472:::|h[Mantle of the Eredar Lord]|h|r) (4) (1) (Creature-0-3133-1448-11459-91331-0000470F57) (1)", -- [1719]
+			"13:02:44 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124372::::::::120:71::3:3:1801:40:1472:::|h[Gavel of the Eredar]|h|r) (4) (1) (Creature-0-3133-1448-11459-91331-0000470F57) (1)", -- [1720]
+			"13:02:44 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:124322::::::::120:71::3:4:1801:1472:5850:3441:::|h[Treads of the Defiler]|h|r) (4) (1) (Creature-0-3133-1448-11459-91331-0000470F57) (1)", -- [1721]
+			"13:02:44 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:124222::::::::120:71::3:2:1801:1472:::|h[World Ender's Gorget]|h|r) (4) (1) (Creature-0-3133-1448-11459-91331-0000470F57) (1)", -- [1722]
+			"13:02:44 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:124389::::::::120:71::3:2:1801:1472:::|h[Calamity's Edge]|h|r) (4) (1) (Creature-0-3133-1448-11459-91331-0000470F57) (1)", -- [1723]
+			"13:02:44 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:124389::::::::120:71::3:2:1801:1472:::|h[Calamity's Edge]|h|r) (4)", -- [1724]
+			"13:02:44 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:124222::::::::120:71::3:2:1801:1472:::|h[World Ender's Gorget]|h|r) (4)", -- [1725]
+			"13:02:44 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:124322::::::::120:71::3:4:1801:1472:5850:3441:::|h[Treads of the Defiler]|h|r) (4)", -- [1726]
+			"13:02:44 - Event: (LOOT_READY) (true)", -- [1727]
+			"13:02:44 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1448-11459-91331-0000470F57) (262560)", -- [1728]
+			"13:02:44 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:124176::::::::120:71::3:2:1801:1472:::|h[Mantle of the Eredar Lord]|h|r) (4) (1) (Creature-0-3133-1448-11459-91331-0000470F57) (1)", -- [1729]
+			"13:02:44 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:124372::::::::120:71::3:3:1801:40:1472:::|h[Gavel of the Eredar]|h|r) (4) (1) (Creature-0-3133-1448-11459-91331-0000470F57) (1)", -- [1730]
+			"13:02:44 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:124372::::::::120:71::3:3:1801:40:1472:::|h[Gavel of the Eredar]|h|r) (4)", -- [1731]
+			"13:02:44 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:124176::::::::120:71::3:2:1801:1472:::|h[Mantle of the Eredar Lord]|h|r) (4)", -- [1732]
+			"13:02:44 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124389) (|cffa335ee|Hitem:124389::::::::120:71::3:2:1801:1472:::|h[Calamity's Edge]|h|r) (1) (Shanyt) (WARRIOR)", -- [1733]
+			"13:02:44 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124222) (|cffa335ee|Hitem:124222::::::::120:71::3:2:1801:1472:::|h[World Ender's Gorget]|h|r) (1) (Shanyt) (WARRIOR)", -- [1734]
+			"13:02:44 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124322) (|cffa335ee|Hitem:124322::::::::120:71::3:4:1801:1472:5850:3441:::|h[Treads of the Defiler]|h|r) (1) (Shanyt) (WARRIOR)", -- [1735]
+			"13:02:44 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124372) (|cffa335ee|Hitem:124372::::::::120:71::3:3:1801:40:1472:::|h[Gavel of the Eredar]|h|r) (1) (Shanyt) (WARRIOR)", -- [1736]
+			"13:02:44 - Event: (ENCOUNTER_LOOT_RECEIVED) (1799) (124176) (|cffa335ee|Hitem:124176::::::::120:71::3:2:1801:1472:::|h[Mantle of the Eredar Lord]|h|r) (1) (Shanyt) (WARRIOR)", -- [1737]
+			"13:02:44 - OnLootSlotCleared() (1) (nil) (1)", -- [1738]
+			"13:02:44 - Event: (LOOT_CLOSED)", -- [1739]
+			"13:02:44 - Event: (LOOT_CLOSED)", -- [1740]
+			"13:02:45 - Comm received:^1^Slooted^T^N1^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1741]
+			"13:02:45 - Comm received:^1^Slooted^T^N1^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1742]
+			"13:02:46 - Storage:New (|cffa335ee|Hitem:124389::::::::120:71::3:2:1801:1472:::|h[Calamity's Edge]|h|r) (temp)", -- [1743]
+			"13:02:46 - Storage: searching for item: (|cffa335ee|Hitem:124389::::::::120:71::3:2:1801:1472:::|h[Calamity's Edge]|h|r)", -- [1744]
+			"13:02:46 - Found item at (1) (29)", -- [1745]
+			"13:02:46 - Error - Couldn't find item", -- [1746]
+			"13:02:46 - Storage:New (|cffa335ee|Hitem:124322::::::::120:71::3:4:1801:1472:5850:3441:::|h[Treads of the Defiler]|h|r) (temp)", -- [1747]
+			"13:02:46 - Storage: searching for item: (|cffa335ee|Hitem:124322::::::::120:71::3:4:1801:1472:5850:3441:::|h[Treads of the Defiler]|h|r)", -- [1748]
+			"13:02:46 - Found item at (2) (1)", -- [1749]
+			"13:02:46 - Error - Couldn't find item", -- [1750]
+			"13:02:46 - Storage:New (|cffa335ee|Hitem:124222::::::::120:71::3:2:1801:1472:::|h[World Ender's Gorget]|h|r) (temp)", -- [1751]
+			"13:02:46 - Storage: searching for item: (|cffa335ee|Hitem:124222::::::::120:71::3:2:1801:1472:::|h[World Ender's Gorget]|h|r)", -- [1752]
+			"13:02:46 - Found item at (1) (30)", -- [1753]
+			"13:02:46 - Error - Couldn't find item", -- [1754]
+			"13:02:46 - Storage:New (|cffa335ee|Hitem:124372::::::::120:71::3:3:1801:40:1472:::|h[Gavel of the Eredar]|h|r) (temp)", -- [1755]
+			"13:02:46 - Storage: searching for item: (|cffa335ee|Hitem:124372::::::::120:71::3:3:1801:40:1472:::|h[Gavel of the Eredar]|h|r)", -- [1756]
+			"13:02:46 - Found item at (2) (2)", -- [1757]
+			"13:02:46 - Error - Couldn't find item", -- [1758]
+			"13:02:46 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124389::::::::120:71::3:2:1801:1472:::|h[Calamity's~`Edge]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1759]
+			"13:02:46 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124322::::::::120:71::3:4:1801:1472:5850:3441:::|h[Treads~`of~`the~`Defiler]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1760]
+			"13:02:46 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124222::::::::120:71::3:2:1801:1472:::|h[World~`Ender's~`Gorget]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1761]
+			"13:02:46 - Storage:New (|cffa335ee|Hitem:124176::::::::120:71::3:2:1801:1472:::|h[Mantle of the Eredar Lord]|h|r) (temp)", -- [1762]
+			"13:02:46 - Storage: searching for item: (|cffa335ee|Hitem:124176::::::::120:71::3:2:1801:1472:::|h[Mantle of the Eredar Lord]|h|r)", -- [1763]
+			"13:02:46 - Found item at (2) (3)", -- [1764]
+			"13:02:46 - Error - Couldn't find item", -- [1765]
+			"13:02:47 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124372::::::::120:71::3:3:1801:40:1472:::|h[Gavel~`of~`the~`Eredar]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1766]
+			"13:02:47 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:124176::::::::120:71::3:2:1801:1472:::|h[Mantle~`of~`the~`Eredar~`Lord]|h|r^N2^S91331^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1767]
+			"13:03:12 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1768]
+			"13:03:12 - GetML()", -- [1769]
+			"13:03:44 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1770]
+			"13:03:44 - GetML()", -- [1771]
+			"13:10:16 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1772]
+			"13:10:16 - GetML()", -- [1773]
+			"13:10:34 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1774]
+			"13:10:34 - GetML()", -- [1775]
+			"13:11:02 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1776]
+			"13:11:02 - GetML()", -- [1777]
+			"13:12:35 - Event: (RAID_INSTANCE_WELCOME) (Dragon Soul (25 Player (Heroic))) (164845) (0) (0)", -- [1778]
+			"13:12:35 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [1779]
+			"13:12:35 - GetML()", -- [1780]
+			"13:12:42 - Event: (LOOT_READY) (true)", -- [1781]
+			"13:12:42 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57160-0000C71201) (12064)", -- [1782]
+			"13:12:42 - OnLootSlotCleared() (1) (nil) (1)", -- [1783]
+			"13:12:42 - Event: (LOOT_CLOSED)", -- [1784]
+			"13:12:42 - Event: (LOOT_CLOSED)", -- [1785]
+			"13:12:42 - Comm received:^1^Slooted^T^N1^S57160^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1786]
+			"13:12:42 - Comm received:^1^Slooted^T^N1^S57160^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1787]
+			"13:12:49 - Event: (LOOT_READY) (true)", -- [1788]
+			"13:12:49 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57158-0000C71201) (10888)", -- [1789]
+			"13:12:49 - OnLootSlotCleared() (1) (nil) (1)", -- [1790]
+			"13:12:49 - Event: (LOOT_CLOSED)", -- [1791]
+			"13:12:49 - Event: (LOOT_CLOSED)", -- [1792]
+			"13:12:49 - Comm received:^1^Slooted^T^N1^S57158^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1793]
+			"13:12:49 - Comm received:^1^Slooted^T^N1^S57158^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1794]
+			"13:12:59 - Event: (LOOT_READY) (true)", -- [1795]
+			"13:12:59 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57158-0000471200) (8407) (Vehicle-0-3779-967-9282-57159-0000471200) (10260) (Vehicle-0-3779-967-9282-57159-0000C71200) (3596)", -- [1796]
+			"13:12:59 - OnLootSlotCleared() (1) (nil) (1)", -- [1797]
+			"13:12:59 - Event: (LOOT_CLOSED)", -- [1798]
+			"13:12:59 - Event: (LOOT_CLOSED)", -- [1799]
+			"13:12:59 - Comm received:^1^Slooted^T^N1^S57158^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1800]
+			"13:12:59 - Comm received:^1^Slooted^T^N1^S57158^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1801]
+			"13:13:13 - Event: (LOOT_READY) (true)", -- [1802]
+			"13:13:13 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57158-0001C71201) (8548) (Creature-0-3779-967-9282-57158-0002471201) (11615) (Creature-0-3779-967-9282-57160-0001471201) (11664)", -- [1803]
+			"13:13:13 - OnLootSlotCleared() (1) (nil) (1)", -- [1804]
+			"13:13:13 - Event: (LOOT_CLOSED)", -- [1805]
+			"13:13:13 - Event: (LOOT_CLOSED)", -- [1806]
+			"13:13:13 - Comm received:^1^Slooted^T^N1^S57158^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1807]
+			"13:13:13 - Comm received:^1^Slooted^T^N1^S57158^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1808]
+			"13:13:19 - Event: (ENCOUNTER_START) (1292) (Morchok) (6) (25)", -- [1809]
+			"13:13:19 - UpdatePlayersData()", -- [1810]
+			"13:13:29 - Event: (ENCOUNTER_END) (1292) (Morchok) (6) (25) (1)", -- [1811]
+			"13:13:30 - Event: (LOOT_READY) (true)", -- [1812]
+			"13:13:30 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-55265-0000471200) (706042)", -- [1813]
+			"13:13:30 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78363::::::::120:71::::::|h[Vagaries of Time]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1814]
+			"13:13:30 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78492::::::::120:71::::::|h[Breathstealer Band]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1815]
+			"13:13:30 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78368::::::::120:71::::::|h[Underdweller's Spaulders]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1816]
+			"13:13:30 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78001::::::::120:71::::::|h[Windward Heart]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1817]
+			"13:13:30 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78372::::::::120:71::::::|h[Mycosynth Wristguards]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1818]
+			"13:13:30 - Ignoring (|cffffffff|Hcurrency:614:1|h[Mote of Darkness]|h|r) (as it's a currency)", -- [1819]
+			"13:13:30 - Adding to self.lootSlotInfo (9) (|cffa335ee|Hitem:78365::::::::120:71::::::|h[Robe of Glowing Stone]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1820]
+			"13:13:30 - OnLootSlotCleared() (9) (|cffa335ee|Hitem:78365::::::::120:71::::::|h[Robe of Glowing Stone]|h|r) (4)", -- [1821]
+			"13:13:30 - Event: (LOOT_READY) (true)", -- [1822]
+			"13:13:30 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-55265-0000471200) (706042)", -- [1823]
+			"13:13:30 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78363::::::::120:71::::::|h[Vagaries of Time]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1824]
+			"13:13:30 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78492::::::::120:71::::::|h[Breathstealer Band]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1825]
+			"13:13:30 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78368::::::::120:71::::::|h[Underdweller's Spaulders]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1826]
+			"13:13:30 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78001::::::::120:71::::::|h[Windward Heart]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1827]
+			"13:13:30 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78372::::::::120:71::::::|h[Mycosynth Wristguards]|h|r) (4) (1) (Creature-0-3779-967-9282-55265-0000471200) (1)", -- [1828]
+			"13:13:30 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:78372::::::::120:71::::::|h[Mycosynth Wristguards]|h|r) (4)", -- [1829]
+			"13:13:30 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:78001::::::::120:71::::::|h[Windward Heart]|h|r) (4)", -- [1830]
+			"13:13:30 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:78368::::::::120:71::::::|h[Underdweller's Spaulders]|h|r) (4)", -- [1831]
+			"13:13:30 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:78492::::::::120:71::::::|h[Breathstealer Band]|h|r) (4)", -- [1832]
+			"13:13:30 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:78363::::::::120:71::::::|h[Vagaries of Time]|h|r) (4)", -- [1833]
+			"13:13:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1292) (78365) (|cffa335ee|Hitem:78365::::::::120:71::::::|h[Robe of Glowing Stone]|h|r) (1) (Shanyt) (WARRIOR)", -- [1834]
+			"13:13:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1292) (71998) (|cffa335ee|Hitem:71998::::::::120:71::::::|h[Essence of Destruction]|h|r) (3) (Shanyt) (WARRIOR)", -- [1835]
+			"13:13:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1292) (78372) (|cffa335ee|Hitem:78372::::::::120:71::::::|h[Mycosynth Wristguards]|h|r) (1) (Shanyt) (WARRIOR)", -- [1836]
+			"13:13:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1292) (78001) (|cffa335ee|Hitem:78001::::::::120:71::::::|h[Windward Heart]|h|r) (1) (Shanyt) (WARRIOR)", -- [1837]
+			"13:13:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1292) (78368) (|cffa335ee|Hitem:78368::::::::120:71::::::|h[Underdweller's Spaulders]|h|r) (1) (Shanyt) (WARRIOR)", -- [1838]
+			"13:13:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1292) (78492) (|cffa335ee|Hitem:78492::::::::120:71::::::|h[Breathstealer Band]|h|r) (1) (Shanyt) (WARRIOR)", -- [1839]
+			"13:13:30 - Event: (ENCOUNTER_LOOT_RECEIVED) (1292) (78363) (|cffa335ee|Hitem:78363::::::::120:71::::::|h[Vagaries of Time]|h|r) (1) (Shanyt) (WARRIOR)", -- [1840]
+			"13:13:30 - OnLootSlotCleared() (1) (nil) (1)", -- [1841]
+			"13:13:30 - Event: (LOOT_CLOSED)", -- [1842]
+			"13:13:30 - Event: (LOOT_CLOSED)", -- [1843]
+			"13:13:31 - Comm received:^1^Slooted^T^N1^S55265^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1844]
+			"13:13:31 - Comm received:^1^Slooted^T^N1^S55265^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1845]
+			"13:13:32 - Storage:New (|cffa335ee|Hitem:78365::::::::120:71::::::|h[Robe of Glowing Stone]|h|r) (temp)", -- [1846]
+			"13:13:32 - Storage: searching for item: (|cffa335ee|Hitem:78365::::::::120:71::::::|h[Robe of Glowing Stone]|h|r)", -- [1847]
+			"13:13:32 - Found item at (1) (23)", -- [1848]
+			"13:13:32 - Error - Couldn't find item", -- [1849]
+			"13:13:32 - Storage:New (|cffa335ee|Hitem:78372::::::::120:71::::::|h[Mycosynth Wristguards]|h|r) (temp)", -- [1850]
+			"13:13:32 - Storage: searching for item: (|cffa335ee|Hitem:78372::::::::120:71::::::|h[Mycosynth Wristguards]|h|r)", -- [1851]
+			"13:13:32 - Found item at (1) (25)", -- [1852]
+			"13:13:32 - Error - Couldn't find item", -- [1853]
+			"13:13:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78365::::::::120:71::::::|h[Robe~`of~`Glowing~`Stone]|h|r^N2^S55265^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1854]
+			"13:13:32 - Storage:New (|cffa335ee|Hitem:78001::::::::120:71::::::|h[Windward Heart]|h|r) (temp)", -- [1855]
+			"13:13:32 - Storage: searching for item: (|cffa335ee|Hitem:78001::::::::120:71::::::|h[Windward Heart]|h|r)", -- [1856]
+			"13:13:32 - Found item at (1) (26)", -- [1857]
+			"13:13:32 - Error - Couldn't find item", -- [1858]
+			"13:13:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78372::::::::120:71::::::|h[Mycosynth~`Wristguards]|h|r^N2^S55265^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1859]
+			"13:13:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78001::::::::120:71::::::|h[Windward~`Heart]|h|r^N2^S55265^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1860]
+			"13:13:32 - Storage:New (|cffa335ee|Hitem:78492::::::::120:71::::::|h[Breathstealer Band]|h|r) (temp)", -- [1861]
+			"13:13:32 - Storage: searching for item: (|cffa335ee|Hitem:78492::::::::120:71::::::|h[Breathstealer Band]|h|r)", -- [1862]
+			"13:13:32 - Found item at (1) (28)", -- [1863]
+			"13:13:32 - Error - Couldn't find item", -- [1864]
+			"13:13:32 - Storage:New (|cffa335ee|Hitem:78368::::::::120:71::::::|h[Underdweller's Spaulders]|h|r) (temp)", -- [1865]
+			"13:13:32 - Storage: searching for item: (|cffa335ee|Hitem:78368::::::::120:71::::::|h[Underdweller's Spaulders]|h|r)", -- [1866]
+			"13:13:32 - Found item at (1) (27)", -- [1867]
+			"13:13:32 - Error - Couldn't find item", -- [1868]
+			"13:13:32 - Storage:New (|cffa335ee|Hitem:78363::::::::120:71::::::|h[Vagaries of Time]|h|r) (temp)", -- [1869]
+			"13:13:32 - Storage: searching for item: (|cffa335ee|Hitem:78363::::::::120:71::::::|h[Vagaries of Time]|h|r)", -- [1870]
+			"13:13:32 - Found item at (1) (29)", -- [1871]
+			"13:13:32 - Error - Couldn't find item", -- [1872]
+			"13:13:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78492::::::::120:71::::::|h[Breathstealer~`Band]|h|r^N2^S55265^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1873]
+			"13:13:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78368::::::::120:71::::::|h[Underdweller's~`Spaulders]|h|r^N2^S55265^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1874]
+			"13:13:32 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78363::::::::120:71::::::|h[Vagaries~`of~`Time]|h|r^N2^S55265^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1875]
+			"13:14:50 - Event: (LOOT_READY) (true)", -- [1876]
+			"13:14:50 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57877-0002471239) (5893) (Creature-0-3779-967-9282-57875-0000C71239) (8025) (Creature-0-3779-967-9282-57877-0001C71239) (3815)", -- [1877]
+			"13:14:50 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:62097::::::::120:71::::::|h[Clammy Mail Armor]|h|r) (0) (1) (Creature-0-3779-967-9282-57877-0001C71239) (1)", -- [1878]
+			"13:14:50 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:62097::::::::120:71::::::|h[Clammy Mail Armor]|h|r) (0)", -- [1879]
+			"13:14:50 - OnLootSlotCleared() (1) (nil) (1)", -- [1880]
+			"13:14:50 - Event: (LOOT_CLOSED)", -- [1881]
+			"13:14:50 - Event: (LOOT_CLOSED)", -- [1882]
+			"13:14:51 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1883]
+			"13:14:51 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1884]
+			"13:15:08 - Event: (LOOT_READY) (true)", -- [1885]
+			"13:15:08 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57877-0004471239) (6139) (Creature-0-3779-967-9282-57875-0001471239) (5241)", -- [1886]
+			"13:15:08 - OnLootSlotCleared() (1) (nil) (1)", -- [1887]
+			"13:15:08 - Event: (LOOT_CLOSED)", -- [1888]
+			"13:15:08 - Event: (LOOT_CLOSED)", -- [1889]
+			"13:15:08 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1890]
+			"13:15:08 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1891]
+			"13:15:21 - Event: (LOOT_READY) (true)", -- [1892]
+			"13:15:21 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57877-0000471239) (8503)", -- [1893]
+			"13:15:21 - OnLootSlotCleared() (1) (nil) (1)", -- [1894]
+			"13:15:21 - Event: (LOOT_CLOSED)", -- [1895]
+			"13:15:21 - Event: (LOOT_CLOSED)", -- [1896]
+			"13:15:21 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1897]
+			"13:15:21 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1898]
+			"13:15:26 - Event: (LOOT_READY) (true)", -- [1899]
+			"13:15:26 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57877-0001471239) (6748) (Creature-0-3779-967-9282-57875-0000471239) (3011)", -- [1900]
+			"13:15:26 - OnLootSlotCleared() (1) (nil) (1)", -- [1901]
+			"13:15:26 - Event: (LOOT_CLOSED)", -- [1902]
+			"13:15:26 - Event: (LOOT_CLOSED)", -- [1903]
+			"13:15:26 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1904]
+			"13:15:26 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1905]
+			"13:15:29 - Event: (LOOT_READY) (true)", -- [1906]
+			"13:15:29 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57877-0000C71239) (5257)", -- [1907]
+			"13:15:29 - OnLootSlotCleared() (1) (nil) (1)", -- [1908]
+			"13:15:29 - Event: (LOOT_CLOSED)", -- [1909]
+			"13:15:29 - Event: (LOOT_CLOSED)", -- [1910]
+			"13:15:29 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1911]
+			"13:15:29 - Comm received:^1^Slooted^T^N1^S57877^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1912]
+			"13:15:34 - Event: (ENCOUNTER_START) (1294) (Warlord Zon'ozz) (6) (25)", -- [1913]
+			"13:15:34 - UpdatePlayersData()", -- [1914]
+			"13:15:42 - Event: (ENCOUNTER_END) (1294) (Warlord Zon'ozz) (6) (25) (1)", -- [1915]
+			"13:15:42 - Event: (LOOT_READY) (true)", -- [1916]
+			"13:15:42 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-55308-0000471239) (688024)", -- [1917]
+			"13:15:42 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1918]
+			"13:15:42 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1919]
+			"13:15:42 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1920]
+			"13:15:42 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78390::::::::120:71::::::|h[Graveheart Bracers]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1921]
+			"13:15:42 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78855::::::::120:71::::::|h[Gauntlets of the Corrupted Vanquisher]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1922]
+			"13:15:42 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:78003::::::::120:71::::::|h[Indomitable Pride]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1923]
+			"13:15:42 - Ignoring (|cffffffff|Hcurrency:614:1|h[Mote of Darkness]|h|r) (as it's a currency)", -- [1924]
+			"13:15:42 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:78003::::::::120:71::::::|h[Indomitable Pride]|h|r) (4)", -- [1925]
+			"13:15:42 - Event: (LOOT_READY) (true)", -- [1926]
+			"13:15:42 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-55308-0000471239) (688024)", -- [1927]
+			"13:15:42 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1928]
+			"13:15:42 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1929]
+			"13:15:42 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1930]
+			"13:15:42 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78390::::::::120:71::::::|h[Graveheart Bracers]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1931]
+			"13:15:42 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78855::::::::120:71::::::|h[Gauntlets of the Corrupted Vanquisher]|h|r) (4) (1) (Creature-0-3779-967-9282-55308-0000471239) (1)", -- [1932]
+			"13:15:43 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:78855::::::::120:71::::::|h[Gauntlets of the Corrupted Vanquisher]|h|r) (4)", -- [1933]
+			"13:15:43 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:78390::::::::120:71::::::|h[Graveheart Bracers]|h|r) (4)", -- [1934]
+			"13:15:43 - Event: (LOOT_CLOSED)", -- [1935]
+			"13:15:43 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (4)", -- [1936]
+			"13:15:43 - Event: (LOOT_CLOSED)", -- [1937]
+			"13:15:43 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (4)", -- [1938]
+			"13:15:43 - Event: (LOOT_CLOSED)", -- [1939]
+			"13:15:43 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (4)", -- [1940]
+			"13:15:43 - Event: (LOOT_CLOSED)", -- [1941]
+			"13:15:43 - Comm received:^1^Slooted^T^N1^S55308^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1942]
+			"13:15:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1294) (71998) (|cffa335ee|Hitem:71998::::::::120:71::::::|h[Essence of Destruction]|h|r) (1) (Shanyt) (WARRIOR)", -- [1943]
+			"13:15:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1294) (78003) (|cffa335ee|Hitem:78003::::::::120:71::::::|h[Indomitable Pride]|h|r) (1) (Shanyt) (WARRIOR)", -- [1944]
+			"13:15:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1294) (78855) (|cffa335ee|Hitem:78855::::::::120:71::::::|h[Gauntlets of the Corrupted Vanquisher]|h|r) (1) (Shanyt) (WARRIOR)", -- [1945]
+			"13:15:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1294) (78390) (|cffa335ee|Hitem:78390::::::::120:71::::::|h[Graveheart Bracers]|h|r) (1) (Shanyt) (WARRIOR)", -- [1946]
+			"13:15:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1294) (78493) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (1) (Shanyt) (WARRIOR)", -- [1947]
+			"13:15:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1294) (77989) (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (1) (Shanyt) (WARRIOR)", -- [1948]
+			"13:15:43 - Event: (ENCOUNTER_LOOT_RECEIVED) (1294) (77989) (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (1) (Shanyt) (WARRIOR)", -- [1949]
+			"13:15:44 - Storage:New (|cffa335ee|Hitem:78003::::::::120:71::::::|h[Indomitable Pride]|h|r) (temp)", -- [1950]
+			"13:15:44 - Storage: searching for item: (|cffa335ee|Hitem:78003::::::::120:71::::::|h[Indomitable Pride]|h|r)", -- [1951]
+			"13:15:44 - Found item at (1) (24)", -- [1952]
+			"13:15:44 - Error - Couldn't find item", -- [1953]
+			"13:15:45 - Storage:New (|cffa335ee|Hitem:78855::::::::120:71::::::|h[Gauntlets of the Corrupted Vanquisher]|h|r) (temp)", -- [1954]
+			"13:15:45 - Storage: searching for item: (|cffa335ee|Hitem:78855::::::::120:71::::::|h[Gauntlets of the Corrupted Vanquisher]|h|r)", -- [1955]
+			"13:15:45 - Found item at (1) (25)", -- [1956]
+			"13:15:45 - Error - Couldn't find item", -- [1957]
+			"13:15:45 - Storage:New (|cffa335ee|Hitem:78390::::::::120:71::::::|h[Graveheart Bracers]|h|r) (temp)", -- [1958]
+			"13:15:45 - Storage: searching for item: (|cffa335ee|Hitem:78390::::::::120:71::::::|h[Graveheart Bracers]|h|r)", -- [1959]
+			"13:15:45 - Found item at (1) (26)", -- [1960]
+			"13:15:45 - Error - Couldn't find item", -- [1961]
+			"13:15:45 - Storage:New (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (temp)", -- [1962]
+			"13:15:45 - Storage: searching for item: (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r)", -- [1963]
+			"13:15:45 - Found item at (1) (28)", -- [1964]
+			"13:15:45 - Found item at (1) (29)", -- [1965]
+			"13:15:45 - Error - Couldn't find item", -- [1966]
+			"13:15:45 - Storage:New (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (temp)", -- [1967]
+			"13:15:45 - Storage: searching for item: (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r)", -- [1968]
+			"13:15:45 - Found item at (1) (27)", -- [1969]
+			"13:15:45 - Error - Couldn't find item", -- [1970]
+			"13:15:45 - Storage:New (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r) (temp)", -- [1971]
+			"13:15:45 - Storage: searching for item: (|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r)", -- [1972]
+			"13:15:45 - Found item at (1) (28)", -- [1973]
+			"13:15:45 - Found item at (1) (29)", -- [1974]
+			"13:15:45 - Error - Couldn't find item", -- [1975]
+			"13:15:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78003::::::::120:71::::::|h[Indomitable~`Pride]|h|r^N2^S55308^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1976]
+			"13:15:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78855::::::::120:71::::::|h[Gauntlets~`of~`the~`Corrupted~`Vanquisher]|h|r^N2^S55308^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1977]
+			"13:15:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78390::::::::120:71::::::|h[Graveheart~`Bracers]|h|r^N2^S55308^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1978]
+			"13:15:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal~`of~`the~`Seven~`Signs]|h|r^N2^S55308^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1979]
+			"13:15:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart~`Ring]|h|r^N2^S55308^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1980]
+			"13:15:45 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal~`of~`the~`Seven~`Signs]|h|r^N2^S55308^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [1981]
+			"13:16:48 - Event: (ENCOUNTER_START) (1295) (Yor'sahj the Unsleeping) (6) (25)", -- [1982]
+			"13:16:48 - UpdatePlayersData()", -- [1983]
+			"13:16:58 - Event: (ENCOUNTER_END) (1295) (Yor'sahj the Unsleeping) (6) (25) (1)", -- [1984]
+			"13:16:59 - Event: (LOOT_READY) (true)", -- [1985]
+			"13:16:59 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-55312-0000471239) (698619) (Creature-0-3779-967-9282-57333-0000471239) (13570) (Creature-0-3779-967-9282-57333-0000C71239) (8864) (Creature-0-3779-967-9282-57382-0000471239) (12781) (Creature-0-3779-967-9282-57382-0000C71239) (11267) (Creature-0-3779-967-9282-57382-0001471239) (11926) (Creature-0-3779-967-9282-57384-0000471239) (14193) (Creature-0-3779-967-9282-57384-0000C71239) (11918) (Creature-0-3779-967-9282-57384-0001471239) (9244) (Creature-0-3779-967-9282-57386-0000471239) (15705) (Creature-0-3779-967-9282-57386-0000C71239) (7271) (Creature-0-3779-967-9282-57386-0001471239) (9176) (Creature-0-3779-967-9282-57387-0000471239) (2905) (Creature-0-3779-967-9282-57387-0000C71239) (14692) (Creature-0-3779-967-9282-57387-0001471239) (15073) (Creature-0-3779-967-9282-57387-0001C71239) (2625) (Creature-0-3779-967-9282-57388-0000471239) (10074) (Creature-0-3779-967-9282-57388-0000C71239) (8886) (Creature-0-3779-967-9282-57388-0001471239) (9717)", -- [1986]
+			"13:16:59 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78405::::::::120:71::::::|h[Mindstrainer Treads]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [1987]
+			"13:16:59 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78489::::::::120:71::::::|h[Seal of Primordial Shadow]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [1988]
+			"13:16:59 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78401::::::::120:71::::::|h[Spire of Coagulated Globules]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [1989]
+			"13:16:59 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78404::::::::120:71::::::|h[Scalpel of Unrelenting Agony]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [1990]
+			"13:16:59 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78857::::::::120:71::::::|h[Leggings of the Corrupted Protector]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [1991]
+			"13:16:59 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:77991::::::::120:71::::::|h[Insignia of the Corrupted Mind]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [1992]
+			"13:16:59 - Adding to self.lootSlotInfo (8) (|cff0070dd|Hitem:152979::::::::120:71::::::|h[Puddle of Black Liquid]|h|r) (3) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [1993]
+			"13:16:59 - Ignoring (|cffffffff|Hcurrency:614:1|h[Mote of Darkness]|h|r) (as it's a currency)", -- [1994]
+			"13:16:59 - Adding to self.lootSlotInfo (11) (|cff9d9d9d|Hitem:62120::::::::120:71::::::|h[Sodden Cloth Belt]|h|r) (0) (1) (Creature-0-3779-967-9282-57388-0000471239) (1)", -- [1995]
+			"13:16:59 - OnLootSlotCleared() (11) (|cff9d9d9d|Hitem:62120::::::::120:71::::::|h[Sodden Cloth Belt]|h|r) (0)", -- [1996]
+			"13:16:59 - Event: (LOOT_READY) (true)", -- [1997]
+			"13:16:59 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-55312-0000471239) (698619) (Creature-0-3779-967-9282-57333-0000471239) (13570) (Creature-0-3779-967-9282-57333-0000C71239) (8864) (Creature-0-3779-967-9282-57382-0000471239) (12781) (Creature-0-3779-967-9282-57382-0000C71239) (11267) (Creature-0-3779-967-9282-57382-0001471239) (11926) (Creature-0-3779-967-9282-57384-0000471239) (14193) (Creature-0-3779-967-9282-57384-0000C71239) (11918) (Creature-0-3779-967-9282-57384-0001471239) (9244) (Creature-0-3779-967-9282-57386-0000471239) (15705) (Creature-0-3779-967-9282-57386-0000C71239) (7271) (Creature-0-3779-967-9282-57386-0001471239) (9176) (Creature-0-3779-967-9282-57387-0000471239) (2905) (Creature-0-3779-967-9282-57387-0000C71239) (14692) (Creature-0-3779-967-9282-57387-0001471239) (15073) (Creature-0-3779-967-9282-57387-0001C71239) (2625) (Creature-0-3779-967-9282-57388-0000471239) (10074) (Creature-0-3779-967-9282-57388-0000C71239) (8886) (Creature-0-3779-967-9282-57388-0001471239) (9717)", -- [1998]
+			"13:16:59 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78405::::::::120:71::::::|h[Mindstrainer Treads]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [1999]
+			"13:16:59 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78489::::::::120:71::::::|h[Seal of Primordial Shadow]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [2000]
+			"13:16:59 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78401::::::::120:71::::::|h[Spire of Coagulated Globules]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [2001]
+			"13:16:59 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78404::::::::120:71::::::|h[Scalpel of Unrelenting Agony]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [2002]
+			"13:16:59 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78857::::::::120:71::::::|h[Leggings of the Corrupted Protector]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [2003]
+			"13:16:59 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:77991::::::::120:71::::::|h[Insignia of the Corrupted Mind]|h|r) (4) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [2004]
+			"13:16:59 - Adding to self.lootSlotInfo (8) (|cff0070dd|Hitem:152979::::::::120:71::::::|h[Puddle of Black Liquid]|h|r) (3) (1) (Creature-0-3779-967-9282-55312-0000471239) (1)", -- [2005]
+			"13:16:59 - OnLootSlotCleared() (8) (|cff0070dd|Hitem:152979::::::::120:71::::::|h[Puddle of Black Liquid]|h|r) (3)", -- [2006]
+			"13:16:59 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:77991::::::::120:71::::::|h[Insignia of the Corrupted Mind]|h|r) (4)", -- [2007]
+			"13:16:59 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:78857::::::::120:71::::::|h[Leggings of the Corrupted Protector]|h|r) (4)", -- [2008]
+			"13:16:59 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:78404::::::::120:71::::::|h[Scalpel of Unrelenting Agony]|h|r) (4)", -- [2009]
+			"13:16:59 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:78401::::::::120:71::::::|h[Spire of Coagulated Globules]|h|r) (4)", -- [2010]
+			"13:16:59 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:78489::::::::120:71::::::|h[Seal of Primordial Shadow]|h|r) (4)", -- [2011]
+			"13:16:59 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:78405::::::::120:71::::::|h[Mindstrainer Treads]|h|r) (4)", -- [2012]
+			"13:17:00 - Event: (ENCOUNTER_LOOT_RECEIVED) (1295) (71998) (|cffa335ee|Hitem:71998::::::::120:71::::::|h[Essence of Destruction]|h|r) (1) (Shanyt) (WARRIOR)", -- [2013]
+			"13:17:00 - Event: (ENCOUNTER_LOOT_RECEIVED) (1295) (152979) (|cff0070dd|Hitem:152979::::::::120:71::::::|h[Puddle of Black Liquid]|h|r) (1) (Shanyt) (WARRIOR)", -- [2014]
+			"13:17:00 - Event: (ENCOUNTER_LOOT_RECEIVED) (1295) (77991) (|cffa335ee|Hitem:77991::::::::120:71::::::|h[Insignia of the Corrupted Mind]|h|r) (1) (Shanyt) (WARRIOR)", -- [2015]
+			"13:17:00 - Event: (ENCOUNTER_LOOT_RECEIVED) (1295) (78857) (|cffa335ee|Hitem:78857::::::::120:71::::::|h[Leggings of the Corrupted Protector]|h|r) (1) (Shanyt) (WARRIOR)", -- [2016]
+			"13:17:00 - Event: (ENCOUNTER_LOOT_RECEIVED) (1295) (78404) (|cffa335ee|Hitem:78404::::::::120:71::::::|h[Scalpel of Unrelenting Agony]|h|r) (1) (Shanyt) (WARRIOR)", -- [2017]
+			"13:17:00 - Event: (ENCOUNTER_LOOT_RECEIVED) (1295) (78401) (|cffa335ee|Hitem:78401::::::::120:71::::::|h[Spire of Coagulated Globules]|h|r) (1) (Shanyt) (WARRIOR)", -- [2018]
+			"13:17:00 - Event: (ENCOUNTER_LOOT_RECEIVED) (1295) (78489) (|cffa335ee|Hitem:78489::::::::120:71::::::|h[Seal of Primordial Shadow]|h|r) (1) (Shanyt) (WARRIOR)", -- [2019]
+			"13:17:00 - Event: (ENCOUNTER_LOOT_RECEIVED) (1295) (78405) (|cffa335ee|Hitem:78405::::::::120:71::::::|h[Mindstrainer Treads]|h|r) (1) (Shanyt) (WARRIOR)", -- [2020]
+			"13:17:00 - OnLootSlotCleared() (1) (nil) (1)", -- [2021]
+			"13:17:00 - Event: (LOOT_CLOSED)", -- [2022]
+			"13:17:00 - Event: (LOOT_CLOSED)", -- [2023]
+			"13:17:00 - Comm received:^1^Slooted^T^N1^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2024]
+			"13:17:00 - Comm received:^1^Slooted^T^N1^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2025]
+			"13:17:01 - Storage:New (|cff0070dd|Hitem:152979::::::::120:71::::::|h[Puddle of Black Liquid]|h|r) (temp)", -- [2026]
+			"13:17:01 - Storage: searching for item: (|cff0070dd|Hitem:152979::::::::120:71::::::|h[Puddle of Black Liquid]|h|r)", -- [2027]
+			"13:17:01 - Found item at (1) (25)", -- [2028]
+			"13:17:01 - Error - Couldn't find item", -- [2029]
+			"13:17:01 - Storage:New (|cffa335ee|Hitem:77991::::::::120:71::::::|h[Insignia of the Corrupted Mind]|h|r) (temp)", -- [2030]
+			"13:17:01 - Storage: searching for item: (|cffa335ee|Hitem:77991::::::::120:71::::::|h[Insignia of the Corrupted Mind]|h|r)", -- [2031]
+			"13:17:01 - Found item at (1) (26)", -- [2032]
+			"13:17:01 - Error - Couldn't find item", -- [2033]
+			"13:17:01 - Storage:New (|cffa335ee|Hitem:78857::::::::120:71::::::|h[Leggings of the Corrupted Protector]|h|r) (temp)", -- [2034]
+			"13:17:01 - Storage: searching for item: (|cffa335ee|Hitem:78857::::::::120:71::::::|h[Leggings of the Corrupted Protector]|h|r)", -- [2035]
+			"13:17:01 - Found item at (1) (27)", -- [2036]
+			"13:17:01 - Error - Couldn't find item", -- [2037]
+			"13:17:01 - Comm received:^1^Snot_tradeable^T^N1^S|cff0070dd|Hitem:152979::::::::120:71::::::|h[Puddle~`of~`Black~`Liquid]|h|r^N2^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2038]
+			"13:17:01 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:77991::::::::120:71::::::|h[Insignia~`of~`the~`Corrupted~`Mind]|h|r^N2^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2039]
+			"13:17:01 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78857::::::::120:71::::::|h[Leggings~`of~`the~`Corrupted~`Protector]|h|r^N2^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2040]
+			"13:17:01 - Storage:New (|cffa335ee|Hitem:78401::::::::120:71::::::|h[Spire of Coagulated Globules]|h|r) (temp)", -- [2041]
+			"13:17:01 - Storage: searching for item: (|cffa335ee|Hitem:78401::::::::120:71::::::|h[Spire of Coagulated Globules]|h|r)", -- [2042]
+			"13:17:01 - Found item at (1) (29)", -- [2043]
+			"13:17:01 - Error - Couldn't find item", -- [2044]
+			"13:17:01 - Storage:New (|cffa335ee|Hitem:78404::::::::120:71::::::|h[Scalpel of Unrelenting Agony]|h|r) (temp)", -- [2045]
+			"13:17:01 - Storage: searching for item: (|cffa335ee|Hitem:78404::::::::120:71::::::|h[Scalpel of Unrelenting Agony]|h|r)", -- [2046]
+			"13:17:01 - Found item at (1) (28)", -- [2047]
+			"13:17:01 - Error - Couldn't find item", -- [2048]
+			"13:17:01 - Storage:New (|cffa335ee|Hitem:78489::::::::120:71::::::|h[Seal of Primordial Shadow]|h|r) (temp)", -- [2049]
+			"13:17:01 - Storage: searching for item: (|cffa335ee|Hitem:78489::::::::120:71::::::|h[Seal of Primordial Shadow]|h|r)", -- [2050]
+			"13:17:01 - Found item at (1) (30)", -- [2051]
+			"13:17:01 - Error - Couldn't find item", -- [2052]
+			"13:17:01 - Storage:New (|cffa335ee|Hitem:78405::::::::120:71::::::|h[Mindstrainer Treads]|h|r) (temp)", -- [2053]
+			"13:17:01 - Storage: searching for item: (|cffa335ee|Hitem:78405::::::::120:71::::::|h[Mindstrainer Treads]|h|r)", -- [2054]
+			"13:17:01 - Found item at (2) (1)", -- [2055]
+			"13:17:02 - Error - Couldn't find item", -- [2056]
+			"13:17:02 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78401::::::::120:71::::::|h[Spire~`of~`Coagulated~`Globules]|h|r^N2^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2057]
+			"13:17:02 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78404::::::::120:71::::::|h[Scalpel~`of~`Unrelenting~`Agony]|h|r^N2^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2058]
+			"13:17:02 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78489::::::::120:71::::::|h[Seal~`of~`Primordial~`Shadow]|h|r^N2^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2059]
+			"13:17:02 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78405::::::::120:71::::::|h[Mindstrainer~`Treads]|h|r^N2^S55312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2060]
+			"13:20:37 - Event: (LOOT_READY) (true)", -- [2061]
+			"13:20:37 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-57821-00004713E2) (13427)", -- [2062]
+			"13:20:37 - OnLootSlotCleared() (1) (nil) (1)", -- [2063]
+			"13:20:37 - Event: (LOOT_CLOSED)", -- [2064]
+			"13:20:37 - Event: (LOOT_CLOSED)", -- [2065]
+			"13:20:37 - Comm received:^1^Slooted^T^N1^S57821^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2066]
+			"13:20:37 - Comm received:^1^Slooted^T^N1^S57821^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2067]
+			"13:20:44 - Event: (ENCOUNTER_START) (1296) (Hagara) (6) (25)", -- [2068]
+			"13:20:44 - UpdatePlayersData()", -- [2069]
+			"13:20:48 - Event: (ENCOUNTER_END) (1296) (Hagara) (6) (25) (1)", -- [2070]
+			"13:20:48 - Event: (LOOT_READY) (true)", -- [2071]
+			"13:20:48 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-55689-00004713BC) (715209)", -- [2072]
+			"13:20:48 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2073]
+			"13:20:48 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2074]
+			"13:20:48 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2075]
+			"13:20:48 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2076]
+			"13:20:48 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78002::::::::120:71::::::|h[Bone-Link Fetish]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2077]
+			"13:20:48 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:78416::::::::120:71::::::|h[Runescriven Demon Collar]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2078]
+			"13:20:48 - Ignoring (|cffffffff|Hcurrency:614:1|h[Mote of Darkness]|h|r) (as it's a currency)", -- [2079]
+			"13:20:49 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:78416::::::::120:71::::::|h[Runescriven Demon Collar]|h|r) (4)", -- [2080]
+			"13:20:49 - Event: (LOOT_READY) (true)", -- [2081]
+			"13:20:49 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-55689-00004713BC) (715209)", -- [2082]
+			"13:20:49 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2083]
+			"13:20:49 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2084]
+			"13:20:49 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2085]
+			"13:20:49 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2086]
+			"13:20:49 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78002::::::::120:71::::::|h[Bone-Link Fetish]|h|r) (4) (1) (Creature-0-3779-967-9282-55689-00004713BC) (1)", -- [2087]
+			"13:20:49 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:78002::::::::120:71::::::|h[Bone-Link Fetish]|h|r) (4)", -- [2088]
+			"13:20:49 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (4)", -- [2089]
+			"13:20:49 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (4)", -- [2090]
+			"13:20:49 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (4)", -- [2091]
+			"13:20:49 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (4)", -- [2092]
+			"13:20:49 - Event: (ENCOUNTER_LOOT_RECEIVED) (1296) (71998) (|cffa335ee|Hitem:71998::::::::120:71::::::|h[Essence of Destruction]|h|r) (1) (Shanyt) (WARRIOR)", -- [2093]
+			"13:20:49 - Event: (ENCOUNTER_LOOT_RECEIVED) (1296) (78416) (|cffa335ee|Hitem:78416::::::::120:71::::::|h[Runescriven Demon Collar]|h|r) (1) (Shanyt) (WARRIOR)", -- [2094]
+			"13:20:49 - Event: (ENCOUNTER_LOOT_RECEIVED) (1296) (78002) (|cffa335ee|Hitem:78002::::::::120:71::::::|h[Bone-Link Fetish]|h|r) (1) (Shanyt) (WARRIOR)", -- [2095]
+			"13:20:49 - Event: (ENCOUNTER_LOOT_RECEIVED) (1296) (78420) (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (1) (Shanyt) (WARRIOR)", -- [2096]
+			"13:20:49 - Event: (ENCOUNTER_LOOT_RECEIVED) (1296) (78413) (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (1) (Shanyt) (WARRIOR)", -- [2097]
+			"13:20:49 - Event: (ENCOUNTER_LOOT_RECEIVED) (1296) (78413) (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (1) (Shanyt) (WARRIOR)", -- [2098]
+			"13:20:49 - Event: (ENCOUNTER_LOOT_RECEIVED) (1296) (78420) (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (1) (Shanyt) (WARRIOR)", -- [2099]
+			"13:20:49 - OnLootSlotCleared() (1) (nil) (1)", -- [2100]
+			"13:20:49 - Event: (LOOT_CLOSED)", -- [2101]
+			"13:20:49 - Event: (LOOT_CLOSED)", -- [2102]
+			"13:20:49 - Comm received:^1^Slooted^T^N1^S55689^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2103]
+			"13:20:49 - Comm received:^1^Slooted^T^N1^S55689^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2104]
+			"13:20:51 - Storage:New (|cffa335ee|Hitem:78416::::::::120:71::::::|h[Runescriven Demon Collar]|h|r) (temp)", -- [2105]
+			"13:20:51 - Storage: searching for item: (|cffa335ee|Hitem:78416::::::::120:71::::::|h[Runescriven Demon Collar]|h|r)", -- [2106]
+			"13:20:51 - Found item at (1) (25)", -- [2107]
+			"13:20:51 - Error - Couldn't find item", -- [2108]
+			"13:20:51 - Storage:New (|cffa335ee|Hitem:78002::::::::120:71::::::|h[Bone-Link Fetish]|h|r) (temp)", -- [2109]
+			"13:20:51 - Storage: searching for item: (|cffa335ee|Hitem:78002::::::::120:71::::::|h[Bone-Link Fetish]|h|r)", -- [2110]
+			"13:20:51 - Found item at (1) (26)", -- [2111]
+			"13:20:51 - Error - Couldn't find item", -- [2112]
+			"13:20:51 - Storage:New (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (temp)", -- [2113]
+			"13:20:51 - Storage: searching for item: (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r)", -- [2114]
+			"13:20:51 - Found item at (1) (27)", -- [2115]
+			"13:20:51 - Found item at (1) (30)", -- [2116]
+			"13:20:51 - Error - Couldn't find item", -- [2117]
+			"13:20:51 - Storage:New (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (temp)", -- [2118]
+			"13:20:51 - Storage: searching for item: (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r)", -- [2119]
+			"13:20:51 - Found item at (1) (28)", -- [2120]
+			"13:20:51 - Found item at (1) (29)", -- [2121]
+			"13:20:51 - Error - Couldn't find item", -- [2122]
+			"13:20:51 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78416::::::::120:71::::::|h[Runescriven~`Demon~`Collar]|h|r^N2^S55689^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2123]
+			"13:20:51 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78002::::::::120:71::::::|h[Bone-Link~`Fetish]|h|r^N2^S55689^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2124]
+			"13:20:51 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle~`of~`the~`Grotesque]|h|r^N2^S55689^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2125]
+			"13:20:51 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet~`of~`Grasping~`Mouths]|h|r^N2^S55689^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2126]
+			"13:20:51 - Storage:New (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r) (temp)", -- [2127]
+			"13:20:51 - Storage: searching for item: (|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r)", -- [2128]
+			"13:20:51 - Found item at (1) (27)", -- [2129]
+			"13:20:51 - Found item at (1) (30)", -- [2130]
+			"13:20:51 - Error - Couldn't find item", -- [2131]
+			"13:20:51 - Storage:New (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r) (temp)", -- [2132]
+			"13:20:51 - Storage: searching for item: (|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r)", -- [2133]
+			"13:20:51 - Found item at (1) (28)", -- [2134]
+			"13:20:51 - Found item at (1) (29)", -- [2135]
+			"13:20:51 - Error - Couldn't find item", -- [2136]
+			"13:20:51 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle~`of~`the~`Grotesque]|h|r^N2^S55689^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2137]
+			"13:20:51 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet~`of~`Grasping~`Mouths]|h|r^N2^S55689^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2138]
+			"13:26:02 - Event: (ENCOUNTER_START) (1297) (Ultraxion) (6) (25)", -- [2139]
+			"13:26:02 - UpdatePlayersData()", -- [2140]
+			"13:26:09 - Event: (ENCOUNTER_END) (1297) (Ultraxion) (6) (25) (1)", -- [2141]
+			"13:26:15 - Event: (LOOT_READY) (true)", -- [2142]
+			"13:26:15 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3779-967-9282-210162-0000471531) (668363)", -- [2143]
+			"13:26:15 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest of the Corrupted Protector]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2144]
+			"13:26:15 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2145]
+			"13:26:15 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2146]
+			"13:26:15 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2147]
+			"13:26:15 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers of Looming Darkness]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2148]
+			"13:26:15 - Ignoring (|cffffffff|Hcurrency:614:1|h[Mote of Darkness]|h|r) (as it's a currency)", -- [2149]
+			"13:26:15 - Adding to self.lootSlotInfo (8) (|cffa335ee|Hitem:78433::::::::120:71::::::|h[Ledger of Revolting Rituals]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2150]
+			"13:26:15 - OnLootSlotCleared() (8) (|cffa335ee|Hitem:78433::::::::120:71::::::|h[Ledger of Revolting Rituals]|h|r) (4)", -- [2151]
+			"13:26:15 - Event: (LOOT_READY) (true)", -- [2152]
+			"13:26:15 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3779-967-9282-210162-0000471531) (668363)", -- [2153]
+			"13:26:15 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest of the Corrupted Protector]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2154]
+			"13:26:15 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2155]
+			"13:26:15 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2156]
+			"13:26:15 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2157]
+			"13:26:15 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers of Looming Darkness]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2158]
+			"13:26:15 - Ignoring (|cffffffff|Hcurrency:614:1|h[Mote of Darkness]|h|r) (as it's a currency)", -- [2159]
+			"13:26:15 - Event: (LOOT_READY) (true)", -- [2160]
+			"13:26:15 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3779-967-9282-210162-0000471531) (668363)", -- [2161]
+			"13:26:15 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest of the Corrupted Protector]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2162]
+			"13:26:15 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2163]
+			"13:26:15 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2164]
+			"13:26:15 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2165]
+			"13:26:15 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers of Looming Darkness]|h|r) (4) (1) (GameObject-0-3779-967-9282-210162-0000471531) (1)", -- [2166]
+			"13:26:15 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers of Looming Darkness]|h|r) (4)", -- [2167]
+			"13:26:15 - Event: (LOOT_CLOSED)", -- [2168]
+			"13:26:15 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest of the Corrupted Protector]|h|r) (4)", -- [2169]
+			"13:26:15 - Event: (LOOT_CLOSED)", -- [2170]
+			"13:26:15 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (4)", -- [2171]
+			"13:26:15 - Event: (LOOT_CLOSED)", -- [2172]
+			"13:26:15 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (4)", -- [2173]
+			"13:26:15 - Event: (LOOT_CLOSED)", -- [2174]
+			"13:26:15 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (4)", -- [2175]
+			"13:26:15 - Event: (LOOT_CLOSED)", -- [2176]
+			"13:26:15 - Comm received:^1^Slooted^T^N1^S210162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2177]
+			"13:26:15 - Event: (ENCOUNTER_LOOT_RECEIVED) (1297) (78433) (|cffa335ee|Hitem:78433::::::::120:71::::::|h[Ledger of Revolting Rituals]|h|r) (1) (Shanyt) (WARRIOR)", -- [2178]
+			"13:26:15 - Event: (ENCOUNTER_LOOT_RECEIVED) (1297) (78430) (|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers of Looming Darkness]|h|r) (1) (Shanyt) (WARRIOR)", -- [2179]
+			"13:26:15 - Event: (ENCOUNTER_LOOT_RECEIVED) (1297) (78431) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (1) (Shanyt) (WARRIOR)", -- [2180]
+			"13:26:15 - Event: (ENCOUNTER_LOOT_RECEIVED) (1297) (78493) (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (1) (Shanyt) (WARRIOR)", -- [2181]
+			"13:26:15 - Event: (ENCOUNTER_LOOT_RECEIVED) (1297) (78431) (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (1) (Shanyt) (WARRIOR)", -- [2182]
+			"13:26:16 - Event: (ENCOUNTER_LOOT_RECEIVED) (1297) (78848) (|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest of the Corrupted Protector]|h|r) (1) (Shanyt) (WARRIOR)", -- [2183]
+			"13:26:17 - Storage:New (|cffa335ee|Hitem:78433::::::::120:71::::::|h[Ledger of Revolting Rituals]|h|r) (temp)", -- [2184]
+			"13:26:17 - Storage: searching for item: (|cffa335ee|Hitem:78433::::::::120:71::::::|h[Ledger of Revolting Rituals]|h|r)", -- [2185]
+			"13:26:17 - Found item at (2) (1)", -- [2186]
+			"13:26:17 - Error - Couldn't find item", -- [2187]
+			"13:26:17 - Storage:New (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (temp)", -- [2188]
+			"13:26:17 - Storage: searching for item: (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r)", -- [2189]
+			"13:26:17 - Found item at (2) (3)", -- [2190]
+			"13:26:17 - Found item at (2) (5)", -- [2191]
+			"13:26:17 - Error - Couldn't find item", -- [2192]
+			"13:26:17 - Storage:New (|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers of Looming Darkness]|h|r) (temp)", -- [2193]
+			"13:26:17 - Storage: searching for item: (|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers of Looming Darkness]|h|r)", -- [2194]
+			"13:26:17 - Found item at (2) (2)", -- [2195]
+			"13:26:17 - Error - Couldn't find item", -- [2196]
+			"13:26:17 - Storage:New (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r) (temp)", -- [2197]
+			"13:26:17 - Storage: searching for item: (|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r)", -- [2198]
+			"13:26:17 - Found item at (2) (3)", -- [2199]
+			"13:26:17 - Found item at (2) (5)", -- [2200]
+			"13:26:17 - Error - Couldn't find item", -- [2201]
+			"13:26:17 - Storage:New (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r) (temp)", -- [2202]
+			"13:26:17 - Storage: searching for item: (|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r)", -- [2203]
+			"13:26:17 - Found item at (2) (4)", -- [2204]
+			"13:26:17 - Error - Couldn't find item", -- [2205]
+			"13:26:17 - Storage:New (|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest of the Corrupted Protector]|h|r) (temp)", -- [2206]
+			"13:26:17 - Storage: searching for item: (|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest of the Corrupted Protector]|h|r)", -- [2207]
+			"13:26:17 - Found item at (2) (6)", -- [2208]
+			"13:26:17 - Error - Couldn't find item", -- [2209]
+			"13:26:17 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78433::::::::120:71::::::|h[Ledger~`of~`Revolting~`Rituals]|h|r^N2^S210162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2210]
+			"13:26:17 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart~`Warboots]|h|r^N2^S210162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2211]
+			"13:26:17 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers~`of~`Looming~`Darkness]|h|r^N2^S210162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2212]
+			"13:26:17 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart~`Warboots]|h|r^N2^S210162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2213]
+			"13:26:17 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart~`Ring]|h|r^N2^S210162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2214]
+			"13:26:17 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest~`of~`the~`Corrupted~`Protector]|h|r^N2^S210162^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2215]
+			"13:27:56 - Event: (ENCOUNTER_START) (1298) (Warmaster Blackhorn) (6) (25)", -- [2216]
+			"13:27:56 - UpdatePlayersData()", -- [2217]
+			"13:30:27 - Event: (ENCOUNTER_END) (1298) (Warmaster Blackhorn) (6) (25) (0)", -- [2218]
+			"13:31:30 - Event: (ENCOUNTER_START) (1298) (Warmaster Blackhorn) (6) (25)", -- [2219]
+			"13:31:30 - UpdatePlayersData()", -- [2220]
+			"13:34:37 - Event: (ENCOUNTER_END) (1298) (Warmaster Blackhorn) (6) (25) (1)", -- [2221]
+			"13:34:38 - Event: (LOOT_READY) (true)", -- [2222]
+			"13:34:38 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-56427-000047165E) (709142)", -- [2223]
+			"13:34:38 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78446::::::::120:71::::::|h[Shadow Wing Armbands]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2224]
+			"13:34:38 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78447::::::::120:71::::::|h[Belt of the Beloved Companion]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2225]
+			"13:34:38 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78450::::::::120:71::::::|h[Timepiece of the Bronze Flight]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2226]
+			"13:34:38 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78851::::::::120:71::::::|h[Crown of the Corrupted Protector]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2227]
+			"13:34:38 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78445::::::::120:71::::::|h[Ataraxis, Cudgel of the Warmaster]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2228]
+			"13:34:38 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:78850::::::::120:71::::::|h[Crown of the Corrupted Conqueror]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2229]
+			"13:34:38 - Ignoring (|cffffffff|Hcurrency:614:1|h[Mote of Darkness]|h|r) (as it's a currency)", -- [2230]
+			"13:34:38 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:78850::::::::120:71::::::|h[Crown of the Corrupted Conqueror]|h|r) (4)", -- [2231]
+			"13:34:38 - Event: (LOOT_READY) (true)", -- [2232]
+			"13:34:38 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3779-967-9282-56427-000047165E) (709142)", -- [2233]
+			"13:34:38 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78446::::::::120:71::::::|h[Shadow Wing Armbands]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2234]
+			"13:34:38 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78447::::::::120:71::::::|h[Belt of the Beloved Companion]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2235]
+			"13:34:38 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78450::::::::120:71::::::|h[Timepiece of the Bronze Flight]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2236]
+			"13:34:38 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78851::::::::120:71::::::|h[Crown of the Corrupted Protector]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2237]
+			"13:34:38 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78445::::::::120:71::::::|h[Ataraxis, Cudgel of the Warmaster]|h|r) (4) (1) (Creature-0-3779-967-9282-56427-000047165E) (1)", -- [2238]
+			"13:34:38 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:78445::::::::120:71::::::|h[Ataraxis, Cudgel of the Warmaster]|h|r) (4)", -- [2239]
+			"13:34:38 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:78851::::::::120:71::::::|h[Crown of the Corrupted Protector]|h|r) (4)", -- [2240]
+			"13:34:38 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:78450::::::::120:71::::::|h[Timepiece of the Bronze Flight]|h|r) (4)", -- [2241]
+			"13:34:38 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:78447::::::::120:71::::::|h[Belt of the Beloved Companion]|h|r) (4)", -- [2242]
+			"13:34:38 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:78446::::::::120:71::::::|h[Shadow Wing Armbands]|h|r) (4)", -- [2243]
+			"13:34:38 - Event: (ENCOUNTER_LOOT_RECEIVED) (1298) (71998) (|cffa335ee|Hitem:71998::::::::120:71::::::|h[Essence of Destruction]|h|r) (2) (Shanyt) (WARRIOR)", -- [2244]
+			"13:34:38 - Event: (ENCOUNTER_LOOT_RECEIVED) (1298) (78850) (|cffa335ee|Hitem:78850::::::::120:71::::::|h[Crown of the Corrupted Conqueror]|h|r) (1) (Shanyt) (WARRIOR)", -- [2245]
+			"13:34:38 - Event: (ENCOUNTER_LOOT_RECEIVED) (1298) (78445) (|cffa335ee|Hitem:78445::::::::120:71::::::|h[Ataraxis, Cudgel of the Warmaster]|h|r) (1) (Shanyt) (WARRIOR)", -- [2246]
+			"13:34:38 - Event: (ENCOUNTER_LOOT_RECEIVED) (1298) (78851) (|cffa335ee|Hitem:78851::::::::120:71::::::|h[Crown of the Corrupted Protector]|h|r) (1) (Shanyt) (WARRIOR)", -- [2247]
+			"13:34:38 - Event: (ENCOUNTER_LOOT_RECEIVED) (1298) (78450) (|cffa335ee|Hitem:78450::::::::120:71::::::|h[Timepiece of the Bronze Flight]|h|r) (1) (Shanyt) (WARRIOR)", -- [2248]
+			"13:34:38 - Event: (ENCOUNTER_LOOT_RECEIVED) (1298) (78447) (|cffa335ee|Hitem:78447::::::::120:71::::::|h[Belt of the Beloved Companion]|h|r) (1) (Shanyt) (WARRIOR)", -- [2249]
+			"13:34:38 - Event: (ENCOUNTER_LOOT_RECEIVED) (1298) (78446) (|cffa335ee|Hitem:78446::::::::120:71::::::|h[Shadow Wing Armbands]|h|r) (1) (Shanyt) (WARRIOR)", -- [2250]
+			"13:34:38 - OnLootSlotCleared() (1) (nil) (1)", -- [2251]
+			"13:34:38 - Event: (LOOT_CLOSED)", -- [2252]
+			"13:34:38 - Event: (LOOT_CLOSED)", -- [2253]
+			"13:34:39 - Comm received:^1^Slooted^T^N1^S56427^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2254]
+			"13:34:39 - Comm received:^1^Slooted^T^N1^S56427^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2255]
+			"13:34:40 - Storage:New (|cffa335ee|Hitem:78850::::::::120:71::::::|h[Crown of the Corrupted Conqueror]|h|r) (temp)", -- [2256]
+			"13:34:40 - Storage: searching for item: (|cffa335ee|Hitem:78850::::::::120:71::::::|h[Crown of the Corrupted Conqueror]|h|r)", -- [2257]
+			"13:34:40 - Found item at (1) (25)", -- [2258]
+			"13:34:40 - Error - Couldn't find item", -- [2259]
+			"13:34:40 - Storage:New (|cffa335ee|Hitem:78851::::::::120:71::::::|h[Crown of the Corrupted Protector]|h|r) (temp)", -- [2260]
+			"13:34:40 - Storage: searching for item: (|cffa335ee|Hitem:78851::::::::120:71::::::|h[Crown of the Corrupted Protector]|h|r)", -- [2261]
+			"13:34:40 - Found item at (1) (27)", -- [2262]
+			"13:34:40 - Error - Couldn't find item", -- [2263]
+			"13:34:40 - Storage:New (|cffa335ee|Hitem:78445::::::::120:71::::::|h[Ataraxis, Cudgel of the Warmaster]|h|r) (temp)", -- [2264]
+			"13:34:40 - Storage: searching for item: (|cffa335ee|Hitem:78445::::::::120:71::::::|h[Ataraxis, Cudgel of the Warmaster]|h|r)", -- [2265]
+			"13:34:40 - Found item at (1) (26)", -- [2266]
+			"13:34:40 - Error - Couldn't find item", -- [2267]
+			"13:34:40 - Storage:New (|cffa335ee|Hitem:78450::::::::120:71::::::|h[Timepiece of the Bronze Flight]|h|r) (temp)", -- [2268]
+			"13:34:40 - Storage: searching for item: (|cffa335ee|Hitem:78450::::::::120:71::::::|h[Timepiece of the Bronze Flight]|h|r)", -- [2269]
+			"13:34:40 - Found item at (1) (28)", -- [2270]
+			"13:34:40 - Error - Couldn't find item", -- [2271]
+			"13:34:40 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78850::::::::120:71::::::|h[Crown~`of~`the~`Corrupted~`Conqueror]|h|r^N2^S56427^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2272]
+			"13:34:40 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78851::::::::120:71::::::|h[Crown~`of~`the~`Corrupted~`Protector]|h|r^N2^S56427^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2273]
+			"13:34:40 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78445::::::::120:71::::::|h[Ataraxis,~`Cudgel~`of~`the~`Warmaster]|h|r^N2^S56427^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2274]
+			"13:34:40 - Storage:New (|cffa335ee|Hitem:78447::::::::120:71::::::|h[Belt of the Beloved Companion]|h|r) (temp)", -- [2275]
+			"13:34:40 - Storage: searching for item: (|cffa335ee|Hitem:78447::::::::120:71::::::|h[Belt of the Beloved Companion]|h|r)", -- [2276]
+			"13:34:40 - Found item at (1) (29)", -- [2277]
+			"13:34:40 - Error - Couldn't find item", -- [2278]
+			"13:34:40 - Storage:New (|cffa335ee|Hitem:78446::::::::120:71::::::|h[Shadow Wing Armbands]|h|r) (temp)", -- [2279]
+			"13:34:40 - Storage: searching for item: (|cffa335ee|Hitem:78446::::::::120:71::::::|h[Shadow Wing Armbands]|h|r)", -- [2280]
+			"13:34:40 - Found item at (1) (30)", -- [2281]
+			"13:34:40 - Error - Couldn't find item", -- [2282]
+			"13:34:40 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78450::::::::120:71::::::|h[Timepiece~`of~`the~`Bronze~`Flight]|h|r^N2^S56427^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2283]
+			"13:34:40 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78447::::::::120:71::::::|h[Belt~`of~`the~`Beloved~`Companion]|h|r^N2^S56427^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2284]
+			"13:34:40 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78446::::::::120:71::::::|h[Shadow~`Wing~`Armbands]|h|r^N2^S56427^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2285]
+			"13:35:16 - Event: (ENCOUNTER_START) (1291) (Spine of Deathwing) (6) (25)", -- [2286]
+			"13:35:16 - UpdatePlayersData()", -- [2287]
+			"13:40:59 - Event: (ENCOUNTER_END) (1291) (Spine of Deathwing) (6) (25) (1)", -- [2288]
+			"13:41:08 - Event: (LOOT_READY) (true)", -- [2289]
+			"13:41:08 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3779-967-9282-209896-00004718AB) (706864)", -- [2290]
+			"13:41:08 - Adding to self.lootSlotInfo (2) (|cff0070dd|Hitem:152980::::::::120:71::::::|h[Elementium Back Plate]|h|r) (3) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2291]
+			"13:41:08 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2292]
+			"13:41:08 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78462::::::::120:71::::::|h[Molten Blood Footpads]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2293]
+			"13:41:08 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:77994::::::::120:71::::::|h[Wrath of Unchaining]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2294]
+			"13:41:08 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2295]
+			"13:41:08 - Adding to self.lootSlotInfo (8) (|cffa335ee|Hitem:77998::::::::120:71::::::|h[Resolve of Undying]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2296]
+			"13:41:08 - Adding to self.lootSlotInfo (9) (|cffa335ee|Hitem:78463::::::::120:71::::::|h[Belt of Shattered Elementium]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2297]
+			"13:41:08 - Ignoring (|cffffffff|Hcurrency:614:1|h[Mote of Darkness]|h|r) (as it's a currency)", -- [2298]
+			"13:41:09 - OnLootSlotCleared() (9) (|cffa335ee|Hitem:78463::::::::120:71::::::|h[Belt of Shattered Elementium]|h|r) (4)", -- [2299]
+			"13:41:09 - OnLootSlotCleared() (8) (|cffa335ee|Hitem:77998::::::::120:71::::::|h[Resolve of Undying]|h|r) (4)", -- [2300]
+			"13:41:09 - Event: (LOOT_READY) (true)", -- [2301]
+			"13:41:09 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3779-967-9282-209896-00004718AB) (706864)", -- [2302]
+			"13:41:09 - Adding to self.lootSlotInfo (2) (|cff0070dd|Hitem:152980::::::::120:71::::::|h[Elementium Back Plate]|h|r) (3) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2303]
+			"13:41:09 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2304]
+			"13:41:09 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78462::::::::120:71::::::|h[Molten Blood Footpads]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2305]
+			"13:41:09 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:77994::::::::120:71::::::|h[Wrath of Unchaining]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2306]
+			"13:41:09 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (4) (1) (GameObject-0-3779-967-9282-209896-00004718AB) (1)", -- [2307]
+			"13:41:09 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (4)", -- [2308]
+			"13:41:09 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:77994::::::::120:71::::::|h[Wrath of Unchaining]|h|r) (4)", -- [2309]
+			"13:41:09 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:78462::::::::120:71::::::|h[Molten Blood Footpads]|h|r) (4)", -- [2310]
+			"13:41:09 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (4)", -- [2311]
+			"13:41:09 - OnLootSlotCleared() (2) (|cff0070dd|Hitem:152980::::::::120:71::::::|h[Elementium Back Plate]|h|r) (3)", -- [2312]
+			"13:41:09 - Event: (ENCOUNTER_LOOT_RECEIVED) (1291) (78463) (|cffa335ee|Hitem:78463::::::::120:71::::::|h[Belt of Shattered Elementium]|h|r) (1) (Shanyt) (WARRIOR)", -- [2313]
+			"13:41:09 - Event: (ENCOUNTER_LOOT_RECEIVED) (1291) (77998) (|cffa335ee|Hitem:77998::::::::120:71::::::|h[Resolve of Undying]|h|r) (1) (Shanyt) (WARRIOR)", -- [2314]
+			"13:41:09 - Event: (ENCOUNTER_LOOT_RECEIVED) (1291) (78461) (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (1) (Shanyt) (WARRIOR)", -- [2315]
+			"13:41:09 - Event: (ENCOUNTER_LOOT_RECEIVED) (1291) (77994) (|cffa335ee|Hitem:77994::::::::120:71::::::|h[Wrath of Unchaining]|h|r) (1) (Shanyt) (WARRIOR)", -- [2316]
+			"13:41:09 - Event: (ENCOUNTER_LOOT_RECEIVED) (1291) (78462) (|cffa335ee|Hitem:78462::::::::120:71::::::|h[Molten Blood Footpads]|h|r) (1) (Shanyt) (WARRIOR)", -- [2317]
+			"13:41:09 - Event: (ENCOUNTER_LOOT_RECEIVED) (1291) (78461) (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (1) (Shanyt) (WARRIOR)", -- [2318]
+			"13:41:09 - Event: (ENCOUNTER_LOOT_RECEIVED) (1291) (71998) (|cffa335ee|Hitem:71998::::::::120:71::::::|h[Essence of Destruction]|h|r) (1) (Shanyt) (WARRIOR)", -- [2319]
+			"13:41:09 - Event: (ENCOUNTER_LOOT_RECEIVED) (1291) (152980) (|cff0070dd|Hitem:152980::::::::120:71::::::|h[Elementium Back Plate]|h|r) (1) (Shanyt) (WARRIOR)", -- [2320]
+			"13:41:09 - OnLootSlotCleared() (1) (nil) (1)", -- [2321]
+			"13:41:09 - Event: (LOOT_CLOSED)", -- [2322]
+			"13:41:09 - Event: (LOOT_CLOSED)", -- [2323]
+			"13:41:09 - Comm received:^1^Slooted^T^N1^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2324]
+			"13:41:09 - Comm received:^1^Slooted^T^N1^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2325]
+			"13:41:11 - Storage:New (|cffa335ee|Hitem:78463::::::::120:71::::::|h[Belt of Shattered Elementium]|h|r) (temp)", -- [2326]
+			"13:41:11 - Storage: searching for item: (|cffa335ee|Hitem:78463::::::::120:71::::::|h[Belt of Shattered Elementium]|h|r)", -- [2327]
+			"13:41:11 - Found item at (2) (1)", -- [2328]
+			"13:41:11 - Error - Couldn't find item", -- [2329]
+			"13:41:11 - Storage:New (|cffa335ee|Hitem:77998::::::::120:71::::::|h[Resolve of Undying]|h|r) (temp)", -- [2330]
+			"13:41:11 - Storage: searching for item: (|cffa335ee|Hitem:77998::::::::120:71::::::|h[Resolve of Undying]|h|r)", -- [2331]
+			"13:41:11 - Found item at (2) (2)", -- [2332]
+			"13:41:11 - Error - Couldn't find item", -- [2333]
+			"13:41:11 - Storage:New (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (temp)", -- [2334]
+			"13:41:11 - Storage: searching for item: (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r)", -- [2335]
+			"13:41:11 - Found item at (2) (3)", -- [2336]
+			"13:41:11 - Found item at (2) (6)", -- [2337]
+			"13:41:11 - Error - Couldn't find item", -- [2338]
+			"13:41:11 - Storage:New (|cffa335ee|Hitem:77994::::::::120:71::::::|h[Wrath of Unchaining]|h|r) (temp)", -- [2339]
+			"13:41:11 - Storage: searching for item: (|cffa335ee|Hitem:77994::::::::120:71::::::|h[Wrath of Unchaining]|h|r)", -- [2340]
+			"13:41:11 - Found item at (2) (4)", -- [2341]
+			"13:41:11 - Error - Couldn't find item", -- [2342]
+			"13:41:11 - Storage:New (|cffa335ee|Hitem:78462::::::::120:71::::::|h[Molten Blood Footpads]|h|r) (temp)", -- [2343]
+			"13:41:11 - Storage: searching for item: (|cffa335ee|Hitem:78462::::::::120:71::::::|h[Molten Blood Footpads]|h|r)", -- [2344]
+			"13:41:11 - Found item at (2) (5)", -- [2345]
+			"13:41:11 - Error - Couldn't find item", -- [2346]
+			"13:41:11 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78463::::::::120:71::::::|h[Belt~`of~`Shattered~`Elementium]|h|r^N2^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2347]
+			"13:41:11 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:77998::::::::120:71::::::|h[Resolve~`of~`Undying]|h|r^N2^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2348]
+			"13:41:11 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves~`of~`Liquid~`Smoke]|h|r^N2^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2349]
+			"13:41:11 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:77994::::::::120:71::::::|h[Wrath~`of~`Unchaining]|h|r^N2^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2350]
+			"13:41:11 - Storage:New (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r) (temp)", -- [2351]
+			"13:41:11 - Storage: searching for item: (|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r)", -- [2352]
+			"13:41:11 - Found item at (2) (3)", -- [2353]
+			"13:41:11 - Found item at (2) (6)", -- [2354]
+			"13:41:11 - Error - Couldn't find item", -- [2355]
+			"13:41:11 - Storage:New (|cff0070dd|Hitem:152980::::::::120:71::::::|h[Elementium Back Plate]|h|r) (temp)", -- [2356]
+			"13:41:11 - Storage: searching for item: (|cff0070dd|Hitem:152980::::::::120:71::::::|h[Elementium Back Plate]|h|r)", -- [2357]
+			"13:41:11 - Found item at (2) (7)", -- [2358]
+			"13:41:11 - Error - Couldn't find item", -- [2359]
+			"13:41:11 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78462::::::::120:71::::::|h[Molten~`Blood~`Footpads]|h|r^N2^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2360]
+			"13:41:11 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves~`of~`Liquid~`Smoke]|h|r^N2^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2361]
+			"13:41:11 - Comm received:^1^Snot_tradeable^T^N1^S|cff0070dd|Hitem:152980::::::::120:71::::::|h[Elementium~`Back~`Plate]|h|r^N2^S209896^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2362]
+			"13:41:55 - Event: (ENCOUNTER_START) (1299) (Madness of Deathwing) (6) (25)", -- [2363]
+			"13:41:55 - UpdatePlayersData()", -- [2364]
+			"13:42:40 - Event: (ENCOUNTER_END) (1299) (Madness of Deathwing) (6) (25) (1)", -- [2365]
+			"13:43:05 - Event: (LOOT_READY) (true)", -- [2366]
+			"13:43:05 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2367]
+			"13:43:05 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2368]
+			"13:43:05 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2369]
+			"13:43:05 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78478::::::::120:71::::::|h[Gurthalak, Voice of the Deeps]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2370]
+			"13:43:05 - Adding to self.lootSlotInfo (6) (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2371]
+			"13:43:05 - Adding to self.lootSlotInfo (7) (|cffa335ee|Hitem:78479::::::::120:71::::::|h[Souldrinker]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2372]
+			"13:43:05 - Ignoring (|cffffffff|Hcurrency:615:1|h[Essence of Corrupted Deathwing]|h|r) (as it's a currency)", -- [2373]
+			"13:43:06 - OnLootSlotCleared() (7) (|cffa335ee|Hitem:78479::::::::120:71::::::|h[Souldrinker]|h|r) (4)", -- [2374]
+			"13:43:06 - OnLootSlotCleared() (6) (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (4)", -- [2375]
+			"13:43:06 - Event: (LOOT_READY) (true)", -- [2376]
+			"13:43:06 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2377]
+			"13:43:06 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2378]
+			"13:43:06 - Adding to self.lootSlotInfo (4) (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2379]
+			"13:43:06 - Adding to self.lootSlotInfo (5) (|cffa335ee|Hitem:78478::::::::120:71::::::|h[Gurthalak, Voice of the Deeps]|h|r) (4) (1) (GameObject-0-3779-967-9282-210219-0000471910) (1)", -- [2380]
+			"13:43:06 - OnLootSlotCleared() (5) (|cffa335ee|Hitem:78478::::::::120:71::::::|h[Gurthalak, Voice of the Deeps]|h|r) (4)", -- [2381]
+			"13:43:06 - OnLootSlotCleared() (4) (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (4)", -- [2382]
+			"13:43:06 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (4)", -- [2383]
+			"13:43:06 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (4)", -- [2384]
+			"13:43:06 - Event: (LOOT_CLOSED)", -- [2385]
+			"13:43:06 - Event: (LOOT_CLOSED)", -- [2386]
+			"13:43:06 - Event: (ENCOUNTER_LOOT_RECEIVED) (1299) (78479) (|cffa335ee|Hitem:78479::::::::120:71::::::|h[Souldrinker]|h|r) (1) (Shanyt) (WARRIOR)", -- [2387]
+			"13:43:06 - Event: (ENCOUNTER_LOOT_RECEIVED) (1299) (78474) (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (1) (Shanyt) (WARRIOR)", -- [2388]
+			"13:43:06 - Event: (ENCOUNTER_LOOT_RECEIVED) (1299) (78478) (|cffa335ee|Hitem:78478::::::::120:71::::::|h[Gurthalak, Voice of the Deeps]|h|r) (1) (Shanyt) (WARRIOR)", -- [2389]
+			"13:43:06 - Event: (ENCOUNTER_LOOT_RECEIVED) (1299) (78474) (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (1) (Shanyt) (WARRIOR)", -- [2390]
+			"13:43:06 - Event: (ENCOUNTER_LOOT_RECEIVED) (1299) (78472) (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (1) (Shanyt) (WARRIOR)", -- [2391]
+			"13:43:06 - Event: (ENCOUNTER_LOOT_RECEIVED) (1299) (78472) (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (1) (Shanyt) (WARRIOR)", -- [2392]
+			"13:43:06 - Event: (ENCOUNTER_LOOT_RECEIVED) (1299) (71998) (|cffa335ee|Hitem:71998::::::::120:71::::::|h[Essence of Destruction]|h|r) (1) (Shanyt) (WARRIOR)", -- [2393]
+			"13:43:06 - Comm received:^1^Slooted^T^N1^S210219^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2394]
+			"13:43:06 - Comm received:^1^Slooted^T^N1^S210219^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2395]
+			"13:43:08 - Storage:New (|cffa335ee|Hitem:78479::::::::120:71::::::|h[Souldrinker]|h|r) (temp)", -- [2396]
+			"13:43:08 - Storage: searching for item: (|cffa335ee|Hitem:78479::::::::120:71::::::|h[Souldrinker]|h|r)", -- [2397]
+			"13:43:08 - Found item at (2) (8)", -- [2398]
+			"13:43:08 - Error - Couldn't find item", -- [2399]
+			"13:43:08 - Storage:New (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (temp)", -- [2400]
+			"13:43:08 - Storage: searching for item: (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r)", -- [2401]
+			"13:43:08 - Found item at (2) (9)", -- [2402]
+			"13:43:08 - Found item at (2) (11)", -- [2403]
+			"13:43:08 - Error - Couldn't find item", -- [2404]
+			"13:43:08 - Storage:New (|cffa335ee|Hitem:78478::::::::120:71::::::|h[Gurthalak, Voice of the Deeps]|h|r) (temp)", -- [2405]
+			"13:43:08 - Storage: searching for item: (|cffa335ee|Hitem:78478::::::::120:71::::::|h[Gurthalak, Voice of the Deeps]|h|r)", -- [2406]
+			"13:43:08 - Found item at (2) (10)", -- [2407]
+			"13:43:08 - Error - Couldn't find item", -- [2408]
+			"13:43:08 - Storage:New (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r) (temp)", -- [2409]
+			"13:43:08 - Storage: searching for item: (|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r)", -- [2410]
+			"13:43:08 - Found item at (2) (9)", -- [2411]
+			"13:43:08 - Found item at (2) (11)", -- [2412]
+			"13:43:08 - Error - Couldn't find item", -- [2413]
+			"13:43:08 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78479::::::::120:71::::::|h[Souldrinker]|h|r^N2^S210219^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2414]
+			"13:43:08 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade~`of~`the~`Unmaker]|h|r^N2^S210219^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2415]
+			"13:43:08 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78478::::::::120:71::::::|h[Gurthalak,~`Voice~`of~`the~`Deeps]|h|r^N2^S210219^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2416]
+			"13:43:08 - Storage:New (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (temp)", -- [2417]
+			"13:43:08 - Storage: searching for item: (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r)", -- [2418]
+			"13:43:08 - Found item at (2) (12)", -- [2419]
+			"13:43:08 - Found item at (2) (13)", -- [2420]
+			"13:43:08 - Error - Couldn't find item", -- [2421]
+			"13:43:08 - Storage:New (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r) (temp)", -- [2422]
+			"13:43:08 - Storage: searching for item: (|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r)", -- [2423]
+			"13:43:08 - Found item at (2) (12)", -- [2424]
+			"13:43:08 - Found item at (2) (13)", -- [2425]
+			"13:43:08 - Error - Couldn't find item", -- [2426]
+			"13:43:08 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade~`of~`the~`Unmaker]|h|r^N2^S210219^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2427]
+			"13:43:08 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled,~`the~`Elements~`of~`Death]|h|r^N2^S210219^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2428]
+			"13:43:08 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled,~`the~`Elements~`of~`Death]|h|r^N2^S210219^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2429]
+			"13:43:33 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2430]
+			"13:43:33 - GetML()", -- [2431]
+			"13:51:37 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2432]
+			"13:51:37 - GetML()", -- [2433]
+			"13:52:04 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2434]
+			"13:52:04 - GetML()", -- [2435]
+			"13:53:56 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2436]
+			"13:53:56 - GetML()", -- [2437]
+			"13:54:12 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2438]
+			"13:54:12 - GetML()", -- [2439]
+			"13:56:50 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2440]
+			"13:56:50 - GetML()", -- [2441]
+			"14:21:31 - Event: (RAID_INSTANCE_WELCOME) (Return to Karazhan (Mythic)) (160712) (0) (0)", -- [2442]
+			"14:21:32 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2443]
+			"14:21:32 - GetML()", -- [2444]
+			"14:23:02 - Event: (LOOT_READY) (true)", -- [2445]
+			"14:23:02 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114542-0004472226) (57438) (Creature-0-3133-1651-15624-114541-000B472226) (16665)", -- [2446]
+			"14:23:02 - OnLootSlotCleared() (1) (nil) (1)", -- [2447]
+			"14:23:02 - Event: (LOOT_CLOSED)", -- [2448]
+			"14:23:02 - Event: (LOOT_CLOSED)", -- [2449]
+			"14:23:02 - Comm received:^1^Slooted^T^N1^S114542^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2450]
+			"14:23:02 - Comm received:^1^Slooted^T^N1^S114542^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2451]
+			"14:24:45 - Event: (ENCOUNTER_START) (1957) (Opera Hall) (23) (5)", -- [2452]
+			"14:24:45 - UpdatePlayersData()", -- [2453]
+			"14:24:56 - Event: (ENCOUNTER_END) (1957) (Opera Hall) (23) (5) (1)", -- [2454]
+			"14:24:57 - Event: (LOOT_READY) (true)", -- [2455]
+			"14:24:57 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114251-00004722C4) (20543)", -- [2456]
+			"14:24:57 - OnLootSlotCleared() (1) (nil) (1)", -- [2457]
+			"14:24:57 - Event: (LOOT_CLOSED)", -- [2458]
+			"14:24:57 - Event: (LOOT_CLOSED)", -- [2459]
+			"14:24:58 - Comm received:^1^Slooted^T^N1^S114251^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2460]
+			"14:24:58 - Comm received:^1^Slooted^T^N1^S114251^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2461]
+			"14:25:41 - Event: (LOOT_READY) (true)", -- [2462]
+			"14:25:41 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114526-0006C722F9) (25635) (Creature-0-3133-1651-15624-114526-00064722F9) (30537)", -- [2463]
+			"14:25:41 - OnLootSlotCleared() (1) (nil) (1)", -- [2464]
+			"14:25:41 - Event: (LOOT_CLOSED)", -- [2465]
+			"14:25:41 - Event: (LOOT_CLOSED)", -- [2466]
+			"14:25:41 - Comm received:^1^Slooted^T^N1^S114526^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2467]
+			"14:25:41 - Comm received:^1^Slooted^T^N1^S114526^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2468]
+			"14:27:15 - Event: (LOOT_READY) (true)", -- [2469]
+			"14:27:15 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114541-0014C72226) (21686) (Creature-0-3133-1651-15624-114541-000D472226) (30722) (Creature-0-3133-1651-15624-114541-000EC72226) (29722) (Creature-0-3133-1651-15624-114541-000FC72226) (16934) (Creature-0-3133-1651-15624-114541-0014472226) (11391) (Creature-0-3133-1651-15624-114541-0015C72226) (27159)", -- [2470]
+			"14:27:15 - OnLootSlotCleared() (1) (nil) (1)", -- [2471]
+			"14:27:15 - Event: (LOOT_CLOSED)", -- [2472]
+			"14:27:15 - Event: (LOOT_CLOSED)", -- [2473]
+			"14:27:15 - Comm received:^1^Slooted^T^N1^S114541^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2474]
+			"14:27:15 - Comm received:^1^Slooted^T^N1^S114541^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2475]
+			"14:27:55 - Event: (LOOT_READY) (true)", -- [2476]
+			"14:27:55 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114544-0000472227) (6779) (Creature-0-3133-1651-15624-114544-0000C72226) (36733) (Creature-0-3133-1651-15624-114625-0002472226) (8212) (Creature-0-3133-1651-15624-114796-0002472226) (12274) (Creature-0-3133-1651-15624-114796-0002C72226) (13683)", -- [2477]
+			"14:27:55 - OnLootSlotCleared() (1) (nil) (1)", -- [2478]
+			"14:27:55 - Event: (LOOT_CLOSED)", -- [2479]
+			"14:27:55 - Event: (LOOT_CLOSED)", -- [2480]
+			"14:27:55 - Comm received:^1^Slooted^T^N1^S114544^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2481]
+			"14:27:55 - Comm received:^1^Slooted^T^N1^S114544^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2482]
+			"14:28:22 - Event: (LOOT_CLOSED)", -- [2483]
+			"14:28:22 - Event: (LOOT_READY) (true)", -- [2484]
+			"14:28:22 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114796-0001C72226) (18706) (Creature-0-3133-1651-15624-114796-0000C72227) (18390) (Creature-0-3133-1651-15624-114796-0001472227) (23033) (Creature-0-3133-1651-15624-114796-0003C72226) (23729)", -- [2485]
+			"14:28:22 - OnLootSlotCleared() (1) (nil) (1)", -- [2486]
+			"14:28:22 - Event: (LOOT_CLOSED)", -- [2487]
+			"14:28:22 - Event: (LOOT_CLOSED)", -- [2488]
+			"14:28:22 - Comm received:^1^Slooted^T^N1^S114544^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2489]
+			"14:28:22 - Comm received:^1^Slooted^T^N1^S114796^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2490]
+			"14:28:22 - Comm received:^1^Slooted^T^N1^S114796^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2491]
+			"14:28:24 - Event: (LOOT_READY) (true)", -- [2492]
+			"14:28:24 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114796-0003472226) (7116)", -- [2493]
+			"14:28:24 - OnLootSlotCleared() (1) (nil) (1)", -- [2494]
+			"14:28:24 - Event: (LOOT_CLOSED)", -- [2495]
+			"14:28:24 - Event: (LOOT_CLOSED)", -- [2496]
+			"14:28:24 - Comm received:^1^Slooted^T^N1^S114796^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2497]
+			"14:28:24 - Comm received:^1^Slooted^T^N1^S114796^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2498]
+			"14:29:24 - Event: (ENCOUNTER_START) (1961) (Moroes) (23) (5)", -- [2499]
+			"14:29:24 - UpdatePlayersData()", -- [2500]
+			"14:29:56 - Event: (ENCOUNTER_END) (1961) (Moroes) (23) (5) (1)", -- [2501]
+			"14:29:58 - Event: (LOOT_READY) (true)", -- [2502]
+			"14:29:58 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114312-0000472226) (32803) (Creature-0-3133-1651-15624-114625-000D472226) (2598) (Creature-0-3133-1651-15624-114625-0010472226) (8317) (Creature-0-3133-1651-15624-114625-0012C72226) (2615) (Creature-0-3133-1651-15624-114625-0016472226) (1781) (Creature-0-3133-1651-15624-114625-0017472226) (8745)", -- [2503]
+			"14:29:58 - OnLootSlotCleared() (1) (nil) (1)", -- [2504]
+			"14:29:58 - Event: (LOOT_CLOSED)", -- [2505]
+			"14:29:58 - Event: (LOOT_CLOSED)", -- [2506]
+			"14:29:58 - Comm received:^1^Slooted^T^N1^S114312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2507]
+			"14:29:58 - Comm received:^1^Slooted^T^N1^S114312^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2508]
+			"14:32:49 - Event: (LOOT_READY) (true)", -- [2509]
+			"14:32:50 - Event: (LOOT_CLOSED)", -- [2510]
+			"14:32:50 - Event: (LOOT_CLOSED)", -- [2511]
+			"14:33:18 - Event: (ENCOUNTER_START) (1964) (The Curator) (23) (5)", -- [2512]
+			"14:33:18 - UpdatePlayersData()", -- [2513]
+			"14:34:01 - Event: (ENCOUNTER_END) (1964) (The Curator) (23) (5) (1)", -- [2514]
+			"14:34:02 - Event: (LOOT_READY) (true)", -- [2515]
+			"14:34:02 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114247-0000472226) (17821)", -- [2516]
+			"14:34:02 - OnLootSlotCleared() (1) (nil) (1)", -- [2517]
+			"14:34:02 - Event: (LOOT_CLOSED)", -- [2518]
+			"14:34:02 - Event: (LOOT_CLOSED)", -- [2519]
+			"14:34:02 - Comm received:^1^Slooted^T^N1^S114247^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2520]
+			"14:34:02 - Comm received:^1^Slooted^T^N1^S114247^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2521]
+			"14:37:36 - Event: (ENCOUNTER_START) (2031) (Nightbane) (23) (5)", -- [2522]
+			"14:37:36 - UpdatePlayersData()", -- [2523]
+			"14:38:55 - Event: (ENCOUNTER_END) (2031) (Nightbane) (23) (5) (1)", -- [2524]
+			"14:38:56 - Event: (LOOT_READY) (true)", -- [2525]
+			"14:38:56 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114895-00004725E5) (178905)", -- [2526]
+			"14:38:56 - Adding to self.lootSlotInfo (3) (|cffa335ee|Hitem:142552::::::::120:71::23::::|h[Smoldering Ember Wyrm]|h|r) (4) (1) (Creature-0-3133-1651-15624-114895-00004725E5) (1)", -- [2527]
+			"14:38:56 - OnLootSlotCleared() (3) (|cffa335ee|Hitem:142552::::::::120:71::23::::|h[Smoldering Ember Wyrm]|h|r) (4)", -- [2528]
+			"14:38:56 - Event: (ENCOUNTER_LOOT_RECEIVED) (2031) (142552) (|cffa335ee|Hitem:142552::::::::120:71::23::::|h[Smoldering Ember Wyrm]|h|r) (1) (Shanyt) (WARRIOR)", -- [2529]
+			"14:38:56 - OnLootSlotCleared() (1) (nil) (1)", -- [2530]
+			"14:38:56 - Event: (LOOT_CLOSED)", -- [2531]
+			"14:38:56 - Event: (LOOT_CLOSED)", -- [2532]
+			"14:38:56 - Comm received:^1^Slooted^T^N1^S114895^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2533]
+			"14:38:56 - Comm received:^1^Slooted^T^N1^S114895^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2534]
+			"14:38:58 - Storage:New (|cffa335ee|Hitem:142552::::::::120:71::23::::|h[Smoldering Ember Wyrm]|h|r) (temp)", -- [2535]
+			"14:38:58 - Storage: searching for item: (|cffa335ee|Hitem:142552::::::::120:71::23::::|h[Smoldering Ember Wyrm]|h|r)", -- [2536]
+			"14:38:58 - Found item at (1) (26)", -- [2537]
+			"14:38:58 - Error - Couldn't find item", -- [2538]
+			"14:38:58 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:142552::::::::120:71::23::::|h[Smoldering~`Ember~`Wyrm]|h|r^N2^S114895^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2539]
+			"14:39:56 - Event: (LOOT_READY) (true)", -- [2540]
+			"14:39:56 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114637-0000472227) (26742)", -- [2541]
+			"14:39:56 - OnLootSlotCleared() (1) (nil) (1)", -- [2542]
+			"14:39:56 - Event: (LOOT_CLOSED)", -- [2543]
+			"14:39:56 - Event: (LOOT_CLOSED)", -- [2544]
+			"14:39:56 - Comm received:^1^Slooted^T^N1^S114637^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2545]
+			"14:39:56 - Comm received:^1^Slooted^T^N1^S114637^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2546]
+			"14:40:41 - Event: (LOOT_READY) (true)", -- [2547]
+			"14:40:41 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114802-0000C72226) (9609)", -- [2548]
+			"14:40:42 - OnLootSlotCleared() (1) (nil) (1)", -- [2549]
+			"14:40:42 - Event: (LOOT_CLOSED)", -- [2550]
+			"14:40:42 - Event: (LOOT_CLOSED)", -- [2551]
+			"14:40:42 - Comm received:^1^Slooted^T^N1^S114802^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2552]
+			"14:40:42 - Comm received:^1^Slooted^T^N1^S114802^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2553]
+			"14:40:47 - Event: (ENCOUNTER_START) (1960) (Attumen the Huntsman) (23) (5)", -- [2554]
+			"14:40:47 - UpdatePlayersData()", -- [2555]
+			"14:41:03 - Event: (LOOT_READY) (true)", -- [2556]
+			"14:41:03 - Adding to self.lootSlotInfo (2) (nil) (1) (0) (Creature-0-3133-1651-15624-114803-0000472226) (19243)", -- [2557]
+			"14:41:03 - OnLootSlotCleared() (2) (nil) (1)", -- [2558]
+			"14:41:03 - Event: (LOOT_CLOSED)", -- [2559]
+			"14:41:03 - Event: (LOOT_CLOSED)", -- [2560]
+			"14:41:03 - Comm received:^1^Slooted^T^N1^S114803^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2561]
+			"14:41:03 - Comm received:^1^Slooted^T^N1^S114803^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2562]
+			"14:41:12 - Event: (ENCOUNTER_END) (1960) (Attumen the Huntsman) (23) (5) (1)", -- [2563]
+			"14:41:17 - Event: (LOOT_READY) (true)", -- [2564]
+			"14:41:17 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114262-0000472226) (26554)", -- [2565]
+			"14:41:17 - OnLootSlotCleared() (1) (nil) (1)", -- [2566]
+			"14:41:17 - Event: (LOOT_CLOSED)", -- [2567]
+			"14:41:17 - Event: (LOOT_CLOSED)", -- [2568]
+			"14:41:17 - Comm received:^1^Slooted^T^N1^S114262^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2569]
+			"14:41:17 - Comm received:^1^Slooted^T^N1^S114262^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2570]
+			"14:46:00 - Event: (ENCOUNTER_START) (1965) (Shade of Medivh) (23) (5)", -- [2571]
+			"14:46:00 - UpdatePlayersData()", -- [2572]
+			"14:46:21 - Event: (ENCOUNTER_END) (1965) (Shade of Medivh) (23) (5) (1)", -- [2573]
+			"14:46:22 - Event: (LOOT_READY) (true)", -- [2574]
+			"14:46:22 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (Creature-0-3133-1651-15624-114350-0000472226) (37682)", -- [2575]
+			"14:46:22 - Adding to self.lootSlotInfo (2) (|cffa335ee|Hitem:142129::::::::120:71::23:4:1727:1482:5850:3336:::|h[Spellwarding Waistguard]|h|r) (4) (1) (Creature-0-3133-1651-15624-114350-0000472226) (1)", -- [2576]
+			"14:46:22 - OnLootSlotCleared() (2) (|cffa335ee|Hitem:142129::::::::120:71::23:4:1727:1482:5850:3336:::|h[Spellwarding Waistguard]|h|r) (4)", -- [2577]
+			"14:46:23 - Event: (ENCOUNTER_LOOT_RECEIVED) (1965) (142129) (|cffa335ee|Hitem:142129::::::::120:71::23:4:1727:1482:5850:3336:::|h[Spellwarding Waistguard]|h|r) (1) (Shanyt) (WARRIOR)", -- [2578]
+			"14:46:23 - OnLootSlotCleared() (1) (nil) (1)", -- [2579]
+			"14:46:23 - Event: (LOOT_CLOSED)", -- [2580]
+			"14:46:23 - Event: (LOOT_CLOSED)", -- [2581]
+			"14:46:23 - Comm received:^1^Slooted^T^N1^S114350^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2582]
+			"14:46:23 - Comm received:^1^Slooted^T^N1^S114350^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2583]
+			"14:46:25 - Storage:New (|cffa335ee|Hitem:142129::::::::120:71::23:4:1727:1482:5850:3336:::|h[Spellwarding Waistguard]|h|r) (temp)", -- [2584]
+			"14:46:25 - Storage: searching for item: (|cffa335ee|Hitem:142129::::::::120:71::23:4:1727:1482:5850:3336:::|h[Spellwarding Waistguard]|h|r)", -- [2585]
+			"14:46:25 - Found item at (1) (25)", -- [2586]
+			"14:46:25 - Error - Couldn't find item", -- [2587]
+			"14:46:25 - Comm received:^1^Snot_tradeable^T^N1^S|cffa335ee|Hitem:142129::::::::120:71::23:4:1727:1482:5850:3336:::|h[Spellwarding~`Waistguard]|h|r^N2^S114350^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2588]
+			"14:48:41 - Event: (LOOT_READY) (true)", -- [2589]
+			"14:48:41 - Event: (LOOT_READY) (true)", -- [2590]
+			"14:48:41 - Event: (LOOT_CLOSED)", -- [2591]
+			"14:49:03 - Event: (ENCOUNTER_START) (1959) (Mana Devourer) (23) (5)", -- [2592]
+			"14:49:03 - UpdatePlayersData()", -- [2593]
+			"14:49:25 - Event: (ENCOUNTER_END) (1959) (Mana Devourer) (23) (5) (1)", -- [2594]
+			"14:49:34 - Event: (LOOT_READY) (true)", -- [2595]
+			"14:49:34 - Adding to self.lootSlotInfo (1) (nil) (1) (0) (GameObject-0-3133-1651-15624-266592-00004728B5) (56652)", -- [2596]
+			"14:49:34 - OnLootSlotCleared() (1) (nil) (1)", -- [2597]
+			"14:49:34 - Event: (LOOT_CLOSED)", -- [2598]
+			"14:49:34 - Event: (LOOT_CLOSED)", -- [2599]
+			"14:49:35 - Comm received:^1^Slooted^T^N1^S266592^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2600]
+			"14:49:35 - Comm received:^1^Slooted^T^N1^S266592^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2601]
+			"14:49:40 - Event: (LOOT_READY) (true)", -- [2602]
+			"14:49:40 - Event: (LOOT_CLOSED)", -- [2603]
+			"14:49:40 - Event: (LOOT_CLOSED)", -- [2604]
+			"14:49:57 - Event: (LOOT_READY) (true)", -- [2605]
+			"14:49:57 - Event: (LOOT_CLOSED)", -- [2606]
+			"14:49:57 - Event: (LOOT_CLOSED)", -- [2607]
+			"14:50:12 - Event: (LOOT_READY) (true)", -- [2608]
+			"14:50:12 - Event: (LOOT_CLOSED)", -- [2609]
+			"14:50:12 - Event: (LOOT_CLOSED)", -- [2610]
+			"14:50:37 - Event: (LOOT_READY) (true)", -- [2611]
+			"14:50:37 - Event: (LOOT_CLOSED)", -- [2612]
+			"14:50:37 - Event: (LOOT_CLOSED)", -- [2613]
+			"14:51:34 - Event: (LOOT_READY) (true)", -- [2614]
+			"14:51:34 - Ignoring (|cffffffff|Hcurrency:1220:370|h[Order Resources]|h|r) (as it's a currency)", -- [2615]
+			"14:51:34 - Adding to self.lootSlotInfo (2) (|cff9d9d9d|Hitem:121375::::::::120:71::23::::|h[Voo's Juicer]|h|r) (0) (1) (GameObject-0-3133-1651-15624-269940-0000472519) (1)", -- [2616]
+			"14:51:34 - OnLootSlotCleared() (2) (|cff9d9d9d|Hitem:121375::::::::120:71::23::::|h[Voo's Juicer]|h|r) (0)", -- [2617]
+			"14:51:35 - Event: (LOOT_CLOSED)", -- [2618]
+			"14:51:35 - Event: (LOOT_CLOSED)", -- [2619]
+			"14:51:35 - Comm received:^1^Slooted^T^N1^S269940^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2620]
+			"14:51:35 - Comm received:^1^Slooted^T^N1^S269940^t^^ (from:) (Shanyt) (distri:) (WHISPER)", -- [2621]
+			"14:51:59 - Event: (LOOT_READY) (true)", -- [2622]
+			"14:51:59 - Event: (LOOT_CLOSED)", -- [2623]
+			"14:51:59 - Event: (LOOT_CLOSED)", -- [2624]
+			"14:52:25 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2625]
+			"14:52:25 - GetML()", -- [2626]
+			"14:52:49 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2627]
+			"14:52:49 - GetML()", -- [2628]
+			"14:56:02 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2629]
+			"14:56:02 - GetML()", -- [2630]
+			"14:56:23 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2631]
+			"14:56:23 - GetML()", -- [2632]
+			"14:59:45 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2633]
+			"14:59:45 - GetML()", -- [2634]
+			"15:02:53 - Event: (PLAYER_ENTERING_WORLD) (false) (false)", -- [2635]
+			"15:02:53 - GetML()", -- [2636]
 		},
+		["locale"] = "enUS",
 		["2.12.1"] = {
 			["buttons"] = 0,
 			["responses"] = 0,
 			["colors"] = 0,
 			["entries"] = 0,
 		},
-		["locale"] = "enUS",
-		["regionID"] = 1,
+		["2.12.0"] = {
+			["entries"] = 0,
+			["colors"] = 0,
+			["responses"] = 0,
+			["buttons"] = 0,
+		},
 		["version"] = "2.12.2",
 		["2.11.0"] = {
 			["buttons"] = 0,
@@ -2643,12 +2666,7 @@ RCLootCouncilDB = {
 			["entries"] = 0,
 		},
 		["oldVersion"] = "2.12.2",
-		["2.12.0"] = {
-			["entries"] = 0,
-			["colors"] = 0,
-			["responses"] = 0,
-			["buttons"] = 0,
-		},
+		["regionID"] = 1,
 	},
 	["profileKeys"] = {
 		["Zerkin - Illidan"] = "Default",
@@ -2668,6 +2686,2374 @@ RCLootCouncilDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["itemStorage"] = {
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cff1eff00|Hitem:32897::::::::120:71::::::|h[Mark of the Illidari]|h|r",
+					["args"] = {
+					},
+					["time_added"] = 1564873134,
+				}, -- [1]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124253::::::::120:71::6:2:1799:1478:::|h[Insulated Wirer's Gloves]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931622,
+				}, -- [2]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124253::::::::120:71::6:2:1799:1478:::|h[Insulated Wirer's Gloves]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931622,
+				}, -- [3]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124285::::::::120:71::6:2:1799:1478:::|h[Die-Cast Ringmail Sabatons]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931622,
+				}, -- [4]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124145::::::::120:71::6:2:1799:1478:::|h[Ironthread Greatcloak]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931622,
+				}, -- [5]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124145::::::::120:71::6:2:1799:1478:::|h[Ironthread Greatcloak]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931623,
+				}, -- [6]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124296::::::::120:71::6:2:1799:1478:::|h[Hood of the Savage Hunt]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931831,
+				}, -- [7]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124261::::::::120:71::6:2:1799:1478:::|h[Oathclaw Helm]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931831,
+				}, -- [8]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124187::::::::120:71::6:4:1799:1478:5850:3441:::|h[Pit-Extracted Stone Signet]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931831,
+				}, -- [9]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124162::::::::120:71::6:2:1799:1478:::|h[Deathrattle Mask]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931831,
+				}, -- [10]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124358::::::::120:71::6:4:1799:1478:5850:3441:::|h[Runeaxe of the Breaker]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931831,
+				}, -- [11]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124139::::::::120:71::6:2:1799:1478:::|h[Polymorphic Cloak of Absorption]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564931831,
+				}, -- [12]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124383::::::::120:71::6:2:1799:1478:::|h[Mindbender's Flameblade]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932005,
+				}, -- [13]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124383::::::::120:71::6:2:1799:1478:::|h[Mindbender's Flameblade]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932005,
+				}, -- [14]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124228::::::::120:71::6:2:1799:1478:::|h[Desecrated Shadowmoon Insignia]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932005,
+				}, -- [15]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124184::::::::120:71::6:2:1799:1478:::|h[Cursed Blood Bracers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932005,
+				}, -- [16]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124385::::::::120:71::6:4:1799:1478:5850:3441:::|h[Blazing Demonhilt Sword]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932006,
+				}, -- [17]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124321::::::::120:71::6:2:1799:1478:::|h[Stompers of Brazen Terror]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932197,
+				}, -- [18]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124321::::::::120:71::6:2:1799:1478:::|h[Stompers of Brazen Terror]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932197,
+				}, -- [19]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124240::::::::120:71::6:2:1799:1478:::|h[Warlord's Unseeing Eye]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932197,
+				}, -- [20]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124240::::::::120:71::6:2:1799:1478:::|h[Warlord's Unseeing Eye]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932197,
+				}, -- [21]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124379::::::::120:71::6:2:1799:1478:::|h[Bite of the Bleeding Hollow]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932197,
+				}, -- [22]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124391::::::::120:71::6:3:1799:565:1478:::|h[Choker of Forbidden Indulgence]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932444,
+				}, -- [23]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124205::::::::120:71::6:2:1799:1478:::|h[Gibbering Madness]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932444,
+				}, -- [24]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124146::::::::120:71::6:2:1799:1478:::|h[Drape of Gluttony]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932444,
+				}, -- [25]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124339::::::::120:71::6:3:1799:43:1478:::|h[Greaves of the Ceaseless Vigil]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932444,
+				}, -- [26]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124166::::::::120:71::6:2:1799:1478:::|h[Pious Leggings]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932444,
+				}, -- [27]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124268::::::::120:71::6:2:1799:1478:::|h[Legwraps of the Hurricane's Eye]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932445,
+				}, -- [28]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124352::::::::120:71::6:2:1799:1478:::|h[Wristplate of the Wretched]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932623,
+				}, -- [29]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124259::::::::120:71::6:3:1799:40:1478:::|h[Helm of Imagined Horrors]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932623,
+				}, -- [30]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124170::::::::120:71::6:3:1799:565:1478:::|h[Raiment of Divine Clarity]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932623,
+				}, -- [31]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124286::::::::120:71::6:2:1799:1478:::|h[Surefooted Chain Treads]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932624,
+				}, -- [32]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124316::::::::120:71::6:2:1799:1478:::|h[Chestguard of Ill Fate]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932624,
+				}, -- [33]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124185::::::::120:71::6:2:1799:1478:::|h[Pristine Man'ari Cuffs]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932874,
+				}, -- [34]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124362::::::::120:71::6:2:1799:1478:::|h[Felcrystal Impaler]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932874,
+				}, -- [35]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124221::::::::120:71::6:2:1799:1478:::|h[Contained Fel Orb Locket]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932874,
+				}, -- [36]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124255::::::::120:71::6:2:1799:1478:::|h[Oathclaw Gauntlets]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932874,
+				}, -- [37]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124293::::::::120:71::6:2:1799:1478:::|h[Gauntlets of the Living Mountain]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932874,
+				}, -- [38]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124257::::::::120:71::6:2:1799:1478:::|h[Felblade Gloves]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564932874,
+				}, -- [39]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cff1eff00|Hitem:106722::::::::120:71::6:1:64:::|h[Stonecrag Girdle of the Peerless]|h|r",
+					["time_remaining"] = nil --[[ inf ]],
+					["args"] = {
+					},
+					["time_added"] = 1564933086,
+				}, -- [40]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cff1eff00|Hitem:106709::::::::120:71::6:1:65:::|h[Voidwrap Sandals of the Peerless]|h|r",
+					["time_remaining"] = nil --[[ inf ]],
+					["args"] = {
+					},
+					["time_added"] = 1564933086,
+				}, -- [41]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124350::::::::120:71::6:2:1799:1478:::|h[Girdle of Demonic Wrath]|h|r",
+					["time_remaining"] = nil --[[ inf ]],
+					["args"] = {
+					},
+					["time_added"] = 1564933092,
+				}, -- [42]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124195::::::::120:71::6:2:1799:1478:::|h[Pompous Ceremonial Ring]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933126,
+				}, -- [43]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124192::::::::120:71::6:3:1799:565:1478:::|h[Loathful Encrusted Band]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933126,
+				}, -- [44]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124226::::::::120:71::6:3:1799:565:1478:::|h[Malicious Censer]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933126,
+				}, -- [45]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124251::::::::120:71::6:2:1799:1478:::|h[Oppressor's Merciless Treads]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933126,
+				}, -- [46]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124219::::::::120:71::6:2:1799:1478:::|h[Choker of Sneering Superiority]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933126,
+				}, -- [47]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124353::::::::120:71::6:2:1799:1478:::|h[Breach-Scarred Wristplates]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933291,
+				}, -- [48]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124295::::::::120:71::6:2:1799:1478:::|h[Sinister Felborne Helmet]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933291,
+				}, -- [49]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124158::::::::120:71::6:2:1799:1478:::|h[Countenance of the Revenant]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933291,
+				}, -- [50]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124177::::::::120:71::6:2:1799:1478:::|h[Mantle of the Arcanic Conclave]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933291,
+				}, -- [51]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124178::::::::120:71::6:2:1799:1478:::|h[Pious Mantle]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933291,
+				}, -- [52]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124307::::::::120:71::6:2:1799:1478:::|h[Pauldrons of the Savage Hunt]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933291,
+				}, -- [53]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124203::::::::120:71::6:3:1799:565:1478:::|h[Zakuun's Signet of Command]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933403,
+				}, -- [54]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124138::::::::120:71::6:2:1799:1478:::|h[Cloak of Hideous Unity]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933403,
+				}, -- [55]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124280::::::::120:71::6:3:1799:565:1478:::|h[Manacles of the Multitudes]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933403,
+				}, -- [56]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124214::::::::120:71::6:3:1799:565:1478:::|h[Choker of Whispered Promises]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933403,
+				}, -- [57]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124209::::::::120:71::6:2:1799:1478:::|h[Chain of Lidless Eyes]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933403,
+				}, -- [58]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124367::::::::120:71::6:3:1799:40:1478:::|h[Fang of the Pit]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933549,
+				}, -- [59]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124206::::::::120:71::6:3:1799:565:1478:::|h[Thumping Demonheart Fetish]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933549,
+				}, -- [60]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124230::::::::120:71::6:2:1799:1478:::|h[Prophecy of Fear]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933549,
+				}, -- [61]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124173::::::::120:71::6:2:1799:1478:::|h[Deathrattle Robe]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933549,
+				}, -- [62]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124317::::::::120:71::6:2:1799:1478:::|h[Demongaze Chestplate]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933549,
+				}, -- [63]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124173::::::::120:71::6:2:1799:1478:::|h[Deathrattle Robe]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933549,
+				}, -- [64]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124144::::::::120:71::6:2:1799:1478:::|h[Cloak of Incendiary Wrath]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933674,
+				}, -- [65]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124372::::::::120:71::6:4:1799:565:42:1478:::|h[Gavel of the Eredar]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933674,
+				}, -- [66]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124382::::::::120:71::6:2:1799:1478:::|h[Edict of Argus]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933674,
+				}, -- [67]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124176::::::::120:71::6:2:1799:1478:::|h[Mantle of the Eredar Lord]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933674,
+				}, -- [68]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124210::::::::120:71::6:2:1799:1478:::|h[Choker of the Great Betrayer]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564933674,
+				}, -- [69]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124354::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felforged Aegis]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934535,
+				}, -- [70]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124354::::::::120:71::5:3:1798:40:1475:::|h[Felforged Aegis]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934535,
+				}, -- [71]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124253::::::::120:71::5:2:1798:1475:::|h[Insulated Wirer's Gloves]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934535,
+				}, -- [72]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124354::::::::120:71::5:2:1798:1475:::|h[Felforged Aegis]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934535,
+				}, -- [73]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124196::::::::120:71::5:4:1798:1475:5850:3441:::|h[Flanged Gasket]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934535,
+				}, -- [74]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124183::::::::120:71::5:2:1798:1475:::|h[Powder-Singed Bracers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934547,
+				}, -- [75]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124298::::::::120:71::5:2:1798:1475:::|h[Iron Dragoon's Pantaloons]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934547,
+				}, -- [76]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124289::::::::120:71::5:4:1798:1475:5850:3441:::|h[Hand Loader Gauntlets]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934547,
+				}, -- [77]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124270::::::::120:71::5:3:1798:40:1475:::|h[Rangefinder's Spaulders]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934547,
+				}, -- [78]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124270::::::::120:71::5:2:1798:1475:::|h[Rangefinder's Spaulders]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934547,
+				}, -- [79]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124139::::::::120:71::5:2:1798:1475:::|h[Polymorphic Cloak of Absorption]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934825,
+				}, -- [80]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124151::::::::120:71::5:2:1798:1475:::|h[Craggy Gloves of Grasping]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934825,
+				}, -- [81]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124304::::::::120:71::5:2:1798:1475:::|h[Rugged Stoneshaped Pauldrons]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934825,
+				}, -- [82]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124263::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Felblade Hood]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934825,
+				}, -- [83]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124297::::::::120:71::5:2:1798:1475:::|h[Crown of the Living Mountain]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934825,
+				}, -- [84]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:139627::::::::120:71::5:3:1798:564:1475:::|h[Ferroleather Hood]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934825,
+				}, -- [85]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124312::::::::120:71::5:2:1798:1475:::|h[Bloody Berserker's Bracers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934993,
+				}, -- [86]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124133::::::::120:71::5:2:1798:1475:::|h[Windswept Wanderer's Drape]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934993,
+				}, -- [87]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124163::::::::120:71::5:2:1798:1475:::|h[Dia's Nightmarish Leggings]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934993,
+				}, -- [88]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124224::::::::120:71::5:3:1798:564:1475:::|h[Mirror of the Blademaster]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934993,
+				}, -- [89]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124258::::::::120:71::5:2:1798:1475:::|h[Gurtogg's Discarded Hood]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564934993,
+				}, -- [90]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124169::::::::120:71::5:2:1798:1475:::|h[Ancient Gorestained Wrap]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935104,
+				}, -- [91]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124366::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ruinous Gutripper]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935104,
+				}, -- [92]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124325::::::::120:71::5:4:1798:1475:5850:3441:::|h[Crimson Throatgrabbers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935104,
+				}, -- [93]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124137::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Shawl of Sanguinary Ritual]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935104,
+				}, -- [94]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124364::::::::120:71::5:2:1798:1475:::|h[Fallen Warlord's Mindcarver]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935104,
+				}, -- [95]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124157::::::::120:71::5:2:1798:1475:::|h[Cowl of a Thousand Hungers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935289,
+				}, -- [96]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124244::::::::120:71::5:4:1798:1475:5850:3441:::|h[Chestguard of Gnawing Desire]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935289,
+				}, -- [97]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124380::::::::120:71::5:2:1798:1475:::|h[Spur of the Great Devourer]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935289,
+				}, -- [98]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124269::::::::120:71::5:2:1798:1475:::|h[Felblade Leggings]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935290,
+				}, -- [99]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124339::::::::120:71::5:5:1798:40:1475:5850:3441:::|h[Greaves of the Ceaseless Vigil]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935290,
+				}, -- [100]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124166::::::::120:71::5:2:1798:1475:::|h[Pious Leggings]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935290,
+				}, -- [101]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124259::::::::120:71::5:2:1798:1475:::|h[Helm of Imagined Horrors]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935405,
+				}, -- [102]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935405,
+				}, -- [103]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124194::::::::120:71::5:2:1798:1475:::|h[Ring of Foul Temptation]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935405,
+				}, -- [104]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124294::::::::120:71::5:2:1798:1475:::|h[Coif of Untrue Sight]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935405,
+				}, -- [105]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124282::::::::120:71::5:2:1798:1475:::|h[Vestment of Illusory Might]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935405,
+				}, -- [106]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124225::::::::120:71::5:3:1798:40:1475:::|h[Soul Capacitor]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935567,
+				}, -- [107]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124141::::::::120:71::5:2:1798:1475:::|h[Drape of Beckoned Souls]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935567,
+				}, -- [108]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124233::::::::120:71::5:2:1798:1475:::|h[Demonic Phylactery]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935567,
+				}, -- [109]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124255::::::::120:71::5:3:1798:41:1475:::|h[Oathclaw Gauntlets]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935567,
+				}, -- [110]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:139626::::::::120:71::5:2:1798:1475:::|h[Ferroleather Gloves]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935567,
+				}, -- [111]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124255::::::::120:71::5:2:1798:1475:::|h[Oathclaw Gauntlets]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935567,
+				}, -- [112]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124219::::::::120:71::5:3:1798:41:1475:::|h[Choker of Sneering Superiority]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935743,
+				}, -- [113]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124251::::::::120:71::5:4:1798:1475:5850:3441:::|h[Oppressor's Merciless Treads]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935743,
+				}, -- [114]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124326::::::::120:71::5:2:1798:1475:::|h[Gauntlets of Derision]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935743,
+				}, -- [115]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124376::::::::120:71::5:2:1798:1475:::|h[Warhammer of Arrogance]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935743,
+				}, -- [116]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124242::::::::120:71::5:4:1798:1475:5850:3441:::|h[Tyrant's Decree]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935743,
+				}, -- [117]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cff1eff00|Hitem:116687::::::::120:71::5:2:164:551:::|h[Oshu'gun Amulet of the Aurora]|h|r",
+					["time_remaining"] = nil --[[ inf ]],
+					["args"] = {
+					},
+					["time_added"] = 1564935827,
+				}, -- [118]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124147::::::::120:71::5:3:1798:564:1475:::|h[Void Lord's Wizened Cloak]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935873,
+				}, -- [119]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124374::::::::120:71::5:4:1798:1475:5850:3441:::|h[Fiendsbreath Warmace]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935873,
+				}, -- [120]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124353::::::::120:71::5:2:1798:1475:::|h[Breach-Scarred Wristplates]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935873,
+				}, -- [121]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:139629::::::::120:71::5:4:1798:1475:5850:3441:::|h[Ferroleather Spaulders]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935873,
+				}, -- [122]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124274::::::::120:71::5:4:1798:1475:5850:3441:::|h[Felblade Spaulders]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935873,
+				}, -- [123]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124272::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Oathclaw Mantle]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935873,
+				}, -- [124]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124369::::::::120:71::5:4:1798:1475:5850:3441:::|h[Mindscythe of the Legion]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935972,
+				}, -- [125]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124280::::::::120:71::5:4:1798:1475:5850:3441:::|h[Manacles of the Multitudes]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935972,
+				}, -- [126]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124265::::::::120:71::5:2:1798:1475:::|h[Leggings of Eternal Terror]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935972,
+				}, -- [127]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124203::::::::120:71::5:2:1798:1475:::|h[Zakuun's Signet of Command]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935972,
+				}, -- [128]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124368::::::::120:71::5:2:1798:1475:::|h[Demonblade Eviscerator]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564935973,
+				}, -- [129]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936082,
+				}, -- [130]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124266::::::::120:71::5:4:1798:1475:5850:3441:::|h[Empowered Demonskin Kilt]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936082,
+				}, -- [131]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124349::::::::120:71::5:2:1798:1475:::|h[Annihilan's Waistplate]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936082,
+				}, -- [132]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124248::::::::120:71::5:2:1798:1475:::|h[Felblade Chestguard]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936082,
+				}, -- [133]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124248::::::::120:71::5:5:1798:42:1475:5850:3441:::|h[Felblade Chestguard]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936083,
+				}, -- [134]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124317::::::::120:71::5:2:1798:1475:::|h[Demongaze Chestplate]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936083,
+				}, -- [135]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124176::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Mantle of the Eredar Lord]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936223,
+				}, -- [136]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124382::::::::120:71::5:2:1798:1475:::|h[Edict of Argus]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936223,
+				}, -- [137]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124389::::::::120:71::5:5:1798:564:1475:5850:3441:::|h[Calamity's Edge]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936223,
+				}, -- [138]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124343::::::::120:71::5:4:1798:1475:5850:3441:::|h[Doomcrier's Shoulderplates]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936223,
+				}, -- [139]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124159::::::::120:71::5:4:1798:1475:5850:3441:::|h[Demon Prince's Ascendant Crown]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936223,
+				}, -- [140]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cff1eff00|Hitem:116624::::::::120:71::3:2:33:550:::|h[Gorian Sword of the Fireflash]|h|r",
+					["time_remaining"] = nil --[[ inf ]],
+					["args"] = {
+					},
+					["time_added"] = 1564936458,
+				}, -- [141]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124270::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rangefinder's Spaulders]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936608,
+				}, -- [142]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124168::::::::120:71::3:2:1801:1472:::|h[Felgrease-Smudged Robes]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936608,
+				}, -- [143]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124216::::::::120:71::3:4:1801:1472:5855:3441:::|h[Bolt-Latched Felsteel Gorget]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936608,
+				}, -- [144]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124216::::::::120:71::3:2:1801:1472:::|h[Bolt-Latched Felsteel Gorget]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936608,
+				}, -- [145]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124190::::::::120:71::3:2:1801:1472:::|h[Sootstained Felsworn Signet]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936608,
+				}, -- [146]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124223::::::::120:71::3:2:1801:1472:::|h[Fel-Spring Coil]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936651,
+				}, -- [147]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124351::::::::120:71::3:2:1801:1472:::|h[Hot-Rolled Iron Bracers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936651,
+				}, -- [148]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124145::::::::120:71::3:2:1801:1472:::|h[Ironthread Greatcloak]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936651,
+				}, -- [149]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936651,
+				}, -- [150]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124253::::::::120:71::3:5:1801:40:1472:5850:3441:::|h[Insulated Wirer's Gloves]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936651,
+				}, -- [151]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124139::::::::120:71::3:4:1801:1472:5850:3441:::|h[Polymorphic Cloak of Absorption]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936825,
+				}, -- [152]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124304::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936825,
+				}, -- [153]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124304::::::::120:71::3:4:1801:1472:5850:3441:::|h[Rugged Stoneshaped Pauldrons]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936825,
+				}, -- [154]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124261::::::::120:71::3:3:1801:563:1472:::|h[Oathclaw Helm]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936825,
+				}, -- [155]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124262::::::::120:71::3:2:1801:1472:::|h[Mask of the Hurricane's Eye]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936825,
+				}, -- [156]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124162::::::::120:71::3:3:1801:563:1472:::|h[Deathrattle Mask]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936825,
+				}, -- [157]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124258::::::::120:71::3:2:1801:1472:::|h[Gurtogg's Discarded Hood]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936978,
+				}, -- [158]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124220::::::::120:71::3:2:1801:1472:::|h[Spiked Bloodstone Pendant]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936978,
+				}, -- [159]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124271::::::::120:71::3:4:1801:1472:5855:3441:::|h[Blood-Tanned Pauldrons]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936978,
+				}, -- [160]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124142::::::::120:71::3:2:1801:1472:::|h[Rugged Bloodcaked Drape]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936978,
+				}, -- [161]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124133::::::::120:71::3:2:1801:1472:::|h[Windswept Wanderer's Drape]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564936978,
+				}, -- [162]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124197::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Congealed Globule Loop]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937093,
+				}, -- [163]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124152::::::::120:71::3:2:1801:1472:::|h[Velvet Bloodweaver Gloves]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937093,
+				}, -- [164]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124232::::::::120:71::3:2:1801:1472:::|h[Intuition's Gift]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937094,
+				}, -- [165]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124279::::::::120:71::3:2:1801:1472:::|h[Bloodcult Bracers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937094,
+				}, -- [166]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124325::::::::120:71::3:4:1801:1472:5850:3441:::|h[Crimson Throatgrabbers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937094,
+				}, -- [167]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124140::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cloak of Insatiable Greed]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937280,
+				}, -- [168]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124157::::::::120:71::3:4:1801:1472:5850:3441:::|h[Cowl of a Thousand Hungers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937280,
+				}, -- [169]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124244::::::::120:71::3:2:1801:1472:::|h[Chestguard of Gnawing Desire]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937280,
+				}, -- [170]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124338::::::::120:71::3:3:1801:563:1472:::|h[Demongaze Legplates]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937280,
+				}, -- [171]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124340::::::::120:71::3:5:1801:563:1472:5850:3441:::|h[Legplates of Iron Wrath]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937280,
+				}, -- [172]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124166::::::::120:71::3:2:1801:1472:::|h[Pious Leggings]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937280,
+				}, -- [173]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124282::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Vestment of Illusory Might]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937397,
+				}, -- [174]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124229::::::::120:71::3:5:1801:41:1472:5855:3441:::|h[Unblinking Gaze of Sethe]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937397,
+				}, -- [175]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124202::::::::120:71::3:2:1801:1472:::|h[Filigreed Loop of Zealotry]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937397,
+				}, -- [176]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124259::::::::120:71::3:3:1801:563:1472:::|h[Helm of Imagined Horrors]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937397,
+				}, -- [177]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124286::::::::120:71::3:2:1801:1472:::|h[Surefooted Chain Treads]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937397,
+				}, -- [178]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124141::::::::120:71::3:2:1801:1472:::|h[Drape of Beckoned Souls]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937546,
+				}, -- [179]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124221::::::::120:71::3:2:1801:1472:::|h[Contained Fel Orb Locket]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937546,
+				}, -- [180]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124191::::::::120:71::3:2:1801:1472:::|h[Seal of the Traitorous Councilor]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937546,
+				}, -- [181]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124329::::::::120:71::3:2:1801:1472:::|h[Gauntlets of Iron Wrath]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937546,
+				}, -- [182]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937546,
+				}, -- [183]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124328::::::::120:71::3:4:1801:1472:5855:3441:::|h[Gauntlets of the Ceaseless Vigil]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937546,
+				}, -- [184]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124192::::::::120:71::3:2:1801:1472:::|h[Loathful Encrusted Band]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937721,
+				}, -- [185]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124186::::::::120:71::3:3:1801:42:1472:::|h[Contemptuous Wristguards]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937721,
+				}, -- [186]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124251::::::::120:71::3:2:1801:1472:::|h[Oppressor's Merciless Treads]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937722,
+				}, -- [187]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124306::::::::120:71::3:5:1801:42:1472:5850:3441:::|h[Pauldrons of Contempt]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937722,
+				}, -- [188]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124226::::::::120:71::3:2:1801:1472:::|h[Malicious Censer]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937722,
+				}, -- [189]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124374::::::::120:71::3:4:1801:1472:5850:3441:::|h[Fiendsbreath Warmace]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937858,
+				}, -- [190]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124371::::::::120:71::3:2:1801:1472:::|h[Hammer of Wicked Infusion]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937858,
+				}, -- [191]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124199::::::::120:71::3:2:1801:1472:::|h[Loop of Beckoned Shadows]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937858,
+				}, -- [192]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124177::::::::120:71::3:2:1801:1472:::|h[Mantle of the Arcanic Conclave]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937858,
+				}, -- [193]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124346::::::::120:71::3:2:1801:1472:::|h[Pauldrons of Iron Wrath]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937858,
+				}, -- [194]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124178::::::::120:71::3:2:1801:1472:::|h[Pious Mantle]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937858,
+				}, -- [195]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124280::::::::120:71::3:3:1801:563:1472:::|h[Manacles of the Multitudes]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937962,
+				}, -- [196]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124237::::::::120:71::3:2:1801:1472:::|h[Discordant Chorus]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937962,
+				}, -- [197]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124310::::::::120:71::3:4:1801:1472:5850:3441:::|h[Girdle of the Legion General]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937962,
+				}, -- [198]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124181::::::::120:71::3:2:1801:1472:::|h[Sash of Unending Anguish]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937962,
+				}, -- [199]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124214::::::::120:71::3:2:1801:1472:::|h[Choker of Whispered Promises]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564937962,
+				}, -- [200]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124361::::::::120:71::3:2:1801:1472:::|h[Cursed Demonbone Longbow]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938073,
+				}, -- [201]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124266::::::::120:71::3:2:1801:1472:::|h[Empowered Demonskin Kilt]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938073,
+				}, -- [202]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124349::::::::120:71::3:2:1801:1472:::|h[Annihilan's Waistplate]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938073,
+				}, -- [203]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124248::::::::120:71::3:2:1801:1472:::|h[Felblade Chestguard]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938073,
+				}, -- [204]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124173::::::::120:71::3:2:1801:1472:::|h[Deathrattle Robe]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938073,
+				}, -- [205]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124171::::::::120:71::3:2:1801:1472:::|h[Robe of the Arcanic Conclave]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938073,
+				}, -- [206]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124389::::::::120:71::3:2:1801:1472:::|h[Calamity's Edge]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938166,
+				}, -- [207]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124322::::::::120:71::3:4:1801:1472:5850:3441:::|h[Treads of the Defiler]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938166,
+				}, -- [208]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124222::::::::120:71::3:2:1801:1472:::|h[World Ender's Gorget]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938166,
+				}, -- [209]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124372::::::::120:71::3:3:1801:40:1472:::|h[Gavel of the Eredar]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938166,
+				}, -- [210]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:124176::::::::120:71::3:2:1801:1472:::|h[Mantle of the Eredar Lord]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938166,
+				}, -- [211]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78365::::::::120:71::::::|h[Robe of Glowing Stone]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938812,
+				}, -- [212]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78372::::::::120:71::::::|h[Mycosynth Wristguards]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938812,
+				}, -- [213]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78001::::::::120:71::::::|h[Windward Heart]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938812,
+				}, -- [214]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78492::::::::120:71::::::|h[Breathstealer Band]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938812,
+				}, -- [215]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78368::::::::120:71::::::|h[Underdweller's Spaulders]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938812,
+				}, -- [216]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78363::::::::120:71::::::|h[Vagaries of Time]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938812,
+				}, -- [217]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78003::::::::120:71::::::|h[Indomitable Pride]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938944,
+				}, -- [218]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78855::::::::120:71::::::|h[Gauntlets of the Corrupted Vanquisher]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938945,
+				}, -- [219]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78390::::::::120:71::::::|h[Graveheart Bracers]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938945,
+				}, -- [220]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938945,
+				}, -- [221]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938945,
+				}, -- [222]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:77989::::::::120:71::::::|h[Seal of the Seven Signs]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564938945,
+				}, -- [223]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cff0070dd|Hitem:152979::::::::120:71::::::|h[Puddle of Black Liquid]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939021,
+				}, -- [224]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:77991::::::::120:71::::::|h[Insignia of the Corrupted Mind]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939021,
+				}, -- [225]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78857::::::::120:71::::::|h[Leggings of the Corrupted Protector]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939021,
+				}, -- [226]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78401::::::::120:71::::::|h[Spire of Coagulated Globules]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939021,
+				}, -- [227]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78404::::::::120:71::::::|h[Scalpel of Unrelenting Agony]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939021,
+				}, -- [228]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78489::::::::120:71::::::|h[Seal of Primordial Shadow]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939021,
+				}, -- [229]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78405::::::::120:71::::::|h[Mindstrainer Treads]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939022,
+				}, -- [230]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78416::::::::120:71::::::|h[Runescriven Demon Collar]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939251,
+				}, -- [231]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78002::::::::120:71::::::|h[Bone-Link Fetish]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939251,
+				}, -- [232]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939251,
+				}, -- [233]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939251,
+				}, -- [234]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78420::::::::120:71::::::|h[Girdle of the Grotesque]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939251,
+				}, -- [235]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78413::::::::120:71::::::|h[Signet of Grasping Mouths]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939251,
+				}, -- [236]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78433::::::::120:71::::::|h[Ledger of Revolting Rituals]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939577,
+				}, -- [237]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939577,
+				}, -- [238]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78430::::::::120:71::::::|h[Bracers of Looming Darkness]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939577,
+				}, -- [239]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78431::::::::120:71::::::|h[Stillheart Warboots]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939577,
+				}, -- [240]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78493::::::::120:71::::::|h[Hardheart Ring]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939577,
+				}, -- [241]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78848::::::::120:71::::::|h[Chest of the Corrupted Protector]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564939577,
+				}, -- [242]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78850::::::::120:71::::::|h[Crown of the Corrupted Conqueror]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940080,
+				}, -- [243]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78851::::::::120:71::::::|h[Crown of the Corrupted Protector]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940080,
+				}, -- [244]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78445::::::::120:71::::::|h[Ataraxis, Cudgel of the Warmaster]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940080,
+				}, -- [245]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78450::::::::120:71::::::|h[Timepiece of the Bronze Flight]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940080,
+				}, -- [246]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78447::::::::120:71::::::|h[Belt of the Beloved Companion]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940080,
+				}, -- [247]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78446::::::::120:71::::::|h[Shadow Wing Armbands]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940080,
+				}, -- [248]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78463::::::::120:71::::::|h[Belt of Shattered Elementium]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940471,
+				}, -- [249]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:77998::::::::120:71::::::|h[Resolve of Undying]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940471,
+				}, -- [250]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940471,
+				}, -- [251]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:77994::::::::120:71::::::|h[Wrath of Unchaining]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940471,
+				}, -- [252]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78462::::::::120:71::::::|h[Molten Blood Footpads]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940471,
+				}, -- [253]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78461::::::::120:71::::::|h[Gloves of Liquid Smoke]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940471,
+				}, -- [254]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cff0070dd|Hitem:152980::::::::120:71::::::|h[Elementium Back Plate]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940471,
+				}, -- [255]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78479::::::::120:71::::::|h[Souldrinker]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940588,
+				}, -- [256]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940588,
+				}, -- [257]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78478::::::::120:71::::::|h[Gurthalak, Voice of the Deeps]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940588,
+				}, -- [258]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78474::::::::120:71::::::|h[Blade of the Unmaker]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940588,
+				}, -- [259]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940588,
+				}, -- [260]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:78472::::::::120:71::::::|h[No'Kaled, the Elements of Death]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564940588,
+				}, -- [261]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:142552::::::::120:71::23::::|h[Smoldering Ember Wyrm]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564943938,
+				}, -- [262]
+				{
+					["inBags"] = true,
+					["type"] = "temp",
+					["link"] = "|cffa335ee|Hitem:142129::::::::120:71::23:4:1727:1482:5850:3336:::|h[Spellwarding Waistguard]|h|r",
+					["time_remaining"] = 0,
+					["args"] = {
+					},
+					["time_added"] = 1564944385,
+				}, -- [263]
+			},
 			["UI"] = {
 				["tradeui"] = {
 					["bgColor"] = {
