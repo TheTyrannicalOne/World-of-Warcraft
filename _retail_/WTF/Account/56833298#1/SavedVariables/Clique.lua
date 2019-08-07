@@ -8,20 +8,20 @@ CliqueDB3 = {
 			["blacklist"] = {
 				["PetFrame"] = true,
 			},
-			["spec3_profileKey"] = "Shanyt - Argent Dawn",
-			["downclick"] = false,
 			["specswap"] = false,
+			["downclick"] = false,
+			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 			["spec2_profileKey"] = "Shanyt - Argent Dawn",
 		},
 	},
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 	},
 	["profiles"] = {
-		["Durlok - Black Dragonflight"] = {
+		["Tyrann - Zul'jin"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -43,10 +43,10 @@ CliqueDB3 = {
 		["Vancard - Zul'jin"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -62,10 +62,10 @@ CliqueDB3 = {
 		["Shanyt - Argent Dawn"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -78,7 +78,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Tyrann - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",

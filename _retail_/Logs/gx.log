@@ -1,50 +1,25 @@
-8/4 10:49:55.337  LogOpen
-8/4 10:49:56.008  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0c60) dx11:true dx12:true
-8/4 10:49:56.008  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-8/4 10:49:56.008  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-8/4 10:49:56.071  D3d12 Device Create
-8/4 10:49:56.230  Choosing adapter 0
-8/4 10:49:56.456  Detected NvAPI and checking if it's valid...
-8/4 10:49:56.456  AFR Groups: 1/1
-8/4 10:49:56.456  Feature Level: DX=6, MTL=0
-8/4 10:49:56.502  NotifyOnDeviceCreate
-8/4 10:49:56.502  D3d12 Device Create Successful
-8/4 10:49:56.502  Nvidia driver version: r430_00 (43168)
-8/4 10:49:56.502  <IsGPUDriverOutOfDate> No
-8/4 10:49:56.529  CPU Processor Detection: 12 H/W threads
-8/4 10:49:56.529  Memory Detection: 34296328192 bytes of physical memory available
-8/4 10:49:56.529  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-8/4 10:49:56.675  RenderSettings::NotifyChanged
-8/4 10:49:57.799  Nvidia driver version: r430_00 (43168)
-8/4 10:50:25.802  Nvidia driver version: r430_00 (43168)
-8/4 10:50:25.802  Nvidia driver version: r430_00 (43168)
-8/4 10:51:17.671  Nvidia driver version: r430_00 (43168)
-8/4 10:51:52.636  RenderSettings::NotifyChanged
-8/4 10:53:14.186  Nvidia driver version: r430_00 (43168)
-8/4 10:53:45.701  Nvidia driver version: r430_00 (43168)
-8/4 10:56:52.889  Nvidia driver version: r430_00 (43168)
-8/4 10:57:22.090  Nvidia driver version: r430_00 (43168)
-8/4 11:07:28.662  RenderSettings::NotifyChanged
-8/4 11:07:30.032  CharacterComponent Texture Level change
-8/4 11:49:10.371  RenderSettings::NotifyChanged
-8/4 11:49:13.104  CharacterComponent Texture Level change
-8/4 11:49:22.501  RenderSettings::NotifyChanged
-8/4 11:49:23.607  CharacterComponent Texture Level change
-8/4 11:49:41.266  RenderSettings::NotifyChanged
-8/4 11:49:43.747  CharacterComponent Texture Level change
-8/4 11:56:41.285  RenderSettings::NotifyChanged
-8/4 11:56:42.366  CharacterComponent Texture Level change
-8/4 12:31:04.257  RenderSettings::NotifyChanged
-8/4 12:31:06.684  CharacterComponent Texture Level change
-8/4 12:31:52.629  RenderSettings::NotifyChanged
-8/4 12:31:53.702  CharacterComponent Texture Level change
-8/4 13:03:09.407  RenderSettings::NotifyChanged
-8/4 13:03:11.858  CharacterComponent Texture Level change
-8/4 13:12:33.525  RenderSettings::NotifyChanged
-8/4 13:12:34.714  CharacterComponent Texture Level change
-8/4 13:43:30.450  RenderSettings::NotifyChanged
-8/4 13:43:32.523  CharacterComponent Texture Level change
-8/4 15:03:04.044  Nvidia driver version: r430_00 (43168)
-8/4 15:03:05.160  D3d12 Device Destroy
-8/4 15:03:05.160  NotifyOnDeviceDestroy
-8/4 15:03:05.971  GxShutdown
+8/5 19:29:28.861  LogOpen
+8/5 19:29:29.526  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0c60) dx11:true dx12:true
+8/5 19:29:29.526  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+8/5 19:29:29.526  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+8/5 19:29:29.578  D3d12 Device Create
+8/5 19:29:29.722  Choosing adapter 0
+8/5 19:29:29.890  Detected NvAPI and checking if it's valid...
+8/5 19:29:29.890  AFR Groups: 1/1
+8/5 19:29:29.890  Feature Level: DX=6, MTL=0
+8/5 19:29:29.912  NotifyOnDeviceCreate
+8/5 19:29:29.912  D3d12 Device Create Successful
+8/5 19:29:29.912  Nvidia driver version: r430_00 (43168)
+8/5 19:29:29.912  <IsGPUDriverOutOfDate> No
+8/5 19:29:29.938  CPU Processor Detection: 12 H/W threads
+8/5 19:29:29.938  Memory Detection: 34296328192 bytes of physical memory available
+8/5 19:29:29.938  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+8/5 19:29:30.058  RenderSettings::NotifyChanged
+8/5 19:29:31.035  Nvidia driver version: r430_00 (43168)
+8/5 19:29:58.882  Nvidia driver version: r430_00 (43168)
+8/5 19:29:58.882  Nvidia driver version: r430_00 (43168)
+8/5 19:30:36.192  RenderSettings::NotifyChanged
+8/5 19:31:49.917  Nvidia driver version: r430_00 (43168)
+8/5 19:31:50.413  D3d12 Device Destroy
+8/5 19:31:50.413  NotifyOnDeviceDestroy
+8/5 19:31:50.898  GxShutdown
