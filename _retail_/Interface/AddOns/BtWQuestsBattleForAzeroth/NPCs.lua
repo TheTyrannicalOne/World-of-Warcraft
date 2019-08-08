@@ -8489,17 +8489,6 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [151763] = {
-        name = "Isla",
-        locations = {
-            [1355] = {
-                {
-                    x = 0.377641,
-                    y = 0.553306,
-                },
-            },
-        },
-    },
     [151825] = {
         name = "Merithra of the Dream",
         locations = {
@@ -9107,17 +9096,6 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.66471,
                     y = 0.473327,
-                },
-            },
-        },
-    },
-    [154208] = {
-        name = "Jonah Lowtide",
-        locations = {
-            [1355] = {
-                {
-                    x = 0.50563,
-                    y = 0.662643,
                 },
             },
         },

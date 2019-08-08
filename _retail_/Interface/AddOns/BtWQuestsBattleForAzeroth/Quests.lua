@@ -57546,6 +57546,21 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [55503] = {
+        name = "The Direhorn and the Saurid",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154607,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
     [55504] = {
         name = "Wayshrines of Zuldazar",
         requiredLevel = 120,
@@ -59667,46 +59682,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [56164] = {
-        name = "Desperate Need",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 151763,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 234000,
-            },
-            {
-                type = "reputation",
-                id = 2400,
-                amount = 25,
-            },
-        },
-    },
-    [56166] = {
-        name = "The Needs of the People",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 151763,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 234000,
-            },
-            {
-                type = "reputation",
-                id = 2400,
-                amount = 25,
-            },
-        },
-    },
     [56167] = {
         name = "Investigating the Highlands",
         requiredLevel = 120,
@@ -59759,46 +59734,6 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2391,
                 amount = 150,
-            },
-        },
-    },
-    [56176] = {
-        name = "Desperate Need",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 154208,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 234000,
-            },
-            {
-                type = "reputation",
-                id = 2373,
-                amount = 25,
-            },
-        },
-    },
-    [56179] = {
-        name = "The Needs of the People",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 154208,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 234000,
-            },
-            {
-                type = "reputation",
-                id = 2373,
-                amount = 25,
             },
         },
     },

@@ -2102,9 +2102,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151626] = {
         name = "사냥꾼 아카나",
     },
-    [151763] = {
-        name = "아이슬라",
-    },
     [151848] = {
         name = "로르테마르 테론",
     },

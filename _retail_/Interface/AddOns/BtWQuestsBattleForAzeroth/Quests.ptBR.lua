@@ -6173,23 +6173,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Uma lâmina temperada",
     },
-    [56164] = {
-        name = "Necessidade desesperada",
-    },
-    [56166] = {
-        name = "As necessidades do povo",
-    },
     [56168] = {
         name = "Retificado na fábrica",
     },
     [56175] = {
         name = "Livre de emissões",
-    },
-    [56176] = {
-        name = "Necessidade desesperada",
-    },
-    [56179] = {
-        name = "As necessidades do povo",
     },
     [56181] = {
         name = "Esse é por minha conta",

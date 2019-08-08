@@ -1442,9 +1442,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151626] = {
         name = "猎人阿卡纳",
     },
-    [151763] = {
-        name = "伊兹拉",
-    },
     [151848] = {
         name = "洛瑟玛·塞隆",
     },

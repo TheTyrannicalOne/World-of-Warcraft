@@ -1022,10 +1022,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151626] = {
         name = "獵手阿卡納",
     },
-    [151763] = {
-        name = "伊司拉\13\
-",
-    },
     [151848] = {
         name = "洛索瑪‧塞隆",
     },

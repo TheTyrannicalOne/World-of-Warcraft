@@ -6173,23 +6173,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Una hoja templada",
     },
-    [56164] = {
-        name = "Necesidad acuciante",
-    },
-    [56166] = {
-        name = "Las necesidades de la gente",
-    },
     [56168] = {
         name = "Fábrica reformada",
     },
     [56175] = {
         name = "Libre de emisiones",
-    },
-    [56176] = {
-        name = "Necesidad acuciante",
-    },
-    [56179] = {
-        name = "Las necesidades de la gente",
     },
     [56181] = {
         name = "¡Yo invito!",

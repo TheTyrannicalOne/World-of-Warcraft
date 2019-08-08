@@ -6173,23 +6173,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Una lama temprata",
     },
-    [56164] = {
-        name = "Bisogno disperato",
-    },
-    [56166] = {
-        name = "Bisogni del popolo",
-    },
     [56168] = {
         name = "Fabbrica ristrutturata",
     },
     [56175] = {
         name = "Privo di emissioni",
-    },
-    [56176] = {
-        name = "Bisogno disperato",
-    },
-    [56179] = {
-        name = "Bisogni del popolo",
     },
     [56181] = {
         name = "Questa la offro io",

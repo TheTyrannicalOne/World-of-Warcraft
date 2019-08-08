@@ -6173,23 +6173,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Eine gehärtete Klinge",
     },
-    [56164] = {
-        name = "Dringendst benötigt",
-    },
-    [56166] = {
-        name = "Jeder braucht etwas",
-    },
     [56168] = {
         name = "Fabriküberholt",
     },
     [56175] = {
         name = "Emissionsfrei",
-    },
-    [56176] = {
-        name = "Dringendst benötigt",
-    },
-    [56179] = {
-        name = "Jeder braucht etwas",
     },
     [56181] = {
         name = "Der geht auf mich",

@@ -6173,23 +6173,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Una espada templada",
     },
-    [56164] = {
-        name = "Necesidad desesperada",
-    },
-    [56166] = {
-        name = "Las necesidades del pueblo",
-    },
     [56168] = {
         name = "Renovación fabril",
     },
     [56175] = {
         name = "Libre de humo",
-    },
-    [56176] = {
-        name = "Necesidad desesperada",
-    },
-    [56179] = {
-        name = "Las necesidades del pueblo",
     },
     [56181] = {
         name = "Yo invito",

@@ -2141,9 +2141,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151626] = {
         name = "Caçador Akana",
     },
-    [151763] = {
-        name = "Isla",
-    },
     [151848] = {
         name = "Lor'themar Theron",
     },

@@ -6173,23 +6173,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Une lame trempée",
     },
-    [56164] = {
-        name = "Préoccupante pénurie",
-    },
-    [56166] = {
-        name = "Les besoins du peuple",
-    },
     [56168] = {
         name = "Pièces reconditionnées",
     },
     [56175] = {
         name = "Sans émissions polluantes",
-    },
-    [56176] = {
-        name = "Préoccupante pénurie",
-    },
-    [56179] = {
-        name = "Les besoins du peuple",
     },
     [56181] = {
         name = "Prime d’activité",
