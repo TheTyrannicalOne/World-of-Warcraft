@@ -1,9 +1,7 @@
 # Hekili
 
-## [v8.2.0-06.05](https://github.com/Hekili/hekili/tree/v8.2.0-06.05) (2019-08-04)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.2.0-06.04...v8.2.0-06.05)
+## [v8.2.0-08.03](https://github.com/Hekili/hekili/tree/v8.2.0-08.03) (2019-08-12)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.2.0-08.02...v8.2.0-08.03)
 
-- Update APLs:  DHs, Assassination, Affliction, Destruction.  
-- Re-enable logging of unknown expressions within 'state'.  
-- Typo in crit\_pct\_current check.  
-- Add support for 'crit\_pct\_current' for a given ability.  Defaults to character's crit % chance.  Set 'critical' on an ability to calculate differently.  
+- Protection Warrior:  More APL tinkering.  
+- Protection Warrior:  Allow IP to daisy-chain (instead of letting remaining shield dissippate).  

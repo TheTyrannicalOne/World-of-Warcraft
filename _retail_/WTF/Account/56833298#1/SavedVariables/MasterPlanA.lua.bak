@@ -2,8 +2,8 @@
 MasterPlanAG = {
 	["Illidan"] = {
 		["Zerkinz"] = {
-			["lastCacheTime"] = 1456134282,
 			["class"] = "DRUID",
+			["lastCacheTime"] = 1456134282,
 			["summary"] = {
 				["inProgress"] = {
 					[3] = 1453758371,
@@ -17,16 +17,16 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Aerionz"] = {
-			["faction"] = "Horde",
 			["class"] = "PALADIN",
+			["faction"] = "Horde",
 		},
 		["Recloos"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 		["Milkd"] = {
-			["faction"] = "Horde",
 			["class"] = "PALADIN",
+			["faction"] = "Horde",
 		},
 		["Xerkin"] = {
 			["lastCacheTime"] = 1458101277,
@@ -34,25 +34,15 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Aerion"] = {
-			["class"] = "ROGUE",
 			["faction"] = "Horde",
+			["class"] = "ROGUE",
 		},
 		["Klitpounder"] = {
-			["faction"] = "Horde",
 			["class"] = "HUNTER",
+			["faction"] = "Horde",
 		},
-		["Zerkin"] = {
-			["class"] = "SHAMAN",
-			["lastCacheTime"] = 1462930208,
-			["summary"] = {
-				["tt1"] = true,
-				["ti1"] = 118530,
-				["inProgress"] = {
-					[265] = 1459257399,
-				},
-				["tt3"] = true,
-				["ti3"] = 127855,
-			},
+		["Bennyhin"] = {
+			["class"] = "PRIEST",
 			["faction"] = "Horde",
 		},
 		["Xerkinz"] = {
@@ -60,72 +50,85 @@ MasterPlanAG = {
 			["lastCacheTime"] = 1453618172,
 			["faction"] = "Horde",
 		},
-		["Bennyhin"] = {
-			["faction"] = "Horde",
-			["class"] = "PRIEST",
-		},
-	},
-	["IgnoreRewards"] = {
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["class"] = "WARRIOR",
+		["Zerkin"] = {
+			["lastCacheTime"] = 1462930208,
+			["class"] = "SHAMAN",
 			["summary"] = {
-				["lastOilTime"] = 1564966918,
-				["tt2"] = 1564374017,
-				["tt3"] = 1564849330,
-				["ti1"] = 118531,
-				["tt1"] = 1564374016,
+				["tt3"] = true,
+				["ti1"] = 118530,
 				["ti3"] = 127855,
 				["inProgress"] = {
-					[269] = 1564981286,
-					[587] = 1564981319,
-					[576] = 1565003065,
-					[394] = 1564995611,
-					[399] = 1565002863,
-					[694] = 1564981316,
-					[745] = 1565031718,
-					[365] = 1564974034,
+					[265] = 1459257399,
 				},
-				["ti2"] = 122486,
+				["tt1"] = true,
 			},
 			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1564967009,
-			["curRes"] = 7130,
-			["curOil"] = 75990,
-		},
-	},
-	["Tanaris"] = {
-		["Youngpoobs"] = {
-			["faction"] = "Alliance",
-			["class"] = "MONK",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
-	["Sargeras"] = {
-		["Zerkinz"] = {
-			["class"] = "SHAMAN",
-			["faction"] = "Neutral",
-		},
-		["Xerkinz"] = {
-			["class"] = "DRUID",
-			["faction"] = "Alliance",
 		},
 	},
 	["Zul'jin"] = {
 		["Tyrann"] = {
-			["faction"] = "Horde",
 			["class"] = "PRIEST",
+			["faction"] = "Horde",
 		},
 		["Vancard"] = {
-			["class"] = "MAGE",
 			["faction"] = "Horde",
+			["class"] = "MAGE",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
+	["Tanaris"] = {
+		["Youngpoobs"] = {
+			["class"] = "MONK",
+			["faction"] = "Alliance",
+		},
+	},
+	["Sargeras"] = {
+		["Zerkinz"] = {
+			["faction"] = "Neutral",
+			["class"] = "SHAMAN",
+		},
+		["Xerkinz"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+	},
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["faction"] = "Horde",
+			["summary"] = {
+				["lastOilTime"] = 1565546637,
+				["tt2"] = 1565510835,
+				["tt3"] = 1564849330,
+				["tt1"] = 1565510835,
+				["ti1"] = 118531,
+				["ti3"] = 127855,
+				["inProgress"] = {
+					[276] = 1565582626,
+					[306] = 1565577318,
+					[133] = 1565557381,
+					[127] = 1565561019,
+					[194] = 1565551985,
+					[745] = 1565611437,
+					[581] = 1565611439,
+					[587] = 1565561038,
+					[692] = 1565561040,
+					[497] = 1565582616,
+					[303] = 1565557394,
+					[190] = 1565551210,
+					[543] = 1565575442,
+				},
+				["ti2"] = 122486,
+			},
+			["curOil"] = 75570,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1565546529,
+			["curRes"] = 7537,
+			["class"] = "WARRIOR",
 		},
 	},
 }

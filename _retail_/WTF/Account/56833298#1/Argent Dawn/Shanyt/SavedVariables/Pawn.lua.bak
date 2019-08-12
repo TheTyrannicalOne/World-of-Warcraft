@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0246,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 166696,
@@ -86,11 +83,14 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:158124::::::::120:71::28:3:4803:1577:4786:::|h[Dinobone Cracker]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 167990,
-			["Level"] = 370,
-			["Link"] = "|cffa335ee|Hitem:167990::::::::120:71::13:2:1715:5804:::|h[Notorious Combatant's Shield of the Harmonious]|h|r",
+			["ID"] = 170470,
+			["Level"] = 385,
+			["Link"] = "|cffa335ee|Hitem:170470::::::::120:71:::2:1497:4786:::|h[Reinforced Grease Deflector]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

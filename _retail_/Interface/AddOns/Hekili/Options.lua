@@ -215,6 +215,20 @@ local oneTimeFixes = {
             end
         end
     end,
+
+    autoconvertPSCDsToCBs_20190805 = function( p )
+        for _, pack in pairs( p.packs ) do
+            for _, list in pairs( pack.lists ) do
+                for i, entry in ipairs( list ) do
+                    if entry.action == "pocketsized_computation_device" then
+                        entry.action = "cyclotronic_blast"
+                    end
+                end
+            end
+        end
+
+        p.runOnce.autoconvertPSCDsToCBs_20190805 = nil -- repeat as needed.
+    end,
 }
 
 
@@ -4158,7 +4172,9 @@ do
                         end
 
                         options.args.core.plugins.settings[ option.name ] = option.info
-                        self.DB.profile.specs[ id ].settings[ option.name ] = self.DB.profile.specs[ id ].settings[ option.name ] or option.default
+                        if self.DB.profile.specs[ id ].settings[ option.name ] == nil then
+                            self.DB.profile.specs[ id ].settings[ option.name ] = option.default
+                        end
                     end
                 end
 
@@ -4297,7 +4313,11 @@ do
             data.line_cd = nil
         end
 
-        self:LoadScript( pack, packControl.listName, actionID )
+        if option == "action" then
+            self:LoadScripts()
+        else
+            self:LoadScript( pack, packControl.listName, actionID )
+        end
     end
 
 
@@ -5195,7 +5215,7 @@ do
                                                 local action = entry.action
                                                 local desc
 
-                                                local warning = false
+                                                local warning, color = false
 
                                                 if not action then
                                                     action = "Unassigned"
@@ -5252,13 +5272,13 @@ do
 
                                                 if not entry.enabled then
                                                     warning = true
+                                                    color = "|cFF808080"
                                                 end
 
                                                 if desc then desc = desc:gsub( "[\r\n]", "" ) end
 
-                                                local color = "|cFFFFD100"
-                                                if warning then
-                                                    color = "|cFFFF0000"
+                                                if not color then
+                                                    color = warning and "|cFFFF0000" or "|cFFFFD100"
                                                 end
 
                                                 if desc then
@@ -6290,70 +6310,6 @@ do
                     }
                 },
 
-                customHeader = {
-                    type = "header",
-                    name = "Custom",
-                    order = 7,
-                },
-
-                custom1 = {
-                    type = "group",
-                    name = "",
-                    inline = true,
-                    order = 7.1,
-                    args = {
-                        key = {
-                            type = "keybinding",
-                            name = "Custom #1",
-                            desc = "Set a key to toggle your first custom set.",
-                            order = 1,
-                        },
-
-                        value = {
-                            type = "toggle",
-                            name = "Show Custom #1",
-                            desc = "If checked, abilities linked to Custom #1 can be recommended.",
-                            order = 2,
-                        },
-
-                        name = {
-                            type = "input",
-                            name = "Custom #1 Name",
-                            desc = "Specify a descriptive name for this custom toggle.",
-                            order = 3
-                        }
-                    }
-                },
-
-                custom2 = {
-                    type = "group",
-                    name = "",
-                    inline = true,
-                    order = 7.2,
-                    args = {
-                        key = {
-                            type = "keybinding",
-                            name = "Custom #2",
-                            desc = "Set a key to toggle your second custom set.",
-                            order = 1,
-                        },
-
-                        value = {
-                            type = "toggle",
-                            name = "Show Custom #2",
-                            desc = "If checked, abilities linked to Custom #2 can be recommended.",
-                            order = 2,
-                        },
-
-                        name = {
-                            type = "input",
-                            name = "Custom #1 Name",
-                            desc = "Specify a descriptive name for this custom toggle.",
-                            order = 3
-                        }
-                    }
-                },
-
                 displayModes = {
                     type = "header",
                     name = "Display Modes",
@@ -6371,13 +6327,7 @@ do
                             name = 'Display Mode',
                             desc = "Pressing this binding will cycle your Display Mode through the options checked below.",
                             order = 1,
-                        },
-
-                        modeLB = {
-                            type = "description",
-                            name = "",
-                            width = "full",
-                            order = 1.01
+                            width = 1,
                         },
 
                         value = {
@@ -6391,13 +6341,14 @@ do
                                 dual = "Fixed Dual Display",
                                 reactive = "Reactive Dual Display"
                             },
-                            width = 1.5,
+                            width = 2,
                             order = 1.02,
                         },
 
                         modeLB2 = {
                             type = "description",
-                            name = "",
+                            name = "Select the |cFFFFD100Display Modes|r that you wish to use.  Each time you press your |cFFFFD100Display Mode|r keybinding, the addon will switch to the next checked mode.",
+                            fontSize = "medium",
                             width = "full",
                             order = 1.03
                         },
@@ -6507,6 +6458,70 @@ do
                             desc = "Set a key to make a snapshot (without pausing) that can be viewed on the Snapshots tab.  This can be useful information for testing and debugging.",
                             order = 1,
                         },
+                    }
+                },
+
+                customHeader = {
+                    type = "header",
+                    name = "Custom",
+                    order = 30,
+                },
+
+                custom1 = {
+                    type = "group",
+                    name = "",
+                    inline = true,
+                    order = 30.1,
+                    args = {
+                        key = {
+                            type = "keybinding",
+                            name = "Custom #1",
+                            desc = "Set a key to toggle your first custom set.",
+                            order = 1,
+                        },
+
+                        value = {
+                            type = "toggle",
+                            name = "Show Custom #1",
+                            desc = "If checked, abilities linked to Custom #1 can be recommended.",
+                            order = 2,
+                        },
+
+                        name = {
+                            type = "input",
+                            name = "Custom #1 Name",
+                            desc = "Specify a descriptive name for this custom toggle.",
+                            order = 3
+                        }
+                    }
+                },
+
+                custom2 = {
+                    type = "group",
+                    name = "",
+                    inline = true,
+                    order = 30.2,
+                    args = {
+                        key = {
+                            type = "keybinding",
+                            name = "Custom #2",
+                            desc = "Set a key to toggle your second custom set.",
+                            order = 1,
+                        },
+
+                        value = {
+                            type = "toggle",
+                            name = "Show Custom #2",
+                            desc = "If checked, abilities linked to Custom #2 can be recommended.",
+                            order = 2,
+                        },
+
+                        name = {
+                            type = "input",
+                            name = "Custom #1 Name",
+                            desc = "Specify a descriptive name for this custom toggle.",
+                            order = 3
+                        }
                     }
                 },                
 
@@ -7482,8 +7497,6 @@ function Hekili:RefreshOptions()
     self:EmbedSpecOptions()
     self:EmbedAbilityOptions()
     self:EmbedItemOptions()
-
-    self.Options.args.class = ns.ClassSettings()
 
     -- Until I feel like making this better at managing memory.
     collectgarbage()
@@ -8463,8 +8476,7 @@ ns.accomm = accommodate_targets
 
 
 local function Sanitize( segment, i, line, warnings )
-
-    if i == nil then return i end
+    if i == nil then return end
 
     local operators = {
         [">"] = true,
@@ -8484,14 +8496,8 @@ local function Sanitize( segment, i, line, warnings )
         ['%%'] = true
     }
 
-    local times = 0
-
-
     for token in i:gmatch( "stealthed" ) do
-
-        local times = 0
-        while (i:find(token)) do
-
+        while( i:find(token) ) do
             local strpos, strend = i:find(token)
 
             local pre = strpos > 1 and i:sub( strpos - 1, strpos - 1 ) or ''
@@ -8509,11 +8515,29 @@ local function Sanitize( segment, i, line, warnings )
 
         i = i:gsub( '\v', token )
         i = i:gsub( '\a', token..'.rogue' )
+    end
 
-    end 
+    for token in i:gmatch( "cooldown" ) do
+        while( i:find(token) ) do
+            local strpos, strend = i:find(token)
+
+            local pre = strpos > 1 and i:sub( strpos - 1, strpos - 1 ) or ''
+            local post = strend < i:len() and i:sub( strend + 1, strend + 1 ) or ''
+            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
+            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
+
+            if pre ~= '.' and pre ~= '_' and not pre:match('%a') and post ~= '.' and post ~= '_' and not post:match('%a') then
+                i = start .. '\a' .. finish
+            else
+                i = start .. '\v' .. finish
+            end
+        end
+
+        i = i:gsub( '\v', token )
+        i = i:gsub( '\a', 'action_cooldown' )
+    end
 
     for token in i:gmatch( "equipped%.[0-9]+" ) do
-
         local itemID = tonumber( token:match( "([0-9]+)" ) )
         local itemName = GetItemInfo( itemID )
         local itemKey = formatKey( itemName )
@@ -8523,6 +8547,8 @@ local function Sanitize( segment, i, line, warnings )
         end
 
     end   
+
+    local times = 0
 
     i, times = i:gsub( "pet%.[%w_]+%.([%w_]+)%.", "%1." )
     if times > 0 then
@@ -8783,7 +8809,8 @@ do
                 if a == 1 then
                     local ability = str:trim()
 
-                    if ability and ( ability == 'use_item' or class.abilities[ ability ] ) then                   
+                    if ability and ( ability == 'use_item' or class.abilities[ ability ] ) then
+                        if ability == "pocketsized_computation_device" then ability = "cyclotronic_blast" end
                         result.action = class.abilities[ ability ] and class.abilities[ ability ].key or ability
                     elseif not ignore_actions[ ability ] then
                         table.insert( warnings, "Line " .. line .. ": Unsupported action '" .. ability .. "'." )

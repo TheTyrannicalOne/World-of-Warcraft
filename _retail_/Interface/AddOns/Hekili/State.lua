@@ -1546,6 +1546,10 @@ local mt_state = {
         elseif k == 'time_to_die' then
             if not t.boss then return 3600 end
             return max( 1, Hekili:GetGreatestTTD() - ( t.offset + t.delay ) )
+        
+        elseif k:sub(1, 12) == "time_to_pct_" then
+            local percent = tonumber( k:sub( 13 ) ) or 0
+            return Hekili:GetGreatestTimeToPct( percent ) - ( t.offset + t.delay )
 
         elseif k == "expected_combat_length" then
             if not t.boss then return 3600 end
@@ -1745,6 +1749,9 @@ local mt_state = {
                 return t.target.maxR / v
             end
             return 0
+        
+        elseif k == 'action_cooldown' then
+            return ability and ability.cooldown or 0
 
         elseif k == 'charges' then
             return t.cooldown[ action ].charges
@@ -2245,6 +2252,10 @@ local mt_target = {
 
         elseif k == 'is_boss' then
             return ( UnitCanAttack( "player", "target" ) and ( UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) )
+
+        elseif k:sub(1, 12) == 'time_to_pct_' then
+            local percent = tonumber( k:sub( 13 ) ) or 0
+            return Hekili:GetTimeToPct( "target", percent )
 
         elseif k:sub(1, 6) == 'within' then
             local maxR = k:match( "^within(%d+)$" )
@@ -3006,6 +3017,9 @@ local mt_default_buff = {
         elseif k == 'ticks' then
             if t.up then return 1 + ( ( class.auras[ t.key ].duration or ( 30 * state.haste ) ) / ( class.auras[ t.key ].tick_time or ( 3 * t.haste ) ) ) - t.ticks_remain end
             return 0
+        
+        elseif k == 'tick_time' then
+            return aura and aura.tick_time or 3 -- Default tick time will be 3 because why not?
 
         elseif k == 'ticks_remain' then
             if t.up then return math.floor( t.remains / t.tick_time ) end
@@ -3017,7 +3031,7 @@ local mt_default_buff = {
             end
         end
 
-        Error( "UNK: buff." .. t.key .. "." .. k )
+        Error( "UNK: buff." .. t.key .. "." .. k .. "\n" .. debugstack(2) )
 
     end,
 
@@ -3429,6 +3443,8 @@ do
             local value = 0
             local now = state.query_time
 
+            local which_mod = "value"
+
             for i, entry in ipairs( data ) do
                 local scriptID = entry.id
                 local currPath = entry.fullPath .. ":" .. now
@@ -3484,13 +3500,17 @@ do
                             sub = "Subtract Value",]]
 
                     if op == "set" or op == "setif" then
-                        if passed then value = state.args.value
+                        if passed then
+                            value = state.args.value
                         else
                             local v2 = state.args.value_else
-                            if v2 ~= nil then value = state.args.value_else end
+                            if v2 ~= nil then
+                                value = state.args.value_else
+                                which_mod = "value_else"
+                            end
                         end
                     elseif op == "reset" then
-                        value = passed and 0 or value
+                        value = passed and 0 or value                        
                     elseif op == "default" and passed then
                         default = state.args.value
                     else
@@ -3533,7 +3553,10 @@ do
                         end
                     end
 
-                    if debug then Hekili:Debug( "var[%s] [%02d/%s] :: op: %s, conditions: %s -- [%s]; value: %s", var, i, scriptID, state.args.op or "autoset", scripts:GetConditionsAndValues( scriptID ), tostring( passed ), tostring( value ) ) end
+                    if debug then
+                        Hekili:Debug( "variable.%s [%02d/%s] :: op: %s, conditions: %s -- [%s]", var, i, scriptID, state.args.op or "autoset", scripts:GetConditionsAndValues( scriptID ), tostring( passed ) )
+                        if passed then Hekili:Debug( " - %s: %s, result: %s", which_mod, scripts:GetModifierValues( which_mod, scriptID ), tostring( value ) ) end
+                    end
                 end
             end
 
@@ -4338,9 +4361,8 @@ end
 function state.putTrinketsOnCD( val )
     val = val or 10
 
-    setCooldown( "use_items", max( val, state.cooldown.use_items.remains ) )
     for i, item in ipairs( state.items ) do
-        setCooldown( item, max( val, state.cooldown.use_items.remains ) )
+        if not class.abilities[ item ].essence then setCooldown( item, val ) end
     end
 end
 

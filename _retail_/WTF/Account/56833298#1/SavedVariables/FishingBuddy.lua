@@ -9,7 +9,7 @@ FishingBuddy_Info = {
 		[590001] = 19,
 		[863003] = 1,
 		[590002] = 5,
-		[1165000] = 103,
+		[1165000] = 109,
 		[1165001] = 1,
 		[863005] = 1,
 		[85000] = 3,
@@ -17,16 +17,16 @@ FishingBuddy_Info = {
 		[862001] = 2,
 		[862002] = 3,
 		[862003] = 1,
-		[1165002] = 102,
+		[1355001] = 2,
 		[862004] = 2,
 		[1355000] = 2,
 		[862005] = 36,
-		[863002] = 2,
-		[863001] = 8,
-		[863004] = 3,
 		[0] = 1,
+		[863004] = 3,
+		[863001] = 8,
+		[863002] = 2,
 		[85001] = 3,
-		[1355001] = 2,
+		[1165002] = 108,
 	},
 	["HiddenFishies"] = {
 	},
@@ -45,10 +45,10 @@ FishingBuddy_Info = {
 		[862003] = 0,
 		[862004] = 0,
 		[862005] = 0,
-		[863005] = 0,
+		[1355001] = 0,
 		[863002] = 0,
 		[85001] = 0,
-		[1355001] = 0,
+		[863005] = 0,
 	},
 	["DataFish"] = 0,
 	["FishingHoles"] = {
@@ -67,10 +67,10 @@ FishingBuddy_Info = {
 			[111601] = 6,
 			[111675] = 1,
 			[111665] = 3,
-			[111651] = 1,
+			[111658] = 1,
 			[111589] = 2,
 			[111672] = 1,
-			[111658] = 1,
+			[111651] = 1,
 		},
 		[863003] = {
 			[152544] = 1,
@@ -90,11 +90,11 @@ FishingBuddy_Info = {
 		[1165002] = {
 			[162515] = 6,
 			[160927] = 1,
-			[152544] = 47,
-			[152543] = 44,
+			[160934] = 2,
+			[152543] = 48,
 			[154770] = 1,
 			[154792] = 1,
-			[160934] = 2,
+			[152544] = 49,
 		},
 		[862001] = {
 			[152543] = 2,
@@ -116,8 +116,8 @@ FishingBuddy_Info = {
 			[152544] = 17,
 			[154801] = 1,
 		},
-		[863005] = {
-			[152547] = 1,
+		[1355001] = {
+			[168646] = 2,
 		},
 		[863002] = {
 			[152543] = 2,
@@ -127,49 +127,19 @@ FishingBuddy_Info = {
 			[41808] = 1,
 			[23380] = 1,
 		},
-		[1355001] = {
-			[168646] = 2,
+		[863005] = {
+			[152547] = 1,
 		},
 	},
-	["FishSchools"] = {
-		[863] = {
-			{
-				["y"] = 0.745583651220492,
-				["x"] = 0.587682601119972,
-				["sidx"] = 863000,
-				["kind"] = 0,
-				["fish"] = {
-					[152547] = 6,
-					[152549] = 1,
-				},
-				["count"] = 7,
-			}, -- [1]
-		},
-		[862] = {
-			{
-				["y"] = 0.51498076113977,
-				["x"] = 0.766917032053709,
-				["sidx"] = 862000,
-				["kind"] = 0,
-				["fish"] = {
-					[152543] = 2,
-					[152547] = 1,
-				},
-				["count"] = 3,
-			}, -- [1]
-		},
-		[1355] = {
-			{
-				["y"] = 0.1358265173594025,
-				["x"] = 0.3850689920075923,
-				["sidx"] = 1355000,
-				["kind"] = 0,
-				["count"] = 1,
-				["fish"] = {
-					[168646] = 1,
-				},
-			}, -- [1]
-		},
+	["KnownZones"] = {
+		[0] = "Port of Zandalar",
+		[590] = "Galhun's Garrison",
+		[863] = "Razorjaw River",
+		[1355] = "Chitterspine Caverns",
+		[1165] = "Port of Zandalar",
+		[862] = "Port of Zandalar",
+		[619] = "Margoss's Retreat",
+		[85] = "Valley of Strength",
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
@@ -190,163 +160,193 @@ FishingBuddy_Info = {
 		[862001] = "Atal'Gral",
 		[862002] = "Talanji's Rebuke",
 		[862003] = "Xibala",
-		[1165002] = "Port of Zandalar",
+		[1355001] = "Chitterspine Caverns",
 		[862004] = "Sandscar Breach",
 		[1355000] = 1,
 		[862005] = "Port of Zandalar",
-		[863002] = "Wayward Shoals",
-		[863001] = "The Shattered River",
-		[863004] = "Krag'wa's Burrow",
 		[0] = 1,
+		[863004] = "Krag'wa's Burrow",
+		[863001] = "The Shattered River",
+		[863002] = "Wayward Shoals",
 		[85001] = "Valley of Strength",
-		[1355001] = "Chitterspine Caverns",
+		[1165002] = "Port of Zandalar",
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
 		[152549] = {
 			["enUS"] = "Redtail Loach",
-			["quality"] = 1,
 			["texture"] = 2057314,
+			["quality"] = 1,
 		},
 		[111665] = {
 			["enUS"] = "Sea Scorpion",
-			["texture"] = 970816,
 			["quality"] = 1,
+			["texture"] = 970816,
 		},
 		[160927] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Chipped Stone Hatchet",
-			["quality"] = 0,
 			["texture"] = 135421,
+			["quality"] = 0,
 		},
 		[41808] = {
 			["enUS"] = "Bonescale Snapper",
-			["quality"] = 1,
 			["texture"] = 133934,
+			["quality"] = 1,
 		},
 		[154801] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Crumbling Chain Belt",
-			["quality"] = 0,
 			["texture"] = 132498,
+			["quality"] = 0,
 		},
 		[111675] = {
 			["enUS"] = "Enormous Fat Sleeper",
-			["texture"] = 970823,
 			["quality"] = 1,
+			["texture"] = 970823,
 		},
 		[6289] = {
 			["enUS"] = "Raw Longjaw Mud Snapper",
-			["quality"] = 1,
 			["texture"] = 133918,
+			["quality"] = 1,
 		},
 		[162517] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "U'taka",
-			["texture"] = 237327,
 			["quality"] = 2,
+			["texture"] = 237327,
 		},
 		[111658] = {
 			["enUS"] = "Small Sea Scorpion",
-			["texture"] = 970815,
 			["quality"] = 1,
+			["texture"] = 970815,
 		},
 		[152543] = {
 			["enUS"] = "Sand Shifter",
-			["quality"] = 1,
 			["texture"] = 2057315,
+			["quality"] = 1,
 		},
 		[152547] = {
 			["enUS"] = "Great Sea Catfish",
-			["quality"] = 1,
 			["texture"] = 2057312,
-		},
-		[154779] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Ruptured Plate Stompers",
-			["quality"] = 0,
-			["texture"] = 132589,
-		},
-		[112633] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "Frostdeep Minnow",
-			["texture"] = 630618,
-			["quality"] = 2,
-		},
-		[111672] = {
-			["enUS"] = "Enormous Sea Scorpion",
-			["texture"] = 970817,
-			["quality"] = 1,
-		},
-		[154770] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Cracked Hide Belt",
-			["texture"] = 132493,
-			["quality"] = 0,
-		},
-		[152544] = {
-			["enUS"] = "Slimy Mackerel",
-			["quality"] = 1,
-			["texture"] = 2057316,
-		},
-		[23380] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Broken Power Core",
-			["quality"] = 0,
-			["texture"] = 134096,
-		},
-		[160934] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Mud-Soaked Crossbow",
-			["texture"] = 135531,
-			["quality"] = 0,
-		},
-		[111589] = {
-			["enUS"] = "Small Crescent Saberfish",
-			["texture"] = 970812,
-			["quality"] = 1,
-		},
-		[154792] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Unraveling Cloth Cord",
-			["texture"] = 132511,
-			["quality"] = 0,
-		},
-		[162515] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "Midnight Salmon",
-			["quality"] = 2,
-			["texture"] = 237302,
-		},
-		[111651] = {
-			["enUS"] = "Small Fat Sleeper",
-			["texture"] = 970821,
-			["quality"] = 1,
-		},
-		[138777] = {
-			["enUS"] = "Drowned Mana",
-			["quality"] = 1,
-			["texture"] = 132852,
-		},
-		[111601] = {
-			["enUS"] = "Enormous Crescent Saberfish",
-			["texture"] = 970814,
 			["quality"] = 1,
 		},
 		[168646] = {
 			["enUS"] = "Mauve Stinger",
+			["quality"] = 1,
 			["texture"] = 3007472,
+		},
+		[111601] = {
+			["enUS"] = "Enormous Crescent Saberfish",
+			["quality"] = 1,
+			["texture"] = 970814,
+		},
+		[111672] = {
+			["enUS"] = "Enormous Sea Scorpion",
+			["quality"] = 1,
+			["texture"] = 970817,
+		},
+		[154770] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Cracked Hide Belt",
+			["quality"] = 0,
+			["texture"] = 132493,
+		},
+		[152544] = {
+			["enUS"] = "Slimy Mackerel",
+			["texture"] = 2057316,
 			["quality"] = 1,
 		},
+		[111589] = {
+			["enUS"] = "Small Crescent Saberfish",
+			["quality"] = 1,
+			["texture"] = 970812,
+		},
+		[162515] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Midnight Salmon",
+			["texture"] = 237302,
+			["quality"] = 2,
+		},
+		[111651] = {
+			["enUS"] = "Small Fat Sleeper",
+			["quality"] = 1,
+			["texture"] = 970821,
+		},
+		[154792] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Unraveling Cloth Cord",
+			["quality"] = 0,
+			["texture"] = 132511,
+		},
+		[160934] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Mud-Soaked Crossbow",
+			["quality"] = 0,
+			["texture"] = 135531,
+		},
+		[23380] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Broken Power Core",
+			["texture"] = 134096,
+			["quality"] = 0,
+		},
+		[138777] = {
+			["enUS"] = "Drowned Mana",
+			["texture"] = 132852,
+			["quality"] = 1,
+		},
+		[112633] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Frostdeep Minnow",
+			["quality"] = 2,
+			["texture"] = 630618,
+		},
+		[154779] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Ruptured Plate Stompers",
+			["texture"] = 132589,
+			["quality"] = 0,
+		},
 	},
-	["KnownZones"] = {
-		[0] = "Port of Zandalar",
-		[85] = "Valley of Strength",
-		[590] = "Galhun's Garrison",
-		[619] = "Margoss's Retreat",
-		[1165] = "Port of Zandalar",
-		[862] = "Port of Zandalar",
-		[1355] = "Chitterspine Caverns",
-		[863] = "Razorjaw River",
+	["FishSchools"] = {
+		[863] = {
+			{
+				["y"] = 0.745583651220492,
+				["x"] = 0.587682601119972,
+				["sidx"] = 863000,
+				["kind"] = 0,
+				["count"] = 7,
+				["fish"] = {
+					[152547] = 6,
+					[152549] = 1,
+				},
+			}, -- [1]
+		},
+		[862] = {
+			{
+				["y"] = 0.51498076113977,
+				["x"] = 0.766917032053709,
+				["sidx"] = 862000,
+				["kind"] = 0,
+				["count"] = 3,
+				["fish"] = {
+					[152543] = 2,
+					[152547] = 1,
+				},
+			}, -- [1]
+		},
+		[1355] = {
+			{
+				["y"] = 0.1358265173594025,
+				["x"] = 0.3850689920075923,
+				["sidx"] = 1355000,
+				["kind"] = 0,
+				["fish"] = {
+					[168646] = 1,
+				},
+				["count"] = 1,
+			}, -- [1]
+		},
 	},
 }

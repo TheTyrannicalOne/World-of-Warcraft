@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0246,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 166696,
@@ -9,13 +12,13 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 437,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1574:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 441,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1578:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 157900,
-			["Level"] = 390,
-			["Link"] = "|cffa335ee|Hitem:157900::::::::120:71::28:4:1577:4786:5415:4775:::|h[Bone-Fetished Shoulderplates]|h|r",
+			["ID"] = 166551,
+			["Level"] = 405,
+			["Link"] = "|cffa335ee|Hitem:166551::::::::120:71::6:5:5126:1517:4786:5418:4775:::|h[Deathguard's Shoulderplates]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -55,22 +58,22 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165680::::::::120:71::28:3:4803:1587:4786:::|h[Igneous Winterskorn Loop]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 159462,
-			["Level"] = 370,
+			["ID"] = 158151,
+			["Level"] = 390,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:159462::::::::120:71::2:3:4778:1542:4782:::|h[Footbomb Championship Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158151::::::::120:71::27:3:4803:1582:4785:::|h[Zandalari Band]|h|r",
 		}, -- [12]
+		{
+			["ID"] = 158162,
+			["Level"] = 390,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff0070dd|Hitem:158162::::::::120:71::27:3:4803:1582:4785:::|h[Pearl Diver's Compass]|h|r",
+		}, -- [13]
 		{
 			["ID"] = 158154,
 			["Level"] = 370,
-			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:158154::::::::120:71::27:3:4803:1562:4786:::|h[Emblem of Zandalar]|h|r",
-		}, -- [13]
-		{
-			["ID"] = 158155,
-			["Level"] = 360,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:158155::::::::120:71::27:3:4803:1552:4785:::|h[Dinobone Charm]|h|r",
+			["Link"] = "|cffa335ee|Hitem:158154::::::::120:71::27:3:4803:1562:4786:::|h[Emblem of Zandalar]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166763,
@@ -78,19 +81,16 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:166763::::::::120:71::6:3:5126:1517:4786:::|h[Deathstalker's Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158124,
-			["Level"] = 385,
-			["Link"] = "|cffa335ee|Hitem:158124::::::::120:71::28:3:4803:1577:4786:::|h[Dinobone Cracker]|h|r",
+			["ID"] = 158130,
+			["Level"] = 405,
+			["Link"] = "|cffa335ee|Hitem:158130::::::::120:71::28:3:4803:1597:4786:::|h[Zocalo Pummeler]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 167990,
-			["Level"] = 370,
-			["Link"] = "|cffa335ee|Hitem:167990::::::::120:71::13:2:1715:5804:::|h[Notorious Combatant's Shield of the Harmonious]|h|r",
+			["ID"] = 170470,
+			["Level"] = 385,
+			["Link"] = "|cffa335ee|Hitem:170470::::::::120:71:::2:1497:4786:::|h[Reinforced Grease Deflector]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

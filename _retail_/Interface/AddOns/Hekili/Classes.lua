@@ -1860,6 +1860,19 @@ do
         cooldown = 120,
         gcd = 'off',
     } )
+
+
+    all:RegisterAbility( "heart_essence", {
+        name = "|cff00ccff[Heart Essence]|r",
+        cast = 0,
+        cooldown = 0,
+        gcd = 'off',
+        
+        item = 158075,
+        essence = true,
+        
+        usable = function () return false, "your equipped major essence is supported elsewhere in the priority or is not an active ability" end
+    } )
 end
 
 
@@ -2179,13 +2192,13 @@ do
         max_stack = 1
     } )    
 
-    all:RegisterAbility( "pocketsized_computation_device", {
+    --[[ all:RegisterAbility( "pocketsized_computation_device", {
         -- key = "pocketsized_computation_device",
         cast = 0,
         cooldown = 120,
         gcd = "spell",
 
-        item = 167555,
+        -- item = 167555,
         texture = 2115322,
         bind = { "cyclotronic_blast", "harmonic_dematerializer", "inactive_red_punchcard" },
         startsCombat = true,
@@ -2194,14 +2207,14 @@ do
 
         usable = function() return false, "no supported red punchcard installed" end,
         copy = "inactive_red_punchcard"
-    } )
+    } ) ]]
 
     all:RegisterAbility( "cyclotronic_blast", {
         id = 293491,
         -- key = "pocketsized_computation_device",
         cast = function () return 1.5 * haste end,
         channeled = function () return cooldown.cyclotronic_blast.remains > 0 end,
-        cooldown = 120,
+        cooldown = function () return equipped.cyclotronic_blast and 120 or 0 end,
         gcd = "spell",
 
         item = 167672,
@@ -4603,12 +4616,8 @@ function Hekili:SpecializationChanged()
 
             for name, func in pairs( spec.stateExprs ) do
                 if not class.stateExprs[ name ] then
-                    if rawget( state, name ) then
-                        Hekili:Error( "Cannot RegisterStateExpr for an existing expression ( " .. spec.name .. " - " .. name .. " ) -- " .. tostring( rawget( state, name ) ) .. "." )
-                    else
-                        class.stateExprs[ name ] = func
-                        -- Hekili:Error( "Not real error, registered " .. name .. " for " .. spec.name .. " (RSE)." )
-                    end
+                    if rawget( state, name ) then state[ name ] = nil end
+                    class.stateExprs[ name ] = func
                 end
             end
 
@@ -4649,6 +4658,22 @@ function Hekili:SpecializationChanged()
         end
     end
 
+    for k in pairs( class.abilityList ) do
+        local ability = class.abilities[ k ]
+        
+        if ability and ability.id > 0 then
+            if not ability.texture then
+                local _, _, tex = GetSpellInfo( ability.id )
+
+                if tex then
+                    ability.texture = tex
+                    class.abilityList[ k ] = "|T" .. ability.texture .. ":0|t " .. ability.name
+                end
+            else
+                class.abilityList[ k ] = "|T" .. ability.texture .. ":0|t " .. ability.name
+            end
+        end
+    end
 
     state.GUID = UnitGUID( 'player' )
     state.player.unit = UnitGUID( 'player' )

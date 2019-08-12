@@ -73,7 +73,7 @@ do
         Hekili.TargetDebug = ""
 
         local spec = state.spec.id
-        spec = spec and rawget(Hekili.DB.profile.specs, spec)
+        spec = spec and rawget( Hekili.DB.profile.specs, spec ) or nil
 
         if spec and spec.nameplates and showNPs then
             for unit, guid in pairs(npGUIDs) do
@@ -97,35 +97,35 @@ do
 
                 counted[ guid ] = counted[ guid ] or false
             end
-        end
 
-        for _, unit in ipairs(unitIDs) do
-            local guid = UnitGUID(unit)
-
-            if guid and counted[ guid ] == nil then
-                if UnitExists(unit) and not UnitIsDead(unit) and UnitCanAttack("player", unit) and UnitInPhase(unit) and (UnitIsPVP("player") or not UnitIsPlayer(unit)) then
-                    local npcid = guid:match("(%d+)-%x-$")
-
-                    if not enemyExclusions[npcid] then
-                        local _, range = RC:GetRange(unit)
-
-                        guidRanges[ guid ] = range
-
-                        local rate, n = Hekili:GetTTD(unit)
-                        Hekili.TargetDebug = format( "%s%12s - %2d - %s - %.2f - %d\n", Hekili.TargetDebug, unit, range or 0, guid, rate or 0, n or 0 )
-
-                        if range and range <= spec.nameplateRange then
-                            count = count + 1
-                            counted[ guid ] = true
+            for _, unit in ipairs(unitIDs) do
+                local guid = UnitGUID(unit)
+    
+                if guid and counted[ guid ] == nil then
+                    if UnitExists(unit) and not UnitIsDead(unit) and UnitCanAttack("player", unit) and UnitInPhase(unit) and (UnitIsPVP("player") or not UnitIsPlayer(unit)) then
+                        local npcid = guid:match("(%d+)-%x-$")
+    
+                        if not enemyExclusions[npcid] then
+                            local _, range = RC:GetRange(unit)
+    
+                            guidRanges[ guid ] = range
+    
+                            local rate, n = Hekili:GetTTD(unit)
+                            Hekili.TargetDebug = format( "%s%12s - %2d - %s - %.2f - %d\n", Hekili.TargetDebug, unit, range or 0, guid, rate or 0, n or 0 )
+    
+                            if range and range <= spec.nameplateRange then
+                                count = count + 1
+                                counted[ guid ] = true
+                            end
                         end
+    
+                        counted[ guid ] = counted[ guid ] or false
                     end
-
-                    counted[ guid ] = counted[ guid ] or false
                 end
-            end
+            end            
         end
 
-        if not showNPs or not spec or (spec.damage or not spec.nameplates) then
+        if not spec or spec.damage or not spec.nameplates or not showNPs then
             local db = spec and (spec.myTargetsOnly and myTargets or targets) or targets
 
             for guid, seen in pairs(db) do
@@ -140,6 +140,17 @@ do
                         counted[ guid ] = false
                     end
                 end
+            end
+        end
+
+        local targetGUID = UnitGUID( "target" )
+        if targetGUID then
+            if counted[ targetGUID ] == nil and UnitExists("target") and not UnitIsDead("target") and UnitCanAttack("player", "target") and UnitInPhase("target") and (UnitIsPVP("player") or not UnitIsPlayer("target")) then
+                Hekili.TargetDebug = format("%s%12s - %2d - %s\n", Hekili.TargetDebug, "target", 0, targetGUID)
+                count = count + 1
+                counted[ targetGUID ] = true
+            else
+                counted[ targetGUID ] = false
             end
         end
 
@@ -588,25 +599,61 @@ do
         local healthPct = health / healthMax
 
         if healthPct == 0 then
-            return 0, enemy.n
+            return 1, enemy.n
         end
 
         return ceil(healthPct / enemy.rate), enemy.n
     end
 
+    function Hekili:GetTimeToPct( unit, percent )
+        local default = 0.7 * ( UnitIsTrivial( unit ) and TRIVIAL or FOREVER )
+        local guid = UnitExists( unit ) and UnitCanAttack( "player", unit ) and UnitGUID( unit )
+
+        if not guid then return default end
+
+        local enemy = db[ guid ]
+        if not enemy then return default end
+
+        if enemy.n < 3 or enemy.rate == 0 then
+            return default, enemy.n
+        end
+
+        local health, healthMax = UnitHealth( unit ), UnitHealthMax( unit )
+        health = health + UnitGetTotalAbsorbs( unit )
+
+        local healthPct = health / healthMax
+
+        if healthPct <= percent then return 0, enemy.n end
+
+        return ceil( ( healthPct - percent ) / enemy.rate ), n
+    end
+
     function Hekili:GetGreatestTTD()
         local time, validUnit = 0, false
 
-        for k, v in pairs(db) do
+        for k, v in pairs( db ) do
             if v.n > 3 then
-                time = max(time, ceil(v.lastHealth / v.rate))
+                time = max( time, ceil(v.lastHealth / v.rate ) )
                 validUnit = true
             end
         end
 
-        if not validUnit then
-            return FOREVER
+        if not validUnit then return FOREVER end
+
+        return time
+    end
+
+    function Hekili:GetGreatestTimeToPct( percent )
+        local time, validUnit = 0, false
+
+        for k, v in pairs(db) do
+            if v.n > 3 and v.lastHealth > percent then
+                time = max( time, ( v.lastHealth - percent ) / v.rate )
+                validUnit = true
+            end
         end
+
+        if not validUnit then return FOREVER end
 
         return time
     end
