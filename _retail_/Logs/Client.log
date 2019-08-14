@@ -1,572 +1,102 @@
-8/11 20:14:10.279  Client Initialize.
-8/11 20:14:39.176  Initial Hotfixes: Requested
-8/11 20:14:39.427  Initial Hotfixes: Received
-8/11 20:14:39.593  Initial Hotfixes: Applied
-8/11 20:15:08.257  Initial Hotfixes: Requested
-8/11 20:15:08.473  Initial Hotfixes: Received
-8/11 20:15:08.644  Initial Hotfixes: Applied
-8/11 20:15:11.232  Loading Screen Enable : 1 - 1
-8/11 20:15:11.905  Client Object Manager Initialized: 1
-8/11 20:15:12.055  Succesfully Registered Nameplate
+8/12 23:52:02.153  Client Initialize.
+8/12 23:52:32.016  Initial Hotfixes: Requested
+8/12 23:52:32.280  Initial Hotfixes: Received
+8/12 23:52:32.447  Initial Hotfixes: Applied
+8/12 23:53:04.873  Loading Screen Enable : 1642 - 1
+8/12 23:53:05.593  Client Object Manager Initialized: 1642
+8/12 23:53:05.748  Succesfully Registered Nameplate
 
-8/11 20:15:13.379  Loading Screen : Loading : Files Read 2056 : Bytes Read 703572845 : Elapsed MS 2147 : MBytes Per Sec 312.520
-8/11 20:15:13.379  Loading Screen : XML Loaded 24%
-8/11 20:15:15.402  Loading Screen : Loading : Files Read 28 : Bytes Read 728878 : Elapsed MS 2023 : MBytes Per Sec 0.344
-8/11 20:15:15.402  Loading Screen : XML Loaded 31%
-8/11 20:15:17.406  Loading Screen : XML Loaded 33%
-8/11 20:15:19.462  Loading Screen : XML Loaded 36%
-8/11 20:15:21.692  Loading Screen : XML Loaded 42%
-8/11 20:15:23.718  Loading Screen : Loading : Files Read 25 : Bytes Read 540107 : Elapsed MS 2026 : MBytes Per Sec 0.254
-8/11 20:15:23.718  Loading Screen : XML Loaded 48%
-8/11 20:15:27.490  Loading Screen : Loading : Files Read 4 : Bytes Read 52064 : Elapsed MS 3771 : MBytes Per Sec 0.013
-8/11 20:15:27.490  Loading Screen : XML Loaded 53%
-8/11 20:15:29.567  Loading Screen : XML Loaded 63%
-8/11 20:15:31.645  Loading Screen : Loading : Files Read 821 : Bytes Read 157740 : Elapsed MS 2078 : MBytes Per Sec 0.072
-8/11 20:15:31.645  Loading Screen : XML Loaded 73%
-8/11 20:15:33.722  Loading Screen : Loading : Files Read 14 : Bytes Read 919843 : Elapsed MS 2078 : MBytes Per Sec 0.422
-8/11 20:15:33.722  Loading Screen : XML Loaded 80%
-8/11 20:15:37.085  Loading Screen : Loading : Files Read 1 : Bytes Read 6660 : Elapsed MS 3362 : MBytes Per Sec 0.002
-8/11 20:15:37.085  Loading Screen : XML Loaded 98%
-8/11 20:15:38.933  Client : Load Map Begin : 1
-8/11 20:15:39.149  Loading Screen : Loading : Files Read 182 : Bytes Read 39338963 : Elapsed MS 2065 : MBytes Per Sec 18.168
-8/11 20:15:39.149  Loading Screen : XML Loaded 100%
-8/11 20:15:39.149  Loading Screen : World Loaded 12%
-8/11 20:15:40.341  Client : Load Map End
-8/11 20:15:40.341  Start waiting for active player
-8/11 20:15:40.341  Character Login SEND
-8/11 20:15:40.358  Waiting for active player: 12 ms
-8/11 20:15:44.023  Stop waiting for active player
-8/11 20:15:44.053  Loading Screen Ping SEND
-8/11 20:15:44.053  Loading Screen : Loading : Files Read 5385 : Bytes Read 280430328 : Elapsed MS 4903 : MBytes Per Sec 54.546
-8/11 20:15:44.053  Loading Screen : XML Loaded 100%
-8/11 20:15:44.053  Loading Screen : World Loaded 100%
-8/11 20:15:44.053  Loading Screen : Spell Loaded 0%
-8/11 20:15:52.452  Active Player Created
-8/11 20:15:52.452  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:15:52.452  Player : Exit Loading Screen : World Check Preload End
-8/11 20:15:52.452  Loading Screen : Streaming 0
-8/11 20:15:52.452  Loading Screen : XML Loaded 100%
-8/11 20:15:52.452  Loading Screen : World Loaded 100%
-8/11 20:15:52.452  Loading Screen : Spell Loaded 100%
-8/11 20:15:52.452  Loading Screen Disable
-8/11 20:15:52.452  Spellbook : Make Models Local Begin : 127
-8/11 20:15:52.457  Spellbook : Make Models Local End
-8/11 20:16:55.841  Stop waiting for active player
-8/11 20:16:55.857  Client Object Manager Destroyed
-8/11 20:16:57.961  Nameplate Shutting Down
+8/12 23:53:07.091  Loading Screen : Loading : Files Read 1953 : Bytes Read 690690182 : Elapsed MS 2219 : MBytes Per Sec 296.842
+8/12 23:53:07.091  Loading Screen : XML Loaded 25%
+8/12 23:53:09.143  Loading Screen : Loading : Files Read 28 : Bytes Read 728878 : Elapsed MS 2053 : MBytes Per Sec 0.339
+8/12 23:53:09.143  Loading Screen : XML Loaded 32%
+8/12 23:53:11.321  Loading Screen : XML Loaded 34%
+8/12 23:53:13.397  Loading Screen : XML Loaded 37%
+8/12 23:53:15.908  Loading Screen : XML Loaded 44%
+8/12 23:53:18.075  Loading Screen : Loading : Files Read 25 : Bytes Read 540107 : Elapsed MS 2168 : MBytes Per Sec 0.238
+8/12 23:53:18.075  Loading Screen : XML Loaded 50%
+8/12 23:53:21.740  Loading Screen : Loading : Files Read 4 : Bytes Read 52064 : Elapsed MS 3664 : MBytes Per Sec 0.014
+8/12 23:53:21.740  Loading Screen : XML Loaded 55%
+8/12 23:53:23.746  Loading Screen : XML Loaded 68%
+8/12 23:53:25.753  Loading Screen : Loading : Files Read 32 : Bytes Read 950443 : Elapsed MS 2007 : MBytes Per Sec 0.452
+8/12 23:53:25.753  Loading Screen : XML Loaded 76%
+8/12 23:53:27.812  Loading Screen : XML Loaded 94%
+8/12 23:53:31.996  Loading Screen : Loading : Files Read 1 : Bytes Read 6660 : Elapsed MS 4184 : MBytes Per Sec 0.002
+8/12 23:53:31.996  Loading Screen : XML Loaded 97%
+8/12 23:53:34.303  Client : Load Map Begin : 1642
+8/12 23:53:34.303  Loading Screen : Loading : Files Read 39 : Bytes Read 603252 : Elapsed MS 2307 : MBytes Per Sec 0.249
+8/12 23:53:34.303  Loading Screen : XML Loaded 100%
+8/12 23:53:35.069  Loading Screen Ping SEND
+8/12 23:53:36.108  Client : Load Map End
+8/12 23:53:36.108  Start waiting for active player
+8/12 23:53:36.108  Character Login SEND
+8/12 23:53:36.108  Waiting for active player: 9 ms
+8/12 23:53:39.628  Stop waiting for active player
+8/12 23:53:39.670  Loading Screen : Loading : Files Read 4736 : Bytes Read 412441163 : Elapsed MS 5366 : MBytes Per Sec 73.301
+8/12 23:53:39.670  Loading Screen : XML Loaded 100%
+8/12 23:53:39.670  Loading Screen : World Loaded 100%
+8/12 23:53:39.670  Loading Screen : Spell Loaded 0%
+8/12 23:53:46.644  Active Player Created
+8/12 23:53:46.644  Player : Exit Loading Screen : World Check Preload Begin
+8/12 23:53:46.644  Player : Exit Loading Screen : World Check Preload End
+8/12 23:53:46.644  Loading Screen : Streaming 0
+8/12 23:53:46.644  Loading Screen : XML Loaded 100%
+8/12 23:53:46.644  Loading Screen : World Loaded 100%
+8/12 23:53:46.644  Loading Screen : Spell Loaded 100%
+8/12 23:53:46.644  Loading Screen Disable
+8/12 23:53:46.644  Spellbook : Make Models Local Begin : 131
+8/12 23:53:46.644  Spellbook : Make Models Local End
+8/13 00:00:56.502  Loading Screen Custom Enable : 1643
+8/13 00:00:58.496  Stop waiting for active player
+8/13 00:00:58.510  Client Object Manager Destroyed
+8/13 00:00:58.521  Client Object Manager Initialized: 1643
+8/13 00:00:58.521  Client : Load Map Begin : 1643
+8/13 00:00:58.521  Loading Screen : Loading : Files Read 31814 : Bytes Read 1892620866 : Elapsed MS 2024 : MBytes Per Sec 891.771
+8/13 00:00:59.831  Client : Load Map End
+8/13 00:00:59.831  Start waiting for active player
+8/13 00:00:59.831  New World Handler : Send World Port Response
+8/13 00:00:59.831  Waiting for active player: 2 ms
+8/13 00:01:00.091  Stop waiting for active player
+8/13 00:01:00.614  Active Player Created
+8/13 00:01:00.614  Player : Exit Loading Screen : World Check Preload Begin
+8/13 00:01:00.614  Player : Exit Loading Screen : World Check Preload End
+8/13 00:01:00.614  Loading Screen : Loading : Files Read 1960 : Bytes Read 199989975 : Elapsed MS 1565 : MBytes Per Sec 121.869
+8/13 00:01:00.614  Loading Screen : World Loaded 100%
+8/13 00:01:00.614  Loading Screen Disable
+8/13 00:01:00.614  Spellbook : Make Models Local Begin : 131
+8/13 00:01:00.614  Spellbook : Make Models Local End
+8/13 00:22:42.092  Movement : World : World Preload Begin
+8/13 00:22:42.092  Loading Screen Enable : 1643 - 1
+8/13 00:22:42.739  Loading Screen : Streaming 0
+8/13 00:22:42.739  Loading Screen : World Loaded 100%
+8/13 00:22:42.739  Loading Screen Disable
+8/13 00:22:42.739  Spellbook : Make Models Local Begin : 131
+8/13 00:22:42.739  Spellbook : Make Models Local End
+8/13 00:22:42.739  Movement : World : World Preload End
+8/13 01:25:51.936  Loading Screen Enable : 1153 - 1
+8/13 01:25:53.737  Stop waiting for active player
+8/13 01:25:53.748  Client Object Manager Destroyed
+8/13 01:25:53.748  Client Object Manager Initialized: 1153
+8/13 01:25:53.748  Client : Load Map Begin : 1153
+8/13 01:25:53.961  Loading Screen : Loading : Files Read 159470 : Bytes Read 1085797030 : Elapsed MS 2027 : MBytes Per Sec 2477.012
+8/13 01:25:53.961  Loading Screen : World Loaded 12%
+8/13 01:25:55.970  Client : Load Map End
+8/13 01:25:55.970  Start waiting for active player
+8/13 01:25:55.970  New World Handler : Send World Port Response
+8/13 01:25:55.970  Waiting for active player: 2 ms
+8/13 01:25:56.566  Stop waiting for active player
+8/13 01:25:56.621  Loading Screen : Loading : Files Read 3731 : Bytes Read 397224792 : Elapsed MS 2659 : MBytes Per Sec 142.468
+8/13 01:25:56.621  Loading Screen : World Loaded 100%
+8/13 01:25:57.243  Active Player Created
+8/13 01:25:57.243  Player : Exit Loading Screen : World Check Preload Begin
+8/13 01:25:57.243  Player : Exit Loading Screen : World Check Preload End
+8/13 01:25:57.243  Loading Screen : Streaming 0
+8/13 01:25:57.243  Loading Screen : World Loaded 100%
+8/13 01:25:57.243  Loading Screen Disable
+8/13 01:25:57.243  Spellbook : Make Models Local Begin : 133
+8/13 01:25:57.248  Spellbook : Make Models Local End
+8/13 01:31:34.711  Stop waiting for active player
+8/13 01:31:34.732  Client Object Manager Destroyed
+8/13 01:31:37.810  Nameplate Shutting Down
 
-8/11 20:26:55.224  Initial Hotfixes: Requested
-8/11 20:26:55.427  Initial Hotfixes: Received
-8/11 20:26:55.702  Initial Hotfixes: Applied
-8/11 20:26:57.318  Loading Screen Enable : 1 - 1
-8/11 20:26:57.354  Client Object Manager Initialized: 1
-8/11 20:26:57.508  Succesfully Registered Nameplate
-
-8/11 20:26:59.403  Loading Screen : Loading : Files Read 14477 : Bytes Read 557315139 : Elapsed MS 2086 : MBytes Per Sec 254.792
-8/11 20:26:59.403  Loading Screen : XML Loaded 27%
-8/11 20:27:01.500  Loading Screen : Loading : Files Read 1 : Bytes Read 6660 : Elapsed MS 2096 : MBytes Per Sec 0.003
-8/11 20:27:01.500  Loading Screen : XML Loaded 32%
-8/11 20:27:03.613  Loading Screen : XML Loaded 41%
-8/11 20:27:07.582  Loading Screen : Loading : Files Read 30 : Bytes Read 606835 : Elapsed MS 3969 : MBytes Per Sec 0.146
-8/11 20:27:07.582  Loading Screen : XML Loaded 52%
-8/11 20:27:09.685  Loading Screen : Loading : Files Read 889 : Bytes Read 1086875 : Elapsed MS 2104 : MBytes Per Sec 0.493
-8/11 20:27:09.685  Loading Screen : XML Loaded 76%
-8/11 20:27:11.859  Loading Screen : Loading : Files Read 2 : Bytes Read 18792 : Elapsed MS 2173 : MBytes Per Sec 0.008
-8/11 20:27:11.859  Loading Screen : XML Loaded 98%
-8/11 20:27:12.712  Client : Load Map Begin : 1
-8/11 20:27:13.934  Loading Screen : Loading : Files Read 3201 : Bytes Read 218432180 : Elapsed MS 2075 : MBytes Per Sec 100.392
-8/11 20:27:13.934  Loading Screen : XML Loaded 100%
-8/11 20:27:13.934  Loading Screen : World Loaded 61%
-8/11 20:27:14.153  Client : Load Map End
-8/11 20:27:14.153  Start waiting for active player
-8/11 20:27:14.153  Character Login SEND
-8/11 20:27:14.153  Waiting for active player: 0 ms
-8/11 20:27:39.404  Stop waiting for active player
-8/11 20:27:39.455  Loading Screen Ping SEND
-8/11 20:27:39.455  Loading Screen : Loading : Files Read 2300 : Bytes Read 105186413 : Elapsed MS 25520 : MBytes Per Sec 3.931
-8/11 20:27:39.455  Loading Screen : XML Loaded 100%
-8/11 20:27:39.455  Loading Screen : World Loaded 100%
-8/11 20:27:39.455  Loading Screen : Spell Loaded 0%
-8/11 20:27:47.298  Active Player Created
-8/11 20:27:47.298  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:27:47.298  Player : Exit Loading Screen : World Check Preload End
-8/11 20:27:47.298  Loading Screen : Streaming 0
-8/11 20:27:47.298  Loading Screen : XML Loaded 100%
-8/11 20:27:47.298  Loading Screen : World Loaded 100%
-8/11 20:27:47.298  Loading Screen : Spell Loaded 100%
-8/11 20:27:47.298  Loading Screen Disable
-8/11 20:27:47.298  Spellbook : Make Models Local Begin : 196
-8/11 20:27:47.303  Spellbook : Make Models Local End
-8/11 20:30:36.211  Stop waiting for active player
-8/11 20:30:36.228  Client Object Manager Destroyed
-8/11 20:30:38.365  Nameplate Shutting Down
-
-8/11 20:31:10.021  Initial Hotfixes: Requested
-8/11 20:31:10.240  Initial Hotfixes: Received
-8/11 20:31:10.519  Initial Hotfixes: Applied
-8/11 20:31:14.261  Loading Screen Enable : 1642 - 1
-8/11 20:31:14.311  Client Object Manager Initialized: 1642
-8/11 20:31:14.487  Succesfully Registered Nameplate
-
-8/11 20:31:16.496  Loading Screen : Loading : Files Read 15726 : Bytes Read 888331926 : Elapsed MS 2235 : MBytes Per Sec 379.051
-8/11 20:31:16.496  Loading Screen : XML Loaded 28%
-8/11 20:31:18.613  Loading Screen : Loading : Files Read 2 : Bytes Read 21270 : Elapsed MS 2118 : MBytes Per Sec 0.010
-8/11 20:31:18.613  Loading Screen : XML Loaded 34%
-8/11 20:31:20.694  Loading Screen : XML Loaded 37%
-8/11 20:31:22.773  Loading Screen : Loading : Files Read 29 : Bytes Read 592171 : Elapsed MS 2080 : MBytes Per Sec 0.272
-8/11 20:31:22.773  Loading Screen : XML Loaded 54%
-8/11 20:31:25.714  Loading Screen : XML Loaded 55%
-8/11 20:31:31.488  Loading Screen : Loading : Files Read 33 : Bytes Read 957103 : Elapsed MS 5774 : MBytes Per Sec 0.158
-8/11 20:31:31.488  Loading Screen : XML Loaded 97%
-8/11 20:31:32.903  Client : Load Map Begin : 1642
-8/11 20:31:33.543  Loading Screen : Loading : Files Read 751 : Bytes Read 105764240 : Elapsed MS 2055 : MBytes Per Sec 49.083
-8/11 20:31:33.543  Loading Screen : XML Loaded 100%
-8/11 20:31:33.543  Loading Screen : World Loaded 56%
-8/11 20:31:34.733  Client : Load Map End
-8/11 20:31:34.733  Start waiting for active player
-8/11 20:31:34.733  Character Login SEND
-8/11 20:31:34.733  Waiting for active player: 1 ms
-8/11 20:31:38.508  Stop waiting for active player
-8/11 20:31:38.553  Loading Screen : Loading : Files Read 3330 : Bytes Read 253579515 : Elapsed MS 5010 : MBytes Per Sec 48.270
-8/11 20:31:38.553  Loading Screen : XML Loaded 100%
-8/11 20:31:38.553  Loading Screen : World Loaded 100%
-8/11 20:31:38.553  Loading Screen : Spell Loaded 0%
-8/11 20:31:46.529  Active Player Created
-8/11 20:31:46.529  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:31:46.529  Player : Exit Loading Screen : World Check Preload End
-8/11 20:31:46.529  Loading Screen : Streaming 0
-8/11 20:31:46.529  Loading Screen : XML Loaded 100%
-8/11 20:31:46.529  Loading Screen : World Loaded 100%
-8/11 20:31:46.529  Loading Screen : Spell Loaded 100%
-8/11 20:31:46.529  Loading Screen Disable
-8/11 20:31:46.529  Spellbook : Make Models Local Begin : 131
-8/11 20:31:46.529  Spellbook : Make Models Local End
-8/11 20:33:30.830  Loading Screen Enable : 1814 - 1
-8/11 20:33:32.938  Stop waiting for active player
-8/11 20:33:32.949  Client Object Manager Destroyed
-8/11 20:33:32.958  Client Object Manager Initialized: 1814
-8/11 20:33:32.958  Client : Load Map Begin : 1814
-8/11 20:33:32.958  Loading Screen : Loading : Files Read 14730 : Bytes Read 176955998 : Elapsed MS 2130 : MBytes Per Sec 79.229
-8/11 20:33:33.649  Client : Load Map End
-8/11 20:33:33.649  Start waiting for active player
-8/11 20:33:33.649  New World Handler : Send World Port Response
-8/11 20:33:33.649  Waiting for active player: 2 ms
-8/11 20:33:34.339  Stop waiting for active player
-8/11 20:33:35.249  Active Player Created
-8/11 20:33:35.249  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:33:35.260  Loading Screen : Loading : Files Read 1653 : Bytes Read 126316732 : Elapsed MS 2300 : MBytes Per Sec 52.376
-8/11 20:33:35.260  Loading Screen : World Loaded 100%
-8/11 20:33:35.908  Player : Exit Loading Screen : World Check Preload End
-8/11 20:33:35.908  Loading Screen : Streaming 0
-8/11 20:33:35.908  Loading Screen : World Loaded 100%
-8/11 20:33:35.908  Loading Screen Disable
-8/11 20:33:35.908  Spellbook : Make Models Local Begin : 131
-8/11 20:33:35.911  Spellbook : Make Models Local End
-8/11 20:39:46.682  Loading Screen Enable : 1642 - 1
-8/11 20:39:48.499  Stop waiting for active player
-8/11 20:39:48.508  Client Object Manager Destroyed
-8/11 20:39:48.508  Client Object Manager Initialized: 1642
-8/11 20:39:48.508  Client : Load Map Begin : 1642
-8/11 20:39:48.716  Loading Screen : Loading : Files Read 10583 : Bytes Read 843102073 : Elapsed MS 2035 : MBytes Per Sec 395.108
-8/11 20:39:48.716  Loading Screen : World Loaded 13%
-8/11 20:39:50.147  Client : Load Map End
-8/11 20:39:50.147  Start waiting for active player
-8/11 20:39:50.147  New World Handler : Send World Port Response
-8/11 20:39:50.147  Waiting for active player: 3 ms
-8/11 20:39:50.625  Stop waiting for active player
-8/11 20:39:51.220  Active Player Created
-8/11 20:39:51.220  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:39:51.220  Player : Exit Loading Screen : World Check Preload End
-8/11 20:39:51.220  Loading Screen : Loading : Files Read 3071 : Bytes Read 308849337 : Elapsed MS 1908 : MBytes Per Sec 154.372
-8/11 20:39:51.220  Loading Screen : World Loaded 100%
-8/11 20:39:51.220  Loading Screen Disable
-8/11 20:39:51.220  Spellbook : Make Models Local Begin : 131
-8/11 20:39:51.224  Spellbook : Make Models Local End
-8/11 20:41:14.371  Loading Screen Enable : 2124 - 1
-8/11 20:41:16.316  Stop waiting for active player
-8/11 20:41:16.328  Client Object Manager Destroyed
-8/11 20:41:16.338  Client Object Manager Initialized: 2124
-8/11 20:41:16.338  Client : Load Map Begin : 2124
-8/11 20:41:16.443  Loading Screen : Loading : Files Read 1262 : Bytes Read 163319835 : Elapsed MS 2074 : MBytes Per Sec 75.098
-8/11 20:41:16.443  Loading Screen : World Loaded 6%
-8/11 20:41:17.382  Client : Load Map End
-8/11 20:41:17.382  Start waiting for active player
-8/11 20:41:17.382  New World Handler : Send World Port Response
-8/11 20:41:17.382  Waiting for active player: 1 ms
-8/11 20:41:18.870  Stop waiting for active player
-8/11 20:41:18.947  Loading Screen : Loading : Files Read 1841 : Bytes Read 167896998 : Elapsed MS 2504 : MBytes Per Sec 63.945
-8/11 20:41:18.947  Loading Screen : World Loaded 100%
-8/11 20:41:19.556  Active Player Created
-8/11 20:41:19.556  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:41:20.241  Player : Exit Loading Screen : World Check Preload End
-8/11 20:41:20.241  Loading Screen : Streaming 0
-8/11 20:41:20.241  Loading Screen : World Loaded 100%
-8/11 20:41:20.241  Loading Screen Disable
-8/11 20:41:20.241  Spellbook : Make Models Local Begin : 131
-8/11 20:41:20.241  Spellbook : Make Models Local End
-8/11 20:47:48.860  Loading Screen Enable : 1642 - 1
-8/11 20:47:51.017  Stop waiting for active player
-8/11 20:47:51.029  Client Object Manager Destroyed
-8/11 20:47:51.036  Client Object Manager Initialized: 1642
-8/11 20:47:51.036  Client : Load Map Begin : 1642
-8/11 20:47:51.036  Loading Screen : Loading : Files Read 9062 : Bytes Read 654521758 : Elapsed MS 2178 : MBytes Per Sec 286.593
-8/11 20:47:52.671  Client : Load Map End
-8/11 20:47:52.671  Start waiting for active player
-8/11 20:47:52.671  New World Handler : Send World Port Response
-8/11 20:47:52.678  Waiting for active player: 4 ms
-8/11 20:47:53.490  Stop waiting for active player
-8/11 20:47:53.543  Loading Screen : Loading : Files Read 3105 : Bytes Read 342449324 : Elapsed MS 2506 : MBytes Per Sec 130.321
-8/11 20:47:53.543  Loading Screen : World Loaded 100%
-8/11 20:47:54.059  Active Player Created
-8/11 20:47:54.059  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:47:54.059  Player : Exit Loading Screen : World Check Preload End
-8/11 20:47:54.059  Loading Screen : Streaming 0
-8/11 20:47:54.059  Loading Screen : World Loaded 100%
-8/11 20:47:54.059  Loading Screen Disable
-8/11 20:47:54.059  Spellbook : Make Models Local Begin : 131
-8/11 20:47:54.059  Spellbook : Make Models Local End
-8/11 20:49:31.050  Loading Screen Enable : 1892 - 1
-8/11 20:49:32.863  Stop waiting for active player
-8/11 20:49:32.874  Client Object Manager Destroyed
-8/11 20:49:32.883  Client Object Manager Initialized: 1892
-8/11 20:49:32.883  Client : Load Map Begin : 1892
-8/11 20:49:33.086  Loading Screen : Loading : Files Read 2250 : Bytes Read 227418080 : Elapsed MS 2045 : MBytes Per Sec 106.055
-8/11 20:49:33.086  Loading Screen : World Loaded 60%
-8/11 20:49:33.270  Client : Load Map End
-8/11 20:49:33.270  Start waiting for active player
-8/11 20:49:33.270  New World Handler : Send World Port Response
-8/11 20:49:33.270  Waiting for active player: 2 ms
-8/11 20:49:33.818  Stop waiting for active player
-8/11 20:49:34.600  Active Player Created
-8/11 20:49:34.600  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:49:34.976  Player : Exit Loading Screen : World Check Preload End
-8/11 20:49:34.976  Loading Screen : Loading : Files Read 890 : Bytes Read 109056118 : Elapsed MS 727 : MBytes Per Sec 143.059
-8/11 20:49:34.976  Loading Screen : World Loaded 100%
-8/11 20:49:34.976  Loading Screen Disable
-8/11 20:49:34.976  Spellbook : Make Models Local Begin : 131
-8/11 20:49:34.976  Spellbook : Make Models Local End
-8/11 20:57:12.554  Loading Screen Enable : 1642 - 1
-8/11 20:57:14.557  Stop waiting for active player
-8/11 20:57:14.569  Client Object Manager Destroyed
-8/11 20:57:14.569  Client Object Manager Initialized: 1642
-8/11 20:57:14.569  Client : Load Map Begin : 1642
-8/11 20:57:14.569  Loading Screen : Loading : Files Read 11120 : Bytes Read 725724403 : Elapsed MS 2020 : MBytes Per Sec 342.626
-8/11 20:57:16.201  Client : Load Map End
-8/11 20:57:16.201  Start waiting for active player
-8/11 20:57:16.201  New World Handler : Send World Port Response
-8/11 20:57:16.201  Waiting for active player: 3 ms
-8/11 20:57:16.467  Stop waiting for active player
-8/11 20:57:17.007  Active Player Created
-8/11 20:57:17.007  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:57:17.007  Player : Exit Loading Screen : World Check Preload End
-8/11 20:57:17.007  Loading Screen : Loading : Files Read 3188 : Bytes Read 341927072 : Elapsed MS 1893 : MBytes Per Sec 172.259
-8/11 20:57:17.007  Loading Screen : World Loaded 100%
-8/11 20:57:17.007  Loading Screen Disable
-8/11 20:57:17.007  Spellbook : Make Models Local Begin : 131
-8/11 20:57:17.007  Spellbook : Make Models Local End
-8/11 20:58:42.150  Loading Screen Enable : 1814 - 1
-8/11 20:58:44.177  Stop waiting for active player
-8/11 20:58:44.177  Client Object Manager Destroyed
-8/11 20:58:44.196  Client Object Manager Initialized: 1814
-8/11 20:58:44.196  Client : Load Map Begin : 1814
-8/11 20:58:44.196  Loading Screen : Loading : Files Read 1798 : Bytes Read 197460842 : Elapsed MS 2066 : MBytes Per Sec 91.149
-8/11 20:58:44.721  Client : Load Map End
-8/11 20:58:44.721  Start waiting for active player
-8/11 20:58:44.724  New World Handler : Send World Port Response
-8/11 20:58:44.724  Waiting for active player: 3 ms
-8/11 20:58:45.329  Stop waiting for active player
-8/11 20:58:46.141  Active Player Created
-8/11 20:58:46.141  Player : Exit Loading Screen : World Check Preload Begin
-8/11 20:58:46.252  Loading Screen : Loading : Files Read 1372 : Bytes Read 143216059 : Elapsed MS 2054 : MBytes Per Sec 66.495
-8/11 20:58:46.252  Loading Screen : World Loaded 100%
-8/11 20:58:46.728  Player : Exit Loading Screen : World Check Preload End
-8/11 20:58:46.728  Loading Screen : Streaming 0
-8/11 20:58:46.728  Loading Screen : World Loaded 100%
-8/11 20:58:46.728  Loading Screen Disable
-8/11 20:58:46.728  Spellbook : Make Models Local Begin : 131
-8/11 20:58:46.728  Spellbook : Make Models Local End
-8/11 21:06:16.693  Loading Screen Enable : 1642 - 1
-8/11 21:06:18.763  Stop waiting for active player
-8/11 21:06:18.773  Client Object Manager Destroyed
-8/11 21:06:18.773  Client Object Manager Initialized: 1642
-8/11 21:06:18.773  Client : Load Map Begin : 1642
-8/11 21:06:18.773  Loading Screen : Loading : Files Read 14049 : Bytes Read 819054470 : Elapsed MS 2086 : MBytes Per Sec 374.454
-8/11 21:06:20.444  Client : Load Map End
-8/11 21:06:20.444  Start waiting for active player
-8/11 21:06:20.444  New World Handler : Send World Port Response
-8/11 21:06:20.444  Waiting for active player: 4 ms
-8/11 21:06:21.018  Stop waiting for active player
-8/11 21:06:21.076  Loading Screen : Loading : Files Read 3136 : Bytes Read 345111536 : Elapsed MS 2297 : MBytes Per Sec 143.284
-8/11 21:06:21.076  Loading Screen : World Loaded 100%
-8/11 21:06:21.598  Active Player Created
-8/11 21:06:21.598  Player : Exit Loading Screen : World Check Preload Begin
-8/11 21:06:21.599  Player : Exit Loading Screen : World Check Preload End
-8/11 21:06:21.599  Loading Screen : Streaming 0
-8/11 21:06:21.599  Loading Screen : World Loaded 100%
-8/11 21:06:21.599  Loading Screen Disable
-8/11 21:06:21.599  Spellbook : Make Models Local Begin : 131
-8/11 21:06:21.599  Spellbook : Make Models Local End
-8/11 21:08:40.890  Loading Screen Enable : 2111 - 1
-8/11 21:08:42.902  Stop waiting for active player
-8/11 21:08:42.915  Client Object Manager Destroyed
-8/11 21:08:42.915  Client Object Manager Initialized: 2111
-8/11 21:08:42.929  Client : Load Map Begin : 2111
-8/11 21:08:42.929  Loading Screen : Loading : Files Read 5788 : Bytes Read 609145739 : Elapsed MS 2085 : MBytes Per Sec 278.622
-8/11 21:08:44.950  Loading Screen : Loading : Files Read 2112 : Bytes Read 323844992 : Elapsed MS 2020 : MBytes Per Sec 152.892
-8/11 21:08:44.950  Loading Screen : World Loaded 7%
-8/11 21:08:45.324  Client : Load Map End
-8/11 21:08:45.324  Start waiting for active player
-8/11 21:08:45.324  New World Handler : Send World Port Response
-8/11 21:08:45.324  Waiting for active player: 6 ms
-8/11 21:08:46.874  Stop waiting for active player
-8/11 21:08:46.988  Loading Screen : Loading : Files Read 1375 : Bytes Read 74384908 : Elapsed MS 2039 : MBytes Per Sec 34.791
-8/11 21:08:46.988  Loading Screen : World Loaded 100%
-8/11 21:08:47.925  Active Player Created
-8/11 21:08:47.925  Player : Exit Loading Screen : World Preload Begin
-8/11 21:08:48.210  Player : Exit Loading Screen : World Preload End
-8/11 21:08:48.210  Loading Screen : Streaming 0
-8/11 21:08:48.210  Loading Screen : World Loaded 100%
-8/11 21:08:48.210  Loading Screen Disable
-8/11 21:08:48.210  Spellbook : Make Models Local Begin : 131
-8/11 21:08:48.210  Spellbook : Make Models Local End
-8/11 21:09:13.514  Movement : World : World Preload Begin
-8/11 21:09:13.514  Loading Screen Enable : 2111 - 1
-8/11 21:09:14.226  Loading Screen : Streaming 0
-8/11 21:09:14.226  Loading Screen : World Loaded 100%
-8/11 21:09:14.226  Loading Screen Disable
-8/11 21:09:14.226  Spellbook : Make Models Local Begin : 131
-8/11 21:09:14.226  Spellbook : Make Models Local End
-8/11 21:09:14.226  Movement : World : World Preload End
-8/11 21:17:31.446  Movement : World : World Preload Begin
-8/11 21:17:31.446  Loading Screen Enable : 2111 - 1
-8/11 21:17:31.956  Loading Screen : Streaming 0
-8/11 21:17:31.956  Loading Screen : World Loaded 100%
-8/11 21:17:31.958  Loading Screen Disable
-8/11 21:17:31.958  Spellbook : Make Models Local Begin : 131
-8/11 21:17:31.958  Spellbook : Make Models Local End
-8/11 21:17:31.958  Movement : World : World Preload End
-8/11 21:21:09.069  Movement : World : World Preload Begin
-8/11 21:21:09.069  Loading Screen Enable : 2111 - 1
-8/11 21:21:09.543  Loading Screen : Streaming 0
-8/11 21:21:09.543  Loading Screen : World Loaded 100%
-8/11 21:21:09.543  Loading Screen Disable
-8/11 21:21:09.543  Spellbook : Make Models Local Begin : 131
-8/11 21:21:09.543  Spellbook : Make Models Local End
-8/11 21:21:09.543  Movement : World : World Preload End
-8/11 21:32:59.327  Movement : World : World Preload Begin
-8/11 21:32:59.327  Loading Screen Enable : 2111 - 1
-8/11 21:32:59.770  Loading Screen : Streaming 0
-8/11 21:32:59.770  Loading Screen : World Loaded 100%
-8/11 21:32:59.771  Loading Screen Disable
-8/11 21:32:59.771  Spellbook : Make Models Local Begin : 131
-8/11 21:32:59.771  Spellbook : Make Models Local End
-8/11 21:32:59.771  Movement : World : World Preload End
-8/11 21:33:23.187  Loading Screen Enable : 1642 - 1
-8/11 21:33:25.626  Stop waiting for active player
-8/11 21:33:25.635  Client Object Manager Destroyed
-8/11 21:33:25.635  Client Object Manager Initialized: 1642
-8/11 21:33:25.645  Client : Load Map Begin : 1642
-8/11 21:33:25.645  Loading Screen : Loading : Files Read 781 : Bytes Read 77285198 : Elapsed MS 2461 : MBytes Per Sec 29.949
-8/11 21:33:27.744  Loading Screen : Loading : Files Read 1292 : Bytes Read 192481783 : Elapsed MS 2098 : MBytes Per Sec 87.495
-8/11 21:33:29.811  Loading Screen : Loading : Files Read 3658 : Bytes Read 341596996 : Elapsed MS 2067 : MBytes Per Sec 157.606
-8/11 21:33:29.811  Loading Screen : World Loaded 69%
-8/11 21:33:29.838  Client : Load Map End
-8/11 21:33:29.838  Start waiting for active player
-8/11 21:33:29.838  New World Handler : Send World Port Response
-8/11 21:33:29.838  Waiting for active player: 3 ms
-8/11 21:33:30.632  Stop waiting for active player
-8/11 21:33:31.272  Active Player Created
-8/11 21:33:31.272  Player : Exit Loading Screen : World Check Preload Begin
-8/11 21:33:31.272  Player : Exit Loading Screen : World Check Preload End
-8/11 21:33:31.272  Loading Screen : Loading : Files Read 568 : Bytes Read 77639274 : Elapsed MS 821 : MBytes Per Sec 90.186
-8/11 21:33:31.272  Loading Screen : World Loaded 100%
-8/11 21:33:31.272  Loading Screen Disable
-8/11 21:33:31.272  Spellbook : Make Models Local Begin : 131
-8/11 21:33:31.272  Spellbook : Make Models Local End
-8/11 21:38:46.459  Loading Screen Enable : 1 - 1
-8/11 21:38:48.419  Stop waiting for active player
-8/11 21:38:48.433  Client Object Manager Destroyed
-8/11 21:38:48.446  Client Object Manager Initialized: 1
-8/11 21:38:48.446  Client : Load Map Begin : 1
-8/11 21:38:48.561  Loading Screen : Loading : Files Read 20341 : Bytes Read 1976052363 : Elapsed MS 2104 : MBytes Per Sec 895.680
-8/11 21:38:49.846  Client : Load Map End
-8/11 21:38:49.846  Start waiting for active player
-8/11 21:38:49.849  New World Handler : Send World Port Response
-8/11 21:38:49.849  Waiting for active player: 5 ms
-8/11 21:38:50.419  Stop waiting for active player
-8/11 21:38:51.000  Active Player Created
-8/11 21:38:51.000  Player : Exit Loading Screen : World Check Preload Begin
-8/11 21:38:51.000  Player : Exit Loading Screen : World Check Preload End
-8/11 21:38:51.000  Loading Screen : Loading : Files Read 4893 : Bytes Read 263055222 : Elapsed MS 1858 : MBytes Per Sec 135.021
-8/11 21:38:51.000  Loading Screen : World Loaded 100%
-8/11 21:38:51.000  Loading Screen Disable
-8/11 21:38:51.000  Spellbook : Make Models Local Begin : 131
-8/11 21:38:51.007  Spellbook : Make Models Local End
-8/11 21:44:11.915  Loading Screen Enable : 1642 - 1
-8/11 21:44:14.039  Stop waiting for active player
-8/11 21:44:14.051  Client Object Manager Destroyed
-8/11 21:44:14.051  Client Object Manager Initialized: 1642
-8/11 21:44:14.051  Client : Load Map Begin : 1642
-8/11 21:44:14.051  Loading Screen : Loading : Files Read 8632 : Bytes Read 645755477 : Elapsed MS 2151 : MBytes Per Sec 286.304
-8/11 21:44:16.091  Loading Screen : Loading : Files Read 3669 : Bytes Read 384567592 : Elapsed MS 2028 : MBytes Per Sec 180.844
-8/11 21:44:16.091  Loading Screen : World Loaded 69%
-8/11 21:44:16.252  Client : Load Map End
-8/11 21:44:16.252  Start waiting for active player
-8/11 21:44:16.252  New World Handler : Send World Port Response
-8/11 21:44:16.258  Waiting for active player: 5 ms
-8/11 21:44:16.730  Stop waiting for active player
-8/11 21:44:17.275  Active Player Created
-8/11 21:44:17.275  Player : Exit Loading Screen : World Check Preload Begin
-8/11 21:44:17.275  Player : Exit Loading Screen : World Check Preload End
-8/11 21:44:17.275  Loading Screen : Loading : Files Read 278 : Bytes Read 31302612 : Elapsed MS 639 : MBytes Per Sec 46.718
-8/11 21:44:17.275  Loading Screen : World Loaded 100%
-8/11 21:44:17.275  Loading Screen Disable
-8/11 21:44:17.275  Spellbook : Make Models Local Begin : 131
-8/11 21:44:17.275  Spellbook : Make Models Local End
-8/11 22:28:13.037  Loading Screen Enable : 0 - 1
-8/11 22:28:14.904  Stop waiting for active player
-8/11 22:28:14.916  Client Object Manager Destroyed
-8/11 22:28:14.928  Client Object Manager Initialized: 0
-8/11 22:28:14.928  Client : Load Map Begin : 0
-8/11 22:28:15.045  Loading Screen : Loading : Files Read 80715 : Bytes Read 55746054 : Elapsed MS 2008 : MBytes Per Sec 10.157
-8/11 22:28:15.814  Client : Load Map End
-8/11 22:28:15.814  Start waiting for active player
-8/11 22:28:15.814  New World Handler : Send World Port Response
-8/11 22:28:15.818  Waiting for active player: 2 ms
-8/11 22:28:16.402  Stop waiting for active player
-8/11 22:28:16.967  Active Player Created
-8/11 22:28:16.967  Player : Exit Loading Screen : World Check Preload Begin
-8/11 22:28:16.967  Player : Exit Loading Screen : World Check Preload End
-8/11 22:28:16.967  Loading Screen : Loading : Files Read 2645 : Bytes Read 140033083 : Elapsed MS 1358 : MBytes Per Sec 98.340
-8/11 22:28:16.967  Loading Screen : World Loaded 100%
-8/11 22:28:16.967  Loading Screen Disable
-8/11 22:28:16.967  Spellbook : Make Models Local Begin : 131
-8/11 22:28:16.967  Spellbook : Make Models Local End
-8/11 22:28:41.821  Loading Screen Enable : 1 - 1
-8/11 22:28:43.884  Stop waiting for active player
-8/11 22:28:43.884  Client Object Manager Destroyed
-8/11 22:28:43.898  Client Object Manager Initialized: 1
-8/11 22:28:43.898  Client : Load Map Begin : 1
-8/11 22:28:43.898  Loading Screen : Loading : Files Read 407 : Bytes Read 29839776 : Elapsed MS 2082 : MBytes Per Sec 13.668
-8/11 22:28:45.318  Client : Load Map End
-8/11 22:28:45.318  Start waiting for active player
-8/11 22:28:45.318  New World Handler : Send World Port Response
-8/11 22:28:45.318  Waiting for active player: 3 ms
-8/11 22:28:45.625  Stop waiting for active player
-8/11 22:28:46.182  Active Player Created
-8/11 22:28:46.182  Player : Exit Loading Screen : World Check Preload Begin
-8/11 22:28:46.182  Player : Exit Loading Screen : World Check Preload End
-8/11 22:28:46.182  Loading Screen : Loading : Files Read 2391 : Bytes Read 231059040 : Elapsed MS 1708 : MBytes Per Sec 129.014
-8/11 22:28:46.182  Loading Screen : World Loaded 100%
-8/11 22:28:46.182  Loading Screen Disable
-8/11 22:28:46.182  Spellbook : Make Models Local Begin : 131
-8/11 22:28:46.182  Spellbook : Make Models Local End
-8/11 22:29:09.500  Loading Screen Enable : 1220 - 1
-8/11 22:29:11.287  Stop waiting for active player
-8/11 22:29:11.287  Client Object Manager Destroyed
-8/11 22:29:11.303  Client Object Manager Initialized: 1220
-8/11 22:29:11.303  Client : Load Map Begin : 1220
-8/11 22:29:11.506  Loading Screen : Loading : Files Read 582 : Bytes Read 80156886 : Elapsed MS 2008 : MBytes Per Sec 38.070
-8/11 22:29:11.506  Loading Screen : World Loaded 1%
-8/11 22:29:13.549  Loading Screen : Loading : Files Read 2409 : Bytes Read 250173093 : Elapsed MS 2042 : MBytes Per Sec 116.838
-8/11 22:29:13.549  Loading Screen : World Loaded 60%
-8/11 22:29:14.473  Client : Load Map End
-8/11 22:29:14.473  Start waiting for active player
-8/11 22:29:14.473  New World Handler : Send World Port Response
-8/11 22:29:14.473  Waiting for active player: 4 ms
-8/11 22:29:14.739  Stop waiting for active player
-8/11 22:29:15.272  Active Player Created
-8/11 22:29:15.272  Player : Exit Loading Screen : World Check Preload Begin
-8/11 22:29:15.272  Player : Exit Loading Screen : World Check Preload End
-8/11 22:29:15.272  Loading Screen : Loading : Files Read 2292 : Bytes Read 195011458 : Elapsed MS 1172 : MBytes Per Sec 158.684
-8/11 22:29:15.272  Loading Screen : World Loaded 100%
-8/11 22:29:15.272  Loading Screen Disable
-8/11 22:29:15.272  Spellbook : Make Models Local Begin : 131
-8/11 22:29:15.272  Spellbook : Make Models Local End
-8/11 22:29:41.822  Loading Screen Enable : 1642 - 1
-8/11 22:29:43.717  Stop waiting for active player
-8/11 22:29:43.727  Client Object Manager Destroyed
-8/11 22:29:43.740  Client Object Manager Initialized: 1642
-8/11 22:29:43.740  Client : Load Map Begin : 1642
-8/11 22:29:43.842  Loading Screen : Loading : Files Read 1485 : Bytes Read 180157224 : Elapsed MS 2023 : MBytes Per Sec 84.929
-8/11 22:29:45.413  Client : Load Map End
-8/11 22:29:45.413  Start waiting for active player
-8/11 22:29:45.413  New World Handler : Send World Port Response
-8/11 22:29:45.427  Waiting for active player: 4 ms
-8/11 22:29:45.859  Stop waiting for active player
-8/11 22:29:45.921  Loading Screen : Loading : Files Read 3113 : Bytes Read 317478573 : Elapsed MS 2079 : MBytes Per Sec 145.633
-8/11 22:29:45.921  Loading Screen : World Loaded 100%
-8/11 22:29:46.426  Active Player Created
-8/11 22:29:46.426  Player : Exit Loading Screen : World Check Preload Begin
-8/11 22:29:46.426  Player : Exit Loading Screen : World Check Preload End
-8/11 22:29:46.426  Loading Screen : Streaming 0
-8/11 22:29:46.426  Loading Screen : World Loaded 100%
-8/11 22:29:46.426  Loading Screen Disable
-8/11 22:29:46.426  Spellbook : Make Models Local Begin : 131
-8/11 22:29:46.426  Spellbook : Make Models Local End
-8/11 22:42:58.836  Loading Screen Custom Enable : 1643
-8/11 22:43:02.014  Stop waiting for active player
-8/11 22:43:02.029  Client Object Manager Destroyed
-8/11 22:43:02.044  Client Object Manager Initialized: 1643
-8/11 22:43:02.044  Client : Load Map Begin : 1643
-8/11 22:43:02.044  Loading Screen : Loading : Files Read 22486 : Bytes Read 2368772323 : Elapsed MS 3213 : MBytes Per Sec 703.093
-8/11 22:43:03.790  Client : Load Map End
-8/11 22:43:03.790  Start waiting for active player
-8/11 22:43:03.790  New World Handler : Send World Port Response
-8/11 22:43:03.790  Waiting for active player: 2 ms
-8/11 22:43:04.355  Stop waiting for active player
-8/11 22:43:04.410  Loading Screen : Loading : Files Read 3223 : Bytes Read 352410392 : Elapsed MS 2363 : MBytes Per Sec 142.228
-8/11 22:43:04.410  Loading Screen : World Loaded 100%
-8/11 22:43:04.933  Active Player Created
-8/11 22:43:04.933  Player : Exit Loading Screen : World Check Preload Begin
-8/11 22:43:04.933  Player : Exit Loading Screen : World Check Preload End
-8/11 22:43:04.933  Loading Screen : Streaming 0
-8/11 22:43:04.933  Loading Screen : World Loaded 100%
-8/11 22:43:04.933  Loading Screen Disable
-8/11 22:43:04.933  Spellbook : Make Models Local Begin : 131
-8/11 22:43:04.933  Spellbook : Make Models Local End
-8/12 00:27:11.358  Loading Screen Custom Enable : 1642
-8/12 00:27:13.555  Stop waiting for active player
-8/12 00:27:13.555  Client Object Manager Destroyed
-8/12 00:27:13.577  Client Object Manager Initialized: 1642
-8/12 00:27:13.577  Client : Load Map Begin : 1642
-8/12 00:27:13.577  Loading Screen : Loading : Files Read 160761 : Bytes Read 2944254174 : Elapsed MS 2222 : MBytes Per Sec 2697.816
-8/12 00:27:15.198  Client : Load Map End
-8/12 00:27:15.198  Start waiting for active player
-8/12 00:27:15.198  New World Handler : Send World Port Response
-8/12 00:27:15.198  Waiting for active player: 6 ms
-8/12 00:27:15.635  Stop waiting for active player
-8/12 00:27:15.689  Loading Screen : Loading : Files Read 2972 : Bytes Read 331098089 : Elapsed MS 2110 : MBytes Per Sec 149.649
-8/12 00:27:15.689  Loading Screen : World Loaded 100%
-8/12 00:27:16.217  Active Player Created
-8/12 00:27:16.217  Player : Exit Loading Screen : World Check Preload Begin
-8/12 00:27:16.217  Player : Exit Loading Screen : World Check Preload End
-8/12 00:27:16.217  Loading Screen : Streaming 0
-8/12 00:27:16.217  Loading Screen : World Loaded 100%
-8/12 00:27:16.217  Loading Screen Disable
-8/12 00:27:16.217  Spellbook : Make Models Local Begin : 131
-8/12 00:27:16.217  Spellbook : Make Models Local End
-8/12 00:33:11.014  Loading Screen Enable : 1 - 1
-8/12 00:33:12.908  Stop waiting for active player
-8/12 00:33:12.922  Client Object Manager Destroyed
-8/12 00:33:12.935  Client Object Manager Initialized: 1
-8/12 00:33:12.935  Client : Load Map Begin : 1
-8/12 00:33:13.048  Loading Screen : Loading : Files Read 19348 : Bytes Read 1833544329 : Elapsed MS 2034 : MBytes Per Sec 859.687
-8/12 00:33:14.352  Client : Load Map End
-8/12 00:33:14.352  Start waiting for active player
-8/12 00:33:14.352  New World Handler : Send World Port Response
-8/12 00:33:14.352  Waiting for active player: 5 ms
-8/12 00:33:14.966  Stop waiting for active player
-8/12 00:33:15.502  Active Player Created
-8/12 00:33:15.502  Player : Exit Loading Screen : World Check Preload Begin
-8/12 00:33:15.502  Player : Exit Loading Screen : World Check Preload End
-8/12 00:33:15.502  Loading Screen : Loading : Files Read 4897 : Bytes Read 262275628 : Elapsed MS 1919 : MBytes Per Sec 130.342
-8/12 00:33:15.502  Loading Screen : World Loaded 100%
-8/12 00:33:15.502  Loading Screen Disable
-8/12 00:33:15.506  Spellbook : Make Models Local Begin : 131
-8/12 00:33:15.506  Spellbook : Make Models Local End
-8/12 00:37:57.496  Stop waiting for active player
-8/12 00:37:57.513  Client Object Manager Destroyed
-8/12 00:38:00.740  Nameplate Shutting Down
-
-8/12 00:38:04.027  Client Destroy
+8/13 01:31:40.657  Client Destroy
