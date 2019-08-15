@@ -24,6 +24,8 @@ local detonationCount = 1
 local portalCount = 1
 local hulkCollection = {}
 local drainedSoulList = {}
+local hiddenDrainedSoulList = {}
+local soulDuration = 110
 local fails = 0
 local hulkKillTime = 0
 local burstCount = 1
@@ -49,6 +51,7 @@ if L then
 	L.reversal = "Reversal"
 	L.greater_reversal = "Reversal (Greater)"
 	L.you_die = "You die"
+	L.you_die_message = "You will die in %s sec"
 end
 
 --------------------------------------------------------------------------------
@@ -198,7 +201,10 @@ function mod:OnEngage()
 	detonationCount = 1
 	hulkCollection = {}
 	drainedSoulList = {}
+	hiddenDrainedSoulList = {}
+	soulDuration = self:LFR() and 60 or 110
 	self:RegisterEvent("INSTANCE_ENCOUNTER_ENGAGE_UNIT")
+	self:RegisterEvent("UNIT_FLAGS")
 
 	self:CDBar(297937, 14.2) -- Painful Memories
 	self:CDBar(298121, 18.5) -- Lightning Orbs
@@ -211,7 +217,7 @@ function mod:OnEngage()
 		local _, _, _, tarInstanceId = UnitPosition(unit)
 		local name = self:UnitName(unit)
 		if name and tarInstanceId == 2164 and not self:Tank(unit) then
-			drainedSoulList[name] = {0, 0, 110}
+			drainedSoulList[name] = {0, 0, soulDuration}
 		end
 	end
 	self:SetInfoBarsByTable(298569, drainedSoulList, true) -- Drained Soul
@@ -233,6 +239,23 @@ function mod:INSTANCE_ENCOUNTER_ENGAGE_UNIT()
 		self:PlaySound(-20480, "long")
 		hulkKillTime = GetTime()
 		self:CDBar(-20480, self:Mythic() and 63 or self:Easy() and 84 or 59, nil, "achievement_boss_nagabruteboss") -- Overzealous Hulk
+	end
+end
+
+function mod:UNIT_FLAGS(_, unit) -- Hide dead people
+	local name = self:UnitName(unit)
+	if UnitIsDead(unit) then
+		if drainedSoulList[name] then
+			hiddenDrainedSoulList[name] = drainedSoulList[name]
+			drainedSoulList[name] = nil
+			self:SetInfoBarsByTable(298569, drainedSoulList, true)
+		end
+	else
+		if hiddenDrainedSoulList[name] then
+			drainedSoulList[name] = hiddenDrainedSoulList[name]
+			hiddenDrainedSoulList[name] = nil
+			self:SetInfoBarsByTable(298569, drainedSoulList, true)
+		end
 	end
 end
 
@@ -378,10 +401,10 @@ end
 
 function mod:DrainedSoulApplied(args)
 	if not drainedSoulList[args.destName] then
-		drainedSoulList[args.destName] = {args.amount or 1, GetTime()+110, 110}
+		drainedSoulList[args.destName] = {args.amount or 1, GetTime()+soulDuration, soulDuration}
 	else
 		drainedSoulList[args.destName][1] = args.amount or 1
-		drainedSoulList[args.destName][2] = GetTime()+110
+		drainedSoulList[args.destName][2] = GetTime()+soulDuration
 	end
 	self:SetInfoBarsByTable(args.spellId, drainedSoulList, true)
 	if self:Me(args.destGUID) then
@@ -396,9 +419,15 @@ end
 function mod:DrainedSoulRemoved(args)
 	if self:Tank(args.destName) then
 		drainedSoulList[args.destName] = nil
+		hiddenDrainedSoulList[args.destName] = nil
 	else
-		drainedSoulList[args.destName][1] = 0
-		drainedSoulList[args.destName][2] = 0
+		if hiddenDrainedSoulList[args.destName] then -- Support for Mythic, you keep the debuff after death
+			hiddenDrainedSoulList[args.destName][1] = 0
+			hiddenDrainedSoulList[args.destName][2] = 0
+		else
+			drainedSoulList[args.destName][1] = 0
+			drainedSoulList[args.destName][2] = 0
+		end
 	end
 	self:SetInfoBarsByTable(args.spellId, drainedSoulList, true)
 end
@@ -719,7 +748,7 @@ end
 function mod:EssenceofAzerothApplied(args)
 	if self:Me(args.destGUID) then
 		local t = self:Mythic() and 25 or 40
-		self:PersonalMessage(303982, false, CL.custom_sec:format(L.you_die, t))
+		self:PersonalMessage(303982, false, L.you_die_message:format(t))
 		self:PlaySound(args.spellId, "alert", nil, args.destName)
 		self:Flash(args.spellId)
 		self:Bar(args.spellId, t, L.you_die)
