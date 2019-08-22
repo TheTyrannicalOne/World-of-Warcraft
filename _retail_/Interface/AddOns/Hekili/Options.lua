@@ -7268,7 +7268,7 @@ function Hekili:GetOptions()
                                 type = 'input',
                                 name = "Twitch / Curse",
                                 order = 3,
-                                get = function () return "https://www.curse.com/addons/wow/hekili/" end,
+                                get = function () return "https://www.curseforge.com/wow/addons/hekili" end,
                                 set = function () end,
                                 width = "full",
                             },
@@ -8553,6 +8553,11 @@ local function Sanitize( segment, i, line, warnings )
     i, times = i:gsub( "pet%.[%w_]+%.([%w_]+)%.", "%1." )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'pet.X.Y...' to 'Y...' (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "(essence%.[%w_]+)%.([%w_]+)%.rank(%d)", "(%1.%2&%1.rank>=%3)" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'essence.X.[major|minor].rank#' to '(essence.X.[major|minor]&essence.X.rank>=#)' (" .. times .. "x)." )
     end
 
     i, times = i:gsub( "pet%.[%w_]+%.[%w_]+%.([%w_]+)%.", "%1." )

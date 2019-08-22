@@ -1,14 +1,2 @@
-8/12 18:57:38.657  ---- Startup ----
-8/12 18:57:58.923  ---- ClientAvailableHotfixes ----
-8/12 18:57:58.923  ---- UserClientHotfixRequest ----
-8/12 18:57:58.923  ---- ApplyingHotfixes from Cache ----
-8/12 18:57:58.927  ---- ApplyingHotfixes from Server ----
-8/12 18:59:02.438  ---- ClientAvailableHotfixes ----
-8/12 18:59:02.438  ---- UserClientHotfixRequest ----
-8/12 18:59:02.438  ---- ApplyingHotfixes from Cache ----
-8/12 18:59:02.443  ---- ApplyingHotfixes from Server ----
-8/12 19:17:29.321  ---- ClientAvailableHotfixes ----
-8/12 19:17:29.321  ---- UserClientHotfixRequest ----
-8/12 19:17:29.321  ---- ApplyingHotfixes from Cache ----
-8/12 19:17:29.321  ---- ApplyingHotfixes from Server ----
-8/12 19:18:00.871  ---- Shutdown ----
+8/17 16:28:45.671  ---- Startup ----
+8/17 16:29:08.105  ---- Shutdown ----

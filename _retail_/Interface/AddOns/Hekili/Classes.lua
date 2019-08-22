@@ -216,11 +216,9 @@ local HekiliSpecMixin = {
                         a.name = spell:GetSpellName()
                         a.desc = GetSpellDescription( a.id )
 
-                        if not a.funcs.texture then
-                            a.texture = a.texture or GetSpellTexture( a.id )
-                        end
+                        local texture = a.texture or GetSpellTexture( a.id )
 
-                        class.auraList[ a.key ] = "|T" .. a.texture .. ":0|t " .. a.name
+                        class.auraList[ a.key ] = "|T" .. texture .. ":0|t " .. a.name
 
                         self.auras[ a.name ] = a
                         if GetSpecializationInfo( GetSpecialization() or 0 ) == self.id then
@@ -555,7 +553,11 @@ local HekiliSpecMixin = {
         if a.castableWhileCasting then
             self.canCastWhileCasting = true
             self.castableWhileCasting[ a.key ] = true
-        end            
+        end
+
+        if a.id > 0 and not rawget( a, "texture" ) and not a.funcs.texture then
+            a.autoTexture = true
+        end
     end,
 
     RegisterAbilities = function( self, abilities )
@@ -4662,11 +4664,12 @@ function Hekili:SpecializationChanged()
         local ability = class.abilities[ k ]
         
         if ability and ability.id > 0 then
-            if not ability.texture then
-                local _, _, tex = GetSpellInfo( ability.id )
+            if not ability.texture or not ability.name then
+                local name, _, tex = GetSpellInfo( ability.id )
 
-                if tex then
-                    ability.texture = tex
+                if name and tex then
+                    ability.texture = ability.texture or tex
+                    ability.name = ability.name or name
                     class.abilityList[ k ] = "|T" .. ability.texture .. ":0|t " .. ability.name
                 end
             else
@@ -7842,9 +7845,11 @@ all:RegisterAbility( "guardian_of_azeroth", {
     essence = true,
 
     handler = function()
-        -- summonPet( "guardian_of_azeroth" )
+        summonPet( "guardian_of_azeroth", 30 )
     end
 } )
+
+all:RegisterPet( "guardian_of_azeroth", 152396, 300091, 31 )
 
 all:RegisterAuras( {
     guardian_of_azeroth = {

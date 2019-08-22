@@ -1,4 +1,12 @@
-﻿Version 1.10.3
+﻿Version 1.10.5
+- Fix missing reference for raft support
+
+Version 1.10.4
+-- Update localization information using CurseForge
+-- Support the Gnarlwood Waveboard
+-- Rewrite to make item and lure handling cleaner
+
+Version 1.10.3
 - Update support libraries (HereBeDragons)
 - Add option to allowing casting while flying (Monks!)
 

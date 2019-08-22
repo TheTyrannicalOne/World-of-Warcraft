@@ -24,28 +24,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"Skada: Damage for Total: 22:30 (4 Min 44 Sec):", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick-BlackDragonflight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			548, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe95Baldrick|r",
-			[51] = 1561602940,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [1]
-		{
 			" 1. Baldrick   357.4K (2007, 43.8%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
 			"", -- [3]
@@ -66,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561602940,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [2]
+		}, -- [1]
 		{
 			" 2. Durlok   330.8K (1901, 40.5%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -88,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561602940,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [3]
+		}, -- [2]
 		{
 			" 3. Gisela   128.3K (936, 15.7%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -110,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561602940,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [4]
+		}, -- [3]
 		{
 			"Skada: Damage for Total: 22:30 (7 Min 17 Sec):", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -132,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [5]
+		}, -- [4]
 		{
 			" 1. Baldrick   534.7K (2104, 42.9%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -154,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [6]
+		}, -- [5]
 		{
 			" 2. Durlok   421.0K (1768, 33.8%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -176,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [7]
+		}, -- [6]
 		{
 			" 3. Gisela   291.6K (1510, 23.4%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -198,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [8]
+		}, -- [7]
 		{
 			"Skada: Damage for Total: 22:30 (8 Min 41 Sec):", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -220,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [9]
+		}, -- [8]
 		{
 			" 1. Baldrick   733.3K (2502, 44.3%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -242,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [10]
+		}, -- [9]
 		{
 			" 2. Durlok   516.7K (1865, 31.2%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -264,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [11]
+		}, -- [10]
 		{
 			" 3. Gisela   383.7K (1654, 23.2%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -286,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [12]
+		}, -- [11]
 		{
 			" 4. Mistic   23.1K (123, 1.4%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -308,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [13]
+		}, -- [12]
 		{
 			"|cffffff00Warbeast Kraal is under attack!|r", -- [1]
 			"", -- [2]
@@ -330,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1562469028,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [13]
 		{
 			"casting Penance on you, but you're not in line of sight!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -352,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562474838,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [15]
+		}, -- [14]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -374,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562474877,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [16]
+		}, -- [15]
 		{
 			"casting Penance on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -396,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562474992,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [17]
+		}, -- [16]
 		{
 			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -418,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475088,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [18]
+		}, -- [17]
 		{
 			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -440,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475154,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [19]
+		}, -- [18]
 		{
 			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -462,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475254,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [20]
+		}, -- [19]
 		{
 			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -484,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475312,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [21]
+		}, -- [20]
 		{
 			"casting Power Word: Shield on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -506,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562475320,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [22]
+		}, -- [21]
 		{
 			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -528,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475461,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [23]
+		}, -- [22]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -550,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475931,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [24]
+		}, -- [23]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -572,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475941,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [25]
+		}, -- [24]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -594,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475972,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [26]
+		}, -- [25]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -616,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475985,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [27]
+		}, -- [26]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -638,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562476034,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [28]
+		}, -- [27]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -660,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562476041,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [29]
+		}, -- [28]
 		{
 			"Interrupted Bloodsworn Defiler's |cff71d5ff|Hspell:265433:0|h[Withering Curse]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -682,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562476185,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [30]
+		}, -- [29]
 		{
 			"Upheaval on Lillys", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -704,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562476269,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [31]
+		}, -- [30]
 		{
 			"Upheaval on Baldrick", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -726,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562476270,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [32]
+		}, -- [31]
 		{
 			"3", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -748,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562476273,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
+		}, -- [32]
 		{
 			"2", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -770,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562476274,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
+		}, -- [33]
 		{
 			"1", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -792,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562476275,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
+		}, -- [34]
 		{
 			"Interrupted Grotesque Horror's |cff71d5ff|Hspell:272180:0|h[Death Bolt]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -814,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562476825,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [36]
+		}, -- [35]
 		{
 			"Hey Durlok, noticed you did not have a guild. Are you shopping around by chance? Damage Mafia is recruiting and could use another druid", -- [1]
 			"Siniste-Skullcrusher", -- [2]
@@ -836,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSiniste-Skullcrusher|r",
 			[51] = 1562638994,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [37]
+		}, -- [36]
 		{
 			"nope thanks though", -- [1]
 			"Siniste-Skullcrusher", -- [2]
@@ -858,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSiniste-Skullcrusher|r",
 			[51] = 1562639016,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [38]
+		}, -- [37]
 		{
 			"10-4! Hit me up if you change your mind", -- [1]
 			"Siniste-Skullcrusher", -- [2]
@@ -880,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSiniste-Skullcrusher|r",
 			[51] = 1562639026,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [39]
+		}, -- [38]
 		{
 			"casting Power Word: Shield on you, but you're not in line of sight!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -902,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562639920,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [40]
+		}, -- [39]
 		{
 			"Interrupted Dazar'ai Augur's |cff71d5ff|Hspell:253562:0|h[Wildfire]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -924,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640107,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
+		}, -- [40]
 		{
 			"Interrupted Dazar'ai Augur's |cff71d5ff|Hspell:253562:0|h[Wildfire]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -946,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640423,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [42]
+		}, -- [41]
 		{
 			"Interrupted Dazar'ai Augur's |cff71d5ff|Hspell:253562:0|h[Wildfire]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -968,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640443,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [43]
+		}, -- [42]
 		{
 			"Interrupted Feasting Skyscreamer's |cff71d5ff|Hspell:255041:0|h[Terrifying Screech]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -990,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640549,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [44]
+		}, -- [43]
 		{
 			"casting Power Word: Shield on you, but you're not in line of sight!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -1012,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562640639,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [45]
+		}, -- [44]
 		{
 			"Interrupted Feasting Skyscreamer's |cff71d5ff|Hspell:255041:0|h[Terrifying Screech]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1034,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640808,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
+		}, -- [45]
 		{
 			"Interrupted Feasting Skyscreamer's |cff71d5ff|Hspell:255041:0|h[Terrifying Screech]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1056,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640825,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [47]
+		}, -- [46]
 		{
 			"Interrupted Feasting Skyscreamer's |cff71d5ff|Hspell:255041:0|h[Terrifying Screech]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1078,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640843,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
+		}, -- [47]
 		{
 			"Interrupted Zanchuli Witch-Doctor's |cff71d5ff|Hspell:252923:0|h[Venom Blast]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1100,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640953,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
+		}, -- [48]
 		{
 			"casting Power Word: Shield on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -1122,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562641319,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [50]
+		}, -- [49]
 		{
 			"casting Penance on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -1144,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562641392,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [51]
+		}, -- [50]
 		{
 			"Interrupted Charged Dust Devil's |cff71d5ff|Hspell:265968:0|h[Healing Surge]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1166,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562642056,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [52]
+		}, -- [51]
 		{
 			"Interrupted Charged Dust Devil's |cff71d5ff|Hspell:268703:0|h[Lightning Bolt]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1188,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562642158,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [53]
+		}, -- [52]
 		{
 			"Interrupted Agitated Nimbus's |cff71d5ff|Hspell:265912:0|h[Accumulate Charge]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1210,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562642945,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
+		}, -- [53]
 		{
 			"Hello! Are you interested in joining a casual guild? (Warpig)", -- [1]
 			"Snarl-Skullcrusher", -- [2]
@@ -1232,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Snarl-Skullcrusher|r",
 			[51] = 1562721908,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [55]
+		}, -- [54]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1254,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723260,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
+		}, -- [55]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1276,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723283,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
+		}, -- [56]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1298,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723336,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
+		}, -- [57]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1320,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723362,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
+		}, -- [58]
 		{
 			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1342,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723784,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
+		}, -- [59]
 		{
 			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1364,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723815,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
+		}, -- [60]
 		{
 			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1386,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723831,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
+		}, -- [61]
 		{
 			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1408,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723848,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [63]
+		}, -- [62]
 		{
 			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1430,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723947,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
+		}, -- [63]
 		{
 			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1452,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562723970,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [64]
 		{
 			"Details!: Damage Done for Current [0:12 EF]", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1474,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724044,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [66]
+		}, -- [65]
 		{
 			"1. Baldrick .................. 184.6K (4.3k, 22.6%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1496,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724044,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [67]
+		}, -- [66]
 		{
 			"2. Feral Bloodswarmer  149.4K (4.2k, 18.3%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1518,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724044,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [68]
+		}, -- [67]
 		{
 			"3. Lillys ...................... 147.9K (3.4k, 18.1%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1540,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724044,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [69]
+		}, -- [68]
 		{
 			"4. Durlok .................... 89.1K (2.1k, 10.9%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1562,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724044,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [70]
+		}, -- [69]
 		{
 			"5. Baldrick <Baldrick> . 86.1K (6.1k, 10.5%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1584,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724045,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [71]
+		}, -- [70]
 		{
 			"Details!: Damage Done for Current [0:15 EF]", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1606,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724047,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [72]
+		}, -- [71]
 		{
 			"1. Baldrick .................. 184.6K (4.3k, 22.6%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1628,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724047,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [73]
+		}, -- [72]
 		{
 			"2. Feral Bloodswarmer  149.4K (4.2k, 18.3%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1650,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724047,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [74]
+		}, -- [73]
 		{
 			"3. Lillys ...................... 147.9K (3.4k, 18.1%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1672,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724047,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [75]
+		}, -- [74]
 		{
 			"4. Durlok .................... 89.1K (2.1k, 10.9%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1694,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724047,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [76]
+		}, -- [75]
 		{
 			"5. Baldrick <Baldrick> . 86.1K (6.1k, 10.5%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1716,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724048,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [77]
+		}, -- [76]
 		{
 			"Interrupted Reanimated Guardian's |cff71d5ff|Hspell:266201:0|h[Bone Shield]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1738,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562724193,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [78]
+		}, -- [77]
 		{
 			"casting Penance on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -1760,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562724295,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [79]
+		}, -- [78]
 		{
 			"Interrupted Grotesque Horror's |cff71d5ff|Hspell:272180:0|h[Death Bolt]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1782,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562724298,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [80]
+		}, -- [79]
 		{
 			"Interrupted Grotesque Horror's |cff71d5ff|Hspell:272180:0|h[Death Bolt]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1804,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562724358,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [81]
+		}, -- [80]
 		{
 			"Interrupted Grotesque Horror's |cff71d5ff|Hspell:272180:0|h[Death Bolt]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1826,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562724502,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [82]
+		}, -- [81]
 		{
 			"Interrupted Bloodsworn Defiler's |cff71d5ff|Hspell:265487:0|h[Shadow Bolt Volley]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1848,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562724520,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [83]
+		}, -- [82]
 		{
 			"Upheaval on Lillys", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -1870,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724615,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [84]
+		}, -- [83]
 		{
 			"Upheaval on Baldrick", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1892,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724721,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [85]
+		}, -- [84]
 		{
 			"3", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1914,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724724,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [86]
+		}, -- [85]
 		{
 			"2", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1936,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724725,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [87]
+		}, -- [86]
 		{
 			"1", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1958,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724726,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [88]
+		}, -- [87]
 		{
 			"Upheaval on Baldrick", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1980,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724737,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [89]
+		}, -- [88]
 		{
 			"Upheaval on Lillys", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2002,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724737,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [90]
+		}, -- [89]
 		{
 			"3", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2024,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724740,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [91]
+		}, -- [90]
 		{
 			"3", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2046,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724740,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [92]
+		}, -- [91]
 		{
 			"2", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2068,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724741,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [93]
+		}, -- [92]
 		{
 			"2", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2090,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724741,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [94]
+		}, -- [93]
 		{
 			"1", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2112,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724742,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [95]
+		}, -- [94]
 		{
 			"1", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2134,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724742,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [96]
+		}, -- [95]
 		{
 			"Upheaval on Lillys", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2156,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724767,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [97]
+		}, -- [96]
 		{
 			"Upheaval on Baldrick", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2178,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724767,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
+		}, -- [97]
 		{
 			"3", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2200,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724770,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [98]
 		{
 			"3", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2222,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724770,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [100]
+		}, -- [99]
 		{
 			"2", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2244,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724771,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [100]
 		{
 			"2", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2266,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724771,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [101]
 		{
 			"1", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2288,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562724772,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
+		}, -- [102]
 		{
 			"1", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2310,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562724772,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [103]
 		{
 			"casting Power Word: Shield on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -2332,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562725138,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [105]
+		}, -- [104]
 		{
 			"durglegurgle chew doin", -- [1]
 			"|Kq1|k", -- [2]
@@ -2355,7 +2333,7 @@ ElvCharacterDB = {
 			[51] = 1562904332,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "Yak",
-		}, -- [106]
+		}, -- [105]
 		{
 			"posting auctions before getting off had to show him where some old stuff that might sell was and grabbed a few things myself so heres hoping i get that dp richer status", -- [1]
 			"|Kq1|k", -- [2]
@@ -2378,7 +2356,7 @@ ElvCharacterDB = {
 			[51] = 1562904544,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "Yak",
-		}, -- [107]
+		}, -- [106]
 		{
 			"maybe we can play after dinner tomorow we still doing cobos?", -- [1]
 			"|Kq1|k", -- [2]
@@ -2401,7 +2379,7 @@ ElvCharacterDB = {
 			[51] = 1562904568,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "Yak",
-		}, -- [108]
+		}, -- [107]
 		{
 			"yeah man -- that soiungs good to me", -- [1]
 			"|Kq1|k", -- [2]
@@ -2424,7 +2402,7 @@ ElvCharacterDB = {
 			[51] = 1562904622,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "Yak",
-		}, -- [109]
+		}, -- [108]
 		{
 			"dont be a douche now listen here boi", -- [1]
 			"|Kq1|k", -- [2]
@@ -2447,7 +2425,7 @@ ElvCharacterDB = {
 			[51] = 1562904639,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "Yak",
-		}, -- [110]
+		}, -- [109]
 		{
 			"tickle the pickle or else ", -- [1]
 			"|Kq1|k", -- [2]
@@ -2470,7 +2448,7 @@ ElvCharacterDB = {
 			[51] = 1562904667,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "Yak",
-		}, -- [111]
+		}, -- [110]
 		{
 			"got hooked watching total wipeout and ninja warrior tonight didnt realize it got so late", -- [1]
 			"|Kq1|k", -- [2]
@@ -2493,7 +2471,7 @@ ElvCharacterDB = {
 			[51] = 1562904670,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "Yak",
-		}, -- [112]
+		}, -- [111]
 		{
 			"also been working late to make up friday i took off so thats been sucking", -- [1]
 			"|Kq1|k", -- [2]
@@ -2516,7 +2494,7 @@ ElvCharacterDB = {
 			[51] = 1562904698,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "Yak",
-		}, -- [113]
+		}, -- [112]
 		{
 			"<Deadly Boss Mods> Diadems is busy fighting against Normal - Adderis and Aspix (91%, 5/5 people alive)", -- [1]
 			"|Kq1|k", -- [2]
@@ -2539,7 +2517,7 @@ ElvCharacterDB = {
 			[51] = 1562904698,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "Yak",
-		}, -- [114]
+		}, -- [113]
 		{
 			"<DBM> Diadems has defeated Normal - Adderis and Aspix!", -- [1]
 			"|Kq1|k", -- [2]
@@ -2562,7 +2540,7 @@ ElvCharacterDB = {
 			[51] = 1562904751,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "Yak",
-		}, -- [115]
+		}, -- [114]
 		{
 			"huzzaaah -- yeah dude that soudns super shitty", -- [1]
 			"|Kq1|k", -- [2]
@@ -2585,7 +2563,7 @@ ElvCharacterDB = {
 			[51] = 1562904769,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "Yak",
-		}, -- [116]
+		}, -- [115]
 		{
 			"i switched off of dbm and to bigwigs and little wigs ", -- [1]
 			"|Kq1|k", -- [2]
@@ -2608,7 +2586,7 @@ ElvCharacterDB = {
 			[51] = 1562904779,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "Yak",
-		}, -- [117]
+		}, -- [116]
 		{
 			"but that poor dbm dev he been doing it solo for a while and keeping up blizz sent him a pc since he thoght about giving up", -- [1]
 			"|Kq1|k", -- [2]
@@ -2631,7 +2609,7 @@ ElvCharacterDB = {
 			[51] = 1562904824,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "Yak",
-		}, -- [118]
+		}, -- [117]
 		{
 			"staring intensifies", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2653,7 +2631,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1563247203,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [119]
+		}, -- [118]
 		{
 			"adios chicharones", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2675,7 +2653,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1563247356,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [120]
+		}, -- [119]
 		{
 			"turns his |Hitem:118427|h|cFFFFFFFF[Autographed Hearthstone Card]|r|h card over, revealing a |cFFFFFFFF[Common Hearthstone Card]|r!", -- [1]
 			"Milkjug-Arthas", -- [2]
@@ -2697,7 +2675,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Milkjug-Arthas|r",
 			[51] = 1563247891,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [121]
+		}, -- [120]
 		{
 			"|cffffff00The Sliver is under attack!|r", -- [1]
 			"", -- [2]
@@ -2719,7 +2697,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563248794,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
+		}, -- [121]
 		{
 			"|cffffff00Orgrimmar is under attack!|r", -- [1]
 			"", -- [2]
@@ -2741,7 +2719,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563506217,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
+		}, -- [122]
 		{
 			"|cffffff00Valley of Spirits is under attack!|r", -- [1]
 			"", -- [2]
@@ -2763,7 +2741,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563506223,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
+		}, -- [123]
 		{
 			"|cffffff00Valley of Honor is under attack!|r", -- [1]
 			"", -- [2]
@@ -2785,7 +2763,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563773273,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
+		}, -- [124]
 		{
 			"|cffffff00Valley of Spirits is under attack!|r", -- [1]
 			"", -- [2]
@@ -2807,7 +2785,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1564370799,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [125]
 		{
 			"|cffffff00Valley of Spirits is under attack!|r", -- [1]
 			"", -- [2]
@@ -2828,6 +2806,28 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "",
 			[51] = 1564370860,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [126]
+		{
+			"|cffffff00Valley of Honor is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Orgrimmar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Orgrimmar", -- [9]
+			0, -- [10]
+			136, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1565569766,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [127]
 	},

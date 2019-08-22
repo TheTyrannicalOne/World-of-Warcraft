@@ -64,6 +64,12 @@ do
         if now - lastCycle < 0.1 then return lastCount end
         lastCycle = now
 
+        if now - Hekili.lastAudit > 1 then
+            -- Kick start the damage-based target detection filter.
+            Hekili.AuditorStalled = true
+            ns.Audit()
+        end
+
         local showNPs = GetCVar( "nameplateShowEnemies" ) == "1"
 
         wipe(counted)
@@ -77,7 +83,7 @@ do
 
         if spec and spec.nameplates and showNPs then
             for unit, guid in pairs(npGUIDs) do
-                if UnitExists(unit) and not UnitIsDead(unit) and UnitCanAttack("player", unit) and UnitInPhase(unit) and (UnitIsPVP("player") or not UnitIsPlayer(unit)) then
+                if UnitExists(unit) and not UnitIsDead(unit) and UnitCanAttack("player", unit) and UnitHealth(unit) > 1 and UnitInPhase(unit) and (UnitIsPVP("player") or not UnitIsPlayer(unit)) then
                     local npcid = guid:match("(%d+)-%x-$")
 
                     if not enemyExclusions[npcid] then
@@ -102,7 +108,7 @@ do
                 local guid = UnitGUID(unit)
     
                 if guid and counted[ guid ] == nil then
-                    if UnitExists(unit) and not UnitIsDead(unit) and UnitCanAttack("player", unit) and UnitInPhase(unit) and (UnitIsPVP("player") or not UnitIsPlayer(unit)) then
+                    if UnitExists(unit) and not UnitIsDead(unit) and UnitCanAttack("player", unit) and UnitHealth(unit) > 1 and UnitInPhase(unit) and (UnitIsPVP("player") or not UnitIsPlayer(unit)) then
                         local npcid = guid:match("(%d+)-%x-$")
     
                         if not enemyExclusions[npcid] then
@@ -462,10 +468,16 @@ function ns.healingInLast(t)
 end
 
 -- Auditor should clean things up for us.
+Hekili.lastAudit = GetTime()
+Hekili.auditInterval = 0
+
 ns.Audit = function()
     local now = GetTime()
-    local spec = state.spec.id and Hekili.DB.profile.specs[state.spec.id]
+    local spec = state.spec.id and Hekili.DB.profile.specs[ state.spec.id ]
     local grace = spec and spec.damageExpiration or 6
+
+    Hekili.auditInterval = now - Hekili.lastAudit
+    Hekili.lastAudit = now
 
     for aura, targets in pairs(debuffs) do
         local a = class.auras[aura]
@@ -609,6 +621,10 @@ do
         local default = 0.7 * ( UnitIsTrivial( unit ) and TRIVIAL or FOREVER )
         local guid = UnitExists( unit ) and UnitCanAttack( "player", unit ) and UnitGUID( unit )
 
+        if percent >= 1 then
+            percent = percent * 100
+        end
+
         if not guid then return default end
 
         local enemy = db[ guid ]
@@ -625,7 +641,7 @@ do
 
         if healthPct <= percent then return 0, enemy.n end
 
-        return ceil( ( healthPct - percent ) / enemy.rate ), n
+        return ceil( ( healthPct - percent ) / enemy.rate ), enemy.n
     end
 
     function Hekili:GetGreatestTTD()
@@ -760,7 +776,7 @@ do
             local guid = UnitGUID(unit)
 
             if guid and not seen[guid] then
-                if db[guid] and (not UnitExists(unit) or UnitIsDead(unit) or not UnitCanAttack("player", unit)) then
+                if db[guid] and (not UnitExists(unit) or UnitIsDead(unit) or not UnitCanAttack("player", unit) or UnitHealth(unit) <= 1) then
                     EliminateEnemy(guid)
                 else
                     local health, healthMax = UnitHealth(unit), UnitHealthMax(unit)
@@ -781,8 +797,8 @@ do
             seen[guid] = true
         end
 
-        C_Timer.After(0.5, UpdateTTDs)
+        C_Timer.After( 0.5, UpdateTTDs )
     end
 
-    C_Timer.After(0.5, UpdateTTDs)
+    C_Timer.After( 0.5, UpdateTTDs )
 end
