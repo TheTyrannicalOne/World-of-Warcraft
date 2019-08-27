@@ -1,2 +1,62 @@
-8/17 16:28:46.420  Client Initialize.
-8/17 16:29:08.105  Client Destroy
+8/27 01:06:58.933  Client Initialize.
+8/27 01:07:34.917  Initial Hotfixes: Received
+8/27 01:07:34.917  Initial Hotfixes: Fake Connect
+8/27 01:07:34.917  Initial Hotfixes: Requested
+8/27 01:07:34.917  Initial Hotfixes: Applied
+8/27 01:24:02.933  Initial Hotfixes: Received
+8/27 01:24:02.933  Initial Hotfixes: Fake Connect
+8/27 01:24:02.933  Initial Hotfixes: Requested
+8/27 01:24:02.933  Initial Hotfixes: Applied
+8/27 01:39:41.293  Initial Hotfixes: Received
+8/27 01:39:41.293  Initial Hotfixes: Fake Connect
+8/27 01:39:41.293  Initial Hotfixes: Requested
+8/27 01:39:41.293  Initial Hotfixes: Applied
+8/27 01:40:55.529  Initial Hotfixes: Received
+8/27 01:40:55.529  Initial Hotfixes: Fake Connect
+8/27 01:40:55.529  Initial Hotfixes: Requested
+8/27 01:40:55.529  Initial Hotfixes: Applied
+8/27 01:41:07.637  Initial Hotfixes: Received
+8/27 01:41:07.637  Initial Hotfixes: Fake Connect
+8/27 01:41:07.637  Initial Hotfixes: Requested
+8/27 01:41:07.653  Initial Hotfixes: Applied
+8/27 01:43:50.668  Initial Hotfixes: Received
+8/27 01:43:50.668  Initial Hotfixes: Fake Connect
+8/27 01:43:50.668  Initial Hotfixes: Requested
+8/27 01:43:50.668  Initial Hotfixes: Applied
+8/27 01:45:20.872  Initial Hotfixes: Received
+8/27 01:45:20.872  Initial Hotfixes: Fake Connect
+8/27 01:45:20.872  Initial Hotfixes: Requested
+8/27 01:45:20.872  Initial Hotfixes: Applied
+8/27 01:45:32.575  Loading Screen Enable : 0 - 1
+8/27 01:45:32.677  Client Object Manager Initialized: 0
+8/27 01:45:33.390  Client : Load Map Begin : 0
+8/27 01:45:34.197  Client : Load Map End
+8/27 01:45:34.199  Client : Init : World Preload Begin
+8/27 01:45:34.338  Client : Init : World Preload End
+8/27 01:45:34.338  Start waiting for active player
+8/27 01:45:34.338  Character Login SEND
+8/27 01:45:34.338  Waiting for active player: 2 ms
+8/27 01:45:36.915  Stop waiting for active player
+8/27 01:45:36.919  Loading Screen : Loading : Files Read 6587 : Bytes Read 285071484 : Elapsed MS 4344 : MBytes Per Sec 62.584
+8/27 01:45:36.919  Loading Screen : XML Loaded 100%
+8/27 01:45:36.919  Loading Screen : World Loaded 100%
+8/27 01:45:36.919  Loading Screen : Spell Loaded 0%
+8/27 01:45:37.203  Active Player Created
+8/27 01:45:37.228  Loading Screen : Loading : Files Read 45 : Bytes Read 73670 : Elapsed MS 306 : MBytes Per Sec 0.230
+8/27 01:45:37.228  Loading Screen : XML Loaded 100%
+8/27 01:45:37.228  Loading Screen : World Loaded 100%
+8/27 01:45:37.228  Loading Screen : Spell Loaded 100%
+8/27 01:45:37.229  Loading Screen Disable
+8/27 01:45:37.229  Spellbook : Make Models Local Begin : 9
+8/27 01:45:37.229  Spellbook : Make Models Local End
+8/27 02:43:40.867  Movement : World : World Preload Begin
+8/27 02:43:40.869  Loading Screen Enable : 0 - 1
+8/27 02:43:41.237  Loading Screen : Streaming 0
+8/27 02:43:41.237  Loading Screen : World Loaded 100%
+8/27 02:43:41.237  Loading Screen Disable
+8/27 02:43:41.237  Spellbook : Make Models Local Begin : 12
+8/27 02:43:41.237  Spellbook : Make Models Local End
+8/27 02:43:41.237  Movement : World : World Preload End
+8/27 03:30:45.966  Stop waiting for active player
+8/27 03:30:45.966  Client Object Manager Destroyed
+8/27 03:30:46.670  Client Destroy

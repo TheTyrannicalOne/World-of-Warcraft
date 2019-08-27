@@ -13,6 +13,13 @@ X: 0
 Y: 0
 W: 150
 H: 80
+Frame: rareFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: 14
+Y: 223
+W: 261
+H: 469
 Frame: AAP_QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -111,6 +118,13 @@ X: 0
 Y: 0
 W: 300
 H: 300
+Frame: scanner_button
+FrameLevel: 1
+Anchor: BOTTOM
+X: 0
+Y: 128
+W: 200
+H: 50
 Frame: TooltipMover
 FrameLevel: 402
 Anchor: RIGHT

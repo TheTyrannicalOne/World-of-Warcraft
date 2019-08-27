@@ -1,35 +1,39 @@
-8/17 16:28:45.775  LogOpen
-8/17 16:28:45.775  ConsoleDetectDetectHardware():
-8/17 16:28:45.775  	cpuIdx: 1
-8/17 16:28:45.786  ConsoleDeviceInitialize(): hwDetect = 0, hwChanged = 0
-8/17 16:28:45.786  D3d11 Device Create
-8/17 16:28:45.786  	Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-8/17 16:28:45.786  Found Adapter 0: Vendor Id 0x10de, Device Id 0x1e07 - Sysmem = 0
-8/17 16:28:45.786  Monitor 0 attached to adapter 0
-8/17 16:28:45.798  Skipping Software Renderer 1: Vendor Id 0x1414, Device Id 0x008c - Sysmem = 0
-8/17 16:28:45.798  Choosing adapter 0
-8/17 16:28:45.798  Detected NvAPI and checking if it's valid...
-8/17 16:28:46.164  AFR detection
-8/17 16:28:46.164  AFR found with 1 devices(s)
-8/17 16:28:46.164  Caps:
-8/17 16:28:46.164  	Vendor ID: 10de
-8/17 16:28:46.164  	Device ID: 1e07
-8/17 16:28:46.164  	AFR Groups: 1/1
-8/17 16:28:46.164  Feature Level: DX=3, GL=0, MTL=0
-8/17 16:28:46.194  D3d11 Device Create Successful
-8/17 16:28:46.207  CPU Processor Detection: 12 H/W threads
-8/17 16:28:46.207  Memory Detection: 34296328192 bytes of physical memory available
-8/17 16:28:46.207  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-8/17 16:28:46.207  Resample::CreateResources
-8/17 16:28:46.317  RenderSettings::NotifyChanged
-8/17 16:28:46.348  Liquid::CreateProceduralTextures
-8/17 16:28:46.620  PortraitDeviceCreate
-8/17 16:28:46.761  VolumeFog::DestroyResources
-8/17 16:28:46.833  VolumeFog::UpdateResources
-8/17 16:28:46.833  VolumeFog::DestroyResources
-8/17 16:29:08.050  PortraitDeviceDestroy
-8/17 16:29:08.112  VolumeFog::DestroyResources
-8/17 16:29:08.112  Liquid::DestroyProceduralTextures
-8/17 16:29:08.633  Resample::DestroyResources
-8/17 16:29:08.633  D3d11 Device Destroy
-8/17 16:29:08.699  D3d11 Device Destroyed
+8/27 01:06:58.434  LogOpen
+8/27 01:06:58.434  ConsoleDetectDetectHardware():
+8/27 01:06:58.434  	cpuIdx: 1
+8/27 01:06:58.434  ConsoleDeviceInitialize(): hwDetect = 0, hwChanged = 0
+8/27 01:06:58.455  D3d11 Device Create
+8/27 01:06:58.455  	Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
+8/27 01:06:58.455  Found Adapter 0: Vendor Id 0x10de, Device Id 0x1e07 - Sysmem = 0
+8/27 01:06:58.455  Monitor 0 attached to adapter 0
+8/27 01:06:58.455  Skipping Software Renderer 1: Vendor Id 0x1414, Device Id 0x008c - Sysmem = 0
+8/27 01:06:58.455  Choosing adapter 0
+8/27 01:06:58.455  Detected NvAPI and checking if it's valid...
+8/27 01:06:58.723  AFR detection
+8/27 01:06:58.723  AFR found with 1 devices(s)
+8/27 01:06:58.723  Caps:
+8/27 01:06:58.723  	Vendor ID: 10de
+8/27 01:06:58.723  	Device ID: 1e07
+8/27 01:06:58.729  	AFR Groups: 1/1
+8/27 01:06:58.729  Feature Level: DX=3, GL=0, MTL=0
+8/27 01:06:58.753  D3d11 Device Create Successful
+8/27 01:06:58.770  CPU Processor Detection: 12 H/W threads
+8/27 01:06:58.770  Memory Detection: 34296328192 bytes of physical memory available
+8/27 01:06:58.770  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+8/27 01:06:58.778  Resample::CreateResources
+8/27 01:06:58.861  RenderSettings::NotifyChanged
+8/27 01:06:58.881  Liquid::CreateProceduralTextures
+8/27 01:06:59.152  PortraitDeviceCreate
+8/27 01:06:59.279  VolumeFog::DestroyResources
+8/27 01:06:59.355  VolumeFog::UpdateResources
+8/27 01:06:59.355  VolumeFog::DestroyResources
+8/27 01:45:32.677  PortraitDeviceDestroy
+8/27 01:45:32.677  PortraitDeviceCreate
+8/27 03:30:46.325  PortraitDeviceDestroy
+8/27 03:30:46.349  PortraitDeviceCreate
+8/27 03:30:46.537  PortraitDeviceDestroy
+8/27 03:30:46.670  VolumeFog::DestroyResources
+8/27 03:30:46.699  Liquid::DestroyProceduralTextures
+8/27 03:30:46.761  Resample::DestroyResources
+8/27 03:30:46.761  D3d11 Device Destroy
+8/27 03:30:47.107  D3d11 Device Destroyed

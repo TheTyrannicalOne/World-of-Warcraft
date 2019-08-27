@@ -82,9 +82,11 @@ SkadaDB = {
 						["stop"] = true,
 					},
 					["barwidth"] = 234.000549316406,
-					["x"] = -179.000244140625,
+					["modeincombat"] = "Focus gained",
 					["y"] = 28.00163269042969,
 					["barfont"] = "Trebuchet MS",
+					["name"] = "Damage",
+					["point"] = "BOTTOMRIGHT",
 					["title"] = {
 						["font"] = "Arial Narrow",
 						["fontsize"] = 20,
@@ -98,11 +100,9 @@ SkadaDB = {
 						["borderthickness"] = 0,
 						["texture"] = "Graphite",
 					},
-					["name"] = "Damage",
-					["bartexture"] = "Minimalist",
 					["mode"] = "Focus gained",
-					["modeincombat"] = "Focus gained",
-					["point"] = "BOTTOMRIGHT",
+					["bartexture"] = "Minimalist",
+					["x"] = -179.000244140625,
 				}, -- [1]
 				{
 					["titleset"] = false,
@@ -355,10 +355,10 @@ SkadaDB = {
 					["barslocked"] = true,
 					["barwidth"] = 234.166656494141,
 					["mode"] = "Damage",
-					["point"] = "BOTTOMRIGHT",
 					["background"] = {
 						["height"] = 158.333221435547,
 					},
+					["point"] = "BOTTOMRIGHT",
 				}, -- [1]
 				{
 					["titleset"] = true,
