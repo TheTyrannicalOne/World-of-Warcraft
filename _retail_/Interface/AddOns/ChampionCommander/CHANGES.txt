@@ -1,24 +1,12 @@
-tag b076712672a8210d2de57d5b2f4097baa8eb2bd4 1.2.0
+tag 5da6e125492c68a3f97b02dea860aab3d224d7b8 1.2.1
 Author:	Alar of Runetotem <alar@aspide.it>
-Date:	Mon Jul 1 09:28:44 2019 +0200
+Date:	Thu Aug 29 20:55:03 2019 +0200
 
-Updated to 8.2.0
+Long requested fixes
 
-commit 46dcc9f98e0e1d7c2380e0fd69eb48bbec477ad1
+commit cb626c9cc3c22e6962a33e4b141cb2c1cff548d0
 Author: Alar of Runetotem <alar@aspide.it>
-Date:   Mon Jul 1 09:28:07 2019 +0200
+Date:   Thu Aug 29 20:17:16 2019 +0200
 
-    TOC Bump
-
-commit 770094636e14f3d60f0d2140215d8d83fe5e6f13
-Author: Alar of Runetotem <alar@aspide.it>
-Date:   Mon Jul 1 09:27:16 2019 +0200
-
-    Defends from no status follower
-
-commit e430f1b4aa5875622bf583295b784e2bc2b5d071
-Author: Alar of Runetotem <alar@aspide.it>
-Date:   Tue May 14 22:34:48 2019 +0200
-
-    #24 fixed MAX_LEVEL
+    Beta notice pushed to higher layer
 

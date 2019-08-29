@@ -1,221 +1,364 @@
-8/27 01:06:57.776  Connection Initialize
-8/27 01:07:01.281  Glue Start Login
-8/27 01:07:01.281  BattleNet Attempt Logon
-8/27 01:07:01.663  BattleNet Front Connected
-8/27 01:07:01.803  BattleNet Logon Queue Update
-8/27 01:07:02.103  BattleNet Logon Complete
-8/27 01:07:02.263  BattleNet Game Account Name
-8/27 01:07:02.263  BattleNet Game Account Name
-8/27 01:07:02.263  BattleNet Attempt Complete Login
-8/27 01:07:02.723  BattleNet Realm List Ticket
-8/27 01:07:02.813  BattleNet Sub Region List
-8/27 01:07:03.023  BattleNet Last Played Char
-8/27 01:07:03.513  BattleNet Realm List
-8/27 01:07:32.084  BattleNet Join Realm
-8/27 01:07:32.263  BattleNet Realm Join
-8/27 01:07:32.263  Change Connection
-8/27 01:07:32.263  Connect
-8/27 01:07:32.323  Handle Connect
-8/27 01:07:34.843  Handle Auth Response: 0
-8/27 01:07:34.843  Glue Authed To WoW: 0
-8/27 01:07:34.909  BattleNet Connected To Realm
-8/27 01:07:34.909  BattleNet Front Disconnecting
-8/27 01:07:35.008  BattleNet Front Disconnected
-8/27 01:07:35.148  Handle Char Enum
-8/27 01:07:40.403  Handle Char Enum
-8/27 01:09:38.369  Handle Character Create: 27
-8/27 01:09:46.849  Handle Character Create: 24
-8/27 01:09:47.109  Handle Char Enum
-8/27 01:11:10.535  Handle Character Create: 27
-8/27 01:11:12.895  Handle Character Create: 24
-8/27 01:11:13.146  Handle Char Enum
-8/27 01:12:56.520  Handle Character Create: 24
-8/27 01:12:56.770  Handle Char Enum
-8/27 01:14:36.399  Handle Character Create: 24
-8/27 01:14:36.650  Handle Char Enum
-8/27 01:16:59.586  Handle Character Create: 24
-8/27 01:16:59.756  Handle Char Enum
-8/27 01:18:14.462  Handle Character Create: 24
-8/27 01:18:14.572  Handle Char Enum
-8/27 01:22:40.584  Handle Character Create: 24
-8/27 01:22:40.744  Handle Char Enum
-8/27 01:23:42.057  Handle Char Enum
-8/27 01:23:55.990  BattleNet Request Change Realm List
-8/27 01:23:56.239  BattleNet Realm List Ticket
-8/27 01:23:56.799  BattleNet Sub Region List
-8/27 01:23:57.600  BattleNet Realm List
-8/27 01:24:00.240  BattleNet Join Realm
-8/27 01:24:00.909  BattleNet Realm Join
-8/27 01:24:00.909  Change Connection
-8/27 01:24:00.919  Handle Disconnect
-8/27 01:24:00.919  Connect
-8/27 01:24:00.982  Handle Connect
-8/27 01:24:02.923  Handle Auth Response: 0
-8/27 01:24:04.202  Handle Wait Queue Update
-8/27 01:24:09.152  Handle Wait Queue Update
-8/27 01:24:14.162  Handle Wait Queue Update
-8/27 01:24:19.152  Handle Wait Queue Update
-8/27 01:24:24.122  Handle Wait Queue Update
-8/27 01:24:29.172  Handle Wait Queue Update
-8/27 01:24:34.132  Handle Wait Queue Update
-8/27 01:24:39.132  Handle Wait Queue Update
-8/27 01:24:44.122  Handle Wait Queue Update
-8/27 01:24:49.142  Handle Wait Queue Update
-8/27 01:24:54.142  Handle Wait Queue Update
-8/27 01:24:59.152  Handle Wait Queue Update
-8/27 01:25:04.182  Handle Wait Queue Update
-8/27 01:25:09.182  Handle Wait Queue Update
-8/27 01:25:14.212  Handle Wait Queue Update
-8/27 01:25:19.162  Handle Wait Queue Update
-8/27 01:25:24.222  Handle Wait Queue Update
-8/27 01:25:29.162  Handle Wait Queue Update
-8/27 01:25:34.192  Handle Wait Queue Update
-8/27 01:25:39.142  Handle Wait Queue Update
-8/27 01:25:44.142  Handle Wait Queue Update
-8/27 01:25:49.142  Handle Wait Queue Update
-8/27 01:25:54.162  Handle Wait Queue Update
-8/27 01:25:59.192  Handle Wait Queue Update
-8/27 01:26:04.212  Handle Wait Queue Update
-8/27 01:26:09.222  Handle Wait Queue Update
-8/27 01:26:14.132  Handle Wait Queue Update
-8/27 01:26:19.192  Handle Wait Queue Update
-8/27 01:26:24.182  Handle Wait Queue Update
-8/27 01:26:29.172  Handle Wait Queue Update
-8/27 01:26:34.122  Handle Wait Queue Update
-8/27 01:26:39.171  Handle Wait Queue Update
-8/27 01:26:44.151  Handle Wait Queue Update
-8/27 01:26:49.151  Handle Wait Queue Update
-8/27 01:26:54.211  Handle Wait Queue Update
-8/27 01:26:59.201  Handle Wait Queue Update
-8/27 01:27:04.181  Handle Wait Queue Update
-8/27 01:27:09.151  Handle Wait Queue Update
-8/27 01:27:14.131  Handle Wait Queue Update
-8/27 01:27:19.191  Handle Wait Queue Update
-8/27 01:27:24.161  Handle Wait Queue Update
-8/27 01:27:29.131  Handle Wait Queue Update
-8/27 01:27:34.191  Handle Wait Queue Update
-8/27 01:27:39.191  Handle Wait Queue Update
-8/27 01:27:44.171  Handle Wait Queue Update
-8/27 01:27:49.141  Handle Wait Queue Update
-8/27 01:27:54.141  Handle Wait Queue Update
-8/27 01:27:59.211  Handle Wait Queue Update
-8/27 01:28:04.191  Handle Wait Queue Update
-8/27 01:28:09.171  Handle Wait Queue Update
-8/27 01:28:14.151  Handle Wait Queue Update
-8/27 01:28:19.211  Handle Wait Queue Update
-8/27 01:28:24.181  Handle Wait Queue Update
-8/27 01:28:29.141  Handle Wait Queue Update
-8/27 01:28:34.211  Handle Wait Queue Update
-8/27 01:28:39.211  Handle Wait Queue Update
-8/27 01:28:44.181  Handle Wait Queue Update
-8/27 01:28:49.181  Handle Wait Queue Update
-8/27 01:28:49.581  Handle Wait Queue Finish
-8/27 01:28:49.581  Glue Authed To WoW: 0
-8/27 01:28:49.624  BattleNet Connected To Realm
-8/27 01:28:49.878  Handle Char Enum
-8/27 01:28:54.249  Handle Char Enum
-8/27 01:29:41.550  Handle Character Create: 24
-8/27 01:29:41.810  Handle Char Enum
-8/27 01:30:26.390  Handle Character Create: 24
-8/27 01:30:26.650  Handle Char Enum
-8/27 01:31:17.344  Handle Character Create: 24
-8/27 01:31:17.604  Handle Char Enum
-8/27 01:32:00.135  Handle Character Create: 27
-8/27 01:32:02.995  Handle Character Create: 24
-8/27 01:32:03.255  Handle Char Enum
-8/27 01:33:15.574  Handle Character Create: 24
-8/27 01:33:15.694  Handle Char Enum
-8/27 01:33:55.485  Handle Character Create: 24
-8/27 01:33:55.575  Handle Char Enum
-8/27 01:36:41.541  Handle Character Create: 24
-8/27 01:36:41.611  Handle Char Enum
-8/27 01:37:03.091  Handle Char Enum
-8/27 01:39:30.522  Handle Character Create: 24
-8/27 01:39:30.632  Handle Char Enum
-8/27 01:39:34.753  BattleNet Request Change Realm List
-8/27 01:39:35.002  BattleNet Realm List Ticket
-8/27 01:39:35.592  BattleNet Sub Region List
-8/27 01:39:36.463  BattleNet Realm List
-8/27 01:39:38.593  BattleNet Join Realm
-8/27 01:39:39.412  BattleNet Realm Join
-8/27 01:39:39.412  Change Connection
-8/27 01:39:39.422  Handle Disconnect
-8/27 01:39:39.422  Connect
-8/27 01:39:39.477  Handle Connect
-8/27 01:39:41.237  Handle Auth Response: 0
-8/27 01:39:41.237  Glue Authed To WoW: 0
-8/27 01:39:41.264  BattleNet Connected To Realm
-8/27 01:39:41.354  Handle Char Enum
-8/27 01:39:45.064  Handle Char Enum
-8/27 01:40:34.764  Handle Character Create: 24
-8/27 01:40:34.904  Handle Char Enum
-8/27 01:40:49.865  BattleNet Request Change Realm List
-8/27 01:40:50.114  BattleNet Realm List Ticket
-8/27 01:40:50.664  BattleNet Sub Region List
-8/27 01:40:51.465  BattleNet Realm List
-8/27 01:40:52.985  BattleNet Join Realm
-8/27 01:40:53.514  BattleNet Realm Join
-8/27 01:40:53.514  Change Connection
-8/27 01:40:53.514  Handle Disconnect
-8/27 01:40:53.514  Connect
-8/27 01:40:53.567  Handle Connect
-8/27 01:40:55.517  Handle Auth Response: 0
-8/27 01:40:59.237  Handle Wait Queue Update
-8/27 01:41:01.237  BattleNet Request Change Realm List
-8/27 01:41:01.497  BattleNet Realm List Ticket
-8/27 01:41:02.087  BattleNet Sub Region List
-8/27 01:41:02.767  BattleNet Realm List
-8/27 01:41:04.207  Handle Wait Queue Update
-8/27 01:41:04.658  BattleNet Join Realm
-8/27 01:41:05.337  BattleNet Realm Join
-8/27 01:41:05.337  Change Connection
-8/27 01:41:05.347  Handle Disconnect
-8/27 01:41:05.347  Connect
-8/27 01:41:05.400  Handle Connect
-8/27 01:41:07.630  Handle Auth Response: 0
-8/27 01:41:07.630  Glue Authed To WoW: 0
-8/27 01:41:07.637  BattleNet Connected To Realm
-8/27 01:41:07.757  Handle Char Enum
-8/27 01:41:10.006  Handle Char Enum
-8/27 01:42:56.763  Handle Character Create: 24
-8/27 01:42:56.913  Handle Char Enum
-8/27 01:43:07.213  Handle Character Delete: 54
-8/27 01:43:07.315  Handle Char Enum
-8/27 01:43:44.311  BattleNet Request Change Realm List
-8/27 01:43:44.571  BattleNet Realm List Ticket
-8/27 01:43:45.031  BattleNet Sub Region List
-8/27 01:43:45.831  BattleNet Realm List
-8/27 01:43:47.311  BattleNet Join Realm
-8/27 01:43:48.041  BattleNet Realm Join
-8/27 01:43:48.041  Change Connection
-8/27 01:43:48.041  Handle Disconnect
-8/27 01:43:48.041  Connect
-8/27 01:43:48.104  Handle Connect
-8/27 01:43:50.654  Handle Auth Response: 0
-8/27 01:43:50.654  Glue Authed To WoW: 0
-8/27 01:43:50.654  BattleNet Connected To Realm
-8/27 01:43:50.781  Handle Char Enum
-8/27 01:43:54.172  Handle Char Enum
-8/27 01:44:09.862  Handle Character Delete: 54
-8/27 01:44:10.063  Handle Char Enum
-8/27 01:44:39.601  Handle Character Create: 24
-8/27 01:44:39.691  Handle Char Enum
-8/27 01:45:11.095  BattleNet Request Change Realm List
-8/27 01:45:11.344  BattleNet Realm List Ticket
-8/27 01:45:11.804  BattleNet Sub Region List
-8/27 01:45:12.534  BattleNet Realm List
-8/27 01:45:17.815  BattleNet Join Realm
-8/27 01:45:18.314  BattleNet Realm Join
-8/27 01:45:18.314  Change Connection
-8/27 01:45:18.324  Handle Disconnect
-8/27 01:45:18.324  Connect
-8/27 01:45:18.378  Handle Connect
-8/27 01:45:20.858  Handle Auth Response: 0
-8/27 01:45:20.858  Glue Authed To WoW: 0
-8/27 01:45:20.858  BattleNet Connected To Realm
-8/27 01:45:20.935  Handle Char Enum
-8/27 01:45:25.115  Handle Char Enum
-8/27 03:30:45.723  Handle Logout Response: 0
-8/27 03:30:45.966  Handle Logout Complete
-8/27 03:30:47.143  Disconnect: 13
-8/27 03:30:47.143  Connection Destroy
+8/28 19:40:07.020  Connection Initialize
+8/28 19:40:11.066  Glue Start Login
+8/28 19:40:11.066  BattleNet Attempt Logon
+8/28 19:40:11.339  BattleNet Front Connected
+8/28 19:40:11.476  BattleNet Logon Queue Update
+8/28 19:40:11.829  BattleNet Logon Complete
+8/28 19:40:12.003  BattleNet Game Account Name
+8/28 19:40:12.003  BattleNet Game Account Name
+8/28 19:40:12.003  BattleNet Attempt Complete Login
+8/28 19:40:12.449  BattleNet Realm List Ticket
+8/28 19:40:12.579  BattleNet Sub Region List
+8/28 19:40:12.838  BattleNet Last Played Char
+8/28 19:40:13.324  BattleNet Realm List
+8/28 19:40:15.094  BattleNet Join Realm
+8/28 19:40:15.309  BattleNet Realm Join
+8/28 19:40:15.309  Change Connection
+8/28 19:40:15.309  Connect
+8/28 19:40:36.312  Handle Cant Connect
+8/28 19:40:36.356  Handle Connect
+8/28 19:40:38.447  Handle Auth Response: 0
+8/28 19:40:41.238  Handle Wait Queue Update
+8/28 19:40:46.256  Handle Wait Queue Update
+8/28 19:40:51.241  Handle Wait Queue Update
+8/28 19:40:56.269  Handle Wait Queue Update
+8/28 19:41:01.402  Handle Wait Queue Update
+8/28 19:41:06.351  Handle Wait Queue Update
+8/28 19:41:11.239  Handle Wait Queue Update
+8/28 19:41:16.227  Handle Wait Queue Update
+8/28 19:41:21.210  Handle Wait Queue Update
+8/28 19:41:26.208  Handle Wait Queue Update
+8/28 19:41:31.207  Handle Wait Queue Update
+8/28 19:41:36.194  Handle Wait Queue Update
+8/28 19:41:41.293  Handle Wait Queue Update
+8/28 19:41:46.198  Handle Wait Queue Update
+8/28 19:41:51.256  Handle Wait Queue Update
+8/28 19:41:56.212  Handle Wait Queue Update
+8/28 19:42:01.270  Handle Wait Queue Update
+8/28 19:42:06.233  Handle Wait Queue Update
+8/28 19:42:11.197  Handle Wait Queue Update
+8/28 19:42:16.207  Handle Wait Queue Update
+8/28 19:42:21.270  Handle Wait Queue Update
+8/28 19:42:26.241  Handle Wait Queue Update
+8/28 19:42:31.192  Handle Wait Queue Update
+8/28 19:42:36.287  Handle Wait Queue Update
+8/28 19:42:41.210  Handle Wait Queue Update
+8/28 19:42:46.209  Handle Wait Queue Update
+8/28 19:42:51.215  Handle Wait Queue Update
+8/28 19:42:56.212  Handle Wait Queue Update
+8/28 19:43:01.213  Handle Wait Queue Update
+8/28 19:43:06.216  Handle Wait Queue Update
+8/28 19:43:11.205  Handle Wait Queue Update
+8/28 19:43:16.219  Handle Wait Queue Update
+8/28 19:43:21.202  Handle Wait Queue Update
+8/28 19:43:26.196  Handle Wait Queue Update
+8/28 19:43:31.222  Handle Wait Queue Update
+8/28 19:43:36.272  Handle Wait Queue Update
+8/28 19:43:41.297  Handle Wait Queue Update
+8/28 19:43:46.221  Handle Wait Queue Update
+8/28 19:43:51.240  Handle Wait Queue Update
+8/28 19:43:56.236  Handle Wait Queue Update
+8/28 19:44:01.231  Handle Wait Queue Update
+8/28 19:44:06.219  Handle Wait Queue Update
+8/28 19:44:11.217  Handle Wait Queue Update
+8/28 19:44:16.210  Handle Wait Queue Update
+8/28 19:44:21.205  Handle Wait Queue Update
+8/28 19:44:26.206  Handle Wait Queue Update
+8/28 19:44:31.191  Handle Wait Queue Update
+8/28 19:44:36.208  Handle Wait Queue Update
+8/28 19:44:41.219  Handle Wait Queue Update
+8/28 19:44:46.233  Handle Wait Queue Update
+8/28 19:44:51.248  Handle Wait Queue Update
+8/28 19:44:56.246  Handle Wait Queue Update
+8/28 19:45:01.240  Handle Wait Queue Update
+8/28 19:45:06.238  Handle Wait Queue Update
+8/28 19:45:11.235  Handle Wait Queue Update
+8/28 19:45:16.237  Handle Wait Queue Update
+8/28 19:45:21.265  Handle Wait Queue Update
+8/28 19:45:26.272  Handle Wait Queue Update
+8/28 19:45:31.276  Handle Wait Queue Update
+8/28 19:45:36.266  Handle Wait Queue Update
+8/28 19:45:41.264  Handle Wait Queue Update
+8/28 19:45:46.292  Handle Wait Queue Update
+8/28 19:45:51.271  Handle Wait Queue Update
+8/28 19:45:56.273  Handle Wait Queue Update
+8/28 19:46:01.269  Handle Wait Queue Update
+8/28 19:46:06.196  Handle Wait Queue Update
+8/28 19:46:11.212  Handle Wait Queue Update
+8/28 19:46:16.223  Handle Wait Queue Update
+8/28 19:46:21.222  Handle Wait Queue Update
+8/28 19:46:26.236  Handle Wait Queue Update
+8/28 19:46:31.256  Handle Wait Queue Update
+8/28 19:46:36.262  Handle Wait Queue Update
+8/28 19:46:41.261  Handle Wait Queue Update
+8/28 19:46:46.285  Handle Wait Queue Update
+8/28 19:46:51.226  Handle Wait Queue Update
+8/28 19:46:56.242  Handle Wait Queue Update
+8/28 19:47:01.246  Handle Wait Queue Update
+8/28 19:47:06.278  Handle Wait Queue Update
+8/28 19:47:11.200  Handle Wait Queue Update
+8/28 19:47:16.217  Handle Wait Queue Update
+8/28 19:47:21.259  Handle Wait Queue Update
+8/28 19:47:26.266  Handle Wait Queue Update
+8/28 19:47:31.195  Handle Wait Queue Update
+8/28 19:47:36.253  Handle Wait Queue Update
+8/28 19:47:41.195  Handle Wait Queue Update
+8/28 19:47:46.199  Handle Wait Queue Update
+8/28 19:47:51.228  Handle Wait Queue Update
+8/28 19:47:56.219  Handle Wait Queue Update
+8/28 19:48:01.250  Handle Wait Queue Update
+8/28 19:48:06.256  Handle Wait Queue Update
+8/28 19:48:11.270  Handle Wait Queue Update
+8/28 19:48:16.222  Handle Wait Queue Update
+8/28 19:48:21.213  Handle Wait Queue Update
+8/28 19:48:26.242  Handle Wait Queue Update
+8/28 19:48:31.243  Handle Wait Queue Update
+8/28 19:48:36.256  Handle Wait Queue Update
+8/28 19:48:41.289  Handle Wait Queue Update
+8/28 19:48:46.200  Handle Wait Queue Update
+8/28 19:48:51.209  Handle Wait Queue Update
+8/28 19:48:56.229  Handle Wait Queue Update
+8/28 19:49:01.248  Handle Wait Queue Update
+8/28 19:49:06.282  Handle Wait Queue Update
+8/28 19:49:11.214  Handle Wait Queue Update
+8/28 19:49:16.226  Handle Wait Queue Update
+8/28 19:49:21.238  Handle Wait Queue Update
+8/28 19:49:26.228  Handle Wait Queue Update
+8/28 19:49:31.211  Handle Wait Queue Update
+8/28 19:49:36.228  Handle Wait Queue Update
+8/28 19:49:41.234  Handle Wait Queue Update
+8/28 19:49:46.226  Handle Wait Queue Update
+8/28 19:49:51.224  Handle Wait Queue Update
+8/28 19:49:56.243  Handle Wait Queue Update
+8/28 19:50:01.229  Handle Wait Queue Update
+8/28 19:50:06.223  Handle Wait Queue Update
+8/28 19:50:11.236  Handle Wait Queue Update
+8/28 19:50:16.244  Handle Wait Queue Update
+8/28 19:50:21.242  Handle Wait Queue Update
+8/28 19:50:26.245  Handle Wait Queue Update
+8/28 19:50:31.249  Handle Wait Queue Update
+8/28 19:50:36.251  Handle Wait Queue Update
+8/28 19:50:41.256  Handle Wait Queue Update
+8/28 19:50:46.277  Handle Wait Queue Update
+8/28 19:50:51.232  Handle Wait Queue Update
+8/28 19:50:56.241  Handle Wait Queue Update
+8/28 19:51:01.266  Handle Wait Queue Update
+8/28 19:51:06.230  Handle Wait Queue Update
+8/28 19:51:11.249  Handle Wait Queue Update
+8/28 19:51:16.261  Handle Wait Queue Update
+8/28 19:51:21.260  Handle Wait Queue Update
+8/28 19:51:26.207  Handle Wait Queue Update
+8/28 19:51:31.217  Handle Wait Queue Update
+8/28 19:51:36.348  Handle Wait Queue Update
+8/28 19:51:41.204  Handle Wait Queue Update
+8/28 19:51:46.216  Handle Wait Queue Update
+8/28 19:51:51.234  Handle Wait Queue Update
+8/28 19:51:56.248  Handle Wait Queue Update
+8/28 19:52:01.281  Handle Wait Queue Update
+8/28 19:52:06.241  Handle Wait Queue Update
+8/28 19:52:11.214  Handle Wait Queue Update
+8/28 19:52:16.235  Handle Wait Queue Update
+8/28 19:52:21.261  Handle Wait Queue Update
+8/28 19:52:26.185  Handle Wait Queue Update
+8/28 19:52:31.207  Handle Wait Queue Update
+8/28 19:52:36.214  Handle Wait Queue Update
+8/28 19:52:41.235  Handle Wait Queue Update
+8/28 19:52:46.238  Handle Wait Queue Update
+8/28 19:52:51.249  Handle Wait Queue Update
+8/28 19:52:56.271  Handle Wait Queue Update
+8/28 19:53:01.225  Handle Wait Queue Update
+8/28 19:53:06.250  Handle Wait Queue Update
+8/28 19:53:11.269  Handle Wait Queue Update
+8/28 19:53:16.282  Handle Wait Queue Update
+8/28 19:53:21.189  Handle Wait Queue Update
+8/28 19:53:26.215  Handle Wait Queue Update
+8/28 19:53:31.192  Handle Wait Queue Update
+8/28 19:53:36.214  Handle Wait Queue Update
+8/28 19:53:41.227  Handle Wait Queue Update
+8/28 19:53:46.251  Handle Wait Queue Update
+8/28 19:53:51.245  Handle Wait Queue Update
+8/28 19:53:56.254  Handle Wait Queue Update
+8/28 19:54:01.262  Handle Wait Queue Update
+8/28 19:54:06.292  Handle Wait Queue Update
+8/28 19:54:11.210  Handle Wait Queue Update
+8/28 19:54:16.225  Handle Wait Queue Update
+8/28 19:54:21.234  Handle Wait Queue Update
+8/28 19:54:26.236  Handle Wait Queue Update
+8/28 19:54:31.251  Handle Wait Queue Update
+8/28 19:54:36.264  Handle Wait Queue Update
+8/28 19:54:41.281  Handle Wait Queue Update
+8/28 19:54:46.180  Handle Wait Queue Update
+8/28 19:54:51.287  Handle Wait Queue Update
+8/28 19:54:56.187  Handle Wait Queue Update
+8/28 19:55:01.203  Handle Wait Queue Update
+8/28 19:55:06.203  Handle Wait Queue Update
+8/28 19:55:11.191  Handle Wait Queue Update
+8/28 19:55:16.193  Handle Wait Queue Update
+8/28 19:55:21.209  Handle Wait Queue Update
+8/28 19:55:26.229  Handle Wait Queue Update
+8/28 19:55:31.233  Handle Wait Queue Update
+8/28 19:55:36.250  Handle Wait Queue Update
+8/28 19:55:41.267  Handle Wait Queue Update
+8/28 19:55:46.207  Handle Wait Queue Update
+8/28 19:55:51.236  Handle Wait Queue Update
+8/28 19:55:56.241  Handle Wait Queue Update
+8/28 19:56:01.277  Handle Wait Queue Update
+8/28 19:56:06.212  Handle Wait Queue Update
+8/28 19:56:11.227  Handle Wait Queue Update
+8/28 19:56:16.254  Handle Wait Queue Update
+8/28 19:56:21.262  Handle Wait Queue Update
+8/28 19:56:26.198  Handle Wait Queue Update
+8/28 19:56:31.209  Handle Wait Queue Update
+8/28 19:56:36.235  Handle Wait Queue Update
+8/28 19:56:41.267  Handle Wait Queue Update
+8/28 19:56:46.276  Handle Wait Queue Update
+8/28 19:56:51.266  Handle Wait Queue Update
+8/28 19:56:56.220  Handle Wait Queue Update
+8/28 19:57:01.222  Handle Wait Queue Update
+8/28 19:57:06.252  Handle Wait Queue Update
+8/28 19:57:11.268  Handle Wait Queue Update
+8/28 19:57:16.197  Handle Wait Queue Update
+8/28 19:57:21.207  Handle Wait Queue Update
+8/28 19:57:26.245  Handle Wait Queue Update
+8/28 19:57:31.247  Handle Wait Queue Update
+8/28 19:57:36.286  Handle Wait Queue Update
+8/28 19:57:41.230  Handle Wait Queue Update
+8/28 19:57:46.250  Handle Wait Queue Update
+8/28 19:57:51.188  Handle Wait Queue Update
+8/28 19:57:56.221  Handle Wait Queue Update
+8/28 19:58:01.226  Handle Wait Queue Update
+8/28 19:58:06.229  Handle Wait Queue Update
+8/28 19:58:11.234  Handle Wait Queue Update
+8/28 19:58:16.267  Handle Wait Queue Update
+8/28 19:58:21.280  Handle Wait Queue Update
+8/28 19:58:26.212  Handle Wait Queue Update
+8/28 19:58:31.215  Handle Wait Queue Update
+8/28 19:58:36.234  Handle Wait Queue Update
+8/28 19:58:41.186  Handle Wait Queue Update
+8/28 19:58:46.216  Handle Wait Queue Update
+8/28 19:58:51.212  Handle Wait Queue Update
+8/28 19:58:56.246  Handle Wait Queue Update
+8/28 19:59:01.276  Handle Wait Queue Update
+8/28 19:59:06.243  Handle Wait Queue Update
+8/28 19:59:11.274  Handle Wait Queue Update
+8/28 19:59:16.278  Handle Wait Queue Update
+8/28 19:59:21.234  Handle Wait Queue Update
+8/28 19:59:26.244  Handle Wait Queue Update
+8/28 19:59:31.249  Handle Wait Queue Update
+8/28 19:59:36.217  Handle Wait Queue Update
+8/28 19:59:41.249  Handle Wait Queue Update
+8/28 19:59:46.187  Handle Wait Queue Update
+8/28 19:59:51.212  Handle Wait Queue Update
+8/28 19:59:56.228  Handle Wait Queue Update
+8/28 20:00:01.187  Handle Wait Queue Update
+8/28 20:00:06.210  Handle Wait Queue Update
+8/28 20:00:11.233  Handle Wait Queue Update
+8/28 20:00:16.247  Handle Wait Queue Update
+8/28 20:00:21.273  Handle Wait Queue Update
+8/28 20:00:26.224  Handle Wait Queue Update
+8/28 20:00:31.268  Handle Wait Queue Update
+8/28 20:00:36.271  Handle Wait Queue Update
+8/28 20:00:41.201  Handle Wait Queue Update
+8/28 20:00:46.238  Handle Wait Queue Update
+8/28 20:00:51.239  Handle Wait Queue Update
+8/28 20:00:56.215  Handle Wait Queue Update
+8/28 20:01:01.215  Handle Wait Queue Update
+8/28 20:01:06.243  Handle Wait Queue Update
+8/28 20:01:11.184  Handle Wait Queue Update
+8/28 20:01:16.209  Handle Wait Queue Update
+8/28 20:01:21.239  Handle Wait Queue Update
+8/28 20:01:26.222  Handle Wait Queue Update
+8/28 20:01:31.249  Handle Wait Queue Update
+8/28 20:01:36.229  Handle Wait Queue Update
+8/28 20:01:41.241  Handle Wait Queue Update
+8/28 20:01:46.243  Handle Wait Queue Update
+8/28 20:01:51.234  Handle Wait Queue Update
+8/28 20:01:56.230  Handle Wait Queue Update
+8/28 20:02:01.252  Handle Wait Queue Update
+8/28 20:02:06.281  Handle Wait Queue Update
+8/28 20:02:11.184  Handle Wait Queue Update
+8/28 20:02:16.220  Handle Wait Queue Update
+8/28 20:02:21.276  Handle Wait Queue Update
+8/28 20:02:26.211  Handle Wait Queue Update
+8/28 20:02:31.238  Handle Wait Queue Update
+8/28 20:02:36.202  Handle Wait Queue Update
+8/28 20:02:41.229  Handle Wait Queue Update
+8/28 20:02:46.253  Handle Wait Queue Update
+8/28 20:02:51.281  Handle Wait Queue Update
+8/28 20:02:56.202  Handle Wait Queue Update
+8/28 20:03:01.227  Handle Wait Queue Update
+8/28 20:03:06.265  Handle Wait Queue Update
+8/28 20:03:11.175  Handle Wait Queue Update
+8/28 20:03:16.202  Handle Wait Queue Update
+8/28 20:03:21.231  Handle Wait Queue Update
+8/28 20:03:26.249  Handle Wait Queue Update
+8/28 20:03:31.212  Handle Wait Queue Update
+8/28 20:03:36.244  Handle Wait Queue Update
+8/28 20:03:41.256  Handle Wait Queue Update
+8/28 20:03:46.272  Handle Wait Queue Update
+8/28 20:03:51.205  Handle Wait Queue Update
+8/28 20:03:56.215  Handle Wait Queue Update
+8/28 20:04:01.259  Handle Wait Queue Update
+8/28 20:04:06.188  Handle Wait Queue Update
+8/28 20:04:11.226  Handle Wait Queue Update
+8/28 20:04:16.250  Handle Wait Queue Update
+8/28 20:04:21.272  Handle Wait Queue Update
+8/28 20:04:26.288  Handle Wait Queue Update
+8/28 20:04:31.197  Handle Wait Queue Update
+8/28 20:04:36.191  Handle Wait Queue Update
+8/28 20:04:41.196  Handle Wait Queue Update
+8/28 20:04:46.208  Handle Wait Queue Update
+8/28 20:04:51.230  Handle Wait Queue Update
+8/28 20:04:56.251  Handle Wait Queue Update
+8/28 20:05:01.234  Handle Wait Queue Update
+8/28 20:05:06.239  Handle Wait Queue Update
+8/28 20:05:11.231  Handle Wait Queue Update
+8/28 20:05:16.212  Handle Wait Queue Update
+8/28 20:05:21.203  Handle Wait Queue Update
+8/28 20:05:26.219  Handle Wait Queue Update
+8/28 20:05:31.286  Handle Wait Queue Update
+8/28 20:05:36.265  Handle Wait Queue Update
+8/28 20:05:41.260  Handle Wait Queue Update
+8/28 20:05:46.178  Handle Wait Queue Update
+8/28 20:05:51.281  Handle Wait Queue Update
+8/28 20:05:56.283  Handle Wait Queue Update
+8/28 20:06:01.178  Handle Wait Queue Update
+8/28 20:06:06.279  Handle Wait Queue Update
+8/28 20:06:11.197  Handle Wait Queue Update
+8/28 20:06:16.189  Handle Wait Queue Update
+8/28 20:06:21.279  Handle Wait Queue Update
+8/28 20:06:26.209  Handle Wait Queue Update
+8/28 20:06:31.199  Handle Wait Queue Update
+8/28 20:06:36.198  Handle Wait Queue Update
+8/28 20:06:41.195  Handle Wait Queue Update
+8/28 20:06:46.192  Handle Wait Queue Update
+8/28 20:06:51.181  Handle Wait Queue Update
+8/28 20:06:56.240  Handle Wait Queue Update
+8/28 20:07:01.247  Handle Wait Queue Update
+8/28 20:07:06.284  Handle Wait Queue Update
+8/28 20:07:11.185  Handle Wait Queue Update
+8/28 20:07:16.176  Handle Wait Queue Update
+8/28 20:07:21.268  Handle Wait Queue Update
+8/28 20:07:26.268  Handle Wait Queue Update
+8/28 20:07:31.195  Handle Wait Queue Update
+8/28 20:07:36.197  Handle Wait Queue Update
+8/28 20:07:41.199  Handle Wait Queue Update
+8/28 20:07:46.192  Handle Wait Queue Update
+8/28 20:07:51.190  Handle Wait Queue Update
+8/28 20:07:56.200  Handle Wait Queue Update
+8/28 20:08:01.215  Handle Wait Queue Update
+8/28 20:08:06.201  Handle Wait Queue Update
+8/28 20:08:09.226  Handle Wait Queue Finish
+8/28 20:08:09.226  Glue Authed To WoW: 0
+8/28 20:08:09.316  BattleNet Connected To Realm
+8/28 20:08:09.316  BattleNet Front Disconnecting
+8/28 20:08:09.382  BattleNet Front Disconnected
+8/28 20:08:09.549  Handle Char Enum
+8/28 20:08:11.332  Handle Char Enum
+8/28 20:51:21.415  Handle Logout Response: 0
+8/28 20:51:41.555  Handle Logout Complete
+8/28 20:51:42.304  Handle Char Enum
+8/29 00:03:21.358  Handle Logout Response: 0
+8/29 00:03:21.612  Handle Logout Complete
+8/29 00:03:22.726  Disconnect: 13
+8/29 00:03:22.726  Connection Destroy
