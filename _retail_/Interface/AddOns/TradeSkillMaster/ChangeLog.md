@@ -1,8 +1,6 @@
-## v4.8.2 Changes
+## v4.8.6 Changes
 
-* Fixed bug with account syncing not connecting in some situations.
-* Adjusted default Auctioning operation prices to be invalid if there's no AuctionDB data.
-* Fixed various errors from cancel scans and generally sped up Auctioning scan processing.
-* Fixed bug with positioning of merchant frame when using other addons.
+* Made manual AH scan much more reliable on high-pop realms and added progress messages.
+* Fixed issue with TSM scanning too many pages after doing a manual AH scan on classic.
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

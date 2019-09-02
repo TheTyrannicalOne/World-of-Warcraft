@@ -1,142 +1,152 @@
-8/28 19:40:07.789  ---- Startup ----
-8/28 19:40:38.447  ---- ClientAvailableHotfixes ----
-8/28 19:40:38.447      105, SoundKit
-8/28 19:40:38.447      106, SoundKitAdvanced
-8/28 19:40:38.447      113, ChatProfanity
-8/28 19:40:38.447      114, ChatProfanity
-8/28 19:40:38.447      115, ChatProfanity
-8/28 19:40:38.447      117, ChatProfanity
-8/28 19:40:38.447      118, ChatProfanity
-8/28 19:40:38.447      119, ChatProfanity
-8/28 19:40:38.447      120, ChatProfanity
-8/28 19:40:38.447      122, ChatProfanity
-8/28 19:40:38.447      123, ChatProfanity
-8/28 19:40:38.447      124, ChatProfanity
-8/28 19:40:38.447      125, ChatProfanity
-8/28 19:40:38.447      126, ChatProfanity
-8/28 19:40:38.447      127, ChatProfanity
-8/28 19:40:38.447      128, ChatProfanity
-8/28 19:40:38.447      129, NamesProfanity
-8/28 19:40:38.447      130, NamesProfanity
-8/28 19:40:38.447      131, NamesProfanity
-8/28 19:40:38.447      132, NamesProfanity
-8/28 19:40:38.447      133, NamesProfanity
-8/28 19:40:38.447      134, NamesProfanity
-8/28 19:40:38.447      135, NamesProfanity
-8/28 19:40:38.447      136, NamesProfanity
-8/28 19:40:38.447      138, NamesProfanity
-8/28 19:40:38.447      140, NamesProfanity
-8/28 19:40:38.447      141, NamesProfanity
-8/28 19:40:38.447      142, NamesProfanity
-8/28 19:40:38.447      143, NamesProfanity
-8/28 19:40:38.447      144, NamesProfanity
-8/28 19:40:38.447      146, GlobalStrings
-8/28 19:40:38.447      147, GlobalStrings
-8/28 19:40:38.447      148, TradeSkillItem
-8/28 19:40:38.447      148, ItemSparse
-8/28 19:40:38.447      148, ItemSearchName
-8/28 19:40:38.447      148, Item
-8/28 19:40:38.447      148, TransmogHoliday
-8/28 19:40:38.447      149, SpellName
-8/28 19:40:38.447      149, Spell
-8/28 19:40:38.447      150, Spell
-8/28 19:40:38.447      150, SpellName
-8/28 19:40:38.447      157, Achievement
-8/28 19:40:38.447      170, SpellEffect
-8/28 19:40:38.447      171, RibbonQuality
-8/28 19:40:38.447      173, Cfg_Categories
-8/28 19:40:38.447      174, Cfg_Categories
-8/28 19:40:38.447      175, Cfg_Categories
-8/28 19:40:38.447      176, Cfg_Categories
-8/28 19:40:38.447      177, Cfg_Categories
-8/28 19:40:38.447      178, Cfg_Categories
-8/28 19:40:38.447      267, AnimKitConfigBoneSet
-8/28 19:40:38.447      268, SpellName
-8/28 19:40:38.447      268, Spell
-8/28 19:40:38.447      269, Material
-8/28 19:40:38.447      270, Material
-8/28 19:40:38.447      565, SpellName
-8/28 19:40:38.447      565, Spell
-8/28 19:40:38.447      566, SpellAuraOptions
-8/28 19:40:38.447      567, SpellCastingRequirements
-8/28 19:40:38.447      568, SpellCategories
-8/28 19:40:38.447      137, NamesProfanity
-8/28 19:40:38.447      266, AnimKitConfigBoneSet
-8/28 19:40:38.447      121, ChatProfanity
-8/28 19:40:38.447      139, NamesProfanity
-8/28 19:40:38.447      172, RibbonQuality
-8/28 19:40:38.447      569, SpellLevels
-8/28 19:40:38.447      265, AnimKitConfig
-8/28 19:40:38.447      116, ChatProfanity
-8/28 19:40:38.465  ---- UserClientHotfixRequest ----
-8/28 19:40:38.465  ---- ApplyingHotfixes from Cache ----
-8/28 19:40:38.465  	105 Table SoundKit RecID 888 valid
-8/28 19:40:38.465  	106 Table SoundKitAdvanced RecID 103310 valid
-8/28 19:40:38.465  	113 Table ChatProfanity RecID 26470 valid
-8/28 19:40:38.465  	114 Table ChatProfanity RecID 26471 valid
-8/28 19:40:38.465  	115 Table ChatProfanity RecID 26472 valid
-8/28 19:40:38.465  	117 Table ChatProfanity RecID 26474 valid
-8/28 19:40:38.465  	118 Table ChatProfanity RecID 26475 valid
-8/28 19:40:38.465  	119 Table ChatProfanity RecID 26476 valid
-8/28 19:40:38.465  	121 Table ChatProfanity RecID 26478 valid
-8/28 19:40:38.465  	122 Table ChatProfanity RecID 26479 valid
-8/28 19:40:38.465  	125 Table ChatProfanity RecID 26482 valid
-8/28 19:40:38.465  	126 Table ChatProfanity RecID 26483 valid
-8/28 19:40:38.465  	127 Table ChatProfanity RecID 26484 valid
-8/28 19:40:38.465  	128 Table ChatProfanity RecID 26485 valid
-8/28 19:40:38.465  	130 Table NamesProfanity RecID 30713 valid
-8/28 19:40:38.465  	131 Table NamesProfanity RecID 30714 valid
-8/28 19:40:38.465  	132 Table NamesProfanity RecID 30715 valid
-8/28 19:40:38.465  	133 Table NamesProfanity RecID 30716 valid
-8/28 19:40:38.465  	134 Table NamesProfanity RecID 30717 valid
-8/28 19:40:38.465  	135 Table NamesProfanity RecID 30718 valid
-8/28 19:40:38.465  	136 Table NamesProfanity RecID 30719 valid
-8/28 19:40:38.465  	137 Table NamesProfanity RecID 30720 valid
-8/28 19:40:38.465  	138 Table NamesProfanity RecID 30721 valid
-8/28 19:40:38.465  	139 Table NamesProfanity RecID 30722 valid
-8/28 19:40:38.465  	140 Table NamesProfanity RecID 30723 valid
-8/28 19:40:38.465  	141 Table NamesProfanity RecID 30724 valid
-8/28 19:40:38.465  	142 Table NamesProfanity RecID 30725 valid
-8/28 19:40:38.465  	144 Table NamesProfanity RecID 30727 valid
-8/28 19:40:38.465  	146 Table GlobalStrings RecID 13521 valid
-8/28 19:40:38.465  	147 Table GlobalStrings RecID 16067 valid
-8/28 19:40:38.465  	148 Table TransmogHoliday RecID 4775 invalid
-8/28 19:40:38.465  	148 Table Item RecID 4775 valid
-8/28 19:40:38.465  	148 Table ItemSearchName RecID 4775 invalid
-8/28 19:40:38.465  	148 Table ItemSparse RecID 4775 valid
-8/28 19:40:38.465  	148 Table TradeSkillItem RecID 4775 invalid
-8/28 19:40:38.465  	149 Table SpellName RecID 8737 valid
-8/28 19:40:38.465  	149 Table Spell RecID 8737 valid
-8/28 19:40:38.465  	150 Table Spell RecID 8738 valid
-8/28 19:40:38.465  	150 Table SpellName RecID 8738 valid
-8/28 19:40:38.465  	157 Table Achievement RecID 13888 invalid
-8/28 19:40:38.465  	170 Table SpellEffect RecID 680241 valid
-8/28 19:40:38.465  	171 Table RibbonQuality RecID 1 valid
-8/28 19:40:38.465  	172 Table RibbonQuality RecID 2 valid
-8/28 19:40:38.465  	173 Table Cfg_Categories RecID 2 valid
-8/28 19:40:38.465  	174 Table Cfg_Categories RecID 3 valid
-8/28 19:40:38.465  	175 Table Cfg_Categories RecID 4 valid
-8/28 19:40:38.465  	176 Table Cfg_Categories RecID 6 valid
-8/28 19:40:38.465  	177 Table Cfg_Categories RecID 14 valid
-8/28 19:40:38.465  	178 Table Cfg_Categories RecID 49 valid
-8/28 19:40:38.465  	266 Table AnimKitConfigBoneSet RecID 141 valid
-8/28 19:40:38.465  	267 Table AnimKitConfigBoneSet RecID 142 valid
-8/28 19:40:38.465  	268 Table SpellName RecID 13742 valid
-8/28 19:40:38.465  	268 Table Spell RecID 13742 valid
-8/28 19:40:38.465  	129 Table NamesProfanity RecID 30712 valid
-8/28 19:40:38.465  	120 Table ChatProfanity RecID 26477 valid
-8/28 19:40:38.465  	124 Table ChatProfanity RecID 26481 valid
-8/28 19:40:38.465  	265 Table AnimKitConfig RecID 121 valid
-8/28 19:40:38.465  	143 Table NamesProfanity RecID 30726 valid
-8/28 19:40:38.465  	123 Table ChatProfanity RecID 26480 valid
-8/28 19:40:38.465  	116 Table ChatProfanity RecID 26473 valid
-8/28 19:40:38.465  	269 Table Material RecID 1 valid
-8/28 19:40:38.465  	270 Table Material RecID 2 valid
-8/28 19:40:38.475  	565 Table SpellName RecID 2383 valid
-8/28 19:40:38.475  	565 Table Spell RecID 2383 valid
-8/28 19:40:38.475  	566 Table SpellAuraOptions RecID 117420 invalid
-8/28 19:40:38.475  	567 Table SpellCastingRequirements RecID 112613 invalid
-8/28 19:40:38.475  	568 Table SpellCategories RecID 71092 valid
-8/28 19:40:38.475  	569 Table SpellLevels RecID 98160 valid
-8/28 19:40:38.475  ---- ApplyingHotfixes from Server ----
-8/29 00:03:22.384  ---- Shutdown ----
+8/30 23:04:09.127  ---- Startup ----
+8/30 23:04:44.225  ---- ClientAvailableHotfixes ----
+8/30 23:04:44.225      105, SoundKit
+8/30 23:04:44.225      106, SoundKitAdvanced
+8/30 23:04:44.225      113, ChatProfanity
+8/30 23:04:44.225      114, ChatProfanity
+8/30 23:04:44.225      115, ChatProfanity
+8/30 23:04:44.225      116, ChatProfanity
+8/30 23:04:44.225      117, ChatProfanity
+8/30 23:04:44.225      119, ChatProfanity
+8/30 23:04:44.225      120, ChatProfanity
+8/30 23:04:44.225      121, ChatProfanity
+8/30 23:04:44.225      122, ChatProfanity
+8/30 23:04:44.225      123, ChatProfanity
+8/30 23:04:44.225      124, ChatProfanity
+8/30 23:04:44.225      125, ChatProfanity
+8/30 23:04:44.225      126, ChatProfanity
+8/30 23:04:44.225      127, ChatProfanity
+8/30 23:04:44.225      128, ChatProfanity
+8/30 23:04:44.225      129, NamesProfanity
+8/30 23:04:44.225      130, NamesProfanity
+8/30 23:04:44.225      131, NamesProfanity
+8/30 23:04:44.225      132, NamesProfanity
+8/30 23:04:44.225      133, NamesProfanity
+8/30 23:04:44.225      134, NamesProfanity
+8/30 23:04:44.225      135, NamesProfanity
+8/30 23:04:44.225      136, NamesProfanity
+8/30 23:04:44.225      137, NamesProfanity
+8/30 23:04:44.225      138, NamesProfanity
+8/30 23:04:44.225      139, NamesProfanity
+8/30 23:04:44.225      140, NamesProfanity
+8/30 23:04:44.225      141, NamesProfanity
+8/30 23:04:44.225      142, NamesProfanity
+8/30 23:04:44.225      143, NamesProfanity
+8/30 23:04:44.225      147, GlobalStrings
+8/30 23:04:44.225      148, TransmogHoliday
+8/30 23:04:44.225      148, Item
+8/30 23:04:44.225      148, ItemSearchName
+8/30 23:04:44.225      148, ItemSparse
+8/30 23:04:44.225      148, TradeSkillItem
+8/30 23:04:44.225      149, Spell
+8/30 23:04:44.225      149, SpellName
+8/30 23:04:44.225      150, Spell
+8/30 23:04:44.225      150, SpellName
+8/30 23:04:44.225      157, Achievement
+8/30 23:04:44.225      170, SpellEffect
+8/30 23:04:44.225      171, RibbonQuality
+8/30 23:04:44.225      172, RibbonQuality
+8/30 23:04:44.225      174, Cfg_Categories
+8/30 23:04:44.225      175, Cfg_Categories
+8/30 23:04:44.225      176, Cfg_Categories
+8/30 23:04:44.225      177, Cfg_Categories
+8/30 23:04:44.225      178, Cfg_Categories
+8/30 23:04:44.225      266, AnimKitConfigBoneSet
+8/30 23:04:44.225      267, AnimKitConfigBoneSet
+8/30 23:04:44.225      268, Spell
+8/30 23:04:44.225      268, SpellName
+8/30 23:04:44.225      270, Material
+8/30 23:04:44.225      565, Spell
+8/30 23:04:44.225      565, SpellName
+8/30 23:04:44.225      566, SpellAuraOptions
+8/30 23:04:44.225      567, SpellCastingRequirements
+8/30 23:04:44.225      568, SpellCategories
+8/30 23:04:44.225      631, Cfg_Regions
+8/30 23:04:44.225      657, Cfg_Regions
+8/30 23:04:44.225      658, Cfg_Regions
+8/30 23:04:44.225      660, Cfg_Regions
+8/30 23:04:44.225      173, Cfg_Categories
+8/30 23:04:44.225      144, NamesProfanity
+8/30 23:04:44.225      118, ChatProfanity
+8/30 23:04:44.225      146, GlobalStrings
+8/30 23:04:44.225      269, Material
+8/30 23:04:44.225      659, Cfg_Regions
+8/30 23:04:44.225      569, SpellLevels
+8/30 23:04:44.225      265, AnimKitConfig
+8/30 23:04:44.225  ---- UserClientHotfixRequest ----
+8/30 23:04:44.225  ---- ApplyingHotfixes from Cache ----
+8/30 23:04:44.225  	105 Table SoundKit RecID 888 valid
+8/30 23:04:44.225  	106 Table SoundKitAdvanced RecID 103310 valid
+8/30 23:04:44.225  	113 Table ChatProfanity RecID 26470 valid
+8/30 23:04:44.225  	114 Table ChatProfanity RecID 26471 valid
+8/30 23:04:44.225  	115 Table ChatProfanity RecID 26472 valid
+8/30 23:04:44.225  	116 Table ChatProfanity RecID 26473 valid
+8/30 23:04:44.225  	117 Table ChatProfanity RecID 26474 valid
+8/30 23:04:44.225  	119 Table ChatProfanity RecID 26476 valid
+8/30 23:04:44.225  	120 Table ChatProfanity RecID 26477 valid
+8/30 23:04:44.225  	121 Table ChatProfanity RecID 26478 valid
+8/30 23:04:44.225  	122 Table ChatProfanity RecID 26479 valid
+8/30 23:04:44.225  	123 Table ChatProfanity RecID 26480 valid
+8/30 23:04:44.225  	124 Table ChatProfanity RecID 26481 valid
+8/30 23:04:44.225  	125 Table ChatProfanity RecID 26482 valid
+8/30 23:04:44.225  	126 Table ChatProfanity RecID 26483 valid
+8/30 23:04:44.225  	127 Table ChatProfanity RecID 26484 valid
+8/30 23:04:44.225  	128 Table ChatProfanity RecID 26485 valid
+8/30 23:04:44.225  	129 Table NamesProfanity RecID 30712 valid
+8/30 23:04:44.225  	130 Table NamesProfanity RecID 30713 valid
+8/30 23:04:44.225  	131 Table NamesProfanity RecID 30714 valid
+8/30 23:04:44.225  	132 Table NamesProfanity RecID 30715 valid
+8/30 23:04:44.225  	133 Table NamesProfanity RecID 30716 valid
+8/30 23:04:44.225  	134 Table NamesProfanity RecID 30717 valid
+8/30 23:04:44.225  	135 Table NamesProfanity RecID 30718 valid
+8/30 23:04:44.225  	136 Table NamesProfanity RecID 30719 valid
+8/30 23:04:44.225  	137 Table NamesProfanity RecID 30720 valid
+8/30 23:04:44.225  	138 Table NamesProfanity RecID 30721 valid
+8/30 23:04:44.225  	139 Table NamesProfanity RecID 30722 valid
+8/30 23:04:44.225  	140 Table NamesProfanity RecID 30723 valid
+8/30 23:04:44.225  	141 Table NamesProfanity RecID 30724 valid
+8/30 23:04:44.225  	142 Table NamesProfanity RecID 30725 valid
+8/30 23:04:44.225  	143 Table NamesProfanity RecID 30726 valid
+8/30 23:04:44.225  	147 Table GlobalStrings RecID 16067 valid
+8/30 23:04:44.225  	148 Table TradeSkillItem RecID 4775 invalid
+8/30 23:04:44.225  	148 Table ItemSparse RecID 4775 valid
+8/30 23:04:44.225  	148 Table ItemSearchName RecID 4775 invalid
+8/30 23:04:44.225  	148 Table Item RecID 4775 valid
+8/30 23:04:44.240  	148 Table TransmogHoliday RecID 4775 invalid
+8/30 23:04:44.240  	149 Table Spell RecID 8737 valid
+8/30 23:04:44.240  	149 Table SpellName RecID 8737 valid
+8/30 23:04:44.240  	150 Table Spell RecID 8738 valid
+8/30 23:04:44.240  	150 Table SpellName RecID 8738 valid
+8/30 23:04:44.240  	157 Table Achievement RecID 13888 invalid
+8/30 23:04:44.240  	170 Table SpellEffect RecID 680241 valid
+8/30 23:04:44.240  	171 Table RibbonQuality RecID 1 valid
+8/30 23:04:44.240  	172 Table RibbonQuality RecID 2 valid
+8/30 23:04:44.240  	174 Table Cfg_Categories RecID 3 valid
+8/30 23:04:44.240  	175 Table Cfg_Categories RecID 4 valid
+8/30 23:04:44.240  	176 Table Cfg_Categories RecID 6 valid
+8/30 23:04:44.240  	177 Table Cfg_Categories RecID 14 valid
+8/30 23:04:44.240  	178 Table Cfg_Categories RecID 49 valid
+8/30 23:04:44.240  	266 Table AnimKitConfigBoneSet RecID 141 valid
+8/30 23:04:44.240  	267 Table AnimKitConfigBoneSet RecID 142 valid
+8/30 23:04:44.240  	268 Table SpellName RecID 13742 valid
+8/30 23:04:44.240  	268 Table Spell RecID 13742 valid
+8/30 23:04:44.240  	270 Table Material RecID 2 valid
+8/30 23:04:44.240  	565 Table Spell RecID 2383 valid
+8/30 23:04:44.240  	565 Table SpellName RecID 2383 valid
+8/30 23:04:44.240  	566 Table SpellAuraOptions RecID 117420 invalid
+8/30 23:04:44.240  	567 Table SpellCastingRequirements RecID 112613 invalid
+8/30 23:04:44.240  	568 Table SpellCategories RecID 71092 valid
+8/30 23:04:44.240  	631 Table Cfg_Regions RecID 1090 valid
+8/30 23:04:44.240  	173 Table Cfg_Categories RecID 2 valid
+8/30 23:04:44.240  	144 Table NamesProfanity RecID 30727 valid
+8/30 23:04:44.240  	118 Table ChatProfanity RecID 26475 valid
+8/30 23:04:44.240  	146 Table GlobalStrings RecID 13521 valid
+8/30 23:04:44.240  	269 Table Material RecID 1 valid
+8/30 23:04:44.240  	569 Table SpellLevels RecID 98160 valid
+8/30 23:04:44.240  	265 Table AnimKitConfig RecID 121 valid
+8/30 23:04:44.240  	657 Table Cfg_Regions RecID 1089 valid
+8/30 23:04:44.240  	658 Table Cfg_Regions RecID 1091 valid
+8/30 23:04:44.240  	660 Table Cfg_Regions RecID 1093 valid
+8/30 23:04:44.240  	659 Table Cfg_Regions RecID 1092 valid
+8/30 23:04:44.240  ---- ApplyingHotfixes from Server ----
+8/31 00:20:00.024  ---- Shutdown ----
