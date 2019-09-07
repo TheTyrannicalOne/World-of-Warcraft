@@ -1,5 +1,4 @@
-local SLE, T, E, _, V, P, G = unpack(select(2, ...))
-local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale or 'enUS')
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local M = SLE:GetModule("Misc")
 local SETTINGS = SETTINGS
 local LFG_LIST_LEGACY = LFG_LIST_LEGACY
@@ -40,7 +39,7 @@ local function configTable()
 				type = 'description',
 				name = L["SLE_DESC"],
 				order = 2,
-				image = function() return 'Interface\\AddOns\\ElvUI_SLE\\media\\textures\\SLE_Banner', 200, 100 end,
+				image = function() return 'Interface\\AddOns\\ElvUI_SLE\\media\\textures\\SLE_Banner', 200, 50 end,
 			},
 			Install = {
 				order = 4,

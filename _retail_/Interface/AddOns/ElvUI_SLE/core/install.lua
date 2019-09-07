@@ -92,6 +92,7 @@ function PI:DarthSetup()
 	--Actionbars
 	do
 		E.db["actionbar"]["backdropSpacingConverted"] = true
+		E.db["actionbar"]["transparent"] = true
 
 		E.db["actionbar"]["bar1"]["point"] = "TOPLEFT"
 		E.db["actionbar"]["bar1"]["buttonsPerRow"] = 6
@@ -159,6 +160,7 @@ function PI:DarthSetup()
 	end
 	--Bags
 	do
+		E.db["bags"]["transparent"] = true
 		E.db["bags"]["countFontSize"] = 12
 		E.db["bags"]["itemLevelFont"] = "PT Sans Narrow"
 		E.db["bags"]["itemLevelThreshold"] = 140
@@ -326,6 +328,8 @@ function PI:DarthSetup()
 		E.db["unitframe"]["units"]["player"]["portrait"]["enable"] = true
 		E.db["unitframe"]["units"]["player"]["portrait"]["camDistanceScale"] = 3
 		E.db["unitframe"]["units"]["player"]["portrait"]["overlay"] = true
+		E.db["unitframe"]["units"]["player"]["portrait"]["fullOverlay"] = true
+		E.db["unitframe"]["units"]["player"]["portrait"]["overlayAlpha"] = 1
 		E.db["unitframe"]["units"]["player"]["raidicon"]["attachTo"] = "TOPLEFT"
 		E.db["unitframe"]["units"]["player"]["raidicon"]["yOffset"] = 17
 		E.db["unitframe"]["units"]["player"]["raidicon"]["xOffset"] = -20
@@ -387,6 +391,8 @@ function PI:DarthSetup()
 		E.db["unitframe"]["units"]["target"]["portrait"]["enable"] = true
 		E.db["unitframe"]["units"]["target"]["portrait"]["camDistanceScale"] = 3
 		E.db["unitframe"]["units"]["target"]["portrait"]["overlay"] = true
+		E.db["unitframe"]["units"]["target"]["portrait"]["fullOverlay"] = true
+		E.db["unitframe"]["units"]["target"]["portrait"]["overlayAlpha"] = 1
 		E.db["unitframe"]["units"]["target"]["orientation"] = "LEFT"
 		E.db["unitframe"]["units"]["target"]["power"]["attachTextTo"] = "InfoPanel"
 		E.db["unitframe"]["units"]["target"]["power"]["powerPrediction"] = true
@@ -634,13 +640,6 @@ function PI:DarthSetup()
 		E.db["sle"]["datatexts"]["panel8"]["width"] = 470
 		E.db["sle"]["datatexts"]["panel8"]["transparent"] = true
 
-		E.db["sle"]["unitframes"]["unit"]["target"]["portraitAlpha"] = 1
-		E.db["sle"]["unitframes"]["unit"]["target"]["higherPortrait"] = true
-		E.db["sle"]["unitframes"]["unit"]["player"]["portraitAlpha"] = 1
-		E.db["sle"]["unitframes"]["unit"]["player"]["pvpIconText"]["enable"] = true
-		E.db["sle"]["unitframes"]["unit"]["player"]["pvpIconText"]["yoffset"] = -4
-		E.db["sle"]["unitframes"]["unit"]["player"]["higherPortrait"] = true
-
 		E.db["sle"]["nameplates"]["targetcount"]["enable"] = true
 		E.db["sle"]["nameplates"]["threat"]["enable"] = true
 
@@ -742,11 +741,9 @@ function PI:DarthSetup()
 
 	E.private["sle"]["module"]["screensaver"] = true
 	E.private["sle"]["pvpreadydialogreset"] = true
-	E.private["sle"]["bags"]["transparentSlots"] = true
 	E.private["sle"]["skins"]["objectiveTracker"]["scenarioBG"] = true
 	E.private["sle"]["skins"]["merchant"]["enable"] = true
 	E.private["sle"]["skins"]["merchant"]["style"] = "List"
-	E.private["sle"]["actionbars"]["transparentButtons"] = true
 	E.private["sle"]["equip"]["setoverlay"] = true
 	E.private["sle"]["minimap"]["mapicons"]["enable"] = true
 	E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_GUILD_ACHIEVEMENT"] = false
@@ -842,6 +839,7 @@ function PI:DarthOldSetup()
 	end
 	--Actionbars
 	do
+		E.db["actionbar"]["transparent"] = true
 		E.db["actionbar"]["bar1"]["point"] = "TOPLEFT"
 		E.db["actionbar"]["bar1"]["backdropSpacing"] = 0
 		E.db["actionbar"]["bar1"]["buttonsPerRow"] = 4
@@ -906,6 +904,7 @@ function PI:DarthOldSetup()
 	end
 	--Bags
 	do
+		E.db["bags"]["transparent"] = true
 		E.db["bags"]["itemLevelFont"] = "PT Sans Narrow"
 		E.db["bags"]["currencyFormat"] = "ICON"
 		E.db["bags"]["itemLevelFontSize"] = 11
@@ -1077,6 +1076,8 @@ function PI:DarthOldSetup()
 		E.db["unitframe"]["units"]["player"]["portrait"]["enable"] = true
 		E.db["unitframe"]["units"]["player"]["portrait"]["camDistanceScale"] = 3
 		E.db["unitframe"]["units"]["player"]["portrait"]["overlay"] = true
+		E.db["unitframe"]["units"]["player"]["portrait"]["fullOverlay"] = true
+		E.db["unitframe"]["units"]["player"]["portrait"]["overlayAlpha"] = 1
 		E.db["unitframe"]["units"]["player"]["castbar"]["height"] = 22
 		E.db["unitframe"]["units"]["player"]["castbar"]["width"] = 220
 		E.db["unitframe"]["units"]["player"]["customTexts"] = {}
@@ -1113,9 +1114,12 @@ function PI:DarthOldSetup()
 		E.db["unitframe"]["units"]["player"]["CombatIcon"]["size"] = 32
 		E.db["unitframe"]["units"]["player"]["CombatIcon"]["xOffset"] = 13
 		E.db["unitframe"]["units"]["player"]["CombatIcon"]["yOffset"] = -7
+
 		E.db["unitframe"]["units"]["target"]["portrait"]["enable"] = true
 		E.db["unitframe"]["units"]["target"]["portrait"]["camDistanceScale"] = 3
 		E.db["unitframe"]["units"]["target"]["portrait"]["overlay"] = true
+		E.db["unitframe"]["units"]["target"]["portrait"]["fullOverlay"] = true
+		E.db["unitframe"]["units"]["target"]["portrait"]["overlayAlpha"] = 1
 		E.db["unitframe"]["units"]["target"]["castbar"]["width"] = 200
 		E.db["unitframe"]["units"]["target"]["customTexts"] = {}
 		E.db["unitframe"]["units"]["target"]["customTexts"]["Absorb"] = {}
@@ -1286,11 +1290,7 @@ function PI:DarthOldSetup()
 		E.db["sle"]["unitframes"]["statusTextures"]["auraTexture"] = "Ohi Tribal4"
 		E.db["sle"]["unitframes"]["statusTextures"]["castTexture"] = "Ohi Tribal4"
 		E.db["sle"]["unitframes"]["statusTextures"]["classTexture"] = "ElvUI Gloss"
-		E.db["sle"]["unitframes"]["unit"]["player"]["portraitAlpha"] = 1
-		E.db["sle"]["unitframes"]["unit"]["player"]["higherPortrait"] = true
 		E.db["sle"]["unitframes"]["unit"]["player"]["pvpIconText"]["enable"] = true
-		E.db["sle"]["unitframes"]["unit"]["target"]["higherPortrait"] = true
-		E.db["sle"]["unitframes"]["unit"]["target"]["portraitAlpha"] = 1
 		E.db["sle"]["minimap"]["locPanel"]["enable"] = true
 		E.db["sle"]["minimap"]["locPanel"]["width"] = 310
 		E.db["sle"]["minimap"]["instance"]["enable"] = true
@@ -1408,7 +1408,6 @@ function PI:DarthOldSetup()
 	E.private["sle"]["module"]["screensaver"] = true
 	E.private["sle"]["uibuttons"]["style"] = "dropdown"
 	E.private["sle"]["uibuttons"]["transparent"] = "Transparent"
-	E.private["sle"]["bags"]["transparentSlots"] = true
 	E.private["sle"]["minimap"]["mapicons"]["enable"] = true
 	E.private["sle"]["unitframe"]["resizeHealthPrediction"] = true
 	E.private["sle"]["unitframe"]["statusbarTextures"]["cast"] = true
@@ -1420,7 +1419,6 @@ function PI:DarthOldSetup()
 	E.private["sle"]["skins"]["merchant"]["style"] = "List"
 	E.private["sle"]["skins"]["objectiveTracker"]["scenarioBG"] = true
 	E.private["sle"]["equip"]["setoverlay"] = true
-	E.private["sle"]["actionbars"]["transparentButtons"] = true
 
 	E.global["sle"]["advanced"]["optionsLimits"] = true
 	E.global["sle"]["advanced"]["cyrillics"]["commands"] = true
@@ -1666,6 +1664,8 @@ SLE.installTable = {
 	["Name"] = "|cff9482c9Shadow & Light|r",
 	["Title"] = L["|cff9482c9Shadow & Light|r Installation"],
 	["tutorialImage"] = [[Interface\AddOns\ElvUI_SLE\media\textures\SLE_Banner]],
+	["tutorialImageSize"] = {400, 100},
+	["tutorialImagePoint"] = {0, 20},
 	["Pages"] = {
 		[1] = function()
 			_G["PluginInstallFrame"].SubTitle:SetText(T.format(L["Welcome to |cff9482c9Shadow & Light|r version %s!"], SLE.version))

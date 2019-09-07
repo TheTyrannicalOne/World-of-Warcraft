@@ -1,5 +1,4 @@
-local SLE, T, E, _, V, P, G = unpack(select(2, ...))
-local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale or 'enUS')
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local ARTIFACT_POWER, AUCTION_CATEGORY_BATTLE_PETS = ARTIFACT_POWER, AUCTION_CATEGORY_BATTLE_PETS
 local B = E:GetModule("Bags")
 
@@ -15,14 +14,6 @@ local function configTable()
 				order = 1,
 				type = "header",
 				name = L["Bags"],
-			},
-			transparentSlots = {
-				order = 2,
-				type = "toggle",
-				name = L["Transparent Slots"],
-				desc = L["Apply transparent template on bag and bank slots."],
-				get = function(info) return E.private.sle.bags.transparentSlots end,
-				set = function(info, value)	E.private.sle.bags.transparentSlots = value; E:StaticPopup_Show('PRIVATE_RL') end,
 			},
 			petLevel = {
 				order = 21,

@@ -123,10 +123,6 @@ L["Out Of Range indication will use keybind text instead of the whole icon."] = 
 L["Checked Texture"] = "Текстура выделения"
 L["Highlight the button of the spell with areal effect until the area is selected."] = "Пдсвечивает кнопку с эффектом по области пока не будет выбрана точка применения."
 L["Checked Texture Color"] = "Цвет выделения"
-L["Transparent Backdrop"] = "Прозрачный фон"
-L["Sets actionbar's background to transparent template."] = "Делает фон панелей команд прозрачным."
-L["Transparent Buttons"] = "Прозрачные кнопки"
-L["Sets actionbar button's background to transparent template."] = "Делает кнопки панелей команд прозрачными"
 
 --Armory
 L["Average"] = "Средний"
@@ -261,8 +257,6 @@ L["Hide in Pet Battle"] = "Прятать в битвах питомцев"
 L["Show/Hide this frame during Pet Battles."] = "Показать/скрыть этот фрейм в битвах питомцев"
 
 --Bags
-L["Transparent Slots"] = "Прозрачные слоты"
-L["Apply transparent template on bag and bank slots."] = "Использовать прозрачный фон для слотов в сумках и банке."
 
 --Blizzard
 L["Move Blizzard frames"] = "Перемещение фреймов Blizzard"
@@ -843,6 +837,7 @@ L["RAID_EN"] = "ИК"
 L["RAID_ANTO"] = "АПТ"
 L["RAID_DAZALOR"] = "БзДА"
 L["RAID_STORMCRUS"] = "ГШ"
+L["RAID_ETERNALPALACE"] = "ВД"
 L["Raid Progression"] = "Рейдовый прогресс"
 L["Show raid experience of character in tooltip (requires holding shift)."] = "Отображает рейдовый опыт данного персонажа (требуется зажатый shift)"
 L["Name Style"] = "Стиль названия"
@@ -890,8 +885,6 @@ L["Power Texture"] = "Текстура ресурса"
 L["Castbar Texture"] = "Текстура полосы заклинаний"
 L["Red Icon"] = "Красная иконка"
 L["Aura Bars Texture"] = "Текстура полос аур"
-L["Higher Overlay Portrait"] = "Наложение портрета над рамкой"
-L["Overlay Portrait Alpha"] = "Прозрачность портрета при наложении"
 L["Makes frame portrait visible regardless of health level when overlay portrait is set."] = "Делает портрет на этой рамке видимым не зависимо от кол-ва оставшегося здоровья при наложении."
 L["Classbar Texture"] = "Текстура классовой полосы"
 L["Resize Health Prediction"] = "Подогнать входящее исцеление"

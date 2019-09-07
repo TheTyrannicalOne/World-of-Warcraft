@@ -42,54 +42,54 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["JournalUsed"] = true,
+	["LevelingQueue"] = {
+	},
 	["Filters"] = {
 		["Other"] = {
 		},
 		["Script"] = {
 		},
-		["Types"] = {
+		["Moveset"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Collected"] = {
-		},
-		["Strong"] = {
+		["Level"] = {
 		},
 		["Sources"] = {
+		},
+		["Similar"] = {
 		},
 		["Breed"] = {
 		},
 		["Rarity"] = {
 		},
-		["Similar"] = {
+		["Strong"] = {
 		},
-		["Level"] = {
+		["Collected"] = {
 		},
-		["Tough"] = {
+		["Favorite"] = {
 		},
-		["Moveset"] = {
+		["Types"] = {
 		},
 	},
-	["LevelingQueue"] = {
-	},
-	["CustomScaleValue"] = 100,
 	["QueueSanctuary"] = {
 	},
+	["SelectedTab"] = 1,
+	["DialogXPos"] = 1280.008178710938,
 	["CollapsedOptHeaders"] = {
 	},
-	["PreferredMode"] = 1,
+	["SpecialSlots"] = {
+	},
 	["ElvUIToastDefaulted"] = true,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
 	},
 	["JournalPanel"] = 1,
 	["CornerPos"] = "BOTTOMLEFT",
-	["SpecialSlots"] = {
-	},
-	["DialogXPos"] = 1280.008178710938,
+	["PreferredMode"] = 1,
+	["JournalUsed"] = true,
 	["YPos"] = 418.0044860839844,
-	["SelectedTab"] = 1,
+	["CustomScaleValue"] = 100,
 	["PetNotes"] = {
 	},
 }

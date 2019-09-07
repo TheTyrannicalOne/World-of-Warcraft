@@ -1,6 +1,9 @@
-## v4.8.6 Changes
+## v4.8.7 Changes
 
-* Made manual AH scan much more reliable on high-pop realms and added progress messages.
-* Fixed issue with TSM scanning too many pages after doing a manual AH scan on classic.
+* Fixed error caused by a corrupted item cache.
+* Fixed error when trying to create teh TSM macro on classic.
+* Fixed positioning of TSM UI button on default UIs in classic.
+* Fixed bug with cooking not showing properly in classic.
+* Changed gold graph units from 1kg to 1g on classic.
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

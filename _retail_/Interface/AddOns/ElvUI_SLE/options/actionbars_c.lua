@@ -1,5 +1,4 @@
-local SLE, T, E, _, V, P, G = unpack(select(2, ...))
-local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale or 'enUS')
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local A = SLE:GetModule("Actionbars")
 local AB = E:GetModule('ActionBars');
 local EVB = SLE:GetModule("EnhancedVehicleBar")
@@ -50,23 +49,6 @@ local function configTable()
 						AB:PositionAndSizeBar('bar'..i)
 					end
 				end,
-			},
-			transparentBackdrop = {
-				order = 4,
-				type = "toggle",
-				name = L["Transparent Backdrop"],
-				desc = L["Sets actionbar's background to transparent template."],
-				get = function(info) return E.private.sle.actionbars.transparentBackdrop end,
-				set = function(info, value) E.private.sle.actionbars.transparentBackdrop = value; E:StaticPopup_Show('PRIVATE_RL'); end,
-			},
-			transparentButtons = {
-				order = 5,
-				type = "toggle",
-				name = L["Transparent Buttons"],
-				desc = L["Sets actionbar button's background to transparent template."],
-				get = function(info) return E.private.sle.actionbars.transparentButtons end,
-				set = function(info, value) E.private.sle.actionbars.transparentButtons = value; E:StaticPopup_Show('PRIVATE_RL'); end,
-				disabled = function() return IsAddOnLoaded("Masque") end,
 			},
 			vehicle = {
 				type = "group",

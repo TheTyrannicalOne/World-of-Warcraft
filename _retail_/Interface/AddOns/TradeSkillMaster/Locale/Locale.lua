@@ -6197,8 +6197,7 @@ TSM.L["You've been phased which has caused the AH to stop working due to a bug o
 TSM.L["You've been undercut."] = "You've been undercut."
 	elseif locale == "frFR" then
 TSM.L = TSM.L or {}
---[[Translation missing --]]
-TSM.L["%d |4Group:Groups; Selected (%d |4Item:Items;)"] = "%d |4Group:Groups; Selected (%d |4Item:Items;)"
+TSM.L["%d |4Group:Groups; Selected (%d |4Item:Items;)"] = "%d |4Group:Groups; Sélectionné (%d |4Item:Items;)"
 TSM.L["%d auctions"] = "%d enchères"
 TSM.L["%d Groups"] = "%d Groupes"
 TSM.L["%d Items"] = "%d Objets"
@@ -6268,18 +6267,13 @@ TSM.L["|cffffd839Left-Click|r to ignore an item this session."] = "|cffffd839Lef
 TSM.L["|cffffd839Shift-Left-Click|r to ignore it permanently."] = "|cffffd839Shift-Left-Click|r to ignore it permanently."
 TSM.L["1 Group"] = "1 Groupe"
 TSM.L["1 Item"] = "1 Objet"
---[[Translation missing --]]
-TSM.L["12 hr"] = "12 hr"
---[[Translation missing --]]
-TSM.L["24 hr"] = "24 hr"
---[[Translation missing --]]
-TSM.L["48 hr"] = "48 hr"
+TSM.L["12 hr"] = "12 h"
+TSM.L["24 hr"] = "24 h"
+TSM.L["48 hr"] = "48 h"
 TSM.L["A custom price of %s for %s evaluates to %s."] = "Un prix personnalisé de %s pour %s évalué à %s."
 TSM.L["A maximum of 1 convert() function is allowed."] = "Un maximum d'une fonction convert() est autorisé."
---[[Translation missing --]]
-TSM.L["A profile with that name already exists on the target account. Rename it first and try again."] = "A profile with that name already exists on the target account. Rename it first and try again."
---[[Translation missing --]]
-TSM.L["A profile with this name already exists."] = "A profile with this name already exists."
+TSM.L["A profile with that name already exists on the target account. Rename it first and try again."] = "Un profil portant ce nom existe déjà sur le compte cible. Renommez-le d'abord et réessayez."
+TSM.L["A profile with this name already exists."] = "Un profil portant ce nom existe déjà."
 TSM.L["A scan is already in progress. Please stop that scan before starting another one."] = "Un scan est en cours actuellement. Arrêtez le scan avant d'en démarrer un nouveau."
 --[[Translation missing --]]
 TSM.L["Above max expires."] = "Above max expires."
@@ -6304,21 +6298,15 @@ TSM.L["Accounting"] = "Accounting"
 TSM.L["Accounting Tooltips"] = "Accounting Tooltips"
 --[[Translation missing --]]
 TSM.L["Activity Type"] = "Activity Type"
---[[Translation missing --]]
-TSM.L["ADD %d ITEMS"] = "ADD %d ITEMS"
---[[Translation missing --]]
-TSM.L["Add / Remove Items"] = "Add / Remove Items"
---[[Translation missing --]]
-TSM.L["ADD NEW CUSTOM PRICE SOURCE"] = "ADD NEW CUSTOM PRICE SOURCE"
+TSM.L["ADD %d ITEMS"] = "AJOUTER %d ARTICLES"
+TSM.L["Add / Remove Items"] = "Ajouter / Supprimer des articles"
+TSM.L["ADD NEW CUSTOM PRICE SOURCE"] = "AJOUTER UNE NOUVELLE SOURCE DE PRIX PERSONNALISÉS"
 TSM.L["ADD OPERATION"] = "AJOUTER L'OPÉRATION"
---[[Translation missing --]]
-TSM.L["Add Player"] = "Add Player"
---[[Translation missing --]]
-TSM.L["Add Subject / Description"] = "Add Subject / Description"
+TSM.L["Add Player"] = "Ajouter un joueur"
+TSM.L["Add Subject / Description"] = "Ajouter un sujet / Description"
 --[[Translation missing --]]
 TSM.L["Add Subject / Description (Optional)"] = "Add Subject / Description (Optional)"
---[[Translation missing --]]
-TSM.L["ADD TO MAIL"] = "ADD TO MAIL"
+TSM.L["ADD TO MAIL"] = "AJOUTER AU MAIL"
 --[[Translation missing --]]
 TSM.L["Added '%s' profile which was received from %s."] = "Added '%s' profile which was received from %s."
 --[[Translation missing --]]

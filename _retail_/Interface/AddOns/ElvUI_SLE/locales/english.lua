@@ -33,7 +33,7 @@ L["This option is bound to character and requires a UI reload to take effect."] 
 L["Shadow & Light Imports"] = true
 L["You can now choose if you want to use one of the authors' set of options. This will change the positioning of some elements as well of other various options."] = true
 L["SLE_Install_Text_AUTHOR"] = [=[This step is optional and only to be used if you are wanting to use one of our configurations. In some cases settings may differ depending on layout options you chose in ElvUI installation.
-Not selecting anything will cause you to skip next step of the installation. 
+Not selecting anything will cause you to skip next step of the installation.
 
 A |cff1784d1"%s"|r role was chosen.
 
@@ -123,10 +123,6 @@ L["Out Of Range indication will use keybind text instead of the whole icon."] = 
 L["Checked Texture"] = true
 L["Highlight the button of the spell with areal effect until the area is selected."] = true
 L["Checked Texture Color"] = true
-L["Transparent Backdrop"] = true
-L["Sets actionbar's background to transparent template."] = true
-L["Transparent Buttons"] = true
-L["Sets actionbar button's background to transparent template."] = true
 
 --Armory
 L["Average"] = true
@@ -272,8 +268,6 @@ L["Hide in Pet Battle"] = true
 L["Show/Hide this frame during Pet Battles."] = true
 
 --Bags
-L["Transparent Slots"] = true
-L["Apply transparent template on bag and bank slots."] = true
 
 --Blizzard
 L["Move Blizzard frames"] = true
@@ -846,6 +840,7 @@ L["RAID_EN"] = "EN"
 L["RAID_ANTO"] = "ATBT"
 L["RAID_DAZALOR"] = "BfDA"
 L["RAID_STORMCRUS"] = "SC"
+L["RAID_ETERNALPALACE"] = "EP"
 L["Raid Progression"] = true
 L["Show raid experience of character in tooltip (requires holding shift)."] = true
 L["Name Style"] = true
@@ -893,8 +888,6 @@ L["Power Texture"] = true
 L["Castbar Texture"] = true
 L["Red Icon"] = true
 L["Aura Bars Texture"] = true
-L["Higher Overlay Portrait"] = true
-L["Overlay Portrait Alpha"] = true
 L["Makes frame portrait visible regardless of health level when overlay portrait is set."] = true
 L["Classbar Texture"] = true
 L["Resize Health Prediction"] = true
@@ -915,7 +908,7 @@ L["Set the offset from the bottom border of the screen."] = true
 L["About/Help"] = true
 L["About"] = true
 L["SLE_DESC"] = [=[|cff9482c9Shadow & Light|r is an extension of ElvUI. It adds:
-- a lot of new features 
+- a lot of new features
 - more customization options for existing ones
 
 |cff3cbf27Note:|r It is compatible with most of addons and ElvUI plugins available. But some functions may be unavailable to avoid possible conflicts.]=]

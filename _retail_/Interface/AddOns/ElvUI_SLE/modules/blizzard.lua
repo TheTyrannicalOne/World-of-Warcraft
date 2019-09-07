@@ -119,27 +119,28 @@ B.ExlusiveFrames = {
 	["HelpFrame"] = { "GameMenuFrame",},
 }
 
---These should not be added to "close on escape" list cause this breaks a lot of shit
-B.NoSpecialFrames = {
-	["StaticPopup1"] = true,
-	["StaticPopup2"] = true,
-	["StaticPopup3"] = true,
-	["StaticPopup4"] = true,
-}
-
+--Don't even ask
 B.FramesAreaAlter = {
 	["GarrisonMissionFrame"] = "left",
 	["OrderHallMissionFrame"] = "left",
 	["BFAMissionFrame"] = "left",
 }
-
 B.SpecialDefaults = {
 	["GarrisonMissionFrame"] = { "CENTER", _G.UIParent, "CENTER", 0, 0 },
 	["OrderHallMissionFrame"] = { "CENTER", _G.UIParent, "CENTER", 0, 0 },
 	["BFAMissionFrame"] = { "CENTER", _G.UIParent, "CENTER", 0, 0 },
 }
 
+B.OriginalDefaults = {} --Don't even ask 2: The Reckoning
+
 local function OnDragStart(self)
+	if _G.UnitAffectingCombat("player") then return end --Not allowed to move in combat, cause reasons.
+	local Name = self:GetName()
+	if not E.private.sle.module.blizzmove.remember and not B.OriginalDefaults[Name] then --Don't even ask 3: Return of the bullshit
+		local a, _, c, d, e = self:GetPoint()
+		local b = self:GetParent():GetName() or _G.UIParent
+		B.OriginalDefaults[Name] = {a, b, c, d, e}
+	end
 	self.IsMoving = true
 	self:StartMoving()
 end
@@ -148,24 +149,18 @@ end
 local function OnDragStop(self)
 	self:StopMovingOrSizing()
 	local Name = self:GetName()
-	--Saving positions only if option is enabled and frame is not temporary movable
-	if E.private.sle.module.blizzmove.remember and not B.TempOnly[Name] then
-		local a, b, c, d, e = self:GetPoint()
-		if self:GetParent() then 
-			b = self:GetParent():GetName() or UIParent
-			if not _G[b] then b = UIParent end
-		else
-			b = UIParent
-		end
-		--These 2 frames should always be in the same place. So aving coordinates for then at the same time
-		if Name == "QuestFrame" or Name == "GossipFrame" then
+	if E.private.sle.module.blizzmove.remember and not B.TempOnly[Name] then --Saving positions only if option is enabled and frame is not temporary movable
+		local a, _, c, d, e = self:GetPoint()
+		local b = self:GetParent():GetName() or _G.UIParent
+		if Name == "QuestFrame" or Name == "GossipFrame" then --These 2 frames should always be in the same place. So having coordinates for them at the same time
 			E.private.sle.module.blizzmove.points["GossipFrame"] = {a, b, c, d, e}
 			E.private.sle.module.blizzmove.points["QuestFrame"] = {a, b, c, d, e}
 		else
 			E.private.sle.module.blizzmove.points[Name] = {a, b, c, d, e}
 		end
 		self:SetUserPlaced(true)
-	else
+	elseif self:IsUserPlaced() then --Unfuck the game
+		self:ClearAllPoints()
 		self:SetUserPlaced(false)
 	end
 	self.IsMoving = false
@@ -175,13 +170,15 @@ end
 local function LoadPosition(self)
 	if self.IsMoving == true then return end
 	local Name = self:GetName()
-	--Some frames don't have set positions when show script runs (e.g. CharacterFrame). For those set default position and save that.
-	if not self:GetPoint() then
+	if not self:GetPoint() then --Some frames don't have set positions when show script runs (e.g. CharacterFrame). For those set default position and save that.
 		if B.SpecialDefaults[Name] then
 			local a,b,c,d,e = T.unpack(B.SpecialDefaults[Name])
 			self:SetPoint(a,b,c,d,e, true)
+		elseif B.OriginalDefaults[Name] then
+			local a,b,c,d,e = T.unpack(B.OriginalDefaults[Name])
+			self:SetPoint(a,b,c,d,e, true)
 		else
-			self:SetPoint('TOPLEFT', 'UIParent', 'TOPLEFT', 16, -116, true)
+			self:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 16, -116, true)
 		end
 		OnDragStop(self)
 	end
@@ -192,10 +189,7 @@ local function LoadPosition(self)
 		self:SetPoint(a,b,c,d,e, true)
 	end
 
-	--If this frame has others that should not be shown at the same time, hide those
-	if B.ExlusiveFrames[Name] then
-		for _, name in T.pairs(B.ExlusiveFrames[Name]) do _G[name]:Hide() end
-	end
+	if B.ExlusiveFrames[Name] then for _, name in T.pairs(B.ExlusiveFrames[Name]) do _G[name]:Hide() end end --If this frame has others that should not be shown at the same time, hide those
 end
 
 --Hooking this to movable frames' SetPoint.
@@ -217,17 +211,12 @@ function B:MakeMovable(Name)
 	frame:SetMovable(true)
 	frame:SetClampedToScreen(true)
 	frame:RegisterForDrag("LeftButton")
+
 	frame:HookScript("OnShow", LoadPosition)
 	frame:HookScript("OnDragStart", OnDragStart)
 	frame:HookScript("OnDragStop", OnDragStop)
 	frame:HookScript("OnHide", OnDragStop)
 	hooksecurefunc(frame, "SetPoint", B.RewritePoint)
-
-	--Removing stuff from auto positioning
-	frame.ignoreFramePositionManager = true --Doesn't do much, but just in case
-	if B.FramesAreaAlter[Name] then
-		if UIPanelWindows[Name] and UIPanelWindows[Name].area then UIPanelWindows[Name].area = B.FramesAreaAlter[Name] end
-	end
 end
 
 function B:Addons(event, addon)
@@ -269,8 +258,7 @@ function B:Initialize()
 	PVPReadyDialog:Hide()
 
 	if E.private.sle.module.blizzmove.enable then
-		--Remove these from saved variables so the script will not attempt to mess with them
-		for Name, _ in T.pairs(B.TempOnly) do
+		for Name, _ in T.pairs(B.TempOnly) do --Remove these from saved variables so the script will not attempt to mess with them, cause they are not ment to be moved permanently
 			if E.private.sle.module.blizzmove.points[Name] then E.private.sle.module.blizzmove.points[Name] = nil end
 		end
 		for i = 1, #B.Frames do
@@ -288,6 +276,14 @@ function B:Initialize()
 			end
 		end
 	end
+
+	--Removing stuff from auto positioning
+	self:Hook('UIParent_ManageFramePosition', function()
+		for i = 1, #B.Frames do
+			local frame = _G[B.Frames[i]]
+			if frame and frame:IsShown() then LoadPosition(frame) end
+		end
+	end, true)
 
 	B:ErrorFrameSize()
 	function B:ForUpdateAll()

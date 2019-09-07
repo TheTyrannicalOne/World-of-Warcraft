@@ -384,6 +384,7 @@ P["sle"] = {
 			["uldir"] = false,
 			["daz"] = false,
 			["sc"] = false,
+			["ep"] = false,
 		},
 	},
 	--Loot
@@ -747,6 +748,7 @@ P["sle"] = {
 				["uldir"] = true,
 				["daz"] = true,
 				["sc"] = true,
+				["ep"] = true,
 			},
 		},
 	},
@@ -803,12 +805,8 @@ P["sle"] = {
 						["threshold"] = 4,
 					},
 				},
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 			},
 			["pet"] = {
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 				["auras"] = {
 					["buffs"] = {
 						["threshold"] = 4,
@@ -819,8 +817,6 @@ P["sle"] = {
 				},
 			},
 			["pettarget"] = {
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 				["auras"] = {
 					["buffs"] = {
 						["threshold"] = 4,
@@ -831,8 +827,6 @@ P["sle"] = {
 				},
 			},
 			["target"] = {
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 				["pvpIconText"] = {
 					["level"] = true,
 				},
@@ -846,8 +840,6 @@ P["sle"] = {
 				},
 			},
 			["targettarget"] = {
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 				["auras"] = {
 					["buffs"] = {
 						["threshold"] = 4,
@@ -858,8 +850,6 @@ P["sle"] = {
 				},
 			},
 			["targettargettarget"] = {
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 				["auras"] = {
 					["buffs"] = {
 						["threshold"] = 4,
@@ -870,8 +860,6 @@ P["sle"] = {
 				},
 			},
 			["focus"] = {
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 				["auras"] = {
 					["buffs"] = {
 						["threshold"] = 4,
@@ -882,8 +870,6 @@ P["sle"] = {
 				},
 			},
 			["focustarget"] = {
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 				["auras"] = {
 					["buffs"] = {
 						["threshold"] = 4,
@@ -922,8 +908,6 @@ P["sle"] = {
 						["threshold"] = 4,
 					},
 				},
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 			},
 			["raid"] = {
 				["offline"] = {
@@ -954,8 +938,6 @@ P["sle"] = {
 						["threshold"] = 4,
 					},
 				},
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 			},
 			["raid40"] = {
 				["offline"] = {
@@ -986,8 +968,6 @@ P["sle"] = {
 					["xoffset"] = 0,
 					["yoffset"] = 0,
 				},
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 			},
 			["boss"] = {
 				["auras"] = {
@@ -998,8 +978,6 @@ P["sle"] = {
 						["threshold"] = 4,
 					},
 				},
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 			},
 			["arena"] = {
 				["auras"] = {
@@ -1010,8 +988,6 @@ P["sle"] = {
 						["threshold"] = 4,
 					},
 				},
-				["higherPortrait"] = false,
-				["portraitAlpha"] = 0.35,
 			},
 		},
 		["roleicons"] = "ElvUI",

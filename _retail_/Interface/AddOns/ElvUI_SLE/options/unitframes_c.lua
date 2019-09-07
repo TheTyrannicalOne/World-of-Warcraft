@@ -1,5 +1,4 @@
-local SLE, T, E, _, V, P, G = unpack(select(2, ...))
-local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale or 'enUS')
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local UF = E:GetModule('UnitFrames');
 local SUF = SLE:GetModule("UnitFrames")
 local texPath = [[Interface\AddOns\ElvUI_SLE\media\textures\role\]]
@@ -95,31 +94,6 @@ local function configTable()
 		return config
 	end
 
-	local function CreatePortraitConfig(unitID)
-		local config = {
-			order = 1,
-			type = 'group',
-			name = L["Portrait"],
-			get = function(info) return E.db.sle.unitframes.unit[unitID][ info[#info] ] end,
-			set = function(info, value) E.db.sle.unitframes.unit[unitID][ info[#info] ] = value; UF:CreateAndUpdateUF(unitID); end,
-			args = {
-				-- higherPortrait = {
-					-- order = 1, type = "toggle",
-					-- name = L["Higher Overlay Portrait"],
-					-- desc = L["Makes frame portrait visible regardless of health level when overlay portrait is set."],
-				-- },
-				portraitAlpha = {
-					order = 2, type = 'range',
-					name = L["Overlay Portrait Alpha"],
-					isPercent = true,
-					 min = 0, max = 1, step = 0.01,
-				},
-			},
-		}
-
-		return config
-	end
-
 	local function CreateAurasConfig(unitID)
 		local config = {
 			order = 6,
@@ -205,7 +179,6 @@ local function configTable()
 				type = "group",
 				name = L["Player Frame"],
 				args = {
-					portrait = CreatePortraitConfig("player"),
 					pvpIconText = {
 						order = 5,
 						type = "group",
@@ -228,7 +201,6 @@ local function configTable()
 				type = "group",
 				name = L["Pet Frame"],
 				args = {
-					portrait = CreatePortraitConfig("pet"),
 					auras = CreateAurasConfig("pet"),
 				},
 			},
@@ -237,7 +209,6 @@ local function configTable()
 				type = "group",
 				name = L["PetTarget Frame"],
 				args = {
-					portrait = CreatePortraitConfig("pettarget"),
 					auras = CreateAurasConfig("pettarget"),
 				},
 			},
@@ -246,7 +217,6 @@ local function configTable()
 				type = "group",
 				name = L["Target Frame"],
 				args = {
-					portrait = CreatePortraitConfig("target"),
 					pvpIconText = {
 						order = 5,
 						type = "group",
@@ -266,7 +236,6 @@ local function configTable()
 				type = "group",
 				name = L["TargetTarget Frame"],
 				args = {
-					portrait = CreatePortraitConfig("targettarget"),
 					auras = CreateAurasConfig("targettarget"),
 				},
 			},
@@ -275,7 +244,6 @@ local function configTable()
 				type = "group",
 				name = L["TargetTargetTarget Frame"],
 				args = {
-					portrait = CreatePortraitConfig("targettargettarget"),
 					auras = CreateAurasConfig("targettargettarget"),
 				},
 			},
@@ -284,7 +252,6 @@ local function configTable()
 				type = "group",
 				name = L["Focus Frame"],
 				args = {
-					portrait = CreatePortraitConfig("focus"),
 					auras = CreateAurasConfig("focus"),
 				},
 			},
@@ -293,7 +260,6 @@ local function configTable()
 				type = "group",
 				name = L["FocusTarget Frame"],
 				args = {
-					portrait = CreatePortraitConfig("focustarget"),
 					auras = CreateAurasConfig("focustarget"),
 				},
 			},
@@ -310,7 +276,6 @@ local function configTable()
 							UF:HeaderConfig(ElvUF_Party, ElvUF_Party.forceShow ~= true or nil)
 						end,
 					},
-					portrait = CreatePortraitConfig("party"),
 					offline = CreateOfflineConfig("party"),
 					dead = CreateDeadConfig("party"),
 					auras = CreateAurasConfig("party"),
@@ -329,7 +294,6 @@ local function configTable()
 							UF:HeaderConfig(_G['ElvUF_Raid'], _G['ElvUF_Raid'].forceShow ~= true or nil)
 						end,
 					},
-					portrait = CreatePortraitConfig("raid"),
 					offline = CreateOfflineConfig("raid"),
 					dead = CreateDeadConfig("raid"),
 					auras = CreateAurasConfig("raid"),
@@ -348,7 +312,6 @@ local function configTable()
 							UF:HeaderConfig(_G['ElvUF_Raid40'], _G['ElvUF_Raid40'].forceShow ~= true or nil)
 						end,
 					},
-					portrait = CreatePortraitConfig("raid40"),
 					offline = CreateOfflineConfig("raid40"),
 					dead = CreateDeadConfig("raid40"),
 					auras = CreateAurasConfig("raid40"),
@@ -359,7 +322,6 @@ local function configTable()
 				type = "group",
 				name = L["Boss Frames"],
 				args = {
-					portrait = CreatePortraitConfig("boss"),
 					auras = CreateAurasConfig("boss"),
 				},
 			},
@@ -368,7 +330,6 @@ local function configTable()
 				type = "group",
 				name = L["Arena Frames"],
 				args = {
-					portrait = CreatePortraitConfig("arena"),
 					auras = CreateAurasConfig("arena"),
 				},
 			},

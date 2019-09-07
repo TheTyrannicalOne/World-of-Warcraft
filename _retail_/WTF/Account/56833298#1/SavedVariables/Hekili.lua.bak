@@ -35,10 +35,10 @@ HekiliDB = {
 							["Enabled"] = false,
 							["Name"] = "Heroism",
 							["Script"] = "toggle.cooldowns&(target.health.pct<25||time>0.500)",
-							["Indicator"] = "none",
-							["Ability"] = "bloodlust",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "bloodlust",
 							["ModName"] = "",
 						}, -- [1]
 						{
@@ -56,60 +56,60 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Totem Mastery",
 							["Script"] = "buff.resonance_totem.remains<2",
-							["Indicator"] = "none",
-							["Ability"] = "totem_mastery",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "totem_mastery",
 							["ModName"] = "",
 						}, -- [3]
 						{
 							["Enabled"] = true,
 							["Name"] = "Fire Elemental",
 							["Script"] = "toggle.cooldowns",
-							["Indicator"] = "none",
-							["Ability"] = "fire_elemental",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "fire_elemental",
 							["ModName"] = "",
 						}, -- [4]
 						{
 							["Enabled"] = true,
 							["Name"] = "Storm Elemental",
 							["Script"] = "toggle.cooldowns",
-							["Indicator"] = "none",
-							["Ability"] = "storm_elemental",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "storm_elemental",
 							["ModName"] = "",
 						}, -- [5]
 						{
 							["Enabled"] = true,
 							["Name"] = "Elemental Mastery",
 							["Script"] = "toggle.cooldowns",
-							["Indicator"] = "none",
-							["Ability"] = "elemental_mastery",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "elemental_mastery",
 							["ModName"] = "",
 						}, -- [6]
 						{
 							["Enabled"] = true,
 							["Name"] = "Blood Fury",
 							["Script"] = "toggle.cooldowns&(!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50)",
-							["Indicator"] = "none",
-							["Ability"] = "blood_fury",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "blood_fury",
 							["ModName"] = "",
 						}, -- [7]
 						{
 							["Enabled"] = true,
 							["Name"] = "Berserking",
 							["Script"] = "toggle.cooldowns&(!talent.ascendance.enabled||buff.ascendance.up)",
-							["Indicator"] = "none",
-							["Ability"] = "berserking",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "berserking",
 							["ModName"] = "",
 						}, -- [8]
 						{
@@ -213,40 +213,40 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Flame Shock",
 							["Script"] = "!ticking",
-							["Indicator"] = "none",
-							["Ability"] = "flame_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
 							["ModName"] = "",
 						}, -- [1]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earthquake",
 							["Script"] = "buff.echoes_of_the_great_sundering.up&maelstrom.current>=86",
-							["Indicator"] = "none",
-							["Ability"] = "earthquake",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
 							["ModName"] = "",
 						}, -- [2]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earth Shock",
 							["Script"] = "maelstrom.current>=92",
-							["Indicator"] = "none",
-							["Ability"] = "earth_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
 							["ModName"] = "",
 						}, -- [3]
 						{
 							["Enabled"] = true,
 							["Name"] = "Stormkeeper",
 							["Script"] = "active_enemies>3",
-							["Indicator"] = "none",
-							["Ability"] = "stormkeeper",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "stormkeeper",
 							["ModName"] = "",
 						}, -- [4]
 						{
@@ -262,110 +262,110 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Liquid Magma Totem",
 							["Script"] = "active_enemies>3",
-							["Indicator"] = "none",
-							["Ability"] = "liquid_magma_totem",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "liquid_magma_totem",
 							["ModName"] = "",
 						}, -- [6]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lava Burst",
 							["Script"] = "dot.flame_shock.remains>cast_time&cooldown_react",
-							["Indicator"] = "none",
-							["Ability"] = "lava_burst",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_burst",
 							["ModName"] = "",
 						}, -- [7]
 						{
 							["Enabled"] = true,
 							["Name"] = "Flame Shock (1)",
 							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&refreshable",
-							["Indicator"] = "none",
-							["Ability"] = "flame_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
 							["ModName"] = "",
 						}, -- [8]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earth Shock (1)",
 							["Script"] = "maelstrom.current>=86",
-							["Indicator"] = "none",
-							["Ability"] = "earth_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
 							["ModName"] = "",
 						}, -- [9]
 						{
 							["Enabled"] = true,
 							["Name"] = "Totem Mastery",
 							["Script"] = "buff.resonance_totem.remains<10||(buff.resonance_totem.remains<(buff.ascendance.duration+cooldown.ascendance.remains)&cooldown.ascendance.remains<15)",
-							["Indicator"] = "none",
-							["Ability"] = "totem_mastery",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "totem_mastery",
 							["ModName"] = "",
 						}, -- [10]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earthquake (1)",
 							["Script"] = "buff.echoes_of_the_great_sundering.up",
-							["Indicator"] = "none",
-							["Ability"] = "earthquake",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
 							["ModName"] = "",
 						}, -- [11]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lightning Bolt",
 							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3&debuff.lightning_rod.down",
-							["Indicator"] = "none",
-							["Ability"] = "lightning_bolt",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
 							["ModName"] = "",
 						}, -- [12]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lightning Bolt (1)",
 							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3",
-							["Indicator"] = "none",
-							["Ability"] = "lightning_bolt",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
 							["ModName"] = "",
 						}, -- [13]
 						{
 							["Enabled"] = true,
 							["Name"] = "Chain Lightning",
 							["Script"] = "active_enemies>1&active_enemies>1&debuff.lightning_rod.down",
-							["Indicator"] = "none",
-							["Ability"] = "chain_lightning",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "chain_lightning",
 							["ModName"] = "",
 						}, -- [14]
 						{
 							["Enabled"] = true,
 							["Name"] = "Chain Lightning (1)",
 							["Script"] = "active_enemies>1&active_enemies>1",
-							["Indicator"] = "none",
-							["Ability"] = "chain_lightning",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "chain_lightning",
 							["ModName"] = "",
 						}, -- [15]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lightning Bolt (2)",
 							["Script"] = "debuff.lightning_rod.down",
-							["Indicator"] = "none",
-							["Ability"] = "lightning_bolt",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
 							["ModName"] = "",
 						}, -- [16]
 						{
@@ -427,30 +427,30 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Flame Shock",
 							["Script"] = "!ticking",
-							["Indicator"] = "none",
-							["Ability"] = "flame_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
 							["ModName"] = "",
 						}, -- [1]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earthquake",
 							["Script"] = "buff.echoes_of_the_great_sundering.up&maelstrom.current>=86",
-							["Indicator"] = "none",
-							["Ability"] = "earthquake",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
 							["ModName"] = "",
 						}, -- [2]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earth Shock",
 							["Script"] = "maelstrom.current>=92",
-							["Indicator"] = "none",
-							["Ability"] = "earth_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
 							["ModName"] = "",
 						}, -- [3]
 						{
@@ -475,60 +475,60 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Icefury",
 							["Script"] = "maelstrom.current<=76",
-							["Indicator"] = "none",
-							["Ability"] = "icefury",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "icefury",
 							["ModName"] = "",
 						}, -- [6]
 						{
 							["Enabled"] = true,
 							["Name"] = "Liquid Magma Totem",
 							["Script"] = "active_enemies>3",
-							["Indicator"] = "none",
-							["Ability"] = "liquid_magma_totem",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "liquid_magma_totem",
 							["ModName"] = "",
 						}, -- [7]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lightning Bolt",
 							["Script"] = "buff.power_of_the_maelstrom.up&buff.stormkeeper.up&active_enemies<3",
-							["Indicator"] = "none",
-							["Ability"] = "lightning_bolt",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
 							["ModName"] = "",
 						}, -- [8]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lava Burst",
 							["Script"] = "dot.flame_shock.remains>cast_time&cooldown_react",
-							["Indicator"] = "none",
-							["Ability"] = "lava_burst",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_burst",
 							["ModName"] = "",
 						}, -- [9]
 						{
 							["Enabled"] = true,
 							["Name"] = "Frost Shock",
 							["Script"] = "buff.icefury.up&((maelstrom.current>=20)||buff.icefury.remains<(1.5*spell_haste*buff.icefury.stack+1))",
-							["Indicator"] = "none",
-							["Ability"] = "frost_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "frost_shock",
 							["ModName"] = "",
 						}, -- [10]
 						{
 							["Enabled"] = true,
 							["Name"] = "Flame Shock (1)",
 							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&refreshable",
-							["Indicator"] = "none",
-							["Ability"] = "flame_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
 							["ModName"] = "",
 						}, -- [11]
 						{
@@ -547,50 +547,50 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Earth Shock (1)",
 							["Script"] = "maelstrom.current>=86",
-							["Indicator"] = "none",
-							["Ability"] = "earth_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
 							["ModName"] = "",
 						}, -- [13]
 						{
 							["Enabled"] = true,
 							["Name"] = "Totem Mastery",
 							["Script"] = "buff.resonance_totem.remains<10",
-							["Indicator"] = "none",
-							["Ability"] = "totem_mastery",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "totem_mastery",
 							["ModName"] = "",
 						}, -- [14]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earthquake (1)",
 							["Script"] = "buff.echoes_of_the_great_sundering.up",
-							["Indicator"] = "none",
-							["Ability"] = "earthquake",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
 							["ModName"] = "",
 						}, -- [15]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lightning Bolt (1)",
 							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3",
-							["Indicator"] = "none",
-							["Ability"] = "lightning_bolt",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
 							["ModName"] = "",
 						}, -- [16]
 						{
 							["Enabled"] = true,
 							["Name"] = "Chain Lightning",
 							["Script"] = "active_enemies>1&active_enemies>1",
-							["Indicator"] = "none",
-							["Ability"] = "chain_lightning",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "chain_lightning",
 							["ModName"] = "",
 						}, -- [17]
 						{
@@ -659,10 +659,10 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Ascendance",
 							["Script"] = "toggle.cooldowns",
-							["Indicator"] = "none",
-							["Ability"] = "ascendance",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "ascendance",
 							["ModName"] = "",
 						}, -- [2]
 						{
@@ -678,10 +678,10 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Flame Shock",
 							["Script"] = "active_enemies<4&maelstrom.current>=20&!talent.lightning_rod.enabled",
-							["Indicator"] = "none",
-							["Ability"] = "flame_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
 							["ModName"] = "",
 						}, -- [4]
 						{
@@ -697,20 +697,20 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Lava Burst",
 							["Script"] = "dot.flame_shock.remains>cast_time&buff.lava_surge.up&!talent.lightning_rod.enabled&active_enemies<4",
-							["Indicator"] = "none",
-							["Ability"] = "lava_burst",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_burst",
 							["ModName"] = "",
 						}, -- [6]
 						{
 							["Enabled"] = true,
 							["Name"] = "Elemental Blast",
 							["Script"] = "!talent.lightning_rod.enabled&active_enemies<5",
-							["Indicator"] = "none",
-							["Ability"] = "elemental_blast",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "elemental_blast",
 							["ModName"] = "",
 						}, -- [7]
 						{
@@ -768,50 +768,50 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Ascendance",
 							["Script"] = "toggle.cooldowns&(dot.flame_shock.remains>buff.ascendance.duration&(time>=60||buff.bloodlust.up)&cooldown.lava_burst.remains>0&!buff.stormkeeper.up)",
-							["Indicator"] = "none",
-							["Ability"] = "ascendance",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "ascendance",
 							["ModName"] = "",
 						}, -- [1]
 						{
 							["Enabled"] = true,
 							["Name"] = "Flame Shock",
 							["Script"] = "!ticking",
-							["Indicator"] = "none",
-							["Ability"] = "flame_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
 							["ModName"] = "",
 						}, -- [2]
 						{
 							["Enabled"] = true,
 							["Name"] = "Flame Shock (1)",
 							["Script"] = "maelstrom.current>=20&remains<=buff.ascendance.duration&cooldown.ascendance.remains+buff.ascendance.duration<=duration",
-							["Indicator"] = "none",
-							["Ability"] = "flame_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
 							["ModName"] = "",
 						}, -- [3]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earthquake",
 							["Script"] = "buff.echoes_of_the_great_sundering.up&!buff.ascendance.up&maelstrom.current>=86",
-							["Indicator"] = "none",
-							["Ability"] = "earthquake",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
 							["ModName"] = "",
 						}, -- [4]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earth Shock",
 							["Script"] = "maelstrom.current>=92&!buff.ascendance.up",
-							["Indicator"] = "none",
-							["Ability"] = "earth_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
 							["ModName"] = "",
 						}, -- [5]
 						{
@@ -836,100 +836,100 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Liquid Magma Totem",
 							["Script"] = "active_enemies>3",
-							["Indicator"] = "none",
-							["Ability"] = "liquid_magma_totem",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "liquid_magma_totem",
 							["ModName"] = "",
 						}, -- [8]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lightning Bolt",
 							["Script"] = "buff.power_of_the_maelstrom.up&buff.stormkeeper.up&active_enemies<3",
-							["Indicator"] = "none",
-							["Ability"] = "lightning_bolt",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
 							["ModName"] = "",
 						}, -- [9]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lava Burst",
 							["Script"] = "dot.flame_shock.remains>cast_time&(cooldown_react||buff.ascendance.up)",
-							["Indicator"] = "none",
-							["Ability"] = "lava_burst",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_burst",
 							["ModName"] = "",
 						}, -- [10]
 						{
 							["Enabled"] = true,
 							["Name"] = "Flame Shock (2)",
 							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up",
-							["Indicator"] = "none",
-							["Ability"] = "flame_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
 							["ModName"] = "",
 						}, -- [11]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earth Shock (1)",
 							["Script"] = "maelstrom.current>=86",
-							["Indicator"] = "none",
-							["Ability"] = "earth_shock",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
 							["ModName"] = "",
 						}, -- [12]
 						{
 							["Enabled"] = true,
 							["Name"] = "Totem Mastery",
 							["Script"] = "buff.resonance_totem.remains<10||(buff.resonance_totem.remains<(buff.ascendance.duration+cooldown.ascendance.remains)&cooldown.ascendance.remains<15)",
-							["Indicator"] = "none",
-							["Ability"] = "totem_mastery",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "totem_mastery",
 							["ModName"] = "",
 						}, -- [13]
 						{
 							["Enabled"] = true,
 							["Name"] = "Earthquake (1)",
 							["Script"] = "buff.echoes_of_the_great_sundering.up",
-							["Indicator"] = "none",
-							["Ability"] = "earthquake",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
 							["ModName"] = "",
 						}, -- [14]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lava Beam",
 							["Script"] = "active_enemies>1&active_enemies>1",
-							["Indicator"] = "none",
-							["Ability"] = "lava_beam",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_beam",
 							["ModName"] = "",
 						}, -- [15]
 						{
 							["Enabled"] = true,
 							["Name"] = "Lightning Bolt (1)",
 							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3",
-							["Indicator"] = "none",
-							["Ability"] = "lightning_bolt",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
 							["ModName"] = "",
 						}, -- [16]
 						{
 							["Enabled"] = true,
 							["Name"] = "Chain Lightning",
 							["Script"] = "active_enemies>1&active_enemies>1",
-							["Indicator"] = "none",
-							["Ability"] = "chain_lightning",
 							["CheckMovement"] = false,
 							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "chain_lightning",
 							["ModName"] = "",
 						}, -- [17]
 						{
@@ -989,50 +989,50 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Script"] = "toggle.interrupts",
 							["Name"] = "Wind Shear",
-							["Release"] = 201617.03,
 							["Ability"] = "wind_shear",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [1]
 						{
 							["Enabled"] = false,
 							["Script"] = "toggle.cooldowns&(target.health.pct<25||time>0.500)",
 							["Name"] = "Heroism",
-							["Release"] = 201617.03,
 							["Ability"] = "bloodlust",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [2]
 						{
 							["Enabled"] = true,
 							["Script"] = "toggle.cooldowns&(!artifact.alpha_wolf.rank>0||(maelstrom.current>=20&cooldown.crash_lightning.remains<=gcd))",
 							["Name"] = "Feral Spirit",
-							["Release"] = 201617.03,
 							["Ability"] = "feral_spirit",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [3]
 						{
 							["Enabled"] = true,
 							["Script"] = "toggle.cooldowns&(buff.ascendance.up||!talent.ascendance.enabled||level<100)",
 							["Name"] = "Berserking",
-							["Release"] = 201617.03,
 							["Ability"] = "berserking",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [4]
 						{
 							["Enabled"] = true,
 							["Script"] = "toggle.cooldowns",
 							["Name"] = "Blood Fury",
-							["Release"] = 201617.03,
 							["Ability"] = "blood_fury",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [5]
 						{
@@ -1050,60 +1050,60 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Script"] = "buff.boulderfist.remains<gcd||(maelstrom.current<=50&active_enemies>=3)",
 							["Name"] = "Boulderfist",
-							["Release"] = 201617.03,
 							["Ability"] = "boulderfist",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [7]
 						{
 							["Enabled"] = true,
 							["Script"] = "buff.boulderfist.remains<gcd||(charges_fractional>1.75&maelstrom.current<=settings.boulderfist_maelstrom&active_enemies<=2)",
 							["Name"] = "Boulderfist (1)",
-							["Release"] = 201617.03,
 							["Ability"] = "boulderfist",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [8]
 						{
 							["Enabled"] = true,
 							["Script"] = "talent.landslide.enabled&buff.landslide.remains<gcd",
 							["Name"] = "Rockbiter",
-							["Release"] = 201617.03,
 							["Ability"] = "rockbiter",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [9]
 						{
 							["Enabled"] = true,
 							["Script"] = "!ticking&maelstrom.current>22",
 							["Name"] = "Fury of Air",
-							["Release"] = 201617.03,
 							["Ability"] = "fury_of_air",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [10]
 						{
 							["Enabled"] = true,
 							["Script"] = "talent.hailstorm.enabled&buff.frostbrand.remains<rebuff_window",
 							["Name"] = "Frostbrand",
-							["Release"] = 201617.03,
 							["Ability"] = "frostbrand",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [11]
 						{
 							["Enabled"] = true,
 							["Script"] = "buff.flametongue.remains<rebuff_window||(cooldown.doom_winds.remains<6&buff.flametongue.remains<4)",
 							["Name"] = "Flametongue",
-							["Release"] = 201617.03,
 							["Ability"] = "flametongue",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [12]
 						{
@@ -1128,10 +1128,10 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Script"] = "(talent.overcharge.enabled&maelstrom.current>=40&!talent.fury_of_air.enabled)||(talent.overcharge.enabled&talent.fury_of_air.enabled&maelstrom.current>40+foa_padding)",
 							["Name"] = "Lightning Bolt",
-							["Release"] = 201617.03,
 							["Ability"] = "lightning_bolt",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [15]
 						{
@@ -1147,40 +1147,40 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Script"] = "toggle.cooldowns&(buff.stormbringer.up)",
 							["Name"] = "Ascendance",
-							["Release"] = 201617.03,
 							["Ability"] = "ascendance",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [17]
 						{
 							["Enabled"] = true,
 							["Script"] = "buff.stormbringer.up&((talent.fury_of_air.enabled&maelstrom.current>=20+foa_padding)||(!talent.fury_of_air.enabled))",
 							["Name"] = "Windstrike",
-							["Release"] = 201617.03,
 							["Ability"] = "windstrike",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [18]
 						{
 							["Enabled"] = true,
 							["Script"] = "buff.stormbringer.up&((talent.fury_of_air.enabled&maelstrom.current>=20+foa_padding)||(!talent.fury_of_air.enabled))",
 							["Name"] = "Stormstrike",
-							["Release"] = 201617.03,
 							["Ability"] = "stormstrike",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [19]
 						{
 							["Enabled"] = true,
 							["Script"] = "talent.hot_hand.enabled&buff.hot_hand.up",
 							["Name"] = "Lava Lash",
-							["Release"] = 201617.03,
 							["Ability"] = "lava_lash",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [20]
 						{
@@ -1196,120 +1196,120 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Script"] = "talent.overcharge.enabled&cooldown.lightning_bolt.remains<gcd&maelstrom.current>80",
 							["Name"] = "Stormstrike (1)",
-							["Release"] = 201617.03,
 							["Ability"] = "stormstrike",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [22]
 						{
 							["Enabled"] = true,
 							["Script"] = "talent.fury_of_air.enabled&maelstrom.current>40+foa_padding&(cooldown.lightning_bolt.remains>gcd||!talent.overcharge.enabled)",
 							["Name"] = "Stormstrike (2)",
-							["Release"] = 201617.03,
 							["Ability"] = "stormstrike",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [23]
 						{
 							["Enabled"] = true,
 							["Script"] = "!talent.overcharge.enabled&!talent.fury_of_air.enabled",
 							["Name"] = "Stormstrike (3)",
-							["Release"] = 201617.03,
 							["Ability"] = "stormstrike",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [24]
 						{
 							["Enabled"] = true,
 							["Script"] = "talent.hailstorm.enabled&buff.frostbrand.remains<4.8",
 							["Name"] = "Frostbrand (1)",
-							["Release"] = 201617.03,
 							["Ability"] = "frostbrand",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [25]
 						{
 							["Enabled"] = false,
 							["Script"] = "talent.crashing_storm.enabled&active_enemies>=3&(!talent.hailstorm.enabled||buff.frostbrand.remains>gcd)",
 							["Name"] = "Crash Lightning (1)",
-							["Ability"] = "crash_lightning",
 							["Release"] = 201617.03,
-							["CheckMovement"] = false,
+							["Ability"] = "crash_lightning",
 							["Indicator"] = "none",
+							["CheckMovement"] = false,
 							["ModName"] = "",
 						}, -- [26]
 						{
 							["Enabled"] = true,
 							["Script"] = "talent.fury_of_air.enabled&talent.overcharge.enabled&(set_bonus.tier19_4pc>0&maelstrom.current>=80)",
 							["Name"] = "Lava Lash (1)",
-							["Release"] = 201617.03,
 							["Ability"] = "lava_lash",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [27]
 						{
 							["Enabled"] = false,
 							["Script"] = "artifact.alpha_wolf.rank>0&prev_gcd.1.feral_spirit",
 							["Name"] = "Crash Lightning",
-							["Ability"] = "crash_lightning",
 							["Release"] = 201617.03,
-							["CheckMovement"] = false,
+							["Ability"] = "crash_lightning",
 							["Indicator"] = "none",
+							["CheckMovement"] = false,
 							["ModName"] = "",
 						}, -- [28]
 						{
 							["Enabled"] = true,
 							["Script"] = "talent.fury_of_air.enabled&!talent.overcharge.enabled&(set_bonus.tier19_4pc>0&maelstrom.current>=53)",
 							["Name"] = "Lava Lash (2)",
-							["Release"] = 201617.03,
 							["Ability"] = "lava_lash",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [29]
 						{
 							["Enabled"] = false,
 							["Script"] = "buff.crash_lightning.remains<gcd&active_enemies>=2",
 							["Name"] = "Crash Lightning (2)",
-							["Ability"] = "crash_lightning",
 							["Release"] = 201617.03,
-							["CheckMovement"] = false,
+							["Ability"] = "crash_lightning",
 							["Indicator"] = "none",
+							["CheckMovement"] = false,
 							["ModName"] = "",
 						}, -- [30]
 						{
 							["Enabled"] = true,
 							["Script"] = "(!set_bonus.tier19_4pc>0&maelstrom.current>=settings.lava_lash_maelstrom)||(!talent.fury_of_air.enabled&set_bonus.tier19_4pc>0&maelstrom.current>=40)",
 							["Name"] = "Lava Lash (3)",
-							["Release"] = 201617.03,
 							["Ability"] = "lava_lash",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [31]
 						{
 							["Enabled"] = false,
 							["Script"] = "active_enemies>=4",
 							["Name"] = "Crash Lightning (3)",
-							["Ability"] = "crash_lightning",
 							["Release"] = 201617.03,
-							["CheckMovement"] = false,
+							["Ability"] = "crash_lightning",
 							["Indicator"] = "none",
+							["CheckMovement"] = false,
 							["ModName"] = "",
 						}, -- [32]
 						{
 							["Enabled"] = true,
 							["Script"] = "buff.flametongue.remains<4.8",
 							["Name"] = "Flametongue (1)",
-							["Release"] = 201617.03,
 							["Ability"] = "flametongue",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [33]
 						{
@@ -2000,10 +2000,10 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Ascendance",
 							["Script"] = "toggle.cooldowns",
-							["Release"] = 201617.03,
 							["Ability"] = "ascendance",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [2]
 						{
@@ -2047,20 +2047,20 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Name"] = "Lava Burst",
 							["Script"] = "dot.flame_shock.remains>cast_time&buff.lava_surge.up&!talent.lightning_rod.enabled&active_enemies<4",
-							["Release"] = 201617.03,
 							["Ability"] = "lava_burst",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [7]
 						{
 							["Enabled"] = true,
 							["Name"] = "Elemental Blast",
 							["Script"] = "!talent.lightning_rod.enabled&active_enemies<5",
-							["Release"] = 201617.03,
 							["Ability"] = "elemental_blast",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [8]
 						{
@@ -2076,10 +2076,10 @@ HekiliDB = {
 							["Enabled"] = true,
 							["Script"] = "debuff.lightning_rod.down",
 							["Name"] = "Chain Lightning",
-							["Release"] = 201617.03,
 							["Ability"] = "chain_lightning",
-							["Indicator"] = "none",
+							["Release"] = 201617.03,
 							["CheckMovement"] = false,
+							["Indicator"] = "none",
 							["ModName"] = "",
 						}, -- [10]
 						{
@@ -2264,9 +2264,9 @@ HekiliDB = {
 			["Notification X"] = 57.9998207092285,
 			["Count Targets by Damage"] = false,
 			["Class Option: optimistic_overload"] = false,
-			["Nameplate Detection Range"] = 6,
-			["Class Option: boulderfist_maelstrom"] = 100,
 			["Class Option: aggressive_stormkeeper"] = true,
+			["Class Option: boulderfist_maelstrom"] = 100,
+			["Nameplate Detection Range"] = 6,
 			["Class Option: doom_winds_cooldown"] = false,
 			["Notification Y"] = -3,
 			["Clash"] = 0.5,
@@ -2317,7 +2317,7 @@ HekiliDB = {
 						["g"] = 1,
 						["b"] = 1,
 					},
-					["Copy To"] = "Enhancement Single-Target",
+					["Specialization"] = 263,
 					["Auto - Maximum"] = 0,
 					["Queue Direction"] = "LEFT",
 					["Default"] = true,
@@ -2335,7 +2335,7 @@ HekiliDB = {
 					["Font"] = "Arial Narrow",
 					["Name"] = "Enhancement Primary",
 					["Primary Font Size"] = 12,
-					["Specialization"] = 263,
+					["Copy To"] = "Enhancement Single-Target",
 					["Spacing"] = 8,
 					["Action Captions"] = true,
 					["x"] = -293.000183105469,
@@ -2387,8 +2387,8 @@ HekiliDB = {
 					["Primary Caption"] = "sratio",
 					["Auto - Maximum"] = 0,
 					["PvE - Target Alpha"] = 1,
-					["Auto - Minimum"] = 3,
 					["Default"] = true,
+					["Auto - Minimum"] = 3,
 					["Single - Minimum"] = 3,
 					["Queues"] = {
 						{
@@ -2448,14 +2448,14 @@ HekiliDB = {
 					["Zoom"] = 30,
 					["Action Captions"] = true,
 					["PvE - Target"] = false,
-					["Specialization"] = 262,
+					["Copy To"] = "Elemental AOE",
 					["SpellFlash Color"] = {
 						["a"] = 1,
 						["b"] = 1,
 						["g"] = 1,
 						["r"] = 1,
 					},
-					["Copy To"] = "Elemental AOE",
+					["Specialization"] = 262,
 					["PvP - Target"] = false,
 					["Queue Direction"] = "RIGHT",
 					["Default"] = true,
@@ -2510,7 +2510,7 @@ HekiliDB = {
 						["g"] = 1,
 						["b"] = 1,
 					},
-					["Copy To"] = "Elemental AOE",
+					["Specialization"] = 262,
 					["PvE - Combat Alpha"] = 1,
 					["Queue Direction"] = "RIGHT",
 					["Default"] = true,
@@ -2528,7 +2528,7 @@ HekiliDB = {
 					["Font"] = "Arial Narrow",
 					["Name"] = "Elemental AOE",
 					["Primary Font Size"] = 12,
-					["Specialization"] = 262,
+					["Copy To"] = "Elemental AOE",
 					["Spacing"] = 5,
 					["Action Captions"] = true,
 					["Queues"] = {
@@ -2562,13 +2562,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["package"] = "Protection Warrior",
-					["aoe"] = 2,
-					["nameplates"] = true,
-					["debuffPadding"] = 0,
-					["cycle"] = false,
-					["potion"] = "potion_of_bursting_blood",
-					["nameplateRange"] = 8,
 					["potionsReset"] = 20180919.1,
+					["aoe"] = 2,
+					["debuffPadding"] = 0,
+					["nameplateRange"] = 8,
+					["potion"] = "potion_of_bursting_blood",
+					["cycle"] = false,
+					["nameplates"] = true,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -2579,13 +2579,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["debuffPadding"] = 0,
-					["aoe"] = 2,
-					["potionsReset"] = 20180919.1,
-					["package"] = "Arms",
-					["cycle"] = false,
-					["potion"] = "potion_of_bursting_blood",
-					["nameplateRange"] = 8,
 					["nameplates"] = true,
+					["aoe"] = 2,
+					["package"] = "Arms",
+					["nameplateRange"] = 8,
+					["potion"] = "potion_of_bursting_blood",
+					["cycle"] = false,
+					["potionsReset"] = 20180919.1,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -2596,13 +2596,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["package"] = "Fury",
-					["aoe"] = 2,
-					["nameplates"] = true,
-					["debuffPadding"] = 0,
-					["cycle"] = false,
-					["potion"] = "potion_of_bursting_blood",
-					["nameplateRange"] = 8,
 					["potionsReset"] = 20180919.1,
+					["aoe"] = 2,
+					["debuffPadding"] = 0,
+					["nameplateRange"] = 8,
+					["potion"] = "potion_of_bursting_blood",
+					["cycle"] = false,
+					["nameplates"] = true,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -3610,13 +3610,6 @@ HekiliDB = {
 								["action"] = "glacial_spike",
 							}, -- [8]
 						},
-						["movement"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.ice_floes.down",
-								["action"] = "ice_floes",
-							}, -- [1]
-						},
 						["default"] = {
 							{
 								["action"] = "counterspell",
@@ -3643,6 +3636,13 @@ HekiliDB = {
 								["action"] = "call_action_list",
 								["list_name"] = "single",
 							}, -- [5]
+						},
+						["movement"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.ice_floes.down",
+								["action"] = "ice_floes",
+							}, -- [1]
 						},
 						["precombat"] = {
 							{
@@ -3721,9 +3721,9 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -3776,9 +3776,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "balefire_branch",
 								["criteria"] = "! talent.glacial_spike.enabled || buff.brain_freeze.react & prev_gcd.1.glacial_spike",
 								["name"] = "balefire_branch",
+								["action"] = "balefire_branch",
 							}, -- [7]
 							{
 								["action"] = "use_items",
@@ -3835,9 +3835,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -3888,9 +3888,9 @@ HekiliDB = {
 						["items_low_priority"] = {
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "cooldown.combustion.remains > variable.on_use_cutoff || talent.firestarter.enabled & firestarter.remains > variable.on_use_cutoff",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -4052,27 +4052,27 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.combustion.remains <= 5 + 15 * variable.font_double_on_use",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "rotcrusted_voodoo_doll",
 								["criteria"] = "cooldown.combustion.remains > variable.on_use_cutoff",
 								["name"] = "rotcrusted_voodoo_doll",
+								["action"] = "rotcrusted_voodoo_doll",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "aquipotent_nautilus",
 								["criteria"] = "cooldown.combustion.remains > variable.on_use_cutoff",
 								["name"] = "aquipotent_nautilus",
+								["action"] = "aquipotent_nautilus",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "shiver_venom_relic",
 								["criteria"] = "cooldown.combustion.remains > variable.on_use_cutoff",
 								["name"] = "shiver_venom_relic",
+								["action"] = "shiver_venom_relic",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -4081,21 +4081,21 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "malformed_heralds_legwraps",
 								["criteria"] = "cooldown.combustion.remains >= 55 & buff.combustion.down & cooldown.combustion.remains > variable.on_use_cutoff",
 								["name"] = "malformed_heralds_legwraps",
+								["action"] = "malformed_heralds_legwraps",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "ancient_knot_of_wisdom",
 								["criteria"] = "cooldown.combustion.remains >= 55 & buff.combustion.down & cooldown.combustion.remains > variable.on_use_cutoff",
 								["name"] = "ancient_knot_of_wisdom",
+								["action"] = "ancient_knot_of_wisdom",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "use_item",
 								["criteria"] = "cooldown.combustion.remains >= 45 & buff.combustion.down & cooldown.combustion.remains > variable.on_use_cutoff",
 								["name"] = "neural_synapse_enhancer",
+								["action"] = "use_item",
 							}, -- [10]
 						},
 						["default"] = {
@@ -4201,9 +4201,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "hyperthread_wristwraps",
 								["criteria"] = "buff.combustion.up & action.fire_blast.charges = 0 & action.fire_blast.recharge_time > gcd.remains",
 								["name"] = "hyperthread_wristwraps",
+								["action"] = "hyperthread_wristwraps",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -4532,9 +4532,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["name"] = "tidestorm_codex",
 								["action"] = "tidestorm_codex",
 								["criteria"] = "buff.rune_of_power.down & ! buff.arcane_power.react & cooldown.arcane_power.remains > 20",
+								["name"] = "tidestorm_codex",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -4549,9 +4549,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "mana.pct <= 95 & buff.clearcasting.react & active_enemies < 3",
 								["action"] = "arcane_missiles",
 								["chain"] = "1",
+								["criteria"] = "mana.pct <= 95 & buff.clearcasting.react & active_enemies < 3",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -4680,9 +4680,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.arcane_power.remains < 5 || time_to_die < cooldown.arcane_power.remains",
+								["name"] = "azsharas_font_of_power",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -4741,9 +4741,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.clearcasting.react & active_enemies < 3 & ( talent.amplification.enabled || ( ! talent.overpowered.enabled & azerite.arcane_pummeling.rank >= 2 ) || buff.arcane_power.down )",
 								["action"] = "arcane_missiles",
 								["chain"] = "1",
+								["criteria"] = "buff.clearcasting.react & active_enemies < 3 & ( talent.amplification.enabled || ( ! talent.overpowered.enabled & azerite.arcane_pummeling.rank >= 2 ) || buff.arcane_power.down )",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -4846,16 +4846,16 @@ HekiliDB = {
 			},
 			["runOnce"] = {
 				["autoconvertDelayBackToText_20190422"] = true,
-				["autoconvertGlowsForCustomGlow_20190326"] = true,
-				["enabledArcaneMageOnce_20190309"] = true,
+				["resetPotionsToDefaults_20190717"] = true,
+				["autoconvertDelayTextToSweep_20190420"] = true,
 				["autoconvertDelaySweepToExtend_20190729"] = true,
 				["autoconvertDelayTextToSweep_20190420_1"] = true,
 				["reviseDisplayModes_20180709"] = true,
-				["autoconvertDisplayToggle_20190621_1"] = true,
+				["autoconvertGlowsForCustomGlow_20190326"] = true,
 				["enableAllOfTheThings_20180820"] = true,
-				["autoconvertDelayTextToSweep_20190420"] = true,
+				["enabledArcaneMageOnce_20190309"] = true,
 				["autoconvertDelayFadeToCheckbox_20190418"] = true,
-				["resetPotionsToDefaults_20190717"] = true,
+				["autoconvertDisplayToggle_20190621_1"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
 			},
 			["specs"] = {
@@ -4876,12 +4876,12 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["cycle_min"] = 6,
-					["cycle"] = false,
+					["nameplateRange"] = 8,
 					["potion"] = "potion_of_unbridled_fury",
 					["potionsReset"] = 20180919.1,
 					["nameplates"] = false,
 					["damageExpiration"] = 6,
-					["nameplateRange"] = 8,
+					["cycle"] = false,
 					["damageRange"] = 0,
 				},
 				[63] = {
@@ -4898,12 +4898,12 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["cycle_min"] = 6,
-					["cycle"] = false,
+					["nameplateRange"] = 8,
 					["potion"] = "potion_of_unbridled_fury",
 					["potionsReset"] = 20180919.1,
 					["nameplates"] = false,
 					["damageExpiration"] = 6,
-					["nameplateRange"] = 8,
+					["cycle"] = false,
 					["damageRange"] = 0,
 				},
 				[62] = {
@@ -4920,12 +4920,12 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["cycle_min"] = 6,
-					["cycle"] = false,
+					["nameplateRange"] = 8,
 					["potion"] = "potion_of_focused_resolve",
 					["potionsReset"] = 20180919.1,
 					["nameplates"] = false,
 					["damageExpiration"] = 6,
-					["nameplateRange"] = 8,
+					["cycle"] = false,
 					["damageRange"] = 0,
 				},
 			},
@@ -4933,15 +4933,15 @@ HekiliDB = {
 		["Durlok - Black Dragonflight"] = {
 			["runOnce"] = {
 				["autoconvertDelayBackToText_20190422"] = true,
-				["autoconvertDisplayToggle_20190621_1"] = true,
+				["autoconvertGlowsForCustomGlow_20190326"] = true,
 				["autoconvertDelayTextToSweep_20190420"] = true,
 				["autoconvertDelaySweepToExtend_20190729"] = true,
 				["autoconvertDelayTextToSweep_20190420_1"] = true,
 				["reviseDisplayModes_20180709"] = true,
 				["enableAllOfTheThings_20180820"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
-				["autoconvertGlowsForCustomGlow_20190326"] = true,
 				["resetPotionsToDefaults_20190717"] = true,
+				["autoconvertDisplayToggle_20190621_1"] = true,
 				["autoconvertDelayFadeToCheckbox_20190418"] = true,
 			},
 			["specs"] = {
@@ -4960,9 +4960,9 @@ HekiliDB = {
 					["debuffPadding"] = 0,
 					["custom1Name"] = "Custom 1",
 					["buffPadding"] = 0.25,
-					["cycle"] = false,
-					["cycle_min"] = 6,
 					["nameplateRange"] = 8,
+					["cycle_min"] = 6,
+					["cycle"] = false,
 					["potion"] = "focused_resolve",
 					["nameplates"] = true,
 					["potionsReset"] = 20180919.1,
@@ -4986,9 +4986,9 @@ HekiliDB = {
 					["debuffPadding"] = 0,
 					["custom1Name"] = "Custom 1",
 					["buffPadding"] = 0.25,
-					["cycle"] = false,
-					["cycle_min"] = 6,
 					["nameplateRange"] = 8,
+					["cycle_min"] = 6,
+					["cycle"] = false,
 					["potion"] = "focused_resolve",
 					["potionsReset"] = 20180919.1,
 					["nameplates"] = true,
@@ -5008,9 +5008,9 @@ HekiliDB = {
 					["debuffPadding"] = 0,
 					["custom1Name"] = "Custom 1",
 					["buffPadding"] = 0.25,
-					["cycle"] = false,
-					["cycle_min"] = 6,
 					["nameplateRange"] = 8,
+					["cycle_min"] = 6,
+					["cycle"] = false,
 					["potion"] = "unbridled_fury",
 					["nameplates"] = false,
 					["potionsReset"] = 20180919.1,
@@ -5500,9 +5500,9 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.time_to_pct_30 < 1.5 || ! debuff.conductive_ink_debuff.up & ( debuff.razor_coral_debuff.stack >= 25 - 10 * debuff.blood_of_the_enemy.up || time_to_die < 40 ) & buff.tigers_fury.remains > 10",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.time_to_pct_30 < 1.5 || ! debuff.conductive_ink_debuff.up & ( debuff.razor_coral_debuff.stack >= 25 - 10 * debuff.blood_of_the_enemy.up || time_to_die < 40 ) & buff.tigers_fury.remains > 10",
 							}, -- [15]
 							{
 								["enabled"] = true,
@@ -5584,9 +5584,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.ca_inc.up & dot.moonfire.ticking & dot.sunfire.ticking & ( ! talent.stellar_flare.enabled || dot.stellar_flare.ticking )",
 								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
+								["criteria"] = "! buff.ca_inc.up & dot.moonfire.ticking & dot.sunfire.ticking & ( ! talent.stellar_flare.enabled || dot.stellar_flare.ticking )",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -5601,9 +5601,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.ca_inc.up & dot.shiver_venom.stack >= 5",
 								["name"] = "shiver_venom_relic",
 								["action"] = "shiver_venom_relic",
+								["criteria"] = "! buff.ca_inc.up & dot.shiver_venom.stack >= 5",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -5676,8 +5676,8 @@ HekiliDB = {
 							{
 								["enabled"] = true,
 								["buff_name"] = "starlord",
-								["action"] = "cancel_buff",
 								["criteria"] = "buff.starlord.remains < 3 & ! solar_wrath.ap_check",
+								["action"] = "cancel_buff",
 							}, -- [22]
 							{
 								["enabled"] = true,
@@ -6011,13 +6011,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["package"] = "Shadow",
 					["debuffPadding"] = 0,
+					["potionsReset"] = 20180919.1,
 					["nameplates"] = false,
-					["aoe"] = 3,
-					["cycle"] = false,
 					["nameplateRange"] = 8,
+					["cycle"] = false,
 					["potion"] = "potion_of_rising_death",
 					["throttleRefresh"] = false,
-					["potionsReset"] = 20180919.1,
+					["aoe"] = 3,
 					["damageExpiration"] = 6,
 					["damageDots"] = false,
 					["damage"] = true,

@@ -1,5 +1,9 @@
 local E, _, V, P, G = unpack(ElvUI);
-local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale or 'enUS')
+-- local locale = (E.global.general.locale and E.global.general.locale ~= "auto") and E.global.general.locale or GetLocale()
+local locale = E.global.general.locale
+
+-- local L = E.Libs.ACL:GetLocale('ElvUI', locale)
+local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale)
 local EP = LibStub("LibElvUIPlugin-1.0")
 local AddOnName, Engine = ...;
 local _G = _G
@@ -56,14 +60,13 @@ function SLE:ConfigCats() --Additional mover groups
 	E.ConfigModeLocalizedStrings["S&L MISC"] = L["S&L: Misc"]
 end
 
-function SLE:Initialize()
-	--ElvUI's version check
-	if SLE.elvV < 11 then return end
+--ElvUI's version check
+if SLE.elvV < 11 or (SLE.elvV < SLE.elvR) then
+	E:Delay(2, function() E:StaticPopup_Show("VERSION_MISMATCH") end) --Delay cause if I try to show it right away, then it wouldn't really show up
+	return --Not loading shit if version is too old, prevents shit from being broken
+end
 
-	if SLE.elvV < SLE.elvR then
-		E:StaticPopup_Show("VERSION_MISMATCH")
-		return --Not loading shit if version is too old, prevents shit from being broken
-	end
+function SLE:Initialize()
 	if SLE:CheckIncompatible() then return end
 	SLE:DatabaseConversions()
 	SLE:ConfigCats()
@@ -83,6 +86,7 @@ function SLE:Initialize()
 	SLE:BuildGameMenu()
 	SLE:CyrillicsInit()
 
+	if not tonumber(E.private.sle.install_complete) then E.private.sle.install_complete = "BETA" end
 	if not E.private.sle.install_complete or (E.private.sle.install_complete ~= "BETA" and tonumber(E.private.sle.install_complete) < 3) then
 		E:GetModule("PluginInstaller"):Queue(SLE.installTable)
 	end
