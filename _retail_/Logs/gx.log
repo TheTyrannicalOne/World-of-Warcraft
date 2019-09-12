@@ -1,29 +1,25 @@
-9/3 22:45:50.837  LogOpen
-9/3 22:45:51.511  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0e1f) dx11:true dx12:true
-9/3 22:45:51.511  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-9/3 22:45:51.511  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-9/3 22:45:51.553  D3d12 Device Create
-9/3 22:45:51.700  Choosing adapter 0
-9/3 22:45:51.847  Detected NvAPI and checking if it's valid...
-9/3 22:45:51.849  AFR Groups: 1/1
-9/3 22:45:51.849  Feature Level: DX=6, MTL=0
-9/3 22:45:51.875  NotifyOnDeviceCreate
-9/3 22:45:51.875  D3d12 Device Create Successful
-9/3 22:45:51.875  Nvidia driver version: r436_08 (43615)
-9/3 22:45:51.875  <IsGPUDriverOutOfDate> No
-9/3 22:45:51.900  CPU Processor Detection: 12 H/W threads
-9/3 22:45:51.900  Memory Detection: 34296328192 bytes of physical memory available
-9/3 22:45:51.900  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-9/3 22:45:52.014  RenderSettings::NotifyChanged
-9/3 22:45:53.089  Nvidia driver version: r436_08 (43615)
-9/3 22:46:21.042  Nvidia driver version: r436_08 (43615)
-9/3 22:46:21.042  Nvidia driver version: r436_08 (43615)
-9/3 22:46:53.520  Nvidia driver version: r436_08 (43615)
-9/3 22:47:29.727  RenderSettings::NotifyChanged
-9/3 22:48:09.514  Nvidia driver version: r436_08 (43615)
-9/3 22:48:44.293  Nvidia driver version: r436_08 (43615)
-9/3 22:50:51.168  Nvidia driver version: r436_08 (43615)
-9/3 22:51:29.395  Nvidia driver version: r436_08 (43615)
-9/4 00:34:19.663  D3d12 Device Destroy
-9/4 00:34:19.663  NotifyOnDeviceDestroy
-9/4 00:34:20.366  GxShutdown
+9/9 09:03:31.585  LogOpen
+9/9 09:03:32.410  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0e1f) dx11:true dx12:true
+9/9 09:03:32.410  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+9/9 09:03:32.410  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+9/9 09:03:32.472  D3d12 Device Create
+9/9 09:03:32.622  Choosing adapter 0
+9/9 09:03:32.791  Detected NvAPI and checking if it's valid...
+9/9 09:03:32.791  AFR Groups: 1/1
+9/9 09:03:32.791  Feature Level: DX=6, MTL=0
+9/9 09:03:32.819  NotifyOnDeviceCreate
+9/9 09:03:32.819  D3d12 Device Create Successful
+9/9 09:03:32.819  Nvidia driver version: r436_08 (43615)
+9/9 09:03:32.819  <IsGPUDriverOutOfDate> No
+9/9 09:03:32.851  CPU Processor Detection: 12 H/W threads
+9/9 09:03:32.851  Memory Detection: 34296328192 bytes of physical memory available
+9/9 09:03:32.851  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+9/9 09:03:32.979  RenderSettings::NotifyChanged
+9/9 09:03:34.163  Nvidia driver version: r436_08 (43615)
+9/9 09:04:01.527  Nvidia driver version: r436_08 (43615)
+9/9 09:04:01.527  Nvidia driver version: r436_08 (43615)
+9/9 09:04:40.856  RenderSettings::NotifyChanged
+9/9 09:34:06.603  Nvidia driver version: r436_08 (43615)
+9/9 09:34:07.802  D3d12 Device Destroy
+9/9 09:34:07.802  NotifyOnDeviceDestroy
+9/9 09:34:08.353  GxShutdown

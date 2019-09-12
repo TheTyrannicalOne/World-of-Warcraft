@@ -38,10 +38,10 @@ SkadaDB = {
 					["barslocked"] = true,
 					["barwidth"] = 234.166656494141,
 					["mode"] = "Damage",
-					["point"] = "BOTTOMRIGHT",
 					["background"] = {
 						["height"] = 158.333221435547,
 					},
+					["point"] = "BOTTOMRIGHT",
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -212,28 +212,6 @@ SkadaDB = {
 					["barfontsize"] = 10,
 					["classicons"] = false,
 					["barslocked"] = true,
-					["modeincombat"] = "Focus gained",
-					["wipemode"] = "Focus gained",
-					["buttons"] = {
-						["stop"] = true,
-					},
-					["barwidth"] = 234.000549316406,
-					["bartexture"] = "Minimalist",
-					["y"] = 28.00163269042969,
-					["x"] = -179.000244140625,
-					["title"] = {
-						["font"] = "Arial Narrow",
-						["fontsize"] = 20,
-						["color"] = {
-							["a"] = 0,
-							["r"] = 0.125490196078431,
-							["g"] = 0.125490196078431,
-							["b"] = 0.125490196078431,
-						},
-						["height"] = 13,
-						["borderthickness"] = 0,
-						["texture"] = "Graphite",
-					},
 					["background"] = {
 						["color"] = {
 							["a"] = 0.89495262503624,
@@ -245,10 +223,32 @@ SkadaDB = {
 						["borderthickness"] = 0,
 						["height"] = 155.000244140625,
 					},
-					["mode"] = "Focus gained",
+					["wipemode"] = "Focus gained",
+					["bartexture"] = "Minimalist",
+					["barwidth"] = 234.000549316406,
+					["modeincombat"] = "Focus gained",
+					["y"] = 28.00163269042969,
+					["x"] = -179.000244140625,
 					["name"] = "Damage",
 					["point"] = "BOTTOMRIGHT",
 					["barfont"] = "Trebuchet MS",
+					["mode"] = "Focus gained",
+					["buttons"] = {
+						["stop"] = true,
+					},
+					["title"] = {
+						["font"] = "Arial Narrow",
+						["borderthickness"] = 0,
+						["color"] = {
+							["a"] = 0,
+							["r"] = 0.125490196078431,
+							["g"] = 0.125490196078431,
+							["b"] = 0.125490196078431,
+						},
+						["height"] = 13,
+						["fontsize"] = 20,
+						["texture"] = "Graphite",
+					},
 				}, -- [1]
 				{
 					["titleset"] = false,

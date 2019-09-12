@@ -1,68 +1,128 @@
-9/3 22:45:52.349   - SE3 Init...
-9/3 22:45:52.349  => SI3 Init
-9/3 22:45:52.349  => WoW Version 8.2.0 (31478) Aug 12 2019
-9/3 22:45:52.349   
-9/3 22:45:52.349  => User Settings Report:
-9/3 22:45:52.349   - ========= PLAYBACK =========
-9/3 22:45:52.349   - Enable All Sound         [1]
-9/3 22:45:52.349   - Enable SFX               [1]
-9/3 22:45:52.349   --- Enable Emote Sounds    [1]
-9/3 22:45:52.349   - Enable Music             [1]
-9/3 22:45:52.349   --- Loop Music             [0]
-9/3 22:45:52.349   --- Pet Battle Music       [1]
-9/3 22:45:52.349   - Enable Ambient Sounds    [1]
-9/3 22:45:52.349   - Enable Dialog            [1]
-9/3 22:45:52.349   --- Enable Error Speech    [1]
-9/3 22:45:52.349   - Sound at Character       [1]
-9/3 22:45:52.349   - Sound in Background      [0]
-9/3 22:45:52.349   - Enable Reverb            [1]
-9/3 22:45:52.364   -
-9/3 22:45:52.364   - ========== VOLUME ==========
-9/3 22:45:52.364   - Master Volume         [1.00]
-9/3 22:45:52.364   - SFX Volume            [0.80]
-9/3 22:45:52.364   - Music Volume          [0.40]
-9/3 22:45:52.364   - Ambience Volume       [0.60]
-9/3 22:45:52.364   - Dialog Volume         [1.00]
-9/3 22:45:52.364   -
-9/3 22:45:52.364   - =========== MISC ===========
-9/3 22:45:52.364   - Sound Channels          [64]
-9/3 22:45:52.364   - Sound Cache           [64MB]
-9/3 22:45:52.364   - Mix Mode 2               [0]
-9/3 22:45:52.364   - DSP Buffer Size       [AUTO]
-9/3 22:45:52.364   - Armor Foley SFX (Self)   [1]
-9/3 22:45:52.364   - Armor Foley SFX (Others) [1]
-9/3 22:45:52.364  => End of User Settings Report
-9/3 22:45:52.364   
-9/3 22:45:52.364   - FMOD Memory Init
-9/3 22:45:52.364   - FMOD System Create
-9/3 22:45:52.379   - Setting Output Type
-9/3 22:45:52.443   - 4 Output drivers detected
-9/3 22:45:52.443   --- [0] System Default
-9/3 22:45:52.443   --- [1] Speakers (THX Spatial - Synapse)
-9/3 22:45:52.443   --- [2] Headphones (Razer Nari Ultimate - Game)
-9/3 22:45:52.443   --- [3] Headset Earphone (Razer Nari Ultimate - Chat)
-9/3 22:45:52.443  ** Using User Specified Driver [1] Speakers (THX Spatial - Synapse)
-9/3 22:45:52.443   - DSPBufferSize = AUTO DETECT
-9/3 22:45:52.461   - Setting DSP Buffer Size
-9/3 22:45:52.461   - Using Control Panel Speaker Mode 7.1
-9/3 22:45:52.461   - Setting Software Format (44100, 2, 1).
-9/3 22:45:52.461   - Requested 64 channels.
-9/3 22:45:52.461   - Initializing Software Channels
-9/3 22:45:52.520   - Init FMOD Game System
-9/3 22:45:52.520   - Ok
-9/3 22:45:52.520   - Setting Rolloff Scale
-9/3 22:45:52.520   - Setting Rolloff Callback
-9/3 22:45:52.520   - SE3 EmitterManagerInit Success
-9/3 22:45:52.520   - Setting device callback
-9/3 22:45:52.520   - Sound Bus Init
-9/3 22:45:52.520   - Init Suppressors
-9/3 22:45:52.520   - SE3 Init Success.
-9/3 22:45:52.544  => SI3 Init Complete.
-9/3 22:45:52.544   
-9/4 00:34:18.848   
-9/4 00:34:18.848  => Shutting Down SI3
-9/4 00:34:18.872  => Shutting Down SI3 COMPLETE.
-9/4 00:34:18.872   
-9/4 00:34:18.872   - Shutting Down SE3
-9/4 00:34:18.950   - SE3 EmitterManagerShutdown Success
-9/4 00:34:18.950   - Shutting Down SE3 COMPLETE.
+9/9 09:03:33.324   - SE3 Init...
+9/9 09:03:33.332  => SI3 Init
+9/9 09:03:33.332  => WoW Version 8.2.0 (31478) Aug 12 2019
+9/9 09:03:33.332   
+9/9 09:03:33.332  => User Settings Report:
+9/9 09:03:33.332   - ========= PLAYBACK =========
+9/9 09:03:33.332   - Enable All Sound         [1]
+9/9 09:03:33.332   - Enable SFX               [1]
+9/9 09:03:33.332   --- Enable Emote Sounds    [1]
+9/9 09:03:33.332   - Enable Music             [1]
+9/9 09:03:33.332   --- Loop Music             [0]
+9/9 09:03:33.332   --- Pet Battle Music       [1]
+9/9 09:03:33.332   - Enable Ambient Sounds    [1]
+9/9 09:03:33.332   - Enable Dialog            [1]
+9/9 09:03:33.332   --- Enable Error Speech    [1]
+9/9 09:03:33.332   - Sound at Character       [1]
+9/9 09:03:33.332   - Sound in Background      [0]
+9/9 09:03:33.332   - Enable Reverb            [1]
+9/9 09:03:33.332   -
+9/9 09:03:33.332   - ========== VOLUME ==========
+9/9 09:03:33.348   - Master Volume         [1.00]
+9/9 09:03:33.348   - SFX Volume            [0.80]
+9/9 09:03:33.348   - Music Volume          [0.40]
+9/9 09:03:33.348   - Ambience Volume       [0.60]
+9/9 09:03:33.348   - Dialog Volume         [1.00]
+9/9 09:03:33.348   -
+9/9 09:03:33.348   - =========== MISC ===========
+9/9 09:03:33.348   - Sound Channels          [64]
+9/9 09:03:33.348   - Sound Cache           [64MB]
+9/9 09:03:33.348   - Mix Mode 2               [0]
+9/9 09:03:33.348   - DSP Buffer Size       [AUTO]
+9/9 09:03:33.348   - Armor Foley SFX (Self)   [1]
+9/9 09:03:33.348   - Armor Foley SFX (Others) [1]
+9/9 09:03:33.348  => End of User Settings Report
+9/9 09:03:33.348   
+9/9 09:03:33.348   - FMOD Memory Init
+9/9 09:03:33.348   - FMOD System Create
+9/9 09:03:33.348   - Setting Output Type
+9/9 09:03:33.429   - 4 Output drivers detected
+9/9 09:03:33.429   --- [0] System Default
+9/9 09:03:33.429   --- [1] Speakers (THX Spatial - Synapse)
+9/9 09:03:33.429   --- [2] Headphones (Razer Nari Ultimate - Game)
+9/9 09:03:33.429   --- [3] Headset Earphone (Razer Nari Ultimate - Chat)
+9/9 09:03:33.429  ** Using User Specified Driver [1] Speakers (THX Spatial - Synapse)
+9/9 09:03:33.429   - DSPBufferSize = AUTO DETECT
+9/9 09:03:33.429   - Setting DSP Buffer Size
+9/9 09:03:33.429   - Using Control Panel Speaker Mode 7.1
+9/9 09:03:33.429   - Setting Software Format (44100, 2, 1).
+9/9 09:03:33.442   - Requested 64 channels.
+9/9 09:03:33.442   - Initializing Software Channels
+9/9 09:03:33.493   - Init FMOD Game System
+9/9 09:03:33.493   - Ok
+9/9 09:03:33.493   - Setting Rolloff Scale
+9/9 09:03:33.493   - Setting Rolloff Callback
+9/9 09:03:33.493   - SE3 EmitterManagerInit Success
+9/9 09:03:33.493   - Setting device callback
+9/9 09:03:33.493   - Sound Bus Init
+9/9 09:03:33.493   - Init Suppressors
+9/9 09:03:33.493   - SE3 Init Success.
+9/9 09:03:33.509  => SI3 Init Complete.
+9/9 09:03:33.509   
+9/9 09:05:45.539  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:05:45.539  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:06:44.733  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:06:45.733  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:06:45.733  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:06:45.817  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:06:45.817  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.186  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.186  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.279  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.279  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.626  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.626  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.735  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.735  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.867  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:21.867  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:42.437  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:42.437  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:47.649  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:47.649  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:59.924  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:59.926  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:59.945  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:16:59.945  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:17:00.476  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:17:00.476  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:12.523  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:12.523  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:12.697  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:12.697  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:44.679  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:44.679  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:44.985  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:44.985  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:55.580  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:55.580  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:56.048  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:56.048  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:56.141  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:20:56.141  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:21:41.278  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:21:41.278  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:06.679  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.340  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.340  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.358  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.358  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.394  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.395  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.471  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.549  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:24:39.549  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:33:09.773  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:33:09.773  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:33:10.077  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:33:10.077  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:33:13.841  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:33:37.267  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:33:37.267  => Requested 16384 bytes and read 0 -- success: 1
+9/9 09:34:06.737   
+9/9 09:34:06.739  => Shutting Down SI3
+9/9 09:34:06.757  => Shutting Down SI3 COMPLETE.
+9/9 09:34:06.757   
+9/9 09:34:06.757   - Shutting Down SE3
+9/9 09:34:06.831   - SE3 EmitterManagerShutdown Success
+9/9 09:34:06.832   - Shutting Down SE3 COMPLETE.

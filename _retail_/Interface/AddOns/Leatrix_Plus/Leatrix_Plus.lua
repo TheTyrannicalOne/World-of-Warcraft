@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.07 (28th August 2019)
+-- 	Leatrix Plus 8.2.08 (11th September 2019)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.07"
+	LeaPlusLC["AddonVer"] = "8.2.08"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -3106,6 +3106,8 @@
 							err == ERR_PARTY_LFG_TELEPORT_IN_COMBAT or
 							err == ERR_PET_SPELL_DEAD or
 							err == ERR_PLAYER_DEAD or
+							err == SPELL_FAILED_TARGET_NO_POCKETS or
+							err == ERR_ALREADY_PICKPOCKETED or
 							err:find(format(ERR_PARTY_LFG_BOOT_NOT_ELIGIBLE_S, ".+")) then
 								return OrigErrHandler(self, event, id, err, ...)
 						end
@@ -4756,21 +4758,35 @@
 
 			-- Position general tooltip
 			hooksecurefunc("GameTooltip_SetDefaultAnchor", function(tooltip, parent)
-				if LeaPlusLC["TipMoveTip"] == "On" then
+				if LeaPlusLC["TooltipAnchorMenu"] ~= 1 then
 					if (not tooltip or not parent) then
 						return
 					end
-					local a,b,c,d,e = tooltip:GetPoint()
-					if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
-						tooltip:ClearAllPoints()
+					if LeaPlusLC["TooltipAnchorMenu"] == 2 or GetMouseFocus() ~= WorldFrame then
+						local a,b,c,d,e = tooltip:GetPoint()
+						if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
+							tooltip:ClearAllPoints()
+						end
+						tooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
+						return
+					else
+						if LeaPlusLC["TooltipAnchorMenu"] == 3 then
+							tooltip:SetOwner(parent, "ANCHOR_CURSOR")
+							return
+						elseif LeaPlusLC["TooltipAnchorMenu"] == 4 then
+							tooltip:SetOwner(parent, "ANCHOR_CURSOR_LEFT", LeaPlusLC["TipCursorX"], LeaPlusLC["TipCursorY"])
+							return
+						elseif LeaPlusLC["TooltipAnchorMenu"] == 5 then
+							tooltip:SetOwner(parent, "ANCHOR_CURSOR_RIGHT", LeaPlusLC["TipCursorX"], LeaPlusLC["TipCursorY"])
+							return
+						end
 					end
-					tooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
 				end
 			end)
 
 			-- Position pet battle ability tooltips
 			hooksecurefunc("PetBattleAbilityTooltip_Show", function(void, parent)
-				if LeaPlusLC["TipMoveTip"] == "On" then
+				if LeaPlusLC["TooltipAnchorMenu"] ~= 1 then
 					if parent == UIParent then
 						local a,b,c,d,e = PetBattlePrimaryAbilityTooltip:GetPoint()
 						if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
@@ -4827,14 +4843,53 @@
 
 			-- Add controls
 			LeaPlusLC:MakeTx(SideTip, "Settings", 16, -72)
-			LeaPlusLC:MakeCB(SideTip, "TipMoveTip", "Reposition the tooltip", 16, -92, false, "If checked, you will be able to reposition the tooltip.")
-			LeaPlusLC:MakeCB(SideTip, "TipShowRank", "Show guild ranks for your guild", 16, -112, false, "If checked, guild ranks will be shown for players in your guild.")
-			LeaPlusLC:MakeCB(SideTip, "TipShowTarget", "Show the unit's target", 16, -132, false, "If checked, unit targets will be shown.")
-			LeaPlusLC:MakeCB(SideTip, "TipBackSimple", "Color the backdrops based on faction", 16, -152, false, "If checked, backdrops will be tinted blue (friendly) or red (hostile).")
-			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -172, false, "If checked, tooltips for world units will be hidden during combat.|n|nYou can hold the shift key down to override this setting.")
+			LeaPlusLC:MakeCB(SideTip, "TipShowRank", "Show guild ranks for your guild", 16, -92, false, "If checked, guild ranks will be shown for players in your guild.")
+			LeaPlusLC:MakeCB(SideTip, "TipShowTarget", "Show the unit's target", 16, -112, false, "If checked, unit targets will be shown.")
+			LeaPlusLC:MakeCB(SideTip, "TipBackSimple", "Color the backdrops based on faction", 16, -132, false, "If checked, backdrops will be tinted blue (friendly) or red (hostile).")
+			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -152, false, "If checked, tooltips for world units will be hidden during combat.|n|nYou can hold the shift key down to override this setting.")
 
-			LeaPlusLC:MakeTx(SideTip, "Scale", 356, -72)
-			LeaPlusLC:MakeSL(SideTip, "LeaPlusTipSize", "Drag to set the tooltip scale.", 0.50, 2.00, 0.05, 356, -92, "%.2f")
+			LeaPlusLC:CreateDropDown("TooltipAnchorMenu", "Anchor", SideTip, 146, "TOPLEFT", 356, -115, {L["None"], L["Overlay"], L["Cursor"], L["Cursor Left"], L["Cursor Right"]}, "")
+
+			local XOffsetHeading = LeaPlusLC:MakeTx(SideTip, "X Offset", 356, -132)
+			LeaPlusLC:MakeSL(SideTip, "TipCursorX", "Drag to set the cursor X offset.", -128, 128, 1, 356, -152, "%.0f")
+
+			local YOffsetHeading = LeaPlusLC:MakeTx(SideTip, "Y Offset", 356, -182)
+			LeaPlusLC:MakeSL(SideTip, "TipCursorY", "Drag to set the cursor Y offset.", -128, 128, 1, 356, -202, "%.0f")
+
+			LeaPlusLC:MakeTx(SideTip, "Scale", 356, -232)
+			LeaPlusLC:MakeSL(SideTip, "LeaPlusTipSize", "Drag to set the tooltip scale.", 0.50, 2.00, 0.05, 356, -252, "%.2f")
+
+			-- Function to enable or disable anchor controls
+			local function SetAnchorControls()
+				-- Hide overlay if anchor is set to none
+				if LeaPlusLC["TooltipAnchorMenu"] == 1 then
+					TipDrag:Hide()
+				else
+					TipDrag:Show()
+				end
+				-- Set the X and Y sliders
+				if LeaPlusLC["TooltipAnchorMenu"] == 1 or LeaPlusLC["TooltipAnchorMenu"] == 2 or LeaPlusLC["TooltipAnchorMenu"] == 3 then
+					-- Dropdown is set to screen or cursor so disable X and Y offset sliders
+					LeaPlusLC:LockItem(LeaPlusCB["TipCursorX"], true)
+					LeaPlusLC:LockItem(LeaPlusCB["TipCursorY"], true)
+					XOffsetHeading:SetAlpha(0.3)
+					YOffsetHeading:SetAlpha(0.3)
+					LeaPlusCB["TipCursorX"]:SetScript("OnEnter", nil)
+					LeaPlusCB["TipCursorY"]:SetScript("OnEnter", nil)
+				else
+					-- Dropdown is set to cursor left or cursor right so enable X and Y offset sliders
+					LeaPlusLC:LockItem(LeaPlusCB["TipCursorX"], false)
+					LeaPlusLC:LockItem(LeaPlusCB["TipCursorY"], false)
+					XOffsetHeading:SetAlpha(1.0)
+					YOffsetHeading:SetAlpha(1.0)
+					LeaPlusCB["TipCursorX"]:SetScript("OnEnter", LeaPlusLC.TipSee)
+					LeaPlusCB["TipCursorY"]:SetScript("OnEnter", LeaPlusLC.TipSee)
+				end
+			end
+
+			-- Set controls when anchor dropdown menu is changed and on startup
+			LeaPlusCB["ListFrameTooltipAnchorMenu"]:HookScript("OnHide", SetAnchorControls)
+			SetAnchorControls()
 
 			-- Help button hidden
 			SideTip.h:Hide()
@@ -4852,31 +4907,27 @@
 
 			-- Reset button handler
 			SideTip.r:SetScript("OnClick", function()
-				LeaPlusLC["TipMoveTip"] = "On";
-				LeaPlusLC["TipShowRank"] = "On";
-				LeaPlusLC["TipShowTarget"] = "On";
-				LeaPlusLC["TipBackSimple"] = "Off";
-				LeaPlusLC["TipHideInCombat"] = "Off";
+				LeaPlusLC["TipShowRank"] = "On"
+				LeaPlusLC["TipShowTarget"] = "On"
+				LeaPlusLC["TipBackSimple"] = "Off"
+				LeaPlusLC["TipHideInCombat"] = "Off"
 				LeaPlusLC["LeaPlusTipSize"] = 1.00
 				LeaPlusLC["TipOffsetX"] = -13
 				LeaPlusLC["TipOffsetY"] = 94
+				LeaPlusLC["TooltipAnchorMenu"] = 1
+				LeaPlusLC["TipCursorX"] = 0
+				LeaPlusLC["TipCursorY"] = 0
 				TipDrag:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
+				SetAnchorControls()
 				LeaPlusLC:SetTipScale()
 				SideTip:Hide(); SideTip:Show();
 			end)
 
-			-- Show tooltip overlay only if reposition checkbox is checked
-			LeaPlusCB["TipMoveTip"]:HookScript("OnClick", function()
-				if LeaPlusLC["TipMoveTip"] == "On" then
-					TipDrag:Show()
-				else
-					TipDrag:Hide()
-				end
-			end)
-
-			-- Show drag frame with configuration panel
+			-- Show drag frame with configuration panel if anchor is not set to none
 			SideTip:HookScript("OnShow", function()
-				if LeaPlusLC["TipMoveTip"] == "On" then
+				if LeaPlusLC["TooltipAnchorMenu"] == 1 then
+					TipDrag:Hide()
+				else
 					TipDrag:Show()
 				end
 			end)
@@ -4905,24 +4956,27 @@
 			LeaPlusCB["MoveTooltipButton"]:SetScript("OnClick", function()
 				if IsShiftKeyDown() and IsControlKeyDown() then
 					-- Preset profile
-					LeaPlusLC["TipMoveTip"] = "On";
-					LeaPlusLC["TipShowRank"] = "On";
-					LeaPlusLC["TipShowTarget"] = "On";
-					LeaPlusLC["TipBackSimple"] = "On";
-					LeaPlusLC["TipHideInCombat"] = "Off";
+					LeaPlusLC["TipShowRank"] = "On"
+					LeaPlusLC["TipShowTarget"] = "On"
+					LeaPlusLC["TipBackSimple"] = "On"
+					LeaPlusLC["TipHideInCombat"] = "Off"
 					LeaPlusLC["LeaPlusTipSize"] = 1.25
 					LeaPlusLC["TipOffsetX"] = -13
 					LeaPlusLC["TipOffsetY"] = 94
+					LeaPlusLC["TooltipAnchorMenu"] = 2
+					LeaPlusLC["TipCursorX"] = 0
+					LeaPlusLC["TipCursorY"] = 0
 					TipDrag:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
+					SetAnchorControls()
 					LeaPlusLC:SetTipScale()
-					LeaPlusLC:SetDim();
-					LeaPlusLC:ReloadCheck();
-					SideTip:Show(); SideTip:Hide(); -- Needed to update tooltip scale
-					LeaPlusLC["PageF"]:Hide(); LeaPlusLC["PageF"]:Show();
+					LeaPlusLC:SetDim()
+					LeaPlusLC:ReloadCheck()
+					SideTip:Show(); SideTip:Hide() -- Needed to update tooltip scale
+					LeaPlusLC["PageF"]:Hide(); LeaPlusLC["PageF"]:Show()
 				else
 					-- Show tooltip configuration panel
-					LeaPlusLC:HideFrames();
-					SideTip:Show();
+					LeaPlusLC:HideFrames()
+					SideTip:Show()
 
 					-- Set scale
 					TipDrag:SetScale(LeaPlusLC["LeaPlusTipSize"])
@@ -7331,7 +7385,6 @@
 				LeaPlusLC:LoadVarNum("MinimapScale", 1, 1, 2)				-- Minimap scale slider
 
 				LeaPlusLC:LoadVarChk("TipModEnable", "Off")					-- Manage tooltip
-				LeaPlusLC:LoadVarChk("TipMoveTip", "On")					-- Reposition the tooltip
 				LeaPlusLC:LoadVarChk("TipShowRank", "On")					-- Show rank
 				LeaPlusLC:LoadVarChk("TipShowTarget", "On")					-- Show target
 				LeaPlusLC:LoadVarChk("TipBackSimple", "Off")				-- Color backdrops
@@ -7339,6 +7392,9 @@
 				LeaPlusLC:LoadVarNum("LeaPlusTipSize", 1.00, 0.50, 2.00)	-- Tooltip scale slider
 				LeaPlusLC:LoadVarNum("TipOffsetX", -13, -5000, 5000)		-- Tooltip X offset
 				LeaPlusLC:LoadVarNum("TipOffsetY", 94, -5000, 5000)			-- Tooltip Y offset
+				LeaPlusLC:LoadVarNum("TooltipAnchorMenu", 1, 1, 5)			-- Tooltip anchor menu
+				LeaPlusLC:LoadVarNum("TipCursorX", 0, -128, 128)			-- Tooltip cursor X offset
+				LeaPlusLC:LoadVarNum("TipCursorY", 0, -128, 128)			-- Tooltip cursor Y offset
 
 				LeaPlusLC:LoadVarChk("EnhanceDressup", "Off")				-- Enhance dressup
 				LeaPlusLC:LoadVarChk("ShowVolume", "Off")					-- Show volume slider
@@ -7493,7 +7549,6 @@
 			LeaPlusDB["MinimapScale"]			= LeaPlusLC["MinimapScale"]
 
 			LeaPlusDB["TipModEnable"]			= LeaPlusLC["TipModEnable"]
-			LeaPlusDB["TipMoveTip"]				= LeaPlusLC["TipMoveTip"]
 			LeaPlusDB["TipShowRank"]			= LeaPlusLC["TipShowRank"]
 			LeaPlusDB["TipShowTarget"]			= LeaPlusLC["TipShowTarget"]
 			LeaPlusDB["TipBackSimple"]			= LeaPlusLC["TipBackSimple"]
@@ -7501,6 +7556,9 @@
 			LeaPlusDB["LeaPlusTipSize"]			= LeaPlusLC["LeaPlusTipSize"]
 			LeaPlusDB["TipOffsetX"]				= LeaPlusLC["TipOffsetX"]
 			LeaPlusDB["TipOffsetY"]				= LeaPlusLC["TipOffsetY"]
+			LeaPlusDB["TooltipAnchorMenu"]		= LeaPlusLC["TooltipAnchorMenu"]
+			LeaPlusDB["TipCursorX"]				= LeaPlusLC["TipCursorX"]
+			LeaPlusDB["TipCursorY"]				= LeaPlusLC["TipCursorY"]
 
 			LeaPlusDB["EnhanceDressup"]			= LeaPlusLC["EnhanceDressup"]
 			LeaPlusDB["ShowVolume"] 			= LeaPlusLC["ShowVolume"]
@@ -7800,6 +7858,7 @@
 		local text = frame:CreateFontString(nil, 'ARTWORK', 'GameFontNormal')
 		text:SetPoint("TOPLEFT", x, y)
 		text:SetText(L[title])
+		return text
 	end
 
 	-- Define text
@@ -9172,6 +9231,9 @@
 				LeaPlusDB["TipModEnable"] = "On"				-- Manage tooltip
 				LeaPlusDB["TipBackSimple"] = "On"				-- Color backdrops
 				LeaPlusDB["LeaPlusTipSize"] = 1.25				-- Tooltip scale slider
+				LeaPlusDB["TooltipAnchorMenu"] = 2				-- Tooltip anchor
+				LeaPlusDB["TipCursorX"] = 0						-- X offset
+				LeaPlusDB["TipCursorY"] = 0						-- Y offset
 				LeaPlusDB["EnhanceDressup"] = "On"				-- Enhance dressup
 				LeaPlusDB["ShowVolume"] = "On"					-- Show volume slider
 				LeaPlusDB["AhExtras"] = "On"					-- Show auction controls

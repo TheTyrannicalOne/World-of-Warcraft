@@ -65,30 +65,36 @@ MasterPlanAG = {
 			["class"] = "PRIEST",
 		},
 	},
+	["IgnoreRewards"] = {
+	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
 			["class"] = "WARRIOR",
 			["summary"] = {
-				["lastOilTime"] = 1567485656,
-				["ti2"] = 122486,
+				["lastOilTime"] = 1567956354,
 				["inProgress"] = {
-					[565] = 1567508297,
-					[397] = 1567506074,
-					[580] = 1567514458,
-					[745] = 1567550456,
-					[269] = 1567500040,
+					[745] = 1568021154,
+					[676] = 1568008197,
+					[624] = 1567993828,
+					[128] = 1567993815,
+					[670] = 1567993806,
+					[189] = 1567996386,
+					[574] = 1568021156,
+					[396] = 1568011936,
+					[565] = 1568044223,
 				},
 				["ti3"] = 127855,
+				["ti2"] = 122486,
+				["tt1"] = 1567870692,
 				["ti1"] = 118531,
-				["tt1"] = 1566668928,
 				["tt3"] = 1567291759,
-				["tt2"] = 1566735702,
+				["tt2"] = 1567905028,
 			},
 			["faction"] = "Horde",
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1567485620,
-			["curRes"] = 5671,
-			["curOil"] = 76675,
+			["lastCacheTime"] = 1567993669,
+			["curRes"] = 5386,
+			["curOil"] = 76730,
 		},
 	},
 	["Tanaris"] = {
@@ -99,8 +105,8 @@ MasterPlanAG = {
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["class"] = "DRUID",
 			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Sargeras"] = {
@@ -119,8 +125,8 @@ MasterPlanAG = {
 			["class"] = "PRIEST",
 		},
 		["Vancard"] = {
-			["faction"] = "Horde",
 			["class"] = "MAGE",
+			["faction"] = "Horde",
 		},
 	},
 }
