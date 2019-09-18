@@ -118,13 +118,6 @@ X: -298
 Y: -114
 W: 300
 H: 427
-Frame: ScriptErrorsFrame
-FrameLevel: 1
-Anchor: TOP
-X: 2
-Y: -98
-W: 500
-H: 300
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: CENTER
@@ -138,6 +131,13 @@ Anchor: CENTER
 X: 0
 Y: 0
 W: 300
+H: 300
+Frame: ScriptErrorsFrame
+FrameLevel: 1
+Anchor: TOP
+X: 2
+Y: -98
+W: 500
 H: 300
 Frame: scanner_button
 FrameLevel: 1
