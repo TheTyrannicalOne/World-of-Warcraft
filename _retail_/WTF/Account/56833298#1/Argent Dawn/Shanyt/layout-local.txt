@@ -146,10 +146,3 @@ X: 189
 Y: -170
 W: 200
 H: 50
-Frame: AllTheThings-Window-Tradeskills
-FrameLevel: 1
-Anchor: RIGHT
-X: 300
-Y: 0
-W: 300
-H: 508

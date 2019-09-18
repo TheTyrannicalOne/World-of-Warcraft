@@ -4,8 +4,6 @@ WoWDBProfilerData = {
 		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["region"] = "US",
-	["version"] = 19,
-	["build_num"] = 31478,
 	["global"] = {
 		["objects"] = {
 			["206726"] = {
@@ -26,50 +24,50 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[140773] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
 			},
 			[158075] = {
 				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[4800] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 75,
+				["unique_id"] = 0,
 			},
 			[4816] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
 				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[159517] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 117,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["41:1712:4796:4802"] = true,
-				},
-				["durability"] = 55,
-				["suffix_id"] = 0,
 			},
 			[4820] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
 				["durability"] = 75,
-				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[4793] = {
 				["instance_difficulty_id"] = 14,
@@ -77,8 +75,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[4797] = {
 				["instance_difficulty_id"] = 14,
@@ -86,47 +84,45 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
-			[122529] = {
-				["instance_difficulty_id"] = 0,
+			[160911] = {
+				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["durability"] = 85,
+				["unique_id"] = 0,
 			},
 			[155259] = {
 				["instance_difficulty_id"] = 25,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[122261] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
 				["unique_id"] = 0,
+			},
+			[159330] = {
+				["instance_difficulty_id"] = 18,
+				["upgrade_value"] = 0,
 				["suffix_id"] = 0,
+				["durability"] = 140,
+				["unique_id"] = 0,
 			},
 			[4782] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
 				["durability"] = 90,
-				["suffix_id"] = 0,
-			},
-			[4766] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 45,
+			},
+			[128173] = {
+				["instance_difficulty_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
 			},
 			[4790] = {
 				["instance_difficulty_id"] = 14,
@@ -134,8 +130,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[16059] = {
 				["instance_difficulty_id"] = 14,
@@ -143,21 +139,14 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[122361] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
-			},
-			[85663] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["durability"] = 20,
-				["suffix_id"] = 0,
+				["upgrade_value"] = 0,
 			},
 			[16060] = {
 				["instance_difficulty_id"] = 14,
@@ -165,15 +154,39 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[159325] = {
 				["instance_difficulty_id"] = 18,
 				["upgrade_value"] = 116,
-				["unique_id"] = 0,
-				["durability"] = 50,
 				["suffix_id"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[85663] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["durability"] = 20,
+				["unique_id"] = 0,
+			},
+			[159337] = {
+				["instance_difficulty_id"] = 19,
+				["upgrade_value"] = 117,
+				["suffix_id"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[4822] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 70,
+				["unique_id"] = 0,
 			},
 			[69239] = {
 				["instance_difficulty_id"] = 14,
@@ -181,81 +194,66 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
-			},
-			[159337] = {
-				["instance_difficulty_id"] = 19,
-				["upgrade_value"] = 117,
 				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
 			},
 			[155245] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 115,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[4822] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
 			},
 			[158415] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 114,
-				["unique_id"] = 0,
-				["durability"] = 40,
 				["suffix_id"] = 0,
+				["durability"] = 40,
+				["unique_id"] = 0,
 			},
 			[122255] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
 			},
 			[160252] = {
 				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
-			},
-			[128173] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[159330] = {
-				["instance_difficulty_id"] = 18,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 140,
-				["suffix_id"] = 0,
 			},
-			[160911] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[4800] = {
+			[4766] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["durability"] = 75,
+				["durability"] = 45,
+				["unique_id"] = 0,
+			},
+			[122261] = {
+				["instance_difficulty_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[122529] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[159517] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 117,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["41:1712:4796:4802"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
 			},
 		},
 		["npcs"] = {
@@ -266,6 +264,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Orgrimmar",
 				["class"] = "WARRIOR",
+				["reaction"] = "117:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -280,7 +279,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "117:Horde:FRIENDLY",
 			},
 			["44866"] = {
 				["is_pvp"] = true,
@@ -288,8 +286,8 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 				["faction"] = "Orgrimmar",
+				["reaction"] = "117:Horde:FRIENDLY",
 				["auctioneer"] = true,
-				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -304,15 +302,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "117:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
 			},
 			["146011"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[286305] = 1,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -323,7 +321,7 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 				["faction"] = "Orgrimmar",
-				["reaction"] = "117:Horde:FRIENDLY",
+				["auctioneer"] = true,
 				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -339,15 +337,26 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["auctioneer"] = true,
+				["reaction"] = "117:Horde:FRIENDLY",
 			},
 			["43239"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[80610] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["3296"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[58519] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -358,8 +367,8 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 				["faction"] = "Orgrimmar",
+				["reaction"] = "117:Horde:FRIENDLY",
 				["class"] = "WARRIOR",
-				["auctioneer"] = true,
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -374,15 +383,26 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "117:Horde:FRIENDLY",
+				["auctioneer"] = true,
 			},
-			["109751"] = {
+			["154335"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
+							[304062] = 1,
+						},
+					},
+				},
+			},
+			["109751"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
 							[183585] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -390,20 +410,20 @@ WoWDBProfilerData = {
 			["65298"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[127769] = 1,
-						},
-						["stats"] = {
 						},
 					},
 				},
 			},
 			["88241"] = {
-				["reaction"] = "117:Horde:FRIENDLY",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "117:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -422,19 +442,19 @@ WoWDBProfilerData = {
 			["34615"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[65753] = 1,
-						},
-						["stats"] = {
 						},
 					},
 				},
 			},
-			["154335"] = {
+			["45337"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[304062] = 1,
+							[58511] = 2,
 						},
 						["stats"] = {
 						},
@@ -469,31 +489,33 @@ WoWDBProfilerData = {
 			},
 			[51464] = {
 			},
-			[42170] = {
+			[31891] = {
+			},
+			[51555] = {
+				["can_share"] = true,
 			},
 			[51498] = {
 			},
 			[49422] = {
 				["can_share"] = true,
 			},
-			[42422] = {
+			[48641] = {
 			},
-			[49424] = {
-				["can_share"] = true,
-			},
-			[42420] = {
-			},
-			[42234] = {
-			},
-			[48642] = {
-			},
-			[31891] = {
+			[42170] = {
 			},
 			[44989] = {
 			},
-			[48641] = {
+			[42420] = {
 			},
-			[51555] = {
+			[42421] = {
+			},
+			[42422] = {
+			},
+			[48642] = {
+			},
+			[42234] = {
+			},
+			[49424] = {
 				["can_share"] = true,
 			},
 		},
@@ -1243,20 +1265,23 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566525617,
 			},
-			[54538] = {
+			[42021] = {
 				["location"] = {
-					["y"] = 19.30516958236694,
-					["world_map_id"] = 863,
-					["x"] = 79.22253012657166,
+					["y"] = 59.02133584022522,
+					["world_map_id"] = 630,
+					["x"] = 61.76794767379761,
 				},
 				["rewards"] = {
+					["items"] = {
+						"134245:1", -- [1]
+					},
 					["currency_count"] = 0,
-					["item_count"] = 0,
+					["item_count"] = 1,
 					["honor"] = 0,
 					["money"] = 0,
-					["xp"] = 32688,
+					["xp"] = 0,
 				},
-				["estimated_end_time"] = 1567962031,
+				["estimated_end_time"] = 1566529277,
 			},
 			[44817] = {
 				["location"] = {
@@ -1276,23 +1301,20 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566572417,
 			},
-			[40850] = {
+			[42119] = {
 				["location"] = {
-					["y"] = 75.32095313072205,
-					["world_map_id"] = 650,
-					["x"] = 54.49970364570618,
+					["y"] = 34.05405282974243,
+					["world_map_id"] = 630,
+					["x"] = 43.37527751922607,
 				},
 				["rewards"] = {
-					["currency_count"] = 1,
+					["currency_count"] = 0,
 					["item_count"] = 0,
 					["honor"] = 0,
-					["money"] = 0,
+					["money"] = 404300,
 					["xp"] = 0,
-					["currencies"] = {
-						"325:1220", -- [1]
-					},
 				},
-				["estimated_end_time"] = 1566572417,
+				["estimated_end_time"] = 1566594077,
 			},
 			[41862] = {
 				["location"] = {
@@ -1312,23 +1334,23 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566572477,
 			},
-			[54689] = {
+			[44113] = {
 				["location"] = {
-					["y"] = 43.25708150863648,
-					["world_map_id"] = 896,
-					["x"] = 31.74145817756653,
+					["y"] = 76.1958122253418,
+					["world_map_id"] = 680,
+					["x"] = 57.2637677192688,
 				},
 				["rewards"] = {
-					["currency_count"] = 1,
-					["item_count"] = 0,
+					["items"] = {
+						"134284:1", -- [1]
+					},
+					["currency_count"] = 0,
+					["item_count"] = 1,
 					["honor"] = 0,
 					["money"] = 0,
-					["xp"] = 32688,
-					["currencies"] = {
-						"249:1553", -- [1]
-					},
+					["xp"] = 0,
 				},
-				["estimated_end_time"] = 1566525617,
+				["estimated_end_time"] = 1566658877,
 			},
 			[43328] = {
 				["location"] = {
@@ -1348,20 +1370,23 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566658877,
 			},
-			[54664] = {
+			[43985] = {
 				["location"] = {
-					["y"] = 42.00594425201416,
-					["world_map_id"] = 863,
-					["x"] = 82.63069987297058,
+					["y"] = 7.374006509780884,
+					["world_map_id"] = 650,
+					["x"] = 49.15379881858826,
 				},
 				["rewards"] = {
+					["items"] = {
+						"141932:1", -- [1]
+					},
 					["currency_count"] = 0,
-					["item_count"] = 0,
+					["item_count"] = 1,
 					["honor"] = 0,
 					["money"] = 0,
-					["xp"] = 32688,
+					["xp"] = 0,
 				},
-				["estimated_end_time"] = 1567962091,
+				["estimated_end_time"] = 1566918077,
 			},
 			[43827] = {
 				["location"] = {
@@ -1417,20 +1442,23 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566572477,
 			},
-			[43639] = {
+			[42018] = {
 				["location"] = {
-					["y"] = 61.69045567512512,
-					["world_map_id"] = 680,
-					["x"] = 43.44912171363831,
+					["y"] = 16.71123504638672,
+					["world_map_id"] = 630,
+					["x"] = 57.26083517074585,
 				},
 				["rewards"] = {
-					["currency_count"] = 0,
+					["currency_count"] = 1,
 					["item_count"] = 0,
 					["honor"] = 0,
-					["money"] = 2403600,
+					["money"] = 0,
 					["xp"] = 0,
+					["currencies"] = {
+						"380:1220", -- [1]
+					},
 				},
-				["estimated_end_time"] = 1566745277,
+				["estimated_end_time"] = 1566572477,
 			},
 			[42082] = {
 				["location"] = {
@@ -1450,6 +1478,21 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566572477,
 			},
+			[41992] = {
+				["location"] = {
+					["y"] = 38.73170614242554,
+					["world_map_id"] = 641,
+					["x"] = 67.22267866134644,
+				},
+				["rewards"] = {
+					["currency_count"] = 0,
+					["item_count"] = 0,
+					["honor"] = 0,
+					["money"] = 477500,
+					["xp"] = 0,
+				},
+				["estimated_end_time"] = 1566550877,
+			},
 			[41622] = {
 				["location"] = {
 					["y"] = 41.68699979782105,
@@ -1468,38 +1511,20 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566529217,
 			},
-			[41992] = {
+			[43639] = {
 				["location"] = {
-					["y"] = 38.73170614242554,
-					["world_map_id"] = 641,
-					["x"] = 67.22267866134644,
+					["y"] = 61.69045567512512,
+					["world_map_id"] = 680,
+					["x"] = 43.44912171363831,
 				},
 				["rewards"] = {
 					["currency_count"] = 0,
 					["item_count"] = 0,
 					["honor"] = 0,
-					["money"] = 477500,
+					["money"] = 2403600,
 					["xp"] = 0,
 				},
-				["estimated_end_time"] = 1566550877,
-			},
-			[42018] = {
-				["location"] = {
-					["y"] = 16.71123504638672,
-					["world_map_id"] = 630,
-					["x"] = 57.26083517074585,
-				},
-				["rewards"] = {
-					["currency_count"] = 1,
-					["item_count"] = 0,
-					["honor"] = 0,
-					["money"] = 0,
-					["xp"] = 0,
-					["currencies"] = {
-						"380:1220", -- [1]
-					},
-				},
-				["estimated_end_time"] = 1566572477,
+				["estimated_end_time"] = 1566745277,
 			},
 			[44892] = {
 				["location"] = {
@@ -1516,41 +1541,38 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566529277,
 			},
-			[43985] = {
+			[54664] = {
 				["location"] = {
-					["y"] = 7.374006509780884,
-					["world_map_id"] = 650,
-					["x"] = 49.15379881858826,
+					["y"] = 42.00594425201416,
+					["world_map_id"] = 863,
+					["x"] = 82.63069987297058,
 				},
 				["rewards"] = {
-					["items"] = {
-						"141932:1", -- [1]
-					},
 					["currency_count"] = 0,
-					["item_count"] = 1,
+					["item_count"] = 0,
 					["honor"] = 0,
 					["money"] = 0,
-					["xp"] = 0,
+					["xp"] = 32688,
 				},
-				["estimated_end_time"] = 1566918077,
+				["estimated_end_time"] = 1567962091,
 			},
-			[44113] = {
+			[54689] = {
 				["location"] = {
-					["y"] = 76.1958122253418,
-					["world_map_id"] = 680,
-					["x"] = 57.2637677192688,
+					["y"] = 43.25708150863648,
+					["world_map_id"] = 896,
+					["x"] = 31.74145817756653,
 				},
 				["rewards"] = {
-					["items"] = {
-						"134284:1", -- [1]
-					},
-					["currency_count"] = 0,
-					["item_count"] = 1,
+					["currency_count"] = 1,
+					["item_count"] = 0,
 					["honor"] = 0,
 					["money"] = 0,
-					["xp"] = 0,
+					["xp"] = 32688,
+					["currencies"] = {
+						"249:1553", -- [1]
+					},
 				},
-				["estimated_end_time"] = 1566658877,
+				["estimated_end_time"] = 1566525617,
 			},
 			[42745] = {
 				["location"] = {
@@ -1570,20 +1592,23 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566745277,
 			},
-			[42119] = {
+			[40850] = {
 				["location"] = {
-					["y"] = 34.05405282974243,
-					["world_map_id"] = 630,
-					["x"] = 43.37527751922607,
+					["y"] = 75.32095313072205,
+					["world_map_id"] = 650,
+					["x"] = 54.49970364570618,
 				},
 				["rewards"] = {
-					["currency_count"] = 0,
+					["currency_count"] = 1,
 					["item_count"] = 0,
 					["honor"] = 0,
-					["money"] = 404300,
+					["money"] = 0,
 					["xp"] = 0,
+					["currencies"] = {
+						"325:1220", -- [1]
+					},
 				},
-				["estimated_end_time"] = 1566594077,
+				["estimated_end_time"] = 1566572417,
 			},
 			[43642] = {
 				["location"] = {
@@ -1603,24 +1628,23 @@ WoWDBProfilerData = {
 				},
 				["estimated_end_time"] = 1566831617,
 			},
-			[42021] = {
+			[54538] = {
 				["location"] = {
-					["y"] = 59.02133584022522,
-					["world_map_id"] = 630,
-					["x"] = 61.76794767379761,
+					["y"] = 19.30516958236694,
+					["world_map_id"] = 863,
+					["x"] = 79.22253012657166,
 				},
 				["rewards"] = {
-					["items"] = {
-						"134245:1", -- [1]
-					},
 					["currency_count"] = 0,
-					["item_count"] = 1,
+					["item_count"] = 0,
 					["honor"] = 0,
 					["money"] = 0,
-					["xp"] = 0,
+					["xp"] = 32688,
 				},
-				["estimated_end_time"] = 1566529277,
+				["estimated_end_time"] = 1567962031,
 			},
 		},
 	},
+	["build_num"] = 31478,
+	["version"] = 19,
 }
