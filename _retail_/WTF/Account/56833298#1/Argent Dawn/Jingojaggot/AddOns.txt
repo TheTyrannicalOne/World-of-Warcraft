@@ -102,3 +102,4 @@ WeakAuras: disabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
+OPie_Classic: disabled

@@ -56,14 +56,10 @@ SET lodObjectCullDist "30.000000"
 SET terrainMipLevel "0.000000"
 SET textureFilteringMode "5.000000"
 SET groundEffectAnimation "0.000000"
-
 SET graphicsSunshafts "3"
 SET graphicsLiquidDetail "4"
 SET graphicsShadowQuality "6"
 SET graphicsGroundClutter "10"
-SET gxWindowedResolution "2560x1440"
 SET graphicsSSAO "5"
 SET graphicsTextureFiltering "6"
 SET graphicsEnvironmentDetail "10"
-
-

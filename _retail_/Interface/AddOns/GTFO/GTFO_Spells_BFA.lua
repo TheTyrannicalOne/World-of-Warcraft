@@ -1033,3 +1033,16 @@ GTFO.SpellID["303422"] = {
   sound = 1;
 };
 
+GTFO.SpellID["299276"] = {
+  --desc = "Sanction (Queen Azshara)";
+  applicationOnly = true;
+  sound = 1;
+};
+
+GTFO.SpellID["298569"] = {
+  --desc = "Drained Soul (Queen Azshara)";
+  applicationOnly = true;
+  sound = 1;
+  minimumStacks = 5;
+};
+

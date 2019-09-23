@@ -1,31 +1,32 @@
-9/17 21:17:33.079  Connection Initialize
-9/17 21:17:39.587  Glue Start Login
-9/17 21:17:39.587  BattleNet Attempt Logon
-9/17 21:17:39.894  BattleNet Front Connected
-9/17 21:17:40.022  BattleNet Logon Queue Update
-9/17 21:17:40.301  BattleNet Logon Complete
-9/17 21:17:40.454  BattleNet Game Account Name
-9/17 21:17:40.454  BattleNet Game Account Name
-9/17 21:17:40.454  BattleNet Attempt Complete Login
-9/17 21:17:40.838  BattleNet Realm List Ticket
-9/17 21:17:40.921  BattleNet Sub Region List
-9/17 21:17:41.280  BattleNet Last Played Char
-9/17 21:17:41.343  BattleNet Last Played Char
-9/17 21:17:41.401  BattleNet Last Played Char
-9/17 21:17:41.537  BattleNet Last Played Char
-9/17 21:17:41.654  BattleNet Last Played Char
-9/17 21:17:41.654  BattleNet Join Realm
-9/17 21:17:41.820  BattleNet Realm Join
-9/17 21:17:41.820  Change Connection
-9/17 21:17:41.820  Connect
-9/17 21:18:02.822  Handle Cant Connect
-9/17 21:18:02.875  Handle Connect
-9/17 21:18:04.708  Handle Auth Response: 0
-9/17 21:18:04.708  Glue Authed To WoW: 0
-9/17 21:18:05.008  BattleNet Connected To Realm
-9/17 21:18:05.008  BattleNet Front Disconnecting
-9/17 21:18:05.096  BattleNet Front Disconnected
-9/17 21:18:05.243  Handle Char Enum
-9/17 22:59:40.219  Handle Logout Response: 0
-9/17 22:59:48.959  Disconnect: 13
-9/17 22:59:48.959  Connection Destroy
+9/22 21:05:22.100  Connection Initialize
+9/22 21:05:28.028  Glue Start Login
+9/22 21:05:28.028  BattleNet Attempt Logon
+9/22 21:05:28.315  BattleNet Front Connected
+9/22 21:05:28.443  BattleNet Logon Queue Update
+9/22 21:05:28.690  BattleNet Logon Complete
+9/22 21:05:28.844  BattleNet Game Account Name
+9/22 21:05:28.906  BattleNet Game Account Name
+9/22 21:05:28.906  BattleNet Attempt Complete Login
+9/22 21:05:29.392  BattleNet Realm List Ticket
+9/22 21:05:29.521  BattleNet Sub Region List
+9/22 21:05:29.924  BattleNet Last Played Char
+9/22 21:05:29.993  BattleNet Last Played Char
+9/22 21:05:30.054  BattleNet Last Played Char
+9/22 21:05:30.141  BattleNet Last Played Char
+9/22 21:05:30.214  BattleNet Last Played Char
+9/22 21:05:30.214  BattleNet Last Played Char
+9/22 21:05:30.214  BattleNet Join Realm
+9/22 21:05:30.505  BattleNet Realm Join
+9/22 21:05:30.505  Change Connection
+9/22 21:05:30.505  Connect
+9/22 21:05:51.515  Handle Cant Connect
+9/22 21:05:51.566  Handle Connect
+9/22 21:05:53.960  Handle Auth Response: 0
+9/22 21:05:53.960  Glue Authed To WoW: 0
+9/22 21:05:54.243  BattleNet Connected To Realm
+9/22 21:05:54.243  BattleNet Front Disconnecting
+9/22 21:05:54.321  BattleNet Front Disconnected
+9/22 21:05:54.746  Handle Char Enum
+9/22 21:20:38.465  Handle Logout Response: 0
+9/22 21:20:45.527  Disconnect: 13
+9/22 21:20:45.527  Connection Destroy

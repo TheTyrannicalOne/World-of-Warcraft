@@ -6,7 +6,6 @@ BigWigs3DB = {
 			[-1358] = true,
 			[-557] = true,
 			[-573] = true,
-			[-367] = true,
 			[74] = true,
 			[76] = true,
 			[-575] = true,
@@ -14,6 +13,7 @@ BigWigs3DB = {
 			[-514] = true,
 			[-1152] = true,
 			[295] = true,
+			[-367] = true,
 			[-609] = true,
 			[-563] = true,
 			[-437] = true,
@@ -38,10 +38,6 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Bosses_Mannoroth"] = {
-		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -49,37 +45,15 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Bosses_Blackhand"] = {
-		},
-		["BigWigs_Bosses_Archimonde"] = {
-		},
-		["BigWigs_Plugins_AutoReply"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Bosses_Flamebender Ka'graz"] = {
-		},
-		["BigWigs_Bosses_Oregorger"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Bosses_The Blast Furnace"] = {
-		},
-		["BigWigs_Bosses_The Iron Maidens"] = {
-		},
-		["BigWigs_Bosses_Blackrock Foundry Trash"] = {
-		},
-		["BigWigs_Bosses_Operator Thogar"] = {
-		},
-		["BigWigs_Bosses_Beastlord Darmac"] = {
-		},
-		["BigWigs_Bosses_Gruul"] = {
+		["BigWigs_Plugins_AutoReply"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 			["profiles"] = {
@@ -93,13 +67,11 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.0000152587891,
+					["BigWigsEmphasizeAnchor_width"] = 319.9998168945313,
 					["BigWigsEmphasizeAnchor_height"] = 21.99995040893555,
 					["BigWigsAnchor_height"] = 16.00004386901856,
-					["BigWigsEmphasizeAnchor_width"] = 319.9998168945313,
 				},
 			},
-		},
-		["BigWigs_Bosses_Hans'gar and Franzok"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -108,26 +80,20 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Hellfire Citadel Trash"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Bosses_Kromog"] = {
-		},
-		["BigWigs_Bosses_Salyis's Warband"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["width"] = 140.0001678466797,
-					["font"] = "Friz Quadrata TT",
 					["height"] = 119.9999771118164,
+					["font"] = "Friz Quadrata TT",
+					["width"] = 140.0001678466797,
 				},
 			},
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -135,6 +101,10 @@ BigWigs3DB = {
 					["font"] = "Friz Quadrata TT",
 				},
 			},
+		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
 		},
 	},
 	["wipe80"] = true,
@@ -833,18 +803,18 @@ BigWigsStatsDB = {
 				["kills"] = 5,
 			},
 		},
-		[1372] = {
+		[1447] = {
 			["mythic"] = {
-				["best"] = 25.01499999999942,
+				["best"] = 14.50099999999657,
 				["kills"] = 6,
 			},
 			["heroic"] = {
-				["best"] = 6.95299999999952,
-				["kills"] = 5,
+				["best"] = 4.261000000000422,
+				["kills"] = 6,
 			},
 			["normal"] = {
-				["best"] = 4.3799999999992,
-				["kills"] = 5,
+				["best"] = 4.31099999999424,
+				["kills"] = 4,
 			},
 		},
 		[1394] = {
@@ -875,18 +845,18 @@ BigWigsStatsDB = {
 				["kills"] = 7,
 			},
 		},
-		[1447] = {
+		[1432] = {
 			["mythic"] = {
-				["best"] = 14.50099999999657,
+				["best"] = 26.29099999999926,
 				["kills"] = 6,
 			},
 			["heroic"] = {
-				["best"] = 4.261000000000422,
-				["kills"] = 6,
+				["best"] = 6.554000000000087,
+				["kills"] = 5,
 			},
 			["normal"] = {
-				["best"] = 4.31099999999424,
-				["kills"] = 4,
+				["best"] = 6.401999999998225,
+				["kills"] = 5,
 			},
 		},
 		[1391] = {
@@ -946,17 +916,17 @@ BigWigsStatsDB = {
 				["kills"] = 5,
 			},
 		},
-		[1432] = {
+		[1372] = {
 			["mythic"] = {
-				["best"] = 26.29099999999926,
+				["best"] = 25.01499999999942,
 				["kills"] = 6,
 			},
 			["heroic"] = {
-				["best"] = 6.554000000000087,
+				["best"] = 6.95299999999952,
 				["kills"] = 5,
 			},
 			["normal"] = {
-				["best"] = 6.401999999998225,
+				["best"] = 4.3799999999992,
 				["kills"] = 5,
 			},
 		},

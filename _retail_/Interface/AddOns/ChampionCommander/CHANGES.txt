@@ -1,13 +1,12 @@
-tag 618263b751f89bf2c6f867f710715a10a09be6a8 1.2.2
+tag 28b3a67130f2207aa61c8f5740a0c100320d7e9a 1.2.3
 Author:	Alar of Runetotem <alar@aspide.it>
-Date:	Mon Sep 2 23:32:43 2019 +0200
+Date:	Sun Sep 22 17:25:57 2019 +0200
 
-#11
-#33
+Reputation color codes improved
 
-commit c70447a38903f4c653ff26af5352494376375b9d
+commit 7c03a3a4af5befe8ff964c41a066ec13f5be16cc
 Author: Alar of Runetotem <alar@aspide.it>
-Date:   Mon Sep 2 23:31:27 2019 +0200
+Date:   Sun Sep 22 17:15:50 2019 +0200
 
-    Removed debug message
+    Feature: Improved reputation color codes.
 

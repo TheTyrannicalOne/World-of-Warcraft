@@ -1451,3 +1451,9 @@ Change Log:
 
 4.49.1
 * Updated ToC for WoW Classic 1.13.2
+
+4.49.2
+* Fixed LUA issues with WoW Classic
+
+4.49.3
+* Added BFA spells for The Eternal Palace
