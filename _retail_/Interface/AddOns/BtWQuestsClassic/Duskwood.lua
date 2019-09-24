@@ -24,79 +24,61 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD, {
     range = {20},
     items = {
         {
-            {
-                type = "quest",
-                id = 28564,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28564,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 28564,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28564,
+                        },
+                    },
                 },
-                x = 2,
-                y = 0,
-                connections = {
-                    3,
+                {
+                    type = "quest",
+                    id = 28564,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28564,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            {
-                type = "quest",
-                id = 28564,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28564,
-                        active = true,
-                    }
+                {
+                    type = "quest",
+                    id = 26728,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26728,
+                        },
+                    },
                 },
-                x = 2,
-                y = 0,
-                connections = {
-                    3,
+                {
+                    type = "quest",
+                    id = 26728,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26728,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            {
-                type = "quest",
-                id = 26728,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26728,
-                    }
-                },
-                x = 2,
-                y = 0,
-                connections = {
-                    3,
-                },
-            },
-            {
-                type = "quest",
-                id = 26728,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26728,
-                        active = true,
-                    }
-                },
-                x = 2,
-                y = 0,
-                connections = {
-                    3,
+                {
+                    name = "Go to Commander Althea Ebonlocke",
+                    breadcrumb = true,
+                    onClick = function ()
+                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7352, 0.4693, "Commander Althea Ebonlocke")
+                    end,
                 },
             },
-            {
-                name = "Go to Commander Althea Ebonlocke",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7352, 0.4693, "Commander Althea Ebonlocke")
-                end,
-                x = 2,
-                y = 0,
-                connections = {
-                    3,
-                },
+            x = 2,
+            y = 0,
+            connections = {
+                3, 
             },
         },
         {
@@ -356,48 +338,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD_MORBENT_FEL, {
     range = {20},
     items = {
         {
-            {
-                type = "quest",
-                id = 26785,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26785,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 26785,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26785,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    type = "quest",
+                    id = 26785,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26785,
+                            active = true,
+                        },
+                    },
+                },
+                {
+                    name = "Go to Apprentice Fess",
+                    breadcrumb = true,
+                    onClick = function ()
+                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4492, 0.6743, "Apprentice Fess")
+                    end,
                 },
             },
-            {
-                type = "quest",
-                id = 26785,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26785,
-                        active = true,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
-                },
-            },
-            {
-                name = "Go to Apprentice Fess",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4492, 0.6743, "Apprentice Fess")
-                end,
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                2, 
             },
         },
         {
@@ -551,48 +525,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD_HERMIT, {
     range = {20},
     items = {
         {
-            {
-                type = "quest",
-                id = 26627,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26627,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 26627,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26627,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 26627,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26627,
+                            active = true,
+                        },
+                    },
+                },
+                {
+                    name = "Go to Abercrombie",
+                    breadcrumb = true,
+                    onClick = function ()
+                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8743, 0.3520, "Abercrombie")
+                    end,
                 },
             },
-            {
-                type = "quest",
-                id = 26627,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26627,
-                        active = true,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
-                },
-            },
-            {
-                name = "Go to Abercrombie",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8743, 0.3520, "Abercrombie")
-                end,
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
             },
         },
         {

@@ -2210,6 +2210,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "Großtelemant Oculeth",
     },
+    [151964] = {
+        name = "Geistwandler Ebenhorn",
+    },
     [152002] = {
         name = "Abbild von Mimiron",
     },
@@ -2249,6 +2252,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152747] = {
         name = "Christy Schlagbolz",
     },
+    [153365] = {
+        name = "Honigrückenschwarmmutter",
+    },
+    [153393] = {
+        name = "Ingmar",
+    },
     [153509] = {
         name = "Handwerker Okata",
     },
@@ -2264,6 +2273,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "Shandris Mondfeder",
     },
+    [154023] = {
+        name = "Schlüpfende Ernterin",
+    },
     [154248] = {
         name = "Klingenkämpfer Inowari",
     },
@@ -2272,6 +2284,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154408] = {
         name = "Rolm",
+    },
+    [154464] = {
+        name = "Irdener Wächter",
     },
     [154640] = {
         name = "Großmarschall Tremblade",

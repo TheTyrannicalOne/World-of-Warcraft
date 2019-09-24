@@ -2108,6 +2108,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "수석 이동술사 오큘레스",
     },
+    [151964] = {
+        name = "영혼방랑자 에본혼",
+    },
     [152084] = {
         name = "므르를",
     },
@@ -2126,6 +2129,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152747] = {
         name = "크리스티 펀치코그",
     },
+    [153365] = {
+        name = "벌꿀등 둥지어미",
+    },
+    [153393] = {
+        name = "배리",
+    },
     [153509] = {
         name = "장인 오카타",
     },
@@ -2141,6 +2150,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "샨드리스 페더문",
     },
+    [154023] = {
+        name = "새끼 수확벌",
+    },
     [154248] = {
         name = "검객 이노와리",
     },
@@ -2149,6 +2161,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154408] = {
         name = "로름",
+    },
+    [154464] = {
+        name = "대지 수호자",
     },
     [154640] = {
         name = "최고사령관 트렘블레이드",

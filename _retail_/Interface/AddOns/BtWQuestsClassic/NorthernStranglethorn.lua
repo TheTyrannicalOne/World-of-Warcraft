@@ -147,79 +147,61 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_REBEL_
     range = {25,60},
     items = {
         {
-            {
-                type = "quest",
-                id = 26838,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26838,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 26838,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26838,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    type = "quest",
+                    id = 26838,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26838,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            {
-                type = "quest",
-                id = 26838,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26838,
-                        active = true,
-                    }
+                {
+                    type = "quest",
+                    id = 28699,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28699,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    type = "quest",
+                    id = 28699,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28699,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            {
-                type = "quest",
-                id = 28699,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28699,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
-                },
-            },
-            {
-                type = "quest",
-                id = 28699,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28699,
-                        active = true,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    name = "Go to Lieutenant Doren",
+                    breadcrumb = true,
+                    onClick = function ()
+                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4757, 0.1025, "Lieutenant Doren")
+                    end,
                 },
             },
-            {
-                name = "Go to Lieutenant Doren",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4757, 0.1025, "Lieutenant Doren")
-                end,
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                2, 
             },
         },
         {
@@ -340,48 +322,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_NESING
     range = {25,60},
     items = {
         {
-            {
-                type = "quest",
-                id = 26340,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26340,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 26340,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26340,
+                        },
+                    },
                 },
-                x = 2,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    type = "quest",
+                    id = 26340,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26340,
+                            active = true,
+                        },
+                    },
+                },
+                {
+                    name = "Go to Barnil Stonepot",
+                    breadcrumb = true,
+                    onClick = function ()
+                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4424, 0.2213, "Barnil Stonepot")
+                    end,
                 },
             },
-            {
-                type = "quest",
-                id = 26340,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26340,
-                        active = true,
-                    }
-                },
-                x = 2,
-                y = 0,
-                connections = {
-                    2,
-                },
-            },
-            {
-                name = "Go to Barnil Stonepot",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4424, 0.2213, "Barnil Stonepot")
-                end,
-                x = 2,
-                y = 0,
-                connections = {
-                    2,
-                },
+            x = 2,
+            y = 0,
+            connections = {
+                2, 
             },
         },
         {

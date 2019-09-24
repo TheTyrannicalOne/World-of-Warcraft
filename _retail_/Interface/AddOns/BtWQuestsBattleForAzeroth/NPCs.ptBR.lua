@@ -2147,6 +2147,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "Chefe Telemante Oculeth",
     },
+    [151964] = {
+        name = "Andarilho Espiritual Chifre de Ébano",
+    },
     [152002] = {
         name = "Imagem de Mimiron",
     },
@@ -2180,6 +2183,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152747] = {
         name = "Christy Socapeça",
     },
+    [153365] = {
+        name = "Matriarca-da-colmeia Meleira",
+    },
+    [153393] = {
+        name = "Abelardo",
+    },
     [153509] = {
         name = "Artífice Okata",
     },
@@ -2195,6 +2204,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "Shandris Plumaluna",
     },
+    [154023] = {
+        name = "Coletora Nascente",
+    },
     [154248] = {
         name = "Espadachim Inowari",
     },
@@ -2203,6 +2215,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154408] = {
         name = "Rolam",
+    },
+    [154464] = {
+        name = "Guardião Terrano",
     },
     [154640] = {
         name = "Grã-marechal Tremulâmina",

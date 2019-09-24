@@ -28,117 +28,83 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODE
 	items = {
 		-- Lead-ins
 		{
-			{
-				type = "quest",
-				id = 27746,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 27746,
-                        active = true,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
+			variations = {
+				{
+					type = "quest",
+					id = 27746,
+					restrictions = {
+						{
+							type = "quest",
+							id = 27746,
+							active = true,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 27746,
+					restrictions = {
+						{
+							type = "quest",
+							id = 27746,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28089,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28089,
+							active = true,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28089,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28089,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28571,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28571,
+							active = true,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28571,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28571,
+						},
+					},
+				},
+				{
+					name = "Go to High Executor Darthalia",
+					breadcrumb = true,
+					onClick = function ()
+						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2924, 0.6334, "High Executor Darthalia")
+					end,
 				},
 			},
-			{
-				type = "quest",
-				id = 27746,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 27746,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
-				},
+			x = 3,
+			y = 0,
+			connections = {
+				1, 
 			},
-
-
-			{
-				type = "quest",
-				id = 28089,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28089,
-                        active = true,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
-				},
-			},
-			{
-				type = "quest",
-				id = 28089,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28089,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
-				},
-			},
-
-
-			{
-				type = "quest",
-				id = 28571,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28571,
-                        active = true,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
-				},
-			},
-			{
-				type = "quest",
-				id = 28571,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28571,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
-				},
-			},
-
-
-            {
-                name = "Go to High Executor Darthalia",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2924, 0.6334, "High Executor Darthalia")
-                end,
-                x = 3,
-                y = 0,
-				connections = {
-					1,
-				},
-            },
 		},
 		--
 		{
@@ -157,36 +123,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODE
 			y = 2,
 		},
 		{
-			{
-				type = "quest",
-				id = 28111,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28111,
-                        active = true,
-                    }
-                },
-				x = 2,
-				y = 2,
-				connections = {
-					4,
+			variations = {
+				{
+					type = "quest",
+					id = 28111,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28111,
+							active = true,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28111,
+					visible = {
+						{
+							type = "quest",
+							id = 28111,
+						},
+					},
 				},
 			},
-			{
-				type = "quest",
-				id = 28111,
-                visible = {
-                    {
-                        type = "quest",
-                        id = 28111,
-                    }
-                },
-				x = 2,
-				y = 2,
-				connections = {
-					4,
-				},
+			x = 2,
+			y = 2,
+			connections = {
+				4, 
 			},
 		},
 		{
@@ -301,49 +264,41 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_SLUDGEFIE
 	},
 	items = {
 		{
-			{
-				type = "quest",
-				id = 28168,
-                restrictions = {
-                    {
-                        type = "quest",
-						id = 28168,
-						active = true,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
+			variations = {
+				{
+					type = "quest",
+					id = 28168,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28168,
+							active = true,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28168,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28168,
+						},
+					},
+				},
+				{
+					name = "Go to Warden Stillwater",
+					breadcrumb = true,
+					onClick = function ()
+						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3618, 0.6114, "Warden Stillwater")
+					end,
 				},
 			},
-			{
-				type = "quest",
-				id = 28168,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28168,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
-				},
+			x = 3,
+			y = 0,
+			connections = {
+				1, 
 			},
-            {
-				name = "Go to Warden Stillwater",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3618, 0.6114, "Warden Stillwater")
-                end,
-                x = 3,
-                y = 0,
-				connections = {
-					1,
-				},
-            },
 		},
 		{
 			type = "quest",
@@ -449,48 +404,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_STORMPIKE
 	},
 	items = {
 		{
-			{
-				type = "quest",
-				id = 28344,
-                restrictions = {
-                    {
-                        type = "quest",
-						id = 28344,
-						active = true,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
+			variations = {
+				{
+					type = "quest",
+					id = 28344,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28344,
+							active = true,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28344,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28344,
+						},
+					},
+				},
+				{
+					name = "Go to Kingslayer Orkus",
+					breadcrumb = true,
+					onClick = function ()
+						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4957, 0.7440, "Kingslayer Orkus")
+					end,
 				},
 			},
-			{
-				type = "quest",
-				id = 28344,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28344,
-                    }
-                },
-				x = 3,
-				y = 0,
-				connections = {
-					1,
-				},
-			},
-			{
-				name = "Go to Kingslayer Orkus",
-				breadcrumb = true,
-				onClick = function ()
-					BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4957, 0.7440, "Kingslayer Orkus")
-				end,
-				x = 3,
-				y = 0,
-				connections = {
-					1,
-				},
+			x = 3,
+			y = 0,
+			connections = {
+				1, 
 			},
 		},
 		{
@@ -648,48 +595,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_EASTPOINT
 	},
 	items = {
 		{
-			{
-				type = "quest",
-				id = 28620,
-                restrictions = {
-                    {
-                        type = "quest",
-						id = 28620,
-						active = true,
-                    }
-                },
-				x = 1,
-				y = 0,
-				connections = {
-					2,
+			variations = {
+				{
+					type = "quest",
+					id = 28620,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28620,
+							active = true,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28620,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28620,
+						},
+					},
+				},
+				{
+					name = "Go to Nils Beerot",
+					breadcrumb = true,
+					onClick = function ()
+						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6000, 0.6374, "Nils Beerot")
+					end,
 				},
 			},
-			{
-				type = "quest",
-				id = 28620,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28620,
-                    }
-                },
-				x = 1,
-				y = 0,
-				connections = {
-					2,
-				},
-			},
-			{
-				name = "Go to Nils Beerot",
-				breadcrumb = true,
-				onClick = function ()
-					BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6000, 0.6374, "Nils Beerot")
-				end,
-				x = 1,
-				y = 0,
-				connections = {
-					2,
-				},
+			x = 1,
+			y = 0,
+			connections = {
+				2, 
 			},
 		},
 		{
@@ -782,48 +721,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_SOUTHSHOR
 	},
 	items = {
 		{
-			{
-				type = "quest",
-				id = 28251,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28251,
-                        active = true,
-                    }
-                },
-				x = 1,
-				y = 0,
-				connections = {
-					2, 3,
+			variations = {
+				{
+					type = "quest",
+					id = 28251,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28251,
+							active = true,
+						},
+					},
+				},
+				{
+					type = "quest",
+					id = 28251,
+					restrictions = {
+						{
+							type = "quest",
+							id = 28251,
+						},
+					},
+				},
+				{
+					name = "Go to Serge Hinott",
+					breadcrumb = true,
+						onClick = function ()
+							BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4910, 0.6635, "Serge Hinott")
+						end,
 				},
 			},
-			{
-				type = "quest",
-				id = 28251,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28251,
-                    }
-                },
-				x = 1,
-				y = 0,
-				connections = {
-					2, 3,
-				},
-			},
-			{
-				name = "Go to Serge Hinott",
-				breadcrumb = true,
-				onClick = function ()
-					BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4910, 0.6635, "Serge Hinott")
-				end,
-				x = 1,
-				y = 0,
-				connections = {
-					2, 3,
-				},
+			x = 1,
+			y = 0,
+			connections = {
+				2, 3, 
 			},
 		},
 		{

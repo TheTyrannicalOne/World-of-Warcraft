@@ -5828,6 +5828,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Entrada a la Senda de los Sueños",
     },
+    [55396] = {
+        name = "La esencia de los sueños",
+    },
     [55398] = {
         name = "La larga vigilia",
     },
@@ -6011,6 +6014,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55652] = {
         name = "Bahía de Prospectus",
     },
+    [55657] = {
+        name = "Bajo la sombra de alas carmesí",
+    },
     [55685] = {
         name = "En busca de paz… y dinero",
     },
@@ -6040,6 +6046,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55734] = {
         name = "Construcción de plataforma de excavación",
+    },
+    [55735] = {
+        name = "La defensa de la Vorágine",
     },
     [55736] = {
         name = "Bienvenido a la Resistencia",
@@ -6182,6 +6191,24 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56181] = {
         name = "Yo invito",
     },
+    [56185] = {
+        name = "Susurros de N'Zoth",
+    },
+    [56186] = {
+        name = "Espías a diestra y siniestra",
+    },
+    [56187] = {
+        name = "Sombra de alas negras",
+    },
+    [56188] = {
+        name = "¡A las catacumbas!",
+    },
+    [56189] = {
+        name = "Tras el rastro del Príncipe Negro",
+    },
+    [56190] = {
+        name = "Salva a Ebacuerno",
+    },
     [56210] = {
         name = "Piedras de detección",
     },
@@ -6308,11 +6335,17 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56379] = {
         name = "La tripulación faltante",
     },
+    [56401] = {
+        name = "Aporte azul",
+    },
     [56422] = {
         name = "Sobre alas fantasmales",
     },
     [56429] = {
         name = "En aprietos",
+    },
+    [56504] = {
+        name = "El diario de Wrathion",
     },
     [56560] = {
         name = "Un descubrimiento curioso",

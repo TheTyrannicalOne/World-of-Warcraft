@@ -5828,6 +5828,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Sur le chemin du Rêve",
     },
+    [55396] = {
+        name = "Un rêve devenu réalité",
+    },
     [55398] = {
         name = "La longue veille",
     },
@@ -6011,6 +6014,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55652] = {
         name = "La baie des Bonnes Affaires",
     },
+    [55657] = {
+        name = "À l’ombre d’ailes cramoisies",
+    },
     [55685] = {
         name = "Paix et profits",
     },
@@ -6040,6 +6046,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55734] = {
         name = "Construction de foreuse",
+    },
+    [55735] = {
+        name = "Défendre le Maelström",
     },
     [55736] = {
         name = "Bienvenue dans la résistance",
@@ -6182,6 +6191,24 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56181] = {
         name = "Prime d’activité",
     },
+    [56185] = {
+        name = "Murmures de N’Zoth",
+    },
+    [56186] = {
+        name = "Des espions de tous les côtés",
+    },
+    [56187] = {
+        name = "L’ombre à aile noire",
+    },
+    [56188] = {
+        name = "Aux catacombes !",
+    },
+    [56189] = {
+        name = "Sur les traces du prince noir",
+    },
+    [56190] = {
+        name = "À la rescousse de Corne-d’Ébène",
+    },
     [56210] = {
         name = "Pierres de vision",
     },
@@ -6308,11 +6335,17 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56379] = {
         name = "L’équipage disparu",
     },
+    [56401] = {
+        name = "Un soupçon de bleu",
+    },
     [56422] = {
         name = "Sur des ailes spectrales",
     },
     [56429] = {
         name = "Nagas en force",
+    },
+    [56504] = {
+        name = "Le journal d’Irion",
     },
     [56560] = {
         name = "Une curieuse découverte",

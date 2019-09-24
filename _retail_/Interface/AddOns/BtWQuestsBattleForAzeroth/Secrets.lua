@@ -1241,6 +1241,125 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_WAIST_OF_T
         },
     },
 })
+BtWQuestsDatabase:AddChain(BtWQuests.Constant.Chain.BattleForAzeroth.Secrets.HoneybackHive, {
+    name = {
+        type = "reputation",
+        id = 2395,
+    },
+    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_SECRETS,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    prerequisites = {
+        {
+            type = "pet",
+            id = 2442,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 55906,
+    },
+    completed = {
+        type = "quest",
+        id = 57528,
+    },
+    rewards = {
+        {
+            type = "reputation",
+            id = 2395,
+        }
+    },
+    items = {
+        {
+            type = "npc",
+            id = 153393,
+            x = 3,
+            completed = {
+                type = "quest",
+                id = 55906,
+            },
+            connections = {1}
+        },
+        {
+            type = "npc",
+            id = 153365,
+            x = 3,
+            completed = {
+                type = "quest",
+                id = 55904,
+            },
+            connections = {1}
+        },
+        {
+            type = "item",
+            id = 169106,
+            breadcrumb = true,
+            x = 3,
+            onClick = {
+                type = "coords",
+                mapID = 942,
+                x = 0.631963,
+                y = 0.284735,
+            },
+            connections = {1}
+        },
+        {
+            type = "talk",
+            id = 153365,
+            x = 3,
+            completed = {
+                type = "quest",
+                id = 56104,
+            },
+            connections = {1}
+        },
+        {
+            type = "talk",
+            id = 153393,
+            locations = {
+                [942] = {
+                    {
+                        x = 0.629933,
+                        y = 0.266155,
+                    },
+                },
+            },
+            completed = {
+                type = "quest",
+                id = 56105,
+            },
+            x = 3,
+            connections = {1}
+        },
+        {
+            type = "talk",
+            id = 153393,
+            locations = {
+                [942] = {
+                    {
+                        x = 0.625589,
+                        y = 0.263803,
+                    },
+                },
+            },
+            completed = {
+                type = "quest",
+                id = 56735,
+            },
+            x = 3,
+            connections = {1}
+        },
+        {
+            type = "talk",
+            id = 154023,
+            completed = {
+                type = "quest",
+                id = 57528,
+            },
+            x = 3,
+        },
+    },
+})
 
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_SECRETS, {
     name = BTWQUESTS_SECRET,
@@ -1253,6 +1372,10 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_SECRETS, {
         {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_WAIST_OF_TIME,
+        },
+        {
+            type = "chain",
+            id = BtWQuests.Constant.Chain.BattleForAzeroth.Secrets.HoneybackHive,
         },
     },
 })

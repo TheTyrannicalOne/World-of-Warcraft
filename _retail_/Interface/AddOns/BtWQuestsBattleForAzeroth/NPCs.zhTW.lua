@@ -1028,6 +1028,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "首席傳送師歐庫雷斯",
     },
+    [151964] = {
+        name = "靈行者黯角",
+    },
     [152084] = {
         name = "莫嚕",
     },
@@ -1046,6 +1049,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152747] = {
         name = "克利斯蒂‧壓輪",
     },
+    [153365] = {
+        name = "蜜背女王蜂",
+    },
+    [153393] = {
+        name = "貝瑞",
+    },
     [153509] = {
         name = "工匠歐卡塔",
     },
@@ -1061,6 +1070,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "珊蒂斯‧羽月",
     },
+    [154023] = {
+        name = "初生的採收蜂",
+    },
     [154248] = {
         name = "劍客伊野斬",
     },
@@ -1069,6 +1081,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154408] = {
         name = "羅姆",
+    },
+    [154464] = {
+        name = "土靈守衛者",
     },
     [154640] = {
         name = "崔布雷德總元帥",

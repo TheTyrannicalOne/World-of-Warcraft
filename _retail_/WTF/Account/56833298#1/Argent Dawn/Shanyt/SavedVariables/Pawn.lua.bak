@@ -61,16 +61,16 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158151::::::::120:71::27:3:4803:1582:4785:::|h[Zandalari Band]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 158162,
-			["Level"] = 390,
+			["ID"] = 117358,
+			["Level"] = 395,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff0070dd|Hitem:158162::::::::120:71::27:3:4803:1582:4785:::|h[Pearl Diver's Compass]|h|r",
+			["Link"] = "|cffa335ee|Hitem:117358::::::::120:71:512::1:6315:120:::|h[Mithril Wristwatch]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 158154,
-			["Level"] = 370,
+			["ID"] = 158162,
+			["Level"] = 390,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:158154::::::::120:71::27:3:4803:1562:4786:::|h[Emblem of Zandalar]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158162::::::::120:71::27:3:4803:1582:4785:::|h[Pearl Diver's Compass]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166763,

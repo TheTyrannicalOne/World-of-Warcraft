@@ -201,19 +201,14 @@ function BtWQuestsMixin:SelectCategory(id, scrollTo, noHistory)
         self:UpdateCurrentHistory()
     end
 
-    local category = BtWQuestsDatabase:GetCategory(id, self:GetCharacter())
-    if category:GetSkip() then
-        id = category:GetAlternative() or id
+    local character = self:GetCharacter();
+    local category = BtWQuestsDatabase:GetCategoryByID(id)
+    if not category:IsValidForCharacter(character) then
+        id = category:GetAlternative(character) or id
     end
     
     self:SetCategory(id)
-    
     self.navBar:SetCategory(id)
-    
-    local expansion = self:GetExpansion()
-    if expansion and BtWQuestsDatabase:HasExpansion(expansion) then
-        self.ExpansionDropDown:SetText(BtWQuestsDatabase:GetExpansionByID(expansion));
-    end
 
     self:DisplayCurrentCategory(scrollTo)
 
@@ -234,19 +229,14 @@ function BtWQuestsMixin:SelectChain(id, scrollTo, noHistory)
         self:UpdateCurrentHistory()
     end
 
-    local chain = BtWQuestsDatabase:GetChain(id, self:GetCharacter())
-    if chain:GetSkip() then
-        id = chain:GetAlternative() or id
+    local character = self:GetCharacter();
+    local chain = BtWQuestsDatabase:GetChainByID(id)
+    if not chain:IsValidForCharacter(character) then
+        id = chain:GetAlternative(character) or id
     end
     
     self:SetChain(id)
-    
     self.navBar:SetChain(id)
-    
-    local expansion = self:GetExpansion()
-    if expansion and BtWQuestsDatabase:HasExpansion(expansion) then
-        self.ExpansionDropDown:SetText(BtWQuestsDatabase:GetExpansionByID(expansion));
-    end
 
     self:DisplayCurrentChain(scrollTo)
     
@@ -427,7 +417,8 @@ function BtWQuestsMixin:DisplayExpansionList(scrollTo)
 	self.Category:Hide()
     self.ExpansionList:Show()
     
-    local items = BtWQuestsDatabase:GetExpansionList(self:GetCharacter())
+    local character = self:GetCharacter();
+    local items = BtWQuestsDatabase:GetExpansionList()
 
     if self.ExpansionScroll == nil then
         self.ExpansionScroll = #items - 2
@@ -444,7 +435,7 @@ function BtWQuestsMixin:DisplayExpansionList(scrollTo)
         local item = items[self.ExpansionScroll - 1 + i]
         local expansion = self.ExpansionList.Expansions[i]
         if item ~= nil then
-            expansion:Set(item)
+            expansion:Set(item, character)
             expansion:Show()
         else
             expansion:Hide()
@@ -520,7 +511,7 @@ function BtWQuestsMixin:DisplayItemList(items, scrollTo)
             end
         end
 
-        categoryButton:Set(item)
+        categoryButton:Set(item, character)
         categoryButton:Show()
 
         if type(scrollTo) == "number" and index == scrollTo then
@@ -553,8 +544,12 @@ function BtWQuestsMixin:DisplayCurrentExpansion(scrollTo)
     local filterCompleted = BtWQuestSettingsData:GetValue("filterCompleted")
     local filterIgnored = BtWQuestSettingsData:GetValue("filterIgnored")
 
-    local expansion = BtWQuestsDatabase:GetExpansion(self:GetExpansion(), self:GetCharacter())
-    local items = expansion:GetItemList(not categoryHeaders, filterCompleted, filterIgnored)
+    local expansion = BtWQuestsDatabase:GetExpansionByID(self:GetExpansion());
+    if expansion == nil then
+        print(BTWQUESTS_NO_EXPANSION_ERROR)
+        return;
+    end
+    local items = expansion:GetItemList(self:GetCharacter(), not categoryHeaders, filterCompleted, filterIgnored)
     if #items == 0 then -- Somehow selected an empty expansion, probably means all the BtWQuests modules are disabled
         print(BTWQUESTS_NO_EXPANSION_ERROR)
     end
@@ -565,8 +560,8 @@ function BtWQuestsMixin:DisplayCurrentCategory(scrollTo)
     local filterCompleted = BtWQuestSettingsData:GetValue("filterCompleted")
     local filterIgnored = BtWQuestSettingsData:GetValue("filterIgnored")
 
-    local category = BtWQuestsDatabase:GetCategory(self:GetCategory(), self:GetCharacter())
-    local items = category:GetItemList(not categoryHeaders, filterCompleted, filterIgnored)
+    local category = BtWQuestsDatabase:GetCategoryByID(self:GetCategory())
+    local items = category:GetItemList(self:GetCharacter(), not categoryHeaders, filterCompleted, filterIgnored)
     self:DisplayItemList(items, scrollTo)
 end
 function BtWQuestsMixin:DisplayCurrentChain(scrollTo, zoom)

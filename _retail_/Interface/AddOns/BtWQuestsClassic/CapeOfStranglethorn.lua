@@ -21,82 +21,61 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
     range = {30,60},
     items = {
         {
-            {
-                type = "quest",
-                id = 28702,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28702,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 28702,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28702,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 28702,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28702,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            {
-                type = "quest",
-                id = 28702,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28702,
-                        active = true,
-                    }
+                {
+                    type = "quest",
+                    id = 26805,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26805,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 26805,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 26805,
+                            active = true,
+                        },
+                    },
                 },
-            },
-
-
-            {
-                type = "quest",
-                id = 26805,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26805,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
-                },
-            },
-            {
-                type = "quest",
-                id = 26805,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 26805,
-                        active = true,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
+                {
+                    name = "Go to Bronwyn Hewstrike",
+                    breadcrumb = true,
+                    onClick = function ()
+                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5524, 0.4248, "Bronwyn Hewstrike")
+                    end,
                 },
             },
-
-            {
-                name = "Go to Bronwyn Hewstrike",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5524, 0.4248, "Bronwyn Hewstrike")
-                end,
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
             },
         },
         {

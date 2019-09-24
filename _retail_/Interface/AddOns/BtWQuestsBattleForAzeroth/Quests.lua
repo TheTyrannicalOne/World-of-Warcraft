@@ -43062,7 +43062,7 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "experience",
                 amounts = {
-                    16450, 16600, 16750, 16850, 17000, 17150, 17300, 17450, 17550, 17700, 
+                    24700, 24900, 25100, 25300, 25500, 25750, 25950, 26150, 26350, 26550, 
                 },
                 minLevel = 110,
                 maxLevel = 119,
@@ -55503,7 +55503,7 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 2400,
-                amount = 350,
+                amount = 500,
             },
         },
     },
@@ -57119,6 +57119,11 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 234000,
             },
             {
+                type = "currency",
+                id = 1553,
+                amount = 300,
+            },
+            {
                 type = "reputation",
                 id = 2164,
                 amount = 250,
@@ -57144,6 +57149,11 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 234000,
             },
             {
+                type = "currency",
+                id = 1553,
+                amount = 300,
+            },
+            {
                 type = "reputation",
                 id = 2164,
                 amount = 250,
@@ -57162,6 +57172,11 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 234000,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 300,
             },
             {
                 type = "reputation",
@@ -57186,7 +57201,7 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 2164,
-                amount = 250,
+                amount = 75,
             },
         },
     },
@@ -57204,9 +57219,14 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 23400,
             },
             {
+                type = "currency",
+                id = 1553,
+                amount = 1000,
+            },
+            {
                 type = "reputation",
                 id = 2164,
-                amount = 10,
+                amount = 350,
             },
         },
     },
@@ -57261,7 +57281,7 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "currency",
                 id = 1553,
-                amount = 200,
+                amount = 700,
             },
             {
                 type = "reputation",
@@ -57287,7 +57307,7 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "currency",
                 id = 1553,
-                amount = 300,
+                amount = 1000,
             },
             {
                 type = "reputation",
@@ -57695,7 +57715,7 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "currency",
                 id = 1553,
-                amount = 400,
+                amount = 1500,
             },
             {
                 type = "reputation",
@@ -58498,6 +58518,16 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "money",
                 amount = 702000,
             },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1800,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 500,
+            },
         },
     },
     [55685] = {
@@ -58742,7 +58772,7 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 2164,
-                amount = 350,
+                amount = 500,
             },
             {
                 type = "reputation",
@@ -58783,6 +58813,11 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 23400,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1500,
             },
             {
                 type = "reputation",
@@ -59749,6 +59784,136 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [56185] = {
+        name = "Whispers of N'Zoth",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154464,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [56186] = {
+        name = "Spies to the Left and Right",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152365,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 750,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 250,
+            },
+        },
+    },
+    [56187] = {
+        name = "Black Winged Shadow",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154500,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 250,
+            },
+        },
+    },
+    [56188] = {
+        name = "To the Catacombs!",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154874,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [56189] = {
+        name = "On the Trail of the Black Prince",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154870,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 702000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 500,
+            },
+        },
+    },
+    [56190] = {
+        name = "Save Ebonhorn",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155191,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 250,
+            },
+        },
+    },
     [56210] = {
         name = "Scrying Stones",
         requiredLevel = 120,
@@ -60039,6 +60204,15 @@ BtWQuestsDatabase:AddQuestsTable({
                 id = 2373,
                 amount = 50,
             },
+        },
+    },
+    [56267] = {
+        name = "Whispers of N'Zoth",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154465,
         },
     },
     [56304] = {
@@ -60590,9 +60764,14 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 23400,
             },
             {
+                type = "currency",
+                id = 1553,
+                amount = 1000,
+            },
+            {
                 type = "reputation",
                 id = 2164,
-                amount = 10,
+                amount = 150,
             },
         },
     },
@@ -60646,6 +60825,31 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+            },
+        },
+    },
+    [56504] = {
+        name = "Wrathion's Journal",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 151964,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
             },
         },
     },

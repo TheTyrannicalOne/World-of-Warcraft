@@ -5828,6 +5828,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Entrare nel Metasogno",
     },
+    [55396] = {
+        name = "La sostanza di cui sono fatti i sogni",
+    },
     [55398] = {
         name = "La lunga veglia",
     },
@@ -6011,6 +6014,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55652] = {
         name = "Baia del Prospetto",
     },
+    [55657] = {
+        name = "All'ombra delle ali cremisi",
+    },
     [55685] = {
         name = "Veniamo in pace... e con intenti lucrosi",
     },
@@ -6040,6 +6046,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55734] = {
         name = "Costruire la trivella",
+    },
+    [55735] = {
+        name = "Difendere il Maelstrom",
     },
     [55736] = {
         name = "Benvenuti nella Resistenza",
@@ -6182,6 +6191,24 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56181] = {
         name = "Questa la offro io",
     },
+    [56185] = {
+        name = "Sussurri di N'zoth",
+    },
+    [56186] = {
+        name = "Spie a destra e a manca",
+    },
+    [56187] = {
+        name = "Ombre alate nere",
+    },
+    [56188] = {
+        name = "Alle catacombe!",
+    },
+    [56189] = {
+        name = "Sulle tracce del Principe Nero",
+    },
+    [56190] = {
+        name = "Il salvataggio di Corna Nere",
+    },
     [56210] = {
         name = "Pietre Rivelatrici",
     },
@@ -6308,11 +6335,17 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56379] = {
         name = "L'equipaggio scomparso",
     },
+    [56401] = {
+        name = "Un lampo nel blu",
+    },
     [56422] = {
         name = "Su ali spettrali",
     },
     [56429] = {
         name = "Contrarietà",
+    },
+    [56504] = {
+        name = "Diario di Irathion",
     },
     [56560] = {
         name = "Una scoperta bizzarra",

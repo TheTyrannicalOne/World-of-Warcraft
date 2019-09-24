@@ -670,6 +670,123 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TE
         },
     },
 })
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TEMP_CHAIN02, {
+    name = { -- On the Trail of the Black Prince
+        type = "quest",
+        id = 56189,
+    },
+    questline = 947,
+    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_THE_HEART_FORGE,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN01,
+        },
+    },
+    active = {
+        type = "quest",
+        ids = {56185, 56267},
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 56504,
+    },
+    items = {
+        {
+            variations = {
+                {
+                    type = "npc",
+                    id = 154464,
+                    restrictions = {
+                        type = "faction",
+                        id = BtWQuests.Constant.Faction.Alliance,
+                    },
+                },
+                {
+                    type = "npc",
+                    id = 154465,
+                },
+            },
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 56185,
+                    restrictions = {
+                        type = "faction",
+                        id = BtWQuests.Constant.Faction.Alliance,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 56267,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 56186,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 56187,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 56188,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 56189,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 56190,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 56504,
+            x = 3,
+        },
+    },
+})
 
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_THE_HEART_FORGE, {
     name = { -- The Heart Forge
@@ -706,6 +823,10 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_THE_HEART_FO
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN06,
         },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TEMP_CHAIN02,
+        }
     },
 })
 BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {

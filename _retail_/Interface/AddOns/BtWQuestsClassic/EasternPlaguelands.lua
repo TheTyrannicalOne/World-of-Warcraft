@@ -1104,51 +1104,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_PLAGUEWOO
     range = {40,60},
     items = {
         {
-            {
-                type = "quest",
-                id = 27532,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 27532,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 27532,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 27532,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
-                    2,
+                {
+                    type = "quest",
+                    id = 27532,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 27532,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            {
-                type = "quest",
-                id = 27532,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 27532,
-                        active = true,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
-                    2,
+                {
+                    name = "Go to Argent Apothecary Judkins",
+                    breadcrumb = true,
+                    onClick = function ()
+                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1755, 0.2788, "Argent Apothecary Judkins")
+                    end,
                 },
             },
-            {
-                name = "Go to Argent Apothecary Judkins",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1755, 0.2788, "Argent Apothecary Judkins")
-                end,
-                x = 3,
-                y = 0,
-                connections = {
-                    1,
-                    2,
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                1, 2, 
             },
         },
         {

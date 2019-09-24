@@ -1688,11 +1688,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN,
         },
-        {
-            type = "reputation",
-            id = 2157,
-            standing = 7,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2157,
+        --     standing = 7,
+        -- },
     },
     active = {
         type = "chain",
@@ -1949,19 +1949,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
         },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN01,
-        },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03,
-        },
     },
     active = {
         type = "chain",
-        ids = {BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5, BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03},
-        count = 2,
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
     },
     completed = {
         type = "chain",
@@ -1971,15 +1962,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
         {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
-            x = 2,
+            x = 3,
             y = 0,
-            connections = {
-                2,
-            },
-        },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03,
             connections = {
                 1,
             },
@@ -2026,19 +2010,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
         },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN02,
-        },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
-        },
     },
     active = {
         type = "chain",
-        ids = {BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5, BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04},
-        count = 2,
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
     },
     completed = {
         type = "chain",
@@ -2048,15 +2023,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2
         {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
-            x = 2,
+            x = 3,
             y = 0,
-            connections = {
-                2,
-            },
-        },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
             connections = {
                 1,
             },
@@ -2853,12 +2821,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CHASING_D
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_BLOOD_ON_THE_SAND,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 5,
-            amount = 4500,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2159,
+        --     standing = 5,
+        --     amount = 4500,
+        -- },
     },
     active = {
         {
@@ -3012,12 +2980,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_A_GOLDEN_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CHASING_DARKNESS,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 6,
-            amount = 3000,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2159,
+        --     standing = 6,
+        --     amount = 3000,
+        -- },
     },
     active = {
         {
@@ -3160,12 +3128,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_BLOOD_IN_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_A_GOLDEN_OPPORTUNITY,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 6,
-            amount = 7500,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2159,
+        --     standing = 6,
+        --     amount = 7500,
+        -- },
     },
     active = {
         {
@@ -3315,11 +3283,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_THE_STRIK
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_BLOOD_IN_THE_WATER,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 7,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2159,
+        --     standing = 7,
+        -- },
     },
     active = {
         {
@@ -4172,12 +4140,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_MARSHALS
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_FIRST_ASSAULT,
         },
-        {
-            type = "reputation",
-            id = 2157,
-            standing = 5,
-            amount = 4500,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2157,
+        --     standing = 5,
+        --     amount = 4500,
+        -- },
     },
     active = {
         {
@@ -4284,12 +4252,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DEATH_OF_A_T
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_MARSHALS_GRAVE,
         },
-        {
-            type = "reputation",
-            id = 2157,
-            standing = 6,
-            amount = 3000,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2157,
+        --     standing = 6,
+        --     amount = 3000,
+        -- },
     },
     active = {
         {
@@ -4416,12 +4384,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_AT_THE_BOTTO
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DEATH_OF_A_TIDESAGE,
         },
-        {
-            type = "reputation",
-            id = 2157,
-            standing = 6,
-            amount = 7500,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2157,
+        --     standing = 6,
+        --     amount = 7500,
+        -- },
     },
     active = {
         {
@@ -4578,11 +4546,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_STRIKE_O
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_AT_THE_BOTTOM_OF_THE_SEA,
         },
-        {
-            type = "reputation",
-            id = 2157,
-            standing = 7,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2157,
+        --     standing = 7,
+        -- },
     },
     active = {
         {
@@ -4749,11 +4717,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_THE_STRIKE_ON_ZULDAZAR,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 7,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2159,
+        --     standing = 7,
+        -- },
     },
     active = {
         {
@@ -4915,12 +4883,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_1,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 7,
-            amount = 7000,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2159,
+        --     standing = 7,
+        --     amount = 7000,
+        -- },
     },
     active = {
         {
@@ -5090,12 +5058,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_2,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 7,
-            amount = 14000,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2159,
+        --     standing = 7,
+        --     amount = 14000,
+        -- },
     },
     active = {
         {
@@ -5423,12 +5391,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_2, 
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_1,
         },
-        {
-            type = "reputation",
-            id = 2157,
-            standing = 7,
-            amount = 7000,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2157,
+        --     standing = 7,
+        --     amount = 7000,
+        -- },
     },
     active = {
         {
@@ -5564,12 +5532,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_3, 
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_2,
         },
-        {
-            type = "reputation",
-            id = 2157,
-            standing = 7,
-            amount = 14000,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2157,
+        --     standing = 7,
+        --     amount = 14000,
+        -- },
     },
     active = {
         {

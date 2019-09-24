@@ -2210,6 +2210,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "Telemántico jefe Oculeth",
     },
+    [151964] = {
+        name = "Caminaespíritus Cuerno de Ébano",
+    },
     [152002] = {
         name = "Imagen de Mimiron",
     },
@@ -2249,6 +2252,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152747] = {
         name = "Christy Pegapiñón",
     },
+    [153365] = {
+        name = "Madre de colmena mielabdomen",
+    },
+    [153393] = {
+        name = "Barry",
+    },
     [153509] = {
         name = "Artesano Okata",
     },
@@ -2264,6 +2273,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "Shandris Plumaluna",
     },
+    [154023] = {
+        name = "Cosechadora naciente",
+    },
     [154248] = {
         name = "Esgrimidor Inowari",
     },
@@ -2272,6 +2284,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154408] = {
         name = "Rolm",
+    },
+    [154464] = {
+        name = "Guardián terráneo",
     },
     [154640] = {
         name = "Gran mariscal Tremblade",

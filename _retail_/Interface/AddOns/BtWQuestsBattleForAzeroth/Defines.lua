@@ -1,3 +1,168 @@
+local BtWQuests = BtWQuests;
+BtWQuests.Constant.Expansions.BattleForAzeroth = LE_EXPANSION_BATTLE_FOR_AZEROTH or 7;
+BtWQuests.Constant.Category.BattleForAzeroth = BtWQuests.Constant.Category.BattleForAzeroth or {};
+BtWQuests.Constant.Chain.BattleForAzeroth = BtWQuests.Constant.Chain.BattleForAzeroth or {};
+local Category = BtWQuests.Constant.Category.BattleForAzeroth;
+local Chain = BtWQuests.Constant.Chain.BattleForAzeroth;
+
+Category.Zuldazar = 801
+Category.Nazmir = 802
+Category.Voldun = 803
+Category.TiragardeSound = 804
+Category.Drustvar = 805
+Category.StormsongValley = 806
+Category.MechagonIsland = 807
+Category.Nazjatar = 808
+Category.TheHeartForge = 809
+Category.Professions = 897
+Category.AlliedRaces = 898
+Category.Secrets = 899
+
+Chain.AllianceIntroduction = 80003
+Chain.HordeIntroduction = 80004
+Chain.AllianceCampaign = 80005
+Chain.HordeCampaign = 80006
+
+Chain.AllianceZuldazarFoothold = 80007
+Chain.AllianceVoldunFoothold = 80008
+Chain.AllianceNazmirFoothold = 80009
+
+Chain.HordeTiragardeSoundFoothold = 80010
+Chain.HordeDrustvarFoothold = 80011
+Chain.HordeStormsongValleyFoothold = 80012
+
+Chain.AllianceBloodOnTheSand = 80013
+Chain.AllianceChasingDarkness = 80014
+Chain.AllianceAGoldenOpportunity = 80015
+Chain.AllianceBloodInTheWater = 80016
+Chain.AllianceTheStrikeOnZuldazar = 80017
+
+Chain.HordeTheFirstAssault = 80018
+Chain.HordeTheMarshalsGrave = 80019
+Chain.HordeDeathOfATidesage = 80020
+Chain.HordeAtTheBottomOfTheSea = 80021
+Chain.HordeTheStrikeOnBoralas = 80022
+
+Chain.AlliancePrideOfKultiras = 80023
+Chain.AllianceANationUnited = 80024
+Chain.HordeABarginOfBlood = 80025
+Chain.HordeZandalarForever = 80026
+Chain.HordeTheFallenChieftain = 80027
+Chain.HordeJusticeForTheFallen = 80028
+Chain.HordeTheHighOverlord = 80030
+
+Chain.BloodElfHeritage = 80031
+Chain.DwarfHeritage = 80032
+
+Chain.AllianceInTeldrassilsShadow = 80029
+Chain.HordeTroubleInDarkshore = 80033
+
+--Chain.Campaign81 = 80034
+Chain.AllianceCampaign81 = 80035
+Chain.HordeCampaign81 = 80036
+
+Chain.Alliance81Part1 = 80037
+Chain.Alliance81Part2 = 80038
+Chain.Alliance81Part3 = 80039
+Chain.Alliance81Part4 = 80040
+
+Chain.Horde81Part1 = 80041
+Chain.Horde81Part2 = 80042
+Chain.Horde81Part3 = 80043
+Chain.Horde81Part4 = 80044
+
+Chain.AllianceCampaign815 = 80045
+Chain.HordeCampaign815 = 80046
+
+Chain.Alliance815Part1 = 80047
+Chain.Alliance815Part2 = 80048
+Chain.Horde815Part1 = 80049
+Chain.Horde815Part2 = 80050
+Chain.AlliedRacesKulTiran = 80051
+Chain.AlliedRacesZandalariTroll = 80052
+Chain.SomethingSomethingParrot = 80053
+Chain.NeckLevel = 80054
+Chain.Alchemy = 80055
+Chain.Engineering = 80056
+Chain.Inscription = 80057
+Chain.Enchanting = 80058
+Chain.Jewelcrafting = 80059
+Chain.Leatherworking = 80060
+Chain.Tailoring = 80061
+Chain.Blacksmithing = 80062
+
+Chain.Hati = 80063
+Chain.HordeVoljin = 80064
+Chain.Xalatath = 80065
+
+Chain.GnomeHeritage = 80066
+Chain.TaurenHeritage = 80067
+
+Chain.AllianceCampaign82 = 80068
+Chain.HordeCampaign82 = 80069
+
+Chain.Alliance82Part1 = 80070
+Chain.Horde82Part1 = 80071
+
+Chain.Alliance82Follower = 80072
+Chain.Horde82Follower = 80073
+
+Chain.OtherAlliance = 80097
+Chain.OtherHorde = 80098
+Chain.OtherBoth = 80099
+
+Chain.Zuldazar = {}
+Chain.Nazmir = {}
+Chain.Voldun = {}
+Chain.TiragardeSound = {}
+Chain.Drustvar = {
+    TheFinalEffigy = 80501,
+    TheBurdenOfProof = 80502,
+    AnAirtightAlibi = 80503,
+    TheOrderOfEmbers = 80504,
+    ANewOrder = 80505,
+    BreakOnThrough = 80506,
+    StormingTheManor = 80507,
+    Drustfall = 80508,
+    FightingWithFire = 80509,
+    StickItToEm = 80510,
+    Chain01 = 80511,
+    Chain02 = 80512,
+    Chain03 = 80513,
+    Chain04 = 80514,
+    Chain05 = 80515,
+    Chain06 = 80516,
+    Chain07 = 80517,
+    Chain08 = 80518,
+    Chain09 = 80519,
+    Chain10 = 80520,
+    -- Chain11 = 80521,
+    Chain12 = 80522,
+    Chain13 = 80523,
+    -- Chain14 = 80524,
+    Chain15 = 80525,
+    Chain16 = 80526,
+    Chain17 = 80527,
+    Chain18 = 80528,
+    OtherAlliance = 80551,
+    OtherHorde = 80552,
+    OtherBoth = 80553,
+}
+Chain.StormsongValley = {}
+Chain.MechagonIsland = {}
+Chain.Nazjatar = {}
+Chain.TheHeartForge = {}
+Chain.Professions = {}
+Chain.AlliedRaces = {
+    DarkIronDwarves = 89801,
+    MagharOrc = 89802,
+    KulTiran = 80051,
+    ZandalariTroll = 80052,
+}
+Chain.Secrets = {
+    HoneybackHive = 89903
+}
+
 BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ZULDAZAR = 801
 BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_NAZMIR = 802
 BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_VOLDUN = 803
@@ -310,6 +475,7 @@ BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN05 = 80905
 BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN06 = 80906
 BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN07 = 80907
 BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TEMP_CHAIN01 = 80908
+BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TEMP_CHAIN02 = 80909
 
 BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_IRON_DWARVES = 89801
 BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHAR_ORC = 89802

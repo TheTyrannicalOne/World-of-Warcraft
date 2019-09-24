@@ -5828,6 +5828,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "In den Traumpfad",
     },
+    [55396] = {
+        name = "Der Stoff, aus dem die Träume sind",
+    },
     [55398] = {
         name = "Das lange Erwachen",
     },
@@ -6011,6 +6014,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55652] = {
         name = "Die Bilderbuchbucht",
     },
+    [55657] = {
+        name = "Im Schatten der blutroten Schwingen",
+    },
     [55685] = {
         name = "Wir kommen in Frieden... und Profitgier",
     },
@@ -6040,6 +6046,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55734] = {
         name = "Bohrmaschinenbau",
+    },
+    [55735] = {
+        name = "Verteidigung des Mahlstroms",
     },
     [55736] = {
         name = "Willkommen beim Widerstand",
@@ -6182,6 +6191,24 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56181] = {
         name = "Der geht auf mich",
     },
+    [56185] = {
+        name = "Geflüster von N'Zoth",
+    },
+    [56186] = {
+        name = "Überall Spione",
+    },
+    [56187] = {
+        name = "Pechschwingenschatten",
+    },
+    [56188] = {
+        name = "Zu den Katakomben!",
+    },
+    [56189] = {
+        name = "Dem Schwarzen Prinzen auf der Spur",
+    },
+    [56190] = {
+        name = "Rettet Ebenhorn",
+    },
     [56210] = {
         name = "Sehersteine",
     },
@@ -6308,11 +6335,17 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56379] = {
         name = "Die vermisste Besatzung",
     },
+    [56401] = {
+        name = "Ein Blitz aus dem Blauen",
+    },
     [56422] = {
         name = "Auf Geisterschwingen",
     },
     [56429] = {
         name = "Mit dem Rücken zur Wand",
+    },
+    [56504] = {
+        name = "Furorions Tagebuch",
     },
     [56560] = {
         name = "Eine merkwürdige Entdeckung",

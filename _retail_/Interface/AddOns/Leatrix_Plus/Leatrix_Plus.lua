@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.08 (11th September 2019)
+-- 	Leatrix Plus 8.2.09 (24th September 2019)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.08"
+	LeaPlusLC["AddonVer"] = "8.2.09"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit

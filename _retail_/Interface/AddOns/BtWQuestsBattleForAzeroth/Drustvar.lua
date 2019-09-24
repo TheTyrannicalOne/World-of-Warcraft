@@ -1,23 +1,31 @@
+local BtWQuests = BtWQuests;
+local Database = BtWQuests.Database;
+local EXPANSION_ID = BtWQuests.Constant.Expansions.BattleForAzeroth;
+local CATEGORY_ID = BtWQuests.Constant.Category.BattleForAzeroth.Drustvar;
+local Chain = BtWQuests.Constant.Chain.BattleForAzeroth.Drustvar;
+local ALLIANCE_ID, HORDE_ID = BtWQuests.Constant.Faction.Alliance, BtWQuests.Constant.Faction.Horde;
 local MAP_ID = 896
 local ACHIEVEMENT_ID = 12497
 local CONTINENT_ID = 876
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 1)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.TheFinalEffigy, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40168,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_INTRODUCTION,
+            id = BtWQuests.Constant.Chain.BattleForAzeroth.AllianceIntroduction,
         },
     },
     active = {
@@ -105,34 +113,36 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
             aside = true,
             x = 3,
             y = 6,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 2)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.TheBurdenOfProof, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40169,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+        id = Chain.TheFinalEffigy,
     },
     completed = {
         type = "quest",
@@ -141,7 +151,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDE
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
             x = 3,
             y = 0,
             connections = {
@@ -165,13 +175,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN7,
+            id = Chain.Chain07,
             x = 4,
             y = 1,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN6,
+            id = Chain.Chain06,
             x = 6,
             y = 1,
         },
@@ -256,38 +266,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
             aside = true,
             x = 3,
             y = 7,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 3)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.AnAirtightAlibi, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40170,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+        id = Chain.TheBurdenOfProof,
     },
     completed = {
         type = "quest",
@@ -296,7 +308,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIG
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
             x = 3,
             y = 0,
             connections = {
@@ -399,42 +411,44 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIG
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
             aside = true,
             x = 3,
             y = 7,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 4)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.TheOrderOfEmbers, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40171,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+        id = Chain.AnAirtightAlibi,
     },
     completed = {
         type = "quest",
@@ -443,7 +457,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
             x = 3,
             y = 0,
             connections = {
@@ -470,7 +484,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN9,
+            id = Chain.Chain09,
             relationship = {
                 breadcrumb = 48947,
                 blocker = 52074,
@@ -544,46 +558,48 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
             aside = true,
             x = 3,
             y = 8,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 5)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.ANewOrder, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40172,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+        id = Chain.TheOrderOfEmbers,
     },
     completed = {
         type = "quest",
@@ -592,7 +608,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORD
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
             x = 3,
             y = 0,
             connections = {
@@ -667,57 +683,59 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORD
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH,
+            id = Chain.BreakOnThrough,
             aside = true,
             x = 2,
             y = 5,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1,
+            id = Chain.Chain01,
             aside = true,
             x = 4,
             y = 5,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 6)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.BreakOnThrough, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40173,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+        id = Chain.ANewOrder,
     },
     completed = {
         type = "quest",
@@ -726,7 +744,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
             x = 3,
             y = 0,
             connections = {
@@ -817,7 +835,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN2,
+            id = Chain.Chain02,
             x = 0,
             y = 6.5,
         },
@@ -832,7 +850,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN3,
+            id = Chain.Chain03,
             aside = true,
             x = 4,
             y = 6,
@@ -891,54 +909,56 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STORMING_THE_MANOR,
+            id = Chain.StormingTheManor,
             aside = true,
             x = 2,
             y = 9,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STORMING_THE_MANOR, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 7)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.StormingTheManor, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40174,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH,
+            id = Chain.BreakOnThrough,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH,
+        id = Chain.BreakOnThrough,
     },
     completed = {
         type = "quest",
@@ -947,7 +967,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STORMING_
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH,
+            id = Chain.BreakOnThrough,
             x = 3,
             y = 0,
             connections = {
@@ -1028,17 +1048,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STORMING_
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CLEAR_VICTORY, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 8)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.Drustfall, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40175,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -1077,47 +1099,49 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CLEAR_VIC
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_FIGHTING_WITH_FIRE, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 9)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.FightingWithFire, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40176,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1,
+            id = Chain.Chain01,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1,
+        id = Chain.Chain01,
     },
     completed = {
         type = "quest",
@@ -1126,7 +1150,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_FIGHTING_
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1,
+            id = Chain.Chain01,
             x = 3,
             y = 0,
             connections = {
@@ -1233,58 +1257,60 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_FIGHTING_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STICK_IT_TO_EM,
+            id = Chain.StickItToEm,
             aside = true,
             x = 3,
             y = 8,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STICK_IT_TO_EM, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 10)
-    end,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+BtWQuestsDatabase:AddChain(Chain.StickItToEm, {
+    name = {
+        type = "achievement",
+        id = ACHIEVEMENT_ID,
+        criteriaId = 40177,
+    },
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     major = true,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1,
+            id = Chain.Chain01,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_FIGHTING_WITH_FIRE,
+            id = Chain.FightingWithFire,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_FIGHTING_WITH_FIRE,
+        id = Chain.FightingWithFire,
     },
     completed = {
         type = "quest",
@@ -1293,7 +1319,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STICK_IT_
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_FIGHTING_WITH_FIRE,
+            id = Chain.FightingWithFire,
             x = 3,
             y = 0,
             connections = {
@@ -1406,43 +1432,43 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STICK_IT_
     },
 })
 -- Completed, Alliance only, requires A new order, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1, {
+BtWQuestsDatabase:AddChain(Chain.Chain01, {
     name = { -- Drustfall
         type = "quest",
         id = 49890,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+        id = Chain.ANewOrder,
     },
     completed = {
         type = "quest",
@@ -1451,7 +1477,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
             x = 3,
             y = 0,
             connections = {
@@ -1487,7 +1513,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CLEAR_VICTORY,
+            id = Chain.Drustfall,
             x = 6,
             y = 2,
         },
@@ -1511,45 +1537,45 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_FIGHTING_WITH_FIRE,
+            id = Chain.FightingWithFire,
             x = 3,
             y = 5,
         },
     },
 })
 -- Completed, Alliance Only, requires part way through Break on Through, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN2, {
+BtWQuestsDatabase:AddChain(Chain.Chain02, {
     name = { -- Potent Protection
         type = "quest",
         id = 50452,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
         },
         {
             type = "quest",
@@ -1568,7 +1594,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN2, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH,
+            id = Chain.BreakOnThrough,
             completed = {
                 type = "quest",
                 id = 50253,
@@ -1629,38 +1655,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN2, {
     },
 })
 -- Completed, Alliance Only, requires part way through Break on Through, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN3, {
+BtWQuestsDatabase:AddChain(Chain.Chain03, {
     name = { -- To Have Loved and Lost
         type = "quest",
         id = 50754,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
         },
         {
             type = "quest",
@@ -1669,7 +1695,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN3, {
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH,
+        id = Chain.BreakOnThrough,
     },
     completed = {
         type = "quest",
@@ -1678,7 +1704,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN3, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH,
+            id = Chain.BreakOnThrough,
             completed = {
                 type = "quest",
                 id = 50253,
@@ -1752,17 +1778,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN3, {
     },
 })
 -- Completed, Alliance only, No requirements, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN4, {
+BtWQuestsDatabase:AddChain(Chain.Chain04, {
     name = { -- A Farmer's Fate
         type = "quest",
         id = 50970,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -1839,17 +1865,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN4, {
     },
 })
 -- Completed, Alliance only, No requirements, No breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN5, {
+BtWQuestsDatabase:AddChain(Chain.Chain05, {
     name = { -- Wicker Worship
         type = "quest",
         id = 48677,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -1931,17 +1957,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN5, {
     },
 })
 -- Completed, alliance only, no requirements, 1 breadcrumb
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN6, {
+BtWQuestsDatabase:AddChain(Chain.Chain06, {
     name = { -- To Market, To Market
         type = "quest",
         id = 47945,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -2048,17 +2074,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN6, {
     },
 })
 -- Completed, Alliance only, no requirements, 1 breadcrumb
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN7, {
+BtWQuestsDatabase:AddChain(Chain.Chain07, {
     name = { -- The Adventurer's Society
         type = "quest",
         id = 48793,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -2146,17 +2172,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN7, {
     },
 })
 -- Completed, Alliance only, no requirements, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN8, {
+BtWQuestsDatabase:AddChain(Chain.Chain08, {
     name = { -- Seeing Spirits
         type = "quest",
         id = 48475,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -2235,17 +2261,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN8, {
     },
 })
 -- Completed, Alliance only, no requirements, 1 breadcrumb (48947), need to do this chain again
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN9, {
+BtWQuestsDatabase:AddChain(Chain.Chain09, {
     name = { -- Gol Koval
         type = "quest",
         id = 48947,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -2375,17 +2401,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN9, {
     },
 })
 -- Completed, Alliance only, no requirements, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN10, {
+BtWQuestsDatabase:AddChain(Chain.Chain10, {
     name = { -- An Economic Opportunity
         type = "quest",
         id = 50988,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -2473,13 +2499,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN10, 
     },
 })
 -- Completed, Both factions, no requirements, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN12, {
+BtWQuestsDatabase:AddChain(Chain.Chain12, {
     name = {
         type = "npc",
         id = 127558,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     prerequisites = {
         type = "level",
@@ -2586,14 +2612,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN12, 
     },
 })
 -- Completed, Alliance only, no requirements, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN13, {
+BtWQuestsDatabase:AddChain(Chain.Chain13, {
     name = BtWQuests_GetAreaName(9614), -- Chandlery Wharf
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -2672,13 +2698,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN13, 
     },
 })
 -- Completed, both factions, no requirements, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN15, {
+BtWQuestsDatabase:AddChain(Chain.Chain15, {
     name = { -- Tea Party
         type = "quest",
         id = 44785,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     prerequisites = {
         type = "level",
@@ -2752,17 +2778,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN15, 
     },
 })
 -- Completed, Alliance only, no requirements, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN16, {
+BtWQuestsDatabase:AddChain(Chain.Chain16, {
     name = { -- Saplings in the Snow
         type = "quest",
         id = 51543,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -2819,24 +2845,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN16, 
         },
     },
 })
--- Completed, Horde only, requries BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DRUSTVAR_FOOTHOLD, no breadcrumbs
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN17, {
+-- Completed, Horde only, requries BtWQuests.Constant.Chain.BattleForAzeroth.HordeDrustvarFoothold, no breadcrumbs
+BtWQuestsDatabase:AddChain(Chain.Chain17, {
     name = { -- Precious Metals
         type = "quest",
         id = 53461,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     prerequisites = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DRUSTVAR_FOOTHOLD,
+            id = BtWQuests.Constant.Chain.BattleForAzeroth.HordeDrustvarFoothold,
         },
     },
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
+        id = HORDE_ID,
     },
     active = {
         {
@@ -2918,17 +2944,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN17, 
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN18, {
+BtWQuestsDatabase:AddChain(Chain.Chain18, {
     name = { -- One Man Against the Horde
         type = "quest",
         id = 50911,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         type = "level",
@@ -3029,10 +3055,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN18, 
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(Chain.OtherAlliance, {
     name = "Other Alliance",
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     prerequisites = {
         type = "level",
@@ -3051,10 +3077,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_ALL
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(Chain.OtherHorde, {
     name = "Other Horde",
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     prerequisites = {
         type = "level",
@@ -3073,10 +3099,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_HOR
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(Chain.OtherBoth, {
     name = "Other Both",
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {110,120},
     prerequisites = {
         type = "level",
@@ -3140,9 +3166,9 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_BOT
     },
 })
 
-BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR, {
+BtWQuestsDatabase:AddCategory(CATEGORY_ID, {
     name = BtWQuests_GetMapName(MAP_ID),
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    expansion = EXPANSION_ID,
     buttonImage = 2178278,
     listImage = {
         texture = "Interface\\Addons\\BtWQuestsBattleForAzeroth\\UI-CategoryButton",
@@ -3154,16 +3180,16 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR, {
             name = BTWQUESTS_THE_WAR_CAMPAIGN,
             restrictions = {
                 type = "faction",
-                id = BTWQUESTS_FACTION_ID_HORDE
+                id = HORDE_ID
             },
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DRUSTVAR_FOOTHOLD,
+            id = BtWQuests.Constant.Chain.BattleForAzeroth.HordeDrustvarFoothold,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_MARSHALS_GRAVE,
+            id = BtWQuests.Constant.Chain.BattleForAzeroth.HordeTheMarshalsGrave,
         },
 
 
@@ -3175,52 +3201,52 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR, {
             },
             restrictions = {
                 type = "faction",
-                id = BTWQUESTS_FACTION_ID_ALLIANCE
+                id = ALLIANCE_ID
             },
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_FINAL_EFFIGY,
+            id = Chain.TheFinalEffigy,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_BURDEN_OF_PROOF,
+            id = Chain.TheBurdenOfProof,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_AN_AIRTIGHT_ALIBI,
+            id = Chain.AnAirtightAlibi,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_THE_ORDER_OF_EMBERS,
+            id = Chain.TheOrderOfEmbers,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_A_NEW_ORDER,
+            id = Chain.ANewOrder,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_BREAK_ON_THROUGH,
+            id = Chain.BreakOnThrough,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STORMING_THE_MANOR,
+            id = Chain.StormingTheManor,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CLEAR_VICTORY,
+            id = Chain.Drustfall,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN1,
+            id = Chain.Chain01,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_FIGHTING_WITH_FIRE,
+            id = Chain.FightingWithFire,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_STICK_IT_TO_EM,
+            id = Chain.StickItToEm,
         },
 
 
@@ -3230,147 +3256,147 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN2,
+            id = Chain.Chain02,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN3,
+            id = Chain.Chain03,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN4,
+            id = Chain.Chain04,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN5,
+            id = Chain.Chain05,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN6,
+            id = Chain.Chain06,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN7,
+            id = Chain.Chain07,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN8,
+            id = Chain.Chain08,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN9,
+            id = Chain.Chain09,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN10,
+            id = Chain.Chain10,
         },
         -- {
         --     type = "chain",
-        --     id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN11,
+        --     id = Chain.Chain011,
         -- },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN12,
+            id = Chain.Chain12,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN13,
+            id = Chain.Chain13,
         },
         -- {
         --     type = "chain",
-        --     id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN14,
+        --     id = Chain.Chain014,
         -- },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN15,
+            id = Chain.Chain15,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN16,
+            id = Chain.Chain16,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN17,
+            id = Chain.Chain17,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN18,
+            id = Chain.Chain18,
         },
         -- {
         --     type = "chain",
-        --     id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_ALLIANCE,
+        --     id = Chain.OtherAlliance,
         -- },
         -- {
         --     type = "chain",
-        --     id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_HORDE,
+        --     id = Chain.OtherHorde,
         -- },
         -- {
         --     type = "chain",
-        --     id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_OTHER_BOTH,
+        --     id = Chain.OtherBoth,
         -- },
     },
 })
 
 BtWQuestsDatabase:AddMapRecursive(MAP_ID, {
     type = "category",
-    id = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_DRUSTVAR,
+    id = CATEGORY_ID,
 })
 
 BtWQuestsDatabase:AddContinentItems(CONTINENT_ID, {
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN3,
+        id = Chain.Chain03,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN4,
+        id = Chain.Chain04,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN5,
+        id = Chain.Chain05,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN6,
+        id = Chain.Chain06,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN7,
+        id = Chain.Chain07,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN8,
+        id = Chain.Chain08,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN9,
+        id = Chain.Chain09,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN10,
+        id = Chain.Chain10,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN12,
+        id = Chain.Chain12,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN13,
+        id = Chain.Chain13,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN15,
+        id = Chain.Chain15,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN16,
+        id = Chain.Chain16,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN17,
+        id = Chain.Chain17,
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN18,
+        id = Chain.Chain18,
     },
 })

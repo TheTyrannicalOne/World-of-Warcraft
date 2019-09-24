@@ -2210,6 +2210,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "Télémancien en chef Oculeth",
     },
+    [151964] = {
+        name = "Marcheur des esprits Corne-d'Ebène",
+    },
     [152002] = {
         name = "Image de Mimiron",
     },
@@ -2249,6 +2252,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152747] = {
         name = "Christy Percerouage",
     },
+    [153365] = {
+        name = "Reine de l'essaim dos-de-miel",
+    },
+    [153393] = {
+        name = "Barry",
+    },
     [153509] = {
         name = "Artisan Okata",
     },
@@ -2264,6 +2273,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "Shandris Pennelune",
     },
+    [154023] = {
+        name = "Butineuse naissante",
+    },
     [154248] = {
         name = "Maître-lame Inowari",
     },
@@ -2272,6 +2284,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154408] = {
         name = "Rolm",
+    },
+    [154464] = {
+        name = "Gardien terrestre",
     },
     [154640] = {
         name = "Connétable Tremblelame",

@@ -172,35 +172,32 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_STARTING_Z
             },
         },
         {
-            { -- Havoc
-                type = "quest",
-                id = 39516,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39517,
+            variations = {
+                {
+                    type = "quest",
+                    id = 39516,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39517,
+                        },
                     },
                 },
-                x = 3,
-                y = 11,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 39515,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39518,
+                        },
+                    },
                 },
             },
-            { -- Vengence
-                type = "quest",
-                id = 39515,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39518,
-                    },
-                },
-                x = 3,
-                y = 11,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 11,
+            connections = {
+                1, 
             },
         },
         {
@@ -266,35 +263,32 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_STARTING_Z
             },
         },
         {
-            { -- Havoc
-                type = "quest",
-                id = 38723,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39517,
+            variations = {
+                {
+                    type = "quest",
+                    id = 38723,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39517,
+                        },
                     },
                 },
-                x = 3,
-                y = 17,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 40253,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39518,
+                        },
+                    },
                 },
             },
-            { -- Vengence
-                type = "quest",
-                id = 40253,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39518,
-                    },
-                },
-                x = 3,
-                y = 17,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 17,
+            connections = {
+                1, 
             },
         },
         {
@@ -309,35 +303,32 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_STARTING_Z
             },
         },
         {
-            { -- Havoc
-                type = "quest",
-                id = 39683,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39517,
+            variations = {
+                {
+                    type = "quest",
+                    id = 39683,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39517,
+                        },
                     },
                 },
-                x = 1,
-                y = 19,
-                connections = {
-                    3,
+                {
+                    type = "quest",
+                    id = 40254,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39518,
+                        },
+                    },
                 },
             },
-            { -- Vengence
-                type = "quest",
-                id = 40254,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39518,
-                    },
-                },
-                x = 1,
-                y = 19,
-                connections = {
-                    3,
-                },
+            x = 1,
+            y = 19,
+            connections = {
+                3, 
             },
         },
         {
@@ -377,241 +368,213 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_STARTING_Z
             },
         },
         {
-            { -- Alliance/Havoc
-                type = "quest",
-                id = 39688,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39517,
-                    },
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+            variations = {
+                {
+                    type = "quest",
+                    id = 39688,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39517,
+                        },
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
                     },
                 },
-                x = 3,
-                y = 22,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 39694,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39517,
+                        },
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_HORDE,
+                        },
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 40255,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39518,
+                        },
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 40256,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 39518,
+                        },
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_HORDE,
+                        },
+                    },
                 },
             },
-            { -- Horde/Havoc
-                type = "quest",
-                id = 39694,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39517,
-                    },
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_HORDE,
-                    },
-                },
-                x = 3,
-                y = 22,
-                connections = {
-                    1,
-                },
-            },
-            { -- Alliance/Vengence
-                type = "quest",
-                id = 40255,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39518,
-                    },
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-                    },
-                },
-                x = 3,
-                y = 22,
-                connections = {
-                    1,
-                },
-            },
-            { -- Horde/Vengence
-                type = "quest",
-                id = 40256,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 39518,
-                    },
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_HORDE,
-                    },
-                },
-                x = 3,
-                y = 22,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 22,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 39689,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+            variations = {
+                {
+                    type = "quest",
+                    id = 39689,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
                     },
                 },
-                x = 3,
-                y = 23,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 39690,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_HORDE,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 39690,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_HORDE,
-                    },
-                },
-                x = 3,
-                y = 23,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 23,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 39691,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+            variations = {
+                {
+                    type = "quest",
+                    id = 39691,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
                     },
                 },
-                x = 3,
-                y = 24,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 40976,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_HORDE,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 40976,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_HORDE,
-                    },
-                },
-                x = 3,
-                y = 24,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 24,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 44471,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+            variations = {
+                {
+                    type = "quest",
+                    id = 44471,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
                     },
                 },
-                x = 3,
-                y = 25,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 40982,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_HORDE,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 40982,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_HORDE,
-                    },
-                },
-                x = 3,
-                y = 25,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 25,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 44463,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+            variations = {
+                {
+                    type = "quest",
+                    id = 44463,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
                     },
                 },
-                x = 3,
-                y = 26,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 40983,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_HORDE,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 40983,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_HORDE,
-                    },
-                },
-                x = 3,
-                y = 26,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 26,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 44473,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+            variations = {
+                {
+                    type = "quest",
+                    id = 44473,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
                     },
                 },
-                x = 3,
-                y = 27,
-                connections = {
-                    1,
+                {
+                    type = "quest",
+                    id = 41002,
+                    restrictions = {
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_HORDE,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41002,
-                restrictions = {
-                    {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_HORDE,
-                    },
-                },
-                x = 3,
-                y = 27,
-                connections = {
-                    1,
-                },
+            x = 3,
+            y = 27,
+            connections = {
+                1, 
             },
         },
         {
@@ -636,6 +599,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_HAVOC, {
     name = string.format("%s: %s", select(2, GetSpecializationInfoByID(577)), "Twinblades of the Deceiver"),
     category = BTWQUESTS_CATEGORY_LEGION_ARTIFACT,
     expansion = BTWQUESTS_EXPANSION_LEGION,
+    alternatives = {
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DEATHKNIGHT_BLOOD,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DRUID_BALANCE,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_HUNTER_BEASTMASTERY,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MAGE_ARCANE,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MONK_BREWMASTER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PALADIN_HOLY,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PRIEST_DISCIPLINE,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_ROGUE_ASSASSINATION,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_SHAMAN_ELEMENTAL,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARLOCK_AFFLICATION,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARRIOR_ARMS,
+    },
     restrictions = {
         {
             type = "class",
@@ -650,101 +626,108 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_HAVOC, {
     buttonImage = "Interface\\AddOns\\BtWQuestsLegion\\UI-Chain-DemonHunter-Havoc",
     items = {
         {
-            {
-                type = "quest",
-                id = 40819,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 40819,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 41120,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41120,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 39051,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 39051,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 1,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 41121,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41121,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 1,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 1,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 39247,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 39247,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 2,
-            },
-            {
-                type = "quest",
-                id = 41119,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
+                {
+                    type = "quest",
+                    id = 41119,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
-                x = 3,
-                y = 2,
             },
-        }
+            x = 3,
+            y = 2,
+        }        
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_VENGEANCE, {
     name = string.format("%s: %s", select(2, GetSpecializationInfoByID(581)), "Aldrachi Warblades"),
     category = BTWQUESTS_CATEGORY_LEGION_ARTIFACT,
     expansion = BTWQUESTS_EXPANSION_LEGION,
+    alternatives = {
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DEATHKNIGHT_FROST,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DRUID_FERAL,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_HUNTER_MARKSMANSHIP,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MAGE_FIRE,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MONK_WINDWALKER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PALADIN_PROTECTION,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PRIEST_HOLY,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_ROGUE_OUTLAW,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_SHAMAN_ENHANCEMENT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARLOCK_DEMONOLOGY,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARRIOR_FURY,
+    },
     restrictions = {
         {
             type = "class",
@@ -759,35 +742,32 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_VENGEANCE,
     buttonImage = "Interface\\AddOns\\BtWQuestsLegion\\UI-Chain-DemonHunter-Vengeance",
     items = {
         {
-            {
-                type = "quest",
-                id = 40247,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 40247,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 41803,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41803,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
             },
         },
         {
@@ -818,30 +798,30 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_VENGEANCE,
             },
         },
         {
-            {
-                type = "quest",
-                id = 40249,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 40249,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 4,
-            },
-            {
-                type = "quest",
-                id = 41863,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
+                {
+                    type = "quest",
+                    id = 41863,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
-                x = 3,
-                y = 4,
             },
+            x = 3,
+            y = 4,
         }
     },
 })
@@ -849,6 +829,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_CAMPAIGN, 
     name = BTWQUESTS_DEMONHUNTER_CAMPAIGN,
     category = BTWQUESTS_CATEGORY_LEGION_CLASSES_DEMONHUNTER,
     expansion = BTWQUESTS_EXPANSION_LEGION,
+    alternatives = {
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DEATHKNIGHT_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DRUID_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_HUNTER_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MAGE_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MONK_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PALADIN_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PRIEST_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_ROGUE_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_SHAMAN_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARLOCK_CAMPAIGN,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARRIOR_CAMPAIGN,
+    },
     prerequisites = {
         {
             type = "chain",
@@ -868,69 +861,61 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_CAMPAIGN, 
     range = {98, 110},
     items = {
         {
-            { -- Kayn
-                type = "quest",
-                id = 39261,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                { -- Kayn
+                    type = "quest",
+                    id = 39261,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        }
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    1
+                { -- Altruis
+                    type = "quest",
+                    id = 39047,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        }
+                    },
                 },
             },
-            { -- Altruis
-                type = "quest",
-                id = 39047,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                1
             },
         },
         {
-            {
-                type = "quest",
-                id = 40814,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 40814,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 1,
-                connections = {
-                    1, 2,
-                    3, 4
+                {
+                    type = "quest",
+                    id = 40816,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 40816,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 1,
-                connections = {
-                    1, 2,
-                    3, 4
-                },
+            x = 3,
+            y = 1,
+            connections = {
+                1, 2, 3, 4, 
             },
         },
         
@@ -1014,99 +999,90 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_CAMPAIGN, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 41221,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 41221,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 5,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 41033,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41033,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 5,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 5,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 41037,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 41037,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 6,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 41060,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41060,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 6,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 6,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 41062,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 41062,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 7,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 41070,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41070,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 7,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 7,
+            connections = {
+                1, 
             },
         },
         {
@@ -1128,67 +1104,61 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_CAMPAIGN, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 41067,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 41067,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 10,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 41096,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41096,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 10,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 10,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 41069,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 41069,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 11,
-                connections = {
-                    2
+                {
+                    type = "quest",
+                    id = 41099,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 41099,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 11,
-                connections = {
-                    2
-                },
+            x = 3,
+            y = 11,
+            connections = {
+                2, 
             },
         },
         {
@@ -1201,103 +1171,93 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_CAMPAIGN, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 44087,
-                breadcrumb = true,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 44087,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 12,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 42666,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 42666,
-                breadcrumb = true,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 12,
-                connections = {
-                    1
-                },
+            breadcrumb = true,
+            x = 3,
+            y = 12,
+            connections = {
+                1, 
             },
         },
         
         
         {
-            {
-                type = "quest",
-                id = 42671,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 42671,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 13,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 42670,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 42670,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 13,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 13,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 42677,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 42677,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 14,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 44161,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 44161,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 14,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 14,
+            connections = {
+                1, 
             },
         },
         {
@@ -1402,67 +1362,61 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_CAMPAIGN, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 42921,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 42921,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 25,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 42634,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 42634,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 25,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 25,
+            connections = {
+                1, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 42665,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 42665,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 26,
-                connections = {
-                    1, 2
+                {
+                    type = "quest",
+                    id = 39741,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 39741,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 26,
-                connections = {
-                    1, 2
-                },
+            x = 3,
+            y = 26,
+            connections = {
+                1, 2, 
             },
         },
         {
@@ -1695,35 +1649,32 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_CAMPAIGN, 
             },
         },
         {
-            {
-                type = "quest",
-                id = 42920,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40374,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 42920,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40374,
+                        },
+                    },
                 },
-                x = 3,
-                y = 40,
-                connections = {
-                    1
+                {
+                    type = "quest",
+                    id = 42809,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 40375,
+                        },
+                    },
                 },
             },
-            {
-                type = "quest",
-                id = 42809,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 40375,
-                    }
-                },
-                x = 3,
-                y = 40,
-                connections = {
-                    1
-                },
+            x = 3,
+            y = 40,
+            connections = {
+                1, 
             },
         },
         {
@@ -1762,6 +1713,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_FOLLOWER, 
     name = BtWQuests_GetQuestName(45391),
     category = BTWQUESTS_CATEGORY_LEGION_CLASSES_DEMONHUNTER,
     expansion = BTWQUESTS_EXPANSION_LEGION,
+    alternatives = {
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DEATHKNIGHT_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DRUID_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_HUNTER_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MAGE_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MONK_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PALADIN_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PRIEST_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_ROGUE_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_SHAMAN_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARLOCK_FOLLOWER,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARRIOR_FOLLOWER,
+    },
     restrictions = {
         {
             type = "class",
@@ -1907,6 +1871,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_MOUNT, {
     name = BTWQUESTS_DEMONHUNTER_MOUNT,
     category = BTWQUESTS_CATEGORY_LEGION_CLASSES_DEMONHUNTER,
     expansion = BTWQUESTS_EXPANSION_LEGION,
+    alternatives = {
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DEATHKNIGHT_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_DRUID_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_HUNTER_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MAGE_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_MONK_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PALADIN_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_PRIEST_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_ROGUE_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_SHAMAN_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARLOCK_MOUNT,
+        BTWQUESTS_CHAIN_LEGION_CLASSES_WARRIOR_MOUNT,
+    },
     restrictions = {
         {
             type = "class",
@@ -1946,6 +1923,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_LEGION_CLASSES_DEMONHUNTER_MOUNT, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_LEGION_CLASSES_DEMONHUNTER, {
     name = LOCALIZED_CLASS_NAMES_MALE["DEMONHUNTER"],
     expansion = BTWQUESTS_EXPANSION_LEGION,
+    alternatives = {
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_DEATHKNIGHT,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_DRUID,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_HUNTER,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_MAGE,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_MONK,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_PALADIN,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_PRIEST,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_ROGUE,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_SHAMAN,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_WARLOCK,
+        BTWQUESTS_CATEGORY_LEGION_CLASSES_WARRIOR,
+    },
     restrictions = {
         {
             type = "class",

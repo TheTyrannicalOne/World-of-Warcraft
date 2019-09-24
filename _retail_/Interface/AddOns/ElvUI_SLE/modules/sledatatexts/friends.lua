@@ -210,7 +210,8 @@ end
 
 function DTP:update_Friends()
 	ShowFriends()
-	local friendsTotal, friendsOnline = T.GetNumFriends()
+	local friendsTotal = T.GetNumFriends()
+	local friendsOnline = T.GetNumOnlineFriends()
 	local bnTotal, bnOnline = T.BNGetNumFriends()
 	local totalOnline = friendsOnline + bnOnline
 	local totalFriends = friendsTotal + bnTotal
@@ -341,7 +342,7 @@ function LDB.OnEnter(self)
 	end
 
 	local _, numBNOnline = T.BNGetNumFriends()
-	local _, numFriendsOnline = T.GetNumFriends()
+	local numFriendsOnline = T.GetNumOnlineFriends()
 
 	if (numBNOnline > 0) or (numFriendsOnline > 0) then
 		line = tooltip:AddLine()
@@ -377,7 +378,7 @@ function LDB.OnEnter(self)
 				T.twipe(realid_table)
 				for i = 1, numBNOnline do
 					local presenceID, givenName, bTag, _, _, toonID, gameClient, isOnline, lastOnline, isAFK, isDND, broadcast, note, _, castTime = T.BNGetFriendInfo(i)
-					local _, toonName, client, realmName, realmID, faction, race, class, guild, zoneName, level, gameText, _, _, canSoR, _, _, _, _, playerGUID, WoWProjectID = T.BNGetGameAccountInfo(toonID or 0)
+					local _, toonName, client, realmName, realmID, faction, race, class, guild, zoneName, level, gameText, _, _, canSoR, _, _, _, _, playerGUID, WoWProjectID = T.BNGetFriendGameAccountInfo(i , 1)
 					local broadcastTime = ""
 					if castTime then
 						broadcastTime = T.format(BNET_BROADCAST_SENT_TIME, sletime_Conversion(castTime));
@@ -480,8 +481,6 @@ function LDB.OnEnter(self)
 							line = tooltip:SetCell(line, 6, "|cffffffffDestiny 2|r")
 						elseif player["CLIENT"] == "VIPR" then
 							line = tooltip:SetCell(line, 6, "CoD")
-						else
-							print(player["GIVENNAME"], player["CLIENT"])
 						end
 					end
 
@@ -587,13 +586,13 @@ end)
 
 function frame:PLAYER_LOGIN()
 	local _, numBNOnline = T.BNGetNumFriends()
-	local _, numFriendsOnline = T.GetNumFriends()
+	local numFriendsOnline = T.GetNumOnlineFriends()
 
 	if (numBNOnline > 0) or (numFriendsOnline > 0) then
 		if numBNOnline > 0 then
 			for i = 1, numBNOnline do
 					local presenceID, givenName, bTag, _, _, toonID, gameClient, isOnline, lastOnline, isAFK, isDND, broadcast, note, _, castTime = T.BNGetFriendInfo(i)
-					local _, toonName, client, realmName, realmID, faction, race, class, guild, zoneName, level, gameText = T.BNGetGameAccountInfo(toonID or 0)
+					local _, toonName, client, realmName, realmID, faction, race, class, guild, zoneName, level, gameText = T.BNGetFriendGameAccountInfo(i, 1)
 			end
 		end
 	end

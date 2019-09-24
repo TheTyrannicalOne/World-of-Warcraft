@@ -5828,6 +5828,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Entrar en el Camino del Sueño",
     },
+    [55396] = {
+        name = "El material del que están hechos los sueños",
+    },
     [55398] = {
         name = "El largo despertar",
     },
@@ -6011,6 +6014,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55652] = {
         name = "Bahía de Prospección",
     },
+    [55657] = {
+        name = "A la sombra de alas carmesíes",
+    },
     [55685] = {
         name = "Venimos en son de paz... y con ánimo de lucro",
     },
@@ -6040,6 +6046,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55734] = {
         name = "Construcción de equipo de excavación",
+    },
+    [55735] = {
+        name = "Defender La Vorágine",
     },
     [55736] = {
         name = "Bienvenidos a la Resistencia",
@@ -6182,6 +6191,24 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56181] = {
         name = "¡Yo invito!",
     },
+    [56185] = {
+        name = "Susurros de N'Zoth",
+    },
+    [56186] = {
+        name = "Espías a diestro y siniestro",
+    },
+    [56187] = {
+        name = "Sombra de alas negras",
+    },
+    [56188] = {
+        name = "¡A las catacumbas!",
+    },
+    [56189] = {
+        name = "Tras el rastro del Príncipe Negro",
+    },
+    [56190] = {
+        name = "Salvar a Cuerno de Ébano",
+    },
     [56210] = {
         name = "Piedras de visión",
     },
@@ -6308,11 +6335,17 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56379] = {
         name = "La tripulación desaparecida",
     },
+    [56401] = {
+        name = "Una descarga azul",
+    },
     [56422] = {
         name = "Con alas fantasmales",
     },
     [56429] = {
         name = "Contra las cuerdas",
+    },
+    [56504] = {
+        name = "Diario de Wrathion",
     },
     [56560] = {
         name = "Un descubrimiento curioso",

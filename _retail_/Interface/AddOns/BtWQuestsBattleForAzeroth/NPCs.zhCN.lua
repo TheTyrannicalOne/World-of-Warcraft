@@ -1397,6 +1397,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149867] = {
         name = "麦格尼·铜须",
     },
+    [149904] = {
+        name = "奈莉·锐鳍",
+    },
     [150101] = {
         name = "吉安娜·普罗德摩尔",
     },
@@ -1448,6 +1451,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "首席传送师欧库勒斯",
     },
+    [151964] = {
+        name = "灵魂行者黑角",
+    },
     [152084] = {
         name = "穆勒尔",
     },
@@ -1489,6 +1495,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154408] = {
         name = "洛尔穆",
+    },
+    [154464] = {
+        name = "土灵守护者",
     },
     [154640] = {
         name = "大元帅泰布雷德",

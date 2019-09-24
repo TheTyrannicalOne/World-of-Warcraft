@@ -5828,6 +5828,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Dentro da Estrada Onírica",
     },
+    [55396] = {
+        name = "Do que sonhos são feitos",
+    },
     [55398] = {
         name = "O longo despertar",
     },
@@ -6011,6 +6014,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55652] = {
         name = "Baía do Prospecto",
     },
+    [55657] = {
+        name = "À sombra das Asas Rubras",
+    },
     [55685] = {
         name = "Somos da paz... da \"passa\" a grana",
     },
@@ -6040,6 +6046,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55734] = {
         name = "Construção de perfuratriz",
+    },
+    [55735] = {
+        name = "Defendendo a Voragem",
     },
     [55736] = {
         name = "Boas-vindas à resistência",
@@ -6182,6 +6191,24 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56181] = {
         name = "Esse é por minha conta",
     },
+    [56185] = {
+        name = "Sussurros de N'Zoth",
+    },
+    [56186] = {
+        name = "Espiões por todos os lados",
+    },
+    [56187] = {
+        name = "Sombra de Asas Pretas",
+    },
+    [56188] = {
+        name = "Às catacumbas!",
+    },
+    [56189] = {
+        name = "No rastro do Príncipe Negro",
+    },
+    [56190] = {
+        name = "Salve Chifre de Ébano",
+    },
     [56210] = {
         name = "Pedras divinatórias",
     },
@@ -6308,11 +6335,17 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56379] = {
         name = "Tripulação desaparecida",
     },
+    [56401] = {
+        name = "Um súbito relâmpago",
+    },
     [56422] = {
         name = "Em asas fantasmas",
     },
     [56429] = {
         name = "O que vamos enfrentar",
+    },
+    [56504] = {
+        name = "Diário de Wrathion",
     },
     [56560] = {
         name = "Uma descoberta curiosa",

@@ -1603,7 +1603,7 @@
 				<Scripts>
 					<OnClick>
 						local item = self:GetParent().item
-						item:OnClick(item, self, BtWQuestsFrame, BtWQuestsFrame.Tooltip)
+						BtWQuestsFrame:SelectExpansion(item:GetID())
 					</OnClick>
 				</Scripts>
 			</Button>

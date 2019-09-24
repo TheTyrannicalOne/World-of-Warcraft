@@ -2,7 +2,7 @@
 RareScannerDB = {
 	["char"] = {
 		["Durlok - Black Dragonflight"] = {
-			["rares_killed"] = {
+			["events_completed"] = {
 			},
 			["quests_completed"] = {
 				[47585] = true,
@@ -221,7 +221,7 @@ RareScannerDB = {
 				[51465] = true,
 				[53031] = true,
 				[31815] = true,
-				[47741] = true,
+				[31823] = true,
 				[31831] = true,
 				[53370] = true,
 				[52969] = true,
@@ -250,15 +250,15 @@ RareScannerDB = {
 				[51091] = true,
 				[31578] = true,
 				[51766] = true,
-				[31568] = true,
-				[31552] = true,
 				[47742] = true,
+				[31552] = true,
+				[31568] = true,
 				[50297] = true,
 				[31576] = true,
 				[31584] = true,
 				[31592] = true,
 				[50433] = true,
-				[48333] = true,
+				[47311] = true,
 				[52462] = true,
 				[49267] = true,
 				[51447] = true,
@@ -266,17 +266,17 @@ RareScannerDB = {
 				[51990] = true,
 				[53028] = true,
 				[47423] = true,
-				[47439] = true,
-				[40317] = true,
+				[46928] = true,
 				[49004] = true,
+				[40317] = true,
 				[50259] = true,
 				[43926] = true,
 				[50074] = true,
 				[47735] = true,
 				[50280] = true,
-				[31752] = true,
-				[47583] = true,
 				[50154] = true,
+				[47583] = true,
+				[53220] = true,
 				[49148] = true,
 				[49489] = true,
 				[31724] = true,
@@ -286,7 +286,7 @@ RareScannerDB = {
 				[40976] = true,
 				[48897] = true,
 				[31824] = true,
-				[40605] = true,
+				[31832] = true,
 				[49965] = true,
 				[46927] = true,
 				[47435] = true,
@@ -294,21 +294,21 @@ RareScannerDB = {
 				[31573] = true,
 				[31821] = true,
 				[51796] = true,
-				[31832] = true,
+				[40605] = true,
 				[31582] = true,
 				[49814] = true,
 				[47432] = true,
 				[46929] = true,
 				[47733] = true,
 				[50538] = true,
-				[53220] = true,
+				[31752] = true,
 				[33707] = true,
 				[47520] = true,
 				[51624] = true,
 				[44659] = true,
-				[46928] = true,
+				[47439] = true,
 				[47584] = true,
-				[47311] = true,
+				[48333] = true,
 				[49149] = true,
 				[50931] = true,
 				[50332] = true,
@@ -325,7 +325,7 @@ RareScannerDB = {
 				[53741] = true,
 				[47437] = true,
 				[47259] = true,
-				[31823] = true,
+				[47741] = true,
 				[49421] = true,
 				[47442] = true,
 				[47737] = true,
@@ -341,9 +341,9 @@ RareScannerDB = {
 				[44184] = true,
 				[39409] = true,
 			},
-			["events_completed"] = {
-			},
 			["containers_opened"] = {
+			},
+			["rares_killed"] = {
 			},
 		},
 		["Shanyt - Argent Dawn"] = {
@@ -5495,7 +5495,7 @@ RareScannerDB = {
 				[27007] = true,
 				[28287] = true,
 				[27519] = true,
-				[27775] = true,
+				[55548] = true,
 				[28031] = true,
 				[56572] = true,
 				[57084] = true,
@@ -5687,7 +5687,7 @@ RareScannerDB = {
 				[27010] = true,
 				[38147] = true,
 				[27522] = true,
-				[27778] = true,
+				[55554] = true,
 				[28034] = true,
 				[28290] = true,
 				[55999] = true,
@@ -5801,14 +5801,14 @@ RareScannerDB = {
 				[34860] = true,
 				[55531] = true,
 				[47878] = true,
-				[35079] = true,
+				[25732] = true,
 				[24452] = true,
 				[24708] = true,
 				[24964] = true,
 				[25220] = true,
 				[25476] = true,
-				[25732] = true,
-				[25988] = true,
+				[35079] = true,
+				[35591] = true,
 				[26244] = true,
 				[26500] = true,
 				[53475] = true,
@@ -5857,14 +5857,14 @@ RareScannerDB = {
 				[10691] = true,
 				[10819] = true,
 				[10947] = true,
-				[11075] = true,
+				[44296] = true,
 				[38877] = true,
 				[38365] = true,
 				[11459] = true,
 				[11587] = true,
 				[37853] = true,
 				[11843] = true,
-				[47880] = true,
+				[11971] = true,
 				[12099] = true,
 				[24453] = true,
 				[24709] = true,
@@ -5909,8 +5909,8 @@ RareScannerDB = {
 				[36618] = true,
 				[37130] = true,
 				[53459] = true,
-				[55049] = true,
 				[38666] = true,
+				[55049] = true,
 				[39178] = true,
 				[43996] = true,
 				[43484] = true,
@@ -5970,7 +5970,7 @@ RareScannerDB = {
 				[35084] = true,
 				[35596] = true,
 				[52971] = true,
-				[9156] = true,
+				[53003] = true,
 				[37132] = true,
 				[13084] = true,
 				[836] = true,
@@ -6128,7 +6128,7 @@ RareScannerDB = {
 				[12613] = true,
 				[25481] = true,
 				[35089] = true,
-				[25993] = true,
+				[51984] = true,
 				[26249] = true,
 				[36625] = true,
 				[37137] = true,
@@ -6218,7 +6218,7 @@ RareScannerDB = {
 				[31882] = true,
 				[47891] = true,
 				[48403] = true,
-				[53011] = true,
+				[9158] = true,
 				[49427] = true,
 				[34776] = true,
 				[34068] = true,
@@ -6226,7 +6226,7 @@ RareScannerDB = {
 				[50647] = true,
 				[51987] = true,
 				[36116] = true,
-				[9158] = true,
+				[53011] = true,
 				[37140] = true,
 				[37652] = true,
 				[53851] = true,
@@ -6234,7 +6234,7 @@ RareScannerDB = {
 				[39188] = true,
 				[56083] = true,
 				[52276] = true,
-				[57107] = true,
+				[10182] = true,
 				[10310] = true,
 				[10438] = true,
 				[10566] = true,
@@ -6320,15 +6320,15 @@ RareScannerDB = {
 				[50947] = true,
 				[34583] = true,
 				[35095] = true,
-				[51990] = true,
+				[25996] = true,
 				[50260] = true,
 				[36631] = true,
 				[34365] = true,
-				[28044] = true,
+				[56086] = true,
 				[27276] = true,
 				[27532] = true,
 				[27788] = true,
-				[56086] = true,
+				[28044] = true,
 				[28300] = true,
 				[28556] = true,
 				[50314] = true,
@@ -6353,15 +6353,15 @@ RareScannerDB = {
 				[34584] = true,
 				[35096] = true,
 				[51991] = true,
-				[55063] = true,
+				[38680] = true,
 				[9159] = true,
 				[37144] = true,
 				[37656] = true,
-				[55575] = true,
-				[38680] = true,
 				[39192] = true,
-				[56087] = true,
-				[56599] = true,
+				[55063] = true,
+				[55575] = true,
+				[9927] = true,
+				[10055] = true,
 				[10183] = true,
 				[50328] = true,
 				[10439] = true,
@@ -6390,7 +6390,7 @@ RareScannerDB = {
 				[50442] = true,
 				[37657] = true,
 				[27277] = true,
-				[27533] = true,
+				[55064] = true,
 				[27789] = true,
 				[28045] = true,
 				[28301] = true,
@@ -6477,14 +6477,14 @@ RareScannerDB = {
 				[32654] = true,
 				[39487] = true,
 				[33564] = true,
-				[9416] = true,
+				[34473] = true,
 				[8648] = true,
 				[35100] = true,
-				[34473] = true,
+				[54043] = true,
 				[38684] = true,
 				[9160] = true,
 				[37148] = true,
-				[54043] = true,
+				[9416] = true,
 				[40220] = true,
 				[55067] = true,
 				[9800] = true,
@@ -6494,7 +6494,7 @@ RareScannerDB = {
 				[10312] = true,
 				[10440] = true,
 				[10568] = true,
-				[27535] = true,
+				[50252] = true,
 				[9846] = true,
 				[38868] = true,
 				[44316] = true,
@@ -6514,14 +6514,14 @@ RareScannerDB = {
 				[25743] = true,
 				[25999] = true,
 				[13128] = true,
-				[50252] = true,
-				[37149] = true,
+				[55068] = true,
+				[53532] = true,
 				[54044] = true,
 				[27279] = true,
-				[55068] = true,
-				[56604] = true,
-				[39709] = true,
+				[27535] = true,
 				[28303] = true,
+				[28047] = true,
+				[56604] = true,
 				[50307] = true,
 				[28815] = true,
 				[51211] = true,
@@ -6578,14 +6578,14 @@ RareScannerDB = {
 				[25744] = true,
 				[26000] = true,
 				[26256] = true,
-				[27536] = true,
+				[55070] = true,
 				[53534] = true,
 				[27024] = true,
 				[27280] = true,
-				[55070] = true,
+				[27536] = true,
 				[38355] = true,
 				[28048] = true,
-				[28304] = true,
+				[56606] = true,
 				[28560] = true,
 				[28816] = true,
 				[54226] = true,
@@ -6611,11 +6611,11 @@ RareScannerDB = {
 				[35616] = true,
 				[36128] = true,
 				[9161] = true,
-				[37152] = true,
+				[53535] = true,
 				[54047] = true,
 				[44319] = true,
-				[56095] = true,
 				[26168] = true,
+				[56095] = true,
 				[39712] = true,
 				[14219] = true,
 				[10185] = true,
@@ -6642,8 +6642,8 @@ RareScannerDB = {
 				[25745] = true,
 				[13001] = true,
 				[13129] = true,
-				[13385] = true,
 				[53536] = true,
+				[37153] = true,
 				[36472] = true,
 				[27281] = true,
 				[38613] = true,
@@ -6656,7 +6656,7 @@ RareScannerDB = {
 				[29329] = true,
 				[29585] = true,
 				[51220] = true,
-				[30097] = true,
+				[43809] = true,
 				[30353] = true,
 				[44833] = true,
 				[49767] = true,
@@ -6706,11 +6706,11 @@ RareScannerDB = {
 				[25746] = true,
 				[26002] = true,
 				[36131] = true,
-				[54050] = true,
-				[53538] = true,
 				[37667] = true,
+				[37155] = true,
+				[54050] = true,
 				[27282] = true,
-				[38691] = true,
+				[55074] = true,
 				[26382] = true,
 				[34883] = true,
 				[28306] = true,
@@ -6727,12 +6727,12 @@ RareScannerDB = {
 				[50731] = true,
 				[50823] = true,
 				[40401] = true,
-				[33572] = true,
+				[49955] = true,
 				[37156] = true,
 				[32402] = true,
 				[49956] = true,
 				[54736] = true,
-				[49955] = true,
+				[33572] = true,
 				[54224] = true,
 				[8650] = true,
 				[13429] = true,
@@ -6740,7 +6740,7 @@ RareScannerDB = {
 				[36132] = true,
 				[9162] = true,
 				[53539] = true,
-				[53540] = true,
+				[26771] = true,
 				[26345] = true,
 				[38692] = true,
 				[9802] = true,
@@ -6765,13 +6765,13 @@ RareScannerDB = {
 				[24467] = true,
 				[33061] = true,
 				[33573] = true,
-				[37157] = true,
+				[53540] = true,
 				[34597] = true,
 				[25747] = true,
 				[26003] = true,
 				[13130] = true,
 				[53028] = true,
-				[26771] = true,
+				[37157] = true,
 				[37669] = true,
 				[27283] = true,
 				[27539] = true,
@@ -6869,35 +6869,35 @@ RareScannerDB = {
 				[53031] = true,
 				[53543] = true,
 				[37672] = true,
-				[55591] = true,
-				[42447] = true,
 				[39208] = true,
+				[42447] = true,
+				[55591] = true,
 				[9931] = true,
-				[37161] = true,
+				[53544] = true,
 				[40744] = true,
 				[10315] = true,
 				[10443] = true,
 				[10571] = true,
 				[42792] = true,
 				[43304] = true,
-				[24981] = true,
+				[12491] = true,
 				[11083] = true,
 				[11211] = true,
-				[26261] = true,
+				[36137] = true,
 				[11467] = true,
 				[11595] = true,
 				[26517] = true,
 				[11851] = true,
-				[53544] = true,
+				[37161] = true,
 				[14155] = true,
 				[38863] = true,
 				[38351] = true,
-				[12491] = true,
+				[24981] = true,
 				[25237] = true,
 				[25493] = true,
 				[25749] = true,
 				[26005] = true,
-				[36137] = true,
+				[26261] = true,
 				[13259] = true,
 				[26773] = true,
 				[27029] = true,
@@ -6957,11 +6957,11 @@ RareScannerDB = {
 				[48938] = true,
 				[49669] = true,
 				[33579] = true,
-				[26774] = true,
+				[37163] = true,
 				[25494] = true,
 				[25750] = true,
 				[26006] = true,
-				[37163] = true,
+				[26774] = true,
 				[26518] = true,
 				[53546] = true,
 				[54058] = true,
@@ -7012,22 +7012,22 @@ RareScannerDB = {
 				[11084] = true,
 				[44844] = true,
 				[49920] = true,
-				[33581] = true,
+				[47840] = true,
 				[11596] = true,
 				[11724] = true,
 				[11852] = true,
 				[11980] = true,
 				[42445] = true,
 				[12236] = true,
-				[47840] = true,
 				[24983] = true,
+				[12492] = true,
 				[34093] = true,
-				[53548] = true,
+				[26775] = true,
 				[25751] = true,
 				[26007] = true,
-				[36141] = true,
+				[26263] = true,
 				[13260] = true,
-				[26775] = true,
+				[37165] = true,
 				[14324] = true,
 				[35339] = true,
 				[38701] = true,
@@ -7120,7 +7120,7 @@ RareScannerDB = {
 				[12976] = true,
 				[8653] = true,
 				[49276] = true,
-				[52015] = true,
+				[35632] = true,
 				[34801] = true,
 				[36656] = true,
 				[37168] = true,
@@ -7172,7 +7172,7 @@ RareScannerDB = {
 				[30361] = true,
 				[30617] = true,
 				[48840] = true,
-				[45873] = true,
+				[31129] = true,
 				[31385] = true,
 				[14146] = true,
 				[35335] = true,
@@ -7184,7 +7184,7 @@ RareScannerDB = {
 				[13444] = true,
 				[35387] = true,
 				[49178] = true,
-				[35634] = true,
+				[52017] = true,
 				[35959] = true,
 				[36658] = true,
 				[25830] = true,
@@ -7193,7 +7193,7 @@ RareScannerDB = {
 				[40080] = true,
 				[48864] = true,
 				[38061] = true,
-				[40242] = true,
+				[56625] = true,
 				[46297] = true,
 				[28513] = true,
 				[41778] = true,
@@ -7216,7 +7216,7 @@ RareScannerDB = {
 				[25472] = true,
 				[48421] = true,
 				[25754] = true,
-				[26010] = true,
+				[6503] = true,
 				[48308] = true,
 				[26522] = true,
 				[47261] = true,
@@ -7254,7 +7254,7 @@ RareScannerDB = {
 				[45128] = true,
 				[9422] = true,
 				[47263] = true,
-				[26267] = true,
+				[13134] = true,
 				[9806] = true,
 				[9934] = true,
 				[40244] = true,
@@ -7265,7 +7265,7 @@ RareScannerDB = {
 				[10702] = true,
 				[10830] = true,
 				[10958] = true,
-				[26523] = true,
+				[13262] = true,
 				[11214] = true,
 				[26779] = true,
 				[45876] = true,
@@ -7281,8 +7281,8 @@ RareScannerDB = {
 				[25499] = true,
 				[25755] = true,
 				[26011] = true,
-				[13134] = true,
-				[13262] = true,
+				[26267] = true,
+				[26523] = true,
 				[13390] = true,
 				[845] = true,
 				[869] = true,
@@ -7351,8 +7351,8 @@ RareScannerDB = {
 				[27548] = true,
 				[27292] = true,
 				[55094] = true,
-				[56118] = true,
 				[39735] = true,
+				[28060] = true,
 				[47744] = true,
 				[28572] = true,
 				[28828] = true,
@@ -7368,8 +7368,8 @@ RareScannerDB = {
 				[31388] = true,
 				[33469] = true,
 				[9843] = true,
-				[48439] = true,
 				[32412] = true,
+				[48439] = true,
 				[12608] = true,
 				[13056] = true,
 				[25601] = true,
@@ -7395,12 +7395,12 @@ RareScannerDB = {
 				[10959] = true,
 				[42273] = true,
 				[11215] = true,
-				[13007] = true,
-				[11471] = true,
 				[52024] = true,
+				[11471] = true,
+				[13007] = true,
 				[13135] = true,
-				[47416] = true,
-				[11983] = true,
+				[11855] = true,
+				[47928] = true,
 				[12111] = true,
 				[12239] = true,
 				[24733] = true,
@@ -7412,9 +7412,9 @@ RareScannerDB = {
 				[26269] = true,
 				[26525] = true,
 				[37177] = true,
-				[55096] = true,
-				[27293] = true,
 				[27549] = true,
+				[27293] = true,
+				[55096] = true,
 				[55608] = true,
 				[28061] = true,
 				[45633] = true,
@@ -7462,25 +7462,25 @@ RareScannerDB = {
 				[44553] = true,
 				[25230] = true,
 				[44843] = true,
-				[35643] = true,
+				[25758] = true,
 				[47418] = true,
-				[37179] = true,
+				[35643] = true,
 				[48442] = true,
 				[24478] = true,
 				[24734] = true,
 				[24990] = true,
 				[34107] = true,
 				[25502] = true,
-				[25758] = true,
+				[51514] = true,
 				[26014] = true,
-				[47208] = true,
-				[26526] = true,
 				[26782] = true,
+				[26526] = true,
+				[37179] = true,
 				[46267] = true,
 				[27294] = true,
 				[27550] = true,
 				[55610] = true,
-				[28062] = true,
+				[39739] = true,
 				[34992] = true,
 				[28574] = true,
 				[28830] = true,
@@ -7490,9 +7490,9 @@ RareScannerDB = {
 				[12659] = true,
 				[43835] = true,
 				[35965] = true,
-				[44859] = true,
-				[7784] = true,
+				[30622] = true,
 				[31134] = true,
+				[7784] = true,
 				[31390] = true,
 				[40473] = true,
 				[12611] = true,
@@ -7526,20 +7526,20 @@ RareScannerDB = {
 				[45372] = true,
 				[36117] = true,
 				[54960] = true,
-				[12240] = true,
+				[24479] = true,
 				[11856] = true,
 				[11984] = true,
-				[37181] = true,
-				[24479] = true,
+				[26783] = true,
+				[12240] = true,
 				[24735] = true,
-				[12496] = true,
+				[49980] = true,
 				[12624] = true,
 				[25503] = true,
 				[51516] = true,
 				[26015] = true,
-				[36157] = true,
+				[13136] = true,
 				[13264] = true,
-				[26783] = true,
+				[37181] = true,
 				[27039] = true,
 				[27295] = true,
 				[27551] = true,
@@ -7574,7 +7574,7 @@ RareScannerDB = {
 				[37182] = true,
 				[40389] = true,
 				[14066] = true,
-				[38718] = true,
+				[55101] = true,
 				[39365] = true,
 				[25977] = true,
 				[46696] = true,
@@ -7616,7 +7616,7 @@ RareScannerDB = {
 				[51518] = true,
 				[29600] = true,
 				[13886] = true,
-				[30112] = true,
+				[43839] = true,
 				[44351] = true,
 				[30624] = true,
 				[44484] = true,
@@ -7651,19 +7651,19 @@ RareScannerDB = {
 				[43840] = true,
 				[11089] = true,
 				[12029] = true,
-				[49472] = true,
-				[11473] = true,
-				[12497] = true,
 				[25195] = true,
+				[11473] = true,
+				[49472] = true,
+				[49984] = true,
 				[11857] = true,
 				[11985] = true,
 				[48448] = true,
 				[12241] = true,
 				[24737] = true,
-				[49984] = true,
-				[51520] = true,
-				[25505] = true,
+				[24993] = true,
 				[25761] = true,
+				[25505] = true,
+				[51520] = true,
 				[35649] = true,
 				[26273] = true,
 				[26529] = true,
@@ -7722,17 +7722,17 @@ RareScannerDB = {
 				[34035] = true,
 				[8317] = true,
 				[25250] = true,
-				[6441] = true,
+				[25762] = true,
 				[49474] = true,
 				[24994] = true,
 				[34115] = true,
-				[35651] = true,
-				[25762] = true,
 				[26018] = true,
+				[6441] = true,
+				[35651] = true,
 				[26274] = true,
 				[26530] = true,
-				[37187] = true,
-				[27042] = true,
+				[26786] = true,
+				[54082] = true,
 				[27298] = true,
 				[43588] = true,
 				[39235] = true,
@@ -7751,26 +7751,26 @@ RareScannerDB = {
 				[31138] = true,
 				[31394] = true,
 				[27529] = true,
-				[8105] = true,
-				[47939] = true,
 				[48451] = true,
+				[47939] = true,
+				[8105] = true,
 				[8169] = true,
 				[8274] = true,
 				[40229] = true,
 				[34116] = true,
 				[12827] = true,
-				[13138] = true,
-				[35652] = true,
 				[12712] = true,
+				[35652] = true,
+				[26275] = true,
 				[9170] = true,
 				[53571] = true,
 				[54083] = true,
 				[38212] = true,
 				[38724] = true,
 				[9810] = true,
-				[39748] = true,
-				[24995] = true,
-				[12882] = true,
+				[56131] = true,
+				[12498] = true,
+				[25763] = true,
 				[10322] = true,
 				[10450] = true,
 				[10578] = true,
@@ -7782,16 +7782,16 @@ RareScannerDB = {
 				[11346] = true,
 				[13010] = true,
 				[11602] = true,
-				[26275] = true,
+				[13138] = true,
 				[47428] = true,
 				[11986] = true,
-				[12114] = true,
+				[48452] = true,
 				[12242] = true,
 				[13394] = true,
-				[12498] = true,
+				[24995] = true,
 				[34117] = true,
 				[25507] = true,
-				[25763] = true,
+				[12882] = true,
 				[35653] = true,
 				[36165] = true,
 				[26531] = true,
@@ -7801,7 +7801,7 @@ RareScannerDB = {
 				[43511] = true,
 				[13906] = true,
 				[14034] = true,
-				[14162] = true,
+				[28323] = true,
 				[40773] = true,
 				[40901] = true,
 				[38463] = true,
@@ -7898,7 +7898,7 @@ RareScannerDB = {
 				[55623] = true,
 				[9939] = true,
 				[13819] = true,
-				[11859] = true,
+				[13085] = true,
 				[10323] = true,
 				[10451] = true,
 				[10579] = true,
@@ -7907,13 +7907,13 @@ RareScannerDB = {
 				[43848] = true,
 				[11091] = true,
 				[39360] = true,
-				[13085] = true,
 				[33219] = true,
+				[47432] = true,
 				[54207] = true,
 				[11731] = true,
-				[47432] = true,
+				[11859] = true,
 				[13651] = true,
-				[12115] = true,
+				[48456] = true,
 				[12243] = true,
 				[49480] = true,
 				[24997] = true,
@@ -7921,7 +7921,7 @@ RareScannerDB = {
 				[25509] = true,
 				[12883] = true,
 				[13011] = true,
-				[13139] = true,
+				[26277] = true,
 				[26533] = true,
 				[13395] = true,
 				[27045] = true,
@@ -7994,10 +7994,10 @@ RareScannerDB = {
 				[39243] = true,
 				[43517] = true,
 				[40009] = true,
-				[29606] = true,
+				[42104] = true,
 				[28838] = true,
 				[29094] = true,
-				[42104] = true,
+				[29606] = true,
 				[42827] = true,
 				[29862] = true,
 				[40657] = true,
@@ -8014,44 +8014,44 @@ RareScannerDB = {
 				[49483] = true,
 				[33612] = true,
 				[34124] = true,
-				[13169] = true,
+				[24601] = true,
 				[43496] = true,
-				[52043] = true,
-				[56139] = true,
-				[9172] = true,
+				[35660] = true,
 				[12686] = true,
+				[9172] = true,
 				[192] = true,
 				[42751] = true,
+				[9940] = true,
 				[38732] = true,
 				[9812] = true,
-				[9940] = true,
-				[52044] = true,
-				[185] = true,
-				[24743] = true,
-				[12500] = true,
-				[50508] = true,
-				[42828] = true,
-				[10836] = true,
+				[56139] = true,
+				[12283] = true,
 				[194] = true,
+				[26023] = true,
+				[49484] = true,
+				[33613] = true,
+				[10708] = true,
+				[10836] = true,
+				[12628] = true,
 				[11092] = true,
 				[44876] = true,
 				[11348] = true,
 				[11476] = true,
-				[26023] = true,
-				[11732] = true,
-				[47436] = true,
-				[26791] = true,
-				[12116] = true,
-				[48972] = true,
-				[49484] = true,
-				[33613] = true,
-				[12628] = true,
 				[26772] = true,
-				[12884] = true,
+				[11732] = true,
+				[11860] = true,
 				[13012] = true,
-				[26279] = true,
-				[26535] = true,
+				[48460] = true,
+				[48972] = true,
+				[24743] = true,
+				[24999] = true,
+				[25255] = true,
 				[13396] = true,
+				[51532] = true,
+				[35661] = true,
+				[13140] = true,
+				[26535] = true,
+				[26791] = true,
 				[41109] = true,
 				[27303] = true,
 				[6622] = true,
@@ -8074,21 +8074,21 @@ RareScannerDB = {
 				[47437] = true,
 				[14202] = true,
 				[48461] = true,
-				[32679] = true,
+				[48973] = true,
 				[53181] = true,
 				[33614] = true,
-				[51533] = true,
 				[12794] = true,
 				[35150] = true,
+				[51533] = true,
 				[35662] = true,
 				[36174] = true,
 				[43120] = true,
 				[41764] = true,
 				[51889] = true,
 				[41256] = true,
-				[39758] = true,
-				[39246] = true,
 				[56141] = true,
+				[39246] = true,
+				[39758] = true,
 				[47920] = true,
 				[40515] = true,
 				[41107] = true,
@@ -8108,11 +8108,11 @@ RareScannerDB = {
 				[48462] = true,
 				[48974] = true,
 				[40469] = true,
-				[35663] = true,
+				[52046] = true,
 				[25256] = true,
 				[34639] = true,
 				[35151] = true,
-				[52046] = true,
+				[35663] = true,
 				[26280] = true,
 				[13050] = true,
 				[26792] = true,
@@ -8120,13 +8120,13 @@ RareScannerDB = {
 				[27304] = true,
 				[38735] = true,
 				[55630] = true,
-				[56142] = true,
+				[39759] = true,
 				[28328] = true,
 				[28584] = true,
 				[28840] = true,
 				[43855] = true,
 				[31656] = true,
-				[29608] = true,
+				[42831] = true,
 				[29864] = true,
 				[30120] = true,
 				[30376] = true,
@@ -8157,8 +8157,8 @@ RareScannerDB = {
 				[24745] = true,
 				[10325] = true,
 				[25257] = true,
-				[34641] = true,
-				[10709] = true,
+				[25513] = true,
+				[42832] = true,
 				[10837] = true,
 				[43856] = true,
 				[11093] = true,
@@ -8174,8 +8174,8 @@ RareScannerDB = {
 				[49488] = true,
 				[25001] = true,
 				[34129] = true,
-				[25513] = true,
-				[12885] = true,
+				[34641] = true,
+				[51536] = true,
 				[13013] = true,
 				[26281] = true,
 				[26537] = true,
@@ -8190,7 +8190,7 @@ RareScannerDB = {
 				[28841] = true,
 				[12730] = true,
 				[36467] = true,
-				[42833] = true,
+				[29609] = true,
 				[29865] = true,
 				[30121] = true,
 				[43857] = true,
@@ -8221,30 +8221,30 @@ RareScannerDB = {
 				[38085] = true,
 				[5163] = true,
 				[25983] = true,
-				[26026] = true,
-				[42834] = true,
 				[36587] = true,
+				[42834] = true,
+				[49490] = true,
 				[43858] = true,
 				[39356] = true,
 				[44882] = true,
 				[45394] = true,
+				[12218] = true,
 				[25258] = true,
-				[35155] = true,
 				[46930] = true,
 				[47442] = true,
 				[47954] = true,
-				[35667] = true,
+				[35155] = true,
 				[48978] = true,
-				[49490] = true,
-				[12218] = true,
+				[33107] = true,
+				[26026] = true,
 				[34131] = true,
 				[25514] = true,
 				[51538] = true,
-				[52050] = true,
+				[35667] = true,
 				[36179] = true,
 				[26538] = true,
+				[42292] = true,
 				[54610] = true,
-				[45395] = true,
 				[27306] = true,
 				[38739] = true,
 				[27818] = true,
@@ -8252,59 +8252,59 @@ RareScannerDB = {
 				[28330] = true,
 				[28586] = true,
 				[28842] = true,
-				[42292] = true,
+				[40480] = true,
 				[51643] = true,
 				[42835] = true,
 				[29866] = true,
 				[43859] = true,
-				[40480] = true,
 				[42221] = true,
+				[45395] = true,
 				[30890] = true,
 				[7787] = true,
 				[31402] = true,
 				[46931] = true,
-				[32682] = true,
-				[49491] = true,
 				[42069] = true,
-				[48979] = true,
+				[32682] = true,
 				[8278] = true,
-				[43348] = true,
-				[34132] = true,
-				[36596] = true,
+				[48979] = true,
+				[49491] = true,
 				[51539] = true,
-				[35668] = true,
-				[11350] = true,
-				[9174] = true,
+				[34132] = true,
 				[46244] = true,
+				[35156] = true,
+				[35668] = true,
+				[10838] = true,
+				[9174] = true,
+				[45396] = true,
 				[54099] = true,
 				[54611] = true,
 				[38740] = true,
 				[9814] = true,
 				[39764] = true,
-				[25515] = true,
-				[12630] = true,
+				[33109] = true,
+				[34645] = true,
 				[45499] = true,
 				[10454] = true,
 				[10582] = true,
 				[42836] = true,
-				[10838] = true,
+				[43348] = true,
 				[43860] = true,
 				[11094] = true,
-				[35157] = true,
-				[45396] = true,
-				[13014] = true,
+				[51540] = true,
+				[11350] = true,
+				[26027] = true,
 				[11606] = true,
 				[11734] = true,
 				[11862] = true,
 				[11990] = true,
-				[12118] = true,
-				[12246] = true,
-				[33109] = true,
+				[48468] = true,
+				[48980] = true,
+				[49492] = true,
 				[25003] = true,
 				[25259] = true,
-				[34645] = true,
-				[51540] = true,
-				[26027] = true,
+				[25515] = true,
+				[35157] = true,
+				[13014] = true,
 				[26283] = true,
 				[26539] = true,
 				[13398] = true,
@@ -8312,13 +8312,13 @@ RareScannerDB = {
 				[13654] = true,
 				[27563] = true,
 				[14422] = true,
-				[14038] = true,
-				[28331] = true,
+				[39765] = true,
+				[56660] = true,
 				[28587] = true,
 				[28843] = true,
 				[40632] = true,
 				[35669] = true,
-				[42837] = true,
+				[29611] = true,
 				[43349] = true,
 				[30123] = true,
 				[42688] = true,
@@ -8365,84 +8365,84 @@ RareScannerDB = {
 				[40585] = true,
 				[49494] = true,
 				[25004] = true,
-				[34135] = true,
+				[25260] = true,
 				[25516] = true,
 				[35159] = true,
-				[26028] = true,
+				[35671] = true,
 				[36183] = true,
 				[26540] = true,
 				[40493] = true,
 				[54102] = true,
 				[38231] = true,
-				[27564] = true,
+				[38743] = true,
 				[42204] = true,
 				[39767] = true,
-				[28332] = true,
+				[56662] = true,
 				[28588] = true,
-				[30124] = true,
-				[41815] = true,
 				[54770] = true,
-				[29612] = true,
-				[43351] = true,
+				[41815] = true,
 				[43863] = true,
+				[42839] = true,
+				[43351] = true,
+				[30124] = true,
 				[40003] = true,
 				[25428] = true,
 				[30892] = true,
-				[46935] = true,
-				[31404] = true,
 				[31660] = true,
+				[31404] = true,
+				[46935] = true,
 				[13227] = true,
 				[47959] = true,
 				[25678] = true,
 				[32684] = true,
-				[8279] = true,
+				[49495] = true,
 				[12921] = true,
 				[25] = true,
 				[34648] = true,
 				[8791] = true,
-				[52055] = true,
+				[35672] = true,
 				[36184] = true,
-				[9175] = true,
+				[53079] = true,
 				[12985] = true,
 				[54103] = true,
 				[38232] = true,
 				[38744] = true,
 				[9815] = true,
-				[39768] = true,
+				[56151] = true,
 				[40727] = true,
 				[10199] = true,
 				[41763] = true,
-				[8649] = true,
+				[10839] = true,
 				[10583] = true,
 				[42840] = true,
-				[10839] = true,
+				[43352] = true,
 				[43864] = true,
 				[11095] = true,
-				[25005] = true,
+				[40081] = true,
 				[11351] = true,
 				[11479] = true,
 				[11607] = true,
 				[11735] = true,
 				[11863] = true,
 				[11991] = true,
-				[40081] = true,
+				[25005] = true,
 				[12247] = true,
 				[24749] = true,
 				[12503] = true,
 				[25261] = true,
 				[25517] = true,
-				[28589] = true,
+				[39025] = true,
 				[26029] = true,
 				[13143] = true,
 				[13271] = true,
 				[13399] = true,
-				[54104] = true,
+				[27053] = true,
 				[27309] = true,
-				[39025] = true,
+				[14295] = true,
 				[27821] = true,
 				[39769] = true,
 				[28333] = true,
-				[14295] = true,
+				[28589] = true,
 				[28845] = true,
 				[34923] = true,
 				[29613] = true,
@@ -8455,15 +8455,15 @@ RareScannerDB = {
 				[9811] = true,
 				[31405] = true,
 				[31661] = true,
-				[48473] = true,
-				[50617] = true,
 				[32429] = true,
+				[50617] = true,
+				[48473] = true,
 				[32685] = true,
 				[40607] = true,
 				[37492] = true,
 				[40424] = true,
 				[41475] = true,
-				[35162] = true,
+				[51545] = true,
 				[35674] = true,
 				[36186] = true,
 				[53081] = true,
@@ -8509,10 +8509,10 @@ RareScannerDB = {
 				[28590] = true,
 				[41307] = true,
 				[40000] = true,
-				[43867] = true,
+				[30126] = true,
 				[29614] = true,
 				[26589] = true,
-				[30126] = true,
+				[43867] = true,
 				[34793] = true,
 				[26077] = true,
 				[30894] = true,
@@ -8541,8 +8541,8 @@ RareScannerDB = {
 				[40796] = true,
 				[10328] = true,
 				[27310] = true,
-				[45916] = true,
 				[40675] = true,
+				[45916] = true,
 				[10840] = true,
 				[43868] = true,
 				[11096] = true,
@@ -8552,17 +8552,17 @@ RareScannerDB = {
 				[11608] = true,
 				[11736] = true,
 				[11864] = true,
-				[26799] = true,
+				[34069] = true,
 				[12120] = true,
 				[48988] = true,
 				[24751] = true,
 				[25007] = true,
 				[12632] = true,
-				[25519] = true,
+				[34653] = true,
 				[25775] = true,
 				[35677] = true,
 				[13144] = true,
-				[34069] = true,
+				[26799] = true,
 				[13400] = true,
 				[27055] = true,
 				[27311] = true,
@@ -8616,15 +8616,15 @@ RareScannerDB = {
 				[40579] = true,
 				[39729] = true,
 				[24752] = true,
-				[25264] = true,
+				[40747] = true,
 				[48478] = true,
-				[34655] = true,
+				[25264] = true,
 				[33119] = true,
-				[26032] = true,
+				[35679] = true,
 				[50526] = true,
 				[25520] = true,
 				[25776] = true,
-				[35679] = true,
+				[26032] = true,
 				[27312] = true,
 				[47543] = true,
 				[26800] = true,
@@ -8647,9 +8647,9 @@ RareScannerDB = {
 				[31152] = true,
 				[31408] = true,
 				[12655] = true,
-				[55647] = true,
+				[36651] = true,
 				[47967] = true,
-				[32432] = true,
+				[48479] = true,
 				[48991] = true,
 				[8281] = true,
 				[43447] = true,
@@ -8657,21 +8657,21 @@ RareScannerDB = {
 				[34656] = true,
 				[35168] = true,
 				[35680] = true,
-				[10841] = true,
+				[55647] = true,
 				[9177] = true,
-				[12121] = true,
+				[43360] = true,
 				[37728] = true,
-				[25521] = true,
+				[48480] = true,
 				[55135] = true,
 				[9817] = true,
 				[9945] = true,
 				[56671] = true,
 				[10201] = true,
-				[36651] = true,
+				[34657] = true,
 				[26033] = true,
 				[10585] = true,
 				[10713] = true,
-				[43360] = true,
+				[10841] = true,
 				[43872] = true,
 				[26801] = true,
 				[56246] = true,
@@ -8681,12 +8681,12 @@ RareScannerDB = {
 				[11737] = true,
 				[11865] = true,
 				[11993] = true,
-				[48480] = true,
-				[48992] = true,
+				[12121] = true,
+				[24497] = true,
 				[24753] = true,
-				[33633] = true,
-				[50528] = true,
-				[34657] = true,
+				[25009] = true,
+				[12633] = true,
+				[25521] = true,
 				[39265] = true,
 				[13017] = true,
 				[13145] = true,
@@ -8735,7 +8735,7 @@ RareScannerDB = {
 				[37730] = true,
 				[42338] = true,
 				[39575] = true,
-				[5421] = true,
+				[43362] = true,
 				[43874] = true,
 				[56247] = true,
 				[43873] = true,
@@ -8743,32 +8743,32 @@ RareScannerDB = {
 				[39491] = true,
 				[40748] = true,
 				[39652] = true,
-				[35171] = true,
 				[12965] = true,
-				[54626] = true,
+				[39588] = true,
+				[25778] = true,
 				[24498] = true,
 				[24754] = true,
 				[25010] = true,
-				[39588] = true,
-				[25522] = true,
-				[25778] = true,
-				[35683] = true,
 				[39592] = true,
-				[36707] = true,
-				[53602] = true,
-				[27058] = true,
+				[25522] = true,
+				[35171] = true,
+				[26034] = true,
 				[27314] = true,
+				[36707] = true,
+				[26802] = true,
+				[54114] = true,
+				[54626] = true,
 				[38755] = true,
-				[39267] = true,
+				[55650] = true,
 				[56245] = true,
 				[28338] = true,
 				[28594] = true,
-				[43363] = true,
-				[43875] = true,
-				[42339] = true,
-				[29618] = true,
 				[29874] = true,
 				[30130] = true,
+				[42339] = true,
+				[29618] = true,
+				[43363] = true,
+				[43875] = true,
 				[39456] = true,
 				[39432] = true,
 				[30898] = true,
@@ -8791,11 +8791,11 @@ RareScannerDB = {
 				[36657] = true,
 				[54627] = true,
 				[24499] = true,
-				[55651] = true,
+				[9818] = true,
 				[9946] = true,
 				[10074] = true,
-				[12250] = true,
-				[36709] = true,
+				[48996] = true,
+				[13274] = true,
 				[10458] = true,
 				[10586] = true,
 				[10714] = true,
@@ -8810,16 +8810,16 @@ RareScannerDB = {
 				[11866] = true,
 				[47541] = true,
 				[12122] = true,
-				[48996] = true,
+				[12250] = true,
 				[24755] = true,
 				[25011] = true,
 				[12634] = true,
 				[25523] = true,
 				[25779] = true,
 				[35685] = true,
-				[36197] = true,
-				[13274] = true,
-				[13402] = true,
+				[13146] = true,
+				[36709] = true,
+				[53604] = true,
 				[27059] = true,
 				[54628] = true,
 				[38757] = true,
@@ -8890,8 +8890,8 @@ RareScannerDB = {
 				[39697] = true,
 				[28084] = true,
 				[28340] = true,
-				[28852] = true,
 				[41319] = true,
+				[28852] = true,
 				[40471] = true,
 				[40109] = true,
 				[29620] = true,
@@ -8903,8 +8903,8 @@ RareScannerDB = {
 				[895] = true,
 				[31412] = true,
 				[40113] = true,
-				[25525] = true,
-				[41320] = true,
+				[25013] = true,
+				[34665] = true,
 				[56243] = true,
 				[55731] = true,
 				[8283] = true,
@@ -8913,18 +8913,18 @@ RareScannerDB = {
 				[34664] = true,
 				[35176] = true,
 				[35688] = true,
-				[39407] = true,
-				[50024] = true,
-				[50536] = true,
+				[41320] = true,
+				[11739] = true,
+				[25269] = true,
 				[37736] = true,
 				[54631] = true,
 				[38760] = true,
-				[39272] = true,
+				[9819] = true,
 				[39784] = true,
-				[34665] = true,
+				[50536] = true,
 				[10203] = true,
 				[10331] = true,
-				[13147] = true,
+				[25525] = true,
 				[10587] = true,
 				[10715] = true,
 				[10843] = true,
@@ -8932,16 +8932,16 @@ RareScannerDB = {
 				[11099] = true,
 				[11227] = true,
 				[11355] = true,
-				[26549] = true,
+				[13147] = true,
 				[11611] = true,
 				[46952] = true,
-				[54120] = true,
-				[28085] = true,
+				[26549] = true,
+				[56168] = true,
 				[34740] = true,
 				[34228] = true,
 				[3095] = true,
-				[25013] = true,
-				[25269] = true,
+				[12507] = true,
+				[12635] = true,
 				[12763] = true,
 				[12891] = true,
 				[13019] = true,
@@ -8951,19 +8951,19 @@ RareScannerDB = {
 				[27061] = true,
 				[54632] = true,
 				[38761] = true,
-				[29877] = true,
-				[56168] = true,
-				[28341] = true,
+				[43369] = true,
+				[28085] = true,
+				[40297] = true,
 				[14299] = true,
 				[28853] = true,
 				[29109] = true,
 				[30133] = true,
 				[42857] = true,
-				[43369] = true,
+				[29877] = true,
 				[43881] = true,
 				[14209] = true,
-				[45417] = true,
 				[30901] = true,
+				[45417] = true,
 				[39533] = true,
 				[31413] = true,
 				[39425] = true,
@@ -8978,7 +8978,7 @@ RareScannerDB = {
 				[13087] = true,
 				[52073] = true,
 				[36202] = true,
-				[36714] = true,
+				[53097] = true,
 				[53609] = true,
 				[54121] = true,
 				[39593] = true,
@@ -8999,17 +8999,17 @@ RareScannerDB = {
 				[25453] = true,
 				[38323] = true,
 				[39863] = true,
-				[50538] = true,
 				[39416] = true,
+				[25270] = true,
 				[36275] = true,
 				[49002] = true,
 				[24758] = true,
 				[25014] = true,
-				[25270] = true,
-				[34667] = true,
+				[50538] = true,
+				[25526] = true,
 				[35763] = true,
 				[36715] = true,
-				[36203] = true,
+				[26294] = true,
 				[26550] = true,
 				[53610] = true,
 				[27062] = true,
@@ -9042,14 +9042,14 @@ RareScannerDB = {
 				[39671] = true,
 				[35692] = true,
 				[36204] = true,
-				[9180] = true,
-				[9948] = true,
-				[9436] = true,
+				[36716] = true,
+				[26409] = true,
+				[54123] = true,
 				[54635] = true,
-				[10076] = true,
+				[40300] = true,
 				[9820] = true,
 				[39788] = true,
-				[40300] = true,
+				[10076] = true,
 				[2903] = true,
 				[10332] = true,
 				[10460] = true,
@@ -9064,20 +9064,20 @@ RareScannerDB = {
 				[11612] = true,
 				[11740] = true,
 				[11868] = true,
-				[26039] = true,
-				[48492] = true,
-				[49004] = true,
+				[13020] = true,
+				[12124] = true,
+				[12252] = true,
 				[24759] = true,
 				[12508] = true,
 				[34157] = true,
-				[38253] = true,
+				[27319] = true,
 				[12892] = true,
-				[13020] = true,
+				[26039] = true,
 				[36205] = true,
-				[53100] = true,
+				[36717] = true,
 				[28087] = true,
 				[54124] = true,
-				[27319] = true,
+				[38253] = true,
 				[55148] = true,
 				[39277] = true,
 				[39789] = true,
@@ -9106,7 +9106,7 @@ RareScannerDB = {
 				[39611] = true,
 				[35694] = true,
 				[36206] = true,
-				[53101] = true,
+				[36718] = true,
 				[50974] = true,
 				[39781] = true,
 				[38254] = true,
@@ -9123,20 +9123,20 @@ RareScannerDB = {
 				[43886] = true,
 				[39776] = true,
 				[39699] = true,
-				[24504] = true,
 				[38223] = true,
 				[14391] = true,
-				[53102] = true,
+				[24504] = true,
+				[35695] = true,
 				[43953] = true,
-				[26040] = true,
+				[53102] = true,
 				[39791] = true,
 				[49006] = true,
 				[24760] = true,
 				[25016] = true,
 				[25272] = true,
-				[34671] = true,
+				[51054] = true,
 				[42417] = true,
-				[35695] = true,
+				[26040] = true,
 				[36207] = true,
 				[26552] = true,
 				[26808] = true,
@@ -9192,15 +9192,15 @@ RareScannerDB = {
 				[11613] = true,
 				[11741] = true,
 				[11869] = true,
-				[12893] = true,
+				[35185] = true,
 				[48496] = true,
 				[24505] = true,
 				[24761] = true,
 				[25017] = true,
 				[13277] = true,
 				[34673] = true,
-				[35185] = true,
-				[35697] = true,
+				[12893] = true,
+				[26041] = true,
 				[13149] = true,
 				[26553] = true,
 				[26809] = true,
@@ -9252,16 +9252,16 @@ RareScannerDB = {
 				[351] = true,
 				[44914] = true,
 				[14297] = true,
-				[50546] = true,
-				[8685] = true,
-				[35699] = true,
 				[38716] = true,
+				[8685] = true,
+				[50546] = true,
+				[35699] = true,
 				[47986] = true,
 				[48498] = true,
 				[24506] = true,
 				[33139] = true,
 				[50034] = true,
-				[34163] = true,
+				[25274] = true,
 				[51058] = true,
 				[35187] = true,
 				[26042] = true,
@@ -9292,16 +9292,16 @@ RareScannerDB = {
 				[48499] = true,
 				[36853] = true,
 				[45487] = true,
-				[13080] = true,
-				[34164] = true,
 				[51059] = true,
+				[34164] = true,
+				[8670] = true,
 				[35188] = true,
 				[39093] = true,
 				[39531] = true,
 				[36724] = true,
 				[10078] = true,
 				[54131] = true,
-				[48500] = true,
+				[12126] = true,
 				[38772] = true,
 				[9822] = true,
 				[39796] = true,
@@ -9309,7 +9309,7 @@ RareScannerDB = {
 				[10206] = true,
 				[10334] = true,
 				[34165] = true,
-				[51060] = true,
+				[25531] = true,
 				[10718] = true,
 				[10846] = true,
 				[26555] = true,
@@ -9321,14 +9321,14 @@ RareScannerDB = {
 				[11742] = true,
 				[11870] = true,
 				[47988] = true,
-				[12126] = true,
+				[48500] = true,
 				[24507] = true,
 				[24763] = true,
-				[12510] = true,
+				[25019] = true,
 				[12638] = true,
-				[25531] = true,
+				[51060] = true,
 				[12894] = true,
-				[26043] = true,
+				[13022] = true,
 				[26299] = true,
 				[13278] = true,
 				[26811] = true,
@@ -9357,9 +9357,9 @@ RareScannerDB = {
 				[36271] = true,
 				[26072] = true,
 				[50037] = true,
-				[51573] = true,
-				[51061] = true,
 				[35190] = true,
+				[51061] = true,
+				[51573] = true,
 				[36857] = true,
 				[25379] = true,
 				[50094] = true,
@@ -9389,9 +9389,9 @@ RareScannerDB = {
 				[49014] = true,
 				[24764] = true,
 				[25020] = true,
-				[34167] = true,
-				[51062] = true,
-				[51574] = true,
+				[50550] = true,
+				[25532] = true,
+				[35191] = true,
 				[26044] = true,
 				[26300] = true,
 				[51998] = true,
@@ -9401,7 +9401,7 @@ RareScannerDB = {
 				[27580] = true,
 				[27836] = true,
 				[28092] = true,
-				[28348] = true,
+				[56694] = true,
 				[28604] = true,
 				[39149] = true,
 				[27065] = true,
@@ -9410,7 +9410,7 @@ RareScannerDB = {
 				[39189] = true,
 				[30140] = true,
 				[38935] = true,
-				[44919] = true,
+				[30652] = true,
 				[38675] = true,
 				[38611] = true,
 				[31420] = true,
@@ -9418,53 +9418,53 @@ RareScannerDB = {
 				[38595] = true,
 				[47991] = true,
 				[38657] = true,
-				[51063] = true,
-				[8287] = true,
 				[39015] = true,
-				[50551] = true,
+				[8287] = true,
 				[8671] = true,
+				[50551] = true,
+				[51063] = true,
 				[39153] = true,
 				[35704] = true,
-				[47992] = true,
-				[38909] = true,
-				[49528] = true,
-				[25021] = true,
+				[55672] = true,
+				[11999] = true,
+				[33145] = true,
+				[33657] = true,
 				[47533] = true,
 				[38776] = true,
 				[9823] = true,
 				[9951] = true,
-				[26045] = true,
+				[13023] = true,
 				[10207] = true,
 				[10335] = true,
 				[46509] = true,
-				[13151] = true,
+				[26301] = true,
 				[10719] = true,
 				[10847] = true,
 				[45485] = true,
-				[27325] = true,
+				[13663] = true,
 				[44920] = true,
 				[11359] = true,
-				[28093] = true,
+				[56184] = true,
 				[11615] = true,
 				[11743] = true,
 				[11871] = true,
-				[11999] = true,
+				[47992] = true,
 				[12127] = true,
 				[12255] = true,
-				[33145] = true,
-				[33657] = true,
-				[25277] = true,
-				[12767] = true,
+				[24765] = true,
+				[25021] = true,
+				[12639] = true,
+				[25533] = true,
 				[12895] = true,
-				[13023] = true,
-				[26301] = true,
+				[35705] = true,
+				[13151] = true,
 				[13279] = true,
 				[26813] = true,
 				[27069] = true,
-				[13663] = true,
-				[27581] = true,
-				[39289] = true,
-				[56184] = true,
+				[27325] = true,
+				[38777] = true,
+				[27837] = true,
+				[39801] = true,
 				[39057] = true,
 				[28605] = true,
 				[14431] = true,
@@ -9515,12 +9515,12 @@ RareScannerDB = {
 				[47994] = true,
 				[48506] = true,
 				[49018] = true,
-				[24766] = true,
+				[33147] = true,
 				[24682] = true,
 				[34171] = true,
 				[34683] = true,
-				[35195] = true,
-				[35707] = true,
+				[25790] = true,
+				[26046] = true,
 				[26302] = true,
 				[26558] = true,
 				[26814] = true,
@@ -9539,17 +9539,17 @@ RareScannerDB = {
 				[30142] = true,
 				[34133] = true,
 				[38681] = true,
-				[47995] = true,
 				[25628] = true,
+				[38523] = true,
 				[31422] = true,
 				[55211] = true,
-				[33660] = true,
+				[47995] = true,
 				[32190] = true,
 				[48507] = true,
 				[49019] = true,
-				[38523] = true,
 				[50043] = true,
-				[49020] = true,
+				[33660] = true,
+				[12256] = true,
 				[8672] = true,
 				[35196] = true,
 				[53163] = true,
@@ -9561,18 +9561,18 @@ RareScannerDB = {
 				[38780] = true,
 				[9824] = true,
 				[39804] = true,
-				[50044] = true,
+				[26303] = true,
 				[10208] = true,
 				[10336] = true,
-				[36221] = true,
+				[12512] = true,
 				[34732] = true,
 				[10720] = true,
 				[10848] = true,
 				[43900] = true,
 				[34220] = true,
 				[44924] = true,
-				[13024] = true,
-				[13152] = true,
+				[35709] = true,
+				[36221] = true,
 				[11616] = true,
 				[11744] = true,
 				[11872] = true,
@@ -9580,12 +9580,12 @@ RareScannerDB = {
 				[48508] = true,
 				[24511] = true,
 				[24767] = true,
-				[12512] = true,
+				[33661] = true,
 				[25279] = true,
 				[27327] = true,
 				[25791] = true,
-				[35709] = true,
-				[26303] = true,
+				[13024] = true,
+				[13152] = true,
 				[27839] = true,
 				[26815] = true,
 				[27071] = true,
@@ -9599,8 +9599,8 @@ RareScannerDB = {
 				[38601] = true,
 				[35197] = true,
 				[29631] = true,
-				[30143] = true,
 				[43901] = true,
+				[30143] = true,
 				[54140] = true,
 				[30655] = true,
 				[38649] = true,
@@ -9678,18 +9678,18 @@ RareScannerDB = {
 				[38487] = true,
 				[33664] = true,
 				[38593] = true,
-				[8673] = true,
+				[51071] = true,
 				[8801] = true,
 				[35712] = true,
 				[38687] = true,
 				[38435] = true,
 				[38571] = true,
 				[38565] = true,
-				[54655] = true,
-				[9697] = true,
+				[38272] = true,
+				[38784] = true,
 				[9825] = true,
 				[38500] = true,
-				[10081] = true,
+				[40320] = true,
 				[10209] = true,
 				[10337] = true,
 				[52222] = true,
@@ -9700,29 +9700,29 @@ RareScannerDB = {
 				[44416] = true,
 				[44928] = true,
 				[11361] = true,
-				[26049] = true,
+				[35201] = true,
 				[11617] = true,
 				[11745] = true,
-				[36953] = true,
-				[26817] = true,
+				[13025] = true,
+				[37249] = true,
 				[12129] = true,
-				[49024] = true,
+				[24513] = true,
 				[24769] = true,
 				[25025] = true,
-				[27073] = true,
-				[51072] = true,
-				[35201] = true,
-				[13025] = true,
-				[26305] = true,
-				[14305] = true,
-				[37249] = true,
 				[54144] = true,
-				[27329] = true,
-				[38785] = true,
+				[12769] = true,
+				[12897] = true,
+				[26049] = true,
+				[26305] = true,
+				[28609] = true,
+				[13409] = true,
+				[27073] = true,
+				[54656] = true,
+				[27585] = true,
 				[14433] = true,
 				[14049] = true,
-				[28353] = true,
-				[28609] = true,
+				[40321] = true,
+				[14305] = true,
 				[28865] = true,
 				[38461] = true,
 				[42369] = true,
@@ -9749,7 +9749,7 @@ RareScannerDB = {
 				[53121] = true,
 				[33885] = true,
 				[54145] = true,
-				[38274] = true,
+				[54657] = true,
 				[38786] = true,
 				[38591] = true,
 				[38563] = true,
@@ -9765,20 +9765,20 @@ RareScannerDB = {
 				[43433] = true,
 				[38422] = true,
 				[38531] = true,
-				[53122] = true,
+				[6641] = true,
 				[37251] = true,
 				[27586] = true,
 				[27842] = true,
 				[29378] = true,
 				[24514] = true,
-				[24770] = true,
+				[49538] = true,
 				[25026] = true,
 				[6321] = true,
 				[51074] = true,
 				[25794] = true,
-				[35715] = true,
+				[26050] = true,
 				[26306] = true,
-				[6641] = true,
+				[53122] = true,
 				[26818] = true,
 				[29634] = true,
 				[27330] = true,
@@ -9831,8 +9831,8 @@ RareScannerDB = {
 				[11490] = true,
 				[11618] = true,
 				[11746] = true,
-				[26051] = true,
-				[26307] = true,
+				[35717] = true,
+				[36229] = true,
 				[12130] = true,
 				[24515] = true,
 				[24771] = true,
@@ -9840,16 +9840,16 @@ RareScannerDB = {
 				[12642] = true,
 				[12770] = true,
 				[25795] = true,
-				[35717] = true,
-				[36229] = true,
+				[26051] = true,
+				[26307] = true,
 				[13282] = true,
 				[26819] = true,
 				[31938] = true,
-				[54660] = true,
-				[38789] = true,
+				[27331] = true,
+				[27587] = true,
 				[27843] = true,
 				[14050] = true,
-				[28355] = true,
+				[40325] = true,
 				[14306] = true,
 				[12514] = true,
 				[38273] = true,
@@ -9865,11 +9865,11 @@ RareScannerDB = {
 				[38419] = true,
 				[38421] = true,
 				[13132] = true,
-				[34182] = true,
+				[50565] = true,
 				[32707] = true,
 				[35206] = true,
 				[50053] = true,
-				[50565] = true,
+				[34182] = true,
 				[51077] = true,
 				[51589] = true,
 				[35718] = true,
@@ -9897,20 +9897,20 @@ RareScannerDB = {
 				[25869] = true,
 				[38389] = true,
 				[38241] = true,
-				[26017] = true,
+				[51590] = true,
 				[45479] = true,
 				[24772] = true,
-				[26052] = true,
-				[25284] = true,
-				[26564] = true,
-				[35207] = true,
 				[35719] = true,
-				[26308] = true,
+				[25284] = true,
 				[53126] = true,
+				[25796] = true,
+				[26052] = true,
+				[26308] = true,
+				[26564] = true,
 				[26820] = true,
 				[27076] = true,
 				[27332] = true,
-				[27588] = true,
+				[38791] = true,
 				[27844] = true,
 				[28100] = true,
 				[28356] = true,
@@ -9926,25 +9926,25 @@ RareScannerDB = {
 				[38333] = true,
 				[12814] = true,
 				[31428] = true,
-				[34184] = true,
-				[51079] = true,
-				[36744] = true,
-				[38823] = true,
 				[12554] = true,
+				[50476] = true,
+				[8675] = true,
+				[38823] = true,
+				[35208] = true,
 				[33160] = true,
 				[50055] = true,
 				[50567] = true,
-				[8675] = true,
-				[35208] = true,
-				[50476] = true,
-				[53670] = true,
+				[51079] = true,
+				[51591] = true,
 				[53127] = true,
+				[53670] = true,
+				[36744] = true,
 				[9315] = true,
+				[38427] = true,
 				[10595] = true,
-				[25797] = true,
 				[38792] = true,
 				[26068] = true,
-				[33161] = true,
+				[13411] = true,
 				[40328] = true,
 				[10211] = true,
 				[10339] = true,
@@ -9952,34 +9952,34 @@ RareScannerDB = {
 				[42376] = true,
 				[10723] = true,
 				[10851] = true,
-				[12515] = true,
+				[33161] = true,
 				[11107] = true,
-				[12899] = true,
+				[12515] = true,
+				[51592] = true,
 				[26053] = true,
-				[36745] = true,
 				[11619] = true,
 				[11747] = true,
-				[38427] = true,
-				[39305] = true,
+				[53128] = true,
+				[26821] = true,
 				[12131] = true,
 				[12259] = true,
 				[24773] = true,
 				[25029] = true,
 				[34185] = true,
 				[25541] = true,
-				[51592] = true,
+				[12899] = true,
 				[13027] = true,
-				[26309] = true,
-				[53128] = true,
-				[26821] = true,
-				[13411] = true,
+				[13155] = true,
+				[36745] = true,
+				[37257] = true,
+				[55688] = true,
 				[27333] = true,
 				[27589] = true,
-				[55688] = true,
+				[39305] = true,
 				[28101] = true,
 				[28357] = true,
 				[28613] = true,
-				[28869] = true,
+				[14435] = true,
 				[42889] = true,
 				[29381] = true,
 				[29637] = true,
@@ -10021,17 +10021,17 @@ RareScannerDB = {
 				[36265] = true,
 				[38641] = true,
 				[13124] = true,
-				[49546] = true,
-				[51594] = true,
+				[35211] = true,
+				[24774] = true,
 				[47498] = true,
-				[25798] = true,
+				[51594] = true,
 				[27334] = true,
 				[24518] = true,
-				[24774] = true,
+				[49546] = true,
 				[25030] = true,
 				[6322] = true,
-				[51082] = true,
-				[35211] = true,
+				[25542] = true,
+				[25798] = true,
 				[45477] = true,
 				[26310] = true,
 				[36747] = true,
@@ -10041,7 +10041,7 @@ RareScannerDB = {
 				[38795] = true,
 				[13057] = true,
 				[28102] = true,
-				[56714] = true,
+				[28358] = true,
 				[28614] = true,
 				[34577] = true,
 				[40331] = true,
@@ -10162,7 +10162,7 @@ RareScannerDB = {
 				[51598] = true,
 				[37729] = true,
 				[26312] = true,
-				[36751] = true,
+				[53134] = true,
 				[46499] = true,
 				[27080] = true,
 				[27336] = true,
@@ -10190,18 +10190,18 @@ RareScannerDB = {
 				[35216] = true,
 				[36752] = true,
 				[34192] = true,
-				[8677] = true,
+				[51087] = true,
 				[51599] = true,
 				[55695] = true,
 				[52623] = true,
 				[53135] = true,
-				[39824] = true,
+				[56207] = true,
 				[10725] = true,
 				[40355] = true,
 				[38800] = true,
 				[9829] = true,
-				[56207] = true,
-				[40336] = true,
+				[39824] = true,
+				[10085] = true,
 				[10213] = true,
 				[41360] = true,
 				[39843] = true,
@@ -10234,7 +10234,7 @@ RareScannerDB = {
 				[27849] = true,
 				[28105] = true,
 				[28361] = true,
-				[28617] = true,
+				[14309] = true,
 				[35235] = true,
 				[34723] = true,
 				[50576] = true,
@@ -10284,7 +10284,7 @@ RareScannerDB = {
 				[48530] = true,
 				[36243] = true,
 				[33171] = true,
-				[38803] = true,
+				[27594] = true,
 				[6323] = true,
 				[34707] = true,
 				[35219] = true,
@@ -10293,11 +10293,11 @@ RareScannerDB = {
 				[53138] = true,
 				[53650] = true,
 				[27082] = true,
-				[39315] = true,
-				[27594] = true,
 				[27850] = true,
-				[28106] = true,
-				[40339] = true,
+				[38803] = true,
+				[39315] = true,
+				[56210] = true,
+				[28362] = true,
 				[28618] = true,
 				[52129] = true,
 				[9957] = true,
@@ -10319,29 +10319,29 @@ RareScannerDB = {
 				[37659] = true,
 				[34196] = true,
 				[8678] = true,
-				[53139] = true,
-				[35732] = true,
-				[36244] = true,
 				[36756] = true,
+				[35732] = true,
+				[9062] = true,
+				[53139] = true,
 				[12804] = true,
 				[25178] = true,
-				[26059] = true,
+				[35989] = true,
 				[9702] = true,
 				[39316] = true,
 				[39828] = true,
 				[10086] = true,
-				[12134] = true,
+				[35733] = true,
 				[10342] = true,
-				[25035] = true,
+				[12134] = true,
 				[10598] = true,
 				[42900] = true,
 				[10854] = true,
-				[13030] = true,
+				[25035] = true,
 				[11110] = true,
-				[26315] = true,
+				[26059] = true,
 				[11366] = true,
-				[54164] = true,
-				[35989] = true,
+				[36245] = true,
+				[13798] = true,
 				[11750] = true,
 				[11878] = true,
 				[12006] = true,
@@ -10352,30 +10352,30 @@ RareScannerDB = {
 				[12646] = true,
 				[34709] = true,
 				[12902] = true,
-				[35733] = true,
-				[36245] = true,
+				[13030] = true,
+				[26315] = true,
 				[53140] = true,
 				[26827] = true,
 				[27083] = true,
 				[27339] = true,
-				[13798] = true,
-				[14310] = true,
-				[56212] = true,
-				[28363] = true,
+				[27595] = true,
 				[28619] = true,
+				[56212] = true,
+				[56724] = true,
+				[14310] = true,
 				[14438] = true,
 				[41877] = true,
 				[29387] = true,
 				[29643] = true,
 				[28107] = true,
 				[39829] = true,
-				[31947] = true,
+				[47509] = true,
 				[30667] = true,
 				[30923] = true,
 				[31179] = true,
 				[31435] = true,
 				[28113] = true,
-				[47509] = true,
+				[31947] = true,
 				[48021] = true,
 				[48533] = true,
 				[34710] = true,
@@ -10410,8 +10410,8 @@ RareScannerDB = {
 				[25706] = true,
 				[26323] = true,
 				[48534] = true,
-				[33175] = true,
 				[24780] = true,
+				[33175] = true,
 				[24510] = true,
 				[25292] = true,
 				[25548] = true,
@@ -10462,7 +10462,7 @@ RareScannerDB = {
 				[10343] = true,
 				[10471] = true,
 				[10599] = true,
-				[33689] = true,
+				[25037] = true,
 				[10855] = true,
 				[10983] = true,
 				[11111] = true,
@@ -10476,7 +10476,7 @@ RareScannerDB = {
 				[52127] = true,
 				[12263] = true,
 				[24781] = true,
-				[25037] = true,
+				[33689] = true,
 				[12647] = true,
 				[25549] = true,
 				[12903] = true,
@@ -10595,34 +10595,34 @@ RareScannerDB = {
 				[26065] = true,
 				[11112] = true,
 				[25039] = true,
-				[25807] = true,
-				[26831] = true,
+				[35229] = true,
+				[13416] = true,
 				[11624] = true,
 				[11752] = true,
-				[27343] = true,
+				[13672] = true,
 				[12008] = true,
 				[12136] = true,
 				[12264] = true,
-				[33181] = true,
-				[50076] = true,
+				[24783] = true,
+				[12520] = true,
 				[34205] = true,
 				[25551] = true,
-				[35229] = true,
+				[25807] = true,
 				[13032] = true,
 				[13160] = true,
 				[26575] = true,
-				[13416] = true,
-				[54172] = true,
-				[13672] = true,
+				[26831] = true,
+				[27087] = true,
+				[27343] = true,
 				[27599] = true,
 				[55708] = true,
-				[39837] = true,
+				[56220] = true,
 				[14184] = true,
-				[57244] = true,
+				[28623] = true,
 				[27855] = true,
 				[39841] = true,
 				[29391] = true,
-				[42909] = true,
+				[29647] = true,
 				[53147] = true,
 				[42907] = true,
 				[50078] = true,
@@ -10654,14 +10654,14 @@ RareScannerDB = {
 				[42396] = true,
 				[28111] = true,
 				[26063] = true,
-				[29647] = true,
+				[42909] = true,
 				[14260] = true,
-				[28623] = true,
-				[56220] = true,
-				[27087] = true,
+				[57244] = true,
+				[39837] = true,
+				[54172] = true,
 				[45470] = true,
-				[24783] = true,
-				[12520] = true,
+				[33181] = true,
+				[50076] = true,
 				[33179] = true,
 				[47518] = true,
 				[48030] = true,
@@ -10748,9 +10748,9 @@ RareScannerDB = {
 				[24967] = true,
 				[28625] = true,
 				[33981] = true,
-				[56724] = true,
+				[28363] = true,
 				[29393] = true,
-				[27595] = true,
+				[54164] = true,
 				[43425] = true,
 				[43937] = true,
 				[44449] = true,
@@ -10758,7 +10758,7 @@ RareScannerDB = {
 				[30929] = true,
 				[31185] = true,
 				[31441] = true,
-				[9062] = true,
+				[36244] = true,
 				[47521] = true,
 				[48033] = true,
 				[35204] = true,
@@ -10769,8 +10769,8 @@ RareScannerDB = {
 				[25189] = true,
 				[35234] = true,
 				[35746] = true,
-				[28362] = true,
-				[56210] = true,
+				[40339] = true,
+				[28106] = true,
 				[53665] = true,
 				[54177] = true,
 				[38306] = true,
@@ -10801,7 +10801,7 @@ RareScannerDB = {
 				[25554] = true,
 				[25810] = true,
 				[35747] = true,
-				[14309] = true,
+				[28617] = true,
 				[26578] = true,
 				[26834] = true,
 				[27090] = true,
@@ -10811,18 +10811,18 @@ RareScannerDB = {
 				[28114] = true,
 				[28370] = true,
 				[28626] = true,
-				[10085] = true,
+				[40336] = true,
 				[41891] = true,
 				[29394] = true,
 				[29650] = true,
-				[51087] = true,
+				[8677] = true,
 				[42115] = true,
 				[37167] = true,
 				[30674] = true,
 				[30930] = true,
 				[31186] = true,
 				[31442] = true,
-				[53134] = true,
+				[36751] = true,
 				[37991] = true,
 				[48035] = true,
 				[35751] = true,
@@ -10881,12 +10881,12 @@ RareScannerDB = {
 				[29651] = true,
 				[29907] = true,
 				[30163] = true,
-				[28358] = true,
+				[56714] = true,
 				[30675] = true,
 				[30931] = true,
 				[31187] = true,
 				[46501] = true,
-				[25542] = true,
+				[51082] = true,
 				[47525] = true,
 				[48037] = true,
 				[48549] = true,
@@ -10920,11 +10920,11 @@ RareScannerDB = {
 				[35241] = true,
 				[39817] = true,
 				[47526] = true,
-				[14435] = true,
+				[28869] = true,
 				[48550] = true,
-				[37257] = true,
+				[26309] = true,
 				[33191] = true,
-				[13155] = true,
+				[25797] = true,
 				[25300] = true,
 				[25556] = true,
 				[35239] = true,
@@ -10935,7 +10935,7 @@ RareScannerDB = {
 				[36777] = true,
 				[27348] = true,
 				[27604] = true,
-				[51591] = true,
+				[34184] = true,
 				[28116] = true,
 				[28372] = true,
 				[28628] = true,
@@ -10945,11 +10945,11 @@ RareScannerDB = {
 				[38367] = true,
 				[29908] = true,
 				[30164] = true,
-				[38791] = true,
-				[51590] = true,
+				[27588] = true,
+				[35207] = true,
 				[30932] = true,
 				[31188] = true,
-				[25796] = true,
+				[26017] = true,
 				[38387] = true,
 				[47527] = true,
 				[32212] = true,
@@ -10978,9 +10978,9 @@ RareScannerDB = {
 				[10859] = true,
 				[28099] = true,
 				[28611] = true,
-				[40325] = true,
-				[27587] = true,
-				[27331] = true,
+				[28355] = true,
+				[38789] = true,
+				[54660] = true,
 				[11627] = true,
 				[11755] = true,
 				[47528] = true,
@@ -11004,8 +11004,8 @@ RareScannerDB = {
 				[28373] = true,
 				[28629] = true,
 				[28885] = true,
-				[26050] = true,
-				[49538] = true,
+				[35715] = true,
+				[24770] = true,
 				[29653] = true,
 				[29909] = true,
 				[30165] = true,
@@ -11016,7 +11016,7 @@ RareScannerDB = {
 				[38567] = true,
 				[45055] = true,
 				[33869] = true,
-				[54657] = true,
+				[38274] = true,
 				[48553] = true,
 				[12470] = true,
 				[33194] = true,
@@ -11028,20 +11028,20 @@ RareScannerDB = {
 				[13969] = true,
 				[36778] = true,
 				[37290] = true,
-				[40321] = true,
-				[27585] = true,
-				[54656] = true,
-				[13409] = true,
+				[28353] = true,
+				[38785] = true,
+				[27329] = true,
+				[26817] = true,
 				[39850] = true,
-				[12897] = true,
-				[12769] = true,
+				[51072] = true,
+				[49024] = true,
+				[36953] = true,
+				[10081] = true,
 				[38507] = true,
-				[24513] = true,
+				[9697] = true,
+				[54655] = true,
 				[38573] = true,
-				[40320] = true,
-				[38784] = true,
-				[38272] = true,
-				[51071] = true,
+				[8673] = true,
 				[30656] = true,
 				[50949] = true,
 				[38477] = true,
@@ -11084,10 +11084,10 @@ RareScannerDB = {
 				[48555] = true,
 				[49067] = true,
 				[33196] = true,
-				[33661] = true,
+				[50044] = true,
 				[8556] = true,
 				[8684] = true,
-				[12256] = true,
+				[49020] = true,
 				[52139] = true,
 				[36268] = true,
 				[36780] = true,
@@ -11104,9 +11104,9 @@ RareScannerDB = {
 				[10604] = true,
 				[38703] = true,
 				[10860] = true,
-				[26046] = true,
-				[25790] = true,
-				[33147] = true,
+				[35707] = true,
+				[35195] = true,
+				[24766] = true,
 				[45484] = true,
 				[36945] = true,
 				[11628] = true,
@@ -11137,36 +11137,36 @@ RareScannerDB = {
 				[29655] = true,
 				[29911] = true,
 				[43949] = true,
-				[39801] = true,
-				[55672] = true,
+				[28093] = true,
+				[39289] = true,
 				[30935] = true,
-				[38777] = true,
+				[27581] = true,
 				[31447] = true,
-				[35705] = true,
+				[26045] = true,
 				[31959] = true,
-				[25533] = true,
-				[12639] = true,
-				[24765] = true,
+				[12767] = true,
+				[25277] = true,
+				[49528] = true,
 				[33198] = true,
-				[27837] = true,
+				[38909] = true,
 				[38711] = true,
 				[34734] = true,
 				[39155] = true,
 				[38677] = true,
 				[13494] = true,
 				[25971] = true,
-				[30652] = true,
+				[44919] = true,
 				[39080] = true,
 				[38318] = true,
 				[55213] = true,
 				[39031] = true,
-				[56694] = true,
+				[28348] = true,
+				[51574] = true,
+				[51062] = true,
+				[34167] = true,
 				[13016] = true,
-				[35191] = true,
-				[25532] = true,
 				[25276] = true,
 				[39196] = true,
-				[50550] = true,
 				[39133] = true,
 				[25049] = true,
 				[46213] = true,
@@ -11196,15 +11196,15 @@ RareScannerDB = {
 				[28376] = true,
 				[28632] = true,
 				[28888] = true,
-				[13022] = true,
+				[26043] = true,
 				[29400] = true,
-				[25019] = true,
+				[12510] = true,
 				[29912] = true,
 				[30168] = true,
 				[9938] = true,
 				[30680] = true,
 				[30936] = true,
-				[8670] = true,
+				[13080] = true,
 				[31448] = true,
 				[47023] = true,
 				[31960] = true,
@@ -11215,7 +11215,7 @@ RareScannerDB = {
 				[50095] = true,
 				[8557] = true,
 				[34736] = true,
-				[25274] = true,
+				[34163] = true,
 				[35760] = true,
 				[36272] = true,
 				[53167] = true,
@@ -11242,7 +11242,7 @@ RareScannerDB = {
 				[11885] = true,
 				[12013] = true,
 				[48560] = true,
-				[26041] = true,
+				[35697] = true,
 				[33201] = true,
 				[12525] = true,
 				[12653] = true,
@@ -11265,7 +11265,7 @@ RareScannerDB = {
 				[29657] = true,
 				[29913] = true,
 				[30169] = true,
-				[51054] = true,
+				[34671] = true,
 				[30681] = true,
 				[45489] = true,
 				[39212] = true,
@@ -11281,7 +11281,7 @@ RareScannerDB = {
 				[39029] = true,
 				[12505] = true,
 				[35762] = true,
-				[36718] = true,
+				[53101] = true,
 				[53169] = true,
 				[39681] = true,
 				[35000] = true,
@@ -11292,17 +11292,17 @@ RareScannerDB = {
 				[40370] = true,
 				[39180] = true,
 				[41394] = true,
+				[53100] = true,
 				[26551] = true,
-				[36717] = true,
-				[12252] = true,
-				[12124] = true,
+				[49004] = true,
+				[48492] = true,
 				[43954] = true,
 				[44466] = true,
-				[26409] = true,
+				[9948] = true,
 				[45490] = true,
+				[9436] = true,
+				[9180] = true,
 				[40069] = true,
-				[54123] = true,
-				[36716] = true,
 				[25369] = true,
 				[28086] = true,
 				[12428] = true,
@@ -11314,8 +11314,8 @@ RareScannerDB = {
 				[35251] = true,
 				[26074] = true,
 				[26330] = true,
-				[26294] = true,
-				[25526] = true,
+				[36203] = true,
+				[34667] = true,
 				[27098] = true,
 				[27354] = true,
 				[27610] = true,
@@ -11331,7 +11331,7 @@ RareScannerDB = {
 				[42489] = true,
 				[40071] = true,
 				[30682] = true,
-				[53097] = true,
+				[36714] = true,
 				[40012] = true,
 				[37154] = true,
 				[26293] = true,
@@ -11340,22 +11340,22 @@ RareScannerDB = {
 				[43880] = true,
 				[12826] = true,
 				[33204] = true,
-				[40297] = true,
+				[28341] = true,
 				[8558] = true,
 				[8686] = true,
-				[11739] = true,
+				[54120] = true,
 				[35764] = true,
 				[36276] = true,
 				[53171] = true,
 				[583] = true,
-				[12635] = true,
+				[50024] = true,
 				[38324] = true,
 				[38836] = true,
 				[9838] = true,
 				[39860] = true,
-				[9819] = true,
+				[39272] = true,
 				[10222] = true,
-				[12507] = true,
+				[39407] = true,
 				[38480] = true,
 				[10606] = true,
 				[13125] = true,
@@ -11401,10 +11401,10 @@ RareScannerDB = {
 				[39615] = true,
 				[31963] = true,
 				[48053] = true,
-				[53604] = true,
-				[13146] = true,
+				[13402] = true,
+				[36197] = true,
 				[33206] = true,
-				[9818] = true,
+				[55651] = true,
 				[34230] = true,
 				[13090] = true,
 				[35254] = true,
@@ -11417,10 +11417,10 @@ RareScannerDB = {
 				[25681] = true,
 				[40568] = true,
 				[39862] = true,
-				[55650] = true,
-				[54114] = true,
-				[26802] = true,
-				[26034] = true,
+				[39267] = true,
+				[27058] = true,
+				[53602] = true,
+				[35683] = true,
 				[13816] = true,
 				[42934] = true,
 				[43446] = true,
@@ -11428,7 +11428,7 @@ RareScannerDB = {
 				[12527] = true,
 				[36628] = true,
 				[45494] = true,
-				[43362] = true,
+				[5421] = true,
 				[35145] = true,
 				[39713] = true,
 				[13008] = true,
@@ -11451,13 +11451,13 @@ RareScannerDB = {
 				[28124] = true,
 				[28380] = true,
 				[28636] = true,
-				[12633] = true,
-				[25009] = true,
-				[24497] = true,
+				[50528] = true,
+				[33633] = true,
+				[48992] = true,
 				[29660] = true,
 				[29916] = true,
 				[30172] = true,
-				[48479] = true,
+				[32432] = true,
 				[1918] = true,
 				[41108] = true,
 				[34439] = true,
@@ -11465,7 +11465,7 @@ RareScannerDB = {
 				[41117] = true,
 				[31964] = true,
 				[48055] = true,
-				[40747] = true,
+				[34655] = true,
 				[49079] = true,
 				[33208] = true,
 				[33720] = true,
@@ -11492,7 +11492,7 @@ RareScannerDB = {
 				[11119] = true,
 				[12504] = true,
 				[45496] = true,
-				[34653] = true,
+				[25519] = true,
 				[11631] = true,
 				[11759] = true,
 				[11887] = true,
@@ -11529,7 +11529,7 @@ RareScannerDB = {
 				[41485] = true,
 				[31965] = true,
 				[48057] = true,
-				[51545] = true,
+				[35162] = true,
 				[49081] = true,
 				[33210] = true,
 				[33722] = true,
@@ -11541,26 +11541,26 @@ RareScannerDB = {
 				[36794] = true,
 				[40496] = true,
 				[54938] = true,
-				[27053] = true,
+				[54104] = true,
 				[38842] = true,
 				[39354] = true,
 				[39866] = true,
-				[43352] = true,
+				[8649] = true,
 				[40890] = true,
+				[39768] = true,
 				[34477] = true,
-				[56151] = true,
-				[53079] = true,
-				[35672] = true,
+				[9175] = true,
+				[52055] = true,
+				[8279] = true,
 				[40423] = true,
 				[42268] = true,
-				[49495] = true,
 				[40008] = true,
+				[29612] = true,
 				[42271] = true,
-				[42839] = true,
-				[56662] = true,
-				[38743] = true,
-				[35671] = true,
-				[25260] = true,
+				[28332] = true,
+				[27564] = true,
+				[26028] = true,
+				[34135] = true,
 				[48570] = true,
 				[24542] = true,
 				[40609] = true,
@@ -11582,19 +11582,19 @@ RareScannerDB = {
 				[8314] = true,
 				[41915] = true,
 				[42284] = true,
-				[29611] = true,
+				[42837] = true,
 				[29918] = true,
 				[30174] = true,
-				[56660] = true,
-				[39765] = true,
+				[28331] = true,
+				[14038] = true,
 				[30942] = true,
-				[42285] = true,
+				[12630] = true,
 				[31454] = true,
-				[49492] = true,
-				[48980] = true,
-				[48468] = true,
+				[12246] = true,
+				[12118] = true,
+				[42285] = true,
 				[8120] = true,
-				[35156] = true,
+				[36596] = true,
 				[8304] = true,
 				[33724] = true,
 				[34236] = true,
@@ -11606,7 +11606,7 @@ RareScannerDB = {
 				[9328] = true,
 				[37820] = true,
 				[38332] = true,
-				[33107] = true,
+				[52050] = true,
 				[9840] = true,
 				[9968] = true,
 				[10096] = true,
@@ -11621,13 +11621,13 @@ RareScannerDB = {
 				[24689] = true,
 				[45500] = true,
 				[11504] = true,
-				[29609] = true,
+				[42833] = true,
 				[11760] = true,
 				[11888] = true,
 				[12016] = true,
 				[12144] = true,
 				[24543] = true,
-				[51536] = true,
+				[12885] = true,
 				[12528] = true,
 				[25311] = true,
 				[51132] = true,
@@ -11635,7 +11635,7 @@ RareScannerDB = {
 				[13040] = true,
 				[36285] = true,
 				[26591] = true,
-				[42832] = true,
+				[10709] = true,
 				[27103] = true,
 				[27359] = true,
 				[27615] = true,
@@ -11644,8 +11644,8 @@ RareScannerDB = {
 				[14192] = true,
 				[28639] = true,
 				[14448] = true,
-				[42831] = true,
-				[39759] = true,
+				[29608] = true,
+				[56142] = true,
 				[42741] = true,
 				[29919] = true,
 				[30175] = true,
@@ -11667,7 +11667,7 @@ RareScannerDB = {
 				[43519] = true,
 				[25617] = true,
 				[36798] = true,
-				[48973] = true,
+				[32679] = true,
 				[37822] = true,
 				[38334] = true,
 				[36469] = true,
@@ -11675,22 +11675,22 @@ RareScannerDB = {
 				[39870] = true,
 				[27005] = true,
 				[42596] = true,
-				[13140] = true,
-				[35661] = true,
-				[51532] = true,
-				[25255] = true,
-				[24999] = true,
-				[48460] = true,
-				[12283] = true,
-				[11860] = true,
+				[26279] = true,
+				[52044] = true,
+				[12884] = true,
+				[50508] = true,
+				[12500] = true,
+				[12116] = true,
+				[47436] = true,
+				[42828] = true,
 				[45502] = true,
-				[10708] = true,
+				[185] = true,
 				[24437] = true,
 				[41056] = true,
 				[47550] = true,
-				[24601] = true,
+				[52043] = true,
 				[48574] = true,
-				[35660] = true,
+				[13169] = true,
 				[40692] = true,
 				[25056] = true,
 				[25312] = true,
@@ -11733,8 +11733,8 @@ RareScannerDB = {
 				[53183] = true,
 				[9329] = true,
 				[9457] = true,
-				[26277] = true,
-				[48456] = true,
+				[13139] = true,
+				[12115] = true,
 				[9841] = true,
 				[39872] = true,
 				[43792] = true,
@@ -11791,13 +11791,13 @@ RareScannerDB = {
 				[33730] = true,
 				[34242] = true,
 				[51137] = true,
-				[28323] = true,
+				[14162] = true,
 				[35778] = true,
 				[36290] = true,
 				[4601] = true,
-				[48452] = true,
+				[12114] = true,
 				[28259] = true,
-				[56131] = true,
+				[39748] = true,
 				[12987] = true,
 				[13873] = true,
 				[44543] = true,
@@ -11813,8 +11813,8 @@ RareScannerDB = {
 				[44683] = true,
 				[45506] = true,
 				[42813] = true,
-				[54082] = true,
-				[26786] = true,
+				[27042] = true,
+				[37187] = true,
 				[47554] = true,
 				[48066] = true,
 				[48578] = true,
@@ -11856,7 +11856,7 @@ RareScannerDB = {
 				[14462] = true,
 				[8690] = true,
 				[26363] = true,
-				[24993] = true,
+				[12497] = true,
 				[36292] = true,
 				[35599] = true,
 				[9330] = true,
@@ -11874,7 +11874,7 @@ RareScannerDB = {
 				[10866] = true,
 				[13066] = true,
 				[11122] = true,
-				[43839] = true,
+				[30112] = true,
 				[25339] = true,
 				[26625] = true,
 				[11634] = true,
@@ -11899,7 +11899,7 @@ RareScannerDB = {
 				[28131] = true,
 				[14194] = true,
 				[14322] = true,
-				[55101] = true,
+				[38718] = true,
 				[29155] = true,
 				[42437] = true,
 				[29667] = true,
@@ -11914,8 +11914,8 @@ RareScannerDB = {
 				[47557] = true,
 				[13258] = true,
 				[48581] = true,
-				[13136] = true,
-				[49980] = true,
+				[36157] = true,
+				[12496] = true,
 				[33734] = true,
 				[12416] = true,
 				[34758] = true,
@@ -11936,15 +11936,15 @@ RareScannerDB = {
 				[12415] = true,
 				[44092] = true,
 				[45129] = true,
-				[30622] = true,
+				[44859] = true,
 				[44486] = true,
 				[24979] = true,
 				[45510] = true,
-				[39739] = true,
+				[28062] = true,
 				[27657] = true,
 				[47046] = true,
 				[47558] = true,
-				[51514] = true,
+				[47208] = true,
 				[35536] = true,
 				[40956] = true,
 				[38932] = true,
@@ -11976,8 +11976,8 @@ RareScannerDB = {
 				[31460] = true,
 				[47047] = true,
 				[47559] = true,
-				[47928] = true,
-				[11855] = true,
+				[11983] = true,
+				[47416] = true,
 				[44324] = true,
 				[8307] = true,
 				[33736] = true,
@@ -11998,7 +11998,7 @@ RareScannerDB = {
 				[13835] = true,
 				[25329] = true,
 				[10611] = true,
-				[28060] = true,
+				[56118] = true,
 				[10867] = true,
 				[10995] = true,
 				[25491] = true,
@@ -12060,7 +12060,7 @@ RareScannerDB = {
 				[56777] = true,
 				[46841] = true,
 				[46839] = true,
-				[6503] = true,
+				[26010] = true,
 				[12612] = true,
 				[47241] = true,
 				[34461] = true,
@@ -12074,14 +12074,14 @@ RareScannerDB = {
 				[47562] = true,
 				[35407] = true,
 				[37537] = true,
-				[56625] = true,
+				[40242] = true,
 				[33227] = true,
 				[12548] = true,
 				[34251] = true,
 				[25574] = true,
 				[35275] = true,
 				[26086] = true,
-				[52017] = true,
+				[35634] = true,
 				[36811] = true,
 				[49262] = true,
 				[27110] = true,
@@ -12089,7 +12089,7 @@ RareScannerDB = {
 				[27622] = true,
 				[27878] = true,
 				[28134] = true,
-				[31129] = true,
+				[45873] = true,
 				[28646] = true,
 				[48656] = true,
 				[25941] = true,
@@ -12105,7 +12105,7 @@ RareScannerDB = {
 				[24711] = true,
 				[12997] = true,
 				[49406] = true,
-				[35632] = true,
+				[52015] = true,
 				[47653] = true,
 				[33228] = true,
 				[33740] = true,
@@ -12155,10 +12155,10 @@ RareScannerDB = {
 				[28135] = true,
 				[14196] = true,
 				[28647] = true,
-				[37165] = true,
-				[26263] = true,
+				[53548] = true,
+				[36141] = true,
 				[29415] = true,
-				[12492] = true,
+				[33581] = true,
 				[29927] = true,
 				[30183] = true,
 				[44493] = true,
@@ -12290,8 +12290,8 @@ RareScannerDB = {
 				[29929] = true,
 				[30185] = true,
 				[44497] = true,
-				[55074] = true,
-				[37155] = true,
+				[38691] = true,
+				[53538] = true,
 				[31209] = true,
 				[31465] = true,
 				[47057] = true,
@@ -12318,19 +12318,19 @@ RareScannerDB = {
 				[41426] = true,
 				[38869] = true,
 				[42450] = true,
-				[43809] = true,
+				[30097] = true,
 				[24977] = true,
 				[43986] = true,
 				[49327] = true,
 				[36013] = true,
-				[37153] = true,
+				[13385] = true,
 				[40085] = true,
 				[50904] = true,
 				[47058] = true,
 				[47570] = true,
 				[40088] = true,
 				[50812] = true,
-				[53535] = true,
+				[37152] = true,
 				[49884] = true,
 				[53417] = true,
 				[34259] = true,
@@ -12342,7 +12342,7 @@ RareScannerDB = {
 				[26858] = true,
 				[27114] = true,
 				[27370] = true,
-				[56606] = true,
+				[28304] = true,
 				[27882] = true,
 				[28138] = true,
 				[28394] = true,
@@ -12371,8 +12371,8 @@ RareScannerDB = {
 				[24851] = true,
 				[50259] = true,
 				[49936] = true,
-				[28047] = true,
-				[53532] = true,
+				[39709] = true,
+				[37149] = true,
 				[38356] = true,
 				[9718] = true,
 				[39380] = true,
@@ -12425,7 +12425,7 @@ RareScannerDB = {
 				[51775] = true,
 				[47573] = true,
 				[25368] = true,
-				[55064] = true,
+				[27533] = true,
 				[32747] = true,
 				[49621] = true,
 				[34277] = true,
@@ -12435,8 +12435,8 @@ RareScannerDB = {
 				[35798] = true,
 				[50878] = true,
 				[50440] = true,
-				[10055] = true,
-				[9927] = true,
+				[56599] = true,
+				[56087] = true,
 				[38358] = true,
 				[38870] = true,
 				[55765] = true,
@@ -12453,7 +12453,7 @@ RareScannerDB = {
 				[40988] = true,
 				[50686] = true,
 				[51748] = true,
-				[25996] = true,
+				[51990] = true,
 				[12691] = true,
 				[47574] = true,
 				[50817] = true,
@@ -12491,7 +12491,7 @@ RareScannerDB = {
 				[52318] = true,
 				[12710] = true,
 				[32748] = true,
-				[10182] = true,
+				[57107] = true,
 				[52433] = true,
 				[34264] = true,
 				[8695] = true,
@@ -12539,7 +12539,7 @@ RareScannerDB = {
 				[56280] = true,
 				[28397] = true,
 				[14327] = true,
-				[51984] = true,
+				[25993] = true,
 				[52444] = true,
 				[866] = true,
 				[51718] = true,
@@ -12610,7 +12610,7 @@ RareScannerDB = {
 				[43483] = true,
 				[53780] = true,
 				[52296] = true,
-				[53003] = true,
+				[9156] = true,
 				[25664] = true,
 				[53443] = true,
 				[31470] = true,
@@ -12667,8 +12667,8 @@ RareScannerDB = {
 				[28143] = true,
 				[28399] = true,
 				[14328] = true,
-				[11971] = true,
-				[44296] = true,
+				[47880] = true,
+				[11075] = true,
 				[8483] = true,
 				[24699] = true,
 				[29935] = true,
@@ -12684,7 +12684,7 @@ RareScannerDB = {
 				[48605] = true,
 				[32751] = true,
 				[54270] = true,
-				[35591] = true,
+				[25988] = true,
 				[53456] = true,
 				[51165] = true,
 				[51677] = true,
@@ -12738,7 +12738,7 @@ RareScannerDB = {
 				[29936] = true,
 				[55377] = true,
 				[25696] = true,
-				[55554] = true,
+				[27778] = true,
 				[30960] = true,
 				[56320] = true,
 				[31472] = true,
@@ -12819,7 +12819,7 @@ RareScannerDB = {
 				[35810] = true,
 				[55463] = true,
 				[4605] = true,
-				[55548] = true,
+				[27775] = true,
 				[56405] = true,
 				[38370] = true,
 				[38882] = true,
@@ -12871,6 +12871,11 @@ RareScannerDB = {
 				[34884] = true,
 				[31474] = true,
 				[12922] = true,
+			},
+			["events_completed"] = {
+				[127651] = -1,
+				[137180] = -1,
+				[129904] = -1,
 			},
 			["rares_killed"] = {
 				[128497] = -1,
@@ -13718,12 +13723,12 @@ RareScannerDB = {
 				[77687] = -1,
 				[68313] = -1,
 				[144846] = -1,
-				[68220] = -1,
-				[111463] = -1,
-				[9547] = -1,
 				[154799] = -1,
-				[146867] = -1,
 				[68476] = -1,
+				[9547] = -1,
+				[68220] = -1,
+				[88818] = -1,
+				[111463] = -1,
 				[72131] = -1,
 				[72954] = -1,
 				[151985] = -1,
@@ -13732,7 +13737,7 @@ RareScannerDB = {
 				[70557] = -1,
 				[85748] = -1,
 				[115115] = -1,
-				[141239] = -1,
+				[145333] = -1,
 				[144845] = -1,
 				[69906] = -1,
 				[71644] = -1,
@@ -13746,14 +13751,14 @@ RareScannerDB = {
 				[130439] = -1,
 				[151676] = -1,
 				[147932] = -1,
-				[138938] = -1,
 				[132797] = -1,
+				[138938] = -1,
 				[153523] = -1,
 				[131262] = -1,
 				[151988] = -1,
 				[68248] = -1,
 				[126926] = -1,
-				[138427] = -1,
+				[68222] = -1,
 				[130079] = -1,
 				[131476] = -1,
 				[73539] = -1,
@@ -13765,8 +13770,8 @@ RareScannerDB = {
 				[93295] = -1,
 				[153269] = -1,
 				[73724] = -1,
-				[131520] = -1,
 				[151990] = -1,
+				[131520] = -1,
 				[110954] = -1,
 				[76814] = -1,
 				[138429] = -1,
@@ -13780,7 +13785,7 @@ RareScannerDB = {
 				[144842] = -1,
 				[154378] = -1,
 				[133556] = -1,
-				[73725] = -1,
+				[145339] = -1,
 				[130508] = -1,
 				[126621] = -1,
 				[90485] = -1,
@@ -13847,10 +13852,10 @@ RareScannerDB = {
 				[57159] = -1,
 				[135368] = -1,
 				[136393] = -1,
-				[151745] = -1,
-				[72194] = -1,
 				[126056] = -1,
+				[72194] = -1,
 				[63044] = -1,
+				[151745] = -1,
 				[84860] = -1,
 				[60398] = -1,
 				[139463] = -1,
@@ -13896,7 +13901,7 @@ RareScannerDB = {
 				[69383] = -1,
 				[145865] = -1,
 				[139980] = -1,
-				[145339] = -1,
+				[73725] = -1,
 				[151324] = -1,
 				[146889] = -1,
 				[151327] = -1,
@@ -13910,7 +13915,7 @@ RareScannerDB = {
 				[134048] = -1,
 				[69639] = -1,
 				[151752] = -1,
-				[68222] = -1,
+				[138427] = -1,
 				[123291] = -1,
 				[145064] = -1,
 				[140938] = -1,
@@ -13923,12 +13928,12 @@ RareScannerDB = {
 				[124397] = -1,
 				[114330] = -1,
 				[146892] = -1,
-				[145333] = -1,
+				[141239] = -1,
 				[147202] = -1,
 				[151754] = -1,
 				[137681] = -1,
 				[67977] = -1,
-				[88818] = -1,
+				[146867] = -1,
 				[112411] = -1,
 				[72455] = -1,
 				[132820] = -1,
@@ -14018,14 +14023,9 @@ RareScannerDB = {
 				[23487] = -1,
 				[152724] = -1,
 			},
-			["events_completed"] = {
-				[127651] = -1,
-				[137180] = -1,
-				[129904] = -1,
-			},
 		},
 		["Vancard - Zul'jin"] = {
-			["containers_opened"] = {
+			["rares_killed"] = {
 			},
 			["quests_completed"] = {
 				[39409] = true,
@@ -14161,7 +14161,7 @@ RareScannerDB = {
 				[31589] = true,
 				[14072] = true,
 				[45261] = true,
-				[42722] = true,
+				[45277] = true,
 				[42227] = true,
 				[40830] = true,
 				[44814] = true,
@@ -14216,23 +14216,23 @@ RareScannerDB = {
 				[27434] = true,
 				[44726] = true,
 				[40009] = true,
-				[31590] = true,
+				[40632] = true,
 				[31550] = true,
 				[877] = true,
 				[44672] = true,
 				[31574] = true,
 				[31582] = true,
-				[40632] = true,
+				[31590] = true,
 				[44736] = true,
 				[44752] = true,
 				[41702] = true,
 				[42229] = true,
 				[56042] = true,
 				[45263] = true,
-				[44832] = true,
+				[43810] = true,
 				[43315] = true,
 				[31573] = true,
-				[42836] = true,
+				[56633] = true,
 				[13878] = true,
 				[43969] = true,
 				[44928] = true,
@@ -14243,80 +14243,80 @@ RareScannerDB = {
 				[27848] = true,
 				[43352] = true,
 				[43594] = true,
-				[45056] = true,
+				[53743] = true,
 				[44561] = true,
-				[44833] = true,
 				[39723] = true,
-				[40010] = true,
-				[31870] = true,
-				[43703] = true,
-				[31814] = true,
-				[31822] = true,
-				[31830] = true,
 				[43811] = true,
-				[844] = true,
+				[40010] = true,
+				[45280] = true,
+				[44725] = true,
+				[31814] = true,
+				[41607] = true,
+				[31830] = true,
+				[44833] = true,
+				[53121] = true,
 				[30984] = true,
 				[44753] = true,
-				[45280] = true,
+				[31870] = true,
 				[42230] = true,
-				[44051] = true,
-				[41148] = true,
+				[44562] = true,
+				[43703] = true,
 				[40745] = true,
-				[40011] = true,
+				[43588] = true,
 				[31918] = true,
 				[42837] = true,
 				[31832] = true,
 				[27343] = true,
 				[27351] = true,
-				[53121] = true,
+				[844] = true,
 				[27974] = true,
-				[27998] = true,
-				[26872] = true,
+				[31575] = true,
+				[13963] = true,
 				[845] = true,
 				[13971] = true,
 				[42486] = true,
 				[53744] = true,
-				[44562] = true,
-				[44722] = true,
-				[27439] = true,
-				[43588] = true,
+				[44051] = true,
+				[31591] = true,
+				[13991] = true,
+				[13995] = true,
 				[13999] = true,
 				[31551] = true,
 				[45265] = true,
 				[45281] = true,
-				[31575] = true,
+				[848] = true,
 				[31583] = true,
-				[31591] = true,
+				[40123] = true,
 				[44738] = true,
 				[44754] = true,
 				[41704] = true,
-				[850] = true,
-				[40746] = true,
 				[40730] = true,
 				[43812] = true,
+				[850] = true,
+				[44834] = true,
 				[43317] = true,
 				[42838] = true,
 				[851] = true,
 				[42147] = true,
 				[40956] = true,
 				[43568] = true,
-				[852] = true,
+				[42902] = true,
 				[27403] = true,
 				[42934] = true,
 				[34774] = true,
 				[43502] = true,
-				[44563] = true,
+				[44052] = true,
 				[42487] = true,
 				[53745] = true,
-				[44052] = true,
+				[44563] = true,
 				[43589] = true,
 				[44084] = true,
 				[40012] = true,
 				[855] = true,
-				[44691] = true,
-				[24661] = true,
-				[31823] = true,
 				[31831] = true,
+				[31815] = true,
+				[31823] = true,
+				[44691] = true,
 				[43360] = true,
 				[44723] = true,
 				[44739] = true,
@@ -14350,11 +14350,11 @@ RareScannerDB = {
 				[31568] = true,
 				[31576] = true,
 				[31584] = true,
-				[44724] = true,
+				[40125] = true,
 				[44740] = true,
 				[45267] = true,
+				[44724] = true,
 				[31592] = true,
-				[40125] = true,
 				[39406] = true,
 				[39987] = true,
 				[40748] = true,
@@ -14364,42 +14364,42 @@ RareScannerDB = {
 				[41834] = true,
 				[40317] = true,
 				[43587] = true,
-				[31815] = true,
+				[24661] = true,
 				[44964] = true,
 				[43562] = true,
 				[42489] = true,
 				[53220] = true,
-				[42902] = true,
+				[852] = true,
 				[31752] = true,
 				[44860] = true,
 				[870] = true,
-				[44834] = true,
+				[40746] = true,
 				[31725] = true,
 				[43591] = true,
 				[871] = true,
-				[40123] = true,
-				[848] = true,
+				[44722] = true,
+				[27998] = true,
 				[31824] = true,
 				[42649] = true,
-				[13995] = true,
-				[44725] = true,
-				[13991] = true,
+				[40011] = true,
+				[41148] = true,
+				[27439] = true,
 				[45268] = true,
-				[13963] = true,
+				[26872] = true,
 				[41212] = true,
 				[45316] = true,
-				[41607] = true,
+				[31822] = true,
 				[38649] = true,
 				[43564] = true,
-				[53743] = true,
+				[45056] = true,
 				[42841] = true,
 				[27337] = true,
 				[42909] = true,
 				[27353] = true,
 				[27361] = true,
 				[44156] = true,
-				[56633] = true,
-				[43810] = true,
+				[42836] = true,
+				[44832] = true,
 				[13968] = true,
 				[40947] = true,
 				[40975] = true,
@@ -14427,7 +14427,7 @@ RareScannerDB = {
 				[40798] = true,
 				[41760] = true,
 				[44918] = true,
-				[45277] = true,
+				[42722] = true,
 				[42906] = true,
 				[52969] = true,
 				[41916] = true,
@@ -14435,9 +14435,9 @@ RareScannerDB = {
 				[56626] = true,
 				[56628] = true,
 			},
-			["rares_killed"] = {
-			},
 			["events_completed"] = {
+			},
+			["containers_opened"] = {
 			},
 		},
 	},
@@ -14458,11 +14458,11 @@ RareScannerDB = {
 				[237191] = "Garrison Cache",
 				[325662] = "Mechanized Chest",
 				[325666] = "Mechanized Chest",
-				[324407] = "Void Roots",
-				[325659] = "Mechanized Chest",
-				[224626] = "Time-Warped Tower",
 				[325667] = "Mechanized Chest",
+				[325659] = "Mechanized Chest",
 				[325663] = "Mechanized Chest",
+				[324407] = "Void Roots",
+				[224626] = "Time-Warped Tower",
 				[237720] = "Garrison Cache",
 			},
 		},
@@ -14473,3992 +14473,6 @@ RareScannerDB = {
 			},
 			[95056] = {
 				39289, -- [1]
-			},
-		},
-		["loot_info"] = {
-			[168366] = {
-				"|cffa335ee|Hitem:168366::::::::120:71::::::|h[Tidal Lurker's Greathelm]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				2901583, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[127299] = {
-				"|cff0070dd|Hitem:127299::::::::120:71::::::|h[Nethekurse's Robe of Contempt]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				132716, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[162937] = {
-				"|cff0070dd|Hitem:162937::::::::120:71::::::|h[Dread Aspirant's Plate Warboots]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_FEET", -- [3]
-				1728443, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[81405] = {
-				"|cffffffff|Hitem:81405::::::::120:71::::::|h[Boiled Silkworm Pupa]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				651538, -- [4]
-				0, -- [5]
-				5, -- [6]
-			},
-			[86547] = {
-				"|cffa335ee|Hitem:86547::::::::120:71::::::|h[Skyshard]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				237230, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[87601] = {
-				"|cff0070dd|Hitem:87601::::::::120:71::::::|h[Plough Driving Grips]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				615169, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[87633] = {
-				"|cff0070dd|Hitem:87633::::::::120:71::::::|h[Sharkskin Armor]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				609748, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[170475] = {
-				"|cff1eff00|Hitem:170475::::::::120:71::::::|h[Mardivas's Retention Dimension Invention]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_BAG", -- [3]
-				134430, -- [4]
-				1, -- [5]
-				0, -- [6]
-			},
-			[163960] = {
-				"|cffa335ee|Hitem:163960::::::::120:71::::::|h[Flaming Gavel of Truth]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				1113523, -- [4]
-				2, -- [5]
-				4, -- [6]
-			},
-			[124553] = {
-				"|cff0070dd|Hitem:124553::::::::120:71::::::|h[Baleful Gauntlets]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017537, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[168751] = {
-				"|cffa335ee|Hitem:168751::::::::120:71::::::|h[Omnipurpose Effective Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[167793] = {
-				"|cff1eff00|Hitem:167793::::::::120:71::::::|h[Paint Vial: Overload Orange]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				413575, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[128258] = {
-				"|cff0070dd|Hitem:128258::::::::120:71::::::|h[Equipment Blueprint: Felsmoke Launchers]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1001491, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[127332] = {
-				"|cff0070dd|Hitem:127332::::::::120:71::::::|h[Riverbeast Molar Club]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				930040, -- [4]
-				2, -- [5]
-				4, -- [6]
-			},
-			[169135] = {
-				"|cff9d9d9d|Hitem:169135::::::::120:71::::::|h[Warped Shock Absorber]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134518, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[81406] = {
-				"|cffffffff|Hitem:81406::::::::120:71::::::|h[Roasted Barley Tea]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				651601, -- [4]
-				0, -- [5]
-				5, -- [6]
-			},
-			[168752] = {
-				"|cffa335ee|Hitem:168752::::::::120:71::::::|h[Omnipurpose Efficient Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[167794] = {
-				"|cff1eff00|Hitem:167794::::::::120:71::::::|h[Paint Vial: Lemonade Steel]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				413575, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[87634] = {
-				"|cff0070dd|Hitem:87634::::::::120:71::::::|h[Mazu's Robe]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				604461, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[170477] = {
-				"|cffa335ee|Hitem:170477::::::::120:71::::::|h[Mardivas's Universally Lauded Tote]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				133660, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[119380] = {
-				"|cff0070dd|Hitem:119380::::::::120:71::::::|h[Brutag's Iron Toe Boots]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_FEET", -- [3]
-				960783, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[120945] = {
-				"|cff1eff00|Hitem:120945::::::::120:71::::::|h[Primal Spirit]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1044088, -- [4]
-				7, -- [5]
-				10, -- [6]
-			},
-			[124554] = {
-				"|cff0070dd|Hitem:124554::::::::120:71::::::|h[Baleful Hood]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017538, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[168370] = {
-				"|cffa335ee|Hitem:168370::::::::120:71::::::|h[Rusted Keys to the Junkheap Drifter]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				2902998, -- [4]
-				15, -- [5]
-				5, -- [6]
-			},
-			[161344] = {
-				"|cffffffff|Hitem:161344::::::::120:71::::::|h[Abyssal Fragment]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				132885, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[170095] = {
-				"|cffa335ee|Hitem:170095::::::::120:71::::::|h[Moon Priestess' Baton]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				2735968, -- [4]
-				2, -- [5]
-				4, -- [6]
-			},
-			[87603] = {
-				"|cff0070dd|Hitem:87603::::::::120:71::::::|h[Thunderfall Gauntlets]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				615169, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[87635] = {
-				"|cff0070dd|Hitem:87635::::::::120:71::::::|h[Amber-Starched Robes]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				604461, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[168435] = {
-				"|cffa335ee|Hitem:168435::::::::120:71::::::|h[Remote Circuit Bypasser]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134390, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[170096] = {
-				"|cff9d9d9d|Hitem:170096::::::::120:71::::::|h[Sodden Highborne Painting]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134944, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169138] = {
-				"|cff9d9d9d|Hitem:169138::::::::120:71::::::|h[Fractured Personality Module]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134070, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[119413] = {
-				"|cff0070dd|Hitem:119413::::::::120:71::::::|h[Gu'gok's Rangefinder]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				920736, -- [4]
-				2, -- [5]
-				18, -- [6]
-			},
-			[92426] = {
-				"|cffa335ee|Hitem:92426::::::::120:71::::::|h[Sealed Tome of the Lost Legion]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				666474, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[126950] = {
-				"|cff0070dd|Hitem:126950::::::::120:71::::::|h[Equipment Blueprint: Bilge Pump]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1001491, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[170093] = {
-				"|cffa335ee|Hitem:170093::::::::120:71::::::|h[Tyr'mar's Greatsword]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				2835966, -- [4]
-				2, -- [5]
-				8, -- [6]
-			},
-			[87217] = {
-				"|cff1eff00|Hitem:87217::::::::120:71::::::|h[Small Bag of Goods]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				133642, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[127302] = {
-				"|cff0070dd|Hitem:127302::::::::120:71::::::|h[Chemical Resistant Apron]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				969321, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[170097] = {
-				"|cff9d9d9d|Hitem:170097::::::::120:71::::::|h[Discarded Quel'dorei Tome]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				133735, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169139] = {
-				"|cff9d9d9d|Hitem:169139::::::::120:71::::::|h[Clogged Webbing Fabricator]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				133027, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[124552] = {
-				"|cff0070dd|Hitem:124552::::::::120:71::::::|h[Baleful Treads]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017533, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[170090] = {
-				"|cffa335ee|Hitem:170090::::::::120:71::::::|h[Merciless Pincher]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				2997789, -- [4]
-				2, -- [5]
-				13, -- [6]
-			},
-			[86582] = {
-				"|cff0070dd|Hitem:86582::::::::120:71::::::|h[Aqua Jewel]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134891, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[87636] = {
-				"|cff0070dd|Hitem:87636::::::::120:71::::::|h[Cloak of the Forgotten Emperor]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				627126, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[119350] = {
-				"|cff0070dd|Hitem:119350::::::::120:71::::::|h[Sargerei Councilor's Drape]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				1044829, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[119382] = {
-				"|cff0070dd|Hitem:119382::::::::120:71::::::|h[Hershak's Heavy Legguards]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				947555, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[163966] = {
-				"|cffa335ee|Hitem:163966::::::::120:71::::::|h[Miss Miggi's Towering Spire]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_HOLDABLE", -- [3]
-				615328, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[124556] = {
-				"|cff0070dd|Hitem:124556::::::::120:71::::::|h[Baleful Spaulders]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017540, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[127654] = {
-				"|cff0070dd|Hitem:127654::::::::120:71::::::|h[Burning Agony]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_TRINKET", -- [3]
-				971279, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169779] = {
-				"|cffffffff|Hitem:169779::::::::120:71::::::|h[Deteriorating Cragscales]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1526633, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169332] = {
-				"|cff0070dd|Hitem:169332::::::::120:71::::::|h[Strange Mineralized Water]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				132774, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[119412] = {
-				"|cff0070dd|Hitem:119412::::::::120:71::::::|h[Bal'ra's Compound Bow]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_RANGED", -- [3]
-				975498, -- [4]
-				2, -- [5]
-				2, -- [6]
-			},
-			[170092] = {
-				"|cffa335ee|Hitem:170092::::::::120:71::::::|h[Netherdancer's Knife]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				2829897, -- [4]
-				2, -- [5]
-				15, -- [6]
-			},
-			[167790] = {
-				"|cff1eff00|Hitem:167790::::::::120:71::::::|h[Paint Vial: Fireball Red]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				413575, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[170099] = {
-				"|cff9d9d9d|Hitem:170099::::::::120:71::::::|h[Corroded Elegant Key]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134240, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[86578] = {
-				"|cff0070dd|Hitem:86578::::::::120:71::::::|h[Eternal Warrior's Sigil]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133381, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[166970] = {
-				"|cff0070dd|Hitem:166970::::::::120:71::::::|h[Energy Cell]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2902386, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[93194] = {
-				"|cff9d9d9d|Hitem:93194::::::::120:71::::::|h[Bloodied Scroll]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				133675, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169333] = {
-				"|cff0070dd|Hitem:169333::::::::120:71::::::|h[Strange Volcanic Rock]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				132847, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[87637] = {
-				"|cff0070dd|Hitem:87637::::::::120:71::::::|h[Jade Harbinger's Cloak]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				625166, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[87222] = {
-				"|cff0070dd|Hitem:87222::::::::120:71::::::|h[Big Bag of Linens]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133628, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[119383] = {
-				"|cff0070dd|Hitem:119383::::::::120:71::::::|h[Shoulderplates of the Vigilant]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				960788, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[119415] = {
-				"|cff0070dd|Hitem:119415::::::::120:71::::::|h[Frosted Icequartz Ring]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_FINGER", -- [3]
-				1022178, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[124557] = {
-				"|cff0070dd|Hitem:124557::::::::120:71::::::|h[Baleful Girdle]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017532, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169334] = {
-				"|cff0070dd|Hitem:169334::::::::120:71::::::|h[Strange Oceanic Sediment]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				628267, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[168248] = {
-				"|cff0070dd|Hitem:168248::::::::120:71::::::|h[Blueprint: BAWLD-371]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[168823] = {
-				"|cffa335ee|Hitem:168823::::::::120:71::::::|h[Rusty Mechanocrawler]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				2620863, -- [4]
-				15, -- [5]
-				5, -- [6]
-			},
-			[169398] = {
-				"|cff1eff00|Hitem:169398::::::::120:71::::::|h[Deeptide Slippers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				2973324, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[170089] = {
-				"|cffa335ee|Hitem:170089::::::::120:71::::::|h[Liara's Spire]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				2921481, -- [4]
-				2, -- [5]
-				10, -- [6]
-			},
-			[166971] = {
-				"|cff1eff00|Hitem:166971::::::::120:71::::::|h[Empty Energy Cell]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				2902385, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[163969] = {
-				"|cffa335ee|Hitem:163969::::::::120:71::::::|h[Ameelton's Shot-Thrower]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				985703, -- [4]
-				2, -- [5]
-				3, -- [6]
-			},
-			[155598] = {
-				"|cff9d9d9d|Hitem:155598::::::::120:71::::::|h[Severed Mandible]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				237393, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[154899] = {
-				"|cffffffff|Hitem:154899::::::::120:71::::::|h[Thick Paleo Steak]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2066022, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[167738] = {
-				"|cff1eff00|Hitem:167738::::::::120:71::::::|h[Gilded Seaweave]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				2821693, -- [4]
-				7, -- [5]
-				5, -- [6]
-			},
-			[86584] = {
-				"|cff0070dd|Hitem:86584::::::::120:71::::::|h[Hardened Shell]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134964, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[87638] = {
-				"|cff0070dd|Hitem:87638::::::::120:71::::::|h[Cloak of Tranquil Clouds]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				625709, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[87223] = {
-				"|cff0070dd|Hitem:87223::::::::120:71::::::|h[Big Bag of Skins]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				348519, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[119384] = {
-				"|cff0070dd|Hitem:119384::::::::120:71::::::|h[Krud's Girthy Girdle]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				960781, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169591] = {
-				"|cff1eff00|Hitem:169591::::::::120:71::::::|h[Cracked Numeric Cylinder]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				237445, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[124558] = {
-				"|cff0070dd|Hitem:124558::::::::120:71::::::|h[Baleful Ring]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1014104, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[168750] = {
-				"|cffa335ee|Hitem:168750::::::::120:71::::::|h[Omnipurpose Refined Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[163962] = {
-				"|cffa335ee|Hitem:163962::::::::120:71::::::|h[Decapitator of Alireza]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				1115730, -- [4]
-				2, -- [5]
-				8, -- [6]
-			},
-			[128231] = {
-				"|cff0070dd|Hitem:128231::::::::120:71::::::|h[Equipment Blueprint: Trained Shark Tank]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1001491, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[155603] = {
-				"|cff9d9d9d|Hitem:155603::::::::120:71::::::|h[Flaky Fish Scales]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1526611, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[167931] = {
-				"|cff0070dd|Hitem:167931::::::::120:71::::::|h[Mechagonian Sawblades]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134427, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[159756] = {
-				"|cff9d9d9d|Hitem:159756::::::::120:71::::::|h[Depleted Azerite]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				237007, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[158861] = {
-				"|cff9d9d9d|Hitem:158861::::::::120:71::::::|h[Tensile Eye Stalk]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				135503, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169145] = {
-				"|cff9d9d9d|Hitem:169145::::::::120:71::::::|h[Rusted Precision Gripper]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				133863, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[87640] = {
-				"|cff0070dd|Hitem:87640::::::::120:71::::::|h[Softfoot's Drape]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				625166, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[155844] = {
-				"|cff9d9d9d|Hitem:155844::::::::120:71::::::|h[Unreliable Lodestone]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				135253, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169848] = {
-				"|cff0070dd|Hitem:169848::::::::120:71::::::|h[Azeroth Mini Pack: Bondo's Yard]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134143, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[166846] = {
-				"|cff1eff00|Hitem:166846::::::::120:71::::::|h[Spare Parts]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				2915723, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[119353] = {
-				"|cff0070dd|Hitem:119353::::::::120:71::::::|h[Matron's Supple Gloves]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				968991, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[170088] = {
-				"|cffa335ee|Hitem:170088::::::::120:71::::::|h[Ulmath's Soulseeker]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_RANGED", -- [3]
-				2924349, -- [4]
-				2, -- [5]
-				2, -- [6]
-			},
-			[169593] = {
-				"|cff1eff00|Hitem:169593::::::::120:71::::::|h[Large Storage Fragment]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				574567, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[124559] = {
-				"|cff0070dd|Hitem:124559::::::::120:71::::::|h[Baleful Choker]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1022404, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[168491] = {
-				"|cff0070dd|Hitem:168491::::::::120:71::::::|h[Blueprint: Personal Time Displacer]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169850] = {
-				"|cff0070dd|Hitem:169850::::::::120:71::::::|h[Azeroth Mini Pack: Mechagon]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134142, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[128232] = {
-				"|cff0070dd|Hitem:128232::::::::120:71::::::|h[Equipment Blueprint: High Intensity Fog Lights]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1001491, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169402] = {
-				"|cff1eff00|Hitem:169402::::::::120:71::::::|h[Deeptide Amice]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				2973331, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169403] = {
-				"|cff1eff00|Hitem:169403::::::::120:71::::::|h[Deeptide Cinch]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				2973322, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[86577] = {
-				"|cff0070dd|Hitem:86577::::::::120:71::::::|h[Rod of Ambershaping]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				463530, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169594] = {
-				"|cff1eff00|Hitem:169594::::::::120:71::::::|h[Rust Covered Disc]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				132999, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169257] = {
-				"|cffffffff|Hitem:169257::::::::120:71::::::|h[Jagged Rune]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134417, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[81412] = {
-				"|cffffffff|Hitem:81412::::::::120:71::::::|h[Blanched Needle Mushrooms]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				651487, -- [4]
-				0, -- [5]
-				5, -- [6]
-			},
-			[170170] = {
-				"|cff1eff00|Hitem:170170::::::::120:71::::::|h[Fermented Deviate Fish]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				350650, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[86586] = {
-				"|cff0070dd|Hitem:86586::::::::120:71::::::|h[Panflute of Pandaria]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133942, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[118811] = {
-				"|cff0070dd|Hitem:118811::::::::120:71::::::|h[Embroidered Wolfsfur Cloak]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				1045963, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[155843] = {
-				"|cff9d9d9d|Hitem:155843::::::::120:71::::::|h[Brittle Ceremonial Necklace]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1535082, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[119386] = {
-				"|cff0070dd|Hitem:119386::::::::120:71::::::|h[Consort's Promise Ring]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_FINGER", -- [3]
-				1027829, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[168062] = {
-				"|cff0070dd|Hitem:168062::::::::120:71::::::|h[Blueprint: Rustbolt Gramophone]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[124560] = {
-				"|cff0070dd|Hitem:124560::::::::120:71::::::|h[Baleful Cloak]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017535, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[170087] = {
-				"|cff9d9d9d|Hitem:170087::::::::120:71::::::|h[Chromatic \"Vinegar\"]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				132798, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[118099] = {
-				"|cffffffff|Hitem:118099::::::::120:71::::::|h[Gorian Artifact Fragment]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1029027, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[94050] = {
-				"|cff1eff00|Hitem:94050::::::::120:71::::::|h[Discarded Swampstalker Tunic]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132718, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[167871] = {
-				"|cff0070dd|Hitem:167871::::::::120:71::::::|h[Blueprint: G99.99 Landshark]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[170167] = {
-				"|cff1eff00|Hitem:170167::::::::120:71::::::|h[Eel Filet]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				134032, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[170171] = {
-				"|cff1eff00|Hitem:170171::::::::120:71::::::|h[Giant Crab Leg]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1508493, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[168063] = {
-				"|cff0070dd|Hitem:168063::::::::120:71::::::|h[Blueprint: Rustbolt Kegerator]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169149] = {
-				"|cff9d9d9d|Hitem:169149::::::::120:71::::::|h[Dulled Micro-Serrated Incisor]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1518088, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[163592] = {
-				"|cff9d9d9d|Hitem:163592::::::::120:71::::::|h[Ceremonial Nose Ring]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1408444, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[167792] = {
-				"|cff1eff00|Hitem:167792::::::::120:71::::::|h[Paint Vial: Fel Mint Green]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				413575, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[167042] = {
-				"|cff0070dd|Hitem:167042::::::::120:71::::::|h[Blueprint: Scrap Trap]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169405] = {
-				"|cff1eff00|Hitem:169405::::::::120:71::::::|h[Slithershell Vest]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				2902641, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[119355] = {
-				"|cff0070dd|Hitem:119355::::::::120:71::::::|h[Leggings of Howling Winds]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				961490, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[155842] = {
-				"|cff9d9d9d|Hitem:155842::::::::120:71::::::|h[\"Preserved\" Foodstuffs]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				132934, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[157844] = {
-				"|cff9d9d9d|Hitem:157844::::::::120:71::::::|h[Iridescent Speck]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				132872, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[124561] = {
-				"|cff0070dd|Hitem:124561::::::::120:71::::::|h[Baleful Trinket]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				646988, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169399] = {
-				"|cff1eff00|Hitem:169399::::::::120:71::::::|h[Deeptide Gloves]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				2973328, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169406] = {
-				"|cff1eff00|Hitem:169406::::::::120:71::::::|h[Slithershell Boots]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				2902638, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[81414] = {
-				"|cffffffff|Hitem:81414::::::::120:71::::::|h[Pearl Milk Tea]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				132815, -- [4]
-				0, -- [5]
-				5, -- [6]
-			},
-			[152543] = {
-				"|cffffffff|Hitem:152543::::::::120:71::::::|h[Sand Shifter]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2057315, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[168832] = {
-				"|cffa335ee|Hitem:168832::::::::120:71::::::|h[Galvanic Oscillator]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1405815, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[127308] = {
-				"|cff0070dd|Hitem:127308::::::::120:71::::::|h[Zoug's Lifting Belt]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				940654, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[127340] = {
-				"|cff0070dd|Hitem:127340::::::::120:71::::::|h[Felfire Lit Greatsword]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				922559, -- [4]
-				2, -- [5]
-				8, -- [6]
-			},
-			[167786] = {
-				"|cffffffff|Hitem:167786::::::::120:71::::::|h[Germinating Seed]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				464030, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[119228] = {
-				"|cff0070dd|Hitem:119228::::::::120:71::::::|h[Ro'gor's Slippers of Silence]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_FEET", -- [3]
-				961485, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[94221] = {
-				"|cff0070dd|Hitem:94221::::::::120:71::::::|h[Shan'ze Ritual Stone]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134891, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[118781] = {
-				"|cff0070dd|Hitem:118781::::::::120:71::::::|h[Gorestained Hatchet]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				939256, -- [4]
-				2, -- [5]
-				0, -- [6]
-			},
-			[152544] = {
-				"|cffffffff|Hitem:152544::::::::120:71::::::|h[Slimy Mackerel]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2057316, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[168744] = {
-				"|cffa335ee|Hitem:168744::::::::120:71::::::|h[Optimized Efficient Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[119388] = {
-				"|cff0070dd|Hitem:119388::::::::120:71::::::|h[Doomlord's Seal of Command]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_FINGER", -- [3]
-				1018486, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[162956] = {
-				"|cff0070dd|Hitem:162956::::::::120:71::::::|h[Dread Aspirant's Plate Girdle]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				1728442, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[124562] = {
-				"|cff0070dd|Hitem:124562::::::::120:71::::::|h[Baleful Armament]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1052655, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[162684] = {
-				"|cff9d9d9d|Hitem:162684::::::::120:71::::::|h[Etched Dock Cleat]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				135544, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[155841] = {
-				"|cff9d9d9d|Hitem:155841::::::::120:71::::::|h[Defaced Statuette]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134896, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169408] = {
-				"|cff1eff00|Hitem:169408::::::::120:71::::::|h[Slithershell Tricorne]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				2902643, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[152545] = {
-				"|cffffffff|Hitem:152545::::::::120:71::::::|h[Frenzied Fangtooth]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2057311, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[170174] = {
-				"|cff1eff00|Hitem:170174::::::::120:71::::::|h[Muck Slime]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1500942, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[127309] = {
-				"|cff0070dd|Hitem:127309::::::::120:71::::::|h[Korak's Reinforced Iron Tunic]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				929917, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[118654] = {
-				"|cffa335ee|Hitem:118654::::::::120:71::::::|h[Aogexon's Fang]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134298, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[94158] = {
-				"|cff0070dd|Hitem:94158::::::::120:71::::::|h[Big Bag of Zandalari Supplies]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133665, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[168645] = {
-				"|cffffffff|Hitem:168645::::::::120:71::::::|h[Moist Fillet]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				3007464, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[89112] = {
-				"|cffffffff|Hitem:89112::::::::120:71::::::|h[Mote of Harmony]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				636334, -- [4]
-				7, -- [5]
-				10, -- [6]
-			},
-			[86589] = {
-				"|cff0070dd|Hitem:86589::::::::120:71::::::|h[Ai-Li's Skymirror]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				458243, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[152546] = {
-				"|cffffffff|Hitem:152546::::::::120:71::::::|h[Lane Snapper]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2057313, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[163852] = {
-				"|cffffffff|Hitem:163852::::::::120:71::::::|h[Tortollan Pilgrimage Scroll]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1500871, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[155615] = {
-				"|cff9d9d9d|Hitem:155615::::::::120:71::::::|h[Pestilent Muck]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1500940, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[170112] = {
-				"|cff1eff00|Hitem:170112::::::::120:71::::::|h[Wavecrash Polearm]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				2735992, -- [4]
-				2, -- [5]
-				6, -- [6]
-			},
-			[170176] = {
-				"|cff1eff00|Hitem:170176::::::::120:71::::::|h[Fathom Ray Wing]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1547467, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169218] = {
-				"|cff0070dd|Hitem:169218::::::::120:71::::::|h[Old Rusty Key]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134245, -- [4]
-				13, -- [5]
-				0, -- [6]
-			},
-			[87614] = {
-				"|cff0070dd|Hitem:87614::::::::120:71::::::|h[Kafa Picker's Bracers]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				646760, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[160148] = {
-				"|cff1eff00|Hitem:160148::::::::120:71::::::|h[Saurifeather Pants]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				1762579, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169410] = {
-				"|cff1eff00|Hitem:169410::::::::120:71::::::|h[Slithershell Mantle]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				2902645, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[94063] = {
-				"|cff1eff00|Hitem:94063::::::::120:71::::::|h[Exiled Dabbler's Bracer]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132606, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[120317] = {
-				"|cff0070dd|Hitem:120317::::::::120:71::::::|h[Pristine Hide of the Pit Beast]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				1043737, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[118655] = {
-				"|cffa335ee|Hitem:118655::::::::120:71::::::|h[Bergruu's Horn]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				236697, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[94159] = {
-				"|cff1eff00|Hitem:94159::::::::120:71::::::|h[Small Bag of Zandalari Supplies]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				133642, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[160119] = {
-				"|cff1eff00|Hitem:160119::::::::120:71::::::|h[Direbone Frill Chestplate]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				1672317, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[94223] = {
-				"|cff0070dd|Hitem:94223::::::::120:71::::::|h[Stolen Shado-Pan Insignia]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				645204, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[86590] = {
-				"|cff0070dd|Hitem:86590::::::::120:71::::::|h[Essence of the Breeze]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				463565, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169411] = {
-				"|cff1eff00|Hitem:169411::::::::120:71::::::|h[Slithershell Belt]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				2902637, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[169475] = {
-				"|cff1eff00|Hitem:169475::::::::120:71::::::|h[Barnacled Lockbox]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				644388, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[119390] = {
-				"|cff0070dd|Hitem:119390::::::::120:71::::::|h[Rockworm Carapace Shield]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_SHIELD", -- [3]
-				618984, -- [4]
-				4, -- [5]
-				6, -- [6]
-			},
-			[170114] = {
-				"|cff1eff00|Hitem:170114::::::::120:71::::::|h[Flanged Mace]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				2735968, -- [4]
-				2, -- [5]
-				4, -- [6]
-			},
-			[170178] = {
-				"|cff1eff00|Hitem:170178::::::::120:71::::::|h[Alpha Fin]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1547460, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[158874] = {
-				"|cff9d9d9d|Hitem:158874::::::::120:71::::::|h[Frothing Vapor]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				132837, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[118657] = {
-				"|cffa335ee|Hitem:118657::::::::120:71::::::|h[Direhoof's Hide]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				878263, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[168487] = {
-				"|cffffffff|Hitem:168487::::::::120:71::::::|h[Zin'anthid]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2563958, -- [4]
-				7, -- [5]
-				9, -- [6]
-			},
-			[169412] = {
-				"|cff1eff00|Hitem:169412::::::::120:71::::::|h[Slithershell Armwraps]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				2902639, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[158745] = {
-				"|cff9d9d9d|Hitem:158745::::::::120:71::::::|h[Luminous Scale]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				642723, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[118785] = {
-				"|cff0070dd|Hitem:118785::::::::120:71::::::|h[Void Bound Knife]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				940810, -- [4]
-				2, -- [5]
-				15, -- [6]
-			},
-			[170115] = {
-				"|cff1eff00|Hitem:170115::::::::120:71::::::|h[Massive Viridian Claw]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				2997789, -- [4]
-				2, -- [5]
-				13, -- [6]
-			},
-			[170179] = {
-				"|cff0070dd|Hitem:170179::::::::120:71::::::|h[Snapdragon Scent Gland]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				237414, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[128429] = {
-				"|cffffffff|Hitem:128429::::::::120:71::::::|h[Iron Horde Naval Manifest]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				237386, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169415] = {
-				"|cff1eff00|Hitem:169415::::::::120:71::::::|h[Reefwalker Handlers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				2915287, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[87613] = {
-				"|cff0070dd|Hitem:87613::::::::120:71::::::|h[Frozen Zandalari Bracer]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				609747, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[169413] = {
-				"|cff1eff00|Hitem:169413::::::::120:71::::::|h[Reefwalker Hauberk]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				2915286, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[169477] = {
-				"|cffa335ee|Hitem:169477::::::::120:71::::::|h[Benthic Girdle]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1002873, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[87597] = {
-				"|cff0070dd|Hitem:87597::::::::120:71::::::|h[Gloves of Congealed Mist]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				604462, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[170116] = {
-				"|cff1eff00|Hitem:170116::::::::120:71::::::|h[Darkened Slicer]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				2829897, -- [4]
-				2, -- [5]
-				15, -- [6]
-			},
-			[168742] = {
-				"|cffa335ee|Hitem:168742::::::::120:71::::::|h[Forceful Adaptable Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[72988] = {
-				"|cffffffff|Hitem:72988::::::::120:71::::::|h[Windwool Cloth]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				629167, -- [4]
-				7, -- [5]
-				5, -- [6]
-			},
-			[169125] = {
-				"|cff9d9d9d|Hitem:169125::::::::120:71::::::|h[Sonic Drive Screw]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134069, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169350] = {
-				"|cff1eff00|Hitem:169350::::::::120:71::::::|h[Glittering Diamondshell]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				2027870, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[169414] = {
-				"|cff1eff00|Hitem:169414::::::::120:71::::::|h[Reefwalker Striders]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				2915283, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[94130] = {
-				"|cffffffff|Hitem:94130::::::::120:71::::::|h[Incantation of Haqin]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				531009, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[168650] = {
-				"|cffffffff|Hitem:168650::::::::120:71::::::|h[Cragscale]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2032177, -- [4]
-				7, -- [5]
-				6, -- [6]
-			},
-			[170117] = {
-				"|cff1eff00|Hitem:170117::::::::120:71::::::|h[Wavebinder's Rod]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				2829934, -- [4]
-				2, -- [5]
-				19, -- [6]
-			},
-			[170181] = {
-				"|cff1eff00|Hitem:170181::::::::120:71::::::|h[Tidal Guard]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				237584, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[170184] = {
-				"|cff0070dd|Hitem:170184::::::::120:71::::::|h[Ancient Reefwalker Bark]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				615629, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[94225] = {
-				"|cff0070dd|Hitem:94225::::::::120:71::::::|h[Stolen Celestial Insignia]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				636337, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169351] = {
-				"|cff1eff00|Hitem:169351::::::::120:71::::::|h[Sandclaw Nestseeker]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				2027879, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[169926] = {
-				"|cffa335ee|Hitem:169926::::::::120:71::::::|h[Belt of Rising Guardians]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				2912993, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[168358] = {
-				"|cffa335ee|Hitem:168358::::::::120:71::::::|h[Chestguard of the Submerged]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				2909753, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[127665] = {
-				"|cff0070dd|Hitem:127665::::::::120:71::::::|h[Warpscaled Wristwraps]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				1095667, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[170118] = {
-				"|cff1eff00|Hitem:170118::::::::120:71::::::|h[Centurion's Shortsword]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				3004118, -- [4]
-				2, -- [5]
-				7, -- [6]
-			},
-			[170182] = {
-				"|cff0070dd|Hitem:170182::::::::120:71::::::|h[Voltscale Shield]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				237456, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[127664] = {
-				"|cff0070dd|Hitem:127664::::::::120:71::::::|h[Grokmar's Greaves of Fortification]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				947555, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[168741] = {
-				"|cffa335ee|Hitem:168741::::::::120:71::::::|h[Forceful Refined Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[169352] = {
-				"|cff0070dd|Hitem:169352::::::::120:71::::::|h[Pearlescent Glimmershell]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2027919, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[169416] = {
-				"|cff1eff00|Hitem:169416::::::::120:71::::::|h[Reefwalker Coif]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				2915288, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[170502] = {
-				"|cffa335ee|Hitem:170502::::::::120:71::::::|h[Waterlogged Toolbox]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1529271, -- [4]
-				0, -- [5]
-				0, -- [6]
-			},
-			[127313] = {
-				"|cff0070dd|Hitem:127313::::::::120:71::::::|h[Org'mok's Riding Chaps]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				960042, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[170119] = {
-				"|cff1eff00|Hitem:170119::::::::120:71::::::|h[Slithershell Warglaive]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				2904097, -- [4]
-				2, -- [5]
-				9, -- [6]
-			},
-			[170183] = {
-				"|cff1eff00|Hitem:170183::::::::120:71::::::|h[Reefwalker Bark]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				959845, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[161049] = {
-				"|cff0070dd|Hitem:161049::::::::120:71::::::|h[Ferocious Devilsaur Legwraps]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				1762579, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[94226] = {
-				"|cff0070dd|Hitem:94226::::::::120:71::::::|h[Stolen Klaxxi Insignia]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				646377, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[87615] = {
-				"|cff0070dd|Hitem:87615::::::::120:71::::::|h[Yakwasher's Bracers]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				604460, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169928] = {
-				"|cffa335ee|Hitem:169928::::::::120:71::::::|h[Wekemara's Warboots]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_FEET", -- [3]
-				2901579, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[119361] = {
-				"|cff0070dd|Hitem:119361::::::::120:71::::::|h[Thorn-Knuckled Gloves]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				960147, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[119393] = {
-				"|cff0070dd|Hitem:119393::::::::120:71::::::|h[Searing Shadowflame Axe]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				939256, -- [4]
-				2, -- [5]
-				0, -- [6]
-			},
-			[170120] = {
-				"|cff1eff00|Hitem:170120::::::::120:71::::::|h[Handmaiden's Longstaff]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				2921481, -- [4]
-				2, -- [5]
-				10, -- [6]
-			},
-			[169673] = {
-				"|cff1eff00|Hitem:169673::::::::120:71::::::|h[Blue Paint Filled Bladder]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1567722, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169226] = {
-				"|cff0070dd|Hitem:169226::::::::120:71::::::|h[Torn Sheet Music]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1392954, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[168303] = {
-				"|cffffffff|Hitem:168303::::::::120:71::::::|h[Rubbery Flank]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				3007465, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[119438] = {
-				"|cff1eff00|Hitem:119438::::::::120:71::::::|h[Automated Critter Defense Cannon]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				346991, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169418] = {
-				"|cff1eff00|Hitem:169418::::::::120:71::::::|h[Reefwalker Monnion]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				2915290, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[169482] = {
-				"|cffa335ee|Hitem:169482::::::::120:71::::::|h[Benthic Leggings]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1002879, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[170505] = {
-				"|cffa335ee|Hitem:170505::::::::120:71::::::|h[Grimy Manapearl Bracelet]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				415050, -- [4]
-				0, -- [5]
-				0, -- [6]
-			},
-			[170186] = {
-				"|cff1eff00|Hitem:170186::::::::120:71::::::|h[Abyss Pearl]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				463858, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169674] = {
-				"|cff1eff00|Hitem:169674::::::::120:71::::::|h[Green Paint Filled Bladder]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1567722, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169227] = {
-				"|cffffffff|Hitem:169227::::::::120:71::::::|h[Irradiated Bolts]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133008, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[94227] = {
-				"|cff0070dd|Hitem:94227::::::::120:71::::::|h[Stolen Golden Lotus Insignia]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				643910, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[87616] = {
-				"|cff0070dd|Hitem:87616::::::::120:71::::::|h[Mountain Trailblazer's Cuffs]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				604460, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[168908] = {
-				"|cff0070dd|Hitem:168908::::::::120:71::::::|h[Blueprint: Experimental Adventurer Augment]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[108631] = {
-				"|cff0070dd|Hitem:108631::::::::120:71::::::|h[Crashin' Thrashin' Roller Controller]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				879998, -- [4]
-				15, -- [5]
-				3, -- [6]
-			},
-			[119394] = {
-				"|cff0070dd|Hitem:119394::::::::120:71::::::|h[Kurlosh's Kidneyslicer]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				978218, -- [4]
-				2, -- [5]
-				15, -- [6]
-			},
-			[113294] = {
-				"|cffffffff|Hitem:113294::::::::120:71::::::|h[Sargerei Insignia]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				136156, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169675] = {
-				"|cff1eff00|Hitem:169675::::::::120:71::::::|h[Orange Paint Filled Bladder]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1567722, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169228] = {
-				"|cff1eff00|Hitem:169228::::::::120:71::::::|h[Hazardous Container]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				237030, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[118660] = {
-				"|cffa335ee|Hitem:118660::::::::120:71::::::|h[Thek'talon's Talon]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1029744, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[87628] = {
-				"|cff0070dd|Hitem:87628::::::::120:71::::::|h[Spinebreaker Chestpiece]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				615168, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169420] = {
-				"|cff1eff00|Hitem:169420::::::::120:71::::::|h[Reefwalker Coils]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				2915284, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[86574] = {
-				"|cff0070dd|Hitem:86574::::::::120:71::::::|h[Elixir of Ancient Knowledge]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				236884, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[127315] = {
-				"|cff0070dd|Hitem:127315::::::::120:71::::::|h[Glowing Felskull Belt]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				801133, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[154793] = {
-				"|cff9d9d9d|Hitem:154793::::::::120:71::::::|h[Unraveling Cloth Amice]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135040, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[81413] = {
-				"|cffffffff|Hitem:81413::::::::120:71::::::|h[Skewered Peanut Chicken]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				651877, -- [4]
-				0, -- [5]
-				5, -- [6]
-			},
-			[169229] = {
-				"|cffffffff|Hitem:169229::::::::120:71::::::|h[Exhaust Aromatics]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133020, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169401] = {
-				"|cff1eff00|Hitem:169401::::::::120:71::::::|h[Deeptide Legwraps]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				2973330, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[87617] = {
-				"|cff0070dd|Hitem:87617::::::::120:71::::::|h[Bracers of the Serene Mountaintop]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				609747, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[169421] = {
-				"|cff1eff00|Hitem:169421::::::::120:71::::::|h[Wavecrash Chestplate]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				2966767, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169612] = {
-				"|cffffffff|Hitem:169612::::::::120:71::::::|h[Recipe: Osmenite Deposit]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1387621, -- [4]
-				9, -- [5]
-				0, -- [6]
-			},
-			[158839] = {
-				"|cff9d9d9d|Hitem:158839::::::::120:71::::::|h[Thick Crab Claw]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1508493, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169613] = {
-				"|cffffffff|Hitem:169613::::::::120:71::::::|h[Recipe: Osmenite Seam]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1387621, -- [4]
-				9, -- [5]
-				0, -- [6]
-			},
-			[170188] = {
-				"|cff0070dd|Hitem:170188::::::::120:71::::::|h[Barnacled Bag of Goods]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133662, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169230] = {
-				"|cffffffff|Hitem:169230::::::::120:71::::::|h[Reflective Plating]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133022, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[168327] = {
-				"|cffa335ee|Hitem:168327::::::::120:71::::::|h[Chain Ignitercoil]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1405814, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[163959] = {
-				"|cffa335ee|Hitem:163959::::::::120:71::::::|h[Self-Rotating Dagger of Xing]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				1966587, -- [4]
-				2, -- [5]
-				15, -- [6]
-			},
-			[169422] = {
-				"|cff1eff00|Hitem:169422::::::::120:71::::::|h[Wavecrash Smashers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				2966766, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[167059] = {
-				"|cff1eff00|Hitem:167059::::::::120:71::::::|h[Chum]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				350570, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[170189] = {
-				"|cff0070dd|Hitem:170189::::::::120:71::::::|h[Blind Eye]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1500930, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[118661] = {
-				"|cffa335ee|Hitem:118661::::::::120:71::::::|h[Xelganak's Stinger]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				801003, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169167] = {
-				"|cff0070dd|Hitem:169167::::::::120:71::::::|h[Blueprint: Orange Spraybot]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169231] = {
-				"|cff0070dd|Hitem:169231::::::::120:71::::::|h[Optical Override Drive]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				321487, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[87618] = {
-				"|cff0070dd|Hitem:87618::::::::120:71::::::|h[Ice Encrusted Bracer]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				646760, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[169359] = {
-				"|cff0070dd|Hitem:169359::::::::120:71::::::|h[Spawn of Nalaada]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2027953, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[169423] = {
-				"|cff1eff00|Hitem:169423::::::::120:71::::::|h[Wavecrash Crushers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				2966768, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169163] = {
-				"|cffa335ee|Hitem:169163::::::::120:71::::::|h[Silent Glider]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				2620777, -- [4]
-				15, -- [5]
-				5, -- [6]
-			},
-			[86575] = {
-				"|cff0070dd|Hitem:86575::::::::120:71::::::|h[Chalice of Secrets]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				305294, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[163948] = {
-				"|cffa335ee|Hitem:163948::::::::120:71::::::|h[Moarse's Coarse-Chain Gauntlets]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_HAND", -- [3]
-				422802, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[169168] = {
-				"|cff0070dd|Hitem:169168::::::::120:71::::::|h[Blueprint: Green Spraybot]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169232] = {
-				"|cffffffff|Hitem:169232::::::::120:71::::::|h[Dud Blast Canister]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1405814, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169407] = {
-				"|cff1eff00|Hitem:169407::::::::120:71::::::|h[Slithershell Mitts]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				2902642, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[159140] = {
-				"|cff9d9d9d|Hitem:159140::::::::120:71::::::|h[Lifeless Clay]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134111, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169424] = {
-				"|cff1eff00|Hitem:169424::::::::120:71::::::|h[Wavecrash Headguard]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				2966769, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169925] = {
-				"|cffa335ee|Hitem:169925::::::::120:71::::::|h[Serpentskin Splashers]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_FEET", -- [3]
-				2906594, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[163931] = {
-				"|cffa335ee|Hitem:163931::::::::120:71::::::|h[Chain Links of Fraying Awe]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				973881, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[127349] = {
-				"|cff0070dd|Hitem:127349::::::::120:71::::::|h[Silver Chitin Ring]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_FINGER", -- [3]
-				1043909, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169169] = {
-				"|cff0070dd|Hitem:169169::::::::120:71::::::|h[Blueprint: Blue Spraybot]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169233] = {
-				"|cff1eff00|Hitem:169233::::::::120:71::::::|h[Infinite Loop Spring]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				134065, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[87619] = {
-				"|cff0070dd|Hitem:87619::::::::120:71::::::|h[Terracotta Guardian's Bracer]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				615167, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169872] = {
-				"|cff0070dd|Hitem:169872::::::::120:71::::::|h[Irontide Lockbox Key]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				136058, -- [4]
-				13, -- [5]
-				0, -- [6]
-			},
-			[169425] = {
-				"|cff1eff00|Hitem:169425::::::::120:71::::::|h[Deeptide Robe]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				2973326, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[168802] = {
-				"|cff1eff00|Hitem:168802::::::::120:71::::::|h[Nazjatar Battle Commendation]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1594746, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169249] = {
-				"|cffffffff|Hitem:169249::::::::120:71::::::|h[Shark Tooth Necklace]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				338666, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[170192] = {
-				"|cff1eff00|Hitem:170192::::::::120:71::::::|h[Mudwrap]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				236155, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[87779] = {
-				"|cffffffff|Hitem:87779::::::::120:71::::::|h[Ancient Guo-Lai Cache Key]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				237379, -- [4]
-				13, -- [5]
-				0, -- [6]
-			},
-			[168804] = {
-				"|cff0070dd|Hitem:168804::::::::120:71::::::|h[Powered Piscine Procurement Pole]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				2909707, -- [4]
-				2, -- [5]
-				20, -- [6]
-			},
-			[168340] = {
-				"|cffa335ee|Hitem:168340::::::::120:71::::::|h[Naga Ritualist's Mantle]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				2906601, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169873] = {
-				"|cff0070dd|Hitem:169873::::::::120:71::::::|h[Mechanized Supply Key]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				348541, -- [4]
-				13, -- [5]
-				0, -- [6]
-			},
-			[169426] = {
-				"|cff1eff00|Hitem:169426::::::::120:71::::::|h[Wavecrash Greaves]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				2966770, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[170512] = {
-				"|cffffffff|Hitem:170512::::::::120:71::::::|h[Lesser Benthic Arcanocrystal]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1033170, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[127318] = {
-				"|cff0070dd|Hitem:127318::::::::120:71::::::|h[Iron Cleated Warboots]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_FEET", -- [3]
-				522988, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169363] = {
-				"|cff0070dd|Hitem:169363::::::::120:71::::::|h[Amethyst Softshell]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2530493, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[170193] = {
-				"|cff1eff00|Hitem:170193::::::::120:71::::::|h[Sea Totem]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				971076, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169235] = {
-				"|cff1eff00|Hitem:169235::::::::120:71::::::|h[Confusing Spring Box]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				132997, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[86566] = {
-				"|cff0070dd|Hitem:86566::::::::120:71::::::|h[Forager's Gloves]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				621748, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[87620] = {
-				"|cff0070dd|Hitem:87620::::::::120:71::::::|h[Bracers of the Frozen Summit]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				615167, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169427] = {
-				"|cff1eff00|Hitem:169427::::::::120:71::::::|h[Wavecrash Shoulderplates]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				2966771, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[128794] = {
-				"|cff0070dd|Hitem:128794::::::::120:71::::::|h[Sack of Spectral Spiders]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133666, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[170066] = {
-				"|cff1eff00|Hitem:170066::::::::120:71::::::|h[Skinning Technique: Dredged Leather]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1387621, -- [4]
-				9, -- [5]
-				0, -- [6]
-			},
-			[124555] = {
-				"|cff0070dd|Hitem:124555::::::::120:71::::::|h[Baleful Leggings]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017539, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[170194] = {
-				"|cff1eff00|Hitem:170194::::::::120:71::::::|h[Storm Totem]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1020304, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169236] = {
-				"|cff1eff00|Hitem:169236::::::::120:71::::::|h[Latch-and-Lock Trigger]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1405812, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169400] = {
-				"|cff1eff00|Hitem:169400::::::::120:71::::::|h[Deeptide Cover]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				2973329, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169173] = {
-				"|cff0070dd|Hitem:169173::::::::120:71::::::|h[Blueprint: Anti-Gravity Pack]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169428] = {
-				"|cff1eff00|Hitem:169428::::::::120:71::::::|h[Wavecrash Buckle]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				2966765, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[168215] = {
-				"|cffffffff|Hitem:168215::::::::120:71::::::|h[Machined Gear Assembly]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				986486, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[170067] = {
-				"|cff1eff00|Hitem:170067::::::::120:71::::::|h[Skinning Technique: Cragscale]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1387621, -- [4]
-				9, -- [5]
-				0, -- [6]
-			},
-			[169174] = {
-				"|cff0070dd|Hitem:169174::::::::120:71::::::|h[Blueprint: Rustbolt Pocket Turret]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[170195] = {
-				"|cff0070dd|Hitem:170195::::::::120:71::::::|h[Voidcaster's Supply Bag]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133667, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169237] = {
-				"|cffffffff|Hitem:169237::::::::120:71::::::|h[Pulsating Marble]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2057562, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[86567] = {
-				"|cff0070dd|Hitem:86567::::::::120:71::::::|h[Yaungol Wind Chime]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_TRINKET", -- [3]
-				458244, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[87621] = {
-				"|cff0070dd|Hitem:87621::::::::120:71::::::|h[Wristguards of Great Fortune]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				615167, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[169429] = {
-				"|cff1eff00|Hitem:169429::::::::120:71::::::|h[Wavecrash Wristguards]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				2973479, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[95350] = {
-				"|cffffffff|Hitem:95350::::::::120:71::::::|h[Incantation of Vu]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				531009, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[170068] = {
-				"|cff0070dd|Hitem:170068::::::::120:71::::::|h[Mardivas's Magnificent Desalinating Pouch]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				132825, -- [4]
-				0, -- [5]
-				5, -- [6]
-			},
-			[119431] = {
-				"|cff1eff00|Hitem:119431::::::::120:71::::::|h[Servant of Demidos]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				136221, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[170196] = {
-				"|cff0070dd|Hitem:170196::::::::120:71::::::|h[Shirakess Warning Sign]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134426, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[168216] = {
-				"|cffffffff|Hitem:168216::::::::120:71::::::|h[Tempered Plating]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				463887, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[167012] = {
-				"|cff1eff00|Hitem:167012::::::::120:71::::::|h[Brinestone Pickaxe]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1064765, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169366] = {
-				"|cff0070dd|Hitem:169366::::::::120:71::::::|h[Wriggler]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2763647, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[158863] = {
-				"|cff9d9d9d|Hitem:158863::::::::120:71::::::|h[Chitinous Exoskeleton]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1499546, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169347] = {
-				"|cff0070dd|Hitem:169347::::::::120:71::::::|h[Judgment of Mechagon]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133866, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169886] = {
-				"|cff0070dd|Hitem:169886::::::::120:71::::::|h[Spraybot 0D]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2735924, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[169393] = {
-				"|cff0070dd|Hitem:169393::::::::120:71::::::|h[Arachnoid Skitterbot]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2493081, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[86568] = {
-				"|cff0070dd|Hitem:86568::::::::120:71::::::|h[Mr. Smite's Brass Compass]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				443379, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169239] = {
-				"|cff0070dd|Hitem:169239::::::::120:71::::::|h[Unknowable Cube]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2000858, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[94233] = {
-				"|cffffffff|Hitem:94233::::::::120:71::::::|h[Incantation of Deng]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				531009, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[87622] = {
-				"|cff0070dd|Hitem:87622::::::::120:71::::::|h[Yoke of Niuzao]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_NECK", -- [3]
-				645519, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169431] = {
-				"|cff1eff00|Hitem:169431::::::::120:71::::::|h[Reefwalker Cape]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				2915285, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169495] = {
-				"|cffa335ee|Hitem:169495::::::::120:71::::::|h[Recipe: Superior Battle Potion of Agility]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1387622, -- [4]
-				9, -- [5]
-				6, -- [6]
-			},
-			[169379] = {
-				"|cff1eff00|Hitem:169379::::::::120:71::::::|h[Snowsoft Nibbler]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				2205588, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[169688] = {
-				"|cff1eff00|Hitem:169688::::::::120:71::::::|h[Vinyl: Gnomeregan Forever]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				574567, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[120170] = {
-				"|cffffffff|Hitem:120170::::::::120:71::::::|h[Partially-Digested Bag]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133662, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[113492] = {
-				"|cffffffff|Hitem:113492::::::::120:71::::::|h[Frostfire Mission Orders]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				237386, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[114996] = {
-				"|cffffffff|Hitem:114996::::::::120:71::::::|h[Blood Stone]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134420, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[103624] = {
-				"|cff0070dd|Hitem:103624::::::::120:71::::::|h[Treasures of the Vale]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				647735, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[168155] = {
-				"|cffffffff|Hitem:168155::::::::120:71::::::|h[Chum]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				350570, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169496] = {
-				"|cffa335ee|Hitem:169496::::::::120:71::::::|h[Recipe: Superior Steelskin Potion]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1387622, -- [4]
-				9, -- [5]
-				6, -- [6]
-			},
-			[169241] = {
-				"|cffffffff|Hitem:169241::::::::120:71::::::|h[Family Jewelry]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133299, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[170200] = {
-				"|cff1eff00|Hitem:170200::::::::120:71::::::|h[Seastorm Totem]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				538570, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[170199] = {
-				"|cff0070dd|Hitem:170199::::::::120:71::::::|h[Zanj'ir Weapon Rack]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2735968, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[97268] = {
-				"|cff0070dd|Hitem:97268::::::::120:71::::::|h[Tome of Valor]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				354435, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[86569] = {
-				"|cff0070dd|Hitem:86569::::::::120:71::::::|h[Crystal of Insanity]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				132885, -- [4]
-				0, -- [5]
-				1, -- [6]
-			},
-			[87623] = {
-				"|cff0070dd|Hitem:87623::::::::120:71::::::|h[Razor-Sharp Chitin Choker]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_NECK", -- [3]
-				645262, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169433] = {
-				"|cff1eff00|Hitem:169433::::::::120:71::::::|h[Wavecrash Greatcloak]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				2967512, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169497] = {
-				"|cffa335ee|Hitem:169497::::::::120:71::::::|h[Recipe: Superior Battle Potion of Intellect]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1387622, -- [4]
-				9, -- [5]
-				6, -- [6]
-			},
-			[163940] = {
-				"|cffa335ee|Hitem:163940::::::::120:71::::::|h[Extra-Light Light Emitting Cord]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				414282, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[168603] = {
-				"|cffa335ee|Hitem:168603::::::::120:71::::::|h[Cloak of Restless Spirits]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				2912996, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169689] = {
-				"|cff1eff00|Hitem:169689::::::::120:71::::::|h[Vinyl: Mimiron's Brainstorm]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				574567, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[152698] = {
-				"|cffffffff|Hitem:152698::::::::120:71::::::|h[Grimestone Stew]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1387641, -- [4]
-				0, -- [5]
-				5, -- [6]
-			},
-			[169225] = {
-				"|cff1eff00|Hitem:169225::::::::120:71::::::|h[Unstoppable Countdown Clock]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				132995, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[158770] = {
-				"|cff9d9d9d|Hitem:158770::::::::120:71::::::|h[Gelatinous Roe]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1387651, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169434] = {
-				"|cff1eff00|Hitem:169434::::::::120:71::::::|h[Slithershell Cloak]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				2902640, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169498] = {
-				"|cffa335ee|Hitem:169498::::::::120:71::::::|h[Recipe: Superior Battle Potion of Stamina]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1387622, -- [4]
-				9, -- [5]
-				6, -- [6]
-			},
-			[170201] = {
-				"|cff1eff00|Hitem:170201::::::::120:71::::::|h[Deeptide Scroll]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HOLDABLE", -- [3]
-				2830981, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[87625] = {
-				"|cff0070dd|Hitem:87625::::::::120:71::::::|h[Congealed Mist Amulet]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_NECK", -- [3]
-				632848, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169690] = {
-				"|cff1eff00|Hitem:169690::::::::120:71::::::|h[Vinyl: Battle of Gnomeregan]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				574567, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[127418] = {
-				"|cff0070dd|Hitem:127418::::::::120:71::::::|h[Soothing Incense Brazier]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_TRINKET", -- [3]
-				135262, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[86570] = {
-				"|cff0070dd|Hitem:86570::::::::120:71::::::|h[Crate of Kidnapped Puppies]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_TRINKET", -- [3]
-				132762, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[87624] = {
-				"|cff0070dd|Hitem:87624::::::::120:71::::::|h[Yaungol Mist-Shaman's Amulet]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_NECK", -- [3]
-				645513, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169435] = {
-				"|cff1eff00|Hitem:169435::::::::120:71::::::|h[Deeptide Drape]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				2973333, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169499] = {
-				"|cffa335ee|Hitem:169499::::::::120:71::::::|h[Recipe: Superior Battle Potion of Strength]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				1387622, -- [4]
-				9, -- [5]
-				6, -- [6]
-			},
-			[119402] = {
-				"|cff0070dd|Hitem:119402::::::::120:71::::::|h[Gug'tol's Imp Imperator]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				943257, -- [4]
-				2, -- [5]
-				7, -- [6]
-			},
-			[112791] = {
-				"|cffffffff|Hitem:112791::::::::120:71::::::|h[Sargerei Cowl]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133129, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169691] = {
-				"|cff1eff00|Hitem:169691::::::::120:71::::::|h[Vinyl: Depths of Ulduar]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				574567, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[124550] = {
-				"|cff0070dd|Hitem:124550::::::::120:71::::::|h[Baleful Bracers]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017534, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[113493] = {
-				"|cffffffff|Hitem:113493::::::::120:71::::::|h[Spires of Arak Mission Orders]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				237384, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[87639] = {
-				"|cff0070dd|Hitem:87639::::::::120:71::::::|h[Tattered Guo-Lai Dynasty Cloak]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				625401, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[169373] = {
-				"|cff0070dd|Hitem:169373::::::::120:71::::::|h[Brinestone Algan]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				960692, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[113494] = {
-				"|cffffffff|Hitem:113494::::::::120:71::::::|h[Shadowmoon Mission Orders]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				237383, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[127323] = {
-				"|cff0070dd|Hitem:127323::::::::120:71::::::|h[Bracers of Endless Suffering]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				533752, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[163943] = {
-				"|cffa335ee|Hitem:163943::::::::120:71::::::|h[Neleimour's Patterned Leggings]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				457940, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[169692] = {
-				"|cff1eff00|Hitem:169692::::::::120:71::::::|h[Vinyl: Triumph of Gnomeregan]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				574567, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[163942] = {
-				"|cffa335ee|Hitem:163942::::::::120:71::::::|h[Slippers of the Unruly Fairies]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_FEET", -- [3]
-				1627511, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[86571] = {
-				"|cff0070dd|Hitem:86571::::::::120:71::::::|h[Kang's Bindstone]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				134458, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[168351] = {
-				"|cffa335ee|Hitem:168351::::::::120:71::::::|h[Spitcharged Shoulderguards]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				2913001, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[128025] = {
-				"|cff0070dd|Hitem:128025::::::::120:71::::::|h[Rattling Iron Cage]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				132599, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[119371] = {
-				"|cff0070dd|Hitem:119371::::::::120:71::::::|h[Mantle of the Destroyer]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				960043, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[119403] = {
-				"|cff0070dd|Hitem:119403::::::::120:71::::::|h[Sargerei Soulbiter]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				942251, -- [4]
-				2, -- [5]
-				7, -- [6]
-			},
-			[119435] = {
-				"|cff1eff00|Hitem:119435::::::::120:71::::::|h[Path of Flame]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				135805, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169369] = {
-				"|cff0070dd|Hitem:169369::::::::120:71::::::|h[Sandkeep]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				796636, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[169246] = {
-				"|cffffffff|Hitem:169246::::::::120:71::::::|h[Strangely Seasoned Meat]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1046249, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[167836] = {
-				"|cff0070dd|Hitem:167836::::::::120:71::::::|h[Blueprint: Canned Minnows]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169595] = {
-				"|cff1eff00|Hitem:169595::::::::120:71::::::|h[Scorched Data Disc]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				133862, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[128793] = {
-				"|cffffffff|Hitem:128793::::::::120:71::::::|h[Sack of Spiders]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133640, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[86573] = {
-				"|cff0070dd|Hitem:86573::::::::120:71::::::|h[Shard of Archstone]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				135241, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[128346] = {
-				"|cffffffff|Hitem:128346::::::::120:71::::::|h[Fel-Corrupted Apexis Fragment]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133263, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169375] = {
-				"|cff0070dd|Hitem:169375::::::::120:71::::::|h[Coral Lashling]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2027890, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[168161] = {
-				"|cff1eff00|Hitem:168161::::::::120:71::::::|h[Molted Shell]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1508497, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169247] = {
-				"|cffffffff|Hitem:169247::::::::120:71::::::|h[Throwing Rocks]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1044087, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[168217] = {
-				"|cffffffff|Hitem:168217::::::::120:71::::::|h[Hardened Spring]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134065, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[87626] = {
-				"|cff0070dd|Hitem:87626::::::::120:71::::::|h[Suna's Shattered Locket]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_NECK", -- [3]
-				645514, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[152576] = {
-				"|cffffffff|Hitem:152576::::::::120:71::::::|h[Tidespray Linen]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2067081, -- [4]
-				7, -- [5]
-				5, -- [6]
-			},
-			[160137] = {
-				"|cff1eff00|Hitem:160137::::::::120:71::::::|h[Ravascale Belt]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				1690118, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[102541] = {
-				"|cff1eff00|Hitem:102541::::::::120:71::::::|h[Aged Balsamic Vinegar]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				132797, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[169238] = {
-				"|cff0070dd|Hitem:169238::::::::120:71::::::|h[Modified Radio Receiver]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1405806, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[159475] = {
-				"|cff1eff00|Hitem:159475::::::::120:71::::::|h[Shipwrecker Axe]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				1698637, -- [4]
-				2, -- [5]
-				0, -- [6]
-			},
-			[169248] = {
-				"|cffffffff|Hitem:169248::::::::120:71::::::|h[Broken Sandals]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				132579, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[163935] = {
-				"|cffa335ee|Hitem:163935::::::::120:71::::::|h[Landoi's Scrutiny]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_TRINKET", -- [3]
-				1100023, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169376] = {
-				"|cff0070dd|Hitem:169376::::::::120:71::::::|h[Skittering Eel]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133898, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[152577] = {
-				"|cff1eff00|Hitem:152577::::::::120:71::::::|h[Deep Sea Satin]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				2067080, -- [4]
-				7, -- [5]
-				5, -- [6]
-			},
-			[128315] = {
-				"|cff0070dd|Hitem:128315::::::::120:71::::::|h[Medallion of the Legion]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				237560, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[163947] = {
-				"|cffa335ee|Hitem:163947::::::::120:71::::::|h[Robust Legwraps of D'nusa]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				422806, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[167077] = {
-				"|cff1eff00|Hitem:167077::::::::120:71::::::|h[Scrying Stone]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				528693, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169170] = {
-				"|cff0070dd|Hitem:169170::::::::120:71::::::|h[Blueprint: Utility Mechanoclaw]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[159540] = {
-				"|cff1eff00|Hitem:159540::::::::120:71::::::|h[Coralshell Hammer]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				1695564, -- [4]
-				2, -- [5]
-				4, -- [6]
-			},
-			[87595] = {
-				"|cff0070dd|Hitem:87595::::::::120:71::::::|h[Gloves of Burrow Spelunking]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				609749, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[87627] = {
-				"|cff0070dd|Hitem:87627::::::::120:71::::::|h[Kunchong Carapace Chestguard]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				615168, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[128348] = {
-				"|cff0070dd|Hitem:128348::::::::120:71::::::|h[Baleful Spaulders]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017540, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169409] = {
-				"|cff1eff00|Hitem:169409::::::::120:71::::::|h[Slithershell Leggings]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				2902644, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[102542] = {
-				"|cff1eff00|Hitem:102542::::::::120:71::::::|h[Ancient Pandaren Spices]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				133590, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[169122] = {
-				"|cff9d9d9d|Hitem:169122::::::::120:71::::::|h[Gibraltian Monkey Wrench]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134520, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[170091] = {
-				"|cffa335ee|Hitem:170091::::::::120:71::::::|h[Willbinder's Halberd]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				2735992, -- [4]
-				2, -- [5]
-				6, -- [6]
-			},
-			[169250] = {
-				"|cffffffff|Hitem:169250::::::::120:71::::::|h[Crude Eating Utensil]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				794853, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[168081] = {
-				"|cffffffff|Hitem:168081::::::::120:71::::::|h[Brinestone Pickaxe]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1064765, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[128252] = {
-				"|cff0070dd|Hitem:128252::::::::120:71::::::|h[Equipment Blueprint: True Iron Rudder]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1001491, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[86594] = {
-				"|cff0070dd|Hitem:86594::::::::120:71::::::|h[Helpful Wikky's Whistle]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				132161, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169130] = {
-				"|cff9d9d9d|Hitem:169130::::::::120:71::::::|h[Bent Cogwheel]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134064, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[127326] = {
-				"|cff0070dd|Hitem:127326::::::::120:71::::::|h[Fel Destroyer Crossbow]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				942780, -- [4]
-				2, -- [5]
-				18, -- [6]
-			},
-			[169123] = {
-				"|cff9d9d9d|Hitem:169123::::::::120:71::::::|h[Functional Fiddleswitch]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				1888317, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169224] = {
-				"|cffffffff|Hitem:169224::::::::120:71::::::|h[Big Red Button]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				986488, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169251] = {
-				"|cffffffff|Hitem:169251::::::::120:71::::::|h[Ancient Insect]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				516338, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[87596] = {
-				"|cff0070dd|Hitem:87596::::::::120:71::::::|h[Mudmug's Mitts]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				646762, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[167846] = {
-				"|cff0070dd|Hitem:167846::::::::120:71::::::|h[Blueprint: Mechano-Treat]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[166888] = {
-				"|cff1eff00|Hitem:166888::::::::120:71::::::|h[Germinating Seed]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				464030, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[169611] = {
-				"|cff1eff00|Hitem:169611::::::::120:71::::::|h[Recipe: Zin'anthid]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1387621, -- [4]
-				9, -- [5]
-				0, -- [6]
-			},
-			[102543] = {
-				"|cff1eff00|Hitem:102543::::::::120:71::::::|h[Aged Mogu'shan Cheese]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				133949, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[169124] = {
-				"|cff9d9d9d|Hitem:169124::::::::120:71::::::|h[Decorational Whirlycog]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				2437246, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169419] = {
-				"|cff1eff00|Hitem:169419::::::::120:71::::::|h[Reefwalker Chain]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				2915282, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[169252] = {
-				"|cffffffff|Hitem:169252::::::::120:71::::::|h[Resonant Pearl]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				464023, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[112891] = {
-				"|cffffffff|Hitem:112891::::::::120:71::::::|h[Sargerei Robe]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				132651, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[167847] = {
-				"|cff0070dd|Hitem:167847::::::::120:71::::::|h[Blueprint: Ultrasafe Transporter: Mechagon]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[170466] = {
-				"|cffa335ee|Hitem:170466::::::::120:71::::::|h[Junkyard Motivator]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				2618150, -- [4]
-				2, -- [5]
-				10, -- [6]
-			},
-			[169417] = {
-				"|cff1eff00|Hitem:169417::::::::120:71::::::|h[Reefwalker Trousers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				2915289, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[163951] = {
-				"|cffa335ee|Hitem:163951::::::::120:71::::::|h[Cinch of the Sainted General]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				529876, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[170147] = {
-				"|cff1eff00|Hitem:170147::::::::120:71::::::|h[Paint Bottle: Goblin Green]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				463860, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169927] = {
-				"|cffa335ee|Hitem:169927::::::::120:71::::::|h[Deepcaller's Clasp]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				2909745, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[169253] = {
-				"|cffffffff|Hitem:169253::::::::120:71::::::|h[Shell Horn]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				1498844, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169317] = {
-				"|cffa335ee|Hitem:169317::::::::120:71::::::|h[Enthraller's Bindstone]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_TRINKET", -- [3]
-				973909, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[87629] = {
-				"|cff0070dd|Hitem:87629::::::::120:71::::::|h[Chestplate of Manifest Dread]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				615168, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[170467] = {
-				"|cffa335ee|Hitem:170467::::::::120:71::::::|h[Whirring Chainblade]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				2618146, -- [4]
-				2, -- [5]
-				7, -- [6]
-			},
-			[158778] = {
-				"|cff9d9d9d|Hitem:158778::::::::120:71::::::|h[Mucose Tendril]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134895, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[119407] = {
-				"|cff0070dd|Hitem:119407::::::::120:71::::::|h[Cloudsplitter Greatstaff]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				974957, -- [4]
-				2, -- [5]
-				6, -- [6]
-			},
-			[169126] = {
-				"|cff9d9d9d|Hitem:169126::::::::120:71::::::|h[Supercharged Graphics Cog]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				321487, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[75014] = {
-				"|cffffffff|Hitem:75014::::::::120:71::::::|h[Raw Crocolisk Belly]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				644276, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[168743] = {
-				"|cffa335ee|Hitem:168743::::::::120:71::::::|h[Forceful Efficient Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[169318] = {
-				"|cffa335ee|Hitem:169318::::::::120:71::::::|h[Shockbiter's Fang]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_TRINKET", -- [3]
-				1526597, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169382] = {
-				"|cff0070dd|Hitem:169382::::::::120:71::::::|h[Lost Robogrip]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1521022, -- [4]
-				15, -- [5]
-				2, -- [6]
-			},
-			[170468] = {
-				"|cffa335ee|Hitem:170468::::::::120:71::::::|h[Supervolt Zapper]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				2735166, -- [4]
-				2, -- [5]
-				3, -- [6]
-			},
-			[74837] = {
-				"|cffffffff|Hitem:74837::::::::120:71::::::|h[Raw Turtle Meat]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				644270, -- [4]
-				7, -- [5]
-				8, -- [6]
-			},
-			[170177] = {
-				"|cff1eff00|Hitem:170177::::::::120:71::::::|h[Exposed Fish]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				237301, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[169127] = {
-				"|cff9d9d9d|Hitem:169127::::::::120:71::::::|h[Tastefully Scented Grease]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				135447, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[155610] = {
-				"|cff9d9d9d|Hitem:155610::::::::120:71::::::|h[Stinging Nettle]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				134439, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169255] = {
-				"|cffffffff|Hitem:169255::::::::120:71::::::|h[Tuft of Red Fur]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				237421, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[87598] = {
-				"|cff0070dd|Hitem:87598::::::::120:71::::::|h[Monstrous Silk Gloves]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				604462, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[87630] = {
-				"|cff0070dd|Hitem:87630::::::::120:71::::::|h[Chestpiece of Twinkling Stars]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				646761, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[168001] = {
-				"|cff1eff00|Hitem:168001::::::::120:71::::::|h[Paint Vial: Big-ol Bronze]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				413575, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[169404] = {
-				"|cff1eff00|Hitem:169404::::::::120:71::::::|h[Deeptide Cuffs]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				2973325, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[170086] = {
-				"|cff9d9d9d|Hitem:170086::::::::120:71::::::|h[Coral-Flecked Chalice]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				132789, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[169128] = {
-				"|cff9d9d9d|Hitem:169128::::::::120:71::::::|h[Chilled Heating Block]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				236869, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[170172] = {
-				"|cff1eff00|Hitem:170172::::::::120:71::::::|h[Brightspine Shell]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				1499541, -- [4]
-				15, -- [5]
-				4, -- [6]
-			},
-			[168745] = {
-				"|cffa335ee|Hitem:168745::::::::120:71::::::|h[Optimized Effective Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[112893] = {
-				"|cffffffff|Hitem:112893::::::::120:71::::::|h[Sargerei Slippers]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				457774, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[128255] = {
-				"|cff0070dd|Hitem:128255::::::::120:71::::::|h[Equipment Blueprint: Ice Cutter]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1001491, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[170470] = {
-				"|cffa335ee|Hitem:170470::::::::120:71::::::|h[Reinforced Grease Deflector]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_SHIELD", -- [3]
-				2902485, -- [4]
-				4, -- [5]
-				6, -- [6]
-			},
-			[168490] = {
-				"|cff0070dd|Hitem:168490::::::::120:71::::::|h[Blueprint: Protocol Transference Device]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2915721, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[163955] = {
-				"|cffa335ee|Hitem:163955::::::::120:71::::::|h[Khayurn, Blade of the Wolves]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				841309, -- [4]
-				2, -- [5]
-				1, -- [6]
-			},
-			[169129] = {
-				"|cff9d9d9d|Hitem:169129::::::::120:71::::::|h[Lovingly Worn Wrench]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				2437249, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[87225] = {
-				"|cff0070dd|Hitem:87225::::::::120:71::::::|h[Big Bag of Food]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				133642, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[168746] = {
-				"|cffa335ee|Hitem:168746::::::::120:71::::::|h[Optimized Adaptable Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[87599] = {
-				"|cff0070dd|Hitem:87599::::::::120:71::::::|h[Grower's Gloves]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				609749, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[87631] = {
-				"|cff0070dd|Hitem:87631::::::::120:71::::::|h[Jiao-Skin Tunic]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				609748, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[119226] = {
-				"|cff0070dd|Hitem:119226::::::::120:71::::::|h[Blammo's Blammer]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				969944, -- [4]
-				2, -- [5]
-				3, -- [6]
-			},
-			[119377] = {
-				"|cff0070dd|Hitem:119377::::::::120:71::::::|h[Void-Touched Diamond Necklace]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_NECK", -- [3]
-				1016815, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[163956] = {
-				"|cffa335ee|Hitem:163956::::::::120:71::::::|h[Treiya's Shining Pillar]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				1617802, -- [4]
-				2, -- [5]
-				10, -- [6]
-			},
-			[124551] = {
-				"|cff0070dd|Hitem:124551::::::::120:71::::::|h[Baleful Tunic]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1017536, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[171248] = {
-				"|cffffffff|Hitem:171248::::::::120:71::::::|h[Prototype Implant]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				986489, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[168747] = {
-				"|cffa335ee|Hitem:168747::::::::120:71::::::|h[Performant Adaptable Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[94058] = {
-				"|cff1eff00|Hitem:94058::::::::120:71::::::|h[Exiled Dabbler's Robe]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				132653, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[128256] = {
-				"|cff0070dd|Hitem:128256::::::::120:71::::::|h[Equipment Blueprint: Gyroscopic Internal Stabilizer]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				1001491, -- [4]
-				0, -- [5]
-				8, -- [6]
-			},
-			[158792] = {
-				"|cff9d9d9d|Hitem:158792::::::::120:71::::::|h[Digestive Acid]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				132108, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[168185] = {
-				"|cffffffff|Hitem:168185::::::::120:71::::::|h[Osmenite Ore]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				2543233, -- [4]
-				7, -- [5]
-				7, -- [6]
-			},
-			[127330] = {
-				"|cff0070dd|Hitem:127330::::::::120:71::::::|h[The Black Fang]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				306487, -- [4]
-				2, -- [5]
-				13, -- [6]
-			},
-			[170094] = {
-				"|cffa335ee|Hitem:170094::::::::120:71::::::|h[Temple Guardian's Saber]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				3004118, -- [4]
-				2, -- [5]
-				7, -- [6]
-			},
-			[81404] = {
-				"|cffffffff|Hitem:81404::::::::120:71::::::|h[Dried Needle Mushrooms]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				651488, -- [4]
-				0, -- [5]
-				5, -- [6]
-			},
-			[168748] = {
-				"|cffa335ee|Hitem:168748::::::::120:71::::::|h[Performant Refined Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[87600] = {
-				"|cff0070dd|Hitem:87600::::::::120:71::::::|h[Marshsong Gloves]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				646762, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[87632] = {
-				"|cff0070dd|Hitem:87632::::::::120:71::::::|h[Fearsworn Chestpiece]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				646761, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[87602] = {
-				"|cff0070dd|Hitem:87602::::::::120:71::::::|h[Grain Warden's Gauntlets]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HAND", -- [3]
-				615169, -- [4]
-				4, -- [5]
-				4, -- [6]
-			},
-			[119378] = {
-				"|cff0070dd|Hitem:119378::::::::120:71::::::|h[Socrethar's Stone]|h|r", -- [1]
-				3, -- [2]
-				"INVTYPE_HOLDABLE", -- [3]
-				134540, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[163958] = {
-				"|cffa335ee|Hitem:163958::::::::120:71::::::|h[Freezie's Bubble Popper]|h|r", -- [1]
-				4, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				968649, -- [4]
-				2, -- [5]
-				15, -- [6]
-			},
-			[169132] = {
-				"|cff9d9d9d|Hitem:169132::::::::120:71::::::|h[Cracked Gyroscope]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				132998, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[170098] = {
-				"|cff9d9d9d|Hitem:170098::::::::120:71::::::|h[Rusted Girandole Earring]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				133348, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[168749] = {
-				"|cffa335ee|Hitem:168749::::::::120:71::::::|h[Performant Effective Logic Board]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				134394, -- [4]
-				3, -- [5]
-				9, -- [6]
-			},
-			[128225] = {
-				"|cffa335ee|Hitem:128225::::::::120:71::::::|h[Empowered Apexis Fragment]|h|r", -- [1]
-				4, -- [2]
-				"", -- [3]
-				135733, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[169392] = {
-				"|cff0070dd|Hitem:169392::::::::120:71::::::|h[Bonebiter]|h|r", -- [1]
-				3, -- [2]
-				"", -- [3]
-				2027842, -- [4]
-				15, -- [5]
-				2, -- [6]
 			},
 		},
 		["rares_found"] = {
@@ -18902,14 +14916,6 @@ RareScannerDB = {
 				["artID"] = 402,
 				["foundTime"] = 1567993974,
 			},
-			[86959] = {
-				["mapID"] = 550,
-				["coordY"] = 0.3475445210933685,
-				["foundTime"] = 1568770459,
-				["coordX"] = 0.4591774046421051,
-				["artID"] = 567,
-				["atlasName"] = "VignetteKill",
-			},
 			[146886] = {
 				["mapID"] = 1037,
 				["artID"] = 1018,
@@ -18917,6 +14923,14 @@ RareScannerDB = {
 				["coordX"] = 0.4785795211791992,
 				["atlasName"] = "VignetteKill",
 				["foundTime"] = 1565992959,
+			},
+			[86959] = {
+				["mapID"] = 550,
+				["coordY"] = 0.3475445210933685,
+				["foundTime"] = 1568770459,
+				["coordX"] = 0.4591774046421051,
+				["artID"] = 567,
+				["atlasName"] = "VignetteKill",
 			},
 			[152007] = {
 				["mapID"] = 1462,
@@ -18934,13 +14948,13 @@ RareScannerDB = {
 				["artID"] = 551,
 				["foundTime"] = 1567954346,
 			},
-			[91087] = {
-				["mapID"] = 534,
-				["coordY"] = 0.2846860885620117,
+			[140097] = {
+				["mapID"] = 1502,
+				["artID"] = 1302,
+				["coordY"] = 0.6585786938667297,
+				["coordX"] = 0.5124033689498901,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.4842079877853394,
-				["artID"] = 551,
-				["foundTime"] = 1567569919,
+				["foundTime"] = 1567868854,
 			},
 			[88043] = {
 				["mapID"] = 535,
@@ -18958,13 +14972,13 @@ RareScannerDB = {
 				["artID"] = 551,
 				["foundTime"] = 1568598100,
 			},
-			[134807] = {
-				["mapID"] = 1337,
-				["artID"] = 1171,
-				["foundTime"] = 1566677843,
-				["coordX"] = 0.4022616744041443,
+			[138632] = {
+				["mapID"] = 1502,
+				["artID"] = 1302,
+				["coordY"] = 0.6377277374267578,
+				["coordX"] = 0.4737590551376343,
 				["atlasName"] = "VignetteKill",
-				["coordY"] = 0.4071176648139954,
+				["foundTime"] = 1567870140,
 			},
 			[152465] = {
 				["mapID"] = 1355,
@@ -18982,13 +14996,13 @@ RareScannerDB = {
 				["artID"] = 552,
 				["atlasName"] = "VignetteKill",
 			},
-			[130788] = {
-				["mapID"] = 981,
-				["artID"] = 981,
-				["coordY"] = 0.4275804758071899,
-				["coordX"] = 0.5001534223556519,
+			[150394] = {
+				["mapID"] = 1462,
+				["coordY"] = 0.3897069394588471,
+				["foundTime"] = 1568034989,
+				["coordX"] = 0.6350254416465759,
+				["artID"] = 1276,
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1567869401,
 			},
 			[139811] = {
 				["mapID"] = 1502,
@@ -19014,21 +15028,21 @@ RareScannerDB = {
 				["atlasName"] = "VignetteKill",
 				["coordY"] = 0.524,
 			},
-			[138632] = {
-				["mapID"] = 1502,
-				["artID"] = 1302,
-				["coordY"] = 0.6377277374267578,
-				["coordX"] = 0.4737590551376343,
+			[134807] = {
+				["mapID"] = 1337,
+				["artID"] = 1171,
+				["foundTime"] = 1566677843,
+				["coordX"] = 0.4022616744041443,
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1567870140,
+				["coordY"] = 0.4071176648139954,
 			},
-			[150394] = {
-				["mapID"] = 1462,
-				["coordY"] = 0.3897069394588471,
-				["foundTime"] = 1568034989,
-				["coordX"] = 0.6350254416465759,
-				["artID"] = 1276,
+			[130788] = {
+				["mapID"] = 981,
+				["artID"] = 981,
+				["coordY"] = 0.4275804758071899,
+				["coordX"] = 0.5001534223556519,
 				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1567869401,
 			},
 			[138441] = {
 				["mapID"] = 1037,
@@ -19094,13 +15108,13 @@ RareScannerDB = {
 				["artID"] = 1276,
 				["foundTime"] = 1566793988,
 			},
-			[150937] = {
-				["mapID"] = 1462,
-				["coordY"] = 0.8028293251991272,
-				["foundTime"] = 1568414000,
-				["coordX"] = 0.1940868645906448,
-				["artID"] = 1276,
+			[82992] = {
+				["mapID"] = 535,
+				["coordY"] = 0.3292213082313538,
 				["atlasName"] = "VignetteKill",
+				["coordX"] = 0.4760286509990692,
+				["artID"] = 552,
+				["foundTime"] = 1567956841,
 			},
 			[70003] = {
 				["mapID"] = 504,
@@ -19190,54 +15204,6 @@ RareScannerDB = {
 				["atlasName"] = "VignetteKill",
 				["foundTime"] = 1567870204,
 			},
-			[141058] = {
-				["mapID"] = 1037,
-				["artID"] = 1018,
-				["coordY"] = 0.5930943489074707,
-				["coordX"] = 0.4735798835754395,
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1565992988,
-			},
-			[91727] = {
-				["mapID"] = 534,
-				["coordY"] = 0.3609434068202972,
-				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.4992284178733826,
-				["artID"] = 551,
-				["foundTime"] = 1567569907,
-			},
-			[138890] = {
-				["mapID"] = 1337,
-				["artID"] = 1171,
-				["foundTime"] = 1566676084,
-				["coordX"] = 0.2261584401130676,
-				["atlasName"] = "VignetteKill",
-				["coordY"] = 0.5835310220718384,
-			},
-			[152182] = {
-				["mapID"] = 1462,
-				["coordY"] = 0.787930965423584,
-				["foundTime"] = 1567467298,
-				["coordX"] = 0.6590280532836914,
-				["artID"] = 1276,
-				["atlasName"] = "VignetteKill",
-			},
-			[50789] = {
-				["mapID"] = 379,
-				["coordY"] = 0.1373389512300491,
-				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.638989269733429,
-				["artID"] = 391,
-				["foundTime"] = 1568775169,
-			},
-			[86579] = {
-				["mapID"] = 543,
-				["coordY"] = 0.3337767422199249,
-				["foundTime"] = 1567453079,
-				["coordX"] = 0.4589877128601074,
-				["artID"] = 560,
-				["atlasName"] = "VignetteKill",
-			},
 			[91695] = {
 				["mapID"] = 534,
 				["coordY"] = 0.4013727605342865,
@@ -19245,14 +15211,6 @@ RareScannerDB = {
 				["coordX"] = 0.4748987555503845,
 				["artID"] = 551,
 				["foundTime"] = 1567297789,
-			},
-			[81001] = {
-				["mapID"] = 525,
-				["artID"] = 542,
-				["coordY"] = 0.504,
-				["coordX"] = 0.132,
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1566104083,
 			},
 			[138572] = {
 				["mapID"] = 1037,
@@ -19262,6 +15220,62 @@ RareScannerDB = {
 				["atlasName"] = "VignetteKill",
 				["coordY"] = 0.5952121615409851,
 			},
+			[138890] = {
+				["mapID"] = 1337,
+				["artID"] = 1171,
+				["foundTime"] = 1566676084,
+				["coordX"] = 0.2261584401130676,
+				["atlasName"] = "VignetteKill",
+				["coordY"] = 0.5835310220718384,
+			},
+			[151672] = {
+				["mapID"] = 1462,
+				["coordY"] = 0.2015847861766815,
+				["atlasName"] = "VignetteKill",
+				["coordX"] = 0.8756557703018188,
+				["artID"] = 1276,
+				["foundTime"] = 1565995209,
+			},
+			[58949] = {
+				["mapID"] = 390,
+				["coordY"] = 0.4858031868934631,
+				["atlasName"] = "VignetteKill",
+				["coordX"] = 0.169940397143364,
+				["artID"] = 402,
+				["foundTime"] = 1567994004,
+			},
+			[86579] = {
+				["mapID"] = 543,
+				["coordY"] = 0.3337767422199249,
+				["foundTime"] = 1567453079,
+				["coordX"] = 0.4589877128601074,
+				["artID"] = 560,
+				["atlasName"] = "VignetteKill",
+			},
+			[141058] = {
+				["mapID"] = 1037,
+				["artID"] = 1018,
+				["coordY"] = 0.5930943489074707,
+				["coordX"] = 0.4735798835754395,
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1565992988,
+			},
+			[81001] = {
+				["mapID"] = 525,
+				["artID"] = 542,
+				["coordY"] = 0.504,
+				["coordX"] = 0.132,
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1566104083,
+			},
+			[93002] = {
+				["mapID"] = 534,
+				["coordY"] = 0.6513246893882751,
+				["atlasName"] = "VignetteKill",
+				["coordX"] = 0.5208150148391724,
+				["artID"] = 551,
+				["foundTime"] = 1567569873,
+			},
 			[63977] = {
 				["mapID"] = 390,
 				["coordY"] = 0.3384814262390137,
@@ -19270,13 +15284,13 @@ RareScannerDB = {
 				["artID"] = 402,
 				["foundTime"] = 1567993986,
 			},
-			[154701] = {
-				["mapID"] = 1462,
-				["coordY"] = 0.5393398404121399,
+			[138636] = {
+				["mapID"] = 1502,
+				["artID"] = 1302,
+				["coordY"] = 0.5637378692626953,
+				["coordX"] = 0.5968337059020996,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.711098849773407,
-				["artID"] = 1276,
-				["foundTime"] = 1565997192,
+				["foundTime"] = 1567870256,
 			},
 			[50733] = {
 				["mapID"] = 379,
@@ -19286,13 +15300,13 @@ RareScannerDB = {
 				["artID"] = 391,
 				["atlasName"] = "VignetteKill",
 			},
-			[139466] = {
-				["mapID"] = 1502,
-				["artID"] = 1302,
-				["coordY"] = 0.4856427907943726,
-				["coordX"] = 0.5527235269546509,
+			[92429] = {
+				["mapID"] = 534,
+				["coordY"] = 0.6733906269073486,
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1565994666,
+				["coordX"] = 0.5783296823501587,
+				["artID"] = 551,
+				["foundTime"] = 1567306626,
 			},
 			[50749] = {
 				["mapID"] = 390,
@@ -19334,13 +15348,13 @@ RareScannerDB = {
 				["artID"] = 551,
 				["foundTime"] = 1567569895,
 			},
-			[58949] = {
-				["mapID"] = 390,
-				["coordY"] = 0.4858031868934631,
+			[50789] = {
+				["mapID"] = 379,
+				["coordY"] = 0.1373389512300491,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.169940397143364,
-				["artID"] = 402,
-				["foundTime"] = 1567994004,
+				["coordX"] = 0.638989269733429,
+				["artID"] = 391,
+				["foundTime"] = 1568775169,
 			},
 			[139530] = {
 				["mapID"] = 1502,
@@ -19350,13 +15364,13 @@ RareScannerDB = {
 				["atlasName"] = "VignetteKill",
 				["foundTime"] = 1565994797,
 			},
-			[92429] = {
-				["mapID"] = 534,
-				["coordY"] = 0.6733906269073486,
+			[87584] = {
+				["mapID"] = 550,
+				["coordY"] = 0.3574740886688232,
+				["foundTime"] = 1568770461,
+				["coordX"] = 0.4433190524578095,
+				["artID"] = 567,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.5783296823501587,
-				["artID"] = 551,
-				["foundTime"] = 1567306626,
 			},
 			[86835] = {
 				["mapID"] = 550,
@@ -19390,13 +15404,13 @@ RareScannerDB = {
 				["atlasName"] = "VignetteKill",
 				["foundTime"] = 1567869563,
 			},
-			[50359] = {
-				["mapID"] = 390,
-				["coordY"] = 0.2514519691467285,
+			[139467] = {
+				["mapID"] = 981,
+				["artID"] = 981,
+				["coordY"] = 0.5457243919372559,
+				["coordX"] = 0.5984443426132202,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.3957621157169342,
-				["artID"] = 402,
-				["foundTime"] = 1567567376,
+				["foundTime"] = 1567868691,
 			},
 			[135834] = {
 				["mapID"] = 981,
@@ -19414,13 +15428,13 @@ RareScannerDB = {
 				["artID"] = 402,
 				["foundTime"] = 1567993911,
 			},
-			[139467] = {
-				["mapID"] = 981,
-				["artID"] = 981,
-				["coordY"] = 0.5457243919372559,
-				["coordX"] = 0.5984443426132202,
+			[50359] = {
+				["mapID"] = 390,
+				["coordY"] = 0.2514519691467285,
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1567868691,
+				["coordX"] = 0.3957621157169342,
+				["artID"] = 402,
+				["foundTime"] = 1567567376,
 			},
 			[325659] = {
 				["mapID"] = 1462,
@@ -19430,13 +15444,13 @@ RareScannerDB = {
 				["artID"] = 1276,
 				["foundTime"] = 1568411764,
 			},
-			[87234] = {
-				["mapID"] = 550,
-				["coordY"] = 0.3632194399833679,
-				["foundTime"] = 1568770462,
-				["coordX"] = 0.431926041841507,
-				["artID"] = 567,
+			[153301] = {
+				["mapID"] = 1355,
+				["artID"] = 1186,
+				["coordY"] = 0.39200002,
+				["coordX"] = 0.33200002,
 				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1566139515,
 			},
 			[153309] = {
 				["mapID"] = 1355,
@@ -19446,13 +15460,13 @@ RareScannerDB = {
 				["atlasName"] = "VignetteKill",
 				["foundTime"] = 1566138857,
 			},
-			[90024] = {
-				["mapID"] = 534,
-				["coordY"] = 0.3767503798007965,
-				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.415172815322876,
-				["artID"] = 551,
-				["foundTime"] = 1568771527,
+			[325663] = {
+				["mapID"] = 1462,
+				["coordY"] = 0.3229385614395142,
+				["foundTime"] = 1566679004,
+				["coordX"] = 0.6157671809196472,
+				["artID"] = 1276,
+				["atlasName"] = "VignetteLoot",
 			},
 			[325660] = {
 				["mapID"] = 1462,
@@ -19550,13 +15564,13 @@ RareScannerDB = {
 				["atlasName"] = "VignetteKill",
 				["coordY"] = 0.4498382210731506,
 			},
-			[325663] = {
-				["mapID"] = 1462,
-				["coordY"] = 0.3229385614395142,
-				["foundTime"] = 1566679004,
-				["coordX"] = 0.6157671809196472,
-				["artID"] = 1276,
-				["atlasName"] = "VignetteLoot",
+			[90024] = {
+				["mapID"] = 534,
+				["coordY"] = 0.3767503798007965,
+				["atlasName"] = "VignetteKill",
+				["coordX"] = 0.415172815322876,
+				["artID"] = 551,
+				["foundTime"] = 1568771527,
 			},
 			[58768] = {
 				["mapID"] = 390,
@@ -19566,13 +15580,13 @@ RareScannerDB = {
 				["artID"] = 402,
 				["foundTime"] = 1567993781,
 			},
-			[50766] = {
-				["mapID"] = 376,
-				["coordY"] = 0.3225036263465881,
+			[152570] = {
+				["mapID"] = 1462,
+				["coordY"] = 0.2082941979169846,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.5398277044296265,
-				["artID"] = 388,
-				["foundTime"] = 1568601723,
+				["coordX"] = 0.8232758641242981,
+				["artID"] = 1276,
+				["foundTime"] = 1567462819,
 			},
 			[50822] = {
 				["mapID"] = 390,
@@ -19590,13 +15604,13 @@ RareScannerDB = {
 				["artID"] = 1276,
 				["atlasName"] = "VignetteLoot",
 			},
-			[325666] = {
-				["mapID"] = 1462,
-				["coordY"] = 0.7759378552436829,
-				["atlasName"] = "VignetteLoot",
-				["coordX"] = 0.6675953269004822,
-				["artID"] = 1276,
-				["foundTime"] = 1567464776,
+			[50336] = {
+				["mapID"] = 390,
+				["coordY"] = 0.4433602094650269,
+				["atlasName"] = "VignetteKill",
+				["coordX"] = 0.8808222413063049,
+				["artID"] = 402,
+				["foundTime"] = 1566672602,
 			},
 			[151933] = {
 				["mapID"] = 1462,
@@ -19614,13 +15628,13 @@ RareScannerDB = {
 				["artID"] = 402,
 				["foundTime"] = 1567993885,
 			},
-			[140777] = {
-				["mapID"] = 1337,
-				["artID"] = 1171,
-				["foundTime"] = 1566678273,
-				["coordX"] = 0.523286759853363,
-				["atlasName"] = "VignetteKill",
-				["coordY"] = 0.5963470935821533,
+			[325665] = {
+				["mapID"] = 1462,
+				["coordY"] = 0.2287934273481369,
+				["foundTime"] = 1568412276,
+				["coordX"] = 0.6732412576675415,
+				["artID"] = 1276,
+				["atlasName"] = "VignetteLoot",
 			},
 			[69768] = {
 				["mapID"] = 388,
@@ -19646,13 +15660,13 @@ RareScannerDB = {
 				["artID"] = 551,
 				["foundTime"] = 1567306614,
 			},
-			[50336] = {
-				["mapID"] = 390,
-				["coordY"] = 0.4433602094650269,
-				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.8808222413063049,
-				["artID"] = 402,
-				["foundTime"] = 1566672602,
+			[325666] = {
+				["mapID"] = 1462,
+				["coordY"] = 0.7759378552436829,
+				["atlasName"] = "VignetteLoot",
+				["coordX"] = 0.6675953269004822,
+				["artID"] = 1276,
+				["foundTime"] = 1567464776,
 			},
 			[92465] = {
 				["mapID"] = 534,
@@ -19662,13 +15676,13 @@ RareScannerDB = {
 				["artID"] = 551,
 				["foundTime"] = 1568598115,
 			},
-			[136889] = {
-				["mapID"] = 981,
-				["artID"] = 981,
-				["coordY"] = 0.484603226184845,
-				["coordX"] = 0.6924872398376465,
+			[88208] = {
+				["mapID"] = 550,
+				["coordY"] = 0.1863119304180145,
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1567868124,
+				["coordX"] = 0.5818586945533752,
+				["artID"] = 567,
+				["foundTime"] = 1568770410,
 			},
 			[139471] = {
 				["mapID"] = 1502,
@@ -19886,13 +15900,13 @@ RareScannerDB = {
 				["artID"] = 1018,
 				["foundTime"] = 1565993152,
 			},
-			[88208] = {
-				["mapID"] = 550,
-				["coordY"] = 0.1863119304180145,
+			[136889] = {
+				["mapID"] = 981,
+				["artID"] = 981,
+				["coordY"] = 0.484603226184845,
+				["coordX"] = 0.6924872398376465,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.5818586945533752,
-				["artID"] = 567,
-				["foundTime"] = 1568770410,
+				["foundTime"] = 1567868124,
 			},
 			[88672] = {
 				["mapID"] = 543,
@@ -19902,13 +15916,13 @@ RareScannerDB = {
 				["artID"] = 560,
 				["foundTime"] = 1568771646,
 			},
-			[325665] = {
-				["mapID"] = 1462,
-				["coordY"] = 0.2287934273481369,
-				["foundTime"] = 1568412276,
-				["coordX"] = 0.6732412576675415,
-				["artID"] = 1276,
-				["atlasName"] = "VignetteLoot",
+			[140777] = {
+				["mapID"] = 1337,
+				["artID"] = 1171,
+				["foundTime"] = 1566678273,
+				["coordX"] = 0.523286759853363,
+				["atlasName"] = "VignetteKill",
+				["coordY"] = 0.5963470935821533,
 			},
 			[152416] = {
 				["mapID"] = 1355,
@@ -19934,13 +15948,13 @@ RareScannerDB = {
 				["artID"] = 556,
 				["foundTime"] = 1568771073,
 			},
-			[152570] = {
-				["mapID"] = 1462,
-				["coordY"] = 0.2082941979169846,
+			[50766] = {
+				["mapID"] = 376,
+				["coordY"] = 0.3225036263465881,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.8232758641242981,
-				["artID"] = 1276,
-				["foundTime"] = 1567462819,
+				["coordX"] = 0.5398277044296265,
+				["artID"] = 388,
+				["foundTime"] = 1568601723,
 			},
 			[111463] = {
 				["mapID"] = 634,
@@ -19958,13 +15972,13 @@ RareScannerDB = {
 				["artID"] = 402,
 				["foundTime"] = 1567993945,
 			},
-			[153301] = {
-				["mapID"] = 1355,
-				["artID"] = 1186,
-				["coordY"] = 0.39200002,
-				["coordX"] = 0.33200002,
+			[87234] = {
+				["mapID"] = 550,
+				["coordY"] = 0.3632194399833679,
+				["foundTime"] = 1568770462,
+				["coordX"] = 0.431926041841507,
+				["artID"] = 567,
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1566139515,
 			},
 			[135045] = {
 				["mapID"] = 1033,
@@ -19990,37 +16004,37 @@ RareScannerDB = {
 				["artID"] = 551,
 				["foundTime"] = 1567932278,
 			},
-			[87584] = {
-				["mapID"] = 550,
-				["coordY"] = 0.3574740886688232,
-				["foundTime"] = 1568770461,
-				["coordX"] = 0.4433190524578095,
-				["artID"] = 567,
-				["atlasName"] = "VignetteKill",
-			},
-			[138636] = {
+			[139466] = {
 				["mapID"] = 1502,
 				["artID"] = 1302,
-				["coordY"] = 0.5637378692626953,
-				["coordX"] = 0.5968337059020996,
+				["coordY"] = 0.4856427907943726,
+				["coordX"] = 0.5527235269546509,
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1567870256,
+				["foundTime"] = 1565994666,
 			},
-			[93002] = {
-				["mapID"] = 534,
-				["coordY"] = 0.6513246893882751,
-				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.5208150148391724,
-				["artID"] = 551,
-				["foundTime"] = 1567569873,
-			},
-			[151672] = {
+			[154701] = {
 				["mapID"] = 1462,
-				["coordY"] = 0.2015847861766815,
+				["coordY"] = 0.5393398404121399,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.8756557703018188,
+				["coordX"] = 0.711098849773407,
 				["artID"] = 1276,
-				["foundTime"] = 1565995209,
+				["foundTime"] = 1565997192,
+			},
+			[91727] = {
+				["mapID"] = 534,
+				["coordY"] = 0.3609434068202972,
+				["atlasName"] = "VignetteKill",
+				["coordX"] = 0.4992284178733826,
+				["artID"] = 551,
+				["foundTime"] = 1567569907,
+			},
+			[152182] = {
+				["mapID"] = 1462,
+				["coordY"] = 0.787930965423584,
+				["foundTime"] = 1567467298,
+				["coordX"] = 0.6590280532836914,
+				["artID"] = 1276,
+				["atlasName"] = "VignetteKill",
 			},
 			[96323] = {
 				["mapID"] = 590,
@@ -20086,13 +16100,13 @@ RareScannerDB = {
 				["artID"] = 552,
 				["foundTime"] = 1566104380,
 			},
-			[82992] = {
-				["mapID"] = 535,
-				["coordY"] = 0.3292213082313538,
+			[150937] = {
+				["mapID"] = 1462,
+				["coordY"] = 0.8028293251991272,
+				["foundTime"] = 1568414000,
+				["coordX"] = 0.1940868645906448,
+				["artID"] = 1276,
 				["atlasName"] = "VignetteKill",
-				["coordX"] = 0.4760286509990692,
-				["artID"] = 552,
-				["foundTime"] = 1567956841,
 			},
 			[138849] = {
 				["mapID"] = 1502,
@@ -20110,13 +16124,13 @@ RareScannerDB = {
 				["atlasName"] = "VignetteKill",
 				["foundTime"] = 1565994868,
 			},
-			[140097] = {
-				["mapID"] = 1502,
-				["artID"] = 1302,
-				["coordY"] = 0.6585786938667297,
-				["coordX"] = 0.5124033689498901,
+			[91087] = {
+				["mapID"] = 534,
+				["coordY"] = 0.2846860885620117,
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1567868854,
+				["coordX"] = 0.4842079877853394,
+				["artID"] = 551,
+				["foundTime"] = 1567569919,
 			},
 			[152113] = {
 				["mapID"] = 1462,
@@ -20182,6 +16196,4115 @@ RareScannerDB = {
 				["artID"] = 388,
 				["foundTime"] = 1566011992,
 			},
+		},
+		["loot_info"] = {
+			[168366] = {
+				"|cffa335ee|Hitem:168366::::::::120:71::::::|h[Tidal Lurker's Greathelm]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_HEAD", -- [3]
+				2901583, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[127299] = {
+				"|cff0070dd|Hitem:127299::::::::120:71::::::|h[Nethekurse's Robe of Contempt]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				132716, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[162937] = {
+				"|cff0070dd|Hitem:162937::::::::120:71::::::|h[Dread Aspirant's Plate Warboots]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_FEET", -- [3]
+				1728443, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[81405] = {
+				"|cffffffff|Hitem:81405::::::::120:71::::::|h[Boiled Silkworm Pupa]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				651538, -- [4]
+				0, -- [5]
+				5, -- [6]
+			},
+			[86547] = {
+				"|cffa335ee|Hitem:86547::::::::120:71::::::|h[Skyshard]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				237230, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[87601] = {
+				"|cff0070dd|Hitem:87601::::::::120:71::::::|h[Plough Driving Grips]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				615169, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[87633] = {
+				"|cff0070dd|Hitem:87633::::::::120:71::::::|h[Sharkskin Armor]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				609748, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[170475] = {
+				"|cff1eff00|Hitem:170475::::::::120:71::::::|h[Mardivas's Retention Dimension Invention]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_BAG", -- [3]
+				134430, -- [4]
+				1, -- [5]
+				0, -- [6]
+			},
+			[163960] = {
+				"|cffa335ee|Hitem:163960::::::::120:71::::::|h[Flaming Gavel of Truth]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				1113523, -- [4]
+				2, -- [5]
+				4, -- [6]
+			},
+			[124553] = {
+				"|cff0070dd|Hitem:124553::::::::120:71::::::|h[Baleful Gauntlets]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017537, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[168751] = {
+				"|cffa335ee|Hitem:168751::::::::120:71::::::|h[Omnipurpose Effective Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[167793] = {
+				"|cff1eff00|Hitem:167793::::::::120:71::::::|h[Paint Vial: Overload Orange]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				413575, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[128258] = {
+				"|cff0070dd|Hitem:128258::::::::120:71::::::|h[Equipment Blueprint: Felsmoke Launchers]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1001491, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[127332] = {
+				"|cff0070dd|Hitem:127332::::::::120:71::::::|h[Riverbeast Molar Club]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				930040, -- [4]
+				2, -- [5]
+				4, -- [6]
+			},
+			[169135] = {
+				"|cff9d9d9d|Hitem:169135::::::::120:71::::::|h[Warped Shock Absorber]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134518, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[81406] = {
+				"|cffffffff|Hitem:81406::::::::120:71::::::|h[Roasted Barley Tea]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				651601, -- [4]
+				0, -- [5]
+				5, -- [6]
+			},
+			[168752] = {
+				"|cffa335ee|Hitem:168752::::::::120:71::::::|h[Omnipurpose Efficient Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[167794] = {
+				"|cff1eff00|Hitem:167794::::::::120:71::::::|h[Paint Vial: Lemonade Steel]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				413575, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87634] = {
+				"|cff0070dd|Hitem:87634::::::::120:71::::::|h[Mazu's Robe]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				604461, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[170477] = {
+				"|cffa335ee|Hitem:170477::::::::120:71::::::|h[Mardivas's Universally Lauded Tote]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				133660, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[119380] = {
+				"|cff0070dd|Hitem:119380::::::::120:71::::::|h[Brutag's Iron Toe Boots]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_FEET", -- [3]
+				960783, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[120945] = {
+				"|cff1eff00|Hitem:120945::::::::120:71::::::|h[Primal Spirit]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1044088, -- [4]
+				7, -- [5]
+				10, -- [6]
+			},
+			[124554] = {
+				"|cff0070dd|Hitem:124554::::::::120:71::::::|h[Baleful Hood]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017538, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[168370] = {
+				"|cffa335ee|Hitem:168370::::::::120:71::::::|h[Rusted Keys to the Junkheap Drifter]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				2902998, -- [4]
+				15, -- [5]
+				5, -- [6]
+			},
+			[161344] = {
+				"|cffffffff|Hitem:161344::::::::120:71::::::|h[Abyssal Fragment]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				132885, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[170095] = {
+				"|cffa335ee|Hitem:170095::::::::120:71::::::|h[Moon Priestess' Baton]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				2735968, -- [4]
+				2, -- [5]
+				4, -- [6]
+			},
+			[87603] = {
+				"|cff0070dd|Hitem:87603::::::::120:71::::::|h[Thunderfall Gauntlets]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				615169, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[87635] = {
+				"|cff0070dd|Hitem:87635::::::::120:71::::::|h[Amber-Starched Robes]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				604461, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[168435] = {
+				"|cffa335ee|Hitem:168435::::::::120:71::::::|h[Remote Circuit Bypasser]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134390, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[170096] = {
+				"|cff9d9d9d|Hitem:170096::::::::120:71::::::|h[Sodden Highborne Painting]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134944, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169138] = {
+				"|cff9d9d9d|Hitem:169138::::::::120:71::::::|h[Fractured Personality Module]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134070, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[119413] = {
+				"|cff0070dd|Hitem:119413::::::::120:71::::::|h[Gu'gok's Rangefinder]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				920736, -- [4]
+				2, -- [5]
+				18, -- [6]
+			},
+			[92426] = {
+				"|cffa335ee|Hitem:92426::::::::120:71::::::|h[Sealed Tome of the Lost Legion]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				666474, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[126950] = {
+				"|cff0070dd|Hitem:126950::::::::120:71::::::|h[Equipment Blueprint: Bilge Pump]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1001491, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[170093] = {
+				"|cffa335ee|Hitem:170093::::::::120:71::::::|h[Tyr'mar's Greatsword]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				2835966, -- [4]
+				2, -- [5]
+				8, -- [6]
+			},
+			[170090] = {
+				"|cffa335ee|Hitem:170090::::::::120:71::::::|h[Merciless Pincher]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				2997789, -- [4]
+				2, -- [5]
+				13, -- [6]
+			},
+			[127302] = {
+				"|cff0070dd|Hitem:127302::::::::120:71::::::|h[Chemical Resistant Apron]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				969321, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[170097] = {
+				"|cff9d9d9d|Hitem:170097::::::::120:71::::::|h[Discarded Quel'dorei Tome]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				133735, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169139] = {
+				"|cff9d9d9d|Hitem:169139::::::::120:71::::::|h[Clogged Webbing Fabricator]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				133027, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[124552] = {
+				"|cff0070dd|Hitem:124552::::::::120:71::::::|h[Baleful Treads]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017533, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[87217] = {
+				"|cff1eff00|Hitem:87217::::::::120:71::::::|h[Small Bag of Goods]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				133642, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[86582] = {
+				"|cff0070dd|Hitem:86582::::::::120:71::::::|h[Aqua Jewel]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134891, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[87636] = {
+				"|cff0070dd|Hitem:87636::::::::120:71::::::|h[Cloak of the Forgotten Emperor]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				627126, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[119350] = {
+				"|cff0070dd|Hitem:119350::::::::120:71::::::|h[Sargerei Councilor's Drape]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				1044829, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[119382] = {
+				"|cff0070dd|Hitem:119382::::::::120:71::::::|h[Hershak's Heavy Legguards]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				947555, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[170098] = {
+				"|cff9d9d9d|Hitem:170098::::::::120:71::::::|h[Rusted Girandole Earring]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				133348, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[124556] = {
+				"|cff0070dd|Hitem:124556::::::::120:71::::::|h[Baleful Spaulders]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017540, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[127654] = {
+				"|cff0070dd|Hitem:127654::::::::120:71::::::|h[Burning Agony]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_TRINKET", -- [3]
+				971279, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[169779] = {
+				"|cffffffff|Hitem:169779::::::::120:71::::::|h[Deteriorating Cragscales]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1526633, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169332] = {
+				"|cff0070dd|Hitem:169332::::::::120:71::::::|h[Strange Mineralized Water]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				132774, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[119412] = {
+				"|cff0070dd|Hitem:119412::::::::120:71::::::|h[Bal'ra's Compound Bow]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_RANGED", -- [3]
+				975498, -- [4]
+				2, -- [5]
+				2, -- [6]
+			},
+			[170092] = {
+				"|cffa335ee|Hitem:170092::::::::120:71::::::|h[Netherdancer's Knife]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				2829897, -- [4]
+				2, -- [5]
+				15, -- [6]
+			},
+			[87600] = {
+				"|cff0070dd|Hitem:87600::::::::120:71::::::|h[Marshsong Gloves]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				646762, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[170099] = {
+				"|cff9d9d9d|Hitem:170099::::::::120:71::::::|h[Corroded Elegant Key]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134240, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[167790] = {
+				"|cff1eff00|Hitem:167790::::::::120:71::::::|h[Paint Vial: Fireball Red]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				413575, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[166970] = {
+				"|cff0070dd|Hitem:166970::::::::120:71::::::|h[Energy Cell]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2902386, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[93194] = {
+				"|cff9d9d9d|Hitem:93194::::::::120:71::::::|h[Bloodied Scroll]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				133675, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169333] = {
+				"|cff0070dd|Hitem:169333::::::::120:71::::::|h[Strange Volcanic Rock]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				132847, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[87637] = {
+				"|cff0070dd|Hitem:87637::::::::120:71::::::|h[Jade Harbinger's Cloak]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				625166, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[87222] = {
+				"|cff0070dd|Hitem:87222::::::::120:71::::::|h[Big Bag of Linens]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133628, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[119383] = {
+				"|cff0070dd|Hitem:119383::::::::120:71::::::|h[Shoulderplates of the Vigilant]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				960788, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[119415] = {
+				"|cff0070dd|Hitem:119415::::::::120:71::::::|h[Frosted Icequartz Ring]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_FINGER", -- [3]
+				1022178, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[124557] = {
+				"|cff0070dd|Hitem:124557::::::::120:71::::::|h[Baleful Girdle]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017532, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[168823] = {
+				"|cffa335ee|Hitem:168823::::::::120:71::::::|h[Rusty Mechanocrawler]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				2620863, -- [4]
+				15, -- [5]
+				5, -- [6]
+			},
+			[168248] = {
+				"|cff0070dd|Hitem:168248::::::::120:71::::::|h[Blueprint: BAWLD-371]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169334] = {
+				"|cff0070dd|Hitem:169334::::::::120:71::::::|h[Strange Oceanic Sediment]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				628267, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169398] = {
+				"|cff1eff00|Hitem:169398::::::::120:71::::::|h[Deeptide Slippers]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				2973324, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[170089] = {
+				"|cffa335ee|Hitem:170089::::::::120:71::::::|h[Liara's Spire]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				2921481, -- [4]
+				2, -- [5]
+				10, -- [6]
+			},
+			[166971] = {
+				"|cff1eff00|Hitem:166971::::::::120:71::::::|h[Empty Energy Cell]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				2902385, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[163969] = {
+				"|cffa335ee|Hitem:163969::::::::120:71::::::|h[Ameelton's Shot-Thrower]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				985703, -- [4]
+				2, -- [5]
+				3, -- [6]
+			},
+			[155598] = {
+				"|cff9d9d9d|Hitem:155598::::::::120:71::::::|h[Severed Mandible]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				237393, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[168185] = {
+				"|cffffffff|Hitem:168185::::::::120:71::::::|h[Osmenite Ore]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2543233, -- [4]
+				7, -- [5]
+				7, -- [6]
+			},
+			[167738] = {
+				"|cff1eff00|Hitem:167738::::::::120:71::::::|h[Gilded Seaweave]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				2821693, -- [4]
+				7, -- [5]
+				5, -- [6]
+			},
+			[86584] = {
+				"|cff0070dd|Hitem:86584::::::::120:71::::::|h[Hardened Shell]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134964, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[87638] = {
+				"|cff0070dd|Hitem:87638::::::::120:71::::::|h[Cloak of Tranquil Clouds]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				625709, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169591] = {
+				"|cff1eff00|Hitem:169591::::::::120:71::::::|h[Cracked Numeric Cylinder]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				237445, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[119384] = {
+				"|cff0070dd|Hitem:119384::::::::120:71::::::|h[Krud's Girthy Girdle]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				960781, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[87223] = {
+				"|cff0070dd|Hitem:87223::::::::120:71::::::|h[Big Bag of Skins]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				348519, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[124558] = {
+				"|cff0070dd|Hitem:124558::::::::120:71::::::|h[Baleful Ring]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1014104, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[168750] = {
+				"|cffa335ee|Hitem:168750::::::::120:71::::::|h[Omnipurpose Refined Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[163962] = {
+				"|cffa335ee|Hitem:163962::::::::120:71::::::|h[Decapitator of Alireza]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				1115730, -- [4]
+				2, -- [5]
+				8, -- [6]
+			},
+			[128231] = {
+				"|cff0070dd|Hitem:128231::::::::120:71::::::|h[Equipment Blueprint: Trained Shark Tank]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1001491, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[155603] = {
+				"|cff9d9d9d|Hitem:155603::::::::120:71::::::|h[Flaky Fish Scales]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1526611, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[94058] = {
+				"|cff1eff00|Hitem:94058::::::::120:71::::::|h[Exiled Dabbler's Robe]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				132653, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[171248] = {
+				"|cffffffff|Hitem:171248::::::::120:71::::::|h[Prototype Implant]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				986489, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[158861] = {
+				"|cff9d9d9d|Hitem:158861::::::::120:71::::::|h[Tensile Eye Stalk]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				135503, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169145] = {
+				"|cff9d9d9d|Hitem:169145::::::::120:71::::::|h[Rusted Precision Gripper]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				133863, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169403] = {
+				"|cff1eff00|Hitem:169403::::::::120:71::::::|h[Deeptide Cinch]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				2973322, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[155844] = {
+				"|cff9d9d9d|Hitem:155844::::::::120:71::::::|h[Unreliable Lodestone]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				135253, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169848] = {
+				"|cff0070dd|Hitem:169848::::::::120:71::::::|h[Azeroth Mini Pack: Bondo's Yard]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134143, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[166846] = {
+				"|cff1eff00|Hitem:166846::::::::120:71::::::|h[Spare Parts]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				2915723, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[119353] = {
+				"|cff0070dd|Hitem:119353::::::::120:71::::::|h[Matron's Supple Gloves]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				968991, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[170088] = {
+				"|cffa335ee|Hitem:170088::::::::120:71::::::|h[Ulmath's Soulseeker]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_RANGED", -- [3]
+				2924349, -- [4]
+				2, -- [5]
+				2, -- [6]
+			},
+			[169593] = {
+				"|cff1eff00|Hitem:169593::::::::120:71::::::|h[Large Storage Fragment]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				574567, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[124559] = {
+				"|cff0070dd|Hitem:124559::::::::120:71::::::|h[Baleful Choker]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1022404, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[168491] = {
+				"|cff0070dd|Hitem:168491::::::::120:71::::::|h[Blueprint: Personal Time Displacer]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[86586] = {
+				"|cff0070dd|Hitem:86586::::::::120:71::::::|h[Panflute of Pandaria]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133942, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[128232] = {
+				"|cff0070dd|Hitem:128232::::::::120:71::::::|h[Equipment Blueprint: High Intensity Fog Lights]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1001491, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[169402] = {
+				"|cff1eff00|Hitem:169402::::::::120:71::::::|h[Deeptide Amice]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				2973331, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[87640] = {
+				"|cff0070dd|Hitem:87640::::::::120:71::::::|h[Softfoot's Drape]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				625166, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[86577] = {
+				"|cff0070dd|Hitem:86577::::::::120:71::::::|h[Rod of Ambershaping]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				463530, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169594] = {
+				"|cff1eff00|Hitem:169594::::::::120:71::::::|h[Rust Covered Disc]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				132999, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169257] = {
+				"|cffffffff|Hitem:169257::::::::120:71::::::|h[Jagged Rune]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134417, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[119226] = {
+				"|cff0070dd|Hitem:119226::::::::120:71::::::|h[Blammo's Blammer]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				969944, -- [4]
+				2, -- [5]
+				3, -- [6]
+			},
+			[124560] = {
+				"|cff0070dd|Hitem:124560::::::::120:71::::::|h[Baleful Cloak]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017535, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[169850] = {
+				"|cff0070dd|Hitem:169850::::::::120:71::::::|h[Azeroth Mini Pack: Mechagon]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134142, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[118811] = {
+				"|cff0070dd|Hitem:118811::::::::120:71::::::|h[Embroidered Wolfsfur Cloak]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				1045963, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[155843] = {
+				"|cff9d9d9d|Hitem:155843::::::::120:71::::::|h[Brittle Ceremonial Necklace]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1535082, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[119386] = {
+				"|cff0070dd|Hitem:119386::::::::120:71::::::|h[Consort's Promise Ring]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_FINGER", -- [3]
+				1027829, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[87225] = {
+				"|cff0070dd|Hitem:87225::::::::120:71::::::|h[Big Bag of Food]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133642, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[170170] = {
+				"|cff1eff00|Hitem:170170::::::::120:71::::::|h[Fermented Deviate Fish]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				350650, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170087] = {
+				"|cff9d9d9d|Hitem:170087::::::::120:71::::::|h[Chromatic \"Vinegar\"]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132798, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[118099] = {
+				"|cffffffff|Hitem:118099::::::::120:71::::::|h[Gorian Artifact Fragment]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1029027, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[94050] = {
+				"|cff1eff00|Hitem:94050::::::::120:71::::::|h[Discarded Swampstalker Tunic]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				132718, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[167871] = {
+				"|cff0070dd|Hitem:167871::::::::120:71::::::|h[Blueprint: G99.99 Landshark]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[170167] = {
+				"|cff1eff00|Hitem:170167::::::::120:71::::::|h[Eel Filet]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				134032, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[170171] = {
+				"|cff1eff00|Hitem:170171::::::::120:71::::::|h[Giant Crab Leg]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1508493, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[168063] = {
+				"|cff0070dd|Hitem:168063::::::::120:71::::::|h[Blueprint: Rustbolt Kegerator]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169149] = {
+				"|cff9d9d9d|Hitem:169149::::::::120:71::::::|h[Dulled Micro-Serrated Incisor]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1518088, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[163592] = {
+				"|cff9d9d9d|Hitem:163592::::::::120:71::::::|h[Ceremonial Nose Ring]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1408444, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[167792] = {
+				"|cff1eff00|Hitem:167792::::::::120:71::::::|h[Paint Vial: Fel Mint Green]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				413575, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[157844] = {
+				"|cff9d9d9d|Hitem:157844::::::::120:71::::::|h[Iridescent Speck]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132872, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169405] = {
+				"|cff1eff00|Hitem:169405::::::::120:71::::::|h[Slithershell Vest]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				2902641, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[119355] = {
+				"|cff0070dd|Hitem:119355::::::::120:71::::::|h[Leggings of Howling Winds]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				961490, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[155842] = {
+				"|cff9d9d9d|Hitem:155842::::::::120:71::::::|h[\"Preserved\" Foodstuffs]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132934, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[167042] = {
+				"|cff0070dd|Hitem:167042::::::::120:71::::::|h[Blueprint: Scrap Trap]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[170172] = {
+				"|cff1eff00|Hitem:170172::::::::120:71::::::|h[Brightspine Shell]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1499541, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169399] = {
+				"|cff1eff00|Hitem:169399::::::::120:71::::::|h[Deeptide Gloves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				2973328, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[152543] = {
+				"|cffffffff|Hitem:152543::::::::120:71::::::|h[Sand Shifter]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2057315, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[119228] = {
+				"|cff0070dd|Hitem:119228::::::::120:71::::::|h[Ro'gor's Slippers of Silence]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_FEET", -- [3]
+				961485, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169406] = {
+				"|cff1eff00|Hitem:169406::::::::120:71::::::|h[Slithershell Boots]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				2902638, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[168832] = {
+				"|cffa335ee|Hitem:168832::::::::120:71::::::|h[Galvanic Oscillator]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1405815, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[168001] = {
+				"|cff1eff00|Hitem:168001::::::::120:71::::::|h[Paint Vial: Big-ol Bronze]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				413575, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[127340] = {
+				"|cff0070dd|Hitem:127340::::::::120:71::::::|h[Felfire Lit Greatsword]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				922559, -- [4]
+				2, -- [5]
+				8, -- [6]
+			},
+			[167786] = {
+				"|cffffffff|Hitem:167786::::::::120:71::::::|h[Germinating Seed]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				464030, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[81414] = {
+				"|cffffffff|Hitem:81414::::::::120:71::::::|h[Pearl Milk Tea]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				132815, -- [4]
+				0, -- [5]
+				5, -- [6]
+			},
+			[94221] = {
+				"|cff0070dd|Hitem:94221::::::::120:71::::::|h[Shan'ze Ritual Stone]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134891, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[118781] = {
+				"|cff0070dd|Hitem:118781::::::::120:71::::::|h[Gorestained Hatchet]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				939256, -- [4]
+				2, -- [5]
+				0, -- [6]
+			},
+			[152544] = {
+				"|cffffffff|Hitem:152544::::::::120:71::::::|h[Slimy Mackerel]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2057316, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[168744] = {
+				"|cffa335ee|Hitem:168744::::::::120:71::::::|h[Optimized Efficient Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[119388] = {
+				"|cff0070dd|Hitem:119388::::::::120:71::::::|h[Doomlord's Seal of Command]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_FINGER", -- [3]
+				1018486, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[162956] = {
+				"|cff0070dd|Hitem:162956::::::::120:71::::::|h[Dread Aspirant's Plate Girdle]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				1728442, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[124562] = {
+				"|cff0070dd|Hitem:124562::::::::120:71::::::|h[Baleful Armament]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1052655, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[162684] = {
+				"|cff9d9d9d|Hitem:162684::::::::120:71::::::|h[Etched Dock Cleat]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				135544, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[155841] = {
+				"|cff9d9d9d|Hitem:155841::::::::120:71::::::|h[Defaced Statuette]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134896, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[152545] = {
+				"|cffffffff|Hitem:152545::::::::120:71::::::|h[Frenzied Fangtooth]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2057311, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[169408] = {
+				"|cff1eff00|Hitem:169408::::::::120:71::::::|h[Slithershell Tricorne]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HEAD", -- [3]
+				2902643, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[170174] = {
+				"|cff1eff00|Hitem:170174::::::::120:71::::::|h[Muck Slime]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1500942, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[127309] = {
+				"|cff0070dd|Hitem:127309::::::::120:71::::::|h[Korak's Reinforced Iron Tunic]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				929917, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[118654] = {
+				"|cffa335ee|Hitem:118654::::::::120:71::::::|h[Aogexon's Fang]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134298, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[94158] = {
+				"|cff0070dd|Hitem:94158::::::::120:71::::::|h[Big Bag of Zandalari Supplies]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133665, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[168645] = {
+				"|cffffffff|Hitem:168645::::::::120:71::::::|h[Moist Fillet]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				3007464, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[89112] = {
+				"|cffffffff|Hitem:89112::::::::120:71::::::|h[Mote of Harmony]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				636334, -- [4]
+				7, -- [5]
+				10, -- [6]
+			},
+			[86589] = {
+				"|cff0070dd|Hitem:86589::::::::120:71::::::|h[Ai-Li's Skymirror]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				458243, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[152546] = {
+				"|cffffffff|Hitem:152546::::::::120:71::::::|h[Lane Snapper]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2057313, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[163852] = {
+				"|cffffffff|Hitem:163852::::::::120:71::::::|h[Tortollan Pilgrimage Scroll]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1500871, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[155615] = {
+				"|cff9d9d9d|Hitem:155615::::::::120:71::::::|h[Pestilent Muck]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1500940, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[170112] = {
+				"|cff1eff00|Hitem:170112::::::::120:71::::::|h[Wavecrash Polearm]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				2735992, -- [4]
+				2, -- [5]
+				6, -- [6]
+			},
+			[170176] = {
+				"|cff1eff00|Hitem:170176::::::::120:71::::::|h[Fathom Ray Wing]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1547467, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169218] = {
+				"|cff0070dd|Hitem:169218::::::::120:71::::::|h[Old Rusty Key]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134245, -- [4]
+				13, -- [5]
+				0, -- [6]
+			},
+			[169351] = {
+				"|cff1eff00|Hitem:169351::::::::120:71::::::|h[Sandclaw Nestseeker]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				2027879, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[160148] = {
+				"|cff1eff00|Hitem:160148::::::::120:71::::::|h[Saurifeather Pants]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				1762579, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169410] = {
+				"|cff1eff00|Hitem:169410::::::::120:71::::::|h[Slithershell Mantle]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				2902645, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[94063] = {
+				"|cff1eff00|Hitem:94063::::::::120:71::::::|h[Exiled Dabbler's Bracer]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132606, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[120317] = {
+				"|cff0070dd|Hitem:120317::::::::120:71::::::|h[Pristine Hide of the Pit Beast]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				1043737, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[118655] = {
+				"|cffa335ee|Hitem:118655::::::::120:71::::::|h[Bergruu's Horn]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				236697, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170177] = {
+				"|cff1eff00|Hitem:170177::::::::120:71::::::|h[Exposed Fish]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				237301, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169317] = {
+				"|cffa335ee|Hitem:169317::::::::120:71::::::|h[Enthraller's Bindstone]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_TRINKET", -- [3]
+				973909, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[94223] = {
+				"|cff0070dd|Hitem:94223::::::::120:71::::::|h[Stolen Shado-Pan Insignia]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				645204, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[74837] = {
+				"|cffffffff|Hitem:74837::::::::120:71::::::|h[Raw Turtle Meat]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				644270, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[169411] = {
+				"|cff1eff00|Hitem:169411::::::::120:71::::::|h[Slithershell Belt]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				2902637, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[169475] = {
+				"|cff1eff00|Hitem:169475::::::::120:71::::::|h[Barnacled Lockbox]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				644388, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[119390] = {
+				"|cff0070dd|Hitem:119390::::::::120:71::::::|h[Rockworm Carapace Shield]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_SHIELD", -- [3]
+				618984, -- [4]
+				4, -- [5]
+				6, -- [6]
+			},
+			[170114] = {
+				"|cff1eff00|Hitem:170114::::::::120:71::::::|h[Flanged Mace]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				2735968, -- [4]
+				2, -- [5]
+				4, -- [6]
+			},
+			[170178] = {
+				"|cff1eff00|Hitem:170178::::::::120:71::::::|h[Alpha Fin]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1547460, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[158874] = {
+				"|cff9d9d9d|Hitem:158874::::::::120:71::::::|h[Frothing Vapor]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132837, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[118657] = {
+				"|cffa335ee|Hitem:118657::::::::120:71::::::|h[Direhoof's Hide]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				878263, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[168487] = {
+				"|cffffffff|Hitem:168487::::::::120:71::::::|h[Zin'anthid]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2563958, -- [4]
+				7, -- [5]
+				9, -- [6]
+			},
+			[169412] = {
+				"|cff1eff00|Hitem:169412::::::::120:71::::::|h[Slithershell Armwraps]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				2902639, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[158745] = {
+				"|cff9d9d9d|Hitem:158745::::::::120:71::::::|h[Luminous Scale]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				642723, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[87614] = {
+				"|cff0070dd|Hitem:87614::::::::120:71::::::|h[Kafa Picker's Bracers]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				646760, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[170115] = {
+				"|cff1eff00|Hitem:170115::::::::120:71::::::|h[Massive Viridian Claw]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				2997789, -- [4]
+				2, -- [5]
+				13, -- [6]
+			},
+			[170179] = {
+				"|cff0070dd|Hitem:170179::::::::120:71::::::|h[Snapdragon Scent Gland]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				237414, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[128429] = {
+				"|cffffffff|Hitem:128429::::::::120:71::::::|h[Iron Horde Naval Manifest]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				237386, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169415] = {
+				"|cff1eff00|Hitem:169415::::::::120:71::::::|h[Reefwalker Handlers]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				2915287, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[87613] = {
+				"|cff0070dd|Hitem:87613::::::::120:71::::::|h[Frozen Zandalari Bracer]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				609747, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[169413] = {
+				"|cff1eff00|Hitem:169413::::::::120:71::::::|h[Reefwalker Hauberk]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				2915286, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[169477] = {
+				"|cffa335ee|Hitem:169477::::::::120:71::::::|h[Benthic Girdle]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1002873, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[160119] = {
+				"|cff1eff00|Hitem:160119::::::::120:71::::::|h[Direbone Frill Chestplate]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				1672317, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[170116] = {
+				"|cff1eff00|Hitem:170116::::::::120:71::::::|h[Darkened Slicer]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				2829897, -- [4]
+				2, -- [5]
+				15, -- [6]
+			},
+			[168742] = {
+				"|cffa335ee|Hitem:168742::::::::120:71::::::|h[Forceful Adaptable Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[127665] = {
+				"|cff0070dd|Hitem:127665::::::::120:71::::::|h[Warpscaled Wristwraps]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				1095667, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[169125] = {
+				"|cff9d9d9d|Hitem:169125::::::::120:71::::::|h[Sonic Drive Screw]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134069, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169350] = {
+				"|cff1eff00|Hitem:169350::::::::120:71::::::|h[Glittering Diamondshell]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				2027870, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[169414] = {
+				"|cff1eff00|Hitem:169414::::::::120:71::::::|h[Reefwalker Striders]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				2915283, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[94130] = {
+				"|cffffffff|Hitem:94130::::::::120:71::::::|h[Incantation of Haqin]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				531009, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170183] = {
+				"|cff1eff00|Hitem:170183::::::::120:71::::::|h[Reefwalker Bark]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				959845, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[170117] = {
+				"|cff1eff00|Hitem:170117::::::::120:71::::::|h[Wavebinder's Rod]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				2829934, -- [4]
+				2, -- [5]
+				19, -- [6]
+			},
+			[170181] = {
+				"|cff1eff00|Hitem:170181::::::::120:71::::::|h[Tidal Guard]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				237584, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170184] = {
+				"|cff0070dd|Hitem:170184::::::::120:71::::::|h[Ancient Reefwalker Bark]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				615629, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[94225] = {
+				"|cff0070dd|Hitem:94225::::::::120:71::::::|h[Stolen Celestial Insignia]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				636337, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[118785] = {
+				"|cff0070dd|Hitem:118785::::::::120:71::::::|h[Void Bound Knife]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				940810, -- [4]
+				2, -- [5]
+				15, -- [6]
+			},
+			[169926] = {
+				"|cffa335ee|Hitem:169926::::::::120:71::::::|h[Belt of Rising Guardians]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				2912993, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[168358] = {
+				"|cffa335ee|Hitem:168358::::::::120:71::::::|h[Chestguard of the Submerged]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				2909753, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[72988] = {
+				"|cffffffff|Hitem:72988::::::::120:71::::::|h[Windwool Cloth]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				629167, -- [4]
+				7, -- [5]
+				5, -- [6]
+			},
+			[170118] = {
+				"|cff1eff00|Hitem:170118::::::::120:71::::::|h[Centurion's Shortsword]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				3004118, -- [4]
+				2, -- [5]
+				7, -- [6]
+			},
+			[170182] = {
+				"|cff0070dd|Hitem:170182::::::::120:71::::::|h[Voltscale Shield]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				237456, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[127664] = {
+				"|cff0070dd|Hitem:127664::::::::120:71::::::|h[Grokmar's Greaves of Fortification]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				947555, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[168741] = {
+				"|cffa335ee|Hitem:168741::::::::120:71::::::|h[Forceful Refined Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[169352] = {
+				"|cff0070dd|Hitem:169352::::::::120:71::::::|h[Pearlescent Glimmershell]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2027919, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[169927] = {
+				"|cffa335ee|Hitem:169927::::::::120:71::::::|h[Deepcaller's Clasp]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				2909745, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[170502] = {
+				"|cffa335ee|Hitem:170502::::::::120:71::::::|h[Waterlogged Toolbox]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1529271, -- [4]
+				0, -- [5]
+				0, -- [6]
+			},
+			[127313] = {
+				"|cff0070dd|Hitem:127313::::::::120:71::::::|h[Org'mok's Riding Chaps]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				960042, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[170119] = {
+				"|cff1eff00|Hitem:170119::::::::120:71::::::|h[Slithershell Warglaive]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				2904097, -- [4]
+				2, -- [5]
+				9, -- [6]
+			},
+			[168650] = {
+				"|cffffffff|Hitem:168650::::::::120:71::::::|h[Cragscale]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2032177, -- [4]
+				7, -- [5]
+				6, -- [6]
+			},
+			[161049] = {
+				"|cff0070dd|Hitem:161049::::::::120:71::::::|h[Ferocious Devilsaur Legwraps]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				1762579, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[94226] = {
+				"|cff0070dd|Hitem:94226::::::::120:71::::::|h[Stolen Klaxxi Insignia]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				646377, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[87615] = {
+				"|cff0070dd|Hitem:87615::::::::120:71::::::|h[Yakwasher's Bracers]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				604460, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169417] = {
+				"|cff1eff00|Hitem:169417::::::::120:71::::::|h[Reefwalker Trousers]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				2915289, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[119361] = {
+				"|cff0070dd|Hitem:119361::::::::120:71::::::|h[Thorn-Knuckled Gloves]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				960147, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[119393] = {
+				"|cff0070dd|Hitem:119393::::::::120:71::::::|h[Searing Shadowflame Axe]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				939256, -- [4]
+				2, -- [5]
+				0, -- [6]
+			},
+			[170120] = {
+				"|cff1eff00|Hitem:170120::::::::120:71::::::|h[Handmaiden's Longstaff]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				2921481, -- [4]
+				2, -- [5]
+				10, -- [6]
+			},
+			[169673] = {
+				"|cff1eff00|Hitem:169673::::::::120:71::::::|h[Blue Paint Filled Bladder]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1567722, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[169226] = {
+				"|cff0070dd|Hitem:169226::::::::120:71::::::|h[Torn Sheet Music]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1392954, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[168303] = {
+				"|cffffffff|Hitem:168303::::::::120:71::::::|h[Rubbery Flank]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				3007465, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[119438] = {
+				"|cff1eff00|Hitem:119438::::::::120:71::::::|h[Automated Critter Defense Cannon]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				346991, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169418] = {
+				"|cff1eff00|Hitem:169418::::::::120:71::::::|h[Reefwalker Monnion]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				2915290, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[169482] = {
+				"|cffa335ee|Hitem:169482::::::::120:71::::::|h[Benthic Leggings]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1002879, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[170505] = {
+				"|cffa335ee|Hitem:170505::::::::120:71::::::|h[Grimy Manapearl Bracelet]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				415050, -- [4]
+				0, -- [5]
+				0, -- [6]
+			},
+			[169675] = {
+				"|cff1eff00|Hitem:169675::::::::120:71::::::|h[Orange Paint Filled Bladder]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1567722, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[169674] = {
+				"|cff1eff00|Hitem:169674::::::::120:71::::::|h[Green Paint Filled Bladder]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1567722, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[169227] = {
+				"|cffffffff|Hitem:169227::::::::120:71::::::|h[Irradiated Bolts]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133008, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[94227] = {
+				"|cff0070dd|Hitem:94227::::::::120:71::::::|h[Stolen Golden Lotus Insignia]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				643910, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[87616] = {
+				"|cff0070dd|Hitem:87616::::::::120:71::::::|h[Mountain Trailblazer's Cuffs]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				604460, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169419] = {
+				"|cff1eff00|Hitem:169419::::::::120:71::::::|h[Reefwalker Chain]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				2915282, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[108631] = {
+				"|cff0070dd|Hitem:108631::::::::120:71::::::|h[Crashin' Thrashin' Roller Controller]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				879998, -- [4]
+				15, -- [5]
+				3, -- [6]
+			},
+			[119394] = {
+				"|cff0070dd|Hitem:119394::::::::120:71::::::|h[Kurlosh's Kidneyslicer]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				978218, -- [4]
+				2, -- [5]
+				15, -- [6]
+			},
+			[169611] = {
+				"|cff1eff00|Hitem:169611::::::::120:71::::::|h[Recipe: Zin'anthid]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1387621, -- [4]
+				9, -- [5]
+				0, -- [6]
+			},
+			[170186] = {
+				"|cff1eff00|Hitem:170186::::::::120:71::::::|h[Abyss Pearl]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				463858, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169228] = {
+				"|cff1eff00|Hitem:169228::::::::120:71::::::|h[Hazardous Container]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				237030, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[118660] = {
+				"|cffa335ee|Hitem:118660::::::::120:71::::::|h[Thek'talon's Talon]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1029744, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[87628] = {
+				"|cff0070dd|Hitem:87628::::::::120:71::::::|h[Spinebreaker Chestpiece]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				615168, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169420] = {
+				"|cff1eff00|Hitem:169420::::::::120:71::::::|h[Reefwalker Coils]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				2915284, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[86574] = {
+				"|cff0070dd|Hitem:86574::::::::120:71::::::|h[Elixir of Ancient Knowledge]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				236884, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[127315] = {
+				"|cff0070dd|Hitem:127315::::::::120:71::::::|h[Glowing Felskull Belt]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				801133, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[154793] = {
+				"|cff9d9d9d|Hitem:154793::::::::120:71::::::|h[Unraveling Cloth Amice]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				135040, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[81413] = {
+				"|cffffffff|Hitem:81413::::::::120:71::::::|h[Skewered Peanut Chicken]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				651877, -- [4]
+				0, -- [5]
+				5, -- [6]
+			},
+			[169229] = {
+				"|cffffffff|Hitem:169229::::::::120:71::::::|h[Exhaust Aromatics]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133020, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169401] = {
+				"|cff1eff00|Hitem:169401::::::::120:71::::::|h[Deeptide Legwraps]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				2973330, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[87617] = {
+				"|cff0070dd|Hitem:87617::::::::120:71::::::|h[Bracers of the Serene Mountaintop]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				609747, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[169421] = {
+				"|cff1eff00|Hitem:169421::::::::120:71::::::|h[Wavecrash Chestplate]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				2966767, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169612] = {
+				"|cffffffff|Hitem:169612::::::::120:71::::::|h[Recipe: Osmenite Deposit]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1387621, -- [4]
+				9, -- [5]
+				0, -- [6]
+			},
+			[158839] = {
+				"|cff9d9d9d|Hitem:158839::::::::120:71::::::|h[Thick Crab Claw]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1508493, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169613] = {
+				"|cffffffff|Hitem:169613::::::::120:71::::::|h[Recipe: Osmenite Seam]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1387621, -- [4]
+				9, -- [5]
+				0, -- [6]
+			},
+			[170188] = {
+				"|cff0070dd|Hitem:170188::::::::120:71::::::|h[Barnacled Bag of Goods]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133662, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169230] = {
+				"|cffffffff|Hitem:169230::::::::120:71::::::|h[Reflective Plating]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133022, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[168327] = {
+				"|cffa335ee|Hitem:168327::::::::120:71::::::|h[Chain Ignitercoil]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1405814, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[163959] = {
+				"|cffa335ee|Hitem:163959::::::::120:71::::::|h[Self-Rotating Dagger of Xing]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				1966587, -- [4]
+				2, -- [5]
+				15, -- [6]
+			},
+			[169422] = {
+				"|cff1eff00|Hitem:169422::::::::120:71::::::|h[Wavecrash Smashers]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				2966766, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[168081] = {
+				"|cffffffff|Hitem:168081::::::::120:71::::::|h[Brinestone Pickaxe]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1064765, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169167] = {
+				"|cff0070dd|Hitem:169167::::::::120:71::::::|h[Blueprint: Orange Spraybot]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[118661] = {
+				"|cffa335ee|Hitem:118661::::::::120:71::::::|h[Xelganak's Stinger]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				801003, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170189] = {
+				"|cff0070dd|Hitem:170189::::::::120:71::::::|h[Blind Eye]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1500930, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169231] = {
+				"|cff0070dd|Hitem:169231::::::::120:71::::::|h[Optical Override Drive]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				321487, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87618] = {
+				"|cff0070dd|Hitem:87618::::::::120:71::::::|h[Ice Encrusted Bracer]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				646760, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[169359] = {
+				"|cff0070dd|Hitem:169359::::::::120:71::::::|h[Spawn of Nalaada]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2027953, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[169423] = {
+				"|cff1eff00|Hitem:169423::::::::120:71::::::|h[Wavecrash Crushers]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				2966768, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169163] = {
+				"|cffa335ee|Hitem:169163::::::::120:71::::::|h[Silent Glider]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				2620777, -- [4]
+				15, -- [5]
+				5, -- [6]
+			},
+			[86575] = {
+				"|cff0070dd|Hitem:86575::::::::120:71::::::|h[Chalice of Secrets]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				305294, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[163948] = {
+				"|cffa335ee|Hitem:163948::::::::120:71::::::|h[Moarse's Coarse-Chain Gauntlets]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_HAND", -- [3]
+				422802, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[169168] = {
+				"|cff0070dd|Hitem:169168::::::::120:71::::::|h[Blueprint: Green Spraybot]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169232] = {
+				"|cffffffff|Hitem:169232::::::::120:71::::::|h[Dud Blast Canister]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1405814, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169407] = {
+				"|cff1eff00|Hitem:169407::::::::120:71::::::|h[Slithershell Mitts]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				2902642, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[159140] = {
+				"|cff9d9d9d|Hitem:159140::::::::120:71::::::|h[Lifeless Clay]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134111, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169424] = {
+				"|cff1eff00|Hitem:169424::::::::120:71::::::|h[Wavecrash Headguard]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HEAD", -- [3]
+				2966769, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169925] = {
+				"|cffa335ee|Hitem:169925::::::::120:71::::::|h[Serpentskin Splashers]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_FEET", -- [3]
+				2906594, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[163931] = {
+				"|cffa335ee|Hitem:163931::::::::120:71::::::|h[Chain Links of Fraying Awe]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				973881, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[127349] = {
+				"|cff0070dd|Hitem:127349::::::::120:71::::::|h[Silver Chitin Ring]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_FINGER", -- [3]
+				1043909, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[169169] = {
+				"|cff0070dd|Hitem:169169::::::::120:71::::::|h[Blueprint: Blue Spraybot]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169233] = {
+				"|cff1eff00|Hitem:169233::::::::120:71::::::|h[Infinite Loop Spring]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				134065, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87619] = {
+				"|cff0070dd|Hitem:87619::::::::120:71::::::|h[Terracotta Guardian's Bracer]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				615167, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169872] = {
+				"|cff0070dd|Hitem:169872::::::::120:71::::::|h[Irontide Lockbox Key]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				136058, -- [4]
+				13, -- [5]
+				0, -- [6]
+			},
+			[169425] = {
+				"|cff1eff00|Hitem:169425::::::::120:71::::::|h[Deeptide Robe]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				2973326, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[168802] = {
+				"|cff1eff00|Hitem:168802::::::::120:71::::::|h[Nazjatar Battle Commendation]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1594746, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169249] = {
+				"|cffffffff|Hitem:169249::::::::120:71::::::|h[Shark Tooth Necklace]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				338666, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87779] = {
+				"|cffffffff|Hitem:87779::::::::120:71::::::|h[Ancient Guo-Lai Cache Key]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				237379, -- [4]
+				13, -- [5]
+				0, -- [6]
+			},
+			[169170] = {
+				"|cff0070dd|Hitem:169170::::::::120:71::::::|h[Blueprint: Utility Mechanoclaw]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[168804] = {
+				"|cff0070dd|Hitem:168804::::::::120:71::::::|h[Powered Piscine Procurement Pole]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				2909707, -- [4]
+				2, -- [5]
+				20, -- [6]
+			},
+			[168340] = {
+				"|cffa335ee|Hitem:168340::::::::120:71::::::|h[Naga Ritualist's Mantle]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				2906601, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169873] = {
+				"|cff0070dd|Hitem:169873::::::::120:71::::::|h[Mechanized Supply Key]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				348541, -- [4]
+				13, -- [5]
+				0, -- [6]
+			},
+			[169426] = {
+				"|cff1eff00|Hitem:169426::::::::120:71::::::|h[Wavecrash Greaves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				2966770, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[170512] = {
+				"|cffffffff|Hitem:170512::::::::120:71::::::|h[Lesser Benthic Arcanocrystal]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1033170, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[127318] = {
+				"|cff0070dd|Hitem:127318::::::::120:71::::::|h[Iron Cleated Warboots]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_FEET", -- [3]
+				522988, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169363] = {
+				"|cff0070dd|Hitem:169363::::::::120:71::::::|h[Amethyst Softshell]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2530493, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[170193] = {
+				"|cff1eff00|Hitem:170193::::::::120:71::::::|h[Sea Totem]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				971076, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169235] = {
+				"|cff1eff00|Hitem:169235::::::::120:71::::::|h[Confusing Spring Box]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				132997, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[86566] = {
+				"|cff0070dd|Hitem:86566::::::::120:71::::::|h[Forager's Gloves]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				621748, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[87620] = {
+				"|cff0070dd|Hitem:87620::::::::120:71::::::|h[Bracers of the Frozen Summit]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				615167, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169427] = {
+				"|cff1eff00|Hitem:169427::::::::120:71::::::|h[Wavecrash Shoulderplates]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				2966771, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[128794] = {
+				"|cff0070dd|Hitem:128794::::::::120:71::::::|h[Sack of Spectral Spiders]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133666, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170066] = {
+				"|cff1eff00|Hitem:170066::::::::120:71::::::|h[Skinning Technique: Dredged Leather]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1387621, -- [4]
+				9, -- [5]
+				0, -- [6]
+			},
+			[124555] = {
+				"|cff0070dd|Hitem:124555::::::::120:71::::::|h[Baleful Leggings]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017539, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[170194] = {
+				"|cff1eff00|Hitem:170194::::::::120:71::::::|h[Storm Totem]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1020304, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169236] = {
+				"|cff1eff00|Hitem:169236::::::::120:71::::::|h[Latch-and-Lock Trigger]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1405812, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169400] = {
+				"|cff1eff00|Hitem:169400::::::::120:71::::::|h[Deeptide Cover]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HEAD", -- [3]
+				2973329, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169173] = {
+				"|cff0070dd|Hitem:169173::::::::120:71::::::|h[Blueprint: Anti-Gravity Pack]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169428] = {
+				"|cff1eff00|Hitem:169428::::::::120:71::::::|h[Wavecrash Buckle]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				2966765, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[168215] = {
+				"|cffffffff|Hitem:168215::::::::120:71::::::|h[Machined Gear Assembly]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				986486, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[163935] = {
+				"|cffa335ee|Hitem:163935::::::::120:71::::::|h[Landoi's Scrutiny]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_TRINKET", -- [3]
+				1100023, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[170196] = {
+				"|cff0070dd|Hitem:170196::::::::120:71::::::|h[Shirakess Warning Sign]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134426, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170195] = {
+				"|cff0070dd|Hitem:170195::::::::120:71::::::|h[Voidcaster's Supply Bag]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133667, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169237] = {
+				"|cffffffff|Hitem:169237::::::::120:71::::::|h[Pulsating Marble]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2057562, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[86567] = {
+				"|cff0070dd|Hitem:86567::::::::120:71::::::|h[Yaungol Wind Chime]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_TRINKET", -- [3]
+				458244, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[87621] = {
+				"|cff0070dd|Hitem:87621::::::::120:71::::::|h[Wristguards of Great Fortune]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				615167, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169429] = {
+				"|cff1eff00|Hitem:169429::::::::120:71::::::|h[Wavecrash Wristguards]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				2973479, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[95350] = {
+				"|cffffffff|Hitem:95350::::::::120:71::::::|h[Incantation of Vu]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				531009, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170068] = {
+				"|cff0070dd|Hitem:170068::::::::120:71::::::|h[Mardivas's Magnificent Desalinating Pouch]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				132825, -- [4]
+				0, -- [5]
+				5, -- [6]
+			},
+			[119431] = {
+				"|cff1eff00|Hitem:119431::::::::120:71::::::|h[Servant of Demidos]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				136221, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[169174] = {
+				"|cff0070dd|Hitem:169174::::::::120:71::::::|h[Blueprint: Rustbolt Pocket Turret]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169238] = {
+				"|cff0070dd|Hitem:169238::::::::120:71::::::|h[Modified Radio Receiver]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1405806, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[167012] = {
+				"|cff1eff00|Hitem:167012::::::::120:71::::::|h[Brinestone Pickaxe]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1064765, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[169366] = {
+				"|cff0070dd|Hitem:169366::::::::120:71::::::|h[Wriggler]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2763647, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[158863] = {
+				"|cff9d9d9d|Hitem:158863::::::::120:71::::::|h[Chitinous Exoskeleton]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1499546, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169347] = {
+				"|cff0070dd|Hitem:169347::::::::120:71::::::|h[Judgment of Mechagon]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133866, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169886] = {
+				"|cff0070dd|Hitem:169886::::::::120:71::::::|h[Spraybot 0D]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2735924, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[169393] = {
+				"|cff0070dd|Hitem:169393::::::::120:71::::::|h[Arachnoid Skitterbot]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2493081, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[86568] = {
+				"|cff0070dd|Hitem:86568::::::::120:71::::::|h[Mr. Smite's Brass Compass]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				443379, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[168217] = {
+				"|cffffffff|Hitem:168217::::::::120:71::::::|h[Hardened Spring]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134065, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[94233] = {
+				"|cffffffff|Hitem:94233::::::::120:71::::::|h[Incantation of Deng]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				531009, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[87622] = {
+				"|cff0070dd|Hitem:87622::::::::120:71::::::|h[Yoke of Niuzao]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_NECK", -- [3]
+				645519, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[169431] = {
+				"|cff1eff00|Hitem:169431::::::::120:71::::::|h[Reefwalker Cape]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				2915285, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169495] = {
+				"|cffa335ee|Hitem:169495::::::::120:71::::::|h[Recipe: Superior Battle Potion of Agility]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1387622, -- [4]
+				9, -- [5]
+				6, -- [6]
+			},
+			[169379] = {
+				"|cff1eff00|Hitem:169379::::::::120:71::::::|h[Snowsoft Nibbler]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				2205588, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[168155] = {
+				"|cffffffff|Hitem:168155::::::::120:71::::::|h[Chum]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				350570, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[120170] = {
+				"|cffffffff|Hitem:120170::::::::120:71::::::|h[Partially-Digested Bag]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133662, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[169496] = {
+				"|cffa335ee|Hitem:169496::::::::120:71::::::|h[Recipe: Superior Steelskin Potion]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1387622, -- [4]
+				9, -- [5]
+				6, -- [6]
+			},
+			[114996] = {
+				"|cffffffff|Hitem:114996::::::::120:71::::::|h[Blood Stone]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134420, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[170200] = {
+				"|cff1eff00|Hitem:170200::::::::120:71::::::|h[Seastorm Totem]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				538570, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[170199] = {
+				"|cff0070dd|Hitem:170199::::::::120:71::::::|h[Zanj'ir Weapon Rack]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2735968, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[113492] = {
+				"|cffffffff|Hitem:113492::::::::120:71::::::|h[Frostfire Mission Orders]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				237386, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169241] = {
+				"|cffffffff|Hitem:169241::::::::120:71::::::|h[Family Jewelry]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133299, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169689] = {
+				"|cff1eff00|Hitem:169689::::::::120:71::::::|h[Vinyl: Mimiron's Brainstorm]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				574567, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169688] = {
+				"|cff1eff00|Hitem:169688::::::::120:71::::::|h[Vinyl: Gnomeregan Forever]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				574567, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[97268] = {
+				"|cff0070dd|Hitem:97268::::::::120:71::::::|h[Tome of Valor]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				354435, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[86569] = {
+				"|cff0070dd|Hitem:86569::::::::120:71::::::|h[Crystal of Insanity]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				132885, -- [4]
+				0, -- [5]
+				1, -- [6]
+			},
+			[167836] = {
+				"|cff0070dd|Hitem:167836::::::::120:71::::::|h[Blueprint: Canned Minnows]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169433] = {
+				"|cff1eff00|Hitem:169433::::::::120:71::::::|h[Wavecrash Greatcloak]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				2967512, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169497] = {
+				"|cffa335ee|Hitem:169497::::::::120:71::::::|h[Recipe: Superior Battle Potion of Intellect]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1387622, -- [4]
+				9, -- [5]
+				6, -- [6]
+			},
+			[163940] = {
+				"|cffa335ee|Hitem:163940::::::::120:71::::::|h[Extra-Light Light Emitting Cord]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				414282, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[168603] = {
+				"|cffa335ee|Hitem:168603::::::::120:71::::::|h[Cloak of Restless Spirits]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				2912996, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[103624] = {
+				"|cff0070dd|Hitem:103624::::::::120:71::::::|h[Treasures of the Vale]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				647735, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[152698] = {
+				"|cffffffff|Hitem:152698::::::::120:71::::::|h[Grimestone Stew]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1387641, -- [4]
+				0, -- [5]
+				5, -- [6]
+			},
+			[169225] = {
+				"|cff1eff00|Hitem:169225::::::::120:71::::::|h[Unstoppable Countdown Clock]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				132995, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[158770] = {
+				"|cff9d9d9d|Hitem:158770::::::::120:71::::::|h[Gelatinous Roe]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1387651, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169434] = {
+				"|cff1eff00|Hitem:169434::::::::120:71::::::|h[Slithershell Cloak]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				2902640, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169498] = {
+				"|cffa335ee|Hitem:169498::::::::120:71::::::|h[Recipe: Superior Battle Potion of Stamina]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1387622, -- [4]
+				9, -- [5]
+				6, -- [6]
+			},
+			[169690] = {
+				"|cff1eff00|Hitem:169690::::::::120:71::::::|h[Vinyl: Battle of Gnomeregan]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				574567, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87625] = {
+				"|cff0070dd|Hitem:87625::::::::120:71::::::|h[Congealed Mist Amulet]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_NECK", -- [3]
+				632848, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[170201] = {
+				"|cff1eff00|Hitem:170201::::::::120:71::::::|h[Deeptide Scroll]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HOLDABLE", -- [3]
+				2830981, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[127418] = {
+				"|cff0070dd|Hitem:127418::::::::120:71::::::|h[Soothing Incense Brazier]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_TRINKET", -- [3]
+				135262, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[86570] = {
+				"|cff0070dd|Hitem:86570::::::::120:71::::::|h[Crate of Kidnapped Puppies]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_TRINKET", -- [3]
+				132762, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[87624] = {
+				"|cff0070dd|Hitem:87624::::::::120:71::::::|h[Yaungol Mist-Shaman's Amulet]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_NECK", -- [3]
+				645513, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[128025] = {
+				"|cff0070dd|Hitem:128025::::::::120:71::::::|h[Rattling Iron Cage]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				132599, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169499] = {
+				"|cffa335ee|Hitem:169499::::::::120:71::::::|h[Recipe: Superior Battle Potion of Strength]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				1387622, -- [4]
+				9, -- [5]
+				6, -- [6]
+			},
+			[119402] = {
+				"|cff0070dd|Hitem:119402::::::::120:71::::::|h[Gug'tol's Imp Imperator]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				943257, -- [4]
+				2, -- [5]
+				7, -- [6]
+			},
+			[112791] = {
+				"|cffffffff|Hitem:112791::::::::120:71::::::|h[Sargerei Cowl]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133129, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[169691] = {
+				"|cff1eff00|Hitem:169691::::::::120:71::::::|h[Vinyl: Depths of Ulduar]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				574567, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[124550] = {
+				"|cff0070dd|Hitem:124550::::::::120:71::::::|h[Baleful Bracers]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017534, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[113493] = {
+				"|cffffffff|Hitem:113493::::::::120:71::::::|h[Spires of Arak Mission Orders]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				237384, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87639] = {
+				"|cff0070dd|Hitem:87639::::::::120:71::::::|h[Tattered Guo-Lai Dynasty Cloak]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				625401, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[169373] = {
+				"|cff0070dd|Hitem:169373::::::::120:71::::::|h[Brinestone Algan]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				960692, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[113494] = {
+				"|cffffffff|Hitem:113494::::::::120:71::::::|h[Shadowmoon Mission Orders]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				237383, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[163943] = {
+				"|cffa335ee|Hitem:163943::::::::120:71::::::|h[Neleimour's Patterned Leggings]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				457940, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[127323] = {
+				"|cff0070dd|Hitem:127323::::::::120:71::::::|h[Bracers of Endless Suffering]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				533752, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[169692] = {
+				"|cff1eff00|Hitem:169692::::::::120:71::::::|h[Vinyl: Triumph of Gnomeregan]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				574567, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[163942] = {
+				"|cffa335ee|Hitem:163942::::::::120:71::::::|h[Slippers of the Unruly Fairies]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_FEET", -- [3]
+				1627511, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[86571] = {
+				"|cff0070dd|Hitem:86571::::::::120:71::::::|h[Kang's Bindstone]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134458, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[168351] = {
+				"|cffa335ee|Hitem:168351::::::::120:71::::::|h[Spitcharged Shoulderguards]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				2913001, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[169435] = {
+				"|cff1eff00|Hitem:169435::::::::120:71::::::|h[Deeptide Drape]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				2973333, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[119371] = {
+				"|cff0070dd|Hitem:119371::::::::120:71::::::|h[Mantle of the Destroyer]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				960043, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[119403] = {
+				"|cff0070dd|Hitem:119403::::::::120:71::::::|h[Sargerei Soulbiter]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				942251, -- [4]
+				2, -- [5]
+				7, -- [6]
+			},
+			[119435] = {
+				"|cff1eff00|Hitem:119435::::::::120:71::::::|h[Path of Flame]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				135805, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[87623] = {
+				"|cff0070dd|Hitem:87623::::::::120:71::::::|h[Razor-Sharp Chitin Choker]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_NECK", -- [3]
+				645262, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[169246] = {
+				"|cffffffff|Hitem:169246::::::::120:71::::::|h[Strangely Seasoned Meat]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1046249, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169369] = {
+				"|cff0070dd|Hitem:169369::::::::120:71::::::|h[Sandkeep]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				796636, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[169595] = {
+				"|cff1eff00|Hitem:169595::::::::120:71::::::|h[Scorched Data Disc]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				133862, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[128793] = {
+				"|cffffffff|Hitem:128793::::::::120:71::::::|h[Sack of Spiders]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133640, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[86573] = {
+				"|cff0070dd|Hitem:86573::::::::120:71::::::|h[Shard of Archstone]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				135241, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[128346] = {
+				"|cffffffff|Hitem:128346::::::::120:71::::::|h[Fel-Corrupted Apexis Fragment]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133263, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169375] = {
+				"|cff0070dd|Hitem:169375::::::::120:71::::::|h[Coral Lashling]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2027890, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[168161] = {
+				"|cff1eff00|Hitem:168161::::::::120:71::::::|h[Molted Shell]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1508497, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169247] = {
+				"|cffffffff|Hitem:169247::::::::120:71::::::|h[Throwing Rocks]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1044087, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169239] = {
+				"|cff0070dd|Hitem:169239::::::::120:71::::::|h[Unknowable Cube]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2000858, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87626] = {
+				"|cff0070dd|Hitem:87626::::::::120:71::::::|h[Suna's Shattered Locket]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_NECK", -- [3]
+				645514, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[152576] = {
+				"|cffffffff|Hitem:152576::::::::120:71::::::|h[Tidespray Linen]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2067081, -- [4]
+				7, -- [5]
+				5, -- [6]
+			},
+			[160137] = {
+				"|cff1eff00|Hitem:160137::::::::120:71::::::|h[Ravascale Belt]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				1690118, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[102541] = {
+				"|cff1eff00|Hitem:102541::::::::120:71::::::|h[Aged Balsamic Vinegar]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				132797, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[168216] = {
+				"|cffffffff|Hitem:168216::::::::120:71::::::|h[Tempered Plating]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				463887, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[159475] = {
+				"|cff1eff00|Hitem:159475::::::::120:71::::::|h[Shipwrecker Axe]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				1698637, -- [4]
+				2, -- [5]
+				0, -- [6]
+			},
+			[169248] = {
+				"|cffffffff|Hitem:169248::::::::120:71::::::|h[Broken Sandals]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				132579, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[170067] = {
+				"|cff1eff00|Hitem:170067::::::::120:71::::::|h[Skinning Technique: Cragscale]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				1387621, -- [4]
+				9, -- [5]
+				0, -- [6]
+			},
+			[169376] = {
+				"|cff0070dd|Hitem:169376::::::::120:71::::::|h[Skittering Eel]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133898, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[152577] = {
+				"|cff1eff00|Hitem:152577::::::::120:71::::::|h[Deep Sea Satin]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				2067080, -- [4]
+				7, -- [5]
+				5, -- [6]
+			},
+			[128315] = {
+				"|cff0070dd|Hitem:128315::::::::120:71::::::|h[Medallion of the Legion]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				237560, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[163947] = {
+				"|cffa335ee|Hitem:163947::::::::120:71::::::|h[Robust Legwraps of D'nusa]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				422806, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[167077] = {
+				"|cff1eff00|Hitem:167077::::::::120:71::::::|h[Scrying Stone]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				528693, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[170192] = {
+				"|cff1eff00|Hitem:170192::::::::120:71::::::|h[Mudwrap]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				236155, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[159540] = {
+				"|cff1eff00|Hitem:159540::::::::120:71::::::|h[Coralshell Hammer]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				1695564, -- [4]
+				2, -- [5]
+				4, -- [6]
+			},
+			[87595] = {
+				"|cff0070dd|Hitem:87595::::::::120:71::::::|h[Gloves of Burrow Spelunking]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				609749, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[87627] = {
+				"|cff0070dd|Hitem:87627::::::::120:71::::::|h[Kunchong Carapace Chestguard]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				615168, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[128348] = {
+				"|cff0070dd|Hitem:128348::::::::120:71::::::|h[Baleful Spaulders]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017540, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[169409] = {
+				"|cff1eff00|Hitem:169409::::::::120:71::::::|h[Slithershell Leggings]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				2902644, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[102542] = {
+				"|cff1eff00|Hitem:102542::::::::120:71::::::|h[Ancient Pandaren Spices]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				133590, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[169122] = {
+				"|cff9d9d9d|Hitem:169122::::::::120:71::::::|h[Gibraltian Monkey Wrench]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134520, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[170091] = {
+				"|cffa335ee|Hitem:170091::::::::120:71::::::|h[Willbinder's Halberd]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				2735992, -- [4]
+				2, -- [5]
+				6, -- [6]
+			},
+			[169250] = {
+				"|cffffffff|Hitem:169250::::::::120:71::::::|h[Crude Eating Utensil]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				794853, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[167059] = {
+				"|cff1eff00|Hitem:167059::::::::120:71::::::|h[Chum]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				350570, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[128252] = {
+				"|cff0070dd|Hitem:128252::::::::120:71::::::|h[Equipment Blueprint: True Iron Rudder]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1001491, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[86594] = {
+				"|cff0070dd|Hitem:86594::::::::120:71::::::|h[Helpful Wikky's Whistle]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				132161, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[169130] = {
+				"|cff9d9d9d|Hitem:169130::::::::120:71::::::|h[Bent Cogwheel]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134064, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[127326] = {
+				"|cff0070dd|Hitem:127326::::::::120:71::::::|h[Fel Destroyer Crossbow]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				942780, -- [4]
+				2, -- [5]
+				18, -- [6]
+			},
+			[169123] = {
+				"|cff9d9d9d|Hitem:169123::::::::120:71::::::|h[Functional Fiddleswitch]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				1888317, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169224] = {
+				"|cffffffff|Hitem:169224::::::::120:71::::::|h[Big Red Button]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				986488, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169251] = {
+				"|cffffffff|Hitem:169251::::::::120:71::::::|h[Ancient Insect]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				516338, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87596] = {
+				"|cff0070dd|Hitem:87596::::::::120:71::::::|h[Mudmug's Mitts]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				646762, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[167846] = {
+				"|cff0070dd|Hitem:167846::::::::120:71::::::|h[Blueprint: Mechano-Treat]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[166888] = {
+				"|cff1eff00|Hitem:166888::::::::120:71::::::|h[Germinating Seed]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				464030, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[113294] = {
+				"|cffffffff|Hitem:113294::::::::120:71::::::|h[Sargerei Insignia]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				136156, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[102543] = {
+				"|cff1eff00|Hitem:102543::::::::120:71::::::|h[Aged Mogu'shan Cheese]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				133949, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[169124] = {
+				"|cff9d9d9d|Hitem:169124::::::::120:71::::::|h[Decorational Whirlycog]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				2437246, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[168908] = {
+				"|cff0070dd|Hitem:168908::::::::120:71::::::|h[Blueprint: Experimental Adventurer Augment]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169252] = {
+				"|cffffffff|Hitem:169252::::::::120:71::::::|h[Resonant Pearl]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				464023, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[112891] = {
+				"|cffffffff|Hitem:112891::::::::120:71::::::|h[Sargerei Robe]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				132651, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[167847] = {
+				"|cff0070dd|Hitem:167847::::::::120:71::::::|h[Blueprint: Ultrasafe Transporter: Mechagon]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[170466] = {
+				"|cffa335ee|Hitem:170466::::::::120:71::::::|h[Junkyard Motivator]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				2618150, -- [4]
+				2, -- [5]
+				10, -- [6]
+			},
+			[169928] = {
+				"|cffa335ee|Hitem:169928::::::::120:71::::::|h[Wekemara's Warboots]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_FEET", -- [3]
+				2901579, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[163951] = {
+				"|cffa335ee|Hitem:163951::::::::120:71::::::|h[Cinch of the Sainted General]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				529876, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[170147] = {
+				"|cff1eff00|Hitem:170147::::::::120:71::::::|h[Paint Bottle: Goblin Green]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				463860, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[169416] = {
+				"|cff1eff00|Hitem:169416::::::::120:71::::::|h[Reefwalker Coif]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HEAD", -- [3]
+				2915288, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[169253] = {
+				"|cffffffff|Hitem:169253::::::::120:71::::::|h[Shell Horn]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				1498844, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87597] = {
+				"|cff0070dd|Hitem:87597::::::::120:71::::::|h[Gloves of Congealed Mist]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				604462, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[87629] = {
+				"|cff0070dd|Hitem:87629::::::::120:71::::::|h[Chestplate of Manifest Dread]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				615168, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[170467] = {
+				"|cffa335ee|Hitem:170467::::::::120:71::::::|h[Whirring Chainblade]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				2618146, -- [4]
+				2, -- [5]
+				7, -- [6]
+			},
+			[158778] = {
+				"|cff9d9d9d|Hitem:158778::::::::120:71::::::|h[Mucose Tendril]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134895, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[119407] = {
+				"|cff0070dd|Hitem:119407::::::::120:71::::::|h[Cloudsplitter Greatstaff]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				974957, -- [4]
+				2, -- [5]
+				6, -- [6]
+			},
+			[169126] = {
+				"|cff9d9d9d|Hitem:169126::::::::120:71::::::|h[Supercharged Graphics Cog]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				321487, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[75014] = {
+				"|cffffffff|Hitem:75014::::::::120:71::::::|h[Raw Crocolisk Belly]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				644276, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[168743] = {
+				"|cffa335ee|Hitem:168743::::::::120:71::::::|h[Forceful Efficient Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[169318] = {
+				"|cffa335ee|Hitem:169318::::::::120:71::::::|h[Shockbiter's Fang]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_TRINKET", -- [3]
+				1526597, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[169382] = {
+				"|cff0070dd|Hitem:169382::::::::120:71::::::|h[Lost Robogrip]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1521022, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+			[170468] = {
+				"|cffa335ee|Hitem:170468::::::::120:71::::::|h[Supervolt Zapper]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				2735166, -- [4]
+				2, -- [5]
+				3, -- [6]
+			},
+			[86590] = {
+				"|cff0070dd|Hitem:86590::::::::120:71::::::|h[Essence of the Breeze]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				463565, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[94159] = {
+				"|cff1eff00|Hitem:94159::::::::120:71::::::|h[Small Bag of Zandalari Supplies]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				133642, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169127] = {
+				"|cff9d9d9d|Hitem:169127::::::::120:71::::::|h[Tastefully Scented Grease]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				135447, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[155610] = {
+				"|cff9d9d9d|Hitem:155610::::::::120:71::::::|h[Stinging Nettle]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				134439, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169255] = {
+				"|cffffffff|Hitem:169255::::::::120:71::::::|h[Tuft of Red Fur]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				237421, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[87598] = {
+				"|cff0070dd|Hitem:87598::::::::120:71::::::|h[Monstrous Silk Gloves]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				604462, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[87630] = {
+				"|cff0070dd|Hitem:87630::::::::120:71::::::|h[Chestpiece of Twinkling Stars]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				646761, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[127308] = {
+				"|cff0070dd|Hitem:127308::::::::120:71::::::|h[Zoug's Lifting Belt]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				940654, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[169404] = {
+				"|cff1eff00|Hitem:169404::::::::120:71::::::|h[Deeptide Cuffs]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				2973325, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[170086] = {
+				"|cff9d9d9d|Hitem:170086::::::::120:71::::::|h[Coral-Flecked Chalice]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132789, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[169128] = {
+				"|cff9d9d9d|Hitem:169128::::::::120:71::::::|h[Chilled Heating Block]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				236869, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[124561] = {
+				"|cff0070dd|Hitem:124561::::::::120:71::::::|h[Baleful Trinket]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				646988, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[168745] = {
+				"|cffa335ee|Hitem:168745::::::::120:71::::::|h[Optimized Effective Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[112893] = {
+				"|cffffffff|Hitem:112893::::::::120:71::::::|h[Sargerei Slippers]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				457774, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[128255] = {
+				"|cff0070dd|Hitem:128255::::::::120:71::::::|h[Equipment Blueprint: Ice Cutter]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1001491, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[170470] = {
+				"|cffa335ee|Hitem:170470::::::::120:71::::::|h[Reinforced Grease Deflector]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_SHIELD", -- [3]
+				2902485, -- [4]
+				4, -- [5]
+				6, -- [6]
+			},
+			[168490] = {
+				"|cff0070dd|Hitem:168490::::::::120:71::::::|h[Blueprint: Protocol Transference Device]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[163955] = {
+				"|cffa335ee|Hitem:163955::::::::120:71::::::|h[Khayurn, Blade of the Wolves]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				841309, -- [4]
+				2, -- [5]
+				1, -- [6]
+			},
+			[169129] = {
+				"|cff9d9d9d|Hitem:169129::::::::120:71::::::|h[Lovingly Worn Wrench]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				2437249, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[168062] = {
+				"|cff0070dd|Hitem:168062::::::::120:71::::::|h[Blueprint: Rustbolt Gramophone]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2915721, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[168746] = {
+				"|cffa335ee|Hitem:168746::::::::120:71::::::|h[Optimized Adaptable Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[87599] = {
+				"|cff0070dd|Hitem:87599::::::::120:71::::::|h[Grower's Gloves]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				609749, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[87631] = {
+				"|cff0070dd|Hitem:87631::::::::120:71::::::|h[Jiao-Skin Tunic]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				609748, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[81412] = {
+				"|cffffffff|Hitem:81412::::::::120:71::::::|h[Blanched Needle Mushrooms]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				651487, -- [4]
+				0, -- [5]
+				5, -- [6]
+			},
+			[119377] = {
+				"|cff0070dd|Hitem:119377::::::::120:71::::::|h[Void-Touched Diamond Necklace]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_NECK", -- [3]
+				1016815, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[163956] = {
+				"|cffa335ee|Hitem:163956::::::::120:71::::::|h[Treiya's Shining Pillar]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				1617802, -- [4]
+				2, -- [5]
+				10, -- [6]
+			},
+			[124551] = {
+				"|cff0070dd|Hitem:124551::::::::120:71::::::|h[Baleful Tunic]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1017536, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[159756] = {
+				"|cff9d9d9d|Hitem:159756::::::::120:71::::::|h[Depleted Azerite]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				237007, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[168747] = {
+				"|cffa335ee|Hitem:168747::::::::120:71::::::|h[Performant Adaptable Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[167931] = {
+				"|cff0070dd|Hitem:167931::::::::120:71::::::|h[Mechagonian Sawblades]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				134427, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[128256] = {
+				"|cff0070dd|Hitem:128256::::::::120:71::::::|h[Equipment Blueprint: Gyroscopic Internal Stabilizer]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				1001491, -- [4]
+				0, -- [5]
+				8, -- [6]
+			},
+			[158792] = {
+				"|cff9d9d9d|Hitem:158792::::::::120:71::::::|h[Digestive Acid]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132108, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[154899] = {
+				"|cffffffff|Hitem:154899::::::::120:71::::::|h[Thick Paleo Steak]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				2066022, -- [4]
+				7, -- [5]
+				8, -- [6]
+			},
+			[127330] = {
+				"|cff0070dd|Hitem:127330::::::::120:71::::::|h[The Black Fang]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				306487, -- [4]
+				2, -- [5]
+				13, -- [6]
+			},
+			[170094] = {
+				"|cffa335ee|Hitem:170094::::::::120:71::::::|h[Temple Guardian's Saber]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				3004118, -- [4]
+				2, -- [5]
+				7, -- [6]
+			},
+			[81404] = {
+				"|cffffffff|Hitem:81404::::::::120:71::::::|h[Dried Needle Mushrooms]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				651488, -- [4]
+				0, -- [5]
+				5, -- [6]
+			},
+			[168748] = {
+				"|cffa335ee|Hitem:168748::::::::120:71::::::|h[Performant Refined Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[86578] = {
+				"|cff0070dd|Hitem:86578::::::::120:71::::::|h[Eternal Warrior's Sigil]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				133381, -- [4]
+				15, -- [5]
+				4, -- [6]
+			},
+			[87632] = {
+				"|cff0070dd|Hitem:87632::::::::120:71::::::|h[Fearsworn Chestpiece]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				646761, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[87602] = {
+				"|cff0070dd|Hitem:87602::::::::120:71::::::|h[Grain Warden's Gauntlets]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HAND", -- [3]
+				615169, -- [4]
+				4, -- [5]
+				4, -- [6]
+			},
+			[119378] = {
+				"|cff0070dd|Hitem:119378::::::::120:71::::::|h[Socrethar's Stone]|h|r", -- [1]
+				3, -- [2]
+				"INVTYPE_HOLDABLE", -- [3]
+				134540, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[163958] = {
+				"|cffa335ee|Hitem:163958::::::::120:71::::::|h[Freezie's Bubble Popper]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				968649, -- [4]
+				2, -- [5]
+				15, -- [6]
+			},
+			[169132] = {
+				"|cff9d9d9d|Hitem:169132::::::::120:71::::::|h[Cracked Gyroscope]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132998, -- [4]
+				15, -- [5]
+				0, -- [6]
+			},
+			[163966] = {
+				"|cffa335ee|Hitem:163966::::::::120:71::::::|h[Miss Miggi's Towering Spire]|h|r", -- [1]
+				4, -- [2]
+				"INVTYPE_HOLDABLE", -- [3]
+				615328, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[168749] = {
+				"|cffa335ee|Hitem:168749::::::::120:71::::::|h[Performant Effective Logic Board]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				134394, -- [4]
+				3, -- [5]
+				9, -- [6]
+			},
+			[128225] = {
+				"|cffa335ee|Hitem:128225::::::::120:71::::::|h[Empowered Apexis Fragment]|h|r", -- [1]
+				4, -- [2]
+				"", -- [3]
+				135733, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[169392] = {
+				"|cff0070dd|Hitem:169392::::::::120:71::::::|h[Bonebiter]|h|r", -- [1]
+				3, -- [2]
+				"", -- [3]
+				2027842, -- [4]
+				15, -- [5]
+				2, -- [6]
+			},
+		},
+		["lootdbversion"] = 16,
+		["dbversion"] = {
+			{
+				["locale"] = "enUS",
+				["version"] = 5,
+			}, -- [1]
+		},
+		["rares_loot"] = {
+			[50359] = {
+			},
+			[151933] = {
+			},
+			[50806] = {
+			},
+			[63977] = {
+			},
+			[50749] = {
+			},
+			[58817] = {
+				89112, -- [1]
+			},
+			[149847] = {
+			},
+			[151934] = {
+			},
+			[50822] = {
+			},
+			[151202] = {
+			},
+			[325666] = {
+			},
+			[58768] = {
+			},
+			[325667] = {
+			},
+			[151124] = {
+			},
+			[58778] = {
+			},
+			[152416] = {
+			},
+			[151684] = {
+				169138, -- [1]
+			},
+			[58949] = {
+			},
+			[87584] = {
+			},
+			[63101] = {
+			},
+			[153226] = {
+			},
+			[50349] = {
+			},
+			[151940] = {
+			},
+			[154701] = {
+			},
+			[153205] = {
+				159756, -- [1]
+			},
+			[150937] = {
+			},
+			[81001] = {
+			},
+			[150575] = {
+			},
+			[135497] = {
+			},
+			[62880] = {
+			},
+			[153200] = {
+			},
+			[152182] = {
+				169138, -- [1]
+			},
+			[151308] = {
+			},
+			[153206] = {
+			},
+			[50780] = {
+			},
+			[151623] = {
+			},
+			[63240] = {
+			},
+			[58769] = {
+			},
+			[151625] = {
+			},
+			[325659] = {
+			},
+			[152569] = {
+			},
+			[151569] = {
+			},
+			[50336] = {
+			},
+			[63695] = {
+				89112, -- [1]
+			},
+			[152001] = {
+			},
+			[63510] = {
+			},
+			[151672] = {
+			},
+			[325661] = {
+			},
+			[152570] = {
+			},
+			[325665] = {
+			},
+			[151627] = {
+			},
+			[325662] = {
+				169129, -- [1]
+			},
+			[50840] = {
+			},
+		},
+		["recentlySeen"] = {
 		},
 		["rare_names"] = {
 			["enUS"] = {
@@ -21749,13 +21872,13 @@ RareScannerDB = {
 				[128707] = "Rimestone",
 				[135044] = "Shredmaw the Voracious",
 				[121029] = "Brood Mother Nix",
-				[140163] = "Warbringer Yenajz",
+				[152448] = "Iridescent Glimmershell",
 				[140675] = "Den Mother Mugo",
 				[104519] = "Colerian",
 				[91780] = "Mother Clacker",
-				[73169] = "Jakur of Ordon",
+				[110024] = "Mal'Dreth the Corruptor",
 				[146942] = "Grand Marshal Fury",
-				[135045] = "Spinesnapper",
+				[77776] = "Wandering Vindicator",
 				[69842] = "Zandalari Warbringer",
 				[147222] = "Gnollfeaster",
 				[140676] = "Gigantic Stoneback",
@@ -21770,7 +21893,7 @@ RareScannerDB = {
 				[140451] = "Doting Calfmother",
 				[49822] = "Jadefang",
 				[73170] = "Watcher Osu",
-				[142725] = "Horrific Apparition",
+				[138630] = "Cleric Izzad",
 				[147332] = "Stonebinder Ssra'vess",
 				[94413] = "Isel the Hammer",
 				[84431] = "Greldrok the Cunning",
@@ -21782,7 +21905,7 @@ RareScannerDB = {
 				[128965] = "Uroku the Bound",
 				[151940] = "Uncle T'Rogg",
 				[111007] = "Randril",
-				[145287] = "Zunjo of Sen'jin",
+				[91087] = "Zeter'el",
 				[145286] = "Motega Bloodshield",
 				[152548] = "Scale Matriarch Gratinax",
 				[73171] = "Champion of the Black Flame",
@@ -21791,7 +21914,7 @@ RareScannerDB = {
 				[94414] = "Kiranys Duskwhisper",
 				[140168] = "Elder Chest-Thump",
 				[140680] = "Frozenhorn Rampager",
-				[91087] = "Zeter'el",
+				[145287] = "Zunjo of Sen'jin",
 				[117850] = "Simone the Seductress",
 				[83409] = "Ophiis",
 				[138633] = "Brother Maat",
@@ -21827,7 +21950,7 @@ RareScannerDB = {
 				[95440] = "Tremblade",
 				[148787] = "Alash'anir",
 				[138637] = "Hephet",
-				[100303] = "Zenobia",
+				[96208] = "Jubei'thos",
 				[148550] = "Caravan Leader",
 				[84435] = "Mr. Pinchy Sr.",
 				[140685] = "Elderhorn",
@@ -21850,7 +21973,7 @@ RareScannerDB = {
 				[79692] = "Silverleaf Ancient",
 				[54318] = "Ankha",
 				[73175] = "Cinderfall",
-				[77526] = "Scout Goreseeker",
+				[138640] = "Torus",
 				[139152] = "Carla Smirk",
 				[147854] = "Blade-Dancer Zorlak",
 				[139017] = "Wildmane",
@@ -21874,33 +21997,33 @@ RareScannerDB = {
 				[59369] = "Doctor Theolen Krastinov",
 				[120013] = "The Dread Stalker",
 				[139812] = "Venture Producer",
-				[147857] = "Cannonmaster Arlin",
-				[125388] = "Vagath the Betrayed",
 				[139667] = "Seer Grglok",
+				[125388] = "Vagath the Betrayed",
+				[121037] = "Grossir",
 				[152464] = "Caverndark Terror",
 				[134745] = "Skycarver Krakit",
 				[129995] = "Emily Mayville",
 				[99899] = "Vicious Whale Shark",
-				[139668] = "Wavebinder Gorgl",
+				[147858] = "Shipless Jimmy",
 				[142739] = "Knight-Captain Aldrin",
 				[77784] = "Lo'marg Jawcrusher",
-				[147858] = "Shipless Jimmy",
-				[152465] = "Needlespine",
+				[139668] = "Wavebinder Gorgl",
+				[140180] = "Brutalgore",
 				[140692] = "Bloodbore",
 				[91093] = "Bramblefell",
 				[83591] = "Tura'aka",
-				[92117] = "Gorebeak",
-				[126451] = "Crushclaw",
 				[96212] = "Korda Torros",
+				[126451] = "Crushclaw",
+				[92117] = "Gorebeak",
 				[139669] = "Shaman Garmr",
 				[140181] = "Cragtusk",
 				[140693] = "Hisskarath",
 				[84951] = "Gobblefin",
 				[133527] = "Juba the Scarred",
-				[130508] = "Broodmother Razora",
+				[105938] = "Felwing",
 				[142741] = "Doomrider Helgrim",
-				[147860] = "Torus",
 				[139670] = "Morgok",
+				[147860] = "Torus",
 				[111057] = "The Rat King",
 				[86743] = "Dekorhan",
 				[97345] = "Crawshuk the Hungry",
@@ -21911,26 +22034,26 @@ RareScannerDB = {
 				[139671] = "Sharkslayer Mugluk",
 				[140183] = "Old Muckhide",
 				[140695] = "Albino Dreadfang",
+				[147862] = "Asennu",
 				[139672] = "Gibberfin",
-				[123087] = "Al'Abas",
 				[93654] = "Skul'vrax",
 				[138648] = "Sigrid the Shroud-Weaver",
 				[126926] = "Venomjaw",
-				[147862] = "Asennu",
+				[123087] = "Al'Abas",
 				[136838] = "Zgordo the Brutalizer",
 				[140696] = "Da'zu the Feared",
 				[82755] = "Redclaw the Feral",
 				[74971] = "Firefury Giant",
-				[140697] = "Vile Asp",
+				[92887] = "Steelsnout",
 				[138649] = "Vulf Stormshore",
 				[128974] = "Queen Tzxi'kik",
 				[139673] = "Many-Teeth",
 				[92631] = "Dark Ranger Jess",
-				[92887] = "Steelsnout",
-				[89816] = "Golza the Iron Fin",
+				[68317] = "Mavis Harms",
+				[138650] = "Tide-Lost Champion",
 				[133531] = "Xu'ba",
 				[140768] = "Guuru the Mountain-Breaker",
-				[138650] = "Tide-Lost Champion",
+				[89816] = "Golza the Iron Fin",
 				[139674] = "Deepscale",
 				[147864] = "Hisskarath",
 				[135649] = "Clawflurry",
@@ -21959,7 +22082,7 @@ RareScannerDB = {
 				[139677] = "Depth-Caller",
 				[92633] = "Assassin Huwe",
 				[68319] = "Disha Fearwarden",
-				[145308] = "First Sergeant Steelfang",
+				[84955] = "Jiasska the Sporegorger",
 				[93401] = "Urgev the Flayer",
 				[138654] = "Vestar of the Tattered Sail",
 				[146844] = "Olfkrig the Indentured",
@@ -22014,7 +22137,7 @@ RareScannerDB = {
 				[90888] = "Drivnul",
 				[135589] = "Necrotic Mass",
 				[78144] = "Giantslayer Kimla",
-				[86750] = "Thek'talon",
+				[127700] = "Squadron Commander Vishax",
 				[139043] = "Tidestriker Ocho",
 				[120022] = "Deepmaw",
 				[92423] = "Theryssia",
@@ -22027,7 +22150,7 @@ RareScannerDB = {
 				[135644] = "Dawnstalker",
 				[80190] = "Gruuk",
 				[146852] = "Konrad the Enslaver",
-				[98268] = "Tarben",
+				[122838] = "Shadowcaster Voruun",
 				[90057] = "Daggerbeak",
 				[140372] = "Hive Guardian Ksh'ix",
 				[142419] = "Thundering Goliath",
@@ -22039,8 +22162,8 @@ RareScannerDB = {
 				[147877] = "Grand Master Ulrich",
 				[83643] = "Malroc Stonesunder",
 				[139471] = "Bugan the Flesh-Crusher",
-				[101596] = "Charfeather",
 				[50806] = "Moldo One-Eye",
+				[101596] = "Charfeather",
 				[82620] = "Son of Goramal",
 				[146854] = "Stella Darkpaw",
 				[119000] = "Dreadbeard",
@@ -22048,9 +22171,9 @@ RareScannerDB = {
 				[148390] = "Jessibelle Moonshield",
 				[75071] = "Mother Om'ra",
 				[92552] = "Belgork",
-				[116185] = "Attendant Keeper",
 				[124375] = "Overstuffed Saurolisk",
-				[146855] = "Akina",
+				[116185] = "Attendant Keeper",
+				[108251] = "Selia, Master of Balefire",
 				[134106] = "Lumbergrasp Sentinel",
 				[116953] = "Corrupted Bonebreaker",
 				[145020] = "Dolizite",
@@ -22068,7 +22191,7 @@ RareScannerDB = {
 				[138667] = "Blighted Monstrosity",
 				[75492] = "Venomshade",
 				[80057] = "Soulfang",
-				[147881] = "Uvuld the Forseer",
+				[121049] = "Baleful Knight-Captain",
 				[148393] = "Ancient Defender",
 				[153000] = "Sparkqueen P'Emp",
 				[102303] = "Lieutenant Strathmar",
@@ -22108,10 +22231,10 @@ RareScannerDB = {
 				[50388] = "Torik-Ethis",
 				[83509] = "Gorepetal",
 				[91788] = "Shellmaw",
-				[107487] = "Starbuck",
+				[133042] = "Sky Marshall Gabriel",
 				[86774] = "Aogexon",
 				[127706] = "Rezira the Seer",
-				[133042] = "Sky Marshall Gabriel",
+				[107487] = "Starbuck",
 				[137649] = "Pest Remover Mk. II",
 				[79334] = "No'losh",
 				[108255] = "Coura, Mistress of Arcana",
@@ -22171,7 +22294,7 @@ RareScannerDB = {
 				[88210] = "Krud the Eviscerator",
 				[107657] = "Arcanist Shal'iman",
 				[146870] = "Spellbinder Ohnazae",
-				[90087] = "Iron Captain Argha",
+				[110562] = "Bahagar",
 				[88494] = "Legion Vanguard",
 				[139768] = "Freebooter Dan",
 				[139592] = "Spellbinder Goro",
@@ -22185,9 +22308,9 @@ RareScannerDB = {
 				[109195] = "Soulbinder Halldora",
 				[63101] = "General Temuja",
 				[140063] = "Smashmaw the Man-Eater",
-				[90088] = "Ormak Bloodbolt",
-				[146872] = "Kachota the Exiled",
 				[139194] = "Rotmaw",
+				[146872] = "Kachota the Exiled",
+				[90088] = "Ormak Bloodbolt",
 				[138307] = "Smashface",
 				[127906] = "Twilight-Harbinger Tharuul",
 				[140797] = "Corpseharvest",
@@ -22210,15 +22333,15 @@ RareScannerDB = {
 				[91113] = "Tide Behemoth",
 				[139875] = "Hollow Widow",
 				[120583] = "Than'otalion",
-				[83691] = "Panthora",
+				[146875] = "Valimok the Vicious",
 				[122899] = "Death Metal Knight",
 				[82268] = "Darkmaster Go'vid",
 				[142437] = "Skullripper",
 				[72156] = "Borrok the Devourer",
 				[130016] = "Emily Mayville",
-				[98024] = "Luggut the Eggeater",
-				[92657] = "Bleeding Hollow Horror",
 				[146876] = "Machitu the Brutal",
+				[92657] = "Bleeding Hollow Horror",
+				[98024] = "Luggut the Eggeater",
 				[138863] = "Sister Martha",
 				[131520] = "Kulett the Ornery",
 				[87019] = "Gluttonous Giant",
@@ -22250,25 +22373,25 @@ RareScannerDB = {
 				[82883] = "Warlord Noktyn",
 				[139387] = "Nassa the Cold-Blooded",
 				[98200] = "Guk",
-				[126691] = "Tyrannosaurus Rekt",
+				[146880] = "Gholvran the Cryptic",
 				[142683] = "Ruul Onestone",
 				[117136] = "Doombringer Zar'thoz",
 				[137906] = "Infused Bedrock",
 				[144833] = "Whiptongue",
 				[123293] = "Royal Sand Crab",
-				[96235] = "Xemirkol",
+				[71665] = "Giant-Slayer Kul",
 				[86257] = "Basten",
 				[146881] = "Soothsayer Brinvulf",
-				[71665] = "Giant-Slayer Kul",
+				[155583] = "Scrapclaw",
 				[92140] = "Rampant Mandragora",
 				[118192] = "Norgor",
 				[84904] = "Oraggro",
 				[139025] = "Moonsong",
 				[108256] = "Quin'el, Master of Chillwind",
-				[110824] = "Tideclaw",
+				[152001] = "Bonepicker",
 				[146882] = "Gargantuan Blighthound",
 				[98283] = "Drakum",
-				[152001] = "Bonepicker",
+				[110824] = "Tideclaw",
 				[82415] = "Shinri",
 				[84465] = "Leaping Gorger",
 				[139027] = "Crescent Oracle",
@@ -22281,15 +22404,15 @@ RareScannerDB = {
 				[110870] = "Apothecary Faldren",
 				[137158] = "Bound Lightning Elemental",
 				[126181] = "Ramut the Black",
-				[146884] = "Warlord Hjelskard",
 				[130788] = "Taghira",
-				[98284] = "Gondar",
+				[146884] = "Warlord Hjelskard",
+				[90094] = "Harbormaster Korak",
 				[129805] = "Beshol",
 				[131262] = "Pack Leader Asenya",
-				[150468] = "Vor'koth",
-				[108010] = "Powdermaster Maclin",
-				[91374] = "Podlord Wakkawam",
 				[134088] = "Xibalan Apex",
+				[150468] = "Vor'koth",
+				[91374] = "Podlord Wakkawam",
+				[108010] = "Powdermaster Maclin",
 				[146885] = "Foulshriek",
 				[127581] = "The Many-Faced Devourer",
 				[58778] = "Aetha",
@@ -22302,7 +22425,7 @@ RareScannerDB = {
 				[98285] = "Smashum Grabb",
 				[136892] = "Brutalsnout",
 				[85029] = "Shadowspeaker Niir",
-				[90094] = "Harbormaster Korak",
+				[98284] = "Gondar",
 				[136819] = "Overseer Rat-Tail",
 				[121108] = "Ruinous Overfiend",
 				[138308] = "Ook-Aak",
@@ -22317,12 +22440,12 @@ RareScannerDB = {
 				[50780] = "Sahn Tidehunter",
 				[139210] = "Venombulb",
 				[152007] = "Killsaw",
-				[155583] = "Scrapclaw",
+				[96235] = "Xemirkol",
 				[130138] = "Nevermore",
 				[82930] = "Shadowflame Terrorwalker",
 				[136887] = "Needlemane",
 				[115226] = "Ravenian",
-				[146880] = "Gholvran the Cryptic",
+				[126691] = "Tyrannosaurus Rekt",
 				[139211] = "Everbloom",
 				[91871] = "Argosh the Destroyer",
 				[80371] = "Typhon",
@@ -22347,7 +22470,7 @@ RareScannerDB = {
 				[122090] = "Sarashas the Pillager",
 				[139442] = "Backbreaker Zukan",
 				[139593] = "Burk the Literate",
-				[146875] = "Valimok the Vicious",
+				[83691] = "Panthora",
 				[86259] = "Valstil",
 				[106990] = "Chief Bitterbrine",
 				[82676] = "Enavra",
@@ -22369,7 +22492,7 @@ RareScannerDB = {
 				[139000] = "Elder Yur",
 				[140436] = "Snorthoof",
 				[137681] = "King Clickyclack",
-				[110562] = "Bahagar",
+				[90087] = "Iron Captain Argha",
 				[135844] = "Lord Sumar",
 				[139217] = "Elder Many-Blooms",
 				[121068] = "Volatile Imp",
@@ -22424,7 +22547,7 @@ RareScannerDB = {
 				[148155] = "Muk'luk",
 				[131735] = "Idej the Wise",
 				[136841] = "Thu'zun the Vile",
-				[121049] = "Baleful Knight-Captain",
+				[147881] = "Uvuld the Forseer",
 				[93686] = "Jinikki the Puncturer",
 				[124582] = "Chasm-Hunter",
 				[134754] = "Hyo'gi",
@@ -22434,7 +22557,7 @@ RareScannerDB = {
 				[140449] = "Thickflank",
 				[123001] = "Dark Water",
 				[124399] = "Infected Direhorn",
-				[108251] = "Selia, Master of Balefire",
+				[146855] = "Akina",
 				[108531] = "Dread Ship Krazatoa",
 				[80122] = "Gaz'orda",
 				[140249] = "Slatehide",
@@ -22448,7 +22571,7 @@ RareScannerDB = {
 				[82877] = "High Warlord Volrath",
 				[131404] = "Foreman Scripps",
 				[131704] = "Coati",
-				[122838] = "Shadowcaster Voruun",
+				[98268] = "Tarben",
 				[91640] = "Vinyeaty",
 				[50051] = "Ghostcrawler",
 				[139227] = "Keeper Undarius",
@@ -22456,7 +22579,7 @@ RareScannerDB = {
 				[154153] = "Enforcer KX-T57",
 				[140763] = "Frosthill Giant",
 				[87356] = "Vrok the Ancient",
-				[127700] = "Squadron Commander Vishax",
+				[86750] = "Thek'talon",
 				[134109] = "Dominated Hydra",
 				[122609] = "Xavinox",
 				[108541] = "Dread Corsair",
@@ -22477,7 +22600,7 @@ RareScannerDB = {
 				[89850] = "The Oracle",
 				[118993] = "Dreadeye",
 				[135647] = "Ituakee",
-				[84955] = "Jiasska the Sporegorger",
+				[145308] = "First Sergeant Steelfang",
 				[139431] = "Guardian of Tombs",
 				[137183] = "Honey-Coated Slitherer",
 				[138991] = "Grrl",
@@ -22496,8 +22619,8 @@ RareScannerDB = {
 				[148446] = "Wolfleader Skraug",
 				[132578] = "Qroshekx",
 				[54322] = "Deth'tilac",
+				[140697] = "Vile Asp",
 				[101077] = "Sekhan",
-				[68317] = "Mavis Harms",
 				[140694] = "Gorgejaw the Glutton",
 				[139233] = "Gulliver",
 				[92411] = "Overlord Ma'gruth",
@@ -22506,13 +22629,13 @@ RareScannerDB = {
 				[135994] = "Lord Amythite",
 				[77529] = "Yazheera the Incinerator",
 				[81406] = "Bahameye",
-				[105938] = "Felwing",
+				[130508] = "Broodmother Razora",
 				[139044] = "Wavemender Asha",
-				[140180] = "Brutalgore",
+				[152465] = "Needlespine",
 				[132068] = "Bashmu",
 				[132580] = "Ssinkrix",
 				[82942] = "Lady Demlash",
-				[121037] = "Grossir",
+				[147857] = "Cannonmaster Arlin",
 				[82374] = "Rai'vosh",
 				[138889] = "Uvuld the Forseer",
 				[139235] = "Tort Jaw",
@@ -22527,7 +22650,7 @@ RareScannerDB = {
 				[148679] = "Arcanist Quintril",
 				[152545] = "Scale Matriarch Vynara",
 				[147957] = "Azerchrysalis",
-				[138640] = "Torus",
+				[77526] = "Scout Goreseeker",
 				[79104] = "Ug'lok the Frozen",
 				[148477] = "Beastlord Drakara",
 				[139819] = "Vice President Genni Newcom",
@@ -22537,7 +22660,7 @@ RareScannerDB = {
 				[140773] = "Deepsea Tidecrusher",
 				[70096] = "War-God Dokah",
 				[149241] = "Alliance Captain",
-				[96208] = "Jubei'thos",
+				[100303] = "Zenobia",
 				[139026] = "Eclipse-Caller",
 				[85451] = "Malgosh Shadowkeeper",
 				[148037] = "Athil Dewfire",
@@ -22557,17 +22680,17 @@ RareScannerDB = {
 				[51078] = "Ferdinand",
 				[144915] = "Firewarden Viton Darkflare",
 				[147942] = "Twilight Prophet Graeme",
-				[138630] = "Cleric Izzad",
+				[142725] = "Horrific Apparition",
 				[139885] = "Prophet Nox'tir",
 				[148642] = "Caravan Leader",
 				[105547] = "Rauren",
 				[142312] = "Skullripper",
 				[83713] = "Titarus",
 				[70003] = "Molthor",
-				[77776] = "Wandering Vindicator",
-				[110024] = "Mal'Dreth the Corruptor",
+				[135045] = "Spinesnapper",
+				[73169] = "Jakur of Ordon",
 				[140777] = "Gemshard Colossus",
-				[152448] = "Iridescent Glimmershell",
+				[140163] = "Warbringer Yenajz",
 				[126199] = "Vrax'thul",
 				[98890] = "Slumber",
 				[144952] = "Hookfang",
@@ -22668,129 +22791,6 @@ RareScannerDB = {
 				[90524] = "Cindral",
 				[136410] = "Tehd Shoemaker",
 			},
-		},
-		["lootdbversion"] = 16,
-		["rares_loot"] = {
-			[50359] = {
-			},
-			[151933] = {
-			},
-			[50806] = {
-			},
-			[63977] = {
-			},
-			[50749] = {
-			},
-			[58817] = {
-				89112, -- [1]
-			},
-			[149847] = {
-			},
-			[151934] = {
-			},
-			[50822] = {
-			},
-			[151202] = {
-			},
-			[325666] = {
-			},
-			[58768] = {
-			},
-			[325667] = {
-			},
-			[151124] = {
-			},
-			[58778] = {
-			},
-			[152416] = {
-			},
-			[151684] = {
-				169138, -- [1]
-			},
-			[58949] = {
-			},
-			[87584] = {
-			},
-			[63101] = {
-			},
-			[153226] = {
-			},
-			[151940] = {
-			},
-			[50349] = {
-			},
-			[154701] = {
-			},
-			[153205] = {
-				159756, -- [1]
-			},
-			[150937] = {
-			},
-			[81001] = {
-			},
-			[150575] = {
-			},
-			[135497] = {
-			},
-			[62880] = {
-			},
-			[153200] = {
-			},
-			[152182] = {
-				169138, -- [1]
-			},
-			[152001] = {
-			},
-			[153206] = {
-			},
-			[50780] = {
-			},
-			[151623] = {
-			},
-			[63240] = {
-			},
-			[58769] = {
-			},
-			[151625] = {
-			},
-			[325659] = {
-			},
-			[152569] = {
-			},
-			[151569] = {
-			},
-			[50336] = {
-			},
-			[63695] = {
-				89112, -- [1]
-			},
-			[151308] = {
-			},
-			[63510] = {
-			},
-			[151672] = {
-			},
-			[325661] = {
-			},
-			[152570] = {
-			},
-			[325665] = {
-			},
-			[151627] = {
-			},
-			[325662] = {
-				169129, -- [1]
-			},
-			[50840] = {
-			},
-		},
-		["recentlySeen"] = {
-		},
-		["dbversion"] = {
-			{
-				["locale"] = "enUS",
-				["version"] = 5,
-			}, -- [1]
 		},
 		["event_names"] = {
 			["enUS"] = {

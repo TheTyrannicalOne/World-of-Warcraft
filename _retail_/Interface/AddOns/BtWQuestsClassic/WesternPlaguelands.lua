@@ -23,148 +23,103 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_FIRST_ALL
     range = {35,60},
     items = {
         {
-            {
-                type = "quest",
-                id = 27158,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 27158,
-                    }
+            variations = {
+                {
+                    type = "quest",
+                    id = 27158,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 27158,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    type = "quest",
+                    id = 27158,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 27158,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            {
-                type = "quest",
-                id = 27158,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 27158,
-                        active = true,
-                    }
+                {
+                    type = "quest",
+                    id = 28505,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28505,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    type = "quest",
+                    id = 28505,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28505,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            
-
-            {
-                type = "quest",
-                id = 28505,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28505,
-                    }
+                {
+                    type = "quest",
+                    id = 28576,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28576,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    type = "quest",
+                    id = 28576,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28576,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            {
-                type = "quest",
-                id = 28505,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28505,
-                        active = true,
-                    }
+                {
+                    type = "quest",
+                    id = 28749,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28749,
+                        },
+                    },
                 },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    type = "quest",
+                    id = 28749,
+                    restrictions = {
+                        {
+                            type = "quest",
+                            id = 28749,
+                            active = true,
+                        },
+                    },
                 },
-            },
-            
-
-            {
-                type = "quest",
-                id = 28576,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28576,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
-                },
-            },
-            {
-                type = "quest",
-                id = 28576,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28576,
-                        active = true,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
+                {
+                    name = "Go to Thassarian",
+                    breadcrumb = true,
+                    onClick = function ()
+                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4106, 0.7045, "Thassarian")
+                    end,
                 },
             },
-
-
-            {
-                type = "quest",
-                id = 28749,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28749,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
-                },
-            },
-            {
-                type = "quest",
-                id = 28749,
-                restrictions = {
-                    {
-                        type = "quest",
-                        id = 28749,
-                        active = true,
-                    }
-                },
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
-                },
-            },
-
-            {
-                name = "Go to Thassarian",
-                breadcrumb = true,
-                onClick = function ()
-                    BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4106, 0.7045, "Thassarian")
-                end,
-                x = 3,
-                y = 0,
-                connections = {
-                    2,
-                },
+            x = 3,
+            y = 0,
+            connections = {
+                2, 
             },
         },
 

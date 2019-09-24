@@ -8544,6 +8544,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [151964] = {
+        name = "Spiritwalker Ebonhorn",
+        locations = {
+            [1473] = {
+                {
+                    x = 0.46257,
+                    y = 0.672501,
+                },
+            },
+        },
+    },
     [151999] = {
         name = "Jo'nok, Bulwark of Torcali",
         locations = {
@@ -8965,6 +8976,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [153365] = {
+        name = "Honeyback Hivemother",
+        locations = {
+            [942] = {
+                {
+                    x = 0.628966,
+                    y = 0.265245,
+                },
+            },
+        },
+    },
     [153385] = {
         name = "Blademaster Okani",
         locations = {
@@ -8972,6 +8994,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.389008,
                     y = 0.303783,
+                },
+            },
+        },
+    },
+    [153393] = {
+        name = "Barry",
+        locations = {
+            [942] = {
+                {
+                    x = 0.692491,
+                    y = 0.641936,
                 },
             },
         },
@@ -9089,6 +9122,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [154023] = {
+        name = "Nascent Harvester",
+        locations = {
+            [942] = {
+                {
+                    x = 0.625215,
+                    y = 0.264318,
+                },
+            },
+        },
+    },
     [154143] = {
         name = "Collector Kojo",
         locations = {
@@ -9129,6 +9173,39 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.493002,
                     y = 0.618873,
+                },
+            },
+        },
+    },
+    [154464] = {
+        name = "Earthen Guardian",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.750472,
+                    y = 0.149429,
+                },
+            },
+        },
+    },
+    [154465] = {
+        name = "Earthen Guardian",
+        locations = {
+            [1165] = {
+                {
+                    x = 0.509935,
+                    y = 0.888756,
+                },
+            },
+        },
+    },
+    [154500] = {
+        name = "Left",
+        locations = {
+            [433] = {
+                {
+                    x = 0.545152,
+                    y = 0.724853,
                 },
             },
         },
@@ -9235,6 +9312,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [154870] = {
+        name = "Slain Blacktalon Lookout",
+        locations = {
+            [42] = {
+                {
+                    x = 0.469919,
+                    y = 0.692179,
+                },
+            },
+        },
+    },
+    [154874] = {
+        name = "Blacktalon Watcher",
+        locations = {
+            [13] = {
+                {
+                    x = 0.477729,
+                    y = 0.687693,
+                },
+            },
+        },
+    },
     [155071] = {
         name = "Shandris Feathermoon",
         locations = {
@@ -9242,6 +9341,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.797677,
                     y = 0.44935,
+                },
+            },
+        },
+    },
+    [155191] = {
+        name = "Potion of Mental Clarity",
+        locations = {
+            [46] = {
+                {
+                    x = 0.694541,
+                    y = 0.165048,
                 },
             },
         },

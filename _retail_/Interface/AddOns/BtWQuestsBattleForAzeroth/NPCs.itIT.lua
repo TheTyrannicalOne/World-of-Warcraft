@@ -2210,6 +2210,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "Capo Telemante Oculeth",
     },
+    [151964] = {
+        name = "Spiritista Corna Nere",
+    },
     [152002] = {
         name = "Immagine di Mimiron",
     },
@@ -2249,6 +2252,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152747] = {
         name = "Christy Pestaviti",
     },
+    [153365] = {
+        name = "Madre dell'Alveare Dolcedorso",
+    },
+    [153393] = {
+        name = "Barry",
+    },
     [153509] = {
         name = "Artigiano Okata",
     },
@@ -2264,6 +2273,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "Shandris Piumaluna",
     },
+    [154023] = {
+        name = "Raccoglitore Immaturo",
+    },
     [154248] = {
         name = "Spadaccino Inowari",
     },
@@ -2272,6 +2284,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154408] = {
         name = "Rolm",
+    },
+    [154464] = {
+        name = "Guardiano Terrigeno",
     },
     [154640] = {
         name = "Gran Maresciallo Fremilama",

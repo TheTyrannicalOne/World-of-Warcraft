@@ -1,19 +1,24 @@
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_IRON_DWARVES, {
-    name = {
+local BtWQuests = BtWQuests;
+local Database = BtWQuests.Database;
+local EXPANSION_ID = BtWQuests.Constant.Expansions.BattleForAzeroth;
+local CATEGORY_ID = BtWQuests.Constant.Category.BattleForAzeroth.AlliedRaces;
+local Chain = BtWQuests.Constant.Chain.BattleForAzeroth.AlliedRaces;
+local ALLIANCE_ID, HORDE_ID = BtWQuests.Constant.Faction.Alliance, BtWQuests.Constant.Faction.Horde;
+
+Database:AddChain(Chain.DarkIronDwarves, {
+    name = { -- Dark Iron Dwarves
         type = "quest",
         id = 53566,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {120},
     alternatives = {
-        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHAR_ORC,
+        Chain.MagharOrc,
     },
     restrictions = {
-        {
-            type = "faction",
-            id = BTWQUESTS_FACTION_ID_ALLIANCE,
-        },
+        type = "faction",
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
@@ -101,19 +106,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHAR_ORC, {
+Database:AddChain(Chain.MagharOrc, {
     name = BTWQUESTS_MAGHAR_ORC,
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {120},
     alternatives = {
-        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_IRON_DWARVES,
+        Chain.DarkIronDwarves,
     },
     restrictions = {
-        {
-            type = "faction",
-            id = BTWQUESTS_FACTION_ID_HORDE,
-        },
+        type = "faction",
+        id = HORDE_ID,
     },
     prerequisites = {
         {
@@ -237,20 +240,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHA
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_KUL_TIRAN, {
+Database:AddChain(Chain.KulTiran, {
     name = { -- Allegiance of Kul Tiras
         type = "quest",
         id = 53720,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {120},
     alternatives = {
-        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI_TROLL,
+        Chain.ZandalariTroll,
     },
     restrictions = {
         type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+        id = ALLIANCE_ID,
     },
     prerequisites = {
         {
@@ -445,22 +448,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI_TROLL, {
+Database:AddChain(Chain.ZandalariTroll, {
     name = { -- Allegiance of the Zandalari
         type = "quest",
         id = 53719,
     },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    category = CATEGORY_ID,
+    expansion = EXPANSION_ID,
     range = {120},
     alternatives = {
-        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_KUL_TIRAN,
+        Chain.KulTiran,
     },
     restrictions = {
-        {
-            type = "faction",
-            id = BTWQUESTS_FACTION_ID_HORDE,
-        },
+        type = "faction",
+        id = HORDE_ID,
     },
     prerequisites = {
         {
@@ -633,30 +634,30 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
     },
 })
 
-BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES, {
+Database:AddCategory(CATEGORY_ID, {
     name = BTWQUESTS_ALLIED_RACES,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    expansion = EXPANSION_ID,
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_IRON_DWARVES,
+            id = Chain.DarkIronDwarves,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHAR_ORC,
+            id = Chain.MagharOrc,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_KUL_TIRAN,
+            id = Chain.KulTiran,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI_TROLL,
+            id = Chain.ZandalariTroll,
         },
     },
 })
 
-BtWQuestsDatabase:AddExpansionItem(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
+Database:AddExpansionItem(EXPANSION_ID, {
     type = "category",
-    id = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
+    id = CATEGORY_ID,
 })
