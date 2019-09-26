@@ -884,6 +884,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141769] = {
         name = "玛丽琳·胡德",
     },
+    [141961] = {
+        name = "莉莉安·沃斯",
+    },
     [142422] = {
         name = "伊崔格",
     },

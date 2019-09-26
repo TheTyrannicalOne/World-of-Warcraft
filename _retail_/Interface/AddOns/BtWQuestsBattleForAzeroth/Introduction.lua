@@ -1,3 +1,6 @@
+local BtWQuests = BtWQuests;
+local Chain = BtWQuests.Constant.Chain.BattleForAzeroth;
+
 local HORDE_CAMPAIGN_ACHIEVEMENT_ID = 12509
 local ALLIANCE_CAMPAIGN_ACHIEVEMENT_ID = 12510
 
@@ -1582,11 +1585,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 7,
-        },
+        -- {
+        --     type = "reputation",
+        --     id = 2159,
+        --     standing = 7,
+        -- },
     },
     active = {
         type = "chain",
@@ -1972,6 +1975,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_PART_1,
             x = 3,
+            connections = {1},
+        },
+        {
+            type = "chain",
+            id = Chain.Alliance825Campaign,
+            x = 3,
         },
     },
 })
@@ -2032,6 +2041,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2
         {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1,
+            x = 3,
+            connections = {1}
+        },
+        {
+            variations = {
+                {
+                    type = "chain",
+                    id = Chain.Horde825SylvanasCampaign,
+                },
+                {
+                    type = "chain",
+                    id = Chain.Horde825SaurfangCampaign,
+                },
+            },
             x = 3,
         },
     },
@@ -6205,10 +6228,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1, 
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
         },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
-        },
     },
     active = {
         type = "quest",
@@ -6401,6 +6420,479 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_FOLLOWER
     },
 })
 
+BtWQuestsDatabase:AddChain(Chain.Alliance825Campaign, {
+    name = { -- The Price of Victory
+        type = "quest",
+        id = 56993,
+    },
+    questline = 972,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        Chain.Horde825SaurfangCampaign,
+        Chain.Horde825SylvanasCampaign,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_PART_1,
+        }
+    },
+    active = {
+        type = "quest",
+        id = 56494,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 57002,
+    },
+    items = {
+        {
+            type = "npc",
+            id = 135614,
+            x = 3,
+            y = 0,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 56494,
+            x = 3,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 56719,
+            x = 3,
+            connections = {1,2,3}
+        },
+        {
+            type = "quest",
+            id = 56979,
+            x = 1,
+            connections = {3},
+        },
+        {
+            type = "quest",
+            id = 56980,
+            connections = {2},
+        },
+        {
+            type = "quest",
+            id = 56981,
+            connections = {1},
+        },
+        {
+            type = "quest",
+            id = 56982,
+            x = 3,
+            connections = {1},
+        },
+        {
+            type = "quest",
+            id = 56993,
+            x = 3,
+            connections = {1},
+        },
+        {
+            type = "quest",
+            id = 57002,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(Chain.Horde825SaurfangCampaign, {
+    name = { -- The Price of Victory
+        type = "quest",
+        id = 56993,
+    },
+    questline = 972,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        Chain.Alliance825Campaign,
+        Chain.Horde825SylvanasCampaign,
+    },
+    restrictions = {
+        {
+            type = "faction",
+            id = BTWQUESTS_FACTION_ID_HORDE,
+        },
+        {
+            type = "quest",
+            id = 54107, -- Sided with Sylvanas
+        },
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1,
+        }
+    },
+    active = {
+        type = "quest",
+        id = 56496,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 57095,
+    },
+    items = {
+        {
+            type = "npc",
+            id = 155789,
+            x = 3,
+            y = 0,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 56496,
+            x = 3,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 57088,
+            x = 3,
+            connections={1, 2, 3}
+        },
+        {
+            type = "quest",
+            id = 57090,
+            x = 1,
+            connections={3}
+        },
+        {
+            type = "quest",
+            id = 57091,
+            connections={2}
+        },
+        {
+            type = "quest",
+            id = 57092,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 57093,
+            x = 3,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 57094,
+            x = 3,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 57095,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(Chain.Horde825SylvanasCampaign, {
+    name = { -- The Price of Victory
+        type = "quest",
+        id = 56993,
+    },
+    questline = 972,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        Chain.Alliance825Campaign,
+        Chain.Horde825SaurfangCampaign,
+    },
+    restrictions = {
+        {
+            type = "faction",
+            id = BTWQUESTS_FACTION_ID_HORDE,
+        },
+        {
+            type = "quest",
+            id = 54754, -- Sided with Sylvanas
+        },
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1,
+        }
+    },
+    active = {
+        type = "quest",
+        id = 56495,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        ids = {57095, 57152},
+        count = 1,
+    },
+    items = {
+        {
+            type="npc",
+            id = 135691,
+            x = 3,
+            y = 0,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 56495,
+            x = 3,
+            connections = {1}
+        },
+
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 57147,
+                    restrictions = BtWQuestsItem_ActiveOrCompleted,
+                },
+                {
+                    type = "quest",
+                    id = 56833,
+                },
+            },
+            x = 3,
+            connections = {1}
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 57088,
+                    restrictions = {
+                        type = "quest",
+                        id = 57147,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 57130,
+                },
+            },
+            x = 3,
+            connections = {1,2,3}
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 57090,
+                    restrictions = {
+                        type = "quest",
+                        id = 57147,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 57148,
+                },
+            },
+            x = 1,
+            connections={3}
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 57091,
+                    restrictions = {
+                        type = "quest",
+                        id = 57147,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 57149,
+                },
+            },
+            connections={2}
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 57092,
+                    restrictions = {
+                        type = "quest",
+                        id = 57147,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 57150,
+                },
+            },
+            connections = {1}
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 57093,
+                    restrictions = {
+                        type = "quest",
+                        id = 57147,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 57151,
+                },
+            },
+            x = 3,
+            connections = {1}
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 57094,
+                    restrictions = {
+                        type = "quest",
+                        id = 57147,
+                    },
+                    connections = {1}
+                },
+                {
+                    type = "quest",
+                    id = 57152,
+                },
+            },
+            x = 3,
+        },
+        {
+            type = "quest",
+            id = 57095,
+            x = 3,
+            visible = {
+                type = "quest",
+                id = 57147,
+            },
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(Chain.Alliance825Calia, {
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        Chain.Horde825Calia,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = Chain.Alliance825Campaign,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 57126,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 57126,
+    },
+    items = {
+        {
+            type = "npc",
+            id = 150633,
+            x = 3,
+            y = 0,
+            connections = {1},
+        },
+        {
+            type = "quest",
+            id = 57126,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(Chain.Horde825Calia, {
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        Chain.Alliance825Calia,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_HORDE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = Chain.Horde825SaurfangCampaign,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = Chain.Horde825SylvanasCampaign,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 57198,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 57198,
+    },
+    items = {
+        {
+            type = "npc",
+            id = 141961,
+            x = 3,
+            y = 0,
+            connections = {1}
+        },
+        {
+            type = "quest",
+            id = 57198,
+            x = 3,
+        },
+    },
+})
 
 BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     {

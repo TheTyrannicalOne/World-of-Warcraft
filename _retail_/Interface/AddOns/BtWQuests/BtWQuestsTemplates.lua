@@ -801,7 +801,7 @@ function BtWQuestsNavBarButtonMixin:GetList()
                         type = "expansion",
                         id = i
                     },
-                    text = BtWQuestsDatabase:GetExpansionByID(i),
+                    text = BtWQuestsDatabase:GetExpansionByID(i):GetName(),
                     func = function(button, item)
                         self:GetParent():GoToItem(item)
                     end,

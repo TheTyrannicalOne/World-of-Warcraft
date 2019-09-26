@@ -1730,6 +1730,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141952] = {
         name = "Navrecorne juvénile",
     },
+    [141961] = {
+        name = "Lilian Voss",
+    },
     [142275] = {
         name = "Grommash Hurlenfer",
     },

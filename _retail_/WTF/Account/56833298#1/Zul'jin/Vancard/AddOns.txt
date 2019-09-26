@@ -106,3 +106,4 @@ ElvUI_SLE: enabled
 ElvUI_Config: enabled
 ElvUI: enabled
 WeakAurasCompanion: enabled
+OPie_Classic: disabled

@@ -96,3 +96,4 @@ AlhanaUI: disabled
 ElvUI_SLE: disabled
 ElvUI_Config: disabled
 ElvUI: disabled
+OPie_Classic: disabled

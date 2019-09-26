@@ -1733,6 +1733,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141952] = {
         name = "Cuernoatroz joven",
     },
+    [141961] = {
+        name = "Lilian Voss",
+    },
     [142275] = {
         name = "Grommash Grito Infernal",
     },

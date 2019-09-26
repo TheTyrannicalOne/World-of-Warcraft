@@ -107,6 +107,12 @@ Chain.Horde82Part1 = 80071
 Chain.Alliance82Follower = 80072
 Chain.Horde82Follower = 80073
 
+Chain.Alliance825Campaign = 80074
+Chain.Horde825SaurfangCampaign = 80075
+Chain.Horde825SylvanasCampaign = 80076
+Chain.Alliance825Calia = 80077
+Chain.Horde825Calia = 80078
+
 Chain.OtherAlliance = 80097
 Chain.OtherHorde = 80098
 Chain.OtherBoth = 80099

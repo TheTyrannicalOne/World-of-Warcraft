@@ -1100,6 +1100,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141815] = {
         name = "溺水的水手",
     },
+    [141961] = {
+        name = "莉莉安·沃斯",
+    },
     [142275] = {
         name = "格罗玛什·地狱咆哮",
     },

@@ -876,11 +876,13 @@ end
 function CategoryMixin:IsCompleted(character)
     for _,v in ipairs(self.items) do
         if v.type == 'chain' then
-            if not character:IsChainIgnored(v.id) and self.database:IsItemValidForCharacter(v, character) and not self.database:IsChainCompleted(v.id, character) then
+            local item = self.database:GetChainByID(v.id)
+            if not character:IsChainIgnored(v.id) and item:IsValidForCharacter(character) and not item:IsCompleted(character) then
                 return false
             end
         elseif v.type == 'category' then
-            if not character:IsCategoryIgnored(v.id) and not self.database:IsCategoryCompleted(v.id, character) then
+            local item = self.database:GetCategoryByID(v.id)
+            if not character:IsCategoryIgnored(v.id) and not item:IsCompleted(character) then
                 return false
             end
         end
@@ -975,6 +977,9 @@ end
 function ItemMixin:GetType(database, item)
     return item.type;
 end
+function ItemMixin:GetTargetType(database, item)
+    return item.type;
+end
 function ItemMixin:GetID(database, item, index)
     if item.id then
         return item.id;
@@ -988,17 +993,18 @@ function ItemMixin:GetID(database, item, index)
     return nil;
 end
 function ItemMixin:GetTarget(database, item, index)
-    if item.type == nil or not database:HasDataType(item.type) then
+    local type = self:GetTargetType(database, item);
+    if type == nil or not database:HasDataType(type) then
         return nil;
     end
 
     if item.id then
-        return database:GetData(item.type, item.id);
+        return database:GetData(type, item.id);
     end
 
     local index = index or 1;
     if item.ids and item.ids[index] then
-        return database:GetData(item.type, item.ids[index]);
+        return database:GetData(type, item.ids[index]);
     end
 
     return nil;
@@ -1023,7 +1029,7 @@ function ItemMixin:GetVariation(database, item, character)
         end
     end
 
-    return nil;
+    return item.variationItems[#item.variationItems];
 end
 function ItemMixin:IsValidForCharacter(database, item, character)
     if item.restrictions ~= nil then
@@ -1339,7 +1345,7 @@ function QuestItemMixin:GetMaxLevel(database, item)
     return item.requiredLevel or self:GetTarget(database, item):GetMaxLevel();
 end
 function QuestItemMixin:GetLevelFlag(database, item)
-    return item.requiredLevel or self:GetTarget(database, item):GetLevelFlag();
+    return item.levelFlag or self:GetTarget(database, item):GetLevelFlag();
 end
 function QuestItemMixin:GetLink(database, item)
     if item.link == nil then
@@ -1529,6 +1535,9 @@ function MissionItemMixin:IsCompleted()
 end
 
 local NPCItemMixin = CreateFromMixins(ItemMixin);
+function NPCItemMixin:GetTargetType()
+    return "npc"
+end
 function NPCItemMixin:GetName(database, item, character)
     return string.format(BTWQUESTS_GO_TO, ItemMixin.GetName(self, database, item, character))
 end
@@ -1594,6 +1603,9 @@ function TalkItemMixin:GetName(database, item, character)
 end
 
 local ObjectItemMixin = CreateFromMixins(NPCItemMixin);
+function ObjectItemMixin:GetTargetType()
+    return "object"
+end
 
 local LootItemMixin = CreateFromMixins(ObjectItemMixin);
 function LootItemMixin:GetName(database, item, character)
@@ -2099,6 +2111,28 @@ function EquippedItemMixin:IsCompleted(database, item, character)
     return IsEquippedItem(id);
 end
 
+local QuestLineItemMixin = CreateFromMixins(ItemMixin);
+function QuestLineItemMixin:IsCompleted(database, item, character)
+    if item.questID and (character:IsQuestActive(item.questID) or character:IsQuestCompleted(item.questID)) then
+        return true
+    end
+
+    if character:IsPlayer() then
+        local questLines = C_QuestLine.GetAvailableQuestLines(item.mapID)
+        for _,questLine in ipairs(questLines) do
+            if questLine.questLineID == item.id then
+                if item.questID == nil then
+                    return true
+                else
+                    return questLine.questID == item.questID
+                end
+            end
+        end
+    end
+
+    return false
+end
+
 local DatabaseItemMetatable = {};
 function DatabaseItemMetatable.__index(tbl, key)
     local details;
@@ -2326,7 +2360,7 @@ function Database:IsItemValidForCharacter(item, character) -- In effect its the 
         return false;
     end
 
-    if item.restrictions and not self:EvalRequirement(item.restrictions, item, character) then
+    if item.restrictions ~= nil and not self:EvalRequirement(item.restrictions, item, character) then
         return false;
     end
     
@@ -3070,6 +3104,7 @@ Database:RegisterItemType("azessence", AzeriteEssenceItemMixin);
 Database:RegisterItemType("profession", ProfessionItemMixin);
 Database:RegisterItemType("item", ItemItemMixin);
 Database:RegisterItemType("equipped", EquippedItemMixin);
+Database:RegisterItemType("questline", QuestLineItemMixin);
 
 BtWQuestsDatabase = Database;
 BtWQuests.Database = Database;

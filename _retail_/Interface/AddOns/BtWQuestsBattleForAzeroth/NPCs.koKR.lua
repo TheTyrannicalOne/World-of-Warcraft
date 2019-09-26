@@ -1730,6 +1730,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141952] = {
         name = "성숙한 공포뿔",
     },
+    [141961] = {
+        name = "릴리안 보스",
+    },
     [142275] = {
         name = "그롬마쉬 헬스크림",
     },

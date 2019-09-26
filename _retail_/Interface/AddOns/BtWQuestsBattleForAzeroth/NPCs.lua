@@ -6413,6 +6413,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [141961] = {
+        name = "Lilian Voss",
+        locations = {
+            [1165] = {
+                {
+                    x = 0.515428,
+                    y = 0.994192,
+                },
+            },
+        },
+    },
     [142275] = {
         name = "Grommash Hellscream",
         locations = {
@@ -9377,5 +9388,30 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
+    },
+    [155784] = {
+        name = "Anduin Wrynn",
+        locations = {
+            {
+                {
+                    x = 0.540589,
+                    y = 0.425269,
+                },
+            },
+        },
+    },
+    [155785] = {
+        name = "Lady Jaina Proudmoore",
+        locations = {
+            [1535] = {
+                {
+                    x = 0.363759,
+                    y = 0.640817,
+                },
+            },
+        },
+    },
+    [155789] = {
+        name = "Lor'themar Theron",
     },
 })

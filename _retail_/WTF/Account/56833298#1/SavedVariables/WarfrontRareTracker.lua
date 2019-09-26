@@ -5,6 +5,9 @@ WarfrontRareTrackerDB = {
 			["selectedZone"] = 62,
 		},
 	},
+	["global"] = {
+		["printCompatibilityMessage1"] = false,
+	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
@@ -12,16 +15,13 @@ WarfrontRareTrackerDB = {
 		["Brotus - Argent Dawn"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-	},
-	["global"] = {
-		["printCompatibilityMessage1"] = false,
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

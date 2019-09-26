@@ -60828,6 +60828,43 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [56494] = {
+        name = "The Eve of Battle",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 135614,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [56495] = {
+        name = "They Move Against Us",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [56496] = {
+        name = "The Eve of Battle",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
     [56504] = {
         name = "Wrathion's Journal",
         requiredLevel = 120,
@@ -60985,6 +61022,15 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [56719] = {
+        name = "This Ain't Mine",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155784,
+        },
+    },
     [56739] = {
         name = "The Power of Worship",
         requiredLevel = 120,
@@ -61050,6 +61096,147 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [56833] = {
+        name = "Leaders of the Horde",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [56979] = {
+        name = "Saving the Siege",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155784,
+            locations = {
+                [1535] = {
+                    {
+                        x = 0.415032,
+                        y = 0.560043,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56980] = {
+        name = "Already Among Us",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155784,
+            locations = {
+                [1535] = {
+                    {
+                        x = 0.415032,
+                        y = 0.560043,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56981] = {
+        name = "Strategic Deployment",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155784,
+            locations = {
+                [1535] = {
+                    {
+                        x = 0.415032,
+                        y = 0.560043,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56982] = {
+        name = "Before the Gates of Orgrimmar",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155784,
+            locations = {
+                [1535] = {
+                    {
+                        x = 0.415045,
+                        y = 0.560036,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56993] = {
+        name = "The Price of Victory",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155785,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57002] = {
+        name = "Old Soldier",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155785,
+            locations = {
+                [1535] = {
+                    {
+                        x = 0.346272,
+                        y = 0.601517,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 702000,
+            },
+        },
+    },
     [57006] = {
         name = "A Worthy Ally",
         requiredLevel = 120,
@@ -61092,6 +61279,198 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2164,
                 amount = 150,
+            },
+        },
+    },
+    [57088] = {
+        name = "This Ain't Mine",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57090] = {
+        name = "Saving the Siege",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57091] = {
+        name = "Already Among Us",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57092] = {
+        name = "Strategic Deployment",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57093] = {
+        name = "Before the Gates of Orgrimmar",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57094] = {
+        name = "The Price of Victory",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57095] = {
+        name = "Old Soldier",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 702000,
+            },
+        },
+    },
+    [57126] = {
+        name = "...And Following Seas",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150633,
+            locations = {
+                [1161] = {
+                    {
+                        x = 0.69326,
+                        y = 0.271417,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57130] = {
+        name = "Traitors In Our Midst",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57147] = {
+        name = "Not My Warchief",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57148] = {
+        name = "Siegebreakers",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57149] = {
+        name = "Propaganda Takedown",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57150] = {
+        name = "Militia",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57151] = {
+        name = "A Line in the Sand",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [57152] = {
+        name = "Most Loyal",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [57198] = {
+        name = "Sense of Obligation",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 141961,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
             },
         },
     },
