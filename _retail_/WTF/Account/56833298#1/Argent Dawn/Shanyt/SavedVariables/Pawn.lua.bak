@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0246,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 166696,
@@ -86,11 +83,15 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:158130::::::::120:71::28:3:4803:1597:4786:::|h[Zocalo Pummeler]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 170470,
-			["Level"] = 385,
-			["Link"] = "|cffa335ee|Hitem:170470::::::::120:71:::2:1497:4786:::|h[Reinforced Grease Deflector]|h|r",
+			["ID"] = 117378,
+			["Level"] = 395,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:117378::::::::120:71:512:11:1:6315:120:::|h[Direbrew's Bloodied Shanker]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

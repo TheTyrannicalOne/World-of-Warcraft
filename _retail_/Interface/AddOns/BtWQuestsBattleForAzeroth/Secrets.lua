@@ -1249,6 +1249,10 @@ BtWQuestsDatabase:AddChain(BtWQuests.Constant.Chain.BattleForAzeroth.Secrets.Hon
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_SECRETS,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
+    restrictions = {
+        type = "faction",
+        id = BtWQuests.Constant.Faction.Alliance,
+    },
     prerequisites = {
         {
             type = "pet",

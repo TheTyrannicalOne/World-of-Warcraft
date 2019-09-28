@@ -958,6 +958,9 @@ function ExpansionMixin:GetMajorItems(character)
 
     return {items[1], items[2], items[3]}
 end
+function ExpansionMixin:IsCompleted()
+    return GetAccountExpansionLevel() >= self.id
+end
 
 local ItemMixin = {};
 function ItemMixin:EqualsItem(database, item, other)
@@ -1408,6 +1411,8 @@ function QuestItemMixin:OnLeave(database, item, character, button, frame, toolti
         tooltip:Hide()
     end
 end
+
+local ExpansionItemMixin = CreateFromMixins(ItemMixin);
 
 local CategoryItemMixin = CreateFromMixins(ItemMixin);
 function CategoryItemMixin:GetLink(database, item)
@@ -2428,9 +2433,11 @@ function Database:EvalItemRequirement(item, character)
         end
 
         return CheckStatusCount(amount, item)
-    else
+    elseif item.type ~= nil then
         assert(self.ItemTypes[item.type] ~= nil, format("Unknown type %s", item.type));
         return self.ItemTypes[item.type]:IsCompleted(self, item, character);
+    else
+        return self:EvalRequirement(item.onEval or item.completed, item, character)
     end
 end
 function Database:EvalText(text, item, character)
@@ -3074,6 +3081,7 @@ Database:RegisterDataType("mission", MissionMixin);
 
 Database:RegisterItemType("header", HeaderItemMixin);
 Database:RegisterItemType("quest", QuestItemMixin);
+Database:RegisterItemType("expansion", ExpansionItemMixin);
 Database:RegisterItemType("category", CategoryItemMixin);
 Database:RegisterItemType("chain", ChainItemMixin);
 Database:RegisterItemType("mission", MissionItemMixin);

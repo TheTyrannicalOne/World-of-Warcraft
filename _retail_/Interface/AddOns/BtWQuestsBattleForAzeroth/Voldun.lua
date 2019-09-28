@@ -30,7 +30,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_DANGERS_IN_
     },
     completed = {
         type = "quest",
-        id = 48549,
+        ids = {48549, 48550},
+        count = 2,
     },
     items = {
         {
@@ -182,7 +183,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_DANGERS_IN_
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_THE_WARGUARDS_FATE, {
     name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 2)
+        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 3)
     end,
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_VOLDUN,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
@@ -378,7 +379,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_THE_WARGUAR
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_A_CITY_OF_SECRETS, {
     name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 3)
+        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 4)
     end,
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_VOLDUN,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
@@ -519,7 +520,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_A_CITY_OF_S
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_THE_THREE_KEEPERS, {
     name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 4)
+        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 5)
     end,
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_VOLDUN,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
@@ -630,7 +631,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_THE_THREE_K
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_STORMING_THE_SPIRE, {
     name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 5)
+        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 6)
     end,
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_VOLDUN,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
@@ -837,7 +838,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_STORMING_TH
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_ATULAMAN, {
     name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 6)
+        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 7)
     end,
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_VOLDUN,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
@@ -938,7 +939,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_ATULAMAN, {
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_UNLIKELY_ALLIES, {
     name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 7)
+        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 2)
     end,
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_VOLDUN,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
