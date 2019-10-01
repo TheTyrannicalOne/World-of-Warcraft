@@ -1,73 +1,17 @@
-9/22 18:35:28.111  Connection Initialize
-9/22 18:35:31.332  Glue Start Login
-9/22 18:35:31.332  BattleNet Attempt Logon
-9/22 18:35:31.629  BattleNet Front Connected
-9/22 18:35:31.760  BattleNet Logon Queue Update
-9/22 18:35:31.951  BattleNet Logon Complete
-9/22 18:35:32.115  BattleNet Game Account Name
-9/22 18:35:32.115  BattleNet Game Account Name
-9/22 18:35:32.115  BattleNet Attempt Complete Login
-9/22 18:35:32.651  BattleNet Realm List Ticket
-9/22 18:35:32.766  BattleNet Sub Region List
-9/22 18:35:32.970  BattleNet Last Played Char
-9/22 18:35:33.390  BattleNet Realm List
-9/22 18:36:04.157  BattleNet Sub Region List
-9/22 18:36:04.628  BattleNet Realm List
-9/22 18:36:35.137  BattleNet Sub Region List
-9/22 18:36:35.669  BattleNet Realm List
-9/22 18:37:06.127  BattleNet Sub Region List
-9/22 18:37:06.665  BattleNet Realm List
-9/22 18:37:37.112  BattleNet Sub Region List
-9/22 18:37:37.530  BattleNet Realm List
-9/22 18:38:08.140  BattleNet Sub Region List
-9/22 18:38:08.526  BattleNet Realm List
-9/22 18:38:39.129  BattleNet Sub Region List
-9/22 18:38:39.557  BattleNet Realm List
-9/22 18:39:10.142  BattleNet Sub Region List
-9/22 18:39:10.674  BattleNet Realm List
-9/22 18:39:41.160  BattleNet Sub Region List
-9/22 18:39:41.697  BattleNet Realm List
-9/22 18:40:12.127  BattleNet Sub Region List
-9/22 18:40:12.596  BattleNet Realm List
-9/22 18:40:43.132  BattleNet Sub Region List
-9/22 18:40:43.614  BattleNet Realm List
-9/22 18:41:14.122  BattleNet Sub Region List
-9/22 18:41:14.600  BattleNet Realm List
-9/22 18:41:45.166  BattleNet Sub Region List
-9/22 18:41:45.648  BattleNet Realm List
-9/22 18:42:16.168  BattleNet Sub Region List
-9/22 18:42:16.599  BattleNet Realm List
-9/22 18:42:47.114  BattleNet Sub Region List
-9/22 18:42:47.668  BattleNet Realm List
-9/22 18:43:18.163  BattleNet Sub Region List
-9/22 18:43:18.699  BattleNet Realm List
-9/22 18:43:49.141  BattleNet Sub Region List
-9/22 18:43:49.697  BattleNet Realm List
-9/22 18:44:20.127  BattleNet Sub Region List
-9/22 18:44:20.625  BattleNet Realm List
-9/22 18:44:51.119  BattleNet Sub Region List
-9/22 18:44:51.557  BattleNet Realm List
-9/22 18:45:22.113  BattleNet Sub Region List
-9/22 18:45:22.539  BattleNet Realm List
-9/22 18:45:53.113  BattleNet Sub Region List
-9/22 18:45:53.554  BattleNet Realm List
-9/22 18:46:24.119  BattleNet Sub Region List
-9/22 18:46:24.663  BattleNet Realm List
-9/22 18:46:55.130  BattleNet Sub Region List
-9/22 18:46:55.623  BattleNet Realm List
-9/22 18:47:26.136  BattleNet Sub Region List
-9/22 18:47:26.589  BattleNet Realm List
-9/22 18:47:57.114  BattleNet Sub Region List
-9/22 18:47:57.660  BattleNet Realm List
-9/22 18:48:28.106  BattleNet Sub Region List
-9/22 18:48:28.708  BattleNet Realm List
-9/22 18:48:59.199  BattleNet Sub Region List
-9/22 18:48:59.585  BattleNet Realm List
-9/22 18:49:30.121  BattleNet Sub Region List
-9/22 18:49:30.594  BattleNet Realm List
-9/22 18:49:40.564  Glue Script Disconnect From Server
-9/22 18:49:40.564  BattleNet Defer Disconnect
-9/22 18:49:40.564  BattleNet Front Disconnecting
-9/22 18:49:40.564  Glue Cancel WoW Connection
-9/22 18:49:40.639  BattleNet Front Disconnected
-9/22 18:49:42.277  Connection Destroy
+9/28 20:36:51.020  Connection Initialize
+9/28 20:36:54.546  Glue Start Login
+9/28 20:36:54.546  BattleNet Attempt Logon
+9/28 20:36:54.830  BattleNet Front Connected
+9/28 20:36:54.962  BattleNet Logon Queue Update
+9/28 20:36:55.199  BattleNet Logon Complete
+9/28 20:36:55.332  BattleNet Game Account Name
+9/28 20:36:55.389  BattleNet Game Account Name
+9/28 20:36:55.389  BattleNet Attempt Complete Login
+9/28 20:36:55.866  BattleNet Realm List Ticket
+9/28 20:36:55.993  BattleNet Sub Region List
+9/28 20:36:56.139  Glue Script Disconnect From Server
+9/28 20:36:56.139  BattleNet Defer Disconnect
+9/28 20:36:56.139  BattleNet Front Disconnecting
+9/28 20:36:56.139  Glue Cancel WoW Connection
+9/28 20:36:56.210  BattleNet Front Disconnected
+9/28 20:36:57.580  Connection Destroy
