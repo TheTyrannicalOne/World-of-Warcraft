@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0246,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0305,
 	["ItemLevels"] = {
 		{
 			["ID"] = 166696,
@@ -32,9 +29,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163461::::::::120:71::28:3:5125:1587:4786:::|h[Honorbound Centurion's Greatbelt]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 163455,
-			["Level"] = 395,
-			["Link"] = "|cffa335ee|Hitem:163455::::::::120:71::28:4:5125:4802:1587:4784:::|h[Honorbound Centurion's Legplates]|h|r",
+			["ID"] = 165493,
+			["Level"] = 405,
+			["Link"] = "|cffa335ee|Hitem:165493::::::::120:71::6:4:5126:1517:5850:4783:::|h[Deathguard's Greaves]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 167776,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:117378::::::::120:71:512:11:1:6315:120:::|h[Direbrew's Bloodied Shanker]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
