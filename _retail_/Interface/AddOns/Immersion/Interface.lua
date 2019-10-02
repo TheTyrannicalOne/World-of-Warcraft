@@ -138,6 +138,6 @@ function API:GetNamePlateForUnit(...)
 end
 
 function API:GetCreatureID(unit)
-	local guid = UnitGUID(unit)
+	local guid = unit and UnitGUID(unit)
 	return guid and select(6, strsplit('-', guid))
 end

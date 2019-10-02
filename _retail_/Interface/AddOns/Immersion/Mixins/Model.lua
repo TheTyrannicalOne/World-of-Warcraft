@@ -32,6 +32,10 @@ function Model:IsNPC()    return self.unit == 'npc' or self.unit == 'questnpc' e
 function Model:IsEther()  return self.unit == 'ether' end
 function Model:GetUnit()  return self.unit end
 
+function Model:GetCreature()
+	return self.creatureID or API:GetCreatureID(self.unit)
+end
+
 function Model:SetUnit(unit)
 	self.unitDirty = unit
 	if self:IsVisible() then
@@ -49,7 +53,6 @@ function Model:IsDefectModel()
 	return self.defectmodel
 end
 
-
 function Model:ApplyModelFromUnit(unit)
 	if self.file[unit] then
 		self:SetModel(self.file[unit])
@@ -58,12 +61,17 @@ function Model:ApplyModelFromUnit(unit)
 		self:SetPosition(0, 0, .25)
 		self.unit = 'ether'
 	else
-		local creatureID = tonumber(unit)
+		local mt = getmetatable(self).__index
+		local creatureID = tonumber(unit) or API:GetCreatureID(unit)
+		local apply = creatureID and mt.SetCreature or unit and mt.SetUnit
 		self:SetCamDistanceScale(1)
 		self:SetPortraitZoom(.85)
 		self:SetPosition(0, 0, 0)
-		self:SetCreature(creatureID or API:GetCreatureID(unit))
-		self.unit = creatureID and 'npc' or unit
+		if apply then
+			apply(self, creatureID or unit)
+			self.creatureID = creatureID
+			self.unit = creatureID and 'npc' or unit
+		end
 	end
 end
 
