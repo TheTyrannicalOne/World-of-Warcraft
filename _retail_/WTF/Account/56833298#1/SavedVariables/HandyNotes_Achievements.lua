@@ -1,10 +1,10 @@
 
 HandyNotesAchievementsDB = {
 	["profileKeys"] = {
-		["Tyrann - Zul'jin"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Vancard - Zul'jin"] = "Default",
+		["Tyrann - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
