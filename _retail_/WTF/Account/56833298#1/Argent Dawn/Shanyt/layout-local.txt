@@ -16,7 +16,7 @@ H: 80
 Frame: rareFrame
 FrameLevel: 1
 Anchor: RIGHT
-X: 15
+X: 45
 Y: 81
 W: 261
 H: 469
