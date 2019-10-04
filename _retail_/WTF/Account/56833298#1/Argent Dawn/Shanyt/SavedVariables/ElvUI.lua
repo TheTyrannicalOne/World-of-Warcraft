@@ -1,622 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/p if im needed i can help ", -- [1]
-		"/train", -- [2]
+		"/p is that the case nec?", -- [1]
+		"/p 13s", -- [2]
 		"/p but i can take next win if nobody wants it :)", -- [3]
-		"/dance", -- [4]
-		"/p im to drunk to remeber", -- [5]
-		"/p enur your up", -- [6]
-		"/p lol", -- [7]
-		"/p both of you have all your coins?", -- [8]
-		"/p who needs what are we all good?", -- [9]
-		"/p next winner up", -- [10]
-		"/p not i got 7 sec and can help", -- [11]
-		"/p is that the case nec?", -- [12]
-		"/p shwaggert how many coins you have", -- [13]
-		"/p i got mine so im down to help whoever", -- [14]
-		"/p cheer", -- [15]
-		"/p cool thanks for the help btw", -- [16]
-		"/p its about to be ight imma head out for me lol", -- [17]
-		"/p if im needed i can help", -- [18]
-		"/p i need one more then its toy time", -- [19]
-		"/p 13s", -- [20]
+		"/p not i got 7 sec and can help", -- [4]
+		"/p next winner up", -- [5]
+		"/p i got mine so im down to help whoever", -- [6]
+		"/p i need one more then its toy time", -- [7]
+		"/dance", -- [8]
+		"/p enur your up", -- [9]
+		"/p if im needed i can help", -- [10]
+		"/p cool thanks for the help btw", -- [11]
+		"/p both of you have all your coins?", -- [12]
+		"/wave", -- [13]
+		"/cw Enetity-ArgentDawn boots not the mount i been trying to get forever lol", -- [14]
+		"/cw Enetity-ArgentDawn indeed", -- [15]
+		"/cw Enetity-ArgentDawn and thanks good luck to you as well", -- [16]
+		"/cw Enetity-ArgentDawn about 50 now", -- [17]
+		"/cw Enetity-ArgentDawn rng is kind sometimes and cruel to me when i actually want something", -- [18]
+		"/cw Enetity-ArgentDawn i was for a while but i havent spent much time in panda land gatehring as of late so many other things to do", -- [19]
+		"/cw Enetity-ArgentDawn gold good luck im out for the night", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"eat", -- [1]
-			"Thrilidan-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thrilidan-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			315, -- [11]
-			"Player-75-0A98F24B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
-			[51] = 1569189135,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [1]
-		{
-			"eat", -- [1]
-			"Thrilidan-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thrilidan-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			316, -- [11]
-			"Player-75-0A98F24B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
-			[51] = 1569189136,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [2]
-		{
-			"eat", -- [1]
-			"Thrilidan-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thrilidan-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			317, -- [11]
-			"Player-75-0A98F24B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
-			[51] = 1569189137,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [3]
-		{
-			"eat", -- [1]
-			"Thrilidan-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thrilidan-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			318, -- [11]
-			"Player-75-0A98F24B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
-			[51] = 1569189138,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [4]
-		{
-			"next winner up", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			321, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189177,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [5]
-		{
-			"last token", -- [1]
-			"Thrilidan-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thrilidan-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			322, -- [11]
-			"Player-75-0A98F24B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
-			[51] = 1569189181,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [6]
-		{
-			"cheer", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			323, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189185,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [7]
-		{
-			"I have 34 sec", -- [1]
-			"Vixon-Drenden", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vixon-Drenden", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			325, -- [11]
-			"Player-1165-06A70A30", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecVixon-Drenden|r",
-			[51] = 1569189191,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [8]
-		{
-			"enur your up", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			326, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189217,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [9]
-		{
-			"i need one more then its toy time ", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			332, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189246,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [10]
-		{
-			"shwaggert how many coins you have", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			333, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189261,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [11]
-		{
-			"13s", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			339, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189335,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [12]
-		{
-			"both of you have all your coins?", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			347, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189374,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [13]
-		{
-			"yes", -- [1]
-			"Vixon-Drenden", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vixon-Drenden", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			348, -- [11]
-			"Player-1165-06A70A30", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecVixon-Drenden|r",
-			[51] = 1569189382,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [14]
-		{
-			"well I do", -- [1]
-			"Vixon-Drenden", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vixon-Drenden", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			349, -- [11]
-			"Player-1165-06A70A30", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecVixon-Drenden|r",
-			[51] = 1569189388,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [15]
-		{
-			"cool thanksh for the help btw", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			351, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189396,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [16]
-		{
-			"np, ty", -- [1]
-			"Vixon-Drenden", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vixon-Drenden", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			354, -- [11]
-			"Player-1165-06A70A30", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecVixon-Drenden|r",
-			[51] = 1569189401,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [17]
-		{
-			"already have all mine, just helping out with filling slots", -- [1]
-			"Enur-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Enur-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			358, -- [11]
-			"Player-75-0B574CD5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Enur|r",
-			[51] = 1569189414,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [18]
-		{
-			"same", -- [1]
-			"Vixon-Drenden", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vixon-Drenden", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			362, -- [11]
-			"Player-1165-06A70A30", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecVixon-Drenden|r",
-			[51] = 1569189423,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [19]
-		{
-			"who all does not have the toy yet and how many coins are you missing?", -- [1]
-			"Vixon-Drenden", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vixon-Drenden", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			363, -- [11]
-			"Player-1165-06A70A30", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecVixon-Drenden|r",
-			[51] = 1569189448,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [20]
-		{
-			"Who still needs?", -- [1]
-			"Vixon-Drenden", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vixon-Drenden", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			375, -- [11]
-			"Player-1165-06A70A30", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecVixon-Drenden|r",
-			[51] = 1569189495,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [21]
-		{
-			"i got mine sho im down to help whoever ...hic!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			380, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189506,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [22]
-		{
-			"shhanty", -- [1]
-			"Thrilidan-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thrilidan-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			382, -- [11]
-			"Player-75-0A98F24B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
-			[51] = 1569189528,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [23]
-		{
-			"remember Ragnarrokk", -- [1]
-			"Thrilidan-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thrilidan-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			392, -- [11]
-			"Player-75-0A98F24B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
-			[51] = 1569189539,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [24]
-		{
-			"im to drunk to remeber ...hic!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			394, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189561,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [25]
-		{
-			"lol", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			395, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1569189566,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [26]
-		{
-			"thatsh Meeeeeeeeeeeeeeeee", -- [1]
-			"Thrilidan-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thrilidan-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			396, -- [11]
-			"Player-75-0A98F24B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
-			[51] = 1569189571,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [27]
 		{
 			"lol ...hic!", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -638,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189571,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [28]
+		}, -- [1]
 		{
 			"Who's next?", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -660,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189634,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [29]
+		}, -- [2]
 		{
 			"not zI ...hic!", -- [1]
 			"Thrilidan-TheScryers", -- [2]
@@ -682,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
 			[51] = 1569189649,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [30]
+		}, -- [3]
 		{
 			"not i got 7 shec and can help", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -704,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569189655,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [31]
+		}, -- [4]
 		{
 			"im good", -- [1]
 			"Thrilidan-TheScryers", -- [2]
@@ -726,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Thrilidan-TheScryers|r",
 			[51] = 1569189657,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [32]
+		}, -- [5]
 		{
 			"same", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -748,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189663,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [33]
+		}, -- [6]
 		{
 			"who needs what are we all good?", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -770,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569189767,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [34]
+		}, -- [7]
 		{
 			"I'm not sure.", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -792,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189782,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [35]
+		}, -- [8]
 		{
 			"Shwagg are you good?", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -814,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189792,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [36]
+		}, -- [9]
 		{
 			"I believe Vixon, Thrillidan, Shanyt, and myself are all done with it?", -- [1]
 			"Enur-ArgentDawn", -- [2]
@@ -836,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Enur|r",
 			[51] = 1569189808,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [37]
+		}, -- [10]
 		{
 			"I think so..", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -858,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189824,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [38]
+		}, -- [11]
 		{
 			"ROFL", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -880,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189832,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [39]
+		}, -- [12]
 		{
 			"lol", -- [1]
 			"Enur-ArgentDawn", -- [2]
@@ -902,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Enur|r",
 			[51] = 1569189833,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [40]
+		}, -- [13]
 		{
 			"Nec, do you have all of yours?", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -924,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189853,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [41]
+		}, -- [14]
 		{
 			"Blood?", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -946,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189864,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [42]
+		}, -- [15]
 		{
 			"lol", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -968,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569189955,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [43]
+		}, -- [16]
 		{
 			"its about to be ight imma head out for me lol", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -990,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569189989,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [44]
+		}, -- [17]
 		{
 			"ok", -- [1]
 			"Enur-ArgentDawn", -- [2]
@@ -1012,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Enur|r",
 			[51] = 1569190008,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [45]
+		}, -- [18]
 		{
 			"I think the Nec maybe the only one missing it.", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1034,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190011,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [46]
+		}, -- [19]
 		{
 			"if im needed i can help ", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1056,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569190025,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [47]
+		}, -- [20]
 		{
 			"is that the case nec?", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1078,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569190034,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [48]
+		}, -- [21]
 		{
 			"Nec and Shwag I am guessing.", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1100,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190118,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [49]
+		}, -- [22]
 		{
 			"Nec and Shwag still need I am guessing.", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1122,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190145,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [50]
+		}, -- [23]
 		{
 			"just 1 more for me", -- [1]
 			"Necrothermia-Kil'jaeden", -- [2]
@@ -1144,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Necrothermia-Kil'jaeden|r",
 			[51] = 1569190157,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [51]
+		}, -- [24]
 		{
 			"Good deal.", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1166,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190166,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [52]
+		}, -- [25]
 		{
 			"Shwag, how many more do you need?", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1188,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190189,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [53]
+		}, -- [26]
 		{
 			"just one more for me", -- [1]
 			"Shwaggert-EarthenRing", -- [2]
@@ -1210,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeShwaggert-EarthenRing|r",
 			[51] = 1569190195,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [54]
+		}, -- [27]
 		{
 			"awesomeness", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1232,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190208,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [55]
+		}, -- [28]
 		{
 			"1 more time after this for Shwag and I think everyone will have it", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1254,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190245,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [56]
+		}, -- [29]
 		{
 			"all this time we were talking in party... they couldn't hear it lol", -- [1]
 			"Enur-ArgentDawn", -- [2]
@@ -1276,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Enur|r",
 			[51] = 1569190253,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [57]
+		}, -- [30]
 		{
 			"lol yeah I thought about it lol", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1298,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190271,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [58]
+		}, -- [31]
 		{
 			"it was like maybe they are not answering bc they dont see the chat lol", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1320,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190289,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [59]
+		}, -- [32]
 		{
 			"and now I nid y'all adue, ty for group!", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1342,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190405,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [60]
+		}, -- [33]
 		{
 			"ty guys", -- [1]
 			"Necrothermia-Kil'jaeden", -- [2]
@@ -1364,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Necrothermia-Kil'jaeden|r",
 			[51] = 1569190409,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [61]
+		}, -- [34]
 		{
 			"*bid", -- [1]
 			"Vixon-Drenden", -- [2]
@@ -1386,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVixon-Drenden|r",
 			[51] = 1569190411,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [62]
+		}, -- [35]
 		{
 			"bye ", -- [1]
 			"Enur-ArgentDawn", -- [2]
@@ -1408,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Enur|r",
 			[51] = 1569190423,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [63]
+		}, -- [36]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1430,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569285007,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
+		}, -- [37]
 		{
 			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1452,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569285109,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [38]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1474,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569285136,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
+		}, -- [39]
 		{
 			"Need to relax?  Visit T'chali's Voodoo Brewery at Brewfest for drinks that go down smooth!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1496,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569285177,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
+		}, -- [40]
 		{
 			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1518,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569374227,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
+		}, -- [41]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1540,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569374257,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [69]
+		}, -- [42]
 		{
 			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1562,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569374356,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [70]
+		}, -- [43]
 		{
 			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1584,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569374391,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [71]
+		}, -- [44]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -1606,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1569375488,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [72]
+		}, -- [45]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -1628,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1569376313,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [73]
+		}, -- [46]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -1650,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1569376824,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [74]
+		}, -- [47]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -1672,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1569377098,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [75]
+		}, -- [48]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -1694,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1569380302,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [76]
+		}, -- [49]
 		{
 			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1716,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569456457,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [77]
+		}, -- [50]
 		{
 			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1738,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569456479,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [78]
+		}, -- [51]
 		{
 			"Need to relax?  Visit T'chali's Voodoo Brewery at Brewfest for drinks that go down smooth!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1760,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569456520,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [79]
+		}, -- [52]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1782,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569456553,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [80]
+		}, -- [53]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -1804,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1569457482,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [81]
+		}, -- [54]
 		{
 			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1826,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569549616,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [82]
+		}, -- [55]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1848,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569549641,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [83]
+		}, -- [56]
 		{
 			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1870,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569549680,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [84]
+		}, -- [57]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1892,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569549717,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [85]
+		}, -- [58]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -1914,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1569551753,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [86]
+		}, -- [59]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1936,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569554312,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [87]
+		}, -- [60]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1958,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569622284,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [88]
+		}, -- [61]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1980,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569622310,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [89]
+		}, -- [62]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2002,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569622347,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [90]
+		}, -- [63]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2024,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569622386,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [91]
+		}, -- [64]
 		{
 			":..Lust Detector:..: Corimba Casted a Spell |cff71d5ff|Hspell:2825:0|h[Sede de Sangue]|h|r!", -- [1]
 			"Corimba-Nemesis", -- [2]
@@ -2046,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcCorimba-Nemesis|r",
 			[51] = 1569622690,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [92]
+		}, -- [65]
 		{
 			"Retched Blackrock on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2068,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689100,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [93]
+		}, -- [66]
 		{
 			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2090,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689219,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [94]
+		}, -- [67]
 		{
 			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2112,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689233,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [95]
+		}, -- [68]
 		{
 			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2134,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689236,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [96]
+		}, -- [69]
 		{
 			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2156,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689259,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [97]
+		}, -- [70]
 		{
 			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2178,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689278,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
+		}, -- [71]
 		{
 			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2200,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689294,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [72]
 		{
 			"Blood Ritual on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2222,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689772,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [100]
+		}, -- [73]
 		{
 			"Rapid Fire on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2244,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569689779,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [74]
 		{
 			"Interrupted Asithra Diresong's |cff71d5ff|Hspell:283911:0|h[Darkscale's Dire Song]|h|r!", -- [1]
 			"Hawkelegacy-Hyjal", -- [2]
@@ -2266,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Hawkelegacy-Hyjal|r",
 			[51] = 1569742078,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [102]
+		}, -- [75]
 		{
 			"Interrupted Gilnean Defuser's |cff71d5ff|Hspell:279185:0|h[Throw Dynamite]|h|r!", -- [1]
 			"Hawkelegacy-Hyjal", -- [2]
@@ -2288,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Hawkelegacy-Hyjal|r",
 			[51] = 1569742286,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [103]
+		}, -- [76]
 		{
 			"Interrupted Druid of the Branch's |cff71d5ff|Hspell:282116:0|h[Wrath]|h|r!", -- [1]
 			"Hawkelegacy-Hyjal", -- [2]
@@ -2310,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Hawkelegacy-Hyjal|r",
 			[51] = 1569742382,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [104]
+		}, -- [77]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2332,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569746643,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
+		}, -- [78]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2354,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569746812,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [106]
+		}, -- [79]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2376,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569746859,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [107]
+		}, -- [80]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2398,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747049,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [81]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2420,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747049,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [109]
+		}, -- [82]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2442,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747050,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [110]
+		}, -- [83]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2464,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747202,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [111]
+		}, -- [84]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2486,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747202,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [112]
+		}, -- [85]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2508,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747203,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [113]
+		}, -- [86]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2530,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747447,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [114]
+		}, -- [87]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2552,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747474,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [115]
+		}, -- [88]
 		{
 			"lol", -- [1]
 			"Bubby-EmeraldDream", -- [2]
@@ -2574,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Bubby-EmeraldDream|r",
 			[51] = 1569747677,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [116]
+		}, -- [89]
 		{
 			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2596,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569770847,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [117]
+		}, -- [90]
 		{
 			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2618,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569770890,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [118]
+		}, -- [91]
 		{
 			"Need to relax?  Visit T'chali's Voodoo Brewery at Brewfest for drinks that go down smooth!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2640,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569770930,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [119]
+		}, -- [92]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2662,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569770969,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [120]
+		}, -- [93]
 		{
 			"Cinders on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2684,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569803136,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [121]
+		}, -- [94]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -2706,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1569809008,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [122]
+		}, -- [95]
 		{
 			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2728,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569901264,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [123]
+		}, -- [96]
 		{
 			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2750,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569901292,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [124]
+		}, -- [97]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2772,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569901333,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [125]
+		}, -- [98]
 		{
 			"T'chali's Voodoo Brews helps keep the party going!  Check out the party at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2794,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569901363,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [126]
+		}, -- [99]
 		{
 			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2815,6 +2221,600 @@ ElvCharacterDB = {
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1569901459,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [100]
+		{
+			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			28, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1569988694,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [101]
+		{
+			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			30, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1569988718,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [102]
+		{
+			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			31, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1569988759,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [103]
+		{
+			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			36, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1569988794,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [104]
+		{
+			"What did you get?", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			779, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994126,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [105]
+		{
+			"boots not the mount i been trying to get forever lol", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			782, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994159,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [106]
+		{
+			"Good luck next time you're going to do Nalak next?", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			783, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994183,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [107]
+		{
+			"indeed", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			784, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994190,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [108]
+		{
+			"Same", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			785, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994200,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [109]
+		{
+			"and thanks good luck to you as well", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			786, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994203,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [110]
+		{
+			"How many attempts?", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			787, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994217,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [111]
+		{
+			"about 50 now", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			788, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994279,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [112]
+		{
+			"Do you use|cffffffff|Hcurrency:697:0|h[Elder Charm of Good Fortune]|h|r or|cffffffff|Hcurrency:752:0|h[Mogu Rune of Fate]|h|r?", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			791, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994311,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [113]
+		{
+			"rng is kind sometimes and cruel to me when i actually want something", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			792, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994321,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [114]
+		{
+			"i was for a while but i havent spent much time in panda land gatehring as of late so many other things to do", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			793, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994365,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [115]
+		{
+			"Yea same", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			796, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994388,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [116]
+		{
+			"What did you get?", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			801, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994507,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [117]
+		{
+			"gold good luck im out for the night", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			812, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994565,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [118]
+		{
+			"You too", -- [1]
+			"Enetity-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Enetity-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			813, -- [11]
+			"Player-75-0AF8B220", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecEnetity|r",
+			[51] = 1569994571,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [119]
+		{
+			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			379, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1570070045,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [120]
+		{
+			"Would you really drink brew from an orc or an ogre?  For a better choice check out T'chali's Voodoo Brewery at Brewfest!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			380, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1570070071,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [121]
+		{
+			"Need to relax?  Visit T'chali's Voodoo Brewery at Brewfest for drinks that go down smooth!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			383, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1570070124,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [122]
+		{
+			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			388, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1570070160,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [123]
+		{
+			"If you could use some exotic brew, T'chali's Voodoo Brewery at Brewfest has got you covered!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			425, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1570070231,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [124]
+		{
+			"Howdy", -- [1]
+			"Gorlami-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			441, -- [11]
+			"Player-75-0C48CA11", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Gorlami|r",
+			[51] = 1570071471,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [125]
+		{
+			"62 gratz", -- [1]
+			"Gorlami-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			442, -- [11]
+			"Player-75-0C48CA11", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Gorlami|r",
+			[51] = 1570071492,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"Fixate on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2137, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1570076583,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [127]
 	},

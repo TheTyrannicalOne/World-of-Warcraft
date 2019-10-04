@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.09 (24th September 2019)
+-- 	Leatrix Plus 8.2.10 (2nd October 2019)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.09"
+	LeaPlusLC["AddonVer"] = "8.2.10"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -1122,41 +1122,28 @@
 			LeaPlusCB["DressUpNudeBtn"]:ClearAllPoints()
 			LeaPlusCB["DressUpNudeBtn"]:SetPoint("RIGHT", DressUpFrameResetButton, "LEFT", 0, 0)
 			LeaPlusCB["DressUpNudeBtn"]:SetScript("OnClick", function()
-				if ClientVersion == "8.2.5" then
-					-- Strip model
-					SetupPlayerForModelScene(DressUpFrame.ModelScene, {}, false, false)
-				else
-					-- Pre 8.2.5
-					DressUpFrameResetButton:Click() -- Done first in case any slots refuse to clear
-					for i = 1, 19 do
-						DressUpModel:UndressSlot(i) -- Done this way to prevent issues with Undress
-					end
-				end
+				-- Strip model
+				SetupPlayerForModelScene(DressUpFrame.ModelScene, {}, false, false)
 			end)
 
 			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrame, "Tabard", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
 			LeaPlusCB["DressUpTabBtn"]:ClearAllPoints()
 			LeaPlusCB["DressUpTabBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpNudeBtn"], "LEFT", 0, 0)
 			LeaPlusCB["DressUpTabBtn"]:SetScript("OnClick", function()
-				if ClientVersion == "8.2.5" then
-					-- Store all appearance sources in table
-					local appearanceSources = {}
-					local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
-					for slotID = 1, 19 do
-						local appearanceSourceID, illusionSourceID = playerActor:GetSlotTransmogSources(slotID)
-						tinsert(appearanceSources, appearanceSourceID)
+				-- Store all appearance sources in table
+				local appearanceSources = {}
+				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
+				for slotID = 1, 19 do
+					local appearanceSourceID, illusionSourceID = playerActor:GetSlotTransmogSources(slotID)
+					tinsert(appearanceSources, appearanceSourceID)
+				end
+				-- Strip model
+				SetupPlayerForModelScene(DressUpFrame.ModelScene, {}, false, false)
+				-- Apply all appearance sources except tabard slot (19)
+				for slotID = 1, 18 do
+					if appearanceSources[slotID] and appearanceSources[slotID] > 0 then
+						playerActor:TryOn(appearanceSources[slotID])
 					end
-					-- Strip model
-					SetupPlayerForModelScene(DressUpFrame.ModelScene, {}, false, false)
-					-- Apply all appearance sources except tabard slot (19)
-					for slotID = 1, 18 do
-						if appearanceSources[slotID] and appearanceSources[slotID] > 0 then
-							playerActor:TryOn(appearanceSources[slotID])
-						end
-					end
-				else
-					-- Pre 8.2.5
-					DressUpModel:UndressSlot(19)
 				end
 			end)
 
@@ -1171,136 +1158,57 @@
 				LeaPlusCB["DressUpTabBtn"]:Hide()
 			end)
 
-			local BtnStrata, BtnLevel
-			if ClientVersion == "8.2.5" then
-				BtnStrata, BtnLevel = SideDressUpFrame.ResetButton:GetFrameStrata(), SideDressUpFrame.ResetButton:GetFrameLevel()
-			else
-				BtnStrata, BtnLevel = SideDressUpModelResetButton:GetFrameStrata(), SideDressUpModelResetButton:GetFrameLevel()
-			end
+			local BtnStrata, BtnLevel = SideDressUpFrame.ResetButton:GetFrameStrata(), SideDressUpFrame.ResetButton:GetFrameLevel()
 
 			-- Add buttons to auction house dressup frame
-			LeaPlusLC:CreateButton("DressUpSideBtn", SideDressUpFrame, "Tabard", "BOTTOMLEFT", 14, 20, 60, 22, false, "")
-			if ClientVersion == "8.2.5" then
-				LeaPlusCB["DressUpSideBtn"]:ClearAllPoints()
-				LeaPlusCB["DressUpSideBtn"]:SetPoint("BOTTOMLEFT", SideDressUpFrame, "BOTTOMLEFT", 14, 40)
-			end
-			LeaPlusCB["DressUpSideBtn"]:SetFrameStrata(BtnStrata)
+			LeaPlusLC:CreateButton("DressUpSideBtn", SideDressUpFrame, "Tabard", "BOTTOMLEFT", 14, 40, 60, 22, false, "")
 			LeaPlusCB["DressUpSideBtn"]:SetFrameLevel(BtnLevel)
-			if ClientVersion == "8.2.5" then
-				LeaPlusCB["DressUpSideBtn"]:SetFrameStrata("HIGH")
-			end
+			LeaPlusCB["DressUpSideBtn"]:SetFrameStrata("HIGH")
 			LeaPlusCB["DressUpSideBtn"]:SetScript("OnClick", function()
-				if ClientVersion == "8.2.5" then
-					-- Store all appearance sources in table
-					local appearanceSources = {}
-					local playerActor = SideDressUpFrame.ModelScene:GetPlayerActor()
-					for slotID = 1, 19 do
-						local appearanceSourceID, illusionSourceID = playerActor:GetSlotTransmogSources(slotID)
-						tinsert(appearanceSources, appearanceSourceID)
+				-- Store all appearance sources in table
+				local appearanceSources = {}
+				local playerActor = SideDressUpFrame.ModelScene:GetPlayerActor()
+				for slotID = 1, 19 do
+					local appearanceSourceID, illusionSourceID = playerActor:GetSlotTransmogSources(slotID)
+					tinsert(appearanceSources, appearanceSourceID)
+				end
+				-- Strip model
+				SetupPlayerForModelScene(SideDressUpFrame.ModelScene, {}, false, false)
+				-- Apply all appearance sources except tabard slot (19)
+				for slotID = 1, 18 do
+					if appearanceSources[slotID] and appearanceSources[slotID] > 0 then
+						playerActor:TryOn(appearanceSources[slotID])
 					end
-					-- Strip model
-					SetupPlayerForModelScene(SideDressUpFrame.ModelScene, {}, false, false)
-					-- Apply all appearance sources except tabard slot (19)
-					for slotID = 1, 18 do
-						if appearanceSources[slotID] and appearanceSources[slotID] > 0 then
-							playerActor:TryOn(appearanceSources[slotID])
-						end
-					end
-				else
-					-- Pre 8.2.5
-					SideDressUpModel:UndressSlot(19)
 				end
 			end)
 
-			LeaPlusLC:CreateButton("DressUpSideNudeBtn", SideDressUpFrame, "Nude", "BOTTOMRIGHT", -18, 20, 60, 22, false, "")
-			if ClientVersion == "8.2.5" then
-				LeaPlusCB["DressUpSideNudeBtn"]:ClearAllPoints()
-				LeaPlusCB["DressUpSideNudeBtn"]:SetPoint("BOTTOMRIGHT", SideDressUpFrame, "BOTTOMRIGHT", -18, 40)
-			end
-			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameStrata(BtnStrata)
+			LeaPlusLC:CreateButton("DressUpSideNudeBtn", SideDressUpFrame, "Nude", "BOTTOMRIGHT", -18, 40, 60, 22, false, "")
 			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameLevel(BtnLevel)
-			if ClientVersion == "8.2.5" then
-				LeaPlusCB["DressUpSideNudeBtn"]:SetFrameStrata("HIGH")
-			end
+			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameStrata("HIGH")
 			LeaPlusCB["DressUpSideNudeBtn"]:SetScript("OnClick", function()
-				if ClientVersion == "8.2.5" then
-					-- Strip model
-					SetupPlayerForModelScene(SideDressUpFrame.ModelScene, {}, false, false)
-				else
-					-- Pre 8.2.5
-					SideDressUpModelResetButton:Click() -- Done first in case any slots refuse to clear
-					for i = 1, 19 do
-						SideDressUpModel:UndressSlot(i) -- Done this way to prevent issues with Undress
-					end
-				end
+				-- Strip model
+				SetupPlayerForModelScene(SideDressUpFrame.ModelScene, {}, false, false)
 			end)
 
 			-- Only show side dressup buttons if its a player (reset button will show too)
-			if ClientVersion == "8.2.5" then
-				hooksecurefunc(SideDressUpFrame.ResetButton, "Show", function()
-					LeaPlusCB["DressUpSideBtn"]:Show()
-					LeaPlusCB["DressUpSideNudeBtn"]:Show()
-				end)
+			hooksecurefunc(SideDressUpFrame.ResetButton, "Show", function()
+				LeaPlusCB["DressUpSideBtn"]:Show()
+				LeaPlusCB["DressUpSideNudeBtn"]:Show()
+			end)
 
-				hooksecurefunc(SideDressUpFrame.ResetButton, "Hide", function()
-					LeaPlusCB["DressUpSideBtn"]:Hide()
-					LeaPlusCB["DressUpSideNudeBtn"]:Hide()
-				end)
-			else
-				hooksecurefunc(SideDressUpModelResetButton, "Show", function()
-					LeaPlusCB["DressUpSideBtn"]:Show()
-					LeaPlusCB["DressUpSideNudeBtn"]:Show()
-				end)
-
-				hooksecurefunc(SideDressUpModelResetButton, "Hide", function()
-					LeaPlusCB["DressUpSideBtn"]:Hide()
-					LeaPlusCB["DressUpSideNudeBtn"]:Hide()
-				end)
-			end
-
-			----------------------------------------------------------------------
-			-- Disable special animations
-			----------------------------------------------------------------------
-
-			if ClientVersion == "8.2.5" then
-			else
-
-				-- Function to set animations
-				local function SetupAnimations()
-					DressUpModel:SetAnimation(255)
-					SideDressUpModel:SetAnimation(255)
-				end
-
-				-- Dressing room
-				hooksecurefunc("DressUpFrame_Show", SetupAnimations)
-				DressUpFrame.ResetButton:HookScript("OnClick", SetupAnimations)
-				-- Auction house dressing room
-				hooksecurefunc(SideDressUpModel, "SetUnit", SetupAnimations)
-				SideDressUpModelResetButton:HookScript("OnClick", SetupAnimations)
-
-			end
+			hooksecurefunc(SideDressUpFrame.ResetButton, "Hide", function()
+				LeaPlusCB["DressUpSideBtn"]:Hide()
+				LeaPlusCB["DressUpSideNudeBtn"]:Hide()
+			end)
 
 			----------------------------------------------------------------------
 			-- Controls
 			----------------------------------------------------------------------
 
-			-- Function to hide controls
-			local function SetupControls()
+			-- Hide controls for character sheet
+			CharacterModelFrameControlFrame:HookScript("OnShow", function()
 				CharacterModelFrameControlFrame:Hide()
-				if ClientVersion == "8.2.5" then
-				else
-					DressUpModelControlFrame:Hide()
-					SideDressUpModelControlFrame:Hide()
-				end
-			end
-
-			-- Hide controls for character sheet, dressing room and auction house dressing room
-			CharacterModelFrameControlFrame:HookScript("OnShow", SetupControls)
-			if ClientVersion == "8.2.5" then
-			else
-				DressUpModelControlFrame:HookScript("OnShow", SetupControls)
-				SideDressUpModelControlFrame:HookScript("OnShow", SetupControls)
-			end
+			end)
 
 			----------------------------------------------------------------------
 			-- Wardrobe and inspect system
@@ -4805,6 +4713,9 @@
 
 			-- Create locale specific level string
 			LT["LevelLocale"] = strtrim(strtrim(string.gsub(TOOLTIP_UNIT_LEVEL, "%%s", "")))
+			if GameLocale == "ruRU" then
+				LT["LevelLocale"] = string.gsub(LT["LevelLocale"], "-й ", "") 
+			end
 
 			-- Tooltip
 			LT["ColorBlind"] = GetCVar("colorblindMode")
@@ -6200,22 +6111,22 @@
 			Zn(L["Various"], L["Various"], L["Arenas"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Arenas"], prefol, "Intro-NagrandDimond#10623", "MUS_50_Scenario_ArenaofAnnihilation#34019", "MUS_51_PVP_BrawlersGuild_Horde#34967", --[["MUS_80_PVP_ZandalarArena#117041", "MUS_80_PVP_KulTirasArena#114680",--]] "PVP-Battle Grounds#8233", "Zone-BladesEdge#9002",})
 			Zn(L["Various"], L["Various"], L["Battlegrounds"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Battlegrounds"], prefol, "Altervac Valley_PVP#8014", "MUS_50_Scenario_TempleofKotmogu#33978", "MUS_815_PVP_ArathiBasin_Intro#129818", "MUS_815_PVP_WarsongGultch_Intro#129817", "MUS_BattleForGilneas_BG#23612", "MUS_TwinPeaks_BG#23613", "PVP-Battle Grounds#8233", "PVP-Battle Grounds--DeepwindGorge#37659", "PVP-Battle Grounds-Pandaria#33714", "PVP-Battle Grounds-SilvershardMines#33713", "PVPVictoryAlliance#8455", "PVPVictoryHorde#8454", "Zone-WintergraspContested#14912",})
 			Zn(L["Various"], L["Various"], L["Cinematics"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Cinematics"], prefol, 
-				-- Cinematic Music: World of Warcraft
+				-- Cinematic Music: World of Warcraft (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["World of Warcraft"], 
 				"|Cffffffff" .. L["Ten Years of Warcraft"] .. " |r#625988#27", -- interface/cinematics/logo.mp3
 				"|Cffffffff" .. L["World of Warcraft"] .. " |r#625564#170", -- interface/cinematics/wow_intro.mp3
 
-				-- Cinematic Music: The Burning Crusade
+				-- Cinematic Music: The Burning Crusade (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["The Burning Crusade"], 
 				"|Cffffffff" .. L["The Burning Crusade"] .. " |r#625565#168", -- interface/cinematics/wow_intro_bc.mp3
 
-				-- Cinematic Music: Wrath of the Lich King
+				-- Cinematic Music: Wrath of the Lich King (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["Wrath of the Lich King"], 
 				"|Cffffffff" .. L["Wrath of the Lich King"] .. " |r#457498#198", -- interface/cinematics/wow_intro_lk.mp3
 				"|Cffffffff" .. L["Battle of Angrathar the Wrathgate"] .. " |r#458394#265", -- interface/cinematics/wow_wrathgate.mp3
 				"|Cffffffff" .. L["Fall of the Lich King"] .. " |r#625989#231", -- interface/cinematics/wow_fotlk.mp3
 
-				-- Cinematic Music: Cataclysm
+				-- Cinematic Music: Cataclysm (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["Cataclysm"], 
 				"|Cffffffff" .. L["Cataclysm"] .. " |r#455939#144", -- interface/cinematics/wow3x_intro.mp3
 				"|Cffffffff" .. L["Last Stand"] .. " |r#455940#101", -- interface/cinematics/worgen.mp3
@@ -6225,7 +6136,7 @@
 				"|Cffffffff" .. L["Madness of Deathwing"] .. " |r#576957#27", -- interface/cinematics/dsi_act3.mp3
 				"|Cffffffff" .. L["Fall of Deathwing"] .. " |r#577085#94", -- interface/cinematics/dsi_act4.mp3
 
-				-- Cinematic Music: Mists of Pandaria
+				-- Cinematic Music: Mists of Pandaria (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["Mists of Pandaria"], 
 				"|Cffffffff" .. L["Mists of Pandaria"] .. " |r#644071#228", -- interface/cinematics/wow_intro_mop.mp3
 				"|Cffffffff" .. L["Risking It All"] .. " |r#644128#62", -- interface/cinematics/mop_gse.mp3
@@ -6239,7 +6150,7 @@
 				"|Cffffffff" .. L["Hellscream's Downfall (Horde)"] .. " |r#916419#161", -- interface/cinematics/oro_horde.mp3
 				"|Cffffffff" .. L["Hellscream's Downfall (Alliance)"] .. " |r#916417#140", -- interface/cinematics/oro_alliance.mp3
 
-				-- Cinematic Music: Warlords of Draenor
+				-- Cinematic Music: Warlords of Draenor (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["Warlords of Draenor"], 
 				"|Cffffffff" .. L["Warlords of Draenor"] .. " |r#1068826#258", -- interface/cinematics/wod_mainintro.mp3
 				--"|Cffffffff" .. L["Darkness Falls"] .. " |r#1068485#610", -- interface/cinematics/wod_vel.mp3
@@ -6249,7 +6160,7 @@
 				--"|Cffffffff" .. L["Gul'dan Ascendant"] .. " |r#1112524#278", -- interface/cinematics/wod_gto.mp3
 				--"|Cffffffff" .. L["Shipyard Construction (Horde)"] .. " |r#1137841#14", -- interface/cinematics/wod_gar_shipyard_lj_h.mp3
 
-				-- Cinematic Music: Legion
+				-- Cinematic Music: Legion (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["Legion"], 
 				"|Cffffffff" .. L["Legion"] .. " |r#1487144#225", -- interface/cinematics/legion_intro.mp3
 				"|Cffffffff" .. L["The Invasion Begins"] .. " |r#1487142#64", -- interface/cinematics/legion_dh1.mp3
@@ -6282,7 +6193,7 @@
 				"|Cffffffff" .. L["Epilogue (Horde)"] .. " |r#1862317#145", -- interface/cinematics/legion_735_eph.mp3
 				"|Cffffffff" .. L["Epilogue (Alliance)"] .. " |r#1862316#157", -- interface/cinematics/legion_735_epa.mp3
 
-				-- Cinematic Music: Battle for Azeroth
+				-- Cinematic Music: Battle for Azeroth (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["Battle for Azeroth"], 
 				"|Cffffffff" .. L["Battle for Azeroth"] .. " |r#2125419#263", -- interface/cinematics/bfa_800_rb.mp3
 				"|Cffffffff" .. L["Warbringers Sylvanas"] .. " |r#2175009#232", -- interface/cinematics/bfa_800_sv.mp3
@@ -6300,8 +6211,9 @@
 				"|Cffffffff" .. L["An Unexpected Reunion"] .. " |r#2845776#170", -- interface/cinematics/bfa_815_dpr.mp3
 				"|Cffffffff" .. L["Siege of Dazar'alor"] .. " |r#2565179#128", -- interface/cinematics/bfa_810_akt.mp3
 				"|Cffffffff" .. L["Battle of Dazar'alor"] .. " |r#2543223#121", -- interface/cinematics/bfa_810_dor.mp3
-				"|Cffffffff" .. L["Warbringers Azshara"] .. " |r#2991597#425",
-				"|Cffffffff" .. L["Rise of Azshara"] .. " |r#3039647#133",
+				"|Cffffffff" .. L["Warbringers Azshara"] .. " |r#2991597#425", -- interface/cinematics/bfa_820_awb.mp3
+				"|Cffffffff" .. L["Rise of Azshara"] .. " |r#3039647#133", -- interface/cinematics/bfa_820_enc_262_h.mp3
+				"|Cffffffff" .. L["The Negotiation"] .. " |r#3075714#201", -- interface/cinematics/bfa_825_lh.mp3
 			})
 			Zn(L["Various"], L["Various"], L["Class Trials"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Class Trials"], prefol, "MUS_70_ClassTrial_Horde_BattleWalk#71954", "MUS_70_ClassTrial_Alliance_BattleWalk#71959",})
 			Zn(L["Various"], L["Various"], L["Credits"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Credits"], prefol, "Menu-Credits01#10763", "Menu-Credits02#10804", "Menu-Credits03#13822", "Menu-Credits04#23812", "Menu-Credits05#32015", "Menu-Credits06#34020", "Menu-Credits07#56354", "Menu-Credits08#113560"})
@@ -6342,7 +6254,7 @@
 			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["Jade Forest Crash"] .. " |r(121)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
 			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["Stormheim (Alliance)"] .. " |r(483)", L["Stormheim (Horde)"] .. " |r(484)", L["Tomb of Sargeras"] .. " |r(486)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["Destiny Unfulfilled"] .. " |r(490)", L["The Nighthold"] .. " |r(549)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Assault on the Broken Shore"] .. " |r(637)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
-			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["The Fall of Lordaeron"] .. " |r(855)", L["Jaina Joins the Battle"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Arrival to Zandalar"] .. " |r(857)", L["Vision of Sailor's Memory"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Warbringers Jaina"] .. " |r(861)", L["The Return of Hope"] .. " |r(864)", L["Realm Of Torment"] .. " |r(865)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)", L["Siege of Dazar'alor"] .. " |r(876)", L["Battle of Dazar'alor"] .. " |r(875)", L["Warbringers Azshara"] .. " |r(884)", L["Rise of Azshara"] .. " |r(894)",})
+			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["The Fall of Lordaeron"] .. " |r(855)", L["Jaina Joins the Battle"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Arrival to Zandalar"] .. " |r(857)", L["Vision of Sailor's Memory"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Warbringers Jaina"] .. " |r(861)", L["The Return of Hope"] .. " |r(864)", L["Realm Of Torment"] .. " |r(865)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)", L["Siege of Dazar'alor"] .. " |r(876)", L["Battle of Dazar'alor"] .. " |r(875)", L["Warbringers Azshara"] .. " |r(884)", L["Rise of Azshara"] .. " |r(894)", L["The Negotiation"] .. " |r(903)",})
 
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList

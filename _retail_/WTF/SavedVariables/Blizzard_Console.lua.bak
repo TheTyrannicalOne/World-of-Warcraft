@@ -3,1383 +3,1383 @@ Blizzard_Console_SavedVars = {
 	["version"] = 3,
 	["messageHistory"] = {
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Level: 31d 16h 52m 19s", -- [1]
 			0, -- [2]
 		}, -- [1]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [2]
 		{
-			"Multithreaded prepass enabled.", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [3]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [4]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [5]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [6]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [7]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [8]
 		{
-			"Water detail changed to 2", -- [1]
+			"Total: 234d 6h 15m 32s", -- [1]
 			0, -- [2]
 		}, -- [9]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Level: 31d 16h 55m 9s", -- [1]
 			0, -- [2]
 		}, -- [10]
 		{
-			"Reflection mode changed to 0", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [11]
 		{
-			"Reflection downscale changed to 0", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [12]
 		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [13]
 		{
-			"Refraction mode changed to 2", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [14]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [15]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [16]
 		{
-			"Volume fog enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [17]
 		{
-			"Projected textures enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [18]
 		{
-			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [19]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [20]
 		{
-			"Soft shadows changed to 0.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [21]
 		{
-			"SSAO mode set to 3", -- [1]
+			"Total: 234d 7h 17m 44s", -- [1]
 			0, -- [2]
 		}, -- [22]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"Level: 31d 17h 57m 21s", -- [1]
 			0, -- [2]
 		}, -- [23]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [24]
 		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [25]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [26]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [27]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [28]
 		{
-			"Render scale changed to 1", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [29]
 		{
-			"Resample quality changed to 1", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [30]
 		{
-			"MSAA disabled", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [31]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [32]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [33]
 		{
-			"World load object sort enabled.", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [34]
 		{
-			"World preload non critical enabled.", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [35]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Water detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [36]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
 		}, -- [37]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [38]
 		{
-			"Error display disabled", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [39]
 		{
-			"Error display shown", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [40]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [41]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [42]
 		{
-			"Now filtering: all messages", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [43]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [44]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [45]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [46]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [47]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [48]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"SSAO mode set to 3", -- [1]
 			0, -- [2]
 		}, -- [49]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [50]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [51]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [52]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [53]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [54]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [55]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [56]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [57]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [58]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [59]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [60]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [61]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [62]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [63]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [64]
 		{
-			"NetClient::HandleCantConnect()\n", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [65]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [66]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [67]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [68]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [69]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [70]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [71]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [72]
 		{
-			"[WowEntitlements] Initialized with 70 entitlements.", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [73]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [74]
 		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
 		}, -- [75]
 		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
 		}, -- [76]
 		{
-			"Got new connection 2", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [77]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [78]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [79]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [80]
 		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [81]
 		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [82]
 		{
-			"Proficiency in item class 2 set to 0x000000009d", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [83]
 		{
-			"Proficiency in item class 2 set to 0x000000019d", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [84]
 		{
-			"Proficiency in item class 2 set to 0x000000059d", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [85]
 		{
-			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [86]
 		{
-			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [87]
 		{
-			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [88]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [89]
 		{
-			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
 		}, -- [90]
 		{
-			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [91]
 		{
-			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
+			"NetClient::HandleCantConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [92]
 		{
-			"Proficiency in item class 4 set to 0x0000000031", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [93]
 		{
-			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [94]
 		{
-			"Proficiency in item class 4 set to 0x0000000039", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [95]
 		{
-			"Proficiency in item class 4 set to 0x000000003d", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [96]
 		{
-			"Proficiency in item class 4 set to 0x000000003f", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [97]
 		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [98]
 		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [99]
 		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			"[WowEntitlements] Initialized with 70 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [100]
 		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [101]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [102]
-		{
-			"Time set to 9/29/2019 (Sun) 0:14", -- [1]
-			0, -- [2]
-		}, -- [103]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [104]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [105]
-		{
-			"Total: 234d 3h 2m 14s", -- [1]
-			0, -- [2]
-		}, -- [106]
-		{
-			"Level: 31d 13h 41m 51s", -- [1]
-			0, -- [2]
-		}, -- [107]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [108]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [109]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [110]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [111]
-		{
-			"Total: 234d 3h 8m 49s", -- [1]
-			0, -- [2]
-		}, -- [112]
-		{
-			"Level: 31d 13h 48m 26s", -- [1]
-			0, -- [2]
-		}, -- [113]
-		{
-			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
-			0, -- [2]
-		}, -- [114]
-		{
-			"GameTimeSync: delta=0, differential=2, HoursAndMinutes=45", -- [1]
-			0, -- [2]
-		}, -- [115]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [116]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [117]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [118]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [119]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [120]
-		{
-			"Total: 234d 3h 34m 51s", -- [1]
-			0, -- [2]
-		}, -- [121]
-		{
-			"Level: 31d 14h 14m 28s", -- [1]
-			0, -- [2]
-		}, -- [122]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [123]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [124]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [125]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [126]
-		{
-			"Total: 234d 3h 36m 5s", -- [1]
-			0, -- [2]
-		}, -- [127]
-		{
-			"Level: 31d 14h 15m 42s", -- [1]
-			0, -- [2]
-		}, -- [128]
-		{
-			"Weather changed to 2, intensity 0.500000\n", -- [1]
-			0, -- [2]
-		}, -- [129]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [130]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [131]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [132]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [133]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [134]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [135]
-		{
-			"Total: 234d 4h 59m 10s", -- [1]
-			0, -- [2]
-		}, -- [136]
-		{
-			"Level: 31d 15h 38m 47s", -- [1]
-			0, -- [2]
-		}, -- [137]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [138]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [139]
-		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
-			0, -- [2]
-		}, -- [140]
-		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
-			0, -- [2]
-		}, -- [141]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [142]
-		{
-			"Total: 234d 5h 5m 22s", -- [1]
-			0, -- [2]
-		}, -- [143]
-		{
-			"Level: 31d 15h 44m 59s", -- [1]
-			0, -- [2]
-		}, -- [144]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [145]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [146]
-		{
-			"Sorting particles normally.", -- [1]
-			0, -- [2]
-		}, -- [147]
-		{
-			"Multithreaded rendering enabled.", -- [1]
-			0, -- [2]
-		}, -- [148]
-		{
-			"Multithreaded BeginDraw enabled.", -- [1]
-			0, -- [2]
-		}, -- [149]
-		{
-			"Multithread shadows changed to 1.", -- [1]
-			0, -- [2]
-		}, -- [150]
-		{
-			"Multithreaded prepass enabled.", -- [1]
-			0, -- [2]
-		}, -- [151]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [152]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [153]
-		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [154]
-		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [155]
-		{
-			"Multithreaded terrain pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [156]
-		{
-			"Water detail changed to 2", -- [1]
-			0, -- [2]
-		}, -- [157]
-		{
-			"Ripple detail changed to 1", -- [1]
-			0, -- [2]
-		}, -- [158]
-		{
-			"Reflection mode changed to 0", -- [1]
-			0, -- [2]
-		}, -- [159]
-		{
-			"Reflection downscale changed to 0", -- [1]
-			0, -- [2]
-		}, -- [160]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [161]
-		{
-			"Refraction mode changed to 2", -- [1]
-			0, -- [2]
-		}, -- [162]
-		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
-			0, -- [2]
-		}, -- [163]
-		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
-			0, -- [2]
-		}, -- [164]
-		{
-			"Volume fog enabled.", -- [1]
-			0, -- [2]
-		}, -- [165]
-		{
-			"Projected textures enabled.", -- [1]
-			0, -- [2]
-		}, -- [166]
-		{
-			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
-			0, -- [2]
-		}, -- [167]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [168]
-		{
-			"Soft shadows changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [169]
-		{
-			"SSAO mode set to 3", -- [1]
-			0, -- [2]
-		}, -- [170]
-		{
-			"Depth Based Opacity Enabled", -- [1]
-			0, -- [2]
-		}, -- [171]
-		{
-			"SkyCloudLOD set to 0", -- [1]
-			0, -- [2]
-		}, -- [172]
-		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
-			0, -- [2]
-		}, -- [173]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [174]
-		{
-			"Outline mode changed to 2", -- [1]
-			0, -- [2]
-		}, -- [175]
-		{
-			"Physics interaction level changed to 1", -- [1]
-			0, -- [2]
-		}, -- [176]
-		{
-			"Render scale changed to 1", -- [1]
-			0, -- [2]
-		}, -- [177]
-		{
-			"Resample quality changed to 1", -- [1]
-			0, -- [2]
-		}, -- [178]
-		{
-			"MSAA disabled", -- [1]
-			0, -- [2]
-		}, -- [179]
-		{
-			"MSAA for alpha-test enabled.", -- [1]
-			0, -- [2]
-		}, -- [180]
-		{
-			"World preload object sort enabled.", -- [1]
-			0, -- [2]
-		}, -- [181]
-		{
-			"World load object sort enabled.", -- [1]
-			0, -- [2]
-		}, -- [182]
-		{
-			"World preload non critical enabled.", -- [1]
-			0, -- [2]
-		}, -- [183]
-		{
-			"World preload high res textures enabled.", -- [1]
-			0, -- [2]
-		}, -- [184]
-		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
-			0, -- [2]
-		}, -- [185]
-		{
-			"Full memory crash dump disabled", -- [1]
-			0, -- [2]
-		}, -- [186]
-		{
-			"Error display disabled", -- [1]
-			0, -- [2]
-		}, -- [187]
-		{
-			"Error display shown", -- [1]
-			0, -- [2]
-		}, -- [188]
-		{
-			"Displaying errors through fatal errors", -- [1]
-			0, -- [2]
-		}, -- [189]
-		{
-			"Displaying errors through fatal errors", -- [1]
-			0, -- [2]
-		}, -- [190]
-		{
-			"Now filtering: all messages", -- [1]
-			0, -- [2]
-		}, -- [191]
-		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [192]
-		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [193]
-		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [194]
-		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [195]
-		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
-			0, -- [2]
-		}, -- [196]
-		{
-			"[GlueLogin] Resetting", -- [1]
-			0, -- [2]
-		}, -- [197]
-		{
-			"[IBN_Login] Initializing", -- [1]
-			0, -- [2]
-		}, -- [198]
-		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
-			0, -- [2]
-		}, -- [199]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [200]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [201]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [202]
-		{
-			"[GlueLogin] Logon complete.", -- [1]
-			0, -- [2]
-		}, -- [203]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [204]
-		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
-			0, -- [2]
-		}, -- [205]
-		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [206]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [207]
-		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [208]
-		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
-			0, -- [2]
-		}, -- [209]
-		{
-			"[GlueLogin] Realm list ready.", -- [1]
-			0, -- [2]
-		}, -- [210]
-		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
-			0, -- [2]
-		}, -- [211]
-		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [212]
-		{
-			"NetClient::HandleCantConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [213]
-		{
-			"NetClient::HandleConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [214]
-		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [215]
-		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
-			0, -- [2]
-		}, -- [216]
-		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [217]
-		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
-			0, -- [2]
-		}, -- [218]
-		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
-			0, -- [2]
-		}, -- [219]
-		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [220]
-		{
-			"[WowEntitlements] Initialized with 70 entitlements.", -- [1]
-			0, -- [2]
-		}, -- [221]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [222]
-		{
-			"Sorting particles normally.", -- [1]
-			0, -- [2]
-		}, -- [223]
-		{
-			"Multithreaded rendering enabled.", -- [1]
-			0, -- [2]
-		}, -- [224]
-		{
-			"Multithreaded BeginDraw enabled.", -- [1]
-			0, -- [2]
-		}, -- [225]
-		{
-			"Multithread shadows changed to 1.", -- [1]
-			0, -- [2]
-		}, -- [226]
-		{
-			"Multithreaded prepass enabled.", -- [1]
-			0, -- [2]
-		}, -- [227]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [228]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [229]
-		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [230]
-		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [231]
-		{
-			"Multithreaded terrain pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [232]
-		{
-			"Water detail changed to 2", -- [1]
-			0, -- [2]
-		}, -- [233]
-		{
-			"Ripple detail changed to 1", -- [1]
-			0, -- [2]
-		}, -- [234]
-		{
-			"Reflection mode changed to 0", -- [1]
-			0, -- [2]
-		}, -- [235]
-		{
-			"Reflection downscale changed to 0", -- [1]
-			0, -- [2]
-		}, -- [236]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [237]
-		{
-			"Refraction mode changed to 2", -- [1]
-			0, -- [2]
-		}, -- [238]
-		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
-			0, -- [2]
-		}, -- [239]
-		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
-			0, -- [2]
-		}, -- [240]
-		{
-			"Volume fog enabled.", -- [1]
-			0, -- [2]
-		}, -- [241]
-		{
-			"Projected textures enabled.", -- [1]
-			0, -- [2]
-		}, -- [242]
-		{
-			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
-			0, -- [2]
-		}, -- [243]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [244]
-		{
-			"Soft shadows changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [245]
-		{
-			"SSAO mode set to 3", -- [1]
-			0, -- [2]
-		}, -- [246]
-		{
-			"Depth Based Opacity Enabled", -- [1]
-			0, -- [2]
-		}, -- [247]
-		{
-			"SkyCloudLOD set to 0", -- [1]
-			0, -- [2]
-		}, -- [248]
-		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
-			0, -- [2]
-		}, -- [249]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [250]
-		{
-			"Outline mode changed to 2", -- [1]
-			0, -- [2]
-		}, -- [251]
-		{
-			"Physics interaction level changed to 1", -- [1]
-			0, -- [2]
-		}, -- [252]
-		{
-			"Render scale changed to 1", -- [1]
-			0, -- [2]
-		}, -- [253]
-		{
-			"Resample quality changed to 1", -- [1]
-			0, -- [2]
-		}, -- [254]
-		{
-			"MSAA disabled", -- [1]
-			0, -- [2]
-		}, -- [255]
-		{
-			"MSAA for alpha-test enabled.", -- [1]
-			0, -- [2]
-		}, -- [256]
-		{
-			"World preload object sort enabled.", -- [1]
-			0, -- [2]
-		}, -- [257]
-		{
-			"World load object sort enabled.", -- [1]
-			0, -- [2]
-		}, -- [258]
-		{
-			"World preload non critical enabled.", -- [1]
-			0, -- [2]
-		}, -- [259]
-		{
-			"World preload high res textures enabled.", -- [1]
-			0, -- [2]
-		}, -- [260]
-		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
-			0, -- [2]
-		}, -- [261]
-		{
-			"Full memory crash dump disabled", -- [1]
-			0, -- [2]
-		}, -- [262]
-		{
-			"Error display disabled", -- [1]
-			0, -- [2]
-		}, -- [263]
-		{
-			"Error display shown", -- [1]
-			0, -- [2]
-		}, -- [264]
-		{
-			"Displaying errors through fatal errors", -- [1]
-			0, -- [2]
-		}, -- [265]
-		{
-			"Displaying errors through fatal errors", -- [1]
-			0, -- [2]
-		}, -- [266]
-		{
-			"Now filtering: all messages", -- [1]
-			0, -- [2]
-		}, -- [267]
-		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [268]
-		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [269]
-		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [270]
-		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [271]
-		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
-			0, -- [2]
-		}, -- [272]
-		{
-			"[GlueLogin] Resetting", -- [1]
-			0, -- [2]
-		}, -- [273]
-		{
-			"[IBN_Login] Initializing", -- [1]
-			0, -- [2]
-		}, -- [274]
-		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
-			0, -- [2]
-		}, -- [275]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [276]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [277]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [278]
-		{
-			"[GlueLogin] Logon complete.", -- [1]
-			0, -- [2]
-		}, -- [279]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [280]
-		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
-			0, -- [2]
-		}, -- [281]
-		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [282]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [283]
-		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [284]
-		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
-			0, -- [2]
-		}, -- [285]
-		{
-			"[GlueLogin] Realm list ready.", -- [1]
-			0, -- [2]
-		}, -- [286]
-		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
-			0, -- [2]
-		}, -- [287]
-		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [288]
-		{
-			"NetClient::HandleCantConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [289]
-		{
-			"NetClient::HandleConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [290]
-		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [291]
-		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
-			0, -- [2]
-		}, -- [292]
-		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [293]
-		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
-			0, -- [2]
-		}, -- [294]
-		{
-			"[WowEntitlements] Initialized with 70 entitlements.", -- [1]
-			0, -- [2]
-		}, -- [295]
-		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
-			0, -- [2]
-		}, -- [296]
-		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [297]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [298]
-		{
 			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [299]
+		}, -- [102]
 		{
 			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [300]
+		}, -- [103]
 		{
 			"Got new connection 2", -- [1]
 			0, -- [2]
-		}, -- [301]
+		}, -- [104]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [302]
+		}, -- [105]
 		{
 			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
-		}, -- [303]
+		}, -- [106]
 		{
 			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
-		}, -- [304]
+		}, -- [107]
 		{
 			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
-		}, -- [305]
+		}, -- [108]
 		{
 			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
-		}, -- [306]
+		}, -- [109]
 		{
 			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
-		}, -- [307]
+		}, -- [110]
 		{
 			"Proficiency in item class 2 set to 0x000000019d", -- [1]
 			0, -- [2]
-		}, -- [308]
+		}, -- [111]
 		{
 			"Proficiency in item class 2 set to 0x000000059d", -- [1]
 			0, -- [2]
-		}, -- [309]
+		}, -- [112]
 		{
 			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
 			0, -- [2]
-		}, -- [310]
+		}, -- [113]
 		{
 			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
 			0, -- [2]
-		}, -- [311]
+		}, -- [114]
 		{
 			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
 			0, -- [2]
-		}, -- [312]
+		}, -- [115]
 		{
 			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
-		}, -- [313]
+		}, -- [116]
 		{
 			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
 			0, -- [2]
-		}, -- [314]
+		}, -- [117]
 		{
 			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
 			0, -- [2]
-		}, -- [315]
+		}, -- [118]
 		{
 			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
 			0, -- [2]
-		}, -- [316]
+		}, -- [119]
 		{
 			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
-		}, -- [317]
+		}, -- [120]
 		{
 			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
 			0, -- [2]
-		}, -- [318]
+		}, -- [121]
 		{
 			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
-		}, -- [319]
+		}, -- [122]
 		{
 			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
-		}, -- [320]
+		}, -- [123]
 		{
 			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
-		}, -- [321]
+		}, -- [124]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [322]
+		}, -- [125]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [323]
+		}, -- [126]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [324]
+		}, -- [127]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [325]
+		}, -- [128]
 		{
 			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
-		}, -- [326]
+		}, -- [129]
 		{
-			"Time set to 9/29/2019 (Sun) 8:24", -- [1]
+			"Time set to 9/29/2019 (Sun) 14:59", -- [1]
 			0, -- [2]
-		}, -- [327]
+		}, -- [130]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [328]
+		}, -- [131]
 		{
 			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
 			3, -- [2]
-		}, -- [329]
+		}, -- [132]
 		{
 			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
 			3, -- [2]
-		}, -- [330]
+		}, -- [133]
 		{
 			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
 			3, -- [2]
-		}, -- [331]
+		}, -- [134]
 		{
 			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
 			3, -- [2]
-		}, -- [332]
+		}, -- [135]
 		{
 			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
 			3, -- [2]
-		}, -- [333]
+		}, -- [136]
 		{
 			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
 			3, -- [2]
-		}, -- [334]
+		}, -- [137]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [335]
+		}, -- [138]
 		{
-			"Total: 234d 5h 48m 5s", -- [1]
+			"Total: 234d 7h 21m 45s", -- [1]
 			0, -- [2]
-		}, -- [336]
+		}, -- [139]
 		{
-			"Level: 31d 16h 27m 42s", -- [1]
+			"Level: 31d 18h 1m 22s", -- [1]
 			0, -- [2]
-		}, -- [337]
+		}, -- [140]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [141]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [142]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [143]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [144]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [145]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [146]
 		{
 			"World transfer pending...", -- [1]
 			0, -- [2]
-		}, -- [338]
+		}, -- [147]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [339]
+		}, -- [148]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [340]
+		}, -- [149]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [341]
+		}, -- [150]
 		{
-			"Total: 234d 5h 49m 28s", -- [1]
+			"Total: 234d 8h 17m 47s", -- [1]
 			0, -- [2]
-		}, -- [342]
+		}, -- [151]
 		{
-			"Level: 31d 16h 29m 5s", -- [1]
+			"Level: 31d 18h 57m 24s", -- [1]
 			0, -- [2]
-		}, -- [343]
+		}, -- [152]
 		{
 			"World transfer pending...", -- [1]
 			0, -- [2]
-		}, -- [344]
+		}, -- [153]
 		{
 			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [154]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [155]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [156]
+		{
+			"Total: 234d 8h 20m 11s", -- [1]
+			0, -- [2]
+		}, -- [157]
+		{
+			"Level: 31d 18h 59m 48s", -- [1]
+			0, -- [2]
+		}, -- [158]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [159]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [160]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [161]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [162]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [163]
+		{
+			"Total: 234d 8h 20m 29s", -- [1]
+			0, -- [2]
+		}, -- [164]
+		{
+			"Level: 31d 19h 0m 6s", -- [1]
+			0, -- [2]
+		}, -- [165]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [166]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [167]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [168]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [169]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [170]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [171]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [172]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [173]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [174]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [175]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [176]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [177]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [178]
+		{
+			"Total: 234d 8h 23m 3s", -- [1]
+			0, -- [2]
+		}, -- [179]
+		{
+			"Level: 31d 19h 2m 40s", -- [1]
+			0, -- [2]
+		}, -- [180]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [181]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [182]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [183]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [184]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [185]
+		{
+			"Total: 234d 8h 29m 29s", -- [1]
+			0, -- [2]
+		}, -- [186]
+		{
+			"Level: 31d 19h 9m 6s", -- [1]
+			0, -- [2]
+		}, -- [187]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [188]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [189]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [190]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [191]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [192]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [193]
+		{
+			"Total: 234d 8h 30m 8s", -- [1]
+			0, -- [2]
+		}, -- [194]
+		{
+			"Level: 31d 19h 9m 45s", -- [1]
+			0, -- [2]
+		}, -- [195]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [196]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [197]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [198]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [199]
+		{
+			"Total: 234d 9h 11m 20s", -- [1]
+			0, -- [2]
+		}, -- [200]
+		{
+			"Level: 31d 19h 50m 57s", -- [1]
+			0, -- [2]
+		}, -- [201]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [202]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [203]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [204]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [205]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [206]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [207]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [208]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [209]
+		{
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
+			0, -- [2]
+		}, -- [210]
+		{
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
+			0, -- [2]
+		}, -- [211]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [212]
+		{
+			"Total: 234d 9h 24m 18s", -- [1]
+			0, -- [2]
+		}, -- [213]
+		{
+			"Level: 31d 20h 3m 55s", -- [1]
+			0, -- [2]
+		}, -- [214]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [215]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [216]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [217]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [218]
+		{
+			"Total: 234d 9h 28m 50s", -- [1]
+			0, -- [2]
+		}, -- [219]
+		{
+			"Level: 31d 20h 8m 27s", -- [1]
+			0, -- [2]
+		}, -- [220]
+		{
+			"Weather changed to 2, intensity 1.000000\n", -- [1]
+			0, -- [2]
+		}, -- [221]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [222]
+		{
+			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
+			0, -- [2]
+		}, -- [223]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [224]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [225]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [226]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [227]
+		{
+			"Total: 234d 9h 56m 55s", -- [1]
+			0, -- [2]
+		}, -- [228]
+		{
+			"Level: 31d 20h 36m 32s", -- [1]
+			0, -- [2]
+		}, -- [229]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [230]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [231]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [232]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [233]
+		{
+			"Total: 234d 9h 58m 3s", -- [1]
+			0, -- [2]
+		}, -- [234]
+		{
+			"Level: 31d 20h 37m 40s", -- [1]
+			0, -- [2]
+		}, -- [235]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [236]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [237]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [238]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [239]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [240]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [241]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [242]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [243]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [244]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [245]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [246]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [247]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [248]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [249]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [250]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [251]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [252]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [253]
+		{
+			"Water detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [254]
+		{
+			"Ripple detail changed to 1", -- [1]
+			0, -- [2]
+		}, -- [255]
+		{
+			"Reflection mode changed to 0", -- [1]
+			0, -- [2]
+		}, -- [256]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [257]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [258]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [259]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [260]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [261]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [262]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [263]
+		{
+			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [264]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [265]
+		{
+			"Soft shadows changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [266]
+		{
+			"SSAO mode set to 3", -- [1]
+			0, -- [2]
+		}, -- [267]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [268]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [269]
+		{
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			0, -- [2]
+		}, -- [270]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [271]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [272]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [273]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [274]
+		{
+			"Resample quality changed to 1", -- [1]
+			0, -- [2]
+		}, -- [275]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [276]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [277]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [278]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [279]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [280]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [281]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [282]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [283]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [284]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [285]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [286]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [287]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [288]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [289]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [290]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [291]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [292]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [293]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [294]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [295]
+		{
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [296]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [297]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [298]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [299]
+		{
+			"[GlueLogin] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [300]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [301]
+		{
+			"[IBN_Login] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [302]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [303]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [304]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [305]
+		{
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			0, -- [2]
+		}, -- [306]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [307]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			0, -- [2]
+		}, -- [308]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [309]
+		{
+			"NetClient::HandleCantConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [310]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [311]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [312]
+		{
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [313]
+		{
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [314]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [315]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [316]
+		{
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [317]
+		{
+			"[WowEntitlements] Initialized with 70 entitlements.", -- [1]
+			0, -- [2]
+		}, -- [318]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [319]
+		{
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [320]
+		{
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [321]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [322]
+		{
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			0, -- [2]
+		}, -- [323]
+		{
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			0, -- [2]
+		}, -- [324]
+		{
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			0, -- [2]
+		}, -- [325]
+		{
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			0, -- [2]
+		}, -- [326]
+		{
+			"Proficiency in item class 2 set to 0x000000009d", -- [1]
+			0, -- [2]
+		}, -- [327]
+		{
+			"Proficiency in item class 2 set to 0x000000019d", -- [1]
+			0, -- [2]
+		}, -- [328]
+		{
+			"Proficiency in item class 2 set to 0x000000059d", -- [1]
+			0, -- [2]
+		}, -- [329]
+		{
+			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
+			0, -- [2]
+		}, -- [330]
+		{
+			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
+			0, -- [2]
+		}, -- [331]
+		{
+			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
+			0, -- [2]
+		}, -- [332]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [333]
+		{
+			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
+			0, -- [2]
+		}, -- [334]
+		{
+			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
+			0, -- [2]
+		}, -- [335]
+		{
+			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
+			0, -- [2]
+		}, -- [336]
+		{
+			"Proficiency in item class 4 set to 0x0000000031", -- [1]
+			0, -- [2]
+		}, -- [337]
+		{
+			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
+			0, -- [2]
+		}, -- [338]
+		{
+			"Proficiency in item class 4 set to 0x0000000039", -- [1]
+			0, -- [2]
+		}, -- [339]
+		{
+			"Proficiency in item class 4 set to 0x000000003d", -- [1]
+			0, -- [2]
+		}, -- [340]
+		{
+			"Proficiency in item class 4 set to 0x000000003f", -- [1]
+			0, -- [2]
+		}, -- [341]
+		{
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			0, -- [2]
+		}, -- [342]
+		{
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			0, -- [2]
+		}, -- [343]
+		{
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			0, -- [2]
+		}, -- [344]
+		{
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
 		}, -- [345]
 		{
@@ -1387,96 +1387,96 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [346]
 		{
-			"Time played:", -- [1]
+			"Time set to 9/29/2019 (Sun) 18:58", -- [1]
 			0, -- [2]
 		}, -- [347]
 		{
-			"Total: 234d 5h 49m 48s", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [348]
 		{
-			"Level: 31d 16h 29m 25s", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [349]
 		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [350]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [351]
 		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [352]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [353]
 		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [354]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [355]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 234d 10h 0m 36s", -- [1]
 			0, -- [2]
 		}, -- [356]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 31d 20h 40m 13s", -- [1]
 			0, -- [2]
 		}, -- [357]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [358]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [359]
 		{
-			"Total: 234d 5h 58m 38s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [360]
 		{
-			"Level: 31d 16h 38m 15s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [361]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 234d 10h 2m 7s", -- [1]
 			0, -- [2]
 		}, -- [362]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 31d 20h 41m 44s", -- [1]
 			0, -- [2]
 		}, -- [363]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [364]
 		{
-			"Time played:", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [365]
 		{
-			"Total: 234d 6h 0m 11s", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [366]
 		{
-			"Level: 31d 16h 39m 48s", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [367]
 		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [368]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [369]
 		{
 			"World transfer pending...", -- [1]
@@ -1491,95 +1491,95 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [372]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [373]
 		{
-			"Time played:", -- [1]
+			"Total: 234d 10h 3m 18s", -- [1]
 			0, -- [2]
 		}, -- [374]
 		{
-			"Total: 234d 6h 12m 42s", -- [1]
+			"Level: 31d 20h 42m 55s", -- [1]
 			0, -- [2]
 		}, -- [375]
 		{
-			"Level: 31d 16h 52m 19s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [376]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [377]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [378]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [379]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [380]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [381]
-		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [382]
+		}, -- [378]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [383]
+		}, -- [379]
 		{
-			"Total: 234d 6h 15m 32s", -- [1]
+			"Total: 234d 10h 3m 48s", -- [1]
 			0, -- [2]
-		}, -- [384]
+		}, -- [380]
 		{
-			"Level: 31d 16h 55m 9s", -- [1]
+			"Level: 31d 20h 43m 25s", -- [1]
 			0, -- [2]
-		}, -- [385]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [386]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [387]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [388]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [389]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [390]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [391]
+		}, -- [381]
 		{
 			"World transfer pending...", -- [1]
 			0, -- [2]
-		}, -- [392]
+		}, -- [382]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [383]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [384]
+		{
+			"Total: 234d 10h 6m 32s", -- [1]
+			0, -- [2]
+		}, -- [385]
+		{
+			"Level: 31d 20h 46m 9s", -- [1]
+			0, -- [2]
+		}, -- [386]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [387]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
+		}, -- [388]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [389]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [390]
+		{
+			"Total: 234d 10h 9m 37s", -- [1]
+			0, -- [2]
+		}, -- [391]
+		{
+			"Level: 31d 20h 49m 14s", -- [1]
+			0, -- [2]
+		}, -- [392]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
 		}, -- [393]
 		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [394]
 		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [395]
 		{
@@ -1587,511 +1587,511 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [396]
 		{
-			"Total: 234d 7h 17m 44s", -- [1]
+			"Total: 234d 10h 15m 26s", -- [1]
 			0, -- [2]
 		}, -- [397]
 		{
-			"Level: 31d 17h 57m 21s", -- [1]
+			"Level: 31d 20h 55m 3s", -- [1]
 			0, -- [2]
 		}, -- [398]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [399]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [400]
 		{
-			"Sorting particles normally.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [401]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [402]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Total: 234d 10h 15m 38s", -- [1]
 			0, -- [2]
 		}, -- [403]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Level: 31d 20h 55m 15s", -- [1]
 			0, -- [2]
 		}, -- [404]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [405]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [406]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [407]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [408]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"Total: 234d 10h 20m 59s", -- [1]
 			0, -- [2]
 		}, -- [409]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"Level: 31d 21h 0m 36s", -- [1]
 			0, -- [2]
 		}, -- [410]
 		{
-			"Water detail changed to 2", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [411]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [412]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [413]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [414]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Total: 234d 10h 23m 28s", -- [1]
 			0, -- [2]
 		}, -- [415]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Level: 31d 21h 3m 5s", -- [1]
 			0, -- [2]
 		}, -- [416]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [417]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [418]
 		{
-			"Volume fog enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [419]
 		{
-			"Projected textures enabled.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [420]
 		{
-			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
+			"Total: 234d 10h 31m 49s", -- [1]
 			0, -- [2]
 		}, -- [421]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Level: 31d 21h 11m 26s", -- [1]
 			0, -- [2]
 		}, -- [422]
 		{
-			"Soft shadows changed to 0.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [423]
 		{
-			"SSAO mode set to 3", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [424]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [425]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [426]
 		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			"Total: 234d 10h 32m 54s", -- [1]
 			0, -- [2]
 		}, -- [427]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Level: 31d 21h 12m 31s", -- [1]
 			0, -- [2]
 		}, -- [428]
 		{
-			"Outline mode changed to 2", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [429]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [430]
 		{
-			"Render scale changed to 1", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [431]
 		{
-			"Resample quality changed to 1", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [432]
 		{
-			"MSAA disabled", -- [1]
+			"Total: 234d 10h 37m 31s", -- [1]
 			0, -- [2]
 		}, -- [433]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Level: 31d 21h 17m 8s", -- [1]
 			0, -- [2]
 		}, -- [434]
 		{
-			"World preload object sort enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [435]
 		{
-			"World load object sort enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [436]
 		{
-			"World preload non critical enabled.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [437]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Total: 234d 10h 53m 14s", -- [1]
 			0, -- [2]
 		}, -- [438]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Level: 31d 21h 32m 51s", -- [1]
 			0, -- [2]
 		}, -- [439]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [440]
 		{
-			"Error display disabled", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [441]
 		{
-			"Error display shown", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [442]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [443]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Total: 234d 10h 59m 24s", -- [1]
 			0, -- [2]
 		}, -- [444]
 		{
-			"Now filtering: all messages", -- [1]
+			"Level: 31d 21h 39m 1s", -- [1]
 			0, -- [2]
 		}, -- [445]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [446]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [447]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [448]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Total: 234d 10h 59m 34s", -- [1]
 			0, -- [2]
 		}, -- [449]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Level: 31d 21h 39m 11s", -- [1]
 			0, -- [2]
 		}, -- [450]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [451]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [452]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [453]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [454]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Total: 234d 11h 1m 5s", -- [1]
 			0, -- [2]
 		}, -- [455]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Level: 31d 21h 40m 42s", -- [1]
 			0, -- [2]
 		}, -- [456]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [457]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [458]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [459]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [460]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [461]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
 		}, -- [462]
-		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
-			0, -- [2]
-		}, -- [463]
-		{
-			"[GlueLogin] Realm list ready.", -- [1]
-			0, -- [2]
-		}, -- [464]
-		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
-			0, -- [2]
-		}, -- [465]
-		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [466]
-		{
-			"NetClient::HandleCantConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [467]
-		{
-			"NetClient::HandleConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [468]
-		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [469]
-		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
-			0, -- [2]
-		}, -- [470]
-		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [471]
-		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
-			0, -- [2]
-		}, -- [472]
-		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
-			0, -- [2]
-		}, -- [473]
-		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [474]
-		{
-			"[WowEntitlements] Initialized with 70 entitlements.", -- [1]
-			0, -- [2]
-		}, -- [475]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [476]
-		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
-		}, -- [477]
-		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
-		}, -- [478]
-		{
-			"Got new connection 2", -- [1]
-			0, -- [2]
-		}, -- [479]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [480]
-		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
-			0, -- [2]
-		}, -- [481]
-		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
-			0, -- [2]
-		}, -- [482]
-		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
-			0, -- [2]
-		}, -- [483]
-		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
-			0, -- [2]
-		}, -- [484]
-		{
-			"Proficiency in item class 2 set to 0x000000009d", -- [1]
-			0, -- [2]
-		}, -- [485]
-		{
-			"Proficiency in item class 2 set to 0x000000019d", -- [1]
-			0, -- [2]
-		}, -- [486]
-		{
-			"Proficiency in item class 2 set to 0x000000059d", -- [1]
-			0, -- [2]
-		}, -- [487]
-		{
-			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
-			0, -- [2]
-		}, -- [488]
-		{
-			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
-			0, -- [2]
-		}, -- [489]
-		{
-			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
-			0, -- [2]
-		}, -- [490]
-		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
-			0, -- [2]
-		}, -- [491]
-		{
-			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
-			0, -- [2]
-		}, -- [492]
-		{
-			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
-			0, -- [2]
-		}, -- [493]
-		{
-			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
-			0, -- [2]
-		}, -- [494]
-		{
-			"Proficiency in item class 4 set to 0x0000000031", -- [1]
-			0, -- [2]
-		}, -- [495]
-		{
-			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
-			0, -- [2]
-		}, -- [496]
-		{
-			"Proficiency in item class 4 set to 0x0000000039", -- [1]
-			0, -- [2]
-		}, -- [497]
-		{
-			"Proficiency in item class 4 set to 0x000000003d", -- [1]
-			0, -- [2]
-		}, -- [498]
-		{
-			"Proficiency in item class 4 set to 0x000000003f", -- [1]
-			0, -- [2]
-		}, -- [499]
-		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
-			0, -- [2]
-		}, -- [500]
-		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
-			0, -- [2]
-		}, -- [501]
-		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
-			0, -- [2]
-		}, -- [502]
-		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
-			0, -- [2]
-		}, -- [503]
-		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
-			0, -- [2]
-		}, -- [504]
-		{
-			"Time set to 9/29/2019 (Sun) 14:59", -- [1]
-			0, -- [2]
-		}, -- [505]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [506]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [507]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [508]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [509]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [510]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [511]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [512]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [513]
-		{
-			"Total: 234d 7h 21m 45s", -- [1]
-			0, -- [2]
-		}, -- [514]
-		{
-			"Level: 31d 18h 1m 22s", -- [1]
-			0, -- [2]
-		}, -- [515]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [516]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [517]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [518]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [519]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [520]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [521]
 		{
 			"World transfer pending...", -- [1]
 			0, -- [2]
-		}, -- [522]
+		}, -- [463]
 		{
 			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [464]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [465]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [466]
+		{
+			"Total: 234d 11h 6m 26s", -- [1]
+			0, -- [2]
+		}, -- [467]
+		{
+			"Level: 31d 21h 46m 3s", -- [1]
+			0, -- [2]
+		}, -- [468]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [469]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [470]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [471]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [472]
+		{
+			"Total: 234d 11h 7m 29s", -- [1]
+			0, -- [2]
+		}, -- [473]
+		{
+			"Level: 31d 21h 47m 6s", -- [1]
+			0, -- [2]
+		}, -- [474]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [475]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [476]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [477]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [478]
+		{
+			"Total: 234d 11h 13m 59s", -- [1]
+			0, -- [2]
+		}, -- [479]
+		{
+			"Level: 31d 21h 53m 36s", -- [1]
+			0, -- [2]
+		}, -- [480]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [481]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [482]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [483]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [484]
+		{
+			"Total: 234d 11h 15m 25s", -- [1]
+			0, -- [2]
+		}, -- [485]
+		{
+			"Level: 31d 21h 55m 2s", -- [1]
+			0, -- [2]
+		}, -- [486]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [487]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [488]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [489]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [490]
+		{
+			"Total: 234d 11h 27m 14s", -- [1]
+			0, -- [2]
+		}, -- [491]
+		{
+			"Level: 31d 22h 6m 51s", -- [1]
+			0, -- [2]
+		}, -- [492]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [493]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [494]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [495]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [496]
+		{
+			"Total: 234d 11h 27m 55s", -- [1]
+			0, -- [2]
+		}, -- [497]
+		{
+			"Level: 31d 22h 7m 32s", -- [1]
+			0, -- [2]
+		}, -- [498]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [499]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [500]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [501]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [502]
+		{
+			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [503]
+		{
+			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [504]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [505]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [506]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [507]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [508]
+		{
+			"Total: 234d 11h 34m 33s", -- [1]
+			0, -- [2]
+		}, -- [509]
+		{
+			"Level: 31d 22h 14m 10s", -- [1]
+			0, -- [2]
+		}, -- [510]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [511]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [512]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [513]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [514]
+		{
+			"Total: 234d 11h 38m 16s", -- [1]
+			0, -- [2]
+		}, -- [515]
+		{
+			"Level: 31d 22h 17m 53s", -- [1]
+			0, -- [2]
+		}, -- [516]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [517]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [518]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [519]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [520]
+		{
+			"Total: 234d 11h 38m 41s", -- [1]
+			0, -- [2]
+		}, -- [521]
+		{
+			"Level: 31d 22h 18m 18s", -- [1]
+			0, -- [2]
+		}, -- [522]
+		{
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [523]
 		{
@@ -2103,1303 +2103,1303 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [525]
 		{
-			"Total: 234d 8h 17m 47s", -- [1]
+			"Total: 234d 11h 38m 54s", -- [1]
 			0, -- [2]
 		}, -- [526]
 		{
-			"Level: 31d 18h 57m 24s", -- [1]
+			"Level: 31d 22h 18m 31s", -- [1]
 			0, -- [2]
 		}, -- [527]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [528]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [529]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [530]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [531]
 		{
-			"Total: 234d 8h 20m 11s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [532]
 		{
-			"Level: 31d 18h 59m 48s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [533]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 234d 11h 41m 9s", -- [1]
 			0, -- [2]
 		}, -- [534]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 31d 22h 20m 46s", -- [1]
 			0, -- [2]
 		}, -- [535]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [536]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [537]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [538]
 		{
-			"Total: 234d 8h 20m 29s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [539]
 		{
-			"Level: 31d 19h 0m 6s", -- [1]
+			"Total: 234d 11h 47m 37s", -- [1]
 			0, -- [2]
 		}, -- [540]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Level: 31d 22h 27m 14s", -- [1]
+			0, -- [2]
 		}, -- [541]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"World transfer pending...", -- [1]
+			0, -- [2]
 		}, -- [542]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [543]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
 		}, -- [544]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
 		}, -- [545]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Time played:", -- [1]
+			0, -- [2]
 		}, -- [546]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Total: 234d 11h 54m 44s", -- [1]
+			0, -- [2]
 		}, -- [547]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Level: 31d 22h 34m 21s", -- [1]
+			0, -- [2]
 		}, -- [548]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
 		}, -- [549]
 		{
-			"World transfer pending...", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [550]
 		{
-			"Got new connection 3", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [551]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [552]
 		{
-			"Time played:", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [553]
 		{
-			"Total: 234d 8h 23m 3s", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [554]
 		{
-			"Level: 31d 19h 2m 40s", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [555]
 		{
-			"World transfer pending...", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [556]
 		{
-			"Got new connection 3", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [557]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [558]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [559]
 		{
-			"Time played:", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [560]
 		{
-			"Total: 234d 8h 29m 29s", -- [1]
+			"Water detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [561]
 		{
-			"Level: 31d 19h 9m 6s", -- [1]
+			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
 		}, -- [562]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [563]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [564]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [565]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [566]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [567]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [568]
-		{
-			"Total: 234d 8h 30m 8s", -- [1]
-			0, -- [2]
-		}, -- [569]
-		{
-			"Level: 31d 19h 9m 45s", -- [1]
-			0, -- [2]
-		}, -- [570]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [571]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [572]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [573]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [574]
-		{
-			"Total: 234d 9h 11m 20s", -- [1]
-			0, -- [2]
-		}, -- [575]
-		{
-			"Level: 31d 19h 50m 57s", -- [1]
-			0, -- [2]
-		}, -- [576]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [577]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [578]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [579]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [580]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [581]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [582]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [583]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [584]
-		{
-			"Weather changed to 2, intensity 0.800000\n", -- [1]
-			0, -- [2]
-		}, -- [585]
-		{
-			"Weather changed to 2, intensity 0.800000\n", -- [1]
-			0, -- [2]
-		}, -- [586]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [587]
-		{
-			"Total: 234d 9h 24m 18s", -- [1]
-			0, -- [2]
-		}, -- [588]
-		{
-			"Level: 31d 20h 3m 55s", -- [1]
-			0, -- [2]
-		}, -- [589]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [590]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [591]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [592]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [593]
-		{
-			"Total: 234d 9h 28m 50s", -- [1]
-			0, -- [2]
-		}, -- [594]
-		{
-			"Level: 31d 20h 8m 27s", -- [1]
-			0, -- [2]
-		}, -- [595]
-		{
-			"Weather changed to 2, intensity 1.000000\n", -- [1]
-			0, -- [2]
-		}, -- [596]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [597]
-		{
-			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
-			0, -- [2]
-		}, -- [598]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [599]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [600]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [601]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [602]
-		{
-			"Total: 234d 9h 56m 55s", -- [1]
-			0, -- [2]
-		}, -- [603]
-		{
-			"Level: 31d 20h 36m 32s", -- [1]
-			0, -- [2]
-		}, -- [604]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [605]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [606]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [607]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [608]
-		{
-			"Total: 234d 9h 58m 3s", -- [1]
-			0, -- [2]
-		}, -- [609]
-		{
-			"Level: 31d 20h 37m 40s", -- [1]
-			0, -- [2]
-		}, -- [610]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [611]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [612]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [613]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [614]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [615]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [616]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [617]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [618]
-		{
-			"Sorting particles normally.", -- [1]
-			0, -- [2]
-		}, -- [619]
-		{
-			"Multithreaded rendering enabled.", -- [1]
-			0, -- [2]
-		}, -- [620]
-		{
-			"Multithreaded BeginDraw enabled.", -- [1]
-			0, -- [2]
-		}, -- [621]
-		{
-			"Multithread shadows changed to 1.", -- [1]
-			0, -- [2]
-		}, -- [622]
-		{
-			"Multithreaded prepass enabled.", -- [1]
-			0, -- [2]
-		}, -- [623]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [624]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [625]
-		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [626]
-		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [627]
-		{
-			"Multithreaded terrain pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [628]
-		{
-			"Water detail changed to 2", -- [1]
-			0, -- [2]
-		}, -- [629]
-		{
-			"Ripple detail changed to 1", -- [1]
-			0, -- [2]
-		}, -- [630]
-		{
 			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
-		}, -- [631]
+		}, -- [563]
 		{
 			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
-		}, -- [632]
+		}, -- [564]
 		{
 			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
-		}, -- [633]
+		}, -- [565]
 		{
 			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [634]
+		}, -- [566]
 		{
 			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
-		}, -- [635]
+		}, -- [567]
 		{
 			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
-		}, -- [636]
+		}, -- [568]
 		{
 			"Volume fog enabled.", -- [1]
 			0, -- [2]
-		}, -- [637]
+		}, -- [569]
 		{
 			"Projected textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [638]
+		}, -- [570]
 		{
 			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
-		}, -- [639]
+		}, -- [571]
 		{
 			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
-		}, -- [640]
+		}, -- [572]
 		{
 			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [641]
+		}, -- [573]
 		{
 			"SSAO mode set to 3", -- [1]
 			0, -- [2]
-		}, -- [642]
+		}, -- [574]
 		{
 			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
-		}, -- [643]
+		}, -- [575]
 		{
 			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
-		}, -- [644]
+		}, -- [576]
 		{
 			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
-		}, -- [645]
+		}, -- [577]
 		{
 			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [646]
+		}, -- [578]
 		{
 			"Outline mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [647]
+		}, -- [579]
 		{
 			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
-		}, -- [648]
+		}, -- [580]
 		{
 			"Render scale changed to 1", -- [1]
 			0, -- [2]
-		}, -- [649]
+		}, -- [581]
 		{
 			"Resample quality changed to 1", -- [1]
 			0, -- [2]
-		}, -- [650]
+		}, -- [582]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [651]
+		}, -- [583]
 		{
 			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
-		}, -- [652]
+		}, -- [584]
 		{
 			"World preload object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [653]
+		}, -- [585]
 		{
 			"World load object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [654]
+		}, -- [586]
 		{
 			"World preload non critical enabled.", -- [1]
 			0, -- [2]
-		}, -- [655]
+		}, -- [587]
 		{
 			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [656]
+		}, -- [588]
 		{
 			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
-		}, -- [657]
+		}, -- [589]
 		{
 			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
-		}, -- [658]
+		}, -- [590]
 		{
 			"Error display disabled", -- [1]
 			0, -- [2]
-		}, -- [659]
+		}, -- [591]
 		{
 			"Error display shown", -- [1]
 			0, -- [2]
-		}, -- [660]
+		}, -- [592]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [661]
+		}, -- [593]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [662]
+		}, -- [594]
 		{
 			"Now filtering: all messages", -- [1]
 			0, -- [2]
-		}, -- [663]
+		}, -- [595]
 		{
 			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [664]
+		}, -- [596]
 		{
 			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [665]
+		}, -- [597]
 		{
 			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [666]
+		}, -- [598]
 		{
 			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [667]
+		}, -- [599]
 		{
 			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
-		}, -- [668]
+		}, -- [600]
 		{
 			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
-		}, -- [669]
+		}, -- [601]
 		{
 			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
-		}, -- [670]
+		}, -- [602]
 		{
 			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
-		}, -- [671]
+		}, -- [603]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [672]
+		}, -- [604]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [673]
+		}, -- [605]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [674]
+		}, -- [606]
 		{
 			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
-		}, -- [675]
+		}, -- [607]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [676]
+		}, -- [608]
 		{
 			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
-		}, -- [677]
+		}, -- [609]
 		{
 			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [678]
+		}, -- [610]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [679]
+		}, -- [611]
 		{
 			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [680]
+		}, -- [612]
 		{
 			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
-		}, -- [681]
+		}, -- [613]
 		{
 			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
-		}, -- [682]
+		}, -- [614]
 		{
 			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
-		}, -- [683]
+		}, -- [615]
 		{
 			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [684]
+		}, -- [616]
 		{
 			"NetClient::HandleCantConnect()\n", -- [1]
 			0, -- [2]
-		}, -- [685]
+		}, -- [617]
 		{
 			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
-		}, -- [686]
+		}, -- [618]
 		{
 			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [687]
+		}, -- [619]
 		{
 			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [688]
+		}, -- [620]
 		{
 			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [689]
+		}, -- [621]
 		{
 			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
-		}, -- [690]
+		}, -- [622]
 		{
 			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
-		}, -- [691]
+		}, -- [623]
 		{
 			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [692]
+		}, -- [624]
 		{
 			"[WowEntitlements] Initialized with 70 entitlements.", -- [1]
 			0, -- [2]
-		}, -- [693]
+		}, -- [625]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [694]
+		}, -- [626]
 		{
 			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [695]
+		}, -- [627]
 		{
 			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [696]
+		}, -- [628]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [629]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [697]
+		}, -- [630]
 		{
 			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
-		}, -- [698]
+		}, -- [631]
 		{
 			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
-		}, -- [699]
+		}, -- [632]
 		{
 			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
-		}, -- [700]
+		}, -- [633]
 		{
 			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
-		}, -- [701]
+		}, -- [634]
 		{
 			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
-		}, -- [702]
+		}, -- [635]
 		{
 			"Proficiency in item class 2 set to 0x000000019d", -- [1]
 			0, -- [2]
-		}, -- [703]
+		}, -- [636]
 		{
 			"Proficiency in item class 2 set to 0x000000059d", -- [1]
 			0, -- [2]
-		}, -- [704]
+		}, -- [637]
 		{
 			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
 			0, -- [2]
-		}, -- [705]
+		}, -- [638]
 		{
 			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
 			0, -- [2]
-		}, -- [706]
+		}, -- [639]
 		{
 			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
 			0, -- [2]
-		}, -- [707]
+		}, -- [640]
 		{
 			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
-		}, -- [708]
+		}, -- [641]
 		{
 			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
 			0, -- [2]
-		}, -- [709]
+		}, -- [642]
 		{
 			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
 			0, -- [2]
-		}, -- [710]
+		}, -- [643]
 		{
 			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
 			0, -- [2]
-		}, -- [711]
+		}, -- [644]
 		{
 			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
-		}, -- [712]
+		}, -- [645]
 		{
 			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
 			0, -- [2]
-		}, -- [713]
+		}, -- [646]
 		{
 			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
-		}, -- [714]
+		}, -- [647]
 		{
 			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
-		}, -- [715]
+		}, -- [648]
 		{
 			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
-		}, -- [716]
+		}, -- [649]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [717]
+		}, -- [650]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [718]
+		}, -- [651]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [719]
+		}, -- [652]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [720]
+		}, -- [653]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
-		}, -- [721]
+		}, -- [654]
 		{
-			"Time set to 9/29/2019 (Sun) 18:58", -- [1]
+			"Time set to 9/30/2019 (Mon) 20:18", -- [1]
 			0, -- [2]
-		}, -- [722]
+		}, -- [655]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [723]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [724]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [725]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [726]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [727]
-		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [728]
-		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
-		}, -- [729]
+		}, -- [656]
 		{
 			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [657]
+		{
+			"Total: 234d 11h 55m 13s", -- [1]
+			0, -- [2]
+		}, -- [658]
+		{
+			"Level: 31d 22h 34m 50s", -- [1]
+			0, -- [2]
+		}, -- [659]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [660]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [661]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [662]
+		{
+			"Total: 234d 12h 16m 6s", -- [1]
+			0, -- [2]
+		}, -- [663]
+		{
+			"Level: 31d 22h 55m 43s", -- [1]
+			0, -- [2]
+		}, -- [664]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [665]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [666]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [667]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [668]
+		{
+			"Total: 234d 12h 16m 33s", -- [1]
+			0, -- [2]
+		}, -- [669]
+		{
+			"Level: 31d 22h 56m 10s", -- [1]
+			0, -- [2]
+		}, -- [670]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [671]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [672]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [673]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [674]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [675]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [676]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [677]
+		{
+			"Total: 234d 12h 19m 28s", -- [1]
+			0, -- [2]
+		}, -- [678]
+		{
+			"Level: 31d 22h 59m 5s", -- [1]
+			0, -- [2]
+		}, -- [679]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [680]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [681]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [682]
+		{
+			"Total: 234d 12h 21m 0s", -- [1]
+			0, -- [2]
+		}, -- [683]
+		{
+			"Level: 31d 23h 0m 37s", -- [1]
+			0, -- [2]
+		}, -- [684]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [685]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [686]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [687]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [688]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [689]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [690]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [691]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [692]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [693]
+		{
+			"Total: 234d 12h 43m 11s", -- [1]
+			0, -- [2]
+		}, -- [694]
+		{
+			"Level: 31d 23h 22m 48s", -- [1]
+			0, -- [2]
+		}, -- [695]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [696]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [697]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [698]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [699]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [700]
+		{
+			"Total: 234d 12h 45m 49s", -- [1]
+			0, -- [2]
+		}, -- [701]
+		{
+			"Level: 31d 23h 25m 26s", -- [1]
+			0, -- [2]
+		}, -- [702]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [703]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [704]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [705]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [706]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [707]
+		{
+			"Total: 234d 13h 52m 6s", -- [1]
+			0, -- [2]
+		}, -- [708]
+		{
+			"Level: 32d 0h 31m 43s", -- [1]
+			0, -- [2]
+		}, -- [709]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [710]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [711]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [712]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [713]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [714]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [715]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [716]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [717]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [718]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [719]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [720]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [721]
+		{
+			"Water detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [722]
+		{
+			"Ripple detail changed to 1", -- [1]
+			0, -- [2]
+		}, -- [723]
+		{
+			"Reflection mode changed to 0", -- [1]
+			0, -- [2]
+		}, -- [724]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [725]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [726]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [727]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [728]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [729]
+		{
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [730]
 		{
-			"Total: 234d 10h 0m 36s", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [731]
 		{
-			"Level: 31d 20h 40m 13s", -- [1]
+			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [732]
 		{
-			"World transfer pending...", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [733]
 		{
-			"Got new connection 3", -- [1]
+			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [734]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"SSAO mode set to 3", -- [1]
 			0, -- [2]
 		}, -- [735]
 		{
-			"Time played:", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [736]
 		{
-			"Total: 234d 10h 2m 7s", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [737]
 		{
-			"Level: 31d 20h 41m 44s", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [738]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
 		}, -- [739]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
 		}, -- [740]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
 		}, -- [741]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
 		}, -- [742]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Resample quality changed to 1", -- [1]
+			0, -- [2]
 		}, -- [743]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"MSAA disabled", -- [1]
+			0, -- [2]
 		}, -- [744]
 		{
-			"World transfer pending...", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [745]
 		{
-			"Got new connection 3", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [746]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [747]
 		{
-			"Time played:", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [748]
 		{
-			"Total: 234d 10h 3m 18s", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [749]
 		{
-			"Level: 31d 20h 42m 55s", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [750]
 		{
-			"World transfer pending...", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [751]
 		{
-			"Got new connection 3", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [752]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [753]
 		{
-			"Time played:", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [754]
 		{
-			"Total: 234d 10h 3m 48s", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [755]
 		{
-			"Level: 31d 20h 43m 25s", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [756]
 		{
-			"World transfer pending...", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [757]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [758]
 		{
-			"Time played:", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [759]
 		{
-			"Total: 234d 10h 6m 32s", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [760]
 		{
-			"Level: 31d 20h 46m 9s", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [761]
 		{
-			"World transfer pending...", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [762]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [763]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [764]
 		{
-			"Time played:", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [765]
 		{
-			"Total: 234d 10h 9m 37s", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [766]
 		{
-			"Level: 31d 20h 49m 14s", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [767]
 		{
-			"World transfer pending...", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [768]
 		{
-			"Got new connection 3", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [769]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [770]
 		{
-			"Time played:", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [771]
 		{
-			"Total: 234d 10h 15m 26s", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [772]
 		{
-			"Level: 31d 20h 55m 3s", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [773]
 		{
-			"World transfer pending...", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [774]
 		{
-			"Got new connection 3", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [775]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
 		}, -- [776]
 		{
-			"Time played:", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [777]
 		{
-			"Total: 234d 10h 15m 38s", -- [1]
+			"NetClient::HandleCantConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [778]
 		{
-			"Level: 31d 20h 55m 15s", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [779]
 		{
-			"World transfer pending...", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [780]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [781]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [782]
 		{
-			"Time played:", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [783]
 		{
-			"Total: 234d 10h 20m 59s", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [784]
 		{
-			"Level: 31d 21h 0m 36s", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [785]
 		{
-			"World transfer pending...", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [786]
 		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [787]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [788]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [789]
 		{
-			"Total: 234d 10h 23m 28s", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [790]
 		{
-			"Level: 31d 21h 3m 5s", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [791]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
 		}, -- [792]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
 		}, -- [793]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
 		}, -- [794]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x000000019d", -- [1]
 			0, -- [2]
 		}, -- [795]
 		{
-			"Total: 234d 10h 31m 49s", -- [1]
+			"Proficiency in item class 2 set to 0x000000059d", -- [1]
 			0, -- [2]
 		}, -- [796]
 		{
-			"Level: 31d 21h 11m 26s", -- [1]
+			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
 			0, -- [2]
 		}, -- [797]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
 			0, -- [2]
 		}, -- [798]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
 			0, -- [2]
 		}, -- [799]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [800]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
 			0, -- [2]
 		}, -- [801]
 		{
-			"Total: 234d 10h 32m 54s", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
 			0, -- [2]
 		}, -- [802]
 		{
-			"Level: 31d 21h 12m 31s", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
 			0, -- [2]
 		}, -- [803]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
 		}, -- [804]
 		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
 			0, -- [2]
 		}, -- [805]
 		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
 		}, -- [806]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
 		}, -- [807]
 		{
-			"Total: 234d 10h 37m 31s", -- [1]
+			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
 		}, -- [808]
 		{
-			"Level: 31d 21h 17m 8s", -- [1]
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
 		}, -- [809]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
 		}, -- [810]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
 		}, -- [811]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
 		}, -- [812]
 		{
-			"Total: 234d 10h 53m 14s", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [813]
 		{
-			"Level: 31d 21h 32m 51s", -- [1]
+			"Time set to 10/1/2019 (Tue) 20:54", -- [1]
 			0, -- [2]
 		}, -- [814]
 		{
-			"World transfer pending...", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [815]
 		{
-			"Got new connection 3", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [816]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Total: 234d 13h 55m 46s", -- [1]
 			0, -- [2]
 		}, -- [817]
 		{
-			"Time played:", -- [1]
+			"Level: 32d 0h 35m 23s", -- [1]
 			0, -- [2]
 		}, -- [818]
 		{
-			"Total: 234d 10h 59m 24s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [819]
 		{
-			"Level: 31d 21h 39m 1s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [820]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [821]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [822]
 		{
-			"Time played:", -- [1]
+			"Total: 234d 13h 57m 1s", -- [1]
 			0, -- [2]
 		}, -- [823]
 		{
-			"Total: 234d 10h 59m 34s", -- [1]
+			"Level: 32d 0h 36m 38s", -- [1]
 			0, -- [2]
 		}, -- [824]
 		{
-			"Level: 31d 21h 39m 11s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [825]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [826]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [827]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [828]
 		{
-			"Time played:", -- [1]
+			"Total: 234d 13h 57m 31s", -- [1]
 			0, -- [2]
 		}, -- [829]
 		{
-			"Total: 234d 11h 1m 5s", -- [1]
+			"Level: 32d 0h 37m 8s", -- [1]
 			0, -- [2]
 		}, -- [830]
 		{
-			"Level: 31d 21h 40m 42s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [831]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
 		}, -- [832]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Got new connection 3", -- [1]
+			0, -- [2]
 		}, -- [833]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
 		}, -- [834]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Got new connection 3", -- [1]
+			0, -- [2]
 		}, -- [835]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
 		}, -- [836]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"World transfer pending...", -- [1]
+			0, -- [2]
 		}, -- [837]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [838]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [839]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [840]
 		{
-			"Time played:", -- [1]
+			"Total: 234d 14h 1m 29s", -- [1]
 			0, -- [2]
 		}, -- [841]
 		{
-			"Total: 234d 11h 6m 26s", -- [1]
+			"Level: 32d 0h 41m 6s", -- [1]
 			0, -- [2]
 		}, -- [842]
 		{
-			"Level: 31d 21h 46m 3s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [843]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [844]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [845]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [846]
 		{
-			"Time played:", -- [1]
+			"Total: 234d 14h 2m 41s", -- [1]
 			0, -- [2]
 		}, -- [847]
 		{
-			"Total: 234d 11h 7m 29s", -- [1]
+			"Level: 32d 0h 42m 18s", -- [1]
 			0, -- [2]
 		}, -- [848]
 		{
-			"Level: 31d 21h 47m 6s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [849]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [850]
 		{
@@ -3411,139 +3411,139 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [852]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [853]
 		{
-			"Total: 234d 11h 13m 59s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [854]
 		{
-			"Level: 31d 21h 53m 36s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [855]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [856]
 		{
-			"Got new connection 3", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [857]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [858]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [859]
 		{
-			"Total: 234d 11h 15m 25s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [860]
 		{
-			"Level: 31d 21h 55m 2s", -- [1]
+			"Total: 234d 15h 6m 11s", -- [1]
 			0, -- [2]
 		}, -- [861]
 		{
-			"World transfer pending...", -- [1]
+			"Level: 32d 1h 45m 48s", -- [1]
 			0, -- [2]
 		}, -- [862]
 		{
-			"Got new connection 3", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [863]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [864]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [865]
 		{
-			"Total: 234d 11h 27m 14s", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [866]
 		{
-			"Level: 31d 22h 6m 51s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [867]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 234d 15h 8m 20s", -- [1]
 			0, -- [2]
 		}, -- [868]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 32d 1h 47m 57s", -- [1]
 			0, -- [2]
 		}, -- [869]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [870]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [871]
 		{
-			"Total: 234d 11h 27m 55s", -- [1]
+			"Weather changed to 3, intensity 0.132627\n", -- [1]
 			0, -- [2]
 		}, -- [872]
 		{
-			"Level: 31d 22h 7m 32s", -- [1]
+			"Weather changed to 3, intensity 0.122885\n", -- [1]
 			0, -- [2]
 		}, -- [873]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
 		}, -- [874]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Got new connection 3", -- [1]
+			0, -- [2]
 		}, -- [875]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
 		}, -- [876]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
+			0, -- [2]
 		}, -- [877]
 		{
-			"Modifier not supported on client (type=174, asset=54404, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
 		}, -- [878]
 		{
-			"Modifier not supported on client (type=174, asset=54310, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
-			3, -- [2]
+			"Got new connection 3", -- [1]
+			0, -- [2]
 		}, -- [879]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [880]
 		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
 		}, -- [881]
 		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [882]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 2, intensity 1.000000\n", -- [1]
 			0, -- [2]
 		}, -- [883]
 		{
-			"Total: 234d 11h 34m 33s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [884]
 		{
-			"Level: 31d 22h 14m 10s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [885]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [886]
 		{
@@ -3555,43 +3555,43 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [888]
 		{
-			"Time played:", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [889]
 		{
-			"Total: 234d 11h 38m 16s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [890]
 		{
-			"Level: 31d 22h 17m 53s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [891]
 		{
-			"World transfer pending...", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [892]
 		{
-			"Got new connection 3", -- [1]
+			"Total: 234d 15h 23m 54s", -- [1]
 			0, -- [2]
 		}, -- [893]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Level: 32d 2h 3m 31s", -- [1]
 			0, -- [2]
 		}, -- [894]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [895]
 		{
-			"Total: 234d 11h 38m 41s", -- [1]
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
 		}, -- [896]
 		{
-			"Level: 31d 22h 18m 18s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [897]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [898]
 		{
@@ -3599,35 +3599,35 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [899]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [900]
 		{
-			"Total: 234d 11h 38m 54s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [901]
 		{
-			"Level: 31d 22h 18m 31s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [902]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [903]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [904]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [905]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
 		}, -- [906]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
 		}, -- [907]
 		{
@@ -3635,11 +3635,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [908]
 		{
-			"Total: 234d 11h 41m 9s", -- [1]
+			"Total: 234d 15h 33m 37s", -- [1]
 			0, -- [2]
 		}, -- [909]
 		{
-			"Level: 31d 22h 20m 46s", -- [1]
+			"Level: 32d 2h 13m 14s", -- [1]
 			0, -- [2]
 		}, -- [910]
 		{
@@ -3659,11 +3659,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [914]
 		{
-			"Total: 234d 11h 47m 37s", -- [1]
+			"Total: 234d 15h 36m 4s", -- [1]
 			0, -- [2]
 		}, -- [915]
 		{
-			"Level: 31d 22h 27m 14s", -- [1]
+			"Level: 32d 2h 15m 41s", -- [1]
 			0, -- [2]
 		}, -- [916]
 		{
@@ -3687,11 +3687,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [921]
 		{
-			"Total: 234d 11h 54m 44s", -- [1]
+			"Total: 234d 15h 36m 20s", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"Level: 31d 22h 34m 21s", -- [1]
+			"Level: 32d 2h 15m 57s", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
@@ -3743,15 +3743,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [935]
 		{
-			"Water detail changed to 2", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [936]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [937]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [938]
 		{
@@ -3783,7 +3783,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [945]
 		{
-			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
@@ -3791,11 +3791,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [947]
 		{
-			"Soft shadows changed to 0.", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [948]
 		{
-			"SSAO mode set to 3", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [949]
 		{
@@ -3823,7 +3823,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [955]
 		{
-			"Render scale changed to 1", -- [1]
+			"Render scale changed to 1.6", -- [1]
 			0, -- [2]
 		}, -- [956]
 		{
@@ -3831,7 +3831,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [957]
 		{
-			"MSAA disabled", -- [1]
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
 			0, -- [2]
 		}, -- [958]
 		{
@@ -4119,7 +4119,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1029]
 		{
-			"Time set to 9/30/2019 (Mon) 20:18", -- [1]
+			"Time set to 10/2/2019 (Wed) 19:19", -- [1]
 			0, -- [2]
 		}, -- [1030]
 		{
@@ -4131,11 +4131,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1032]
 		{
-			"Total: 234d 11h 55m 13s", -- [1]
+			"Total: 234d 15h 36m 51s", -- [1]
 			0, -- [2]
 		}, -- [1033]
 		{
-			"Level: 31d 22h 34m 50s", -- [1]
+			"Level: 32d 2h 16m 28s", -- [1]
 			0, -- [2]
 		}, -- [1034]
 		{
@@ -4143,119 +4143,119 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1035]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1036]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1037]
 		{
-			"Total: 234d 12h 16m 6s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [1038]
 		{
-			"Level: 31d 22h 55m 43s", -- [1]
+			"Total: 234d 15h 48m 13s", -- [1]
 			0, -- [2]
 		}, -- [1039]
 		{
-			"World transfer pending...", -- [1]
+			"Level: 32d 2h 27m 50s", -- [1]
 			0, -- [2]
 		}, -- [1040]
 		{
-			"Got new connection 3", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [1041]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1042]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1043]
 		{
-			"Total: 234d 12h 16m 33s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [1044]
 		{
-			"Level: 31d 22h 56m 10s", -- [1]
+			"Total: 234d 15h 48m 33s", -- [1]
 			0, -- [2]
 		}, -- [1045]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 32d 2h 28m 10s", -- [1]
 			0, -- [2]
 		}, -- [1046]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1047]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1048]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1049]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1050]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [1051]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1052]
 		{
-			"Total: 234d 12h 19m 28s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1053]
 		{
-			"Level: 31d 22h 59m 5s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [1054]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 234d 15h 53m 39s", -- [1]
 			0, -- [2]
 		}, -- [1055]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Level: 32d 2h 33m 16s", -- [1]
 			0, -- [2]
 		}, -- [1056]
 		{
-			"Time played:", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [1057]
 		{
-			"Total: 234d 12h 21m 0s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1058]
 		{
-			"Level: 31d 23h 0m 37s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1059]
 		{
-			"Got new connection 3", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [1060]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Total: 234d 15h 54m 44s", -- [1]
 			0, -- [2]
 		}, -- [1061]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 32d 2h 34m 21s", -- [1]
 			0, -- [2]
 		}, -- [1062]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1063]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1064]
 		{
@@ -4267,77 +4267,577 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1066]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [1067]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1068]
 		{
-			"Total: 234d 12h 43m 11s", -- [1]
+			"Weather changed to 4, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [1069]
 		{
-			"Level: 31d 23h 22m 48s", -- [1]
+			"Weather changed to 4, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [1070]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [1071]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 234d 16h 33m 37s", -- [1]
 			0, -- [2]
 		}, -- [1072]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 32d 3h 13m 14s", -- [1]
 			0, -- [2]
 		}, -- [1073]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [1074]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1075]
 		{
-			"Total: 234d 12h 45m 49s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1076]
 		{
-			"Level: 31d 23h 25m 26s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [1077]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 234d 16h 36m 10s", -- [1]
 			0, -- [2]
 		}, -- [1078]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 32d 3h 15m 47s", -- [1]
 			0, -- [2]
 		}, -- [1079]
 		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [1080]
 		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [1081]
 		{
-			"Time played:", -- [1]
+			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
 			0, -- [2]
 		}, -- [1082]
 		{
-			"Total: 234d 13h 52m 6s", -- [1]
+			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
 			0, -- [2]
 		}, -- [1083]
 		{
-			"Level: 32d 0h 31m 43s", -- [1]
+			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
 			0, -- [2]
 		}, -- [1084]
+		{
+			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
+			0, -- [2]
+		}, -- [1085]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [1086]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [1087]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [1088]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1089]
+		{
+			"Total: 234d 17h 4m 15s", -- [1]
+			0, -- [2]
+		}, -- [1090]
+		{
+			"Level: 32d 3h 43m 52s", -- [1]
+			0, -- [2]
+		}, -- [1091]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [1092]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1093]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1094]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1095]
+		{
+			"Total: 234d 17h 27m 37s", -- [1]
+			0, -- [2]
+		}, -- [1096]
+		{
+			"Level: 32d 4h 7m 14s", -- [1]
+			0, -- [2]
+		}, -- [1097]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1098]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1099]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1100]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1101]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1102]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1103]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [1104]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1105]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1106]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1107]
+		{
+			"Total: 234d 17h 32m 35s", -- [1]
+			0, -- [2]
+		}, -- [1108]
+		{
+			"Level: 32d 4h 12m 12s", -- [1]
+			0, -- [2]
+		}, -- [1109]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [1110]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1111]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [1112]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [1113]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1114]
+		{
+			"Total: 234d 17h 44m 45s", -- [1]
+			0, -- [2]
+		}, -- [1115]
+		{
+			"Level: 32d 4h 24m 22s", -- [1]
+			0, -- [2]
+		}, -- [1116]
+		{
+			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1117]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.57364948317175 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1118]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1420362036264 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1119]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.6366198979837 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1120]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.9332958366092 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1121]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 2.4072039161933 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1122]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 2.6969211959978 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1123]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 3.1168249156004 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1124]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 3.3858151238232 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1125]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 3.7709648506565 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1126]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.0074388565751 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1127]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.3708960312473 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1128]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.4789305596995 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1129]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.5471381895742 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1130]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.6259954196632 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1131]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.6794608667504 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1132]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.7377695997924 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1133]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.794909358913 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1134]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.8453240105728 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1135]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.9110354789502 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1136]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.9644631265021 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1137]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.016665866889 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1138]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.067630819864 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1139]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.1173454105857 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1140]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.1705726618322 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1141]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.2176219368012 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1142]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.2768596763403 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1143]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.3252662861489 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1144]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.3720830475458 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1145]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.4172959834734 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1146]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.4608915956932 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1147]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.499109546013 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1148]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.5359706731451 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1149]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.5749399377735 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1150]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.6122448143827 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1151]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.6996174761076 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1152]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.7281585402223 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1153]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.7552862667295 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1154]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.7834863831007 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1155]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.8099598502968 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1156]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.8325216459824 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1157]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.8556772714604 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1158]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.8770846953068 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1159]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.896737526375 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1160]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9161689909399 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1161]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9307564652025 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1162]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9463295522719 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1163]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9587490540083 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1164]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.969389582223 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1165]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9829559810008 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1166]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9910001606512 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1167]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9945502041303 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1168]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9959334269583 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1169]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.9954008244623 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1170]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.996 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1171]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5.8829847544842 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1172]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.8539638135958 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1173]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.3684429714319 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1174]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 4.0359792804151 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1175]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 3.5715556837585 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1176]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 3.2738728478907 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1177]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 2.8390415846369 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1178]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 2.5714237760393 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1179]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 2.1812674007263 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1180]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.9397630673576 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1181]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.5738711888046 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1182]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.3700045747562 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1183]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.0421248289309 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1184]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.85427003654305 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1185]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.70578167793823 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1186]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.57065687121143 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1187]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.44923695338406 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1188]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.34497027518909 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1189]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.24602589817865 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1190]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.17009604802412 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1191]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.1062055774386 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1192]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.057193240140799 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1193]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.022362790517412 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1194]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.0042603075744596 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1195]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 0.00036246686704544 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [1196]
+		{
+			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
+			0, -- [2]
+		}, -- [1197]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [1198]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1199]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1200]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1201]
+		{
+			"Total: 234d 17h 50m 48s", -- [1]
+			0, -- [2]
+		}, -- [1202]
+		{
+			"Level: 32d 4h 30m 25s", -- [1]
+			0, -- [2]
+		}, -- [1203]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [1204]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1205]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1206]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1207]
+		{
+			"Total: 234d 17h 53m 8s", -- [1]
+			0, -- [2]
+		}, -- [1208]
+		{
+			"Level: 32d 4h 32m 45s", -- [1]
+			0, -- [2]
+		}, -- [1209]
 	},
 	["height"] = 300,
 	["fontHeight"] = 14,
