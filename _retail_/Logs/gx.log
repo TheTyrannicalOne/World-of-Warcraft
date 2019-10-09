@@ -1,41 +1,23 @@
-10/2 22:18:03.228  LogOpen
-10/2 22:18:03.273  NvAPI loaded
-10/2 22:18:03.803  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0e40) dx11:true dx12:true
-10/2 22:18:03.805  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-10/2 22:18:03.805  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-10/2 22:18:03.849  D3d12 Device Create
-10/2 22:18:04.004  Choosing adapter 0
-10/2 22:18:04.154  AFR Groups: 1/1
-10/2 22:18:04.154  Feature Level: DX=6, MTL=0
-10/2 22:18:04.389  NotifyOnDeviceCreate
-10/2 22:18:04.389  D3d12 Device Create Successful
-10/2 22:18:04.389  Nvidia driver version: r436_45 (43648)
-10/2 22:18:04.389  <IsGPUDriverOutOfDate> No
-10/2 22:18:04.416  CPU Processor Detection: 12 H/W threads
-10/2 22:18:04.416  Memory Detection: 34296328192 bytes of physical memory available
-10/2 22:18:04.416  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-10/2 22:18:04.525  RenderSettings::NotifyChanged
-10/2 22:18:05.676  Nvidia driver version: r436_45 (43648)
-10/2 22:18:34.180  Nvidia driver version: r436_45 (43648)
-10/2 22:18:34.180  Nvidia driver version: r436_45 (43648)
-10/2 23:18:33.788  Running Texture Defragmenter
-10/2 23:18:33.809  	Defragmented 309 textures.
-10/2 23:18:33.809  RenderSettings::NotifyChanged
-10/2 23:18:34.977  CharacterComponent Texture Level change
-10/2 23:20:01.485  RenderSettings::NotifyChanged
-10/2 23:46:38.834  Running Texture Defragmenter
-10/2 23:46:38.855  	Defragmented 351 textures.
-10/2 23:46:38.855  RenderSettings::NotifyChanged
-10/2 23:46:40.694  CharacterComponent Texture Level change
-10/3 00:14:59.822  Running Texture Defragmenter
-10/3 00:14:59.822  	Defragmented 117 textures.
-10/3 00:14:59.835  RenderSettings::NotifyChanged
-10/3 00:15:00.478  CharacterComponent Texture Level change
-10/3 00:27:07.928  Running Texture Defragmenter
-10/3 00:27:07.931  	No textures were defragmentable.
-10/3 00:27:07.931  RenderSettings::NotifyChanged
-10/3 00:27:09.794  CharacterComponent Texture Level change
-10/3 00:39:19.524  Nvidia driver version: r436_45 (43648)
-10/3 00:39:20.348  D3d12 Device Destroy
-10/3 00:39:20.350  NotifyOnDeviceDestroy
-10/3 00:39:20.784  GxShutdown
+10/8 00:06:48.984  LogOpen
+10/8 00:06:48.984  NvAPI loaded
+10/8 00:06:49.504  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0e40) dx11:true dx12:true
+10/8 00:06:49.504  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+10/8 00:06:49.504  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+10/8 00:06:49.547  D3d12 Device Create
+10/8 00:06:49.705  Choosing adapter 0
+10/8 00:06:49.878  AFR Groups: 1/1
+10/8 00:06:49.878  Feature Level: DX=6, MTL=0
+10/8 00:06:50.090  NotifyOnDeviceCreate
+10/8 00:06:50.092  D3d12 Device Create Successful
+10/8 00:06:50.092  Nvidia driver version: r436_45 (43648)
+10/8 00:06:50.092  <IsGPUDriverOutOfDate> No
+10/8 00:06:50.119  CPU Processor Detection: 12 H/W threads
+10/8 00:06:50.119  Memory Detection: 34296328192 bytes of physical memory available
+10/8 00:06:50.119  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+10/8 00:06:50.236  RenderSettings::NotifyChanged
+10/8 00:06:51.481  Nvidia driver version: r436_45 (43648)
+10/8 00:07:19.341  Nvidia driver version: r436_45 (43648)
+10/8 00:07:19.341  Nvidia driver version: r436_45 (43648)
+10/8 00:40:45.150  D3d12 Device Destroy
+10/8 00:40:45.153  NotifyOnDeviceDestroy
+10/8 00:40:46.026  GxShutdown

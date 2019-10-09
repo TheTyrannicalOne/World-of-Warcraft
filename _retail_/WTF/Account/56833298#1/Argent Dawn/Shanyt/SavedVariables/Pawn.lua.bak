@@ -70,10 +70,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:117358::::::::120:71:512::1:6315:120:::|h[Mithril Wristwatch]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 158162,
-			["Level"] = 390,
+			["ID"] = 117360,
+			["Level"] = 395,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:158162::::::::120:71::27:3:4803:1582:4785:::|h[Pearl Diver's Compass]|h|r",
+			["Link"] = "|cffa335ee|Hitem:117360::::::::120:71:512::1:6315:120:::|h[Coren's Cold Chromium Coaster]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166763,

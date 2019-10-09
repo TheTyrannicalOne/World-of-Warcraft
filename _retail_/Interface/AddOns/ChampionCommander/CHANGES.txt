@@ -1,12 +1,12 @@
-tag 28b3a67130f2207aa61c8f5740a0c100320d7e9a 1.2.3
+tag d5abbf5acdaa2cfcfea085e1bba147a22f1cf821 1.2.3.1
 Author:	Alar of Runetotem <alar@aspide.it>
-Date:	Sun Sep 22 17:25:57 2019 +0200
+Date:	Sat Oct 5 16:25:49 2019 +0200
 
-Reputation color codes improved
+Updated TOC to 80205
 
-commit 7c03a3a4af5befe8ff964c41a066ec13f5be16cc
+commit f3e3902ce6e9cfa2a8a0411dff61728b0b72f6cc
 Author: Alar of Runetotem <alar@aspide.it>
-Date:   Sun Sep 22 17:15:50 2019 +0200
+Date:   Sat Oct 5 16:25:42 2019 +0200
 
-    Feature: Improved reputation color codes.
+    Updated TOC to 80205
 

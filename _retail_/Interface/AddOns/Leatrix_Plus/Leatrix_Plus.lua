@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.10 (2nd October 2019)
+-- 	Leatrix Plus 8.2.11 (9th October 2019)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.10"
+	LeaPlusLC["AddonVer"] = "8.2.11"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -2171,6 +2171,9 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["ShowPlayerChain"] == "On" then
+
+			-- Ensure chain doesnt clip through pet portrait
+			PetPortrait:GetParent():SetFrameLevel(4)
 
 			-- Create configuration panel
 			local ChainPanel = LeaPlusLC:CreatePanel("Player Chain", "ChainPanel")
@@ -5758,6 +5761,14 @@
 		----------------------------------------------------------------------
 		-- Final code for Player
 		----------------------------------------------------------------------
+
+		-- Show first run message
+		if not LeaPlusDB["FirstRunMessageSeen"] then
+			C_Timer.After(1, function()
+				LeaPlusLC:Print(L["Enter"] .. " |cff00ff00" .. "/ltp" .. "|r " .. L["or click the minimap button to open Leatrix Plus."])
+				LeaPlusDB["FirstRunMessageSeen"] = true
+			end)
+		end
 
 		-- Register logout event to save settings
 		LpEvt:RegisterEvent("PLAYER_LOGOUT")
