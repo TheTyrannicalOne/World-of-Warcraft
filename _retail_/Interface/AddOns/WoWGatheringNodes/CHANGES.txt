@@ -1,26 +1,12 @@
-tag 98dd1a7145a69646d7c7764a60f6b3098f215756 BFA-8.2-update-v1.1
+lightweight tag b8ddfd68a7b0cea00c32151d482791f3066bbb76 BFA-8.2.5-update-v1.0
 Author:	SLOKnightfall <SLOKnightfall@gmail.com>
-Date:	Mon Jul 8 23:00:28 2019 -0700
+Date:	Wed Oct 9 18:58:00 2019 -0700
 
-Bug fixes & data refresh
-
-commit 07e14d6e983ff9421882a49b876f9154b367e0e9
+commit b8ddfd68a7b0cea00c32151d482791f3066bbb76
 Author: SLOKnightfall <SLOKnightfall@gmail.com>
-Date:   Mon Jul 8 22:58:27 2019 -0700
+Date:   Wed Oct 9 18:58:00 2019 -0700
 
-    Fixed missing BFA herb node data
-    Refreshed data for new 8.2 nodes
-
-commit 1af7f8ca59d6539f1756c0de4643b188f986fe97
-Author: SLOKnightfall <SLOKnightfall@gmail.com>
-Date:   Mon Jul 8 21:48:34 2019 -0700
-
-    Updated 8.2 nodesid to use new gathermate ids
-    Added code to run though the gathermate DB up change previously imported data to reflect new Gathermate ids
-
-commit 19a21f7dc22dc25fa10747a9e3e0544a056df173
-Author: SLOKnightfall <SLOKnightfall@gmail.com>
-Date:   Mon Jul 8 20:48:48 2019 -0700
-
-    Fixed issue where Routes hook to handle custom nodes was not being generated correctly
+    Updated toc
+    Added Jelly Deposit nodes
+    Refreshed Data
 
