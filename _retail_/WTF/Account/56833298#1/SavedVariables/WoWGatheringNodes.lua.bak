@@ -8,17 +8,17 @@ WoWGatheringNodesConfig = {
 		["Brotus - Argent Dawn"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
+		["Mulmok - Argent Dawn"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
-		["Mulmok - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["GathermateImport"] = "WoWGatheringNodes 2019-07-09T5:58:27Z",
+			["GathermateImport"] = "WoWGatheringNodes 2019-10-10T1:58:00Z",
 		},
 	},
 }

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.11 (9th October 2019)
+-- 	Leatrix Plus 8.2.12 (16th October 2019)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.11"
+	LeaPlusLC["AddonVer"] = "8.2.12"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -382,16 +382,18 @@
 
 --	Set lock state for configuration buttons
 	function LeaPlusLC:SetDim()
-		LeaPlusLC:LockOption("AutoRepairGear", "AutoRepairBtn", false)			-- Repair automatically
-		LeaPlusLC:LockOption("MailFontChange", "MailTextBtn", true)				-- Resize mail text
-		LeaPlusLC:LockOption("QuestFontChange", "QuestTextBtn", true)			-- Resize quest text
-		LeaPlusLC:LockOption("MinimapMod", "ModMinimapBtn", true)				-- Customise minimap
-		LeaPlusLC:LockOption("TipModEnable", "MoveTooltipButton", true)			-- Manage tooltip
-		LeaPlusLC:LockOption("ShowCooldowns", "CooldownsButton", true)			-- Show cooldowns
-		LeaPlusLC:LockOption("FrmEnabled", "MoveFramesButton", true)			-- Manage frames
-		LeaPlusLC:LockOption("ShowPlayerChain", "ModPlayerChain", true)			-- Show player chain
-		LeaPlusLC:LockOption("ViewPortEnable", "ModViewportBtn", true)			-- Enable viewport
-		LeaPlusLC:LockOption("MuteGameSounds", "MuteGameSoundsBtn", false)		-- Mute game sounds
+		LeaPlusLC:LockOption("AutoRepairGear", "AutoRepairBtn", false)				-- Repair automatically
+		LeaPlusLC:LockOption("InviteFromWhisper", "InvWhisperBtn", false)			-- Invite from whispers
+		LeaPlusLC:LockOption("MailFontChange", "MailTextBtn", true)					-- Resize mail text
+		LeaPlusLC:LockOption("QuestFontChange", "QuestTextBtn", true)				-- Resize quest text
+		LeaPlusLC:LockOption("MinimapMod", "ModMinimapBtn", true)					-- Customise minimap
+		LeaPlusLC:LockOption("TipModEnable", "MoveTooltipButton", true)				-- Manage tooltip
+		LeaPlusLC:LockOption("ShowCooldowns", "CooldownsButton", true)				-- Show cooldowns
+		LeaPlusLC:LockOption("FrmEnabled", "MoveFramesButton", true)				-- Manage frames
+		LeaPlusLC:LockOption("ShowPlayerChain", "ModPlayerChain", true)				-- Show player chain
+		LeaPlusLC:LockOption("SetWeatherDensity", "SetWeatherDensityBtn", false)	-- Set weather density
+		LeaPlusLC:LockOption("ViewPortEnable", "ModViewportBtn", true)				-- Enable viewport
+		LeaPlusLC:LockOption("MuteGameSounds", "MuteGameSoundsBtn", false)			-- Mute game sounds
 	end
 
 ----------------------------------------------------------------------
@@ -436,6 +438,7 @@
 		-- Frames
 		or	(LeaPlusLC["FrmEnabled"]			~= LeaPlusDB["FrmEnabled"])				-- Manage frames
 		or	(LeaPlusLC["ClassColFrames"]		~= LeaPlusDB["ClassColFrames"])			-- Class colored frames
+		or	(LeaPlusLC["ClassIconPortraits"]	~= LeaPlusDB["ClassIconPortraits"])		-- Class icon portraits
 		or	(LeaPlusLC["ShowPlayerChain"]		~= LeaPlusDB["ShowPlayerChain"])		-- Show player chain
 		or	(LeaPlusLC["ShowRaidToggle"]		~= LeaPlusDB["ShowRaidToggle"])			-- Show raid toggle button
 		or	(LeaPlusLC["CombatPlates"]			~= LeaPlusDB["CombatPlates"])			-- Combat plates
@@ -1210,6 +1213,11 @@
 				CharacterModelFrameControlFrame:Hide()
 			end)
 
+			-- Hide controls for dressing room
+			if ClientVersion == "8.3.0" then
+				DressUpFrame.ModelScene.ControlFrame:HookScript("OnShow", DressUpFrame.ModelScene.ControlFrame.Hide)
+			end
+
 			----------------------------------------------------------------------
 			-- Wardrobe and inspect system
 			----------------------------------------------------------------------
@@ -1217,11 +1225,16 @@
 			-- Wardrobe (used by transmogrifier NPC)
 			local function DoBlizzardCollectionsFunc()
 				-- Hide positioning controls
-				WardrobeTransmogFrameControlFrame:HookScript("OnShow", WardrobeTransmogFrameControlFrame.Hide)
-				-- Disable special animations
-				hooksecurefunc(WardrobeTransmogFrame.Model, "SetUnit", function()
-					WardrobeTransmogFrame.Model:SetAnimation(255)
-				end)
+				if ClientVersion == "8.3.0" then
+					WardrobeTransmogFrame.ModelScene.ControlFrame:HookScript("OnShow", WardrobeTransmogFrame.ModelScene.ControlFrame.Hide)
+				else
+					WardrobeTransmogFrameControlFrame:HookScript("OnShow", WardrobeTransmogFrameControlFrame.Hide)
+					-- Disable special animations
+					hooksecurefunc(WardrobeTransmogFrame.Model, "SetUnit", function()
+						WardrobeTransmogFrame.Model:SetAnimation(255)
+					end)
+				end
+
 			end
 
 			if IsAddOnLoaded("Blizzard_Collections") then
@@ -3045,6 +3058,112 @@
 	function LeaPlusLC:Player()
 
 		----------------------------------------------------------------------
+		--	Class icon portraits
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["ClassIconPortraits"] == "On" then
+			hooksecurefunc("UnitFramePortrait_Update",function(self)
+				if self.unit == "player" or self.unit == "pet" then
+					return
+				end
+				if self.portrait then
+					if UnitIsPlayer(self.unit) then
+						local t = CLASS_ICON_TCOORDS[select(2, UnitClass(self.unit))]
+						if t then
+							self.portrait:SetTexture("Interface\\TargetingFrame\\UI-Classes-Circles")
+							self.portrait:SetTexCoord(unpack(t))
+						end
+					else
+						self.portrait:SetTexCoord(0, 1, 0, 1)
+					end
+				end
+			end)
+		end
+
+		----------------------------------------------------------------------
+		--	Set weather density (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			-- Create configuration panel
+			local weatherPanel = LeaPlusLC:CreatePanel("Weather Density", "weatherPanel")
+			LeaPlusLC:MakeTx(weatherPanel, "Settings", 16, -72)
+			LeaPlusLC:MakeSL(weatherPanel, "WeatherLevel", "Drag to set the density of weather effects.", 0, 3, 1, 16, -92, "%.0f")
+
+			local weatherSliderTable = {"Off", "Low", "Medium", "High"}
+
+			-- Function to set the weather density
+			local function SetWeatherFunc()
+				LeaPlusCB["WeatherLevel"].f:SetText(LeaPlusLC["WeatherLevel"] .. "  (" .. weatherSliderTable[LeaPlusLC["WeatherLevel"] + 1] .. ")") 
+				if LeaPlusLC["SetWeatherDensity"] == "On" then
+					SetCVar("WeatherDensity", LeaPlusLC["WeatherLevel"])
+					SetCVar("RAIDweatherDensity", LeaPlusLC["WeatherLevel"])
+				else
+					SetCVar("WeatherDensity", "3")
+					SetCVar("RAIDweatherDensity", "3")
+				end
+			end
+
+			-- Set weather density when options are clicked and on startup if option is enabled
+			LeaPlusCB["SetWeatherDensity"]:HookScript("OnClick", SetWeatherFunc)
+			LeaPlusCB["WeatherLevel"]:HookScript("OnValueChanged", SetWeatherFunc)
+			if LeaPlusLC["SetWeatherDensity"] == "On" then SetWeatherFunc() end
+
+			-- Prevent weather density from being changed when particle density is changed
+			hooksecurefunc("SetCVar", function(setting, value)
+				if setting and LeaPlusLC["SetWeatherDensity"] == "On" then
+					if setting == "graphicsParticleDensity" then
+						if GetCVar("WeatherDensity") ~= LeaPlusLC["WeatherLevel"] then
+							C_Timer.After(0.1, function()
+								SetCVar("WeatherDensity", LeaPlusLC["WeatherLevel"])
+							end)
+						end
+					elseif setting == "raidGraphicsParticleDensity" then
+						if GetCVar("RAIDweatherDensity") ~= LeaPlusLC["WeatherLevel"] then
+							C_Timer.After(0.1, function()
+								SetCVar("RAIDweatherDensity", LeaPlusLC["WeatherLevel"])
+							end)
+						end
+					end
+				end
+			end)
+
+			-- Help button hidden
+			weatherPanel.h:Hide()
+
+			-- Back button handler
+			weatherPanel.b:SetScript("OnClick", function() 
+				weatherPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page7"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			weatherPanel.r:SetScript("OnClick", function()
+
+				-- Reset slider
+				LeaPlusLC["WeatherLevel"] = 3
+
+				-- Refresh side panel
+				weatherPanel:Hide(); weatherPanel:Show()
+
+			end)
+
+			-- Show configuration panal when options panel button is clicked
+			LeaPlusCB["SetWeatherDensityBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["WeatherLevel"] = 0
+					SetWeatherFunc()
+				else
+					weatherPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+		end
+
+		----------------------------------------------------------------------
 		--	Remove raid restrictions (no reload required)
 		----------------------------------------------------------------------
 
@@ -3297,200 +3416,205 @@
 		-- Auction House Extras
 		----------------------------------------------------------------------
 
-		if LeaPlusLC["AhExtras"] == "On" then
+		if ClientVersion == "8.3.0" then
+			LeaPlusLC["AhExtras"] = "Off"
+			LeaPlusLC:LockItem(LeaPlusCB["AhExtras"], true)
+		else
+			if LeaPlusLC["AhExtras"] == "On" then
 
-			local function AuctionFunc()
+				local function AuctionFunc()
 
-				-- Set default auction duration and price type values to saved settings or default settings
-				AuctionFrameAuctions.duration = LeaPlusDB["AHDuration"] or 3
-				AuctionFrameAuctions.priceType = LeaPlusDB["AHPriceType"] or 2
+					-- Set default auction duration and price type values to saved settings or default settings
+					AuctionFrameAuctions.duration = LeaPlusDB["AHDuration"] or 3
+					AuctionFrameAuctions.priceType = LeaPlusDB["AHPriceType"] or 2
 
-				-- Functions
-				local function CreateAuctionCB(name, anchor, x, y, text)
-					LeaPlusCB[name] = CreateFrame("CheckButton", nil, AuctionFrameAuctions, "OptionsCheckButtonTemplate")
-					LeaPlusCB[name]:SetFrameStrata("HIGH")
-					LeaPlusCB[name]:SetSize(20, 20)
-					LeaPlusCB[name]:SetPoint(anchor, x, y)
-					LeaPlusCB[name].f = LeaPlusCB[name]:CreateFontString(nil, 'OVERLAY', "GameFontNormal")
-					LeaPlusCB[name].f:SetPoint("LEFT", 20, 0)
-					LeaPlusCB[name].f:SetText(L[text])
-					LeaPlusCB[name].f:Show();
-					LeaPlusCB[name]:SetScript('OnClick', function()
-						if LeaPlusCB[name]:GetChecked() then
-							LeaPlusLC[name] = "On"
+					-- Functions
+					local function CreateAuctionCB(name, anchor, x, y, text)
+						LeaPlusCB[name] = CreateFrame("CheckButton", nil, AuctionFrameAuctions, "OptionsCheckButtonTemplate")
+						LeaPlusCB[name]:SetFrameStrata("HIGH")
+						LeaPlusCB[name]:SetSize(20, 20)
+						LeaPlusCB[name]:SetPoint(anchor, x, y)
+						LeaPlusCB[name].f = LeaPlusCB[name]:CreateFontString(nil, 'OVERLAY', "GameFontNormal")
+						LeaPlusCB[name].f:SetPoint("LEFT", 20, 0)
+						LeaPlusCB[name].f:SetText(L[text])
+						LeaPlusCB[name].f:Show();
+						LeaPlusCB[name]:SetScript('OnClick', function()
+							if LeaPlusCB[name]:GetChecked() then
+								LeaPlusLC[name] = "On"
+							else
+								LeaPlusLC[name] = "Off"
+							end
+						end)
+						LeaPlusCB[name]:SetScript('OnShow', function(self)
+							if LeaPlusLC[name] == "On" then
+								self:SetChecked(true)
+							else
+								self:SetChecked(false)
+							end
+						end)
+					end
+
+					-- Show the correct fields in the AH frame and match prices
+					local function SetupAh()
+						if LeaPlusLC["AhBuyoutOnly"] == "On" then
+							-- Hide the start price
+							StartPrice:SetAlpha(0);
+							-- Set start price to buyout price 
+							StartPriceGold:SetText(BuyoutPriceGold:GetText());
+							StartPriceSilver:SetText(BuyoutPriceSilver:GetText());
+							StartPriceCopper:SetText(BuyoutPriceCopper:GetText());
 						else
-							LeaPlusLC[name] = "Off"
+							-- Show the start price
+							StartPrice:SetAlpha(1);
 						end
-					end)
-					LeaPlusCB[name]:SetScript('OnShow', function(self)
-						if LeaPlusLC[name] == "On" then
-							self:SetChecked(true)
-						else
-							self:SetChecked(false)
-						end
-					end)
-				end
-
-				-- Show the correct fields in the AH frame and match prices
-				local function SetupAh()
-					if LeaPlusLC["AhBuyoutOnly"] == "On" then
-						-- Hide the start price
-						StartPrice:SetAlpha(0);
-						-- Set start price to buyout price 
-						StartPriceGold:SetText(BuyoutPriceGold:GetText());
-						StartPriceSilver:SetText(BuyoutPriceSilver:GetText());
-						StartPriceCopper:SetText(BuyoutPriceCopper:GetText());
-					else
-						-- Show the start price
-						StartPrice:SetAlpha(1);
-					end
-					-- If gold only is on, set copper and silver to 99
-					if LeaPlusLC["AhGoldOnly"] == "On" then
-						StartPriceCopper:SetText("99"); StartPriceCopper:Disable();
-						StartPriceSilver:SetText("99"); StartPriceSilver:Disable();
-						BuyoutPriceCopper:SetText("99"); BuyoutPriceCopper:Disable();
-						BuyoutPriceSilver:SetText("99"); BuyoutPriceSilver:Disable();
-					else
-						StartPriceCopper:Enable();
-						StartPriceSilver:Enable();
-						BuyoutPriceCopper:Enable();
-						BuyoutPriceSilver:Enable();
-					end
-					-- Validate the auction (mainly for the create auction button status)
-					AuctionsFrameAuctions_ValidateAuction();
-				end
-
-				-- Create checkboxes
-				CreateAuctionCB("AhBuyoutOnly", "BOTTOMLEFT", 200, 16, "Buyout Only")
-				CreateAuctionCB("AhGoldOnly", "BOTTOMLEFT", 320, 16, "Gold Only")
-
-				-- Reposition Gold Only checkbox so it does not overlap Buyout Only checkbox label
-				LeaPlusCB["AhGoldOnly"]:ClearAllPoints()
-				LeaPlusCB["AhGoldOnly"]:SetPoint("LEFT", LeaPlusCB["AhBuyoutOnly"].f, "RIGHT", 20, 0)
-
-				-- Set click boundaries
-				LeaPlusCB["AhBuyoutOnly"]:SetHitRectInsets(0, -LeaPlusCB["AhBuyoutOnly"].f:GetStringWidth() + 6, 0, 0);
-				LeaPlusCB["AhGoldOnly"]:SetHitRectInsets(0, -LeaPlusCB["AhGoldOnly"].f:GetStringWidth() + 6, 0, 0);
-
-				LeaPlusCB["AhBuyoutOnly"]:HookScript('OnClick', SetupAh);
-				LeaPlusCB["AhBuyoutOnly"]:HookScript('OnShow', SetupAh);
-	
-				AuctionFrameAuctions:HookScript("OnShow", SetupAh)
-				BuyoutPriceGold:HookScript("OnTextChanged", SetupAh)
-				BuyoutPriceSilver:HookScript("OnTextChanged", SetupAh)
-				BuyoutPriceCopper:HookScript("OnTextChanged", SetupAh)
-				StartPriceGold:HookScript("OnTextChanged", SetupAh)
-				StartPriceSilver:HookScript("OnTextChanged", SetupAh)
-				StartPriceCopper:HookScript("OnTextChanged", SetupAh)
-	
-				-- Lock the create auction button if buyout gold box is empty (when using buyout only and gold only)
-				AuctionsCreateAuctionButton:HookScript("OnEnable", function()
-					-- Do nothing if wow token frame is showing
-					if AuctionsWowTokenAuctionFrame:IsShown() then return end
-					-- Lock the create auction button if both checkboxes are enabled and buyout gold price is empty
-					if LeaPlusLC["AhGoldOnly"] == "On" and LeaPlusLC["AhBuyoutOnly"] == "On" then
-						if BuyoutPriceGold:GetText() == "" then
-							AuctionsCreateAuctionButton:Disable()
-						end
-					end
-				end)
-				
-				-- Clear copper and silver prices if gold only box is unchecked
-				LeaPlusCB["AhGoldOnly"]:HookScript('OnClick', function()
-					if LeaPlusCB["AhGoldOnly"]:GetChecked() == false then
-						BuyoutPriceCopper:SetText("")
-						BuyoutPriceSilver:SetText("")
-						StartPriceCopper:SetText("")
-						StartPriceSilver:SetText("")
-					end
-					SetupAh();
-				end)
-
-				-- Create find button
-				AuctionsItemText:Hide()
-				LeaPlusLC:CreateButton("FindAuctionButton", AuctionsStackSizeMaxButton, "Find Item", "CENTER", 0, 74, 0, 21, false, "")
-				LeaPlusCB["FindAuctionButton"]:SetParent(AuctionFrameAuctions)
-
-				-- Show find button when the auctions tab is shown
-				AuctionFrameAuctions:HookScript("OnShow", function() 
-					LeaPlusCB["FindAuctionButton"]:SetEnabled(GetAuctionSellItemInfo() and true or false)
-				end)
-
-				-- Show find button when a new item is added
-				AuctionsItemButton:HookScript("OnEvent", function(self, event)
-					if event == "NEW_AUCTION_UPDATE" then
-						LeaPlusCB["FindAuctionButton"]:SetEnabled(GetAuctionSellItemInfo() and true or false)
-					end
-				end)
-
-				LeaPlusCB["FindAuctionButton"]:SetScript("OnClick", function()
-					if GetAuctionSellItemInfo() then
-						if BrowseWowTokenResults:IsShown() then
-							-- Stop if Game Time filter is currently shown
-							AuctionFrameTab1:Click()
-							LeaPlusLC:Print("To use the Find Item button, you need to deselect the WoW Token category.")
-						else
-							-- Otherwise, search for the required item
-							local name = GetAuctionSellItemInfo()
-							BrowseName:SetText(name)
-							ExactMatchCheckButton:SetChecked(true) -- Necessary for scrolling through results pages with exact match
-							QueryAuctionItems(name, 0, 0, 0, false, 0, false, true)
-							AuctionFrameTab1:Click()
-						end
-					end
-				end)
-
-				-- Clear the cursor and reset editboxes when a new item replaces an existing one
-				hooksecurefunc("AuctionsFrameAuctions_ValidateAuction", function()
-					if GetAuctionSellItemInfo() then
-						-- Return anything you might be holding
-						ClearCursor();
-						-- Set copper and silver prices to 99 if gold mode is on
+						-- If gold only is on, set copper and silver to 99
 						if LeaPlusLC["AhGoldOnly"] == "On" then
-							StartPriceCopper:SetText("99")
-							StartPriceSilver:SetText("99")
-							BuyoutPriceCopper:SetText("99")
-							BuyoutPriceSilver:SetText("99")
+							StartPriceCopper:SetText("99"); StartPriceCopper:Disable();
+							StartPriceSilver:SetText("99"); StartPriceSilver:Disable();
+							BuyoutPriceCopper:SetText("99"); BuyoutPriceCopper:Disable();
+							BuyoutPriceSilver:SetText("99"); BuyoutPriceSilver:Disable();
+						else
+							StartPriceCopper:Enable();
+							StartPriceSilver:Enable();
+							BuyoutPriceCopper:Enable();
+							BuyoutPriceSilver:Enable();
 						end
+						-- Validate the auction (mainly for the create auction button status)
+						AuctionsFrameAuctions_ValidateAuction();
 					end
-				end)
-      
-				-- Clear gold editbox after an auction has been created (to force user to enter something)
-				AuctionsCreateAuctionButton:HookScript("OnClick", function()
-					StartPriceGold:SetText("")
-					BuyoutPriceGold:SetText("")
-				end)
 
-				-- Set tab key actions (if different from defaults)
-				StartPriceGold:HookScript("OnTabPressed", function()
-					if not IsShiftKeyDown() then
-						if LeaPlusLC["AhBuyoutOnly"] == "Off" and LeaPlusLC["AhGoldOnly"] == "On" then
-							BuyoutPriceGold:SetFocus()
+					-- Create checkboxes
+					CreateAuctionCB("AhBuyoutOnly", "BOTTOMLEFT", 200, 16, "Buyout Only")
+					CreateAuctionCB("AhGoldOnly", "BOTTOMLEFT", 320, 16, "Gold Only")
+
+					-- Reposition Gold Only checkbox so it does not overlap Buyout Only checkbox label
+					LeaPlusCB["AhGoldOnly"]:ClearAllPoints()
+					LeaPlusCB["AhGoldOnly"]:SetPoint("LEFT", LeaPlusCB["AhBuyoutOnly"].f, "RIGHT", 20, 0)
+
+					-- Set click boundaries
+					LeaPlusCB["AhBuyoutOnly"]:SetHitRectInsets(0, -LeaPlusCB["AhBuyoutOnly"].f:GetStringWidth() + 6, 0, 0);
+					LeaPlusCB["AhGoldOnly"]:SetHitRectInsets(0, -LeaPlusCB["AhGoldOnly"].f:GetStringWidth() + 6, 0, 0);
+
+					LeaPlusCB["AhBuyoutOnly"]:HookScript('OnClick', SetupAh);
+					LeaPlusCB["AhBuyoutOnly"]:HookScript('OnShow', SetupAh);
+		
+					AuctionFrameAuctions:HookScript("OnShow", SetupAh)
+					BuyoutPriceGold:HookScript("OnTextChanged", SetupAh)
+					BuyoutPriceSilver:HookScript("OnTextChanged", SetupAh)
+					BuyoutPriceCopper:HookScript("OnTextChanged", SetupAh)
+					StartPriceGold:HookScript("OnTextChanged", SetupAh)
+					StartPriceSilver:HookScript("OnTextChanged", SetupAh)
+					StartPriceCopper:HookScript("OnTextChanged", SetupAh)
+		
+					-- Lock the create auction button if buyout gold box is empty (when using buyout only and gold only)
+					AuctionsCreateAuctionButton:HookScript("OnEnable", function()
+						-- Do nothing if wow token frame is showing
+						if AuctionsWowTokenAuctionFrame:IsShown() then return end
+						-- Lock the create auction button if both checkboxes are enabled and buyout gold price is empty
+						if LeaPlusLC["AhGoldOnly"] == "On" and LeaPlusLC["AhBuyoutOnly"] == "On" then
+							if BuyoutPriceGold:GetText() == "" then
+								AuctionsCreateAuctionButton:Disable()
+							end
 						end
-					end
-				end)
-
-				BuyoutPriceGold:HookScript("OnTabPressed", function()
-					if IsShiftKeyDown() then
-						if LeaPlusLC["AhBuyoutOnly"] == "Off" and LeaPlusLC["AhGoldOnly"] == "On" then
-							StartPriceGold:SetFocus()
+					end)
+					
+					-- Clear copper and silver prices if gold only box is unchecked
+					LeaPlusCB["AhGoldOnly"]:HookScript('OnClick', function()
+						if LeaPlusCB["AhGoldOnly"]:GetChecked() == false then
+							BuyoutPriceCopper:SetText("")
+							BuyoutPriceSilver:SetText("")
+							StartPriceCopper:SetText("")
+							StartPriceSilver:SetText("")
 						end
-					end
-				end)
-			end
+						SetupAh();
+					end)
 
-			-- Run function when Blizzard addon is loaded
-			if IsAddOnLoaded("Blizzard_AuctionUI") then
-				AuctionFunc()
-			else
-				local waitFrame = CreateFrame("FRAME")
-				waitFrame:RegisterEvent("ADDON_LOADED")
-				waitFrame:SetScript("OnEvent", function(self, event, arg1)
-					if arg1 == "Blizzard_AuctionUI" then
-						AuctionFunc()
-						waitFrame:UnregisterAllEvents()
-					end
-				end)
+					-- Create find button
+					AuctionsItemText:Hide()
+					LeaPlusLC:CreateButton("FindAuctionButton", AuctionsStackSizeMaxButton, "Find Item", "CENTER", 0, 74, 0, 21, false, "")
+					LeaPlusCB["FindAuctionButton"]:SetParent(AuctionFrameAuctions)
+
+					-- Show find button when the auctions tab is shown
+					AuctionFrameAuctions:HookScript("OnShow", function() 
+						LeaPlusCB["FindAuctionButton"]:SetEnabled(GetAuctionSellItemInfo() and true or false)
+					end)
+
+					-- Show find button when a new item is added
+					AuctionsItemButton:HookScript("OnEvent", function(self, event)
+						if event == "NEW_AUCTION_UPDATE" then
+							LeaPlusCB["FindAuctionButton"]:SetEnabled(GetAuctionSellItemInfo() and true or false)
+						end
+					end)
+
+					LeaPlusCB["FindAuctionButton"]:SetScript("OnClick", function()
+						if GetAuctionSellItemInfo() then
+							if BrowseWowTokenResults:IsShown() then
+								-- Stop if Game Time filter is currently shown
+								AuctionFrameTab1:Click()
+								LeaPlusLC:Print("To use the Find Item button, you need to deselect the WoW Token category.")
+							else
+								-- Otherwise, search for the required item
+								local name = GetAuctionSellItemInfo()
+								BrowseName:SetText(name)
+								ExactMatchCheckButton:SetChecked(true) -- Necessary for scrolling through results pages with exact match
+								QueryAuctionItems(name, 0, 0, 0, false, 0, false, true)
+								AuctionFrameTab1:Click()
+							end
+						end
+					end)
+
+					-- Clear the cursor and reset editboxes when a new item replaces an existing one
+					hooksecurefunc("AuctionsFrameAuctions_ValidateAuction", function()
+						if GetAuctionSellItemInfo() then
+							-- Return anything you might be holding
+							ClearCursor();
+							-- Set copper and silver prices to 99 if gold mode is on
+							if LeaPlusLC["AhGoldOnly"] == "On" then
+								StartPriceCopper:SetText("99")
+								StartPriceSilver:SetText("99")
+								BuyoutPriceCopper:SetText("99")
+								BuyoutPriceSilver:SetText("99")
+							end
+						end
+					end)
+		  
+					-- Clear gold editbox after an auction has been created (to force user to enter something)
+					AuctionsCreateAuctionButton:HookScript("OnClick", function()
+						StartPriceGold:SetText("")
+						BuyoutPriceGold:SetText("")
+					end)
+
+					-- Set tab key actions (if different from defaults)
+					StartPriceGold:HookScript("OnTabPressed", function()
+						if not IsShiftKeyDown() then
+							if LeaPlusLC["AhBuyoutOnly"] == "Off" and LeaPlusLC["AhGoldOnly"] == "On" then
+								BuyoutPriceGold:SetFocus()
+							end
+						end
+					end)
+
+					BuyoutPriceGold:HookScript("OnTabPressed", function()
+						if IsShiftKeyDown() then
+							if LeaPlusLC["AhBuyoutOnly"] == "Off" and LeaPlusLC["AhGoldOnly"] == "On" then
+								StartPriceGold:SetFocus()
+							end
+						end
+					end)
+				end
+
+				-- Run function when Blizzard addon is loaded
+				if IsAddOnLoaded("Blizzard_AuctionUI") then
+					AuctionFunc()
+				else
+					local waitFrame = CreateFrame("FRAME")
+					waitFrame:RegisterEvent("ADDON_LOADED")
+					waitFrame:SetScript("OnEvent", function(self, event, arg1)
+						if arg1 == "Blizzard_AuctionUI" then
+							AuctionFunc()
+							waitFrame:UnregisterAllEvents()
+						end
+					end)
+				end
 			end
 
 		end
@@ -7008,6 +7132,86 @@
 		ControlEvent()
 
 		----------------------------------------------------------------------
+		-- Invite from whisper (configuration panel)
+		----------------------------------------------------------------------
+
+		-- Create configuration panel
+		local InvPanel = LeaPlusLC:CreatePanel("Invite From Whispers", "InvPanel")
+
+		-- Add editbox
+		LeaPlusLC:MakeTx(InvPanel, "Keyword", 16, -72)
+		local KeyBox = LeaPlusLC:CreateEditBox("KeyBox", InvPanel, 140, 10, "TOPLEFT", 20, -92, "KeyBox", "KeyBox")
+
+		-- Function to show the keyword in the option tooltip
+		local function SetKeywordTip()
+			LeaPlusCB["InviteFromWhisper"].tiptext = gsub(LeaPlusCB["InviteFromWhisper"].tiptext, "(|cffffffff)[^|]*(|r)",  "%1" .. LeaPlusLC["InvKey"] .. "%2")
+		end
+
+		-- Function to save the keyword
+		local function SetInvKey()
+			local keytext = KeyBox:GetText()
+			if keytext and keytext ~= "" then
+				LeaPlusLC["InvKey"] = KeyBox:GetText()
+			else
+				LeaPlusLC["InvKey"] = "inv"
+			end
+			-- Show the keyword in the option tooltip
+			SetKeywordTip()
+		end
+
+		-- Show the keyword in the option tooltip on startup
+		SetKeywordTip()
+
+		-- Save the keyword when it changes
+		KeyBox:SetScript("OnTextChanged", SetInvKey)
+
+		-- Help button hidden
+		InvPanel.h:Hide()
+
+		-- Back button handler
+		InvPanel.b:SetScript("OnClick", function()
+			-- Save the keyword
+			SetInvKey()
+			-- Show the options panel
+			InvPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page2"]:Show()
+			return
+		end) 
+
+		-- Add reset button
+		InvPanel.r:SetScript("OnClick", function()
+			-- Reset the keyword to default
+			LeaPlusLC["InvKey"] = "inv"
+			-- Set the editbox to default
+			KeyBox:SetText("inv")
+			-- Save the keyword
+			SetInvKey()
+			-- Refresh panel
+			InvPanel:Hide(); InvPanel:Show()
+		end)
+
+		-- Ensure keyword is a string on startup
+		LeaPlusLC["InvKey"] = tostring(LeaPlusLC["InvKey"]) or "inv"
+
+		-- Set editbox value when shown
+		KeyBox:HookScript("OnShow", function()
+			KeyBox:SetText(LeaPlusLC["InvKey"])
+		end)
+
+		-- Configuration button handler
+		LeaPlusCB["InvWhisperBtn"]:SetScript("OnClick", function()
+			if IsShiftKeyDown() and IsControlKeyDown() then
+				-- Preset profile
+				LeaPlusLC["InvKey"] = "inv"
+				KeyBox:SetText(LeaPlusLC["InvKey"])
+				SetInvKey()
+			else
+				-- Show panel
+				InvPanel:Show()
+				LeaPlusLC:HideFrames()
+			end
+		end)
+
+		----------------------------------------------------------------------
 		-- Final code for RunOnce
 		----------------------------------------------------------------------
 
@@ -7030,7 +7234,7 @@
 		----------------------------------------------------------------------
 
 		if event == "CHAT_MSG_WHISPER" or event == "CHAT_MSG_BN_WHISPER" then
-			if (not UnitExists("party1") or UnitIsGroupLeader("player")) and strlower(arg1) == "inv" then
+			if (not UnitExists("party1") or UnitIsGroupLeader("player")) and strlower(arg1) == strlower(LeaPlusLC["InvKey"]) then
 				if not LeaPlusLC:IsInLFGQueue() then
 					if event == "CHAT_MSG_WHISPER" then
 						InviteUnit(arg2)
@@ -7271,6 +7475,7 @@
 				LeaPlusLC:LoadVarChk("AcceptPartyFriends", "Off")			-- Party from friends
 				LeaPlusLC:LoadVarChk("AutoConfirmRole", "Off")				-- Queue from friends
 				LeaPlusLC:LoadVarChk("InviteFromWhisper", "Off")			-- Invite from whispers
+				LeaPlusLC["InvKey"]	= LeaPlusDB["InvKey"] or "inv"			-- Invite from whisper keyword
 
 				-- Chat
 				LeaPlusLC:LoadVarChk("UseEasyChatResizing", "Off")			-- Use easy resizing
@@ -7336,6 +7541,7 @@
 				-- Frames
 				LeaPlusLC:LoadVarChk("FrmEnabled", "Off")					-- Manage frames
 				LeaPlusLC:LoadVarChk("ClassColFrames", "Off")				-- Class colored frames
+				LeaPlusLC:LoadVarChk("ClassIconPortraits", "Off")			-- Class icon portraits
 				LeaPlusLC:LoadVarChk("ShowPlayerChain", "Off")				-- Show player chain
 				LeaPlusLC:LoadVarNum("PlayerChainMenu", 2, 1, 3)			-- Player chain dropdown value
 				LeaPlusLC:LoadVarChk("ShowRaidToggle", "Off")				-- Show raid toggle button
@@ -7354,6 +7560,8 @@
 				-- System
 				LeaPlusLC:LoadVarChk("NoScreenGlow", "Off")					-- Disable screen glow
 				LeaPlusLC:LoadVarChk("NoScreenEffects", "Off")				-- Disable screen effects
+				LeaPlusLC:LoadVarChk("SetWeatherDensity", "Off")			-- Set weather density
+				LeaPlusLC:LoadVarNum("WeatherLevel", 3, 0, 3)				-- Weather density level
 				LeaPlusLC:LoadVarChk("MaxCameraZoom", "Off")				-- Max camera zoom
 				LeaPlusLC:LoadVarChk("ViewPortEnable", "Off")				-- Enable viewport
 				LeaPlusLC:LoadVarNum("ViewPortTop", 0, 0, 300)				-- Top border
@@ -7435,6 +7643,7 @@
 			LeaPlusDB["AcceptPartyFriends"]		= LeaPlusLC["AcceptPartyFriends"]
 			LeaPlusDB["AutoConfirmRole"]		= LeaPlusLC["AutoConfirmRole"]
 			LeaPlusDB["InviteFromWhisper"]		= LeaPlusLC["InviteFromWhisper"]
+			LeaPlusDB["InvKey"]					= LeaPlusLC["InvKey"]
 
 			-- Chat
 			LeaPlusDB["UseEasyChatResizing"]	= LeaPlusLC["UseEasyChatResizing"]
@@ -7500,6 +7709,7 @@
 			-- Frames
 			LeaPlusDB["FrmEnabled"]				= LeaPlusLC["FrmEnabled"]
 			LeaPlusDB["ClassColFrames"]			= LeaPlusLC["ClassColFrames"]
+			LeaPlusDB["ClassIconPortraits"]		= LeaPlusLC["ClassIconPortraits"]
 			LeaPlusDB["ShowPlayerChain"]		= LeaPlusLC["ShowPlayerChain"]
 			LeaPlusDB["PlayerChainMenu"]		= LeaPlusLC["PlayerChainMenu"]
 			LeaPlusDB["ShowRaidToggle"]			= LeaPlusLC["ShowRaidToggle"]
@@ -7518,6 +7728,8 @@
 			-- System
 			LeaPlusDB["NoScreenGlow"] 			= LeaPlusLC["NoScreenGlow"]
 			LeaPlusDB["NoScreenEffects"] 		= LeaPlusLC["NoScreenEffects"]
+			LeaPlusDB["SetWeatherDensity"] 		= LeaPlusLC["SetWeatherDensity"]
+			LeaPlusDB["WeatherLevel"] 			= LeaPlusLC["WeatherLevel"]
 			LeaPlusDB["MaxCameraZoom"] 			= LeaPlusLC["MaxCameraZoom"]
 			LeaPlusDB["ViewPortEnable"]			= LeaPlusLC["ViewPortEnable"]
 			LeaPlusDB["ViewPortTop"]			= LeaPlusLC["ViewPortTop"]
@@ -7589,6 +7801,10 @@
 			-- Disable screen effects (LeaPlusLC["NoScreenEffects"])
 			SetCVar("ffxDeath", "1")
 			SetCVar("ffxNether", "1")
+
+			-- Set weather density (LeaPlusLC["SetWeatherDensity"])
+			SetCVar("WeatherDensity", "3")
+			SetCVar("RAIDweatherDensity", "3")
 
 			-- Remove raid restrictions (LeaPlusLC["NoRaidRestrictions"])
 			SetAllowLowLevelRaid(false)
@@ -9217,6 +9433,7 @@
 				LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"] = 1.25
 
 				LeaPlusDB["ClassColFrames"] = "On"				-- Class colored frames
+				LeaPlusDB["ClassIconPortraits"] = "Off"			-- Class icon portraits
 				LeaPlusDB["ShowPlayerChain"] = "On"				-- Show player chain
 				LeaPlusDB["PlayerChainMenu"] = 3				-- Player chain style
 				LeaPlusDB["ShowRaidToggle"] = "On"				-- Show raid toggle button
@@ -9235,6 +9452,8 @@
 				-- System
 				LeaPlusDB["NoScreenGlow"] = "On"				-- Disable screen glow
 				LeaPlusDB["NoScreenEffects"] = "On"				-- Disable screen effects
+				LeaPlusDB["SetWeatherDensity"] = "On"			-- Set weather density
+				LeaPlusDB["WeatherLevel"] = 0					-- Weather density level
 				LeaPlusDB["MaxCameraZoom"] = "On"				-- Max camera zoom
 				LeaPlusDB["ViewPortEnable"] = "On"				-- Enable viewport
 				LeaPlusDB["NoRestedEmotes"] = "On"				-- Silence rested emotes
@@ -9509,7 +9728,9 @@
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Groups"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AcceptPartyFriends"		, 	"Party from friends"			, 	340, -92, 	false,	"If checked, party invitations from friends or guild members will be automatically accepted unless you are queued in Dungeon Finder.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoConfirmRole"			, 	"Queue from friends"			,	340, -112, 	false,	"If checked, requests initiated by your party leader to join the Dungeon Finder queue will be automatically accepted if the party leader is in your friends list or guild.|n|nThis option requires that you have selected a role for your character in the Dungeon Finder window.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -132,	false,	"If checked, a group invite will be sent to anyone who whispers you with the keyword INV.|n|nYou need to be either ungrouped or party leader in your own group for this to work.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -132,	false,	L["If checked, a group invite will be sent to anyone who whispers you with a set keyword.|n|nYou need to be either not in a group or party leader in your own group for this to work."] .. "|n|n" .. L["Keyword"] .. ": |cffffffff" .. "dummy" .. "|r")
+
+ 	LeaPlusLC:CfgBtn("InvWhisperBtn", LeaPlusCB["InviteFromWhisper"])
 
 ----------------------------------------------------------------------
 -- 	LC3: Chat
@@ -9584,9 +9805,10 @@
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Features"					, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FrmEnabled"				,	"Manage frames"					, 	146, -92, 	true,	"If checked, you will be able to change the position and scale of the following frames:|n|n- Player frame|n- Target frame|n- Buffs frame|n- Widget top center frame|n- Ghost frame|n- Timer bar|n- Player power bar")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColFrames"			, 	"Class colored frames"			,	146, -112, 	true,	"If checked, class coloring will be used in the player frame, target frame and focus frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowPlayerChain"			, 	"Show player chain"				,	146, -132, 	true,	"If checked, you will be able to show a rare, elite or rare elite chain around the player frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowRaidToggle"			, 	"Raid frame toggle"				,	146, -152, 	true,	"If checked, the button to toggle the raid container frame will be shown just above the raid management frame (left side of the screen) instead of in the raid management frame itself.|n|nThis allows you to toggle the raid container frame without needing to open the raid management frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CombatPlates"				, 	"Combat plates"					,	146, -172, 	true,	"If checked, enemy nameplates will be shown during combat and hidden when combat ends.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassIconPortraits"		, 	"Class icon portraits"			,	146, -132, 	true,	"If checked, class icons will be shown in the portrait frames.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowPlayerChain"			, 	"Show player chain"				,	146, -152, 	true,	"If checked, you will be able to show a rare, elite or rare elite chain around the player frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowRaidToggle"			, 	"Raid frame toggle"				,	146, -172, 	true,	"If checked, the button to toggle the raid container frame will be shown just above the raid management frame (left side of the screen) instead of in the raid management frame itself.|n|nThis allows you to toggle the raid container frame without needing to open the raid management frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CombatPlates"				, 	"Combat plates"					,	146, -192, 	true,	"If checked, enemy nameplates will be shown during combat and hidden when combat ends.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Visibility"				, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoAlerts"					,	"Hide alerts"					, 	340, -92, 	true,	"If checked, alert frames will not be shown.")
@@ -9611,10 +9833,11 @@
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Graphics and Sound"		, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenGlow"				, 	"Disable screen glow"			, 	146, -92, 	false,	"If checked, the screen glow will be disabled.|n|nEnabling this option will also disable the drunken haze effect.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenEffects"			, 	"Disable screen effects"		, 	146, -112, 	false,	"If checked, the grey screen of death and the netherworld effect will be disabled.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -132, 	false,	"If checked, you will be able to zoom out to a greater distance.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ViewPortEnable"			,	"Enable viewport"				,	146, -152, 	true,	"If checked, you will be able to create a viewport.  A viewport adds adjustable black borders around the game world.|n|nThe borders are placed on top of the game world but under the UI so you can place UI elements over them.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -172, 	true,	"If checked, emote sounds will be silenced while your character is:|n|n- resting|n- in a pet battle|n- at the Halfhill Market|n- at the Grim Guzzler|n|nEmote sounds will be enabled when none of the above apply.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -192, 	false,	"If checked, you will be able to mute a selection of game sounds.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "SetWeatherDensity"			, 	"Set weather density"			, 	146, -132, 	false,	"If checked, you will be able to set the density of weather effects.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -152, 	false,	"If checked, you will be able to zoom out to a greater distance.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ViewPortEnable"			,	"Enable viewport"				,	146, -172, 	true,	"If checked, you will be able to create a viewport.  A viewport adds adjustable black borders around the game world.|n|nThe borders are placed on top of the game world but under the UI so you can place UI elements over them.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -192, 	true,	"If checked, emote sounds will be silenced while your character is:|n|n- resting|n- in a pet battle|n- at the Halfhill Market|n- at the Grim Guzzler|n|nEmote sounds will be enabled when none of the above apply.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -212, 	false,	"If checked, you will be able to mute a selection of game sounds.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoBagAutomation"			, 	"Disable bag automation"		, 	340, -92, 	true,	"If checked, your bags will not be opened or closed automatically when you interact with a merchant, bank or mailbox.")
@@ -9627,6 +9850,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterMovieSkip"			, 	"Faster movie skip"				,	340, -232, 	true,	"If checked, you will be able to cancel cinematics without being prompted for confirmation.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "LockoutSharing"			, 	"Lockout sharing"				, 	340, -252, 	true, 	"If checked, the 'Display only character achievements to others' setting in the game options panel ('Social' menu) will be permanently checked and locked.")
 
+	LeaPlusLC:CfgBtn("SetWeatherDensityBtn", LeaPlusCB["SetWeatherDensity"])
 	LeaPlusLC:CfgBtn("ModViewportBtn", LeaPlusCB["ViewPortEnable"])
 	LeaPlusLC:CfgBtn("MuteGameSoundsBtn", LeaPlusCB["MuteGameSounds"])
 

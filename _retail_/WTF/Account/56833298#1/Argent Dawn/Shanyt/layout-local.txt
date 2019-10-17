@@ -97,6 +97,13 @@ X: -374
 Y: 20
 W: 497
 H: 513
+Frame: scanner_button
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 189
+Y: -170
+W: 200
+H: 50
 Frame: RematchDialog
 FrameLevel: 1
 Anchor: CENTER
@@ -125,13 +132,6 @@ X: 0
 Y: 0
 W: 300
 H: 300
-Frame: scanner_button
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 189
-Y: -170
-W: 200
-H: 50
 Frame: ScriptErrorsFrame
 FrameLevel: 1
 Anchor: TOP
