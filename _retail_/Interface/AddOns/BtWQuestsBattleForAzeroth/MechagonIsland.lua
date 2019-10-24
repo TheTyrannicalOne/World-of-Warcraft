@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 local MAP_ID = 1462
 local CONTINENT_ID = 876
 
@@ -13,6 +14,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CHAIN02,
     },
+    major = true,
     restrictions = {
         type = "faction",
         id = BTWQUESTS_FACTION_ID_ALLIANCE,
@@ -39,6 +41,31 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
     completed = {
         type = "quest",
         id = 55736,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2200100, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 930,
+            amount = 250,
+        },
+        {
+            type = "reputation",
+            id = 1068,
+            amount = 10,
+        },
+        {
+            type = "reputation",
+            id = 2391,
+            amount = 1275,
+        },
     },
     items = {
         {
@@ -211,6 +238,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CHAIN01,
     },
+    major = true,
     restrictions = {
         type = "faction",
         id = BTWQUESTS_FACTION_ID_HORDE,
@@ -237,6 +265,21 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
     completed = {
         type = "quest",
         id = 55736,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2269800, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2391,
+            amount = 1275,
+        },
     },
     items ={
         {
@@ -454,6 +497,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 13478,
             criteriaId = 45308,
         },
+        {
+            type = "money",
+            amounts = {
+                585000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2391,
+            amount = 125,
+        },
     },
     items = {
         {
@@ -560,8 +616,21 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
     },
     rewards = {
         {
-            name = BTWQUESTS_ITEM_POCKET_SIZED_COMPUTATION_DEVICE,
-        }
+            name = L["BTWQUESTS_ITEM_POCKET_SIZED_COMPUTATION_DEVICE"],
+        },
+        {
+            type = "money",
+            amounts = {
+                234000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2391,
+            amount = 350,
+        },
     },
     items = {
         {
@@ -658,6 +727,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             type = "mount",
             id = 1253,
         },
+        {
+            type = "money",
+            amounts = {
+                3042000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2391,
+            amount = 1875,
+        },
     },
     items = {
         {
@@ -696,7 +778,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -739,7 +821,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -776,7 +858,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -813,7 +895,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -850,7 +932,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -887,7 +969,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -924,7 +1006,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -961,7 +1043,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -998,7 +1080,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -1035,7 +1117,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -1072,7 +1154,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         {
             type = "quest",
             id = 55161,
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "quest",
@@ -1143,6 +1225,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             type = "achievement",
             id = 13478,
             criteriaId = 44314,
+        },
+        {
+            type = "money",
+            amounts = {
+                1053000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2391,
+            amount = 200,
         },
     },
     items = {
@@ -1232,6 +1327,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
         type = "quest",
         id = 55211,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                397800, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1309,6 +1414,21 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_TE
         type = "level",
         level = 120,
         visible = false,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                234000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2391,
+            amount = 200,
+        },
     },
     items = {
         {

@@ -308,6 +308,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [8309] = {
         name = "상형 문자 추적",
     },
+    [8310] = {
+        name = "상형 문자 판독",
+    },
+    [8314] = {
+        name = "밝혀지는 비밀",
+    },
     [8318] = {
         name = "비밀 교신",
     },
@@ -322,6 +328,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [8323] = {
         name = "진정한 신봉자",
+    },
+    [8324] = {
+        name = "문서 수집",
     },
     [8470] = {
         name = "마른가지 의식의 토템",
@@ -2386,6 +2395,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [25379] = {
         name = "타에라의 최후",
+    },
+    [25383] = {
+        name = "이손드레의 작별",
     },
     [25386] = {
         name = "돌망치 요새로",

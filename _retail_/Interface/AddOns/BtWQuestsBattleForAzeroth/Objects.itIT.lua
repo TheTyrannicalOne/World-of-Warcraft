@@ -183,7 +183,7 @@ BtWQuestsDatabase:UpdateObjectsTable({
         name = "Manifesto dei Ricercati",
     },
     [288641] = {
-        name = "RICERCATI: Rapitori di Grifoni",
+        name = "RICERCATO: Rapitore di Grifoni",
     },
     [289310] = {
         name = "RICERCATO: Guardiaterra Infuriato",
@@ -248,7 +248,34 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [298858] = {
         name = "Manifesto dei Ricercati",
     },
+    [307748] = {
+        name = "Lettera della S.P.R. & Co.",
+    },
     [311155] = {
         name = "Antica Tavoletta",
+    },
+    [311218] = {
+        name = "Xal'atath, Lama dell'Impero Nero",
+    },
+    [311885] = {
+        name = "Xal'atath, Lama dell'Impero Nero",
+    },
+    [322533] = {
+        name = "Tomo degli Elementi di Mardivas",
+    },
+    [326418] = {
+        name = "Cassa Arcana",
+    },
+    [327170] = {
+        name = "Rastrelliera delle Armi",
+    },
+    [327591] = {
+        name = "Diario Conservato",
+    },
+    [327592] = {
+        name = "Lucchetto Incantato",
+    },
+    [329805] = {
+        name = "Cristallo Strano",
     },
 })

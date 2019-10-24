@@ -5447,6 +5447,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54639] = {
         name = "Signal dans les pics Foudroyés",
     },
+    [54640] = {
+        name = "Pacte de Gnome-agression",
+    },
+    [54641] = {
+        name = "Pour Gnomeregan !",
+    },
     [54642] = {
         name = "Un R.O.U.A.G.E. bien huilé",
     },
@@ -5501,8 +5507,35 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54754] = {
         name = "Pour la reine",
     },
+    [54759] = {
+        name = "Les murmures des esprits",
+    },
+    [54760] = {
+        name = "Les marcheurs des esprits",
+    },
+    [54761] = {
+        name = "Un guide spirituel",
+    },
+    [54762] = {
+        name = "Une petite retraite",
+    },
+    [54763] = {
+        name = "Vers le monde des esprits",
+    },
+    [54764] = {
+        name = "Tempête à Sabot-de-Sang",
+    },
+    [54765] = {
+        name = "N’oubliez pas le guide",
+    },
+    [54766] = {
+        name = "Répondre à l’appel",
+    },
     [54787] = {
         name = "Mascarade",
+    },
+    [54850] = {
+        name = "Opération Troggageddon",
     },
     [54851] = {
         name = "La bénédiction des marées",
@@ -5669,6 +5702,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55101] = {
         name = "En première casse",
     },
+    [55103] = {
+        name = "Foire aux idées",
+    },
     [55116] = {
         name = "À la recherche d’indices",
     },
@@ -5828,8 +5864,20 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Sur le chemin du Rêve",
     },
+    [55393] = {
+        name = "La nature a horreur du Vide",
+    },
+    [55394] = {
+        name = "Éclats d’émeraude",
+    },
+    [55395] = {
+        name = "Ne fermez pas les yeux",
+    },
     [55396] = {
         name = "Un rêve devenu réalité",
+    },
+    [55397] = {
+        name = "Avant de me réveiller",
     },
     [55398] = {
         name = "La longue veille",
@@ -5845,6 +5893,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55462] = {
         name = "L’appel de la Montagne errante",
+    },
+    [55465] = {
+        name = "Au cœur du Rêve",
     },
     [55469] = {
         name = "En route pour Zin-Azshari",
@@ -5875,6 +5926,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55500] = {
         name = "Une amie en détresse",
+    },
+    [55503] = {
+        name = "La navrecorne et le sauride",
     },
     [55504] = {
         name = "Les sanctuaires de Zuldazar",
@@ -6044,6 +6098,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55731] = {
         name = "Les armées de mon père",
     },
+    [55732] = {
+        name = "Une vieille balafre",
+    },
     [55734] = {
         name = "Construction de foreuse",
     },
@@ -6052,6 +6109,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55736] = {
         name = "Bienvenue dans la résistance",
+    },
+    [55737] = {
+        name = "Azérite quand tu nous tiens",
+    },
+    [55752] = {
+        name = "Union draconique",
     },
     [55753] = {
         name = "À bas le robot",
@@ -6182,6 +6245,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Une lame trempée",
     },
+    [56167] = {
+        name = "Enquête dans les hautes-terres",
+    },
     [56168] = {
         name = "Pièces reconditionnées",
     },
@@ -6253,6 +6319,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [56248] = {
         name = "L’histoire des trésors",
+    },
+    [56267] = {
+        name = "Murmures de N’Zoth",
     },
     [56304] = {
         name = "On n’est pas Bien-né, là ?",
@@ -6344,6 +6413,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56429] = {
         name = "Nagas en force",
     },
+    [56494] = {
+        name = "La veille du combat",
+    },
+    [56495] = {
+        name = "Le ver dans la pomme",
+    },
+    [56496] = {
+        name = "La veille du combat",
+    },
     [56504] = {
         name = "Le journal d’Irion",
     },
@@ -6369,19 +6447,70 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56644] = {
         name = "Nagas en force",
     },
+    [56719] = {
+        name = "Grise mine",
+    },
     [56739] = {
         name = "Le pouvoir de la foi",
     },
     [56741] = {
         name = "La Lance de la destinée",
     },
-    [56803] = {
-        name = "Un simple ami",
+    [56833] = {
+        name = "Les chefs de la Horde",
+    },
+    [56979] = {
+        name = "Sauvetage du siège",
+    },
+    [56980] = {
+        name = "Tentative de noyautage",
+    },
+    [56981] = {
+        name = "Déploiement stratégique",
+    },
+    [56982] = {
+        name = "Devant les portes d’Orgrimmar",
+    },
+    [56993] = {
+        name = "Le prix de la victoire",
+    },
+    [57002] = {
+        name = "Vieux briscard",
+    },
+    [57005] = {
+        name = "Un ami en devenir",
     },
     [57006] = {
         name = "Un allié qui se respecte",
     },
     [57010] = {
         name = "Cœur de puissance",
+    },
+    [57088] = {
+        name = "Grise mine",
+    },
+    [57090] = {
+        name = "Sauvetage du siège",
+    },
+    [57091] = {
+        name = "Tentative de noyautage",
+    },
+    [57092] = {
+        name = "Déploiement stratégique",
+    },
+    [57093] = {
+        name = "Devant les portes d’Orgrimmar",
+    },
+    [57094] = {
+        name = "Le prix de la victoire",
+    },
+    [57095] = {
+        name = "Vieux briscard",
+    },
+    [57126] = {
+        name = "Suivre le courant",
+    },
+    [57198] = {
+        name = "Le sens du devoir",
     },
 })

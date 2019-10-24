@@ -826,7 +826,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_DAY_THAT_DEATHWI
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN04, {
-    name = "The Good Stuff",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -860,7 +859,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN04, {
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN09, {
-    name = "It's Goat Time, Baby",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -894,7 +892,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN09, {
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN10, {
-    name = "Dummy 1",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -916,7 +913,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN10, {
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN11, {
-    name = "Dummy 2",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -938,7 +934,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN11, {
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN12, {
-    name = "Dummy 3",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -960,7 +955,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN12, {
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN13, {
-    name = "Dummy 4",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -982,7 +976,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN13, {
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN14, {
-    name = "Dummy 5",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1004,7 +997,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN14, {
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN15, {
-    name = "Dummy 6",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},

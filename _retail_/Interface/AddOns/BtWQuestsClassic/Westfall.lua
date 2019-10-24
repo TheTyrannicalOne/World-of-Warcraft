@@ -1,3 +1,4 @@
+local L = BtWQuests.L
 local MAP_ID = 52
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTFALL_CRIMESCENEINVESTIGATION, {
@@ -56,11 +57,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTFALL_CRIMESCENEINVESTIGAT
                     },
 				},
 				{
-					name = "Go to Lieutenant Horatio Laine",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6005, 0.1927, "Lieutenant Horatio Laine")
-					end,
+					type = "npc",
+					id = 42308,				
+					-- name = "Go to Lieutenant Horatio Laine",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6005, 0.1927, "Lieutenant Horatio Laine")
+					-- end,
 				},
 			},
 			x = 3,
@@ -317,8 +320,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTFALL_INVESTIGATINGTHESHAD
             },
 		},
 		{
-			name = "Kill Defias Thugs",
-			breadcrumb = true,
+			type = "kill",
+			id = 42677,
 			aside = true,
 			x = 5,
 			y = 6.5,
@@ -496,11 +499,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTFALL_CHAIN1, {
                     },
 				},
 				{
-					name = "Go to Lieutenant Horatio Laine",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6005, 0.1927, "Lieutenant Horatio Laine")
-					end,
+					type = "npc",
+					id = 392,				
+					-- name = "Go to Lieutenant Horatio Laine",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6005, 0.1927, "Lieutenant Horatio Laine")
+					-- end,
 				},
 			},
 			x = 2,
@@ -563,7 +568,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTFALL_CHAIN2, {
 			y = 0,
 		},
         {
-			name = "Kill Murlocs around Longshore",
+			name = L["KILL_MURLOCS"],
 			breadcrumb = true,
 			x = 3,
 			y = 0,

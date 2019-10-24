@@ -248,7 +248,34 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [298858] = {
         name = "Steckbrief",
     },
+    [307748] = {
+        name = "Brief der Venture Co.",
+    },
     [311155] = {
         name = "Uralte Schrifttafel",
+    },
+    [311218] = {
+        name = "Xal'atath, Klinge des Schwarzen Imperiums",
+    },
+    [311885] = {
+        name = "Xal'atath, Klinge des Schwarzen Imperiums",
+    },
+    [322533] = {
+        name = "Mardivas' Foliant der Elemente",
+    },
+    [326418] = {
+        name = "Arkane Truhe",
+    },
+    [327170] = {
+        name = "Waffenständer",
+    },
+    [327591] = {
+        name = "Erhaltenes Tagebuch",
+    },
+    [327592] = {
+        name = "Verzaubertes Schloss",
+    },
+    [329805] = {
+        name = "Merkwürdiger Kristall",
     },
 })

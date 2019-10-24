@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 local ACHIEVEMENT_TOOL_ID = 13516
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALCHEMY, {
@@ -216,6 +217,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_BLACKSMITHIN
         type = "quest",
         ids = {50275, 50279},
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                455900, 465300, 474700, 484100, 493500, 502900, 512300, 521700, 531100, 540500, 549900, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                38650, 39000, 39350, 39600, 39950, 40300, 40650, 41000, 41250, 41600, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+    },
     items = {
         {
             variations = {
@@ -356,6 +375,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENCHANTING, 
         type = "quest",
         id = 54002,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1202800, 1227600, 1252400, 1277200, 1302000, 1326800, 1351600, 1376400, 1401200, 1426000, 1450800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                89650, 90450, 91200, 91900, 92650, 93450, 94300, 95100, 95650, 96450, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+    },
     items = {
         {
             variations = {
@@ -480,6 +517,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENGINEERING,
     completed = {
         type = "quest",
         ids = {53949, 53937},
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                936000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     items = {
         {
@@ -619,6 +666,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_INSCRIPTION,
     completed = {
         type = "quest",
         id = 49882,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1813900, 1851300, 1888700, 1926100, 1963500, 2000900, 2038300, 2075700, 2113100, 2150500, 2187900, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                108550, 109550, 110450, 111300, 112200, 113200, 114150, 115100, 115900, 116850, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
     },
     items = {
         {
@@ -1235,6 +1300,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_TAILORING, {
         type = "quest",
         ids = {53881, 53962},
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1450800, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+    },
     items = {
         {
             variations = {
@@ -1372,7 +1447,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_TAILORING, {
 })
 
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS, {
-    name = BTWQUESTS_PROFESSIONS,
+    name = L["BTWQUESTS_PROFESSIONS"],
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     items = {
         {

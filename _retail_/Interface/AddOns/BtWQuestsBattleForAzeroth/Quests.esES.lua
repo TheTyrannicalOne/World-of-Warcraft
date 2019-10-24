@@ -5447,6 +5447,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54639] = {
         name = "Una señal en Las Cumbres Tormentosas",
     },
+    [54640] = {
+        name = "¡Gnomisericordia!",
+    },
+    [54641] = {
+        name = "¡Por Gnomeregan!",
+    },
     [54642] = {
         name = "Ases de los GASES",
     },
@@ -5501,8 +5507,35 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54754] = {
         name = "Por la reina",
     },
+    [54759] = {
+        name = "Cuando los espíritus susurran",
+    },
+    [54760] = {
+        name = "Los caminaespíritus",
+    },
+    [54761] = {
+        name = "Espíritu guía",
+    },
+    [54762] = {
+        name = "Una ligera retirada",
+    },
+    [54763] = {
+        name = "Cruzando",
+    },
+    [54764] = {
+        name = "Tormenta en Pezuña de Sangre",
+    },
+    [54765] = {
+        name = "Una muestra de agradecimiento para tu guía",
+    },
+    [54766] = {
+        name = "Acudir a la llamada",
+    },
     [54787] = {
         name = "Máscara que espalda",
+    },
+    [54850] = {
+        name = "Operación: Troggagedón",
     },
     [54851] = {
         name = "La bendición de las Mareas",
@@ -5669,6 +5702,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55101] = {
         name = "El trabajo en el desguace y tú",
     },
+    [55103] = {
+        name = "Las ideas pueden surgir en cualquier parte",
+    },
     [55116] = {
         name = "La clave de todo",
     },
@@ -5828,8 +5864,20 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Entrar en el Camino del Sueño",
     },
+    [55393] = {
+        name = "Anular el Vacío",
+    },
+    [55394] = {
+        name = "Fragmentos de esmeralda",
+    },
+    [55395] = {
+        name = "No cierres los ojos",
+    },
     [55396] = {
         name = "El material del que están hechos los sueños",
+    },
+    [55397] = {
+        name = "Antes de despertar",
     },
     [55398] = {
         name = "El largo despertar",
@@ -5845,6 +5893,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55462] = {
         name = "La llamada de la Errante",
+    },
+    [55465] = {
+        name = "Hay que adentrarse más",
     },
     [55469] = {
         name = "A Zin-Azshari",
@@ -5875,6 +5926,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55500] = {
         name = "Salvar a un amigo",
+    },
+    [55503] = {
+        name = "La cuernoatroz y el sáurido",
     },
     [55504] = {
         name = "Santuarios de Zuldazar",
@@ -6044,6 +6098,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55731] = {
         name = "Los ejércitos de mi padre",
     },
+    [55732] = {
+        name = "Una vieja cicatriz",
+    },
     [55734] = {
         name = "Construcción de equipo de excavación",
     },
@@ -6052,6 +6109,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55736] = {
         name = "Bienvenidos a la Resistencia",
+    },
+    [55737] = {
+        name = "Es la hora de la azerita",
+    },
+    [55752] = {
+        name = "Unidos resistiremos",
     },
     [55753] = {
         name = "Derribar a su robot",
@@ -6182,6 +6245,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Una hoja templada",
     },
+    [56167] = {
+        name = "Investigar las Tierras Altas",
+    },
     [56168] = {
         name = "Fábrica reformada",
     },
@@ -6253,6 +6319,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [56248] = {
         name = "La historia del tesoro",
+    },
+    [56267] = {
+        name = "Susurros de N'Zoth",
     },
     [56304] = {
         name = "La gran vida",
@@ -6344,6 +6413,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56429] = {
         name = "Contra las cuerdas",
     },
+    [56494] = {
+        name = "El preludio de la batalla",
+    },
+    [56495] = {
+        name = "Van a por nosotros",
+    },
+    [56496] = {
+        name = "El preludio de la batalla",
+    },
     [56504] = {
         name = "Diario de Wrathion",
     },
@@ -6368,19 +6446,70 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56644] = {
         name = "Contra las cuerdas",
     },
+    [56719] = {
+        name = "Abrirse paso",
+    },
     [56739] = {
         name = "El poder de la veneración",
     },
     [56741] = {
         name = "La lanza del destino",
     },
-    [56803] = {
-        name = "Una simple amistad",
+    [56833] = {
+        name = "Líderes de la Horda",
+    },
+    [56979] = {
+        name = "Salvar el asedio",
+    },
+    [56980] = {
+        name = "Ya están entre nosotros",
+    },
+    [56981] = {
+        name = "Despliegue estratégico",
+    },
+    [56982] = {
+        name = "Ante las Puertas de Orgrimmar",
+    },
+    [56993] = {
+        name = "El precio de la victoria",
+    },
+    [57002] = {
+        name = "Viejo soldado",
+    },
+    [57005] = {
+        name = "Elección de amistad",
     },
     [57006] = {
         name = "Una alianza digna",
     },
     [57010] = {
         name = "Dominar el poder",
+    },
+    [57088] = {
+        name = "Abrirse paso",
+    },
+    [57090] = {
+        name = "Salvar el asedio",
+    },
+    [57091] = {
+        name = "Ya están entre nosotros",
+    },
+    [57092] = {
+        name = "Despliegue estratégico",
+    },
+    [57093] = {
+        name = "Ante las Puertas de Orgrimmar",
+    },
+    [57094] = {
+        name = "El precio de la victoria",
+    },
+    [57095] = {
+        name = "Viejo soldado",
+    },
+    [57126] = {
+        name = "... Y buena mar",
+    },
+    [57198] = {
+        name = "Sentido del deber",
     },
 })

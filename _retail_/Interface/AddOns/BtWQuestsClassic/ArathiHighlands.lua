@@ -29,11 +29,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_FALDIRS_COVE
 	},
 	items = {
 		{
-			name = "Go to Professor Phizzlethorpe",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2759, 0.8300, "Professor Phizzlethorpe")
-			end,
+			type = "npc",
+			id = 2768,
+			-- name = "Go to Professor Phizzlethorpe",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2759, 0.8300, "Professor Phizzlethorpe")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -41,12 +43,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_FALDIRS_COVE
 			},
 		},
 		{
-			name = "Go to Captain Steelgut",
-			breadcrumb = true,
+			type = "npc",
+			id = 2769,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2772, 0.8327, "Captain Steelgut")
-			end,
+			-- name = "Go to Captain Steelgut",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2772, 0.8327, "Captain Steelgut")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -96,9 +100,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_FALDIRS_COVE
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_GALENS_FALL, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 2)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
 	category = BTWQUESTS_CATEGORY_CLASSIC_ARATHI_HIGHLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {25, 60},
@@ -132,11 +134,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_GALENS_FALL,
 	},
 	items = {
 		{
-			name = "Go to Genavie Callow",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1377, 0.3391, "Genavie Callow")
-			end,
+			type = "npc",
+			id = 4486,		
+			-- name = "Go to Genavie Callow",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1377, 0.3391, "Genavie Callow")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -164,11 +168,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_GALENS_FALL,
 					},
 				},
 				{
-					name = "Go to Dark Ranger Alina",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1336, 0.3596, "Dark Ranger Alina")
-					end,
+					type = "npc",
+					id = 41949,				
+					-- name = "Go to Dark Ranger Alina",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1336, 0.3596, "Dark Ranger Alina")
+					-- end,
 				}
 			},
 			x = 3,
@@ -178,11 +184,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_GALENS_FALL,
 			},
 		},
 		{
-			name = "Go to Deathstalker Maudria",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1335, 0.3414, "Deathstalker Maudria")
-			end,
+			type = "npc",
+			id = 41966,
+			-- name = "Go to Deathstalker Maudria",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1335, 0.3414, "Deathstalker Maudria")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -333,9 +341,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_GALENS_FALL,
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_HAMMERFALL, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 3)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
 	category = BTWQUESTS_CATEGORY_CLASSIC_ARATHI_HIGHLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {25, 60},
@@ -361,11 +367,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_HAMMERFALL, 
 	},
 	items = {
 		{
-			name = "Go to Gor'mul",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6771, 0.3479, "Gor'mul")
-			end,
+			type = "npc",
+			id = 42130,		
+			-- name = "Go to Gor'mul",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6771, 0.3479, "Gor'mul")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -373,11 +381,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_HAMMERFALL, 
 			},
 		},
 		{
-			name = "Go to Zaruk",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6968, 0.3652, "Zaruk")
-			end,
+			type = "npc",
+			id = 2787,		
+			-- name = "Go to Zaruk",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6968, 0.3652, "Zaruk")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -385,11 +395,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_HAMMERFALL, 
 			},
 		},
 		{
-			name = "Go to Drum Fel",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6898, 0.3481, "Drum Fel")
-			end,
+			type = "npc",
+			id = 2771,
+			-- name = "Go to Drum Fel",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6898, 0.3481, "Drum Fel")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -476,9 +488,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_HAMMERFALL, 
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_REFUGE_POINT, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 2)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
 	category = BTWQUESTS_CATEGORY_CLASSIC_ARATHI_HIGHLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {25, 60},
@@ -516,11 +526,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_REFUGE_POINT
 	},
 	items = {
 		{
-			name = "Go to Commander Amaren",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3987, 0.4784, "Commander Amaren")
-			end,
+			type = "npc",
+			id = 2608,
+			-- name = "Go to Commander Amaren",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3987, 0.4784, "Commander Amaren")
+			-- end,
 			x = 0,
 			y = 0,
 			connections = {
@@ -528,11 +540,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_REFUGE_POINT
 			},
 		},
 		{
-			name = "Go to Wanted Board",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4018, 0.4906, "Wanted Board")
-			end,
+			type = "object",
+			id = 2713,
+			-- name = "Go to Wanted Board",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4018, 0.4906, "Wanted Board")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -560,11 +574,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_REFUGE_POINT
 					},
 				},
 				{
-					name = "Go to Captain Nials",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3997, 0.4887, "Captain Nials")
-					end,
+					type = "npc",
+					id = 2700,
+					-- name = "Go to Captain Nials",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3997, 0.4887, "Captain Nials")
+					-- end,
 				}
 			},
 			x = 6,
@@ -601,11 +617,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_REFUGE_POINT
 
 		
 		{
-			name = "Go to Skuerto",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4034, 0.4914, "Skuerto")
-			end,
+			type = "npc",
+			id = 2789,
+			-- name = "Go to Skuerto",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4034, 0.4914, "Skuerto")
+			-- end,
 			x = 3,
 			y = 2,
 			connections = {
@@ -642,9 +660,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_REFUGE_POINT
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_MYZRAELS_POINT, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 3)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
 	category = BTWQUESTS_CATEGORY_CLASSIC_ARATHI_HIGHLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {25, 60},
@@ -664,11 +680,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_MYZRAELS_POI
 	},
 	items = {
 		{
-			name = "Go to Skuerto",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4034, 0.4914, "Skuerto")
-			end,
+			type = "npc",
+			id = 2789,
+			-- name = "Go to Skuerto",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4034, 0.4914, "Skuerto")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -752,11 +770,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_CHAIN1, {
 	},
 	items = {
 		{
-			name = "Go to Commander Amaren",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3987, 0.4784, "Commander Amaren")
-			end,
+			type = "npc",
+			id = 2608,
+			-- name = "Go to Commander Amaren",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3987, 0.4784, "Commander Amaren")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -854,11 +874,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_CHAIN2, {
 					},
 				},
 				{
-					name = "Go to Captain Nials",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3997, 0.4887, "Captain Nials")
-					end,
+					type = "npc",
+					id = 2700,
+					-- name = "Go to Captain Nials",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3997, 0.4887, "Captain Nials")
+					-- end,
 				}
 			},
 			x = 3,
@@ -911,11 +933,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_CHAIN3, {
 	},
 	items = {
 		{
-			name = "Go to Skuerto",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4034, 0.4914, "Skuerto")
-			end,
+			type = "npc",
+			id = 2789,
+			-- name = "Go to Skuerto",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4034, 0.4914, "Skuerto")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {

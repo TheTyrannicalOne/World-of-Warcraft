@@ -20,6 +20,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [29445] = {
         name = "Thorim",
     },
+    [36648] = {
+        name = "Baine Bluthuf",
+    },
     [107574] = {
         name = "Anduin Wrynn",
     },
@@ -1316,8 +1319,14 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [135673] = {
         name = "Späher Melzer",
     },
+    [135681] = {
+        name = "Großadmiralin Jes-Tereth",
+    },
     [135682] = {
         name = "Patrick Eckhart",
+    },
+    [135690] = {
+        name = "Schreckensadmiralin Segelriss",
     },
     [135691] = {
         name = "Nathanos Pestrufer",
@@ -1662,7 +1671,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Arthur Handelswind",
     },
     [140105] = {
-        name = "Dunkler Waldläufer",
+        name = "Nathanos Pestrufer",
     },
     [140176] = {
         name = "Nathanos Pestrufer",
@@ -1938,7 +1947,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Xal'atath",
     },
     [146462] = {
-        name = "Berserker der Horde",
+        name = "Rexxar",
     },
     [146536] = {
         name = "Verlorener Irrwisch",
@@ -1956,7 +1965,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Fürstin Sylvanas Windläufer",
     },
     [146791] = {
-        name = "Dunkle Waldläuferin",
+        name = "Dunkle Waldläuferin Lyana",
     },
     [146806] = {
         name = "Dunkle Waldläuferin Lyana",
@@ -1977,7 +1986,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Rexxar",
     },
     [146937] = {
-        name = "Dunkle Waldläuferin",
+        name = "Dunkle Waldläuferin Lyana",
     },
     [146939] = {
         name = "Botschafterin Morgenschwur",
@@ -2019,7 +2028,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Rokhan",
     },
     [147293] = {
-        name = "Verteidiger der Da'kani",
+        name = "Grong",
     },
     [147297] = {
         name = "Zekhan",
@@ -2045,6 +2054,15 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [147885] = {
         name = "Anduin Wrynn",
     },
+    [147939] = {
+        name = "Pilotenass Sturmrad",
+    },
+    [147943] = {
+        name = "Hauptmann Tret Funkdüse",
+    },
+    [147950] = {
+        name = "Getriebehauptmann Winkelfeder",
+    },
     [148015] = {
         name = "Taelia Fordragon",
     },
@@ -2060,6 +2078,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [148870] = {
         name = "Dorian Ebbwasser",
     },
+    [149084] = {
+        name = "Geistwandler Ussoh",
+    },
+    [149088] = {
+        name = "Geistwandlerin Isahi",
+    },
     [149143] = {
         name = "Nathanos Pestrufer",
     },
@@ -2069,11 +2093,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149471] = {
         name = "Dunkle Waldläuferin Velonara",
     },
+    [149503] = {
+        name = "Getriebehauptmann Winkelfeder",
+    },
+    [149528] = {
+        name = "Baine Bluthuf",
+    },
+    [149529] = {
+        name = "Geistwandler Ussoh",
+    },
     [149612] = {
         name = "Shandris Mondfeder",
     },
     [149736] = {
         name = "Abbild von Mimiron",
+    },
+    [149809] = {
+        name = "Gazlowe",
     },
     [149815] = {
         name = "Grizzek Zischzang",
@@ -2084,14 +2120,47 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149842] = {
         name = "Baine Bluthuf",
     },
+    [149864] = {
+        name = "Tüftlermeister Oberfunks",
+    },
     [149867] = {
         name = "Magni Bronzebart",
     },
     [149870] = {
         name = "Grif Wildherz",
     },
+    [149877] = {
+        name = "Tüftlermeister Oberfunks",
+    },
+    [149904] = {
+        name = "Neri Scharffinne",
+    },
+    [150086] = {
+        name = "Fitz Funkenschlag",
+    },
     [150101] = {
         name = "Lady Jaina Prachtmeer",
+    },
+    [150145] = {
+        name = "Gila Kurzschluss",
+    },
+    [150187] = {
+        name = "Nathanos Pestrufer",
+    },
+    [150196] = {
+        name = "Erste Arkanistin Thalyssra",
+    },
+    [150206] = {
+        name = "Großtelemant Oculeth",
+    },
+    [150207] = {
+        name = "Lor'themar Theron",
+    },
+    [150208] = {
+        name = "Tüftlermeister Oberfunks",
+    },
+    [150209] = {
+        name = "Neri Scharffinne",
     },
     [150309] = {
         name = "Baine Bluthuf",
@@ -2168,11 +2237,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150898] = {
         name = "Schrein der Stürme",
     },
+    [150956] = {
+        name = "Kaputte Bohrmaschine",
+    },
     [151000] = {
         name = "Klingenmeister Okani",
     },
     [151061] = {
         name = "Mimiron",
+    },
+    [151100] = {
+        name = "Gila Kurzschluss",
     },
     [151129] = {
         name = "Sapphronetta Chaise",
@@ -2195,17 +2270,41 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "Daniss Geisttänzer",
     },
+    [151283] = {
+        name = "Terrorhornjungtier",
+    },
     [151285] = {
         name = "Mevris Geisttänzer",
     },
     [151287] = {
         name = "Telonis",
     },
-    [151309] = {
-        name = "Kelfinnenspäher",
+    [151462] = {
+        name = "Danielle Anglers",
     },
     [151626] = {
         name = "Jäger Akana",
+    },
+    [151641] = {
+        name = "Geistwandler Ebenhorn",
+    },
+    [151682] = {
+        name = "Merithra des Traums",
+    },
+    [151693] = {
+        name = "Merithra des Traums",
+    },
+    [151695] = {
+        name = "Geistwandler Ebenhorn",
+    },
+    [151704] = {
+        name = "Valithria Traumwandler",
+    },
+    [151741] = {
+        name = "Lehrling Odari",
+    },
+    [151825] = {
+        name = "Merithra des Traums",
     },
     [151848] = {
         name = "Lor'themar Theron",
@@ -2213,14 +2312,35 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "Großtelemant Oculeth",
     },
+    [151887] = {
+        name = "Merithra des Traums",
+    },
+    [151947] = {
+        name = "Prinz Erazmin",
+    },
     [151964] = {
         name = "Geistwandler Ebenhorn",
+    },
+    [151999] = {
+        name = "Jo'nok, Bollwerk von Torcali",
     },
     [152002] = {
         name = "Abbild von Mimiron",
     },
+    [152047] = {
+        name = "Poen Kiembrack",
+    },
+    [152066] = {
+        name = "Erste Arkanistin Thalyssra",
+    },
     [152084] = {
         name = "Mrrl",
+    },
+    [152095] = {
+        name = "Magni Bronzebart",
+    },
+    [152108] = {
+        name = "Neri Scharffinne",
     },
     [152194] = {
         name = "MUTTER",
@@ -2228,11 +2348,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152206] = {
         name = "Magni Bronzebart",
     },
+    [152238] = {
+        name = "Riathia Silberstern",
+    },
     [152255] = {
         name = "Sef Iwen",
     },
     [152295] = {
         name = "Pascal",
+    },
+    [152365] = {
+        name = "Kalecgos",
+    },
+    [152385] = {
+        name = "Geistwandler Ebenhorn",
+    },
+    [152484] = {
+        name = "Tüftlermeister Oberfunks",
     },
     [152489] = {
         name = "Schrein der Stürme",
@@ -2252,14 +2384,68 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152497] = {
         name = "Schrein der Abendflut",
     },
+    [152504] = {
+        name = "Gazlowe",
+    },
+    [152505] = {
+        name = "Skaggit",
+    },
+    [152522] = {
+        name = "Gazlowe",
+    },
+    [152578] = {
+        name = "Gazlowe",
+    },
+    [152652] = {
+        name = "Gazlowe",
+    },
+    [152720] = {
+        name = "Kalecgos",
+    },
     [152747] = {
         name = "Christy Schlagbolz",
+    },
+    [152783] = {
+        name = "Gazlowe",
+    },
+    [152815] = {
+        name = "Magni Bronzebart",
+    },
+    [152820] = {
+        name = "Prinz Erazmin",
+    },
+    [152845] = {
+        name = "Gazlowe",
+    },
+    [152851] = {
+        name = "Prinz Erazmin",
+    },
+    [152864] = {
+        name = "Tüftlermeister Oberfunks",
+    },
+    [152977] = {
+        name = "Thrall",
+    },
+    [153251] = {
+        name = "Lor'themar Theron",
+    },
+    [153253] = {
+        name = "Lady Jaina Prachtmeer",
     },
     [153365] = {
         name = "Honigrückenschwarmmutter",
     },
+    [153385] = {
+        name = "Klingenmeister Okani",
+    },
     [153393] = {
         name = "Ingmar",
+    },
+    [153422] = {
+        name = "Großtelemant Oculeth",
+    },
+    [153496] = {
+        name = "Adaru",
     },
     [153509] = {
         name = "Handwerker Okata",
@@ -2276,8 +2462,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "Shandris Mondfeder",
     },
+    [153670] = {
+        name = "Prinz Erazmin",
+    },
+    [153932] = {
+        name = "Genn Graumähne",
+    },
+    [153936] = {
+        name = "Aufseher Hajeer",
+    },
+    [154002] = {
+        name = "Atolia Seeperl",
+    },
     [154023] = {
         name = "Schlüpfende Ernterin",
+    },
+    [154143] = {
+        name = "Sammler Kojo",
     },
     [154248] = {
         name = "Klingenkämpfer Inowari",
@@ -2291,7 +2492,52 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154464] = {
         name = "Irdener Wächter",
     },
+    [154465] = {
+        name = "Irdener Wächter",
+    },
+    [154514] = {
+        name = "Kelya Mondsturz",
+    },
+    [154520] = {
+        name = "Erste Arkanistin Thalyssra",
+    },
+    [154522] = {
+        name = "Shandris Mondfeder",
+    },
+    [154574] = {
+        name = "Kelya Mondsturz",
+    },
+    [154601] = {
+        name = "Kelya Mondsturz",
+    },
     [154640] = {
         name = "Großmarschall Tremblade",
+    },
+    [154660] = {
+        name = "Shandris Mondfeder",
+    },
+    [154661] = {
+        name = "Erste Arkanistin Thalyssra",
+    },
+    [154874] = {
+        name = "Schwarzkrallenwächter",
+    },
+    [155071] = {
+        name = "Shandris Mondfeder",
+    },
+    [155325] = {
+        name = "Erste Arkanistin Thalyssra",
+    },
+    [155482] = {
+        name = "Shandris Mondfeder",
+    },
+    [155784] = {
+        name = "Anduin Wrynn",
+    },
+    [155785] = {
+        name = "Lady Jaina Prachtmeer",
+    },
+    [155789] = {
+        name = "Lor'themar Theron",
     },
 })

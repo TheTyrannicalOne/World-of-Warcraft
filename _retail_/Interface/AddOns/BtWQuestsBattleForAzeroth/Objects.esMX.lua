@@ -213,7 +213,7 @@ BtWQuestsDatabase:UpdateObjectsTable({
         name = "Se busca ayudante",
     },
     [290750] = {
-        name = "Reservas Jambani",
+        name = "Reserva jambani",
     },
     [290765] = {
         name = "Montón de oro enorme",
@@ -225,7 +225,7 @@ BtWQuestsDatabase:UpdateObjectsTable({
         name = "Llave de Ranah",
     },
     [291291] = {
-        name = "Se busca: furtivo",
+        name = "Se busca: Furtivo",
     },
     [292523] = {
         name = "Cartel de Se busca",
@@ -251,10 +251,34 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [298858] = {
         name = "Cartel de Se busca",
     },
+    [307748] = {
+        name = "Carta de Ventura y Cía.",
+    },
     [311155] = {
         name = "Tablilla antigua",
     },
+    [311218] = {
+        name = " - Entidad - World of Warcraft",
+    },
     [311885] = {
         name = " - Entidad - World of Warcraft",
+    },
+    [322533] = {
+        name = "Tomo de los elementos de Mardivas",
+    },
+    [326418] = {
+        name = "Cofre arcano",
+    },
+    [327170] = {
+        name = "Expositor de armas",
+    },
+    [327592] = {
+        name = "Candado encantado",
+    },
+    [327596] = {
+        name = "Enfoque abisal roto",
+    },
+    [329805] = {
+        name = "Cristal extraño",
     },
 })

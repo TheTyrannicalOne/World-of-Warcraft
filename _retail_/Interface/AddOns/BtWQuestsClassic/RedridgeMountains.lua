@@ -1,3 +1,4 @@
+local L = BtWQuests.L
 local MAP_ID = 49
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_THEGNOLLOFFENSIVE, {
@@ -17,12 +18,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_THEGNOLLOF
 	},
 	items = {
         {
-            name = "Go to Martie Jainrose",
-            breadcrumb = true,
+			type = "npc",
+			id = 342,
+            -- name = "Go to Martie Jainrose",
+            -- breadcrumb = true,
             aside = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2204, 0.4270, "Martie Jainrose")
-            end,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2204, 0.4270, "Martie Jainrose")
+            -- end,
 			x = 0,
 			y = 0,
 			connections = {
@@ -30,12 +33,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_THEGNOLLOF
 			},
         },
         {
-            name = "Go to Bailiff Conacher",
-            breadcrumb = true,
+			type = "npc",
+			id = 900,
+            -- name = "Go to Bailiff Conacher",
+            -- breadcrumb = true,
             aside = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2868, 0.4096, "Bailiff Conacher")
-            end,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2868, 0.4096, "Bailiff Conacher")
+            -- end,
 			x = 2,
 			y = 0,
 			connections = {
@@ -63,11 +68,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_THEGNOLLOF
                     },
 				},
 				{
-					name = "Go to Magistrate Solomon",
-                    breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2891, 0.4110, "Magistrate Solomon")
-					end,
+					type = "npc",
+					id = 344,
+					-- name = "Go to Magistrate Solomon",
+                    -- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2891, 0.4110, "Magistrate Solomon")
+					-- end,
 				},
 			},
 			x = 4,
@@ -77,12 +84,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_THEGNOLLOF
 			},
         },
         {
-            name = "Go to Shawn",
-            breadcrumb = true,
+			type = "npc",
+			id = 8965,
+            -- name = "Go to Shawn",
+            -- breadcrumb = true,
             aside = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2835, 0.4888, "Shawn")
-            end,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2835, 0.4888, "Shawn")
+            -- end,
 			x = 6,
 			y = 0,
 			connections = {
@@ -136,7 +145,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_THEGNOLLOF
 			y = 2,
 		},
 		{
-            name = "Kill Gnolls",
+            name = L["KILL_GNOLLS"],
             breadcrumb = true,
             aside = true,
 			x = 1,
@@ -533,7 +542,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_FIRSTBLOOD
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_CHAIN1, {
-	name = "Tower Watch",
+	name = BtWQuests_GetAreaName(5327), -- Tower Watch
 	category = BTWQUESTS_CATEGORY_CLASSIC_REDRIDGE_MOUNTAINS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {15, 60},
@@ -569,11 +578,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_CHAIN1, {
                     },
 				},
 				{
-					name = "Go to Watch Captain Parker",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1532, 0.6459, "Watch Captain Parker")
-					end,
+					type = "npc",
+					id = 464,
+					-- name = "Go to Watch Captain Parker",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1532, 0.6459, "Watch Captain Parker")
+					-- end,
 				},
 			},
 			x = 3,

@@ -20,6 +20,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [29445] = {
         name = "Thorim",
     },
+    [36648] = {
+        name = "Baine Sabot-de-Sang",
+    },
     [107574] = {
         name = "Anduin Wrynn",
     },
@@ -252,7 +255,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Kaza'jin le Lieur de vagues",
     },
     [124630] = {
-        name = "Garde de Kul Tiras",
+        name = "Taelia",
     },
     [124641] = {
         name = "Chasseuse des ombres Mutumba",
@@ -1316,8 +1319,14 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [135673] = {
         name = "Eclaireur McKellis",
     },
+    [135681] = {
+        name = "Grand amiral Jes-Tereth",
+    },
     [135682] = {
         name = "Patrick Eckhart",
+    },
+    [135690] = {
+        name = "Amiral de l'effroi Voguenille",
     },
     [135691] = {
         name = "Nathanos le Flétrisseur",
@@ -1662,7 +1671,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Arthur Alizé",
     },
     [140105] = {
-        name = "Forestier-sombre",
+        name = "Nathanos le Flétrisseur",
     },
     [140176] = {
         name = "Nathanos le Flétrisseur",
@@ -1938,7 +1947,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Xal'atath",
     },
     [146462] = {
-        name = "Berserker de la Horde",
+        name = "Rexxar",
     },
     [146536] = {
         name = "Feu follet perdu",
@@ -1956,7 +1965,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Dame Sylvanas Coursevent",
     },
     [146791] = {
-        name = "Forestier-sombre",
+        name = "Forestier-sombre Lyana",
     },
     [146806] = {
         name = "Forestier-sombre Lyana",
@@ -1977,7 +1986,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Rexxar",
     },
     [146937] = {
-        name = "Forestier-sombre",
+        name = "Forestier-sombre Lyana",
     },
     [146939] = {
         name = "Ambassadrice Ligelaube",
@@ -2019,7 +2028,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Rokhan",
     },
     [147293] = {
-        name = "Défenseur da'kani",
+        name = "Grong",
     },
     [147297] = {
         name = "Zekhan",
@@ -2045,6 +2054,18 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [147885] = {
         name = "Anduin Wrynn",
     },
+    [147939] = {
+        name = "Pilote d'élite Tonnerouage",
+    },
+    [147943] = {
+        name = "Capitaine Chape Etincetuyère",
+    },
+    [147950] = {
+        name = "Capitaine de l'Engrenage Gueusécrou",
+    },
+    [147952] = {
+        name = "Fizzi Bricolarc",
+    },
     [148015] = {
         name = "Taelia Fordragon",
     },
@@ -2060,6 +2081,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [148870] = {
         name = "Dorlan Merrien",
     },
+    [149084] = {
+        name = "Marcheur des esprits Ussoh",
+    },
+    [149088] = {
+        name = "Marcheuse des esprits Isahi",
+    },
     [149143] = {
         name = "Nathanos le Flétrisseur",
     },
@@ -2069,11 +2096,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149471] = {
         name = "Forestier-sombre Velonara",
     },
+    [149503] = {
+        name = "Capitaine de l'Engrenage Gueusécrou",
+    },
+    [149528] = {
+        name = "Baine Sabot-de-Sang",
+    },
+    [149529] = {
+        name = "Marcheur des esprits Ussoh",
+    },
     [149612] = {
         name = "Shandris Pennelune",
     },
     [149736] = {
         name = "Image de Mimiron",
+    },
+    [149809] = {
+        name = "Gazleu",
     },
     [149815] = {
         name = "Grizzek Moussemolette",
@@ -2084,14 +2123,47 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149842] = {
         name = "Baine Sabot-de-Sang",
     },
+    [149864] = {
+        name = "Maître-bricoleur Suprétincelle",
+    },
     [149867] = {
         name = "Magni Barbe-de-Bronze",
     },
     [149870] = {
         name = "Grif Coeur-Sauvage",
     },
+    [149877] = {
+        name = "Maître-bricoleur Suprétincelle",
+    },
+    [149904] = {
+        name = "Néri Tranchécaille",
+    },
+    [150086] = {
+        name = "Déviss Voltétincelle",
+    },
     [150101] = {
         name = "Dame Jaina Portvaillant",
+    },
+    [150145] = {
+        name = "Gila Filkistouch",
+    },
+    [150187] = {
+        name = "Nathanos le Flétrisseur",
+    },
+    [150196] = {
+        name = "Première arcaniste Thalyssra",
+    },
+    [150206] = {
+        name = "Télémancien en chef Oculeth",
+    },
+    [150207] = {
+        name = "Lor’themar Theron",
+    },
+    [150208] = {
+        name = "Maître-bricoleur Suprétincelle",
+    },
+    [150209] = {
+        name = "Néri Tranchécaille",
     },
     [150309] = {
         name = "Baine Sabot-de-Sang",
@@ -2168,11 +2240,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150898] = {
         name = "Sanctuaire des Tempêtes",
     },
+    [150956] = {
+        name = "Foreuse cassée",
+    },
     [151000] = {
         name = "Maître-lame Okani",
     },
     [151061] = {
         name = "Mimiron",
+    },
+    [151100] = {
+        name = "Gila Filkistouch",
     },
     [151129] = {
         name = "Sapphronetta Flivvers",
@@ -2195,17 +2273,41 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "Daniss Danse-Fantôme",
     },
+    [151283] = {
+        name = "Jeune navrecorne",
+    },
     [151285] = {
         name = "Mevris Danse-Fantôme",
     },
     [151287] = {
         name = "Telonis",
     },
-    [151309] = {
-        name = "Eclaireur goémlin",
+    [151462] = {
+        name = "Danielle Pêchette",
     },
     [151626] = {
         name = "Chasseur Akana",
+    },
+    [151641] = {
+        name = "Marcheur des esprits Corne-d'Ebène",
+    },
+    [151682] = {
+        name = "Merithra du Rêve",
+    },
+    [151693] = {
+        name = "Merithra du Rêve",
+    },
+    [151695] = {
+        name = "Marcheur des esprits Corne-d'Ebène",
+    },
+    [151704] = {
+        name = "Valithria Marcherêve",
+    },
+    [151741] = {
+        name = "Apprenti Odari",
+    },
+    [151825] = {
+        name = "Merithra du Rêve",
     },
     [151848] = {
         name = "Lor'themar Theron",
@@ -2213,14 +2315,35 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "Télémancien en chef Oculeth",
     },
+    [151887] = {
+        name = "Merithra du Rêve",
+    },
+    [151947] = {
+        name = "Prince Erazmin",
+    },
     [151964] = {
         name = "Marcheur des esprits Corne-d'Ebène",
+    },
+    [151999] = {
+        name = "Jo'nok, rempart de Torcali",
     },
     [152002] = {
         name = "Image de Mimiron",
     },
+    [152047] = {
+        name = "Poën Seldemer",
+    },
+    [152066] = {
+        name = "Première arcaniste Thalyssra",
+    },
     [152084] = {
         name = "Mrrl",
+    },
+    [152095] = {
+        name = "Magni Barbe-de-Bronze",
+    },
+    [152108] = {
+        name = "Néri Tranchécaille",
     },
     [152194] = {
         name = "D.A.M.E.",
@@ -2228,11 +2351,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152206] = {
         name = "Magni Barbe-de-Bronze",
     },
+    [152238] = {
+        name = "Riathia Étoilargent",
+    },
     [152255] = {
         name = "Sef Iwen",
     },
     [152295] = {
         name = "Pascal",
+    },
+    [152365] = {
+        name = "Kalecgos",
+    },
+    [152385] = {
+        name = "Marcheur des esprits Corne-d'Ebène",
+    },
+    [152484] = {
+        name = "Maître-bricoleur Suprétincelle",
     },
     [152489] = {
         name = "Sanctuaire des Tempêtes",
@@ -2252,14 +2387,68 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152497] = {
         name = "Sanctuaire du Brunant",
     },
+    [152504] = {
+        name = "Gazleu",
+    },
+    [152505] = {
+        name = "Skaggit",
+    },
+    [152522] = {
+        name = "Gazleu",
+    },
+    [152578] = {
+        name = "Gazleu",
+    },
+    [152652] = {
+        name = "Gazleu",
+    },
+    [152720] = {
+        name = "Kalecgos",
+    },
     [152747] = {
         name = "Christy Percerouage",
+    },
+    [152783] = {
+        name = "Gazleu",
+    },
+    [152815] = {
+        name = "Magni Barbe-de-Bronze",
+    },
+    [152820] = {
+        name = "Prince Erazmin",
+    },
+    [152845] = {
+        name = "Gazleu",
+    },
+    [152851] = {
+        name = "Prince Erazmin",
+    },
+    [152864] = {
+        name = "Maître-bricoleur Suprétincelle",
+    },
+    [152977] = {
+        name = "Thrall",
+    },
+    [153251] = {
+        name = "Lor'themar Theron",
+    },
+    [153253] = {
+        name = "Dame Jaina Portvaillant",
     },
     [153365] = {
         name = "Reine de l'essaim dos-de-miel",
     },
+    [153385] = {
+        name = "Maître-lame Okani",
+    },
     [153393] = {
         name = "Barry",
+    },
+    [153422] = {
+        name = "Télémancien en chef Oculeth",
+    },
+    [153496] = {
+        name = "Adaru",
     },
     [153509] = {
         name = "Artisan Okata",
@@ -2276,8 +2465,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "Shandris Pennelune",
     },
+    [153670] = {
+        name = "Prince Erazmin",
+    },
+    [153932] = {
+        name = "Genn Grisetête",
+    },
+    [153936] = {
+        name = "Surveillant Hajeer",
+    },
+    [154002] = {
+        name = "Atolia Perlemer",
+    },
     [154023] = {
         name = "Butineuse naissante",
+    },
+    [154143] = {
+        name = "Collectionneur Kojo",
     },
     [154248] = {
         name = "Maître-lame Inowari",
@@ -2291,7 +2495,52 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154464] = {
         name = "Gardien terrestre",
     },
+    [154465] = {
+        name = "Gardien terrestre",
+    },
+    [154514] = {
+        name = "Kelya Tombelune",
+    },
+    [154520] = {
+        name = "Première arcaniste Thalyssra",
+    },
+    [154522] = {
+        name = "Shandris Pennelune",
+    },
+    [154574] = {
+        name = "Kelya Tombelune",
+    },
+    [154601] = {
+        name = "Kelya Tombelune",
+    },
     [154640] = {
         name = "Connétable Tremblelame",
+    },
+    [154660] = {
+        name = "Shandris Pennelune",
+    },
+    [154661] = {
+        name = "Première arcaniste Thalyssra",
+    },
+    [154874] = {
+        name = "Gardien de la Griffe noire",
+    },
+    [155071] = {
+        name = "Shandris Pennelune",
+    },
+    [155325] = {
+        name = "Première arcaniste Thalyssra",
+    },
+    [155482] = {
+        name = "Shandris Pennelune",
+    },
+    [155784] = {
+        name = "Anduin Wrynn",
+    },
+    [155785] = {
+        name = "Dame Jaina Portvaillant",
+    },
+    [155789] = {
+        name = "Lor’themar Theron",
     },
 })

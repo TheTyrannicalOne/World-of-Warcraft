@@ -1,3 +1,4 @@
+local L = BtWQuests.L
 local MAP_ID = 66
 local ACHIEVEMENT_ID = 4930
 local CONTINENT_ID = 12
@@ -1136,7 +1137,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN06, {
 })
 -- @TODO Alliance only for now
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN07, {
-    name = "Shrines",
+    name = L["SHRINES"],
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1380,7 +1381,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN06, {
     range = {1,60},
     items = {
         {
-            name = "Kill Warlocks",
+            name = L["KILL_BURNING_BLADE_WARLOCKS"],
             breadcrumb = true,
             x = 0,
             y = 0,

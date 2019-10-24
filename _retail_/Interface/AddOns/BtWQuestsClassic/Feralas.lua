@@ -1127,7 +1127,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN02, {
 })
 -- Need to take a closer look at this, probably should be attached to the next part
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN03, {
-    name = "Dummy 2 (A)",
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},

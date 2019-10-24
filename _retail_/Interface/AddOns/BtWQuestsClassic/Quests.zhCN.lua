@@ -299,6 +299,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [8309] = {
         name = "追查雕文",
     },
+    [8310] = {
+        name = "破译密码",
+    },
+    [8314] = {
+        name = "揭开秘密",
+    },
     [8318] = {
         name = "秘密交流",
     },
@@ -313,6 +319,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [8323] = {
         name = "真正的信徒",
+    },
+    [8324] = {
+        name = "更多的读物",
     },
     [8470] = {
         name = "木喉熊怪的盟友",
@@ -2377,6 +2386,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [25379] = {
         name = "泰拉尔的陨落",
+    },
+    [25383] = {
+        name = "伊森德雷的别离",
     },
     [25386] = {
         name = "到石槌要塞去",

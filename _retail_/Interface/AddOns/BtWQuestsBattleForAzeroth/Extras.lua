@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_PRIDE_OF_KULTIRAS, {
     name = { -- The Pride of Kul Tiras
         type = "achievement",
@@ -46,7 +47,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_PRIDE_OF_
     },
     rewards = {
         {
-            name = "Siege of Boralus Dungeon Unlocked"
+            name = L["DUNGEON_SIEGE_OF_BORALUS"],
+        },
+        {
+            type = "money",
+            amounts = {
+                7394400, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 4550,
         },
     },
     items = {
@@ -373,6 +387,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_A_NATION_
         type = "quest",
         id = 52151,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1010000, 1026000, 1042000, 1058000, 1074000, 1090000, 1106000, 1122000, 1138000, 1154000, 1170000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                32900, 33200, 33450, 33750, 34000, 34300, 34600, 34850, 35150, 35400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 750,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 425,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "category",
@@ -485,6 +531,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_A_BARGIN_OF_
     completed = {
         type = "quest",
         id = 47229,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1717400, 1752800, 1788200, 1823600, 1859000, 1894400, 1929800, 1965200, 2000600, 2036000, 2071400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                120900, 122000, 123000, 123950, 124950, 126050, 127100, 128200, 129050, 130150, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 785,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -638,7 +711,32 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_ZANDALAR_FOR
     },
     rewards = {
         {
-            name = "King's Rest Dungeon Unlocked"
+            name = L["DUNGEON_KINGS_REST"],
+        },
+        {
+            type = "money",
+            amounts = {
+                582000, 594000, 606000, 618000, 630000, 642000, 654000, 666000, 678000, 690000, 702000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                24700, 24900, 25100, 25300, 25500, 25750, 25950, 26150, 26350, 26550, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 250,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
         },
     },
     items = {
@@ -764,19 +862,18 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_IN_TELDRA
     },
     rewards = {
         {
-            name = BTWQUESTS_WARFRONT_THE_BATTLE_FOR_DARKSHORE,
-            --[[function ()
-                return GetSpellInfo(290253) or "Warfront: The Battle for Darkshore"
-            end,]]
+            name = L["BTWQUESTS_WARFRONT_THE_BATTLE_FOR_DARKSHORE"],
         },
         {
-            name = BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION,
-            -- type = "achievement",
-            -- id = 13251,
-            -- reward = true,
-            -- name = function ()
-            --     return select(11,GetAchievementInfo(13251)) or "'Night Warrior' Night Elf Customization"
-            -- end,
+            name = L["BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION"],
+        },
+        {
+            type = "money",
+            amounts = {
+                1123200, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
         },
     },
     items = {
@@ -864,8 +961,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_HIGH_OVE
     rewards = {
         {
             type = "toy",
-            id = 165791
-        }
+            id = 165791,
+        },
+        {
+            type = "money",
+            amounts = {
+                1638000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     items = {
         {
@@ -1045,6 +1150,35 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_FALLEN_C
         type = "quest",
         id = 51517,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2620800, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 750,
+        },
+        {
+            type = "reputation",
+            id = 530,
+            amount = 1970,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 1970,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             name = {
@@ -1160,6 +1294,30 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_JUSTICE_FOR_
         type = "quest",
         id = 51521,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1216800, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 530,
+            amount = 770,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 770,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1243,8 +1401,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE
     },
     rewards = {
         {
-            name = BTWQUESTS_HERITAGE_OF_THE_SINDOREI,
-        }
+            name = L["BTWQUESTS_HERITAGE_OF_THE_SINDOREI"],
+        },
+        {
+            type = "money",
+            amounts = {
+                1965600, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     range = {110},
     items = {
@@ -1369,8 +1535,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE, {
     },
     rewards = {
         {
-            name = BTWQUESTS_HERITAGE_OF_THE_BRONZEBEARD,
-        }
+            name = L["BTWQUESTS_HERITAGE_OF_THE_BRONZEBEARD"],
+        },
+        {
+            type = "money",
+            amounts = {
+                2176200, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     range = {120},
     items = {
@@ -1495,10 +1669,15 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_TROUBLE_IN_D
             id = 166678,
         },
         {
-            name = BTWQUESTS_WARFRONT_THE_BATTLE_FOR_DARKSHORE,
-            -- name = function ()
-            --     return GetSpellInfo(290253) or "Warfront: The Battle for Darkshore"
-            -- end,
+            name = L["BTWQUESTS_WARFRONT_THE_BATTLE_FOR_DARKSHORE"],
+        },
+        {
+            type = "money",
+            amounts = {
+                1521000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
         },
     },
     items = {
@@ -1602,6 +1781,21 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_NECK_LEVEL, 
         type = "quest",
         id = 54964,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                491400, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 510,
+        },
+    },
     items = {
         {
             type = "quest",
@@ -1673,6 +1867,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_SOMETHING_SO
         {
             type = "pet",
             id = 2526,
+        },
+        {
+            type = "money",
+            amounts = {
+                702000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
         },
     },
     items = {
@@ -1764,14 +1966,22 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_HATI, {
         ids = {54913},
         status = {'active', 'completed'},
     },
-    rewards = {
-        {
-            name = BTWQUESTS_HATI_REBORN,
-        },
-    },
     completed = {
         type = "quest",
         ids = {55195},
+    },
+    rewards = {
+        {
+            name = L["BTWQUESTS_HATI_REBORN"],
+        },
+        {
+            type = "money",
+            amounts = {
+                1123200, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     items = {
         {
@@ -1882,6 +2092,35 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_HORDE_VOLJIN, 
         type = "quest",
         ids = {53782},
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2457000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 2750,
+        },
+        {
+            type = "reputation",
+            id = 530,
+            amount = 2360,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 2360,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -1987,7 +2226,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_HORDE_VOLJIN, 
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_XALATATH, {
-    name = BTWQUESTS_GIFT_OF_NZOTH,
+    name = L["BTWQUESTS_GIFT_OF_NZOTH"],
     category = nil,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120,120},
@@ -2006,9 +2245,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_XALATATH, {
         type = "quest",
         ids = {54126, 53763},
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                936000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 550,
+        },
+    },
     items = {
         {
-            name = BTWQUESTS_GIFT_OF_NZOTH_BREADCRUMB,
+            name = L["BTWQUESTS_GIFT_OF_NZOTH_BREADCRUMB"],
             breadcrumb = true,
             x = 3,
             y = 0,
@@ -2245,8 +2499,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_GNOME_HERITAGE
     },
     rewards = {
         {
-            name = BTWQUESTS_HERITAGE_OF_GNOMEREGAN,
-        }
+            name = L["BTWQUESTS_HERITAGE_OF_GNOMEREGAN"],
+        },
+        {
+            type = "money",
+            amounts = {
+                2925000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     range = {120},
     items = {
@@ -2392,8 +2654,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_TAUREN_HERITAG
     },
     rewards = {
         {
-            name = BTWQUESTS_HERITAGE_OF_THE_SHUHALO,
-        }
+            name = L["BTWQUESTS_HERITAGE_OF_THE_SHUHALO"],
+        },
+        {
+            type = "money",
+            amounts = {
+                1474200, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     range = {120},
     items = {
@@ -2607,7 +2877,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_OTHER_BOTH, {
 BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     {
         type = "header",
-        name = "Alliance Zones",
+        name = L["ALLIANCE_ZONES"],
         restrictions = {
             type = "faction",
             id = BTWQUESTS_FACTION_ID_ALLIANCE,
@@ -2640,7 +2910,7 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
 
     {
         type = "header",
-        name = "Horde Zones",
+        name = L["HORDE_ZONES"],
     },
     {
         type = "category",
@@ -2657,7 +2927,7 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
 
     {
         type = "header",
-        name = "Alliance Zones",
+        name = L["ALLIANCE_ZONES"],
         restrictions = {
             type = "faction",
             id = BTWQUESTS_FACTION_ID_HORDE,
@@ -2690,7 +2960,7 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     
     {
         type = "header",
-        name = "Other",
+        name = L["OTHER"],
     },
     {
         type = "chain",

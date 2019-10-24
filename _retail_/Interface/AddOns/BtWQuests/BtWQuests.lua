@@ -3,6 +3,9 @@ local BtWQuestsCharacters = BtWQuestsCharacters
 
 local L = BtWQuests.L;
 
+BINDING_HEADER_BTWQUESTS = "BtWQuests"
+BINDING_NAME_TOGGLE_BTWQUESTS = L["TOGGLE_BTWQUESTS"]
+
 local BTWQUESTS_CATEGORY_ITEM_WIDTH = 174
 local BTWQUESTS_CATEGORY_ITEM_HEIGHT = 96
 local BTWQUESTS_CATEGORY_ITEM_PADDING = 12
@@ -26,7 +29,7 @@ end
 BtWQuestSettingsData = {
     options = {
         {
-            name = "Show minimap icon",
+            name = L["SHOW_MINIMAP_ICON"],
             value = "minimapShown",
             onChange = function (id, value)
                 BtWQuestsMinimapButton:SetShown(value)
@@ -34,37 +37,37 @@ BtWQuestSettingsData = {
             default = true,
         },
         {
-            name = "Show map pins",
+            name = L["SHOW_MAP_PINS"],
             value = "showMapPins",
             default = false,
         },
         {
-            name = "Show category as grid",
+            name = L["SHOW_CATEGORY_AS_GRID"],
             value = "gridView",
             default = true,
         },
         {
-            name = "Show category headers",
+            name = L["SHOW_CATEGORY_HEADERS"],
             value = "categoryHeaders",
             default = false,
         },
         {
-            name = "Group completed",
+            name = L["GROUP_COMPLETED"],
             value = "filterCompleted",
             default = false,
         },
         {
-            name = "Group ignored",
+            name = L["GROUP_IGNORED"],
             value = "filterIgnored",
             default = false,
         },
         {
-            name = "Show quest chain tooltip",
+            name = L["SHOW_QUEST_CHAIN_TOOLTIP"],
             value = "showChainTooltip",
             default = true,
         },
         {
-            name = "Spoiler free",
+            name = L["SPOILER_FREE"],
             value = "hideSpoilers",
             default = false,
         },
@@ -127,20 +130,28 @@ end
 
 BtWQuestsMixin = {}
 function BtWQuestsMixin:GetCharacter()
-    return self.Character or BtWQuestsCharacters:GetPlayer()
+    if not self.Character then
+        self:SelectCharacter(BtWQuestsCharacters:GetPlayer());
+    end
+    return self.Character
 end
 function BtWQuestsMixin:SelectCharacter(name, realm)
-    local key
-    if realm == nil then
-        key = name
+    local character
+    if type(name) == "table" then
+        character = name;
     else
-        key = name .. "-" .. realm
-    end
+        local key
+        if realm == nil then
+            key = name
+        else
+            key = name .. "-" .. realm
+        end
 
-    local character = BtWQuestsCharacters:GetCharacter(key)
+        character = BtWQuestsCharacters:GetCharacter(key)
+    end
     if character ~= nil then
         self.Character = character
-        UIDropDownMenu_SetText(self.CharacterDropDown, key)
+        UIDropDownMenu_SetText(self.CharacterDropDown, character:GetDisplayName())
 
         self:Refresh()
     end
@@ -546,12 +557,12 @@ function BtWQuestsMixin:DisplayCurrentExpansion(scrollTo)
 
     local expansion = BtWQuestsDatabase:GetExpansionByID(self:GetExpansion());
     if expansion == nil then
-        print(BTWQUESTS_NO_EXPANSION_ERROR)
+        print(L["BTWQUESTS_NO_EXPANSION_ERROR"])
         return;
     end
     local items = expansion:GetItemList(self:GetCharacter(), not categoryHeaders, filterCompleted, filterIgnored)
     if #items == 0 then -- Somehow selected an empty expansion, probably means all the BtWQuests modules are disabled
-        print(BTWQUESTS_NO_EXPANSION_ERROR)
+        print(L["BTWQUESTS_NO_EXPANSION_ERROR"])
     end
     self:DisplayItemList(items, scrollTo)
 end
@@ -625,7 +636,10 @@ function BtWQuestsMixin:OnLoad()
     self:RegisterEvent("ZONE_CHANGED_INDOORS")
     self:RegisterEvent("ZONE_CHANGED_NEW_AREA")
     
-	self.TitleText:SetText(BTWQUESTS_QUEST_JOURNAL);
+    self:RegisterEvent("QUEST_SESSION_JOINED")
+    self:RegisterEvent("QUEST_SESSION_LEFT")
+    
+	self.TitleText:SetText(L["BTWQUESTS_QUEST_JOURNAL"]);
     SetPortraitToTexture(self.portrait, "Interface\\QuestFrame\\UI-QuestLog-BookIcon");
     
     -- Updated the NineSlice frame for our extra buttons
@@ -682,6 +696,21 @@ function BtWQuestsMixin:OnEvent(event, ...)
         if self:IsShown() then
             self:UpdateHereButton()
         end
+    elseif event == "QUEST_SESSION_JOINED" or event == "QUEST_SESSION_LEFT" then
+        -- Both the current character and party sync are considered "the player"
+        if self:GetCharacter():IsPlayer() then
+            self.Character = nil;
+            self:GetCharacter();
+            if self:GetChain() ~= nil then
+                self:UpdateCurrentChain()
+            elseif self:GetCategory() ~= nil then
+                self:DisplayCurrentCategory()
+            elseif self:GetExpansion() ~= nil then
+                self:DisplayCurrentExpansion()
+            else
+                self:DisplayExpansionList()
+            end
+        end
     end
 end
 function BtWQuestsMixin:OnDragStart()
@@ -730,7 +759,7 @@ function BtWQuestsMixin:OnShow()
     self:UpdateHereButton()
 
     if not self.initialized then
-        self:SelectCharacter(UnitName("player"), GetRealmName())
+        self:SelectCharacter(BtWQuestsCharacters:GetPlayer())
 
         self.navBar:EnableExpansions(BtWQuestsDatabase:HasMultipleExpansion())
 
@@ -843,7 +872,7 @@ function BtWQuests_AddOpenChainMenuItem(self, questID)
     local item = BtWQuestsDatabase:GetQuestItem(questID, BtWQuestsCharacters:GetPlayer())
     if item then
         local info = UIDropDownMenu_CreateInfo()
-        info.text = BTWQUESTS_OPEN_QUEST_CHAIN
+        info.text = L["BTWQUESTS_OPEN_QUEST_CHAIN"]
         info.func = function(self, questID, item)
             BtWQuestsFrame:SelectCharacter(UnitName("player"), GetRealmName())
             BtWQuestsFrame:SelectItem(item.item)

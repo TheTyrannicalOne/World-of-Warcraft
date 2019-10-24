@@ -109,11 +109,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_FIRST_ALL
                     },
                 },
                 {
-                    name = "Go to Thassarian",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4106, 0.7045, "Thassarian")
-                    end,
+                    type = "npc",
+                    id = 44453,
+                    -- name = "Go to Thassarian",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4106, 0.7045, "Thassarian")
+                    -- end,
                 },
             },
             x = 3,
@@ -256,11 +258,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_FIRST_HOR
 					},
 				},
                 {
-                    name = "Go to Koltira Deathweaver",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4777, 0.6521, "Koltira Deathweaver")
-                    end,
+                    type = "npc",
+                    id = 44452,
+                    -- name = "Go to Koltira Deathweaver",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4777, 0.6521, "Koltira Deathweaver")
+                    -- end,
                 },
             },
             x = 3,
@@ -372,11 +376,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_PEACE_ALL
     range = {35,60},
     items = {
         {
-            name = "Go to Commander Ashlam Valorfist",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4270, 0.8401, "Commander Ashlam Valorfist")
-            end,
+            type = "npc",
+            id = 45165,
+            -- name = "Go to Commander Ashlam Valorfist",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4270, 0.8401, "Commander Ashlam Valorfist")
+            -- end,
             x = 3,
             y = 0,
             connections = {
@@ -631,11 +637,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_SECOND_AL
             },
         },
         {
-            name = "Go to Durnt Brightfalcon",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5046, 0.5270, "Durnt Brightfalcon")
-            end,
+            type = "npc",
+            id = 45012,
+            -- name = "Go to Durnt Brightfalcon",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5046, 0.5270, "Durnt Brightfalcon")
+            -- end,
             x = 3,
             y = 1,
             connections = {
@@ -751,11 +759,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_SECOND_HO
             },
         },
         {
-            name = "Go to Damion Steel",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4925, 0.5314, "Damion Steel")
-            end,
+            type = "npc",
+            id = 45013,
+            -- name = "Go to Damion Steel",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4925, 0.5314, "Damion Steel")
+            -- end,
             x = 3,
             y = 1,
             connections = {

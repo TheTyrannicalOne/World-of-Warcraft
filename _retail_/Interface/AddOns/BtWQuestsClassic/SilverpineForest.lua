@@ -51,11 +51,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILVERPINE_FOREST_FORSAKEN_HI
 					},
 				},
 				{
-					name = "Go to Grand Executor Mortuus",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5741, 0.1013, "Grand Executor Mortuus")
-					end,
+					type = "npc",
+					id = 44615,
+					-- name = "Go to Grand Executor Mortuus",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5741, 0.1013, "Grand Executor Mortuus")
+					-- end,
 				}
 			},
 			x = 3,

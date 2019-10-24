@@ -5447,6 +5447,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54639] = {
         name = "Ein Signal vom Sturmgipfel",
     },
+    [54640] = {
+        name = "Gnomen est Omen",
+    },
+    [54641] = {
+        name = "Für Gnomeregan!",
+    },
     [54642] = {
         name = "F.L.U.G.-bereit",
     },
@@ -5501,8 +5507,35 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54754] = {
         name = "Für die Königin",
     },
+    [54759] = {
+        name = "Wenn Geister flüstern",
+    },
+    [54760] = {
+        name = "Die Geistwandler",
+    },
+    [54761] = {
+        name = "Geisterführer",
+    },
+    [54762] = {
+        name = "Ein kleiner Rückzugsort",
+    },
+    [54763] = {
+        name = "Die andere Seite",
+    },
+    [54764] = {
+        name = "Dorf in Bedrängnis",
+    },
+    [54765] = {
+        name = "Dank dem Geisterführer",
+    },
+    [54766] = {
+        name = "Dem Ruf gefolgt",
+    },
     [54787] = {
         name = "Gasmaskerade",
+    },
+    [54850] = {
+        name = "Operation: Troggageddon",
     },
     [54851] = {
         name = "Segen der Gezeiten",
@@ -5669,6 +5702,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55101] = {
         name = "Schrottplatztüfteleien für jedermann",
     },
+    [55103] = {
+        name = "Ideen kommen von überall her",
+    },
     [55116] = {
         name = "Entziffereien",
     },
@@ -5828,8 +5864,20 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "In den Traumpfad",
     },
+    [55393] = {
+        name = "Die Leere ausradieren",
+    },
+    [55394] = {
+        name = "Smaragdene Splitter",
+    },
+    [55395] = {
+        name = "Schließt Eure Augen nicht",
+    },
     [55396] = {
         name = "Der Stoff, aus dem die Träume sind",
+    },
+    [55397] = {
+        name = "Bevor ich erwache",
     },
     [55398] = {
         name = "Das lange Erwachen",
@@ -5845,6 +5893,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55462] = {
         name = "Ruf der Reisenden",
+    },
+    [55465] = {
+        name = "Wir müssen tiefer hinein",
     },
     [55469] = {
         name = "Nach Zin-Azshari",
@@ -5875,6 +5926,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55500] = {
         name = "Freundesrettung",
+    },
+    [55503] = {
+        name = "Das Terrorhorn und der Saurid",
     },
     [55504] = {
         name = "Wegschreine von Zuldazar",
@@ -6044,6 +6098,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55731] = {
         name = "Die Armeen meines Vaters",
     },
+    [55732] = {
+        name = "Eine alte Narbe",
+    },
     [55734] = {
         name = "Bohrmaschinenbau",
     },
@@ -6052,6 +6109,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55736] = {
         name = "Willkommen beim Widerstand",
+    },
+    [55737] = {
+        name = "Zur azerichtigen Zeit",
+    },
+    [55752] = {
+        name = "Gemeinsam sind wir stark",
     },
     [55753] = {
         name = "Robo-Raubkopie",
@@ -6182,6 +6245,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Eine gehärtete Klinge",
     },
+    [56167] = {
+        name = "Hochlanduntersuchung",
+    },
     [56168] = {
         name = "Fabriküberholt",
     },
@@ -6253,6 +6319,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [56248] = {
         name = "Schatzgeschichten",
+    },
+    [56267] = {
+        name = "Geflüster von N'Zoth",
     },
     [56304] = {
         name = "Hoch geboren, tief gefallen",
@@ -6344,6 +6413,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56429] = {
         name = "Mit dem Rücken zur Wand",
     },
+    [56494] = {
+        name = "Der Abend vor der Schlacht",
+    },
+    [56495] = {
+        name = "Sie ziehen gegen uns zu Felde",
+    },
+    [56496] = {
+        name = "Der Abend vor der Schlacht",
+    },
     [56504] = {
         name = "Furorions Tagebuch",
     },
@@ -6368,19 +6446,70 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56644] = {
         name = "Mit dem Rücken zur Wand",
     },
+    [56719] = {
+        name = "Nicht meins",
+    },
     [56739] = {
         name = "Die Macht der Anbetung",
     },
     [56741] = {
         name = "Der Speer des Schicksals",
     },
-    [56803] = {
-        name = "Nur ein Freund",
+    [56833] = {
+        name = "Anführer der Horde",
+    },
+    [56979] = {
+        name = "Rettung der Belagerung",
+    },
+    [56980] = {
+        name = "Bereits unter uns",
+    },
+    [56981] = {
+        name = "Strategischer Einsatz",
+    },
+    [56982] = {
+        name = "Vor den Toren von Orgrimmar",
+    },
+    [56993] = {
+        name = "Der Preis des Sieges",
+    },
+    [57002] = {
+        name = "Alter Soldat",
+    },
+    [57005] = {
+        name = "Freunde werden",
     },
     [57006] = {
         name = "Ein würdiger Verbündeter",
     },
     [57010] = {
         name = "Geballte Macht",
+    },
+    [57088] = {
+        name = "Nicht meins",
+    },
+    [57090] = {
+        name = "Rettung der Belagerung",
+    },
+    [57091] = {
+        name = "Bereits unter uns",
+    },
+    [57092] = {
+        name = "Strategischer Einsatz",
+    },
+    [57093] = {
+        name = "Vor den Toren von Orgrimmar",
+    },
+    [57094] = {
+        name = "Der Preis des Sieges",
+    },
+    [57095] = {
+        name = "Alter Soldat",
+    },
+    [57126] = {
+        name = "Glück und Segen...",
+    },
+    [57198] = {
+        name = "Pflichtgefühl",
     },
 })

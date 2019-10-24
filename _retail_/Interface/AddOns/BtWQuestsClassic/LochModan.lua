@@ -52,11 +52,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_ROAD_TO_THELSA
 			y = 0,
 		},
 		{
-			name = "Go to Dakk Blunderblast",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3602, 0.4426, "Dakk Blunderblast")
-			end,
+			type = "npc",
+			id = 1777,
+			-- name = "Go to Dakk Blunderblast",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3602, 0.4426, "Dakk Blunderblast")
+			-- end,
 			x = 0,
 			y = 1,
 			connections = {
@@ -77,11 +79,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_ROAD_TO_THELSA
 					},
 				},
 				{
-					name = "Go to Mountaineer Kadrell",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3507, 0.4658, "Mountaineer Kadrell")
-					end,
+					type = "npc",
+					id = 1340,
+					-- name = "Go to Mountaineer Kadrell",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3507, 0.4658, "Mountaineer Kadrell")
+					-- end,
 				}
 			},
 			x = 2,
@@ -91,11 +95,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_ROAD_TO_THELSA
 			},
 		},
 		{
-			name = "Go to Vidra Hearthstove",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3482, 0.4928, "Vidra Hearthstove")
-			end,
+			type = "npc",
+			id = 1963,
+			-- name = "Go to Vidra Hearthstove",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3482, 0.4928, "Vidra Hearthstove")
+			-- end,
 			x = 4,
 			y = 1,
 			connections = {
@@ -103,11 +109,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_ROAD_TO_THELSA
 			},
 		},
 		{
-			name = "Go to the Wanted! sign",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3730, 0.4651, "Wanted! sign")
-			end,
+			type = "object",
+			id = 256,
+			-- name = "Go to the Wanted! sign",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3730, 0.4651, "Wanted! sign")
+			-- end,
 			x = 6,
 			y = 1,
 			connections = {
@@ -180,11 +188,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_AXIS_OF_AWFUL,
 					},
 				},
 				{
-					name = "Go to Mountaineer Stormpike",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2545, 0.1796, "Mountaineer Stormpike")
-					end,
+					type = "npc",
+					id = 1343,
+					-- name = "Go to Mountaineer Stormpike",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2545, 0.1796, "Mountaineer Stormpike")
+					-- end,
 				},
 			},
 			x = 3,
@@ -315,9 +325,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_TWILIGHT_THREATS, 
 		{
 			type = "quest",
 			id = 27033,
-			name = function ()
-				return string.format("%s until %s", BtWQuests_GetChainName(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_FARSTRIDER_LODGE), BtWQuests_GetQuestName(27033))
-			end
 		}
 	},
 	completed = {
@@ -460,11 +467,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_FARSTRIDER_LOD
 					},
 				},
 				{
-					name = "Go to Marek Ironheart",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8176, 0.6166, "Marek Ironheart")
-					end,
+					type = "npc",
+					id = 1154,
+					-- name = "Go to Marek Ironheart",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8176, 0.6166, "Marek Ironheart")
+					-- end,
 				},
 			},
 			x = 0,
@@ -474,11 +483,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_FARSTRIDER_LOD
             },
 		},
 		{
-			name = "Go to Safety Warden Pipsy",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8278, 0.6347, "Safety Warden Pipsy")
-			end,
+			type = "npc",
+			id = 44859,		
+			-- name = "Go to Safety Warden Pipsy",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8278, 0.6347, "Safety Warden Pipsy")
+			-- end,
 			x = 2,
 			y = 0,
 			connections = {
@@ -486,11 +497,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_FARSTRIDER_LOD
             },
 		},
 		{
-			name = "Go to Bingles Blastenheimer",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8165, 0.6475, "Bingles Blastenheimer")
-			end,
+			type = "npc",
+			id = 6577,
+			-- name = "Go to Bingles Blastenheimer",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8165, 0.6475, "Bingles Blastenheimer")
+			-- end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -498,11 +511,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_THE_FARSTRIDER_LOD
             },
 		},
 		{
-			name = "Go to Daryl the Younglin",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8349, 0.6537, "Daryl the Youngling")
-			end,
+			type = "npc",
+			id = 1187,
+			-- name = "Go to Daryl the Younglin",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8349, 0.6537, "Daryl the Youngling")
+			-- end,
 			x = 6,
 			y = 0,
 			connections = {
@@ -659,11 +674,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_CHAIN1, {
 					},
 				},
 				{
-					name = "Go to Pilot Hammerfoot",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1401, 0.5649, "Pilot Hammerfoot")
-					end,
+					type = "npc",
+					id = 1960,
+					-- name = "Go to Pilot Hammerfoot",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1401, 0.5649, "Pilot Hammerfoot")
+					-- end,
 				}
 			},
 			x = 3,
@@ -747,6 +764,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_CHAIN2, {
 	},
 	items = {
 		{
+			type = "npc",
+			id = 1089,
+			-- name = "Go to Mountaineer Cobbleflint",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2333, 0.7492, "Mountaineer Cobbleflint")
+			-- end,
+			x = 2,
+			y = 0,
+			connections = {
+                2,
+            },
+		},
+		{
 			variations = {
 				{
 					type = "quest",
@@ -758,25 +789,15 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_CHAIN2, {
 					},
 				},
 				{
-					name = "Go to Captain Rugelfuss",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2338, 0.7505, "Captain Rugelfuss")
-					end,
+					type = "npc",
+					id = 1092,
+					-- name = "Go to Captain Rugelfuss",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2338, 0.7505, "Captain Rugelfuss")
+					-- end,
 				},
 			},
-			x = 2,
-			y = 0,
-			connections = {
-                2,
-            },
-		},
-		{
-			name = "Go to Mountaineer Cobbleflint",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2333, 0.7492, "Mountaineer Cobbleflint")
-			end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -897,11 +918,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_CHAIN3, {
             },
 		},
 		{
-			name = "Go to Stolen Explorers' League Document",
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6170, 0.7318, "Stolen Explorers' League Document")
-			end,
-			breadcrumb = true,
+			type = "object",
+			id = 194388,
+			-- name = "Go to Stolen Explorers' League Document",
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6170, 0.7318, "Stolen Explorers' League Document")
+			-- end,
+			-- breadcrumb = true,
 			aside = true,
 			x = 5,
 			y = 1,
@@ -910,11 +933,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_CHAIN3, {
             },
 		},
 		{
-			name = "Go to Stolen Explorers' League Document",
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6811, 0.6614, "Stolen Explorers' League Document")
-			end,
-			breadcrumb = true,
+			type = "object",
+			id = 194389,
+			-- name = "Go to Stolen Explorers' League Document",
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6811, 0.6614, "Stolen Explorers' League Document")
+			-- end,
+			-- breadcrumb = true,
 			aside = true,
 			x = 1,
 			y = 2,

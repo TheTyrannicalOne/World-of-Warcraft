@@ -5,6 +5,24 @@ if GetLocale() ~= "esMX" then
 end
 
 BtWQuestsDatabase:UpdateObjectsTable({
+    [61] = {
+        name = "Una tumba erosionada",
+    },
+    [256] = {
+        name = "¡Se busca!",
+    },
+    [2713] = {
+        name = "Tablón de Se busca",
+    },
+    [3972] = {
+        name = "SE BUSCA",
+    },
+    [20992] = {
+        name = "Escudo negro",
+    },
+    [142195] = {
+        name = "Mapa de batalla de los Zarpaleña",
+    },
     [161521] = {
         name = "Equipo de investigación",
     },
@@ -16,6 +34,15 @@ BtWQuestsDatabase:UpdateObjectsTable({
     },
     [186426] = {
         name = "Cartel de Se busca",
+    },
+    [187273] = {
+        name = "Huella de casco sospechosa",
+    },
+    [194388] = {
+        name = "Documento de la Liga de Expedicionarios robado",
+    },
+    [194389] = {
+        name = "Documento de la Liga de Expedicionarios robado",
     },
     [195433] = {
         name = "Tablillas antiguas",
@@ -41,11 +68,23 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [202407] = {
         name = "Cofre de Rascadunas",
     },
+    [202474] = {
+        name = "Cofre antediluviano",
+    },
+    [202598] = {
+        name = "Desatascador asqueroso grande",
+    },
     [202975] = {
         name = "Letrina sumergida",
     },
     [203134] = {
         name = "Pedestal vacío",
+    },
+    [203186] = {
+        name = "¡FUERA!",
+    },
+    [204406] = {
+        name = "Botella semienterrada",
     },
     [205332] = {
         name = "Cartel de Se busca",
@@ -55,5 +94,14 @@ BtWQuestsDatabase:UpdateObjectsTable({
     },
     [206336] = {
         name = "Losa de mármol",
+    },
+    [206585] = {
+        name = "Tótem de Ruumbo",
+    },
+    [207104] = {
+        name = "Bomba de control maestro",
+    },
+    [207179] = {
+        name = "Caldera de Nevada",
     },
 })

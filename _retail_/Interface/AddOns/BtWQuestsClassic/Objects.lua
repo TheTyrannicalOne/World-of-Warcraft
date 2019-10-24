@@ -1,6 +1,53 @@
 ----- AUTO GENERATED - DO NOT EDIT
 
 BtWQuestsDatabase:AddObjectsTable({
+    [61] = {
+        name = "A Weathered Grave",
+        locations = {
+            [47] = {
+                {
+                    x = 0.17716,
+                    y = 0.290734,
+                },
+            },
+        },
+    },
+    [256] = {
+        name = "Wanted!",
+        locations = {
+            [48] = {
+                {
+                    x = 0.373142,
+                    y = 0.465052,
+                },
+            },
+        },
+    },
+    [2713] = {
+        name = "Wanted Board",
+        locations = {
+            [14] = {
+                {
+                    x = 0.402,
+                    y = 0.49,
+                },
+            },
+        },
+    },
+    [3972] = {
+        name = "WANTED",
+        locations = {
+            [10] = {
+                {
+                    x = 0.683,
+                    y = 0.713,
+                },
+            },
+        },
+    },
+    [20992] = {
+        name = "Black Shield",
+    },
     [142195] = {
         name = "Woodpaw Battle Map",
         locations = {
@@ -63,6 +110,28 @@ BtWQuestsDatabase:AddObjectsTable({
                 {
                     x = 0.296974,
                     y = 0.47635,
+                },
+            },
+        },
+    },
+    [194388] = {
+        name = "Stolen Explorers' League Document",
+        locations = {
+            [48] = {
+                {
+                    x = 0.616,
+                    y = 0.731,
+                },
+            },
+        },
+    },
+    [194389] = {
+        name = "Stolen Explorers' League Document",
+        locations = {
+            [48] = {
+                {
+                    x = 0.681,
+                    y = 0.66,
                 },
             },
         },
@@ -209,6 +278,17 @@ BtWQuestsDatabase:AddObjectsTable({
                 {
                     x = 0.6497,
                     y = 0.4936,
+                },
+            },
+        },
+    },
+    [204406] = {
+        name = "Half-Buried Bottle",
+        locations = {
+            [210] = {
+                {
+                    x = 0.485153,
+                    y = 0.810011,
                 },
             },
         },

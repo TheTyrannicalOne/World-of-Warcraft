@@ -1,9 +1,6 @@
-local L = {};
-setmetatable(L, {
-    __index = function (self, key)
-        return key;
-    end,
-});
+local BtWQuests = BtWQuests;
+local L = BtWQuests.L;
+local OUTDATED_LEVEL = 110;
 
 local format = string.format;
 
@@ -573,11 +570,11 @@ local ObjectMixin = CreateFromMixins(NPCMixin);
 local ChainMixin = CreateFromMixins(DataMixin);
 function ChainMixin:GetSubtext(character, small)
     if self:IsCompleted(character) then
-        return BTWQUESTS_COMPLETED
+        return L["BTWQUESTS_COMPLETED"]
     elseif self:IsActive(character) then
-        return BTWQUESTS_ACTIVE
+        return L["BTWQUESTS_ACTIVE"]
     elseif self:IsAvailable(character) then
-        return BTWQUESTS_AVAILABLE
+        return L["BTWQUESTS_AVAILABLE"]
     end
 end
 function ChainMixin:GetLink()
@@ -645,13 +642,25 @@ function ChainMixin:GetListImage()
     return self.listImage.texture, unpack(self.listImage.texCoords)
 end
 function ChainMixin:GetItem(index)
-    local index = tonumber(index)
+    local index = tonumber(index);
     if index == nil or self.items[index] == nil then
-        return nil
+        return nil;
     end
 
-    local item = self.items[index]
-    return self.database:CreateItem(index, item, self, self)
+    local item = self.items[index];
+    local result = self.database:CreateItem(index, item, self, self);
+
+    if result:IsEmbed() then
+        local connections = result:GetConnections();
+        if connections then
+            if connections[1] ~= nil and type(connections[1]) ~= "table" then
+                connections[result:GetNumItems()] = {connections[1]};
+                connections[1] = nil;
+            end
+        end
+    end
+
+    return result;
 end
 function ChainMixin:GetNextItem(character)
     for i = 1,self:GetNumItems() do
@@ -724,17 +733,17 @@ function CategoryMixin:GetProgress(character)
 end
 function CategoryMixin:GetSubtext(character, small)
     if self:IsCompleted() then
-        return BTWQUESTS_COMPLETED
+        return L["BTWQUESTS_COMPLETED"]
     end
 
     local majorProgress, majorTotal, minorProgress, minorTotal = self:GetProgress()
 
     if minorTotal == nil then
-        return string.format(BTWQUESTS_PROGRESS, majorProgress, majorTotal)
+        return string.format(L["BTWQUESTS_PROGRESS"], majorProgress, majorTotal)
     elseif small then
-        return string.format(BTWQUESTS_PROGRESS, minorProgress + majorProgress, minorTotal + majorTotal)
+        return string.format(L["BTWQUESTS_PROGRESS"], minorProgress + majorProgress, minorTotal + majorTotal)
     else
-        return string.format(BTWQUESTS_PROGRESS_SIDE, majorProgress, majorTotal, minorProgress + majorProgress, minorTotal + majorTotal)
+        return string.format(L["BTWQUESTS_PROGRESS_SIDE"], majorProgress, majorTotal, minorProgress + majorProgress, minorTotal + majorTotal)
     end
 end
 function CategoryMixin:GetExpansion()
@@ -813,7 +822,7 @@ function CategoryMixin:GetItemList(character, noHeaders, filterCompleted, filter
 
     if #major > 0 then
         if not noHeaders then
-            table.insert(results, self.database:CreateItem(-1, {type = "header", name = BTWQUESTS_MAJOR}, self, self))
+            table.insert(results, self.database:CreateItem(-1, {type = "header", name = L["BTWQUESTS_MAJOR"]}, self, self))
         end
 
         for _,item in ipairs(major) do
@@ -827,7 +836,7 @@ function CategoryMixin:GetItemList(character, noHeaders, filterCompleted, filter
 
     if #completed > 0 then
         if not noHeaders then
-            table.insert(results, self.database:CreateItem(-1, {type = "header", name = BTWQUESTS_COMPLETED}, self, self))
+            table.insert(results, self.database:CreateItem(-1, {type = "header", name = L["BTWQUESTS_COMPLETED"]}, self, self))
         end
 
         for _,item in ipairs(completed) do
@@ -837,7 +846,7 @@ function CategoryMixin:GetItemList(character, noHeaders, filterCompleted, filter
 
     if #ignored > 0 then
         if not noHeaders then
-            table.insert(results, self.database:CreateItem(-1, {type = "header", name = BTWQUESTS_IGNORED}, self, self))
+            table.insert(results, self.database:CreateItem(-1, {type = "header", name = L["BTWQUESTS_IGNORED"]}, self, self))
         end
 
         for _,item in ipairs(ignored) do
@@ -1320,13 +1329,40 @@ end
 function ItemMixin:HasConnections(database, item)
     return item.connections and #item.connections > 0
 end
-function ItemMixin:GetConnection(database, item, index)
+function ItemMixin:GetConnection(database, item, index, overrideConnections, overrideChain)
     local index = tonumber(index)
-    if index == nil or item.connections == nil or item.connections[index] == nil then
-        return nil;
+    if overrideConnections then
+        local connections = overrideConnections;
+        if index == nil or connections == nil or connections[index] == nil then
+            return nil;
+        end
+    
+        local connection = tostring(connections[index]);
+        local match = string.gmatch(connection, "[^%.]+");
+        local result = overrideChain:GetItem(tonumber(match()));
+        for value in match do
+            result = result:GetItem(tonumber(value));
+        end
+    
+        return result;
+    else
+        local connections = item.connections;
+        if index == nil or connections == nil or connections[index] == nil then
+            return nil;
+        end
+    
+        local connection = tostring(connections[index]);
+        local match = string.gmatch(connection, "[^%.]+");
+        local result = self:GetRoot(database, item):GetItem(item.index + tonumber(match()));
+        for value in match do
+            result = result:GetItem(tonumber(value));
+        end
+    
+        return result;
     end
-
-    return self:GetRoot(database, item):GetItem(item.index + item.connections[index]);
+end
+function ItemMixin:GetConnections(database, item)
+    return item.connections;
 end
 function ItemMixin:GetAtlas(database, item)
     return item.atlas
@@ -1356,12 +1392,6 @@ function QuestItemMixin:GetLink(database, item)
     end
 
     return item.link
-end
-function QuestItemMixin:IsCompleted(database, item, character)
-    return character:IsQuestCompleted(self:GetID(database, item))
-end
-function QuestItemMixin:IsActive(database, item, character)
-    return character:IsQuestActive(self:GetID(database, item))
 end
 function QuestItemMixin:OnClick(database, item, character, button, frame, tooltip)
     if ChatEdit_TryInsertChatLink(self:GetLink(database, item)) then
@@ -1497,6 +1527,12 @@ function ChainItemMixin:GetListImage(database, item)
 
     return item.listImage.texture, unpack(item.listImage.texCoords)
 end
+function ChainItemMixin:GetItem(database, item, index)
+    return self:GetTarget(database, item):GetItem(index);
+end
+function ChainItemMixin:GetNumItems(database, item)
+    return self:GetTarget(database, item):GetNumItems();
+end
 function ChainItemMixin:OnClick(database, item, character, button, frame, tooltip)
     if BtWQuests_TryInsertChatLink(self:GetLink(database, item)) then
         return
@@ -1525,26 +1561,13 @@ local MissionItemMixin = CreateFromMixins(ItemMixin);
 function MissionItemMixin:IsBreadcrumb()
     return true
 end
-function MissionItemMixin:IsAvailable()
-    local mission = C_Garrison.GetBasicMissionInfo(item.id or item.ids[1])
-
-    return mission ~= nil
-end
-function MissionItemMixin:IsActive()
-    local mission = C_Garrison.GetBasicMissionInfo(item.id or item.ids[1])
-
-    return mission and mission.inProgress or false
-end
-function MissionItemMixin:IsCompleted()
-    return false
-end
 
 local NPCItemMixin = CreateFromMixins(ItemMixin);
 function NPCItemMixin:GetTargetType()
     return "npc"
 end
 function NPCItemMixin:GetName(database, item, character)
-    return string.format(BTWQUESTS_GO_TO, ItemMixin.GetName(self, database, item, character))
+    return string.format(L["BTWQUESTS_GO_TO"], ItemMixin.GetName(self, database, item, character))
 end
 function NPCItemMixin:IsBreadcrumb(database, item, character)
     if item.breadcrumb ~= nil then
@@ -1552,27 +1575,6 @@ function NPCItemMixin:IsBreadcrumb(database, item, character)
     end
 
     return true
-end
-function NPCItemMixin:IsAvailable(database, item, character)
-    if item.prerequisites ~= nil then
-        return database:EvalRequirement(item.completed, item, character);
-    end
-
-    return false
-end
-function NPCItemMixin:IsActive(database, item, character)
-    if item.active ~= nil then
-        return database:EvalRequirement(item.completed, item, character);
-    end
-
-    return false
-end
-function NPCItemMixin:IsCompleted(database, item, character)
-    if item.completed ~= nil then
-        return database:EvalRequirement(item.completed, item, character);
-    end
-
-    return false
 end
 function NPCItemMixin:GetLocation(database, item, character, ...)
     if item.locations ~= nil then
@@ -1595,16 +1597,12 @@ end
 
 local KillItemMixin = CreateFromMixins(NPCItemMixin);
 function KillItemMixin:GetName(database, item, character)
-    local id = self:GetID(database, item, character);
-    local name = database:GetData("npc", id):GetName();
-    return string.format(BTWQUESTS_KILL, name);
+    return string.format(L["BTWQUESTS_KILL"], ItemMixin.GetName(self, database, item, character))
 end
 
 local TalkItemMixin = CreateFromMixins(NPCItemMixin);
 function TalkItemMixin:GetName(database, item, character)
-    local id = self:GetID(database, item, character);
-    local name = database:GetData("npc", id):GetName();
-    return string.format(BTWQUESTS_TALK_TO, name);
+    return string.format(L["BTWQUESTS_TALK_TO"], ItemMixin.GetName(self, database, item, character))
 end
 
 local ObjectItemMixin = CreateFromMixins(NPCItemMixin);
@@ -1614,7 +1612,7 @@ end
 
 local LootItemMixin = CreateFromMixins(ObjectItemMixin);
 function LootItemMixin:GetName(database, item, character)
-    return string.format(BTWQUESTS_LOOT, ItemMixin.GetName(self, database, item, character))
+    return string.format(L["BTWQUESTS_LOOT"], ItemMixin.GetName(self, database, item, character))
 end
 
 local LevelItemMixin = CreateFromMixins(ItemMixin);
@@ -1623,7 +1621,7 @@ function LevelItemMixin:GetName(database, item, character)
         return ItemMixin.GetName(self, database, item, character);
     end
 
-    return string.format(L["Level to %d"], item.level);
+    return string.format(L["LEVEL_TO"], item.level);
 end
 function LevelItemMixin:IsCompleted(database, item, character)
     if item.atmost then
@@ -1707,7 +1705,7 @@ function ReputationItemMixin:GetName(database, item, character, variation)
 
     local factionName, standing, barMin, _, value = (character or BtWQuestsCharacters:GetPlayer()):GetFactionInfoByID(item.id)
     if factionName == nil then
-        factionName = "Unknown"
+        factionName = L["UNKNOWN"]
     end
 
     if item.standing == nil then
@@ -1716,9 +1714,9 @@ function ReputationItemMixin:GetName(database, item, character, variation)
             -- if character:IsRace(BTWQUESTS_RACE_ID_HUMAN) then
             --     amount = amount * 1.1
             -- end
-            name = string.format("%s reputation with %s", amount, factionName)
+            name = string.format(L["REPUTATION_WITH"], amount, factionName)
         elseif variation == "reward" or variation == "prerequisite" then
-            name = string.format(BTWQUESTS_PREFIX, BTWQUESTS_FACTION, factionName)
+            name = string.format(L["BTWQUESTS_PREFIX"], L["BTWQUESTS_FACTION"], factionName)
         else
             name = factionName;
         end
@@ -1727,9 +1725,9 @@ function ReputationItemMixin:GetName(database, item, character, variation)
         local standingText = getglobal("FACTION_STANDING_LABEL" .. item.standing .. (gender == 3 and "_FEMALE" or ""))
         
         if item.amount ~= nil then
-            name = string.format(name or BTWQUESTS_REPUTATION_AMOUNT_STANDING, item.amount, standingText, factionName)
+            name = string.format(name or L["BTWQUESTS_REPUTATION_AMOUNT_STANDING"], item.amount, standingText, factionName)
         else
-            name = string.format(name or BTWQUESTS_REPUTATION_STANDING, standingText, factionName)
+            name = string.format(name or L["BTWQUESTS_REPUTATION_STANDING"], standingText, factionName)
         end
     end
 
@@ -1862,7 +1860,7 @@ function CurrencyItemMixin:GetName(database, item, character)
         return ItemMixin.GetName(self, database, item, character);
     end
 
-    local name = BTWQUESTS_CURRENCY;
+    local name = L["BTWQUESTS_CURRENCY"];
     local info = C_CurrencyInfo.GetBasicCurrencyInfo(item.id, item.amount);
     return format(name, info.icon, info.displayAmount, info.name);
 end
@@ -1882,7 +1880,7 @@ function TimeItemMixin:GetName(database, item, character)
     local total,days,hours,minutes,seconds = difftime(item.time, GetServerTime())
 
     if total <= 0 then
-        return BTWQUESTS_PASSED
+        return L["BTWQUESTS_PASSED"]
     end
 
     days = floor(total / 86400)
@@ -1896,13 +1894,13 @@ function TimeItemMixin:GetName(database, item, character)
     seconds = total % 60
 
     if days ~= nil and days ~= 0 then
-        return string.format(BTWQUESTS_COUNTDOWN_DHM, days, hours, minutes)
+        return string.format(L["BTWQUESTS_COUNTDOWN_DHM"], days, hours, minutes)
     elseif hours ~= nil and hours ~= 0 then
-        return string.format(BTWQUESTS_COUNTDOWN_HMS, hours, minutes, seconds)
+        return string.format(L["BTWQUESTS_COUNTDOWN_HMS"], hours, minutes, seconds)
     elseif minutes ~= nil and minutes ~= 0 then
-        return string.format(BTWQUESTS_COUNTDOWN_MS, minutes, seconds)
+        return string.format(L["BTWQUESTS_COUNTDOWN_MS"], minutes, seconds)
     else
-        return string.format(BTWQUESTS_COUNTDOWN_S, seconds)
+        return string.format(L["BTWQUESTS_COUNTDOWN_S"], seconds)
     end
 end
 function TimeItemMixin:IsCompleted(database, item, character)
@@ -1919,7 +1917,7 @@ end
 
 local CoordsItemMixin = CreateFromMixins(ItemMixin);
 function CoordsItemMixin:GetLocation(database, item, relativeMapID)
-    if relativeMapID == nil and item.mapID == relativeMapID then
+    if relativeMapID == nil or item.mapID == relativeMapID then
         return item.mapID, CreateVector2D(item.x, item.y)
     else
         local sourceMapID, sourceCoords = self:GetLocation(database, item)
@@ -1950,14 +1948,24 @@ function PetItemMixin:GetName(database, item, character, variation)
     local id = self:GetID(database, item)
     local name = C_PetJournal.GetPetInfoBySpeciesID(id) or ""
     if variation == "reward" or variation == "prerequisite" then
-        return string.format(BTWQUESTS_PREFIX, BTWQUESTS_PET, name)
+        return string.format(L["BTWQUESTS_PREFIX"], L["BTWQUESTS_PET"], name)
+    elseif item.status == 'summon' then
+        return string.format(L["BTWQUESTS_SUMMON"], name)
     else
         return name
     end
 end
 function PetItemMixin:IsCompleted(database, item, character)
     local id = self:GetID(database, item)
-    return select(1, C_PetJournal.GetNumCollectedInfo(id)) > 0
+    if item.status == 'summon' then
+        local guid = C_PetJournal.GetSummonedPetGUID()
+        if not guid then
+            return false;
+        end
+        return C_PetJournal.GetPetInfoByPetID(guid) == id;
+    else
+        return select(1, C_PetJournal.GetNumCollectedInfo(id)) > 0
+    end
 end
 
 local MountItemMixin = CreateFromMixins(ItemMixin);
@@ -1969,7 +1977,7 @@ function MountItemMixin:GetName(database, item, character, variation)
     local id = self:GetID(database, item)
     local name = C_MountJournal.GetMountInfoByID(id) or ""
     if variation == "reward" then
-        return string.format(BTWQUESTS_PREFIX, BTWQUESTS_MOUNT, name)
+        return string.format(L["BTWQUESTS_PREFIX"], L["BTWQUESTS_MOUNT"], name)
     else
         return name
     end
@@ -1987,7 +1995,7 @@ function ToyItemMixin:GetName(database, item, character, variation)
     
     local name = select(2, C_ToyBox.GetToyInfo(item.id or item.ids[1])) or ""
     if variation == "reward" then
-        return format(BTWQUESTS_PREFIX, BTWQUESTS_TOY, name)
+        return format(L["BTWQUESTS_PREFIX"], L["BTWQUESTS_TOY"], name)
     else
         return name
     end
@@ -2017,7 +2025,7 @@ function HeartOfAzerothLevelItemMixin:GetName(database, item, character)
         return ItemMixin.GetName(self, database, item, character);
     end
 
-    return string.format(BTWQUESTS_HEART_OF_AZEROTH_LEVEL, item.level)
+    return string.format(L["BTWQUESTS_HEART_OF_AZEROTH_LEVEL"], item.level)
 end
 function HeartOfAzerothLevelItemMixin:IsCompleted(database, item, character)
     if item.atmost then
@@ -2066,7 +2074,7 @@ function ProfessionItemMixin:GetName(database, item, character, variation)
     local id = self:GetID(database, item)
     local name = C_TradeSkillUI.GetTradeSkillDisplayName(id)
     if item.level then
-        return string.format(BTWQUESTS_SKILL_LEVEL, item.level, name or id)
+        return string.format(L["BTWQUESTS_SKILL_LEVEL"], item.level, name or id)
     else
         return name or id
     end
@@ -2094,7 +2102,7 @@ function ItemItemMixin:GetName(database, item, character, variation)
     
     local id = self:GetID(database, item);
     local name = GetItemInfo(id);
-    return string.format(BTWQUESTS_COLLECT, name or L["Unknown"]);
+    return string.format(L["BTWQUESTS_COLLECT"], name or L["UNKNOWN"]);
 end
 function ItemItemMixin:IsCompleted(database, item, character)
     local id = self:GetID(database, item);
@@ -2109,7 +2117,7 @@ function EquippedItemMixin:GetName(database, item, character, variation)
     
     local id = self:GetID(database, item);
     local name = GetItemInfo(id);
-    return string.format(BTWQUESTS_EQUIP, name);
+    return string.format(L["BTWQUESTS_EQUIP"], name);
 end
 function EquippedItemMixin:IsCompleted(database, item, character)
     local id = self:GetID(database, item);
@@ -2147,7 +2155,7 @@ function DatabaseItemMetatable.__index(tbl, key)
         details = ItemMixin;
     end
 
-    return function (self, ...)
+    return details[key] and function (self, ...)
         return details[key](details, tbl.database, tbl.item, ...);
     end
 end
@@ -2492,7 +2500,7 @@ function Database:AddExpansion(id, item)
     local expansion = self:GetData("expansion", id);
     if not expansion then
         if item.name == nil then
-            item.name = _G['BTWQUESTS_EXPANSION_NAME' .. id];
+            item.name = L['BTWQUESTS_EXPANSION_NAME' .. id];
         end
 
         expansion = self:AddData("expansion", id, item);
@@ -2573,6 +2581,18 @@ function Database:IsCategoryCompleted(id, character)
 
     return item:IsCompleted(character)
 end
+function Database:GetCategoryName(id)
+    if not id then
+        return nil;
+    end
+    
+    local item = self:GetCategoryByID(id);
+    if not item then
+        return nil;
+    end
+    
+    return item:GetName();
+end
 
 function Database:AddChain(id, item)
     return self:AddData("chain", id, item);
@@ -2598,6 +2618,18 @@ function Database:IsChainCompleted(chainID, character)
     end
 
     return chain:IsCompleted(character)
+end
+function Database:GetChainName(id)
+    if not id then
+        return nil;
+    end
+    
+    local item = self:GetChainByID(id);
+    if not item then
+        return nil;
+    end
+    
+    return item:GetName();
 end
 
 function Database:AddQuest(id, item)
@@ -2813,7 +2845,9 @@ function Database:SearchScore(a, b)
 
     return (endChar - startChar + 1) / b:len()
 end
-function Database:Search(query, character)
+local keywords, results = {}, {}
+function Database:Search(tbl, query, character)
+    local tbl = tbl or {};
     local query = string.gsub(query:lower(), "[,.?:;!'\"%-%(%)]", "")
 
     if self.questCache[character] == nil then
@@ -2821,7 +2855,10 @@ function Database:Search(query, character)
     end
 
     if self.questCache[character][query] ~= nil then
-        return self.questCache[character][query]
+        for _,v in ipairs(self.questCache[character][query]) do
+            tbl[#tbl+1] = v;
+        end
+        return tbl;
     end
 
     local prefix
@@ -2835,58 +2872,44 @@ function Database:Search(query, character)
         end
     end
 
-    local keywords = {}
+    wipe(keywords);
     for keyword in string.gmatch(query, "[^%s]+") do
-        keywords[#keywords + 1] = keyword
+        keywords[#keywords+1] = keyword
     end
 
     if prefixlist == nil then
-        return {}
+        return result
     end
     
-    local results = {}
-    local indexes = {}
+    wipe(results);
     local item
-
     for i=1,#prefixlist do
         item = prefixlist[i]
         if results[item] == nil and self:IsItemValidForCharacter(item, character) then
-            results[#results+1] = {
-                item = item,
-                score = 0
-            }
+            results[item] = 0
         end
     end
 
     local keyword, result, keywordScore
-    local numResults = #results
     for k=1,#keywords do
         keyword = keywords[k]
         -- Filter items based on other keywords
-        for i=1,numResults do
-            result = results[i]
-            if result ~= nil then
-                keywordScore = result.item.keywords[keyword]
-                if keywordScore == nil then
-                    results[i] = nil
-                else
-                    result.score = result.score + keywordScore
-                end
-            end
+        for item in pairs(results) do
+            results[item] = results[item] + (item.keywords[keyword] or 0)
         end
     end
 
-    local updatedResults = {}
-    for i=1,numResults do
-        result = results[i]
-        if result ~= nil then
-            result.name = self:EvalItemName(result.item, character)
-            updatedResults[#updatedResults + 1] = result
+    wipe(tbl);
+    for item,score in pairs(results) do
+        if score > 0 then
+            tbl[#tbl+1] = {
+                name = item.name,
+                item = item,
+                score = score,
+            }
         end
     end
-    results = updatedResults
-
-    table.sort(results, function (a, b)
+    table.sort(tbl, function (a, b)
         if a.score == b.score then
             return (a.item.type or "") < (b.item.type or "")
         end
@@ -2894,9 +2917,9 @@ function Database:Search(query, character)
         return a.score > b.score
     end)
 
-    self.questCache[character][query] = results
+    self.questCache[character][query] = {unpack(tbl)}
 
-    return results
+    return tbl
 end
 
 

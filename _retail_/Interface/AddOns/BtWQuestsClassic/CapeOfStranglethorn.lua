@@ -65,11 +65,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
                     },
                 },
                 {
-                    name = "Go to Bronwyn Hewstrike",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5524, 0.4248, "Bronwyn Hewstrike")
-                    end,
+                    type = "npc",
+                    id = 44082,                
+                    -- name = "Go to Bronwyn Hewstrike",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5524, 0.4248, "Bronwyn Hewstrike")
+                    -- end,
                 },
             },
             x = 3,
@@ -229,7 +231,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_PIRATES
     range = {25,60},
     items = {
         {
-            name = BtWQuests_GetQuestName(26612),
+            name = {
+                type = "quest",
+                id = 26612,
+            },
             type = "chain",
             id = BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_BOOTY_BAY,
             userdata = {
@@ -413,11 +418,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_BOOTY_B
     range = {30,60},
     items = {
         {
-            name = "Find a Half-Buried Bottle along the coast",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5024, 0.7602, "Half-Buried Bottle")
-            end,
+            type = "object",
+            id = 204406,
+            -- name = "Find a Half-Buried Bottle along the coast",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5024, 0.7602, "Half-Buried Bottle")
+            -- end,
             x = 0,
             y = 0,
             connections = {
@@ -425,11 +432,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_BOOTY_B
             },
         },
         {
-            name = "Go to \"Sea Wolf\" MacKinley",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4208, 0.7338, "\"Sea Wolf\" MacKinley")
-            end,
+            type = "npc",
+            id = 2501,
+            -- name = "Go to \"Sea Wolf\" MacKinley",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4208, 0.7338, "\"Sea Wolf\" MacKinley")
+            -- end,
             x = 2,
             y = 0,
             connections = {
@@ -437,11 +446,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_BOOTY_B
             },
         },
         {
-            name = "Go to Captain Hecklebury Smotts",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4032, 0.6779, "Captain Hecklebury Smotts")
-            end,
+            type = "npc",
+            id = 2500,
+            -- name = "Go to Captain Hecklebury Smotts",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4032, 0.6779, "Captain Hecklebury Smotts")
+            -- end,
             x = 4,
             y = 0,
             connections = {
@@ -449,12 +460,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_BOOTY_B
             },
         },
         {
-            name = "Go to Fin Fizracket",
-            breadcrumb = true,
+            type = "npc",
+            id = 2486,
+            -- name = "Go to Fin Fizracket",
+            -- breadcrumb = true,
             aside = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4180, 0.7283, "Fin Fizracket")
-            end,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4180, 0.7283, "Fin Fizracket")
+            -- end,
             x = 6,
             y = 0,
             connections = {

@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 local MAP_ID = 863
 local ACHIEVEMENT_ID = 11868
 local CONTINENT_ID = 875
@@ -26,6 +27,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_DEEP_IN_THE
     completed = {
         type = "quest",
         id = 47188,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                950600, 970200, 989800, 1009400, 1029000, 1048600, 1068200, 1087800, 1107400, 1127000, 1146600, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                80650, 81300, 81950, 82650, 83300, 84000, 84850, 85500, 86000, 86650, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 515,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -151,6 +179,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_A_PACT_WITH
         type = "quest",
         id = 47250,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2366800, 2415600, 2464400, 2513200, 2562000, 2610800, 2659600, 2708400, 2757200, 2806000, 2854800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                163700, 165150, 166550, 167750, 169150, 170650, 172150, 173600, 174650, 176100, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 1150,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -269,6 +329,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_UNDERCOVER_
     completed = {
         type = "quest",
         id = 49082,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2153400, 2197800, 2242200, 2286600, 2331000, 2375400, 2419800, 2464200, 2508600, 2553000, 2597400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                158000, 159350, 160700, 161850, 163200, 164700, 166100, 167450, 168550, 169900, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 1225,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -409,6 +501,43 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_TURTLE_POWE
     completed = {
         type = "quest",
         id = 49160,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                3298000, 3366000, 3434000, 3502000, 3570000, 3638000, 3706000, 3774000, 3842000, 3910000, 3978000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                230400, 232350, 234300, 236050, 238000, 240100, 242300, 244250, 245750, 247700, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 215,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 800,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+        {
+            type = "reputation",
+            id = 2163,
+            amount = 3150,
+        },
     },
     items = {
         {
@@ -639,6 +768,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_A_FRIEND_OF
         type = "quest",
         id = 47696,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1804200, 1841400, 1878600, 1915800, 1953000, 1990200, 2027400, 2064600, 2101800, 2139000, 2176200, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                128350, 129450, 130450, 131600, 132600, 133800, 134950, 136050, 136950, 138050, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 720,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -830,6 +986,43 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_EVERYTHING_
         type = "quest",
         id = 49985,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2910000, 2970000, 3030000, 3090000, 3150000, 3210000, 3270000, 3330000, 3390000, 3450000, 3510000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                197450, 199200, 200850, 202350, 204000, 205900, 207550, 209300, 210700, 212450, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "currency",
+            id = 1560,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 495,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1003,6 +1196,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_BRING_THE_B
     completed = {
         type = "quest",
         id = 47601,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2095200, 2138400, 2181600, 2224800, 2268000, 2311200, 2354400, 2397600, 2440800, 2484000, 2527200, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                153000, 154350, 155600, 156850, 158100, 159500, 160900, 162250, 163250, 164600, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 500,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -1179,6 +1399,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_BLEEDING_TH
         type = "quest",
         id = 50087,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2871200, 2930400, 2989600, 3048800, 3108000, 3167200, 3226400, 3285600, 3344800, 3404000, 3463200, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                239400, 241500, 243400, 245450, 247350, 249550, 251750, 253700, 255550, 257500, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 800,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 1525,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1340,6 +1592,43 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN1, {
         type = "quest",
         id = 49278,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1261000, 1287000, 1313000, 1339000, 1365000, 1391000, 1417000, 1443000, 1469000, 1495000, 1521000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                69950, 70550, 71100, 71700, 72250, 72950, 73500, 74100, 74650, 75250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "currency",
+            id = 1560,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 500,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1440,6 +1729,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN2, {
     completed = {
         type = "quest",
         id = 48591,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2347400, 2395800, 2444200, 2492600, 2541000, 2589400, 2637800, 2686200, 2734600, 2783000, 2831400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                174350, 175950, 177450, 178700, 180200, 181800, 183350, 184950, 186050, 187650, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 1200,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -1578,6 +1899,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN3, {
         type = "quest",
         id = 48869,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2153400, 2197800, 2242200, 2286600, 2331000, 2375400, 2419800, 2464200, 2508600, 2553000, 2597400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                147200, 148550, 149750, 150950, 152150, 153500, 154800, 156150, 157100, 158450, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 125,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 675,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1713,6 +2066,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN4, {
         type = "quest",
         id = 49777,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1474400, 1504800, 1535200, 1565600, 1596000, 1626400, 1656800, 1687200, 1717600, 1748000, 1778400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                112700, 113700, 114650, 115500, 116450, 117500, 118500, 119500, 120250, 121250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 125,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 535,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1824,6 +2209,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN5, {
         type = "quest",
         id = 48480,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1164000, 1188000, 1212000, 1236000, 1260000, 1284000, 1308000, 1332000, 1356000, 1380000, 1404000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                86350, 87150, 87900, 88500, 89250, 90050, 90800, 91600, 92150, 92950, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 700,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -1916,6 +2328,29 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN6, {
         {
             type = "quest",
             id = 47925,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1358000, 1386000, 1414000, 1442000, 1470000, 1498000, 1526000, 1554000, 1582000, 1610000, 1638000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                102800, 103750, 104650, 105350, 106250, 107200, 108100, 109050, 109700, 110650, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2163,
+            amount = 375,
         },
     },
     items = {
@@ -2020,6 +2455,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN7, {
     completed = {
         type = "quest",
         id = 49382,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1377400, 1405800, 1434200, 1462600, 1491000, 1519400, 1547800, 1576200, 1604600, 1633000, 1661400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                104500, 105400, 106250, 107100, 107950, 108950, 109850, 110750, 111500, 112400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 650,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -2171,6 +2638,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN8, {
         type = "quest",
         id = 50085,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                970000, 990000, 1010000, 1030000, 1050000, 1070000, 1090000, 1110000, 1130000, 1150000, 1170000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                69900, 70550, 71150, 71650, 72250, 72900, 73500, 74150, 74600, 75250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 225,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -2258,6 +2752,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN9, {
             id = 48092,
         },
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                970000, 990000, 1010000, 1030000, 1050000, 1070000, 1090000, 1110000, 1130000, 1150000, 1170000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                69900, 70550, 71150, 71650, 72250, 72900, 73500, 74150, 74600, 75250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 400,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             variations = {
@@ -2336,6 +2862,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN10, {
     completed = {
         type = "quest",
         id = 48499,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                814800, 831600, 848400, 865200, 882000, 898800, 915600, 932400, 949200, 966000, 982800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                69100, 69700, 70300, 70800, 71400, 72000, 72700, 73300, 73700, 74300, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2157,
+            amount = 325,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -2437,6 +2995,47 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN11, {
         type = "quest",
         id = 50976,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                388000, 396000, 404000, 412000, 420000, 428000, 436000, 444000, 452000, 460000, 468000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                20550, 20750, 20900, 21100, 21250, 21450, 21600, 21800, 21950, 22150, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2156,
+            amount = 250,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+        {
+            type = "reputation",
+            id = 2159,
+            amount = 250,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "object",
@@ -2482,6 +3081,43 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN12, {
     completed = {
         type = "quest",
         id = 52480,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                582000, 594000, 606000, 618000, 630000, 642000, 654000, 666000, 678000, 690000, 702000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                24700, 24900, 25100, 25300, 25500, 25750, 25950, 26150, 26350, 26550, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2159,
+            amount = 250,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+        {
+            type = "reputation",
+            id = 2163,
+            amount = 250,
+        },
     },
     items = {
         {
@@ -2530,6 +3166,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN13, {
     completed = {
         type = "quest",
         id = 51139,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                582000, 594000, 606000, 618000, 630000, 642000, 654000, 666000, 678000, 690000, 702000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                24700, 24900, 25100, 25300, 25500, 25750, 25950, 26150, 26350, 26550, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2159,
+            amount = 250,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -2637,7 +3305,7 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_NAZMIR, {
     items = {
         {
             type = "header",
-            name = BTWQUESTS_THE_WAR_CAMPAIGN,
+            name = L["BTWQUESTS_THE_WAR_CAMPAIGN"],
             restrictions = {
                 type = "faction",
                 id = BTWQUESTS_FACTION_ID_ALLIANCE
@@ -2704,7 +3372,7 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_NAZMIR, {
         
         {
             type = "header",
-            name = BTWQUESTS_SIDE_QUESTS,
+            name = L["BTWQUESTS_SIDE_QUESTS"],
         },
         {
             type = "chain",

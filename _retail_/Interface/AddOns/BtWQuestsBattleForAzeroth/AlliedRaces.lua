@@ -1,4 +1,5 @@
 local BtWQuests = BtWQuests;
+local L = BtWQuests.L;
 local Database = BtWQuests.Database;
 local EXPANSION_ID = BtWQuests.Constant.Expansions.BattleForAzeroth;
 local CATEGORY_ID = BtWQuests.Constant.Category.BattleForAzeroth.AlliedRaces;
@@ -49,8 +50,21 @@ Database:AddChain(Chain.DarkIronDwarves, {
     },
     rewards = {
         {
-            name = BTWQUESTS_ALLIED_RACE_DARK_IRON_DWARF,
-        }
+            name = L["BTWQUESTS_ALLIED_RACE_DARK_IRON_DWARF"],
+        },
+        {
+            type = "money",
+            amounts = {
+                1404000,
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 600,
+        },
     },
     items = {
         {
@@ -107,7 +121,7 @@ Database:AddChain(Chain.DarkIronDwarves, {
     },
 })
 Database:AddChain(Chain.MagharOrc, {
-    name = BTWQUESTS_MAGHAR_ORC,
+    name = L["BTWQUESTS_MAGHAR_ORC"],
     category = CATEGORY_ID,
     expansion = EXPANSION_ID,
     range = {120},
@@ -147,8 +161,16 @@ Database:AddChain(Chain.MagharOrc, {
     },
     rewards = {
         {
-            name = BTWQUESTS_ALLIED_RACE_MAGHAR_ORC,
-        }
+            name = L["BTWQUESTS_ALLIED_RACE_MAGHAR_ORC"],
+        },
+        {
+            type = "money",
+            amounts = {
+                1170000,
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     items = {
         {
@@ -289,8 +311,16 @@ Database:AddChain(Chain.KulTiran, {
     },
     rewards = {
         {
-            name = BTWQUESTS_ALLIED_RACE_KUL_TIRAN,
-        }
+            name = L["BTWQUESTS_ALLIED_RACE_KUL_TIRAN"],
+        },
+        {
+            type = "money",
+            amounts = {
+                3603600, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     items = {
         {
@@ -298,7 +328,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54706,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -306,7 +336,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 55039,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -314,7 +344,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 55043,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -322,7 +352,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54708,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -330,7 +360,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54721,
             x = 3,
             connections = {
-                1, 2, 
+                1, 2,
             },
         },
         {
@@ -338,14 +368,14 @@ Database:AddChain(Chain.KulTiran, {
             id = 54723,
             x = 2,
             connections = {
-                2, 
+                2,
             },
         },
         {
             type = "quest",
             id = 54725,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -353,7 +383,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54726,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -361,7 +391,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54727,
             x = 3,
             connections = {
-                1, 2, 
+                1, 2,
             },
         },
         {
@@ -369,14 +399,14 @@ Database:AddChain(Chain.KulTiran, {
             id = 54728,
             x = 2,
             connections = {
-                2, 
+                2,
             },
         },
         {
             type = "quest",
             id = 54729,
             connections = {
-                2, 
+                2,
             },
         },
         {
@@ -384,14 +414,14 @@ Database:AddChain(Chain.KulTiran, {
             id = 54730,
             x = 2,
             connections = {
-                2, 
+                2,
             },
         },
         {
             type = "quest",
             id = 54732,
             connections = {
-                2, 
+                2,
             },
         },
         {
@@ -399,14 +429,14 @@ Database:AddChain(Chain.KulTiran, {
             id = 54731,
             x = 2,
             connections = {
-                3, 
+                3,
             },
         },
         {
             type = "quest",
             id = 55136,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -414,7 +444,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54733,
             x = 4,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -422,7 +452,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54734,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -430,7 +460,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54735,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -438,7 +468,7 @@ Database:AddChain(Chain.KulTiran, {
             id = 54851,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -497,8 +527,16 @@ Database:AddChain(Chain.ZandalariTroll, {
     },
     rewards = {
         {
-            name = BTWQUESTS_ALLIED_RACE_ZANDALARI_TROLL,
-        }
+            name = L["BTWQUESTS_ALLIED_RACE_ZANDALARI_TROLL"],
+        },
+        {
+            type = "money",
+            amounts = {
+                4235400, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
     },
     items = {
         {
@@ -506,7 +544,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 53831,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -514,7 +552,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 53823,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -522,7 +560,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 53824,
             x = 3,
             connections = {
-                1, 2, 
+                1, 2,
             },
         },
         {
@@ -530,14 +568,14 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 53826,
             x = 2,
             connections = {
-                2, 3, 4, 
+                2, 3, 4,
             },
         },
         {
             type = "quest",
             id = 54419,
             connections = {
-                1, 2, 3, 
+                1, 2, 3,
             },
         },
         {
@@ -545,21 +583,21 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 54925,
             x = 1,
             connections = {
-                3, 
+                3,
             },
         },
         {
             type = "quest",
             id = 54301,
             connections = {
-                2, 
+                2,
             },
         },
         {
             type = "quest",
             id = 54300,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -567,7 +605,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 53825,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -575,7 +613,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 53827,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -583,7 +621,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 53828,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -591,7 +629,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 54031,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -599,7 +637,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 54033,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -607,7 +645,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 54032,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -615,7 +653,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 54034,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -623,7 +661,7 @@ Database:AddChain(Chain.ZandalariTroll, {
             id = 53830,
             x = 3,
             connections = {
-                1, 
+                1,
             },
         },
         {
@@ -635,7 +673,7 @@ Database:AddChain(Chain.ZandalariTroll, {
 })
 
 Database:AddCategory(CATEGORY_ID, {
-    name = BTWQUESTS_ALLIED_RACES,
+    name = L["BTWQUESTS_ALLIED_RACES"],
     expansion = EXPANSION_ID,
     items = {
         {

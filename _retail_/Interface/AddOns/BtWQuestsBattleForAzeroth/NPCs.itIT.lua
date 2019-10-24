@@ -20,6 +20,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [29445] = {
         name = "Thorim",
     },
+    [36648] = {
+        name = "Baine Zoccolo Sanguinario",
+    },
     [107574] = {
         name = "Anduin Wrynn",
     },
@@ -1316,8 +1319,14 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [135673] = {
         name = "Esploratore McKellis",
     },
+    [135681] = {
+        name = "Gran Ammiraglio Jes-Tereth",
+    },
     [135682] = {
         name = "Patrick Eckhart",
+    },
+    [135690] = {
+        name = "Ammiraglio del Terrore Velamesta",
     },
     [135691] = {
         name = "Nathanos Selvamorta",
@@ -1662,7 +1671,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Arthur Ventosaldo",
     },
     [140105] = {
-        name = "Guardaboschi Oscuro",
+        name = "Nathanos Selvamorta",
     },
     [140176] = {
         name = "Nathanos Selvamorta",
@@ -1938,7 +1947,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Xal'atath",
     },
     [146462] = {
-        name = "Berserker dell'Orda",
+        name = "Rexxar",
     },
     [146536] = {
         name = "Fuoco Fatuo Perduto",
@@ -1956,7 +1965,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Dama Sylvanas Ventolesto",
     },
     [146791] = {
-        name = "Guardaboschi Oscura",
+        name = "Guardaboschi Oscura Lyana",
     },
     [146806] = {
         name = "Guardaboschi Oscura Lyana",
@@ -1977,7 +1986,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Rexxar",
     },
     [146937] = {
-        name = "Guardaboschi Oscura",
+        name = "Guardaboschi Oscura Lyana",
     },
     [146939] = {
         name = "Ambasciatrice Giuralba",
@@ -2019,7 +2028,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Rokhan",
     },
     [147293] = {
-        name = "Difensore Da'kani",
+        name = "Grong",
     },
     [147297] = {
         name = "Zekhan",
@@ -2045,6 +2054,18 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [147885] = {
         name = "Anduin Wrynn",
     },
+    [147939] = {
+        name = "Asso Sgranatempeste",
+    },
+    [147943] = {
+        name = "Capitano Tread Tappovite",
+    },
+    [147950] = {
+        name = "Capitan Meccanico Minimolla",
+    },
+    [147952] = {
+        name = "Fizzi Meccanarco",
+    },
     [148015] = {
         name = "Taelia Domadraghi",
     },
@@ -2060,6 +2081,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [148870] = {
         name = "Dorian Dell'Acqua",
     },
+    [149084] = {
+        name = "Spiritista Ussoh",
+    },
+    [149088] = {
+        name = "Spiritista Isahi",
+    },
     [149143] = {
         name = "Nathanos Selvamorta",
     },
@@ -2069,11 +2096,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149471] = {
         name = "Guardaboschi Oscura Velonara",
     },
+    [149503] = {
+        name = "Capitan Meccanico Minimolla",
+    },
+    [149528] = {
+        name = "Baine Zoccolo Sanguinario",
+    },
+    [149529] = {
+        name = "Spiritista Ussoh",
+    },
     [149612] = {
         name = "Shandris Piumaluna",
     },
     [149736] = {
         name = "Immagine di Mimiron",
+    },
+    [149809] = {
+        name = "Sparachiodi",
     },
     [149815] = {
         name = "Grizzek Frizzachiavi",
@@ -2084,14 +2123,47 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149842] = {
         name = "Baine Zoccolo Sanguinario",
     },
+    [149864] = {
+        name = "Mastro Meccanista Granfavilla",
+    },
     [149867] = {
         name = "Magni Barbabronzea",
     },
     [149870] = {
         name = "Grif Cuorselvaggio",
     },
+    [149877] = {
+        name = "Mastro Meccanista Granfavilla",
+    },
+    [149904] = {
+        name = "Neri Pinnafine",
+    },
+    [150086] = {
+        name = "Bullon Balzascintille",
+    },
     [150101] = {
         name = "Dama Jaina Marefiero",
+    },
+    [150145] = {
+        name = "Gila Intrecciacavi",
+    },
+    [150187] = {
+        name = "Nathanos Selvamorta",
+    },
+    [150196] = {
+        name = "Prima Arcanista Thalyssra",
+    },
+    [150206] = {
+        name = "Capo Telemante Oculeth",
+    },
+    [150207] = {
+        name = "Lor'themar Theron",
+    },
+    [150208] = {
+        name = "Mastro Meccanista Granfavilla",
+    },
+    [150209] = {
+        name = "Neri Pinnafine",
     },
     [150309] = {
         name = "Baine Zoccolo Sanguinario",
@@ -2168,11 +2240,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150898] = {
         name = "Santuario delle Tempeste",
     },
+    [150956] = {
+        name = "Trivella Guasta",
+    },
     [151000] = {
         name = "Maestro di Spade Okani",
     },
     [151061] = {
         name = "Mimiron",
+    },
+    [151100] = {
+        name = "Gila Intrecciacavi",
     },
     [151129] = {
         name = "Saffronetta Flivvers",
@@ -2195,17 +2273,41 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "Daniss Danzaspettri",
     },
+    [151283] = {
+        name = "Cucciolo di Cornofurente",
+    },
     [151285] = {
         name = "Mevris Danzaspettri",
     },
     [151287] = {
         name = "Telonis",
     },
-    [151309] = {
-        name = "Esploratore Pinnalga",
+    [151462] = {
+        name = "Danielle Lancialenza",
     },
     [151626] = {
         name = "Cacciatore Akana",
+    },
+    [151641] = {
+        name = "Spiritista Corna Nere",
+    },
+    [151682] = {
+        name = "Merithra del Sogno",
+    },
+    [151693] = {
+        name = "Merithra del Sogno",
+    },
+    [151695] = {
+        name = "Spiritista Corna Nere",
+    },
+    [151704] = {
+        name = "Valithria Vagasogni",
+    },
+    [151741] = {
+        name = "Apprendista Odari",
+    },
+    [151825] = {
+        name = "Merithra del Sogno",
     },
     [151848] = {
         name = "Lor'themar Theron",
@@ -2213,14 +2315,35 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151851] = {
         name = "Capo Telemante Oculeth",
     },
+    [151887] = {
+        name = "Merithra del Sogno",
+    },
+    [151947] = {
+        name = "Principe Erazmin",
+    },
     [151964] = {
         name = "Spiritista Corna Nere",
+    },
+    [151999] = {
+        name = "Jo'nok, Baluardo di Torcali",
     },
     [152002] = {
         name = "Immagine di Mimiron",
     },
+    [152047] = {
+        name = "Poen Branchiak",
+    },
+    [152066] = {
+        name = "Prima Arcanista Thalyssra",
+    },
     [152084] = {
         name = "Mrrl",
+    },
+    [152095] = {
+        name = "Magni Barbabronzea",
+    },
+    [152108] = {
+        name = "Neri Pinnafine",
     },
     [152194] = {
         name = "M.A.D.R.E.",
@@ -2228,11 +2351,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152206] = {
         name = "Magni Barbabronzea",
     },
+    [152238] = {
+        name = "Riathia Stellargentea",
+    },
     [152255] = {
         name = "Sef Iwen",
     },
     [152295] = {
         name = "Pascal",
+    },
+    [152365] = {
+        name = "Kalecgos",
+    },
+    [152385] = {
+        name = "Spiritista Corna Nere",
+    },
+    [152484] = {
+        name = "Mastro Meccanista Granfavilla",
     },
     [152489] = {
         name = "Santuario delle Tempeste",
@@ -2252,14 +2387,68 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [152497] = {
         name = "Santuario del Vespro",
     },
+    [152504] = {
+        name = "Sparachiodi",
+    },
+    [152505] = {
+        name = "Skaggit",
+    },
+    [152522] = {
+        name = "Sparachiodi",
+    },
+    [152578] = {
+        name = "Sparachiodi",
+    },
+    [152652] = {
+        name = "Sparachiodi",
+    },
+    [152720] = {
+        name = "Kalecgos",
+    },
     [152747] = {
         name = "Christy Pestaviti",
+    },
+    [152783] = {
+        name = "Sparachiodi",
+    },
+    [152815] = {
+        name = "Magni Barbabronzea",
+    },
+    [152820] = {
+        name = "Principe Erazmin",
+    },
+    [152845] = {
+        name = "Sparachiodi",
+    },
+    [152851] = {
+        name = "Principe Erazmin",
+    },
+    [152864] = {
+        name = "Mastro Meccanista Granfavilla",
+    },
+    [152977] = {
+        name = "Thrall",
+    },
+    [153251] = {
+        name = "Lor'themar Theron",
+    },
+    [153253] = {
+        name = "Dama Jaina Marefiero",
     },
     [153365] = {
         name = "Madre dell'Alveare Dolcedorso",
     },
+    [153385] = {
+        name = "Maestro di Spade Okani",
+    },
     [153393] = {
         name = "Barry",
+    },
+    [153422] = {
+        name = "Capo Telemante Oculeth",
+    },
+    [153496] = {
+        name = "Adaru",
     },
     [153509] = {
         name = "Artigiano Okata",
@@ -2276,8 +2465,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153617] = {
         name = "Shandris Piumaluna",
     },
+    [153670] = {
+        name = "Principe Erazmin",
+    },
+    [153932] = {
+        name = "Genn Mantogrigio",
+    },
+    [153936] = {
+        name = "Sovrintendente Hajeer",
+    },
+    [154002] = {
+        name = "Atolia Perlamarina",
+    },
     [154023] = {
         name = "Raccoglitore Immaturo",
+    },
+    [154143] = {
+        name = "Kojo il Collezionista",
     },
     [154248] = {
         name = "Spadaccino Inowari",
@@ -2291,7 +2495,52 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154464] = {
         name = "Guardiano Terrigeno",
     },
+    [154465] = {
+        name = "Guardiano Terrigeno",
+    },
+    [154514] = {
+        name = "Kelya Ombraluna",
+    },
+    [154520] = {
+        name = "Prima Arcanista Thalyssra",
+    },
+    [154522] = {
+        name = "Shandris Piumaluna",
+    },
+    [154574] = {
+        name = "Kelya Ombraluna",
+    },
+    [154601] = {
+        name = "Kelya Ombraluna",
+    },
     [154640] = {
         name = "Gran Maresciallo Fremilama",
+    },
+    [154660] = {
+        name = "Shandris Piumaluna",
+    },
+    [154661] = {
+        name = "Prima Arcanista Thalyssra",
+    },
+    [154874] = {
+        name = "Guardiano Grinfianera",
+    },
+    [155071] = {
+        name = "Shandris Piumaluna",
+    },
+    [155325] = {
+        name = "Prima Arcanista Thalyssra",
+    },
+    [155482] = {
+        name = "Shandris Piumaluna",
+    },
+    [155784] = {
+        name = "Anduin Wrynn",
+    },
+    [155785] = {
+        name = "Dama Jaina Marefiero",
+    },
+    [155789] = {
+        name = "Lor'themar Theron",
     },
 })

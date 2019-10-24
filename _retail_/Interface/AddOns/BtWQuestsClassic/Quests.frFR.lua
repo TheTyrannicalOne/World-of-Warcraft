@@ -308,6 +308,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [8309] = {
         name = "À la poursuite des glyphes",
     },
+    [8310] = {
+        name = "Déchiffrer le code",
+    },
+    [8314] = {
+        name = "Dévoiler le mystère",
+    },
     [8318] = {
         name = "Communications secrètes",
     },
@@ -2386,6 +2392,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [25379] = {
         name = "La chute de Taerar",
+    },
+    [25383] = {
+        name = "L'adieu d'Ysondre",
     },
     [25386] = {
         name = "Au bastion Cognepierre !",

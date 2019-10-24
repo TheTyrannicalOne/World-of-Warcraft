@@ -24,12 +24,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_FAR_WATCH, {
 	},
 	items = {
 		{
-			name = "Go to Dorak",
-			breadcrumb = true,
+			type = "npc",
+			id = 34284,
+			-- name = "Go to Dorak",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6710, 0.4552, "Dorak")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6710, 0.4552, "Dorak")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -66,11 +68,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_FAR_WATCH, {
 					},
 				},
 				{
-					name = "Go to Kargal Battlescar",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6767, 0.3939, "Kargal Battlescar")
-					end,
+					type = "npc",
+					id = 3337,
+					-- name = "Go to Kargal Battlescar",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6767, 0.3939, "Kargal Battlescar")
+					-- end,
 				}
 			},
 			x = 3,
@@ -80,12 +84,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_FAR_WATCH, {
             },
 		},
 		{
-			name = "Go to Halga Bloodeye",
-			breadcrumb = true,
-			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6740, 0.3877, "Halga Bloodeye")
-			end,
+			type = "npc",
+			id = 34258,
+			-- name = "Go to Halga Bloodeye",
+			-- breadcrumb = true,
+			-- aside = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6740, 0.3877, "Halga Bloodeye")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -190,12 +196,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_GROLDOM_FARM
 			}
 		},
 		{
-			name = "Go to Mankrik",
-			breadcrumb = true,
+			type = "npc",
+			id = 3432,
+			-- name = "Go to Mankrik",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5517, 0.4102, "Mankrik")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5517, 0.4102, "Mankrik")
+			-- end,
 			x = 2,
 			y = 0,
 			connections = {
@@ -203,11 +211,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_GROLDOM_FARM
 			}
 		},
 		{
-			name = "Go to Togrik",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5659, 0.4028, "Togrik")
-			end,
+			type = "npc",
+			id = 34513,
+			-- name = "Go to Togrik",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5659, 0.4028, "Togrik")
+			-- end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -215,12 +225,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_GROLDOM_FARM
 			}
 		},
 		{
-			name = "Go to Una Wolfclaw",
-			breadcrumb = true,
+			type = "npc",
+			id = 34560,
+			-- name = "Go to Una Wolfclaw",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5401, 0.4109, "Una Wolfclaw")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5401, 0.4109, "Una Wolfclaw")
+			-- end,
 			x = 6,
 			y = 0,
 			connections = {
@@ -428,12 +440,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_MYSTERIES_OF
 	},
 	items = {
 		{
-			name = "Go to Ta'jari",
-			breadcrumb = true,
+			type = "npc",
+			id = 34613,
+			-- name = "Go to Ta'jari",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3754, 0.4587, "Ta'jari")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3754, 0.4587, "Ta'jari")
+			-- end,
 			x = 0,
 			y = 0,
 			connections = {
@@ -441,11 +455,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_MYSTERIES_OF
 			}
 		},
 		{
-			name = "Go to Apothecary Helbrim",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4859, 0.5834, "Apothecary Helbrim")
-			end,
+			type = "npc",
+			id = 3390,
+			-- name = "Go to Apothecary Helbrim",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4859, 0.5834, "Apothecary Helbrim")
+			-- end,
 			x = 2,
 			y = 0,
 			connections = {
@@ -453,11 +469,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_MYSTERIES_OF
 			},
 		},
 		{
-			name = "Go to Tonga Runetotem",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4949, 0.5866, "Tonga Runetotem")
-			end,
+			type = "npc",
+			id = 3448,
+			-- name = "Go to Tonga Runetotem",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4949, 0.5866, "Tonga Runetotem")
+			-- end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -465,12 +483,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_MYSTERIES_OF
 			},
 		},
 		{
-			name = "Go to Kolkar Wrangler",
-			breadcrumb = true,
+			type = "npc",
+			id = 34841,
+			-- name = "Go to Kolkar Wrangler",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3808, 0.4628, "Kolkar Wrangler")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3808, 0.4628, "Kolkar Wrangler")
+			-- end,
 			x = 6,
 			y = 0,
 			connections = {
@@ -513,12 +533,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_MYSTERIES_OF
 
 
 		{
-			name = "Go to Shoe",
-			breadcrumb = true,
+			type = "npc",
+			id = 34638,
+			-- name = "Go to Shoe",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5520, 0.7840, "Shoe")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5520, 0.7840, "Shoe")
+			-- end,
 			x = 0,
 			y = 2,
 			connections = {
@@ -535,12 +557,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_MYSTERIES_OF
             },
 		},
 		{
-			name = "Go to Gorgal Angerscar",
-			breadcrumb = true,
+			type = "npc",
+			id = 34634,
+			-- name = "Go to Gorgal Angerscar",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5511, 0.7854, "Gorgal Angerscar")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5511, 0.7854, "Gorgal Angerscar")
+			-- end,
 			x = 6,
 			y = 2,
 			connections = {
@@ -613,11 +637,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_RATCHET, {
 	},
 	items = {
 		{
-			name = "Go to Captain Thalo'thas Brightsun",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6772, 0.7400, "Captain Thalo'thas Brightsun")
-			end,
+			type = "npc",
+			id = 3339,
+			-- name = "Go to Captain Thalo'thas Brightsun",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6772, 0.7400, "Captain Thalo'thas Brightsun")
+			-- end,
 			x = 0,
 			y = 0,
 			connections = {
@@ -636,11 +662,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_RATCHET, {
 					},
 				},
 				{
-					name = "Go to Kargal Battlescar",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6767, 0.3939, "Kargal Battlescar")
-					end,
+					type = "npc",
+					id = 3464,
+					-- name = "Go to Kargal Battlescar",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6767, 0.3939, "Kargal Battlescar")
+					-- end,
 				}
 			},
 			x = 2,
@@ -650,11 +678,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_RATCHET, {
             },
 		},
 		{
-			name = "Go to Mebok Mizzyrix",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6786, 0.7150, "Mebok Mizzyrix")
-			end,
+			type = "npc",
+			id = 3446,
+			-- name = "Go to Mebok Mizzyrix",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6786, 0.7150, "Mebok Mizzyrix")
+			-- end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -662,11 +692,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_RATCHET, {
 			},
 		},
 		{
-			name = "Go to WANTED sign",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6826, 0.7125, "WANTED sign")
-			end,
+			type = "object",
+			id = 3972,
+			-- name = "Go to WANTED sign",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6826, 0.7125, "WANTED sign")
+			-- end,
 			x = 6,
 			y = 0,
 			connections = {
@@ -707,11 +739,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_RATCHET, {
 
 
 		{
-			name = "Go to Gazlowe",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6841, 0.6906, "Gazlowe")
-			end,
+			type = "npc",
+			id = 3391,
+			-- name = "Go to Gazlowe",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6841, 0.6906, "Gazlowe")
+			-- end,
 			x = 1,
 			y = 2,
 			connections = {
@@ -719,11 +753,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_RATCHET, {
 			},
 		},
 		{
-			name = "Go to Wharfmaster Dizzywig",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6960, 0.7298, "Wharfmaster Dizzywig")
-			end,
+			type = "npc",
+			id = 3453,
+			-- name = "Go to Wharfmaster Dizzywig",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6960, 0.7298, "Wharfmaster Dizzywig")
+			-- end,
 			x = 5,
 			y = 2,
 			connections = {
@@ -731,7 +767,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_RATCHET, {
 			},
 		},
 
-		
+
 		{
 			type = "chain",
 			id = BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN5,
@@ -817,11 +853,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_NOZZLEPOTS_O
 	},
 	items = {
 		{
-			name = "Go to Sputtervalve",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6228, 0.1748, "Sputtervalve")
-			end,
+			type = "npc",
+			id = 3442,
+			-- name = "Go to Sputtervalve",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6228, 0.1748, "Sputtervalve")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -829,11 +867,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_NOZZLEPOTS_O
 			},
 		},
 		{
-			name = "Go to Nozzlepot",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6250, 0.1675, "Nozzlepot")
-			end,
+			type = "npc",
+			id = 34698,
+			-- name = "Go to Nozzlepot",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6250, 0.1675, "Nozzlepot")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -897,9 +937,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_NOZZLEPOTS_O
 			id = 29089,
 			x = 4,
 			y = 2,
-			connections = {
-                
-            },
 		},
 
 
@@ -909,9 +946,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_NOZZLEPOTS_O
 			id = 863,
 			x = 0,
 			y = 3,
-			connections = {
-                
-            },
 		},
 		{
 			type = "quest",
@@ -964,9 +998,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_NOZZLEPOTS_O
 			aside = true,
 			x = 4,
 			y = 7,
-			connections = {
-                
-            },
 		},
 		{
 			type = "quest",
@@ -1047,11 +1078,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_INSPIRATION_
 					},
 				},
 				{
-					name = "Go to Darsok Swiftdagger",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3058, 0.4593, "Darsok Swiftdagger")
-					end,
+					type = "npc",
+					id = 3449,
+					-- name = "Go to Darsok Swiftdagger",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3058, 0.4593, "Darsok Swiftdagger")
+					-- end,
 				}
 			},
 			x = 3,
@@ -1135,7 +1168,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_INSPIRATION_
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN1, {
-	name = "The Crossroads",
+	name = BtWQuests_GetAreaName(380), -- The Crossroads
 	category = BTWQUESTS_CATEGORY_CLASSIC_NORTHERN_BARRENS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},
@@ -1163,11 +1196,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN1, {
 	},
 	items = {
 		{
-			name = "Go to Sergra Darkthorn",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4999, 0.5985, "Sergra Darkthorn")
-			end,
+			type = "npc",
+			id = 3338,
+			-- name = "Go to Sergra Darkthorn",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4999, 0.5985, "Sergra Darkthorn")
+			-- end,
 			x = 0,
 			y = 0,
 			connections = {
@@ -1175,11 +1210,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN1, {
 			},
 		},
 		{
-			name = "Go to Apothecary Helbrim",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4859, 0.5834, "Apothecary Helbrim")
-			end,
+			type = "npc",
+			id = 3390,
+			-- name = "Go to Apothecary Helbrim",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4859, 0.5834, "Apothecary Helbrim")
+			-- end,
 			x = 2,
 			y = 0,
 			connections = {
@@ -1187,11 +1224,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN1, {
 			},
 		},
 		{
-			name = "Go to Tonga Runetotem",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4949, 0.5866, "Tonga Runetotem")
-			end,
+			type = "npc",
+			id = 3448,
+			-- name = "Go to Tonga Runetotem",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4949, 0.5866, "Tonga Runetotem")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -1266,11 +1305,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN2, {
 	},
 	items = {
 		{
-			name = "Go to Sergra Darkthorn",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4999, 0.5985, "Sergra Darkthorn")
-			end,
+			type = "npc",
+			id = 3338,
+			-- name = "Go to Sergra Darkthorn",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4999, 0.5985, "Sergra Darkthorn")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -1376,12 +1417,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN3, {
 	},
 	items = {
 		{
-			name = "Go to Ta'jari",
-			breadcrumb = true,
+			type = "npc",
+			id = 34613,
+			-- name = "Go to Ta'jari",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3754, 0.4587, "Ta'jari")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3754, 0.4587, "Ta'jari")
+			-- end,
 			x = 0,
 			y = 0,
 			connections = {
@@ -1389,11 +1432,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN3, {
 			}
 		},
 		{
-			name = "Go to Apothecary Helbrim",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4859, 0.5834, "Apothecary Helbrim")
-			end,
+			type = "npc",
+			id = 3390,
+			-- name = "Go to Apothecary Helbrim",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4859, 0.5834, "Apothecary Helbrim")
+			-- end,
 			x = 2,
 			y = 0,
 			connections = {
@@ -1401,11 +1446,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN3, {
 			},
 		},
 		{
-			name = "Go to Tonga Runetotem",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4949, 0.5866, "Tonga Runetotem")
-			end,
+			type = "npc",
+			id = 3448,
+			-- name = "Go to Tonga Runetotem",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4949, 0.5866, "Tonga Runetotem")
+			-- end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -1413,12 +1460,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN3, {
 			},
 		},
 		{
-			name = "Go to Kolkar Wrangler",
-			breadcrumb = true,
+			type = "npc",
+			id = 34841,
+			-- name = "Go to Kolkar Wrangler",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3808, 0.4628, "Kolkar Wrangler")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3808, 0.4628, "Kolkar Wrangler")
+			-- end,
 			x = 6,
 			y = 0,
 			connections = {
@@ -1460,12 +1509,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN3, {
 
 		
 		{
-			name = "Go to Shoe",
-			breadcrumb = true,
+			type = "npc",
+			id = 34638,
+			-- name = "Go to Shoe",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5520, 0.7840, "Shoe")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5520, 0.7840, "Shoe")
+			-- end,
 			x = 0,
 			y = 2,
 			connections = {
@@ -1482,12 +1533,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN3, {
             },
 		},
 		{
-			name = "Go to Gorgal Angerscar",
-			breadcrumb = true,
+			type = "npc",
+			id = 34634,
+			-- name = "Go to Gorgal Angerscar",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5511, 0.7854, "Gorgal Angerscar")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5511, 0.7854, "Gorgal Angerscar")
+			-- end,
 			x = 6,
 			y = 2,
 			connections = {
@@ -1583,17 +1636,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_CHAIN4, {
 					},
 				},
 				{
-					name = "Go to Kargal Battlescar",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6767, 0.3939, "Kargal Battlescar")
-					end,
+					type = "npc",
+					id = 3464,
+					-- name = "Go to Kargal Battlescar",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6767, 0.3939, "Kargal Battlescar")
+					-- end,
 				}
 			},
 			x = 3,
 			y = 0,
 			connections = {
-                3,
+                1,
             },
 		},
 		{

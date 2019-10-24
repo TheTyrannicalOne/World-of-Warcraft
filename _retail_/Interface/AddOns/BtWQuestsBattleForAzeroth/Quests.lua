@@ -170,7 +170,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -207,7 +207,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -252,7 +252,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -297,7 +297,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -334,7 +334,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -371,7 +371,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -408,7 +408,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -445,7 +445,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -482,7 +482,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -519,7 +519,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -556,7 +556,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -593,7 +593,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -638,7 +638,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -675,7 +675,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -712,7 +712,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -757,7 +757,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -794,7 +794,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -831,7 +831,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -896,7 +896,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -933,7 +933,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -970,7 +970,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1007,7 +1007,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1044,7 +1044,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1081,7 +1081,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1162,7 +1162,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1207,7 +1207,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1252,7 +1252,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1289,7 +1289,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1326,7 +1326,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1391,7 +1391,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1428,7 +1428,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1465,7 +1465,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1502,7 +1502,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1539,7 +1539,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1584,7 +1584,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1629,7 +1629,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1689,7 +1689,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1726,7 +1726,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1763,7 +1763,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1800,7 +1800,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1845,7 +1845,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1954,7 +1954,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -1999,7 +1999,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2100,7 +2100,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2137,7 +2137,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2174,7 +2174,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2211,7 +2211,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2248,7 +2248,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2285,7 +2285,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2330,7 +2330,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2367,7 +2367,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2400,7 +2400,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2445,7 +2445,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2524,7 +2524,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2561,7 +2561,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2663,7 +2663,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2700,7 +2700,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2737,7 +2737,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2774,7 +2774,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2811,7 +2811,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2848,7 +2848,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2885,7 +2885,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2922,7 +2922,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -2964,7 +2964,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3062,7 +3062,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -3099,7 +3099,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -3136,7 +3136,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -3173,7 +3173,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -3210,7 +3210,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3255,7 +3255,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3305,7 +3305,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3342,7 +3342,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3387,7 +3387,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3424,7 +3424,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3461,7 +3461,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3498,7 +3498,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3531,7 +3531,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3564,7 +3564,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3597,7 +3597,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3634,7 +3634,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3667,7 +3667,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3704,7 +3704,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3741,7 +3741,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3802,7 +3802,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3835,7 +3835,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3872,7 +3872,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -3909,7 +3909,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4431,7 +4431,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4468,7 +4468,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4505,7 +4505,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4542,7 +4542,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4579,7 +4579,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4644,7 +4644,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4681,7 +4681,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4718,7 +4718,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4791,7 +4791,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4824,7 +4824,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4861,7 +4861,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4898,7 +4898,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -4959,7 +4959,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5032,7 +5032,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -5041,7 +5041,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -5078,7 +5078,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5111,7 +5111,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5148,7 +5148,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5185,7 +5185,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5222,7 +5222,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5259,7 +5259,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5324,7 +5324,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5361,7 +5361,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5398,7 +5398,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5440,7 +5440,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5477,7 +5477,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5514,7 +5514,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -5729,7 +5729,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5766,7 +5766,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5809,7 +5809,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -5846,7 +5846,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -6059,7 +6059,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -6297,7 +6297,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -6334,7 +6334,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -6367,7 +6367,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -6424,7 +6424,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -6461,7 +6461,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -6788,7 +6788,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -6825,7 +6825,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -6862,7 +6862,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -6899,7 +6899,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -6936,7 +6936,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7101,7 +7101,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7138,7 +7138,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7175,7 +7175,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7212,7 +7212,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7249,7 +7249,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7286,7 +7286,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7323,7 +7323,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -7365,7 +7365,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -7805,7 +7805,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7842,7 +7842,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7879,7 +7879,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -7977,7 +7977,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8014,7 +8014,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8059,7 +8059,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8104,7 +8104,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8141,7 +8141,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8178,7 +8178,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8223,7 +8223,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8284,7 +8284,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8345,7 +8345,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8382,7 +8382,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8419,7 +8419,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8456,7 +8456,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8493,7 +8493,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8530,7 +8530,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -8595,7 +8595,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8632,7 +8632,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8669,7 +8669,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8706,7 +8706,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8743,7 +8743,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8780,7 +8780,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8822,7 +8822,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8859,7 +8859,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8896,7 +8896,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8933,7 +8933,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -8998,7 +8998,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -9035,7 +9035,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -9080,7 +9080,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9125,7 +9125,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9162,7 +9162,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9207,7 +9207,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -9262,7 +9262,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -9304,7 +9304,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -9341,7 +9341,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -9378,7 +9378,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9428,7 +9428,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9465,7 +9465,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9502,7 +9502,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9539,7 +9539,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9689,7 +9689,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9726,7 +9726,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9763,7 +9763,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9800,7 +9800,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9837,7 +9837,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9874,7 +9874,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9911,7 +9911,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9953,7 +9953,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -9990,7 +9990,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -10027,7 +10027,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -10060,7 +10060,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -10097,7 +10097,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -10134,7 +10134,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -10400,7 +10400,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10493,7 +10493,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10530,7 +10530,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10572,7 +10572,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10609,7 +10609,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10646,7 +10646,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10711,7 +10711,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -10748,7 +10748,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -10785,7 +10785,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10822,7 +10822,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10859,7 +10859,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10896,7 +10896,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10933,7 +10933,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -10970,7 +10970,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11007,7 +11007,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -11044,7 +11044,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -11086,7 +11086,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11123,7 +11123,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11160,7 +11160,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11197,7 +11197,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11234,7 +11234,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11279,7 +11279,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11316,7 +11316,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11353,7 +11353,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11414,7 +11414,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11456,7 +11456,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11493,7 +11493,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -11535,7 +11535,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -11572,7 +11572,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -11665,7 +11665,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11702,7 +11702,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11739,7 +11739,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -11776,7 +11776,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -11969,7 +11969,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12006,7 +12006,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12043,7 +12043,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12080,7 +12080,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -12117,7 +12117,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -12154,7 +12154,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -12191,7 +12191,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -12228,7 +12228,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12321,7 +12321,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12363,7 +12363,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12469,7 +12469,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12506,7 +12506,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12571,7 +12571,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12608,7 +12608,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12650,7 +12650,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12767,7 +12767,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12809,7 +12809,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12846,7 +12846,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12883,7 +12883,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12920,7 +12920,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12957,7 +12957,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -12994,7 +12994,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -13031,7 +13031,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -13068,7 +13068,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -13222,7 +13222,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -13259,7 +13259,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -13296,7 +13296,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -13333,7 +13333,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -13370,7 +13370,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -13435,7 +13435,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -13661,7 +13661,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -13722,7 +13722,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -13909,7 +13909,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 3500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14030,7 +14030,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14115,7 +14115,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14152,7 +14152,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14189,7 +14189,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14226,7 +14226,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14263,7 +14263,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14300,7 +14300,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14337,7 +14337,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14374,7 +14374,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14411,7 +14411,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14456,7 +14456,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14493,7 +14493,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14530,7 +14530,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14567,7 +14567,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14600,7 +14600,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14637,7 +14637,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14702,7 +14702,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14775,7 +14775,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14812,7 +14812,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -14854,7 +14854,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -14896,7 +14896,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -14933,7 +14933,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -14970,7 +14970,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15007,7 +15007,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -15049,7 +15049,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15086,7 +15086,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15184,7 +15184,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -15226,7 +15226,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -15268,7 +15268,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -15310,7 +15310,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -15352,7 +15352,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -15399,7 +15399,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -15441,7 +15441,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15478,7 +15478,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15515,7 +15515,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15552,7 +15552,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15589,7 +15589,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15626,7 +15626,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15663,7 +15663,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15700,7 +15700,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15737,7 +15737,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -15802,7 +15802,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -15839,7 +15839,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -15952,7 +15952,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -15994,7 +15994,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16031,7 +16031,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -16068,7 +16068,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16105,7 +16105,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16142,7 +16142,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16179,7 +16179,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16216,7 +16216,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16358,7 +16358,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16467,7 +16467,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16504,7 +16504,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16541,7 +16541,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16583,7 +16583,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -16616,7 +16616,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16924,7 +16924,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -16989,7 +16989,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17050,7 +17050,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17087,7 +17087,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17124,7 +17124,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17205,7 +17205,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17242,7 +17242,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17287,7 +17287,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17324,7 +17324,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17361,7 +17361,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17398,7 +17398,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17435,7 +17435,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17477,7 +17477,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17519,7 +17519,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17556,7 +17556,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17593,7 +17593,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17630,7 +17630,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17667,7 +17667,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -17737,7 +17737,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17774,7 +17774,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17811,7 +17811,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17848,7 +17848,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17885,7 +17885,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17922,7 +17922,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17959,7 +17959,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -17996,7 +17996,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18033,7 +18033,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18070,7 +18070,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18131,7 +18131,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18164,7 +18164,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18201,7 +18201,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18250,7 +18250,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18287,7 +18287,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18324,7 +18324,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18361,7 +18361,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18406,7 +18406,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -18443,7 +18443,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -18485,7 +18485,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -18522,7 +18522,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -18559,7 +18559,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -18592,7 +18592,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18629,7 +18629,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18666,7 +18666,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18708,7 +18708,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -18745,7 +18745,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18782,7 +18782,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18827,7 +18827,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -18860,7 +18860,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18897,7 +18897,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -18934,7 +18934,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -18971,7 +18971,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19008,7 +19008,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19058,7 +19058,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19095,7 +19095,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19132,7 +19132,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19201,7 +19201,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19238,7 +19238,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19275,7 +19275,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19340,7 +19340,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -19405,7 +19405,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -19442,7 +19442,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -19479,7 +19479,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -19516,7 +19516,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -19553,7 +19553,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -19590,7 +19590,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -19627,7 +19627,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -19664,7 +19664,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19759,7 +19759,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -19796,7 +19796,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20183,7 +20183,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20286,7 +20286,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20323,7 +20323,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20360,7 +20360,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20397,7 +20397,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20434,7 +20434,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20467,7 +20467,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20500,7 +20500,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20545,7 +20545,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20590,7 +20590,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20635,7 +20635,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20680,7 +20680,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -20744,7 +20744,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -20781,7 +20781,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -20818,7 +20818,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -20855,7 +20855,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -20892,7 +20892,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -20929,7 +20929,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -20966,7 +20966,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21004,7 +21004,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21041,7 +21041,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21078,7 +21078,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21132,7 +21132,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21169,7 +21169,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -21206,7 +21206,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21243,7 +21243,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21280,7 +21280,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21317,7 +21317,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21354,7 +21354,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21391,7 +21391,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21469,7 +21469,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21506,7 +21506,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21543,7 +21543,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21580,7 +21580,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21617,7 +21617,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21674,7 +21674,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -21711,7 +21711,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21748,7 +21748,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -21793,7 +21793,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -21896,7 +21896,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -21933,7 +21933,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -21975,7 +21975,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22012,7 +22012,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22054,7 +22054,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22091,7 +22091,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22128,7 +22128,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22170,7 +22170,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22207,7 +22207,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22244,7 +22244,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22281,7 +22281,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22318,7 +22318,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22355,7 +22355,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22392,7 +22392,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22429,7 +22429,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22466,7 +22466,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22503,7 +22503,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22548,7 +22548,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22581,7 +22581,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22623,7 +22623,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 3000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22660,7 +22660,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22697,7 +22697,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22762,7 +22762,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22827,7 +22827,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -22864,7 +22864,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -22901,7 +22901,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23154,7 +23154,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23191,7 +23191,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -23228,7 +23228,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -23261,7 +23261,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -23294,7 +23294,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -23331,7 +23331,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -23368,7 +23368,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -23410,7 +23410,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23475,7 +23475,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23540,7 +23540,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23573,7 +23573,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23610,7 +23610,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23652,7 +23652,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23689,7 +23689,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23726,7 +23726,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -23763,7 +23763,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23805,7 +23805,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23842,7 +23842,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23879,7 +23879,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23916,7 +23916,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -23961,7 +23961,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -23998,7 +23998,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24104,7 +24104,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24137,7 +24137,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24174,7 +24174,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24211,7 +24211,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24248,7 +24248,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24290,7 +24290,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24327,7 +24327,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24397,7 +24397,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24434,7 +24434,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24476,7 +24476,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24518,7 +24518,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24555,7 +24555,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24597,7 +24597,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24634,7 +24634,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24671,7 +24671,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24708,7 +24708,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24745,7 +24745,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24782,7 +24782,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24815,7 +24815,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24880,7 +24880,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24917,7 +24917,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -24962,7 +24962,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -24999,7 +24999,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25036,7 +25036,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25073,7 +25073,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25110,7 +25110,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25143,7 +25143,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25180,7 +25180,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25217,7 +25217,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25250,7 +25250,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25287,7 +25287,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25324,7 +25324,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25362,7 +25362,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25399,7 +25399,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25460,7 +25460,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25497,7 +25497,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25534,7 +25534,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25571,7 +25571,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25613,7 +25613,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -25655,7 +25655,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25692,7 +25692,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25725,7 +25725,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25762,7 +25762,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25799,7 +25799,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -25844,7 +25844,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26361,7 +26361,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26398,7 +26398,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26435,7 +26435,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26472,7 +26472,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -26509,7 +26509,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26546,7 +26546,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26583,7 +26583,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -26625,7 +26625,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26667,7 +26667,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26704,7 +26704,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -26741,7 +26741,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26778,7 +26778,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26815,7 +26815,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26852,7 +26852,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26885,7 +26885,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26927,7 +26927,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -26964,7 +26964,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27006,7 +27006,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27043,7 +27043,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27080,7 +27080,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27117,7 +27117,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27231,7 +27231,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -27268,7 +27268,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27329,7 +27329,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27366,7 +27366,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27403,7 +27403,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -27440,7 +27440,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27477,7 +27477,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27514,7 +27514,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27551,7 +27551,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27588,7 +27588,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -27883,7 +27883,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -27920,7 +27920,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27957,7 +27957,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -27994,7 +27994,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28059,7 +28059,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28129,7 +28129,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -28171,7 +28171,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28260,7 +28260,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28297,7 +28297,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28334,7 +28334,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28376,7 +28376,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28413,7 +28413,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28455,7 +28455,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28488,7 +28488,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28525,7 +28525,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28562,7 +28562,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28595,7 +28595,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28632,7 +28632,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28669,7 +28669,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28706,7 +28706,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28743,7 +28743,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -28863,7 +28863,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -28898,7 +28898,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -28983,7 +28983,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -29003,7 +29003,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -29035,7 +29035,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -29087,7 +29087,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29176,7 +29176,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29213,7 +29213,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29250,7 +29250,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29311,7 +29311,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29348,7 +29348,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29385,7 +29385,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29422,7 +29422,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29459,7 +29459,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29496,7 +29496,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29533,7 +29533,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29570,7 +29570,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29607,7 +29607,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29672,7 +29672,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29709,7 +29709,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29746,7 +29746,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29788,7 +29788,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29862,7 +29862,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29895,7 +29895,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -29937,7 +29937,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -29974,7 +29974,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30052,7 +30052,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30145,7 +30145,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30195,7 +30195,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30256,7 +30256,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30293,7 +30293,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30330,7 +30330,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30367,7 +30367,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30404,7 +30404,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30441,7 +30441,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30478,7 +30478,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30511,7 +30511,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30548,7 +30548,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30585,7 +30585,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30622,7 +30622,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30638,7 +30638,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 1500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30654,7 +30654,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 1500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30670,7 +30670,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 1500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30686,7 +30686,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 1500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30702,7 +30702,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 1500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30718,7 +30718,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 1500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30734,7 +30734,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 1500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30750,7 +30750,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 1500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -30787,7 +30787,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30824,7 +30824,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30861,7 +30861,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30898,7 +30898,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -30963,7 +30963,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31000,7 +31000,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31037,7 +31037,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -31074,7 +31074,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31123,7 +31123,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31193,7 +31193,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31230,7 +31230,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31267,7 +31267,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -31304,7 +31304,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31341,7 +31341,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31378,7 +31378,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31415,7 +31415,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31457,7 +31457,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -31494,7 +31494,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31531,7 +31531,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31596,7 +31596,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31657,7 +31657,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31695,7 +31695,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31728,7 +31728,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31765,7 +31765,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31854,7 +31854,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -31919,7 +31919,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31956,7 +31956,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -31993,7 +31993,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32030,7 +32030,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32059,7 +32059,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32096,7 +32096,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32138,7 +32138,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32199,7 +32199,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32264,7 +32264,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32301,7 +32301,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32338,7 +32338,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32375,7 +32375,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32412,7 +32412,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32449,7 +32449,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32486,7 +32486,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32528,7 +32528,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32565,7 +32565,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32602,7 +32602,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32639,7 +32639,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32676,7 +32676,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32713,7 +32713,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32755,7 +32755,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32784,7 +32784,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32845,7 +32845,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -32910,7 +32910,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -32947,7 +32947,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33012,7 +33012,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33049,7 +33049,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33082,7 +33082,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33119,7 +33119,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33156,7 +33156,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33193,7 +33193,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33230,7 +33230,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33263,7 +33263,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33300,7 +33300,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33337,7 +33337,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33370,7 +33370,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33478,7 +33478,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33600,7 +33600,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33637,7 +33637,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33670,7 +33670,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -33735,7 +33735,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33800,7 +33800,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33845,7 +33845,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -33882,7 +33882,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -33919,7 +33919,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -33961,7 +33961,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34034,7 +34034,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34151,7 +34151,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34175,7 +34175,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34195,7 +34195,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34228,7 +34228,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34308,7 +34308,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34337,7 +34337,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34379,7 +34379,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34416,7 +34416,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34453,7 +34453,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34490,7 +34490,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34527,7 +34527,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34605,7 +34605,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34731,7 +34731,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34763,7 +34763,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34787,7 +34787,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34824,7 +34824,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34869,7 +34869,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -34902,7 +34902,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34923,7 +34923,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -34984,7 +34984,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -35021,7 +35021,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35054,7 +35054,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -35096,7 +35096,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -35133,7 +35133,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -35170,7 +35170,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -35212,7 +35212,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -35221,7 +35221,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -35294,7 +35294,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35339,7 +35339,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35544,7 +35544,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35581,7 +35581,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35623,7 +35623,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35660,7 +35660,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35697,7 +35697,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35734,7 +35734,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35771,7 +35771,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35808,7 +35808,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35845,7 +35845,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35887,7 +35887,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -35896,7 +35896,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -35938,7 +35938,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -35980,7 +35980,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -36022,7 +36022,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -36064,7 +36064,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -36133,7 +36133,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -36183,7 +36183,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -36192,7 +36192,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -36257,7 +36257,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -36350,7 +36350,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -36415,7 +36415,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -36476,7 +36476,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -36627,7 +36627,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -36669,7 +36669,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -36711,7 +36711,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -36753,7 +36753,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -36795,7 +36795,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -36804,7 +36804,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37080,7 +37080,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37117,7 +37117,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37181,7 +37181,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37223,7 +37223,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37260,7 +37260,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37297,7 +37297,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37334,7 +37334,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37371,7 +37371,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37435,7 +37435,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37472,7 +37472,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37514,7 +37514,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37559,7 +37559,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37596,7 +37596,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -37638,7 +37638,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -37680,7 +37680,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -37749,7 +37749,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37881,7 +37881,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -37890,7 +37890,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -37935,7 +37935,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -37980,7 +37980,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -38025,7 +38025,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -38070,7 +38070,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -38115,7 +38115,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -38157,7 +38157,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -38194,7 +38194,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -38382,7 +38382,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -38424,7 +38424,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -38515,7 +38515,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -38557,7 +38557,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -38590,7 +38590,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -38632,7 +38632,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -38723,7 +38723,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -38760,7 +38760,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -38829,7 +38829,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -38871,7 +38871,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -39002,7 +39002,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -39068,7 +39068,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39110,7 +39110,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39155,7 +39155,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -39205,7 +39205,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39265,7 +39265,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -39334,7 +39334,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39376,7 +39376,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39452,7 +39452,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -39499,7 +39499,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39544,7 +39544,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -39626,7 +39626,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39744,7 +39744,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39935,7 +39935,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -39972,7 +39972,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -40014,7 +40014,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -40331,7 +40331,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -40512,7 +40512,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -40545,7 +40545,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -40578,7 +40578,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -40615,7 +40615,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -40652,7 +40652,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -40717,7 +40717,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -40754,7 +40754,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -40791,7 +40791,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -40833,7 +40833,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -40862,7 +40862,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -40899,7 +40899,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -40936,7 +40936,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -40973,7 +40973,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41010,7 +41010,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41101,7 +41101,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41254,7 +41254,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -41296,7 +41296,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -41360,7 +41360,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -41407,7 +41407,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -41444,7 +41444,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -41588,7 +41588,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41625,7 +41625,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41719,7 +41719,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41743,7 +41743,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41767,7 +41767,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41799,7 +41799,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41838,7 +41838,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41862,7 +41862,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41886,7 +41886,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41910,7 +41910,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41954,7 +41954,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -41991,7 +41991,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42083,7 +42083,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42174,7 +42174,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42211,7 +42211,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42248,7 +42248,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42391,7 +42391,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -42428,7 +42428,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -42519,7 +42519,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42556,7 +42556,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42593,7 +42593,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -42630,7 +42630,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -42667,7 +42667,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -42704,7 +42704,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -42741,7 +42741,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -42935,7 +42935,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42959,7 +42959,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -42983,7 +42983,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43007,7 +43007,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43036,7 +43036,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43079,8 +43079,9 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [51796] = {
         name = "The Battle for Lordaeron",
-        level = 110,
         requiredLevel = 110,
+        maxLevel = 120,
+        levelFlag = 5,
         source = {
             type = "npc",
             id = 140176,
@@ -43097,15 +43098,18 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "experience",
                 amounts = {
-                    16450, 1850, 1850, 1850, 1850, 1850, 1450, 1100, 725, 
+                    24700, 24900, 25100, 25300, 25500, 25750, 25950, 26150, 26350, 26550, 
                 },
                 minLevel = 110,
-                maxLevel = 118,
-                outdated = 370,
+                maxLevel = 119,
             },
             {
                 type = "money",
-                amount = 194000,
+                amounts = {
+                    194000, 198000, 202000, 206000, 210000, 214000, 218000, 222000, 226000, 230000, 234000, 
+                },
+                minLevel = 110,
+                maxLevel = 120,
             },
         },
     },
@@ -43143,7 +43147,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43194,7 +43198,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43257,7 +43261,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43281,7 +43285,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43333,7 +43337,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43357,7 +43361,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43417,7 +43421,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -43751,7 +43755,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43901,7 +43905,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -43974,7 +43978,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -44078,7 +44082,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44117,7 +44121,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44174,7 +44178,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44198,7 +44202,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44222,7 +44226,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44246,7 +44250,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44285,7 +44289,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44309,7 +44313,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44348,7 +44352,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44526,7 +44530,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -44619,7 +44623,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -44656,7 +44660,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -44685,7 +44689,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -44717,7 +44721,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44782,7 +44786,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44819,7 +44823,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -44852,7 +44856,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44909,7 +44913,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44957,7 +44961,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -44992,7 +44996,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45030,7 +45034,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45061,7 +45065,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45085,7 +45089,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45105,7 +45109,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45140,7 +45144,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45190,7 +45194,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45229,7 +45233,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45253,7 +45257,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45277,7 +45281,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45301,7 +45305,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45325,7 +45329,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45349,7 +45353,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45373,7 +45377,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45383,14 +45387,6 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -45403,14 +45399,6 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    22300, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 468000,
             },
@@ -45420,7 +45408,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45431,14 +45419,6 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 234000,
             },
@@ -45448,7 +45428,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45459,14 +45439,6 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 234000,
             },
@@ -45476,7 +45448,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45490,14 +45462,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 140258,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -45536,7 +45500,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -45552,14 +45516,6 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 234000,
             },
@@ -45574,7 +45530,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45584,14 +45540,6 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    8950, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 117000,
@@ -45603,14 +45551,6 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    22300, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 468000,
@@ -45637,7 +45577,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45647,14 +45587,6 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -45666,14 +45598,6 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -45723,7 +45647,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45743,7 +45667,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45768,7 +45692,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45810,7 +45734,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45830,7 +45754,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45850,7 +45774,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45870,7 +45794,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45890,7 +45814,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45910,7 +45834,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45952,7 +45876,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -45985,7 +45909,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -46017,7 +45941,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -46129,7 +46053,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46219,7 +46143,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -46352,7 +46276,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -46407,7 +46331,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
             {
@@ -46551,7 +46475,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46571,7 +46495,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46591,7 +46515,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46611,7 +46535,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46631,7 +46555,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46651,7 +46575,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46676,7 +46600,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46849,14 +46773,6 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    22300, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 468000,
             },
@@ -46866,7 +46782,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -46930,7 +46846,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -46940,14 +46856,6 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 23400,
@@ -46964,14 +46872,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 234000,
             },
@@ -46987,14 +46887,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 234000,
             },
@@ -47004,7 +46896,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47014,14 +46906,6 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -47047,7 +46931,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47061,14 +46945,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 141672,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -47090,7 +46966,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47114,7 +46990,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47145,7 +47021,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47165,7 +47041,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47185,7 +47061,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47222,7 +47098,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47242,7 +47118,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47262,7 +47138,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47287,7 +47163,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47324,7 +47200,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47361,7 +47237,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47398,7 +47274,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 25,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47440,7 +47316,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47533,7 +47409,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47591,7 +47467,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47657,7 +47533,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47685,7 +47561,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47705,7 +47581,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -47733,7 +47609,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47749,7 +47625,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47784,7 +47660,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47812,7 +47688,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47854,7 +47730,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47878,7 +47754,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -47907,7 +47783,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -48004,7 +47880,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -48204,7 +48080,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 140105,
-            name = "Nathanos Blightcaller",
         },
         rewards = {
             {
@@ -48438,7 +48313,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -48491,6 +48366,8 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "The Lord Admiral's Lament",
         requiredLevel = 120,
         maxLevel = 120,
+        rewards = {
+        },
     },
     [53131] = {
         name = "Kings' Rest",
@@ -48646,7 +48523,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -48731,7 +48608,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -48756,7 +48633,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -48816,7 +48693,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -48858,7 +48735,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -49007,7 +48884,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49176,7 +49053,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -49185,7 +49062,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49223,7 +49100,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -49232,7 +49109,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49265,7 +49142,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49298,7 +49175,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 150,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49336,7 +49213,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -49345,7 +49222,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49382,7 +49259,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49419,7 +49296,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49469,7 +49346,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -49478,7 +49355,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49520,7 +49397,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -49570,7 +49447,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -49620,7 +49497,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -49670,7 +49547,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
             {
@@ -49679,7 +49556,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49703,7 +49580,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49727,7 +49604,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49751,7 +49628,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 75,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49852,7 +49729,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49872,7 +49749,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -49948,14 +49825,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 23400,
             },
@@ -49993,14 +49862,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -50048,14 +49909,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 23400,
             },
@@ -50070,14 +49923,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 311218,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -50098,14 +49943,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 144773,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    22300, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 468000,
@@ -50147,14 +49984,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    22300, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 468000,
             },
@@ -50170,14 +49999,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 23400,
             },
@@ -50192,14 +50013,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 146335,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 23400,
@@ -50222,14 +50035,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 23400,
             },
@@ -50244,7 +50049,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 10,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -50258,14 +50063,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 145190,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -50286,7 +50083,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -50300,14 +50097,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 145225,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 23400,
@@ -50338,7 +50127,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -50372,7 +50161,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -50416,7 +50205,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 350,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -50430,14 +50219,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 122688,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 23400,
@@ -50453,7 +50234,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -50467,14 +50248,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 122688,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    26800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 702000,
@@ -50495,7 +50268,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 500,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -50509,14 +50282,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 131840,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 23400,
@@ -51419,7 +51184,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -51496,7 +51261,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 146462,
-            name = "Rexxar",
         },
         rewards = {
             {
@@ -51512,7 +51276,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 146462,
-            name = "Rexxar",
         },
         rewards = {
             {
@@ -51784,7 +51547,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -52583,7 +52346,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -52678,7 +52441,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 146791,
-            name = "Dark Ranger Lyana",
             locations = {
                 [37] = {
                     {
@@ -52717,7 +52479,14 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 146937,
-            name = "Marion Sutton",
+            locations = {
+                [49] = {
+                    {
+                        x = 0.258687,
+                        y = 0.399931,
+                    },
+                },
+            },
         },
         rewards = {
             {
@@ -52733,7 +52502,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 146937,
-            name = "Dark Ranger Lyana",
         },
         rewards = {
             {
@@ -52920,6 +52688,8 @@ BtWQuestsDatabase:AddQuestsTable({
             type = "npc",
             id = 148339,
         },
+        rewards = {
+        },
     },
     [54126] = {
         name = "Twist the Knife",
@@ -53041,7 +52811,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -53070,7 +52840,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 250,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -53187,7 +52957,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -53331,7 +53101,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -53360,7 +53130,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -53483,7 +53253,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 147293,
-            name = "Grong",
         },
         rewards = {
             {
@@ -53636,7 +53405,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -53738,14 +53507,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -53850,14 +53611,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 23400,
             },
@@ -53873,14 +53626,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    35700, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 936000,
             },
@@ -53895,7 +53640,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_HORDE,
+                    id = BtWQuests.Constant.Faction.Horde,
                 },
             },
         },
@@ -53917,14 +53662,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -53955,14 +53692,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 135612,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 23400,
@@ -54283,7 +54012,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -54307,7 +54036,7 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 2000,
                 restrictions = {
                     type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    id = BtWQuests.Constant.Faction.Alliance,
                 },
             },
         },
@@ -54824,14 +54553,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 23400,
             },
@@ -54891,14 +54612,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 149084,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    1800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 23400,
@@ -54960,14 +54673,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 234000,
             },
@@ -54982,14 +54687,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 145593,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 234000,
@@ -55402,6 +55099,11 @@ BtWQuestsDatabase:AddQuestsTable({
                 id = 1553,
                 amount = 750,
             },
+            {
+                type = "currency",
+                id = 1560,
+                amount = 20,
+            },
         },
     },
     [54964] = {
@@ -55484,6 +55186,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -55504,6 +55210,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 500,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -55694,6 +55404,11 @@ BtWQuestsDatabase:AddQuestsTable({
                 id = 1553,
                 amount = 750,
             },
+            {
+                type = "currency",
+                id = 1560,
+                amount = 20,
+            },
         },
     },
     [55047] = {
@@ -55793,6 +55508,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -55935,7 +55654,11 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 2373,
-                amount = 75,
+                amount = 225,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -55987,6 +55710,22 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2391,
                 amount = 75,
+            },
+        },
+    },
+    [55103] = {
+        name = "Ideas Can Come from Anywhere",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+            {
+                type = "reputation",
+                id = 2391,
+                amount = 25,
             },
         },
     },
@@ -56072,11 +55811,19 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 500,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
             {
                 type = "reputation",
                 id = 2400,
                 amount = 500,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -56169,7 +55916,11 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 2400,
-                amount = 75,
+                amount = 150,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -56926,6 +56677,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -56946,6 +56701,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -56966,6 +56725,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -57021,6 +56784,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
             {
                 type = "reputation",
@@ -57036,7 +56803,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 152108,
-            name = "Neri Sharpfin",
         },
         rewards = {
             {
@@ -57047,6 +56813,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
             {
                 type = "reputation",
@@ -57297,7 +57067,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 152385,
-            name = "Spiritwalker Ebonhorn",
         },
         rewards = {
             {
@@ -57368,6 +57137,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57389,6 +57162,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 150,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57409,6 +57186,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57429,6 +57210,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57449,6 +57234,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57469,6 +57258,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57494,6 +57287,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57522,6 +57319,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 150,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57532,7 +57333,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 152385,
-            name = "Spiritwalker Ebonhorn",
         },
         rewards = {
             {
@@ -57558,6 +57358,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 350,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
             {
                 type = "reputation",
@@ -57749,11 +57553,19 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
             {
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -57774,6 +57586,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -57809,6 +57625,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -57837,6 +57657,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -57865,6 +57689,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -57893,6 +57721,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -57921,6 +57753,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -57949,6 +57785,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -57977,6 +57817,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58005,6 +57849,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58038,6 +57886,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 150,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58118,6 +57970,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58153,6 +58009,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58188,6 +58048,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58208,6 +58072,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58228,6 +58096,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58248,6 +58120,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58273,6 +58149,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58570,6 +58450,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -58847,7 +58731,7 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 2164,
-                amount = 10,
+                amount = 1000,
             },
             {
                 type = "reputation",
@@ -58920,14 +58804,6 @@ BtWQuestsDatabase:AddQuestsTable({
             id = 151848,
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    8950, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 117000,
@@ -59029,14 +58905,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    8950, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 117000,
             },
@@ -59059,14 +58927,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
         rewards = {
-            {
-                type = "experience",
-                amounts = {
-                    26800, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
             {
                 type = "money",
                 amount = 702000,
@@ -59112,12 +58972,16 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "currency",
                 id = 1721,
-                amount = 40,
+                amount = 25,
             },
             {
                 type = "reputation",
                 id = 2373,
-                amount = 250,
+                amount = 350,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59138,6 +59002,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59158,6 +59026,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59178,6 +59050,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59198,6 +59074,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59218,6 +59098,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59238,6 +59122,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59258,6 +59146,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59283,6 +59175,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59303,6 +59199,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59328,6 +59228,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 150,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59348,6 +59252,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59373,6 +59281,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 150,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59393,6 +59305,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59413,6 +59329,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59484,6 +59404,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59504,6 +59428,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59524,6 +59452,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59579,6 +59511,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59599,6 +59535,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59619,6 +59559,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59714,6 +59658,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59931,6 +59879,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -59951,6 +59903,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59971,6 +59927,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -59990,7 +59950,11 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 2373,
-                amount = 350,
+                amount = 500,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60011,6 +59975,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60027,6 +59995,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60043,6 +60015,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60063,6 +60039,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60083,6 +60063,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60103,6 +60087,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60123,6 +60111,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60143,6 +60135,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60163,6 +60159,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60183,6 +60183,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60203,6 +60207,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60213,6 +60221,17 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 154465,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
         },
     },
     [56304] = {
@@ -60232,11 +60251,19 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
             {
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60277,6 +60304,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60297,6 +60328,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60317,6 +60352,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60330,14 +60369,6 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    17850, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 234000,
             },
@@ -60345,6 +60376,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 50,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60365,6 +60400,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60385,6 +60424,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60405,6 +60448,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60425,6 +60472,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60475,11 +60526,19 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
             {
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60499,12 +60558,16 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "currency",
                 id = 1721,
-                amount = 40,
+                amount = 25,
             },
             {
                 type = "reputation",
                 id = 2400,
-                amount = 250,
+                amount = 350,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60525,6 +60588,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60545,6 +60612,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60558,13 +60629,25 @@ BtWQuestsDatabase:AddQuestsTable({
         },
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    35700, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
+                type = "money",
+                amount = 936000,
             },
+            {
+                type = "reputation",
+                id = 2400,
+                amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
+            },
+        },
+    },
+    [56349] = {
+        name = "The Eternal Palace: Pushing the Limits",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
             {
                 type = "money",
                 amount = 936000,
@@ -60573,13 +60656,12 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
-    },
-    [56349] = {
-        name = "The Eternal Palace: Pushing the Limits",
-        requiredLevel = 120,
-        maxLevel = 120,
     },
     [56350] = {
         name = "Scouting the Palace",
@@ -60599,6 +60681,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 150,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60615,6 +60701,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60624,14 +60714,6 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         rewards = {
             {
-                type = "experience",
-                amounts = {
-                    35700, 
-                },
-                minLevel = 120,
-                maxLevel = 121,
-            },
-            {
                 type = "money",
                 amount = 936000,
             },
@@ -60639,6 +60721,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60659,6 +60745,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60679,6 +60769,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60704,6 +60798,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 500,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60729,6 +60827,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 500,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60792,11 +60894,19 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
             {
                 type = "reputation",
                 id = 2400,
                 amount = 25,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60825,6 +60935,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60907,6 +61021,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2373,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
             },
         },
     },
@@ -60927,6 +61045,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -60937,7 +61059,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 155482,
-            name = "Shandris Feathermoon",
         },
         rewards = {
             {
@@ -60953,7 +61074,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 155482,
-            name = "Shandris Feathermoon",
         },
         rewards = {
             {
@@ -60969,7 +61089,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 155482,
-            name = "Shandris Feathermoon",
         },
         rewards = {
             {
@@ -60985,7 +61104,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 155482,
-            name = "Shandris Feathermoon",
         },
         rewards = {
             {
@@ -61019,6 +61137,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -61029,6 +61151,12 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 155784,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
         },
     },
     [56739] = {
@@ -61048,6 +61176,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -61076,23 +61208,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 75,
-            },
-        },
-    },
-    [56803] = {
-        name = "Just A Friend",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 151309,
-            name = "Vim Brineheart",
-        },
-        rewards = {
-            {
-                type = "reputation",
-                id = 2373,
-                amount = 75,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },
@@ -61237,6 +61356,35 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [57005] = {
+        name = "Becoming a Friend",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154002,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+            {
+                type = "currency",
+                id = 1721,
+                amount = 12,
+            },
+            {
+                type = "reputation",
+                id = 2373,
+                amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Horde,
+                },
+            },
+        },
+    },
     [57006] = {
         name = "A Worthy Ally",
         requiredLevel = 120,
@@ -61259,6 +61407,10 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2400,
                 amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BtWQuests.Constant.Faction.Alliance,
+                },
             },
         },
     },

@@ -5447,6 +5447,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54639] = {
         name = "Um sinal nos Picos Tempestuosos",
     },
+    [54640] = {
+        name = "Gnomisericórdia!",
+    },
+    [54641] = {
+        name = "Por Gnomeregan!",
+    },
     [54642] = {
         name = "G.E.N.I.O. indomável",
     },
@@ -5501,8 +5507,35 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54754] = {
         name = "Pela Rainha",
     },
+    [54759] = {
+        name = "Quando os espíritos sussurram",
+    },
+    [54760] = {
+        name = "Os Andarilhos Espirituais",
+    },
+    [54761] = {
+        name = "Guia espiritual",
+    },
+    [54762] = {
+        name = "Um pequeno recuo",
+    },
+    [54763] = {
+        name = "A travessia",
+    },
+    [54764] = {
+        name = "Cerco em Casco Sangrento",
+    },
+    [54765] = {
+        name = "O agradecimento ao guia",
+    },
+    [54766] = {
+        name = "Atenda ao chamado",
+    },
     [54787] = {
         name = "Máscara para um amigo",
+    },
+    [54850] = {
+        name = "Operação: Troggargeddon",
     },
     [54851] = {
         name = "Bênção das Marés",
@@ -5669,6 +5702,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55101] = {
         name = "A sucatrônica e você",
     },
+    [55103] = {
+        name = "Ideias podem vir de qualquer lugar",
+    },
     [55116] = {
         name = "Onde fica a dica",
     },
@@ -5828,8 +5864,20 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Dentro da Estrada Onírica",
     },
+    [55393] = {
+        name = "Contenção do Caos",
+    },
+    [55394] = {
+        name = "Estilhaços de Esmeralda",
+    },
+    [55395] = {
+        name = "Não feche os olhos",
+    },
     [55396] = {
         name = "Do que sonhos são feitos",
+    },
+    [55397] = {
+        name = "Antes do despertar",
     },
     [55398] = {
         name = "O longo despertar",
@@ -5845,6 +5893,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55462] = {
         name = "O chamado da Andarilha",
+    },
+    [55465] = {
+        name = "Sonho adentro",
     },
     [55469] = {
         name = "Zin-Azshari",
@@ -5875,6 +5926,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55500] = {
         name = "O resgate",
+    },
+    [55503] = {
+        name = "O escornante e o saurídeo",
     },
     [55504] = {
         name = "Santuários de Zuldazar",
@@ -6044,6 +6098,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55731] = {
         name = "Os exércitos do meu pai",
     },
+    [55732] = {
+        name = "Uma velha cicatriz",
+    },
     [55734] = {
         name = "Construção de perfuratriz",
     },
@@ -6052,6 +6109,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55736] = {
         name = "Boas-vindas à resistência",
+    },
+    [55737] = {
+        name = "No tempo de azerita",
+    },
+    [55752] = {
+        name = "Juntos venceremos",
     },
     [55753] = {
         name = "Um robô para chamar de seu",
@@ -6182,6 +6245,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Uma lâmina temperada",
     },
+    [56167] = {
+        name = "Investigando o Planalto",
+    },
     [56168] = {
         name = "Retificado na fábrica",
     },
@@ -6253,6 +6319,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [56248] = {
         name = "A história do tesouro",
+    },
+    [56267] = {
+        name = "Sussurros de N'Zoth",
     },
     [56304] = {
         name = "Vida altaneira",
@@ -6344,6 +6413,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56429] = {
         name = "O que vamos enfrentar",
     },
+    [56494] = {
+        name = "À véspera da batalha",
+    },
+    [56495] = {
+        name = "Eles avançam contra nós",
+    },
+    [56496] = {
+        name = "À véspera da batalha",
+    },
     [56504] = {
         name = "Diário de Wrathion",
     },
@@ -6368,19 +6446,70 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56644] = {
         name = "O que vamos enfrentar",
     },
+    [56719] = {
+        name = "Não é meu, não",
+    },
     [56739] = {
         name = "O poder da adoração",
     },
     [56741] = {
         name = "A lança do destino",
     },
-    [56803] = {
-        name = "Só amizade",
+    [56833] = {
+        name = "Líderes da Horda",
+    },
+    [56979] = {
+        name = "Salvamento do cerco",
+    },
+    [56980] = {
+        name = "Já entre nós",
+    },
+    [56981] = {
+        name = "Posicionamento estratégico",
+    },
+    [56982] = {
+        name = "Diante dos Portões de Orgrimmar",
+    },
+    [56993] = {
+        name = "O preço da vitória",
+    },
+    [57002] = {
+        name = "Velho soldado",
+    },
+    [57005] = {
+        name = "Fazendo amizade",
     },
     [57006] = {
         name = "Aliados dignos",
     },
     [57010] = {
         name = "Reunindo poder",
+    },
+    [57088] = {
+        name = "Não é meu, não",
+    },
+    [57090] = {
+        name = "Salvamento do cerco",
+    },
+    [57091] = {
+        name = "Já entre nós",
+    },
+    [57092] = {
+        name = "Posicionamento estratégico",
+    },
+    [57093] = {
+        name = "Diante dos Portões de Orgrimmar",
+    },
+    [57094] = {
+        name = "O preço da vitória",
+    },
+    [57095] = {
+        name = "Velho soldado",
+    },
+    [57126] = {
+        name = "... E seguindo mares",
+    },
+    [57198] = {
+        name = "Senso de obrigação",
     },
 })

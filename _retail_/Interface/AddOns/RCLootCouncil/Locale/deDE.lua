@@ -38,6 +38,8 @@ L["All unawarded items"] = "Alle nicht vergebenen Gegenstände"
 L["Alt click Looting"] = "Alt-Klick-Plündern"
 L["alt_click_looting_desc"] = "Aktiviert das Plündern mit Alt-Klick, das heißt, dass eine Plündersitzung beginnt, wenn du Alt gedrückt hältst und auf einen Gegenstand (links)klickst."
 L["Alternatively, flag the loot as award later."] = "Alternativ, Markiere die Beute zur späteren Vergabe."
+--[[Translation missing --]]
+--[[ L["Always show owner"] = ""--]] 
 L["Always use RCLootCouncil with Personal Loot"] = "RCLootCouncil immer mit Persönlicher Beute nutzen"
 L["always_show_tooltip_howto"] = "Tooltip durch Doppelklick ein-/ausschalten"
 L["Announce Awards"] = "Vergaben ankündigen"
@@ -350,6 +352,10 @@ Dies kann nicht rückgängig gemacht werden.]=]
 L["opt_deleteName_desc"] = "Löscht alle Einträge des gewählten Kandidaten."
 L["opt_deletePatch_confirm"] = "Bist du sicher, dass du alles, das älter ist als der ausgewählte Patch ist, löschen möchtest? Dies kann nicht rückgängig gemacht werden."
 L["opt_deletePatch_desc"] = "Löscht alle Einträge, die vor dem ausgewählten Patch hinzugefügt wurden."
+--[[Translation missing --]]
+--[[ L["opt_deleteRaid_confirm"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_deleteRaid_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["opt_moreButtons_desc"] = ""--]] 
 --[[Translation missing --]]

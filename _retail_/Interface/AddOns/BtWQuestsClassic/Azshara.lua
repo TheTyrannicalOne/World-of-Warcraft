@@ -53,11 +53,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_DEFENDING_ORGRIMMAR, 
 					},
 				},
 				{
-					name = "Go to Labor Captain Grabbit",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2700, 0.7708, "Labor Captain Grabbit")
-					end,
+					type = "npc",
+					id = 35086,
+					-- name = "Go to Labor Captain Grabbit",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2700, 0.7708, "Labor Captain Grabbit")
+					-- end,
 				}
 			},
 			x = 3,
@@ -213,11 +215,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_REDIRECTING_THE_LEY_L
 					},
 				},
 				{
-					name = "Go to Horzak Zignibble",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2915, 0.6624, "Horzak Zignibble")
-					end,
+					type = "npc",
+					id = 35091,
+					-- name = "Go to Horzak Zignibble",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2915, 0.6624, "Horzak Zignibble")
+					-- end,
 					connections = {
 						2, 3,
 					},
@@ -230,11 +234,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_REDIRECTING_THE_LEY_L
 			},
 		},
 		{
-			name = "Go to Foreman Fisk",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2908, 0.6629, "Foreman Fisk")
-			end,
+			type = "npc",
+			id = 35085,
+			-- name = "Go to Foreman Fisk",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2908, 0.6629, "Foreman Fisk")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -581,11 +587,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_SUBJECT_NINE_FROM_SPA
 					},
 				},
 				{
-					name = "Go to Assistant Greely",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5041, 0.7429, "Assistant Greely")
-					end,
+					type = "npc",
+					id = 36500,
+					-- name = "Go to Assistant Greely",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5041, 0.7429, "Assistant Greely")
+					-- end,
 				}
 			},
 			x = 3,
@@ -608,9 +616,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_SUBJECT_NINE_FROM_SPA
 			id = 14422,
 			x = 3,
 			y = 2,
-			connections = {
-                
-            },
 		},
 	}
 })
@@ -915,11 +920,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_THE_BEST_APPRENTICE, 
 	},
 	items = {
 		{
-			name = "Go to Teemo",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5933, 0.5074, "Teemo")
-			end,
+			type = "npc",
+			id = 36999,		
+			-- name = "Go to Teemo",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5933, 0.5074, "Teemo")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -1223,11 +1230,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_THE_CONQUEST_OF_AZSHA
 	},
 	items = {
 		{
-			name = "Go to Chawg",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1401, 0.6484, "Chawg")
-			end,
+			type = "npc",
+			id = 36728,		
+			-- name = "Go to Chawg",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1401, 0.6484, "Chawg")
+			-- end,
 			x = 0,
 			y = 0,
 			connections = {
@@ -1246,11 +1255,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_THE_CONQUEST_OF_AZSHA
 					},
 				},
 				{
-					name = "Go to Chawg",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1401, 0.6484, "Chawg")
-					end,
+					type = "npc",
+					id = 36730,
+					-- name = "Go to Chawg",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1401, 0.6484, "Chawg")
+					-- end,
 					connections = {
 						3, 4,
 					},
@@ -1263,11 +1274,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_THE_CONQUEST_OF_AZSHA
 			},
 		},
 		{
-			name = "Go to Andorel Sunsworn",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1385, 0.6449, "Andorel Sunsworn")
-			end,
+			type = "npc",
+			id = 36919,
+			-- name = "Go to Andorel Sunsworn",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1385, 0.6449, "Andorel Sunsworn")
+			-- end,
 			x = 6,
 			y = 0,
 			connections = {
@@ -1374,7 +1387,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_THE_CONQUEST_OF_AZSHA
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_CHAIN1, {
-	name = "Southern Rocketway Exchange",
+	name = BtWQuests_GetAreaName(4828), -- Southern Rocketway Exchange
 	category = BTWQUESTS_CATEGORY_CLASSIC_AZSHARA,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},
@@ -1406,11 +1419,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_CHAIN1, {
 	},
 	items = {
 		{
-			name = "Go to Twistex Happytongs",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4506, 0.7549, "Twistex Happytongs")
-			end,
+			type = "npc",
+			id = 36146,
+			-- name = "Go to Twistex Happytongs",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4506, 0.7549, "Twistex Happytongs")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -1429,11 +1444,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_CHAIN1, {
 					},
 				},
 				{
-					name = "Go to Assistant Greely",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5041, 0.7429, "Assistant Greely")
-					end,
+					type = "npc",
+					id = 36077,
+					-- name = "Go to Assistant Greely",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5041, 0.7429, "Assistant Greely")
+					-- end,
 				}
 			},
 			x = 3,
@@ -1443,11 +1460,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_CHAIN1, {
 			},
 		},
 		{
-			name = "Go to Bombardier Captain Smooks",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5222, 0.7424, "Bombardier Captain Smooks")
-			end,
+			type = "npc",
+			id = 35817,
+			-- name = "Go to Bombardier Captain Smooks",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5222, 0.7424, "Bombardier Captain Smooks")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -1607,7 +1626,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_CHAIN2, {
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_CHAIN3, {
-	name = "Hacking the Construct",
+	name = { -- Hacking the Construct
+		type = "quest",
+		id = 14430,
+	},
 	category = BTWQUESTS_CATEGORY_CLASSIC_AZSHARA,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},
@@ -1651,9 +1673,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_CHAIN3, {
 			id = 14430,
 			x = 3,
 			y = 3,
-			connections = {
-                
-            },
 		},
 	}
 })

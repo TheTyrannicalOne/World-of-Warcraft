@@ -25,6 +25,10 @@ end
 function BtWQuestsCharactersCharacterMixin:GetName()
     return self.t.name
 end
+function BtWQuestsCharactersCharacterMixin:GetDisplayName()
+    local name, realm = self:GetFullName();
+    return string.format("%s-%s", name, realm);
+end
 function BtWQuestsCharactersCharacterMixin:GetRealm()
     return self.t.realm
 end
@@ -327,7 +331,7 @@ function BtWQuestsCharactersCharacterMixin:GetAchievementCriteriaInfo(achievemen
             if data[1] ~= nil then
                 data = data[15];
             else
-                data = data.criteria;
+                data = data.criterias;
             end
 
             data = data[criteriaIndex];
@@ -435,7 +439,7 @@ end
 function BtWQuestsCharactersPlayerMixin:GetFullName()
     return UnitName("player"), GetRealmName()
 end
-function BtWQuestsCharactersPlayerMixin:GerName()
+function BtWQuestsCharactersPlayerMixin:GetName()
     return UnitName("player")
 end
 function BtWQuestsCharactersPlayerMixin:GetRealm()
@@ -474,7 +478,11 @@ function BtWQuestsCharactersPlayerMixin:IsQuestActive(questID)
     return GetQuestLogIndexByID(questID) > 0
 end
 function BtWQuestsCharactersPlayerMixin:IsQuestCompleted(questID)
-    return IsQuestFlaggedCompleted(questID)
+    if C_QuestSession.HasJoined() then
+        return BtWQuestsCharactersCharacterMixin.IsQuestCompleted(self, questID)
+    else
+        return IsQuestFlaggedCompleted(questID)
+    end
 end
 
 
@@ -587,6 +595,26 @@ function BtWQuestsCharactersPlayerMixin:GetQuestLogLeaderBoard(objective, questI
     return GetQuestLogLeaderBoard(objective, index);
 end
 
+BtWQuestsCharactersPartySyncMixin = Mixin({}, BtWQuestsCharactersPlayerMixin)
+function BtWQuestsCharactersPartySyncMixin:GetName()
+    return BtWQuests.L["Party Sync"];
+end
+function BtWQuestsCharactersPartySyncMixin:GetFullName()
+    return "", "partysync"
+end
+function BtWQuestsCharactersPartySyncMixin:GetDisplayName()
+    return self:GetName();
+end
+function BtWQuestsCharactersPartySyncMixin:GetLevel()
+    return UnitEffectiveLevel("player");
+end
+function BtWQuestsCharactersPartySyncMixin:IsQuestActive(questID)
+    return not C_QuestLog.IsQuestDisabledForSession(questID) and GetQuestLogIndexByID(questID) > 0
+end
+function BtWQuestsCharactersPartySyncMixin:IsQuestCompleted(questID)
+    return IsQuestFlaggedCompleted(questID)
+end
+
 BtWQuestsCharacters = {}
 local BtWQuests_CharactersMap = nil
 local function BtWQuestsCharactersUpdateMap()
@@ -669,7 +697,9 @@ function BtWQuestsCharacters:GetCharacter(name, realm)
         local playerRealm = GetRealmName()
         local playerKey = playerName .. "-" .. playerRealm
 
-        if playerKey == key then
+        if key == "-partysync" then
+            BtWQuestsCharactersMap[key] = BtWQuests_CreatePartySync(BtWQuests_CharactersMap[playerKey])
+        elseif playerKey == key then
             BtWQuestsCharactersMap[key] = BtWQuests_CreatePlayer(BtWQuests_CharactersMap[key])
         elseif BtWQuests_CharactersMap[key] ~= nil then
             BtWQuestsCharactersMap[key] = BtWQuests_CreateCharacter(BtWQuests_CharactersMap[key])
@@ -695,7 +725,11 @@ function BtWQuestsCharacters:RemoveCharacter(name, realm)
     end
 end
 function BtWQuestsCharacters:GetPlayer()
-    return self:GetCharacter(UnitName("player"), GetRealmName())
+    if C_QuestSession.HasJoined() then
+        return self:GetCharacter("-partysync")
+    else
+        return self:GetCharacter(UnitName("player"), GetRealmName())
+    end
 end
 
 local temp = {};
@@ -950,6 +984,10 @@ end
 
 function BtWQuests_CreatePlayer(data)
     return Mixin({t = data}, BtWQuestsCharactersPlayerMixin)
+end
+
+function BtWQuests_CreatePartySync(data)
+    return Mixin({t = data}, BtWQuestsCharactersPartySyncMixin)
 end
 
 function BtWQuests_CreateCharacter(data)

@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 local MAP_ID = 862
 local ACHIEVEMENT_ID = 11861
 local CONTINENT_ID = 875
@@ -26,6 +27,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_PORTENTS_
     completed = {
         type = "quest",
         id = 49663,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2114600, 2158200, 2201800, 2245400, 2289000, 2332600, 2376200, 2419800, 2463400, 2507000, 2550600, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                154650, 156000, 157250, 158550, 159800, 161200, 162650, 164000, 165000, 166350, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 150,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 1035,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -184,6 +217,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_PORT_OF_Z
         type = "quest",
         id = 50881,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1571400, 1603800, 1636200, 1668600, 1701000, 1733400, 1765800, 1798200, 1830600, 1863000, 1895400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                108550, 109550, 110450, 111300, 112200, 113200, 114150, 115150, 115850, 116850, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1560,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 960,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         -- {
         --     type = "quest",
@@ -301,6 +366,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_WARPORT_R
     completed = {
         type = "quest",
         id = 49310,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1784800, 1821600, 1858400, 1895200, 1932000, 1968800, 2005600, 2042400, 2079200, 2116000, 2152800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                126650, 127800, 128850, 129850, 130900, 132050, 133200, 134350, 135150, 136300, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 825,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -446,6 +538,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_WEB_OF_LI
         type = "quest",
         id = 47528,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2366800, 2415600, 2464400, 2513200, 2562000, 2610800, 2659600, 2708400, 2757200, 2806000, 2854800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                163650, 165150, 166500, 167800, 169150, 170650, 172100, 173600, 174650, 176150, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 800,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -585,6 +704,43 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_AMONG_THE
     completed = {
         type = "quest",
         id = 47741,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                3453200, 3524400, 3595600, 3666800, 3738000, 3809200, 3880400, 3951600, 4022800, 4094000, 4165200, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                255800, 258100, 260250, 262200, 264350, 266700, 269000, 271300, 272950, 275250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+        {
+            type = "currency",
+            id = 1560,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 985,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -784,6 +940,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_THE_ZANCH
         type = "quest",
         ids = {47439, 47440},
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2541400, 2593800, 2646200, 2698600, 2751000, 2803400, 2855800, 2908200, 2960600, 3013000, 3065400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                166100, 167650, 169000, 170350, 171700, 173250, 174650, 176200, 177300, 178850, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 825,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "quest",
@@ -918,7 +1101,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_THE_ZANCH
                     },
                 },
                 {
-                    name = "Pick a loa",
+                    name = L["PICK_A_LOA"],
                     visible = false,
                 },
             },
@@ -978,6 +1161,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_MARCH_OF_
     completed = {
         type = "quest",
         id = 49426,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2172800, 2217600, 2262400, 2307200, 2352000, 2396800, 2441600, 2486400, 2531200, 2576000, 2620800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                192500, 194200, 195750, 197350, 198900, 200650, 202450, 204000, 205500, 207050, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 675,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 1235,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -1122,6 +1337,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN10, 
         type = "quest",
         id = 47442,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                388000, 396000, 404000, 412000, 420000, 428000, 436000, 444000, 452000, 460000, 468000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                32900, 33200, 33500, 33700, 34000, 34300, 34600, 34900, 35100, 35400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 300,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -1198,6 +1445,47 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN11, 
     completed = {
         type = "quest",
         id = 47587,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2735400, 2791800, 2848200, 2904600, 2961000, 3017400, 3073800, 3130200, 3186600, 3243000, 3299400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                182550, 184250, 185750, 187200, 188700, 190400, 191950, 193650, 194850, 196550, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 500,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+        {
+            type = "reputation",
+            id = 2159,
+            amount = 500,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -1432,6 +1720,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN9, {
         type = "quest",
         id = 49884,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1571400, 1603800, 1636200, 1668600, 1701000, 1733400, 1765800, 1798200, 1830600, 1863000, 1895400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                96200, 97100, 97850, 98700, 99450, 100350, 101150, 102050, 102700, 103600, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 925,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1547,6 +1867,29 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN15, 
     completed = {
         type = "quest",
         id = 51538,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1202800, 1227600, 1252400, 1277200, 1302000, 1326800, 1351600, 1376400, 1401200, 1426000, 1450800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                89650, 90450, 91200, 91900, 92650, 93450, 94300, 95100, 95650, 96450, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2163,
+            amount = 460,
+        },
     },
     items = {
         {
@@ -1691,6 +2034,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN5_AL
             id = 53452,
         },
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                776000, 792000, 808000, 824000, 840000, 856000, 872000, 888000, 904000, 920000, 936000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                53450, 53950, 54400, 54800, 55250, 55750, 56200, 56700, 57050, 57550, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2159,
+            amount = 300,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             variations = {
@@ -1797,6 +2167,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN8, {
         type = "quest",
         id = 51286,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                989400, 1009800, 1030200, 1050600, 1071000, 1091400, 1111800, 1132200, 1152600, 1173000, 1193400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                83900, 84650, 85400, 85950, 86700, 87450, 88250, 89000, 89500, 90250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2157,
+            amount = 375,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1817,8 +2214,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN8, {
             },
         },
         {
-            name = "Go to Baine Bloodhoof",
-            breadcrumb = true,
+            type = "npc",
+            id = 141555,
+            -- name = "Go to Baine Bloodhoof",
+            -- breadcrumb = true,
             x = 3,
             y = 1,
             connections = {
@@ -1911,6 +2310,43 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN12, 
             id = 48405,
         }
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                582000, 594000, 606000, 618000, 630000, 642000, 654000, 666000, 678000, 690000, 702000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                37000, 37350, 37650, 37950, 38250, 38600, 38900, 39250, 39500, 39850, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 125,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 225,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+        {
+            type = "reputation",
+            id = 2163,
+            amount = 300,
+        },
+    },
     items = {
         {
             type = "npc",
@@ -1997,6 +2433,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN13, 
         type = "quest",
         id = 48454,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                213400, 217800, 222200, 226600, 231000, 235400, 239800, 244200, 248600, 253000, 257400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                18100, 18250, 18400, 18550, 18700, 18850, 19050, 19200, 19300, 19450, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 100,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             variations = {
@@ -2076,6 +2544,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN6_AL
     completed = {
         type = "quest",
         id = 49428,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1940000, 1980000, 2020000, 2060000, 2100000, 2140000, 2180000, 2220000, 2260000, 2300000, 2340000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                127500, 128650, 129650, 130750, 131750, 133000, 134000, 135150, 136100, 137250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2159,
+            amount = 875,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -2220,13 +2720,29 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN3, {
     },
     rewards = {
         {
+            type = "toy",
+            id = 156871,
+        },
+        {
+            type = "money",
+            amounts = {
+                1930800, 1970600, 2010400, 2050200, 2090000, 2129800, 2169600, 2209400, 2249200, 2289000, 2328800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                143100, 144400, 145600, 146700, 147900, 149200, 150500, 151800, 152700, 154000, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
             type = "reputation",
             id = 2163,
             amount = 610,
-        },
-        {
-            type = "toy",
-            id = 156871,
         },
     },
     items = {
@@ -2423,6 +2939,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN6_HO
             id = 48400,
         },
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1843000, 1881000, 1919000, 1957000, 1995000, 2033000, 2071000, 2109000, 2147000, 2185000, 2223000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                131600, 132800, 133900, 134900, 136000, 137250, 138350, 139550, 140450, 141650, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 820,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -2563,6 +3111,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN14, 
     completed = {
         type = "quest",
         id = 50297,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1619900, 1653300, 1686700, 1720100, 1753500, 1786900, 1820300, 1853700, 1887100, 1920500, 1953900, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                125050, 126150, 127200, 128150, 129200, 130400, 131450, 132550, 133450, 134550, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 1250,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -2723,6 +3298,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN5_HO
             id = 49922,
         },
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1164000, 1188000, 1212000, 1236000, 1260000, 1284000, 1308000, 1332000, 1356000, 1380000, 1404000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                86350, 87150, 87900, 88500, 89250, 90050, 90800, 91600, 92150, 92950, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 375,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -2827,6 +3434,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
     completed = {
         type = "quest",
         id = 55798,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                5963400, 6024600, 6085800, 6147000, 6208200, 6269400, 6330600, 6391800, 6453000, 6514200, 6575400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                190000, 191700, 193250, 194800, 196350, 198100, 199800, 201500, 202750, 204450, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 1150,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
     },
     items = {
         {
@@ -3059,7 +3698,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
         -- Rank 2: Juvenile
         -- Rank 3: Maturity
         {
-            name = "Raise your Direhorn to a Juvenile",
+            name = L["RAISE_YOUR_DIREHORN_TO_A_JUVENILE"],
             type = "friendship",
             id = 2370,
             amount = 4000,
@@ -3073,7 +3712,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
             },
         },
         {
-            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
             visible = {
                 {
                     type = "friendship",
@@ -3149,7 +3788,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
             },
         },
         {
-            name = "Raise your Direhorn to Maturity",
+            name = L["RAISE_YOUR_DIREHORN_TO_MATURITY"],
             type = "friendship",
             id = 2370,
             amount = 8000,
@@ -3163,7 +3802,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
             },
         },
         -- {
-        --     name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+        --     name = L["BTWQUESTS_WAIT_FOR_DAILY_RESET"],
         --     visible = {
         --         {
         --             type = "friendship",
@@ -3290,6 +3929,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN7, {
         {
             type = "quest",
             id = 49681,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                989400, 1009800, 1030200, 1050600, 1071000, 1091400, 1111800, 1132200, 1152600, 1173000, 1193400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                71550, 72200, 72800, 73350, 73950, 74600, 75250, 75900, 76350, 77000, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            amount = 710,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
         },
     },
     items = {
@@ -3613,7 +4279,7 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ZULDAZAR, {
     items = {
         {
             type = "header",
-            name = BTWQUESTS_THE_WAR_CAMPAIGN,
+            name = L["BTWQUESTS_THE_WAR_CAMPAIGN"],
             restrictions = {
                 type = "faction",
                 id = BTWQUESTS_FACTION_ID_ALLIANCE
@@ -3676,7 +4342,7 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ZULDAZAR, {
 
         {
             type = "header",
-            name = BTWQUESTS_SIDE_QUESTS,
+            name = L["BTWQUESTS_SIDE_QUESTS"],
         },
         {
             type = "chain",

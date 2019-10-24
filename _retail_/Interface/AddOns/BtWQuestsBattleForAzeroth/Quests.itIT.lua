@@ -5501,6 +5501,30 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54754] = {
         name = "Per la Regina",
     },
+    [54759] = {
+        name = "Sussurri degli spiriti",
+    },
+    [54760] = {
+        name = "Gli Spiritisti",
+    },
+    [54761] = {
+        name = "Guida spirituale",
+    },
+    [54762] = {
+        name = "Un piccolo rifugio",
+    },
+    [54763] = {
+        name = "Trapasso",
+    },
+    [54764] = {
+        name = "Tempesta a Zoccolo Sanguinario",
+    },
+    [54765] = {
+        name = "Ringraziare la guida",
+    },
+    [54766] = {
+        name = "Rispondere alla chiamata",
+    },
     [54787] = {
         name = "Ballo in maschera",
     },
@@ -5669,6 +5693,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55101] = {
         name = "Come diventare un Meccanista di Discarica",
     },
+    [55103] = {
+        name = "Tutto può essere fonte di idee",
+    },
     [55116] = {
         name = "Recuperare un indizio",
     },
@@ -5828,8 +5855,20 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55392] = {
         name = "Entrare nel Metasogno",
     },
+    [55393] = {
+        name = "Annullare il Vuoto",
+    },
+    [55394] = {
+        name = "Schegge di smeraldo",
+    },
+    [55395] = {
+        name = "Non chiudere gli occhi",
+    },
     [55396] = {
         name = "La sostanza di cui sono fatti i sogni",
+    },
+    [55397] = {
+        name = "Prima del risveglio",
     },
     [55398] = {
         name = "La lunga veglia",
@@ -5845,6 +5884,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55462] = {
         name = "Richiamo della Viandante",
+    },
+    [55465] = {
+        name = "Andare più a fondo",
     },
     [55469] = {
         name = "Verso Zin-Azshari",
@@ -5875,6 +5917,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55500] = {
         name = "Un'amica da salvare",
+    },
+    [55503] = {
+        name = "Il cornofurente e il sauride",
     },
     [55504] = {
         name = "Santuari di Zuldazar",
@@ -6044,6 +6089,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55731] = {
         name = "Le armate di mio padre",
     },
+    [55732] = {
+        name = "Una vecchia cicatrice",
+    },
     [55734] = {
         name = "Costruire la trivella",
     },
@@ -6052,6 +6100,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55736] = {
         name = "Benvenuti nella Resistenza",
+    },
+    [55737] = {
+        name = "Al tempo dell'Azerite",
+    },
+    [55752] = {
+        name = "Combattiamo uniti",
     },
     [55753] = {
         name = "Abbattere il suo robot",
@@ -6182,6 +6236,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56156] = {
         name = "Una lama temprata",
     },
+    [56167] = {
+        name = "Investigando le Alture",
+    },
     [56168] = {
         name = "Fabbrica ristrutturata",
     },
@@ -6253,6 +6310,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [56248] = {
         name = "Storia di un tesoro",
+    },
+    [56267] = {
+        name = "Sussurri di N'zoth",
     },
     [56304] = {
         name = "Miseria e nobiltà",
@@ -6344,6 +6404,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56429] = {
         name = "Contrarietà",
     },
+    [56494] = {
+        name = "La vigilia della battaglia",
+    },
+    [56495] = {
+        name = "Contro di noi",
+    },
+    [56496] = {
+        name = "La vigilia della battaglia",
+    },
     [56504] = {
         name = "Diario di Irathion",
     },
@@ -6368,19 +6437,70 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [56644] = {
         name = "Contrarietà",
     },
+    [56719] = {
+        name = "Via libera",
+    },
     [56739] = {
         name = "Il potere della devozione",
     },
     [56741] = {
         name = "La Lancia del Destino",
     },
-    [56803] = {
-        name = "Solo un amico",
+    [56833] = {
+        name = "Capi dell'Orda",
+    },
+    [56979] = {
+        name = "Assicurare l'assedio",
+    },
+    [56980] = {
+        name = "Tra di noi",
+    },
+    [56981] = {
+        name = "Dispiegamento strategico",
+    },
+    [56982] = {
+        name = "Davanti ai cancelli di Orgrimmar",
+    },
+    [56993] = {
+        name = "Il prezzo della vittoria",
+    },
+    [57002] = {
+        name = "Vecchio soldato",
+    },
+    [57005] = {
+        name = "Nuove amicizie",
     },
     [57006] = {
         name = "Un degno alleato",
     },
     [57010] = {
         name = "Ottenere il potere",
+    },
+    [57088] = {
+        name = "Via libera",
+    },
+    [57090] = {
+        name = "Assicurare l'assedio",
+    },
+    [57091] = {
+        name = "Tra di noi",
+    },
+    [57092] = {
+        name = "Dispiegamento strategico",
+    },
+    [57093] = {
+        name = "Davanti ai cancelli di Orgrimmar",
+    },
+    [57094] = {
+        name = "Il prezzo della vittoria",
+    },
+    [57095] = {
+        name = "Vecchio soldato",
+    },
+    [57126] = {
+        name = "Mari propizi",
+    },
+    [57198] = {
+        name = "Senso del dovere",
     },
 })

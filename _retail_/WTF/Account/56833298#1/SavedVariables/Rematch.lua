@@ -42,7 +42,8 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["JournalUsed"] = true,
+	["QueueSanctuary"] = {
+	},
 	["Filters"] = {
 		["Other"] = {
 		},
@@ -56,13 +57,13 @@ RematchSettings = {
 		},
 		["Strong"] = {
 		},
-		["Sources"] = {
+		["Similar"] = {
 		},
 		["Breed"] = {
 		},
 		["Rarity"] = {
 		},
-		["Similar"] = {
+		["Sources"] = {
 		},
 		["Level"] = {
 		},
@@ -71,15 +72,13 @@ RematchSettings = {
 		["Moveset"] = {
 		},
 	},
-	["LevelingQueue"] = {
-	},
+	["DialogXPos"] = 1280.008178710938,
 	["CustomScaleValue"] = 100,
-	["QueueSanctuary"] = {
-	},
+	["JournalUsed"] = true,
 	["CollapsedOptHeaders"] = {
 	},
-	["PreferredMode"] = 1,
 	["ElvUIToastDefaulted"] = true,
+	["PreferredMode"] = 1,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
 	},
@@ -87,7 +86,8 @@ RematchSettings = {
 	["CornerPos"] = "BOTTOMLEFT",
 	["SpecialSlots"] = {
 	},
-	["DialogXPos"] = 1280.008178710938,
+	["LevelingQueue"] = {
+	},
 	["YPos"] = 418.0044860839844,
 	["SelectedTab"] = 1,
 	["PetNotes"] = {

@@ -4,9 +4,7 @@ local ACHIEVEMENT_ID_HORDE = 4980
 local CONTINENT_ID = 12
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING_A_PATH, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_ALLIANCE, 1)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -188,9 +186,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_ALLIANCE, 2)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -298,9 +294,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SELDARRIA, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_ALLIANCE, 3)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -483,9 +477,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SELDARRI
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_AN_UNCONVENTIONAL_ALLY, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_ALLIANCE, 4)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -684,9 +676,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_AN_UNCON
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_HORDE, 1)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -832,9 +822,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_A_SHORTL
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_LEGIONNAIRE, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_HORDE, 2)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -934,9 +922,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_LEGIONNA
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_DA_VOODOO, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_HORDE, 3)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1046,9 +1032,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_DA_VOODO
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_HONOR_NEVER_FORSAKE_IT, {
-    name = function ()
-        return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_HORDE, 4)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},

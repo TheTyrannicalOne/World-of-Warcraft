@@ -40,6 +40,8 @@ L["Alt click Looting"] = "Butin en Alt-clic"
 L["alt_click_looting_desc"] = "Active le butin en Alt-clic, c.-à-d. qu'une session sera lancée en laissant appuyer le bouton Alt et en cliquant (clic gauche) avec la souris sur un objet."
 L["Alternatively, flag the loot as award later."] = "Sinon, désigner le butin comme devant être attribué plus tard."
 --[[Translation missing --]]
+--[[ L["Always show owner"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Always use RCLootCouncil with Personal Loot"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["always_show_tooltip_howto"] = ""--]] 
@@ -419,6 +421,10 @@ L["open_the_loot_history_desc"] = "Cliquer pour ouvrir l'historique du butin."
 --[[ L["opt_deletePatch_confirm"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["opt_deletePatch_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_deleteRaid_confirm"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_deleteRaid_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["opt_moreButtons_desc"] = ""--]] 
 --[[Translation missing --]]

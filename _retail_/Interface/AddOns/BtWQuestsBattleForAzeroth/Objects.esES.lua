@@ -251,7 +251,37 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [298858] = {
         name = "Cartel de Se busca",
     },
+    [307748] = {
+        name = "Carta de Ventura y Cía.",
+    },
     [311155] = {
         name = "Tablilla antigua",
+    },
+    [311218] = {
+        name = "Xal'atath, Daga del Imperio Negro",
+    },
+    [311885] = {
+        name = "Xal'atath, Daga del Imperio Negro",
+    },
+    [322533] = {
+        name = "Escrito de los elementos de Mardivas",
+    },
+    [326418] = {
+        name = "Cofre Arcano",
+    },
+    [327170] = {
+        name = "Expositor de armas",
+    },
+    [327591] = {
+        name = "Diario conservado",
+    },
+    [327592] = {
+        name = "Cerrojo encantado",
+    },
+    [327596] = {
+        name = "Enfoque abisal roto",
+    },
+    [329805] = {
+        name = "Cristal extraño",
     },
 })

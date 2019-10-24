@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0307,
+	["LastVersion"] = 2.0309,
 	["ItemLevels"] = {
 		{
 			["ID"] = 166696,
@@ -55,10 +55,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165680::::::::120:71::28:3:4803:1587:4786:::|h[Igneous Winterskorn Loop]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 158151,
-			["Level"] = 390,
+			["ID"] = 143901,
+			["Level"] = 395,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:158151::::::::120:71::27:3:4803:1582:4785:::|h[Zandalari Band]|h|r",
+			["Link"] = "|cffa335ee|Hitem:143901::::::::120:71:512::1:6315:120:::|h[Band of the Petrified Pumpkin]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 117358,

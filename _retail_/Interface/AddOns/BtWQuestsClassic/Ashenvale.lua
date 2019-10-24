@@ -1,3 +1,4 @@
+local L = BtWQuests.L
 local MAP_ID = 63
 local ACHIEVEMENT_ID_ALLIANCE = 4925
 local ACHIEVEMENT_ID_HORDE = 4976
@@ -1298,7 +1299,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ASHENVALE_EMBED_CHAIN06, {
     range = {1,60},
     items = {
         {
-            name = "Kill Furbolgs",
+            name = L["KILL_FURBOLGS"],
             breadcrumb = true,
             x = 0,
             y = 0,

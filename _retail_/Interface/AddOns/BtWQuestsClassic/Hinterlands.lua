@@ -2,9 +2,7 @@ local MAP_ID = 26
 local ACHIEVEMENT_ID = 4897
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_STORMFEATHER_OUTPOST, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 1)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
 	category = BTWQUESTS_CATEGORY_CLASSIC_HINTERLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {30, 60},
@@ -24,11 +22,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_STORMFEATHER_OUTP
 	},
 	items = {
 		{
-			name = "Go to Dron Blastbrew",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6624, 0.4427, "Dron Blastbrew")
-			end,
+			type = "npc",
+			id = 43109,
+			-- name = "Go to Dron Blastbrew",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6624, 0.4427, "Dron Blastbrew")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -47,11 +47,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_STORMFEATHER_OUTP
 					},
 				},
 				{
-					name = "Go to Kerr Ironsight",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6636, 0.4428, "Kerr Ironsight")
-					end,
+					type = "npc",
+					id = 43108,
+					-- name = "Go to Kerr Ironsight",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6636, 0.4428, "Kerr Ironsight")
+					-- end,
 				}
 			},
 			x = 5,
@@ -67,9 +69,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_STORMFEATHER_OUTP
 			id = 26485,
 			x = 0,
 			y = 1,
-			connections = {
-                
-            },
 		},
 		{
 			type = "quest",
@@ -147,9 +146,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_STORMFEATHER_OUTP
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_ALLIANCE, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 2)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
 	category = BTWQUESTS_CATEGORY_CLASSIC_HINTERLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {30, 60},
@@ -169,11 +166,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_ALLIAN
 	},
 	items = {
 		{
-			name = "Go to Fraggar Thundermantle",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6373, 0.5995, "Fraggar Thundermantle")
-			end,
+			type = "npc",
+			id = 43156,		
+			-- name = "Go to Fraggar Thundermantle",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6373, 0.5995, "Fraggar Thundermantle")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -192,11 +191,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_ALLIAN
 					},
 				},
 				{
-					name = "Go to Doran Steelwing",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6389, 0.5987, "Doran Steelwing")
-					end,
+					type = "npc",
+					id = 43157,
+					-- name = "Go to Doran Steelwing",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6389, 0.5987, "Doran Steelwing")
+					-- end,
 				}
 			},
 			x = 5,
@@ -328,9 +329,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_ALLIAN
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_QUELDANIL_LODGE, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 3)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
 	category = BTWQUESTS_CATEGORY_CLASSIC_HINTERLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {30, 60},
@@ -378,11 +377,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_QUELDANIL_LODGE, 
 		},
 
 		{
-			name = "Go to Gilda Cloudcaller",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3068, 0.4707, "Gilda Cloudcaller")
-			end,
+			type = "npc",
+			id = 43200,		
+			-- name = "Go to Gilda Cloudcaller",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3068, 0.4707, "Gilda Cloudcaller")
+			-- end,
 			x = 3,
 			y = 2,
 			connections = {
@@ -425,9 +426,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_QUELDANIL_LODGE, 
 			id = 26643,
 			x = 4,
 			y = 4,
-			connections = {
-                
-            },
 		},
 
 
@@ -459,9 +457,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_QUELDANIL_LODGE, 
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_HORDE, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 1)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
 	category = BTWQUESTS_CATEGORY_CLASSIC_HINTERLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {30, 60},
@@ -495,11 +491,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_HORDE,
 	},
 	items = {
 		{
-			name = "Go to Kotonga",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6779, 0.6628, "Kotonga")
-			end,
+			type = "npc",
+			id = 42624,		
+			-- name = "Go to Kotonga",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6779, 0.6628, "Kotonga")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -518,11 +516,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_HORDE,
 					},
 				},
 				{
-					name = "Go to Primal Torntusk",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6782, 0.6651, "Primal Torntusk")
-					end,
+					type = "npc",
+					id = 42642,				
+					-- name = "Go to Primal Torntusk",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6782, 0.6651, "Primal Torntusk")
+					-- end,
 				}
 			},
 			x = 3,
@@ -532,11 +532,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_HORDE,
 			},
 		},
 		{
-			name = "Go to Eliza Darkgrin",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6764, 0.6660, "Eliza Darkgrin")
-			end,
+			type = "npc",
+			id = 42622,
+			-- name = "Go to Eliza Darkgrin",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6764, 0.6660, "Eliza Darkgrin")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -660,9 +662,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_JINTHAALOR_HORDE,
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_HIRIWATHA, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 2)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
 	category = BTWQUESTS_CATEGORY_CLASSIC_HINTERLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {30, 60},
@@ -699,11 +699,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_HIRIWATHA, {
 					},
 				},
 				{
-					name = "Go to Darkcleric Marnal",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3186, 0.5839, "Darkcleric Marnal")
-					end,
+					type = "npc",
+					id = 42898,
+					-- name = "Go to Darkcleric Marnal",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3186, 0.5839, "Darkcleric Marnal")
+					-- end,
 				}
 			},
 			x = 2,
@@ -713,11 +715,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_HIRIWATHA, {
 			},
 		},
 		{
-			name = "Go to Apothecary Surlis",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3182, 0.5856, "Apothecary Surlis")
-			end,
+			type = "npc",
+			id = 42896,
+			-- name = "Go to Apothecary Surlis",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3182, 0.5856, "Apothecary Surlis")
+			-- end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -790,9 +794,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_HIRIWATHA, {
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_REVANTUSK_VILLAGE, {
-	name = function ()
-		return GetAchievementCriteriaInfo(ACHIEVEMENT_ID, 3)
-	end,
+	name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
 	category = BTWQUESTS_CATEGORY_CLASSIC_HINTERLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {30, 60},
@@ -866,11 +868,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_REVANTUSK_VILLAGE
 					},
 				},
 				{
-					name = "Go to Elder Torntusk",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7818, 0.8130, "Elder Torntusk")
-					end,
+					type = "npc",
+					id = 42613,
+					-- name = "Go to Elder Torntusk",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7818, 0.8130, "Elder Torntusk")
+					-- end,
 				}
 			},
 			x = 1,
@@ -880,11 +884,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_REVANTUSK_VILLAGE
 			},
 		},
 		{
-			name = "Go to Lard",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7813, 0.8139, "Lard")
-			end,
+			type = "npc",
+			id = 14731,		
+			-- name = "Go to Lard",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7813, 0.8139, "Lard")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -892,11 +898,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_REVANTUSK_VILLAGE
 			},
 		},
 		{
-			name = "Go to Huntsman Markhor",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7916, 0.7953, "Huntsman Markhor")
-			end,
+			type = "npc",
+			id = 14741,
+			-- name = "Go to Huntsman Markhor",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7916, 0.7953, "Huntsman Markhor")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -925,11 +933,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_REVANTUSK_VILLAGE
 
 		
 		{
-			name = "Go to Grognard",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7729, 0.7997, "Grognard")
-			end,
+			type = "npc",
+			id = 42464,
+			-- name = "Go to Grognard",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7729, 0.7997, "Grognard")
+			-- end,
 			x = 0,
 			y = 2,
 			connections = {
@@ -937,11 +947,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_REVANTUSK_VILLAGE
 			},
 		},
 		{
-			name = "Go to Mystic Yayo'jin",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7880, 0.7824, "Mystic Yayo'jin")
-			end,
+			type = "npc",
+			id = 14739,
+			-- name = "Go to Mystic Yayo'jin",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7880, 0.7824, "Mystic Yayo'jin")
+			-- end,
 			x = 2,
 			y = 2,
 			connections = {
@@ -949,11 +961,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_REVANTUSK_VILLAGE
 			},
 		},
 		{
-			name = "Go to Katoom the Angler",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8033, 0.8154, "Katoom the Angler")
-			end,
+			type = "npc",
+			id = 14740,
+			-- name = "Go to Katoom the Angler",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8033, 0.8154, "Katoom the Angler")
+			-- end,
 			x = 5,
 			y = 2,
 			connections = {
@@ -1021,11 +1035,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_CHAIN1, {
 					},
 				},
 				{
-					name = "Go to Gryphon Master Talonaxe",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.0990, 0.4423, "Gryphon Master Talonaxe")
-					end,
+					type = "npc",
+					id = 5636,
+					-- name = "Go to Gryphon Master Talonaxe",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.0990, 0.4423, "Gryphon Master Talonaxe")
+					-- end,
 				}
 			},
 			x = 3,
@@ -1114,11 +1130,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_CHAIN2, {
 					},
 				},
 				{
-					name = "Go to Elder Torntusk",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7818, 0.8130, "Elder Torntusk")
-					end,
+					type = "npc",
+					id = 42613,
+					-- name = "Go to Elder Torntusk",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7818, 0.8130, "Elder Torntusk")
+					-- end,
 				}
 			},
 			x = 3,
@@ -1201,6 +1219,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HINTERLANDS_CHAIN3, {
 		id = 26224,
 	},
 	items = {
+		{
+			type = "npc",
+			id = 14741,
+			-- name = "Go to Huntsman Markhor",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7916, 0.7953, "Huntsman Markhor")
+			-- end,
+			x = 3,
+			y = 0,
+			connections = {
+				1,
+			},
+		},
 		{
 			type = "quest",
 			id = 26223,

@@ -56,11 +56,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_GREAT_ANIMAL_SP
 					},
 				},
 				{
-					name = "Go to Dentaria Silverglade",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5179, 0.1801, "Dentaria Silverglade")
-					end,
+					type = "npc",
+					id = 32973,				
+					-- name = "Go to Dentaria Silverglade",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5179, 0.1801, "Dentaria Silverglade")
+					-- end,
 				}
 			},
 			x = 2,
@@ -70,11 +72,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_GREAT_ANIMAL_SP
 			},
 		},
 		{
-			name = "Go to Ranger Glynda Nal'Shea",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5022, 0.1979, "Ranger Glynda Nal'Shea")
-			end,
+			type = "npc",
+			id = 32971,
+			-- name = "Go to Ranger Glynda Nal'Shea",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5022, 0.1979, "Ranger Glynda Nal'Shea")
+			-- end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -478,11 +482,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_EYE_OF_ALL_STOR
 					}
 				},
 				{
-					name = "Go to Malfurion Stormrage",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4366, 0.5343, "Malfurion Stormrage")
-					end,
+					type = "npc",
+					id = 33091,
+					-- name = "Go to Malfurion Stormrage",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4366, 0.5343, "Malfurion Stormrage")
+					-- end,
 				}
 			},
 			x = 3,
@@ -1124,7 +1130,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_CHAIN1, {
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_CHAIN2, {
-	name = "Auberdine Refugee Camp",
+	name = BtWQuests_GetAreaName(4648), --Auberdine Refugee Camp
 	category = BTWQUESTS_CATEGORY_CLASSIC_DARKSHORE,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},

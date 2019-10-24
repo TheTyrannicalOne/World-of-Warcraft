@@ -237,7 +237,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSTWALLOW_MARSH_CONNECTION_T
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 20992,
             connections = {
                 3, 

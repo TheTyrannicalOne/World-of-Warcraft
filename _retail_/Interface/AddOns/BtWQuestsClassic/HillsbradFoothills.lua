@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 local MAP_ID = 25
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODEMINE, {
@@ -93,11 +94,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODE
 					},
 				},
 				{
-					name = "Go to High Executor Darthalia",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2924, 0.6334, "High Executor Darthalia")
-					end,
+					type = "npc",
+					id = 2215,
+					-- name = "Go to High Executor Darthalia",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2924, 0.6334, "High Executor Darthalia")
+					-- end,
 				},
 			},
 			x = 3,
@@ -153,8 +156,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODE
 			},
 		},
 		{
-			name = "Go to Captain Keyton",
-			breadcrumb = true,
+			type = "npc",
+			id = 47554,
+			-- name = "Go to Captain Keyton",
+			-- breadcrumb = true,
 			visible = {
 				{
 					type = "quest",
@@ -167,9 +172,9 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODE
 					completed = false,
 				}
 			},
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3330, 0.7355, "Captain Keyton")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3330, 0.7355, "Captain Keyton")
+			-- end,
 			x = 2,
 			y = 2,
 			connections = {
@@ -177,11 +182,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODE
 			},
 		},
 		{
-			name = "Find Dumass in the Mines",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3663, 0.7019, "Dumass")
-			end,
+			type = "npc",
+			id = 47681,		
+			-- name = "Find Dumass in the Mines",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3663, 0.7019, "Dumass")
+			-- end,
 			x = 4,
 			y = 2,
 			connections = {
@@ -199,14 +206,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODE
 			id = 28138,
 			x = 2,
 			y = 3,
-			connections = {},
 		},
 		{
 			type = "quest",
 			id = 28156,
 			x = 4,
 			y = 3,
-			connections = {},
 		},
 		{
 			type = "quest",
@@ -223,8 +228,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_AZURELODE
 			connections = { 2 },
 		},
 		{
-			name = "Kill Muckgill at the beach",
-			breadcrumb = true,
+			type = "kill",
+			id = 47759,
+			-- name = "Kill Muckgill at the beach",
+			-- breadcrumb = true,
 			x = 6,
 			y = 4,
 			connections = {
@@ -287,11 +294,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_SLUDGEFIE
 					},
 				},
 				{
-					name = "Go to Warden Stillwater",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3618, 0.6114, "Warden Stillwater")
-					end,
+					type = "npc",
+					id = 47781,				
+					-- name = "Go to Warden Stillwater",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3618, 0.6114, "Warden Stillwater")
+					-- end,
 				},
 			},
 			x = 3,
@@ -427,11 +436,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_STORMPIKE
 					},
 				},
 				{
-					name = "Go to Kingslayer Orkus",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4957, 0.7440, "Kingslayer Orkus")
-					end,
+					type = "npc",
+					id = 48218,
+					-- name = "Go to Kingslayer Orkus",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4957, 0.7440, "Kingslayer Orkus")
+					-- end,
 				},
 			},
 			x = 3,
@@ -457,7 +468,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_STORMPIKE
 			},
 		},
 		{
-			name = "Kill Gnolls at Nethander Stead",
+			name = L["KILL_GNOLLS_AT_NETHANDER_STEAD"],
 			breadcrumb = true,
 			x = 5,
 			y = 2,
@@ -618,11 +629,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_EASTPOINT
 					},
 				},
 				{
-					name = "Go to Nils Beerot",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6000, 0.6374, "Nils Beerot")
-					end,
+					type = "npc",
+					id = 49201,
+					-- name = "Go to Nils Beerot",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6000, 0.6374, "Nils Beerot")
+					-- end,
 				},
 			},
 			x = 1,
@@ -632,11 +645,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_EASTPOINT
 			},
 		},
 		{
-			name = "Go to Captain Jekyll",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5990, 0.6333, "Captain Jekyll")
-			end,
+			type = "npc",
+			id = 49243,
+			-- name = "Go to Captain Jekyll",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5990, 0.6333, "Captain Jekyll")
+			-- end,
 			x = 4,
 			y = 0,
 			connections = {
@@ -699,7 +714,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_EASTPOINT
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_SOUTHSHORE, {
-	name = BtWQuests_GetQuestName(28251),
+	name = {
+		type = "quest",
+		id = 28251,
+	},
 	category = BTWQUESTS_CATEGORY_CLASSIC_HILLSBRAD_FOOTHILLS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {15, 60},
@@ -744,11 +762,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_SOUTHSHOR
 					},
 				},
 				{
-					name = "Go to Serge Hinott",
-					breadcrumb = true,
-						onClick = function ()
-							BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4910, 0.6635, "Serge Hinott")
-						end,
+					type = "npc",
+					id = 2391,
+					-- name = "Go to Serge Hinott",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4910, 0.6635, "Serge Hinott")
+					-- end,
 				},
 			},
 			x = 1,
@@ -758,11 +778,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_SOUTHSHOR
 			},
 		},
 		{
-			name = "Go to Helcular",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4915, 0.6634, "Helcular")
-			end,
+			type = "npc",
+			id = 48129,
+			-- name = "Go to Helcular",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4915, 0.6634, "Helcular")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -828,7 +850,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_SOUTHSHOR
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_TARREN_MILL, {
-	name = "Tarren Mill",
+	name = BtWQuests_GetAreaName(272), -- Tarren Mill
 	category = BTWQUESTS_CATEGORY_CLASSIC_HILLSBRAD_FOOTHILLS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {15, 60},
@@ -899,7 +921,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_TARREN_MI
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_BRAZIE_FARMSTEAD, {
-	name = "Brazie Farmstead",
+	name = BtWQuests_GetAreaName(278), -- Brazie Farmstead
 	category = BTWQUESTS_CATEGORY_CLASSIC_HILLSBRAD_FOOTHILLS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {15, 60},
@@ -915,11 +937,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_BRAZIE_FA
 	},
 	items = {
 		{
-			name = "Go to Brazie the Botanist",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3353, 0.4934, "Brazie the Botanist")
-			end,
+			type = "npc",
+			id = 49687,		
+			-- name = "Go to Brazie the Botanist",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3353, 0.4934, "Brazie the Botanist")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {

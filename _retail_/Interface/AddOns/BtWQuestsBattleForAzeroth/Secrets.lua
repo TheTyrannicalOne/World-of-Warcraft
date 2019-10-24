@@ -1,3 +1,6 @@
+
+local L = BtWQuests.L;
+
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_BAAL, {
     name = {
         type = "pet",
@@ -397,7 +400,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_BAAL, {
 -- BtWQuests_ShowMapWithWaypoint(111, 0.5589, 0.7434, "Scribe Lanloer")
 -- BtWQuests_ShowMapWithWaypoint(116, 0.3498, 0.5504, "Aspen Grove Trader")
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_WAIST_OF_TIME, {
-    name = "Waist of Time",
+    name = L["WAIST_OF_TIME"],
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_SECRETS,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
@@ -417,7 +420,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_WAIST_OF_T
     },
     rewards = {
         {
-            name = BTWQUESTS_COSMETIC_WASTE_OF_TIME,
+            name = L["BTWQUESTS_COSMETIC_WASTE_OF_TIME"],
             -- function ()
             --     return string.format(BTWQUESTS_PREFIX, BTWQUESTS_COSMETIC, "Waist of Time")
             -- end
@@ -1255,9 +1258,22 @@ BtWQuestsDatabase:AddChain(BtWQuests.Constant.Chain.BattleForAzeroth.Secrets.Hon
     },
     prerequisites = {
         {
-            type = "pet",
-            id = 2442,
-        },
+            name = L["Pet: Bumbles or Seabreeze Bumblebee"],
+            completed = {
+                {
+                    type = "pet",
+                    id = 2442,
+                    restrictions = {
+                        type = "pet",
+                        id = 2442,
+                    },
+                },
+                {
+                    type = "pet",
+                    id = 2404,
+                },
+            },
+        }
     },
     active = {
         type = "quest",
@@ -1278,10 +1294,14 @@ BtWQuestsDatabase:AddChain(BtWQuests.Constant.Chain.BattleForAzeroth.Secrets.Hon
             type = "npc",
             id = 153393,
             x = 3,
-            completed = {
-                type = "quest",
-                id = 55906,
-            },
+            y = 0,
+            connections = {1}
+        },
+        {
+            name = L["Summon Bumbles or Seabreeze Bumblebee"],
+            type = "quest",
+            id = 55906,
+            x = 3,
             connections = {1}
         },
         {
@@ -1366,7 +1386,7 @@ BtWQuestsDatabase:AddChain(BtWQuests.Constant.Chain.BattleForAzeroth.Secrets.Hon
 })
 
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_SECRETS, {
-    name = BTWQUESTS_SECRET,
+    name = L["BTWQUESTS_SECRET"],
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     items = {
         {

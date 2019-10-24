@@ -1,11 +1,13 @@
 ## Interface: 80205
 ## Title: BtWQuests: Classic
-## Version: 9
+## Version: 10
 ## Notes: Classic quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
 
 Defines.lua
+
+Localization.lua
 
 Quests.lua
 Quests.deDE.lua

@@ -5,7 +5,7 @@ OneRing_Config = {
 		["Black Dragonflight-Durlok-3"] = "default",
 	},
 	["_GameVersion"] = "8.2.5",
-	["_OPieVersion"] = "Walnut 4 (3.101)",
+	["_OPieVersion"] = "Walnut 5 (3.101)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {
@@ -144,10 +144,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABuede=1Sr1m",
 					["id"] = 75973,
 				}, -- [15]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,

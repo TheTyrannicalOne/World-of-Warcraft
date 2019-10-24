@@ -1,9 +1,20 @@
+local L = BtWQuests.L;
+BTWQUESTS_VIEW_ALL = L["BTWQUESTS_VIEW_ALL"];
+
+local min = math.min;
+local max = math.max;
+
+local CHAIN_GRID_HORIZONTAL_SIZE = 95;
+local CHAIN_GRID_VERTICAL_SIZE = 80;
+local CHAIN_GRID_HORIZONTAL_PADDING = 99;
+local CHAIN_GRID_VERTICAL_PADDING = 52 + (CHAIN_GRID_VERTICAL_SIZE * 2);
+
 -- [[ Chain ]]
 function BtWQuestsChainItemPool_HideAndClearAnchors(framePool, frame)
     FramePool_HideAndClearAnchors(framePool, frame)
-    
+
     frame.linePool:ReleaseAll()
-    
+
     frame.IsNextAnim:Stop()
     frame.previousButtons = nil
     frame.status = nil
@@ -18,7 +29,7 @@ function BtWQuestsChainItemMixin:OnLoad()
 
     self.Name:SetText("Quest Name")
     self.Tick:SetShown(false)
-    
+
     self.tooltip = BtWQuestsTooltip
 end
 function BtWQuestsChainItemMixin:SetHideSpoilers(value)
@@ -31,8 +42,7 @@ function BtWQuestsChainItemMixin:Set(item, character)
     self.item = item
     self.character = character;
 
-    self.ForgottenAnim:Stop()
-    self.ForgottenAnimQuick:Stop()
+    self:StopAnimating()
 
     local status = item:GetStatus(character)
 
@@ -68,14 +78,14 @@ function BtWQuestsChainItemMixin:Set(item, character)
     else
         self.Name:SetAlpha(1)
     end
-    
+
     if status == "active" then
         self.ActiveTexture:Show()
         self.ActiveAnim:Play()
     else
         self.ActiveTexture:Hide()
     end
-    
+
     self.Tick:SetShown(status == "complete")
 
     self:SetShown(item:Visible(character))
@@ -85,20 +95,19 @@ function BtWQuestsChainItemMixin:Update(item)
     local character = self.character;
     local status = item:GetStatus(character)
 
-    self.ForgottenAnim:Stop()
-    self.ForgottenAnimQuick:Stop()
+    self:StopAnimating()
 
     self.Name:SetText(item:GetName(character))
     if not self.hideSpoilers or status ~= nil then
         self.Name:SetShown(true)
         self.SpoilerName:SetShown(false)
     end
-    
+
     if self.status ~= status then
         if status == "complete" then
             self.ForgottenAnim:Play()
         end
-    
+
         if status == "active" then
             self.ActiveTexture:Show()
             self.ActiveAnim:Play()
@@ -106,9 +115,9 @@ function BtWQuestsChainItemMixin:Update(item)
             self.ActiveTexture:Hide()
         end
     end
-    
+
     self.Tick:SetShown(status == "complete")
-    
+
     self:SetShown(item:Visible(character))
     self.status = status
 end
@@ -147,15 +156,23 @@ function BtWQuestsCategoryHeaderMixin:Set(item, character)
     self.item = item
 
     self.Name:SetText(item:GetName())
-    
+
     self.id = item:GetID();
 end
 
 BtWQuestsCategoryItemMixin = {}
 function BtWQuestsCategoryItemMixin:Set(item, character)
     self.item = item
+    self.character = character;
 
     self.Name:SetText(item:GetName(character))
+    if item:GetType() == "chain" and character:IsChainIgnored(item:GetID()) then
+        self.Name:SetAlpha(0.5)
+    elseif item:GetType() == "category" and character:IsCategoryIgnored(item:GetID()) then
+        self.Name:SetAlpha(0.5)
+    else
+        self.Name:SetAlpha(1)
+    end
 
     local texture, left, right, top, bottom = item:GetButtonImage()
     self.Background:SetTexture(texture)
@@ -167,9 +184,8 @@ function BtWQuestsCategoryItemMixin:Set(item, character)
     self.Acive:SetShown(item:IsActive(character))
     self.Tick:SetShown(item:IsCompleted(character))
     self.Major:SetShown(item:IsMajor())
-    
+
     self.id = item:GetID();
-    self.character = character;
 end
 function BtWQuestsCategoryItemMixin:OnClick()
     return self.item:OnClick(self.character, self, BtWQuestsFrame, BtWQuestsFrame.Tooltip)
@@ -182,20 +198,14 @@ function BtWQuestsCategoryItemMixin:OnLeave()
 end
 function BtWQuestsCategoryItemMixin:OnMouseUp(button)
     if button == "RightButton" then
-        local character = self.character
-        if self.item:GetType() == "chain" then
-            character:ToggleChainIgnored(self.item:GetID())
-            self.Acive:SetShown(self.item:IsActive(character))
-        elseif self.item:GetType() == "category" then
-            character:ToggleCategoryIgnored(self.item:GetID())
-        end
-        BtWQuestsFrame:Refresh()
+        BtWQuestsFrame:ZoomOut()
     end
 end
 
 BtWQuestsCategoryListItemMixin = Mixin({}, BtWQuestsCategoryItemMixin)
 function BtWQuestsCategoryListItemMixin:Set(item, character)
     self.item = item
+    self.character = character;
 
     local subtext = item:GetSubtext(character)
 
@@ -207,6 +217,13 @@ function BtWQuestsCategoryListItemMixin:Set(item, character)
         self.Name:SetPoint("LEFT", 60, 0)
     else
         self.Name:SetPoint("TOPLEFT", 60, -13)
+    end
+    if item:GetType() == "chain" and character:IsChainIgnored(item:GetID()) then
+        self.Name:SetAlpha(0.5)
+    elseif item:GetType() == "category" and character:IsCategoryIgnored(item:GetID()) then
+        self.Name:SetAlpha(0.5)
+    else
+        self.Name:SetAlpha(1)
     end
 
     local texture, left, right, top, bottom = item:GetListImage()
@@ -220,9 +237,9 @@ function BtWQuestsCategoryListItemMixin:Set(item, character)
     self.Acive:SetShown(item:IsActive(character))
     self.Tick:SetShown(item:IsCompleted(character))
     self.Major:SetShown(item:IsMajor())
-    
+    self.Major:SetAlpha(1)
+
     self.id = item:GetID();
-    self.character = character;
 end
 function BtWQuestsCategoryListItemMixin:OnEnter()
     BtWQuestsCategoryItemMixin.OnEnter(self)
@@ -232,10 +249,17 @@ function BtWQuestsCategoryListItemMixin:OnLeave()
     BtWQuestsCategoryItemMixin.OnLeave(self)
     self.Ignore.texture:SetAlpha(0.0)
 end
-function BtWQuestsCategoryListItemMixin:OnMouseUp(button)
-    if button == "RightButton" then
-        BtWQuestsFrame:ZoomOut()
-    end
+
+BtWQuestsCategoryGridItemMixin = Mixin({}, BtWQuestsCategoryItemMixin)
+function BtWQuestsCategoryGridItemMixin:OnEnter()
+    BtWQuestsCategoryItemMixin.OnEnter(self)
+    self.Major:SetAlpha(0)
+    self.Ignore.texture:SetAlpha(0.75)
+end
+function BtWQuestsCategoryGridItemMixin:OnLeave()
+    BtWQuestsCategoryItemMixin.OnLeave(self)
+    self.Major:SetAlpha(1)
+    self.Ignore.texture:SetAlpha(0.0)
 end
 
 BtWQuestsChainViewItemMixin = {}
@@ -255,6 +279,11 @@ end
 function BtWQuestsChainViewItemMixin:OnDragStop()
     self:GetChainView():OnDragStop()
 end
+function BtWQuestsChainViewItemMixin:OnMouseUp(button)
+    if button == "RightButton" then
+        BtWQuestsFrame:ZoomOut()
+    end
+end
 
 BtWQuestsChainViewMixin = {}
 function BtWQuestsChainViewMixin:OnLoad()
@@ -265,7 +294,7 @@ end
 function BtWQuestsChainViewMixin:OnDragStart()
     self.scrollX, self.scrollY = self:GetHorizontalScroll(), self:GetVerticalScroll()
     self.mouseX, self.mouseY = GetCursorPosition()
-    
+
     local scale = self:GetScrollChild():GetEffectiveScale()
     self.mouseX, self.mouseY = self.mouseX / scale, self.mouseY / scale
 
@@ -278,12 +307,12 @@ function BtWQuestsChainViewMixin:OnDrag()
     local mouseX, mouseY = GetCursorPosition()
     local scale = self:GetEffectiveScale()
     mouseX, mouseY = mouseX / scale, mouseY / scale
-    
+
     local maxXScroll, maxYScroll = self:GetHorizontalScrollRange(), self:GetVerticalScrollRange()
-    
+
     mouseX = min(max(mouseX - self.mouseX + self.scrollX, 0), maxXScroll)
     mouseY = min(max(mouseY - self.mouseY + self.scrollY, 0), maxYScroll)
-    
+
     self:SetHorizontalScroll(mouseX)
     self:SetVerticalScroll(mouseY)
 end
@@ -322,9 +351,11 @@ function BtWQuestsChainViewMixin:SelectFromLink(...)
 end
 function BtWQuestsChainViewMixin:SetChain(chainID, scrollTo, zoom)
     self.chainID = chainID
-    
+
     self.itemPool:ReleaseAll()
     self.ItemButtons = {}
+
+    self.rect = {};
 
     self.scrollTo = scrollTo
     self.scrollToButton = nil
@@ -337,10 +368,43 @@ function BtWQuestsChainViewMixin:SetChain(chainID, scrollTo, zoom)
         self:SetZoom(zoom)
     end
 
-    local numItems = self:AddButtons(chainID, 0, 0)
+    self:AddButtons(chainID, 0, 0)
 
-    if self.lowestButton ~= nil then
-        self:GetScrollChild().Bottom:SetPoint("TOP", 0, select(5, self.lowestButton:GetPoint("TOP")) - 23 - (self:GetHeight()/2))
+    do
+        local Child = self:GetScrollChild();
+        local rect = self.rect;
+        local width = rect.right - rect.left;
+        local height = (rect.bottom - rect.top);
+
+        if width % 2 == 1 then
+            if rect.left % 2 == 1 then
+                rect.left = rect.left - 1;
+            elseif rect.right % 2 == 1 then
+                rect.right = rect.right + 1;
+            end
+            width = rect.right - rect.left;
+        end
+
+        while width < 6 do
+            rect.left = rect.left - 1;
+            rect.right = rect.right + 1;
+            width = rect.right - rect.left;
+        end
+
+        if rect.left < 0 then
+            local shift = -(rect.left) * CHAIN_GRID_HORIZONTAL_SIZE;
+            for itemButton in self.itemPool:EnumerateActive() do
+                local x, y = select(4, itemButton:GetPoint("CENTER"));
+                itemButton:SetPoint(
+                    "CENTER", itemButton:GetParent(), "TOPLEFT",
+                    x + shift,
+                    y
+                );
+            end
+        end
+
+        Child:SetWidth(width * CHAIN_GRID_HORIZONTAL_SIZE + (CHAIN_GRID_HORIZONTAL_PADDING * 2));
+        Child:SetHeight(height * CHAIN_GRID_VERTICAL_SIZE + (CHAIN_GRID_VERTICAL_PADDING * 2));
     end
 
     self:UpdateScrollChildRect()
@@ -352,37 +416,41 @@ function BtWQuestsChainViewMixin:SetChain(chainID, scrollTo, zoom)
         if self.scrollToButton == nil then
             self.scrollToButton = self.scrollToButtonAside
         end
-        
+
         -- if self.scrollToButton == nil then
         --     local buttons = self.ItemButtons[chainID]
         --     local index = 1
         --     while buttons[index] and not buttons[index]:IsShown() do
         --         index = index + 1
         --     end
-            
+
         --     self.scrollToButton = buttons[index]
         -- end
-        
+
         if self.scrollToButton then
             local scale = self:GetZoom()
-            local x, y = select(4, self.scrollToButton:GetPoint("TOP"))
-            
+            local x, y = select(4, self.scrollToButton:GetPoint("CENTER"))
+
             -- self:SetHorizontalScroll(x - (self:GetWidth() / scale) / 2)
-            self:SetVerticalScroll(0 - y - (self:GetHeight() / scale) / 2 + 24)
+            self:SetVerticalScroll(-y - (self:GetHeight() / scale) / 2)
         else
             self:SetVerticalScroll(0)
         end
     end
 end
-function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOverride)
+function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOverride, connectionsOverride, connectionsChainOverride)
     local character = self:GetCharacter()
     assert(character ~= nil, "Must set a character before setting a chain")
 
-    self.ItemButtons[chainID] = {}
     local buttons = self.ItemButtons[chainID]
+    if not buttons then
+        buttons = {};
+        self.ItemButtons[chainID] = buttons;
+    end
+    local rect = self.rect;
 
     local chain = BtWQuestsDatabase:GetChainByID(chainID)
-    
+
     local previousX, previousY = nil, 0
 
     local index = 1
@@ -391,7 +459,7 @@ function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOver
         if item:IsValidForCharacter(character) then
             local x = item:GetX()
             local y = item:GetY()
-            
+
             if x == nil then
                 if y == nil then
                     if previousX == nil then
@@ -426,13 +494,30 @@ function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOver
                 x = x + xOffset
                 y = y + yOffset
             end
-            
+
             previousX = x
             previousY = y
 
+            rect.left = rect.left and min(rect.left, x) or x;
+            rect.right = rect.right and max(rect.right, x) or x;
+            rect.top = rect.top and min(rect.top, y) or y;
+            rect.bottom = rect.bottom and max(rect.bottom, y) or y;
+
             if item:IsEmbed() then
                 if item:GetType() == "chain" then
-                    self:AddButtons(item:GetID(), x or 0, y or 0, item:IsAside(character))
+                    local connections = item:GetConnections();
+                    local connectionsOverride;
+                    if connections then
+                        connectionsOverride = {};
+                        for i,itemConnections in pairs(connections) do
+                            local override = {};
+                            for k,connection in ipairs(itemConnections) do
+                                override[k] = index + connection
+                            end
+                            connectionsOverride[i] = override;
+                        end
+                    end
+                    previousX, previousY = self:AddButtons(item:GetID(), x or 0, y or 0, item:IsAside(character), connectionsOverride, chain)
                 end
             else
                 local itemButton = buttons[index] or self.itemPool:Acquire();
@@ -455,7 +540,7 @@ function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOver
                     if available then
                         itemButton.ActiveTexture:Show()
                         itemButton.IsNextAnim:Play()
-                        
+
                         itemButton.Name:SetShown(true)
                         itemButton.SpoilerName:SetShown(false)
                     end
@@ -465,54 +550,67 @@ function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOver
 
                 -- local frameX = (item:GetX()) * BTWQUESTS_CHAIN_ITEM_WIDTH
                 -- local frameY = (item:GetY()) * BTWQUESTS_CHAIN_ITEM_HEIGHT
-            
-                itemButton:SetPoint("TOP", 0, -(y * 80) - (self:GetHeight()/2) + 24);
-                itemButton:SetPoint("LEFT", 95 * x + 12, 0);
-                -- itemButton:SetPoint("CENTER", self:GetScrollChild(), "TOPLEFT", frameX, -frameY)
 
+                itemButton:SetPoint(
+                    "CENTER", itemButton:GetParent(), "TOPLEFT",
+                    x * CHAIN_GRID_HORIZONTAL_SIZE + CHAIN_GRID_HORIZONTAL_PADDING,
+                    -(y * CHAIN_GRID_VERTICAL_SIZE + CHAIN_GRID_VERTICAL_PADDING)
+                );
+
+                -- itemButton:SetPoint("TOP", 0, -(y * 80) - (self:GetHeight()/2) + 24);
+                -- itemButton:SetPoint("LEFT", x * CHAIN_GRID_HORIZONTAL_SIZE + CHAIN_GRID_HORIZONTAL_PADDING, 0);
+                -- itemButton:SetPoint("CENTER", self:GetScrollChild(), "TOPLEFT", frameX, -frameY)
+                -- /dump BtWQuestsChainScrollFrame.ItemButtons[89905][3]:SetPoint("LEFT", 100, 0)
                 local connectionIndex = 1
-                local connectionItem = item:GetConnection(connectionIndex)
+                local connectionItem = item:GetConnection(connectionIndex, connectionsOverride and connectionsOverride[index], connectionsChainOverride)
                 while connectionItem do
                     if connectionItem:IsValidForCharacter(character) then
-                        local connectionButton = buttons[connectionItem:GetIndex()] or self.itemPool:Acquire();
-                        buttons[connectionItem:GetIndex()] = connectionButton
+                        local connectionChainID = connectionItem:GetRoot():GetID();
+                        local connectionIndex = connectionItem:GetIndex();
+
+                        if not self.ItemButtons[connectionChainID] then
+                            self.ItemButtons[connectionChainID] = {};
+                        end
+
+                        local connectionButton = self.ItemButtons[connectionChainID][connectionIndex] or self.itemPool:Acquire();
+                        self.ItemButtons[connectionChainID][connectionIndex] = connectionButton
 
                         -- Storing this so the connected items can check if they should be next
                         if connectionButton.previousButtons == nil then
                             connectionButton.previousButtons = {}
                         end
                         table.insert(connectionButton.previousButtons, itemButton)
-                        
+
                         local lineContainer = itemButton.linePool:Acquire();
-                        
+
                         lineContainer.Background:SetStartPoint("CENTER", itemButton);
                         lineContainer.Background:SetEndPoint("CENTER", connectionButton);
-                        
+
                         lineContainer.Active:SetStartPoint("CENTER", itemButton);
                         lineContainer.Active:SetEndPoint("CENTER", connectionButton);
-                        
+
                         lineContainer.Complete:SetStartPoint("CENTER", itemButton);
                         lineContainer.Complete:SetEndPoint("CENTER", connectionButton);
-                        
+
                         -- lineContainer:SetAlpha(1)
-                        
+
                         lineContainer.PulseAlpha:Stop()
-                            
+
                         lineContainer.Active:Hide()
                         lineContainer.Complete:Hide()
-                        
+
                         if itemButton.status == "complete" then
                             lineContainer.Complete:Show()
                         elseif itemButton.status == "active" then
                             -- lineContainer.Active:Show()
                         end
-                        
+
                         lineContainer.connection = connectionButton
                         lineContainer:SetShown(itemButton:IsShown() and connectionItem:Visible(character));
                     end
-                    
+
                     connectionIndex = connectionIndex + 1
-                    connectionItem = item:GetConnection(connectionIndex)
+                    connectionItem = item:GetConnection(connectionIndex, connectionsOverride and connectionsOverride[index], connectionsChainOverride)
                 end
 
                 if item:Visible(character) then
@@ -542,12 +640,12 @@ function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOver
         item = chain:GetItem(index)
     end
 
-    return chain:GetNumItems()
+    return previousX, previousY
 end
 function BtWQuestsChainViewMixin:Update()
     self:UpdateChain(self.chainID)
 end
-function BtWQuestsChainViewMixin:UpdateChain(chainID)
+function BtWQuestsChainViewMixin:UpdateChain(chainID, connectionsOverride, connectionsChainOverride)
     local character = self:GetCharacter()
 
     local buttons = self.ItemButtons[chainID]
@@ -561,12 +659,24 @@ function BtWQuestsChainViewMixin:UpdateChain(chainID)
         if item:IsValidForCharacter(character) then
             if item:IsEmbed() then
                 if item:GetType() == "chain" then
-                    self:UpdateChain(item:GetID())
+                    local connections = item:GetConnections();
+                    local connectionsOverride;
+                    if connections then
+                        connectionsOverride = {};
+                        for i,itemConnections in pairs(connections) do
+                            local override = {};
+                            for k,connection in ipairs(itemConnections) do
+                                override[k] = index + connection
+                            end
+                            connectionsOverride[i] = override;
+                        end
+                    end
+                    self:UpdateChain(item:GetID(), connectionsOverride, chain)
                 end
             else
                 local itemButton = buttons[index]
                 assert(itemButton, "Chain item was never added in the first place")
-                
+
                 local status = itemButton.status
 
                 itemButton:Update(item)
@@ -585,7 +695,7 @@ function BtWQuestsChainViewMixin:UpdateChain(chainID)
                     if available then
                         itemButton.ActiveTexture:Show()
                         itemButton.IsNextAnim:Play()
-                        
+
                         itemButton.Name:SetShown(true)
                         itemButton.SpoilerName:SetShown(false)
                     end
@@ -594,10 +704,13 @@ function BtWQuestsChainViewMixin:UpdateChain(chainID)
                 end
 
                 local connectionIndex = 1
-                local connectionItem = item:GetConnection(connectionIndex)
+                local connectionItem = item:GetConnection(connectionIndex, connectionsOverride and connectionsOverride[index], connectionsChainOverride)
                 while connectionItem do
                     if connectionItem:IsValidForCharacter(character) then
-                        local connectionButton = buttons[connectionItem:GetIndex()]
+                        local connectionChainID = connectionItem:GetRoot():GetID();
+                        local connectionIndex = connectionItem:GetIndex();
+
+                        local connectionButton = self.ItemButtons[connectionChainID][connectionIndex];
 
                         -- Storing this so the connected items can check if they should be next
                         if connectionButton.previousButtons == nil then
@@ -605,11 +718,11 @@ function BtWQuestsChainViewMixin:UpdateChain(chainID)
                         end
                         table.insert(connectionButton.previousButtons, itemButton)
                     end
-                    
+
                     connectionIndex = connectionIndex + 1
-                    connectionItem = item:GetConnection(connectionIndex)
+                    connectionItem = item:GetConnection(connectionIndex, connectionsOverride and connectionsOverride[index], connectionsChainOverride)
                 end
-                
+
                 for lineContainer in itemButton.linePool:EnumerateActive() do
                     if itemButton.status == "complete" and status ~= "complete" then
                         lineContainer.DefaultToCompleteAnim:Play()
@@ -622,8 +735,6 @@ function BtWQuestsChainViewMixin:UpdateChain(chainID)
         index = index + 1
         item = chain:GetItem(index)
     end
-    
-    return chain:GetNumItems()
 end
 
 -- [[ Expansions View ]]
@@ -634,7 +745,7 @@ end
 function BtWQuestsExpansionButtonMixin:Set(item, character)
     assert(character ~= nil);
     self.item = item
-    
+
     self:SetText(item:GetName(character))
     self.Subtext:SetText(item:GetSubtext(character, true))
     self.Active:SetShown(item:IsActive(character))
@@ -738,14 +849,14 @@ function BtWQuestsNavBarMixin:AddButtons(type, id, character)
 
     if parent then
         self:AddButtons("category", parent, character)
-        
+
         parent = {
             type = "category",
             id = parent,
         }
     elseif expansion then
         self:AddButtons("expansion", expansion, character)
-        
+
         parent = {
             type = "expansion",
             id = expansion,
@@ -876,7 +987,7 @@ BtWQuestsDropDownMenuMixin = {}
 function BtWQuestsDropDownMenuMixin:SetDropDownWidth(width, padding)
 	-- self.Middle:SetWidth(width)
     -- self:SetWidth(self.Left:GetWidth() + self.Right:GetWidth() + self.Middle:GetWidth())
-    
+
 	self.Middle:SetWidth(width);
 	local defaultPadding = 25;
 	if ( padding ) then
@@ -923,7 +1034,7 @@ function BtWQuestsDropDownMenuMixin:GetListFrame()
         list:SetHeight(10)
         self.list = list
         self.buttonPool = CreateFramePool("BUTTON", list, "BtWQuestsDropDownButtonTemplate")
-        
+
         local menu = self
         hooksecurefunc("ToggleDropDownMenu", function ()
             menu:Close()
@@ -996,7 +1107,7 @@ function BtWQuestsDropDownMenuMixin:AddButton(info)
 	-- This button is used to capture the mouse OnEnter/OnLeave events if the dropdown button is disabled, since a disabled button doesn't receive any events
 	-- This is used specifically for drop down menu time outs
     -- local invisibleButton = button.InvisibleButton
-    
+
     button:SetWidth(listFrame:GetWidth() - 30)
 
 	-- Default settings
@@ -1164,11 +1275,11 @@ function BtWQuestsDropDownMenuMixin:AddButton(info)
 			uncheck:SetDesaturated(false);
 			uncheck:SetAlpha(1);
 		end
-		
+
 		if info.customCheckIconAtlas or info.customCheckIconTexture then
 			check:SetTexCoord(0, 1, 0, 1);
 			uncheck:SetTexCoord(0, 1, 0, 1);
-			
+
 			if info.customCheckIconAtlas then
 				check:SetAtlas(info.customCheckIconAtlas);
 				uncheck:SetAtlas(info.customUncheckIconAtlas or info.customCheckIconAtlas);
@@ -1221,7 +1332,7 @@ function BtWQuestsDropDownMenuMixin:AddButton(info)
 	else
 		colorSwatch:Hide();
     end
-    
+
 	local deleteButton = button.DeleteButton
     if info.hasDelete then
         deleteButton:Show()
@@ -1243,7 +1354,7 @@ function BtWQuestsDropDownMenuMixin:AddButton(info)
 
     -- Set the height of the listframe
 	listFrame:SetHeight((index * UIDROPDOWNMENU_BUTTON_HEIGHT) + (UIDROPDOWNMENU_BORDER_HEIGHT * 2));
-    
+
     button:Show()
 end
 function BtWQuestsDropDownMenuMixin:Toggle(anchorName, xOffset, yOffset)
@@ -1274,7 +1385,7 @@ function BtWQuestsDropDownMenuMixin:Open(anchorName, xOffset, yOffset)
 
     list:ClearAllPoints()
     local point, relativeTo, relativePoint
-    
+
     if ( not anchorName ) then
         -- See if the anchor was set manually using setanchor
         if ( self.xOffset ) then
@@ -1328,7 +1439,7 @@ function BtWQuestsDropDownMenuMixin:Open(anchorName, xOffset, yOffset)
             relativePoint = self.relativePoint;
         end
     end
-            
+
     if not point then
         point = "TOPLEFT"
     end
@@ -1354,9 +1465,9 @@ function BtWQuestsDropDownMenuMixin:Open(anchorName, xOffset, yOffset)
 
     self.buttonPool:ReleaseAll()
     self:Initialize()
-    
+
     list:SetWidth(list.maxWidth + 25)
-    
+
     for button in self.buttonPool:EnumerateActive() do
         button:SetWidth(list.maxWidth);
     end
@@ -1395,6 +1506,15 @@ function BtWQuestsCharacterDropDownMixin:Initialize()
 
     local currentName, currentRealm = self:GetParent():GetCharacter():GetFullName()
     local current = currentName .. "-" .. currentRealm
+
+    if C_QuestSession.HasJoined() then
+        local info = self:CreateInfo();
+        info.text = BtWQuests.L["Party Sync"]
+        info.value = "-partysync"
+        info.func = Select
+        info.checked = "-partysync" == current
+        self:AddButton(info)
+    end
 
     local info = self:CreateInfo();
     info.text = RAID_CLASS_COLORS[select(2,UnitClass("player"))]:WrapTextInColorCode(player .. " (" .. UnitLevel("player") .. ")")
@@ -1465,7 +1585,7 @@ end
 BtWQuestsTooltipMixin = {}
 function BtWQuestsTooltipMixin:OnLoad()
     self:SetScript("OnTooltipSetQuest", self.OnSetQuest)
-    
+
     self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b);
     self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
 end
@@ -1482,13 +1602,13 @@ function BtWQuestsTooltipMixin:AddRewards(item, character)
     if not rewards or #rewards == 0 then
         return
     end
-    
+
     local addedRewards
     for _,reward in ipairs(rewards) do
         if reward:IsValidForCharacter(character) and reward:Visible(character) then
             if not addedRewards then
                 self:AddLine(" ")
-                self:AddLine("Rewards:")
+                self:AddLine(L["BTWQUESTS_TOOLTIP_REWARDS"])
                 addedRewards = true
             end
 
@@ -1502,11 +1622,11 @@ function BtWQuestsTooltipMixin:SetChain(chainID, character)
 
     self:ClearLines()
     self:AddDoubleLine(chain:GetName(character))
-    
+
     if chain:IsActive(character) then
-        self:AddLine(GREEN_FONT_COLOR_CODE..BTWQUESTS_QUEST_CHAIN_ACTIVE..FONT_COLOR_CODE_CLOSE)
+        self:AddLine(GREEN_FONT_COLOR_CODE..L["BTWQUESTS_QUEST_CHAIN_ACTIVE"]..FONT_COLOR_CODE_CLOSE)
     end
-    
+
     local prerequisites = chain:GetPrerequisites()
     if prerequisites then
         local addedPrerequisite
@@ -1514,10 +1634,10 @@ function BtWQuestsTooltipMixin:SetChain(chainID, character)
             if prerequisite:IsValidForCharacter(character) and prerequisite:Visible(character) then
                 if not addedPrerequisite then
                     self:AddLine(" ")
-                    self:AddLine(BTWQUESTS_TOOLTIP_PREREQUISITES)
+                    self:AddLine(L["BTWQUESTS_TOOLTIP_PREREQUISITES"])
                     addedPrerequisite = true
                 end
-    
+
                 if prerequisite:IsCompleted(character) then
                     self:AddLine(" - " .. prerequisite:GetName(character, "prerequisite"), 0.5, 0.5, 0.5)
                 else
@@ -1528,51 +1648,83 @@ function BtWQuestsTooltipMixin:SetChain(chainID, character)
     end
 
     self:AddRewards(chain, character)
-    
+
     self:Show();
 end
 -- Custom function for displaying an active quest showing completed requirements
 function BtWQuestsTooltipMixin:SetActiveQuest(id, character)
     local id = tonumber(id)
-    
+
     self.character = character
     self.questID = id
-    
+
     local quest = BtWQuestsDatabase:GetQuestByID(id)
     local questLogIndex = GetQuestLogIndexByID(id)
+	local isComplete = select(6, GetQuestLogTitle(questLogIndex));
     local _, objectiveText = GetQuestLogQuestText(questLogIndex);
-    
+
     self:ClearLines()
-    self:AddDoubleLine(quest:GetName())
-    
+    self:SetText(quest:GetName())
+
     if character:IsQuestActive(id) then
-        self:AddLine(GREEN_FONT_COLOR_CODE..QUEST_TOOLTIP_ACTIVE..FONT_COLOR_CODE_CLOSE)
+        if character:IsPlayer() and C_QuestLog.IsQuestReplayable(id) then
+            GameTooltip_AddInstructionLine(self, QuestUtils_GetReplayQuestDecoration(id)..QUEST_SESSION_QUEST_TOOLTIP_IS_REPLAY, false);
+        elseif character:IsPlayer() and C_QuestLog.IsQuestDisabledForSession(id) then
+            GameTooltip_AddColoredLine(self, QuestUtils_GetDisabledQuestDecoration(id)..QUEST_SESSION_ON_HOLD_TOOLTIP_TITLE, DISABLED_FONT_COLOR, false);
+        else
+            self:AddLine(GREEN_FONT_COLOR_CODE..QUEST_TOOLTIP_ACTIVE..FONT_COLOR_CODE_CLOSE)
+        end
     end
 
-    if objectiveText then
+	if isComplete and isComplete < 0 then
+		QuestUtils_AddQuestTagLineToTooltip(self, FAILED, "FAILED", nil, RED_FONT_COLOR);
+	end
+
+	if isComplete and isComplete > 0 then
+		local completionText = GetQuestLogCompletionText(questLogIndex) or QUEST_WATCH_QUEST_READY;
         self:AddLine(" ")
-        self:AddLine(objectiveText, 1, 1, 1)
-    end
-    
-    local numRequirements = character:GetNumQuestLeaderBoards(id);
-    local addedTitle
-	for index = 1,numRequirements do
-        local name, _, completed = character:GetQuestLogLeaderBoard(index, id);
-        if name then
-            if not addedTitle then
-                self:AddLine(" ")
-                self:AddLine(QUEST_TOOLTIP_REQUIREMENTS)
-                addedTitle = true
-            end
+		self:AddLine(completionText, 1, 1, 1, true);
+    else
+        if objectiveText then
+            self:AddLine(" ")
+            self:AddLine(objectiveText, 1, 1, 1, true)
+        end
 
-            if completed then
-                self:AddLine(" - " .. name, 0.5, 0.5, 0.5)
-            else
-                self:AddLine(" - " .. name, 1, 1, 1)
+        local numRequirements = character:GetNumQuestLeaderBoards(id);
+        local addedTitle
+        for index = 1,numRequirements do
+            local name, _, completed = character:GetQuestLogLeaderBoard(index, id);
+            if name then
+                if not addedTitle then
+                    self:AddLine(" ")
+                    self:AddLine(QUEST_TOOLTIP_REQUIREMENTS)
+                    addedTitle = true
+                end
+
+                if completed then
+                    self:AddLine(" - " .. name, 0.5, 0.5, 0.5)
+                else
+                    self:AddLine(" - " .. name, 1, 1, 1)
+                end
             end
         end
     end
-    
+
+	local partyMembersOnQuest = 0;
+	for i=1, GetNumSubgroupMembers() do
+		if IsUnitOnQuestByQuestID(id, "party"..i) then
+			-- Found at least one party member who is also on the quest, set it up!
+			self:AddLine(" ");
+			self:AddLine(PARTY_QUEST_STATUS_ON);
+
+			local omitTitle = true;
+			local ignoreActivePlayer = true;
+			self:SetQuestPartyProgress(id, omitTitle, ignoreActivePlayer);
+
+			break;
+		end
+	end
+
     self:OnSetQuest()
     self:Show()
 end
@@ -1585,7 +1737,7 @@ function BtWQuestsTooltipMixin:SetHyperlink(link, character)
     linkstring = linkstring or link
 
     local _, _, type, text = string.find(linkstring, "([^:]+):([^|]+)")
-    
+
     if type == "quest" then
         local _, _, id = string.find(text, "^(%d+)")
         id = tonumber(id);
@@ -1599,7 +1751,7 @@ function BtWQuestsTooltipMixin:SetHyperlink(link, character)
         end
     elseif type == "btwquests" then
         local _, _, subtype, id = string.find(text, "^([^:]*):(%d+)")
-        
+
         if subtype == "chain" then
             self:SetChain(id, character)
         end
@@ -1632,7 +1784,11 @@ end
 function BtWQuestsSearchBoxMixin:SetSearch(query)
     local start = debugprofilestop()
     self.query = query
-    self.results = BtWQuestsDatabase:Search(query, self:GetCharacter())
+    if not self.results then
+        self.results = {};
+    end
+    wipe(self.results);
+    BtWQuestsDatabase:Search(self.results, query, self:GetCharacter())
     -- print (string.format("BtWQuests search found %d in %fms", #self.results, debugprofilestop() - start))
 end
 function BtWQuestsSearchBoxMixin:ClearSearch()
@@ -1685,7 +1841,7 @@ function BtWQuestsSearchBoxMixin:OnTextChanged()
     SearchBoxTemplate_OnTextChanged(self)
 
     local text = self:GetText();
-    
+
     self:SetSearch(text)
     self:UpdateResults()
 end
@@ -1742,7 +1898,7 @@ function BtWQuestsSearchPreviewMixin:UpdateResults(query, results)
     if numResults == 0 then
         self:Hide()
     end
-    
+
     for index = 1, BTWQUESTS_NUM_SEARCH_PREVIEWS do
         local button = self.Results[index]
         if index <= numResults then
@@ -1883,7 +2039,7 @@ function BtWQuestsSearchResultsMixin:UpdateSearch()
             button.link = results[index].item.link;
             button.tooltip = results[index].item.tooltip;
             button.scrollTo = results[index].item.scrollTo;
-            
+
             button:SetID(index)
             button:Show();
         else

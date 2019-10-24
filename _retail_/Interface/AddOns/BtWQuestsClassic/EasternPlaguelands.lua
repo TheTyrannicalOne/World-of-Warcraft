@@ -67,11 +67,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_PALADIN_P
                     },
                 },
                 {
-                    name = "Go to Fiona",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.0902, 0.6652, "Fiona")
-                    end,
+                    type = "npc",
+                    id = 45417,
+                    -- name = "Go to Fiona",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.0902, 0.6652, "Fiona")
+                    -- end,
                 }
             },
             x = 3,
@@ -187,11 +189,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_REDPATH, 
             },
         },
         {
-            name = "Go to Carlin Redpath",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3557, 0.6889, "Carlin Redpath")
-            end,
+            type = "npc",
+            id = 11063,
+            -- name = "Go to Carlin Redpath",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3557, 0.6889, "Carlin Redpath")
+            -- end,
             x = 4,
             y = 0,
             connections = {
@@ -199,11 +203,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_REDPATH, 
             },
         },
         {
-            name = "Go to Urk Gagbaz",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3501, 0.6815, "Urk Gagbaz")
-            end,
+            type = "npc",
+            id = 45500,
+            -- name = "Go to Urk Gagbaz",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3501, 0.6815, "Urk Gagbaz")
+            -- end,
             x = 6,
             y = 0,
             connections = {
@@ -373,7 +379,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_REDPATH, 
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_LIGHTS_SHIELD_TOWER, {
-    name = "Light's Shield Tower",
+    name = BtWQuests_GetAreaName(5448), -- Light's Shield Tower
     category = BTWQUESTS_CATEGORY_CLASSIC_EASTERN_PLAGUELANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     prerequisites = {
@@ -406,11 +412,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_LIGHTS_SH
             },
         },
         {
-            name = "Go to Betina Bigglezink",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5322, 0.5459, "Betina Bigglezink")
-            end,
+            type = "npc",
+            id = 11035,
+            -- name = "Go to Betina Bigglezink",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5322, 0.5459, "Betina Bigglezink")
+            -- end,
             x = 3,
             y = 0,
             connections = {
@@ -418,11 +426,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_LIGHTS_SH
             },
         },
         {
-            name = "Go to Frederick Calston",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5379, 0.5399, "Frederick Calston")
-            end,
+            type = "npc",
+            id = 45575,
+            -- name = "Go to Frederick Calston",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5379, 0.5399, "Frederick Calston")
+            -- end,
             x = 6,
             y = 0,
             connections = {
@@ -492,7 +502,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_LIGHTS_SH
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_LIGHTS_HOPE_CHAPEL, {
-    name = "Light's Hope Chapel",
+    name = BtWQuests_GetAreaName(2268), -- Light's Hope Chapel
     category = BTWQUESTS_CATEGORY_CLASSIC_EASTERN_PLAGUELANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     prerequisites = {
@@ -512,11 +522,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_LIGHTS_HO
     range = {40,60},
     items = {
         {
-            name = "Go to Smokey LaRue",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7491, 0.5350, "Smokey LaRue")
-            end,
+            type = "npc",
+            id = 11033,
+            -- name = "Go to Smokey LaRue",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7491, 0.5350, "Smokey LaRue")
+            -- end,
             x = 2,
             y = 0,
             connections = {
@@ -533,11 +545,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_LIGHTS_HO
             },
         },
         {
-            name = "Go to Rimblat Earthshatter",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7378, 0.5189, "Rimblat Earthshatter")
-            end,
+            type = "npc",
+            id = 16134,
+            -- name = "Go to Rimblat Earthshatter",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7378, 0.5189, "Rimblat Earthshatter")
+            -- end,
             x = 6,
             y = 0,
             connections = {
@@ -654,11 +668,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_TYRS_HAND
     range = {40,60},
     items = {
         {
-            name = "Go to Leonid Barthalomew the Revered",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7561, 0.5203, "Leonid Barthalomew the Revered")
-            end,
+            type = "npc",
+            id = 11036,
+            -- name = "Go to Leonid Barthalomew the Revered",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7561, 0.5203, "Leonid Barthalomew the Revered")
+            -- end,
             x = 3,
             y = 0,
             connections = {
@@ -807,11 +823,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_CRUSADE, 
     range = {40,60},
     items = {
         {
-            name = "Go to Deacon Andaal",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6127, 0.4289, "Deacon Andaal")
-            end,
+            type = "npc",
+            id = 45736,
+            -- name = "Go to Deacon Andaal",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6127, 0.4289, "Deacon Andaal")
+            -- end,
             x = 2,
             y = 0,
             connections = {
@@ -828,11 +846,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_CRUSADE, 
             },
         },
         {
-            name = "Go to Gamella Cracklefizz",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6158, 0.4312, "Gamella Cracklefizz")
-            end,
+            type = "npc",
+            id = 45735,
+            -- name = "Go to Gamella Cracklefizz",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.6158, 0.4312, "Gamella Cracklefizz")
+            -- end,
             x = 6,
             y = 0,
             connections = {
@@ -922,11 +942,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_JOURNEYS_
     range = {40,60},
     items = {
         {
-            name = "Go to Kirkian Dawnshield",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5000, 0.1952, "Kirkian Dawnshield")
-            end,
+            type = "npc",
+            id = 45826,
+            -- name = "Go to Kirkian Dawnshield",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5000, 0.1952, "Kirkian Dawnshield")
+            -- end,
             x = 0,
             y = 0,
             connections = {
@@ -943,11 +965,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_JOURNEYS_
             },
         },
         {
-            name = "Go to Argent Officer Irizarry",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5163, 0.2142, "Argent Officer Irizarry")
-            end,
+            type = "npc",
+            id = 45482,
+            -- name = "Go to Argent Officer Irizarry",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5163, 0.2142, "Argent Officer Irizarry")
+            -- end,
             x = 4,
             y = 0,
             connections = {
@@ -955,11 +979,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_JOURNEYS_
             },
         },
         {
-            name = "Go to Corpseburner Tim",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4800, 0.2304, "Corpseburner Tim")
-            end,
+            type = "npc",
+            id = 45816,
+            -- name = "Go to Corpseburner Tim",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4800, 0.2304, "Corpseburner Tim")
+            -- end,
             x = 6,
             y = 0,
             connections = {
@@ -1078,7 +1104,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_JOURNEYS_
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_PLAGUEWOOD, {
-    name = "Plaguewood Tower",
+    name = BtWQuests_GetAreaName(4067), -- Plaguewood Tower
     category = BTWQUESTS_CATEGORY_CLASSIC_EASTERN_PLAGUELANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     prerequisites = {
@@ -1127,11 +1153,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_PLAGUEWOO
                     },
                 },
                 {
-                    name = "Go to Argent Apothecary Judkins",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1755, 0.2788, "Argent Apothecary Judkins")
-                    end,
+                    type = "npc",
+                    id = 45828,
+                    -- name = "Go to Argent Apothecary Judkins",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1755, 0.2788, "Argent Apothecary Judkins")
+                    -- end,
                 },
             },
             x = 3,

@@ -1,4 +1,5 @@
 local BtWQuests = BtWQuests;
+local L = BtWQuests.L;
 local Database = BtWQuests.Database;
 local EXPANSION_ID = BtWQuests.Constant.Expansions.BattleForAzeroth;
 local CATEGORY_ID = BtWQuests.Constant.Category.BattleForAzeroth.Drustvar;
@@ -36,6 +37,24 @@ BtWQuestsDatabase:AddChain(Chain.TheFinalEffigy, {
     completed = {
         type = "quest",
         id = 47982,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1396800, 1425600, 1454400, 1483200, 1512000, 1540800, 1569600, 1598400, 1627200, 1656000, 1684800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                92100, 92950, 93700, 94450, 95200, 96050, 96850, 97700, 98300, 99150, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
     },
     items = {
         {
@@ -147,6 +166,38 @@ BtWQuestsDatabase:AddChain(Chain.TheBurdenOfProof, {
     completed = {
         type = "quest",
         id = 48198,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1707200, 1742400, 1777600, 1812800, 1848000, 1883200, 1918400, 1953600, 1988800, 2024000, 2059200, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                132450, 133600, 134700, 135750, 136850, 138050, 139300, 140450, 141300, 142450, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 165,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 250,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -305,6 +356,29 @@ BtWQuestsDatabase:AddChain(Chain.AnAirtightAlibi, {
         type = "quest",
         id = 48538,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2386200, 2435400, 2484600, 2533800, 2583000, 2632200, 2681400, 2730600, 2779800, 2829000, 2878200, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                165300, 166800, 168150, 169500, 170850, 172350, 173850, 175350, 176400, 177900, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+    },
     items = {
         {
             type = "chain",
@@ -453,6 +527,43 @@ BtWQuestsDatabase:AddChain(Chain.TheOrderOfEmbers, {
     completed = {
         type = "quest",
         id = 48946,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2153400, 2197800, 2242200, 2286600, 2331000, 2375400, 2419800, 2464200, 2508600, 2553000, 2597400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                145600, 146900, 148150, 149200, 150450, 151800, 153100, 154400, 155350, 156650, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+        {
+            type = "currency",
+            id = 1560,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 3500,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -605,6 +716,38 @@ BtWQuestsDatabase:AddChain(Chain.ANewOrder, {
         type = "quest",
         id = 49807,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1474400, 1504800, 1535200, 1565600, 1596000, 1626400, 1656800, 1687200, 1717600, 1748000, 1778400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                98750, 99600, 100350, 101250, 102000, 103000, 103750, 104600, 105400, 106250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 265,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 3775,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -740,6 +883,43 @@ BtWQuestsDatabase:AddChain(Chain.BreakOnThrough, {
     completed = {
         type = "quest",
         id = 50457,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                4209800, 4296600, 4383400, 4470200, 4557000, 4643800, 4730600, 4817400, 4904200, 4991000, 5077800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                295300, 297950, 300450, 302650, 305150, 307900, 310500, 313150, 315100, 317750, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 240,
+        },
+        {
+            type = "currency",
+            id = 1560,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 1505,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -964,6 +1144,38 @@ BtWQuestsDatabase:AddChain(Chain.StormingTheManor, {
         type = "quest",
         id = 50588,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1668400, 1702800, 1737200, 1771600, 1806000, 1840400, 1874800, 1909200, 1943600, 1978000, 2012400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                174400, 175950, 177350, 178800, 180200, 181800, 183400, 184800, 186200, 187600, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 600,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 1275,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1076,6 +1288,33 @@ BtWQuestsDatabase:AddChain(Chain.Drustfall, {
         type = "quest",
         id = 49898,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                194000, 198000, 202000, 206000, 210000, 214000, 218000, 222000, 226000, 230000, 234000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                16450, 16600, 16750, 16850, 17000, 17150, 17300, 17450, 17550, 17700, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 150,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -1146,6 +1385,38 @@ BtWQuestsDatabase:AddChain(Chain.FightingWithFire, {
     completed = {
         type = "quest",
         id = 50063,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2929400, 2989800, 3050200, 3110600, 3171000, 3231400, 3291800, 3352200, 3412600, 3473000, 3533400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                226200, 228250, 230250, 231750, 233750, 235850, 237850, 239900, 241350, 243400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 1225,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -1316,6 +1587,38 @@ BtWQuestsDatabase:AddChain(Chain.StickItToEm, {
         type = "quest",
         id = 50533,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2386200, 2435400, 2484600, 2533800, 2583000, 2632200, 2681400, 2730600, 2779800, 2829000, 2878200, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                180100, 181750, 183250, 184650, 186150, 187800, 189400, 191050, 192200, 193850, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 1085,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1474,6 +1777,33 @@ BtWQuestsDatabase:AddChain(Chain.Chain01, {
         type = "quest",
         id = 49896,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                814800, 831600, 848400, 865200, 882000, 898800, 915600, 932400, 949200, 966000, 982800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                71550, 72200, 72800, 73350, 73950, 74600, 75250, 75900, 76350, 77000, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 320,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1591,6 +1921,33 @@ BtWQuestsDatabase:AddChain(Chain.Chain02, {
         type = "quest",
         id = 50452,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                426800, 435600, 444400, 453200, 462000, 470800, 479600, 488400, 497200, 506000, 514800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                36200, 36500, 36800, 37100, 37400, 37700, 38100, 38400, 38600, 38900, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 235,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1700,6 +2057,38 @@ BtWQuestsDatabase:AddChain(Chain.Chain03, {
     completed = {
         type = "quest",
         id = 50763,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1105800, 1128600, 1151400, 1174200, 1197000, 1219800, 1242600, 1265400, 1288200, 1311000, 1333800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                79800, 80500, 81150, 81800, 82450, 83200, 83900, 84600, 85150, 85850, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 470,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -1814,6 +2203,38 @@ BtWQuestsDatabase:AddChain(Chain.Chain04, {
             id = 50965,
         },
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                776000, 792000, 808000, 824000, 840000, 856000, 872000, 888000, 904000, 920000, 936000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                53450, 53950, 54400, 54800, 55250, 55750, 56200, 56700, 57050, 57550, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 225,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -1830,8 +2251,10 @@ BtWQuestsDatabase:AddChain(Chain.Chain04, {
             },
         },
         {
-            name = "Kill Bloodbough Funggarian",
-            breadcrumb = true,
+            type = "kill",
+            id = 135901,
+            -- name = "Kill Bloodbough Funggarian",
+            -- breadcrumb = true,
             x = 5,
             y = 0,
             connections = {
@@ -1890,6 +2313,24 @@ BtWQuestsDatabase:AddChain(Chain.Chain05, {
     completed = {
         type = "quest",
         id = 48683,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1280400, 1306800, 1333200, 1359600, 1386000, 1412400, 1438800, 1465200, 1491600, 1518000, 1544400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                94600, 95450, 96250, 96950, 97750, 98650, 99450, 100300, 100950, 101800, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
     },
     items = {
         {
@@ -2005,6 +2446,24 @@ BtWQuestsDatabase:AddChain(Chain.Chain06, {
         type = "quest",
         id = 47950,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                989400, 1009800, 1030200, 1050600, 1071000, 1091400, 1111800, 1132200, 1152600, 1173000, 1193400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                71550, 72200, 72800, 73350, 73950, 74600, 75250, 75900, 76350, 77000, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+    },
     items = {
         {
             variations = {
@@ -2107,6 +2566,24 @@ BtWQuestsDatabase:AddChain(Chain.Chain07, {
         type = "quest",
         id = 48853,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1164000, 1188000, 1212000, 1236000, 1260000, 1284000, 1308000, 1332000, 1356000, 1380000, 1404000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                86350, 87150, 87900, 88500, 89250, 90050, 90800, 91600, 92150, 92950, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+    },
     items = {
         {
             variations = {
@@ -2205,6 +2682,29 @@ BtWQuestsDatabase:AddChain(Chain.Chain08, {
         type = "quest",
         id = 48477,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1358000, 1386000, 1414000, 1442000, 1470000, 1498000, 1526000, 1554000, 1582000, 1610000, 1638000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                90450, 91300, 92050, 92750, 93500, 94350, 95100, 95950, 96550, 97400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+    },
     items = {
         {
             type = "npc",
@@ -2298,6 +2798,29 @@ BtWQuestsDatabase:AddChain(Chain.Chain09, {
     completed = {
         type = "quest",
         id = 53110,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1940000, 1980000, 2020000, 2060000, 2100000, 2140000, 2180000, 2220000, 2260000, 2300000, 2340000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                152150, 153550, 154900, 155900, 157250, 158650, 160000, 161400, 162350, 163750, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
     },
     items = {
         {
@@ -2433,6 +2956,24 @@ BtWQuestsDatabase:AddChain(Chain.Chain10, {
             id = 51018,
         },
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1377400, 1405800, 1434200, 1462600, 1491000, 1519400, 1547800, 1576200, 1604600, 1633000, 1661400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                92100, 92950, 93700, 94450, 95200, 96050, 96850, 97700, 98300, 99150, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+    },
     items = {
         {
             type = "npc",
@@ -2527,6 +3068,24 @@ BtWQuestsDatabase:AddChain(Chain.Chain12, {
     completed = {
         type = "quest",
         id = 48883,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                970000, 990000, 1010000, 1030000, 1050000, 1070000, 1090000, 1110000, 1130000, 1150000, 1170000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                82250, 83000, 83750, 84250, 85000, 85750, 86500, 87250, 87750, 88500, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
     },
     items = {
         {
@@ -2642,6 +3201,24 @@ BtWQuestsDatabase:AddChain(Chain.Chain13, {
         type = "quest",
         id = 50960,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                388000, 396000, 404000, 412000, 420000, 428000, 436000, 444000, 452000, 460000, 468000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                32900, 33200, 33500, 33700, 34000, 34300, 34600, 34900, 35100, 35400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+    },
     items = {
         {
             type = "object",
@@ -2719,6 +3296,24 @@ BtWQuestsDatabase:AddChain(Chain.Chain15, {
     completed = {
         type = "quest",
         id = 44785,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1183400, 1207800, 1232200, 1256600, 1281000, 1305400, 1329800, 1354200, 1378600, 1403000, 1427400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                88000, 88800, 89550, 90200, 90950, 91750, 92550, 93350, 93900, 94700, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
     },
     items = {
         {
@@ -2803,6 +3398,33 @@ BtWQuestsDatabase:AddChain(Chain.Chain16, {
     completed = {
         type = "quest",
         id = 51472,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                970000, 990000, 1010000, 1030000, 1050000, 1070000, 1090000, 1110000, 1130000, 1150000, 1170000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                57550, 58100, 58550, 59050, 59500, 60050, 60500, 61050, 61450, 62000, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 225,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -2893,6 +3515,25 @@ BtWQuestsDatabase:AddChain(Chain.Chain17, {
         {
             type = "quest",
             id = 53462,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                702000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 225,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
         },
     },
     items = {
@@ -2999,6 +3640,38 @@ BtWQuestsDatabase:AddChain(Chain.Chain18, {
         {
             type = "quest",
             id = 50897,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                970000, 990000, 1010000, 1030000, 1050000, 1070000, 1090000, 1110000, 1130000, 1150000, 1170000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                69900, 70550, 71150, 71650, 72250, 72900, 73500, 74150, 74600, 75250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2161,
+            amount = 300,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
         },
     },
     items = {
@@ -3177,7 +3850,7 @@ BtWQuestsDatabase:AddCategory(CATEGORY_ID, {
     items = {
         {
             type = "header",
-            name = BTWQUESTS_THE_WAR_CAMPAIGN,
+            name = L["BTWQUESTS_THE_WAR_CAMPAIGN"],
             restrictions = {
                 type = "faction",
                 id = HORDE_ID
@@ -3252,7 +3925,7 @@ BtWQuestsDatabase:AddCategory(CATEGORY_ID, {
 
         {
             type = "header",
-            name = BTWQUESTS_SIDE_QUESTS,
+            name = L["BTWQUESTS_SIDE_QUESTS"],
         },
         {
             type = "chain",

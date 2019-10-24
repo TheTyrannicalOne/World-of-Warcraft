@@ -32,11 +32,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_SLABCHISEL_SURVEY, {
 	},
 	items = {
         {
-			name = "Go to Surveyor Thurdan",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5747, 0.7142, "Surveyor Thurdan")
-			end,
+			type = "npc",
+			id = 41129,
+			-- name = "Go to Surveyor Thurdan",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5747, 0.7142, "Surveyor Thurdan")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -55,11 +57,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_SLABCHISEL_SURVEY, {
 					}
 				},
 				{
-					name = "Go to Forba Slabchisel",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5751, 0.7175, "Forba Slabchisel")
-					end,
+					type = "npc",
+					id = 41086,
+					-- name = "Go to Forba Slabchisel",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5751, 0.7175, "Forba Slabchisel")
+					-- end,
 				}
 			},
 			x = 3,
@@ -69,11 +73,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_SLABCHISEL_SURVEY, {
 			},
 		},
         {
-			name = "Go to Dunlor Marblebeard",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5783, 0.7149, "Dunlor Marblebeard")
-			end,
+			type = "npc",
+			id = 41128,
+			-- name = "Go to Dunlor Marblebeard",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5783, 0.7149, "Dunlor Marblebeard")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -219,11 +225,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_THE_FLOODING_OF_MENE
 	},
 	items = {
         {
-			name = "Go to Derina Rumdnul",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1185, 0.5790, "Derina Rumdnul")
-			end,
+			type = "npc",
+			id = 1484,
+			-- name = "Go to Derina Rumdnul",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1185, 0.5790, "Derina Rumdnul")
+			-- end,
 			x = 0,
 			y = 0,
 			connections = {
@@ -231,11 +239,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_THE_FLOODING_OF_MENE
 			},
 		},
         {
-			name = "Go to Karl Boran",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1109, 0.5778, "Karl Boran")
-			end,
+			type = "npc",
+			id = 41297,
+			-- name = "Go to Karl Boran",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1109, 0.5778, "Karl Boran")
+			-- end,
 			x = 2,
 			y = 0,
 			connections = {
@@ -254,11 +264,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_THE_FLOODING_OF_MENE
 					}
 				},
 				{
-					name = "Go to Captain Stoutfist",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1052, 0.5571, "Captain Stoutfist")
-					end,
+					type = "npc",
+					id = 2104,
+					-- name = "Go to Captain Stoutfist",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1052, 0.5571, "Captain Stoutfist")
+					-- end,
 				}
 			},
 			x = 4,
@@ -268,11 +280,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_THE_FLOODING_OF_MENE
 			},
 		},
         {
-			name = "Go to First Mate Fitzsimmons",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1096, 0.5974, "First Mate Fitzsimmons")
-			end,
+			type = "npc",
+			id = 1239,
+			-- name = "Go to First Mate Fitzsimmons",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1096, 0.5974, "First Mate Fitzsimmons")
+			-- end,
 			x = 6,
 			y = 0,
 			connections = {
@@ -354,11 +368,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_ENGINEERS_AND_ARCHAE
 	},
 	items = {
         {
-			name = "Go to Merrin Rockweaver",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3884, 0.3972, "Merrin Rockweaver")
-			end,
+			type = "npc",
+			id = 41413,
+			-- name = "Go to Merrin Rockweaver",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3884, 0.3972, "Merrin Rockweaver")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -377,11 +393,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_ENGINEERS_AND_ARCHAE
 					}
 				},
 				{
-					name = "Go to Prospector Whelgar",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3893, 0.3936, "Prospector Whelgar")
-					end,
+					type = "npc",
+					id = 41411,
+					-- name = "Go to Prospector Whelgar",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3893, 0.3936, "Prospector Whelgar")
+					-- end,
 				}
 			},
 			x = 3,
@@ -391,11 +409,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_ENGINEERS_AND_ARCHAE
 			},
 		},
         {
-			name = "Go to Ormer Ironbraid",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3862, 0.3951, "Ormer Ironbraid")
-			end,
+			type = "npc",
+			id = 41412,
+			-- name = "Go to Ormer Ironbraid",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3862, 0.3951, "Ormer Ironbraid")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -511,11 +531,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_WARDENS_OF_THE_WETLA
 					}
 				},
 				{
-					name = "Go to Thargas Anvilmar",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4943, 0.1720, "Thargas Anvilmar")
-					end,
+					type = "npc",
+					id = 42160,
+					-- name = "Go to Thargas Anvilmar",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4943, 0.1720, "Thargas Anvilmar")
+					-- end,
 				}
 			},
 			x = 3,
@@ -542,7 +564,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_WARDENS_OF_THE_WETLA
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN1, {
-	name = "Dun Algaz",
+	name = BtWQuests_GetAreaName(836),
 	category = BTWQUESTS_CATEGORY_CLASSIC_WETLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {20, 60},
@@ -558,11 +580,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN1, {
 	},
 	items = {
         {
-			name = "Go to Mountaineer Grugelm",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4991, 0.7924, "Mountaineer Grugelm")
-			end,
+			type = "npc",
+			id = 41074,
+			-- name = "Go to Mountaineer Grugelm",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4991, 0.7924, "Mountaineer Grugelm")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -590,11 +614,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN1, {
                     },
 				},
 				{
-					name = "Go to Mountaineer Rharen",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4995, 0.7916, "Mountaineer Rharen")
-					end,
+					type = "npc",
+					id = 41075,
+					-- name = "Go to Mountaineer Rharen",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4995, 0.7916, "Mountaineer Rharen")
+					-- end,
 				},
 			},
 			x = 3,
@@ -641,7 +667,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN1, {
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN2, {
-	name = "Return the Statuette",
+	name = { -- Return the Statuette
+		type = "quest",
+		id = 25805,
+	},
 	category = BTWQUESTS_CATEGORY_CLASSIC_WETLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {20, 60},
@@ -657,11 +686,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN2, {
 	},
 	items = {
         {
-			name = "Go to Karl Boran",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1109, 0.5778, "Karl Boran")
-			end,
+			type = "npc",
+			id = 41297,
+			-- name = "Go to Karl Boran",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1109, 0.5778, "Karl Boran")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {
@@ -715,14 +746,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN2, {
 			id = 25805,
 			x = 3,
 			y = 5,
-			connections = {
-                
-            },
 		},
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN3, {
-	name = "The Eye of Paleth",
+	name = { -- The Eye of Paleth
+		type = "quest",
+		id = 25819,
+	},
 	category = BTWQUESTS_CATEGORY_CLASSIC_WETLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {20, 60},
@@ -778,14 +809,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN3, {
 			id = 25819,
 			x = 3,
 			y = 5,
-			connections = {
-                
-            },
 		},
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN4, {
-	name = "The Mosshide Job",
+	name = { -- The Mosshide Job
+		type = "quest",
+		id = 25865,
+	},
 	category = BTWQUESTS_CATEGORY_CLASSIC_WETLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {20, 60},
@@ -801,11 +832,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN4, {
 	},
 	items = {
         {
-			name = "Go to Fradd Swiftgear",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2682, 0.2587, "Fradd Swiftgear")
-			end,
+			type = "npc",
+			id = 41435,
+			-- name = "Go to Fradd Swiftgear",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2682, 0.2587, "Fradd Swiftgear")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -824,11 +857,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN4, {
 					}
 				},
 				{
-					name = "Go to Shilah Slabchisel",
-					breadcrumb = true,
-					onClick = function ()
-						BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2693, 0.2608, "Shilah Slabchisel")
-					end,
+					type = "npc",
+					id = 41415,
+					-- name = "Go to Shilah Slabchisel",
+					-- breadcrumb = true,
+					-- onClick = function ()
+					-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2693, 0.2608, "Shilah Slabchisel")
+					-- end,
 				}
 			},
 			x = 3,
@@ -838,11 +873,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN4, {
 			},
 		},
         {
-			name = "Go to James Halloran",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2677, 0.2673, "James Halloran")
-			end,
+			type = "npc",
+			id = 41433,
+			-- name = "Go to James Halloran",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.2677, 0.2673, "James Halloran")
+			-- end,
 			x = 5,
 			y = 0,
 			connections = {
@@ -946,7 +983,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN4, {
 	}
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN5, {
-	name = "The Threat of Flame",
+	name = { -- The Threat of Flame
+		type = "quest",
+		id = 25927,
+	},
 	category = BTWQUESTS_CATEGORY_CLASSIC_WETLANDS,
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {20, 60},
@@ -972,12 +1012,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN5, {
 	},
 	items = {
         {
-			name = "Go to Huntress Iczelia",
-			breadcrumb = true,
+			type = "npc",
+			id = 41612,
+			-- name = "Go to Huntress Iczelia",
+			-- breadcrumb = true,
 			aside = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5636, 0.3984, "Huntress Iczelia")
-			end,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5636, 0.3984, "Huntress Iczelia")
+			-- end,
 			x = 1,
 			y = 0,
 			connections = {
@@ -985,11 +1027,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WETLANDS_CHAIN5, {
 			},
 		},
         {
-			name = "Go to Rethiel the Greenwarden",
-			breadcrumb = true,
-			onClick = function ()
-				BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5633, 0.4037, "Rethiel the Greenwarden")
-			end,
+			type = "npc",
+			id = 41503,
+			-- name = "Go to Rethiel the Greenwarden",
+			-- breadcrumb = true,
+			-- onClick = function ()
+			-- 	BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.5633, 0.4037, "Rethiel the Greenwarden")
+			-- end,
 			x = 3,
 			y = 0,
 			connections = {

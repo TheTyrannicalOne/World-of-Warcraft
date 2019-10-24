@@ -91,7 +91,13 @@ BtWQuests = {
             BattleForAzeroth = {},
         },
     },
+    L = {},
 };
+setmetatable(BtWQuests.L, {
+    __index = function (self, key)
+		return key;
+	end
+});
 
 BTWQUESTS_EXPANSION_CLASSIC = LE_EXPANSION_CLASSIC or 0
 BTWQUESTS_EXPANSION_THE_BURNING_CRUSADE = LE_EXPANSION_BURNING_CRUSADE or 1

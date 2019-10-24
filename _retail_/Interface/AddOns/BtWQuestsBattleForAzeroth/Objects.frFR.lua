@@ -248,10 +248,37 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [298858] = {
         name = "Avis de recherche",
     },
+    [307748] = {
+        name = "Lettre de la KapitalRisk",
+    },
     [309498] = {
         name = "Présentoir à armure",
     },
     [311155] = {
         name = "Tablette antique",
+    },
+    [311218] = {
+        name = "Xal’atath, lame de l’Empire noir",
+    },
+    [311885] = {
+        name = "Xal’atath, lame de l’Empire noir",
+    },
+    [322533] = {
+        name = "Grimoire des éléments de Mardivas",
+    },
+    [326418] = {
+        name = "Coffre arcanique",
+    },
+    [327170] = {
+        name = "Râtelier d’armes",
+    },
+    [327591] = {
+        name = "Journal en bon état",
+    },
+    [327592] = {
+        name = "Verrou enchanté",
+    },
+    [329805] = {
+        name = "Cristal étrange",
     },
 })

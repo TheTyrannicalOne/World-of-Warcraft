@@ -308,6 +308,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [8309] = {
         name = "Caccia ai glifi",
     },
+    [8310] = {
+        name = "Decifrare il codice",
+    },
+    [8314] = {
+        name = "Svelare il mistero",
+    },
     [8318] = {
         name = "Comunicazione segreta",
     },
@@ -322,6 +328,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [8323] = {
         name = "Veri credenti",
+    },
+    [8324] = {
+        name = "Continuare a credere",
     },
     [8470] = {
         name = "Totem Rituale dei Legnomorto",
@@ -2386,6 +2395,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [25379] = {
         name = "La caduta di Taerar",
+    },
+    [25383] = {
+        name = "L'addio di Ysondre",
     },
     [25386] = {
         name = "Al Forte dei Mazzapietra",
@@ -7501,6 +7513,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [29038] = {
         name = "Addestramento di caccia",
+    },
+    [29040] = {
+        name = "Il primo giocattolo del cucciolo",
     },
     [29086] = {
         name = "Concorrenza scorretta",

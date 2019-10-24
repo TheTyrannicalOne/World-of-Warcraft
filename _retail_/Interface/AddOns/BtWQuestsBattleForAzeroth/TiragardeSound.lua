@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 local MAP_ID = 895
 local CONTINENT_ID = 876
 local ACHIEVEMENT_ID = 12473
@@ -28,6 +29,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_TH
     completed = {
         type = "quest",
         id = 50531,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                980200, 1000400, 1020600, 1040800, 1061000, 1081200, 1101400, 1121600, 1141800, 1162000, 1182200, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                83100, 83800, 84500, 85150, 85850, 86550, 87400, 88100, 88650, 89350, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 675,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -134,6 +167,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_FR
     completed = {
         type = "quest",
         id = 49404,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                3462900, 3534300, 3605700, 3677100, 3748500, 3819900, 3891300, 3962700, 4034100, 4105500, 4176900, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                293650, 296300, 298950, 300800, 303450, 306150, 308800, 311450, 313300, 315950, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1560,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 1735,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -469,6 +534,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_DE
         type = "quest",
         id = 49740,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2493400, 2544800, 2596200, 2647600, 2699000, 2750400, 2801800, 2853200, 2904600, 2956000, 3007400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                199050, 200850, 202600, 203950, 205700, 207500, 209300, 211100, 212400, 214200, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1560,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 710,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -631,6 +728,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_EN
         type = "quest",
         id = 50972,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2153400, 2197800, 2242200, 2286600, 2331000, 2375400, 2419800, 2464200, 2508600, 2553000, 2597400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                186700, 188400, 189900, 191450, 192950, 194650, 196350, 197900, 199350, 200900, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 600,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 1060,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "chain",
@@ -739,6 +868,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_TH
     completed = {
         type = "quest",
         id = 49302,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                5529000, 5643000, 5757000, 5871000, 5985000, 6099000, 6213000, 6327000, 6441000, 6555000, 6669000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                407150, 410850, 414400, 417200, 420750, 424550, 428100, 431800, 434450, 438150, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 190,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 1420,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -990,6 +1151,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_TH
     completed = {
         type = "quest",
         id = 48089,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                4190400, 4276800, 4363200, 4449600, 4536000, 4622400, 4708800, 4795200, 4881600, 4968000, 5054400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                299825, 302525, 305100, 307250, 309825, 312625, 315250, 317950, 319925, 322625, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 190,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 1365,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -1383,6 +1576,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
         type = "quest",
         id = 50356,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                795400, 811800, 828200, 844600, 861000, 877400, 893800, 910200, 926600, 943000, 959400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                55100, 55600, 56050, 56500, 56950, 57450, 57950, 58450, 58800, 59300, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 300,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -1465,6 +1690,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
         {
             type = "quest",
             id = 49233,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1377400, 1405800, 1434200, 1462600, 1491000, 1519400, 1547800, 1576200, 1604600, 1633000, 1661400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                104450, 105400, 106300, 107050, 107950, 108900, 109850, 110800, 111450, 112400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 50,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 460,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
         },
     },
     items = {
@@ -1695,6 +1952,43 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
         type = "quest",
         id = 49223,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1284500, 1296500, 1308500, 1320500, 1332500, 1344500, 1356500, 1368500, 1380500, 1392500, 1404500, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                49350, 49800, 50250, 50550, 51000, 51450, 51850, 52300, 52700, 53150, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 75,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 150,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+        {
+            type = "reputation",
+            id = 2163,
+            amount = 350,
+        },
+    },
     items = {
         {
             type = "chain",
@@ -1801,6 +2095,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
             id = 51430,
         },
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1164000, 1188000, 1212000, 1236000, 1260000, 1284000, 1308000, 1332000, 1356000, 1380000, 1404000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                98700, 99600, 100500, 101100, 102000, 102900, 103800, 104700, 105300, 106200, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 200,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             variations = {
@@ -1895,6 +2216,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
     completed = {
         type = "quest",
         id = 51149,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                19400, 19800, 20200, 20600, 21000, 21400, 21800, 22200, 22600, 23000, 23400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                1650, 1650, 1650, 1700, 1700, 1700, 1750, 1750, 1750, 1750, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
     },
     items = {
         {
@@ -2046,6 +2385,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
         {
             type = "quest",
             id = 49066,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2347400, 2395800, 2444200, 2492600, 2541000, 2589400, 2637800, 2686200, 2734600, 2783000, 2831400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                147250, 148550, 149800, 150900, 152150, 153500, 154850, 156150, 157100, 158400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 1110,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
         },
     },
     items = {
@@ -2212,6 +2578,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
         type = "quest",
         id = 50005,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1213000, 1238000, 1263000, 1288000, 1313000, 1338000, 1363000, 1388000, 1413000, 1438000, 1463000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                102850, 103750, 104650, 105350, 106250, 107200, 108100, 109000, 109750, 110650, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 325,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -2313,6 +2706,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
         {
             type = "quest",
             id = 49720,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1746000, 1782000, 1818000, 1854000, 1890000, 1926000, 1962000, 1998000, 2034000, 2070000, 2106000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                123350, 124500, 125550, 126450, 127500, 128650, 129700, 130850, 131650, 132800, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 610,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
         },
     },
     items = {
@@ -2424,7 +2844,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
 })
 -- Completed, Alliance Only, No requirements, seems no breadcrumbs either
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CHAIN10, {
-    name = BTWQUESTS_MAJO_AND_JOMA,
+    name = L["BTWQUESTS_MAJO_AND_JOMA"],
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
@@ -2445,6 +2865,29 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
     completed = {
         type = "quest",
         id = 48903,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                970000, 990000, 1010000, 1030000, 1050000, 1070000, 1090000, 1110000, 1130000, 1150000, 1170000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                69900, 70550, 71150, 71650, 72250, 72900, 73500, 74150, 74600, 75250, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2163,
+            amount = 310,
+        },
     },
     items = {
         {
@@ -2529,6 +2972,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
     completed = {
         type = "quest",
         id = 51144,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                630500, 643500, 656500, 669500, 682500, 695500, 708500, 721500, 734500, 747500, 760500, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                28800, 29050, 29300, 29500, 29750, 30050, 30250, 30500, 30750, 31000, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 115,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 250,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -2697,6 +3172,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
         type = "quest",
         id = 49467,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                2153400, 2197800, 2242200, 2286600, 2331000, 2375400, 2419800, 2464200, 2508600, 2553000, 2597400, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                157900, 159350, 160700, 161850, 163200, 164650, 166050, 167500, 168500, 169950, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 100,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 825,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "npc",
@@ -2862,6 +3369,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
     completed = {
         type = "quest",
         id = 49719,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                3530800, 3603600, 3676400, 3749200, 3822000, 3894800, 3967600, 4040400, 4113200, 4186000, 4258800, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                237700, 239850, 241850, 243650, 245650, 247850, 249950, 252100, 253650, 255800, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 265,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 1145,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
     },
     items = {
         {
@@ -3220,6 +3759,47 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
             id = 53438,
         },
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1164000, 1188000, 1212000, 1236000, 1260000, 1284000, 1308000, 1332000, 1356000, 1380000, 1404000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                49400, 49800, 50200, 50600, 51000, 51500, 51900, 52300, 52700, 53100, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 230,
+        },
+        {
+            type = "reputation",
+            id = 2157,
+            amount = 500,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Horde,
+            },
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 500,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
+        },
+    },
     items = {
         {
             type = "object",
@@ -3272,6 +3852,33 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
         {
             type = "quest",
             id = 48557,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                388000, 396000, 404000, 412000, 420000, 428000, 436000, 444000, 452000, 460000, 468000, 
+            },
+            minLevel = 110,
+            maxLevel = 120,
+        },
+        {
+            type = "experience",
+            amounts = {
+                32900, 33200, 33500, 33700, 34000, 34300, 34600, 34900, 35100, 35400, 
+            },
+            minLevel = 110,
+            maxLevel = 119,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            amount = 150,
+            restrictions = {
+                type = "faction",
+                id = BtWQuests.Constant.Faction.Alliance,
+            },
         },
     },
     items = {
@@ -3417,7 +4024,7 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_TIRAGARDE_SO
     items = {
         {
             type = "header",
-            name = BTWQUESTS_THE_WAR_CAMPAIGN,
+            name = L["BTWQUESTS_THE_WAR_CAMPAIGN"],
             restrictions = {
                 type = "faction",
                 id = BTWQUESTS_FACTION_ID_HORDE
@@ -3480,7 +4087,7 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_TIRAGARDE_SO
 
         {
             type = "header",
-            name = BTWQUESTS_SIDE_QUESTS,
+            name = L["BTWQUESTS_SIDE_QUESTS"],
         },
         {
             type = "chain",

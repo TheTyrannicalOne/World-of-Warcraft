@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 local MAP_ID = 77
 local ACHIEVEMENT_ID = 4931
 local CONTINENT_ID = 12
@@ -1207,7 +1208,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FELWOOD_EMBED_CHAIN09, {
     range = {1,60},
     items = {
         {
-            name = "Kill Deadwood Furbolgs",
+            name = L["KILL_DEADWOOD_FURBOLGS"],
             breadcrumb = true,
             x = 0,
             y = 0,

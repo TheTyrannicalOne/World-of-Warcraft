@@ -248,7 +248,37 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [298858] = {
         name = "Cartaz de Procura-se",
     },
+    [307748] = {
+        name = "Carta da Empreendimentos S.A.",
+    },
     [311155] = {
         name = "Tabuleta Ancestral",
+    },
+    [311218] = {
+        name = "Xal'atath, a Lâmina do Império Negro",
+    },
+    [311885] = {
+        name = "Xal'atath, a Lâmina do Império Negro",
+    },
+    [322533] = {
+        name = "Tomo do Elementos de Mardivas",
+    },
+    [326418] = {
+        name = "Baú Arcano",
+    },
+    [327170] = {
+        name = "Cavalete de Armas",
+    },
+    [327591] = {
+        name = "Diário Preservado",
+    },
+    [327592] = {
+        name = "Fechadura Encantada",
+    },
+    [327596] = {
+        name = "Foco Abissal Partido",
+    },
+    [329805] = {
+        name = "Cristal Estranho",
     },
 })

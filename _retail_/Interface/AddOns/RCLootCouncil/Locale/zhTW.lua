@@ -36,6 +36,8 @@ L["All unawarded items"] = "所有未分配物品"
 L["Alt click Looting"] = "Alt+左鍵分配"
 L["alt_click_looting_desc"] = "啟用Alt+左鍵分配。使用Alt+左鍵點擊物品以開始分配。"
 L["Alternatively, flag the loot as award later."] = "另外，標記該物品為稍后分配。"
+--[[Translation missing --]]
+--[[ L["Always show owner"] = ""--]] 
 L["Always use RCLootCouncil with Personal Loot"] = "個人拾取時總是使用RCLootCouncil"
 L["always_show_tooltip_howto"] = "雙擊切換是否總顯示tooltip"
 L["Announce Awards"] = "通知分配"
@@ -339,6 +341,10 @@ L["opt_deleteName_confirm"] = "你確定你要刪除所有 %s 的紀錄嗎? 刪�
 --[[ L["opt_deletePatch_confirm"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["opt_deletePatch_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_deleteRaid_confirm"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_deleteRaid_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["opt_moreButtons_desc"] = ""--]] 
 --[[Translation missing --]]

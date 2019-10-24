@@ -308,6 +308,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [8309] = {
         name = "追查雕紋",
     },
+    [8310] = {
+        name = "破解密碼",
+    },
+    [8314] = {
+        name = "解開謎題",
+    },
     [8318] = {
         name = "秘密通訊",
     },
@@ -322,6 +328,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [8323] = {
         name = "真實信仰者",
+    },
+    [8324] = {
+        name = "更多的讀物",
     },
     [8470] = {
         name = "死木儀式圖騰",
@@ -2386,6 +2395,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [25379] = {
         name = "泰拉爾的失敗",
+    },
+    [25383] = {
+        name = "伊索德雷的告別",
     },
     [25386] = {
         name = "到石槌堡去",

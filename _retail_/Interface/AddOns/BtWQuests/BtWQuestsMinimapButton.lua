@@ -20,7 +20,7 @@ local minimapShapes = {
 
 function BtWQuestsMinimapButton_Toggle()
 	BtWQuestSettingsData:SetValue("minimapShown", not BtWQuestSettingsData:GetValue("minimapShown"))
-    
+
     BtWQuestsMinimapButton:SetShown(BtWQuestSettingsData:GetValue("minimapShown"))
 end
 

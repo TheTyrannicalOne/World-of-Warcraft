@@ -68,11 +68,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD, {
                     },
                 },
                 {
-                    name = "Go to Commander Althea Ebonlocke",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7352, 0.4693, "Commander Althea Ebonlocke")
-                    end,
+                    type = "npc",
+                    id = 264,
+                    -- name = "Go to Commander Althea Ebonlocke",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7352, 0.4693, "Commander Althea Ebonlocke")
+                    -- end,
                 },
             },
             x = 2,
@@ -82,11 +84,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD, {
             },
         },
         {
-            name = "Go to Calor",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7533, 0.4802, "Calor")
-            end,
+            type = "npc",
+            id = 663,
+            -- name = "Go to Calor",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7533, 0.4802, "Calor")
+            -- end,
             x = 6,
             y = 0,
             connections = {
@@ -133,11 +137,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD, {
             y = 2,
         },
         {
-            name = "Go to Viktori Prism'Antras",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7953, 0.4747, "Viktori Prism'Antras")
-            end,
+            type = "npc",
+            id = 276,
+            -- name = "Go to Viktori Prism'Antras",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7953, 0.4747, "Viktori Prism'Antras")
+            -- end,
             x = 2,
             y = 2,
             connections = {
@@ -232,11 +238,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD_STALVAN, {
     range = {20},
     items = {
         {
-            name = "Go to Tobias Mistmantle",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7908, 0.4418, "Tobias Mistmantle")
-            end,
+            type = "npc",
+            id = 43453,
+            -- name = "Go to Tobias Mistmantle",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.7908, 0.4418, "Tobias Mistmantle")
+            -- end,
             x = 3,
             y = 0,
             connections = {
@@ -361,11 +369,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD_MORBENT_FEL, {
                     },
                 },
                 {
-                    name = "Go to Apprentice Fess",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4492, 0.6743, "Apprentice Fess")
-                    end,
+                    type = "npc",
+                    id = 43738,
+                    -- name = "Go to Apprentice Fess",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4492, 0.6743, "Apprentice Fess")
+                    -- end,
                 },
             },
             x = 3,
@@ -455,7 +465,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD_MORBENT_FEL, {
             x = 3,
             y = 5,
             connections = {
-                2,
+                1,
             },
         },
         {
@@ -548,11 +558,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD_HERMIT, {
                     },
                 },
                 {
-                    name = "Go to Abercrombie",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8743, 0.3520, "Abercrombie")
-                    end,
+                    type = "npc",
+                    id = 289,
+                    -- name = "Go to Abercrombie",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.8743, 0.3520, "Abercrombie")
+                    -- end,
                 },
             },
             x = 3,
@@ -682,11 +694,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD_MORLADIM, {
     range = {20},
     items = {
         {
-            name = "Go to The Weathered Grave",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1772, 0.2907, "The Weathered Grave")
-            end,
+            type = "object",
+            id = 61,
+            -- name = "Go to The Weathered Grave",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.1772, 0.2907, "The Weathered Grave")
+            -- end,
             x = 3,
             y = 0,
             connections = {

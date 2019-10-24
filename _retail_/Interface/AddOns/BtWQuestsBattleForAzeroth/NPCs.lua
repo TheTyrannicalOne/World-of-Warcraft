@@ -927,7 +927,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [124630] = {
-        name = "Kul Tiran Guard",
+        name = "Taelia",
     },
     [124641] = {
         name = "Shadow Hunter Mutumba",
@@ -2875,6 +2875,9 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
+    },
+    [130603] = {
+        name = "Beastbreaker Hakid",
     },
     [130660] = {
         name = "Warguard Rakera",
@@ -5072,6 +5075,9 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [135901] = {
+        name = "Bloodbough Funggarian",
+    },
     [135976] = {
         name = "Morwin Gladeheart",
         locations = {
@@ -5895,6 +5901,9 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [138521] = {
+        name = "Mine Technician",
+    },
     [138669] = {
         name = "Hemet Nesingwary",
         locations = {
@@ -6193,7 +6202,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [140105] = {
-        name = "Dark Ranger",
+        name = "Nathanos Blightcaller",
     },
     [140176] = {
         name = "Nathanos Blightcaller",
@@ -7177,7 +7186,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [146462] = {
-        name = "Horde Berserker",
+        name = "Rexxar",
         locations = {
             [895] = {
                 {
@@ -7235,7 +7244,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [146791] = {
-        name = "Dark Ranger",
+        name = "Dark Ranger Lyana",
         locations = {
             [37] = {
                 {
@@ -7312,7 +7321,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [146937] = {
-        name = "Dark Ranger",
+        name = "Dark Ranger Lyana",
         locations = {
             [49] = {
                 {
@@ -7466,7 +7475,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [147293] = {
-        name = "Da'kani Defender",
+        name = "Grong",
         locations = {
             [862] = {
                 {
@@ -8398,9 +8407,6 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [151309] = {
-        name = "Kelfin Scout",
-    },
     [151319] = {
         name = "Li'zal",
         locations = {
@@ -8633,7 +8639,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [152108] = {
-        name = "Kelfin Scout",
+        name = "Neri Sharpfin",
         locations = {
             [1355] = {
                 {
@@ -8732,7 +8738,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [152385] = {
-        name = "Highmountain Shaman",
+        name = "Spiritwalker Ebonhorn",
     },
     [152484] = {
         name = "Tinkmaster Overspark",
@@ -9133,6 +9139,9 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [154002] = {
+        name = "Atolia Seapearl",
+    },
     [154023] = {
         name = "Nascent Harvester",
         locations = {
@@ -9379,7 +9388,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [155482] = {
-        name = "Sentinel",
+        name = "Shandris Feathermoon",
         locations = {
             [1355] = {
                 {

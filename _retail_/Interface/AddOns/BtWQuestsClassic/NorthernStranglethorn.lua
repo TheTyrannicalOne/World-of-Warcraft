@@ -1,9 +1,8 @@
- MAP_ID = 50
+local L = BtWQuests.L
+local MAP_ID = 50
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_OHGANANKA, {
-    name = function ()
-        return GetAchievementCriteriaInfo(4906, 1)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(4906, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_NORTHERN_STRANGLETHORN,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     restrictions = {
@@ -123,9 +122,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_OHGANA
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_REBEL_CAMP, {
-    name = function ()
-        return GetAchievementCriteriaInfo(4906, 2)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(4906, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_NORTHERN_STRANGLETHORN,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     restrictions = {
@@ -191,11 +188,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_REBEL_
                     },
                 },
                 {
-                    name = "Go to Lieutenant Doren",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4757, 0.1025, "Lieutenant Doren")
-                    end,
+                    type = "npc",
+                    id = 469,
+                    -- name = "Go to Lieutenant Doren",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4757, 0.1025, "Lieutenant Doren")
+                    -- end,
                 },
             },
             x = 3,
@@ -304,9 +303,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_REBEL_
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_NESINGWARY, {
-    name = function ()
-        return GetAchievementCriteriaInfo(4906, 3)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(4906, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_NORTHERN_STRANGLETHORN,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     prerequisites = {
@@ -345,11 +342,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_NESING
                     },
                 },
                 {
-                    name = "Go to Barnil Stonepot",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4424, 0.2213, "Barnil Stonepot")
-                    end,
+                    type = "npc",
+                    id = 716,
+                    -- name = "Go to Barnil Stonepot",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4424, 0.2213, "Barnil Stonepot")
+                    -- end,
                 },
             },
             x = 2,
@@ -359,11 +358,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_NESING
             },
         },
         {
-            name = "Go to Drizzlik",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4364, 0.2338, "Drizzlik")
-            end,
+            type = "npc",
+            id = 2495,
+            -- name = "Go to Drizzlik",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4364, 0.2338, "Drizzlik")
+            -- end,
             x = 6,
             y = 0,
             connections = {
@@ -529,7 +530,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_NESING
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_HATCHLING_ALLIANCE, {
-    name = "Hatchling",
+    name = L["HATCHLING"],
     category = BTWQUESTS_CATEGORY_CLASSIC_NORTHERN_STRANGLETHORN,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     restrictions = {
@@ -551,11 +552,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_HATCHL
     range = {25,60},
     items = {
         {
-            name = "Go to Brother Nimetz",
-            breadcrumb = true,
-            onClick = function ()
-                BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4724, 0.1110, "Brother Nimetz")
-            end,
+            type = "npc",
+            id = 739,
+            -- name = "Go to Brother Nimetz",
+            -- breadcrumb = true,
+            -- onClick = function ()
+            --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.4724, 0.1110, "Brother Nimetz")
+            -- end,
             x = 3,
             y = 0,
             connections = {
@@ -666,9 +669,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_HATCHL
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_YENNIKU, {
-    name = function ()
-        return GetAchievementCriteriaInfo(4906, 2)
-    end,
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(4906, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_NORTHERN_STRANGLETHORN,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     restrictions = {
@@ -712,11 +713,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_YENNIK
                     },
                 },
                 {
-                    name = "Go to Commander Aggro'gosh",
-                    breadcrumb = true,
-                    onClick = function ()
-                        BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3843, 0.5049, "Commander Aggro'gosh")
-                    end,
+                    type = "npc",
+                    id = 2464,
+                    -- name = "Go to Commander Aggro'gosh",
+                    -- breadcrumb = true,
+                    -- onClick = function ()
+                    --     BtWQuests_ShowMapWithWaypoint(MAP_ID, 0.3843, 0.5049, "Commander Aggro'gosh")
+                    -- end,
                 },
             },
             x = 3,
@@ -900,7 +903,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_YENNIK
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_HATCHLING_HORDE, {
-    name = "Hatchling",
+    name = L["HATCHLING"],
     category = BTWQUESTS_CATEGORY_CLASSIC_NORTHERN_STRANGLETHORN,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     restrictions = {

@@ -1,3 +1,4 @@
+local L = BtWQuests.L;
 local MAP_ID = 1473
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN01, {
@@ -45,6 +46,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
             type = "azessence",
             id = 12,
             rank = 1,
+        },
+        {
+            type = "money",
+            amounts = {
+                1521000, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 1700,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 2000,
         },
     },
     items = {
@@ -188,6 +207,31 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
         type = "quest",
         id = 55521,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                514800, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 1500,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 520,
+        },
+        {
+            type = "reputation",
+            id = 2386,
+            amount = 360,
+        },
+    },
     items = {
         {
             type = "chain",
@@ -267,6 +311,29 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
             type = "azessence",
             id = 12,
             rank = 2,
+        },
+        {
+            type = "money",
+            amounts = {
+                2176200, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 1900,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 1455,
+        },
+        {
+            type = "reputation",
+            id = 2386,
+            amount = 270,
         },
     },
     items = {
@@ -389,6 +456,31 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
         type = "quest",
         id = 55737,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                514800, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 1500,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 520,
+        },
+        {
+            type = "reputation",
+            id = 2386,
+            amount = 360,
+        },
+    },
     items = {
         {
             type = "chain",
@@ -469,6 +561,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
             id = 12,
             rank = 3,
         },
+        {
+            type = "money",
+            amounts = {
+                725400, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 1800,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 500,
+        },
     },
     items = {
         {
@@ -536,6 +646,26 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
         type = "quest",
         id = 55752,
     },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                23400, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 1000,
+        },
+        {
+            type = "reputation",
+            id = 2386,
+            amount = 10,
+        },
+    },
     items = {
         {
             type = "chain",
@@ -591,6 +721,24 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
             id = 12,
             rank = 4,
         },
+        {
+            type = "money",
+            amounts = {
+                23400,
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 1000,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 150,
+        },
     },
     items = {
         {
@@ -619,6 +767,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TE
         {
             type = "level",
             level = 120,
+        },
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                23400, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
         },
     },
     items = {
@@ -670,7 +828,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TE
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TEMP_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN08, {
     name = { -- On the Trail of the Black Prince
         type = "quest",
         id = 56189,
@@ -709,6 +867,26 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TE
     completed = {
         type = "quest",
         id = 56504,
+    },
+    rewards = {
+        {
+            type = "money",
+            amounts = {
+                1450800, 
+            },
+            minLevel = 120,
+            maxLevel = 120,
+        },
+        {
+            type = "currency",
+            id = 1553,
+            amount = 2750,
+        },
+        {
+            type = "reputation",
+            id = 2164,
+            amount = 1270,
+        },
     },
     items = {
         {
@@ -837,7 +1015,7 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_THE_HEART_FO
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_TEMP_CHAIN02,
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN08,
         }
     },
 })
