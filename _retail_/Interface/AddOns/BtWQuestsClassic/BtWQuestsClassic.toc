@@ -1,6 +1,6 @@
 ## Interface: 80205
 ## Title: BtWQuests: Classic
-## Version: 10
+## Version: 11
 ## Notes: Classic quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
@@ -8,6 +8,16 @@
 Defines.lua
 
 Localization.lua
+Localization.deDE.lua
+Localization.esES.lua
+Localization.esMX.lua
+Localization.frFR.lua
+Localization.itIT.lua
+Localization.koKR.lua
+Localization.ptBR.lua
+Localization.ruRU.lua
+Localization.zhCN.lua
+Localization.zhTW.lua
 
 Quests.lua
 Quests.deDE.lua
@@ -18,6 +28,7 @@ Quests.itIT.lua
 Quests.koKR.lua
 Quests.ptBR.lua
 Quests.ruRU.lua
+Quests.zhCN.lua
 Quests.zhTW.lua
 
 NPCs.lua
@@ -29,6 +40,7 @@ NPCs.itIT.lua
 NPCs.koKR.lua
 NPCs.ptBR.lua
 NPCs.ruRU.lua
+NPCs.zhCN.lua
 NPCs.zhTW.lua
 
 Objects.lua

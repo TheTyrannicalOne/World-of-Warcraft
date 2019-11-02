@@ -33,9 +33,9 @@ NarcissusDB = {
 	},
 	["FadeButton"] = false,
 	["UseAlias"] = false,
-	["DefaultLayout"] = 2,
-	["BorderTheme"] = "Bright",
 	["CameraOrbit"] = true,
+	["BorderTheme"] = "Bright",
+	["DefaultLayout"] = 2,
 	["EnableDoubleTap"] = false,
 	["FadeMusic"] = true,
 	["MinimapButton"] = {

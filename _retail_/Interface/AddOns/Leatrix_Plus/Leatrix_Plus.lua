@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.13 (23rd October 2019)
+-- 	Leatrix Plus 8.2.14 (31st October 2019)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.13"
+	LeaPlusLC["AddonVer"] = "8.2.14"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -1162,11 +1162,9 @@
 				LeaPlusCB["DressUpTabBtn"]:Hide()
 			end)
 
-			local BtnStrata, BtnLevel = SideDressUpFrame.ResetButton:GetFrameStrata(), SideDressUpFrame.ResetButton:GetFrameLevel()
-
 			-- Add buttons to auction house dressup frame
 			LeaPlusLC:CreateButton("DressUpSideBtn", SideDressUpFrame, "Tabard", "BOTTOMLEFT", 14, 40, 60, 22, false, "")
-			LeaPlusCB["DressUpSideBtn"]:SetFrameLevel(BtnLevel)
+			LeaPlusCB["DressUpSideBtn"]:SetFrameLevel(4)
 			LeaPlusCB["DressUpSideBtn"]:SetFrameStrata("HIGH")
 			LeaPlusCB["DressUpSideBtn"]:SetScript("OnClick", function()
 				-- Store all appearance sources in table
@@ -1187,7 +1185,7 @@
 			end)
 
 			LeaPlusLC:CreateButton("DressUpSideNudeBtn", SideDressUpFrame, "Nude", "BOTTOMRIGHT", -18, 40, 60, 22, false, "")
-			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameLevel(BtnLevel)
+			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameLevel(4)
 			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameStrata("HIGH")
 			LeaPlusCB["DressUpSideNudeBtn"]:SetScript("OnClick", function()
 				-- Strip model
@@ -3805,26 +3803,8 @@
 			local buffSetPos = BuffFrame.SetPoint
 			local powerBarAltSetPos = PlayerPowerBarAlt.SetPoint
 
-			-- Create and manage container for UIWidgetTopCenterContainerFrame
-			local topCenterHolder = CreateFrame("Frame", "LeaPlusTopCenterContainerHolder", UIParent)
-			topCenterHolder:SetPoint("TOP", UIParent, "TOP", 0, -30)
-			topCenterHolder:SetSize(10, 58)
-
-			local topCenterContainer = _G.UIWidgetTopCenterContainerFrame
-			topCenterContainer:ClearAllPoints()
-			topCenterContainer:SetPoint('CENTER', topCenterHolder)
-
-			hooksecurefunc(topCenterContainer, 'SetPoint', function(self, void, b)
-				local holder = _G.LeaPlusTopCenterContainerHolder
-				if b and (b ~= holder) then
-					self:ClearAllPoints()
-					self:SetPoint('CENTER', holder)
-					self:SetParent(holder)
-				end
-			end)
-
 			-- Create frame table (used for local traversal)
-			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragGhostFrame = GhostFrame, DragMirrorTimer1 = MirrorTimer1, DragLeaPlusTopCenterContainerHolder = LeaPlusTopCenterContainerHolder, DragBuffFrame = BuffFrame, DragPlayerPowerBarAlt = PlayerPowerBarAlt}
+			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragGhostFrame = GhostFrame, DragMirrorTimer1 = MirrorTimer1, DragUIWidgetTopCenterContainerFrame = UIWidgetTopCenterContainerFrame, DragBuffFrame = BuffFrame, DragPlayerPowerBarAlt = PlayerPowerBarAlt}
 
 			-- Create main table structure in saved variables if it doesn't exist
 			if (LeaPlusDB["Frames"]) == nil then
@@ -3869,7 +3849,7 @@
 				LeaFramesSetPos(TargetFrame						, "TOPLEFT"	, UIParent, "TOPLEFT"	, 250, -4)
 				LeaFramesSetPos(GhostFrame						, "TOP"		, UIParent, "TOP"		, -5, -29)
 				LeaFramesSetPos(MirrorTimer1					, "TOP"		, UIParent, "TOP"		, -5, -96)
-				LeaFramesSetPos(LeaPlusTopCenterContainerHolder	, "TOP"		, UIParent, "TOP"		, 0, -15)
+				LeaFramesSetPos(UIWidgetTopCenterContainerFrame	, "TOP"		, UIParent, "TOP"		, 0, -15)
 				LeaFramesSetPos(BuffFrame						, "TOPRIGHT", UIParent, "TOPRIGHT"	, -205, -13)
 				LeaFramesSetPos(PlayerPowerBarAlt				, "BOTTOM"	, UIParent, "BOTTOM"	, 0, 115)
 			end
@@ -3903,8 +3883,8 @@
 						TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
 					end
 					-- If widget top holder scale is changed, also change real widget top center frame
-					if currentframe == "LeaPlusTopCenterContainerHolder" then
-						UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+					if currentframe == "UIWidgetTopCenterContainerFrame" then
+						UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Scale"])
 					end
 					-- Set slider formatted text
 					LeaPlusCB["FrameScale"].f:SetFormattedText("%.0f%%", LeaPlusLC["FrameScale"] * 100)
@@ -3963,8 +3943,7 @@
 					-- Set temporary enchant frame scale to match buff frame scale
 					TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
 					-- Set real widget top center frame scale to match holder frame
-					UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-					LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+					UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Scale"])
 					-- Set the scale slider value to the selected frame scale
 					LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"])
 					-- Refresh the panel
@@ -4082,7 +4061,7 @@
 				if realframe:GetName() == "TargetFrame" 					then dragframe.f:SetText(L["Target"]) end
 				if realframe:GetName() == "MirrorTimer1" 					then dragframe.f:SetText(L["Timer"]) end
 				if realframe:GetName() == "GhostFrame" 						then dragframe.f:SetText(L["Ghost"]) end
-				if realframe:GetName() == "LeaPlusTopCenterContainerHolder" then dragframe.f:SetText(L["Widget"] .. "|n" .. L["Top Center"]) end
+				if realframe:GetName() == "UIWidgetTopCenterContainerFrame" then dragframe.f:SetText(L["Widget"] .. "|n" .. L["Top Center"]) end
 				if realframe:GetName() == "BuffFrame" 						then dragframe.f:SetText(L["Buffs"]) end
 				if realframe:GetName() == "PlayerPowerBarAlt" 				then dragframe.f:SetText(L["Power"]) end
 				return LeaPlusLC[dragframe]
@@ -4101,8 +4080,7 @@
 			end
 			ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"]);
 			TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
-			UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-			LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+			UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Scale"])
 
 			-- Load defaults first then overwrite with saved values if they exist
 			LeaPlusFramesDefaults()
@@ -4148,7 +4126,7 @@
 						LeaFramesSetPos(TargetFrame						, "TOPLEFT"	, UIParent, "TOPLEFT"	,	"190"	, "-14")
 						LeaFramesSetPos(GhostFrame						, "CENTER"	, UIParent, "CENTER"	,	"3"		, "-142")
 						LeaFramesSetPos(MirrorTimer1					, "TOP"		, UIParent, "TOP"		,	"0"		, "-120")
-						LeaFramesSetPos(LeaPlusTopCenterContainerHolder	, "TOP"		, UIParent, "TOP"		,	"0"		, "-432")
+						LeaFramesSetPos(UIWidgetTopCenterContainerFrame	, "TOP"		, UIParent, "TOP"		,	"0"		, "-432")
 						LeaFramesSetPos(BuffFrame						, "TOPRIGHT", UIParent, "TOPRIGHT"	,	"-271"	, "0")
 						LeaFramesSetPos(PlayerPowerBarAlt				, "CENTER"	, UIParent, "CENTER"	,	"0"		, "-160")
 						-- Player
@@ -4159,11 +4137,10 @@
 						LeaPlusDB["Frames"]["TargetFrame"]["Scale"] = 1.20;
 						TargetFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
 						LeaPlusLC["DragTargetFrame"]:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
-						-- LeaPlusTopCenterContainerHolder
-						LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"] = 1.25
-						UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-						LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-						LeaPlusLC["DragLeaPlusTopCenterContainerHolder"]:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+						-- UIWidgetTopCenterContainerFrame
+						LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Scale"] = 1.25
+						UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Scale"])
+						LeaPlusLC["DragUIWidgetTopCenterContainerFrame"]:SetScale(LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Scale"])
 						-- Buff
 						LeaPlusDB["Frames"]["BuffFrame"]["Scale"] = 0.80
 						BuffFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
@@ -4200,7 +4177,7 @@
 						-- Set specific scaled sizes for stubborn frames
 						LeaPlusLC["DragMirrorTimer1"]:SetSize(206 * LeaPlusLC["gscale"], 50 * LeaPlusLC["gscale"])
 						LeaPlusLC["DragGhostFrame"]:SetSize(130 * LeaPlusLC["gscale"], 46 * LeaPlusLC["gscale"])
-						LeaPlusLC["DragLeaPlusTopCenterContainerHolder"]:SetSize(160 * LeaPlusLC["gscale"], 79 * LeaPlusLC["gscale"])
+						LeaPlusLC["DragUIWidgetTopCenterContainerFrame"]:SetSize(160 * LeaPlusLC["gscale"], 79 * LeaPlusLC["gscale"])
 						LeaPlusLC["DragBuffFrame"]:SetSize(280 * LeaPlusLC["gscale"], 225 * LeaPlusLC["gscale"])
 						LeaPlusLC["DragPlayerPowerBarAlt"]:SetSize(130 * LeaPlusLC["gscale"], 46 * LeaPlusLC["gscale"])
 					end
@@ -9513,12 +9490,12 @@
 				LeaPlusDB["Frames"]["MirrorTimer1"]["XOffset"] = 0
 				LeaPlusDB["Frames"]["MirrorTimer1"]["YOffset"] = -120
 
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"] = {}
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Point"] = "TOP"
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Relative"] = "TOP"
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["XOffset"] = 0
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["YOffset"] = -432
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"] = 1.25
+				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"] = {}
+				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Point"] = "TOP"
+				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Relative"] = "TOP"
+				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["XOffset"] = 0
+				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["YOffset"] = -432
+				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Scale"] = 1.25
 
 				LeaPlusDB["Frames"]["BuffFrame"] = {}
 				LeaPlusDB["Frames"]["BuffFrame"]["Point"] = "TOPRIGHT"
