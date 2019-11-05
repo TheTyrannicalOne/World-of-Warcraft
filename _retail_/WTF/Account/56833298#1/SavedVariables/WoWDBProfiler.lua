@@ -4,18 +4,9 @@ WoWDBProfilerData = {
 		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["region"] = "US",
+	["version"] = 19,
+	["build_num"] = 32305,
 	["global"] = {
-		["objects"] = {
-			["206726"] = {
-				["NONE:0:false"] = {
-					["locations"] = {
-						["Orgrimmar:85"] = {
-							["3:528:754"] = true,
-						},
-					},
-				},
-			},
-		},
 		["items"] = {
 			[159337] = {
 				["instance_difficulty_id"] = 19,
@@ -118,8 +109,22 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 			},
 		},
+		["objects"] = {
+			["206726"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Orgrimmar:85"] = {
+							["3:528:756"] = true,
+						},
+					},
+				},
+			},
+		},
 		["quests"] = {
 			[49424] = {
+				["can_share"] = true,
+			},
+			[53476] = {
 				["can_share"] = true,
 			},
 			[51555] = {
@@ -133,13 +138,13 @@ WoWDBProfilerData = {
 			},
 			[31891] = {
 			},
-			[42422] = {
+			[51432] = {
 			},
-			[51230] = {
+			[51464] = {
 			},
 			[51498] = {
 			},
-			[51432] = {
+			[51230] = {
 			},
 			[44989] = {
 			},
@@ -148,15 +153,13 @@ WoWDBProfilerData = {
 			},
 			[54185] = {
 			},
+			[51448] = {
+			},
 			[40643] = {
 			},
 			[49775] = {
 				["can_share"] = true,
 			},
-			[48639] = {
-			},
 		},
 	},
-	["build_num"] = 31961,
-	["version"] = 19,
 }

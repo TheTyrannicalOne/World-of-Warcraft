@@ -4,8 +4,6 @@ WoWDBProfilerData = {
 		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["region"] = "US",
-	["version"] = 19,
-	["build_num"] = 31960,
 	["global"] = {
 		["objects"] = {
 			["206726"] = {
@@ -19,79 +17,10 @@ WoWDBProfilerData = {
 			},
 		},
 		["items"] = {
-			[4792] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[140773] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4800] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 75,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[69239] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4816] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 75,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4820] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 75,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122529] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4797] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[159330] = {
-				["instance_difficulty_id"] = 18,
-				["upgrade_value"] = 0,
-				["durability"] = 140,
+			[159337] = {
+				["instance_difficulty_id"] = 19,
+				["upgrade_value"] = 117,
+				["durability"] = 50,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
@@ -102,55 +31,55 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[4793] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4782] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 90,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[159517] = {
+			[140773] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 117,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[158415] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 114,
+				["durability"] = 40,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[4816] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["durability"] = 75,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[4800] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["durability"] = 75,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[160911] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["durability"] = 85,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122255] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[155245] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 115,
 				["durability"] = 55,
-				["seen_bonuses"] = {
-					["41:1712:4796:4802"] = true,
-				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[4790] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[16059] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122361] = {
-				["instance_difficulty_id"] = 0,
+			[160252] = {
+				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
@@ -168,85 +97,10 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[159325] = {
+			[159330] = {
 				["instance_difficulty_id"] = 18,
-				["upgrade_value"] = 116,
-				["durability"] = 50,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[128173] = {
-				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[159337] = {
-				["instance_difficulty_id"] = 19,
-				["upgrade_value"] = 117,
-				["durability"] = 50,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4822] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 70,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[155245] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 115,
-				["durability"] = 55,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[158415] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 114,
-				["durability"] = 40,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122255] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[160252] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[16060] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[160911] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["durability"] = 85,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4766] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 45,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
+				["durability"] = 140,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
@@ -256,87 +110,12 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-		},
-		["npcs"] = {
-			["74228"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[58514] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["44868"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Orgrimmar",
-				["auctioneer"] = true,
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_117"] = {
-								["locations"] = {
-									["Orgrimmar:85"] = {
-										["3:542:736"] = true,
-									},
-								},
-								["max_health"] = 15210,
-							},
-						},
-					},
-				},
-				["reaction"] = "117:Horde:FRIENDLY",
-			},
-			["146011"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[286305] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["153016"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[42138] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["3296"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[58519] = 1,
-							[58511] = 2,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["43239"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[80610] = 2,
-						},
-						["stats"] = {
-						},
-					},
-				},
+			[159325] = {
+				["instance_difficulty_id"] = 18,
+				["upgrade_value"] = 116,
+				["durability"] = 50,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 		},
 		["quests"] = {
@@ -349,16 +128,18 @@ WoWDBProfilerData = {
 			[49283] = {
 				["can_share"] = true,
 			},
-			[53476] = {
+			[51421] = {
 				["can_share"] = true,
 			},
-			[48639] = {
+			[31891] = {
 			},
 			[42422] = {
 			},
-			[51432] = {
+			[51230] = {
 			},
-			[48641] = {
+			[51498] = {
+			},
+			[51432] = {
 			},
 			[44989] = {
 			},
@@ -372,86 +153,10 @@ WoWDBProfilerData = {
 			[49775] = {
 				["can_share"] = true,
 			},
-			[51421] = {
-				["can_share"] = true,
-			},
-		},
-		["world_quests"] = {
-			[54711] = {
-				["location"] = {
-					["y"] = 40.0413990020752,
-					["world_map_id"] = 896,
-					["x"] = 39.41029906272888,
-				},
-				["rewards"] = {
-					["currency_count"] = 0,
-					["item_count"] = 0,
-					["honor"] = 0,
-					["money"] = 0,
-					["xp"] = 32688,
-				},
-				["estimated_end_time"] = 1569398414,
-			},
-			[54692] = {
-				["location"] = {
-					["y"] = 32.79956579208374,
-					["world_map_id"] = 896,
-					["x"] = 39.48001861572266,
-				},
-				["rewards"] = {
-					["currency_count"] = 0,
-					["item_count"] = 0,
-					["honor"] = 0,
-					["money"] = 0,
-					["xp"] = 32688,
-				},
-				["estimated_end_time"] = 1569398414,
-			},
-			[54472] = {
-				["location"] = {
-					["y"] = 48.17211627960205,
-					["world_map_id"] = 896,
-					["x"] = 33.72838497161865,
-				},
-				["rewards"] = {
-					["currency_count"] = 0,
-					["item_count"] = 0,
-					["honor"] = 0,
-					["money"] = 0,
-					["xp"] = 32688,
-				},
-				["estimated_end_time"] = 1569398414,
-			},
-			[54448] = {
-				["location"] = {
-					["y"] = 37.55773305892944,
-					["world_map_id"] = 896,
-					["x"] = 40.31661748886108,
-				},
-				["rewards"] = {
-					["currency_count"] = 0,
-					["item_count"] = 0,
-					["honor"] = 0,
-					["money"] = 0,
-					["xp"] = 32688,
-				},
-				["estimated_end_time"] = 1569398414,
-			},
-			[54011] = {
-				["location"] = {
-					["y"] = 50.91722011566162,
-					["world_map_id"] = 896,
-					["x"] = 38.29483389854431,
-				},
-				["rewards"] = {
-					["currency_count"] = 0,
-					["item_count"] = 0,
-					["honor"] = 0,
-					["money"] = 0,
-					["xp"] = 32688,
-				},
-				["estimated_end_time"] = 1569398414,
+			[48639] = {
 			},
 		},
 	},
+	["build_num"] = 31961,
+	["version"] = 19,
 }

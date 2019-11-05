@@ -16,8 +16,8 @@ H: 80
 Frame: rareFrame
 FrameLevel: 1
 Anchor: RIGHT
-X: 45
-Y: 81
+X: 15
+Y: 80
 W: 261
 H: 469
 Frame: ItemRefTooltip
@@ -121,7 +121,7 @@ H: 20
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: CENTER
-X: 8
+X: 9
 Y: -2
 W: 300
 H: 300

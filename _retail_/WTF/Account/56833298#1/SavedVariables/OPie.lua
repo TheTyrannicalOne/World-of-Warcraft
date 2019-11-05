@@ -314,10 +314,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["Utility2"] = {
 				{
