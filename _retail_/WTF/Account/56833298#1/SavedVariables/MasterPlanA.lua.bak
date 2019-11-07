@@ -45,13 +45,13 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["lastCacheTime"] = 1462930208,
 			["summary"] = {
-				["tt1"] = true,
 				["ti1"] = 118530,
+				["tt1"] = true,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["tt3"] = true,
 				["ti3"] = 127855,
+				["tt3"] = true,
 			},
 			["faction"] = "Horde",
 		},
@@ -69,13 +69,13 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1572799246,
 			["summary"] = {
 				["lastOilTime"] = 1572799176,
 				["tt2"] = 1572763543,
 				["tt3"] = 1571199369,
-				["ti1"] = 118531,
 				["tt1"] = 1572731189,
+				["ti1"] = 118531,
 				["ti3"] = 127855,
 				["inProgress"] = {
 					[396] = 1572827950,
@@ -94,11 +94,11 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1572799246,
-			["curRes"] = 7464,
 			["curOil"] = 79630,
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 7464,
+			["faction"] = "Horde",
 		},
 	},
 	["Tanaris"] = {

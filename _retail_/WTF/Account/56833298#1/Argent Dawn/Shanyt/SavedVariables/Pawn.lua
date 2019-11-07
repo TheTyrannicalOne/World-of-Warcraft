@@ -29,9 +29,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163461::::::::120:71::28:3:5125:1587:4786:::|h[Honorbound Centurion's Greatbelt]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 165493,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:165493::::::::120:71::6:4:5126:1517:5850:4783:::|h[Deathguard's Greaves]|h|r",
+			["ID"] = 171497,
+			["Level"] = 420,
+			["Link"] = "|cffa335ee|Hitem:171497::::::::120:71:512::1:6355:120:::|h[Legguards of Endless Rage]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 167776,
@@ -49,10 +49,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:159413::::::::120:71::23:3:4779:1577:4784:::|h[Gauntlets of the Avian Sentinel]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 165680,
-			["Level"] = 395,
+			["ID"] = 171622,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:165680::::::::120:71::28:3:4803:1587:4786:::|h[Igneous Winterskorn Loop]|h|r",
+			["Link"] = "|cffa335ee|Hitem:171622::::::::120:71:512::1:6355:120:::|h[Ring of Holy Cleansing]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 143901,

@@ -1,25 +1,32 @@
-11/4 19:23:38.064  LogOpen
-11/4 19:23:38.105  NvAPI loaded
-11/4 19:23:38.809  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe1010) dx11:true dx12:true
-11/4 19:23:38.809  	Monitor 0 "\\.\DISPLAY7" (2560x1440)
-11/4 19:23:38.809  	Monitor 1 "\\.\DISPLAY6" (1920x1080)
-11/4 19:23:38.860  D3d12 Device Create
-11/4 19:23:38.995  Choosing adapter 0
-11/4 19:23:39.132  AFR Groups: 1/1
-11/4 19:23:39.132  Feature Level: DX=6, MTL=0
-11/4 19:23:39.390  NotifyOnDeviceCreate
-11/4 19:23:39.390  D3d12 Device Create Successful
-11/4 19:23:39.390  Nvidia driver version: r441_09 (44112)
-11/4 19:23:39.390  <IsGPUDriverOutOfDate> No
-11/4 19:23:39.419  CPU Processor Detection: 12 H/W threads
-11/4 19:23:39.419  Memory Detection: 34296328192 bytes of physical memory available
-11/4 19:23:39.419  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-11/4 19:23:39.547  RenderSettings::NotifyChanged
-11/4 19:23:41.560  Nvidia driver version: r441_09 (44112)
-11/4 19:24:09.868  Nvidia driver version: r441_09 (44112)
-11/4 19:24:09.868  Nvidia driver version: r441_09 (44112)
-11/4 19:26:01.486  RenderSettings::NotifyChanged
-11/4 20:17:24.203  Nvidia driver version: r441_09 (44112)
-11/4 20:17:24.908  D3d12 Device Destroy
-11/4 20:17:24.908  NotifyOnDeviceDestroy
-11/4 20:17:25.280  GxShutdown
+11/6 21:10:08.739  LogOpen
+11/6 21:10:08.783  NvAPI loaded
+11/6 21:10:09.109  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe1010) dx11:true dx12:true
+11/6 21:10:09.109  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+11/6 21:10:09.109  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+11/6 21:10:09.154  D3d12 Device Create
+11/6 21:10:09.294  Choosing adapter 0
+11/6 21:10:09.456  AFR Groups: 1/1
+11/6 21:10:09.456  Feature Level: DX=6, MTL=0
+11/6 21:10:09.707  NotifyOnDeviceCreate
+11/6 21:10:09.707  D3d12 Device Create Successful
+11/6 21:10:09.710  Nvidia driver version: r441_09 (44112)
+11/6 21:10:09.710  <IsGPUDriverOutOfDate> No
+11/6 21:10:09.738  CPU Processor Detection: 12 H/W threads
+11/6 21:10:09.738  Memory Detection: 34296328192 bytes of physical memory available
+11/6 21:10:09.738  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+11/6 21:10:09.867  RenderSettings::NotifyChanged
+11/6 21:10:11.414  Nvidia driver version: r441_09 (44112)
+11/6 21:10:39.786  Nvidia driver version: r441_09 (44112)
+11/6 21:10:39.786  Nvidia driver version: r441_09 (44112)
+11/6 21:19:28.457  Running Texture Defragmenter
+11/6 21:19:28.468  	Defragmented 125 textures.
+11/6 21:19:28.468  RenderSettings::NotifyChanged
+11/6 21:19:28.611  CharacterComponent Texture Level change
+11/6 22:03:45.782  Running Texture Defragmenter
+11/6 22:03:45.782  	Defragmented 9 textures.
+11/6 22:03:45.782  RenderSettings::NotifyChanged
+11/6 22:03:46.712  CharacterComponent Texture Level change
+11/6 22:08:17.543  Nvidia driver version: r441_09 (44112)
+11/6 22:08:18.356  D3d12 Device Destroy
+11/6 22:08:18.356  NotifyOnDeviceDestroy
+11/6 22:08:18.820  GxShutdown
