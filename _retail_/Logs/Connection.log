@@ -1,34 +1,67 @@
-11/6 21:10:06.647  Connection Initialize
-11/6 21:10:13.502  Glue Start Login
-11/6 21:10:13.502  BattleNet Attempt Logon
-11/6 21:10:13.823  BattleNet Front Connected
-11/6 21:10:13.945  BattleNet Logon Queue Update
-11/6 21:10:14.346  BattleNet Logon Complete
-11/6 21:10:14.503  BattleNet Game Account Name
-11/6 21:10:14.503  BattleNet Game Account Name
-11/6 21:10:14.503  BattleNet Attempt Complete Login
-11/6 21:10:14.933  BattleNet Realm List Ticket
-11/6 21:10:15.079  BattleNet Sub Region List
-11/6 21:10:15.522  BattleNet Last Played Char
-11/6 21:10:15.595  BattleNet Last Played Char
-11/6 21:10:15.595  BattleNet Last Played Char
-11/6 21:10:15.656  BattleNet Last Played Char
-11/6 21:10:15.783  BattleNet Last Played Char
-11/6 21:10:15.844  BattleNet Last Played Char
-11/6 21:10:15.844  BattleNet Join Realm
-11/6 21:10:16.069  BattleNet Realm Join
-11/6 21:10:16.069  Change Connection
-11/6 21:10:16.069  Connect
-11/6 21:10:37.075  Handle Cant Connect
-11/6 21:10:37.130  Handle Connect
-11/6 21:10:39.468  Handle Auth Response: 0
-11/6 21:10:39.468  Glue Authed To WoW: 0
-11/6 21:10:39.788  BattleNet Connected To Realm
-11/6 21:10:39.788  BattleNet Front Disconnecting
-11/6 21:10:39.880  BattleNet Front Disconnected
-11/6 21:10:40.474  Handle Char Enum
-11/6 22:05:17.330  Handle Logout Abort Ack
-11/6 22:08:11.925  Handle Logout Response: 0
-11/6 22:08:12.348  Handle Logout Complete
-11/6 22:08:18.855  Disconnect: 13
-11/6 22:08:18.855  Connection Destroy
+11/10 03:38:24.564  Connection Initialize
+11/10 03:38:30.394  Glue Start Login
+11/10 03:38:30.394  BattleNet Attempt Logon
+11/10 03:38:30.697  BattleNet Front Connected
+11/10 03:38:30.824  BattleNet Logon Queue Update
+11/10 03:38:31.079  BattleNet Logon Complete
+11/10 03:38:31.183  BattleNet Game Account Name
+11/10 03:38:31.243  BattleNet Game Account Name
+11/10 03:38:31.243  BattleNet Attempt Complete Login
+11/10 03:38:31.833  BattleNet Realm List Ticket
+11/10 03:38:31.942  BattleNet Sub Region List
+11/10 03:38:32.336  BattleNet Last Played Char
+11/10 03:38:32.397  BattleNet Last Played Char
+11/10 03:38:32.458  BattleNet Last Played Char
+11/10 03:38:32.458  BattleNet Last Played Char
+11/10 03:38:32.604  BattleNet Last Played Char
+11/10 03:38:32.664  BattleNet Last Played Char
+11/10 03:38:32.664  BattleNet Join Realm
+11/10 03:38:32.907  BattleNet Realm Join
+11/10 03:38:32.907  Change Connection
+11/10 03:38:32.907  Connect
+11/10 03:38:53.914  Handle Cant Connect
+11/10 03:38:53.963  Handle Connect
+11/10 03:38:55.991  Handle Auth Response: 0
+11/10 03:38:55.991  Glue Authed To WoW: 0
+11/10 03:38:56.286  BattleNet Connected To Realm
+11/10 03:38:56.286  BattleNet Front Disconnecting
+11/10 03:38:56.392  Handle Char Enum
+11/10 03:38:56.500  Handle Char Enum
+11/10 03:38:56.505  BattleNet Front Disconnected
+11/10 03:38:59.010  BattleNet Request Change Realm List
+11/10 03:38:59.293  BattleNet Realm List Ticket
+11/10 03:38:59.679  BattleNet Sub Region List
+11/10 03:39:00.184  BattleNet Realm List
+11/10 03:39:00.381  BattleNet Realm List
+11/10 03:39:00.381  BattleNet Realm List
+11/10 03:39:00.381  BattleNet Realm List
+11/10 03:39:00.587  BattleNet Realm List
+11/10 03:39:00.587  BattleNet Realm List
+11/10 03:39:01.989  BattleNet Join Realm
+11/10 03:39:02.608  BattleNet Realm Join
+11/10 03:39:02.608  Change Connection
+11/10 03:39:02.614  Handle Disconnect
+11/10 03:39:02.614  Connect
+11/10 03:39:23.619  Handle Cant Connect
+11/10 03:39:23.674  Handle Connect
+11/10 03:39:25.788  Handle Auth Response: 0
+11/10 03:39:25.788  Glue Authed To WoW: 0
+11/10 03:39:25.788  BattleNet Connected To Realm
+11/10 03:39:26.064  Handle Char Enum
+11/10 03:45:31.158  Handle Character Create: 24
+11/10 03:45:31.419  Handle Char Enum
+11/10 03:46:15.873  Handle Character Create: 27
+11/10 03:46:21.035  Handle Character Create: 27
+11/10 03:46:25.869  Handle Character Create: 24
+11/10 03:46:26.118  Handle Char Enum
+11/10 03:47:55.389  Handle Char Enum
+11/10 03:48:08.179  Handle Character Create: 24
+11/10 03:48:08.452  Handle Char Enum
+11/10 04:02:13.531  Handle Character Create: 31
+11/10 04:02:19.931  Handle Char Enum
+11/10 04:02:37.164  Handle Character Delete: 54
+11/10 04:02:37.492  Handle Char Enum
+11/10 04:09:24.873  Handle Disconnect
+11/10 04:09:24.873  Glue WoW Disconnect
+11/10 04:09:24.873  BattleNet Defer Disconnect
+11/10 04:10:06.295  Connection Destroy
