@@ -9,6 +9,152 @@ P["sle"] = {
 			["template"] = "Transparent",
 		},
 	},
+	--Armory
+	["armory"] = {
+		["character"] = {
+			["enable"] = false,
+			["showWarning"] = true,
+			["ilvl"] = {
+				["colorType"] = "NONE",
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+				["font"] = "PT Sans Narrow",
+				["fontSize"] = 12,
+				["fontStyle"] = "OUTLINE",
+			},
+			["enchant"] = {
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+				["font"] = "PT Sans Narrow",
+				["fontSize"] = 12,
+				["fontStyle"] = "OUTLINE",
+			},
+			["gem"] = {
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+				["size"] = 10,
+			},
+			["gradient"] = {
+				["enable"] = true,
+				["color"] = { .41, .83, 1 },
+				["quality"] = false,
+			},
+			["transmog"] = {
+				["enableGlow"] = false,
+				["enableArrow"] = true,
+				["glowNumber"] = 4,
+				["glowOffset"] = 1,
+			},
+			["durability"] = {
+				["display"] = "Always", -- Always, MouseoverOnly, DamagedOnly, Hide
+				["font"] = "PT Sans Narrow",
+				["fontSize"] = 10,
+				["fontStyle"] = "OUTLINE",
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+			},
+			["background"] = {
+				["selectedBG"] = "Space",
+				["customTexture"] = "",
+				["overlay"] = true,
+			},
+		},
+		["inspect"] = {
+			["enable"] = false,
+			["showWarning"] = true,
+			["ilvl"] = {
+				["colorType"] = "NONE",
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+				["font"] = "PT Sans Narrow",
+				["fontSize"] = 12,
+				["fontStyle"] = "OUTLINE",
+			},
+			["enchant"] = {
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+				["font"] = "PT Sans Narrow",
+				["fontSize"] = 12,
+				["fontStyle"] = "OUTLINE",
+			},
+			["gem"] = {
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+				["size"] = 10,
+			},
+			["gradient"] = {
+				["enable"] = true,
+				["color"] = { .41, .83, 1 },
+				["quality"] = false,
+			},
+			["transmog"] = {
+				["enableGlow"] = false,
+				["enableArrow"] = true,
+				["glowNumber"] = 4,
+				["glowOffset"] = 1,
+			},
+			["background"] = {
+				["selectedBG"] = "Space",
+				["customTexture"] = "",
+				["overlay"] = true,
+			},
+		},
+		["stats"] = {
+			["enable"] = true,
+			["itemLevel"] = {
+				["font"] = "PT Sans Narrow",
+				["size"] = 12,
+				["outline"] = "NONE",
+			},
+			["IlvlFull"] = true,
+			["IlvlColor"] = false,
+			["AverageColor"] = {r = 0, g = 1, b = .59},
+			["OnlyPrimary"] = true,
+			["statFonts"] = {
+				["font"] = "PT Sans Narrow",
+				["size"] = 12,
+				["outline"] = "NONE",
+			},
+			["catFonts"] = {
+				["font"] = "PT Sans Narrow",
+				["size"] = 12,
+				["outline"] = "NONE",
+			},
+			["List"] = {
+				--General
+				HEALTH = false,
+				POWER = false,
+				ALTERNATEMANA = false,
+				MOVESPEED = true,
+				--Attack
+				ATTACK_DAMAGE = true,
+				ATTACK_AP = false,
+				ATTACK_ATTACKSPEED = false,
+				SPELLPOWER = true,
+				MANAREGEN = false,
+				ENERGY_REGEN = false,
+				RUNE_REGEN = false,
+				FOCUS_REGEN = false,
+				--Enhancements
+				CRITCHANCE = true,
+				HASTE = true,
+				MASTERY = true,
+				VERSATILITY = true,
+				LIFESTEAL = true,
+				--Defense
+				ARMOR = true,
+				AVOIDANCE = true,
+				DODGE = true,
+				PARRY = true,
+				BLOCK = true,
+			},
+		},
+		["enchantString"] = {
+			["enable"] = true,
+			-- ["fullText"] = false,
+			["replacement"] = true,
+		},
+	},
 	--Auras
 	["auras"] = {
 		["hideBuffsTimer"] = false,
@@ -249,13 +395,11 @@ P["sle"] = {
 			["enabled"] = true,
 			["width"] = 396,
 			["alpha"] = 1,
-			["noborders"] = false,
 		},
 		["rightchat"] = {
 			["enabled"] = true,
 			["width"] = 396,
 			["alpha"] = 1,
-			["noborders"] = false,
 		},
 		["chathandle"] = false,
 	},
@@ -560,7 +704,7 @@ P["sle"] = {
 				["cdFormat"] = "DEFAULT",
 				["ignoreMissingInfo"] = false,
 				["showHearthstones"] = true,
-				["hsPrio"] = "54452,64488,93672,142542,162973,163045,165669,165670,165802,166746,166747",
+				["hsPrio"] = "54452,64488,93672,142542,162973,163045,165669,165670,165802,166746,166747,168907",
 				["showToys"] = true,
 				["showSpells"] = true,
 				["showEngineer"] = true,
@@ -600,7 +744,6 @@ P["sle"] = {
 		},
 		["visibleRange"] = 60,
 	},
-
 	--Quests
 	["quests"] = {
 		["visibility"] = {

@@ -45,6 +45,12 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN1"] = {
 			["IconTexturePath"] = 136048,
 			["PerCharacterOptions"] = {
+				["Sinh-Dalaran"] = {
+					["Visible"] = true,
+				},
+				["Brewnheimer-Darkspear"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "0070dd",
 			["LocalizedName"] = "Shaman: Elemental",
@@ -93,6 +99,9 @@ PawnCommon = {
 		["\"MrRobot\":MAGE3"] = {
 			["IconTexturePath"] = 135846,
 			["PerCharacterOptions"] = {
+				["Darnastris-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "3fc6ea",
 			["LocalizedName"] = "Mage: Frost",
@@ -108,6 +117,9 @@ PawnCommon = {
 		["\"MrRobot\":MAGE2"] = {
 			["IconTexturePath"] = 135810,
 			["PerCharacterOptions"] = {
+				["Shathiel-Darkspear"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "3fc6ea",
 			["LocalizedName"] = "Mage: Fire",
@@ -123,6 +135,9 @@ PawnCommon = {
 		["\"MrRobot\":WARLOCK3"] = {
 			["IconTexturePath"] = 136186,
 			["PerCharacterOptions"] = {
+				["Claugh-Runetotem"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "8787ed",
 			["LocalizedName"] = "Warlock: Destruction",
@@ -138,6 +153,12 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = 236286,
 			["PerCharacterOptions"] = {
+				["Panboozled-Runetotem"] = {
+					["Visible"] = true,
+				},
+				["Malivant-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "fff468",
 			["LocalizedName"] = "Rogue: Outlaw",
@@ -198,6 +219,9 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE3"] = {
 			["IconTexturePath"] = 132320,
 			["PerCharacterOptions"] = {
+				["Migimong-Runetotem"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "fff468",
 			["LocalizedName"] = "Rogue: Subtlety",
@@ -243,6 +267,9 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST2"] = {
 			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
+				["Tynster-Dalaran"] = {
+					["Visible"] = true,
+				},
 				["Jingojaggot-Argent Dawn"] = {
 					["Visible"] = true,
 				},
@@ -261,10 +288,16 @@ PawnCommon = {
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
 			["PerCharacterOptions"] = {
+				["Shanyt-Argent Dawn"] = {
+					["Visible"] = true,
+				},
 				["Shanyt-Zul'jin"] = {
 					["Visible"] = true,
 				},
-				["Shanyt-Argent Dawn"] = {
+				["Goramor-Runetotem"] = {
+					["Visible"] = true,
+				},
+				["Thorinbane-Dalaran"] = {
 					["Visible"] = true,
 				},
 			},
@@ -342,6 +375,12 @@ PawnCommon = {
 		["\"MrRobot\":DRUID2"] = {
 			["IconTexturePath"] = 132115,
 			["PerCharacterOptions"] = {
+				["Narisaric-Dalaran"] = {
+					["Visible"] = true,
+				},
+				["Gillbourn-Runetotem"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7c0a",
 			["LocalizedName"] = "Druid: Feral",
@@ -372,6 +411,15 @@ PawnCommon = {
 		["\"MrRobot\":HUNTER1"] = {
 			["IconTexturePath"] = 461112,
 			["PerCharacterOptions"] = {
+				["Beeronimo-Dalaran"] = {
+					["Visible"] = true,
+				},
+				["Tynkster-Dalaran"] = {
+					["Visible"] = true,
+				},
+				["Serbitechna-Darkspear"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "aad372",
 			["LocalizedName"] = "Hunter: Beast Mastery",
@@ -447,6 +495,9 @@ PawnCommon = {
 		["\"MrRobot\":DEATHKNIGHT2"] = {
 			["IconTexturePath"] = 135773,
 			["PerCharacterOptions"] = {
+				["Gangus-Runetotem"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff4d6b",
 			["LocalizedName"] = "Death Knight: Frost",
@@ -462,6 +513,9 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE1"] = {
 			["IconTexturePath"] = 236270,
 			["PerCharacterOptions"] = {
+				["Ruffinton-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "fff468",
 			["LocalizedName"] = "Rogue: Assassination",
@@ -477,6 +531,9 @@ PawnCommon = {
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
+				["Tyriinid-Dalaran"] = {
+					["Visible"] = true,
+				},
 				["Vancard-Zul'jin"] = {
 					["Visible"] = true,
 				},
@@ -495,6 +552,9 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
+				["Dialdaas-Darkspear"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["LocalizedName"] = "Paladin: Protection",
@@ -558,6 +618,9 @@ PawnCommon = {
 		["\"MrRobot\":MONK3"] = {
 			["IconTexturePath"] = 608953,
 			["PerCharacterOptions"] = {
+				["Shaewong-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "00ff96",
 			["LocalizedName"] = "Monk: Windwalker",

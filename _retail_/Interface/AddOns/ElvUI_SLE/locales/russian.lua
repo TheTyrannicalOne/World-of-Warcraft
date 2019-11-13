@@ -126,10 +126,10 @@ L["Highlight the button of the spell with areal effect until the area is selecte
 L["Checked Texture Color"] = "Цвет выделения"
 
 --Armory
+L["SLE_Armory_Info"] = "Оружейная представляет стандартную информацию о предметах из ElvUI в другом виде. Имейте ввиду, что отображение чар, камней и уровней предметов не будет функционировать без активации соответствующей опции ElvUI. Для перехода в соответствующую секцию настроек, нажмите на кнопку ниже."
 L["Average"] = "Средний"
 L["Not Enchanted"] = "Не зачаровано"
 L["Empty Socket"] = "Пустой слот"
-L["KF"] = true
 L["You can't inspect while dead."] = "Вы не можете осматривать будучи трупом."
 L["Specialization data seems to be crashed. Please inspect again."] = "Данные по специализации кажется исчезли. Пожалуйста, повторно осмотрите цель."
 L["No Specialization"] = "Нет специализации"
@@ -424,7 +424,7 @@ L["Hide MOTD"] = "Скрыть сообщение дня"
 L["Hide the guild's Message of the Day in the tooltip."] = "Скрывает сообщение дня гильдии на подсказке."
 L["Hide Guild"] = "Скрыть гильдию"
 L["Minimize the Guild Datatext."] = "Минимизировать состав гильдии."
-L["Hide Guild Name"] = "Скрыть название гильдии"
+L["Hide the Shadow & Light title in the tooltip."] = true
 L["Hide the guild's name in the tooltip."] = "Скрывает название гильдии на подсказке."
 L["S&L Mail"] = true
 L["These options are for modifying the Shadow & Light Mail datatext."] = "Опции для настройки инфо-текста S&L Mail"

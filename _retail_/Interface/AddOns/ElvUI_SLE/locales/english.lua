@@ -126,10 +126,10 @@ L["Highlight the button of the spell with areal effect until the area is selecte
 L["Checked Texture Color"] = true
 
 --Armory
+L["SLE_Armory_Info"] = "Armory is designed to provide standard ElvUI item info in a different way. Keep in mind that display of enchantments, gems and item levels is only available when corresponding ElvUI option is enabled. Use button below to visit mentioned feature's config section."
 L["Average"] = true
 L["Not Enchanted"] = true
 L["Empty Socket"] = true
-L["KF"] = true
 L["You can't inspect while dead."] = true
 L["Specialization data seems to be crashed. Please inspect again."] = true
 L["No Specialization"] = true
@@ -435,7 +435,7 @@ L["Hide MOTD"] = true
 L["Hide the guild's Message of the Day in the tooltip."] = true
 L["Hide Guild"] = true
 L["Minimize the Guild Datatext."] = true
-L["Hide Guild Name"] = true
+L["Hide the Shadow & Light title in the tooltip."] = true
 L["Hide the guild's name in the tooltip."] = true
 L["S&L Mail"] = true
 L["These options are for modifying the Shadow & Light Mail datatext."] = true
@@ -1001,7 +1001,8 @@ L["ELVUI_SLE_PATREON_TITLE"] = "Many thanks to our awesome patrons, who provided
 L["Patrons"] = true
 L["Donors"] = true
 L["ELVUI_SLE_PATRONS"] = [[Ali A
-Andre Edwards]]
+Andre Edwards
+Peter aka Pete]]
 
 L["SLE_BENIK_AF"] = [[Due to a high amount of stuff IRL, |cff9482c9Shadow & Light|r team took a vacation.
 

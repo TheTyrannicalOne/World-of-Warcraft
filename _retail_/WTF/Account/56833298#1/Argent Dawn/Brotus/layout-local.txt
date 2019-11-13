@@ -1,4 +1,11 @@
 Version: 1
+Frame: rareFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 300
+Y: 100
+W: 261
+H: 469
 Frame: AAP_GreetingsFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -6,3 +13,10 @@ X: 0
 Y: -1
 W: 330
 H: 200
+Frame: scanner_button
+FrameLevel: 1
+Anchor: BOTTOM
+X: 0
+Y: 128
+W: 200
+H: 50

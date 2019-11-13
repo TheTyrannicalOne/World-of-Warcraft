@@ -127,10 +127,10 @@ L["Highlight the button of the spell with areal effect until the area is selecte
 L["Checked Texture Color"] = "Gedrückte Textur Farbe"
 
 --Armory
+L["SLE_Armory_Info"] = "Armory is designed to provide standard ElvUI item info in a different way. Keep in mind that display of enchantments, gems and item levels is only available when corresponding ElvUI option is enabled. Use button below to visit mentioned feature's config section."
 L["Average"] = "Durschnitt"
 L["Not Enchanted"] = "Nicht verzaubert"
 L["Empty Socket"] = "Leerer Sockel"
-L["KF"] = true
 L["You can't inspect while dead."] = "Du kannst nicht inspizieren während du tod bist."
 L["Specialization data seems to be crashed. Please inspect again."] = "Spezialisierungsdaten sind wohl gecrashed. Bitte erneut inspizieren."
 L["No Specialization"] = "Keine Spezialisierung"
@@ -427,7 +427,7 @@ L["Hide MOTD"] = "Verstecke GNDT"
 L["Hide the guild's Message of the Day in the tooltip."] = "Versteckt die Gildennachricht des Tages im Tooltip."
 L["Hide Guild"] = "Gilde verstecken"
 L["Minimize the Guild Datatext."] = "Minimiert den Gilden-Infotext."
-L["Hide Guild Name"] = "Verstecke den Gildennamen"
+L["Hide the Shadow & Light title in the tooltip."] = true
 L["Hide the guild's name in the tooltip."] = "Versteckt den Gildennamen im Tooltip."
 L["S&L Mail"] = "S&L Post"
 L["These options are for modifying the Shadow & Light Mail datatext."] = "Diese Optionen sind zum Verändern des Shadow & Light Post-Infotext."

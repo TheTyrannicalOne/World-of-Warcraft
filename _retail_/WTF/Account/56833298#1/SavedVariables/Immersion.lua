@@ -4,7 +4,7 @@ ImmersionSetup = {
 	["scale"] = 1,
 	["elementscale"] = 1,
 	["disableprogression"] = false,
-	["titleoffsetY"] = -124,
+	["titleoffsetY"] = 12.50018310546875,
 	["hideui"] = false,
 	["boxoffsetX"] = 0,
 	["accept"] = "SPACE",
@@ -17,6 +17,6 @@ ImmersionSetup = {
 	["boxpoint"] = "Bottom",
 	["boxlock"] = true,
 	["titlescale"] = 1,
-	["titleoffset"] = 446.2379150390625,
+	["titleoffset"] = 586.2379150390625,
 	["boxoffsetY"] = 150,
 }

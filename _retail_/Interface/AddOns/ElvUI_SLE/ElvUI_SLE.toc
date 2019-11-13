@@ -1,16 +1,15 @@
 ## Interface: 80205
 ## Title: |cff1784d1ElvUI|r |cff9482c9Shadow & Light|r
 ## Author: Darth Predator, Repooc
-## Version: 3.59
+## Version: 3.60
 ## Notes: Plugin-edit for |cff1784d1ElvUI|r adding additional features.
 ## Notes-ruRU: Плагин-редакция для |cff1784d1ElvUI|r, добавляющий новые функции.
 ## URL: http://tukui.org/ 
 ## RequiredDeps: ElvUI
 ## OptionalDeps: AddonSkins, BigWigs, Clique, Hermes, xCT+
 ## DefaultState: Enabled
-## X-ElvVersion: 11.23
+## X-ElvVersion: 11.25
 ## SavedVariables: SLE_ArmoryDB
-
 
 libs\load_libs.xml
 locales\load_locales.xml

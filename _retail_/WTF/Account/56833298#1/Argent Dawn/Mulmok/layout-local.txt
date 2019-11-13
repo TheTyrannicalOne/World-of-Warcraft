@@ -1,1 +1,15 @@
 Version: 1
+Frame: rareFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 300
+Y: 100
+W: 261
+H: 469
+Frame: scanner_button
+FrameLevel: 1
+Anchor: BOTTOM
+X: 0
+Y: 128
+W: 200
+H: 50

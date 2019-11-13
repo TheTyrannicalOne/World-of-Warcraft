@@ -1,5 +1,21 @@
 
 MasterPlanAG = {
+	["Tanaris"] = {
+		["Youngpoobs"] = {
+			["class"] = "MONK",
+			["faction"] = "Alliance",
+		},
+	},
+	["Zul'jin"] = {
+		["Tyrann"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Horde",
+		},
+		["Vancard"] = {
+			["faction"] = "Horde",
+			["class"] = "MAGE",
+		},
+	},
 	["Illidan"] = {
 		["Zerkinz"] = {
 			["class"] = "DRUID",
@@ -65,14 +81,110 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 	},
-	["Zul'jin"] = {
-		["Tyrann"] = {
-			["class"] = "PRIEST",
+	["Runetotem"] = {
+		["Panboozled"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+		["Gangus"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
+		},
+		["Claugh"] = {
+			["class"] = "WARLOCK",
 			["faction"] = "Horde",
 		},
-		["Vancard"] = {
+		["Migimong"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["Goramor"] = {
 			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["Gillbourn"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+	},
+	["Dalaran"] = {
+		["Shaewong"] = {
+			["class"] = "MONK",
+			["faction"] = "Neutral",
+		},
+		["Ruffinton"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+		["Tynster"] = {
+			["faction"] = "Alliance",
+			["class"] = "PRIEST",
+		},
+		["Sinh"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Darnastris"] = {
+			["faction"] = "Alliance",
 			["class"] = "MAGE",
+		},
+		["Malivant"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+		["Beeronimo"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Tynkster"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Tyriinid"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Narisaric"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+		["Thorinbane"] = {
+			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Brewnheimer"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Dialdaas"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+	},
+	["Sargeras"] = {
+		["Zerkinz"] = {
+			["faction"] = "Neutral",
+			["class"] = "SHAMAN",
+		},
+		["Xerkinz"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
 		},
 	},
 	["Argent Dawn"] = {
@@ -108,29 +220,5 @@ MasterPlanAG = {
 			["curRes"] = 7464,
 			["class"] = "WARRIOR",
 		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["class"] = "DRUID",
-			["faction"] = "Horde",
-		},
-	},
-	["Tanaris"] = {
-		["Youngpoobs"] = {
-			["class"] = "MONK",
-			["faction"] = "Alliance",
-		},
-	},
-	["Sargeras"] = {
-		["Zerkinz"] = {
-			["faction"] = "Neutral",
-			["class"] = "SHAMAN",
-		},
-		["Xerkinz"] = {
-			["faction"] = "Alliance",
-			["class"] = "DRUID",
-		},
-	},
-	["IgnoreRewards"] = {
 	},
 }

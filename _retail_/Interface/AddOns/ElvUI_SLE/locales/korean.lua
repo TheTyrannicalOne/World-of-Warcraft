@@ -126,10 +126,10 @@ L["Highlight the button of the spell with areal effect until the area is selecte
 L["Checked Texture Color"] = true
 
 --Armory
+L["SLE_Armory_Info"] = "Armory is designed to provide standard ElvUI item info in a different way. Keep in mind that display of enchantments, gems and item levels is only available when corresponding ElvUI option is enabled. Use button below to visit mentioned feature's config section."
 L["Average"] = "평균"
 L["Not Enchanted"] = "마부 없음"
 L["Empty Socket"] = "보석 없음"
-L["KF"] = true
 L["You can't inspect while dead."] = "죽은 동안엔 살펴보기를 할 수 없습니다."
 L["Specialization data seems to be crashed. Please inspect again."] = "특성 정보가 잘못 로드되었습니다. 대상을 다시 살펴보길 권장합니다."
 L["No Specialization"] = "전문화 없음"
@@ -420,7 +420,7 @@ L["Hide MOTD"] = "오늘의 메시지 숨김"
 L["Hide the guild's Message of the Day in the tooltip."] = "툴팁에서 길드의 오늘의 메시지를 숨깁니다."
 L["Hide Guild"] = "길드 숨김"
 L["Minimize the Guild Datatext."] = "길드 정보문자를 최소화합니다."
-L["Hide Guild Name"] = "길드 이름 숨김"
+L["Hide the Shadow & Light title in the tooltip."] = true
 L["Hide the guild's name in the tooltip."] = "툴팁에 길드 이름을 숨깁니다."
 L["S&L Mail"] = "S&L 우편"
 L["These options are for modifying the Shadow & Light Mail datatext."] = "Shadow & Light 우편 정보문자에 대한 설정을 변경합니다."
