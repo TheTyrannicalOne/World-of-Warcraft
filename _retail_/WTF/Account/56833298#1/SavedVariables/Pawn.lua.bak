@@ -304,10 +304,10 @@ PawnCommon = {
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
 			["PerCharacterOptions"] = {
-				["Shanyt-Argent Dawn"] = {
+				["Shanyt-Zul'jin"] = {
 					["Visible"] = true,
 				},
-				["Shanyt-Zul'jin"] = {
+				["Shanyt-Argent Dawn"] = {
 					["Visible"] = true,
 				},
 				["Thorinbane-Dalaran"] = {

@@ -16,6 +16,8 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 	},
+	["IgnoreRewards"] = {
+	},
 	["Illidan"] = {
 		["Zerkinz"] = {
 			["lastCacheTime"] = 1456134282,
@@ -107,16 +109,14 @@ MasterPlanAG = {
 			["class"] = "WARLOCK",
 		},
 	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
 	["Darkspear"] = {
 		["Shathiel"] = {
 			["faction"] = "Alliance",
 			["class"] = "MAGE",
+		},
+		["Dialdaas"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
 		},
 		["Serbitechna"] = {
 			["faction"] = "Alliance",
@@ -126,9 +126,11 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
 		},
-		["Dialdaas"] = {
-			["class"] = "PALADIN",
-			["faction"] = "Alliance",
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Dalaran"] = {
@@ -161,8 +163,8 @@ MasterPlanAG = {
 			["class"] = "HUNTER",
 		},
 		["Tynkster"] = {
-			["class"] = "HUNTER",
 			["faction"] = "Alliance",
+			["class"] = "HUNTER",
 		},
 		["Tyriinid"] = {
 			["faction"] = "Alliance",

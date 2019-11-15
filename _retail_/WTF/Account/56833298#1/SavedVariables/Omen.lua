@@ -7,13 +7,13 @@ Omen3DB = {
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
@@ -26,7 +26,7 @@ Omen3DB = {
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -56,27 +56,27 @@ Omen3DB = {
 			["PositionX"] = 954.1666870117188,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["MinimapIcon"] = {
-				["minimapPos"] = 345.518259069873,
-			},
 			["PositionW"] = 241.666290283203,
-			["Shown"] = false,
 			["PositionH"] = 162.235656738281,
 			["VGrip2"] = 138.957906526762,
 			["PositionY"] = 181.008178710938,
-			["PositionX"] = 1813.26037597656,
 			["Locked"] = true,
 			["Background"] = {
 				["BorderTexture"] = "Blizzard Tooltip",
 				["Texture"] = "Blizzard Dialog Background",
+			},
+			["Shown"] = false,
+			["MinimapIcon"] = {
+				["minimapPos"] = 345.518259069873,
 			},
 			["ShowWith"] = {
 				["Alone"] = true,
 				["HideWhenOOC"] = true,
 			},
 			["VGrip1"] = 102.708017867607,
+			["PositionX"] = 1813.26037597656,
 		},
-		["Gangus - Runetotem"] = {
+		["Shathiel - Darkspear"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
@@ -106,7 +106,7 @@ Omen3DB = {
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Sinh - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
@@ -166,9 +166,9 @@ Omen3DB = {
 			["PositionX"] = 954.1666870117188,
 		},
 		["Tynkster - Dalaran"] = {
-			["PositionW"] = 200.0000915527344,
 			["Shown"] = false,
 			["PositionY"] = 345.9996643066406,
+			["PositionW"] = 200.0000915527344,
 			["PositionX"] = 2351.165771484375,
 		},
 		["Tyriinid - Dalaran"] = {
@@ -181,7 +181,7 @@ Omen3DB = {
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Shathiel - Darkspear"] = {
+		["Sinh - Dalaran"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,

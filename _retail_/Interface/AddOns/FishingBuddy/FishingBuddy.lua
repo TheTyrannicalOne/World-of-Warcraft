@@ -199,27 +199,6 @@ local CastingOptions = {
         ["parents"] = { ["EasyCast"] = "d" },
         ["default"] = true
     },
-    ["ContestSupport"] = {
-        ["text"] = FBConstants.CONFIG_CONTESTS_ONOFF,
-        ["tooltip"] = FBConstants.CONFIG_CONTESTS_INFO,
-        ["v"] = 1,
-        ["default"] = false
-    },
-    ["STVTimer"] = {
-        ["text"] = FBConstants.CONFIG_STVTIMER_ONOFF,
-        ["tooltip"] = FBConstants.CONFIG_STVTIMER_INFO,
-        ["v"] = 1,
-        ["default"] = false,
-        ["parents"] = { ["ContestSupport"] = "d" }
-    },
-    ["STVPoolsOnly"] = {
-        ["text"] = FBConstants.CONFIG_STVPOOLSONLY_ONOFF,
-        ["tooltip"] = FBConstants.CONFIG_STVPOOLSONLY_INFO,
-        ["v"] = 1,
-        ["default"] = false,
-        ["primary"] = "ContestSupport",
-        ["parents"] = { ["ContestSupport"] = "d", ["EasyCast"] = "d" }
-    },
     ["MouseEvent"] = {
         ["default"] = "RightButtonUp",
         ["button"] = "FBMouseEvent",
@@ -260,6 +239,27 @@ local CastingOptions = {
         ["v"] = 1,
         ["parents"] = { ["EasyLures"] = "d" },
         ["default"] = false
+    },
+    ["ContestSupport"] = {
+        ["text"] = FBConstants.CONFIG_CONTESTS_ONOFF,
+        ["tooltip"] = FBConstants.CONFIG_CONTESTS_INFO,
+        ["v"] = 1,
+        ["default"] = false
+    },
+    ["STVTimer"] = {
+        ["text"] = FBConstants.CONFIG_STVTIMER_ONOFF,
+        ["tooltip"] = FBConstants.CONFIG_STVTIMER_INFO,
+        ["v"] = 1,
+        ["default"] = false,
+        ["parents"] = { ["ContestSupport"] = "d" }
+    },
+    ["STVPoolsOnly"] = {
+        ["text"] = FBConstants.CONFIG_STVPOOLSONLY_ONOFF,
+        ["tooltip"] = FBConstants.CONFIG_STVPOOLSONLY_INFO,
+        ["v"] = 1,
+        ["default"] = false,
+        ["primary"] = "ContestSupport",
+        ["parents"] = { ["ContestSupport"] = "d", ["EasyCast"] = "d" }
     },
     ["FlyingCast"] = {
         ["text"] = FBConstants.CONFIG_FLYINGCAST_ONOFF,

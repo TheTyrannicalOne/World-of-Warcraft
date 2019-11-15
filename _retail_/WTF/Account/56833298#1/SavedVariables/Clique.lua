@@ -4,24 +4,24 @@ CliqueDB3 = {
 	["char"] = {
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
-			["spec2_profileKey"] = "Shanyt - Argent Dawn",
-			["downclick"] = false,
-			["specswap"] = false,
 			["fastooc"] = false,
-			["alerthidden"] = true,
-			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 			["blacklist"] = {
 				["PetFrame"] = true,
 			},
+			["spec3_profileKey"] = "Shanyt - Argent Dawn",
+			["downclick"] = false,
+			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["specswap"] = false,
+			["alerthidden"] = true,
 		},
 		["Tynkster - Dalaran"] = {
 			["spec1_profileKey"] = "Tynkster - Dalaran",
-			["fastooc"] = false,
-			["spec2_profileKey"] = "Tynkster - Dalaran",
-			["downclick"] = false,
 			["specswap"] = false,
+			["downclick"] = false,
+			["fastooc"] = false,
 			["spec3_profileKey"] = "Tynkster - Dalaran",
 			["alerthidden"] = true,
+			["spec2_profileKey"] = "Tynkster - Dalaran",
 		},
 	},
 	["profileKeys"] = {
@@ -34,8 +34,8 @@ CliqueDB3 = {
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
@@ -48,7 +48,7 @@ CliqueDB3 = {
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -223,7 +223,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Sinh - Dalaran"] = {
+		["Shathiel - Darkspear"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -242,7 +242,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Gangus - Runetotem"] = {
+		["Sinh - Dalaran"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -489,7 +489,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Shathiel - Darkspear"] = {
+		["Gangus - Runetotem"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",

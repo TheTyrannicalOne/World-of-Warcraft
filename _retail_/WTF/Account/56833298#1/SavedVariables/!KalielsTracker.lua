@@ -34,13 +34,16 @@ KalielsTrackerDB = {
 		["Malivant - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Beeronimo - Dalaran"] = {
-			["collapsed"] = true,
-		},
 		["Fantastiburo - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
 		["Brewnheimer - Darkspear"] = {
+			["collapsed"] = true,
+		},
+		["Beeronimo - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Tynkster - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Tyriinid - Dalaran"] = {

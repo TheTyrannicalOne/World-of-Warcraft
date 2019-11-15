@@ -1,4 +1,165 @@
-8/19 22:02:13.006  Loading add-on ElvUI_SLE
-8/19 22:02:13.006  ** Loading table of contents Interface\AddOns\ElvUI_SLE\ElvUI_SLE.toc
-8/19 22:02:13.006  ++ Loading file Interface\AddOns\ElvUI_SLE\core\load_core.xml
-8/19 22:02:13.006  (null)
+11/13 18:28:44.744  Loading add-on FishingBuddy
+11/13 18:28:44.744  ** Loading table of contents Interface\AddOns\FishingBuddy\FishingBuddy.toc
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\Libs\Libs.xml
+11/13 18:28:44.744  Interface\AddOns\FishingBuddy\Libs\LibFishing-1.0\LibFishing-1.0.lua:2576: ')' expected near '.'
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingBuddy.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingBuddyFrame.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingScrollMenu.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingLocationsFrame.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  Couldn't find frame parent: FishingBuddyFrame
+11/13 18:28:44.744  FishingLocationExpandButtonFrame: Couldn't find relative frame: FishingBuddyFrameInset
+11/13 18:28:44.744  FishingLocsScrollFrame: Couldn't find relative frame: FishingBuddyFrameInset
+11/13 18:28:44.744  FishingLocations1: Couldn't find relative frame: FishingBuddyFrameInset
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingWatcher.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingExtravaganza.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingRaid.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingPlans\Plans.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingPlans\Bobbers.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingPlans\Pets.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FishingBuddy\FishingFluff.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  Loading add-on FB_TrackingFrame
+11/13 18:28:44.744  ** Loading table of contents Interface\AddOns\FB_TrackingFrame\FB_TrackingFrame.toc
+11/13 18:28:44.744  ++ Loading file Interface\AddOns\FB_TrackingFrame\FishingTrackingFrame.xml
+11/13 18:28:44.744  (null)
+11/13 18:28:44.744  Couldn't find frame parent: FishingBuddyFrame
+11/13 18:28:44.744  FishingTrackingScrollFrame: Couldn't find relative frame: FishingBuddyFrameInset
+11/13 18:28:44.744  Frame FishingTracking1Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking1Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking1Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking1Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking1Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking1Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking1Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking2Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking2Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking2Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking2Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking2Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking2Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking2Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking3Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking3Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking3Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking3Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking3Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking3Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking3Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking4Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking4Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking4Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking4Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking4Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking4Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking4Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking5Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking5Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking5Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking5Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking5Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking5Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking5Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking6Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking6Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking6Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking6Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking6Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking6Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking6Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking7Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking7Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking7Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking7Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking7Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking7Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking7Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking8Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking8Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking8Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking8Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking8Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking8Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking8Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking9Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking9Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking9Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking9Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking9Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking9Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking9Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking10Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking10Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking10Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking10Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking10Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking10Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking10Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking11Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking11Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking11Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking11Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking11Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking11Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking11Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking12Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking12Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking12Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking12Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking12Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking12Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking12Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking13Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking13Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking13Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking13Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking13Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking13Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking13Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking14Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking14Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking14Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking14Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking14Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking14Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking14Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking15Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking15Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking15Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking15Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking15Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking15Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking15Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking16Hourly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking16Hourly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking16Hourly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking16Weekly: Unknown function FishingTrackingCheck_OnClick in element OnClick
+11/13 18:28:44.744  Frame FishingTracking16Weekly: Unknown function FishingTrackingCheck_OnEnter in element OnEnter
+11/13 18:28:44.744  Frame FishingTracking16Weekly: Unknown function FishingTrackingCheck_OnLeave in element OnLeave
+11/13 18:28:44.744  Frame FishingTracking16Swatch: Unknown function FishingTrackingSwatch_OnClick in element OnClick

@@ -2,181 +2,27 @@
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		" havent been playing to much as of late just trying to not let my ah expire out of the mailbox this is the cash cow of my chars ", -- [1]
-		"/train", -- [2]
-		"/cw Enetity-ArgentDawn and thanks good luck to you as well", -- [3]
-		"there is only one side sir and it is the horde", -- [4]
-		"/cw Enetity-ArgentDawn gold good luck im out for the night", -- [5]
-		"/cw Enetity-ArgentDawn i was for a while but i havent spent much time in panda land gatehring as of late so many other things to do", -- [6]
-		"/sit", -- [7]
-		"/DANCE", -- [8]
-		"/cw Enetity-ArgentDawn boots not the mount i been trying to get forever lol", -- [9]
-		"/p cool thanks for the help btw", -- [10]
-		"/cw Enetity-ArgentDawn about 50 now", -- [11]
-		"/wave", -- [12]
-		"/chicken", -- [13]
+		"/cw Enetity-ArgentDawn i was for a while but i havent spent much time in panda land gatehring as of late so many other things to do", -- [2]
+		"/cw Enetity-ArgentDawn about 50 now", -- [3]
+		"/p cool thanks for the help btw", -- [4]
+		"/train", -- [5]
+		"/cw Enetity-ArgentDawn rng is kind sometimes and cruel to me when i actually want something", -- [6]
+		"/p i need one more then its toy time", -- [7]
+		"/p if im needed i can help", -- [8]
+		"/cw Enetity-ArgentDawn and thanks good luck to you as well", -- [9]
+		"/flex", -- [10]
+		"/wave", -- [11]
+		"/cw Enetity-ArgentDawn boots not the mount i been trying to get forever lol", -- [12]
+		"/DANCE", -- [13]
 		"/cw Enetity-ArgentDawn indeed", -- [14]
-		"/flex", -- [15]
-		"/p if im needed i can help", -- [16]
-		"/cw Enetity-ArgentDawn rng is kind sometimes and cruel to me when i actually want something", -- [17]
+		"there is only one side sir and it is the horde", -- [15]
+		"/chicken", -- [16]
+		"/cw Enetity-ArgentDawn gold good luck im out for the night", -- [17]
 		"havent been playing to much as of late just trying to not let my ah expire out of the mailbox this is the cash cow of my chars", -- [18]
-		"/p enur your up", -- [19]
-		"/p i need one more then its toy time", -- [20]
+		"/sit", -- [19]
+		"/p enur your up", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"dont stack", -- [1]
-			"Fallingclap-Azralon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fallingclap-Azralon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			93, -- [11]
-			"Player-3209-0A20589C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cFallingclap-Azralon|r",
-			[51] = 1573093491,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"should keep orbs in one spot", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			95, -- [11]
-			"Player-1171-07DF2650", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573093495,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [2]
-		{
-			"or wipe", -- [1]
-			"Fallingclap-Azralon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fallingclap-Azralon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			96, -- [11]
-			"Player-3209-0A20589C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cFallingclap-Azralon|r",
-			[51] = 1573093496,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [3]
-		{
-			"igl", -- [1]
-			"Yasuø-Azralon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Yasuø-Azralon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			97, -- [11]
-			"Player-3209-0A3D42D6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cYasuø-Azralon|r",
-			[51] = 1573093496,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [4]
-		{
-			"stack the orbs", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			98, -- [11]
-			"Player-1171-07DF2650", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573093497,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [5]
-		{
-			"then move", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			99, -- [11]
-			"Player-1171-07DF2650", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573093499,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [6]
-		{
-			"yep", -- [1]
-			"Fallingclap-Azralon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fallingclap-Azralon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			100, -- [11]
-			"Player-3209-0A20589C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cFallingclap-Azralon|r",
-			[51] = 1573093502,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [7]
 		{
 			"Just curious. Does darkmoon faire rep. buff stack with anniversary buff?", -- [1]
 			"Jharl-ArgentDawn", -- [2]
@@ -198,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Jharl|r",
 			[51] = 1573093509,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [8]
+		}, -- [1]
 		{
 			"stack left", -- [1]
 			"Bâckstâbâth-Area52", -- [2]
@@ -220,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bâckstâbâth-Area52|r",
 			[51] = 1573093516,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [9]
+		}, -- [2]
 		{
 			"stack", -- [1]
 			"Fallingclap-Azralon", -- [2]
@@ -242,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cFallingclap-Azralon|r",
 			[51] = 1573093524,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [10]
+		}, -- [3]
 		{
 			"...", -- [1]
 			"Bâckstâbâth-Area52", -- [2]
@@ -264,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bâckstâbâth-Area52|r",
 			[51] = 1573093540,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [11]
+		}, -- [4]
 		{
 			".....", -- [1]
 			"Fallingclap-Azralon", -- [2]
@@ -286,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cFallingclap-Azralon|r",
 			[51] = 1573093545,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [12]
+		}, -- [5]
 		{
 			"everyone needs to stack left then run right", -- [1]
 			"Bâckstâbâth-Area52", -- [2]
@@ -308,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bâckstâbâth-Area52|r",
 			[51] = 1573093551,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
+		}, -- [6]
 		{
 			"plz stack the orbs left side, then run right", -- [1]
 			"Krispyelder-WyrmrestAccord", -- [2]
@@ -330,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
 			[51] = 1573093560,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
+		}, -- [7]
 		{
 			"lust", -- [1]
 			"Mëtallikä-Azralon", -- [2]
@@ -352,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Mëtallikä-Azralon|r",
 			[51] = 1573093766,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [15]
+		}, -- [8]
 		{
 			"stack left run right", -- [1]
 			"Wrinkle-WyrmrestAccord", -- [2]
@@ -374,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Wrinkle-WyrmrestAccord|r",
 			[51] = 1573093837,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [16]
+		}, -- [9]
 		{
 			"stack orbs left, then run right", -- [1]
 			"Krispyelder-WyrmrestAccord", -- [2]
@@ -396,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
 			[51] = 1573093839,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [17]
+		}, -- [10]
 		{
 			"SOIFHDJSDFOIJSFDIJS", -- [1]
 			"Yasuø-Azralon", -- [2]
@@ -418,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cYasuø-Azralon|r",
 			[51] = 1573093845,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [18]
+		}, -- [11]
 		{
 			"put a marker on me ", -- [1]
 			"Bâckstâbâth-Area52", -- [2]
@@ -440,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bâckstâbâth-Area52|r",
 			[51] = 1573093849,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [19]
+		}, -- [12]
 		{
 			"evetone stand on me", -- [1]
 			"Bâckstâbâth-Area52", -- [2]
@@ -462,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bâckstâbâth-Area52|r",
 			[51] = 1573093855,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [20]
+		}, -- [13]
 		{
 			"STACK ON ME RETARDS", -- [1]
 			"Bâckstâbâth-Area52", -- [2]
@@ -484,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bâckstâbâth-Area52|r",
 			[51] = 1573093875,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [21]
+		}, -- [14]
 		{
 			"I believe so, but not sure", -- [1]
 			"Famin-ArgentDawn", -- [2]
@@ -506,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecFamin|r",
 			[51] = 1573093884,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [22]
+		}, -- [15]
 		{
 			"report", -- [1]
 			"Kínddara-Ragnaros", -- [2]
@@ -528,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Kínddara-Ragnaros|r",
 			[51] = 1573093887,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [23]
+		}, -- [16]
 		{
 			"xd", -- [1]
 			"Kínddara-Ragnaros", -- [2]
@@ -550,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Kínddara-Ragnaros|r",
 			[51] = 1573093887,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [24]
+		}, -- [17]
 		{
 			"lol", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -572,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573093894,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [25]
+		}, -- [18]
 		{
 			"ok, about to find out =)", -- [1]
 			"Jharl-ArgentDawn", -- [2]
@@ -594,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Jharl|r",
 			[51] = 1573093908,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [26]
+		}, -- [19]
 		{
 			"Ragnaros!", -- [1]
 			"Kínddara-Ragnaros", -- [2]
@@ -616,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Kínddara-Ragnaros|r",
 			[51] = 1573093915,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [27]
+		}, -- [20]
 		{
 			"ruff", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -638,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573093915,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [28]
+		}, -- [21]
 		{
 			"so when the orbs drop, they do damgage. you can't stand on them LOL", -- [1]
 			"Krispyelder-WyrmrestAccord", -- [2]
@@ -660,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
 			[51] = 1573093918,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [29]
+		}, -- [22]
 		{
 			"Nefarian!", -- [1]
 			"Dracaarys-Ragnaros", -- [2]
@@ -682,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Dracaarys-Ragnaros|r",
 			[51] = 1573093923,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [30]
+		}, -- [23]
 		{
 			"Cho'gall!", -- [1]
 			"Nounource-Runetotem", -- [2]
@@ -704,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Nounource-Runetotem|r",
 			[51] = 1573093929,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [31]
+		}, -- [24]
 		{
 			"COMO SE HACE RAGNAROS", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -726,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094080,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
+		}, -- [25]
 		{
 			"la concha de tu madre", -- [1]
 			"Yasuø-Azralon", -- [2]
@@ -748,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cYasuø-Azralon|r",
 			[51] = 1573094091,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [33]
+		}, -- [26]
 		{
 			"XD", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -770,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094097,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [34]
+		}, -- [27]
 		{
 			"LUST", -- [1]
 			"Fallingclap-Azralon", -- [2]
@@ -792,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cFallingclap-Azralon|r",
 			[51] = 1573094115,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [35]
+		}, -- [28]
 		{
 			"MAGE", -- [1]
 			"Fallingclap-Azralon", -- [2]
@@ -814,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cFallingclap-Azralon|r",
 			[51] = 1573094116,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
+		}, -- [29]
 		{
 			"FUCK", -- [1]
 			"Fallingclap-Azralon", -- [2]
@@ -836,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cFallingclap-Azralon|r",
 			[51] = 1573094117,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
+		}, -- [30]
 		{
 			"ok", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -858,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573094163,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
+		}, -- [31]
 		{
 			"stack left run right", -- [1]
 			"Wrinkle-WyrmrestAccord", -- [2]
@@ -880,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Wrinkle-WyrmrestAccord|r",
 			[51] = 1573094168,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [39]
+		}, -- [32]
 		{
 			"como se haceeeeee", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -902,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094169,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [40]
+		}, -- [33]
 		{
 			"how do we not fuck this up", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -924,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573094169,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [41]
+		}, -- [34]
 		{
 			"stack on left", -- [1]
 			"Ojitos-Ragnaros", -- [2]
@@ -946,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Ojitos-Ragnaros|r",
 			[51] = 1573094175,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
+		}, -- [35]
 		{
 			"but not on top of each other", -- [1]
 			"Ojitos-Ragnaros", -- [2]
@@ -968,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Ojitos-Ragnaros|r",
 			[51] = 1573094180,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [43]
+		}, -- [36]
 		{
 			"we stacked", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -990,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573094182,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [44]
+		}, -- [37]
 		{
 			"don't stay on the balls when they arrive", -- [1]
 			"Krispyelder-WyrmrestAccord", -- [2]
@@ -1012,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
 			[51] = 1573094185,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [45]
+		}, -- [38]
 		{
 			"and got nuked", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -1034,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573094186,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [46]
+		}, -- [39]
 		{
 			"gotta run", -- [1]
 			"Krispyelder-WyrmrestAccord", -- [2]
@@ -1056,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
 			[51] = 1573094188,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [47]
+		}, -- [40]
 		{
 			"where", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1078,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094189,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [48]
+		}, -- [41]
 		{
 			"then run away with fire balls", -- [1]
 			"Wrinkle-WyrmrestAccord", -- [2]
@@ -1100,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Wrinkle-WyrmrestAccord|r",
 			[51] = 1573094191,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [49]
+		}, -- [42]
 		{
 			"right side", -- [1]
 			"Krispyelder-WyrmrestAccord", -- [2]
@@ -1122,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
 			[51] = 1573094192,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
+		}, -- [43]
 		{
 			"where", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1144,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094199,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [51]
+		}, -- [44]
 		{
 			"stay stacked for orbs", -- [1]
 			"Krispyelder-WyrmrestAccord", -- [2]
@@ -1166,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
 			[51] = 1573094267,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [52]
+		}, -- [45]
 		{
 			"jesus", -- [1]
 			"Mëtallikä-Azralon", -- [2]
@@ -1188,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Mëtallikä-Azralon|r",
 			[51] = 1573094300,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [53]
+		}, -- [46]
 		{
 			"....", -- [1]
 			"Mëtallikä-Azralon", -- [2]
@@ -1210,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Mëtallikä-Azralon|r",
 			[51] = 1573094301,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [54]
+		}, -- [47]
 		{
 			"went better", -- [1]
 			"Krispyelder-WyrmrestAccord", -- [2]
@@ -1232,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
 			[51] = 1573094309,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [55]
+		}, -- [48]
 		{
 			"Ragnaros!", -- [1]
 			"Kínddara-Ragnaros", -- [2]
@@ -1254,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Kínddara-Ragnaros|r",
 			[51] = 1573094334,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
+		}, -- [49]
 		{
 			"this hurts\\", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -1276,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573094351,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [57]
+		}, -- [50]
 		{
 			"fisrt ragnaros", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1298,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094355,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [58]
+		}, -- [51]
 		{
 			"whats happen", -- [1]
 			"Khaliya-Galakrond", -- [2]
@@ -1320,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Khaliya-Galakrond|r",
 			[51] = 1573094361,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [59]
+		}, -- [52]
 		{
 			"everyone died", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -1342,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573094370,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [60]
+		}, -- [53]
 		{
 			"looks like everyones going away lmao", -- [1]
 			"Khaliya-Galakrond", -- [2]
@@ -1364,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Khaliya-Galakrond|r",
 			[51] = 1573094384,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [61]
+		}, -- [54]
 		{
 			"USE SILENCES GUYS", -- [1]
 			"Fenystrasz-Drakkari", -- [2]
@@ -1386,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
 			[51] = 1573094580,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [62]
+		}, -- [55]
 		{
 			"does anyon know how to not fuck this up", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -1408,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573094624,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
+		}, -- [56]
 		{
 			"¿?", -- [1]
 			"Fenystrasz-Drakkari", -- [2]
@@ -1430,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
 			[51] = 1573094625,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [64]
+		}, -- [57]
 		{
 			"kill his sons for one lmao thats all i know proper", -- [1]
 			"Khaliya-Galakrond", -- [2]
@@ -1452,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Khaliya-Galakrond|r",
 			[51] = 1573094659,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
+		}, -- [58]
 		{
 			"all heals dead ajja", -- [1]
 			"Dracaarys-Ragnaros", -- [2]
@@ -1474,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Dracaarys-Ragnaros|r",
 			[51] = 1573094682,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [66]
+		}, -- [59]
 		{
 			"i revived one but i guess he got smacked lmao", -- [1]
 			"Khaliya-Galakrond", -- [2]
@@ -1496,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Khaliya-Galakrond|r",
 			[51] = 1573094705,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [67]
+		}, -- [60]
 		{
 			"FUCKING RETARD", -- [1]
 			"Lynuzz-Quel'Thalas", -- [2]
@@ -1518,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
 			[51] = 1573094757,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [68]
+		}, -- [61]
 		{
 			"RETARDS", -- [1]
 			"Lynuzz-Quel'Thalas", -- [2]
@@ -1540,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
 			[51] = 1573094760,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [69]
+		}, -- [62]
 		{
 			"lol", -- [1]
 			"Healzandhugs-Barthilas", -- [2]
@@ -1562,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
 			[51] = 1573094766,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [70]
+		}, -- [63]
 		{
 			"report toxic", -- [1]
 			"Atracasöl-Ragnaros", -- [2]
@@ -1584,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
 			[51] = 1573094768,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [71]
+		}, -- [64]
 		{
 			"first stack for the orbs", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1606,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094777,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [72]
+		}, -- [65]
 		{
 			"vete a la verga tu atracasol", -- [1]
 			"Lynuzz-Quel'Thalas", -- [2]
@@ -1628,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
 			[51] = 1573094778,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [73]
+		}, -- [66]
 		{
 			"vales verga", -- [1]
 			"Lynuzz-Quel'Thalas", -- [2]
@@ -1650,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
 			[51] = 1573094782,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [74]
+		}, -- [67]
 		{
 			"ok donde vives ?", -- [1]
 			"Atracasöl-Ragnaros", -- [2]
@@ -1672,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
 			[51] = 1573094786,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [75]
+		}, -- [68]
 		{
 			"en tu corazon y en el de tu puta madre", -- [1]
 			"Lynuzz-Quel'Thalas", -- [2]
@@ -1694,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
 			[51] = 1573094794,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [76]
+		}, -- [69]
 		{
 			"XD", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1716,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094796,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [77]
+		}, -- [70]
 		{
 			"tranquilos mis amores :V", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1738,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094806,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [78]
+		}, -- [71]
 		{
 			"pta tons tengo mrd en mi corazon", -- [1]
 			"Atracasöl-Ragnaros", -- [2]
@@ -1760,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
 			[51] = 1573094813,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [79]
+		}, -- [72]
 		{
 			"XD", -- [1]
 			"Atracasöl-Ragnaros", -- [2]
@@ -1782,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
 			[51] = 1573094815,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [80]
+		}, -- [73]
 		{
 			"ragnaros", -- [1]
 			"Atracasöl-Ragnaros", -- [2]
@@ -1804,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
 			[51] = 1573094834,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [81]
+		}, -- [74]
 		{
 			"its easy to lose your cool", -- [1]
 			"Grokas-WyrmrestAccord", -- [2]
@@ -1826,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
 			[51] = 1573094856,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [82]
+		}, -- [75]
 		{
 			"when youre on the rag", -- [1]
 			"Grokas-WyrmrestAccord", -- [2]
@@ -1848,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
 			[51] = 1573094861,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [83]
+		}, -- [76]
 		{
 			"so", -- [1]
 			"Fenystrasz-Drakkari", -- [2]
@@ -1870,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
 			[51] = 1573094964,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [84]
+		}, -- [77]
 		{
 			"anyone knows nef?", -- [1]
 			"Fenystrasz-Drakkari", -- [2]
@@ -1892,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
 			[51] = 1573094969,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [85]
+		}, -- [78]
 		{
 			"most powerfull is ragnaros", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1914,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573094985,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [86]
+		}, -- [79]
 		{
 			"cc", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1936,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095021,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [87]
+		}, -- [80]
 		{
 			"stakc", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1958,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095059,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [88]
+		}, -- [81]
 		{
 			"left", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -1980,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095062,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [89]
+		}, -- [82]
 		{
 			"when orbs appear go to rigth", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2002,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095071,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [90]
+		}, -- [83]
 		{
 			"maldita sea maldito ingles", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2024,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095080,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [91]
+		}, -- [84]
 		{
 			"XD", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2046,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095081,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [92]
+		}, -- [85]
 		{
 			"stack", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2068,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095094,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [93]
+		}, -- [86]
 		{
 			"stack in rigth", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2090,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095138,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [94]
+		}, -- [87]
 		{
 			" why doa ll they heals die", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -2112,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573095146,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [95]
+		}, -- [88]
 		{
 			"staccck", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2134,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095161,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [96]
+		}, -- [89]
 		{
 			"still dont understand the fight", -- [1]
 			"Grokas-WyrmrestAccord", -- [2]
@@ -2156,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
 			[51] = 1573095233,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [97]
+		}, -- [90]
 		{
 			"this hurts", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -2178,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573095264,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [98]
+		}, -- [91]
 		{
 			"I'm not sure stack is the right word to use...", -- [1]
 			"Healzandhugs-Barthilas", -- [2]
@@ -2200,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
 			[51] = 1573095267,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [99]
+		}, -- [92]
 		{
 			"spread loosely on left side then run to the right side when the orbs spawn? idk, I never did this guy.", -- [1]
 			"Healzandhugs-Barthilas", -- [2]
@@ -2222,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
 			[51] = 1573095314,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [100]
+		}, -- [93]
 		{
 			"sorry", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2244,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095319,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [101]
+		}, -- [94]
 		{
 			"Nefarian!", -- [1]
 			"Fenystrasz-Drakkari", -- [2]
@@ -2266,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
 			[51] = 1573095321,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [95]
 		{
 			"rag", -- [1]
 			"Atracasöl-Ragnaros", -- [2]
@@ -2288,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
 			[51] = 1573095324,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [103]
+		}, -- [96]
 		{
 			"rag", -- [1]
 			"Atracasöl-Ragnaros", -- [2]
@@ -2310,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
 			[51] = 1573095326,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [97]
 		{
 			"Ragnaros!", -- [1]
 			"Healzandhugs-Barthilas", -- [2]
@@ -2332,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
 			[51] = 1573095329,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
+		}, -- [98]
 		{
 			"Cho'gall!", -- [1]
 			"Veoh-Proudmoore", -- [2]
@@ -2354,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Veoh-Proudmoore|r",
 			[51] = 1573095334,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [106]
+		}, -- [99]
 		{
 			"never fought him either", -- [1]
 			"Grokas-WyrmrestAccord", -- [2]
@@ -2376,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
 			[51] = 1573095342,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [107]
+		}, -- [100]
 		{
 			"fuuuuuu", -- [1]
 			"Healzandhugs-Barthilas", -- [2]
@@ -2398,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
 			[51] = 1573095346,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [108]
+		}, -- [101]
 		{
 			"stop chogall", -- [1]
 			"Fenystrasz-Drakkari", -- [2]
@@ -2420,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
 			[51] = 1573095346,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [109]
+		}, -- [102]
 		{
 			"goddamn chogall every time XD", -- [1]
 			"Healzandhugs-Barthilas", -- [2]
@@ -2442,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
 			[51] = 1573095358,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [110]
+		}, -- [103]
 		{
 			"focus nef?", -- [1]
 			"Fenystrasz-Drakkari", -- [2]
@@ -2464,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
 			[51] = 1573095514,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [111]
+		}, -- [104]
 		{
 			"kill add", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2486,7 +2332,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095521,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [112]
+		}, -- [105]
 		{
 			"omg", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2508,7 +2354,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095575,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [113]
+		}, -- [106]
 		{
 			"ok... so ragnaros...time to try this again", -- [1]
 			"Grokas-WyrmrestAccord", -- [2]
@@ -2530,7 +2376,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
 			[51] = 1573095588,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [114]
+		}, -- [107]
 		{
 			"somebody write ", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2552,7 +2398,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095588,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [115]
+		}, -- [108]
 		{
 			"when the big bally come then what?", -- [1]
 			"Grokas-WyrmrestAccord", -- [2]
@@ -2574,7 +2420,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
 			[51] = 1573095596,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [116]
+		}, -- [109]
 		{
 			"wut", -- [1]
 			"Cotel-Ragnaros", -- [2]
@@ -2596,7 +2442,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Cotel-Ragnaros|r",
 			[51] = 1573095705,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [117]
+		}, -- [110]
 		{
 			"gud", -- [1]
 			"Healzandhugs-Barthilas", -- [2]
@@ -2618,7 +2464,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
 			[51] = 1573095748,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [118]
+		}, -- [111]
 		{
 			"thankg od", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -2640,7 +2486,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573095750,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [119]
+		}, -- [112]
 		{
 			"uffff", -- [1]
 			"Chïö-Ragnaros", -- [2]
@@ -2662,7 +2508,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
 			[51] = 1573095750,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [120]
+		}, -- [113]
 		{
 			"nice jobb all", -- [1]
 			"Yuki-Barthilas", -- [2]
@@ -2684,7 +2530,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeYuki-Barthilas|r",
 			[51] = 1573095761,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [121]
+		}, -- [114]
 		{
 			"no loot", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -2706,7 +2552,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573095763,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [122]
+		}, -- [115]
 		{
 			"ruff", -- [1]
 			"Ascindis-KirinTor", -- [2]
@@ -2728,7 +2574,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ascindis-KirinTor|r",
 			[51] = 1573095765,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [123]
+		}, -- [116]
 		{
 			"May I please have |cffa335ee|Hitem:171637::::::::120:71:512::1:6355:120:::|h[Shadow of Dread]|h|r if you don't need it?", -- [1]
 			"Chovall-Azuremyst", -- [2]
@@ -2750,7 +2596,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Chovall-Azuremyst|r",
 			[51] = 1573095768,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [124]
+		}, -- [117]
 		{
 			"gz", -- [1]
 			"Uller-Illidan", -- [2]
@@ -2772,7 +2618,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Uller-Illidan|r",
 			[51] = 1573095777,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [125]
+		}, -- [118]
 		{
 			"lots better with out the glitching like lastnight", -- [1]
 			"Rottentreats-ArgentDawn", -- [2]
@@ -2794,7 +2640,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeRottentreats|r",
 			[51] = 1573095779,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [126]
+		}, -- [119]
 		{
 			"nothing too", -- [1]
 			"Yuki-Barthilas", -- [2]
@@ -2816,6 +2662,160 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeYuki-Barthilas|r",
 			[51] = 1573095782,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [120]
+		{
+			"Hey folks =)", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			618, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Jharl|r",
+			[51] = 1573688520,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [121]
+		{
+			"Feeling better today Fart?", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			768, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Jharl|r",
+			[51] = 1573688621,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [122]
+		{
+			"i can sit up now", -- [1]
+			"Memyselfni-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			819, -- [11]
+			"Player-75-048AA7F3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Memyselfni|r",
+			[51] = 1573688662,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [123]
+		{
+			"A start I geuess. Hope you bounce back faster", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			820, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Jharl|r",
+			[51] = 1573688685,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [124]
+		{
+			"ya ear infections are no fun", -- [1]
+			"Memyselfni-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			953, -- [11]
+			"Player-75-048AA7F3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Memyselfni|r",
+			[51] = 1573688782,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [125]
+		{
+			"Oh ick. You riding the antibiotics train?", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1005, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Jharl|r",
+			[51] = 1573688817,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"yep", -- [1]
+			"Memyselfni-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1006, -- [11]
+			"Player-75-048AA7F3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Memyselfni|r",
+			[51] = 1573688832,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [127]
 	},
 }

@@ -16,6 +16,8 @@ MasterPlanAG = {
 			["class"] = "MAGE",
 		},
 	},
+	["IgnoreRewards"] = {
+	},
 	["Illidan"] = {
 		["Zerkinz"] = {
 			["class"] = "DRUID",
@@ -164,6 +166,10 @@ MasterPlanAG = {
 			["class"] = "MAGE",
 			["faction"] = "Alliance",
 		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
 		["Brewnheimer"] = {
 			["faction"] = "Alliance",
 			["class"] = "SHAMAN",
@@ -171,10 +177,6 @@ MasterPlanAG = {
 		["Dialdaas"] = {
 			["faction"] = "Alliance",
 			["class"] = "PALADIN",
-		},
-		["Serbitechna"] = {
-			["class"] = "HUNTER",
-			["faction"] = "Alliance",
 		},
 	},
 	["Sargeras"] = {

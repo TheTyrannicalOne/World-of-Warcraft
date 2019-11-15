@@ -34,13 +34,16 @@ KalielsTrackerDB = {
 		["Malivant - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Tyriinid - Dalaran"] = {
-			["collapsed"] = true,
-		},
 		["Narisaric - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Sinh - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Tyriinid - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Tynkster - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Beeronimo - Dalaran"] = {
