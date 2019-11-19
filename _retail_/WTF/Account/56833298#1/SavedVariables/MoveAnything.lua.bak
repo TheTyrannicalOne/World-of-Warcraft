@@ -38,8 +38,25 @@ MADB = {
 						"TOPLEFT", -- [1]
 						"VehicleSeatMover", -- [2]
 						"TOPLEFT", -- [3]
-						158.9999389648438, -- [4]
-						136.9998779296875, -- [5]
+						-6.103515625e-05, -- [4]
+						0.000885009765625, -- [5]
+					},
+				},
+				["TalkingHeadFrame"] = {
+					["orgPos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0, -- [4]
+						96, -- [5]
+					},
+					["name"] = "TalkingHeadFrame",
+					["pos"] = {
+						"BOTTOM", -- [1]
+						"TalkingHeadFrameMover", -- [2]
+						"BOTTOM", -- [3]
+						0.000152587890625, -- [4]
+						3.0517578125e-05, -- [5]
 					},
 				},
 				["GuildBankItemTooltipMover"] = {

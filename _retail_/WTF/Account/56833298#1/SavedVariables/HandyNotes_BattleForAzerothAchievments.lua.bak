@@ -7,13 +7,13 @@ HandyNotes_BattleForAzerothAchievmentsDB = {
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
 		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
@@ -26,7 +26,7 @@ HandyNotes_BattleForAzerothAchievmentsDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -42,7 +42,7 @@ HandyNotes_BattleForAzerothAchievmentsDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Gangus - Runetotem"] = {
+		["Shathiel - Darkspear"] = {
 		},
 		["Brewnheimer - Darkspear"] = {
 		},
@@ -54,7 +54,7 @@ HandyNotes_BattleForAzerothAchievmentsDB = {
 		},
 		["Migimong - Runetotem"] = {
 		},
-		["Sinh - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
@@ -80,7 +80,7 @@ HandyNotes_BattleForAzerothAchievmentsDB = {
 		},
 		["Dialdaas - Darkspear"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Sinh - Dalaran"] = {
 		},
 		["Narisaric - Dalaran"] = {
 		},

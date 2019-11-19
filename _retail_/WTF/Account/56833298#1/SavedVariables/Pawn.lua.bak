@@ -310,10 +310,10 @@ PawnCommon = {
 				["Shanyt-Argent Dawn"] = {
 					["Visible"] = true,
 				},
-				["Thorinbane-Dalaran"] = {
+				["Goramor-Runetotem"] = {
 					["Visible"] = true,
 				},
-				["Goramor-Runetotem"] = {
+				["Thorinbane-Dalaran"] = {
 					["Visible"] = true,
 				},
 			},

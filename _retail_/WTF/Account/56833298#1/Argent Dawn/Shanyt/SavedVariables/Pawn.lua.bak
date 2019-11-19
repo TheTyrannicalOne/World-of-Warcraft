@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0311,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 166696,
@@ -9,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 451,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1588:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 455,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1592:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 166551,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:117378::::::::120:71:512:11:1:6315:120:::|h[Direbrew's Bloodied Shanker]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

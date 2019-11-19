@@ -8,20 +8,20 @@ CliqueDB3 = {
 			["blacklist"] = {
 				["PetFrame"] = true,
 			},
-			["spec3_profileKey"] = "Shanyt - Argent Dawn",
-			["downclick"] = false,
-			["spec2_profileKey"] = "Shanyt - Argent Dawn",
 			["specswap"] = false,
+			["downclick"] = false,
+			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 			["alerthidden"] = true,
+			["spec2_profileKey"] = "Shanyt - Argent Dawn",
 		},
 		["Tynkster - Dalaran"] = {
 			["spec1_profileKey"] = "Tynkster - Dalaran",
-			["specswap"] = false,
+			["spec3_profileKey"] = "Tynkster - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Tynkster - Dalaran",
 			["alerthidden"] = true,
 			["spec2_profileKey"] = "Tynkster - Dalaran",
+			["specswap"] = false,
 		},
 	},
 	["profileKeys"] = {
@@ -34,8 +34,8 @@ CliqueDB3 = {
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
@@ -48,7 +48,7 @@ CliqueDB3 = {
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -223,7 +223,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Shathiel - Darkspear"] = {
+		["Gangus - Runetotem"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -242,7 +242,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Sinh - Dalaran"] = {
+		["Shathiel - Darkspear"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -489,7 +489,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Gangus - Runetotem"] = {
+		["Sinh - Dalaran"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",

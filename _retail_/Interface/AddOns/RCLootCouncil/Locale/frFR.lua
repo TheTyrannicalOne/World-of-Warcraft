@@ -659,7 +659,7 @@ L["Voters"] = "Votants"
 L["Votes"] = true
 L["Voting options"] = "Paramètres de vote"
 L["Waiting for response"] = "En attente d'une réponse"
-L["whisper_guide"] = "[RCLootCouncil] : numéro réponse [objet1] [objet2]. Numéro : numéro de l'objet que vous désirez. Réponse : un des mots-clef prédéfinis. Insérez le lien de(s) l'objet(s) en question (numéro) dans la fenêtre de discussion en ajoutant le mot-clef adéquat. Par exemple : en tapant '1 cupidité [objet1]', vous auriez choisi cupidité pour l'objet numéro 1."
+L["whisper_guide"] = "[RCLootCouncil] : numéro réponse [objet1] [objet2]. Insérez le lien de votre(vos) objet(s) que l'item (numéro) remplacerait. (réponse) étant un mot clef de la liste ci-dessous. Par exemple: '1 cupidité [objet1]'"
 L["whisper_guide2"] = "[RCLootCouncil] : vous recevrez un message de confirmation si vous avez été ajouté à la session."
 L["whisper_help"] = [=[Les membres du raid peuvent utiliser le système de chuchotement si un joueur n'a pas installé cet add-on.
 En chuchotant 'rchelp' au maître du butin, ils verront s'afficher un guide en plus d'une liste de mots-clef, qui peuvent être modifiés dans l'onglet 'Boutons et réponses'.

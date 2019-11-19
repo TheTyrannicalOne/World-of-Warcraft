@@ -326,6 +326,41 @@ AzeritePowerWeightsDB = {
 				["professionPowers"] = false,
 				["onlyOwnClassCustoms"] = false,
 			},
+			["Brewnheimer"] = {
+				["specScales"] = {
+					[263] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/7/2/Default",
+					},
+					[264] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/7/3/Default",
+					},
+					[262] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/7/1/Default",
+					},
+				},
+				["addPrimaryStatToScore"] = false,
+				["showTooltipLegend"] = true,
+				["zonePowers"] = true,
+				["pvpPowers"] = false,
+				["addILvlToScore"] = false,
+				["relativeScore"] = false,
+				["rolePowersNoOffRolePowers"] = false,
+				["importingCanUpdate"] = true,
+				["tooltipScales"] = {
+				},
+				["rolePowers"] = true,
+				["defensivePowers"] = true,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassDefaults"] = true,
+				["onlyOwnClassCustoms"] = false,
+				["professionPowers"] = false,
+				["showOnlyUpgrades"] = false,
+				["debug"] = false,
+				["outlineScores"] = true,
+			},
 			["Dialdaas"] = {
 				["specScales"] = {
 					[70] = {
@@ -395,41 +430,6 @@ AzeritePowerWeightsDB = {
 				["showOnlyUpgrades"] = false,
 				["professionPowers"] = false,
 				["onlyOwnClassCustoms"] = false,
-			},
-			["Brewnheimer"] = {
-				["specScales"] = {
-					[263] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/7/2/Default",
-					},
-					[264] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/7/3/Default",
-					},
-					[262] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/7/1/Default",
-					},
-				},
-				["addPrimaryStatToScore"] = false,
-				["showTooltipLegend"] = true,
-				["zonePowers"] = true,
-				["pvpPowers"] = false,
-				["addILvlToScore"] = false,
-				["relativeScore"] = false,
-				["rolePowersNoOffRolePowers"] = false,
-				["importingCanUpdate"] = true,
-				["tooltipScales"] = {
-				},
-				["rolePowers"] = true,
-				["defensivePowers"] = true,
-				["scaleByAzeriteEmpowered"] = false,
-				["onlyOwnClassDefaults"] = true,
-				["onlyOwnClassCustoms"] = false,
-				["professionPowers"] = false,
-				["showOnlyUpgrades"] = false,
-				["debug"] = false,
-				["outlineScores"] = true,
 			},
 		},
 		["Dalaran"] = {
