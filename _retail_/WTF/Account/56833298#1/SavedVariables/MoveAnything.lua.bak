@@ -59,20 +59,21 @@ MADB = {
 						3.0517578125e-05, -- [5]
 					},
 				},
-				["GuildBankItemTooltipMover"] = {
+				["TooltipMover"] = {
 					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						0, -- [3]
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
 						0, -- [4]
+						0, -- [5]
 					},
-					["name"] = "GuildBankItemTooltipMover",
+					["name"] = "TooltipMover",
 					["pos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						-3.0517578125e-05, -- [4]
-						0.0001220703125, -- [5]
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						0, -- [4]
+						490.164988070726, -- [5]
 					},
 				},
 				["OverrideActionButtonsMover"] = {
@@ -101,28 +102,27 @@ MADB = {
 						17, -- [5]
 					},
 				},
-				["TooltipMover"] = {
+				["GuildBankItemTooltipMover"] = {
 					["orgPos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						0, -- [3]
 						0, -- [4]
-						0, -- [5]
 					},
-					["name"] = "TooltipMover",
+					["name"] = "GuildBankItemTooltipMover",
 					["pos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						0, -- [4]
-						490.164988070726, -- [5]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						-3.0517578125e-05, -- [4]
+						0.0001220703125, -- [5]
 					},
 				},
 			},
 		},
 	},
-	["closeGUIOnEscape"] = false,
-	["playSound"] = false,
-	["noBags"] = false,
 	["frameListRows"] = 18,
+	["noBags"] = false,
+	["playSound"] = false,
+	["closeGUIOnEscape"] = false,
 }
