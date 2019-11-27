@@ -34,53 +34,12 @@ AzeritePowerWeightsDB = {
 				["defensivePowers"] = true,
 				["preferBiSMarjor"] = true,
 				["scaleByAzeriteEmpowered"] = false,
-				["onlyOwnClassDefaults"] = true,
+				["onlyOwnClassCustoms"] = false,
 				["outlineScores"] = true,
 				["professionPowers"] = false,
 				["showOnlyUpgrades"] = false,
 				["debug"] = false,
-				["onlyOwnClassCustoms"] = false,
-			},
-		},
-		["Black Dragonflight"] = {
-			["Durlok"] = {
-				["specScales"] = {
-					[103] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/11/2/Default",
-					},
-					[104] = {
-						["scaleName"] = "Defensive",
-						["scaleID"] = "D/11/3/Defensive",
-					},
-					[102] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/11/1/Default",
-					},
-					[105] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/11/4/Default",
-					},
-				},
-				["addPrimaryStatToScore"] = false,
-				["showTooltipLegend"] = true,
-				["zonePowers"] = true,
-				["pvpPowers"] = false,
-				["addILvlToScore"] = false,
-				["relativeScore"] = false,
-				["rolePowersNoOffRolePowers"] = false,
-				["importingCanUpdate"] = true,
-				["tooltipScales"] = {
-				},
-				["rolePowers"] = true,
-				["defensivePowers"] = true,
-				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
-				["professionPowers"] = false,
-				["debug"] = false,
-				["showOnlyUpgrades"] = false,
-				["onlyOwnClassCustoms"] = false,
-				["outlineScores"] = true,
 			},
 		},
 		["Dalaran"] = {
@@ -356,6 +315,7 @@ AzeritePowerWeightsDB = {
 				},
 				["rolePowers"] = true,
 				["defensivePowers"] = true,
+				["preferBiSMarjor"] = true,
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
 				["onlyOwnClassCustoms"] = false,
@@ -474,20 +434,24 @@ AzeritePowerWeightsDB = {
 				["onlyOwnClassCustoms"] = false,
 			},
 		},
-		["Darkspear"] = {
-			["Shathiel"] = {
+		["Black Dragonflight"] = {
+			["Durlok"] = {
 				["specScales"] = {
-					[64] = {
+					[103] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/8/3/Default",
+						["scaleID"] = "D/11/2/Default",
 					},
-					[63] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/8/2/Default",
+					[104] = {
+						["scaleName"] = "Defensive",
+						["scaleID"] = "D/11/3/Defensive",
 					},
-					[62] = {
+					[102] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/8/1/Default",
+						["scaleID"] = "D/11/1/Default",
+					},
+					[105] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/11/4/Default",
 					},
 				},
 				["addPrimaryStatToScore"] = false,
@@ -504,25 +468,27 @@ AzeritePowerWeightsDB = {
 				["defensivePowers"] = true,
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
-				["onlyOwnClassCustoms"] = false,
 				["professionPowers"] = false,
-				["showOnlyUpgrades"] = false,
 				["debug"] = false,
+				["showOnlyUpgrades"] = false,
+				["onlyOwnClassCustoms"] = false,
 				["outlineScores"] = true,
 			},
-			["Serbitechna"] = {
+		},
+		["Darkspear"] = {
+			["Shathiel"] = {
 				["specScales"] = {
-					[255] = {
+					[64] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/3/3/Default",
+						["scaleID"] = "D/8/3/Default",
 					},
-					[254] = {
+					[63] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/3/2/Default",
+						["scaleID"] = "D/8/2/Default",
 					},
-					[253] = {
+					[62] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/3/1/Default",
+						["scaleID"] = "D/8/1/Default",
 					},
 				},
 				["addPrimaryStatToScore"] = false,
@@ -614,6 +580,41 @@ AzeritePowerWeightsDB = {
 				["showOnlyUpgrades"] = false,
 				["professionPowers"] = false,
 				["onlyOwnClassCustoms"] = false,
+			},
+			["Serbitechna"] = {
+				["specScales"] = {
+					[255] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/3/3/Default",
+					},
+					[254] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/3/2/Default",
+					},
+					[253] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/3/1/Default",
+					},
+				},
+				["addPrimaryStatToScore"] = false,
+				["showTooltipLegend"] = true,
+				["zonePowers"] = true,
+				["pvpPowers"] = false,
+				["addILvlToScore"] = false,
+				["relativeScore"] = false,
+				["rolePowersNoOffRolePowers"] = false,
+				["importingCanUpdate"] = true,
+				["tooltipScales"] = {
+				},
+				["rolePowers"] = true,
+				["defensivePowers"] = true,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassDefaults"] = true,
+				["onlyOwnClassCustoms"] = false,
+				["professionPowers"] = false,
+				["showOnlyUpgrades"] = false,
+				["debug"] = false,
+				["outlineScores"] = true,
 			},
 		},
 		["Zul'jin"] = {

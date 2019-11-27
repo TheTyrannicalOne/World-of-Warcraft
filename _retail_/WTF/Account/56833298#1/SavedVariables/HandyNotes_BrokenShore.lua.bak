@@ -7,13 +7,13 @@ HandyNotes_BrokenShoreDB = {
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
@@ -26,7 +26,7 @@ HandyNotes_BrokenShoreDB = {
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -42,7 +42,7 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Sinh - Dalaran"] = {
+		["Shathiel - Darkspear"] = {
 		},
 		["Shaewong - Dalaran"] = {
 		},
@@ -54,7 +54,7 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Dialdaas - Darkspear"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Gangus - Runetotem"] = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
@@ -80,7 +80,7 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Migimong - Runetotem"] = {
 		},
-		["Gangus - Runetotem"] = {
+		["Sinh - Dalaran"] = {
 		},
 		["Narisaric - Dalaran"] = {
 		},

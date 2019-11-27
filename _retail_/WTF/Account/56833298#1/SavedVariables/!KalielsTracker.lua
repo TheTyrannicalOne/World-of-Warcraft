@@ -4,9 +4,6 @@ KalielsTrackerDB = {
 		["Tynster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shanyt - Argent Dawn"] = {
-			["collapsed"] = true,
-		},
 		["Shaewong - Dalaran"] = {
 			["collapsed"] = true,
 		},
@@ -41,6 +38,9 @@ KalielsTrackerDB = {
 			["collapsed"] = true,
 		},
 		["Tyriinid - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Tynkster - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Beeronimo - Dalaran"] = {

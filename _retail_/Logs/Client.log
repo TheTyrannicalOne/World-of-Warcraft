@@ -1,62 +1,64 @@
-11/22 19:32:42.767  Client Initialize.
-11/22 19:33:12.257  Initial Hotfixes: Requested
-11/22 19:33:13.537  Initial Hotfixes: Received
-11/22 19:33:13.607  Initial Hotfixes: Applied
-11/22 19:34:35.968  Loading Screen Enable : 1 - 1
-11/22 19:34:36.777  Client Object Manager Initialized: 1
-11/22 19:34:36.938  Succesfully Registered Nameplate
+11/26 00:28:16.102  Client Initialize.
+11/26 00:28:45.460  Initial Hotfixes: Requested
+11/26 00:28:45.851  Initial Hotfixes: Received
+11/26 00:28:45.926  Initial Hotfixes: Applied
+11/26 00:28:47.057  Loading Screen Enable : 1153 - 1
+11/26 00:28:48.018  Client Object Manager Initialized: 1153
+11/26 00:28:48.188  Succesfully Registered Nameplate
 
-11/22 19:34:38.064  Loading Screen : Loading : Files Read 1955 : Bytes Read 715562403 : Elapsed MS 2096 : MBytes Per Sec 325.579
-11/22 19:34:38.064  Loading Screen : XML Loaded 23%
-11/22 19:34:40.253  Loading Screen : Loading : Files Read 27 : Bytes Read 719740 : Elapsed MS 2190 : MBytes Per Sec 0.313
-11/22 19:34:40.253  Loading Screen : XML Loaded 27%
-11/22 19:34:42.336  Loading Screen : Loading : Files Read 2 : Bytes Read 21270 : Elapsed MS 2082 : MBytes Per Sec 0.010
-11/22 19:34:42.336  Loading Screen : XML Loaded 32%
-11/22 19:34:44.498  Loading Screen : XML Loaded 35%
-11/22 19:34:46.530  Loading Screen : XML Loaded 36%
-11/22 19:34:48.555  Loading Screen : XML Loaded 40%
-11/22 19:34:51.581  Loading Screen : Loading : Files Read 1 : Bytes Read 108 : Elapsed MS 3027 : MBytes Per Sec 0.000
-11/22 19:34:51.581  Loading Screen : XML Loaded 43%
-11/22 19:34:53.932  Loading Screen : Loading : Files Read 16 : Bytes Read 184437 : Elapsed MS 2350 : MBytes Per Sec 0.075
-11/22 19:34:53.932  Loading Screen : XML Loaded 48%
-11/22 19:35:00.455  Loading Screen : Loading : Files Read 4 : Bytes Read 52064 : Elapsed MS 6523 : MBytes Per Sec 0.008
-11/22 19:35:00.455  Loading Screen : XML Loaded 52%
-11/22 19:35:02.552  Loading Screen : XML Loaded 64%
-11/22 19:35:04.619  Loading Screen : Loading : Files Read 23 : Bytes Read 213943 : Elapsed MS 2066 : MBytes Per Sec 0.099
-11/22 19:35:04.619  Loading Screen : XML Loaded 70%
-11/22 19:35:06.066  Loading Screen Ping SEND
-11/22 19:35:06.713  Loading Screen : Loading : Files Read 11 : Bytes Read 752340 : Elapsed MS 2094 : MBytes Per Sec 0.343
-11/22 19:35:06.713  Loading Screen : XML Loaded 78%
-11/22 19:35:08.795  Loading Screen : XML Loaded 95%
-11/22 19:35:12.075  Loading Screen : Loading : Files Read 173 : Bytes Read 50892 : Elapsed MS 3280 : MBytes Per Sec 0.015
-11/22 19:35:12.075  Loading Screen : XML Loaded 97%
-11/22 19:35:14.662  Client : Load Map Begin : 1
-11/22 19:35:14.664  Loading Screen : Loading : Files Read 39 : Bytes Read 603252 : Elapsed MS 2589 : MBytes Per Sec 0.222
-11/22 19:35:14.664  Loading Screen : XML Loaded 100%
-11/22 19:35:16.719  Loading Screen : Loading : Files Read 2718 : Bytes Read 222237527 : Elapsed MS 2055 : MBytes Per Sec 103.135
-11/22 19:35:16.719  Loading Screen : XML Loaded 100%
-11/22 19:35:16.719  Loading Screen : World Loaded 61%
-11/22 19:35:17.756  Client : Load Map End
-11/22 19:35:17.758  Start waiting for active player
-11/22 19:35:17.758  Character Login SEND
-11/22 19:35:17.797  Waiting for active player: 38 ms
-11/22 19:35:20.463  Stop waiting for active player
-11/22 19:35:20.513  Loading Screen : Loading : Files Read 4056 : Bytes Read 146865506 : Elapsed MS 3793 : MBytes Per Sec 36.926
-11/22 19:35:20.513  Loading Screen : XML Loaded 100%
-11/22 19:35:20.513  Loading Screen : World Loaded 100%
-11/22 19:35:20.513  Loading Screen : Spell Loaded 0%
-11/22 19:35:27.986  Active Player Created
-11/22 19:35:27.986  Player : Exit Loading Screen : World Check Preload Begin
-11/22 19:35:27.986  Player : Exit Loading Screen : World Check Preload End
-11/22 19:35:27.986  Loading Screen : Streaming 0
-11/22 19:35:27.986  Loading Screen : XML Loaded 100%
-11/22 19:35:27.986  Loading Screen : World Loaded 100%
-11/22 19:35:27.986  Loading Screen : Spell Loaded 100%
-11/22 19:35:27.986  Loading Screen Disable
-11/22 19:35:27.986  Spellbook : Make Models Local Begin : 134
-11/22 19:35:27.991  Spellbook : Make Models Local End
-11/22 19:42:29.367  Stop waiting for active player
-11/22 19:42:29.382  Client Object Manager Destroyed
-11/22 19:42:33.205  Nameplate Shutting Down
+11/26 00:28:49.059  Loading Screen : Loading : Files Read 1811 : Bytes Read 703211613 : Elapsed MS 2003 : MBytes Per Sec 334.815
+11/26 00:28:49.059  Loading Screen : XML Loaded 15%
+11/26 00:28:51.208  Loading Screen : Loading : Files Read 43 : Bytes Read 2853204 : Elapsed MS 2147 : MBytes Per Sec 1.267
+11/26 00:28:51.208  Loading Screen : XML Loaded 26%
+11/26 00:28:53.223  Loading Screen : Loading : Files Read 2 : Bytes Read 21270 : Elapsed MS 2014 : MBytes Per Sec 0.010
+11/26 00:28:53.223  Loading Screen : XML Loaded 31%
+11/26 00:28:55.253  Loading Screen : XML Loaded 34%
+11/26 00:28:57.528  Loading Screen : XML Loaded 35%
+11/26 00:28:59.721  Loading Screen : XML Loaded 40%
+11/26 00:29:01.973  Loading Screen : XML Loaded 42%
+11/26 00:29:04.135  Loading Screen : Loading : Files Read 14 : Bytes Read 177137 : Elapsed MS 2161 : MBytes Per Sec 0.078
+11/26 00:29:04.135  Loading Screen : XML Loaded 43%
+11/26 00:29:06.398  Loading Screen : Loading : Files Read 3 : Bytes Read 7408 : Elapsed MS 2263 : MBytes Per Sec 0.003
+11/26 00:29:06.398  Loading Screen : XML Loaded 48%
+11/26 00:29:10.664  Loading Screen : Loading : Files Read 4 : Bytes Read 52064 : Elapsed MS 4266 : MBytes Per Sec 0.012
+11/26 00:29:10.664  Loading Screen : XML Loaded 52%
+11/26 00:29:12.706  Loading Screen : XML Loaded 62%
+11/26 00:29:14.795  Loading Screen : Loading : Files Read 23 : Bytes Read 213943 : Elapsed MS 2089 : MBytes Per Sec 0.098
+11/26 00:29:14.795  Loading Screen : XML Loaded 70%
+11/26 00:29:16.812  Loading Screen : Loading : Files Read 9 : Bytes Read 743116 : Elapsed MS 2017 : MBytes Per Sec 0.351
+11/26 00:29:16.812  Loading Screen : XML Loaded 76%
+11/26 00:29:17.128  Loading Screen Ping SEND
+11/26 00:29:18.895  Loading Screen : Loading : Files Read 2 : Bytes Read 9224 : Elapsed MS 2083 : MBytes Per Sec 0.004
+11/26 00:29:18.895  Loading Screen : XML Loaded 91%
+11/26 00:29:23.288  Loading Screen : Loading : Files Read 1 : Bytes Read 6660 : Elapsed MS 4394 : MBytes Per Sec 0.001
+11/26 00:29:23.288  Loading Screen : XML Loaded 97%
+11/26 00:29:25.873  Client : Load Map Begin : 1153
+11/26 00:29:25.873  Loading Screen : Loading : Files Read 39 : Bytes Read 603252 : Elapsed MS 2587 : MBytes Per Sec 0.222
+11/26 00:29:25.873  Loading Screen : XML Loaded 100%
+11/26 00:29:27.919  Loading Screen : Loading : Files Read 1880 : Bytes Read 248352834 : Elapsed MS 2043 : MBytes Per Sec 115.931
+11/26 00:29:27.919  Loading Screen : XML Loaded 100%
+11/26 00:29:27.919  Loading Screen : World Loaded 60%
+11/26 00:29:28.847  Client : Load Map End
+11/26 00:29:28.847  Start waiting for active player
+11/26 00:29:28.857  Character Login SEND
+11/26 00:29:28.885  Waiting for active player: 34 ms
+11/26 00:29:31.737  Stop waiting for active player
+11/26 00:29:31.779  Loading Screen : Loading : Files Read 2658 : Bytes Read 197507690 : Elapsed MS 3860 : MBytes Per Sec 48.797
+11/26 00:29:31.779  Loading Screen : XML Loaded 100%
+11/26 00:29:31.779  Loading Screen : World Loaded 100%
+11/26 00:29:31.779  Loading Screen : Spell Loaded 0%
+11/26 00:29:40.509  Active Player Created
+11/26 00:29:40.509  Player : Exit Loading Screen : World Check Preload Begin
+11/26 00:29:40.509  Player : Exit Loading Screen : World Check Preload End
+11/26 00:29:40.509  Loading Screen : Streaming 0
+11/26 00:29:40.509  Loading Screen : XML Loaded 100%
+11/26 00:29:40.509  Loading Screen : World Loaded 100%
+11/26 00:29:40.509  Loading Screen : Spell Loaded 100%
+11/26 00:29:40.509  Loading Screen Disable
+11/26 00:29:40.509  Spellbook : Make Models Local Begin : 134
+11/26 00:29:40.509  Spellbook : Make Models Local End
+11/26 00:51:35.408  Stop waiting for active player
+11/26 00:51:35.434  Client Object Manager Destroyed
+11/26 00:51:38.781  Nameplate Shutting Down
 
-11/22 19:42:34.931  Client Destroy
+11/26 00:51:40.918  Client Destroy

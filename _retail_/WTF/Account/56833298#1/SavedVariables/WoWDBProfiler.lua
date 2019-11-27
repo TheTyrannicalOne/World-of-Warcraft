@@ -7,8 +7,8 @@ WoWDBProfilerData = {
 		["Goramor - Runetotem"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Shaewong - Dalaran"] = "Default",
-		["Sinh - Dalaran"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
+		["Gangus - Runetotem"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
 		["Migimong - Runetotem"] = "Default",
@@ -21,7 +21,7 @@ WoWDBProfilerData = {
 		["Tynkster - Dalaran"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
-		["Gangus - Runetotem"] = "Default",
+		["Sinh - Dalaran"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 	},
 	["region"] = "US",
@@ -32,9 +32,6 @@ WoWDBProfilerData = {
 					["locations"] = {
 						["Loch Modan:48"] = {
 							["3:348:478"] = true,
-							["3:346:478"] = true,
-							["3:350:476"] = true,
-							["3:350:478"] = true,
 						},
 					},
 				},
@@ -43,8 +40,7 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["City of Ironforge:87"] = {
-							["3:328:646"] = true,
-							["3:328:650"] = true,
+							["3:326:648"] = true,
 						},
 					},
 				},
@@ -53,9 +49,9 @@ WoWDBProfilerData = {
 		["items"] = {
 			[122668] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
 			},
 			[131628] = {
 				["instance_difficulty_id"] = 11,
@@ -84,19 +80,13 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["upgrade_value"] = 0,
 			},
-			[128173] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
 			[122529] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
 			},
-			[122252] = {
+			[128173] = {
 				["instance_difficulty_id"] = 0,
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
@@ -111,6 +101,12 @@ WoWDBProfilerData = {
 				},
 				["durability"] = 35,
 				["unique_id"] = 0,
+			},
+			[122252] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
 			},
 			[122356] = {
 				["instance_difficulty_id"] = 0,
@@ -130,21 +126,6 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["upgrade_value"] = 0,
 			},
-			[6329] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122379] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
 			[131491] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 18,
@@ -152,21 +133,27 @@ WoWDBProfilerData = {
 				["durability"] = 30,
 				["unique_id"] = 0,
 			},
+			[122379] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
 			[122361] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
 			},
 			[3643] = {
 				["instance_difficulty_id"] = 28,
 				["upgrade_value"] = 24,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["3831"] = true,
 				},
 				["durability"] = 30,
-				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[131204] = {
 				["instance_difficulty_id"] = 11,
@@ -230,118 +217,8 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[79977] = 11,
-							[79976] = 5,
-						},
-					},
-				},
-			},
-			["44161"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[8852] = 5,
-						},
-					},
-				},
-			},
-			["49808"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[19514] = 9,
-						},
-					},
-				},
-			},
-			["50309"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["sells"] = {
-					[64898] = "-1:1:[34268]",
-					[64900] = "-1:1:[34521]",
-					[45577] = "-1:1:[1000:0:0]",
-					[64899] = "-1:1:[34394]",
-					[67528] = "-1:1:[20000:0:0]",
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "24:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:564:476"] = true,
-										["3:558:478"] = true,
-									},
-								},
-								["max_health"] = 2383,
-							},
-						},
-					},
-				},
-			},
-			["42170"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[75002] = 1,
-						},
-					},
-				},
-			},
-			["1572"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["reaction"] = "24:Alliance:FRIENDLY",
-				["flight_master"] = true,
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_120"] = {
-								["locations"] = {
-									["Loch Modan:48"] = {
-										["3:338:508"] = true,
-									},
-								},
-								["max_health"] = 130083,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-			},
-			["118889"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[235614] = 10,
-						},
-					},
-				},
-			},
-			["1961"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[75002] = 1,
+							[79977] = 9,
+							[79976] = 3,
 						},
 					},
 				},
@@ -360,10 +237,8 @@ WoWDBProfilerData = {
 							["level_45"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:356:610"] = true,
-										["3:354:616"] = true,
-										["3:350:610"] = true,
-										["3:354:604"] = true,
+										["3:356:606"] = true,
+										["3:354:614"] = true,
 									},
 								},
 								["max_health"] = 4416,
@@ -379,25 +254,28 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[8852] = 7,
+							[8852] = 5,
 							[3288] = 1,
 						},
 					},
 				},
 			},
 			["62822"] = {
-				["reaction"] = "24:Alliance:FRIENDLY",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_90"] = {
 								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:312:646"] = true,
-										["3:316:652"] = true,
-										["3:318:646"] = true,
-										["3:314:658"] = true,
-										["3:308:666"] = true,
+									["Loch Modan:48"] = {
+										["3:340:494"] = true,
+										["3:338:506"] = true,
+										["3:342:482"] = true,
+										["3:348:476"] = true,
+										["3:340:488"] = true,
+										["3:338:500"] = true,
 									},
 								},
 								["max_health"] = 5502,
@@ -425,52 +303,138 @@ WoWDBProfilerData = {
 					[38682] = "-1:1:[1000:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["genders"] = {
-					["MALE"] = true,
-				},
+				["reaction"] = "24:Alliance:FRIENDLY",
 				["can_repair"] = true,
 			},
-			["2508"] = {
+			["49784"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[95826] = 2,
-						},
 						["stats"] = {
+						},
+						["spells"] = {
+							[48168] = 3,
 						},
 					},
 				},
 			},
-			["5595"] = {
+			["2509"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[95826] = 2,
+						},
+					},
+				},
+			},
+			["49808"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[19514] = 3,
+						},
+					},
+				},
+			},
+			["8720"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["reaction"] = "24:Alliance:FRIENDLY",
+				["auctioneer"] = true,
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:242:744"] = true,
+									},
+								},
+								["max_health"] = 5295,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+			},
+			["2518"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[95826] = 2,
+						},
+					},
+				},
+			},
+			["118889"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[235614] = 6,
+						},
+					},
+				},
+			},
+			["1572"] = {
 				["is_pvp"] = true,
 				["genders"] = {
 					["MALE"] = true,
 				},
 				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
 				["reaction"] = "24:Alliance:FRIENDLY",
+				["flight_master"] = true,
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_120"] = {
 								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:562:492"] = true,
+									["Loch Modan:48"] = {
+										["3:340:510"] = true,
 									},
 								},
-								["max_health"] = 65042,
+								["max_health"] = 130083,
 							},
 						},
 					},
 				},
+				["class"] = "WARRIOR",
 			},
-			["2506"] = {
+			["50309"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["sells"] = {
+					[64898] = "-1:1:[34268]",
+					[64900] = "-1:1:[34521]",
+					[45577] = "-1:1:[1000:0:0]",
+					[64899] = "-1:1:[34394]",
+					[67528] = "-1:1:[20000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "24:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[95826] = 2,
-						},
 						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:558:482"] = true,
+									},
+								},
+								["max_health"] = 2383,
+							},
 						},
 					},
 				},
@@ -489,35 +453,11 @@ WoWDBProfilerData = {
 							["level_120"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:558:478"] = true,
+										["3:558:482"] = true,
+										["3:548:486"] = true,
 									},
 								},
 								["max_health"] = 130083,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-			},
-			["8720"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["reaction"] = "24:Alliance:FRIENDLY",
-				["auctioneer"] = true,
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_50"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:242:744"] = true,
-										["3:246:736"] = true,
-									},
-								},
-								["max_health"] = 5295,
 							},
 						},
 					},
@@ -546,9 +486,7 @@ WoWDBProfilerData = {
 								["max_health"] = 2383,
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:556:486"] = true,
-										["3:558:480"] = true,
-										["3:562:488"] = true,
+										["3:558:482"] = true,
 									},
 								},
 								["power"] = "ENERGY:100",
@@ -557,24 +495,13 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["49784"] = {
+			["44161"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[48168] = 5,
-						},
-					},
-				},
-			},
-			["2512"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[95826] = 4,
-						},
-						["stats"] = {
+							[8852] = 2,
 						},
 					},
 				},
@@ -584,18 +511,19 @@ WoWDBProfilerData = {
 			[27026] = {
 				["can_share"] = true,
 			},
-			[31891] = {
+			[27016] = {
+				["can_share"] = true,
 			},
 			[28564] = {
 				["can_share"] = true,
 			},
-			[54185] = {
+			[28563] = {
+				["can_share"] = true,
 			},
 			[13658] = {
 				["can_share"] = true,
 			},
-			[27016] = {
-				["can_share"] = true,
+			[31891] = {
 			},
 			[28490] = {
 				["can_share"] = true,
@@ -606,7 +534,7 @@ WoWDBProfilerData = {
 			[2039] = {
 				["can_share"] = true,
 			},
-			[27033] = {
+			[27028] = {
 				["can_share"] = true,
 			},
 			[44989] = {
@@ -614,20 +542,19 @@ WoWDBProfilerData = {
 			[13657] = {
 				["can_share"] = true,
 			},
-			[13659] = {
-				["can_share"] = true,
+			[54185] = {
 			},
-			[28563] = {
+			[27033] = {
 				["can_share"] = true,
 			},
 			[28492] = {
 				["can_share"] = true,
 			},
-			[27028] = {
+			[13659] = {
 				["can_share"] = true,
 			},
 		},
 	},
-	["build_num"] = 32494,
+	["build_num"] = 32638,
 	["version"] = 19,
 }

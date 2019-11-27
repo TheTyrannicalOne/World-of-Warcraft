@@ -40,6 +40,9 @@ KalielsTrackerDB = {
 		["Beeronimo - Dalaran"] = {
 			["collapsed"] = true,
 		},
+		["Tynkster - Dalaran"] = {
+			["collapsed"] = true,
+		},
 		["Tyriinid - Dalaran"] = {
 			["collapsed"] = true,
 		},
