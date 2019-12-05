@@ -13,3 +13,4 @@ WeakAurasCompanion: enabled
 !KalielsTracker: disabled
 BigWigs_CommonAuras: enabled
 OPie_Classic: disabled
+RareAnnouncer: disabled

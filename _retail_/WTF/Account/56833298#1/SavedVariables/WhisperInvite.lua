@@ -33,7 +33,7 @@ WhisperInviteCoreDB = {
 		},
 		["Sinh - Dalaran"] = {
 			["info"] = {
-				["setup"] = 4,
+				["setup"] = 5,
 			},
 		},
 		["Xerret - Illidan"] = {

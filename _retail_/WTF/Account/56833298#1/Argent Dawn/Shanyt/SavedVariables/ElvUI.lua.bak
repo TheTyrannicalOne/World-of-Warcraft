@@ -1,2821 +1,2821 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/cw Enetity-ArgentDawn about 50 now", -- [1]
-		"/p if im needed i can help", -- [2]
-		"/cw Enetity-ArgentDawn boots not the mount i been trying to get forever lol", -- [3]
-		"/cw Enetity-ArgentDawn and thanks good luck to you as well", -- [4]
-		"/p enur your up", -- [5]
-		"/cw Enetity-ArgentDawn indeed", -- [6]
-		"/chicken", -- [7]
-		"/p i need one more then its toy time", -- [8]
-		"/train", -- [9]
-		"havent been playing to much as of late just trying to not let my ah expire out of the mailbox this is the cash cow of my chars", -- [10]
-		"/p cool thanks for the help btw", -- [11]
-		"there is only one side sir and it is the horde", -- [12]
-		"/fishingbuddy", -- [13]
-		"/click PetJournalSummonRandomFavoritePetButton", -- [14]
-		"/skada show", -- [15]
-		"/skada hide", -- [16]
-		"/skada", -- [17]
-		"/skada toggle", -- [18]
-		"/fb", -- [19]
-		"/kb", -- [20]
+		"/p if im needed i can help", -- [1]
+		"/cw Enetity-ArgentDawn boots not the mount i been trying to get forever lol", -- [2]
+		"/cw Enetity-ArgentDawn and thanks good luck to you as well", -- [3]
+		"/p enur your up", -- [4]
+		"/cw Enetity-ArgentDawn indeed", -- [5]
+		"/chicken", -- [6]
+		"/p i need one more then its toy time", -- [7]
+		"/train", -- [8]
+		"havent been playing to much as of late just trying to not let my ah expire out of the mailbox this is the cash cow of my chars", -- [9]
+		"/p cool thanks for the help btw", -- [10]
+		"there is only one side sir and it is the horde", -- [11]
+		"/fishingbuddy", -- [12]
+		"/click PetJournalSummonRandomFavoritePetButton", -- [13]
+		"/skada show", -- [14]
+		"/skada hide", -- [15]
+		"/skada", -- [16]
+		"/skada toggle", -- [17]
+		"/fb", -- [18]
+		"/kb", -- [19]
+		"/i anyone else help on korrak?", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"so when the orbs drop, they do damgage. you can't stand on them LOL", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
+			"they will be soon", -- [1]
+			"Thaynoss-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
+			"Thaynoss-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			311, -- [11]
-			"Player-1171-07DF2650", -- [12]
+			1696, -- [11]
+			"Player-3676-085681E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573093918,
+			[52] = "|cff00fe95Thaynoss-Area52|r",
+			[51] = 1575149328,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [1]
 		{
-			"Nefarian!", -- [1]
-			"Dracaarys-Ragnaros", -- [2]
+			"Capping: Stormpike Aid Station - 1:20 (Horde)", -- [1]
+			"Katsvertise-Proudmoore", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Dracaarys-Ragnaros", -- [5]
+			"Katsvertise-Proudmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			314, -- [11]
-			"Player-1427-076F1DF6", -- [12]
+			1699, -- [11]
+			"Player-5-0B94660D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Dracaarys-Ragnaros|r",
-			[51] = 1573093923,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc31d39Katsvertise-Proudmoore|r",
+			[51] = 1575149331,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [2]
 		{
-			"Cho'gall!", -- [1]
-			"Nounource-Runetotem", -- [2]
+			"Capping: Stormpike Graveyard - 0:59 (Horde)", -- [1]
+			"Katsvertise-Proudmoore", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Nounource-Runetotem", -- [5]
+			"Katsvertise-Proudmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			316, -- [11]
-			"Player-151-083AB10E", -- [12]
+			1700, -- [11]
+			"Player-5-0B94660D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Nounource-Runetotem|r",
-			[51] = 1573093929,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc31d39Katsvertise-Proudmoore|r",
+			[51] = 1575149332,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [3]
 		{
-			"COMO SE HACE RAGNAROS", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"they can't start on Drek yet", -- [1]
+			"Sarax-Stormreaver", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Sarax-Stormreaver", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			360, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			1701, -- [11]
+			"Player-58-057974A6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094080,
+			[52] = "|cffc31d39Sarax-Stormreaver|r",
+			[51] = 1575149334,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [4]
 		{
-			"la concha de tu madre", -- [1]
-			"Yasuø-Azralon", -- [2]
+			"not with 2 towers still up", -- [1]
+			"Sarax-Stormreaver", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Yasuø-Azralon", -- [5]
+			"Sarax-Stormreaver", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			402, -- [11]
-			"Player-3209-0A3D42D6", -- [12]
+			1702, -- [11]
+			"Player-58-057974A6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cYasuø-Azralon|r",
-			[51] = 1573094091,
+			[52] = "|cffc31d39Sarax-Stormreaver|r",
+			[51] = 1575149343,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [5]
 		{
-			"XD", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"Capping: Frostwolf Relief Hut - 3:33 (Alliance)", -- [1]
+			"Uprisinguild-Akama", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Uprisinguild-Akama", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			430, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			1703, -- [11]
+			"Player-84-05A5E1FE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094097,
+			[52] = "|cff3ec5e9Uprisinguild-Akama|r",
+			[51] = 1575149346,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [6]
 		{
-			"LUST", -- [1]
-			"Fallingclap-Azralon", -- [2]
+			"Capping: West Frostwolf Tower - 1:06 (Alliance)", -- [1]
+			"Uprisinguild-Akama", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fallingclap-Azralon", -- [5]
+			"Uprisinguild-Akama", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			449, -- [11]
-			"Player-3209-0A20589C", -- [12]
+			1704, -- [11]
+			"Player-84-05A5E1FE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cFallingclap-Azralon|r",
-			[51] = 1573094115,
+			[52] = "|cff3ec5e9Uprisinguild-Akama|r",
+			[51] = 1575149348,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [7]
 		{
-			"MAGE", -- [1]
-			"Fallingclap-Azralon", -- [2]
+			"cc them why waste time", -- [1]
+			"Katsvertise-Proudmoore", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fallingclap-Azralon", -- [5]
+			"Katsvertise-Proudmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			450, -- [11]
-			"Player-3209-0A20589C", -- [12]
+			1711, -- [11]
+			"Player-5-0B94660D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cFallingclap-Azralon|r",
-			[51] = 1573094116,
+			[52] = "|cffc31d39Katsvertise-Proudmoore|r",
+			[51] = 1575149388,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [8]
 		{
-			"FUCK", -- [1]
-			"Fallingclap-Azralon", -- [2]
+			"we need a tank", -- [1]
+			"Sarax-Stormreaver", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fallingclap-Azralon", -- [5]
+			"Sarax-Stormreaver", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			451, -- [11]
-			"Player-3209-0A20589C", -- [12]
+			1721, -- [11]
+			"Player-58-057974A6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cFallingclap-Azralon|r",
-			[51] = 1573094117,
+			[52] = "|cffc31d39Sarax-Stormreaver|r",
+			[51] = 1575149425,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [9]
 		{
-			"ok", -- [1]
-			"Ascindis-KirinTor", -- [2]
+			"acting like alliance", -- [1]
+			"Katsvertise-Proudmoore", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
+			"Katsvertise-Proudmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			460, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
+			1723, -- [11]
+			"Player-5-0B94660D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573094163,
+			[52] = "|cffc31d39Katsvertise-Proudmoore|r",
+			[51] = 1575149429,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [10]
 		{
-			"stack left run right", -- [1]
-			"Wrinkle-WyrmrestAccord", -- [2]
+			"u guys need to start", -- [1]
+			"Thaynoss-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Wrinkle-WyrmrestAccord", -- [5]
+			"Thaynoss-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			462, -- [11]
-			"Player-1171-07D9E2EB", -- [12]
+			1726, -- [11]
+			"Player-3676-085681E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Wrinkle-WyrmrestAccord|r",
-			[51] = 1573094168,
+			[52] = "|cff00fe95Thaynoss-Area52|r",
+			[51] = 1575149439,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [11]
 		{
-			"como se haceeeeee", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"to busy figthing npcs", -- [1]
+			"Katsvertise-Proudmoore", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Katsvertise-Proudmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			463, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			1730, -- [11]
+			"Player-5-0B94660D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094169,
+			[52] = "|cffc31d39Katsvertise-Proudmoore|r",
+			[51] = 1575149460,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [12]
 		{
-			"how do we not fuck this up", -- [1]
-			"Ascindis-KirinTor", -- [2]
+			"here comes 120 thank god", -- [1]
+			"Grimsins-Arygos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
+			"Grimsins-Arygos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			464, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
+			1791, -- [11]
+			"Player-99-09410729", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573094169,
+			[52] = "|cffa22fc8Grimsins-Arygos|r",
+			[51] = 1575149526,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [13]
 		{
-			"stack on left", -- [1]
-			"Ojitos-Ragnaros", -- [2]
+			"I gotta go back to MOP and get some new fireworks", -- [1]
+			"Härléyquinn-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ojitos-Ragnaros", -- [5]
+			"Härléyquinn-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			465, -- [11]
-			"Player-1427-06CEA02D", -- [12]
+			176, -- [11]
+			"Player-3676-077267C4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Ojitos-Ragnaros|r",
-			[51] = 1573094175,
+			[52] = "|cffc31d39Härléyquinn-Area52|r",
+			[51] = 1575210309,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [14]
 		{
-			"but not on top of each other", -- [1]
-			"Ojitos-Ragnaros", -- [2]
+			"lol do we not have healers? xD", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ojitos-Ragnaros", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			469, -- [11]
-			"Player-1427-06CEA02D", -- [12]
+			510, -- [11]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Ojitos-Ragnaros|r",
-			[51] = 1573094180,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575210667,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [15]
 		{
-			"we stacked", -- [1]
-			"Ascindis-KirinTor", -- [2]
+			"im out of bandages", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			470, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
+			517, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573094182,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575210685,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [16]
 		{
-			"don't stay on the balls when they arrive", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
+			"lol I heard you the first time", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			471, -- [11]
-			"Player-1171-07DF2650", -- [12]
+			531, -- [11]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573094185,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575210692,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [17]
 		{
-			"and got nuked", -- [1]
-			"Ascindis-KirinTor", -- [2]
+			"thats kinda like out of tampons", -- [1]
+			"Härléyquinn-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
+			"Härléyquinn-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			472, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
+			588, -- [11]
+			"Player-3676-077267C4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573094186,
+			[52] = "|cffc31d39Härléyquinn-Area52|r",
+			[51] = 1575210732,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [18]
 		{
-			"gotta run", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
+			"they pushing in our base", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			473, -- [11]
-			"Player-1171-07DF2650", -- [12]
+			650, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573094188,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575210824,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [19]
 		{
-			"where", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"rip", -- [1]
+			"Lespin-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Lespin-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			474, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			668, -- [11]
+			"Player-3683-0B84C5A3", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094189,
+			[52] = "|cff8686ecLespin-Dalaran|r",
+			[51] = 1575210852,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [20]
 		{
-			"then run away with fire balls", -- [1]
-			"Wrinkle-WyrmrestAccord", -- [2]
+			"thisi s gonna be aquick loss", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Wrinkle-WyrmrestAccord", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			475, -- [11]
-			"Player-1171-07D9E2EB", -- [12]
+			723, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Wrinkle-WyrmrestAccord|r",
-			[51] = 1573094191,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575210915,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [21]
 		{
-			"right side", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
+			"yup", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			476, -- [11]
-			"Player-1171-07DF2650", -- [12]
+			736, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573094192,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575210923,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [22]
 		{
-			"where", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"we lost", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			479, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			748, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094199,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575210926,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [23]
 		{
-			"stay stacked for orbs", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
+			"kronck up", -- [1]
+			"Hangnar-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			488, -- [11]
-			"Player-1171-07DF2650", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573094267,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [24]
-		{
-			"jesus", -- [1]
-			"Mëtallikä-Azralon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Mëtallikä-Azralon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			512, -- [11]
-			"Player-3209-0A1A218F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Mëtallikä-Azralon|r",
-			[51] = 1573094300,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [25]
-		{
-			"....", -- [1]
-			"Mëtallikä-Azralon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Mëtallikä-Azralon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			513, -- [11]
-			"Player-3209-0A1A218F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Mëtallikä-Azralon|r",
-			[51] = 1573094301,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [26]
-		{
-			"went better", -- [1]
-			"Krispyelder-WyrmrestAccord", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Krispyelder-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			547, -- [11]
-			"Player-1171-07DF2650", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe95Krispyelder-WyrmrestAccord|r",
-			[51] = 1573094309,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [27]
-		{
-			"Ragnaros!", -- [1]
-			"Kínddara-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kínddara-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			580, -- [11]
-			"Player-1427-0573F5F7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Kínddara-Ragnaros|r",
-			[51] = 1573094334,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [28]
-		{
-			"this hurts\\", -- [1]
-			"Ascindis-KirinTor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			591, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573094351,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [29]
-		{
-			"fisrt ragnaros", -- [1]
-			"Chïö-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			592, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094355,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [30]
-		{
-			"whats happen", -- [1]
-			"Khaliya-Galakrond", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Khaliya-Galakrond", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			596, -- [11]
-			"Player-54-08C7AE43", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Khaliya-Galakrond|r",
-			[51] = 1573094361,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [31]
-		{
-			"everyone died", -- [1]
-			"Ascindis-KirinTor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			599, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573094370,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
-		{
-			"looks like everyones going away lmao", -- [1]
-			"Khaliya-Galakrond", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Khaliya-Galakrond", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			604, -- [11]
-			"Player-54-08C7AE43", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Khaliya-Galakrond|r",
-			[51] = 1573094384,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [33]
-		{
-			"USE SILENCES GUYS", -- [1]
-			"Fenystrasz-Drakkari", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fenystrasz-Drakkari", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			721, -- [11]
-			"Player-1425-087D54BB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
-			[51] = 1573094580,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [34]
-		{
-			"does anyon know how to not fuck this up", -- [1]
-			"Ascindis-KirinTor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			745, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573094624,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [35]
-		{
-			"¿?", -- [1]
-			"Fenystrasz-Drakkari", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fenystrasz-Drakkari", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			747, -- [11]
-			"Player-1425-087D54BB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
-			[51] = 1573094625,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
-		{
-			"kill his sons for one lmao thats all i know proper", -- [1]
-			"Khaliya-Galakrond", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Khaliya-Galakrond", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			753, -- [11]
-			"Player-54-08C7AE43", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Khaliya-Galakrond|r",
-			[51] = 1573094659,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
-		{
-			"all heals dead ajja", -- [1]
-			"Dracaarys-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dracaarys-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			756, -- [11]
-			"Player-1427-076F1DF6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Dracaarys-Ragnaros|r",
-			[51] = 1573094682,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
-		{
-			"i revived one but i guess he got smacked lmao", -- [1]
-			"Khaliya-Galakrond", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Khaliya-Galakrond", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			758, -- [11]
-			"Player-54-08C7AE43", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Khaliya-Galakrond|r",
-			[51] = 1573094705,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [39]
-		{
-			"FUCKING RETARD", -- [1]
-			"Lynuzz-Quel'Thalas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lynuzz-Quel'Thalas", -- [5]
+			"Hangnar-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			767, -- [11]
-			"Player-1428-0A3D3DE3", -- [12]
+			"Player-3209-0A381137", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
-			[51] = 1573094757,
+			[52] = "|cff006fdcHangnar-Azralon|r",
+			[51] = 1575210960,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [40]
+		}, -- [24]
 		{
-			"RETARDS", -- [1]
-			"Lynuzz-Quel'Thalas", -- [2]
+			"no one cares", -- [1]
+			"Porkloin-Blackhand", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Lynuzz-Quel'Thalas", -- [5]
+			"Porkloin-Blackhand", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			769, -- [11]
-			"Player-1428-0A3D3DE3", -- [12]
+			"Player-54-0AD4F8FF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
-			[51] = 1573094760,
+			[52] = "|cffa9d271Porkloin-Blackhand|r",
+			[51] = 1575210971,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [41]
+		}, -- [25]
 		{
-			"lol", -- [1]
-			"Healzandhugs-Barthilas", -- [2]
+			"Back", -- [1]
+			"Shoeonhead-Ragnaros", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Healzandhugs-Barthilas", -- [5]
+			"Shoeonhead-Ragnaros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			770, -- [11]
+			"Player-1427-0A82B7AB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Shoeonhead-Ragnaros|r",
+			[51] = 1575210972,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [26]
+		{
+			"we gotta start killing him before both towers fall", -- [1]
+			"Caylarnson-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			771, -- [11]
-			"Player-3723-0A465C9A", -- [12]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
-			[51] = 1573094766,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575210976,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
+		}, -- [27]
 		{
-			"report toxic", -- [1]
-			"Atracasöl-Ragnaros", -- [2]
+			"if we want a chance", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Atracasöl-Ragnaros", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			774, -- [11]
-			"Player-1427-09F554EB", -- [12]
+			772, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
-			[51] = 1573094768,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575210979,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [43]
+		}, -- [28]
 		{
-			"first stack for the orbs", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"i do care", -- [1]
+			"Muathh-Durotan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Muathh-Durotan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			780, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			775, -- [11]
+			"Player-63-026DDF94", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094777,
+			[52] = "|cffa9d271Muathh-Durotan|r",
+			[51] = 1575210984,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [44]
+		}, -- [29]
 		{
-			"vete a la verga tu atracasol", -- [1]
-			"Lynuzz-Quel'Thalas", -- [2]
+			"Details!: Healing Done for Korrak's Revenge [1:13 AC]", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Lynuzz-Quel'Thalas", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			782, -- [11]
-			"Player-1428-0A3D3DE3", -- [12]
+			798, -- [11]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
-			[51] = 1573094778,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [45]
+		}, -- [30]
 		{
-			"vales verga", -- [1]
-			"Lynuzz-Quel'Thalas", -- [2]
+			"1. Lilyessa ....... 50.1K (747, 38.7%)", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Lynuzz-Quel'Thalas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			783, -- [11]
-			"Player-1428-0A3D3DE3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
-			[51] = 1573094782,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [46]
-		{
-			"ok donde vives ?", -- [1]
-			"Atracasöl-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Atracasöl-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			784, -- [11]
-			"Player-1427-09F554EB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
-			[51] = 1573094786,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [47]
-		{
-			"en tu corazon y en el de tu puta madre", -- [1]
-			"Lynuzz-Quel'Thalas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lynuzz-Quel'Thalas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			789, -- [11]
-			"Player-1428-0A3D3DE3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Lynuzz-Quel'Thalas|r",
-			[51] = 1573094794,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [48]
-		{
-			"XD", -- [1]
-			"Chïö-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			790, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094796,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [49]
-		{
-			"tranquilos mis amores :V", -- [1]
-			"Chïö-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			796, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094806,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
-		{
-			"pta tons tengo mrd en mi corazon", -- [1]
-			"Atracasöl-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Atracasöl-Ragnaros", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			799, -- [11]
-			"Player-1427-09F554EB", -- [12]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
-			[51] = 1573094813,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [51]
+		}, -- [31]
 		{
-			"XD", -- [1]
-			"Atracasöl-Ragnaros", -- [2]
+			"2. Strumpett .... 14.3K (385, 11.0%)", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Atracasöl-Ragnaros", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			800, -- [11]
-			"Player-1427-09F554EB", -- [12]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
-			[51] = 1573094815,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [52]
+		}, -- [32]
 		{
-			"ragnaros", -- [1]
-			"Atracasöl-Ragnaros", -- [2]
+			"3. Lvlforarmor .. 6.8K (619, 5.3%)", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Atracasöl-Ragnaros", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			806, -- [11]
-			"Player-1427-09F554EB", -- [12]
+			801, -- [11]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
-			[51] = 1573094834,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [53]
+		}, -- [33]
 		{
-			"its easy to lose your cool", -- [1]
-			"Grokas-WyrmrestAccord", -- [2]
+			"4. Temple ......... 5.7K (298, 4.4%)", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Grokas-WyrmrestAccord", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			816, -- [11]
-			"Player-1171-07CAA80A", -- [12]
+			802, -- [11]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
-			[51] = 1573094856,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [54]
+		}, -- [34]
 		{
-			"when youre on the rag", -- [1]
-			"Grokas-WyrmrestAccord", -- [2]
+			"5. Cowls ........... 5.4K (179, 4.2%)", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Grokas-WyrmrestAccord", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			817, -- [11]
-			"Player-1171-07CAA80A", -- [12]
+			803, -- [11]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
-			[51] = 1573094861,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575211008,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [55]
+		}, -- [35]
 		{
-			"so", -- [1]
-			"Fenystrasz-Drakkari", -- [2]
+			"we have like two healers lol", -- [1]
+			"Temple-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fenystrasz-Drakkari", -- [5]
+			"Temple-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			839, -- [11]
-			"Player-1425-087D54BB", -- [12]
+			822, -- [11]
+			"Player-57-0B839E0F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
-			[51] = 1573094964,
+			[52] = "|cfff38bb9Temple-Illidan|r",
+			[51] = 1575211016,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [56]
+		}, -- [36]
 		{
-			"anyone knows nef?", -- [1]
-			"Fenystrasz-Drakkari", -- [2]
+			"help us in teh bunker", -- [1]
+			"Lvlforarmor-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fenystrasz-Drakkari", -- [5]
+			"Lvlforarmor-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			840, -- [11]
-			"Player-1425-087D54BB", -- [12]
+			823, -- [11]
+			"Player-3678-0B11E9FE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
-			[51] = 1573094969,
+			[52] = "|cffa9d271Lvlforarmor-Thrall|r",
+			[51] = 1575211017,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [57]
+		}, -- [37]
 		{
-			"most powerfull is ragnaros", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"oh the horde has ballerenas that go to SF to", -- [1]
+			"Härléyquinn-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Härléyquinn-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			845, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			824, -- [11]
+			"Player-3676-077267C4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573094985,
+			[52] = "|cffc31d39Härléyquinn-Area52|r",
+			[51] = 1575211020,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [58]
+		}, -- [38]
 		{
-			"cc", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"nice", -- [1]
+			"Härléyquinn-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Härléyquinn-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			846, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			827, -- [11]
+			"Player-3676-077267C4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095021,
+			[52] = "|cffc31d39Härléyquinn-Area52|r",
+			[51] = 1575211026,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [59]
+		}, -- [39]
 		{
-			"stakc", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"get the towers", -- [1]
+			"Critcatbar-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Critcatbar-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			852, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			848, -- [11]
+			"Player-3678-0B984C86", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095059,
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575211062,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [60]
+		}, -- [40]
 		{
-			"left", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"nice", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			853, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			927, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095062,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575211257,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [61]
+		}, -- [41]
 		{
-			"when orbs appear go to rigth", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"gg", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			855, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			928, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095071,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575211258,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [62]
+		}, -- [42]
 		{
-			"maldita sea maldito ingles", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"hit up the big guy", -- [1]
+			"Critcatbar-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			857, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095080,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
-		{
-			"XD", -- [1]
-			"Chïö-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			858, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095081,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [64]
-		{
-			"stack", -- [1]
-			"Chïö-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			859, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095094,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
-		{
-			"stack in rigth", -- [1]
-			"Chïö-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			867, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095138,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [66]
-		{
-			" why doa ll they heals die", -- [1]
-			"Ascindis-KirinTor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			868, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573095146,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [67]
-		{
-			"staccck", -- [1]
-			"Chïö-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			869, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095161,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [68]
-		{
-			"still dont understand the fight", -- [1]
-			"Grokas-WyrmrestAccord", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Grokas-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			876, -- [11]
-			"Player-1171-07CAA80A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
-			[51] = 1573095233,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [69]
-		{
-			"this hurts", -- [1]
-			"Ascindis-KirinTor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			881, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573095264,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [70]
-		{
-			"I'm not sure stack is the right word to use...", -- [1]
-			"Healzandhugs-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Healzandhugs-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			882, -- [11]
-			"Player-3723-0A465C9A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
-			[51] = 1573095267,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [71]
-		{
-			"spread loosely on left side then run to the right side when the orbs spawn? idk, I never did this guy.", -- [1]
-			"Healzandhugs-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Healzandhugs-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			888, -- [11]
-			"Player-3723-0A465C9A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
-			[51] = 1573095314,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [72]
-		{
-			"sorry", -- [1]
-			"Chïö-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			892, -- [11]
-			"Player-1427-09FEA97D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095319,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [73]
-		{
-			"Nefarian!", -- [1]
-			"Fenystrasz-Drakkari", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fenystrasz-Drakkari", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			893, -- [11]
-			"Player-1425-087D54BB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
-			[51] = 1573095321,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [74]
-		{
-			"rag", -- [1]
-			"Atracasöl-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Atracasöl-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			898, -- [11]
-			"Player-1427-09F554EB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
-			[51] = 1573095324,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [75]
-		{
-			"rag", -- [1]
-			"Atracasöl-Ragnaros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Atracasöl-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			899, -- [11]
-			"Player-1427-09F554EB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cAtracasöl-Ragnaros|r",
-			[51] = 1573095326,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [76]
-		{
-			"Ragnaros!", -- [1]
-			"Healzandhugs-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Healzandhugs-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			900, -- [11]
-			"Player-3723-0A465C9A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
-			[51] = 1573095329,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [77]
-		{
-			"Cho'gall!", -- [1]
-			"Veoh-Proudmoore", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Veoh-Proudmoore", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			902, -- [11]
-			"Player-5-07DF4D87", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Veoh-Proudmoore|r",
-			[51] = 1573095334,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [78]
-		{
-			"never fought him either", -- [1]
-			"Grokas-WyrmrestAccord", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Grokas-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			905, -- [11]
-			"Player-1171-07CAA80A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
-			[51] = 1573095342,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [79]
-		{
-			"fuuuuuu", -- [1]
-			"Healzandhugs-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Healzandhugs-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			907, -- [11]
-			"Player-3723-0A465C9A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
-			[51] = 1573095346,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [80]
-		{
-			"stop chogall", -- [1]
-			"Fenystrasz-Drakkari", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fenystrasz-Drakkari", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			908, -- [11]
-			"Player-1425-087D54BB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
-			[51] = 1573095346,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [81]
-		{
-			"goddamn chogall every time XD", -- [1]
-			"Healzandhugs-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Healzandhugs-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			912, -- [11]
-			"Player-3723-0A465C9A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
-			[51] = 1573095358,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [82]
-		{
-			"focus nef?", -- [1]
-			"Fenystrasz-Drakkari", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fenystrasz-Drakkari", -- [5]
+			"Critcatbar-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			941, -- [11]
-			"Player-1425-087D54BB", -- [12]
+			"Player-3678-0B984C86", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Fenystrasz-Drakkari|r",
-			[51] = 1573095514,
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575211292,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [83]
+		}, -- [43]
 		{
-			"kill add", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"Capping: West Frostwolf Tower - 6.7 (Alliance)", -- [1]
+			"Veoxthree-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Veoxthree-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			942, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			947, -- [11]
+			"Player-61-0C5DE576", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095521,
+			[52] = "|cfffefefeVeoxthree-Zul'jin|r",
+			[51] = 1575211315,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [84]
+		}, -- [44]
 		{
-			"omg", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"Capping: Dun Baldar South Bunker - 1:02 (Horde)", -- [1]
+			"Veoxthree-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Veoxthree-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			949, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			"Player-61-0C5DE576", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095575,
+			[52] = "|cfffefefeVeoxthree-Zul'jin|r",
+			[51] = 1575211315,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [85]
+		}, -- [45]
 		{
-			"ok... so ragnaros...time to try this again", -- [1]
-			"Grokas-WyrmrestAccord", -- [2]
+			"ALL PUSH INTO VANS ROOM NOW", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Grokas-WyrmrestAccord", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			951, -- [11]
-			"Player-1171-07CAA80A", -- [12]
+			950, -- [11]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
-			[51] = 1573095588,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575211317,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [86]
+		}, -- [46]
 		{
-			"somebody write ", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"ALL IN", -- [1]
+			"Caylarnson-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Caylarnson-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			952, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			"Player-57-0B9E7443", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095588,
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575211320,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [47]
+		{
+			"lol", -- [1]
+			"Härléyquinn-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Härléyquinn-Area52", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			963, -- [11]
+			"Player-3676-077267C4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc31d39Härléyquinn-Area52|r",
+			[51] = 1575211327,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [48]
+		{
+			"WELL", -- [1]
+			"Caylarnson-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Caylarnson-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			964, -- [11]
+			"Player-57-0B9E7443", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc31d39Caylarnson-Illidan|r",
+			[51] = 1575211329,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [49]
+		{
+			"TOOLS", -- [1]
+			"Porkloin-Blackhand", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Porkloin-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			965, -- [11]
+			"Player-54-0AD4F8FF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Porkloin-Blackhand|r",
+			[51] = 1575211329,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [50]
+		{
+			"they did it with one tower up", -- [1]
+			"Critcatbar-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Critcatbar-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			966, -- [11]
+			"Player-3678-0B984C86", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575211331,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [51]
+		{
+			"Fixate on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1082, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1575211625,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [52]
+		{
+			"Fixate on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1215, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1575211926,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [53]
+		{
+			"PLEASE sshare quest", -- [1]
+			"Archlotlot-Undermine", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Archlotlot-Undermine", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1273, -- [11]
+			"Player-1174-0A9A7055", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Archlotlot-Undermine|r",
+			[51] = 1575212067,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [54]
+		{
+			"Dont just stick around the bunker, pull that npc to the flag as you go", -- [1]
+			"Margulis-Eonar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Margulis-Eonar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1404, -- [11]
+			"Player-96-01C6FC7E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Margulis-Eonar|r",
+			[51] = 1575212378,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [55]
+		{
+			"For the next gy", -- [1]
+			"Margulis-Eonar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Margulis-Eonar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1415, -- [11]
+			"Player-96-01C6FC7E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Margulis-Eonar|r",
+			[51] = 1575212388,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [56]
+		{
+			"why would you backcap ib gy?", -- [1]
+			"Kripter-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kripter-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1514, -- [11]
+			"Player-58-05D56BBE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Kripter-Stormreaver|r",
+			[51] = 1575212607,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [57]
+		{
+			"and then defend it, sigh this is a fail bg", -- [1]
+			"Kripter-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kripter-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1527, -- [11]
+			"Player-58-05D56BBE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Kripter-Stormreaver|r",
+			[51] = 1575212637,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [58]
+		{
+			"i see", -- [1]
+			"Evanzz-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Evanzz-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1533, -- [11]
+			"Player-3209-05E11BAA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Evanzz-Azralon|r",
+			[51] = 1575212658,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [59]
+		{
+			"idots got iceblood", -- [1]
+			"Evanzz-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Evanzz-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1540, -- [11]
+			"Player-3209-05E11BAA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Evanzz-Azralon|r",
+			[51] = 1575212662,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [60]
+		{
+			"thats why there is so many", -- [1]
+			"Evanzz-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Evanzz-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1543, -- [11]
+			"Player-3209-05E11BAA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Evanzz-Azralon|r",
+			[51] = 1575212668,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [61]
+		{
+			"noob hour", -- [1]
+			"Kripter-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kripter-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1544, -- [11]
+			"Player-58-05D56BBE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Kripter-Stormreaver|r",
+			[51] = 1575212672,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [62]
+		{
+			"taking the L", -- [1]
+			"Kripter-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kripter-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1545, -- [11]
+			"Player-58-05D56BBE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Kripter-Stormreaver|r",
+			[51] = 1575212677,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [63]
+		{
+			"geez they got enough ally that went back to defend?", -- [1]
+			"Kalshak-AltarofStorms", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kalshak-AltarofStorms", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1567, -- [11]
+			"Player-78-0C5FB026", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Kalshak-AltarofStorms|r",
+			[51] = 1575212721,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [64]
+		{
+			"doesn't look good", -- [1]
+			"Tenkra-Turalyon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tenkra-Turalyon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1608, -- [11]
+			"Player-3685-0A7A545C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Tenkra-Turalyon|r",
+			[51] = 1575212809,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [65]
+		{
+			"converge or Stonehearth gy, and take and hold this time,  stop spreading out so thin and being easy pickings for ally", -- [1]
+			"Sweetbitter-Zangarmarsh", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sweetbitter-Zangarmarsh", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1645, -- [11]
+			"Player-53-0BA1EC00", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cSweetbitter-Zangarmarsh|r",
+			[51] = 1575212898,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [66]
+		{
+			"and try not to pull npc's", -- [1]
+			"Critcatbar-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Critcatbar-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1649, -- [11]
+			"Player-3678-0B984C86", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575212916,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [67]
+		{
+			"Rockerz", -- [1]
+			"Tenkra-Turalyon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tenkra-Turalyon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1756, -- [11]
+			"Player-3685-0A7A545C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Tenkra-Turalyon|r",
+			[51] = 1575213062,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [68]
+		{
+			"you made my nerves jump for a sec", -- [1]
+			"Tenkra-Turalyon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tenkra-Turalyon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1769, -- [11]
+			"Player-3685-0A7A545C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Tenkra-Turalyon|r",
+			[51] = 1575213069,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [69]
+		{
+			"toiwer", -- [1]
+			"Craftdk-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Craftdk-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1818, -- [11]
+			"Player-3678-0BA2F832", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc31d39Craftdk-Thrall|r",
+			[51] = 1575213164,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [70]
+		{
+			"need stome to stay and help gaurd sh gy", -- [1]
+			"Sweetbitter-Zangarmarsh", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sweetbitter-Zangarmarsh", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1838, -- [11]
+			"Player-53-0BA1EC00", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cSweetbitter-Zangarmarsh|r",
+			[51] = 1575213195,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [71]
+		{
+			"ill help guard GY", -- [1]
+			"Kalshak-AltarofStorms", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kalshak-AltarofStorms", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1846, -- [11]
+			"Player-78-0C5FB026", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Kalshak-AltarofStorms|r",
+			[51] = 1575213215,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [72]
+		{
+			"They are seriously defending shit", -- [1]
+			"Tenkra-Turalyon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tenkra-Turalyon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1873, -- [11]
+			"Player-3685-0A7A545C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Tenkra-Turalyon|r",
+			[51] = 1575213236,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [73]
+		{
+			"we need to push their base and fast", -- [1]
+			"Critcatbar-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Critcatbar-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1920, -- [11]
+			"Player-3678-0B984C86", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575213268,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [74]
+		{
+			"they are turtleing, and backcap if we leave things unattended", -- [1]
+			"Sweetbitter-Zangarmarsh", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sweetbitter-Zangarmarsh", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1930, -- [11]
+			"Player-53-0BA1EC00", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cSweetbitter-Zangarmarsh|r",
+			[51] = 1575213282,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [75]
+		{
+			"go go go guys", -- [1]
+			"Critcatbar-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Critcatbar-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2304, -- [11]
+			"Player-3678-0B984C86", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575213778,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [76]
+		{
+			"фдд шт", -- [1]
+			"Scraydk-BleedingHollow", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Scraydk-BleedingHollow", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2340, -- [11]
+			"Player-73-0C4AE0B9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc31d39Scraydk-BleedingHollow|r",
+			[51] = 1575213823,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [77]
+		{
+			"all in", -- [1]
+			"Scraydk-BleedingHollow", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Scraydk-BleedingHollow", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2342, -- [11]
+			"Player-73-0C4AE0B9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc31d39Scraydk-BleedingHollow|r",
+			[51] = 1575213826,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [78]
+		{
+			"bring him inside", -- [1]
+			"Tenkra-Turalyon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tenkra-Turalyon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2371, -- [11]
+			"Player-3685-0A7A545C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Tenkra-Turalyon|r",
+			[51] = 1575213856,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [79]
+		{
+			"Capping: Stonehearth Bunker - 1:37 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2997, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215050,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [80]
+		{
+			"Capping: Iceblood Graveyard - 1:55 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2998, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215051,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [81]
+		{
+			"Capping: Tower Point - 2:21 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2999, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215052,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [82]
+		{
+			"Capping: Stonehearth Graveyard - 2:34 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3005, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215052,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [83]
+		{
+			"Capping: Iceblood Tower - 2:36 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3006, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215053,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [84]
+		{
+			"Capping: Dun Baldar South Bunker - 3:26 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3009, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215053,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [85]
+		{
+			"Capping: Icewing Bunker - 3:42 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3010, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215053,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [86]
+		{
+			"Capping: Stonehearth Bunker - 7.9 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3033, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215140,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [87]
 		{
-			"when the big bally come then what?", -- [1]
-			"Grokas-WyrmrestAccord", -- [2]
+			"Capping: Iceblood Graveyard - 0:26 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Grokas-WyrmrestAccord", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			953, -- [11]
-			"Player-1171-07CAA80A", -- [12]
+			3034, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Grokas-WyrmrestAccord|r",
-			[51] = 1573095596,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215140,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [88]
 		{
-			"wut", -- [1]
-			"Cotel-Ragnaros", -- [2]
+			"Capping: Tower Point - 0:52 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cotel-Ragnaros", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			961, -- [11]
-			"Player-1427-0A822AC9", -- [12]
+			3035, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Cotel-Ragnaros|r",
-			[51] = 1573095705,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215141,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [89]
 		{
-			"gud", -- [1]
-			"Healzandhugs-Barthilas", -- [2]
+			"Capping: Iceblood Tower - 1:07 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Healzandhugs-Barthilas", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			967, -- [11]
-			"Player-3723-0A465C9A", -- [12]
+			3037, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeHealzandhugs-Barthilas|r",
-			[51] = 1573095748,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215141,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [90]
 		{
-			"thankg od", -- [1]
-			"Ascindis-KirinTor", -- [2]
+			"Capping: Icewing Bunker - 2:14 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			969, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
+			3046, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573095750,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215142,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [91]
 		{
-			"uffff", -- [1]
-			"Chïö-Ragnaros", -- [2]
+			"Capping: Dun Baldar North Bunker - 3:03 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Chïö-Ragnaros", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			970, -- [11]
-			"Player-1427-09FEA97D", -- [12]
+			3050, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Chïö-Ragnaros|r",
-			[51] = 1573095750,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215142,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [92]
 		{
-			"nice jobb all", -- [1]
-			"Yuki-Barthilas", -- [2]
+			"They are sending a group to back cap, watch out", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Yuki-Barthilas", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1004, -- [11]
-			"Player-3723-08804015", -- [12]
+			3105, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeYuki-Barthilas|r",
-			[51] = 1573095761,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215215,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [93]
 		{
-			"no loot", -- [1]
-			"Ascindis-KirinTor", -- [2]
+			"cover that GY", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1008, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
+			3109, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573095763,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215226,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [94]
 		{
-			"ruff", -- [1]
-			"Ascindis-KirinTor", -- [2]
+			"need more defending bunkers, they have a 6 man recap team", -- [1]
+			"Fuzziwuzzi-Staghelm", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ascindis-KirinTor", -- [5]
+			"Fuzziwuzzi-Staghelm", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1009, -- [11]
-			"Player-1071-0B7FA19C", -- [12]
+			3121, -- [11]
+			"Player-160-04B07262", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Ascindis-KirinTor|r",
-			[51] = 1573095765,
+			[52] = "|cfffe7b09Fuzziwuzzi-Staghelm|r",
+			[51] = 1575215256,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [95]
 		{
-			"May I please have |cffa335ee|Hitem:171637::::::::120:71:512::1:6355:120:::|h[Shadow of Dread]|h|r if you don't need it?", -- [1]
-			"Chovall-Azuremyst", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Chovall-Azuremyst", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1012, -- [11]
-			"Player-160-0907361A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Chovall-Azuremyst|r",
-			[51] = 1573095768,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [96]
-		{
-			"gz", -- [1]
-			"Uller-Illidan", -- [2]
+			"Capping: Stormpike Graveyard - 2:00 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Uller-Illidan", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1021, -- [11]
-			"Player-57-0B7F7F7D", -- [12]
+			3193, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Uller-Illidan|r",
-			[51] = 1573095777,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215294,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [96]
+		{
+			"Capping: Stonehearth Graveyard - 2:09 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Myrrima-Illidan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3194, -- [11]
+			"Player-57-0B94725A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215294,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [97]
 		{
-			"lots better with out the glitching like lastnight", -- [1]
-			"Rottentreats-ArgentDawn", -- [2]
+			"Capping: Frostwolf Graveyard - 3:18 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Rottentreats-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1023, -- [11]
-			"Player-75-01BCA7BB", -- [12]
+			3195, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeRottentreats|r",
-			[51] = 1573095779,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215295,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [98]
 		{
-			"nothing too", -- [1]
-			"Yuki-Barthilas", -- [2]
+			"Capping: Stormpike Graveyard - 0:53 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Yuki-Barthilas", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1024, -- [11]
-			"Player-3723-08804015", -- [12]
+			3236, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeYuki-Barthilas|r",
-			[51] = 1573095782,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215361,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [99]
 		{
-			"Hey folks =)", -- [1]
-			"Jharl-ArgentDawn", -- [2]
+			"Capping: Stonehearth Graveyard - 1:02 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			618, -- [11]
-			"Player-75-009A7F30", -- [12]
+			3237, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Jharl|r",
-			[51] = 1573688520,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215362,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [100]
 		{
-			"Feeling better today Fart?", -- [1]
-			"Jharl-ArgentDawn", -- [2]
+			"Capping: Frostwolf Graveyard - 2:11 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			768, -- [11]
-			"Player-75-009A7F30", -- [12]
+			3238, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Jharl|r",
-			[51] = 1573688621,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215362,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [101]
 		{
-			"i can sit up now", -- [1]
-			"Memyselfni-ArgentDawn", -- [2]
+			"OH jesus", -- [1]
+			"Bublé-Daggerspine", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Bublé-Daggerspine", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			819, -- [11]
-			"Player-75-048AA7F3", -- [12]
+			3248, -- [11]
+			"Player-1136-083E3DBF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Memyselfni|r",
-			[51] = 1573688662,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Bublé-Daggerspine|r",
+			[51] = 1575215386,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [102]
 		{
-			"A start I geuess. Hope you bounce back faster", -- [1]
-			"Jharl-ArgentDawn", -- [2]
+			"protect stormpike", -- [1]
+			"Ambrassing-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Ambrassing-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			820, -- [11]
-			"Player-75-009A7F30", -- [12]
+			3256, -- [11]
+			"Player-3209-0512194F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Jharl|r",
-			[51] = 1573688685,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc31d39Ambrassing-Azralon|r",
+			[51] = 1575215403,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [103]
 		{
-			"ya ear infections are no fun", -- [1]
-			"Memyselfni-ArgentDawn", -- [2]
+			"go after naggano", -- [1]
+			"Critcatbar-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Critcatbar-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			953, -- [11]
-			"Player-75-048AA7F3", -- [12]
+			3262, -- [11]
+			"Player-3678-0B984C86", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Memyselfni|r",
-			[51] = 1573688782,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575215404,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [104]
 		{
-			"Oh ick. You riding the antibiotics train?", -- [1]
-			"Jharl-ArgentDawn", -- [2]
+			"thats the healer", -- [1]
+			"Critcatbar-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Critcatbar-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1005, -- [11]
-			"Player-75-009A7F30", -- [12]
+			3277, -- [11]
+			"Player-3678-0B984C86", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Jharl|r",
-			[51] = 1573688817,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575215409,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [105]
 		{
-			"yep", -- [1]
-			"Memyselfni-ArgentDawn", -- [2]
+			"get after towers", -- [1]
+			"Sigenex-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Sigenex-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1006, -- [11]
-			"Player-75-048AA7F3", -- [12]
+			3301, -- [11]
+			"Player-3683-0BA196F7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Memyselfni|r",
-			[51] = 1573688832,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff00fe95Sigenex-Dalaran|r",
+			[51] = 1575215439,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [106]
 		{
-			"I’ve completed the |cffffff00|Hquest:57353:-1:120:120:0|h[Deepcoil Cleansing]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"protect bunker ffs", -- [1]
+			"Suldizôle-Arthas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Suldizôle-Arthas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			467, -- [11]
-			"Player-75-058380E2", -- [12]
+			3322, -- [11]
+			"Player-69-0AF0BB9D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1573942570,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffa22fc8Suldizôle-Arthas|r",
+			[51] = 1575215477,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [107]
 		{
-			"I’ve completed the |cffffff00|Hquest:56032:-1:120:120:0|h[Dirty Dozen]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Capping: West Frostwolf Tower - 2:28 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			477, -- [11]
-			"Player-75-058380E2", -- [12]
+			3335, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1573942721,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215530,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [108]
 		{
-			"I’ve completed the |cffffff00|Hquest:55892:-1:120:120:0|h[Champion Eldanar, Shield of Her Glory]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Capping: Frostwolf Relief Hut - 2:48 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			504, -- [11]
-			"Player-75-058380E2", -- [12]
+			3338, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1573943177,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215531,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [109]
 		{
-			"I’ve completed the |cffffff00|Hquest:56014:-1:120:120:0|h[Runelocked Chest]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Capping: Dun Baldar North Bunker - 2:51 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			565, -- [11]
-			"Player-75-058380E2", -- [12]
+			3339, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1573943675,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215531,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [110]
 		{
-			"I’ve completed the |cffffff00|Hquest:55896:-1:120:120:0|h[Undana, Chilling Assassin]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Capping: Dun Baldar South Bunker - 3:05 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			577, -- [11]
-			"Player-75-058380E2", -- [12]
+			3340, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1573943938,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215532,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [111]
 		{
-			"I’ve completed the |cffffff00|Hquest:56019:-1:120:120:0|h[Runelocked Chest]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Capping: East Frostwolf Tower - 3:47 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			672, -- [11]
-			"Player-75-058380E2", -- [12]
+			3341, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1573945237,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215532,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [112]
 		{
-			"Congratz", -- [1]
-			"Deathbrìnger-ArgentDawn", -- [2]
+			"db north ", -- [1]
+			"Critcatbar-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Critcatbar-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			785, -- [11]
-			"Player-75-08567A5D", -- [12]
+			3397, -- [11]
+			"Player-3678-0B984C86", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Deathbrìnger|r",
-			[51] = 1573946652,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575215579,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [113]
 		{
-			"ty", -- [1]
-			"Zipzemphx-TheScryers", -- [2]
+			"needs someone", -- [1]
+			"Critcatbar-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Critcatbar-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			834, -- [11]
-			"Player-75-08C61864", -- [12]
+			3400, -- [11]
+			"Player-3678-0B984C86", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cZipzemphx|r",
-			[51] = 1573946843,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffe7b09Critcatbar-Thrall|r",
+			[51] = 1575215581,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [114]
 		{
-			"I’ve completed the |cffffff00|Hquest:49413:-1:120:120:0|h[Scamps With Scrolls]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Capping: Dun Baldar North Bunker - 1:30 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			850, -- [11]
-			"Player-75-058380E2", -- [12]
+			3410, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1573947012,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215613,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [115]
 		{
-			"I’ve completed the |cffffff00|Hquest:54060:-1:110:120:0|h[Naga Attack!]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Capping: Dun Baldar South Bunker - 1:43 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			893, -- [11]
-			"Player-75-058380E2", -- [12]
+			3411, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1573947246,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215613,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [116]
 		{
-			"Fixate on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"Capping: East Frostwolf Tower - 2:25 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			168, -- [11]
-			"Player-75-058380E2", -- [12]
+			3412, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1574011158,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215614,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [117]
 		{
-			"Don't mind me all, just character hopping.. :)", -- [1]
-			"Keva-ArgentDawn", -- [2]
+			"Capping: West Frostwolf Tower - 3:00 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			82, -- [11]
-			"Player-75-0B1BCC49", -- [12]
+			3413, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcKeva|r",
-			[51] = 1574021371,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215615,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [118]
 		{
-			"YIKES", -- [1]
-			"Harodin-BurningBlade", -- [2]
+			"Capping: Dun Baldar North Bunker - 0:37 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Harodin-BurningBlade", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			812, -- [11]
-			"Player-91-051829D9", -- [12]
+			3464, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Harodin-BurningBlade|r",
-			[51] = 1574548962,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215666,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [119]
 		{
-			"if you have any guildies that can come help feel free to ask them", -- [1]
-			"Exangelus-Proudmoore", -- [2]
+			"Capping: Dun Baldar South Bunker - 0:50 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Exangelus-Proudmoore", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1241, -- [11]
-			"Player-5-0B8D0BA7", -- [12]
+			3465, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Exangelus-Proudmoore|r",
-			[51] = 1574632959,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215666,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [120]
 		{
-			"meh guess we could try later dont seem to be many on at moment", -- [1]
-			"Exangelus-Proudmoore", -- [2]
+			"Capping: East Frostwolf Tower - 1:33 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Exangelus-Proudmoore", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1244, -- [11]
-			"Player-5-0B8D0BA7", -- [12]
+			3466, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Exangelus-Proudmoore|r",
-			[51] = 1574633108,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215667,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [121]
 		{
-			"mag har arms warrior or surv hunter?", -- [1]
-			"Drakita-Stormrage", -- [2]
+			"Capping: West Frostwolf Tower - 2:08 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Drakita-Stormrage", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			141, -- [11]
-			"Player-60-0C583083", -- [12]
+			3467, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Drakita-Stormrage|r",
-			[51] = 1574641083,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215667,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [122]
 		{
-			"share quests?", -- [1]
-			"Avaenya-Zul'jin", -- [2]
+			"Capping: Dun Baldar South Bunker - 5.3 (Horde)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Avaenya-Zul'jin", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			205, -- [11]
-			"Player-61-0C48B112", -- [12]
+			3481, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Avaenya-Zul'jin|r",
-			[51] = 1574641361,
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215711,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [123]
 		{
-			"howdy all =o", -- [1]
-			"Jharl-ArgentDawn", -- [2]
+			"Capping: East Frostwolf Tower - 0:48 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1147, -- [11]
-			"Player-75-009A7F30", -- [12]
+			3483, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Jharl|r",
-			[51] = 1575059378,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215712,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [124]
 		{
-			"Chain Lightning on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"Capping: West Frostwolf Tower - 1:22 (Alliance)", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			322, -- [11]
-			"Player-75-058380E2", -- [12]
+			3484, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1575066163,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215712,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [125]
 		{
-			"Fixate on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"is there enoguh on O", -- [1]
+			"Jabrym-Barthilas", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Jabrym-Barthilas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1352, -- [11]
-			"Player-75-058380E2", -- [12]
+			3497, -- [11]
+			"Player-3723-0ACEFDC9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1575069620,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffe7b09Jabrym-Barthilas|r",
+			[51] = 1575215769,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [126]
 		{
-			"Fixate on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"Capping: Alliance Boss - 34.3%", -- [1]
+			"Myrrima-Illidan", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Myrrima-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1507, -- [11]
-			"Player-75-058380E2", -- [12]
+			3506, -- [11]
+			"Player-57-0B94725A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1575069988,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcMyrrima-Illidan|r",
+			[51] = 1575215786,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [127]
 	},
 }

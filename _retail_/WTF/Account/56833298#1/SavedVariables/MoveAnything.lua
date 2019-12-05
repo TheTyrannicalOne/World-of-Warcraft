@@ -27,9 +27,9 @@ MADB = {
 				},
 				["VehicleSeatIndicator"] = {
 					["orgPos"] = {
-						"TOPLEFT", -- [1]
+						"TOPRIGHT", -- [1]
 						"VehicleSeatMover", -- [2]
-						"TOPLEFT", -- [3]
+						"TOPRIGHT", -- [3]
 						0, -- [4]
 						0, -- [5]
 					},
@@ -40,6 +40,23 @@ MADB = {
 						"TOPLEFT", -- [3]
 						-6.103515625e-05, -- [4]
 						0.000885009765625, -- [5]
+					},
+				},
+				["TooltipMover"] = {
+					["orgPos"] = {
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["name"] = "TooltipMover",
+					["pos"] = {
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						0, -- [4]
+						490.164988070726, -- [5]
 					},
 				},
 				["TalkingHeadFrame"] = {
@@ -59,20 +76,21 @@ MADB = {
 						3.0517578125e-05, -- [5]
 					},
 				},
-				["GuildBankItemTooltipMover"] = {
+				["OverrideActionBarLeaveFrame"] = {
 					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						0, -- [3]
-						0, -- [4]
+						"BOTTOMLEFT", -- [1]
+						"OverrideActionBarMicroBGR", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						5, -- [4]
+						0, -- [5]
 					},
-					["name"] = "GuildBankItemTooltipMover",
+					["name"] = "OverrideActionBarLeaveFrame",
 					["pos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						-3.0517578125e-05, -- [4]
-						0.0001220703125, -- [5]
+						"BOTTOMLEFT", -- [1]
+						"OverrideActionBarMicroBGR", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						28.3333740234375, -- [4]
+						23.33333206176758, -- [5]
 					},
 				},
 				["OverrideActionButtonsMover"] = {
@@ -101,28 +119,27 @@ MADB = {
 						17, -- [5]
 					},
 				},
-				["TooltipMover"] = {
+				["GuildBankItemTooltipMover"] = {
 					["orgPos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						0, -- [3]
 						0, -- [4]
-						0, -- [5]
 					},
-					["name"] = "TooltipMover",
+					["name"] = "GuildBankItemTooltipMover",
 					["pos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						0, -- [4]
-						490.164988070726, -- [5]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						-3.0517578125e-05, -- [4]
+						0.0001220703125, -- [5]
 					},
 				},
 			},
 		},
 	},
-	["closeGUIOnEscape"] = false,
-	["playSound"] = false,
-	["noBags"] = false,
 	["frameListRows"] = 18,
+	["noBags"] = false,
+	["playSound"] = false,
+	["closeGUIOnEscape"] = false,
 }

@@ -11,18 +11,18 @@ OneRing_Config = {
 		["Shanyt"] = {
 			["Bindings"] = {
 				["Mounts"] = "ALT-Q",
-				["Utility"] = "ALT-E",
-				["Mounts7"] = "ALT-Q",
 				["OPieAutoQuest"] = false,
+				["Mounts7"] = "ALT-Q",
+				["Utility"] = "ALT-E",
 			},
 		},
 		["default"] = {
 			["Bindings"] = {
 				["OPieAutoQuest"] = false,
 				["Mounts2"] = "ALT-Q",
-				["Utility2"] = "ALT-E",
-				["Mounts3"] = "ALT-Q",
 				["Utility1"] = "ALT-E",
+				["Mounts3"] = "ALT-Q",
+				["Utility2"] = "ALT-E",
 			},
 		},
 	},
@@ -102,10 +102,10 @@ OneRing_Config = {
 					460, -- [2]
 					["sliceToken"] = "ABuehEXfjwe",
 				}, -- [5]
-				["name"] = "Mounts",
+				["limit"] = "Tynkster-Dalaran",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Tynkster-Dalaran",
+				["name"] = "Mounts",
 			},
 			["Utility1"] = {
 				{
@@ -113,10 +113,10 @@ OneRing_Config = {
 					64488, -- [2]
 					["sliceToken"] = "ABuedyqmNB16",
 				}, -- [1]
-				["name"] = "Utility",
+				["limit"] = "Vancard-Zul'jin",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Utility",
 			},
 			["Mounts"] = {
 				{
@@ -179,10 +179,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABuede=1Sr1m",
 					["id"] = 75973,
 				}, -- [15]
-				["name"] = "Mounts",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Mounts",
 			},
 			["Utility"] = {
 				{
@@ -297,10 +297,10 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuedyqmNBrM",
 				}, -- [19]
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Vancard-Zul'jin",
 			},
 			["SpecMenu"] = {
 				{

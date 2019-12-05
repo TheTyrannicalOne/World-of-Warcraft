@@ -48,13 +48,6 @@ X: 0
 Y: 0
 W: 365
 H: 240
-Frame: VehicleSeatIndicator
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 148
-Y: -188
-W: 128
-H: 128
 Frame: AllTheThings-Window-Prime
 FrameLevel: 1
 Anchor: CENTER
@@ -153,3 +146,10 @@ X: 0
 Y: 0
 W: 300
 H: 300
+Frame: VehicleSeatIndicator
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 148
+Y: -188
+W: 128
+H: 128
