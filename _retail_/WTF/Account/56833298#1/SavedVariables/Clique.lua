@@ -16,12 +16,12 @@ CliqueDB3 = {
 		},
 		["Tynkster - Dalaran"] = {
 			["spec1_profileKey"] = "Tynkster - Dalaran",
-			["specswap"] = false,
+			["spec2_profileKey"] = "Tynkster - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
+			["specswap"] = false,
 			["spec3_profileKey"] = "Tynkster - Dalaran",
 			["alerthidden"] = true,
-			["spec2_profileKey"] = "Tynkster - Dalaran",
 		},
 	},
 	["profileKeys"] = {

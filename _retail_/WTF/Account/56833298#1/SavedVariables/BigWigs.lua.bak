@@ -13,11 +13,11 @@ BigWigs3DB = {
 			[74] = true,
 			[76] = true,
 			[-575] = true,
-			[295] = true,
+			[-510] = true,
 			[-514] = true,
 			[-1152] = true,
+			[295] = true,
 			[-607] = true,
-			[-510] = true,
 			[-609] = true,
 			[-563] = true,
 			[-437] = true,
@@ -80,9 +80,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Pull"] = {
-		},
 		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Plugins_Pull"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {

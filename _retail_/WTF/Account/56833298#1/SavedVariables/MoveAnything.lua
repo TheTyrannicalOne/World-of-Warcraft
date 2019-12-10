@@ -27,9 +27,9 @@ MADB = {
 				},
 				["VehicleSeatIndicator"] = {
 					["orgPos"] = {
-						"TOPRIGHT", -- [1]
+						"TOPLEFT", -- [1]
 						"VehicleSeatMover", -- [2]
-						"TOPRIGHT", -- [3]
+						"TOPLEFT", -- [3]
 						0, -- [4]
 						0, -- [5]
 					},

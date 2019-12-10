@@ -1,33 +1,65 @@
-12/1 19:29:37.569  Connection Initialize
-12/1 19:29:44.413  Glue Start Login
-12/1 19:29:44.413  BattleNet Attempt Logon
-12/1 19:29:44.727  BattleNet Front Connected
-12/1 19:29:44.850  BattleNet Logon Queue Update
-12/1 19:29:45.181  BattleNet Logon Complete
-12/1 19:29:45.358  BattleNet Game Account Name
-12/1 19:29:45.358  BattleNet Game Account Name
-12/1 19:29:45.358  BattleNet Attempt Complete Login
-12/1 19:29:45.827  BattleNet Realm List Ticket
-12/1 19:29:45.927  BattleNet Sub Region List
-12/1 19:29:46.312  BattleNet Last Played Char
-12/1 19:29:46.381  BattleNet Last Played Char
-12/1 19:29:46.473  BattleNet Last Played Char
-12/1 19:29:46.473  BattleNet Last Played Char
-12/1 19:29:46.612  BattleNet Last Played Char
-12/1 19:29:46.696  BattleNet Last Played Char
-12/1 19:29:46.696  BattleNet Join Realm
-12/1 19:29:46.996  BattleNet Realm Join
-12/1 19:29:46.996  Change Connection
-12/1 19:29:46.996  Connect
-12/1 19:30:08.005  Handle Cant Connect
-12/1 19:30:08.059  Handle Connect
-12/1 19:30:10.344  Handle Auth Response: 0
-12/1 19:30:10.344  Glue Authed To WoW: 0
-12/1 19:30:10.686  BattleNet Connected To Realm
-12/1 19:30:10.686  BattleNet Front Disconnecting
-12/1 19:30:10.851  BattleNet Front Disconnected
-12/1 19:30:11.320  Handle Char Enum
-12/1 20:07:36.837  Handle Logout Response: 0
-12/1 20:07:37.298  Handle Logout Complete
-12/1 20:07:43.746  Disconnect: 13
-12/1 20:07:43.746  Connection Destroy
+12/10 00:46:28.067  Connection Initialize
+12/10 00:46:34.664  Glue Start Login
+12/10 00:46:34.664  BattleNet Attempt Logon
+12/10 00:46:34.986  BattleNet Front Connected
+12/10 00:46:35.124  BattleNet Logon Queue Update
+12/10 00:46:35.417  BattleNet Logon Complete
+12/10 00:46:35.509  BattleNet Game Account Name
+12/10 00:46:35.571  BattleNet Game Account Name
+12/10 00:46:35.571  BattleNet Attempt Complete Login
+12/10 00:46:36.047  BattleNet Realm List Ticket
+12/10 00:46:36.155  BattleNet Sub Region List
+12/10 00:46:36.609  BattleNet Last Played Char
+12/10 00:46:36.609  BattleNet Join Realm
+12/10 00:46:36.839  BattleNet Realm Join
+12/10 00:46:36.839  Change Connection
+12/10 00:46:36.839  Connect
+12/10 00:46:57.856  Handle Cant Connect
+12/10 00:46:57.910  Handle Connect
+12/10 00:47:00.180  Handle Auth Response: 0
+12/10 00:47:00.180  Glue Authed To WoW: 0
+12/10 00:47:00.521  BattleNet Connected To Realm
+12/10 00:47:00.521  BattleNet Front Disconnecting
+12/10 00:47:00.676  Handle Char Enum
+12/10 00:47:00.823  Handle Char Enum
+12/10 00:47:00.823  BattleNet Front Disconnected
+12/10 00:49:50.545  Handle Logout Response: 0
+12/10 00:49:50.966  Handle Logout Complete
+12/10 00:49:55.126  Handle Char Enum
+12/10 00:50:03.402  BattleNet Request Change Realm List
+12/10 00:50:03.686  BattleNet Realm List Ticket
+12/10 00:50:04.233  BattleNet Sub Region List
+12/10 00:50:05.149  BattleNet Realm List
+12/10 00:50:11.168  BattleNet Join Realm
+12/10 00:50:11.664  BattleNet Realm Join
+12/10 00:50:11.664  Change Connection
+12/10 00:50:11.664  Handle Disconnect
+12/10 00:50:11.664  Connect
+12/10 00:50:32.677  Handle Cant Connect
+12/10 00:50:32.723  Handle Connect
+12/10 00:50:34.624  Handle Auth Response: 0
+12/10 00:50:34.624  Glue Authed To WoW: 0
+12/10 00:50:34.632  BattleNet Connected To Realm
+12/10 00:50:34.914  Handle Char Enum
+12/10 00:53:18.278  Handle Logout Response: 0
+12/10 00:53:18.688  Handle Logout Complete
+12/10 00:53:22.874  Handle Char Enum
+12/10 00:53:28.575  BattleNet Request Change Realm List
+12/10 00:53:28.836  BattleNet Realm List Ticket
+12/10 00:53:29.521  BattleNet Sub Region List
+12/10 00:53:30.360  BattleNet Realm List
+12/10 00:53:32.721  BattleNet Join Realm
+12/10 00:53:33.294  BattleNet Realm Join
+12/10 00:53:33.294  Change Connection
+12/10 00:53:33.302  Handle Disconnect
+12/10 00:53:33.302  Connect
+12/10 00:53:54.313  Handle Cant Connect
+12/10 00:53:54.359  Handle Connect
+12/10 00:53:56.659  Handle Auth Response: 0
+12/10 00:53:56.659  Glue Authed To WoW: 0
+12/10 00:53:56.672  BattleNet Connected To Realm
+12/10 00:53:56.933  Handle Char Enum
+12/10 00:55:23.006  Handle Logout Response: 0
+12/10 00:55:23.450  Handle Logout Complete
+12/10 00:55:29.221  Disconnect: 13
+12/10 00:55:29.223  Connection Destroy

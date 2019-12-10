@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0311,
-	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 160911,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 296,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::118:104::11:4:4932:4933:4935:1488:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 298,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:4935:1490:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 155259,
@@ -52,10 +49,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159337::::::::117:104:512:19:1:4776:117:::|h[Grips of Electrified Defense]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 128173,
-			["Level"] = 284,
+			["ID"] = 159458,
+			["Level"] = 375,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::119:104:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:159458::::::::120:104::1:4:4777:1542:5850:4781:::|h[Seal of the Regal Loa]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 122529,
@@ -71,9 +68,9 @@ PawnOptions = {
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 276,
+			["Level"] = 284,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::118:104:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::120:104:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122261,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:159549::::::::118:104:512::2:4796:1678:118:::|h[Zocali Warhammer of the Quickblade]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

@@ -5,9 +5,6 @@ V["skins"]["addons"] = {
 }
 
 V["sle"] = {
-	["Armory"] = {
-		["UseArtMonitor"] = true,
-	},
 	["equip"] = {
 		["enable"] = false,
 		["spam"] = false,
@@ -251,8 +248,10 @@ if G["profileCopy"] then
 		["actionbars"] = {
 			["general"] = true,
 		},
-		["auras"] = {
-			["general"] = true,
+		["armory"] = {
+			["character"] = true,
+			["inspect"] = true,
+			["stats"] = true,
 		},
 		["backgrounds"] = {
 			["bg1"] = true,

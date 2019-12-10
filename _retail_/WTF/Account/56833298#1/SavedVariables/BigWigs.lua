@@ -12,7 +12,7 @@ BigWigs3DB = {
 			[294] = true,
 			[-514] = true,
 			[-1152] = true,
-			[-607] = true,
+			[295] = true,
 			[-367] = true,
 			[-609] = true,
 			[-563] = true,
@@ -24,11 +24,11 @@ BigWigs3DB = {
 			[73] = true,
 			[75] = true,
 			[-567] = true,
-			[-510] = true,
+			[-607] = true,
 			[-1352] = {
 				[2] = true,
 			},
-			[295] = true,
+			[-510] = true,
 		},
 	},
 	["profileKeys"] = {

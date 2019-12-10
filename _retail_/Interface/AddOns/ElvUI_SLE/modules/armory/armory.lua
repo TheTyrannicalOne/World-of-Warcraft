@@ -18,55 +18,6 @@ local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllus
 
 local HandleModifiedItemClick = HandleModifiedItemClick
 
---<<Class-to-Spec and localizing stuffs>>--
---[[local ClassToSpec = {
-	["DEATHKNIGHT"] = {
-		["Blood"] = 250, ["Frost"] = 251, ["Unholy"] = 252,
-	},
-	["DEMONHUNTER"] = {
-		["Havoc"] = 577, ["Vengeance"] = 581,
-	},
-	["DRUID"] = {
-		["Balance"] = 102, ["Feral"] = 103, ["Guardian"] = 104, ["Restoration"] = 105,
-	},
-	["HUNTER"] = {
-		["Beast"] = 253, ["Marksmanship"] = 254, ["Survival"] = 255,
-	},
-	["MAGE"] = {
-		["Arcane"] = 62, ["Fire"] = 63, ["Frost"] = 64,
-	},
-	["MONK"] = {
-		["Brewmaster"] = 268, ["Mistweaver"] = 270, ["Windwalker"] = 269,
-	},
-	["PALADIN"] = {
-		["Holy"] = 65, ["Protection"] = 66, ["Retribution"] = 70,
-	},
-	["PRIEST"] = {
-		["Discipline"] = 256, ["Holy"] = 257, ["Shadow"] = 258,
-	},
-	["ROGUE"] = {
-		["Assassination"] = 259, ["Combat"] = 260, ["Subtlety"] = 261,
-	},
-	["SHAMAN"] = {
-		["Elemental"] = 262, ["Enhancement"] = 263, ["Restoration"] = 264,
-	},
-	["WARLOCK"] = {
-		["Affliction"] = 265, ["Demonology"] = 266, ["Destruction"] = 267,
-	},
-	["WARRIOR"] = {
-		["Arms"] = 71, ["Fury"] = 72, ["Protection"] = 73,
-	},
-}
---This basically builds a list of locales for each class and spec name.
---Obviously doesn't support locale selection cause info comes from server and it doesn't give a fuck about elvui settings.
-for ClassName, Spec_ID_Table in T.pairs(ClassToSpec) do
-	-- L["SLE_Armory_"..ClassName] = KF:Color_Class(ClassName, LOCALIZED_CLASS_NAMES_MALE[ClassName])
-
-	-- for SpecName, ID in T.pairs(Spec_ID_Table) do
-		-- _, L["SLE_Armory_"..ClassName.."_"..SpecName] = GetSpecializationInfoByID(ID)
-	-- end
-end]]
-
 	--Create ench replacement string DB
 if not SLE_ArmoryDB or T.type(SLE_ArmoryDB) ~= "table" then
 	SLE_ArmoryDB = {
@@ -134,6 +85,7 @@ end
 --Updates the frame
 function Armory:UpdatePageInfo(frame, which, guid, event)
 	if not (frame and which) then return end
+	if not Armory:CheckOptions(which) then return end 
 	local window = T.lower(which)
 	local unit = (which == 'Character' and 'player') or frame.unit
 	for i, SlotName in T.pairs(Armory.Constants.GearList) do
@@ -160,9 +112,8 @@ function Armory:UpdatePageInfo(frame, which, guid, event)
 end
 
 --Updates ilvl and everything tied to the item somehow
--- M:UpdatePageStrings(i, iLevelDB, Slot, slotInfo, which) -- `which` is used by plugins
-function Armory:UpdatePageStrings(i, iLevelDB, Slot, slotInfo, which) -- `which` is used by plugins
--- function Armory:UpdatePageStrings(i, iLevelDB, Slot, iLvl, enchant, gems, essences, enchantColors, itemLevelColors, which, fullEnchantText)
+function Armory:UpdatePageStrings(i, iLevelDB, Slot, slotInfo, which)
+	if not Armory:CheckOptions(which) then return end 
 	if slotInfo.itemLevelColors then
 		local window = T.lower(which) --to know which settings table to use
 		if E.db.sle.armory[window] and E.db.sle.armory[window].enable then --If settings table actually exists and armory for it is enabled
@@ -200,7 +151,7 @@ function Armory:UpdatePageStrings(i, iLevelDB, Slot, slotInfo, which) -- `which`
 	--If put inside "if slotInfo.itemLevelColors" condition will not actually hide gem links/warnings on empty slots
 	Armory:UpdateGemInfo(Slot, which)
 	Armory:CheckForMissing(which, Slot, slotInfo.iLvl, slotInfo.gems, slotInfo.essences, slotInfo.enchantTextShort)
-	CA:Calculate_Durability(which, Slot)
+	if CA.DurabilityFontSet then CA:Calculate_Durability(which, Slot) end
 end
 
 ---Store gem info in our hidden frame
@@ -335,13 +286,13 @@ function Armory:CheckForMissing(which, Slot, iLvl, gems, essences, enchant)
 	if iLvl and Armory.Constants.EnchantableSlots[SlotName] and not enchant then --Item should be enchanted, but no string actually sent. This bastard is slacking
 		local itemLink = T.GetInventoryItemLink(which == "Character" and "player" or _G["InspectFrame"].unit, Slot.ID)
 		local classID, subclassID = T.select(12, GetItemInfo(itemLink))
-		if classID == 4 and subclassID == 6 then --Shields are special
+		if (classID == 4 and subclassID == 6) or (classID == 4 and subclassID == 0 and Slot.ID == 17) then --Shields are special
 			noChant = false
 		else
 			noChant = true
 		end
 	end 
-	if gems and not Slot.ID ~= 2 then --If gems found and not neck
+	if gems and Slot.ID ~= 2 then --If gems found and not neck
 		for i = 1, Armory.Constants.MaxGemSlots do
 			local texture = Slot["textureSlot"..i]
 			if (texture and texture:GetTexture()) and (Slot["SLE_Gem"..i] and not Slot["SLE_Gem"..i].Link) then noGem = true; break end --If there is a texture (e.g. actual slot), but no link = no gem installed
@@ -353,6 +304,7 @@ function Armory:CheckForMissing(which, Slot, iLvl, gems, essences, enchant)
 		if noChant then message = message.."|cffff0000"..L["Not Enchanted"].."|r\n" end
 		Slot["SLE_Warning"].Reason = message or nil
 		Slot["SLE_Warning"]:Show()
+		if Slot.SLE_Gradient then Slot.SLE_Gradient:SetVertexColor(1, 0, 0) end
 	else
 		Slot["SLE_Warning"]:Hide()
 	end
@@ -374,35 +326,46 @@ function Armory:UpdateCharacterInfo()
 end
 
 function Armory:ToggleItemLevelInfo(setupCharacterPage)
-	if _G["InspectFrame"] and _G["InspectFrame"]:IsShown() and E.db.general.itemLevel.displayInspectInfo then
+	if _G["InspectFrame"] and _G["InspectFrame"]:IsShown() and Armory:CheckOptions("Inspect") and E.db.general.itemLevel.displayInspectInfo then
 		M:UpdateInspectInfo()
 	else
 		M:ClearPageInfo(_G["InspectFrame"], "Inspect")
 	end
 end
 
+function Armory:CheckOptions(which)
+	if not E.private.skins.blizzard.enable then return false end
+	if (which == "Character" and not E.private.skins.blizzard.character) or (which == "Inspect" and not E.private.skins.blizzard.inspect) then return false end
+	return true
+end
+
 function Armory:Initialize()
-	Armory:BuildFrameDefaultsCache("Character")
+	if not Armory:CheckOptions() then return end
+	
 
 	--May be usefull later
 	Armory.ScanTT = CreateFrame("GameTooltip", "SLE_Armory_ScanTT", nil, "GameTooltipTemplate")
 	Armory.ScanTT:SetOwner(UIParent, 'ANCHOR_NONE')
 
-	CA = SLE:GetModule("Armory_Character")
-	IA = SLE:GetModule("Armory_Inspect")
-	SA = SLE:GetModule("Armory_Stats")
-
-	hooksecurefunc(M, "UpdateInspectInfo", Armory.UpdateInspectInfo)
-	hooksecurefunc(M, "UpdateCharacterInfo", Armory.UpdateCharacterInfo)
 	hooksecurefunc(M, "UpdatePageInfo", Armory.UpdatePageInfo)
 	hooksecurefunc(M, "UpdatePageStrings", Armory.UpdatePageStrings)
 	hooksecurefunc(M, "ToggleItemLevelInfo", Armory.ToggleItemLevelInfo)
 
-	CA:LoadAndSetup()
-	SA:LoadAndSetup()
-	IA:PreSetup()
+	if Armory:CheckOptions("Character") then
+		CA = SLE:GetModule("Armory_Character")
+		SA = SLE:GetModule("Armory_Stats")
+		Armory:BuildFrameDefaultsCache("Character")
+		hooksecurefunc(M, "UpdateCharacterInfo", Armory.UpdateCharacterInfo)
+		CA:LoadAndSetup()
+		SA:LoadAndSetup()
+		Armory:UpdateCharacterInfo()
+	end
 
-	Armory:UpdateCharacterInfo()
+	if Armory:CheckOptions("Inspect") then
+		IA = SLE:GetModule("Armory_Inspect")
+		hooksecurefunc(M, "UpdateInspectInfo", Armory.UpdateInspectInfo)
+		IA:PreSetup()
+	end
 
 	--Move Pawn buttons. Cause Pawn buttons happen to be overlapped by some shit
 	if SLE._Compatibility["Pawn"] then

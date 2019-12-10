@@ -198,6 +198,7 @@ SkadaDB = {
 			},
 		},
 		["Default"] = {
+			["showtotals"] = true,
 			["modeclicks"] = {
 				["DPS"] = 2,
 				["Focus gained"] = 4,
@@ -209,16 +210,18 @@ SkadaDB = {
 				["Power"] = false,
 				["Threat"] = true,
 			},
-			["showtotals"] = true,
-			["report"] = {
-				["number"] = 9,
-				["target"] = "Seroin-Bloodhoof",
-				["channel"] = "raid",
-			},
 			["windows"] = {
 				{
 					["titleset"] = false,
 					["barheight"] = 17,
+					["classicons"] = false,
+					["barslocked"] = true,
+					["wipemode"] = "Focus gained",
+					["y"] = 41.00161361694336,
+					["barfont"] = "Trebuchet MS",
+					["name"] = "Damage",
+					["modeincombat"] = "Focus gained",
+					["point"] = "BOTTOMRIGHT",
 					["barbgcolor"] = {
 						["a"] = 1,
 						["b"] = 0.152941176470588,
@@ -230,34 +233,6 @@ SkadaDB = {
 						["g"] = 0.63921568627451,
 						["r"] = 1,
 					},
-					["barfontsize"] = 10,
-					["classicons"] = false,
-					["barslocked"] = true,
-					["modeincombat"] = "Focus gained",
-					["wipemode"] = "Focus gained",
-					["bartexture"] = "Minimalist",
-					["barwidth"] = 234.0005187988281,
-					["barfont"] = "Trebuchet MS",
-					["y"] = 41.00161361694336,
-					["x"] = -179.000244140625,
-					["name"] = "Damage",
-					["title"] = {
-						["font"] = "Arial Narrow",
-						["fontsize"] = 20,
-						["color"] = {
-							["a"] = 0,
-							["r"] = 0.125490196078431,
-							["g"] = 0.125490196078431,
-							["b"] = 0.125490196078431,
-						},
-						["height"] = 13,
-						["borderthickness"] = 0,
-						["texture"] = "Graphite",
-					},
-					["buttons"] = {
-						["stop"] = true,
-					},
-					["mode"] = "Focus gained",
 					["background"] = {
 						["color"] = {
 							["a"] = 0.89495262503624,
@@ -265,11 +240,31 @@ SkadaDB = {
 							["g"] = 0.0627450980392157,
 							["r"] = 0.0627450980392157,
 						},
-						["bordertexture"] = "None",
 						["borderthickness"] = 0,
 						["height"] = 142.0002746582031,
+						["bordertexture"] = "None",
 					},
-					["point"] = "BOTTOMRIGHT",
+					["barfontsize"] = 10,
+					["mode"] = "Focus gained",
+					["buttons"] = {
+						["stop"] = true,
+					},
+					["barwidth"] = 234.0005187988281,
+					["bartexture"] = "Minimalist",
+					["title"] = {
+						["color"] = {
+							["a"] = 0,
+							["r"] = 0.125490196078431,
+							["g"] = 0.125490196078431,
+							["b"] = 0.125490196078431,
+						},
+						["font"] = "Arial Narrow",
+						["fontsize"] = 20,
+						["height"] = 13,
+						["borderthickness"] = 0,
+						["texture"] = "Graphite",
+					},
+					["x"] = -179.000244140625,
 				}, -- [1]
 				{
 					["titleset"] = false,
@@ -354,13 +349,18 @@ SkadaDB = {
 					["version"] = 1,
 				}, -- [2]
 			},
+			["icon"] = {
+				["minimapPos"] = 192.079530184408,
+			},
+			["report"] = {
+				["number"] = 9,
+				["channel"] = "raid",
+				["target"] = "Seroin-Bloodhoof",
+			},
 			["versions"] = {
 				["1.6.7"] = true,
 				["1.6.4"] = true,
 				["1.6.3"] = true,
-			},
-			["icon"] = {
-				["minimapPos"] = 192.079530184408,
 			},
 			["reset"] = {
 				["instance"] = 2,
@@ -370,15 +370,15 @@ SkadaDB = {
 		["Shanyt - Argent Dawn"] = {
 			["windows"] = {
 				{
-					["barslocked"] = true,
 					["y"] = 19.8658561706543,
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
+					["x"] = -218.00634765625,
+					["barslocked"] = true,
 					["barwidth"] = 253.1667785644531,
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
 					["background"] = {
 						["height"] = 214.1883239746094,
 					},
-					["x"] = -218.00634765625,
 				}, -- [1]
 				{
 					["titleset"] = true,

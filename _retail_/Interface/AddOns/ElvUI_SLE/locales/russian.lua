@@ -127,6 +127,7 @@ L["Checked Texture Color"] = "Цвет выделения"
 
 --Armory
 L["SLE_Armory_Info"] = "Оружейная представляет стандартную информацию о предметах из ElvUI в другом виде. Имейте ввиду, что отображение чар, камней и уровней предметов не будет функционировать без активации соответствующей опции ElvUI. Для перехода в соответствующую секцию настроек, нажмите на кнопку ниже."
+L["SLE_Armory_SkinDisabled"] = "Ты вырубил все скины, так что мы вырубили все функции во избежание адовых графических глюков. А чего еще ты ждал?"
 L["Average"] = "Средний"
 L["Not Enchanted"] = "Не зачаровано"
 L["Empty Socket"] = "Пустой слот"
@@ -184,6 +185,8 @@ L["Enables a small arrow-like indicator on the item slot. Howering over this arr
 L["Glow Number"] = "Элементов свечения"
 L["Glow Offset"] = "Отступ свечения"
 L["Categories"] = "Категории"
+L["Decimals"] = "Десятичные доли"
+L["Show stats with decimals."] = "От ображать характеристики с десятичными долями."
 
 --AFK
 L["You Are Away From Keyboard for"] = "Вы отошли на"
@@ -890,6 +893,14 @@ L["Makes frame portrait visible regardless of health level when overlay portrait
 L["Classbar Texture"] = "Текстура классовой полосы"
 L["Resize Health Prediction"] = "Подогнать входящее исцеление"
 L["Slightly changes size of health prediction bars."] = "Немного изменяет размер полос входящего исцеления."
+
+--Unitframes, tags
+L["SLE_Tag_sl-pvptimer"] = "Альтернативная версия \"pvptimer\". Не отображает надпись \"PvP\"."
+L["SLE_Tag_sl-pvplevel"] = "Показывает уровень чести юнита."
+L["SLE_Tag_absorb-sl-short"] = "Альтернативная версия \"absorbs\". Показывает 0, когда нет эффектов поглощения. Короткое значение"
+L["SLE_Tag_absorb-sl-full"] = "Альтернативная версия \"absorbs\". Показывает 0, когда нет эффектов поглощения. Полное значение"
+-- L["SLE_Tag_health-current-rehok"] = true
+L["SLE_Tag_range-sl"] = "Показывает примерное расстояние до юнита.."
 
 --Viewport
 L["Viewport"] = true

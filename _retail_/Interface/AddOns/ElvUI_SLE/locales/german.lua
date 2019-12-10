@@ -128,6 +128,7 @@ L["Checked Texture Color"] = "Gedrückte Textur Farbe"
 
 --Armory
 L["SLE_Armory_Info"] = "Armory is designed to provide standard ElvUI item info in a different way. Keep in mind that display of enchantments, gems and item levels is only available when corresponding ElvUI option is enabled. Use button below to visit mentioned feature's config section."
+L["SLE_Armory_SkinDisabled"] = "You disabled all the skins, so we disabled all Armory features to avoid graphics being broken as heck. What esle did you expect?"
 L["Average"] = "Durschnitt"
 L["Not Enchanted"] = "Nicht verzaubert"
 L["Empty Socket"] = "Leerer Sockel"
@@ -185,6 +186,8 @@ L["Enables a small arrow-like indicator on the item slot. Howering over this arr
 L["Glow Number"] = true
 L["Glow Offset"] = true
 L["Categories"] = true
+L["Decimals"] = true
+L["Show stats with decimals."] = true
 
 --AFK
 L["You Are Away From Keyboard for"] = "Du bist nicht an der Tastatur für"
@@ -887,6 +890,14 @@ L["Classbar Texture"] = true
 L["Resize Health Prediction"] = true
 L["Slightly changes size of health prediction bars."] = true
 L["Always Compare Items"] = true
+
+--Unitframes, tags
+L["SLE_Tag_sl-pvptimer"] = "Slightly altered version of \"pvptimer\" tag. Features no \"PvP\" string in front of the timer."
+L["SLE_Tag_sl-pvplevel"] = "Shows unit's honor level."
+L["SLE_Tag_absorb-sl-short"] = "Slightly altered version of \"absorbs\" tag. Show 0 when no absorbs present. Value is shortened."
+L["SLE_Tag_absorb-sl-full"] = "Slightly altered version of \"absorbs\" tag. Show 0 when no absorbs present. Absolute value."
+-- L["SLE_Tag_health-current-rehok"] = true
+L["SLE_Tag_range-sl"] = "Shows approximate range between you and the unit."
 
 --Viewport
 L["Viewport"] = true

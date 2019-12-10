@@ -39,6 +39,16 @@ BtWQuestSettingsData = {
         {
             name = L["SHOW_MAP_PINS"],
             value = "showMapPins",
+            onChange = function (id, value)
+                if value then
+                    -- Trigger creation of map pins
+                    BtWQuestsFrame:OnEvent("PLAYER_ENTERING_WORLD")
+                end
+
+                if WorldMapFrame:IsShown() then
+                    WorldMapFrame:RefreshAllDataProviders()
+                end
+            end,
             default = false,
         },
         {
@@ -633,6 +643,7 @@ function BtWQuestsMixin:OnLoad()
     self:RegisterForDrag("LeftButton")
 
     self:RegisterEvent("ADDON_LOADED")
+    self:RegisterEvent("PLAYER_ENTERING_WORLD")
 
     self:RegisterEvent("ZONE_CHANGED")
     self:RegisterEvent("ZONE_CHANGED_INDOORS")
@@ -692,6 +703,10 @@ function BtWQuestsMixin:OnEvent(event, ...)
             --     BtWQuests_AddOpenChainMenuItem(self, self.questID)
             -- end)
 
+        end
+    elseif event == "PLAYER_ENTERING_WORLD" then
+        if not self.addedQuestDataProviders and BtWQuestSettingsData:GetValue("showMapPins") then
+            self.addedQuestDataProviders = true
             WorldMapFrame:AddDataProvider(CreateFromMixins(BtWQuestsQuestDataProviderMixin));
         end
     elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "ZONE_CHANGED_NEW_AREA" then
@@ -850,6 +865,8 @@ function BtWQuests_AddWaypoint(mapId, x, y, name)
         TomTom:AddWaypoint(mapId, x, y, {
             title = name,
         })
+    elseif BtWQuests.Guide then
+        BtWQuests.Guide:AddWayPoint(mapId, x, y, name)
     end
 end
 function BtWQuests_ShowMapWithWaypoint(mapId, x, y, name)

@@ -17,7 +17,8 @@ local function configTable()
 		type = 'group',
 		name = L["Inspect Armory"],
 		order = 20,
-		disabled = function() return E.db.sle.armory.inspect.enable == false end,
+		disabled = function() return not E.db.sle.armory.inspect.enable end,
+		hidden = function() return not E.private.skins.blizzard.inspect end,
 		args = {
 			title = {
 				type = "header",
@@ -131,6 +132,12 @@ local function configTable()
 				set = function(info, value) E.db.sle.armory.inspect[(info[#info - 1])][(info[#info])] = value; IA:Update_Gems() end,
 				disabled = function() return E.db.general.itemLevel.displayInspectInfo == false end,
 				args = {
+					size = {
+						type = 'range',
+						name = L["Size"],
+						order = 1,
+						min = 8, max = 30, step = 1,
+					},
 					xOffset = {
 						type = 'range',
 						name = L["X-Offset"],
@@ -230,6 +237,14 @@ local function configTable()
 						set = function(_, value) E.db.sle.armory.inspect.background.customTexture = value; IA:Update_BG() end,
 						width = 'double',
 						hidden = function() return E.db.sle.armory.inspect.background.selectedBG ~= 'CUSTOM' end
+					},
+					overlay = {
+						type = "toggle",
+						order = 3,
+						name = L["Overlay"],
+						desc = L["Show ElvUI skin's backdrop overlay"],
+						get = function() return E.db.sle.armory.inspect.background.overlay end,
+						set = function(_, value) E.db.sle.armory.inspect.background.overlay = value; IA:ElvOverlayToggle() end
 					},
 				}
 			},

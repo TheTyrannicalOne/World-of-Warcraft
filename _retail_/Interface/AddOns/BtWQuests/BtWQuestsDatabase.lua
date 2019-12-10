@@ -2,7 +2,12 @@ local BtWQuests = BtWQuests;
 local L = BtWQuests.L;
 local OUTDATED_LEVEL = 110;
 
-local format = string.format;
+local wipe = table.wipe
+local format = string.format
+local lower = string.lower
+local gsub = string.gsub
+local gmatch = string.gmatch
+local concat = string.concat
 
 local LE_EXPANSION_LEVEL_CURRENT = LE_EXPANSION_LEVEL_CURRENT or 0;
 
@@ -3023,7 +3028,7 @@ function Database:SearchScore(a, b)
 
     return (endChar - startChar + 1) / b:len()
 end
-local keywords, results = {}, {}
+local keywords, results, keywordCharacters = {}, {}, {}
 function Database:Search(tbl, query, character)
     local tbl = tbl or {};
     local query = string.gsub(query:lower(), "[,.?:;!'\"%-%(%)]", "")
@@ -3042,7 +3047,7 @@ function Database:Search(tbl, query, character)
     local prefix
     local prefixlist
     local start = ""
-    for character in string.gmatch(query, "[\32-\127\192-\247][\128-\191]*") do
+    for character in gmatch(query, "[\32-\127\192-\247][\128-\191]*") do
         start = start .. character
         if self.buckets[start] ~= nil then
             prefixlist = self.buckets[start]
@@ -3073,6 +3078,30 @@ function Database:Search(tbl, query, character)
         keyword = keywords[k]
         -- Filter items based on other keywords
         for item in pairs(results) do
+            if item.keywords == nil and item.name ~= nil then
+                item.keywords = gsub(lower(item.name), "[,.?:;!'\"%-%(%)]", "")
+            end
+            if type(item.keywords) == "string" then
+                local keywords = item.keywords
+                
+                local result = {};
+                for keyword in gmatch(keywords, "[^%s]+") do
+                    wipe(keywordCharacters)
+                    for character in gmatch(keyword, "[\32-\127\192-\247][\128-\191]*") do
+                        keywordCharacters[#keywordCharacters + 1] = character
+                    end
+    
+                    for i=1,#keywordCharacters do
+                        for j=#keywordCharacters,i,-1 do
+                            local word = table.concat(keywordCharacters, "", i, j)
+                            result[word] = (result[word] or 0) + ((j - i + 1) / #keywordCharacters) / ((result[word] or 0) + 1)
+                        end
+                    end
+                end
+                
+                item.keywords = result;
+            end
+
             results[item] = results[item] + (item.keywords[keyword] or 0)
         end
     end
