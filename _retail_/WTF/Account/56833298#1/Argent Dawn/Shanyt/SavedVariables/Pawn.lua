@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 459,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1596:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 461,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1598:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 166551,
@@ -39,9 +39,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:167776::::::::120:71:::4:6300:6289:1487:4786:::|h[Zanj'ir Scaleguard Stompers]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 163307,
-			["Level"] = 395,
-			["Link"] = "|cffa335ee|Hitem:163307::::::::120:71::28:3:5125:1587:4786:::|h[Honorbound Centurion's Vambraces]|h|r",
+			["ID"] = 165496,
+			["Level"] = 400,
+			["Link"] = "|cffa335ee|Hitem:165496::::::::120:71::6:4:5126:42:1517:4786:::|h[Deathguard's Vambraces]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 159413,

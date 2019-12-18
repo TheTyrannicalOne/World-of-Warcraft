@@ -181,3 +181,7 @@ WhisperInviteBasic: disabled
 BigWigs_CommonAuras: enabled
 WeakAurasCompanion: enabled
 OPie_Classic: disabled
+ElvUI_VisualAuraTimers: disabled
+ElvUI_ExtraActionBars: disabled
+ElvUI_CastBarOverlay: disabled
+ElvUI_AuraBarsMovers: disabled

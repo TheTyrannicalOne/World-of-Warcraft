@@ -12,4 +12,5 @@
 	<Script file='communicate.lua'/>
 	<Script file='install.lua'/>
 	<Script file='staticpopups.lua'/>
+	<Script file='commands.lua'/>
 </Ui>

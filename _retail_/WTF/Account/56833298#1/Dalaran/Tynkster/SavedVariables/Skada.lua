@@ -272,37 +272,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573446754.87401,
 								["amount"] = -33,
+								["hp"] = 132,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 132,
 							}, -- [1]
 							{
 								["ts"] = 1573446755.25802,
 								["amount"] = -32,
+								["hp"] = 100,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 100,
 							}, -- [2]
 							{
 								["ts"] = 1573446755.38603,
 								["amount"] = -34,
+								["hp"] = 66,
 								["srcname"] = "Razlo Crushcog",
 								["spellid"] = 74439,
-								["hp"] = 66,
 							}, -- [3]
 							{
 								["ts"] = 1573446756.27404,
 								["amount"] = -32,
+								["hp"] = 34,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 34,
 							}, -- [4]
 							{
 								["ts"] = 1573446756.49305,
 								["amount"] = -34,
+								["hp"] = 1,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 1,
 							}, -- [5]
 							{
 								["spellname"] = "Tynkster dies",
@@ -313,65 +313,65 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573446752.56307,
 								["amount"] = -34,
+								["hp"] = 425,
 								["srcname"] = "Razlo Crushcog",
 								["spellid"] = 74439,
-								["hp"] = 425,
 							}, -- [7]
 							{
 								["ts"] = 1573446752.88508,
 								["amount"] = -34,
+								["hp"] = 391,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 391,
 							}, -- [8]
 							{
 								["ts"] = 1573446753.17409,
 								["amount"] = -31,
+								["hp"] = 360,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 360,
 							}, -- [9]
 							{
 								["ts"] = 1573446753.3261,
 								["amount"] = -34,
+								["hp"] = 326,
 								["srcname"] = "Razlo Crushcog",
 								["spellid"] = 74439,
-								["hp"] = 326,
 							}, -- [10]
 							{
 								["ts"] = 1573446753.57111,
 								["amount"] = -33,
+								["hp"] = 293,
 								["srcname"] = "Razlo Crushcog",
 								["spellid"] = 74439,
-								["hp"] = 293,
 							}, -- [11]
 							{
 								["ts"] = 1573446754.00512,
 								["amount"] = -31,
+								["hp"] = 262,
 								["srcname"] = "Razlo Crushcog",
 								["spellid"] = 74439,
-								["hp"] = 262,
 							}, -- [12]
 							{
 								["ts"] = 1573446754.13213,
 								["amount"] = -31,
+								["hp"] = 231,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 231,
 							}, -- [13]
 							{
 								["ts"] = 1573446754.38014,
 								["amount"] = -34,
+								["hp"] = 197,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 197,
 							}, -- [14]
 							{
 								["ts"] = 1573446754.57915,
 								["amount"] = -32,
+								["hp"] = 165,
 								["srcname"] = "Razlo Crushcog",
 								["spellid"] = 74439,
-								["hp"] = 165,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -424,30 +424,30 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573527509.462,
 						["amount"] = -1,
+						["srcname"] = "Haywire Battle-Chicken",
 						["spellid"] = 84881,
 						["hp"] = 1551,
-						["srcname"] = "Haywire Battle-Chicken",
 					}, -- [5]
 					{
 						["ts"] = 1573527510.494,
 						["amount"] = -1,
+						["srcname"] = "Haywire Battle-Chicken",
 						["spellid"] = 84881,
 						["hp"] = 1566,
-						["srcname"] = "Haywire Battle-Chicken",
 					}, -- [6]
 					{
 						["ts"] = 1573527526.31,
 						["amount"] = -56,
+						["spellid"] = 88163,
 						["hp"] = 1580,
 						["srcname"] = "Haywire Battle-Chicken",
-						["spellid"] = 88163,
 					}, -- [7]
 					{
 						["ts"] = 1573527532.118,
 						["amount"] = -1,
+						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1523,
 						["spellid"] = 84881,
-						["srcname"] = "Haywire Battle-Chicken",
 					}, -- [8]
 					{
 						["ts"] = 1573527532.282,
@@ -468,16 +468,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573527533,
 						["amount"] = -1,
+						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1579,
 						["spellid"] = 84881,
-						["srcname"] = "Haywire Battle-Chicken",
 					}, -- [11]
 					{
 						["ts"] = 1573527534.091,
 						["amount"] = -1,
+						["spellid"] = 84881,
 						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1578,
-						["spellid"] = 84881,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -490,16 +490,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573527504.09,
 						["amount"] = -34,
+						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1460,
 						["spellid"] = 88163,
-						["srcname"] = "Haywire Battle-Chicken",
 					}, -- [14]
 					{
 						["ts"] = 1573527508.437,
 						["amount"] = -2,
+						["spellid"] = 84881,
 						["hp"] = 1424,
 						["srcname"] = "Haywire Battle-Chicken",
-						["spellid"] = 84881,
 					}, -- [15]
 					["pos"] = 13,
 				},
@@ -1188,65 +1188,65 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573446773.09301,
 								["amount"] = -32,
+								["hp"] = 235,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 235,
 							}, -- [1]
 							{
 								["ts"] = 1573446773.42402,
 								["amount"] = -33,
+								["hp"] = 202,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 202,
 							}, -- [2]
 							{
 								["ts"] = 1573446773.67503,
 								["amount"] = -31,
+								["hp"] = 171,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 171,
 							}, -- [3]
 							{
 								["ts"] = 1573446773.94004,
 								["amount"] = -33,
+								["hp"] = 138,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 138,
 							}, -- [4]
 							{
 								["ts"] = 1573446774.09105,
 								["amount"] = -34,
+								["hp"] = 104,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 104,
 							}, -- [5]
 							{
 								["ts"] = 1573446774.44906,
 								["amount"] = -34,
+								["hp"] = 70,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 70,
 							}, -- [6]
 							{
 								["ts"] = 1573446774.77207,
 								["amount"] = -32,
+								["hp"] = 38,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 38,
 							}, -- [7]
 							{
 								["ts"] = 1573446774.90308,
 								["amount"] = -33,
+								["hp"] = 5,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 5,
 							}, -- [8]
 							{
 								["ts"] = 1573446775.34909,
 								["amount"] = -19,
+								["hp"] = 5,
 								["spellid"] = 88163,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 5,
 							}, -- [9]
 							{
 								["spellname"] = "Delphye dies",
@@ -1257,37 +1257,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573446578.50911,
 								["amount"] = -5,
+								["hp"] = 450,
 								["spellid"] = 88163,
 								["srcname"] = "Crushcog Sentry-Bot",
-								["hp"] = 450,
 							}, -- [11]
 							{
 								["ts"] = 1573446772.18612,
 								["amount"] = -33,
+								["hp"] = 365,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 365,
 							}, -- [12]
 							{
 								["ts"] = 1573446772.42513,
 								["amount"] = -33,
+								["hp"] = 332,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 332,
 							}, -- [13]
 							{
 								["ts"] = 1573446772.71514,
 								["amount"] = -34,
+								["hp"] = 298,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 298,
 							}, -- [14]
 							{
 								["ts"] = 1573446772.93315,
 								["amount"] = -31,
+								["hp"] = 267,
 								["spellid"] = 74439,
 								["srcname"] = "Razlo Crushcog",
-								["hp"] = 267,
 							}, -- [15]
 							["pos"] = 11,
 						},
@@ -1308,16 +1308,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573527532.118,
 						["amount"] = -2,
+						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1508,
 						["spellid"] = 84881,
-						["srcname"] = "Haywire Battle-Chicken",
 					}, -- [1]
 					{
 						["ts"] = 1573527533,
 						["amount"] = -1,
+						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1507,
 						["spellid"] = 84881,
-						["srcname"] = "Haywire Battle-Chicken",
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -1330,16 +1330,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573527534.091,
 						["amount"] = -2,
+						["spellid"] = 84881,
 						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1508,
-						["spellid"] = 84881,
 					}, -- [4]
 					{
 						["ts"] = 1573527424.785,
 						["amount"] = -2,
+						["srcname"] = "Haywire Battle-Chicken",
 						["spellid"] = 84881,
 						["hp"] = 1374,
-						["srcname"] = "Haywire Battle-Chicken",
 					}, -- [5]
 					{
 						["ts"] = 1573527432.9,
@@ -1368,9 +1368,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573527455.484,
 						["amount"] = -32,
+						["spellid"] = 88163,
 						["hp"] = 1510,
 						["srcname"] = "Haywire Battle-Chicken",
-						["spellid"] = 88163,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -1391,23 +1391,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573527508.437,
 						["amount"] = -2,
+						["spellid"] = 84881,
 						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1508,
-						["spellid"] = 84881,
 					}, -- [12]
 					{
 						["ts"] = 1573527509.462,
 						["amount"] = -1,
+						["spellid"] = 84881,
 						["srcname"] = "Haywire Battle-Chicken",
 						["hp"] = 1507,
-						["spellid"] = 84881,
 					}, -- [13]
 					{
 						["ts"] = 1573527510.494,
 						["amount"] = -2,
+						["spellid"] = 84881,
 						["hp"] = 1508,
 						["srcname"] = "Haywire Battle-Chicken",
-						["spellid"] = 84881,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -1892,9 +1892,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573450223.789,
 						["amount"] = -8,
+						["spellid"] = 88163,
 						["srcname"] = "Crag Boar",
 						["hp"] = 0,
-						["spellid"] = 88163,
 					}, -- [1]
 					["pos"] = 2,
 				},
@@ -3813,6 +3813,46 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
+			["Magosh"] = {
+				["players"] = {
+					["Tynkster"] = {
+						["taken"] = 461,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Delphye"] = {
+						["taken"] = 74,
+						["done"] = 0,
+						["class"] = "ROGUE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 28,
+				["hdonespell"] = {
+					["Earth Shield"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 14,
+						["healing"] = 28,
+						["overhealing"] = 14,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 535,
+				["done"] = 0,
+				["htaken"] = 28,
+				["htakenspell"] = {
+					["Earth Shield"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 14,
+						["healing"] = 28,
+						["overhealing"] = 14,
+						["hits"] = 3,
+					},
+				},
+			},
 			["Mangeclaw"] = {
 				["players"] = {
 					["Tynkster"] = {
@@ -3833,30 +3873,6 @@ SkadaPerCharDB = {
 				},
 				["taken"] = 1186,
 				["done"] = 142,
-				["htaken"] = 0,
-				["htakenspell"] = {
-				},
-			},
-			["Tunnel Rat Geomancer"] = {
-				["players"] = {
-					["Tynkster"] = {
-						["taken"] = 6679,
-						["done"] = 1080,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Delphye"] = {
-						["taken"] = 1842,
-						["done"] = 178,
-						["class"] = "ROGUE",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 8521,
-				["done"] = 1258,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -4107,44 +4123,28 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Magosh"] = {
+			["Tunnel Rat Geomancer"] = {
 				["players"] = {
 					["Tynkster"] = {
-						["taken"] = 461,
-						["done"] = 0,
+						["taken"] = 6679,
+						["done"] = 1080,
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
 					["Delphye"] = {
-						["taken"] = 74,
-						["done"] = 0,
+						["taken"] = 1842,
+						["done"] = 178,
 						["class"] = "ROGUE",
 						["role"] = "DAMAGER",
 					},
 				},
-				["hdone"] = 28,
+				["hdone"] = 0,
 				["hdonespell"] = {
-					["Earth Shield"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 14,
-						["healing"] = 28,
-						["overhealing"] = 14,
-						["hits"] = 3,
-					},
 				},
-				["taken"] = 535,
-				["done"] = 0,
-				["htaken"] = 28,
+				["taken"] = 8521,
+				["done"] = 1258,
+				["htaken"] = 0,
 				["htakenspell"] = {
-					["Earth Shield"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 14,
-						["healing"] = 28,
-						["overhealing"] = 14,
-						["hits"] = 3,
-					},
 				},
 			},
 			["Stonesplinter Worker"] = {
@@ -4473,6 +4473,14 @@ SkadaPerCharDB = {
 						["Rat"] = 14,
 					},
 					["auras"] = {
+						["Concussive Shot"] = {
+							["name"] = "Concussive Shot",
+							["active"] = 0,
+							["school"] = 1,
+							["uptime"] = 4,
+							["auratype"] = "DEBUFF",
+							["id"] = 5116,
+						},
 						["MechaBunBuns: Growl"] = {
 							["name"] = "MechaBunBuns: Growl",
 							["active"] = 0,
@@ -4480,14 +4488,6 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "DEBUFF",
 							["id"] = 2649,
-						},
-						["Barbed Shot"] = {
-							["name"] = "Barbed Shot",
-							["active"] = 0,
-							["school"] = 1,
-							["uptime"] = 7,
-							["auratype"] = "BUFF",
-							["id"] = 246152,
 						},
 						["Frenzy"] = {
 							["name"] = "Frenzy",
@@ -4497,13 +4497,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["id"] = 272790,
 						},
-						["Concussive Shot"] = {
-							["name"] = "Concussive Shot",
+						["Barbed Shot"] = {
+							["name"] = "Barbed Shot",
 							["active"] = 0,
 							["school"] = 1,
-							["uptime"] = 4,
-							["auratype"] = "DEBUFF",
-							["id"] = 5116,
+							["uptime"] = 7,
+							["auratype"] = "BUFF",
+							["id"] = 246152,
 						},
 					},
 					["role"] = "DAMAGER",
@@ -4971,6 +4971,14 @@ SkadaPerCharDB = {
 						["Proto-Strider"] = 530,
 					},
 					["auras"] = {
+						["Frenzy"] = {
+							["name"] = "Frenzy",
+							["active"] = 0,
+							["school"] = 1,
+							["uptime"] = 5,
+							["auratype"] = "BUFF",
+							["id"] = 272790,
+						},
 						["MechaBunBuns: Growl"] = {
 							["name"] = "MechaBunBuns: Growl",
 							["active"] = 0,
@@ -4978,14 +4986,6 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "DEBUFF",
 							["id"] = 2649,
-						},
-						["MechaBunBuns: Defense Matrix"] = {
-							["name"] = "MechaBunBuns: Defense Matrix",
-							["active"] = 0,
-							["school"] = 1,
-							["uptime"] = 11,
-							["auratype"] = "BUFF",
-							["id"] = 263868,
 						},
 						["Barbed Shot"] = {
 							["name"] = "Barbed Shot",
@@ -4995,13 +4995,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["id"] = 246152,
 						},
-						["Frenzy"] = {
-							["name"] = "Frenzy",
+						["MechaBunBuns: Defense Matrix"] = {
+							["name"] = "MechaBunBuns: Defense Matrix",
 							["active"] = 0,
 							["school"] = 1,
-							["uptime"] = 5,
+							["uptime"] = 11,
 							["auratype"] = "BUFF",
-							["id"] = 272790,
+							["id"] = 263868,
 						},
 					},
 					["role"] = "DAMAGER",

@@ -125,13 +125,6 @@ X: 0
 Y: 128
 W: 200
 H: 50
-Frame: AAP_OptionsMainFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 450
-H: 360
 Frame: TooltipMover
 FrameLevel: 402
 Anchor: RIGHT

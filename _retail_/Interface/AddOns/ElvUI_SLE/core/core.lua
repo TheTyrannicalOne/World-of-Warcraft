@@ -15,7 +15,7 @@ local SLE = LibStub("AceAddon-3.0"):NewAddon(AddOnName, "AceConsole-3.0", "AceEv
 SLE.callbacks = SLE.callbacks or LibStub("CallbackHandler-1.0"):New(SLE)
 
 SLE.version = GetAddOnMetadata("ElvUI_SLE", "Version")
-SLE.DBversion = "3.57"
+SLE.DBversion = "3.63"
 SLE.Title = format("|cff9482c9%s |r", "Shadow & Light")
 
 BINDING_HEADER_SLE = "|cff9482c9Shadow & Light|r"
@@ -83,9 +83,16 @@ function SLE:Initialize()
 	if E.db.general.loginmessage then
 		SLE:Print(Toolkit.format(L["SLE_LOGIN_MSG"], E["media"].hexvaluecolor, SLE.version), "info")
 	end
+	
+	hooksecurefunc(E, "PLAYER_ENTERING_WORLD", function(self, _, initLogin)
+		if initLogin or not ElvDB.SLErrorDisabledAddOns then
+			ElvDB.SLErrorDisabledAddOns = {}
+		end
+	end)
 
 	SLE:BuildGameMenu()
 	SLE:CyrillicsInit()
+	SLE:LoadCommands()
 
 	if not tonumber(E.private.sle.install_complete) then E.private.sle.install_complete = "BETA" end
 	if not E.private.sle.install_complete or (E.private.sle.install_complete ~= "BETA" and tonumber(E.private.sle.install_complete) < 3) then

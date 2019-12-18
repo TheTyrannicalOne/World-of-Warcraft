@@ -6,23 +6,23 @@ OneRing_Config = {
 		["Black Dragonflight-Durlok-3"] = "default",
 	},
 	["_GameVersion"] = "8.2.5",
-	["_OPieVersion"] = "Walnut 5 (3.101)",
+	["_OPieVersion"] = "Walnut 6 (3.101)",
 	["ProfileStorage"] = {
 		["Shanyt"] = {
 			["Bindings"] = {
 				["Mounts"] = "ALT-Q",
-				["OPieAutoQuest"] = false,
-				["Mounts7"] = "ALT-Q",
 				["Utility"] = "ALT-E",
+				["Mounts7"] = "ALT-Q",
+				["OPieAutoQuest"] = false,
 			},
 		},
 		["default"] = {
 			["Bindings"] = {
 				["OPieAutoQuest"] = false,
 				["Mounts2"] = "ALT-Q",
-				["Utility1"] = "ALT-E",
-				["Mounts3"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
+				["Mounts3"] = "ALT-Q",
+				["Utility1"] = "ALT-E",
 			},
 		},
 	},
@@ -72,10 +72,10 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuedW477KwC",
 				}, -- [10]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
 			["Mounts7"] = {
 				{
@@ -113,10 +113,10 @@ OneRing_Config = {
 					64488, -- [2]
 					["sliceToken"] = "ABuedyqmNB16",
 				}, -- [1]
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Vancard-Zul'jin",
 			},
 			["Mounts"] = {
 				{
@@ -297,10 +297,10 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuedyqmNBrM",
 				}, -- [19]
-				["name"] = "Mounts",
+				["limit"] = "Vancard-Zul'jin",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Mounts",
 			},
 			["SpecMenu"] = {
 				{
@@ -362,10 +362,10 @@ OneRing_Config = {
 					140192, -- [2]
 					["sliceToken"] = "ABuedW477Kes",
 				}, -- [2]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
 		},
 	},

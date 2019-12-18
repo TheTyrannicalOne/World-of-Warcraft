@@ -1,3 +1,5 @@
+Narci = {};
+
 local DefaultValue = {
     ["DetailedIlvlInfo"] = true,
     ["IsSortedByCategory"] = true,
@@ -11,6 +13,7 @@ local DefaultValue = {
     ["CameraOrbit"] = true,
     ["CameraSafeMode"] = true,
     ["BorderTheme"] = "Bright",
+    ["TooltipTheme"] = "Dark",
     ["TruncateText"] = false,
     ["ItemNameWidth"] = 200,
     ["FadeButton"] = false,
@@ -25,16 +28,24 @@ local DefaultValue = {
     ["AFKScreen"] = false,
     ["GemManager"] = true,
     ["DressingRoom"] = true,
+    ["DressingRoomUseTargetModel"] = true,
+    ["UseEntranceVisual"] = true,
+    ["ModelPanelScale"] = 1,
+    ["UseExitConfirmation"] = true,
+    ["BaseLineOffset"] = 0,     --Ultra-wide
+    ["ShrinkArea"] = 0,
+    ["AutoPlayAnimation"] = true,
 }
 
 local TutorialInclude = {
-    "CaptureButton", "NextAnimationButton", "PlayerModelLayerButton",
-    "GroupPhoto",
+    "RaceChange", "SpellVisualBrowser", "EquipmentSetManager", "Movement", "ExitConfirmation",
 };
 
 local function Initialize_NarcissusDB()
-    NarcissusDB = NarcissusDB or {};
-    NarcissusDB_PC = NarcissusDB_PC or {};
+    NarcissusDB = NarcissusDB or {};        --Account-wide Variables
+    NarcissusDB_PC = NarcissusDB_PC or {};  --Character-specific Variables;
+    NarcissusDB_PC.EquipmentSetDB = NarcissusDB_PC.EquipmentSetDB or {};
+
     NarcissusDB.MinimapButton = NarcissusDB.MinimapButton or {};
     NarcissusDB.MinimapButton.Position = NarcissusDB.MinimapButton.Position or rad(150);
 

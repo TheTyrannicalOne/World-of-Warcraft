@@ -27,12 +27,13 @@ RematchSettings = {
 	["QueueSortOrder"] = 1,
 	["XPos"] = 995.0079345703125,
 	["CollectionChartType"] = 1,
-	["DialogYPos"] = 720.004638671875,
-	["JournalUsed"] = true,
-	["HidePetToast"] = true,
-	["FavoriteFilters"] = {
+	["DialogYPos"] = 717.004638671875,
+	["SpecialSlots"] = {
 	},
-	["DialogXPos"] = 1280.008178710938,
+	["HidePetToast"] = true,
+	["QueueSanctuary"] = {
+	},
+	["DialogXPos"] = 1282.008178710938,
 	["AllowHiddenPetsDefaulted"] = true,
 	["BackupCount"] = 0,
 	["TeamGroups"] = {
@@ -41,20 +42,20 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["SpecialSlots"] = {
+	["LevelingQueue"] = {
 	},
 	["Filters"] = {
 		["Other"] = {
 		},
 		["Script"] = {
 		},
-		["Moveset"] = {
+		["Types"] = {
 		},
-		["Tough"] = {
+		["Favorite"] = {
 		},
-		["Level"] = {
+		["Collected"] = {
 		},
-		["Sources"] = {
+		["Strong"] = {
 		},
 		["Similar"] = {
 		},
@@ -62,36 +63,35 @@ RematchSettings = {
 		},
 		["Rarity"] = {
 		},
-		["Strong"] = {
+		["Sources"] = {
 		},
-		["Collected"] = {
+		["Level"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Types"] = {
+		["Moveset"] = {
 		},
 	},
-	["SelectedTab"] = 1,
-	["UseTypeBar"] = true,
-	["Sort"] = {
-		["Order"] = 1,
-		["FavoritesFirst"] = true,
+	["CustomScaleValue"] = 100,
+	["YPos"] = 418.0044860839844,
+	["FavoriteFilters"] = {
 	},
 	["CollapsedOptHeaders"] = {
 	},
-	["PreferredMode"] = 1,
 	["ElvUIToastDefaulted"] = true,
+	["PreferredMode"] = 1,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
 	},
 	["JournalPanel"] = 1,
 	["CornerPos"] = "BOTTOMLEFT",
-	["LevelingQueue"] = {
+	["JournalUsed"] = true,
+	["Sort"] = {
+		["Order"] = 1,
+		["FavoritesFirst"] = true,
 	},
-	["QueueSanctuary"] = {
-	},
-	["YPos"] = 418.0044860839844,
-	["CustomScaleValue"] = 100,
+	["UseTypeBar"] = true,
+	["SelectedTab"] = 1,
 	["PetNotes"] = {
 	},
 }

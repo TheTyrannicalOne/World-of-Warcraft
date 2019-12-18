@@ -8,19 +8,19 @@ CliqueDB3 = {
 			["blacklist"] = {
 				["PetFrame"] = true,
 			},
-			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["specswap"] = false,
 			["downclick"] = false,
 			["alerthidden"] = true,
 			["spec3_profileKey"] = "Shanyt - Argent Dawn",
-			["specswap"] = false,
+			["spec2_profileKey"] = "Shanyt - Argent Dawn",
 		},
 		["Tynkster - Dalaran"] = {
 			["spec1_profileKey"] = "Tynkster - Dalaran",
-			["spec2_profileKey"] = "Tynkster - Dalaran",
+			["spec3_profileKey"] = "Tynkster - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
 			["specswap"] = false,
-			["spec3_profileKey"] = "Tynkster - Dalaran",
+			["spec2_profileKey"] = "Tynkster - Dalaran",
 			["alerthidden"] = true,
 		},
 	},
@@ -34,31 +34,31 @@ CliqueDB3 = {
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
 		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
 		["Panboozled - Runetotem"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -74,10 +74,10 @@ CliqueDB3 = {
 		["Vancard - Zul'jin"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -93,10 +93,10 @@ CliqueDB3 = {
 		["Tynster - Dalaran"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -112,10 +112,10 @@ CliqueDB3 = {
 		["Tyrann - Zul'jin"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -131,10 +131,10 @@ CliqueDB3 = {
 		["Shanyt - Argent Dawn"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -150,10 +150,10 @@ CliqueDB3 = {
 		["Shaewong - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -169,10 +169,10 @@ CliqueDB3 = {
 		["Goramor - Runetotem"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -188,10 +188,10 @@ CliqueDB3 = {
 		["Gillbourn - Runetotem"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -205,6 +205,25 @@ CliqueDB3 = {
 			},
 		},
 		["Brewnheimer - Darkspear"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Gangus - Runetotem"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -226,29 +245,10 @@ CliqueDB3 = {
 		["Shathiel - Darkspear"] = {
 			["bindings"] = {
 				{
+					["sets"] = {
+						["default"] = true,
+					},
 					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Sinh - Dalaran"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -264,10 +264,10 @@ CliqueDB3 = {
 		["Thorinbane - Dalaran"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -283,10 +283,10 @@ CliqueDB3 = {
 		["Serbitechna - Darkspear"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -299,13 +299,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -321,10 +321,10 @@ CliqueDB3 = {
 		["Ruffinton - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -337,13 +337,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyriinid - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -359,10 +359,10 @@ CliqueDB3 = {
 		["Malivant - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -378,10 +378,10 @@ CliqueDB3 = {
 		["Darnastris - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -394,7 +394,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Tynkster - Dalaran"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -416,10 +416,10 @@ CliqueDB3 = {
 		["Claugh - Runetotem"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -432,7 +432,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Tynkster - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -451,26 +451,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Tyriinid - Dalaran"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Migimong - Runetotem"] = {
+		["Beeronimo - Dalaran"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -489,13 +470,32 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Gangus - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Sinh - Dalaran"] = {
+			["bindings"] = {
+				{
+					["sets"] = {
+						["default"] = true,
+					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -511,10 +511,10 @@ CliqueDB3 = {
 		["Narisaric - Dalaran"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
