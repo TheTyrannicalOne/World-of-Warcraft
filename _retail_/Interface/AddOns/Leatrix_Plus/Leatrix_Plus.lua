@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.19 (11th December 2019)
+-- 	Leatrix Plus 8.2.20 (19th December 2019)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.19"
+	LeaPlusLC["AddonVer"] = "8.2.20"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -615,6 +615,24 @@
 				["MuteFizzle"] = {			"sound/spells/fizzle/fizzlefirea.ogg#569773", "sound/spells/fizzle/FizzleFrostA.ogg#569775", "sound/spells/fizzle/FizzleHolyA.ogg#569772", "sound/spells/fizzle/FizzleNatureA.ogg#569774", "sound/spells/fizzle/FizzleShadowA.ogg#569776",},
 				["MuteInterface"] = {		"sound/interface/iUiInterfaceButtonA.ogg#567481", "sound/interface/uChatScrollButton.ogg#567407", "sound/interface/uEscapeScreenClose.ogg#567464", "sound/interface/uEscapeScreenOpen.ogg#567490",},
 				["MuteSniffing"] = {		"sound/creature/worgenfemale/worgenfemale_emotesniff_01.ogg#564422", "sound/creature/worgenfemale/worgenfemale_emotesniff_02.ogg#564378", "sound/creature/worgenfemale/worgenfemale_emotesniff_03.ogg#564383", "sound/creature/worgenfemale/worgenmale_emotesniff_01.ogg#564560", "sound/creature/worgenfemale/worgenmale_emotesniff_02.ogg#564544", "sound/creature/worgenfemale/worgenmale_emotesniff_03.ogg#564536",},
+				["MuteTravelers"] = {		
+
+					-- Mighty Caravan Brutosaur (sound/creature/tortollan_male)
+					"vo_801_tortollan_male_04_m.ogg#1998112", "vo_801_tortollan_male_05_m.ogg#1998113", "vo_801_tortollan_male_06_m.ogg#1998114", "vo_801_tortollan_male_07_m.ogg#1998115", "vo_801_tortollan_male_08_m.ogg#1998116", "vo_801_tortollan_male_09_m.ogg#1998117", "vo_801_tortollan_male_10_m.ogg#1998118", "vo_801_tortollan_male_11_m.ogg#1998119", 
+
+					-- Traveler's Tundra Mammoth (sound/creature/npcdraeneimalestandard)
+					"npcdraeneimalestandardvendor01.ogg#557341", "npcdraeneimalestandardvendor02.ogg#557335", "npcdraeneimalestandardvendor03.ogg#557328", "npcdraeneimalestandardvendor04.ogg#557331", "npcdraeneimalestandardvendor05.ogg#557325", "npcdraeneimalestandardvendor06.ogg#557324", 
+					"npcdraeneimalestandardfarewell01.ogg#557342", "npcdraeneimalestandardfarewell02.ogg#557326", "npcdraeneimalestandardfarewell03.ogg#557322", "npcdraeneimalestandardfarewell05.ogg#557332", "npcdraeneimalestandardfarewell06.ogg#557338", "npcdraeneimalestandardfarewell08.ogg#557334", 
+
+					-- Grand Expedition Yak (sound/creature/grummlekooky, sound/creature/grummlestandard)
+					"vo_grummle_kooky_vendor_01.ogg#640180", "vo_grummle_kooky_vendor_02.ogg#640182", "vo_grummle_kooky_vendor_03.ogg#640184", 
+					"vo_grummle_kooky_farewell_01.ogg#640158", "vo_grummle_kooky_farewell_02.ogg#640160", "vo_grummle_kooky_farewell_03.ogg#640162", "vo_grummle_kooky_farewell_04.ogg#640164", 
+					"vo_grummle_standard_vendor_01.ogg#640336", "vo_grummle_standard_vendor_02.ogg#640338", "vo_grummle_standard_vendor_03.ogg#640340", 
+					"vo_grummle_standard_farewell_01.ogg#640314", "vo_grummle_standard_farewell_02.ogg#640316", "vo_grummle_standard_farewell_03.ogg#640318", "vo_grummle_standard_farewell_04.ogg#640320", 
+
+				},
+
+				-- Shouts
 				["MuteBattleShouts"] = {
 
 					-- Dark Iron Dwarf (sound/character/pc_dark_iron_dwarf_female, sound/character/pc_dark_iron_dwarf_male)
@@ -715,6 +733,14 @@
 					"vo_pandarenmale_main_battleshoutlarge_01.ogg#1384979", "vo_pandarenmale_main_battleshoutlarge_02.ogg#1384980", "vo_pandarenmale_main_battleshoutlarge_03.ogg#1384981", "vo_pandarenmale_main_battleshoutlarge_04.ogg#1384982", "vo_pandarenmale_main_battleshoutlarge_05.ogg#1384983", "vo_pandarenmale_main_battleshoutlarge_06.ogg#1384984",	"vo_pandarenmale_main_battleshoutlarge_07.ogg#1384985",
 
 				},
+
+				-- Mounts
+				["MuteMounts"] = {
+
+					-- Ban-Lu (sound/creature/ban-lu)
+					"vo_72_ban-lu_01_m.ogg#1593212", "vo_72_ban-lu_02_m.ogg#1593213", "vo_72_ban-lu_03_m.ogg#1593214", "vo_72_ban-lu_04_m.ogg#1593215", "vo_72_ban-lu_05_m.ogg#1593216", "vo_72_ban-lu_06_m.ogg#1593217", "vo_72_ban-lu_07_m.ogg#1593218", "vo_72_ban-lu_08_m.ogg#1593219", "vo_72_ban-lu_09_m.ogg#1593220", "vo_72_ban-lu_10_m.ogg#1593221", "vo_72_ban-lu_11_m.ogg#1593222", "vo_72_ban-lu_12_m.ogg#1593223", "vo_72_ban-lu_13_m.ogg#1593224", "vo_72_ban-lu_14_m.ogg#1593225", "vo_72_ban-lu_15_m.ogg#1593226", "vo_72_ban-lu_16_m.ogg#1593227", "vo_72_ban-lu_17_m.ogg#1593228", "vo_72_ban-lu_18_m.ogg#1593229", "vo_72_ban-lu_19_m.ogg#1593230", "vo_72_ban-lu_20_m.ogg#1593231", "vo_72_ban-lu_21_m.ogg#1593232", "vo_72_ban-lu_22_m.ogg#1593233", "vo_72_ban-lu_23_m.ogg#1593234", "vo_72_ban-lu_24_m.ogg#1593235", "vo_72_ban-lu_25_m.ogg#1593236",
+
+				},
 			}
 
 			-- Give table file level scope (its used during logout and for wipe and admin commands)
@@ -738,7 +764,9 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteFizzle", "Fizzle", 16, -92, false, "If checked, the spell fizzle sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteInterface", "Interface", 16, -112, false, "If checked, the interface button sound, the chat frame tab click sound and the game menu toggle sound will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSniffing", "Sniffing", 16, -132, false, "If checked, the worgen sniffing sounds will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 16, -152, false, "If checked, battle shouts heard when casting specific spells will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 16, -152, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 16, -172, false, "If checked, battle shouts heard when casting specific spells will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteMounts", "Mounts", 16, -192, false, "If checked, talking mounts will be muted.|n|nThis applies to Ban-Lu.")
 
 			-- Function to mute and unmute sounds
 			local function SetupMute()
@@ -1793,6 +1821,18 @@
 				end
 			end
 
+			-- Function to check if quest ID is blocked
+			local function IsQuestIDBlocked(questID)
+				if questID then
+					if questID == 43923		-- Starlight Rose
+					or questID == 43924		-- Leyblood
+					or questID == 43925		-- Runescale Koi
+					then
+						return true
+					end
+				end
+			end
+
 			-- Function to check if quest requires currency or a crafting reagent
 			local function QuestRequiresCurrency()
 				for i = 1, 6 do
@@ -1964,16 +2004,18 @@
 						else
 							-- Select gossip completed quests
 							for i = 1, GetNumGossipActiveQuests() do
-								local title, level, isTrivial, isComplete, isLegendary, isIgnored = select(i * 6 - 5, GetGossipActiveQuests())
+								local title, level, isTrivial, isComplete, isLegendary, isIgnored, questID = select(i * 7 - 6, GetGossipActiveQuests())
 								if title and isComplete then
 									return SelectGossipActiveQuest(i)
 								end
 							end
 							-- Select gossip available quests
 							for i = 1, GetNumGossipAvailableQuests() do
-								local title, level, isTrivial, isDaily, isRepeatable, isLegendary, isIgnored = select(i * 7 - 6, GetGossipAvailableQuests())
+								local title, level, isTrivial, isDaily, isRepeatable, isLegendary, isIgnored, questID = select(i * 8 - 7, GetGossipAvailableQuests())
 								if title then
-									return SelectGossipAvailableQuest(i)
+									if not questID or not IsQuestIDBlocked(questID) then
+										return SelectGossipAvailableQuest(i)
+									end
 								end
 							end
 						end

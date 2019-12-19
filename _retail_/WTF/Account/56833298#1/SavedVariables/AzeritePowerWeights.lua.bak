@@ -326,41 +326,6 @@ AzeritePowerWeightsDB = {
 				["professionPowers"] = false,
 				["onlyOwnClassCustoms"] = false,
 			},
-			["Dialdaas"] = {
-				["specScales"] = {
-					[70] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/2/3/Default",
-					},
-					[65] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/2/1/Default",
-					},
-					[66] = {
-						["scaleName"] = "Defensive",
-						["scaleID"] = "D/2/2/Defensive",
-					},
-				},
-				["addPrimaryStatToScore"] = false,
-				["showTooltipLegend"] = true,
-				["zonePowers"] = true,
-				["pvpPowers"] = false,
-				["addILvlToScore"] = false,
-				["relativeScore"] = false,
-				["rolePowersNoOffRolePowers"] = false,
-				["importingCanUpdate"] = true,
-				["tooltipScales"] = {
-				},
-				["rolePowers"] = true,
-				["defensivePowers"] = true,
-				["scaleByAzeriteEmpowered"] = false,
-				["onlyOwnClassDefaults"] = true,
-				["onlyOwnClassCustoms"] = false,
-				["professionPowers"] = false,
-				["showOnlyUpgrades"] = false,
-				["debug"] = false,
-				["outlineScores"] = true,
-			},
 			["Serbitechna"] = {
 				["specScales"] = {
 					[255] = {
@@ -430,6 +395,83 @@ AzeritePowerWeightsDB = {
 				["showOnlyUpgrades"] = false,
 				["debug"] = false,
 				["outlineScores"] = true,
+			},
+			["Dialdaas"] = {
+				["specScales"] = {
+					[70] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/2/3/Default",
+					},
+					[65] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/2/1/Default",
+					},
+					[66] = {
+						["scaleName"] = "Defensive",
+						["scaleID"] = "D/2/2/Defensive",
+					},
+				},
+				["addPrimaryStatToScore"] = false,
+				["showTooltipLegend"] = true,
+				["zonePowers"] = true,
+				["pvpPowers"] = false,
+				["addILvlToScore"] = false,
+				["relativeScore"] = false,
+				["rolePowersNoOffRolePowers"] = false,
+				["importingCanUpdate"] = true,
+				["tooltipScales"] = {
+				},
+				["rolePowers"] = true,
+				["defensivePowers"] = true,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassDefaults"] = true,
+				["onlyOwnClassCustoms"] = false,
+				["professionPowers"] = false,
+				["showOnlyUpgrades"] = false,
+				["debug"] = false,
+				["outlineScores"] = true,
+			},
+		},
+		["Black Dragonflight"] = {
+			["Durlok"] = {
+				["specScales"] = {
+					[103] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/11/2/Default",
+					},
+					[104] = {
+						["scaleName"] = "Defensive",
+						["scaleID"] = "D/11/3/Defensive",
+					},
+					[102] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/11/1/Default",
+					},
+					[105] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/11/4/Default",
+					},
+				},
+				["addPrimaryStatToScore"] = false,
+				["showTooltipLegend"] = true,
+				["zonePowers"] = true,
+				["pvpPowers"] = false,
+				["addILvlToScore"] = false,
+				["relativeScore"] = false,
+				["rolePowersNoOffRolePowers"] = false,
+				["importingCanUpdate"] = true,
+				["tooltipScales"] = {
+				},
+				["rolePowers"] = true,
+				["defensivePowers"] = true,
+				["preferBiSMarjor"] = true,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassDefaults"] = true,
+				["outlineScores"] = true,
+				["onlyOwnClassCustoms"] = false,
+				["showOnlyUpgrades"] = false,
+				["debug"] = false,
+				["professionPowers"] = false,
 			},
 		},
 		["Dalaran"] = {
@@ -825,48 +867,6 @@ AzeritePowerWeightsDB = {
 				["outlineScores"] = true,
 			},
 		},
-		["Black Dragonflight"] = {
-			["Durlok"] = {
-				["specScales"] = {
-					[103] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/11/2/Default",
-					},
-					[104] = {
-						["scaleName"] = "Defensive",
-						["scaleID"] = "D/11/3/Defensive",
-					},
-					[102] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/11/1/Default",
-					},
-					[105] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/11/4/Default",
-					},
-				},
-				["addPrimaryStatToScore"] = false,
-				["showTooltipLegend"] = true,
-				["zonePowers"] = true,
-				["pvpPowers"] = false,
-				["addILvlToScore"] = false,
-				["relativeScore"] = false,
-				["rolePowersNoOffRolePowers"] = false,
-				["importingCanUpdate"] = true,
-				["tooltipScales"] = {
-				},
-				["rolePowers"] = true,
-				["defensivePowers"] = true,
-				["preferBiSMarjor"] = true,
-				["scaleByAzeriteEmpowered"] = false,
-				["onlyOwnClassDefaults"] = true,
-				["outlineScores"] = true,
-				["onlyOwnClassCustoms"] = false,
-				["showOnlyUpgrades"] = false,
-				["debug"] = false,
-				["professionPowers"] = false,
-			},
-		},
 		["Argent Dawn"] = {
 			["Shanyt"] = {
 				["specScales"] = {
@@ -895,9 +895,9 @@ AzeritePowerWeightsDB = {
 				},
 				["rolePowers"] = true,
 				["defensivePowers"] = true,
-				["onlyOwnClassDefaults"] = true,
-				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassCustoms"] = false,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassDefaults"] = true,
 				["debug"] = false,
 				["professionPowers"] = false,
 				["showOnlyUpgrades"] = false,

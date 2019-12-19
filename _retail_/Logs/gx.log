@@ -1,24 +1,24 @@
-12/16 21:11:46.788  LogOpen
-12/16 21:11:46.788  NvAPI loaded
-12/16 21:11:47.159  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe1046) dx11:true dx12:true
-12/16 21:11:47.159  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-12/16 21:11:47.159  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-12/16 21:11:47.224  D3d12 Device Create
-12/16 21:11:47.369  Choosing adapter 0
-12/16 21:11:47.506  AFR Groups: 1/1
-12/16 21:11:47.506  Feature Level: DX=6, MTL=0
-12/16 21:11:47.687  NotifyOnDeviceCreate
-12/16 21:11:47.687  D3d12 Device Create Successful
-12/16 21:11:47.687  Nvidia driver version: r441_58 (44166)
-12/16 21:11:47.687  <IsGPUDriverOutOfDate> No
-12/16 21:11:47.714  CPU Processor Detection: 12 H/W threads
-12/16 21:11:47.714  Memory Detection: 34296328192 bytes of physical memory available
-12/16 21:11:47.714  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-12/16 21:11:47.816  RenderSettings::NotifyChanged
-12/16 21:11:48.686  Nvidia driver version: r441_58 (44166)
-12/16 21:12:30.629  Nvidia driver version: r441_58 (44166)
-12/16 21:12:30.629  Nvidia driver version: r441_58 (44166)
-12/16 22:36:25.290  Nvidia driver version: r441_58 (44166)
-12/16 22:36:26.355  D3d12 Device Destroy
-12/16 22:36:26.355  NotifyOnDeviceDestroy
-12/16 22:36:26.858  GxShutdown
+12/18 21:02:20.445  LogOpen
+12/18 21:02:20.488  NvAPI loaded
+12/18 21:02:20.835  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe1046) dx11:true dx12:true
+12/18 21:02:20.835  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+12/18 21:02:20.835  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+12/18 21:02:20.893  D3d12 Device Create
+12/18 21:02:21.062  Choosing adapter 0
+12/18 21:02:21.224  AFR Groups: 1/1
+12/18 21:02:21.224  Feature Level: DX=6, MTL=0
+12/18 21:02:21.486  NotifyOnDeviceCreate
+12/18 21:02:21.486  D3d12 Device Create Successful
+12/18 21:02:21.488  Nvidia driver version: r441_58 (44166)
+12/18 21:02:21.488  <IsGPUDriverOutOfDate> No
+12/18 21:02:21.516  CPU Processor Detection: 12 H/W threads
+12/18 21:02:21.516  Memory Detection: 34296328192 bytes of physical memory available
+12/18 21:02:21.516  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+12/18 21:02:21.652  RenderSettings::NotifyChanged
+12/18 21:02:23.911  Nvidia driver version: r441_58 (44166)
+12/18 21:02:52.286  Nvidia driver version: r441_58 (44166)
+12/18 21:02:52.286  Nvidia driver version: r441_58 (44166)
+12/18 21:14:56.130  Nvidia driver version: r441_58 (44166)
+12/18 21:14:56.736  D3d12 Device Destroy
+12/18 21:14:56.738  NotifyOnDeviceDestroy
+12/18 21:14:57.092  GxShutdown

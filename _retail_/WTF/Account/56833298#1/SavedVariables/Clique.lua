@@ -34,8 +34,8 @@ CliqueDB3 = {
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
@@ -48,7 +48,7 @@ CliqueDB3 = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -223,7 +223,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Gangus - Runetotem"] = {
+		["Shathiel - Darkspear"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -242,7 +242,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Shathiel - Darkspear"] = {
+		["Sinh - Dalaran"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -489,7 +489,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Sinh - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
