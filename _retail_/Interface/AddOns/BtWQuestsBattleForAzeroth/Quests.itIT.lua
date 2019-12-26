@@ -4,6 +4,7 @@ if GetLocale() ~= "itIT" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateQuestsTable({
     [40537] = {
         name = "Prelievo di sangue",
@@ -6500,7 +6501,29 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57126] = {
         name = "Mari propizi",
     },
+    [57130] = {
+        name = "Traditori tra noi",
+    },
+    [57147] = {
+        name = "Non è la mia Capoguerra",
+    },
+    [57148] = {
+        name = "Spezzare l'assedio",
+    },
+    [57149] = {
+        name = "Eliminazione della propaganda",
+    },
+    [57150] = {
+        name = "Milizia",
+    },
+    [57151] = {
+        name = "Linea di confine",
+    },
+    [57152] = {
+        name = "La vera lealtà",
+    },
     [57198] = {
         name = "Senso del dovere",
     },
 })
+]])()

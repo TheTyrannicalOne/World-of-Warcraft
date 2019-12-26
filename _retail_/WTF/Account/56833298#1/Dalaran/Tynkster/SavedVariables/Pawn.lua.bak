@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
+	["LastVersion"] = 2.0313,
 	["LastPlayerFullName"] = "Tynkster-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -96,3 +96,4 @@ PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil

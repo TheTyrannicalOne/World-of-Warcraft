@@ -4,6 +4,7 @@ if GetLocale() ~= "itIT" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateNPCsTable({
     [3037] = {
         name = "Sheza Manto Selvaggio",
@@ -1616,6 +1617,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "Holger Nash",
     },
+    [138949] = {
+        name = "Throk",
+    },
     [139061] = {
         name = "Nathanos Selvamorta",
     },
@@ -1687,6 +1691,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [140487] = {
         name = "Thomas Zelling",
+    },
+    [140495] = {
+        name = "Katherine Marefiero",
     },
     [140590] = {
         name = "Capitano Grez'ko",
@@ -1828,9 +1835,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [145225] = {
         name = "Spirito di Vol'jin",
-    },
-    [145357] = {
-        name = "Dori'thur",
     },
     [145359] = {
         name = "Principessa Talanji",
@@ -2141,6 +2145,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150086] = {
         name = "Bullon Balzascintille",
     },
+    [150087] = {
+        name = "Genn Mantogrigio",
+    },
     [150101] = {
         name = "Dama Jaina Marefiero",
     },
@@ -2273,14 +2280,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "Daniss Danzaspettri",
     },
+    [151257] = {
+        name = "Torcali",
+    },
     [151283] = {
         name = "Cucciolo di Cornofurente",
     },
     [151285] = {
         name = "Mevris Danzaspettri",
     },
+    [151286] = {
+        name = "Figlia di Torcali",
+    },
     [151287] = {
         name = "Telonis",
+    },
+    [151319] = {
+        name = "Li'zal",
     },
     [151462] = {
         name = "Danielle Lancialenza",
@@ -2359,6 +2375,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152295] = {
         name = "Pascal",
+    },
+    [152316] = {
+        name = "Immagine di Thalyssra",
     },
     [152365] = {
         name = "Kalecgos",
@@ -2447,6 +2466,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153422] = {
         name = "Capo Telemante Oculeth",
     },
+    [153492] = {
+        name = "Fenn",
+    },
     [153496] = {
         name = "Adaru",
     },
@@ -2513,6 +2535,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154601] = {
         name = "Kelya Ombraluna",
     },
+    [154607] = {
+        name = "Immagine di Torcali",
+    },
     [154640] = {
         name = "Gran Maresciallo Fremilama",
     },
@@ -2521,6 +2546,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154661] = {
         name = "Prima Arcanista Thalyssra",
+    },
+    [154673] = {
+        name = "Li'zal",
     },
     [154874] = {
         name = "Guardiano Grinfianera",
@@ -2540,7 +2568,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [155785] = {
         name = "Dama Jaina Marefiero",
     },
+    [155786] = {
+        name = "Varok Faucisaure",
+    },
     [155789] = {
         name = "Lor'themar Theron",
     },
+    [156124] = {
+        name = "Eitrigg",
+    },
+    [156423] = {
+        name = "Dama Sylvanas Ventolesto",
+    },
+    [156425] = {
+        name = "Guardaboschi Oscura Lenara",
+    },
+    [156440] = {
+        name = "Nathanos Selvamorta",
+    },
 })
+]])()

@@ -4,6 +4,7 @@ if GetLocale() ~= "frFR" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateObjectsTable({
     [244983] = {
         name = "Montre de gousset sale",
@@ -278,7 +279,11 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [327592] = {
         name = "Verrou enchanté",
     },
+    [327596] = {
+        name = "Focalisateur abyssal endommagé",
+    },
     [329805] = {
         name = "Cristal étrange",
     },
 })
+]])()

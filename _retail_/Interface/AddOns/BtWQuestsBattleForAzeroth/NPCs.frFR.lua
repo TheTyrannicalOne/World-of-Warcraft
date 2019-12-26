@@ -4,6 +4,7 @@ if GetLocale() ~= "frFR" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateNPCsTable({
     [3037] = {
         name = "Sheza Crin-Sauvage",
@@ -1688,6 +1689,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [140487] = {
         name = "Thomas Zelling",
     },
+    [140495] = {
+        name = "Katherine Portvaillant",
+    },
     [140590] = {
         name = "Capitaine Grez'ko",
     },
@@ -1828,9 +1832,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [145225] = {
         name = "Esprit de Vol'jin",
-    },
-    [145357] = {
-        name = "Dori'thur",
     },
     [145359] = {
         name = "Princesse Talanji",
@@ -2141,6 +2142,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150086] = {
         name = "Déviss Voltétincelle",
     },
+    [150087] = {
+        name = "Genn Grisetête",
+    },
     [150101] = {
         name = "Dame Jaina Portvaillant",
     },
@@ -2273,14 +2277,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "Daniss Danse-Fantôme",
     },
+    [151257] = {
+        name = "Torcali",
+    },
     [151283] = {
         name = "Jeune navrecorne",
     },
     [151285] = {
         name = "Mevris Danse-Fantôme",
     },
+    [151286] = {
+        name = "Petit de Torcali",
+    },
     [151287] = {
         name = "Telonis",
+    },
+    [151319] = {
+        name = "Li'zal",
     },
     [151462] = {
         name = "Danielle Pêchette",
@@ -2359,6 +2372,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152295] = {
         name = "Pascal",
+    },
+    [152316] = {
+        name = "Image de Thalyssra",
     },
     [152365] = {
         name = "Kalecgos",
@@ -2447,6 +2463,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153422] = {
         name = "Télémancien en chef Oculeth",
     },
+    [153492] = {
+        name = "Fenn",
+    },
     [153496] = {
         name = "Adaru",
     },
@@ -2513,6 +2532,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154601] = {
         name = "Kelya Tombelune",
     },
+    [154607] = {
+        name = "Image de Torcali",
+    },
     [154640] = {
         name = "Connétable Tremblelame",
     },
@@ -2521,6 +2543,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154661] = {
         name = "Première arcaniste Thalyssra",
+    },
+    [154673] = {
+        name = "Li'zal",
     },
     [154874] = {
         name = "Gardien de la Griffe noire",
@@ -2540,7 +2565,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [155785] = {
         name = "Dame Jaina Portvaillant",
     },
+    [155786] = {
+        name = "Varok Saurcroc",
+    },
     [155789] = {
         name = "Lor’themar Theron",
     },
+    [156124] = {
+        name = "Eitrigg",
+    },
+    [156423] = {
+        name = "Dame Sylvanas Coursevent",
+    },
+    [156425] = {
+        name = "Forestier-sombre Lenara",
+    },
+    [156440] = {
+        name = "Nathanos le Flétrisseur",
+    },
 })
+]])()

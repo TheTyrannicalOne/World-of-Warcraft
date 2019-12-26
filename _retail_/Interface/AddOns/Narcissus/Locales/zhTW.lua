@@ -7,6 +7,11 @@ local L = Narci.L
 NARCI_GRADIENT = "|cffA236EFN|cff9448F1a|cff865BF2r|cff786DF4c|cff6A80F6i|cff5D92F7s|cff4FA4F9s|cff41B7FAu|cff33C9FCs|r 角色資訊"
 MYMOG_GRADIENT = "|cffA236EFM|cff9448F1y |cff865BF2T|cff786DF4r|cff6A80F6a|cff5D92F7n|cff4FA4F9s|cff41B7FAm|cff33C9FCo|cff32c9fbg|r"
 
+NARCI_MODIFIER_ALT = "ALT鍵";   --Windows
+if IsMacClient() then
+    NARCI_MODIFIER_ALT = "Option鍵";  --Mac OS
+end
+
 L["Movement Speed"] = "移動速度";
 L["Damage Reduction Percentage"] = "減傷%";
 
@@ -131,7 +136,7 @@ L["Entrance Visual"] = "登場效果";
 L["Entrance Visual Description"] = "在模組登場時播放法術效果。";
 L["Panel Scale"] = "面板縮放";
 L["Exit Confirmation"] = "退出確認";
-L["Exit Confirmation Texts"] = "是否退出合影模式？";
+L["Exit Confirmation Texts"] = "退出合影模式？";
 L["Exit Confirmation Leave"] = "退出";
 L["Exit Confirmation Cancel"] = "取消";
 L["Ultra-wide"] = "超寬屏";
@@ -141,6 +146,7 @@ L["Ultra-wide Tooltip"] = "妳能看到此選項是因為妳正在使用壹臺%s
 L["Interactive Area"] = "交互區域";
 L["Item Socketing Tooltip"] = "雙擊左鍵進行鑲嵌";
 L["Credits"] = "致謝";
+L["Use Bust Shot"] = "使用半身像";
 
 --Model Control--
 NARCI_SHEATH_WEAPON = "收起武器";
@@ -229,7 +235,8 @@ NARCI_DELETE_SET_WITH_LONG_CLICK = "刪除此套裝\n|cff808080(按住左鍵)|r"
 
 --Tutorial--
 L["Alert"] = "警告";
-L["Race Change Alert"] = "此自助式種族變換艙已被汙染。請不要繼續使用。";
+L["Race Change"] = "種族/性別變更";
+L["Race Change Line1"] = "妳又可以改變妳的種族和性別了。但是此功能存在壹些限制：\n1. 妳的武器會消失。\n2. 法術效果不再能被移除。\n3. 此操作對其他玩家或NPC無效。";
 L["Guide Spell Headline"] = "試用和應用";
 L["Guide Spell Criteria1"] = "單擊左鍵：試用";
 L["Guide Spell Criteria2"] = "單擊右鍵：應用";
@@ -242,7 +249,7 @@ L["Guide Input Headline"] = "自行輸入";
 L["Guide Input Line1"] = "妳也可以自行輸入SpellVisualKitID。截至8.3版本，這個ID的上限約為124,000。\n妳可以用鼠標滾輪來快速預覽上/下壹個ID。\n有極少的ID可能會導致遊戲報錯。";
 L["Guide Equipment Manager Line1"] = "雙擊：使用套裝\n右擊：編輯套裝";
 L["Guide Model Control Headline"] = "模組控制";
-L["Guide Model Control Line1"] = "妳可以用控制試衣間的鼠標行為來控制此模組。此外，妳還可以：\n\n1.按住ALT和鼠標左鍵來改變俯仰角。\n2.按住ALT和鼠標右鍵來進行細微縮放。";
+L["Guide Model Control Line1"] = format("妳可以用控制試衣間的鼠標行為來控制此模組。此外，妳還可以：\n\n1.按住%s和鼠標左鍵來改變俯仰角。\n2.按住%s和鼠標右鍵來進行細微縮放。", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
 
 
 --Others need to be localized--
@@ -271,13 +278,13 @@ NARCI_SPLASH_HEADER1 = "視覺效果和模組控制";
 NARCI_SPLASH_HEADER2 = "套裝管理員";
 NARCI_SPLASH_HEADER3 = "其他";
 NARCI_SPLASH_MESSAGE0 = "|cffd9cdb41. 妳現在可以在場景裏應用獨特的效果了。|r\n妳可以為演員添加法術或者其他道具，甚至可以控制場景中的天氣。點擊模組控制面板左下角的按鈕即可展開選項。"
-NARCI_SPLASH_MESSAGE1 = "|cffd9cdb42. 翻轉模組和細微縮放|r\n妳可以按住Alt和滑鼠左鍵來讓模組演Y軸旋轉；或是按住Alt和滑鼠右鍵來進行細微縮放。";
+NARCI_SPLASH_MESSAGE1 = format("|cffd9cdb42. 翻轉模組和細微縮放|r\n妳可以按住%s和滑鼠左鍵來讓模組演Y軸旋轉；或是按住%s和滑鼠右鍵來進行細微縮放。", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
 NARCI_SPLASH_MESSAGE2 = "|cffd9cdb4可通過點擊右上方的六邊形按鈕（也是顯示妳最高物品等級的地方）來展開這個功能。";
 NARCI_SPLASH_MESSAGE3 = "|cffd9cdb41. 現在AFK畫面會在妳移動或者進入戰鬥時自動退出。\n2. 試衣間增強又恢復了工作。|r";
 
 --Project Details--
 NARCI_ALL_PROJECTS = "全部項目";
-NARCI_PROJECT_DETAILS = "|cFFFFD100插件作者: Peterodox\n更新日期: 2019.12.15|r\n\n感謝妳使用此插件！如果妳遇到任何問題，或者有任何想法或建議，請在CurseForge項目主頁上留言，或者在以下網站上聯系我。";
+NARCI_PROJECT_DETAILS = "|cFFFFD100插件作者: Peterodox\n更新日期: 2019.12.23|r\n\n感謝妳使用此插件！如果妳遇到任何問題，或者有任何想法或建議，請在CurseForge項目主頁上留言，或者在以下網站上聯系我。";
 NARCI_PROJECT_AAA_SUMMARY = "探索艾澤拉斯上的不同景點，並收集各種故事和照片。";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "沈浸式角色面板；妳最好的截圖助手。"
 

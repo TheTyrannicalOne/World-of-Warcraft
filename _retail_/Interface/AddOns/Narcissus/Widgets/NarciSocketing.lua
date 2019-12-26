@@ -1,7 +1,7 @@
 local L = Narci.L;
 local ITEM_QUALITY_COLORS = ITEM_QUALITY_COLORS;
 local Narci_GemInfo = Narci_GemInfo;
-local GetGemBonues = NarciAPI_GetGemBonus; --(Gem's itemID or hyperlink)
+local GetGemBonus = NarciAPI_GetGemBonus; --(Gem's itemID or hyperlink)
 local max = math.max;
 local min = math.min;
 local floor = math.floor;
@@ -66,23 +66,11 @@ local ItemBorderTexture = {
     [10] = {0.625,  0.75},       --Red
 }
 
-local function designateColorID(itemID)
-    if itemID == 153714 then
-        return 10;
-    elseif itemID == 153715 then
-        return 2;
-    end
-end
+local GetGemBorderTexture = Narci.GetGemBorderTexture
 
-local function GetBorderTexture(itemSubClassID, designateColorID)
-    if designateColorID then return ItemBorderTexture[designateColorID][1], ItemBorderTexture[designateColorID][2]; end
-    if not itemSubClassID then
-        return 0.875, 1;
-    elseif not ItemBorderTexture[itemSubClassID] then
-        return 0.875, 1;
-    else
-        return ItemBorderTexture[itemSubClassID][1], ItemBorderTexture[itemSubClassID][2]
-    end
+local function GetBorderTexCoord(itemID, itemSubClassID)
+    local index = GetGemBorderTexture(itemID, itemSubClassID);
+    return ItemBorderTexture[index][1], ItemBorderTexture[index][2];
 end
 
 local function ShowFlyoutBlack(bool)
@@ -229,10 +217,10 @@ local function DisplayButtons(itemCountList, disabledID, rootFrame, buttonTempla
             button.Icon2:SetTexture(icon);
             button.Icon3:SetTexture(icon);
             button.Count:SetText(count);
-            bonus, minLevel = GetGemBonues(itemID);
+            bonus, minLevel = GetGemBonus(itemID);
             button.Bonus:SetText(bonus);
 
-            texCoord1, texCoord2 = GetBorderTexture(itemSubClassID, designateColorID(button.GemID));
+            texCoord1, texCoord2 = GetBorderTexCoord(itemID, itemSubClassID);
             button.Border0:SetTexCoord(texCoord1, texCoord2, 0, 0.5);
             button.Border1:SetTexCoord(texCoord1, texCoord2, 0.5, 1);
             if itemID == disabledID or (minLevel and minLevel > SocektedItemLvl) then
@@ -419,7 +407,7 @@ function Narci_GemButton_OnEnter(self)
         tooltip.OtherGems:Hide();
     end
 
-	local bonus = GetGemBonues(link);
+	local bonus = GetGemBonus(link);
 	local name, _, quality, _, _, _, _, _, _, icon = GetItemInfo(link);
 	local r, g, b = ITEM_QUALITY_COLORS[quality].r, ITEM_QUALITY_COLORS[quality].g, ITEM_QUALITY_COLORS[quality].b;
 

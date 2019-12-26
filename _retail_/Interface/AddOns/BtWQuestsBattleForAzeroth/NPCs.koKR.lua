@@ -4,6 +4,7 @@ if GetLocale() ~= "koKR" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateNPCsTable({
     [3037] = {
         name = "시자 와일드메인",
@@ -1619,6 +1620,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "홀거 내쉬",
     },
+    [138949] = {
+        name = "스로크",
+    },
     [139061] = {
         name = "나타노스 블라이트콜러",
     },
@@ -1690,6 +1694,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [140487] = {
         name = "토마스 젤링",
+    },
+    [140495] = {
+        name = "캐서린 프라우드무어",
     },
     [140590] = {
         name = "선장 그레즈코",
@@ -1828,9 +1835,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [145225] = {
         name = "볼진의 영혼",
-    },
-    [145357] = {
-        name = "도리투르",
     },
     [145359] = {
         name = "공주 탈란지",
@@ -2063,6 +2067,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [148798] = {
         name = "여군주 제이나 프라우드무어",
     },
+    [148870] = {
+        name = "도리언 애트워터",
+    },
     [149084] = {
         name = "영혼방랑자 우소",
     },
@@ -2113,6 +2120,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [150086] = {
         name = "볼튼 스프링스파크",
+    },
+    [150087] = {
+        name = "겐 그레이메인",
     },
     [150101] = {
         name = "여군주 제이나 프라우드무어",
@@ -2210,6 +2220,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151000] = {
         name = "검귀 오카니",
     },
+    [151061] = {
+        name = "미미론",
+    },
     [151100] = {
         name = "길라 크로스와이어",
     },
@@ -2228,14 +2241,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "다니스 고스트댄서",
     },
+    [151257] = {
+        name = "토르칼리",
+    },
     [151283] = {
         name = "새끼 공포뿔",
     },
     [151285] = {
         name = "메브리스 고스트댄서",
     },
+    [151286] = {
+        name = "토르칼리의 새끼",
+    },
     [151287] = {
         name = "텔로니스",
+    },
+    [151319] = {
+        name = "리잘",
     },
     [151462] = {
         name = "다니엘 앵글러스",
@@ -2305,6 +2327,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152295] = {
         name = "파스칼",
+    },
+    [152316] = {
+        name = "탈리스라의 환영",
     },
     [152365] = {
         name = "칼렉고스",
@@ -2393,6 +2418,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153422] = {
         name = "수석 이동술사 오큘레스",
     },
+    [153492] = {
+        name = "펜",
+    },
     [153496] = {
         name = "아다루",
     },
@@ -2459,6 +2487,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154601] = {
         name = "케일라 문폴",
     },
+    [154607] = {
+        name = "토르칼리의 환영",
+    },
     [154640] = {
         name = "최고사령관 트렘블레이드",
     },
@@ -2467,6 +2498,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154661] = {
         name = "첫 번째 비전술사 탈리스라",
+    },
+    [154673] = {
+        name = "리잘",
     },
     [155071] = {
         name = "샨드리스 페더문",
@@ -2483,7 +2517,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [155785] = {
         name = "여군주 제이나 프라우드무어",
     },
+    [155786] = {
+        name = "바로크 사울팽",
+    },
     [155789] = {
         name = "로르테마르 테론",
     },
+    [156124] = {
+        name = "아이트리그",
+    },
+    [156423] = {
+        name = "여군주 실바나스 윈드러너",
+    },
+    [156425] = {
+        name = "어둠 순찰자 레나라",
+    },
+    [156440] = {
+        name = "나타노스 블라이트콜러",
+    },
 })
+]])()

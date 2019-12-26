@@ -120,6 +120,11 @@
                         tex:SetAlpha(0);
                         tex:GetParent().ReusedTexture = tex;
                     </OnFinished>
+                    <OnStop>
+                        local tex = self:GetParent();
+                        tex:SetAlpha(0);
+                        tex:GetParent().ReusedTexture = tex;    
+                    </OnStop>
                 </Scripts>
             </AnimationGroup>
         </Animations>  
@@ -713,7 +718,7 @@
                                         </Scripts>
                                     </Button>
 
-                                    <Button name="Narci_CameraSafeSwitch" inherits="NarciCheckButtonTemplate">
+                                    <Button name="Narci_CameraSafeSwitch" inherits="NarciCheckButtonTemplate" parentKey="CameraSafe">
                                         <Anchors>
                                             <Anchor point="TOPLEFT" relativeKey="$parent.Orbit" relativePoint="BOTTOMLEFT" x="0" y="-60"/>
                                         </Anchors>
@@ -739,6 +744,31 @@
                                                 end
                                             </OnShow>
                                             <OnClick function="Narci_CameraSafeSwitch_OnClick"/>
+                                        </Scripts>
+                                    </Button>
+
+                                    <Button name="Narci_BustShotSwitch" inherits="NarciCheckButtonTemplate">
+                                        <Anchors>
+                                            <Anchor point="TOPLEFT" relativeKey="$parent.CameraSafe" relativePoint="BOTTOMLEFT" x="0" y="-60"/>
+                                        </Anchors>
+                                        <Layers>
+                                            <Layer level="OVERLAY">
+                                                <Texture file="Interface\AddOns\Narcissus\Art\Preference\BustShot" parentKey="Preview">
+                                                    <Size x="128" y="96"/>
+                                                    <TexCoords left="0" right="0.5" top="0" bottom="0.75"/>
+                                                    <Anchors>
+                                                        <Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="BOTTOMLEFT" x="0" y="-12"/>
+                                                    </Anchors>
+                                                </Texture>
+                                            </Layer>
+                                        </Layers>
+                                        <Scripts>
+                                            <OnLoad>
+                                                self.IsOn = false;
+                                                self.Label:SetText(NARCI_NEW_ENTRY_PREFIX.. Narci.L["Use Bust Shot"]);
+                                            </OnLoad>
+                                            <OnShow function="NarciAPI_OptimizeBorderThickness"/>
+                                            <OnClick function="Narci_BustShotSwitch_OnClick"/>
                                         </Scripts>
                                     </Button>
                                 </Frames>

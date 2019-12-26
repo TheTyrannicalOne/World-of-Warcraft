@@ -4,6 +4,7 @@ if GetLocale() ~= "itIT" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateObjectsTable({
     [244983] = {
         name = "Orologio da Tasca Sporco",
@@ -251,6 +252,9 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [307748] = {
         name = "Lettera della S.P.R. & Co.",
     },
+    [309498] = {
+        name = "Supporto per Armatura",
+    },
     [311155] = {
         name = "Antica Tavoletta",
     },
@@ -275,7 +279,11 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [327592] = {
         name = "Lucchetto Incantato",
     },
+    [327596] = {
+        name = "Focus Abissale Rotto",
+    },
     [329805] = {
         name = "Cristallo Strano",
     },
 })
+]])()

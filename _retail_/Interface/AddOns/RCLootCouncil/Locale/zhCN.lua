@@ -13,6 +13,8 @@ L["A tab delimited output for Excel. Might work with other spreadsheets."] = "�
 L["Abort"] = "中止"
 L["Accept Whispers"] = "接受密语"
 L["accept_whispers_desc"] = "允许玩家密语他们当前的物品给你，以添加到分配界面。"
+--[[Translation missing --]]
+--[[ L["Accepted imports: 'Player Export' and 'CSV'"] = ""--]] 
 L["Active"] = "启用"
 L["active_desc"] = "取消勾选以禁用RCLootCouncil。当你在团队中但没参与副本活动时这很有用。备注：此选项在每次登出时重置。"
 L["Add Item"] = "添加物品"
@@ -250,7 +252,15 @@ L["ignore_input_desc"] = "输入一个物品ID，将其添加至忽略列表，R
 L["ignore_input_usage"] = "此功能只接受物品ID(数字), 物品名字以及物品链接"
 L["ignore_list_desc"] = "被RCLootCouncil忽略的物品，点击该物品来移除它。"
 L["ignore_options_desc"] = "控制RCLootCouncil忽略的物品。如果添加的物品未显示，切到其他标签再切回来，这样你就可以看到了。"
+--[[Translation missing --]]
+--[[ L["Import aborted"] = ""--]] 
 L["import_desc"] = "将数据粘贴于此。只显示前2500个字符以避免游戏卡顿。"
+--[[Translation missing --]]
+--[[ L["import_malformed"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["import_malformed_header"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["import_not_supported"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Invalid selection"] = ""--]] 
 L["Item"] = "物品"
@@ -296,6 +306,8 @@ L["Message for each item"] = "每件物品的信息"
 L["message_desc"] = "要发送至所选频道的消息。"
 L["Minimize in combat"] = "战斗中最小化"
 L["Minor Upgrade"] = "小提升"
+--[[Translation missing --]]
+--[[ L["Missing votes from:"] = ""--]] 
 L["ML sees voting"] = "物品分配者可见投票"
 L["ml_sees_voting_desc"] = "允许物品分配者查看投票详情。"
 L["module_tVersion_outdated_msg"] = "最新模块 %s 的测试版本为: %s"
@@ -352,7 +364,11 @@ L["Opens the synchronizer"] = "打开同步界面"
 --[[Translation missing --]]
 --[[ L["opt_autoTrade_desc"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["opt_award_later_desc"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["opt_buttonsGroup_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_chatFrameName_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["opt_deleteDate_confirm"] = ""--]] 
 --[[Translation missing --]]
@@ -447,7 +463,11 @@ L["save_skin_desc"] = "输入你的皮肤名称，点击'确认'以保存。注�
 L["Self Vote"] = "自我投票"
 L["self_vote_desc"] = "允许投票者为自己投票。"
 L["Send History"] = "发送历史"
+--[[Translation missing --]]
+--[[ L["Send to Guild"] = ""--]] 
 L["send_history_desc"] = "发送数据给队伍中所有成员，无论是不是你自己记录的。只有你是战利品分配者时， RCLootCouncil才会发送数据。"
+--[[Translation missing --]]
+--[[ L["send_to_guild_desc"] = ""--]] 
 L["Sending 'type' to 'player'..."] = "正在发送 %s 给 %s"
 L["Sent whisper help to 'player'"] = "发送密语帮助给 %s"
 L["session_error"] = "出现了一些错误 - 请重新开始分配"

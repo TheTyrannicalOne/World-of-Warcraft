@@ -4,6 +4,7 @@ if GetLocale() ~= "zhTW" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateQuestsTable({
     [40537] = {
         name = "鮮血合約",
@@ -5447,6 +5448,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54639] = {
         name = "風暴群山的訊號",
     },
+    [54640] = {
+        name = "無情地精！",
+    },
+    [54641] = {
+        name = "為了諾姆瑞根！",
+    },
     [54642] = {
         name = "地精天兵上陣",
     },
@@ -5527,6 +5534,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54787] = {
         name = "為朋友偽裝",
+    },
+    [54850] = {
+        name = "行動：決戰穴居怪",
     },
     [54851] = {
         name = "浪潮祝福",
@@ -6488,13 +6498,41 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57092] = {
         name = "戰略佈署",
     },
+    [57093] = {
+        name = "奧格瑪的正門前方",
+    },
     [57094] = {
         name = "勝利的代價",
     },
+    [57095] = {
+        name = "老兵",
+    },
     [57126] = {
         name = "…並跟著大海走。",
+    },
+    [57130] = {
+        name = "我們之中的叛徒",
+    },
+    [57147] = {
+        name = "不是我的大酋長",
+    },
+    [57148] = {
+        name = "破壞攻城機具",
+    },
+    [57149] = {
+        name = "處理文宣",
+    },
+    [57150] = {
+        name = "民兵",
+    },
+    [57151] = {
+        name = "狂沙陣線",
+    },
+    [57152] = {
+        name = "最高忠誠",
     },
     [57198] = {
         name = "責任感",
     },
 })
+]])()

@@ -1,6 +1,6 @@
 ## Interface: 80205
 ## Title: BtWQuests: Classic
-## Version: 11
+## Version: 12
 ## Notes: Classic quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
@@ -55,7 +55,7 @@ Objects.ruRU.lua
 Objects.zhCN.lua
 Objects.zhTW.lua
 
-Index.lua
+Index.enUS.lua
 Index.deDE.lua
 Index.esES.lua
 Index.esMX.lua

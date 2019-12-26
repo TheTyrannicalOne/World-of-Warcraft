@@ -429,6 +429,7 @@ Narci.Narci_ClassEntrance = {
     [12] = {false, 2, false, 38, Entrance_DH, 119406},	--62730 Spell_DH_ImmolationAura_Cast
 	
 	--Test Override
+	--[4]  = {false, false, false, 55, Entrance_Warlock, 116927},
 };
 
 --[[

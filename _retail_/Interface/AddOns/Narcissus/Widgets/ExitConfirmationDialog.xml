@@ -32,7 +32,7 @@
 		</Scripts>
 	</Button>
 
-	<Frame name="Narci_ExitConfirmationDialog" frameLevel="5" frameStrata="FULLSCREEN_DIALOG" hidden="true" scale="1">
+	<Frame name="Narci_ExitConfirmationDialog" frameLevel="5" frameStrata="FULLSCREEN_DIALOG" hidden="true" scale="1" Alpha="0">
 		<Size x="208" y="56"/>
 		<Anchors>
 			<Anchor point="CENTER" relativeTo="UIParent" relativePoint="CENTER" y="15"/>

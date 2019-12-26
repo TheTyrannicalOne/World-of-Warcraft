@@ -4,6 +4,7 @@ if GetLocale() ~= "esMX" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateQuestsTable({
     [40537] = {
         name = "Firma sangrienta",
@@ -6509,7 +6510,29 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57126] = {
         name = "...y vientos favorables",
     },
+    [57130] = {
+        name = "Traidores entre nosotros",
+    },
+    [57147] = {
+        name = "Abajo Sylvanas",
+    },
+    [57148] = {
+        name = "Rompeasedios",
+    },
+    [57149] = {
+        name = "Acaba con la propaganda",
+    },
+    [57150] = {
+        name = "Milicia",
+    },
+    [57151] = {
+        name = "Una línea en la arena",
+    },
+    [57152] = {
+        name = "Fiel hasta la muerte",
+    },
     [57198] = {
         name = "Sentido del deber",
     },
 })
+]])()

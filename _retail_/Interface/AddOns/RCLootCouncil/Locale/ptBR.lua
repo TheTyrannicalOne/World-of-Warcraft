@@ -13,6 +13,8 @@ L["A tab delimited output for Excel. Might work with other spreadsheets."] = "Um
 L["Abort"] = "Abortar"
 L["Accept Whispers"] = "Aceitar Sussuros"
 L["accept_whispers_desc"] = "Permite aos jogadores sussurrar seu(s) item(ns) atual(is) para você para ser(em) adicionado(s) ao quadro de votação."
+--[[Translation missing --]]
+--[[ L["Accepted imports: 'Player Export' and 'CSV'"] = ""--]] 
 L["Active"] = "Ativo"
 L["active_desc"] = "Desmarque para desativar o RCLootCouncil. Útil se você estiver em um grupo de raide, mas não está participando de verdade. Nota: Isso é redefinido a cada \"logout\"."
 L["Add Item"] = "Adicionar Item"
@@ -396,7 +398,15 @@ L["Autoloot BoE"] = "Saque automático para itens Vinculados ao Equipar"
 --[[Translation missing --]]
 --[[ L["ignore_options_desc"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["Import aborted"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["import_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["import_malformed"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["import_malformed_header"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["import_not_supported"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Invalid selection"] = ""--]] 
 --[[Translation missing --]]
@@ -467,6 +477,8 @@ L["Autoloot BoE"] = "Saque automático para itens Vinculados ao Equipar"
 --[[ L["Minimize in combat"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Minor Upgrade"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Missing votes from:"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["ML sees voting"] = ""--]] 
 --[[Translation missing --]]
@@ -565,7 +577,11 @@ L["open"] = "abrir"
 --[[Translation missing --]]
 --[[ L["opt_autoTrade_desc"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["opt_award_later_desc"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["opt_buttonsGroup_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_chatFrameName_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["opt_deleteDate_confirm"] = ""--]] 
 --[[Translation missing --]]
@@ -709,7 +725,11 @@ L["open"] = "abrir"
 --[[Translation missing --]]
 --[[ L["Send History"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["Send to Guild"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["send_history_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["send_to_guild_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Sending 'type' to 'player'..."] = ""--]] 
 --[[Translation missing --]]

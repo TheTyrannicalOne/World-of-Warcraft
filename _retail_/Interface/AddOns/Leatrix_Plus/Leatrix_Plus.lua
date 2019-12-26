@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.20 (19th December 2019)
+-- 	Leatrix Plus 8.2.21 (26th December 2019)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.20"
+	LeaPlusLC["AddonVer"] = "8.2.21"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -3897,10 +3897,6 @@
 			_G.PlayerFrame_SetLocked = function() end
 			_G.TargetFrame_SetLocked = function() end
 
-			-- Replace specific movement functions
-			local buffSetPos = BuffFrame.SetPoint
-			local powerBarAltSetPos = PlayerPowerBarAlt.SetPoint
-
 			-- Create frame table (used for local traversal)
 			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragGhostFrame = GhostFrame, DragMirrorTimer1 = MirrorTimer1, DragUIWidgetTopCenterContainerFrame = UIWidgetTopCenterContainerFrame, DragBuffFrame = BuffFrame, DragPlayerPowerBarAlt = PlayerPowerBarAlt}
 
@@ -3932,13 +3928,7 @@
 			local function LeaFramesSetPos(frame, point, parent, relative, xoff, yoff)
 				frame:SetMovable(true)
 				frame:ClearAllPoints()
-				if frame:GetName() == "BuffFrame" then
-					buffSetPos(BuffFrame, point, parent, relative, xoff, yoff)
-				elseif frame:GetName() == "PlayerPowerBarAlt" then
-					powerBarAltSetPos(PlayerPowerBarAlt, point, parent, relative, xoff, yoff)
-				else
-					frame:SetPoint(point, parent, relative, xoff, yoff)
-				end
+				frame:SetPoint(point, parent, relative, xoff, yoff)
 			end
 
 			-- Set frames to default values
@@ -4195,21 +4185,12 @@
 				end
 			end
 
-			-- Prevent changes to buff frame position
-			hooksecurefunc(BuffFrame, "SetPoint", function()
+			-- Set buff frame position when the game resets it
+			hooksecurefunc("UIParent_UpdateTopFramePositions", function()
 				if LeaPlusDB["Frames"]["BuffFrame"]["Point"] and LeaPlusDB["Frames"]["BuffFrame"]["Relative"] and LeaPlusDB["Frames"]["BuffFrame"]["XOffset"] and LeaPlusDB["Frames"]["BuffFrame"]["YOffset"] then
 					BuffFrame:SetMovable(true)
 					BuffFrame:ClearAllPoints()
-					buffSetPos(BuffFrame, LeaPlusDB["Frames"]["BuffFrame"]["Point"], UIParent, LeaPlusDB["Frames"]["BuffFrame"]["Relative"], LeaPlusDB["Frames"]["BuffFrame"]["XOffset"], LeaPlusDB["Frames"]["BuffFrame"]["YOffset"])
-				end
-			end)
-
-			-- Prevent changes to player power bar alt frame position
-			hooksecurefunc(PlayerPowerBarAlt, "SetPoint", function()
-				if LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Point"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Relative"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["XOffset"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["YOffset"] then
-					PlayerPowerBarAlt:SetMovable(true)
-					PlayerPowerBarAlt:ClearAllPoints()
-					powerBarAltSetPos(PlayerPowerBarAlt, LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Point"], UIParent, LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Relative"], LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["XOffset"], LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["YOffset"])
+					BuffFrame:SetPoint(LeaPlusDB["Frames"]["BuffFrame"]["Point"], UIParent, LeaPlusDB["Frames"]["BuffFrame"]["Relative"], LeaPlusDB["Frames"]["BuffFrame"]["XOffset"], LeaPlusDB["Frames"]["BuffFrame"]["YOffset"])
 				end
 			end)
 

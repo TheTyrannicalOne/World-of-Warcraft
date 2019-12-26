@@ -4,6 +4,7 @@ if GetLocale() ~= "deDE" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateNPCsTable({
     [3037] = {
         name = "Sheza Wildmähne",
@@ -1619,6 +1620,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "Holger Nielsen",
     },
+    [138949] = {
+        name = "Throk",
+    },
     [139061] = {
         name = "Nathanos Pestrufer",
     },
@@ -1690,6 +1694,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [140487] = {
         name = "Thomas Zelling",
+    },
+    [140495] = {
+        name = "Katherine Prachtmeer",
     },
     [140590] = {
         name = "Käpt'n Grez'ko",
@@ -1831,9 +1838,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [145225] = {
         name = "Geist von Vol'jin",
-    },
-    [145357] = {
-        name = "Dori'thur",
     },
     [145359] = {
         name = "Prinzessin Talanji",
@@ -2066,6 +2070,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [147950] = {
         name = "Getriebehauptmann Winkelfeder",
     },
+    [147952] = {
+        name = "Fizzi Tüftelbogen",
+    },
     [148015] = {
         name = "Taelia Fordragon",
     },
@@ -2140,6 +2147,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [150086] = {
         name = "Fitz Funkenschlag",
+    },
+    [150087] = {
+        name = "Genn Graumähne",
     },
     [150101] = {
         name = "Lady Jaina Prachtmeer",
@@ -2273,14 +2283,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "Daniss Geisttänzer",
     },
+    [151257] = {
+        name = "Torcali",
+    },
     [151283] = {
         name = "Terrorhornjungtier",
     },
     [151285] = {
         name = "Mevris Geisttänzer",
     },
+    [151286] = {
+        name = "Spross von Torcali",
+    },
     [151287] = {
         name = "Telonis",
+    },
+    [151319] = {
+        name = "Li'zal",
     },
     [151462] = {
         name = "Danielle Anglers",
@@ -2327,6 +2346,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151999] = {
         name = "Jo'nok, Bollwerk von Torcali",
     },
+    [152000] = {
+        name = "Dori'thur",
+    },
     [152002] = {
         name = "Abbild von Mimiron",
     },
@@ -2359,6 +2381,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152295] = {
         name = "Pascal",
+    },
+    [152316] = {
+        name = "Abbild von Thalyssra",
     },
     [152365] = {
         name = "Kalecgos",
@@ -2447,6 +2472,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153422] = {
         name = "Großtelemant Oculeth",
     },
+    [153492] = {
+        name = "Fenn",
+    },
     [153496] = {
         name = "Adaru",
     },
@@ -2513,6 +2541,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154601] = {
         name = "Kelya Mondsturz",
     },
+    [154607] = {
+        name = "Abbild von Torcali",
+    },
     [154640] = {
         name = "Großmarschall Tremblade",
     },
@@ -2521,6 +2552,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154661] = {
         name = "Erste Arkanistin Thalyssra",
+    },
+    [154673] = {
+        name = "Li'zal",
     },
     [154874] = {
         name = "Schwarzkrallenwächter",
@@ -2540,7 +2574,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [155785] = {
         name = "Lady Jaina Prachtmeer",
     },
+    [155786] = {
+        name = "Varok Saurfang",
+    },
     [155789] = {
         name = "Lor'themar Theron",
     },
+    [156124] = {
+        name = "Etrigg",
+    },
+    [156423] = {
+        name = "Fürstin Sylvanas Windläufer",
+    },
+    [156425] = {
+        name = "Dunkle Waldläuferin Lenara",
+    },
+    [156440] = {
+        name = "Nathanos Pestrufer",
+    },
 })
+]])()

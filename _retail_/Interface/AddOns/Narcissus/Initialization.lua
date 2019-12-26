@@ -7,7 +7,7 @@ local DefaultValue = {
     ["ShowMinimapButton"] = true,
     ["FontHeightItemName"] = 10,
     ["GlobalScale"] = 0.8,
-    ["AuotoColorTheme"] = true,
+    ["AutoColorTheme"] = true,
     ["ColorChoice"] = 0,
     ["EnableDoubleTap"] = false,
     ["CameraOrbit"] = true,
@@ -26,19 +26,20 @@ local DefaultValue = {
     ["LetterboxEffect"] = false,
     ["LetterboxRatio"] = 2.35,
     ["AFKScreen"] = false,
-    ["GemManager"] = true,
-    ["DressingRoom"] = true,
-    ["DressingRoomUseTargetModel"] = true,
+    ["GemManager"] = true,                          --Enable gem manager for Blizzard item socketing frame
+    ["DressingRoom"] = true,                        --Enable dressing room module
+    ["DressingRoomUseTargetModel"] = true,          --Replace the the dressing room room with your targeted player
     ["UseEntranceVisual"] = true,
     ["ModelPanelScale"] = 1,
-    ["UseExitConfirmation"] = true,
-    ["BaseLineOffset"] = 0,     --Ultra-wide
-    ["ShrinkArea"] = 0,
-    ["AutoPlayAnimation"] = true,
+    ["UseExitConfirmation"] = true,                 --Show exit confirmation dialog upon leaving group photo mode
+    ["BaseLineOffset"] = 0,                         --Ultra-wide
+    ["ShrinkArea"] = 0,                             --Reduce the width of the area where you can control the model
+    ["AutoPlayAnimation"] = true,                   --Play recommended animation when clicking a spell visual entry
+    ["UseBustShot"] = true,                         --Zoom in to the upper torso
 }
 
 local TutorialInclude = {
-    "RaceChange", "SpellVisualBrowser", "EquipmentSetManager", "Movement", "ExitConfirmation",
+    "RaceChange", "SpellVisualBrowser", "EquipmentSetManager", "Movement", "ExitConfirmation", "RaceChangeFixed",
 };
 
 local function Initialize_NarcissusDB()

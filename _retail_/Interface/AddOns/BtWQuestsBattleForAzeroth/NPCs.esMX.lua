@@ -4,6 +4,7 @@ if GetLocale() ~= "esMX" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateNPCsTable({
     [3037] = {
         name = "Sheza Ferocrín",
@@ -45,7 +46,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Zen'tabra",
     },
     [120551] = {
-        name = "Krag'wa el Enorme",
+        name = "Krag'wa el Gigante",
     },
     [120740] = {
         name = "Rey Rastakhan",
@@ -96,7 +97,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Hanzabu",
     },
     [122129] = {
-        name = "Comerciante Alexxi Crisopeya",
+        name = "Comerciante Alexxi Cruzpot",
     },
     [122289] = {
         name = "Guardafilada Kaja",
@@ -543,13 +544,13 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "Princesa Talanji",
     },
     [127980] = {
-        name = "Akunda de la Sensatez",
+        name = "Akunda el Sensato",
     },
     [127989] = {
         name = "Meijani",
     },
     [127992] = {
-        name = "Akunda de la Exaltación",
+        name = "Akunda el Exaltado",
     },
     [128096] = {
         name = "Bwonsamdi",
@@ -1622,6 +1623,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "Holger Nash",
     },
+    [138949] = {
+        name = "Throk",
+    },
     [139061] = {
         name = "Nathanos Clamañublo",
     },
@@ -1693,6 +1697,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [140487] = {
         name = "Thomas Zelling",
+    },
+    [140495] = {
+        name = "Katherine Valiente",
     },
     [140590] = {
         name = "Capitán Grez'ko",
@@ -1834,9 +1841,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [145225] = {
         name = "Espíritu de Vol'jin",
-    },
-    [145357] = {
-        name = "Dori'thur",
     },
     [145359] = {
         name = "Princesa Talanji",
@@ -2147,6 +2151,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150086] = {
         name = "Bolten Chispaelástico",
     },
+    [150087] = {
+        name = "Genn Cringris",
+    },
     [150101] = {
         name = "Lady Jaina Valiente",
     },
@@ -2279,14 +2286,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "Daniss Danzaespíritus",
     },
+    [151257] = {
+        name = "Torcali",
+    },
     [151283] = {
         name = "Prole de cuernoatroz",
     },
     [151285] = {
         name = "Mevris Danzaespíritus",
     },
+    [151286] = {
+        name = "Cría de Torcali",
+    },
     [151287] = {
         name = "Telonis",
+    },
+    [151319] = {
+        name = "Li'zal",
     },
     [151462] = {
         name = "Danielle Pescadores",
@@ -2365,6 +2381,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152295] = {
         name = "Pascal",
+    },
+    [152316] = {
+        name = "Imagen de Thalyssra",
     },
     [152365] = {
         name = "Kalecgos",
@@ -2453,6 +2472,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153422] = {
         name = "Jefe Telemante Oculeth",
     },
+    [153492] = {
+        name = "Fenn",
+    },
     [153509] = {
         name = "Artesano Okata",
     },
@@ -2516,6 +2538,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154601] = {
         name = "Kelya Puestaluna",
     },
+    [154607] = {
+        name = "Imagen de Torcali",
+    },
     [154640] = {
         name = "Gran mariscal Hojatemblorosa",
     },
@@ -2524,6 +2549,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154661] = {
         name = "Primera Arcanista Thalyssra",
+    },
+    [154673] = {
+        name = "Li'zal",
     },
     [154874] = {
         name = "Vigía garranegra",
@@ -2543,7 +2571,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [155785] = {
         name = "Lady Jaina Valiente",
     },
+    [155786] = {
+        name = "Varok Colmillosauro",
+    },
     [155789] = {
         name = "Lor'themar Theron",
     },
+    [156124] = {
+        name = "Eitrigg",
+    },
+    [156423] = {
+        name = "Lady Sylvanas Brisaveloz",
+    },
+    [156425] = {
+        name = "Forestal oscura Lenara",
+    },
+    [156440] = {
+        name = "Nathanos Clamañublo",
+    },
 })
+]])()

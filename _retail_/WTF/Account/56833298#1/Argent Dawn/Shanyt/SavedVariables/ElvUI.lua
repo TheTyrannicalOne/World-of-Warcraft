@@ -24,72 +24,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"to busy figthing npcs", -- [1]
-			"Katsvertise-Proudmoore", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Katsvertise-Proudmoore", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1730, -- [11]
-			"Player-5-0B94660D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Katsvertise-Proudmoore|r",
-			[51] = 1575149460,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"here comes 120 thank god", -- [1]
-			"Grimsins-Arygos", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Grimsins-Arygos", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1791, -- [11]
-			"Player-99-09410729", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Grimsins-Arygos|r",
-			[51] = 1575149526,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [2]
-		{
-			"I gotta go back to MOP and get some new fireworks", -- [1]
-			"Härléyquinn-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Härléyquinn-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			176, -- [11]
-			"Player-3676-077267C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Härléyquinn-Area52|r",
-			[51] = 1575210309,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [3]
-		{
 			"lol do we not have healers? xD", -- [1]
 			"Temple-Illidan", -- [2]
 			"", -- [3]
@@ -110,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575210667,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [4]
+		}, -- [1]
 		{
 			"im out of bandages", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -132,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575210685,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [5]
+		}, -- [2]
 		{
 			"lol I heard you the first time", -- [1]
 			"Temple-Illidan", -- [2]
@@ -154,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575210692,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [6]
+		}, -- [3]
 		{
 			"thats kinda like out of tampons", -- [1]
 			"Härléyquinn-Area52", -- [2]
@@ -176,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Härléyquinn-Area52|r",
 			[51] = 1575210732,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [7]
+		}, -- [4]
 		{
 			"they pushing in our base", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -198,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575210824,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [8]
+		}, -- [5]
 		{
 			"rip", -- [1]
 			"Lespin-Dalaran", -- [2]
@@ -220,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecLespin-Dalaran|r",
 			[51] = 1575210852,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [9]
+		}, -- [6]
 		{
 			"thisi s gonna be aquick loss", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -242,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575210915,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [10]
+		}, -- [7]
 		{
 			"yup", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -264,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575210923,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [11]
+		}, -- [8]
 		{
 			"we lost", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -286,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575210926,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [12]
+		}, -- [9]
 		{
 			"kronck up", -- [1]
 			"Hangnar-Azralon", -- [2]
@@ -308,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcHangnar-Azralon|r",
 			[51] = 1575210960,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
+		}, -- [10]
 		{
 			"no one cares", -- [1]
 			"Porkloin-Blackhand", -- [2]
@@ -330,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Porkloin-Blackhand|r",
 			[51] = 1575210971,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
+		}, -- [11]
 		{
 			"Back", -- [1]
 			"Shoeonhead-Ragnaros", -- [2]
@@ -352,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Shoeonhead-Ragnaros|r",
 			[51] = 1575210972,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [15]
+		}, -- [12]
 		{
 			"we gotta start killing him before both towers fall", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -374,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575210976,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [16]
+		}, -- [13]
 		{
 			"if we want a chance", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -396,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575210979,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [17]
+		}, -- [14]
 		{
 			"i do care", -- [1]
 			"Muathh-Durotan", -- [2]
@@ -418,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Muathh-Durotan|r",
 			[51] = 1575210984,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [18]
+		}, -- [15]
 		{
 			"Details!: Healing Done for Korrak's Revenge [1:13 AC]", -- [1]
 			"Temple-Illidan", -- [2]
@@ -440,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [19]
+		}, -- [16]
 		{
 			"1. Lilyessa ....... 50.1K (747, 38.7%)", -- [1]
 			"Temple-Illidan", -- [2]
@@ -462,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [20]
+		}, -- [17]
 		{
 			"2. Strumpett .... 14.3K (385, 11.0%)", -- [1]
 			"Temple-Illidan", -- [2]
@@ -484,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [21]
+		}, -- [18]
 		{
 			"3. Lvlforarmor .. 6.8K (619, 5.3%)", -- [1]
 			"Temple-Illidan", -- [2]
@@ -506,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [22]
+		}, -- [19]
 		{
 			"4. Temple ......... 5.7K (298, 4.4%)", -- [1]
 			"Temple-Illidan", -- [2]
@@ -528,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575211007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [23]
+		}, -- [20]
 		{
 			"5. Cowls ........... 5.4K (179, 4.2%)", -- [1]
 			"Temple-Illidan", -- [2]
@@ -550,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575211008,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [24]
+		}, -- [21]
 		{
 			"we have like two healers lol", -- [1]
 			"Temple-Illidan", -- [2]
@@ -572,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Temple-Illidan|r",
 			[51] = 1575211016,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [25]
+		}, -- [22]
 		{
 			"help us in teh bunker", -- [1]
 			"Lvlforarmor-Thrall", -- [2]
@@ -594,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lvlforarmor-Thrall|r",
 			[51] = 1575211017,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [26]
+		}, -- [23]
 		{
 			"oh the horde has ballerenas that go to SF to", -- [1]
 			"Härléyquinn-Area52", -- [2]
@@ -616,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Härléyquinn-Area52|r",
 			[51] = 1575211020,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [27]
+		}, -- [24]
 		{
 			"nice", -- [1]
 			"Härléyquinn-Area52", -- [2]
@@ -638,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Härléyquinn-Area52|r",
 			[51] = 1575211026,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [28]
+		}, -- [25]
 		{
 			"get the towers", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -660,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575211062,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [29]
+		}, -- [26]
 		{
 			"nice", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -682,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575211257,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [30]
+		}, -- [27]
 		{
 			"gg", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -704,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575211258,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [31]
+		}, -- [28]
 		{
 			"hit up the big guy", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -726,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575211292,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
+		}, -- [29]
 		{
 			"Capping: West Frostwolf Tower - 6.7 (Alliance)", -- [1]
 			"Veoxthree-Zul'jin", -- [2]
@@ -748,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVeoxthree-Zul'jin|r",
 			[51] = 1575211315,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [33]
+		}, -- [30]
 		{
 			"Capping: Dun Baldar South Bunker - 1:02 (Horde)", -- [1]
 			"Veoxthree-Zul'jin", -- [2]
@@ -770,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVeoxthree-Zul'jin|r",
 			[51] = 1575211315,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [34]
+		}, -- [31]
 		{
 			"ALL PUSH INTO VANS ROOM NOW", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -792,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575211317,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [35]
+		}, -- [32]
 		{
 			"ALL IN", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -814,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575211320,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
+		}, -- [33]
 		{
 			"lol", -- [1]
 			"Härléyquinn-Area52", -- [2]
@@ -836,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Härléyquinn-Area52|r",
 			[51] = 1575211327,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
+		}, -- [34]
 		{
 			"WELL", -- [1]
 			"Caylarnson-Illidan", -- [2]
@@ -858,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Caylarnson-Illidan|r",
 			[51] = 1575211329,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
+		}, -- [35]
 		{
 			"TOOLS", -- [1]
 			"Porkloin-Blackhand", -- [2]
@@ -880,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Porkloin-Blackhand|r",
 			[51] = 1575211329,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [39]
+		}, -- [36]
 		{
 			"they did it with one tower up", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -902,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575211331,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [40]
+		}, -- [37]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -924,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1575211625,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
+		}, -- [38]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -946,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1575211926,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [42]
+		}, -- [39]
 		{
 			"PLEASE sshare quest", -- [1]
 			"Archlotlot-Undermine", -- [2]
@@ -968,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Archlotlot-Undermine|r",
 			[51] = 1575212067,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [43]
+		}, -- [40]
 		{
 			"Dont just stick around the bunker, pull that npc to the flag as you go", -- [1]
 			"Margulis-Eonar", -- [2]
@@ -990,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Margulis-Eonar|r",
 			[51] = 1575212378,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [44]
+		}, -- [41]
 		{
 			"For the next gy", -- [1]
 			"Margulis-Eonar", -- [2]
@@ -1012,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Margulis-Eonar|r",
 			[51] = 1575212388,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [45]
+		}, -- [42]
 		{
 			"why would you backcap ib gy?", -- [1]
 			"Kripter-Stormreaver", -- [2]
@@ -1034,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Kripter-Stormreaver|r",
 			[51] = 1575212607,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [46]
+		}, -- [43]
 		{
 			"and then defend it, sigh this is a fail bg", -- [1]
 			"Kripter-Stormreaver", -- [2]
@@ -1056,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Kripter-Stormreaver|r",
 			[51] = 1575212637,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [47]
+		}, -- [44]
 		{
 			"i see", -- [1]
 			"Evanzz-Azralon", -- [2]
@@ -1078,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Evanzz-Azralon|r",
 			[51] = 1575212658,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [48]
+		}, -- [45]
 		{
 			"idots got iceblood", -- [1]
 			"Evanzz-Azralon", -- [2]
@@ -1100,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Evanzz-Azralon|r",
 			[51] = 1575212662,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [49]
+		}, -- [46]
 		{
 			"thats why there is so many", -- [1]
 			"Evanzz-Azralon", -- [2]
@@ -1122,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Evanzz-Azralon|r",
 			[51] = 1575212668,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
+		}, -- [47]
 		{
 			"noob hour", -- [1]
 			"Kripter-Stormreaver", -- [2]
@@ -1144,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Kripter-Stormreaver|r",
 			[51] = 1575212672,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [51]
+		}, -- [48]
 		{
 			"taking the L", -- [1]
 			"Kripter-Stormreaver", -- [2]
@@ -1166,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Kripter-Stormreaver|r",
 			[51] = 1575212677,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [52]
+		}, -- [49]
 		{
 			"geez they got enough ally that went back to defend?", -- [1]
 			"Kalshak-AltarofStorms", -- [2]
@@ -1188,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kalshak-AltarofStorms|r",
 			[51] = 1575212721,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [53]
+		}, -- [50]
 		{
 			"doesn't look good", -- [1]
 			"Tenkra-Turalyon", -- [2]
@@ -1210,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tenkra-Turalyon|r",
 			[51] = 1575212809,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [54]
+		}, -- [51]
 		{
 			"converge or Stonehearth gy, and take and hold this time,  stop spreading out so thin and being easy pickings for ally", -- [1]
 			"Sweetbitter-Zangarmarsh", -- [2]
@@ -1232,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSweetbitter-Zangarmarsh|r",
 			[51] = 1575212898,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [55]
+		}, -- [52]
 		{
 			"and try not to pull npc's", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -1254,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575212916,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [56]
+		}, -- [53]
 		{
 			"Rockerz", -- [1]
 			"Tenkra-Turalyon", -- [2]
@@ -1276,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tenkra-Turalyon|r",
 			[51] = 1575213062,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [57]
+		}, -- [54]
 		{
 			"you made my nerves jump for a sec", -- [1]
 			"Tenkra-Turalyon", -- [2]
@@ -1298,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tenkra-Turalyon|r",
 			[51] = 1575213069,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [58]
+		}, -- [55]
 		{
 			"toiwer", -- [1]
 			"Craftdk-Thrall", -- [2]
@@ -1320,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Craftdk-Thrall|r",
 			[51] = 1575213164,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [59]
+		}, -- [56]
 		{
 			"need stome to stay and help gaurd sh gy", -- [1]
 			"Sweetbitter-Zangarmarsh", -- [2]
@@ -1342,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSweetbitter-Zangarmarsh|r",
 			[51] = 1575213195,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [60]
+		}, -- [57]
 		{
 			"ill help guard GY", -- [1]
 			"Kalshak-AltarofStorms", -- [2]
@@ -1364,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kalshak-AltarofStorms|r",
 			[51] = 1575213215,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [61]
+		}, -- [58]
 		{
 			"They are seriously defending shit", -- [1]
 			"Tenkra-Turalyon", -- [2]
@@ -1386,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tenkra-Turalyon|r",
 			[51] = 1575213236,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [62]
+		}, -- [59]
 		{
 			"we need to push their base and fast", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -1408,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575213268,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
+		}, -- [60]
 		{
 			"they are turtleing, and backcap if we leave things unattended", -- [1]
 			"Sweetbitter-Zangarmarsh", -- [2]
@@ -1430,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSweetbitter-Zangarmarsh|r",
 			[51] = 1575213282,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [64]
+		}, -- [61]
 		{
 			"go go go guys", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -1452,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575213778,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
+		}, -- [62]
 		{
 			"фдд шт", -- [1]
 			"Scraydk-BleedingHollow", -- [2]
@@ -1474,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scraydk-BleedingHollow|r",
 			[51] = 1575213823,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [66]
+		}, -- [63]
 		{
 			"all in", -- [1]
 			"Scraydk-BleedingHollow", -- [2]
@@ -1496,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scraydk-BleedingHollow|r",
 			[51] = 1575213826,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [67]
+		}, -- [64]
 		{
 			"bring him inside", -- [1]
 			"Tenkra-Turalyon", -- [2]
@@ -1518,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tenkra-Turalyon|r",
 			[51] = 1575213856,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [68]
+		}, -- [65]
 		{
 			"Capping: Stonehearth Bunker - 1:37 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1540,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215050,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [69]
+		}, -- [66]
 		{
 			"Capping: Iceblood Graveyard - 1:55 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1562,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215051,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [70]
+		}, -- [67]
 		{
 			"Capping: Tower Point - 2:21 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1584,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215052,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [71]
+		}, -- [68]
 		{
 			"Capping: Stonehearth Graveyard - 2:34 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1606,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215052,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [72]
+		}, -- [69]
 		{
 			"Capping: Iceblood Tower - 2:36 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1628,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215053,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [73]
+		}, -- [70]
 		{
 			"Capping: Dun Baldar South Bunker - 3:26 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1650,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215053,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [74]
+		}, -- [71]
 		{
 			"Capping: Icewing Bunker - 3:42 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1672,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215053,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [75]
+		}, -- [72]
 		{
 			"Capping: Stonehearth Bunker - 7.9 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1694,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215140,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [76]
+		}, -- [73]
 		{
 			"Capping: Iceblood Graveyard - 0:26 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1716,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215140,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [77]
+		}, -- [74]
 		{
 			"Capping: Tower Point - 0:52 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1738,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215141,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [78]
+		}, -- [75]
 		{
 			"Capping: Iceblood Tower - 1:07 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1760,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215141,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [79]
+		}, -- [76]
 		{
 			"Capping: Icewing Bunker - 2:14 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1782,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215142,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [80]
+		}, -- [77]
 		{
 			"Capping: Dun Baldar North Bunker - 3:03 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1804,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215142,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [81]
+		}, -- [78]
 		{
 			"They are sending a group to back cap, watch out", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1826,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215215,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [82]
+		}, -- [79]
 		{
 			"cover that GY", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1848,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215226,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [83]
+		}, -- [80]
 		{
 			"need more defending bunkers, they have a 6 man recap team", -- [1]
 			"Fuzziwuzzi-Staghelm", -- [2]
@@ -1870,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Fuzziwuzzi-Staghelm|r",
 			[51] = 1575215256,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [84]
+		}, -- [81]
 		{
 			"Capping: Stormpike Graveyard - 2:00 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1892,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215294,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [85]
+		}, -- [82]
 		{
 			"Capping: Stonehearth Graveyard - 2:09 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1914,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215294,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [86]
+		}, -- [83]
 		{
 			"Capping: Frostwolf Graveyard - 3:18 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1936,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215295,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [87]
+		}, -- [84]
 		{
 			"Capping: Stormpike Graveyard - 0:53 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1958,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215361,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [88]
+		}, -- [85]
 		{
 			"Capping: Stonehearth Graveyard - 1:02 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -1980,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215362,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [89]
+		}, -- [86]
 		{
 			"Capping: Frostwolf Graveyard - 2:11 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2002,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215362,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [90]
+		}, -- [87]
 		{
 			"OH jesus", -- [1]
 			"Bublé-Daggerspine", -- [2]
@@ -2024,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Bublé-Daggerspine|r",
 			[51] = 1575215386,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [91]
+		}, -- [88]
 		{
 			"protect stormpike", -- [1]
 			"Ambrassing-Azralon", -- [2]
@@ -2046,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ambrassing-Azralon|r",
 			[51] = 1575215403,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [92]
+		}, -- [89]
 		{
 			"go after naggano", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -2068,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575215404,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [93]
+		}, -- [90]
 		{
 			"thats the healer", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -2090,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575215409,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [94]
+		}, -- [91]
 		{
 			"get after towers", -- [1]
 			"Sigenex-Dalaran", -- [2]
@@ -2112,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Sigenex-Dalaran|r",
 			[51] = 1575215439,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [95]
+		}, -- [92]
 		{
 			"protect bunker ffs", -- [1]
 			"Suldizôle-Arthas", -- [2]
@@ -2134,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Suldizôle-Arthas|r",
 			[51] = 1575215477,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [96]
+		}, -- [93]
 		{
 			"Capping: West Frostwolf Tower - 2:28 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2156,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215530,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [97]
+		}, -- [94]
 		{
 			"Capping: Frostwolf Relief Hut - 2:48 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2178,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215531,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [98]
+		}, -- [95]
 		{
 			"Capping: Dun Baldar North Bunker - 2:51 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2200,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215531,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [99]
+		}, -- [96]
 		{
 			"Capping: Dun Baldar South Bunker - 3:05 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2222,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215532,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [100]
+		}, -- [97]
 		{
 			"Capping: East Frostwolf Tower - 3:47 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2244,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215532,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [101]
+		}, -- [98]
 		{
 			"db north ", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -2266,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575215579,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [102]
+		}, -- [99]
 		{
 			"needs someone", -- [1]
 			"Critcatbar-Thrall", -- [2]
@@ -2288,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Critcatbar-Thrall|r",
 			[51] = 1575215581,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [103]
+		}, -- [100]
 		{
 			"Capping: Dun Baldar North Bunker - 1:30 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2310,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215613,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [104]
+		}, -- [101]
 		{
 			"Capping: Dun Baldar South Bunker - 1:43 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2332,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215613,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [105]
+		}, -- [102]
 		{
 			"Capping: East Frostwolf Tower - 2:25 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2354,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215614,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [106]
+		}, -- [103]
 		{
 			"Capping: West Frostwolf Tower - 3:00 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2376,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215615,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [107]
+		}, -- [104]
 		{
 			"Capping: Dun Baldar North Bunker - 0:37 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2398,7 +2332,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215666,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [108]
+		}, -- [105]
 		{
 			"Capping: Dun Baldar South Bunker - 0:50 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2420,7 +2354,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215666,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [109]
+		}, -- [106]
 		{
 			"Capping: East Frostwolf Tower - 1:33 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2442,7 +2376,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215667,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [110]
+		}, -- [107]
 		{
 			"Capping: West Frostwolf Tower - 2:08 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2464,7 +2398,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215667,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [111]
+		}, -- [108]
 		{
 			"Capping: Dun Baldar South Bunker - 5.3 (Horde)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2486,7 +2420,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215711,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [112]
+		}, -- [109]
 		{
 			"Capping: East Frostwolf Tower - 0:48 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2508,7 +2442,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215712,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [113]
+		}, -- [110]
 		{
 			"Capping: West Frostwolf Tower - 1:22 (Alliance)", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2530,7 +2464,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215712,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [114]
+		}, -- [111]
 		{
 			"is there enoguh on O", -- [1]
 			"Jabrym-Barthilas", -- [2]
@@ -2552,7 +2486,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Jabrym-Barthilas|r",
 			[51] = 1575215769,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [115]
+		}, -- [112]
 		{
 			"Capping: Alliance Boss - 34.3%", -- [1]
 			"Myrrima-Illidan", -- [2]
@@ -2574,7 +2508,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMyrrima-Illidan|r",
 			[51] = 1575215786,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [116]
+		}, -- [113]
 		{
 			"brb not afk", -- [1]
 			"Talona-Exodar", -- [2]
@@ -2596,7 +2530,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecTalona-Exodar|r",
 			[51] = 1576446458,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [117]
+		}, -- [114]
 		{
 			"bi", -- [1]
 			"Talona-Exodar", -- [2]
@@ -2618,7 +2552,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecTalona-Exodar|r",
 			[51] = 1576446461,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [118]
+		}, -- [115]
 		{
 			"30 iron 10 wood to plagueworks", -- [1]
 			"Talona-Exodar", -- [2]
@@ -2640,7 +2574,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecTalona-Exodar|r",
 			[51] = 1576447105,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [119]
+		}, -- [116]
 		{
 			"NICE", -- [1]
 			"Greñas-Vashj", -- [2]
@@ -2662,7 +2596,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Greñas-Vashj|r",
 			[51] = 1576447174,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [120]
+		}, -- [117]
 		{
 			"[Dusty Tomb] cleared in 5 minutes, 26 seconds [18:22]-[18:28]", -- [1]
 			"Gnarrkill-Llane", -- [2]
@@ -2684,7 +2618,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Gnarrkill-Llane|r",
 			[51] = 1576456094,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [121]
+		}, -- [118]
 		{
 			"doubt it", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2706,7 +2640,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1576549566,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [122]
+		}, -- [119]
 		{
 			"i started a group", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2728,7 +2662,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1576549573,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [123]
+		}, -- [120]
 		{
 			"same", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2750,7 +2684,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1576549594,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [124]
+		}, -- [121]
 		{
 			"we can try", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2772,7 +2706,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1576549637,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [125]
+		}, -- [122]
 		{
 			"Taseena do you know if Zip is coming on or not", -- [1]
 			"Wildonex-TheScryers", -- [2]
@@ -2794,7 +2728,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecWildonex|r",
 			[51] = 1576552681,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [126]
+		}, -- [123]
 		{
 			"grats name", -- [1]
 			"Memyselfni-ArgentDawn", -- [2]
@@ -2815,6 +2749,72 @@ ElvCharacterDB = {
 			false, -- [17]
 			[52] = "|cfffe7b09Memyselfni|r",
 			[51] = 1576636333,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [124]
+		{
+			"Congrats", -- [1]
+			"Shambone-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			129, -- [11]
+			"Player-75-0BC9602C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcShambone|r",
+			[51] = 1577331887,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [125]
+		{
+			"thanks", -- [1]
+			"Famin-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			130, -- [11]
+			"Player-75-007DC40C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecFamin|r",
+			[51] = 1577331903,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"COngrats", -- [1]
+			"Shambone-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			724, -- [11]
+			"Player-75-0BC9602C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcShambone|r",
+			[51] = 1577332767,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [127]
 	},

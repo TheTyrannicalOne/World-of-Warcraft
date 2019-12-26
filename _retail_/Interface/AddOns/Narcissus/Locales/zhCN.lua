@@ -4,6 +4,11 @@ end
 
 local L = Narci.L
 
+NARCI_MODIFIER_ALT = "ALT键";   --Windows
+if IsMacClient() then
+    NARCI_MODIFIER_ALT = "Option键";  --Mac OS
+end
+
 L["Movement Speed"] = STAT_MOVEMENT_SPEED;
 L["Damage Reduction Percentage"] = COMBAT_TEXT_SHOW_RESISTANCES_TEXT;
 
@@ -134,7 +139,7 @@ L["Entrance Visual"] = "登场效果";
 L["Entrance Visual Description"] = "在模型登场时播放法术效果。";
 L["Panel Scale"] = "面板缩放";
 L["Exit Confirmation"] = "退出确认";
-L["Exit Confirmation Texts"] = "是否退出合影模式？";
+L["Exit Confirmation Texts"] = "退出合影模式？";
 L["Exit Confirmation Leave"] = "退出";
 L["Exit Confirmation Cancel"] = "取消";
 L["Ultra-wide"] = "超宽屏";
@@ -143,6 +148,7 @@ L["Baseline Offset"] = "基准线偏移";
 L["Ultra-wide Tooltip"] = "你能看到此选项是因为你正在使用一台%s:9显示器。";
 L["Interactive Area"] = "交互区域";
 L["Item Socketing Tooltip"] = "双击左键进行镶嵌";
+L["Use Bust Shot"] = "使用半身像";
 
 --模型控制面板--
 NARCI_SHEATH_WEAPON = "收起武器";
@@ -229,7 +235,8 @@ NARCI_DELETE_SET_WITH_LONG_CLICK = "删除此套装\n|cff808080(按住左键)|r"
 
 --Tutorial--
 L["Alert"] = "警告";
-L["Race Change Alert"] = "此自助式种族变换舱已被污染。请不要继续使用。";
+L["Race Change"] = "种族/性别变更";
+L["Race Change Line1"] = "你又可以改变你的种族和性别了。但是此功能存在一些限制：\n1. 你的武器会消失。\n2. 法术效果不再能被移除。\n3. 此操作对其他玩家或NPC无效。";
 L["Guide Spell Headline"] = "试用和应用";
 L["Guide Spell Criteria1"] = "单击左键：试用";
 L["Guide Spell Criteria2"] = "单击右键：应用";
@@ -242,7 +249,7 @@ L["Guide Input Headline"] = "人工输入";
 L["Guide Input Line1"] = "你也可以自行输入SpellVisualKitID。截至8.3版本，这个ID的上限约为124,000。\n你可以用鼠标滚轮来快速预览上/下一个ID。\n有极少的ID可能会导致游戏报错。";
 L["Guide Equipment Manager Line1"] = "双击：使用套装\n右击：编辑套装";
 L["Guide Model Control Headline"] = "模型控制";
-L["Guide Model Control Line1"] = "你可以用控制试衣间的鼠标行为来控制此模型。此外，你还可以：\n\n1.按住ALT和鼠标左键来改变俯仰角。\n2.按住ALT和鼠标右键来进行细微缩放。";
+L["Guide Model Control Line1"] = format("你可以用控制试衣间的鼠标行为来控制此模型。此外，你还可以：\n\n1.按住%s和鼠标左键来改变俯仰角。\n2.按住%s和鼠标右键来进行细微缩放。", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
 
 
 --Splash--
@@ -265,14 +272,14 @@ NARCI_SPLASH_HEADER1 = "视觉效果和模型控制";
 NARCI_SPLASH_HEADER2 = "套装管理器";
 NARCI_SPLASH_HEADER3 = "其他";
 NARCI_SPLASH_MESSAGE0 = "|cffd9cdb41. 你现在可以在场景里应用独特的效果了。|r\n你可以为演员添加法术或者其他道具，甚至可以控制场景中的天气。点击模型控制面板左下角的按钮即可展开选项。"
-NARCI_SPLASH_MESSAGE1 = "|cffd9cdb42. 翻转模型和细微缩放|r\n你可以按住Alt和鼠标左键来让模型演Y轴旋转；或是按住Alt和鼠标右键来进行细微缩放。";
+NARCI_SPLASH_MESSAGE1 = format("|cffd9cdb42. 翻转模型和细微缩放|r\n你可以按住%s和鼠标左键来让模型演Y轴旋转；或是按住%s和鼠标右键来进行细微缩放。", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
 NARCI_SPLASH_MESSAGE2 = "|cffd9cdb4可通过点击右上方的六边形按钮（也是显示你最高物品等级的地方）来展开这个功能。";
 NARCI_SPLASH_MESSAGE3 = "|cffd9cdb41. 现在AFK画面会在你移动或者进入战斗时自动退出。\n2. 试衣间增强又恢复了工作。|r";
 
 
 --Project Details--
 NARCI_ALL_PROJECTS = "全部项目";
-NARCI_PROJECT_DETAILS = "|cFFFFD100插件作者: Peterodox\n更新日期: 2019.12.15|r\n\n感谢你使用此插件！如果你遇到任何问题，或者有任何想法或建议，请在CurseForge项目主页上留言，或者在以下网站上联系我。";
+NARCI_PROJECT_DETAILS = "|cFFFFD100插件作者: Peterodox\n更新日期: 2019.12.23|r\n\n感谢你使用此插件！如果你遇到任何问题，或者有任何想法或建议，请在CurseForge项目主页上留言，或者在以下网站上联系我。";
 NARCI_PROJECT_AAA_SUMMARY = "探索艾泽拉斯上的不同景点，并收集各种故事和照片。";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "沉浸式角色面板；你最好的截图助手。"
 

@@ -28,7 +28,7 @@ local HIT_RECT_OFFSET = 0;
 local function HighlightButton(button, bool)
 	if bool then
 		button:LockHighlight();
-		button.Label:SetTextColor(0.88, 0.88, 0.88)
+		button.Label:SetTextColor(0.88, 0.88, 0.88);
 		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
 	else
 		button:UnlockHighlight();
@@ -93,7 +93,7 @@ local ModelSettings = {
 }
 
 local TranslateValue_Male = {
-	--[raceID] = {ZoomValue, defaultY, defaultZ},
+	--[raceID] = {ZoomValue(1.Bust 2.FullBody), defaultY, defaultZ},
 	[0] = {[1] = {0.05, 0.4, -0.275},		--Default Value
 				[2] = {0.05, 0.4, -0.275}},
 
@@ -131,7 +131,7 @@ local TranslateValue_Male = {
 				[2] = {-0.5, 1.73, -0.39}},		--11 Goat Male √
 			
 	[22] = {[1] = {-0.1, 0.92, -0.58},
-				[2] = {-0.55, 1.44, -0.26}},		--1 Worgen Wolf form √
+				[2] = {-0.55, 1.44, -0.26}},	--22 Worgen Wolf form √
 
 	[24] = {[1] = {0, 1.07, -0.62},
 				[2] = {-0.3, 1.54, -0.31}},		--24 Pandaren Male √
@@ -146,7 +146,7 @@ local TranslateValue_Male = {
 				[2] = {-0.3, 1.71, -0.48}},		--31 Zandalari
 
 	[32] = {[1] = {0.1, 0.97, -0.8},
-				[2] = {-0.4, 1.48, -0.36}},	--32 Kul'Tiran √
+				[2] = {-0.4, 1.48, -0.36}},		--32 Kul'Tiran √
 
 	[36] = {[1] = {0, 1.17, -0.55},
 				[2] = {-0.3, 1.52, -0.28}},		--36 Mag'har
@@ -194,7 +194,7 @@ local TranslateValue_Female = {
 				[2] = {-0.3, 1.33, -0.23}},		--11 Goat Female √
 
 	[22] = {[1] = {-0.1, 0.955, -0.773},
-				[2] = {-0.6, 1.455, -0.27}},	--1 Worgen Wolf form √
+				[2] = {-0.6, 1.455, -0.27}},	--22 Worgen Wolf form √
 
 	[24] = {[1] = {-0.1, 1, -0.54},
 				[2] = {-0.5, 1.37, -0.15}},		--24 Pandaren Female √
@@ -218,7 +218,7 @@ local TranslateValue_Female = {
 TranslateValue_Female[36] = TranslateValue_Female[2];
 
 local function ReAssignRaceID(raceID)
-	raceID = raceID;
+	local raceID = raceID;
 
 	if raceID == 28 then		--Hightmountain
 		raceID = 6;
@@ -272,38 +272,6 @@ end
 local activeModelIndex = 1;
 local Narci_ModelFrames = {};
 local playerInfo = {};
-
---Derivative of Blizzard DressUpFrames.lua--
-local function DressUpSources(appearanceSources, mainHandEnchant, offHandEnchant)
-    if ( not appearanceSources ) then
-		return true;
-	end
-	local model = Narci_ModelFrames[activeModelIndex];
-	local mainHandSlotID = 16   --GetInventorySlotInfo("MAINHANDSLOT");
-	local secondaryHandSlotID = 17  --GetInventorySlotInfo("SECONDARYHANDSLOT");
-	--[[
-	for i = 1, #appearanceSources do
-		if ( i ~= mainHandSlotID and i ~= secondaryHandSlotID ) then
-			if ( appearanceSources[i] and appearanceSources[i] ~= NO_TRANSMOG_SOURCE_ID ) then
-                model:TryOn(appearanceSources[i]);
-			end
-        end
-	end
-	--]]
-	model:TryOn(appearanceSources[mainHandSlotID], "MAINHANDSLOT", mainHandEnchant);
-    model:TryOn(appearanceSources[secondaryHandSlotID], "SECONDARYHANDSLOT", offHandEnchant);
-end
-
-local function UpdateModel(unit)
-	--If target player is holding the same weapon in main&off-hand, only the offhand weapon will be shown--
-	--This method can solve this issue--
-	if not CanInspect(unit, false) then return; end;
-	NotifyInspect(unit);
-	C_Timer.After(0.1,function()
-		DressUpSources(C_TransmogCollection.GetInspectSources())
-		ClearInspectPlayer();
-	end);
-end
 
 local function SetGenderIcon(genderID)
 	local button = Narci_GenderButton;
@@ -682,6 +650,7 @@ PMAI:SetScript("OnShow", function(self)		--PlayerModelAnimIn
 	local model = NarciPlayerModelFrame1;
 	model:RefreshUnit();
 	model.isPlayer = true;
+	model.hasRaceChanged = false;
 	local ZoomMode;
 	if NarcissusDB.ShowFullBody then
 		ZoomMode = 2;	--Full body
@@ -819,6 +788,7 @@ PMAO:SetScript("OnHide", function(self)
 	self.FaceTime = 0;
 	self.Trigger = true;
 	InitializePlayerInfo(1);	--Reset Actor#1 portrait and name
+	NarciPlayerModelFrame1:SetUnit("player");
 end);
 
 function Narci_SetLightButton(self, button)
@@ -1536,17 +1506,11 @@ function NarciModelControl_AnimationSlider_OnValueChanged(self, value, userInput
     end
 end
 
-function NextAnimationButton_Newbee(self, button)
-	SetTutorialFrame(self, NARCI_TUTORIAL_ANIMATION_ID);
-	NarciModelControl_NextAnimationButton_OnClick(self, button);
-	self:SetScript("OnClick", NarciModelControl_NextAnimationButton_OnClick);
-end
-
 function Narci_ModelShadow_SizeSlider_OnValueChanged(self, value, userInput)
     self.VirtualThumb:SetPoint("CENTER", self.Thumb, "CENTER", 0, 0)
     if value ~= self.oldValue then
 		self.oldValue = value
-		self:GetParent():GetParent().Shadow:SetScale(value)
+		self:GetParent():GetParent().ShadowTexture:SetScale(value)
     end
 end
 
@@ -1554,7 +1518,7 @@ function Narci_ModelShadow_AlphaSlider_OnValueChanged(self, value, userInput)
     self.VirtualThumb:SetPoint("CENTER", self.Thumb, "CENTER", 0, 0)
     if value ~= self.oldValue then
 		self.oldValue = value
-		self:GetParent():GetParent().Shadow:SetAlpha(value)
+		self:GetParent():GetParent().ShadowTexture.Shadow:SetAlpha(value)
     end
 end
 
@@ -2058,6 +2022,7 @@ function NarciModelControl_PlayAnimationButton_OnClick(self, button)
 	local model = Narci_ModelFrames[activeModelIndex]
 	local id = NarciModelControl_AnimationIDEditBox:GetNumber();
 	model:SetAnimation(id, 1)
+	model.animationID = id;
 	if button == "LeftButton" then
 		model:SetPaused(false);
 	else
@@ -2073,6 +2038,7 @@ function NarciModelControl_PauseAnimationButton_OnClick(self, button)
 	local model = Narci_ModelFrames[activeModelIndex]
 	local id = NarciModelControl_AnimationIDEditBox:GetNumber();
 	model:FreezeAnimation(id, 0, 1);
+	model.animationID = id;
 	model.freezedFrame = 1;
 	if button == "RightButton" then
 		PauseAllModel(true);
@@ -2485,13 +2451,16 @@ function Narci_ModelIndexButton_OnClick(self, button)
 			if not model then
 				if isPlayer then
 					model = CreateFrame("DressUpModel", "NarciPlayerModelFrame"..ID, Narci_ModelContainer, "Narci_CharacterModelFrame_Template");
-					SetIndexButtonBorder(self, 1, false);
 				else
 					model = CreateFrame("CinematicModel", "NarciNPCModelFrame"..ID, Narci_ModelContainer, "Narci_NPCModelFrame_Template");
 					SetIndexButtonBorder(self, 2, false);
 				end
 			end
-
+			if isPlayer then
+				SetIndexButtonBorder(self, 1, false);
+			else
+				SetIndexButtonBorder(self, 2, false);
+			end
 			model.ButtonIndex = ID;
 			model.isPlayer = isPlayer;
 			model.IsVirtual = false;
@@ -2661,7 +2630,11 @@ local function CreateAndSelectNewActor(ActorIndex, unit, isVirtual)
 		IndexButton.Label:SetText(VIRTUAL_ACTOR);
 		IndexButton.Label:SetTextColor(0, 0.505, 0.663);
 	else
-		SetIndexButtonBorder(IndexButton, 1, false);
+		if model.isPlayer then
+			SetIndexButtonBorder(IndexButton, 1, false);
+		else
+			SetIndexButtonBorder(IndexButton, 2, false);
+		end
 		model:SetModelAlpha(1)
 		model.IsVirtual = false;
 	end
@@ -2693,7 +2666,6 @@ end
 function Narci_ModelIndexButton_AddVirtual(self)
 	local PopUp = self:GetParent();
 	local index = PopUp.Index;
-	--CreateAndSelectNewActor(index, 19178, true);
 	CreateAndSelectNewActor(index, "player", true);
 	NarciAPI_FadeFrame(PopUp, 0.15, "OUT");
 end
@@ -3043,12 +3015,58 @@ function Narci_GenderButton_OnLoad(self)
 	SetGenderIcon(genderID)
 end
 
+function Narci_LoadWeaponVisuals(self)
+	C_Timer.After(0.1, function()
+		local PlayerModel = NarciPlayerModelFrame1;
+		self.MainHandSource, self.MainHandEnchant = PlayerModel:GetSlotTransmogSources(16);
+		self.OffHandSource, self.OffHandEnchant = PlayerModel:GetSlotTransmogSources(17);
+	end);
+end
+
+local function RestoreModelAfterRaceChange(model)
+	if NarciModelControl_AnimationSlider:IsShown() then
+		model:FreezeAnimation(model.animationID or 804, 0, model.freezedFrame or 1);
+	else
+		model:SetAnimation(model.animationID or 804, 1);
+	end
+
+	C_Timer.After(0, function()
+		local visualID;
+		local AppliedVisuals = model.AppliedVisuals;
+		for i = 1, #AppliedVisuals do
+			visualID = AppliedVisuals[i];
+			if visualID then
+				model:ApplySpellVisualKit(visualID, false);
+			end
+		end
+		if model.IsVirtual then
+			model:SetModelAlpha(0);
+		else
+			model:SetModelAlpha(1);
+		end
+
+		model.hasRaceChanged = true;
+		--Weapons Gone
+		--It seems that after race change, the model can no longer get dressed or undressed
+		--[[
+		local WeaponInfo = Narci_ActorPanel;
+		if WeaponInfo.MainHandSource then
+			model:TryOn(WeaponInfo.MainHandSource, "MAINHANDSLOT", WeaponInfo.MainHandEnchant);
+		end
+		if WeaponInfo.OffHandSource then
+			model:TryOn(WeaponInfo.OffHandSource, "SECONDARYHANDSLOT", WeaponInfo.OffHandEnchant);
+		end
+		--]]
+	end)
+end
+
 function Narci_GenderButton_OnClick(self)
 	local index = activeModelIndex;
 	local model = Narci_ModelFrames[activeModelIndex];
 	local genderID = playerInfo[index].gender or 2;
 	local raceID = playerInfo[index].raceID;
-
+	local _, _, dirX, dirY, dirZ, _, ambR, ambG, ambB, _, dirR, dirG, dirB = model:GetLight();
+	model:SetBarberShopAlternateForm();
 	if genderID == 2 then
 		model:SetCustomRace(raceID, 1);
 		genderID = 3;
@@ -3057,10 +3075,14 @@ function Narci_GenderButton_OnClick(self)
 		genderID = 2;
 	end
 	playerInfo[index].gender = genderID;
-
 	SetGenderIcon(playerInfo[index].gender);
+	model:SetModelAlpha(0);
 	C_Timer.After(0, function()
-		CustomModelPosition(model, raceID, genderID)
+		CustomModelPosition(model, raceID, genderID);
+		C_Timer.After(0, function()
+			RestoreModelAfterRaceChange(model);
+			model:SetLight(true, false, dirX, dirY, dirZ, 1, ambR, ambG, ambB, 1, dirR, dirG, dirB);
+		end)	
 	end);
 end
 
@@ -3095,6 +3117,8 @@ function Narci_RaceOptionButton_OnClick(self)
 	local genderID = playerInfo[activeModelIndex].gender;
 	local raceID = self:GetID() or 1;
 	playerInfo[activeModelIndex].raceID = raceID;
+	local _, _, dirX, dirY, dirZ, _, ambR, ambG, ambB, _, dirR, dirG, dirB = model:GetLight();
+	model:SetBarberShopAlternateForm();
 	if genderID == 2 then
 		model:SetCustomRace(raceID, 0);
 	else
@@ -3102,8 +3126,13 @@ function Narci_RaceOptionButton_OnClick(self)
 	end
 	AutoCloseRaceOption(4);
 	
+	model:SetModelAlpha(0);
 	C_Timer.After(0, function()
-		CustomModelPosition(model, raceID, genderID)
+		CustomModelPosition(model, raceID, genderID);
+		C_Timer.After(0, function()
+			RestoreModelAfterRaceChange(model);
+			model:SetLight(true, false, dirX, dirY, dirZ, 1, ambR, ambG, ambB, 1, dirR, dirG, dirB);
+		end)	
 	end);
 end
 
@@ -3463,6 +3492,22 @@ function NarciModelControl_LightsOutButton_OnClick(self)
 end
 
 ----------------------------------------------------
+function Narci:EquipmentItemByItemID(modelIndex, itemID, itemModID)
+	local appearanceID, sourceID = C_TransmogCollection.GetItemInfo(itemID, itemModID);
+	local name = GetItemInfo(itemID) or "";
+	C_Timer.After(0.1, function()
+		name = GetItemInfo(itemID) or "";
+		print(name.." | ".."AppearanceID: "..appearanceID.."  ".." SourceID"..sourceID);
+	end)
+	
+	local model = Narci_ModelFrames[modelIndex];
+	if model then
+		model:TryOn(sourceID);
+	else
+		print("Can't find model #"..modelIndex);
+	end
+end
+
 function Narci:ShrinkModelHitRect(offsetX)
 	HIT_RECT_OFFSET = offsetX;
 	local W0 = WorldFrame:GetWidth();

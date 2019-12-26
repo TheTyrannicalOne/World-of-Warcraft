@@ -4,6 +4,7 @@ if GetLocale() ~= "esES" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateQuestsTable({
     [40537] = {
         name = "Sacar sangre",
@@ -6509,7 +6510,29 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57126] = {
         name = "... Y buena mar",
     },
+    [57130] = {
+        name = "Traidores entre nosotros",
+    },
+    [57147] = {
+        name = "No es mi jefa de guerra",
+    },
+    [57148] = {
+        name = "Rompedores de asedio",
+    },
+    [57149] = {
+        name = "Fin de la propaganda",
+    },
+    [57150] = {
+        name = "Milicia",
+    },
+    [57151] = {
+        name = "Una línea en la arena",
+    },
+    [57152] = {
+        name = "Lealtad máxima",
+    },
     [57198] = {
         name = "Sentido del deber",
     },
 })
+]])()

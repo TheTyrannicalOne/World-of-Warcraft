@@ -4,6 +4,7 @@ if GetLocale() ~= "zhCN" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateObjectsTable({
     [244983] = {
         name = "肮脏的怀表",
@@ -22,6 +23,9 @@ BtWQuestsDatabase:UpdateObjectsTable({
     },
     [273814] = {
         name = "利刃护符",
+    },
+    [273854] = {
+        name = "行囊",
     },
     [276187] = {
         name = "祖恩基",
@@ -236,6 +240,18 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [307748] = {
         name = "风险投资公司函件",
     },
+    [309498] = {
+        name = "护甲架",
+    },
+    [311155] = {
+        name = "上古石板",
+    },
+    [311218] = {
+        name = "萨拉塔斯，黑暗帝国之刃",
+    },
+    [311885] = {
+        name = "萨拉塔斯，黑暗帝国之刃",
+    },
     [322533] = {
         name = "马蒂瓦斯的元素宝典",
     },
@@ -258,3 +274,4 @@ BtWQuestsDatabase:UpdateObjectsTable({
         name = "奇怪的水晶",
     },
 })
+]])()

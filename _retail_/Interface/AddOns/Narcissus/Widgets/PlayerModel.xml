@@ -353,7 +353,7 @@
 		</Scripts>
 	</Slider>
 
-	<Frame name="Narci_GroundShadowFrame_Template" parentKey="GroundShadow" frameStrata="LOW" enableMouse="true" movable="true" hidden="true" virtual="true">
+	<Frame name="Narci_GroundShadowFrame_Template" parentKey="GroundShadow" frameStrata="MEDIUM" frameLevel="30" enableMouse="true" movable="true" hidden="true" virtual="true">
 		<Size x="384" y="242"/>
 		<Anchors>
 			<Anchor point="BOTTOM" relativeTo="UIParent" relativePoint="BOTTOM" x="0" y="0"/>
@@ -361,17 +361,20 @@
 		<HitRectInsets>
 			<AbsInset left="0" right="0" top="0" bottom="0"/>
 		</HitRectInsets>
-		<Layers>
-			<Layer level="BACKGROUND">
-				<Texture hidden="false" file="Interface\AddOns\Narcissus\Art\Widgets\LightSetup\GroundShadow.tga" parentKey="Shadow">
-					<Size x="512" y="512"/>
-					<Anchors>
-						<Anchor point="CENTER" y="25"/>
-					</Anchors>
-				</Texture>
-			</Layer>
-		</Layers>
 		<Frames>
+			<Frame parentKey="ShadowTexture" frameStrata="LOW">
+				<Size x="512" y="512"/>
+				<Anchors>
+					<Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER" y="25"/>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture file="Interface\AddOns\Narcissus\Art\Widgets\LightSetup\GroundShadow.tga" parentKey="Shadow">
+
+						</Texture>
+					</Layer>
+				</Layers>
+			</Frame>
 			<Frame setAllPoints="true" parentKey="Border" Alpha="0">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" x="0" y="0"/>
@@ -1180,6 +1183,7 @@
 						_, _, self.raceID = UnitRace("player");
 						self.gender = UnitSex("player");
 					</OnLoad>
+					<OnShow function="Narci_LoadWeaponVisuals"/>
 				</Scripts>
 				<Frames>
 					<Button name="NarciModelControl_ActorButton" parentKey="ActorButton" frameLevel="50">
@@ -2469,7 +2473,7 @@
 					</Anchors>
 				</HighlightTexture>
 				<Frames>
-					<Button parentKey="ResetButton" name="Narci_GroundShadowOption_Reset">
+					<Button parentKey="ResetButton">
 						<Size x="36" y="30"/>
 						<HitRectInsets>
 							<AbsInset left="6" right="6" top="3" bottom="3"/>

@@ -13,6 +13,8 @@ L["A tab delimited output for Excel. Might work with other spreadsheets."] = "Ei
 L["Abort"] = "Abbrechen"
 L["Accept Whispers"] = "Flüsternachrichten akzeptieren"
 L["accept_whispers_desc"] = "Ermöglicht es Spielern, ihre(n) momentanen Gegenstand/-stände zu dir zu flüstern, um dem Abstimmungsfenster hinzugefügt zu werden."
+--[[Translation missing --]]
+--[[ L["Accepted imports: 'Player Export' and 'CSV'"] = ""--]] 
 L["Active"] = "Aktiv"
 L["active_desc"] = "Abwählen, um RCLootCouncil zu deaktivieren. Dies ist nützlich, wenn du in einem Schlachtzug bist, aber nicht wirklich beteiligt bist. Hinweis: Dies wird beim Abmelden automatisch zurückgesetzt."
 L["Add Item"] = "Gegenstand hinzufügen"
@@ -245,7 +247,15 @@ L["ignore_input_desc"] = "Gib eine Gegenstands-ID ein, die der Ignorierliste hin
 L["ignore_input_usage"] = "Diese Funktion akzeptiert nur Gegenstands-IDs (Nummer), Gegenstandsname oder Gegenstandslink."
 L["ignore_list_desc"] = "Gegenstände, die RCLootCouncil ignoriert. Klicke auf einen Gegenstand, um ihn zu entfernen."
 L["ignore_options_desc"] = "Steuere, welche Gegenstände RCLootCouncil ignorieren soll. Wenn du einen Gegenstand hinzufügst, der nicht zwischengespeichert ist, musst du in einen anderen Reiter wechseln und zurück, bevor du ihn in der Liste siehst. "
+--[[Translation missing --]]
+--[[ L["Import aborted"] = ""--]] 
 L["import_desc"] = "Daten hier einfügen. Es werden nur die ersten 2500 Zeichen angezeigt, damit das Spiel stabil bleibt."
+--[[Translation missing --]]
+--[[ L["import_malformed"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["import_malformed_header"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["import_not_supported"] = ""--]] 
 L["Invalid selection"] = "Ungültige Auswahl"
 L["Item"] = "Gegenstand"
 L["'Item' is added to the award later list."] = "%s wurde der \"Später vergeben\"-Liste hinzugefügt."
@@ -288,6 +298,8 @@ L["Message for each item"] = "Nachricht für jeden Gegenstand"
 L["message_desc"] = "Die Nachricht, die in den ausgewählten Kanal gesendet werden soll."
 L["Minimize in combat"] = "Im Kampf minimieren"
 L["Minor Upgrade"] = "Geringes Upgrade"
+--[[Translation missing --]]
+--[[ L["Missing votes from:"] = ""--]] 
 L["ML sees voting"] = "Plündermeister sieht die Abstimmung"
 L["ml_sees_voting_desc"] = "Erlaubt es dem Plündermeister zu sehen, wer für wen abstimmt."
 L["module_tVersion_outdated_msg"] = "Testversion des neuesten Moduls %s ist: %s"
@@ -342,7 +354,11 @@ L["Opens the synchronizer"] = "Öffnet den Synchronisierer"
 --[[Translation missing --]]
 --[[ L["opt_autoTrade_desc"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["opt_award_later_desc"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["opt_buttonsGroup_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_chatFrameName_desc"] = ""--]] 
 L["opt_deleteDate_confirm"] = [=[Bist du sicher, dass du alles, das älter als das gewählte ist, löschen möchtest?
 Dies kann nicht rückgängig gemacht werden.]=]
 --[[Translation missing --]]
@@ -426,7 +442,11 @@ L["save_skin_desc"] = "Gib einen Namen für deine Optik ein und klicke auf OK, u
 L["Self Vote"] = "Selbstwahl"
 L["self_vote_desc"] = "Erlaubt es Wählern, sich selbst zu wählen."
 L["Send History"] = "Verlauf senden"
+--[[Translation missing --]]
+--[[ L["Send to Guild"] = ""--]] 
 L["send_history_desc"] = "Sendet Daten an alle Schlachtzugsmitglieder, unabhängig davon, ob du es selbst protokollierst. RCLootCouncil wird nur Daten senden, wenn du der Plündermeister bist."
+--[[Translation missing --]]
+--[[ L["send_to_guild_desc"] = ""--]] 
 L["Sending 'type' to 'player'..."] = "Sende %s an %s..."
 L["Sent whisper help to 'player'"] = "Sende Hilfe zur Flüsterfunktion an %s"
 L["session_error"] = "Etwas ist schief gelaufen – Bitte starte die Sitzung erneut"

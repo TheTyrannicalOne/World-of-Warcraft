@@ -4,6 +4,7 @@ if GetLocale() ~= "deDE" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateQuestsTable({
     [40537] = {
         name = "Blutspende",
@@ -6509,7 +6510,29 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57126] = {
         name = "Glück und Segen...",
     },
+    [57130] = {
+        name = "Verräter unter uns",
+    },
+    [57147] = {
+        name = "Nicht mein Kriegshäuptling",
+    },
+    [57148] = {
+        name = "Belagerungsbrecher",
+    },
+    [57149] = {
+        name = "Propagandakontrolle",
+    },
+    [57150] = {
+        name = "Miliz",
+    },
+    [57151] = {
+        name = "Eine Linie im Sand",
+    },
+    [57152] = {
+        name = "Treu ergeben",
+    },
     [57198] = {
         name = "Pflichtgefühl",
     },
 })
+]])()

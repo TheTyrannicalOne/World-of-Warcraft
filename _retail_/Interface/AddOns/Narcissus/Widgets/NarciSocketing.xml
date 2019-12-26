@@ -86,7 +86,7 @@
 				<Layers>
 					<Layer level="ARTWORK">
 						<Texture setAllPoints="true">
-							<Color r="1" g="1" b="1" a="0.6"/>
+							<Color r="1" g="1" b="1" a="0.75"/>
 							<Gradient orientation="VERTICAL">
 								<MinColor a="1" r="1" g="1" b="1"/>
 								<MaxColor a="1" r="0.8" g="0.8" b="0.8"/>
@@ -403,11 +403,6 @@
                 <Scripts>
                     <OnLoad function="Narci_ItemSocketing_ScrollFrame_OnLoad"/>
                 </Scripts>
-				<Animations>
-					<AnimationGroup parentKey="animIn" smoothing="IN_OUT">
-
-					</AnimationGroup>
-				</Animations>
 			</ScrollFrame>
 			<Frame inherits="NarciHeaderWithShadowTemplate" hidden="true">
 				<Anchors>

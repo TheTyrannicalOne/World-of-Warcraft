@@ -4,6 +4,7 @@ if GetLocale() ~= "ptBR" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateObjectsTable({
     [244983] = {
         name = "Relógio de Bolso Sujo",
@@ -251,6 +252,9 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [307748] = {
         name = "Carta da Empreendimentos S.A.",
     },
+    [309498] = {
+        name = "Estande de Armaduras",
+    },
     [311155] = {
         name = "Tabuleta Ancestral",
     },
@@ -282,3 +286,4 @@ BtWQuestsDatabase:UpdateObjectsTable({
         name = "Cristal Estranho",
     },
 })
+]])()

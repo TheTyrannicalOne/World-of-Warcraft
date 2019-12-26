@@ -4,6 +4,7 @@ if GetLocale() ~= "koKR" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateQuestsTable({
     [40537] = {
         name = "피 척출",
@@ -6509,7 +6510,29 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57126] = {
         name = "파도의 흐름을 따라서",
     },
+    [57130] = {
+        name = "우리 중에 배신자가 있다",
+    },
+    [57147] = {
+        name = "대족장을 거부한다",
+    },
+    [57148] = {
+        name = "공성 병차 파괴자",
+    },
+    [57149] = {
+        name = "선동 잠재우기",
+    },
+    [57150] = {
+        name = "민병대",
+    },
+    [57151] = {
+        name = "모래 한 줌 빼낸들 사막이 없어지리",
+    },
+    [57152] = {
+        name = "충신 중의 충신",
+    },
     [57198] = {
         name = "책임감",
     },
 })
+]])()

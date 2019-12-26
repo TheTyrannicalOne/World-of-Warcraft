@@ -1,97 +1,6 @@
 <Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
 	<Script file="Guide.lua"/>
 
-    <Frame name="Narci_Model_RaceChangeAlert" frameLevel="20" virtual="true">
-        <Anchors>
-            <Anchor point="TOPLEFT" relativeKey="$parent.Inset" relativePoint="TOPLEFT" x="0" y="0"/>
-            <Anchor point="BOTTOMRIGHT" relativeKey="$parent.Inset" relativePoint="BOTTOMRIGHT" x="0" y="0"/>
-        </Anchors>
-        <Layers>
-            <Layer level="BACKGROUND">
-                <Texture setAllPoints="true">
-                    <Color r="1" g="0.8" b="0" a="0.9"/>
-                </Texture>
-            </Layer>
-            <Layer level="ARTWORK">
-                <Texture file="Interface\AddOns\Narcissus\Art\Widgets\ActorPanel\Biochemistry" parentKey="Logo">
-                    <Size x="72" y="72"/>
-                    <Anchors>
-                        <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" x="18" y="0"/>
-                    </Anchors>
-                </Texture>
-                <FontString justifyH="LEFT" justifyV="MIDDLE" maxLines="1" inherits="PlayerNameLarge" parentKey="Title">
-                    <Size x="0" y="0"/>
-                    <Color r="0" g="0" b="0"/>
-                    <Shadow>
-                    </Shadow>
-                    <Anchors>
-                        <Anchor point="TOPLEFT" relativeKey="$parent.Logo" relativePoint="TOPRIGHT" x="18" y="-2"/>
-                    </Anchors>
-                </FontString>
-                <FontString justifyH="LEFT" justifyV="MIDDLE" maxLines="2" spacing="1" inherits="NarciIndicatorTiny" parentKey="Description">
-                    <Size x="0" y="0"/>
-                    <Color r="0" g="0" b="0"/>
-                    <Anchors>
-                        <Anchor point="TOPLEFT" relativeKey="$parent.Title" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
-                        <Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT" x="-12"/>
-                    </Anchors>
-                </FontString>
-            </Layer>
-        </Layers>
-        <Frames>
-            <Button parentKey="Confirm">
-                <Size x="100" y="16"/>
-                <Anchors>
-                    <Anchor point="BOTTOMLEFT" relativeKey="$parent.Logo" relativePoint="BOTTOMRIGHT" x="18" y="2"/>
-                </Anchors>
-                <Layers>
-                    <Layer level="BACKGROUND">
-                        <Texture setAllPoints="true" parentKey="Color">
-                            <Color r="0" g="0" b="0" a="1"/>
-                        </Texture>
-                    </Layer>
-                    <Layer level="OVERLAY">
-                        <FontString justifyH="CENTER" justifyV="MIDDLE" maxLines="1" inherits="NarciIndicatorTiny" parentKey="Label">
-                            <Size x="0" y="0"/>
-                            <Color r="1" g="0.8" b="0"/>
-                            <Anchors>
-                                <Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER" x="0" y="0"/>
-                            </Anchors>
-                        </FontString>
-                    </Layer>
-                </Layers>
-                <Scripts>
-                    <OnLoad>
-                        self.Label:SetText("I am aware of the risks");
-                        self:SetWidth(self.Label:GetWidth() + 8);
-                    </OnLoad>
-                    <OnClick>
-                        NarciAPI_FadeFrame(self:GetParent(), 0.25, "OUT");
-                        self:Disable();
-                    </OnClick>
-                    <OnMouseDown>
-                        self.Color:SetAlpha(0.4);
-                    </OnMouseDown>
-                    <OnMouseUp>
-                        self.Color:SetAlpha(1);
-                    </OnMouseUp>
-                    <OnEnter>
-                        self.Color:SetAlpha(0.8);
-                    </OnEnter>
-                    <OnLeave>
-                        self.Color:SetAlpha(1);
-                    </OnLeave>
-                </Scripts>
-            </Button>
-        </Frames>
-        <Scripts>
-            <OnLoad>
-                self.Title:SetText(Narci.L["Alert"]);
-                self.Description:SetText(Narci.L["Race Change Alert"]);
-            </OnLoad>
-        </Scripts>
-    </Frame>
-
     <Frame name="NarciGenericGuideTemplate" inherits="NarciFrameWithShadowTemplate" frameStrata="TOOLTIP" clampedToScreen="true" hidden="true" ignoreParentScale="true" parentKey="Guide" frameLevel="20" ignoreParentAlpha="true" virtual="true" mixin="NarciGuideMixin">
 		<Size x="12" y="8"/>
         <Layers>
@@ -144,9 +53,9 @@
 		</Layers>
         <Frames>
             <Button parentKey="Next" hidden="true">
-                <Size x="24" y="24"/>
+                <Size x="20" y="20"/>
                 <Anchors>
-                    <Anchor point="TOPRIGHT" relativeKey="$parent.inset" relativePoint="TOPRIGHT" x="-6" y="-6"/>
+                    <Anchor point="TOPRIGHT" relativeKey="$parent.inset" relativePoint="TOPRIGHT" x="-4" y="-4"/>
                 </Anchors>
                 <Layers>
                     <Layer level="BACKGROUND">

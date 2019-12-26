@@ -9,6 +9,7 @@ Narci_GemInfo = {
     [168640] = {"mastery", 50},     --Masterful Sea Currant
     [168641] = {"haste", 50},       --Quick Sand Spinel
     [168642] = {"versatility", 50}, --Versatile Dark Opal
+    [169220] = {"MSPD", 5},         --***Straddling Sage Agate
 
     [154126] = {"crit", 40},        --Deadly Amberblaze
     [154127] = {"haste", 40},       --Quick Owlseye
@@ -100,3 +101,39 @@ Narci_EnchantInfo = {
     [5436] = {"INT", 9, 190879},            --Binding of Intellect
     
 }
+
+
+local GemBorderTexture = {
+	[0]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot",			--Empty
+	[1]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Unique",	--Kraken's Eye
+	[2]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Green",
+	[3]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Unique",	--Prismatic	
+	[4]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Unique",	--Meta
+	[5]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Orange",	--Orange
+	[6]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Purple",
+    [7]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Yellow",	--Yellow	
+	[8]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Blue",		--Blue
+	[9]  = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Yellow",	--Empty
+	[10] = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot-Red",		--Red
+	[11] = "Interface/AddOns/Narcissus/Art/GemBorder/GemSlot",			--Artifact
+}
+
+
+
+
+--Some gems require you to assign colors manually
+--itemID, itemType, itemSubType, itemEquipLoc, icon, itemClassID, itemSubClassID = GetItemInfoInstant(itemID or "itemString" or "itemName" or "itemLink") 
+local function GetGemBorderTexture(itemID, itemSubClassID)
+    local index = itemSubClassID or 0;
+    if itemID == 153714 then
+        index = 10;     --Red EXP bonus
+    elseif itemID == 153715 or itemID == 169220 then
+        index = 2;      --Movement Speed
+    elseif itemID == 168636 or itemID == 168637 or itemID == 168638 or
+    itemID == 153707 or itemID == 153708 or itemID == 153709 then
+        index = 1;      --Primary
+    end
+    return index, GemBorderTexture[index]
+end
+
+Narci.GetGemBorderTexture = GetGemBorderTexture;

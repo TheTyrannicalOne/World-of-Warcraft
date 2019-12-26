@@ -4,6 +4,7 @@ if GetLocale() ~= "frFR" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateQuestsTable({
     [40537] = {
         name = "Juste un peu de sang",
@@ -6510,7 +6511,29 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57126] = {
         name = "Suivre le courant",
     },
+    [57130] = {
+        name = "Des traîtres parmi nous",
+    },
+    [57147] = {
+        name = "Pas mon chef de guerre",
+    },
+    [57148] = {
+        name = "Briseurs de siège",
+    },
+    [57149] = {
+        name = "Contre-propagande",
+    },
+    [57150] = {
+        name = "Milice citoyenne",
+    },
+    [57151] = {
+        name = "Tracer une ligne dans le sable",
+    },
+    [57152] = {
+        name = "Indéfectible loyauté",
+    },
     [57198] = {
         name = "Le sens du devoir",
     },
 })
+]])()

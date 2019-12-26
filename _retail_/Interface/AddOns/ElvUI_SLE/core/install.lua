@@ -292,7 +292,7 @@ function PI:DarthSetup()
 
 		E.db["nameplates"]["units"]["FRIENDLY_NPC"]["questIconSize"] = 24
 
-		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["debuffs"]["filters"]["priority"] = "Blacklist,Personal,CCDebuffs"
+		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["debuffs"]["priority"] = "Blacklist,Personal,CCDebuffs"
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["debuffs"]["yOffset"] = 10
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["power"]["enable"] = true
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["power"]["height"] = 4
@@ -301,7 +301,7 @@ function PI:DarthSetup()
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["health"]["height"] = 12
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["health"]["text"]["format"] = "[health:current-percent]"
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["health"]["text"]["fontSize"] = 14
-		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["filters"]["maxDuration"] = 0
+		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["maxDuration"] = 0
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["yOffset"] = 40
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["level"]["fontSize"] = 14
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["name"]["format"] = "[name:medium]"
@@ -1306,17 +1306,17 @@ function PI:DarthOldSetup()
 		E.db["sle"]["armory"]["inspect"]["ilvl"]["fontSize"] = 12
 		E.db["sle"]["armory"]["inspect"]["enchant"]["fontSize"] = 10
 		E.db["sle"]["armory"]["character"]["enchant"]["fontSize"] = 11
+		E.db["sle"]["armory"]["character"]["durability"]["fontSize"] = 10
+		E.db["sle"]["armory"]["character"]["ilvl"]["fontSize"] = 12
+		E.db["sle"]["armory"]["character"]["background"]["selectedBG"] = "TheEmpire"
+		E.db["sle"]["armory"]["character"]["background"]["overlay"] = false
+		E.db["sle"]["armory"]["character"]["gradient"]["quality"] = true
 		E.db["sle"]["armory"]["stats"]["IlvlColor"] = true
 		E.db["sle"]["armory"]["stats"]["IlvlFull"] = true
 		E.db["sle"]["armory"]["stats"]["List"]["SPELLPOWER"] = true
 		E.db["sle"]["armory"]["stats"]["List"]["HEALTH"] = true
 		E.db["sle"]["armory"]["stats"]["List"]["POWER"] = true
 		E.db["sle"]["armory"]["stats"]["List"]["MOVESPEED"] = true
-		E.db["sle"]["armory"]["Character"]["durability"]["fontSize"] = 10
-		E.db["sle"]["armory"]["Character"]["ilvl"]["fontSize"] = 12
-		E.db["sle"]["armory"]["Character"]["background"]["selectedBG"] = "TheEmpire"
-		E.db["sle"]["armory"]["Character"]["background"]["overlay"] = false
-		E.db["sle"]["armory"]["Character"]["gradient"]["quality"] = true
 	end
 	--Movers
 	do

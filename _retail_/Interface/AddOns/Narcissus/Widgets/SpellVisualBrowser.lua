@@ -104,6 +104,7 @@ local function CreateAnimationFrame(duration)
 end
 
 -------------------------------------------
+--Toggle Spell Visual Brower frame
 local ExpandAnim = CreateFrame("Frame");
 ExpandAnim:Hide();
 ExpandAnim.total = 0;
@@ -129,7 +130,7 @@ local function Expand_OnUpdate(self, elapsed)
 	if newTotal >= self.duration then
         offsetX = self.EndX;
         width = self.EndWidth;
-        local offsetY = outSine(newTotal - self.duration, self.StartY, self.EndY, self.duration2 - self.duration);
+        local offsetY = outSine(newTotal - self.duration, self.StartY, self.EndY, 0.25);
         if newTotal >= self.duration2 then
             offsetY = self.EndY;
             self:Hide();
@@ -660,11 +661,13 @@ local function SubcategoryButton_OnClick(self)
     self.collapsed = not self.collapsed;
     local tabHeight;
     if self.collapsed then
-        UIFrameFadeOut(self.Drawer, 0.15, 1, 0);
+        --UIFrameFadeOut(self.Drawer, 0.15, 1, 0);
+        FadeFrame(self.Drawer, 0.15, "OUT");
         self.Icon:SetTexCoord(0, 1, 0, 1);
         tabHeight = 16;
     else
-        UIFrameFadeIn(self.Drawer, 0.2, 0, 1);
+        --UIFrameFadeIn(self.Drawer, 0.2, 0, 1);
+        FadeFrame(self.Drawer, 0.2, "IN");
         self.Icon:SetTexCoord(0, 1, 1, 0);
         tabHeight = 16 * (self.childNum + 1);
     end
@@ -776,14 +779,14 @@ end
 
 local function SubcategoryButton_OnEnter(self)
     ShowHighlight(self);
-    self:SetIgnoreParentAlpha(true);
+    --self:SetIgnoreParentAlpha(true);
     QuickFavoriteButton:Hide();
 end
 
 local function SubcategoryButton_OnLeave(self)
     HideHighlightAndClearID(self);
     self:GetParent():SetAlpha(1);
-    self:SetIgnoreParentAlpha(false);
+    --self:SetIgnoreParentAlpha(false);
 end
 
 local FavoriteSpellVisualKitIDs = {};
@@ -854,6 +857,7 @@ local function CreateEntryButtonFrames(Category)
         end
         button:Show();
         button:SetText(list["name"]);
+        button.Drawer:Hide();
         button.Drawer:SetAlpha(0);
         button.Drawer:SetHeight(15);
         button.collapsed = true;
@@ -878,7 +882,7 @@ local function CreateEntryButtonFrames(Category)
 
         for j = listLength, 1, -1 do                                            --1, listLength, 1
             --Entry button--
-            button = totalFrames[totalButton]
+            button = totalFrames[totalButton];
             if not button then
                 button = CreateFrame("Button", nil, parentFrame, "Narci_OptionalSpellVisualButtonTemplate");
                 tinsert(totalFrames, button);
@@ -890,6 +894,7 @@ local function CreateEntryButtonFrames(Category)
 
             button:Show();
             button.Drawer:SetAlpha(0);
+            button.Drawer:Hide();
             button.Drawer:SetHeight(15);
             if j == listLength then
                 button:SetPoint("BOTTOM", parentFrame, "BOTTOM", 0, 0);    -- 0,-16 When anchor to the top
@@ -909,7 +914,6 @@ local function CreateEntryButtonFrames(Category)
                 button.Star:SetAlpha(0);
             end
             button:SetText(info[2]);
-            
             button.ButtonText:SetJustifyH("LEFT");
             button.ButtonText:SetPoint("CENTER", 13, 0);
             button.Count:Hide();
@@ -1255,6 +1259,13 @@ local function ResetModel()
     local camX, camY, camZ = model:GetCameraPosition();
     local _, _, dirX, dirY, dirZ, _, ambR, ambG, ambB, _, dirR, dirG, dirB = model:GetLight();
     local distance = model.cameraDistance;
+    --[[
+    if model.isPlayer then
+        if model.hasRaceChanged then
+            model:SetCustomRace();
+        end
+    end
+    --]]
     model:RefreshUnit();
 
     C_Timer.After(0, function()
@@ -1590,11 +1601,22 @@ local function UpdateDeleteInfo(numToBeDeleted)
     ListFrame.Header.Tab3Label:SetText( string.format(TextFormat, numToBeDeleted) );
 end
 
+local function EditFrame_EditBox_Cancel(self)
+    local EntryButton = self:GetParent().parent;
+    EntryButton.Overlay:Hide();
+    self:SetText("");
+    self:Hide();
+    NarciTooltip:JustHide();
+end
+
 local function EditFrame_DeleteButton_OnClick(self)
     local EntryButton = self:GetParent().parent;
     if not EntryButton then return; end;
-    
+
     EntryButton.ToBeDeleted = not EntryButton.ToBeDeleted;
+    local EditBox = self:GetParent().EditBox;
+    EditFrame_EditBox_Cancel(EditBox);
+
     if EntryButton.ToBeDeleted then
         self.numToBeDeleted = self.numToBeDeleted or 0;
         self.numToBeDeleted = self.numToBeDeleted + 1;
@@ -1607,14 +1629,6 @@ local function EditFrame_DeleteButton_OnClick(self)
     UpdateDeleteInfo(self.numToBeDeleted);
 end
 
-
-local function EditFrame_EditBox_Cancel(self)
-    local EntryButton = self:GetParent().parent;
-    EntryButton.Overlay:Hide();
-    self:SetText("");
-    self:Hide();
-    NarciTooltip:JustHide();
-end
 
 local function EditFrame_RenameButton_OnClick(self)
     local EditBox = self:GetParent().EditBox;

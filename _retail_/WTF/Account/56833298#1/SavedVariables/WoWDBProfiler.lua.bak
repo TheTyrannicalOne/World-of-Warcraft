@@ -31,9 +31,56 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["City of Ironforge:87"] = {
+							["3:330:646"] = true,
 							["3:332:652"] = true,
 							["3:334:648"] = true,
+							["3:334:650"] = true,
 							["3:332:650"] = true,
+						},
+					},
+				},
+			},
+			["187236"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["City of Ironforge:87"] = {
+							["3:336:658"] = true,
+						},
+					},
+				},
+			},
+			["180746"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["City of Ironforge:87"] = {
+							["3:336:658"] = true,
+						},
+					},
+				},
+			},
+			["180743"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["City of Ironforge:87"] = {
+							["3:336:658"] = true,
+						},
+					},
+				},
+			},
+			["180747"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["City of Ironforge:87"] = {
+							["3:336:662"] = true,
+						},
+					},
+				},
+			},
+			["180793"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["City of Ironforge:87"] = {
+							["3:336:662"] = true,
 						},
 					},
 				},
@@ -43,12 +90,19 @@ WoWDBProfilerData = {
 					["locations"] = {
 						["Orgrimmar:85"] = {
 							["3:528:754"] = true,
+							["3:528:752"] = true,
 						},
 					},
 				},
 			},
 		},
 		["items"] = {
+			[21309] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
 			[122252] = {
 				["instance_difficulty_id"] = 0,
 				["suffix_id"] = 0,
@@ -60,6 +114,26 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 				["upgrade_value"] = 0,
+			},
+			[21191] = {
+				["instance_difficulty_id"] = 11,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["City of Ironforge:87"] = {
+							["3:330:654"] = true,
+						},
+					},
+				},
+				["contains_count"] = 1,
+				["upgrade_value"] = 0,
+				["contains"] = {
+					"21254:5", -- [1]
+				},
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[158415] = {
 				["instance_difficulty_id"] = 11,
@@ -138,10 +212,11 @@ WoWDBProfilerData = {
 			[4800] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
+				["durability"] = 75,
 				["unique_id"] = 0,
 			},
 			[122352] = {
@@ -201,11 +276,46 @@ WoWDBProfilerData = {
 				["durability"] = 50,
 				["unique_id"] = 0,
 			},
+			[21328] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[172224] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
 			[122668] = {
 				["instance_difficulty_id"] = 0,
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 				["upgrade_value"] = 0,
+			},
+			[172225] = {
+				["instance_difficulty_id"] = 11,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["City of Ironforge:87"] = {
+							["3:330:654"] = true,
+						},
+					},
+				},
+				["contains_count"] = 1,
+				["upgrade_value"] = 0,
+				["contains"] = {
+					"172219:1", -- [1]
+				},
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[122361] = {
 				["instance_difficulty_id"] = 0,
@@ -222,6 +332,21 @@ WoWDBProfilerData = {
 				},
 				["durability"] = 35,
 				["unique_id"] = 0,
+			},
+			[21310] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122255] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
 			},
 			[6365] = {
 				["durability"] = 25,
@@ -243,6 +368,27 @@ WoWDBProfilerData = {
 				["durability"] = 35,
 				["unique_id"] = 0,
 			},
+			[168740] = {
+				["instance_difficulty_id"] = 11,
+				["unique_id"] = 0,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["City of Ironforge:87"] = {
+							["3:336:692"] = true,
+						},
+					},
+				},
+				["upgrade_value"] = 0,
+				["contains"] = {
+					"9318:3", -- [1]
+					"168790:1", -- [2]
+				},
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["contains_count"] = 1,
+				["suffix_id"] = 0,
+			},
 			[160149] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 120,
@@ -253,14 +399,17 @@ WoWDBProfilerData = {
 				["durability"] = 115,
 				["unique_id"] = 0,
 			},
-			[122255] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
 			[2901] = {
 				["durability"] = 20,
+			},
+			[21363] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[159337] = {
 				["instance_difficulty_id"] = 19,
@@ -291,10 +440,11 @@ WoWDBProfilerData = {
 			[4816] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
+				["durability"] = 75,
 				["unique_id"] = 0,
 			},
 			[2208] = {
@@ -314,14 +464,63 @@ WoWDBProfilerData = {
 			},
 		},
 		["npcs"] = {
+			["153897"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "24:Alliance:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[166302] = 3,
+						},
+						["stats"] = {
+							["level_120"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:330:694"] = true,
+										["3:336:692"] = true,
+									},
+								},
+								["max_health"] = 520332,
+							},
+						},
+					},
+				},
+			},
+			["44866"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Orgrimmar",
+				["reaction"] = "120:Horde:FRIENDLY",
+				["auctioneer"] = true,
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_120"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:540:736"] = true,
+									},
+								},
+								["max_health"] = 130083,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+			},
 			["8720"] = {
 				["is_pvp"] = true,
 				["genders"] = {
 					["FEMALE"] = true,
 				},
 				["faction"] = "Ironforge",
-				["auctioneer"] = true,
 				["class"] = "WARRIOR",
+				["auctioneer"] = true,
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -340,40 +539,89 @@ WoWDBProfilerData = {
 				},
 				["reaction"] = "24:Alliance:FRIENDLY",
 			},
-			["44866"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
+			["24103"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[43940] = 1,
+						},
+						["stats"] = {
+						},
+					},
 				},
-				["faction"] = "Orgrimmar",
-				["reaction"] = "120:Horde:FRIENDLY",
-				["class"] = "WARRIOR",
+			},
+			["62822"] = {
+				["reaction"] = "24:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_120"] = {
+							["level_90"] = {
 								["locations"] = {
-									["Orgrimmar:85"] = {
-										["3:540:736"] = true,
+									["City of Ironforge:87"] = {
+										["3:278:702"] = true,
+										["3:324:680"] = true,
+										["3:324:696"] = true,
+										["3:282:696"] = true,
+										["3:328:674"] = true,
+										["3:320:688"] = true,
 									},
 								},
-								["max_health"] = 130083,
+								["max_health"] = 5502,
 							},
 						},
 					},
 				},
-				["auctioneer"] = true,
+				["sells"] = {
+					[81407] = "-1:1:[22400]",
+					[81409] = "-1:5:[26000]",
+					[81415] = "-1:1:[25600]",
+					[3371] = "-1:20:[150:0:0]",
+					[159] = "-1:5:[25:0:0]",
+					[58274] = "-1:5:[11000]",
+					[74636] = "-1:5:[26000]",
+					[81400] = "-1:5:[24000]",
+					[81406] = "-1:5:[24000]",
+					[64670] = "-1:5:[4000:0:0]",
+					[81414] = "-1:5:[26000]",
+					[60335] = "-1:1:[120000:0:0]",
+					[38682] = "-1:1:[1000:0:0]",
+					[81401] = "-1:5:[24000]",
+					[52188] = "-1:1:[15000:0:0]",
+					[39354] = "-1:5:[15:0:0]",
+					[4470] = "-1:1:[38:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["can_repair"] = true,
+			},
+			["49799"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[89798] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
 			},
 		},
 		["quests"] = {
-			[27026] = {
+			[28490] = {
 				["can_share"] = true,
 			},
-			[2039] = {
+			[28492] = {
 				["can_share"] = true,
 			},
-			[27028] = {
-				["can_share"] = true,
+			[8768] = {
+				["reward_text"] = "This festively-wrapped present has your name on it.\n\nWait, did it just move?",
+				["end"] = {
+					["OBJECT:180747"] = true,
+				},
+			},
+			[50562] = {
 			},
 			[28563] = {
 				["can_share"] = true,
@@ -381,59 +629,108 @@ WoWDBProfilerData = {
 			[28564] = {
 				["can_share"] = true,
 			},
-			[56044] = {
-			},
-			[54185] = {
-			},
-			[27016] = {
+			[47105] = {
 				["can_share"] = true,
 			},
-			[27033] = {
-				["can_share"] = true,
-			},
-			[50562] = {
-			},
-			[48641] = {
-			},
-			[55431] = {
-				["can_share"] = true,
+			[56120] = {
 			},
 			[13657] = {
 				["can_share"] = true,
 			},
-			[28492] = {
+			[51464] = {
+			},
+			[13658] = {
+				["can_share"] = true,
+			},
+			[57642] = {
+				["reward_text"] = "A small tag on this present reads:\n\nHappy holidays, <name>!",
+				["end"] = {
+					["OBJECT:187236"] = true,
+				},
+			},
+			[13659] = {
+				["can_share"] = true,
+			},
+			[2039] = {
+				["can_share"] = true,
+			},
+			[48641] = {
+			},
+			[44989] = {
+			},
+			[53435] = {
+			},
+			[51421] = {
+				["can_share"] = true,
+			},
+			[42233] = {
+			},
+			[27016] = {
+				["can_share"] = true,
+			},
+			[56042] = {
+				["reward_text"] = "OUTPUT: Please accept this GIFT. \r\n\r\nADMINISTER GIFT DISTRIBUTION PROTOCOL.",
+				["end"] = {
+					["NPC:153897"] = true,
+				},
+			},
+			[56044] = {
+			},
+			[42170] = {
+			},
+			[8744] = {
+				["reward_text"] = "The tag on this present reads:\n\nTo <name>,\n\nMay your feast of Great-Winter be merry and bright!",
+				["end"] = {
+					["OBJECT:180743"] = true,
+				},
+			},
+			[54042] = {
+				["can_share"] = true,
+			},
+			[27026] = {
 				["can_share"] = true,
 			},
 			[28539] = {
 				["can_share"] = true,
 			},
-			[44989] = {
-			},
-			[13658] = {
+			[27028] = {
 				["can_share"] = true,
 			},
-			[54042] = {
+			[8803] = {
+				["reward_text"] = "The note on this present reads:\n\nTo <name>,\n\nIn hoping this will help you spread warm tidings and holiday cheer to all of Azeroth.\n\nFrom Greatfather Winter",
+				["end"] = {
+					["OBJECT:180793"] = true,
+				},
+			},
+			[57643] = {
+				["reward_text"] = "This present looks like it has been shaken a few times. The tag on it reads:\n\nTo a very special <race> <class>.",
+				["end"] = {
+					["OBJECT:180746"] = true,
+				},
+			},
+			[50602] = {
+			},
+			[55431] = {
 				["can_share"] = true,
 			},
-			[42170] = {
-			},
-			[42233] = {
-			},
-			[13659] = {
+			[27033] = {
 				["can_share"] = true,
 			},
-			[53435] = {
+			[48642] = {
+			},
+			[40643] = {
+			},
+			[51432] = {
+			},
+			[54185] = {
+			},
+			[50603] = {
+			},
+			[48639] = {
 			},
 			[31891] = {
 			},
-			[51421] = {
-				["can_share"] = true,
-			},
-			[47105] = {
-				["can_share"] = true,
-			},
-			[28490] = {
-				["can_share"] = true,
+			[42234] = {
 			},
 		},
 	},

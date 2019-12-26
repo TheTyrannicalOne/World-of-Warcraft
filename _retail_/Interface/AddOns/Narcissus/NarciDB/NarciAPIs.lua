@@ -128,15 +128,22 @@ Narci_ColorTable = {
 
 
 	--Main City--
-	[84]  = { 35,  96, 147},	--Stormwind City
+    [84]  = { 35,  96, 147},	--Stormwind City
+    
 	[85]  = {121,  52,  55},	--Orgrimmar
-	[86]  = {121,  31,  35},	--Orgrimmar - Cleft of Shadow
-	[87]  = {102,  64,  58},	--Ironforge
-	[88]  = {115, 140, 113},	--Thunder Bluff
-	[89]  = {121,  31,  35},	--Darnassus	R.I.P.
-	[90]  = { 42,  63,  79},	--Undercity
+    [86]  = {121,  31,  35},	--Orgrimmar - Cleft of Shadow
+    
+    [87]  = {102,  64,  58},	--Ironforge
+    [27]  = {151, 198, 213},	--Dun Morogh
+    [469] = {151, 198, 213},	--New Tinkertown
+    
+    [88]  = {115, 140, 113},	--Thunder Bluff
+    
+    [89]  = {121,  31,  35},	--Darnassus	R.I.P.
+    
+    [90]  = { 42,  63,  79},	--Undercity
 
-	[625] = { 42,  63,  79},	--Dalaran  	Broken Isles
+	[625] = { 42,  63,  79},	--Dalaran  	Broken Isles Halls of Shadow
 	[626] = { 42,  63,  79},	--Hall of Shadow
 	[627] = {102,  58,  64},	--Dalaran  	Broken Isles
 
@@ -146,7 +153,7 @@ Narci_ColorTable = {
 	[1165]= { 89, 140, 123},	--Dazar'alor
 	[862] = { 89, 140, 123},	--Zuldazar
 	[864] = {187, 161, 134},	--Vol'dun
-	[863] = { 48,  94, 131},	--Nazmir
+	[863] = {113, 173, 183},	--Nazmir
 	[895] = { 89, 140, 123},	--Tiragarde Sound
 	[1161]= { 89, 140, 123},	--Boralus
 	[942] = {127, 164, 114},	--Stormsong
@@ -154,6 +161,11 @@ Narci_ColorTable = {
     
     [1462] = {16, 156, 192},    --Mechagon
     [1355] = {41,  74, 127},    --Nazjatar
+
+    --Allied Race Starting Zone--
+    [124]  = {87,  56, 132},    --DK
+    [1186] = {117,  26, 22},    --Dark Iron
+
 };
 
 Narci_FontColor = {
@@ -638,6 +650,7 @@ function NarciAPI_SliderWithSteps_OnLoad(self)
     local sliderMin, sliderMax = self:GetMinMaxValues()
     local range = sliderMax - sliderMin;
     local num_Gap = math.floor((range / step) + 0.5);
+    if num_Gap == 0 then return; end;
     local tex;
     local markOffset = 5;
     width = width - 2*markOffset

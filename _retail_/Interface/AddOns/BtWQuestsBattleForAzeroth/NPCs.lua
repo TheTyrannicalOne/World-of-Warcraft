@@ -6006,6 +6006,15 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [138949] = {
+        name = "Throk",
+        locations = {
+            [1165] = {
+                x = 0.52953433990479,
+                y = 0.9448184967041,
+            },
+        },
+    },
     [139061] = {
         name = "Nathanos Blightcaller",
         locations = {
@@ -6261,6 +6270,9 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
+    },
+    [140495] = {
+        name = "Katherine Proudmoore",
     },
     [140590] = {
         name = "Captain Grez'ko",
@@ -6766,9 +6778,6 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
-    },
-    [145357] = {
-        name = "Dori'thur",
     },
     [145359] = {
         name = "Princess Talanji",
@@ -7879,6 +7888,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [150087] = {
+        name = "Genn Greymane",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.483282,
+                    y = 0.926231,
+                },
+            },
+        },
+    },
     [150101] = {
         name = "Lady Jaina Proudmoore",
         locations = {
@@ -8585,6 +8605,9 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
+    },
+    [152000] = {
+        name = "Dori'thur",
     },
     [152002] = {
         name = "Image of Mimiron",
@@ -9423,7 +9446,70 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [155786] = {
+        name = "Varok Saurfang",
+        locations = {
+            [1535] = {
+                {
+                    x = 0.416441,
+                    y = 0.557289,
+                },
+            },
+        },
+    },
     [155789] = {
         name = "Lor'themar Theron",
+        locations = {
+            [1165] = {
+                {
+                    x = 0.5,
+                    y = 0.96,
+                },
+            },
+        },
+    },
+    [156124] = {
+        name = "Eitrigg",
+        locations = {
+            [1534] = {
+                {
+                    x = 0.742087,
+                    y = 0.460827,
+                },
+            },
+        },
+    },
+    [156423] = {
+        name = "Lady Sylvanas Windrunner",
+        locations = {
+            [1534] = {
+                {
+                    x = 0.485221,
+                    y = 0.707927,
+                },
+            },
+        },
+    },
+    [156425] = {
+        name = "Dark Ranger Lenara",
+        locations = {
+            [1534] = {
+                {
+                    x = 0.499771,
+                    y = 0.913318,
+                },
+            },
+        },
+    },
+    [156440] = {
+        name = "Nathanos Blightcaller",
+        locations = {
+            [1534] = {
+                {
+                    x = 0.504476,
+                    y = 0.761981,
+                },
+            },
+        },
     },
 })

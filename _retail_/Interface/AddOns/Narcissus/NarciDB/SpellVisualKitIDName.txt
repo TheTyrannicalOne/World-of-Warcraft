@@ -51,10 +51,63 @@ Game Crush IDs:
 Attachment ID:
 12 Back
 35 Hand Arrow
-
+17 Breath Mouth
 
 
 365680 Light bulb
+----------------------------------------------
+Include when 8.3
+41004 Holy Solar left-hand
+41005 Solar Right hand
+121834 Void Radiant Core 
+121861 Void Pink descend Right hand
+121860 Void Pink descend Right hand
+122420 Void Upcurrent Slow
+122321 Void Left hand
+122401 Nighmare Revolving
+122391 Rising Rocks
+
+122913 Body Purple Transparent
+122926 Body Golden Transparent
+122334 Body contour Dark blue 122742 Void
+122333 Body texture Magma
+122275 Body Red Gradient Transparent 122669 Purple blue
+123041 Body death echo
+122710 Body Void Slow Smoke
+123177 Body Polarized
+122156 Azerite Absorb Power
+121932 Void blast hit
+122791 Void Barrier
+122748 Azerite blast
+122755 Just fire and smoke
+122741 Body Green solid
+122672 Lightning 2 strikes
+122570 Grand spell Blood vortex 122569 small
+122522 Food Void-touched fish
+122499 Void then fire two hands
+122498 Water erruption
+122442 Azerite Barrier
+124336 Breaker Magni's Hammer
+123918 Void Vine body
+123443 Mecha Rising
+
+123081 New Cnady cane
+123599 Sands Two hands
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14482 Stun
 ----------------------------------------------
 67157 Artifact quiver no texture
 123174 Giant Axis
@@ -706,7 +759,7 @@ Holiday Hearthstone
 ------spells/holidays/valentines
 
 106244 Love
-
+114843 Ropes
 ------------------
 cfx_[class]
 
@@ -763,3 +816,18 @@ Warlock
 ------------------
 Warrior
 96531 Sky jump      impact 77753
+
+
+
+
+
+
+
+
+
+
+
+-------------------
+Instrument
+45430 BE Harp
+66495 Nightborne Harp 103

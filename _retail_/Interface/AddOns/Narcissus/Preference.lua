@@ -1,7 +1,7 @@
 local L = Narci.L;
 
 local TabNames = { 
-    NARCI_NEW_ENTRY_PREFIX..NARCI_INTERFACE, NARCI_SHORTCUTS, NARCI_NEW_ENTRY_PREFIX..NARCI_THEME, NARCI_EFFECTS, NARCI_CAMERA, NARCI_NEW_ENTRY_PREFIX..NARCI_TRANSMOG,
+    NARCI_NEW_ENTRY_PREFIX..NARCI_INTERFACE, NARCI_SHORTCUTS, NARCI_NEW_ENTRY_PREFIX..NARCI_THEME, NARCI_EFFECTS, NARCI_NEW_ENTRY_PREFIX..NARCI_CAMERA, NARCI_NEW_ENTRY_PREFIX..NARCI_TRANSMOG,
     NARCI_NEW_ENTRY_PREFIX..L["Photo Mode"], NARCI_EXTENSIONS,
 };  --Credits and About will be inserted later
 
@@ -549,6 +549,22 @@ function Narci_ExitConfirmSwitch_OnClick(self)
     ExitConfirmSwitch_SetState(self)
 end
 
+local function BustShotSwitch_SetState(self)
+    local state = NarcissusDB.UseBustShot;
+    self.Tick:SetShown(state);
+    if state then
+        self.Preview:SetTexCoord(0, 0.5, 0, 0.75);
+    else
+        self.Preview:SetTexCoord(0.5, 1, 0, 0.75);
+    end
+end
+
+function Narci_BustShotSwitch_OnClick(self)
+    NarcissusDB.UseBustShot = not NarcissusDB.UseBustShot;
+    BustShotSwitch_SetState(self);
+    Narci:InitializeCameraFactors();
+end
+
 local function Narci_Pref_SetTextBackgroundWidth(width)
     local slotTable = Narci_Character.slotTable;
     if not (slotTable and NarcissusDB) then
@@ -791,6 +807,7 @@ local function BuildTabNames()
     return ScreenRatio, maxOffset;
 end
 
+--/run local W, H = WorldFrame:GetSize(); print(floor((W / H) * 9 + 0.25)..":9")
 local ScreenRatio, MaxOffset = BuildTabNames();
 local SmoothScroll_Initialization = NarciAPI_SmoothScroll_Initialization;
 local TotalTab = #TabNames;
@@ -1010,7 +1027,7 @@ end
 -----Credits-----
 -----------------
 local function SetCreditList()
-   local RawList = {"Adam Stribley", "Elexys", "Ben Ashley", "Valnoressa", "Andrew Phoenix", "Solanya", "Stephen Berry", "Erik Shafer", "Mccr Karl", "Nantangitan", "Blastflight"};
+   local RawList = {"Adam Stribley", "Elexys", "Ben Ashley", "Valnoressa", "Andrew Phoenix", "Solanya", "Stephen Berry", "Erik Shafer", "Mccr Karl", "Nantangitan", "Blastflight", "Psyloken",};
    local LeftList, MidList, RightList = {}, {}, {};
    local mod = mod;
    local index;
@@ -1118,6 +1135,7 @@ local function InitializePreference()
     DressingRoomSwitch_SetState(Narci_DressingRoomSwitch);
     EntranceVisualSwitch_SetState(Narci_UseEntranceVisualSwitch);
     ExitConfirmSwitch_SetState(Narci_ExitConfirmSwitch);
+    BustShotSwitch_SetState(Narci_BustShotSwitch);
 
     Narci_VignetteStrengthSlider:SetValue(NarcissusDB.VignetteStrength);
     Narci_GlobalScaleSlider:SetValue(NarcissusDB.GlobalScale);

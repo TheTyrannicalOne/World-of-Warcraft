@@ -4,6 +4,7 @@ if GetLocale() ~= "esMX" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateObjectsTable({
     [244983] = {
         name = "Reloj de bolsillo sucio",
@@ -254,6 +255,9 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [307748] = {
         name = "Carta de Ventura y Cía.",
     },
+    [309498] = {
+        name = "Portaarmas",
+    },
     [311155] = {
         name = "Tablilla antigua",
     },
@@ -282,3 +286,4 @@ BtWQuestsDatabase:UpdateObjectsTable({
         name = "Cristal extraño",
     },
 })
+]])()

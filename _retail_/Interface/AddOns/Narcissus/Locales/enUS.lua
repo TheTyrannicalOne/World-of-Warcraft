@@ -5,10 +5,15 @@ local L = Narci.L
 NARCI_GRADIENT = "|cffA236EFN|cff9448F1a|cff865BF2r|cff786DF4c|cff6A80F6i|cff5D92F7s|cff4FA4F9s|cff41B7FAu|cff33C9FCs|r"
 MYMOG_GRADIENT = "|cffA236EFM|cff9448F1y |cff865BF2T|cff786DF4r|cff6A80F6a|cff5D92F7n|cff4FA4F9s|cff41B7FAm|cff33C9FCo|cff32c9fbg|r"
 
-NARCI_VERSION_INFO = "1.0.7[BETA]";
+NARCI_VERSION_INFO = "1.0.7c[BETA]";
 NARCI_DEVELOPER_INFO = "Designed by Peterodox";
 
 NARCI_NEW_ENTRY_PREFIX = "|cff40C7EB";
+
+NARCI_MODIFIER_ALT = "ALT key";   --Windows
+if IsMacClient() then
+    NARCI_MODIFIER_ALT = "Option key";  --Mac OS
+end
 
 L["Movement Speed"] = "MSPD";
 L["Damage Reduction Percentage"] = "DR%";
@@ -134,22 +139,23 @@ NARCI_GEMMA = "\"Gemma\"";
 NARCI_GEMMY_DESCRIPTION = "Show a list of gems when socketing an item.";
 NARCI_DRESSING_ROOM = "Dressing Room"
 NARCI_DRESSING_ROOM_DESCRIPTION = "Have a bigger dressing room panel with the ability to view and copy other players' item lists.";
-NARCI_REQUIRE_RELOAD = "|cffff5050A UI reload is required.|r";
+NARCI_REQUIRE_RELOAD = "|cffff5050UI reload is required.|r";
 L["Show Detailed Stats"] = "Show Detailed Stats";
 L["Tooltip Color"] = "Tooltip Color";
 L["Entrance Visual"] = "Entrance Visual";
 L["Entrance Visual Description"] = "Play spell visuals when your model shows up.";
 L["Panel Scale"] = "Panel Scale";
 L["Exit Confirmation"] = "Exit Confirmation";
-L["Exit Confirmation Texts"] = "Are you sure you want leave?";
-L["Exit Confirmation Leave"] = "Leave";
-L["Exit Confirmation Cancel"] = "Cacenl";
+L["Exit Confirmation Texts"] = "Quit group photo?";
+L["Exit Confirmation Leave"] = "Yes";
+L["Exit Confirmation Cancel"] = "No";
 L["Ultra-wide"] = "Ultra-wide";
 L["Ultra-wide Optimization"] = "Ultra-wide Optimization";
 L["Baseline Offset"] = "Baseline Offset";
 L["Ultra-wide Tooltip"] = "You can see this option because you are using a %s:9 monitor.";
 L["Interactive Area"] = "Interactive Area";
 L["Item Socketing Tooltip"] = "Double-click to embed";
+L["Use Bust Shot"] = "Use Bust Shot";
 
 --Model Control--
 NARCI_SHEATH_WEAPON = "Sheath Weapon";
@@ -245,20 +251,21 @@ NARCI_DELETE_SET_WITH_LONG_CLICK = "Delete Set\n|cff808080(click and hold)|r";
 
 --Tutorial--
 L["Alert"] = "Warning";
-L["Race Change Alert"] = "This self-service race changing chamber has been contaminated. It is recommended that you do not use it.";
+L["Race Change"] = "Race/Gender Change";
+L["Race Change Line1"] = "You can again change your race and gender. But there are some limitations:\n1. Your weapons will disappear.\n2. Spell visuals can no longer be removed.\n3. It does not work on other players or NPC.";
 L["Guide Spell Headline"] = "Try or Apply";
 L["Guide Spell Criteria1"] = "Left-click to TRT";
 L["Guide Spell Criteria2"] = "Right-click to APPLY";
 L["Guide Spell Line1"] = "Most spell visuals that you add by clicking left button will fade away in seconds, while those you add by clicking right button will not.\n\nNow please move to an entry then:";
 L["Guide Spell Choose Category"] = "Choose a category you like. Then choose a subcategory."
 L["Guide History Headline"] = "History Panel";
-L["Guide History Line1"] = "At most 5 recently applied visuals can retained here. You may select one and delete it by clicking the Remove button on the right end.";
+L["Guide History Line1"] = "At most 5 recently applied visuals can retain here. You can select one and delete it by clicking the Remove button on the right end.";
 L["Guide Refresh Line1"] = "Use this button to remove all unapplied spell visuals. Those that were in the history panel will be reapplied.";
 L["Guide Input Headline"] = "Manual Input";
 L["Guide Input Line1"] = "You may also input a SpellVisualKitID yourself. As of 8.3, Its cap is around 124,000.\nYou can use your mousewheel to try the next/previous ID.\nVery few IDs can crash the game.";
 L["Guide Equipment Manager Line1"] = "Double-click: Use a set\nRight-click: Edit a set.\n\nThis button's previous function has been moved to Preferences.";
 L["Guide Model Control Headline"] = "Model Control";
-L["Guide Model Control Line1"] = "This model shares the same mouse actions you use in the dressing room, plus:\n\n1.Hold ALT and Left Button: Flip model.\n2.Hold ALT and Right Button: Scrubby zoom.";
+L["Guide Model Control Line1"] = format("This model shares the same mouse actions you use in the dressing room, plus:\n\n1.Hold %s and Left Button: Rotate model around Y-axis.\n2.Hold %s and Right Button: Execute scrubby zoom.", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
 
 
 --Splash--
@@ -270,7 +277,7 @@ NARCI_TRY_IT_NOW = "Click here to enable...";
 NARCI_DISABLE_IT_NOW = "Click here to disable...";
     --Patch-specific
     NARCI_DRESSING_ROOM_ENABLED_BY_DEFAULT = "|cff7cc576Enabled by default.|r "..NARCI_DISABLE_IT_NOW;
-    NARCI_DRESSING_ROOM_DISABLED = "|cffff5050Disabled.|r A UI reload is required. You can turn it on via Preferences - Extensions.";
+    NARCI_DRESSING_ROOM_DISABLED = "|cffff5050Disabled.|r UI reload is required. You can turn it on via Preferences - Extensions.";
     NARCI_CAMERA_SAFE_MODE_ENABLED_BY_DEFAULT = "|cff7cc576Enabled by default because you are not using DynamicCam addon.|r\n"..NARCI_DISABLE_IT_NOW;
     NARCI_CAMERA_SAFE_MODE_DISABLED_BY_DEFAULT = "|cffff5050Disabled by default because you are using DynamicCam.|r\n"..NARCI_TRY_IT_NOW;
     NARCI_CAMERA_SAFE_MODE_ENABLED = "|cff7cc576Enabled.|r You can turn it off via Preferences - Camera.";
@@ -281,13 +288,13 @@ NARCI_SPLASH_HEADER1 = "Visuals & Model Control";
 NARCI_SPLASH_HEADER2 = "Equipment Set Manager";
 NARCI_SPLASH_HEADER3 = "Miscellaneous";
 NARCI_SPLASH_MESSAGE0 = "|cffd9cdb41. You can now apply special visuals to your scene.|r\nYou can put spells, gadgets onto the actors and even control the weather. Access this feature from the model control panel."
-NARCI_SPLASH_MESSAGE1 = "|cffd9cdb42. Flipping model and scrubby zoom.|r\nYou can hold Alt and left button to rotate the model around Y-axis. Or hold Alt and right button to execute scrubby zoom.";
+NARCI_SPLASH_MESSAGE1 = format("|cffd9cdb42. Flipping model and scrubby zoom.|r\nYou can hold %s and left button to rotate the model around Y-axis. Or hold %s and right button to execute scrubby zoom.", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
 NARCI_SPLASH_MESSAGE2 = "|cffd9cdb4You can open it by clicking the hexagonal button on the top right (where your maximum item level is shown).";
 NARCI_SPLASH_MESSAGE3 = "|cffd9cdb41.The AFK screen will be closed automatically when moving or entering combat.\n2. The enhanced dressing room is back online.|r";
 
 --Project Details--
 NARCI_ALL_PROJECTS = "All Projects";
-NARCI_PROJECT_DETAILS = "|cFFFFD100Developer: Peterodox\nRelease Date: December 15, 2019|r\n\nThank you for trying this add-on! If you have any issues, suggestions, ideas, please leave a comment on the curseforge page or contact me on...";
+NARCI_PROJECT_DETAILS = "|cFFFFD100Developer: Peterodox\nRelease Date: December 23, 2019|r\n\nThank you for trying this add-on! If you have any issues, suggestions, ideas, please leave a comment on the curseforge page or contact me on...";
 NARCI_PROJECT_AAA_TITLE = "|cff008affA|cff0d8ef2z|cff1a92e5e|cff2696d9r|cff339acco|cff409ebft|cff4da1b2h |cff59a5a6A|cff66a999d|cff73ad8cv|cff7fb180e|cff8cb573n|cff99b966t|cffa6bd59u|cffb2c14dr|cffbfc440e |cffccc833A|cffd9cc26l|cffe5d01ab|cfff2d40du|cffffd800m";
 NARCI_PROJECT_AAA_SUMMARY = "Explore places of interest and collect lores and photos from all across Azeroth.|cff636363";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "An immersive character pane and your ultimate screenshot tool.";

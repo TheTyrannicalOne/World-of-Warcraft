@@ -4,6 +4,7 @@ if GetLocale() ~= "zhCN" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateNPCsTable({
     [3037] = {
         name = "舍尔扎·蛮鬃",
@@ -62,6 +63,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [120922] = {
         name = "吉安娜·普罗德摩尔",
     },
+    [121144] = {
+        name = "凯瑟琳·普罗德摩尔",
+    },
     [121235] = {
         name = "泰莉亚",
     },
@@ -89,6 +93,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [122009] = {
         name = "战兽训练师布克",
     },
+    [122102] = {
+        name = "汉扎布",
+    },
     [122129] = {
         name = "商人阿莱克西·瓶锅",
     },
@@ -109,6 +116,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [122641] = {
         name = "亚兹玛",
+    },
+    [122661] = {
+        name = "加卡泽将军",
     },
     [122671] = {
         name = "卡格尼",
@@ -176,6 +186,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [123026] = {
         name = "冷漠的埃拉克",
     },
+    [123052] = {
+        name = "吉布尔",
+    },
     [123063] = {
         name = "长者库帕卡",
     },
@@ -191,8 +204,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [123415] = {
         name = "亨利·哈维奇",
     },
+    [123526] = {
+        name = "钟摆",
+    },
     [123544] = {
         name = "补丁",
+    },
+    [123545] = {
+        name = "蝾螈",
+    },
+    [123548] = {
+        name = "钟摆",
     },
     [123586] = {
         name = "基罗",
@@ -218,8 +240,14 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [124417] = {
         name = "西里尔·怀特",
     },
+    [124428] = {
+        name = "汉扎布",
+    },
     [124468] = {
         name = "兰达尔·雷德蒙",
+    },
+    [124513] = {
+        name = "汉扎布",
     },
     [124629] = {
         name = "缚浪者卡扎金",
@@ -280,6 +308,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [125380] = {
         name = "露希尔·维克雷斯",
+    },
+    [125385] = {
+        name = "埃弗利·里德元帅",
     },
     [125394] = {
         name = "治安官亨利·弗莱莫",
@@ -391,6 +422,15 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [127161] = {
         name = "阿兰娜·霍尔顿",
+    },
+    [127212] = {
+        name = "卡尔丹",
+    },
+    [127215] = {
+        name = "暗影猎手达玖",
+    },
+    [127216] = {
+        name = "赋能者扎达克斯",
     },
     [127296] = {
         name = "大卫·马尔杜斯",
@@ -599,6 +639,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [129642] = {
         name = "露希尔·维克雷斯",
     },
+    [129643] = {
+        name = "埃弗利·里德元帅",
+    },
     [129669] = {
         name = "本杰明·艾尔格森",
     },
@@ -610,6 +653,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [129717] = {
         name = "阿克鲁",
+    },
+    [129740] = {
+        name = "贡克",
     },
     [129757] = {
         name = "拉斯塔哈大王",
@@ -713,11 +759,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [130786] = {
         name = "霍布斯",
     },
+    [130821] = {
+        name = "海波师兰珐",
+    },
     [130844] = {
         name = "塔兰吉公主",
     },
     [130901] = {
         name = "记载者伽祖尔",
+    },
+    [130904] = {
+        name = "萨缪尔·威廉姆斯",
     },
     [130905] = {
         name = "卡拉·瓶锅",
@@ -755,14 +807,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [131048] = {
         name = "塔伦福德中尉",
     },
+    [131049] = {
+        name = "莱赞",
+    },
     [131213] = {
         name = "洛坎",
     },
     [131231] = {
         name = "金蒂基",
     },
+    [131248] = {
+        name = "萨缪尔·威廉姆斯",
+    },
     [131249] = {
         name = "泰莉亚",
+    },
+    [131253] = {
+        name = "泰坦守护者赫兹雷尔",
     },
     [131287] = {
         name = "纳塔哈卡塔",
@@ -803,8 +864,14 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [131627] = {
         name = "托马斯·平克",
     },
+    [131636] = {
+        name = "埃弗利·里德元帅",
+    },
     [131638] = {
         name = "露希尔·维克雷斯",
+    },
+    [131639] = {
+        name = "审判官梅斯",
     },
     [131640] = {
         name = "审判官诺特利",
@@ -962,6 +1029,15 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [133653] = {
         name = "妖术领主拉尔",
     },
+    [133678] = {
+        name = "库亚冯",
+    },
+    [133679] = {
+        name = "库亚冯",
+    },
+    [133682] = {
+        name = "库亚冯",
+    },
     [133796] = {
         name = "塞拉赞恩",
     },
@@ -1097,6 +1173,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [135259] = {
         name = "泰莉亚",
     },
+    [135272] = {
+        name = "库亚冯",
+    },
     [135330] = {
         name = "奈特利·格林纳",
     },
@@ -1115,6 +1194,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [135441] = {
         name = "佐拉妮",
     },
+    [135455] = {
+        name = "库亚冯",
+    },
+    [135502] = {
+        name = "库亚冯",
+    },
     [135517] = {
         name = "潮汐卫士维多利亚",
     },
@@ -1123,6 +1208,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [135541] = {
         name = "锈水焚化者",
+    },
+    [135576] = {
+        name = "水手长玛塞特",
     },
     [135595] = {
         name = "帕库",
@@ -1156,6 +1244,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [135691] = {
         name = "纳萨诺斯·凋零者",
+    },
+    [135744] = {
+        name = "库亚冯",
     },
     [135784] = {
         name = "皇家守卫",
@@ -1195,6 +1286,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [136041] = {
         name = "艾米莉·法维瑟",
+    },
+    [136053] = {
+        name = "萨缪尔·威廉姆斯",
     },
     [136059] = {
         name = "蕾拉·伊文基尔",
@@ -1256,11 +1350,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [136576] = {
         name = "码头管理员莱顿",
     },
+    [136641] = {
+        name = "布莱恩·铜须",
+    },
     [136645] = {
         name = "探险者协会勘探员",
     },
     [136658] = {
         name = "玛丽·达文波特",
+    },
+    [136675] = {
+        name = "布莱恩·铜须",
     },
     [136683] = {
         name = "贸易大王加里维克斯",
@@ -1277,17 +1377,29 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [136933] = {
         name = "派克修士",
     },
+    [137008] = {
+        name = "艾尔米中士",
+    },
     [137075] = {
         name = "丹尼斯·格林泰尔中尉",
     },
     [137094] = {
         name = "农夫麦克斯",
     },
+    [137112] = {
+        name = "泰坦守护者赫兹雷尔",
+    },
     [137113] = {
         name = "洛坎",
     },
     [137213] = {
         name = "哈尔弗·维姆班恩",
+    },
+    [137337] = {
+        name = "艾尔米中士",
+    },
+    [137401] = {
+        name = "铁砧守卫索加登",
     },
     [137434] = {
         name = "沃里克",
@@ -1301,14 +1413,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [137537] = {
         name = "沃里克",
     },
+    [137543] = {
+        name = "艾尔米中士",
+    },
     [137554] = {
         name = "托基",
+    },
+    [137613] = {
+        name = "霍巴特·钩锤",
     },
     [137629] = {
         name = "梅卡鲁",
     },
     [137631] = {
         name = "奈里",
+    },
+    [137675] = {
+        name = "暗影猎手塔金",
     },
     [137677] = {
         name = "托基",
@@ -1324,6 +1445,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [137727] = {
         name = "大副欧维斯",
+    },
+    [137742] = {
+        name = "暗影猎手塔金",
     },
     [137818] = {
         name = "“海鼠”米克塞尔·刀扳",
@@ -1403,6 +1527,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "霍格尔·纳什",
     },
+    [138949] = {
+        name = "斯洛克",
+    },
     [139061] = {
         name = "纳萨诺斯·凋零者",
     },
@@ -1469,6 +1596,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [140487] = {
         name = "托马斯·泽林",
     },
+    [140495] = {
+        name = "凯瑟琳·普罗德摩尔",
+    },
     [140656] = {
         name = "洛坎",
     },
@@ -1484,6 +1614,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [140907] = {
         name = "邦桑迪",
     },
+    [141026] = {
+        name = "库亚冯",
+    },
     [141078] = {
         name = "戒卫岭难民",
     },
@@ -1491,7 +1624,7 @@ BtWQuestsDatabase:UpdateNPCsTable({
         name = "贝恩·血蹄",
     },
     [141602] = {
-        name = "复生的海贤",
+        name = "托马斯·泽林",
     },
     [141603] = {
         name = "马洛莉·胡德",
@@ -1510,6 +1643,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [141815] = {
         name = "溺水的水手",
+    },
+    [141952] = {
+        name = "幼年恐角龙",
     },
     [141961] = {
         name = "莉莉安·沃斯",
@@ -1568,6 +1704,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [143913] = {
         name = "伊崔格",
     },
+    [144095] = {
+        name = "马迪亚斯·肖尔大师",
+    },
     [144152] = {
         name = "茉艾拉·索瑞森",
     },
@@ -1588,9 +1727,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [145225] = {
         name = "沃金之魂",
-    },
-    [145357] = {
-        name = "多莉苏尔",
     },
     [145359] = {
         name = "塔兰吉公主",
@@ -1661,8 +1797,14 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [146073] = {
         name = "贸易大王加里维克斯",
     },
+    [146208] = {
+        name = "巨蛙卡格瓦",
+    },
     [146209] = {
         name = "帕库",
+    },
+    [146214] = {
+        name = "贡克",
     },
     [146290] = {
         name = "沃金之魂",
@@ -1817,6 +1959,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [148798] = {
         name = "吉安娜·普罗德摩尔",
     },
+    [148870] = {
+        name = "多利安·阿特沃特",
+    },
     [149084] = {
         name = "灵魂行者乌索",
     },
@@ -1867,6 +2012,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [150086] = {
         name = "博尔登·弹闪",
+    },
+    [150087] = {
+        name = "吉恩·格雷迈恩",
     },
     [150101] = {
         name = "吉安娜·普罗德摩尔",
@@ -1964,6 +2112,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151000] = {
         name = "剑圣奥卡尼",
     },
+    [151061] = {
+        name = "米米尔隆",
+    },
     [151100] = {
         name = "吉拉·交线",
     },
@@ -1982,8 +2133,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151173] = {
         name = "达尼丝·幽舞者",
     },
+    [151257] = {
+        name = "托卡利",
+    },
     [151283] = {
         name = "恐角龙宝宝",
+    },
+    [151286] = {
+        name = "托卡利的子嗣",
+    },
+    [151319] = {
+        name = "莉扎尔",
     },
     [151462] = {
         name = "丹妮尔·渔钓",
@@ -2053,6 +2213,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152295] = {
         name = "帕斯卡",
+    },
+    [152316] = {
+        name = "塔莉萨的影像",
     },
     [152365] = {
         name = "卡雷苟斯",
@@ -2141,6 +2304,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [153422] = {
         name = "首席传送师欧库勒斯",
     },
+    [153492] = {
+        name = "芬",
+    },
     [153496] = {
         name = "阿达路",
     },
@@ -2207,6 +2373,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [154601] = {
         name = "凯尔雅·坠月",
     },
+    [154607] = {
+        name = "托卡利的影像",
+    },
     [154640] = {
         name = "大元帅泰布雷德",
     },
@@ -2215,6 +2384,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [154661] = {
         name = "首席奥术师塔莉萨",
+    },
+    [154673] = {
+        name = "莉扎尔",
     },
     [154874] = {
         name = "黑爪卫士",
@@ -2234,7 +2406,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [155785] = {
         name = "吉安娜·普罗德摩尔",
     },
+    [155786] = {
+        name = "瓦罗克·萨鲁法尔",
+    },
     [155789] = {
         name = "洛瑟玛·塞隆",
     },
+    [156124] = {
+        name = "伊崔格",
+    },
+    [156423] = {
+        name = "希尔瓦娜斯·风行者",
+    },
+    [156425] = {
+        name = "黑暗游侠乐娜拉",
+    },
+    [156440] = {
+        name = "纳萨诺斯·凋零者",
+    },
 })
+]])()

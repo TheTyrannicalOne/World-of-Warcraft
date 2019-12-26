@@ -4,6 +4,7 @@ if GetLocale() ~= "deDE" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateObjectsTable({
     [244983] = {
         name = "Schmutzige Taschenuhr",
@@ -251,6 +252,9 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [307748] = {
         name = "Brief der Venture Co.",
     },
+    [309498] = {
+        name = "Rüstungsständer",
+    },
     [311155] = {
         name = "Uralte Schrifttafel",
     },
@@ -275,7 +279,11 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [327592] = {
         name = "Verzaubertes Schloss",
     },
+    [327596] = {
+        name = "Zerbrochener abyssischer Fokus",
+    },
     [329805] = {
         name = "Merkwürdiger Kristall",
     },
 })
+]])()

@@ -4,6 +4,7 @@ if GetLocale() ~= "koKR" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateObjectsTable({
     [244983] = {
         name = "더러운 회중시계",
@@ -242,6 +243,9 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [307748] = {
         name = "투자개발회사의 편지",
     },
+    [309498] = {
+        name = "방어구 거치대",
+    },
     [311155] = {
         name = "고대 서판",
     },
@@ -273,3 +277,4 @@ BtWQuestsDatabase:UpdateObjectsTable({
         name = "이상한 수정",
     },
 })
+]])()

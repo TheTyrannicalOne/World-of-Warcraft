@@ -6,8 +6,8 @@ PetTracker_Sets = {
 	["MapFilter"] = "",
 	["HideSpecies"] = true,
 	["HideStables"] = true,
-	["RivalSearch"] = "",
+	["MainTutorial"] = 6,
 	["RivalHistory"] = {
 	},
-	["MainTutorial"] = 6,
+	["RivalSearch"] = "",
 }

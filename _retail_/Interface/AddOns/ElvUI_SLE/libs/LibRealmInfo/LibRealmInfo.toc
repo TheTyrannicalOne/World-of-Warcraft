@@ -1,5 +1,5 @@
 ## Interface: 70300
-## Version: v3.63
+## Version: v3.64
 
 ## Title: Lib: Realm Info
 ## Notes: Library to provide information about realms.

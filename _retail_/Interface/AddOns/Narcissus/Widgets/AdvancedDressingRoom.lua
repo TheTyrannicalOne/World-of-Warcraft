@@ -62,11 +62,13 @@ local ModelScales = {
     [31] = {492, 492},		-- Zandalari
     [32] = {494, 497},		-- Kul'Tiran
     [34] = {499, nil},		-- Dark Iron Dwarf
+    [35] = {924, 923},      -- Vulpera
     [36] = {495, 498},		-- Mag'har
-
+    [37] = {929, 931},      -- Mechagnome
 }
 
 
+local DefaultActorInfoID = 438;
 local function GetActorInfoByUnit(unit)
     if not UnitExists(unit) or not UnitIsPlayer(unit) or not CanInspect(unit, false) then return; end
     
@@ -76,11 +78,11 @@ local function GetActorInfoByUnit(unit)
         raceID = 24
     end
     if not (raceID and genderID) then
-        return 438;
+        return DefaultActorInfoID;     --438
     elseif ModelScales[raceID] then
-        return ModelScales[raceID][genderID - 1] or 438;
+        return ModelScales[raceID][genderID - 1] or DefaultActorInfoID;
     else
-        return 438;
+        return DefaultActorInfoID;     --438
     end
 end
 
@@ -622,20 +624,28 @@ local function NarciBridge_DressUpFrame_Initialize()
     local texName = parentFrame:GetName() and parentFrame:GetName().."BackgroundOverlay"
     local tex = parentFrame:CreateTexture(texName, "BACKGROUND", "ModelBackground_Template", 2)
 
-    if MaximizeMinimizeFrame then
+    local ReScaleFrame;
+    local _, _, _, tocversion = GetBuildInfo();
+    if tocversion > 80205 then
+        --8.3 MaximizeMinimizeFrame becomes a child of DressUpFrame
+        ReScaleFrame = parentFrame.MaximizeMinimizeFrame
+    else
+        ReScaleFrame = MaximizeMinimizeFrame;
+    end
+    
+    if ReScaleFrame then
         local function OnMaximize(frame)
             frame:GetParent():SetSize(OverrideWidth, OverrideHeight);   --Override DressUpFrame Resize Mixin
             UpdateUIPanelPositions(frame);
         end
-
-        MaximizeMinimizeFrame:SetOnMaximizedCallback(OnMaximize);
+        ReScaleFrame:SetOnMaximizedCallback(OnMaximize);
     end
 
     hooksecurefunc("DressUpVisual", function()
         local frame = NarciBridge_DressUpFrame;
         if frame and SlotFrameVisibility and GetCVar("miniDressUpFrame") == "0" then
             frame.SlotFrame:Show();
-            frame.OptionFrame.CopyButton:Show();
+            frame.OptionFrame:Show();
             GetDressingSource(frame.mainHandEnchant, frame.offHandEnchant)
             if frame.OptionFrame.GearTexts:IsShown() then
                 CopyTexts(frame.OptionFrame.GearTexts)
@@ -647,7 +657,7 @@ local function NarciBridge_DressUpFrame_Initialize()
         local frame = NarciBridge_DressUpFrame;
         if frame then
             frame.SlotFrame:Hide();
-            frame.OptionFrame.CopyButton:Hide();
+            frame.OptionFrame:Hide();
         end
     end
     
@@ -662,16 +672,6 @@ local function NarciBridge_DressUpFrame_Initialize()
     frame.OptionFrame.CopyButton:SetScript("OnClick", CopyTextButton_OnClick);
     local TryOnButton = frame.OptionFrame.TryOnButton;
     TryOnButton:SetScript("OnClick", TryOnButton_OnClick);
-
-    --[[
-    function ModelSceneActorMixin:OnModelLoaded()   --Mixin Override DressUpFrame Resize Mixin
-        --Original 8.2.5
-        self:MarkScaleDirty();
-
-        --Narcissus
-        print(self:GetParent():GetParent():GetName())
-    end
-    --]]
 end
 
 
@@ -954,7 +954,25 @@ function TestActorIDs(begin, ending)
     end
 end
 
+function GetActorID(RaceName)
+    --Run this when new playable race available
+    local temp, tag;
+    local match1 = RaceName.."-male";
+    local match2 = RaceName.."-female";
+
+    for i = 1, 1500 do
+        temp = C_ModelInfo.GetModelSceneActorInfoByID(i)
+        if temp and temp.scriptTag then
+            tag = temp.scriptTag
+            if tag == match1 or tag == match2 or tag == RaceName then
+                print(i.." "..tag);
+            end
+        end
+    end
+end
+
 hooksecurefunc("ChatFrame_DisplayUsageError", function(messageTag)
     print(messageTag)
 end)
 --]]
+

@@ -4,6 +4,7 @@ if GetLocale() ~= "zhCN" then
     return
 end
 
+loadstring([[
 BtWQuestsDatabase:UpdateQuestsTable({
     [40537] = {
         name = "以鲜血为契",
@@ -2534,6 +2535,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [50396] = {
         name = "幼龙的命运",
     },
+    [50397] = {
+        name = "壮志凌云",
+    },
     [50401] = {
         name = "跌落恐慌",
     },
@@ -3058,6 +3062,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [50934] = {
         name = "偶然的发现",
+    },
+    [50940] = {
+        name = "无翼者的智慧",
+    },
+    [50942] = {
+        name = "为了滑行，而不是骑行",
+    },
+    [50943] = {
+        name = "飞行的乐趣",
+    },
+    [50944] = {
+        name = "潦而不倒",
     },
     [50953] = {
         name = "绿地追猎者",
@@ -6494,7 +6510,29 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57126] = {
         name = "愿你一帆风顺",
     },
+    [57130] = {
+        name = "内部叛徒",
+    },
+    [57147] = {
+        name = "并非我的大酋长",
+    },
+    [57148] = {
+        name = "破城者",
+    },
+    [57149] = {
+        name = "阻止宣传",
+    },
+    [57150] = {
+        name = "征兵",
+    },
+    [57151] = {
+        name = "划清界限",
+    },
+    [57152] = {
+        name = "至高忠诚",
+    },
     [57198] = {
         name = "责任感",
     },
 })
+]])()

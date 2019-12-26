@@ -186,11 +186,9 @@
 		</Layers>
 		<Scripts>
 			<OnEnter>
-				--self.Highlight:Show();
 				UIFrameFadeIn(self.Highlight, 0.12, self.Highlight:GetAlpha(), 1);
 			</OnEnter>
 			<OnLeave>
-				--self.Highlight:Hide();
 				UIFrameFadeOut(self.Highlight, 0.2, self.Highlight:GetAlpha(), 0);
 			</OnLeave>
 			<OnDoubleClick>

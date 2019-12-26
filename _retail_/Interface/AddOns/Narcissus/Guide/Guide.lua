@@ -63,9 +63,7 @@ end
 local StopTimer = Narci_BioAlertFrame_StopTimer;     --PlayerModel.lua
 local function RaceChangeAlert_OnShow(self)
     StopTimer();
-    tutorial["RaceChange"] = false;
-    self:SetScript("OnShow", StopTimer);
-    PlaySound(68183, "SFX");
+    --tutorial["RaceChange"] = false;
 end
 
 
@@ -188,10 +186,20 @@ Initialization:SetScript("OnEvent", function(self, event, ...)
         if not tutorial then return; end;
         --True ~ will show tutorial
         --Race change
-        local key = tutorial["RaceChange"];
+        local key = tutorial["RaceChangeFixed"];
         if key then
-            local RaceChange = CreateFrame("Frame", nil, Narci_RaceOptionFrame, "Narci_Model_RaceChangeAlert");
-            RaceChange:SetScript("OnShow", RaceChangeAlert_OnShow);
+            local ActorPortrait = NarciModelControl_ActorButton;
+            local Tip = CreateFrame("Frame", nil, ActorPortrait, "NarciGenericGuideTemplate");
+            ActorPortrait:SetScript("OnShow", function(self)
+                SetPortraitTexture(self.Portrait1, "player");
+                C_Timer.After(1, function()
+                    Tip:NewText(L["Race Change"], L["Race Change Line1"], ActorPortrait, 0, -6, 5, "END");
+                    tutorial["RaceChangeFixed"] = false;
+                end);
+                self:SetScript("OnShow", function(self)
+                    SetPortraitTexture(self.Portrait1, "player");
+                end);
+            end)
         end
 
         --Enlarged Exit Confirmation
@@ -241,3 +249,7 @@ Initialization:SetScript("OnEvent", function(self, event, ...)
         end
     end)
 end);
+
+function Narci:ResetGuide()
+    wipe(NarcissusDB.Tutorials);
+end

@@ -2929,7 +2929,7 @@
 				</Scripts>
 			</AnimationGroup>
 			<AnimationGroup parentKey="AutoStand">
-				<Translation startDelay="23" duration="0" order="1"/>
+				<Translation startDelay="7" duration="0" order="1"/>
 				<Scripts>
 					<OnFinished>
 						DoEmote("Stand", "none");
