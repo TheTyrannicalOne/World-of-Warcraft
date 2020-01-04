@@ -4,7 +4,7 @@ BtWQuests.Guide = Guide;
 function Guide:AddWayPoint(mapId, x, y, name)
     if not self.DataProvider then
         self.DataProvider = CreateFromMixins(BtWQuestsGuideDataProviderMixin)
-        WorldMapFrame:AddDataProvider(self.DataProvider);
+        LibMapPinHandler[WorldMapFrame]:AddDataProvider(self.DataProvider);
     end
 
     local continentMapId = mapId

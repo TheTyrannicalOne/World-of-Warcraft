@@ -1725,12 +1725,15 @@ function QuestItemMixin:OnEnter(database, item, character, button, frame, toolti
     end
 
     if tooltip ~= nil then
+        local target = self:GetTarget(database, item)
         local userdata = self:GetUserdata(database, item)
-        local link = userdata and userdata.link or self:GetLink(database, item)
+        local link = userdata and userdata.link or (target and self:GetLink(database, item))
 
-        tooltip:SetPoint("TOPLEFT", button, "TOPRIGHT")
-        tooltip:SetOwner(button, "ANCHOR_PRESERVE");
-        tooltip:SetHyperlink(link, character)
+        if link then
+            tooltip:SetPoint("TOPLEFT", button, "TOPRIGHT")
+            tooltip:SetOwner(button, "ANCHOR_PRESERVE");
+            tooltip:SetHyperlink(link, character)
+        end
     end
 end
 function QuestItemMixin:OnLeave(database, item, character, button, frame, tooltip)

@@ -30,7 +30,7 @@ RematchSettings = {
 	["DialogYPos"] = 717.004638671875,
 	["JournalUsed"] = true,
 	["HidePetToast"] = true,
-	["LevelingQueue"] = {
+	["QueueSanctuary"] = {
 	},
 	["DialogXPos"] = 1282.008178710938,
 	["AllowHiddenPetsDefaulted"] = true,
@@ -54,9 +54,9 @@ RematchSettings = {
 		},
 		["Level"] = {
 		},
-		["Sources"] = {
-		},
 		["Similar"] = {
+		},
+		["Sources"] = {
 		},
 		["Breed"] = {
 		},
@@ -86,9 +86,9 @@ RematchSettings = {
 	},
 	["JournalPanel"] = 1,
 	["CornerPos"] = "BOTTOMLEFT",
-	["QueueSanctuary"] = {
-	},
 	["FavoriteFilters"] = {
+	},
+	["LevelingQueue"] = {
 	},
 	["YPos"] = 418.0044860839844,
 	["CustomScaleValue"] = 100,

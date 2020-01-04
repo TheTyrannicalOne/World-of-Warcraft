@@ -1,6 +1,6 @@
 ## Interface: 80205
 ## Title: BtWQuests
-## Version: 1.56
+## Version: 1.58
 ## Notes: 
 ## Author: Breen
 ## SavedVariables: BtWQuests_Characters
@@ -27,3 +27,4 @@ BtWQuests.xml
 BtWQuestsQuestDataProvider.xml
 BtWQuestsGuideDataProvider.xml
 BtWQuestsMinimapButton.xml
+LibMapPinHandler.lua

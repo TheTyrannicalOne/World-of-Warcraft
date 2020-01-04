@@ -702,12 +702,11 @@ function BtWQuestsMixin:OnEvent(event, ...)
             -- hooksecurefunc(QuestMapQuestOptionsDropDown, "initialize", function (self)
             --     BtWQuests_AddOpenChainMenuItem(self, self.questID)
             -- end)
-
         end
     elseif event == "PLAYER_ENTERING_WORLD" then
         if not self.addedQuestDataProviders and BtWQuestSettingsData:GetValue("showMapPins") then
             self.addedQuestDataProviders = true
-            WorldMapFrame:AddDataProvider(CreateFromMixins(BtWQuestsQuestDataProviderMixin));
+            LibMapPinHandler[WorldMapFrame]:AddDataProvider(CreateFromMixins(BtWQuestsQuestDataProviderMixin));
         end
     elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "ZONE_CHANGED_NEW_AREA" then
         if self:IsShown() then
