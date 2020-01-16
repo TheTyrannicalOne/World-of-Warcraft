@@ -27,9 +27,6 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [273854] = {
         name = "Sac à dos",
     },
-    [276187] = {
-        name = "Junji",
-    },
     [276251] = {
         name = "Inventaire de l’excavation",
     },

@@ -27,9 +27,6 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [273854] = {
         name = "Mochila",
     },
-    [276187] = {
-        name = "Junji",
-    },
     [276251] = {
         name = "Inventario de excavación",
     },

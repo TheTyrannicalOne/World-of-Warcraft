@@ -181,6 +181,8 @@ L["confirm_usage_text"] = [=[|cFF87CEFA RCLootCouncil |r
 
 Willst du RCLootCouncil mit dieser Gruppe verwenden?]=]
 L["Conqueror Token"] = "Eroberer-Marke"
+--[[Translation missing --]]
+--[[ L["Corruption if awarded:"] = ""--]] 
 L["Could not Auto Award i because the Loot Threshold is too high!"] = "%s konnte nicht automatisch vergeben werden, weil die Plünderschwelle zu hoch ist!"
 L["Could not find 'player' in the group."] = "Der Spieler %s wurde nicht in der Gruppe gefunden."
 L["Couldn't find any councilmembers in the group"] = "Es konnten keine Ratsmitglieder in der Gruppe gefunden werden"
@@ -469,6 +471,8 @@ L["Something went wrong during syncing, please try again."] = "Während der Sync
 L["Sort Items"] = "Gegenstände sortieren"
 L["sort_items_desc"] = "Sortiere Session nach Gegenstandstyp und -stufe."
 L["Standard .csv output."] = "Standard"
+--[[Translation missing --]]
+--[[ L["Standard JSON output."] = ""--]] 
 L["Status texts"] = "Statustexte"
 L["Store in bag and award later"] = "In der Tasche lagern und später verteilen"
 L["Succesfully deleted %d entries"] = "%d Einträge erfolgreich gelöscht"

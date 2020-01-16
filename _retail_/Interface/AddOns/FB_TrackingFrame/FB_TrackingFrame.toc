@@ -1,6 +1,6 @@
-## Interface: 80200
+## Interface: 80300
 ## Title: Fishing Buddy - Tracking Frame
-## Version: 1.10
+## Version: 1.10.1
 ## Author: Sutorix=AT=hotmail.com
 ## RequiredDeps: FishingBuddy
 ## SavedVariables: PBTF_Info

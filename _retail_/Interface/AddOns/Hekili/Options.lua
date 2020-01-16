@@ -264,6 +264,9 @@ local displayTemplate = {
     keepAspectRatio = true,
     zoom = 30,
 
+    frameStrata = "MEDIUM",
+    frameLevel = 10,
+
     --[[ font = ElvUI and 'PT Sans Narrow' or 'Arial Narrow',
     fontSize = 12,
     fontStyle = "OUTLINE", ]]
@@ -303,6 +306,8 @@ local displayTemplate = {
             always = 1,
             target = 1,
             combat = 1,
+            combatTarget = 1,
+            hideMounted = false,
         },
 
         pvp = {
@@ -310,6 +315,8 @@ local displayTemplate = {
             always = 1,
             target = 1,
             combat = 1,
+            combatTarget = 1,
+            hideMounted = false,
         },
     },
 
@@ -765,6 +772,10 @@ do
         shareDB.export = ""
     end
 
+
+
+    local frameStratas = ns.FrameStratas
+
     -- Display Config.
     function Hekili:GetDisplayOption( info )
         local n = #info
@@ -780,9 +791,12 @@ do
         end
 
         if option == 'color' then return unpack( conf.color ) end
+        if option == 'frameStrata' then return frameStratas[ conf.frameStrata ] or 3 end
         if option == 'name' then return display end
+
         return conf[ option ]
     end
+
 
     function Hekili:SetDisplayOption( info, val, v2, v3, v4 )
         local n = #info
@@ -799,6 +813,9 @@ do
 
         if option == 'color' then
             conf.color = { val, v2, v3, v4 }
+            set = true
+        elseif option == 'frameStrata' then
+            conf.frameStrata = frameStratas[ val ] or "MEDIUM"
             set = true
         end
 
@@ -1102,6 +1119,45 @@ do
                                 },
                             },
 
+                            advancedFrame = {
+                                type = "group",
+                                name = "Frame Layer",
+                                inline = true,
+                                order = 16,
+                                args = {
+                                    frameStrata = {
+                                        type = "select",
+                                        name = "Strata",
+                                        desc =  "Frame Strata determines which graphical layer that this display is drawn on.\n" ..
+                                                "The default layer is MEDIUM.",
+                                        values = {
+                                            "BACKGROUND",
+                                            "LOW",
+                                            "MEDIUM",
+                                            "HIGH",
+                                            "DIALOG",
+                                            "FULLSCREEN",
+                                            "FULLSCREEN_DIALOG",
+                                            "TOOLTIP"
+                                        },
+                                        width = 1.49,
+                                        order = 1,
+                                    },
+
+                                    frameLevel = {
+                                        type = "range",
+                                        name = "Level",
+                                        desc = "Frame Level determines the display's position within its current layer.\n\n" ..
+                                                "Default value is |cFFFFD10010|r.",
+                                        min = 1,
+                                        max = 10000,
+                                        step = 1,
+                                        width = 1.49,
+                                        order = 2,
+                                    }
+                                }
+                            },
+
                             zoom = {
                                 type = "range",
                                 name = "Icon Zoom",
@@ -1319,6 +1375,7 @@ do
                                         max = 1,
                                         step = 0.01,
                                         width = "full",
+                                        order = 2,
                                     },
 
                                     target = {
@@ -1329,7 +1386,27 @@ do
                                         max = 1,
                                         step = 0.01,
                                         width = "full",
+                                        order = 3,
                                     },
+
+                                    combatTarget = {
+                                        type = "range",
+                                        name = "Combat w/ Target",
+                                        desc = "If non-zero, this display is always shown when you are in combat and have an attackable PvE target.",
+                                        min = 0,
+                                        max = 1,
+                                        step = 0.01,
+                                        width = "full",
+                                        order = 4,
+                                    },
+
+                                    hideMounted = {
+                                        type = "toggle",
+                                        name = "Hide When Mounted",
+                                        desc = "If checked, the display will not be visible when you are mounted (unless you are in combat).",
+                                        width = "full",
+                                        order = 1.1,
+                                    }
                                 },
                             },
 
@@ -1371,6 +1448,7 @@ do
                                         max = 1,
                                         step = 0.01,
                                         width = "full",
+                                        order = 2,
                                     },
 
                                     target = {
@@ -1381,7 +1459,27 @@ do
                                         max = 1,
                                         step = 0.01,
                                         width = "full",
+                                        order = 3,
                                     },
+
+                                    combatTarget = {
+                                        type = "range",
+                                        name = "Combat w/ Target",
+                                        desc = "If non-zero, this is always shown when you are in combat and have an attackable PvP target.",
+                                        min = 0,
+                                        max = 1,
+                                        step = 0.01,
+                                        width = "full",
+                                        order = 4,
+                                    },
+
+                                    hideMounted = {
+                                        type = "toggle",
+                                        name = "Hide When Mounted",
+                                        desc = "If checked, the display will not be visible when you are mounted (unless you are in combat).",
+                                        width = "full",
+                                        order = 1.1,
+                                    }
                                 },
                             },
                         },
@@ -2118,6 +2216,13 @@ do
                     type = "header",
                     name = "Fonts",
                     order = 960,
+                },
+
+                fontWarn = {
+                    type = "description",
+                    name = "Changing the font below will modify |cFFFF0000ALL|r text on all displays.\n" ..
+                            "To modify one bit of text individually, select the Display (at left) and select the appropriate text.",
+                    order = 960.01,
                 },
             
                 font = {
@@ -5086,7 +5191,9 @@ do
                                     order = 5,
                                     func = function ()
                                         local p = rawget( Hekili.DB.profile.packs, pack )
-                                        local result, warnings = Hekili:ImportSimcAPL( nil, nil, p.profile )
+                                        local profile = p.profile:gsub( '"', '' )
+
+                                        local result, warnings = Hekili:ImportSimcAPL( nil, nil, profile )
 
                                         wipe( p.lists )
 
@@ -8569,6 +8676,11 @@ local function Sanitize( segment, i, line, warnings )
     i, times = i:gsub( "target%.1%.time_to_die", "time_to_die" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'target.1.time_to_die' to 'time_to_die' (" .. times .."x)." )
+    end
+
+    i, times = i:gsub( "trinket%.([%w_]+)%.cooldown", "cooldown.%1" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'trinket.X.cooldown' to 'cooldown.X' (" .. times .. "x)." )
     end
 
     i, times = i:gsub( "min:[a-z0-9_%.]+(,?$?)", "%1" )

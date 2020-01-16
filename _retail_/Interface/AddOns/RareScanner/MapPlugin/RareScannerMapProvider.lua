@@ -67,7 +67,7 @@ local function AddNotDiscoveredIcons(mixin, entities, mapID, atlasName)
 		end
 		for npcID, coords in pairs (entities[mapID]) do
 			-- Delete already found, opened without vignette or ignored
-			if (private.dbglobal.rares_found[npcID] or (private.dbchar.rares_not_discovered_ignored and private.dbchar.rares_not_discovered_ignored[npcID]) or private.dbchar.containers_opened[npcID] or private.dbchar.rares_killed[npcID]) then
+			if (private.dbglobal.rares_found[npcID] or (private.dbchar.rares_not_discovered_ignored and private.dbchar.rares_not_discovered_ignored[npcID]) or private.dbchar.containers_opened[npcID] or private.dbchar.rares_killed[npcID] or private.dbchar.events_completed[npcID]) then
 				entities[mapID][npcID] = nil
 			else
 				local npcInfo = {}
@@ -264,7 +264,7 @@ function RareScannerDataProviderMixin:AddPin(npcID, npcInfo, mapID)
 			end
 		end
 	-- If its an event
-	elseif (npcInfo.atlasName == RareScanner.EVENT_VIGNETTE) then
+	elseif (npcInfo.atlasName == RareScanner.EVENT_VIGNETTE or npcInfo.atlasName == RareScanner.EVENT_ELITE_VIGNETTE) then
 		-- If compelted ignore it
 		if (private.dbchar.events_completed[npcID]) then
 			--RareScanner:PrintDebugMessage("DEBUG: Ignorado por estar completado")

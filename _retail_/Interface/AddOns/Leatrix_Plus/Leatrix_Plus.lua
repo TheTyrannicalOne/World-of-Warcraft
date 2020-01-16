@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.23 (8th January 2020)
+-- 	Leatrix Plus 8.3.00 (14th January 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.23"
+	LeaPlusLC["AddonVer"] = "8.3.00"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -429,7 +429,6 @@
 		or	(LeaPlusLC["TipModEnable"]			~= LeaPlusDB["TipModEnable"])			-- Manage tooltip
 		or	(LeaPlusLC["EnhanceDressup"]		~= LeaPlusDB["EnhanceDressup"])			-- Enhance dressup
 		or	(LeaPlusLC["ShowVolume"]			~= LeaPlusDB["ShowVolume"])				-- Show volume slider
-		or	(LeaPlusLC["AhExtras"]				~= LeaPlusDB["AhExtras"])				-- Show auction controls
 		or	(LeaPlusLC["ShowCooldowns"]			~= LeaPlusDB["ShowCooldowns"])			-- Show cooldowns
 		or	(LeaPlusLC["DurabilityStatus"]		~= LeaPlusDB["DurabilityStatus"])		-- Show durability status
 		or	(LeaPlusLC["ShowPetSaveBtn"]		~= LeaPlusDB["ShowPetSaveBtn"])			-- Show pet save button
@@ -3575,213 +3574,6 @@
 			-- Set LibDBIcon when option is clicked and on startup
 			LeaPlusCB["ShowMinimapIcon"]:HookScript("OnClick", SetLibDBIconFunc)
 			SetLibDBIconFunc()
-
-		end
-
-		----------------------------------------------------------------------
-		-- Auction House Extras
-		----------------------------------------------------------------------
-
-		if ClientVersion == "8.3.0" then
-			LeaPlusLC["AhExtras"] = "Off"
-			LeaPlusLC:LockItem(LeaPlusCB["AhExtras"], true)
-		else
-			if LeaPlusLC["AhExtras"] == "On" then
-
-				local function AuctionFunc()
-
-					-- Set default auction duration and price type values to saved settings or default settings
-					AuctionFrameAuctions.duration = LeaPlusDB["AHDuration"] or 3
-					AuctionFrameAuctions.priceType = LeaPlusDB["AHPriceType"] or 2
-
-					-- Functions
-					local function CreateAuctionCB(name, anchor, x, y, text)
-						LeaPlusCB[name] = CreateFrame("CheckButton", nil, AuctionFrameAuctions, "OptionsCheckButtonTemplate")
-						LeaPlusCB[name]:SetFrameStrata("HIGH")
-						LeaPlusCB[name]:SetSize(20, 20)
-						LeaPlusCB[name]:SetPoint(anchor, x, y)
-						LeaPlusCB[name].f = LeaPlusCB[name]:CreateFontString(nil, 'OVERLAY', "GameFontNormal")
-						LeaPlusCB[name].f:SetPoint("LEFT", 20, 0)
-						LeaPlusCB[name].f:SetText(L[text])
-						LeaPlusCB[name].f:Show();
-						LeaPlusCB[name]:SetScript('OnClick', function()
-							if LeaPlusCB[name]:GetChecked() then
-								LeaPlusLC[name] = "On"
-							else
-								LeaPlusLC[name] = "Off"
-							end
-						end)
-						LeaPlusCB[name]:SetScript('OnShow', function(self)
-							if LeaPlusLC[name] == "On" then
-								self:SetChecked(true)
-							else
-								self:SetChecked(false)
-							end
-						end)
-					end
-
-					-- Show the correct fields in the AH frame and match prices
-					local function SetupAh()
-						if LeaPlusLC["AhBuyoutOnly"] == "On" then
-							-- Hide the start price
-							StartPrice:SetAlpha(0);
-							-- Set start price to buyout price 
-							StartPriceGold:SetText(BuyoutPriceGold:GetText());
-							StartPriceSilver:SetText(BuyoutPriceSilver:GetText());
-							StartPriceCopper:SetText(BuyoutPriceCopper:GetText());
-						else
-							-- Show the start price
-							StartPrice:SetAlpha(1);
-						end
-						-- If gold only is on, set copper and silver to 99
-						if LeaPlusLC["AhGoldOnly"] == "On" then
-							StartPriceCopper:SetText("99"); StartPriceCopper:Disable();
-							StartPriceSilver:SetText("99"); StartPriceSilver:Disable();
-							BuyoutPriceCopper:SetText("99"); BuyoutPriceCopper:Disable();
-							BuyoutPriceSilver:SetText("99"); BuyoutPriceSilver:Disable();
-						else
-							StartPriceCopper:Enable();
-							StartPriceSilver:Enable();
-							BuyoutPriceCopper:Enable();
-							BuyoutPriceSilver:Enable();
-						end
-						-- Validate the auction (mainly for the create auction button status)
-						AuctionsFrameAuctions_ValidateAuction();
-					end
-
-					-- Create checkboxes
-					CreateAuctionCB("AhBuyoutOnly", "BOTTOMLEFT", 200, 16, "Buyout Only")
-					CreateAuctionCB("AhGoldOnly", "BOTTOMLEFT", 320, 16, "Gold Only")
-
-					-- Reposition Gold Only checkbox so it does not overlap Buyout Only checkbox label
-					LeaPlusCB["AhGoldOnly"]:ClearAllPoints()
-					LeaPlusCB["AhGoldOnly"]:SetPoint("LEFT", LeaPlusCB["AhBuyoutOnly"].f, "RIGHT", 20, 0)
-
-					-- Set click boundaries
-					LeaPlusCB["AhBuyoutOnly"]:SetHitRectInsets(0, -LeaPlusCB["AhBuyoutOnly"].f:GetStringWidth() + 6, 0, 0);
-					LeaPlusCB["AhGoldOnly"]:SetHitRectInsets(0, -LeaPlusCB["AhGoldOnly"].f:GetStringWidth() + 6, 0, 0);
-
-					LeaPlusCB["AhBuyoutOnly"]:HookScript('OnClick', SetupAh);
-					LeaPlusCB["AhBuyoutOnly"]:HookScript('OnShow', SetupAh);
-		
-					AuctionFrameAuctions:HookScript("OnShow", SetupAh)
-					BuyoutPriceGold:HookScript("OnTextChanged", SetupAh)
-					BuyoutPriceSilver:HookScript("OnTextChanged", SetupAh)
-					BuyoutPriceCopper:HookScript("OnTextChanged", SetupAh)
-					StartPriceGold:HookScript("OnTextChanged", SetupAh)
-					StartPriceSilver:HookScript("OnTextChanged", SetupAh)
-					StartPriceCopper:HookScript("OnTextChanged", SetupAh)
-		
-					-- Lock the create auction button if buyout gold box is empty (when using buyout only and gold only)
-					AuctionsCreateAuctionButton:HookScript("OnEnable", function()
-						-- Do nothing if wow token frame is showing
-						if AuctionsWowTokenAuctionFrame:IsShown() then return end
-						-- Lock the create auction button if both checkboxes are enabled and buyout gold price is empty
-						if LeaPlusLC["AhGoldOnly"] == "On" and LeaPlusLC["AhBuyoutOnly"] == "On" then
-							if BuyoutPriceGold:GetText() == "" then
-								AuctionsCreateAuctionButton:Disable()
-							end
-						end
-					end)
-					
-					-- Clear copper and silver prices if gold only box is unchecked
-					LeaPlusCB["AhGoldOnly"]:HookScript('OnClick', function()
-						if LeaPlusCB["AhGoldOnly"]:GetChecked() == false then
-							BuyoutPriceCopper:SetText("")
-							BuyoutPriceSilver:SetText("")
-							StartPriceCopper:SetText("")
-							StartPriceSilver:SetText("")
-						end
-						SetupAh();
-					end)
-
-					-- Create find button
-					AuctionsItemText:Hide()
-					LeaPlusLC:CreateButton("FindAuctionButton", AuctionsStackSizeMaxButton, "Find Item", "CENTER", 0, 74, 0, 21, false, "")
-					LeaPlusCB["FindAuctionButton"]:SetParent(AuctionFrameAuctions)
-
-					-- Show find button when the auctions tab is shown
-					AuctionFrameAuctions:HookScript("OnShow", function() 
-						LeaPlusCB["FindAuctionButton"]:SetEnabled(GetAuctionSellItemInfo() and true or false)
-					end)
-
-					-- Show find button when a new item is added
-					AuctionsItemButton:HookScript("OnEvent", function(self, event)
-						if event == "NEW_AUCTION_UPDATE" then
-							LeaPlusCB["FindAuctionButton"]:SetEnabled(GetAuctionSellItemInfo() and true or false)
-						end
-					end)
-
-					LeaPlusCB["FindAuctionButton"]:SetScript("OnClick", function()
-						if GetAuctionSellItemInfo() then
-							if BrowseWowTokenResults:IsShown() then
-								-- Stop if Game Time filter is currently shown
-								AuctionFrameTab1:Click()
-								LeaPlusLC:Print("To use the Find Item button, you need to deselect the WoW Token category.")
-							else
-								-- Otherwise, search for the required item
-								local name = GetAuctionSellItemInfo()
-								BrowseName:SetText(name)
-								ExactMatchCheckButton:SetChecked(true) -- Necessary for scrolling through results pages with exact match
-								QueryAuctionItems(name, 0, 0, 0, false, 0, false, true)
-								AuctionFrameTab1:Click()
-							end
-						end
-					end)
-
-					-- Clear the cursor and reset editboxes when a new item replaces an existing one
-					hooksecurefunc("AuctionsFrameAuctions_ValidateAuction", function()
-						if GetAuctionSellItemInfo() then
-							-- Return anything you might be holding
-							ClearCursor();
-							-- Set copper and silver prices to 99 if gold mode is on
-							if LeaPlusLC["AhGoldOnly"] == "On" then
-								StartPriceCopper:SetText("99")
-								StartPriceSilver:SetText("99")
-								BuyoutPriceCopper:SetText("99")
-								BuyoutPriceSilver:SetText("99")
-							end
-						end
-					end)
-		  
-					-- Clear gold editbox after an auction has been created (to force user to enter something)
-					AuctionsCreateAuctionButton:HookScript("OnClick", function()
-						StartPriceGold:SetText("")
-						BuyoutPriceGold:SetText("")
-					end)
-
-					-- Set tab key actions (if different from defaults)
-					StartPriceGold:HookScript("OnTabPressed", function()
-						if not IsShiftKeyDown() then
-							if LeaPlusLC["AhBuyoutOnly"] == "Off" and LeaPlusLC["AhGoldOnly"] == "On" then
-								BuyoutPriceGold:SetFocus()
-							end
-						end
-					end)
-
-					BuyoutPriceGold:HookScript("OnTabPressed", function()
-						if IsShiftKeyDown() then
-							if LeaPlusLC["AhBuyoutOnly"] == "Off" and LeaPlusLC["AhGoldOnly"] == "On" then
-								StartPriceGold:SetFocus()
-							end
-						end
-					end)
-				end
-
-				-- Run function when Blizzard addon is loaded
-				if IsAddOnLoaded("Blizzard_AuctionUI") then
-					AuctionFunc()
-				else
-					local waitFrame = CreateFrame("FRAME")
-					waitFrame:RegisterEvent("ADDON_LOADED")
-					waitFrame:SetScript("OnEvent", function(self, event, arg1)
-						if arg1 == "Blizzard_AuctionUI" then
-							AuctionFunc()
-							waitFrame:UnregisterAllEvents()
-						end
-					end)
-				end
-			end
 
 		end
 
@@ -7685,9 +7477,6 @@
 				LeaPlusLC:LoadVarChk("EnhanceDressup", "Off")				-- Enhance dressup
 				LeaPlusLC:LoadVarChk("ShowVolume", "Off")					-- Show volume slider
 				LeaPlusLC:LoadVarChk("ShowVolumeInFrame", "Off")			-- Volume slider dual layout
-				LeaPlusLC:LoadVarChk("AhExtras", "Off")						-- Show auction controls
-				LeaPlusLC:LoadVarChk("AhBuyoutOnly", "Off")					-- Auction buyout only
-				LeaPlusLC:LoadVarChk("AhGoldOnly", "Off")					-- Auction gold only
 
 				LeaPlusLC:LoadVarChk("ShowCooldowns", "Off")				-- Show cooldowns
 				LeaPlusLC:LoadVarChk("ShowCooldownID", "On")				-- Show cooldown ID in tips
@@ -7854,9 +7643,6 @@
 			LeaPlusDB["EnhanceDressup"]			= LeaPlusLC["EnhanceDressup"]
 			LeaPlusDB["ShowVolume"] 			= LeaPlusLC["ShowVolume"]
 			LeaPlusDB["ShowVolumeInFrame"] 		= LeaPlusLC["ShowVolumeInFrame"]
-			LeaPlusDB["AhExtras"]				= LeaPlusLC["AhExtras"]
-			LeaPlusDB["AhBuyoutOnly"]			= LeaPlusLC["AhBuyoutOnly"]
-			LeaPlusDB["AhGoldOnly"]				= LeaPlusLC["AhGoldOnly"]
 
 			LeaPlusDB["ShowCooldowns"]			= LeaPlusLC["ShowCooldowns"]
 			LeaPlusDB["ShowCooldownID"]			= LeaPlusLC["ShowCooldownID"]
@@ -7997,22 +7783,6 @@
 		if LeaPlusDB["NoRestedEmotes"] == "On" then
 			if wipe or (not wipe and LeaPlusLC["NoRestedEmotes"] == "Off") then
 				SetCVar("Sound_EnableEmoteSounds", "1")
-			end
-		end
-
-		----------------------------------------------------------------------
-		-- Do other stuff during logout
-		----------------------------------------------------------------------
-
-		-- Store the auction house duration and price type values if auction house option is enabled
-		if LeaPlusDB["AhExtras"] == "On" then
-			if AuctionFrameAuctions then
-				if AuctionFrameAuctions.duration then
-					LeaPlusDB["AHDuration"] = AuctionFrameAuctions.duration
-				end
-				if AuctionFrameAuctions.priceType then
-					LeaPlusDB["AHPriceType"] = AuctionFrameAuctions.priceType
-				end
 			end
 		end
 
@@ -9527,7 +9297,6 @@
 				LeaPlusDB["TipCursorY"] = 0						-- Y offset
 				LeaPlusDB["EnhanceDressup"] = "On"				-- Enhance dressup
 				LeaPlusDB["ShowVolume"] = "On"					-- Show volume slider
-				LeaPlusDB["AhExtras"] = "On"					-- Show auction controls
 				LeaPlusDB["ShowCooldowns"] = "On"				-- Show cooldowns
 				LeaPlusDB["DurabilityStatus"] = "On"			-- Show durability status
 				LeaPlusDB["ShowPetSaveBtn"] = "On"				-- Show pet save button
@@ -9844,7 +9613,7 @@
 	LeaPlusLC:MakeWD(LeaPlusLC[pg], "To begin, choose an options page.", 146, -92)
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Support", 146, -132);
-	LeaPlusLC:MakeWD(LeaPlusLC[pg], "www.curseforge.com/wow/addons/leatrix-plus", 146, -152)
+	LeaPlusLC:MakeWD(LeaPlusLC[pg], "curseforge.com/wow/addons/leatrix-plus", 146, -152)
 
 ----------------------------------------------------------------------
 -- 	LC1: Automation
@@ -9937,11 +9706,10 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Extras"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowVolume"				, 	"Show volume slider"			, 	340, -92, 	true,	"If checked, a master volume slider will be shown on the character sheet.|n|nThe volume slider can be placed in either of two locations on the character sheet.  To toggle between them, hold the shift key down and right-click the slider.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AhExtras"					, 	"Show auction controls"			, 	340, -112, 	true,	"If checked, additional functionality will be added to the auction house.|n|nBuyout only - create buyout auctions without filling in the starting price.|n|nGold only - set the copper and silver prices at 99 to speed up new auctions.|n|nFind item - search the auction house for the item you are selling.|n|nIn addition, the auction price type and duration settings will be saved account-wide.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowCooldowns"				, 	"Show cooldowns"				, 	340, -132, 	true,	"If checked, you will be able to place up to five beneficial cooldown icons above the target frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "DurabilityStatus"			, 	"Show durability status"		, 	340, -152, 	true,	"If checked, a button will be added to the character sheet which will show your equipped item durability when you hover the pointer over it.|n|nIn addition, an overall percentage will be shown in the chat frame when you die.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowPetSaveBtn"			, 	"Show pet save button"			, 	340, -172, 	true,	"If checked, you will be able to save your current battle pet team (including abilities) to a single command.|n|nA button will be added to the Pet Journal.  Clicking the button will toggle showing the assignment command for your current team.  Pressing CTRL/C will copy the command to memory.|n|nYou can then paste the command (with CTRL/V) into the chat window or a macro to instantly assign your team.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowWowheadLinks"			, 	"Show Wowhead links"			, 	340, -192, 	true,	"If checked, Wowhead links will be shown in the world map frame and the achievements frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowCooldowns"				, 	"Show cooldowns"				, 	340, -112, 	true,	"If checked, you will be able to place up to five beneficial cooldown icons above the target frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "DurabilityStatus"			, 	"Show durability status"		, 	340, -132, 	true,	"If checked, a button will be added to the character sheet which will show your equipped item durability when you hover the pointer over it.|n|nIn addition, an overall percentage will be shown in the chat frame when you die.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowPetSaveBtn"			, 	"Show pet save button"			, 	340, -152, 	true,	"If checked, you will be able to save your current battle pet team (including abilities) to a single command.|n|nA button will be added to the Pet Journal.  Clicking the button will toggle showing the assignment command for your current team.  Pressing CTRL/C will copy the command to memory.|n|nYou can then paste the command (with CTRL/V) into the chat window or a macro to instantly assign your team.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowWowheadLinks"			, 	"Show Wowhead links"			, 	340, -172, 	true,	"If checked, Wowhead links will be shown in the world map frame and the achievements frame.")
 
 	LeaPlusLC:CfgBtn("ModMinimapBtn", LeaPlusCB["MinimapMod"])
 	LeaPlusLC:CfgBtn("MoveTooltipButton", LeaPlusCB["TipModEnable"])

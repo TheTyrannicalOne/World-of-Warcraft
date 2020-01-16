@@ -177,6 +177,8 @@ L["confirm_usage_text"] = [=[|cFF87CEFA RCLootCouncil |r
 
 是否在此隊伍使用RCLootCouncil?]=]
 L["Conqueror Token"] = "征服者代幣"
+--[[Translation missing --]]
+--[[ L["Corruption if awarded:"] = ""--]] 
 L["Could not Auto Award i because the Loot Threshold is too high!"] = "無法自動分配%s 因為拾取門欄過高"
 L["Could not find 'player' in the group."] = "隊伍中無法找到%s"
 L["Couldn't find any councilmembers in the group"] = "無法在隊伍內找到投票成員"
@@ -458,6 +460,8 @@ L["Something went wrong during syncing, please try again."] = "同步發生錯�
 L["Sort Items"] = "物品排序"
 L["sort_items_desc"] = "將物品按照類型與裝等排序。"
 L["Standard .csv output."] = "標準.csv輸出格式"
+--[[Translation missing --]]
+--[[ L["Standard JSON output."] = ""--]] 
 L["Status texts"] = "狀態文字"
 L["Store in bag and award later"] = "存入背包以稍后分配"
 L["Succesfully deleted %d entries"] = "成功刪除 %d 紀錄"

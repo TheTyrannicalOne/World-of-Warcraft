@@ -210,6 +210,8 @@ L["confirm_usage_text"] = [=[|cFF87CEFA RCLootCouncil |r
 ¿Te gustaría usar RCLootCouncil con este grupo?]=]
 --[[Translation missing --]]
 --[[ L["Conqueror Token"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Corruption if awarded:"] = ""--]] 
 L["Could not Auto Award i because the Loot Threshold is too high!"] = "No se pudo Autopremiar %s debido a que el limite de botin es demasiado alto!"
 L["Could not find 'player' in the group."] = "No se pudo encontrar a %s en el grupo"
 L["Couldn't find any councilmembers in the group"] = "No se pudo encontrar ningún miembro del concilio en el grupo"
@@ -553,6 +555,8 @@ L["Something went wrong :'("] = "Algo salio mal :("
 --[[Translation missing --]]
 --[[ L["sort_items_desc"] = ""--]] 
 L["Standard .csv output."] = "Exportar en .csv estándar."
+--[[Translation missing --]]
+--[[ L["Standard JSON output."] = ""--]] 
 L["Status texts"] = "Textos de estado"
 --[[Translation missing --]]
 --[[ L["Store in bag and award later"] = ""--]] 

@@ -1277,6 +1277,18 @@ function E:InitializeModules()
 	end
 end
 
+local function buffwatchConvert(spell)
+	if spell.sizeOverride then
+		local newSize = spell.sizeOverride
+		spell.size = (newSize > 0 and newSize) or 8
+		spell.sizeOverride = nil
+	end
+	if spell.styleOverride then
+		spell.style = spell.styleOverride
+		spell.styleOverride = nil
+	end
+end
+
 function E:DBConversions()
 	--Fix issue where UIScale was incorrectly stored as string
 	E.global.general.UIScale = tonumber(E.global.general.UIScale)
@@ -1339,6 +1351,11 @@ function E:DBConversions()
 		E.db.auras.debuffs.countFontSize = fontSize
 		E.db.auras.debuffs.durationFontSize = fontSize
 		E.db.auras.fontSize = nil
+	end
+
+	--Remove stale font settings from Cooldown system for top auras
+	if E.db.auras.cooldown.fonts then
+		E.db.auras.cooldown.fonts = nil
 	end
 
 	--Convert Nameplate Aura Duration to new Cooldown system
@@ -1467,6 +1484,16 @@ function E:DBConversions()
 		E.db.nameplates.visibility.enemy.minions = E.db.nameplates.units.ENEMY_PLAYER.minions or E.db.nameplates.units.ENEMY_NPC.minions
 		E.db.nameplates.units.ENEMY_PLAYER.minions = nil
 		E.db.nameplates.units.ENEMY_NPC.minions = nil
+	end
+
+	-- removed override stuff from aurawatch
+	for _, spells in pairs(E.global.unitframe.buffwatch) do
+		for _, spell in pairs(spells) do
+			buffwatchConvert(spell)
+		end
+	end
+	for _, spell in pairs(E.db.unitframe.filters.buffwatch) do
+		buffwatchConvert(spell)
 	end
 end
 

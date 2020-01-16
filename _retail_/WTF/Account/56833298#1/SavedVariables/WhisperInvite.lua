@@ -31,7 +31,7 @@ WhisperInviteCoreDB = {
 				["setup"] = 1,
 			},
 		},
-		["Gangus - Runetotem"] = {
+		["Shathiel - Darkspear"] = {
 			["info"] = {
 				["setup"] = 1,
 			},
@@ -76,9 +76,9 @@ WhisperInviteCoreDB = {
 				["setup"] = 2,
 			},
 		},
-		["Shathiel - Darkspear"] = {
+		["Sinh - Dalaran"] = {
 			["info"] = {
-				["setup"] = 1,
+				["setup"] = 5,
 			},
 		},
 		["Thorinbane - Dalaran"] = {
@@ -141,9 +141,9 @@ WhisperInviteCoreDB = {
 				["setup"] = 1,
 			},
 		},
-		["Sinh - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 			["info"] = {
-				["setup"] = 5,
+				["setup"] = 1,
 			},
 		},
 		["Narisaric - Dalaran"] = {
@@ -157,36 +157,9 @@ WhisperInviteCoreDB = {
 			["profiles"] = {
 				["ZerkinUI"] = {
 					["keywords"] = {
-						["invite0"] = {
-							["showInviteBlockMessage"] = true,
-							["name"] = "invite",
-							["channels"] = {
-								["CHAT_MSG_OFFICER"] = false,
-								["CHAT_MSG_WHISPER"] = true,
-								["CHAT_MSG_GUILD"] = false,
-							},
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_CONVERSATION"] = false,
-								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
-								["CHAT_MSG_BN_WHISPER"] = true,
-							},
-							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
-							["keyword"] = "invite",
-							["maxGroupSize"] = 20,
-						},
 						["autoinvite0"] = {
 							["keyword"] = "autoinvite",
 							["name"] = "autoinvite",
-						},
-						["auto invite0"] = {
-							["keyword"] = "auto invite",
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_WHISPER"] = true,
-							},
-							["name"] = "auto invite",
-							["channels"] = {
-								["CHAT_MSG_WHISPER"] = true,
-							},
 						},
 						["inv0"] = {
 							["channels"] = {
@@ -204,6 +177,33 @@ WhisperInviteCoreDB = {
 							["name"] = "inv",
 							["customBlockMessage"] = "Erorr filtering \"inv\" - Zerkin",
 						},
+						["auto invite0"] = {
+							["keyword"] = "auto invite",
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_WHISPER"] = true,
+							},
+							["name"] = "auto invite",
+							["channels"] = {
+								["CHAT_MSG_WHISPER"] = true,
+							},
+						},
+						["invite0"] = {
+							["showInviteBlockMessage"] = true,
+							["name"] = "invite",
+							["channels"] = {
+								["CHAT_MSG_OFFICER"] = false,
+								["CHAT_MSG_WHISPER"] = true,
+								["CHAT_MSG_GUILD"] = false,
+							},
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_CONVERSATION"] = false,
+								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
+								["CHAT_MSG_BN_WHISPER"] = true,
+							},
+							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
+							["keyword"] = "invite",
+							["maxGroupSize"] = 20,
+						},
 					},
 				},
 			},
@@ -218,7 +218,7 @@ WhisperInviteCoreDB = {
 		["Shaewong - Dalaran"] = "Default",
 		["Tynster - Dalaran"] = "Default",
 		["Zerkkidan - Illidan"] = "Default",
-		["Gangus - Runetotem"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
 		["Xerret - Illidan"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
@@ -227,7 +227,7 @@ WhisperInviteCoreDB = {
 		["Gillbourn - Runetotem"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
 		["Zerkin - Illidan"] = "ZerkinUI",
-		["Shathiel - Darkspear"] = "Default",
+		["Sinh - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
@@ -240,7 +240,7 @@ WhisperInviteCoreDB = {
 		["Claugh - Runetotem"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
 		["Migimong - Runetotem"] = "Default",
-		["Sinh - Dalaran"] = "Default",
+		["Gangus - Runetotem"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 	},
 	["profiles"] = {

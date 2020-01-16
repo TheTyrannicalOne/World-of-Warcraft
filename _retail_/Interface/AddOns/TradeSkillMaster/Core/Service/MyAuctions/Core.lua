@@ -52,7 +52,7 @@ end
 function MyAuctions.CreateQuery()
 	return AuctionTracking.CreateQuery()
 		:LeftJoin(private.pendingDB, "index")
-		:OrderBy("index", false)
+		:OrderBy("index", TSM.IsWow83())
 end
 
 function MyAuctions.CancelAuction(auctionId)
@@ -129,7 +129,7 @@ function private.ChatMsgSystemEventHandler(_, msg)
 end
 
 function private.UIErrorMessageEventHandler(_, _, msg)
-	if msg == ERR_ITEM_NOT_FOUND and #private.pendingHashes > 0 then
+	if (msg == ERR_ITEM_NOT_FOUND or msg == ERR_NOT_ENOUGH_MONEY) and #private.pendingHashes > 0 then
 		local hash = tremove(private.pendingHashes, 1)
 		assert(hash)
 		Log.Info("Failed to cancel (hash=%d)", hash)
@@ -194,13 +194,15 @@ function private.OnAuctionsUpdated()
 	private.auctionInfo.postedGold = 0
 	private.auctionInfo.soldGold = 0
 	for _, row in query:Iterator() do
-		local saleStatus, buyout, currentBid = row:GetFields("saleStatus", "buyout", "currentBid")
+		local saleStatus, buyout, currentBid, stackSize = row:GetFields("saleStatus", "buyout", "currentBid", "stackSize")
 		private.auctionInfo.numPosted = private.auctionInfo.numPosted + 1
 		private.auctionInfo.postedGold = private.auctionInfo.postedGold + buyout
+		private.auctionInfo.postedGold = private.auctionInfo.postedGold + (buyout * stackSize)
 		if saleStatus == 1 then
 			private.auctionInfo.numSold = private.auctionInfo.numSold + 1
 			-- if somebody did a buyout, then bid will be equal to buyout, otherwise it'll be the winning bid
 			private.auctionInfo.soldGold = private.auctionInfo.soldGold + currentBid
+			private.auctionInfo.soldGold = private.auctionInfo.soldGold + (currentBid * stackSize)
 		end
 	end
 	query:Release()

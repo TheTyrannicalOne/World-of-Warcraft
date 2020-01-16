@@ -471,6 +471,14 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
             id = 279810,
             duration = 20,
             max_stack = 1
+        },
+
+
+        -- Utility
+        mend_pet = {
+            id = 136,
+            duration = 10,
+            max_stack = 1
         }
     } )
 
@@ -1299,6 +1307,7 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
                 if not pet.alive then return false, "requires a living pet" end
                 return buff.dispellable_enrage.up or buff.dispellable_magic.up, "requires enrage or magic debuff"
             end,
+
             handler = function ()
                 removeBuff( "dispellable_enrage" )
                 removeBuff( "dispellable_magic" )
@@ -1328,6 +1337,22 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
         },
 
 
+        -- Utility
+        mend_pet = {
+            id = 136,
+            cast = 0,
+            cooldown = 10,
+            gcd = "spell",
+
+            startsCombat = false,
+
+            usable = function ()
+                if not pet.alive then return false, "requires a living pet" end
+                return true
+            end,
+        }
+
+
     } )
 
 
@@ -1351,6 +1376,7 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
 
         package = "Beast Mastery",
     } )
+
 
     spec:RegisterSetting( "barbed_shot_grace_period", 0.5, {
         name = "|T2058007:0|t Barbed Shot Grace Period",

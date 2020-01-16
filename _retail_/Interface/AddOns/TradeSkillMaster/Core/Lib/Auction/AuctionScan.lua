@@ -14,6 +14,8 @@ local Database = TSM.Include("Util.Database")
 local TempTable = TSM.Include("Util.TempTable")
 local Vararg = TSM.Include("Util.Vararg")
 local Log = TSM.Include("Util.Log")
+local Event = TSM.Include("Util.Event")
+local Table = TSM.Include("Util.Table")
 local ItemString = TSM.Include("Util.ItemString")
 local Threading = TSM.Include("Service.Threading")
 local ItemInfo = TSM.Include("Service.ItemInfo")
@@ -23,6 +25,8 @@ local private = {
 	filterId = 1,
 	queryUtilContext = { self = nil, maxItemQuantity = nil, targetItem = nil },
 	lastSearchQuery83 = 0,
+	pendingUpdateItemKey = nil,
+	gotUpdateEvent = false,
 }
 -- some constants
 local SCAN_RESULT_DELAY = 0.1
@@ -203,7 +207,9 @@ function AuctionScan.AddItemFilterThreaded(self, itemFilter)
 			:SetClass(itemFilter:GetClass())
 			:SetSubClass(itemFilter:GetSubClass())
 			:SetInvType(itemFilter:GetInvSlotId())
+			:SetUncollected(itemFilter:GetUncollected())
 			:SetUsable(itemFilter:GetUsableOnly())
+			:SetUpgrades(itemFilter:GetUpgrades())
 			:SetUnlearned(itemFilter:GetUnlearned())
 			:SetCanLearn(itemFilter:GetCanLearn())
 			:SetExact(itemFilter:GetExactOnly())
@@ -392,7 +398,7 @@ function AuctionScan._GetAuctionRowFields83(self, isCommodity, itemKey, index, f
 		end
 	else
 		rawLink = resultInfo.itemLink
-		buyout = resultInfo.buyoutAmount or 0
+		buyout = (resultInfo.buyoutAmount or 0) * resultInfo.quantity
 		timeLeft = resultInfo.timeLeft + 1
 	end
 	itemLink = ItemInfo.GeneralizeLink(rawLink)
@@ -418,24 +424,28 @@ function AuctionScan._GetAuctionRowFields83(self, isCommodity, itemKey, index, f
 	rawName = ItemInfo.GetName(rawLink)
 	stackSize = resultInfo.quantity
 	itemBuyout = buyout / stackSize
-	isHighBidder = false -- FIXME: figure out what this should be (for non-commodities)
+	isHighBidder = resultInfo.bidder and resultInfo.bidder == UnitGUID("player") or false
 	minBid = resultInfo.minBid or buyout
-	minIncrement = 0 -- FIXME: figure out what this should be (for non-commodities)
 	bid = resultInfo.bidAmount or 0
-	displayedBid = bid == 0 and minBid or bid
+	displayedBid = minBid
+	minIncrement = 0 -- not used in 8.3
 	itemDisplayedBid = displayedBid / stackSize
 	seller = table.concat(resultInfo.owners, ",")
+	auctionId = resultInfo.auctionID
 	if isCommodity then
-		hash = strjoin("~", tostringall(itemKey.itemID, itemBuyout, seller))
-		hashNoSeller = strjoin("~", tostringall(itemKey.itemID, itemBuyout))
+		hash = strjoin("~", tostringall(itemKey.itemID, itemBuyout, auctionId, seller))
+		hashNoSeller = strjoin("~", tostringall(itemKey.itemID, itemBuyout, auctionId))
 	else
-		hash = strjoin("~", tostringall(itemKey.itemID, itemKey.itemLevel, itemKey.itemSuffix, itemKey.battlePetSpeciesID, rawLink, minBid, minIncrement, buyout, bid, stackSize, isHighBidder, seller))
-		hashNoSeller = strjoin("~", tostringall(itemKey.itemID, itemKey.itemLevel, itemKey.itemSuffix, itemKey.battlePetSpeciesID, rawLink, minBid, minIncrement, buyout, bid, stackSize, isHighBidder))
+		hash = strjoin("~", tostringall(itemKey.itemID, itemKey.itemLevel, itemKey.itemSuffix, itemKey.battlePetSpeciesID, rawLink, itemDisplayedBid, itemBuyout, bid, stackSize, isHighBidder, seller))
+		hashNoSeller = strjoin("~", tostringall(itemKey.itemID, itemKey.itemLevel, itemKey.itemSuffix, itemKey.battlePetSpeciesID, rawLink, itemDisplayedBid, itemBuyout, bid, stackSize, isHighBidder))
 	end
 	targetItem = filter and filter:_GetTargetItem() or itemString
 	targetItemRate = filter and filter:_GetTargetItemRate(itemString)
-	auctionId = resultInfo.auctionID
-	numOwnerItems = resultInfo.numOwnerItems or 0
+	if isCommodity then
+		numOwnerItems = resultInfo.numOwnerItems or 0
+	else
+		numOwnerItems = resultInfo.containsAccountItem and stackSize or 0
+	end
 	return rawName, rawLink, texture, stackSize, minBid, minIncrement, buyout, bid, isHighBidder,
 		seller, timeLeft, displayedBid, itemDisplayedBid, itemBuyout, itemLink,
 		itemString, hash, hashNoSeller, private.filterId, targetItem, targetItemRate, auctionId, numOwnerItems
@@ -600,55 +610,77 @@ function private.ScanAuctionPageThreaded(auctionScan, filter)
 		return true, numInsertedRows
 	else
 		local results = C_AuctionHouse.GetBrowseResults()
+		local origNumResults = #results
+		for i = #results, 1, -1 do
+			local itemKey = results[i].itemKey
+			local minPrice = results[i].minPrice
+			local totalQuantity = results[i].totalQuantity
+			local baseItemString = ItemString.GetBaseFromItemKey(itemKey)
+			if filter:_IsItemFiltered(baseItemString, nil, nil, nil, nil, totalQuantity, minPrice) or not filter:_ShouldScanItem(baseItemString, nil, minPrice) then
+				tremove(results, i)
+			else
+				local itemKeyInfo = C_AuctionHouse.GetItemKeyInfo(itemKey, true)
+				if not itemKeyInfo then
+					Threading.WaitForEvent("ITEM_KEY_ITEM_INFO_RECEIVED")
+					itemKeyInfo = C_AuctionHouse.GetItemKeyInfo(itemKey, true)
+				end
+				local itemLevel = nil
+				if not auctionScan._ignoreItemLevel then
+					itemLevel = itemKeyInfo.battlePetLink and ItemInfo.GetItemLevel(itemKeyInfo.battlePetLink) or itemKey.itemLevel
+					if itemLevel == 0 then
+						itemLevel = nil
+					end
+					if not itemLevel and not ItemString.HasNonBase(baseItemString) then
+						while not ItemInfo.GetItemLevel(baseItemString) do
+							Threading.Yield(true)
+						end
+						itemLevel = ItemInfo.GetItemLevel(baseItemString)
+					end
+				end
+				local itemString = nil
+				if itemKeyInfo.battlePetLink then
+					itemString = ItemString.Get(itemKeyInfo.battlePetLink)
+				elseif not ItemString.HasNonBase(baseItemString) then
+					itemString = baseItemString
+				end
+				local itemName = itemKeyInfo.itemName
+				local quality = itemKeyInfo.quality
+				assert(baseItemString and minPrice and itemName and quality and totalQuantity)
+				while not ItemInfo.GetMinLevel(baseItemString) do
+					Threading.Yield(true)
+				end
+				if filter:_IsItemFiltered(baseItemString, itemString, itemLevel, quality, itemName, totalQuantity, minPrice) or not filter:_ShouldScanItem(baseItemString, itemString, minPrice) then
+					tremove(results, i)
+				end
+			end
+			Threading.Yield()
+		end
+		local numRemoved = origNumResults - #results
+		if numRemoved > 0 then
+			Log.Info("Removed %d/%d results", numRemoved, origNumResults)
+		end
+
 		filter:_SetNumPages(#results)
 		local numInsertedRows = 0
 		for i = 1, #results do
 			local itemKey = results[i].itemKey
-			local minPrice = results[i].minPrice
-			local baseItemString = ItemString.GetBaseFromItemKey(itemKey)
-			if not filter:_IsItemFiltered(baseItemString, itemKey.itemLevel) and filter:_ShouldScanItem(baseItemString, minPrice) then
-				-- check if the item is a commodity or not
-				local isCommodity = ItemInfo.IsCommodity(itemKey.itemID)
-				while isCommodity == nil do
-					Threading.Yield(true)
-					isCommodity = ItemInfo.IsCommodity(itemKey.itemID)
-					if auctionScan:_IsCancelled() then
-						Log.Info("Stopping cancelled scan")
-						return false
-					end
-				end
 
-				-- send the query for this item
+			-- check if the item is a commodity or not
+			local isCommodity = ItemInfo.IsCommodity(itemKey.itemID)
+			while isCommodity == nil do
 				Threading.Yield(true)
-				if not C_AuctionHouse.HasSearchResults(itemKey) then
-					if not private.SendSearchQuery83(itemKey, auctionScan) then
-						return false
-					end
-					Threading.WaitForEvent(isCommodity and "COMMODITY_SEARCH_RESULTS_UPDATED" or "ITEM_SEARCH_RESULTS_UPDATED")
-				end
-
-				-- get all the search results
-				if isCommodity then
-					while not C_AuctionHouse.HasFullCommoditySearchResults(itemKey.itemID) do
-						Log.Info("Requesting more...")
-						C_AuctionHouse.RequestMoreCommoditySearchResults(itemKey.itemID)
-						Threading.WaitForEvent("COMMODITY_SEARCH_RESULTS_ADDED")
-					end
-				else
-					while not C_AuctionHouse.HasFullItemSearchResults(itemKey) do
-						Log.Info("Requesting more...")
-						C_AuctionHouse.RequestMoreItemSearchResults(itemKey)
-						Threading.WaitForEvent("ITEM_SEARCH_RESULTS_ADDED")
-					end
-				end
-
-				-- scan the results
-				local scanResult, scanNumInsertedRows = private.ProcessScanResultsThreaded(auctionScan, filter, isCommodity, itemKey)
-				if not scanResult then
+				isCommodity = ItemInfo.IsCommodity(itemKey.itemID)
+				if auctionScan:_IsCancelled() then
+					Log.Info("Stopping cancelled scan")
 					return false
 				end
-				numInsertedRows = numInsertedRows + scanNumInsertedRows
 			end
+
+			local success, scanNumInsertedRows = private.ScanItemKey83(auctionScan, filter, isCommodity, itemKey, false)
+			if not success then
+				return false
+			end
+			numInsertedRows = numInsertedRows + scanNumInsertedRows
 
 			-- update the "page"
 			filter:_SetPage(i)
@@ -657,6 +689,20 @@ function private.ScanAuctionPageThreaded(auctionScan, filter)
 		end
 		return true, numInsertedRows
 	end
+end
+
+function private.ScanItemKey83(auctionScan, filter, isCommodity, itemKey, sellQuery)
+	-- send the query for this item
+	if not private.SendSearchQuery83(itemKey, auctionScan, isCommodity, sellQuery) then
+		return false
+	end
+
+	-- scan the results
+	local scanResult, scanNumInsertedRows = private.ProcessScanResultsThreaded(auctionScan, filter, isCommodity, itemKey)
+	if not scanResult then
+		return false
+	end
+	return true, scanNumInsertedRows
 end
 
 function private.ProcessScanResultsThreaded(auctionScan, filter, isCommodity, itemKey)
@@ -888,14 +934,19 @@ function private.ScanQueryThreaded(auctionScan)
 		local filterSuccess = true
 		-- loop through each page of this filter and scan it
 		while hasMorePages and not auctionScan:_IsCancelled() do
-			-- query the AH
-			if not filter:_DoAuctionQueryThreaded() then
-				filterSuccess = false
-				break
-			end
-			-- we've made the query, now store the results
+			local scanSuccess, numInsertedRows = nil, nil
 			private.filterId = private.filterId + 1
-			local scanSuccess, numInsertedRows = private.ScanAuctionPageThreaded(auctionScan, filter)
+			if TSM.IsWow83() and #filter:GetItems() > 0 then
+				scanSuccess, numInsertedRows = private.DoItemScanThreaded(auctionScan, filter)
+			else
+				-- query the AH
+				if not filter:_DoAuctionQueryThreaded() then
+					filterSuccess = false
+					break
+				end
+				-- we've made the query, now store the results
+				scanSuccess, numInsertedRows = private.ScanAuctionPageThreaded(auctionScan, filter)
+			end
 			if not scanSuccess then
 				-- don't store results for a failed filter
 				Log.Err("Failed to scan filter")
@@ -922,6 +973,51 @@ function private.ScanQueryThreaded(auctionScan)
 	if not allSuccess then
 		Log.PrintUser(L["TSM failed to scan some auctions. Please rerun the scan."])
 	end
+end
+
+function private.DoItemScanThreaded(auctionScan, filter)
+	local itemKey = Threading.AcquireSafeTempTable()
+	itemKey.itemLevel = 0
+	itemKey.itemSuffix = 0
+	local numInsertedRows = 0
+	local items = filter:GetItems()
+	filter:_SetNumPages(#items)
+	for i, itemString in ipairs(items) do
+		local isPet = ItemString.IsPet(itemString)
+		local isCommodity = nil
+		if isPet then
+			isCommodity = false
+			itemKey.itemID = ItemString.ToId(ItemString.GetPetCageItemString())
+			itemKey.battlePetSpeciesID = ItemString.ToId(itemString)
+		else
+			isCommodity = ItemInfo.IsCommodity(itemString)
+			while isCommodity == nil do
+				Threading.Yield(true)
+				isCommodity = ItemInfo.IsCommodity(itemString)
+				if auctionScan:_IsCancelled() then
+					Log.Info("Stopping cancelled scan")
+					Threading.ReleaseSafeTempTable(itemKey)
+					return false
+				end
+			end
+			itemKey.itemID = ItemString.ToId(itemString)
+			itemKey.battlePetSpeciesID = 0
+		end
+
+		local scanSuccess, scanNumInsertedRows = private.ScanItemKey83(auctionScan, filter, isCommodity, itemKey, not isCommodity and not isPet)
+		if not scanSuccess then
+			Threading.ReleaseSafeTempTable(itemKey)
+			return false
+		end
+		numInsertedRows = numInsertedRows + scanNumInsertedRows
+
+		-- update the "page"
+		filter:_SetPage(i)
+		auctionScan:_SetPageProgress(filter:_GetPageProgress())
+		Threading.Yield()
+	end
+	Threading.ReleaseSafeTempTable(itemKey)
+	return true, numInsertedRows
 end
 
 function private.FindAuctionThreaded(auctionScan, row, noSeller)
@@ -1135,27 +1231,9 @@ function private.FindAuctionThreaded83(auctionScan, row, noSeller)
 	itemKey.itemSuffix = isCommodity and 0 or itemSuffix
 	itemKey.battlePetSpeciesID = isCommodity and 0 or battlePetSpeciesID
 	-- send the query for this item
-	if not C_AuctionHouse.HasSearchResults(itemKey) then
-		if not private.SendSearchQuery83(itemKey, auctionScan) then
-			Threading.ReleaseSafeTempTable(itemKey)
-			return nil
-		end
-		Threading.WaitForEvent(isCommodity and "COMMODITY_SEARCH_RESULTS_UPDATED" or "ITEM_SEARCH_RESULTS_UPDATED")
-	end
-
-	-- get all the search results
-	if isCommodity then
-		while not C_AuctionHouse.HasFullCommoditySearchResults(itemKey.itemID) do
-			Log.Info("Requesting more...")
-			C_AuctionHouse.RequestMoreCommoditySearchResults(itemKey.itemID)
-			Threading.WaitForEvent("COMMODITY_SEARCH_RESULTS_ADDED")
-		end
-	else
-		while not C_AuctionHouse.HasFullItemSearchResults(itemKey) do
-			Log.Info("Requesting more...")
-			C_AuctionHouse.RequestMoreItemSearchResults(itemKey)
-			Threading.WaitForEvent("ITEM_SEARCH_RESULTS_ADDED")
-		end
+	if not private.SendSearchQuery83(itemKey, auctionScan, isCommodity, false) then
+		Threading.ReleaseSafeTempTable(itemKey)
+		return nil
 	end
 
 	-- search the results for the auction
@@ -1202,11 +1280,72 @@ function private.ThrottleQuery83(auctionScan)
 	return true
 end
 
-function private.SendSearchQuery83(itemKey, auctionScan)
-	if not private.ThrottleQuery83(auctionScan) then
-		return false
+function private.SendSearchQuery83(itemKey, auctionScan, isCommodity, sellQuery)
+	-- send the query for this item
+	while true do
+		if auctionScan:_IsCancelled() then
+			Log.Info("Stopping cancelled scan")
+			return false
+		end
+		if private.ThrottleQuery83(auctionScan) then
+			private.pendingUpdateItemKey = itemKey
+			private.gotUpdateEvent = false
+			if C_AuctionHouse.HasSearchResults(itemKey) then
+				if isCommodity then
+					C_AuctionHouse.RefreshCommoditySearchResults(itemKey.itemID)
+				else
+					C_AuctionHouse.RefreshItemSearchResults(itemKey)
+				end
+			else
+				if sellQuery then
+					C_AuctionHouse.SendSellSearchQuery(itemKey, EMPTY_SORTS_TABLE, true)
+				else
+					C_AuctionHouse.SendSearchQuery(itemKey, EMPTY_SORTS_TABLE, true)
+				end
+			end
+			for _ = 1, 50 do
+				if private.gotUpdateEvent then
+					break
+				end
+				if auctionScan:_IsCancelled() then
+					Log.Info("Stopping cancelled scan")
+					return false
+				end
+				Threading.Sleep(0.1)
+			end
+			if private.gotUpdateEvent then
+				break
+			end
+			Log.Warn("Retrying search query which didn't result in an update event")
+		else
+			Threading.Sleep(0.5)
+			Log.Warn("Retrying throttled search query")
+		end
 	end
-	C_AuctionHouse.SendSearchQuery(itemKey, EMPTY_SORTS_TABLE, true)
+
+	-- get all the search results
+	if isCommodity then
+		while not C_AuctionHouse.HasFullCommoditySearchResults(itemKey.itemID) do
+			if auctionScan:_IsCancelled() then
+				Log.Info("Stopping cancelled scan")
+				return false
+			end
+			Log.Info("Requesting more...")
+			C_AuctionHouse.RequestMoreCommoditySearchResults(itemKey.itemID)
+			Threading.Sleep(0.5)
+		end
+	else
+		while not C_AuctionHouse.HasFullItemSearchResults(itemKey) do
+			if auctionScan:_IsCancelled() then
+				Log.Info("Stopping cancelled scan")
+				return false
+			end
+			Log.Info("Requesting more...")
+			C_AuctionHouse.RequestMoreItemSearchResults(itemKey)
+			Threading.Sleep(0.5)
+		end
+	end
+
 	return true
 end
 
@@ -1217,11 +1356,22 @@ end
 -- ============================================================================
 
 do
-	if TSM.IsWow83() then
+	if not TSM.IsWowClassic() then
+		Event.Register("COMMODITY_SEARCH_RESULTS_UPDATED", function(_, itemId)
+			if private.pendingUpdateItemKey and itemId == private.pendingUpdateItemKey.itemID then
+				private.gotUpdateEvent = true
+				private.pendingUpdateItemKey = nil
+			end
+		end)
+		Event.Register("ITEM_SEARCH_RESULTS_UPDATED", function(_, itemKey)
+			if private.pendingUpdateItemKey and Table.Equal(itemKey, private.pendingUpdateItemKey) then
+				private.gotUpdateEvent = true
+				private.pendingUpdateItemKey = nil
+			end
+		end)
 		local function UpdateLastSearchQueryTime()
 			private.lastSearchQuery83 = GetTime()
 		end
-		hooksecurefunc(C_AuctionHouse, "SendBrowseQuery", UpdateLastSearchQueryTime)
 		hooksecurefunc(C_AuctionHouse, "SendSearchQuery", UpdateLastSearchQueryTime)
 		hooksecurefunc(C_AuctionHouse, "SendSellSearchQuery", UpdateLastSearchQueryTime)
 	end

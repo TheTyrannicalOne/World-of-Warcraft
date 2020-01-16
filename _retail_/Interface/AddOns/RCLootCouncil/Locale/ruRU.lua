@@ -102,14 +102,12 @@ L["Auto Award"] = "Автоматическое Вручение"
 L["Auto Award to"] = "Автоматически Вручать"
 --[[Translation missing --]]
 --[[ L["Auto awarded 'item'"] = ""--]] 
---[[Translation missing --]]
---[[ L["Auto Close"] = ""--]] 
+L["Auto Close"] = "Автоматически закрывать"
 --[[Translation missing --]]
 --[[ L["Auto Enable"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Auto extracted from whisper"] = ""--]] 
---[[Translation missing --]]
---[[ L["Auto Open"] = ""--]] 
+L["Auto Open"] = "Автоматически открывать"
 --[[Translation missing --]]
 --[[ L["Auto Pass"] = ""--]] 
 --[[Translation missing --]]
@@ -154,12 +152,10 @@ L["Autopass"] = "Автопас"
 --[[ L["Autostart isn't supported when testing"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["award"] = ""--]] 
---[[Translation missing --]]
---[[ L["Award"] = ""--]] 
+L["Award"] = "Вручить"
 --[[Translation missing --]]
 --[[ L["Award Announcement"] = ""--]] 
---[[Translation missing --]]
---[[ L["Award for ..."] = ""--]] 
+L["Award for ..."] = "Вручить для..."
 L["Award later"] = "Наградить позже"
 --[[Translation missing --]]
 --[[ L["Award later isn't supported when testing."] = ""--]] 
@@ -253,10 +249,8 @@ L["Clear Loot History"] = "Очистить историю лута"
 --[[ L["clear_loot_history_desc"] = ""--]] 
 L["Click to add note to send to the council."] = "Нажмите что бы добавить записку для консула."
 L["Click to change your note."] = "Нажмите для изменения записки."
---[[Translation missing --]]
---[[ L["Click to expand/collapse more info"] = ""--]] 
---[[Translation missing --]]
---[[ L["Click to switch to 'item'"] = ""--]] 
+L["Click to expand/collapse more info"] = "Нажмите что бы развернуть/свернуть информацию"
+L["Click to switch to 'item'"] = "Нажмите чтобы переключиться на %s"
 L["config"] = "настройка"
 --[[Translation missing --]]
 --[[ L["confirm_award_later_text"] = ""--]] 
@@ -264,6 +258,8 @@ L["config"] = "настройка"
 --[[ L["confirm_usage_text"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Conqueror Token"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Corruption if awarded:"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Could not Auto Award i because the Loot Threshold is too high!"] = ""--]] 
 --[[Translation missing --]]
@@ -281,14 +277,12 @@ L["Data Received"] = "Данные получены"
 L["Date"] = "Дата"
 L["days and x months"] = "%s и %d месяцев"
 L["days, x months, y years"] = "%s, %d месяцев и %d лет"
---[[Translation missing --]]
---[[ L["Delete Skin"] = ""--]] 
+L["Delete Skin"] = "Удалить скин"
 --[[Translation missing --]]
 --[[ L["delete_skin_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Deselect responses to filter them"] = ""--]] 
---[[Translation missing --]]
---[[ L["Diff"] = ""--]] 
+L["Diff"] = "Илвл"
 --[[Translation missing --]]
 --[[ L["Discord friendly output."] = ""--]] 
 --[[Translation missing --]]
@@ -302,8 +296,7 @@ L["Do you want to keep %s for yourself?"] = "Вы хотите оставить 
 --[[ L["Dropped by:"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Edit Entry"] = ""--]] 
---[[Translation missing --]]
---[[ L["Enable Loot History"] = ""--]] 
+L["Enable Loot History"] = "Включить Историю Лута"
 --[[Translation missing --]]
 --[[ L["Enable Timeout"] = ""--]] 
 L["enable_loot_history_desc"] = "Включает ведение истории. RCLootCouncil не будет ничего записывать если отключено."
@@ -334,8 +327,7 @@ L["g1"] = "п1"
 L["g2"] = "п2"
 --[[Translation missing --]]
 --[[ L["Gave the item to you for distribution."] = ""--]] 
---[[Translation missing --]]
---[[ L["General options"] = ""--]] 
+L["General options"] = "Основные опции"
 L["Group Council Members"] = "Групповые Участники Консула"
 L["group_council_members_desc"] = "Используйте это, чтобы добавить членов совета с другого сервера или гильдии."
 L["group_council_members_head"] = "Добавить члена совета из текущей группы."
@@ -395,8 +387,7 @@ L["Log"] = "Лог"
 L["Loot announced, waiting for answer"] = "Добыча объявлена, ожидание ответа"
 --[[Translation missing --]]
 --[[ L["Loot Everything"] = ""--]] 
---[[Translation missing --]]
---[[ L["Loot History"] = ""--]] 
+L["Loot History"] = "История Лута"
 --[[Translation missing --]]
 --[[ L["Loot Status"] = ""--]] 
 L["Loot won:"] = "Предмет выиграл:"
@@ -446,8 +437,7 @@ L["Never use RCLootCouncil"] = "Никогда не использовать RCL
 --[[ L["new_ml_bagged_items_reminder"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["No (dis)enchanters found"] = ""--]] 
---[[Translation missing --]]
---[[ L["No entries in the Loot History"] = ""--]] 
+L["No entries in the Loot History"] = "Нет доступной информации в Истории Лута"
 --[[Translation missing --]]
 --[[ L["No entry in the award later list is removed."] = ""--]] 
 --[[Translation missing --]]
@@ -497,8 +487,7 @@ L["Offspec/Greed"] = "Оффспек/Не откажусь"
 --[[Translation missing --]]
 --[[ L["onlyUseInRaids_desc"] = ""--]] 
 L["open"] = "открыть"
---[[Translation missing --]]
---[[ L["Open the Loot History"] = ""--]] 
+L["Open the Loot History"] = "Открыть Историю Лута"
 --[[Translation missing --]]
 --[[ L["open_the_loot_history_desc"] = ""--]] 
 --[[Translation missing --]]
@@ -540,8 +529,7 @@ L["open"] = "открыть"
 --[[Translation missing --]]
 --[[ L["opt_rejectTrade_Name"] = ""--]] 
 L["Original Owner"] = "Изначальный владелец"
---[[Translation missing --]]
---[[ L["Out of instance"] = ""--]] 
+L["Out of instance"] = "Вне подземелья"
 --[[Translation missing --]]
 --[[ L["Patch"] = ""--]] 
 --[[Translation missing --]]
@@ -584,8 +572,7 @@ L["Original Owner"] = "Изначальный владелец"
 --[[ L["RCLootCouncil - Synchronizer"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RCLootCouncil Loot Frame"] = ""--]] 
---[[Translation missing --]]
---[[ L["RCLootCouncil Loot History"] = ""--]] 
+L["RCLootCouncil Loot History"] = "История Лута RCLootCouncil"
 --[[Translation missing --]]
 --[[ L["RCLootCouncil Session Setup"] = ""--]] 
 --[[Translation missing --]]
@@ -602,14 +589,12 @@ L["Reason"] = "Причина"
 --[[Translation missing --]]
 --[[ L["reason_desc"] = ""--]] 
 L["Remove All"] = "Убрать всё"
---[[Translation missing --]]
---[[ L["Remove from consideration"] = ""--]] 
+L["Remove from consideration"] = "Убрать с голосования"
 --[[Translation missing --]]
 --[[ L["remove_all_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Requested rolls for 'item' from 'target'"] = ""--]] 
---[[Translation missing --]]
---[[ L["Reset Skin"] = ""--]] 
+L["Reset Skin"] = "Сбросить скин"
 --[[Translation missing --]]
 --[[ L["Reset skins"] = ""--]] 
 --[[Translation missing --]]
@@ -626,10 +611,8 @@ L["Remove All"] = "Убрать всё"
 --[[ L["Response"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Response color"] = ""--]] 
---[[Translation missing --]]
---[[ L["Response isn't available. Please upgrade RCLootCouncil."] = ""--]] 
---[[Translation missing --]]
---[[ L["Response options"] = ""--]] 
+L["Response isn't available. Please upgrade RCLootCouncil."] = "Ответ не доступен. Пожалуйста обновите RCLootCouncil."
+L["Response options"] = "Опции ответов"
 --[[Translation missing --]]
 --[[ L["Response to 'item'"] = ""--]] 
 --[[Translation missing --]]
@@ -642,8 +625,7 @@ L["Remove All"] = "Убрать всё"
 --[[ L["Responses from Chat"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["responses_from_chat_desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["Save Skin"] = ""--]] 
+L["Save Skin"] = "Сохранить скин"
 --[[Translation missing --]]
 --[[ L["save_skin_desc"] = ""--]] 
 L["Self Vote"] = "Своё голосование"
@@ -651,8 +633,7 @@ L["Self Vote"] = "Своё голосование"
 --[[ L["self_vote_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Send History"] = ""--]] 
---[[Translation missing --]]
---[[ L["Send to Guild"] = ""--]] 
+L["Send to Guild"] = "Отправить в Гильдию"
 --[[Translation missing --]]
 --[[ L["send_history_desc"] = ""--]] 
 --[[Translation missing --]]
@@ -701,6 +682,8 @@ L["Something went wrong :'("] = "Что-то пошло не так :'("
 --[[Translation missing --]]
 --[[ L["Standard .csv output."] = ""--]] 
 --[[Translation missing --]]
+--[[ L["Standard JSON output."] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Status texts"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Store in bag and award later"] = ""--]] 
@@ -728,8 +711,7 @@ L["Text for reason #i"] = "Текст причины #"
 --[[ L["The award later list has been cleared."] = ""--]] 
 --[[Translation missing --]]
 --[[ L["The award later list is empty."] = ""--]] 
---[[Translation missing --]]
---[[ L["The following council members have voted"] = ""--]] 
+L["The following council members have voted"] = "Данные участники консула проголосовали"
 --[[Translation missing --]]
 --[[ L["The following entries are removed from the award later list:"] = ""--]] 
 --[[Translation missing --]]
@@ -805,8 +787,7 @@ L["Unknown date"] = "Неизвестная дата"
 --[[ L["Unknown/Chest"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Unlooted"] = ""--]] 
---[[Translation missing --]]
---[[ L["Unvote"] = ""--]] 
+L["Unvote"] = "Снять"
 L["Upper Quality Limit"] = "Лимит улучшения качества"
 --[[Translation missing --]]
 --[[ L["upper_quality_limit_desc"] = ""--]] 

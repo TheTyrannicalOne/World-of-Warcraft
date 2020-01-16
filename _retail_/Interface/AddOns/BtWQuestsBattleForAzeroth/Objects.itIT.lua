@@ -27,9 +27,6 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [273854] = {
         name = "Zaino",
     },
-    [276187] = {
-        name = "Junji",
-    },
     [276251] = {
         name = "Inventario degli Scavi",
     },

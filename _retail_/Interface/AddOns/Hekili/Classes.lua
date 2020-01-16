@@ -56,7 +56,7 @@ local specTemplate = {
 
     -- Toggles
     custom1Name = "Custom 1",
-    custom2Name = "Custom 2"
+    custom2Name = "Custom 2",
 }
 ns.specTemplate = specTemplate -- for options.
 
@@ -224,6 +224,29 @@ local HekiliSpecMixin = {
                         if GetSpecializationInfo( GetSpecialization() or 0 ) == self.id then
                             -- Copy to class table as well.
                             class.auras[ a.name ] = a
+                        end
+                        
+                        if self.pendingItemSpells[ a.name ] then
+                            local items = self.pendingItemSpells[ a.name ]
+    
+                            if type( items ) == 'table' then
+                                for i, item in ipairs( items ) do
+                                    local ability = self.abilities[ item ]
+                                    ability.itemSpellKey = a.key .. "_" .. ability.itemSpellID
+    
+                                    self.abilities[ ability.itemSpellKey ] = a
+                                    class.abilities[ ability.itemSpellKey ] = a
+                                end
+                            else
+                                local ability = self.abilities[ items ]
+                                ability.itemSpellKey = a.key .. "_" .. ability.itemSpellID
+    
+                                self.abilities[ ability.itemSpellKey ] = a
+                                class.abilities[ ability.itemSpellKey ] = a
+                            end
+    
+                            self.pendingItemSpells[ a.name ] = nil
+                            self.itemPended = nil
                         end
                     end )
                 end
@@ -422,7 +445,7 @@ local HekiliSpecMixin = {
                     return
                 end
 
-                local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( item )
+                local name, link, _, _, _, _, _, _, slot, texture = GetItemInfo( item )
 
                 if name then
                     a.name = name
@@ -438,6 +461,38 @@ local HekiliSpecMixin = {
                     self.abilities[ a.name ] = self.abilities[ a.name ] or a
                     self.abilities[ a.link ] = self.abilities[ a.link ] or a
                     self.abilities[ a.id ] = self.abilities[ a.link ] or a
+
+                    a.itemLoaded = GetTime()
+
+                    if a.item and a.item ~= 158075 then
+                        a.itemSpellName, a.itemSpellID = GetItemSpell( a.item )
+
+                        if a.itemSpellName == a.name then                    
+                            a.itemSpellKey = a.key .. "_" .. a.itemSpellID
+                        elseif a.itemSpellName then
+                            local itemAura = self.auras[ a.itemSpellName ]
+
+                            if itemAura then
+                                a.itemSpellKey = itemAura.key .. "_" .. a.itemSpellID
+                                self.abilities[ a.itemSpellKey ] = a
+                            else
+                                if self.pendingItemSpells[ a.itemSpellName ] then
+                                    if type( self.pendingItemSpells[ a.itemSpellName ] ) == 'table' then
+                                        table.insert( self.pendingItemSpells[ a.itemSpellName ], ability )
+                                    else
+                                        local first = self.pendingItemSpells[ a.itemSpellName ]
+                                        self.pendingItemSpells[ a.itemSpellName ] = {
+                                            first,
+                                            ability
+                                        }
+                                    end
+                                else
+                                    self.pendingItemSpells[ a.itemSpellName ] = ability
+                                    a.itemPended = GetTime()
+                                end
+                            end
+                        end
+                    end
 
                     if not a.unlisted then
                         class.abilityList[ ability ] = "|T" .. a.texture .. ":0|t " .. link
@@ -743,6 +798,7 @@ function Hekili:NewSpecialization( specID, isRanged )
         abilities = {},
         pseudoAbilities = 0,
         itemAbilities = 0,
+        pendingItemSpells = {},
 
         pets = {},
         totems = {},
@@ -1128,12 +1184,12 @@ all:RegisterAuras( {
             m.applied = 0
             m.caster = "nobody"
         end,
+    },
 
-        repeat_performance = {
-            id = 304409,
-            duration = 30,
-            max_stack = 1,
-        }
+    repeat_performance = {
+        id = 304409,
+        duration = 30,
+        max_stack = 1,
     },
 
     -- Why do we have this, again?
@@ -1189,6 +1245,7 @@ all:RegisterAuras( {
         id = 273104,
         duration = 8,
     },
+
 
     out_of_range = {
         generate = function ()
@@ -1597,6 +1654,36 @@ all:RegisterAuras( {
 all:SetPotion( "prolonged_power" )
 
 
+local gotn_classes = {
+    WARRIOR = 28880,
+    MONK = 121093,
+    DEATHKNIGHT = 59545,
+    SHAMAN = 59547,
+    HUNTER = 59543,
+    PRIEST = 59544,
+    MAGE = 59548,
+    PALADIN = 59542
+}
+
+all:RegisterAura( "gift_of_the_naaru", {
+    id = gotn_classes[ UnitClassBase( "player" ) or "WARRIOR" ],
+    duration = 5,
+    max_stack = 1,
+    copy = { 28800, 121093, 59545, 59547, 59543, 59544, 59548, 59542 }
+} )
+
+all:RegisterAbility( "gift_of_the_naaru", {
+    id = 59544,
+    cast = 0,
+    cooldown = 180,
+    gcd = "off",
+
+    handler = function ()
+        applyBuff( "gift_of_the_naaru" )
+    end,
+} )
+
+
 all:RegisterAbilities( {
     global_cooldown = {
         id = 61304,
@@ -1648,7 +1735,7 @@ all:RegisterAbilities( {
         handler = function ()
             applyBuff( 'berserking' )
         end,
-    }
+    },
 } )
 
 
@@ -1820,6 +1907,32 @@ all:RegisterAbilities( {
             if not potion or GetItemCount( potion.item ) == 0 then return false end
 
             return true
+        end,
+    },
+
+    healthstone = {
+        name = "|cff00ccff[Healthstone]|r",
+        cast = 0,
+        cooldown = function () return time > 0 and 3600 or 60 end,
+        gcd = "off",
+
+        startsCombat = false,
+        texture = 538745,
+
+        usable = function ()
+            if GetItemCount( 5512 ) == 0 then return false, "requires healthstone in bags"
+            elseif not IsUsableItem( 5512 ) then return false, "healthstone on CD"
+            elseif health.current >= health.max then return false, "must be damaged" end
+            return true
+        end,
+
+        readyTime = function ()
+            local start, duration = GetItemCooldown( 5512 )            
+            return max( 0, start + duration - query_time )
+        end,
+
+        handler = function ()
+            gain( 0.25 * health.max, "health" )
         end,
     },
 
@@ -2056,7 +2169,7 @@ all:RegisterAbility( "azsharas_font_of_power", {
         applyBuff( "latent_arcana" )
     end,
 
-    copy = "latent_arcana"
+    copy = { "latent_arcana" }
 } )
 
 all:RegisterAura( "latent_arcana", {
@@ -4803,6 +4916,7 @@ end
 } )
 
 
+-- LibItemBuffs is out of date.
 -- Initialize trinket stuff.
 do
     local LIB = LibStub( "LibItemBuffs-1.0", true )
@@ -7882,6 +7996,121 @@ all:RegisterPowers( {
     }
 } )
 
+
+-- 8.3 Essences
+-- Breath of the Dying
+all:RegisterAbility( "reaping_flames", {
+    id = 310690,
+    cast = 0,
+    cooldown = function () return 45 - ( target.health_pct < ( essence.breath_of_the_dying.rank > 1 and 80 or 20 ) and 30 or 0 ) end,
+
+    startsCombat = true,
+    toggle = "essences",
+    essence = true,
+} )
+
+
+-- Spark of Inspiration
+all:RegisterAbility( "moment_of_glory", {
+    id = 311203,
+    cast = 1.5,
+    cooldown = 60,
+
+    startsCombat = false,
+    toggle = "essences",
+    essence = true,
+
+    handler = function ()
+        applyBuff( "moment_of_glory" )
+    end,
+} )
+
+all:RegisterAura( "moment_of_glory", {
+    id = 311203,
+    duration = function () return essence.spark_of_inspiration.rank > 1 and 20 or 10 end,
+    max_stack = 1,
+} )
+
+
+-- The Formless Void
+all:RegisterAbility( "replica_of_knowledge", {
+    id = 312725,
+    cast = 1.5,
+    cooldown = 15,
+
+    startsCombat = false,
+    toggle = "essences",
+    essence = true,
+} )
+
+all:RegisterAura( "symbiotic_presence", {
+    id = 312915,
+    duration = 20,
+    max_stack = 1,
+    copy = 313918,
+} )
+
+
+-- Touch of the Everlasting
+all:RegisterAuras( {
+    touch_of_the_everlasting = {
+        id = 295048,
+        duration = 3,
+        max_stack = 1
+    },
+
+    touch_of_the_everlasting_icd = {
+        id = 295047,
+        duration = 600,
+        max_stack = 1
+    },
+
+    will_to_survive =  {
+        id = 295343,
+        duration = 15,
+        max_stack = 1
+    },
+    
+    will_to_survive_am = {
+        id = 312922,
+        duration = 15,
+        max_stack = 1,
+    },
+
+    will_to_survive_icd = {
+        id = 295339,
+        duration = function () return essence.touch_of_the_everlasting.rank > 1 and 60 or 90 end,
+        max_stack = 1
+    },
+} )
+
+
+-- Strength of the Warden
+all:RegisterAbility( "vigilant_protector", {
+    id = 310592,
+    cast = 0,
+    cooldown = 120,
+    
+    startsCombat = true,
+    toggle = "essences",
+    essence = true,
+
+    function ()
+        applyDebuff( "target", "vigilant_protector" )
+    end,
+} )
+
+all:RegisterAura( "vigilant_protector", {
+    id = 310592,
+    duration = 6,
+    max_stack = 1
+} )
+
+all:RegisterAura( "endurance", {
+    id = 312107,
+    duration = 3600,
+    max_stack = 1,
+} )
 
 
 -- DPS Essences

@@ -3939,6 +3939,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [133523] = {
+        name = "Ji Firepaw",
+        locations = {
+            [85] = {
+                {
+                    x = 0.377747,
+                    y = 0.811661,
+                },
+            },
+        },
+    },
     [133536] = {
         name = "Grix \"Ironfists\" Barlow",
         locations = {
@@ -4376,17 +4387,6 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.444,
                     y = 0.555,
-                },
-            },
-        },
-    },
-    [134711] = {
-        name = "Lady Sylvanas Windrunner",
-        locations = {
-            [85] = {
-                {
-                    x = 0.483323,
-                    y = 0.71148,
                 },
             },
         },
@@ -6834,6 +6834,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [145416] = {
+        name = "Kiro",
+        locations = {
+            [85] = {
+                {
+                    x = 0.488908,
+                    y = 0.72749,
+                },
+            },
+        },
+    },
     [145422] = {
         name = "Rexxar",
         locations = {
@@ -6852,6 +6863,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.488627,
                     y = 0.250326,
+                },
+            },
+        },
+    },
+    [145424] = {
+        name = "Baine Bloodhoof",
+        locations = {
+            [85] = {
+                {
+                    x = 0.483009,
+                    y = 0.710423,
                 },
             },
         },
@@ -6911,6 +6933,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [145641] = {
+        name = "Kiro",
+        locations = {
+            [241] = {
+                {
+                    x = 0.4681,
+                    y = 0.662277,
+                },
+            },
+        },
+    },
     [145751] = {
         name = "Trade Prince Gallywix",
         locations = {
@@ -6951,6 +6984,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.632196,
                     y = 0.333921,
+                },
+            },
+        },
+    },
+    [145980] = {
+        name = "Nisha",
+        locations = {
+            [862] = {
+                {
+                    x = 0.748591,
+                    y = 0.630293,
                 },
             },
         },
@@ -7109,6 +7153,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [146261] = {
+        name = "Kiro",
+        locations = {
+            [85] = {
+                {
+                    x = 0.490194,
+                    y = 0.73687,
+                },
+            },
+        },
+    },
+    [146264] = {
+        name = "Meerah",
+        locations = {
+            [680] = {
+                {
+                    x = 0.589345,
+                    y = 0.550811,
+                },
+            },
+        },
+    },
     [146290] = {
         name = "Spirit of Vol'jin",
         locations = {
@@ -7116,6 +7182,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.459875,
                     y = 0.159819,
+                },
+            },
+        },
+    },
+    [146301] = {
+        name = "Nomi",
+        locations = {
+            [680] = {
+                {
+                    x = 0.605917,
+                    y = 0.562196,
                 },
             },
         },
@@ -7405,6 +7482,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.882067,
                     y = 0.507495,
+                },
+            },
+        },
+    },
+    [147145] = {
+        name = "Nathanos Blightcaller",
+        locations = {
+            [863] = {
+                {
+                    x = 0.503383,
+                    y = 0.78408,
                 },
             },
         },
@@ -7910,6 +7998,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [150106] = {
+        name = "Goldrinn",
+        locations = {
+            [47] = {
+                {
+                    x = 0.465609,
+                    y = 0.364926,
+                },
+            },
+        },
+    },
+    [150115] = {
+        name = "Princess Tess Greymane",
+        locations = {
+            [47] = {
+                {
+                    x = 0.463311,
+                    y = 0.370708,
+                },
+            },
+        },
+    },
     [150145] = {
         name = "Gila Crosswires",
         locations = {
@@ -7939,6 +8049,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.419691,
                     y = 0.806954,
+                },
+            },
+        },
+    },
+    [150200] = {
+        name = "Courier Claridge",
+        locations = {
+            [84] = {
+                {
+                    x = 0.54666,
+                    y = 0.185368,
                 },
             },
         },
@@ -8529,6 +8650,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [151761] = {
+        name = "Vassandra Stormclaw",
+        locations = {
+            [47] = {
+                {
+                    x = 0.1809,
+                    y = 0.572281,
+                },
+            },
+        },
+    },
+    [151784] = {
+        name = "Mia Greymane",
+        locations = {
+            [84] = {
+                {
+                    x = 0.823534,
+                    y = 0.277641,
+                },
+            },
+        },
+    },
     [151825] = {
         name = "Merithra of the Dream",
         locations = {
@@ -8580,17 +8723,6 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.712779,
                     y = 0.358607,
-                },
-            },
-        },
-    },
-    [151964] = {
-        name = "Spiritwalker Ebonhorn",
-        locations = {
-            [1473] = {
-                {
-                    x = 0.46257,
-                    y = 0.672501,
                 },
             },
         },
@@ -9223,35 +9355,24 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [154464] = {
-        name = "Earthen Guardian",
+    [154418] = {
+        name = "Ra-den",
         locations = {
-            [1161] = {
+            [1530] = {
                 {
-                    x = 0.750472,
-                    y = 0.149429,
+                    x = 0.453301,
+                    y = 0.743276,
                 },
             },
         },
     },
-    [154465] = {
-        name = "Earthen Guardian",
+    [154444] = {
+        name = "Stormspeaker Qian",
         locations = {
-            [1165] = {
+            [1530] = {
                 {
-                    x = 0.509935,
-                    y = 0.888756,
-                },
-            },
-        },
-    },
-    [154500] = {
-        name = "Left",
-        locations = {
-            [433] = {
-                {
-                    x = 0.545152,
-                    y = 0.724853,
+                    x = 0.447461,
+                    y = 0.738917,
                 },
             },
         },
@@ -9285,6 +9406,28 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.761511,
                     y = 0.457873,
+                },
+            },
+        },
+    },
+    [154532] = {
+        name = "Magni Bronzebeard",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.698572,
+                    y = 0.521884,
+                },
+            },
+        },
+    },
+    [154533] = {
+        name = "Magni Bronzebeard",
+        locations = {
+            [1542] = {
+                {
+                    x = 0.470989,
+                    y = 0.444849,
                 },
             },
         },
@@ -9358,24 +9501,13 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [154870] = {
-        name = "Slain Blacktalon Lookout",
+    [154958] = {
+        name = "Laborer Mitchell",
         locations = {
-            [42] = {
+            [1527] = {
                 {
-                    x = 0.469919,
-                    y = 0.692179,
-                },
-            },
-        },
-    },
-    [154874] = {
-        name = "Blacktalon Watcher",
-        locations = {
-            [13] = {
-                {
-                    x = 0.477729,
-                    y = 0.687693,
+                    x = 0.408074,
+                    y = 0.385418,
                 },
             },
         },
@@ -9391,13 +9523,24 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [155191] = {
-        name = "Potion of Mental Clarity",
+    [155095] = {
+        name = "King Phaoris",
         locations = {
-            [46] = {
+            [1527] = {
                 {
-                    x = 0.694541,
-                    y = 0.165048,
+                    x = 0.549027,
+                    y = 0.327427,
+                },
+            },
+        },
+    },
+    [155102] = {
+        name = "High Explorer Dellorah",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.549593,
+                    y = 0.329562,
                 },
             },
         },
@@ -9413,6 +9556,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [155336] = {
+        name = "Mogu Warrior",
+        locations = {
+            [379] = {
+                {
+                    x = 0.596127,
+                    y = 0.391963,
+                },
+            },
+        },
+    },
     [155482] = {
         name = "Shandris Feathermoon",
         locations = {
@@ -9420,6 +9574,61 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.489212,
                     y = 0.868744,
+                },
+            },
+        },
+    },
+    [155487] = {
+        name = "Taoshi",
+        locations = {
+            [390] = {
+                {
+                    x = 0.139049,
+                    y = 0.772144,
+                },
+            },
+        },
+    },
+    [155496] = {
+        name = "Wrathion",
+        locations = {
+            [1473] = {
+                {
+                    x = 0.461386,
+                    y = 0.640277,
+                },
+            },
+        },
+    },
+    [155562] = {
+        name = "Taoshi",
+        locations = {
+            [422] = {
+                {
+                    x = 0.454884,
+                    y = 0.191821,
+                },
+            },
+        },
+    },
+    [155582] = {
+        name = "Taoshi",
+        locations = {
+            [422] = {
+                {
+                    x = 0.45389,
+                    y = 0.164803,
+                },
+            },
+        },
+    },
+    [155707] = {
+        name = "Taoshi",
+        locations = {
+            [422] = {
+                {
+                    x = 0.532168,
+                    y = 0.395887,
                 },
             },
         },
@@ -9468,6 +9677,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [156003] = {
+        name = "Lorewalker Cho",
+        locations = {
+            [1530] = {
+                {
+                    x = 0.838042,
+                    y = 0.271636,
+                },
+            },
+        },
+    },
     [156124] = {
         name = "Eitrigg",
         locations = {
@@ -9475,6 +9695,61 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.742087,
                     y = 0.460827,
+                },
+            },
+        },
+    },
+    [156297] = {
+        name = "Chen Stormstout",
+        locations = {
+            [1530] = {
+                {
+                    x = 0.439455,
+                    y = 0.049852,
+                },
+            },
+        },
+    },
+    [156358] = {
+        name = "Izzy",
+        locations = {
+            [85] = {
+                {
+                    x = 0.395034,
+                    y = 0.802805,
+                },
+            },
+        },
+    },
+    [156390] = {
+        name = "Chen Stormstout",
+        locations = {
+            [379] = {
+                {
+                    x = 0.599724,
+                    y = 0.755713,
+                },
+            },
+        },
+    },
+    [156391] = {
+        name = "Li Li Stormstout",
+        locations = {
+            [379] = {
+                {
+                    x = 0.600347,
+                    y = 0.756365,
+                },
+            },
+        },
+    },
+    [156396] = {
+        name = "Sassy Hardwrench",
+        locations = {
+            [210] = {
+                {
+                    x = 0.346117,
+                    y = 0.285917,
                 },
             },
         },
@@ -9511,5 +9786,239 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
+    },
+    [156520] = {
+        name = "Hobart Grapplehammer",
+        locations = {
+            [1532] = {
+                {
+                    x = 0.535748,
+                    y = 0.619633,
+                },
+            },
+        },
+    },
+    [156542] = {
+        name = "Crank Greasefuse",
+        locations = {
+            [1532] = {
+                {
+                    x = 0.560867,
+                    y = 0.781979,
+                },
+            },
+        },
+    },
+    [156937] = {
+        name = "Chen Stormstout",
+        locations = {
+            [379] = {
+                {
+                    x = 0.554723,
+                    y = 0.911066,
+                },
+            },
+        },
+    },
+    [156938] = {
+        name = "Li Li Stormstout",
+        locations = {
+            [379] = {
+                {
+                    x = 0.555377,
+                    y = 0.911099,
+                },
+            },
+        },
+    },
+    [157180] = {
+        name = "Abandoned Stormstout Kegs",
+        locations = {
+            [379] = {
+                {
+                    x = 0.585258,
+                    y = 0.839954,
+                },
+            },
+        },
+    },
+    [157491] = {
+        name = "Hobart Grapplehammer",
+        locations = {
+            [1531] = {
+                {
+                    x = 0.478496,
+                    y = 0.505555,
+                },
+            },
+        },
+    },
+    [157668] = {
+        name = "Meerah",
+        locations = {
+            [680] = {
+                {
+                    x = 0.587951,
+                    y = 0.555316,
+                },
+            },
+        },
+    },
+    [157997] = {
+        name = "Kelsey Steelspark",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.36888,
+                    y = 0.625543,
+                },
+            },
+        },
+    },
+    [158145] = {
+        name = "Prince Erazmin",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.730334,
+                    y = 0.334282,
+                },
+            },
+        },
+    },
+    [158672] = {
+        name = "Nisha",
+        locations = {
+            [862] = {
+                {
+                    x = 0.77185,
+                    y = 0.653942,
+                },
+            },
+        },
+    },
+    [159544] = {
+        name = "Arik Scorpidsting",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.401316,
+                    y = 0.213163,
+                },
+            },
+        },
+    },
+    [159560] = {
+        name = "Outrider Lashan",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.399917,
+                    y = 0.452635,
+                },
+            },
+        },
+    },
+    [159587] = {
+        name = "Gelbin Mekkatorque",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.730698,
+                    y = 0.335949,
+                },
+            },
+        },
+    },
+    [159682] = {
+        name = "Tracker Samara",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.24498,
+                    y = 0.552829,
+                },
+            },
+        },
+    },
+    [159820] = {
+        name = "Mender Dyrin",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.279474,
+                    y = 0.634481,
+                },
+            },
+        },
+    },
+    [159920] = {
+        name = "Zahra Sandstalker",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.424403,
+                    y = 0.559451,
+                },
+            },
+        },
+    },
+    [160101] = {
+        name = "Kelsey Steelspark",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.73132,
+                    y = 0.169306,
+                },
+            },
+        },
+    },
+    [160232] = {
+        name = "Christy Punchcog",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.732,
+                    y = 0.334763,
+                },
+            },
+        },
+    },
+    [161031] = {
+        name = "Captain Hadan",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.716553,
+                    y = 0.520153,
+                },
+            },
+        },
+    },
+    [161458] = {
+        name = "Valeera Sanguinar",
+        locations = {
+            [862] = {
+                {
+                    x = 0.578649,
+                    y = 0.64502,
+                },
+            },
+        },
+    },
+    [161738] = {
+        name = "H'partho Ardoros",
+        locations = {
+            [1527] = {
+                {
+                    x = 0.279891,
+                    y = 0.633837,
+                },
+            },
+        },
+    },
+    [161805] = {
+        name = "Magni Bronzebeard",
     },
 })

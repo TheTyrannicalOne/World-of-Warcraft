@@ -50940,13 +50940,13 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [53850] = {
+    [53851] = {
         name = "Our War Continues",
         requiredLevel = 120,
         maxLevel = 120,
         source = {
             type = "npc",
-            id = 134711,
+            id = 135691,
         },
         rewards = {
             {
@@ -51100,6 +51100,21 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [53870] = {
+        name = "Guests at Grommash Hold",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 133523,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
     [53879] = {
         name = "Cleaning Out the Estate",
         requiredLevel = 120,
@@ -51220,6 +51235,119 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [53889] = {
+        name = "A Declaration of Intent",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145416,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [53890] = {
+        name = "New Allies, New Problems",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145416,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [53891] = {
+        name = "No Problem Too Small",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145416,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [53892] = {
+        name = "Where Are the Workers?",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145641,
+            locations = {
+                [241] = {
+                    {
+                        x = 0.441098,
+                        y = 0.734722,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [53893] = {
+        name = "A Little Goodwill",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145641,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [53894] = {
+        name = "Worthwhile Repairs",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145641,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [53895] = {
+        name = "Peon Promotions!",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145641,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
     [53896] = {
         name = "Stand Fast",
         requiredLevel = 120,
@@ -51237,6 +51365,194 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "currency",
                 id = 1553,
                 amount = 500,
+            },
+        },
+    },
+    [53897] = {
+        name = "A Party in Your Honor",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145641,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [53898] = {
+        name = "Strength and Honor",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145641,
+            locations = {
+                [241] = {
+                    {
+                        x = 0.45042,
+                        y = 0.762494,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [53899] = {
+        name = "On the Outskirts",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146261,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [53900] = {
+        name = "We'll Use Their Weapons",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145980,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [53901] = {
+        name = "Explosions Always Work",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145980,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [53902] = {
+        name = "Taking Out the Tidecaller",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145980,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [53903] = {
+        name = "Meet with Meerah",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146261,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [53904] = {
+        name = "The Vintner's Assistants",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146264,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [53905] = {
+        name = "Playing to Their Strengths",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146264,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [53906] = {
+        name = "Fermented for the Horde",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146301,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 292500,
+            },
+        },
+    },
+    [53907] = {
+        name = "Sip and Savor",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146301,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [53908] = {
+        name = "Awaiting Our Arrival",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 157668,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
             },
         },
     },
@@ -52012,6 +52328,44 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [54026] = {
+        name = "Job's Done",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145641,
+            locations = {
+                [241] = {
+                    {
+                        x = 0.45042,
+                        y = 0.762494,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54027] = {
+        name = "Threat Contained",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 158672,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
     [54028] = {
         name = "Mech versus Airship",
         requiredLevel = 120,
@@ -52089,6 +52443,21 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 117000,
+            },
+        },
+    },
+    [54036] = {
+        name = "A Particular Process",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 157668,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
             },
         },
     },
@@ -53442,8 +53811,38 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [54208] = {
+        name = "Minesweeper",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 147145,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
     [54211] = {
         name = "Putting the Gob in Gob Squad",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 147155,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54212] = {
+        name = "Re-rebuilding the A.F.M.O.D.",
         requiredLevel = 120,
         maxLevel = 120,
         source = {
@@ -55123,6 +55522,21 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [54961] = {
+        name = "Righting Wrongs",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150433,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
     [54964] = {
         name = "A One-Way Ticket to the Heart",
         requiredLevel = 120,
@@ -55234,6 +55648,134 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [54976] = {
+        name = "The Shadow of Gilneas",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150200,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54977] = {
+        name = "Into Duskwood",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 151784,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54980] = {
+        name = "Bane of the Nightbane",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 151761,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [54981] = {
+        name = "Cry to the Moon",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 151761,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54982] = {
+        name = "The Spirit of the Hunter",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 151761,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [54983] = {
+        name = "Waking a Dreamer",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 151761,
+            locations = {
+                [47] = {
+                    {
+                        x = 0.463824,
+                        y = 0.368984,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54984] = {
+        name = "Let Sleeping Wolves Lie",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150106,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [54990] = {
+        name = "The New Guard",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150115,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
     [54992] = {
         name = "The Start of Something Bigger",
         requiredLevel = 120,
@@ -55332,6 +55874,21 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 468000,
+            },
+        },
+    },
+    [55034] = {
+        name = "Under False Colors",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150311,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
             },
         },
     },
@@ -55505,6 +56062,21 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "currency",
                 id = 1553,
                 amount = 750,
+            },
+        },
+    },
+    [55052] = {
+        name = "Securing Warfang Hold",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 135691,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
             },
         },
     },
@@ -58493,17 +59065,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [55702] = {
-        name = "Coldarra Case",
-        requiredLevel = 120,
-        maxLevel = 120,
-        rewards = {
-            {
-                type = "money",
-                amount = 23400,
-            },
-        },
-    },
     [55707] = {
         name = "First One's Free",
         requiredLevel = 120,
@@ -59713,133 +60274,23 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [56185] = {
-        name = "Whispers of N'Zoth",
+    [56209] = {
+        name = "The Halls of Origination",
         requiredLevel = 120,
         maxLevel = 120,
         source = {
             type = "npc",
-            id = 154464,
+            id = 154532,
         },
         rewards = {
             {
                 type = "money",
-                amount = 23400,
+                amount = 468000,
             },
             {
                 type = "reputation",
                 id = 2164,
-                amount = 10,
-            },
-        },
-    },
-    [56186] = {
-        name = "Spies to the Left and Right",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 152365,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 234000,
-            },
-            {
-                type = "currency",
-                id = 1553,
-                amount = 750,
-            },
-            {
-                type = "reputation",
-                id = 2164,
-                amount = 250,
-            },
-        },
-    },
-    [56187] = {
-        name = "Black Winged Shadow",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 154500,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 234000,
-            },
-            {
-                type = "reputation",
-                id = 2164,
-                amount = 250,
-            },
-        },
-    },
-    [56188] = {
-        name = "To the Catacombs!",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 154874,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 23400,
-            },
-            {
-                type = "currency",
-                id = 1553,
-                amount = 1000,
-            },
-            {
-                type = "reputation",
-                id = 2164,
-                amount = 10,
-            },
-        },
-    },
-    [56189] = {
-        name = "On the Trail of the Black Prince",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 154870,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 702000,
-            },
-            {
-                type = "reputation",
-                id = 2164,
-                amount = 500,
-            },
-        },
-    },
-    [56190] = {
-        name = "Save Ebonhorn",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 155191,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 234000,
-            },
-            {
-                type = "reputation",
-                id = 2164,
-                amount = 250,
+                amount = 350,
             },
         },
     },
@@ -60192,26 +60643,6 @@ BtWQuestsDatabase:AddQuestsTable({
                     type = "faction",
                     id = BtWQuests.Constant.Faction.Horde,
                 },
-            },
-        },
-    },
-    [56267] = {
-        name = "Whispers of N'Zoth",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 154465,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 23400,
-            },
-            {
-                type = "reputation",
-                id = 2164,
-                amount = 10,
             },
         },
     },
@@ -60815,6 +61246,82 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [56374] = {
+        name = "A Titanic Problem",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152206,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [56375] = {
+        name = "To Ramkahen",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154533,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [56376] = {
+        name = "Surfacing Threats",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155095,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1500,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 500,
+            },
+        },
+    },
+    [56377] = {
+        name = "Forging Onward",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 350,
+            },
+        },
+    },
     [56378] = {
         name = "The Missing Crew",
         requiredLevel = 120,
@@ -60923,6 +61430,26 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [56472] = {
+        name = "The Uldum Accord",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155095,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 350,
+            },
+        },
+    },
     [56494] = {
         name = "The Eve of Battle",
         requiredLevel = 120,
@@ -60968,28 +61495,133 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [56504] = {
-        name = "Wrathion's Journal",
+    [56536] = {
+        name = "It's Never Easy",
         requiredLevel = 120,
         maxLevel = 120,
         source = {
             type = "npc",
-            id = 151964,
+            id = 152206,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 350,
+            },
+        },
+    },
+    [56537] = {
+        name = "The Mysterious Sigil",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155336,
         },
         rewards = {
             {
                 type = "money",
                 amount = 23400,
             },
+        },
+    },
+    [56538] = {
+        name = "Clans of the Mogu",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156003,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [56539] = {
+        name = "Finding the Rajani",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156003,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56540] = {
+        name = "Proof of Tenacity",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154444,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
             {
                 type = "currency",
                 id = 1553,
-                amount = 1000,
+                amount = 1500,
+            },
+            {
+                type = "reputation",
+                id = 2415,
+                amount = 350,
+            },
+        },
+    },
+    [56541] = {
+        name = "The Engine of Nalak'sha",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154418,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+            {
+                type = "reputation",
+                id = 2415,
+                amount = 350,
+            },
+        },
+    },
+    [56542] = {
+        name = "Restored Hope",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154418,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
             },
             {
                 type = "reputation",
                 id = 2164,
-                amount = 10,
+                amount = 250,
             },
         },
     },
@@ -61038,6 +61670,127 @@ BtWQuestsDatabase:AddQuestsTable({
                     type = "faction",
                     id = BtWQuests.Constant.Faction.Alliance,
                 },
+            },
+        },
+    },
+    [56574] = {
+        name = "Reflections in Amber",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [56575] = {
+        name = "Once More Into Kor'vess",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155487,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56576] = {
+        name = "Aqir Extermination",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159920,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 250,
+            },
+        },
+    },
+    [56577] = {
+        name = "Crippling the Hive",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155562,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56578] = {
+        name = "Rotten at the Roots",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155562,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56580] = {
+        name = "Amber Secrets",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155582,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [56616] = {
+        name = "Old Faces, New Problems",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155582,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [56617] = {
+        name = "A Unified Swarm",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155582,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
             },
         },
     },
@@ -61133,6 +61886,54 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [56645] = {
+        name = "Heart of the Swarm",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155707,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [56647] = {
+        name = "The Mantid Threat",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155487,
+            locations = {
+                [390] = {
+                    {
+                        x = 0.122001,
+                        y = 0.953503,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1500,
+            },
+            {
+                type = "reputation",
+                id = 2415,
+                amount = 1000,
+            },
+        },
+    },
     [56719] = {
         name = "This Ain't Mine",
         requiredLevel = 120,
@@ -61201,6 +62002,34 @@ BtWQuestsDatabase:AddQuestsTable({
                     type = "faction",
                     id = BtWQuests.Constant.Faction.Alliance,
                 },
+            },
+        },
+    },
+    [56771] = {
+        name = "Time-Lost Warriors",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154532,
+            locations = {
+                [1530] = {
+                    {
+                        x = 0.830998,
+                        y = 0.273057,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+            {
+                type = "reputation",
+                id = 2415,
+                amount = 150,
             },
         },
     },
@@ -61424,6 +62253,391 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 2164,
                 amount = 150,
+            },
+        },
+    },
+    [57043] = {
+        name = "Old Friends, New Opportunities",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156358,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57045] = {
+        name = "A Special Delivery",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156396,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57047] = {
+        name = "A Simple Experiment",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156520,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57048] = {
+        name = "Shopping For Parts",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156520,
+            locations = {
+                [1532] = {
+                    {
+                        x = 0.529921,
+                        y = 0.585888,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57051] = {
+        name = "Debt Collection!",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156542,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57052] = {
+        name = "I've Got What You Need",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156542,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57053] = {
+        name = "Blunt Force Testing",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156520,
+            locations = {
+                [1532] = {
+                    {
+                        x = 0.587414,
+                        y = 0.608485,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57058] = {
+        name = "Fun With Landmines",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156520,
+            locations = {
+                [1532] = {
+                    {
+                        x = 0.587318,
+                        y = 0.608407,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57059] = {
+        name = "Let's Rumble!",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156520,
+            locations = {
+                [1532] = {
+                    {
+                        x = 0.52091,
+                        y = 0.593572,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57067] = {
+        name = "Mogu at the Gates",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154444,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2415,
+                amount = 250,
+            },
+        },
+    },
+    [57068] = {
+        name = "Kite Surveillance",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156297,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57069] = {
+        name = "Cut Off the Heads",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156391,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57070] = {
+        name = "Mogu Massacre",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156391,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57071] = {
+        name = "No Brew Left Behind",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156390,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57072] = {
+        name = "Yak of All Trades",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 157180,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57074] = {
+        name = "Our Backs to the Gate",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156390,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57075] = {
+        name = "Liquid Courage",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156938,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 702000,
+            },
+        },
+    },
+    [57076] = {
+        name = "Return to Mistfall",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156937,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1500,
+            },
+            {
+                type = "reputation",
+                id = 2415,
+                amount = 1000,
+            },
+        },
+    },
+    [57077] = {
+        name = "Buyers Wanted!",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156520,
+            locations = {
+                [1532] = {
+                    {
+                        x = 0.520843,
+                        y = 0.593521,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57078] = {
+        name = "The VIP List",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156396,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57079] = {
+        name = "Beat The Crapopolis Outta Him!",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 156396,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [57080] = {
+        name = "A Fitting Reward",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 157491,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
             },
         },
     },
@@ -61704,6 +62918,1072 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 23400,
+            },
+        },
+    },
+    [57220] = {
+        name = "Power Protocol Initiation",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152206,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [57221] = {
+        name = "Re-Origination",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152206,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [57222] = {
+        name = "Investigating the Halls",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154532,
+            locations = {
+                [1527] = {
+                    {
+                        x = 0.68964,
+                        y = 0.527416,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 350,
+            },
+        },
+    },
+    [57290] = {
+        name = "Beginning the Descent",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155496,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 702000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 500,
+            },
+        },
+    },
+    [57324] = {
+        name = "Sail With the Tide",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150633,
+            locations = {
+                [1161] = {
+                    {
+                        x = 0.693306,
+                        y = 0.271428,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57362] = {
+        name = "Deeper Into the Darkness",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155496,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 2000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 250,
+            },
+        },
+    },
+    [57373] = {
+        name = "Descending Into Madness",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155496,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 350,
+            },
+        },
+    },
+    [57374] = {
+        name = "Into the Darkest Depths",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155496,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "currency",
+                id = 1719,
+                amount = 100,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 500,
+            },
+        },
+    },
+    [57376] = {
+        name = "The Hidden Need",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 141961,
+        },
+    },
+    [57378] = {
+        name = "Remnants of a Shattered World",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155496,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57448] = {
+        name = "New Allies Among Us",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145424,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 702000,
+            },
+        },
+    },
+    [57486] = {
+        name = "Waning Energy",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 160101,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [57487] = {
+        name = "Someone Who Can Help",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 157997,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [57488] = {
+        name = "The Current Schematic",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150555,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [57490] = {
+        name = "Voyage to Safety",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 158145,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [57491] = {
+        name = "Better... Stronger... Less Dead",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 160232,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [57492] = {
+        name = "Him?",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 158145,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [57493] = {
+        name = "Mental Attunement",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 160232,
+            locations = {
+                [1462] = {
+                    {
+                        x = 0.735081,
+                        y = 0.318869,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+        },
+    },
+    [57494] = {
+        name = "A Strong Heart",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 160232,
+            locations = {
+                [1462] = {
+                    {
+                        x = 0.735081,
+                        y = 0.318869,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [57496] = {
+        name = "Ascension",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159587,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [57524] = {
+        name = "Accessing the Archives",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155496,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "currency",
+                id = 1755,
+                amount = 10000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [57873] = {
+        name = "Word from Orsis",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159544,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [57915] = {
+        name = "Search for Survivors",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154958,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [57954] = {
+        name = "Burn the Bodies",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159682,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [57955] = {
+        name = "To Ankhaten Harbor",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159560,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [57956] = {
+        name = "Wastewander Hosts",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159682,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [57969] = {
+        name = "Tend the Wounded",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159820,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [57970] = {
+        name = "Ruinator Xok'nixx",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159820,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 250,
+            },
+        },
+    },
+    [57971] = {
+        name = "Ruins of Ammon",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159682,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [57990] = {
+        name = "Obelisk of the Sun",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159820,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58008] = {
+        name = "All Gassed Up",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159920,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58009] = {
+        name = "To the Moon",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 159920,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1500,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58087] = {
+        name = "Destroying the Source",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145980,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [58496] = {
+        name = "An Unwelcome Advisor",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [58498] = {
+        name = "Return of the Warrior King",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154532,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [58502] = {
+        name = "Where the Heart Is",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 154532,
+            locations = {
+                [84] = {
+                    {
+                        x = 0.874556,
+                        y = 0.354868,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [58506] = {
+        name = "Network Diagnostics",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152206,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 350,
+            },
+        },
+    },
+    [58582] = {
+        name = "Return of the Black Prince",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [58583] = {
+        name = "Where the Heart Is",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 161458,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [58606] = {
+        name = "A Bit of Investigation",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 161738,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [58615] = {
+        name = "Whispers in the Dark",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 161805,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 500,
+            },
+        },
+    },
+    [58631] = {
+        name = "Into Dreams",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152206,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "currency",
+                id = 1755,
+                amount = 10000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 10,
+            },
+        },
+    },
+    [58632] = {
+        name = "Ny'alotha, the Waking City: The Corruptor's End",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152206,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 936000,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 3000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 1000,
+            },
+            {
+                type = "reputation",
+                id = 2415,
+                amount = 1000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 1000,
+            },
+        },
+    },
+    [58634] = {
+        name = "Opening the Gateway",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155496,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 176000,
+            },
+            {
+                type = "currency",
+                id = 1755,
+                amount = 10000,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 150,
+            },
+        },
+    },
+    [58636] = {
+        name = "Eyes on the Amathet",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155102,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58638] = {
+        name = "A Deeper Dive",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155102,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 150,
+            },
+        },
+    },
+    [58639] = {
+        name = "Buried History",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155102,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58640] = {
+        name = "A Crack in the Armor",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155102,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 150,
+            },
+        },
+    },
+    [58641] = {
+        name = "Seekers of Corruption",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155102,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58642] = {
+        name = "Shared Goals",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155102,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58643] = {
+        name = "Mutually Assured Destruction",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155102,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58645] = {
+        name = "A World Worth Saving",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 161031,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "currency",
+                id = 1553,
+                amount = 1500,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 250,
+            },
+        },
+    },
+    [58646] = {
+        name = "Chew On This!",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 155102,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 2417,
+                amount = 75,
+            },
+        },
+    },
+    [58737] = {
+        name = "Magni's Findings",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152206,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 2164,
+                amount = 150,
             },
         },
     },

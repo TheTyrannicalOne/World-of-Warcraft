@@ -1,6 +1,6 @@
-## Interface: 80205
+## Interface: 80300
 ## Title: BtWQuests: Battle for Azeroth
-## Version: 43
+## Version: 44
 ## Notes: Battle for Azeroth quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
@@ -69,6 +69,7 @@ Index.zhCN.lua
 Index.zhTW.lua
 
 Introduction.lua
+VisionsOfNZoth.lua
 TheHeartForge.lua
 Nazjatar.lua
 MechagonIsland.lua

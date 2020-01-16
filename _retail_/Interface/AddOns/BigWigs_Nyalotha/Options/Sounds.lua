@@ -15,6 +15,16 @@ BigWigs:AddSounds("The Prophet Skitra", {
 	[313239] = "alert",
 })
 
+BigWigs:AddSounds("Dark Inquisitor Xanesh", {
+	[305575] = "alarm",
+	[306208] = "long",
+	[306319] = {"alarm","alert"},
+	[311551] = {"alarm","alert"},
+	[312336] = "warning",
+	[312406] = "alarm",
+	[313264] = "warning",
+})
+
 BigWigs:AddSounds("The Hivemind", {
 	[307201] = "long",
 	[307213] = "long",
@@ -50,6 +60,26 @@ BigWigs:AddSounds("Vexiona", {
 	[310323] = "warning",
 	[315762] = "warning",
 	["stages"] = {"info","long"},
+})
+
+BigWigs:AddSounds("Ra-den the Despoiled", {
+	[306273] = "warning",
+	[306603] = "alarm",
+	[306732] = "info",
+	[306733] = "info",
+	[306865] = "alert",
+	[306866] = "alert",
+	[306881] = "alarm",
+	[310003] = "alert",
+	[310019] = {"info","warning"},
+	[311551] = "alarm",
+	[312996] = "info",
+	[313077] = "warning",
+	[313213] = {"alarm","alert"},
+	[314484] = "alert",
+	[315252] = "alarm",
+	["essences"] = "warning",
+	["stages"] = "long",
 })
 
 BigWigs:AddSounds("N'Zoth, the Corruptor", {

@@ -120,6 +120,7 @@ local function GetVariation(database, item, character)
 end
 
 local function CheckTargetStatus(target, item, character)
+    assert(target ~= nil, format("Missing Data %s - %d", item.type, item.id or 0))
     if item.status ~= nil then
         for _,status in ipairs(item.status) do
             if status == "available" and target:IsAvailable(character) then
@@ -1676,11 +1677,13 @@ function QuestItemMixin:GetLevelFlag(database, item)
     return item.levelFlag or self:GetTarget(database, item):GetLevelFlag();
 end
 function QuestItemMixin:GetLink(database, item)
-    if item.link == nil then
-        item.link = format("\124cffffff00\124Hquest:%d:%d:%d:%d:%d\124h[%s]\124h\124r", self:GetID(database, item), self:GetLevel(database, item), self:GetRequiredLevel(database, item), self:GetMaxLevel(database, item), self:GetLevelFlag(database, item), self:GetName(database, item))
-    end
+    -- if item.link == nil then
+    --     item.link = format("\124cffffff00\124Hquest:%d:%d:%d:%d:%d\124h[%s]\124h\124r", self:GetID(database, item), self:GetLevel(database, item), self:GetRequiredLevel(database, item), self:GetMaxLevel(database, item), self:GetLevelFlag(database, item), self:GetName(database, item))
+    -- end
 
-    return item.link
+    -- return item.link
+
+    return format("\124cffffff00\124Hquest:%d:%d:%d:%d:%d\124h[%s]\124h\124r", self:GetID(database, item), self:GetLevel(database, item), self:GetRequiredLevel(database, item), self:GetMaxLevel(database, item), self:GetLevelFlag(database, item), self:GetName(database, item));
 end
 function QuestItemMixin:OnClick(database, item, character, button, frame, tooltip)
     if item.onClick ~= nil then
@@ -2478,15 +2481,17 @@ local function CreateTable(database, mixin)
     local target, sources = {}, {};
     setmetatable(target, {
         __index = function (self, key)
-            local tbl;
-            for _,source in ipairs(sources) do
-                if source[key] then
-                    tbl = Mixin({database = database, id = key}, source[key], mixin);
-                    break;
+            if key ~= nil then
+                local tbl;
+                for _,source in ipairs(sources) do
+                    if source[key] then
+                        tbl = Mixin({database = database, id = key}, source[key], mixin);
+                        break;
+                    end
                 end
+                self[key] = tbl;
+                return tbl;
             end
-            self[key] = tbl;
-            return tbl;
         end,
     });
     return target, sources;
@@ -2597,6 +2602,8 @@ function Database:EvalRequirement(requirement, item, character, one)
     assert(requirement == nil, "Invalid requirement type " .. type(requirement))
 end
 function Database:EvalItemRequirement(item, character)
+    local item = GetVariation(self, item, character)
+    
     if item.type == "quest" then
         local ids = item.ids or {item.id}
         local amount = 0
@@ -3015,7 +3022,8 @@ function Database:AddSearchBucket(key, t)
 
     local u = self.buckets[key]
     for _,v in ipairs(t) do
-        table.insert(u,v)
+        u[#u+1] = v
+        -- table.insert(u,v)
     end
 end
 function Database:AddSearchBuckets(t)

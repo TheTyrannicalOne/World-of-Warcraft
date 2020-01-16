@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0313,
+	["LastVersion"] = 2.0315,
 	["LastPlayerFullName"] = "Tynkster-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

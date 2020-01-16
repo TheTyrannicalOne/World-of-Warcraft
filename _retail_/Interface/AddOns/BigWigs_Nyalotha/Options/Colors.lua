@@ -13,6 +13,17 @@ BigWigs:AddColors("The Prophet Skitra", {
 	[307950] = {"blue","orange"},
 	[308059] = {"blue","purple"},
 	[313239] = "yellow",
+	["stages"] = "green",
+})
+
+BigWigs:AddColors("Dark Inquisitor Xanesh", {
+	[305575] = "blue",
+	[306208] = "yellow",
+	[306319] = {"blue","yellow"},
+	[311551] = {"blue","purple"},
+	[312336] = "red",
+	[312406] = {"blue","cyan"},
+	[313264] = {"blue","red"},
 })
 
 BigWigs:AddColors("The Hivemind", {
@@ -49,6 +60,26 @@ BigWigs:AddColors("Vexiona", {
 	[309882] = "red",
 	[310323] = {"blue","yellow"},
 	[315762] = "red",
+	["stages"] = "cyan",
+})
+
+BigWigs:AddColors("Ra-den the Despoiled", {
+	[306273] = {"blue","cyan"},
+	[306603] = "orange",
+	[306732] = "cyan",
+	[306733] = "cyan",
+	[306865] = "yellow",
+	[306866] = "yellow",
+	[306881] = "red",
+	[310003] = "yellow",
+	[310019] = {"blue","cyan","green"},
+	[311551] = {"blue","purple"},
+	[312996] = "cyan",
+	[313077] = {"blue","red"},
+	[313213] = {"blue","purple","red"},
+	[314484] = "yellow",
+	[315252] = "blue",
+	["essences"] = "red",
 	["stages"] = "cyan",
 })
 

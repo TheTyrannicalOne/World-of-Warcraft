@@ -169,9 +169,9 @@ state.trinket = {
         cooldown = {
             slot = 't1'
         },
-        has_cooldown = {
+        --[[ has_cooldown = {
             slot = 't1'
-        },
+        }, ]]
 
         stacking_stat = {
             slot = 't1'
@@ -194,9 +194,10 @@ state.trinket = {
         cooldown = {
             slot = 't2',
         },
-        has_cooldown = {
+        
+        --[[ has_cooldown = {
             slot = 't2',
-        },
+        }, ]]
 
         stacking_stat = {
             slot = 't2'
@@ -236,6 +237,8 @@ state.trinket = {
     }
 }
 state.trinket.proc = state.trinket.stat
+state.trinket[1] = state.trinket.t1
+state.trinket[2] = state.trinket.t2
 
 state.using_apl = setmetatable( {}, {
     __index = function( t, k )
@@ -325,6 +328,8 @@ local mt_trinket = {
             return class.trinkets[ t.id ].buff and state.buff[ class.trinkets[ t.id ].buff ][k] or 0
         elseif k == 'remains' then
             return class.trinkets[ t.id ].buff and state.buff[ class.trinkets[ t.id ].buff ].remains or 0
+        elseif k == 'has_cooldown' then
+            return GetItemSpell( t.id ) ~= nil
         end
         return false
     end
@@ -438,6 +443,7 @@ state.print = print
 state.Enum = Enum
 state.FindUnitBuffByID = ns.FindUnitBuffByID
 state.FindUnitDebuffByID = ns.FindUnitDebuffByID
+state.GetItemCooldown = GetItemCooldown
 state.GetItemCount = GetItemCount
 state.GetItemGem = GetItemGem
 state.GetShapeshiftForm = GetShapeshiftForm
@@ -452,6 +458,7 @@ state.IsActiveSpell = ns.IsActiveSpell
 state.IsPlayerSpell = IsPlayerSpell
 state.IsSpellKnown = IsSpellKnown
 state.IsSpellKnownOrOverridesKnown = IsSpellKnownOrOverridesKnown
+state.IsUsableItem = IsUsableItem
 state.IsUsableSpell = IsUsableSpell
 state.UnitBuff = UnitBuff
 state.UnitCanAttack = UnitCanAttack
@@ -2069,6 +2076,9 @@ local mt_default_pet = {
         elseif k == 'id' then
             return t.exists and UnitGUID( "pet" ) and tonumber( UnitGUID( "pet" ):match("(%d+)-%x-$" ) ) or nil
 
+        elseif k == 'spec' then
+            return t.exists and GetSpecialization( false, true )
+
         end
 
         return -- Error("UNK: " .. k)
@@ -2272,6 +2282,12 @@ local mt_target = {
             return UnitIsPlayer( 'target' )
 
         elseif k == 'is_boss' then
+            if UnitExists( "boss1" ) and UnitIsUnit( "target", "boss1" ) or
+                UnitExists( "boss2" ) and UnitIsUnit( "target", "boss2" ) or
+                UnitExists( "boss3" ) and UnitIsUnit( "target", "boss3" ) or
+                UnitExists( "boss4" ) and UnitIsUnit( "target", "boss4" ) or
+                UnitExists( "boss5" ) and UnitIsUnit( "target", "boss5" ) then return true
+            end
             return ( UnitCanAttack( "player", "target" ) and ( UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) )
 
         elseif k:sub(1, 12) == 'time_to_pct_' then
@@ -2963,8 +2979,11 @@ local mt_default_buff = {
                 for attr, a_val in pairs( default_buff_values ) do
                     t[ attr ] = rawget( t, attr ) or a_val
                 end
+
                 aura.generate( t, "buff" )
-                return t[ k ]
+                t.id = aura and aura.id or t.key
+
+                return rawget( t, k )
             end
 
             local real = auras.player.buff[ t.key ] or auras.target.buff[ t.key ]
@@ -2989,9 +3008,11 @@ local mt_default_buff = {
                 for attr, a_val in pairs( default_buff_values ) do
                     t[ attr ] = aura and aura[ attr ] or a_val
                 end
+
+                t.id = rawget( t, id ) or ( aura and aura.id ) or t.key
             end
 
-            return t[k]
+            return rawget( t, k )
 
         elseif k == 'up' or k == 'ticking' then
             return t.remains > 0            
@@ -3152,7 +3173,7 @@ local mt_buffs = {
             buff.expires = 0
             buff.applied = 0
             buff.caster = 'nobody'
-            buff.id = nil
+            -- buff.id = nil
             buff.timeMod = 1
             buff.v1 = 0
             buff.v2 = 0
@@ -3737,8 +3758,11 @@ local mt_default_debuff = {
                 for attr, a_val in pairs( default_debuff_values ) do
                     t[ attr ] = rawget( t, attr ) or a_val
                 end
+
                 aura.generate( t, "debuff" )
-                return t[ k ]
+                t.id = aura and aura.id or t.key
+
+                return rawget( t, k )
             end
 
             local real = auras.target.debuff[ t.key ] or auras.player.debuff[ t.key ]
@@ -3749,7 +3773,7 @@ local mt_default_debuff = {
                 t.lastCount = real.lastCount or 0
                 t.lastApplied = real.lastApplied or 0
                 t.duration = real.duration
-                t.expires = real.expires
+                t.expires = real.expires or 0
                 t.applied = max( 0, real.expires - real.duration )
                 t.caster = real.caster
                 t.id = real.id
@@ -3761,11 +3785,13 @@ local mt_default_debuff = {
                 t.unit = real.unit
             else
                 for attr, a_val in pairs( default_debuff_values ) do
-                    t[ attr ] = class.auras[ t.key ] and class.auras[ t.key ][ attr ] or a_val
+                    t[ attr ] = aura and aura[ attr ] or a_val
                 end
+
+                t.id = aura and aura.id or t.id
             end
 
-            return t[ k ]
+            return rawget( t, k )
 
         elseif k == 'up' or k == 'ticking' then
             return t.remains > 0
@@ -3886,7 +3912,8 @@ local mt_debuffs = {
         else
             t[ k ] = {
                 key = k,
-                name = k
+                name = k,
+                id = k
             }
 
         end
@@ -3920,7 +3947,7 @@ local mt_debuffs = {
             debuff.expires = 0
             debuff.applied = 0
             debuff.caster = 'nobody'
-            debuff.id = nil
+            -- debuff.id = nil
             debuff.timeMod = 1
             debuff.v1 = 0
             debuff.v2 = 0
@@ -4314,7 +4341,7 @@ do
 
         i = 1
         while ( true ) do
-            local name, _, count, _, duration, expires, caster, _, _, spellID, _, _, _, _, timeMod, v1, v2, v3 = UnitDebuff( unit, i, "PLAYER" )
+            local name, _, count, _, duration, expires, caster, _, _, spellID, _, _, _, _, timeMod, v1, v2, v3 = UnitDebuff( unit, i, unit ~= "player" and "PLAYER" or nil )
             if not name then break end
 
             local key = class.auras[ spellID ] and class.auras[ spellID ].key
@@ -4889,6 +4916,7 @@ function state.reset( dispName )
 
     state.display = dispName
     state.filter = 'none'
+    state.rangefilter = false
 
     if display then
         if dispName == 'Primary' then
@@ -4899,7 +4927,7 @@ function state.reset( dispName )
         elseif dispName == 'Defensives' then state.filter = 'defensives'
         end
 
-        state.rangefilter = display.range.type == 'xclude'
+        state.rangefilter = display.range.enabled and display.range.type == 'xclude'
     end
 
     for i = #state.purge, 1, -1 do
@@ -5100,6 +5128,7 @@ function state.reset( dispName )
     end
 
     state.health = rawget( state, "health" ) or setmetatable( { resource = "health" }, mt_resource )
+    state.health.current = nil
     state.health.actual = UnitHealth( 'player' ) or 10000
     state.health.max = UnitHealthMax( 'player' ) or 10000
     state.health.regen = 0
@@ -5507,19 +5536,19 @@ function state:IsKnown( sID, notoggle )
     local profile = Hekili.DB.profile
 
     if ability.spec and not state.spec[ ability.spec ] then
-        return false
+        return false, "wrong specialization"
     end
 
     if ability.nospec and state.spec[ ability.nospec ] then
-        return false
+        return false, "spec disallowed"
     end
 
     if ability.talent and not state.talent[ ability.talent ].enabled then
-        return false
+        return false, "talent missing"
     end
 
     if ability.notalent and state.talent[ ability.notalent ].enabled then
-        return false
+        return false, "talent disallowed"
     end
 
     if ability.pvptalent and not state.pvptalent[ ability.pvptalent ].enabled then
@@ -5531,20 +5560,20 @@ function state:IsKnown( sID, notoggle )
     end
 
     if ability.trait and not state.artifact[ ability.trait ].enabled then
-        return false
+        return false, "trait missing"
     end
 
     if ability.equipped and not state.equipped[ ability.equipped ] then
-        return false
+        return false, "equipment missing"
     end
 
     if ability.item and not state.equipped[ ability.item ] then
-        return false
+        return false, "item missing"
     end
 
     if ability.known ~= nil then
         if type( ability.known ) == 'number' then
-            return IsPlayerSpell( ability.known )
+            return IsPlayerSpell( ability.known ), "IsPlayerSpell"
         end
         return ability.known
     end
@@ -5587,12 +5616,10 @@ do
             if not toggle or toggle == 'default' then toggle = ability.toggle end
 
             if ability.id < -100 or ability.id > 0 or toggleSpells[ spell ] then
-                if state.filter ~= 'none' and state.filter ~= toggle and not ability[ state.filter ] then
-                    return true
-                else
-                    if toggle and toggle ~= 'none' then
-                        if not self.toggle[ toggle ] or ( profile.toggles[ toggle ].separate and state.filter ~= toggle ) then return true end
-                    end
+                if state.filter ~= 'none' and state.filter ~= toggle and not ability[ state.filter ] then return true
+                elseif ability.item and not state.equipped[ ability.item ] then return false
+                elseif toggle and toggle ~= 'none' then
+                    if not self.toggle[ toggle ] or ( profile.toggles[ toggle ].separate and state.filter ~= toggle ) then return true end
                 end
             end
         end

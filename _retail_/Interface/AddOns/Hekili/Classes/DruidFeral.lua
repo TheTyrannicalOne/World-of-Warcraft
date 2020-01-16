@@ -739,6 +739,14 @@ if UnitClassBase( 'player' ) == 'DRUID' then
             spend = function ()
                 if buff.apex_predator.up then return 0 end
                 -- going to require 50 energy and then refund it back...
+                if talent.sabertooth.enabled and debuff.rip.up then
+                    -- Let's make FB available sooner if we need to keep a Rip from falling off.
+                    local nrg = 50 * ( ( buff.berserk.up or buff.incarnation.up ) and 0.6 or 1 )
+                    
+                    if energy[ "time_to_" .. nrg ] - debuff.rip.remains > 0 then
+                        return max( 25, energy.current + ( (debuff.rip.remains - 1 ) * energy.regen ) )
+                    end
+                end
                 return 50 * ( ( buff.berserk.up or buff.incarnation.up ) and 0.6 or 1 )
             end,
             spendType = "energy",
@@ -765,7 +773,7 @@ if UnitClassBase( 'player' ) == 'DRUID' then
                     applyBuff( "predatory_swiftness" )
                     removeBuff( "apex_predator" )
                 else
-                    gain( 25, "energy" )
+                    -- gain( 25, "energy" )
                     if combo_points.current == 5 then applyBuff( "predatory_swiftness" ) end
                     spend( min( 5, combo_points.current ), "combo_points" )
                 end
@@ -1057,6 +1065,7 @@ if UnitClassBase( 'player' ) == 'DRUID' then
             gcd = "spell",
 
             talent = "primal_wrath",
+            aura = "rip",
 
             spend = 20,
             spendType = "energy",
@@ -1600,7 +1609,7 @@ if UnitClassBase( 'player' ) == 'DRUID' then
 
 
         thorns = {
-            id = 236696,
+            id = 305497,
             cast = 0,
             cooldown = 45,
             gcd = "spell",

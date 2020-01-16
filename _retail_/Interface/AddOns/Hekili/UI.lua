@@ -12,6 +12,7 @@ local FindUnitBuffByID, FindUnitDebuffByID = ns.FindUnitBuffByID, ns.FindUnitDeb
 -- Atlas/Textures
 local AddTexString, GetTexString, AtlasToString, GetAtlasFile, GetAtlasCoords = ns.AddTexString, ns.GetTexString, ns.AtlasToString, ns.GetAtlasFile, ns.GetAtlasCoords
 
+local frameStratas = ns.FrameStratas
 local getInverseDirection = ns.getInverseDirection
 local multiUnpack = ns.multiUnpack
 local orderedPairs = ns.orderedPairs
@@ -601,7 +602,10 @@ do
         elseif zoneType == "pvp" or zoneType == "arena" then
             if not conf.visibility.advanced then return conf.visibility.pvp.alpha end
 
-            if conf.visibility.pvp.combat > 0 and state.combat > 0 then return conf.visibility.pvp.combat
+            if conf.visibility.pvp.hideMounted and IsMounted() and not InCombatLockdown() then return 0 end
+
+            if conf.visibility.pvp.combatTarget > 0 and state.combat > 0 and UnitExists( "target" ) and not UnitIsDead( "target" ) and UnitCanAttack( "player", "target" ) then return conf.visibility.pvp.combatTarget
+            elseif conf.visibility.pvp.combat > 0 and state.combat > 0 then return conf.visibility.pvp.combat
             elseif conf.visibility.pvp.target > 0 and UnitExists( "target" ) and not UnitIsDead( "target" ) and UnitCanAttack( "player", "target" ) then return conf.visibility.pvp.target
             elseif conf.visibility.pvp.always > 0 then return conf.visibility.pvp.always end
 
@@ -610,7 +614,10 @@ do
 
         if not conf.visibility.advanced then return conf.visibility.pve.alpha end
         
-        if conf.visibility.pve.combat > 0 and state.combat > 0 then return conf.visibility.pve.combat
+        if conf.visibility.pve.hideMounted and IsMounted() and not InCombatLockdown() then return 0 end
+
+        if conf.visibility.pve.combatTarget > 0 and state.combat > 0 and UnitExists( "target" ) and not UnitIsDead( "target" ) and UnitCanAttack( "player", "target" ) then return conf.visibility.pve.combatTarget
+        elseif conf.visibility.pve.combat > 0 and state.combat > 0 then return conf.visibility.pve.combat
         elseif conf.visibility.pve.target > 0 and UnitExists( "target" ) and not UnitIsDead( "target" ) and UnitCanAttack( "player", "target" ) then return conf.visibility.pve.target
         elseif conf.visibility.pve.always > 0 then return conf.visibility.pve.always end
 
@@ -1375,14 +1382,20 @@ do
         end
 
         return left, right, top, bottom
-    end    
+    end
 
+
+    local numDisplays = 0
 
     function Hekili:CreateDisplay( id )
         local conf = rawget( self.DB.profile.displays, id )
         if not conf then return end
 
-        dPool[ id ] = dPool[ id ] or CreateFrame( "Frame", "HekiliDisplay" .. id, UIParent )
+        if not dPool[ id ] then
+            numDisplays = numDisplays + 1
+            dPool[ id ] = CreateFrame( "Frame", "HekiliDisplay" .. id, UIParent )
+            dPool[ id ].index = numDisplays
+        end
         local d = dPool[ id ]
 
         d.id = id
@@ -1395,7 +1408,8 @@ do
 
         d:SetSize( scale * ( border + ( conf.primaryWidth or 50 ) ), scale * ( border + ( conf.primaryHeight or 50 ) ) )
         d:SetPoint( "CENTER", nil, "CENTER", conf.x or 0, conf.y or -225 )
-        d:SetFrameStrata( "MEDIUM" )
+        d:SetFrameStrata( conf.frameStrata or "MEDIUM" )
+        d:SetFrameLevel( conf.frameLevel or ( 10 + d.index ) )
         d:SetClampedToScreen( true )
         d:EnableMouse( false )
         d:SetMovable( true )
@@ -1757,10 +1771,12 @@ do
 
         local framelevel = b:GetFrameLevel()
         if framelevel > 0 then
-            b.Backdrop:SetFrameStrata( "MEDIUM" )
+            -- b.Backdrop:SetFrameStrata( "MEDIUM" )
             b.Backdrop:SetFrameLevel( framelevel - 1 )
         else
-            b.Backdrop:SetFrameStrata("LOW")
+            local lowerStrata = frameStratas[ b:GetFrameStrata() ]
+            lowerStrata = frameStratas[ lowerStrata - 1 ]
+            b.Backdrop:SetFrameStrata( lowerStrata or "LOW" )
         end
 
         b.Backdrop:SetPoint( "CENTER", b, "CENTER" )

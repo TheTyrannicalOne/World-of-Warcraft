@@ -5,10 +5,14 @@ if GetLocale() ~= "zhTW" then
 end
 
 local L = BtWQuests.L
+L["ALLIED_RACE_MECHAGNOME"] = "Allied Race：機械地精"
+L["ALLIED_RACE_VULPERA"] = "Allied Race：狐狸人"
 L["BTWQUESTS_COSMETIC_WAIST_OF_TIME"] = "造型：光陰"
 L["BTWQUESTS_GIFT_OF_NZOTH"] = "恩若司之賜"
 L["BTWQUESTS_HATI_REBORN"] = "哈提重生"
+L["BTWQUESTS_HERITAGE_OF_GILNEAS"] = "吉爾尼斯的傳承"
 L["BTWQUESTS_HERITAGE_OF_GNOMEREGAN"] = "諾姆瑞根的傳承"
+L["BTWQUESTS_HERITAGE_OF_KEZAN"] = "凱贊的傳承"
 L["BTWQUESTS_HERITAGE_OF_THE_BRONZEBEARD"] = "銅鬚的傳承"
 L["BTWQUESTS_HERITAGE_OF_THE_SHUHALO"] = "舒哈魯的傳承"
 L["BTWQUESTS_HERITAGE_OF_THE_SINDOREI"] = "辛多雷的傳承"
@@ -19,4 +23,6 @@ L["BTWQUESTS_THE_WAR_CAMPAIGN_8_1"] = "陣營戰役: 達薩亞洛之戰"
 L["BTWQUESTS_WARFRONT_THE_BATTLE_FOR_DARKSHORE"] = "戰爭前線：黑海岸之戰"
 L["DUNGEON_KINGS_REST"] = "地城：諸王之眠"
 L["DUNGEON_SIEGE_OF_BORALUS"] = "地城：波拉勒斯圍城戰"
+L["MECHAGNOME"] = "機械地精"
+L["VULPERA"] = "狐狸人"
 L["WAIST_OF_TIME"] = "光陰"

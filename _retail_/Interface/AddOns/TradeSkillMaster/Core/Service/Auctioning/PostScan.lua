@@ -138,8 +138,8 @@ function PostScan.DoProcess()
 			PostAuction(bid, buyout, postTime, stackSize, 1)
 			ClearCursor()
 		else
-			bid = Math.Round(bid, COPPER_PER_SILVER)
-			buyout = Math.Round(buyout, COPPER_PER_SILVER)
+			bid = Math.Round(bid / stackSize, COPPER_PER_SILVER)
+			buyout = Math.Round(buyout / stackSize, COPPER_PER_SILVER)
 			itemBuyout = Math.Round(itemBuyout, COPPER_PER_SILVER)
 			private.itemLocation:Clear()
 			private.itemLocation:SetBagAndSlot(bag, slot)
@@ -195,6 +195,7 @@ function PostScan.HandleConfirm(success, canRetry)
 
 	private.DebugLogInsert(confirmRow:GetField("itemString"), "HandleConfirm(success=%s) x %d", tostring(success), confirmRow:GetField("stackSize"))
 	if canRetry then
+		assert(not success)
 		confirmRow:SetField("numFailed", confirmRow:GetField("numFailed") + 1)
 	end
 	confirmRow:SetField("numConfirmed", confirmRow:GetField("numConfirmed") + 1)
@@ -474,6 +475,7 @@ function private.AuctionScanOnFilterDone(_, filter)
 			:Equal(isBaseItemString and "baseItemString" or "itemString", itemString)
 			:GreaterThan("itemBuyout", 0)
 			:OrderBy("itemBuyout", true)
+			:OrderBy("auctionId", false)
 		local groupPath = TSM.Groups.GetPathByItem(itemString)
 		if groupPath then
 			local numHave = 0
@@ -622,7 +624,15 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 	if lowestAuction then
 		TempTable.Release(lowestAuction)
 	end
-	bid = floor(bid)
+	if TSM.IsWow83() then
+		bid = max(Math.Round(bid, COPPER_PER_SILVER), COPPER_PER_SILVER)
+		buyout = max(buyout, COPPER_PER_SILVER)
+	else
+		bid = floor(bid)
+	end
+
+	bid = min(bid, TSM.IsWow83() and MAXIMUM_BID_PRICE - 99 or MAXIMUM_BID_PRICE)
+	buyout = min(buyout, TSM.IsWow83() and MAXIMUM_BID_PRICE - 99 or MAXIMUM_BID_PRICE)
 
 	-- check if we can't post anymore
 	local queueQuery = private.queueDB:NewQuery()
@@ -643,9 +653,20 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 		return "postTooMany"
 	end
 
+	if TSM.IsWowClassic() and (bid * perAuction > MAXIMUM_BID_PRICE or buyout * perAuction > MAXIMUM_BID_PRICE) then
+		Log.PrintfUser(L["The buyout price for %s would be above the maximum allowed price. Skipping this item."], ItemInfo.GetLink(itemString))
+		return "invalidItemGroup"
+	end
+
 	-- insert the posts into our DB
 	local auctionId = private.nextQueueIndex
 	local postTime = operationSettings.duration
+	if TSM.IsWow83() and not ItemInfo.IsCommodity(itemString) then
+		-- post non-commodities as single stacks
+		assert(maxCanPost == 1)
+		maxCanPost = perAuction
+		perAuction = 1
+	end
 	private.AddToQueue(itemString, operationName, bid, buyout, perAuction, maxCanPost, postTime)
 	-- check if we can post an extra partial stack
 	local extraStack = (not TSM.IsWow83() and maxCanPost < operationSettings.postCap and operationSettings.stackSizeIsCap and (numHave % perAuction)) or 0
@@ -661,8 +682,8 @@ function private.AddToQueue(itemString, operationName, itemBid, itemBuyout, stac
 		:SetField("auctionId", private.nextQueueIndex)
 		:SetField("itemString", itemString)
 		:SetField("operationName", operationName)
-		:SetField("bid", min(itemBid * stackSize, MAXIMUM_BID_PRICE))
-		:SetField("buyout", min(itemBuyout * stackSize, MAXIMUM_BID_PRICE))
+		:SetField("bid", itemBid * stackSize)
+		:SetField("buyout", itemBuyout * stackSize)
 		:SetField("itemBuyout", itemBuyout)
 		:SetField("stackSize", stackSize)
 		:SetField("numStacks", numStacks)
