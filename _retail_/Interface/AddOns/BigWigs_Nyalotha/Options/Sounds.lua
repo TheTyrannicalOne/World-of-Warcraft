@@ -50,13 +50,29 @@ BigWigs:AddSounds("The Hivemind", {
 })
 
 BigWigs:AddSounds("Shad'har the Insatiable", {
+	[306448] = "alarm",
+	[306928] = "alert",
+	[306929] = "alert",
+	[306930] = "alert",
 	[306942] = "info",
 	[307358] = "info",
 	[307471] = "alarm",
 	[307472] = "info",
-	[312528] = "alert",
-	[312529] = "alert",
-	[312530] = "alert",
+	[314736] = "alarm",
+	[318078] = "warning",
+	["stages"] = "long",
+})
+
+BigWigs:AddSounds("Drest'agath", {
+	[308377] = "info",
+	[308941] = "long",
+	[310246] = "alarm",
+	[310277] = "alarm",
+	[310329] = "alert",
+	[310358] = "warning",
+	[310390] = "alert",
+	[310580] = "alarm",
+	["adds"] = "info",
 })
 
 BigWigs:AddSounds("Vexiona", {

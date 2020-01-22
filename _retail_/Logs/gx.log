@@ -1,30 +1,25 @@
-1/20 20:58:17.896  LogOpen
-1/20 20:58:17.909  NvAPI loaded
-1/20 20:58:18.257  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe105b) dx11:true dx12:true
-1/20 20:58:18.257  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-1/20 20:58:18.257  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-1/20 20:58:18.320  D3d12 Device Create
-1/20 20:58:18.479  Choosing adapter 0
-1/20 20:58:18.674  AFR Groups: 1/1
-1/20 20:58:18.674  Feature Level: DX=6, MTL=0
-1/20 20:58:18.882  NotifyOnDeviceCreate
-1/20 20:58:18.882  D3d12 Device Create Successful
-1/20 20:58:18.882  Nvidia driver version: r441_83 (44187)
-1/20 20:58:18.882  <IsGPUDriverOutOfDate> No
-1/20 20:58:18.911  CPU Processor Detection: 12 H/W threads
-1/20 20:58:18.911  Memory Detection: 34296328192 bytes of physical memory available
-1/20 20:58:18.911  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-1/20 20:58:19.028  RenderSettings::NotifyChanged
-1/20 20:58:19.837  Nvidia driver version: r441_83 (44187)
-1/20 20:58:48.078  Nvidia driver version: r441_83 (44187)
-1/20 20:58:48.078  Nvidia driver version: r441_83 (44187)
-1/20 23:13:43.239  Nvidia driver version: r441_83 (44187)
-1/20 23:14:18.038  Nvidia driver version: r441_83 (44187)
-1/20 23:16:32.625  Nvidia driver version: r441_83 (44187)
-1/20 23:17:07.579  Nvidia driver version: r441_83 (44187)
-1/20 23:18:43.679  Nvidia driver version: r441_83 (44187)
-1/20 23:19:27.441  Nvidia driver version: r441_83 (44187)
-1/20 23:20:39.364  Nvidia driver version: r441_83 (44187)
-1/20 23:20:40.440  D3d12 Device Destroy
-1/20 23:20:40.440  NotifyOnDeviceDestroy
-1/20 23:20:41.651  GxShutdown
+1/21 20:31:44.112  LogOpen
+1/21 20:31:44.155  NvAPI loaded
+1/21 20:31:44.558  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe105b) dx11:true dx12:true
+1/21 20:31:44.558  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+1/21 20:31:44.558  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+1/21 20:31:44.620  D3d12 Device Create
+1/21 20:31:44.813  Choosing adapter 0
+1/21 20:31:45.035  AFR Groups: 1/1
+1/21 20:31:45.035  Feature Level: DX=6, MTL=0
+1/21 20:31:45.353  NotifyOnDeviceCreate
+1/21 20:31:45.353  D3d12 Device Create Successful
+1/21 20:31:45.353  Nvidia driver version: r441_83 (44187)
+1/21 20:31:45.353  <IsGPUDriverOutOfDate> No
+1/21 20:31:45.389  CPU Processor Detection: 12 H/W threads
+1/21 20:31:45.389  Memory Detection: 34296328192 bytes of physical memory available
+1/21 20:31:45.389  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+1/21 20:31:45.537  RenderSettings::NotifyChanged
+1/21 20:31:46.976  Nvidia driver version: r441_83 (44187)
+1/21 20:32:15.885  Nvidia driver version: r441_83 (44187)
+1/21 20:32:15.885  Nvidia driver version: r441_83 (44187)
+1/21 20:34:53.120  RenderSettings::NotifyChanged
+1/21 20:47:00.718  Nvidia driver version: r441_83 (44187)
+1/21 20:47:01.455  D3d12 Device Destroy
+1/21 20:47:01.455  NotifyOnDeviceDestroy
+1/21 20:47:02.442  GxShutdown

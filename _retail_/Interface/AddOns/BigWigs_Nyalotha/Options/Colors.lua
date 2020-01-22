@@ -52,13 +52,29 @@ BigWigs:AddColors("The Hivemind", {
 })
 
 BigWigs:AddColors("Shad'har the Insatiable", {
+	[306448] = "orange",
+	[306928] = "red",
+	[306929] = "red",
+	[306930] = "red",
 	[306942] = "cyan",
 	[307358] = {"blue","yellow"},
 	[307471] = {"blue","purple"},
 	[307472] = {"blue","cyan"},
-	[312528] = "yellow",
-	[312529] = "yellow",
-	[312530] = "yellow",
+	[314736] = "blue",
+	[318078] = {"blue","red"},
+	["stages"] = "cyan",
+})
+
+BigWigs:AddColors("Drest'agath", {
+	[308377] = "blue",
+	[308941] = "orange",
+	[310246] = "red",
+	[310277] = {"blue","purple"},
+	[310329] = "yellow",
+	[310358] = {"blue","yellow"},
+	[310390] = "orange",
+	[310580] = {"blue","red"},
+	["adds"] = "cyan",
 })
 
 BigWigs:AddColors("Vexiona", {

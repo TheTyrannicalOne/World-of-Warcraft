@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0318,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 157897,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:117378::::::::120:71:512:11:1:6315:120:::|h[Direbrew's Bloodied Shanker]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

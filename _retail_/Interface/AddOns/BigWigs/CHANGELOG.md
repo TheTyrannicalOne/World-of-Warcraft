@@ -1,8 +1,8 @@
 # BigWigs
 
-## [v172.1](https://github.com/BigWigsMods/BigWigs/tree/v172.1) (2020-01-21)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v172...v172.1)
+## [v172.2](https://github.com/BigWigsMods/BigWigs/tree/v172.2) (2020-01-22)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v172.1...v172.2)
 
-- Nyalotha/Raden: missing args  
-- Nyalotha/Raden: Update options spellid for Nullification Strike  
-- Nyalotha/Raden: Fix a spell id  
+- Nyalotha/Shadhar: Hint option keys  
+- Nyalotha/Shadhar: Minor adjustments  
+- Nyalotha/Drestagath: Add initial module  
