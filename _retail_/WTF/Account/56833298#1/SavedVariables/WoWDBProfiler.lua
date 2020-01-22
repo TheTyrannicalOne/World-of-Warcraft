@@ -7,8 +7,8 @@ WoWDBProfilerData = {
 		["Goramor - Runetotem"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Shaewong - Dalaran"] = "Default",
-		["Sinh - Dalaran"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
+		["Gangus - Runetotem"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
@@ -21,12 +21,12 @@ WoWDBProfilerData = {
 		["Claugh - Runetotem"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
 		["Migimong - Runetotem"] = "Default",
-		["Gangus - Runetotem"] = "Default",
+		["Sinh - Dalaran"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 	},
 	["region"] = "US",
 	["version"] = 19,
-	["build_num"] = 32978,
+	["build_num"] = 33084,
 	["global"] = {
 		["objects"] = {
 			["206726"] = {
@@ -34,6 +34,7 @@ WoWDBProfilerData = {
 					["locations"] = {
 						["Orgrimmar:85"] = {
 							["3:528:756"] = true,
+							["3:528:754"] = true,
 						},
 					},
 				},
@@ -42,8 +43,11 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["City of Ironforge:87"] = {
-							["3:330:646"] = true,
+							["3:330:644"] = true,
 							["3:328:646"] = true,
+							["3:330:646"] = true,
+							["3:330:652"] = true,
+							["3:332:650"] = true,
 						},
 					},
 				},
@@ -65,8 +69,8 @@ WoWDBProfilerData = {
 			[158415] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 114,
-				["durability"] = 40,
 				["unique_id"] = 0,
+				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
 			[3643] = {
@@ -110,15 +114,8 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["upgrade_value"] = 0,
 			},
-			[160149] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 120,
-				["durability"] = 115,
-				["seen_bonuses"] = {
-					["1692:4796"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
+			[23472] = {
+				["durability"] = 25,
 			},
 			[122529] = {
 				["instance_difficulty_id"] = 0,
@@ -136,11 +133,11 @@ WoWDBProfilerData = {
 			[4800] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
-				["durability"] = 75,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
+				["durability"] = 75,
 				["suffix_id"] = 0,
 			},
 			[122352] = {
@@ -176,8 +173,8 @@ WoWDBProfilerData = {
 			[85663] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
-				["durability"] = 20,
 				["unique_id"] = 0,
+				["durability"] = 20,
 				["suffix_id"] = 0,
 			},
 			[159458] = {
@@ -189,8 +186,8 @@ WoWDBProfilerData = {
 			[155245] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 115,
-				["durability"] = 55,
 				["unique_id"] = 0,
+				["durability"] = 55,
 				["suffix_id"] = 0,
 			},
 			[131628] = {
@@ -235,8 +232,8 @@ WoWDBProfilerData = {
 				["durability"] = 25,
 				["unique_id"] = 0,
 			},
-			[160252] = {
-				["instance_difficulty_id"] = 11,
+			[122255] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
@@ -250,7 +247,17 @@ WoWDBProfilerData = {
 			[159337] = {
 				["instance_difficulty_id"] = 19,
 				["upgrade_value"] = 117,
+				["unique_id"] = 0,
 				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[160149] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 120,
+				["durability"] = 115,
+				["seen_bonuses"] = {
+					["1692:4796"] = true,
+				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
@@ -264,17 +271,11 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[122255] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
 			[158443] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 118,
-				["durability"] = 40,
 				["unique_id"] = 0,
+				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
 			[158075] = {
@@ -283,21 +284,37 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[23472] = {
-				["durability"] = 25,
+			[160252] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 		},
 		["npcs"] = {
-			["54334"] = {
+			["142666"] = {
+				["reaction"] = "24:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-						},
-						["spells"] = {
-							[101260] = 4,
+							["level_115"] = {
+								["max_health"] = 32727,
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:328:646"] = true,
+										["3:330:652"] = true,
+									},
+								},
+								["power"] = "MANA:885315",
+							},
 						},
 					},
 				},
+				["auctioneer"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
 			},
 			["44866"] = {
 				["is_pvp"] = true,
@@ -305,8 +322,8 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 				["faction"] = "Orgrimmar",
-				["auctioneer"] = true,
 				["class"] = "WARRIOR",
+				["auctioneer"] = true,
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -323,14 +340,65 @@ WoWDBProfilerData = {
 				},
 				["reaction"] = "120:Horde:FRIENDLY",
 			},
+			["49799"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[89798] = 1,
+						},
+					},
+				},
+			},
+			["5109"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["sells"] = {
+					[33449] = "-1:5:[8500]",
+					[27855] = "-1:5:[5600]",
+					[58260] = "-1:5:[18000]",
+					[58261] = "-1:5:[20000]",
+					[8950] = "-1:5:[4000]",
+					[35950] = "-1:5:[16000]",
+					[4540] = "-1:5:[25:0:0]",
+					[4541] = "-1:5:[125:0:0]",
+					[4542] = "-1:5:[500:0:0]",
+					[4601] = "-1:5:[2000]",
+					[82450] = "-1:5:[22400]",
+					[82451] = "-1:5:[25600]",
+					[4544] = "-1:5:[1000]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "24:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:302:678"] = true,
+										["3:308:674"] = true,
+										["3:310:668"] = true,
+									},
+								},
+								["max_health"] = 782,
+							},
+						},
+					},
+				},
+			},
 			["8720"] = {
 				["is_pvp"] = true,
 				["genders"] = {
 					["FEMALE"] = true,
 				},
 				["faction"] = "Ironforge",
-				["reaction"] = "24:Alliance:FRIENDLY",
 				["auctioneer"] = true,
+				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -338,8 +406,7 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
 										["3:246:742"] = true,
-										["3:246:730"] = true,
-										["3:240:738"] = true,
+										["3:250:736"] = true,
 									},
 								},
 								["max_health"] = 5295,
@@ -347,32 +414,107 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["class"] = "WARRIOR",
+				["reaction"] = "24:Alliance:FRIENDLY",
+			},
+			["25420"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[45525] = 1,
+						},
+					},
+				},
+			},
+			["162001"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[315356] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
 			},
 		},
 		["quests"] = {
-			[40643] = {
+			[27026] = {
+				["can_share"] = true,
+			},
+			[2039] = {
+				["can_share"] = true,
+			},
+			[42234] = {
+			},
+			[53435] = {
 			},
 			[51421] = {
 				["can_share"] = true,
 			},
-			[31891] = {
+			[28563] = {
+				["can_share"] = true,
+			},
+			[28564] = {
+				["can_share"] = true,
+			},
+			[28490] = {
+				["can_share"] = true,
+			},
+			[56044] = {
+			},
+			[54185] = {
+			},
+			[27016] = {
+				["can_share"] = true,
+			},
+			[28539] = {
+				["can_share"] = true,
+			},
+			[50606] = {
+			},
+			[27033] = {
+				["can_share"] = true,
+			},
+			[40643] = {
 			},
 			[51432] = {
 			},
-			[56044] = {
+			[13657] = {
+				["can_share"] = true,
+			},
+			[28492] = {
+				["can_share"] = true,
+			},
+			[50598] = {
+			},
+			[44989] = {
+			},
+			[13658] = {
+				["can_share"] = true,
 			},
 			[54042] = {
 				["can_share"] = true,
 			},
-			[54185] = {
+			[50603] = {
 			},
-			[53435] = {
+			[42233] = {
+			},
+			[13659] = {
+				["can_share"] = true,
+			},
+			[42421] = {
+			},
+			[31891] = {
+			},
+			[48641] = {
 			},
 			[47105] = {
 				["can_share"] = true,
 			},
-			[44989] = {
+			[27028] = {
+				["can_share"] = true,
 			},
 		},
 	},

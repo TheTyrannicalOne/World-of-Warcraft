@@ -10,7 +10,7 @@ local ldbi = LibStub("LibDBIcon-1.0")
 -- Generate our version variables
 --
 
-local BIGWIGS_VERSION = 171
+local BIGWIGS_VERSION = 172
 local BIGWIGS_RELEASE_STRING, BIGWIGS_VERSION_STRING = "", ""
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
@@ -21,7 +21,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "95837c8" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "5498aa0" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[===[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -262,6 +262,7 @@ do
 		[1841] = lw_bfa, -- Underrot
 		[1862] = lw_bfa, -- Waycrest Manor
 		[2097] = lw_bfa, -- Operation: Mechagon
+		[2212] = lw_bfa, -- Horrific Vision of Orgrimmar
 	}
 
 	public.zoneTblWorld = {

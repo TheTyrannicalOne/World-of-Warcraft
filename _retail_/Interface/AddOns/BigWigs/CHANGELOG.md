@@ -1,15 +1,8 @@
 # BigWigs
 
-## [v171](https://github.com/BigWigsMods/BigWigs/tree/v171) (2020-01-15)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v170...v171)
+## [v172.1](https://github.com/BigWigsMods/BigWigs/tree/v172.1) (2020-01-21)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v172...v172.1)
 
-- bump version  
-- bump toc  
-- ruRU update (#735)  
-- esES update (#739)  
-- Nyalotha/Skitra: Module improvements  
-- Nyalotha/Raden: minor fixes  
-- Nyalotha/Raden: Update option keys  
-- Nyalotha/Raden: Initial module  
-- Nyalotha/Xanesh: Fix undefined variable  
-- Nyalotha/Xanesh: Update module  
+- Nyalotha/Raden: missing args  
+- Nyalotha/Raden: Update options spellid for Nullification Strike  
+- Nyalotha/Raden: Fix a spell id  

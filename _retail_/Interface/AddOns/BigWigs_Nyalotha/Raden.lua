@@ -1,4 +1,3 @@
-if not IsTestBuild() then return end
 --------------------------------------------------------------------------------
 -- TODO:
 -- -- Timers after absorbing orbs
@@ -41,7 +40,7 @@ function mod:GetOptions()
 	return {
 		"stages",
 		-- Stage 1
-		{311551, "TANK"}, -- Nullifying Strike
+		{306819, "TANK"}, -- Nullifying Strike
 		"essences", -- Void/Vita Essences (Mythic: +Nightmare)
 		306732, -- Vita Empowered
 		306273, -- Unstable Vita
@@ -61,7 +60,7 @@ function mod:GetOptions()
 		315252, -- Dread Inferno
 	},{
 		["stages"] = "general",
-		[311551] = CL.stage:format(1),
+		[306819] = CL.stage:format(1),
 		[313213] = CL.stage:format(2),
 		[312996] = CL.mythic,
 	}
@@ -69,8 +68,8 @@ end
 
 function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "NullifyingStrikeStart", 306819)
-	self:Log("SPELL_AURA_APPLIED", "NullifyingStrikeApplied", 311551)
-	self:Log("SPELL_AURA_APPLIED_DOSE", "NullifyingStrikeApplied", 311551)
+	self:Log("SPELL_AURA_APPLIED", "NullifyingStrikeApplied", 306819)
+	self:Log("SPELL_AURA_APPLIED_DOSE", "NullifyingStrikeApplied", 306819)
 	self:Log("SPELL_CAST_SUCCESS", "Essences", 306090, 306168, 312750) -- Draw Vita, Void, Nightmare
 
 	-- Vita
@@ -114,10 +113,10 @@ end
 -- Event Handlers
 --
 
-function mod:NullifyingStrikeStart()
-	self:Message2(311551, "purple")
-	self:PlaySound(311551, "alarm")
-	self:Bar(311551, 17)
+function mod:NullifyingStrikeStart(args)
+	self:Message2(args.spellId, "purple")
+	self:PlaySound(args.spellId, "alarm")
+	self:Bar(args.spellId, 17)
 end
 
 function mod:NullifyingStrikeApplied(args)

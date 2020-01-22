@@ -96,7 +96,7 @@ function AuctionScrollingTable.Acquire(self)
 			:SetJustifyH("RIGHT")
 			:SetTextFunction(private.GetItemLevelCellText)
 			:Commit()
-	if TSM.IsWow83() then
+	if not TSM.IsWowClassic() then
 		self:GetScrollingTableInfo()
 			:NewColumn("qty")
 				:SetTitles(L["Qty"])
@@ -360,35 +360,28 @@ function AuctionScrollingTable._UpdateData(self)
 			private.sortContext.baseItemStringByHash[hash] = baseItemString
 		end
 
-		-- determine if this comes before the current base record
-		if private.RecordSortHelper(record, self._baseRecordByItem[baseItemString], sortAscending) then
-			local prevRecord = self._baseRecordByItem[baseItemString]
+		-- determine if this comes before the current base item record
+		local prevBaseItemRecord = self._baseRecordByItem[baseItemString]
+		if private.RecordSortHelper(record, prevBaseItemRecord, sortAscending) then
 			self._baseRecordByItem[baseItemString] = record
 			private.sortContext.isBaseItemHash[hash] = true
-			if prevRecord then
-				private.sortContext.isBaseItemHash[prevRecord.hash] = nil
+			if prevBaseItemRecord then
+				private.sortContext.isBaseItemHash[prevBaseItemRecord.hash] = nil
 			end
 			private.sortContext.baseRecordSortValues[baseItemString] = sortValue
 		end
 
-		-- count the number of auctions grouped by hash
-		if TSM.IsWow83() then
-			if not self._numAuctionsByHash[hash] then
-				self._numAuctionsByItem[baseItemString] = (self._numAuctionsByItem[baseItemString] or 0) + 1
-				self._numAuctionsByHash[hash] = 0
-			end
-			self._numAuctionsByHash[hash] = self._numAuctionsByHash[hash] + record.stackSize
-		else
-			if not self._numAuctionsByHash[hash] then
-				self._numAuctionsByItem[baseItemString] = (self._numAuctionsByItem[baseItemString] or 0) + 1
-				self._numAuctionsByHash[hash] = 0
-			end
-			self._numAuctionsByHash[hash] = self._numAuctionsByHash[hash] + 1
-		end
-
-		if not self._baseRecordByHash[hash] or private.sortContext.isBaseItemHash[hash] then
+		-- determine if this comes before the current base hash record
+		if private.RecordSortHelper(record, self._baseRecordByHash[hash], sortAscending) then
 			self._baseRecordByHash[hash] = record
 		end
+
+		-- count the number of auctions grouped by hash
+		if not self._numAuctionsByHash[hash] then
+			self._numAuctionsByItem[baseItemString] = (self._numAuctionsByItem[baseItemString] or 0) + 1
+			self._numAuctionsByHash[hash] = 0
+		end
+		self._numAuctionsByHash[hash] = self._numAuctionsByHash[hash] + (TSM.IsWowClassic() and 1 or record.stackSize)
 	end
 
 	-- sort the data

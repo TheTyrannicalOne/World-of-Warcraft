@@ -5,24 +5,24 @@ OneRing_Config = {
 		["Dalaran-Tynkster"] = "Shanyt",
 		["Black Dragonflight-Durlok-3"] = "default",
 	},
-	["_GameVersion"] = "8.2.5",
+	["_GameVersion"] = "8.3.0",
 	["_OPieVersion"] = "Walnut 6 (3.101)",
 	["ProfileStorage"] = {
 		["Shanyt"] = {
 			["Bindings"] = {
 				["Mounts"] = "ALT-Q",
-				["OPieAutoQuest"] = false,
-				["Mounts7"] = "ALT-Q",
 				["Utility"] = "ALT-E",
+				["Mounts7"] = "ALT-Q",
+				["OPieAutoQuest"] = false,
 			},
 		},
 		["default"] = {
 			["Bindings"] = {
 				["OPieAutoQuest"] = false,
 				["Mounts2"] = "ALT-Q",
-				["Utility1"] = "ALT-E",
-				["Mounts3"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
+				["Mounts3"] = "ALT-Q",
+				["Utility1"] = "ALT-E",
 			},
 		},
 	},
@@ -72,10 +72,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABuedW477KwC",
 					["id"] = 75973,
 				}, -- [10]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
 			["Mounts7"] = {
 				{
@@ -102,10 +102,10 @@ OneRing_Config = {
 					460, -- [2]
 					["sliceToken"] = "ABuehEXfjwe",
 				}, -- [5]
-				["name"] = "Mounts",
+				["limit"] = "Tynkster-Dalaran",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Tynkster-Dalaran",
+				["name"] = "Mounts",
 			},
 			["Utility1"] = {
 				{
@@ -113,10 +113,10 @@ OneRing_Config = {
 					64488, -- [2]
 					["sliceToken"] = "ABuedyqmNB16",
 				}, -- [1]
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Vancard-Zul'jin",
 			},
 			["Mounts"] = {
 				{
@@ -179,10 +179,10 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuede=1Sr1m",
 				}, -- [15]
-				["name"] = "Mounts",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Mounts",
 			},
 			["Utility"] = {
 				{
@@ -215,10 +215,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["Mounts2"] = {
 				{
@@ -297,10 +297,10 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuedyqmNBrM",
 				}, -- [19]
-				["name"] = "Mounts",
+				["limit"] = "Vancard-Zul'jin",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Mounts",
 			},
 			["SpecMenu"] = {
 				{
@@ -362,10 +362,10 @@ OneRing_Config = {
 					140192, -- [2]
 					["sliceToken"] = "ABuedW477Kes",
 				}, -- [2]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
 		},
 	},

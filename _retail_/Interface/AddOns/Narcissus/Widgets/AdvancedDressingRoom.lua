@@ -43,48 +43,7 @@ local XmogSlotTable = {
     ["Manual"] = {{10, INVTYPE_HAND}, {6, INVTYPE_WAIST}, {9, INVTYPE_WRIST}},                                          --Manually Created
 };
 
-
-local ModelScales = {
-    --local GenderID = UnitSex(unit);   2 Male 3 Female
-	--[raceID] = {male actorID, female actorID},
-    [2]  = {483, 483},		-- Orc bow
-    [3]  = {471, nil},		-- Dwarf
-    [5]  = {472, 487},		-- UD   0.9585 seems small
-    [6]  = {449, 484},		-- Tauren
-    [7]  = {450, 450},		-- Gnome
-    [8]  = {485, 486},		-- Troll  0.9414 too high?  
-    [9]  = {476, 477},		-- Goblin
-    [11] = {475, 501},		-- Goat
-    [22] = {474, 500},      -- Worgen
-    [24] = {473, 473},		-- Pandaren
-    [28] = {490, 491},		-- Highmountain Tauren
-    [30] = {488, 489},		-- Lightforged Draenei
-    [31] = {492, 492},		-- Zandalari
-    [32] = {494, 497},		-- Kul'Tiran
-    [34] = {499, nil},		-- Dark Iron Dwarf
-    [35] = {924, 923},      -- Vulpera
-    [36] = {495, 498},		-- Mag'har
-    [37] = {929, 931},      -- Mechagnome
-}
-
-
-local DefaultActorInfoID = 438;
-local function GetActorInfoByUnit(unit)
-    if not UnitExists(unit) or not UnitIsPlayer(unit) or not CanInspect(unit, false) then return; end
-    
-    local _, _, raceID = UnitRace(unit);
-    local genderID = UnitSex(unit);
-    if raceID == 25 or raceID == 26 then --Pandaren A|H
-        raceID = 24
-    end
-    if not (raceID and genderID) then
-        return DefaultActorInfoID;     --438
-    elseif ModelScales[raceID] then
-        return ModelScales[raceID][genderID - 1] or DefaultActorInfoID;
-    else
-        return DefaultActorInfoID;     --438
-    end
-end
+local GetActorInfoByUnit = NarciAPI_GetActorInfoByUnit;
 
 local function CreateSlotButton(frame)
     local strupper = strupper;
@@ -493,7 +452,7 @@ local function UpdateDressingRoomModel(self, unit)
     end
 
     if updateScale then
-        local modelInfo = C_ModelInfo.GetModelSceneActorInfoByID(GetActorInfoByUnit(modelUnit));
+        local modelInfo = GetActorInfoByUnit(modelUnit);
         C_Timer.After(0.0,function()
             ModelScene:InitializeActor(actor, modelInfo);   --Re-scale
         end);
@@ -624,14 +583,7 @@ local function NarciBridge_DressUpFrame_Initialize()
     local texName = parentFrame:GetName() and parentFrame:GetName().."BackgroundOverlay"
     local tex = parentFrame:CreateTexture(texName, "BACKGROUND", "ModelBackground_Template", 2)
 
-    local ReScaleFrame;
-    local _, _, _, tocversion = GetBuildInfo();
-    if tocversion > 80205 then
-        --8.3 MaximizeMinimizeFrame becomes a child of DressUpFrame
-        ReScaleFrame = parentFrame.MaximizeMinimizeFrame
-    else
-        ReScaleFrame = MaximizeMinimizeFrame;
-    end
+    local ReScaleFrame = parentFrame.MaximizeMinimizeFrame;
     
     if ReScaleFrame then
         local function OnMaximize(frame)
@@ -676,13 +628,16 @@ end
 
 
 local initialize = CreateFrame("Frame")
-initialize:RegisterEvent("VARIABLES_LOADED");
+initialize:RegisterEvent("ADDON_LOADED");
 initialize:RegisterEvent("PLAYER_ENTERING_WORLD");
 initialize:RegisterEvent("UI_SCALE_CHANGED");
 initialize:SetScript("OnEvent",function(self,event,...)
-    if event == "VARIABLES_LOADED" then
-        self:UnregisterEvent("VARIABLES_LOADED");
-        NarciBridge_DressUpFrame_Initialize();
+    if event == "ADDON_LOADED" then
+        local name = ...;
+        if name == "Narcissus" then
+            self:UnregisterEvent("ADDON_LOADED");
+            NarciBridge_DressUpFrame_Initialize();
+        end
     elseif event == "PLAYER_ENTERING_WORLD" then
         UseTargetModel = NarcissusDB.DressingRoomUseTargetModel;
         if not NarciBridge_DressUpFrame then

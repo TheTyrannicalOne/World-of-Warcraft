@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0313,
+	["LastVersion"] = 2.0318,
 	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

@@ -8,6 +8,17 @@ BigWigs:AddSounds("Wrathion", {
 	["stages"] = "long",
 })
 
+BigWigs:AddSounds("Maut", {
+	[305722] = "long",
+	[307806] = "warning",
+	[308044] = "long",
+	[308872] = "alarm",
+	[308903] = "alarm",
+	[310129] = "alarm",
+	[314337] = "warning",
+	[314993] = "warning",
+})
+
 BigWigs:AddSounds("The Prophet Skitra", {
 	[307725] = "long",
 	[307950] = "warning",
@@ -29,11 +40,13 @@ BigWigs:AddSounds("The Hivemind", {
 	[307201] = "long",
 	[307213] = "long",
 	[307232] = "alert",
+	[307569] = "info",
 	[307968] = "alarm",
-	[308178] = "warning",
 	[308227] = "alert",
 	[310340] = "alarm",
 	[313652] = "alarm",
+	[313672] = "alarm",
+	[314583] = "warning",
 })
 
 BigWigs:AddSounds("Shad'har the Insatiable", {
@@ -67,12 +80,12 @@ BigWigs:AddSounds("Ra-den the Despoiled", {
 	[306603] = "alarm",
 	[306732] = "info",
 	[306733] = "info",
+	[306819] = "alarm",
 	[306865] = "alert",
 	[306866] = "alert",
 	[306881] = "alarm",
 	[310003] = "alert",
 	[310019] = {"info","warning"},
-	[311551] = "alarm",
 	[312996] = "info",
 	[313077] = "warning",
 	[313213] = {"alarm","alert"},
@@ -80,6 +93,28 @@ BigWigs:AddSounds("Ra-den the Despoiled", {
 	[315252] = "alarm",
 	["essences"] = "warning",
 	["stages"] = "long",
+})
+
+BigWigs:AddSounds("Il'gynoth, Corruption Reborn", {
+	[309961] = "warning",
+	[310322] = "alarm",
+	[310433] = "long",
+	[311401] = "long",
+	[313759] = "warning",
+	["stages"] = "long",
+})
+
+BigWigs:AddSounds("Carapace of N'Zoth", {
+	[-21069] = "alert",
+	[-20565] = "alert",
+	[-20560] = "info",
+	[306973] = "warning",
+	[306984] = "warning",
+	[306988] = "alarm",
+	[307011] = "info",
+	[307092] = "alarm",
+	[315954] = "warning",
+	["stages"] = {"info","long"},
 })
 
 BigWigs:AddSounds("N'Zoth, the Corruptor", {

@@ -1,15 +1,10 @@
-## v4.9.15 Changes
+## v4.9.17 Changes
 
-* Auctioning will now report a buyout above the gold cap as invalid
-* [Retail] Fixed issue with changing the Auctioning post price
-* [Retail] Fixed duration filtering in My Auctions
-* [Retail] Fixed posted / sold auction totals in My Auctions
-* [Retail] Fixed various issues with scans getting stuck
-* [Retail] Fixed error when opening some AH mail
-* [Retail] Optimized item-based scans (Auctioning and some Shopping scans)
-* [Retail] Fixed issue with cancel scan incorrectly showing an auction as undercut immediately after posting
-* [Retail] Fixed issue with cancel scan incorrectly showing auctions as undercut by the player
-* [Retail] Fixed issue with auction order in the various auction table UIs
-* [Retail] Fixed issue with default stack size when posting via Shopping
+* The total posted auction stats in My Auctions will no longer include sold auctions
+* Fixed issue with custom price source updates not properly reflecting until a reload
+* Fixed issue with creating new profiles not working
+* [Retail] Fixed issue with Accounting recording of purchases and sales with multiple sellers / buyers
+* [Retail] Added new 8.3 bonusIds
+* [Retail] Added "MAX" button to Shopping's commodity buyout confirmation dialog
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)
