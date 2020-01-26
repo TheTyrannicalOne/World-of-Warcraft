@@ -802,6 +802,25 @@ function Narci_EscapeSwitch_OnClick(self)
     SetUseEcapeButtonForExit(self);
 end
 
+local function MinimapButtonParentSwitch_SetState(self)
+    local state = NarcissusDB.IndependentMinimapButton;
+    local MinimapButton = Narci_MinimapButton;
+    if state then
+        MinimapButton:ClearAllPoints();
+        MinimapButton:SetParent(UIParent);
+        MinimapButton:SetFrameLevel(60);
+        Narci_MinimapButton_OnLoad();
+    else
+        MinimapButton:SetParent(Minimap);
+    end
+    self.Tick:SetShown(not state);
+end
+
+function Narci_MinimapButtonParentSwitch_OnClick(self)
+    NarcissusDB.IndependentMinimapButton = not NarcissusDB.IndependentMinimapButton;
+    MinimapButtonParentSwitch_SetState(self)
+end
+
 -------------------------------------------------------------
 ----------------Preference ScrollBar Animation---------------
 -------------------------------------------------------------
@@ -1178,6 +1197,7 @@ local function InitializePreference()
     BustShotSwitch_SetState(Narci_BustShotSwitch);
     CorruptionBarSwitch_SetState(Narci_CorruptionBarSwitch);
     SetUseEcapeButtonForExit(Narci_EscapeSwitch);
+    MinimapButtonParentSwitch_SetState(Narci_MinimapButtonParentSwitch);
     --CorruptionTooltipToggle_SetState(Narci_CorruptionTooltipSwitch);  --Status set in CorruptionSystem.lua
 
     Narci_VignetteStrengthSlider:SetValue(NarcissusDB.VignetteStrength);

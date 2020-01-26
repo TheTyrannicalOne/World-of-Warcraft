@@ -436,7 +436,7 @@
 				<FontString inherits="NarciPrefFontWhiteMild" justifyH="LEFT" justifyV="MIDDLE" parentKey="Label">
 					<Size x="0" y="0"/>
 					<Anchors>
-						<Anchor point="LEFT" relativeKey="$parent" relativePoint="RIGHT" x="8" y="0"/>
+						<Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPRIGHT" x="8" y="0"/>
 					</Anchors>
 				</FontString>
 				<Texture file="Interface\AddOns\Narcissus\Art\Widgets\Arrows\Tick" parentKey="Tick" hidden="true">

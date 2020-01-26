@@ -1,10 +1,10 @@
 
 BigWigs:AddSounds("Wrathion", {
+	[305978] = {"alert","Warning"},
 	[306163] = "warning",
 	[306289] = "alarm",
 	[306735] = "alert",
 	[307013] = "warning",
-	[313973] = {"alert","Warning"},
 	["stages"] = "long",
 })
 
@@ -55,17 +55,17 @@ BigWigs:AddSounds("Shad'har the Insatiable", {
 	[306929] = "alert",
 	[306930] = "alert",
 	[306942] = "info",
-	[307358] = "info",
-	[307471] = "alarm",
-	[307472] = "info",
+	[306953] = "info",
+	[307471] = {"alarm","info"},
+	[307472] = {"alarm","info"},
 	[314736] = "alarm",
 	[318078] = "warning",
 	["stages"] = "long",
 })
 
 BigWigs:AddSounds("Drest'agath", {
-	[308377] = "info",
-	[308941] = "long",
+	[308377] = "long",
+	[308941] = {"info","long"},
 	[310246] = "alarm",
 	[310277] = "alarm",
 	[310329] = "alert",
@@ -134,18 +134,23 @@ BigWigs:AddSounds("Carapace of N'Zoth", {
 })
 
 BigWigs:AddSounds("N'Zoth, the Corruptor", {
-	[309713] = "alarm",
-	[309980] = "warning",
+	[-21491] = "info",
+	[309698] = "alert",
 	[309991] = "alarm",
 	[310042] = "warning",
-	[310134] = "warning",
 	[310184] = "alarm",
-	[310331] = "alert",
 	[312155] = "long",
+	[312866] = "warning",
 	[313184] = "info",
+	[313400] = {"alarm","alert"},
 	[313609] = "warning",
-	[314889] = "warning",
 	[315772] = "long",
-	[316711] = "warning",
-	[317292] = "warning",
+	[315927] = {"info","warning"},
+	[316463] = "long",
+	[316711] = {"alarm","warning"},
+	[317066] = "alarm",
+	[317102] = "warning",
+	[318449] = "alert",
+	[318976] = "long",
+	["stages"] = {"info","long"},
 })

@@ -676,28 +676,36 @@ local function BeginZoomingIn()
 	end)
 end
 
+function Narci:EmergencyStop()
+	print("Camera has been reset.");
+	UIParent:SetAlpha(1);
+	MoveViewRightStop();
+	MoveViewLeftStop();
+	ResetView(5);
+	ConsoleExec( "pitchlimit 88");
+	CVar_Temp.OverShoulder = 0;
+	SetCVar("test_cameraOverShoulder", 0);
+	ConsoleExec( "actioncam off" );
+	Narci_ModelContainer:Hide();
+	Narci_ModelSettings:Hide();
+	Narci_Character:Hide();
+	Narci_Attribute:Hide();
+	Narci_Vignette:Hide();
+	OpenViaClick = false;
+	xmogMode = 0;
+	MogMode_Offset = 0;
+	NarciPlayerModelFrame1.xmogMode = 0;
+	ACL:Hide();
+end
+
+function Narci_MinimapButton_OnPostClick(self, button, down)
+	if button == "MiddleButton" then
+		Narci:EmergencyStop();
+	end
+end
+
 function Narci_MinimapButton_OnClick(self, button, down)
 	if button == "MiddleButton" then
-		--Emergency Stop --PH
-		print("Camera has been reset.");
-		UIParent:SetAlpha(1);
-		MoveViewRightStop();
-		MoveViewLeftStop();
-		ResetView(5);
-		ConsoleExec( "pitchlimit 88");
-		CVar_Temp.OverShoulder = 0;
-		SetCVar("test_cameraOverShoulder", 0);
-		ConsoleExec( "actioncam off" );
-		Narci_ModelContainer:Hide();
-		Narci_ModelSettings:Hide();
-		Narci_Character:Hide();
-		Narci_Attribute:Hide();
-		Narci_Vignette:Hide();
-		OpenViaClick = false;
-		xmogMode = 0;
-		MogMode_Offset = 0;
-		NarciPlayerModelFrame1.xmogMode = 0;
-		ACL:Hide();
 		return;
 	elseif button == "RightButton" then
 		if IsShiftKeyDown() then
@@ -732,6 +740,7 @@ end
 
 function Narci_MinimapButton_OnEnter(self)
 	if not NarcissusDB.ShowMinimapButton then return; end
+	self:RegisterForClicks("LeftButtonUp","RightButtonUp","MiddleButtonUp");
 
 	local HotKey1, HotKey2 = GetBindingKey("TOGGLECHARACTER0");
 	local KeyText;
@@ -810,7 +819,7 @@ local function Narci_MinimapButton_UpdateAngle(radian)
 	Narci_MinimapButton:SetPoint("CENTER", "Minimap", "CENTER", x, y);
 end
 
-local function Narci_MinimapButton_OnLoad()
+function Narci_MinimapButton_OnLoad()
 	local radian = NarcissusDB.MinimapButton.Position;
 	Narci_MinimapButton_UpdateAngle(radian);
 end
@@ -1019,7 +1028,7 @@ local RuneLetterTable = {
 	["crit"] = "ᚲ\nᚱ\nᛁ",	  --CRI
 	["haste"] = "ᚼ\nᛆ\nᛋ",	 --HAS
 	["mastery"] = "ᛘ\nᛋ\nᛐ", --MST
-	["versa"] = "ᚡ\nᚽ\nᚱ",	 --VER
+	["versatility"] = "ᚡ\nᚽ\nᚱ",	 --VER
 	["STR"] = "ᛊ\nᛏ\nᚱ",	 --STR
 	["AGI"] = "ᛆ\nᚵ\nᛁ",	 --AGI
 	["INT"] = "ᛁ\nᚾ\nᛐ",	 --INT
@@ -2301,6 +2310,8 @@ local function SetCorruptionBackground()
 		SetIlvlBackground();
 		frame3.Number:SetText(0);
 		frame3.Header:SetText("TC");
+		frame3.tooltipHeadline = TOTAL_CORRUPTION_TOOLTIP_LINE.." "..0;
+		frame3.tooltipLineOpen = L["No Corrupted Item"];
 		return;
 	end
 
@@ -2311,6 +2322,8 @@ local function SetCorruptionBackground()
 	else
 		frame3.Header:SetText("TC");
 		frame3.Number:SetText(totalCorruption);
+		frame3.tooltipHeadline = TOTAL_CORRUPTION_TOOLTIP_LINE.." "..totalCorruption;
+		frame3.tooltipLineOpen = format(L["Total Corruption Format"], totalCorruption);
 	end
 end
 
@@ -4045,7 +4058,7 @@ local function rotateFrame(frame, Degree)
 	ag:Pause()  
 end
 
-local Shaftdiameter = 53;
+local shaftDiameter = 53;
 local lastDegree = 0;
 local tinyIncre = 1000;
 
@@ -4072,8 +4085,8 @@ local function TinyZoom(degree, lastDegree)
 end
 
 local function RotateShaftNode(radian)
-	local ofsx = Shaftdiameter*math.cos(radian)
-	local ofsy = Shaftdiameter*math.sin(radian)
+	local ofsx = shaftDiameter*math.cos(radian)
+	local ofsy = shaftDiameter*math.sin(radian)
 	CameraControllerNode:SetPoint("CENTER", "CameraControllerThumb", "CENTER", ofsx, ofsy);
 	CameraControllerThumb.Shaft:SetRotation(radian)
 end
@@ -5200,21 +5213,6 @@ graphicsLightingQuality 3
 ------Photo Mode Switch------
 
 function SwitchMode_OnClick(self, key)
-	if key == "MiddleButton" then		--Emergency Stop --PH
-		UIParent:SetAlpha(1);
-		MoveViewRightStop();
-		ResetView(5);
-		ConsoleExec( "pitchlimit 88");
-		CVar_Temp.OverShoulder = 0;
-		SetUIVisibility(true);
-		ConsoleExec( "actioncam off" );
-		NarciPlayerModelFrame1:Hide();
-		Narci_ModelSettings:Hide();
-		return;
-	elseif key == "RightButton" then
-		return;
-	end
-
 	self.IsOn = not self.IsOn;
 	self:GetParent().PhotoModeController_UpdateFrame.TimeSinceLastUpdate = 0;
 	self:GetParent().PhotoModeController_UpdateFrame:Hide();
@@ -6089,7 +6087,9 @@ function Narci_SetActiveBorderTexture()
 	--Optimize this minimap button's radial offset
 	if IsAddOnLoaded("AzeriteUI") then
 		RadialOffset = 18;
-		minimapBackgroundSize = 80;
+		if MinimapButton:GetParent() == UIParent then
+			minimapBackgroundSize = 80;
+		end
 		minimapTexture = "Interface/AddOns/Narcissus/Art/Minimap/LOGO-Thick";
 	elseif IsAddOnLoaded("DiabolicUI") then
 		RadialOffset = 12;
@@ -6113,7 +6113,7 @@ function Narci_GuideLineFrame_OnSizing(self, offset)
 	local W0, H = WorldFrame:GetSize();
 	if not (W0 and H) or H == 0 then return; end;
 	local offset = offset or 0;
-	local W = H / 9 * 16;
+	local W = math.min(H / 9 * 16, W0);
 	W = math.floor(W + 0.5);
 	--print("Original: "..W0.." Calculated: "..W);
 	self:SetWidth(W - offset);

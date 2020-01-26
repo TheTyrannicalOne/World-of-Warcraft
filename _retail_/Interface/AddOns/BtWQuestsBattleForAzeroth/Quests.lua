@@ -63277,6 +63277,11 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [57495] = {
+        name = "The Future of Mechagon",
+        requiredLevel = 120,
+        maxLevel = 120,
+    },
     [57496] = {
         name = "Ascension",
         requiredLevel = 120,
@@ -63291,6 +63296,11 @@ BtWQuestsDatabase:AddQuestsTable({
                 amount = 468000,
             },
         },
+    },
+    [57497] = {
+        name = "Propagate the News",
+        requiredLevel = 120,
+        maxLevel = 120,
     },
     [57524] = {
         name = "Accessing the Archives",
@@ -63554,6 +63564,17 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 234000,
+            },
+        },
+    },
+    [58214] = {
+        name = "Urgent Care",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
             },
         },
     },

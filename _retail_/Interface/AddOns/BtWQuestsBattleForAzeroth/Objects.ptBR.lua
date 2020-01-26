@@ -264,8 +264,14 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [322533] = {
         name = "Tomo do Elementos de Mardivas",
     },
+    [326393] = {
+        name = "Depósito de Armas de Azerita",
+    },
     [326418] = {
         name = "Baú Arcano",
+    },
+    [326588] = {
+        name = "Depósito de Armas de Azerita",
     },
     [327170] = {
         name = "Cavalete de Armas",

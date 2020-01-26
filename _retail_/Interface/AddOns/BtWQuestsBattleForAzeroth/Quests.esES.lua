@@ -6759,8 +6759,14 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57494] = {
         name = "Un corazón fuerte",
     },
+    [57495] = {
+        name = "El futuro de Mecandria",
+    },
     [57496] = {
         name = "Ascensión",
+    },
+    [57497] = {
+        name = "Difundir la noticia",
     },
     [57524] = {
         name = "Acceder a los archivos",

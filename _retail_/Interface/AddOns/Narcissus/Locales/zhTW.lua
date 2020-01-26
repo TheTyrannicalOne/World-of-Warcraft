@@ -280,7 +280,8 @@ L["Guide Input Line1"] = "妳也可以自行輸入SpellVisualKitID。截至8.3�
 L["Guide Equipment Manager Line1"] = "雙擊：使用套裝\n右擊：編輯套裝";
 L["Guide Model Control Headline"] = "模組控制";
 L["Guide Model Control Line1"] = format("妳可以用控制試衣間的鼠標行為來控制此模組。此外，妳還可以：\n\n1.按住%s和鼠標左鍵來改變俯仰角。\n2.按住%s和鼠標右鍵來進行細微縮放。", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
-
+L["Guide Minimap Button Headline"] = "小地圖按鈕";
+L["Guide Minimap Button Line1"] = "此按鈕現在可以被其他插件控制。\n妳可以在偏好設定中更改這壹選項，改動可能需要重載界面才能生效。";
 
 --Others need to be localized--
 L["Level"] = "等級";

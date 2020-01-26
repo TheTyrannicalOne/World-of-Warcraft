@@ -41,10 +41,11 @@ local DefaultValue = {
     ["CorruptionTooltip"] = false,
     ["CorruptionTooltipModel"] = true,
     ["UseEscapeButton"] = true,                     --Use Escape button to exit
+    ["IndependentMinimapButton"] = false,           --Set Minimap Button Parent to Minimap or UIParent
 }
 
 local TutorialInclude = {
-    "SpellVisualBrowser", "EquipmentSetManager", "Movement", "ExitConfirmation",
+    "SpellVisualBrowser", "EquipmentSetManager", "Movement", "ExitConfirmation", "IndependentMinimapButton"
 };
 
 local function Initialize_NarcissusDB()

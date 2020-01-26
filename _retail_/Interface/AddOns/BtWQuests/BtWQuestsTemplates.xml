@@ -235,7 +235,7 @@
 			<Button inherits="BtWQuestsSearchResultPreviewTemplate" parentKey="SearchButton1">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeKey="$parent.searchPreviewContainer" relativePoint="TOPLEFT" x="0" y="0"/>
-					<Anchor point="BOTTOMRIGHT" relativeKey="$parent.searchPreviewContainer" relativePoint="BOTTOMRIGHT" x="0" y="0"/>
+					<Anchor point="TOPRIGHT" relativeKey="$parent.searchPreviewContainer" relativePoint="TOPRIGHT" x="0" y="0"/>
 				</Anchors>
 			</Button>
 			<Button inherits="BtWQuestsSearchResultPreviewTemplate" parentKey="SearchButton2">

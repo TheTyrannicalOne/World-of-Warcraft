@@ -1409,8 +1409,6 @@
 			</Layer>
 		</Layers>
 		<Frames>
-			<!--/run Narci_GuideLineFrame.VirtualLineLeft.AnimFrame:Show()-->
-			<!--/run Narci_GuideLineFrame.VirtualLineRight.AnimFrame:Show()-->
 			<Frame parentKey="RightLineAnimFrame" inherits="NarciAnimContainerFrame"/>		
 				
 			<Frame name="Narci_VirtualLineLeft" parentKey="VirtualLineLeft">
@@ -4464,7 +4462,7 @@
 		</Scripts>
 	</Frame>
 
-    <Button name="Narci_MinimapButton" parent="UIParent" enableMouse="true" movable="true" hidden="true" frameStrata="MEDIUM" frameLevel="62" ignoreParentAlpha="false" clampedToScreen="true">
+    <Button name="Narci_MinimapButton" parent="Minimap" enableMouse="true" movable="true" hidden="true" frameStrata="MEDIUM" frameLevel="62" ignoreParentAlpha="false" clampedToScreen="true">
 		<Size>
 			<AbsDimension x="36" y="36"/>
 		</Size>
@@ -4530,6 +4528,7 @@
 			</OnDragStop>
 			<OnClick function="Narci_MinimapButton_OnClick"/>
 			<OnEnter function="Narci_MinimapButton_OnEnter"/>
+			<PostClick function="Narci_MinimapButton_OnPostClick"/>
 			<OnLeave>
 				ResetCursor();
 				GameTooltip:Hide();

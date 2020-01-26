@@ -953,7 +953,7 @@ Database:AddChain(Chain.Mechagnomes, {
     },
     active = {
         type = "quest",
-        id = 57486,
+        id = 57497,
         status = {'active', 'completed'},
     },
     completed = {
@@ -976,8 +976,17 @@ Database:AddChain(Chain.Mechagnomes, {
     },
     items = {
         {
-            type = "npc",
-            id = 160101,
+            variations = {
+                {
+                    type = "quest",
+                    id = 58214,
+                    restrictions = BtWQuestsItem_ActiveOrCompleted
+                },
+                {
+                    type = "npc",
+                    id = 160101,
+                }
+            },
             x = 0,
             connections = {
                 1, 
@@ -1050,6 +1059,22 @@ Database:AddChain(Chain.Mechagnomes, {
         {
             type = "quest",
             id = 57496,
+            x = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 57495,
+            x = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 57497,
             x = 0,
         },
     },

@@ -264,8 +264,14 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [322533] = {
         name = "Tomo degli Elementi di Mardivas",
     },
+    [326393] = {
+        name = "Cassa d'Armi d'Azerite",
+    },
     [326418] = {
         name = "Cassa Arcana",
+    },
+    [326588] = {
+        name = "Cassa d'Armi d'Azerite",
     },
     [327170] = {
         name = "Rastrelliera delle Armi",

@@ -821,7 +821,7 @@ local function NewOnEnter(self)
     frame:ClearAllPoints();
     frame.ModelScene.Background:SetGradientAlpha("VERTICAL", 1, 1, 1, 1, 1, 1, 1, 0.1);
     frame:SetScale(1);
-    frame:SetParent(self);
+    frame:SetParent(CharacterFrame);
     frame:SetHitRectInsets(0, -32, -32, -24);
     frame:SetPoint("TOPLEFT", self, "TOPRIGHT", -10, 12);
     FadeFrame(frame, 0.2, "IN");
@@ -886,6 +886,28 @@ function Narci:SetUseCorruptionTooltip()
     end
 
     Narci_CorruptionTooltipToggle.Tick:SetShown(state);
+
+    --Fix Compatible Issue with DejaCharacterStats
+    if not NarcissusDB.CorruptionBar then return end
+    if IsAddOnLoaded("DejaCharacterStats") then
+        local Bar = Narci_CorruptionBar;
+        BlizzardCorruptionWidget:SetScript("OnHide", function(self)
+            Bar:SetAlpha(0);
+        end)
+        BlizzardCorruptionWidget:SetScript("OnShow", function(self)
+            Bar:SetAlpha(1);
+        end)
+
+        Bar:ClearAllPoints();
+        Bar:SetParent(CharacterFrame);
+        Bar:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", -4, -48);
+
+        if BlizzardCorruptionWidget:IsVisible() then
+            Bar:SetAlpha(1);
+        else
+            Bar:SetAlpha(0);
+        end
+    end
 end
 
 local function CorruptionTooltipSwitch_OnClick()

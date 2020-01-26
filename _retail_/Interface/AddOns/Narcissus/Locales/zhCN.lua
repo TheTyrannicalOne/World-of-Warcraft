@@ -282,7 +282,8 @@ L["Guide Input Line1"] = "你也可以自行输入SpellVisualKitID。截至8.3�
 L["Guide Equipment Manager Line1"] = "双击：使用套装\n右击：编辑套装";
 L["Guide Model Control Headline"] = "模型控制";
 L["Guide Model Control Line1"] = format("你可以用控制试衣间的鼠标行为来控制此模型。此外，你还可以：\n\n1.按住%s和鼠标左键来改变俯仰角。\n2.按住%s和鼠标右键来进行细微缩放。", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
-
+L["Guide Minimap Button Headline"] = "小地图按钮";
+L["Guide Minimap Button Line1"] = "此按钮现在可以被其他插件控制。\n你可以在偏好设定中更改这一选项，改动可能需要重载界面才能生效。"
 
 --Splash--
 NARCI_SPELL_VISUALS = "法术视觉效果";

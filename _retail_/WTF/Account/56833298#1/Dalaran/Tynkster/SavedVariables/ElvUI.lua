@@ -829,5 +829,49 @@ ElvCharacterDB = {
 			[51] = 1573527641,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [37]
+		{
+			"Hey Tynkster! Would you like to join Pristine Mafia? We are a newer guild looking to build a community and run old and new content! Casuals and veterans welcome :D", -- [1]
+			"Kassuvea-Dalaran", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kassuvea-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2645, -- [11]
+			"Player-3683-0B7EEE85", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Kassuvea|r",
+			[51] = 1579847091,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [38]
+		{
+			"Hey! Up Yr Azeroth is a fun guild hoping to expand our rosters with very relaxed and fun people. Let me know if you're interested!", -- [1]
+			"Calleigha-Dalaran", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Calleigha-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1551, -- [11]
+			"Player-3683-0BB7458B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Calleigha|r",
+			[51] = 1580025626,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [39]
 	},
 }

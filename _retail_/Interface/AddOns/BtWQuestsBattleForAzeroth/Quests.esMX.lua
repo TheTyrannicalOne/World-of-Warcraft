@@ -6585,6 +6585,39 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57378] = {
         name = "Restos de un mundo destrozado",
     },
+    [57486] = {
+        name = "Energía menguante",
+    },
+    [57487] = {
+        name = "Alguien que nos ayude",
+    },
+    [57488] = {
+        name = "El esquema actual",
+    },
+    [57490] = {
+        name = "Viaje a la seguridad",
+    },
+    [57491] = {
+        name = "Mejor, más fuerte y menos muerto",
+    },
+    [57492] = {
+        name = "¿Él?",
+    },
+    [57493] = {
+        name = "Armonización mental",
+    },
+    [57494] = {
+        name = "Un corazón fuerte",
+    },
+    [57495] = {
+        name = "El futuro de Mecalópolis",
+    },
+    [57496] = {
+        name = "Ascensión",
+    },
+    [57497] = {
+        name = "Propagación de noticias",
+    },
     [57524] = {
         name = "Acceso a los archivos",
     },
@@ -6629,6 +6662,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [58506] = {
         name = "Diagnósticos de red",
+    },
+    [58582] = {
+        name = "Regreso del Príncipe Negro",
     },
     [58606] = {
         name = "Un poco de investigación",

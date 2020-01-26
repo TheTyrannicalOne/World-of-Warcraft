@@ -58,7 +58,11 @@ local HeritageArmorItemIDs = {
     164993, 164994, 164995, 164996, 164997, 164998, 164999, 165000,                     --Zandalari
     165002, 165003, 165004, 165005, 165006, 165007, 165008, 165009,                     --Kul'tiran
     168282, 168283, 168284, 168285, 168286, 168287, 168288, 168289, 168290,             --Gnome
-    168291, 168292, 168293, 168294, 168295, 168296, 168297, 168298, 170063,             --Tauren 
+    168291, 168292, 168293, 168294, 168295, 168296, 168297, 168298, 170063,             --Tauren
+    173968, 173966, 173970, 173971, 173967, 173969, 174354, 174355,                     --Vulpera
+    173961, 173962, 173963, 173964, 173958, 173972,                                     --Mechagnome
+    174000, 174001, 174002, 174003, 174004, 174005, 174006, 173999, 173998,             --Worgen
+
     --Reserved for test ↓
     
 }
@@ -379,7 +383,7 @@ function NarciAPI_GetItemStats(itemLocation)
 
     local ItemLevel = C_Item.GetCurrentItemLevel(itemLocation)
     local itemLink = C_Item.GetItemLink(itemLocation)
-    local stats = GetItemStats(itemLink);
+    local stats = GetItemStats(itemLink) or {};
     local prim = stats["ITEM_MOD_AGILITY_SHORT"] or stats["ITEM_MOD_STRENGTH_SHORT"] or stats["ITEM_MOD_INTELLECT_SHORT"] or 0;
     local stamina = stats["ITEM_MOD_STAMINA_SHORT"] or 0;
     local crit = stats["ITEM_MOD_CRIT_RATING_SHORT"] or 0;

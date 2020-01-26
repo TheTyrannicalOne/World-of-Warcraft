@@ -6735,8 +6735,14 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57494] = {
         name = "Ein starkes Herz",
     },
+    [57495] = {
+        name = "Die Zukunft von Mechagon",
+    },
     [57496] = {
         name = "Aufstieg",
+    },
+    [57497] = {
+        name = "Verbreitet die Neuigkeiten",
     },
     [57524] = {
         name = "Archivzugriff",

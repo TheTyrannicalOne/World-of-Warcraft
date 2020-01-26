@@ -5,7 +5,7 @@ local L = Narci.L
 NARCI_GRADIENT = "|cffA236EFN|cff9448F1a|cff865BF2r|cff786DF4c|cff6A80F6i|cff5D92F7s|cff4FA4F9s|cff41B7FAu|cff33C9FCs|r"
 MYMOG_GRADIENT = "|cffA236EFM|cff9448F1y |cff865BF2T|cff786DF4r|cff6A80F6a|cff5D92F7n|cff4FA4F9s|cff41B7FAm|cff33C9FCo|cff32c9fbg|r"
 
-NARCI_VERSION_INFO = "1.0.8";
+NARCI_VERSION_INFO = "1.0.8b";
 NARCI_DEVELOPER_INFO = "Designed by Peterodox";
 
 NARCI_NEW_ENTRY_PREFIX = "|cff40C7EB";
@@ -160,6 +160,7 @@ L["Item Socketing Tooltip"] = "Double-click to embed";
 L["Use Bust Shot"] = "Use Bust Shot";
 L["Use Escape Button"] = "Esc Key";
 L["Use Escape Button Description"] = "Press the Escape key to exit.\nOr exit by clicking the hidden X button on the top-right of your screen.";
+L["Handled by Other Addons"] = "Handled by Other Addons";
 
 --Model Control--
 NARCI_SHEATH_WEAPON = "Sheath Weapon";
@@ -264,15 +265,16 @@ L["Corruption Bar"] = "Corruption Bar";
 L["Corruption Bar Description"] = "Enable the corruption bar next to the Character Pane.";
 L["Corruption Debuff Tooltip"] = "Debuff Tooltip";
 L["Corruption Debuff Tooltip Description"] = "Replace the default negative effects tooltip with its numeric counterpart.";
-
+L["No Corrupted Item"] = "You haven't equipped any corrupted item";
+L["Total Corruption Format"] = CORRUPTION_TOOLTIP_LINE.." - "..CORRUPTION_RESISTANCE_TOOLTIP_LINE.." = ".."%s";
 
 L["Crit Gained"] = CRIT_ABBR.." Gained";
 L["Haste Gained"] = STAT_HASTE.." Gained";
 L["Mastery Gained"] = STAT_MASTERY.." Gained";
 L["Versatility Gained"] = STAT_VERSATILITY.." Gained";
 
-L["Proc Haste"] = "Proc "..CRIT_ABBR;
-L["Proc Crit"] = "Proc "..STAT_HASTE;
+L["Proc Crit"] = "Proc "..CRIT_ABBR;
+L["Proc Haste"] = "Proc "..STAT_HASTE;
 L["Proc Mastery"] = "Proc "..STAT_MASTERY;
 L["Proc Versatility"] =  "Proc "..STAT_VERSATILITY;
 
@@ -301,6 +303,8 @@ L["Guide Input Line1"] = "You may also input a SpellVisualKitID yourself. As of 
 L["Guide Equipment Manager Line1"] = "Double-click: Use a set\nRight-click: Edit a set.\n\nThis button's previous function has been moved to Preferences.";
 L["Guide Model Control Headline"] = "Model Control";
 L["Guide Model Control Line1"] = format("This model shares the same mouse actions you use in the dressing room, plus:\n\n1.Hold %s and Left Button: Rotate model around Y-axis.\n2.Hold %s and Right Button: Execute scrubby zoom.", NARCI_MODIFIER_ALT, NARCI_MODIFIER_ALT);
+L["Guide Minimap Button Headline"] = "Minimap Button";
+L["Guide Minimap Button Line1"] = "Narcissus minimap button can now be handled by other addons.\nYou can change this option in the Preferences pane. It may require a UI reload."
 
 
 --Splash--
@@ -336,7 +340,7 @@ NARCI_SPLASH_INTERACTIVE_TEXT3 = NARCI_COLOR_GREY_85.."Spell Visual Browser|r\n-
 
 --Project Details--
 NARCI_ALL_PROJECTS = "All Projects";
-NARCI_PROJECT_DETAILS = "|cFFFFD100Developer: Peterodox\nRelease Date: January 17, 2020|r\n\nThank you for trying this add-on! If you have any issues, suggestions, ideas, please leave a comment on the curseforge page or contact me on...";
+NARCI_PROJECT_DETAILS = "|cFFFFD100Developer: Peterodox\nRelease Date: January 22, 2020|r\n\nThank you for trying this add-on! If you have any issues, suggestions, ideas, please leave a comment on the curseforge page or contact me on...";
 NARCI_PROJECT_AAA_TITLE = "|cff008affA|cff0d8ef2z|cff1a92e5e|cff2696d9r|cff339acco|cff409ebft|cff4da1b2h |cff59a5a6A|cff66a999d|cff73ad8cv|cff7fb180e|cff8cb573n|cff99b966t|cffa6bd59u|cffb2c14dr|cffbfc440e |cffccc833A|cffd9cc26l|cffe5d01ab|cfff2d40du|cffffd800m";
 NARCI_PROJECT_AAA_SUMMARY = "Explore places of interest and collect lores and photos from all across Azeroth.|cff636363";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "An immersive character pane and your ultimate screenshot tool.";

@@ -415,7 +415,7 @@
             <OnShow>
                 self:RegisterEvent("COMBAT_RATING_UPDATE");
                 Narci_SetCorruptionBar(self);
-                self:SetAlpha(1);
+                --self:SetAlpha(1);
             </OnShow>
             <OnEvent function="Narci_CorruptionBar_OnEvent"/>
         </Scripts>

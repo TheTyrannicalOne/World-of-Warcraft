@@ -1869,7 +1869,9 @@ function BtWQuestsSearchBoxMixin:OnKeyDown(key)
 end
 function BtWQuestsSearchBoxMixin:OnFocusLost()
     SearchBoxTemplate_OnEditFocusLost(self);
-    self:HidePreview()
+    if not self:GetPreviewFrame():IsMouseOver() then
+        self:HidePreview()
+    end
 end
 function BtWQuestsSearchBoxMixin:OnFocusGained()
     SearchBoxTemplate_OnEditFocusGained(self)
@@ -1960,6 +1962,7 @@ function BtWQuestsSearchPreviewMixin:FixBottomBorder()
     end
 
     if lastShownButton ~= nil then
+        self:SetHeight(self:GetTop() - lastShownButton:GetBottom())
         self.botRightCorner:SetPoint("BOTTOM", lastShownButton, "BOTTOM", 0, -8)
         self.botLeftCorner:SetPoint("BOTTOM", lastShownButton, "BOTTOM", 0, -8)
     else

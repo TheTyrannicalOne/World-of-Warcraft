@@ -565,6 +565,7 @@ function LightButton_UpdateFrame_OnUpdate(self)
 	end
 end
 
+
 local PMAI = CreateFrame("Frame","Narci_PlayerModelAnimIn");
 PMAI:Hide();
 PMAI.TimeSinceLastUpdate = 0

@@ -6775,6 +6775,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57494] = {
         name = "Un cœur solide",
     },
+    [57495] = {
+        name = "L’avenir de Mécagone",
+    },
+    [57497] = {
+        name = "Répandre la nouvelle",
+    },
     [57524] = {
         name = "Accès aux archives",
     },

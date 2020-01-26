@@ -264,8 +264,14 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [322533] = {
         name = "Grimoire des éléments de Mardivas",
     },
+    [326393] = {
+        name = "Cache d’armes azéritiques",
+    },
     [326418] = {
         name = "Coffre arcanique",
+    },
+    [326588] = {
+        name = "Cache d’armes azéritiques",
     },
     [327170] = {
         name = "Râtelier d’armes",

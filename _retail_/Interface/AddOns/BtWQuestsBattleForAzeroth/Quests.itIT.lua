@@ -6756,8 +6756,14 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57494] = {
         name = "Un cuore forte",
     },
+    [57495] = {
+        name = "Il futuro di Meccagon",
+    },
     [57496] = {
         name = "Ascensione",
+    },
+    [57497] = {
+        name = "Diffondere le notizie",
     },
     [57524] = {
         name = "Accedere agli Archivi",
@@ -6797,6 +6803,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [58087] = {
         name = "Abbattere le batterie",
+    },
+    [58214] = {
+        name = "Questioni urgenti",
     },
     [58496] = {
         name = "Un consigliere indesiderato",

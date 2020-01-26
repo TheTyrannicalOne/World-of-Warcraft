@@ -267,8 +267,14 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [322533] = {
         name = "Escrito de los elementos de Mardivas",
     },
+    [326393] = {
+        name = "Alijo de armas de azerita",
+    },
     [326418] = {
         name = "Cofre Arcano",
+    },
+    [326588] = {
+        name = "Alijo de armas de azerita",
     },
     [327170] = {
         name = "Expositor de armas",

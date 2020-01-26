@@ -380,12 +380,11 @@ Database:AddChain(Chain.Chain04, {
             restrictions = {
                 type = "class",
                 ids = {
-                    Class.Warrior,
                     Class.Paladin,
-                    Class.DeathKnight,
+                    Class.Priest,
+                    Class.Shaman,
                     Class.Monk,
                     Class.Druid,
-                    Class.DemonHunter,
                 },
             },
         },
@@ -396,11 +395,12 @@ Database:AddChain(Chain.Chain04, {
             restrictions = {
                 type = "class",
                 ids = {
+                    Class.Warrior,
                     Class.Paladin,
-                    Class.Priest,
-                    Class.Shaman,
+                    Class.DeathKnight,
                     Class.Monk,
                     Class.Druid,
+                    Class.DemonHunter,
                 },
             },
         },

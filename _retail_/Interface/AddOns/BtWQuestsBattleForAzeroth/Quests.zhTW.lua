@@ -6810,8 +6810,14 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57494] = {
         name = "堅強的心",
     },
+    [57495] = {
+        name = "機械岡的未來",
+    },
     [57496] = {
         name = "晉升",
+    },
+    [57497] = {
+        name = "發佈消息",
     },
     [57524] = {
         name = "存取檔案",

@@ -392,7 +392,7 @@
                                 </Layers>                           
                                 <Frames>
 
-                                    <Button name="Narci_MinimapButtonSwitch" inherits="NarciCheckButtonTemplate" relativeKey="MinimapSwitch">
+                                    <Button name="Narci_MinimapButtonSwitch" inherits="NarciCheckButtonTemplate" parentKey="MinimapSwitch">
                                         <Anchors>
                                             <Anchor point="LEFT" relativeKey="$parent.Cate1" relativePoint="LEFT" x="18" y="-24"/>
                                         </Anchors>
@@ -406,7 +406,20 @@
                                         </Scripts>
                                     </Button>
 
-                                    <Button name="Narci_FadeOutSwitch" inherits="NarciCheckButtonTemplate" relativeKey="FadeOut">
+                                    <Button name="Narci_MinimapButtonParentSwitch" inherits="NarciCheckButtonTemplate" parentKey="MinimapParentSwitch">
+                                        <Anchors>
+                                            <Anchor point="TOPLEFT" relativeKey="$parent.MinimapSwitch" relativePoint="BOTTOMLEFT" x="0" y="-10"/>
+                                        </Anchors>
+                                        <Scripts>
+                                            <OnLoad>
+                                                self.Label:SetWidth(120);
+                                                self.Label:SetText(Narci.L["Handled by Other Addons"]);
+                                            </OnLoad>
+                                            <OnClick function="Narci_MinimapButtonParentSwitch_OnClick"/>
+                                        </Scripts>
+                                    </Button>
+
+                                    <Button name="Narci_FadeOutSwitch" inherits="NarciCheckButtonTemplate" parentKey="FadeOut">
                                         <Anchors>
                                             <Anchor point="LEFT" relativeKey="$parent.Cate1" relativePoint="LEFT" x="200" y="-24"/>
                                         </Anchors>
@@ -423,7 +436,7 @@
                                         <Scripts>
                                             <OnLoad>
                                                 self.IsOn = false;
-                                                self.Label:SetText(NARCI_FADEOUT)
+                                                self.Label:SetText(NARCI_FADEOUT);
                                                 self.Description:SetText(NARCI_FADEOUT_DESCRIPTION);
                                             </OnLoad>
                                             <OnClick function="Narci_FadeOutSwitch_OnClick"/>
@@ -437,7 +450,7 @@
                                         <Size x="160" y="18"/>
                                         <Scripts>
                                             <OnLoad>
-                                                self.Label:SetText(KEY_BINDING)
+                                                self.Label:SetText(KEY_BINDING);
                                             </OnLoad>
                                             <OnShow function="Narci_KeybindingButton_OnShow"/>
                                             <OnClick function="Narci_KeybindingButton_OnClick"/>
@@ -461,8 +474,8 @@
                                         <Scripts>
                                             <OnLoad>
                                                 self.IsOn = false;
-                                                self.Label:SetText("Enable Doule-tap")
-                                                self.Description:SetText(NARCI_DOUBLE_TAP_DESCRIPTION)
+                                                self.Label:SetText("Enable Doule-tap");
+                                                self.Description:SetText(NARCI_DOUBLE_TAP_DESCRIPTION);
                                             </OnLoad>
                                             <OnShow function="Narci_DoubleTapSwitch_OnShow"/>
                                             <OnClick function="Narci_DoubleTapSwitch_OnClick"/>

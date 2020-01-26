@@ -264,8 +264,14 @@ BtWQuestsDatabase:UpdateObjectsTable({
     [322533] = {
         name = "Mardivas' Foliant der Elemente",
     },
+    [326393] = {
+        name = "Azeritwaffentruhe",
+    },
     [326418] = {
         name = "Arkane Truhe",
+    },
+    [326588] = {
+        name = "Azeritwaffentruhe",
     },
     [327170] = {
         name = "Waffenständer",

@@ -6654,6 +6654,39 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57378] = {
         name = "Vestígios de um Mundo Despedaçado",
     },
+    [57486] = {
+        name = "Energia minguante",
+    },
+    [57487] = {
+        name = "Quem possa ajudar",
+    },
+    [57488] = {
+        name = "O diagrama atual",
+    },
+    [57490] = {
+        name = "Viagem rumo à segurança",
+    },
+    [57491] = {
+        name = "Melhor... Mais forte... Menos morto",
+    },
+    [57492] = {
+        name = "Ele?",
+    },
+    [57493] = {
+        name = "Harmonização mental",
+    },
+    [57494] = {
+        name = "Coração forte",
+    },
+    [57495] = {
+        name = "O futuro de Gnomecan",
+    },
+    [57496] = {
+        name = "Ascensão",
+    },
+    [57497] = {
+        name = "Espalhar a notícia",
+    },
     [57524] = {
         name = "Acessando os arquivos",
     },
@@ -6698,6 +6731,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [58506] = {
         name = "Diagnóstico de rede",
+    },
+    [58582] = {
+        name = "A volta ao Príncipe Negro",
     },
     [58606] = {
         name = "Investigação de miudezas",

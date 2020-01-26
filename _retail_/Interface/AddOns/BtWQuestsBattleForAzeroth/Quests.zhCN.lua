@@ -6810,8 +6810,14 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [57494] = {
         name = "勇敢的心",
     },
+    [57495] = {
+        name = "麦卡贡的未来",
+    },
     [57496] = {
         name = "升腾",
+    },
+    [57497] = {
+        name = "传播消息",
     },
     [57524] = {
         name = "访问档案",

@@ -1476,3 +1476,8 @@ Change Log:
 4.52.1
 * Added Battle for Azeroth spells (world)
 
+4.52.2
+* Added Battle for Azeroth spells (world)
+* Added BFA spells for Ny'alotha, the Waking City
+
+

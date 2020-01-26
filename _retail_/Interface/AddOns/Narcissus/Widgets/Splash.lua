@@ -1,10 +1,9 @@
-local ShowSplash;    --patch specific 1.0.8:Shown
-local CurrentVersion = 10080;	--last: 70
+local CurrentVersion = 10081;	--last: 10080
 -----------------------------------------------------------------
 
 local function ApplyPatchFix(self)
     --Apply fix--
-    --None in 1.0.8
+    --None in 1.0.8b
     return;
 end
 
@@ -118,7 +117,7 @@ local ModelOffsets = {
     [1]  = {1.6, 1.5, -0.58, -0.6},		    -- Human
     [2]  = {1.6, 1.5, -0.54, -0.6},		    -- Orc bow
     [3]  = {1.7, 1.5, -0.3, -0.4},		    -- Dwarf
-    [4]  = {1.6, 1.5, -0.8, -0.65},         -- Night Elf
+    [4]  = {1.6, 1.5, -0.67, -0.65},         -- Night Elf
     [5]  = {1.6, 1.5, -0.7, -0.54},		    -- UD **Changed
     [6]  = {1.9, 1.7, -0.6, -0.6},		    -- Tauren
     [7]  = {1.7, 1.7, -0.1, -0.2},		    -- Gnome
@@ -526,16 +525,28 @@ Splash:SetScript("OnEvent", function(self, event, ...)
 
         if CurrentVersion > NarcissusDB.Version then
             ApplyPatchFix();
+            
+            if NarcissusDB.Version < 10080 then
+                self:RegisterEvent("GARRISON_UPDATE");
+            end
+
             NarcissusDB.Version = CurrentVersion;
-            self:RegisterEvent("GARRISON_UPDATE");
         end
 
     elseif event == "GARRISON_UPDATE" then
         self:UnregisterEvent("GARRISON_UPDATE");
         C_Timer.After(2.5, function()
+            if CinematicFrame:IsShown() or MovieFrame:IsShown() then
+                self:RegisterEvent("CINEMATIC_STOP");
+            else
+                FadeFrame(Narci_InteractiveSplash, 0.25, "Forced_IN");
+            end
+        end);
+    elseif event == "CINEMATIC_STOP" then
+        self:UnregisterEvent("CINEMATIC_STOP")
+        C_Timer.After(2, function()
             FadeFrame(Narci_InteractiveSplash, 0.25, "Forced_IN");
         end);
-
     elseif event == "PLAYER_ENTERING_WORLD" then
         --Load Model Info
         self:UnregisterEvent("PLAYER_ENTERING_WORLD")
