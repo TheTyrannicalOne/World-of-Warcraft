@@ -9,24 +9,24 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 471,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1608:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 475,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1612:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 158028,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:158028::::::::120:71::27:3:1607:4785:6259:::|h[Bleakweald Pauldrons]|h|r",
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:158028::::::::120:71::27:4:1607:4785:6259:4775:::|h[Bleakweald Pauldrons]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 157958,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:157958::::::::120:71::28:4:1592:4786:5416:4775:::|h[Dunecrawler Chestplate]|h|r",
+			["ID"] = 158022,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:158022::::::::120:71::26:4:1607:4785:6257:4775:::|h[Bleakweald Chestguard]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 168686,
-			["Level"] = 410,
-			["Link"] = "|cffa335ee|Hitem:168686::::::::120:71::13:2:1686:5804:::|h[Osmenite Girdle of the Peerless]|h|r",
+			["ID"] = 157933,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:157933::::::::120:71::26:6:4803:40:6516:6515:1607:4785:::|h[Greatbelt of Rezan's Bladeguard]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 171497,
@@ -39,9 +39,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:163460::::::::120:71::28:5:5125:6516:6515:1612:4785:::|h[Honorbound Centurion's Greaves]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 165496,
-			["Level"] = 400,
-			["Link"] = "|cffa335ee|Hitem:165496::::::::120:71::6:4:5126:42:1517:4786:::|h[Deathguard's Vambraces]|h|r",
+			["ID"] = 158030,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:158030::::::::120:71::26:6:4803:4802:6516:6513:1607:4785:::|h[Bleakweald Vambraces]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 159413,
@@ -73,9 +73,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:117360::::::::120:71:512::1:6315:120:::|h[Coren's Cold Chromium Coaster]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 166763,
-			["Level"] = 400,
-			["Link"] = "|cffa335ee|Hitem:166763::::::::120:71::6:3:5126:1517:4786:::|h[Deathstalker's Cloak]|h|r",
+			["ID"] = 166668,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:166668::::::::120:71::27:3:4803:1612:4785:::|h[Battalion Veteran's Greatcloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 158130,

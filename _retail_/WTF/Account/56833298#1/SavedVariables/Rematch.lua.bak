@@ -28,10 +28,7 @@ RematchSettings = {
 	["XPos"] = 995.0079345703125,
 	["CollectionChartType"] = 1,
 	["DialogYPos"] = 717.004638671875,
-	["Sort"] = {
-		["Order"] = 1,
-		["FavoritesFirst"] = true,
-	},
+	["JournalUsed"] = true,
 	["HidePetToast"] = true,
 	["LevelingQueue"] = {
 	},
@@ -44,7 +41,7 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["FavoriteFilters"] = {
+	["SpecialSlots"] = {
 	},
 	["Filters"] = {
 		["Other"] = {
@@ -76,7 +73,9 @@ RematchSettings = {
 	},
 	["SelectedTab"] = 1,
 	["UseTypeBar"] = true,
-	["SpecialSlots"] = {
+	["Sort"] = {
+		["Order"] = 1,
+		["FavoritesFirst"] = true,
 	},
 	["CollapsedOptHeaders"] = {
 	},
@@ -89,7 +88,8 @@ RematchSettings = {
 	["CornerPos"] = "BOTTOMLEFT",
 	["QueueSanctuary"] = {
 	},
-	["JournalUsed"] = true,
+	["FavoriteFilters"] = {
+	},
 	["YPos"] = 418.0044860839844,
 	["CustomScaleValue"] = 100,
 	["PetNotes"] = {

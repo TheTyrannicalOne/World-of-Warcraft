@@ -513,41 +513,6 @@ AzeritePowerWeightsDB = {
 				["debug"] = false,
 				["outlineScores"] = true,
 			},
-			["Dialdaas"] = {
-				["specScales"] = {
-					[70] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/2/3/Default",
-					},
-					[65] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/2/1/Default",
-					},
-					[66] = {
-						["scaleName"] = "Defensive",
-						["scaleID"] = "D/2/2/Defensive",
-					},
-				},
-				["addPrimaryStatToScore"] = false,
-				["showTooltipLegend"] = true,
-				["zonePowers"] = true,
-				["pvpPowers"] = false,
-				["addILvlToScore"] = false,
-				["relativeScore"] = false,
-				["rolePowersNoOffRolePowers"] = false,
-				["importingCanUpdate"] = true,
-				["tooltipScales"] = {
-				},
-				["rolePowers"] = true,
-				["defensivePowers"] = true,
-				["scaleByAzeriteEmpowered"] = false,
-				["onlyOwnClassDefaults"] = true,
-				["outlineScores"] = true,
-				["debug"] = false,
-				["showOnlyUpgrades"] = false,
-				["professionPowers"] = false,
-				["onlyOwnClassCustoms"] = false,
-			},
 			["Serbitechna"] = {
 				["specScales"] = {
 					[255] = {
@@ -596,6 +561,41 @@ AzeritePowerWeightsDB = {
 					[262] = {
 						["scaleName"] = "Default",
 						["scaleID"] = "D/7/1/Default",
+					},
+				},
+				["addPrimaryStatToScore"] = false,
+				["showTooltipLegend"] = true,
+				["zonePowers"] = true,
+				["pvpPowers"] = false,
+				["addILvlToScore"] = false,
+				["relativeScore"] = false,
+				["rolePowersNoOffRolePowers"] = false,
+				["importingCanUpdate"] = true,
+				["tooltipScales"] = {
+				},
+				["rolePowers"] = true,
+				["defensivePowers"] = true,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassDefaults"] = true,
+				["outlineScores"] = true,
+				["debug"] = false,
+				["showOnlyUpgrades"] = false,
+				["professionPowers"] = false,
+				["onlyOwnClassCustoms"] = false,
+			},
+			["Dialdaas"] = {
+				["specScales"] = {
+					[70] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/2/3/Default",
+					},
+					[65] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/2/1/Default",
+					},
+					[66] = {
+						["scaleName"] = "Defensive",
+						["scaleID"] = "D/2/2/Defensive",
 					},
 				},
 				["addPrimaryStatToScore"] = false,

@@ -1086,7 +1086,7 @@ end
 -----Credits-----
 -----------------
 local function SetCreditList()
-   local RawList = {"Adam Stribley", "Elexys", "Ben Ashley", "Valnoressa", "Andrew Phoenix", "Solanya", "Stephen Berry", "Erik Shafer", "Mccr Karl", "Nantangitan", "Blastflight", "Psyloken",};
+   local RawList = {"Adam Stribley", "Elexys", "Ben Ashley", "Valnoressa", "Andrew Phoenix", "Solanya", "Stephen Berry", "Erik Shafer", "Mccr Karl", "Nantangitan", "Blastflight", "Psyloken", "Ellypse", "Victor Torres",};
    local LeftList, MidList, RightList = {}, {}, {};
    local mod = mod;
    local index;

@@ -62,6 +62,7 @@ L["Minimap Tooltip Hide Button"] = "|cffffffff隱藏這個按鈕|r"
 L["Minimap Tooltip Middle Button"] = "|CFFFF1000中鍵 |cffffffff重置鏡頭";
 L["Minimap Tooltip Set Scale"] = "設定縮放大小: |cffffffff/narci [大小數值 0.8~1.2]";
 L["Corrupted Item Parser"] = "|cffffffff開啟腐化物品鏈接解析器|r";
+L["Toggle Dressing Room"] = "|cffffffff開啟"..DRESSUP_FRAME.."|r";
 
 NARCI_CLIPBOARD = "剪貼板";
 NARCI_LAYOUT = "版面配置";
@@ -323,7 +324,7 @@ NARCI_SPLASH_INTERACTIVE_TEXT3 = NARCI_COLOR_GREY_85.."效果瀏覽器|r\n- 收�
 
 --Project Details--
 NARCI_ALL_PROJECTS = "全部項目";
-NARCI_PROJECT_DETAILS = "|cFFFFD100插件作者: Peterodox\n更新日期: 2019.12.23|r\n\n感謝妳使用此插件！如果妳遇到任何問題，或者有任何想法或建議，請在CurseForge項目主頁上留言，或者在以下網站上聯系我。";
+NARCI_PROJECT_DETAILS = "|cFFFFD100插件作者: Peterodox\n更新日期: 2020.1.28|r\n\n感謝妳使用此插件！如果妳遇到任何問題，或者有任何想法或建議，請在CurseForge項目主頁上留言，或者在以下網站上聯系我。";
 NARCI_PROJECT_AAA_SUMMARY = "探索艾澤拉斯上的不同景點，並收集各種故事和照片。";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "沈浸式角色面板；妳最好的截圖助手。"
 

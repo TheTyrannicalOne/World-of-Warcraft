@@ -29,6 +29,7 @@ local DefaultValue = {
     ["GemManager"] = true,                          --Enable gem manager for Blizzard item socketing frame
     ["DressingRoom"] = true,                        --Enable dressing room module
     ["DressingRoomUseTargetModel"] = true,          --Replace the the dressing room room with your targeted player
+    ["DressingRoomIncludeItemID"] = false,          --Show Item ID in the clipboard
     ["UseEntranceVisual"] = true,
     ["ModelPanelScale"] = 1,
     ["UseExitConfirmation"] = true,                 --Show exit confirmation dialog upon leaving group photo mode

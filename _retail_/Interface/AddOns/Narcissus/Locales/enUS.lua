@@ -5,7 +5,7 @@ local L = Narci.L
 NARCI_GRADIENT = "|cffA236EFN|cff9448F1a|cff865BF2r|cff786DF4c|cff6A80F6i|cff5D92F7s|cff4FA4F9s|cff41B7FAu|cff33C9FCs|r"
 MYMOG_GRADIENT = "|cffA236EFM|cff9448F1y |cff865BF2T|cff786DF4r|cff6A80F6a|cff5D92F7n|cff4FA4F9s|cff41B7FAm|cff33C9FCo|cff32c9fbg|r"
 
-NARCI_VERSION_INFO = "1.0.8b";
+NARCI_VERSION_INFO = "1.0.8c";
 NARCI_DEVELOPER_INFO = "Designed by Peterodox";
 
 NARCI_NEW_ENTRY_PREFIX = "|cff40C7EB";
@@ -68,6 +68,7 @@ L["Minimap Tooltip Hide Button"] = "|cffffffffHide this button|r"
 L["Minimap Tooltip Middle Button"] = "|CFFFF1000Middle button |cffffffffReset camera";
 L["Minimap Tooltip Set Scale"] = "Set Scale: |cffffffff/narci [scale 0.8~1.2]";
 L["Corrupted Item Parser"] = "|cffffffffToggle Corrupted Item Parser|r";
+L["Toggle Dressing Room"] = "|cffffffffToggle "..DRESSUP_FRAME.."|r";
 
 NARCI_CLIPBOARD = "Clipboard";
 NARCI_LAYOUT = "Layout";
@@ -340,7 +341,7 @@ NARCI_SPLASH_INTERACTIVE_TEXT3 = NARCI_COLOR_GREY_85.."Spell Visual Browser|r\n-
 
 --Project Details--
 NARCI_ALL_PROJECTS = "All Projects";
-NARCI_PROJECT_DETAILS = "|cFFFFD100Developer: Peterodox\nRelease Date: January 22, 2020|r\n\nThank you for trying this add-on! If you have any issues, suggestions, ideas, please leave a comment on the curseforge page or contact me on...";
+NARCI_PROJECT_DETAILS = "|cFFFFD100Developer: Peterodox\nRelease Date: January 28, 2020|r\n\nThank you for trying this add-on! If you have any issues, suggestions, ideas, please leave a comment on the curseforge page or contact me on...";
 NARCI_PROJECT_AAA_TITLE = "|cff008affA|cff0d8ef2z|cff1a92e5e|cff2696d9r|cff339acco|cff409ebft|cff4da1b2h |cff59a5a6A|cff66a999d|cff73ad8cv|cff7fb180e|cff8cb573n|cff99b966t|cffa6bd59u|cffb2c14dr|cffbfc440e |cffccc833A|cffd9cc26l|cffe5d01ab|cfff2d40du|cffffd800m";
 NARCI_PROJECT_AAA_SUMMARY = "Explore places of interest and collect lores and photos from all across Azeroth.|cff636363";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "An immersive character pane and your ultimate screenshot tool.";

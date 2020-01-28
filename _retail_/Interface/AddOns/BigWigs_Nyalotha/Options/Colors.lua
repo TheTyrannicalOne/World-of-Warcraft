@@ -1,22 +1,25 @@
 
 BigWigs:AddColors("Wrathion", {
 	[305978] = {"blue","purple","yellow"},
-	[306163] = {"blue","orange"},
+	[306163] = {"blue","yellow"},
 	[306289] = "red",
 	[306735] = "red",
 	[307013] = "red",
+	[313250] = {"blue","green"},
+	[313255] = {"blue","green"},
 	["stages"] = "cyan",
 })
 
 BigWigs:AddColors("Maut", {
 	[305663] = "orange",
 	[305722] = "cyan",
+	[307586] = {"blue","green"},
 	[307806] = "blue",
 	[308044] = "red",
 	[308872] = "purple",
 	[308903] = "yellow",
 	[310129] = {"blue","purple"},
-	[314337] = "red",
+	[314337] = {"green","red"},
 	[314993] = "blue",
 })
 
@@ -79,7 +82,7 @@ BigWigs:AddColors("Drest'agath", {
 
 BigWigs:AddColors("Vexiona", {
 	[307020] = "orange",
-	[307043] = "cyan",
+	[307057] = "cyan",
 	[307116] = "cyan",
 	[307314] = {"blue","yellow"},
 	[307343] = "blue",
@@ -101,7 +104,7 @@ BigWigs:AddColors("Ra-den the Despoiled", {
 	[306819] = {"blue","purple"},
 	[306865] = "yellow",
 	[306866] = "yellow",
-	[306881] = "red",
+	[306881] = {"blue","red"},
 	[310003] = "yellow",
 	[310019] = {"blue","cyan","green"},
 	[312996] = "cyan",
@@ -150,7 +153,7 @@ BigWigs:AddColors("N'Zoth, the Corruptor", {
 	[313400] = {"blue","orange","red"},
 	[313609] = {"blue","yellow"},
 	[315772] = "yellow",
-	[315927] = {"blue","green","yellow"},
+	[315927] = {"blue","green"},
 	[316463] = "green",
 	[316711] = {"blue","purple","red"},
 	[317066] = "orange",

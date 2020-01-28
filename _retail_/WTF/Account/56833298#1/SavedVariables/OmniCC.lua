@@ -1,7 +1,7 @@
 
 OmniCCDB = {
 	["global"] = {
-		["addonVersion"] = "8.3.3",
+		["addonVersion"] = "8.3.4",
 		["dbVersion"] = 5,
 	},
 	["profileKeys"] = {
@@ -29,7 +29,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
 			["minDuration"] = 2,
@@ -57,4 +56,5 @@ OmniCC4Config = {
 	},
 	["groups"] = {
 	},
+	["version"] = "8.2.5",
 }

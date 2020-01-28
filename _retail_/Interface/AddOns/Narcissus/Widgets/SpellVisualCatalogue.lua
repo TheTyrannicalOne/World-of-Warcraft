@@ -460,6 +460,10 @@ NarciSpellVisualBrowser.Catalogue = {
         },
 
         [2] = { ["name"] = "Wings",
+            {36397, NEW.."Jade Serpent", 611421},
+            {36396, NEW.."White Tiger", 611420},
+            {36399, NEW.."Red Crane", 977169},
+            {36398, NEW.."Black Ox", 611419},
             {79375, "Fel", 236293},
             {37269, "Fel small", 236293},
             {25145, "Purple", 136172},

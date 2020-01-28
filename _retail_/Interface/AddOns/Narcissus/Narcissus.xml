@@ -223,7 +223,7 @@
 				end
 				tinsert(parent.buttons, self);
 			</OnLoad>
-			<OnClick function="CodeTokenButton_OnClick"/>
+			<OnClick function="Narci_CodeTokenButton_OnClick"/>
 		</Scripts>
 	</Button>
 
@@ -311,35 +311,6 @@
 			<OnShow function="Narci_SetButtonColor"/>
 		</Scripts>
 	</Button>
-
-	<Frame name="Narci_HeaderTemplate" virtual="true">
-		<Size y="20"/>
-		<Layers>
-			<Layer level="OVERLAY" textureSubLevel="3">
-				<Texture setAllPoints="true" parentKey="Color" hidden="false">
-					<Anchors>
-						<Anchor point="TOPLEFT" x="0" y="0"/>
-						<Anchor point="BOTTOMRIGHT" x="0" y="0"/>
-					</Anchors>
-					<Color r="1" g="1" b="1" a="0.9"/>
-                    <Gradient orientation="VERTICAL">
-                        <MinColor a="1" r="0.0" g="0.0" b="0.0"/>
-                        <MaxColor a="1" r="0.1" g="0.1" b="0.1"/>
-                    </Gradient>
-				</Texture>
-			</Layer>
-			<Layer level="OVERLAY" textureSubLevel="4">
-				<FontString inherits="AAAStatusNameMedium" justifyH="CENTER" justifyV="MIDDLE" parentKey="HeaderText">
-					<Size x="0" y="0"/>
-					<Color r="0.4" g="0.4" b="0.4" a="1"/>
-					<Anchors>
-						<Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER" x="0" y="0"/>
-					</Anchors>
-				</FontString>
-				<Texture inherits="NarciBottomShadowTemplate"/>
-			</Layer>
-		</Layers>
-	</Frame>
 	
 	<Frame name="Narci_CooldownFrameTemplate" virtual="true">
 		<Size x="64" y="64"/>
@@ -2276,7 +2247,9 @@
 								<Anchors>
 									<Anchor point="BOTTOMLEFT" relativeKey="$parent" relativePoint="BOTTOMRIGHT" x="10" y="4"/>
 								</Anchors>
-								<FontString justifyH="LEFT" justifyV="TOP" inherits="AAAStatusNameMedium" spacing="2"/>
+								<FontString justifyH="LEFT" justifyV="TOP" inherits="AAAStatusNameMedium" spacing="2">
+									<Color r="0.88" g="0.88" b="0.88"/>
+								</FontString>
 								<Layers>		
 									<Layer level="BACKGROUND" textureSubLevel="2">
 										<Texture setAllPoints="true" hidden="false" parentKey="Background">

@@ -725,7 +725,9 @@ function Narci_MinimapButton_OnClick(self, button, down)
 	end
 	
 	if IsShiftKeyDown() then
-		FadeFrame(Narci_ItemParser, 0.25, "IN");
+		DressUpFrame_Show(DressUpFrame);
+		Narci_UpdateDressingRoom();
+		--FadeFrame(Narci_ItemParser, 0.25, "Forced_IN");
 		return;
 	end
 
@@ -765,7 +767,7 @@ function Narci_MinimapButton_OnEnter(self)
 	--GameTooltip:AddDoubleLine(NARCI_GRADIENT, "A.A.K.");
 	GameTooltip:AddLine(LeftClickText.." "..L["Minimap Tooltip To Open"], nil, nil, nil, false);
 	GameTooltip:AddLine(L["Minimap Tooltip Right Click"].." "..L["Minimap Tooltip Enter Photo Mode"], nil, nil, nil, false);
-	GameTooltip:AddLine(L["Minimap Tooltip Shift Left Click"].." "..L["Corrupted Item Parser"], nil, nil, nil, true);
+	GameTooltip:AddLine(L["Minimap Tooltip Shift Left Click"].." "..L["Toggle Dressing Room"], nil, nil, nil, true);
 	GameTooltip:AddLine(L["Minimap Tooltip Shift Right Click"].." "..L["Minimap Tooltip Hide Button"], nil, nil, nil, true);
 	GameTooltip:AddLine(L["Minimap Tooltip Middle Button"], nil, nil, nil, true);
 	GameTooltip:AddLine(" ", nil, nil, nil, true);
@@ -2021,8 +2023,7 @@ local function PlayIlvlInfoAnimation()
 	local frame1 = frame.IlvlButtonLeft;
 	local frame2 = frame.IlvlButtonRight;
 
-
-	if NarcissusDB.DetailedIlvlInfo and (not frame1:IsShown()) then
+	if NarcissusDB.DetailedIlvlInfo and not frame1:IsVisible() and not TransmogMode then
 		frame1.AnimFrame:Show();
 		frame2.AnimFrame:Show();
 		frame1:Show();
@@ -3955,6 +3956,7 @@ function Narci_OpenGroupPhoto()
 				UIParent:SetAlpha(1);
 			end)
 		end)
+		Narci.isActive = true;
 	end
 end
 
@@ -4661,28 +4663,28 @@ end
 
 local function SetClipboard(self, type, subType)
 	local frame = self or Narci_XmogButtonPopUp.CopyButton;
-	local type = type or frame.CodeType or "TEXT"
-	local subType = subType or frame.GearTexts.BBSCode.subType or "Wowhead"
+	local type = type or frame.CodeType or "TEXT";
+	local subType = subType or frame.GearTexts.BBSCode.subType or "Wowhead";
 	local texts = CopyTexts(type, subType);
-	frame.GearTexts:SetText(texts)
+	frame.GearTexts:SetText(texts);
 
 	if frame.GearTexts then
-	frame.GearTexts:HighlightText()
+		frame.GearTexts:SetFocus();
+		frame.GearTexts:HighlightText();
 	end
 end
 
 local CodeTokenList = {
-	[1] = "TEXT",	[2] = "BBS", [3] = "MARKDOWN"
+	[1] = "TEXT",	[2] = "BBS", [3] = "MARKDOWN",
 }
 
-function CodeTokenButton_OnClick(self)
-	self:GetParent():GetParent().CodeType = CodeTokenList[self:GetID()]
-	SetClipboard()
-	TokenButton_ClearMarker(self)
+function Narci_CodeTokenButton_OnClick(self)
+	self:GetParent():GetParent().CodeType = CodeTokenList[self:GetID()];
+	SetClipboard();
+	TokenButton_ClearMarker(self);
 	self.HighlightColor:Show();
-
-	self.AnimFrame.Anim:SetScale(1.8)
-	self.AnimFrame.Anim.Bling:Play()
+	self.AnimFrame.Anim:SetScale(1.8);
+	self.AnimFrame.Anim.Bling:Play();
 end
 
 function IncludeIDButton_OnClick(self)
@@ -4700,14 +4702,14 @@ end
 function CopyButton_OnClick(self)
 	self.IsOn = not self.IsOn;
 	if self.IsOn then
-		SetClipboard(self)
-		FadeFrame(self.GearTexts, 0.25, "IN")
+		SetClipboard(self);
+		FadeFrame(self.GearTexts, 0.25, "IN");
 	else
-		FadeFrame(self.GearTexts, 0.25, "OUT")
+		FadeFrame(self.GearTexts, 0.25, "OUT");
 	end
 
-	self.AnimFrame.Anim:SetScale(1.5)
-	self.AnimFrame.Anim.Bling:Play()
+	self.AnimFrame.Anim:SetScale(1.5);
+	self.AnimFrame.Anim.Bling:Play();
 end
 
 --Narci_EmoteButton
@@ -5333,9 +5335,16 @@ SlashCmdList["NARCI"] = function(Msg)
 	elseif msg == "minimap" then
 		Narci_MinimapButton:Show();
 		NarcissusDB.ShowMinimapButton = true;
-		print("Minimap button has been re-enabled.")
+		print("Minimap button has been re-enabled.");
+	elseif msg == "itemlist" then
+		DressUpFrame_Show(DressUpFrame);
+	elseif msg == "parser" then
+		FadeFrame(Narci_ItemParser, 0.25, "Forced_IN");
 	else
-		print("Invalid!")
+		local color = "|cff40C7EB";
+		print(color.."Show Minimap Button:|r /narci minimap");
+		print(color.."Copy Item List:|r /narci itemlist");
+		print(color.."Corruption Item Parser:|r /narci parser");
 	end
 end
 
@@ -6132,6 +6141,6 @@ function Narci_GuideLineFrame_OnSizing(self, offset)
 end
 
 function Narci:SetReferenceFrameOffset(offset)
-	--A positive offset expand the reference frame.
+	--A positive offset expands the reference frame.
 	Narci_GuideLineFrame_OnSizing(Narci_GuideLineFrame, -offset);
 end

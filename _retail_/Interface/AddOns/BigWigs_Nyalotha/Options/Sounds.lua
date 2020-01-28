@@ -5,17 +5,20 @@ BigWigs:AddSounds("Wrathion", {
 	[306289] = "alarm",
 	[306735] = "alert",
 	[307013] = "warning",
+	[313250] = "info",
+	[313255] = {"info","warning"},
 	["stages"] = "long",
 })
 
 BigWigs:AddSounds("Maut", {
 	[305722] = "long",
+	[307586] = "warning",
 	[307806] = "warning",
 	[308044] = "long",
 	[308872] = "alarm",
 	[308903] = "alarm",
 	[310129] = "alarm",
-	[314337] = "warning",
+	[314337] = {"info","warning"},
 	[314993] = "warning",
 })
 
@@ -77,7 +80,7 @@ BigWigs:AddSounds("Drest'agath", {
 
 BigWigs:AddSounds("Vexiona", {
 	[307020] = "alarm",
-	[307043] = "info",
+	[307057] = "info",
 	[307116] = "info",
 	[307314] = "warning",
 	[307343] = "alarm",

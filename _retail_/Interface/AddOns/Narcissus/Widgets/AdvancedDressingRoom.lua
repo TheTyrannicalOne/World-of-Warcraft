@@ -220,7 +220,7 @@ local function GenerateHyperlinkAndSource(itemID, itemModID, sourceID, sourceTyp
 end
 
 local function NarciBridge_GetDressUpModelSlotSource(slotID, enchantID)
-    local sourcePlainText, itemQuality, itemIcon, hyperlink, unformatedHyperlink, itemModID, itemID, itemName, visualID, sourceType;
+    local sourcePlainText, itemQuality, itemIcon, hyperlink, unformatedHyperlink, itemModID, itemID, itemName, visualID, sourceType, _;
     local sourceTextColorized = "";
 	local playerActor = DressUpFrame.ModelScene:GetPlayerActor();
 	if (not playerActor) then
@@ -239,17 +239,17 @@ local function NarciBridge_GetDressUpModelSlotSource(slotID, enchantID)
     end
     if appliedSourceID < 0 then return; end
 
-    local sourceInfo = GetTransmogSourceInfo(appliedSourceID)
+    local sourceInfo = GetTransmogSourceInfo(appliedSourceID);
     if not sourceInfo then return; end
-    sourceType = sourceInfo.sourceType
+    sourceType = sourceInfo.sourceType;
     visualID = sourceInfo.sourceInfo;
     itemModID = sourceInfo.itemModID;
     itemID = sourceInfo.itemID;
     itemName = sourceInfo.name; 
-    local appearanceID, _ = GetTransmogItemInfo(itemID, itemModID)							--appearanceID, sourceID
+    local appearanceID, _ = GetTransmogItemInfo(itemID, itemModID);							        --appearanceID, sourceID
     itemIcon = GetItemIcon(itemID); 																--sourceitemIcon
     --local _, _, _, hex = GetItemQualityColor(itemQuality)
-    _, hyperlink = GetItemInfo(itemID)
+    _, hyperlink = GetItemInfo(itemID);
 
     local hasMog = PlayerHasTransmog(itemID, itemModID);
     --print(appearanceID)
@@ -281,7 +281,7 @@ local function NarciBridge_GetDressUpModelSlotSource(slotID, enchantID)
             end
         end
     end
-    return appliedSourceID, itemIcon, (hasMog or hasAppearance), hyperlink, unformatedHyperlink, itemName, sourceTextColorized;
+    return appliedSourceID, itemIcon, (hasMog or hasAppearance), hyperlink, unformatedHyperlink, itemName, sourceTextColorized, itemID
 end
 
 -------Create Mogit List-------
@@ -290,7 +290,8 @@ local newSet = {items = {}}
 local ItemList = {};
 
 --Background Transition Animation--
-local function SetDressUpBackground(frame, atlasPostfix)
+local function SetDressUpBackground(frame, unit)
+    local _, atlasPostfix = UnitClass(unit);
 	if ( frame.ModelBackground and frame.ModelBackgroundOverlay and atlasPostfix ) then
         frame.ModelBackgroundOverlay:SetAtlas("dressingroom-background-"..atlasPostfix);
         frame.ModelBackgroundOverlay:StopAnimating();
@@ -300,7 +301,7 @@ end
 
 local function GetDressingSource(mainHandEnchant, offHandEnchant)
     local buttons = NarciBridge_DressUpFrame.buttons;
-    local button, appliedSourceID, icon, hasMog, hyperlink, unformatedHyperlink, isIllusionCollected, illusionHyperlink;
+    local button, appliedSourceID, icon, hasMog, hyperlink, unformatedHyperlink, itemName, itemID, sourceTextColorized, isIllusionCollected, illusionHyperlink;
     local enchantID;
     wipe(newSet.items)
     wipe(ItemList)
@@ -313,11 +314,11 @@ local function GetDressingSource(mainHandEnchant, offHandEnchant)
             else
                 enchantID = "";
             end
-            appliedSourceID, icon, hasMog, hyperlink, unformatedHyperlink, itemName, sourceTextColorized = NarciBridge_GetDressUpModelSlotSource(slotID, enchantID);
+            appliedSourceID, icon, hasMog, hyperlink, unformatedHyperlink, itemName, sourceTextColorized, itemID = NarciBridge_GetDressUpModelSlotSource(slotID, enchantID);
             if illusionHyperlink then
                 --hyperlink = illusionHyperlink;
             end     
-            ItemList[slotID] = {itemName, sourceTextColorized};
+            ItemList[slotID] = {itemName, sourceTextColorized, itemID};
             newSet.items[slotID] = hyperlink;
             button = buttons[slotID];
             button.hyperlink = hyperlink;
@@ -394,19 +395,35 @@ local function DressUpSources(appearanceSources, mainHandEnchant, offHandEnchant
     return mainHandEnchant, offHandEnchant
 end
 
-local function CopyTexts(frame)
+local includeItemID = false;
+local function CopyTexts()
     local texts = "";
-    for k, v in pairs(ItemList) do
-        if v[1] and v[1] ~= "" then
-            texts = texts .. "|cFFFFD100"..SlotIDtoName[k][2]..":|r " .. v[1];
-            if v[2] and v[2] ~= "" then
-                texts = texts .. " |cFF40C7EB(" .. v[2] .. ")|r"
+    if includeItemID then
+        for k, v in pairs(ItemList) do
+            if v[1] and v[1] ~= "" then
+                texts = texts .. "|cFFFFD100"..SlotIDtoName[k][2]..":|r " .. v[1];
+                if v[3] then
+                    texts = texts .. " |cFF959595" .. v[3] .. "|r";
+                end
+                if v[2] and v[2] ~= "" then
+                    texts = texts .. " |cFF40C7EB(" .. v[2] .. ")|r";
+                end
+                texts = texts .. "\n";
             end
-            texts = texts .. "\n"
+        end
+    else
+        for k, v in pairs(ItemList) do
+            if v[1] and v[1] ~= "" then
+                texts = texts .. "|cFFFFD100"..SlotIDtoName[k][2]..":|r " .. v[1];
+                if v[2] and v[2] ~= "" then
+                    texts = texts .. " |cFF40C7EB(" .. v[2] .. ")|r"
+                end
+                texts = texts .. "\n"
+            end
         end
     end
-    local GearTexts = frame:GetParent().GearTexts;
-    GearTexts:SetText(strtrim(texts));
+
+    NarciDressingRoom_GearTexts:SetText(strtrim(texts));
 end
 
 local function NarciBridge_DressUpFrame_OnModelLoaded(self)
@@ -423,13 +440,12 @@ local IsCurrentModelPlayer = false;
 local function UpdateDressingRoomModel(self, unit)
     unit = unit or "player";
     if not UnitExists(unit) or not UnitIsPlayer(unit) or not CanInspect(unit, false) then return; end
-    local className, classFileName = UnitClass(unit);
     local frame = DressUpFrame;
-    SetDressUpBackground(frame, classFileName);
+    SetDressUpBackground(frame, unit);
     local ModelScene = frame.ModelScene;
     local actor = ModelScene:GetPlayerActor();
     if not actor then return; end;
-
+    
     --Acquire target's gears
     NotifyInspect(unit);
 
@@ -459,10 +475,10 @@ local function UpdateDressingRoomModel(self, unit)
     end
 
     C_Timer.After(0.1,function()
-        self.mainHandEnchant, self.offHandEnchant = DressUpSources(C_TransmogCollection.GetInspectSources())
-        GetDressingSource(self.mainHandEnchant, self.offHandEnchant)
-        if NarciBridge_DressUpFrame.OptionFrame.GearTexts:IsShown() then
-            CopyTexts(NarciBridge_DressUpFrame.OptionFrame.GearTexts)
+        self.mainHandEnchant, self.offHandEnchant = DressUpSources(C_TransmogCollection.GetInspectSources());
+        GetDressingSource(self.mainHandEnchant, self.offHandEnchant);
+        if NarciDressingRoom_GearTexts:IsShown() then
+            CopyTexts();
         end
         ClearInspectPlayer();
     end);
@@ -480,9 +496,12 @@ local function NarciBridge_DressUpFrame_OnEvent(self, event)
     end
 end
 
+local function IsDressUpFrameMaximized()
+    return not DressUpFrame.MaximizeMinimizeFrame:IsMinimized()
+end
 local function NarciBridge_DressUpFrame_OnSizeChanged(self, width, height)
     --print(width.." x "..height);
-    if GetCVar("miniDressUpFrame") == "0" and SlotFrameVisibility then
+    if IsDressUpFrameMaximized() and SlotFrameVisibility then
         self.SlotFrame:Show();
     else
         self.SlotFrame:Hide();
@@ -491,9 +510,9 @@ end
 
 local function NarciBridge_DressUpFrame_OnShow(self)
     self:RegisterEvent("PLAYER_TARGET_CHANGED");
-    --self:RegisterEvent("PLAYER_STARTED_MOVING");
-    --self:RegisterEvent("PLAYER_STOPPED_MOVING");
-    --UpdateDressingRoomModel(self)
+    C_Timer.After(0, function()
+        GetDressingSource();
+    end)
 end
 
 local function ResetHiddenSlot()
@@ -505,29 +524,6 @@ local function ResetHiddenSlot()
         end
     end
 end
--------------------------------------------
---From Blizzard DressUpFrame_OnDressModel--
-local function DressUpFrame_OnDressModel2(self)
-	-- only want 1 update per frame
-	if ( not self.gotDressed ) then
-		self.gotDressed = true;
-        C_Timer.After(0, function()
-            self.gotDressed = nil;
-            DressUpFrameOutfitDropDown:UpdateSaveButton();
-            C_Timer.After(0.2,function()
-                GetDressingSource(self.mainHandEnchant, self.offHandEnchant)
-                if NarciBridge_DressUpFrame.OptionFrame.GearTexts:IsShown() then
-                    CopyTexts(NarciBridge_DressUpFrame.OptionFrame.GearTexts)
-                end
-            end);
-        end);
-	end
-end
-
-local function NarciBridge_DressUpFrame_OnDressModel(self)
-    DressUpFrame_OnDressModel2(self);
-end
------------------------------------------
 
 function NarciBridge_UpdateCharacterButton_OnClick(self)
     UpdateDressingRoomModel(self:GetParent():GetParent())
@@ -543,13 +539,41 @@ local function NarciBridge_MogIt_SaveButton_OnClick(self)
 end
 
 local function CopyTextButton_OnClick(self)
-    CopyTexts(self)
-    local GearTexts = self:GetParent().GearTexts;
+    local GearTexts = NarciDressingRoom_GearTexts;
     if not GearTexts:IsShown() then
-        FadeFrame(GearTexts, 0.25, "IN")
+        CopyTexts();
+        FadeFrame(GearTexts, 0.25, "IN");
+        GearTexts:SetFocus();
     else
+        NarciDressingRoom_GearTexts:HighlightText(0, 0);
         FadeFrame(GearTexts, 0.25, "OUT")
     end
+end
+
+local function SetButtonColor(button)
+    if button.IsOn then
+        button.Label:SetTextColor(0, 0, 0);
+        button.Label:SetShadowColor(1, 1, 1);
+        button.Background:SetColorTexture(0.88, 0.88, 0.88);
+    else
+        button.Label:SetTextColor(0.25, 0.78, 0.92);
+        button.Label:SetShadowColor(0, 0, 0);
+        button.Background:SetColorTexture(0.2, 0.2, 0.2);
+    end
+end
+
+local function ItemIDButton_SetState(button)
+    button.IsOn = NarcissusDB.DressingRoomIncludeItemID;
+    includeItemID = button.IsOn;
+    SetButtonColor(button);
+end
+
+local function ItemIDButton_OnClick(self)
+    self.IsOn = not self.IsOn;
+    includeItemID = self.IsOn;
+    NarcissusDB.DressingRoomIncludeItemID = self.IsOn;
+    SetButtonColor(self);
+    CopyTexts();
 end
 
 local function TryOnButton_OnClick(self)
@@ -564,6 +588,19 @@ local function TryOnButton_OnClick(self)
     UpdateDressingRoomModel(self, "target");
 end
 
+function Narci_UpdateDressingRoom()
+    local frame = NarciBridge_DressUpFrame;
+    if frame and SlotFrameVisibility and IsDressUpFrameMaximized() then
+        frame.SlotFrame:Show();
+        frame.OptionFrame:Show();
+        GetDressingSource(frame.mainHandEnchant, frame.offHandEnchant);
+        if NarciDressingRoom_GearTexts:IsShown() then
+            CopyTexts();
+        end
+    end
+end
+
+local Narci_UpdateDressingRoom = Narci_UpdateDressingRoom;
 local function NarciBridge_DressUpFrame_Initialize()
     if not (NarcissusDB and NarcissusDB.DressingRoom) then return; end;
     local parentFrame = DressUpFrame;
@@ -593,17 +630,7 @@ local function NarciBridge_DressUpFrame_Initialize()
         ReScaleFrame:SetOnMaximizedCallback(OnMaximize);
     end
 
-    hooksecurefunc("DressUpVisual", function()
-        local frame = NarciBridge_DressUpFrame;
-        if frame and SlotFrameVisibility and GetCVar("miniDressUpFrame") == "0" then
-            frame.SlotFrame:Show();
-            frame.OptionFrame:Show();
-            GetDressingSource(frame.mainHandEnchant, frame.offHandEnchant)
-            if frame.OptionFrame.GearTexts:IsShown() then
-                CopyTexts(frame.OptionFrame.GearTexts)
-            end
-        end
-    end)
+    hooksecurefunc("DressUpVisual", Narci_UpdateDressingRoom);
     
     local function HideIrrelevantUI()
         local frame = NarciBridge_DressUpFrame;
@@ -614,16 +641,18 @@ local function NarciBridge_DressUpFrame_Initialize()
     end
     
     hooksecurefunc("DressUpMountLink", function()
-        HideIrrelevantUI()
+        HideIrrelevantUI();
     end)
     
     hooksecurefunc("DressUpBattlePetLink", function()
-        HideIrrelevantUI()
+        HideIrrelevantUI();
     end)
 
     frame.OptionFrame.CopyButton:SetScript("OnClick", CopyTextButton_OnClick);
-    local TryOnButton = frame.OptionFrame.TryOnButton;
-    TryOnButton:SetScript("OnClick", TryOnButton_OnClick);
+    frame.OptionFrame.TryOnButton:SetScript("OnClick", TryOnButton_OnClick);
+    local ItemIDButton = frame.OptionFrame.GearTexts.IncludeID;
+    ItemIDButton_SetState(ItemIDButton);
+    ItemIDButton:SetScript("OnClick", ItemIDButton_OnClick);
 end
 
 
@@ -669,7 +698,7 @@ initialize:SetScript("OnEvent",function(self,event,...)
         C_Timer.After(0.5, function()
             OverrideHeight = math.floor(GetScreenHeight()*0.8 + 0.5);
             OverrideWidth = math.floor(WidthHeitghtRatio * OverrideHeight + 0.5);
-            if GetCVar("miniDressUpFrame") == "0" then
+            if IsDressUpFrameMaximized() then
                 DressUpFrame:SetSize(OverrideWidth, OverrideHeight)
             end
         end)

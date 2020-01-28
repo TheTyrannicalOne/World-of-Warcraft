@@ -1,4 +1,4 @@
-local CurrentVersion = 10081;	--last: 10080
+local CurrentVersion = 10082;	--last: 10080
 -----------------------------------------------------------------
 
 local function ApplyPatchFix(self)
