@@ -766,7 +766,6 @@
 		</Frames>
 		<Scripts>
 			<OnClick>
-				print("TEST")
 				self:Hide();
 			</OnClick>
 			<OnUpdate>

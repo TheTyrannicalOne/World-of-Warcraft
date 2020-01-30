@@ -266,7 +266,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -274,11 +274,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -307,9 +307,13 @@ WeakAurasSaved = {
 			},
 			["stickyDuration"] = false,
 			["useAdjustededMax"] = false,
-			["config"] = {
-			},
 			["uid"] = "l4llvQdJr9S",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -340,11 +344,7 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["sparkDesature"] = false,
@@ -551,10 +551,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
@@ -564,11 +561,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_combat"] = true,
 				["difficulty"] = {
 					["multi"] = {
@@ -779,10 +779,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_class"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -795,7 +792,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -803,7 +800,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "MONK",
 					["multi"] = {
@@ -825,7 +825,8 @@ WeakAurasSaved = {
 			},
 			["zoom"] = 0,
 			["auto"] = true,
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["id"] = "Lifecycles",
 			["width"] = 48,
 			["alpha"] = 1,
@@ -837,9 +838,8 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["conditions"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
-			["authorOptions"] = {
-			},
 		},
 		["Stormbringer THREE"] = {
 			["user_y"] = 0,
@@ -917,12 +917,23 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["regionType"] = "progresstexture",
+			["startAngle"] = 0,
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
 			["version"] = 2,
 			["height"] = 40,
+			["crop_y"] = 0.41,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["useAdjustededMax"] = false,
+			["textureWrapMode"] = "CLAMP",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -966,13 +977,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["use_class"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_spec"] = true,
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -981,27 +992,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturateForeground"] = false,
-			["useAdjustededMax"] = false,
-			["textureWrapMode"] = "CLAMP",
-			["backgroundTexture"] = "450915",
 			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
 			["conditions"] = {
 			},
-			["anchorPoint"] = "CENTER",
+			["desaturateForeground"] = false,
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
-			["crop"] = 0.41,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["regionType"] = "progresstexture",
+			["authorOptions"] = {
 			},
 			["blendMode"] = "BLEND",
-			["selfPoint"] = "CENTER",
+			["anchorPoint"] = "CENTER",
 			["config"] = {
 			},
 			["slantMode"] = "INSIDE",
@@ -1014,14 +1015,13 @@ WeakAurasSaved = {
 			["xOffset"] = 0,
 			["alpha"] = 1,
 			["width"] = 40,
-			["crop_y"] = 0.41,
+			["crop"] = 0.41,
 			["uid"] = "SKVgVEnK4Qn",
 			["inverse"] = false,
-			["startAngle"] = 0,
+			["backgroundTexture"] = "450915",
 			["orientation"] = "VERTICAL",
 			["crop_x"] = 0.41,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["backgroundOffset"] = 0,
 		},
 		["Maelstrom Resource"] = {
@@ -1228,10 +1228,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -1244,11 +1241,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_combat"] = true,
 				["use_class"] = true,
 				["size"] = {
@@ -1374,13 +1374,13 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["use_name"] = true,
 						["type"] = "aura",
-						["count"] = "5",
+						["name"] = "Maelstrom Weapon",
 						["names"] = {
 							"Elusive Brew", -- [1]
 						},
-						["name"] = "Maelstrom Weapon",
 						["spellIds"] = {
 						},
+						["count"] = "5",
 						["unit"] = "player",
 						["fullscan"] = true,
 					},
@@ -1476,10 +1476,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
@@ -1489,11 +1486,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_combat"] = true,
 				["difficulty"] = {
 					["multi"] = {
@@ -1581,16 +1581,16 @@ WeakAurasSaved = {
 						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Health",
 						["genericShowOn"] = "showOnActive",
-						["subeventPrefix"] = "SPELL",
-						["customDuration"] = "function()\n    \n    return casts,3, function() return casts,3 end\nend",
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not Undu then Undu = 0 end\n    \n    if not subtract then subtract = false end\n    \n    if casts == nil then casts = 0 end\n    \n    Undulated = UnitAura(\"player\", \"Undulation\")\n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Healing Surge\" or spellName == \"Healing Wave\" and sourceName == UnitName(\"player\") then\n            \n            if just_reset == 1 then\n                just_reset = 0;\n                return true;\n            else\n                casts = casts + 1\n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            \n            casts = 1;\n            just_reset = 1;\n            \n        end\n        \n        \n        \n    elseif message == \"SPELL_AURA_APPLIED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/SPELLS/Spell_LeiShen_Lightning_Large_Cast02.OGG\")\n            \n            \n        end\n        \n    end\n    \n    return true;\n    \nend",
-						["spellIds"] = {
-						},
-						["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return casts;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["names"] = {
 						},
+						["customDuration"] = "function()\n    \n    return casts,3, function() return casts,3 end\nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not Undu then Undu = 0 end\n    \n    if not subtract then subtract = false end\n    \n    if casts == nil then casts = 0 end\n    \n    Undulated = UnitAura(\"player\", \"Undulation\")\n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Healing Surge\" or spellName == \"Healing Wave\" and sourceName == UnitName(\"player\") then\n            \n            if just_reset == 1 then\n                just_reset = 0;\n                return true;\n            else\n                casts = casts + 1\n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            \n            casts = 1;\n            just_reset = 1;\n            \n        end\n        \n        \n        \n    elseif message == \"SPELL_AURA_APPLIED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/SPELLS/Spell_LeiShen_Lightning_Large_Cast02.OGG\")\n            \n            \n        end\n        \n    end\n    \n    return true;\n    \nend",
+						["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return casts;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["spellIds"] = {
+						},
 						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "custom",
 					},
 					["untrigger"] = {
@@ -1778,7 +1778,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["use_talent"] = true,
 				["use_class"] = true,
 				["race"] = {
@@ -1789,15 +1792,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -1902,11 +1902,11 @@ WeakAurasSaved = {
 						},
 						["customDuration"] = "function()\n    \n    return riptides,2, function() return riptides,2 end\nend",
 						["subeventPrefix"] = "SPELL",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return charges;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not riptides then riptides = 2 end\n    \n    local spellId, spellName, spellSchool = ...\n    \n    s = GetSpellCharges(\"Riptide\")\n    charges = s\n    riptides = charges\n    \n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Riptide\" and s == 0 then\n            \n            s = GetSpellCharges(\"Riptide\")\n            \n            if s == 0 then\n                \n                PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactGiantWaterA.ogg\")\n                \n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    return true;\n    \nend",
+						["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return charges;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["spellIds"] = {
 						},
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -2108,7 +2108,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -2124,15 +2124,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_class"] = true,
 				["size"] = {
 					["multi"] = {
@@ -2243,10 +2243,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -2259,12 +2256,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -2582,10 +2582,10 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["borderOffset"] = 5,
-			["xOffset"] = 141.99951171875,
+			["anchorPoint"] = "CENTER",
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "Maelstrom Bar OG",
-			["anchorPoint"] = "CENTER",
+			["yOffset"] = -215.999938964844,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["internalVersion"] = 26,
@@ -2651,7 +2651,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["yOffset"] = -215.999938964844,
+			["xOffset"] = 141.99951171875,
 		},
 		["Flametongue Bar 2"] = {
 			["sparkWidth"] = 10,
@@ -3021,7 +3021,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -3034,15 +3034,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -3328,18 +3328,18 @@ WeakAurasSaved = {
 						["custom_hide"] = "custom",
 						["custom_type"] = "event",
 						["event"] = "Health",
-						["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["subeventPrefix"] = "SPELL",
 						["genericShowOn"] = "showOnActive",
-						["names"] = {
-						},
+						["unit"] = "player",
 						["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,5, function() return s,5 end\nend",
 						["subeventSuffix"] = "_CAST_START",
 						["events"] = "UNIT_AURA",
 						["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 						["spellIds"] = {
 						},
-						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -3499,13 +3499,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["use_class"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_spec"] = true,
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -3662,7 +3662,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -3675,15 +3675,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -3936,12 +3936,7 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["config"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = -213.333068847656,
 			["displayText"] = "%c",
 			["customText"] = "function()\n    return(\"Active Rejuvenations: \"..WA_Rejuv_Amount)\nend\n\n\n\n\n\n\n\n\n\n",
 			["yOffset"] = 157.392639160156,
@@ -3949,7 +3944,12 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["regionType"] = "text",
-			["parent"] = "BackUp WA Code",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["customTextUpdate"] = "event",
 			["automaticWidth"] = "Auto",
 			["actions"] = {
@@ -3972,11 +3972,11 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["customDuration"] = "function()\n    rejuvs = WA_Rejuv_Amount\n    if not rejuvs then return WA_Rejuv_Amount, 10;\n    else return rejuvs, 10;\n    end\nend\n\n\n\n\n\n",
 						["unit"] = "player",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["customStacks"] = "\n\nfunction()\n    s = WA_Rejuv_Amount\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["spellIds"] = {
 						},
+						["customStacks"] = "\n\nfunction()\n    s = WA_Rejuv_Amount\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    local spellId, spellName, spellSchool = ...\n    if message == \"SPELL_AURA_APPLIED\" then\n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount or 0\n            WA_Rejuv_Amount = WA_Rejuv_Amount + 1\n            return true\n        end\n        \n    elseif message == \"SPELL_AURA_REMOVED\" then    \n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount - 1\n            return true\n        end\n    end\nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["names"] = {
 						},
 						["custom_hide"] = "custom",
@@ -3992,7 +3992,7 @@ WeakAurasSaved = {
 			["justify"] = "LEFT",
 			["wordWrap"] = "WordWrap",
 			["id"] = "RejuvTracker 2",
-			["xOffset"] = -213.333068847656,
+			["parent"] = "BackUp WA Code",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "BOTTOM",
@@ -4056,7 +4056,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -4065,11 +4065,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -4417,20 +4417,7 @@ WeakAurasSaved = {
 			["internalVersion"] = 26,
 			["selfPoint"] = "CENTER",
 			["backdropInFront"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
+			["parent"] = "ZerkinUI Warlock",
 			["barColor"] = {
 				0.701960784313726, -- [1]
 				0, -- [2]
@@ -4438,7 +4425,29 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["stickyDuration"] = false,
-			["desaturate"] = false,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["unit"] = "target",
+						["spellIds"] = {
+						},
+						["buffShowOn"] = "showOnActive",
+						["custom_hide"] = "timed",
+						["subeventPrefix"] = "SPELL",
+						["names"] = {
+							"Agony", -- [1]
+						},
+						["debuffType"] = "HARMFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = 1,
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -4544,7 +4553,20 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 25,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -4585,7 +4607,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -4593,11 +4615,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -4605,6 +4627,8 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
+			["desaturate"] = false,
+			["borderBackdrop"] = "Blizzard Tooltip",
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -4617,33 +4641,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0, -- [4]
 			},
-			["icon"] = true,
-			["parent"] = "ZerkinUI Warlock",
 			["config"] = {
 			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["subeventSuffix"] = "_CAST_START",
-						["ownOnly"] = true,
-						["event"] = "Health",
-						["unit"] = "target",
-						["spellIds"] = {
-						},
-						["buffShowOn"] = "showOnActive",
-						["custom_hide"] = "timed",
-						["subeventPrefix"] = "SPELL",
-						["names"] = {
-							"Agony", -- [1]
-						},
-						["debuffType"] = "HARMFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = 1,
-			},
+			["icon"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -4702,20 +4702,7 @@ WeakAurasSaved = {
 			["internalVersion"] = 26,
 			["selfPoint"] = "CENTER",
 			["backdropInFront"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
+			["parent"] = "ZerkinUI Warlock",
 			["barColor"] = {
 				0.431372549019608, -- [1]
 				1, -- [2]
@@ -4723,7 +4710,29 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["stickyDuration"] = false,
-			["desaturate"] = false,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["unit"] = "target",
+						["spellIds"] = {
+						},
+						["buffShowOn"] = "showOnActive",
+						["debuffType"] = "HARMFUL",
+						["names"] = {
+							"Haunt", -- [1]
+						},
+						["subeventPrefix"] = "SPELL",
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = 1,
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -4829,7 +4838,20 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 25,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -4870,7 +4892,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -4878,11 +4900,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -4890,6 +4912,8 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
+			["desaturate"] = false,
+			["borderBackdrop"] = "Blizzard Tooltip",
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -4902,33 +4926,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0, -- [4]
 			},
-			["icon"] = true,
-			["parent"] = "ZerkinUI Warlock",
 			["config"] = {
 			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["subeventSuffix"] = "_CAST_START",
-						["ownOnly"] = true,
-						["event"] = "Health",
-						["unit"] = "target",
-						["spellIds"] = {
-						},
-						["buffShowOn"] = "showOnActive",
-						["debuffType"] = "HARMFUL",
-						["names"] = {
-							"Haunt", -- [1]
-						},
-						["subeventPrefix"] = "SPELL",
-						["custom_hide"] = "timed",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = 1,
-			},
+			["icon"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -5042,10 +5042,10 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["borderOffset"] = 5,
-			["xOffset"] = -0.00018310546875,
+			["anchorPoint"] = "CENTER",
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "ZerkinUI Primary Bars",
-			["anchorPoint"] = "CENTER",
+			["yOffset"] = 1.99945068359375,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["internalVersion"] = 26,
@@ -5109,7 +5109,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["yOffset"] = 1.99945068359375,
+			["xOffset"] = -0.00018310546875,
 		},
 		["Flametongue Bar Inactive 2"] = {
 			["sparkWidth"] = 10,
@@ -5813,11 +5813,11 @@ WeakAurasSaved = {
 						},
 						["customDuration"] = "function()    \n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\")\n    \n    if not s or s == nil or s == 0 then\n        \n        \n        if aura_QA then\n            return_s = 2;\n            \n        else\n            return_s = 0;\n            \n        end\n        \n        \n    else \n        return_s = s;\n        \n    end\n    \n    \n    \n    return return_s,2, function() return return_s,2 end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["unit"] = "player",
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n        \n    \n    _,_,_,s = UnitAura(\"player\", 'Tidal Waves', nil, \"PLAYER\")\n    \n    if not s or s == nil then s = 0; end\n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\", nil, \"PLAYER\")\n    \n    \n    \n    \n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Tidal Waves\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactMediumWaterA.ogg\")\n            \n        end\n        \n    end\n    \n    \n    return true;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-						["subeventPrefix"] = "SPELL",
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n        \n    \n    _,_,_,s = UnitAura(\"player\", 'Tidal Waves', nil, \"PLAYER\")\n    \n    if not s or s == nil then s = 0; end\n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\", nil, \"PLAYER\")\n    \n    \n    \n    \n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Tidal Waves\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactMediumWaterA.ogg\")\n            \n        end\n        \n    end\n    \n    \n    return true;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["customStacks"] = "function()\n    \n    if not s or s == nil then\n        return 0;\n    else\n        return s;\n    end\n    \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
@@ -6148,10 +6148,10 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["borderOffset"] = 5,
-			["xOffset"] = 0,
+			["anchorPoint"] = "CENTER",
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "ZerkinUI Warlock",
-			["anchorPoint"] = "CENTER",
+			["yOffset"] = -225,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["internalVersion"] = 26,
@@ -6217,7 +6217,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["yOffset"] = -225,
+			["xOffset"] = 0,
 		},
 		["Stormbringer ZERO"] = {
 			["user_y"] = 0,
@@ -6293,7 +6293,12 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["crop"] = 0.41,
+			["backgroundColor"] = {
+				0.0470588235294118, -- [1]
+				0.0470588235294118, -- [2]
+				0.0470588235294118, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
@@ -6357,21 +6362,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["color"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["useAdjustededMax"] = false,
 			["textureWrapMode"] = "CLAMP",
-			["desaturateForeground"] = false,
+			["foregroundColor"] = {
+				0.125490196078431, -- [1]
+				0.156862745098039, -- [2]
+				0.125490196078431, -- [3]
+				1, -- [4]
+			},
 			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
 			["conditions"] = {
 			},
-			["backgroundTexture"] = "450915",
+			["color"] = {
+			},
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
-			["regionType"] = "progresstexture",
-			["selfPoint"] = "CENTER",
+			["crop"] = 0.41,
+			["authorOptions"] = {
+			},
 			["blendMode"] = "BLEND",
-			["xOffset"] = 0,
+			["backgroundTexture"] = "450915",
 			["config"] = {
 			},
 			["slantMode"] = "INSIDE",
@@ -6384,96 +6395,153 @@ WeakAurasSaved = {
 			["crop_y"] = 0.41,
 			["frameStrata"] = 3,
 			["width"] = 40,
-			["foregroundColor"] = {
-				0.125490196078431, -- [1]
-				0.156862745098039, -- [2]
-				0.125490196078431, -- [3]
-				1, -- [4]
-			},
+			["regionType"] = "progresstexture",
 			["uid"] = "PlJa6oQjbhC",
 			["inverse"] = false,
-			["backgroundColor"] = {
-				0.0470588235294118, -- [1]
-				0.0470588235294118, -- [2]
-				0.0470588235294118, -- [3]
-				1, -- [4]
-			},
+			["desaturateForeground"] = false,
 			["orientation"] = "VERTICAL",
 			["crop_x"] = 0.41,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["backgroundOffset"] = 0,
 		},
-		["Max Stacks"] = {
-			["color"] = {
+		["Maelstrom BACKUP"] = {
+			["sparkWidth"] = 10,
+			["sparkOffsetX"] = 0,
+			["xOffset"] = 1.00018310546875,
+			["customText"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    return s\nend",
+			["yOffset"] = -278.999694824219,
+			["anchorPoint"] = "CENTER",
+			["sparkRotation"] = 0,
+			["customTextUpdate"] = "update",
+			["backgroundColor"] = {
+				0.196078431372549, -- [1]
+				0.196078431372549, -- [2]
+				0.196078431372549, -- [3]
+				1, -- [4]
+			},
+			["fontFlags"] = "OUTLINE",
+			["icon_color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
-			["icon"] = true,
+			["internalVersion"] = 26,
+			["sparkHidden"] = "NEVER",
+			["selfPoint"] = "CENTER",
+			["backdropInFront"] = false,
+			["barColor"] = {
+				0, -- [1]
+				0.780392156862745, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["parent"] = "BackUp WA Code",
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["subeventPrefix"] = "SPELL",
-						["useCount"] = true,
-						["debuffType"] = "HELPFUL",
-						["name_operator"] = "==",
-						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
-						["custom_hide"] = "timed",
-						["countOperator"] = ">=",
+						["type"] = "custom",
+						["custom_hide"] = "custom",
+						["custom_type"] = "event",
 						["event"] = "Health",
-						["use_name"] = true,
-						["type"] = "aura",
-						["count"] = "5",
-						["names"] = {
-							"Elusive Brew", -- [1]
-						},
-						["name"] = "Maelstrom Weapon",
+						["subeventPrefix"] = "SPELL",
+						["genericShowOn"] = "showOnActive",
+						["unit"] = "player",
+						["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
+						["subeventSuffix"] = "_CAST_START",
 						["spellIds"] = {
 						},
-						["unit"] = "player",
-						["fullscan"] = true,
+						["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
+						["events"] = "UNIT_AURA",
+						["names"] = {
+						},
+						["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    return s\nend",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
+						["custom"] = "function()\nend",
 					},
 				}, -- [1]
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["spellId"] = "115308",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
-						["unit"] = "player",
-						["buffShowOn"] = "showOnMissing",
-						["use_spellId"] = true,
-						["name"] = "Ironskin Brew",
-						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
-						["names"] = {
-						},
-						["spellIds"] = {
-						},
-						["fullscan"] = true,
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 26,
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
-					["text_shadowXOffset"] = 0,
+					["type"] = "subborder",
+					["border_anchor"] = "bar",
+					["border_size"] = 16,
+					["border_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["border_visible"] = false,
+					["border_edge"] = "None",
+					["border_offset"] = 5,
+				}, -- [1]
+				{
+					["type"] = "aurabar_bar",
+				}, -- [2]
+				{
+					["text_shadowXOffset"] = 1,
+					["type"] = "subtext",
+					["text_text"] = " %s",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "ElvUI Alt-Font",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = -1,
+					["text_selfPoint"] = "AUTO",
+					["rotateText"] = "NONE",
+					["text_fontType"] = "None",
+					["text_anchorPoint"] = "INNER_RIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 20,
+					["anchorXOffset"] = 0,
+					["text_visible"] = true,
+				}, -- [3]
+				{
+					["text_shadowXOffset"] = 1,
+					["type"] = "subtext",
+					["text_text"] = " ",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "ElvUI Alt-Font",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = -1,
+					["text_selfPoint"] = "AUTO",
+					["rotateText"] = "NONE",
+					["text_fontType"] = "None",
+					["text_anchorPoint"] = "INNER_LEFT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 20,
+					["anchorXOffset"] = 0,
+					["text_visible"] = true,
+				}, -- [4]
+				{
+					["text_shadowXOffset"] = 1,
 					["type"] = "subtext",
 					["text_text"] = "%s",
 					["text_color"] = {
@@ -6489,21 +6557,39 @@ WeakAurasSaved = {
 						0, -- [3]
 						1, -- [4]
 					},
-					["text_shadowYOffset"] = 0,
+					["text_shadowYOffset"] = -1,
 					["text_selfPoint"] = "AUTO",
-					["text_visible"] = true,
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["rotateText"] = "NONE",
+					["text_fontType"] = "None",
+					["text_anchorPoint"] = "ICON_CENTER",
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
-					["text_fontSize"] = 16,
+					["text_fontSize"] = 20,
 					["anchorXOffset"] = 0,
-					["rotateText"] = "NONE",
-				}, -- [1]
+					["text_visible"] = false,
+				}, -- [5]
 			},
 			["height"] = 40,
+			["displayIcon"] = "Interface\\Icons\\Spell_Shaman_MaelstromWeapon",
 			["load"] = {
 				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["class"] = {
+					["single"] = "ROGUE",
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["size"] = {
 					["multi"] = {
 					},
 				},
@@ -6516,6 +6602,7 @@ WeakAurasSaved = {
 					},
 				},
 				["talent"] = {
+					["single"] = 3,
 					["multi"] = {
 					},
 				},
@@ -6524,21 +6611,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
-					["single"] = "ROGUE",
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["role"] = {
+				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -6550,68 +6623,105 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_combat"] = true,
-				["difficulty"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["size"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["regionType"] = "icon",
-			["parent"] = "Maelstrom Bar OG",
+			["sparkBlendMode"] = "ADD",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["stickyDuration"] = false,
+			["icon"] = false,
+			["uid"] = "R)ySKvus4C2",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["useAdjustededMax"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["borderInFront"] = false,
+			["alpha"] = 1,
+			["icon_side"] = "RIGHT",
+			["sparkRotationMode"] = "AUTO",
+			["sparkHeight"] = 30,
+			["texture"] = "Gloss",
+			["borderBackdrop"] = "Blizzard Tooltip",
 			["zoom"] = 0,
-			["animation"] = {
-				["start"] = {
-					["preset"] = "slideleft",
-					["type"] = "preset",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["preset"] = "bounce",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
+			["spark"] = false,
+			["auto"] = true,
+			["id"] = "Maelstrom BACKUP",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["frameStrata"] = 7,
+			["width"] = 203,
 			["actions"] = {
 				["start"] = {
-					["do_glow"] = true,
-					["glow_frame"] = "WeakAuras:Max Stacks",
+					["do_glow"] = false,
+					["custom"] = "function test()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        return false\n    end\n    if s > 2 then \n        return s\n    end\nend\n    \n    \n    \n    \n    \n\n",
+					["do_sound"] = false,
+					["do_custom"] = false,
 					["glow_action"] = "show",
-					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\LowMana.ogg",
-					["do_sound"] = true,
+				},
+				["finish"] = {
 				},
 				["init"] = {
 				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\LowMana.ogg",
-					["do_sound"] = false,
-				},
 			},
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["frameStrata"] = 1,
-			["id"] = "Max Stacks",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 40,
 			["config"] = {
 			},
-			["uid"] = "iKS2EQzNKJL",
 			["inverse"] = false,
-			["desaturate"] = false,
+			["sparkDesature"] = false,
+			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "slideleft",
+				},
+				["main"] = {
+					["colorR"] = 0.149019607843137,
+					["duration_type"] = "relative",
+					["alphaType"] = "alphaPulse",
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["duration"] = "10",
+					["use_color"] = true,
+					["alpha"] = 0.82,
+					["x"] = 0,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["scaley"] = 1,
+					["scalex"] = 1,
+					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    \n    if not s then\n        s = 0\n    end\n    \n    if s < 3 then red, green, blue = .1,.6,1  \n    elseif s < 5 then red, green, blue = 0,1,1\n    elseif s < 8 then red, green, blue = 0,1,.25\n    elseif s < 11 then red, green, blue = 1,1,.2\n    end\n    return red,green,blue, 1\nend\n\n\n\n\n",
+					["rotate"] = 0,
+					["preset"] = "alphaPulse",
+					["colorB"] = 0,
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "slideright",
+				},
 			},
 			["authorOptions"] = {
 			},
-			["xOffset"] = 0,
 		},
 		["Unleash Doom"] = {
 			["parent"] = "ZerkinUI Secondary Trackers",
@@ -6705,10 +6815,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
@@ -6718,7 +6825,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -6727,7 +6834,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["role"] = {
 					["multi"] = {
 					},
@@ -6864,16 +6974,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -7109,256 +7219,76 @@ WeakAurasSaved = {
 			["cooldown"] = true,
 			["uid"] = "tqppANx88Xm",
 		},
-		["Abundance Bar"] = {
-			["sparkWidth"] = 10,
-			["modelIsUnit"] = false,
-			["xOffset"] = -1,
-			["yOffset"] = -279,
-			["anchorPoint"] = "CENTER",
-			["sparkRotation"] = 0,
-			["icon"] = false,
-			["fontFlags"] = "OUTLINE",
-			["icon_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["selfPoint"] = "CENTER",
-			["barColor"] = {
-				0.552941176470588, -- [1]
-				0.764705882352941, -- [2]
-				0.309803921568627, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["rotation"] = 0,
-			["sparkOffsetY"] = 0,
-			["load"] = {
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["affixes"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "DRUID",
-					["multi"] = {
-						["DRUID"] = true,
-					},
-				},
-				["spec"] = {
-					["single"] = 4,
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = false,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["talent3"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["sequence"] = 1,
-			["scale"] = 1,
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
-			["blendMode"] = "BLEND",
-			["texture"] = "Gloss",
-			["model_z"] = 0,
-			["spark"] = false,
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["displayIcon"] = "Interface\\Icons\\INV_Misc_PocketWatch_01",
-			["stacksPoint"] = "BOTTOMRIGHT",
-			["borderBackdrop"] = "None",
+		["Max Stacks"] = {
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["customText"] = "function()\n    \n    local _,_,_,s = UnitBuff(\"player\", 'Abundance', nil, \"PLAYER\")\n    spell_haste = UnitSpellHaste(\"player\")\n    adj_haste = 1 + (spell_haste / 100)\n    \n    HT_cast_base = 2.5 / adj_haste \n    HT_cast_base = string.format(\"%.2f\", HT_cast_base)  \n    \n    if not s then\n        return(HT_cast_base..\" sec\");\n        \n    else\n        \n        deca_s = s * 10;\n        combined_s = deca_s+spell_haste\n        \n        new_s = 1 + (combined_s / 100)\n        haste_reduction = new_s / HT_cast_base\n        HT_cast = HT_cast_base - haste_reduction\n        \n        test = HT_cast_base / (((spell_haste + deca_s) / 100) + 1)\n        \n        newTest = HT_cast_base * (s / 10)\n        finalTest = HT_cast_base - newTest\n        \n        formatted = string.format(\"%.2f\", finalTest)     \n        \n        return(formatted);\n        \n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-			["model_x"] = 0,
-			["customTextUpdate"] = "event",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["cooldownEdge"] = false,
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["spellId"] = "774",
-						["names"] = {
-						},
-						["use_unit"] = true,
-						["genericShowOn"] = "showOnActive",
-						["subeventPrefix"] = "SPELL_PERIODIC",
-						["spellName"] = "Rejuvenation",
-						["events"] = "UNIT_AURA",
+						["subeventPrefix"] = "SPELL",
+						["useCount"] = true,
 						["debuffType"] = "HELPFUL",
+						["name_operator"] = "==",
+						["subeventSuffix"] = "_CAST_START",
+						["buffShowOn"] = "showOnActive",
+						["custom_hide"] = "timed",
+						["countOperator"] = ">=",
+						["event"] = "Health",
+						["use_name"] = true,
+						["type"] = "aura",
+						["name"] = "Maelstrom Weapon",
+						["names"] = {
+							"Elusive Brew", -- [1]
+						},
 						["spellIds"] = {
 						},
-						["use_spellName"] = true,
-						["use_destName"] = false,
-						["use_cloneId"] = false,
-						["custom_hide"] = "custom",
-						["use_sourceName"] = false,
-						["type"] = "custom",
-						["subeventSuffix"] = "_AURA_APPLIED",
-						["custom_type"] = "event",
-						["unevent"] = "auto",
+						["count"] = "5",
 						["unit"] = "player",
-						["event"] = "Chat Message",
-						["auraType"] = "BUFF",
-						["customDuration"] = "function()\n    \n    return WA_Abundances,10, function() return WA_Abundances,10 end\n    \n    \nend\n\n\n\n",
-						["use_spellId"] = false,
-						["name"] = "Rejuvenation",
-						["use_sourceUnit"] = true,
-						["custom"] = "function(event, ...)\n    \n    _,_,_,WA_Abundances = UnitBuff(\"player\", 'Abundance', nil, \"PLAYER\")\n    \n    if not WA_Abundances then return 0;\n        \n    else         \n        return WA_Abundances    \n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-						["use_destUnit"] = false,
-						["sourceUnit"] = "player",
-						["use_auraType"] = true,
+						["fullscan"] = true,
 					},
 					["untrigger"] = {
-						["custom"] = "function()\n    \n    if not WA_Abundances then\n    return 0 end\n    \nend    \n\n\n\n\n\n\n",
 					},
 				}, -- [1]
-				["disjunctive"] = "any",
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["spellId"] = "115308",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["unit"] = "player",
+						["buffShowOn"] = "showOnMissing",
+						["use_spellId"] = true,
+						["name"] = "Ironskin Brew",
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+						["names"] = {
+						},
+						["spellIds"] = {
+						},
+						["fullscan"] = true,
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
 				["activeTriggerMode"] = 1,
 			},
 			["internalVersion"] = 26,
-			["advance"] = false,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 0.592156862745098,
-					["duration_type"] = "seconds",
-					["alphaType"] = "straight",
-					["colorB"] = 0.380392156862745,
-					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n      return start + (progress * delta)\n    end\n  ",
-					["use_translate"] = false,
-					["use_alpha"] = false,
-					["type"] = "custom",
-					["colorA"] = 1,
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
-					["use_color"] = true,
-					["alpha"] = 0.8,
-					["translateType"] = "bounce",
-					["y"] = 0,
-					["x"] = 0,
-					["scaley"] = 1,
-					["scalex"] = 1,
-					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local s = WA_Abundances\n    \n    if not s then\n        s = 0\n    end\n    \n    if s < 1 then red, green, blue = .9,.9,.4\n    elseif s < 2 then red, green, blue = 1,.9,.25\n    elseif s < 4 then red, green, blue = .85,.85,.2\n    elseif s < 6 then red, green, blue = .75,1,.15\n    elseif s < 11 then red, green, blue = .5,1,.05\n    elseif s < 200 then red, green, blue = .6,.15,1\n    end\n    return red,green,blue, 1\nend\n\n\n\n\n",
-					["rotate"] = 0,
-					["colorType"] = "custom",
-					["duration"] = "10",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["backdropInFront"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
-			["discrete_rotation"] = 0,
 			["subRegions"] = {
 				{
-					["type"] = "aurabar_bar",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 1,
-					["type"] = "subtext",
-					["text_text"] = "%p0% > %c sec",
-					["text_color"] = {
-						0.811764705882353, -- [1]
-						1, -- [2]
-						0.427450980392157, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Arial Narrow",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_shadowYOffset"] = -1,
-					["text_selfPoint"] = "AUTO",
-					["rotateText"] = "NONE",
-					["text_fontType"] = "None",
-					["text_anchorPoint"] = "INNER_RIGHT",
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_fontSize"] = 14,
-					["anchorXOffset"] = 0,
-					["text_visible"] = true,
-				}, -- [2]
-				{
-					["text_shadowXOffset"] = 1,
-					["type"] = "subtext",
-					["text_text"] = "Healing Touch",
-					["text_color"] = {
-						0.0862745098039216, -- [1]
-						0.117647058823529, -- [2]
-						0.0627450980392157, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Arial Narrow",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_shadowYOffset"] = -1,
-					["text_selfPoint"] = "AUTO",
-					["rotateText"] = "NONE",
-					["text_fontType"] = "None",
-					["text_anchorPoint"] = "INNER_LEFT",
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_fontSize"] = 12,
-					["anchorXOffset"] = 0,
-					["text_visible"] = true,
-				}, -- [3]
-				{
-					["text_shadowXOffset"] = 1,
+					["text_shadowXOffset"] = 0,
 					["type"] = "subtext",
 					["text_text"] = "%s",
 					["text_color"] = {
@@ -7374,90 +7304,129 @@ WeakAurasSaved = {
 						0, -- [3]
 						1, -- [4]
 					},
-					["text_shadowYOffset"] = -1,
+					["text_shadowYOffset"] = 0,
 					["text_selfPoint"] = "AUTO",
-					["rotateText"] = "NONE",
-					["text_fontType"] = "None",
-					["text_anchorPoint"] = "ICON_CENTER",
+					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
-					["text_fontSize"] = 12,
+					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
-					["text_visible"] = false,
-				}, -- [4]
-				{
-					["type"] = "subborder",
-					["border_anchor"] = "bar",
-					["border_size"] = 4,
-					["border_color"] = {
-						0.203921568627451, -- [1]
-						0.36078431372549, -- [2]
-						0, -- [3]
-						1, -- [4]
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 40,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
 					},
-					["border_visible"] = true,
-					["border_edge"] = "Blizzard Dialog",
-					["border_offset"] = 1,
-				}, -- [5]
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "ROGUE",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["talent3"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
 			},
-			["height"] = 38,
-			["rotate"] = true,
-			["sparkBlendMode"] = "ADD",
-			["backdropColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["parent"] = "Maelstrom Bar OG",
 			["zoom"] = 0,
-			["authorOptions"] = {
+			["animation"] = {
+				["start"] = {
+					["preset"] = "slideleft",
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["preset"] = "bounce",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
 			},
-			["parent"] = "ZerkinUI Primary Bars",
-			["mirror"] = false,
-			["auto"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["borderInFront"] = true,
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["glow_frame"] = "WeakAuras:Max Stacks",
+					["glow_action"] = "show",
+					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\LowMana.ogg",
+					["do_sound"] = true,
 				},
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\LowMana.ogg",
+					["do_sound"] = false,
 				},
 			},
-			["icon_side"] = "RIGHT",
-			["backgroundColor"] = {
-				0.113725490196078, -- [1]
-				0.164705882352941, -- [2]
-				0.0666666666666667, -- [3]
-				1, -- [4]
-			},
-			["useAdjustededMax"] = false,
-			["sparkHeight"] = 30,
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["frameStrata"] = 1,
+			["id"] = "Max Stacks",
 			["anchorFrameType"] = "SCREEN",
-			["stacksContainment"] = "INSIDE",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["alpha"] = 1,
+			["width"] = 40,
+			["config"] = {
 			},
-			["sparkRotationMode"] = "AUTO",
-			["id"] = "Abundance Bar",
-			["sparkHidden"] = "NEVER",
-			["model_y"] = 0,
-			["frameStrata"] = 4,
-			["width"] = 232,
-			["sparkOffsetX"] = 0,
-			["model_path"] = "Character/BloodElf/Male/BloodElfMale.m2",
+			["uid"] = "iKS2EQzNKJL",
 			["inverse"] = false,
-			["sparkDesature"] = false,
-			["orientation"] = "HORIZONTAL",
+			["desaturate"] = false,
 			["conditions"] = {
 			},
-			["cooldown"] = true,
-			["uid"] = "7IgDjK33m8r",
+			["authorOptions"] = {
+			},
+			["xOffset"] = 0,
 		},
 		["Lifebloom"] = {
 			["user_y"] = 0,
@@ -7669,11 +7638,11 @@ WeakAurasSaved = {
 						},
 						["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,5, function() return s,5 end\nend",
 						["unit"] = "player",
-						["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
-						["subeventPrefix"] = "SPELL",
 						["events"] = "UNIT_AURA",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
+						["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 						["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
@@ -7831,7 +7800,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -7839,11 +7808,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -8046,10 +8015,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
@@ -8059,7 +8025,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -8067,7 +8033,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "SHAMAN",
 					["multi"] = {
@@ -8198,10 +8167,10 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["borderOffset"] = 5,
-			["xOffset"] = -0.0001220703125,
+			["regionType"] = "group",
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "ZerkinUI Secondary Trackers",
-			["regionType"] = "group",
+			["yOffset"] = -296.999771118164,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["internalVersion"] = 26,
@@ -8267,7 +8236,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["yOffset"] = -296.999771118164,
+			["xOffset"] = -0.0001220703125,
 		},
 		["GCD BG Shaman"] = {
 			["sparkWidth"] = 10,
@@ -8637,7 +8606,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -8650,15 +8619,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -8932,7 +8901,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["borderOffset"] = 5,
+			["regionType"] = "group",
 			["actions"] = {
 				["start"] = {
 				},
@@ -8962,13 +8931,13 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["borderEdge"] = "None",
-			["internalVersion"] = 26,
 			["authorOptions"] = {
 			},
+			["internalVersion"] = 26,
+			["borderOffset"] = 5,
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "BackUp WA Code",
-			["scale"] = 1,
+			["borderEdge"] = "None",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["uid"] = "VsbcTrwWJnS",
@@ -9047,7 +9016,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["regionType"] = "group",
+			["scale"] = 1,
 		},
 		["Frostbrand Bar 2"] = {
 			["sparkWidth"] = 10,
@@ -9437,8 +9406,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["authorOptions"] = {
-			},
+			["parent"] = "ZerkinUI Secondary Trackers",
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
@@ -9484,7 +9452,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -9492,37 +9460,31 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["anchorPoint"] = "CENTER",
 			["useAdjustededMax"] = false,
 			["fontSize"] = 12,
-			["selfPoint"] = "CENTER",
-			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
+			["authorOptions"] = {
+			},
+			["startAngle"] = 0,
 			["conditions"] = {
 			},
-			["textureWrapMode"] = "CLAMP",
+			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
-			["regionType"] = "progresstexture",
-			["startAngle"] = 0,
+			["crop"] = 0.41,
+			["selfPoint"] = "CENTER",
 			["blendMode"] = "BLEND",
-			["anchorPoint"] = "CENTER",
+			["regionType"] = "progresstexture",
 			["config"] = {
 			},
 			["slantMode"] = "INSIDE",
@@ -9541,10 +9503,17 @@ WeakAurasSaved = {
 			},
 			["alpha"] = 1,
 			["width"] = 40,
-			["crop"] = 0.41,
+			["textureWrapMode"] = "CLAMP",
 			["uid"] = "rQux7RC4S5Z",
 			["inverse"] = false,
-			["parent"] = "ZerkinUI Secondary Trackers",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["orientation"] = "VERTICAL",
 			["crop_x"] = 0.41,
 			["crop_y"] = 0.41,
@@ -9586,18 +9555,18 @@ WeakAurasSaved = {
 						["custom_hide"] = "custom",
 						["custom_type"] = "event",
 						["event"] = "Health",
-						["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["subeventPrefix"] = "SPELL",
 						["genericShowOn"] = "showOnActive",
-						["names"] = {
-						},
+						["unit"] = "player",
 						["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
 						["subeventSuffix"] = "_CAST_START",
 						["spellIds"] = {
 						},
 						["events"] = "UNIT_AURA",
 						["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
-						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -9739,10 +9708,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -9755,12 +9721,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -9918,7 +9887,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -9931,15 +9900,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -10246,7 +10215,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
@@ -10256,15 +10228,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -10567,7 +10536,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
@@ -10577,15 +10549,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -10854,8 +10823,8 @@ WeakAurasSaved = {
 						["useCount"] = true,
 						["unit"] = "player",
 						["use_unit"] = true,
-						["spellName"] = 17364,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
+						["buffShowOn"] = "showOnActive",
 						["charges_operator"] = "==",
 						["type"] = "aura",
 						["unevent"] = "auto",
@@ -10871,8 +10840,8 @@ WeakAurasSaved = {
 						},
 						["event"] = "Cooldown Progress (Spell)",
 						["remOperator"] = ">",
-						["buffShowOn"] = "showOnActive",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
+						["spellName"] = 17364,
 						["names"] = {
 							"Stormbringer", -- [1]
 						},
@@ -10900,7 +10869,7 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["regionType"] = "progresstexture",
+			["desaturateForeground"] = false,
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
@@ -10964,26 +10933,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["color"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["useAdjustededMax"] = false,
 			["textureWrapMode"] = "CLAMP",
-			["foregroundColor"] = {
-				0, -- [1]
-				0.509803921568627, -- [2]
-				1, -- [3]
+			["backgroundColor"] = {
+				0.184313725490196, -- [1]
+				0.266666666666667, -- [2]
+				0.494117647058824, -- [3]
 				1, -- [4]
 			},
 			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
 			["conditions"] = {
 			},
-			["backgroundTexture"] = "450915",
+			["color"] = {
+			},
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
-			["crop"] = 0.41,
-			["selfPoint"] = "CENTER",
+			["regionType"] = "progresstexture",
+			["authorOptions"] = {
+			},
 			["blendMode"] = "BLEND",
-			["xOffset"] = 0,
+			["backgroundTexture"] = "450915",
 			["config"] = {
 			},
 			["slantMode"] = "INSIDE",
@@ -10996,19 +10966,18 @@ WeakAurasSaved = {
 			["crop_y"] = 0.41,
 			["frameStrata"] = 4,
 			["width"] = 40,
-			["backgroundColor"] = {
-				0.184313725490196, -- [1]
-				0.266666666666667, -- [2]
-				0.494117647058824, -- [3]
-				1, -- [4]
-			},
+			["crop"] = 0.41,
 			["uid"] = "S7dL9UVsz6F",
 			["inverse"] = false,
-			["desaturateForeground"] = false,
+			["foregroundColor"] = {
+				0, -- [1]
+				0.509803921568627, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["orientation"] = "VERTICAL",
 			["crop_x"] = 0.41,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["backgroundOffset"] = 0,
 		},
 		["Rejuvs Bar"] = {
@@ -11054,16 +11023,16 @@ WeakAurasSaved = {
 						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Health",
 						["genericShowOn"] = "showOnActive",
-						["subeventPrefix"] = "SPELL",
-						["customDuration"] = "function()\n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    s = activeRejuvs\n    \n    return s,2, function() return s,2 end\n    \nend",
-						["custom"] = "function(event, ...)\n    \n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    return activeRejuvs;\n    \nend\n\n\n\n\n\n",
-						["spellIds"] = {
-						},
-						["customStacks"] = "function()\n    \n    return activeRejuvs;\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-						["events"] = "UNIT_AURA, PLAYER_TARGET_CHANGED",
 						["names"] = {
 						},
+						["customDuration"] = "function()\n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    s = activeRejuvs\n    \n    return s,2, function() return s,2 end\n    \nend",
+						["events"] = "UNIT_AURA, PLAYER_TARGET_CHANGED",
+						["custom"] = "function(event, ...)\n    \n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    return activeRejuvs;\n    \nend\n\n\n\n\n\n",
+						["customStacks"] = "function()\n    \n    return activeRejuvs;\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["spellIds"] = {
+						},
 						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "custom",
 					},
 					["untrigger"] = {
@@ -11205,10 +11174,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -11221,12 +11187,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -11245,9 +11214,13 @@ WeakAurasSaved = {
 			},
 			["stickyDuration"] = false,
 			["icon"] = false,
-			["config"] = {
-			},
 			["uid"] = "wHJmhGVrlpL",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["useAdjustededMax"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["useAdjustededMin"] = false,
@@ -11279,11 +11252,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["sparkDesature"] = false,
@@ -11392,7 +11361,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -11400,11 +11369,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -11861,7 +11830,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
@@ -11871,11 +11843,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -11916,12 +11885,13 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["uid"] = "f(SjRq05f)s",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
+			},
+			["config"] = {
 			},
 			["useAdjustededMax"] = false,
 			["anchorFrameType"] = "SCREEN",
@@ -11942,8 +11912,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 7,
 			["width"] = 225,
 			["sparkOffsetX"] = 0,
-			["config"] = {
-			},
+			["uid"] = "f(SjRq05f)s",
 			["inverse"] = false,
 			["sparkDesature"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -11986,21 +11955,14 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 		},
-		["Maelstrom BACKUP"] = {
+		["Abundance Bar"] = {
 			["sparkWidth"] = 10,
-			["sparkOffsetX"] = 0,
-			["xOffset"] = 1.00018310546875,
-			["customText"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    return s\nend",
-			["yOffset"] = -278.999694824219,
+			["modelIsUnit"] = false,
+			["xOffset"] = -1,
+			["yOffset"] = -279,
 			["anchorPoint"] = "CENTER",
 			["sparkRotation"] = 0,
-			["customTextUpdate"] = "update",
-			["backgroundColor"] = {
-				0.196078431372549, -- [1]
-				0.196078431372549, -- [2]
-				0.196078431372549, -- [3]
-				1, -- [4]
-			},
+			["icon"] = false,
 			["fontFlags"] = "OUTLINE",
 			["icon_color"] = {
 				1, -- [1]
@@ -12008,75 +11970,194 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 26,
-			["sparkHidden"] = "NEVER",
 			["selfPoint"] = "CENTER",
-			["backdropInFront"] = false,
 			["barColor"] = {
-				0, -- [1]
-				0.780392156862745, -- [2]
-				1, -- [3]
+				0.552941176470588, -- [1]
+				0.764705882352941, -- [2]
+				0.309803921568627, -- [3]
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["parent"] = "BackUp WA Code",
+			["rotation"] = 0,
+			["sparkOffsetY"] = 0,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "DRUID",
+					["multi"] = {
+						["DRUID"] = true,
+					},
+				},
+				["spec"] = {
+					["single"] = 4,
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["use_class"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["talent3"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["sequence"] = 1,
+			["scale"] = 1,
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["blendMode"] = "BLEND",
+			["texture"] = "Gloss",
+			["model_z"] = 0,
+			["spark"] = false,
+			["alpha"] = 1,
+			["config"] = {
+			},
+			["displayIcon"] = "Interface\\Icons\\INV_Misc_PocketWatch_01",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["borderBackdrop"] = "None",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["customText"] = "function()\n    \n    local _,_,_,s = UnitBuff(\"player\", 'Abundance', nil, \"PLAYER\")\n    spell_haste = UnitSpellHaste(\"player\")\n    adj_haste = 1 + (spell_haste / 100)\n    \n    HT_cast_base = 2.5 / adj_haste \n    HT_cast_base = string.format(\"%.2f\", HT_cast_base)  \n    \n    if not s then\n        return(HT_cast_base..\" sec\");\n        \n    else\n        \n        deca_s = s * 10;\n        combined_s = deca_s+spell_haste\n        \n        new_s = 1 + (combined_s / 100)\n        haste_reduction = new_s / HT_cast_base\n        HT_cast = HT_cast_base - haste_reduction\n        \n        test = HT_cast_base / (((spell_haste + deca_s) / 100) + 1)\n        \n        newTest = HT_cast_base * (s / 10)\n        finalTest = HT_cast_base - newTest\n        \n        formatted = string.format(\"%.2f\", finalTest)     \n        \n        return(formatted);\n        \n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			["model_x"] = 0,
+			["customTextUpdate"] = "event",
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["type"] = "custom",
-						["custom_hide"] = "custom",
-						["custom_type"] = "event",
-						["event"] = "Health",
-						["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    return s\nend",
+						["spellId"] = "774",
+						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL_PERIODIC",
 						["genericShowOn"] = "showOnActive",
 						["names"] = {
 						},
-						["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
-						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HELPFUL",
+						["events"] = "UNIT_AURA",
+						["custom_hide"] = "custom",
 						["spellIds"] = {
 						},
-						["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
-						["events"] = "UNIT_AURA",
+						["use_spellName"] = true,
+						["use_destName"] = false,
+						["use_cloneId"] = false,
+						["spellName"] = "Rejuvenation",
+						["use_sourceName"] = false,
+						["type"] = "custom",
+						["auraType"] = "BUFF",
+						["subeventSuffix"] = "_AURA_APPLIED",
+						["unevent"] = "auto",
 						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
+						["event"] = "Chat Message",
+						["custom_type"] = "event",
+						["customDuration"] = "function()\n    \n    return WA_Abundances,10, function() return WA_Abundances,10 end\n    \n    \nend\n\n\n\n",
+						["use_spellId"] = false,
+						["name"] = "Rejuvenation",
+						["use_sourceUnit"] = true,
+						["custom"] = "function(event, ...)\n    \n    _,_,_,WA_Abundances = UnitBuff(\"player\", 'Abundance', nil, \"PLAYER\")\n    \n    if not WA_Abundances then return 0;\n        \n    else         \n        return WA_Abundances    \n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["use_destUnit"] = false,
+						["sourceUnit"] = "player",
+						["use_auraType"] = true,
 					},
 					["untrigger"] = {
-						["custom"] = "function()\nend",
+						["custom"] = "function()\n    \n    if not WA_Abundances then\n    return 0 end\n    \nend    \n\n\n\n\n\n\n",
 					},
 				}, -- [1]
+				["disjunctive"] = "any",
 				["activeTriggerMode"] = 1,
 			},
-			["sparkOffsetY"] = 0,
+			["internalVersion"] = 26,
+			["advance"] = false,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 0.592156862745098,
+					["duration_type"] = "seconds",
+					["alphaType"] = "straight",
+					["colorB"] = 0.380392156862745,
+					["colorG"] = 1,
+					["alphaFunc"] = "function(progress, start, delta)\n      return start + (progress * delta)\n    end\n  ",
+					["use_translate"] = false,
+					["use_alpha"] = false,
+					["type"] = "custom",
+					["colorA"] = 1,
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
+					["use_color"] = true,
+					["alpha"] = 0.8,
+					["translateType"] = "bounce",
+					["y"] = 0,
+					["x"] = 0,
+					["scaley"] = 1,
+					["scalex"] = 1,
+					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local s = WA_Abundances\n    \n    if not s then\n        s = 0\n    end\n    \n    if s < 1 then red, green, blue = .9,.9,.4\n    elseif s < 2 then red, green, blue = 1,.9,.25\n    elseif s < 4 then red, green, blue = .85,.85,.2\n    elseif s < 6 then red, green, blue = .75,1,.15\n    elseif s < 11 then red, green, blue = .5,1,.05\n    elseif s < 200 then red, green, blue = .6,.15,1\n    end\n    return red,green,blue, 1\nend\n\n\n\n\n",
+					["rotate"] = 0,
+					["colorType"] = "custom",
+					["duration"] = "10",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["backdropInFront"] = true,
+			["stickyDuration"] = false,
+			["discrete_rotation"] = 0,
 			["subRegions"] = {
 				{
-					["type"] = "subborder",
-					["border_anchor"] = "bar",
-					["border_size"] = 16,
-					["border_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["border_visible"] = false,
-					["border_edge"] = "None",
-					["border_offset"] = 5,
-				}, -- [1]
-				{
 					["type"] = "aurabar_bar",
-				}, -- [2]
+				}, -- [1]
 				{
 					["text_shadowXOffset"] = 1,
 					["type"] = "subtext",
-					["text_text"] = " %s",
+					["text_text"] = "%p0% > %c sec",
 					["text_color"] = {
-						1, -- [1]
+						0.811764705882353, -- [1]
 						1, -- [2]
-						1, -- [3]
+						0.427450980392157, -- [3]
 						1, -- [4]
 					},
-					["text_font"] = "ElvUI Alt-Font",
+					["text_font"] = "Arial Narrow",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -12090,21 +12171,21 @@ WeakAurasSaved = {
 					["text_anchorPoint"] = "INNER_RIGHT",
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
-					["text_fontSize"] = 20,
+					["text_fontSize"] = 14,
 					["anchorXOffset"] = 0,
 					["text_visible"] = true,
-				}, -- [3]
+				}, -- [2]
 				{
 					["text_shadowXOffset"] = 1,
 					["type"] = "subtext",
-					["text_text"] = " ",
+					["text_text"] = "Healing Touch",
 					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
+						0.0862745098039216, -- [1]
+						0.117647058823529, -- [2]
+						0.0627450980392157, -- [3]
 						1, -- [4]
 					},
-					["text_font"] = "ElvUI Alt-Font",
+					["text_font"] = "Arial Narrow",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -12118,10 +12199,10 @@ WeakAurasSaved = {
 					["text_anchorPoint"] = "INNER_LEFT",
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
-					["text_fontSize"] = 20,
+					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_visible"] = true,
-				}, -- [4]
+				}, -- [3]
 				{
 					["text_shadowXOffset"] = 1,
 					["type"] = "subtext",
@@ -12146,164 +12227,83 @@ WeakAurasSaved = {
 					["text_anchorPoint"] = "ICON_CENTER",
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
-					["text_fontSize"] = 20,
+					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_visible"] = false,
+				}, -- [4]
+				{
+					["type"] = "subborder",
+					["border_anchor"] = "bar",
+					["border_size"] = 4,
+					["border_color"] = {
+						0.203921568627451, -- [1]
+						0.36078431372549, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["border_visible"] = true,
+					["border_edge"] = "Blizzard Dialog",
+					["border_offset"] = 1,
 				}, -- [5]
 			},
-			["height"] = 40,
-			["displayIcon"] = "Interface\\Icons\\Spell_Shaman_MaelstromWeapon",
-			["load"] = {
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["use_never"] = true,
-				["class"] = {
-					["single"] = "ROGUE",
-					["multi"] = {
-					},
-				},
-				["use_talent"] = true,
-				["use_class"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["affixes"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["single"] = 3,
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 3,
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["talent3"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-			},
+			["height"] = 38,
+			["rotate"] = true,
 			["sparkBlendMode"] = "ADD",
 			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
 			},
-			["stickyDuration"] = false,
-			["icon"] = false,
-			["config"] = {
-			},
-			["uid"] = "R)ySKvus4C2",
-			["useAdjustededMax"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
-			["borderInFront"] = false,
-			["alpha"] = 1,
-			["icon_side"] = "RIGHT",
-			["sparkRotationMode"] = "AUTO",
-			["sparkHeight"] = 30,
-			["texture"] = "Gloss",
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["displayStacks"] = "%s",
 			["zoom"] = 0,
-			["spark"] = false,
-			["auto"] = true,
-			["id"] = "Maelstrom BACKUP",
+			["authorOptions"] = {
+			},
+			["parent"] = "ZerkinUI Primary Bars",
+			["mirror"] = false,
+			["auto"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["frameStrata"] = 7,
-			["width"] = 203,
+			["borderInFront"] = true,
 			["actions"] = {
 				["start"] = {
-					["do_glow"] = false,
-					["custom"] = "function test()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        return false\n    end\n    if s > 2 then \n        return s\n    end\nend\n    \n    \n    \n    \n    \n\n",
-					["do_sound"] = false,
-					["do_custom"] = false,
-					["glow_action"] = "show",
-				},
-				["finish"] = {
 				},
 				["init"] = {
 				},
+				["finish"] = {
+				},
 			},
+			["icon_side"] = "RIGHT",
+			["backgroundColor"] = {
+				0.113725490196078, -- [1]
+				0.164705882352941, -- [2]
+				0.0666666666666667, -- [3]
+				1, -- [4]
+			},
+			["useAdjustededMax"] = false,
+			["sparkHeight"] = 30,
+			["anchorFrameType"] = "SCREEN",
+			["stacksContainment"] = "INSIDE",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["sparkRotationMode"] = "AUTO",
+			["id"] = "Abundance Bar",
+			["sparkHidden"] = "NEVER",
+			["model_y"] = 0,
+			["frameStrata"] = 4,
+			["width"] = 232,
+			["sparkOffsetX"] = 0,
+			["model_path"] = "Character/BloodElf/Male/BloodElfMale.m2",
 			["inverse"] = false,
 			["sparkDesature"] = false,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["duration_type"] = "seconds",
-					["preset"] = "slideleft",
-				},
-				["main"] = {
-					["colorR"] = 0.149019607843137,
-					["duration_type"] = "relative",
-					["alphaType"] = "alphaPulse",
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["duration"] = "10",
-					["use_color"] = true,
-					["alpha"] = 0.82,
-					["x"] = 0,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["scaley"] = 1,
-					["scalex"] = 1,
-					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    \n    if not s then\n        s = 0\n    end\n    \n    if s < 3 then red, green, blue = .1,.6,1  \n    elseif s < 5 then red, green, blue = 0,1,1\n    elseif s < 8 then red, green, blue = 0,1,.25\n    elseif s < 11 then red, green, blue = 1,1,.2\n    end\n    return red,green,blue, 1\nend\n\n\n\n\n",
-					["rotate"] = 0,
-					["preset"] = "alphaPulse",
-					["colorB"] = 0,
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["duration_type"] = "seconds",
-					["preset"] = "slideright",
-				},
-			},
-			["authorOptions"] = {
-			},
+			["cooldown"] = true,
+			["uid"] = "7IgDjK33m8r",
 		},
 		["GCD BG"] = {
 			["sparkWidth"] = 10,
@@ -12363,10 +12363,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
@@ -12376,7 +12373,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -12384,7 +12381,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "DRUID",
 					["multi"] = {
@@ -12822,7 +12822,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -12830,11 +12830,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -13269,11 +13269,11 @@ WeakAurasSaved = {
 						},
 						["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
 						["unit"] = "player",
-						["events"] = "UNIT_AURA",
-						["subeventPrefix"] = "SPELL",
 						["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
+						["events"] = "UNIT_AURA",
 						["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
@@ -13416,7 +13416,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -13429,15 +13429,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["role"] = {
 					["multi"] = {
 					},
@@ -14020,6 +14020,9 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 16,
 			["regionType"] = "text",
+			["justify"] = "LEFT",
+			["automaticWidth"] = "Auto",
+			["semver"] = "5.0.8",
 			["authorOptions"] = {
 				{
 					["useName"] = true,
@@ -14143,9 +14146,6 @@ WeakAurasSaved = {
 					["default"] = 0.5,
 				}, -- [14]
 			},
-			["wordWrap"] = "WordWrap",
-			["justify"] = "LEFT",
-			["semver"] = "5.0.8",
 			["id"] = "Mrrl's trade game",
 			["fixedWidth"] = 200,
 			["frameStrata"] = 1,
@@ -14174,13 +14174,13 @@ WeakAurasSaved = {
 			["selfPoint"] = "TOP",
 			["conditions"] = {
 			},
-			["automaticWidth"] = "Auto",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["wordWrap"] = "WordWrap",
 		},
 	},
 	["history"] = {
@@ -14442,12 +14442,13 @@ WeakAurasSaved = {
 					["finish"] = {
 					},
 				},
-				["uid"] = "R)ySKvus4C2",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["xOffset"] = 1.00018310546875,
 				["width"] = 203,
@@ -14469,8 +14470,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["useAdjustededMax"] = false,
-				["config"] = {
-				},
+				["uid"] = "R)ySKvus4C2",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -14481,18 +14481,18 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
-							["unit"] = "player",
-							["subeventPrefix"] = "SPELL",
-							["event"] = "Health",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    return s\nend",
+							["names"] = {
+							},
+							["event"] = "Health",
+							["unit"] = "player",
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
 							["events"] = "UNIT_AURA",
 							["spellIds"] = {
 							},
 							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["subeventSuffix"] = "_CAST_START",
-							["names"] = {
-							},
+							["subeventPrefix"] = "SPELL",
 							["genericShowOn"] = "showOnActive",
 							["custom_hide"] = "custom",
 						},
@@ -14755,18 +14755,18 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
-							["subeventPrefix"] = "SPELL",
-							["unit"] = "player",
-							["event"] = "Health",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    return s\nend",
+							["names"] = {
+							},
+							["event"] = "Health",
+							["subeventPrefix"] = "SPELL",
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
 							["events"] = "UNIT_AURA",
 							["spellIds"] = {
 							},
 							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["subeventSuffix"] = "_CAST_START",
-							["names"] = {
-							},
+							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
 							["custom_hide"] = "custom",
 						},
@@ -14777,12 +14777,13 @@ WeakAurasSaved = {
 					["activeTriggerMode"] = 1,
 				},
 				["useAdjustededMax"] = false,
-				["uid"] = "R)ySKvus4C2",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["actions"] = {
 					["start"] = {
@@ -14816,8 +14817,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["xOffset"] = 1.00018310546875,
-				["config"] = {
-				},
+				["uid"] = "R)ySKvus4C2",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -15518,10 +15518,7 @@ WeakAurasSaved = {
 						},
 					},
 					["use_class"] = true,
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -15534,7 +15531,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -15542,7 +15539,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["spec"] = {
 						["single"] = 2,
 						["multi"] = {
@@ -15848,10 +15848,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -15861,7 +15858,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -15869,7 +15866,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["ingroup"] = {
 						["multi"] = {
 						},
@@ -16146,11 +16146,11 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["subeventPrefix"] = "SPELL",
 							["countOperator"] = ">=",
-							["name"] = "Maelstrom Weapon",
-							["use_name"] = true,
-							["count"] = "5",
 							["spellIds"] = {
 							},
+							["use_name"] = true,
+							["name"] = "Maelstrom Weapon",
+							["count"] = "5",
 							["names"] = {
 								"Elusive Brew", -- [1]
 							},
@@ -16256,7 +16256,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -16266,11 +16269,8 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
-					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -16424,7 +16424,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -16434,11 +16437,8 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
-					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -17303,7 +17303,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -17313,15 +17316,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -17477,11 +17477,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -17491,7 +17491,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -17774,7 +17774,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -17788,15 +17788,15 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["class"] = {
 						["single"] = "SHAMAN",
 						["multi"] = {
@@ -17868,17 +17868,17 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["custom_hide"] = "custom",
 							["custom_type"] = "event",
+							["subeventPrefix"] = "SPELL",
 							["names"] = {
 							},
-							["unit"] = "player",
 							["event"] = "Health",
-							["subeventPrefix"] = "SPELL",
+							["unit"] = "player",
 							["customDuration"] = "function()\n    \n    return casts,3, function() return casts,3 end\nend",
-							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not Undu then Undu = 0 end\n    \n    if not subtract then subtract = false end\n    \n    if casts == nil then casts = 0 end\n    \n    Undulated = UnitAura(\"player\", \"Undulation\")\n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Healing Surge\" or spellName == \"Healing Wave\" and sourceName == UnitName(\"player\") then\n            \n            if just_reset == 1 then\n                just_reset = 0;\n                return true;\n            else\n                casts = casts + 1\n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            \n            casts = 1;\n            just_reset = 1;\n            \n        end\n        \n        \n        \n    elseif message == \"SPELL_AURA_APPLIED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/SPELLS/Spell_LeiShen_Lightning_Large_Cast02.OGG\")\n            \n            \n        end\n        \n    end\n    \n    return true;\n    \nend",
-							["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return casts;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["spellIds"] = {
 							},
+							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+							["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return casts;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not Undu then Undu = 0 end\n    \n    if not subtract then subtract = false end\n    \n    if casts == nil then casts = 0 end\n    \n    Undulated = UnitAura(\"player\", \"Undulation\")\n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Healing Surge\" or spellName == \"Healing Wave\" and sourceName == UnitName(\"player\") then\n            \n            if just_reset == 1 then\n                just_reset = 0;\n                return true;\n            else\n                casts = casts + 1\n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            \n            casts = 1;\n            just_reset = 1;\n            \n        end\n        \n        \n        \n    elseif message == \"SPELL_AURA_APPLIED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/SPELLS/Spell_LeiShen_Lightning_Large_Cast02.OGG\")\n            \n            \n        end\n        \n    end\n    \n    return true;\n    \nend",
 							["genericShowOn"] = "showOnActive",
 							["subeventSuffix"] = "_CAST_START",
 							["debuffType"] = "HELPFUL",
@@ -17939,17 +17939,17 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["custom_hide"] = "custom",
 							["subeventSuffix"] = "_CAST_START",
+							["subeventPrefix"] = "SPELL",
 							["unit"] = "player",
+							["event"] = "Health",
 							["names"] = {
 							},
-							["event"] = "Health",
-							["subeventPrefix"] = "SPELL",
 							["customDuration"] = "function()\n    \n    return casts,3, function() return casts,3 end\nend",
-							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not Undu then Undu = 0 end\n    \n    if not subtract then subtract = false end\n    \n    if casts == nil then casts = 0 end\n    \n    Undulated = UnitAura(\"player\", \"Undulation\")\n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Healing Surge\" or spellName == \"Healing Wave\" and sourceName == UnitName(\"player\") then\n            \n            if just_reset == 1 then\n                just_reset = 0;\n                return true;\n            else\n                casts = casts + 1\n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            \n            casts = 1;\n            just_reset = 1;\n            \n        end\n        \n        \n        \n    elseif message == \"SPELL_AURA_APPLIED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/SPELLS/Spell_LeiShen_Lightning_Large_Cast02.OGG\")\n            \n            \n        end\n        \n    end\n    \n    return true;\n    \nend",
-							["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return casts;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["spellIds"] = {
 							},
+							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+							["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return casts;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not Undu then Undu = 0 end\n    \n    if not subtract then subtract = false end\n    \n    if casts == nil then casts = 0 end\n    \n    Undulated = UnitAura(\"player\", \"Undulation\")\n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Healing Surge\" or spellName == \"Healing Wave\" and sourceName == UnitName(\"player\") then\n            \n            if just_reset == 1 then\n                just_reset = 0;\n                return true;\n            else\n                casts = casts + 1\n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            \n            casts = 1;\n            just_reset = 1;\n            \n        end\n        \n        \n        \n    elseif message == \"SPELL_AURA_APPLIED\" then\n        \n        if spellName == \"Undulation\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/SPELLS/Spell_LeiShen_Lightning_Large_Cast02.OGG\")\n            \n            \n        end\n        \n    end\n    \n    return true;\n    \nend",
 							["genericShowOn"] = "showOnActive",
 							["custom_type"] = "event",
 							["debuffType"] = "HELPFUL",
@@ -18092,7 +18092,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -18106,15 +18106,15 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["class"] = {
 						["single"] = "SHAMAN",
 						["multi"] = {
@@ -18248,9 +18248,9 @@ WeakAurasSaved = {
 							["use_unit"] = true,
 							["useCount"] = true,
 							["unit"] = "player",
+							["custom_hide"] = "timed",
 							["buffShowOn"] = "showOnActive",
 							["spellName"] = 17364,
-							["custom_hide"] = "timed",
 							["debuffType"] = "HELPFUL",
 							["charges_operator"] = "==",
 							["charges"] = "3",
@@ -18315,10 +18315,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -18331,12 +18328,15 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
 					["use_class"] = true,
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["role"] = {
 						["multi"] = {
 						},
@@ -18436,7 +18436,7 @@ WeakAurasSaved = {
 							["use_unit"] = true,
 							["subeventPrefix"] = "SPELL",
 							["spellName"] = 17364,
-							["debuffType"] = "HELPFUL",
+							["buffShowOn"] = "showOnActive",
 							["charges_operator"] = "==",
 							["charges"] = "3",
 							["unevent"] = "auto",
@@ -18452,8 +18452,8 @@ WeakAurasSaved = {
 							["count"] = "2",
 							["event"] = "Cooldown Progress (Spell)",
 							["remOperator"] = ">",
-							["buffShowOn"] = "showOnActive",
 							["custom_hide"] = "timed",
+							["debuffType"] = "HELPFUL",
 							["useRem"] = true,
 						},
 						["untrigger"] = {
@@ -18507,11 +18507,14 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -18524,10 +18527,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -18645,10 +18645,7 @@ WeakAurasSaved = {
 						},
 					},
 					["use_class"] = true,
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -18661,7 +18658,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -18669,7 +18666,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["spec"] = {
 						["single"] = 2,
 						["multi"] = {
@@ -18977,10 +18977,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -18990,7 +18987,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -18998,7 +18995,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["ingroup"] = {
 						["multi"] = {
 						},
@@ -19040,9 +19040,9 @@ WeakAurasSaved = {
 							["use_class"] = true,
 							["powertype"] = 11,
 							["unit"] = "player",
-							["debuffType"] = "HELPFUL",
+							["custom_hide"] = "timed",
 							["use_powertype"] = false,
-							["spellName"] = 403,
+							["debuffType"] = "HELPFUL",
 							["health_operator"] = ">",
 							["type"] = "status",
 							["use_health"] = true,
@@ -19058,7 +19058,7 @@ WeakAurasSaved = {
 							["class"] = "SHAMAN",
 							["unevent"] = "auto",
 							["use_power"] = true,
-							["custom_hide"] = "timed",
+							["spellName"] = 403,
 							["subeventPrefix"] = "SPELL",
 						},
 						["untrigger"] = {
@@ -19433,7 +19433,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -19446,11 +19446,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["use_combat"] = true,
 					["class"] = {
 						["single"] = "SHAMAN",
@@ -19504,14 +19504,9 @@ WeakAurasSaved = {
 					},
 				},
 				["xOffset"] = -231,
-				["sparkColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
 				["config"] = {
 				},
+				["uid"] = "f(SjRq05f)s",
 				["borderBackdrop"] = "Blizzard Tooltip",
 				["width"] = 225,
 				["useAdjustededMin"] = false,
@@ -19532,7 +19527,12 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["useAdjustededMax"] = false,
-				["uid"] = "f(SjRq05f)s",
+				["sparkColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -19771,7 +19771,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -19784,11 +19784,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["use_combat"] = true,
 					["class"] = {
 						["single"] = "SHAMAN",
@@ -19833,14 +19833,9 @@ WeakAurasSaved = {
 					["activeTriggerMode"] = 1,
 				},
 				["useAdjustededMax"] = false,
-				["sparkColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
 				["config"] = {
 				},
+				["uid"] = "f(SjRq05f)s",
 				["sparkOffsetX"] = 0,
 				["width"] = 225,
 				["useAdjustededMin"] = false,
@@ -19861,7 +19856,12 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["xOffset"] = -231,
-				["uid"] = "f(SjRq05f)s",
+				["sparkColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -19946,7 +19946,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -19959,15 +19959,15 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["spec"] = {
 						["single"] = 2,
 						["multi"] = {
@@ -20273,7 +20273,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -20286,15 +20286,15 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["ingroup"] = {
 						["multi"] = {
 						},
@@ -21594,7 +21594,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -21607,16 +21610,13 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["class"] = {
 						["single"] = "SHAMAN",
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -21815,7 +21815,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -21825,16 +21828,13 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["class"] = {
 						["single"] = "SHAMAN",
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -21956,7 +21956,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = false,
 					["role"] = {
 						["multi"] = {
@@ -21966,15 +21969,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -22010,28 +22010,28 @@ WeakAurasSaved = {
 					{
 						["trigger"] = {
 							["spellId"] = "774",
-							["subeventPrefix"] = "SPELL_PERIODIC",
 							["names"] = {
 							},
-							["genericShowOn"] = "showOnActive",
 							["use_unit"] = true,
-							["debuffType"] = "HELPFUL",
-							["name"] = "Rejuvenation",
+							["genericShowOn"] = "showOnActive",
+							["subeventPrefix"] = "SPELL_PERIODIC",
 							["custom_hide"] = "custom",
+							["name"] = "Rejuvenation",
+							["spellName"] = "Rejuvenation",
 							["spellIds"] = {
 							},
 							["use_spellId"] = false,
 							["use_destName"] = false,
 							["use_cloneId"] = false,
-							["spellName"] = "Rejuvenation",
+							["debuffType"] = "HELPFUL",
 							["type"] = "custom",
 							["use_sourceName"] = false,
+							["custom_type"] = "event",
 							["auraType"] = "BUFF",
-							["subeventSuffix"] = "_AURA_APPLIED",
 							["unevent"] = "auto",
 							["unit"] = "player",
 							["event"] = "Chat Message",
-							["custom_type"] = "event",
+							["subeventSuffix"] = "_AURA_APPLIED",
 							["customDuration"] = "function()\n    \n    return WA_Abundances,10, function() return WA_Abundances,10 end\n    \n    \nend\n\n\n\n",
 							["use_spellName"] = true,
 							["events"] = "UNIT_AURA",
@@ -22312,7 +22312,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = false,
 					["role"] = {
 						["multi"] = {
@@ -22322,15 +22325,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -22365,28 +22365,28 @@ WeakAurasSaved = {
 					{
 						["trigger"] = {
 							["spellId"] = "774",
-							["subeventPrefix"] = "SPELL_PERIODIC",
 							["names"] = {
 							},
-							["genericShowOn"] = "showOnActive",
 							["use_unit"] = true,
-							["debuffType"] = "HELPFUL",
-							["custom"] = "function(event, ...)\n    \n    _,_,_,WA_Abundances = UnitBuff(\"player\", 'Abundance', nil, \"PLAYER\")\n    \n    if not WA_Abundances then return 0;\n        \n    else         \n        return WA_Abundances    \n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["genericShowOn"] = "showOnActive",
+							["subeventPrefix"] = "SPELL_PERIODIC",
 							["custom_hide"] = "custom",
+							["custom"] = "function(event, ...)\n    \n    _,_,_,WA_Abundances = UnitBuff(\"player\", 'Abundance', nil, \"PLAYER\")\n    \n    if not WA_Abundances then return 0;\n        \n    else         \n        return WA_Abundances    \n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["spellName"] = "Rejuvenation",
 							["spellIds"] = {
 							},
 							["use_spellId"] = false,
 							["use_destName"] = false,
 							["use_cloneId"] = false,
-							["spellName"] = "Rejuvenation",
+							["debuffType"] = "HELPFUL",
 							["type"] = "custom",
 							["use_sourceName"] = false,
+							["custom_type"] = "event",
 							["auraType"] = "BUFF",
-							["subeventSuffix"] = "_AURA_APPLIED",
 							["unevent"] = "auto",
 							["unit"] = "player",
 							["event"] = "Chat Message",
-							["custom_type"] = "event",
+							["subeventSuffix"] = "_AURA_APPLIED",
 							["customDuration"] = "function()\n    \n    return WA_Abundances,10, function() return WA_Abundances,10 end\n    \n    \nend\n\n\n\n",
 							["use_spellName"] = true,
 							["name"] = "Rejuvenation",
@@ -22772,11 +22772,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -22789,7 +22789,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -23081,11 +23081,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -23095,7 +23095,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -23271,7 +23271,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -23281,11 +23284,8 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
-					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -23337,11 +23337,11 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["subeventPrefix"] = "SPELL",
 							["countOperator"] = "<",
-							["name"] = "Maelstrom Weapon",
-							["use_name"] = true,
-							["count"] = "5",
 							["spellIds"] = {
 							},
+							["use_name"] = true,
+							["name"] = "Maelstrom Weapon",
+							["count"] = "5",
 							["names"] = {
 								"Elusive Brew", -- [1]
 							},
@@ -23581,7 +23581,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -23591,11 +23594,8 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
-					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -24116,7 +24116,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -24129,15 +24132,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["role"] = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -24270,7 +24270,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -24280,15 +24283,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["role"] = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -24407,7 +24407,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -24420,15 +24420,15 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["spec"] = {
 						["single"] = 2,
 						["multi"] = {
@@ -24734,7 +24734,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -24747,15 +24747,15 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["ingroup"] = {
 						["multi"] = {
 						},
@@ -25491,10 +25491,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -25504,7 +25501,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -25512,7 +25509,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["spec"] = {
 						["single"] = 3,
 						["multi"] = {
@@ -25544,12 +25544,13 @@ WeakAurasSaved = {
 					["finish"] = {
 					},
 				},
-				["uid"] = "oDi829DEf7T",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["xOffset"] = 0,
 				["width"] = 203,
@@ -25571,8 +25572,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["useAdjustededMax"] = false,
-				["config"] = {
-				},
+				["uid"] = "oDi829DEf7T",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -25584,14 +25584,14 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["subeventSuffix"] = "_CAST_START",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-							["spellIds"] = {
-							},
+							["events"] = "UNIT_AURA",
 							["event"] = "Health",
 							["names"] = {
 							},
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
+							["spellIds"] = {
+							},
 							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
-							["events"] = "UNIT_AURA",
 							["subeventPrefix"] = "SPELL",
 							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
@@ -25777,10 +25777,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -25790,7 +25787,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -25798,7 +25795,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["ingroup"] = {
 						["multi"] = {
 						},
@@ -25835,14 +25835,14 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-							["spellIds"] = {
-							},
+							["events"] = "UNIT_AURA",
 							["event"] = "Health",
 							["names"] = {
 							},
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
+							["spellIds"] = {
+							},
 							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
-							["events"] = "UNIT_AURA",
 							["subeventPrefix"] = "SPELL",
 							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
@@ -26132,7 +26132,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -26142,11 +26145,8 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
-					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -26416,7 +26416,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -26426,11 +26429,8 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
-					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -26693,7 +26693,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -26703,15 +26706,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["role"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -26890,7 +26890,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -26903,15 +26906,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["role"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -28142,12 +28142,13 @@ WeakAurasSaved = {
 				},
 				["sparkRotationMode"] = "AUTO",
 				["xOffset"] = -1,
-				["uid"] = "XQbL)zNvf1v",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["borderBackdrop"] = "None",
 				["width"] = 232,
@@ -28174,8 +28175,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["useAdjustededMax"] = false,
-				["config"] = {
-				},
+				["uid"] = "XQbL)zNvf1v",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -28187,14 +28187,14 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["subeventSuffix"] = "_CAST_START",
 							["customStacks"] = "function()\n    \n    if not s or s == nil then\n        return 0;\n    else\n        return s;\n    end\n    \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-							["spellIds"] = {
-							},
+							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n        \n    \n    _,_,_,s = UnitAura(\"player\", 'Tidal Waves', nil, \"PLAYER\")\n    \n    if not s or s == nil then s = 0; end\n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\", nil, \"PLAYER\")\n    \n    \n    \n    \n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Tidal Waves\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactMediumWaterA.ogg\")\n            \n        end\n        \n    end\n    \n    \n    return true;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["event"] = "Health",
 							["names"] = {
 							},
 							["customDuration"] = "function()    \n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\")\n    \n    if not s or s == nil or s == 0 then\n        \n        \n        if aura_QA then\n            return_s = 2;\n            \n        else\n            return_s = 0;\n            \n        end\n        \n        \n    else \n        return_s = s;\n        \n    end\n    \n    \n    \n    return return_s,2, function() return return_s,2 end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["spellIds"] = {
+							},
 							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n        \n    \n    _,_,_,s = UnitAura(\"player\", 'Tidal Waves', nil, \"PLAYER\")\n    \n    if not s or s == nil then s = 0; end\n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\", nil, \"PLAYER\")\n    \n    \n    \n    \n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Tidal Waves\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactMediumWaterA.ogg\")\n            \n        end\n        \n    end\n    \n    \n    return true;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["subeventPrefix"] = "SPELL",
 							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
@@ -28433,14 +28433,14 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
 							["customStacks"] = "function()\n    \n    if not s or s == nil then\n        return 0;\n    else\n        return s;\n    end\n    \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-							["spellIds"] = {
-							},
+							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n        \n    \n    _,_,_,s = UnitAura(\"player\", 'Tidal Waves', nil, \"PLAYER\")\n    \n    if not s or s == nil then s = 0; end\n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\", nil, \"PLAYER\")\n    \n    \n    \n    \n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Tidal Waves\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactMediumWaterA.ogg\")\n            \n        end\n        \n    end\n    \n    \n    return true;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["event"] = "Health",
 							["names"] = {
 							},
 							["customDuration"] = "function()    \n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\")\n    \n    if not s or s == nil or s == 0 then\n        \n        \n        if aura_QA then\n            return_s = 2;\n            \n        else\n            return_s = 0;\n            \n        end\n        \n        \n    else \n        return_s = s;\n        \n    end\n    \n    \n    \n    return return_s,2, function() return return_s,2 end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["spellIds"] = {
+							},
 							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n        \n    \n    _,_,_,s = UnitAura(\"player\", 'Tidal Waves', nil, \"PLAYER\")\n    \n    if not s or s == nil then s = 0; end\n    \n    aura_QA = UnitAura(\"player\", \"Queen Ascendant\", nil, \"PLAYER\")\n    \n    \n    \n    \n    \n    local spellId, spellName, spellSchool = ...\n    \n    \n    if message == \"SPELL_AURA_REMOVED\" then\n        \n        if spellName == \"Tidal Waves\" and sourceName == UnitName(\"player\") then\n            \n            PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactMediumWaterA.ogg\")\n            \n        end\n        \n    end\n    \n    \n    return true;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["subeventPrefix"] = "SPELL",
 							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
@@ -28746,10 +28746,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -28759,7 +28756,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -28767,7 +28764,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["spec"] = {
 						["single"] = 3,
 						["multi"] = {
@@ -28833,14 +28833,14 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["subeventSuffix"] = "_CAST_START",
 							["unit"] = "player",
-							["spellIds"] = {
-							},
+							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 							["event"] = "Health",
 							["names"] = {
 							},
 							["customDuration"] = "function()\n    \n    return riptides,2, function() return riptides,2 end\nend",
+							["spellIds"] = {
+							},
 							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not riptides then riptides = 2 end\n    \n    local spellId, spellName, spellSchool = ...\n    \n    s = GetSpellCharges(\"Riptide\")\n    charges = s\n    riptides = charges\n    \n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Riptide\" and s == 0 then\n            \n            s = GetSpellCharges(\"Riptide\")\n            \n            if s == 0 then\n                \n                PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactGiantWaterA.ogg\")\n                \n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    return true;\n    \nend",
-							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 							["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return charges;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["subeventPrefix"] = "SPELL",
 							["genericShowOn"] = "showOnActive",
@@ -28912,14 +28912,14 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
 							["unit"] = "player",
-							["spellIds"] = {
-							},
+							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 							["event"] = "Health",
 							["names"] = {
 							},
 							["customDuration"] = "function()\n    \n    return riptides,2, function() return riptides,2 end\nend",
+							["spellIds"] = {
+							},
 							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    \n    if not riptides then riptides = 2 end\n    \n    local spellId, spellName, spellSchool = ...\n    \n    s = GetSpellCharges(\"Riptide\")\n    charges = s\n    riptides = charges\n    \n    \n    \n    if message == \"SPELL_HEAL\" then\n        \n        if spellName == \"Riptide\" and s == 0 then\n            \n            s = GetSpellCharges(\"Riptide\")\n            \n            if s == 0 then\n                \n                PlaySoundFile(\"Sound/Effects/DeathImpacts/InWater/mDeathImpactGiantWaterA.ogg\")\n                \n            end\n            \n            \n        end\n        \n    end  \n    \n    \n    return true;\n    \nend",
-							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 							["customStacks"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...) \n    \n    return charges;\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["subeventPrefix"] = "SPELL",
 							["genericShowOn"] = "showOnActive",
@@ -29067,10 +29067,7 @@ WeakAurasSaved = {
 						},
 					},
 					["use_class"] = true,
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -29083,7 +29080,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -29091,7 +29088,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["ingroup"] = {
 						["multi"] = {
 						},
@@ -29346,11 +29346,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -29363,7 +29363,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -29655,11 +29655,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -29669,7 +29669,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -29816,7 +29816,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -29826,15 +29829,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -30153,11 +30153,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -30167,7 +30167,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -31277,7 +31277,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -31290,11 +31293,8 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["faction"] = {
-						["multi"] = {
-						},
-					},
-					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -31330,12 +31330,13 @@ WeakAurasSaved = {
 					},
 				},
 				["xOffset"] = 0,
-				["uid"] = "BvJeLls04RY",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["borderBackdrop"] = "Blizzard Tooltip",
 				["width"] = 203,
@@ -31357,8 +31358,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["sparkRotationMode"] = "AUTO",
-				["config"] = {
-				},
+				["uid"] = "BvJeLls04RY",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -31569,7 +31569,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -31582,11 +31585,8 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["faction"] = {
-						["multi"] = {
-						},
-					},
-					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -32412,10 +32412,7 @@ WeakAurasSaved = {
 						},
 					},
 					["use_class"] = true,
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -32428,7 +32425,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -32436,7 +32433,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["spec"] = {
 						["single"] = 2,
 						["multi"] = {
@@ -32742,10 +32742,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -32755,7 +32752,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -32763,7 +32760,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["ingroup"] = {
 						["multi"] = {
 						},
@@ -33064,7 +33064,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["use_talent"] = true,
 					["difficulty"] = {
 						["multi"] = {
@@ -33078,12 +33081,9 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -33381,16 +33381,16 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["spec"] = {
 						["single"] = 3,
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_talent"] = true,
 					["difficulty"] = {
 						["multi"] = {
@@ -33404,7 +33404,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -34147,10 +34147,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_talent"] = true,
 					["difficulty"] = {
 						["multi"] = {
@@ -34164,12 +34161,15 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
 					["use_class"] = true,
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["race"] = {
 						["multi"] = {
 						},
@@ -34188,12 +34188,13 @@ WeakAurasSaved = {
 				},
 				["useAdjustededMax"] = false,
 				["xOffset"] = 0,
-				["uid"] = "Or9HbcRwB2j",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["borderBackdrop"] = "Blizzard Tooltip",
 				["width"] = 203,
@@ -34232,8 +34233,7 @@ WeakAurasSaved = {
 					0.196078431372549, -- [3]
 					1, -- [4]
 				},
-				["config"] = {
-				},
+				["uid"] = "Or9HbcRwB2j",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -34244,18 +34244,18 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
-							["unit"] = "player",
-							["subeventPrefix"] = "SPELL",
-							["event"] = "Health",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["names"] = {
+							},
+							["event"] = "Health",
+							["unit"] = "player",
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,5, function() return s,5 end\nend",
 							["spellIds"] = {
 							},
 							["events"] = "UNIT_AURA",
 							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["subeventSuffix"] = "_CAST_START",
-							["names"] = {
-							},
+							["subeventPrefix"] = "SPELL",
 							["genericShowOn"] = "showOnActive",
 							["custom_hide"] = "custom",
 						},
@@ -34424,7 +34424,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -34433,7 +34433,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["use_talent"] = true,
 					["difficulty"] = {
 						["multi"] = {
@@ -34447,10 +34450,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -34480,18 +34480,18 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
-							["subeventPrefix"] = "SPELL",
-							["unit"] = "player",
-							["event"] = "Health",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["names"] = {
+							},
+							["event"] = "Health",
+							["subeventPrefix"] = "SPELL",
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,5, function() return s,5 end\nend",
 							["spellIds"] = {
 							},
 							["events"] = "UNIT_AURA",
 							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["subeventSuffix"] = "_CAST_START",
-							["names"] = {
-							},
+							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
 							["custom_hide"] = "custom",
 						},
@@ -34786,7 +34786,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -34799,12 +34802,9 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -34827,12 +34827,13 @@ WeakAurasSaved = {
 				},
 				["useAdjustededMax"] = false,
 				["xOffset"] = 0,
-				["uid"] = "jzY8xF)h0Q2",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["borderBackdrop"] = "Blizzard Tooltip",
 				["width"] = 203,
@@ -34871,8 +34872,7 @@ WeakAurasSaved = {
 					0.196078431372549, -- [3]
 					1, -- [4]
 				},
-				["config"] = {
-				},
+				["uid"] = "jzY8xF)h0Q2",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -34883,18 +34883,18 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
-							["unit"] = "player",
-							["subeventPrefix"] = "SPELL",
-							["event"] = "Health",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["names"] = {
+							},
+							["event"] = "Health",
+							["unit"] = "player",
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
 							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["spellIds"] = {
 							},
 							["events"] = "UNIT_AURA",
 							["subeventSuffix"] = "_CAST_START",
-							["names"] = {
-							},
+							["subeventPrefix"] = "SPELL",
 							["genericShowOn"] = "showOnActive",
 							["custom_hide"] = "custom",
 						},
@@ -35072,7 +35072,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -35085,12 +35088,9 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -35117,18 +35117,18 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
-							["subeventPrefix"] = "SPELL",
-							["unit"] = "player",
-							["event"] = "Health",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["names"] = {
+							},
+							["event"] = "Health",
+							["subeventPrefix"] = "SPELL",
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,10, function() return s,10 end\nend",
 							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["spellIds"] = {
 							},
 							["events"] = "UNIT_AURA",
 							["subeventSuffix"] = "_CAST_START",
-							["names"] = {
-							},
+							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
 							["custom_hide"] = "custom",
 						},
@@ -35247,9 +35247,9 @@ WeakAurasSaved = {
 							},
 							["useCount"] = true,
 							["subeventPrefix"] = "SPELL",
-							["debuffType"] = "HELPFUL",
-							["buffShowOn"] = "showOnActive",
 							["spellName"] = 17364,
+							["custom_hide"] = "timed",
+							["debuffType"] = "HELPFUL",
 							["charges_operator"] = "==",
 							["type"] = "aura",
 							["charges"] = "2",
@@ -35265,7 +35265,7 @@ WeakAurasSaved = {
 							["count"] = "1",
 							["event"] = "Cooldown Progress (Spell)",
 							["remOperator"] = ">",
-							["custom_hide"] = "timed",
+							["buffShowOn"] = "showOnActive",
 							["use_unit"] = true,
 							["unit"] = "player",
 						},
@@ -35438,9 +35438,9 @@ WeakAurasSaved = {
 							["names"] = {
 								"Stormbringer", -- [1]
 							},
-							["debuffType"] = "HELPFUL",
-							["buffShowOn"] = "showOnActive",
 							["spellName"] = 17364,
+							["custom_hide"] = "timed",
+							["debuffType"] = "HELPFUL",
 							["charges_operator"] = "==",
 							["charges"] = "2",
 							["subeventPrefix"] = "SPELL",
@@ -35457,7 +35457,7 @@ WeakAurasSaved = {
 							["subeventSuffix"] = "_CAST_START",
 							["remOperator"] = ">",
 							["type"] = "aura",
-							["custom_hide"] = "timed",
+							["buffShowOn"] = "showOnActive",
 							["unit"] = "player",
 						},
 						["untrigger"] = {
@@ -35797,7 +35797,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["use_talent"] = true,
 					["use_class"] = true,
 					["race"] = {
@@ -35808,15 +35811,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -35843,12 +35843,13 @@ WeakAurasSaved = {
 					0.196078431372549, -- [3]
 					1, -- [4]
 				},
-				["uid"] = "3ZysmmrXxOw",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["xOffset"] = 0,
 				["width"] = 203,
@@ -35882,8 +35883,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["useAdjustededMax"] = false,
-				["config"] = {
-				},
+				["uid"] = "3ZysmmrXxOw",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -35895,14 +35895,14 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["subeventSuffix"] = "_CAST_START",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-							["spellIds"] = {
-							},
+							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["event"] = "Health",
 							["names"] = {
 							},
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,5, function() return s,5 end\nend",
+							["spellIds"] = {
+							},
 							["events"] = "UNIT_AURA",
-							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["subeventPrefix"] = "SPELL",
 							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
@@ -36074,16 +36074,16 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["spec"] = {
 						["single"] = 3,
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_talent"] = true,
 					["use_class"] = true,
 					["race"] = {
@@ -36094,7 +36094,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -36136,14 +36136,14 @@ WeakAurasSaved = {
 							["debuffType"] = "HELPFUL",
 							["custom_type"] = "event",
 							["customStacks"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-							["spellIds"] = {
-							},
+							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["event"] = "Health",
 							["names"] = {
 							},
 							["customDuration"] = "function()\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom Weapon', nil, \"PLAYER\")\n    if not s then\n        s = 0\n    end\n    return s,5, function() return s,5 end\nend",
+							["spellIds"] = {
+							},
 							["events"] = "UNIT_AURA",
-							["custom"] = "function()\n    return true\nend\n\n\n\n\n\n",
 							["subeventPrefix"] = "SPELL",
 							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
@@ -36293,10 +36293,7 @@ WeakAurasSaved = {
 						},
 					},
 					["use_class"] = true,
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -36309,7 +36306,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -36317,7 +36314,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["spec"] = {
 						["single"] = 2,
 						["multi"] = {
@@ -36623,10 +36623,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -36636,7 +36633,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -36644,7 +36641,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["ingroup"] = {
 						["multi"] = {
 						},
@@ -37055,7 +37055,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -37068,12 +37071,9 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -37141,12 +37141,13 @@ WeakAurasSaved = {
 					["init"] = {
 					},
 				},
-				["uid"] = "wHJmhGVrlpL",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["xOffset"] = 0,
 				["width"] = 246,
@@ -37168,8 +37169,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["useAdjustededMax"] = false,
-				["config"] = {
-				},
+				["uid"] = "wHJmhGVrlpL",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -37180,17 +37180,17 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["custom_hide"] = "custom",
 							["custom_type"] = "event",
+							["subeventPrefix"] = "SPELL",
 							["names"] = {
 							},
-							["unit"] = "player",
 							["event"] = "Health",
-							["subeventPrefix"] = "SPELL",
+							["unit"] = "player",
 							["customDuration"] = "function()\n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    s = activeRejuvs\n    \n    return s,2, function() return s,2 end\n    \nend",
-							["events"] = "UNIT_AURA, PLAYER_TARGET_CHANGED",
-							["custom"] = "function(event, ...)\n    \n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    return activeRejuvs;\n    \nend\n\n\n\n\n\n",
-							["customStacks"] = "function()\n    \n    return activeRejuvs;\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["spellIds"] = {
 							},
+							["events"] = "UNIT_AURA, PLAYER_TARGET_CHANGED",
+							["customStacks"] = "function()\n    \n    return activeRejuvs;\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["custom"] = "function(event, ...)\n    \n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    return activeRejuvs;\n    \nend\n\n\n\n\n\n",
 							["genericShowOn"] = "showOnActive",
 							["subeventSuffix"] = "_CAST_START",
 							["debuffType"] = "HELPFUL",
@@ -37407,7 +37407,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -37420,12 +37423,9 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -37451,17 +37451,17 @@ WeakAurasSaved = {
 							["type"] = "custom",
 							["custom_hide"] = "custom",
 							["subeventSuffix"] = "_CAST_START",
+							["subeventPrefix"] = "SPELL",
 							["unit"] = "player",
+							["event"] = "Health",
 							["names"] = {
 							},
-							["event"] = "Health",
-							["subeventPrefix"] = "SPELL",
 							["customDuration"] = "function()\n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    s = activeRejuvs\n    \n    return s,2, function() return s,2 end\n    \nend",
-							["events"] = "UNIT_AURA, PLAYER_TARGET_CHANGED",
-							["custom"] = "function(event, ...)\n    \n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    return activeRejuvs;\n    \nend\n\n\n\n\n\n",
-							["customStacks"] = "function()\n    \n    return activeRejuvs;\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["spellIds"] = {
 							},
+							["events"] = "UNIT_AURA, PLAYER_TARGET_CHANGED",
+							["customStacks"] = "function()\n    \n    return activeRejuvs;\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+							["custom"] = "function(event, ...)\n    \n    _,_,_,rejuvs = UnitAura(\"target\", 'Rejuvenation')\n    rejuvOne = UnitAura(\"target\", \"Rejuvenation\");\n    rejuvTwo = UnitAura(\"target\", \"Rejuvenation (Germination)\");\n    activeRejuvs = 0;\n    \n    if rejuvOne and rejuvTwo then\n        activeRejuvs = 2\n    elseif rejuvOne then\n        activeRejuvs = 1\n    elseif rejuvTwo then\n        activeRejuvs = 1\n    else \n        activeRejuvs = 0\n    end \n    \n    return activeRejuvs;\n    \nend\n\n\n\n\n\n",
 							["genericShowOn"] = "showOnActive",
 							["custom_type"] = "event",
 							["debuffType"] = "HELPFUL",
@@ -37473,12 +37473,13 @@ WeakAurasSaved = {
 					["activeTriggerMode"] = 1,
 				},
 				["useAdjustededMax"] = false,
-				["uid"] = "wHJmhGVrlpL",
 				["sparkColor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
+				},
+				["config"] = {
 				},
 				["actions"] = {
 					["start"] = {
@@ -37512,8 +37513,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["xOffset"] = 0,
-				["config"] = {
-				},
+				["uid"] = "wHJmhGVrlpL",
 				["inverse"] = false,
 				["sparkDesature"] = false,
 				["orientation"] = "HORIZONTAL",
@@ -38164,13 +38164,9 @@ WeakAurasSaved = {
 			["migration"] = {
 				["outline"] = "OUTLINE",
 				["fontSize"] = 12,
-				["parent"] = "BackUp WA Code",
-				["color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
+				["authorOptions"] = {
 				},
+				["parent"] = "BackUp WA Code",
 				["displayText"] = "%c",
 				["customText"] = "function()\n    return(\"Active Rejuvenations: \"..WA_Rejuv_Amount)\nend\n\n\n\n\n\n\n\n\n\n",
 				["yOffset"] = 157.392639160156,
@@ -38197,13 +38193,13 @@ WeakAurasSaved = {
 							["subeventSuffix"] = "_CAST_START",
 							["names"] = {
 							},
-							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    local spellId, spellName, spellSchool = ...\n    if message == \"SPELL_AURA_APPLIED\" then\n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount or 0\n            WA_Rejuv_Amount = WA_Rejuv_Amount + 1\n            return true\n        end\n        \n    elseif message == \"SPELL_AURA_REMOVED\" then    \n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount - 1\n            return true\n        end\n    end\nend",
+							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 							["event"] = "Health",
 							["subeventPrefix"] = "SPELL",
 							["customDuration"] = "function()\n    rejuvs = WA_Rejuv_Amount\n    if not rejuvs then return WA_Rejuv_Amount, 10;\n    else return rejuvs, 10;\n    end\nend\n\n\n\n\n\n",
+							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    local spellId, spellName, spellSchool = ...\n    if message == \"SPELL_AURA_APPLIED\" then\n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount or 0\n            WA_Rejuv_Amount = WA_Rejuv_Amount + 1\n            return true\n        end\n        \n    elseif message == \"SPELL_AURA_REMOVED\" then    \n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount - 1\n            return true\n        end\n    end\nend",
 							["spellIds"] = {
 							},
-							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 							["customStacks"] = "\n\nfunction()\n    s = WA_Rejuv_Amount\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
@@ -38271,7 +38267,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["use_talent"] = true,
 					["use_class"] = true,
 					["race"] = {
@@ -38282,16 +38281,13 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["spec"] = {
 						["single"] = 3,
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -38304,7 +38300,11 @@ WeakAurasSaved = {
 						},
 					},
 				},
-				["authorOptions"] = {
+				["color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
 				},
 			},
 			["skippedVersions"] = {
@@ -38315,9 +38315,9 @@ WeakAurasSaved = {
 			["data"] = {
 				["outline"] = "OUTLINE",
 				["fontSize"] = 12,
+				["parent"] = "BackUp WA Code",
 				["authorOptions"] = {
 				},
-				["xOffset"] = -213.333068847656,
 				["displayText"] = "%c",
 				["customText"] = "function()\n    return(\"Active Rejuvenations: \"..WA_Rejuv_Amount)\nend\n\n\n\n\n\n\n\n\n\n",
 				["yOffset"] = 157.392639160156,
@@ -38349,13 +38349,13 @@ WeakAurasSaved = {
 							["custom_type"] = "event",
 							["names"] = {
 							},
-							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    local spellId, spellName, spellSchool = ...\n    if message == \"SPELL_AURA_APPLIED\" then\n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount or 0\n            WA_Rejuv_Amount = WA_Rejuv_Amount + 1\n            return true\n        end\n        \n    elseif message == \"SPELL_AURA_REMOVED\" then    \n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount - 1\n            return true\n        end\n    end\nend",
+							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 							["event"] = "Health",
 							["subeventPrefix"] = "SPELL",
 							["customDuration"] = "function()\n    rejuvs = WA_Rejuv_Amount\n    if not rejuvs then return WA_Rejuv_Amount, 10;\n    else return rejuvs, 10;\n    end\nend\n\n\n\n\n\n",
+							["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    local spellId, spellName, spellSchool = ...\n    if message == \"SPELL_AURA_APPLIED\" then\n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount or 0\n            WA_Rejuv_Amount = WA_Rejuv_Amount + 1\n            return true\n        end\n        \n    elseif message == \"SPELL_AURA_REMOVED\" then    \n        if spellName == \"Rejuvenation\" and sourceName == UnitName(\"player\") then      \n            WA_Rejuv_Amount = WA_Rejuv_Amount - 1\n            return true\n        end\n    end\nend",
 							["spellIds"] = {
 							},
-							["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 							["customStacks"] = "\n\nfunction()\n    s = WA_Rejuv_Amount\n    if not s then return 0;\n    elseif s > 0 then return s;\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 							["unit"] = "player",
 							["genericShowOn"] = "showOnActive",
@@ -38414,16 +38414,16 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["class"] = {
 						["single"] = "ROGUE",
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_talent"] = true,
 					["use_class"] = true,
 					["race"] = {
@@ -38434,7 +38434,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -38456,7 +38456,7 @@ WeakAurasSaved = {
 						},
 					},
 				},
-				["parent"] = "BackUp WA Code",
+				["xOffset"] = -213.333068847656,
 			},
 			["lastUpdate"] = 1569374056,
 		},
@@ -38625,11 +38625,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -38642,7 +38642,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -38934,11 +38934,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["race"] = {
 						["multi"] = {
@@ -38948,7 +38948,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -39091,7 +39091,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -39104,15 +39107,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["race"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -39419,7 +39419,10 @@ WeakAurasSaved = {
 							["DRUID"] = true,
 						},
 					},
-					["use_spec"] = true,
+					["pvptalent"] = {
+						["multi"] = {
+						},
+					},
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -39429,15 +39432,12 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["faction"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["race"] = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -40417,7 +40417,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -40430,12 +40433,9 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -40743,7 +40743,10 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
+					["faction"] = {
+						["multi"] = {
+						},
+					},
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -40756,12 +40759,9 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
-						["multi"] = {
-						},
-					},
+					["use_spec"] = true,
 					["use_class"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
@@ -42485,11 +42485,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["difficulty"] = {
 						["multi"] = {
 						},
@@ -42502,7 +42502,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -42794,11 +42794,11 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["use_spec"] = true,
-					["faction"] = {
+					["pvptalent"] = {
 						["multi"] = {
 						},
 					},
+					["use_spec"] = true,
 					["use_class"] = true,
 					["role"] = {
 						["multi"] = {
@@ -42808,7 +42808,7 @@ WeakAurasSaved = {
 						["multi"] = {
 						},
 					},
-					["pvptalent"] = {
+					["faction"] = {
 						["multi"] = {
 						},
 					},
@@ -42839,9 +42839,13 @@ WeakAurasSaved = {
 				["fontFlags"] = "OUTLINE",
 				["useAdjustededMax"] = false,
 				["borderBackdrop"] = "Blizzard Tooltip",
-				["config"] = {
-				},
 				["uid"] = "O(8Sy0yXScH",
+				["sparkColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["icon"] = true,
 				["useAdjustededMin"] = false,
 				["regionType"] = "aurabar",
@@ -42868,11 +42872,7 @@ WeakAurasSaved = {
 				["alpha"] = 1,
 				["anchorFrameType"] = "SCREEN",
 				["xOffset"] = 0,
-				["sparkColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
+				["config"] = {
 				},
 				["inverse"] = false,
 				["sparkDesature"] = false,

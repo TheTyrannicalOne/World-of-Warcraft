@@ -7,13 +7,13 @@ HandyNotes_WarfrontTreasuresDB = {
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
@@ -26,7 +26,7 @@ HandyNotes_WarfrontTreasuresDB = {
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -42,7 +42,7 @@ HandyNotes_WarfrontTreasuresDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Sinh - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 		},
 		["Shaewong - Dalaran"] = {
 		},
@@ -54,7 +54,7 @@ HandyNotes_WarfrontTreasuresDB = {
 		},
 		["Dialdaas - Darkspear"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Sinh - Dalaran"] = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
@@ -80,7 +80,7 @@ HandyNotes_WarfrontTreasuresDB = {
 		},
 		["Migimong - Runetotem"] = {
 		},
-		["Gangus - Runetotem"] = {
+		["Shathiel - Darkspear"] = {
 		},
 		["Narisaric - Dalaran"] = {
 		},

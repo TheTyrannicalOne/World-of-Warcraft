@@ -63,6 +63,8 @@ BigWigs:AddColors("Shad'har the Insatiable", {
 	[306953] = {"blue","yellow"},
 	[307471] = {"blue","cyan","purple"},
 	[307472] = {"blue","cyan","purple"},
+	[312099] = {"blue","green"},
+	[312328] = "orange",
 	[314736] = "blue",
 	[318078] = {"blue","red"},
 	["stages"] = "cyan",

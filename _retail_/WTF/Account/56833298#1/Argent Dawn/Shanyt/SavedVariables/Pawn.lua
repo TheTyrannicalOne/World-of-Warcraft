@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 475,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1612:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 477,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1614:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 158028,
@@ -44,9 +44,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158030::::::::120:71::26:6:4803:4802:6516:6513:1607:4785:::|h[Bleakweald Vambraces]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 159413,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:159413::::::::120:71::23:3:4779:1577:4784:::|h[Gauntlets of the Avian Sentinel]|h|r",
+			["ID"] = 157928,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:157928::::::::120:71::26:5:4803:6516:6515:1607:4785:::|h[Battlegloves of Rezan's Bladeguard]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 171622,
@@ -61,16 +61,16 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158152::::::::120:71::27:5:4803:6516:6515:1612:4785:::|h[Golden Empire Signet]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 158224,
-			["Level"] = 410,
+			["ID"] = 158162,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff0070dd|Hitem:158224::::::::120:71::25:3:4803:1602:4785:::|h[Vial of Storms]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158162::::::::120:71::27:4:4803:6515:1612:4785:::|h[Pearl Diver's Compass]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 117360,
-			["Level"] = 395,
+			["ID"] = 165665,
+			["Level"] = 415,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:117360::::::::120:71:512::1:6315:120:::|h[Coren's Cold Chromium Coaster]|h|r",
+			["Link"] = "|cff0070dd|Hitem:165665::::::::120:71::26:4:4803:6515:1607:4785:::|h[Ritual Feather of Unng Ak]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166668,

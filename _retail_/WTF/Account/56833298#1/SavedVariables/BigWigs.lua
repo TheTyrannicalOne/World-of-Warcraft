@@ -10,6 +10,7 @@ BigWigs3DB = {
 			[-1358] = true,
 			[-557] = true,
 			[-573] = true,
+			[295] = true,
 			[74] = true,
 			[76] = true,
 			[-575] = true,
@@ -17,7 +18,6 @@ BigWigs3DB = {
 			[-607] = true,
 			[-1152] = true,
 			[-514] = true,
-			[295] = true,
 			[-609] = true,
 			[-367] = true,
 			[-437] = true,
@@ -37,6 +37,8 @@ BigWigs3DB = {
 	},
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
+		},
+		["BigWigs_Bosses_Dunegorger Kraulok"] = {
 		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
@@ -67,9 +69,9 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.0000610351563,
-					["BigWigsEmphasizeAnchor_width"] = 319.9999389648438,
 					["BigWigsEmphasizeAnchor_height"] = 21.9999885559082,
 					["BigWigsAnchor_height"] = 16.00003051757813,
+					["BigWigsEmphasizeAnchor_width"] = 319.9999389648438,
 				},
 			},
 		},
@@ -87,9 +89,9 @@ BigWigs3DB = {
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["height"] = 119.9999771118164,
-					["font"] = "Friz Quadrata TT",
 					["width"] = 140.0001678466797,
+					["font"] = "Friz Quadrata TT",
+					["height"] = 119.9999771118164,
 				},
 			},
 		},
@@ -810,18 +812,18 @@ BigWigsStatsDB = {
 				["kills"] = 6,
 			},
 		},
-		[1447] = {
+		[1372] = {
 			["mythic"] = {
-				["best"] = 14.50099999999657,
+				["best"] = 25.01499999999942,
 				["kills"] = 6,
 			},
 			["normal"] = {
-				["best"] = 4.31099999999424,
-				["kills"] = 4,
+				["best"] = 4.3799999999992,
+				["kills"] = 5,
 			},
 			["heroic"] = {
-				["best"] = 4.261000000000422,
-				["kills"] = 6,
+				["best"] = 6.95299999999952,
+				["kills"] = 5,
 			},
 		},
 		[1394] = {
@@ -852,18 +854,18 @@ BigWigsStatsDB = {
 				["kills"] = 6,
 			},
 		},
-		[1432] = {
+		[1447] = {
 			["mythic"] = {
-				["best"] = 26.29099999999926,
+				["best"] = 14.50099999999657,
 				["kills"] = 6,
 			},
 			["normal"] = {
-				["best"] = 6.401999999998225,
-				["kills"] = 5,
+				["best"] = 4.31099999999424,
+				["kills"] = 4,
 			},
 			["heroic"] = {
-				["best"] = 6.554000000000087,
-				["kills"] = 5,
+				["best"] = 4.261000000000422,
+				["kills"] = 6,
 			},
 		},
 		[1391] = {
@@ -923,17 +925,17 @@ BigWigsStatsDB = {
 				["kills"] = 6,
 			},
 		},
-		[1372] = {
+		[1432] = {
 			["mythic"] = {
-				["best"] = 25.01499999999942,
+				["best"] = 26.29099999999926,
 				["kills"] = 6,
 			},
 			["normal"] = {
-				["best"] = 4.3799999999992,
+				["best"] = 6.401999999998225,
 				["kills"] = 5,
 			},
 			["heroic"] = {
-				["best"] = 6.95299999999952,
+				["best"] = 6.554000000000087,
 				["kills"] = 5,
 			},
 		},

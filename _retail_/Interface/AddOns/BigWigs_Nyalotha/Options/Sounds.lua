@@ -61,6 +61,8 @@ BigWigs:AddSounds("Shad'har the Insatiable", {
 	[306953] = "info",
 	[307471] = {"alarm","info"},
 	[307472] = {"alarm","info"},
+	[312099] = {"info","long"},
+	[312328] = "alarm",
 	[314736] = "alarm",
 	[318078] = "warning",
 	["stages"] = "long",

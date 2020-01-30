@@ -114,6 +114,10 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 			["class"] = "MAGE",
 		},
+		["Serbitechna"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
 		["Brewnheimer"] = {
 			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
@@ -121,10 +125,6 @@ MasterPlanAG = {
 		["Dialdaas"] = {
 			["class"] = "PALADIN",
 			["faction"] = "Alliance",
-		},
-		["Serbitechna"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
 		},
 	},
 	["Black Dragonflight"] = {

@@ -6,7 +6,7 @@ OmniCCDB = {
 		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["global"] = {
-		["addonVersion"] = "8.3.4",
+		["addonVersion"] = "8.3.5",
 		["dbVersion"] = 5,
 	},
 	["profiles"] = {
@@ -29,9 +29,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["groups"] = {
-	},
-	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
 			["minDuration"] = 2,
@@ -57,4 +54,7 @@ OmniCC4Config = {
 			["spiralOpacity"] = 1.00999997742474,
 		},
 	},
+	["groups"] = {
+	},
+	["version"] = "8.2.5",
 }
