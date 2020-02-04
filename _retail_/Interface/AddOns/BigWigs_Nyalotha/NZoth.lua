@@ -31,7 +31,7 @@ local paranoiaTimers = {
 	{47.3, 56.0, 63.6}, -- After second Shattered Ego
 }
 local eternalTormentCount = 1
-local eternalTormentTimers = {35.5, 56.5, 30, 20}
+local eternalTormentTimers = {35.5, 56.5, 29.5, 19.5, 28.5} -- 9.7 repeatedly after
 local corruptedMindCount = {}
 local glareCount = 1
 local glareTimers = {40.7, 67.2, 35.4}
@@ -65,7 +65,7 @@ function mod:GetOptions()
 		"altpower",
 		{313609, "SAY_COUNTDOWN"}, -- Gift of N'zoth
 		-- Stage 1
-		316711, -- Mindwrack
+		{316711, "NAMEPLATEBAR"}, -- Mindwrack
 		310184, -- Creeping Anquish
 		309991, -- Anguish
 		313184, -- Synaptic Shock
@@ -84,7 +84,7 @@ function mod:GetOptions()
 		318976, -- Stupefying Glare
 		317102, -- Evoke Anguish
 		-21491, -- Thought Harvester
-		317066, -- Harvest Thoughts
+		{317066, "NAMEPLATEBAR"}, -- Harvest Thoughts
 	}, {
 		["stages"] = CL.general,
 		[313609] = -20936, -- Sanity
@@ -112,7 +112,6 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_REMOVED", "SynapticShockRemoved", 313184)
 	self:Log("SPELL_AURA_APPLIED", "ShatteredEgo", 312155)
 	self:Log("SPELL_AURA_APPLIED", "InfinitysToll", 319346)
-
 
 	-- Stage 2
 	self:Log("SPELL_AURA_REMOVED", "ShatteredEgoRemoved", 312155)
@@ -423,7 +422,7 @@ function mod:EternalTorment(args)
 			self:Bar(args.spellId, eternalTormentCount == 2 and 72.5 or 24, CL.count:format(args.spellName, eternalTormentCount))
 		end
 	else
-		self:Bar(args.spellId, eternalTormentTimers[eternalTormentCount], CL.count:format(args.spellName, eternalTormentCount))
+		self:Bar(args.spellId, eternalTormentTimers[eternalTormentCount] or 9.7, CL.count:format(args.spellName, eternalTormentCount))
 	end
 end
 

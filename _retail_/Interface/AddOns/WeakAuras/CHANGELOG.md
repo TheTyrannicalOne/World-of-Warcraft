@@ -1,31 +1,40 @@
-# [2.16.1](https://github.com/WeakAuras/WeakAuras2/tree/2.16.1) (2020-01-17)
+# [2.16.2](https://github.com/WeakAuras/WeakAuras2/tree/2.16.2) (2020-02-02)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.16.0...2.16.1)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.16.1...2.16.2)
 
 ## Highlights
 
- Bug fixes! 
+ - Bar Model for Icons (https://www.patreon.com/posts/33679086)
+- Introducing Archivist, our latest achievement in overengineering WoW AddOns! (Blog post coming)
+- The usual metric ton of bug fixes 
 
 ## Commits
 
-InfusOnWoW (5):
+InfusOnWoW (12):
 
-- Fix the wrong init function being run
-- Use Encounter Journal as a source of the encounter_ids
-- Fix the Custom Code Editor for Conditions
-- Interpret a missing glowType as a standard buttonOverlay
-- Fix %cost not always being interpreted as %cost and a infinite loop
+- Glow: Fix inconsistenies in the naming of the "Custom Color" property.
+- Prevent error on MoverResizer:SetToRegion on nameplated regions
+- AuraBar: Fix orientation conditions
+- Add support for hyperlinks in the tooltip
+- Fix HasTarget condition on switching continents
+- Enable Vulperas now.
+- BarModel: Try more force
+- Tweak models again
+- Fix zone, zoneGroup and ecounter tooltip in load options
+- Initialize aura_environment a bit before evaluating custom variables
+- Fix simple add case not showing the right state
+- Enable the BarModel for Icons too
 
-Stanzilla (1):
+emptyrivers (5):
 
-- Prevent the next French revolution
+- swallow stacksfunc errors
+- remove babelfish requirement
+- add ComposeSorts and CompareRegionData helpers (#1907)
+- rewrite Set to not be broken
+- add archive addon + archivist embed
 
 mrbuds (2):
 
-- fix Alternate Power trigger not active without a first UNIT_POWER_FREQUENT event
-- Use LibClassicSpellActionCount-1.0 to get number of reagents for spells fixes #1849
-
-nullKomplex (1):
-
-- Change default text region custom text update value to match updated subregions texts.
+- fix group type change
+- lower frequency of ITEM_COUNT_UPDATE for Item Count trigger fixes #1933
 

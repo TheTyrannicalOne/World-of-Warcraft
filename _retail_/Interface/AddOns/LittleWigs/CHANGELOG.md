@@ -1,8 +1,11 @@
 # LittleWigs
 
-## [v8.3.4](https://github.com/BigWigsMods/LittleWigs/tree/v8.3.4) (2020-01-29)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.3.3...v8.3.4)
+## [v8.3.5](https://github.com/BigWigsMods/LittleWigs/tree/v8.3.5) (2020-02-02)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.3.4...v8.3.5)
 
-- BfA/HorrificVisionOfOrgrimmar: Fix boss modules not engaging (#497)  
-- ruRU update (#496)  
-- ruRU update (#495)  
+- TBC: add modules for The Escape from Durnholde (#502)  
+- BfA/HorrificVisionOfOrgrimmar: Use :SetAllowWin() closes #499  
+- ruRU update (#500)  
+- BfA/HorrificVisionOfOrgrimmar/Trash: Add Madness: Entomophobia (#498)  
+- BfA: Add NAMEPLATEBAR option flag (#493)  
+- deDE update (#501)  

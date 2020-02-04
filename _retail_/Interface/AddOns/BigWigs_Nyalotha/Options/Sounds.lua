@@ -11,6 +11,7 @@ BigWigs:AddSounds("Wrathion", {
 })
 
 BigWigs:AddSounds("Maut", {
+	[305663] = "alert",
 	[305722] = "long",
 	[307586] = "warning",
 	[307806] = "warning",
@@ -112,6 +113,7 @@ BigWigs:AddSounds("Ra-den the Despoiled", {
 	[313213] = {"alarm","alert"},
 	[314484] = "alert",
 	[315252] = "alarm",
+	[316065] = "warning",
 	["essences"] = "warning",
 	["stages"] = "long",
 })
@@ -122,6 +124,7 @@ BigWigs:AddSounds("Il'gynoth, Corruption Reborn", {
 	[310433] = "long",
 	[311401] = "long",
 	[313759] = "warning",
+	[318383] = "alarm",
 	["stages"] = "long",
 })
 

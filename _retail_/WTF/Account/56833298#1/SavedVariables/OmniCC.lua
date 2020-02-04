@@ -1,22 +1,22 @@
 
 OmniCCDB = {
+	["profileKeys"] = {
+		["Tynkster - Dalaran"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+	},
 	["global"] = {
 		["addonVersion"] = "8.3.5",
 		["dbVersion"] = 5,
-	},
-	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},

@@ -1,5 +1,5 @@
 --- Kaliel's Tracker
---- Copyright (c) 2012-2019, Marouan Sabbagh <mar.sabbagh@gmail.com>
+--- Copyright (c) 2012-2020, Marouan Sabbagh <mar.sabbagh@gmail.com>
 --- All Rights Reserved.
 ---
 --- This file is part of addon Kaliel's Tracker.
@@ -197,12 +197,28 @@ local function SetupTutorials()
 			shineRight = 11,
 		},
 		{	-- 11
-			text = cTitle.."         What's NEW in version |cffffffff3.1.10|r\n\n"..
-					"- ADDED - mechanics for reseting profiles, as a prevention false issues."..
-					offs..cBold.."Note:|r I'll use this, when I or Blizzard make incompatible changes with"..
-					offs.."the stored settings.\n\n"..
+			text = cTitle.."         What's NEW in version |cffffffff3.2.0|r\n\n"..
+					"- FIXED - ticket #403 - Assault quests error\n"..
+					"- FIXED - ticket #393 - Quest mouseover inside the tracker switch quest"..
+					offs.."description for addons \"Classic Quest Log\" or \"Quest Guru\"\n"..
+					"- FIXED - TomTom - error when add World Quest waypoint\n"..
+					"- FIXED - Quests - header does not show number of quests\n"..
+					"- FIXED - does not activate POI button when Quest Auto zone filter is active\n"..
+					"- ADDED - Filters - support for BfA zones (Nazjatar)\n"..
+					"- ADDED - Filters - Quests - sorting by proximity\n"..
+					"- UPDATED - code for WoW 8.3.0\n"..
+					"- UPDATED - Wowhead URL - show it inside Zone bonus quest context menu\n"..
+					"- UPDATED - Tooltip - show Spell rewards\n"..
+					"- UPDATED - Tooltip - red color for not usable items\n"..
+					"- UPDATED - Tooltip - War Mode Bonus for Q / WQ\n"..
+					"- UPDATED - Addon support - Masque 8.2.8\n"..
+					"- UPDATED - Addon support - PetTracker 8.3.0\n"..
+					"- UPDATED - Addon support - TomTom v80300-1.1.0\n"..
+					"- UPDATED - Addon support - ElvUI 11.33, Tukui 18.28, RealUI 2.1.4,"..
+					offs.."SyncUI 8.2.5.2, SpartanUI 5.2.14\n"..
+					"- UPDATED - Libs\n\n"..
 
-                    cTitle.."WoW 8.2.0 - Known issues w/o solution|r\n"..
+                    cTitle.."WoW 8.3.0 - Known issues w/o solution|r\n"..
                     "- Clicking on tracked quests or achievements has no response during combat.\n"..
                     "- Header buttons Q and A don't work during combat.\n\n"..
 

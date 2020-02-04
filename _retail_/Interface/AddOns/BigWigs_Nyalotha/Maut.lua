@@ -58,6 +58,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED_DOSE", "ShadowWounds", 307399)
 	self:Log("SPELL_CAST_START", "DarkOffering", 308872)
 	self:Log("SPELL_AURA_APPLIED", "DevourMagic", 307806)
+	self:Log("SPELL_AURA_REMOVED", "DevourMagicRemoved", 307806)
 	self:Log("SPELL_CAST_START", "StygianAnnihilationStart", 308044)
 	--self:Log("SPELL_CAST_SUCCESS", "StygianAnnihilationSuccess", 308044)
 	self:Log("SPELL_CAST_START", "DarkManifestation", 308903)
@@ -117,6 +118,12 @@ function mod:DevourMagic(args)
 	end
 end
 
+function mod:DevourMagicRemoved(args)
+	if self:Me(args.destGUID) then
+		self:CancelSayCountdown(args.spellId)
+	end
+end
+
 do
 	local abyssCount = 0
 
@@ -157,7 +164,7 @@ end
 
 function mod:BlackWings(args)
 	self:Message2(args.spellId, "orange")
-	--self:PlaySound(args.spellId, "alarm")
+	self:PlaySound(args.spellId, "alert")
 	self:Bar(args.spellId, 30.4)
 end
 

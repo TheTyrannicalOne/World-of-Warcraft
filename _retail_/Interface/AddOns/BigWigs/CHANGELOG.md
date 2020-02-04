@@ -1,6 +1,8 @@
 # BigWigs
 
-## [v179.3](https://github.com/BigWigsMods/BigWigs/tree/v179.3) (2020-01-30)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v179.2...v179.3)
+## [v181.1](https://github.com/BigWigsMods/BigWigs/tree/v181.1) (2020-02-03)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v181...v181.1)
 
-- Nyalotha/Maut: Redo the way the abyss warning works to fix warning spam  
+- Nyalotha/Maut: Fix sound not playing for Black Wings  
+- Nyalotha/Maut: Fix the say countdown not cancelling when Devour Magic is removed  
+- Nyalotha/Shadhar: Fix Lua error  

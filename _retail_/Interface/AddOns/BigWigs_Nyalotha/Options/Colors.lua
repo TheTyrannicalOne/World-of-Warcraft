@@ -114,6 +114,7 @@ BigWigs:AddColors("Ra-den the Despoiled", {
 	[313213] = {"blue","purple","red"},
 	[314484] = "yellow",
 	[315252] = "blue",
+	[316065] = {"blue","cyan"},
 	["essences"] = "red",
 	["stages"] = "cyan",
 })
@@ -124,6 +125,7 @@ BigWigs:AddColors("Il'gynoth, Corruption Reborn", {
 	[310433] = "orange",
 	[311401] = "yellow",
 	[313759] = {"blue","yellow"},
+	[318383] = {"blue","red"},
 	["stages"] = "cyan",
 })
 
