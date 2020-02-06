@@ -124,6 +124,8 @@ local MiscellaneousCurrency = {
 	1717, --7th Legion Commendation
 	1716, --Honorbound Commendation
 	1721, -- Prismatic Manapearl
+	1719, --Corrupted Memento
+	1755, --Coalescing Visions
 }
 
 local HordeColor = RAID_CLASS_COLORS["DEATHKNIGHT"]
@@ -363,7 +365,8 @@ local function OnEnter(self)
 			if k == E.myname or E.db.sle.dt.currency.gold.throttle.mode ~= "AMOUNT" or (E.db.sle.dt.currency.gold.throttle.mode == "AMOUNT" and ElvDB["gold"][E.myrealm][k] >= (E.db.sle.dt.currency.gold.throttle.goldAmount * 10000)) then
 				T.tinsert(ShownGold,
 					{
-						name = k,
+						-- The function here is a hook that NihilistUI uses to add some textures to the gold datatext, if you change this please let nihilist know.
+						name = (DTP.CustomGoldDatatext and DTP.CustomGoldDatatext(k) or "")..k,
 						amount = ElvDB["gold"][E.myrealm][k],
 						amountText = E:FormatMoney(ElvDB["gold"][E.myrealm][k], E.db.datatexts.goldFormat or "BLIZZARD", not E.db.datatexts.goldCoins),
 						r = color.r, g = color.g, b =color.b,

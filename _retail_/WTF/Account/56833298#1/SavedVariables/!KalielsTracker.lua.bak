@@ -4,9 +4,6 @@ KalielsTrackerDB = {
 		["Tynster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shanyt - Argent Dawn"] = {
-			["collapsed"] = true,
-		},
 		["Shaewong - Dalaran"] = {
 			["collapsed"] = true,
 		},
@@ -61,7 +58,7 @@ KalielsTrackerDB = {
 	},
 	["global"] = {
 		["helpTutorial"] = 11,
-		["version"] = "3.1.10",
+		["version"] = "3.2.0",
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",

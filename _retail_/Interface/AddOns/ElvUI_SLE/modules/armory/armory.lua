@@ -49,6 +49,9 @@ Armory.Constants.CanTransmogrify = {
 Armory.Constants.EnchantableSlots = {
 	["Finger0Slot"] = true, ["Finger1Slot"] = true, ["MainHandSlot"] = true, ["SecondaryHandSlot"] = true,
 }
+Armory.Constants.Corruption = {
+	["DefaultX"] = 5, ["DefaultY"] = -8,
+}
 
 Armory.Constants.AzeriteTraitAvailableColor = {0.95, 0.95, 0.32, 1}
 Armory.Constants.Character_Defaults_Cached = false
@@ -374,6 +377,7 @@ end
 function Armory:UpdateCharacterInfo()
 	if E.db.sle.armory.character.enable then M:UpdatePageInfo(_G["CharacterFrame"], "Character") end
 	if not E.db.general.itemLevel.displayCharacterInfo then M:ClearPageInfo(_G["CharacterFrame"], "Character") end
+	-- CA:UpdateCorruptionLevel()
 end
 
 function Armory:ToggleItemLevelInfo(setupCharacterPage)
@@ -390,9 +394,20 @@ function Armory:CheckOptions(which)
 	return true
 end
 
+function Armory:HandleCorruption()
+	if SLE._Compatibility["DejaCharacterStats"] then return end
+	local CorruptionIcon = _G["CharacterFrame"].SLE_Corruption
+	CorruptionIcon:ClearAllPoints()
+	CorruptionIcon:SetParent(_G["SLE_Armory_Scroll"])
+	if E.db.sle.armory.character.enable or E.db.sle.armory.stats.enable then
+		CorruptionIcon:SetPoint("LEFT", _G["CharacterFrame"], "TOPRIGHT", -34, -54)
+	else
+		CorruptionIcon:SetPoint("RIGHT", _G["CharacterStatsPane"].ItemLevelFrame, "RIGHT", Armory.Constants.Corruption.DefaultX, Armory.Constants.Corruption.DefaultY)
+	end
+end
+
 function Armory:Initialize()
 	if not Armory:CheckOptions() then return end
-	
 
 	--May be usefull later
 	Armory.ScanTT = CreateFrame("GameTooltip", "SLE_Armory_ScanTT", nil, "GameTooltipTemplate")

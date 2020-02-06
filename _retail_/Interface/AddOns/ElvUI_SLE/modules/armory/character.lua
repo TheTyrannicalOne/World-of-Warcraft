@@ -145,8 +145,10 @@ function CA:BuildLayout()
 		if E.db.sle.armory.character.enable and _G["PaperDollFrame"]:IsShown() then _G["CharacterFrame"]:SetWidth(650) end
 	end)
 	hooksecurefunc("CharacterFrame_ShowSubFrame", function(frameName)
-		if frameName ~= "ReputationFrame" then return end
-		_G["CharacterFrame"]:SetWidth(PANEL_DEFAULT_WIDTH)
+		if frameName == "PaperDollFrame" or frameName == "PetPaperDollFrame" then return end
+		if _G["CharacterFrame"]:GetWidth() > PANEL_DEFAULT_WIDTH + 1 then
+			_G["CharacterFrame"]:SetWidth(PANEL_DEFAULT_WIDTH)
+		end
 	end)
 
 	hooksecurefunc('PaperDollFrame_SetLevel', function()
@@ -161,6 +163,41 @@ function CA:BuildLayout()
 			_G["CharacterLevelText"]:SetParent(_G["CharacterFrame"])
 		end
 	end)
+	
+	if SLE._Compatibility["DejaCharacterStats"] then return end
+	--<<Corruption>>--
+	_G["CharacterFrame"].SLE_Corruption = CreateFrame("Frame", "SLE_CharacterCorruptionButton", _G["CharacterFrame"])
+	_G["CharacterFrame"].SLE_Corruption.ThrottleRating = false
+	_G["CharacterFrame"].SLE_Corruption:SetSize(48, 80)
+	_G["CharacterFrame"].SLE_Corruption:SetPoint("RIGHT", _G["CharacterStatsPane"].ItemLevelFrame, "RIGHT", Armory.Constants.Corruption.DefaultX, Armory.Constants.Corruption.DefaultY) --Default for blizz corruption
+	_G["CharacterFrame"].SLE_Corruption:SetScript("OnEnter", CharacterFrameCorruption_OnEnter)
+	_G["CharacterFrame"].SLE_Corruption:SetScript("OnLeave", CharacterFrameCorruption_OnLeave)
+	_G["CharacterFrame"].SLE_Corruption:SetScript("OnEvent", function(self, event, ...)
+		CharacterFrameCorruption_OnEvent(self, event)
+		if (event == "COMBAT_RATING_UPDATE" and not self.ThrottleRating) or event == "PLAYER_ENTERING_WORLD" then
+			CA:UpdateCorruptionLevel()
+			self.ThrottleRating = true
+			E:Delay(1, function() _G["CharacterFrame"].SLE_Corruption.ThrottleRating = false end)
+		end
+	end)
+
+	--deal with the events
+	_G["CharacterFrame"].SLE_Corruption:RegisterEvent("COMBAT_RATING_UPDATE");
+	_G["CharacterFrame"].SLE_Corruption:RegisterEvent("PLAYER_ENTERING_WORLD");
+	_G["CharacterFrame"].SLE_Corruption:RegisterEvent("SPELL_TEXT_UPDATE");
+
+	_G["CharacterStatsPane"].ItemLevelFrame.Corruption:UnregisterEvent("COMBAT_RATING_UPDATE");
+	_G["CharacterStatsPane"].ItemLevelFrame.Corruption:UnregisterEvent("PLAYER_ENTERING_WORLD");
+	_G["CharacterStatsPane"].ItemLevelFrame.Corruption:UnregisterEvent("SPELL_TEXT_UPDATE");
+	_G["CharacterStatsPane"].ItemLevelFrame.Corruption:SetScript("OnEvent", nil)
+	_G["CharacterStatsPane"].ItemLevelFrame.Corruption:Hide()
+
+	_G["CharacterFrame"].SLE_Corruption.Eye = _G["CharacterFrame"].SLE_Corruption:CreateTexture(nil, "OVERLAY")
+	_G["CharacterFrame"].SLE_Corruption.Eye:SetInside()
+	_G["CharacterFrame"].SLE_Corruption.Eye:SetAtlas("Nzoth-charactersheet-icon")
+
+	_G["CharacterFrame"].SLE_Corruption.Level = _G["CharacterFrame"].SLE_Corruption:CreateFontString(nil, "OVERLAY")
+	_G["CharacterFrame"].SLE_Corruption.Level:SetPoint("CENTER", _G["CharacterFrame"].SLE_Corruption, "CENTER", 1 + E.db.sle.armory.character.corruption.xOffset, 8 + E.db.sle.armory.character.corruption.yOffset)
 end
 
 function CA:Calculate_Durability(which, Slot)
@@ -247,6 +284,30 @@ function CA:ElvOverlayToggle() --Toggle dat Overlay
 	end
 end
 
+function CA:UpdateCorruptionText()
+	if SLE._Compatibility["DejaCharacterStats"] then return end
+	local fontIlvl, sizeIlvl, outlineIlvl = E.db.sle.armory.character.corruption.font, E.db.sle.armory.character.corruption.fontSize, E.db.sle.armory.character.corruption.fontStyle
+	_G["CharacterFrame"].SLE_Corruption.Level:FontTemplate(E.LSM:Fetch('font', fontIlvl), sizeIlvl, outlineIlvl)
+	_G["CharacterFrame"].SLE_Corruption.Level:SetPoint("CENTER", _G["CharacterFrame"].SLE_Corruption, "CENTER", 1 + E.db.sle.armory.character.corruption.xOffset, 8 + E.db.sle.armory.character.corruption.yOffset)
+end
+
+function CA:UpdateCorruptionLevel()
+	if SLE._Compatibility["DejaCharacterStats"] then return end --Shouldn't be required, just in case
+	local corruption = GetCorruption();
+	local corruptionResistance = GetCorruptionResistance();
+	local totalCorruption = math.max(corruption - corruptionResistance, 0);
+	local isColor = E.db.sle.armory.character.corruption.valueColor
+
+	if E.db.sle.armory.character.corruption.style == "TOTAL" then
+		local CorColor = isColor and (totalCorruption > 0 and "ff0000" or "00ff00") or "ffffff"
+		_G["CharacterFrame"].SLE_Corruption.Level:SetText("|cff"..CorColor..totalCorruption.."|r")
+	elseif E.db.sle.armory.character.corruption.style == "COR-RES" then
+		_G["CharacterFrame"].SLE_Corruption.Level:SetText("|cff"..(isColor and "ff0000" or "ffffff")..corruption.."|r / |cff"..(isColor and "00ff00" or "ffffff")..corruptionResistance.."|r")
+	elseif E.db.sle.armory.character.corruption.style == "Hide" then
+		_G["CharacterFrame"].SLE_Corruption.Level:SetText("")
+	end
+end
+
 function CA:Enable()
 	-- Setting frame
 	_G["CharacterFrame"]:SetHeight(444)
@@ -299,13 +360,13 @@ function CA:Disable()
 	_G["CharacterFrame"]:SetHeight(424)
 	_G["CharacterFrame"]:SetWidth(_G["PaperDollFrame"]:IsShown() and _G["CharacterFrame"].Expanded and CHARACTERFRAME_EXPANDED_WIDTH or PANEL_DEFAULT_WIDTH)
 	_G["CharacterFrameInsetRight"]:SetPoint(T.unpack(DefaultPosition.InsetDefaultPoint))
-	
+
 	-- Move rightside equipment slots to default position
 	_G["CharacterHandsSlot"]:SetPoint('TOPRIGHT', _G["CharacterFrameInset"], 'TOPRIGHT', -4, -2)
 	
 	-- Move bottom equipment slots to default position
 	_G["CharacterMainHandSlot"]:SetPoint('BOTTOMLEFT', _G["PaperDollItemsFrame"], 'BOTTOMLEFT', 130, 16)
-	
+
 	-- Model Frame
 	_G["CharacterModelFrame"]:ClearAllPoints()
 	_G["CharacterModelFrame"]:Size(231, 320)
@@ -315,7 +376,7 @@ function CA:Disable()
 	_G["CharacterModelFrame"].BackgroundBotLeft:Show()
 	_G["CharacterModelFrame"].BackgroundBotRight:Show()
 	_G["CharacterModelFrame"].backdrop:Show()
-	
+
 	CA:Update_Durability() --Required for elements update
 	for i, SlotName in T.pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
@@ -341,6 +402,9 @@ function CA:ToggleArmory()
 	else
 		CA:Disable()
 	end
+	CA:UpdateCorruptionText()
+	Armory:HandleCorruption()
+
 	for i, SlotName in T.pairs(Armory.Constants.AzeriteSlot) do PaperDollItemSlotButton_Update(_G["Character"..SlotName]) end
 end
 
@@ -348,13 +412,4 @@ function CA:LoadAndSetup()
 	CA:BuildLayout()
 	CA:ToggleArmory()
 	CA:ElvOverlayToggle()
-	-- hooksecurefunc("ToggleCharacter", function(frameType)
-		-- if frameType ~= "PaperDollFrame" and frameType ~= "PetPaperDollFrame" then
-			-- _G["CharacterFrame"]:SetWidth(PANEL_DEFAULT_WIDTH)
-		-- elseif Info.CharacterArmory_Activate and frameType == "PaperDollFrame" then
-			-- _G["CharacterFrameInsetRight"]:SetPoint('TOPLEFT', _G["CharacterFrameInset"], 'TOPRIGHT', 110, 0)
-		-- else
-			-- _G["CharacterFrameInsetRight"]:SetPoint(T.unpack(DefaultPosition.InsetDefaultPoint))
-		-- end
-	-- end)
 end

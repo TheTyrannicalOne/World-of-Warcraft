@@ -1,14 +1,14 @@
 
 RAREAN = {
 	["Options"] = {
+		["RareOrderType"] = 1,
+		["ShowAllOnMouseOver"] = true,
 		["TrackingRares"] = {
 		},
-		["ShowAllOnMouseOver"] = true,
-		["RareOrderType"] = 1,
-		["ReportFindsToGeneral"] = false,
+		["RespondToRequests"] = false,
 		["SetTomTomWaypoints"] = true,
 		["HideInCombat"] = false,
 		["TrackingType"] = 1,
-		["RespondToRequests"] = false,
+		["ReportFindsToGeneral"] = false,
 	},
 }

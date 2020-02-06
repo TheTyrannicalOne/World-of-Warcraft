@@ -13,7 +13,7 @@ local format = string.format
 local upper  = string.upper
 
 
-ns.PTR = select( 4, GetBuildInfo() ) > 80205
+ns.PTR = select( 4, GetBuildInfo() ) > 80300
 
 
 ns.Patrons = {
@@ -230,9 +230,9 @@ local debug = ns.debug
 local active_debug
 local current_display
 
+local lastIndent = 0
 
 function Hekili:SetupDebug( display )
-
     if not self.ActiveDebug then return end
     if not display then return end
 
@@ -243,20 +243,35 @@ function Hekili:SetupDebug( display )
         index = 1
     }
     active_debug = debug[ current_display ]
-    active_debug.index = 1
+	active_debug.index = 1
+	
+	lastIndent = 0
 
     self:Debug( "\nNew Recommendations for [ %s ] requested at %s ( %.2f ).", display, date( "%H:%M:%S"), GetTime() )
-
 end
 
+
 function Hekili:Debug( ... )
-
     if not self.ActiveDebug then return end
-    if not active_debug then return end
+	if not active_debug then return end
+	
+	local indent, text = ...
+	local start
 
-    active_debug.log[ active_debug.index ] = format( ... )
+	if type( indent ) ~= "number" then
+		indent = lastIndent
+		text = ...
+		start = 2
+	else
+		lastIndent = indent
+		start = 3
+	end
+
+	local prepend = format( indent > 0 and ( "%" .. ( indent * 4 ) .. "s" ) or "%s", "" )
+	text = text:gsub("\n", "\n" .. prepend )
+
+	active_debug.log[ active_debug.index ] = format( "%" .. ( indent > 0 and ( 4 * indent ) or "" ) .. "s" .. text, "", select( start, ... ) )
     active_debug.index = active_debug.index + 1
-
 end
 
 
@@ -274,7 +289,7 @@ function Hekili:SaveDebugSnapshot()
             v.log[ i ] = nil
         end
 
-        table.insert( v.log, 1, self:GenerateProfile() )
+		table.insert( v.log, 1, self:GenerateProfile() )
         table.insert( snapshots[ k ], table.concat( v.log, "\n" ) )
 
     end

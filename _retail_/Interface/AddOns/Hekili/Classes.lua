@@ -84,15 +84,14 @@ end
 
 
 local protectedFunctions = {
-    onCastStart = true, -- virtual handler for spellcast start.
-    onCastFinish = true, -- virtual handler for spellcast finish.
+    -- Channels.
+    start = true,
+    tick = true,
+    finish = true,
 
-    onImpact = true, -- real and virtual handler for spell impact.
-
-    onRealCastStart = true, -- real handler for spellcast start.
-    onRealCastFinish = true, -- real handler for spellcast finish.
-
-    handler = true, -- generic handler for abilities that do not require queueing.
+    -- Casts
+    handler = true, -- Cast finish.
+    impact = true,  -- Projectile impact.
 }
 
 
@@ -382,6 +381,10 @@ local HekiliSpecMixin = {
         self.potion = potion
     end,
 
+    RegisterRecheck = function( self, func )
+        self.recheck = func
+    end,
+    
     RegisterHook = function( self, hook, func )
         self.hooks[ hook ] = self.hooks[ hook ] or {}
         self.hooks[ hook ] = setfenv( func, state )
@@ -545,6 +548,10 @@ local HekiliSpecMixin = {
             data.cast = loadstring( "return " .. data.cast .. " * haste" )
         end
 
+        if data.toggle == "interrupts" and data.gcd == "off" and data.readyTime == state.timeToInterrupt and data.interrupt == nil then
+            data.interrupt = true
+        end
+
         for key, value in pairs( data ) do
             if type( value ) == 'function' then
                 setfenv( value, state )
@@ -557,7 +564,7 @@ local HekiliSpecMixin = {
             end
         end
 
-        if a.velocity and a.onImpact then
+        if ( a.velocity or a.flightTime ) and a.impact then
             a.isProjectile = true
         end
 
@@ -588,19 +595,17 @@ local HekiliSpecMixin = {
             end
         end
 
-        if not a.item then
-            self.abilities[ ability ] = a
-            self.abilities[ a.id ] = a
+        self.abilities[ ability ] = a
+        self.abilities[ a.id ] = a
 
-            if not a.unlisted then class.abilityList[ ability ] = class.abilityList[ ability ] or a.listName or a.name end
+        if not a.unlisted then class.abilityList[ ability ] = class.abilityList[ ability ] or a.listName or a.name end
 
-            if data.copy then
-                if type( data.copy ) == 'string' or type( data.copy ) == 'number' then
-                    self.abilities[ data.copy ] = a
-                elseif type( data.copy ) == 'table' then
-                    for _, key in ipairs( data.copy ) do
-                        self.abilities[ key ] = a
-                    end
+        if data.copy then
+            if type( data.copy ) == 'string' or type( data.copy ) == 'number' then
+                self.abilities[ data.copy ] = a
+            elseif type( data.copy ) == 'table' then
+                for _, key in ipairs( data.copy ) do
+                    self.abilities[ key ] = a
                 end
             end
         end
@@ -1122,6 +1127,7 @@ all:RegisterAuras( {
             t.applied = 0
             t.v1 = 0
             t.v2 = false
+            t.v3 = false
             t.caster = unit
         end,
     },
@@ -1198,6 +1204,11 @@ all:RegisterAuras( {
     berserking = {
         id = 26297,
         duration = 10,
+    },
+
+    hyper_organic_light_originator = {
+        id = 312924,
+        duration = 6,
     },
 
     blood_fury = {
@@ -1736,6 +1747,28 @@ all:RegisterAbilities( {
             applyBuff( 'berserking' )
         end,
     },
+
+    hyper_organic_light_originator = {
+        id = 312924,
+        cast = 0,
+        cooldown = 180,
+        gcd = "off",
+
+        toggle = "defensives",
+
+        handler = function ()
+            applyBuff( "hyper_organic_light_originator" )
+        end
+    },
+
+    bag_of_tricks = {
+        id = 312411,
+        cast = 0,
+        cooldown = 90,
+        gcd = "spell",
+
+        toggle = "cooldowns",
+    }
 } )
 
 
@@ -1990,6 +2023,14 @@ do
     } )
 end
 
+-- 8.3 - WORLD
+-- Corruption Curse that impacts resource costs.
+
+all:RegisterAura( "hysteria", {
+    id = 312677,
+    duration = 30,
+    max_stack = 99
+} )
 
 
 -- BFA TRINKETS
@@ -2136,6 +2177,108 @@ all:RegisterAuras( {
 
 
 -- BFA TRINKETS/ITEMS
+-- Ny'alotha
+
+all:RegisterAbility( "manifesto_of_madness", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 174103,
+    toggle = "cooldowns",
+
+    handler = function ()
+        applyBuff( "manifesto_of_madness_chapter_one" )
+    end,
+} )
+
+all:RegisterAuras( {
+    manifesto_of_madness_chapter_one = {
+        id = 313948,
+        duration = 10,
+        max_stack = 1
+    },
+
+    manifesto_of_madness_chapter_two = {
+        id = 314040,
+        duration = 10,
+        max_stack = 1
+    }
+} )
+
+
+all:RegisterAbility( "forbidden_obsidian_claw", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 173944,
+    toggle = "cooldowns",
+
+    handler = function ()
+        applyDebuff( "target", "obsidian_claw" )
+    end,
+} )
+
+all:RegisterAura( "obsidian_claw", {
+    id = 313148,
+    duration = 8.5,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "sigil_of_warding", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+    
+    item = 173940,
+    toggle = "defensives",
+
+    handler = function ()
+        applyBuff( "stoneskin", 8 )
+    end,
+} )
+
+all:RegisterAura( "stoneskin", {
+    id = 313060,
+    duration = 16,
+    max_stack = 1,
+} )
+
+
+all:RegisterAbility( "writhing_segment_of_drestagath", {
+    cast = 0,
+    cooldown = 80,
+    gcd = "off",
+
+    item = 173946,
+    toggle = "cooldowns",
+} )
+
+
+all:RegisterAbility( "lingering_psychic_shell", {
+    cast = 0,
+    cooldown = 60,
+    gcd = "off",
+
+    item = 174277,
+    toggle = "defensives",
+
+    handler = function ()
+        applyBuff( "" )
+    end,
+} )
+
+all:RegisterAura( "psychic_shell", {
+    id = 314585,
+    duration = 8,
+    max_stack = 1
+} )
+
+
+
+
 -- Azshara's EP
 all:RegisterAbility( "orgozoas_paralytic_barb", {
     cast = 0,
@@ -2494,6 +2637,27 @@ do
         end,
 
         copy = "hyperthread_wristwraps_300142"
+    } )
+
+    
+    all:RegisterAbility( "neural_synapse_enhancer", {
+        cast = 0,
+        cooldown = 45,
+        gcd = "off",
+
+        item = 168973,
+
+        handler = function ()
+            applyBuff( "enhance_synapses" )            
+        end,
+
+        copy = "enhance_synapses_300612"
+    } )
+
+    all:RegisterAura( "enhance_synapses", {
+        id = 300612,
+        duration = 15,
+        max_stack = 1
     } )
 end
 
@@ -4883,12 +5047,12 @@ function Hekili:SpecializationChanged()
 
     ns.callHook( 'specializationChanged' )
 
-    ns.updateGear()
     ns.updateTalents()
+    -- ns.updateGear()
 
     self:UpdateDisplayVisibility()
 
-    self:RefreshOptions()    
+    self:RefreshOptions()
     self:LoadScripts()
 end
 
@@ -6449,6 +6613,14 @@ all:RegisterPowers( {
         id = 273142,
         triggers = {
             healing_hammer = { 273142 },
+        },
+    },
+
+    -- Heart of Darkness
+    heart_of_darkness = {
+        id = 316101,
+        triggers = {
+            heart_of_darkness = { 317137, 316101 }
         },
     },
 
@@ -8385,14 +8557,22 @@ all:RegisterAbility( "worldvein_resonance", {
     essence = true,
 
     handler = function()
+        applyBuff( "worldvein_resonance" )
         addStack( "lifeblood", nil, essence.worldvein_resonance.rank > 1 and 3 or 2 )
     end,
 } )
 
-all:RegisterAura( "lifeblood", {
-    id = 295137,
-    duration = function () return essence.worldvein_resonance.rank > 1 and 18 or 12 end,
-    max_stack = 4,
+all:RegisterAuras( {
+    lifeblood = {
+        id = 295137,
+        duration = function () return essence.worldvein_resonance.rank > 1 and 18 or 12 end,
+        max_stack = 4,
+    },
+    worldvein_resonance = {
+        id = 313310,
+        duration = 18,
+        max_stack = 1
+    }
 } )
 
 

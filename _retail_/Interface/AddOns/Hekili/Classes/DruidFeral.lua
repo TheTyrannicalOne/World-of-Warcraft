@@ -567,6 +567,7 @@ if UnitClassBase( 'player' ) == 'DRUID' then
             notalent = "incarnation",
 
             toggle = "cooldowns",
+            nobuff = "berserk", -- VoP
 
             handler = function ()
                 if buff.cat_form.down then shift( "cat_form" ) end
@@ -854,6 +855,7 @@ if UnitClassBase( 'player' ) == 'DRUID' then
             texture = 571586,
 
             toggle = "cooldowns",
+            nobuff = "incarnation", -- VoP
 
             handler = function ()
                 if buff.cat_form.down then shift( "cat_form" ) end
@@ -1073,7 +1075,7 @@ if UnitClassBase( 'player' ) == 'DRUID' then
             startsCombat = true,
             texture = 1392547,
 
-            usable = function () return combo_points.current > 0 end,
+            usable = function () return combo_points.current > 0, "no combo points" end,
             handler = function ()
                 applyDebuff( "target", "rip", 4 * combo_points.current )
                 active_dot.rip = active_enemies
@@ -1394,12 +1396,13 @@ if UnitClassBase( 'player' ) == 'DRUID' then
             id = 106839,
             cast = 0,
             cooldown = 15,
-            gcd = "spell",
+            gcd = "off",
 
             startsCombat = true,
             texture = 236946,
 
             toggle = "interrupts",
+            interrupt = true,
 
             form = function () return buff.bear_form.up and "bear_form" or "cat_form" end,
 

@@ -16,9 +16,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1618:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 158028,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:158028::::::::120:71::27:4:1607:4785:6259:4775:::|h[Bleakweald Pauldrons]|h|r",
+			["ID"] = 157932,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:157932::::::::120:71::28:4:1622:4786:6503:4775:::|h[Pauldrons of Rezan's Bladeguard]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -42,9 +42,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165489::::::::120:71::23:4:5845:6516:1577:4786:::|h[Deathguard's Sabatons]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 158030,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:158030::::::::120:71::27:5:4803:6516:6515:1612:4785:::|h[Bleakweald Vambraces]|h|r",
+			["ID"] = 174956,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:174956::::::::120:71::29:6:6540:6515:6578:6579:4803:6513:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 157928,

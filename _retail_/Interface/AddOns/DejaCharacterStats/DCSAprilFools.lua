@@ -26,29 +26,29 @@ end
 
 if (LOCALE_koKR) then
 	DCS_FONT_SIZE = 11
-	STANDARD_TEXT_FONT = "Fonts\\2002.TTF";
-	UNIT_NAME_FONT = "Fonts\\2002B.TTF";
-	DAMAGE_TEXT_FONT = "Fonts\\K_Damage.TTF";
+	DCS_STANDARD_TEXT_FONT = "Fonts\\2002.TTF";
+	DCS_UNIT_NAME_FONT = "Fonts\\2002B.TTF";
+	DCS_DAMAGE_TEXT_FONT = "Fonts\\K_Damage.TTF";
 elseif (LOCALE_zhCN) then
 	DCS_FONT_SIZE = 14
-	STANDARD_TEXT_FONT = "Fonts\\ARKai_T.ttf";
-	UNIT_NAME_FONT = "Fonts\\ARKai_T.ttf";
-	DAMAGE_TEXT_FONT = "Fonts\\ARKai_C.ttf";
+	DCS_STANDARD_TEXT_FONT = "Fonts\\ARKai_T.ttf";
+	DCS_UNIT_NAME_FONT = "Fonts\\ARKai_T.ttf";
+	DCS_DAMAGE_TEXT_FONT = "Fonts\\ARKai_C.ttf";
 elseif (LOCALE_zhTW) then
 	DCS_FONT_SIZE = 16
-	STANDARD_TEXT_FONT = "Fonts\\blei00d.TTF";
-	UNIT_NAME_FONT = "Fonts\\blei00d.TTF";
-	DAMAGE_TEXT_FONT = "Fonts\\bKAI00M.TTF";
+	DCS_STANDARD_TEXT_FONT = "Fonts\\blei00d.TTF";
+	DCS_UNIT_NAME_FONT = "Fonts\\blei00d.TTF";
+	DCS_DAMAGE_TEXT_FONT = "Fonts\\bKAI00M.TTF";
 elseif (LOCALE_ruRU) then
 	DCS_FONT_SIZE = 11
-	STANDARD_TEXT_FONT = "Fonts\\FRIZQT___CYR.TTF";
-	UNIT_NAME_FONT = "Fonts\\FRIZQT___CYR.TTF";
-	DAMAGE_TEXT_FONT = "Fonts\\FRIZQT___CYR.TTF";
+	DCS_STANDARD_TEXT_FONT = "Fonts\\FRIZQT___CYR.TTF";
+	DCS_UNIT_NAME_FONT = "Fonts\\FRIZQT___CYR.TTF";
+	DCS_DAMAGE_TEXT_FONT = "Fonts\\FRIZQT___CYR.TTF";
 else
 	DCS_FONT_SIZE = 11
-	STANDARD_TEXT_FONT = "Fonts\\FRIZQT__.TTF";
-	UNIT_NAME_FONT = "Fonts\\FRIZQT__.TTF";
-	DAMAGE_TEXT_FONT = "Fonts\\FRIZQT__.TTF";
+	DCS_STANDARD_TEXT_FONT = "Fonts\\FRIZQT__.TTF";
+	DCS_UNIT_NAME_FONT = "Fonts\\FRIZQT__.TTF";
+	DCS_DAMAGE_TEXT_FONT = "Fonts\\FRIZQT__.TTF";
 end
 
 local function AFSetupFrames()
@@ -139,7 +139,7 @@ local function AFSetupFrames()
 	
 	local DCS_AF_AmmoItemFrameFS = DCS_AF_AmmoItemFrame:CreateFontString("FontString","OVERLAY","GameTooltipText")
 	DCS_AF_AmmoItemFrameFS:SetPoint("BOTTOM",DCS_AF_AmmoItemFrame,"BOTTOM",2,3) 
-	DCS_AF_AmmoItemFrameFS:SetFont(STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
+	DCS_AF_AmmoItemFrameFS:SetFont(DCS_STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
 	DCS_AF_AmmoItemFrameFS:SetJustifyH("CENTER")
 	DCS_AF_AmmoItemFrameFS:SetFormattedText("")
 
@@ -420,31 +420,31 @@ local function AFSetupFrames()
 	
 	ResFrostFS = DCSAF_ResistFrame:CreateFontString("FontString","OVERLAY","GameTooltipText")
 	ResFrostFS:SetPoint("CENTER",DCSAF_ResistFrame,"CENTER",0,52) 
-	ResFrostFS:SetFont(STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
+	ResFrostFS:SetFont(DCS_STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
 	ResFrostFS:SetJustifyH("CENTER")
 	ResFrostFS:SetFormattedText("")
 
 	ResFireFS = DCSAF_ResistFrame:CreateFontString("FontString","OVERLAY","GameTooltipText")
 	ResFireFS:SetPoint("CENTER",DCSAF_ResistFrame,"CENTER",0,23) 
-	ResFireFS:SetFont(STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
+	ResFireFS:SetFont(DCS_STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
 	ResFireFS:SetJustifyH("CENTER")
 	ResFireFS:SetFormattedText("")
 	
 	ResNatureFS = DCSAF_ResistFrame:CreateFontString("FontString","OVERLAY","GameTooltipText")
 	ResNatureFS:SetPoint("CENTER",DCSAF_ResistFrame,"CENTER",0,-6) 
-	ResNatureFS:SetFont(STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
+	ResNatureFS:SetFont(DCS_STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
 	ResNatureFS:SetJustifyH("CENTER")
 	ResNatureFS:SetFormattedText("")
 	
 	ResArcaneFS = DCSAF_ResistFrame:CreateFontString("FontString","OVERLAY","GameTooltipText")
 	ResArcaneFS:SetPoint("CENTER",DCSAF_ResistFrame,"CENTER",0,-36) 
-	ResArcaneFS:SetFont(STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
+	ResArcaneFS:SetFont(DCS_STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
 	ResArcaneFS:SetJustifyH("CENTER")
 	ResArcaneFS:SetFormattedText("")
 	
 	ResShadowFS = DCSAF_ResistFrame:CreateFontString("FontString","OVERLAY","GameTooltipText")
 	ResShadowFS:SetPoint("CENTER",DCSAF_ResistFrame,"CENTER",0,-64) 
-	ResShadowFS:SetFont(STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
+	ResShadowFS:SetFont(DCS_STANDARD_TEXT_FONT, DCS_FONT_SIZE, "THINOUTLINE")
 	ResShadowFS:SetJustifyH("CENTER")
 	ResShadowFS:SetFormattedText("")
 	
@@ -660,13 +660,13 @@ local function mystrangefunction()
 		
 		StatNameFS = FrameParent:CreateFontString("FontString","OVERLAY","GameTooltipText")
 		StatNameFS:SetPoint("TOPLEFT",FrameParent,"TOPLEFT",NameX,NameYStat) 
-		StatNameFS:SetFont(UNIT_NAME_FONT, DCS_FONT_SIZE, "THINOUTLINE")
+		StatNameFS:SetFont(DCS_UNIT_NAME_FONT, DCS_FONT_SIZE, "THINOUTLINE")
 		StatNameFS:SetJustifyH("LEFT")
 		StatNameFS:SetFormattedText("")
 
 		StatValueFS = FrameParent:CreateFontString("FontString","OVERLAY","GameTooltipText") 
 		StatValueFS:SetPoint("TOPRIGHT",FrameParent,"TOPRIGHT",ValueX,NameYStat) 
-		StatValueFS:SetFont(STANDARD_TEXT_FONT, ValueFont, "THINOUTLINE")
+		StatValueFS:SetFont(DCS_STANDARD_TEXT_FONT, ValueFont, "THINOUTLINE")
 		StatValueFS:SetJustifyH("RIGHT")
 		StatValueFS:SetFormattedText("")
 		

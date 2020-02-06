@@ -229,6 +229,15 @@ local oneTimeFixes = {
 
         p.runOnce.autoconvertPSCDsToCBs_20190805 = nil -- repeat as needed.
     end,
+
+    cleanupAnyPriorityVersionTypoes_20200124 = function ( p )
+        for _, pack in pairs( p.packs ) do
+            if pack.date    and pack.date    > 99999999 then pack.date    = 0 end
+            if pack.version and pack.version > 99999999 then pack.version = 0 end
+        end
+
+        p.runOnce.cleanupAnyPriorityVersionTypoes_20200124 = nil -- repeat as needed.
+    end,
 }
 
 
@@ -437,6 +446,9 @@ local actionTemplate = {
     line_cd = 0,
     moving = 0,
     sync = "",
+
+    use_while_casting = 0,
+    use_off_gcd = 0,
 
     wait_on_ready = 0, -- NYI
 
@@ -4340,7 +4352,9 @@ do
 
     local toggleToNumber = {
         for_next = true,
-        cycle_targets = true,        
+        cycle_targets = true,
+        use_off_gcd = true,
+        use_while_casting = true,
     }
 
 
@@ -4416,6 +4430,14 @@ do
 
         if option == "line_cd" and not val then
             data.line_cd = nil
+        end
+
+        if option == "use_off_gcd" and not val then
+            data.use_off_gcd = nil
+        end
+
+        if option == "use_while_casting" and not val then
+            data.use_while_casting = nil
         end
 
         if option == "action" then
@@ -5969,6 +5991,35 @@ do
                                                     end,
                                                 },
 
+                                                modAsyncUsage = {
+                                                    type = "group",
+                                                    inline = true,
+                                                    name = "",
+                                                    order = 22.1,
+                                                    args = {
+                                                        use_off_gcd = {
+                                                            type = "toggle",
+                                                            name = "Use Off Global Cooldown",
+                                                            desc = "If checked, this entry can be checked even if the global cooldown (GCD) is active.",
+                                                            order = 1,
+                                                            width = 1.5,
+                                                        },
+                                                        use_while_casting = {
+                                                            type = "toggle",
+                                                            name = "Use While Casting",
+                                                            desc = "If checked, this entry can be checked even if the global cooldown (GCD) is active.",
+                                                            order = 2,
+                                                            width = 1.5
+                                                        }
+                                                    },
+                                                    hidden = function ()
+                                                        local e = GetListEntry( pack )
+                                                        local ability = e.action and class.abilities[ e.action ]
+
+                                                        return not packControl.showModifiers or ( not ability or ( ability.id < 0 and ability.id > -100 ) )
+                                                    end,                                                    
+                                                },
+
                                                 modCooldown = {
                                                     type = "group",
                                                     inline = true,
@@ -7238,8 +7289,8 @@ function Hekili:GenerateProfile()
     local traits
     for k, v in orderedPairs( s.azerite ) do
         if v.rank > 0 then
-            if traits then traits = format( "%s\n    %s=%d", traits, k, v.rank )
-            else traits = format( "%s=%d", k, v.rank ) end
+            if traits then traits = format( "%s\n    %s = %d", traits, k, v.rank )
+            else traits = format( "%s = %d", k, v.rank ) end
         end
     end
 
@@ -7248,10 +7299,10 @@ function Hekili:GenerateProfile()
 
     for k, v in orderedPairs( s.essence ) do
         if v.rank > 0 then
-            if v.major then major = format( "[%s]=%d", k, v.rank )
+            if v.major then major = format( "[%s] = %d", k, v.rank )
             else
-                if minors then minors = format( "%s, %s=%d", minors, k, v.rank )
-                else minors = format( "%s=%d", k, v.rank ) end
+                if minors then minors = format( "%s, %s = %d", minors, k, v.rank )
+                else minors = format( "%s = %d", k, v.rank ) end
             end
         end
     end
@@ -7260,8 +7311,8 @@ function Hekili:GenerateProfile()
     local sets
     for k, v in orderedPairs( class.gear ) do
         if s.set_bonus[ k ] > 0 then
-            if sets then sets = format( "%s\n    %s=%d", sets, k, s.set_bonus[k] )
-            else sets = format( "%s=%d", k, s.set_bonus[k] ) end
+            if sets then sets = format( "%s\n    %s = %d", sets, k, s.set_bonus[k] )
+            else sets = format( "%s = %d", k, s.set_bonus[k] ) end
         end
     end
 
@@ -7269,12 +7320,42 @@ function Hekili:GenerateProfile()
     for k, v in orderedPairs( state.set_bonus ) do
         if v > 0 then
             if type(k) == 'string' then
-            if gear then gear = format( "%s\n    %s=%d", gear, k, v )
-            else gear = format( "    %s=%d", k, v ) end
+            if gear then gear = format( "%s\n    %s = %d", gear, k, v )
+            else gear = format( "%s = %d", k, v ) end
             elseif type(k) == 'number' then
                 if items then items = format( "%s, %d", items, k )
                 else items = tostring(k) end
             end
+        end
+    end
+
+    local corruptions
+    for k, v in orderedPairs( state.corruptions ) do
+        if k ~= "no_trait" and v.rank > 0 then
+            if corruptions then corruptions = format( "%s\n    %s = %d", corruptions, k, v.rank )
+            else corruptions = format( "%s = %d", k, v.rank ) end
+        end
+    end
+
+    local settings
+    for k, v in orderedPairs( state.settings.spec ) do        
+        if type( v ) ~= "table" then
+            if settings then settings = format( "%s\n    %s = %s", settings, k, tostring( v ) )
+            else settings = format( "%s = %s", k, tostring( v ) ) end
+        end
+    end
+    for k, v in orderedPairs( state.settings.spec.settings ) do
+        if type( v ) ~= "table" then
+            if settings then settings = format( "%s\n    %s = %s", settings, k, tostring( v ) )
+            else settings = format( "%s = %s", k, tostring( v ) ) end
+        end
+    end
+
+    local toggles
+    for k, v in orderedPairs( self.DB.profile.toggles ) do
+        if type( v ) == "table" and rawget( v, "value" ) ~= nil then
+            if toggles then toggles = format( "%s\n    %s = %s", toggles, k, tostring( v.value ) )
+            else toggles = format( "%s = %s", k, tostring( v.value ) ) end
         end
     end
 
@@ -7287,7 +7368,10 @@ function Hekili:GenerateProfile()
         "essences: %s\n\n" ..
         "sets/legendaries/artifacts: %s\n\n" ..
         "gear: %s\n\n" ..
-        "itemIDs: %s",
+        "corruptions: %s\n\n" ..
+        "itemIDs: %s\n\n" ..
+        "settings: %s\n\n" ..
+        "toggles: %s\n",
         Hekili.Version or "no info",
         UnitLevel( 'player' ) or 0, UnitEffectiveLevel( 'player' ) or 0,
         class.file or "NONE",
@@ -7297,7 +7381,10 @@ function Hekili:GenerateProfile()
         essences or "none",
         sets or "none",
         gear or "none",
-        items or "none" )
+        corruptions or "none",
+        items or "none",
+        settings or "none",
+        toggles or "none" )
 end
 
 
@@ -7530,10 +7617,10 @@ function Hekili:GetOptions()
                             local display = snapshots.display
                             local snap = display and snapshots.snap[ display ]
 
-                            return snap and ns.snapshots[ display ][ snap ]
+                            return snap and ( "Click here and press CTRL+A, CTRL+C to copy the snapshot.\n\n" .. ns.snapshots[ display ][ snap ] )
                         end,
                         disabled = false,
-                        multiline = 25,
+                        -- multiline = 25,
                         width = "full",
                     }
                 }
@@ -8678,6 +8765,12 @@ local function Sanitize( segment, i, line, warnings )
         table.insert( warnings, "Line " .. line .. ": Converted 'target.1.time_to_die' to 'time_to_die' (" .. times .."x)." )
     end
 
+    -- target.time_to_pct_XX.remains is redundant, Monks.
+    i, times = i:gsub( "time_to_pct_(%d+)%.remains", "time_to_pct_%1" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'time_to_pct_XX.remains' to 'time_to_pct_XX' (" .. times .. "x)." )
+    end
+
     i, times = i:gsub( "trinket%.([%w_]+)%.cooldown", "cooldown.%1" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'trinket.X.cooldown' to 'cooldown.X' (" .. times .. "x)." )
@@ -8968,6 +9061,9 @@ do
 
             if result.for_next then result.for_next = tonumber( result.for_next ) end
             if result.cycle_targets then result.cycle_targets = tonumber( result.cycle_targets ) end
+
+            if result.use_off_gcd then result.use_off_gcd = tonumber( result.use_off_gcd ) end
+            if result.use_while_casting then result.use_while_casting = tonumber( result.use_while_casting ) end
 
             if result.target_if and not result.criteria then
                 result.criteria = result.target_if
