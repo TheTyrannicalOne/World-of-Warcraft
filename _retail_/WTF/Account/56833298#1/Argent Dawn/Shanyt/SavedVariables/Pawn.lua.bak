@@ -3,19 +3,19 @@ PawnOptions = {
 	["LastVersion"] = 2.032,
 	["ItemLevels"] = {
 		{
-			["ID"] = 157897,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:157897::::::::120:71::28:4:1607:4786:6264:4775:::|h[Bone-Fetished Faceguard]|h|r",
+			["ID"] = 173836,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:173836::::::::120:71::36:4:1487:4786:6502:4775:::|h[Malignant Leviathan's Helm]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 481,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1618:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 485,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1622:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 158028,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:158028::::::::120:71::27:4:1607:4785:6259:4775:::|h[Bleakweald Pauldrons]|h|r",
+			["ID"] = 157932,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:157932::::::::120:71::28:4:1622:4786:6503:4775:::|h[Pauldrons of Rezan's Bladeguard]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -24,9 +24,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:157958::::::::120:71::28:4:1622:4786:6501:4775:::|h[Dunecrawler Chestplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 157933,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:157933::::::::120:71::26:6:4803:40:6516:6515:1607:4785:::|h[Greatbelt of Rezan's Bladeguard]|h|r",
+			["ID"] = 158029,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:158029::::::::120:71::27:5:4803:6516:6513:1612:4785:::|h[Bleakweald Waistguard]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 171497,
@@ -39,9 +39,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165489::::::::120:71::23:4:5845:6516:1577:4786:::|h[Deathguard's Sabatons]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 158030,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:158030::::::::120:71::27:5:4803:6516:6515:1612:4785:::|h[Bleakweald Vambraces]|h|r",
+			["ID"] = 174956,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:174956::::::::120:71::29:6:6540:6515:6578:6579:4803:6513:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 157928,
@@ -67,10 +67,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158162::::::::120:71::27:4:4803:6515:1612:4785:::|h[Pearl Diver's Compass]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 165665,
-			["Level"] = 415,
+			["ID"] = 158153,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:165665::::::::120:71::26:4:4803:6515:1607:4785:::|h[Ritual Feather of Unng Ak]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158153::::::::120:71::27:4:4803:6515:1612:4785:::|h[Gilded Loa Figurine]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166668,
@@ -78,9 +78,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:166668::::::::120:71::27:3:4803:1612:4785:::|h[Battalion Veteran's Greatcloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158130,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:158130::::::::120:71::28:3:4803:1597:4786:::|h[Zocalo Pummeler]|h|r",
+			["ID"] = 158121,
+			["Level"] = 410,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff0070dd|Hitem:158121::::::::120:71::25:5:4803:6516:6513:1602:4785:::|h[Zocalo Crusher]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 117378,

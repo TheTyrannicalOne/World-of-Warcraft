@@ -11,8 +11,8 @@ PasteDB = {
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
@@ -25,7 +25,7 @@ PasteDB = {
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -59,10 +59,10 @@ PasteDB = {
 		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Sinh - Dalaran"] = {
+		["Shathiel - Darkspear"] = {
 			["loaded"] = true,
 		},
-		["Gangus - Runetotem"] = {
+		["Sinh - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Thorinbane - Dalaran"] = {
@@ -101,7 +101,7 @@ PasteDB = {
 		["Migimong - Runetotem"] = {
 			["loaded"] = true,
 		},
-		["Shathiel - Darkspear"] = {
+		["Gangus - Runetotem"] = {
 			["loaded"] = true,
 		},
 		["Narisaric - Dalaran"] = {

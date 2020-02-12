@@ -134,6 +134,9 @@ end
 
 
 function ns.StartConfiguration( external )
+    if Hekili.NewSpellInfo then Hekili:EmbedAbilityOptions() end
+    if Hekili.NewItemInfo  then Hekili:EmbedItemOptions()    end
+
     Hekili.Config = true
 
     local scaleFactor = Hekili:GetScale()
@@ -217,8 +220,8 @@ function ns.StartConfiguration( external )
                 v.Backdrop:SetPoint( "CENTER", v, "CENTER" )
             end
 
-            v.Backdrop:SetFrameStrata("MEDIUM")
-            v.Backdrop:SetFrameLevel( 5 )
+            v.Backdrop:SetFrameStrata( v:GetFrameStrata() )
+            v.Backdrop:SetFrameLevel( v:GetFrameLevel() + 1 )
 
             v.Backdrop.moveObj = v
     
@@ -256,7 +259,7 @@ function ns.StartConfiguration( external )
                     GameTooltip:Show()
                 end
             end )
-            v:SetScript( "OnLeave", function(self)
+            v.Backdrop:SetScript( "OnLeave", function( self )
                 GameTooltip:Hide()
             end )
             v:Show()
@@ -1409,7 +1412,7 @@ do
         d:SetSize( scale * ( border + ( conf.primaryWidth or 50 ) ), scale * ( border + ( conf.primaryHeight or 50 ) ) )
         d:SetPoint( "CENTER", nil, "CENTER", conf.x or 0, conf.y or -225 )
         d:SetFrameStrata( conf.frameStrata or "MEDIUM" )
-        d:SetFrameLevel( conf.frameLevel or ( 10 + d.index ) )
+        d:SetFrameLevel( conf.frameLevel or ( 10 * d.index ) )
         d:SetClampedToScreen( true )
         d:EnableMouse( false )
         d:SetMovable( true )

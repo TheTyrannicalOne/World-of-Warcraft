@@ -1733,6 +1733,14 @@ end
 -- External --
 --------------
 
+function KT_WorldQuestPOIButton_OnClick(self)
+	local questID = self.questID
+
+	PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+	SetSuperTrackedQuestID(questID)
+	WorldMapPing_StartPingQuest(questID)
+end
+
 function KT:SetSize()
 	local height = 33
 	local mod = 0

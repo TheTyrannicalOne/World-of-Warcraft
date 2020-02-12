@@ -1,14 +1,15 @@
-# [2.16.3](https://github.com/WeakAuras/WeakAuras2/tree/2.16.3) (2020-02-05)
+# [2.16.5](https://github.com/WeakAuras/WeakAuras2/tree/2.16.5) (2020-02-07)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.16.2...2.16.3)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.16.4...2.16.5)
 
 ## Highlights
 
- Force enable Archive add-on because some add-on managers like to disable it by default 
+ - bug fix for classic
+- this is not the time for another boston tea party 
 
 ## Commits
 
-Stanzilla (1):
+mrbuds (1):
 
-- force enable WeakAurasArchive
+- classic: fix event for character points changed
 

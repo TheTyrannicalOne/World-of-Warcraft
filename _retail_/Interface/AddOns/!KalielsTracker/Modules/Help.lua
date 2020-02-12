@@ -197,26 +197,11 @@ local function SetupTutorials()
 			shineRight = 11,
 		},
 		{	-- 11
-			text = cTitle.."         What's NEW in version |cffffffff3.2.0|r\n\n"..
-					"- FIXED - ticket #403 - Assault quests error\n"..
-					"- FIXED - ticket #393 - Quest mouseover inside the tracker switch quest"..
-					offs.."description for addons \"Classic Quest Log\" or \"Quest Guru\"\n"..
-					"- FIXED - TomTom - error when add World Quest waypoint\n"..
-					"- FIXED - Quests - header does not show number of quests\n"..
-					"- FIXED - does not activate POI button when Quest Auto zone filter is active\n"..
-					"- ADDED - Filters - support for BfA zones (Nazjatar)\n"..
-					"- ADDED - Filters - Quests - sorting by proximity\n"..
-					"- UPDATED - code for WoW 8.3.0\n"..
-					"- UPDATED - Wowhead URL - show it inside Zone bonus quest context menu\n"..
-					"- UPDATED - Tooltip - show Spell rewards\n"..
-					"- UPDATED - Tooltip - red color for not usable items\n"..
-					"- UPDATED - Tooltip - War Mode Bonus for Q / WQ\n"..
-					"- UPDATED - Addon support - Masque 8.2.8\n"..
-					"- UPDATED - Addon support - PetTracker 8.3.0\n"..
-					"- UPDATED - Addon support - TomTom v80300-1.1.0\n"..
-					"- UPDATED - Addon support - ElvUI 11.33, Tukui 18.28, RealUI 2.1.4,"..
-					offs.."SyncUI 8.2.5.2, SpartanUI 5.2.14\n"..
-					"- UPDATED - Libs\n\n"..
+			text = cTitle.."         What's NEW in version |cffffffff3.2.1|r\n\n"..
+					"- FIXED - TomTom - support for BfA zones (Nazjatar)\n"..
+					"- IMPROVED - TomTom - support for Q / WQ\n"..
+					"- UPDATED - Addon support - TomTom v80300-1.1.1\n"..
+					"- UPDATED - Addon support - ElvUI 11.36, SpartanUI 5.3.0\n\n"..
 
                     cTitle.."WoW 8.3.0 - Known issues w/o solution|r\n"..
                     "- Clicking on tracked quests or achievements has no response during combat.\n"..

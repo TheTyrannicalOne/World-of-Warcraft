@@ -139,8 +139,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Tynkster"] = {
-			["faction"] = "Alliance",
 			["class"] = "HUNTER",
+			["faction"] = "Alliance",
 		},
 		["Tyriinid"] = {
 			["class"] = "MAGE",
@@ -157,13 +157,17 @@ MasterPlanAG = {
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["class"] = "DRUID",
 			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Darkspear"] = {
 		["Shathiel"] = {
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
 			["faction"] = "Alliance",
 		},
 		["Brewnheimer"] = {
@@ -173,10 +177,6 @@ MasterPlanAG = {
 		["Dialdaas"] = {
 			["faction"] = "Alliance",
 			["class"] = "PALADIN",
-		},
-		["Serbitechna"] = {
-			["class"] = "HUNTER",
-			["faction"] = "Alliance",
 		},
 	},
 	["Sargeras"] = {
@@ -191,36 +191,33 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["curOil"] = 80370,
+			["curOil"] = 80655,
 			["summary"] = {
-				["lastOilTime"] = 1580783877,
+				["lastOilTime"] = 1581058319,
 				["tt2"] = 1580004064,
 				["tt3"] = 1580783724,
 				["ti1"] = 118531,
-				["tt1"] = 1579914104,
+				["tt1"] = 1581121485,
 				["ti3"] = 127855,
 				["inProgress"] = {
-					[335] = 1580819805,
-					[276] = 1580819865,
-					[184] = 1580785618,
-					[398] = 1580812596,
-					[310] = 1580794629,
-					[130] = 1580798243,
-					[190] = 1580786512,
-					[128] = 1580798238,
-					[192] = 1580787408,
-					[381] = 1580819793,
-					[709] = 1580798275,
-					[175] = 1580786515,
-					[745] = 1580848677,
+					[485] = 1581135086,
+					[176] = 1581123343,
+					[397] = 1581156712,
+					[325] = 1581135037,
+					[667] = 1581135073,
+					[481] = 1581135091,
+					[670] = 1581135062,
+					[125] = 1581135082,
+					[540] = 1581123117,
+					[745] = 1581123119,
 				},
 				["ti2"] = 122486,
 			},
 			["faction"] = "Horde",
 			["cacheSize"] = 1000,
 			["class"] = "WARRIOR",
-			["curRes"] = 7804,
-			["lastCacheTime"] = 1580783763,
+			["curRes"] = 6502,
+			["lastCacheTime"] = 1581120586,
 		},
 	},
 }

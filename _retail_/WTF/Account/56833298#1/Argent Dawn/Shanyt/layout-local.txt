@@ -121,8 +121,8 @@ H: 513
 Frame: RematchDialog
 FrameLevel: 1
 Anchor: CENTER
-X: 2
-Y: -3
+X: 9
+Y: -18
 W: 420
 H: 200
 Frame: TooltipMover
@@ -135,7 +135,7 @@ H: 20
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: CENTER
-X: 0
+X: 3
 Y: 0
 W: 300
 H: 300
@@ -160,13 +160,6 @@ X: 209
 Y: -172
 W: 200
 H: 50
-Frame: ScriptErrorsFrame
-FrameLevel: 1
-Anchor: TOP
-X: 2
-Y: -98
-W: 500
-H: 300
 Frame: VehicleSeatIndicator
 FrameLevel: 1
 Anchor: BOTTOM
@@ -174,3 +167,10 @@ X: -196
 Y: 39
 W: 88
 H: 88
+Frame: ScriptErrorsFrame
+FrameLevel: 1
+Anchor: TOP
+X: 2
+Y: -98
+W: 500
+H: 300

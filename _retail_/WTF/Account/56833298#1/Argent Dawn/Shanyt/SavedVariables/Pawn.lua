@@ -6,14 +6,14 @@ PawnOptions = {
 	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 157897,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:157897::::::::120:71::28:4:1607:4786:6264:4775:::|h[Bone-Fetished Faceguard]|h|r",
+			["ID"] = 173836,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:173836::::::::120:71::36:4:1487:4786:6502:4775:::|h[Malignant Leviathan's Helm]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 481,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1618:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 485,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1622:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 157932,
@@ -27,14 +27,14 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:157958::::::::120:71::28:4:1622:4786:6501:4775:::|h[Dunecrawler Chestplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 157933,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:157933::::::::120:71::26:6:4803:40:6516:6515:1607:4785:::|h[Greatbelt of Rezan's Bladeguard]|h|r",
+			["ID"] = 173821,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:173821::::::::120:71::36:7:6412:4803:42:6513:6516:1487:4786:::|h[Malignant Leviathan's Clasp]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 171497,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:171497::::::::120:71:512::1:6355:120:::|h[Legguards of Endless Rage]|h|r",
+			["ID"] = 173486,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:173486::::::::120:71::28:6:6412:4803:6515:6516:1492:4786:::|h[Malignant Leviathan's Legplates]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 165489,
@@ -52,16 +52,16 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:157928::::::::120:71::26:5:4803:6516:6515:1607:4785:::|h[Battlegloves of Rezan's Bladeguard]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 165679,
-			["Level"] = 425,
+			["ID"] = 174268,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff0070dd|Hitem:165679::::::::120:71::28:5:4803:6516:6515:1617:4785:::|h[Ornate Elun'dris Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174268::::::::120:71::3:5:4822:6516:6515:1487:4786:::|h[Loop of Abhorrent Celerity]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 158152,
-			["Level"] = 420,
+			["ID"] = 165679,
+			["Level"] = 425,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:158152::::::::120:71::27:5:4803:6516:6515:1612:4785:::|h[Golden Empire Signet]|h|r",
+			["Link"] = "|cff0070dd|Hitem:165679::::::::120:71::28:5:4803:6516:6515:1617:4785:::|h[Ornate Elun'dris Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 158162,
@@ -70,20 +70,21 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158162::::::::120:71::27:4:4803:6515:1612:4785:::|h[Pearl Diver's Compass]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 165665,
-			["Level"] = 415,
+			["ID"] = 158153,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:165665::::::::120:71::26:4:4803:6515:1607:4785:::|h[Ritual Feather of Unng Ak]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158153::::::::120:71::27:4:4803:6515:1612:4785:::|h[Gilded Loa Figurine]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 166668,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:166668::::::::120:71::27:3:4803:1612:4785:::|h[Battalion Veteran's Greatcloak]|h|r",
+			["ID"] = 169223,
+			["Level"] = 470,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:71::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158130,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:158130::::::::120:71::28:3:4803:1597:4786:::|h[Zocalo Pummeler]|h|r",
+			["ID"] = 158121,
+			["Level"] = 410,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff0070dd|Hitem:158121::::::::120:71::25:5:4803:6516:6513:1602:4785:::|h[Zocalo Crusher]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 117378,

@@ -1,5 +1,5 @@
-## v4.9.22 Changes
+## v4.9.25 Changes
 
-* [Retail] Ignoring errors from BugGrabber for now
+* [Retail] Some additional scanning optimizations for filtering by item level
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

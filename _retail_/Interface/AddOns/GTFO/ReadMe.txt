@@ -1480,4 +1480,9 @@ Change Log:
 * Added Battle for Azeroth spells (world)
 * Added BFA spells for Ny'alotha, the Waking City
 
+4.53
+* Fixed a bug with "ignoreApplication" not respecting multiple dose and refresh events
+* Added Battle for Azeroth spells (world)
+* Added BFA spells for Ny'alotha, the Waking City
+* Updated spells for Love is in the Air
 

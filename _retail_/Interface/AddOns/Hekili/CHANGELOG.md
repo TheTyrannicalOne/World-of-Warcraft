@@ -1,6 +1,6 @@
 # Hekili
 
-## [v8.3.0-04-02](https://github.com/Hekili/hekili/tree/v8.3.0-04-02) (2020-02-06)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.3.0-04-01...v8.3.0-04-02)
+## [v8.3.0-04-08](https://github.com/Hekili/hekili/tree/v8.3.0-04-08) (2020-02-08)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.3.0-04-07...v8.3.0-04-08)
 
-- Fix cast history/handling of channeled spells (fix Windwalker bug report).  
+- Display movers even fixeder.  
