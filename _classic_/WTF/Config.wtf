@@ -64,7 +64,8 @@ SET graphicsSSAO "5"
 SET graphicsTextureFiltering "6"
 SET graphicsEnvironmentDetail "10"
 
-SET gxWindowedResolution "2560x1440"
+SET gxWindowedResolution "1920x1080"
+
 
 
 

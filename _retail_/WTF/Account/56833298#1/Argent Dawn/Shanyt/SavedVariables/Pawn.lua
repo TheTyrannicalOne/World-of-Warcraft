@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.032,
+	["LastVersion"] = 2.0321,
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
@@ -12,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 485,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1622:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 487,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1624:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 157932,
@@ -47,9 +47,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174956::::::::120:71::29:6:6540:6515:6578:6579:4803:6513:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 157928,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:157928::::::::120:71::26:5:4803:6516:6515:1607:4785:::|h[Battlegloves of Rezan's Bladeguard]|h|r",
+			["ID"] = 173510,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:173510::::::::120:71::29:8:6412:4803:6515:6578:6579:6544:1497:4786:::|h[Malignant Leviathan's Handguards]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 174268,
