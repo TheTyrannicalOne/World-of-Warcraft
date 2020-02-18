@@ -15,6 +15,7 @@ local Event = TSM.Include("Util.Event")
 local Table = TSM.Include("Util.Table")
 local Future = TSM.Include("Util.Future")
 local Vararg = TSM.Include("Util.Vararg")
+local Wow = TSM.Include("Util.Wow")
 local APIWrapper = LibTSMClass.DefineClass("APIWrapper")
 local private = {
 	wrappers = {},
@@ -55,14 +56,17 @@ local API_EVENT_INFO = {
 	},
 	RequestMoreBrowseResults = {
 		AUCTION_HOUSE_BROWSE_RESULTS_ADDED = { result = true },
+		["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_AUCTION_DATABASE_ERROR] = { timeoutChange = 1 },
 	},
 	SendSearchQuery = {
 		COMMODITY_SEARCH_RESULTS_UPDATED = { result = true, eventArgIndex = 1, apiArgIndex = 1, apiArgKey = "itemID" },
 		ITEM_SEARCH_RESULTS_UPDATED = { result = true, eventArgIndex = 1, apiArgIndex = 1 },
+		["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_AUCTION_DATABASE_ERROR] = { timeoutChange = 1 },
 	},
 	SendSellSearchQuery = {
 		COMMODITY_SEARCH_RESULTS_UPDATED = { result = true, eventArgIndex = 1, apiArgIndex = 1, apiArgKey = "itemID" },
 		ITEM_SEARCH_RESULTS_UPDATED = { result = true, eventArgIndex = 1, apiArgIndex = 1 },
+		["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_AUCTION_DATABASE_ERROR] = { timeoutChange = 1 },
 	},
 	RequestMoreCommoditySearchResults = {
 		COMMODITY_SEARCH_RESULTS_ADDED = { result = true },
@@ -453,6 +457,11 @@ function APIWrapper._ValidateEvent(self, eventName, ...)
 		info = API_EVENT_INFO[self._name][eventName]
 	end
 	assert(info)
+	if info.timeoutChange then
+		Delay.Cancel(self._name.."_TIMEOUT")
+		Delay.AfterTime(self._name.."_TIMEOUT", info.timeoutChange, self._timeoutWrapper)
+		return false
+	end
 	local eventIsValid, result = true, info.result
 	if info.rawFilterFunc then
 		if not info.rawFilterFunc(self._args, ...) then
@@ -558,42 +567,31 @@ function private.SortsToStr(sorts)
 	return result
 end
 
+function private.ArgToStr(arg)
+	if type(arg) == "table" then
+		local count = Table.Count(arg)
+		if arg.itemID and arg.itemSuffix then
+			return private.ItemKeyToStr(arg)
+		elseif arg.searchString then
+			return format("{searchString=\"%s\", sorts=%s, minLevel=%s, maxLevel=%s, filters=%s, itemClassFilters=%s}", arg.searchString, private.SortsToStr(arg.sorts), private.ArgToStr(arg.minLevel), private.ArgToStr(arg.maxLevel), private.ArgToStr(arg.filters), private.ArgToStr(arg.itemClassFilters))
+		elseif arg.IsBagAndSlot then
+			return format("{<ItemLocation:(%d,%d)>}", arg:GetBagAndSlot())
+		elseif count == 0 then
+			return "{}"
+		elseif count == #arg then
+			return format("{<%d items>}", count)
+		else
+			return "{...}"
+		end
+	else
+		return tostring(arg)
+	end
+end
+
 function private.ArgsToStr(...)
 	assert(#private.argsTemp == 0)
 	for _, arg in Vararg.Iterator(...) do
-		if type(arg) == "table" then
-			local count = Table.Count(arg)
-			if arg.itemID and arg.itemSuffix then
-				wipe(private.itemKeyPartsTemp)
-				if arg.itemID ~= 0 then
-					tinsert(private.itemKeyPartsTemp, "itemID="..arg.itemID)
-				end
-				if arg.itemLevel ~= 0 then
-					tinsert(private.itemKeyPartsTemp, "itemLevel="..arg.itemLevel)
-				end
-				if arg.itemSuffix ~= 0 then
-					tinsert(private.itemKeyPartsTemp, "itemSuffix="..arg.itemSuffix)
-				end
-				if arg.battlePetSpeciesID ~= 0 then
-					tinsert(private.itemKeyPartsTemp, "battlePetSpeciesID="..arg.battlePetSpeciesID)
-				end
-				local itemKeyStr = format("{%s}", table.concat(private.itemKeyPartsTemp, ","))
-				wipe(private.itemKeyPartsTemp)
-				tinsert(private.argsTemp, itemKeyStr)
-			elseif arg.searchString then
-				tinsert(private.argsTemp, format("{searchString=\"%s\", sorts=%s, minLevel=%s, maxLevel=%s, filters=%s, itemClassFilters=%s}", arg.searchString, private.SortsToStr(arg.sorts), arg.minLevel or "nil", arg.maxLevel or "nil", arg.filters and format("{<%d items>}", #arg.filters) or "nil", arg.itemClassFilters and format("{<%d items>}", #arg.itemClassFilters) or "nil"))
-			elseif arg.IsBagAndSlot then
-				tinsert(private.argsTemp, format("{<ItemLocation:(%d,%d)>}", arg:GetBagAndSlot()))
-			elseif count == 0 then
-				tinsert(private.argsTemp, "{}")
-			elseif count == #arg then
-				tinsert(private.argsTemp, format("{<%d items>}", count))
-			else
-				tinsert(private.argsTemp, "{...}")
-			end
-		else
-			tinsert(private.argsTemp, tostring(arg))
-		end
+		tinsert(private.argsTemp, private.ArgToStr(arg))
 	end
 	local result = table.concat(private.argsTemp, ",")
 	wipe(private.argsTemp)
@@ -660,6 +658,6 @@ function private.CheckClientBuild()
 	if tonumber((select(2, GetBuildInfo()))) >= 33237 then
 		return true
 	end
-	message("TSM requires a newer version of the WoW client to function propertly. Close WoW and update it through the Blizzard launcher.")
+	Wow.ShowBasicMessage("TSM requires a newer version of the WoW client to function propertly. Close WoW and update it through the Blizzard launcher.")
 	return false
 end

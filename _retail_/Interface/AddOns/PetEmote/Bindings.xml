@@ -1,0 +1,8 @@
+<Bindings>
+	<Binding name="RANDOMEMOTE" header="PETEMOTE" category="ADDONS">
+		PetEmote_DoRandomEmote()
+	</Binding>
+	<Binding name="TOGGLERANDOMEMOTES">
+		PetEmote_ToggleRandomEmotesOnOff()
+	</Binding>
+</Bindings>

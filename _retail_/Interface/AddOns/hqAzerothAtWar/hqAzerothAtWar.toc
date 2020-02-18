@@ -1,0 +1,11 @@
+## Interface: 80100
+## Title: Azeroth At War Achievments
+## Notes: Mark if mission required for Achievment
+## Author: evilWizard
+## Version: 0.6.3
+## LoadOnDemand: 1
+## DefaultState: disabled
+## Dependencies: Blizzard_GarrisonUI
+## LoadWith: RENovate,ChampionCommander,Blizzard_GarrisonUI
+
+hqAaW.lua

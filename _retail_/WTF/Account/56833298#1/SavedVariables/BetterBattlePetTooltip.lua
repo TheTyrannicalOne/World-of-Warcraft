@@ -1,0 +1,12 @@
+
+BBPTDB = {
+	["showBreed"] = false,
+	["colorTooltipBorder"] = true,
+	["compactLevel"] = true,
+	["showCount"] = false,
+	["showSource"] = true,
+	["showAll"] = false,
+	["showSourceOnlyMissing"] = false,
+	["showWildQuality"] = true,
+	["showLevel"] = true,
+}

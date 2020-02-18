@@ -1,0 +1,6 @@
+## Interface: 80200
+## Title: Random Hearth Toy
+## Author: Hemco
+## Version: 1.4.2
+
+RandomHearthToy.lua

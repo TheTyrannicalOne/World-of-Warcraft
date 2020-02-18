@@ -1486,3 +1486,10 @@ Change Log:
 * Added BFA spells for Ny'alotha, the Waking City
 * Updated spells for Love is in the Air
 
+4.54
+* Added support to ignore application alerts based on trivial level
+* Added Vanilla spells for Blackfathom Deep
+* Added WoD spells for Blackrock Foundry
+* Updated WoD spells for Highmaul (trival alert classifications)
+* Updated WoD spells for Blackrock Foundry (trival alert classifications)
+* Updated WoD spells for Hellfire Citadel (trival alert classifications)

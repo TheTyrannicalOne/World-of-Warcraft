@@ -1,0 +1,28 @@
+lightweight tag 7019ad5f3b4ecdfade0c8b9c49c49219ba614cee 7.2.0.1
+Author:	Ressy <resa1983@hotmail.com>
+Date:	Tue Mar 28 14:27:11 2017 -0400
+
+commit 7019ad5f3b4ecdfade0c8b9c49c49219ba614cee
+Author: Ressy <resa1983@hotmail.com>
+Date:   Tue Mar 28 14:27:11 2017 -0400
+
+    Bump ToC
+
+commit 1d3ac18a125fdf546cd6f50933986c9033fcf3eb
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sat Feb 25 10:18:56 2017 -0500
+
+    Fix expansion tags for Legion recipes
+
+commit 2a56e28a7af6e05573748b61350f89685948993e
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sat Feb 25 10:18:32 2017 -0500
+
+    Add Feathered Luffa
+
+commit 843277a4f2f5db1e017f488f240135013704f499
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sat Feb 25 10:18:16 2017 -0500
+
+    Remove Rank 2 Heavy Windwool Bandage
+

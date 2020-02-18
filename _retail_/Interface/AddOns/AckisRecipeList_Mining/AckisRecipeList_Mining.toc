@@ -1,0 +1,16 @@
+## Interface: 80205
+## Title: Ackis Recipe List: Mining
+## Notes: Mining data for Ackis Recipe List.
+## Author: Ackis, Pompy, Ressy, Torhal
+## Version: 8.2.5.1
+## X-Revision: 8a4c33e
+## X-Date: 2020-01-10T4:57:17Z
+## Dependencies: AckisRecipeList
+## LoadOnDemand: 1
+
+Core.lua
+Filters.lua
+MobDrops.lua
+Quests.lua
+Trainers.lua
+Recipes.lua

@@ -1,0 +1,12 @@
+tag aa9a1c04ded58646810a1314113d55ecba5df1b4 8.2.5.1
+Author:	Ressy <resa1983@hotmail.com>
+Date:	Thu Jan 9 23:57:51 2020 -0500
+
+8.2.5.1 update
+
+commit 8a4c33ee30c22b3aa63a232d4c4c5d91e5f76d1d
+Author: Ressy <resa1983@hotmail.com>
+Date:   Thu Jan 9 23:57:17 2020 -0500
+
+    Verification of db - went and scanned tons of vendors and trainers
+

@@ -1,0 +1,11 @@
+lightweight tag dc9666870b84aa3fd285ce7f86092570de7e7c2a 2.7.1
+Author:	exochron <exochron@gamerstate.de>
+Date:	Sat Jan 25 13:18:35 2020 +0100
+
+commit dc9666870b84aa3fd285ce7f86092570de7e7c2a
+Author: exochron <exochron@gamerstate.de>
+Date:   Sat Jan 25 13:18:35 2020 +0100
+
+    2.7.1
+    - db: added Squeakers and Rajani Warserpent
+

@@ -3,6 +3,7 @@ ImmersionSetup = {
 	["strata"] = "MEDIUM",
 	["scale"] = 1,
 	["elementscale"] = 1,
+	["enablenumbers"] = true,
 	["disableprogression"] = false,
 	["titleoffsetY"] = 12.50018310546875,
 	["hideui"] = false,

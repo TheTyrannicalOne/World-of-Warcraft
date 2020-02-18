@@ -1,0 +1,18 @@
+## Interface: 80300
+## Title: Ackis Recipe List: Alchemy
+## Notes: Alchemy data for Ackis Recipe List.
+## Author: Ackis, Pompy, Ressy, Torhal
+## Version: 8.3.0.1
+## X-Revision: 078f3a8
+## X-Date: 2020-01-14T22:34:41Z
+## Dependencies: AckisRecipeList
+## LoadOnDemand: 1
+
+Core.lua
+Filters.lua
+Discoveries.lua
+MobDrops.lua
+Quests.lua
+Trainers.lua
+Vendors.lua
+Recipes.lua

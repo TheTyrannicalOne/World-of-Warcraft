@@ -7,8 +7,8 @@ WoWDBProfilerData = {
 		["Goramor - Runetotem"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Shaewong - Dalaran"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
 		["Gangus - Runetotem"] = "Default",
+		["Sinh - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
@@ -21,12 +21,12 @@ WoWDBProfilerData = {
 		["Claugh - Runetotem"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
 		["Migimong - Runetotem"] = "Default",
-		["Sinh - Dalaran"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 	},
 	["region"] = "US",
 	["version"] = 19,
-	["build_num"] = 33237,
+	["build_num"] = 33369,
 	["global"] = {
 		["items"] = {
 			[122252] = {
@@ -188,9 +188,6 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 27,
 				["upgrade_value"] = 18,
 				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["4770"] = true,
-				},
 				["durability"] = 35,
 				["unique_id"] = 0,
 			},
@@ -200,9 +197,29 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["upgrade_value"] = 0,
 			},
-			[122255] = {
+			[131204] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 22,
+				["suffix_id"] = 0,
+				["durability"] = 25,
+				["unique_id"] = 0,
+			},
+			[160252] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[140773] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[159337] = {
+				["instance_difficulty_id"] = 19,
+				["upgrade_value"] = 117,
+				["durability"] = 50,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
@@ -216,33 +233,9 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[140773] = {
+			[122255] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[131204] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 22,
-				["suffix_id"] = 0,
-				["durability"] = 25,
-				["unique_id"] = 0,
-			},
-			[4816] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 75,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[159337] = {
-				["instance_difficulty_id"] = 19,
-				["upgrade_value"] = 117,
-				["durability"] = 50,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
@@ -259,9 +252,13 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[160252] = {
-				["instance_difficulty_id"] = 11,
+			[4816] = {
+				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
+				["durability"] = 75,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
@@ -280,7 +277,7 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["City of Ironforge:87"] = {
-							["3:332:648"] = true,
+							["3:330:650"] = true,
 							["3:328:652"] = true,
 						},
 					},
@@ -288,13 +285,13 @@ WoWDBProfilerData = {
 			},
 		},
 		["npcs"] = {
-			["54334"] = {
+			["88703"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[101260] = 2,
+							[71507] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -313,7 +310,7 @@ WoWDBProfilerData = {
 							["level_120"] = {
 								["locations"] = {
 									["Orgrimmar:85"] = {
-										["3:540:736"] = true,
+										["3:540:734"] = true,
 									},
 								},
 								["max_health"] = 130083,
@@ -322,6 +319,50 @@ WoWDBProfilerData = {
 					},
 				},
 				["reaction"] = "120:Horde:FRIENDLY",
+			},
+			["51346"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 34,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["44871"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["3296"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 10,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["44878"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
 			},
 			["8720"] = {
 				["is_pvp"] = true,
@@ -338,7 +379,7 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
 										["3:242:744"] = true,
-										["3:246:738"] = true,
+										["3:250:734"] = true,
 									},
 								},
 								["max_health"] = 5295,
@@ -348,18 +389,47 @@ WoWDBProfilerData = {
 				},
 				["class"] = "WARRIOR",
 			},
+			["44872"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["74228"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 3,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 		},
 		["quests"] = {
-			[51464] = {
+			[50602] = {
 			},
-			[40643] = {
+			[42420] = {
 			},
 			[51421] = {
 				["can_share"] = true,
 			},
 			[31891] = {
 			},
-			[51432] = {
+			[47105] = {
+				["can_share"] = true,
+			},
+			[56120] = {
+			},
+			[48639] = {
+			},
+			[43179] = {
 			},
 			[56044] = {
 			},
@@ -368,10 +438,10 @@ WoWDBProfilerData = {
 			},
 			[54185] = {
 			},
-			[53435] = {
-			},
-			[47105] = {
+			[53101] = {
 				["can_share"] = true,
+			},
+			[53435] = {
 			},
 			[44989] = {
 			},

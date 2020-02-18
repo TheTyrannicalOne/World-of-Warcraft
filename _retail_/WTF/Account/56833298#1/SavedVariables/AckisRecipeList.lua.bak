@@ -1,0 +1,18 @@
+
+ARLDB2 = {
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+	},
+	["global"] = {
+		["tradeskill"] = {
+			["Argent Dawn"] = {
+				["Shanyt"] = {
+				},
+			},
+		},
+	},
+	["profiles"] = {
+		["Shanyt - Argent Dawn"] = {
+		},
+	},
+}

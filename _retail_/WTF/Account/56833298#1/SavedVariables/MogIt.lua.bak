@@ -1,35 +1,138 @@
 
 MogItDB = {
+	["global"] = {
+		["version"] = "3.9.0",
+	},
 	["profileKeys"] = {
 		["Zerkin - Illidan"] = "Default",
-	},
-	["global"] = {
-		["version"] = "3.5.6",
+		["Milkd - Illidan"] = "Default",
+		["Aerionz - Illidan"] = "Default",
+		["Klitpounder - Illidan"] = "Default",
+		["Zerkinz - Illidan"] = "Default",
+		["Aerion - Illidan"] = "Default",
+		["Zerkinz - Sargeras"] = "Default",
+		["Xerkinz - Sargeras"] = "Default",
+		["Xerret - Illidan"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Recloos - Illidan"] = "Default",
+		["Bennyhin - Illidan"] = "Default",
+		["Xerkinz - Illidan"] = "Default",
+		["Xerkin - Illidan"] = "Default",
+		["Youngpoobs - Tanaris"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["previewProps"] = {
 				{
-					["y"] = 0,
+					["y"] = -82.5000915527344,
 					["h"] = 384.999938964844,
-					["x"] = 0,
+					["point"] = "TOP",
+					["w"] = 334.999908447266,
+					["x"] = -354.000396728516,
 				}, -- [1]
+				{
+					["y"] = -96.0000915527344,
+					["x"] = -115.000068664551,
+					["h"] = 384.999938964844,
+				}, -- [2]
+				{
+					["y"] = -3.28258756780997e-05,
+					["x"] = 0,
+					["h"] = 384.999938964844,
+				}, -- [3]
 			},
-			["x"] = -117.000152587891,
-			["point"] = "TOP",
-			["y"] = -24.000244140625,
+			["gridHeight"] = 399.999969482422,
+			["x"] = -1.000073075294495,
+			["slotLabels"] = {
+				["Waist"] = "Waist",
+				["Fist"] = "Fist Weapons",
+				["Tabard"] = "Tabard",
+				["Legs"] = "Legs",
+				["Back"] = "Back",
+				["Shirt"] = "Shirt",
+				["Dagger"] = "Daggers",
+				["Hands"] = "Hands",
+				["Gun"] = "Guns",
+				["Polearm"] = "Polearms",
+				["2H-sword"] = "Two-Handed Swords",
+				["2H-axe"] = "Two-Handed Axes",
+				["2H-mace"] = "Two-Handed Maces",
+				["1H-mace"] = "One-Handed Maces",
+				["Head"] = "Head",
+				["Holdable"] = "Held In Off-hand",
+				["ArtifactLegion"] = "Legion Artifacts",
+				["Staff"] = "Staves",
+				["Feet"] = "Feet",
+				["Chest"] = "Chest",
+				["1H-sword"] = "One-Handed Swords",
+				["Wrist"] = "Wrist",
+				["Crossbow"] = "Crossbows",
+				["1H-axe"] = "One-Handed Axes",
+				["Bow"] = "Bows",
+				["Shoulder"] = "Shoulder",
+				["Shield"] = "Shields",
+			},
+			["minimap"] = {
+				["minimapPos"] = 138.20513037848,
+			},
+			["y"] = 3.282587567809969e-05,
 		},
 	},
 }
 MogItWishlist = {
-	["global"] = {
-		["version"] = 60200,
-	},
 	["profileKeys"] = {
 		["Zerkin - Illidan"] = "Zerkin - Illidan",
+		["Milkd - Illidan"] = "Milkd - Illidan",
+		["Aerionz - Illidan"] = "Aerionz - Illidan",
+		["Klitpounder - Illidan"] = "Klitpounder - Illidan",
+		["Zerkinz - Illidan"] = "Zerkinz - Illidan",
+		["Aerion - Illidan"] = "Aerion - Illidan",
+		["Zerkinz - Sargeras"] = "Zerkinz - Sargeras",
+		["Xerkinz - Sargeras"] = "Xerkinz - Sargeras",
+		["Xerret - Illidan"] = "Xerret - Illidan",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Recloos - Illidan"] = "Recloos - Illidan",
+		["Bennyhin - Illidan"] = "Bennyhin - Illidan",
+		["Xerkinz - Illidan"] = "Xerkinz - Illidan",
+		["Xerkin - Illidan"] = "Xerkin - Illidan",
+		["Youngpoobs - Tanaris"] = "Youngpoobs - Tanaris",
+	},
+	["global"] = {
+		["version"] = 80300,
 	},
 	["profiles"] = {
 		["Zerkin - Illidan"] = {
+			["items"] = {
+				"item:28698:0", -- [1]
+			},
+		},
+		["Milkd - Illidan"] = {
+		},
+		["Aerionz - Illidan"] = {
+		},
+		["Klitpounder - Illidan"] = {
+		},
+		["Zerkinz - Illidan"] = {
+		},
+		["Aerion - Illidan"] = {
+		},
+		["Zerkinz - Sargeras"] = {
+		},
+		["Xerkinz - Sargeras"] = {
+		},
+		["Xerret - Illidan"] = {
+		},
+		["Shanyt - Argent Dawn"] = {
+		},
+		["Recloos - Illidan"] = {
+		},
+		["Bennyhin - Illidan"] = {
+		},
+		["Xerkinz - Illidan"] = {
+		},
+		["Xerkin - Illidan"] = {
+		},
+		["Youngpoobs - Tanaris"] = {
 		},
 	},
 }

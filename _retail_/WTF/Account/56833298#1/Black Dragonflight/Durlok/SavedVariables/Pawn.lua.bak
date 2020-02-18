@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.032,
+	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 160911,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:159549::::::::118:104:512::2:4796:1678:118:::|h[Zocali Warhammer of the Quickblade]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

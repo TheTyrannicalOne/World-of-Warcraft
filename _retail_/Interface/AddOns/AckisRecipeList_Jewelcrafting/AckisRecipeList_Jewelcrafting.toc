@@ -1,0 +1,18 @@
+## Interface: 80300
+## Title: Ackis Recipe List: Jewelcrafting
+## Notes: Jewelcrafting data for Ackis Recipe List.
+## Author: Ackis, Pompy, Ressy, Torhal
+## Version: 8.3.0.1
+## X-Revision: 6cf78d6
+## X-Date: 2020-01-14T22:59:31Z
+## Dependencies: AckisRecipeList
+## LoadOnDemand: 1
+
+Core.lua
+Filters.lua
+Discoveries.lua
+MobDrops.lua
+Trainers.lua
+Vendors.lua
+Recipes.lua
+Quests.lua

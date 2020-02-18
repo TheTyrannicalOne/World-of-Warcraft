@@ -139,8 +139,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Tynkster"] = {
-			["class"] = "HUNTER",
 			["faction"] = "Alliance",
+			["class"] = "HUNTER",
 		},
 		["Tyriinid"] = {
 			["class"] = "MAGE",
@@ -157,13 +157,17 @@ MasterPlanAG = {
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
 	["Darkspear"] = {
 		["Shathiel"] = {
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
 			["faction"] = "Alliance",
 		},
 		["Brewnheimer"] = {
@@ -173,10 +177,6 @@ MasterPlanAG = {
 		["Dialdaas"] = {
 			["faction"] = "Alliance",
 			["class"] = "PALADIN",
-		},
-		["Serbitechna"] = {
-			["class"] = "HUNTER",
-			["faction"] = "Alliance",
 		},
 	},
 	["Sargeras"] = {
@@ -193,30 +193,31 @@ MasterPlanAG = {
 		["Shanyt"] = {
 			["faction"] = "Horde",
 			["summary"] = {
-				["lastOilTime"] = 1581058319,
-				["tt2"] = 1580004064,
+				["lastOilTime"] = 1581918130,
+				["tt2"] = 1581212801,
 				["tt3"] = 1580783724,
-				["tt1"] = 1581121485,
 				["ti1"] = 118531,
+				["tt1"] = 1581121485,
 				["ti3"] = 127855,
 				["inProgress"] = {
-					[485] = 1581135086,
-					[176] = 1581123343,
-					[397] = 1581156712,
-					[325] = 1581135037,
-					[667] = 1581135073,
-					[481] = 1581135091,
-					[670] = 1581135062,
-					[125] = 1581135082,
-					[540] = 1581123117,
-					[745] = 1581123119,
+					[260] = 1581932525,
+					[486] = 1581939723,
+					[119] = 1581932512,
+					[187] = 1581920802,
+					[399] = 1581954099,
+					[563] = 1581946937,
+					[496] = 1581925297,
+					[482] = 1581939710,
+					[619] = 1581934138,
+					[130] = 1581932516,
+					[745] = 1581982930,
 				},
 				["ti2"] = 122486,
 			},
-			["curOil"] = 80655,
+			["curOil"] = 80555,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1581120586,
-			["curRes"] = 6502,
+			["lastCacheTime"] = 1581918167,
+			["curRes"] = 9259,
 			["class"] = "WARRIOR",
 		},
 	},

@@ -1,0 +1,18 @@
+## Interface: 80300
+## Title: Ackis Recipe List: Cooking
+## Notes: Cooking data for Ackis Recipe List.
+## Author: Ackis, Pompy, Ressy, Torhal
+## Version: 8.3.0.1
+## X-Revision: 81640a9
+## X-Date: 2020-01-14T22:49:30Z
+## Dependencies: AckisRecipeList
+## LoadOnDemand: 1
+
+Core.lua
+Filters.lua
+MobDrops.lua
+Quests.lua
+Trainers.lua
+Vendors.lua
+Recipes.lua
+Discoveries.lua

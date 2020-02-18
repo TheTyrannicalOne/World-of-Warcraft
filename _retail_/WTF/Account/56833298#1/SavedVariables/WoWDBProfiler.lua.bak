@@ -7,8 +7,8 @@ WoWDBProfilerData = {
 		["Goramor - Runetotem"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Shaewong - Dalaran"] = "Default",
-		["Gangus - Runetotem"] = "Default",
 		["Sinh - Dalaran"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
 		["Migimong - Runetotem"] = "Default",
@@ -21,7 +21,7 @@ WoWDBProfilerData = {
 		["Tynkster - Dalaran"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
+		["Gangus - Runetotem"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 	},
 	["region"] = "US",
@@ -31,7 +31,7 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["City of Ironforge:87"] = {
-							["3:332:648"] = true,
+							["3:330:650"] = true,
 							["3:328:652"] = true,
 						},
 					},
@@ -81,9 +81,6 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 27,
 				["upgrade_value"] = 18,
 				["durability"] = 35,
-				["seen_bonuses"] = {
-					["4770"] = true,
-				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
@@ -158,17 +155,6 @@ WoWDBProfilerData = {
 			},
 		},
 		["npcs"] = {
-			["54334"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[101260] = 2,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
 			["8720"] = {
 				["is_pvp"] = true,
 				["genders"] = {
@@ -184,7 +170,7 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
 										["3:242:744"] = true,
-										["3:246:738"] = true,
+										["3:250:734"] = true,
 									},
 								},
 								["max_health"] = 5295,
@@ -195,7 +181,15 @@ WoWDBProfilerData = {
 				["reaction"] = "24:Alliance:FRIENDLY",
 			},
 		},
+		["quests"] = {
+			[54185] = {
+			},
+			[44989] = {
+			},
+			[31891] = {
+			},
+		},
 	},
-	["build_num"] = 33237,
+	["build_num"] = 33369,
 	["version"] = 19,
 }

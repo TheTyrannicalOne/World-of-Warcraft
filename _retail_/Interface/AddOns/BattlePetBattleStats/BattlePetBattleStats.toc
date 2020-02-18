@@ -1,0 +1,6 @@
+## Interface: 80000
+## Title: Battle Pet Battle Stats
+## Notes: Displays the stats of battle pets in play during a pet battle.
+## Author: Gello
+## Version: 1.0.11
+BattlePetBattleStats.lua

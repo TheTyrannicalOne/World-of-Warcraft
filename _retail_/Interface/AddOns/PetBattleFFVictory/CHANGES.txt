@@ -1,0 +1,12 @@
+lightweight tag ca3223cb503521569e4c8d4055083cbc9058ec14 v1.2.9
+Author:	Lown Ignitus <lownignitus@gmail.com>
+Date:	Tue Sep 24 13:26:59 2019 -0700
+
+commit ca3223cb503521569e4c8d4055083cbc9058ec14
+Author: Lown Ignitus <lownignitus@gmail.com>
+Date:   Tue Sep 24 13:26:59 2019 -0700
+
+    v1.2.9
+    
+    TOC update for 8.2.5
+

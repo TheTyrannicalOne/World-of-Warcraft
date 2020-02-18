@@ -187,3 +187,4 @@ ElvUI_CastBarOverlay: disabled
 ElvUI_AuraBarsMovers: disabled
 ElvUI_CustomTweaks: disabled
 WeakAurasArchive: enabled
+LegionInvasionTimer_Options: enabled

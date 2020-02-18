@@ -691,7 +691,7 @@ function private.ScanItemKey83(auctionScan, filter, isCommodity, itemKey, sellQu
 			if newItemLevel == 0 then
 				newItemLevel = nil
 			end
-			assert(not itemLevel or not newItemLevel or newItemLevel == itemLevel, format("Invalid level (%s, %s)", tostring(itemLevel), tostring(newItemLevel)))
+			assert(not itemLevel or not newItemLevel or newItemLevel == itemLevel, format("Invalid level (%s, %s, %s, %s)", baseItemString, itemKeyInfo.battlePetLink or "?", tostring(itemLevel), tostring(newItemLevel)))
 			itemLevel = itemLevel or newItemLevel
 		end
 		if not itemString and itemKeyInfo.battlePetLink then
