@@ -1,6 +1,18 @@
 
 SpyDB = {
 	["kosData"] = {
+		["Dalaran"] = {
+			["Alliance"] = {
+				["Tynkster"] = {
+				},
+			},
+		},
+		["Black Dragonflight"] = {
+			["Horde"] = {
+				["Durlok"] = {
+				},
+			},
+		},
 		["Argent Dawn"] = {
 			["Horde"] = {
 				["Shanyt"] = {
@@ -9,15 +21,36 @@ SpyDB = {
 		},
 	},
 	["removeKOSData"] = {
+		["Dalaran"] = {
+			["Alliance"] = {
+			},
+		},
+		["Black Dragonflight"] = {
+			["Horde"] = {
+			},
+		},
 		["Argent Dawn"] = {
 			["Horde"] = {
 			},
 		},
 	},
 	["profileKeys"] = {
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 	},
 	["profiles"] = {
+		["Durlok - Black Dragonflight"] = {
+			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
 		["Shanyt - Argent Dawn"] = {
 			["MainWindow"] = {
 				["Position"] = {
@@ -42,6 +75,17 @@ SpyDB = {
 				},
 			},
 			["AppendUnitNameCheck"] = true,
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Tynkster - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
 			["AppendUnitKoSCheck"] = true,
 		},
 	},

@@ -1,5 +1,5 @@
-## Interface: 80300
-## ClassicInterface: 11303
+## RetailInterface: 80300
+## Interface: 11303
 ## Title: Wholly
 ## Author: Scott M Harrison
 ## Notes: Shows quest database and map pins

@@ -61,16 +61,16 @@ HHTD_SavedVariables = {
 		["Gillbourn - Runetotem"] = {
 			["settingsMigrated"] = false,
 		},
-		["Narisaric - Dalaran"] = {
+		["Fantastiburo - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
 		["Shathiel - Darkspear"] = {
 			["settingsMigrated"] = false,
 		},
-		["Brotus - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 			["settingsMigrated"] = false,
 		},
 		["Tynkster - Dalaran"] = {
@@ -79,7 +79,7 @@ HHTD_SavedVariables = {
 		["Vadder - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Vancard - Zul'jin"] = {
+		["Sinh - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Tyran - Argent Dawn"] = {
@@ -88,27 +88,39 @@ HHTD_SavedVariables = {
 		["Darnastris - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Durlok - Black Dragonflight"] = {
-			["settingsMigrated"] = false,
-		},
 		["Cowtastraphy - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Sinh - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
+			["settingsMigrated"] = false,
+		},
+		["Vancard - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Beeronimo - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 			["settingsMigrated"] = false,
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Brotus - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Fantastiburo - Argent Dawn"] = {
+		["Narisaric - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
+	},
+	["namespaces"] = {
+		["Announcer"] = {
+		},
+		["CM"] = {
+		},
+		["NPH"] = {
+		},
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
@@ -131,33 +143,21 @@ HHTD_SavedVariables = {
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
-	},
-	["namespaces"] = {
-		["Announcer"] = {
-		},
-		["CM"] = {
-		},
-		["NPH"] = {
-		},
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 }

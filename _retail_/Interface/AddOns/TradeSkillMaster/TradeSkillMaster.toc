@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 11303
 ## Title: |cff00fe00TradeSkillMaster|r
 ## Notes: Auction house and gold making addon.
 ## Author: TradeSkillMaster Team

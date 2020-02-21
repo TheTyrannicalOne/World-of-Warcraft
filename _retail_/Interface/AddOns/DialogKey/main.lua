@@ -139,7 +139,7 @@ function DialogKey:HandleKey(key)				-- Run for every key hit ever; runs ClickBu
 	
 	if GetCurrentKeyBoardFocus() then return end -- Don't handle key if we're typing into something
 	
-	if key:find("^%d$") and GossipFrameGreetingPanel:IsVisible() and DialogKey.db.global.numKeysForGossip then
+	if key:find("^%d$") and (QuestFrameGreetingPanel:IsVisible() or GossipFrameGreetingPanel:IsVisible()) and DialogKey.db.global.numKeysForGossip then
 		local num = 1
 		local keynum = tonumber(key)
 		for i=1,9 do
@@ -161,54 +161,6 @@ function DialogKey:HandleKey(key)				-- Run for every key hit ever; runs ClickBu
 				num = num+1
 			end
 		end
-	elseif key:find("^%d$") and QuestFrameGreetingPanel:IsVisible() and DialogKey.db.global.numKeysForGossip then
-		local keynum = tonumber(key)
-		
-		local frames = DialogKey:GetQuestButtons()
-		DialogKey:ClickFrame(frames[1].frame)
-		
-		-- TODO: check if above line works? surely sometimes it puts accepted quests above available quests?
-		
-		--[[
-		if keynum <= GetNumActiveQuests() then
-			SelectActiveQuest(keynum)
-			DialogKey.frame:SetPropagateKeyboardInput(false)
-			PlaySound(SOUNDKIT.IG_QUEST_LIST_SELECT)
-			DialogKey:GlowQuestIndex(keynum)
-			return
-		elseif keynum <= GetNumActiveQuests()+GetNumAvailableQuests() then
-			SelectAvailableQuest(keynum - GetNumActiveQuests())
-			DialogKey.frame:SetPropagateKeyboardInput(false)
-			PlaySound(SOUNDKIT.IG_QUEST_LIST_SELECT)
-			DialogKey:GlowQuestIndex(keynum)
-			return
-		else
-			return
-		end
-		]]
-		
-		--[[
-		local num = 1
-		for i=1,9 do
-			local frame = _G["GossipTitleButton"..i]
-			
-			-- Try QuestTitleButton* instead if Gossip buttons aren't shown
-			if not frame:IsVisible() then
-				frame = _G["QuestTitleButton"..i]
-			end
-			
-			-- If the frame isn't blank (blank frames are used to separate gossip and quests)
-			if frame:IsVisible() and frame:GetText() then
-				if num == keynum then
-					DialogKey:ClickFrame(frame)
-					self:SetPropagateKeyboardInput(false)
-					return
-				end
-				
-				num = num+1
-			end
-		end
-		]]
 	
 	-- If 1-9 was pressed, 'select quest rewards' option is enabled, quest rewards are visible, and the quest is ready to complete
 	elseif key:find("^%d$") and QuestInfoRewardsFrameQuestInfoItem1:IsVisible() and QuestFrameCompleteQuestButton:IsVisible() and DialogKey.db.global.numKeysForQuestRewards then
@@ -374,23 +326,38 @@ end
 function DialogKey:GetQuestButtons()			-- Return sorted list of quest button frames
 	-- TODO: fix order being wrong on first load?
 	local frames = {}
-	for f,unknown in QuestFrameGreetingPanel.titleButtonPool:EnumerateActive() do
-		table.insert(frames,{
-			top      = f:GetTop(),
-			frame    = f,
-			name     = f:GetText()
-		})
-	end
 	
-	table.sort(frames,function(a,b)
-		if a.top > b.top then
-			return 1
-		elseif a.top < b.top then
-			return -1
+	if QuestFrameGreetingPanel.titleButtonPool then
+		for f,unknown in QuestFrameGreetingPanel.titleButtonPool:EnumerateActive() do
+			table.insert(frames,{
+				top      = f:GetTop(),
+				frame    = f,
+				name     = f:GetText()
+			})
 		end
 		
-		return 0
-	end)
+		table.sort(frames,function(a,b)
+			if a.top > b.top then
+				return 1
+			elseif a.top < b.top then
+				return -1
+			end
+			
+			return 0
+		end)
+	elseif QuestTitleButton1:IsVisible() then
+		for i=1,10 do
+			local frame = _G["QuestTitleButton"..i]
+			
+			if frame:IsVisible() and frame:GetText() ~= "" then
+				table.insert(frames, {
+					top   = frame:GetTop(),
+					frame = frame,
+					name  = frame:GetText()
+				})
+			end
+		end
+	end
 	
 	return frames
 end
@@ -519,7 +486,7 @@ function DialogKey:DisableQuestScrolling()		-- Frees up mouse wheel input again 
 	end
 	
 	if not found then
-		UIParent:EnableMouseWheel(false)
+		UIParent:EnableMouseWheel(false) -- todo: erroring sometimes?
 	end
 end
 

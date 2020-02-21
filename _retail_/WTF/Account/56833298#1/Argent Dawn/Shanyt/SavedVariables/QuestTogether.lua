@@ -17,10 +17,11 @@ QuestTogether = {
 				"1/1 Win a Battleground", -- [3]
 			},
 		},
-		[52342] = {
-			["title"] = "Work Order: Monel-Hardened Hoofplates",
+		[47118] = {
+			["title"] = "Tomb of Sargeras: Free The Tormented",
 			["objectives"] = {
-				"0/3 Monel-Hardened Hoofplates", -- [1]
+				"Defeat The Desolate Host", -- [1]
+				"1/1 Worshipper's Scrawlings", -- [2]
 			},
 		},
 		[49032] = {
@@ -29,10 +30,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[51049] = {
-			["title"] = "Supplies Needed: Mistscale",
+		[53435] = {
+			["title"] = "Azerite for the Horde",
 			["objectives"] = {
-				"0/15 Mistscale", -- [1]
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[54180] = {
@@ -40,10 +41,11 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[56352] = {
@@ -58,10 +60,10 @@ QuestTogether = {
 				"0/1 King Mechagon slain", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"1/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[45381] = {
@@ -82,24 +84,22 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[56172] = {
+			["title"] = "Other Interests",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+				"0/5 Curious Murloc Horn delivered", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"3/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
-		[47118] = {
-			["title"] = "Tomb of Sargeras: Free The Tormented",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"Defeat The Desolate Host", -- [1]
-				"1/1 Worshipper's Scrawlings", -- [2]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[48642] = {
@@ -120,14 +120,14 @@ QuestTogether = {
 				"Win a battleground", -- [1]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
 			},
 		},
@@ -137,10 +137,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[57743] = {
+			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"0/500 Earn Conquest", -- [1]
 			},
 		},
 		[57391] = {
@@ -149,10 +149,10 @@ QuestTogether = {
 				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[13721] = {
@@ -161,10 +161,10 @@ QuestTogether = {
 				"10/25 Valiant's Seal", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[31891] = {
@@ -199,8 +199,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

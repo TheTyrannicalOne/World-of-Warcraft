@@ -1,7 +1,9 @@
 
 BFAInvasionTimerDB = {
 	["profileKeys"] = {
+		["Durlok - Black Dragonflight"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -15,6 +17,6 @@ BFAInvasionTimerDB = {
 	},
 }
 BFAInvasionData = {
-	1581890406, -- [1]
-	5, -- [2]
+	1582164004, -- [1]
+	3, -- [2]
 }

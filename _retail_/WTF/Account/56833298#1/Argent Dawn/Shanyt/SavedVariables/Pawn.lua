@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0322,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -16,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1626:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 157932,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:157932::::::::120:71::28:4:1622:4786:6503:4775:::|h[Pauldrons of Rezan's Bladeguard]|h|r",
+			["ID"] = 157964,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:157964::::::::120:71::28:3:1637:4786:6506:::|h[Dunecrawler Spaulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -81,17 +78,20 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:169223::::::::120:71::11:2:6273:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158121,
-			["Level"] = 410,
-			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff0070dd|Hitem:158121::::::::120:71::25:5:4803:6516:6513:1602:4785:::|h[Zocalo Crusher]|h|r",
+			["ID"] = 163874,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 170365,
-			["Level"] = 400,
-			["Link"] = "|cffa335ee|Hitem:170365::::::::120:71::13:2:1697:5804:::|h[Uncanny Combatant's Shield of the Feverflare]|h|r",
+			["ID"] = 158121,
+			["Level"] = 410,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff0070dd|Hitem:158121::::::::120:71::25:5:4803:6516:6513:1602:4785:::|h[Zocalo Crusher]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
