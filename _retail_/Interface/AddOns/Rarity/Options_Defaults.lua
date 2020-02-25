@@ -1328,8 +1328,7 @@ function R:PrepareDefaults()
 			spellId = 316723,
 			npcs = { 157466 },
 			chance = 100,
-			groupSize = 5,
-			equalOdds = true,
+			questId = { 57363 },
 			coords = {
 				{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 34.15, y = 68.05, n = L["Anh-De the Loyal"] },
 			},
@@ -1344,9 +1343,9 @@ function R:PrepareDefaults()
 			spellId = 315847,
 			npcs = { 157134 },
 			chance = 100,
-			groupSize = 5,
+			groupSize = 3,
 			equalOdds = true,
-			questId = { 000000000000000000000000000000000000000000000000000000000000000000000000 },
+			questId = { 57259 },
 			coords = {
 				{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 73.96, y = 83.52, n = L["Ishak of the Four Winds"] },
 			},
@@ -1361,9 +1360,7 @@ function R:PrepareDefaults()
 			spellId = 316337,
 			npcs = { 162147 },
 			chance = 100,
-			groupSize = 5,
-			equalOdds = true,
-			questId = { 58139 }, -- 58139, 58696
+			questId = { 58696 },
 			coords = {
 				{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 30.85, y = 49.71, n = L["Corpse Eater"] },
 			},
@@ -1378,9 +1375,9 @@ function R:PrepareDefaults()
 			spellId = 312751,
 			npcs = { 157153 },
 			chance = 100,
-			groupSize = 5,
+			groupSize = 3,
 			equalOdds = true,
-			questId = { 000000000000000000000000000000000000000000000000000000000000000000000000 },
+			questId = { 57344 },
 			coords = {
 				{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 36.6, y = 37.6, n = L["Ha-Li"] },
 			},
@@ -1395,9 +1392,7 @@ function R:PrepareDefaults()
 			spellId = 316722,
 			npcs = { 157160 },
 			chance = 100,
-			groupSize = 5,
-			equalOdds = true,
-			questId = { 000000000000000000000000000000000000000000000000000000000000000000000000 },
+			questId = { 57345 },
 			coords = {
 				{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 10, y = 33, n = L["Houndlord Ren"] },
 			},
@@ -1412,30 +1407,28 @@ function R:PrepareDefaults()
 			spellId = 316275,
 			npcs = { 157146 },
 			chance = 100,
-			groupSize = 5,
-			equalOdds = true,
 			questId = { 57273 },
 			coords = {
 				{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 68.23, y = 31.97, n = L["Rotfeaster"] },
 			},
 		},
 
-		-- ["NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN"] = {
-		-- 	cat = BFA,
-		-- 	type = MOUNT,
-		-- 	method = NPC,
-		-- 	name = L["NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN"],
-		-- 	itemId = 00000000000000000000000000000000000000000000000,
-		-- 	spellId = 000000000000000000000000000000000000000000000,
-		-- 	npcs = { 000000000000000000000000000 },
-		-- 	chance = 000000000000000000000000000000000000000000,
-		-- 	groupSize = 5,
-		-- 	equalOdds = true,
-		-- 	questId = { 000000000000000000000000000000000000000000000000000000000000000000000000 },
-		-- 	coords = {
-		-- 		{ m = CONSTANTS.UIMAPIDS.AAAAAAAAAAAAAAAAAAAAAAAAAAAA, x = 0000000000000000000, y = 00000000000000000000000000000000000, n = L["NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN"] },
-		-- 	},
-		-- },
+		["Slightly Damp Pile of Fur"] = {
+			cat = BFA,
+			type = MOUNT,
+			method = BOSS,
+			name = L["Slightly Damp Pile of Fur"],
+			itemId = 174842,
+			spellId = 298367,
+			npcs = { 138794 },
+			chance = 100,
+			groupSize = 3,
+			equalOdds = true,
+			questId = { 53000 },
+			coords = {
+				{ m = CONSTANTS.UIMAPIDS.VOLDUN, x = 44.6, y = 56.2, n = L["Dunegorger Kraulok"] },
+			},
+		},
 
 
 
@@ -4305,6 +4298,22 @@ function R:PrepareDefaults()
 		},
 	},
 
+	["Wicked Lurker"] = {
+		cat = BFA,
+		type = PET,
+		method = NPC,
+		name = L["Wicked Lurker"],
+		npcs = { 157593 },
+		spellId = 315370,
+		itemId = 174478,
+		creatureId = 162012,
+		questId = { 58330 },
+		chance = 20,
+		coords = {
+			{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 60, y = 72, n = L["Amalgamation of Flesh"] },
+		},
+	},
+
 	["Corrupted Tentacle"] = {
 		cat = BFA,
 		type = PET,
@@ -4313,8 +4322,8 @@ function R:PrepareDefaults()
 		npcs = { 154495 },
 		spellId = 315353,
 		itemId = 174474,
-		creatureId = 00000000000000000000000000000000000000000000,
-		questId = { 57341 }, --56303?
+		creatureId = 161992,
+		questId = { 56303 },
 		chance = 20,
 		coords = {
 			{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 52.51, y =  62.14, n = L["Will of N'zoth"] },
@@ -4334,6 +4343,23 @@ function R:PrepareDefaults()
 		chance = 20,
 		coords = {
 			{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 36.85, y = 20.93, n = L["Lord Aj'qirai"] },
+		},
+		groupSize = 3,
+		equalOdds = true,
+	},
+
+	["Snarling Butterfly Crate"] = {
+		cat = BFA,
+		type = PET,
+		method = NPC,
+		name = L["Snarling Butterfly Crate"],
+		spellId = 309522,
+		itemId = 172493,
+		npcs = { 154154 },
+		chance = 20,
+		creatureId =158685,
+		coords = {
+			{ m = 942, x = 61.4, y = 16, n = L["Honey Smasher"] },
 		},
 	},
 
@@ -5339,7 +5365,7 @@ function R:PrepareDefaults()
 		itemId = 169303,
 		npcs = { 158636 },
 		chance = 20, -- Blind guess (no data)
-		questId = { 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 },
+		questId = { 57688 },
 		coords = {
 			{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 49.35, y = 82.29, n = L["The Grand Executor"] },
 		},
@@ -5354,9 +5380,11 @@ function R:PrepareDefaults()
 		itemId = 174874,
 		npcs = { 157473 },
 		chance = 20, -- Blind guess (no data)
-		questId = { 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 },
+		questId = { 57438 },
 		coords = {
-			{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 00000000000000000000000000000000000000000000000000000000000000000000000000, y = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, n = L["Yiphrim the Will Ravager"] },
+			{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 50, y = 88, n = L["Yiphrim the Will Ravager"] },
+			{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 50, y = 88, n = L["Yiphrim the Will Ravager"] },
+			{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 55, y = 79, n = L["Yiphrim the Will Ravager"] },
 		},
 	},
 
@@ -5369,7 +5397,7 @@ function R:PrepareDefaults()
 		itemId = 174873,
 		npcs = { 155958 },
 		chance = 20, -- Blind guess (no data)
-		questId = { 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 },
+		questId = { 58507 },
 		coords = {
 			{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 29.13, y = 22.07, n = L["Tashara"] },
 		},
@@ -5416,6 +5444,56 @@ function R:PrepareDefaults()
 			{ m = 882, x = 43.55, y = 49.19, n = L["Sabuul"] },
 		},
 	 },
+
+	 -- 8.3
+["Pristine Cloud Serpent Scale"] = {
+	cat = BFA,
+	type = ITEM,
+	method = NPC,
+	name = L["Pristine Cloud Serpent Scale"],
+	itemId = 174230,
+	npcs = { 157162	},
+	chance = 100,
+	questId = { 57346 },
+	unique = true,
+	coords = {
+		{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 22.09, y = 24.03, n = L["Cave Entrance"] },
+		{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 21.16, y = 14.53, n = L["Rei Lun"] },
+	},
+	groupSize = 3,
+	equalOdds = true,
+},
+
+["All-Seeing Right Eye"] = {
+	cat = BFA,
+	type = ITEM,
+	method = NPC,
+	name = L["All-Seeing Right Eye"],
+	npcs = { 158633 },
+	itemId = 175142,
+	questId = { 57680 },
+	chance = 75,
+	coords = {
+		{ m = CONSTANTS.UIMAPIDS.ULDUM, x = 55, y =  51, n = L["Gaze of N'Zoth"] },
+	},
+	sourceText = format(L["Shares a spawn with %s"], L["Foul Observer"]),
+	-- Combine with X to create Y
+	-- Only available during the X assault
+},
+
+["All-Seeing Left Eye"] = {
+	cat = BFA,
+	type = ITEM,
+	method = NPC,
+	name = L["All-Seeing Left Eye"],
+	npcs = { 154495 },
+	itemId = 175141,
+	questId = { 56303 },
+	chance = 75,
+	coords = {
+		{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 52.51, y =  62.14, n = L["Will of N'zoth"] },
+	},
+},
 
 					-- Battle pet-related items
      ["Mr. Pinchy"] =                                    { cat = TBC, type = ITEM, method = FISHING, name = L["Mr. Pinchy"], spellId = 33050, itemId = 27388, zones = { "Lake Jorune", "Lake Ere'Noru", "Skethyl Mountains", "Blackwind Landing", "Blackwind Valley", "Skettis", "Blackwind Lake", "Veil Harr'ik", "Veil Ala'rak", "Terokk's Rest" },

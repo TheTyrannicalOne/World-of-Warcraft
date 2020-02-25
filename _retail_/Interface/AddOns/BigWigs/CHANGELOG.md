@@ -1,11 +1,6 @@
 # BigWigs
 
-## [v183](https://github.com/BigWigsMods/BigWigs/tree/v183) (2020-02-20)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v182...v183)
+## [v183.2](https://github.com/BigWigsMods/BigWigs/tree/v183.2) (2020-02-24)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v183.1...v183.2)
 
-- bump version  
-- update zhCN (#765)  
-- Update zhTW (#764)  
-- Nyalotha/Raden: Update respawn time  
-- Nyalotha/Raden: Prevent enabling unless near him  
-- Core: Pass the map art ID as the 3rd arg to :VerifyEnable.  
+- Nyalotha/Vexiona: Swap Desolation from say to yell and make sure to cancel the countdown when removed.  

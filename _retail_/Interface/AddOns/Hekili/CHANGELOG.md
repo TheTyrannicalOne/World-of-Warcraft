@@ -1,14 +1,18 @@
 # Hekili
 
-## [v8.3.0-04-09](https://github.com/Hekili/hekili/tree/v8.3.0-04-09) (2020-02-13)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.3.0-04-08...v8.3.0-04-09)
+## [v8.3.0-04-10](https://github.com/Hekili/hekili/tree/v8.3.0-04-10) (2020-02-23)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.3.0-04-09...v8.3.0-04-10)
 
-- This is the remix to Detection, Blizz cleansed this infection...  
-- Fix typo when an ability includes auras.  
-- Add missing Corrupted Gladiator trinkets.  
-- Allow specified ranges on spells for range filtering feature (Frostscythe).  
-- Use GetNumGroupMembers instead of IsInGroup to determine if you're *really* in a group.  
-- The Fixed and the Furious 9:  detect my gear at login ffs.  
-- Blood:  More explicitly refresh Bone Shield if it is falling off in 1.5 GCDs.  
-- Fix missing newline when Heart of Azeroth substitution is made.  
-- Blood:  Use Marrowrend sooner with Ossuary.  
+- APL updates/fixes:  Unholy, Feral, Hunters, Windwalker, Rogues, Warriors.  
+    - Clean up some Fire Mage debug info.  
+    - Add VoP-related options for Hunters.  
+- Tweak Font of Power.  
+    Tweak channels to avoid duplicate events.  
+    Adjust timing of impact events.  
+    Hide some debug info for now.  
+- BM Hunter Aspect/VoP setting.  
+- Font color support in UI.lua.  
+- Remove redundant time\_to\_pct_ in target metatable.  
+- - Add font colors to Display options.  
+    - Make the 3-second damage detection expiration a soft-minimum.  
+- Grab keybindings for macro'd items rather than just spells.  

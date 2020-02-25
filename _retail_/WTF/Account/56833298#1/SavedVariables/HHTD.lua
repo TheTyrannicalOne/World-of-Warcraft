@@ -110,6 +110,10 @@ HHTD_SavedVariables = {
 			["settingsMigrated"] = false,
 		},
 	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
+	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
@@ -147,10 +151,6 @@ HHTD_SavedVariables = {
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
 	},
 	["namespaces"] = {
 		["Announcer"] = {

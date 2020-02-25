@@ -63,13 +63,13 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["lastCacheTime"] = 1462930208,
 			["summary"] = {
-				["ti1"] = 118530,
 				["tt1"] = true,
+				["ti1"] = 118530,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["ti3"] = 127855,
 				["tt3"] = true,
+				["ti3"] = 127855,
 			},
 			["faction"] = "Horde",
 		},
@@ -109,12 +109,6 @@ MasterPlanAG = {
 			["class"] = "WARLOCK",
 		},
 	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
 	["Darkspear"] = {
 		["Shathiel"] = {
 			["faction"] = "Alliance",
@@ -131,6 +125,12 @@ MasterPlanAG = {
 		["Brewnheimer"] = {
 			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Dalaran"] = {
@@ -191,34 +191,33 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["lastCacheTime"] = 1581918167,
+			["class"] = "WARRIOR",
 			["summary"] = {
-				["lastOilTime"] = 1581996486,
-				["ti2"] = 122486,
+				["lastOilTime"] = 1582604152,
 				["inProgress"] = {
-					[670] = 1582025277,
-					[503] = 1582018048,
-					[194] = 1582001864,
-					[564] = 1582061289,
-					[269] = 1582010853,
-					[495] = 1582025250,
-					[675] = 1582025269,
-					[542] = 1582025291,
-					[745] = 1582061286,
-					[210] = 1581999162,
-					[176] = 1581997817,
+					[305] = 1582611328,
+					[745] = 1582668952,
+					[184] = 1582605916,
+					[132] = 1582625713,
+					[119] = 1582618538,
+					[391] = 1582632918,
+					[692] = 1582618555,
+					[571] = 1582632951,
+					[651] = 1582605949,
+					[304] = 1582632936,
 				},
 				["ti3"] = 127855,
+				["ti2"] = 122486,
+				["tt1"] = 1582332870,
 				["ti1"] = 118531,
-				["tt1"] = 1581121485,
-				["tt3"] = 1580783724,
-				["tt2"] = 1581212801,
+				["tt3"] = 1582245750,
+				["tt2"] = 1582421058,
 			},
-			["curOil"] = 80625,
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 9161,
 			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1582604194,
+			["curRes"] = 6655,
+			["curOil"] = 81095,
 		},
 	},
 }

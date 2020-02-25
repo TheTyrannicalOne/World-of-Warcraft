@@ -1,4 +1,4 @@
-## Interface: 11303
+## Interface: 80300
 ## Title: WeakAuras 2
 ## Author: Mirrored and the WeakAuras Team
 ## Version: 2.16.6
@@ -46,8 +46,10 @@ RegionTypes\Icon.lua
 RegionTypes\Text.lua
 RegionTypes\Group.lua
 RegionTypes\DynamicGroup.lua
+RegionTypes\Model.lua
 
 # sub region support
 SubRegionTypes\SubText.lua
 SubRegionTypes\Border.lua
 SubRegionTypes\Glow.lua
+SubRegionTypes\BarModel.lua

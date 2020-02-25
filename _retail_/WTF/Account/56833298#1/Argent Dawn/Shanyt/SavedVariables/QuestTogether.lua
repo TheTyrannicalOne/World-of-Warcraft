@@ -4,9 +4,9 @@ QuestTogether = {
 		[37031] = {
 			["title"] = "Sigil of the Black Hand (Mythic)",
 			["objectives"] = {
-				"0/4 Ember of the Mountain", -- [1]
-				"1/4 Heart of Stone", -- [2]
-				"0/4 Sliver of Iron", -- [3]
+				"1/4 Ember of the Mountain", -- [1]
+				"2/4 Heart of Stone", -- [2]
+				"1/4 Sliver of Iron", -- [3]
 			},
 		},
 		[56500] = {
@@ -17,35 +17,15 @@ QuestTogether = {
 				"1/1 Win a Battleground", -- [3]
 			},
 		},
-		[47118] = {
-			["title"] = "Tomb of Sargeras: Free The Tormented",
-			["objectives"] = {
-				"Defeat The Desolate Host", -- [1]
-				"1/1 Worshipper's Scrawlings", -- [2]
-			},
-		},
 		[49032] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[53435] = {
-			["title"] = "Azerite for the Horde",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[56352] = {
@@ -60,22 +40,17 @@ QuestTogether = {
 				"0/1 King Mechagon slain", -- [1]
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
 		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[56356] = {
-			["title"] = "The Eternal Palace: Queen's Gambit",
+		[47118] = {
+			["title"] = "Tomb of Sargeras: Free The Tormented",
 			["objectives"] = {
-				"Queen Azshara defeated", -- [1]
+				"Defeat The Desolate Host", -- [1]
+				"1/1 Worshipper's Scrawlings", -- [2]
 			},
 		},
 		[45383] = {
@@ -84,22 +59,23 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[56172] = {
-			["title"] = "Other Interests",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/5 Curious Murloc Horn delivered", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"3/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[56356] = {
+			["title"] = "The Eternal Palace: Queen's Gambit",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"Queen Azshara defeated", -- [1]
 			},
 		},
 		[48642] = {
@@ -120,15 +96,16 @@ QuestTogether = {
 				"Win a battleground", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57743] = {
+			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/500 Earn Conquest", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[57402] = {
+			["title"] = "Reconstructing \"The Curse of Stone\"",
 			["objectives"] = {
+				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
 		[44989] = {
@@ -137,16 +114,15 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
 			},
 		},
-		[57391] = {
-			["title"] = "Reconstructing \"The Curse of Stone\"",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 		[58632] = {
@@ -161,10 +137,10 @@ QuestTogether = {
 				"10/25 Valiant's Seal", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 		[31891] = {
@@ -177,10 +153,9 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[49133] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 		[49015] = {
@@ -199,8 +174,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

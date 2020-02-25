@@ -2295,10 +2295,6 @@ local mt_target = {
             end
             return ( UnitCanAttack( "player", "target" ) and ( UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) )
 
-        elseif k:sub(1, 12) == 'time_to_pct_' then
-            local percent = tonumber( k:sub( 13 ) ) or 0
-            return Hekili:GetTimeToPct( "target", percent )
-
         elseif k:sub(1, 6) == 'within' then
             local maxR = k:match( "^within(%d+)$" )
 
@@ -3606,7 +3602,7 @@ do
 
                     if debug then
                         -- Hekili:Debug( "variable.%s [%02d/%s] :: op: %s, conditions: %s -- [%s]", var, i, scriptID, state.args.op or "autoset", scripts:GetConditionsAndValues( scriptID ), tostring( passed ) )
-                        if passed then Hekili:Debug( " - %s: %s, result: %s", which_mod, scripts:GetModifierValues( which_mod, scriptID ), tostring( value ) ) end
+                        -- if passed then Hekili:Debug( " - %s: %s, result: %s", which_mod, scripts:GetModifierValues( which_mod, scriptID ), tostring( value ) ) end
                     end
                 end
             end
@@ -4683,13 +4679,14 @@ do
 
     local cast_events = {
         CAST_FINISH = true,
+        CHANNEL_FINISH = true
     }
 
     function state:IsCasting( action, real )
         local queue = real and realQueue or virtualQueue
 
         for i, entry in ipairs( queue ) do
-            if cast_events[ entry.type ] and ( action == nil or entry.action == action ) and entry.start <= self.query_time then return true end
+            if entry.type == "CAST_FINISH" and ( action == nil or entry.action == action ) and entry.start <= self.query_time then return true end
         end
 
         return false
@@ -5678,9 +5675,9 @@ end
 local power_tick_rate = 0.115
 
 local debug_actions = {
-    rune_of_power = true,
-    fire_blast = true,
-    skull_bash = true,
+    -- rune_of_power = true,
+    -- fire_blast = true,
+    -- skull_bash = true,
 }
 
 local function noop() end
