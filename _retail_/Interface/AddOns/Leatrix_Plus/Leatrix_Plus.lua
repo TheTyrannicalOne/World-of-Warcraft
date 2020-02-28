@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.05 (19th February 2020)
+-- 	Leatrix Plus 8.3.06 (26th February 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.3.05"
+	LeaPlusLC["AddonVer"] = "8.3.06"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -6284,6 +6284,8 @@
 				"|Cffffffff" .. L["Jaina Returns to Kul Tiras"] .. " |r#2175043#118", -- interface/cinematics/bfa_800_kta.mp3
 				"|Cffffffff" .. L["Jaina's Nightmare"] .. " |r#2175048#96", -- interface/cinematics/bfa_800_jnm.mp3
 				"|Cffffffff" .. L["Warbringers Jaina"] .. " |r#2175053#274", -- interface/cinematics/bfa_800_ja.mp3
+				"|Cffffffff" .. L["A Deal with Death"] .. " |r#2175058#178", -- interface/cinematics/bfa_800_bar.mp3
+				"|Cffffffff" .. L["The Threat Within"] .. " |r#2175063#136", -- interface/cinematics/bfa_800_zcf.mp3
 				"|Cffffffff" .. L["The Return of Hope"] .. " |r#2175068#152", -- interface/cinematics/bfa_800_ktf.mp3
 				"|Cffffffff" .. L["Realm Of Torment"] .. " |r#2175073#164", -- interface/cinematics/bfa_800_rot.mp3
 				"|Cffffffff" .. L["Terror of Darkshore"] .. " |r#2543204#164", -- interface/cinematics/bfa_810_tod.mp3
@@ -6336,7 +6338,31 @@
 			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["Jade Forest Crash"] .. " |r(121)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
 			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["Stormheim (Alliance)"] .. " |r(483)", L["Stormheim (Horde)"] .. " |r(484)", L["Tomb of Sargeras"] .. " |r(486)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["Destiny Unfulfilled"] .. " |r(490)", L["The Nighthold"] .. " |r(549)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Assault on the Broken Shore"] .. " |r(637)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
-			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["The Fall of Lordaeron"] .. " |r(855)", L["Jaina Joins the Battle"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Arrival to Zandalar"] .. " |r(857)", L["Vision of Sailor's Memory"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Warbringers Jaina"] .. " |r(861)", L["The Return of Hope"] .. " |r(864)", L["Realm Of Torment"] .. " |r(865)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)", L["Siege of Dazar'alor"] .. " |r(876)", L["Battle of Dazar'alor"] .. " |r(875)", L["Warbringers Azshara"] .. " |r(884)", L["Rise of Azshara"] .. " |r(894)", L["The Negotiation"] .. " |r(903)", --[[ L["Reckoning"] .. " |r(904)",]] L["Azshara's Eternal Palace"] .. " |r(920)", L["Visions of N'Zoth"] .. " |r(928)",})
+			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, 
+				L["Battle for Azeroth"] .. " |r(852)", 
+				L["Warbringers Sylvanas"] .. " |r(853)", 
+				L["The Fall of Lordaeron"] .. " |r(855)", 
+				L["Jaina Joins the Battle"] .. " |r(856)", 
+				L["Embers of War"] .. " |r(854)", 
+				L["Arrival to Zandalar"] .. " |r(857)", 
+				L["Vision of Sailor's Memory"] .. " |r(858)", 
+				L["Jaina Returns to Kul Tiras"] .. " |r(859)", 
+				L["Jaina's Nightmare"] .. " |r(860)", 
+				L["Warbringers Jaina"] .. " |r(861)", 
+				L["A Deal with Death"] .. " |r(862)", 
+				L["The Threat Within"] .. " |r(863)", 
+				L["The Return of Hope"] .. " |r(864)", 
+				L["Realm Of Torment"] .. " |r(865)", 
+				L["Terror of Darkshore"] .. " |r(874)", 
+				L["An Unexpected Reunion"] .. " |r(879)", 
+				L["Siege of Dazar'alor"] .. " |r(876)", 
+				L["Battle of Dazar'alor"] .. " |r(875)", 
+				L["Warbringers Azshara"] .. " |r(884)", 
+				L["Rise of Azshara"] .. " |r(894)", L["The Negotiation"] .. " |r(903)", 
+				-- L["Reckoning"] .. " |r(904)", 
+				-- L["Azshara's Eternal Palace"] .. " |r(920)", 
+				L["Visions of N'Zoth"] .. " |r(928)",
+			})
 
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
@@ -8562,11 +8588,11 @@
 				collectgarbage()
 				return
 			elseif str == "soil" then
-				-- Enable dark soil scanning
+				-- Enable dark soil and jelly deposit scanning
 				if not LeaPlusLC["DarkScriptlEnabled"] then
 					GameTooltip:HookScript("OnUpdate", function() 
 						local a = _G["GameTooltipTextLeft1"]:GetText() or "" 
-						if a == "Dark Soil" then
+						if a == "Dark Soil" or a == "Jelly Deposit" then
 							PlaySound(8959, "Master")
 						end
 					end)

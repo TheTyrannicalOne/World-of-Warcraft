@@ -5,28 +5,28 @@ Omen3DB = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tynster - Dalaran"] = "Tynster - Dalaran",
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
-		["Vancard - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
 		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Vancard - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -50,7 +50,7 @@ Omen3DB = {
 			["PositionY"] = 675.000061035156,
 			["PositionX"] = 954.166687011719,
 		},
-		["Shaewong - Dalaran"] = {
+		["Brewnheimer - Darkspear"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
@@ -76,12 +76,12 @@ Omen3DB = {
 			["VGrip1"] = 102.708017867607,
 			["PositionX"] = 1772.260864257813,
 		},
-		["Sinh - Dalaran"] = {
+		["Shathiel - Darkspear"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Brewnheimer - Darkspear"] = {
+		["Shaewong - Dalaran"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
@@ -101,12 +101,12 @@ Omen3DB = {
 			["PositionY"] = 675.000061035156,
 			["PositionX"] = 954.166687011719,
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Shathiel - Darkspear"] = {
+		["Gangus - Runetotem"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
@@ -121,7 +121,7 @@ Omen3DB = {
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Tyriinid - Dalaran"] = {
+		["Beeronimo - Dalaran"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
@@ -131,11 +131,14 @@ Omen3DB = {
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Tynkster - Dalaran"] = {
-			["Shown"] = false,
-			["PositionY"] = 345.9996643066406,
-			["PositionW"] = 200.0000915527344,
-			["PositionX"] = 2351.165771484375,
+		["Durlok - Black Dragonflight"] = {
+			["VGrip2"] = 115.479163595836,
+			["PositionY"] = 201.667739868164,
+			["PositionW"] = 200.833389282227,
+			["Shown"] = true,
+			["VGrip1"] = 85.3541643969225,
+			["PositionX"] = 1488.33312988281,
+			["PositionH"] = 162.000015258789,
 		},
 		["Malivant - Dalaran"] = {
 			["Shown"] = false,
@@ -143,11 +146,6 @@ Omen3DB = {
 			["PositionX"] = 954.1666870117188,
 		},
 		["Darnastris - Dalaran"] = {
-			["Shown"] = false,
-			["PositionY"] = 675.0000610351562,
-			["PositionX"] = 954.1666870117188,
-		},
-		["Claugh - Runetotem"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
@@ -162,26 +160,28 @@ Omen3DB = {
 			["PositionX"] = 1429.16589355469,
 			["PositionH"] = 181.166656494141,
 		},
-		["Durlok - Black Dragonflight"] = {
-			["VGrip2"] = 115.479163595836,
-			["PositionY"] = 201.667739868164,
-			["PositionW"] = 200.833389282227,
-			["Shown"] = true,
-			["PositionH"] = 162.000015258789,
-			["PositionX"] = 1488.33312988281,
-			["VGrip1"] = 85.3541643969225,
-		},
-		["Beeronimo - Dalaran"] = {
+		["Claugh - Runetotem"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Dialdaas - Darkspear"] = {
+		["Tynkster - Dalaran"] = {
+			["Shown"] = false,
+			["PositionY"] = 345.9996643066406,
+			["PositionW"] = 200.0000915527344,
+			["PositionX"] = 2351.165771484375,
+		},
+		["Tyriinid - Dalaran"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Gangus - Runetotem"] = {
+		["Migimong - Runetotem"] = {
+			["Shown"] = false,
+			["PositionY"] = 675.0000610351562,
+			["PositionX"] = 954.1666870117188,
+		},
+		["Sinh - Dalaran"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,

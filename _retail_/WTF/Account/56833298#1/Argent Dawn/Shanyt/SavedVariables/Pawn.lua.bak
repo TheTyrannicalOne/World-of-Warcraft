@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0323,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -47,9 +44,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:157966::::::::120:71::28:7:4803:6578:6579:6563:6513:1637:4786:::|h[Dunecrawler Vambraces]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 173510,
-			["Level"] = 440,
-			["Link"] = "|cffa335ee|Hitem:173510::::::::120:71::29:8:6412:4803:6515:6578:6579:6544:1497:4786:::|h[Malignant Leviathan's Handguards]|h|r",
+			["ID"] = 173456,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:173456::::::::120:71::28:6:6412:4803:6513:6516:1502:4786:::|h[Malignant Leviathan's Crushers]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 174268,
@@ -58,10 +55,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174268::::::::120:71::3:5:4822:6516:6515:1487:4786:::|h[Loop of Abhorrent Celerity]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 165679,
-			["Level"] = 425,
+			["ID"] = 174469,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:165679::::::::120:71::28:5:4803:6516:6515:1617:4785:::|h[Ornate Elun'dris Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174469::::::::120:71::3:5:4822:6516:6513:1487:4786:::|h[Band of Insidious Ruminations]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 158162,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158121::::::::120:71::25:5:4803:6516:6513:1602:4785:::|h[Zocalo Crusher]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

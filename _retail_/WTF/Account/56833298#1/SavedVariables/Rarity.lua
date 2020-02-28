@@ -1,17 +1,17 @@
 
 RarityDB = {
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["groups"] = {
 				["pets"] = {
-					["Snarly's Bucket"] = {
-						["enabled"] = false,
+					["Elementium Back Plate"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Spiky Collar"] = {
@@ -59,12 +59,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Time-Locked Box"] = {
+					["Parrot Cage (Green Wing Macaw)"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Shard of Supremus"] = {
+					["Mark of Flame"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -109,7 +109,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Leatherwing Screecher"] = {
+					["Wayward Spirit"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -119,9 +119,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Cinderweb Egg"] = {
-						["known"] = true,
+					["Direhorn Runt"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Lil' Bling"] = {
@@ -144,7 +144,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Fragment of Frozen Bone"] = {
+					["Whistle of Chromatic Bone"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -154,10 +154,8 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Bloodstone Tunneler"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
+					["Drudge Remains"] = {
+						["attempts"] = 20,
 					},
 					["Gluth's Bone"] = {
 						["enabled"] = false,
@@ -288,9 +286,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Emerald Whelpling"] = {
-						["enabled"] = false,
+					["Toxic Wasteling"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Fel-Afflicted Skyfin"] = {
@@ -298,10 +296,15 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Chuck's Bucket"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
+					["Pair of Tiny Bat Wings"] = {
+						["time"] = 1,
+						["dates"] = {
+							[20200223] = {
+								["time"] = 1,
+								["attempts"] = 1,
+							},
+						},
+						["attempts"] = 1,
 					},
 					["Scraps"] = {
 						["enabled"] = false,
@@ -318,8 +321,10 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Kovok"] = {
-						["attempts"] = 10,
+					["Sunscale Hatchling"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
 					},
 					["Blessed Seed"] = {
 						["enabled"] = false,
@@ -419,10 +424,8 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Red Goren Egg"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
+					["Droplet of Y'Shaarj"] = {
+						["attempts"] = 8,
 					},
 					["Instant Arcane Sanctum Security Kit"] = {
 						["enabled"] = false,
@@ -434,12 +437,12 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Gu'chi Swarmling"] = {
+					["Poro"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Deviate Hatchling"] = {
+					["Celestial Gift"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -520,9 +523,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Breezy Essence"] = {
-						["known"] = true,
+					["Tiny Fel Engine Key"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Zandalari Kneebiter"] = {
@@ -530,17 +533,17 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Lump of Coal"] = {
+					["Mogu Statue"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
-						["enabled"] = false,
 					},
 					["Bonebiter"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["False Knucklebump"] = {
+					["Coldlight Surfrunner"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -558,20 +561,15 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Snowy Panda"] = {
+					["Imperial Silkworm"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Scalebrood Hydra"] = {
-						["time"] = 1,
-						["dates"] = {
-							[20200221] = {
-								["time"] = 1,
-								["attempts"] = 1,
-							},
-						},
-						["attempts"] = 1,
+					["Overcomplicated Controller"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
 					},
 					["Tonguelasher"] = {
 						["dates"] = {
@@ -584,6 +582,11 @@ RarityDB = {
 					["Fragment of Desire"] = {
 						["enabled"] = false,
 						["known"] = true,
+						["found"] = true,
+					},
+					["Smoldering Treat"] = {
+						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Spawn of Nalaada"] = {
@@ -601,22 +604,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Pair of Tiny Bat Wings"] = {
-						["time"] = 1,
-						["dates"] = {
-							[20200223] = {
-								["time"] = 1,
-								["attempts"] = 1,
-							},
-						},
-						["attempts"] = 1,
-					},
-					["Juvenile Brineshell"] = {
-						["enabled"] = false,
+					["Cinderweb Egg"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
-					["Whistle of Chromatic Bone"] = {
+					["Juvenile Brineshell"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -659,11 +652,6 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Call of the Frozen Blade"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
 					["Adventurous Hopling Pack"] = {
 						["dates"] = {
 							[20200223] = {
@@ -699,11 +687,6 @@ RarityDB = {
 					["Experiment-In-A-Jar"] = {
 						["attempts"] = 20,
 					},
-					["Pearlescent Glimmershell"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
 					["Arachnoid Skitterbot"] = {
 						["time"] = 1,
 						["dates"] = {
@@ -734,7 +717,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Muckbreaths's Bucket"] = {
+					["Putricide's Alchemy Supplies"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -765,9 +748,9 @@ RarityDB = {
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Elementium Back Plate"] = {
-						["known"] = true,
+					["Snarly's Bucket"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Ominous Pile of Snow"] = {
@@ -775,10 +758,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Droplet of Y'Shaarj"] = {
-						["attempts"] = 8,
-					},
-					["Poro"] = {
+					["Red Goren Egg"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -791,12 +771,17 @@ RarityDB = {
 						},
 						["attempts"] = 4,
 					},
+					["Gu'chi Swarmling"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
 					["Firewing"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Putricide's Alchemy Supplies"] = {
+					["Ironbound Collar"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -806,32 +791,37 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Celestial Gift"] = {
-						["enabled"] = false,
+					["Red Helper Box"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
+					},
+					["Scalebrood Hydra"] = {
+						["time"] = 1,
+						["dates"] = {
+							[20200221] = {
+								["time"] = 1,
+								["attempts"] = 1,
+							},
+						},
+						["attempts"] = 1,
 					},
 					["Jingling Bell"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Fragment of Anger"] = {
+					["Daggertooth Frenzy"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Void Collar"] = {
+					["Uuna's Doll"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Overcomplicated Controller"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Parrot Cage (Green Wing Macaw)"] = {
+					["Call of the Frozen Blade"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -841,12 +831,32 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
+					["Time-Locked Box"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
 					["Living Sandling"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Mark of Flame"] = {
+					["Shard of Supremus"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Aldrusian Sproutling"] = {
+						["attempts"] = 1,
+						["time"] = 1,
+						["dates"] = {
+							[20200223] = {
+								["time"] = 1,
+								["attempts"] = 1,
+							},
+						},
+					},
+					["Tiny Grimoire"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -859,74 +869,6 @@ RarityDB = {
 						},
 						["attempts"] = 4,
 					},
-					["Tiny Grimoire"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Imperial Silkworm"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Drudge Remains"] = {
-						["attempts"] = 20,
-					},
-					["Smelly Gravestone"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Servant's Bell"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Clockwork Rocket Bot"] = {
-						["known"] = true,
-						["found"] = true,
-						["enabled"] = false,
-					},
-					["Silithid Mini-Tank"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Ominous Flame"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Tiny Fel Engine Key"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Azure Crane Chick"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Wayward Spirit"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Mogu Statue"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Dark Whelpling"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Direhorn Runt"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
 					["Brilliant Phoenix Hawk Feather"] = {
 						["enabled"] = false,
 						["known"] = true,
@@ -937,7 +879,77 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Blighted Spore"] = {
+					["Servant's Bell"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Chitterspine Needler"] = {
+						["time"] = 1,
+						["dates"] = {
+							[20200221] = {
+								["time"] = 1,
+								["attempts"] = 1,
+							},
+						},
+						["attempts"] = 1,
+					},
+					["Twilight Summoning Portal"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Pearlescent Glimmershell"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Pygmy Direhorn"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Thunderscale Whelpling"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Azure Crane Chick"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Breezy Essence"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Leatherwing Screecher"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Lump of Coal"] = {
+						["known"] = true,
+						["found"] = true,
+						["enabled"] = false,
+					},
+					["Smelly Gravestone"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Fragment of Frozen Bone"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Snowy Panda"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Bloodstone Tunneler"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -954,131 +966,6 @@ RarityDB = {
 							},
 						},
 						["attempts"] = 4,
-					},
-					["Dripping Strider Egg"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Twilight Summoning Portal"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Gooey Sha-ling"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Toxic Wasteling"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Chitterspine Needler"] = {
-						["time"] = 1,
-						["dates"] = {
-							[20200221] = {
-								["time"] = 1,
-								["attempts"] = 1,
-							},
-						},
-						["attempts"] = 1,
-					},
-					["Hyjal Wisp"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Thunderscale Whelpling"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Daggertooth Frenzy"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Coldlight Surfrunner"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Odd Twilight Egg"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Sunscale Hatchling"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Young Talbuk"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Uuna's Doll"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Quivering Blob"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Red Helper Box"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Cat Carrier (Black Tabby)"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Snowsoft Nibbler"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Mana-Warped Egg"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Sunfire Kaliri"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Remains of a Blood Beast"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Sparkleshell Sandcrawler"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Aldrusian Sproutling"] = {
-						["attempts"] = 1,
-						["time"] = 1,
-						["dates"] = {
-							[20200223] = {
-								["time"] = 1,
-								["attempts"] = 1,
-							},
-						},
-					},
-					["Smoldering Treat"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
 					},
 					["Sandkeep"] = {
 						["lastAttempts"] = 1,
@@ -1106,14 +993,127 @@ RarityDB = {
 						["found"] = true,
 						["lastTime"] = 1,
 					},
-					["Ironbound Collar"] = {
+					["Quivering Blob"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Gooey Sha-ling"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Dark Whelpling"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Pygmy Direhorn"] = {
+					["Deviate Hatchling"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Hyjal Wisp"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Fragment of Anger"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Blighted Spore"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["False Knucklebump"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Odd Twilight Egg"] = {
 						["known"] = true,
 						["enabled"] = false,
+						["found"] = true,
+					},
+					["Silithid Mini-Tank"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Ominous Flame"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Muckbreaths's Bucket"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Kovok"] = {
+						["attempts"] = 10,
+					},
+					["Chuck's Bucket"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Cat Carrier (Black Tabby)"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Snowsoft Nibbler"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Void Collar"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Sunfire Kaliri"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Remains of a Blood Beast"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Sparkleshell Sandcrawler"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Mana-Warped Egg"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Emerald Whelpling"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Young Talbuk"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Clockwork Rocket Bot"] = {
+						["known"] = true,
+						["found"] = true,
+						["enabled"] = false,
+					},
+					["Dripping Strider Egg"] = {
+						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 				},
@@ -1134,8 +1134,10 @@ RarityDB = {
 						},
 						["attempts"] = 4,
 					},
-					["Kor'kron Juggernaut"] = {
-						["attempts"] = 5,
+					["Reins of the Azure Drake"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
 					},
 					["Blessed Felcrusher"] = {
 						["enabled"] = false,
@@ -1198,7 +1200,7 @@ RarityDB = {
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Reins of the Drake of the North Wind"] = {
+					["Reins of the Drake of the South Wind"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
@@ -1215,8 +1217,11 @@ RarityDB = {
 								["time"] = 1,
 								["attempts"] = 1,
 							},
+							[20200225] = {
+								["attempts"] = 1,
+							},
 						},
-						["attempts"] = 87,
+						["attempts"] = 89,
 					},
 					["Skullripper"] = {
 						["enabled"] = false,
@@ -1245,11 +1250,11 @@ RarityDB = {
 								["time"] = 35.41799999999785,
 							},
 						},
-						["attempts"] = 74,
+						["attempts"] = 75,
 					},
-					["Red Qiraji Resonating Crystal"] = {
-						["enabled"] = false,
+					["Felsteel Annihilator"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Lambent Mana Ray"] = {
@@ -1273,7 +1278,7 @@ RarityDB = {
 						["attempts"] = 1,
 					},
 					["Reins of the Cobalt Primordial Direhorn"] = {
-						["attempts"] = 77,
+						["attempts"] = 78,
 					},
 					["Captured Dune Scavenger"] = {
 						["time"] = 93.47799999999916,
@@ -1346,14 +1351,14 @@ RarityDB = {
 						},
 						["attempts"] = 3,
 					},
-					["Captured Umber Nightsaber"] = {
+					["Vibrant Mana Ray"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Life-Binder's Handmaiden"] = {
-						["known"] = true,
+					["Darkspore Mana Ray"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Big Love Rocket"] = {
@@ -1366,11 +1371,11 @@ RarityDB = {
 								["time"] = 1,
 								["attempts"] = 1,
 							},
-							[20200220] = {
+							[20200221] = {
 								["time"] = 1,
 								["attempts"] = 1,
 							},
-							[20200221] = {
+							[20200220] = {
 								["time"] = 1,
 								["attempts"] = 1,
 							},
@@ -1385,15 +1390,15 @@ RarityDB = {
 								["time"] = 1,
 								["attempts"] = 1,
 							},
-							[20200223] = {
-								["time"] = 1,
+							[20200218] = {
 								["attempts"] = 1,
 							},
 							[20200222] = {
 								["time"] = 1,
 								["attempts"] = 1,
 							},
-							[20200218] = {
+							[20200223] = {
+								["time"] = 1,
 								["attempts"] = 1,
 							},
 						},
@@ -1554,7 +1559,7 @@ RarityDB = {
 						},
 						["attempts"] = 1,
 					},
-					["Risen Mare"] = {
+					["Garn Nighthowl"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1574,17 +1579,17 @@ RarityDB = {
 								["time"] = 204.1710000000003,
 								["attempts"] = 8,
 							},
-							[20200223] = {
+							[20200218] = {
 								["time"] = 1,
-								["attempts"] = 1,
+								["attempts"] = 2,
 							},
 							[20200222] = {
 								["time"] = 264.6689999999981,
 								["attempts"] = 25,
 							},
-							[20200218] = {
+							[20200223] = {
 								["time"] = 1,
-								["attempts"] = 2,
+								["attempts"] = 1,
 							},
 						},
 						["attempts"] = 36,
@@ -1602,13 +1607,23 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Reins of the Jade Primordial Direhorn"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
+					["Torn Invitation"] = {
+						["dates"] = {
+							[20200224] = {
+								["attempts"] = 1,
+							},
+						},
+						["attempts"] = 1,
 					},
 					["Reins of the Heavenly Onyx Cloud Serpent"] = {
-						["attempts"] = 82,
+						["time"] = 1,
+						["dates"] = {
+							[20200225] = {
+								["time"] = 1,
+								["attempts"] = 1,
+							},
+						},
+						["attempts"] = 84,
 					},
 					["Solar Spirehawk"] = {
 						["attempts"] = 52,
@@ -1646,10 +1661,8 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Reins of the Azure Drake"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
+					["Kor'kron Juggernaut"] = {
+						["attempts"] = 5,
 					},
 					["Island Thunderscale"] = {
 						["dates"] = {
@@ -1664,48 +1677,49 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Darkspore Mana Ray"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Reins of the Drake of the South Wind"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Felsteel Annihilator"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Bloodgorged Hunter"] = {
-						["time"] = 4,
-						["dates"] = {
-							[20200223] = {
-								["time"] = 4,
-								["attempts"] = 4,
-							},
-						},
-						["attempts"] = 4,
-					},
-					["Garn Nighthowl"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Vibrant Mana Ray"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
 					["Antoran Charhound"] = {
 						["attempts"] = 2,
 					},
-					["Clutch of Ji-Kun"] = {
-						["attempts"] = 19,
+					["Reins of the Drake of the North Wind"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Red Qiraji Resonating Crystal"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Captured Umber Nightsaber"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Risen Mare"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
 					},
 					["Reins of the Grand Black War Mammoth Horde"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Life-Binder's Handmaiden"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Clutch of Ji-Kun"] = {
+						["time"] = 37.8849999999984,
+						["dates"] = {
+							[20200225] = {
+								["time"] = 37.8849999999984,
+							},
+						},
+						["attempts"] = 20,
+					},
+					["Deathcharger's Reins"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
@@ -1718,10 +1732,15 @@ RarityDB = {
 						},
 						["attempts"] = 4,
 					},
-					["Deathcharger's Reins"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
+					["Bloodgorged Hunter"] = {
+						["time"] = 4,
+						["dates"] = {
+							[20200223] = {
+								["time"] = 4,
+								["attempts"] = 4,
+							},
+						},
+						["attempts"] = 4,
 					},
 					["Tundra Icehoof"] = {
 						["known"] = true,
@@ -1733,25 +1752,17 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Torn Invitation"] = {
-						["dates"] = {
-							[20200224] = {
-								["attempts"] = 1,
-							},
-						},
-						["attempts"] = 1,
+					["Reins of the Jade Primordial Direhorn"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
 					},
 				},
 				["items"] = {
-					["Toy War Machine"] = {
-						["dates"] = {
-							[20200223] = {
-								["time"] = 1,
-								["attempts"] = 1,
-							},
-						},
-						["attempts"] = 1,
-						["time"] = 1,
+					["Hardened Shell"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
 					},
 					["Foul Belly"] = {
 						["time"] = 1,
@@ -1773,7 +1784,7 @@ RarityDB = {
 						},
 						["attempts"] = 10,
 					},
-					["Flopping Fish"] = {
+					["Kaldorei Light Globe"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1783,10 +1794,10 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Crashin' Thrashin' Shredder Controller"] = {
+					["Shard of Archstone"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
-						["enabled"] = false,
 					},
 					["Pineapple Lounge Cushion"] = {
 						["known"] = true,
@@ -1801,7 +1812,7 @@ RarityDB = {
 						},
 						["attempts"] = 4,
 					},
-					["Ai-Li's Skymirror"] = {
+					["Salyin Battle Banner"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1987,30 +1998,32 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
+					["Botani Camouflage"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
 					["Hozen Beach Ball"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Sira's Extra Cloak"] = {
+					["Pandaren Firework Launcher"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Oomgut Ritual Drum"] = {
-						["dates"] = {
-							[20200223] = {
-								["attempts"] = 4,
-							},
-						},
-						["attempts"] = 4,
-					},
-					["Wisp in a Bottle"] = {
+					["Helpful Wikky's Whistle"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Farwater Conch"] = {
+					["Crashin' Thrashin' Cannon Controller"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Sightless Eye"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2030,25 +2043,25 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Mr. Pinchy"] = {
+					["Red Wooden Sled"] = {
 						["known"] = true,
-						["enabled"] = false,
 						["found"] = true,
+						["enabled"] = false,
 					},
 					["MiniZep Controller"] = {
 						["known"] = true,
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Eternal Warrior's Sigil"] = {
+					["Meerah's Jukebox"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Eternal Kiln"] = {
-						["enabled"] = false,
+					["Crashin' Thrashin' Flyer Controller"] = {
 						["known"] = true,
 						["found"] = true,
+						["enabled"] = false,
 					},
 					["Frenzyheart Brew"] = {
 						["enabled"] = false,
@@ -2100,8 +2113,11 @@ RarityDB = {
 							[20200222] = {
 								["attempts"] = 4,
 							},
+							[20200225] = {
+								["attempts"] = 5,
+							},
 						},
-						["attempts"] = 4,
+						["attempts"] = 9,
 					},
 					["Pilfered Sweeper"] = {
 						["enabled"] = false,
@@ -2148,6 +2164,11 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
+					["Crashin' Thrashin' Shredder Controller"] = {
+						["known"] = true,
+						["found"] = true,
+						["enabled"] = false,
+					},
 					["Red Conservatory Scroll"] = {
 						["enabled"] = false,
 						["known"] = true,
@@ -2163,37 +2184,35 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Red Wooden Sled"] = {
-						["known"] = true,
-						["found"] = true,
-						["enabled"] = false,
+					["Oomgut Ritual Drum"] = {
+						["dates"] = {
+							[20200223] = {
+								["attempts"] = 4,
+							},
+						},
+						["attempts"] = 4,
 					},
 					["The Pigskin"] = {
 						["known"] = true,
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Hardened Shell"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Botani Camouflage"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Shard of Archstone"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
+					["Toy War Machine"] = {
+						["dates"] = {
+							[20200223] = {
+								["time"] = 1,
+								["attempts"] = 1,
+							},
+						},
+						["attempts"] = 1,
+						["time"] = 1,
 					},
 					["Bottled Tornado"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Pandaren Firework Launcher"] = {
+					["Sira's Extra Cloak"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2203,10 +2222,15 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Helpful Wikky's Whistle"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
+					["Underlight Sealamp"] = {
+						["time"] = 56.15999999999985,
+						["dates"] = {
+							[20200221] = {
+								["time"] = 56.15999999999985,
+								["attempts"] = 3,
+							},
+						},
+						["attempts"] = 3,
 					},
 					["Eternal Palace Dining Set"] = {
 						["enabled"] = false,
@@ -2221,15 +2245,10 @@ RarityDB = {
 						},
 						["attempts"] = 4,
 					},
-					["Underlight Sealamp"] = {
-						["time"] = 56.15999999999985,
-						["dates"] = {
-							[20200221] = {
-								["time"] = 56.15999999999985,
-								["attempts"] = 3,
-							},
-						},
-						["attempts"] = 3,
+					["Wisp in a Bottle"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
 					},
 					["Ocean Simulator"] = {
 						["enabled"] = false,
@@ -2246,7 +2265,7 @@ RarityDB = {
 						},
 						["attempts"] = 1,
 					},
-					["Crashin' Thrashin' Cannon Controller"] = {
+					["Farwater Conch"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2256,15 +2275,15 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Sightless Eye"] = {
+					["Flopping Fish"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Kaldorei Light Globe"] = {
+					["Molok Morion"] = {
 						["enabled"] = false,
-						["known"] = true,
 						["found"] = true,
+						["known"] = true,
 					},
 					["For da Blood God!"] = {
 						["enabled"] = false,
@@ -2279,22 +2298,27 @@ RarityDB = {
 					["Golden Hearthstone Card: Lord Jaraxxus"] = {
 						["attempts"] = 5,
 					},
+					["Mr. Pinchy"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
 					["Battle Horn"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Meerah's Jukebox"] = {
+					["Eternal Warrior's Sigil"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Crashin' Thrashin' Flyer Controller"] = {
+					["Eternal Kiln"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
-						["enabled"] = false,
 					},
-					["Salyin Battle Banner"] = {
+					["Ai-Li's Skymirror"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2308,11 +2332,6 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 						["enabled"] = false,
-					},
-					["Faintly Glowing Flagon of Mead"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
 					},
 					["Warbeast Kraal Dinner Bell"] = {
 						["enabled"] = false,
@@ -2329,10 +2348,10 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Molok Morion"] = {
+					["Faintly Glowing Flagon of Mead"] = {
 						["enabled"] = false,
-						["found"] = true,
 						["known"] = true,
+						["found"] = true,
 					},
 				},
 			},
@@ -3533,33 +3552,33 @@ RarityDB = {
 				[1479] = "Baine Rescue",
 				[997] = "Tirisfal Glades",
 				[998] = "Undercity",
-				[1556] = "Hyjal Summit",
+				[1465] = "Scarlet Halls",
 				[1555] = "Tempest Keep",
 				[1554] = "Serpentshrine Cavern",
 				[1553] = "Caverns of Time",
 				[1552] = "Caverns of Time",
 				[1549] = "Mogu'Shan Vaults",
-				[1548] = "Mogu'Shan Vaults",
+				[1469] = "Vision of Orgrimmar",
 				[1547] = "Mogu'Shan Vaults",
 				[1546] = "Mogu'Shan Palace",
 				[1545] = "Mogu'Shan Palace",
-				[1544] = "Mogu'Shan Palace",
+				[1471] = "Emerald Dreamway",
 				[1490] = "Mechagon",
 				[1542] = "Halls of Origination",
 				[1491] = "Mechagon",
 				[1541] = "Halls of Origination",
 				[1540] = "Halls of Origination",
-				[1531] = "Crapopolis",
+				[1473] = "Chamber of Heart",
 				[1493] = "Mechagon",
 				[1523] = "Solesa Naksu [DNT]",
 				[1494] = "Mechagon",
-				[1505] = "Stratholme",
+				[1009] = "Atul'Aman",
 				[1004] = "Kings' Rest",
 				[1519] = "The Eternal Palace",
 				[1517] = "The Eternal Palace",
 				[1515] = "The Eternal Palace",
 				[1497] = "Mechagon",
-				[1513] = "The Eternal Palace",
+				[1475] = "The Emerald Dream",
 				[1467] = "Outland",
 				[1521] = "Karazhan Catacombs",
 				[1499] = "",
@@ -3570,29 +3589,29 @@ RarityDB = {
 				[1246] = "Blasted Lands",
 				[1502] = "Snowblossom Village",
 				[1247] = "Tirisfal Glades",
-				[1475] = "The Emerald Dream",
+				[1513] = "The Eternal Palace",
 				[1248] = "Silverpine Forest",
 				[1504] = "Nazjatar",
 				[1249] = "Western Plaguelands",
-				[1009] = "Atul'Aman",
+				[1505] = "Stratholme",
 				[1250] = "Eastern Plaguelands",
-				[1473] = "Chamber of Heart",
+				[1531] = "Crapopolis",
 				[1251] = "Hillsbrad Foothills",
 				[1010] = "The MOTHERLODE!!",
 				[1252] = "The Hinterlands",
-				[1471] = "Emerald Dreamway",
+				[1544] = "Mogu'Shan Palace",
 				[1253] = "Dun Morogh",
 				[1011] = "Zandalar",
 				[1254] = "Searing Gorge",
-				[1469] = "Vision of Orgrimmar",
+				[1548] = "Mogu'Shan Vaults",
 				[1255] = "Burning Steppes",
 				[1012] = "Stormwind City",
 				[1256] = "Elwynn Forest",
 				[1512] = "The Eternal Palace",
 				[1257] = "Deadwind Pass",
-				[1465] = "Scarlet Halls",
+				[1556] = "Hyjal Summit",
 			},
-			["lastRevision"] = 694,
+			["lastRevision"] = 695,
 			["accountWideStatistics"] = {
 				["Player-3683-0B9BB286"] = {
 					["playerName"] = "Tynkster",
@@ -3659,7 +3678,7 @@ RarityDB = {
 						[13364] = 0,
 						[13619] = 0,
 						[13366] = 0,
-						[8170] = 0,
+						[13614] = 0,
 						[7923] = 0,
 						[8172] = 0,
 						[7924] = 0,
@@ -3667,20 +3686,20 @@ RarityDB = {
 						[13373] = 0,
 						[4687] = 0,
 						[8638] = 0,
-						[9279] = 0,
-						[13365] = 0,
-						[13374] = 0,
+						[5560] = 0,
+						[13594] = 0,
+						[13616] = 0,
 						[13379] = 0,
 						[12745] = 0,
 						[13618] = 0,
 						[5566] = 0,
 						[11986] = 0,
-						[13616] = 0,
-						[13594] = 0,
-						[5560] = 0,
+						[13374] = 0,
+						[13365] = 0,
+						[9279] = 0,
 						[12752] = 0,
 						[12118] = 0,
-						[13614] = 0,
+						[8170] = 0,
 					},
 					["server"] = "Dalaran",
 				},
@@ -3699,16 +3718,16 @@ RarityDB = {
 						[8573] = 0,
 						[6797] = 0,
 						[6798] = 0,
-						[6989] = 82,
-						[6990] = 86,
+						[6989] = 83,
+						[6990] = 87,
 						[11893] = 3,
 						[11894] = 0,
 						[11895] = 0,
 						[11896] = 0,
 						[9365] = 13,
 						[4653] = 3,
-						[8146] = 74,
-						[8147] = 77,
+						[8146] = 75,
+						[8147] = 78,
 						[8620] = 2,
 						[8621] = 0,
 						[8622] = 3,
@@ -3749,7 +3768,7 @@ RarityDB = {
 						[13364] = 0,
 						[13365] = 0,
 						[13366] = 0,
-						[11958] = 0,
+						[10929] = 4,
 						[7923] = 0,
 						[11957] = 1,
 						[7924] = 24,
@@ -3757,20 +3776,20 @@ RarityDB = {
 						[13373] = 0,
 						[4687] = 17,
 						[5569] = 8,
-						[8172] = 18,
-						[8638] = 0,
-						[13374] = 0,
+						[5570] = 6,
+						[9279] = 52,
+						[13594] = 0,
 						[13379] = 1,
 						[12745] = 0,
 						[13618] = 0,
 						[13619] = 0,
 						[11986] = 0,
-						[13594] = 0,
-						[9279] = 52,
-						[5570] = 6,
+						[13374] = 0,
+						[8638] = 0,
+						[8172] = 19,
 						[12752] = 0,
 						[12118] = 1,
-						[10929] = 4,
+						[11958] = 0,
 					},
 					["server"] = "Argent Dawn",
 				},
@@ -3839,7 +3858,7 @@ RarityDB = {
 						[13364] = 0,
 						[13365] = 0,
 						[13366] = 0,
-						[10929] = 0,
+						[8170] = 0,
 						[7923] = 0,
 						[8172] = 0,
 						[7924] = 0,
@@ -3847,26 +3866,26 @@ RarityDB = {
 						[13373] = 0,
 						[4687] = 0,
 						[9279] = 0,
-						[5570] = 0,
-						[13594] = 0,
-						[5569] = 0,
+						[13618] = 0,
+						[13374] = 0,
+						[8638] = 0,
 						[13379] = 0,
 						[12745] = 0,
 						[5566] = 0,
 						[13619] = 0,
 						[11986] = 0,
-						[8638] = 0,
-						[13374] = 0,
-						[13618] = 0,
+						[5569] = 0,
+						[13594] = 0,
+						[5570] = 0,
 						[12752] = 0,
 						[12118] = 0,
-						[8170] = 0,
+						[10929] = 0,
 					},
 					["server"] = "Black Dragonflight",
 				},
 			},
 			["trackedGroup"] = "mounts",
-			["trackedItem"] = 140495,
+			["trackedItem"] = 95059,
 		},
 	},
 }

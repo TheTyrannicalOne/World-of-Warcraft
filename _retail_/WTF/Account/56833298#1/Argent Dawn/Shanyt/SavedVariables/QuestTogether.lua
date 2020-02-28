@@ -17,15 +17,34 @@ QuestTogether = {
 				"1/1 Win a Battleground", -- [3]
 			},
 		},
+		[13721] = {
+			["title"] = "The Valiant's Charge",
+			["objectives"] = {
+				"10/25 Valiant's Seal", -- [1]
+			},
+		},
 		[49032] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
+		[53435] = {
+			["title"] = "Azerite for the Horde",
+			["objectives"] = {
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
+			},
+		},
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[56352] = {
@@ -40,10 +59,37 @@ QuestTogether = {
 				"0/1 King Mechagon slain", -- [1]
 			},
 		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
 		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[56356] = {
+			["title"] = "The Eternal Palace: Queen's Gambit",
+			["objectives"] = {
+				"Queen Azshara defeated", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
 			},
 		},
 		[47118] = {
@@ -53,29 +99,10 @@ QuestTogether = {
 				"1/1 Worshipper's Scrawlings", -- [2]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57402] = {
+			["title"] = "Reconstructing \"The Curse of Stone\"",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
-		[56356] = {
-			["title"] = "The Eternal Palace: Queen's Gambit",
-			["objectives"] = {
-				"Queen Azshara defeated", -- [1]
+				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
 		[48642] = {
@@ -96,16 +123,20 @@ QuestTogether = {
 				"Win a battleground", -- [1]
 			},
 		},
+		[54132] = {
+			["title"] = "Horde of Heroes",
+			["objectives"] = {
+				"4/4 Alliance targets attacked in Stormsong Valley", -- [1]
+				"1/1 Meet up with Usha Eyegouge", -- [2]
+				"5/5 Siege Weapons destroyed", -- [3]
+				"15/15 7th Legion Troops slain", -- [4]
+				"1/1 Bennel Swiftstrike slain", -- [5]
+			},
+		},
 		[57743] = {
 			["title"] = "Conquest's Reward",
 			["objectives"] = {
 				"0/500 Earn Conquest", -- [1]
-			},
-		},
-		[57402] = {
-			["title"] = "Reconstructing \"The Curse of Stone\"",
-			["objectives"] = {
-				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
 		[44989] = {
@@ -114,15 +145,16 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
 			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[58632] = {
@@ -131,31 +163,28 @@ QuestTogether = {
 				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
-		[13721] = {
-			["title"] = "The Valiant's Charge",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"10/25 Valiant's Seal", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[42422] = {
+			["title"] = "The Wardens",
+			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[49133] = {
 			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
 				"0/4 Sigil of the Dark Titan", -- [1]
-			},
-		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
-			["objectives"] = {
 			},
 		},
 		[49015] = {
@@ -174,8 +203,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

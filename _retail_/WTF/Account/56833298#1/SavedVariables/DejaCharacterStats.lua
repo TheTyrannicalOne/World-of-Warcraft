@@ -22,8 +22,8 @@ DejaCharacterStatsDB = {
 		["dejacharacterstatsItemLevelChecked"] = {
 			["ItemLevelTwoDecimalsSetChecked"] = true,
 			["ItemLevelEQ_AV_SetChecked"] = true,
-			["ItemLevelDecimalsSetChecked"] = false,
 			["ItemLevelClassColorSetChecked"] = true,
+			["ItemLevelDecimalsSetChecked"] = false,
 		},
 		["dejacharacterstatsLoginCounter"] = {
 			["Count"] = 0,
@@ -254,11 +254,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
+			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
-			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -452,11 +452,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -649,11 +649,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "CR_CORRUPTION_RESISTANCE",
@@ -859,11 +859,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -1057,11 +1057,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -1257,11 +1257,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -1457,11 +1457,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [49]
 		["uniqueKey"] = "Tyrann:Zul'jin:1",
 	},
@@ -1594,11 +1594,11 @@ DCS_ClassSpecDB = {
 		}, -- [37]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = false,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = false,
+			["hideAt"] = 0,
 		}, -- [38]
 		{
 			["statKey"] = "RatingCategory",
@@ -1858,11 +1858,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -2058,11 +2058,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -2258,18 +2258,18 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
+			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
-			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
 		}, -- [50]
 		["uniqueKey"] = "Tynster:Dalaran:2",
 	},
-	["Gangus:Runetotem:2"] = {
+	["Gillbourn:Runetotem:2"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
@@ -2303,10 +2303,10 @@ DCS_ClassSpecDB = {
 		}, -- [10]
 		{
 			["statKey"] = "STRENGTH",
+			["hidden"] = true,
 		}, -- [11]
 		{
 			["statKey"] = "AGILITY",
-			["hidden"] = true,
 		}, -- [12]
 		{
 			["statKey"] = "INTELLECT",
@@ -2346,6 +2346,7 @@ DCS_ClassSpecDB = {
 		}, -- [23]
 		{
 			["statKey"] = "DCS_RUNEREGEN",
+			["hidden"] = true,
 		}, -- [24]
 		{
 			["statKey"] = "FOCUS_REGEN",
@@ -2464,7 +2465,7 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DCS_MOVESPEED",
 		}, -- [50]
-		["uniqueKey"] = "Gangus:Runetotem:2",
+		["uniqueKey"] = "Gillbourn:Runetotem:2",
 	},
 	["Goramor:Runetotem:1"] = {
 		{
@@ -2652,11 +2653,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -2850,11 +2851,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "CR_CORRUPTION_RESISTANCE",
@@ -3060,11 +3061,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -3260,18 +3261,18 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
 		}, -- [50]
 		["uniqueKey"] = "Darnastris:Dalaran:3",
 	},
-	["Brewnheimer:Darkspear:1"] = {
+	["Dialdaas:Darkspear:2"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
@@ -3305,7 +3306,6 @@ DCS_ClassSpecDB = {
 		}, -- [10]
 		{
 			["statKey"] = "STRENGTH",
-			["hidden"] = true,
 		}, -- [11]
 		{
 			["statKey"] = "AGILITY",
@@ -3313,165 +3313,159 @@ DCS_ClassSpecDB = {
 		}, -- [12]
 		{
 			["statKey"] = "INTELLECT",
+			["hidden"] = true,
 		}, -- [13]
 		{
 			["statKey"] = "STAMINA",
 		}, -- [14]
 		{
-			["statKey"] = "ARMOR",
+			["statKey"] = "OffenseCategory",
 		}, -- [15]
 		{
-			["statKey"] = "OffenseCategory",
+			["statKey"] = "ATTACK_DAMAGE",
 		}, -- [16]
 		{
-			["statKey"] = "ATTACK_DAMAGE",
-			["hidden"] = true,
+			["statKey"] = "ATTACK_AP",
 		}, -- [17]
 		{
-			["statKey"] = "ATTACK_AP",
-			["hidden"] = true,
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
 		}, -- [18]
 		{
-			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
-			["hidden"] = true,
+			["statKey"] = "WEAPON_DPS",
 		}, -- [19]
 		{
-			["statKey"] = "WEAPON_DPS",
+			["statKey"] = "SPELLPOWER",
 			["hidden"] = true,
 		}, -- [20]
 		{
-			["statKey"] = "SPELLPOWER",
+			["statKey"] = "MANAREGEN",
+			["hidden"] = true,
 		}, -- [21]
 		{
-			["statKey"] = "MANAREGEN",
+			["statKey"] = "ENERGY_REGEN",
 		}, -- [22]
 		{
-			["statKey"] = "ENERGY_REGEN",
+			["statKey"] = "DCS_RUNEREGEN",
 		}, -- [23]
 		{
-			["statKey"] = "DCS_RUNEREGEN",
-			["hidden"] = true,
+			["statKey"] = "FOCUS_REGEN",
 		}, -- [24]
 		{
-			["statKey"] = "FOCUS_REGEN",
+			["statKey"] = "GCD",
 		}, -- [25]
 		{
-			["statKey"] = "GCD",
-		}, -- [26]
-		{
 			["statKey"] = "EnhancementsCategory",
-		}, -- [27]
+		}, -- [26]
 		{
 			["statKey"] = "CRITCHANCE",
 			["hideAt"] = 0,
-		}, -- [28]
+		}, -- [27]
 		{
 			["statKey"] = "HASTE",
 			["hideAt"] = 0,
-		}, -- [29]
+		}, -- [28]
 		{
 			["statKey"] = "VERSATILITY",
 			["hideAt"] = 0,
-		}, -- [30]
+		}, -- [29]
 		{
 			["statKey"] = "MASTERY",
 			["hideAt"] = 0,
-		}, -- [31]
+		}, -- [30]
 		{
 			["statKey"] = "LIFESTEAL",
 			["hideAt"] = 0,
-		}, -- [32]
+		}, -- [31]
 		{
 			["statKey"] = "AVOIDANCE",
 			["hideAt"] = 0,
-		}, -- [33]
+		}, -- [32]
 		{
 			["statKey"] = "DefenseCategory",
-			["hidden"] = true,
+		}, -- [33]
+		{
+			["statKey"] = "ARMOR",
 		}, -- [34]
 		{
 			["statKey"] = "DODGE",
 			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [35]
 		{
 			["statKey"] = "PARRY",
 			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [36]
 		{
 			["statKey"] = "BLOCK",
 			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [37]
+		{
+			["statKey"] = "STAGGER",
+			["hidden"] = false,
+			["hideAt"] = 0,
+			["roles"] = {
+				"TANK", -- [1]
+			},
+		}, -- [38]
 		{
 			["statKey"] = "RatingCategory",
 			["hidden"] = true,
-		}, -- [38]
+		}, -- [39]
 		{
 			["statKey"] = "CRITCHANCE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [39]
+		}, -- [40]
 		{
 			["statKey"] = "HASTE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [40]
+		}, -- [41]
 		{
 			["statKey"] = "VERSATILITY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [41]
+		}, -- [42]
 		{
 			["statKey"] = "MASTERY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [42]
+		}, -- [43]
 		{
 			["statKey"] = "LIFESTEAL_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [43]
+		}, -- [44]
 		{
 			["statKey"] = "AVOIDANCE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [44]
+		}, -- [45]
 		{
 			["statKey"] = "DODGE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [45]
+		}, -- [46]
 		{
 			["statKey"] = "PARRY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [46]
+		}, -- [47]
 		{
 			["statKey"] = "SPEED_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [47]
+		}, -- [48]
 		{
 			["statKey"] = "SPEED",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [48]
-		{
-			["statKey"] = "STAGGER",
-			["roles"] = {
-				"TANK", -- [1]
-			},
-			["hidden"] = true,
-			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
 		}, -- [50]
-		["uniqueKey"] = "Brewnheimer:Darkspear:1",
+		["uniqueKey"] = "Dialdaas:Darkspear:2",
 	},
-	["Tyriinid:Dalaran:1"] = {
+	["Thorinbane:Dalaran:1"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
@@ -3505,7 +3499,6 @@ DCS_ClassSpecDB = {
 		}, -- [10]
 		{
 			["statKey"] = "STRENGTH",
-			["hidden"] = true,
 		}, -- [11]
 		{
 			["statKey"] = "AGILITY",
@@ -3513,6 +3506,7 @@ DCS_ClassSpecDB = {
 		}, -- [12]
 		{
 			["statKey"] = "INTELLECT",
+			["hidden"] = true,
 		}, -- [13]
 		{
 			["statKey"] = "STAMINA",
@@ -3525,32 +3519,29 @@ DCS_ClassSpecDB = {
 		}, -- [16]
 		{
 			["statKey"] = "ATTACK_DAMAGE",
-			["hidden"] = true,
 		}, -- [17]
 		{
 			["statKey"] = "ATTACK_AP",
-			["hidden"] = true,
 		}, -- [18]
 		{
 			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
-			["hidden"] = true,
 		}, -- [19]
 		{
 			["statKey"] = "WEAPON_DPS",
-			["hidden"] = true,
 		}, -- [20]
 		{
 			["statKey"] = "SPELLPOWER",
+			["hidden"] = true,
 		}, -- [21]
 		{
 			["statKey"] = "MANAREGEN",
+			["hidden"] = true,
 		}, -- [22]
 		{
 			["statKey"] = "ENERGY_REGEN",
 		}, -- [23]
 		{
 			["statKey"] = "DCS_RUNEREGEN",
-			["hidden"] = true,
 		}, -- [24]
 		{
 			["statKey"] = "FOCUS_REGEN",
@@ -3660,8 +3651,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -3669,7 +3660,7 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DCS_MOVESPEED",
 		}, -- [50]
-		["uniqueKey"] = "Tyriinid:Dalaran:1",
+		["uniqueKey"] = "Thorinbane:Dalaran:1",
 	},
 	["Panboozled:Runetotem:2"] = {
 		{
@@ -3858,11 +3849,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -4058,11 +4049,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -4256,11 +4247,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
@@ -4597,7 +4588,7 @@ DCS_ClassSpecDB = {
 		}, -- [42]
 		["uniqueKey"] = "Xerret:Illidan:2",
 	},
-	["Thorinbane:Dalaran:1"] = {
+	["Tyriinid:Dalaran:1"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
@@ -4631,6 +4622,7 @@ DCS_ClassSpecDB = {
 		}, -- [10]
 		{
 			["statKey"] = "STRENGTH",
+			["hidden"] = true,
 		}, -- [11]
 		{
 			["statKey"] = "AGILITY",
@@ -4638,7 +4630,6 @@ DCS_ClassSpecDB = {
 		}, -- [12]
 		{
 			["statKey"] = "INTELLECT",
-			["hidden"] = true,
 		}, -- [13]
 		{
 			["statKey"] = "STAMINA",
@@ -4651,29 +4642,32 @@ DCS_ClassSpecDB = {
 		}, -- [16]
 		{
 			["statKey"] = "ATTACK_DAMAGE",
+			["hidden"] = true,
 		}, -- [17]
 		{
 			["statKey"] = "ATTACK_AP",
+			["hidden"] = true,
 		}, -- [18]
 		{
 			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+			["hidden"] = true,
 		}, -- [19]
 		{
 			["statKey"] = "WEAPON_DPS",
+			["hidden"] = true,
 		}, -- [20]
 		{
 			["statKey"] = "SPELLPOWER",
-			["hidden"] = true,
 		}, -- [21]
 		{
 			["statKey"] = "MANAREGEN",
-			["hidden"] = true,
 		}, -- [22]
 		{
 			["statKey"] = "ENERGY_REGEN",
 		}, -- [23]
 		{
 			["statKey"] = "DCS_RUNEREGEN",
+			["hidden"] = true,
 		}, -- [24]
 		{
 			["statKey"] = "FOCUS_REGEN",
@@ -4792,9 +4786,9 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DCS_MOVESPEED",
 		}, -- [50]
-		["uniqueKey"] = "Thorinbane:Dalaran:1",
+		["uniqueKey"] = "Tyriinid:Dalaran:1",
 	},
-	["Dialdaas:Darkspear:2"] = {
+	["Brewnheimer:Darkspear:1"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
@@ -4828,6 +4822,7 @@ DCS_ClassSpecDB = {
 		}, -- [10]
 		{
 			["statKey"] = "STRENGTH",
+			["hidden"] = true,
 		}, -- [11]
 		{
 			["statKey"] = "AGILITY",
@@ -4835,159 +4830,165 @@ DCS_ClassSpecDB = {
 		}, -- [12]
 		{
 			["statKey"] = "INTELLECT",
-			["hidden"] = true,
 		}, -- [13]
 		{
 			["statKey"] = "STAMINA",
 		}, -- [14]
 		{
-			["statKey"] = "OffenseCategory",
+			["statKey"] = "ARMOR",
 		}, -- [15]
 		{
-			["statKey"] = "ATTACK_DAMAGE",
+			["statKey"] = "OffenseCategory",
 		}, -- [16]
 		{
-			["statKey"] = "ATTACK_AP",
+			["statKey"] = "ATTACK_DAMAGE",
+			["hidden"] = true,
 		}, -- [17]
 		{
-			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+			["statKey"] = "ATTACK_AP",
+			["hidden"] = true,
 		}, -- [18]
 		{
-			["statKey"] = "WEAPON_DPS",
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+			["hidden"] = true,
 		}, -- [19]
 		{
-			["statKey"] = "SPELLPOWER",
+			["statKey"] = "WEAPON_DPS",
 			["hidden"] = true,
 		}, -- [20]
 		{
-			["statKey"] = "MANAREGEN",
-			["hidden"] = true,
+			["statKey"] = "SPELLPOWER",
 		}, -- [21]
 		{
-			["statKey"] = "ENERGY_REGEN",
+			["statKey"] = "MANAREGEN",
 		}, -- [22]
 		{
-			["statKey"] = "DCS_RUNEREGEN",
+			["statKey"] = "ENERGY_REGEN",
 		}, -- [23]
 		{
-			["statKey"] = "FOCUS_REGEN",
+			["statKey"] = "DCS_RUNEREGEN",
+			["hidden"] = true,
 		}, -- [24]
 		{
-			["statKey"] = "GCD",
+			["statKey"] = "FOCUS_REGEN",
 		}, -- [25]
 		{
-			["statKey"] = "EnhancementsCategory",
+			["statKey"] = "GCD",
 		}, -- [26]
+		{
+			["statKey"] = "EnhancementsCategory",
+		}, -- [27]
 		{
 			["statKey"] = "CRITCHANCE",
 			["hideAt"] = 0,
-		}, -- [27]
+		}, -- [28]
 		{
 			["statKey"] = "HASTE",
 			["hideAt"] = 0,
-		}, -- [28]
+		}, -- [29]
 		{
 			["statKey"] = "VERSATILITY",
 			["hideAt"] = 0,
-		}, -- [29]
+		}, -- [30]
 		{
 			["statKey"] = "MASTERY",
 			["hideAt"] = 0,
-		}, -- [30]
+		}, -- [31]
 		{
 			["statKey"] = "LIFESTEAL",
 			["hideAt"] = 0,
-		}, -- [31]
+		}, -- [32]
 		{
 			["statKey"] = "AVOIDANCE",
 			["hideAt"] = 0,
-		}, -- [32]
-		{
-			["statKey"] = "DefenseCategory",
 		}, -- [33]
 		{
-			["statKey"] = "ARMOR",
+			["statKey"] = "DefenseCategory",
+			["hidden"] = true,
 		}, -- [34]
 		{
 			["statKey"] = "DODGE",
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [35]
 		{
 			["statKey"] = "PARRY",
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [36]
 		{
 			["statKey"] = "BLOCK",
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [37]
-		{
-			["statKey"] = "STAGGER",
-			["roles"] = {
-				"TANK", -- [1]
-			},
-			["hideAt"] = 0,
-			["hidden"] = false,
-		}, -- [38]
 		{
 			["statKey"] = "RatingCategory",
 			["hidden"] = true,
-		}, -- [39]
+		}, -- [38]
 		{
 			["statKey"] = "CRITCHANCE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [40]
+		}, -- [39]
 		{
 			["statKey"] = "HASTE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [41]
+		}, -- [40]
 		{
 			["statKey"] = "VERSATILITY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [42]
+		}, -- [41]
 		{
 			["statKey"] = "MASTERY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [43]
+		}, -- [42]
 		{
 			["statKey"] = "LIFESTEAL_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [44]
+		}, -- [43]
 		{
 			["statKey"] = "AVOIDANCE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [45]
+		}, -- [44]
 		{
 			["statKey"] = "DODGE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [46]
+		}, -- [45]
 		{
 			["statKey"] = "PARRY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [47]
+		}, -- [46]
 		{
 			["statKey"] = "SPEED_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [48]
+		}, -- [47]
 		{
 			["statKey"] = "SPEED",
 			["hideAt"] = 0,
 			["hidden"] = true,
+		}, -- [48]
+		{
+			["statKey"] = "STAGGER",
+			["hideAt"] = 0,
+			["hidden"] = true,
+			["roles"] = {
+				"TANK", -- [1]
+			},
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
 		}, -- [50]
-		["uniqueKey"] = "Dialdaas:Darkspear:2",
+		["uniqueKey"] = "Brewnheimer:Darkspear:1",
 	},
-	["Gillbourn:Runetotem:2"] = {
+	["Gangus:Runetotem:2"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
@@ -5021,10 +5022,10 @@ DCS_ClassSpecDB = {
 		}, -- [10]
 		{
 			["statKey"] = "STRENGTH",
-			["hidden"] = true,
 		}, -- [11]
 		{
 			["statKey"] = "AGILITY",
+			["hidden"] = true,
 		}, -- [12]
 		{
 			["statKey"] = "INTELLECT",
@@ -5064,7 +5065,6 @@ DCS_ClassSpecDB = {
 		}, -- [23]
 		{
 			["statKey"] = "DCS_RUNEREGEN",
-			["hidden"] = true,
 		}, -- [24]
 		{
 			["statKey"] = "FOCUS_REGEN",
@@ -5177,13 +5177,13 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
 		}, -- [50]
-		["uniqueKey"] = "Gillbourn:Runetotem:2",
+		["uniqueKey"] = "Gangus:Runetotem:2",
 	},
 	["Narisaric:Dalaran:2"] = {
 		{
@@ -5372,11 +5372,11 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "DCS_MOVESPEED",
