@@ -6,7 +6,6 @@ BigWigs3DB = {
 			[-1358] = true,
 			[-557] = true,
 			[-573] = true,
-			[-367] = true,
 			[74] = true,
 			[76] = true,
 			[-575] = true,
@@ -14,6 +13,7 @@ BigWigs3DB = {
 			[-607] = true,
 			[-1152] = true,
 			[-510] = true,
+			[-367] = true,
 			[-609] = true,
 			[-563] = true,
 			[-437] = true,
@@ -67,9 +67,9 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.0000610351563,
+					["BigWigsEmphasizeAnchor_width"] = 319.9999389648438,
 					["BigWigsEmphasizeAnchor_height"] = 21.9999885559082,
 					["BigWigsAnchor_height"] = 16.00003051757813,
-					["BigWigsEmphasizeAnchor_width"] = 319.9999389648438,
 				},
 			},
 		},
@@ -80,6 +80,19 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["height"] = 120.0000534057617,
+					["font"] = "Friz Quadrata TT",
+					["width"] = 139.9999847412109,
+				},
+			},
+		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -87,22 +100,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
-		},
 		["BigWigs_Plugins_Wipe"] = {
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["width"] = 139.9999847412109,
-					["font"] = "Friz Quadrata TT",
-					["height"] = 120.0000534057617,
-				},
-			},
-		},
-		["BigWigs_Bosses_T'zane"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},

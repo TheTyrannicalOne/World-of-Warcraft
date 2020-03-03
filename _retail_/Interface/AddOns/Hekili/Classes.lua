@@ -18,7 +18,7 @@ local RegisterEvent = ns.RegisterEvent
 local formatKey = ns.formatKey
 local getSpecializationKey = ns.getSpecializationKey
 
-local wipe = table.wipe
+local insert, wipe = table.insert, table.wipe
 
 
 local mt_resource = ns.metatables.mt_resource
@@ -53,6 +53,9 @@ local specTemplate = {
 
     throttleRefresh = false,
     maxRefresh = 10,
+
+    throttleTime = false,
+    maxTime = 33,
 
     -- Toggles
     custom1Name = "Custom 1",
@@ -2418,6 +2421,8 @@ do
     f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
     f:SetScript("OnEvent", function( event )
+        if not state.equipped.ashvanes_razor_coral then return end
+
         local _, subtype, _, sourceGUID, sourceName, _, _, destGUID, destName, destFlags, _, spellID, spellName = CombatLogGetCurrentEventInfo()
 
         if sourceGUID == state.GUID and ( subtype == "SPELL_AURA_APPLIED" or subtype == "SPELL_AURA_REFRESH" or subtype == "SPELL_AURA_APPLIED_DOSE" ) and spellID == 303568 then
@@ -2426,6 +2431,8 @@ do
             coralStacks = ( subtype == "SPELL_AURA_APPLIED_DOSE" ) and ( coralStacks + 1 ) or 1
         end
     end )
+
+    Hekili:ProfileFrame( "RazorCoralFrame", f )
 
     all:RegisterStateExpr( "coral_time_to_30", function() 
         if coralGUID == 0 then return 3600 end
@@ -3749,138 +3756,205 @@ all:RegisterAura( "gryphons_pride", {
 } )
 
 
-all:RegisterAbility( "dread_combatants_medallion", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
 
-    item = 161811,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "rapid_adaptation" )
-    end,
-} )
-
-all:RegisterAura( "rapid_adaptation", {
-    id = 277179,
-    duration = 20,
-    max_stack = 1
-} )
-
-
-all:RegisterAbility( "dread_combatants_insignia", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 161813,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "dig_deep" )
-    end,
-} )
-
-all:RegisterAura( "dig_deep", {
-    id = 277185,
-    duration = 15,
-    max_stack = 1
-} )
-
-
--- Dread Combatant's Badge
-all:RegisterAura( "taste_of_victory", {
-    id = 277182,
-    duration = 20,
-    max_stack = 1
-} )
-
-
-all:RegisterAbility( "dread_gladiators_medallion", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 161674,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "rapid_adaptation" )
-    end,
-} )
-
-
-all:RegisterAbility( "dread_gladiators_emblem", {
-    cast = 0,
-    cooldown = 90,
-    gcd = "off",
-
-    item = 161675,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "toughen_up" )
-    end,
-} )
-
-all:RegisterAura( "toughen_up", {
-    id = 277187,
-    duration = 15,
-    max_stack = 1,
-} )
-
-
-all:RegisterAbility( "dread_gladiators_badge", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 161902,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "dig_deep" )
-    end,
-} )
-
-
-all:RegisterAbility( "corrupted_gladiators_badge", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 172669,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "dig_deep" )
-    end
-} )
-
--- NYI, because potentially you have no enemies w/ Corruption w/in range.
---[[
-all:RegisterAbility( "corrupted_gladiators_breach", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 174276,
-    toggle = "defensives",
-
-    handler = function ()
-        applyBuff( "void_jaunt" )
-        -- +Debuff?
-    end,
-
-    auras = {
-        void_jaunt = {
-            id = 314517,
-            duration = 6,
-            max_stack = 1,
-        }
+-- PvP Trinkets
+-- Medallions
+do
+    local pvp_medallions = {
+        { "dread_aspirants_medallion", 162897 },
+        { "dread_gladiators_medallion", 161674 },
+        { "sinister_aspirants_medallion", 165220 },
+        { "sinister_gladiators_medallion", 165055 },
+        { "notorious_aspirants_medallion", 167525 },
+        { "notorious_gladiators_medallion", 167377 },
+        { "corrupted_aspirants_medallion", 172846 },
+        { "corrupted_gladiators_medallion", 172666 },
     }
-} ) ]]
+
+    local pvp_medallions_copy = {}
+
+    for _, v in ipairs( pvp_medallions ) do
+        insert( pvp_medallions_copy, v[1] )
+        all:RegisterGear( v[1], v[2] )
+    end
+
+    all:RegisterAbility( "gladiators_medallion", {
+        cast = 0,
+        cooldown = 120,
+        gcd = "off",
+
+        item = function ()
+            local m
+            for _, medallion in ipairs( pvp_medallions ) do
+                m = medallion[ 2 ]
+                if equipped[ m ] then return m end
+            end            
+            return m
+        end,
+        
+        toggle = "cooldowns",
+
+        handler = function ()
+            applyBuff( "gladiators_medallion" )
+        end,
+
+        copy = pvp_medallions_copy
+    } )
+
+    all:RegisterAura( "gladiators_medallion", {
+        id = 277179,
+        duration = 20,
+        max_stack = 1
+    } )
+end 
+
+-- Badges
+do
+    local pvp_badges = {
+        { "dread_aspirants_badge", 162966 },
+        { "dread_gladiators_badge", 161902 },
+        { "sinister_aspirants_badge", 165223 },
+        { "sinister_gladiators_badge", 165058 },
+        { "notorious_aspirants_badge", 167528 },
+        { "notorious_gladiators_badge", 167380 },
+        { "corrupted_aspirants_badge", 172849 },
+        { "corrupted_gladiators_badge", 172669 },
+    }
+
+    local pvp_badges_copy = {}
+
+    for _, v in ipairs( pvp_badges ) do
+        insert( pvp_badges_copy, v[1] )
+
+        all:RegisterGear( v[1], v[2] )
+    end
+
+    all:RegisterAbility( "gladiators_badge", {
+        cast = 0,
+        cooldown = 120,
+        gcd = "off",
+
+        item = function ()
+            local b
+            for _, badge in ipairs( pvp_badges ) do
+                b = badge[ 2 ]
+                if equipped[ b ] then return b end
+            end
+            return b
+        end,
+            
+        toggle = "cooldowns",
+
+        handler = function ()
+            applyBuff( "gladiators_badge" )
+        end,
+
+        copy = pvp_badges_copy
+    } )
+
+    all:RegisterAura( "gladiators_badge", {
+        id = 277185,
+        duration = 15,
+        max_stack = 1
+    } )
+end 
+
+
+-- Insignias -- N/A, not on-use.
+all:RegisterAura( "gladiators_insignia", {
+    id = 277181,
+    duration = 20,
+    max_stack = 1
+} )    
+
+
+-- Safeguard (equipped, not on-use)
+all:RegisterAura( "gladiators_safeguard", {
+    id = 286342,
+    duration = 10,
+    max_stack = 1
+} )
+
+
+-- Emblems
+do
+    local pvp_emblems = {
+        dread_combatants_emblem = 161812,
+        dread_aspirants_emblem = 162898,
+        dread_gladiators_emblem = 161675,
+        sinister_aspirants_emblem = 165221,
+        sinister_gladiators_emblem = 165056,
+        notorious_gladiators_emblem = 167378,
+        notorious_aspirants_emblem = 167526,
+        corrupted_gladiators_emblem = 172667,
+        corrupted_aspirants_emblem = 172847
+    }
+
+    local pvp_emblems_copy = {}
+
+    for k in pairs( pvp_emblems ) do
+        insert( pvp_emblems_copy, k )
+    end
+
+    
+    all:RegisterAbility( "gladiators_emblem", {
+        cast = 0,
+        cooldown = 90,
+        gcd = "off",
+
+        item = function ()
+            local e
+            for _, emblem in pairs( pvp_emblems ) do
+                e = emblem
+                if equipped[ e ] then return e end
+            end
+            return e
+        end,
+
+        toggle = "cooldowns",
+
+        handler = function ()
+            applyBuff( "gladiators_emblem" )
+        end,
+
+        copy = pvp_emblems_copy
+    } ) 
+
+    all:RegisterAura( "gladiators_emblem", {
+        id = 277187,
+        duration = 15,
+        max_stack = 1,
+    } )
+end
+
+
+-- 8.3 Corrupted On-Use
+
+-- DNI, because potentially you have no enemies w/ Corruption w/in range.
+--[[
+    all:RegisterAbility( "corrupted_gladiators_breach", {
+        cast = 0,
+        cooldown = 120,
+        gcd = "off",
+
+        item = 174276,
+        toggle = "defensives",
+
+        handler = function ()
+            applyBuff( "void_jaunt" )
+            -- +Debuff?
+        end,
+
+        auras = {
+            void_jaunt = {
+                id = 314517,
+                duration = 6,
+                max_stack = 1,
+            }
+        }
+} )
+]]
+
 
 all:RegisterAbility( "corrupted_gladiators_spite", {
     cast = 0,
@@ -3910,44 +3984,6 @@ all:RegisterAbility( "corrupted_gladiators_spite", {
     }
 } )
 
-all:RegisterAbility( "corrupted_gladiators_medallion", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 172666,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "gladiators_medallion" )
-    end,
-} )
-
-all:RegisterAbility( "corrupted_gladiators_emblem", {
-    cast = 0,
-    cooldown = 90,
-    gcd = "off",
-
-    item = 172667,
-    toggle = "defensives",
-
-    handler = function ()
-        applyBuff( "gladiators_emblem" )
-    end,
-} )
-
-all:RegisterAbility( "corrupted_gladiators_badge", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 172669,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "gladiators_badge" )
-    end,
-} )
 
 all:RegisterAbility( "corrupted_gladiators_maledict", {
     cast = 0,
@@ -3969,6 +4005,23 @@ all:RegisterAbility( "corrupted_gladiators_maledict", {
         }
     }
 } )
+
+
+--[[ WiP: Timewarped Trinkets
+do
+    local timewarped_trinkets = {
+        { "runed_fungalcap",                127184, "shell_of_deterrence",              31771,  20,     1 },
+        { "icon_of_the_silver_crescent",    129850, "blessing_of_the_silver_crescent",  194645, 20,     1 },
+        { "essence_of_the_martyr",          129851, "essence_of_the_martyr",            194637, 20,     1 },
+        { "gnomeregan_autoblocker_601",     129849, "gnome_ingenuity",                  194543, 40,     1 },
+        { "emblem_of_fury",                 129937, "lust_for_battle_str",              194638, 20,     1 },
+        { "bloodlust_brooch",               129848, "lust_for_battle_agi",              194632, 20,     1 },
+        {}
+
+    }
+
+    { "vial_of_the_sunwell",            133462, "vessel_of_the_naaru",              45059,  3600,   1 }, -- vessel_of_the_naaru on-use 45064, 120 sec CD.
+end ]]
 
 
 -- Galewind Chimes
@@ -4133,48 +4186,6 @@ all:RegisterAura( "berserkers_frenzy", {
 } )
 
 
-all:RegisterAbility( "dread_aspirants_medallion", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 162897,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "rapid_adaptation" )
-    end,
-} )
-
-
-all:RegisterAbility( "dread_aspirants_emblem", {
-    cast = 0,
-    cooldown = 90,
-    gcd = "off",
-
-    item = 162898,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "toughen_up" )
-    end,
-} )
-
-
-all:RegisterAbility( "dread_aspirants_badge", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = 162966,
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "dig_deep" )
-    end,
-} )
-
-
 all:RegisterGear( "ancient_knot_of_wisdom", 161417, 166793 )
 
 all:RegisterAbility( "ancient_knot_of_wisdom", {
@@ -4218,102 +4229,6 @@ all:RegisterAura( "fury_of_the_forest_lord", {
     duration = 12,
     max_stack = 1
 } )
-
-
-all:RegisterGear( "notorious_gladiators_medallion", 167377 )
-all:RegisterGear( "sinister_gladiators_medallion", 165055 )
-
-all:RegisterAbility( "gladiators_medallion", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = function ()
-        if equipped.sinister_gladiators_medallion then return 165055 end
-        return 167377
-    end,
-    toggle = "cooldowns",
-
-    handler = function() applyBuff( "gladiators_medallion" ) end,
-
-    copy = { "notorious_gladiators_medallion", "sinister_gladiators_medallion" }
-} )
-
-all:RegisterAura( "gladiators_medallion", {
-    id = 277179,
-    duration = 20,
-    max_stack = 1
-} )
-
-
-all:RegisterGear( "notorious_gladiators_emblem", 167378 )
-all:RegisterGear( "sinister_gladiators_emblem", 165056 )
-
-all:RegisterAbility( "gladiators_emblem", {
-    cast = 0,
-    cooldown = 90,
-    gcd = "off",
-
-    item = function ()
-        if equipped.sinister_gladiators_emblem then return 165056 end
-        return 167378
-    end,
-    toggle = "cooldowns",
-
-    handler = function() applyBuff( "gladiators_emblem" ) end,
-
-    copy = { "notorious_gladiators_emblem", "sinister_gladiators_emblem" }
-} )
-
-all:RegisterAura( "gladiators_emblem", {
-    id = 277187,
-    duration = 15,
-    max_stack = 1
-} )
-
-
--- Proc from Sinister Gladiator's Insignia
-all:RegisterAura( "gladiators_insignia", {
-    id = 277182,
-    duration = 20,
-    max_stack = 1
-} )
-
-
-all:RegisterGear( "sinister_gladiators_badge", 165058 )
-all:RegisterGear( "notorious_gladiators_badge", 167380 )
-
-all:RegisterAbility( "gladiators_badge", {
-    cast = 0,
-    cooldown = 120,
-    gcd = "off",
-
-    item = function ()
-        if equipped.sinister_gladiators_badge then return 165058 end
-        return 167380
-    end,
-    toggle = "cooldowns",
-
-    handler = function() applyBuff( "gladiators_badge" ) end,
-
-    copy = { "sinister_gladiators_badge", "notorious_gladiators_badge" }
-} )
-
-all:RegisterAura( "gladiators_badge", {
-    id = 277185,
-    duration = 20,
-    max_stack = 1
-} )
-
-
--- Proc from Sinister Gladiator's Safeguard
-all:RegisterAura( "gladiators_safeguard", {
-    id = 286342,
-    duration = 10,
-    max_stack = 1
-} )
-
-
 
 
 -- BREWFEST

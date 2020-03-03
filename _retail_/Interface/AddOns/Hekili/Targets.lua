@@ -50,7 +50,8 @@ end
 local enemyExclusions = {
     ["120651"] = true, -- Explosives
     ["23775"] = true,  -- Head of the Horseman,
-    ["156227"] = true, -- Neferset Denizen
+    ["156227"] = true, -- Neferset Denizen,
+    ["160966"] = true, -- Thing from Beyond
 }
 
 local f = CreateFrame("Frame")
@@ -71,6 +72,7 @@ f:SetScript( "OnEvent", function(self, event, unit)
     end
 end )
 
+Hekili:ProfileFrame( "NamePlateWatcherFrame", f )
 
 
 
@@ -93,7 +95,7 @@ do
     function ns.getNumberTargets()
         local now = GetTime()
 
-        if now - lastCycle < 0.1 then return lastCount end
+        if now - lastCycle < 0.2 then return lastCount end
         lastCycle = now
 
         if now - Hekili.lastAudit > 1 then

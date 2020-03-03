@@ -17,10 +17,22 @@ QuestTogether = {
 				"1/1 Win a Battleground", -- [3]
 			},
 		},
-		[13721] = {
-			["title"] = "The Valiant's Charge",
+		[57276] = {
+			["title"] = "Maintaining Focus",
 			["objectives"] = {
-				"10/25 Valiant's Seal", -- [1]
+				"0/20 Shred of Insanity", -- [1]
+			},
+		},
+		[48288] = {
+			["title"] = "Antoran High Command",
+			["objectives"] = {
+				"Defeat the Antoran High Command in Antorus, The Burning Throne", -- [1]
+				"1/1 Azeroth Invasion Plans", -- [2]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
 			},
 		},
 		[49032] = {
@@ -29,44 +41,21 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[53435] = {
-			["title"] = "Azerite for the Horde",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
 		[56352] = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
 				"0/20 Eternal Ornament", -- [1]
 			},
 		},
-		[55609] = {
-			["title"] = "Operation: Mechagon - The Mechoriginator",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
-				"0/1 King Mechagon slain", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 		[45381] = {
@@ -75,10 +64,11 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[56356] = {
-			["title"] = "The Eternal Palace: Queen's Gambit",
+		[47118] = {
+			["title"] = "Tomb of Sargeras: Free The Tormented",
 			["objectives"] = {
-				"Queen Azshara defeated", -- [1]
+				"Defeat The Desolate Host", -- [1]
+				"1/1 Worshipper's Scrawlings", -- [2]
 			},
 		},
 		[45383] = {
@@ -92,17 +82,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[47118] = {
-			["title"] = "Tomb of Sargeras: Free The Tormented",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"Defeat The Desolate Host", -- [1]
-				"1/1 Worshipper's Scrawlings", -- [2]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
-		[57402] = {
-			["title"] = "Reconstructing \"The Curse of Stone\"",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[48642] = {
@@ -111,10 +100,10 @@ QuestTogether = {
 				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
-		[24756] = {
-			["title"] = "Blood Infusion",
+		[49015] = {
+			["title"] = "Antorus, the Burning Throne: The Death of a Titan",
 			["objectives"] = {
-				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
+				"Defeat Argus the Unmaker", -- [1]
 			},
 		},
 		[45172] = {
@@ -123,20 +112,16 @@ QuestTogether = {
 				"Win a battleground", -- [1]
 			},
 		},
-		[54132] = {
-			["title"] = "Horde of Heroes",
+		[13721] = {
+			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-				"4/4 Alliance targets attacked in Stormsong Valley", -- [1]
-				"1/1 Meet up with Usha Eyegouge", -- [2]
-				"5/5 Siege Weapons destroyed", -- [3]
-				"15/15 7th Legion Troops slain", -- [4]
-				"1/1 Bennel Swiftstrike slain", -- [5]
+				"10/25 Valiant's Seal", -- [1]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
+		[55609] = {
+			["title"] = "Operation: Mechagon - The Mechoriginator",
 			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
+				"0/1 King Mechagon slain", -- [1]
 			},
 		},
 		[44989] = {
@@ -145,16 +130,17 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[56356] = {
+			["title"] = "The Eternal Palace: Queen's Gambit",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"Queen Azshara defeated", -- [1]
 			},
 		},
 		[58632] = {
@@ -163,10 +149,26 @@ QuestTogether = {
 				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[24756] = {
+			["title"] = "Blood Infusion",
+			["objectives"] = {
+				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[45382] = {
@@ -175,36 +177,23 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[57402] = {
+			["title"] = "Reconstructing \"The Curse of Stone\"",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
-		[49133] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+		[57743] = {
+			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
-			},
-		},
-		[49015] = {
-			["title"] = "Antorus, the Burning Throne: The Death of a Titan",
-			["objectives"] = {
-				"Defeat Argus the Unmaker", -- [1]
-			},
-		},
-		[48288] = {
-			["title"] = "Antoran High Command",
-			["objectives"] = {
-				"Defeat the Antoran High Command in Antorus, The Burning Throne", -- [1]
-				"1/1 Azeroth Invasion Plans", -- [2]
+				"0/500 Earn Conquest", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

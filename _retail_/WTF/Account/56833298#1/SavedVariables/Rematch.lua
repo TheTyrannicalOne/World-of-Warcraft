@@ -30,9 +30,9 @@ RematchSettings = {
 	["DialogYPos"] = 702.0048828125,
 	["JournalUsed"] = true,
 	["HidePetToast"] = true,
-	["FavoriteFilters"] = {
+	["QueueSanctuary"] = {
 	},
-	["DialogXPos"] = 1289.007934570313,
+	["DialogXPos"] = 1290.007934570313,
 	["AllowHiddenPetsDefaulted"] = true,
 	["BackupCount"] = 0,
 	["TeamGroups"] = {
@@ -41,7 +41,7 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["SpecialSlots"] = {
+	["LevelingQueue"] = {
 	},
 	["Filters"] = {
 		["Other"] = {
@@ -86,9 +86,9 @@ RematchSettings = {
 	},
 	["JournalPanel"] = 1,
 	["CornerPos"] = "BOTTOMLEFT",
-	["LevelingQueue"] = {
+	["FavoriteFilters"] = {
 	},
-	["QueueSanctuary"] = {
+	["SpecialSlots"] = {
 	},
 	["YPos"] = 418.0044860839844,
 	["CustomScaleValue"] = 100,

@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0323,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 493,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1630:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 495,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1632:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 157964,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158121::::::::120:71::25:5:4803:6516:6513:1602:4785:::|h[Zocalo Crusher]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

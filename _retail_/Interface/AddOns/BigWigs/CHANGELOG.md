@@ -1,6 +1,6 @@
 # BigWigs
 
-## [v183.2](https://github.com/BigWigsMods/BigWigs/tree/v183.2) (2020-02-24)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v183.1...v183.2)
+## [v184.1](https://github.com/BigWigsMods/BigWigs/tree/v184.1) (2020-02-29)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v184...v184.1)
 
-- Nyalotha/Vexiona: Swap Desolation from say to yell and make sure to cancel the countdown when removed.  
+- Update zhCN (#776)  

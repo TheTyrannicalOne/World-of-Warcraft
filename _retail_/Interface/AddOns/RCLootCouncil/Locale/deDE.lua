@@ -287,6 +287,10 @@ Hinweis: Nicht-Plündermeister können nur Daten speichern, die vom Plündermeis
 --[[Translation missing --]]
 --[[ L["Looted"] = ""--]] 
 L["Looted by:"] = "Geplündert von:"
+--[[Translation missing --]]
+--[[ L["lootFrame_error_note_required"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["lootHistory_moreInfo_winnersOfItem"] = ""--]] 
 L["Looting options"] = "Plünderoptionen"
 L["Lower Quality Limit"] = "Untere Qualitätsgrenze"
 L["lower_quality_limit_desc"] = [=[Wähle die untere Qualitätsgrenze der Gegenstände, die automatisch vergeben werden (Diese Qualität inbegriffen!).
@@ -384,6 +388,16 @@ L["opt_printCompletedTrade_Name"] = "Handelsnachrichten"
 --[[Translation missing --]]
 --[[ L["opt_rejectTrade_Name"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["options_autoAwardBoE_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_autoAwardBoE_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_requireNotes_desc"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Original Owner"] = ""--]] 
 L["Out of instance"] = "Keine Instanz"
 L["Patch"] = true
@@ -420,6 +434,8 @@ L["Remove All"] = "Alle entfernen"
 L["Remove from consideration"] = "Aus der Betrachtung entfernen"
 L["remove_all_desc"] = "Alle Ratsmitglieder entfernen"
 L["Requested rolls for 'item' from 'target'"] = "Würfe für %s von %s angefordert"
+--[[Translation missing --]]
+--[[ L["Require Notes"] = ""--]] 
 L["Reset Skin"] = "Optik zurücksetzen"
 L["Reset skins"] = "Optiken zurücksetzen"
 L["reset_announce_to_default_desc"] = "Setzt alle Ankündigungsoptionen auf Standardeinstellungen zurück."

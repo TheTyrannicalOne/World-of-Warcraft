@@ -14,11 +14,11 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
+						["minutes"] = {
+						},
 						["seconds"] = {
 						},
 						["soon"] = {
-						},
-						["minutes"] = {
 						},
 					},
 					["enableText"] = false,

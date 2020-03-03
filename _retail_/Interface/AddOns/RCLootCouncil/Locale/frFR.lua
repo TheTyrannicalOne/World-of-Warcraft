@@ -340,6 +340,10 @@ Remarque : les joueurs autres que le maître du butin peuvent uniquement enregis
 --[[ L["Looted"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Looted by:"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["lootFrame_error_note_required"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["lootHistory_moreInfo_winnersOfItem"] = ""--]] 
 L["Looting options"] = "Paramètres de fouille"
 L["Lower Quality Limit"] = "Seuil inférieur de qualité"
 L["lower_quality_limit_desc"] = [=[Déterminez le seuil inférieur de qualité des objets qui seront automatiquement attribués (cette qualité est comprise).
@@ -454,6 +458,16 @@ L["open_the_loot_history_desc"] = "Cliquer pour ouvrir l'historique du butin."
 --[[Translation missing --]]
 --[[ L["opt_rejectTrade_Name"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["options_autoAwardBoE_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_autoAwardBoE_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_requireNotes_desc"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Original Owner"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Out of instance"] = ""--]] 
@@ -511,6 +525,8 @@ L["Remove from consideration"] = "Retirer de la liste"
 L["remove_all_desc"] = "Retirer tous les membres du conseil"
 --[[Translation missing --]]
 --[[ L["Requested rolls for 'item' from 'target'"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Require Notes"] = ""--]] 
 L["Reset Skin"] = "Réinitialiser l'apparence"
 L["Reset skins"] = "Réinitialiser les apparences"
 L["reset_announce_to_default_desc"] = "Réinitialise tous les paramètres des annonces avec les paramètres par défaut."

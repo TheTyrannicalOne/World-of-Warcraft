@@ -294,6 +294,10 @@ L["loot_history_desc"] = [=[RCLootCouncil 将自动记录分配相关信息。
 --[[ L["Looted"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Looted by:"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["lootFrame_error_note_required"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["lootHistory_moreInfo_winnersOfItem"] = ""--]] 
 L["Looting options"] = "拾取选项"
 L["Lower Quality Limit"] = "最低品质限定"
 L["lower_quality_limit_desc"] = [=[选择自动分配时物品的最低品质限定 (含此品质！)。
@@ -398,6 +402,16 @@ L["Opens the synchronizer"] = "打开同步界面"
 --[[Translation missing --]]
 --[[ L["opt_rejectTrade_Name"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["options_autoAwardBoE_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_autoAwardBoE_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_requireNotes_desc"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Original Owner"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Out of instance"] = ""--]] 
@@ -440,6 +454,8 @@ L["Remove All"] = "移除所有"
 L["Remove from consideration"] = "从待定中移除"
 L["remove_all_desc"] = "移除所有议会成员。"
 L["Requested rolls for 'item' from 'target'"] = "已要求 %2$s 对 %1$s 掷点"
+--[[Translation missing --]]
+--[[ L["Require Notes"] = ""--]] 
 L["Reset Skin"] = "重置皮肤"
 L["Reset skins"] = "重置皮肤"
 L["reset_announce_to_default_desc"] = "重置所有通告选项"

@@ -195,7 +195,7 @@ SkadaDB = {
 			["modeclicks"] = {
 				["Damage"] = 4,
 				["Threat"] = 1,
-				["Healing taken"] = 4,
+				["Healing taken"] = 5,
 				["DPS"] = 2,
 			},
 		},
@@ -385,10 +385,21 @@ SkadaDB = {
 					["wipemode"] = "Focus gained",
 					["bartexture"] = "Minimalist",
 					["barwidth"] = 234.0005187988281,
-					["barfont"] = "Trebuchet MS",
+					["background"] = {
+						["color"] = {
+							["a"] = 0.89495262503624,
+							["r"] = 0.0627450980392157,
+							["g"] = 0.0627450980392157,
+							["b"] = 0.0627450980392157,
+						},
+						["bordertexture"] = "None",
+						["borderthickness"] = 0,
+						["height"] = 142.0002746582031,
+					},
 					["y"] = 41.00161361694336,
-					["x"] = -179.000244140625,
+					["barfont"] = "Trebuchet MS",
 					["name"] = "Damage",
+					["point"] = "BOTTOMRIGHT",
 					["title"] = {
 						["font"] = "Arial Narrow",
 						["borderthickness"] = 0,
@@ -402,22 +413,11 @@ SkadaDB = {
 						["fontsize"] = 20,
 						["texture"] = "Graphite",
 					},
+					["mode"] = "Focus gained",
 					["buttons"] = {
 						["stop"] = true,
 					},
-					["mode"] = "Focus gained",
-					["background"] = {
-						["color"] = {
-							["a"] = 0.89495262503624,
-							["r"] = 0.0627450980392157,
-							["g"] = 0.0627450980392157,
-							["b"] = 0.0627450980392157,
-						},
-						["bordertexture"] = "None",
-						["borderthickness"] = 0,
-						["height"] = 142.0002746582031,
-					},
-					["point"] = "BOTTOMRIGHT",
+					["x"] = -179.000244140625,
 				}, -- [1]
 				{
 					["titleset"] = false,

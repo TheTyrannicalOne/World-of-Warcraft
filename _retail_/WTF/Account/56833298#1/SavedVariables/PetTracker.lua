@@ -10,5 +10,5 @@ PetTracker_Sets = {
 	["rivalHistory"] = {
 	},
 	["rivalSearch"] = "",
-	["tutorial"] = 7,
+	["tutorial"] = 9,
 }

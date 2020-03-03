@@ -399,6 +399,10 @@ L["Loot won:"] = "Предмет выиграл:"
 --[[ L["Looted"] = ""--]] 
 L["Looted by:"] = "Предмет забрал:"
 --[[Translation missing --]]
+--[[ L["lootFrame_error_note_required"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["lootHistory_moreInfo_winnersOfItem"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Looting options"] = ""--]] 
 L["Lower Quality Limit"] = "Нижняя Граница Качества"
 L["lower_quality_limit_desc"] = [=[Выберите нижний предел качества для автораспределения (это качество включается!).
@@ -528,6 +532,16 @@ L["Open the Loot History"] = "Открыть Историю Лута"
 --[[ L["opt_rejectTrade_Desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["opt_rejectTrade_Name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_autoAwardBoE_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_autoAwardBoE_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_requireNotes_desc"] = ""--]] 
 L["Original Owner"] = "Изначальный владелец"
 L["Out of instance"] = "Вне подземелья"
 --[[Translation missing --]]
@@ -594,6 +608,8 @@ L["Remove from consideration"] = "Убрать с голосования"
 --[[ L["remove_all_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Requested rolls for 'item' from 'target'"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Require Notes"] = ""--]] 
 L["Reset Skin"] = "Сбросить скин"
 --[[Translation missing --]]
 --[[ L["Reset skins"] = ""--]] 

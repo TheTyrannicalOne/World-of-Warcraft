@@ -325,6 +325,10 @@ Nota: Los NO Maestros despojadores pueden guardar solo datos que el el Maestro d
 --[[ L["Looted"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Looted by:"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["lootFrame_error_note_required"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["lootHistory_moreInfo_winnersOfItem"] = ""--]] 
 L["Looting options"] = "Opciones de botin"
 L["Lower Quality Limit"] = "Limite Inferior de Calidad"
 L["lower_quality_limit_desc"] = [=[Seleccionar la calidad mas baja de los objetos a repartir automaticamente (calidad seleccionada incluida).
@@ -435,6 +439,16 @@ L["Opens the synchronizer"] = "Abrir el sincronizador"
 --[[Translation missing --]]
 --[[ L["opt_rejectTrade_Name"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["options_autoAwardBoE_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_autoAwardBoE_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_ml_outOfRaid_name"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["options_requireNotes_desc"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Original Owner"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Out of instance"] = ""--]] 
@@ -488,6 +502,8 @@ L["Remove from consideration"] = "Eliminar consideracion"
 L["remove_all_desc"] = "Eliminar todos los miembros del consejo"
 --[[Translation missing --]]
 --[[ L["Requested rolls for 'item' from 'target'"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Require Notes"] = ""--]] 
 L["Reset Skin"] = "Reiniciar apariencia"
 L["Reset skins"] = "Reiniciar apariencia"
 L["reset_announce_to_default_desc"] = "Restablecer todas las opciones de aviso por defecto"

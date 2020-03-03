@@ -129,8 +129,8 @@ MasterPlanAG = {
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
 	["Dalaran"] = {
@@ -163,8 +163,8 @@ MasterPlanAG = {
 			["class"] = "HUNTER",
 		},
 		["Tynkster"] = {
-			["class"] = "HUNTER",
 			["faction"] = "Alliance",
+			["class"] = "HUNTER",
 		},
 		["Tyriinid"] = {
 			["faction"] = "Alliance",
