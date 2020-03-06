@@ -118,10 +118,6 @@ HHTD_SavedVariables = {
 		["NPH"] = {
 		},
 	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
-	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
@@ -159,5 +155,9 @@ HHTD_SavedVariables = {
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
 	},
 }

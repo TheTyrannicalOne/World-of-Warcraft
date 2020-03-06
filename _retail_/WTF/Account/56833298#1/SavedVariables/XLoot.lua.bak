@@ -18,8 +18,8 @@ XLootADB = {
 		["Frame"] = {
 			["profiles"] = {
 				["Default"] = {
-					["frame_position_y"] = 501.666564941406,
-					["frame_position_x"] = 1056.66674804688,
+					["frame_position_y"] = 786.0001220703125,
+					["frame_position_x"] = 1091.000244140625,
 				},
 			},
 		},

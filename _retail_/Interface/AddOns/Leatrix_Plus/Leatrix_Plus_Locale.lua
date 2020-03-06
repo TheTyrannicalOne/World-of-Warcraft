@@ -890,6 +890,7 @@ end
 
 -- zhTW: Traditional Chinese (Taiwan)
 if GameLocale == "zhTW" then
+L["A Deal with Death"] = "死亡的交易"
 L["A Falling Star"] = "殞落之星"
 L["A Found Memento"] = "尋獲的記憶碎片"
 L["A friend request from"] = "你有一個好友申請，來自"
@@ -1641,6 +1642,7 @@ L["The Ruby Sanctum"] = "晶紅聖所"
 L["The Shattered Halls"] = "破碎大廳"
 L["The Stockade"] = "監獄"
 L["The Stonecore"] = "石岩之心"
+L["The Threat Within"] = "內在的威脅"
 L["The Violet Hold"] = "紫羅蘭堡"
 L["The Vortex Pinnacle"] = "漩渦尖塔"
 L["The Waning Crescent"] = "弦月旅店"
@@ -1766,6 +1768,7 @@ end
 
 -- ruRU: Russian
 if GameLocale == "ruRU" then
+L["A Deal with Death"] = "Сделка со смертью"
 L["A Falling Star"] = "Падающая звезда"
 L["A Found Memento"] = "Памятная вещь"
 L["A friend request from"] = "Запрос дружбы от"
@@ -2534,6 +2537,7 @@ L["The Ruby Sanctum"] = "Рубиновое святилище"
 L["The Shattered Halls"] = "Разрушенные залы"
 L["The Stockade"] = "Тюрьма"
 L["The Stonecore"] = "Каменные Недра"
+L["The Threat Within"] = "Внутренняя угроза"
 L["The Violet Hold"] = "Аметистовая крепость"
 L["The Vortex Pinnacle"] = "Вершина Смерча"
 L["The Waning Crescent"] = "Лунный полумрак"
@@ -2659,6 +2663,7 @@ end
 
 -- koKR: Korean
 if GameLocale == "koKR" then
+L["A Deal with Death"] = "A Deal with Death"
 L["A Falling Star"] = "떨어지는 별"
 L["A Found Memento"] = "찾아낸 기억의 조각"
 L["A friend request from"] = "친구 신청"
@@ -3410,6 +3415,7 @@ L["The Ruby Sanctum"] = "루비 성소"
 L["The Shattered Halls"] = "으스러진 손의 전당"
 L["The Stockade"] = "지하감옥"
 L["The Stonecore"] = "바위심장부"
+L["The Threat Within"] = "The Threat Within"
 L["The Violet Hold"] = "보랏빛 요새"
 L["The Vortex Pinnacle"] = "소용돌이 누각"
 L["The Waning Crescent"] = "기우는 초승달"

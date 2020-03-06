@@ -1,24 +1,24 @@
-3/3 02:24:47.716  LogOpen
-3/3 02:24:47.734  NvAPI loaded
-3/3 02:24:48.099  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe109a) dx11:true dx12:true
-3/3 02:24:48.099  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
-3/3 02:24:48.099  	Monitor 1 "\\.\DISPLAY2" (1920x1080)
-3/3 02:24:48.158  D3d12 Device Create
-3/3 02:24:48.314  Choosing adapter 0
-3/3 02:24:48.501  AFR Groups: 1/1
-3/3 02:24:48.501  Feature Level: DX=6, MTL=0
-3/3 02:24:48.743  NotifyOnDeviceCreate
-3/3 02:24:48.743  D3d12 Device Create Successful
-3/3 02:24:48.743  Nvidia driver version: r442_47 (44250)
-3/3 02:24:48.743  <IsGPUDriverOutOfDate> No
-3/3 02:24:48.769  CPU Processor Detection: 12 H/W threads
-3/3 02:24:48.769  Memory Detection: 34296328192 bytes of physical memory available
-3/3 02:24:48.769  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-3/3 02:24:48.878  RenderSettings::NotifyChanged
-3/3 02:24:50.242  Nvidia driver version: r442_47 (44250)
-3/3 02:25:17.783  Nvidia driver version: r442_47 (44250)
-3/3 02:25:17.783  Nvidia driver version: r442_47 (44250)
-3/3 03:20:13.039  Nvidia driver version: r442_47 (44250)
-3/3 03:20:13.626  D3d12 Device Destroy
-3/3 03:20:13.626  NotifyOnDeviceDestroy
-3/3 03:20:14.557  GxShutdown
+3/4 22:34:00.560  LogOpen
+3/4 22:34:00.618  NvAPI loaded
+3/4 22:34:01.431  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe109a) dx11:true dx12:true
+3/4 22:34:01.431  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
+3/4 22:34:01.431  	Monitor 1 "\\.\DISPLAY2" (1920x1080)
+3/4 22:34:01.488  D3d12 Device Create
+3/4 22:34:01.630  Choosing adapter 0
+3/4 22:34:01.796  AFR Groups: 1/1
+3/4 22:34:01.796  Feature Level: DX=6, MTL=0
+3/4 22:34:02.052  NotifyOnDeviceCreate
+3/4 22:34:02.052  D3d12 Device Create Successful
+3/4 22:34:02.052  Nvidia driver version: r442_47 (44250)
+3/4 22:34:02.052  <IsGPUDriverOutOfDate> No
+3/4 22:34:02.072  CPU Processor Detection: 12 H/W threads
+3/4 22:34:02.072  Memory Detection: 34296328192 bytes of physical memory available
+3/4 22:34:02.072  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+3/4 22:34:02.172  RenderSettings::NotifyChanged
+3/4 22:34:03.610  Nvidia driver version: r442_47 (44250)
+3/4 22:34:31.222  Nvidia driver version: r442_47 (44250)
+3/4 22:34:31.222  Nvidia driver version: r442_47 (44250)
+3/4 22:53:50.708  Nvidia driver version: r442_47 (44250)
+3/4 22:53:51.449  D3d12 Device Destroy
+3/4 22:53:51.449  NotifyOnDeviceDestroy
+3/4 22:53:52.352  GxShutdown
