@@ -244,6 +244,8 @@ L["Diff"] = true
 --[[ L["Discord friendly output."] = ""--]] 
 L["disenchant_desc"] = "Sélectionner cette option pour que ce motif soit choisi lorsque vous attribuez un objet par le biais du bouton 'Désenchanter'"
 --[[Translation missing --]]
+--[[ L["Do you want to keep %s for yourself or trade?"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Do you want to keep %s for yourself?"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Done syncing"] = ""--]] 
@@ -322,6 +324,8 @@ L["Item(s) replaced:"] = "Objet(s) remplacés :"
 --[[Translation missing --]]
 --[[ L["Items stored in the loot master's bag for award later cannot be awarded later."] = ""--]] 
 L["Items under consideration:"] = "Objets en train d'être examinés"
+--[[Translation missing --]]
+--[[ L["Keep"] = ""--]] 
 L["Latest item(s) won"] = "Dernier(s) objet(s) attribué(s)."
 L["Length"] = "Durée"
 L["Log"] = "Journal"

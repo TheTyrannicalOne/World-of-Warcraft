@@ -1,9 +1,9 @@
 
 LegionInvasionTimerDB = {
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -16,4 +16,4 @@ LegionInvasionTimerDB = {
 		},
 	},
 }
-LegionInvasionTime = 1583112634
+LegionInvasionTime = 1583712032

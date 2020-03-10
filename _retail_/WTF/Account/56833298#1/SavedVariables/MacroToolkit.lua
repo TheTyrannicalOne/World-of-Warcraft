@@ -1,9 +1,9 @@
 
 MacroToolkitDB = {
 	["profileKeys"] = {
-		["Tynkster - Dalaran"] = "profile",
-		["Shanyt - Argent Dawn"] = "profile",
 		["Durlok - Black Dragonflight"] = "profile",
+		["Shanyt - Argent Dawn"] = "profile",
+		["Tynkster - Dalaran"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {

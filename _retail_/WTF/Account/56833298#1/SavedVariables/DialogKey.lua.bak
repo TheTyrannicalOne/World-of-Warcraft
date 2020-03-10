@@ -1,9 +1,9 @@
 
 DialogKeyDB = {
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["global"] = {
 		["shownBindWarning"] = true,

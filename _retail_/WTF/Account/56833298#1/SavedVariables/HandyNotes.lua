@@ -23,21 +23,21 @@ HandyNotesDB = {
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
 		["Zerkin - Illidan"] = "Zerkin - Illidan",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Aerionz - Illidan"] = "Aerionz - Illidan",
 		["Klitpounder - Illidan"] = "Klitpounder - Illidan",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Xerkinz - Sargeras"] = "Xerkinz - Sargeras",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
 		["Zerkinz - Sargeras"] = "Zerkinz - Sargeras",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Aerion - Illidan"] = "Aerion - Illidan",
-		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Xerkinz - Sargeras"] = "Xerkinz - Sargeras",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
 		["Xerkin - Illidan"] = "Xerkin - Illidan",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
@@ -86,7 +86,7 @@ HandyNotesDB = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 		},
 		["Zerkin - Illidan"] = {
 		},
@@ -98,9 +98,9 @@ HandyNotesDB = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Xerkinz - Sargeras"] = {
+		["Shathiel - Darkspear"] = {
 		},
-		["Claugh - Runetotem"] = {
+		["Panboozled - Runetotem"] = {
 		},
 		["Zerkinz - Sargeras"] = {
 		},
@@ -108,13 +108,13 @@ HandyNotesDB = {
 		},
 		["Aerion - Illidan"] = {
 		},
-		["Panboozled - Runetotem"] = {
+		["Claugh - Runetotem"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Xerkinz - Sargeras"] = {
 		},
 		["Beeronimo - Dalaran"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 		},
 		["Xerkin - Illidan"] = {
 		},
@@ -146,21 +146,21 @@ HandyNotes_HandyNotesDB = {
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
 		["Zerkin - Illidan"] = "Zerkin - Illidan",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Aerionz - Illidan"] = "Aerionz - Illidan",
 		["Klitpounder - Illidan"] = "Klitpounder - Illidan",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Xerkinz - Sargeras"] = "Xerkinz - Sargeras",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
 		["Zerkinz - Sargeras"] = "Zerkinz - Sargeras",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Aerion - Illidan"] = "Aerion - Illidan",
-		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Xerkinz - Sargeras"] = "Xerkinz - Sargeras",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
 		["Xerkin - Illidan"] = "Xerkin - Illidan",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
@@ -209,7 +209,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 		},
 		["Zerkin - Illidan"] = {
 		},
@@ -221,9 +221,9 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Xerkinz - Sargeras"] = {
+		["Shathiel - Darkspear"] = {
 		},
-		["Claugh - Runetotem"] = {
+		["Panboozled - Runetotem"] = {
 		},
 		["Zerkinz - Sargeras"] = {
 		},
@@ -231,13 +231,13 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Aerion - Illidan"] = {
 		},
-		["Panboozled - Runetotem"] = {
+		["Claugh - Runetotem"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Xerkinz - Sargeras"] = {
 		},
 		["Beeronimo - Dalaran"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 		},
 		["Xerkin - Illidan"] = {
 		},

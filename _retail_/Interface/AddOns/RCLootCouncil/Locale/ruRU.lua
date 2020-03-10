@@ -287,6 +287,8 @@ L["Diff"] = "Илвл"
 --[[ L["Discord friendly output."] = ""--]] 
 --[[Translation missing --]]
 --[[ L["disenchant_desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Do you want to keep %s for yourself or trade?"] = ""--]] 
 L["Do you want to keep %s for yourself?"] = "Вы хотите оставить %s себе?"
 --[[Translation missing --]]
 --[[ L["Done syncing"] = ""--]] 
@@ -377,6 +379,8 @@ L["Item was awarded to"] = "Предмет был выдан"
 --[[Translation missing --]]
 --[[ L["Items stored in the loot master's bag for award later cannot be awarded later."] = ""--]] 
 L["Items under consideration:"] = "Предметы, ожидающие рассмотрения:"
+--[[Translation missing --]]
+--[[ L["Keep"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Latest item(s) won"] = ""--]] 
 --[[Translation missing --]]

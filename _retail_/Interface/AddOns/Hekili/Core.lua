@@ -601,7 +601,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                 if action == 'call_action_list' or action == 'run_action_list' or action == 'use_items' then
                                     -- We handle these here to avoid early forking between starkly different APLs.
                                     local aScriptPass = true
-                                    local ts = not strict and scripts:IsTimeSensitive( scriptID )
+                                    local ts = not strict and not entry.strict == 1 and scripts:IsTimeSensitive( scriptID )
 
                                     if not entry.criteria or entry.criteria == "" then
                                         if debug then self:Debug( "There is no criteria for %s.", action == 'use_items' and "Use Items" or "this action list." ) end
@@ -1206,7 +1206,9 @@ function Hekili:ProcessHooks( dispName, packName )
                     shouldCheck = false
 
                     for spell in pairs( state.spec.castableWhileCasting ) do
-                        if state:IsKnown( spell ) and state:IsUsable( spell ) and state:TimeToReady( spell ) <= t then shouldCheck = true; break end
+                        if state:IsKnown( spell ) and state:IsUsable( spell ) and state:TimeToReady( spell ) <= t then
+                            shouldCheck = true
+                        end
                     end
 
                     if not shouldCheck then
@@ -1322,7 +1324,6 @@ function Hekili:ProcessHooks( dispName, packName )
                     state.setCooldown( action, ability.cooldown )
                 
                 end
-
 
                 if ability.cast > 0 and not ability.channeled then
                     if debug then Hekili:Debug( "Queueing %s cast finish at %.2f.", action, state.query_time + cast ) end

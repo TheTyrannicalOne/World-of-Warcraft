@@ -209,6 +209,8 @@ L["Diff"] = "提升"
 --[[ L["Discord friendly output."] = ""--]] 
 L["disenchant_desc"] = "当通过'分解'按钮分配物品时使用该理由"
 --[[Translation missing --]]
+--[[ L["Do you want to keep %s for yourself or trade?"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Do you want to keep %s for yourself?"] = ""--]] 
 L["Done syncing"] = "同步完成"
 L["Double click to delete this entry."] = "双击删除此项"
@@ -274,6 +276,8 @@ L["Item(s) replaced:"] = "被替换的物品："
 L["item_in_bags_low_trade_time_remaining_reminder"] = "你的背包中的以下在稍后分配列表的物品剩余交易时间不足%s。如果你想避免此提示，交易该物品，使用‘/rc remove [index]’将物品从列表中移除，使用‘/rc clear’清空列表，或者装备该物品使其无法被交易。"
 L["Items stored in the loot master's bag for award later cannot be awarded later."] = "存放在战利品分配者背包内的物品无法被稍后分配。"
 L["Items under consideration:"] = "在考虑中的物品："
+--[[Translation missing --]]
+--[[ L["Keep"] = ""--]] 
 L["Latest item(s) won"] = "最近获得的物品"
 L["Length"] = "长度"
 L["Log"] = "记录"

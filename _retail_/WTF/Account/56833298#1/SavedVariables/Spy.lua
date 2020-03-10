@@ -35,12 +35,12 @@ SpyDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 	},
 	["profiles"] = {
-		["Tynkster - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
 			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
 				["Bar"] = {
@@ -77,7 +77,7 @@ SpyDB = {
 			["AppendUnitNameCheck"] = true,
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Tynkster - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
 				["Bar"] = {

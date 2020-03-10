@@ -1,5 +1,5 @@
-## v4.9.28 Changes
+## v4.9.30 Changes
 
-* [Retail] Working around a Blizzard bug to speed up Sniper scans
+* [Retail] Fixed an issue with previous release that affected scanning speed
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

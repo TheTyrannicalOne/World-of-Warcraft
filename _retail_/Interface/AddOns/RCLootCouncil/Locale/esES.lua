@@ -234,6 +234,8 @@ L["Diff"] = "Diferente"
 --[[ L["Discord friendly output."] = ""--]] 
 L["disenchant_desc"] = "Seleccionar para usar esta razon en la adjudicacion de un elemento a traves del boton 'Desencantar'"
 --[[Translation missing --]]
+--[[ L["Do you want to keep %s for yourself or trade?"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["Do you want to keep %s for yourself?"] = ""--]] 
 L["Done syncing"] = "Sincronización completa"
 L["Double click to delete this entry."] = "Doble click para borrar esta entrada."
@@ -306,6 +308,8 @@ L["Item(s) replaced:"] = "Objeto/s sustituidos:"
 --[[Translation missing --]]
 --[[ L["Items stored in the loot master's bag for award later cannot be awarded later."] = ""--]] 
 L["Items under consideration:"] = "Objetos en consideracion:"
+--[[Translation missing --]]
+--[[ L["Keep"] = ""--]] 
 L["Latest item(s) won"] = "Ultimo(s) objeto(s) repartidos"
 L["Length"] = "Duración"
 L["Log"] = "Registro"

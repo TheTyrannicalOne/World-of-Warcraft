@@ -204,6 +204,8 @@ L["Diff"] = "Diff."
 --[[Translation missing --]]
 --[[ L["Discord friendly output."] = ""--]] 
 L["disenchant_desc"] = "Auswählen, um diesen Grund zu benutzen, wenn du einen Gegenstand über den Button 'Entzaubern' vergibst."
+--[[Translation missing --]]
+--[[ L["Do you want to keep %s for yourself or trade?"] = ""--]] 
 L["Do you want to keep %s for yourself?"] = "Willst du %s für dich selbst behalten?"
 L["Done syncing"] = "Synchronisierung abgeschlossen"
 L["Double click to delete this entry."] = "Doppelklick, um diesen Eintrag zu löschen"
@@ -268,6 +270,8 @@ L["Item(s) replaced:"] = "Ersetzte(r) Gegenstand/-ände:"
 L["item_in_bags_low_trade_time_remaining_reminder"] = "Die folgenden beim Aufheben gebundenen Gegenstände in Deinem Inventar sind in Deiner \"Später vergeben\"-Liste und Du hast weniger als %s Zeit, um sie noch zu handeln. Um diese Erinnerung nicht wieder anzeigen zu lassen, gib den Gegenstand ab, nutze '/rc remove [index]' um diesen Gegenstand von der Liste zu entfernen, '/rc clear' um die \"Später vergeben\"-Liste zu leeren oder ziehe den Gegenstand an, damit er nicht mehr gehandelt werden kann."
 L["Items stored in the loot master's bag for award later cannot be awarded later."] = "Gegenstände aus der \"Später vergeben\"-Liste im Inventar des Plündermeisters können nicht später vergeben werden."
 L["Items under consideration:"] = "Gegenstände unter Betrachtung:"
+--[[Translation missing --]]
+--[[ L["Keep"] = ""--]] 
 L["Latest item(s) won"] = "Kürzliche gewonne Gegenstände"
 L["Length"] = "Länge"
 L["Log"] = "Protokoll"
