@@ -8,16 +8,16 @@ dbBFA = {
 			["firstun"] = false,
 		},
 	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-	},
 	["global"] = {
 		["warn01_seen"] = 0,
 		["firstrun"] = false,
 		["news"] = {
 		},
 		["warn02_seen"] = 0,
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -41,18 +41,18 @@ dbBFA = {
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
 				["MAKEITQUICK"] = true,
-				["TROOPALERT"] = true,
 				["MAXCHAMP"] = 3,
+				["TROOPALERT"] = true,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
-			["showmenu"] = false,
 			["blacklist"] = {
 				[1926] = true,
 				[1933] = true,
 				[2078] = true,
 				[1921] = true,
 			},
+			["showmenu"] = false,
 		},
 	},
 }

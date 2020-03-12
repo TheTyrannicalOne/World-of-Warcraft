@@ -14,6 +14,7 @@ Leatrix_Plus.L = L
 
 -- zhCN: Simplified Chinese (People's Republic of China)
 if GameLocale == "zhCN" then
+L["A Deal with Death"] = "与死神的交易"
 L["A Falling Star"] = "陨落之星"
 L["A Found Memento"] = "寻获的记忆碎片"
 L["A friend request from"] = "你有一个好友申请，来自"
@@ -765,6 +766,7 @@ L["The Ruby Sanctum"] = "红玉圣殿"
 L["The Shattered Halls"] = "破碎大厅"
 L["The Stockade"] = "监狱"
 L["The Stonecore"] = "巨石之核"
+L["The Threat Within"] = "内在的威胁"
 L["The Violet Hold"] = "紫罗兰监狱"
 L["The Vortex Pinnacle"] = "旋云之巅"
 L["The Waning Crescent"] = "残月酒馆"
