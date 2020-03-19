@@ -28,12 +28,13 @@ RematchSettings = {
 	["XPos"] = 995.0079345703125,
 	["CollectionChartType"] = 1,
 	["DialogYPos"] = 702.0048828125,
-	["DialogXPos"] = 1290.007934570313,
+	["SpecialSlots"] = {
+	},
 	["HidePetToast"] = true,
 	["FavoriteFilters"] = {
 	},
 	["Sort"] = {
-		["Order"] = 1,
+		["Order"] = 2,
 		["FavoritesFirst"] = true,
 	},
 	["AllowHiddenPetsDefaulted"] = true,
@@ -44,8 +45,7 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["QueueSanctuary"] = {
-	},
+	["DialogXPos"] = 1290.007934570313,
 	["Filters"] = {
 		["Other"] = {
 		},
@@ -76,20 +76,44 @@ RematchSettings = {
 	},
 	["CustomScaleValue"] = 100,
 	["YPos"] = 418.0044860839844,
-	["LevelingQueue"] = {
-	},
+	["JournalUsed"] = true,
 	["CollapsedOptHeaders"] = {
 	},
 	["ElvUIToastDefaulted"] = true,
 	["PreferredMode"] = 1,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
+		["BattlePet-0-00000847841B"] = {
+			1, -- [1]
+			true, -- [2]
+			2872, -- [3]
+			1, -- [4]
+			156, -- [5]
+			11, -- [6]
+			12, -- [7]
+			4, -- [8]
+		},
+		["BattlePet-0-0000083ED3B8"] = {
+			1, -- [1]
+			true, -- [2]
+			2352, -- [3]
+			1, -- [4]
+			157, -- [5]
+			11, -- [6]
+			10, -- [7]
+			4, -- [8]
+		},
 	},
-	["JournalPanel"] = 1,
+	["JournalPanel"] = 2,
 	["CornerPos"] = "BOTTOMLEFT",
-	["SpecialSlots"] = {
+	["LevelingQueue"] = {
+		"BattlePet-0-0000083ED3B8", -- [1]
+		"BattlePet-0-00000847841B", -- [2]
 	},
-	["JournalUsed"] = true,
+	["QueueSanctuary"] = {
+		["BattlePet-0-00000847841B"] = "QQQ52PO",
+		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
+	},
 	["UseTypeBar"] = true,
 	["SelectedTab"] = 1,
 	["PetNotes"] = {

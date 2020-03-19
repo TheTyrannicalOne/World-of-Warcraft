@@ -43,10 +43,9 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[40643] = {
+			["title"] = "A Summons From Moonglade",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[51432] = {
@@ -57,13 +56,12 @@ QuestTogether = {
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10  ", -- [1]
+				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
 		[44989] = {
@@ -84,10 +82,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[50604] = {
@@ -96,10 +94,10 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[31891] = {
@@ -112,9 +110,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[47105] = {
@@ -123,16 +122,17 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[40643] = {
-			["title"] = "A Summons From Moonglade",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

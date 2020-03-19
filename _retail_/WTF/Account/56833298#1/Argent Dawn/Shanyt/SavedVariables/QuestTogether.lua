@@ -1,16 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
+		[58862] = {
+			["title"] = "The Littlest Defender",
+			["objectives"] = {
+				"Baruk Stone Defender defeated", -- [1]
+			},
+		},
 		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"0/4 Echo of Time", -- [1]
-			},
-		},
-		[42234] = {
-			["title"] = "The Valarjar",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[48288] = {
@@ -26,21 +26,16 @@ QuestTogether = {
 				"Queen Azshara defeated", -- [1]
 			},
 		},
-		[55350] = {
-			["title"] = "Assault: Amathet Advance",
-			["objectives"] = {
-				"60% Drive back the Amathet", -- [1]
-			},
-		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
 				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[56120] = {
@@ -75,16 +70,11 @@ QuestTogether = {
 				"Defeat Argus the Unmaker", -- [1]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[44989] = {
@@ -105,16 +95,22 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[42233] = {
+			["title"] = "Highmountain Tribes",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 		[57743] = {
@@ -123,15 +119,15 @@ QuestTogether = {
 				"0/500 Earn Conquest", -- [1]
 			},
 		},
-		[58881] = {
-			["title"] = "Tracking Quest",
-			["objectives"] = {
-			},
-		},
 		[55609] = {
 			["title"] = "Operation: Mechagon - The Mechoriginator",
 			["objectives"] = {
 				"0/1 King Mechagon slain", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
 			},
 		},
 		[24756] = {
@@ -152,11 +148,54 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[37031] = {
+			["title"] = "Sigil of the Black Hand (Mythic)",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"2/4 Ember of the Mountain", -- [1]
+				"3/4 Heart of Stone", -- [2]
+				"2/4 Sliver of Iron", -- [3]
+			},
+		},
+		[57276] = {
+			["title"] = "Maintaining Focus",
+			["objectives"] = {
+				"2/20 Shred of Insanity", -- [1]
+			},
+		},
+		[48642] = {
+			["title"] = "Argussian Reach",
+			["objectives"] = {
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"0/20 Eternal Ornament", -- [1]
+			},
+		},
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[57402] = {
+			["title"] = "Reconstructing \"The Curse of Stone\"",
+			["objectives"] = {
+				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
 		[31891] = {
@@ -169,43 +208,6 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[37031] = {
-			["title"] = "Sigil of the Black Hand (Mythic)",
-			["objectives"] = {
-				"1/4 Ember of the Mountain", -- [1]
-				"2/4 Heart of Stone", -- [2]
-				"1/4 Sliver of Iron", -- [3]
-			},
-		},
-		[57276] = {
-			["title"] = "Maintaining Focus",
-			["objectives"] = {
-				"1/20 Shred of Insanity", -- [1]
-			},
-		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
-			["objectives"] = {
-				"0/20 Eternal Ornament", -- [1]
-			},
-		},
-		[57402] = {
-			["title"] = "Reconstructing \"The Curse of Stone\"",
-			["objectives"] = {
-				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
-			},
-		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
-			},
-		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
-			},
-		},
 		[45172] = {
 			["title"] = "To Battle!",
 			["objectives"] = {
@@ -216,7 +218,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

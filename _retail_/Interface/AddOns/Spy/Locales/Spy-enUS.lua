@@ -64,6 +64,7 @@ L["Area 52"] = "Area 52"
 L["Dalaran"] = "Dalaran"
 L["Bogpaddle"] = "Bogpaddle"
 L["The Vindicaar"] = "The Vindicaar"
+L["Krasus' Landing"] = "Krasus' Landing"
 
 -- Display
 L["DisplayOptions"] = "Display"

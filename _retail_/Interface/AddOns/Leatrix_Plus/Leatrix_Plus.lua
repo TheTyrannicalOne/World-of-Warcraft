@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.09 (11th March 2020)
+-- 	Leatrix Plus 8.3.10 (18th March 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.3.09"
+	LeaPlusLC["AddonVer"] = "8.3.10"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -764,7 +764,7 @@
 			end
 
 			-- Create configuration panel
-			local SoundPanel = LeaPlusLC:CreatePanel("Mute Game Sounds", "SoundPanel")
+			local SoundPanel = LeaPlusLC:CreatePanel("Mute game sounds", "SoundPanel")
 
 			-- Add checkboxes
 			LeaPlusLC:MakeTx(SoundPanel, "Settings", 16, -72)
@@ -2275,7 +2275,7 @@
 			RepairFrame:SetScript("OnEvent", RepairFunc)
 
 			-- Create configuration panel
-			local RepairPanel = LeaPlusLC:CreatePanel("Repair Automatically", "RepairPanel")
+			local RepairPanel = LeaPlusLC:CreatePanel("Repair automatically", "RepairPanel")
 
 			LeaPlusLC:MakeTx(RepairPanel, "Settings", 16, -72)
 			LeaPlusLC:MakeCB(RepairPanel, "AutoRepairGuildFunds", "Repair using guild funds if available", 16, -92, false, "If checked, repair costs will be taken from guild funds for characters that are guilded and have permission to repair.")
@@ -2344,7 +2344,7 @@
 			PetPortrait:GetParent():SetFrameLevel(4)
 
 			-- Create configuration panel
-			local ChainPanel = LeaPlusLC:CreatePanel("Player Chain", "ChainPanel")
+			local ChainPanel = LeaPlusLC:CreatePanel("Show player chain", "ChainPanel")
 
 			-- Add dropdown menu
 			LeaPlusLC:CreateDropDown("PlayerChainMenu", "Chain style", ChainPanel, 146, "TOPLEFT", 16, -112, {L["RARE"], L["ELITE"], L["RARE ELITE"]}, "")
@@ -2487,7 +2487,7 @@
 			end)
 
 			-- Create configuration panel
-			local ClassFrame = LeaPlusLC:CreatePanel("Class Colored Frames", "ClassFrame")
+			local ClassFrame = LeaPlusLC:CreatePanel("Class colored frames", "ClassFrame")
 
 			LeaPlusLC:MakeTx(ClassFrame, "Settings", 16, -72)
 			LeaPlusLC:MakeCB(ClassFrame, "ClassColPlayer", "Show player frame in class color", 16, -92, false, "If checked, the player frame background will be shown in class color.")
@@ -2568,7 +2568,7 @@
 			----------------------------------------------------------------------
 
 			-- Create configuration panel
-			local SideMinimap = LeaPlusLC:CreatePanel("Minimap", "SideMinimap")
+			local SideMinimap = LeaPlusLC:CreatePanel("Customise minimap", "SideMinimap")
 
 			-- Hide panel during combat
 			SideMinimap:RegisterEvent("PLAYER_REGEN_DISABLED")
@@ -2860,7 +2860,7 @@
 		if LeaPlusLC["QuestFontChange"] == "On" then
 
 			-- Create configuration panel
-			local QuestTextPanel = LeaPlusLC:CreatePanel("Quest Text", "QuestTextPanel")
+			local QuestTextPanel = LeaPlusLC:CreatePanel("Resize quest text", "QuestTextPanel")
 
 			LeaPlusLC:MakeTx(QuestTextPanel, "Text size", 16, -72)
 			LeaPlusLC:MakeSL(QuestTextPanel, "LeaPlusQuestFontSize", "Drag to set the font size of quest text.", 10, 36, 1, 16, -92, "%.0f")
@@ -2918,7 +2918,7 @@
 		if LeaPlusLC["MailFontChange"] == "On" then
 
 			-- Create configuration panel
-			local MailTextPanel = LeaPlusLC:CreatePanel("Mail Text", "MailTextPanel")
+			local MailTextPanel = LeaPlusLC:CreatePanel("Resize mail text", "MailTextPanel")
 
 			LeaPlusLC:MakeTx(MailTextPanel, "Text size", 16, -72)
 			LeaPlusLC:MakeSL(MailTextPanel, "LeaPlusMailFontSize", "Drag to set the font size of mail text.", 10, 36, 1, 16, -92, "%.0f")
@@ -3275,7 +3275,7 @@
 		do
 
 			-- Create configuration panel
-			local weatherPanel = LeaPlusLC:CreatePanel("Weather Density", "weatherPanel")
+			local weatherPanel = LeaPlusLC:CreatePanel("Set weather density", "weatherPanel")
 			LeaPlusLC:MakeTx(weatherPanel, "Settings", 16, -72)
 			LeaPlusLC:MakeSL(weatherPanel, "WeatherLevel", "Drag to set the density of weather effects.", 0, 3, 1, 16, -92, "%.0f")
 
@@ -3758,7 +3758,7 @@
 			end
 
 			-- Create configuration panel
-			local SideFrames = LeaPlusLC:CreatePanel("Frames", "SideFrames")
+			local SideFrames = LeaPlusLC:CreatePanel("Manage frames", "SideFrames")
 
 			-- Variable used to store currently selected frame
 			local currentframe
@@ -4469,7 +4469,7 @@
 			end
 
 			-- Create configuration panel
-			local CooldownPanel = LeaPlusLC:CreatePanel("Cooldowns", "CooldownPanel")
+			local CooldownPanel = LeaPlusLC:CreatePanel("Show cooldowns", "CooldownPanel")
 
 			-- Function to refresh the editbox tooltip with the spell name
 			local function RefSpellTip(self,elapsed)
@@ -4809,7 +4809,7 @@
 			---------------------------------------------------------------------------------------------------------
 
 			-- Create tooltip customisation side panel
-			local SideTip = LeaPlusLC:CreatePanel("Tooltip", "SideTip")
+			local SideTip = LeaPlusLC:CreatePanel("Manage tooltip", "SideTip")
 
 			-- Add controls
 			LeaPlusLC:MakeTx(SideTip, "Settings", 16, -72)
@@ -5611,7 +5611,7 @@
 			local BordRight = WorldFrame:CreateTexture(nil, "ARTWORK"); BordRight:SetColorTexture(0, 0, 0, 1); BordRight:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 0); BordRight:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", 0, 0)
 
 			-- Create viewport configuration panel
-			local SideViewport = LeaPlusLC:CreatePanel("Viewport", "SideViewport")
+			local SideViewport = LeaPlusLC:CreatePanel("Enable viewport", "SideViewport")
 
 			-- Create resize screen button
 			local resizeScreenBtn = LeaPlusLC:CreateButton("resizeScreenBtn", SideViewport, "Resize Screen", "BOTTOMRIGHT", -16, 10, 0, 25, true, "Click to resize the screen to fit between the top and bottom borders.")
@@ -6153,6 +6153,7 @@
 			Zn(L["Dungeons"], L["Legion"], L["Tomb of Sargeras"]						, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Tomb of Sargeras"], prefol, "MUS_72_ToS_Raid_GeneralWalk#85171", "MUS_72_ToS_Raid_LegionWalk#85887", "MUS_72_ToS_Raid_TitanWalk#85888", "MUS_72_ToS_Raid_NightElfWalk#85889", "MUS_72_ToS_Raid_Naga_GeneralWalk#86406", "MUS_72_ToS_Raid_Naga_BossWalk#86407",})
 			Zn(L["Dungeons"], L["Legion"], L["Trial of Valor"]							, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Trial of Valor"], prefol, "MUS_70_HallsofValor_WalkA#75676", "MUS_70_HallsofValor_WalkB#75678", "MUS_70_HallsofValor_WalkC#75679", "MUS_70_Zone_Stormheim_Mystic_Walk#76491", "MUS_71_TrialOfValor-DarkCoast-Walk#79719",})
 			Zn(L["Dungeons"], L["Legion"], L["Vault of the Wardens"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Vault of the Wardens"], prefol, "MUS_70_VOTW_Walk_A#74778",})
+			Zn(L["Dungeons"], L["Legion"], L["Violet Hold"]								, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Violet Hold"], prefol, "Zone-VioletHoldWalkUni#14910",})
 
 			-- Dungeons: Battle for Azeroth
 			Zn(L["Dungeons"], L["Battle for Azeroth"], "|cffffd800", {""})
@@ -7109,7 +7110,7 @@
 		----------------------------------------------------------------------
 
 		-- Create configuration panel
-		local InvPanel = LeaPlusLC:CreatePanel("Invite From Whispers", "InvPanel")
+		local InvPanel = LeaPlusLC:CreatePanel("Invite from whispers", "InvPanel")
 
 		-- Add editbox
 		LeaPlusLC:MakeTx(InvPanel, "Settings", 16, -72)

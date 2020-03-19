@@ -195,8 +195,6 @@ function R:PrepareDefaults()
 			showCategoryIcons = true,
 			tooltipScale = GameTooltip:GetScale(),
 			enableProfiling = false,
-			showGroupFinderAutoRefresh = false,
-			enableGroupFinderAlert = false,
 			tooltipHideDelay = 0.6,
 			onlyAnnounceFound = false,
 			onlyShowItemsWithAttempts = false,
@@ -1416,7 +1414,7 @@ function R:PrepareDefaults()
 		["Slightly Damp Pile of Fur"] = {
 			cat = BFA,
 			type = MOUNT,
-			method = BOSS,
+			method = SPECIAL,
 			name = L["Slightly Damp Pile of Fur"],
 			itemId = 174842,
 			spellId = 298367,
@@ -1430,6 +1428,21 @@ function R:PrepareDefaults()
 			},
 		},
 
+		["Mail Muncher"] = {
+			cat = BFA,
+			type = MOUNT,
+			method = SPECIAL,
+			name = L["Mail Muncher"],
+			itemId = 174653,
+			spellId = 315987,
+			npcs = { 160708 },
+			tooltipNpcs = { 160708 },
+			chance = 100,
+			coords = {
+				{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_STORMWIND },
+				{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_ORGRIMMAR },
+			},
+		},
 
 
 		-- 8.3 Mounts
@@ -1697,9 +1710,10 @@ function R:PrepareDefaults()
 			name = L["Sharkbait's Favorite Crackers"],
 			spellId = 254813,
 			itemId = 159842,
-			npcs = 99999, -- 129440 (Heroic)
+			npcs = { 99999 },
+			tooltipNpcs = { 126983 },
 			statisticId = { 12752 },
-			chance = 100,
+			chance = 200,
 			equalOdds = true,
 			instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.MYTHIC_DUNGEON] = true },
 			groupSize = 5,
@@ -1712,9 +1726,10 @@ function R:PrepareDefaults()
 			name = L["Underrot Crawg Harness"],
 			spellId = 273541,
 			itemId = 160829,
-			npcs = 99999, -- 133007
+			npcs = { 99999 },
+			tooltipNpcs = { 133007 },
 			statisticId = { 12745 },
-			chance = 100,
+			chance = 200,
 			equalOdds = true,
 			instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.MYTHIC_DUNGEON] = true },
 			groupSize = 5,
@@ -1727,9 +1742,10 @@ function R:PrepareDefaults()
 			name = L["Mummified Raptor Skull"],
 			spellId = 266058,
 			itemId = 159921,
-			npcs = 99999, -- 136160
+			npcs = { 99999 },
+			tooltipNpcs = { 136160 },
 			statisticId = { 12763 },
-			chance = 100,
+			chance = 200,
 			equalOdds = true,
 			instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.MYTHIC_DUNGEON] = true },
 			groupSize = 5,
@@ -2127,22 +2143,22 @@ function R:PrepareDefaults()
 	 ["Young Venomfang"] =                               { cat = LEGION, type = PET, method = USE, name = L["Young Venomfang"], spellId = 233335, itemId = 143755, items = { 143753 }, chance = 100, creatureId = 117184, questId = 45539, coords = {{m=10,x=38.8,y=68.2,n=L["Muyani"]}}, },
 					-- 7.3
 	 ["Breezy Essence"] =                                { cat = LEGION, type = PET, method = BOSS, name = L["Breezy Essence"], itemId = 152974, spellId = 253818, creatureId = 127863, npcs = { 99999 }, tooltipNpcs = { 45870, 45871, 45872 }, lockBossName = "Conclave of Wind", chance = 10,  statisticId = { 5574, 5575 }, doNotUpdateToHighestStat = true, coords = {{m=328,x=47.5,y=26,i=true}},},
-	 ["Cinderweb Egg"] =                                 { cat = LEGION, type = PET, method = BOSS, name = L["Cinderweb Egg"], itemId = 152976, spellId = 253918, creatureId = 127948, npcs = { 99999 }, tooltipNpcs = { 52498 }, lockBossName = "Beth'tilac", chance = 10, statisticId = { 5964, 5965 }, doNotUpdateToHighestStat = true, coords = {{m=367,x=21,y=32.7, i=true}},},
+	 ["Cinderweb Egg"] =                                 { cat = LEGION, type = PET, method = NPC, name = L["Cinderweb Egg"], itemId = 152976, spellId = 253918, creatureId = 127948, npcs = { 52498 }, lockBossName = "Beth'tilac", chance = 10, coords = {{m=367,x=21,y=32.7, i=true}},},
 	 ["Elementium Back Plate"] =                         { cat = LEGION, type = PET, method = BOSS, name = L["Elementium Back Plate"], itemId = 152980, spellId = 253927, creatureId = 127953, npcs = { 99999 }, tooltipNpcs = { 53879 }, lockBossName = "Spine of Deathwing", chance = 10, statisticId = { 6165, 6166 }, doNotUpdateToHighestStat = true, coords = {{m=409,x=33.2,y=85.2, i=true}},},
 	 ["Experiment-In-A-Jar"] =                           { cat = LEGION, type = PET, method = BOSS, name = L["Experiment-In-A-Jar"], itemId = 152967, spellId = 253790, creatureId = 127852, npcs = { 99999 }, tooltipNpcs = { 41378 }, lockBossName = "Maloriak", chance = 10, statisticId = { 5559, 5560 }, doNotUpdateToHighestStat = true, coords = {{m=285,x=71.4,y=70.2, i=true}},},
-	 ["Fandral's Pet Carrier"] =                         { cat = LEGION, type = PET, method = BOSS, name = L["Fandral's Pet Carrier"], itemId = 152978, spellId = 253925, creatureId = 127951, npcs = { 99999 }, tooltipNpcs = { 52571 }, lockBossName = "Majordomo Staghelm", chance = 10, statisticId = { 5974, 5975 }, doNotUpdateToHighestStat = true, coords = {{m=367,x=50.9,y=72.4, i=true}},},
+	 ["Fandral's Pet Carrier"] =                         { cat = LEGION, type = PET, method = NPC, name = L["Fandral's Pet Carrier"], itemId = 152978, spellId = 253925, creatureId = 127951, npcs = { 52571 },lockBossName = "Majordomo Staghelm", chance = 10, coords = {{m=367,x=50.9,y=72.4, i=true}},},
 	 ["Lesser Circle of Binding"] =                      { cat = LEGION, type = PET, method = BOSS, name = L["Lesser Circle of Binding"], itemId = 152970, spellId = 253809, creatureId = 127858, npcs = { 99999 }, tooltipNpcs = { 43687, 43686, 43688, 43689, 43735 }, lockBossName = "Terrastra", chance = 10, statisticId = { 5569, 5570 }, doNotUpdateToHighestStat = true, coords = {{m=294,x=42.5,45.5, i=true}},},
      ["Model D1-BB-L3R"] =                               { cat = LEGION, type = PET, method = USE, name = L["Model D1-BB-L3R"], spellId = 233647, itemId = 151645, items = { 151638 }, chance = 100, creatureId = 117340, questId = 47895, coords = {{m=27,x=26.8,y=36.3,n=L["Environeer Bert"]}}, },
 	 ["Odd Twilight Egg"] =                              { cat = LEGION, type = PET, method = BOSS, name = L["Odd Twilight Egg"], itemId = 152969, spellId = 253805, creatureId = 127857, npcs = { 99999 }, tooltipNpcs = { 45993, 45992 }, lockBossName = "Theralion and Valiona", chance = 10, statisticId = { 5567, 5568 }, doNotUpdateToHighestStat = true, coords = {{m=294, i=true}},},
 	 ["Puddle of Black Liquid"] =                        { cat = LEGION, type = PET, method = BOSS, name = L["Puddle of Black Liquid"], itemId = 152979, spellId = 253926, creatureId = 127952, npcs = { 99999 }, tooltipNpcs = { 55312 }, lockBossName = "Yor'sahj the Unsleeping", chance = 10, statisticId = { 6157, 6158 }, doNotUpdateToHighestStat = true, coords = {{m=409,x=46.8,y=49.9, i=true}},},
 	 ["Rough-Hewn Remote"] =                             { cat = LEGION, type = PET, method = BOSS, name = L["Rough-Hewn Remote"], itemId = 152966, spellId = 253788, creatureId = 127850, npcs = { 99999 }, tooltipNpcs = { 42179, 42166, 42180, 42178 }, lockBossName = "Omnotron Defense System", chance = 10, statisticId = { 5557, 5558 }, doNotUpdateToHighestStat = true, coords = {{m=285,x=61.4,y=57.4, i=true}},},
 	 ["Severed Tentacle"] =                              { cat = LEGION, type = PET, method = BOSS, name = L["Severed Tentacle"], itemId = 152981, spellId = 253928, creatureId = 127954, npcs = { 99999 }, tooltipNpcs = { 56173 }, lockBossName = "Madness of Deathwing", chance = 10,  statisticId = { 6167, 6168 }, doNotUpdateToHighestStat = true, coords = {{m=409, i=true}},},
-	 ["Smoldering Treat"] =                              { cat = LEGION, type = PET, method = BOSS, name = L["Smoldering Treat"], itemId = 152975, spellId = 253916, creatureId = 127947, npcs = { 99999 }, tooltipNpcs = { 53691 }, lockBossName = "Shannox", chance = 10, statisticId = { 5968, 5969 }, doNotUpdateToHighestStat = true, coords = {{m=367,x=49.3,y=44.3, i=true}},},
+	 ["Smoldering Treat"] =                              { cat = LEGION, type = PET, method = NPC, name = L["Smoldering Treat"], itemId = 152975, spellId = 253916, creatureId = 127947, npcs = { 53691 }, lockBossName = "Shannox", chance = 10, coords = {{m=367,x=49.3,y=44.3, i=true}},},
 	 ["Shadowy Pile of Bones"] =                         { cat = LEGION, type = PET, method = BOSS, name = L["Shadowy Pile of Bones"], itemId = 152968, spellId = 253799, creatureId = 127853, npcs = { 99999 }, tooltipNpcs = { 41376, 41270 }, lockBossName = "Nefarian's End", chance = 10, statisticId = { 5565, 5566 }, doNotUpdateToHighestStat = true, coords = {{m=285,x=48,y=70.2, i=true}},},
 	 ["Strange Humming Crystal"] =                       { cat = LEGION, type = PET, method = USE, name = L["Strange Humming Crystal"], spellId = 226682, itemId = 141349, items = { 157828 }, chance = 100, creatureId = 113827, sourceText = L["The quest starter item for Wondrous Wisdomball"], coords = {{m=625,x=33.6,y=48,n=L["Warmage Silva"]}}, },
 	 ["Thistleleaf Adventurer"] =                        { cat = LEGION, type = PET, method = USE, name = L["Thistleleaf Adventurer"], spellId = 195369, itemId = 130167, items = { 157822 }, chance = 100, creatureId = 99389, coords = {{m=641,x=54.6,y=73.2,n=L["Sylvia Hartshorn"]}}, },
 	 ["Twilight Summoning Portal"] =                     { cat = LEGION, type = PET, method = BOSS, name = L["Twilight Summoning Portal"], itemId = 152972, spellId = 253813, creatureId = 127859, npcs = { 99999 }, tooltipNpcs = { 43324 }, lockBossName = "Cho'gall", chance = 10, statisticId = { 5572, 5571 }, doNotUpdateToHighestStat = true, coords = {{m=294,x=73.4,75.4, i=true}},},
-	 ["Vibrating Stone"] =                               { cat = LEGION, type = PET, method = BOSS, name = L["Vibrating Stone"], itemId = 152977, spellId = 253924, creatureId = 127950, npcs = { 99999 }, tooltipNpcs = { 53494 }, lockBossName = "Baleroc", chance = 10, statisticId = { 5972, 5973 }, doNotUpdateToHighestStat = true, coords = {{m=367,x=49.5,y=30.9, i=true}},},
+	 ["Vibrating Stone"] =                               { cat = LEGION, type = PET, method = NPC, name = L["Vibrating Stone"], itemId = 152977, spellId = 253924, creatureId = 127950, npcs = { 53494 }, lockBossName = "Baleroc", chance = 10, coords = {{m=367,x=49.5,y=30.9, i=true}},},
 	 ["Zephyr's Call"] =                                 { cat = LEGION, type = PET, method = BOSS, name = L["Zephyr's Call"], itemId = 152973, spellId = 253816, creatureId = 127862, npcs = { 99999 }, tooltipNpcs = { 46753 }, lockBossName = "Al'Akir", chance = 10,  statisticId = { 5576, 5577 }, doNotUpdateToHighestStat = true, coords = {{m=328,i=true}},},
 				-- 7.3
 		["Docile Skyfin"] = {
@@ -4250,6 +4266,105 @@ function R:PrepareDefaults()
 	},
 
 	-- 8.3 Pets
+	["Box Labeled \"Danger: Void Rat Inside\""] = {
+		cat = BFA,
+		type = PET,
+		method = SPECIAL,
+		name = L["Box Labeled \"Danger: Void Rat Inside\""],
+		spellId = 315301,
+		itemId = 174460,
+		chance = 100,
+		creatureId = 161963,
+		coords = {
+			{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_STORMWIND },
+		},
+	},
+
+	["Swirling Black Bottle"] = {
+		cat = BFA,
+		type = PET,
+		method = SPECIAL,
+		name = L["Swirling Black Bottle"],
+		spellId = 315302,
+		itemId = 174461,
+		chance = 100,
+		creatureId = 161964,
+		coords = {
+			{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_STORMWIND },
+			{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_ORGRIMMAR },
+		},
+	},
+
+	["Voidwoven Cat Collar"] = {
+		cat = BFA,
+		type = PET,
+		method = SPECIAL,
+		name = L["Voidwoven Cat Collar"],
+		spellId = 315298,
+		itemId = 174459,
+		chance = 100,
+		creatureId = 161962,
+		coords = {
+			{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_STORMWIND },
+		},
+	},
+
+	["Void-Link Frostwolf Collar"] = {
+		cat = BFA,
+		type = PET,
+		method = SPECIAL,
+		name = L["Void-Link Frostwolf Collar"],
+		spellId = 312030,
+		itemId = 174646,
+		chance = 100,
+		creatureId = 160196,
+		coords = {
+			{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_ORGRIMMAR },
+		},
+	},
+
+	["C'Thuffer"] = {
+		cat = BFA,
+		type = PET,
+		method = SPECIAL,
+		name = L["C'Thuffer"],
+		spellId = 315290,
+		itemId = 174457,
+		chance = 100,
+		creatureId = 161959,
+		coords = {
+			{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_ORGRIMMAR },
+		},
+	},
+
+	["Void-Scarred Hare"] = {
+		cat = BFA,
+		type = PET,
+		method = SPECIAL,
+		name = L["Void-Scarred Hare"],
+		spellId = 315297,
+		itemId = 174458,
+		chance = 100,
+		creatureId = 161961,
+		coords = {
+			{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_STORMWIND },
+		},
+	},
+
+	["Box With Faintly Glowing 'Air' Holes"] = {
+		cat = BFA,
+		type = PET,
+		method = SPECIAL,
+		name = L["Box With Faintly Glowing 'Air' Holes"],
+		spellId = 312029,
+		itemId = 173726,
+		chance = 100,
+		creatureId = 160187,
+		coords = {
+			{ m= CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_ORGRIMMAR },
+		},
+	},
+
 	["K'uddly"] = {
 		cat = BFA,
 		type = PET,
@@ -4266,21 +4381,35 @@ function R:PrepareDefaults()
 		},
 	},
 
-	-- ["Cursed Dune Watcher"] = {
-	-- 	cat = BFA,
-	-- 	type = PET,
-	-- 	method = NPC,
-	-- 	name = L["Cursed Dune Watcher"],
-	-- 	npcs = { 00000000000000000000000000000000000000000 },
-	-- 	spellId = 000000000000000000000000000000000000000000000,
-	-- 	itemId = 174481,
-	-- 	creatureId = 00000000000000000000000000000000000000000000,
-	-- 	questId = { 00000000000000000000000000000000000000000 },
-	-- 	chance = 20,
-	-- 	coords = {
-	-- 		{ m = CONSTANTS.UIMAPIDS.AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, x = 00000000000000000000000000000000000000000000000000000000000, y = 000000000000000000000000000000000000000000000000000000000000000000, n = L["BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"] },
-	-- 	},
-	-- }, -- paragon
+	["Cursed Dune Watcher"] = {
+		cat = BFA,
+		type = PET,
+		method = USE,
+		name = L["Cursed Dune Watcher"],
+		spellId = 315367,
+		itemId = 174481,
+		items = { 174484 }, -- Uldum Accord Supplies
+		chance = 100, -- Blind guess (no data)
+		creatureId = 162007,
+		coords = {
+			{ m = CONSTANTS.UIMAPIDS.ULDUM },
+		},
+	},
+
+	["Jade Defender"] = {
+		cat = BFA,
+		type = PET,
+		method = USE,
+		name = L["Jade Defender"],
+		spellId = 315371,
+		itemId = 174479,
+		items = { 174483 }, -- Rajani Supplies
+		chance = 100,
+		creatureId = 162013,
+		coords = {
+			{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS },
+		},
+	},
 
 	["Black Chitinous Plate"] = {
 		cat = BFA,
@@ -5356,6 +5485,20 @@ function R:PrepareDefaults()
 	},
 
 	-- 8.3 Toys
+	["Overly Sensitive Void Spectacles"] = {
+		cat = BFA,
+		type = ITEM,
+		isToy = true,
+		method = NPC,
+		name = L["Overly Sensitive Void Spectacles"],
+		itemId = 174926,
+		npcs = { 158284 },
+		chance = 20,
+		coords = {
+			{ m = CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_STORMWIND },
+		},
+	},
+
 	["Hell-Bent Bracers"] = {
 		cat = BFA,
 		type = ITEM,
@@ -5400,6 +5543,20 @@ function R:PrepareDefaults()
 		questId = { 58507 },
 		coords = {
 			{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS, x = 29.13, y = 22.07, n = L["Tashara"] },
+		},
+	},
+
+	--
+	["Void-Touched Souvenir Totem"] = {
+		cat = BFA,
+		type = ITEM,
+		isToy = true,
+		method = SPECIAL,
+		name = L["Void-Touched Souvenir Totem"],
+		itemId = 174924,
+		chance = 100, -- Blind guess (no data)
+		coords = {
+			{ m = CONSTANTS.UIMAPIDS.HORRIFIC_VISION_OF_ORGRIMMAR },
 		},
 	},
 
@@ -5462,6 +5619,38 @@ function R:PrepareDefaults()
 	},
 	groupSize = 3,
 	equalOdds = true,
+},
+
+["Zan-Tien Lasso"] = {
+	cat = BFA,
+	type = ITEM,
+	method = NPC,
+	name = L["Zan-Tien Lasso"],
+	itemId = 174927,
+	npcs = {
+		157345, -- Zan-Tien Subjugator
+		153095, -- Zan-Tien Caller
+		153099, -- Baruk Protector
+		153094, -- Zan-Tien Raider
+		157101, -- Xigan <Zan-Tien General>
+		157103, -- Tsah'tal <Dokani General>
+		155957, -- Baruk Stoneshaper
+		156675, -- Zan-Tien Scout
+		157097, -- Solux <Baruk General>
+		153106, -- Dokani Bloodshaper
+		153107, -- Dokani Shadewalker
+		157156, -- Torsheg <Zan-Tien Warlord>
+		157443, -- Xiln the Mountain
+		157171, -- Heixi the Stonelord
+		157291, -- Spymaster Hul'ach
+		157160, -- Houndlord Ren
+	},
+	chance = 100,
+	unique = true,
+	coords = {
+		{ m = CONSTANTS.UIMAPIDS.VALE_OF_ETERNAL_BLOSSOMS },
+	},
+	sourceText = L["Can be used to capture the Ivory Cloud Serpent"],
 },
 
 ["All-Seeing Right Eye"] = {
