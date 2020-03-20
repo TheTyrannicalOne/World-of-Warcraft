@@ -7,10 +7,16 @@ QuestTogether = {
 				"Baruk Stone Defender defeated", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
+			},
+		},
+		[42234] = {
+			["title"] = "The Valarjar",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[48288] = {
@@ -26,6 +32,12 @@ QuestTogether = {
 				"Queen Azshara defeated", -- [1]
 			},
 		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
@@ -38,10 +50,12 @@ QuestTogether = {
 				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[37031] = {
+			["title"] = "Sigil of the Black Hand (Mythic)",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"2/4 Ember of the Mountain", -- [1]
+				"3/4 Heart of Stone", -- [2]
+				"2/4 Sliver of Iron", -- [3]
 			},
 		},
 		[56500] = {
@@ -83,10 +97,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[57402] = {
+			["title"] = "Reconstructing \"The Curse of Stone\"",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
 		[53435] = {
@@ -101,10 +115,10 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[42233] = {
@@ -148,24 +162,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[37031] = {
-			["title"] = "Sigil of the Black Hand (Mythic)",
-			["objectives"] = {
-				"2/4 Ember of the Mountain", -- [1]
-				"3/4 Heart of Stone", -- [2]
-				"2/4 Sliver of Iron", -- [3]
-			},
-		},
 		[57276] = {
 			["title"] = "Maintaining Focus",
 			["objectives"] = {
 				"2/20 Shred of Insanity", -- [1]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[49032] = {
@@ -180,22 +186,16 @@ QuestTogether = {
 				"0/20 Eternal Ornament", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[45383] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[57402] = {
-			["title"] = "Reconstructing \"The Curse of Stone\"",
-			["objectives"] = {
-				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
 		[31891] = {
@@ -217,8 +217,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

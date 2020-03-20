@@ -1,23 +1,12 @@
-3/18 19:48:41.797  LogOpen
-3/18 19:48:41.837  NvAPI loaded
-3/18 19:48:42.177  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe10a3) dx11:true dx12:true
-3/18 19:48:42.177  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
-3/18 19:48:42.233  D3d12 Device Create
-3/18 19:48:42.378  Choosing adapter 0
-3/18 19:48:42.557  AFR Groups: 1/1
-3/18 19:48:42.557  Feature Level: DX=6, MTL=0
-3/18 19:48:42.747  NotifyOnDeviceCreate
-3/18 19:48:42.747  D3d12 Device Create Successful
-3/18 19:48:42.747  Nvidia driver version: r442_47 (44259)
-3/18 19:48:42.747  <IsGPUDriverOutOfDate> No
-3/18 19:48:42.773  CPU Processor Detection: 12 H/W threads
-3/18 19:48:42.773  Memory Detection: 34296328192 bytes of physical memory available
-3/18 19:48:42.773  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-3/18 19:48:42.880  RenderSettings::NotifyChanged
-3/18 19:48:44.301  Nvidia driver version: r442_47 (44259)
-3/18 19:49:12.255  Nvidia driver version: r442_47 (44259)
-3/18 19:49:12.255  Nvidia driver version: r442_47 (44259)
-3/18 19:52:47.536  Nvidia driver version: r442_47 (44259)
-3/18 19:52:48.125  D3d12 Device Destroy
-3/18 19:52:48.125  NotifyOnDeviceDestroy
-3/18 19:52:48.787  GxShutdown
+3/20 15:36:53.598  LogOpen
+3/20 15:36:53.651  NvAPI loaded
+3/20 15:36:54.107  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe10b2) dx11:true dx12:true
+3/20 15:36:54.107  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
+3/20 15:36:54.172  D3d12 Device Create
+3/20 15:36:54.329  Choosing adapter 0
+3/20 15:36:54.499  AFR Groups: 1/1
+3/20 15:36:54.499  Feature Level: DX=6, MTL=0
+3/20 15:36:54.775  NotifyOnDeviceCreate
+3/20 15:36:54.775  D3d12 Device Create Successful
+3/20 15:36:54.775  Nvidia driver version: r442_70 (44274)
+3/20 15:36:54.775  <IsGPUDriverOutOfDate> No

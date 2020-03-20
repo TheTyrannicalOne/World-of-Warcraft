@@ -13,16 +13,29 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"0/20 Eternal Ornament", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
+		[48288] = {
+			["title"] = "Antoran High Command",
+			["objectives"] = {
+				"Defeat the Antoran High Command in Antorus, The Burning Throne", -- [1]
+				"1/1 Azeroth Invasion Plans", -- [2]
 			},
 		},
 		[56356] = {
 			["title"] = "The Eternal Palace: Queen's Gambit",
 			["objectives"] = {
 				"Queen Azshara defeated", -- [1]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[58632] = {
@@ -82,10 +95,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[57402] = {
+			["title"] = "Reconstructing \"The Curse of Stone\"",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
 			},
 		},
 		[53435] = {
@@ -147,6 +160,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
 		[37031] = {
 			["title"] = "Sigil of the Black Hand (Mythic)",
 			["objectives"] = {
@@ -161,17 +184,22 @@ QuestTogether = {
 				"2/20 Shred of Insanity", -- [1]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[48288] = {
-			["title"] = "Antoran High Command",
+		[51042] = {
+			["title"] = "Supplies Needed: Monelite Ore",
 			["objectives"] = {
-				"Defeat the Antoran High Command in Antorus, The Burning Throne", -- [1]
-				"1/1 Azeroth Invasion Plans", -- [2]
+				"20/20 Monelite Ore", -- [1]
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"0/20 Eternal Ornament", -- [1]
 			},
 		},
 		[45381] = {
@@ -180,16 +208,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[57402] = {
-			["title"] = "Reconstructing \"The Curse of Stone\"",
-			["objectives"] = {
-				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
+				"1/4 Rune of Passage", -- [1]
 			},
 		},
 		[45172] = {
@@ -198,27 +220,11 @@ QuestTogether = {
 				"Win a battleground", -- [1]
 			},
 		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
-			},
-		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
-		["events"] = false,
 		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
 	},
 }

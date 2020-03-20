@@ -1,9 +1,9 @@
 
 ActionBarProfilesDBv3 = {
 	["profileKeys"] = {
-		["Tynkster - Dalaran"] = "HUNTER",
-		["Shanyt - Argent Dawn"] = "WARRIOR",
 		["Durlok - Black Dragonflight"] = "DRUID",
+		["Shanyt - Argent Dawn"] = "WARRIOR",
+		["Tynkster - Dalaran"] = "HUNTER",
 	},
 	["profiles"] = {
 		["HUNTER"] = {
