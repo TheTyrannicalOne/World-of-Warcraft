@@ -43,6 +43,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
 		[40643] = {
 			["title"] = "A Summons From Moonglade",
 			["objectives"] = {
@@ -59,9 +65,10 @@ QuestTogether = {
 				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[44989] = {
@@ -82,16 +89,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[42421] = {
@@ -122,17 +123,16 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

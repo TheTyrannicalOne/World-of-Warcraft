@@ -28,7 +28,8 @@ RematchSettings = {
 	["XPos"] = 995.0079345703125,
 	["CollectionChartType"] = 1,
 	["DialogYPos"] = 702.0048828125,
-	["DialogXPos"] = 1290.007934570313,
+	["SpecialSlots"] = {
+	},
 	["HidePetToast"] = true,
 	["QueueSanctuary"] = {
 		["BattlePet-0-00000847841B"] = "QQQ52PO",
@@ -46,10 +47,7 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["LevelingQueue"] = {
-		"BattlePet-0-0000083ED3B8", -- [1]
-		"BattlePet-0-00000847841B", -- [2]
-	},
+	["DialogXPos"] = 1290.007934570313,
 	["Filters"] = {
 		["Other"] = {
 		},
@@ -80,8 +78,7 @@ RematchSettings = {
 	},
 	["CustomScaleValue"] = 100,
 	["YPos"] = 418.0044860839844,
-	["FavoriteFilters"] = {
-	},
+	["JournalUsed"] = true,
 	["CollapsedOptHeaders"] = {
 	},
 	["ElvUIToastDefaulted"] = true,
@@ -111,9 +108,12 @@ RematchSettings = {
 	},
 	["JournalPanel"] = 2,
 	["CornerPos"] = "BOTTOMLEFT",
-	["SpecialSlots"] = {
+	["FavoriteFilters"] = {
 	},
-	["JournalUsed"] = true,
+	["LevelingQueue"] = {
+		"BattlePet-0-0000083ED3B8", -- [1]
+		"BattlePet-0-00000847841B", -- [2]
+	},
 	["UseTypeBar"] = true,
 	["SelectedTab"] = 1,
 	["PetNotes"] = {

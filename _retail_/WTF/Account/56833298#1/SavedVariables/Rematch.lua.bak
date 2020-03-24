@@ -28,19 +28,16 @@ RematchSettings = {
 	["XPos"] = 995.0079345703125,
 	["CollectionChartType"] = 1,
 	["DialogYPos"] = 702.0048828125,
-	["QueueSanctuary"] = {
-		["BattlePet-0-00000847841B"] = "QQQ52PO",
-		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
-	},
-	["HidePetToast"] = true,
-	["LevelingQueue"] = {
-		"BattlePet-0-0000083ED3B8", -- [1]
-		"BattlePet-0-00000847841B", -- [2]
-	},
 	["Sort"] = {
 		["Order"] = 2,
 		["FavoritesFirst"] = true,
 	},
+	["HidePetToast"] = true,
+	["QueueSanctuary"] = {
+		["BattlePet-0-00000847841B"] = "QQQ52PO",
+		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
+	},
+	["DialogXPos"] = 1290.007934570313,
 	["AllowHiddenPetsDefaulted"] = true,
 	["BackupCount"] = 0,
 	["TeamGroups"] = {
@@ -49,7 +46,10 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["JournalUsed"] = true,
+	["LevelingQueue"] = {
+		"BattlePet-0-0000083ED3B8", -- [1]
+		"BattlePet-0-00000847841B", -- [2]
+	},
 	["Filters"] = {
 		["Other"] = {
 		},
@@ -80,7 +80,7 @@ RematchSettings = {
 	},
 	["SelectedTab"] = 1,
 	["UseTypeBar"] = true,
-	["SpecialSlots"] = {
+	["FavoriteFilters"] = {
 	},
 	["CollapsedOptHeaders"] = {
 	},
@@ -111,9 +111,9 @@ RematchSettings = {
 	},
 	["JournalPanel"] = 2,
 	["CornerPos"] = "BOTTOMLEFT",
-	["DialogXPos"] = 1290.007934570313,
-	["FavoriteFilters"] = {
+	["SpecialSlots"] = {
 	},
+	["JournalUsed"] = true,
 	["YPos"] = 418.0044860839844,
 	["CustomScaleValue"] = 100,
 	["PetNotes"] = {

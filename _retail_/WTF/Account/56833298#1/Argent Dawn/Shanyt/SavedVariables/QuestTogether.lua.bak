@@ -1,22 +1,15 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[58862] = {
-			["title"] = "The Littlest Defender",
-			["objectives"] = {
-				"Baruk Stone Defender defeated", -- [1]
-			},
-		},
 		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[54460] = {
+			["title"] = "Supplies from Talanji's Expedition",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[48288] = {
@@ -32,22 +25,10 @@ QuestTogether = {
 				"Queen Azshara defeated", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
 				"N'Zoth, the Corruptor defeated", -- [1]
-			},
-		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[56120] = {
@@ -82,6 +63,12 @@ QuestTogether = {
 				"Defeat Argus the Unmaker", -- [1]
 			},
 		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
@@ -95,10 +82,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57402] = {
-			["title"] = "Reconstructing \"The Curse of Stone\"",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -107,10 +94,10 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[42420] = {
@@ -119,10 +106,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[57743] = {
@@ -135,6 +122,11 @@ QuestTogether = {
 			["title"] = "Operation: Mechagon - The Mechoriginator",
 			["objectives"] = {
 				"0/1 King Mechagon slain", -- [1]
+			},
+		},
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[57566] = {
@@ -160,22 +152,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
 		[37031] = {
 			["title"] = "Sigil of the Black Hand (Mythic)",
 			["objectives"] = {
-				"2/4 Ember of the Mountain", -- [1]
-				"3/4 Heart of Stone", -- [2]
-				"2/4 Sliver of Iron", -- [3]
+				"3/4 Ember of the Mountain", -- [1]
+				"4/4 Heart of Stone", -- [2]
+				"3/4 Sliver of Iron", -- [3]
 			},
 		},
 		[57276] = {
@@ -184,16 +166,10 @@ QuestTogether = {
 				"2/20 Shred of Insanity", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[51042] = {
-			["title"] = "Supplies Needed: Monelite Ore",
-			["objectives"] = {
-				"20/20 Monelite Ore", -- [1]
+				"1/4 Rune of Passage", -- [1]
 			},
 		},
 		[56352] = {
@@ -202,16 +178,32 @@ QuestTogether = {
 				"0/20 Eternal Ornament", -- [1]
 			},
 		},
+		[42170] = {
+			["title"] = "The Dreamweavers",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+			},
+		},
 		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
+		[57402] = {
+			["title"] = "Reconstructing \"The Curse of Stone\"",
 			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
+				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[45172] = {
@@ -224,7 +216,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

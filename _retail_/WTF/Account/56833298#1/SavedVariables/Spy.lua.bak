@@ -41,8 +41,8 @@ SpyDB = {
 	},
 	["profiles"] = {
 		["Tynkster - Dalaran"] = {
-			["MainWindowVis"] = false,
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -80,8 +80,8 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
-			["MainWindowVis"] = false,
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {

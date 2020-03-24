@@ -20,7 +20,7 @@ QuestTogether = {
 		[27028] = {
 			["title"] = "Hornet Hunting",
 			["objectives"] = {
-				"0/6  ", -- [1]
+				"0/6 Glassy Hornet Wing", -- [1]
 			},
 		},
 		[28563] = {
@@ -110,8 +110,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }
