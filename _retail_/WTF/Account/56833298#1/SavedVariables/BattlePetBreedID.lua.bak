@@ -1,7 +1,5 @@
 
 BPBID_Options = {
-	["ManualChange"] = false,
-	["BattleFontFix"] = false,
 	["Breedtip"] = {
 		["Current"] = true,
 		["Possible"] = true,
@@ -13,7 +11,9 @@ BPBID_Options = {
 		["AllStats"] = false,
 		["AllStats25"] = true,
 	},
+	["BattleFontFix"] = false,
 	["format"] = 3,
+	["ManualChange"] = false,
 	["Tooltips"] = {
 		["Enabled"] = true,
 		["FBPT"] = true,

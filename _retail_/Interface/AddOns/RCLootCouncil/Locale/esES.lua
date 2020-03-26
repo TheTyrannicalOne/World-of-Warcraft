@@ -13,8 +13,7 @@ L["A tab delimited output for Excel. Might work with other spreadsheets."] = "Un
 L["Abort"] = "Cancelar"
 L["Accept Whispers"] = "Aceptar Susurros"
 L["accept_whispers_desc"] = "Permite a los jugadores susurrar su(s) objeto(s) actual (s) para que puedan tenerse en cuenta en la votación."
---[[Translation missing --]]
---[[ L["Accepted imports: 'Player Export' and 'CSV'"] = ""--]] 
+L["Accepted imports: 'Player Export' and 'CSV'"] = "Importaciones aceptadas: 'Exportar jugador' y 'CSV'"
 L["Active"] = "Activar"
 L["active_desc"] = "Desactive la opcion para desactivar RCLootCouncil. Esto es útil si estas en un grupo de banda, pero no participas en el reparto de botín. Nota: Esto se restablece cada cierre de sesión."
 L["Add Item"] = "Añadir un objeto"
@@ -31,44 +30,33 @@ Clic en los rangos de la izquierda para añadir jugadores individualmente al con
 Clic en la ventana 'Consejo actual' para ver su selección.]=]
 --[[Translation missing --]]
 --[[ L["add_rolls_desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["Additional Buttons"] = ""--]] 
+L["Additional Buttons"] = "Botones adicionales"
 L["All items"] = "Todos los objetos"
---[[Translation missing --]]
---[[ L["All items have been awarded and the loot session concluded"] = ""--]] 
---[[Translation missing --]]
---[[ L["All items usable by the candidate"] = ""--]] 
+L["All items have been awarded and the loot session concluded"] = "Todos los objetos han sido adjudicados y el sorteo ha concluido"
+L["All items usable by the candidate"] = "Todos los objetos utilizables por el candidato"
 --[[Translation missing --]]
 --[[ L["All unawarded items"] = ""--]] 
 L["Alt click Looting"] = "Pulsar ALT para Repartir"
 L["alt_click_looting_desc"] = "Activar el clic de ALT para repartir el loot, es decir, se inicia una sesión de reparto del loot manteniendo pulsada la tecla Alt (izquierdo) y haciendo clic en un objeto."
 L["Alternatively, flag the loot as award later."] = "Alternativamente, marcar el loot para premiar más tarde."
---[[Translation missing --]]
---[[ L["Always show owner"] = ""--]] 
---[[Translation missing --]]
---[[ L["Always use RCLootCouncil with Personal Loot"] = ""--]] 
+L["Always show owner"] = "Mostrar siempre al propietario"
+L["Always use RCLootCouncil with Personal Loot"] = "Usar siempre RCLootCouncil con el botín personal"
 --[[Translation missing --]]
 --[[ L["always_show_tooltip_howto"] = ""--]] 
 L["Announce Awards"] = "Anunciar premios"
 L["Announce Considerations"] = "Anunciar consideraciones"
---[[Translation missing --]]
---[[ L["announce_&i_desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["announce_&l_desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["announce_&m_desc"] = ""--]] 
+L["announce_&i_desc"] = "|cfffcd400 &i|r: enlace al objeto."
+L["announce_&l_desc"] = "|cfffcd400 &l|r: nivel de objeto."
+L["announce_&m_desc"] = "|cfffcd400 &m|r: nota de candidatos."
 --[[Translation missing --]]
 --[[ L["announce_&n_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["announce_&o_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["announce_&p_desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["announce_&r_desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["announce_&s_desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["announce_&t_desc"] = ""--]] 
+L["announce_&r_desc"] = "|cfffcd400 &r|r: razón."
+L["announce_&s_desc"] = "|cfffcd400 &s|r: id de sesión."
+L["announce_&t_desc"] = "|cfffcd400 &t|r: tipo de objeto."
 L["announce_awards_desc"] = "Activar los anuncios de los premios en el chat"
 L["announce_awards_desc2"] = "Elija que canal(s) deseas para anunciar junto con el texto. Usar &p para el nombre del jugador que consigue el botín, &i para el objeto adjudicado y &r para la razón."
 L["announce_considerations_desc"] = "Activar los anuncios de los objetos bajo consideración cada vez que se inicia una sesión."
@@ -99,8 +87,7 @@ L["Auto Pass"] = "Auto pasar"
 L["Auto pass BoE"] = "Auto entregar BoE"
 L["Auto Pass Trinkets"] = "Auto pasar abalorios."
 L["Auto Start"] = "Inicio automatico"
---[[Translation missing --]]
---[[ L["Auto Trade"] = ""--]] 
+L["Auto Trade"] = "Auto comerciar"
 L["auto_award_desc"] = "Activa Recompensa Automatica."
 L["auto_award_to_desc"] = "El jugador a recompensar automaticamente. Una lista seleccionable de miembros de la raid aparece si se está en un grupo de raid."
 L["auto_close_desc"] = "marca la casilla para cerrar la ventana de votación cuando el Maestro despojador termine la sesión"

@@ -29,8 +29,7 @@ L["add_ranks_desc2"] = [=[在上方选择一个会阶，添加该会阶以及高
 
 点击"当前议会成员"页来查看你所选择的成员。]=]
 L["add_rolls_desc"] = "自动给所有会话添加1-100的掷点。"
---[[Translation missing --]]
---[[ L["Additional Buttons"] = ""--]] 
+L["Additional Buttons"] = "额外按钮"
 L["All items"] = "所有物品"
 --[[Translation missing --]]
 --[[ L["All items have been awarded and the loot session concluded"] = ""--]] 

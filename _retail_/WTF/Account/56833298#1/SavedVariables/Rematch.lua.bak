@@ -33,9 +33,7 @@ RematchSettings = {
 		["FavoritesFirst"] = true,
 	},
 	["HidePetToast"] = true,
-	["QueueSanctuary"] = {
-		["BattlePet-0-00000847841B"] = "QQQ52PO",
-		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
+	["FavoriteFilters"] = {
 	},
 	["DialogXPos"] = 1290.007934570313,
 	["AllowHiddenPetsDefaulted"] = true,
@@ -46,9 +44,9 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["LevelingQueue"] = {
-		"BattlePet-0-0000083ED3B8", -- [1]
-		"BattlePet-0-00000847841B", -- [2]
+	["QueueSanctuary"] = {
+		["BattlePet-0-00000847841B"] = "QQQ52PO",
+		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
 	},
 	["Filters"] = {
 		["Other"] = {
@@ -61,9 +59,9 @@ RematchSettings = {
 		},
 		["Level"] = {
 		},
-		["Sources"] = {
-		},
 		["Similar"] = {
+		},
+		["Sources"] = {
 		},
 		["Breed"] = {
 		},
@@ -80,7 +78,9 @@ RematchSettings = {
 	},
 	["SelectedTab"] = 1,
 	["UseTypeBar"] = true,
-	["FavoriteFilters"] = {
+	["LevelingQueue"] = {
+		"BattlePet-0-0000083ED3B8", -- [1]
+		"BattlePet-0-00000847841B", -- [2]
 	},
 	["CollapsedOptHeaders"] = {
 	},

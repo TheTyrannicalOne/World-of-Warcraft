@@ -63,13 +63,13 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["lastCacheTime"] = 1462930208,
 			["summary"] = {
-				["ti1"] = 118530,
 				["tt1"] = true,
+				["ti1"] = 118530,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["ti3"] = 127855,
 				["tt3"] = true,
+				["ti3"] = 127855,
 			},
 			["faction"] = "Horde",
 		},
@@ -114,6 +114,10 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 			["class"] = "MAGE",
 		},
+		["Serbitechna"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
 		["Brewnheimer"] = {
 			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
@@ -121,10 +125,6 @@ MasterPlanAG = {
 		["Dialdaas"] = {
 			["class"] = "PALADIN",
 			["faction"] = "Alliance",
-		},
-		["Serbitechna"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
 		},
 	},
 	["Black Dragonflight"] = {
@@ -191,22 +191,18 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["lastCacheTime"] = 1585006848,
+			["class"] = "WARRIOR",
 			["summary"] = {
-				["lastOilTime"] = 1584970398,
+				["lastOilTime"] = 1585121532,
 				["inProgress"] = {
-					[563] = 1585032529,
-					[261] = 1585010878,
-					[672] = 1585018074,
-					[127] = 1585018096,
-					[576] = 1585068526,
-					[486] = 1585025308,
-					[745] = 1585035198,
-					[540] = 1585068519,
-					[189] = 1585009467,
-					[190] = 1585011826,
-					[379] = 1585032511,
-					[482] = 1585025294,
+					[127] = 1585176310,
+					[745] = 1585186332,
+					[541] = 1585168340,
+					[564] = 1585218734,
+					[619] = 1585218737,
+					[673] = 1585168309,
+					[303] = 1585172706,
+					[269] = 1585168298,
 				},
 				["ti3"] = 127855,
 				["ti2"] = 122486,
@@ -215,11 +211,11 @@ MasterPlanAG = {
 				["tt3"] = 1583591667,
 				["tt2"] = 1584917318,
 			},
-			["curOil"] = 80220,
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 9910,
 			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1585162446,
+			["curRes"] = 8590,
+			["curOil"] = 81130,
 		},
 	},
 }

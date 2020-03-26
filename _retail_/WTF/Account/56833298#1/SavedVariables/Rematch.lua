@@ -31,9 +31,7 @@ RematchSettings = {
 	["SpecialSlots"] = {
 	},
 	["HidePetToast"] = true,
-	["QueueSanctuary"] = {
-		["BattlePet-0-00000847841B"] = "QQQ52PO",
-		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
+	["FavoriteFilters"] = {
 	},
 	["Sort"] = {
 		["Order"] = 2,
@@ -61,13 +59,13 @@ RematchSettings = {
 		},
 		["Strong"] = {
 		},
-		["Sources"] = {
+		["Similar"] = {
 		},
 		["Breed"] = {
 		},
 		["Rarity"] = {
 		},
-		["Similar"] = {
+		["Sources"] = {
 		},
 		["Level"] = {
 		},
@@ -108,11 +106,13 @@ RematchSettings = {
 	},
 	["JournalPanel"] = 2,
 	["CornerPos"] = "BOTTOMLEFT",
-	["FavoriteFilters"] = {
-	},
 	["LevelingQueue"] = {
 		"BattlePet-0-0000083ED3B8", -- [1]
 		"BattlePet-0-00000847841B", -- [2]
+	},
+	["QueueSanctuary"] = {
+		["BattlePet-0-00000847841B"] = "QQQ52PO",
+		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
 	},
 	["UseTypeBar"] = true,
 	["SelectedTab"] = 1,

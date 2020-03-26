@@ -1,6 +1,6 @@
-## Interface: 80300
-## X-Max-Interface: 80300
-## X-Min-Interface: 80200
+## Interface: 11303
+## X-Max-Interface: 80205
+## X-Min-Interface: 11302
 
 
 ## Title: H.H.T.D.

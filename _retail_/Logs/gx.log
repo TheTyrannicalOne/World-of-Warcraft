@@ -1,28 +1,23 @@
-3/23 18:45:16.658  LogOpen
-3/23 18:45:16.817  NvAPI loaded
-3/23 18:45:17.779  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe11df) dx11:true dx12:true
-3/23 18:45:17.779  	Monitor 0 "\\.\DISPLAY6" (2560x1440)
-3/23 18:45:17.862  D3d12 Device Create
-3/23 18:45:18.035  Choosing adapter 0
-3/23 18:45:18.217  AFR Groups: 1/1
-3/23 18:45:18.217  Feature Level: DX=6, MTL=0
-3/23 18:45:18.422  NotifyOnDeviceCreate
-3/23 18:45:18.422  D3d12 Device Create Successful
-3/23 18:45:18.422  Nvidia driver version: r445_00 (44575)
-3/23 18:45:18.422  <IsGPUDriverOutOfDate> No
-3/23 18:45:18.446  CPU Processor Detection: 12 H/W threads
-3/23 18:45:18.446  Memory Detection: 34296328192 bytes of physical memory available
-3/23 18:45:18.446  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-3/23 18:45:18.558  RenderSettings::NotifyChanged
-3/23 18:45:20.858  Nvidia driver version: r445_00 (44575)
-3/23 18:45:48.835  Nvidia driver version: r445_00 (44575)
-3/23 18:45:48.835  Nvidia driver version: r445_00 (44575)
-3/23 19:10:54.527  RenderSettings::NotifyChanged
-3/23 19:39:00.542  RenderSettings::NotifyChanged
-3/23 19:55:58.919  RenderSettings::NotifyChanged
-3/23 20:18:30.486  RenderSettings::NotifyChanged
-3/23 20:52:51.024  Nvidia driver version: r445_00 (44575)
-3/23 21:26:06.481  Nvidia driver version: r445_00 (44575)
-3/23 21:26:07.643  D3d12 Device Destroy
-3/23 21:26:07.643  NotifyOnDeviceDestroy
-3/23 21:26:08.935  GxShutdown
+3/25 22:56:18.641  LogOpen
+3/25 22:56:18.700  NvAPI loaded
+3/25 22:56:19.458  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe11df) dx11:true dx12:true
+3/25 22:56:19.458  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
+3/25 22:56:19.533  D3d12 Device Create
+3/25 22:56:19.685  Choosing adapter 0
+3/25 22:56:19.861  AFR Groups: 1/1
+3/25 22:56:19.861  Feature Level: DX=6, MTL=0
+3/25 22:56:20.111  NotifyOnDeviceCreate
+3/25 22:56:20.111  D3d12 Device Create Successful
+3/25 22:56:20.111  Nvidia driver version: r445_00 (44575)
+3/25 22:56:20.111  <IsGPUDriverOutOfDate> No
+3/25 22:56:20.137  CPU Processor Detection: 12 H/W threads
+3/25 22:56:20.137  Memory Detection: 34296328192 bytes of physical memory available
+3/25 22:56:20.137  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+3/25 22:56:20.253  RenderSettings::NotifyChanged
+3/25 22:56:22.731  Nvidia driver version: r445_00 (44575)
+3/25 22:56:50.692  Nvidia driver version: r445_00 (44575)
+3/25 22:56:50.692  Nvidia driver version: r445_00 (44575)
+3/25 23:05:46.218  Nvidia driver version: r445_00 (44575)
+3/25 23:05:46.897  D3d12 Device Destroy
+3/25 23:05:46.897  NotifyOnDeviceDestroy
+3/25 23:05:47.765  GxShutdown
