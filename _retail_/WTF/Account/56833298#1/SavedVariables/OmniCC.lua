@@ -1,13 +1,17 @@
 
 OmniCCDB = {
+	["profileKeys"] = {
+		["Darnastris - Dalaran"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+	},
 	["global"] = {
 		["addonVersion"] = "8.3.5",
 		["dbVersion"] = 5,
-	},
-	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -16,9 +20,9 @@ OmniCCDB = {
 					["textStyles"] = {
 						["soon"] = {
 						},
-						["minutes"] = {
-						},
 						["seconds"] = {
+						},
+						["minutes"] = {
 						},
 					},
 					["enableText"] = false,
@@ -29,7 +33,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
 			["minDuration"] = 2,
@@ -57,4 +60,5 @@ OmniCC4Config = {
 	},
 	["groups"] = {
 	},
+	["version"] = "8.2.5",
 }

@@ -1,10 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[54460] = {
@@ -25,22 +25,10 @@ QuestTogether = {
 				"Queen Azshara defeated", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
 				"N'Zoth, the Corruptor defeated", -- [1]
-			},
-		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[57567] = {
@@ -80,11 +68,10 @@ QuestTogether = {
 				"Defeat Argus the Unmaker", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[44989] = {
@@ -93,28 +80,22 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57402] = {
-			["title"] = "Reconstructing \"The Curse of Stone\"",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
-		[53435] = {
-			["title"] = "Azerite for the Horde",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
-			},
-		},
-		[42422] = {
-			["title"] = "The Wardens",
-			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 		[57743] = {
@@ -142,19 +123,11 @@ QuestTogether = {
 				"1/1 Worshipper's Scrawlings", -- [2]
 			},
 		},
-		[37548] = {
-			["title"] = "Essence of the Iron Protector",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-			},
-		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[57276] = {
@@ -163,16 +136,26 @@ QuestTogether = {
 				"2/20 Shred of Insanity", -- [1]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[37548] = {
+			["title"] = "Essence of the Iron Protector",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
-		[45383] = {
+		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[54180] = {
@@ -186,22 +169,32 @@ QuestTogether = {
 				"0/20 Eternal Ornament", -- [1]
 			},
 		},
+		[57402] = {
+			["title"] = "Reconstructing \"The Curse of Stone\"",
+			["objectives"] = {
+				"0/1 Torn Page of \"The Curse of Stone\"", -- [1]
+			},
+		},
 		[50603] = {
 			["title"] = "Voldunai",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[45381] = {
+		[45383] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[45172] = {

@@ -1498,3 +1498,7 @@ Change Log:
 * Added split update notifications between Classic & Retail
 * Added Battle for Azeroth spells (world)
 
+4.55.1
+* Added BFA spells for Ny'alotha, the Waking City
+* Added BFA spells for Operation: Mechagon
+

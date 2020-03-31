@@ -1,14 +1,17 @@
 
 ARLDB2 = {
-	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-	},
 	["global"] = {
 		["tradeskill"] = {
 			["Dalaran"] = {
+				["Ruffinton"] = {
+				},
 				["Tynkster"] = {
+				},
+				["Thorinbane"] = {
+				},
+				["Tinkster"] = {
+				},
+				["Darnastris"] = {
 				},
 			},
 			["Black Dragonflight"] = {
@@ -21,12 +24,29 @@ ARLDB2 = {
 			},
 		},
 	},
+	["profileKeys"] = {
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+	},
 	["profiles"] = {
-		["Durlok - Black Dragonflight"] = {
+		["Darnastris - Dalaran"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
+		["Durlok - Black Dragonflight"] = {
+		},
+		["Thorinbane - Dalaran"] = {
+		},
+		["Ruffinton - Dalaran"] = {
+		},
 		["Tynkster - Dalaran"] = {
+		},
+		["Tinkster - Dalaran"] = {
 		},
 	},
 }

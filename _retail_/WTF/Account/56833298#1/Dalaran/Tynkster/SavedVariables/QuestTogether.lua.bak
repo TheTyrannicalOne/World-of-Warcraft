@@ -96,22 +96,22 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[28490] = {
+			["title"] = "Hero's Call: Darkshore!",
+			["objectives"] = {
+			},
+		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[28490] = {
-			["title"] = "Hero's Call: Darkshore!",
-			["objectives"] = {
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

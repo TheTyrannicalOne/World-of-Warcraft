@@ -2,7 +2,7 @@
 MyMountspecial_SV = {
 	["enabled"] = true,
 	["interval"] = 180,
-	["randominterval"] = true,
-	["mininterval"] = 120,
 	["maxinterval"] = 240,
+	["mininterval"] = 120,
+	["randominterval"] = true,
 }

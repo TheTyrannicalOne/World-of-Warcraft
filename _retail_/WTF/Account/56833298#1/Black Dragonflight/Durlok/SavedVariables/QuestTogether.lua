@@ -43,15 +43,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
-		[40643] = {
-			["title"] = "A Summons From Moonglade",
-			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[51432] = {
@@ -83,16 +78,22 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[50603] = {
 			["title"] = "Voldunai",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[42170] = {
+			["title"] = "The Dreamweavers",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 		[42421] = {
@@ -111,10 +112,9 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[47105] = {
@@ -123,16 +123,16 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[40643] = {
+			["title"] = "A Summons From Moonglade",
 			["objectives"] = {
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

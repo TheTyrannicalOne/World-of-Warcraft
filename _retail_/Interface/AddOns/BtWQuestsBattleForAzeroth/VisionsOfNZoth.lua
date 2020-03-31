@@ -28,7 +28,7 @@ Database:AddChain(Chain.Chain01, {
     category = CATEGORY_ID,
     expansion = EXPANSION_ID,
     range = {120,120},
-    alternative = {
+    alternatives = {
         Chain.Chain02,
     },
     restrictions = Restrictions.Alliance,
@@ -126,7 +126,7 @@ Database:AddChain(Chain.Chain02, {
     category = CATEGORY_ID,
     expansion = EXPANSION_ID,
     range = {120,120},
-    alternative = {
+    alternatives = {
         Chain.Chain01,
     },
     restrictions = Restrictions.Horde,

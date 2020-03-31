@@ -5,27 +5,32 @@ MasqueDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["Groups"] = {
-				["WeakAuras_2pvBg5wcfEm"] = {
-					["Upgraded"] = true,
+				["ElvUI_ActionBars"] = {
 					["Inherit"] = false,
 				},
 				["Hekili"] = {
 					["Inherit"] = false,
 				},
-				["ElvUI_ActionBars"] = {
+				["WeakAuras_2pvBg5wcfEm"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["ElvUI_Pet Bar"] = {
+				["WeakAuras"] = {
 					["Inherit"] = false,
 				},
-				["ElvUI_Buffs"] = {
+				["WeakAuras_wRYv9xethaV"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
 				["ElvUI_Debuffs"] = {
@@ -38,8 +43,7 @@ MasqueDB = {
 				["OPie"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_wRYv9xethaV"] = {
-					["Upgraded"] = true,
+				["ElvUI_Buffs"] = {
 					["Inherit"] = false,
 				},
 				["ElvUI"] = {
@@ -56,7 +60,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras"] = {
+				["ElvUI_Pet Bar"] = {
 					["Inherit"] = false,
 				},
 			},

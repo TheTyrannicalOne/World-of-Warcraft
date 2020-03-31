@@ -435,6 +435,10 @@ function BtWQuestsMixin:UpdateHereButton()
     self.NavHere:SetEnabled(BtWQuestsDatabase:GetMapItemByID(C_Map.GetBestMapForUnit("player"), self:GetCharacter()) ~= nil)
 end
 
+function BtWQuestsMixin:LoadExpansion(id)
+    BtWQuestsDatabase:GetExpansionByID(id):Load()
+    self:Refresh()
+end
 function BtWQuestsMixin:DisplayExpansionList(scrollTo)
 	self.Chain:Hide()
 	self.Category:Hide()
@@ -453,6 +457,9 @@ function BtWQuestsMixin:DisplayExpansionList(scrollTo)
     if self.ExpansionScroll < 1 then
         self.ExpansionScroll = 1
     end
+
+    self.ExpansionList.Left:SetEnabled(not (self.ExpansionScroll == 1))
+    self.ExpansionList.Right:SetEnabled(not (self.ExpansionScroll == #items - 2))
 
     for i=1,3 do
         local item = items[self.ExpansionScroll - 1 + i]
@@ -696,6 +703,47 @@ end
 function BtWQuestsMixin:OnEvent(event, ...)
     if event == "ADDON_LOADED" then
         if ... == "BtWQuests" then
+            BtWQuests_AutoLoad = BtWQuests_AutoLoad or {}
+
+            for i=1,GetNumAddOns() do
+                if GetAddOnMetadata(i, "X-BtWQuests") and IsAddOnLoadOnDemand(i) and GetAddOnEnableState((UnitName("player")), i) ~= 0 then -- One of our child addons
+                    local name, title, notes, loadable, reason, security, newVersion = GetAddOnInfo(i)
+                    local id = tonumber(GetAddOnMetadata(name, "X-BtWQuests-Expansion"))
+
+                    if id then
+                        if BtWQuests_AutoLoad[name] == nil then
+                            BtWQuests_AutoLoad[name] = GetAddOnMetadata(name, "X-BtWQuests-AutoLoad") == "1"
+                        end
+
+                        local expansion
+                        if BtWQuests_AutoLoad[name] then
+                            LoadAddOn(name)
+                            expansion = BtWQuestsDatabase:GetExpansionByID(id)
+                        else
+                            expansion = BtWQuestsDatabase:GetExpansionByID(id)
+                            if not expansion then
+                                local image = GetAddOnMetadata(name, "X-BtWQuests-Expansion-Image")
+                                if image then
+                                    local image, left, right, top, bottom = strsplit(" ", GetAddOnMetadata(name, "X-BtWQuests-Expansion-Image"))
+                                    expansion = BtWQuestsDatabase:AddExpansion(id, {
+                                        image = {
+                                            texture = string.format("Interface\\AddOns\\%s\\%s", name, image),
+                                            texCoords = {0, 0.90625, 0, 0.8125}
+                                        },
+                                    })
+                                else
+                                    expansion = BtWQuestsDatabase:AddExpansion(id, {})
+                                end
+                            end
+                        end
+
+                        if expansion then
+                            expansion.addons = expansion.addons or {}
+                            expansion.addons[name] = GetAddOnMetadata(i, "X-BtWQuests")
+                        end
+                    end
+                end
+            end
             -- hooksecurefunc("QuestObjectiveTracker_OnOpenDropDown", function (self)
             --     BtWQuests_AddOpenChainMenuItem(self, self.activeFrame.id)
             -- end)

@@ -1217,6 +1217,49 @@ end
 function ExpansionMixin:IsCompleted()
     return GetAccountExpansionLevel() >= self.id
 end
+function ExpansionMixin:IsLoaded()
+    if type(self.addons) ~= "table" or next(self.addons) == nil then
+        return true
+    end
+
+    for addon in pairs(self.addons) do
+        if not IsAddOnLoaded(addon) then
+            return false
+        end
+    end
+
+    return true
+end
+function ExpansionMixin:SupportAutoLoad()
+    return type(self.addons) == "table" and next(self.addons) ~= nil
+end
+function ExpansionMixin:IsAutoLoad()
+    if type(self.addons) ~= "table" or next(self.addons) == nil then
+        return true
+    end
+
+    for addon in pairs(self.addons) do
+        if not BtWQuests_AutoLoad[addon] then
+            return false
+        end
+    end
+
+    return true
+end
+function ExpansionMixin:SetAutoLoad(value)
+    if type(self.addons) ~= "table" or next(self.addons) == nil then
+        return
+    end
+
+    for addon in pairs(self.addons) do
+        BtWQuests_AutoLoad[addon] = value
+    end
+end
+function ExpansionMixin:Load()
+    for addon in pairs(self.addons) do
+        LoadAddOn(addon)
+    end
+end
 
 local ItemMixin = {};
 function ItemMixin:EqualsItem(database, item, other)
@@ -2723,14 +2766,14 @@ function Database:HasMultipleExpansion()
 end
 function Database:HasExpansion(id)
     local expansion = self:GetData("expansion", id);
-    return expansion ~= nil and expansion.items ~= nil and #expansion.items > 0;
+    return expansion ~= nil -- and expansion.items ~= nil and #expansion.items > 0;
 end
 function Database:GetExpansionList()
     local items = {}
     
     for i=0,LE_EXPANSION_LEVEL_CURRENT do
         local expansion = self:GetExpansionByID(i);
-        if expansion and expansion.items and #expansion.items > 0 then
+        if expansion then
             items[#items+1] = expansion;
         end
     end

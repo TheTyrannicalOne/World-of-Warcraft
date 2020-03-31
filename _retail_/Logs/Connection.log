@@ -1,36 +1,82 @@
-3/25 22:56:15.689  Connection Initialize
-3/25 22:56:24.957  Glue Start Login
-3/25 22:56:24.957  BattleNet Attempt Logon
-3/25 22:56:25.309  BattleNet Front Connected
-3/25 22:56:25.442  BattleNet Logon Queue Update
-3/25 22:56:25.442  BattleNet Logon Queue Update
-3/25 22:56:25.768  BattleNet Logon Complete
-3/25 22:56:25.866  BattleNet Game Account Name
-3/25 22:56:25.929  BattleNet Game Account Name
-3/25 22:56:25.929  BattleNet Attempt Complete Login
-3/25 22:56:26.360  BattleNet Realm List Ticket
-3/25 22:56:26.451  BattleNet Sub Region List
-3/25 22:56:26.791  BattleNet Last Played Char
-3/25 22:56:26.854  BattleNet Last Played Char
-3/25 22:56:26.917  BattleNet Last Played Char
-3/25 22:56:27.105  BattleNet Last Played Char
-3/25 22:56:27.167  BattleNet Last Played Char
-3/25 22:56:27.167  BattleNet Join Realm
-3/25 22:56:27.327  BattleNet Realm Join
-3/25 22:56:27.327  Change Connection
-3/25 22:56:27.327  Connect
-3/25 22:56:48.333  Handle Cant Connect
-3/25 22:56:48.382  Handle Connect
-3/25 22:56:50.330  Handle Auth Response: 0
-3/25 22:56:50.330  Glue Authed To WoW: 0
-3/25 22:56:50.692  BattleNet Connected To Realm
-3/25 22:56:50.692  BattleNet Front Disconnecting
-3/25 22:56:50.790  BattleNet Front Disconnected
-3/25 22:56:51.252  Handle Char Enum
-3/25 22:57:33.305  BattleNet External Challenge Timeout
-3/25 22:57:33.305  Glue Fatal Error: 2147483973
-3/25 22:57:33.305  BattleNet Defer Disconnect
-3/25 23:05:37.996  Handle Logout Response: 0
-3/25 23:05:38.206  Handle Logout Complete
-3/25 23:05:47.806  Disconnect: 13
-3/25 23:05:47.806  Connection Destroy
+3/30 19:17:11.377  Connection Initialize
+3/30 19:17:19.671  Glue Start Login
+3/30 19:17:19.671  BattleNet Attempt Logon
+3/30 19:17:20.038  BattleNet Front Connected
+3/30 19:17:20.163  BattleNet Logon Queue Update
+3/30 19:17:20.588  BattleNet Logon Complete
+3/30 19:17:20.692  BattleNet Game Account Name
+3/30 19:17:20.748  BattleNet Game Account Name
+3/30 19:17:20.748  BattleNet Attempt Complete Login
+3/30 19:17:21.089  BattleNet Realm List Ticket
+3/30 19:17:21.200  BattleNet Sub Region List
+3/30 19:17:21.527  BattleNet Last Played Char
+3/30 19:17:21.617  BattleNet Last Played Char
+3/30 19:17:21.673  BattleNet Last Played Char
+3/30 19:17:21.736  BattleNet Last Played Char
+3/30 19:17:21.840  BattleNet Last Played Char
+3/30 19:17:21.840  BattleNet Join Realm
+3/30 19:17:22.077  BattleNet Realm Join
+3/30 19:17:22.077  Change Connection
+3/30 19:17:22.077  Connect
+3/30 19:17:43.089  Handle Cant Connect
+3/30 19:17:43.138  Handle Connect
+3/30 19:17:45.420  Handle Auth Response: 0
+3/30 19:17:45.420  Glue Authed To WoW: 0
+3/30 19:17:45.733  BattleNet Connected To Realm
+3/30 19:17:45.733  BattleNet Front Disconnecting
+3/30 19:17:45.822  BattleNet Front Disconnected
+3/30 19:17:46.055  Handle Char Enum
+3/30 19:21:12.496  Handle Logout Response: 0
+3/30 19:21:12.853  Handle Logout Complete
+3/30 19:21:18.770  Handle Char Enum
+3/30 19:23:02.291  Handle Logout Response: 0
+3/30 19:23:02.655  Handle Logout Complete
+3/30 19:23:08.956  Handle Char Enum
+3/30 19:30:01.631  Handle Logout Response: 0
+3/30 19:30:21.884  Handle Logout Complete
+3/30 19:30:28.331  Handle Char Enum
+3/30 19:31:04.990  BattleNet Request Change Realm List
+3/30 19:31:05.240  BattleNet Realm List Ticket
+3/30 19:31:05.790  BattleNet Sub Region List
+3/30 19:31:06.591  BattleNet Realm List
+3/30 19:31:06.591  BattleNet Realm List
+3/30 19:31:06.591  BattleNet Realm List
+3/30 19:31:06.591  BattleNet Realm List
+3/30 19:31:06.827  BattleNet Realm List
+3/30 19:31:11.710  BattleNet Join Realm
+3/30 19:31:12.366  BattleNet Realm Join
+3/30 19:31:12.366  Change Connection
+3/30 19:31:12.366  Handle Disconnect
+3/30 19:31:12.366  Connect
+3/30 19:31:33.384  Handle Cant Connect
+3/30 19:31:33.453  Handle Connect
+3/30 19:31:35.214  Handle Auth Response: 0
+3/30 19:31:35.214  Glue Authed To WoW: 0
+3/30 19:31:35.228  BattleNet Connected To Realm
+3/30 19:31:35.365  Handle Char Enum
+3/30 20:16:31.688  Handle Logout Response: 0
+3/30 20:16:31.916  Handle Logout Complete
+3/30 20:16:39.869  Handle Char Enum
+3/30 20:16:50.943  BattleNet Request Change Realm List
+3/30 20:16:51.194  BattleNet Realm List Ticket
+3/30 20:16:51.597  BattleNet Sub Region List
+3/30 20:16:52.295  BattleNet Realm List
+3/30 20:16:52.295  BattleNet Realm List
+3/30 20:16:52.295  BattleNet Realm List
+3/30 20:16:52.488  BattleNet Realm List
+3/30 20:16:52.488  BattleNet Realm List
+3/30 20:16:58.490  BattleNet Join Realm
+3/30 20:16:59.118  BattleNet Realm Join
+3/30 20:16:59.118  Change Connection
+3/30 20:16:59.118  Handle Disconnect
+3/30 20:16:59.127  Connect
+3/30 20:17:20.132  Handle Cant Connect
+3/30 20:17:20.194  Handle Connect
+3/30 20:17:21.850  Handle Auth Response: 0
+3/30 20:17:21.850  Glue Authed To WoW: 0
+3/30 20:17:21.863  BattleNet Connected To Realm
+3/30 20:17:22.050  Handle Char Enum
+3/30 20:18:35.808  Handle Logout Response: 0
+3/30 20:18:35.958  Handle Logout Complete
+3/30 20:18:47.213  Disconnect: 13
+3/30 20:18:47.213  Connection Destroy

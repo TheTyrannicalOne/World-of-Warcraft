@@ -27,9 +27,9 @@ MADB = {
 				},
 				["VehicleSeatIndicator"] = {
 					["orgPos"] = {
-						"TOPLEFT", -- [1]
+						"TOPRIGHT", -- [1]
 						"VehicleSeatMover", -- [2]
-						"TOPLEFT", -- [3]
+						"TOPRIGHT", -- [3]
 						0, -- [4]
 						0, -- [5]
 					},
@@ -42,20 +42,21 @@ MADB = {
 						0.000885009765625, -- [5]
 					},
 				},
-				["GuildBankItemTooltipMover"] = {
+				["TooltipMover"] = {
 					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						0, -- [3]
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
 						0, -- [4]
+						490, -- [5]
 					},
-					["name"] = "GuildBankItemTooltipMover",
+					["name"] = "TooltipMover",
 					["pos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						-3.0517578125e-05, -- [4]
-						0.0001220703125, -- [5]
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						0, -- [4]
+						490.164988070726, -- [5]
 					},
 				},
 				["TalkingHeadFrame"] = {
@@ -98,7 +99,7 @@ MADB = {
 							"BOTTOMLEFT", -- [1]
 							"UIParent", -- [2]
 							"BOTTOMLEFT", -- [3]
-							977.0001831054688, -- [4]
+							977.008056640625, -- [4]
 							17, -- [5]
 						}, -- [1]
 						{
@@ -118,28 +119,27 @@ MADB = {
 						17, -- [5]
 					},
 				},
-				["TooltipMover"] = {
+				["GuildBankItemTooltipMover"] = {
 					["orgPos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						0, -- [3]
 						0, -- [4]
-						0, -- [5]
 					},
-					["name"] = "TooltipMover",
+					["name"] = "GuildBankItemTooltipMover",
 					["pos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						0, -- [4]
-						490.164988070726, -- [5]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						-3.0517578125e-05, -- [4]
+						0.0001220703125, -- [5]
 					},
 				},
 			},
 		},
 	},
-	["closeGUIOnEscape"] = false,
-	["playSound"] = false,
-	["noBags"] = false,
 	["frameListRows"] = 18,
+	["noBags"] = false,
+	["playSound"] = false,
+	["closeGUIOnEscape"] = false,
 }

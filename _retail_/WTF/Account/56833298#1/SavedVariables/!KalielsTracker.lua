@@ -13,13 +13,13 @@ KalielsTrackerDB = {
 		["Gillbourn - Runetotem"] = {
 			["collapsed"] = true,
 		},
+		["Tinkster - Dalaran"] = {
+			["collapsed"] = true,
+		},
 		["Bathal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
 		["Shathiel - Darkspear"] = {
-			["collapsed"] = true,
-		},
-		["Thorinbane - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Serbitechna - Darkspear"] = {
@@ -28,10 +28,13 @@ KalielsTrackerDB = {
 		["Ruffinton - Dalaran"] = {
 			["collapsed"] = true,
 		},
+		["Narisaric - Dalaran"] = {
+			["collapsed"] = true,
+		},
 		["Malivant - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Narisaric - Dalaran"] = {
+		["Darnastris - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Sinh - Dalaran"] = {
@@ -81,6 +84,7 @@ KalielsTrackerDB = {
 		["Brewnheimer - Darkspear"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 		["Sinh - Dalaran"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
