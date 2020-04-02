@@ -371,7 +371,7 @@ do
         { "!(dot%.[a-z0-9_]+)%.ticking",        "%1.remains" },
         { "!?(d?e?buff%.[a-z0-9_]+)%.remains",  "%1.remains" },
         { "!ticking",                           "remains" },
-        { "^!?remains$",                          "remains" },
+        { "^!?remains$",                        "remains" },
         { "^refreshable",                       "time_to_refresh" },
         
         { "^(.-)%.deficit<=?(.-)$",             "%1.timeTo(%1.max-(%2))" },
@@ -401,23 +401,26 @@ do
         { "^dot%.festering_wound%.stack[>=]=?(.-)$",    -- UH DK helper during Unholy Frenzy.
                                                 "time_to_wounds(%1)" },
 
-        { "^exsanguinated",                      "remains" }, -- Assassination
-        { "^(debuff%.[a-z0-9_]+)%.exsanguinated",
+        { "^exsanguinated$",                      "remains" }, -- Assassination
+        { "^!?(debuff%.[a-z0-9_]+)%.exsanguinated$",
                                                 "%1.remains" }, -- Assassination
-        { "^(dot%.[a-z0-9_]+)%.exsanguinated",  "%1.remains" }, -- Assassination
+        { "^!?(dot%.[a-z0-9_]+)%.exsanguinated$",  "%1.remains" }, -- Assassination
         { "^ss_buffed",                         "remains" }, -- Assassination
-        { "^(debuff%.[a-z0-9_]+)%.ss_buffed",
+        { "^!?(debuff%.[a-z0-9_]+)%.ss_buffed$",
                                                 "%1.remains" }, -- Assassination
-        { "^(dot%.[a-z0-9_]+)%.ss_buffed",      "%1.remains" }, -- Assassination
-        { "^consecration.up",                   "consecration.remains" }, -- Prot Paladin
-        { "^contagion<=?(.-)",                  "contagion-%1" }, -- Affliction Warlock
+        { "^!?(dot%.[a-z0-9_]+)%.ss_buffed$",      "%1.remains" }, -- Assassination
+        { "^!?consecration.up",                   "consecration.remains" }, -- Prot Paladin
+        { "^!?contagion<=?(.-)",                  "contagion-%1" }, -- Affliction Warlock
         
         { "^!?action%.([a-z0-9_]+)%.in_flight$",    "action.%1.in_flight_remains" }, -- Fire Mage, but others too, potentially.
-        { "^action%.([a-z0-9_]+)%.in_flight_remains<=?(.-)$",
+        { "^!?action%.([a-z0-9_]+)%.in_flight_remains<=?(.-)$",
                                                     "action.%1.in_flight_remains-%2" }, -- Fire Mage, but others too, potentially.
-        { "^(pet%.[a-z0-9_]+)%.up",             "%1.remains" },
-        { "^(pet%.[a-z0-9_]+)%.active",         "%1.remains" },
+        { "^!?variable.time_to_combustion$",      "variable.time_to_combustion" },
+        { "^!?variable.time_to_combustion<=?(.-)$",
+                                                "variable.time_to_combustion-%1" },
 
+        { "^!?(pet%.[a-z0-9_]+)%.up",             "%1.remains" },
+        { "^!?(pet%.[a-z0-9_]+)%.active",         "%1.remains" },
     }
 
     -- Things that tick down.
@@ -432,8 +435,8 @@ do
     -- Things that tick up.
     local increases = {
         ["^time$"] = true,
-        -- ["charges$"] = true,
-        -- ["charges_fractional$"] = true,        
+        ["charges"] = true,
+        ["charges_fractional"] = true,        
     }
 
     local removals = {
@@ -467,7 +470,11 @@ do
             expr = expr:sub( 2, -2 )
         end
 
-        local lhs, comp, rhs = expr:match( "^(.-)([<>=]^?+)(.-)$" )
+        local lhs, comp, rhs = expr:match( "^(.-)([<>=?]+)(.-)$" )
+
+        if comp and comp:match( "?" ) then
+            comp = nil
+        end
 
         if lhs and comp and rhs then
             -- We are looking at a mathematic comparison.
@@ -927,6 +934,7 @@ local newModifiers = {
     wait = 'bool',
 
     -- Not necessarily a number, but not baby-proofed.
+    default = 'raw',
     line_cd = 'raw',
     max_cycle_targets = 'raw',
     sec = 'raw',
@@ -967,6 +975,9 @@ local isString = {
 
 -- Need to convert all the appropriate scripts and store them safely...
 local function ConvertScript( node, hasModifiers, header )
+    local previousScript = state.scriptID
+    state.scriptID = header
+
     state.this_action = node.action
 
     local t = node.criteria and node.criteria ~= "" and node.criteria
@@ -1109,6 +1120,7 @@ local function ConvertScript( node, hasModifiers, header )
         end ]]
     end
 
+    state.scriptID = previousScript
     return output
 end
 scripts.ConvertScript = ConvertScript
@@ -1243,6 +1255,8 @@ function scripts:LoadScripts()
     wipe( self.Channels )
     wipe( self.PackInfo )
 
+    Hekili.LoadingScripts = true
+
     state.reset()
 
     for pack, pData in pairs( profile.packs ) do
@@ -1328,6 +1342,7 @@ function scripts:LoadScripts()
         end
     end
 
+    Hekili.LoadingScripts = false
     scriptsLoaded = true
 end
 
@@ -1518,6 +1533,9 @@ function scripts:GetConditionsAndValues( scriptID, listName, actID )
     if script and script.SimC and script.SimC ~= "" then        
         local output = script.SimC
 
+        local wasDebugging = Hekili.ActiveDebug
+        Hekili.ActiveDebug = false
+
         if script.Elements then
             wipe( checked )
 
@@ -1549,8 +1567,10 @@ function scripts:GetConditionsAndValues( scriptID, listName, actID )
                     checked[ k ] = true
                 end
             end
-        end
 
+        end
+        
+        if wasDebugging then Hekili.ActiveDebug = true end
         return output
     end
 

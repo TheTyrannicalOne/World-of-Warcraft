@@ -16,25 +16,25 @@ FishingBuddy_Player = {
 		["TotalTimeFishing"] = 1055.715,
 		["WatchCurrentZone"] = true,
 		["EasyCastKeys"] = 1,
-		["EnhanceFishingSounds"] = true,
-		["UseBladeboneHook"] = true,
-		["EnhancePools"] = true,
-		["AutoLoot"] = true,
 		["STVTimer"] = true,
+		["UseBladeboneHook"] = true,
+		["SpecialBobbers"] = -2,
+		["AutoLoot"] = true,
+		["EnhanceFishingSounds"] = true,
 		["AlwaysLure"] = true,
 		["EasyLures"] = true,
-		["SpecialBobbers"] = -2,
+		["EnhancePools"] = true,
 		["FishingPetBuddies"] = -3,
 	},
 	["WasWearing"] = {
 	},
 	["Version"] = 19500,
-	["Outfit"] = {
-	},
 	["WatcherLocation"] = {
 		["grp_y"] = -34.500732421875,
 		["grp_point"] = "TOP",
 		["grp_scale"] = 1,
 		["grp_x"] = -263.9998474121094,
+	},
+	["Outfit"] = {
 	},
 }

@@ -1,5 +1,9 @@
 
 OmniCCDB = {
+	["global"] = {
+		["addonVersion"] = "8.3.5",
+		["dbVersion"] = 5,
+	},
 	["profileKeys"] = {
 		["Darnastris - Dalaran"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
@@ -9,18 +13,14 @@ OmniCCDB = {
 		["Tynkster - Dalaran"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 	},
-	["global"] = {
-		["addonVersion"] = "8.3.5",
-		["dbVersion"] = 5,
-	},
 	["profiles"] = {
 		["Default"] = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},

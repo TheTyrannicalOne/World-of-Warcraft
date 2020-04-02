@@ -934,27 +934,31 @@ RegisterUnitEvent( "UNIT_SPELLCAST_DELAYED", function( event, unit, _, spellID )
             state:RemoveSpellEvents( action, true )
 
             local _, _, _, start, finish = UnitCastingInfo( "player" )
-            state:QueueEvent( action, start / 1000, finish / 1000, "CAST_FINISH", target, true )
+            if start and finish then
+                state:QueueEvent( action, start / 1000, finish / 1000, "CAST_FINISH", target, true )
 
-            if ability.isProjectile then
-                local travel
+                if ability.isProjectile then
+                    local travel
 
-                if ability.flightTime then
-                    travel = flightTime
-                
-                elseif target then
-                    local unit = Hekili:GetUnitByGUID( target ) or Hekili:GetNameplateUnitForGUID( target ) or "target"
+                    if ability.flightTime then
+                        travel = flightTime
+ 
+                    elseif target then
+                        local unit = Hekili:GetUnitByGUID( target ) or Hekili:GetNameplateUnitForGUID( target ) or "target"
 
-                    if unit then
-                        local minR, maxR = RC:GetRange( unit )
-                        travel = 0.5 * ( minR + maxR ) / ability.velocity
+                        if unit then
+                            local minR, maxR = RC:GetRange( unit )
+                            travel = 0.5 * ( minR + maxR ) / ability.velocity
+                        end
                     end
+
+                    if not travel then travel = state.target.distance / ability.velocity end
+
+                    state:QueueEvent( ability.key, finish / 1000, travel, "PROJECTILE_IMPACT", target, true )
                 end
-
-                if not travel then travel = state.target.distance / ability.velocity end
-
-                state:QueueEvent( ability.key, finish / 1000, travel, "PROJECTILE_IMPACT", target, true )
             end
+
+            Hekili:ForceUpdate( event )
         end
     end
 end )
@@ -1256,8 +1260,8 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
                             local unit = Hekili:GetUnitByGUID( destGUID ) or Hekili:GetNameplateUnitForGUID( destGUID ) or "target"
 
                             if unit then
-                                local minR, maxR = RC:GetRange( unit )
-                                travel = 0.5 * ( minR + maxR ) / ability.velocity
+                                local _, maxR = RC:GetRange( unit )
+                                travel = maxR / ability.velocity
                             end
                         end
 
@@ -1282,8 +1286,8 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
                             local unit = Hekili:GetUnitByGUID( destGUID ) or Hekili:GetNameplateUnitForGUID( destGUID ) or "target"
 
                             if unit then
-                                local minR, maxR = RC:GetRange( unit )
-                                travel = 0.5 * ( minR + maxR ) / ability.velocity
+                                local _, maxR = RC:GetRange( unit )
+                                travel = maxR / ability.velocity
                             end
                         end
 
@@ -1309,10 +1313,8 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
             local ability = class.abilities[ spellID ]
 
             if ability then
-                state:RemoveSpellEvents( ability.key, true )
+                state:RemoveSpellEvents( ability.key, true, "PROJECTILE_IMPACT" )
             end
-
-            Hekili:ForceUpdate( subtype )
         end
     end
 
@@ -1342,7 +1344,7 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
         if aura_events[ subtype ] then
             if subtype == "SPELL_CAST_SUCCESS" or state.GUID == destGUID then 
                 state.player.updated = true
-                if class.abilities[ spellID ] or class.auras[ spellID ] then Hekili:ForceUpdate( subtype ) end
+                if class.abilities[ spellID ] or class.auras[ spellID ] then Hekili:ForceUpdate( subtype, true ) end
             end
 
             if UnitGUID( 'target' ) == destGUID then
@@ -1359,6 +1361,10 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
                 if subtype == 'SPELL_AURA_APPLIED' or subtype == 'SPELL_AURA_REFRESH' or subtype == 'SPELL_AURA_APPLIED_DOSE' then
                     ns.trackDebuff( spellID, destGUID, time, true )
                     ns.updateTarget( destGUID, time, sourceGUID == state.GUID )
+
+                    if spellID == 48108 or spellID == 48107 then
+                        Hekili:ForceUpdate( "SPELL_AURA_SUPER", true )
+                    end
 
                 elseif subtype == 'SPELL_PERIODIC_DAMAGE' or subtype == 'SPELL_PERIODIC_MISSED' then
                     ns.trackDebuff( spellID, destGUID, time )

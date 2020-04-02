@@ -188,8 +188,8 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 			},
 			[767] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 13,
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 7,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["4772"] = true,
@@ -231,6 +231,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 43,
 				["upgrade_value"] = 52,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:4280"] = true,
+				},
 				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
@@ -447,6 +450,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 43,
 				["upgrade_value"] = 52,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:4276"] = true,
+				},
 				["durability"] = 115,
 				["suffix_id"] = 0,
 			},
@@ -513,6 +519,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 53,
 				["upgrade_value"] = 57,
 				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["4277"] = true,
+				},
 				["durability"] = 50,
 				["unique_id"] = 0,
 			},
@@ -1310,6 +1319,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 29,
 				["upgrade_value"] = 24,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1693:3832"] = true,
+				},
 				["durability"] = 60,
 				["suffix_id"] = 0,
 			},
@@ -1326,6 +1338,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 28,
 				["upgrade_value"] = 22,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3831"] = true,
+				},
 				["durability"] = 30,
 				["suffix_id"] = 0,
 			},
@@ -1444,6 +1459,9 @@ WoWDBProfilerData = {
 			[9919] = {
 				["instance_difficulty_id"] = 43,
 				["upgrade_value"] = 55,
+				["seen_bonuses"] = {
+					["1692:4276"] = true,
+				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
@@ -1488,6 +1506,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 43,
 				["upgrade_value"] = 54,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["4276"] = true,
+				},
 				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
@@ -1524,6 +1545,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 42,
 				["upgrade_value"] = 50,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3836"] = true,
+				},
 				["durability"] = 115,
 				["suffix_id"] = 0,
 			},
@@ -1540,6 +1564,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 28,
 				["upgrade_value"] = 22,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1692:3831"] = true,
+				},
 				["durability"] = 60,
 				["suffix_id"] = 0,
 			},
@@ -2040,6 +2067,9 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 37,
 				["upgrade_value"] = 46,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:3864"] = true,
+				},
 				["durability"] = 75,
 				["suffix_id"] = 0,
 			},
@@ -4730,11 +4760,11 @@ WoWDBProfilerData = {
 										["3:774:760"] = true,
 										["3:768:760"] = true,
 										["3:780:734"] = true,
-										["3:760:732"] = true,
-										["3:758:762"] = true,
-										["3:752:732"] = true,
-										["3:772:748"] = true,
 										["3:768:736"] = true,
+										["3:758:762"] = true,
+										["3:772:748"] = true,
+										["3:752:732"] = true,
+										["3:760:732"] = true,
 									},
 								},
 								["power"] = "MANA:490",
@@ -7129,6 +7159,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Orgrimmar",
 				["class"] = "WARRIOR",
+				["auctioneer"] = true,
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -27623,7 +27654,9 @@ WoWDBProfilerData = {
 						["I was going to have a party and invite Mystic Birdhat, but you dismissed him."] = true,
 					},
 				},
-				["reaction"] = "56:Alliance:FRIENDLY",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -27806,19 +27839,19 @@ WoWDBProfilerData = {
 										["3:434:802"] = true,
 										["3:466:550"] = true,
 										["3:384:854"] = true,
-										["3:428:850"] = true,
+										["3:428:814"] = true,
 										["3:430:862"] = true,
 										["3:330:840"] = true,
 										["3:438:534"] = true,
-										["3:436:540"] = true,
+										["3:372:858"] = true,
 										["3:446:492"] = true,
-										["3:428:814"] = true,
+										["3:428:850"] = true,
 										["3:444:504"] = true,
 										["3:378:858"] = true,
 										["3:442:522"] = true,
 										["3:358:824"] = true,
 										["3:366:856"] = true,
-										["3:372:858"] = true,
+										["3:436:540"] = true,
 										["3:428:832"] = true,
 										["3:372:820"] = true,
 										["3:366:820"] = true,
@@ -27925,6 +27958,11 @@ WoWDBProfilerData = {
 										["3:572:356"] = true,
 										["3:434:170"] = true,
 									},
+									["Orgrimmar:85"] = {
+										["3:526:752"] = true,
+										["3:532:746"] = true,
+										["3:538:738"] = true,
+									},
 									["Darnassus:89"] = {
 										["3:432:708"] = true,
 										["3:536:334"] = true,
@@ -27950,28 +27988,26 @@ WoWDBProfilerData = {
 					},
 				},
 				["sells"] = {
-					[81407] = "-1:1:[22400]",
-					[81409] = "-1:5:[26000]",
-					[81415] = "-1:1:[25600]",
+					[81407] = "-1:1:[22400:0:0]",
+					[81409] = "-1:5:[26000:0:0]",
+					[81415] = "-1:1:[25600:0:0]",
 					[3371] = "-1:20:[150:0:0]",
 					[159] = "-1:5:[25:0:0]",
-					[58274] = "-1:5:[11000]",
-					[74636] = "-1:5:[26000]",
-					[81400] = "-1:5:[24000]",
-					[81406] = "-1:5:[24000]",
+					[58274] = "-1:5:[11000:0:0]",
+					[74636] = "-1:5:[26000:0:0]",
+					[81400] = "-1:5:[24000:0:0]",
+					[81406] = "-1:5:[24000:0:0]",
 					[64670] = "-1:5:[4000:0:0]",
-					[81414] = "-1:5:[26000]",
+					[81414] = "-1:5:[26000:0:0]",
 					[60335] = "-1:1:[120000:0:0]",
 					[39354] = "-1:5:[15:0:0]",
-					[81401] = "-1:5:[24000]",
+					[81401] = "-1:5:[24000:0:0]",
 					[52188] = "-1:1:[15000:0:0]",
 					[4470] = "-1:1:[38:0:0]",
 					[38682] = "-1:1:[1000:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["genders"] = {
-					["MALE"] = true,
-				},
+				["reaction"] = "120:Horde:FRIENDLY",
 				["can_repair"] = true,
 			},
 			["33980"] = {
@@ -36109,12 +36145,12 @@ WoWDBProfilerData = {
 							[25284] = "0:60:380",
 							[37818] = "0:65:475",
 							[32801] = "0:50:190",
-							[32178] = "0:20:95",
-							[36523] = "0:75:570",
-							[25490] = "0:50:285",
-							[26928] = "0:30:95",
-							[31252] = "0:20:95",
 							[25278] = "0:50:190",
+							[26928] = "0:30:95",
+							[25490] = "0:50:285",
+							[36523] = "0:75:570",
+							[31252] = "0:20:95",
+							[32178] = "0:20:95",
 						},
 						["Mining"] = {
 							[2659] = "0:50:190",
@@ -37798,10 +37834,11 @@ WoWDBProfilerData = {
 							["level_50"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:246:738"] = true,
-										["3:248:732"] = true,
-										["3:240:738"] = true,
 										["3:242:744"] = true,
+										["3:240:738"] = true,
+										["3:246:738"] = true,
+										["3:250:744"] = true,
+										["3:248:732"] = true,
 									},
 								},
 								["max_health"] = 5295,
@@ -40498,15 +40535,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[26838] = {
-				["classes"] = {
-					["MAGE"] = true,
+				["begin"] = {
+					["NPC:3885"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["NightElf"] = true,
 				},
-				["begin"] = {
-					["NPC:3885"] = true,
+				["classes"] = {
+					["MAGE"] = true,
 				},
 			},
 			[26854] = {
@@ -40870,15 +40907,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[25768] = {
-				["classes"] = {
-					["MAGE"] = true,
+				["begin"] = {
+					["NPC:40896"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["NightElf"] = true,
 				},
-				["begin"] = {
-					["NPC:40896"] = true,
+				["classes"] = {
+					["MAGE"] = true,
 				},
 			},
 			[26855] = {
@@ -41431,15 +41468,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[27448] = {
-				["begin"] = {
-					["NPC:45417"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:45417"] = true,
 				},
 			},
 			[26457] = {
@@ -41476,15 +41513,15 @@ WoWDBProfilerData = {
 				["progress_text"] = "Have you gathered the Bathran's Hair, <name>?  The child's health grows weaker by the hour....",
 			},
 			[27544] = {
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:45500"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["begin"] = {
-					["NPC:45500"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[24491] = {
@@ -42608,15 +42645,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[27387] = {
-				["begin"] = {
-					["NPC:10667"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:10667"] = true,
 				},
 			},
 			[26380] = {
@@ -42767,15 +42804,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[27915] = {
-				["begin"] = {
-					["NPC:46071"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:46071"] = true,
 				},
 			},
 			[24862] = {
@@ -42989,15 +43026,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[27388] = {
-				["begin"] = {
-					["NPC:10667"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:10667"] = true,
 				},
 			},
 			[26445] = {
@@ -43255,15 +43292,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[25998] = {
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:41786"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["begin"] = {
-					["NPC:41786"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[54042] = {
@@ -43327,15 +43364,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[27389] = {
-				["begin"] = {
-					["NPC:10667"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:10667"] = true,
 				},
 			},
 			[28492] = {
@@ -44279,15 +44316,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[27919] = {
-				["begin"] = {
-					["NPC:17127"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:17127"] = true,
 				},
 			},
 			[5713] = {
@@ -44797,15 +44834,15 @@ WoWDBProfilerData = {
 				},
 			},
 			[26897] = {
-				["begin"] = {
-					["NPC:3845"] = true,
+				["classes"] = {
+					["MAGE"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["NightElf"] = true,
 				},
-				["classes"] = {
-					["MAGE"] = true,
+				["begin"] = {
+					["NPC:3845"] = true,
 				},
 			},
 			[13976] = {
@@ -45671,21 +45708,20 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[27011] = {
-				["begin"] = {
-					["NPC:44472"] = true,
+			[28731] = {
+				["classes"] = {
+					["MAGE"] = true,
 				},
-				["can_share"] = true,
+				["progress_text"] = "Greetings, <class>. For what purpose do I owe the pleasure of our meeting?",
 				["races"] = {
-					["Dwarf"] = true,
+					["NightElf"] = true,
 				},
 				["end"] = {
-					["NPC:44472"] = true,
+					["NPC:3515"] = true,
 				},
-				["reward_text"] = "I'll just put this back over in the lumber stores outside.  Nathaniel probably won't even notice it was missing.",
-				["progress_text"] = "Some of the older lumberjacks tell me that the Redpine lived in the area several years ago, but left when the plague arrived.  That doesn't make it OK for them to steal, though.",
-				["classes"] = {
-					["WARRIOR"] = true,
+				["reward_text"] = "Ah, I see. You were sent by Tenaron. Well then, it would seem we have much to talk about, much to do.\n\nBefore we get to the task at hand, you should take in the lesson of this moonwell.",
+				["begin"] = {
+					["NPC:3514"] = true,
 				},
 			},
 			[13525] = {
@@ -45702,6 +45738,23 @@ WoWDBProfilerData = {
 				["reward_text"] = "Why have you come here, outsider?\n\n<You tell the elder that you were sent by Foriel Broadleaf at the Grove of the Ancients. He seems to relax slightly.>\n\nThe elf is right. The forces of Felwood have seeped into Darkshore and sickened my people.",
 				["classes"] = {
 					["MAGE"] = true,
+				},
+			},
+			[27011] = {
+				["begin"] = {
+					["NPC:44472"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["end"] = {
+					["NPC:44472"] = true,
+				},
+				["reward_text"] = "I'll just put this back over in the lumber stores outside.  Nathaniel probably won't even notice it was missing.",
+				["progress_text"] = "Some of the older lumberjacks tell me that the Redpine lived in the area several years ago, but left when the plague arrived.  That doesn't make it OK for them to steal, though.",
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[13509] = {
@@ -45735,22 +45788,6 @@ WoWDBProfilerData = {
 					["NPC:49480"] = true,
 				},
 			},
-			[27075] = {
-				["begin"] = {
-					["NPC:1073"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
-				},
-				["end"] = {
-					["NPC:1073"] = true,
-				},
-				["reward_text"] = "It may look grim, but we'll win with your help, <name>. They won't keep the dwarves down.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
 			[27386] = {
 				["begin"] = {
 					["NPC:11063"] = true,
@@ -45764,6 +45801,22 @@ WoWDBProfilerData = {
 				},
 				["reward_text"] = "What is this?  A warsword?  A butter knife?  I'm useless when it comes to blades.  Let me see...\n\nAh!  This sword was once in the hand of a great man, but there is much tragedy in that man's past.\n\nAre you here to help him?  It's far too late for him now... but perhaps we can help him in the past!",
 				["progress_text"] = "There is something timely about your visit.  You're not from the future, are you?",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[27075] = {
+				["begin"] = {
+					["NPC:1073"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["end"] = {
+					["NPC:1073"] = true,
+				},
+				["reward_text"] = "It may look grim, but we'll win with your help, <name>. They won't keep the dwarves down.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -45806,6 +45859,23 @@ WoWDBProfilerData = {
 					["PLAYER:0"] = true,
 				},
 			},
+			[26928] = {
+				["begin"] = {
+					["NPC:44345"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["end"] = {
+					["NPC:44345"] = true,
+				},
+				["reward_text"] = "Phew! Ain't that a stench.\n\nNow you prepare yourself, because I'm about to wow you with what's left of my mental faculties.",
+				["progress_text"] = "Now don't you stink all to high hell! I'm assumin' that's because of the murlocs, but it's hard to tell.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
 			[27155] = {
 				["reward_text"] = "I'm already aware of your actions, <name>.  I welcome you into my town, give you my blessing, and what do you do?\n\nYou slay the traitor that we've been hunting down for weeks.  Well done.  Your heroism is budding much earlier than even I had anticipated.",
 				["end"] = {
@@ -45825,23 +45895,6 @@ WoWDBProfilerData = {
 				},
 				["reward_text"] = "Attacked by ghosts?  Strange.  I suppose that crypt wasn't fully healed after all.\n\nYou just missed Thurman Grant... you remember, that oaf of a farmer that was here earlier.  He took his men with him and traveled to the nearest farm... against my orders.",
 				["progress_text"] = "What happened at Uther's Tomb, <name>?",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[26928] = {
-				["begin"] = {
-					["NPC:44345"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
-				},
-				["end"] = {
-					["NPC:44345"] = true,
-				},
-				["reward_text"] = "Phew! Ain't that a stench.\n\nNow you prepare yourself, because I'm about to wow you with what's left of my mental faculties.",
-				["progress_text"] = "Now don't you stink all to high hell! I'm assumin' that's because of the murlocs, but it's hard to tell.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -45877,22 +45930,6 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[475] = {
-				["begin"] = {
-					["NPC:2078"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["NightElf"] = true,
-				},
-				["end"] = {
-					["NPC:2107"] = true,
-				},
-				["reward_text"] = "Thank the forest spirits you are here!  I knew Athridas would sense trouble and send help.",
-				["classes"] = {
-					["MAGE"] = true,
-				},
-			},
 			[13508] = {
 				["begin"] = {
 					["NPC:32963"] = true,
@@ -45905,6 +45942,22 @@ WoWDBProfilerData = {
 					["NPC:33055"] = true,
 				},
 				["reward_text"] = "<Alanndarian looks very pale, though shallow breaths betray the life that remains in her.>\n\nYou're here...  to save me? A bit later... than I hoped.",
+				["classes"] = {
+					["MAGE"] = true,
+				},
+			},
+			[475] = {
+				["begin"] = {
+					["NPC:2078"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["NightElf"] = true,
+				},
+				["end"] = {
+					["NPC:2107"] = true,
+				},
+				["reward_text"] = "Thank the forest spirits you are here!  I knew Athridas would sense trouble and send help.",
 				["classes"] = {
 					["MAGE"] = true,
 				},
@@ -45937,22 +45990,6 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[476] = {
-				["begin"] = {
-					["NPC:2107"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["NightElf"] = true,
-				},
-				["end"] = {
-					["NPC:2078"] = true,
-				},
-				["reward_text"] = "By the stars!  This is quite disturbing indeed!\n\nWe've had troubles in the past with the corruption of the furbolgs, but such troubles should be long past since the cleansing of Teldrassil. I fear for all our people if the blessings of the aspects themselves cannot redeem our great tree.",
-				["classes"] = {
-					["MAGE"] = true,
-				},
-			},
 			[384] = {
 				["begin"] = {
 					["NPC:1267"] = true,
@@ -45968,6 +46005,22 @@ WoWDBProfilerData = {
 				["progress_text"] = "I'm going to need those crag boar ribs and a mug of Rhapsody Malt, <name>.",
 				["classes"] = {
 					["WARRIOR"] = true,
+				},
+			},
+			[476] = {
+				["begin"] = {
+					["NPC:2107"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["NightElf"] = true,
+				},
+				["end"] = {
+					["NPC:2078"] = true,
+				},
+				["reward_text"] = "By the stars!  This is quite disturbing indeed!\n\nWe've had troubles in the past with the corruption of the furbolgs, but such troubles should be long past since the cleansing of Teldrassil. I fear for all our people if the blessings of the aspects themselves cannot redeem our great tree.",
+				["classes"] = {
+					["MAGE"] = true,
 				},
 			},
 			[26145] = {
@@ -46004,9 +46057,9 @@ WoWDBProfilerData = {
 				},
 				["progress_text"] = "Have you gathered the bear's paw?",
 			},
-			[50602] = {
-			},
 			[43179] = {
+			},
+			[50602] = {
 			},
 			[26935] = {
 				["begin"] = {
@@ -46106,6 +46159,13 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
+			[24475] = {
+				["reward_text"] = "This'll have to do for now.  We've a lot of people to feed here, but we've got to make do with what we've got.  With any luck, King Bronzebeard in Ironforge will send us some help shortly.",
+				["progress_text"] = "The people are gettin' restless.  D'ye have the supplies yet?",
+				["end"] = {
+					["NPC:37087"] = true,
+				},
+			},
 			[26468] = {
 				["begin"] = {
 					["NPC:3920"] = true,
@@ -46123,21 +46183,30 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[24475] = {
-				["reward_text"] = "This'll have to do for now.  We've a lot of people to feed here, but we've got to make do with what we've got.  With any luck, King Bronzebeard in Ironforge will send us some help shortly.",
-				["progress_text"] = "The people are gettin' restless.  D'ye have the supplies yet?",
-				["end"] = {
-					["NPC:37087"] = true,
-				},
-			},
 			[25186] = {
-				["begin"] = {
-					["NPC:38380"] = true,
+				["classes"] = {
+					["MAGE"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["NightElf"] = true,
 				},
+				["begin"] = {
+					["NPC:38380"] = true,
+				},
+			},
+			[13948] = {
+				["begin"] = {
+					["PLAYER:0"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["NightElf"] = true,
+				},
+				["end"] = {
+					["NPC:34402"] = true,
+				},
+				["reward_text"] = "This is dire news, <name>.  If you are correct, then we'd best act swiftly and decisively.\n\nWe cannot allow this \"Soggoth\" to be brought back to life.",
 				["classes"] = {
 					["MAGE"] = true,
 				},
@@ -46155,18 +46224,18 @@ WoWDBProfilerData = {
 					["NPC:1104"] = true,
 				},
 			},
-			[13948] = {
+			[13547] = {
 				["begin"] = {
-					["PLAYER:0"] = true,
+					["NPC:6887"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["NightElf"] = true,
 				},
 				["end"] = {
-					["NPC:34402"] = true,
+					["NPC:6887"] = true,
 				},
-				["reward_text"] = "This is dire news, <name>.  If you are correct, then we'd best act swiftly and decisively.\n\nWe cannot allow this \"Soggoth\" to be brought back to life.",
+				["reward_text"] = "So much death and pain. Can there be any doubt that there is more yet to come?\n\nAll I wish to do is move onward into the Goddess's embrace as do these others.\n\nBut first, let us see if we can keep even more misery and destruction from being spread.",
 				["classes"] = {
 					["MAGE"] = true,
 				},
@@ -46186,22 +46255,6 @@ WoWDBProfilerData = {
 				["progress_text"] = "You got those tails? Don't be tryin' to push no hacked-up ones on me!",
 				["classes"] = {
 					["WARRIOR"] = true,
-				},
-			},
-			[13547] = {
-				["begin"] = {
-					["NPC:6887"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["NightElf"] = true,
-				},
-				["end"] = {
-					["NPC:6887"] = true,
-				},
-				["reward_text"] = "So much death and pain. Can there be any doubt that there is more yet to come?\n\nAll I wish to do is move onward into the Goddess's embrace as do these others.\n\nBut first, let us see if we can keep even more misery and destruction from being spread.",
-				["classes"] = {
-					["MAGE"] = true,
 				},
 			},
 			[13523] = {
@@ -46243,6 +46296,22 @@ WoWDBProfilerData = {
 					["NPC:43769"] = true,
 				},
 			},
+			[25979] = {
+				["begin"] = {
+					["NPC:41804"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["end"] = {
+					["NPC:41804"] = true,
+				},
+				["reward_text"] = "It is never easy to countenance violence against the very elements whose powers I wield, but sometimes there is no other solution. Our duty to the people of Dun Morogh comes first.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
 			[25621] = {
 				["classes"] = {
 					["MAGE"] = true,
@@ -46274,21 +46343,7 @@ WoWDBProfilerData = {
 					["NPC:44456"] = true,
 				},
 			},
-			[25979] = {
-				["begin"] = {
-					["NPC:41804"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
-				},
-				["end"] = {
-					["NPC:41804"] = true,
-				},
-				["reward_text"] = "It is never easy to countenance violence against the very elements whose powers I wield, but sometimes there is no other solution. Our duty to the people of Dun Morogh comes first.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
+			[44989] = {
 			},
 			[25669] = {
 				["begin"] = {
@@ -46305,7 +46360,11 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[44989] = {
+			[27555] = {
+				["reward_text"] = "Fiona has left some of her charms inside the caravan.\n\nAs a trader, she seems to be pretty good with money.  Maybe carrying one of her charms will help out with your finances.",
+				["end"] = {
+					["NPC:45400"] = true,
+				},
 			},
 			[483] = {
 				["begin"] = {
@@ -46324,10 +46383,21 @@ WoWDBProfilerData = {
 				},
 				["progress_text"] = "<name>, the kidnapped Druids of the Talon will be forever trapped in the Emerald Dream if we cannot retrieve the Relics of Wakening from the Ban'ethil Barrow Den to the west.\n\nFor every minute we delay their fate comes one step closer to eternal doom.",
 			},
-			[27555] = {
-				["reward_text"] = "Fiona has left some of her charms inside the caravan.\n\nAs a trader, she seems to be pretty good with money.  Maybe carrying one of her charms will help out with your finances.",
+			[27876] = {
+				["begin"] = {
+					["NPC:17127"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
 				["end"] = {
-					["NPC:45400"] = true,
+					["NPC:17127"] = true,
+				},
+				["reward_text"] = "It will have to be purified, but this will be most helpful. Thank you.",
+				["progress_text"] = "Did you get those samples?",
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[42421] = {
@@ -46364,22 +46434,11 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[25845] = {
-				["begin"] = {
-					["NPC:41350"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["NightElf"] = true,
-				},
+			[27768] = {
+				["reward_text"] = "A deserved fate. You will not find the pacifism of the red dragonflight among my kin, <name>; we will not suffer the intrusions of mortals.",
 				["end"] = {
-					["NPC:41229"] = true,
+					["PLAYER:0"] = true,
 				},
-				["reward_text"] = "Weapons, eh?\n\n<Force Commander Valen sighs.>\n\nI'm about to make an executive decision here, <name>. Let's hope this pays off, else King Wrynn will have my head!",
-				["classes"] = {
-					["MAGE"] = true,
-				},
-				["progress_text"] = "Well???",
 			},
 			[27843] = {
 				["begin"] = {
@@ -46397,19 +46456,18 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[27876] = {
+			[26868] = {
 				["begin"] = {
-					["NPC:17127"] = true,
+					["NPC:44345"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:17127"] = true,
+					["NPC:44345"] = true,
 				},
-				["reward_text"] = "It will have to be purified, but this will be most helpful. Thank you.",
-				["progress_text"] = "Did you get those samples?",
+				["reward_text"] = "Worked like a charm, didn't it? Maybe Kadrell will get off my darn back now what with savin' the whole town and all!\n\nI suppose you've done earned yourself some proper goods.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -46431,39 +46489,39 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[26868] = {
+			[25845] = {
 				["begin"] = {
-					["NPC:44345"] = true,
+					["NPC:41350"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["Dwarf"] = true,
+					["NightElf"] = true,
 				},
 				["end"] = {
-					["NPC:44345"] = true,
+					["NPC:41229"] = true,
 				},
-				["reward_text"] = "Worked like a charm, didn't it? Maybe Kadrell will get off my darn back now what with savin' the whole town and all!\n\nI suppose you've done earned yourself some proper goods.",
+				["reward_text"] = "Weapons, eh?\n\n<Force Commander Valen sighs.>\n\nI'm about to make an executive decision here, <name>. Let's hope this pays off, else King Wrynn will have my head!",
 				["classes"] = {
-					["WARRIOR"] = true,
+					["MAGE"] = true,
 				},
+				["progress_text"] = "Well???",
 			},
 			[42233] = {
 			},
-			[27012] = {
+			[13896] = {
 				["begin"] = {
-					["NPC:44472"] = true,
+					["NPC:34404"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["Dwarf"] = true,
+					["NightElf"] = true,
 				},
 				["end"] = {
-					["NPC:44472"] = true,
+					["NPC:34340"] = true,
 				},
-				["reward_text"] = "Thank you, <name>.  I'll be throwing these in the fire.  We don't want those gnolls just sneaking in and stealing them back.",
-				["progress_text"] = "I don't want to order some sort of mass gnoll genocide because of a mother's worries.  I'd just like to feel safe in my own home.",
+				["reward_text"] = "Oh, we know a thing or two about this Soggoth.  The question is... do you really want to know?",
 				["classes"] = {
-					["WARRIOR"] = true,
+					["MAGE"] = true,
 				},
 			},
 			[486] = {
@@ -46498,20 +46556,21 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[13522] = {
-				["begin"] = {
-					["NPC:32971"] = true,
+			[27028] = {
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["NightElf"] = true,
+					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:32971"] = true,
+					["NPC:1154"] = true,
 				},
-				["reward_text"] = "Your efforts are very much appreciated. Since the Cataclysm, the elementals have been out of control. We have little hope of taking back Auberdine without extinguishing their presence first.",
-				["classes"] = {
-					["MAGE"] = true,
+				["reward_text"] = "Lovely specimens you've got there! Here's my wager, lad.",
+				["progress_text"] = "How go those wasps?",
+				["begin"] = {
+					["NPC:1154"] = true,
 				},
 			},
 			[489] = {
@@ -46579,21 +46638,20 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[27028] = {
-				["classes"] = {
-					["WARRIOR"] = true,
+			[13522] = {
+				["begin"] = {
+					["NPC:32971"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["Dwarf"] = true,
+					["NightElf"] = true,
 				},
 				["end"] = {
-					["NPC:1154"] = true,
+					["NPC:32971"] = true,
 				},
-				["reward_text"] = "Lovely specimens you've got there! Here's my wager, lad.",
-				["progress_text"] = "How go those wasps?",
-				["begin"] = {
-					["NPC:1154"] = true,
+				["reward_text"] = "Your efforts are very much appreciated. Since the Cataclysm, the elementals have been out of control. We have little hope of taking back Auberdine without extinguishing their presence first.",
+				["classes"] = {
+					["MAGE"] = true,
 				},
 			},
 			[488] = {
@@ -46798,22 +46856,21 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[2459] = {
+			[997] = {
 				["begin"] = {
-					["NPC:3567"] = true,
+					["NPC:2083"] = true,
 				},
-				["can_share"] = true,
+				["progress_text"] = "You have something for me?",
 				["races"] = {
 					["NightElf"] = true,
 				},
 				["end"] = {
-					["NPC:3567"] = true,
+					["NPC:2080"] = true,
 				},
-				["reward_text"] = "Now I can repair my dreamcatcher.  Thank you, <name>.",
+				["reward_text"] = "Ah, it's here!  I have waited for this rare earth for quite some time.  I hope it's still fresh...\n\nThank you for bringing it to me, <name>.  You are a night elf who is generous with his time.",
 				["classes"] = {
 					["MAGE"] = true,
 				},
-				["progress_text"] = "Ferocitas and the Gnarlpine mystics must return what is mine.  Please retrieve the emerald so that I may repair my emerald dreamcatcher.",
 			},
 			[13642] = {
 				["begin"] = {
@@ -46879,39 +46936,26 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[997] = {
+			[2459] = {
 				["begin"] = {
-					["NPC:2083"] = true,
+					["NPC:3567"] = true,
 				},
-				["progress_text"] = "You have something for me?",
+				["can_share"] = true,
 				["races"] = {
 					["NightElf"] = true,
 				},
 				["end"] = {
-					["NPC:2080"] = true,
+					["NPC:3567"] = true,
 				},
-				["reward_text"] = "Ah, it's here!  I have waited for this rare earth for quite some time.  I hope it's still fresh...\n\nThank you for bringing it to me, <name>.  You are a night elf who is generous with his time.",
+				["reward_text"] = "Now I can repair my dreamcatcher.  Thank you, <name>.",
 				["classes"] = {
 					["MAGE"] = true,
 				},
+				["progress_text"] = "Ferocitas and the Gnarlpine mystics must return what is mine.  Please retrieve the emerald so that I may repair my emerald dreamcatcher.",
 			},
 			[48642] = {
 			},
-			[28731] = {
-				["classes"] = {
-					["MAGE"] = true,
-				},
-				["progress_text"] = "Greetings, <class>. For what purpose do I owe the pleasure of our meeting?",
-				["races"] = {
-					["NightElf"] = true,
-				},
-				["end"] = {
-					["NPC:3515"] = true,
-				},
-				["reward_text"] = "Ah, I see. You were sent by Tenaron. Well then, it would seem we have much to talk about, much to do.\n\nBefore we get to the task at hand, you should take in the lesson of this moonwell.",
-				["begin"] = {
-					["NPC:3514"] = true,
-				},
+			[42420] = {
 			},
 			[13698] = {
 				["begin"] = {
@@ -47235,20 +47279,21 @@ WoWDBProfilerData = {
 				},
 				["progress_text"] = "Life is powerful, <name>. Concentrated in its purest form, it can overcome anything. Someday, even Darkshore will heal from its wounds. Did you find everything I need?",
 			},
-			[13896] = {
+			[27172] = {
 				["begin"] = {
-					["NPC:34404"] = true,
+					["NPC:10838"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["NightElf"] = true,
+					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:34340"] = true,
+					["NPC:45165"] = true,
 				},
-				["reward_text"] = "Oh, we know a thing or two about this Soggoth.  The question is... do you really want to know?",
+				["reward_text"] = "Well, now that you're here, we'll gladly take that armor off your hands.\n\nYou can keep the weapons, though.  These men wouldn't know which end to hold.",
+				["progress_text"] = "Did Valorfist send you?  He doesn't know when to let up, does he?",
 				["classes"] = {
-					["MAGE"] = true,
+					["WARRIOR"] = true,
 				},
 			},
 			[13898] = {
@@ -47268,19 +47313,19 @@ WoWDBProfilerData = {
 				},
 				["progress_text"] = "You return, <name>.  What news do you bring?",
 			},
-			[27172] = {
+			[27012] = {
 				["begin"] = {
-					["NPC:10838"] = true,
+					["NPC:44472"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:45165"] = true,
+					["NPC:44472"] = true,
 				},
-				["reward_text"] = "Well, now that you're here, we'll gladly take that armor off your hands.\n\nYou can keep the weapons, though.  These men wouldn't know which end to hold.",
-				["progress_text"] = "Did Valorfist send you?  He doesn't know when to let up, does he?",
+				["reward_text"] = "Thank you, <name>.  I'll be throwing these in the fire.  We don't want those gnolls just sneaking in and stealing them back.",
+				["progress_text"] = "I don't want to order some sort of mass gnoll genocide because of a mother's worries.  I'd just like to feel safe in my own home.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -47318,11 +47363,7 @@ WoWDBProfilerData = {
 					["MAGE"] = true,
 				},
 			},
-			[27768] = {
-				["reward_text"] = "A deserved fate. You will not find the pacifism of the red dragonflight among my kin, <name>; we will not suffer the intrusions of mortals.",
-				["end"] = {
-					["PLAYER:0"] = true,
-				},
+			[50603] = {
 			},
 			[27860] = {
 				["begin"] = {
@@ -47722,15 +47763,15 @@ WoWDBProfilerData = {
 				["progress_text"] = "This ramlette ain't gonna make itself!",
 			},
 			[25191] = {
-				["begin"] = {
-					["NPC:38383"] = true,
+				["classes"] = {
+					["MAGE"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["NightElf"] = true,
 				},
-				["classes"] = {
-					["MAGE"] = true,
+				["begin"] = {
+					["NPC:38383"] = true,
 				},
 			},
 			[25821] = {
@@ -47752,6 +47793,22 @@ WoWDBProfilerData = {
 				["reward_text"] = "I suppose that we can take his aggression as an admission of guilt.  You alright, <name>?",
 				["end"] = {
 					["PLAYER:0"] = true,
+				},
+			},
+			[26148] = {
+				["begin"] = {
+					["NPC:1092"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["end"] = {
+					["NPC:1092"] = true,
+				},
+				["reward_text"] = "Most excellent, <name>! You have brought hope to Loch Modan. With Grawmug dead, we stand a better chance of seeing the Troggs eliminated from the land.",
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[13545] = {
@@ -47782,22 +47839,6 @@ WoWDBProfilerData = {
 					["OBJECT:205258"] = true,
 				},
 				["reward_text"] = "Scattered all over the bottom level of the crypt, you find shattered crates that once held weapons and armor.\n\nIt appears that somebody got here before you did.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[26148] = {
-				["begin"] = {
-					["NPC:1092"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
-				},
-				["end"] = {
-					["NPC:1092"] = true,
-				},
-				["reward_text"] = "Most excellent, <name>! You have brought hope to Loch Modan. With Grawmug dead, we stand a better chance of seeing the Troggs eliminated from the land.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},

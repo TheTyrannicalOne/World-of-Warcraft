@@ -484,6 +484,7 @@ local actionTemplate = {
     -- Variable
     op = "set",
     condition = "",
+    default = "",
     value = "",
     value_else = "",
     var_name = "unnamed",
@@ -8906,6 +8907,11 @@ local function Sanitize( segment, i, line, warnings )
     i, times = i:gsub( "(incanters_flow_time_to%.%d+)(^%.)", "%1.any%2")
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted directionless 'incanters_flow_time_to.X' to 'incanters_flow_time_to.X.any' (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "exsanguinated%.([a-z0-9_]+)", "debuff.%1.exsanguinated" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'exsanguinated.X' to 'debuff.X.exsanguinated' (" .. times .. "x).") 
     end
 
     if segment == 'c' then

@@ -5,29 +5,29 @@ DeathNoteDB = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tynster - Dalaran"] = "Tynster - Dalaran",
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
 		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Claugh - Runetotem"] = "Claugh - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -39,16 +39,16 @@ DeathNoteDB = {
 		},
 		["Tyrann - Zul'jin"] = {
 		},
-		["Brewnheimer - Darkspear"] = {
+		["Shaewong - Dalaran"] = {
 		},
-		["Sinh - Dalaran"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["searchbox_text"] = "",
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 		},
-		["Shaewong - Dalaran"] = {
+		["Brewnheimer - Darkspear"] = {
 		},
 		["Goramor - Runetotem"] = {
 		},
@@ -56,19 +56,19 @@ DeathNoteDB = {
 		},
 		["Shanyt - Zul'jin"] = {
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyriinid - Dalaran"] = {
 		},
-		["Gangus - Runetotem"] = {
+		["Sinh - Dalaran"] = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
 		["Serbitechna - Darkspear"] = {
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Tynkster - Dalaran"] = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Vancard - Zul'jin"] = {
+		["Shathiel - Darkspear"] = {
 		},
 		["Malivant - Dalaran"] = {
 		},
@@ -76,15 +76,15 @@ DeathNoteDB = {
 		},
 		["Claugh - Runetotem"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Vancard - Zul'jin"] = {
 		},
-		["Tynkster - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
-		["Tyriinid - Dalaran"] = {
+		["Beeronimo - Dalaran"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 		},
 		["Narisaric - Dalaran"] = {
 		},

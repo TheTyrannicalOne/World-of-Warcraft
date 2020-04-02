@@ -1,19 +1,19 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/whistle", -- [1]
-		"/clap", -- [2]
-		"/rasp", -- [3]
-		"/opie", -- [4]
-		"/flirt", -- [5]
-		"/skada toggle", -- [6]
-		"/skada show", -- [7]
-		"/train", -- [8]
+		"/cry", -- [1]
+		"/allthethings", -- [2]
+		"/kb", -- [3]
+		"/skada", -- [4]
+		"/whistle", -- [5]
+		"/rasp", -- [6]
+		"/flirt", -- [7]
+		"/skada show", -- [8]
 		"/cheer", -- [9]
-		"/cry", -- [10]
-		"/skada", -- [11]
-		"/kb", -- [12]
-		"/allthethings", -- [13]
+		"/clap", -- [10]
+		"/train", -- [11]
+		"/skada toggle", -- [12]
+		"/opie", -- [13]
 	},
 	["ChatHistoryLog"] = {
 		{

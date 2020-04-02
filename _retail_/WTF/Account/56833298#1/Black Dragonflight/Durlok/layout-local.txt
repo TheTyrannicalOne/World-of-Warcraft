@@ -44,7 +44,7 @@ H: 1
 Frame: ObjectiveTrackerFrame
 FrameLevel: 1
 Anchor: TOPLEFT
-X: 31
+X: 32
 Y: -38
 W: 235
 H: 480
@@ -62,13 +62,6 @@ X: 0
 Y: 0
 W: 365
 H: 240
-Frame: VehicleSeatIndicator
-FrameLevel: 1
-Anchor: LEFT
-X: 287
-Y: -191
-W: 128
-H: 128
 Frame: AAP_AfkFrames
 FrameLevel: 1
 Anchor: TOPRIGHT
@@ -181,3 +174,10 @@ X: 0
 Y: 0
 W: 300
 H: 300
+Frame: VehicleSeatIndicator
+FrameLevel: 1
+Anchor: LEFT
+X: 287
+Y: -191
+W: 128
+H: 128

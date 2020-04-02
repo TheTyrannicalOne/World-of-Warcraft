@@ -22,6 +22,9 @@ KalielsTrackerDB = {
 		["Shathiel - Darkspear"] = {
 			["collapsed"] = true,
 		},
+		["Thorinbane - Dalaran"] = {
+			["collapsed"] = true,
+		},
 		["Serbitechna - Darkspear"] = {
 			["collapsed"] = true,
 		},

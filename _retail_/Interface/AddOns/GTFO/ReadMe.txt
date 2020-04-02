@@ -1502,3 +1502,5 @@ Change Log:
 * Added BFA spells for Ny'alotha, the Waking City
 * Added BFA spells for Operation: Mechagon
 
+4.55.2
+* Trying to fix Twitch/Curse from perpetually marking this out-of-date
