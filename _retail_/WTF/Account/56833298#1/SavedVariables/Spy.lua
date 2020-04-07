@@ -141,7 +141,6 @@ SpyDB = {
 		},
 		["Tinkster - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {

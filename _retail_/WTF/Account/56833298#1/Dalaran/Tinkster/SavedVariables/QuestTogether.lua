@@ -1,6 +1,22 @@
 
 QuestTogether = {
 	["questTracker"] = {
+		[26131] = {
+			["title"] = "Reinforcements for Loch Modan",
+			["objectives"] = {
+			},
+		},
+		[6661] = {
+			["title"] = "Deeprun Rat Roundup",
+			["objectives"] = {
+				"0/5 Rats Captured", -- [1]
+			},
+		},
+		[2039] = {
+			["title"] = "Find Bingles",
+			["objectives"] = {
+			},
+		},
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
@@ -12,6 +28,14 @@ QuestTogether = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[27355] = {
+			["title"] = "A Boon for the Powerful",
+			["objectives"] = {
+				"0/1 Tenebrous Orb", -- [1]
+				"0/1 Book of Lost Souls", -- [2]
+				"0/5 Ghostly Essence", -- [3]
 			},
 		},
 		[31891] = {
@@ -27,8 +51,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
-		["events"] = false,
 		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
 	},
 }

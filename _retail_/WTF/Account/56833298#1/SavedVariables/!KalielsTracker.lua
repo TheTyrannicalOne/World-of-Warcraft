@@ -13,9 +13,6 @@ KalielsTrackerDB = {
 		["Gillbourn - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Tinkster - Dalaran"] = {
-			["collapsed"] = true,
-		},
 		["Bathal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},

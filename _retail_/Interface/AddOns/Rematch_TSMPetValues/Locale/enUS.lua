@@ -3,12 +3,13 @@
 --------------------------------------------------------------------------------------------
 -- Locale/enUS.lua - Strings for enUS
 --
--- Author: Expelliarm5s / October 2019 / All Rights Reserved
+-- Author: Expelliarm5s / January 2020 / All Rights Reserved
 --
--- Version 0.1.15
+-- Version 0.1.16
 ------------------------------------------------------------------------------
+-- luacheck: max line length 350
 
-local addonName, addon = ...
+local addonName, _ = ...
 local silent = true
 local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "enUS", true, silent)
 if not L then return end

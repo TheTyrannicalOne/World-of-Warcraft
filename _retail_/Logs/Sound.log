@@ -1,71 +1,71 @@
-4/2 00:43:50.880   - SE3 Init...
-4/2 00:43:50.880  => SI3 Init
-4/2 00:43:50.880  => WoW Version 8.3.0 (33775) Mar 20 2020
-4/2 00:43:50.880   
-4/2 00:43:50.880  => User Settings Report:
-4/2 00:43:50.880   - ========= PLAYBACK =========
-4/2 00:43:50.880   - Enable All Sound         [1]
-4/2 00:43:50.880   - Enable SFX               [1]
-4/2 00:43:50.880   --- Enable Emote Sounds    [1]
-4/2 00:43:50.880   - Enable Music             [1]
-4/2 00:43:50.880   --- Loop Music             [1]
-4/2 00:43:50.880   --- Pet Battle Music       [1]
-4/2 00:43:50.880   - Enable Ambient Sounds    [1]
-4/2 00:43:50.880   - Enable Dialog            [1]
-4/2 00:43:50.880   --- Enable Error Speech    [1]
-4/2 00:43:50.880   - Sound at Character       [1]
-4/2 00:43:50.880   - Sound in Background      [0]
-4/2 00:43:50.880   - Enable Reverb            [1]
-4/2 00:43:50.880   -
-4/2 00:43:50.880   - ========== VOLUME ==========
-4/2 00:43:50.880   - Master Volume         [1.00]
-4/2 00:43:50.880   - SFX Volume            [0.80]
-4/2 00:43:50.880   - Music Volume          [0.30]
-4/2 00:43:50.880   - Ambience Volume       [0.60]
-4/2 00:43:50.880   - Dialog Volume         [1.00]
-4/2 00:43:50.880   -
-4/2 00:43:50.880   - =========== MISC ===========
-4/2 00:43:50.880   - Sound Channels          [64]
-4/2 00:43:50.880   - Sound Cache           [128MB]
-4/2 00:43:50.880   - Mix Mode 2               [0]
-4/2 00:43:50.880   - DSP Buffer Size       [AUTO]
-4/2 00:43:50.880   - Armor Foley SFX (Self)   [1]
-4/2 00:43:50.880   - Armor Foley SFX (Others) [1]
-4/2 00:43:50.880  => End of User Settings Report
-4/2 00:43:50.880   
-4/2 00:43:50.880   - FMOD Memory Init
-4/2 00:43:50.880   - FMOD System Create
-4/2 00:43:50.888   - Setting Output Type
-4/2 00:43:51.035   - 7 Output drivers detected
-4/2 00:43:51.035   --- [0] System Default
-4/2 00:43:51.035   --- [1] Speakers (THX Spatial - Synapse)
-4/2 00:43:51.035   --- [2] Headphones (2- Razer Nari Ultimate - Game)
-4/2 00:43:51.035   --- [3] Speakers (Realtek High Definition Audio)
-4/2 00:43:51.035   --- [4] Headset Earphone (Razer Nari Ultimate - Chat)
-4/2 00:43:51.035   --- [5] Realtek Digital Output (Realtek High Definition Audio)
-4/2 00:43:51.035   --- [6] Realtek Digital Output(Optical) (Realtek High Definition Audio)
-4/2 00:43:51.035  ** Using Driver [0] System Default (Speakers (THX Spatial - Synapse))
-4/2 00:43:51.035   - DSPBufferSize = AUTO DETECT
-4/2 00:43:51.084   - Setting DSP Buffer Size
-4/2 00:43:51.084   - Using Control Panel Speaker Mode 7.1
-4/2 00:43:51.084   - Setting Software Format (44100, 2, 1).
-4/2 00:43:51.084   - Requested 64 channels.
-4/2 00:43:51.084   - Initializing Software Channels
-4/2 00:43:51.269   - Init FMOD Game System
-4/2 00:43:51.269   - Ok
-4/2 00:43:51.269   - Setting Rolloff Scale
-4/2 00:43:51.269   - Setting Rolloff Callback
-4/2 00:43:51.269   - SE3 EmitterManagerInit Success
-4/2 00:43:51.269   - Setting device callback
-4/2 00:43:51.269   - Sound Bus Init
-4/2 00:43:51.269   - Init Suppressors
-4/2 00:43:51.269   - SE3 Init Success.
-4/2 00:43:51.283  => SI3 Init Complete.
-4/2 00:43:51.283   
-4/2 01:07:08.093   
-4/2 01:07:08.093  => Shutting Down SI3
-4/2 01:07:08.126  => Shutting Down SI3 COMPLETE.
-4/2 01:07:08.126   
-4/2 01:07:08.126   - Shutting Down SE3
-4/2 01:07:08.260   - SE3 EmitterManagerShutdown Success
-4/2 01:07:08.260   - Shutting Down SE3 COMPLETE.
+4/6 22:53:26.181   - SE3 Init...
+4/6 22:53:26.181  => SI3 Init
+4/6 22:53:26.181  => WoW Version 8.3.0 (33941) Apr  2 2020
+4/6 22:53:26.181   
+4/6 22:53:26.181  => User Settings Report:
+4/6 22:53:26.181   - ========= PLAYBACK =========
+4/6 22:53:26.181   - Enable All Sound         [1]
+4/6 22:53:26.181   - Enable SFX               [1]
+4/6 22:53:26.181   --- Enable Emote Sounds    [1]
+4/6 22:53:26.181   - Enable Music             [1]
+4/6 22:53:26.181   --- Loop Music             [1]
+4/6 22:53:26.181   --- Pet Battle Music       [1]
+4/6 22:53:26.181   - Enable Ambient Sounds    [1]
+4/6 22:53:26.181   - Enable Dialog            [1]
+4/6 22:53:26.181   --- Enable Error Speech    [1]
+4/6 22:53:26.181   - Sound at Character       [1]
+4/6 22:53:26.181   - Sound in Background      [0]
+4/6 22:53:26.181   - Enable Reverb            [1]
+4/6 22:53:26.181   -
+4/6 22:53:26.181   - ========== VOLUME ==========
+4/6 22:53:26.181   - Master Volume         [1.00]
+4/6 22:53:26.181   - SFX Volume            [0.80]
+4/6 22:53:26.181   - Music Volume          [0.30]
+4/6 22:53:26.181   - Ambience Volume       [0.60]
+4/6 22:53:26.181   - Dialog Volume         [1.00]
+4/6 22:53:26.181   -
+4/6 22:53:26.181   - =========== MISC ===========
+4/6 22:53:26.181   - Sound Channels          [64]
+4/6 22:53:26.181   - Sound Cache           [128MB]
+4/6 22:53:26.181   - Mix Mode 2               [0]
+4/6 22:53:26.181   - DSP Buffer Size       [AUTO]
+4/6 22:53:26.181   - Armor Foley SFX (Self)   [1]
+4/6 22:53:26.181   - Armor Foley SFX (Others) [1]
+4/6 22:53:26.181  => End of User Settings Report
+4/6 22:53:26.181   
+4/6 22:53:26.181   - FMOD Memory Init
+4/6 22:53:26.181   - FMOD System Create
+4/6 22:53:26.181   - Setting Output Type
+4/6 22:53:26.264   - 7 Output drivers detected
+4/6 22:53:26.264   --- [0] System Default
+4/6 22:53:26.264   --- [1] Speakers (THX Spatial - Synapse)
+4/6 22:53:26.264   --- [2] Headphones (2- Razer Nari Ultimate - Game)
+4/6 22:53:26.264   --- [3] Speakers (Realtek High Definition Audio)
+4/6 22:53:26.264   --- [4] Headset Earphone (Razer Nari Ultimate - Chat)
+4/6 22:53:26.264   --- [5] Realtek Digital Output (Realtek High Definition Audio)
+4/6 22:53:26.264   --- [6] Realtek Digital Output(Optical) (Realtek High Definition Audio)
+4/6 22:53:26.264  ** Using Driver [0] System Default (Speakers (THX Spatial - Synapse))
+4/6 22:53:26.264   - DSPBufferSize = AUTO DETECT
+4/6 22:53:26.337   - Setting DSP Buffer Size
+4/6 22:53:26.337   - Using Control Panel Speaker Mode 7.1
+4/6 22:53:26.337   - Setting Software Format (44100, 2, 1).
+4/6 22:53:26.337   - Requested 64 channels.
+4/6 22:53:26.337   - Initializing Software Channels
+4/6 22:53:26.591   - Init FMOD Game System
+4/6 22:53:26.591   - Ok
+4/6 22:53:26.591   - Setting Rolloff Scale
+4/6 22:53:26.591   - Setting Rolloff Callback
+4/6 22:53:26.591   - SE3 EmitterManagerInit Success
+4/6 22:53:26.591   - Setting device callback
+4/6 22:53:26.591   - Sound Bus Init
+4/6 22:53:26.591   - Init Suppressors
+4/6 22:53:26.591   - SE3 Init Success.
+4/6 22:53:26.605  => SI3 Init Complete.
+4/6 22:53:26.605   
+4/7 00:11:00.298   
+4/7 00:11:00.298  => Shutting Down SI3
+4/7 00:11:00.328  => Shutting Down SI3 COMPLETE.
+4/7 00:11:00.328   
+4/7 00:11:00.328   - Shutting Down SE3
+4/7 00:11:00.489   - SE3 EmitterManagerShutdown Success
+4/7 00:11:00.489   - Shutting Down SE3 COMPLETE.

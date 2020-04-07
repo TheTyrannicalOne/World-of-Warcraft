@@ -666,6 +666,8 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                     -- We have to determine *here* whether the ability would be used on the current target or a different target.
                                     if state.args.cycle_targets == 1 and state.settings.cycle and state.spell_targets[ action ] > 1 then
                                         state.SetupCycle( ability )
+                                    else
+                                        state.ClearCycle()
                                     end
 
                                     local usable, why = state:IsUsable()
@@ -945,6 +947,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                         end
                                                     end
                                                 end
+
                                                 state.ClearCycle()
                                             end
                                         end
@@ -1181,7 +1184,7 @@ function Hekili:ProcessHooks( dispName, packName )
                 local resources
 
                 for k in orderedPairs( class.resources ) do
-                    resources = ( resources and ( resources .. ", " ) or "" ) .. k .. "[ " .. state[ k ].current .. " / " .. state[ k ].max .. " ]"
+                    resources = ( resources and ( resources .. ", " ) or "" ) .. string.format( "%s[ %.2f / %.2f ]", k, state[ k ].current, state[ k ].max )
                 end
                 self:Debug( 1, "Resources: %s\n", resources )
 

@@ -19,10 +19,9 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[51421] = {
-			["title"] = "Shiver Me Timbers",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
 			},
 		},
 		[56044] = {
@@ -43,25 +42,27 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
 		[40643] = {
 			["title"] = "A Summons From Moonglade",
 			["objectives"] = {
 			},
 		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
 				"2/10  ", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
 			},
 		},
 		[44989] = {
@@ -76,28 +77,10 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
-			},
-		},
-		[42420] = {
-			["title"] = "Court of Farondis",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
-			},
-		},
-		[50606] = {
-			["title"] = "Horde War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[31891] = {
@@ -116,23 +99,40 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[51421] = {
+			["title"] = "Shiver Me Timbers",
+			["objectives"] = {
+				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
+			},
+		},
 		[47105] = {
 			["title"] = "Into The Darkness",
 			["objectives"] = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

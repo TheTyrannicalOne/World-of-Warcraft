@@ -1,23 +1,29 @@
-4/2 00:43:48.803  LogOpen
-4/2 00:43:48.854  NvAPI loaded
-4/2 00:43:49.236  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe11df) dx11:true dx12:true
-4/2 00:43:49.236  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
-4/2 00:43:49.310  D3d12 Device Create
-4/2 00:43:49.466  Choosing adapter 0
-4/2 00:43:49.647  AFR Groups: 1/1
-4/2 00:43:49.647  Feature Level: DX=6, MTL=0
-4/2 00:43:49.829  NotifyOnDeviceCreate
-4/2 00:43:49.829  D3d12 Device Create Successful
-4/2 00:43:49.829  Nvidia driver version: r445_00 (44575)
-4/2 00:43:49.829  <IsGPUDriverOutOfDate> No
-4/2 00:43:49.859  CPU Processor Detection: 12 H/W threads
-4/2 00:43:49.859  Memory Detection: 34296328192 bytes of physical memory available
-4/2 00:43:49.859  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-4/2 00:43:49.979  RenderSettings::NotifyChanged
-4/2 00:43:52.094  Nvidia driver version: r445_00 (44575)
-4/2 00:44:19.984  Nvidia driver version: r445_00 (44575)
-4/2 00:44:19.984  Nvidia driver version: r445_00 (44575)
-4/2 01:07:07.627  Nvidia driver version: r445_00 (44575)
-4/2 01:07:08.528  D3d12 Device Destroy
-4/2 01:07:08.528  NotifyOnDeviceDestroy
-4/2 01:07:09.359  GxShutdown
+4/6 22:53:24.019  LogOpen
+4/6 22:53:24.019  NvAPI loaded
+4/6 22:53:24.371  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe11df) dx11:true dx12:true
+4/6 22:53:24.371  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
+4/6 22:53:24.429  D3d12 Device Create
+4/6 22:53:24.563  Choosing adapter 0
+4/6 22:53:24.739  AFR Groups: 1/1
+4/6 22:53:24.739  Feature Level: DX=6, MTL=0
+4/6 22:53:24.938  NotifyOnDeviceCreate
+4/6 22:53:24.938  D3d12 Device Create Successful
+4/6 22:53:24.938  Nvidia driver version: r445_00 (44575)
+4/6 22:53:24.938  <IsGPUDriverOutOfDate> No
+4/6 22:53:24.962  CPU Processor Detection: 12 H/W threads
+4/6 22:53:24.962  Memory Detection: 34296328192 bytes of physical memory available
+4/6 22:53:24.962  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+4/6 22:53:25.080  RenderSettings::NotifyChanged
+4/6 22:53:26.693  Nvidia driver version: r445_00 (44575)
+4/6 22:53:54.545  Nvidia driver version: r445_00 (44575)
+4/6 22:53:54.545  Nvidia driver version: r445_00 (44575)
+4/6 23:27:25.525  Nvidia driver version: r445_00 (44575)
+4/6 23:28:00.696  Nvidia driver version: r445_00 (44575)
+4/6 23:30:10.038  Nvidia driver version: r445_00 (44575)
+4/6 23:34:37.676  Nvidia driver version: r445_00 (44575)
+4/6 23:36:26.081  Nvidia driver version: r445_00 (44575)
+4/6 23:37:00.634  Nvidia driver version: r445_00 (44575)
+4/7 00:11:00.057  Nvidia driver version: r445_00 (44575)
+4/7 00:11:00.845  D3d12 Device Destroy
+4/7 00:11:00.845  NotifyOnDeviceDestroy
+4/7 00:11:02.002  GxShutdown

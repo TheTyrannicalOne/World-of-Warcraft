@@ -113,10 +113,10 @@ MJEPersonalSettings = {
 				["Undead Steeds"] = true,
 			},
 			["Rays"] = {
-				["Stingrays"] = true,
 				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
 				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Cats"] = {
 				["Sabers"] = true,
@@ -176,9 +176,9 @@ MJEPersonalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
+				["Basilisks"] = true,
 				["Mushan"] = true,
 				["Kodos"] = true,
-				["Basilisks"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -223,14 +223,6 @@ MJEPersonalSettings = {
 			["Rylaks"] = true,
 			["Bats"] = true,
 		},
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
-		["onlyTradable"] = false,
-		["collected"] = true,
-		["onlyUsable"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -239,6 +231,14 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["transform"] = true,
 		},
+		["onlyTradable"] = false,
+		["collected"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
+		["onlyUsable"] = false,
 	},
 	["personalHiddenMounts"] = false,
 }

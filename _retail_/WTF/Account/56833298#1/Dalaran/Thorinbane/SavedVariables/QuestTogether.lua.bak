@@ -1,21 +1,33 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[27915] = {
-			["title"] = "The Heart of the Temple",
+		[27465] = {
+			["title"] = "Argent Call: The Noxious Glade",
+			["objectives"] = {
+				"0/16 Noxious Glade Scourge slain", -- [1]
+				"0/8 Noxious Glade Cultists slain", -- [2]
+			},
+		},
+		[27919] = {
+			["title"] = "Onward to the Blasted Lands",
 			["objectives"] = {
 			},
 		},
-		[27544] = {
-			["title"] = "Cenarion Tenacity",
+		[27458] = {
+			["title"] = "Smokey and the Bandage",
+			["objectives"] = {
+				"0/1 Browman's Wrappings", -- [1]
+			},
+		},
+		[27762] = {
+			["title"] = "Fuselight, Ho!",
 			["objectives"] = {
 			},
 		},
-		[27387] = {
-			["title"] = "Villains of Darrowshire",
+		[28756] = {
+			["title"] = "Aberrations of Bone",
 			["objectives"] = {
-				"0/1 Skull of Horgus", -- [1]
-				"0/1 Shattered Sword of Marduk", -- [2]
+				"0/1 Rattlegore slain", -- [1]
 			},
 		},
 		[31891] = {
@@ -28,19 +40,15 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[27388] = {
-			["title"] = "Heroes of Darrowshire",
+		[27915] = {
+			["title"] = "The Heart of the Temple",
 			["objectives"] = {
-				"0/1 Extended Annals of Darrowshire", -- [1]
-				"0/1 Davil's Libram", -- [2]
-				"0/1 Redpath's Shield", -- [3]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[27467] = {
+			["title"] = "Buried Blades",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/10 Blades buried", -- [1]
 			},
 		},
 		[44989] = {
@@ -49,16 +57,17 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[27448] = {
-			["title"] = "The Trek Continues",
+		[49860] = {
+			["title"] = "Adventure Calls",
 			["objectives"] = {
-				"0/1 Ride in Fiona's Caravan", -- [1]
+				"0/1 Select your next assignment", -- [1]
 			},
 		},
-		[27389] = {
-			["title"] = "Marauders of Darrowshire",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/5 Resonating Skull", -- [1]
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[25998] = {
@@ -71,16 +80,17 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[27919] = {
-			["title"] = "Onward to the Blasted Lands",
+		[28755] = {
+			["title"] = "Annals of the Silver Hand",
 			["objectives"] = {
+				"0/1 Annals of the Silver Hand", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }

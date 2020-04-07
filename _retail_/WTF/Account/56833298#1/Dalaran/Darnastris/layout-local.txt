@@ -20,13 +20,6 @@ X: 0
 Y: 0
 W: 150
 H: 80
-Frame: VehicleSeatIndicator
-FrameLevel: 1
-Anchor: BOTTOM
-X: -196
-Y: 39
-W: 88
-H: 88
 Frame: AAP_QuestFrame
 FrameLevel: 1
 Anchor: TOP
@@ -135,8 +128,8 @@ H: 155
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: CENTER
-X: 0
-Y: 0
+X: 1
+Y: -2
 W: 300
 H: 300
 Frame: AllTheThings-Window-Bounty

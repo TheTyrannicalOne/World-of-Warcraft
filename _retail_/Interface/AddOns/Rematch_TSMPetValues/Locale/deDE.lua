@@ -3,12 +3,13 @@
 --------------------------------------------------------------------------------------------
 -- Locale/enUS.lua - Strings for enUS
 --
--- Author: Expelliarm5s / October 2019 / All Rights Reserved
+-- Author: Expelliarm5s / January 2020 / All Rights Reserved
 --
--- Version 0.1.15
+-- Version 0.1.16
 ------------------------------------------------------------------------------
+-- luacheck: max line length 350
 
-local addonName, addon = ...
+local addonName, _ = ...
 local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "deDE")
 
 if not L then return end
@@ -29,10 +30,10 @@ L["Alert Trigger"] = "Gewinnwarnung"
 L["Bad Alert Trigger"] = "Ungültige Gewinnwarnung"
 
 L["Choose the amount of gold to trigger the +/- notice. Example: '5000g' or '50% DBRegionMarketAvg'."] = "Lege den Goldbetrag fest, auf dem die +/- Hinweise vor der Preisinformation beruhen. Beispiel: '5000g' oder '50% DBRegionMarketAvg'."
-L["If the difference between the first and second market value is greater than this value, an + is printed in front of a price info, up to three times. Otherwise an - is printed. Defaults to 5000."] = 
+L["If the difference between the first and second market value is greater than this value, an + is printed in front of a price info, up to three times. Otherwise an - is printed. Defaults to 5000."] =
 	"Wenn die Differenz aus der ersten und zweiten Preisquelle größer ist als dieser Goldbetrag, dann wird bis zu dreimal ein + vor die Preisinfo vorangestellt, ansonsten bis zu dreimal ein -."
 
-L["Example: Set the first price source to 'DBMinBuyout' and the second to 'DBRegionMarketAvg'. For every + you can expect a greater chance to gain gold, if you sell this pet on this server. For every - you can expect to gain gold, if you buy this pet on this server and sell it on an other server."] = 
+L["Example: Set the first price source to 'DBMinBuyout' and the second to 'DBRegionMarketAvg'. For every + you can expect a greater chance to gain gold, if you sell this pet on this server. For every - you can expect to gain gold, if you buy this pet on this server and sell it on an other server."] =
 	"Beispiel: Wird die erste Preisquelle mit 'DBMinBuyout' und die zweite mit 'DBRegionMarketAvg' festgelegt, so steigt die Chance mit jedem + vor der Preisinfo, dass sich der Verkauf auf dem Server lohnt. Für jedes - steigt die Chance, dass es sich lohnt das Haustier auf diesem Server zu kaufen und auf einem anderen zu verkaufen."
 
 L["check empty price source"] = "eine Preisquelle ist leer"

@@ -1,23 +1,27 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/cry", -- [1]
+		"/cheer", -- [1]
 		"/allthethings", -- [2]
-		"/kb", -- [3]
+		"/rasp", -- [3]
 		"/skada", -- [4]
-		"/whistle", -- [5]
-		"/rasp", -- [6]
-		"/flirt", -- [7]
+		"/clap", -- [5]
+		"/skada toggle", -- [6]
+		"/cry", -- [7]
 		"/skada show", -- [8]
-		"/cheer", -- [9]
-		"/clap", -- [10]
-		"/train", -- [11]
-		"/skada toggle", -- [12]
-		"/opie", -- [13]
+		"/flirt", -- [9]
+		"/opie", -- [10]
+		"/wholly", -- [11]
+		"/kb", -- [12]
+		"/train", -- [13]
+		"/invite Doreya", -- [14]
+		"/invite Dereya", -- [15]
+		"/whistle", -- [16]
+		"/dance", -- [17]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"Picked Up: Step Two: The Bloodletter", -- [1]
+			"Picked Up: Hidden Treasures", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -27,7 +31,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1239, -- [11]
+			479, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -35,11 +39,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536162,
+			[51] = 1586017891,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [1]
 		{
-			"Completed: Step One: The Priestess", -- [1]
+			"Completed: The Battle of Darrowshire", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -49,7 +53,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1240, -- [11]
+			480, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -57,11 +61,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536163,
+			[51] = 1586017891,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [2]
 		{
-			"1/1 Gomora the Bloodletter slain", -- [1]
+			"Completed: Hidden Treasures", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -71,7 +75,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1243, -- [11]
+			485, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -79,11 +83,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536198,
+			[51] = 1586017914,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [3]
 		{
-			"Picked Up: Step Three: Prophet", -- [1]
+			"1/1 Ride in Fiona's Caravan", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -93,7 +97,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1250, -- [11]
+			521, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -101,11 +105,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536200,
+			[51] = 1586018150,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [4]
 		{
-			"Completed: Step Two: The Bloodletter", -- [1]
+			"Completed: The Trek Continues", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -115,7 +119,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1252, -- [11]
+			528, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -123,11 +127,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536200,
+			[51] = 1586018158,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [5]
 		{
-			"1/1 Jammal'an the Prophet defeated", -- [1]
+			"Picked Up: Boys Will Be Boys", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -137,7 +141,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1270, -- [11]
+			529, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -145,11 +149,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536337,
+			[51] = 1586018158,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [6]
 		{
-			"Completed: Step Three: Prophet", -- [1]
+			"Picked Up: To Kill With Purpose", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -159,7 +163,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1275, -- [11]
+			533, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -167,11 +171,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536339,
+			[51] = 1586018165,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [7]
 		{
-			"Picked Up: Blessing of the Green Dragonflight", -- [1]
+			"Picked Up: Dark Garb", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -181,7 +185,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1277, -- [11]
+			535, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -189,11 +193,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536341,
+			[51] = 1586018166,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [8]
 		{
-			"Completed: Blessing of the Green Dragonflight", -- [1]
+			"Picked Up: Frederick's Fish Fancy", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -203,7 +207,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1284, -- [11]
+			537, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -211,11 +215,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536347,
+			[51] = 1586018204,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [9]
 		{
-			"Picked Up: The Heart of the Temple", -- [1]
+			"Picked Up: Honor and Strength", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -225,7 +229,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1285, -- [11]
+			544, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -233,11 +237,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536347,
+			[51] = 1586018252,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [10]
 		{
-			"Picked Up: Prayerblossom", -- [1]
+			"1/3 Mossflayer Rogue slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -247,7 +251,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1300, -- [11]
+			545, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -255,11 +259,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536512,
+			[51] = 1586018256,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [11]
 		{
-			"Completed: The Harborage", -- [1]
+			"2/3 Mossflayer Rogue slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -269,7 +273,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1301, -- [11]
+			547, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -277,11 +281,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536512,
+			[51] = 1586018257,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [12]
 		{
-			"Picked Up: Secrets of the Mire", -- [1]
+			"3/3 Mossflayer Rogue slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -291,7 +295,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1303, -- [11]
+			548, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -299,11 +303,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536513,
+			[51] = 1586018257,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [13]
 		{
-			"Picked Up: Onward to the Blasted Lands", -- [1]
+			"Completed: Honor and Strength", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -313,7 +317,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1305, -- [11]
+			554, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -321,11 +325,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536513,
+			[51] = 1586018263,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [14]
 		{
-			"2/10 Invigorated Silt", -- [1]
+			"1/8 Infectis Scuttler", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -335,7 +339,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1312, -- [11]
+			557, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -343,11 +347,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536569,
+			[51] = 1586018302,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [15]
 		{
-			"1/10 Prayerblossom", -- [1]
+			"2/8 Infectis Scuttler", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -357,7 +361,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1317, -- [11]
+			559, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -365,11 +369,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536578,
+			[51] = 1586018304,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [16]
 		{
-			"3/10 Invigorated Silt", -- [1]
+			"1/8 Plague Puffer", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -379,7 +383,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1323, -- [11]
+			565, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -387,11 +391,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536584,
+			[51] = 1586018322,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [17]
 		{
-			"2/10 Prayerblossom", -- [1]
+			"1/8 Infectis Incher", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -401,7 +405,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1329, -- [11]
+			568, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -409,11 +413,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536598,
+			[51] = 1586018323,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [18]
 		{
-			"3/10 Prayerblossom", -- [1]
+			"2/8 Infectis Incher", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -423,7 +427,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1335, -- [11]
+			571, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -431,11 +435,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536608,
+			[51] = 1586018325,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [19]
 		{
-			"5/10 Invigorated Silt", -- [1]
+			"3/8 Infectis Scuttler", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -445,7 +449,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1345, -- [11]
+			573, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -453,11 +457,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536622,
+			[51] = 1586018327,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [20]
 		{
-			"6/10 Invigorated Silt", -- [1]
+			"3/8 Infectis Incher", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -467,7 +471,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1351, -- [11]
+			576, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -475,11 +479,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536630,
+			[51] = 1586018328,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [21]
 		{
-			"7/10 Invigorated Silt", -- [1]
+			"2/8 Plague Puffer", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -489,7 +493,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1357, -- [11]
+			578, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -497,11 +501,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536642,
+			[51] = 1586018329,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [22]
 		{
-			"9/10 Invigorated Silt", -- [1]
+			"4/8 Infectis Incher", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -511,7 +515,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1364, -- [11]
+			580, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -519,11 +523,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536652,
+			[51] = 1586018330,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [23]
 		{
-			"4/10 Prayerblossom", -- [1]
+			"4/8 Infectis Scuttler", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -533,7 +537,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1371, -- [11]
+			584, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -541,11 +545,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536664,
+			[51] = 1586018334,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [24]
 		{
-			"5/10 Prayerblossom", -- [1]
+			"3/8 Plague Puffer", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -555,7 +559,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1379, -- [11]
+			586, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -563,11 +567,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536688,
+			[51] = 1586018335,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [25]
 		{
-			"6/10 Prayerblossom", -- [1]
+			"4/8 Plague Puffer", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -577,7 +581,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1397, -- [11]
+			588, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -585,11 +589,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536746,
+			[51] = 1586018338,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [26]
 		{
-			"7/10 Prayerblossom", -- [1]
+			"5/8 Infectis Scuttler", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -599,7 +603,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1400, -- [11]
+			591, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -607,11 +611,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536754,
+			[51] = 1586018343,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [27]
 		{
-			"8/10 Prayerblossom", -- [1]
+			"5/8 Infectis Incher", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -621,7 +625,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1403, -- [11]
+			593, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -629,11 +633,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536762,
+			[51] = 1586018344,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [28]
 		{
-			"10/10 Invigorated Silt", -- [1]
+			"5/8 Plague Puffer", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -643,7 +647,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1407, -- [11]
+			596, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -651,11 +655,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536771,
+			[51] = 1586018346,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [29]
 		{
-			"9/10 Prayerblossom", -- [1]
+			"6/8 Infectis Scuttler", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -665,7 +669,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1418, -- [11]
+			605, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -673,11 +677,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536798,
+			[51] = 1586018361,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [30]
 		{
-			"10/10 Prayerblossom", -- [1]
+			"6/8 Infectis Incher", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -687,7 +691,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1421, -- [11]
+			608, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -695,11 +699,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536803,
+			[51] = 1586018365,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [31]
 		{
-			"Completed: Prayerblossom", -- [1]
+			"7/8 Infectis Scuttler", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -709,7 +713,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1445, -- [11]
+			611, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -717,11 +721,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536936,
+			[51] = 1586018369,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [32]
 		{
-			"Completed: Secrets of the Mire", -- [1]
+			"7/8 Infectis Incher", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -731,7 +735,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1451, -- [11]
+			614, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -739,11 +743,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536937,
+			[51] = 1586018371,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [33]
 		{
-			"Picked Up: The Purespring", -- [1]
+			"6/8 Plague Puffer", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -753,7 +757,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1453, -- [11]
+			616, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -761,11 +765,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536937,
+			[51] = 1586018373,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [34]
 		{
-			"Picked Up: Breath of Mist", -- [1]
+			"8/8 Infectis Incher", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -775,7 +779,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1455, -- [11]
+			618, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -783,11 +787,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585536938,
+			[51] = 1586018374,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [35]
 		{
-			"2/5 Smoky Crystal", -- [1]
+			"7/8 Plague Puffer", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -797,7 +801,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1465, -- [11]
+			623, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -805,11 +809,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537000,
+			[51] = 1586018380,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [36]
 		{
-			"5/5 Smoky Crystal", -- [1]
+			"8/8 Infectis Scuttler", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -819,7 +823,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1482, -- [11]
+			625, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -827,11 +831,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537029,
+			[51] = 1586018382,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [37]
 		{
-			"1/6 Purespring Mote", -- [1]
+			"8/8 Plague Puffer", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -841,7 +845,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1491, -- [11]
+			637, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -849,11 +853,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537066,
+			[51] = 1586018412,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [38]
 		{
-			"2/6 Purespring Mote", -- [1]
+			"1/1 Death Cultist Headwear", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -863,7 +867,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1500, -- [11]
+			688, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -871,11 +875,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537075,
+			[51] = 1586018538,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [39]
 		{
-			"4/6 Purespring Mote", -- [1]
+			"1/1 Death Cultist Robes", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -885,7 +889,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1510, -- [11]
+			689, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -893,11 +897,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537087,
+			[51] = 1586018538,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [40]
 		{
-			"6/6 Purespring Mote", -- [1]
+			"Completed: Dark Garb", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -907,7 +911,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1521, -- [11]
+			696, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -915,11 +919,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537111,
+			[51] = 1586018540,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [41]
 		{
-			"Completed: The Purespring", -- [1]
+			"1/1 Coagulated Rot", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -929,7 +933,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1537, -- [11]
+			746, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -937,11 +941,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537184,
+			[51] = 1586018662,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [42]
 		{
-			"Completed: Breath of Mist", -- [1]
+			"Picked Up: Catalysm", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -951,7 +955,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1541, -- [11]
+			753, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -959,11 +963,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537185,
+			[51] = 1586018663,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [43]
 		{
-			"Picked Up: Remember the Light", -- [1]
+			"Completed: To Kill With Purpose", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -973,7 +977,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1543, -- [11]
+			754, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -981,11 +985,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537186,
+			[51] = 1586018664,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [44]
 		{
-			"1/1 Magtoor passed on", -- [1]
+			"1/8 Active Liquid Plague Agent", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -995,7 +999,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1574, -- [11]
+			785, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1003,11 +1007,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537254,
+			[51] = 1586018780,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [45]
 		{
-			"Completed: Remember the Light", -- [1]
+			"2/8 Active Liquid Plague Agent", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1017,7 +1021,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1583, -- [11]
+			790, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1025,11 +1029,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585537259,
+			[51] = 1586018787,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [46]
 		{
-			"Picked Up: Tarenar Sunstrike", -- [1]
+			"3/8 Active Liquid Plague Agent", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1039,7 +1043,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1627, -- [11]
+			800, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1047,11 +1051,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538336,
+			[51] = 1586018828,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [47]
 		{
-			"Completed: Into the Woods", -- [1]
+			"4/8 Active Liquid Plague Agent", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1061,7 +1065,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1628, -- [11]
+			809, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1069,11 +1073,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538337,
+			[51] = 1586018858,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [48]
 		{
-			"Picked Up: Gidwin Goldbraids", -- [1]
+			"5/8 Active Liquid Plague Agent", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1083,7 +1087,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1630, -- [11]
+			811, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1091,11 +1095,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538337,
+			[51] = 1586018861,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [49]
 		{
-			"Picked Up: What I Do Best", -- [1]
+			"6/8 Active Liquid Plague Agent", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1105,7 +1109,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1637, -- [11]
+			828, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1113,11 +1117,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538401,
+			[51] = 1586018945,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [50]
 		{
-			"Completed: Tarenar Sunstrike", -- [1]
+			"7/8 Active Liquid Plague Agent", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1127,7 +1131,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1638, -- [11]
+			830, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1135,11 +1139,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538401,
+			[51] = 1586018955,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [51]
 		{
-			"1/5 Death's Step Miscreation slain", -- [1]
+			"8/8 Active Liquid Plague Agent", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1149,7 +1153,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1643, -- [11]
+			839, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1157,11 +1161,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538420,
+			[51] = 1586018992,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [52]
 		{
-			"2/5 Death's Step Miscreation slain", -- [1]
+			"Picked Up: Just a Drop in the Bucket", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1171,7 +1175,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1652, -- [11]
+			847, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1179,11 +1183,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538436,
+			[51] = 1586018993,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [53]
 		{
-			"3/5 Death's Step Miscreation slain", -- [1]
+			"Completed: Catalysm", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1193,7 +1197,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1659, -- [11]
+			848, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1201,11 +1205,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538454,
+			[51] = 1586018993,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [54]
 		{
-			"4/5 Death's Step Miscreation slain", -- [1]
+			"Completed: Just a Drop in the Bucket", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1215,7 +1219,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1664, -- [11]
+			888, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1223,11 +1227,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538465,
+			[51] = 1586019267,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [55]
 		{
-			"5/5 Death's Step Miscreation slain", -- [1]
+			"Completed: Frederick's Fish Fancy", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1237,7 +1241,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1667, -- [11]
+			896, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1245,11 +1249,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538468,
+			[51] = 1586019311,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [56]
 		{
-			"Picked Up: A Gift For Fiona", -- [1]
+			"Picked Up: A Boyhood Dream", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1259,7 +1263,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1674, -- [11]
+			907, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1267,11 +1271,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538469,
+			[51] = 1586019478,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [57]
 		{
-			"Completed: What I Do Best", -- [1]
+			"Completed: Boys Will Be Boys", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1281,7 +1285,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1675, -- [11]
+			908, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1289,11 +1293,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538470,
+			[51] = 1586019478,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [58]
 		{
-			"1/10 Plaguehound Blood", -- [1]
+			"Picked Up: Fuselight, Ho!", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1303,7 +1307,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1708, -- [11]
+			910, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1311,11 +1315,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538554,
+			[51] = 1586019483,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [59]
 		{
-			"2/10 Plaguehound Blood", -- [1]
+			"Picked Up: Gathering Some Grub(s)", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1325,7 +1329,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1716, -- [11]
+			913, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1333,11 +1337,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538564,
+			[51] = 1586019489,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [60]
 		{
-			"7/10 Plaguehound Blood", -- [1]
+			"Picked Up: Smokey and the Bandage", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1347,7 +1351,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1744, -- [11]
+			915, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1355,11 +1359,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538609,
+			[51] = 1586019497,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [61]
 		{
-			"9/10 Plaguehound Blood", -- [1]
+			"Completed: A Boyhood Dream", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1369,7 +1373,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1764, -- [11]
+			921, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1377,11 +1381,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538645,
+			[51] = 1586019511,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [62]
 		{
-			"10/10 Plaguehound Blood", -- [1]
+			"Picked Up: Argent Call: The Trial of the Crypt", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1391,7 +1395,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1776, -- [11]
+			924, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1399,11 +1403,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538687,
+			[51] = 1586019512,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [63]
 		{
-			"Picked Up: Just Encased", -- [1]
+			"Picked Up: The Brotherhood of Light", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1413,7 +1417,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1796, -- [11]
+			926, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1421,11 +1425,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538778,
+			[51] = 1586019513,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [64]
 		{
-			"Completed: Gidwin Goldbraids", -- [1]
+			"1/1 Trial of the Crypt completed", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1435,7 +1439,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1797, -- [11]
+			954, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1443,11 +1447,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538778,
+			[51] = 1586019783,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [65]
 		{
-			"1/8 Crypt Bile", -- [1]
+			"Picked Up: Argent Call: The Noxious Glade", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1457,7 +1461,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1802, -- [11]
+			962, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1465,11 +1469,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538799,
+			[51] = 1586019816,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [66]
 		{
-			"3/8 Crypt Bile", -- [1]
+			"Completed: Argent Call: The Trial of the Crypt", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1479,7 +1483,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1818, -- [11]
+			963, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1487,11 +1491,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538817,
+			[51] = 1586019816,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [67]
 		{
-			"4/8 Crypt Bile", -- [1]
+			"Picked Up: Buried Blades", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1501,7 +1505,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1835, -- [11]
+			966, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1509,11 +1513,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538840,
+			[51] = 1586019818,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [68]
 		{
-			"5/8 Crypt Bile", -- [1]
+			"1/15 Slab of Carrion Worm Meat", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1523,7 +1527,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1846, -- [11]
+			974, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1531,11 +1535,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538855,
+			[51] = 1586019889,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [69]
 		{
-			"6/8 Crypt Bile", -- [1]
+			"3/15 Slab of Carrion Worm Meat", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1545,7 +1549,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1862, -- [11]
+			988, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1553,11 +1557,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538882,
+			[51] = 1586019907,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [70]
 		{
-			"7/8 Crypt Bile", -- [1]
+			"6/15 Slab of Carrion Worm Meat", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1567,7 +1571,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1870, -- [11]
+			1003, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1575,11 +1579,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538895,
+			[51] = 1586019932,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [71]
 		{
-			"8/8 Crypt Bile", -- [1]
+			"10/15 Slab of Carrion Worm Meat", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1589,7 +1593,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1891, -- [11]
+			1017, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1597,11 +1601,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538974,
+			[51] = 1586019975,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [72]
 		{
-			"Completed: Just Encased", -- [1]
+			"15/15 Slab of Carrion Worm Meat", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1611,7 +1615,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1898, -- [11]
+			1029, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1619,11 +1623,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538986,
+			[51] = 1586020030,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [73]
 		{
-			"Picked Up: Greasing the Wheel", -- [1]
+			"Picked Up: Soft Landing", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1633,7 +1637,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1900, -- [11]
+			1048, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1641,11 +1645,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585538988,
+			[51] = 1586020074,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [74]
 		{
-			"1/10 Banshee's Bells", -- [1]
+			"Completed: The Brotherhood of Light", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1655,7 +1659,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1910, -- [11]
+			1049, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1663,11 +1667,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539068,
+			[51] = 1586020074,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [75]
 		{
-			"2/10 Banshee's Bells", -- [1]
+			"1/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1677,7 +1681,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1912, -- [11]
+			1051, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1685,11 +1689,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539098,
+			[51] = 1586020093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [76]
 		{
-			"3/10 Banshee's Bells", -- [1]
+			"2/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1699,7 +1703,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1914, -- [11]
+			1054, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1707,11 +1711,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539120,
+			[51] = 1586020097,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [77]
 		{
-			"4/10 Banshee's Bells", -- [1]
+			"3/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1721,7 +1725,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1916, -- [11]
+			1056, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1729,11 +1733,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539133,
+			[51] = 1586020103,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [78]
 		{
-			"5/10 Banshee's Bells", -- [1]
+			"4/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1743,7 +1747,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1918, -- [11]
+			1060, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1751,11 +1755,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539142,
+			[51] = 1586020106,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [79]
 		{
-			"6/10 Banshee's Bells", -- [1]
+			"5/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1765,7 +1769,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1920, -- [11]
+			1065, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1773,11 +1777,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539148,
+			[51] = 1586020130,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [80]
 		{
-			"7/10 Banshee's Bells", -- [1]
+			"6/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1787,7 +1791,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1924, -- [11]
+			1067, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1795,11 +1799,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539158,
+			[51] = 1586020131,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [81]
 		{
-			"8/10 Banshee's Bells", -- [1]
+			"7/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1809,7 +1813,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1926, -- [11]
+			1070, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1817,11 +1821,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539164,
+			[51] = 1586020141,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [82]
 		{
-			"9/10 Banshee's Bells", -- [1]
+			"8/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1831,7 +1835,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1928, -- [11]
+			1071, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1839,11 +1843,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539168,
+			[51] = 1586020141,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [83]
 		{
-			"10/10 Banshee's Bells", -- [1]
+			"9/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1853,7 +1857,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1932, -- [11]
+			1073, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1861,11 +1865,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539190,
+			[51] = 1586020142,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [84]
 		{
-			"Completed: A Gift For Fiona", -- [1]
+			"10/10 Tyr's Hand Scarlet Crusader slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1875,7 +1879,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1948, -- [11]
+			1078, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1883,11 +1887,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539273,
+			[51] = 1586020144,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [85]
 		{
-			"Completed: Greasing the Wheel", -- [1]
+			"Completed: Soft Landing", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1897,7 +1901,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1955, -- [11]
+			1092, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1905,11 +1909,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539275,
+			[51] = 1586020169,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [86]
 		{
-			"Picked Up: Onward, to Light's Hope Chapel", -- [1]
+			"Picked Up: To Take the Abbey", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1919,7 +1923,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1958, -- [11]
+			1094, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1927,11 +1931,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539276,
+			[51] = 1586020170,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [87]
 		{
-			"1/1 Ride Fiona's Caravan", -- [1]
+			"Picked Up: To Take the Barracks", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1941,7 +1945,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1998, -- [11]
+			1096, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1949,11 +1953,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539479,
+			[51] = 1586020171,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [88]
 		{
-			"Picked Up: Zaeldarr the Outcast", -- [1]
+			"Completed: To Take the Barracks", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1963,7 +1967,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2000, -- [11]
+			1108, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1971,11 +1975,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539491,
+			[51] = 1586020192,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [89]
 		{
-			"Picked Up: Little Pamela", -- [1]
+			"Picked Up: Scarlet Salvage", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1985,7 +1989,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2003, -- [11]
+			1110, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1993,11 +1997,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539498,
+			[51] = 1586020193,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [90]
 		{
-			"Completed: Onward, to Light's Hope Chapel", -- [1]
+			"Picked Up: The Wrathcaster", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2007,7 +2011,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2011, -- [11]
+			1112, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2015,11 +2019,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539512,
+			[51] = 1586020194,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [91]
 		{
-			"Picked Up: Traveling Companions", -- [1]
+			"Picked Up: The Huntsman", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2029,7 +2033,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2013, -- [11]
+			1114, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2037,11 +2041,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539515,
+			[51] = 1586020195,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [92]
 		{
-			"Picked Up: Rough Roads", -- [1]
+			"Picked Up: The Commander", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2051,7 +2055,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2015, -- [11]
+			1116, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2059,11 +2063,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539535,
+			[51] = 1586020195,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [93]
 		{
-			"1/1 Find a traveling companion", -- [1]
+			"1/1 Crimson Boar", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2073,7 +2077,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2016, -- [11]
+			1125, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2081,11 +2085,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539537,
+			[51] = 1586020228,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [94]
 		{
-			"Completed: Traveling Companions", -- [1]
+			"1/1 Lihanna's Strand", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2095,7 +2099,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2021, -- [11]
+			1133, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2103,11 +2107,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539574,
+			[51] = 1586020248,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [95]
 		{
-			"1/13 Plaguebat slain", -- [1]
+			"1/1 Mataus the Wrathcaster slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2117,7 +2121,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2024, -- [11]
+			1139, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2125,11 +2129,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539597,
+			[51] = 1586020275,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [96]
 		{
-			"2/13 Plaguebat slain", -- [1]
+			"1/1 Scarlet Commander Marjhan slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2139,7 +2143,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2031, -- [11]
+			1151, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2147,11 +2151,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539611,
+			[51] = 1586020325,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [97]
 		{
-			"3/13 Plaguebat slain", -- [1]
+			"1/1 Huntsman Leopold slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2161,7 +2165,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2035, -- [11]
+			1161, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2169,11 +2173,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539623,
+			[51] = 1586020376,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [98]
 		{
-			"4/13 Plaguebat slain", -- [1]
+			"1/1 Shroud of Uther", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2183,7 +2187,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2043, -- [11]
+			1173, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2191,11 +2195,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539644,
+			[51] = 1586020422,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [99]
 		{
-			"5/13 Plaguebat slain", -- [1]
+			"1/1 Gavinrad's Sigil", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2205,7 +2209,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2047, -- [11]
+			1175, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2213,11 +2217,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539657,
+			[51] = 1586020430,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [100]
 		{
-			"6/13 Plaguebat slain", -- [1]
+			"Completed: Scarlet Salvage", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2227,7 +2231,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2049, -- [11]
+			1190, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2235,11 +2239,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539659,
+			[51] = 1586020448,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [101]
 		{
-			"7/13 Plaguebat slain", -- [1]
+			"Picked Up: I Believe You Can Fly", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2249,7 +2253,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2051, -- [11]
+			1191, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2257,11 +2261,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539659,
+			[51] = 1586020448,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [102]
 		{
-			"8/13 Plaguebat slain", -- [1]
+			"Picked Up: Adventure Calls", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2271,7 +2275,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2053, -- [11]
+			1192, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2279,11 +2283,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539662,
+			[51] = 1586020448,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [103]
 		{
-			"9/13 Plaguebat slain", -- [1]
+			"Completed: The Wrathcaster", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2293,7 +2297,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2067, -- [11]
+			1198, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2301,11 +2305,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539693,
+			[51] = 1586020449,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [104]
 		{
-			"10/13 Plaguebat slain", -- [1]
+			"Completed: The Huntsman", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2315,7 +2319,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2069, -- [11]
+			1210, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2323,11 +2327,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539696,
+			[51] = 1586020450,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [105]
 		{
-			"11/13 Plaguebat slain", -- [1]
+			"Picked Up: Argent Upheaval", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2337,7 +2341,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2077, -- [11]
+			1212, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2345,11 +2349,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539714,
+			[51] = 1586020451,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [106]
 		{
-			"12/13 Plaguebat slain", -- [1]
+			"Completed: The Commander", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2359,7 +2363,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2079, -- [11]
+			1213, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2367,11 +2371,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539719,
+			[51] = 1586020451,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [107]
 		{
-			"13/13 Plaguebat slain", -- [1]
+			"Completed: Argent Upheaval", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2381,7 +2385,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2100, -- [11]
+			1219, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2389,11 +2393,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539749,
+			[51] = 1586020460,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [108]
 		{
-			"Completed: Little Pamela", -- [1]
+			"Completed: To Take the Abbey", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2403,7 +2407,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2110, -- [11]
+			1225, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2411,11 +2415,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539803,
+			[51] = 1586020466,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [109]
 		{
-			"Picked Up: Pamela's Doll", -- [1]
+			"Picked Up: Victory From Within", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2425,7 +2429,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2112, -- [11]
+			1227, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2433,11 +2437,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539814,
+			[51] = 1586020467,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [110]
 		{
-			"Picked Up: I'm Not Supposed to Tell You This", -- [1]
+			"Picked Up: The Assassin", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2447,7 +2451,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2114, -- [11]
+			1229, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2455,11 +2459,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585539815,
+			[51] = 1586020467,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [111]
 		{
-			"1/1 Joseph's Hunting Blade", -- [1]
+			"1/1 Open portal within Hall of Arms", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2469,7 +2473,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2138, -- [11]
+			1231, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2477,11 +2481,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540022,
+			[51] = 1586020503,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [112]
 		{
-			"1/1 Pamela's Doll", -- [1]
+			"1/1 Open portal within Library Wing", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2491,7 +2495,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2142, -- [11]
+			1232, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2499,11 +2503,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540057,
+			[51] = 1586020520,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [113]
 		{
-			"Completed: Pamela's Doll", -- [1]
+			"1/1 Rohan the Assassin slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2513,7 +2517,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2148, -- [11]
+			1242, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2521,11 +2525,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540077,
+			[51] = 1586020584,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [114]
 		{
-			"Picked Up: Uncle Carlin", -- [1]
+			"Completed: Victory From Within", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2535,7 +2539,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2155, -- [11]
+			1249, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2543,11 +2547,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540078,
+			[51] = 1586020607,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [115]
 		{
-			"Completed: I'm Not Supposed to Tell You This", -- [1]
+			"Picked Up: Befouled No More", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2557,7 +2561,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2156, -- [11]
+			1257, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2565,11 +2569,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540078,
+			[51] = 1586020614,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [116]
 		{
-			"1/1 Zaeldarr's Head", -- [1]
+			"Completed: The Assassin", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2579,7 +2583,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2208, -- [11]
+			1258, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2587,11 +2591,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540266,
+			[51] = 1586020614,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [117]
 		{
-			"Completed: Zaeldarr the Outcast", -- [1]
+			"Picked Up: Like Rats", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2601,7 +2605,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2216, -- [11]
+			1265, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2609,11 +2613,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540328,
+			[51] = 1586020627,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [118]
 		{
-			"Picked Up: A Strange Historian", -- [1]
+			"Completed: Befouled No More", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2623,7 +2627,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2222, -- [11]
+			1266, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2631,11 +2635,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540339,
+			[51] = 1586020627,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [119]
 		{
-			"Completed: Uncle Carlin", -- [1]
+			"1/1 Crusader Lord Valdelmar slain", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2645,7 +2649,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2223, -- [11]
+			1289, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2653,11 +2657,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540339,
+			[51] = 1586020776,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [120]
 		{
-			"Completed: Rough Roads", -- [1]
+			"Completed: Gathering Some Grub(s)", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2667,7 +2671,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2229, -- [11]
+			1315, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2675,11 +2679,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540363,
+			[51] = 1586020913,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [121]
 		{
-			"Picked Up: The Trek Continues", -- [1]
+			"Completed: Like Rats", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2689,7 +2693,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2232, -- [11]
+			1322, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2697,11 +2701,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540380,
+			[51] = 1586020936,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [122]
 		{
-			"Completed: A Strange Historian", -- [1]
+			"Picked Up: Aberrations of Bone", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2711,7 +2715,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2236, -- [11]
+			1325, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2719,11 +2723,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540405,
+			[51] = 1586020959,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [123]
 		{
-			"Picked Up: Villains of Darrowshire", -- [1]
+			"Picked Up: Annals of the Silver Hand", -- [1]
 			"Thorinbane-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2733,7 +2737,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2238, -- [11]
+			1327, -- [11]
 			"Player-3683-0B9BAB24", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2741,74 +2745,74 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540405,
+			[51] = 1586020960,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [124]
 		{
-			"Picked Up: Heroes of Darrowshire", -- [1]
-			"Thorinbane-Dalaran", -- [2]
+			"|cffffff00Trade District is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Thorinbane-Dalaran", -- [5]
+			"3. LocalDefense - Stormwind City", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Stormwind City", -- [9]
 			0, -- [10]
-			2240, -- [11]
-			"Player-3683-0B9BAB24", -- [12]
+			106, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540406,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "",
+			[51] = 1586043045,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [125]
 		{
-			"Picked Up: Marauders of Darrowshire", -- [1]
-			"Thorinbane-Dalaran", -- [2]
+			"|cffffff00Stormwind City is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Thorinbane-Dalaran", -- [5]
+			"3. LocalDefense - Stormwind City", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Stormwind City", -- [9]
 			0, -- [10]
-			2244, -- [11]
-			"Player-3683-0B9BAB24", -- [12]
+			111, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540407,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "",
+			[51] = 1586043057,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [126]
 		{
-			"Picked Up: Cenarion Tenacity", -- [1]
-			"Thorinbane-Dalaran", -- [2]
+			"|cffffff00The Canals is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Thorinbane-Dalaran", -- [5]
+			"3. LocalDefense - Stormwind City", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Stormwind City", -- [9]
 			0, -- [10]
-			2246, -- [11]
-			"Player-3683-0B9BAB24", -- [12]
+			117, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cThorinbane|r",
-			[51] = 1585540410,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "",
+			[51] = 1586043075,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [127]
 	},
 }

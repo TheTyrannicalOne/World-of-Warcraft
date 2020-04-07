@@ -1,36 +1,6 @@
 
 DeathNoteData = {
 	["log"] = {
-		[1585786005] = {
-			{
-				6578, -- [1]
-				6578, -- [2]
-				1585786005.6, -- [3]
-				"SPELL_AURA_APPLIED", -- [4]
-				false, -- [5]
-				"Player-3683-0B9BAB24", -- [6]
-				"Thorinbane", -- [7]
-				1297, -- [8]
-				0, -- [9]
-				"Player-3683-0B9BAB24", -- [10]
-				"Thorinbane", -- [11]
-				1297, -- [12]
-				0, -- [13]
-				202602, -- [14]
-				"Into the Fray", -- [15]
-				1, -- [16]
-				"BUFF", -- [17]
-				false, -- [18]
-				false, -- [19]
-				false, -- [20]
-				false, -- [21]
-				false, -- [22]
-				false, -- [23]
-				false, -- [24]
-				false, -- [25]
-				false, -- [26]
-			}, -- [1]
-		},
 	},
 	["deaths"] = {
 	},
