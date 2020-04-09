@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.12 (1st April 2020)
+-- 	Leatrix Plus 8.3.13 (8th April 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.3.12"
+	LeaPlusLC["AddonVer"] = "8.3.13"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -1846,6 +1846,7 @@
 							or npcID == "70022" 	-- Ku'ma (Isle of Giants, Pandaria)
 							or npcID == "12944" 	-- Lokhtos Darkbargainer (Thorium Brotherhood, Blackrock Depths)
 							or npcID == "87393" 	-- Sallee Silverclamp (Reputation quests, Nagrand, Draenor)
+							or npcID == "10307" 	-- Witch Doctor Mau'ari (E'Ko quests, Winterspring)
 							then
 								return true
 							end

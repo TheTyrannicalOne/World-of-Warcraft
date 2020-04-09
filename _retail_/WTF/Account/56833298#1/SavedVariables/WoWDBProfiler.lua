@@ -3,8 +3,8 @@ WoWDBProfilerData = {
 	["profileKeys"] = {
 		["Panboozled - Runetotem"] = "Default",
 		["Tynster - Dalaran"] = "Default",
-		["Brewnheimer - Darkspear"] = "Default",
 		["Shaewong - Dalaran"] = "Default",
+		["Brewnheimer - Darkspear"] = "Default",
 		["Goramor - Runetotem"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
@@ -12,23 +12,1262 @@ WoWDBProfilerData = {
 		["Gangus - Runetotem"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
-		["Dialdaas - Darkspear"] = "Default",
+		["Migimong - Runetotem"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Beeronimo - Dalaran"] = "Default",
+		["Tyriinid - Dalaran"] = "Default",
 		["Malivant - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
 		["Claugh - Runetotem"] = "Default",
-		["Tyriinid - Dalaran"] = "Default",
-		["Migimong - Runetotem"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
+		["Beeronimo - Dalaran"] = "Default",
+		["Dialdaas - Darkspear"] = "Default",
 		["Sinh - Dalaran"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 	},
 	["region"] = "US",
-	["version"] = 19,
-	["build_num"] = 33941,
 	["global"] = {
+		["items"] = {
+			[64897] = {
+				["req_reputation"] = "Gnomeregan:EXALTED",
+			},
+			[35] = {
+				["durability"] = 25,
+			},
+			[12023] = {
+				["instance_difficulty_id"] = 54,
+				["upgrade_value"] = 59,
+				["seen_bonuses"] = {
+					["1709:4277"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[13810] = {
+				["req_reputation"] = "Argent Dawn:REVERED",
+			},
+			[57550] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 13,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3797"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[57558] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 16,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3797"] = true,
+				},
+				["durability"] = 70,
+				["unique_id"] = 0,
+			},
+			[17117] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[56809] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[57] = {
+				["durability"] = 55,
+			},
+			[59] = {
+				["durability"] = 25,
+			},
+			[2326] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 11,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3797"] = true,
+				},
+				["durability"] = 20,
+				["unique_id"] = 0,
+			},
+			[122383] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[1423] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 8,
+				["suffix_id"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[19205] = {
+				["req_reputation"] = "Argent Dawn:REVERED",
+			},
+			[57415] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 56,
+				["suffix_id"] = 0,
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[15121] = {
+				["instance_difficulty_id"] = 54,
+				["upgrade_value"] = 60,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:4279"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[122256] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[128169] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[49574] = {
+				["durability"] = 55,
+			},
+			[64882] = {
+				["instance_difficulty_id"] = 14,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[122384] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[64898] = {
+				["req_reputation"] = "Ironforge:EXALTED",
+			},
+			[59041] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 3,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3672"] = true,
+				},
+				["durability"] = 18,
+				["unique_id"] = 0,
+			},
+			[7462] = {
+				["instance_difficulty_id"] = 53,
+				["upgrade_value"] = 58,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:4277"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[45574] = {
+				["instance_difficulty_id"] = 14,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[57575] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 18,
+				["seen_bonuses"] = {
+					["3672"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[122353] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[19329] = {
+				["req_reputation"] = "Argent Dawn:REVERED",
+			},
+			[14161] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 25,
+				["seen_bonuses"] = {
+					["1709:3831"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[122529] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[5956] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 16,
+				["suffix_id"] = 0,
+			},
+			[15454] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[58253] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[64899] = {
+				["req_reputation"] = "Ironforge:EXALTED",
+			},
+			[15209] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[153130] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[10119] = {
+				["instance_difficulty_id"] = 54,
+				["upgrade_value"] = 58,
+				["unique_id"] = 0,
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[56803] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[128172] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[67530] = {
+				["req_reputation"] = "Gnomeregan:REVERED\"",
+			},
+			[62971] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 60,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3666"] = true,
+				},
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[122387] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[56676] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 50,
+				["suffix_id"] = 0,
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[128173] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[20768] = {
+				["contains"] = {
+					"money:1547", -- [1]
+				},
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Eastern Plaguelands:23"] = {
+							["3:760:760"] = true,
+						},
+					},
+				},
+				["contains_count"] = 1,
+			},
+			[67531] = {
+				["req_reputation"] = "Stormwind:REVERED\"",
+			},
+			[1010] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 14,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3797"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[64900] = {
+				["req_reputation"] = "Ironforge:EXALTED",
+			},
+			[4025] = {
+				["instance_difficulty_id"] = 53,
+				["upgrade_value"] = 58,
+				["unique_id"] = 0,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[3643] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 24,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3831"] = true,
+				},
+				["durability"] = 30,
+				["suffix_id"] = 0,
+			},
+			[6506] = {
+				["instance_difficulty_id"] = 27,
+				["upgrade_value"] = 18,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["4770"] = true,
+				},
+				["durability"] = 35,
+				["suffix_id"] = 0,
+			},
+			[122261] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[6256] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 16,
+				["suffix_id"] = 0,
+			},
+			[57585] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 20,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3672"] = true,
+				},
+				["durability"] = 25,
+				["unique_id"] = 0,
+			},
+			[16060] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[62980] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 60,
+				["seen_bonuses"] = {
+					["3666"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[789] = {
+				["instance_difficulty_id"] = 43,
+				["upgrade_value"] = 53,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:4280"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[6267] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 22,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1692:3831"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[6269] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 11,
+				["suffix_id"] = 0,
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[122262] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[2889] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[50055] = {
+				["durability"] = 16,
+			},
+			[61283] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[61036] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122358] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[64901] = {
+				["req_reputation"] = "Stormwind:EXALTED",
+			},
+			[59044] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 20,
+				["unique_id"] = 0,
+			},
+			[13813] = {
+				["req_reputation"] = "Argent Dawn:REVERED",
+			},
+			[45577] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[56048] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[62957] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 57,
+				["seen_bonuses"] = {
+					["3666"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[62965] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 56,
+				["seen_bonuses"] = {
+					["3666"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[2900] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 11,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3797"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[19442] = {
+				["req_reputation"] = "Argent Dawn:HONORED",
+			},
+			[2901] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 20,
+				["suffix_id"] = 0,
+			},
+			[19203] = {
+				["req_reputation"] = "Argent Dawn:HONORED",
+			},
+			[122248] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[58200] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[68746] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 13,
+				["seen_bonuses"] = {
+					["3829"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[61284] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[62057] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[122360] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[4781] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 95,
+				["unique_id"] = 0,
+			},
+			[64902] = {
+				["req_reputation"] = "Stormwind:EXALTED",
+			},
+			[56009] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[1396] = {
+				["durability"] = 40,
+			},
+			[45578] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[57571] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 17,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3672"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[56814] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9807] = {
+				["instance_difficulty_id"] = 53,
+				["upgrade_value"] = 55,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1695:4277"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[62950] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 55,
+				["unique_id"] = 0,
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[6325] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[62974] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 59,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3666:5651"] = true,
+				},
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[122664] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[62998] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 60,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3745"] = true,
+				},
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[3428] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6586] = {
+				["instance_difficulty_id"] = 29,
+				["upgrade_value"] = 25,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1691:3832"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[23472] = {
+				["durability"] = 25,
+			},
+			[122250] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[122266] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9746] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 22,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3831"] = true,
+				},
+				["durability"] = 30,
+				["suffix_id"] = 0,
+			},
+			[156978] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 58,
+				["seen_bonuses"] = {
+					["3666"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122361] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[64608] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 49,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[122264] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122362] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[9908] = {
+				["instance_difficulty_id"] = 43,
+				["upgrade_value"] = 56,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[767] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 13,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["4772"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[64903] = {
+				["req_reputation"] = "Stormwind:EXALTED",
+			},
+			[8119] = {
+				["instance_difficulty_id"] = 42,
+				["upgrade_value"] = 50,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3836"] = true,
+				},
+				["durability"] = 115,
+				["suffix_id"] = 0,
+			},
+			[9747] = {
+				["instance_difficulty_id"] = 29,
+				["upgrade_value"] = 24,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1693:3832"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[57579] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 20,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3672"] = true,
+				},
+				["durability"] = 75,
+				["unique_id"] = 0,
+			},
+			[8182] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 7,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["4772"] = true,
+					["4771"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[49575] = {
+				["durability"] = 25,
+			},
+			[62961] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 57,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3745"] = true,
+				},
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[122350] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[122662] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[61309] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[64895] = {
+				["req_reputation"] = "Gnomeregan:EXALTED",
+			},
+			[8140] = {
+				["instance_difficulty_id"] = 43,
+				["upgrade_value"] = 54,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["4276"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[62174] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 39,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[122388] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[15489] = {
+				["instance_difficulty_id"] = 29,
+				["upgrade_value"] = 28,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1691:3832"] = true,
+				},
+				["durability"] = 45,
+				["unique_id"] = 0,
+			},
+			[9786] = {
+				["instance_difficulty_id"] = 29,
+				["upgrade_value"] = 29,
+				["seen_bonuses"] = {
+					["1678:3832"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[19447] = {
+				["req_reputation"] = "Argent Dawn:REVERED",
+			},
+			[3642] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 13,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["4769"] = true,
+				},
+				["durability"] = 25,
+				["unique_id"] = 0,
+			},
+			[156474] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[62177] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 41,
+				["unique_id"] = 0,
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[3190] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 12,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["4772"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[57466] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 60,
+				["suffix_id"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[19216] = {
+				["req_reputation"] = "Argent Dawn:HONORED",
+			},
+			[59050] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 20,
+				["unique_id"] = 0,
+			},
+			[13724] = {
+				["req_reputation"] = "Argent Dawn:FRIENDLY",
+			},
+			[59038] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[122263] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122389] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[61302] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122364] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[9913] = {
+				["instance_difficulty_id"] = 43,
+				["upgrade_value"] = 52,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:4276"] = true,
+				},
+				["durability"] = 115,
+				["suffix_id"] = 0,
+			},
+			[64896] = {
+				["req_reputation"] = "Gnomeregan:EXALTED",
+			},
+			[6378] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 24,
+				["seen_bonuses"] = {
+					["3831"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[59047] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 20,
+				["unique_id"] = 0,
+			},
+			[9919] = {
+				["instance_difficulty_id"] = 43,
+				["upgrade_value"] = 55,
+				["seen_bonuses"] = {
+					["1692:4276"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[56226] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[49572] = {
+				["durability"] = 40,
+			},
+			[19217] = {
+				["req_reputation"] = "Argent Dawn:REVERED",
+			},
+			[46337] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["durability"] = 25,
+				["unique_id"] = 0,
+			},
+			[67528] = {
+				["req_reputation"] = "Ironforge:REVERED\"",
+			},
+			[122391] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9782] = {
+				["instance_difficulty_id"] = 43,
+				["upgrade_value"] = 50,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:4276"] = true,
+				},
+				["durability"] = 100,
+				["unique_id"] = 0,
+			},
+			[13156] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[62952] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 56,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3666:5652"] = true,
+				},
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[15294] = {
+				["instance_difficulty_id"] = 43,
+				["upgrade_value"] = 52,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:4280"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[62968] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 60,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3666"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[61038] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[2092] = {
+				["durability"] = 16,
+			},
+			[19446] = {
+				["req_reputation"] = "Argent Dawn:HONORED",
+			},
+			[13482] = {
+				["req_reputation"] = "Argent Dawn:HONORED",
+			},
+			[19328] = {
+				["req_reputation"] = "Argent Dawn:HONORED",
+			},
+			[61387] = {
+				["contains"] = {
+					"money:357", -- [1]
+				},
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Eastern Plaguelands:23"] = {
+							["3:744:774"] = true,
+						},
+					},
+				},
+				["contains_count"] = 1,
+			},
+			[14568] = {
+				["instance_difficulty_id"] = 53,
+				["upgrade_value"] = 57,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["4277"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[57422] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 57,
+				["suffix_id"] = 0,
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[122254] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[58203] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9755] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 22,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["3831"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[67249] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10549] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 16,
+				["seen_bonuses"] = {
+					["3797"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[56222] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[49573] = {
+				["durability"] = 18,
+			},
+			[56837] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7026] = {
+				["durability"] = 25,
+			},
+		},
 		["objects"] = {
 			["142110"] = {
 				["NONE:0:false"] = {
@@ -57,8 +1296,9 @@ WoWDBProfilerData = {
 					["locations"] = {
 						["Darnassus:89"] = {
 							["3:570:598"] = true,
-							["3:572:600"] = true,
 							["3:570:600"] = true,
+							["3:572:600"] = true,
+							["3:572:598"] = true,
 						},
 					},
 				},
@@ -108,23 +1348,24 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["City of Ironforge:87"] = {
-							["3:330:650"] = true,
-							["3:328:650"] = true,
 							["3:334:656"] = true,
+							["3:330:648"] = true,
+							["3:330:650"] = true,
+							["3:328:648"] = true,
 							["3:332:654"] = true,
 							["3:332:648"] = true,
 							["3:330:652"] = true,
 							["3:330:654"] = true,
-							["3:328:648"] = true,
+							["3:328:650"] = true,
 						},
 					},
 				},
 			},
-			["197135"] = {
+			["212212"] = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["Stormwind City:84"] = {
-							["3:624:744"] = true,
+							["3:362:900"] = true,
 						},
 					},
 				},
@@ -142,6 +1383,10 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["City of Ironforge:87"] = {
+							["3:208:530"] = true,
+							["3:208:528"] = true,
+							["3:210:526"] = true,
+							["3:212:532"] = true,
 							["3:210:528"] = true,
 							["3:210:530"] = true,
 						},
@@ -157,11 +1402,11 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["212212"] = {
+			["197135"] = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["Stormwind City:84"] = {
-							["3:362:900"] = true,
+							["3:624:744"] = true,
 						},
 					},
 				},
@@ -177,1254 +1422,13 @@ WoWDBProfilerData = {
 				},
 			},
 		},
-		["items"] = {
-			[64897] = {
-				["req_reputation"] = "Gnomeregan:EXALTED",
-			},
-			[35] = {
-				["durability"] = 25,
-			},
-			[12023] = {
-				["instance_difficulty_id"] = 54,
-				["upgrade_value"] = 59,
-				["seen_bonuses"] = {
-					["1709:4277"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[13810] = {
-				["req_reputation"] = "Argent Dawn:REVERED",
-			},
-			[57550] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 13,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3797"] = true,
-				},
-				["durability"] = 30,
-				["suffix_id"] = 0,
-			},
-			[57558] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 16,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3797"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[17117] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[56809] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[57] = {
-				["durability"] = 55,
-			},
-			[59] = {
-				["durability"] = 25,
-			},
-			[2326] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 11,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3797"] = true,
-				},
-				["durability"] = 20,
-				["suffix_id"] = 0,
-			},
-			[122383] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[1423] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 8,
-				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[19205] = {
-				["req_reputation"] = "Argent Dawn:REVERED",
-			},
-			[57415] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 56,
-				["unique_id"] = 0,
-				["durability"] = 35,
-				["suffix_id"] = 0,
-			},
-			[15121] = {
-				["instance_difficulty_id"] = 54,
-				["upgrade_value"] = 60,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:4279"] = true,
-				},
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[122256] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[128169] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[49574] = {
-				["durability"] = 55,
-			},
-			[64882] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122384] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[64898] = {
-				["req_reputation"] = "Ironforge:EXALTED",
-			},
-			[59041] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 3,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3672"] = true,
-				},
-				["durability"] = 18,
-				["suffix_id"] = 0,
-			},
-			[7462] = {
-				["instance_difficulty_id"] = 53,
-				["upgrade_value"] = 58,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:4277"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[45574] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[57575] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 18,
-				["seen_bonuses"] = {
-					["3672"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122353] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[19329] = {
-				["req_reputation"] = "Argent Dawn:REVERED",
-			},
-			[14161] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 25,
-				["seen_bonuses"] = {
-					["1709:3831"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122529] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[5956] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["suffix_id"] = 0,
-				["durability"] = 16,
-				["unique_id"] = 0,
-			},
-			[15454] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[58253] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[64899] = {
-				["req_reputation"] = "Ironforge:EXALTED",
-			},
-			[15209] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[153130] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10119] = {
-				["instance_difficulty_id"] = 54,
-				["upgrade_value"] = 58,
-				["suffix_id"] = 0,
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[56803] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[128172] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[67530] = {
-				["req_reputation"] = "Gnomeregan:REVERED\"",
-			},
-			[62971] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 60,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3666"] = true,
-				},
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[122387] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[56676] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 50,
-				["unique_id"] = 0,
-				["durability"] = 35,
-				["suffix_id"] = 0,
-			},
-			[128173] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[20768] = {
-				["contains"] = {
-					"money:1547", -- [1]
-				},
-				["contains_count"] = 1,
-				["NONE:0:false"] = {
-					["locations"] = {
-						["Eastern Plaguelands:23"] = {
-							["3:760:760"] = true,
-						},
-					},
-				},
-			},
-			[67531] = {
-				["req_reputation"] = "Stormwind:REVERED\"",
-			},
-			[1010] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 14,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3797"] = true,
-				},
-				["durability"] = 35,
-				["suffix_id"] = 0,
-			},
-			[64900] = {
-				["req_reputation"] = "Ironforge:EXALTED",
-			},
-			[4025] = {
-				["instance_difficulty_id"] = 53,
-				["upgrade_value"] = 58,
-				["suffix_id"] = 0,
-				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[3643] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 24,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3831"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[6506] = {
-				["instance_difficulty_id"] = 27,
-				["upgrade_value"] = 18,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["4770"] = true,
-				},
-				["durability"] = 35,
-				["unique_id"] = 0,
-			},
-			[122261] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6256] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 16,
-				["unique_id"] = 0,
-			},
-			[57585] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 20,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3672"] = true,
-				},
-				["durability"] = 25,
-				["suffix_id"] = 0,
-			},
-			[16060] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[62980] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 60,
-				["seen_bonuses"] = {
-					["3666"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[789] = {
-				["instance_difficulty_id"] = 43,
-				["upgrade_value"] = 53,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1705:4280"] = true,
-				},
-				["durability"] = 60,
-				["suffix_id"] = 0,
-			},
-			[6267] = {
-				["instance_difficulty_id"] = 27,
-				["upgrade_value"] = 16,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1692:3831"] = true,
-				},
-				["durability"] = 60,
-				["suffix_id"] = 0,
-			},
-			[6269] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 11,
-				["unique_id"] = 0,
-				["durability"] = 60,
-				["suffix_id"] = 0,
-			},
-			[122262] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[2889] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[50055] = {
-				["durability"] = 16,
-			},
-			[61283] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[61036] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[122358] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[64901] = {
-				["req_reputation"] = "Stormwind:EXALTED",
-			},
-			[59044] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 20,
-				["suffix_id"] = 0,
-			},
-			[13813] = {
-				["req_reputation"] = "Argent Dawn:REVERED",
-			},
-			[45577] = {
-				["instance_difficulty_id"] = 14,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[56048] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[62957] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 57,
-				["seen_bonuses"] = {
-					["3666"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[62965] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 56,
-				["seen_bonuses"] = {
-					["3666"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[2900] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 11,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3797"] = true,
-				},
-				["durability"] = 35,
-				["suffix_id"] = 0,
-			},
-			[19442] = {
-				["req_reputation"] = "Argent Dawn:HONORED",
-			},
-			[2901] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["suffix_id"] = 0,
-				["durability"] = 20,
-				["unique_id"] = 0,
-			},
-			[19203] = {
-				["req_reputation"] = "Argent Dawn:HONORED",
-			},
-			[122248] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[58200] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[68746] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 13,
-				["seen_bonuses"] = {
-					["3829"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[61284] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[62057] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122360] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4781] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 95,
-				["suffix_id"] = 0,
-			},
-			[64902] = {
-				["req_reputation"] = "Stormwind:EXALTED",
-			},
-			[56009] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[1396] = {
-				["durability"] = 40,
-			},
-			[45578] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[57571] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 17,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3672"] = true,
-				},
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[56814] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9807] = {
-				["instance_difficulty_id"] = 53,
-				["upgrade_value"] = 55,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1695:4277"] = true,
-				},
-				["durability"] = 65,
-				["suffix_id"] = 0,
-			},
-			[62950] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 55,
-				["suffix_id"] = 0,
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[6325] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[62974] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 59,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3666:5651"] = true,
-				},
-				["durability"] = 100,
-				["unique_id"] = 0,
-			},
-			[122664] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[62998] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 60,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3745"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[3428] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6586] = {
-				["instance_difficulty_id"] = 29,
-				["upgrade_value"] = 25,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:3832"] = true,
-				},
-				["durability"] = 35,
-				["suffix_id"] = 0,
-			},
-			[7026] = {
-				["durability"] = 25,
-			},
-			[122250] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122266] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[56837] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[49573] = {
-				["durability"] = 18,
-			},
-			[56222] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[64608] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 49,
-				["suffix_id"] = 0,
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[10549] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 16,
-				["seen_bonuses"] = {
-					["3797"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122362] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[67249] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[767] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 13,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["4772"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[64903] = {
-				["req_reputation"] = "Stormwind:EXALTED",
-			},
-			[9755] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 22,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3831"] = true,
-				},
-				["durability"] = 30,
-				["suffix_id"] = 0,
-			},
-			[9747] = {
-				["instance_difficulty_id"] = 29,
-				["upgrade_value"] = 24,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1693:3832"] = true,
-				},
-				["durability"] = 60,
-				["suffix_id"] = 0,
-			},
-			[57579] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 20,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3672"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[57422] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 57,
-				["unique_id"] = 0,
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[14568] = {
-				["instance_difficulty_id"] = 53,
-				["upgrade_value"] = 57,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["4277"] = true,
-				},
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[61387] = {
-				["contains"] = {
-					"money:357", -- [1]
-				},
-				["contains_count"] = 1,
-				["NONE:0:false"] = {
-					["locations"] = {
-						["Eastern Plaguelands:23"] = {
-							["3:744:774"] = true,
-						},
-					},
-				},
-			},
-			[122350] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[13482] = {
-				["req_reputation"] = "Argent Dawn:HONORED",
-			},
-			[19446] = {
-				["req_reputation"] = "Argent Dawn:HONORED",
-			},
-			[2092] = {
-				["durability"] = 16,
-			},
-			[8140] = {
-				["instance_difficulty_id"] = 43,
-				["upgrade_value"] = 54,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["4276"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[61038] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[122388] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[15489] = {
-				["instance_difficulty_id"] = 29,
-				["upgrade_value"] = 28,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:3832"] = true,
-				},
-				["durability"] = 45,
-				["suffix_id"] = 0,
-			},
-			[9786] = {
-				["instance_difficulty_id"] = 29,
-				["upgrade_value"] = 29,
-				["seen_bonuses"] = {
-					["1678:3832"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[19447] = {
-				["req_reputation"] = "Argent Dawn:REVERED",
-			},
-			[3642] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 13,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["4769"] = true,
-				},
-				["durability"] = 25,
-				["suffix_id"] = 0,
-			},
-			[13156] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[9782] = {
-				["instance_difficulty_id"] = 43,
-				["upgrade_value"] = 50,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1681:4276"] = true,
-				},
-				["durability"] = 100,
-				["suffix_id"] = 0,
-			},
-			[3190] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 12,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["4772"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[122391] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[19216] = {
-				["req_reputation"] = "Argent Dawn:HONORED",
-			},
-			[67528] = {
-				["req_reputation"] = "Ironforge:REVERED\"",
-			},
-			[13724] = {
-				["req_reputation"] = "Argent Dawn:FRIENDLY",
-			},
-			[59038] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[19217] = {
-				["req_reputation"] = "Argent Dawn:REVERED",
-			},
-			[49572] = {
-				["durability"] = 40,
-			},
-			[61302] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[122364] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9913] = {
-				["instance_difficulty_id"] = 43,
-				["upgrade_value"] = 52,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:4276"] = true,
-				},
-				["durability"] = 115,
-				["unique_id"] = 0,
-			},
-			[64896] = {
-				["req_reputation"] = "Gnomeregan:EXALTED",
-			},
-			[9919] = {
-				["instance_difficulty_id"] = 43,
-				["upgrade_value"] = 55,
-				["seen_bonuses"] = {
-					["1692:4276"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[59047] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 20,
-				["suffix_id"] = 0,
-			},
-			[6378] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 24,
-				["seen_bonuses"] = {
-					["3831"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[56226] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122389] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[122263] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[46337] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 25,
-				["suffix_id"] = 0,
-			},
-			[59050] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 20,
-				["suffix_id"] = 0,
-			},
-			[57466] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 60,
-				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[62177] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 41,
-				["suffix_id"] = 0,
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[156474] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[62952] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 56,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3666:5652"] = true,
-				},
-				["durability"] = 100,
-				["unique_id"] = 0,
-			},
-			[15294] = {
-				["instance_difficulty_id"] = 43,
-				["upgrade_value"] = 52,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:4280"] = true,
-				},
-				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[62968] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 60,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3666"] = true,
-				},
-				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[62174] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 39,
-				["suffix_id"] = 0,
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[64895] = {
-				["req_reputation"] = "Gnomeregan:EXALTED",
-			},
-			[61309] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[122662] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[19328] = {
-				["req_reputation"] = "Argent Dawn:HONORED",
-			},
-			[62961] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 57,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3745"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[49575] = {
-				["durability"] = 25,
-			},
-			[8182] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 7,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["4772"] = true,
-					["4771"] = true,
-				},
-				["durability"] = 35,
-				["suffix_id"] = 0,
-			},
-			[122254] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[58203] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8119] = {
-				["instance_difficulty_id"] = 42,
-				["upgrade_value"] = 50,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3836"] = true,
-				},
-				["durability"] = 115,
-				["unique_id"] = 0,
-			},
-			[9908] = {
-				["instance_difficulty_id"] = 43,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 56,
-			},
-			[122264] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[122361] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[156978] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 58,
-				["seen_bonuses"] = {
-					["3666"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[9746] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 22,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["3831"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[23472] = {
-				["durability"] = 25,
-			},
-		},
 		["npcs"] = {
 			["1137"] = {
-				["reaction"] = "12:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "12:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1442,8 +1446,8 @@ WoWDBProfilerData = {
 							[33391] = "0:0:450000",
 							[33388] = "0:0:36000",
 							[34090] = "0:0:2250000",
-							[90265] = "0:0:45000000",
 							[34091] = "0:0:45000000",
+							[90265] = "0:0:45000000",
 						},
 					},
 				},
@@ -1452,14 +1456,15 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Stormwind",
 				["class"] = "WARRIOR",
+				["reaction"] = "61:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_50"] = {
 								["locations"] = {
 									["Stormwind City:84"] = {
-										["3:700:740"] = true,
 										["3:704:734"] = true,
+										["3:700:740"] = true,
 									},
 								},
 								["max_health"] = 1765,
@@ -1467,7 +1472,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "61:Alliance:FRIENDLY",
 			},
 			["11065"] = {
 				["is_pvp"] = true,
@@ -1476,6 +1480,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1491,7 +1496,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["12636"] = {
 				["is_pvp"] = true,
@@ -1500,7 +1504,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Crusade",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1515,6 +1518,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["5137"] = {
 				["is_pvp"] = true,
@@ -1533,6 +1537,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1547,7 +1552,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["41804"] = {
 				["genders"] = {
@@ -1555,6 +1559,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "PALADIN",
+				["reaction"] = "18:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1570,7 +1575,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "18:Alliance:FRIENDLY",
 			},
 			["42708"] = {
 				["genders"] = {
@@ -1578,6 +1582,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "8:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1610,7 +1615,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "8:Alliance:FRIENDLY",
 			},
 			["45417"] = {
 				["quotes"] = {
@@ -1647,9 +1651,9 @@ WoWDBProfilerData = {
 					[2321] = "-1:1:[100:0:0]",
 					[1645] = "-1:5:[2000:0:0]",
 					[1844] = "-1:1:[1026:0:0]",
-					[8950] = "-1:5:[4000:0:0]",
-					[1179] = "-1:5:[125:0:0]",
 					[4539] = "-1:5:[1000:0:0]",
+					[1179] = "-1:5:[125:0:0]",
+					[8950] = "-1:5:[4000:0:0]",
 				},
 				["class"] = "PALADIN",
 				["reaction"] = "57:Alliance:FRIENDLY",
@@ -1657,10 +1661,10 @@ WoWDBProfilerData = {
 			["99947"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[225455] = 4,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -1672,6 +1676,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1687,15 +1692,14 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "20:Alliance:FRIENDLY",
 			},
 			["46138"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[1604] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -1715,9 +1719,20 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "ROGUE",
+				["reaction"] = "10:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
+							["level_9"] = {
+								["max_health"] = 102,
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:486:528"] = true,
+										["3:490:522"] = true,
+									},
+								},
+								["power"] = "ENERGY:100",
+							},
 							["level_10"] = {
 								["max_health"] = 119,
 								["locations"] = {
@@ -1727,28 +1742,17 @@ WoWDBProfilerData = {
 								},
 								["power"] = "ENERGY:100",
 							},
-							["level_9"] = {
-								["max_health"] = 102,
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:490:522"] = true,
-										["3:486:528"] = true,
-									},
-								},
-								["power"] = "ENERGY:100",
-							},
 						},
 					},
 				},
-				["reaction"] = "10:Alliance:FRIENDLY",
 			},
 			["61838"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[86603] = 2,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -1756,20 +1760,20 @@ WoWDBProfilerData = {
 			["45678"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[79976] = 11,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
 			["45547"] = {
+				["reaction"] = "57:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1802,16 +1806,17 @@ WoWDBProfilerData = {
 					[414] = "-1:5:[125:0:0]",
 					[422] = "-1:5:[500:0:0]",
 					[4601] = "-1:5:[2000]",
-					[8766] = "-1:5:[4000]",
+					[2070] = "-1:5:[25:0:0]",
 					[1645] = "-1:5:[2000]",
-					[1205] = "-1:5:[500:0:0]",
+					[159] = "-1:5:[25:0:0]",
 					[8950] = "-1:5:[4000]",
 					[8932] = "-1:5:[4000]",
-					[159] = "-1:5:[25:0:0]",
+					[1205] = "-1:5:[500:0:0]",
 					[4540] = "-1:5:[25:0:0]",
-					[2070] = "-1:5:[25:0:0]",
+					[8766] = "-1:5:[4000]",
 				},
 				["class"] = "WARRIOR",
+				["reaction"] = "18:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1826,7 +1831,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "18:Alliance:FRIENDLY",
 			},
 			["42849"] = {
 				["quotes"] = {
@@ -1845,15 +1849,6 @@ WoWDBProfilerData = {
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[1604] = 1,
-							[80098] = 7,
-							[22739] = 7,
-							[80148] = 3,
-							[80110] = 4,
-							[22742] = 5,
-							[9143] = 1,
-						},
 						["stats"] = {
 							["level_9"] = {
 								["locations"] = {
@@ -1863,6 +1858,15 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 40431,
 							},
+						},
+						["spells"] = {
+							[1604] = 1,
+							[80098] = 7,
+							[22739] = 7,
+							[80148] = 3,
+							[80110] = 4,
+							[22742] = 5,
+							[9143] = 1,
 						},
 					},
 				},
@@ -1876,6 +1880,9 @@ WoWDBProfilerData = {
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[58506] = 8,
+						},
 						["stats"] = {
 							["level_56"] = {
 								["max_health"] = 106665,
@@ -1896,14 +1903,11 @@ WoWDBProfilerData = {
 								["power"] = "MANA:9736",
 							},
 						},
-						["spells"] = {
-							[58506] = 8,
-						},
 					},
 				},
 				["class"] = "PALADIN",
-				["faction"] = "Cenarion Circle",
 				["reaction"] = "57:Alliance:FRIENDLY",
+				["faction"] = "Cenarion Circle",
 			},
 			["41848"] = {
 				["genders"] = {
@@ -1911,6 +1915,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1925,7 +1930,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["11038"] = {
 				["genders"] = {
@@ -1944,15 +1948,14 @@ WoWDBProfilerData = {
 					[4608] = "-1:5:[2000:0:0]",
 					[4601] = "-1:5:[2000:0:0]",
 					[4605] = "-1:5:[125:0:0]",
-					[4542] = "-1:5:[500:0:0]",
+					[8766] = "-1:5:[4000:0:0]",
 					[4497] = "-1:1:[20000:0:0]",
 					[4470] = "-1:1:[38:0:0]",
 					[4499] = "-1:1:[100000:0:0]",
 					[8948] = "-1:5:[4000:0:0]",
-					[8766] = "-1:5:[4000:0:0]",
+					[4542] = "-1:5:[500:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -1967,6 +1970,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["1247"] = {
 				["is_pvp"] = true,
@@ -1982,27 +1986,19 @@ WoWDBProfilerData = {
 					[1708] = "-1:5:[1000]",
 					[8950] = "-1:5:[4000]",
 					[1645] = "-1:5:[2000]",
-					[4601] = "-1:5:[2000]",
+					[8766] = "-1:5:[4000]",
 					[4540] = "-1:5:[25:0:0]",
 					[4541] = "-1:5:[125:0:0]",
 					[2894] = "-1:1:[50:0:0]",
 					[159] = "-1:5:[25:0:0]",
 					[4544] = "-1:5:[1000]",
 					[4542] = "-1:5:[500]",
-					[8766] = "-1:5:[4000]",
+					[4601] = "-1:5:[2000]",
 				},
 				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_19"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:544:508"] = true,
-									},
-								},
-								["max_health"] = 386,
-							},
 							["level_14"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
@@ -2010,6 +2006,14 @@ WoWDBProfilerData = {
 									},
 								},
 								["max_health"] = 240,
+							},
+							["level_19"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:544:508"] = true,
+									},
+								},
+								["max_health"] = 386,
 							},
 							["level_10"] = {
 								["locations"] = {
@@ -2042,8 +2046,8 @@ WoWDBProfilerData = {
 					[4542] = "-1:5:[500:0:0]",
 					[159] = "-1:5:[25:0:0]",
 					[4544] = "-1:5:[1000:0:0]",
-					[4601] = "-1:5:[2000:0:0]",
 					[8766] = "-1:5:[4000:0:0]",
+					[4601] = "-1:5:[2000:0:0]",
 				},
 				["class"] = "WARRIOR",
 				["encounter_data"] = {
@@ -2053,8 +2057,8 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["Eastern Plaguelands:24"] = {
 										["5:426:900"] = true,
-										["5:434:890"] = true,
 										["5:420:908"] = true,
+										["5:434:890"] = true,
 									},
 								},
 								["max_health"] = 2436,
@@ -2070,6 +2074,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "3:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2077,8 +2082,8 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["Dun Morogh:30"] = {
 										["5:506:322"] = true,
-										["5:512:342"] = true,
 										["5:504:328"] = true,
+										["5:512:342"] = true,
 										["5:508:334"] = true,
 									},
 								},
@@ -2088,12 +2093,12 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["Dun Morogh:30"] = {
 										["5:510:336"] = true,
-										["5:506:330"] = true,
+										["5:510:322"] = true,
 										["5:512:328"] = true,
 										["5:524:328"] = true,
-										["5:510:322"] = true,
-										["5:520:334"] = true,
 										["5:526:320"] = true,
+										["5:520:334"] = true,
+										["5:506:330"] = true,
 									},
 								},
 								["max_health"] = 39,
@@ -2101,22 +2106,24 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "3:Alliance:FRIENDLY",
 			},
 			["8605"] = {
-				["reaction"] = "59:Alliance:NEUTRAL",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "59:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:722:660"] = true,
 										["3:686:646"] = true,
+										["3:722:660"] = true,
 									},
 								},
 								["max_health"] = 3240,
@@ -2129,9 +2136,6 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 3132,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 3,
 						},
 						["spells"] = {
 							[16449] = 9,
@@ -2147,11 +2151,11 @@ WoWDBProfilerData = {
 				},
 			},
 			["10926"] = {
+				["reaction"] = "57:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["FEMALE"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2170,20 +2174,20 @@ WoWDBProfilerData = {
 			["42935"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[80172] = 1,
-						},
-						["stats"] = {
 						},
 					},
 				},
 			},
 			["45400"] = {
+				["reaction"] = "57:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2200,14 +2204,17 @@ WoWDBProfilerData = {
 				},
 			},
 			["9449"] = {
+				["reaction"] = "60:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 					["FEMALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["max_health"] = 2400,
@@ -2232,9 +2239,6 @@ WoWDBProfilerData = {
 								["power"] = "MANA:1381",
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
 						["spells"] = {
 							[15587] = 16,
 							[15586] = 7,
@@ -2251,10 +2255,10 @@ WoWDBProfilerData = {
 			["2761"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[12544] = 18,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -2262,23 +2266,26 @@ WoWDBProfilerData = {
 			["45847"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[74413] = 98,
 							[85756] = 2444,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
 			["8534"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[16573] = 1,
+						},
 						["stats"] = {
 							["level_56"] = {
 								["locations"] = {
@@ -2292,15 +2299,12 @@ WoWDBProfilerData = {
 							["level_58"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:536:700"] = true,
 										["3:538:710"] = true,
+										["3:536:700"] = true,
 									},
 								},
 								["max_health"] = 3048,
 							},
-						},
-						["spells"] = {
-							[16573] = 1,
 						},
 					},
 				},
@@ -2338,6 +2342,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "10:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2352,7 +2357,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "10:Alliance:FRIENDLY",
 			},
 			["47396"] = {
 				["teaches"] = {
@@ -2368,17 +2372,17 @@ WoWDBProfilerData = {
 							[2397] = "0:60:180",
 							[7623] = "0:30:45",
 							[8465] = "0:40:45",
-							[3842] = "0:70:270",
+							[2395] = "0:70:270",
 							[12046] = "0:75:270",
-							[8776] = "0:15:45",
 							[3841] = "0:60:180",
+							[8776] = "0:15:45",
 							[2386] = "0:65:180",
 							[7624] = "0:30:45",
 							[12045] = "0:20:45",
 							[2392] = "0:40:45",
 							[2394] = "0:40:45",
 							[2396] = "0:70:180",
-							[2395] = "0:70:270",
+							[3842] = "0:70:270",
 						},
 						["General"] = {
 							[3908] = "0:0:9",
@@ -2389,9 +2393,9 @@ WoWDBProfilerData = {
 							[14293] = "0:10:45",
 							[7426] = "0:40:90",
 							[7771] = "0:70:180",
-							[7748] = "0:60:225",
-							[7420] = "0:15:45",
 							[7457] = "0:50:225",
+							[7420] = "0:15:45",
+							[7748] = "0:60:225",
 						},
 					},
 				},
@@ -2400,17 +2404,10 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_19"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:538:520"] = true,
-									},
-								},
-								["max_health"] = 367,
-							},
 							["level_13"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
@@ -2418,6 +2415,14 @@ WoWDBProfilerData = {
 									},
 								},
 								["max_health"] = 196,
+							},
+							["level_19"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:538:520"] = true,
+									},
+								},
+								["max_health"] = 367,
 							},
 							["level_10"] = {
 								["locations"] = {
@@ -2430,7 +2435,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["1977"] = {
 				["is_pvp"] = true,
@@ -2439,6 +2443,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "18:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2453,7 +2458,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "18:Alliance:FRIENDLY",
 			},
 			["47288"] = {
 				["is_pvp"] = true,
@@ -2474,14 +2478,13 @@ WoWDBProfilerData = {
 					[117] = "-1:5:[25:0:0]",
 					[3771] = "-1:5:[1000:0:0]",
 					[2287] = "-1:5:[125:0:0]",
-					[4599] = "-1:5:[2000:0:0]",
-					[159] = "-1:5:[25:0:0]",
-					[1179] = "-1:5:[125:0:0]",
-					[1645] = "-1:5:[2000:0:0]",
 					[8766] = "-1:5:[4000:0:0]",
+					[1645] = "-1:5:[2000:0:0]",
+					[1179] = "-1:5:[125:0:0]",
+					[159] = "-1:5:[25:0:0]",
+					[4599] = "-1:5:[2000:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2496,6 +2499,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["16376"] = {
 				["is_pvp"] = true,
@@ -2504,7 +2508,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2519,6 +2522,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["42839"] = {
 				["quotes"] = {
@@ -2533,9 +2537,6 @@ WoWDBProfilerData = {
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[74438] = 23,
-						},
 						["stats"] = {
 							["level_9"] = {
 								["locations"] = {
@@ -2546,6 +2547,9 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 1213,
 							},
+						},
+						["spells"] = {
+							[74438] = 23,
 						},
 					},
 				},
@@ -2558,7 +2562,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2578,18 +2581,16 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["1115"] = {
-				["reaction"] = "17:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "17:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
 						["stats"] = {
 							["level_17"] = {
 								["locations"] = {
@@ -2601,10 +2602,10 @@ WoWDBProfilerData = {
 									["Gol'Bolar Quarry Mine:31"] = {
 										["5:470:388"] = true,
 										["5:470:382"] = true,
-										["5:468:356"] = true,
+										["5:380:428"] = true,
 										["5:310:476"] = true,
 										["5:468:370"] = true,
-										["5:380:428"] = true,
+										["5:468:356"] = true,
 									},
 								},
 								["max_health"] = 318,
@@ -2612,18 +2613,21 @@ WoWDBProfilerData = {
 							["level_18"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
-										["3:776:556"] = true,
 										["3:766:554"] = true,
+										["3:776:556"] = true,
 									},
 									["Gol'Bolar Quarry Mine:31"] = {
 										["5:384:660"] = true,
-										["5:384:654"] = true,
-										["5:416:838"] = true,
 										["5:410:840"] = true,
+										["5:416:838"] = true,
+										["5:384:654"] = true,
 									},
 								},
 								["max_health"] = 328,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
 						},
 						["spells"] = {
 							[3148] = 5,
@@ -2638,10 +2642,10 @@ WoWDBProfilerData = {
 				},
 			},
 			["42626"] = {
-				["reaction"] = "9:Alliance:FRIENDLY",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["reaction"] = "9:Alliance:FRIENDLY",
 				["faction"] = "Gnomeregan",
 				["sells"] = {
 					[2392] = "-1:1:[482]",
@@ -2726,7 +2730,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Crusade",
 				["class"] = "WARRIOR",
-				["reaction"] = "61:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2743,6 +2746,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "61:Alliance:FRIENDLY",
 			},
 			["8723"] = {
 				["is_pvp"] = true,
@@ -2750,7 +2754,7 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 				["faction"] = "Darnassus",
-				["class"] = "WARRIOR",
+				["reaction"] = "63:Alliance:FRIENDLY",
 				["auctioneer"] = true,
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -2767,7 +2771,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "63:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 			},
 			["30717"] = {
 				["is_pvp"] = true,
@@ -2780,23 +2784,23 @@ WoWDBProfilerData = {
 							[50617] = "0:250:9000",
 							[59502] = "0:275:9000",
 							[58565] = "0:85:450",
-							[50609] = "0:295:18000",
+							[58473] = "0:85:360",
 							[48247] = "0:85:450",
-							[59490] = "0:225:5400",
-							[58480] = "0:270:9000",
+							[50607] = "0:210:4050",
+							[50605] = "0:75:360",
 							[57703] = "0:85:360",
-							[58478] = "0:225:4050",
+							[59486] = "0:175:675",
 							[57707] = "0:150:675",
 							[57709] = "0:200:2700",
 							[59475] = "0:125:675",
-							[58476] = "0:175:675",
-							[50608] = "0:255:9000",
-							[58473] = "0:85:360",
+							[59484] = "0:175:675",
+							[59491] = "0:225:5400",
+							[50598] = "0:75:360",
 							[50600] = "0:215:4050",
-							[59480] = "0:125:675",
+							[52739] = "0:35:135",
 							[59487] = "0:175:675",
 							[50606] = "0:160:675",
-							[59491] = "0:225:5400",
+							[50608] = "0:255:9000",
 							[59493] = "0:275:9000",
 							[50612] = "0:75:360",
 							[50614] = "0:155:675",
@@ -2814,21 +2818,21 @@ WoWDBProfilerData = {
 							[52843] = "0:1:45",
 							[58487] = "0:220:4050",
 							[48248] = "0:35:45",
-							[58472] = "0:15:45",
 							[53462] = "0:75:270",
+							[58472] = "0:15:45",
 							[57704] = "0:100:360",
 							[57706] = "0:125:675",
 							[57708] = "0:175:675",
 							[57710] = "0:225:5400",
 							[57712] = "0:275:9000",
 							[59478] = "0:125:675",
-							[52739] = "0:35:135",
+							[59480] = "0:125:675",
 							[50599] = "0:165:675",
-							[59484] = "0:175:675",
-							[59486] = "0:175:675",
-							[50605] = "0:75:360",
-							[50607] = "0:210:4050",
-							[50598] = "0:75:360",
+							[58476] = "0:175:675",
+							[58478] = "0:225:4050",
+							[58480] = "0:270:9000",
+							[59490] = "0:225:5400",
+							[50609] = "0:295:18000",
 						},
 						["Cataclysm Inscription"] = {
 							[86615] = "0:75:180000",
@@ -2845,17 +2849,17 @@ WoWDBProfilerData = {
 							[86403] = "0:50:67500",
 							[85785] = "0:50:108000",
 							[86004] = "0:1:72000",
-							[86653] = "0:65:135000",
-							[86640] = "0:25:81000",
-							[86642] = "0:60:108000",
-							[89244] = "0:50:90000",
-							[86649] = "0:55:108000",
-							[86643] = "0:60:108000",
-							[89368] = "0:1:72000",
-							[86609] = "0:1:72000",
-							[89370] = "0:20:72000",
-							[89372] = "0:10:72000",
 							[86641] = "0:60:108000",
+							[86640] = "0:25:81000",
+							[89370] = "0:20:72000",
+							[89244] = "0:50:90000",
+							[89368] = "0:1:72000",
+							[86643] = "0:60:108000",
+							[86649] = "0:55:108000",
+							[86609] = "0:1:72000",
+							[86642] = "0:60:108000",
+							[89372] = "0:10:72000",
+							[86653] = "0:65:135000",
 						},
 						["General"] = {
 							[45357] = "0:0:9",
@@ -2867,6 +2871,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "MAGE",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -2884,16 +2889,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["12996"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[1604] = 3,
 							[6660] = 193,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -2907,6 +2911,12 @@ WoWDBProfilerData = {
 				["reaction"] = "60:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[14517] = 4,
+							[15284] = 3,
+							[13005] = 4,
+							[17232] = 2,
+						},
 						["stats"] = {
 							["level_62"] = {
 								["max_health"] = 7653,
@@ -2917,12 +2927,6 @@ WoWDBProfilerData = {
 								},
 								["power"] = "MANA:1432",
 							},
-						},
-						["spells"] = {
-							[14517] = 4,
-							[15284] = 3,
-							[17232] = 2,
-							[13005] = 4,
 						},
 					},
 				},
@@ -2943,21 +2947,14 @@ WoWDBProfilerData = {
 					[6530] = "-1:1:[100]",
 					[6532] = "-1:1:[250]",
 					[6529] = "-1:1:[50:0:0]",
-					[6256] = "-1:1:[23]",
 					[136377] = "-1:5:[22000:0:0]",
+					[6256] = "-1:1:[23]",
 				},
 				["class"] = "WARRIOR",
+				["reaction"] = "10:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_10"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:516:502"] = true,
-									},
-								},
-								["max_health"] = 118,
-							},
 							["level_9"] = {
 								["locations"] = {
 									["New Tinkertown:469"] = {
@@ -2967,10 +2964,17 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 101,
 							},
+							["level_10"] = {
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:516:502"] = true,
+									},
+								},
+								["max_health"] = 118,
+							},
 						},
 					},
 				},
-				["reaction"] = "10:Alliance:FRIENDLY",
 			},
 			["16116"] = {
 				["is_pvp"] = true,
@@ -2979,7 +2983,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "PALADIN",
-				["reaction"] = "60:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3005,27 +3008,17 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "60:Alliance:FRIENDLY",
 			},
 			["1125"] = {
+				["reaction"] = "11:Alliance:NEUTRAL",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "11:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 3,
-						},
 						["stats"] = {
-							["level_11"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:596:472"] = true,
-									},
-								},
-								["max_health"] = 122,
-							},
 							["level_10"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
@@ -3037,6 +3030,17 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 119,
 							},
+							["level_11"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:596:472"] = true,
+									},
+								},
+								["max_health"] = 122,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
 						},
 						["spells"] = {
 							[6268] = 5,
@@ -3059,7 +3063,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Crusade",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3076,6 +3079,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["42553"] = {
 				["is_pvp"] = true,
@@ -3089,6 +3093,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "6:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3112,14 +3117,13 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "6:Alliance:FRIENDLY",
 			},
 			["41768"] = {
-				["reaction"] = "18:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "18:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3137,13 +3141,16 @@ WoWDBProfilerData = {
 				},
 			},
 			["10953"] = {
+				["reaction"] = "57:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[91090] = 7,
+						},
 						["stats"] = {
 							["level_58"] = {
 								["locations"] = {
@@ -3163,9 +3170,6 @@ WoWDBProfilerData = {
 								["max_health"] = 3294,
 							},
 						},
-						["spells"] = {
-							[91090] = 7,
-						},
 					},
 				},
 			},
@@ -3176,7 +3180,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Crusade",
 				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3192,6 +3195,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "57:Alliance:FRIENDLY",
 			},
 			["42396"] = {
 				["genders"] = {
@@ -3199,6 +3203,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "3:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3214,7 +3219,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "3:Alliance:FRIENDLY",
 			},
 			["47289"] = {
 				["is_pvp"] = true,
@@ -3223,7 +3227,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Crusade",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3238,15 +3241,16 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["62822"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
 						["I'll update my journal."] = true,
 						["I just came here to find some turnips, I swear!"] = true,
-						["Does yak tail assist in maintaining balance?"] = true,
-						["You could die of dysentery out here."] = true,
 						["I'm just a pathetic creature of meat and brew."] = true,
+						["You could die of dysentery out here."] = true,
+						["Does yak tail assist in maintaining balance?"] = true,
 						["Is it dangerous to go alone?"] = true,
 					},
 				},
@@ -3264,26 +3268,26 @@ WoWDBProfilerData = {
 										["3:346:486"] = true,
 										["3:760:760"] = true,
 										["3:350:480"] = true,
-										["3:764:774"] = true,
-										["3:300:570"] = true,
+										["3:744:774"] = true,
+										["3:350:680"] = true,
 										["3:536:538"] = true,
 										["3:752:530"] = true,
-										["3:382:458"] = true,
-										["3:530:542"] = true,
 										["3:800:778"] = true,
 										["3:762:766"] = true,
+										["3:382:458"] = true,
+										["3:530:542"] = true,
 										["3:232:674"] = true,
-										["3:350:680"] = true,
-										["3:744:774"] = true,
+										["3:300:570"] = true,
+										["3:764:774"] = true,
 									},
 									["City of Ironforge:87"] = {
 										["3:320:648"] = true,
 										["3:334:694"] = true,
 										["3:328:638"] = true,
 										["3:306:662"] = true,
-										["3:332:684"] = true,
-										["3:312:656"] = true,
 										["3:334:700"] = true,
+										["3:312:656"] = true,
+										["3:332:684"] = true,
 									},
 									["Dun Morogh:27"] = {
 										["3:746:520"] = true,
@@ -3297,9 +3301,9 @@ WoWDBProfilerData = {
 										["3:742:514"] = true,
 										["3:702:496"] = true,
 										["3:730:514"] = true,
-										["3:700:502"] = true,
-										["3:700:508"] = true,
 										["3:746:526"] = true,
+										["3:700:508"] = true,
+										["3:700:502"] = true,
 									},
 								},
 								["max_health"] = 5502,
@@ -3320,27 +3324,24 @@ WoWDBProfilerData = {
 					[64670] = "-1:5:[4000:0:0]",
 					[81414] = "-1:5:[26000]",
 					[60335] = "-1:1:[120000:0:0]",
-					[81401] = "-1:5:[24000]",
+					[38682] = "-1:1:[1000:0:0]",
 					[4470] = "-1:1:[38:0:0]",
 					[52188] = "-1:1:[15000:0:0]",
 					[39354] = "-1:5:[15:0:0]",
-					[38682] = "-1:1:[1000:0:0]",
+					[81401] = "-1:5:[24000]",
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "21:Alliance:FRIENDLY",
 				["can_repair"] = true,
 			},
 			["42223"] = {
-				["reaction"] = "8:Alliance:HOSTILE",
-				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "8:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[84148] = 7,
-						},
 						["stats"] = {
 							["level_8"] = {
 								["max_health"] = 86,
@@ -3353,17 +3354,24 @@ WoWDBProfilerData = {
 								["power"] = "MANA:104",
 							},
 						},
+						["spells"] = {
+							[84148] = 7,
+						},
 					},
 				},
 			},
 			["8526"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "MAGE",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "MAGE",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[20825] = 4,
+							[11639] = 4,
+						},
 						["stats"] = {
 							["level_58"] = {
 								["max_health"] = 2438,
@@ -3375,10 +3383,6 @@ WoWDBProfilerData = {
 								},
 								["power"] = "MANA:3471",
 							},
-						},
-						["spells"] = {
-							[20825] = 4,
-							[11639] = 4,
 						},
 						["loot_counts"] = {
 							["drops"] = 3,
@@ -3396,10 +3400,10 @@ WoWDBProfilerData = {
 			["41390"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[8852] = 3,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -3407,20 +3411,20 @@ WoWDBProfilerData = {
 			["2567"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[12544] = 3,
-						},
-						["stats"] = {
 						},
 					},
 				},
 			},
 			["46391"] = {
-				["reaction"] = "1:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "1:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3448,6 +3452,9 @@ WoWDBProfilerData = {
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["max_health"] = 4802,
@@ -3458,9 +3465,6 @@ WoWDBProfilerData = {
 								},
 								["power"] = "MANA:1381",
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
 						},
 						["spells"] = {
 							[79971] = 2,
@@ -3477,11 +3481,11 @@ WoWDBProfilerData = {
 				["reaction"] = "59:Alliance:HOSTILE",
 			},
 			["8525"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3521,6 +3525,7 @@ WoWDBProfilerData = {
 					[64895] = "-1:1:[33883]",
 				},
 				["class"] = "ROGUE",
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3539,7 +3544,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "20:Alliance:FRIENDLY",
 			},
 			["45698"] = {
 				["genders"] = {
@@ -3548,7 +3552,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3571,15 +3574,21 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:HOSTILE",
 			},
 			["46095"] = {
-				["reaction"] = "60:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[90783] = 3,
+							[34189] = 2,
+							[30478] = 4,
+						},
 						["stats"] = {
 							["level_62"] = {
 								["locations"] = {
@@ -3589,11 +3598,6 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 7653,
 							},
-						},
-						["spells"] = {
-							[90783] = 3,
-							[34189] = 2,
-							[30478] = 4,
 						},
 					},
 				},
@@ -3608,17 +3612,13 @@ WoWDBProfilerData = {
 				["reaction"] = "18:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[14873] = 4,
-							[3583] = 2,
-						},
 						["stats"] = {
 							["level_17"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
 										["3:846:582"] = true,
-										["3:852:600"] = true,
 										["3:844:596"] = true,
+										["3:852:600"] = true,
 										["3:850:590"] = true,
 									},
 								},
@@ -3633,6 +3633,10 @@ WoWDBProfilerData = {
 								["max_health"] = 342,
 							},
 						},
+						["spells"] = {
+							[14873] = 4,
+							[3583] = 2,
+						},
 					},
 				},
 				["class"] = "WARRIOR",
@@ -3642,16 +3646,13 @@ WoWDBProfilerData = {
 				},
 			},
 			["42010"] = {
-				["reaction"] = "20:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[53824] = 2,
-						},
 						["stats"] = {
 							["level_20"] = {
 								["locations"] = {
@@ -3661,6 +3662,9 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 380,
 							},
+						},
+						["spells"] = {
+							[53824] = 2,
 						},
 					},
 				},
@@ -3672,16 +3676,17 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "12:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_12"] = {
+							["level_10"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
 										["3:542:512"] = true,
 									},
 								},
-								["max_health"] = 166,
+								["max_health"] = 118,
 							},
 							["level_11"] = {
 								["locations"] = {
@@ -3691,25 +3696,24 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 140,
 							},
-							["level_10"] = {
+							["level_12"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
 										["3:542:512"] = true,
 									},
 								},
-								["max_health"] = 118,
+								["max_health"] = 166,
 							},
 						},
 					},
 				},
-				["reaction"] = "12:Alliance:FRIENDLY",
 			},
 			["46363"] = {
-				["reaction"] = "2:Alliance:NEUTRAL",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "2:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3721,14 +3725,14 @@ WoWDBProfilerData = {
 										["5:470:320"] = true,
 										["5:484:324"] = true,
 										["5:476:320"] = true,
-										["5:542:342"] = true,
-										["5:540:348"] = true,
-										["5:536:354"] = true,
+										["5:500:324"] = true,
+										["5:460:312"] = true,
+										["5:530:354"] = true,
 										["5:518:348"] = true,
 										["5:514:342"] = true,
-										["5:530:354"] = true,
-										["5:460:312"] = true,
-										["5:500:324"] = true,
+										["5:536:354"] = true,
+										["5:540:348"] = true,
+										["5:542:342"] = true,
 									},
 								},
 								["max_health"] = 39,
@@ -3738,11 +3742,11 @@ WoWDBProfilerData = {
 				},
 			},
 			["40940"] = {
-				["reaction"] = "12:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "12:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3759,21 +3763,27 @@ WoWDBProfilerData = {
 				},
 			},
 			["9451"] = {
-				["reaction"] = "60:Alliance:HOSTILE",
-				["class"] = "MAGE",
 				["genders"] = {
 					["MALE"] = true,
 					["FEMALE"] = true,
 				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[18101] = 11,
+							[15242] = 12,
+							[18100] = 43,
+							[15244] = 7,
+						},
 						["stats"] = {
 							["level_61"] = {
 								["max_health"] = 1973,
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:792:766"] = true,
 										["3:792:772"] = true,
+										["3:792:766"] = true,
 									},
 								},
 								["power"] = "MANA:3575",
@@ -3789,23 +3799,20 @@ WoWDBProfilerData = {
 								["power"] = "MANA:3471",
 							},
 						},
-						["spells"] = {
-							[18101] = 11,
-							[15242] = 12,
-							[18100] = 43,
-							[15244] = 7,
-						},
 					},
 				},
 			},
 			["10946"] = {
-				["reaction"] = "57:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "57:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[3391] = 1,
+						},
 						["stats"] = {
 							["level_57"] = {
 								["locations"] = {
@@ -3816,31 +3823,33 @@ WoWDBProfilerData = {
 								["max_health"] = 10970,
 							},
 						},
-						["spells"] = {
-							[3391] = 1,
-						},
 					},
 				},
 			},
 			["44442"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[85850] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
 			["10949"] = {
-				["reaction"] = "57:Alliance:FRIENDLY",
-				["class"] = "PALADIN",
 				["genders"] = {
 					["FEMALE"] = true,
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[15493] = 6,
+							[1604] = 5,
+							[14518] = 34,
+						},
 						["stats"] = {
 							["level_57"] = {
 								["max_health"] = 6586,
@@ -3852,25 +3861,17 @@ WoWDBProfilerData = {
 								["power"] = "MANA:2566",
 							},
 						},
-						["spells"] = {
-							[15493] = 6,
-							[1604] = 5,
-							[14518] = 34,
-						},
 					},
 				},
 			},
 			["41284"] = {
-				["reaction"] = "15:Alliance:HOSTILE",
-				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "15:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[38557] = 2,
-						},
 						["stats"] = {
 							["level_14"] = {
 								["max_health"] = 456,
@@ -3882,6 +3883,9 @@ WoWDBProfilerData = {
 								["power"] = "MANA:165",
 							},
 						},
+						["spells"] = {
+							[38557] = 2,
+						},
 					},
 				},
 			},
@@ -3891,7 +3895,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3906,13 +3909,14 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["89715"] = {
+				["reaction"] = "17:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "17:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3922,8 +3926,8 @@ WoWDBProfilerData = {
 										["3:538:522"] = true,
 										["3:732:524"] = true,
 										["3:726:522"] = true,
-										["3:744:528"] = true,
 										["3:738:526"] = true,
+										["3:744:528"] = true,
 									},
 									["New Tinkertown:469"] = {
 										["3:496:520"] = true,
@@ -3936,13 +3940,17 @@ WoWDBProfilerData = {
 				},
 			},
 			["45579"] = {
-				["reaction"] = "57:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "57:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[1604] = 2,
+							[14873] = 6,
+						},
 						["stats"] = {
 							["level_57"] = {
 								["locations"] = {
@@ -3952,10 +3960,6 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 660,
 							},
-						},
-						["spells"] = {
-							[1604] = 2,
-							[14873] = 6,
 						},
 					},
 				},
@@ -3967,6 +3971,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "61:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3976,7 +3981,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "61:Alliance:FRIENDLY",
 			},
 			["111977"] = {
 				["genders"] = {
@@ -3984,7 +3988,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -3999,16 +4002,20 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["9452"] = {
+				["reaction"] = "59:Alliance:HOSTILE",
+				["class"] = "MAGE",
 				["genders"] = {
 					["MALE"] = true,
 					["FEMALE"] = true,
 				},
-				["class"] = "MAGE",
-				["reaction"] = "59:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["stats"] = {
 							["level_58"] = {
 								["max_health"] = 1806,
@@ -4030,9 +4037,6 @@ WoWDBProfilerData = {
 								["power"] = "MANA:3471",
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
 						["spells"] = {
 							[25055] = 15,
 							[11975] = 9,
@@ -4050,6 +4054,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "PALADIN",
+				["reaction"] = "14:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -4065,15 +4070,14 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "14:Alliance:FRIENDLY",
 			},
 			["118889"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[235614] = 23,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -4089,6 +4093,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "PALADIN",
+				["reaction"] = "6:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -4122,7 +4127,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "6:Alliance:FRIENDLY",
 			},
 			["1117"] = {
 				["quotes"] = {
@@ -4133,9 +4137,6 @@ WoWDBProfilerData = {
 				["reaction"] = "17:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 4,
-						},
 						["stats"] = {
 							["level_16"] = {
 								["locations"] = {
@@ -4151,20 +4152,20 @@ WoWDBProfilerData = {
 										["5:452:370"] = true,
 										["5:466:348"] = true,
 										["5:460:358"] = true,
-										["5:440:416"] = true,
+										["5:422:404"] = true,
 										["5:384:654"] = true,
-										["5:382:590"] = true,
-										["5:364:582"] = true,
+										["5:332:456"] = true,
+										["5:372:584"] = true,
 										["5:426:432"] = true,
 										["5:418:438"] = true,
 										["5:442:382"] = true,
-										["5:372:584"] = true,
+										["5:364:582"] = true,
 										["5:340:450"] = true,
 										["5:348:444"] = true,
 										["5:446:376"] = true,
 										["5:420:410"] = true,
-										["5:332:456"] = true,
-										["5:422:404"] = true,
+										["5:382:590"] = true,
+										["5:440:416"] = true,
 									},
 								},
 								["max_health"] = 308,
@@ -4180,6 +4181,9 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 318,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 4,
 						},
 						["spells"] = {
 							[1604] = 1,
@@ -4222,6 +4226,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "10:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -4236,17 +4241,19 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "10:Alliance:FRIENDLY",
 			},
 			["8551"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "MAGE",
 				["genders"] = {
 					["MALE"] = true,
 					["FEMALE"] = true,
 				},
-				["class"] = "MAGE",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
 						["stats"] = {
 							["level_57"] = {
 								["max_health"] = 2369,
@@ -4260,9 +4267,6 @@ WoWDBProfilerData = {
 								},
 								["power"] = "MANA:3293",
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 3,
 						},
 						["spells"] = {
 							[20829] = 15,
@@ -4280,16 +4284,13 @@ WoWDBProfilerData = {
 				},
 			},
 			["43230"] = {
+				["reaction"] = "10:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "10:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
 						["stats"] = {
 							["level_9"] = {
 								["max_health"] = 100,
@@ -4302,12 +4303,15 @@ WoWDBProfilerData = {
 										["3:588:436"] = true,
 										["3:578:462"] = true,
 										["3:584:442"] = true,
-										["3:570:476"] = true,
 										["3:584:448"] = true,
+										["3:570:476"] = true,
 									},
 								},
 								["power"] = "MANA:79",
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
 						},
 						["spells"] = {
 							[84148] = 27,
@@ -4326,28 +4330,28 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+							["level_-1"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:392:558"] = true,
+										["3:388:550"] = true,
+									},
+								},
+								["max_health"] = 10840250,
+							},
+						},
 						["spells"] = {
 							[84828] = 1,
 							[84829] = 2,
 							[84833] = 2,
 							[15284] = 1,
 						},
-						["stats"] = {
-							["level_-1"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:388:550"] = true,
-										["3:392:558"] = true,
-									},
-								},
-								["max_health"] = 10840250,
-							},
-						},
 					},
 				},
-				["reaction"] = "20:Alliance:FRIENDLY",
 			},
 			["5153"] = {
 				["is_pvp"] = true,
@@ -4380,41 +4384,41 @@ WoWDBProfilerData = {
 							[3866] = "0:110:225",
 							[2406] = "0:100:180",
 							[8483] = "0:160:450",
-							[18453] = "0:300:13500",
-							[18451] = "0:300:13500",
-							[3841] = "0:60:180",
-							[8489] = "0:175:675",
+							[18423] = "0:280:13500",
 							[12046] = "0:75:270",
-							[8766] = "0:175:900",
+							[12061] = "0:215:2250",
+							[8489] = "0:175:675",
+							[6690] = "0:135:900",
+							[8764] = "0:170:810",
 							[12048] = "0:205:3600",
 							[12049] = "0:205:3600",
 							[12050] = "0:210:3600",
-							[3843] = "0:85:360",
+							[12069] = "0:225:4500",
 							[12052] = "0:210:4500",
 							[12053] = "0:215:4500",
 							[3871] = "0:170:450",
 							[12055] = "0:215:4950",
-							[18438] = "0:285:13500",
+							[12070] = "0:225:4500",
 							[3840] = "0:35:90",
-							[18442] = "0:290:13500",
+							[264622] = "0:1:270000",
 							[18402] = "0:255:9000",
 							[8758] = "0:140:540",
-							[12061] = "0:215:2250",
+							[3841] = "0:60:180",
 							[8760] = "0:145:540",
 							[63742] = "0:125:675",
 							[8762] = "0:160:675",
 							[3842] = "0:70:270",
-							[8764] = "0:170:810",
+							[18416] = "0:275:11250",
 							[12067] = "0:225:4500",
 							[18420] = "0:275:11250",
-							[12069] = "0:225:4500",
-							[12070] = "0:225:4500",
+							[3843] = "0:85:360",
+							[18424] = "0:280:13500",
 							[12071] = "0:225:5400",
 							[8770] = "0:190:900",
 							[12073] = "0:230:5400",
-							[264622] = "0:1:270000",
-							[18450] = "0:300:13500",
+							[8772] = "0:175:900",
 							[3813] = "0:150:720",
+							[8774] = "0:180:900",
 							[3845] = "0:80:270",
 							[8776] = "0:15:45",
 							[2385] = "0:10:45",
@@ -4423,41 +4427,41 @@ WoWDBProfilerData = {
 							[12082] = "0:240:6300",
 							[2386] = "0:65:180",
 							[18410] = "0:265:9000",
-							[18414] = "0:270:9000",
+							[12045] = "0:20:45",
 							[18411] = "0:265:9000",
-							[6521] = "0:90:360",
+							[18406] = "0:260:9000",
 							[12088] = "0:245:6750",
 							[3848] = "0:110:450",
 							[18403] = "0:255:9000",
-							[3757] = "0:80:180",
+							[8804] = "0:210:4500",
 							[12092] = "0:250:6750",
 							[8791] = "0:185:2250",
 							[12076] = "0:235:5850",
-							[12079] = "0:235:5850",
-							[12074] = "0:230:5400",
+							[3839] = "0:125:450",
+							[12065] = "0:225:4500",
 							[3850] = "0:110:450",
 							[3755] = "0:45:90",
 							[3914] = "0:30:45",
-							[12072] = "0:230:5400",
-							[8799] = "0:195:2700",
 							[12077] = "0:235:4500",
-							[12065] = "0:225:4500",
-							[3839] = "0:125:450",
+							[8799] = "0:195:2700",
+							[12072] = "0:230:5400",
+							[12074] = "0:230:5400",
+							[12079] = "0:235:5850",
 							[3852] = "0:130:675",
-							[8804] = "0:210:4500",
+							[3757] = "0:80:180",
 							[2392] = "0:40:45",
-							[18406] = "0:260:9000",
+							[6521] = "0:90:360",
 							[2964] = "0:75:90",
-							[12045] = "0:20:45",
+							[18414] = "0:270:9000",
 							[2393] = "0:1:22",
-							[8774] = "0:180:900",
-							[8772] = "0:175:900",
-							[18424] = "0:280:13500",
+							[18450] = "0:300:13500",
+							[18442] = "0:290:13500",
+							[18438] = "0:285:13500",
 							[2394] = "0:40:45",
-							[18416] = "0:275:11250",
+							[8766] = "0:175:900",
 							[3855] = "0:125:675",
-							[6690] = "0:135:900",
-							[18423] = "0:280:13500",
+							[18451] = "0:300:13500",
+							[18453] = "0:300:13500",
 						},
 						["General"] = {
 							[3908] = "0:0:9",
@@ -4501,9 +4505,9 @@ WoWDBProfilerData = {
 							[75269] = "0:60:162000",
 							[75293] = "0:60:162000",
 							[75297] = "0:70:162000",
-							[75141] = "0:65:135000",
-							[75142] = "0:55:135000",
 							[75270] = "0:50:135000",
+							[75142] = "0:55:135000",
+							[75141] = "0:65:135000",
 						},
 					},
 				},
@@ -4512,14 +4516,15 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_35"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:438:296"] = true,
 										["3:432:288"] = true,
+										["3:438:296"] = true,
 									},
 								},
 								["max_health"] = 1090,
@@ -4527,15 +4532,14 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["45794"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[79976] = 5,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -4543,37 +4547,37 @@ WoWDBProfilerData = {
 			["46025"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[85687] = 8,
-						},
-						["stats"] = {
 						},
 					},
 				},
 			},
 			["43384"] = {
-				["reaction"] = "19:Alliance:FRIENDLY",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["faction"] = "Ironforge",
 				["sells"] = {
-					[8766] = "-1:5:[4000]",
+					[4541] = "-1:5:[125:0:0]",
 					[5042] = "-1:1:[50:0:0]",
 					[1205] = "-1:5:[500:0:0]",
 					[1179] = "-1:5:[125:0:0]",
 					[1708] = "-1:5:[1000]",
 					[8950] = "-1:5:[4000]",
-					[4601] = "-1:5:[2000]",
+					[4496] = "-1:1:[500:0:0]",
 					[1645] = "-1:5:[2000]",
-					[159] = "-1:5:[25:0:0]",
-					[4540] = "-1:5:[25:0:0]",
-					[4541] = "-1:5:[125:0:0]",
-					[4542] = "-1:5:[500:0:0]",
 					[4498] = "-1:1:[2500:0:0]",
+					[4540] = "-1:5:[25:0:0]",
+					[4601] = "-1:5:[2000]",
+					[4542] = "-1:5:[500:0:0]",
+					[159] = "-1:5:[25:0:0]",
 					[4544] = "-1:5:[1000]",
 					[4470] = "-1:1:[38:0:0]",
-					[4496] = "-1:1:[500:0:0]",
+					[8766] = "-1:5:[4000]",
 				},
 				["class"] = "WARRIOR",
 				["encounter_data"] = {
@@ -4599,15 +4603,16 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_24"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:428:272"] = true,
-										["3:436:282"] = true,
 										["3:436:276"] = true,
+										["3:436:282"] = true,
+										["3:428:272"] = true,
 									},
 								},
 								["max_health"] = 531,
@@ -4615,14 +4620,13 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["8531"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -4649,25 +4653,22 @@ WoWDBProfilerData = {
 			["13096"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[12544] = 2,
-						},
-						["stats"] = {
 						},
 					},
 				},
 			},
 			["41478"] = {
+				["reaction"] = "11:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "11:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
 						["stats"] = {
 							["level_9"] = {
 								["locations"] = {
@@ -4678,6 +4679,9 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 115,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
 						},
 						["spells"] = {
 							[32918] = 6,
@@ -4698,48 +4702,39 @@ WoWDBProfilerData = {
 				["sells"] = {
 					[3857] = "-1:1:[500:0:0]",
 					[7005] = "-1:1:[82]",
-					[4289] = "-1:1:[50:0:0]",
-					[6530] = "-1:1:[100]",
+					[6532] = "-1:1:[250]",
+					[20815] = "-1:1:[800:0:0]",
 					[3371] = "-1:20:[150:0:0]",
 					[3466] = "-1:1:[2000:0:0]",
 					[2321] = "-1:1:[100:0:0]",
-					[39505] = "-1:1:[750]",
 					[2604] = "-1:1:[50:0:0]",
+					[2325] = "-1:1:[1000:0:0]",
 					[4340] = "-1:1:[350:0:0]",
 					[5956] = "-1:1:[18:0:0]",
-					[2901] = "-1:1:[81:0:0]",
-					[2320] = "-1:1:[10:0:0]",
-					[14341] = "-1:1:[5000:0:0]",
-					[2678] = "-1:5:[10:0:0]",
-					[2324] = "-1:1:[25:0:0]",
-					[4399] = "-1:1:[200:0:0]",
 					[4341] = "-1:1:[500:0:0]",
+					[2320] = "-1:1:[10:0:0]",
+					[4400] = "-1:1:[2000:0:0]",
+					[2678] = "-1:5:[10:0:0]",
+					[6256] = "-1:1:[23:0:0]",
+					[4399] = "-1:1:[200:0:0]",
+					[2901] = "-1:1:[81:0:0]",
 					[85663] = "-1:1:[105]",
 					[160298] = "-1:1:[3000:0:0]",
 					[4291] = "-1:1:[500:0:0]",
 					[6217] = "-1:1:[124:0:0]",
 					[2880] = "-1:1:[100:0:0]",
-					[6256] = "-1:1:[23:0:0]",
-					[4400] = "-1:1:[2000:0:0]",
+					[2324] = "-1:1:[25:0:0]",
+					[14341] = "-1:1:[5000:0:0]",
 					[4342] = "-1:1:[2500:0:0]",
 					[8343] = "-1:1:[2000:0:0]",
-					[20815] = "-1:1:[800:0:0]",
-					[2325] = "-1:1:[1000:0:0]",
-					[6532] = "-1:1:[250]",
+					[39505] = "-1:1:[750]",
+					[6530] = "-1:1:[100]",
+					[4289] = "-1:1:[50:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_57"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:538:534"] = true,
-									},
-								},
-								["max_health"] = 2195,
-							},
 							["level_59"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
@@ -4748,9 +4743,18 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 2320,
 							},
+							["level_57"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:538:534"] = true,
+									},
+								},
+								["max_health"] = 2195,
+							},
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["45966"] = {
 				["quotes"] = {
@@ -4763,6 +4767,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "2:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -4789,24 +4794,26 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "2:Alliance:FRIENDLY",
 			},
 			["9447"] = {
+				["reaction"] = "60:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 					["FEMALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["max_health"] = 2383,
 								["locations"] = {
 									["Tyr's Hand Abbey:23"] = {
-										["3:776:722"] = true,
 										["3:774:728"] = true,
+										["3:776:722"] = true,
 									},
 								},
 								["power"] = "MANA:1332",
@@ -4839,9 +4846,6 @@ WoWDBProfilerData = {
 								["power"] = "MANA:1332",
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 5,
-						},
 						["spells"] = {
 							[1604] = 2,
 							[14518] = 26,
@@ -4865,41 +4869,41 @@ WoWDBProfilerData = {
 			["44447"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[85524] = 2,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
 			["42184"] = {
+				["reaction"] = "5:Alliance:NEUTRAL",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "5:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 6,
-						},
 						["stats"] = {
 							["level_4"] = {
 								["locations"] = {
 									["New Tinkertown:469"] = {
 										["3:416:496"] = true,
 										["3:378:474"] = true,
-										["3:378:526"] = true,
-										["3:382:468"] = true,
-										["3:380:532"] = true,
-										["3:392:534"] = true,
-										["3:424:500"] = true,
 										["3:376:480"] = true,
+										["3:382:468"] = true,
+										["3:424:500"] = true,
+										["3:392:534"] = true,
+										["3:380:532"] = true,
+										["3:378:526"] = true,
 									},
 								},
 								["max_health"] = 52,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 6,
 						},
 						["spells"] = {
 							[84150] = 22,
@@ -4925,7 +4929,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "WARRIOR",
-				["reaction"] = "60:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -4948,23 +4951,27 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "60:Alliance:FRIENDLY",
 			},
 			["8600"] = {
-				["reaction"] = "58:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["stats"] = {
 							["level_56"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
 										["3:384:694"] = true,
-										["3:326:622"] = true,
-										["3:394:716"] = true,
 										["3:384:688"] = true,
+										["3:394:716"] = true,
+										["3:326:622"] = true,
 									},
 								},
 								["max_health"] = 2773,
@@ -4977,9 +4984,6 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 2933,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
 						},
 						["spells"] = {
 							[6605] = 20,
@@ -4995,8 +4999,8 @@ WoWDBProfilerData = {
 			["46268"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
-						["I'm too young to die!"] = true,
 						["I don't want to die down here!"] = true,
+						["I'm too young to die!"] = true,
 					},
 				},
 				["genders"] = {
@@ -5004,6 +5008,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "2:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5013,8 +5018,8 @@ WoWDBProfilerData = {
 										["5:624:326"] = true,
 										["5:622:302"] = true,
 										["5:624:308"] = true,
-										["5:614:296"] = true,
 										["5:562:254"] = true,
+										["5:614:296"] = true,
 										["5:628:334"] = true,
 										["5:570:256"] = true,
 										["5:628:344"] = true,
@@ -5026,7 +5031,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "2:Alliance:FRIENDLY",
 			},
 			["1692"] = {
 				["is_pvp"] = true,
@@ -5043,8 +5047,8 @@ WoWDBProfilerData = {
 					[2678] = "-1:5:[10:0:0]",
 					[30817] = "-1:5:[25:0:0]",
 					[85663] = "-1:1:[105]",
-					[20815] = "-1:1:[800:0:0]",
-					[39505] = "-1:1:[750]",
+					[2901] = "-1:1:[81]",
+					[3371] = "-1:20:[150:0:0]",
 					[6217] = "-1:1:[124:0:0]",
 					[2880] = "-1:1:[100:0:0]",
 					[2324] = "-1:1:[25:0:0]",
@@ -5052,20 +5056,21 @@ WoWDBProfilerData = {
 					[2320] = "-1:1:[10:0:0]",
 					[6256] = "-1:1:[23]",
 					[39354] = "-1:5:[15:0:0]",
-					[3371] = "-1:20:[150:0:0]",
-					[2901] = "-1:1:[81]",
+					[39505] = "-1:1:[750]",
+					[20815] = "-1:1:[800:0:0]",
 				},
 				["class"] = "WARRIOR",
+				["reaction"] = "13:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_12"] = {
+							["level_10"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
-										["3:538:518"] = true,
+										["3:538:520"] = true,
 									},
 								},
-								["max_health"] = 166,
+								["max_health"] = 118,
 							},
 							["level_13"] = {
 								["locations"] = {
@@ -5075,18 +5080,17 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 196,
 							},
-							["level_10"] = {
+							["level_12"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
-										["3:538:520"] = true,
+										["3:538:518"] = true,
 									},
 								},
-								["max_health"] = 118,
+								["max_health"] = 166,
 							},
 						},
 					},
 				},
-				["reaction"] = "13:Alliance:FRIENDLY",
 			},
 			["46255"] = {
 				["genders"] = {
@@ -5094,6 +5098,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "3:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5111,15 +5116,14 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "3:Alliance:FRIENDLY",
 			},
 			["27893"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[55078] = 2,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -5130,7 +5134,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "PALADIN",
-				["reaction"] = "61:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5155,24 +5158,20 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "61:Alliance:FRIENDLY",
 			},
 			["8541"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["FEMALE"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
 						["stats"] = {
-							["level_56"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:542:628"] = true,
-									},
-								},
-								["max_health"] = 2883,
-							},
 							["level_58"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
@@ -5180,6 +5179,14 @@ WoWDBProfilerData = {
 									},
 								},
 								["max_health"] = 3048,
+							},
+							["level_56"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:542:628"] = true,
+									},
+								},
+								["max_health"] = 2883,
 							},
 							["level_57"] = {
 								["locations"] = {
@@ -5189,9 +5196,6 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 2962,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 3,
 						},
 						["spells"] = {
 							[3589] = 8,
@@ -5215,6 +5219,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "8:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5229,14 +5234,13 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "8:Alliance:FRIENDLY",
 			},
 			["42773"] = {
-				["reaction"] = "8:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "8:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5255,10 +5259,10 @@ WoWDBProfilerData = {
 			["51912"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[95826] = 2,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -5270,7 +5274,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "PALADIN",
-				["reaction"] = "60:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5289,6 +5292,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "60:Alliance:FRIENDLY",
 			},
 			["42489"] = {
 				["genders"] = {
@@ -5296,6 +5300,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "6:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5310,15 +5315,14 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "6:Alliance:FRIENDLY",
 			},
 			["45431"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
 						["Did you see that, Tarenar?"] = true,
-						["Can we slow down just a bit?"] = true,
 						["I can't believe we're actually fighting for the Crusade!"] = true,
 						["Ka-boom!"] = true,
+						["Can we slow down just a bit?"] = true,
 					},
 				},
 				["genders"] = {
@@ -5326,6 +5330,9 @@ WoWDBProfilerData = {
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[79968] = 8,
+						},
 						["stats"] = {
 							["level_59"] = {
 								["max_health"] = 2320,
@@ -5337,26 +5344,19 @@ WoWDBProfilerData = {
 								["power"] = "MANA:1534",
 							},
 						},
-						["spells"] = {
-							[79968] = 8,
-						},
 					},
 				},
 				["class"] = "PALADIN",
 				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["43325"] = {
-				["reaction"] = "8:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "8:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[87347] = 28,
-							[80944] = 45,
-						},
 						["stats"] = {
 							["level_7"] = {
 								["locations"] = {
@@ -5377,9 +5377,9 @@ WoWDBProfilerData = {
 										["5:552:772"] = true,
 										["5:898:558"] = true,
 										["5:704:414"] = true,
-										["5:702:422"] = true,
-										["5:626:698"] = true,
 										["5:714:328"] = true,
+										["5:626:698"] = true,
+										["5:702:422"] = true,
 										["5:388:714"] = true,
 										["5:386:692"] = true,
 									},
@@ -5387,15 +5387,19 @@ WoWDBProfilerData = {
 								["max_health"] = 76,
 							},
 						},
+						["spells"] = {
+							[87347] = 28,
+							[80944] = 45,
+						},
 					},
 				},
 			},
 			["48935"] = {
-				["reaction"] = "11:Alliance:NEUTRAL",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "11:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5423,10 +5427,6 @@ WoWDBProfilerData = {
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[58461] = 1054,
-							[63227] = 10,
-						},
 						["stats"] = {
 							["level_19"] = {
 								["locations"] = {
@@ -5446,6 +5446,10 @@ WoWDBProfilerData = {
 								["max_health"] = 358,
 							},
 						},
+						["spells"] = {
+							[58461] = 1054,
+							[63227] = 10,
+						},
 					},
 				},
 				["class"] = "WARRIOR",
@@ -5462,6 +5466,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "ROGUE",
+				["reaction"] = "9:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5477,14 +5482,13 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "9:Alliance:FRIENDLY",
 			},
 			["10667"] = {
-				["reaction"] = "57:Alliance:FRIENDLY",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["FEMALE"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5509,11 +5513,11 @@ WoWDBProfilerData = {
 				},
 			},
 			["6547"] = {
+				["reaction"] = "59:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5544,6 +5548,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "16:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5558,14 +5563,13 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "16:Alliance:FRIENDLY",
 			},
 			["17069"] = {
+				["reaction"] = "59:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5582,11 +5586,11 @@ WoWDBProfilerData = {
 				},
 			},
 			["1412"] = {
+				["reaction"] = "63:Alliance:NEUTRAL",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "63:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5609,9 +5613,6 @@ WoWDBProfilerData = {
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[95826] = 8,
-						},
 						["stats"] = {
 							["level_10"] = {
 								["locations"] = {
@@ -5622,11 +5623,14 @@ WoWDBProfilerData = {
 								["max_health"] = 237,
 							},
 						},
+						["spells"] = {
+							[95826] = 8,
+						},
 					},
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "10:Alliance:FRIENDLY",
 				["faction"] = "Ironforge",
+				["reaction"] = "10:Alliance:FRIENDLY",
 			},
 			["1252"] = {
 				["is_pvp"] = true,
@@ -5635,6 +5639,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5649,16 +5654,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["10950"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[1604] = 1,
 							[11976] = 2,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -5670,6 +5674,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5679,14 +5684,13 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["3162"] = {
 				["is_pvp"] = true,
-				["reaction"] = "10:Alliance:FRIENDLY",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["reaction"] = "10:Alliance:FRIENDLY",
 				["faction"] = "Ironforge",
 				["sells"] = {
 					[796] = "-1:1:[369]",
@@ -5700,6 +5704,15 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
+							["level_9"] = {
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:496:520"] = true,
+										["3:498:514"] = true,
+									},
+								},
+								["max_health"] = 101,
+							},
 							["level_10"] = {
 								["locations"] = {
 									["New Tinkertown:469"] = {
@@ -5708,15 +5721,6 @@ WoWDBProfilerData = {
 									},
 								},
 								["max_health"] = 119,
-							},
-							["level_9"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:498:514"] = true,
-										["3:496:520"] = true,
-									},
-								},
-								["max_health"] = 101,
 							},
 						},
 					},
@@ -5730,6 +5734,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "ROGUE",
+				["reaction"] = "15:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5754,14 +5759,13 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "15:Alliance:FRIENDLY",
 			},
 			["41539"] = {
-				["reaction"] = "16:Alliance:FRIENDLY",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "16:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5787,8 +5791,8 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 				["faction"] = "Argent Crusade",
-				["reaction"] = "61:Alliance:FRIENDLY",
 				["class"] = "WARRIOR",
+				["flight_master"] = true,
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5803,31 +5807,31 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["flight_master"] = true,
+				["reaction"] = "61:Alliance:FRIENDLY",
 			},
 			["41202"] = {
-				["reaction"] = "13:Alliance:NEUTRAL",
-				["class"] = "PALADIN",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "13:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_13"] = {
-								["max_health"] = 196,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:588:578"] = true,
-									},
-								},
-								["power"] = "MANA:165",
-							},
 							["level_14"] = {
 								["max_health"] = 203,
 								["locations"] = {
 									["Dun Morogh:27"] = {
 										["3:566:566"] = true,
+									},
+								},
+								["power"] = "MANA:165",
+							},
+							["level_13"] = {
+								["max_health"] = 196,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:588:578"] = true,
 									},
 								},
 								["power"] = "MANA:165",
@@ -5853,6 +5857,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "17:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5883,15 +5888,14 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "17:Alliance:FRIENDLY",
 			},
 			["41382"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[77477] = 18,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -5903,6 +5907,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5910,9 +5915,9 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
 										["3:522:402"] = true,
-										["3:522:408"] = true,
-										["3:506:420"] = true,
 										["3:516:412"] = true,
+										["3:506:420"] = true,
+										["3:522:408"] = true,
 									},
 								},
 								["max_health"] = 2545,
@@ -5920,27 +5925,26 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["41182"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[6685] = 47,
 							[77216] = 248,
 							[1604] = 1,
 						},
-						["stats"] = {
-						},
 					},
 				},
 			},
 			["45650"] = {
+				["reaction"] = "58:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -5968,7 +5972,7 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 				["faction"] = "Ironforge",
-				["flight_master"] = true,
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -5981,14 +5985,6 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 1029,
 							},
-							["level_21"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:538:526"] = true,
-									},
-								},
-								["max_health"] = 1268,
-							},
 							["level_10"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
@@ -5997,22 +5993,27 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 356,
 							},
+							["level_21"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:538:526"] = true,
+									},
+								},
+								["max_health"] = 1268,
+							},
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
+				["flight_master"] = true,
 			},
 			["42222"] = {
+				["reaction"] = "7:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "7:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[69851] = 12,
-						},
 						["stats"] = {
 							["level_6"] = {
 								["locations"] = {
@@ -6024,25 +6025,31 @@ WoWDBProfilerData = {
 										["3:404:706"] = true,
 										["3:406:698"] = true,
 										["3:410:728"] = true,
-										["3:416:736"] = true,
 										["3:426:736"] = true,
+										["3:416:736"] = true,
 									},
 								},
 								["max_health"] = 67,
 							},
 						},
+						["spells"] = {
+							[69851] = 12,
+						},
 					},
 				},
 			},
 			["8550"] = {
-				["reaction"] = "57:Alliance:HOSTILE",
-				["class"] = "MAGE",
 				["genders"] = {
 					["MALE"] = true,
 					["FEMALE"] = true,
 				},
+				["class"] = "MAGE",
+				["reaction"] = "57:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
 						["stats"] = {
 							["level_56"] = {
 								["max_health"] = 2317,
@@ -6058,12 +6065,9 @@ WoWDBProfilerData = {
 								["power"] = "MANA:3293",
 							},
 							["level_57"] = {
-								["max_health"] = 2384,
 								["power"] = "MANA:3293",
+								["max_health"] = 2384,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 4,
 						},
 						["spells"] = {
 							[16592] = 31,
@@ -6086,6 +6090,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "PALADIN",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6101,16 +6106,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["11289"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[11976] = 33,
 							[12169] = 23,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -6122,6 +6126,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6138,19 +6143,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "20:Alliance:FRIENDLY",
 			},
 			["41762"] = {
-				["reaction"] = "18:Alliance:HOSTILE",
-				["class"] = "PALADIN",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "18:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 3,
-						},
 						["stats"] = {
 							["level_19"] = {
 								["max_health"] = 354,
@@ -6174,6 +6175,9 @@ WoWDBProfilerData = {
 								["power"] = "MANA:191",
 							},
 						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
 						["spells"] = {
 							[33970] = 13,
 						},
@@ -6187,17 +6191,13 @@ WoWDBProfilerData = {
 				},
 			},
 			["1260"] = {
-				["reaction"] = "11:Alliance:HOSTILE",
-				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "11:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[18501] = 2,
-							[77808] = 2,
-						},
 						["stats"] = {
 							["level_12"] = {
 								["max_health"] = 190,
@@ -6209,19 +6209,23 @@ WoWDBProfilerData = {
 								["power"] = "MANA:126",
 							},
 						},
+						["spells"] = {
+							[18501] = 2,
+							[77808] = 2,
+						},
 					},
 				},
 			},
 			["10937"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[6253] = 2,
 							[9128] = 15,
-							[15284] = 3,
 							[18650] = 1,
+							[15284] = 3,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -6253,17 +6257,17 @@ WoWDBProfilerData = {
 					},
 				},
 				["class"] = "PALADIN",
+				["faction"] = "The Earthen Ring",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["faction"] = "The Earthen Ring",
 			},
 			["3177"] = {
 				["is_pvp"] = true,
-				["reaction"] = "17:Alliance:FRIENDLY",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["reaction"] = "17:Alliance:FRIENDLY",
 				["faction"] = "Ironforge",
 				["sells"] = {
 					[2491] = "-1:1:[484]",
@@ -6322,7 +6326,6 @@ WoWDBProfilerData = {
 					[4542] = "-1:5:[500:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6337,13 +6340,14 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "57:Alliance:FRIENDLY",
 			},
 			["10945"] = {
+				["reaction"] = "57:Alliance:FRIENDLY",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6361,11 +6365,11 @@ WoWDBProfilerData = {
 				},
 			},
 			["48704"] = {
+				["reaction"] = "59:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6384,26 +6388,55 @@ WoWDBProfilerData = {
 			["54334"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[101260] = 3,
-						},
 						["stats"] = {
+						},
+						["spells"] = {
+							[101260] = 5,
 						},
 					},
 				},
 			},
-			["41258"] = {
+			["47286"] = {
+				["is_pvp"] = true,
+				["reaction"] = "61:Alliance:FRIENDLY",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["faction"] = "Argent Crusade",
+				["sells"] = {
+					[5956] = "-1:1:[18:0:0]",
+					[3857] = "-1:1:[500:0:0]",
+					[3466] = "-1:1:[2000:0:0]",
+					[18567] = "-1:1:[30000:0:0]",
+					[2901] = "-1:1:[81:0:0]",
+					[2880] = "-1:1:[100:0:0]",
+					[160298] = "-1:1:[3000:0:0]",
+				},
 				["class"] = "WARRIOR",
-				["reaction"] = "19:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[77808] = 42,
-							[1604] = 2,
+						["stats"] = {
+							["level_59"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:746:538"] = true,
+									},
+								},
+								["max_health"] = 2320,
+							},
 						},
+					},
+				},
+				["can_repair"] = true,
+			},
+			["41258"] = {
+				["reaction"] = "19:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
 						["stats"] = {
 							["level_15"] = {
 								["locations"] = {
@@ -6428,6 +6461,10 @@ WoWDBProfilerData = {
 								["max_health"] = 380,
 							},
 						},
+						["spells"] = {
+							[77808] = 42,
+							[1604] = 2,
+						},
 					},
 				},
 			},
@@ -6436,8 +6473,8 @@ WoWDBProfilerData = {
 					["CHAT_MSG_MONSTER_SAY"] = {
 						["I am yak rider. And this is my yak."] = true,
 						["I think yak has started to move."] = true,
-						["Is this what a dream feels like?"] = true,
 						["It is not my intention to initiate legislation against you."] = true,
+						["Is this what a dream feels like?"] = true,
 					},
 				},
 				["transmogrifier"] = true,
@@ -6451,8 +6488,8 @@ WoWDBProfilerData = {
 										["3:346:490"] = true,
 									},
 									["City of Ironforge:87"] = {
-										["3:334:698"] = true,
 										["3:342:698"] = true,
+										["3:334:698"] = true,
 									},
 									["Dun Morogh:27"] = {
 										["3:540:510"] = true,
@@ -6464,17 +6501,17 @@ WoWDBProfilerData = {
 					},
 				},
 				["class"] = "MAGE",
-				["reaction"] = "21:Alliance:FRIENDLY",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["45664"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6500,17 +6537,67 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["1130"] = {
-				["reaction"] = "16:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
+			["142668"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 1,
+						["stats"] = {
+							["level_113"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:330:652"] = true,
+									},
+								},
+								["max_health"] = 23637,
+							},
 						},
+					},
+				},
+				["sells"] = {
+					[160400] = "-1:10:[25000:0:0]",
+					[39354] = "-1:5:[15:0:0]",
+					[161373] = "-1:5:[25000]",
+					[159920] = "-1:5:[25000]",
+					[162559] = "-1:5:[25000]",
+					[38682] = "-1:1:[1000:0:0]",
+					[161128] = "-1:5:[25000]",
+					[163075] = "-1:5:[25000]",
+					[160710] = "-1:10:[25000:0:0]",
+					[160502] = "-1:1:[11500:0:0]",
+					[163203] = "-1:1:[50000000:0:0]",
+					[162588] = "-1:1:[2000000:0:0]",
+					[160709] = "-1:10:[25000:0:0]",
+					[6530] = "-1:1:[100]",
+					[160398] = "-1:10:[25000:0:0]",
+					[160712] = "-1:10:[25000:0:0]",
+					[158205] = "-1:1:[1000:0:0]",
+					[163076] = "-1:5:[25000]",
+					[6256] = "-1:1:[23:0:0]",
+					[158186] = "-1:20:[250:0:0]",
+					[160298] = "-1:1:[3000:0:0]",
+					[160705] = "-1:1:[50:0:0]",
+					[160399] = "-1:10:[25000:0:0]",
+					[161383] = "-1:5:[25000]",
+					[163569] = "-1:5:[100:0:0]",
+					[163077] = "-1:5:[25000]",
+					[159919] = "-1:5:[25000]",
+					[160059] = "-1:1:[250:0:0]",
+					[159959] = "-1:1:[6000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "61:Alliance:FRIENDLY",
+				["can_repair"] = true,
+			},
+			["1130"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "16:Alliance:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
 						["stats"] = {
 							["level_18"] = {
 								["locations"] = {
@@ -6521,6 +6608,9 @@ WoWDBProfilerData = {
 								["max_health"] = 467,
 							},
 						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["spells"] = {
 							[3130] = 2,
 						},
@@ -6530,24 +6620,52 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["14822"] = {
+			["43033"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[23768] = 3,
-						},
 						["stats"] = {
+						},
+						["spells"] = {
+							[57322] = 1,
 						},
 					},
 				},
 			},
-			["69791"] = {
+			["8546"] = {
+				["reaction"] = "56:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[115804] = 2,
+						["loot_counts"] = {
+							["drops"] = 2,
 						},
 						["stats"] = {
+							["level_54"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:350:460"] = true,
+									},
+								},
+								["max_health"] = 2726,
+							},
+							["level_55"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:376:424"] = true,
+									},
+								},
+								["max_health"] = 2801,
+							},
+						},
+						["spells"] = {
+							[8646] = 2,
+						},
+						["drops"] = {
+							"money:380", -- [1]
+							"money:682", -- [2]
 						},
 					},
 				},
@@ -6570,7 +6688,6 @@ WoWDBProfilerData = {
 					[4542] = "-1:5:[500:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6593,14 +6710,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "57:Alliance:FRIENDLY",
 			},
 			["162764"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[316835] = 1,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -6609,9 +6727,9 @@ WoWDBProfilerData = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
 						["Mekgineer Thermaplugg refuses to acknowledge that his defeat is imminent! He has sent Razlo Crushcog to prevent us from rebuilding our beloved <race>regan!"] = true,
-						["But Breelie has thwarted his plans at every turn, and now the dwarves of Ironforge stand with us!"] = true,
-						["Let's send him crawling back to his master in defeat!"] = true,
 						["We assembled a mighty force and defeated Thermaplugg's servants, fighting our way into the city. But, the usurper Thermaplugg had one last trick up his sleeve..."] = true,
+						["Let's send him crawling back to his master in defeat!"] = true,
+						["But Breelie has thwarted his plans at every turn, and now the dwarves of Ironforge stand with us!"] = true,
 					},
 				},
 				["genders"] = {
@@ -6619,14 +6737,15 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "9:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_-1"] = {
 								["locations"] = {
 									["New Tinkertown:469"] = {
-										["3:388:328"] = true,
 										["3:386:334"] = true,
+										["3:388:328"] = true,
 									},
 								},
 								["max_health"] = 36691,
@@ -6634,7 +6753,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "9:Alliance:FRIENDLY",
 			},
 			["6569"] = {
 				["is_pvp"] = true,
@@ -6643,6 +6761,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6659,7 +6778,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["42630"] = {
 				["genders"] = {
@@ -6667,6 +6785,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "PALADIN",
+				["reaction"] = "5:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6674,8 +6793,8 @@ WoWDBProfilerData = {
 								["max_health"] = 60,
 								["locations"] = {
 									["New Tinkertown:469"] = {
-										["3:384:396"] = true,
 										["3:382:404"] = true,
+										["3:384:396"] = true,
 									},
 								},
 								["power"] = "MANA:104",
@@ -6692,7 +6811,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "5:Alliance:FRIENDLY",
 			},
 			["1305"] = {
 				["is_pvp"] = true,
@@ -6702,16 +6820,17 @@ WoWDBProfilerData = {
 				["faction"] = "Stormwind",
 				["sells"] = {
 					[2596] = "-1:1:[120:0:0]",
-					[82344] = "-1:1:[25600]",
-					[2593] = "-1:1:[150:0:0]",
-					[2595] = "-1:1:[2000:0:0]",
 					[82343] = "-1:1:[22400]",
-					[83094] = "-1:1:[25600]",
+					[2593] = "-1:1:[150:0:0]",
 					[83095] = "-1:1:[22400]",
-					[2723] = "-1:1:[50:0:0]",
 					[2594] = "-1:1:[1500:0:0]",
+					[83094] = "-1:1:[25600]",
+					[2595] = "-1:1:[2000:0:0]",
+					[2723] = "-1:1:[50:0:0]",
+					[82344] = "-1:1:[25600]",
 				},
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6726,19 +6845,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["41146"] = {
-				["reaction"] = "14:Alliance:HOSTILE",
-				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "14:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
 						["stats"] = {
 							["level_13"] = {
 								["max_health"] = 196,
@@ -6766,6 +6881,9 @@ WoWDBProfilerData = {
 								["power"] = "MANA:138",
 							},
 						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["spells"] = {
 							[75775] = 4,
 						},
@@ -6781,7 +6899,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Crusade",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -6796,14 +6913,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
 			["61836"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[79849] = 3,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -6811,47 +6929,49 @@ WoWDBProfilerData = {
 			["727"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[40505] = 34,
 							[95826] = 2,
 						},
-						["stats"] = {
-						},
 					},
 				},
 			},
-			["4078"] = {
+			["44231"] = {
 				["is_pvp"] = true,
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["faction"] = "Stormwind",
+				["faction"] = "Argent Crusade",
 				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_32"] = {
+							["level_120"] = {
 								["locations"] = {
-									["Stormwind City:84"] = {
-										["3:528:858"] = true,
-										["3:526:864"] = true,
+									["Eastern Plaguelands:23"] = {
+										["3:528:536"] = true,
 									},
 								},
-								["max_health"] = 922,
+								["max_health"] = 130083,
 							},
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
+				["reaction"] = "57:Alliance:FRIENDLY",
 			},
 			["8520"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
 						["stats"] = {
 							["level_58"] = {
 								["locations"] = {
@@ -6871,16 +6991,13 @@ WoWDBProfilerData = {
 									["Eastern Plaguelands:23"] = {
 										["3:572:754"] = true,
 										["3:578:764"] = true,
-										["3:562:740"] = true,
 										["3:586:726"] = true,
+										["3:562:740"] = true,
 										["3:542:730"] = true,
 									},
 								},
 								["max_health"] = 2967,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 2,
 						},
 						["spells"] = {
 							[16555] = 7,
@@ -6896,27 +7013,34 @@ WoWDBProfilerData = {
 			["10944"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[13005] = 2,
 							[17284] = 1,
 							[1604] = 1,
 						},
+						["stats"] = {
+						},
 					},
 				},
 			},
-			["13016"] = {
-				["reaction"] = "21:Alliance:NEUTRAL",
-				["class"] = "WARRIOR",
+			["10276"] = {
+				["is_pvp"] = true,
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_1"] = {
-								["max_health"] = 1,
+							["level_31"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:522:422"] = true,
+									},
+								},
+								["max_health"] = 869,
 							},
 						},
 					},
@@ -6931,6 +7055,12 @@ WoWDBProfilerData = {
 				["reaction"] = "59:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[80004] = 1,
+							[1604] = 1,
+							[6660] = 3,
+							[80003] = 3,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["max_health"] = 4802,
@@ -6942,12 +7072,6 @@ WoWDBProfilerData = {
 								["power"] = "MANA:1381",
 							},
 						},
-						["spells"] = {
-							[80004] = 1,
-							[1604] = 1,
-							[6660] = 3,
-							[80003] = 3,
-						},
 					},
 				},
 				["class"] = "PALADIN",
@@ -6955,67 +7079,40 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 			},
-			["44443"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[44977] = 8,
-							[86180] = 1,
-						},
-					},
-				},
-			},
-			["8681"] = {
-				["is_pvp"] = true,
+			["460"] = {
 				["genders"] = {
 					["MALE"] = true,
 				},
 				["faction"] = "Gnomeregan",
-				["sells"] = {
-					[38426] = "-1:1:[30000:0:0]",
-					[6261] = "-1:1:[1000:0:0]",
-					[10290] = "-1:1:[2500:0:0]",
-					[10314] = "1:1:[4000]",
-					[2321] = "-1:1:[100:0:0]",
-					[2325] = "-1:1:[1000:0:0]",
-					[4340] = "-1:1:[350:0:0]",
-					[10323] = "1:1:[4500]",
-					[4341] = "-1:1:[500:0:0]",
-					[10321] = "1:1:[4500]",
-					[10317] = "1:1:[4000]",
-					[4291] = "-1:1:[500:0:0]",
-					[2320] = "-1:1:[10:0:0]",
-					[10326] = "1:1:[5000]",
-					[2324] = "-1:1:[25:0:0]",
-					[14341] = "-1:1:[5000:0:0]",
-					[4342] = "-1:1:[2500:0:0]",
-					[8343] = "-1:1:[2000:0:0]",
-					[2604] = "-1:1:[50:0:0]",
-					[2605] = "-1:1:[100:0:0]",
-					[6260] = "-1:1:[50:0:0]",
-				},
 				["class"] = "WARRIOR",
+				["reaction"] = "4:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_35"] = {
+							["level_3"] = {
 								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:442:300"] = true,
-										["3:432:292"] = true,
-										["3:440:292"] = true,
-										["3:436:280"] = true,
-										["3:438:286"] = true,
+									["New Tinkertown:469"] = {
+										["3:376:378"] = true,
+										["3:380:372"] = true,
 									},
 								},
-								["max_health"] = 1090,
+								["max_health"] = 46,
 							},
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
+			},
+			["45729"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79977] = 28,
+							[79976] = 28,
+						},
+						["stats"] = {
+						},
+					},
+				},
 			},
 			["11146"] = {
 				["is_pvp"] = true,
@@ -7075,37 +7172,37 @@ WoWDBProfilerData = {
 							[7408] = "0:65:270",
 							[3117] = "0:125:900",
 							[9928] = "0:205:4500",
-							[16969] = "0:275:13500",
+							[2661] = "0:35:90",
 							[9931] = "0:210:4500",
-							[9959] = "0:230:13500",
+							[3506] = "0:155:4500",
 							[2674] = "0:125:900",
-							[9961] = "0:230:13500",
+							[3337] = "0:125:900",
 							[2738] = "0:20:45",
-							[10001] = "0:230:13500",
+							[9926] = "0:205:4500",
 							[2675] = "0:145:900",
-							[2737] = "0:15:45",
+							[7223] = "0:185:900",
 							[2739] = "0:25:45",
-							[16663] = "0:300:10800",
-							[16658] = "0:295:9000",
-							[2740] = "0:110:180",
+							[3501] = "0:165:900",
+							[16649] = "0:270:9000",
 							[3502] = "0:170:1125",
-							[16646] = "0:265:9000",
+							[2740] = "0:110:180",
+							[9935] = "0:215:4500",
 							[16643] = "0:250:9000",
-							[16642] = "0:250:9000",
+							[9993] = "0:210:9000",
 							[2741] = "0:115:180",
 							[2665] = "0:65:90",
 							[264440] = "0:1:450000",
-							[9993] = "0:210:9000",
+							[16642] = "0:250:9000",
 							[2742] = "0:120:180",
-							[9935] = "0:215:4500",
+							[16646] = "0:265:9000",
 							[16730] = "0:300:10800",
-							[16649] = "0:270:9000",
-							[3501] = "0:165:900",
-							[7223] = "0:185:900",
-							[9926] = "0:205:4500",
-							[3337] = "0:125:900",
-							[3506] = "0:155:4500",
-							[2661] = "0:35:90",
+							[16658] = "0:295:9000",
+							[16663] = "0:300:10800",
+							[2737] = "0:15:45",
+							[10001] = "0:230:13500",
+							[9961] = "0:230:13500",
+							[9959] = "0:230:13500",
+							[16969] = "0:275:13500",
 						},
 						["General"] = {
 							[2018] = "0:0:9",
@@ -7141,11 +7238,11 @@ WoWDBProfilerData = {
 							[76474] = "0:20:54000",
 							[76289] = "0:50:67500",
 							[76293] = "0:20:54000",
-							[76182] = "0:20:54000",
+							[76181] = "0:10:49500",
 							[76179] = "0:1:36000",
 							[76435] = "0:30:58500",
 							[76285] = "0:20:54000",
-							[76181] = "0:10:49500",
+							[76182] = "0:20:54000",
 						},
 					},
 				},
@@ -7154,6 +7251,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7169,13 +7267,13 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
-			["69792"] = {
+			["44443"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[115804] = 2,
+							[44977] = 8,
+							[86180] = 1,
 						},
 						["stats"] = {
 						},
@@ -7185,104 +7283,93 @@ WoWDBProfilerData = {
 			["41425"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[34827] = 2,
-						},
-						["stats"] = {
 						},
 					},
 				},
 			},
-			["5154"] = {
-				["is_pvp"] = true,
+			["1196"] = {
 				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["sells"] = {
-					[38426] = "-1:1:[30000:0:0]",
-					[6261] = "-1:1:[1000:0:0]",
-					[10290] = "-1:1:[2500:0:0]",
-					[54603] = "-1:1:[0]",
-					[6260] = "-1:1:[50:0:0]",
-					[54599] = "-1:1:[0]",
-					[2321] = "-1:1:[100:0:0]",
-					[54605] = "-1:1:[0]",
-					[2325] = "-1:1:[1000:0:0]",
-					[4340] = "-1:1:[350:0:0]",
-					[54604] = "-1:1:[0]",
-					[14341] = "-1:1:[5000:0:0]",
-					[54602] = "-1:1:[0]",
-					[54600] = "-1:1:[0]",
-					[54593] = "-1:1:[0]",
-					[54594] = "-1:1:[0]",
-					[54595] = "-1:1:[0]",
-					[54596] = "-1:1:[0]",
-					[54597] = "-1:1:[0]",
-					[54598] = "-1:1:[0]",
-					[4291] = "-1:1:[500:0:0]",
-					[2320] = "-1:1:[10:0:0]",
-					[54601] = "-1:1:[0]",
-					[2324] = "-1:1:[25:0:0]",
-					[2605] = "-1:1:[100:0:0]",
-					[4342] = "-1:1:[2500:0:0]",
-					[8343] = "-1:1:[2000:0:0]",
-					[4341] = "-1:1:[500:0:0]",
-					[68199] = "-1:1:[0]",
-					[2604] = "-1:1:[50:0:0]",
+					["UNKNOWN"] = true,
 				},
 				["class"] = "WARRIOR",
+				["reaction"] = "16:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_30"] = {
+							["level_17"] = {
 								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:432:284"] = true,
+									["Dun Morogh:27"] = {
+										["3:694:564"] = true,
+										["3:694:570"] = true,
 									},
 								},
-								["max_health"] = 782,
+								["max_health"] = 358,
 							},
+							["level_16"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:704:584"] = true,
+									},
+								},
+								["max_health"] = 346,
+							},
+						},
+						["spells"] = {
+							[3130] = 2,
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["45792"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[79976] = 31,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["47582"] = {
+			["42491"] = {
 				["is_pvp"] = true,
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["What we do know is that Crushcog is using an advanced mechano-tank prototype and his irradiated <race>s are trying to repair more at the old arsenal."] = true,
+					},
+				},
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["faction"] = "Ironforge",
-				["class"] = "MAGE",
+				["faction"] = "Gnomeregan",
+				["class"] = "WARRIOR",
+				["reaction"] = "9:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_120"] = {
-								["max_health"] = 104064,
+							["level_8"] = {
 								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:606:448"] = true,
-										["3:604:454"] = true,
+									["New Tinkertown:469"] = {
+										["3:384:336"] = true,
 									},
 								},
-								["power"] = "MANA:1770630",
+								["max_health"] = 4365,
+							},
+							["level_9"] = {
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:384:336"] = true,
+									},
+								},
+								["max_health"] = 5055,
 							},
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["5173"] = {
 				["is_pvp"] = true,
@@ -7291,6 +7378,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7309,7 +7397,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["12941"] = {
 				["genders"] = {
@@ -7319,7 +7406,7 @@ WoWDBProfilerData = {
 				["sells"] = {
 					[3857] = "-1:1:[500:0:0]",
 					[7005] = "-1:1:[82]",
-					[3371] = "-1:20:[150:0:0]",
+					[6532] = "-1:1:[250]",
 					[4289] = "-1:1:[50:0:0]",
 					[3466] = "-1:1:[2000:0:0]",
 					[2321] = "-1:1:[100:0:0]",
@@ -7327,28 +7414,27 @@ WoWDBProfilerData = {
 					[20815] = "-1:1:[800:0:0]",
 					[4340] = "-1:1:[350:0:0]",
 					[5956] = "-1:1:[18:0:0]",
-					[6530] = "-1:1:[100]",
-					[21954] = "1:1:[10000]",
-					[2320] = "-1:1:[10:0:0]",
-					[2678] = "-1:5:[10:0:0]",
-					[14341] = "-1:1:[5000:0:0]",
-					[4399] = "-1:1:[200:0:0]",
 					[2901] = "-1:1:[81:0:0]",
+					[21954] = "1:1:[10000]",
+					[6217] = "-1:1:[124:0:0]",
+					[2678] = "-1:5:[10:0:0]",
+					[4400] = "-1:1:[2000:0:0]",
+					[4399] = "-1:1:[200:0:0]",
+					[4341] = "-1:1:[500:0:0]",
 					[85663] = "-1:1:[105]",
 					[6256] = "-1:1:[23:0:0]",
 					[4291] = "-1:1:[500:0:0]",
-					[6217] = "-1:1:[124:0:0]",
+					[2320] = "-1:1:[10:0:0]",
 					[2880] = "-1:1:[100:0:0]",
 					[39505] = "-1:1:[750]",
-					[4400] = "-1:1:[2000:0:0]",
+					[14341] = "-1:1:[5000:0:0]",
 					[4342] = "-1:1:[2500:0:0]",
 					[8343] = "-1:1:[2000:0:0]",
-					[4341] = "-1:1:[500:0:0]",
+					[6530] = "-1:1:[100]",
 					[2325] = "-1:1:[1000:0:0]",
-					[6532] = "-1:1:[250]",
+					[3371] = "-1:20:[150:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "61:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7363,144 +7449,32 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "61:Alliance:FRIENDLY",
 			},
-			["5157"] = {
+			["47582"] = {
 				["is_pvp"] = true,
-				["teaches"] = {
-					["WARLOCK"] = {
-						["Cataclysm Enchanting"] = {
-							[74238] = "0:60:27000",
-							[74191] = "0:1:27000",
-							[74195] = "0:1:27000",
-							[74199] = "0:5:27000",
-							[74207] = "0:15:27000",
-							[74211] = "0:20:27000",
-							[74223] = "0:30:27000",
-							[74231] = "0:45:27000",
-							[74235] = "0:50:27000",
-							[74239] = "0:60:27000",
-							[74192] = "0:1:27000",
-							[74200] = "0:10:27000",
-							[74212] = "0:20:27000",
-							[74220] = "0:30:27000",
-							[74232] = "0:45:27000",
-							[74236] = "0:55:27000",
-							[95471] = "0:20:27000",
-							[74189] = "0:1:27000",
-							[74193] = "0:1:27000",
-							[74197] = "0:1:27000",
-							[74201] = "0:10:27000",
-							[74213] = "0:25:27000",
-							[74225] = "0:35:27000",
-							[74229] = "0:40:27000",
-							[74237] = "0:55:27000",
-							[74198] = "0:5:27000",
-							[74202] = "0:15:27000",
-							[104698] = "0:65:27000",
-							[74214] = "0:25:27000",
-							[74240] = "0:60:27000",
-							[217645] = "0:50:27000",
-							[74226] = "0:35:27000",
-							[74230] = "0:40:27000",
-							[74234] = "0:50:27000",
-							[74132] = "0:1:27000",
-						},
-						["General"] = {
-							[7411] = "0:0:9",
-						},
-						["Enchanting"] = {
-							[13746] = "0:205:3780",
-							[13937] = "0:240:5580",
-							[7745] = "0:100:450",
-							[7771] = "0:70:180",
-							[13538] = "0:140:2250",
-							[13626] = "0:150:2250",
-							[13935] = "0:235:5220",
-							[7457] = "0:50:225",
-							[7788] = "0:90:450",
-							[7426] = "0:40:90",
-							[13622] = "0:150:2250",
-							[13661] = "0:180:3240",
-							[13631] = "0:155:2340",
-							[13529] = "0:145:2160",
-							[13939] = "0:240:5580",
-							[14293] = "0:10:45",
-							[13695] = "0:200:3600",
-							[17181] = "0:250:9000",
-							[13941] = "0:245:5580",
-							[13948] = "0:250:5850",
-							[13501] = "0:130:1350",
-							[13659] = "0:180:2880",
-							[13943] = "0:245:5580",
-							[20008] = "0:255:9000",
-							[13503] = "0:140:1800",
-							[264464] = "0:1:450000",
-							[217637] = "0:275:11250",
-							[20012] = "0:270:9000",
-							[20013] = "0:295:18000",
-							[13663] = "0:185:3420",
-							[17180] = "0:250:9000",
-							[20016] = "0:280:13500",
-							[13822] = "0:210:3960",
-							[13917] = "0:230:4860",
-							[13887] = "0:225:4500",
-							[7779] = "0:80:360",
-							[13635] = "0:155:2340",
-							[7748] = "0:60:225",
-							[20023] = "0:295:18000",
-							[13607] = "0:145:2160",
-							[13637] = "0:160:2520",
-							[13858] = "0:220:4320",
-							[13890] = "0:225:4500",
-							[20028] = "0:290:13500",
-							[13815] = "0:210:3960",
-							[14807] = "0:70:180",
-							[13640] = "0:160:2430",
-							[63746] = "0:225:4500",
-							[7420] = "0:15:45",
-							[13421] = "0:115:720",
-							[13642] = "0:165:2520",
-							[13485] = "0:130:1350",
-							[13700] = "0:200:3600",
-							[14809] = "0:155:2340",
-							[13644] = "0:170:2520",
-							[14810] = "0:175:2700",
-							[7863] = "0:125:1260",
-							[13693] = "0:195:3600",
-							[13646] = "0:170:2520",
-							[7857] = "0:120:900",
-							[13836] = "0:215:4140",
-							[13378] = "0:105:540",
-							[13648] = "0:170:2520",
-							[13905] = "0:230:4860",
-						},
-					},
-				},
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["faction"] = "Gnomeregan",
-				["class"] = "WARRIOR",
+				["faction"] = "Ironforge",
+				["class"] = "MAGE",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_35"] = {
+							["level_120"] = {
+								["max_health"] = 104064,
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:596:442"] = true,
+										["3:606:448"] = true,
 										["3:604:454"] = true,
-										["3:594:448"] = true,
-										["3:610:450"] = true,
-										["3:590:454"] = true,
-										["3:604:440"] = true,
 									},
 								},
-								["max_health"] = 1090,
+								["power"] = "MANA:1770630",
 							},
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["16284"] = {
 				["genders"] = {
@@ -7508,7 +7482,6 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Argent Dawn",
 				["class"] = "PALADIN",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7524,223 +7497,52 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
-			["5159"] = {
-				["is_pvp"] = true,
-				["teaches"] = {
-					["WARLOCK"] = {
-						["Cooking"] = {
-							[18238] = "0:225:4500",
-							[3400] = "0:175:450",
-							[18240] = "0:240:5400",
-							[4094] = "0:175:450",
-							[264638] = "0:1:270000",
-							[18244] = "0:250:5850",
-							[6499] = "0:50:90",
-							[21175] = "0:200:3600",
-							[18243] = "0:250:5850",
-							[3399] = "0:150:405",
-							[46688] = "0:250:5850",
-							[46684] = "0:250:5850",
-							[2544] = "0:75:180",
-							[2539] = "0:10:45",
-							[2541] = "0:50:90",
-							[6415] = "0:50:90",
-							[6500] = "0:125:270",
-							[2546] = "0:80:135",
-							[93741] = "0:40:72",
-							[37836] = "0:1:9",
-							[6412] = "0:10:45",
-						},
-						["General"] = {
-							[2550] = "0:0:9",
-						},
-						["Cataclysm Cooking"] = {
-							[88015] = "0:1:27000",
-							[88006] = "0:1:31500",
-						},
-					},
-				},
+			["17072"] = {
+				["reaction"] = "59:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_35"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:600:368"] = true,
-										["3:596:376"] = true,
-										["3:602:378"] = true,
-									},
-								},
-								["max_health"] = 1090,
-							},
-						},
-					},
-				},
-				["reaction"] = "21:Alliance:FRIENDLY",
-			},
-			["8603"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:NEUTRAL",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_58"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:698:672"] = true,
-										["3:686:646"] = true,
-										["3:740:642"] = true,
-										["3:692:652"] = true,
-									},
-								},
-								["max_health"] = 2935,
-							},
 							["level_59"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:728:654"] = true,
-										["3:738:624"] = true,
+										["3:750:522"] = true,
 									},
 								},
-								["max_health"] = 3015,
+								["max_health"] = 2321,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 5,
-						},
-						["spells"] = {
-							[16449] = 15,
-						},
-						["drops"] = {
-							"13853:2", -- [1]
-							"13853:2", -- [2]
-							"13853:3", -- [3]
-							"13853:6", -- [4]
-							"13853:6", -- [5]
 						},
 					},
 				},
 			},
-			["8543"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_57"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:554:622"] = true,
-									},
-								},
-								["max_health"] = 2967,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["drops"] = {
-							"money:314", -- [1]
-							"15447:1", -- [2]
-						},
-					},
-				},
-			},
-			["43702"] = {
+			["1691"] = {
 				["is_pvp"] = true,
 				["genders"] = {
 					["MALE"] = true,
 				},
 				["faction"] = "Ironforge",
-				["flight_master"] = true,
+				["sells"] = {
+					[4496] = "-1:1:[500:0:0]",
+					[4498] = "-1:1:[2500:0:0]",
+					[159] = "-1:5:[25:0:0]",
+					[4540] = "-1:5:[25:0:0]",
+					[4470] = "-1:1:[38:0:0]",
+					[5042] = "-1:1:[50:0:0]",
+				},
 				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_17"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:758:544"] = true,
-									},
-								},
-								["max_health"] = 953,
-							},
-							["level_20"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:758:544"] = true,
-									},
-								},
-								["max_health"] = 1182,
-							},
-						},
-					},
-				},
-				["reaction"] = "20:Alliance:FRIENDLY",
-			},
-			["68"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[95826] = 82,
-							[1604] = 9,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["50729"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_50"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:500:62"] = true,
-									},
-								},
-								["max_health"] = 2206,
-							},
-						},
-					},
-				},
-				["reaction"] = "21:Alliance:FRIENDLY",
-			},
-			["42146"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Do as you will with me. I am not afraid. That halfbreed runt will never be my emperor! Long live Twilight's Hammer!"] = true,
-						["I go willingly, <class>. My purpose in my master's plan is fulfilled."] = true,
-					},
-				},
-				["reaction"] = "20:Alliance:FRIENDLY",
+				["reaction"] = "10:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_10"] = {
 								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:366:434"] = true,
-										["3:364:440"] = true,
+									["Dun Morogh:27"] = {
+										["3:544:508"] = true,
 									},
 								},
 								["max_health"] = 118,
@@ -7748,9 +7550,97 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+			},
+			["42294"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "10:Alliance:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_9"] = {
+								["max_health"] = 102,
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:588:434"] = true,
+									},
+								},
+								["power"] = "MANA:115",
+							},
+						},
+					},
+				},
+			},
+			["61834"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[79849] = 3,
+						},
+					},
+				},
+			},
+			["42852"] = {
+				["is_pvp"] = true,
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["That'll teach you to mess with the might of Ironforge and <race>regan!"] = true,
+						["Aye, let's teach this addle-brained <race> a lesson!"] = true,
+					},
+				},
+				["reaction"] = "10:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_9"] = {
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:574:466"] = true,
+										["3:586:438"] = true,
+										["3:572:472"] = true,
+										["3:586:432"] = true,
+									},
+								},
+								["max_health"] = 1011,
+							},
+						},
+						["spells"] = {
+							[80173] = 4,
+							[1604] = 2,
+							[80183] = 1,
+						},
+					},
+				},
 				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
+				},
+			},
+			["109751"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[183585] = 3,
+						},
+					},
+				},
+			},
+			["10940"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[6136] = 4,
+							[15089] = 9,
+						},
+						["stats"] = {
+						},
+					},
 				},
 			},
 			["42129"] = {
@@ -7767,13 +7657,9 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "MAGE",
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[84825] = 1,
-							[84824] = 2,
-							[84822] = 1,
-						},
 						["stats"] = {
 							["level_-1"] = {
 								["max_health"] = 8672000,
@@ -7787,16 +7673,20 @@ WoWDBProfilerData = {
 								["power"] = "MANA:17706300",
 							},
 						},
+						["spells"] = {
+							[84825] = 1,
+							[84824] = 2,
+							[84822] = 1,
+						},
 					},
 				},
-				["reaction"] = "20:Alliance:FRIENDLY",
 			},
 			["92145"] = {
+				["reaction"] = "59:Alliance:FRIENDLY",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7817,56 +7707,72 @@ WoWDBProfilerData = {
 			["11288"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[1604] = 1,
 							[5337] = 21,
 						},
+						["stats"] = {
+						},
 					},
 				},
 			},
-			["42224"] = {
-				["reaction"] = "8:Alliance:NEUTRAL",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["UNKNOWN"] = true,
+			["1701"] = {
+				["is_pvp"] = true,
+				["teaches"] = {
+					["WARLOCK"] = {
+						["Mining"] = {
+							[10097] = "0:150:4500",
+							[2658] = "0:65:180",
+							[3304] = "0:50:45",
+							[3307] = "0:100:450",
+							[10098] = "0:165:9000",
+							[3308] = "0:115:540",
+							[3569] = "0:125:675",
+							[265843] = "0:1:270000",
+							[2659] = "0:50:180",
+							[16153] = "0:200:18000",
+							[70524] = "0:250:9000",
+						},
+						["General"] = {
+							[2575] = "0:0:9",
+						},
+						["Cataclysm Mining"] = {
+							[74529] = "0:75:45000",
+							[74530] = "0:25:45000",
+							[84038] = "0:1:45000",
+							[74537] = "0:50:45000",
+						},
+					},
 				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "18:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_8"] = {
-								["max_health"] = 6,
+							["level_17"] = {
 								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:536:262"] = true,
-										["3:562:242"] = true,
-										["3:576:216"] = true,
-										["3:576:210"] = true,
-										["3:554:238"] = true,
-										["3:572:238"] = true,
+									["Dun Morogh:27"] = {
+										["3:764:536"] = true,
 									},
 								},
-								["power"] = "MANA:79",
+								["max_health"] = 317,
 							},
 						},
 					},
 				},
 			},
 			["41902"] = {
+				["reaction"] = "19:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "19:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[32751] = 36,
-							[78196] = 136,
-							[1604] = 6,
-							[20793] = 18,
-						},
 						["stats"] = {
 							["level_20"] = {
 								["max_health"] = 379,
@@ -7878,20 +7784,23 @@ WoWDBProfilerData = {
 								["power"] = "MANA:573",
 							},
 						},
+						["spells"] = {
+							[32751] = 36,
+							[78196] = 136,
+							[1604] = 6,
+							[20793] = 18,
+						},
 					},
 				},
 			},
 			["42008"] = {
+				["reaction"] = "20:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "20:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[84165] = 11,
-						},
 						["stats"] = {
 							["level_19"] = {
 								["max_health"] = 367,
@@ -7903,6 +7812,35 @@ WoWDBProfilerData = {
 								["power"] = "MANA:191",
 							},
 						},
+						["spells"] = {
+							[84165] = 11,
+						},
+					},
+				},
+			},
+			["10938"] = {
+				["reaction"] = "57:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[6253] = 2,
+							[16244] = 5,
+							[12542] = 3,
+						},
+						["stats"] = {
+							["level_57"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:348:816"] = true,
+									},
+								},
+								["max_health"] = 5485,
+							},
+						},
 					},
 				},
 			},
@@ -7912,6 +7850,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7934,39 +7873,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "20:Alliance:FRIENDLY",
-			},
-			["8548"] = {
-				["reaction"] = "58:Alliance:HOSTILE",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_58"] = {
-								["max_health"] = 3046,
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:538:612"] = true,
-									},
-								},
-								["power"] = "MANA:1332",
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[16587] = 30,
-							[12040] = 2,
-						},
-						["drops"] = {
-							"money:719", -- [1]
-						},
-					},
-				},
 			},
 			["1226"] = {
 				["is_pvp"] = true,
@@ -7975,17 +7881,10 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_21"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:544:506"] = true,
-									},
-								},
-								["max_health"] = 421,
-							},
 							["level_10"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
@@ -7994,18 +7893,50 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 118,
 							},
+							["level_21"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:544:506"] = true,
+									},
+								},
+								["max_health"] = 421,
+							},
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
-			["45921"] = {
+			["4256"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["sells"] = {
+					[30746] = "-1:1:[100000:0:0]",
+					[3466] = "-1:1:[2000:0:0]",
+					[20815] = "-1:1:[800:0:0]",
+					[2880] = "-1:1:[100:0:0]",
+					[2901] = "-1:1:[81:0:0]",
+					[3857] = "-1:1:[500:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-						},
-						["spells"] = {
-							[85593] = 3,
+							["level_30"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:514:252"] = true,
+										["3:516:270"] = true,
+										["3:510:260"] = true,
+										["3:520:258"] = true,
+										["3:518:264"] = true,
+										["3:508:272"] = true,
+									},
+								},
+								["max_health"] = 782,
+							},
 						},
 					},
 				},
@@ -8035,45 +7966,65 @@ WoWDBProfilerData = {
 					},
 				},
 				["class"] = "WARRIOR",
+				["faction"] = "Argent Dawn",
 				["genders"] = {
 					["FEMALE"] = true,
 				},
-				["faction"] = "Argent Dawn",
 			},
-			["2925"] = {
+			["1234"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[32919] = 1,
-						},
 						["stats"] = {
+							["level_19"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:546:508"] = true,
+									},
+								},
+								["max_health"] = 367,
+							},
+							["level_10"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:546:508"] = true,
+									},
+								},
+								["max_health"] = 119,
+							},
 						},
 					},
 				},
 			},
 			["42221"] = {
-				["reaction"] = "7:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "7:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
 						["stats"] = {
 							["level_6"] = {
 								["locations"] = {
 									["New Tinkertown:469"] = {
 										["3:380:688"] = true,
-										["3:430:734"] = true,
-										["3:372:686"] = true,
 										["3:378:676"] = true,
+										["3:372:686"] = true,
+										["3:430:734"] = true,
 									},
 								},
 								["max_health"] = 67,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
 						},
 						["spells"] = {
 							[82625] = 12,
@@ -8085,52 +8036,53 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["30733"] = {
+			["47149"] = {
 				["is_pvp"] = true,
+				["reaction"] = "59:Alliance:FRIENDLY",
 				["genders"] = {
-					["MALE"] = true,
+					["FEMALE"] = true,
 				},
-				["faction"] = "Ironforge",
+				["faction"] = "Argent Crusade",
 				["sells"] = {
-					[1515] = "-1:1:[984:0:0]",
-					[43116] = "-1:1:[0:0:0:(1:129032)]",
-					[113111] = "-1:1:[0:0:0:(1:129032)]",
-					[43120] = "-1:1:[0:0:0:(1:129032)]",
-					[43122] = "-1:1:[0:0:0:(1:129032)]",
-					[43124] = "-1:1:[0:0:0:(1:129032)]",
-					[64670] = "-1:5:[4000:0:0]",
-					[43126] = "-1:1:[0:0:0:(1:129032)]",
-					[39469] = "-1:1:[0:0:0:(1:129032)]",
-					[79740] = "-1:1:[23:0:0]",
-					[39489] = "3:1:[5000:0:0]",
-					[61978] = "-1:1:[0:0:0:(1:129032)]",
-					[79254] = "-1:1:[0:0:0:(1:129032)]",
-					[39505] = "-1:1:[750]",
-					[61981] = "-1:1:[0:0:0:(10:129032)]",
-					[39774] = "-1:1:[0:0:0:(1:129032)]",
-					[43118] = "-1:1:[0:0:0:(1:129032)]",
-					[39354] = "-1:5:[15:0:0]",
-					[43127] = "-1:1:[0:0:0:(10:129032)]",
-					[79255] = "-1:1:[0:0:0:(10:129032)]",
+					[15810] = "-1:1:[10145:0:0]",
+					[927] = "-1:1:[6954:0:0]",
+					[2025] = "-1:1:[5305:0:0]",
+					[2029] = "-1:1:[4420:0:0]",
+					[2524] = "-1:1:[19192:0:0]",
+					[2532] = "-1:1:[52608:0:0]",
+					[2525] = "-1:1:[26490:0:0]",
+					[2533] = "-1:1:[61108:0:0]",
+					[853] = "-1:1:[2409:0:0]",
+					[1196] = "-1:1:[2214:0:0]",
+					[2527] = "-1:1:[29356:0:0]",
+					[2535] = "-1:1:[61558:0:0]",
+					[926] = "-1:1:[9785:0:0]",
+					[15811] = "-1:1:[27133:0:0]",
 				},
-				["class"] = "MAGE",
+				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_35"] = {
-								["max_health"] = 793,
+							["level_58"] = {
 								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:594:444"] = true,
-										["3:602:440"] = true,
+									["Eastern Plaguelands:23"] = {
+										["3:538:538"] = true,
 									},
 								},
-								["power"] = "MANA:2680",
+								["max_health"] = 2257,
+							},
+							["level_57"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:538:538"] = true,
+									},
+								},
+								["max_health"] = 2195,
 							},
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
+				["can_repair"] = true,
 			},
 			["5161"] = {
 				["is_pvp"] = true,
@@ -8154,14 +8106,15 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_35"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:486:92"] = true,
 										["3:484:80"] = true,
+										["3:486:92"] = true,
 									},
 								},
 								["max_health"] = 1090,
@@ -8169,7 +8122,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["149806"] = {
 				["reaction"] = "21:Alliance:FRIENDLY",
@@ -8181,9 +8133,9 @@ WoWDBProfilerData = {
 									["Deeprun Tram:499"] = {
 										["4:336:350"] = true,
 										["4:352:326"] = true,
-										["4:362:322"] = true,
-										["4:342:334"] = true,
 										["4:340:362"] = true,
+										["4:342:334"] = true,
+										["4:362:322"] = true,
 									},
 								},
 								["max_health"] = 216805,
@@ -8200,13 +8152,16 @@ WoWDBProfilerData = {
 				},
 			},
 			["45453"] = {
-				["reaction"] = "56:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "56:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 6,
+						},
 						["stats"] = {
 							["level_56"] = {
 								["locations"] = {
@@ -8224,15 +8179,12 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
 										["3:256:700"] = true,
-										["3:236:690"] = true,
 										["3:226:682"] = true,
+										["3:236:690"] = true,
 									},
 								},
 								["max_health"] = 2075,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 6,
 						},
 						["spells"] = {
 							[13445] = 16,
@@ -8252,13 +8204,39 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["42536"] = {
+			["45575"] = {
+				["reaction"] = "59:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[80182] = 1,
-						},
 						["stats"] = {
+							["level_59"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:538:540"] = true,
+									},
+								},
+								["max_health"] = 2321,
+							},
+							["level_58"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:538:540"] = true,
+									},
+								},
+								["max_health"] = 2258,
+							},
+							["level_57"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:538:540"] = true,
+									},
+								},
+								["max_health"] = 2196,
+							},
 						},
 					},
 				},
@@ -8266,20 +8244,20 @@ WoWDBProfilerData = {
 			["2596"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[13326] = 4,
-						},
-						["stats"] = {
 						},
 					},
 				},
 			},
 			["45657"] = {
+				["reaction"] = "58:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -8301,16 +8279,13 @@ WoWDBProfilerData = {
 				},
 			},
 			["40941"] = {
-				["reaction"] = "12:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "12:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
 						["stats"] = {
 							["level_12"] = {
 								["locations"] = {
@@ -8332,9 +8307,9 @@ WoWDBProfilerData = {
 										["5:640:786"] = true,
 										["5:600:294"] = true,
 										["5:596:316"] = true,
-										["5:306:386"] = true,
-										["5:374:462"] = true,
 										["5:304:396"] = true,
+										["5:374:462"] = true,
+										["5:306:386"] = true,
 										["5:304:406"] = true,
 										["5:534:150"] = true,
 										["5:588:196"] = true,
@@ -8342,6 +8317,9 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 165,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
 						},
 						["spells"] = {
 							[1604] = 1,
@@ -8353,42 +8331,28 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["1573"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["flight_master"] = true,
-				["class"] = "WARRIOR",
+			["45730"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[79968] = 29,
+						},
 						["stats"] = {
-							["level_120"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:566:484"] = true,
-										["3:560:484"] = true,
-										["3:564:476"] = true,
-										["3:558:478"] = true,
-										["3:550:484"] = true,
-									},
-								},
-								["max_health"] = 130083,
-							},
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
 			["1844"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[11976] = 1,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["max_health"] = 3625,
@@ -8400,49 +8364,32 @@ WoWDBProfilerData = {
 								["power"] = "MANA:1432",
 							},
 						},
-						["spells"] = {
-							[11976] = 1,
-						},
 					},
 				},
 			},
-			["5138"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["sells"] = {
-					[22250] = "-1:1:[1000:0:0]",
-					[3371] = "-1:20:[150:0:0]",
-				},
-				["class"] = "WARRIOR",
+			["45429"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[79977] = 8,
+							[79976] = 6,
+						},
 						["stats"] = {
-							["level_30"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:554:590"] = true,
-										["3:554:584"] = true,
-										["3:554:578"] = true,
-									},
-								},
-								["max_health"] = 782,
-							},
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["8596"] = {
-				["reaction"] = "58:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["stats"] = {
 							["level_58"] = {
 								["locations"] = {
@@ -8453,9 +8400,6 @@ WoWDBProfilerData = {
 								["max_health"] = 2933,
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
 						["spells"] = {
 							[31279] = 3,
 						},
@@ -8465,107 +8409,58 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["6124"] = {
-				["reaction"] = "18:Alliance:HOSTILE",
+			["50631"] = {
+				["reaction"] = "18:Alliance:FRIENDLY",
 				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_17"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:762:532"] = true,
+									},
+								},
+								["max_health"] = 317,
+							},
+						},
+					},
+				},
+			},
+			["42175"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["faction"] = "Gnomeregan",
+				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_20"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:760:168"] = true,
+									},
+								},
+								["max_health"] = 393,
+							},
+						},
+					},
+				},
+			},
+			["44904"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[58461] = 2,
-							[84159] = 2,
+							[83872] = 6,
 						},
 						["stats"] = {
-							["level_18"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:852:610"] = true,
-									},
-								},
-								["max_health"] = 683,
-							},
 						},
 					},
-				},
-			},
-			["1256"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_17"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:764:532"] = true,
-									},
-								},
-								["max_health"] = 317,
-							},
-						},
-					},
-				},
-				["reaction"] = "18:Alliance:FRIENDLY",
-			},
-			["41671"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["I thought they were going to tear me apart!"] = true,
-						["You're the best thing I've seen since the troggs showed up!"] = true,
-						["Thank you!"] = true,
-						["Light bless you, stranger. You've saved me!"] = true,
-					},
-				},
-				["reaction"] = "17:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_17"] = {
-								["max_health"] = 317,
-								["locations"] = {
-									["Gol'Bolar Quarry Mine:31"] = {
-										["5:454:754"] = true,
-										["5:458:766"] = true,
-										["5:412:714"] = true,
-										["5:468:790"] = true,
-										["5:334:560"] = true,
-										["5:464:780"] = true,
-										["5:410:680"] = true,
-										["5:434:736"] = true,
-										["5:420:708"] = true,
-										["5:308:560"] = true,
-										["5:426:706"] = true,
-										["5:432:724"] = true,
-										["5:316:558"] = true,
-										["5:334:552"] = true,
-										["5:318:564"] = true,
-										["5:406:708"] = true,
-										["5:354:598"] = true,
-										["5:408:694"] = true,
-										["5:416:644"] = true,
-										["5:452:768"] = true,
-										["5:456:746"] = true,
-										["5:352:588"] = true,
-										["5:414:636"] = true,
-										["5:428:712"] = true,
-										["5:422:644"] = true,
-										["5:326:558"] = true,
-									},
-								},
-								["power"] = "MANA:191",
-							},
-						},
-					},
-				},
-				["class"] = "PALADIN",
-				["genders"] = {
-					["MALE"] = true,
 				},
 			},
 			["4258"] = {
@@ -8626,37 +8521,37 @@ WoWDBProfilerData = {
 							[7408] = "0:65:270",
 							[3117] = "0:125:900",
 							[9928] = "0:205:4500",
-							[16969] = "0:275:13500",
+							[2661] = "0:35:90",
 							[9931] = "0:210:4500",
-							[9959] = "0:230:13500",
+							[3506] = "0:155:4500",
 							[2674] = "0:125:900",
-							[9961] = "0:230:13500",
+							[3337] = "0:125:900",
 							[2738] = "0:20:45",
-							[10001] = "0:230:13500",
+							[9926] = "0:205:4500",
 							[2675] = "0:145:900",
-							[2737] = "0:15:45",
+							[7223] = "0:185:900",
 							[2739] = "0:25:45",
-							[16663] = "0:300:10800",
-							[16658] = "0:295:9000",
-							[2740] = "0:110:180",
+							[3501] = "0:165:900",
+							[16649] = "0:270:9000",
 							[3502] = "0:170:1125",
-							[16646] = "0:265:9000",
+							[2740] = "0:110:180",
+							[9935] = "0:215:4500",
 							[16643] = "0:250:9000",
-							[16642] = "0:250:9000",
+							[9993] = "0:210:9000",
 							[2741] = "0:115:180",
 							[2665] = "0:65:90",
 							[264440] = "0:1:450000",
-							[9993] = "0:210:9000",
+							[16642] = "0:250:9000",
 							[2742] = "0:120:180",
-							[9935] = "0:215:4500",
+							[16646] = "0:265:9000",
 							[16730] = "0:300:10800",
-							[16649] = "0:270:9000",
-							[3501] = "0:165:900",
-							[7223] = "0:185:900",
-							[9926] = "0:205:4500",
-							[3337] = "0:125:900",
-							[3506] = "0:155:4500",
-							[2661] = "0:35:90",
+							[16658] = "0:295:9000",
+							[16663] = "0:300:10800",
+							[2737] = "0:15:45",
+							[10001] = "0:230:13500",
+							[9961] = "0:230:13500",
+							[9959] = "0:230:13500",
+							[16969] = "0:275:13500",
 						},
 						["General"] = {
 							[2018] = "0:0:9",
@@ -8692,11 +8587,11 @@ WoWDBProfilerData = {
 							[76474] = "0:20:54000",
 							[76289] = "0:50:67500",
 							[76293] = "0:20:54000",
-							[76182] = "0:20:54000",
+							[76181] = "0:10:49500",
 							[76179] = "0:1:36000",
 							[76435] = "0:30:58500",
 							[76285] = "0:20:54000",
-							[76181] = "0:10:49500",
+							[76182] = "0:20:54000",
 						},
 					},
 				},
@@ -8705,14 +8600,15 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_45"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:522:420"] = true,
 										["3:528:410"] = true,
+										["3:522:420"] = true,
 									},
 								},
 								["max_health"] = 1766,
@@ -8720,37 +8616,61 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
-			["42175"] = {
+			["8519"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["faction"] = "Gnomeregan",
-				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["stats"] = {
-							["level_20"] = {
+							["level_58"] = {
 								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:760:168"] = true,
+									["Eastern Plaguelands:23"] = {
+										["3:550:750"] = true,
 									},
 								},
-								["max_health"] = 393,
+								["max_health"] = 2933,
 							},
+							["level_59"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:590:752"] = true,
+										["3:548:716"] = true,
+										["3:550:748"] = true,
+										["3:550:698"] = true,
+										["3:594:738"] = true,
+										["3:546:736"] = true,
+									},
+								},
+								["max_health"] = 3034,
+							},
+						},
+						["spells"] = {
+							[16554] = 17,
+							[16555] = 5,
+							[85873] = 7,
+						},
+						["drops"] = {
+							"55985:1", -- [1]
+							"22527:1", -- [2]
+							"4637:1", -- [3]
 						},
 					},
 				},
-				["reaction"] = "20:Alliance:FRIENDLY",
 			},
 			["41391"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[8852] = 3,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -8762,17 +8682,10 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
+				["reaction"] = "12:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_12"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:540:508"] = true,
-									},
-								},
-								["max_health"] = 175,
-							},
 							["level_10"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
@@ -8781,40 +8694,91 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 125,
 							},
+							["level_12"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:540:508"] = true,
+									},
+								},
+								["max_health"] = 175,
+							},
 						},
 					},
 				},
-				["reaction"] = "12:Alliance:FRIENDLY",
 			},
 			["45445"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
 							[79976] = 24,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["41335"] = {
+			["41671"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["I thought they were going to tear me apart!"] = true,
+						["You're the best thing I've seen since the troggs showed up!"] = true,
+						["Thank you!"] = true,
+						["Light bless you, stranger. You've saved me!"] = true,
+					},
+				},
+				["reaction"] = "17:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[77404] = 9,
-						},
 						["stats"] = {
+							["level_17"] = {
+								["max_health"] = 317,
+								["locations"] = {
+									["Gol'Bolar Quarry Mine:31"] = {
+										["5:454:754"] = true,
+										["5:458:766"] = true,
+										["5:412:714"] = true,
+										["5:468:790"] = true,
+										["5:334:560"] = true,
+										["5:464:780"] = true,
+										["5:410:680"] = true,
+										["5:434:736"] = true,
+										["5:420:708"] = true,
+										["5:308:560"] = true,
+										["5:426:706"] = true,
+										["5:432:724"] = true,
+										["5:316:558"] = true,
+										["5:334:552"] = true,
+										["5:318:564"] = true,
+										["5:422:644"] = true,
+										["5:354:598"] = true,
+										["5:428:712"] = true,
+										["5:416:644"] = true,
+										["5:414:636"] = true,
+										["5:456:746"] = true,
+										["5:352:588"] = true,
+										["5:452:768"] = true,
+										["5:408:694"] = true,
+										["5:406:708"] = true,
+										["5:326:558"] = true,
+									},
+								},
+								["power"] = "MANA:191",
+							},
 						},
 					},
+				},
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
 				},
 			},
 			["1976"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[95826] = 4,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -8833,25 +8797,26 @@ WoWDBProfilerData = {
 					[64413] = "-1:1:[0]",
 					[64414] = "-1:1:[0]",
 					[64415] = "-1:1:[0]",
-					[20753] = "-1:1:[4000]",
+					[38682] = "-1:1:[1000:0:0]",
 					[52733] = "-1:1:[0]",
-					[22307] = "-1:1:[6000]",
+					[52740] = "-1:1:[0]",
 					[52735] = "-1:1:[0]",
 					[52736] = "-1:1:[0]",
 					[52737] = "-1:1:[0]",
 					[52738] = "-1:1:[0]",
 					[52739] = "-1:1:[0]",
-					[52740] = "-1:1:[0]",
-					[20752] = "-1:1:[3000]",
+					[6217] = "-1:1:[124:0:0]",
+					[10938] = "1:1:[800:0:0]",
 					[6349] = "1:1:[500]",
 					[20758] = "-1:1:[500]",
 					[11291] = "-1:1:[4500:0:0]",
 					[4470] = "-1:1:[38:0:0]",
-					[10938] = "1:1:[800:0:0]",
-					[6217] = "-1:1:[124:0:0]",
-					[38682] = "-1:1:[1000:0:0]",
+					[20752] = "-1:1:[3000]",
+					[22307] = "-1:1:[6000]",
+					[20753] = "-1:1:[4000]",
 				},
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -8868,1374 +8833,73 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "21:Alliance:FRIENDLY",
 			},
-			["42170"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "18:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[75002] = 6,
-						},
-						["stats"] = {
-							["level_17"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:842:568"] = true,
-									},
-								},
-								["max_health"] = 334,
-							},
-						},
-					},
-				},
-			},
-			["1254"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_17"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:764:546"] = true,
-									},
-								},
-								["max_health"] = 317,
-							},
-							["level_18"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:764:546"] = true,
-									},
-								},
-								["max_health"] = 342,
-							},
-						},
-					},
-				},
-				["reaction"] = "18:Alliance:FRIENDLY",
-			},
-			["42928"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[84831] = 2,
-							[19135] = 2,
-							[20686] = 1,
-						},
-						["stats"] = {
-							["level_-1"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:394:562"] = true,
-									},
-								},
-								["max_health"] = 30352700,
-							},
-						},
-					},
-				},
-				["reaction"] = "20:Alliance:FRIENDLY",
-			},
-			["41544"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_YELL"] = {
-						["If you want your rams back, come get them, cowards!"] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[77663] = 6,
-							[31290] = 2,
-						},
-						["stats"] = {
-							["level_16"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:694:558"] = true,
-									},
-								},
-								["max_health"] = 291,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "16:Alliance:HOSTILE",
-			},
-			["9450"] = {
-				["reaction"] = "60:Alliance:HOSTILE",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 2384,
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:792:774"] = true,
-										["3:792:768"] = true,
-									},
-								},
-								["power"] = "MANA:1381",
-							},
-							["level_59"] = {
-								["max_health"] = 2321,
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:746:778"] = true,
-										["3:816:786"] = true,
-									},
-								},
-								["power"] = "MANA:1432",
-							},
-							["level_58"] = {
-								["max_health"] = 2259,
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:750:776"] = true,
-									},
-								},
-								["power"] = "MANA:1432",
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[25054] = 11,
-							[25058] = 2,
-						},
-						["drops"] = {
-							"money:459", -- [1]
-						},
-					},
-				},
-			},
-			["11536"] = {
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Argent Crusade",
-				["sells"] = {
-					[19328] = "-1:1:[22000]",
-					[19205] = "-1:1:[40000]",
-					[19216] = "-1:1:[22000]",
-					[13482] = "-1:1:[15000]",
-					[19329] = "-1:1:[40000]",
-					[13813] = "-1:5:[6000]",
-					[19442] = "-1:1:[100000]",
-					[19446] = "-1:1:[30000]",
-					[13810] = "-1:5:[6000]",
-					[19217] = "-1:1:[40000]",
-					[19203] = "-1:1:[22000]",
-					[19447] = "-1:1:[60000]",
-					[13724] = "-1:5:[6000]",
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_59"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:758:540"] = true,
-									},
-								},
-								["max_health"] = 3133,
-							},
-						},
-					},
-				},
-			},
-			["46274"] = {
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Gnomeregan",
-				["class"] = "PALADIN",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_3"] = {
-								["max_health"] = 46,
-								["locations"] = {
-									["Dun Morogh:30"] = {
-										["5:542:816"] = true,
-										["5:530:816"] = true,
-										["5:536:818"] = true,
-									},
-								},
-								["power"] = "MANA:104",
-							},
-						},
-					},
-				},
-				["reaction"] = "3:Alliance:FRIENDLY",
-			},
-			["40951"] = {
-				["is_pvp"] = true,
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["It won't be long before we're out of supplies too, Captain. Between the trolls and the yeti raids, we'll be down to half rations within a week."] = true,
-					},
-				},
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "PALADIN",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_13"] = {
-								["max_health"] = 197,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:538:522"] = true,
-									},
-								},
-								["power"] = "MANA:178",
-							},
-							["level_11"] = {
-								["max_health"] = 141,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:536:520"] = true,
-									},
-								},
-								["power"] = "MANA:178",
-							},
-						},
-					},
-				},
-				["reaction"] = "13:Alliance:FRIENDLY",
-			},
-			["50732"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_40"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:500:62"] = true,
-									},
-								},
-								["max_health"] = 1423,
-							},
-						},
-					},
-				},
-				["reaction"] = "21:Alliance:FRIENDLY",
-			},
-			["5172"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Gnomeregan",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_50"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:510:62"] = true,
-										["3:500:62"] = true,
-										["3:500:56"] = true,
-										["3:502:50"] = true,
-										["3:508:46"] = true,
-										["3:512:56"] = true,
-									},
-								},
-								["max_health"] = 2206,
-							},
-						},
-					},
-				},
-				["reaction"] = "21:Alliance:FRIENDLY",
-			},
-			["8720"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["reaction"] = "61:Alliance:FRIENDLY",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_50"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:238:738"] = true,
-										["3:250:748"] = true,
-										["3:242:746"] = true,
-										["3:246:736"] = true,
-									},
-								},
-								["max_health"] = 5295,
-							},
-						},
-					},
-				},
-				["auctioneer"] = true,
-			},
-			["42518"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[38232] = 2,
-							[57846] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["8538"] = {
-				["reaction"] = "58:Alliance:HOSTILE",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_58"] = {
-								["max_health"] = 3046,
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:550:622"] = true,
-									},
-								},
-								["power"] = "MANA:1332",
-							},
-							["level_59"] = {
-								["max_health"] = 3151,
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:550:620"] = true,
-									},
-								},
-								["power"] = "MANA:1332",
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
-						["spells"] = {
-							[38240] = 10,
-							[18267] = 10,
-						},
-						["drops"] = {
-							"15447:2", -- [1]
-							"4338:3", -- [2]
-							"money:301", -- [3]
-							"money:745", -- [4]
-							"4306:1", -- [5]
-						},
-					},
-				},
-			},
-			["4772"] = {
-				["is_pvp"] = true,
-				["teaches"] = {
-					["WARLOCK"] = {
-						["General"] = {
-							[33388] = "0:0:36000",
-							[33391] = "0:0:450000",
-						},
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_15"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:712:484"] = true,
-									},
-								},
-								["max_health"] = 260,
-							},
-							["level_20"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:712:486"] = true,
-									},
-								},
-								["max_health"] = 393,
-							},
-						},
-					},
-				},
-				["reaction"] = "20:Alliance:FRIENDLY",
-			},
-			["50309"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["sells"] = {
-					[64898] = "-1:1:[34268]",
-					[64900] = "-1:1:[34521]",
-					[45577] = "-1:1:[1000:0:0]",
-					[64899] = "-1:1:[34393]",
-					[67528] = "-1:1:[20000:0:0]",
-				},
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:558:484"] = true,
-										["3:558:478"] = true,
-									},
-								},
-								["max_health"] = 2383,
-							},
-						},
-					},
-				},
-				["reaction"] = "19:Alliance:FRIENDLY",
-			},
-			["46185"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Commencing decontamination sequence... "] = true,
-					},
-				},
-				["reaction"] = "3:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_3"] = {
-								["max_health"] = 46,
-								["locations"] = {
-									["Dun Morogh:30"] = {
-										["5:592:818"] = true,
-										["5:604:820"] = true,
-										["5:584:816"] = true,
-										["5:598:818"] = true,
-									},
-								},
-								["power"] = "MANA:60",
-							},
-						},
-					},
-				},
-				["class"] = "PALADIN",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-			},
-			["1388"] = {
-				["reaction"] = "16:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["stats"] = {
-							["level_16"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:694:458"] = true,
-									},
-								},
-								["max_health"] = 581,
-							},
-						},
-						["spells"] = {
-							[3143] = 3,
-						},
-						["drops"] = {
-							"money:42", -- [1]
-						},
-					},
-				},
-			},
-			["9448"] = {
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 2384,
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:782:762"] = true,
-										["3:802:778"] = true,
-									},
-								},
-								["power"] = "MANA:1381",
-							},
-							["level_61"] = {
-								["max_health"] = 2466,
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:798:774"] = true,
-										["3:814:788"] = true,
-									},
-								},
-								["power"] = "MANA:1381",
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[79964] = 5,
-							[17143] = 3,
-						},
-						["drops"] = {
-							"money:921", -- [1]
-						},
-					},
-				},
-			},
-			["41603"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_YELL"] = {
-						["If you want your rams back, come get them, cowards!"] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[31290] = 15,
-							[77663] = 60,
-							[77780] = 21,
-						},
-						["stats"] = {
-							["level_16"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:706:492"] = true,
-									},
-								},
-								["max_health"] = 363,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "16:Alliance:HOSTILE",
-			},
-			["4259"] = {
-				["is_pvp"] = true,
-				["reaction"] = "21:Alliance:FRIENDLY",
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["sells"] = {
-					[66111] = "-1:1:[0]",
-					[66115] = "-1:1:[0]",
-					[66119] = "-1:1:[0]",
-					[66123] = "-1:1:[0]",
-					[66127] = "-1:1:[0]",
-					[66131] = "-1:1:[0]",
-					[66100] = "-1:1:[0]",
-					[66104] = "-1:1:[0]",
-					[66108] = "-1:1:[0]",
-					[66112] = "-1:1:[0]",
-					[66116] = "-1:1:[0]",
-					[66120] = "-1:1:[0]",
-					[2880] = "-1:1:[100:0:0]",
-					[66128] = "-1:1:[0]",
-					[66132] = "-1:1:[0]",
-					[3857] = "-1:1:[500:0:0]",
-					[66101] = "-1:1:[0]",
-					[66105] = "-1:1:[0]",
-					[18567] = "-1:1:[30000:0:0]",
-					[66113] = "-1:1:[0]",
-					[66117] = "-1:1:[0]",
-					[66121] = "-1:1:[0]",
-					[66125] = "-1:1:[0]",
-					[66129] = "-1:1:[0]",
-					[67606] = "-1:1:[0]",
-					[3466] = "-1:1:[2000:0:0]",
-					[66106] = "-1:1:[0]",
-					[66110] = "-1:1:[0]",
-					[66114] = "-1:1:[0]",
-					[66118] = "-1:1:[0]",
-					[66122] = "-1:1:[0]",
-					[5956] = "-1:1:[18:0:0]",
-					[66130] = "-1:1:[0]",
-					[66124] = "-1:1:[0]",
-					[66126] = "-1:1:[0]",
-					[67603] = "-1:1:[0]",
-					[66103] = "-1:1:[0]",
-					[66109] = "-1:1:[0]",
-					[2901] = "-1:1:[81]",
-					[66107] = "-1:1:[0]",
-					[160298] = "-1:1:[3000:0:0]",
-				},
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_30"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:520:424"] = true,
-										["3:514:430"] = true,
-									},
-								},
-								["max_health"] = 782,
-							},
-						},
-					},
-				},
-				["can_repair"] = true,
-			},
-			["10951"] = {
-				["reaction"] = "57:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_56"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:342:820"] = true,
-										["3:356:816"] = true,
-										["3:348:816"] = true,
-									},
-								},
-								["max_health"] = 2883,
-							},
-							["level_57"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:356:816"] = true,
-										["3:346:824"] = true,
-										["3:344:816"] = true,
-									},
-								},
-								["max_health"] = 2964,
-							},
-						},
-						["spells"] = {
-							[13584] = 22,
-						},
-					},
-				},
-			},
-			["13546"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[12544] = 2,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["41611"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_YELL"] = {
-						["To arms, mountaineers! Take back those rams!"] = true,
-						["Frostmane raiders! Sound the alarm!"] = true,
-					},
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Does anyone hear something strange?"] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "PALADIN",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[8258] = 9,
-							[1604] = 1,
-							[81460] = 5,
-						},
-						["stats"] = {
-							["level_15"] = {
-								["max_health"] = 259,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:708:488"] = true,
-									},
-								},
-								["power"] = "MANA:138",
-							},
-							["level_17"] = {
-								["max_health"] = 316,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:702:484"] = true,
-									},
-								},
-								["power"] = "MANA:138",
-							},
-						},
-					},
-				},
-				["reaction"] = "17:Alliance:FRIENDLY",
-			},
-			["11063"] = {
+			["11036"] = {
 				["genders"] = {
 					["MALE"] = true,
 				},
 				["faction"] = "Argent Crusade",
 				["class"] = "WARRIOR",
-				["reaction"] = "56:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_56"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:356:690"] = true,
-									},
-								},
-								["max_health"] = 2881,
-							},
-						},
-					},
-				},
-			},
-			["1699"] = {
-				["is_pvp"] = true,
-				["teaches"] = {
-					["WARLOCK"] = {
-						["Cooking"] = {
-							[18238] = "0:225:4500",
-							[3400] = "0:175:450",
-							[18240] = "0:240:5400",
-							[4094] = "0:175:450",
-							[264638] = "0:1:270000",
-							[18244] = "0:250:5850",
-							[6499] = "0:50:90",
-							[21175] = "0:200:3600",
-							[18243] = "0:250:5850",
-							[3399] = "0:150:405",
-							[46688] = "0:250:5850",
-							[46684] = "0:250:5850",
-							[2544] = "0:75:180",
-							[2539] = "0:10:45",
-							[2541] = "0:50:90",
-							[6415] = "0:50:90",
-							[6500] = "0:125:270",
-							[2546] = "0:80:135",
-							[93741] = "0:40:72",
-							[37836] = "0:1:9",
-							[6412] = "0:10:45",
-						},
-						["General"] = {
-							[2550] = "0:0:9",
-						},
-						["Cataclysm Cooking"] = {
-							[88015] = "0:1:27000",
-							[88006] = "0:1:31500",
-						},
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_21"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:548:506"] = true,
-									},
-								},
-								["max_health"] = 421,
-							},
-							["level_20"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:548:506"] = true,
-									},
-								},
-								["max_health"] = 393,
-							},
-							["level_19"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:548:508"] = true,
-									},
-								},
-								["max_health"] = 367,
-							},
-							["level_10"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:546:506"] = true,
-									},
-								},
-								["max_health"] = 118,
-							},
-						},
-					},
-				},
-				["reaction"] = "21:Alliance:FRIENDLY",
-			},
-			["41578"] = {
-				["is_pvp"] = true,
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_YELL"] = {
-						["One of the mountaineers has seen something. Keep your eyes open!"] = true,
-					},
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["As it is, there are barely enough of us to keep them from taking everything."] = true,
-						["The Frostmane trolls have been raiding the ranch continuously."] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "PALADIN",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_16"] = {
-								["max_health"] = 290,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:704:490"] = true,
-									},
-								},
-								["power"] = "MANA:191",
-							},
-							["level_17"] = {
-								["max_health"] = 317,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:706:492"] = true,
-									},
-								},
-								["power"] = "MANA:191",
-							},
-							["level_15"] = {
-								["max_health"] = 260,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:704:490"] = true,
-									},
-								},
-								["power"] = "MANA:191",
-							},
-						},
-					},
-				},
-				["reaction"] = "18:Alliance:FRIENDLY",
-			},
-			["41175"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["My weapon be thirsty!"] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[38557] = 384,
-							[1604] = 1,
-						},
-						["stats"] = {
-							["level_13"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:580:578"] = true,
-										["3:612:568"] = true,
-										["3:566:604"] = true,
-										["3:562:574"] = true,
-									},
-								},
-								["max_health"] = 196,
-							},
-							["level_12"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:616:552"] = true,
-										["3:590:572"] = true,
-										["3:570:600"] = true,
-										["3:566:570"] = true,
-									},
-								},
-								["max_health"] = 190,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "14:Alliance:HOSTILE",
-			},
-			["461"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Stormwind",
-				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Stormwind City:84"] = {
-										["3:396:848"] = true,
-										["3:392:854"] = true,
+									["Eastern Plaguelands:24"] = {
+										["5:416:884"] = true,
+										["5:422:896"] = true,
+										["5:416:904"] = true,
+										["5:412:890"] = true,
+										["5:424:890"] = true,
+										["5:424:884"] = true,
+										["5:430:882"] = true,
 									},
 								},
 								["max_health"] = 3217,
 							},
-						},
-					},
-				},
-				["reaction"] = "21:Alliance:FRIENDLY",
-			},
-			["88403"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[176458] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["45655"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_1"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:502:614"] = true,
-										["3:514:604"] = true,
-										["3:496:636"] = true,
-										["3:502:622"] = true,
-										["3:508:604"] = true,
-									},
-								},
-								["max_health"] = 31,
-							},
-						},
-					},
-				},
-			},
-			["41181"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[13953] = 12,
-							[8258] = 120,
-							[1604] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["45707"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Let the trial begin.  Rise, champions!  Rise, and meet these three in combat!"] = true,
-						["Your warm-up is complete.  Now, the real trial begins!"] = true,
-						["Well-done, heroes.  You have passed my test of combat."] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Argent Dawn",
-				["class"] = "PALADIN",
-				["reaction"] = "59:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
 							["level_59"] = {
-								["max_health"] = 9282,
 								["locations"] = {
-									["Crypt:23"] = {
-										["3:778:516"] = true,
+									["Eastern Plaguelands:24"] = {
+										["5:424:894"] = true,
+										["5:416:886"] = true,
 									},
 								},
-								["power"] = "MANA:2762",
+								["max_health"] = 3132,
 							},
 						},
 					},
 				},
+				["reaction"] = "61:Alliance:FRIENDLY",
 			},
-			["42291"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Optical sensor malfunction detected! Shutting down..."] = true,
-					},
-				},
-				["reaction"] = "9:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[84152] = 8,
-						},
-						["stats"] = {
-							["level_9"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:562:524"] = true,
-										["3:544:516"] = true,
-										["3:564:518"] = true,
-										["3:552:518"] = true,
-										["3:548:474"] = true,
-										["3:552:468"] = true,
-									},
-								},
-								["max_health"] = 102,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
+			["10952"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-			},
-			["45451"] = {
+				["class"] = "WARRIOR",
+				["reaction"] = "57:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[9080] = 25,
+							[11972] = 6,
+						},
 						["stats"] = {
-							["level_56"] = {
+							["level_58"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:356:688"] = true,
+										["3:340:820"] = true,
+										["3:358:816"] = true,
 									},
 								},
-								["max_health"] = 2881,
+								["max_health"] = 3066,
 							},
 							["level_57"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:540:536"] = true,
-									},
-								},
-								["max_health"] = 2964,
-							},
-						},
-					},
-				},
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Ma'am, would you mind dropping me off at Light's Shield Tower, just up ahead?  I have to stop here."] = true,
-						["I find it satisfying.  I enjoy working with my hands."] = true,
-						["By the way, if any of you need anything repaired, let me know.  I am at your service."] = true,
-						["Without proper upkeep, buildings within the plaguelands tend to... waste away."] = true,
-						["Yes, I do, though it was easier when I was younger.  These days, I have to be more careful."] = true,
-						["Certainly.  I don't make it out to Light's Hope very often anymore, but when you arrive, tell Max Tyrosus that I sent you."] = true,
-						["I service the five Argent towers.  Mostly repairs and maintenance, and some minor magical work."] = true,
-						["Ahem!  I, ah, appreciate the ride, Madam Fiona.  It's nice to get off my feet for once."] = true,
-						["Light's Hope isn't far, young paladin.  Might I suggest walking?"] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Argent Crusade",
-				["sells"] = {
-					[160298] = "-1:1:[3000:0:0]",
-					[5956] = "-1:1:[18:0:0]",
-					[3466] = "-1:1:[2000:0:0]",
-					[2880] = "-1:1:[100:0:0]",
-					[2901] = "-1:1:[81:0:0]",
-					[18567] = "-1:1:[30000:0:0]",
-					[3857] = "-1:1:[500:0:0]",
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
-				["can_repair"] = true,
-			},
-			["42185"] = {
-				["reaction"] = "5:Alliance:NEUTRAL",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_4"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:388:432"] = true,
-										["3:368:504"] = true,
-										["3:382:424"] = true,
-										["3:388:466"] = true,
-										["3:374:512"] = true,
-									},
-								},
-								["max_health"] = 52,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
-						["drops"] = {
-							"money:3", -- [1]
-							"55983:1", -- [2]
-							"money:5", -- [3]
-						},
-					},
-				},
-			},
-			["1802"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[85788] = 3,
-						},
-					},
-				},
-			},
-			["45475"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "56:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_55"] = {
-								["max_health"] = 2073,
-							},
-						},
-					},
-				},
-			},
-			["40994"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["I can't wait to get out there and help in the fight against those trolls."] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_12"] = {
-								["locations"] = {
-									["Dun Morogh:29"] = {
-										["5:616:542"] = true,
-										["5:596:550"] = true,
-										["5:590:544"] = true,
-										["5:612:548"] = true,
-										["5:606:554"] = true,
-									},
-								},
-								["max_health"] = 167,
-							},
-						},
-					},
-				},
-				["reaction"] = "12:Alliance:FRIENDLY",
-			},
-			["41897"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[8258] = 293,
-							[13953] = 5,
-						},
-						["stats"] = {
-							["level_20"] = {
-								["max_health"] = 379,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:772:258"] = true,
-									},
-								},
-								["power"] = "MANA:191",
-							},
-						},
-					},
-				},
-				["class"] = "PALADIN",
-				["reaction"] = "19:Alliance:FRIENDLY",
-				["faction"] = "Ironforge",
-			},
-			["51348"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[6660] = 5,
-							[1604] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["11033"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_59"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:748:536"] = true,
-									},
-								},
-								["max_health"] = 3017,
-							},
-						},
-					},
-				},
-			},
-			["41122"] = {
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
-				["class"] = "PALADIN",
-				["reaction"] = "11:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["stats"] = {
-							["level_9"] = {
-								["max_health"] = 115,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:488:384"] = true,
-										["3:486:392"] = true,
-										["3:488:374"] = true,
-										["3:482:368"] = true,
-										["3:462:406"] = true,
-									},
-								},
-								["power"] = "MANA:126",
-							},
-							["level_10"] = {
-								["max_health"] = 119,
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:488:388"] = true,
-										["3:478:394"] = true,
-										["3:488:382"] = true,
-									},
-								},
-								["power"] = "MANA:115",
-							},
-						},
-						["spells"] = {
-							[84118] = 7,
-						},
-						["drops"] = {
-							"money:3", -- [1]
-						},
-					},
-				},
-			},
-			["10936"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_57"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:350:838"] = true,
+										["3:348:818"] = true,
+										["3:342:820"] = true,
+										["3:348:812"] = true,
+										["3:354:814"] = true,
 									},
 								},
 								["max_health"] = 2962,
@@ -10244,127 +8908,75 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["43089"] = {
-				["reaction"] = "5:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
+			["42226"] = {
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "8:Alliance:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_8"] = {
+								["max_health"] = 86,
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:576:238"] = true,
+										["3:576:226"] = true,
+										["3:552:246"] = true,
+									},
+								},
+								["power"] = "MANA:79",
+							},
+						},
+						["spells"] = {
+							[84146] = 6,
+						},
+					},
+				},
+			},
+			["10948"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["Horgus is slain!  Take heart, defenders of Darrowshire!"] = true,
+						["The Scourge are defeated!  Darrowshire is saved!"] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[63227] = 6,
-							[21067] = 5,
+							[11976] = 184,
+							[12169] = 160,
+							[1604] = 14,
 						},
 						["stats"] = {
-							["level_4"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:372:406"] = true,
-									},
-								},
-								["max_health"] = 53,
-							},
-						},
-					},
-				},
-			},
-			["49877"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["faction"] = "Stormwind",
-				["sells"] = {
-					[64903] = "-1:1:[35821]",
-					[64902] = "-1:1:[35693]",
-					[67531] = "-1:1:[20000:0:0]",
-					[45574] = "-1:1:[1000:0:0]",
-					[64901] = "-1:1:[34650]",
-				},
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Stormwind City:84"] = {
-										["3:678:724"] = true,
-										["3:676:732"] = true,
-									},
-								},
-								["max_health"] = 2383,
-							},
-						},
-					},
-				},
-				["reaction"] = "61:Alliance:FRIENDLY",
-			},
-			["41398"] = {
-				["reaction"] = "14:Alliance:FRIENDLY",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_14"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:568:466"] = true,
-									},
-								},
-								["max_health"] = 225,
-							},
-						},
-					},
-				},
-			},
-			["10954"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_58"] = {
+							["level_56"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:344:818"] = true,
+										["3:356:818"] = true,
+										["3:346:820"] = true,
 									},
 								},
-								["max_health"] = 5679,
+								["max_health"] = 2883,
 							},
 							["level_57"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:344:814"] = true,
+										["3:354:818"] = true,
+										["3:346:822"] = true,
 									},
 								},
-								["max_health"] = 5489,
+								["max_health"] = 2964,
 							},
 						},
-						["spells"] = {
-							[15667] = 2,
-							[15583] = 2,
-						},
 					},
 				},
-			},
-			["41909"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[8258] = 309,
-							[13953] = 4,
-						},
-						["stats"] = {
-						},
-					},
-				},
+				["class"] = "WARRIOR",
+				["reaction"] = "57:Alliance:FRIENDLY",
 			},
 			["40950"] = {
 				["is_pvp"] = true,
@@ -10382,6 +8994,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "PALADIN",
+				["reaction"] = "14:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -10433,120 +9046,288 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "14:Alliance:FRIENDLY",
 			},
-			["10948"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_YELL"] = {
-						["Horgus is slain!  Take heart, defenders of Darrowshire!"] = true,
-						["The Scourge are defeated!  Darrowshire is saved!"] = true,
-					},
-				},
+			["11536"] = {
 				["genders"] = {
-					["MALE"] = true,
 					["FEMALE"] = true,
 				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_56"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:346:820"] = true,
-										["3:356:818"] = true,
-									},
-								},
-								["max_health"] = 2883,
-							},
-							["level_57"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:354:818"] = true,
-										["3:346:822"] = true,
-									},
-								},
-								["max_health"] = 2964,
-							},
-						},
-						["spells"] = {
-							[11976] = 184,
-							[12169] = 160,
-							[1604] = 14,
-						},
-					},
+				["faction"] = "Argent Crusade",
+				["sells"] = {
+					[19328] = "-1:1:[22000]",
+					[19329] = "-1:1:[40000]",
+					[19216] = "-1:1:[22000]",
+					[13482] = "-1:1:[15000]",
+					[13724] = "-1:5:[6000]",
+					[19447] = "-1:1:[60000]",
+					[19442] = "-1:1:[100000]",
+					[19446] = "-1:1:[30000]",
+					[13810] = "-1:5:[6000]",
+					[19217] = "-1:1:[40000]",
+					[19203] = "-1:1:[22000]",
+					[13813] = "-1:5:[6000]",
+					[19205] = "-1:1:[40000]",
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
-			},
-			["42226"] = {
-				["reaction"] = "8:Alliance:HOSTILE",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["MALE"] = true,
-				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[84146] = 6,
-						},
 						["stats"] = {
-							["level_8"] = {
-								["max_health"] = 86,
+							["level_59"] = {
 								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:576:238"] = true,
-										["3:576:226"] = true,
-										["3:552:246"] = true,
+									["Eastern Plaguelands:23"] = {
+										["3:758:540"] = true,
 									},
 								},
-								["power"] = "MANA:79",
+								["max_health"] = 3133,
 							},
 						},
 					},
 				},
+				["reaction"] = "59:Alliance:FRIENDLY",
 			},
-			["10952"] = {
+			["10954"] = {
 				["reaction"] = "57:Alliance:HOSTILE",
 				["class"] = "WARRIOR",
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[15667] = 2,
+							[15583] = 2,
+						},
 						["stats"] = {
 							["level_58"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:340:820"] = true,
-										["3:358:816"] = true,
+										["3:344:818"] = true,
 									},
 								},
-								["max_health"] = 3066,
+								["max_health"] = 5679,
 							},
 							["level_57"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:354:814"] = true,
-										["3:342:820"] = true,
-										["3:348:812"] = true,
-										["3:348:818"] = true,
+										["3:344:814"] = true,
 									},
 								},
-								["max_health"] = 2962,
+								["max_health"] = 5489,
 							},
-						},
-						["spells"] = {
-							[9080] = 25,
-							[11972] = 6,
 						},
 					},
 				},
 			},
-			["11036"] = {
+			["40951"] = {
+				["is_pvp"] = true,
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["It won't be long before we're out of supplies too, Captain. Between the trolls and the yeti raids, we'll be down to half rations within a week."] = true,
+					},
+				},
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "PALADIN",
+				["reaction"] = "13:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_13"] = {
+								["max_health"] = 197,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:538:522"] = true,
+									},
+								},
+								["power"] = "MANA:178",
+							},
+							["level_11"] = {
+								["max_health"] = 141,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:536:520"] = true,
+									},
+								},
+								["power"] = "MANA:178",
+							},
+						},
+					},
+				},
+			},
+			["50732"] = {
+				["is_pvp"] = true,
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["faction"] = "Argent Crusade",
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:500:62"] = true,
+									},
+								},
+								["max_health"] = 1423,
+							},
+						},
+					},
+				},
+			},
+			["5172"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Gnomeregan",
+				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:510:62"] = true,
+										["3:500:62"] = true,
+										["3:500:56"] = true,
+										["3:502:50"] = true,
+										["3:508:46"] = true,
+										["3:512:56"] = true,
+									},
+								},
+								["max_health"] = 2206,
+							},
+						},
+					},
+				},
+			},
+			["8720"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["auctioneer"] = true,
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:238:738"] = true,
+										["3:250:748"] = true,
+										["3:242:746"] = true,
+										["3:246:736"] = true,
+									},
+								},
+								["max_health"] = 5295,
+							},
+						},
+					},
+				},
+				["reaction"] = "21:Alliance:FRIENDLY",
+			},
+			["42518"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[38232] = 2,
+							[57846] = 1,
+						},
+					},
+				},
+			},
+			["8538"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "58:Alliance:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["stats"] = {
+							["level_58"] = {
+								["max_health"] = 3046,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:550:622"] = true,
+									},
+								},
+								["power"] = "MANA:1332",
+							},
+							["level_59"] = {
+								["max_health"] = 3151,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:550:620"] = true,
+									},
+								},
+								["power"] = "MANA:1332",
+							},
+						},
+						["spells"] = {
+							[38240] = 10,
+							[18267] = 10,
+						},
+						["drops"] = {
+							"15447:2", -- [1]
+							"4338:3", -- [2]
+							"money:301", -- [3]
+							"money:745", -- [4]
+							"4306:1", -- [5]
+						},
+					},
+				},
+			},
+			["43089"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "5:Alliance:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_4"] = {
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:372:406"] = true,
+									},
+								},
+								["max_health"] = 53,
+							},
+						},
+						["spells"] = {
+							[63227] = 6,
+							[21067] = 5,
+						},
+					},
+				},
+			},
+			["49877"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Stormwind",
+				["sells"] = {
+					[64903] = "-1:1:[35821]",
+					[64902] = "-1:1:[35693]",
+					[67531] = "-1:1:[20000:0:0]",
+					[45574] = "-1:1:[1000:0:0]",
+					[64901] = "-1:1:[34650]",
+				},
 				["class"] = "WARRIOR",
 				["reaction"] = "61:Alliance:FRIENDLY",
 				["encounter_data"] = {
@@ -10554,27 +9335,1210 @@ WoWDBProfilerData = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Eastern Plaguelands:24"] = {
-										["5:416:884"] = true,
-										["5:412:890"] = true,
-										["5:424:884"] = true,
-										["5:422:896"] = true,
-										["5:424:890"] = true,
-										["5:416:904"] = true,
-										["5:430:882"] = true,
+									["Stormwind City:84"] = {
+										["3:676:732"] = true,
+										["3:678:724"] = true,
+									},
+								},
+								["max_health"] = 2383,
+							},
+						},
+					},
+				},
+			},
+			["10936"] = {
+				["reaction"] = "57:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_57"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:350:838"] = true,
+									},
+								},
+								["max_health"] = 2962,
+							},
+						},
+					},
+				},
+			},
+			["41122"] = {
+				["reaction"] = "11:Alliance:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_10"] = {
+								["max_health"] = 119,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:488:388"] = true,
+										["3:488:382"] = true,
+										["3:478:394"] = true,
+									},
+								},
+								["power"] = "MANA:115",
+							},
+							["level_9"] = {
+								["max_health"] = 115,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:488:384"] = true,
+										["3:486:392"] = true,
+										["3:488:374"] = true,
+										["3:482:368"] = true,
+										["3:462:406"] = true,
+									},
+								},
+								["power"] = "MANA:126",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[84118] = 7,
+						},
+						["drops"] = {
+							"money:3", -- [1]
+						},
+					},
+				},
+			},
+			["11033"] = {
+				["reaction"] = "59:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_59"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:748:536"] = true,
+									},
+								},
+								["max_health"] = 3017,
+							},
+						},
+					},
+				},
+			},
+			["51348"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[6660] = 5,
+							[1604] = 1,
+						},
+					},
+				},
+			},
+			["11063"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Argent Crusade",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_56"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:356:690"] = true,
+									},
+								},
+								["max_health"] = 2881,
+							},
+						},
+					},
+				},
+				["reaction"] = "56:Alliance:FRIENDLY",
+			},
+			["10951"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "57:Alliance:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[13584] = 22,
+						},
+						["stats"] = {
+							["level_56"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:342:820"] = true,
+										["3:356:816"] = true,
+										["3:348:816"] = true,
+									},
+								},
+								["max_health"] = 2883,
+							},
+							["level_57"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:356:816"] = true,
+										["3:346:824"] = true,
+										["3:344:816"] = true,
+									},
+								},
+								["max_health"] = 2964,
+							},
+						},
+					},
+				},
+			},
+			["13546"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[12544] = 2,
+						},
+					},
+				},
+			},
+			["41603"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["If you want your rams back, come get them, cowards!"] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_16"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:706:492"] = true,
+									},
+								},
+								["max_health"] = 363,
+							},
+						},
+						["spells"] = {
+							[31290] = 15,
+							[77663] = 60,
+							[77780] = 21,
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "16:Alliance:HOSTILE",
+			},
+			["45475"] = {
+				["reaction"] = "56:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_55"] = {
+								["max_health"] = 2073,
+							},
+						},
+					},
+				},
+			},
+			["1699"] = {
+				["is_pvp"] = true,
+				["teaches"] = {
+					["WARLOCK"] = {
+						["Cooking"] = {
+							[18238] = "0:225:4500",
+							[3400] = "0:175:450",
+							[18240] = "0:240:5400",
+							[4094] = "0:175:450",
+							[264638] = "0:1:270000",
+							[18244] = "0:250:5850",
+							[6499] = "0:50:90",
+							[21175] = "0:200:3600",
+							[6412] = "0:10:45",
+							[3399] = "0:150:405",
+							[46688] = "0:250:5850",
+							[46684] = "0:250:5850",
+							[2546] = "0:80:135",
+							[2539] = "0:10:45",
+							[2541] = "0:50:90",
+							[6415] = "0:50:90",
+							[6500] = "0:125:270",
+							[2544] = "0:75:180",
+							[93741] = "0:40:72",
+							[37836] = "0:1:9",
+							[18243] = "0:250:5850",
+						},
+						["General"] = {
+							[2550] = "0:0:9",
+						},
+						["Cataclysm Cooking"] = {
+							[88015] = "0:1:27000",
+							[88006] = "0:1:31500",
+						},
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_10"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:546:506"] = true,
+									},
+								},
+								["max_health"] = 118,
+							},
+							["level_19"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:548:508"] = true,
+									},
+								},
+								["max_health"] = 367,
+							},
+							["level_20"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:548:506"] = true,
+									},
+								},
+								["max_health"] = 393,
+							},
+							["level_21"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:548:506"] = true,
+									},
+								},
+								["max_health"] = 421,
+							},
+						},
+					},
+				},
+			},
+			["1802"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[85788] = 3,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["41175"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["My weapon be thirsty!"] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_13"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:580:578"] = true,
+										["3:612:568"] = true,
+										["3:566:604"] = true,
+										["3:562:574"] = true,
+									},
+								},
+								["max_health"] = 196,
+							},
+							["level_12"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:616:552"] = true,
+										["3:590:572"] = true,
+										["3:566:570"] = true,
+										["3:570:600"] = true,
+									},
+								},
+								["max_health"] = 190,
+							},
+						},
+						["spells"] = {
+							[38557] = 384,
+							[1604] = 1,
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "14:Alliance:HOSTILE",
+			},
+			["42185"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "5:Alliance:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_4"] = {
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:388:432"] = true,
+										["3:368:504"] = true,
+										["3:382:424"] = true,
+										["3:388:466"] = true,
+										["3:374:512"] = true,
+									},
+								},
+								["max_health"] = 52,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["drops"] = {
+							"money:3", -- [1]
+							"55983:1", -- [2]
+							"money:5", -- [3]
+						},
+					},
+				},
+			},
+			["88403"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[176458] = 3,
+						},
+					},
+				},
+			},
+			["45655"] = {
+				["reaction"] = "58:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_1"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:502:614"] = true,
+										["3:514:604"] = true,
+										["3:496:636"] = true,
+										["3:502:622"] = true,
+										["3:508:604"] = true,
+									},
+								},
+								["max_health"] = 31,
+							},
+						},
+					},
+				},
+			},
+			["41181"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[13953] = 12,
+							[8258] = 120,
+							[1604] = 1,
+						},
+					},
+				},
+			},
+			["45707"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Let the trial begin.  Rise, champions!  Rise, and meet these three in combat!"] = true,
+						["Well-done, heroes.  You have passed my test of combat."] = true,
+						["Your warm-up is complete.  Now, the real trial begins!"] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Argent Dawn",
+				["class"] = "PALADIN",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_59"] = {
+								["max_health"] = 9282,
+								["locations"] = {
+									["Crypt:23"] = {
+										["3:778:516"] = true,
+									},
+								},
+								["power"] = "MANA:2762",
+							},
+						},
+					},
+				},
+				["reaction"] = "59:Alliance:HOSTILE",
+			},
+			["42291"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Optical sensor malfunction detected! Shutting down..."] = true,
+					},
+				},
+				["reaction"] = "9:Alliance:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_9"] = {
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:562:524"] = true,
+										["3:544:516"] = true,
+										["3:564:518"] = true,
+										["3:552:518"] = true,
+										["3:548:474"] = true,
+										["3:552:468"] = true,
+									},
+								},
+								["max_health"] = 102,
+							},
+						},
+						["spells"] = {
+							[84152] = 8,
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["45451"] = {
+				["faction"] = "Argent Crusade",
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Ma'am, would you mind dropping me off at Light's Shield Tower, just up ahead?  I have to stop here."] = true,
+						["I find it satisfying.  I enjoy working with my hands."] = true,
+						["By the way, if any of you need anything repaired, let me know.  I am at your service."] = true,
+						["Light's Hope isn't far, young paladin.  Might I suggest walking?"] = true,
+						["Yes, I do, though it was easier when I was younger.  These days, I have to be more careful."] = true,
+						["Certainly.  I don't make it out to Light's Hope very often anymore, but when you arrive, tell Max Tyrosus that I sent you."] = true,
+						["I service the five Argent towers.  Mostly repairs and maintenance, and some minor magical work."] = true,
+						["Ahem!  I, ah, appreciate the ride, Madam Fiona.  It's nice to get off my feet for once."] = true,
+						["Without proper upkeep, buildings within the plaguelands tend to... waste away."] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_56"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:356:688"] = true,
+									},
+								},
+								["max_health"] = 2881,
+							},
+							["level_57"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:540:536"] = true,
+									},
+								},
+								["max_health"] = 2964,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[5956] = "-1:1:[18:0:0]",
+					[3857] = "-1:1:[500:0:0]",
+					[3466] = "-1:1:[2000:0:0]",
+					[18567] = "-1:1:[30000:0:0]",
+					[2901] = "-1:1:[81:0:0]",
+					[2880] = "-1:1:[100:0:0]",
+					[160298] = "-1:1:[3000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "57:Alliance:FRIENDLY",
+				["can_repair"] = true,
+			},
+			["461"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Stormwind",
+				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Stormwind City:84"] = {
+										["3:396:848"] = true,
+										["3:392:854"] = true,
 									},
 								},
 								["max_health"] = 3217,
 							},
-							["level_59"] = {
+						},
+					},
+				},
+			},
+			["41578"] = {
+				["is_pvp"] = true,
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["One of the mountaineers has seen something. Keep your eyes open!"] = true,
+					},
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["As it is, there are barely enough of us to keep them from taking everything."] = true,
+						["The Frostmane trolls have been raiding the ranch continuously."] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "PALADIN",
+				["reaction"] = "18:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_16"] = {
+								["max_health"] = 290,
 								["locations"] = {
-									["Eastern Plaguelands:24"] = {
-										["5:416:886"] = true,
-										["5:424:894"] = true,
+									["Dun Morogh:27"] = {
+										["3:704:490"] = true,
 									},
 								},
-								["max_health"] = 3132,
+								["power"] = "MANA:191",
 							},
+							["level_17"] = {
+								["max_health"] = 317,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:706:492"] = true,
+									},
+								},
+								["power"] = "MANA:191",
+							},
+							["level_15"] = {
+								["max_health"] = 260,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:704:490"] = true,
+									},
+								},
+								["power"] = "MANA:191",
+							},
+						},
+					},
+				},
+			},
+			["41897"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_20"] = {
+								["max_health"] = 379,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:772:258"] = true,
+									},
+								},
+								["power"] = "MANA:191",
+							},
+						},
+						["spells"] = {
+							[8258] = 293,
+							[13953] = 5,
+						},
+					},
+				},
+				["class"] = "PALADIN",
+				["faction"] = "Ironforge",
+				["reaction"] = "19:Alliance:FRIENDLY",
+			},
+			["40994"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["I can't wait to get out there and help in the fight against those trolls."] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "12:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_12"] = {
+								["locations"] = {
+									["Dun Morogh:29"] = {
+										["5:616:542"] = true,
+										["5:596:550"] = true,
+										["5:590:544"] = true,
+										["5:612:548"] = true,
+										["5:606:554"] = true,
+									},
+								},
+								["max_health"] = 167,
+							},
+						},
+					},
+				},
+			},
+			["4259"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["reaction"] = "21:Alliance:FRIENDLY",
+				["faction"] = "Ironforge",
+				["sells"] = {
+					[66111] = "-1:1:[0]",
+					[66115] = "-1:1:[0]",
+					[66119] = "-1:1:[0]",
+					[66123] = "-1:1:[0]",
+					[66127] = "-1:1:[0]",
+					[66131] = "-1:1:[0]",
+					[66100] = "-1:1:[0]",
+					[66104] = "-1:1:[0]",
+					[66108] = "-1:1:[0]",
+					[66112] = "-1:1:[0]",
+					[66116] = "-1:1:[0]",
+					[66120] = "-1:1:[0]",
+					[2880] = "-1:1:[100:0:0]",
+					[66128] = "-1:1:[0]",
+					[66132] = "-1:1:[0]",
+					[3857] = "-1:1:[500:0:0]",
+					[66101] = "-1:1:[0]",
+					[66105] = "-1:1:[0]",
+					[18567] = "-1:1:[30000:0:0]",
+					[66113] = "-1:1:[0]",
+					[66117] = "-1:1:[0]",
+					[66121] = "-1:1:[0]",
+					[66125] = "-1:1:[0]",
+					[66129] = "-1:1:[0]",
+					[67606] = "-1:1:[0]",
+					[3466] = "-1:1:[2000:0:0]",
+					[66106] = "-1:1:[0]",
+					[66110] = "-1:1:[0]",
+					[66114] = "-1:1:[0]",
+					[66118] = "-1:1:[0]",
+					[66122] = "-1:1:[0]",
+					[5956] = "-1:1:[18:0:0]",
+					[66130] = "-1:1:[0]",
+					[160298] = "-1:1:[3000:0:0]",
+					[66126] = "-1:1:[0]",
+					[67603] = "-1:1:[0]",
+					[2901] = "-1:1:[81]",
+					[66109] = "-1:1:[0]",
+					[66103] = "-1:1:[0]",
+					[66107] = "-1:1:[0]",
+					[66124] = "-1:1:[0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:520:424"] = true,
+										["3:514:430"] = true,
+									},
+								},
+								["max_health"] = 782,
+							},
+						},
+					},
+				},
+				["can_repair"] = true,
+			},
+			["41611"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["Frostmane raiders! Sound the alarm!"] = true,
+						["To arms, mountaineers! Take back those rams!"] = true,
+					},
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Does anyone hear something strange?"] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "PALADIN",
+				["reaction"] = "17:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_15"] = {
+								["max_health"] = 259,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:708:488"] = true,
+									},
+								},
+								["power"] = "MANA:138",
+							},
+							["level_17"] = {
+								["max_health"] = 316,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:702:484"] = true,
+									},
+								},
+								["power"] = "MANA:138",
+							},
+						},
+						["spells"] = {
+							[8258] = 9,
+							[1604] = 1,
+							[81460] = 5,
+						},
+					},
+				},
+			},
+			["9448"] = {
+				["reaction"] = "60:Alliance:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 2384,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:802:778"] = true,
+										["3:782:762"] = true,
+									},
+								},
+								["power"] = "MANA:1381",
+							},
+							["level_61"] = {
+								["max_health"] = 2466,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:798:774"] = true,
+										["3:814:788"] = true,
+									},
+								},
+								["power"] = "MANA:1381",
+							},
+						},
+						["spells"] = {
+							[79964] = 5,
+							[17143] = 3,
+						},
+						["drops"] = {
+							"money:921", -- [1]
+						},
+					},
+				},
+			},
+			["50309"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["sells"] = {
+					[64898] = "-1:1:[34268]",
+					[64900] = "-1:1:[34521]",
+					[45577] = "-1:1:[1000:0:0]",
+					[64899] = "-1:1:[34393]",
+					[67528] = "-1:1:[20000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:558:478"] = true,
+										["3:558:484"] = true,
+									},
+								},
+								["max_health"] = 2383,
+							},
+						},
+					},
+				},
+			},
+			["46185"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Commencing decontamination sequence... "] = true,
+					},
+				},
+				["reaction"] = "3:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_3"] = {
+								["max_health"] = 46,
+								["locations"] = {
+									["Dun Morogh:30"] = {
+										["5:592:818"] = true,
+										["5:604:820"] = true,
+										["5:584:816"] = true,
+										["5:598:818"] = true,
+									},
+								},
+								["power"] = "MANA:60",
+							},
+						},
+					},
+				},
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["1388"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "16:Alliance:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_16"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:694:458"] = true,
+									},
+								},
+								["max_health"] = 581,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[3143] = 3,
+						},
+						["drops"] = {
+							"money:42", -- [1]
+						},
+					},
+				},
+			},
+			["4772"] = {
+				["is_pvp"] = true,
+				["teaches"] = {
+					["WARLOCK"] = {
+						["General"] = {
+							[33388] = "0:0:36000",
+							[33391] = "0:0:450000",
+						},
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_15"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:712:484"] = true,
+									},
+								},
+								["max_health"] = 260,
+							},
+							["level_20"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:712:486"] = true,
+									},
+								},
+								["max_health"] = 393,
+							},
+						},
+					},
+				},
+			},
+			["41398"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "14:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_14"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:568:466"] = true,
+									},
+								},
+								["max_health"] = 225,
+							},
+						},
+					},
+				},
+			},
+			["46274"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Gnomeregan",
+				["class"] = "PALADIN",
+				["reaction"] = "3:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_3"] = {
+								["max_health"] = 46,
+								["locations"] = {
+									["Dun Morogh:30"] = {
+										["5:530:816"] = true,
+										["5:542:816"] = true,
+										["5:536:818"] = true,
+									},
+								},
+								["power"] = "MANA:104",
+							},
+						},
+					},
+				},
+			},
+			["41909"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[8258] = 309,
+							[13953] = 4,
+						},
+					},
+				},
+			},
+			["9450"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Alliance:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 2384,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:792:774"] = true,
+										["3:792:768"] = true,
+									},
+								},
+								["power"] = "MANA:1381",
+							},
+							["level_59"] = {
+								["max_health"] = 2321,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:746:778"] = true,
+										["3:816:786"] = true,
+									},
+								},
+								["power"] = "MANA:1432",
+							},
+							["level_58"] = {
+								["max_health"] = 2259,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:750:776"] = true,
+									},
+								},
+								["power"] = "MANA:1432",
+							},
+						},
+						["spells"] = {
+							[25054] = 11,
+							[25058] = 2,
+						},
+						["drops"] = {
+							"money:459", -- [1]
+						},
+					},
+				},
+			},
+			["41544"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["If you want your rams back, come get them, cowards!"] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_16"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:694:558"] = true,
+									},
+								},
+								["max_health"] = 291,
+							},
+						},
+						["spells"] = {
+							[77663] = 6,
+							[31290] = 2,
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "16:Alliance:HOSTILE",
+			},
+			["42928"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_-1"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:394:562"] = true,
+									},
+								},
+								["max_health"] = 30352700,
+							},
+						},
+						["spells"] = {
+							[84831] = 2,
+							[19135] = 2,
+							[20686] = 1,
+						},
+					},
+				},
+			},
+			["1254"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "18:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_17"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:764:546"] = true,
+									},
+								},
+								["max_health"] = 317,
+							},
+							["level_18"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:764:546"] = true,
+									},
+								},
+								["max_health"] = 342,
+							},
+						},
+					},
+				},
+			},
+			["42170"] = {
+				["reaction"] = "18:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_17"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:842:568"] = true,
+									},
+								},
+								["max_health"] = 334,
+							},
+						},
+						["spells"] = {
+							[75002] = 6,
 						},
 					},
 				},
@@ -10582,11 +10546,11 @@ WoWDBProfilerData = {
 			["45677"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[8258] = 2,
 							[79968] = 1,
-						},
-						["stats"] = {
 						},
 					},
 				},
@@ -10602,30 +10566,23 @@ WoWDBProfilerData = {
 					[1205] = "-1:5:[500]",
 					[1179] = "-1:5:[125:0:0]",
 					[1708] = "-1:5:[1000]",
-					[8766] = "-1:5:[4000]",
-					[82343] = "-1:1:[22400]",
-					[1645] = "-1:5:[2000]",
-					[2595] = "-1:1:[2000:0:0]",
-					[2593] = "-1:1:[150:0:0]",
-					[159] = "-1:5:[25:0:0]",
-					[2594] = "-1:1:[1500:0:0]",
 					[83094] = "-1:1:[25600]",
+					[2594] = "-1:1:[1500:0:0]",
+					[1645] = "-1:5:[2000]",
 					[83095] = "-1:1:[22400]",
-					[2723] = "-1:1:[50:0:0]",
+					[2593] = "-1:1:[150:0:0]",
 					[82344] = "-1:1:[25600]",
+					[82343] = "-1:1:[22400]",
+					[159] = "-1:5:[25:0:0]",
+					[2595] = "-1:1:[2000:0:0]",
+					[2723] = "-1:1:[50:0:0]",
+					[8766] = "-1:5:[4000]",
 				},
 				["class"] = "WARRIOR",
+				["reaction"] = "10:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_10"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:490:532"] = true,
-									},
-								},
-								["max_health"] = 118,
-							},
 							["level_9"] = {
 								["locations"] = {
 									["New Tinkertown:469"] = {
@@ -10634,73 +10591,35 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 101,
 							},
+							["level_10"] = {
+								["locations"] = {
+									["New Tinkertown:469"] = {
+										["3:490:532"] = true,
+									},
+								},
+								["max_health"] = 118,
+							},
 						},
 					},
 				},
-				["reaction"] = "10:Alliance:FRIENDLY",
 			},
-			["44904"] = {
+			["41335"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[83872] = 6,
+							[77404] = 9,
 						},
 					},
 				},
 			},
-			["8519"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "58:Alliance:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_58"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:550:750"] = true,
-									},
-								},
-								["max_health"] = 2933,
-							},
-							["level_59"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:546:736"] = true,
-										["3:590:752"] = true,
-										["3:550:748"] = true,
-										["3:550:698"] = true,
-										["3:594:738"] = true,
-										["3:548:716"] = true,
-									},
-								},
-								["max_health"] = 3034,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[16554] = 17,
-							[16555] = 5,
-							[85873] = 7,
-						},
-						["drops"] = {
-							"55985:1", -- [1]
-							"22527:1", -- [2]
-							"4637:1", -- [3]
-						},
-					},
-				},
-			},
-			["50631"] = {
+			["1256"] = {
+				["is_pvp"] = true,
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
 				["reaction"] = "18:Alliance:FRIENDLY",
 				["encounter_data"] = {
@@ -10709,7 +10628,7 @@ WoWDBProfilerData = {
 							["level_17"] = {
 								["locations"] = {
 									["Dun Morogh:27"] = {
-										["3:762:532"] = true,
+										["3:764:532"] = true,
 									},
 								},
 								["max_health"] = 317,
@@ -10718,72 +10637,105 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["45429"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[79977] = 8,
-							[79976] = 6,
-						},
-					},
-				},
-			},
-			["45730"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[79968] = 29,
-						},
-					},
-				},
-			},
-			["45575"] = {
+			["6124"] = {
 				["genders"] = {
 					["MALE"] = true,
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
+				["reaction"] = "18:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_59"] = {
+							["level_18"] = {
 								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:538:540"] = true,
+									["Dun Morogh:27"] = {
+										["3:852:610"] = true,
 									},
 								},
-								["max_health"] = 2321,
+								["max_health"] = 683,
 							},
-							["level_58"] = {
+						},
+						["spells"] = {
+							[58461] = 2,
+							[84159] = 2,
+						},
+					},
+				},
+			},
+			["5138"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["sells"] = {
+					[22250] = "-1:1:[1000:0:0]",
+					[3371] = "-1:20:[150:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "19:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
 								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:538:540"] = true,
+									["City of Ironforge:87"] = {
+										["3:554:590"] = true,
+										["3:554:584"] = true,
+										["3:554:578"] = true,
 									},
 								},
-								["max_health"] = 2258,
+								["max_health"] = 782,
 							},
-							["level_57"] = {
+						},
+					},
+				},
+			},
+			["1573"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["reaction"] = "21:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_120"] = {
 								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:538:540"] = true,
+									["City of Ironforge:87"] = {
+										["3:566:484"] = true,
+										["3:560:484"] = true,
+										["3:564:476"] = true,
+										["3:558:478"] = true,
+										["3:550:484"] = true,
 									},
 								},
-								["max_health"] = 2196,
+								["max_health"] = 130083,
 							},
+						},
+					},
+				},
+				["flight_master"] = true,
+			},
+			["42536"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[80182] = 1,
 						},
 					},
 				},
 			},
 			["92147"] = {
+				["reaction"] = "59:Alliance:FRIENDLY",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["FEMALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "59:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -10801,60 +10753,59 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["47149"] = {
+			["30733"] = {
 				["is_pvp"] = true,
 				["genders"] = {
-					["FEMALE"] = true,
+					["MALE"] = true,
 				},
-				["reaction"] = "59:Alliance:FRIENDLY",
-				["faction"] = "Argent Crusade",
+				["faction"] = "Ironforge",
 				["sells"] = {
-					[15810] = "-1:1:[10145:0:0]",
-					[927] = "-1:1:[6954:0:0]",
-					[15811] = "-1:1:[27133:0:0]",
-					[926] = "-1:1:[9785:0:0]",
-					[2524] = "-1:1:[19192:0:0]",
-					[2532] = "-1:1:[52608:0:0]",
-					[2525] = "-1:1:[26490:0:0]",
-					[2533] = "-1:1:[61108:0:0]",
-					[853] = "-1:1:[2409:0:0]",
-					[1196] = "-1:1:[2214:0:0]",
-					[2025] = "-1:1:[5305:0:0]",
-					[2029] = "-1:1:[4420:0:0]",
-					[2535] = "-1:1:[61558:0:0]",
-					[2527] = "-1:1:[29356:0:0]",
+					[1515] = "-1:1:[984:0:0]",
+					[43116] = "-1:1:[0:0:0:(1:129032)]",
+					[113111] = "-1:1:[0:0:0:(1:129032)]",
+					[43120] = "-1:1:[0:0:0:(1:129032)]",
+					[43122] = "-1:1:[0:0:0:(1:129032)]",
+					[43124] = "-1:1:[0:0:0:(1:129032)]",
+					[64670] = "-1:5:[4000:0:0]",
+					[43126] = "-1:1:[0:0:0:(1:129032)]",
+					[39469] = "-1:1:[0:0:0:(1:129032)]",
+					[79255] = "-1:1:[0:0:0:(10:129032)]",
+					[43127] = "-1:1:[0:0:0:(10:129032)]",
+					[61978] = "-1:1:[0:0:0:(1:129032)]",
+					[79254] = "-1:1:[0:0:0:(1:129032)]",
+					[39505] = "-1:1:[750]",
+					[61981] = "-1:1:[0:0:0:(10:129032)]",
+					[39774] = "-1:1:[0:0:0:(1:129032)]",
+					[43118] = "-1:1:[0:0:0:(1:129032)]",
+					[39354] = "-1:5:[15:0:0]",
+					[39489] = "3:1:[5000:0:0]",
+					[79740] = "-1:1:[23:0:0]",
 				},
-				["class"] = "WARRIOR",
+				["class"] = "MAGE",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_58"] = {
+							["level_35"] = {
+								["max_health"] = 793,
 								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:538:538"] = true,
+									["City of Ironforge:87"] = {
+										["3:594:444"] = true,
+										["3:602:440"] = true,
 									},
 								},
-								["max_health"] = 2257,
-							},
-							["level_57"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:538:538"] = true,
-									},
-								},
-								["max_health"] = 2195,
+								["power"] = "MANA:2680",
 							},
 						},
 					},
 				},
-				["can_repair"] = true,
 			},
 			["10698"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "MAGE",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "MAGE",
-				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -10872,82 +10823,73 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["1234"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
+			["2925"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_19"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:546:508"] = true,
-									},
-								},
-								["max_health"] = 367,
-							},
-							["level_10"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:546:508"] = true,
-									},
-								},
-								["max_health"] = 119,
-							},
+						},
+						["spells"] = {
+							[32919] = 1,
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
-			["4256"] = {
-				["is_pvp"] = true,
+			["8548"] = {
 				["genders"] = {
-					["MALE"] = true,
+					["FEMALE"] = true,
 				},
-				["faction"] = "Ironforge",
-				["sells"] = {
-					[30746] = "-1:1:[100000:0:0]",
-					[3466] = "-1:1:[2000:0:0]",
-					[20815] = "-1:1:[800:0:0]",
-					[2880] = "-1:1:[100:0:0]",
-					[3857] = "-1:1:[500:0:0]",
-					[2901] = "-1:1:[81:0:0]",
-				},
-				["class"] = "WARRIOR",
+				["class"] = "PALADIN",
+				["reaction"] = "58:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["stats"] = {
-							["level_30"] = {
+							["level_58"] = {
+								["max_health"] = 3046,
 								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:514:252"] = true,
-										["3:516:270"] = true,
-										["3:510:260"] = true,
-										["3:520:258"] = true,
-										["3:508:272"] = true,
-										["3:518:264"] = true,
+									["Eastern Plaguelands:23"] = {
+										["3:538:612"] = true,
 									},
 								},
-								["max_health"] = 782,
+								["power"] = "MANA:1332",
 							},
+						},
+						["spells"] = {
+							[16587] = 30,
+							[12040] = 2,
+						},
+						["drops"] = {
+							"money:719", -- [1]
 						},
 					},
 				},
-				["reaction"] = "20:Alliance:FRIENDLY",
 			},
 			["8529"] = {
+				["reaction"] = "57:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 9,
+						},
 						["stats"] = {
+							["level_56"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:344:472"] = true,
+										["3:346:492"] = true,
+										["3:382:458"] = true,
+										["3:344:478"] = true,
+										["3:370:472"] = true,
+									},
+								},
+								["max_health"] = 2879,
+							},
 							["level_54"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
@@ -10960,18 +10902,6 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 2724,
 							},
-							["level_56"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:344:472"] = true,
-										["3:346:492"] = true,
-										["3:370:472"] = true,
-										["3:344:478"] = true,
-										["3:382:458"] = true,
-									},
-								},
-								["max_health"] = 2879,
-							},
 							["level_55"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
@@ -10983,15 +10913,12 @@ WoWDBProfilerData = {
 										["3:356:440"] = true,
 										["3:332:478"] = true,
 										["3:346:492"] = true,
-										["3:372:436"] = true,
 										["3:350:470"] = true,
+										["3:372:436"] = true,
 									},
 								},
 								["max_health"] = 2801,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 9,
 						},
 						["spells"] = {
 							[13737] = 36,
@@ -11015,28 +10942,13 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["10938"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:HOSTILE",
+			["45921"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-							["level_57"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:348:816"] = true,
-									},
-								},
-								["max_health"] = 5485,
-							},
-						},
 						["spells"] = {
-							[6253] = 2,
-							[16244] = 5,
-							[12542] = 3,
+							[85593] = 3,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -11047,6 +10959,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "ROGUE",
+				["reaction"] = "16:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -11071,20 +10984,15 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "16:Alliance:FRIENDLY",
 			},
 			["41121"] = {
+				["reaction"] = "11:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "11:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[12550] = 22,
-							[9532] = 23,
-						},
 						["stats"] = {
 							["level_11"] = {
 								["max_health"] = 123,
@@ -11098,64 +11006,46 @@ WoWDBProfilerData = {
 								["power"] = "MANA:115",
 							},
 						},
+						["spells"] = {
+							[12550] = 22,
+							[9532] = 23,
+						},
 					},
 				},
 			},
-			["1701"] = {
-				["is_pvp"] = true,
-				["teaches"] = {
-					["WARLOCK"] = {
-						["Mining"] = {
-							[10097] = "0:150:4500",
-							[2658] = "0:65:180",
-							[3304] = "0:50:45",
-							[3307] = "0:100:450",
-							[10098] = "0:165:9000",
-							[16153] = "0:200:18000",
-							[3569] = "0:125:675",
-							[265843] = "0:1:270000",
-							[2659] = "0:50:180",
-							[3308] = "0:115:540",
-							[70524] = "0:250:9000",
-						},
-						["General"] = {
-							[2575] = "0:0:9",
-						},
-						["Cataclysm Mining"] = {
-							[74529] = "0:75:45000",
-							[74530] = "0:25:45000",
-							[84038] = "0:1:45000",
-							[74537] = "0:50:45000",
-						},
-					},
-				},
+			["42224"] = {
 				["genders"] = {
-					["MALE"] = true,
+					["UNKNOWN"] = true,
 				},
-				["faction"] = "Ironforge",
-				["class"] = "WARRIOR",
+				["class"] = "PALADIN",
+				["reaction"] = "8:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_17"] = {
+							["level_8"] = {
+								["max_health"] = 6,
 								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:764:536"] = true,
+									["New Tinkertown:469"] = {
+										["3:536:262"] = true,
+										["3:562:242"] = true,
+										["3:576:216"] = true,
+										["3:576:210"] = true,
+										["3:554:238"] = true,
+										["3:572:238"] = true,
 									},
 								},
-								["max_health"] = 317,
+								["power"] = "MANA:79",
 							},
 						},
 					},
 				},
-				["reaction"] = "18:Alliance:FRIENDLY",
 			},
 			["1698"] = {
 				["is_pvp"] = true,
-				["reaction"] = "20:Alliance:FRIENDLY",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["faction"] = "Ironforge",
 				["sells"] = {
 					[2490] = "-1:1:[540]",
@@ -11191,6 +11081,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "PALADIN",
+				["reaction"] = "3:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -11198,8 +11089,8 @@ WoWDBProfilerData = {
 								["max_health"] = 46,
 								["locations"] = {
 									["Dun Morogh:30"] = {
-										["5:680:838"] = true,
 										["5:688:836"] = true,
+										["5:680:838"] = true,
 									},
 								},
 								["power"] = "MANA:104",
@@ -11207,122 +11098,23 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "3:Alliance:FRIENDLY",
 			},
-			["10940"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[6136] = 4,
-							[15089] = 9,
-						},
-					},
-				},
-			},
-			["109751"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[183585] = 3,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["42852"] = {
-				["is_pvp"] = true,
+			["42146"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
-						["That'll teach you to mess with the might of Ironforge and <race>regan!"] = true,
-						["Aye, let's teach this addle-brained <race> a lesson!"] = true,
+						["I go willingly, <class>. My purpose in my master's plan is fulfilled."] = true,
+						["Do as you will with me. I am not afraid. That halfbreed runt will never be my emperor! Long live Twilight's Hammer!"] = true,
 					},
 				},
-				["reaction"] = "10:Alliance:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[80173] = 4,
-							[1604] = 2,
-							[80183] = 1,
-						},
-						["stats"] = {
-							["level_9"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:574:466"] = true,
-										["3:586:432"] = true,
-										["3:572:472"] = true,
-										["3:586:438"] = true,
-									},
-								},
-								["max_health"] = 1011,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["MALE"] = true,
-				},
-			},
-			["61834"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[79849] = 3,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["42294"] = {
-				["reaction"] = "10:Alliance:NEUTRAL",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_9"] = {
-								["max_health"] = 102,
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:588:434"] = true,
-									},
-								},
-								["power"] = "MANA:115",
-							},
-						},
-					},
-				},
-			},
-			["1691"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Ironforge",
-				["sells"] = {
-					[4496] = "-1:1:[500:0:0]",
-					[4498] = "-1:1:[2500:0:0]",
-					[159] = "-1:5:[25:0:0]",
-					[5042] = "-1:1:[50:0:0]",
-					[4470] = "-1:1:[38:0:0]",
-					[4540] = "-1:5:[25:0:0]",
-				},
-				["class"] = "WARRIOR",
+				["reaction"] = "20:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_10"] = {
 								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:544:508"] = true,
+									["City of Ironforge:87"] = {
+										["3:364:440"] = true,
+										["3:366:434"] = true,
 									},
 								},
 								["max_health"] = 118,
@@ -11330,24 +11122,206 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "10:Alliance:FRIENDLY",
-			},
-			["17072"] = {
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
+			},
+			["50729"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Ironforge",
 				["class"] = "WARRIOR",
-				["reaction"] = "59:Alliance:FRIENDLY",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:500:62"] = true,
+									},
+								},
+								["max_health"] = 2206,
+							},
+						},
+					},
+				},
+			},
+			["8543"] = {
+				["reaction"] = "58:Alliance:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_57"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:554:622"] = true,
+									},
+								},
+								["max_health"] = 2967,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:314", -- [1]
+							"15447:1", -- [2]
+						},
+					},
+				},
+			},
+			["43702"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["reaction"] = "20:Alliance:FRIENDLY",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_17"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:758:544"] = true,
+									},
+								},
+								["max_health"] = 953,
+							},
+							["level_20"] = {
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:758:544"] = true,
+									},
+								},
+								["max_health"] = 1182,
+							},
+						},
+					},
+				},
+				["flight_master"] = true,
+			},
+			["68"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[95826] = 82,
+							[1604] = 9,
+						},
+					},
+				},
+			},
+			["8603"] = {
+				["reaction"] = "59:Alliance:NEUTRAL",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
+						["stats"] = {
+							["level_58"] = {
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:698:672"] = true,
+										["3:686:646"] = true,
+										["3:740:642"] = true,
+										["3:692:652"] = true,
+									},
+								},
+								["max_health"] = 2935,
+							},
 							["level_59"] = {
 								["locations"] = {
 									["Eastern Plaguelands:23"] = {
-										["3:750:522"] = true,
+										["3:728:654"] = true,
+										["3:738:624"] = true,
 									},
 								},
-								["max_health"] = 2321,
+								["max_health"] = 3015,
+							},
+						},
+						["spells"] = {
+							[16449] = 15,
+						},
+						["drops"] = {
+							"13853:2", -- [1]
+							"13853:2", -- [2]
+							"13853:3", -- [3]
+							"13853:6", -- [4]
+							"13853:6", -- [5]
+						},
+					},
+				},
+			},
+			["5159"] = {
+				["is_pvp"] = true,
+				["teaches"] = {
+					["WARLOCK"] = {
+						["Cooking"] = {
+							[18238] = "0:225:4500",
+							[3400] = "0:175:450",
+							[18240] = "0:240:5400",
+							[4094] = "0:175:450",
+							[264638] = "0:1:270000",
+							[18244] = "0:250:5850",
+							[6499] = "0:50:90",
+							[21175] = "0:200:3600",
+							[6412] = "0:10:45",
+							[3399] = "0:150:405",
+							[46688] = "0:250:5850",
+							[46684] = "0:250:5850",
+							[2546] = "0:80:135",
+							[2539] = "0:10:45",
+							[2541] = "0:50:90",
+							[6415] = "0:50:90",
+							[6500] = "0:125:270",
+							[2544] = "0:75:180",
+							[93741] = "0:40:72",
+							[37836] = "0:1:9",
+							[18243] = "0:250:5850",
+						},
+						["General"] = {
+							[2550] = "0:0:9",
+						},
+						["Cataclysm Cooking"] = {
+							[88015] = "0:1:27000",
+							[88006] = "0:1:31500",
+						},
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Ironforge",
+				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_35"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:600:368"] = true,
+										["3:602:378"] = true,
+										["3:596:376"] = true,
+									},
+								},
+								["max_health"] = 1090,
 							},
 						},
 					},
@@ -11359,6 +11333,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Ironforge",
 				["class"] = "PALADIN",
+				["reaction"] = "19:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -11374,16 +11349,18 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "19:Alliance:FRIENDLY",
 			},
 			["46093"] = {
+				["reaction"] = "59:Alliance:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "59:Alliance:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["max_health"] = 4802,
@@ -11395,14 +11372,11 @@ WoWDBProfilerData = {
 								["power"] = "MANA:1381",
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
 						["spells"] = {
 							[18266] = 4,
-							[85800] = 3,
 							[9613] = 7,
 							[17173] = 2,
+							[85800] = 3,
 						},
 						["drops"] = {
 							"money:942", -- [1]
@@ -11411,11 +11385,116 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["42491"] = {
+			["5157"] = {
 				["is_pvp"] = true,
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["What we do know is that Crushcog is using an advanced mechano-tank prototype and his irradiated <race>s are trying to repair more at the old arsenal."] = true,
+				["teaches"] = {
+					["WARLOCK"] = {
+						["General"] = {
+							[7411] = "0:0:9",
+						},
+						["Cataclysm Enchanting"] = {
+							[74238] = "0:60:27000",
+							[74191] = "0:1:27000",
+							[74195] = "0:1:27000",
+							[74199] = "0:5:27000",
+							[74207] = "0:15:27000",
+							[74211] = "0:20:27000",
+							[74223] = "0:30:27000",
+							[74231] = "0:45:27000",
+							[74235] = "0:50:27000",
+							[74239] = "0:60:27000",
+							[74192] = "0:1:27000",
+							[74200] = "0:10:27000",
+							[74212] = "0:20:27000",
+							[74220] = "0:30:27000",
+							[74232] = "0:45:27000",
+							[74236] = "0:55:27000",
+							[95471] = "0:20:27000",
+							[74189] = "0:1:27000",
+							[74193] = "0:1:27000",
+							[74197] = "0:1:27000",
+							[74201] = "0:10:27000",
+							[74213] = "0:25:27000",
+							[74225] = "0:35:27000",
+							[74229] = "0:40:27000",
+							[74237] = "0:55:27000",
+							[74198] = "0:5:27000",
+							[74202] = "0:15:27000",
+							[104698] = "0:65:27000",
+							[74214] = "0:25:27000",
+							[74132] = "0:1:27000",
+							[217645] = "0:50:27000",
+							[74226] = "0:35:27000",
+							[74230] = "0:40:27000",
+							[74234] = "0:50:27000",
+							[74240] = "0:60:27000",
+						},
+						["Enchanting"] = {
+							[7426] = "0:40:90",
+							[13622] = "0:150:2250",
+							[13693] = "0:195:3600",
+							[7771] = "0:70:180",
+							[13538] = "0:140:2250",
+							[13822] = "0:210:3960",
+							[13935] = "0:235:5220",
+							[7457] = "0:50:225",
+							[7788] = "0:90:450",
+							[13905] = "0:230:4860",
+							[13937] = "0:240:5580",
+							[264464] = "0:1:450000",
+							[217637] = "0:275:11250",
+							[13529] = "0:145:2160",
+							[13939] = "0:240:5580",
+							[13663] = "0:185:3420",
+							[17180] = "0:250:9000",
+							[17181] = "0:250:9000",
+							[13941] = "0:245:5580",
+							[7857] = "0:120:900",
+							[13501] = "0:130:1350",
+							[13659] = "0:180:2880",
+							[13943] = "0:245:5580",
+							[20008] = "0:255:9000",
+							[13503] = "0:140:1800",
+							[13661] = "0:180:3240",
+							[13378] = "0:105:540",
+							[20012] = "0:270:9000",
+							[20013] = "0:295:18000",
+							[14293] = "0:10:45",
+							[13695] = "0:200:3600",
+							[20016] = "0:280:13500",
+							[13948] = "0:250:5850",
+							[13917] = "0:230:4860",
+							[13637] = "0:160:2520",
+							[7779] = "0:80:360",
+							[13635] = "0:155:2340",
+							[7748] = "0:60:225",
+							[20023] = "0:295:18000",
+							[20028] = "0:290:13500",
+							[13700] = "0:200:3600",
+							[13858] = "0:220:4320",
+							[13890] = "0:225:4500",
+							[13607] = "0:145:2160",
+							[13815] = "0:210:3960",
+							[13421] = "0:115:720",
+							[13640] = "0:160:2430",
+							[7420] = "0:15:45",
+							[63746] = "0:225:4500",
+							[14807] = "0:70:180",
+							[13642] = "0:165:2520",
+							[13485] = "0:130:1350",
+							[13887] = "0:225:4500",
+							[14809] = "0:155:2340",
+							[13644] = "0:170:2520",
+							[14810] = "0:175:2700",
+							[7863] = "0:125:1260",
+							[13631] = "0:155:2340",
+							[13646] = "0:170:2520",
+							[13626] = "0:150:2250",
+							[13836] = "0:215:4140",
+							[7745] = "0:100:450",
+							[13648] = "0:170:2520",
+							[13746] = "0:205:3780",
+						},
 					},
 				},
 				["genders"] = {
@@ -11423,58 +11502,77 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_9"] = {
+							["level_35"] = {
 								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:384:336"] = true,
+									["City of Ironforge:87"] = {
+										["3:596:442"] = true,
+										["3:604:454"] = true,
+										["3:594:448"] = true,
+										["3:610:450"] = true,
+										["3:604:440"] = true,
+										["3:590:454"] = true,
 									},
 								},
-								["max_health"] = 5055,
-							},
-							["level_8"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:384:336"] = true,
-									},
-								},
-								["max_health"] = 4365,
+								["max_health"] = 1090,
 							},
 						},
 					},
 				},
-				["reaction"] = "9:Alliance:FRIENDLY",
 			},
-			["1196"] = {
-				["reaction"] = "16:Alliance:HOSTILE",
-				["class"] = "WARRIOR",
+			["5154"] = {
+				["is_pvp"] = true,
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["FEMALE"] = true,
 				},
+				["faction"] = "Ironforge",
+				["sells"] = {
+					[38426] = "-1:1:[30000:0:0]",
+					[6261] = "-1:1:[1000:0:0]",
+					[10290] = "-1:1:[2500:0:0]",
+					[2325] = "-1:1:[1000:0:0]",
+					[2605] = "-1:1:[100:0:0]",
+					[54596] = "-1:1:[0]",
+					[2321] = "-1:1:[100:0:0]",
+					[8343] = "-1:1:[2000:0:0]",
+					[2604] = "-1:1:[50:0:0]",
+					[4340] = "-1:1:[350:0:0]",
+					[4342] = "-1:1:[2500:0:0]",
+					[6260] = "-1:1:[50:0:0]",
+					[2324] = "-1:1:[25:0:0]",
+					[2320] = "-1:1:[10:0:0]",
+					[54593] = "-1:1:[0]",
+					[54594] = "-1:1:[0]",
+					[54595] = "-1:1:[0]",
+					[4341] = "-1:1:[500:0:0]",
+					[54597] = "-1:1:[0]",
+					[54598] = "-1:1:[0]",
+					[4291] = "-1:1:[500:0:0]",
+					[54600] = "-1:1:[0]",
+					[54601] = "-1:1:[0]",
+					[54602] = "-1:1:[0]",
+					[14341] = "-1:1:[5000:0:0]",
+					[54604] = "-1:1:[0]",
+					[54605] = "-1:1:[0]",
+					[54599] = "-1:1:[0]",
+					[68199] = "-1:1:[0]",
+					[54603] = "-1:1:[0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[3130] = 2,
-						},
 						["stats"] = {
-							["level_17"] = {
+							["level_30"] = {
 								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:694:564"] = true,
-										["3:694:570"] = true,
+									["City of Ironforge:87"] = {
+										["3:432:284"] = true,
 									},
 								},
-								["max_health"] = 358,
-							},
-							["level_16"] = {
-								["locations"] = {
-									["Dun Morogh:27"] = {
-										["3:704:584"] = true,
-									},
-								},
-								["max_health"] = 346,
+								["max_health"] = 782,
 							},
 						},
 					},
@@ -11487,19 +11585,13 @@ WoWDBProfilerData = {
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[95826] = 18,
-							[8078] = 32,
-							[11971] = 58,
-							[1604] = 21,
-						},
 						["stats"] = {
 							["level_120"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
 										["3:580:498"] = true,
-										["3:448:480"] = true,
 										["3:574:496"] = true,
+										["3:448:480"] = true,
 										["3:556:542"] = true,
 										["3:446:472"] = true,
 									},
@@ -11507,88 +11599,114 @@ WoWDBProfilerData = {
 								["max_health"] = 65042,
 							},
 						},
+						["spells"] = {
+							[95826] = 18,
+							[8078] = 32,
+							[11971] = 58,
+							[1604] = 21,
+						},
 					},
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "21:Alliance:FRIENDLY",
 				["faction"] = "Ironforge",
+				["reaction"] = "21:Alliance:FRIENDLY",
 			},
-			["45729"] = {
+			["8681"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Gnomeregan",
+				["sells"] = {
+					[38426] = "-1:1:[30000:0:0]",
+					[6261] = "-1:1:[1000:0:0]",
+					[10290] = "-1:1:[2500:0:0]",
+					[10314] = "1:1:[4000]",
+					[2321] = "-1:1:[100:0:0]",
+					[2325] = "-1:1:[1000:0:0]",
+					[4340] = "-1:1:[350:0:0]",
+					[10323] = "1:1:[4500]",
+					[4341] = "-1:1:[500:0:0]",
+					[2605] = "-1:1:[100:0:0]",
+					[14341] = "-1:1:[5000:0:0]",
+					[4291] = "-1:1:[500:0:0]",
+					[2320] = "-1:1:[10:0:0]",
+					[10326] = "1:1:[5000]",
+					[2324] = "-1:1:[25:0:0]",
+					[6260] = "-1:1:[50:0:0]",
+					[4342] = "-1:1:[2500:0:0]",
+					[8343] = "-1:1:[2000:0:0]",
+					[2604] = "-1:1:[50:0:0]",
+					[10317] = "1:1:[4000]",
+					[10321] = "1:1:[4500]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_35"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:442:300"] = true,
+										["3:432:292"] = true,
+										["3:438:286"] = true,
+										["3:436:280"] = true,
+										["3:440:292"] = true,
+									},
+								},
+								["max_health"] = 1090,
+							},
+						},
+					},
+				},
+			},
+			["69792"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[79977] = 28,
-							[79976] = 28,
+							[115804] = 2,
 						},
 					},
 				},
 			},
-			["460"] = {
+			["13016"] = {
 				["genders"] = {
-					["MALE"] = true,
+					["UNKNOWN"] = true,
 				},
-				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "21:Alliance:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_3"] = {
-								["locations"] = {
-									["New Tinkertown:469"] = {
-										["3:376:378"] = true,
-										["3:380:372"] = true,
-									},
-								},
-								["max_health"] = 46,
+							["level_1"] = {
+								["max_health"] = 1,
 							},
 						},
 					},
 				},
-				["reaction"] = "4:Alliance:FRIENDLY",
 			},
-			["10276"] = {
+			["4078"] = {
 				["is_pvp"] = true,
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["faction"] = "Ironforge",
+				["faction"] = "Stormwind",
 				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_31"] = {
-								["locations"] = {
-									["City of Ironforge:87"] = {
-										["3:522:422"] = true,
-									},
-								},
-								["max_health"] = 869,
-							},
-						},
-					},
-				},
 				["reaction"] = "21:Alliance:FRIENDLY",
-			},
-			["44231"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Argent Crusade",
-				["class"] = "WARRIOR",
-				["reaction"] = "57:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_120"] = {
+							["level_32"] = {
 								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:528:536"] = true,
+									["Stormwind City:84"] = {
+										["3:528:858"] = true,
+										["3:526:864"] = true,
 									},
 								},
-								["max_health"] = 130083,
+								["max_health"] = 922,
 							},
 						},
 					},
@@ -11601,6 +11719,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Gnomeregan",
 				["class"] = "WARRIOR",
+				["reaction"] = "14:Alliance:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -11615,67 +11734,38 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "14:Alliance:FRIENDLY",
 			},
 			["41898"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+						},
 						["spells"] = {
 							[6685] = 217,
 							[77216] = 1106,
 							[1604] = 2,
 						},
+					},
+				},
+			},
+			["69791"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
 						["stats"] = {
+						},
+						["spells"] = {
+							[115804] = 2,
 						},
 					},
 				},
 			},
-			["8546"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "56:Alliance:HOSTILE",
+			["14822"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_54"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:350:460"] = true,
-									},
-								},
-								["max_health"] = 2726,
-							},
-							["level_55"] = {
-								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:376:424"] = true,
-									},
-								},
-								["max_health"] = 2801,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 2,
 						},
 						["spells"] = {
-							[8646] = 2,
-						},
-						["drops"] = {
-							"money:380", -- [1]
-							"money:682", -- [2]
-						},
-					},
-				},
-			},
-			["43033"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[57322] = 1,
-						},
-						["stats"] = {
+							[23768] = 3,
 						},
 					},
 				},
@@ -11686,7 +11776,7 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 				["faction"] = "Ironforge",
-				["auctioneer"] = true,
+				["reaction"] = "61:Alliance:FRIENDLY",
 				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -11694,8 +11784,8 @@ WoWDBProfilerData = {
 							["level_50"] = {
 								["locations"] = {
 									["City of Ironforge:87"] = {
-										["3:250:742"] = true,
 										["3:248:748"] = true,
+										["3:250:742"] = true,
 										["3:256:754"] = true,
 									},
 								},
@@ -11704,40 +11794,30 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["reaction"] = "61:Alliance:FRIENDLY",
+				["auctioneer"] = true,
 			},
-			["47286"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
+			["142666"] = {
 				["reaction"] = "61:Alliance:FRIENDLY",
-				["faction"] = "Argent Crusade",
-				["sells"] = {
-					[160298] = "-1:1:[3000:0:0]",
-					[5956] = "-1:1:[18:0:0]",
-					[3466] = "-1:1:[2000:0:0]",
-					[2880] = "-1:1:[100:0:0]",
-					[2901] = "-1:1:[81:0:0]",
-					[18567] = "-1:1:[30000:0:0]",
-					[3857] = "-1:1:[500:0:0]",
-				},
-				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_59"] = {
+							["level_115"] = {
+								["max_health"] = 32727,
 								["locations"] = {
-									["Eastern Plaguelands:23"] = {
-										["3:746:538"] = true,
+									["City of Ironforge:87"] = {
+										["3:328:652"] = true,
 									},
 								},
-								["max_health"] = 2320,
+								["power"] = "MANA:885315",
 							},
 						},
 					},
 				},
-				["can_repair"] = true,
+				["auctioneer"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
 			},
 		},
 		["quests"] = {
@@ -11760,44 +11840,72 @@ WoWDBProfilerData = {
 					["NPC:45400"] = true,
 				},
 			},
-			[27420] = {
+			[26285] = {
 				["begin"] = {
-					["NPC:16135"] = true,
+					["NPC:42708"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Gnome"] = true,
+				},
+				["end"] = {
+					["NPC:42708"] = true,
+				},
+				["reward_text"] = "Well, now, that's more like it. We may get around to blowin' up somethin' after all.",
+				["classes"] = {
+					["WARLOCK"] = true,
+				},
+				["progress_text"] = "Well, did you recover me missing supplies?",
+			},
+			[27456] = {
+				["begin"] = {
+					["NPC:16134"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:16135"] = true,
+					["NPC:16134"] = true,
 				},
-				["reward_text"] = "The sooner those Scourge are pushed out of the Fungal Vale, the sooner we can heal it.\n\nThank you, <name>.",
+				["reward_text"] = "May the Earthmother watch over you! Bless you, young one.",
+				["progress_text"] = "You will grow to tolerate the taste, <race>.  I did.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
 			},
-			[26329] = {
-				["reward_text"] = "<The high tinker reads Jessup's report.>\n\nSplendid news! With the troggs taken care of, we should be able to turn our attention to Crushcog's troublemaking.",
-				["progress_text"] = "Welcome back, <name>.",
-				["end"] = {
-					["NPC:42317"] = true,
-				},
-			},
-			[31891] = {
-			},
-			[433] = {
+			[25668] = {
 				["begin"] = {
-					["NPC:1977"] = true,
+					["NPC:40951"] = true,
 				},
+				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:1977"] = true,
+					["NPC:40951"] = true,
 				},
-				["reward_text"] = "What a relief! I'm glad to see that you were able to save so many miners, <name>. I will make sure that their families are notified immediately.\n\nThe Senate will know of your role in winning back the mines.",
+				["reward_text"] = "Well done, <name>. The mountaineers will be glad to hear that half-rations are at an end. They'll need all their strength to continue fighting the Frostmanes.",
 				["classes"] = {
 					["WARLOCK"] = true,
+				},
+				["progress_text"] = "Did you find any of the missing supplies?",
+			},
+			[27452] = {
+				["begin"] = {
+					["NPC:11035"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["end"] = {
+					["PLAYER:0"] = true,
+				},
+				["reward_text"] = "You've got both pieces!  Good.  These will help when trying to sneak into their death camp.",
+				["progress_text"] = "Everything going alright so far, <name>?",
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[26424] = {
@@ -11815,40 +11923,40 @@ WoWDBProfilerData = {
 					["WARLOCK"] = true,
 				},
 			},
-			[25932] = {
-				["classes"] = {
-					["WARLOCK"] = true,
-				},
-				["races"] = {
-					["Gnome"] = true,
-				},
-				["end"] = {
-					["NPC:41578"] = true,
-				},
-				["reward_text"] = "With your help, we've managed to weaken the raiders considerably. They haven't suffered such losses since the raids began. Now is the time to press our advantage.",
+			[314] = {
 				["begin"] = {
-					["NPC:41578"] = true,
-				},
-			},
-			[25186] = {
-				["can_share"] = true,
-			},
-			[25668] = {
-				["begin"] = {
-					["NPC:40951"] = true,
+					["NPC:1265"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:40951"] = true,
+					["NPC:1265"] = true,
 				},
-				["reward_text"] = "Well done, <name>. The mountaineers will be glad to hear that half-rations are at an end. They'll need all their strength to continue fighting the Frostmanes.",
-				["progress_text"] = "Did you find any of the missing supplies?",
+				["reward_text"] = "Very well done!  Veron will be so happy when he hears the good news.  To kill Vagash is no easy task.  I imagine one day you'll be fighting alongside King Magni's men on the Alliance Front.",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
+				["progress_text"] = "Vagash still terrorizes the herd!  Please help us by killing the wretched beast.",
+			},
+			[26085] = {
+				["begin"] = {
+					["NPC:41853"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Gnome"] = true,
+				},
+				["end"] = {
+					["NPC:41853"] = true,
+				},
+				["reward_text"] = "The men are finding hidden reserves of strength and courage to deal with the Dark Iron onslaught. The airfield will not fall on our watch!",
+				["classes"] = {
+					["WARLOCK"] = true,
+				},
+			},
+			[31891] = {
 			},
 			[27448] = {
 				["reward_text"] = "We've enjoyed having you ride with us, <name>.  Hopefully, once Gidwin and Tarenar join the Argent Crusade, we can continue to travel together.",
@@ -11869,27 +11977,25 @@ WoWDBProfilerData = {
 					["NPC:45575"] = true,
 				},
 				["reward_text"] = "Hmm... they didn't survive the trip out of the water as well as I had hoped.\n\nOh well!  Seafood salad for Frederick tonight!",
+				["progress_text"] = "Did... did you bring the fish?",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
-				["progress_text"] = "Did... did you bring the fish?",
 			},
-			[27452] = {
+			[433] = {
 				["begin"] = {
-					["NPC:11035"] = true,
+					["NPC:1977"] = true,
 				},
-				["can_share"] = true,
 				["races"] = {
-					["Dwarf"] = true,
+					["Gnome"] = true,
 				},
 				["end"] = {
-					["PLAYER:0"] = true,
+					["NPC:1977"] = true,
 				},
-				["reward_text"] = "You've got both pieces!  Good.  These will help when trying to sneak into their death camp.",
+				["reward_text"] = "What a relief! I'm glad to see that you were able to save so many miners, <name>. I will make sure that their families are notified immediately.\n\nThe Senate will know of your role in winning back the mines.",
 				["classes"] = {
-					["WARRIOR"] = true,
+					["WARLOCK"] = true,
 				},
-				["progress_text"] = "Everything going alright so far, <name>?",
 			},
 			[27454] = {
 				["reward_text"] = "It should take them weeks to get their operation running again.  Thank you, <name>.",
@@ -11897,22 +12003,20 @@ WoWDBProfilerData = {
 					["NPC:11035"] = true,
 				},
 			},
-			[27456] = {
-				["begin"] = {
-					["NPC:16134"] = true,
+			[25932] = {
+				["classes"] = {
+					["WARLOCK"] = true,
 				},
-				["can_share"] = true,
 				["races"] = {
-					["Dwarf"] = true,
+					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:16134"] = true,
+					["NPC:41578"] = true,
 				},
-				["reward_text"] = "May the Earthmother watch over you! Bless you, young one.",
-				["classes"] = {
-					["WARRIOR"] = true,
+				["reward_text"] = "With your help, we've managed to weaken the raiders considerably. They haven't suffered such losses since the raids began. Now is the time to press our advantage.",
+				["begin"] = {
+					["NPC:41578"] = true,
 				},
-				["progress_text"] = "You will grow to tolerate the taste, <race>.  I did.",
 			},
 			[27458] = {
 				["begin"] = {
@@ -11922,10 +12026,10 @@ WoWDBProfilerData = {
 				["races"] = {
 					["Dwarf"] = true,
 				},
+				["progress_text"] = "You've been fightin' undead.  Did ya find Browman?",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
-				["progress_text"] = "You've been fightin' undead.  Did ya find Browman?",
 			},
 			[27460] = {
 				["begin"] = {
@@ -11974,20 +12078,20 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[26085] = {
+			[27617] = {
 				["begin"] = {
-					["NPC:41853"] = true,
+					["NPC:16115"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["Gnome"] = true,
+					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:41853"] = true,
+					["NPC:16116"] = true,
 				},
-				["reward_text"] = "The men are finding hidden reserves of strength and courage to deal with the Dark Iron onslaught. The airfield will not fall on our watch!",
+				["reward_text"] = "Good, the abbey is ours.  I never doubted Eligor's ability for a moment.",
 				["classes"] = {
-					["WARLOCK"] = true,
+					["WARRIOR"] = true,
 				},
 			},
 			[32675] = {
@@ -12012,11 +12116,8 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[26202] = {
-				["reward_text"] = "So, another one of Nevin's \"rescued\" survivors, eh? More than likely, you saved his life from the troggs down there. Did he stumble over his words when he mentioned me? The man has a healthy respect for the demonic powers we channel.",
-				["end"] = {
-					["NPC:460"] = true,
-				},
+			[25186] = {
+				["can_share"] = true,
 			},
 			[26331] = {
 				["reward_text"] = "That should set back Crushcog's plans a bit, but we can't rest until he is defeated and Chill Breeze Valley is secure.",
@@ -12062,33 +12163,44 @@ WoWDBProfilerData = {
 				},
 			},
 			[27355] = {
-				["classes"] = {
-					["WARLOCK"] = true,
+				["begin"] = {
+					["NPC:461"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
-				["begin"] = {
-					["NPC:461"] = true,
+				["classes"] = {
+					["WARLOCK"] = true,
 				},
 			},
-			[28169] = {
-				["reward_text"] = "It's good to meet you, <class>. We rarely come across survivors as strong and capable as you are. I can help get you decontaminated and on your way out of here.",
-				["end"] = {
-					["NPC:46274"] = true,
+			[25724] = {
+				["begin"] = {
+					["NPC:40950"] = true,
 				},
+				["can_share"] = true,
+				["races"] = {
+					["Gnome"] = true,
+				},
+				["end"] = {
+					["NPC:40950"] = true,
+				},
+				["reward_text"] = "We should be able to focus our efforts on the rest of the trolls to the east, but there's still the matter of the wendigos in the Grizzled Den.",
+				["classes"] = {
+					["WARLOCK"] = true,
+				},
+				["progress_text"] = "How is the situation on Shimmer Ridge?",
 			},
 			[28756] = {
-				["classes"] = {
-					["WARRIOR"] = true,
+				["begin"] = {
+					["NPC:49856"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
-				["begin"] = {
-					["NPC:49856"] = true,
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[27615] = {
@@ -12107,20 +12219,20 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[27617] = {
+			[25839] = {
 				["begin"] = {
-					["NPC:16115"] = true,
+					["NPC:41363"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["Dwarf"] = true,
+					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:16116"] = true,
+					["NPC:41298"] = true,
 				},
-				["reward_text"] = "Good, the abbey is ours.  I never doubted Eligor's ability for a moment.",
+				["reward_text"] = "Don't worry, the feeling of being zapped won't stay with you for more than a few minutes. All in all, it's not a bad way to get where you're going. That parachute system needs some work, though. Very late deployment, indeed. Sometimes, too late. Anyway, we have a mission to carry out.",
 				["classes"] = {
-					["WARRIOR"] = true,
+					["WARLOCK"] = true,
 				},
 			},
 			[25841] = {
@@ -12139,32 +12251,23 @@ WoWDBProfilerData = {
 					["WARLOCK"] = true,
 				},
 			},
-			[25978] = {
+			[26137] = {
+				["can_share"] = true,
+			},
+			[27635] = {
 				["begin"] = {
-					["NPC:41786"] = true,
+					["NPC:46274"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:41786"] = true,
+					["NPC:46255"] = true,
 				},
-				["reward_text"] = "You've done it! The mountaineers are returning to camp and our medics will have their hands full. We are all in your debt, <name>.",
+				["reward_text"] = "There, now you're fit to head off to the surface and start your new life. The High Tinker will be delighted to hear of your arrival.",
 				["classes"] = {
 					["WARLOCK"] = true,
-				},
-			},
-			[27762] = {
-				["begin"] = {
-					["NPC:48704"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
-				},
-				["classes"] = {
-					["WARRIOR"] = true,
 				},
 			},
 			[26118] = {
@@ -12183,67 +12286,42 @@ WoWDBProfilerData = {
 					["WARLOCK"] = true,
 				},
 			},
-			[28167] = {
-				["reward_text"] = "Did Nevin send you ahead? That means he's getting ready to end the mission, but there are still survivors to be rescued. We have to help them!",
+			[28169] = {
+				["reward_text"] = "It's good to meet you, <class>. We rarely come across survivors as strong and capable as you are. I can help get you decontaminated and on your way out of here.",
 				["end"] = {
-					["NPC:47250"] = true,
-				},
-			},
-			[25724] = {
-				["begin"] = {
-					["NPC:40950"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Gnome"] = true,
-				},
-				["end"] = {
-					["NPC:40950"] = true,
-				},
-				["reward_text"] = "We should be able to focus our efforts on the rest of the trolls to the east, but there's still the matter of the wendigos in the Grizzled Den.",
-				["progress_text"] = "How is the situation on Shimmer Ridge?",
-				["classes"] = {
-					["WARLOCK"] = true,
-				},
-			},
-			[26264] = {
-				["reward_text"] = "I can't wait to give this new technology a try! We've lost more <race>s to radiation than we can count. It's time to turn that around!",
-				["progress_text"] = "Were you able to recover the belongings of any of the irradiated <race>s?",
-				["end"] = {
-					["NPC:42611"] = true,
-				},
-			},
-			[26112] = {
-				["begin"] = {
-					["NPC:41853"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Gnome"] = true,
-				},
-				["end"] = {
-					["NPC:42129"] = true,
-				},
-				["reward_text"] = "And just what is this?\n\n<Moira takes the report and the color drains from her face as she reads.>\n\nThis is impossible!",
-				["progress_text"] = "What is the meaning of this intrusion?",
-				["classes"] = {
-					["WARLOCK"] = true,
-				},
-			},
-			[27635] = {
-				["begin"] = {
 					["NPC:46274"] = true,
 				},
+			},
+			[25978] = {
+				["begin"] = {
+					["NPC:41786"] = true,
+				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:46255"] = true,
+					["NPC:41786"] = true,
 				},
-				["reward_text"] = "There, now you're fit to head off to the surface and start your new life. The High Tinker will be delighted to hear of your arrival.",
+				["reward_text"] = "You've done it! The mountaineers are returning to camp and our medics will have their hands full. We are all in your debt, <name>.",
 				["classes"] = {
 					["WARLOCK"] = true,
+				},
+			},
+			[54185] = {
+			},
+			[28398] = {
+			},
+			[27762] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["begin"] = {
+					["NPC:48704"] = true,
 				},
 			},
 			[25986] = {
@@ -12284,10 +12362,10 @@ WoWDBProfilerData = {
 					["NPC:10667"] = true,
 				},
 				["reward_text"] = "Excellent work, <name>.  Are you certain you haven't done this before?",
-				["can_share"] = true,
 				["begin"] = {
 					["NPC:10667"] = true,
 				},
+				["can_share"] = true,
 			},
 			[27391] = {
 				["begin"] = {
@@ -12301,10 +12379,10 @@ WoWDBProfilerData = {
 					["OBJECT:177544"] = true,
 				},
 				["reward_text"] = "The key fits the lock, and the chest opens...",
+				["progress_text"] = "This chest is old and covered in grime.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
-				["progress_text"] = "This chest is old and covered in grime.",
 			},
 			[315] = {
 				["begin"] = {
@@ -12318,10 +12396,10 @@ WoWDBProfilerData = {
 					["NPC:1374"] = true,
 				},
 				["reward_text"] = "Great!  I can't wait to use these in some of my recipes.  There's one in particular I think it'll work great in...",
-				["progress_text"] = "Do you have that shimmerweed?  I almost have a batch of stout ready to brew, and I want to try throwing the weed in with this mixture.",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
+				["progress_text"] = "Do you have that shimmerweed?  I almost have a batch of stout ready to brew, and I want to try throwing the weed in with this mixture.",
 			},
 			[25998] = {
 				["classes"] = {
@@ -12339,20 +12417,11 @@ WoWDBProfilerData = {
 					["NPC:41786"] = true,
 				},
 			},
-			[26094] = {
-				["begin"] = {
-					["NPC:41853"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Gnome"] = true,
-				},
+			[27671] = {
+				["reward_text"] = "I know Nevin will be pleased with all the survivors you managed to help. I still can't believe you managed to stay so strong down here in the radiation. You've seen the shape the other survivors are in.\n\nLet's get you to the loading room for decontamination.",
+				["progress_text"] = "Nevin's team found a lot of survivors this time, but he's cutting it awful close.",
 				["end"] = {
-					["NPC:41853"] = true,
-				},
-				["reward_text"] = "The momentum is starting to shift, <name>, largely due to your efforts. Now, it is time to strike at the Dark Iron leadership.",
-				["classes"] = {
-					["WARLOCK"] = true,
+					["NPC:47250"] = true,
 				},
 			},
 			[27272] = {
@@ -12372,13 +12441,78 @@ WoWDBProfilerData = {
 				},
 			},
 			[26131] = {
-				["begin"] = {
-					["NPC:1959"] = true,
+				["classes"] = {
+					["WARLOCK"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
+				["begin"] = {
+					["NPC:1959"] = true,
+				},
+			},
+			[25840] = {
+				["begin"] = {
+					["NPC:41298"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Gnome"] = true,
+				},
+				["end"] = {
+					["NPC:41298"] = true,
+				},
+				["reward_text"] = "Excellent job, <name>. With Battok dead, I'll send the signal to Captain Tharran. This should be the end of the Frostmane threat.",
+				["classes"] = {
+					["WARLOCK"] = true,
+				},
+			},
+			[26897] = {
+				["can_share"] = true,
+			},
+			[27915] = {
+				["can_share"] = true,
+			},
+			[28755] = {
+				["begin"] = {
+					["NPC:49856"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[27919] = {
+				["can_share"] = true,
+			},
+			[2039] = {
+				["classes"] = {
+					["WARLOCK"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Gnome"] = true,
+				},
+				["begin"] = {
+					["NPC:6569"] = true,
+				},
+			},
+			[26094] = {
+				["begin"] = {
+					["NPC:41853"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Gnome"] = true,
+				},
+				["end"] = {
+					["NPC:41853"] = true,
+				},
+				["reward_text"] = "The momentum is starting to shift, <name>, largely due to your efforts. Now, it is time to strike at the Dark Iron leadership.",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
@@ -12388,56 +12522,6 @@ WoWDBProfilerData = {
 				["can_share"] = true,
 				["end"] = {
 					["NPC:16135"] = true,
-				},
-			},
-			[26897] = {
-				["can_share"] = true,
-			},
-			[26137] = {
-				["can_share"] = true,
-			},
-			[26566] = {
-				["reward_text"] = "So Mekkatorque himself has heard of my little project? Splendid! I've almost finished my latest prototype, but maybe you can help me chase down those last few parts.",
-				["end"] = {
-					["NPC:42553"] = true,
-				},
-			},
-			[54185] = {
-			},
-			[2039] = {
-				["begin"] = {
-					["NPC:6569"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Gnome"] = true,
-				},
-				["classes"] = {
-					["WARLOCK"] = true,
-				},
-			},
-			[27451] = {
-				["begin"] = {
-					["NPC:11035"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
-				},
-				["end"] = {
-					["PLAYER:0"] = true,
-				},
-				["reward_text"] = "Hello!  It's me.  Hope you don't mind a little home-brewed magic to allow me to communicate with you in the field.  It'll save us both some time.\n\nWe're going to incorporate that living rot into a mixture that'll ruin their next batch of plague.  That'll show them!",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-				["progress_text"] = "How are things looking in Corin's Crossing?",
-			},
-			[27671] = {
-				["reward_text"] = "I know Nevin will be pleased with all the survivors you managed to help. I still can't believe you managed to stay so strong down here in the radiation. You've seen the shape the other survivors are in.\n\nLet's get you to the loading room for decontamination.",
-				["progress_text"] = "Nevin's team found a lot of survivors this time, but he's cutting it awful close.",
-				["end"] = {
-					["NPC:47250"] = true,
 				},
 			},
 			[25768] = {
@@ -12459,32 +12543,26 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[28755] = {
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
-				},
+			[6388] = {
 				["begin"] = {
-					["NPC:49856"] = true,
+					["NPC:4256"] = true,
 				},
-			},
-			[27459] = {
-				["begin"] = {
-					["NPC:11036"] = true,
-				},
-				["can_share"] = true,
+				["progress_text"] = "You look like you have somewhere to go.  Need one of my gryphons?",
 				["races"] = {
-					["Dwarf"] = true,
+					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:16116"] = true,
+					["NPC:1573"] = true,
 				},
-				["reward_text"] = "A <class>!  Just what we needed.  Your arrival couldn't have been more timely.",
+				["reward_text"] = "You have to get these to Kharanos, eh?  That won't be a problem.  As long as you've already been to Kharanos and spoken to Brolan Galebeard, then you can take one of my gryphons back to him.",
 				["classes"] = {
-					["WARRIOR"] = true,
+					["WARLOCK"] = true,
+				},
+			},
+			[26566] = {
+				["reward_text"] = "So Mekkatorque himself has heard of my little project? Splendid! I've almost finished my latest prototype, but maybe you can help me chase down those last few parts.",
+				["end"] = {
+					["NPC:42553"] = true,
 				},
 			},
 			[26284] = {
@@ -12525,68 +12603,52 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[6391] = {
-				["begin"] = {
-					["NPC:43701"] = true,
-				},
-				["progress_text"] = "What can I do for you, sir?",
-				["races"] = {
-					["Gnome"] = true,
-				},
-				["end"] = {
-					["NPC:4256"] = true,
-				},
-				["reward_text"] = "Ah, the latest list of Gremlock's best pupils.  I have a batch of honorary cleavers ready to go.  I just need to engrave the names of the students...",
-				["classes"] = {
-					["WARLOCK"] = true,
-				},
-			},
-			[27618] = {
-				["begin"] = {
-					["NPC:16112"] = true,
-				},
-				["races"] = {
-					["Dwarf"] = true,
-				},
-				["end"] = {
-					["NPC:16116"] = true,
-				},
-				["reward_text"] = "It sounds like Korfax really cleaned house over at the barracks.  It's very much like him to show off like that.",
+			[27467] = {
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
-			},
-			[25838] = {
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
 				["begin"] = {
-					["NPC:40950"] = true,
+					["NPC:16365"] = true,
+				},
+			},
+			[384] = {
+				["begin"] = {
+					["NPC:1267"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:41363"] = true,
+					["NPC:1267"] = true,
 				},
-				["reward_text"] = "Ah, you must be the <race> that Captain Tharran said he'd be sending. I've already used the deploy-a-tron to get most of the covert ops team into position at Frostmane Retreat. They're just waiting on your arrival.",
+				["reward_text"] = "The Malt is brewed, the Boars are dead\nAnd before all is done and anything said\nWe will have to fight for first dibs\nOn these savory Beer Basted Boar Ribs!",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
+				["progress_text"] = "I'm going to need those crag boar ribs and a mug of Rhapsody Malt, <name>.",
 			},
-			[6392] = {
+			[27616] = {
 				["begin"] = {
-					["NPC:1573"] = true,
+					["NPC:16112"] = true,
 				},
-				["progress_text"] = "Ah, <name>.  Have you returned from Ironforge?",
+				["can_share"] = true,
 				["races"] = {
-					["Gnome"] = true,
+					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:1699"] = true,
+					["NPC:16112"] = true,
 				},
-				["reward_text"] = "You brought the cleavers.  Great!  I'll get these to my students.  I'm sure they're eager to use them on some fresh boar meat.\n\nThank you for your help, <name>.  I am in your debt, but I hope this money will at least cover your travel costs.",
+				["reward_text"] = "One less thing to worry about.  Nice work up there.",
 				["classes"] = {
-					["WARLOCK"] = true,
+					["WARRIOR"] = true,
 				},
+			},
+			[49860] = {
 			},
 			[26342] = {
 				["begin"] = {
@@ -12615,10 +12677,10 @@ WoWDBProfilerData = {
 					["NPC:40950"] = true,
 				},
 				["reward_text"] = "Finally, some good news from the Frostmane Front. I'll have the mountaineers press their attack immediately. Now, we must signal our gnomish allies at Steelgrill to start their advance.",
-				["progress_text"] = "Was the rune able to destroy the totems? Were we too late?",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
+				["progress_text"] = "Was the rune able to destroy the totems? Were we too late?",
 			},
 			[25667] = {
 				["begin"] = {
@@ -12686,20 +12748,20 @@ WoWDBProfilerData = {
 					["PLAYER:0"] = true,
 				},
 			},
-			[6388] = {
+			[27455] = {
 				["begin"] = {
-					["NPC:4256"] = true,
+					["NPC:45417"] = true,
 				},
-				["progress_text"] = "You look like you have somewhere to go.  Need one of my gryphons?",
+				["can_share"] = true,
 				["races"] = {
-					["Gnome"] = true,
+					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:1573"] = true,
+					["NPC:45431"] = true,
 				},
-				["reward_text"] = "You have to get these to Kharanos, eh?  That won't be a problem.  As long as you've already been to Kharanos and spoken to Brolan Galebeard, then you can take one of my gryphons back to him.",
+				["reward_text"] = "I can't believe it.  We're literally FEET away from becoming sworn members of the Argent Crusade.\n\nWe'd be in there already if it weren't for Tarenar's dallying.  If he doesn't quit chatting with the locals soon, I'm going to head in there myself.",
 				["classes"] = {
-					["WARLOCK"] = true,
+					["WARRIOR"] = true,
 				},
 			},
 			[25933] = {
@@ -12766,46 +12828,65 @@ WoWDBProfilerData = {
 				},
 			},
 			[27465] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["can_share"] = true,
+				["races"] = {
+					["Dwarf"] = true,
+				},
 				["begin"] = {
 					["NPC:11034"] = true,
 				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
+			},
+			[6391] = {
+				["begin"] = {
+					["NPC:43701"] = true,
 				},
+				["progress_text"] = "What can I do for you, sir?",
+				["races"] = {
+					["Gnome"] = true,
+				},
+				["end"] = {
+					["NPC:4256"] = true,
+				},
+				["reward_text"] = "Ah, the latest list of Gremlock's best pupils.  I have a batch of honorary cleavers ready to go.  I just need to engrave the names of the students...",
 				["classes"] = {
-					["WARRIOR"] = true,
+					["WARLOCK"] = true,
 				},
 			},
-			[27467] = {
+			[6392] = {
 				["begin"] = {
-					["NPC:16365"] = true,
+					["NPC:1573"] = true,
 				},
-				["can_share"] = true,
+				["progress_text"] = "Ah, <name>.  Have you returned from Ironforge?",
 				["races"] = {
-					["Dwarf"] = true,
+					["Gnome"] = true,
 				},
+				["end"] = {
+					["NPC:1699"] = true,
+				},
+				["reward_text"] = "You brought the cleavers.  Great!  I'll get these to my students.  I'm sure they're eager to use them on some fresh boar meat.\n\nThank you for your help, <name>.  I am in your debt, but I hope this money will at least cover your travel costs.",
 				["classes"] = {
-					["WARRIOR"] = true,
+					["WARLOCK"] = true,
 				},
 			},
-			[26078] = {
+			[28868] = {
 				["begin"] = {
-					["NPC:41853"] = true,
+					["NPC:50601"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:41853"] = true,
+					["NPC:50601"] = true,
 				},
-				["reward_text"] = "Well done! My men are working hard on getting our flying machines and steam tanks back into the fight.",
+				["reward_text"] = "Well done, <name>. That'll teach them not to mess with us in our home!",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
-			},
-			[49860] = {
+				["progress_text"] = "Did you show them what it's like to be a <race>?",
 			},
 			[26838] = {
 				["can_share"] = true,
@@ -12818,6 +12899,12 @@ WoWDBProfilerData = {
 			},
 			[25191] = {
 				["can_share"] = true,
+			},
+			[26373] = {
+				["reward_text"] = "If <race>regan Covert Operations is recommending you, then you must have made quite an impression. Your help will be most welcome here, as we've a wealth of enemies and few enough mountaineers to face them.",
+				["end"] = {
+					["NPC:40950"] = true,
+				},
 			},
 			[27613] = {
 				["begin"] = {
@@ -12835,25 +12922,18 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[26373] = {
-				["reward_text"] = "If <race>regan Covert Operations is recommending you, then you must have made quite an impression. Your help will be most welcome here, as we've a wealth of enemies and few enough mountaineers to face them.",
-				["end"] = {
-					["NPC:40950"] = true,
-				},
-			},
-			[28868] = {
+			[26078] = {
 				["begin"] = {
-					["NPC:50601"] = true,
+					["NPC:41853"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:50601"] = true,
+					["NPC:41853"] = true,
 				},
-				["reward_text"] = "Well done, <name>. That'll teach them not to mess with us in our home!",
-				["progress_text"] = "Did you show them what it's like to be a <race>?",
+				["reward_text"] = "Well done! My men are working hard on getting our flying machines and steam tanks back into the fight.",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
@@ -12886,41 +12966,40 @@ WoWDBProfilerData = {
 					["NPC:16112"] = true,
 				},
 				["reward_text"] = "Well done, <name>.  I will deliver these to Tyrosus when we return.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
 				["progress_text"] = "I hope you gave them a fight.",
-			},
-			[27616] = {
-				["begin"] = {
-					["NPC:16112"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Dwarf"] = true,
-				},
-				["end"] = {
-					["NPC:16112"] = true,
-				},
-				["reward_text"] = "One less thing to worry about.  Nice work up there.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
 			},
-			[25840] = {
+			[25838] = {
 				["begin"] = {
-					["NPC:41298"] = true,
+					["NPC:40950"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Gnome"] = true,
 				},
 				["end"] = {
-					["NPC:41298"] = true,
+					["NPC:41363"] = true,
 				},
-				["reward_text"] = "Excellent job, <name>. With Battok dead, I'll send the signal to Captain Tharran. This should be the end of the Frostmane threat.",
+				["reward_text"] = "Ah, you must be the <race> that Captain Tharran said he'd be sending. I've already used the deploy-a-tron to get most of the covert ops team into position at Frostmane Retreat. They're just waiting on your arrival.",
 				["classes"] = {
 					["WARLOCK"] = true,
+				},
+			},
+			[27618] = {
+				["begin"] = {
+					["NPC:16112"] = true,
+				},
+				["races"] = {
+					["Dwarf"] = true,
+				},
+				["end"] = {
+					["NPC:16116"] = true,
+				},
+				["reward_text"] = "It sounds like Korfax really cleaned house over at the barracks.  It's very much like him to show off like that.",
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[27620] = {
@@ -12951,23 +13030,23 @@ WoWDBProfilerData = {
 					["NPC:50631"] = true,
 				},
 				["reward_text"] = "Thank you for recovering these artifacts. I will see to it that they are displayed in the Ironforge museum along with the story of those who died to recover them.",
-				["progress_text"] = "Were you able to find any artifacts down there?",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
+				["progress_text"] = "Were you able to find any artifacts down there?",
 			},
-			[27455] = {
+			[27459] = {
 				["begin"] = {
-					["NPC:45417"] = true,
+					["NPC:11036"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
 					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:45431"] = true,
+					["NPC:16116"] = true,
 				},
-				["reward_text"] = "I can't believe it.  We're literally FEET away from becoming sworn members of the Argent Crusade.\n\nWe'd be in there already if it weren't for Tarenar's dallying.  If he doesn't quit chatting with the locals soon, I'm going to head in there myself.",
+				["reward_text"] = "A <class>!  Just what we needed.  Your arrival couldn't have been more timely.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -12988,21 +13067,21 @@ WoWDBProfilerData = {
 					["WARLOCK"] = true,
 				},
 			},
-			[384] = {
+			[27451] = {
 				["begin"] = {
-					["NPC:1267"] = true,
+					["NPC:11035"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["Gnome"] = true,
+					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:1267"] = true,
+					["PLAYER:0"] = true,
 				},
-				["reward_text"] = "The Malt is brewed, the Boars are dead\nAnd before all is done and anything said\nWe will have to fight for first dibs\nOn these savory Beer Basted Boar Ribs!",
-				["progress_text"] = "I'm going to need those crag boar ribs and a mug of Rhapsody Malt, <name>.",
+				["reward_text"] = "Hello!  It's me.  Hope you don't mind a little home-brewed magic to allow me to communicate with you in the field.  It'll save us both some time.\n\nWe're going to incorporate that living rot into a mixture that'll ruin their next batch of plague.  That'll show them!",
+				["progress_text"] = "How are things looking in Corin's Crossing?",
 				["classes"] = {
-					["WARLOCK"] = true,
+					["WARRIOR"] = true,
 				},
 			},
 			[25979] = {
@@ -13033,10 +13112,10 @@ WoWDBProfilerData = {
 					["NPC:1269"] = true,
 				},
 				["reward_text"] = "These gyromechanic gears are perfect! These two tank pilots are well on their way to being back in the fight!",
-				["progress_text"] = "Those pilots can't wait to get back into their steam tanks and take to the field again. Let's not let them down.",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
+				["progress_text"] = "Those pilots can't wait to get back into their steam tanks and take to the field again. Let's not let them down.",
 			},
 			[26364] = {
 				["reward_text"] = "We're finally free of Razlo Crushcog and his interference! With the defeat of Crushcog and his forces, Thermaplugg can't afford to send any more of his followers to the surface. I can't wait for the day when we defeat him for good!",
@@ -13044,13 +13123,35 @@ WoWDBProfilerData = {
 					["NPC:42353"] = true,
 				},
 			},
-			[28398] = {
-			},
-			[27919] = {
+			[26112] = {
+				["begin"] = {
+					["NPC:41853"] = true,
+				},
 				["can_share"] = true,
+				["races"] = {
+					["Gnome"] = true,
+				},
+				["end"] = {
+					["NPC:42129"] = true,
+				},
+				["reward_text"] = "And just what is this?\n\n<Moira takes the report and the color drains from her face as she reads.>\n\nThis is impossible!",
+				["classes"] = {
+					["WARLOCK"] = true,
+				},
+				["progress_text"] = "What is the meaning of this intrusion?",
 			},
-			[27915] = {
-				["can_share"] = true,
+			[26264] = {
+				["reward_text"] = "I can't wait to give this new technology a try! We've lost more <race>s to radiation than we can count. It's time to turn that around!",
+				["progress_text"] = "Were you able to recover the belongings of any of the irradiated <race>s?",
+				["end"] = {
+					["NPC:42611"] = true,
+				},
+			},
+			[28167] = {
+				["reward_text"] = "Did Nevin send you ahead? That means he's getting ready to end the mission, but there are still survivors to be rescued. We have to help them!",
+				["end"] = {
+					["NPC:47250"] = true,
+				},
 			},
 			[27388] = {
 				["reward_text"] = "You have the relics?  Good.  I will get to work on resolving any temporal discontinuities.\n\nDon't worry... that's not something you have to worry about.  You just gather the reagents.",
@@ -13104,10 +13205,10 @@ WoWDBProfilerData = {
 					["NPC:41786"] = true,
 				},
 				["reward_text"] = "I knew they weren't here to see the sights.\n\n<The sergeant examines the plans you captured, his eyes wide.>\n\nThis is more serious than we thought! This is no mere raid. The Dark Irons intend to cripple the defense of Ironforge itself!",
-				["progress_text"] = "What are the Dark Irons up to?",
 				["classes"] = {
 					["WARLOCK"] = true,
 				},
+				["progress_text"] = "What are the Dark Irons up to?",
 			},
 			[26380] = {
 				["begin"] = {
@@ -13132,26 +13233,17 @@ WoWDBProfilerData = {
 					["NPC:42553"] = true,
 				},
 			},
-			[25839] = {
-				["begin"] = {
-					["NPC:41363"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Gnome"] = true,
-				},
-				["end"] = {
-					["NPC:41298"] = true,
-				},
-				["reward_text"] = "Don't worry, the feeling of being zapped won't stay with you for more than a few minutes. All in all, it's not a bad way to get where you're going. That parachute system needs some work, though. Very late deployment, indeed. Sometimes, too late. Anyway, we have a mission to carry out.",
-				["classes"] = {
-					["WARLOCK"] = true,
-				},
-			},
 			[26339] = {
 				["reward_text"] = "Ah, yes, Kelsey told me to expect you. There's still much to do before we can take on Crushcog.",
 				["end"] = {
 					["NPC:42353"] = true,
+				},
+			},
+			[26329] = {
+				["reward_text"] = "<The high tinker reads Jessup's report.>\n\nSplendid news! With the troggs taken care of, we should be able to turn our attention to Crushcog's troublemaking.",
+				["progress_text"] = "Welcome back, <name>.",
+				["end"] = {
+					["NPC:42317"] = true,
 				},
 			},
 			[6661] = {
@@ -13197,40 +13289,30 @@ WoWDBProfilerData = {
 					["WARLOCK"] = true,
 				},
 			},
-			[314] = {
-				["begin"] = {
-					["NPC:1265"] = true,
-				},
-				["can_share"] = true,
-				["races"] = {
-					["Gnome"] = true,
-				},
+			[26202] = {
+				["reward_text"] = "So, another one of Nevin's \"rescued\" survivors, eh? More than likely, you saved his life from the troggs down there. Did he stumble over his words when he mentioned me? The man has a healthy respect for the demonic powers we channel.",
 				["end"] = {
-					["NPC:1265"] = true,
-				},
-				["reward_text"] = "Very well done!  Veron will be so happy when he hears the good news.  To kill Vagash is no easy task.  I imagine one day you'll be fighting alongside King Magni's men on the Alliance Front.",
-				["progress_text"] = "Vagash still terrorizes the herd!  Please help us by killing the wretched beast.",
-				["classes"] = {
-					["WARLOCK"] = true,
+					["NPC:460"] = true,
 				},
 			},
-			[26285] = {
+			[27420] = {
 				["begin"] = {
-					["NPC:42708"] = true,
+					["NPC:16135"] = true,
 				},
 				["can_share"] = true,
 				["races"] = {
-					["Gnome"] = true,
+					["Dwarf"] = true,
 				},
 				["end"] = {
-					["NPC:42708"] = true,
+					["NPC:16135"] = true,
 				},
-				["reward_text"] = "Well, now, that's more like it. We may get around to blowin' up somethin' after all.",
-				["progress_text"] = "Well, did you recover me missing supplies?",
+				["reward_text"] = "The sooner those Scourge are pushed out of the Fungal Vale, the sooner we can heal it.\n\nThank you, <name>.",
 				["classes"] = {
-					["WARLOCK"] = true,
+					["WARRIOR"] = true,
 				},
 			},
 		},
 	},
+	["build_num"] = 33941,
+	["version"] = 19,
 }

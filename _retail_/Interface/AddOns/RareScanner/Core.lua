@@ -30,8 +30,8 @@ local ETERNAL_COMPLETED = -1
 local DEBUG_MODE = false
 
 -- Config constants
-local CURRENT_DB_VERSION = 11
-local CURRENT_LOOT_DB_VERSION = 28
+local CURRENT_DB_VERSION = 14
+local CURRENT_LOOT_DB_VERSION = 29
 
 -- Hard reset versions
 local CURRENT_ADDON_VERSION = 600
@@ -964,7 +964,7 @@ function scanner_button:CheckNotificationCache(self, vignetteInfo, isNavigating)
 		elseif ((iconid == RareScanner.EVENT_VIGNETTE or iconid == RareScanner.EVENT_ELITE_VIGNETTE) and not private.db.general.scanEvents) then
 			return
 		-- disable zones alerts if the player is in that zone
-		elseif (not private.db.zoneFilters.filterOnlyMap and next(private.db.general.filteredZones) ~= nil and private.db.general.filteredZones[zone_id] == false) then
+		elseif (npcID and not private.db.zoneFilters.filterOnlyMap and next(private.db.general.filteredZones) ~= nil and (private.db.general.filteredZones[zone_id] == false or RareScanner:ZoneFiltered(npcID))) then
 			return
 		-- disable alerts for containers
 		elseif (iconid == RareScanner.CONTAINER_VIGNETTE or iconid == RareScanner.CONTAINER_ELITE_VIGNETTE) then
@@ -1040,11 +1040,6 @@ function scanner_button:CheckNotificationCache(self, vignetteInfo, isNavigating)
 				already_notified[161407] = true
 			end
 		end
-	end
-
-	-- Filters NPC by zone just in case it belong to a different are from the current player's position
-	if (npcID and RareScanner:ZoneFiltered(npcID)) then
-		return
 	end
 	
 	-- Check if the NPC is filtered, in which case we don't show anything
@@ -1669,6 +1664,9 @@ function RareScanner:InitializeDataBase()
 			end
 		end
 		
+		-- Clear previous overlay if active when closed the game
+		private.dbchar.overlayActive = nil
+		
 		-- Fix possible errors in database
 		self:DumpBrokenData()
 	end
@@ -1686,9 +1684,12 @@ function RareScanner:DumpBrokenData()
 	
 	if (private.dbchar.rares_killed and next(private.dbchar.rares_killed) ~= nil) then
 		for npcID, timestamp in pairs(private.dbchar.rares_killed) do
-			-- If the NPC belongs to Mechagon or Nazjatar and its set as eternal death, reset it
-			if (timestamp == ETERNAL_DEATH and private.ZONE_IDS[npcID] and (private.ZONE_IDS[npcID].zoneID == 1462 or private.ZONE_IDS[npcID].zoneID == 1355)) then
-				private.dbchar.rares_killed[npcID] = nil
+			-- If the NPC belongs to a place that is reseteable and its set as eternal death, reset it
+			if (timestamp == ETERNAL_DEATH and private.ZONE_IDS[npcID]) then
+				local zoneID = private.ZONE_IDS[npcID].zoneID
+				if (not RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[zoneID], "all") and not RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[zoneID], C_Map.GetMapArtID(zoneID))) then
+					private.dbchar.rares_killed[npcID] = nil
+				end
 			end
 		end
 	end
@@ -1742,7 +1743,7 @@ function RareScanner:MarkCompletedAchievements()
 		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, _ = GetAchievementInfo(achievementID)
 		if (completed and wasEarnedByMe) then
 			for i, npcID in ipairs(entities) do
-				if (private.ZONE_IDS[npcID] and not private.RESETABLE_KILLS_ZONE_IDS[private.ZONE_IDS[npcID].zoneID] and not private.dbchar.rares_killed[npcID]) then
+				if (private.ZONE_IDS[npcID] and (RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[private.ZONE_IDS[npcID].zoneID], "all") or RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[private.ZONE_IDS[npcID].zoneID], C_Map.GetMapArtID(private.ZONE_IDS[npcID].zoneID))) and not private.dbchar.rares_killed[npcID]) then
 					private.dbchar.rares_killed[npcID] = ETERNAL_DEATH
 				elseif (private.CONTAINER_ZONE_IDS[npcID] and not private.dbchar.containers_opened[npcID]) then
 					private.dbchar.containers_opened[npcID] = ETERNAL_COLLECTED

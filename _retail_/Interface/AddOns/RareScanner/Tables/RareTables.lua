@@ -379,6 +379,36 @@ private.RARE_LIST = {
 	21724, --Hawkbane
 	18241, --Crusty
 	16855, --Tregla
+	
+	-- Wrath of the Lich King
+	32517, --Loque'nahak
+	32491, --Time-Lost Proto-Drake
+	35189, --Skoll
+	38453, --Arcturis
+	33776, --Gondria
+	32485, --King Krush
+	32630, --Vyragosa
+	32481, --Aotona
+	32361, --Icehorn
+	32500, --Dirkee
+	32398, --King Ping
+	32358, --Fumblub Gearwind
+	32377, --Perobas the Bloodthirster
+	32357, --Old Crystalbark
+	32475, --Terror Spinner
+	32409, --Crazed Indu'le Survivor
+	32501, --High Thane Jorfus
+	32438, --Syreian the Bonecarver
+	32487, --Putridus the Ancient
+	32471, --Griegen
+	32429, --Seething Hate
+	32422, --Grocklar
+	32400, --Tukemuth
+	32417, --Scarlet Highlord Daion
+	32386, --Vigdis the War Maiden
+	32495, --Hildana Deathstealer
+	32447, --Zul'drak Sentinel
+	32435, --Vern
 
 	-- Rares Pandaria
 	50062, --Aeonaxx
