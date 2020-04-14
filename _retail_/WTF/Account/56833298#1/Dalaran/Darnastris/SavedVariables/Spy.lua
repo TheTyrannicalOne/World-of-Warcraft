@@ -1,10 +1,5 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
-	["KOSData"] = {
-	},
 	["PlayerData"] = {
 		["Kicksplode-Doomhammer"] = {
 			["mapID"] = 63,
@@ -165,5 +160,10 @@ SpyPerCharDB = {
 			["isGuess"] = true,
 			["subZone"] = "The Skunkworks",
 		},
+	},
+	["IgnoreData"] = {
+	},
+	["version"] = "1.1",
+	["KOSData"] = {
 	},
 }

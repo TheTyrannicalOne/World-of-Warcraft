@@ -1,0 +1,281 @@
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - setting background color 'ff000000'.
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - UserAgent: BlizzardBrowser/4.1.14 Chrome/69.0.3497.81
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] Create invoked. winSize: {0, 0}; 659; 605
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::backgroundColor: {r:0, g:0, b:0, a:255}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::blizzardErrorPath: ""
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::enableHardwareAcceleration: true
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::enableLocalStorage: false
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::enablePlugins: false
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::showCrashDialog: false
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::showNativeScrollBar: true
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::startUrl: "about:blank"
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::userAgentToken: ""
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] BrowserConfig::webkitLocale: 2
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Renderer]: 2020-04-10T12:39:45 {35e0} [INFO] - browser created
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnLoadStart type:1 frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - first page load completed
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:45 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:47 {8b84} [INFO] - [BrowserProcessHandler] OnLoadStart type:0 frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:47 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:48 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:48 {8b84} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:48 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:48 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:49 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:49 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:49 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:49 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:49 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:49 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:50 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:50 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:50 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:50 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{2, 2}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:50 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:50 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{3, 3}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:51 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:51 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{2, 2}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:51 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:51 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:51 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:51 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{2, 2}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:52 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:52 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{3, 3}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:52 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:52 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{4, 4}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:52 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:52 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{5, 5}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:52 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:52 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{6, 6}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{7, 7}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{8, 8}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{9, 9}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{10, 10}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:53 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{11, 11}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:54 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:54 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{12, 12}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:55 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:55 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{11, 11}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:55 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:55 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{12, 12}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:55 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:55 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{13, 13}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:55 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:55 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{14, 14}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:56 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:56 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{15, 15}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:56 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:56 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{16, 16}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{15, 15}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{14, 14}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{13, 13}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{12, 12}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{11, 11}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{10, 10}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{9, 9}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{8, 8}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{7, 7}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:58 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{6, 6}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{5, 5}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{4, 4}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{3, 3}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{2, 2}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{0, 0}
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:39:59 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:00 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:00 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{0, 0}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:00 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:01 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:01 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:02 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:02 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{2, 2}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:02 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:02 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{3, 3}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:02 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:02 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{4, 4}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:02 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:02 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{5, 5}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{6, 6}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{7, 7}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{8, 8}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{9, 9}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnLoadStart type:7 frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:03 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:04 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:04 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:04 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:04 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:04 {8b84} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:04 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:04 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:05 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:05 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:05 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{0, 0}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:06 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:07 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:07 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:07 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:07 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:07 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:07 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:07 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:07 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:08 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:08 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{0, 0}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:08 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:08 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{2, 2}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{3, 3}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{4, 4}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{5, 5}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{6, 6}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{7, 7}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{8, 8}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{9, 9}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{10, 10}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{11, 11}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{12, 12}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{13, 13}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{14, 14}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{15, 15}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:09 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{16, 16}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{17, 17}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{18, 18}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{19, 19}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{20, 20}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:11 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{21, 21}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{22, 22}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{23, 23}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{24, 24}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{25, 25}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{26, 26}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{0, 0}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:12 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:13 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:13 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:14 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:14 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{2, 2}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:14 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:14 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{3, 3}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:14 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:14 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{4, 4}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:14 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:14 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{5, 5}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{6, 6}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{7, 7}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{8, 8}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{9, 9}
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:15 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:16 {8b84} [INFO] - [BrowserProcessHandler] OnLoadStart type:7 frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:16 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:16 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:16 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:16 {8b84} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:16 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:16 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:2
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:17 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnLoadStart type:7 frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:0
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnLoadError frame:3 errorCode:-105 errorText:ERR_NAME_NOT_RESOLVED
+[ERROR]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [ERROR] - [NavigationStateHandler] Loading error. errorMessage:Name Not Resolved (-105)
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:18 {8b84} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:19 {8b84} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Scene]: 2020-04-10T12:40:19 {8b84} [INFO] - received shutdown message from client.
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:19 {8b84} [INFO] - [BrowserProcessHandler] Shutdown invoked
+[INFO]-[BNL_Browser]: 2020-04-10T12:40:19 {8b84} [INFO] - [BrowserProcessHandler] OnBeforeClose

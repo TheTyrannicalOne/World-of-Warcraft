@@ -1687,8 +1687,16 @@ function RareScanner:DumpBrokenData()
 			-- If the NPC belongs to a place that is reseteable and its set as eternal death, reset it
 			if (timestamp == ETERNAL_DEATH and private.ZONE_IDS[npcID]) then
 				local zoneID = private.ZONE_IDS[npcID].zoneID
-				if (not RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[zoneID], "all") and not RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[zoneID], C_Map.GetMapArtID(zoneID))) then
-					private.dbchar.rares_killed[npcID] = nil
+				if (type(zoneID) == "table") then
+					for id, _ in pairs (zoneID) do
+						if (not RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[id], "all") and not RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[id], C_Map.GetMapArtID(id))) then
+							private.dbchar.rares_killed[npcID] = nil
+						end
+					end
+				else
+					if (not RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[zoneID], "all") and not RS_tContains(private.PERMANENT_KILLS_ZONE_IDS[zoneID], C_Map.GetMapArtID(zoneID))) then
+						private.dbchar.rares_killed[npcID] = nil
+					end
 				end
 			end
 		end

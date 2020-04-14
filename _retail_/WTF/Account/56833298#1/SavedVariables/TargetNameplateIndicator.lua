@@ -11,6 +11,9 @@ TargetNameplateIndicatorDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["mouseover"] = {
+				["enable"] = false,
+			},
 		},
 	},
 }

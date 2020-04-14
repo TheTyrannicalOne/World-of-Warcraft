@@ -65,7 +65,7 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
 
         barbed_shot_3 = {
             resource = 'focus',
-            aura = 'barbed_shot',
+            aura = 'barbed_shot_3',
 
             last = function ()
                 local app = state.buff.barbed_shot_3.applied
@@ -80,7 +80,7 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
 
         barbed_shot_4 = {
             resource = 'focus',
-            aura = 'barbed_shot',
+            aura = 'barbed_shot_4',
 
             last = function ()
                 local app = state.buff.barbed_shot_4.applied
@@ -95,10 +95,55 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
 
         barbed_shot_5 = {
             resource = 'focus',
-            aura = 'barbed_shot',
+            aura = 'barbed_shot_5',
 
             last = function ()
                 local app = state.buff.barbed_shot_5.applied
+                local t = state.query_time
+
+                return app + floor( t - app )
+            end,
+
+            interval = 2,
+            value = function () return state.talent.scent_of_blood.enabled and 7 or 5 end,
+        },
+
+        barbed_shot_6 = {
+            resource = 'focus',
+            aura = 'barbed_shot_6',
+
+            last = function ()
+                local app = state.buff.barbed_shot_6.applied
+                local t = state.query_time
+
+                return app + floor( t - app )
+            end,
+
+            interval = 2,
+            value = function () return state.talent.scent_of_blood.enabled and 7 or 5 end,
+        },
+        
+        barbed_shot_7 = {
+            resource = 'focus',
+            aura = 'barbed_shot_7',
+
+            last = function ()
+                local app = state.buff.barbed_shot_7.applied
+                local t = state.query_time
+
+                return app + floor( t - app )
+            end,
+
+            interval = 2,
+            value = function () return state.talent.scent_of_blood.enabled and 7 or 5 end,
+        },
+        
+        barbed_shot_8 = {
+            resource = 'focus',
+            aura = 'barbed_shot_8',
+
+            last = function ()
+                local app = state.buff.barbed_shot_8.applied
                 local t = state.query_time
 
                 return app + floor( t - app )
@@ -215,8 +260,26 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
             id = 246854,
             duration = 8,
             max_stack = 1,
-        },        
-
+        },
+        
+        barbed_shot_6 = {
+            id = 284255,
+            duration = 8,
+            max_stack = 1,
+        },
+        
+        barbed_shot_7 = {
+            id = 284257,
+            duration = 8,
+            max_stack = 1,
+        },
+        
+        barbed_shot_8 = {
+            id = 284258,
+            duration = 8,
+            max_stack = 1,
+        },
+        
         barbed_shot_dot = {
             id = 217200,
             duration = 8,
@@ -581,7 +644,7 @@ if UnitClassBase( 'player' ) == 'HUNTER' then
             handler = function ()
                 if buff.barbed_shot.down then applyBuff( 'barbed_shot' )
                 else
-                    for i = 2, 5 do
+                    for i = 2, 8 do
                         if buff[ 'barbed_shot_' .. i ].down then applyBuff( 'barbed_shot_' .. i ); break end
                     end
                 end

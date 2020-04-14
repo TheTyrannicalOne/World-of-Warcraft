@@ -5,28 +5,28 @@ PasteDB = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Tynster - Dalaran"] = "Tynster - Dalaran",
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
 		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Claugh - Runetotem"] = "Claugh - Runetotem",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -42,16 +42,16 @@ PasteDB = {
 		["Tyrann - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Shaewong - Dalaran"] = {
+		["Brewnheimer - Darkspear"] = {
 			["loaded"] = true,
 		},
 		["Shanyt - Argent Dawn"] = {
 			["loaded"] = true,
 		},
-		["Tinkster - Dalaran"] = {
+		["Sinh - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Brewnheimer - Darkspear"] = {
+		["Shaewong - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Goramor - Runetotem"] = {
@@ -60,10 +60,10 @@ PasteDB = {
 		["Gillbourn - Runetotem"] = {
 			["loaded"] = true,
 		},
-		["Shanyt - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 			["loaded"] = true,
 		},
 		["Gangus - Runetotem"] = {
@@ -75,13 +75,13 @@ PasteDB = {
 		["Serbitechna - Darkspear"] = {
 			["loaded"] = true,
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyriinid - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Ruffinton - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Tynkster - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
 			["loaded"] = true,
 		},
 		["Malivant - Dalaran"] = {
@@ -90,22 +90,22 @@ PasteDB = {
 		["Darnastris - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Shathiel - Darkspear"] = {
-			["loaded"] = true,
-		},
 		["Claugh - Runetotem"] = {
 			["loaded"] = true,
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Shathiel - Darkspear"] = {
 			["loaded"] = true,
 		},
-		["Tyriinid - Dalaran"] = {
+		["Tynkster - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Dialdaas - Darkspear"] = {
+		["Beeronimo - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Sinh - Dalaran"] = {
+		["Migimong - Runetotem"] = {
+			["loaded"] = true,
+		},
+		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Narisaric - Dalaran"] = {

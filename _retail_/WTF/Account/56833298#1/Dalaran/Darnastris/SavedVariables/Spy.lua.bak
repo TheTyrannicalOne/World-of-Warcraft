@@ -1,8 +1,9 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
+	},
+	["KOSData"] = {
 	},
 	["PlayerData"] = {
 		["Kicksplode-Doomhammer"] = {
@@ -165,5 +166,4 @@ SpyPerCharDB = {
 			["subZone"] = "The Zoram Strand",
 		},
 	},
-	["version"] = "1.1",
 }

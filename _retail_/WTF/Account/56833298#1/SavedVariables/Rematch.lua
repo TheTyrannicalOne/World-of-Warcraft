@@ -2,6 +2,60 @@
 RematchSaved = {
 }
 RematchSettings = {
+	["PetCardYPos"] = 1223.5087890625,
+	["JournalUsed"] = true,
+	["XPos"] = 995.0079345703125,
+	["CollectionChartType"] = 1,
+	["Sort"] = {
+		["Order"] = 2,
+		["FavoritesFirst"] = true,
+	},
+	["DialogYPos"] = 702.0049438476562,
+	["SpecialSlots"] = {
+	},
+	["SelectedTab"] = 1,
+	["HidePetToast"] = true,
+	["FavoriteFilters"] = {
+	},
+	["DialogXPos"] = 1290.008056640625,
+	["JournalPanel"] = 2,
+	["BackupCount"] = 0,
+	["TeamGroups"] = {
+		{
+			"General", -- [1]
+			"Interface\\Icons\\PetJournalPortrait", -- [2]
+		}, -- [1]
+	},
+	["UseTypeBar"] = true,
+	["Filters"] = {
+		["Other"] = {
+		},
+		["Script"] = {
+		},
+		["Moveset"] = {
+		},
+		["Tough"] = {
+		},
+		["Level"] = {
+		},
+		["Similar"] = {
+		},
+		["Sources"] = {
+		},
+		["Breed"] = {
+		},
+		["Rarity"] = {
+		},
+		["Strong"] = {
+		},
+		["Collected"] = {
+		},
+		["Favorite"] = {
+		},
+		["Types"] = {
+		},
+	},
+	["QueueSortOrder"] = 1,
 	["ScriptFilters"] = {
 		{
 			"Unnamed Pets", -- [1]
@@ -24,64 +78,10 @@ RematchSettings = {
 			"-- Pets with three or more attack types different than their pet type.\n\nlocal count = 0\nfor _,abilityID in ipairs(abilityList) do\n  local abilityType,noHints = select(7, C_PetBattles.GetAbilityInfoByID(abilityID) )\n  if not noHints and abilityType~=petType then\n    count = count + 1\n  end\nend\n\nreturn count>=3\n", -- [2]
 		}, -- [5]
 	},
-	["QueueSortOrder"] = 1,
-	["XPos"] = 995.0079345703125,
-	["CollectionChartType"] = 1,
-	["DialogYPos"] = 702.0048828125,
-	["JournalUsed"] = true,
-	["HidePetToast"] = true,
-	["FavoriteFilters"] = {
-	},
-	["Sort"] = {
-		["Order"] = 2,
-		["FavoritesFirst"] = true,
-	},
-	["AllowHiddenPetsDefaulted"] = true,
-	["BackupCount"] = 0,
-	["TeamGroups"] = {
-		{
-			"General", -- [1]
-			"Interface\\Icons\\PetJournalPortrait", -- [2]
-		}, -- [1]
-	},
-	["DialogXPos"] = 1290.007934570313,
-	["Filters"] = {
-		["Other"] = {
-		},
-		["Script"] = {
-		},
-		["Types"] = {
-		},
-		["Favorite"] = {
-		},
-		["Collected"] = {
-		},
-		["Strong"] = {
-		},
-		["Sources"] = {
-		},
-		["Breed"] = {
-		},
-		["Rarity"] = {
-		},
-		["Similar"] = {
-		},
-		["Level"] = {
-		},
-		["Tough"] = {
-		},
-		["Moveset"] = {
-		},
-	},
-	["CustomScaleValue"] = 100,
-	["YPos"] = 418.0044860839844,
-	["QueueSanctuary"] = {
-		["BattlePet-0-00000847841B"] = "QQQ52PO",
-		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
-	},
+	["PetCardXPos"] = 400.9999694824219,
 	["CollapsedOptHeaders"] = {
 	},
-	["ElvUIToastDefaulted"] = true,
+	["AllowHiddenPetsDefaulted"] = true,
 	["PreferredMode"] = 1,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
@@ -106,16 +106,18 @@ RematchSettings = {
 			4, -- [8]
 		},
 	},
-	["JournalPanel"] = 2,
+	["ElvUIToastDefaulted"] = true,
 	["CornerPos"] = "BOTTOMLEFT",
+	["QueueSanctuary"] = {
+		["BattlePet-0-00000847841B"] = "QQQ52PO",
+		["BattlePet-0-0000083ED3B8"] = "QQQ329G",
+	},
 	["LevelingQueue"] = {
 		"BattlePet-0-0000083ED3B8", -- [1]
 		"BattlePet-0-00000847841B", -- [2]
 	},
-	["SpecialSlots"] = {
-	},
-	["UseTypeBar"] = true,
-	["SelectedTab"] = 1,
+	["YPos"] = 418.0044860839844,
+	["CustomScaleValue"] = 100,
 	["PetNotes"] = {
 	},
 }

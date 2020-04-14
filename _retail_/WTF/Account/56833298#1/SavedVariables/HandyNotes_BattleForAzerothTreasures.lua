@@ -5,29 +5,29 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tynster - Dalaran"] = "Tynster - Dalaran",
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Claugh - Runetotem"] = "Claugh - Runetotem",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -39,23 +39,23 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Tyrann - Zul'jin"] = {
 		},
-		["Shaewong - Dalaran"] = {
+		["Brewnheimer - Darkspear"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 		},
-		["Brewnheimer - Darkspear"] = {
+		["Shaewong - Dalaran"] = {
 		},
 		["Goramor - Runetotem"] = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Shanyt - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
-		["Tyriinid - Dalaran"] = {
+		["Beeronimo - Dalaran"] = {
 		},
 		["Sinh - Dalaran"] = {
 		},
@@ -63,11 +63,11 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Serbitechna - Darkspear"] = {
 		},
-		["Tynkster - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Vancard - Zul'jin"] = {
 		},
 		["Malivant - Dalaran"] = {
 		},
@@ -75,15 +75,15 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Claugh - Runetotem"] = {
 		},
-		["Vancard - Zul'jin"] = {
+		["Shathiel - Darkspear"] = {
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Tynkster - Dalaran"] = {
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyriinid - Dalaran"] = {
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 		},
-		["Gangus - Runetotem"] = {
+		["Shanyt - Zul'jin"] = {
 		},
 		["Narisaric - Dalaran"] = {
 		},

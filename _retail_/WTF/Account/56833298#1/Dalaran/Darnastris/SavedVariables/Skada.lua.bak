@@ -2541,17 +2541,21 @@ SkadaPerCharDB = {
 							["criticalmin"] = 155,
 							["hitamount"] = 2515,
 						},
-						["Frost Nova"] = {
-							["hitmin"] = 21,
-							["id"] = 122,
-							["min"] = 21,
-							["damage"] = 42,
-							["hitmax"] = 21,
-							["hit"] = 2,
+						["Ice Lance"] = {
+							["hitmin"] = 213,
+							["criticalamount"] = 2715,
+							["id"] = 228598,
+							["damage"] = 2928,
+							["max"] = 1379,
+							["totalhits"] = 3,
+							["min"] = 213,
+							["criticalmax"] = 1379,
+							["hitmax"] = 213,
+							["hit"] = 1,
 							["school"] = 16,
-							["totalhits"] = 2,
-							["max"] = 21,
-							["hitamount"] = 42,
+							["critical"] = 2,
+							["criticalmin"] = 1336,
+							["hitamount"] = 213,
 						},
 						["Water Elemental: Waterbolt"] = {
 							["hitmin"] = 104,
@@ -2564,6 +2568,30 @@ SkadaPerCharDB = {
 							["totalhits"] = 6,
 							["max"] = 122,
 							["hitamount"] = 669,
+						},
+						["Frost Nova"] = {
+							["hitmin"] = 21,
+							["id"] = 122,
+							["min"] = 21,
+							["damage"] = 42,
+							["hitmax"] = 21,
+							["hit"] = 2,
+							["school"] = 16,
+							["totalhits"] = 2,
+							["max"] = 21,
+							["hitamount"] = 42,
+						},
+						["Frostbolt"] = {
+							["hitmin"] = 242,
+							["id"] = 228597,
+							["min"] = 242,
+							["damage"] = 512,
+							["hitmax"] = 270,
+							["hit"] = 2,
+							["school"] = 16,
+							["totalhits"] = 2,
+							["max"] = 270,
+							["hitamount"] = 512,
 						},
 						["Blizzard"] = {
 							["hitmin"] = 54,
@@ -2580,34 +2608,6 @@ SkadaPerCharDB = {
 							["hitmax"] = 72,
 							["criticalmin"] = 111,
 							["hitamount"] = 1690,
-						},
-						["Frostbolt"] = {
-							["hitmin"] = 242,
-							["id"] = 228597,
-							["min"] = 242,
-							["damage"] = 512,
-							["hitmax"] = 270,
-							["hit"] = 2,
-							["school"] = 16,
-							["totalhits"] = 2,
-							["max"] = 270,
-							["hitamount"] = 512,
-						},
-						["Ice Lance"] = {
-							["hitmin"] = 213,
-							["criticalamount"] = 2715,
-							["id"] = 228598,
-							["damage"] = 2928,
-							["max"] = 1379,
-							["totalhits"] = 3,
-							["min"] = 213,
-							["criticalmax"] = 1379,
-							["hitmax"] = 213,
-							["hit"] = 1,
-							["school"] = 16,
-							["critical"] = 2,
-							["criticalmin"] = 1336,
-							["hitamount"] = 213,
 						},
 						["Attack"] = {
 							["hitmin"] = 14,
@@ -3433,252 +3433,26 @@ SkadaPerCharDB = {
 				["class"] = "MAGE",
 				["dispells"] = 0,
 				["leech"] = 0,
-				["overhealing"] = 2396.239990234375,
+				["ffdamagedone"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
-				["auras"] = {
-					["Ice Barrier"] = {
-						["uptime"] = 20,
-						["active"] = 0,
-						["school"] = 16,
-						["name"] = "Ice Barrier",
-						["auratype"] = "BUFF",
-						["id"] = 11426,
-					},
-					["Arcane Intellect"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 64,
-						["name"] = "Arcane Intellect",
-						["auratype"] = "BUFF",
-						["id"] = 1459,
-					},
-					["Icy Veins"] = {
-						["uptime"] = 40,
-						["active"] = 0,
-						["id"] = 12472,
-						["auratype"] = "BUFF",
-						["name"] = "Icy Veins",
-						["school"] = 16,
-					},
-					["Fingers of Frost"] = {
-						["uptime"] = 755,
-						["active"] = 0,
-						["id"] = 44544,
-						["auratype"] = "BUFF",
-						["name"] = "Fingers of Frost",
-						["school"] = 16,
-					},
-					["Frost Nova"] = {
-						["name"] = "Frost Nova",
-						["active"] = 0,
-						["id"] = 122,
-						["school"] = 16,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 33,
-					},
-					["Frozen Orb"] = {
-						["name"] = "Frozen Orb",
-						["active"] = 0,
-						["id"] = 289308,
-						["school"] = 16,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 49,
-					},
-					["Chilled"] = {
-						["uptime"] = 213,
-						["active"] = 0,
-						["school"] = 16,
-						["auratype"] = "DEBUFF",
-						["id"] = 205708,
-						["name"] = "Chilled",
-					},
-					["Infrared Heat Focals"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["name"] = "Infrared Heat Focals",
-						["auratype"] = "BUFF",
-						["id"] = 77397,
-					},
-					["Winter's Chill"] = {
-						["uptime"] = 4,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["id"] = 228358,
-						["name"] = "Winter's Chill",
-						["school"] = 16,
-					},
-					["Shimmer"] = {
-						["uptime"] = 1,
-						["active"] = 0,
-						["school"] = 64,
-						["name"] = "Shimmer",
-						["auratype"] = "BUFF",
-						["id"] = 212653,
-					},
-					["Flurry"] = {
-						["uptime"] = 22,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["id"] = 228354,
-						["name"] = "Flurry",
-						["school"] = 16,
-					},
-					["Brain Freeze"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 16,
-						["name"] = "Brain Freeze",
-						["auratype"] = "BUFF",
-						["id"] = 190446,
-					},
-					["Cone of Cold"] = {
-						["name"] = "Cone of Cold",
-						["active"] = 0,
-						["id"] = 212792,
-						["school"] = 16,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 32,
-					},
-					["Bone Chilling"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 16,
-						["name"] = "Bone Chilling",
-						["auratype"] = "BUFF",
-						["id"] = 205766,
-					},
-				},
+				["alertDamage"] = 0,
+				["overhealing"] = 2396.239990234375,
 				["role"] = "DAMAGER",
-				["healingspells"] = {
-					["Ice Barrier"] = {
-						["shielding"] = 14778,
-						["id"] = 11426,
-						["healing"] = 14778,
-						["min"] = 0,
-						["name"] = "Ice Barrier",
-						["hits"] = 107,
-						["overhealing"] = 2396.239990234375,
-						["max"] = 329,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-				},
 				["time"] = 631,
 				["interrupts"] = 0,
 				["ffdamagedonetargets"] = {
 				},
 				["damagetaken"] = 24026,
-				["deathlog"] = {
-					{
-						["ts"] = 1585498783.199,
-						["amount"] = -137,
-						["hp"] = 4757,
-						["spellid"] = 88163,
-						["srcname"] = "Hunter Hill Scout",
-					}, -- [1]
-					{
-						["ts"] = 1585498787.221,
-						["amount"] = -135,
-						["hp"] = 4620,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [2]
-					{
-						["ts"] = 1585498789.271,
-						["amount"] = -174,
-						["hp"] = 4311,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 15496,
-					}, -- [3]
-					{
-						["ts"] = 1585498789.665,
-						["amount"] = -166,
-						["hp"] = 4311,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [4]
-					{
-						["ts"] = 1585498791.255,
-						["amount"] = -118,
-						["hp"] = 4145,
-						["spellid"] = 88163,
-						["srcname"] = "Hunter Hill Scout",
-					}, -- [5]
-					{
-						["ts"] = 1585498805.186,
-						["amount"] = -181,
-						["hp"] = 4052,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 22120,
-					}, -- [6]
-					{
-						["ts"] = 1585498805.186,
-						["amount"] = -142,
-						["hp"] = 4052,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [7]
-					{
-						["ts"] = 1585498807.19,
-						["amount"] = -142,
-						["hp"] = 3910,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [8]
-					{
-						["ts"] = 1585498730.316,
-						["amount"] = -124,
-						["hp"] = 4926,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [9]
-					{
-						["ts"] = 1585498731.282,
-						["amount"] = -143,
-						["hp"] = 4659,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 22120,
-					}, -- [10]
-					{
-						["ts"] = 1585498732.295,
-						["amount"] = -152,
-						["hp"] = 4659,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [11]
-					{
-						["ts"] = 1585498732.77,
-						["amount"] = -166,
-						["hp"] = 4507,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [12]
-					{
-						["ts"] = 1585498734.776,
-						["amount"] = -168,
-						["hp"] = 4173,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 15496,
-					}, -- [13]
-					{
-						["ts"] = 1585498736.754,
-						["amount"] = -170,
-						["hp"] = 4173,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [14]
-					{
-						["ts"] = 1585498781.292,
-						["amount"] = -171,
-						["hp"] = 4928,
-						["spellid"] = 88163,
-						["srcname"] = "Hunter Hill Scout",
-					}, -- [15]
-					["pos"] = 9,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[59914] = 3226,
+						},
+						["amount"] = 3226,
+					},
 				},
 				["damage"] = 144310,
 				["damagespells"] = {
@@ -3837,7 +3611,114 @@ SkadaPerCharDB = {
 						["shielding"] = 14778,
 					},
 				},
-				["shielding"] = 14778,
+				["deathlog"] = {
+					{
+						["ts"] = 1585498783.199,
+						["amount"] = -137,
+						["srcname"] = "Hunter Hill Scout",
+						["hp"] = 4757,
+						["spellid"] = 88163,
+					}, -- [1]
+					{
+						["ts"] = 1585498787.221,
+						["amount"] = -135,
+						["spellid"] = 88163,
+						["hp"] = 4620,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [2]
+					{
+						["ts"] = 1585498789.271,
+						["amount"] = -174,
+						["spellid"] = 15496,
+						["hp"] = 4311,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [3]
+					{
+						["ts"] = 1585498789.665,
+						["amount"] = -166,
+						["spellid"] = 88163,
+						["hp"] = 4311,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [4]
+					{
+						["ts"] = 1585498791.255,
+						["amount"] = -118,
+						["srcname"] = "Hunter Hill Scout",
+						["hp"] = 4145,
+						["spellid"] = 88163,
+					}, -- [5]
+					{
+						["ts"] = 1585498805.186,
+						["amount"] = -181,
+						["spellid"] = 22120,
+						["hp"] = 4052,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [6]
+					{
+						["ts"] = 1585498805.186,
+						["amount"] = -142,
+						["spellid"] = 88163,
+						["hp"] = 4052,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [7]
+					{
+						["ts"] = 1585498807.19,
+						["amount"] = -142,
+						["spellid"] = 88163,
+						["hp"] = 3910,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [8]
+					{
+						["ts"] = 1585498730.316,
+						["amount"] = -124,
+						["spellid"] = 88163,
+						["hp"] = 4926,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [9]
+					{
+						["ts"] = 1585498731.282,
+						["amount"] = -143,
+						["spellid"] = 22120,
+						["hp"] = 4659,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [10]
+					{
+						["ts"] = 1585498732.295,
+						["amount"] = -152,
+						["spellid"] = 88163,
+						["hp"] = 4659,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [11]
+					{
+						["ts"] = 1585498732.77,
+						["amount"] = -166,
+						["spellid"] = 88163,
+						["hp"] = 4507,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [12]
+					{
+						["ts"] = 1585498734.776,
+						["amount"] = -168,
+						["spellid"] = 15496,
+						["hp"] = 4173,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [13]
+					{
+						["ts"] = 1585498736.754,
+						["amount"] = -170,
+						["spellid"] = 88163,
+						["hp"] = 4173,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [14]
+					{
+						["ts"] = 1585498781.292,
+						["amount"] = -171,
+						["srcname"] = "Hunter Hill Scout",
+						["hp"] = 4928,
+						["spellid"] = 88163,
+					}, -- [15]
+					["pos"] = 9,
+				},
 				["id"] = "Player-3683-0B9BB303",
 				["healing"] = 14778,
 				["ccbreaks"] = 0,
@@ -4053,237 +3934,175 @@ SkadaPerCharDB = {
 						["absorbed"] = 51,
 					},
 				},
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[59914] = 3226,
-						},
-						["amount"] = 3226,
-					},
-				},
+				["shielding"] = 14778,
 				["leeched"] = {
 				},
 				["name"] = "Darnastris",
 				["alertCount"] = 0,
-				["alertDamage"] = 0,
+				["healingspells"] = {
+					["Ice Barrier"] = {
+						["shielding"] = 14778,
+						["id"] = 11426,
+						["healing"] = 14778,
+						["min"] = 0,
+						["name"] = "Ice Barrier",
+						["hits"] = 107,
+						["overhealing"] = 2396.239990234375,
+						["max"] = 329,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["auras"] = {
+					["Ice Barrier"] = {
+						["uptime"] = 20,
+						["active"] = 0,
+						["school"] = 16,
+						["name"] = "Ice Barrier",
+						["auratype"] = "BUFF",
+						["id"] = 11426,
+					},
+					["Arcane Intellect"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 64,
+						["name"] = "Arcane Intellect",
+						["auratype"] = "BUFF",
+						["id"] = 1459,
+					},
+					["Icy Veins"] = {
+						["uptime"] = 40,
+						["active"] = 0,
+						["id"] = 12472,
+						["auratype"] = "BUFF",
+						["name"] = "Icy Veins",
+						["school"] = 16,
+					},
+					["Fingers of Frost"] = {
+						["uptime"] = 755,
+						["active"] = 0,
+						["id"] = 44544,
+						["auratype"] = "BUFF",
+						["name"] = "Fingers of Frost",
+						["school"] = 16,
+					},
+					["Frost Nova"] = {
+						["name"] = "Frost Nova",
+						["active"] = 0,
+						["id"] = 122,
+						["school"] = 16,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 33,
+					},
+					["Frozen Orb"] = {
+						["name"] = "Frozen Orb",
+						["active"] = 0,
+						["id"] = 289308,
+						["school"] = 16,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 49,
+					},
+					["Chilled"] = {
+						["uptime"] = 213,
+						["active"] = 0,
+						["school"] = 16,
+						["auratype"] = "DEBUFF",
+						["id"] = 205708,
+						["name"] = "Chilled",
+					},
+					["Infrared Heat Focals"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Infrared Heat Focals",
+						["auratype"] = "BUFF",
+						["id"] = 77397,
+					},
+					["Winter's Chill"] = {
+						["uptime"] = 4,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["id"] = 228358,
+						["name"] = "Winter's Chill",
+						["school"] = 16,
+					},
+					["Shimmer"] = {
+						["uptime"] = 1,
+						["active"] = 0,
+						["school"] = 64,
+						["name"] = "Shimmer",
+						["auratype"] = "BUFF",
+						["id"] = 212653,
+					},
+					["Flurry"] = {
+						["uptime"] = 22,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["id"] = 228354,
+						["name"] = "Flurry",
+						["school"] = 16,
+					},
+					["Brain Freeze"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 16,
+						["name"] = "Brain Freeze",
+						["auratype"] = "BUFF",
+						["id"] = 190446,
+					},
+					["Cone of Cold"] = {
+						["name"] = "Cone of Cold",
+						["active"] = 0,
+						["id"] = 212792,
+						["school"] = 16,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 32,
+					},
+					["Bone Chilling"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 16,
+						["name"] = "Bone Chilling",
+						["auratype"] = "BUFF",
+						["id"] = 205766,
+					},
+				},
 			}, -- [1]
 			{
 				["healingabsorbed"] = 0,
 				["class"] = "MAGE",
 				["dispells"] = 0,
 				["leech"] = 0,
-				["overhealing"] = 804,
+				["ffdamagedone"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
-				["auras"] = {
-					["Blink"] = {
-						["name"] = "Blink",
-						["active"] = 0,
-						["school"] = 64,
-						["uptime"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 1953,
-					},
-					["Displacement Beacon"] = {
-						["name"] = "Displacement Beacon",
-						["active"] = 0,
-						["school"] = 64,
-						["uptime"] = 26,
-						["auratype"] = "BUFF",
-						["id"] = 212799,
-					},
-					["Clearcasting"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["name"] = "Clearcasting",
-						["auratype"] = "BUFF",
-						["id"] = 263725,
-					},
-					["Presence of Mind"] = {
-						["name"] = "Presence of Mind",
-						["active"] = 0,
-						["school"] = 64,
-						["uptime"] = 6,
-						["auratype"] = "BUFF",
-						["id"] = 205025,
-					},
-					["Evocation"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 64,
-						["name"] = "Evocation",
-						["auratype"] = "BUFF",
-						["id"] = 12051,
-					},
-					["Arcane Familiar"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 64,
-						["name"] = "Arcane Familiar",
-						["auratype"] = "BUFF",
-						["id"] = 210126,
-					},
-					["Prismatic Barrier"] = {
-						["name"] = "Prismatic Barrier",
-						["active"] = 0,
-						["school"] = 64,
-						["uptime"] = 21,
-						["auratype"] = "BUFF",
-						["id"] = 235450,
-					},
-				},
+				["alertDamage"] = 0,
+				["overhealing"] = 804,
 				["role"] = "DAMAGER",
-				["healingspells"] = {
-					["Swift Hand of Justice"] = {
-						["shielding"] = 0,
-						["id"] = 59913,
-						["healing"] = 4232,
-						["min"] = 0,
-						["name"] = "Swift Hand of Justice",
-						["hits"] = 51,
-						["overhealing"] = 804,
-						["max"] = 101,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-					["Prismatic Barrier"] = {
-						["shielding"] = 1026,
-						["id"] = 235450,
-						["healing"] = 1026,
-						["min"] = 0,
-						["name"] = "Prismatic Barrier",
-						["hits"] = 9,
-						["overhealing"] = 0,
-						["max"] = 156,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-				},
 				["time"] = 305,
 				["interrupts"] = 0,
 				["ffdamagedonetargets"] = {
 				},
 				["damagetaken"] = 15613,
-				["deathlog"] = {
-					{
-						["ts"] = 1585498787.713,
-						["amount"] = -135,
-						["hp"] = 4110,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 97,
-						["srcname"] = "Cayla-Nordrassil",
-						["spellid"] = 59913,
-						["hp"] = 4073,
-						["ts"] = 1585498793.011,
-					}, -- [2]
-					{
-						["ts"] = 1585498809.347,
-						["amount"] = 97,
-						["spellid"] = 59913,
-						["srcname"] = "Cayla-Nordrassil",
-						["hp"] = 4503,
-						["absorb"] = 0,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 97,
-						["spellid"] = 59913,
-						["srcname"] = "Cayla-Nordrassil",
-						["hp"] = 4358,
-						["ts"] = 1585498684.176,
-					}, -- [4]
-					{
-						["ts"] = 1585498702.375,
-						["amount"] = -187,
-						["hp"] = 4521,
-						["spellid"] = 22120,
-						["srcname"] = "Hunter Hill Scout",
-					}, -- [5]
-					{
-						["ts"] = 1585498702.539,
-						["amount"] = -146,
-						["hp"] = 4521,
-						["spellid"] = 88163,
-						["srcname"] = "Hunter Hill Scout",
-					}, -- [6]
-					{
-						["ts"] = 1585498704.485,
-						["amount"] = -173,
-						["hp"] = 4378,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [7]
-					{
-						["ts"] = 1585498729.516,
-						["amount"] = 97,
-						["srcname"] = "Cayla-Nordrassil",
-						["spellid"] = 59913,
-						["hp"] = 4423,
-						["absorb"] = 0,
-					}, -- [8]
-					{
-						["ts"] = 1585498748.285,
-						["amount"] = -136,
-						["hp"] = 4568,
-						["spellid"] = 88163,
-						["srcname"] = "Hunter Hill Scout",
-					}, -- [9]
-					{
-						["ts"] = 1585498760.512,
-						["amount"] = -181,
-						["hp"] = 4123,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 97,
-						["srcname"] = "Cayla-Nordrassil",
-						["spellid"] = 59913,
-						["hp"] = 4041,
-						["ts"] = 1585498761.868,
-					}, -- [11]
-					{
-						["ts"] = 1585498782.029,
-						["amount"] = -182,
-						["hp"] = 4517,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 88163,
-					}, -- [12]
-					{
-						["ts"] = 1585498782.175,
-						["amount"] = -141,
-						["hp"] = 4201,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 22120,
-					}, -- [13]
-					{
-						["ts"] = 1585498784.006,
-						["amount"] = -190,
-						["hp"] = 4015,
-						["srcname"] = "Hunter Hill Scout",
-						["spellid"] = 15496,
-					}, -- [14]
-					{
-						["ts"] = 1585498784.417,
-						["amount"] = 97,
-						["spellid"] = 59913,
-						["srcname"] = "Cayla-Nordrassil",
-						["hp"] = 4110,
-						["absorb"] = 0,
-					}, -- [15]
-					["pos"] = 4,
+				["power"] = {
+					[16] = {
+						["spells"] = {
+							[30451] = 16,
+							[1449] = 1,
+						},
+						["amount"] = 17,
+					},
+					[0] = {
+						["spells"] = {
+							[59914] = 6221,
+						},
+						["amount"] = 6221,
+					},
 				},
 				["damage"] = 137648,
 				["damagespells"] = {
@@ -4362,7 +4181,120 @@ SkadaPerCharDB = {
 						["shielding"] = 1026,
 					},
 				},
-				["shielding"] = 1026,
+				["deathlog"] = {
+					{
+						["ts"] = 1585498787.713,
+						["amount"] = -135,
+						["spellid"] = 88163,
+						["hp"] = 4110,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 97,
+						["srcname"] = "Cayla-Nordrassil",
+						["spellid"] = 59913,
+						["hp"] = 4073,
+						["ts"] = 1585498793.011,
+					}, -- [2]
+					{
+						["ts"] = 1585498809.347,
+						["amount"] = 97,
+						["spellid"] = 59913,
+						["srcname"] = "Cayla-Nordrassil",
+						["hp"] = 4503,
+						["absorb"] = 0,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 97,
+						["spellid"] = 59913,
+						["srcname"] = "Cayla-Nordrassil",
+						["hp"] = 4358,
+						["ts"] = 1585498684.176,
+					}, -- [4]
+					{
+						["ts"] = 1585498702.375,
+						["amount"] = -187,
+						["srcname"] = "Hunter Hill Scout",
+						["hp"] = 4521,
+						["spellid"] = 22120,
+					}, -- [5]
+					{
+						["ts"] = 1585498702.539,
+						["amount"] = -146,
+						["srcname"] = "Hunter Hill Scout",
+						["hp"] = 4521,
+						["spellid"] = 88163,
+					}, -- [6]
+					{
+						["ts"] = 1585498704.485,
+						["amount"] = -173,
+						["spellid"] = 88163,
+						["hp"] = 4378,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [7]
+					{
+						["ts"] = 1585498729.516,
+						["amount"] = 97,
+						["srcname"] = "Cayla-Nordrassil",
+						["spellid"] = 59913,
+						["hp"] = 4423,
+						["absorb"] = 0,
+					}, -- [8]
+					{
+						["ts"] = 1585498748.285,
+						["amount"] = -136,
+						["srcname"] = "Hunter Hill Scout",
+						["hp"] = 4568,
+						["spellid"] = 88163,
+					}, -- [9]
+					{
+						["ts"] = 1585498760.512,
+						["amount"] = -181,
+						["spellid"] = 88163,
+						["hp"] = 4123,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 97,
+						["srcname"] = "Cayla-Nordrassil",
+						["spellid"] = 59913,
+						["hp"] = 4041,
+						["ts"] = 1585498761.868,
+					}, -- [11]
+					{
+						["ts"] = 1585498782.029,
+						["amount"] = -182,
+						["spellid"] = 88163,
+						["hp"] = 4517,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [12]
+					{
+						["ts"] = 1585498782.175,
+						["amount"] = -141,
+						["spellid"] = 22120,
+						["hp"] = 4201,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [13]
+					{
+						["ts"] = 1585498784.006,
+						["amount"] = -190,
+						["spellid"] = 15496,
+						["hp"] = 4015,
+						["srcname"] = "Hunter Hill Scout",
+					}, -- [14]
+					{
+						["ts"] = 1585498784.417,
+						["amount"] = 97,
+						["spellid"] = 59913,
+						["srcname"] = "Cayla-Nordrassil",
+						["hp"] = 4110,
+						["absorb"] = 0,
+					}, -- [15]
+					["pos"] = 4,
+				},
 				["id"] = "Player-1182-08523F0B",
 				["healing"] = 5258,
 				["ccbreaks"] = 0,
@@ -4593,30 +4525,98 @@ SkadaPerCharDB = {
 						["absorbed"] = 169,
 					},
 				},
-				["power"] = {
-					[16] = {
-						["spells"] = {
-							[30451] = 16,
-							[1449] = 1,
-						},
-						["amount"] = 17,
-					},
-					[0] = {
-						["spells"] = {
-							[59914] = 6221,
-						},
-						["amount"] = 6221,
-					},
-				},
+				["shielding"] = 1026,
 				["leeched"] = {
 				},
 				["name"] = "Cayla",
 				["alertCount"] = 0,
-				["alertDamage"] = 0,
+				["healingspells"] = {
+					["Swift Hand of Justice"] = {
+						["shielding"] = 0,
+						["id"] = 59913,
+						["healing"] = 4232,
+						["min"] = 0,
+						["name"] = "Swift Hand of Justice",
+						["hits"] = 51,
+						["overhealing"] = 804,
+						["max"] = 101,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Prismatic Barrier"] = {
+						["shielding"] = 1026,
+						["id"] = 235450,
+						["healing"] = 1026,
+						["min"] = 0,
+						["name"] = "Prismatic Barrier",
+						["hits"] = 9,
+						["overhealing"] = 0,
+						["max"] = 156,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["auras"] = {
+					["Blink"] = {
+						["name"] = "Blink",
+						["active"] = 0,
+						["school"] = 64,
+						["uptime"] = 1,
+						["auratype"] = "BUFF",
+						["id"] = 1953,
+					},
+					["Displacement Beacon"] = {
+						["name"] = "Displacement Beacon",
+						["active"] = 0,
+						["school"] = 64,
+						["uptime"] = 26,
+						["auratype"] = "BUFF",
+						["id"] = 212799,
+					},
+					["Clearcasting"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Clearcasting",
+						["auratype"] = "BUFF",
+						["id"] = 263725,
+					},
+					["Presence of Mind"] = {
+						["name"] = "Presence of Mind",
+						["active"] = 0,
+						["school"] = 64,
+						["uptime"] = 6,
+						["auratype"] = "BUFF",
+						["id"] = 205025,
+					},
+					["Evocation"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 64,
+						["name"] = "Evocation",
+						["auratype"] = "BUFF",
+						["id"] = 12051,
+					},
+					["Arcane Familiar"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 64,
+						["name"] = "Arcane Familiar",
+						["auratype"] = "BUFF",
+						["id"] = 210126,
+					},
+					["Prismatic Barrier"] = {
+						["name"] = "Prismatic Barrier",
+						["active"] = 0,
+						["school"] = 64,
+						["uptime"] = 21,
+						["auratype"] = "BUFF",
+						["id"] = 235450,
+					},
+				},
 			}, -- [2]
 		},
 		["deaths"] = 0,

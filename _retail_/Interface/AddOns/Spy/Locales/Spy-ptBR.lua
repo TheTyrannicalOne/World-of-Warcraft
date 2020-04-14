@@ -1,6 +1,6 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("Spy", "ptBR")
 if not L then return end
-
+-- TOC Note: Detecta e alerta você da presença de jogadores inimigos.
 
 -- Configuration
 L["Spy"] = "Spy"
@@ -62,8 +62,12 @@ L["The Salty Sailor Tavern"] = "Taberna do Lobo do Mar"
 L["Shattrath City"] = "Shattrath"
 L["Area 52"] = "Área 52"
 L["Dalaran"] = "Dalaran"
+L["Dalaran (Northrend)"] = "Dalaran (Nortúndria)"
 L["Bogpaddle"] = "Brejo do Goblin"
 L["The Vindicaar"] = "A Vindicaar"
+L["Krasus' Landing"] = "Plataforma de Krasus"
+L["The Violet Gate"] = "Portão Violeta"
+L["Magni's Encampment"] = "Acampamento de Magni"	
 
 -- Display
 L["DisplayOptions"] = "Exibição"

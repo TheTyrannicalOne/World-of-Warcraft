@@ -50,6 +50,12 @@ MJEPersonalSettings = {
 			["Class"] = true,
 		},
 		["notCollected"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
+		["onlyFavorites"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -58,13 +64,7 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["passenger"] = true,
 		},
-		["onlyFavorites"] = false,
 		["onlyUsable"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["family"] = {
@@ -143,10 +143,10 @@ MJEPersonalSettings = {
 				["Direhorns"] = true,
 			},
 			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Demons"] = {
 				["Felsabers"] = true,
@@ -183,9 +183,9 @@ MJEPersonalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
-				["Kodos"] = true,
 				["Basilisks"] = true,
 				["Mushan"] = true,
+				["Kodos"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},

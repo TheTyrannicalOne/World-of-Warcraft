@@ -62,8 +62,12 @@ L["The Salty Sailor Tavern"] = "Taberna del Grumete Frito"
 L["Shattrath City"] = "Ciudad de Shattrath"
 L["Area 52"] = "Area 52"
 L["Dalaran"] = "Dalaran"
+L["Dalaran (Northrend)"] = "Dalaran (Rasganorte)"
 L["Bogpaddle"] = "Chapaleos"
 L["The Vindicaar"] = "El Vindicaar"
+L["Krasus' Landing"] = "Alto de Krasus"
+L["The Violet Gate"] = "La Puerta Violeta"
+L["Magni's Encampment"] = "Campamento de Magni"	
 
 -- Display
 L["DisplayOptions"] = "Display"
@@ -272,7 +276,7 @@ L["HonorKills"] = "Honor Kills"
 L["PvPDeaths"] = "PvP Deaths"
 
 -- Output Messages
-L["VersionCheck"] = "|cffc41e3aWarnung! Die falsche Version von Spy ist installiert. Entfernen Sie diese Version und installieren Sie Spy Retail."
+L["VersionCheck"] = "|cffc41e3a¡Advertencia! La versión incorrecta de Spy está instalada. Elimine esta versión e instale Spy Retail."
 L["SpyEnabled"] = "|cff9933ffSpy-Addon aktiviert."
 L["SpyDisabled"] = "|cff9933ffSpy-Addon deaktiviert. Tippen Sie |cffffffff/spy show|cff9933ff um es zu aktivieren."
 L["UpgradeAvailable"] = "|cff9933ffEine neue Version von Spy ist verfügbar. Es kann von: \n| cffffffffhttps://www.curseforge.com/wow/addons/spy heruntergeladen werden."

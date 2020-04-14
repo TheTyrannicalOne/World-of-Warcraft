@@ -34,8 +34,8 @@ MJEPersonalSettings = {
 		},
 		["source"] = {
 			["Black Market"] = true,
-			["Promotion"] = true,
 			["PVP"] = true,
+			["Promotion"] = true,
 			["Reputation"] = true,
 			["Class"] = true,
 			["Vendor"] = true,
@@ -53,11 +53,7 @@ MJEPersonalSettings = {
 		["hidden"] = false,
 		["onlyFavorites"] = false,
 		["onlyTradable"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
+		["onlyUsable"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -119,10 +115,10 @@ MJEPersonalSettings = {
 				["Undead Steeds"] = true,
 			},
 			["Rays"] = {
-				["Stingrays"] = true,
-				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
 				["Nether Rays"] = true,
+				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Cats"] = {
 				["Sabers"] = true,
@@ -182,9 +178,9 @@ MJEPersonalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
-				["Mushan"] = true,
 				["Kodos"] = true,
 				["Basilisks"] = true,
+				["Mushan"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -230,7 +226,6 @@ MJEPersonalSettings = {
 			["Bats"] = true,
 		},
 		["collected"] = true,
-		["onlyUsable"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -238,6 +233,11 @@ MJEPersonalSettings = {
 			["passenger"] = true,
 			["ground"] = true,
 			["transform"] = true,
+		},
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
 		},
 	},
 	["personalHiddenMounts"] = false,

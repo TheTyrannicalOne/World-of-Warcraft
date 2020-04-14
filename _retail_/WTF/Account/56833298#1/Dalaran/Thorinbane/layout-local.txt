@@ -1,11 +1,4 @@
 Version: 1
-Frame: GuildBankItemTooltipMover
-FrameLevel: 2
-Anchor: TOP
-X: 0
-Y: 0
-W: 150
-H: 80
 Frame: OverrideActionButtonsMover
 FrameLevel: 1
 Anchor: BOTTOM
@@ -13,6 +6,13 @@ X: -133
 Y: 17
 W: 340
 H: 52
+Frame: GuildBankItemTooltipMover
+FrameLevel: 2
+Anchor: TOP
+X: 0
+Y: 0
+W: 150
+H: 80
 Frame: BagItemTooltipMover
 FrameLevel: 2
 Anchor: TOP
@@ -149,7 +149,7 @@ H: 300
 Frame: ScriptErrorsFrame
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
-X: -2
-Y: 259
+X: 0
+Y: 221
 W: 500
 H: 300

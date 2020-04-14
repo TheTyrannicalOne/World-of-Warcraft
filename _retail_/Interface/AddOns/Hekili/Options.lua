@@ -3823,7 +3823,6 @@ do
                     end
                     desc = desc or ability
 
-                    print( type(desc), type(useName), type(section) )
                     return "Remove " .. desc .. " from " .. ( useName or section ) .. " toggle."
                 end
                 e.image = RedX
@@ -4539,6 +4538,10 @@ do
             self:LoadScripts()
         else
             self:LoadScript( pack, packControl.listName, actionID )
+        end
+
+        if option == "enabled" then
+            Hekili:UpdateDisplayVisibility()
         end
     end
 
@@ -9383,7 +9386,7 @@ do
             end
         end
 
-        if WeakAuras then WeakAuras.ScanEvents( "HEKILI_TOGGLE", name, toggle.value ) end
+        if WeakAuras and WeakAuras.ScanEvents then WeakAuras.ScanEvents( "HEKILI_TOGGLE", name, toggle.value ) end
         if ns.UI.Minimap then ns.UI.Minimap:RefreshDataText() end
         self:UpdateDisplayVisibility()
 
