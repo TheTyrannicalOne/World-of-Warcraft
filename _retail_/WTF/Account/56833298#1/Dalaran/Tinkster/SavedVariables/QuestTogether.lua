@@ -19,7 +19,7 @@ QuestTogether = {
 		[26860] = {
 			["title"] = "Thelsamar Blood Sausages",
 			["objectives"] = {
-				"0/8 Bear Rump", -- [1]
+				"0/8  ", -- [1]
 			},
 		},
 		[44989] = {
@@ -31,9 +31,9 @@ QuestTogether = {
 		[27355] = {
 			["title"] = "A Boon for the Powerful",
 			["objectives"] = {
-				"0/1 Tenebrous Orb", -- [1]
-				"0/1 Book of Lost Souls", -- [2]
-				"0/5 Ghostly Essence", -- [3]
+				"0/1  ", -- [1]
+				"0/1  ", -- [2]
+				"0/5  ", -- [3]
 			},
 		},
 		[54185] = {
@@ -57,7 +57,7 @@ QuestTogether = {
 		[26842] = {
 			["title"] = "Out of Gnoll-where",
 			["objectives"] = {
-				"0/12 Mosshide Ear", -- [1]
+				"0/12  ", -- [1]
 			},
 		},
 	},

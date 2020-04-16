@@ -52,6 +52,17 @@ function M:Threat_UpdateConfig()
 end
 
 --Viewports
+function M:SetAllPoints(...)
+	M:SetViewport()
+end
+
+--[[function M:ClearAllPoints(force)
+	print("ClearAllPoints", force)
+	if force then
+		WorldFrame:ORClear()
+	end
+end]]
+
 function M:SetViewport()
 	if SLE._Compatibility["SunnArt"] then return end --Other viewport addon is enabled
 	local scale = E.global.general.UIScale
@@ -136,6 +147,23 @@ function M:Initialize()
 	M:Threat_UpdatePosition()
 
 	--Viewport
+	function CinematicFrame_CancelCinematic()
+		if ( CinematicFrame.isRealCinematic ) then
+			StopCinematic();
+		elseif ( CanCancelScene() ) then
+			CancelScene();
+		else
+			VehicleExit();
+		end
+		
+	end
+	
+	--Some high level bullshit
+	-- WorldFrame.ORClear = WorldFrame.ClearAllPoints
+	-- WorldFrame.ClearAllPoints = M.ClearAllPoints
+	WorldFrame.ORSetAll = WorldFrame.SetAllPoints
+	WorldFrame.SetAllPoints = M.SetAllPoints
+
 	M:SetViewport()
 	hooksecurefunc(E, "PixelScaleChanged", M.SetViewport)
 

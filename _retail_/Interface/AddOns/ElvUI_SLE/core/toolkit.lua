@@ -19,6 +19,7 @@ T.difftime = difftime
 T.GetTime = GetTime
 --Unit infos
 T.UnitLevel = UnitLevel
+T.UnitEffectiveLevel = UnitEffectiveLevel
 T.UnitClass = UnitClass
 T.UnitRace = UnitRace
 T.UnitName = UnitName
@@ -138,6 +139,7 @@ T.sort = table.sort
 T.tconcat = table.concat
 T.next = next
 T.wipe = wipe
+T.tContains = tContains
 --Camera
 T.FlipCameraYaw = FlipCameraYaw
 --Instance
@@ -256,9 +258,9 @@ T.rgsub = function(pattern,...)
 		if T.match(pattern,z) then
 			s = T.select(i+x,...)
 			pattern = T.gsub(pattern,z,s)
-		end 
-	end 
-	return pattern 
+		end
+	end
+	return pattern
 end
 
 T.SafeHookScript = function (frame, handlername, newscript)
@@ -270,8 +272,8 @@ end
 --Search in a table like {"arg1", "arg2", "arg3"}
 function SLE:SimpleTable(table, item)
 	for i = 1, #table do
-		if table[i] == item then  
-			return true 
+		if table[i] == item then
+			return true
 		end
 	end
 
@@ -342,8 +344,21 @@ function SLE:MismatchText()
 	return text
 end
 
---For when we dramatically change some options
-function SLE:FixDatabase()
+--To get stuff from item link. Got this from suspctz
+function SLE:GetItemSplit(itemLink)
+	local itemString = T.match(itemLink, "item:([%-?%d:]+)")
+	local itemSplit = {}
+
+	-- Split data into a table
+	for _, v in T.ipairs({T.split(":", itemString)}) do
+	if v == "" then
+		itemSplit[#itemSplit + 1] = 0
+	else
+		itemSplit[#itemSplit + 1] = T.tonumber(v)
+	end
+	end
+
+	return itemSplit
 end
 
 --Reseting shit
@@ -640,7 +655,7 @@ local function LevelUpBG(frame, topcolor, bottomcolor)
 		["red"] = {1, 0, 0},
 		["green"] = {0, 1, 0},
 		["blue"] = {0.15, 0.3, 1},
-		
+
 	}
 	if topcolor then
 		if T.type(topcolor) == "table" then

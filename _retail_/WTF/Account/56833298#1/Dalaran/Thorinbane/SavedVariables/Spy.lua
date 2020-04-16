@@ -1,10 +1,5 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
-	["KOSData"] = {
-	},
 	["PlayerData"] = {
 		["Annarine-Ysera"] = {
 			["mapID"] = 23,
@@ -436,5 +431,10 @@ SpyPerCharDB = {
 			["time"] = 1585523672,
 			["name"] = "Harveydent",
 		},
+	},
+	["IgnoreData"] = {
+	},
+	["version"] = "1.1",
+	["KOSData"] = {
 	},
 }

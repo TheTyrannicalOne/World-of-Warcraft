@@ -1,15 +1,15 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/sleep", -- [1]
-		"/sit", -- [2]
-		"/whistle", -- [3]
-		"/skada toggle", -- [4]
-		"/dance", -- [5]
-		"/azeritetooltip", -- [6]
-		"/opie", -- [7]
-		"/kb", -- [8]
-		"/s hola", -- [9]
+		"/opie", -- [1]
+		"/s hola", -- [2]
+		"/sit", -- [3]
+		"/whistle", -- [4]
+		"/kb", -- [5]
+		"/skada toggle", -- [6]
+		"/dance", -- [7]
+		"/azeritetooltip", -- [8]
+		"/sleep", -- [9]
 	},
 	["ChatHistoryLog"] = {
 		{

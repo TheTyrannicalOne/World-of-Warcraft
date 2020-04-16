@@ -25,9 +25,9 @@ OneRing_Config = {
 				["Utility2"] = "ALT-E",
 				["Tools3"] = "ALT-E",
 				["Utility1"] = "ALT-E",
-				["Mounts2"] = "ALT-Q",
-				["Tools1"] = "ALT-E",
 				["Tools"] = "ALT-E",
+				["Tools1"] = "ALT-E",
+				["Mounts2"] = "ALT-Q",
 				["OPieAutoQuest"] = false,
 				["Mounts14"] = "ALT-Q",
 				["Tools2"] = "ALT-E",
@@ -274,10 +274,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 			},
 			["Utility1"] = {
 				{

@@ -7,13 +7,13 @@ PasteDB = {
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
@@ -26,7 +26,7 @@ PasteDB = {
 		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -48,7 +48,7 @@ PasteDB = {
 		["Shanyt - Argent Dawn"] = {
 			["loaded"] = true,
 		},
-		["Sinh - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 			["loaded"] = true,
 		},
 		["Shaewong - Dalaran"] = {
@@ -60,13 +60,13 @@ PasteDB = {
 		["Gillbourn - Runetotem"] = {
 			["loaded"] = true,
 		},
-		["Tinkster - Dalaran"] = {
+		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Dialdaas - Darkspear"] = {
 			["loaded"] = true,
 		},
-		["Gangus - Runetotem"] = {
+		["Sinh - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Thorinbane - Dalaran"] = {
@@ -105,7 +105,7 @@ PasteDB = {
 		["Migimong - Runetotem"] = {
 			["loaded"] = true,
 		},
-		["Shanyt - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Narisaric - Dalaran"] = {

@@ -1,10 +1,37 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[49860] = {
-			["title"] = "Adventure Calls",
+		[11940] = {
+			["title"] = "Drake Hunt",
 			["objectives"] = {
-				"0/1 Select your next assignment", -- [1]
+				"0/1 Captured Nexus Drake", -- [1]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
+			["objectives"] = {
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[12728] = {
+			["title"] = "Monitoring the Rift: Winterfin Cavern",
+			["objectives"] = {
+				"0/1 Winterfin Cavern Reading Taken", -- [1]
 			},
 		},
 		[25186] = {
@@ -19,6 +46,12 @@ QuestTogether = {
 				"0/1 Silverlaine's Enchanted Crystal", -- [1]
 				"0/5 Moontouched Wood", -- [2]
 				"0/5 Ghostly Essence", -- [3]
+			},
+		},
+		[12794] = {
+			["title"] = "The Magical Kingdom of Dalaran",
+			["objectives"] = {
+				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
 			},
 		},
 		[25768] = {
@@ -37,14 +70,9 @@ QuestTogether = {
 				"Survey Complete", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[11932] = {
+			["title"] = "Cowards and Fools",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[54185] = {
@@ -61,14 +89,13 @@ QuestTogether = {
 				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[29608] = {
+			["title"] = "Allies in Dalaran",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[26838] = {
-			["title"] = "Rebels Without a Clue",
+		[11707] = {
+			["title"] = "Distress Call",
 			["objectives"] = {
 			},
 		},

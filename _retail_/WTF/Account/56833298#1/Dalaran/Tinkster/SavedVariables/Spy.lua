@@ -1,5 +1,9 @@
 
 SpyPerCharDB = {
+	["KOSData"] = {
+	},
+	["IgnoreData"] = {
+	},
 	["PlayerData"] = {
 		["Krann-Aggramar"] = {
 			["mapID"] = 87,
@@ -111,9 +115,5 @@ SpyPerCharDB = {
 			["race"] = "Zandalari Troll",
 		},
 	},
-	["IgnoreData"] = {
-	},
 	["version"] = "1.1",
-	["KOSData"] = {
-	},
 }

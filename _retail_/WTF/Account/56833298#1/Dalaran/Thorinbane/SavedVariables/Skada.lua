@@ -4721,18 +4721,67 @@ SkadaPerCharDB = {
 		["damage"] = 479138,
 		["players"] = {
 			{
-				["ffdamagedone"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["dispells"] = 21,
 				["healingabsorbed"] = 0,
-				["role"] = "TANK",
+				["healingspells"] = {
+					["Last Stand"] = {
+						["shielding"] = 0,
+						["id"] = 12975,
+						["healing"] = 28320,
+						["min"] = 2092,
+						["name"] = "Last Stand",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 2221,
+						["overhealing"] = 99,
+						["hits"] = 13,
+					},
+					["Swift Hand of Justice"] = {
+						["shielding"] = 0,
+						["id"] = 59913,
+						["healing"] = 14314,
+						["min"] = 0,
+						["name"] = "Swift Hand of Justice",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 191,
+						["overhealing"] = 7121,
+						["hits"] = 146,
+					},
+					["Victory Rush"] = {
+						["shielding"] = 0,
+						["id"] = 118779,
+						["healing"] = 8693,
+						["min"] = 0,
+						["name"] = "Victory Rush",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 1428,
+						["overhealing"] = 13090,
+						["hits"] = 15,
+					},
+					["Ignore Pain"] = {
+						["shielding"] = 6253,
+						["id"] = 190456,
+						["healing"] = 6253,
+						["min"] = 0,
+						["name"] = "Ignore Pain",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 304,
+						["overhealing"] = 28836.54602050781,
+						["hits"] = 178,
+					},
+				},
 				["class"] = "WARRIOR",
 				["damaged"] = {
 				},
 				["alertDamage"] = 0,
 				["overhealing"] = 49146.54602050781,
-				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 				["time"] = 1350,
 				["interrupts"] = 0,
 				["name"] = "Thorinbane",
@@ -4745,18 +4794,7 @@ SkadaPerCharDB = {
 						["shielding"] = 6253,
 					},
 				},
-				["power"] = {
-					{
-						["amount"] = 4680.900000214577,
-						["spells"] = {
-							[23922] = 2365.300000190735,
-							[107574] = 300,
-							[198304] = 195,
-							[195707] = 1182.5,
-							[6343] = 638.1000000238419,
-						},
-					}, -- [1]
-				},
+				["shielding"] = 6253,
 				["damage"] = 246757,
 				["damagespells"] = {
 					["Shield Slam"] = {
@@ -5048,119 +5086,17 @@ SkadaPerCharDB = {
 				},
 				["maxhp"] = 6578,
 				["damagetaken"] = 40419,
-				["deathlog"] = {
+				["power"] = {
 					{
-						["ts"] = 1586020751.422,
-						["amount"] = 2221,
-						["absorb"] = 0,
-						["spellid"] = 12975,
-						["srcname"] = "Thorinbane",
-						["hp"] = 7196,
+						["amount"] = 4680.900000214577,
+						["spells"] = {
+							[23922] = 2365.300000190735,
+							[107574] = 300,
+							[198304] = 195,
+							[195707] = 1182.5,
+							[6343] = 638.1000000238419,
+						},
 					}, -- [1]
-					{
-						["ts"] = 1586020751.422,
-						["amount"] = -40,
-						["absorb"] = -39,
-						["hp"] = 7193,
-						["spellid"] = 15284,
-						["srcname"] = "Crusader Lord Valdelmar",
-					}, -- [2]
-					{
-						["ts"] = 1586020757.515,
-						["amount"] = -31,
-						["absorb"] = -30,
-						["hp"] = 7162,
-						["spellid"] = 15284,
-						["srcname"] = "Crusader Lord Valdelmar",
-					}, -- [3]
-					{
-						["ts"] = 1586020773.848,
-						["amount"] = -102,
-						["spellid"] = 15284,
-						["hp"] = 5407,
-						["srcname"] = "Crusader Lord Valdelmar",
-					}, -- [4]
-					{
-						["ts"] = 1586020798.499,
-						["amount"] = -79,
-						["srcname"] = "Scarlet Archmage",
-						["hp"] = 5698,
-						["spellid"] = 88163,
-					}, -- [5]
-					{
-						["ts"] = 1586020804.716,
-						["amount"] = -617,
-						["srcname"] = "Scarlet Archmage",
-						["hp"] = 5002,
-						["spellid"] = 15242,
-					}, -- [6]
-					{
-						["ts"] = 1586020806.459,
-						["amount"] = -78,
-						["srcname"] = "Scarlet Archmage",
-						["hp"] = 5002,
-						["spellid"] = 88163,
-					}, -- [7]
-					{
-						["ts"] = 1586020808.461,
-						["amount"] = -99,
-						["spellid"] = 88163,
-						["hp"] = 4924,
-						["srcname"] = "Scarlet Archmage",
-					}, -- [8]
-					{
-						["ts"] = 1586020693.901,
-						["amount"] = 149,
-						["absorb"] = 0,
-						["hp"] = 5411,
-						["srcname"] = "Thorinbane",
-						["spellid"] = 59913,
-					}, -- [9]
-					{
-						["ts"] = 1586020696.133,
-						["amount"] = -216,
-						["absorb"] = -215,
-						["hp"] = 5195,
-						["srcname"] = "Scarlet Curate",
-						["spellid"] = 25054,
-					}, -- [10]
-					{
-						["ts"] = 1586020700.778,
-						["amount"] = -59,
-						["srcname"] = "Scarlet Archmage",
-						["hp"] = 5268,
-						["spellid"] = 88163,
-					}, -- [11]
-					{
-						["ts"] = 1586020703.872,
-						["amount"] = -586,
-						["srcname"] = "Scarlet Archmage",
-						["hp"] = 4623,
-						["spellid"] = 15242,
-					}, -- [12]
-					{
-						["ts"] = 1586020704.598,
-						["amount"] = -248,
-						["spellid"] = 15244,
-						["hp"] = 4375,
-						["srcname"] = "Scarlet Archmage",
-					}, -- [13]
-					{
-						["ts"] = 1586020712.793,
-						["amount"] = -53,
-						["absorb"] = -52,
-						["hp"] = 4449,
-						["srcname"] = "Scarlet Archmage",
-						["spellid"] = 88163,
-					}, -- [14]
-					{
-						["ts"] = 1586020720.342,
-						["amount"] = -113,
-						["spellid"] = 88163,
-						["hp"] = 4542,
-						["srcname"] = "Scarlet Praetorian",
-					}, -- [15]
-					["pos"] = 9,
 				},
 				["id"] = "Player-3683-0B9BAB24",
 				["healing"] = 57580,
@@ -5689,80 +5625,157 @@ SkadaPerCharDB = {
 						["damage"] = 29231,
 					},
 				},
-				["shielding"] = 6253,
+				["deathlog"] = {
+					{
+						["ts"] = 1586020751.422,
+						["amount"] = 2221,
+						["absorb"] = 0,
+						["spellid"] = 12975,
+						["srcname"] = "Thorinbane",
+						["hp"] = 7196,
+					}, -- [1]
+					{
+						["ts"] = 1586020751.422,
+						["amount"] = -40,
+						["absorb"] = -39,
+						["hp"] = 7193,
+						["spellid"] = 15284,
+						["srcname"] = "Crusader Lord Valdelmar",
+					}, -- [2]
+					{
+						["ts"] = 1586020757.515,
+						["amount"] = -31,
+						["absorb"] = -30,
+						["hp"] = 7162,
+						["spellid"] = 15284,
+						["srcname"] = "Crusader Lord Valdelmar",
+					}, -- [3]
+					{
+						["ts"] = 1586020773.848,
+						["amount"] = -102,
+						["srcname"] = "Crusader Lord Valdelmar",
+						["spellid"] = 15284,
+						["hp"] = 5407,
+					}, -- [4]
+					{
+						["ts"] = 1586020798.499,
+						["amount"] = -79,
+						["spellid"] = 88163,
+						["srcname"] = "Scarlet Archmage",
+						["hp"] = 5698,
+					}, -- [5]
+					{
+						["ts"] = 1586020804.716,
+						["amount"] = -617,
+						["spellid"] = 15242,
+						["srcname"] = "Scarlet Archmage",
+						["hp"] = 5002,
+					}, -- [6]
+					{
+						["ts"] = 1586020806.459,
+						["amount"] = -78,
+						["spellid"] = 88163,
+						["srcname"] = "Scarlet Archmage",
+						["hp"] = 5002,
+					}, -- [7]
+					{
+						["ts"] = 1586020808.461,
+						["amount"] = -99,
+						["srcname"] = "Scarlet Archmage",
+						["spellid"] = 88163,
+						["hp"] = 4924,
+					}, -- [8]
+					{
+						["ts"] = 1586020693.901,
+						["amount"] = 149,
+						["absorb"] = 0,
+						["hp"] = 5411,
+						["srcname"] = "Thorinbane",
+						["spellid"] = 59913,
+					}, -- [9]
+					{
+						["ts"] = 1586020696.133,
+						["amount"] = -216,
+						["absorb"] = -215,
+						["hp"] = 5195,
+						["srcname"] = "Scarlet Curate",
+						["spellid"] = 25054,
+					}, -- [10]
+					{
+						["ts"] = 1586020700.778,
+						["amount"] = -59,
+						["spellid"] = 88163,
+						["srcname"] = "Scarlet Archmage",
+						["hp"] = 5268,
+					}, -- [11]
+					{
+						["ts"] = 1586020703.872,
+						["amount"] = -586,
+						["spellid"] = 15242,
+						["srcname"] = "Scarlet Archmage",
+						["hp"] = 4623,
+					}, -- [12]
+					{
+						["ts"] = 1586020704.598,
+						["amount"] = -248,
+						["srcname"] = "Scarlet Archmage",
+						["spellid"] = 15244,
+						["hp"] = 4375,
+					}, -- [13]
+					{
+						["ts"] = 1586020712.793,
+						["amount"] = -53,
+						["absorb"] = -52,
+						["hp"] = 4449,
+						["srcname"] = "Scarlet Archmage",
+						["spellid"] = 88163,
+					}, -- [14]
+					{
+						["ts"] = 1586020720.342,
+						["amount"] = -113,
+						["srcname"] = "Scarlet Praetorian",
+						["spellid"] = 88163,
+						["hp"] = 4542,
+					}, -- [15]
+					["pos"] = 9,
+				},
 				["leeched"] = {
 				},
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["healingspells"] = {
-					["Last Stand"] = {
-						["shielding"] = 0,
-						["id"] = 12975,
-						["healing"] = 28320,
-						["min"] = 2092,
-						["name"] = "Last Stand",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 2221,
-						["overhealing"] = 99,
-						["hits"] = 13,
-					},
-					["Swift Hand of Justice"] = {
-						["shielding"] = 0,
-						["id"] = 59913,
-						["healing"] = 14314,
-						["min"] = 0,
-						["name"] = "Swift Hand of Justice",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 191,
-						["overhealing"] = 7121,
-						["hits"] = 146,
-					},
-					["Victory Rush"] = {
-						["shielding"] = 0,
-						["id"] = 118779,
-						["healing"] = 8693,
-						["min"] = 0,
-						["name"] = "Victory Rush",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 1428,
-						["overhealing"] = 13090,
-						["hits"] = 15,
-					},
-					["Ignore Pain"] = {
-						["shielding"] = 6253,
-						["id"] = 190456,
-						["healing"] = 6253,
-						["min"] = 0,
-						["name"] = "Ignore Pain",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 304,
-						["overhealing"] = 28836.54602050781,
-						["hits"] = 178,
-					},
-				},
+				["role"] = "TANK",
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
 				["leech"] = 0,
 			}, -- [1]
 			{
-				["ffdamagedone"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["dispells"] = 0,
 				["healingabsorbed"] = 0,
-				["role"] = "DAMAGER",
+				["healingspells"] = {
+					["Swift Hand of Justice"] = {
+						["shielding"] = 0,
+						["id"] = 59913,
+						["healing"] = 5682,
+						["min"] = 0,
+						["name"] = "Swift Hand of Justice",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 99,
+						["overhealing"] = 12518,
+						["hits"] = 192,
+					},
+				},
 				["class"] = "HUNTER",
 				["damaged"] = {
 				},
 				["alertDamage"] = 0,
 				["overhealing"] = 12518,
-				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 				["time"] = 1003,
 				["interrupts"] = 0,
 				["name"] = "Doreya",
@@ -5775,14 +5788,7 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[2] = {
-						["amount"] = 1972,
-						["spells"] = {
-							[259489] = 1972,
-						},
-					},
-				},
+				["shielding"] = 0,
 				["damage"] = 225409,
 				["damagespells"] = {
 					["Wildfire Bomb"] = {
@@ -5943,125 +5949,13 @@ SkadaPerCharDB = {
 				},
 				["maxhp"] = 4327,
 				["damagetaken"] = 5467,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 98,
-						["ts"] = 1586020804.716,
-						["hp"] = 4814,
-						["srcname"] = "Doreya-Nordrassil",
-						["spellid"] = 59913,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 52,
-						["ts"] = 1586020804.716,
-						["hp"] = 4866,
-						["srcname"] = "Doreya-Nordrassil",
-						["spellid"] = 59913,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1586020810.683,
-						["hp"] = 4866,
-						["spellid"] = 59913,
-						["srcname"] = "Doreya-Nordrassil",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1586020810.683,
-						["hp"] = 4866,
-						["spellid"] = 59913,
-						["srcname"] = "Doreya-Nordrassil",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 41,
-						["ts"] = 1586020724.391,
-						["hp"] = 4866,
-						["spellid"] = 59913,
-						["srcname"] = "Doreya-Nordrassil",
-					}, -- [5]
-					{
-						["ts"] = 1586020724.391,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 4866,
-						["srcname"] = "Doreya-Nordrassil",
-						["spellid"] = 59913,
-					}, -- [6]
-					{
-						["ts"] = 1586020741.48,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 4866,
-						["srcname"] = "Doreya-Nordrassil",
-						["spellid"] = 59913,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1586020741.48,
-						["hp"] = 4866,
-						["spellid"] = 59913,
-						["srcname"] = "Doreya-Nordrassil",
-					}, -- [8]
-					{
-						["ts"] = 1586020757.515,
-						["amount"] = -171,
-						["srcname"] = "Crusader Lord Valdelmar",
-						["hp"] = 4695,
-						["spellid"] = 15284,
-					}, -- [9]
-					{
-						["ts"] = 1586020773.848,
-						["amount"] = -169,
-						["srcname"] = "Crusader Lord Valdelmar",
-						["hp"] = 4526,
-						["spellid"] = 15284,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 98,
-						["ts"] = 1586020775.802,
-						["hp"] = 4624,
-						["spellid"] = 59913,
-						["srcname"] = "Doreya-Nordrassil",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 98,
-						["ts"] = 1586020775.802,
-						["hp"] = 4722,
-						["spellid"] = 59913,
-						["srcname"] = "Doreya-Nordrassil",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1586020789.437,
-						["hp"] = 4866,
-						["spellid"] = 59913,
-						["srcname"] = "Doreya-Nordrassil",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1586020789.437,
-						["hp"] = 4866,
-						["spellid"] = 59913,
-						["srcname"] = "Doreya-Nordrassil",
-					}, -- [14]
-					{
-						["ts"] = 1586020799.715,
-						["amount"] = -150,
-						["srcname"] = "Scarlet Praetorian",
-						["hp"] = 4866,
-						["spellid"] = 88163,
-					}, -- [15]
-					["pos"] = 5,
+				["power"] = {
+					[2] = {
+						["amount"] = 1972,
+						["spells"] = {
+							[259489] = 1972,
+						},
+					},
 				},
 				["id"] = "Player-1182-08523EC2",
 				["healing"] = 5682,
@@ -6299,26 +6193,132 @@ SkadaPerCharDB = {
 						["damage"] = 182,
 					},
 				},
-				["shielding"] = 0,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 98,
+						["ts"] = 1586020804.716,
+						["hp"] = 4814,
+						["srcname"] = "Doreya-Nordrassil",
+						["spellid"] = 59913,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 52,
+						["ts"] = 1586020804.716,
+						["hp"] = 4866,
+						["srcname"] = "Doreya-Nordrassil",
+						["spellid"] = 59913,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1586020810.683,
+						["hp"] = 4866,
+						["spellid"] = 59913,
+						["srcname"] = "Doreya-Nordrassil",
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1586020810.683,
+						["hp"] = 4866,
+						["spellid"] = 59913,
+						["srcname"] = "Doreya-Nordrassil",
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 41,
+						["ts"] = 1586020724.391,
+						["hp"] = 4866,
+						["spellid"] = 59913,
+						["srcname"] = "Doreya-Nordrassil",
+					}, -- [5]
+					{
+						["ts"] = 1586020724.391,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 4866,
+						["srcname"] = "Doreya-Nordrassil",
+						["spellid"] = 59913,
+					}, -- [6]
+					{
+						["ts"] = 1586020741.48,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 4866,
+						["srcname"] = "Doreya-Nordrassil",
+						["spellid"] = 59913,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1586020741.48,
+						["hp"] = 4866,
+						["spellid"] = 59913,
+						["srcname"] = "Doreya-Nordrassil",
+					}, -- [8]
+					{
+						["ts"] = 1586020757.515,
+						["amount"] = -171,
+						["spellid"] = 15284,
+						["srcname"] = "Crusader Lord Valdelmar",
+						["hp"] = 4695,
+					}, -- [9]
+					{
+						["ts"] = 1586020773.848,
+						["amount"] = -169,
+						["spellid"] = 15284,
+						["srcname"] = "Crusader Lord Valdelmar",
+						["hp"] = 4526,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 98,
+						["ts"] = 1586020775.802,
+						["hp"] = 4624,
+						["spellid"] = 59913,
+						["srcname"] = "Doreya-Nordrassil",
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 98,
+						["ts"] = 1586020775.802,
+						["hp"] = 4722,
+						["spellid"] = 59913,
+						["srcname"] = "Doreya-Nordrassil",
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1586020789.437,
+						["hp"] = 4866,
+						["spellid"] = 59913,
+						["srcname"] = "Doreya-Nordrassil",
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1586020789.437,
+						["hp"] = 4866,
+						["spellid"] = 59913,
+						["srcname"] = "Doreya-Nordrassil",
+					}, -- [14]
+					{
+						["ts"] = 1586020799.715,
+						["amount"] = -150,
+						["spellid"] = 88163,
+						["srcname"] = "Scarlet Praetorian",
+						["hp"] = 4866,
+					}, -- [15]
+					["pos"] = 5,
+				},
 				["leeched"] = {
 				},
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["healingspells"] = {
-					["Swift Hand of Justice"] = {
-						["shielding"] = 0,
-						["id"] = 59913,
-						["healing"] = 5682,
-						["min"] = 0,
-						["name"] = "Swift Hand of Justice",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 99,
-						["overhealing"] = 12518,
-						["hits"] = 192,
-					},
-				},
+				["role"] = "DAMAGER",
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
@@ -6472,18 +6472,6 @@ SkadaPerCharDB = {
 				["shielding"] = 0,
 				["damage"] = 3067,
 				["damagespells"] = {
-					["Retribution Aura"] = {
-						["hitmin"] = 4,
-						["id"] = 79976,
-						["min"] = 4,
-						["hitamount"] = 4,
-						["hitmax"] = 4,
-						["hit"] = 1,
-						["school"] = 2,
-						["max"] = 4,
-						["totalhits"] = 1,
-						["damage"] = 4,
-					},
 					["Divine Storm"] = {
 						["hitmin"] = 149,
 						["criticalamount"] = 323,
@@ -6511,6 +6499,18 @@ SkadaPerCharDB = {
 						["max"] = 150,
 						["totalhits"] = 2,
 						["damage"] = 299,
+					},
+					["Retribution Aura"] = {
+						["hitmin"] = 4,
+						["id"] = 79976,
+						["min"] = 4,
+						["hitamount"] = 4,
+						["hitmax"] = 4,
+						["hit"] = 1,
+						["school"] = 2,
+						["max"] = 4,
+						["totalhits"] = 1,
+						["damage"] = 4,
 					},
 					["Attack"] = {
 						["hitmin"] = 78,

@@ -4,23 +4,23 @@ CliqueDB3 = {
 	["char"] = {
 		["Darnastris - Dalaran"] = {
 			["spec1_profileKey"] = "Darnastris - Dalaran",
-			["spec3_profileKey"] = "Darnastris - Dalaran",
+			["spec2_profileKey"] = "Darnastris - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec3_profileKey"] = "Darnastris - Dalaran",
 			["specswap"] = false,
-			["spec2_profileKey"] = "Darnastris - Dalaran",
 		},
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
+			["alerthidden"] = true,
+			["downclick"] = false,
+			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 			["fastooc"] = false,
+			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["specswap"] = false,
 			["blacklist"] = {
 				["PetFrame"] = true,
 			},
-			["specswap"] = false,
-			["downclick"] = false,
-			["alerthidden"] = true,
-			["spec3_profileKey"] = "Shanyt - Argent Dawn",
-			["spec2_profileKey"] = "Shanyt - Argent Dawn",
 		},
 		["Tynkster - Dalaran"] = {
 			["spec1_profileKey"] = "Tynkster - Dalaran",
@@ -33,27 +33,27 @@ CliqueDB3 = {
 		},
 		["Ruffinton - Dalaran"] = {
 			["spec1_profileKey"] = "Ruffinton - Dalaran",
-			["specswap"] = false,
+			["spec2_profileKey"] = "Ruffinton - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
+			["specswap"] = false,
 			["spec3_profileKey"] = "Ruffinton - Dalaran",
-			["spec2_profileKey"] = "Ruffinton - Dalaran",
 		},
 		["Thorinbane - Dalaran"] = {
 			["spec1_profileKey"] = "Thorinbane - Dalaran",
-			["specswap"] = false,
+			["spec2_profileKey"] = "Thorinbane - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Thorinbane - Dalaran",
 			["spec3_profileKey"] = "Thorinbane - Dalaran",
+			["specswap"] = false,
 		},
 		["Tinkster - Dalaran"] = {
 			["spec1_profileKey"] = "Tinkster - Dalaran",
-			["specswap"] = false,
-			["downclick"] = false,
 			["fastooc"] = false,
 			["spec3_profileKey"] = "Tinkster - Dalaran",
+			["downclick"] = false,
 			["spec2_profileKey"] = "Tinkster - Dalaran",
+			["specswap"] = false,
 		},
 	},
 	["profileKeys"] = {
@@ -67,8 +67,8 @@ CliqueDB3 = {
 		["Goramor - Runetotem"] = "Goramor - Runetotem",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
@@ -81,7 +81,7 @@ CliqueDB3 = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
 		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
@@ -275,7 +275,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Shathiel - Darkspear"] = {
+		["Sinh - Dalaran"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -294,7 +294,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Sinh - Dalaran"] = {
+		["Gangus - Runetotem"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -541,7 +541,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Gangus - Runetotem"] = {
+		["Shathiel - Darkspear"] = {
 			["bindings"] = {
 				{
 					["sets"] = {

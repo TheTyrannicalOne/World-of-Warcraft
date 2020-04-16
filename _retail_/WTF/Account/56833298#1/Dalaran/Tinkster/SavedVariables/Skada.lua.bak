@@ -17,37 +17,37 @@ SkadaPerCharDB = {
 		["damage"] = 18335,
 		["players"] = {
 			{
-				["class"] = "WARLOCK",
 				["healingabsorbed"] = 0,
+				["class"] = "WARLOCK",
 				["alertDamage"] = 0,
 				["leech"] = 0,
-				["ffdamagedone"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["time"] = 174,
-				["role"] = "DAMAGER",
+				["healingspells"] = {
+					["Drain Life"] = {
+						["shielding"] = 0,
+						["id"] = 234153,
+						["healing"] = 110,
+						["min"] = 0,
+						["name"] = "Drain Life",
+						["hits"] = 7,
+						["overhealing"] = 817,
+						["max"] = 110,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
 				["overhealing"] = 817,
 				["interrupts"] = 0,
 				["ffdamagedonetargets"] = {
 				},
 				["damagetaken"] = 308,
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[59914] = 330,
-						},
-						["amount"] = 330,
-					},
-					[7] = {
-						["spells"] = {
-							[17941] = 1,
-						},
-						["amount"] = 1,
-					},
-				},
+				["shielding"] = 0,
 				["damage"] = 12021,
 				["damagespells"] = {
 					["Corruption"] = {
@@ -233,113 +233,19 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["deathlog"] = {
-					{
-						["ts"] = 1586622892.703,
-						["amount"] = -53,
-						["srcname"] = "Snow Leopard",
-						["hp"] = 1200,
-						["spellid"] = 88163,
-					}, -- [1]
-					{
-						["ts"] = 1586622894.718,
-						["amount"] = -57,
-						["srcname"] = "Snow Leopard",
-						["hp"] = 1147,
-						["spellid"] = 88163,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 110,
-						["spellid"] = 234153,
-						["srcname"] = "Tinkster",
-						["hp"] = 1200,
-						["ts"] = 1586622906.074,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 234153,
-						["srcname"] = "Tinkster",
-						["hp"] = 1200,
-						["ts"] = 1586622906.949,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 234153,
-						["srcname"] = "Tinkster",
-						["hp"] = 1200,
-						["ts"] = 1586622907.935,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 234153,
-						["srcname"] = "Tinkster",
-						["hp"] = 1200,
-						["ts"] = 1586622990.61,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 234153,
-						["srcname"] = "Tinkster",
-						["hp"] = 1200,
-						["ts"] = 1586622991.522,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 234153,
-						["srcname"] = "Tinkster",
-						["hp"] = 1200,
-						["ts"] = 1586622992.489,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 234153,
-						["srcname"] = "Tinkster",
-						["hp"] = 1200,
-						["ts"] = 1586622993.392,
-					}, -- [9]
-					{
-						["ts"] = 1586623674.289,
-						["amount"] = -30,
-						["srcname"] = "Stonesplinter Trogg",
-						["hp"] = 1270,
-						["spellid"] = 88163,
-					}, -- [10]
-					{
-						["ts"] = 1586623686.488,
-						["amount"] = -27,
-						["srcname"] = "Magosh",
-						["hp"] = 1213,
-						["spellid"] = 13281,
-					}, -- [11]
-					{
-						["ts"] = 1586623977.729,
-						["amount"] = -73,
-						["srcname"] = "Stonesplinter Bonesnapper",
-						["hp"] = 1340,
-						["spellid"] = 88163,
-					}, -- [12]
-					{
-						["ts"] = 1586623981.792,
-						["amount"] = -37,
-						["srcname"] = "Stonesplinter Bonesnapper",
-						["hp"] = 1267,
-						["spellid"] = 88163,
-					}, -- [13]
-					{
-						["ts"] = 1586624079.861,
-						["amount"] = -31,
-						["srcname"] = "Stonesplinter Bonesnapper",
-						["hp"] = 1340,
-						["spellid"] = 88163,
-					}, -- [14]
-					["pos"] = 15,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[59914] = 330,
+						},
+						["amount"] = 330,
+					},
+					[7] = {
+						["spells"] = {
+							[17941] = 1,
+						},
+						["amount"] = 1,
+					},
 				},
 				["id"] = "Player-3683-0BDC610A",
 				["maxhp"] = 1440,
@@ -449,58 +355,156 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["shielding"] = 0,
+				["deathlog"] = {
+					{
+						["ts"] = 1586622892.703,
+						["amount"] = -53,
+						["spellid"] = 88163,
+						["srcname"] = "Snow Leopard",
+						["hp"] = 1200,
+					}, -- [1]
+					{
+						["ts"] = 1586622894.718,
+						["amount"] = -57,
+						["spellid"] = 88163,
+						["srcname"] = "Snow Leopard",
+						["hp"] = 1147,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 110,
+						["spellid"] = 234153,
+						["srcname"] = "Tinkster",
+						["hp"] = 1200,
+						["ts"] = 1586622906.074,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 234153,
+						["srcname"] = "Tinkster",
+						["hp"] = 1200,
+						["ts"] = 1586622906.949,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 234153,
+						["srcname"] = "Tinkster",
+						["hp"] = 1200,
+						["ts"] = 1586622907.935,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 234153,
+						["srcname"] = "Tinkster",
+						["hp"] = 1200,
+						["ts"] = 1586622990.61,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 234153,
+						["srcname"] = "Tinkster",
+						["hp"] = 1200,
+						["ts"] = 1586622991.522,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 234153,
+						["srcname"] = "Tinkster",
+						["hp"] = 1200,
+						["ts"] = 1586622992.489,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 234153,
+						["srcname"] = "Tinkster",
+						["hp"] = 1200,
+						["ts"] = 1586622993.392,
+					}, -- [9]
+					{
+						["ts"] = 1586623674.289,
+						["amount"] = -30,
+						["spellid"] = 88163,
+						["srcname"] = "Stonesplinter Trogg",
+						["hp"] = 1270,
+					}, -- [10]
+					{
+						["ts"] = 1586623686.488,
+						["amount"] = -27,
+						["spellid"] = 13281,
+						["srcname"] = "Magosh",
+						["hp"] = 1213,
+					}, -- [11]
+					{
+						["ts"] = 1586623977.729,
+						["amount"] = -73,
+						["spellid"] = 88163,
+						["srcname"] = "Stonesplinter Bonesnapper",
+						["hp"] = 1340,
+					}, -- [12]
+					{
+						["ts"] = 1586623981.792,
+						["amount"] = -37,
+						["spellid"] = 88163,
+						["srcname"] = "Stonesplinter Bonesnapper",
+						["hp"] = 1267,
+					}, -- [13]
+					{
+						["ts"] = 1586624079.861,
+						["amount"] = -31,
+						["spellid"] = 88163,
+						["srcname"] = "Stonesplinter Bonesnapper",
+						["hp"] = 1340,
+					}, -- [14]
+					["pos"] = 15,
+				},
 				["leeched"] = {
 				},
 				["name"] = "Tinkster",
 				["alertCount"] = 0,
-				["healingspells"] = {
-					["Drain Life"] = {
-						["shielding"] = 0,
-						["id"] = 234153,
-						["healing"] = 110,
-						["min"] = 0,
-						["name"] = "Drain Life",
-						["hits"] = 7,
-						["overhealing"] = 817,
-						["max"] = 110,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-				},
+				["role"] = "DAMAGER",
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 			}, -- [1]
 			{
-				["class"] = "ROGUE",
 				["healingabsorbed"] = 0,
+				["class"] = "ROGUE",
 				["alertDamage"] = 0,
 				["leech"] = 0,
-				["ffdamagedone"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["time"] = 117,
-				["role"] = "DAMAGER",
+				["healingspells"] = {
+					["Swift Hand of Justice"] = {
+						["shielding"] = 0,
+						["id"] = 59913,
+						["healing"] = 304,
+						["min"] = 0,
+						["name"] = "Swift Hand of Justice",
+						["hits"] = 28,
+						["overhealing"] = 410,
+						["max"] = 27,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
 				["overhealing"] = 410,
 				["interrupts"] = 0,
 				["ffdamagedonetargets"] = {
 				},
 				["damagetaken"] = 461,
-				["power"] = {
-					[4] = {
-						["spells"] = {
-							[1752] = 29,
-							[703] = 14,
-							[185565] = 1,
-						},
-						["amount"] = 44,
-					},
-				},
+				["shielding"] = 0,
 				["damage"] = 6314,
 				["damagespells"] = {
 					["Eviscerate"] = {
@@ -591,126 +595,15 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["deathlog"] = {
-					{
-						["ts"] = 1586624017.062,
-						["amount"] = -29,
-						["srcname"] = "Stonesplinter Bonesnapper",
-						["hp"] = 1167,
-						["spellid"] = 88163,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 25,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1161,
-						["ts"] = 1586624027.751,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 25,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1185,
-						["ts"] = 1586624027.751,
-					}, -- [3]
-					{
-						["ts"] = 1586624073.354,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["absorb"] = 0,
-					}, -- [4]
-					{
-						["ts"] = 1586624073.354,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["absorb"] = 0,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["ts"] = 1586624094.903,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["ts"] = 1586624094.903,
-					}, -- [7]
-					{
-						["ts"] = 1586624135.484,
-						["amount"] = -24,
-						["srcname"] = "Stonesplinter Bonesnapper",
-						["hp"] = 1157,
-						["spellid"] = 82625,
-					}, -- [8]
-					{
-						["ts"] = 1586624164.473,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["absorb"] = 0,
-					}, -- [9]
-					{
-						["ts"] = 1586624164.473,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["absorb"] = 0,
-					}, -- [10]
-					{
-						["ts"] = 1586624186.727,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["absorb"] = 0,
-					}, -- [11]
-					{
-						["ts"] = 1586624186.727,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["absorb"] = 0,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 26,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1181,
-						["ts"] = 1586623982.759,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["ts"] = 1586624010.673,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 59913,
-						["srcname"] = "Breelie-Nordrassil",
-						["hp"] = 1230,
-						["ts"] = 1586624010.673,
-					}, -- [15]
-					["pos"] = 13,
+				["power"] = {
+					[4] = {
+						["spells"] = {
+							[1752] = 29,
+							[703] = 14,
+							[185565] = 1,
+						},
+						["amount"] = 44,
+					},
 				},
 				["id"] = "Player-1182-08523ED1",
 				["maxhp"] = 1260,
@@ -772,29 +665,136 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["shielding"] = 0,
+				["deathlog"] = {
+					{
+						["ts"] = 1586624017.062,
+						["amount"] = -29,
+						["spellid"] = 88163,
+						["srcname"] = "Stonesplinter Bonesnapper",
+						["hp"] = 1167,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 25,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1161,
+						["ts"] = 1586624027.751,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 25,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1185,
+						["ts"] = 1586624027.751,
+					}, -- [3]
+					{
+						["ts"] = 1586624073.354,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["absorb"] = 0,
+					}, -- [4]
+					{
+						["ts"] = 1586624073.354,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["absorb"] = 0,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["ts"] = 1586624094.903,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["ts"] = 1586624094.903,
+					}, -- [7]
+					{
+						["ts"] = 1586624135.484,
+						["amount"] = -24,
+						["spellid"] = 82625,
+						["srcname"] = "Stonesplinter Bonesnapper",
+						["hp"] = 1157,
+					}, -- [8]
+					{
+						["ts"] = 1586624164.473,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["absorb"] = 0,
+					}, -- [9]
+					{
+						["ts"] = 1586624164.473,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["absorb"] = 0,
+					}, -- [10]
+					{
+						["ts"] = 1586624186.727,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["absorb"] = 0,
+					}, -- [11]
+					{
+						["ts"] = 1586624186.727,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["absorb"] = 0,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 26,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1181,
+						["ts"] = 1586623982.759,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["ts"] = 1586624010.673,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 59913,
+						["srcname"] = "Breelie-Nordrassil",
+						["hp"] = 1230,
+						["ts"] = 1586624010.673,
+					}, -- [15]
+					["pos"] = 13,
+				},
 				["leeched"] = {
 				},
 				["name"] = "Breelie",
 				["alertCount"] = 0,
-				["healingspells"] = {
-					["Swift Hand of Justice"] = {
-						["shielding"] = 0,
-						["id"] = 59913,
-						["healing"] = 304,
-						["min"] = 0,
-						["name"] = "Swift Hand of Justice",
-						["hits"] = 28,
-						["overhealing"] = 410,
-						["max"] = 27,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-				},
+				["role"] = "DAMAGER",
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 			}, -- [2]
 		},
 		["deaths"] = 0,

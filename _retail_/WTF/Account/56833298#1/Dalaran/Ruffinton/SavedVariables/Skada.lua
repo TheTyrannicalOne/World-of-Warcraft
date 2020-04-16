@@ -1899,9 +1899,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586739185.78002,
 									["amount"] = -143,
+									["hp"] = 1724,
 									["srcname"] = "Lava Rager",
 									["spellid"] = 75068,
-									["hp"] = 1724,
 								}, -- [2]
 								{
 									["ts"] = 1586739186.42903,
@@ -1922,9 +1922,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586739188.04705,
 									["amount"] = -260,
+									["hp"] = 2027,
 									["spellid"] = 88163,
 									["srcname"] = "Lava Rager",
-									["hp"] = 2027,
 								}, -- [5]
 								{
 									["absorb"] = 0,
@@ -1937,16 +1937,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586739190.57007,
 									["amount"] = -236,
+									["hp"] = 1867,
 									["spellid"] = 88163,
 									["srcname"] = "Lava Rager",
-									["hp"] = 1867,
 								}, -- [7]
 								{
 									["ts"] = 1586739193.05508,
 									["amount"] = -150,
+									["hp"] = 1357,
 									["srcname"] = "Lava Rager",
 									["spellid"] = 75068,
-									["hp"] = 1357,
 								}, -- [8]
 								{
 									["absorb"] = 0,
@@ -1959,16 +1959,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586739195.3151,
 									["amount"] = -262,
+									["hp"] = 1082,
 									["srcname"] = "Lava Rager",
 									["spellid"] = 88163,
-									["hp"] = 1082,
 								}, -- [10]
 								{
 									["ts"] = 1586739197.90111,
 									["amount"] = -236,
+									["hp"] = 676,
 									["spellid"] = 88163,
 									["srcname"] = "Lava Rager",
-									["hp"] = 676,
 								}, -- [11]
 								{
 									["spellname"] = "Ruffinton dies",
@@ -1979,9 +1979,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586739181.37613,
 									["amount"] = -230,
+									["hp"] = 1693,
 									["spellid"] = 88163,
 									["srcname"] = "Lava Rager",
-									["hp"] = 1693,
 								}, -- [13]
 								{
 									["absorb"] = 0,
@@ -2104,16 +2104,15 @@ SkadaPerCharDB = {
 						},
 					},
 					["last"] = 1586739204,
-					["ffdamagedone"] = 0,
+					["dispells"] = 0,
 					["healingabsorbed"] = 0,
-					["overhealing"] = 0,
+					["ffdamagedone"] = 0,
 					["ffdamagedonespells"] = {
 					},
 					["damaged"] = {
 					},
-					["dispells"] = 0,
-					["healingspells"] = {
-					},
+					["alertDamage"] = 0,
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 46,
 					["interrupts"] = 0,
@@ -2125,16 +2124,16 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 0,
+					["first"] = 1586739158,
 					["healed"] = {
 					},
 					["shielding"] = 0,
 					["id"] = "Creature-0-3887-1-26-34317-000013B7C7",
-					["healing"] = 0,
+					["maxhp"] = 0,
 					["leech"] = 0,
 					["damagetakenspells"] = {
 					},
-					["first"] = 1586739158,
+					["healing"] = 0,
 					["leeched"] = {
 					},
 					["name"] = "Freezing Surger",
@@ -2143,7 +2142,8 @@ SkadaPerCharDB = {
 					["leechTaken"] = 0,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["healingspells"] = {
+					},
 				}, -- [2]
 			},
 			["deaths"] = 1,
@@ -4908,9 +4908,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586739185.78002,
 								["amount"] = -143,
+								["hp"] = 1724,
 								["srcname"] = "Lava Rager",
 								["spellid"] = 75068,
-								["hp"] = 1724,
 							}, -- [2]
 							{
 								["ts"] = 1586739186.42903,
@@ -4931,9 +4931,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586739188.04705,
 								["amount"] = -260,
+								["hp"] = 2027,
 								["spellid"] = 88163,
 								["srcname"] = "Lava Rager",
-								["hp"] = 2027,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -4946,16 +4946,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586739190.57007,
 								["amount"] = -236,
+								["hp"] = 1867,
 								["spellid"] = 88163,
 								["srcname"] = "Lava Rager",
-								["hp"] = 1867,
 							}, -- [7]
 							{
 								["ts"] = 1586739193.05508,
 								["amount"] = -150,
+								["hp"] = 1357,
 								["srcname"] = "Lava Rager",
 								["spellid"] = 75068,
-								["hp"] = 1357,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -4968,16 +4968,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586739195.3151,
 								["amount"] = -262,
+								["hp"] = 1082,
 								["srcname"] = "Lava Rager",
 								["spellid"] = 88163,
-								["hp"] = 1082,
 							}, -- [10]
 							{
 								["ts"] = 1586739197.90111,
 								["amount"] = -236,
+								["hp"] = 676,
 								["spellid"] = 88163,
 								["srcname"] = "Lava Rager",
-								["hp"] = 676,
 							}, -- [11]
 							{
 								["spellname"] = "Ruffinton dies",
@@ -4988,9 +4988,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586739181.37613,
 								["amount"] = -230,
+								["hp"] = 1693,
 								["spellid"] = 88163,
 								["srcname"] = "Lava Rager",
-								["hp"] = 1693,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -5017,9 +5017,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586735320.69201,
 								["amount"] = -503,
+								["srcname"] = "Lava Rager",
 								["hp"] = 1012,
 								["spellid"] = 88163,
-								["srcname"] = "Lava Rager",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -5048,9 +5048,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586735323.17305,
 								["amount"] = -209,
+								["spellid"] = 88163,
 								["hp"] = 996,
 								["srcname"] = "Lava Rager",
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1586735323.73706,
@@ -5071,23 +5071,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586735328.56108,
 								["amount"] = -276,
+								["spellid"] = 88163,
 								["hp"] = 960,
 								["srcname"] = "Lava Rager",
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["ts"] = 1586735330.67709,
 								["amount"] = -146,
+								["spellid"] = 75068,
 								["hp"] = 393,
 								["srcname"] = "Lava Rager",
-								["spellid"] = 75068,
 							}, -- [9]
 							{
 								["ts"] = 1586735339.0931,
 								["amount"] = -154,
+								["spellid"] = 75068,
 								["hp"] = 1,
 								["srcname"] = "Lava Rager",
-								["spellid"] = 75068,
 							}, -- [10]
 							{
 								["spellname"] = "Ruffinton dies",
@@ -5098,23 +5098,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586735313.34912,
 								["amount"] = -223,
+								["spellid"] = 88163,
 								["hp"] = 2096,
 								["srcname"] = "Lava Rager",
-								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["ts"] = 1586735315.91113,
 								["amount"] = -419,
+								["spellid"] = 88163,
 								["hp"] = 1769,
 								["srcname"] = "Lava Rager",
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1586735318.46514,
 								["amount"] = -150,
+								["spellid"] = 75068,
 								["hp"] = 949,
 								["srcname"] = "Lava Rager",
-								["spellid"] = 75068,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -5134,9 +5134,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731911.90801,
 								["amount"] = -185,
+								["srcname"] = "Dal Bloodclaw",
 								["hp"] = 1181,
 								["spellid"] = 77558,
-								["srcname"] = "Dal Bloodclaw",
 							}, -- [1]
 							{
 								["ts"] = 1586731912.27202,
@@ -5149,16 +5149,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731912.74403,
 								["amount"] = -228,
+								["srcname"] = "Dal Bloodclaw",
 								["hp"] = 740,
 								["spellid"] = 77558,
-								["srcname"] = "Dal Bloodclaw",
 							}, -- [3]
 							{
 								["ts"] = 1586731914.35104,
 								["amount"] = -224,
+								["srcname"] = "Dal Bloodclaw",
 								["hp"] = 255,
 								["spellid"] = 77558,
-								["srcname"] = "Dal Bloodclaw",
 							}, -- [4]
 							{
 								["ts"] = 1586731914.35105,
@@ -5171,9 +5171,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731915.13406,
 								["amount"] = -213,
+								["srcname"] = "Dal Bloodclaw",
 								["hp"] = 279,
 								["spellid"] = 88163,
-								["srcname"] = "Dal Bloodclaw",
 							}, -- [6]
 							{
 								["spellname"] = "Ruffinton dies",
@@ -5184,9 +5184,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731906.83608,
 								["amount"] = -176,
+								["srcname"] = "Dal Bloodclaw",
 								["hp"] = 1856,
 								["spellid"] = 88163,
-								["srcname"] = "Dal Bloodclaw",
 							}, -- [8]
 							{
 								["ts"] = 1586731907.29409,
@@ -5223,9 +5223,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731909.87213,
 								["amount"] = -141,
+								["srcname"] = "Dal Bloodclaw",
 								["hp"] = 1888,
 								["spellid"] = 88163,
-								["srcname"] = "Dal Bloodclaw",
 							}, -- [13]
 							{
 								["ts"] = 1586731911.07914,
@@ -5238,9 +5238,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731911.44215,
 								["amount"] = -168,
+								["srcname"] = "Dal Bloodclaw",
 								["hp"] = 1366,
 								["spellid"] = 77558,
-								["srcname"] = "Dal Bloodclaw",
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -5252,9 +5252,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731616.53001,
 								["amount"] = -118,
+								["spellid"] = 88163,
 								["srcname"] = "Thistlefur Totemic",
 								["hp"] = 1536,
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1586731616.81502,
@@ -5267,23 +5267,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731617.22303,
 								["amount"] = -137,
+								["hp"] = 1422,
 								["spellid"] = 88163,
 								["srcname"] = "Thistlefur Totemic",
-								["hp"] = 1422,
 							}, -- [3]
 							{
 								["ts"] = 1586731619.22804,
 								["amount"] = -97,
+								["srcname"] = "Thistlefur Totemic",
 								["spellid"] = 88163,
 								["hp"] = 1205,
-								["srcname"] = "Thistlefur Totemic",
 							}, -- [4]
 							{
 								["ts"] = 1586731625.04005,
 								["amount"] = -92,
+								["spellid"] = 78772,
 								["srcname"] = "Magma Totem",
 								["hp"] = 531,
-								["spellid"] = 78772,
 							}, -- [5]
 							{
 								["spellname"] = "Ruffinton dies",
@@ -5310,16 +5310,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731612.48209,
 								["amount"] = -129,
+								["srcname"] = "Thistlefur Totemic",
 								["spellid"] = 88163,
 								["hp"] = 1823,
-								["srcname"] = "Thistlefur Totemic",
 							}, -- [9]
 							{
 								["ts"] = 1586731613.2131,
 								["amount"] = -115,
+								["hp"] = 1537,
 								["srcname"] = "Thistlefur Totemic",
 								["spellid"] = 88163,
-								["hp"] = 1537,
 							}, -- [10]
 							{
 								["ts"] = 1586731613.49611,
@@ -5340,16 +5340,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586731614.49213,
 								["amount"] = -131,
+								["srcname"] = "Thistlefur Totemic",
 								["spellid"] = 88163,
 								["hp"] = 1824,
-								["srcname"] = "Thistlefur Totemic",
 							}, -- [13]
 							{
 								["ts"] = 1586731615.19014,
 								["amount"] = -122,
+								["hp"] = 1614,
 								["srcname"] = "Thistlefur Totemic",
 								["spellid"] = 88163,
-								["hp"] = 1614,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -5370,65 +5370,65 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586726333.66401,
 								["amount"] = -127,
+								["spellid"] = 88163,
 								["hp"] = 1019,
 								["srcname"] = "Horde Invader",
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1586726333.66402,
 								["amount"] = -124,
+								["spellid"] = 88163,
 								["hp"] = 1019,
 								["srcname"] = "Horde Invader",
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["ts"] = 1586726333.66403,
 								["amount"] = -94,
+								["spellid"] = 88163,
 								["hp"] = 768,
 								["srcname"] = "Horde Invader",
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1586726334.09204,
 								["amount"] = -89,
+								["spellid"] = 88163,
 								["hp"] = 674,
 								["srcname"] = "Horde Invader",
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["ts"] = 1586726335.23605,
 								["amount"] = -101,
+								["srcname"] = "Horde Invader",
 								["hp"] = 585,
 								["spellid"] = 88163,
-								["srcname"] = "Horde Invader",
 							}, -- [5]
 							{
 								["ts"] = 1586726335.23606,
 								["amount"] = -98,
+								["srcname"] = "Horde Invader",
 								["hp"] = 585,
 								["spellid"] = 88163,
-								["srcname"] = "Horde Invader",
 							}, -- [6]
 							{
 								["ts"] = 1586726335.66507,
 								["amount"] = -127,
+								["srcname"] = "Horde Invader",
 								["hp"] = 386,
 								["spellid"] = 88163,
-								["srcname"] = "Horde Invader",
 							}, -- [7]
 							{
 								["ts"] = 1586726335.66508,
 								["amount"] = -122,
+								["hp"] = 259,
 								["spellid"] = 88163,
 								["srcname"] = "Horde Invader",
-								["hp"] = 259,
 							}, -- [8]
 							{
 								["ts"] = 1586726336.11309,
 								["amount"] = -202,
+								["srcname"] = "Horde Invader",
 								["hp"] = 137,
 								["spellid"] = 88163,
-								["srcname"] = "Horde Invader",
 							}, -- [9]
 							{
 								["spellname"] = "Ruffinton dies",
@@ -5439,37 +5439,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586726331.63811,
 								["amount"] = -108,
+								["hp"] = 1645,
 								["spellid"] = 88163,
 								["srcname"] = "Horde Invader",
-								["hp"] = 1645,
 							}, -- [11]
 							{
 								["ts"] = 1586726331.63812,
 								["amount"] = -114,
+								["hp"] = 1426,
 								["srcname"] = "Horde Invader",
 								["spellid"] = 88163,
-								["hp"] = 1426,
 							}, -- [12]
 							{
 								["ts"] = 1586726332.04213,
 								["amount"] = -123,
+								["srcname"] = "Horde Invader",
 								["hp"] = 1312,
 								["spellid"] = 88163,
-								["srcname"] = "Horde Invader",
 							}, -- [13]
 							{
 								["ts"] = 1586726332.44014,
 								["amount"] = -85,
+								["srcname"] = "Horde Invader",
 								["hp"] = 1189,
 								["spellid"] = 88163,
-								["srcname"] = "Horde Invader",
 							}, -- [14]
 							{
 								["ts"] = 1586726333.23215,
 								["amount"] = -85,
+								["srcname"] = "Horde Invader",
 								["hp"] = 1104,
 								["spellid"] = 88163,
-								["srcname"] = "Horde Invader",
 							}, -- [15]
 							["pos"] = 11,
 						},
@@ -5480,100 +5480,100 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586702258.80501,
 								["amount"] = -53,
+								["srcname"] = "Windmaster Tzu-Tzu",
 								["spellid"] = 13281,
 								["hp"] = 1150,
-								["srcname"] = "Windmaster Tzu-Tzu",
 							}, -- [1]
 							{
 								["ts"] = 1586702259.12902,
 								["amount"] = -61,
+								["spellid"] = 88163,
 								["srcname"] = "Windmaster Tzu-Tzu",
 								["hp"] = 1150,
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["ts"] = 1586702259.83703,
 								["amount"] = -121,
+								["spellid"] = 88163,
 								["srcname"] = "Frenzied Cyclone",
 								["hp"] = 1089,
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1586702261.12304,
 								["amount"] = -52,
+								["spellid"] = 88163,
 								["hp"] = 968,
 								["srcname"] = "Windmaster Tzu-Tzu",
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["ts"] = 1586702261.83905,
 								["amount"] = -76,
+								["spellid"] = 88163,
 								["hp"] = 916,
 								["srcname"] = "Frenzied Cyclone",
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1586702263.50006,
 								["amount"] = -66,
+								["spellid"] = 188435,
 								["hp"] = 774,
 								["srcname"] = "Windmaster Tzu-Tzu",
-								["spellid"] = 188435,
 							}, -- [6]
 							{
 								["ts"] = 1586702263.50007,
 								["amount"] = -28,
+								["spellid"] = 188436,
 								["hp"] = 746,
 								["srcname"] = "Windmaster Tzu-Tzu",
-								["spellid"] = 188436,
 							}, -- [7]
 							{
 								["ts"] = 1586702265.53608,
 								["amount"] = -125,
+								["hp"] = 746,
 								["srcname"] = "Windmaster Tzu-Tzu",
 								["spellid"] = 88163,
-								["hp"] = 746,
 							}, -- [8]
 							{
 								["ts"] = 1586702267.27709,
 								["amount"] = -272,
+								["spellid"] = 9532,
 								["srcname"] = "Frenzied Cyclone",
 								["hp"] = 349,
-								["spellid"] = 9532,
 							}, -- [9]
 							{
 								["ts"] = 1586702270.2481,
 								["amount"] = -71,
+								["hp"] = 349,
 								["spellid"] = 88163,
 								["srcname"] = "Frenzied Cyclone",
-								["hp"] = 349,
 							}, -- [10]
 							{
 								["ts"] = 1586702272.25611,
 								["amount"] = -68,
+								["srcname"] = "Frenzied Cyclone",
 								["hp"] = 278,
 								["spellid"] = 88163,
-								["srcname"] = "Frenzied Cyclone",
 							}, -- [11]
 							{
 								["ts"] = 1586702274.26212,
 								["amount"] = -149,
+								["hp"] = 210,
 								["spellid"] = 88163,
 								["srcname"] = "Frenzied Cyclone",
-								["hp"] = 210,
 							}, -- [12]
 							{
 								["ts"] = 1586702276.25513,
 								["amount"] = -57,
+								["spellid"] = 88163,
 								["srcname"] = "Frenzied Cyclone",
 								["hp"] = 61,
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1586702278.26614,
 								["amount"] = -62,
+								["srcname"] = "Frenzied Cyclone",
 								["hp"] = 4,
 								["spellid"] = 88163,
-								["srcname"] = "Frenzied Cyclone",
 							}, -- [14]
 							{
 								["spellname"] = "Ruffinton dies",
@@ -5614,9 +5614,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1586739735.383,
 						["amount"] = -533,
+						["hp"] = 4381,
 						["spellid"] = 88163,
 						["srcname"] = "Oso Bramblescar",
-						["hp"] = 4381,
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -5629,37 +5629,37 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1586739737.386,
 						["amount"] = -494,
+						["hp"] = 4067,
 						["spellid"] = 88163,
 						["srcname"] = "Oso Bramblescar",
-						["hp"] = 4067,
 					}, -- [6]
 					{
 						["ts"] = 1586739741.41,
 						["amount"] = -551,
+						["hp"] = 3573,
 						["spellid"] = 88163,
 						["srcname"] = "Oso Bramblescar",
-						["hp"] = 3573,
 					}, -- [7]
 					{
 						["ts"] = 1586739746.071,
 						["amount"] = -590,
+						["hp"] = 3022,
 						["spellid"] = 88163,
 						["srcname"] = "Oso Bramblescar",
-						["hp"] = 3022,
 					}, -- [8]
 					{
 						["ts"] = 1586739748.068,
 						["amount"] = -485,
+						["hp"] = 2432,
 						["spellid"] = 88163,
 						["srcname"] = "Oso Bramblescar",
-						["hp"] = 2432,
 					}, -- [9]
 					{
 						["ts"] = 1586739750.741,
 						["amount"] = -511,
+						["hp"] = 1436,
 						["spellid"] = 75002,
 						["srcname"] = "Oso Bramblescar",
-						["hp"] = 1436,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -5672,16 +5672,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1586739473.675,
 						["amount"] = -147,
+						["hp"] = 4169,
 						["spellid"] = 75068,
 						["srcname"] = "Lava Rager",
-						["hp"] = 4169,
 					}, -- [12]
 					{
 						["ts"] = 1586739724.978,
 						["amount"] = -447,
+						["hp"] = 3865,
 						["spellid"] = 88163,
 						["srcname"] = "Oso Bramblescar",
-						["hp"] = 3865,
 					}, -- [13]
 					{
 						["ts"] = 1586739730.684,
@@ -6778,25 +6778,25 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["overhealing"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
+				["overhealing"] = 0,
 				["ffdamagedone"] = 0,
 				["time"] = 175,
 				["interrupts"] = 0,
-				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonetargets"] = {
 				},
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["power"] = {
+				},
 				["healed"] = {
 				},
 				["deathlog"] = {
@@ -6839,25 +6839,25 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["overhealing"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
+				["overhealing"] = 0,
 				["ffdamagedone"] = 0,
 				["time"] = 26,
 				["interrupts"] = 0,
-				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonetargets"] = {
 				},
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["power"] = {
+				},
 				["healed"] = {
 				},
 				["deathlog"] = {
@@ -6900,25 +6900,25 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["overhealing"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
+				["overhealing"] = 0,
 				["ffdamagedone"] = 0,
 				["time"] = 116,
 				["interrupts"] = 0,
-				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonetargets"] = {
 				},
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["power"] = {
+				},
 				["healed"] = {
 				},
 				["deathlog"] = {
@@ -6961,25 +6961,25 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["overhealing"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
+				["overhealing"] = 0,
 				["ffdamagedone"] = 0,
 				["time"] = 83,
 				["interrupts"] = 0,
-				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonetargets"] = {
 				},
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["power"] = {
+				},
 				["healed"] = {
 				},
 				["deathlog"] = {
@@ -7014,25 +7014,25 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["overhealing"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
+				["overhealing"] = 0,
 				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
-				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonetargets"] = {
 				},
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["power"] = {
+				},
 				["healed"] = {
 				},
 				["deathlog"] = {
@@ -7067,25 +7067,25 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["overhealing"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
+				["overhealing"] = 0,
 				["ffdamagedone"] = 0,
 				["time"] = 3,
 				["interrupts"] = 0,
-				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonetargets"] = {
 				},
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["power"] = {
+				},
 				["healed"] = {
 				},
 				["deathlog"] = {
@@ -7112,13 +7112,13 @@ SkadaPerCharDB = {
 				["auras"] = {
 				},
 				["healingabsorbed"] = 0,
-				["time"] = 2,
+				["ffdamagedone"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["alertDamage"] = 0,
-				["ffdamagedone"] = 0,
+				["time"] = 2,
 				["role"] = "NONE",
 				["overhealing"] = 0,
 				["interrupts"] = 0,
@@ -7220,24 +7220,16 @@ SkadaPerCharDB = {
 				["healingabsorbed"] = 0,
 				["dispells"] = 0,
 				["leech"] = 0,
-				["overhealing"] = 0,
+				["ffdamagedone"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["alertDamage"] = 0,
-				["ffdamagedone"] = 0,
+				["overhealing"] = 0,
 				["role"] = "NONE",
 				["time"] = 0,
 				["interrupts"] = 0,
-				["power"] = {
-				},
-				["name"] = "Maestra's Post Sentinel",
-				["deathlog"] = {
-				},
-				["damage"] = 0,
-				["damagespells"] = {
-				},
 				["healingspells"] = {
 					["Drink Healing Potion"] = {
 						["shielding"] = 0,
@@ -7251,6 +7243,14 @@ SkadaPerCharDB = {
 						["overhealing"] = 0,
 						["hits"] = 1,
 					},
+				},
+				["name"] = "Maestra's Post Sentinel",
+				["power"] = {
+				},
+				["damage"] = 0,
+				["damagespells"] = {
+				},
+				["deathlog"] = {
 				},
 				["healed"] = {
 					["Creature-0-3887-1-26-33338-0001137FAC"] = {
@@ -7280,9 +7280,7 @@ SkadaPerCharDB = {
 				},
 			}, -- [9]
 			{
-				["ccbreaks"] = 0,
 				["dispells"] = 0,
-				["leech"] = 0,
 				["auras"] = {
 					["Chains of Ice"] = {
 						["uptime"] = 20,
@@ -7301,6 +7299,8 @@ SkadaPerCharDB = {
 						["id"] = 65172,
 					},
 				},
+				["leech"] = 0,
+				["ccbreaks"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -7341,15 +7341,14 @@ SkadaPerCharDB = {
 				["healingabsorbed"] = 0,
 			}, -- [10]
 			{
+				["healingabsorbed"] = 0,
 				["dispells"] = 0,
-				["role"] = "NONE",
 				["leech"] = 0,
-				["ffdamagedone"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
-				["alertDamage"] = 0,
 				["auras"] = {
 					["Chains of Ice"] = {
 						["uptime"] = 21,
@@ -7368,6 +7367,7 @@ SkadaPerCharDB = {
 						["name"] = "Frostbolt",
 					},
 				},
+				["ccbreaks"] = 0,
 				["healingspells"] = {
 				},
 				["time"] = 46,
@@ -7395,11 +7395,11 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["healingabsorbed"] = 0,
+				["ffdamagedone"] = 0,
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ccbreaks"] = 0,
+				["alertDamage"] = 0,
 			}, -- [11]
 		},
 		["deaths"] = 6,
@@ -8884,33 +8884,23 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Thorrick-Exodar"] = {
+			["Ghostpaw Runner"] = {
 				["players"] = {
-				},
-				["hdone"] = 660,
-				["hdonespell"] = {
-					["Regrowth"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 233,
-						["healing"] = 660,
-						["overhealing"] = 56,
-						["hits"] = 16,
+					["Ruffinton"] = {
+						["taken"] = 1587,
+						["done"] = 377,
+						["role"] = "NONE",
+						["class"] = "ROGUE",
 					},
 				},
-				["taken"] = 0,
+				["hdone"] = 0,
 				["htakenspell"] = {
-					["Regrowth"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 233,
-						["healing"] = 660,
-						["overhealing"] = 56,
-						["hits"] = 16,
-					},
 				},
-				["htaken"] = 660,
-				["done"] = 0,
+				["taken"] = 1587,
+				["done"] = 377,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
 			},
 			["Darkshore Stag"] = {
 				["players"] = {
@@ -8930,23 +8920,23 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Ghostpaw Runner"] = {
+			["Ruuzel"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 1587,
-						["done"] = 377,
-						["role"] = "NONE",
+						["taken"] = 3194,
+						["done"] = 750,
 						["class"] = "ROGUE",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 1587,
-				["done"] = 377,
-				["htaken"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 3194,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 750,
 			},
 			["Dark Ranger Elite"] = {
 				["players"] = {
@@ -8994,24 +8984,6 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Ruuzel"] = {
-				["players"] = {
-					["Ruffinton"] = {
-						["taken"] = 3194,
-						["done"] = 750,
-						["class"] = "ROGUE",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 3194,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 750,
-			},
 			["Northgate Rebel"] = {
 				["players"] = {
 				},
@@ -9031,6 +9003,34 @@ SkadaPerCharDB = {
 				["htaken"] = 32,
 				["hdonespell"] = {
 				},
+			},
+			["Thorrick-Exodar"] = {
+				["players"] = {
+				},
+				["hdone"] = 660,
+				["hdonespell"] = {
+					["Regrowth"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 233,
+						["healing"] = 660,
+						["overhealing"] = 56,
+						["hits"] = 16,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Regrowth"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 233,
+						["healing"] = 660,
+						["overhealing"] = 56,
+						["hits"] = 16,
+					},
+				},
+				["htaken"] = 660,
+				["done"] = 0,
 			},
 			["Bloodfang Worgen"] = {
 				["players"] = {
@@ -9209,18 +9209,18 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 51,
 			},
-			["Shatterspear Mystic"] = {
+			["Consumed Thistle Bear"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 5047,
-						["done"] = 2522,
+						["taken"] = 10718,
+						["done"] = 1727,
 						["role"] = "NONE",
 						["class"] = "ROGUE",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 2522,
-				["taken"] = 5047,
+				["done"] = 1727,
+				["taken"] = 10718,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
@@ -9298,24 +9298,6 @@ SkadaPerCharDB = {
 				["htaken"] = 72,
 				["done"] = 315,
 			},
-			["Consumed Thistle Bear"] = {
-				["players"] = {
-					["Ruffinton"] = {
-						["taken"] = 10718,
-						["done"] = 1727,
-						["role"] = "NONE",
-						["class"] = "ROGUE",
-					},
-				},
-				["hdone"] = 0,
-				["done"] = 1727,
-				["taken"] = 10718,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
 			["Lorenth Thundercall"] = {
 				["players"] = {
 					["Ruffinton"] = {
@@ -9333,6 +9315,24 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 0,
 				["done"] = 0,
+			},
+			["Shatterspear Mystic"] = {
+				["players"] = {
+					["Ruffinton"] = {
+						["taken"] = 5047,
+						["done"] = 2522,
+						["role"] = "NONE",
+						["class"] = "ROGUE",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 2522,
+				["taken"] = 5047,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
 			},
 			["Faceless One"] = {
 				["players"] = {
@@ -9352,24 +9352,6 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 690,
 			},
-			["Brown Stag"] = {
-				["players"] = {
-					["Ruffinton"] = {
-						["taken"] = 1936,
-						["done"] = 125,
-						["class"] = "ROGUE",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 1936,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 125,
-			},
 			["Thalya the Voidcaller"] = {
 				["players"] = {
 					["Ruffinton"] = {
@@ -9386,6 +9368,26 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+			},
+			["Tobias Mistmantle"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 20,
+				["htakenspell"] = {
+					["Rebel Valor"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 5,
+						["healing"] = 20,
+						["overhealing"] = 193,
+						["hits"] = 41,
+					},
 				},
 			},
 			["Harbinger Aphotic"] = {
@@ -9452,22 +9454,22 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 3306,
 			},
-			["Magma Totem"] = {
+			["Forsaken Invader"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 688,
-						["done"] = 1947,
-						["class"] = "ROGUE",
+						["taken"] = 262269001,
+						["done"] = 640,
 						["role"] = "NONE",
+						["class"] = "ROGUE",
 					},
 				},
 				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 688,
-				["done"] = 1947,
-				["htaken"] = 0,
+				["done"] = 640,
+				["taken"] = 262269001,
 				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
 				},
 			},
 			["Telarius Voidstrider"] = {
@@ -9524,24 +9526,22 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 139,
 			},
-			["Tobias Mistmantle"] = {
+			["Magma Totem"] = {
 				["players"] = {
+					["Ruffinton"] = {
+						["taken"] = 688,
+						["done"] = 1947,
+						["class"] = "ROGUE",
+						["role"] = "NONE",
+					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 20,
+				["taken"] = 688,
+				["done"] = 1947,
+				["htaken"] = 0,
 				["htakenspell"] = {
-					["Rebel Valor"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 5,
-						["healing"] = 20,
-						["overhealing"] = 193,
-						["hits"] = 41,
-					},
 				},
 			},
 			["Warsong War Rider"] = {
@@ -9580,18 +9580,18 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Forsaken Invader"] = {
+			["Withered Ancient"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 262269001,
-						["done"] = 640,
+						["taken"] = 4055,
+						["done"] = 847,
 						["role"] = "NONE",
 						["class"] = "ROGUE",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 640,
-				["taken"] = 262269001,
+				["done"] = 847,
+				["taken"] = 4055,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
@@ -9714,24 +9714,6 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Unbound Fire Elemental"] = {
-				["players"] = {
-					["Ruffinton"] = {
-						["taken"] = 10118,
-						["done"] = 2807,
-						["class"] = "ROGUE",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 10118,
-				["done"] = 2807,
-				["htaken"] = 0,
-				["htakenspell"] = {
-				},
-			},
 			["Frenzied Stalker"] = {
 				["players"] = {
 					["Ruffinton"] = {
@@ -9749,6 +9731,24 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
+			},
+			["Brown Stag"] = {
+				["players"] = {
+					["Ruffinton"] = {
+						["taken"] = 1936,
+						["done"] = 125,
+						["class"] = "ROGUE",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1936,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 125,
 			},
 			["Spawn of Soggoth"] = {
 				["players"] = {
@@ -9809,34 +9809,6 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Big Baobob"] = {
-				["players"] = {
-				},
-				["hdone"] = 4212,
-				["htakenspell"] = {
-					["Rejuvenation"] = {
-						["min"] = 108,
-						["crits"] = 0,
-						["max"] = 108,
-						["healing"] = 4212,
-						["overhealing"] = 0,
-						["hits"] = 39,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 4212,
-				["hdonespell"] = {
-					["Rejuvenation"] = {
-						["min"] = 108,
-						["crits"] = 0,
-						["max"] = 108,
-						["healing"] = 4212,
-						["overhealing"] = 0,
-						["hits"] = 39,
-					},
-				},
-			},
 			["Spectre"] = {
 				["players"] = {
 				},
@@ -9865,22 +9837,40 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Thistlefur Warrior"] = {
+			["Forsaken Looter"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 15570,
-						["done"] = 3368,
+						["taken"] = 6947,
+						["done"] = 3104,
 						["role"] = "NONE",
 						["class"] = "ROGUE",
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 3104,
+				["taken"] = 6947,
 				["htakenspell"] = {
 				},
-				["taken"] = 15570,
-				["done"] = 3368,
 				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+			},
+			["Windmaster Tzu-Tzu"] = {
+				["players"] = {
+					["Ruffinton"] = {
+						["taken"] = 3732,
+						["done"] = 1649,
+						["class"] = "ROGUE",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 3732,
+				["done"] = 1649,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Thedruidbump"] = {
@@ -9961,11 +9951,31 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Twilight Zealot"] = {
+			["Injured Citizen"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Rebel Valor"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 896,
+						["hits"] = 76,
+					},
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Worgen Alpha"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 9799,
-						["done"] = 1419,
+						["taken"] = 11,
+						["done"] = 0,
 						["class"] = "ROGUE",
 						["role"] = "NONE",
 					},
@@ -9973,46 +9983,38 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 9799,
-				["done"] = 1419,
+				["taken"] = 11,
+				["done"] = 0,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
 			},
-			["Elder Ashenvale Bear"] = {
+			["Big Baobob"] = {
 				["players"] = {
-					["Ruffinton"] = {
-						["taken"] = 0,
-						["done"] = 111,
-						["class"] = "ROGUE",
-						["role"] = "NONE",
-					},
 				},
-				["hdone"] = 0,
-				["hdonespell"] = {
+				["hdone"] = 4212,
+				["htakenspell"] = {
+					["Rejuvenation"] = {
+						["min"] = 108,
+						["crits"] = 0,
+						["max"] = 108,
+						["healing"] = 4212,
+						["overhealing"] = 0,
+						["hits"] = 39,
+					},
 				},
 				["taken"] = 0,
-				["done"] = 111,
-				["htaken"] = 0,
-				["htakenspell"] = {
-				},
-			},
-			["Windmaster Tzu-Tzu"] = {
-				["players"] = {
-					["Ruffinton"] = {
-						["taken"] = 3732,
-						["done"] = 1649,
-						["class"] = "ROGUE",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
+				["done"] = 0,
+				["htaken"] = 4212,
 				["hdonespell"] = {
-				},
-				["taken"] = 3732,
-				["done"] = 1649,
-				["htaken"] = 0,
-				["htakenspell"] = {
+					["Rejuvenation"] = {
+						["min"] = 108,
+						["crits"] = 0,
+						["max"] = 108,
+						["healing"] = 4212,
+						["overhealing"] = 0,
+						["hits"] = 39,
+					},
 				},
 			},
 			["Warsong Vanguard"] = {
@@ -10033,22 +10035,20 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Injured Citizen"] = {
+			["Thistlefur Warrior"] = {
 				["players"] = {
-				},
-				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Rebel Valor"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 896,
-						["hits"] = 76,
+					["Ruffinton"] = {
+						["taken"] = 15570,
+						["done"] = 3368,
+						["role"] = "NONE",
+						["class"] = "ROGUE",
 					},
 				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 15570,
+				["done"] = 3368,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -10071,22 +10071,22 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Worgen Alpha"] = {
+			["Yoth'al the Devourer"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 11,
-						["done"] = 0,
-						["class"] = "ROGUE",
+						["taken"] = 2725,
+						["done"] = 244,
 						["role"] = "NONE",
+						["class"] = "ROGUE",
 					},
 				},
 				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 11,
-				["done"] = 0,
-				["htaken"] = 0,
+				["done"] = 244,
+				["taken"] = 2725,
 				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
 				},
 			},
 			["Valnov the Mad"] = {
@@ -10143,11 +10143,11 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 240,
 			},
-			["Ogre Minion"] = {
+			["Elder Ashenvale Bear"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 3009,
-						["done"] = 445,
+						["taken"] = 0,
+						["done"] = 111,
 						["class"] = "ROGUE",
 						["role"] = "NONE",
 					},
@@ -10155,11 +10155,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 3009,
+				["taken"] = 0,
+				["done"] = 111,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 445,
 			},
 			["Celestine of the Harvest"] = {
 				["players"] = {
@@ -10181,22 +10181,22 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Yoth'al the Devourer"] = {
+			["Chief Bombgineer Sploder"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 2725,
-						["done"] = 244,
-						["role"] = "NONE",
+						["taken"] = 7643,
+						["done"] = 2324,
 						["class"] = "ROGUE",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 244,
-				["taken"] = 2725,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+				["taken"] = 7643,
+				["done"] = 2324,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Forsaken Infantry"] = {
@@ -10222,25 +10222,20 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 631,
 			},
-			["Ashenvale Wrecker"] = {
+			["Luk'gar"] = {
 				["players"] = {
-					["Maestra's Post Sentinel"] = {
-						["taken"] = 1135,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
 					["Ruffinton"] = {
-						["taken"] = 9190,
-						["done"] = 3380,
+						["taken"] = 612,
+						["done"] = 151,
 						["role"] = "NONE",
 						["class"] = "ROGUE",
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 151,
+				["taken"] = 612,
 				["htakenspell"] = {
 				},
-				["taken"] = 10325,
-				["done"] = 3380,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -10263,22 +10258,22 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 3341,
 			},
-			["Luk'gar"] = {
+			["Cloudtamer Wildmane"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 612,
-						["done"] = 151,
-						["role"] = "NONE",
+						["taken"] = 2484,
+						["done"] = 686,
 						["class"] = "ROGUE",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 151,
-				["taken"] = 612,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+				["taken"] = 2484,
+				["done"] = 686,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Sheya Stormweaver"] = {
@@ -10317,11 +10312,11 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Cloudtamer Wildmane"] = {
+			["Fire Elemental Remnant"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 2484,
-						["done"] = 686,
+						["taken"] = 3232,
+						["done"] = 519,
 						["class"] = "ROGUE",
 						["role"] = "NONE",
 					},
@@ -10329,8 +10324,8 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 2484,
-				["done"] = 686,
+				["taken"] = 3232,
+				["done"] = 519,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -10432,11 +10427,11 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Fire Elemental Rager"] = {
+			["Enraged Tidal Spirit"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 1201,
-						["done"] = 59,
+						["taken"] = 5789,
+						["done"] = 1233,
 						["class"] = "ROGUE",
 						["role"] = "NONE",
 					},
@@ -10444,29 +10439,34 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 1201,
-				["done"] = 59,
+				["taken"] = 5789,
+				["done"] = 1233,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
 			},
-			["Wolfmaw Outrider"] = {
+			["Ashenvale Wrecker"] = {
 				["players"] = {
-					["Ruffinton"] = {
-						["taken"] = 31534,
+					["Maestra's Post Sentinel"] = {
+						["taken"] = 1135,
 						["done"] = 0,
-						["class"] = "ROGUE",
 						["role"] = "NONE",
+					},
+					["Ruffinton"] = {
+						["taken"] = 9190,
+						["done"] = 3380,
+						["role"] = "NONE",
+						["class"] = "ROGUE",
 					},
 				},
 				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 31534,
 				["htakenspell"] = {
 				},
+				["taken"] = 10325,
+				["done"] = 3380,
 				["htaken"] = 0,
-				["done"] = 0,
+				["hdonespell"] = {
+				},
 			},
 			["Wildthorn Stalker"] = {
 				["players"] = {
@@ -10514,11 +10514,11 @@ SkadaPerCharDB = {
 				["htaken"] = 1750,
 				["done"] = 0,
 			},
-			["Enraged Tidal Spirit"] = {
+			["Fire Elemental Rager"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 5789,
-						["done"] = 1233,
+						["taken"] = 1201,
+						["done"] = 59,
 						["class"] = "ROGUE",
 						["role"] = "NONE",
 					},
@@ -10526,8 +10526,8 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 5789,
-				["done"] = 1233,
+				["taken"] = 1201,
+				["done"] = 59,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -11010,25 +11010,23 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Cursive-Bloodhoof"] = {
+			["Wolfmaw Outrider"] = {
 				["players"] = {
-				},
-				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Rebel Valor"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 41,
-						["hits"] = 1,
+					["Ruffinton"] = {
+						["taken"] = 31534,
+						["done"] = 0,
+						["class"] = "ROGUE",
+						["role"] = "NONE",
 					},
 				},
-				["htaken"] = 0,
+				["hdone"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 31534,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
 			},
 			["Warsong Demolisher"] = {
 				["players"] = {
@@ -11048,24 +11046,6 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Fire Elemental Remnant"] = {
-				["players"] = {
-					["Ruffinton"] = {
-						["taken"] = 3232,
-						["done"] = 519,
-						["class"] = "ROGUE",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 3232,
-				["done"] = 519,
-				["htaken"] = 0,
-				["htakenspell"] = {
-				},
-			},
 			["Rampaging Worgen"] = {
 				["players"] = {
 					["Ruffinton"] = {
@@ -11082,6 +11062,26 @@ SkadaPerCharDB = {
 				["done"] = 64,
 				["htaken"] = 0,
 				["htakenspell"] = {
+				},
+			},
+			["Cursive-Bloodhoof"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Rebel Valor"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 41,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
 				},
 			},
 			["Painmaster Thundrak"] = {
@@ -11158,11 +11158,11 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Chief Bombgineer Sploder"] = {
+			["Ogre Minion"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 7643,
-						["done"] = 2324,
+						["taken"] = 3009,
+						["done"] = 445,
 						["class"] = "ROGUE",
 						["role"] = "NONE",
 					},
@@ -11170,11 +11170,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 7643,
-				["done"] = 2324,
-				["htaken"] = 0,
+				["taken"] = 3009,
 				["htakenspell"] = {
 				},
+				["htaken"] = 0,
+				["done"] = 445,
 			},
 			["Lenona-Area52"] = {
 				["players"] = {
@@ -11214,23 +11214,23 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Forsaken Looter"] = {
+			["Wrathtail Priestess"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 6947,
-						["done"] = 3104,
-						["role"] = "NONE",
+						["taken"] = 1548,
+						["done"] = 851,
 						["class"] = "ROGUE",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 3104,
-				["taken"] = 6947,
+				["hdonespell"] = {
+				},
+				["taken"] = 1548,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["hdonespell"] = {
-				},
+				["done"] = 851,
 			},
 			["Thistlefur Pathfinder"] = {
 				["players"] = {
@@ -11250,11 +11250,11 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Wrathtail Priestess"] = {
+			["Twilight Zealot"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 1548,
-						["done"] = 851,
+						["taken"] = 9799,
+						["done"] = 1419,
 						["class"] = "ROGUE",
 						["role"] = "NONE",
 					},
@@ -11262,11 +11262,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 1548,
+				["taken"] = 9799,
+				["done"] = 1419,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 851,
 			},
 			["Corrupted Blackwood"] = {
 				["players"] = {
@@ -11314,11 +11314,11 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Fleetfoot"] = {
+			["Unbound Fire Elemental"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 1389,
-						["done"] = 138,
+						["taken"] = 10118,
+						["done"] = 2807,
 						["class"] = "ROGUE",
 						["role"] = "NONE",
 					},
@@ -11326,11 +11326,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 1389,
+				["taken"] = 10118,
+				["done"] = 2807,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 138,
 			},
 			["Sheepraider-Stormrage"] = {
 				["players"] = {
@@ -11372,23 +11372,23 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Withered Ancient"] = {
+			["Fleetfoot"] = {
 				["players"] = {
 					["Ruffinton"] = {
-						["taken"] = 4055,
-						["done"] = 847,
-						["role"] = "NONE",
+						["taken"] = 1389,
+						["done"] = 138,
 						["class"] = "ROGUE",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 847,
-				["taken"] = 4055,
+				["hdonespell"] = {
+				},
+				["taken"] = 1389,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["hdonespell"] = {
-				},
+				["done"] = 138,
 			},
 			["Whatsfrost-Stormrage"] = {
 				["players"] = {

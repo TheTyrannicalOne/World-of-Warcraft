@@ -54,6 +54,7 @@ P["sle"] = {
 				["yOffset"] = 0,
 			},
 			["corruption"] = {
+				["position"] = "SLE",
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 				["font"] = "PT Sans Narrow",
@@ -61,6 +62,15 @@ P["sle"] = {
 				["fontStyle"] = "OUTLINE",
 				["valueColor"] = false,
 				["style"] = "TOTAL",
+			},
+			["corruptionText"] = {
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+				["font"] = "PT Sans Narrow",
+				["fontSize"] = 12,
+				["fontStyle"] = "OUTLINE",
+				["style"] = "AMOUNT/SPELL",
+				["icon"] = false,
 			},
 			["background"] = {
 				["selectedBG"] = "Space",
@@ -101,6 +111,15 @@ P["sle"] = {
 				["enableArrow"] = true,
 				["glowNumber"] = 4,
 				["glowOffset"] = 1,
+			},
+			["corruptionText"] = {
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+				["font"] = "PT Sans Narrow",
+				["fontSize"] = 12,
+				["fontStyle"] = "OUTLINE",
+				["style"] = "AMOUNT/SPELL",
+				["icon"] = false,
 			},
 			["background"] = {
 				["selectedBG"] = "Space",

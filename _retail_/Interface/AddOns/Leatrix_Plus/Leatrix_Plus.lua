@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.13 (8th April 2020)
+-- 	Leatrix Plus 8.3.14 (15th April 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.3.13"
+	LeaPlusLC["AddonVer"] = "8.3.14"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -756,6 +756,15 @@
 					-- Mekgineer's Chopper/Mechano Hog/Chauffeured (sound/vehicles/motorcyclevehicle, sound/vehicles)
 					"motorcyclevehicleattackthrown.ogg#569858", "motorcyclevehiclejumpend1.ogg#569863", "motorcyclevehiclejumpend2.ogg#569857", "motorcyclevehiclejumpend3.ogg#569855", "motorcyclevehiclejumpstart1.ogg#569856", "motorcyclevehiclejumpstart2.ogg#569862", "motorcyclevehiclejumpstart3.ogg#569860", "motorcyclevehicleloadthrown.ogg#569861", "motorcyclevehiclestand.ogg#569859", "motorcyclevehiclewalkrun.ogg#569854", "vehicle_ground_gearshift_1.ogg#598748", "vehicle_ground_gearshift_2.ogg#598736", "vehicle_ground_gearshift_3.ogg#569852", "vehicle_ground_gearshift_4.ogg#598745", "vehicle_ground_gearshift_5.ogg#569845",
 
+					-- Alliance Chopper (sound/vehicles/veh_alliancechopper)
+					"veh_alliancechopper_revs01.ogg#1046321", "veh_alliancechopper_revs02.ogg#1046322", "veh_alliancechopper_revs03.ogg#1046323", "veh_alliancechopper_revs04.ogg#1046324", "veh_alliancechopper_revs05.ogg#1046325", "veh_alliancechopper_idle.ogg#1046320", "veh_alliancechopper_summon.ogg#1046327", "veh_alliancechopper_run_constant.ogg#1046326",
+
+					-- Horde Chopper (sound/vehicles)
+					"veh_hordechopper_rev01.ogg#1045061", "veh_hordechopper_rev02.ogg#1045062", "veh_hordechopper_rev03.ogg#1045063", "veh_hordechopper_rev04.ogg#1045064", "veh_hordechopper_rev05.ogg#1045065", "veh_hordechopper_idle.ogg#1046318", "veh_hordechopper_dismount.ogg#1045060", "veh_hordechopper_summon.ogg#1045070", "veh_hordechopper_jumpstart.ogg#1046319", "veh_hordechopper_run_constant.ogg#1045066", "veh_hordechopper_run_gearchange01.ogg#1045067", "veh_hordechopper_run_gearchange02.ogg#1045068", "veh_hordechopper_run_gearchange03.ogg#1045069",
+
+					-- Summon and dismount (sound/doodad)
+					"go_6ih_ironhorde_troopboat_open01.ogg#975574", "go_6ih_ironhorde_troopboat_open02.ogg#975576", "go_6ih_ironhorde_troopboat_open03.ogg#975578",
+
 				},
 
 			}
@@ -784,7 +793,7 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 16, -152, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 16, -172, false, "If checked, battle shouts heard when casting specific spells will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteMounts", "Mounts", 16, -192, false, "If checked, talking mounts will be muted.|n|nThis applies to Ban-Lu.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 16, -212, false, "If checked, most of the Mekgineer's Chopper and Mechano Hog sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 16, -212, false, "If checked, most of the bike mount sounds will be muted.")
 
 			-- Function to mute and unmute sounds
 			local function SetupMute()
@@ -3772,6 +3781,18 @@
 			-- Create configuration panel
 			local SideFrames = LeaPlusLC:CreatePanel("Manage frames", "SideFrames")
 
+			-- Create Dominos Encounter warning
+			local dominosFrame = CreateFrame("FRAME", nil, SideFrames)
+			dominosFrame:SetAllPoints()
+			dominosFrame:Hide()
+			LeaPlusLC:MakeTx(dominosFrame, "Warning", 16, -172)
+			LeaPlusLC:MakeWD(dominosFrame, "Dominos Encounter needs to be disabled.", 16, -192, 500)
+			dominosFrame.btn = LeaPlusLC:CreateButton("fixDominosBtn", dominosFrame, "Okay, disable Dominos Encounter for me", "TOPLEFT", 16, -212, 0, 25, true, "Click to disable Dominos Encounter for all characters on this realm.  This is required for the player power bar position to be saved correctly.  Your UI will be reloaded.")
+			dominosFrame.btn:SetScript("OnClick", function()
+				DisableAddOn("Dominos_Encounter", true)
+				ReloadUI()
+			end)
+
 			-- Variable used to store currently selected frame
 			local currentframe
 
@@ -4063,6 +4084,13 @@
 							LeaPlusDB["Frames"][vf]["Point"], void, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"] = _G[vf]:GetPoint()
 						end
 					else
+						-- Show Dominos Encounter warning if Dominos Encounter is installed
+						if select(2, GetAddOnInfo("Dominos_Encounter")) then
+							if IsAddOnLoaded("Dominos_Encounter") then
+								dominosFrame:Show()
+							end
+						end
+
 						-- Show mover frame
 						SideFrames:Show()
 						LeaPlusLC:HideFrames()

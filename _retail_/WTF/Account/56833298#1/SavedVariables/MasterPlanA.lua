@@ -63,13 +63,13 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["lastCacheTime"] = 1462930208,
 			["summary"] = {
-				["tt1"] = true,
 				["ti1"] = 118530,
+				["tt1"] = true,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["tt3"] = true,
 				["ti3"] = 127855,
+				["tt3"] = true,
 			},
 			["faction"] = "Horde",
 		},
@@ -109,14 +109,16 @@ MasterPlanAG = {
 			["class"] = "WARLOCK",
 		},
 	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
+		},
+	},
 	["Darkspear"] = {
 		["Shathiel"] = {
 			["faction"] = "Alliance",
 			["class"] = "MAGE",
-		},
-		["Brewnheimer"] = {
-			["class"] = "SHAMAN",
-			["faction"] = "Alliance",
 		},
 		["Dialdaas"] = {
 			["class"] = "PALADIN",
@@ -126,11 +128,9 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 			["class"] = "HUNTER",
 		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
+		["Brewnheimer"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
 		},
 	},
 	["Dalaran"] = {
@@ -139,8 +139,8 @@ MasterPlanAG = {
 			["class"] = "MONK",
 		},
 		["Ruffinton"] = {
-			["faction"] = "Alliance",
 			["class"] = "ROGUE",
+			["faction"] = "Alliance",
 		},
 		["Tynster"] = {
 			["class"] = "PRIEST",
@@ -151,8 +151,8 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 		["Darnastris"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 		["Malivant"] = {
 			["faction"] = "Alliance",
@@ -171,16 +171,16 @@ MasterPlanAG = {
 			["class"] = "MAGE",
 		},
 		["Thorinbane"] = {
-			["class"] = "WARRIOR",
 			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
 		},
 		["Narisaric"] = {
 			["class"] = "DRUID",
 			["faction"] = "Alliance",
 		},
 		["Tinkster"] = {
-			["class"] = "WARLOCK",
 			["faction"] = "Alliance",
+			["class"] = "WARLOCK",
 		},
 	},
 	["Sargeras"] = {
@@ -195,23 +195,25 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["curOil"] = 84420,
+			["faction"] = "Horde",
 			["summary"] = {
-				["lastOilTime"] = 1586787716,
+				["lastOilTime"] = 1587008854,
 				["inProgress"] = {
-					[668] = 1586843951,
-					[381] = 1586856061,
-					[503] = 1586841659,
-					[542] = 1586848920,
-					[402] = 1586841656,
-					[745] = 1586852516,
-					[619] = 1586884918,
-					[538] = 1586848922,
-					[670] = 1586865561,
-					[482] = 1586841704,
-					[303] = 1586841694,
-					[394] = 1586848853,
-					[179] = 1586840335,
+					[260] = 1587023234,
+					[745] = 1587073654,
+					[192] = 1587012405,
+					[264] = 1587037643,
+					[543] = 1587037657,
+					[621] = 1587073656,
+					[588] = 1587016051,
+					[684] = 1587030390,
+					[570] = 1587023252,
+					[188] = 1587011509,
+					[391] = 1587037596,
+					[302] = 1587030427,
+					[673] = 1587023218,
+					[259] = 1587023230,
+					[399] = 1587044794,
 				},
 				["ti3"] = 127855,
 				["ti2"] = 122486,
@@ -220,11 +222,11 @@ MasterPlanAG = {
 				["tt3"] = 1586660778,
 				["tt2"] = 1586061036,
 			},
-			["faction"] = "Horde",
+			["curOil"] = 84830,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1586820039,
-			["curRes"] = 7757,
 			["class"] = "WARRIOR",
+			["curRes"] = 8722,
+			["lastCacheTime"] = 1587009043,
 		},
 	},
 }

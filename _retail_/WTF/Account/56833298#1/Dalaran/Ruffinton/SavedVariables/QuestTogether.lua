@@ -10,7 +10,7 @@ QuestTogether = {
 		[13922] = {
 			["title"] = "In the Hands of the Perverse",
 			["objectives"] = {
-				"0/5 Fallen Moonstone", -- [1]
+				"0/5  ", -- [1]
 			},
 		},
 		[26479] = {

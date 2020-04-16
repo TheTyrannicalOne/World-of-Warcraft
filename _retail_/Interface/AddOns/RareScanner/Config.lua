@@ -495,7 +495,7 @@ local function GetDisplayOptions()
 					name = AL["DISPLAY_BUTTON_SCALE"],
 					desc = AL["DISPLAY_BUTTON_SCALE_DESC"],
 					min	= 0.4,
-					max	= 1,
+					max	= 1.4,
 					step = 0.01,
 					bigStep = 0.05,
 					get = function() return private.db.display.scale end,

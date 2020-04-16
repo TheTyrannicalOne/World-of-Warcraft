@@ -1,8 +1,9 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
+	},
+	["KOSData"] = {
 	},
 	["PlayerData"] = {
 		["Annarine-Ysera"] = {
@@ -436,5 +437,4 @@ SpyPerCharDB = {
 			["name"] = "Yzabel-Zul'jin",
 		},
 	},
-	["version"] = "1.1",
 }

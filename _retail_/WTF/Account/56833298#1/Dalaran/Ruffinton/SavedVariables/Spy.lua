@@ -1,8 +1,9 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
+	},
+	["KOSData"] = {
 	},
 	["PlayerData"] = {
 		["Minum-Nazjatar"] = {
@@ -311,5 +312,4 @@ SpyPerCharDB = {
 			["time"] = 1586740052,
 		},
 	},
-	["version"] = "1.1",
 }

@@ -29,6 +29,15 @@ local Difficulties = {
 	[23] = 'mythic', --5ppl mythic
 	[24] = 'timewalking', --Timewalking
 	[33] = 'timewalking', -- Timewalking Raids
+	[34] = "pvp",
+	[38] = "normal", -- Normal Scenario (Islands)
+	[39] = "heroic", -- Heroic Scenario (Islands)
+	[40] = "mythic", -- Mythic Scenario (Islands)
+	[45] = "pvp", -- PvP Scenario (Islands)
+	[147] = "normal", -- Warfront
+	[149] = "heroic", -- Heroic Warfront
+	[151] = "timewalking", -- LFR Timewalking Raids
+	[152] = "horrificvision", -- Horrific Vision of Stormwind|Orgrimmar
 }
 
 --Table of tags conditions for gear switching
@@ -120,6 +129,10 @@ EM.TagsTable = {
 		else
 			return false;
 		end
+	end,
+	["effectivelevel"] = function(level)
+		local _level = T.UnitEffectiveLevel("player")
+		return _level == tonumber(level)
 	end,
 	--Well, it's just true :D
 	["NoCondition"] = function()
@@ -236,6 +249,8 @@ function EM:TagsConditionsCheck(data)
 	end
 end
 
+local equippedSets = {}
+
 --Equipping stuff
 local function Equip(event)
 	--If equip is in process or lock button is checked, then return
@@ -258,14 +273,13 @@ local function Equip(event)
 	end
 
 	--Figuring out the hell should be equipped
-	local equippedSet
+	T.wipe(equippedSets)
 	local equipmentSetIDs = C_EquipmentSet.GetEquipmentSetIDs()
 	--If any actual equip set is on
 	for index = 1, C_EquipmentSet.GetNumEquipmentSets() do
 		local name, _, _, isEquipped = C_EquipmentSet.GetEquipmentSetInfo(equipmentSetIDs[index]);
-		if isEquipped then --Set found, leaving
-			equippedSet = name
-			break
+		if isEquipped then --Set found
+			T.tinsert(equippedSets, name)
 		end
 	end
 	--What actually should be equipped, based on tags
@@ -276,7 +290,7 @@ local function Equip(event)
 		local SetID = C_EquipmentSet.GetEquipmentSetID(trueSet)
 		if SetID then
 			--If it is not what's equipped right now, then put it on.
-			if not equippedSet or (equippedSet and trueSet ~= equippedSet) then
+			if #equippedSets == 0 or not T.tContains(equippedSets, trueSet) then
 				C_EquipmentSet.UseEquipmentSet(SetID)
 			end
 		else
@@ -327,6 +341,14 @@ function EM:UpdateTags()
 	Equip()
 end
 
+EM.Events = {}
+function EM:RegisterNewEvent(event)
+	if not self.Events[event] then
+		self:RegisterEvent(event, Equip)
+		self.Events[event] = true
+	end
+end
+
 function EM:Initialize()
 	EM.db = E.private.sle.equip
 	EM.lock = false
@@ -336,6 +358,7 @@ function EM:Initialize()
 	self:RegisterEvent("LOADING_SCREEN_DISABLED", Equip)
 	self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED", Equip)
 	self:RegisterEvent("ZONE_CHANGED", Equip)
+	self:RegisterEvent("PLAYER_LEVEL_CHANGED", Equip)
 
 	--Initial apply options
 	EM:TagsProcess(EM.db.conditions)

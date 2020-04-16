@@ -97,6 +97,10 @@ function IA:BuildLayout()
 
 			Slot.TransmogInfo:Hide()
 		end
+
+		--<<Corruption>>--
+		Slot["CorText"] = Slot:CreateFontString(nil, "OVERLAY")
+		Slot["CorText"]:FontTemplate(E.LSM:Fetch('font', E.db.sle.armory.inspect.corruptionText.font), E.db.sle.armory.inspect.corruptionText.fontSize, E.db.sle.armory.inspect.corruptionText.fontStyle)
 	end
 
 	do --<<Check Transmog>>--
@@ -149,7 +153,8 @@ end
 function IA:Update_ItemLevel()
 	for i, SlotName in T.pairs(Armory.Constants.GearList) do
 		local Slot = _G["Inspect"..SlotName]
-		
+		if not Slot then return end
+
 		if Slot.iLvlText then
 			Slot.iLvlText:ClearAllPoints()
 			Slot.iLvlText:Point("TOP"..Slot.Direction, _G["Inspect"..SlotName], "TOP"..(Slot.Direction == "LEFT" and "RIGHT" or "LEFT"), Slot.Direction == "LEFT" and 2+E.db.sle.armory.inspect.ilvl.xOffset or -2-E.db.sle.armory.inspect.ilvl.xOffset, -1+E.db.sle.armory.inspect.ilvl.yOffset)
@@ -160,7 +165,8 @@ end
 function IA:Update_Enchant()
 	for i, SlotName in T.pairs(Armory.Constants.GearList) do
 		local Slot = _G["Inspect"..SlotName]
-		
+		if not Slot then return end
+
 		if Slot.enchantText then
 			Slot.enchantText:ClearAllPoints()
 			Slot.enchantText:Point(Slot.Direction, _G["Inspect"..SlotName], Slot.Direction == "LEFT" and "RIGHT" or "LEFT", Slot.Direction == "LEFT" and 2+E.db.sle.armory.inspect.enchant.xOffset or -2-E.db.sle.armory.inspect.enchant.xOffset, 1+E.db.sle.armory.inspect.enchant.yOffset)
@@ -168,10 +174,23 @@ function IA:Update_Enchant()
 	end
 end
 
+function IA:Update_SlotCorruption()
+	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+		local Slot = _G["Inspect"..SlotName]
+		if not Slot then return end
+
+		if Slot.CorText then
+			Slot.CorText:ClearAllPoints()
+			Slot.CorText:Point("TOP"..Slot.Direction, Slot, "TOP"..(Slot.Direction == "LEFT" and "RIGHT" or "LEFT"), Slot.Direction == "LEFT" and 25+E.db.sle.armory.inspect.corruptionText.xOffset or -25-E.db.sle.armory.inspect.corruptionText.xOffset, -1+E.db.sle.armory.inspect.corruptionText.yOffset)
+		end
+	end
+end
+
 function IA:Update_Gems()
 	for i, SlotName in T.pairs(Armory.Constants.GearList) do
 		local Slot = _G["Inspect"..SlotName]
-		
+		if not Slot then return end
+
 		if Slot.textureSlot1 then
 			Slot.textureSlot1:ClearAllPoints()
 			Slot.textureSlot1:Point('BOTTOM'..Slot.Direction, _G["Inspect"..SlotName], "BOTTOM"..(Slot.Direction == "LEFT" and "RIGHT" or "LEFT"), Slot.Direction == "LEFT" and 2+E.db.sle.armory.inspect.gem.xOffset or -2-E.db.sle.armory.inspect.gem.xOffset, 2+E.db.sle.armory.inspect.gem.yOffset)
@@ -229,6 +248,7 @@ function IA:Enable()
 	IA:Update_ItemLevel()
 	IA:Update_Enchant()
 	IA:Update_Gems()
+	IA:Update_SlotCorruption()
 
 	if E.db.general.itemLevel.displayInspectInfo then M:UpdateInspectInfo() end
 end
@@ -278,6 +298,7 @@ function IA:ToggleArmory()
 	else
 		IA:Disable()
 	end
+	M:UpdateInspectPageFonts("Inspect")
 end
 
 function IA:PreSetup()

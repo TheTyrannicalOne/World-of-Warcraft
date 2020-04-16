@@ -15,6 +15,8 @@ local DefaultPosition = {
 }
 local PANEL_DEFAULT_WIDTH = PANEL_DEFAULT_WIDTH
 
+CA.HearthMilestonesCached = false
+
 --Adding new stuffs for armory only
 function CA:BuildLayout()
 
@@ -135,6 +137,10 @@ function CA:BuildLayout()
 
 			Slot.TransmogInfo:Hide()
 		end
+
+		--<<Corruption>>--
+		Slot["CorText"] = Slot:CreateFontString(nil, "OVERLAY")
+		Slot["CorText"]:FontTemplate(E.LSM:Fetch('font', E.db.sle.armory.character.corruptionText.font), E.db.sle.armory.character.corruptionText.fontSize, E.db.sle.armory.character.corruptionText.fontStyle)
 	end
 	
 	--<<<Hooking some shit!>>>--
@@ -180,6 +186,11 @@ function CA:BuildLayout()
 			E:Delay(1, function() _G["CharacterFrame"].SLE_Corruption.ThrottleRating = false end)
 		end
 	end)
+	if SLE._Compatibility["CorruptionTooltips"] then
+		local CT = LibStub("AceAddon-3.0"):GetAddon("CorruptionTooltips")
+		CT:SecureHookScript(_G["CharacterFrame"].SLE_Corruption, "OnEnter", "SummaryEnter")
+		CT:SecureHookScript(_G["CharacterFrame"].SLE_Corruption, "OnLeave", "SummaryLeave")
+	end
 
 	--deal with the events
 	_G["CharacterFrame"].SLE_Corruption:RegisterEvent("COMBAT_RATING_UPDATE");
@@ -251,6 +262,17 @@ function CA:Update_Enchant()
 	end
 end
 
+function CA:Update_SlotCorruption()
+	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+		local Slot = _G["Character"..SlotName]
+
+		if Slot.CorText then
+			Slot.CorText:ClearAllPoints()
+			Slot.CorText:Point("TOP"..Slot.Direction, Slot, "TOP"..(Slot.Direction == "LEFT" and "RIGHT" or "LEFT"), Slot.Direction == "LEFT" and 25+E.db.sle.armory.character.corruptionText.xOffset or -25-E.db.sle.armory.character.corruptionText.xOffset, -1+E.db.sle.armory.character.corruptionText.yOffset)
+		end
+	end
+end
+
 function CA:Update_Gems()
 	for i, SlotName in T.pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
@@ -289,10 +311,12 @@ function CA:UpdateCorruptionText()
 	local fontIlvl, sizeIlvl, outlineIlvl = E.db.sle.armory.character.corruption.font, E.db.sle.armory.character.corruption.fontSize, E.db.sle.armory.character.corruption.fontStyle
 	_G["CharacterFrame"].SLE_Corruption.Level:FontTemplate(E.LSM:Fetch('font', fontIlvl), sizeIlvl, outlineIlvl)
 	_G["CharacterFrame"].SLE_Corruption.Level:SetPoint("CENTER", _G["CharacterFrame"].SLE_Corruption, "CENTER", 1 + E.db.sle.armory.character.corruption.xOffset, 8 + E.db.sle.armory.character.corruption.yOffset)
+	CA.CorruptionFontSet = true
 end
 
 function CA:UpdateCorruptionLevel()
 	if SLE._Compatibility["DejaCharacterStats"] then return end --Shouldn't be required, just in case
+	if not CA.CorruptionFontSet then return end
 	local corruption = GetCorruption();
 	local corruptionResistance = GetCorruptionResistance();
 	local totalCorruption = math.max(corruption - corruptionResistance, 0);
@@ -306,6 +330,18 @@ function CA:UpdateCorruptionLevel()
 	elseif E.db.sle.armory.character.corruption.style == "Hide" then
 		_G["CharacterFrame"].SLE_Corruption.Level:SetText("")
 	end
+end
+
+--Fuck blizzard and theur moon logic
+function CA:FixFuckingBlizzardLogic()
+	local milestones = C_AzeriteEssence.GetMilestones();
+	if not milestones then return end
+	for i, milestoneInfo in ipairs(milestones) do
+		if milestoneInfo.slot then
+			T.tinsert(Armory.Constants.EssenceMilestones, milestoneInfo.ID)
+		end
+	end
+	CA.HearthMilestonesCached = true
 end
 
 function CA:Enable()
@@ -350,6 +386,7 @@ function CA:Enable()
 	CA:Update_ItemLevel()
 	CA:Update_Enchant()
 	CA:Update_Gems()
+	CA:Update_SlotCorruption()
 	CA:Update_Durability()
 
 	if E.db.general.itemLevel.displayCharacterInfo then M:UpdatePageInfo(_G["CharacterFrame"], "Character") end
@@ -402,6 +439,7 @@ function CA:ToggleArmory()
 	else
 		CA:Disable()
 	end
+	M:UpdateInspectPageFonts("Character")
 	CA:UpdateCorruptionText()
 	Armory:HandleCorruption()
 

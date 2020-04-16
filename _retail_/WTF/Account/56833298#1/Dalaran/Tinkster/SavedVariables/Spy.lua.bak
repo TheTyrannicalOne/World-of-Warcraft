@@ -1,10 +1,5 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
-	["KOSData"] = {
-	},
 	["PlayerData"] = {
 		["Krann-Aggramar"] = {
 			["mapID"] = 87,
@@ -115,5 +110,10 @@ SpyPerCharDB = {
 			["isGuess"] = true,
 			["subZone"] = "Ironforge",
 		},
+	},
+	["IgnoreData"] = {
+	},
+	["version"] = "1.1",
+	["KOSData"] = {
 	},
 }

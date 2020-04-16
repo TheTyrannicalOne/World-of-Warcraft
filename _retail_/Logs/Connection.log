@@ -1,32 +1,82 @@
-4/13 22:27:24.003  Connection Initialize
-4/13 22:27:29.679  Glue Start Login
-4/13 22:27:29.679  BattleNet Attempt Logon
-4/13 22:27:30.028  BattleNet Front Connected
-4/13 22:27:30.168  BattleNet Logon Queue Update
-4/13 22:27:30.603  BattleNet Logon Complete
-4/13 22:27:30.715  BattleNet Game Account Name
-4/13 22:27:30.779  BattleNet Game Account Name
-4/13 22:27:30.779  BattleNet Attempt Complete Login
-4/13 22:27:31.247  BattleNet Realm List Ticket
-4/13 22:27:31.358  BattleNet Sub Region List
-4/13 22:27:31.705  BattleNet Last Played Char
-4/13 22:27:31.784  BattleNet Last Played Char
-4/13 22:27:31.784  BattleNet Last Played Char
-4/13 22:27:31.900  BattleNet Last Played Char
-4/13 22:27:31.963  BattleNet Last Played Char
-4/13 22:27:31.963  BattleNet Join Realm
-4/13 22:27:32.104  BattleNet Realm Join
-4/13 22:27:32.104  Change Connection
-4/13 22:27:32.104  Connect
-4/13 22:27:53.110  Handle Cant Connect
-4/13 22:27:53.155  Handle Connect
-4/13 22:27:55.269  Handle Auth Response: 0
-4/13 22:27:55.269  Glue Authed To WoW: 0
-4/13 22:27:55.576  BattleNet Connected To Realm
-4/13 22:27:55.576  BattleNet Front Disconnecting
-4/13 22:27:55.655  BattleNet Front Disconnected
-4/13 22:27:55.994  Handle Char Enum
-4/13 23:59:55.685  Handle Logout Response: 0
-4/13 23:59:56.169  Handle Logout Complete
-4/14 00:00:07.156  Disconnect: 13
-4/14 00:00:07.156  Connection Destroy
+4/15 21:37:57.982  Connection Initialize
+4/15 21:38:03.565  Glue Start Login
+4/15 21:38:03.565  BattleNet Attempt Logon
+4/15 21:38:04.051  BattleNet Front Connected
+4/15 21:38:04.255  BattleNet Logon Queue Update
+4/15 21:38:04.633  BattleNet Logon Complete
+4/15 21:38:04.809  BattleNet Game Account Name
+4/15 21:38:04.809  BattleNet Game Account Name
+4/15 21:38:04.809  BattleNet Attempt Complete Login
+4/15 21:38:05.199  BattleNet Realm List Ticket
+4/15 21:38:05.293  BattleNet Sub Region List
+4/15 21:38:05.647  BattleNet Last Played Char
+4/15 21:38:05.708  BattleNet Last Played Char
+4/15 21:38:05.708  BattleNet Last Played Char
+4/15 21:38:05.865  BattleNet Last Played Char
+4/15 21:38:05.923  BattleNet Last Played Char
+4/15 21:38:05.923  BattleNet Join Realm
+4/15 21:38:06.135  BattleNet Realm Join
+4/15 21:38:06.135  Change Connection
+4/15 21:38:06.135  Connect
+4/15 21:38:27.140  Handle Cant Connect
+4/15 21:38:27.186  Handle Connect
+4/15 21:38:28.964  Handle Auth Response: 0
+4/15 21:38:28.964  Glue Authed To WoW: 0
+4/15 21:38:29.269  BattleNet Connected To Realm
+4/15 21:38:29.269  BattleNet Front Disconnecting
+4/15 21:38:29.334  BattleNet Front Disconnected
+4/15 21:38:29.714  Handle Char Enum
+4/15 21:38:31.797  BattleNet Request Change Realm List
+4/15 21:38:32.216  BattleNet Realm List Ticket
+4/15 21:38:32.935  BattleNet Sub Region List
+4/15 21:38:33.630  BattleNet Realm List
+4/15 21:38:33.932  BattleNet Realm List
+4/15 21:38:33.932  BattleNet Realm List
+4/15 21:38:34.088  BattleNet Realm List
+4/15 21:38:34.088  BattleNet Realm List
+4/15 21:38:41.203  BattleNet Join Realm
+4/15 21:38:41.822  BattleNet Realm Join
+4/15 21:38:41.822  Change Connection
+4/15 21:38:41.822  Handle Disconnect
+4/15 21:38:41.822  Connect
+4/15 21:39:02.827  Handle Cant Connect
+4/15 21:39:02.873  Handle Connect
+4/15 21:39:04.793  Handle Auth Response: 0
+4/15 21:39:04.793  Glue Authed To WoW: 0
+4/15 21:39:04.805  BattleNet Connected To Realm
+4/15 21:39:04.960  Handle Char Enum
+4/15 23:33:44.519  Handle Logout Response: 0
+4/15 23:33:45.051  Handle Logout Complete
+4/15 23:33:50.165  Handle Char Enum
+4/15 23:35:15.241  Handle Logout Response: 0
+4/15 23:35:15.573  Handle Logout Complete
+4/15 23:35:20.473  Handle Char Enum
+4/15 23:37:03.512  Handle Logout Response: 0
+4/15 23:37:03.960  Handle Logout Complete
+4/15 23:37:08.906  Handle Char Enum
+4/15 23:38:06.232  Handle Logout Response: 0
+4/15 23:38:06.763  Handle Logout Complete
+4/15 23:38:11.590  Handle Char Enum
+4/15 23:38:15.131  BattleNet Request Change Realm List
+4/15 23:38:15.325  BattleNet Realm List Ticket
+4/15 23:38:15.837  BattleNet Sub Region List
+4/15 23:38:16.575  BattleNet Realm List
+4/15 23:38:16.576  BattleNet Realm List
+4/15 23:38:16.576  BattleNet Realm List
+4/15 23:38:16.971  BattleNet Realm List
+4/15 23:38:16.971  BattleNet Realm List
+4/15 23:38:21.157  BattleNet Join Realm
+4/15 23:38:21.581  BattleNet Realm Join
+4/15 23:38:21.581  Change Connection
+4/15 23:38:21.581  Handle Disconnect
+4/15 23:38:21.581  Connect
+4/15 23:38:42.589  Handle Cant Connect
+4/15 23:38:42.631  Handle Connect
+4/15 23:38:44.395  Handle Auth Response: 0
+4/15 23:38:44.395  Glue Authed To WoW: 0
+4/15 23:38:44.410  BattleNet Connected To Realm
+4/15 23:38:44.513  Handle Char Enum
+4/15 23:52:09.501  Handle Logout Response: 0
+4/15 23:52:09.939  Handle Logout Complete
+4/15 23:52:23.443  Disconnect: 13
+4/15 23:52:23.443  Connection Destroy

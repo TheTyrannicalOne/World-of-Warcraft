@@ -52,6 +52,67 @@ Armory.Constants.EnchantableSlots = {
 Armory.Constants.Corruption = {
 	["DefaultX"] = 5, ["DefaultY"] = -8,
 }
+--First value is not really needed. I left it for reference rerasons
+Armory.Constants.CorruptionSpells = {
+	["6483"] = {"Avoidant", "I", 315607},
+	["6484"] = {"Avoidant", "II", 315608},
+	["6485"] = {"Avoidant", "III", 315609},
+	["6474"] = {"Expedient", "I", 315544},
+	["6475"] = {"Expedient", "II", 315545},
+	["6476"] = {"Expedient", "III", 315546},
+	["6471"] = {"Masterful", "I", 315529},
+	["6472"] = {"Masterful", "II", 315530},
+	["6473"] = {"Masterful", "III", 315531},
+	["6480"] = {"Severe", "I", 315554},
+	["6481"] = {"Severe", "II", 315557},
+	["6482"] = {"Severe", "III", 315558},
+	["6477"] = {"Versatile", "I", 315549},
+	["6478"] = {"Versatile", "II", 315552},
+	["6479"] = {"Versatile", "III", 315553},
+	["6493"] = {"Siphoner", "I", 315590},
+	["6494"] = {"Siphoner", "II", 315591},
+	["6495"] = {"Siphoner", "III", 315592},
+	["6437"] = {"Strikethrough", "I", 315277},
+	["6438"] = {"Strikethrough", "II", 315281},
+	["6439"] = {"Strikethrough", "III", 315282},
+	["6555"] = {"Racing Pulse", "I", 318266},
+	["6559"] = {"Racing Pulse", "II", 318492},
+	["6560"] = {"Racing Pulse", "III", 318496},
+	["6556"] = {"Deadly Momentum", "I", 318268},
+	["6561"] = {"Deadly Momentum", "II", 318493},
+	["6562"] = {"Deadly Momentum", "III", 318497},
+	["6558"] = {"Surging Vitality", "I", 318270},
+	["6565"] = {"Surging Vitality", "II", 318495},
+	["6566"] = {"Surging Vitality", "III", 318499},
+	["6557"] = {"Honed Mind", "I", 318269},
+	["6563"] = {"Honed Mind", "II", 318494},
+	["6564"] = {"Honed Mind", "III", 318498},
+	["6549"] = {"Echoing Void", "I", 318280},
+	["6550"] = {"Echoing Void", "II", 318485},
+	["6551"] = {"Echoing Void", "III", 318486},
+	["6552"] = {"Infinite Stars", "I", 318274},
+	["6553"] = {"Infinite Stars", "II", 318487},
+	["6554"] = {"Infinite Stars", "III", 318488},
+	["6547"] = {"Ineffable Truth", "I", 318303},
+	["6548"] = {"Ineffable Truth", "II", 318484},
+	["6537"] = {"Twilight Devastation", "I", 318276},
+	["6538"] = {"Twilight Devastation", "II", 318477},
+	["6539"] = {"Twilight Devastation", "III", 318478},
+	["6543"] = {"Twisted Appendage", "I", 318481},
+	["6544"] = {"Twisted Appendage", "II", 318482},
+	["6545"] = {"Twisted Appendage", "III", 318483},
+	["6540"] = {"Void Ritual", "I", 318286},
+	["6541"] = {"Void Ritual", "II", 318479},
+	["6542"] = {"Void Ritual", "III", 318480},
+	["6573"] = {"Gushing Wound", "", 318272},
+	["6546"] = {"Glimpse of Clarity", "", 318239},
+	["6571"] = {"Searing Flames", "", 318293},
+	["6572"] = {"Obsidian Skin", "", 316651},
+	["6567"] = {"Devour Vitality", "", 318294},
+	["6568"] = {"Whispered Truths", "", 316780},
+	["6570"] = {"Flash of Insight", "", 318299},
+	["6569"] = {"Lash of the Void", "", 317290},
+}
 
 Armory.Constants.AzeriteTraitAvailableColor = {0.95, 0.95, 0.32, 1}
 Armory.Constants.Character_Defaults_Cached = false
@@ -63,6 +124,8 @@ Armory.Constants.WarningTexture = [[Interface\AddOns\ElvUI\Media\Textures\Minima
 Armory.Constants.GradientTexture = [[Interface\AddOns\ElvUI_SLE\media\textures\armory\Gradation]]
 Armory.Constants.TransmogTexture = [[Interface\AddOns\ElvUI_SLE\media\textures\armory\anchor]]
 Armory.Constants.MaxGemSlots = 5
+Armory.Constants.EssenceMilestones = {}
+
 
 --Remembering default positions of stuff
 function Armory:BuildFrameDefaultsCache(which)
@@ -72,7 +135,7 @@ function Armory:BuildFrameDefaultsCache(which)
 		if not Slot then E:Delay(1, function() Armory:BuildFrameDefaultsCache(which) end); return end
 		Slot.Direction = i%2 == 1 and "LEFT" or "RIGHT"
 		if Slot.iLvlText then
-			Armory.Constants[which.."_Defaults"][SlotName]["iLvlText"] = { Slot.iLvlText:GetPoint() } 
+			Armory.Constants[which.."_Defaults"][SlotName]["iLvlText"] = { Slot.iLvlText:GetPoint() }
 			Armory.Constants[which.."_Defaults"][SlotName]["textureSlot1"] = { Slot.textureSlot1:GetPoint() }
 			for i = 2, 10 do
 				if Slot["textureSlot"..i] then Slot["textureSlot"..i]:ClearAllPoints(); Slot["textureSlot"..i]:Point(Slot.Direction, Slot["textureSlot"..(i-1)], Slot.Direction == "LEFT" and "RIGHT" or "LEFT", 0,0) end
@@ -88,7 +151,7 @@ end
 
 function Armory:ClearTooltip(Tooltip)
 	local TooltipName = Tooltip:GetName()
-	
+
 	Tooltip:ClearLines()
 	for i = 1, 10 do
 		_G[TooltipName.."Texture"..i]:SetTexture(nil)
@@ -114,12 +177,67 @@ function Armory:GetTransmogInfo(Slot, which, unit)
 	end
 end
 
+function Armory:GetCorruptionInfo(Slot, which, unit)
+	if not Slot.itemLink then return nil end 
+	if not which or not unit then return nil end
+	local window = T.lower(which)
+	if IsCorruptedItem(Slot.itemLink) or Slot.ID == 15 then
+		local TooltipText
+		Armory:ClearTooltip(Armory.ScanTT)
+		Armory.ScanTT:SetInventoryItem(unit, Slot.ID)
+
+		for i = 1, Armory.ScanTT:NumLines() do
+			TooltipText = _G["SLE_Armory_ScanTTTextLeft"..i]:GetText()
+
+			if TooltipText:match(ITEM_MOD_CORRUPTION_RESISTANCE) then
+				TooltipText = T.gsub(TooltipText, TooltipText:match(ITEM_MOD_CORRUPTION_RESISTANCE), "")
+				return "res", TooltipText, nil
+			elseif TooltipText:match(ITEM_MOD_CORRUPTION) then
+				TooltipText = T.gsub(TooltipText, TooltipText:match(ITEM_MOD_CORRUPTION), "")
+
+				--Iteration to get corruption spell from bunus ID. Got the script from suspctz
+				local itemSplit = SLE:GetItemSplit(Slot.itemLink)
+				local bonuses = {}
+				local corruptionSpell
+				
+				for index= 1, itemSplit[13] do
+					bonuses[#bonuses + 1] = itemSplit[13 + index]
+				end
+
+				if #bonuses > 0 then
+					local Spells = Armory.Constants.CorruptionSpells
+					for i, bonus_id in T.pairs(bonuses) do
+						bonus_id = T.tostring(bonus_id)
+						if Spells[bonus_id] ~= nil then
+							local name, rank, icon = T.GetSpellInfo(Spells[bonus_id][3])
+							if Spells[bonus_id][2] ~= "" then rank = Spells[bonus_id][2] else rank = "" end
+							if E.db.sle.armory[window].corruptionText.icon then
+								corruptionSpell = "|T"..icon..":0|t "..name.." "..rank
+							else
+								corruptionSpell = name.." "..rank
+							end
+						end
+					end
+				end
+
+				return "cor", TooltipText, corruptionSpell
+			end
+		end
+	end
+
+	return false, 0, nil
+end
+
 --Updates the frame
 function Armory:UpdatePageInfo(frame, which, guid, event)
 	if not (frame and which) then return end
-	if not Armory:CheckOptions(which) then return end 
+	if not Armory:CheckOptions(which) then return end
 	local window = T.lower(which)
 	local unit = (which == 'Character' and 'player') or frame.unit
+	if which == "Character" then
+		CA:Update_Durability()
+		CA:Update_SlotCorruption()
+	end
 	for i, SlotName in T.pairs(Armory.Constants.GearList) do
 		local Slot = _G[which..SlotName]
 		if Slot then
@@ -144,15 +262,35 @@ function Armory:UpdatePageInfo(frame, which, guid, event)
 					LCG.AutoCastGlow_Stop(Slot,"_TransmogGlow")
 				end
 			end
+			if Slot.CorText then --Setting corruption text if it actually exists for the slot
+				Slot.CorText:SetText("")
+				if E.db.sle.armory[window].corruptionText.style ~= "Hide" then
+					local isCorruption, CorValue, CorSpell = Armory:GetCorruptionInfo(Slot, which, unit)
+					if isCorruption then
+						if isCorruption == "cor" then
+							if E.db.sle.armory[window].corruptionText.style == "AMOUNT/SPELL" then
+								CorValue = CorValue..CorSpell
+							elseif E.db.sle.armory[window].corruptionText.style == "SPELL" then
+								CorValue = CorSpell or ""
+							end
+							CorValue = "|cff956DD1"..CorValue.."|r" --Color purple
+						else
+							if E.db.sle.armory[window].corruptionText.style == "SPELL" then CorValue = "" end
+							CorValue = "|cffFFD100"..CorValue.."|r" --Color yellow
+						end
+						Slot.CorText:SetText(CorValue)
+					end
+				end
+			end
 		end
 	end
-	if which == "Character" then CA:Update_Durability() end
-	Armory:UpdateSharedStringsFonts(which)
+	
 end
 
 --Updates ilvl and everything tied to the item somehow
 function Armory:UpdatePageStrings(i, iLevelDB, Slot, slotInfo, which)
 	if not Armory:CheckOptions(which) then return end
+	Slot.itemLink = T.GetInventoryItemLink((which == "Character" and "player") or _G["InspectFrame"].unit, Slot.ID)
 	if slotInfo.itemLevelColors then
 		local window = T.lower(which) --to know which settings table to use
 		if E.db.sle.armory[window] and E.db.sle.armory[window].enable then --If settings table actually exists and armory for it is enabled
@@ -202,14 +340,13 @@ end
 function Armory:UpdateGemInfo(Slot, which)
 	local unit = which == "Character" and "player" or (_G["InspectFrame"] and _G["InspectFrame"].unit)
 	if not unit then return end
-	local itemLink = T.GetInventoryItemLink(unit, Slot.ID)
 	for i = 1, Armory.Constants.MaxGemSlots do
 		local GemLink
 		if not Slot["SLE_Gem"..i] then return end
-		if itemLink then
+		if Slot.itemLink then
 			if Slot.ID == 2 then
+				if not CA.HearthMilestonesCached then CA:FixFuckingBlizzardLogic() end
 				local window = T.lower(which)
-				-- inspectItem["textureSlotBackdrop"..x]
 				if E.db.sle.armory[window] and E.db.sle.armory[window].enable then
 					if which == "Character" and Slot["textureSlotEssenceType"..i] then
 						Slot["textureSlotEssenceType"..i]:Hide()
@@ -217,36 +354,44 @@ function Armory:UpdateGemInfo(Slot, which)
 						Slot["textureSlotBackdrop"..i]:Hide()
 					end
 				end
-				if which == "Character" then
-					GemID = C_AzeriteEssence.GetMilestoneEssence(i+114) --Milestones are starting with 115, thus 114 + milestone
+				if which == "Character" and Armory.Constants.EssenceMilestones[i] then
+					GemID = C_AzeriteEssence.GetMilestoneEssence(Armory.Constants.EssenceMilestones[i]) --Blizz messed up milestones IDs so using a god damned cache table
 					if GemID then
 						local rank = C_AzeriteEssence.GetEssenceInfo(GemID).rank
 						GemLink = C_AzeriteEssence.GetEssenceHyperlink(GemID, rank)
 					end
 				end
 			else
-				GemLink = T.select(2, GetItemGem(itemLink, i))
+				GemLink = T.select(2, GetItemGem(Slot.itemLink, i))
 			end
 		end
 		Slot["SLE_Gem"..i].Link = GemLink
 	end
 end
 
+function Armory:CreateSlotStrings(_, which)
+	Armory:UpdateSharedStringsFonts(which)
+end
+
 function Armory:UpdateSharedStringsFonts(which)
 	local window = T.lower(which)
 	for i, SlotName in T.pairs(Armory.Constants.GearList) do
 		local Slot = _G[which..SlotName]
+		if not Slot then return end
 		if Slot.iLvlText then
-			local fontIlvl, sizeIlvl, outlineIlvl, fontEnch, sizeEnch, outlineEnch
+			local fontIlvl, sizeIlvl, outlineIlvl, fontEnch, sizeEnch, outlineEnch, fontCor, sizeCor, outlineCor
 			if E.db.sle.armory[window].enable then
 				fontIlvl, sizeIlvl, outlineIlvl = E.db.sle.armory[window].ilvl.font, E.db.sle.armory[window].ilvl.fontSize, E.db.sle.armory[window].ilvl.fontStyle
 				fontEnch, sizeEnch, outlineEnch = E.db.sle.armory[window].enchant.font, E.db.sle.armory[window].enchant.fontSize, E.db.sle.armory[window].enchant.fontStyle
+				fontCor, sizeCor, outlineCor = E.db.sle.armory[window].corruptionText.font, E.db.sle.armory[window].corruptionText.fontSize, E.db.sle.armory[window].corruptionText.fontStyle
 			else
 				fontIlvl, sizeIlvl, outlineIlvl = E.db.general.itemLevel.itemLevelFont, E.db.general.itemLevel.itemLevelFontSize or 12, E.db.general.itemLevel.itemLevelFontOutline or "OUTLINE"
 				fontEnch, sizeEnch, outlineEnch = E.db.general.itemLevel.itemLevelFont, E.db.general.itemLevel.itemLevelFontSize or 12, E.db.general.itemLevel.itemLevelFontOutline or "OUTLINE"
+				fontCor, sizeCor, outlineCor = E.db.general.itemLevel.itemLevelFont, E.db.general.itemLevel.itemLevelFontSize or 12, E.db.general.itemLevel.itemLevelFontOutline or "OUTLINE"
 			end
 			Slot.iLvlText:FontTemplate(E.LSM:Fetch('font', fontIlvl), sizeIlvl, outlineIlvl)
 			Slot.enchantText:FontTemplate(E.LSM:Fetch('font', fontEnch), sizeEnch, outlineEnch)
+			if Slot.CorText then Slot.CorText:FontTemplate(E.LSM:Fetch('font', fontCor), sizeCor, outlineCor) end
 		end
 	end
 end
@@ -254,16 +399,14 @@ end
 --Deals with dem enchants
 function Armory:ProcessEnchant(which, Slot, enchantTextShort, enchantText)
 	if not E.db.sle.armory.enchantString.enable then return end
-	-- if E.db.sle.armory.enchantString.fullText then
-		if E.db.sle.armory.enchantString.replacement then
-			for enchString, enchData in T.pairs(SLE_ArmoryDB.EnchantString) do
-				if enchData.original and enchData.new then
-					enchantText = T.gsub(enchantText, enchData.original, enchData.new)
-				end
+	if E.db.sle.armory.enchantString.replacement then
+		for enchString, enchData in T.pairs(SLE_ArmoryDB.EnchantString) do
+			if enchData.original and enchData.new then
+				enchantText = T.gsub(enchantText, enchData.original, enchData.new)
 			end
 		end
-		Slot.enchantText:SetText(enchantText)
-	-- end
+	end
+	Slot.enchantText:SetText(enchantText)
 end
 
 ---<<<Global Hide tooltip func for armory>>>---
@@ -273,7 +416,6 @@ end
 
 ---<<<Show Gem on mouse over>>>---
 function Armory:Gem_OnEnter()
-	-- print(self.Link)
 	if E.db.sle.armory[self.frame].enable and self.Link then --Only do stuff if armory is enabled or the gem is present
 		_G["GameTooltip"]:SetOwner(self, 'ANCHOR_RIGHT')
 		_G["GameTooltip"]:SetHyperlink(self.Link)
@@ -316,7 +458,7 @@ end
 
 function Armory:Transmog_OnClick(button)
 	local ItemName, ItemLink = T.GetItemInfo(self.Link)
-	
+
 	if not IsShiftKeyDown() then
 		T.SetItemRef(ItemLink, ItemLink, 'LeftButton')
 	else
@@ -338,14 +480,13 @@ function Armory:CheckForMissing(which, Slot, iLvl, gems, essences, enchant)
 	if not SlotName then return end --No slot?
 	local noChant, noGem = false, false
 	if iLvl and Armory.Constants.EnchantableSlots[SlotName] and not enchant then --Item should be enchanted, but no string actually sent. This bastard is slacking
-		local itemLink = T.GetInventoryItemLink(which == "Character" and "player" or _G["InspectFrame"].unit, Slot.ID)
-		local classID, subclassID = T.select(12, GetItemInfo(itemLink))
+		local classID, subclassID = T.select(12, GetItemInfo(Slot.itemLink))
 		if (classID == 4 and subclassID == 6) or (classID == 4 and subclassID == 0 and Slot.ID == 17) then --Shields are special
 			noChant = false
 		else
 			noChant = true
 		end
-	end 
+	end
 	if gems and Slot.ID ~= 2 then --If gems found and not neck
 		for i = 1, Armory.Constants.MaxGemSlots do
 			local texture = Slot["textureSlot"..i]
@@ -399,7 +540,7 @@ function Armory:HandleCorruption()
 	local CorruptionIcon = _G["CharacterFrame"].SLE_Corruption
 	CorruptionIcon:ClearAllPoints()
 	CorruptionIcon:SetParent(_G["SLE_Armory_Scroll"])
-	if E.db.sle.armory.character.enable or E.db.sle.armory.stats.enable then
+	if E.db.sle.armory.character.corruption.position == "SLE" and (E.db.sle.armory.character.enable or E.db.sle.armory.stats.enable) then
 		CorruptionIcon:SetPoint("LEFT", _G["CharacterFrame"], "TOPRIGHT", -34, -54)
 	else
 		CorruptionIcon:SetPoint("RIGHT", _G["CharacterStatsPane"].ItemLevelFrame, "RIGHT", Armory.Constants.Corruption.DefaultX, Armory.Constants.Corruption.DefaultY)
@@ -416,6 +557,8 @@ function Armory:Initialize()
 	hooksecurefunc(M, "UpdatePageInfo", Armory.UpdatePageInfo)
 	hooksecurefunc(M, "UpdatePageStrings", Armory.UpdatePageStrings)
 	hooksecurefunc(M, "ToggleItemLevelInfo", Armory.ToggleItemLevelInfo)
+	hooksecurefunc(M, "UpdateInspectPageFonts", Armory.UpdateSharedStringsFonts)
+	hooksecurefunc(M, "CreateSlotStrings", Armory.CreateSlotStrings)
 
 	if Armory:CheckOptions("Character") then
 		CA = SLE:GetModule("Armory_Character")

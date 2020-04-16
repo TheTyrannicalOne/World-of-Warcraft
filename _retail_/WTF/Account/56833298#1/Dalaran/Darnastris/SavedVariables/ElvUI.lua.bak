@@ -1,12 +1,12 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/opie", -- [1]
-		"/fishingbuddy", -- [2]
-		"/kb", -- [3]
-		"/train", -- [4]
-		"/dance", -- [5]
-		"/sleep", -- [6]
+		"/sleep", -- [1]
+		"/dance", -- [2]
+		"/fishingbuddy", -- [3]
+		"/opie", -- [4]
+		"/kb", -- [5]
+		"/train", -- [6]
 	},
 	["ChatHistoryLog"] = {
 		{
