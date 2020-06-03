@@ -12,10 +12,8 @@ local L = WeakAuras.L
 	L["%i auras selected"] = "%i auras sélectionnées"
 	L["%i Matches"] = "%i Correspondances"
 	L["%s - Option #%i has the key %s. Please choose a different option key."] = "%s - L'option #%i est attribuée à la touche %s. Veuillez choisir une touche différente."
-	--[[Translation missing --]]
-	L["%s %s, Lines: %d, Frequency: %0.2f, Length: %d, Thickness: %d"] = "%s %s, Lines: %d, Frequency: %0.2f, Length: %d, Thickness: %d"
-	--[[Translation missing --]]
-	L["%s %s, Particles: %d, Frequency: %0.2f, Scale: %0.2f"] = "%s %s, Particles: %d, Frequency: %0.2f, Scale: %0.2f"
+	L["%s %s, Lines: %d, Frequency: %0.2f, Length: %d, Thickness: %d"] = "%s %s, Lignes : %d, Fréquence : %0.2f, Longueur : %d, Epaisseur : %d"
+	L["%s %s, Particles: %d, Frequency: %0.2f, Scale: %0.2f"] = "%s %s, Particules : %d, Fréquence : %0.2f, Échelle : %0.2f"
 	L["%s Alpha: %d%%"] = "%s opacité : %d%%"
 	L["%s Color"] = "%s Couleur"
 	--[[Translation missing --]]
@@ -27,10 +25,8 @@ local L = WeakAuras.L
 	--[[Translation missing --]]
 	L["%s Keep Aspect Ratio"] = "%s Keep Aspect Ratio"
 	L["%s total auras"] = "%s auras au total"
-	--[[Translation missing --]]
 	L["%s Zoom: %d%%"] = "%s Zoom: %d%%"
-	--[[Translation missing --]]
-	L["%s, Border"] = "%s, Border"
+	L["%s, Border"] = "%s, Bordure"
 	--[[Translation missing --]]
 	L["%s, Offset: %0.2f;%0.2f"] = "%s, Offset: %0.2f;%0.2f"
 	--[[Translation missing --]]
@@ -45,6 +41,8 @@ local L = WeakAuras.L
 	L["|cFFffcc00Anchors:|r Anchored to frame's |cFFFF0000%s|r with offset |cFFFF0000%s/%s|r"] = "|cFFffcc00Ancrages :|r Ancré au cadre de ... |cFFFF0000%s|r avec un décalage de |cFFFF0000%s/%s|r"
 	L["|cFFffcc00Extra Options:|r"] = "|cFFffcc00Options supplémentaires :|r"
 	--[[Translation missing --]]
+	L["|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s"] = "|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s"
+	--[[Translation missing --]]
 	L["|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s%s"] = "|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s%s"
 	L["1 Match"] = "1 Correspondance"
 	L["A 20x20 pixels icon"] = "Une icône de 20x20 pixels."
@@ -58,8 +56,7 @@ local L = WeakAuras.L
 	L["Add %s"] = "Ajouter %s"
 	L["Add a new display"] = "Ajouter un nouvel affichage"
 	L["Add Condition"] = "Ajouter une Condition"
-	--[[Translation missing --]]
-	L["Add Entry"] = "Add Entry"
+	L["Add Entry"] = "Ajouter une entrée"
 	L["Add Extra Elements"] = "Ajouter des éléments supplémentaires"
 	L["Add Option"] = "Ajouter Option"
 	L["Add Overlay"] = "Ajouter un Overlay"
@@ -81,10 +78,8 @@ local L = WeakAuras.L
 	L["Anchor Point"] = "Point d'ancrage"
 	L["Anchored To"] = "Ancré à"
 	L["And "] = "Et"
-	--[[Translation missing --]]
-	L["and aligned left"] = "and aligned left"
-	--[[Translation missing --]]
-	L["and aligned right"] = "and aligned right"
+	L["and aligned left"] = "et alignés à gauche"
+	L["and aligned right"] = "et alignés à droite"
 	--[[Translation missing --]]
 	L["and rotated left"] = "and rotated left"
 	--[[Translation missing --]]
@@ -346,6 +341,8 @@ Ne sautez pas cette version]=]
 	--[[Translation missing --]]
 	L["Filter by Class"] = "Filter by Class"
 	L["Filter by Group Role"] = "Filtrer par Rôle de Groupe"
+	--[[Translation missing --]]
+	L["Filter by Hostility"] = "Filter by Hostility"
 	L["Finish"] = "Finir"
 	L["Fire Orb"] = "Orbe de feu"
 	L["Font"] = "Police"
@@ -415,6 +412,8 @@ Si le nombre entré est decimal (ex. 0.5), une fraction (ex. 1/2), ou un pourcen
 	L["Hide When Not In Group"] = "Cacher hors d'un groupe"
 	L["Horizontal Align"] = "Aligner horizontalement"
 	L["Horizontal Bar"] = "Barre horizontale"
+	--[[Translation missing --]]
+	L["Hostility"] = "Hostility"
 	L["Huge Icon"] = "Énorme icône"
 	L["Hybrid Position"] = "Position hybride"
 	L["Hybrid Sort Mode"] = "Mode de tri hybride"
@@ -439,6 +438,10 @@ Si cette case est cochée, ce séparateur inclura du texte. Sinon, ce sera juste
 	L["If unchecked, then a default color will be used (usually yellow)"] = "Si cette case n'est pas cochée, une couleur par défaut sera utilisée (généralement jaune)"
 	L["If unchecked, then this space will fill the entire line it is on in User Mode."] = "Si cette case n'est pas cochée, cet espace remplira toute la ligne sur laquelle il est activé en Mode Utilisateur."
 	L["Ignore all Updates"] = "Ignorer toutes les mises à jour"
+	--[[Translation missing --]]
+	L["Ignore Dead"] = "Ignore Dead"
+	--[[Translation missing --]]
+	L["Ignore Disconnected"] = "Ignore Disconnected"
 	L["Ignore Self"] = "S'ignorer"
 	L["Ignore self"] = "Ignorer soi-même"
 	L["Ignored"] = "Ignoré"
@@ -513,9 +516,9 @@ Plusieurs valeurs peuvent être choisies]=]
 Seule une unique valeur peut être choisie]=]
 	L["Name Info"] = "Info du nom"
 	L["Name Pattern Match"] = "Correspondance de modèle de nom"
-	--[[Translation missing --]]
-	L["Name Plate"] = "Name Plate"
 	L["Name(s)"] = "Nom(s)"
+	--[[Translation missing --]]
+	L["Nameplate"] = "Nameplate"
 	L["Nameplates"] = "Barres de vie"
 	L["Negator"] = "Pas"
 	L["Never"] = "Jamais"

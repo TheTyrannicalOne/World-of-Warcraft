@@ -1,0 +1,107 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0328,
+	["ItemLevels"] = {
+		{
+			["ID"] = 170527,
+			["Level"] = 385,
+			["Link"] = "|cffa335ee|Hitem:170527::::::::120:70::11:3:1577:4786:5414:::|h[7th Legionnaire's Headpiece]|h|r",
+		}, -- [1]
+		{
+			["ID"] = 158075,
+			["Level"] = 292,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:4935:1484:::|h[Heart of Azeroth]|h|r",
+		}, -- [2]
+		{
+			["ID"] = 122355,
+			["Level"] = 284,
+			["Link"] = "|cff00ccff|Hitem:122355::::::::119:70:::1:5805:::|h[Polished Spaulders of Valor]|h|r",
+		}, -- [3]
+		nil, -- [4]
+		{
+			["ID"] = 122381,
+			["Level"] = 284,
+			["Link"] = "|cff00ccff|Hitem:122381::::::::119:70:::1:5805:::|h[Polished Breastplate of Valor]|h|r",
+		}, -- [5]
+		{
+			["ID"] = 158280,
+			["Level"] = 263,
+			["Link"] = "|cff1eff00|Hitem:158280::::::::119:70:512:11:1:4787:117:::|h[Sea Raider's Belt]|h|r",
+		}, -- [6]
+		{
+			["ID"] = 122251,
+			["Level"] = 284,
+			["Link"] = "|cff00ccff|Hitem:122251::::::::119:70:::1:5805:::|h[Polished Legplates of Valor]|h|r",
+		}, -- [7]
+		{
+			["ID"] = 158234,
+			["Level"] = 254,
+			["Link"] = "|cff1eff00|Hitem:158234::::::::115:70:512:11:1:4793:115:::|h[Sea Raider's Stompers]|h|r",
+		}, -- [8]
+		{
+			["ID"] = 158277,
+			["Level"] = 281,
+			["Link"] = "|cff1eff00|Hitem:158277::::::::120:70:512:11:1:4787:120:::|h[Sea Raider's Wristguards]|h|r",
+		}, -- [9]
+		{
+			["ID"] = 88709,
+			["Level"] = 121,
+			["Link"] = "|cff0070dd|Hitem:88709::::::::91:70:512:11:2:3698:5483:89:::|h[Bamboo Plate Gauntlets]|h|r",
+		}, -- [10]
+		{
+			["ID"] = 122529,
+			["Level"] = 284,
+			["AlsoFitsIn"] = 12,
+			["Link"] = "|cff00ccff|Hitem:122529::::::::119:70:::1:5805:::|h[Dread Pirate Ring]|h|r",
+		}, -- [11]
+		{
+			["ID"] = 128169,
+			["Level"] = 284,
+			["AlsoFitsIn"] = 11,
+			["Link"] = "|cff00ccff|Hitem:128169::::::::119:70:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+		}, -- [12]
+		{
+			["ID"] = 122361,
+			["Level"] = 284,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::119:70:::1:5805:::|h[Swift Hand of Justice]|h|r",
+		}, -- [13]
+		{
+			["ID"] = 122361,
+			["Level"] = 284,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::120:70:::1:5805:::|h[Swift Hand of Justice]|h|r",
+		}, -- [14]
+		{
+			["ID"] = 122260,
+			["Level"] = 284,
+			["Link"] = "|cff00ccff|Hitem:122260::::::::119:70:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
+		}, -- [15]
+		{
+			["ID"] = 163890,
+			["Level"] = 370,
+			["Link"] = "|cffa335ee|Hitem:163890::::::::120:70::30:2:1562:4786:::|h[7th Legionnaire's Claymore]|h|r",
+		}, -- [16]
+	},
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Avisar-Dalaran",
+	["Artifacts"] = {
+		[120978] = {
+			["Relics"] = {
+				{
+					["Type"] = "Holy",
+				}, -- [1]
+				{
+					["Type"] = "Fire",
+				}, -- [2]
+			},
+			["Name"] = "Ashbringer",
+		},
+	},
+	["LastKeybindingsSet"] = 1,
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "PALADIN",
+	["LastAdded"] = 1,
+}
+PawnClassicScaleProviderOptions = nil

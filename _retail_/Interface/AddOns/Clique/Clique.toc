@@ -1,7 +1,7 @@
-## Interface: 11302
+## Interface: 80200
 ## Title: Clique
 ## Author: Cladhaire
-## Version: v1.0.3-classic
+## Version: v80200-1.2.2
 ## Notes: Simply powerful click-casting interface
 ## SavedVariables: CliqueDB, CliqueDB3
 

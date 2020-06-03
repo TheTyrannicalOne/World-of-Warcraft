@@ -28,7 +28,7 @@ PawnOptions = {
 		{
 			["ID"] = 7026,
 			["Level"] = 9,
-			["Link"] = "|cffffffff|Hitem:7026::::::::21:265::::::|h[Linen Belt]|h|r",
+			["Link"] = "|cffffffff|Hitem:7026::::::::24:267::::::|h[Linen Belt]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122256,
@@ -41,14 +41,14 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:58994::::::::24:267:512:11:1:3640:23:::|h[Trogg-Slayer Boots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 2326,
-			["Level"] = 11,
-			["Link"] = "|cffffffff|Hitem:2326::::::::12:265:512:11:1:3797:11:::|h[Ivy-Weave Bracers]|h|r",
+			["ID"] = 59044,
+			["Level"] = 3,
+			["Link"] = "|cffffffff|Hitem:59044::::::::24:267::11::::|h[Velocity Bracers]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 57560,
 			["Level"] = 21,
-			["Link"] = "|cff1eff00|Hitem:57560::::::::21:265:512:11:1:3640:21:::|h[Mangy Claw Mitts]|h|r",
+			["Link"] = "|cff1eff00|Hitem:57560::::::::24:267:512:11:1:3640:21:::|h[Mangy Claw Mitts]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 122529,
@@ -68,12 +68,7 @@ PawnOptions = {
 			["AlsoFitsIn"] = 14,
 			["Link"] = "|cff00ccff|Hitem:122362::::::::24:267:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [13]
-		{
-			["ID"] = 122362,
-			["Level"] = 27,
-			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::23:267:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
-		}, -- [14]
+		nil, -- [14]
 		{
 			["ID"] = 122262,
 			["Level"] = 28,

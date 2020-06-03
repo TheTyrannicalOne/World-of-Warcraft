@@ -1,17 +1,11 @@
 
 SpyDB = {
 	["kosData"] = {
-		["Dalaran"] = {
-			["Alliance"] = {
-				["Ruffinton"] = {
+		["Argent Dawn"] = {
+			["Horde"] = {
+				["Shanyt"] = {
 				},
-				["Tynkster"] = {
-				},
-				["Thorinbane"] = {
-				},
-				["Tinkster"] = {
-				},
-				["Darnastris"] = {
+				["Tyrannithal"] = {
 				},
 			},
 		},
@@ -21,56 +15,85 @@ SpyDB = {
 				},
 			},
 		},
-		["Argent Dawn"] = {
+		["Dalaran"] = {
+			["Alliance"] = {
+				["Ruffinton"] = {
+				},
+				["Avisar"] = {
+				},
+				["Thorinbane"] = {
+				},
+				["Tinkster"] = {
+				},
+				["Darnastris"] = {
+				},
+			},
+		},
+		["Zul'jin"] = {
 			["Horde"] = {
-				["Shanyt"] = {
+				["Vancard"] = {
+				},
+				["Datgore"] = {
+				},
+				["Zulbathal"] = {
+				},
+				["Kotalkhan"] = {
+				},
+				["Shimzo"] = {
+				},
+				["Fantastiburo"] = {
+				},
+			},
+			["Neutral"] = {
+				["Shaekhan"] = {
+				},
+				["Kotalkhan"] = {
 				},
 			},
 		},
 	},
 	["removeKOSData"] = {
-		["Dalaran"] = {
-			["Alliance"] = {
+		["Argent Dawn"] = {
+			["Horde"] = {
 			},
 		},
 		["Black Dragonflight"] = {
 			["Horde"] = {
 			},
 		},
-		["Argent Dawn"] = {
+		["Dalaran"] = {
+			["Alliance"] = {
+			},
+		},
+		["Zul'jin"] = {
 			["Horde"] = {
+			},
+			["Neutral"] = {
 			},
 		},
 	},
 	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 	},
 	["profiles"] = {
-		["Darnastris - Dalaran"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-		},
-		["Shanyt - Argent Dawn"] = {
-			["AppendUnitNameCheck"] = true,
+		["Avisar - Dalaran"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = 1050.500366210938,
-					["h"] = 35.00008392333984,
-					["x"] = 2.999999761581421,
+					["y"] = 740.0001831054688,
 				},
 			},
 			["Colors"] = {
@@ -88,10 +111,15 @@ SpyDB = {
 					},
 				},
 			},
+			["AlertWindow"] = {
+				["Position"] = {
+					["x"] = 4,
+				},
+			},
+			["AppendUnitNameCheck"] = true,
 			["AppendUnitKoSCheck"] = true,
-			["MainWindowVis"] = false,
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Thorinbane - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -103,7 +131,18 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Thorinbane - Dalaran"] = {
+		["Vancard - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Tyrannithal - Argent Dawn"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -126,19 +165,15 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Tynkster - Dalaran"] = {
+		["Zulbathal - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 739.500244140625,
+					["h"] = 67.00010681152344,
+					["x"] = 5,
 				},
 			},
-			["AppendUnitKoSCheck"] = true,
-		},
-		["Tinkster - Dalaran"] = {
 			["Colors"] = {
 				["Alert"] = {
 					["Stealth Text"] = {
@@ -154,8 +189,119 @@ SpyDB = {
 					},
 				},
 			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Datgore - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Darnastris - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Kotalkhan - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Shanyt - Argent Dawn"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Durlok - Black Dragonflight"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Fantastiburo - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Shimzo - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Shaekhan - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Tinkster - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
 			["AppendUnitKoSCheck"] = true,
 		},
 	},

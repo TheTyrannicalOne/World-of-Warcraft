@@ -4,7 +4,7 @@ mOnWDSave = {
 	["miniListScale"] = 1,
 	["minimap"] = {
 	},
-	["reloadOnStart"] = false,
+	["reloadOnStart"] = true,
 	["favoriteInstances"] = {
 	},
 	["blacklist"] = {

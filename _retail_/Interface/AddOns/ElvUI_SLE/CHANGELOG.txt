@@ -1,3 +1,38 @@
+v3.74 [April 30, 2020]
+Fixes:
+- Fixed guid datatext error (Round 3)
+
+v3.73 [April 30, 2020]
+Fixes:
+- Fixed guid datatext error (Round 2)
+
+v3.72 [April 30, 2020]
+Fixes:
+- Fixed guid datatext error
+
+v3.71 [April 30, 2020]
+Fixes:
+- Fixed some issues where datatexts were not loading for S&L datatext panels
+- Fixed luaerror in /estatus in ElvUI 11.39
+Changes:
+- Timer bar for keys now uses color set in the objective skin in S&L settings
+
+v3.70 [April 28, 2020]
+Fixes:
+- Fixed corruption text from sticking around after disabling character armory
+- Hopefully squashed scrollbar issues on the character frame
+- Fix weird inspect bug
+- Fixed not able to move the Auction House when you enable movable frames in Blizzard module
+- Fixed a minimap icon from not being catched
+- Added new Eternal Traveler hearthstone
+- Fix for UpdateAllFonts option to not error for Armory mode
+- Fixed CorruptionTooltips compatibility issues
+- Fixed corruption eye not detecting mouse being over it, thus not showing tootlip, when in blizzard default position
+Additions:
+- Added /slstatus for our status panel like elvui so we can help troubleshoot S&L users
+Changes:
+- Changed effectivelevel description to be more helpful
+
 v3.69 [April 15th, 2020]
 Fixes:
 - Fixed multiple errors found in inspect section of the Armory Mode

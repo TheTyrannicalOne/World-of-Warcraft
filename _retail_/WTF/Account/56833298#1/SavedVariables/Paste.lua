@@ -1,114 +1,66 @@
 
 PasteDB = {
 	["profileKeys"] = {
-		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
-		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
-		["Goramor - Runetotem"] = "Goramor - Runetotem",
-		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
-		["Panboozled - Runetotem"] = {
-			["loaded"] = true,
-		},
-		["Vancard - Zul'jin"] = {
-			["loaded"] = true,
-		},
-		["Tynster - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Tyrann - Zul'jin"] = {
-			["loaded"] = true,
-		},
-		["Brewnheimer - Darkspear"] = {
-			["loaded"] = true,
-		},
-		["Shanyt - Argent Dawn"] = {
-			["loaded"] = true,
-		},
-		["Gangus - Runetotem"] = {
-			["loaded"] = true,
-		},
-		["Shaewong - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Goramor - Runetotem"] = {
-			["loaded"] = true,
-		},
-		["Gillbourn - Runetotem"] = {
-			["loaded"] = true,
-		},
-		["Shanyt - Zul'jin"] = {
-			["loaded"] = true,
-		},
-		["Dialdaas - Darkspear"] = {
-			["loaded"] = true,
-		},
-		["Sinh - Dalaran"] = {
+		["Avisar - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Thorinbane - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Serbitechna - Darkspear"] = {
-			["loaded"] = true,
-		},
-		["Tyriinid - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Ruffinton - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Durlok - Black Dragonflight"] = {
-			["loaded"] = true,
-		},
-		["Malivant - Dalaran"] = {
+		["Vancard - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Darnastris - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Claugh - Runetotem"] = {
+		["Ruffinton - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Shathiel - Darkspear"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Tynkster - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyrannithal - Argent Dawn"] = {
 			["loaded"] = true,
 		},
-		["Migimong - Runetotem"] = {
+		["Zulbathal - Zul'jin"] = {
+			["loaded"] = true,
+		},
+		["Shanyt - Argent Dawn"] = {
+			["loaded"] = true,
+		},
+		["Durlok - Black Dragonflight"] = {
+			["loaded"] = true,
+		},
+		["Shimzo - Zul'jin"] = {
+			["loaded"] = true,
+		},
+		["Fantastiburo - Zul'jin"] = {
+			["loaded"] = true,
+		},
+		["Shaekhan - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Tinkster - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Narisaric - Dalaran"] = {
 			["loaded"] = true,
 		},
 	},

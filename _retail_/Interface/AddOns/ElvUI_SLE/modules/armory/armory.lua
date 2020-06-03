@@ -125,6 +125,9 @@ Armory.Constants.GradientTexture = [[Interface\AddOns\ElvUI_SLE\media\textures\a
 Armory.Constants.TransmogTexture = [[Interface\AddOns\ElvUI_SLE\media\textures\armory\anchor]]
 Armory.Constants.MaxGemSlots = 5
 Armory.Constants.EssenceMilestones = {}
+Armory.Constants.Stats = {
+	ScrollStepMultiplier = 5,
+}
 
 
 --Remembering default positions of stuff
@@ -264,7 +267,7 @@ function Armory:UpdatePageInfo(frame, which, guid, event)
 			end
 			if Slot.CorText then --Setting corruption text if it actually exists for the slot
 				Slot.CorText:SetText("")
-				if E.db.sle.armory[window].corruptionText.style ~= "Hide" then
+				if E.db.sle.armory[window].corruptionText.style ~= "Hide" and E.db.sle.armory.character.enable then
 					local isCorruption, CorValue, CorSpell = Armory:GetCorruptionInfo(Slot, which, unit)
 					if isCorruption then
 						if isCorruption == "cor" then
@@ -300,7 +303,7 @@ function Armory:UpdatePageStrings(i, iLevelDB, Slot, slotInfo, which)
 			elseif E.db.sle.armory[window].ilvl.colorType == "GRADIENT" then
 				local equippedIlvl = window == "character" and T.select(2, T.GetAverageItemLevel()) or E:CalculateAverageItemLevel(iLevelDB, _G["InspectFrame"].unit)
 				local diff
-				if slotInfo.iLvl then
+				if slotInfo.iLvl and (equippedIlvl and T.type(equippedIlvl) ~= "boolean") then
 					diff = slotInfo.iLvl - equippedIlvl
 				else
 					diff = 0
@@ -569,6 +572,7 @@ function Armory:Initialize()
 		SA:LoadAndSetup()
 		Armory:UpdateCharacterInfo()
 	end
+	if _G["CharacterFrame"].SLE_Corruption then _G["CharacterFrame"].SLE_Corruption:SetFrameLevel(_G["CharacterStatsPane"].ItemLevelFrame:GetFrameLevel() + 5) end --This fixes wrong mouseover for blizz position of the eye
 
 	if Armory:CheckOptions("Inspect") then
 		IA = SLE:GetModule("Armory_Inspect")

@@ -1,12 +1,20 @@
 
 OmniCCDB = {
 	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Thorinbane - Dalaran"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 	},
 	["global"] = {
@@ -18,47 +26,17 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["minutes"] = {
-						},
 						["soon"] = {
 						},
 						["seconds"] = {
 						},
+						["minutes"] = {
+						},
 					},
 					["enableText"] = false,
-					["spiralOpacity"] = 1.00999997742474,
 				},
 			},
 		},
 	},
 }
-OmniCC4Config = {
-	["version"] = "8.2.5",
-	["groupSettings"] = {
-		["base"] = {
-			["minDuration"] = 2,
-			["styles"] = {
-				["seconds"] = {
-				},
-				["minutes"] = {
-				},
-				["soon"] = {
-				},
-				["hours"] = {
-				},
-				["charging"] = {
-				},
-				["controlled"] = {
-				},
-			},
-			["tenthsDuration"] = 0,
-			["enabled"] = false,
-			["minSize"] = 0.5,
-			["minEffectDuration"] = 30,
-			["mmSSDuration"] = 0,
-			["spiralOpacity"] = 1.00999997742474,
-		},
-	},
-	["groups"] = {
-	},
-}
+OmniCC4Config = nil

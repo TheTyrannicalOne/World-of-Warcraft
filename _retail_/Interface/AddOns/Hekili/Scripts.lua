@@ -18,6 +18,8 @@ local safeMax = ns.safeMax
 
 local trim = string.trim
 
+local twipe = table.wipe
+
 
 -- Forgive the name, but this should properly replace ! characters with not, accounting for appropriate bracketing.
 -- Why so complex?  Because "! 0 > 1" converted to Lua is "not 0 > 1" which evaluates to "false > 1" -- not the goal.
@@ -285,7 +287,7 @@ local function SimToLua( str, modifier )
     str = str:gsub("lowest_vuln_within%.(%d+)", "lowest_vuln_within[%1]")
     str = str:gsub("%.in([^a-zA-Z0-9_])", "['in']%1" )
     str = str:gsub("%.in$", "['in']" )
-    str = str:gsub("imps_spawned_during%.([^!=<>&|]+)", "imps_spawned_during[%1] ")
+    str = str:gsub("imps_spawned_during%.([^!=<>&|]+)", "imps_spawned_during['%1'] ")
     str = str:gsub("time_to_imps%.(%b()).remains", "time_to_imps[%1].remains")
     str = str:gsub("time_to_imps%.(%d+).remains", "time_to_imps[%1].remains")
     -- str = str:gsub("incanters_flow_time_to%.(%d+)[.any]?", "incanters_flow_time_to[%1]")
@@ -361,66 +363,66 @@ do
     end
 
     local timely = {
-        { "^(d?e?buff%.[a-z0-9_]+)%.down",      "%1.remains" },
-        { "^(dot%.[a-z0-9_]+)%.down",           "%1.remains" },
-        { "!(d?e?buff%.[a-z0-9_]+)%.up",        "%1.remains" },
-        { "!(dot%.[a-z0-9_]+)%.up",             "%1.remains" },
-        { "!(d?e?buff%.[a-z0-9_]+)%.react",     "%1.remains" },
-        { "!(dot%.[a-z0-9_]+)%.react",          "%1.remains" },
-        { "!(d?e?buff%.[a-z0-9_]+)%.ticking",   "%1.remains" },
-        { "!(dot%.[a-z0-9_]+)%.ticking",        "%1.remains" },
-        { "!?(d?e?buff%.[a-z0-9_]+)%.remains",  "%1.remains" },
-        { "!ticking",                           "remains" },
-        { "^!?remains$",                        "remains" },
-        { "^refreshable",                       "time_to_refresh" },
+        { "^(d?e?buff%.[a-z0-9_]+)%.down",          "%1.remains" },
+        { "^(dot%.[a-z0-9_]+)%.down",               "%1.remains" },
+        { "!(d?e?buff%.[a-z0-9_]+)%.up",            "%1.remains" },
+        { "!(dot%.[a-z0-9_]+)%.up",                 "%1.remains" },
+        { "!(d?e?buff%.[a-z0-9_]+)%.react",         "%1.remains" },
+        { "!(dot%.[a-z0-9_]+)%.react",              "%1.remains" },
+        { "!(d?e?buff%.[a-z0-9_]+)%.ticking",       "%1.remains" },
+        { "!(dot%.[a-z0-9_]+)%.ticking",            "%1.remains" },
+        { "!?(d?e?buff%.[a-z0-9_]+)%.remains",      "%1.remains" },
+        { "!ticking",                               "remains" },
+        { "^!?remains$",                            "remains" },
+        { "^refreshable",                           "time_to_refresh" },
         
-        { "^(.-)%.deficit<=?(.-)$",             "%1.timeTo(%1.max-(%2))" },
-        { "^(.-)%.deficit>=?(.-)$",             "%1.timeTo(%1.max-(%2))" },        
+        { "^(.-)%.deficit<=?(.-)$",                 "%1.timeTo(%1.max-(%2))" },
+        { "^(.-)%.deficit>=?(.-)$",                 "%1.timeTo(%1.max-(%2))" },        
         
         { "^cooldown%.([a-z0-9_]+)%.ready$",        "cooldown.%1.remains" },
         { "^cooldown%.([a-z0-9_]+)%.up$",           "cooldown.%1.remains" },
         { "^!?cooldown%.([a-z0-9_]+)%.remains$",    "cooldown.%1.remains" },
         
-        { "^charges_fractional[>=]+(.-)$",      "(%1-charges_fractional)*recharge" },
-        { "^charges>=?(.-)$",                   "(1+%1-charges_fractional)*recharge" },
+        { "^charges_fractional[>=]+(.-)$",          "(%1-charges_fractional)*recharge" },
+        { "^charges>=?(.-)$",                       "(1+%1-charges_fractional)*recharge" },
         { "^(cooldown%.[a-z0-9_]+)%.charges_fractional[>=]+(.-)$",
-                                                "(%2-%1.charges_fractional)*%1.recharge" },
+                                                    "(%2-%1.charges_fractional)*%1.recharge" },
         { "^(cooldown%.[a-z0-9_]+)%.charges>=?(.-)$",
-                                                "(1+%2-%1.charges_fractional)*recharge" },
+                                                    "(1+%2-%1.charges_fractional)*recharge" },
         { "^(action%.[a-z0-9_]+)%.charges_fractional[>=]+(.-)$",
-                                                "(%2-%1.charges_fractional)*%1.recharge" },
+                                                    "(%2-%1.charges_fractional)*%1.recharge" },
         { "^(action%.[a-z0-9_]+)%.charges>=?(.-)$",
-                                                "(1+%2-%1.charges_fractional)*%1.recharge" },
+                                                    "(1+%2-%1.charges_fractional)*%1.recharge" },
         
-        { "^!(action%.[a-z0-9]+)%.executing$", "%1.execute_remains" },
-        { "^(.-time_to_die)<=?(.-)$",           "%1 - %2" },
-        { "^(.-)%.time_to_(.-)<=?(.-)$",        "%1.time_to_%2-%3" },
+        { "^!(action%.[a-z0-9]+)%.executing$",      "%1.execute_remains" },
+        { "^(.-time_to_die)<=?(.-)$",               "%1 - %2" },
+        { "^(.-)%.time_to_(.-)<=?(.-)$",            "%1.time_to_%2-%3" },
 
         { "^debuff%.festering_wound%.stack[>=]=?(.-)$", -- UH DK helper during Unholy Frenzy.
-                                                "time_to_wounds(%1)" },
+                                                    "time_to_wounds(%1)" },
         { "^dot%.festering_wound%.stack[>=]=?(.-)$",    -- UH DK helper during Unholy Frenzy.
-                                                "time_to_wounds(%1)" },
+                                                    "time_to_wounds(%1)" },
 
-        { "^exsanguinated$",                      "remains" }, -- Assassination
+        { "^exsanguinated$",                        "remains" }, -- Assassination
         { "^!?(debuff%.[a-z0-9_]+)%.exsanguinated$",
-                                                "%1.remains" }, -- Assassination
-        { "^!?(dot%.[a-z0-9_]+)%.exsanguinated$",  "%1.remains" }, -- Assassination
-        { "^ss_buffed",                         "remains" }, -- Assassination
+                                                    "%1.remains" }, -- Assassination
+        { "^!?(dot%.[a-z0-9_]+)%.exsanguinated$",   "%1.remains" }, -- Assassination
+        { "^ss_buffed",                             "remains" }, -- Assassination
         { "^!?(debuff%.[a-z0-9_]+)%.ss_buffed$",
-                                                "%1.remains" }, -- Assassination
-        { "^!?(dot%.[a-z0-9_]+)%.ss_buffed$",      "%1.remains" }, -- Assassination
-        { "^!?consecration.up",                   "consecration.remains" }, -- Prot Paladin
-        { "^!?contagion<=?(.-)",                  "contagion-%1" }, -- Affliction Warlock
+                                                    "%1.remains" }, -- Assassination
+        { "^!?(dot%.[a-z0-9_]+)%.ss_buffed$",       "%1.remains" }, -- Assassination
+        { "^!?consecration.up",                     "consecration.remains" }, -- Prot Paladin
+        { "^!?contagion<=?(.-)",                    "contagion-%1" }, -- Affliction Warlock
         
-        { "^!?action%.([a-z0-9_]+)%.in_flight$",    "action.%1.in_flight_remains" }, -- Fire Mage, but others too, potentially.
+    { "^!?action%.([a-z0-9_]+)%.in_flight$",        "action.%1.in_flight_remains" }, -- Fire Mage, but others too, potentially.
         { "^!?action%.([a-z0-9_]+)%.in_flight_remains<=?(.-)$",
                                                     "action.%1.in_flight_remains-%2" }, -- Fire Mage, but others too, potentially.
-        { "^!?variable.time_to_combustion$",      "variable.time_to_combustion" },
+        { "^!?variable.time_to_combustion$",        "variable.time_to_combustion" },
         { "^!?variable.time_to_combustion<=?(.-)$",
-                                                "variable.time_to_combustion-%1" },
+                                                    "variable.time_to_combustion-%1" },
 
-        { "^!?(pet%.[a-z0-9_]+)%.up",             "%1.remains" },
-        { "^!?(pet%.[a-z0-9_]+)%.active",         "%1.remains" },
+        { "^!?(pet%.[a-z0-9_]+)%.up",               "%1.remains" },
+        { "^!?(pet%.[a-z0-9_]+)%.active",           "%1.remains" },
     }
 
     -- Things that tick down.
@@ -444,14 +446,14 @@ do
     }
 
     local lessOrEqual = {
-        ["<"] = true,
+        -- ["<"] = true,
         ["<="] = true,
         ["="] = true,
         ["=="] = true
     }
 
     local moreOrEqual = {
-        [">"] = true,
+        -- [">"] = true,
         [">="] = true,
         ["="] = true,
         ["=="] = true
@@ -479,34 +481,58 @@ do
         if lhs and comp and rhs then
             -- We are looking at a mathematic comparison.
             for key in pairs( decreases ) do
-                if lhs:match( key ) and lessOrEqual[ comp ] then
-                    return true, lhs .. " - " .. rhs
+                if lhs:match( key ) then
+                    if comp == "<" then
+                        return true, lhs .. " + 0.01 - " .. rhs
+                    elseif lessOrEqual[ comp ] then
+                        return true, lhs .. " - " .. rhs
+                    end
                 end
             end
 
             for key in pairs( increases ) do
-                if lhs:match( key ) and moreOrEqual[ comp ] then
-                    return true, rhs .. " - " .. lhs
+                if lhs:match( key ) then
+                    if comp == ">" then
+                        return true, rhs .. " + 0.01 - " .. rhs
+                    elseif moreOrEqual[ comp ] then
+                        return true, rhs .. " - " .. lhs
+                    end
                 end
             end
 
             -- resources also tick up (usually, anyway)
             for key in pairs( GetResourceInfo() ) do
-                if lhs == key and moreOrEqual[ comp ] then
-                    return true, lhs .. ".timeTo(" .. rhs .. ")"
+                if lhs == key then
+                    if comp == ">" then
+                        return true, "0.01 + " .. lhs .. ".timeTo( " .. rhs .. " )"
+                    elseif moreOrEqual[ comp ] then
+                        return true, lhs .. ".timeTo( " .. rhs .. " )"
+                    end
                 end
 
-                if rhs == key and lessOrEqual[ comp ] then
-                    return true, rhs .. ".timeTo( " .. lhs .. ")"
+                if rhs == key then
+                    if comp == "<" then
+                        return true, "0.01 + " .. rhs .. ".timeTo( " .. rhs .. " )"
+                    elseif lessOrEqual[ comp ] then
+                        return true, rhs .. ".timeTo( " .. lhs .. " )"
+                    end
                 end
             end
 
-            if lhs == "rune" and moreOrEqual[ comp ] then
-                return true, "rune.timeTo(" .. rhs .. ")"
+            if lhs == "rune" then
+                if comp == ">" then
+                    return true, "0.01 + rune.timeTo( " .. rhs .. " )"
+                elseif moreOrEqual[ comp ] then
+                    return true, "rune.timeTo( " .. rhs .. " )"
+                end
             end
 
-            if rhs == "rune" and lessOrEqual[ comp ] then
-                return true, "rune.timeTo(" .. lhs .. ")"
+            if rhs == "rune" then
+                if comp == "<" then
+                    return true, "0.01 + rune.timeTo( " .. lhs .. " )"
+                elseif lessOrEqual[ comp ] then
+                    return true, "rune.timeTo( " .. lhs .. " )"
+                end
             end
         end
 
@@ -995,7 +1021,12 @@ local function ConvertScript( node, hasModifiers, header )
         local pass, val = pcall( sf )
         if not pass then e = val end
     end ]]
-    if e then e = e:match( ":(%d+: .*)" ) end
+
+    if sf and not e then
+        local success, msg = pcall( sf )
+        if not success then e = msg end
+    end
+    if e then e = e:match( ":(%d+: .*)" ) or e end
 
     local se = clean and GetScriptElements( clean )
 
@@ -1126,52 +1157,78 @@ end
 scripts.ConvertScript = ConvertScript
 
 
-function scripts:CheckScript( scriptID, action, elem )
-    local prev_action = state.this_action
-    if action then state.this_action = action end
+do
+    local cacheTime = 0
+    local cache = {}
 
-    local script = self.DB[ scriptID ]
+    function scripts:CheckScript( scriptID, action, elem )
+        local moment = state.now + state.offset
 
-    if not script then
+        if moment ~= cacheTime then
+            if Hekili.ActiveDebug then Hekili:Debug( "Resetting CheckScript cache as time changed from %.2f to %.2f ( %.2f ).", cacheTime, moment, moment - cacheTime ) end
+            cacheTime = moment
+            twipe( cache )
+        end
+
+        local uniqueID = scriptID .. "-" .. state.query_time
+        if cache[ uniqueID ] ~= nil then return cache[ uniqueID ] end
+
+        local prev_action = state.this_action
+        if action then state.this_action = action end
+
+        local script = self.DB[ scriptID ]
+
+        if not script then
+            state.this_action = prev_action
+            cache[ uniqueID ] = false
+            return false
+        end
+
+        if not elem then
+            if script.Error then
+                state.this_action = prev_action
+                cache[ uniqueID ] = false
+                return false, script.Error
+
+            elseif not script.Conditions then
+                state.this_action = prev_action
+                cache[ uniqueID ] = true
+                return true
+
+            else
+                -- local success, value = pcall( script.Conditions )
+                local success, value = true, script.Conditions()
+
+                if success then
+                    state.this_action = prev_action
+                    cache[ uniqueID ] = value
+                    return value
+                end
+            end
+
+        else
+            if not script.Modifiers[ elem ] then
+                state.this_action = prev_action
+                return nil, elem .. " not set."
+
+            else
+                local success, value = pcall( script.Modifiers[ elem ] )
+
+                if success then
+                    state.this_action = prev_action
+                    return value
+                end
+            end
+        end
+
         state.this_action = prev_action
+        cache[ uniqueID ] = false
         return false
     end
 
-    if not elem then
-        if script.Error then
-            state.this_action = prev_action
-            return false, script.Error
-
-        elseif not script.Conditions then
-            state.this_action = prev_action
-            return true
-
-        else
-            local success, value = pcall( script.Conditions )
-
-            if success then
-                state.this_action = prev_action
-                return value
-            end
-        end
-
-    else
-        if not script.Modifiers[ elem ] then
-            state.this_action = prev_action
-            return nil, elem .. " not set."
-
-        else
-            local success, value = pcall( script.Modifiers[ elem ] )
-
-            if success then
-                state.this_action = prev_action
-                return value
-            end
-        end
+    function scripts:ResetCache()
+        twipe( cache )
     end
-
-    state.this_action = prev_action
-    return false
 end
 
 

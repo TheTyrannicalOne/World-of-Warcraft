@@ -1,2 +1,0 @@
-v1.86
-- Preventing locales to error due to changes in ElvUI 11.22

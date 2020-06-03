@@ -1,2 +1,351 @@
-9/28 20:36:51.608  ---- Startup ----
-9/28 20:36:57.021  ---- Shutdown ----
+4/20 14:39:46.831  ---- Startup ----
+4/20 14:39:53.527  ---- ClientAvailableHotfixes ----
+4/20 14:39:53.527      252, DungeonEncounter
+4/20 14:39:53.528      253, DungeonEncounter
+4/20 14:39:53.528      257, DungeonEncounter
+4/20 14:39:53.528      293, CreatureDifficulty
+4/20 14:39:53.528      294, CreatureXDisplayInfo
+4/20 14:39:53.528      296, SpellInterrupts
+4/20 14:39:53.528      297, SpellMisc
+4/20 14:39:53.528      298, GameObjects
+4/20 14:39:53.528      548, Creature
+4/20 14:39:53.528      550, Creature
+4/20 14:39:53.528      553, Creature
+4/20 14:39:53.528      555, DungeonEncounter
+4/20 14:39:53.528      556, DungeonEncounter
+4/20 14:39:53.528      557, DungeonEncounter
+4/20 14:39:53.528      559, TransmogHoliday
+4/20 14:39:53.528      559, Item
+4/20 14:39:53.528      559, ItemSearchName
+4/20 14:39:53.528      559, ItemSparse
+4/20 14:39:53.528      559, TradeSkillItem
+4/20 14:39:53.528      560, TradeSkillItem
+4/20 14:39:53.528      560, ItemSparse
+4/20 14:39:53.528      560, ItemSearchName
+4/20 14:39:53.528      560, Item
+4/20 14:39:53.528      560, TransmogHoliday
+4/20 14:39:53.528      561, TransmogHoliday
+4/20 14:39:53.528      561, Item
+4/20 14:39:53.528      561, ItemSearchName
+4/20 14:39:53.528      561, ItemSparse
+4/20 14:39:53.528      561, TradeSkillItem
+4/20 14:39:53.528      562, TransmogHoliday
+4/20 14:39:53.528      562, Item
+4/20 14:39:53.528      562, ItemSearchName
+4/20 14:39:53.528      562, ItemSparse
+4/20 14:39:53.528      562, TradeSkillItem
+4/20 14:39:53.528      564, SpellName
+4/20 14:39:53.528      564, Spell
+4/20 14:39:53.528      565, Spell
+4/20 14:39:53.528      565, SpellName
+4/20 14:39:53.528      568, SpellName
+4/20 14:39:53.528      568, Spell
+4/20 14:39:53.528      570, Spell
+4/20 14:39:53.528      570, SpellName
+4/20 14:39:53.528      584, AreaTriggerActionSet
+4/20 14:39:53.528      585, AreaTriggerActionSet
+4/20 14:39:53.528      586, AreaTriggerBox
+4/20 14:39:53.528      588, AreaTriggerCreateProperties
+4/20 14:39:53.528      695, Cfg_Regions
+4/20 14:39:53.528      696, Cfg_Regions
+4/20 14:39:53.528      697, Cfg_Regions
+4/20 14:39:53.528      699, Cfg_Regions
+4/20 14:39:53.528      700, Cfg_Regions
+4/20 14:39:53.528      766, SkillLineAbility
+4/20 14:39:53.528      767, SpellMisc
+4/20 14:39:53.528      831, WorldStateExpression
+4/20 14:39:53.528      832, WorldStateExpression
+4/20 14:39:53.528      833, WorldStateExpression
+4/20 14:39:53.528      834, WorldStateExpression
+4/20 14:39:53.528      835, WorldStateExpression
+4/20 14:39:53.528      864, BroadcastText
+4/20 14:39:53.528      873, SpellMisc
+4/20 14:39:53.528      876, SpellMisc
+4/20 14:39:53.528      879, SpellMisc
+4/20 14:39:53.528      881, SpellMisc
+4/20 14:39:53.528      882, Cfg_Regions
+4/20 14:39:53.528      883, Cfg_Regions
+4/20 14:39:53.528      884, Cfg_Regions
+4/20 14:39:53.528      885, Cfg_Regions
+4/20 14:39:53.528      887, Creature
+4/20 14:39:53.528      888, CreatureXDisplayInfo
+4/20 14:39:53.528      890, PlayerCondition
+4/20 14:39:53.528      891, QuestV2
+4/20 14:39:53.528      891, QuestV2CliTask
+4/20 14:39:53.528      892, QuestV2CliTask
+4/20 14:39:53.528      892, QuestV2
+4/20 14:39:53.528      934, WorldStateExpression
+4/20 14:39:53.528      947, AreaTrigger
+4/20 14:39:53.528      948, AreaTrigger
+4/20 14:39:53.528      949, AreaTrigger
+4/20 14:39:53.528      950, AreaTrigger
+4/20 14:39:53.528      973, WorldStateExpression
+4/20 14:39:53.528      974, WorldStateExpression
+4/20 14:39:53.528      975, WorldStateExpression
+4/20 14:39:53.528      976, WorldStateExpression
+4/20 14:39:53.528      977, WorldStateExpression
+4/20 14:39:53.528      978, WorldStateExpression
+4/20 14:39:53.528      567, Spell
+4/20 14:39:53.528      567, SpellName
+4/20 14:39:53.528      874, SpellMisc
+4/20 14:39:53.528      552, Creature
+4/20 14:39:53.528      587, AreaTriggerCreateProperties
+4/20 14:39:53.528      830, WorldStateExpression
+4/20 14:39:53.528      558, TransmogHoliday
+4/20 14:39:53.528      558, Item
+4/20 14:39:53.528      558, ItemSearchName
+4/20 14:39:53.528      558, ItemSparse
+4/20 14:39:53.528      558, TradeSkillItem
+4/20 14:39:53.528      865, BroadcastText
+4/20 14:39:53.528      251, DungeonEncounter
+4/20 14:39:53.528      698, Cfg_Regions
+4/20 14:39:53.528      549, Creature
+4/20 14:39:53.528      563, Spell
+4/20 14:39:53.528      563, SpellName
+4/20 14:39:53.528      872, SpellMisc
+4/20 14:39:53.528      875, SpellMisc
+4/20 14:39:53.528      877, SpellMisc
+4/20 14:39:53.528      292, Creature
+4/20 14:39:53.528      878, SpellMisc
+4/20 14:39:53.528      551, Creature
+4/20 14:39:53.528      886, Cfg_Regions
+4/20 14:39:53.528      554, Creature
+4/20 14:39:53.528      880, SpellMisc
+4/20 14:39:53.528      569, Spell
+4/20 14:39:53.528      569, SpellName
+4/20 14:39:53.528      566, Spell
+4/20 14:39:53.528      566, SpellName
+4/20 14:39:53.528  ---- UserClientHotfixRequest ----
+4/20 14:39:53.528      252, DungeonEncounter
+4/20 14:39:53.528      253, DungeonEncounter
+4/20 14:39:53.528      257, DungeonEncounter
+4/20 14:39:53.528      293, CreatureDifficulty
+4/20 14:39:53.528      294, CreatureXDisplayInfo
+4/20 14:39:53.528      296, SpellInterrupts
+4/20 14:39:53.528      297, SpellMisc
+4/20 14:39:53.528      298, GameObjects
+4/20 14:39:53.528      548, Creature
+4/20 14:39:53.528      550, Creature
+4/20 14:39:53.528      553, Creature
+4/20 14:39:53.528      555, DungeonEncounter
+4/20 14:39:53.528      556, DungeonEncounter
+4/20 14:39:53.528      557, DungeonEncounter
+4/20 14:39:53.528      559, TransmogHoliday
+4/20 14:39:53.528      559, Item
+4/20 14:39:53.528      559, ItemSearchName
+4/20 14:39:53.528      559, ItemSparse
+4/20 14:39:53.528      559, TradeSkillItem
+4/20 14:39:53.528      560, TradeSkillItem
+4/20 14:39:53.528      560, ItemSparse
+4/20 14:39:53.528      560, ItemSearchName
+4/20 14:39:53.528      560, Item
+4/20 14:39:53.528      560, TransmogHoliday
+4/20 14:39:53.528      561, TransmogHoliday
+4/20 14:39:53.528      561, Item
+4/20 14:39:53.528      561, ItemSearchName
+4/20 14:39:53.528      561, ItemSparse
+4/20 14:39:53.528      561, TradeSkillItem
+4/20 14:39:53.528      562, TransmogHoliday
+4/20 14:39:53.528      562, Item
+4/20 14:39:53.528      562, ItemSearchName
+4/20 14:39:53.528      562, ItemSparse
+4/20 14:39:53.528      562, TradeSkillItem
+4/20 14:39:53.528      564, SpellName
+4/20 14:39:53.528      564, Spell
+4/20 14:39:53.528      565, Spell
+4/20 14:39:53.528      565, SpellName
+4/20 14:39:53.528      568, SpellName
+4/20 14:39:53.528      568, Spell
+4/20 14:39:53.528      570, Spell
+4/20 14:39:53.528      570, SpellName
+4/20 14:39:53.528      584, AreaTriggerActionSet
+4/20 14:39:53.528      585, AreaTriggerActionSet
+4/20 14:39:53.528      586, AreaTriggerBox
+4/20 14:39:53.528      588, AreaTriggerCreateProperties
+4/20 14:39:53.528      695, Cfg_Regions
+4/20 14:39:53.528      696, Cfg_Regions
+4/20 14:39:53.528      697, Cfg_Regions
+4/20 14:39:53.528      699, Cfg_Regions
+4/20 14:39:53.528      700, Cfg_Regions
+4/20 14:39:53.528      766, SkillLineAbility
+4/20 14:39:53.528      767, SpellMisc
+4/20 14:39:53.528      831, WorldStateExpression
+4/20 14:39:53.528      832, WorldStateExpression
+4/20 14:39:53.528      833, WorldStateExpression
+4/20 14:39:53.528      834, WorldStateExpression
+4/20 14:39:53.528      835, WorldStateExpression
+4/20 14:39:53.528      864, BroadcastText
+4/20 14:39:53.528      873, SpellMisc
+4/20 14:39:53.528      876, SpellMisc
+4/20 14:39:53.528      879, SpellMisc
+4/20 14:39:53.528      881, SpellMisc
+4/20 14:39:53.528      882, Cfg_Regions
+4/20 14:39:53.528      883, Cfg_Regions
+4/20 14:39:53.528      884, Cfg_Regions
+4/20 14:39:53.528      885, Cfg_Regions
+4/20 14:39:53.528      887, Creature
+4/20 14:39:53.528      888, CreatureXDisplayInfo
+4/20 14:39:53.528      890, PlayerCondition
+4/20 14:39:53.528      891, QuestV2
+4/20 14:39:53.528      891, QuestV2CliTask
+4/20 14:39:53.528      892, QuestV2CliTask
+4/20 14:39:53.528      892, QuestV2
+4/20 14:39:53.528      934, WorldStateExpression
+4/20 14:39:53.528      947, AreaTrigger
+4/20 14:39:53.528      948, AreaTrigger
+4/20 14:39:53.528      949, AreaTrigger
+4/20 14:39:53.528      950, AreaTrigger
+4/20 14:39:53.528      973, WorldStateExpression
+4/20 14:39:53.528      974, WorldStateExpression
+4/20 14:39:53.528      975, WorldStateExpression
+4/20 14:39:53.528      976, WorldStateExpression
+4/20 14:39:53.528      977, WorldStateExpression
+4/20 14:39:53.528      978, WorldStateExpression
+4/20 14:39:53.528      567, Spell
+4/20 14:39:53.528      567, SpellName
+4/20 14:39:53.528      874, SpellMisc
+4/20 14:39:53.528      552, Creature
+4/20 14:39:53.528      587, AreaTriggerCreateProperties
+4/20 14:39:53.528      830, WorldStateExpression
+4/20 14:39:53.528      558, TransmogHoliday
+4/20 14:39:53.528      558, Item
+4/20 14:39:53.528      558, ItemSearchName
+4/20 14:39:53.528      558, ItemSparse
+4/20 14:39:53.528      558, TradeSkillItem
+4/20 14:39:53.528      865, BroadcastText
+4/20 14:39:53.528      251, DungeonEncounter
+4/20 14:39:53.528      698, Cfg_Regions
+4/20 14:39:53.528      549, Creature
+4/20 14:39:53.528      563, Spell
+4/20 14:39:53.528      563, SpellName
+4/20 14:39:53.528      872, SpellMisc
+4/20 14:39:53.528      875, SpellMisc
+4/20 14:39:53.528      877, SpellMisc
+4/20 14:39:53.528      292, Creature
+4/20 14:39:53.528      878, SpellMisc
+4/20 14:39:53.528      551, Creature
+4/20 14:39:53.528      886, Cfg_Regions
+4/20 14:39:53.528      554, Creature
+4/20 14:39:53.528      880, SpellMisc
+4/20 14:39:53.528      569, Spell
+4/20 14:39:53.528      569, SpellName
+4/20 14:39:53.528      566, Spell
+4/20 14:39:53.528      566, SpellName
+4/20 14:39:53.577  ---- ApplyingHotfixes from Cache ----
+4/20 14:39:53.577  ---- ApplyingHotfixes from Server ----
+4/20 14:39:53.577  	252 Table DungeonEncounter RecID 784 valid
+4/20 14:39:53.577  	253 Table DungeonEncounter RecID 785 valid
+4/20 14:39:53.577  	257 Table DungeonEncounter RecID 1084 valid
+4/20 14:39:53.577  	293 Table CreatureDifficulty RecID 10717 invalid
+4/20 14:39:53.577  	294 Table CreatureXDisplayInfo RecID 254311 valid
+4/20 14:39:53.577  	296 Table SpellInterrupts RecID 128871 valid
+4/20 14:39:53.577  	297 Table SpellMisc RecID 331142 valid
+4/20 14:39:53.577  	298 Table GameObjects RecID 178404 invalid
+4/20 14:39:53.577  	548 Table Creature RecID 14509 invalid
+4/20 14:39:53.577  	550 Table Creature RecID 14515 invalid
+4/20 14:39:53.577  	553 Table Creature RecID 14968 invalid
+4/20 14:39:53.577  	555 Table DungeonEncounter RecID 786 valid
+4/20 14:39:53.577  	556 Table DungeonEncounter RecID 789 valid
+4/20 14:39:53.577  	557 Table DungeonEncounter RecID 791 valid
+4/20 14:39:53.577  	559 Table TransmogHoliday RecID 19910 invalid
+4/20 14:39:53.577  	559 Table Item RecID 19910 valid
+4/20 14:39:53.577  	559 Table ItemSearchName RecID 19910 invalid
+4/20 14:39:53.577  	559 Table ItemSparse RecID 19910 valid
+4/20 14:39:53.577  	559 Table TradeSkillItem RecID 19910 invalid
+4/20 14:39:53.577  	560 Table TradeSkillItem RecID 19922 invalid
+4/20 14:39:53.577  	560 Table ItemSparse RecID 19922 valid
+4/20 14:39:53.577  	560 Table ItemSearchName RecID 19922 invalid
+4/20 14:39:53.577  	560 Table Item RecID 19922 valid
+4/20 14:39:53.577  	560 Table TransmogHoliday RecID 19922 invalid
+4/20 14:39:53.577  	561 Table TransmogHoliday RecID 19927 invalid
+4/20 14:39:53.577  	561 Table Item RecID 19927 valid
+4/20 14:39:53.577  	561 Table ItemSearchName RecID 19927 invalid
+4/20 14:39:53.577  	561 Table ItemSparse RecID 19927 valid
+4/20 14:39:53.577  	561 Table TradeSkillItem RecID 19927 invalid
+4/20 14:39:53.577  	562 Table TransmogHoliday RecID 19930 invalid
+4/20 14:39:53.577  	562 Table Item RecID 19930 valid
+4/20 14:39:53.577  	562 Table ItemSearchName RecID 19930 invalid
+4/20 14:39:53.577  	562 Table ItemSparse RecID 19930 valid
+4/20 14:39:53.577  	562 Table TradeSkillItem RecID 19930 invalid
+4/20 14:39:53.577  	564 Table SpellName RecID 24084 valid
+4/20 14:39:53.577  	564 Table Spell RecID 24084 valid
+4/20 14:39:53.577  	565 Table Spell RecID 24190 valid
+4/20 14:39:53.577  	565 Table SpellName RecID 24190 valid
+4/20 14:39:53.577  	568 Table SpellName RecID 24268 valid
+4/20 14:39:53.577  	568 Table Spell RecID 24268 valid
+4/20 14:39:53.577  	570 Table Spell RecID 24690 valid
+4/20 14:39:53.577  	570 Table SpellName RecID 24690 valid
+4/20 14:39:53.577  	584 Table AreaTriggerActionSet RecID 24079 valid
+4/20 14:39:53.577  	585 Table AreaTriggerActionSet RecID 24081 valid
+4/20 14:39:53.577  	586 Table AreaTriggerBox RecID 2310 invalid
+4/20 14:39:53.577  	588 Table AreaTriggerCreateProperties RecID 20154 invalid
+4/20 14:39:53.577  	695 Table Cfg_Regions RecID 1153 valid
+4/20 14:39:53.577  	696 Table Cfg_Regions RecID 1154 valid
+4/20 14:39:53.577  	697 Table Cfg_Regions RecID 1155 valid
+4/20 14:39:53.577  	699 Table Cfg_Regions RecID 1157 valid
+4/20 14:39:53.577  	700 Table Cfg_Regions RecID 1159 valid
+4/20 14:39:53.577  	766 Table SkillLineAbility RecID 12576 invalid
+4/20 14:39:53.577  	767 Table SpellMisc RecID 315791 valid
+4/20 14:39:53.577  	831 Table WorldStateExpression RecID 31611 valid
+4/20 14:39:53.577  	832 Table WorldStateExpression RecID 31612 invalid
+4/20 14:39:53.577  	833 Table WorldStateExpression RecID 31613 invalid
+4/20 14:39:53.577  	834 Table WorldStateExpression RecID 31614 valid
+4/20 14:39:53.577  	835 Table WorldStateExpression RecID 31615 valid
+4/20 14:39:53.577  	864 Table BroadcastText RecID 9788 valid
+4/20 14:39:53.577  	873 Table SpellMisc RecID 328279 valid
+4/20 14:39:53.577  	876 Table SpellMisc RecID 331152 valid
+4/20 14:39:53.577  	879 Table SpellMisc RecID 333245 valid
+4/20 14:39:53.577  	881 Table SpellMisc RecID 334030 valid
+4/20 14:39:53.577  	882 Table Cfg_Regions RecID 1060 valid
+4/20 14:39:53.577  	883 Table Cfg_Regions RecID 1089 valid
+4/20 14:39:53.577  	884 Table Cfg_Regions RecID 1090 valid
+4/20 14:39:53.577  	885 Table Cfg_Regions RecID 1091 valid
+4/20 14:39:53.577  	887 Table Creature RecID 15176 invalid
+4/20 14:39:53.577  	888 Table CreatureXDisplayInfo RecID 257496 valid
+4/20 14:39:53.577  	890 Table PlayerCondition RecID 80518 invalid
+4/20 14:39:53.577  	891 Table QuestV2 RecID 8304 valid
+4/20 14:39:53.577  	891 Table QuestV2CliTask RecID 8304 invalid
+4/20 14:39:53.577  	892 Table QuestV2CliTask RecID 8307 invalid
+4/20 14:39:53.577  	892 Table QuestV2 RecID 8307 valid
+4/20 14:39:53.577  	934 Table WorldStateExpression RecID 31895 valid
+4/20 14:39:53.577  	947 Table AreaTrigger RecID 2606 invalid
+4/20 14:39:53.577  	948 Table AreaTrigger RecID 2608 invalid
+4/20 14:39:53.577  	949 Table AreaTrigger RecID 3948 invalid
+4/20 14:39:53.577  	950 Table AreaTrigger RecID 3949 invalid
+4/20 14:39:53.577  	973 Table WorldStateExpression RecID 31911 valid
+4/20 14:39:53.577  	974 Table WorldStateExpression RecID 31912 valid
+4/20 14:39:53.577  	975 Table WorldStateExpression RecID 31913 valid
+4/20 14:39:53.577  	976 Table WorldStateExpression RecID 31914 valid
+4/20 14:39:53.577  	977 Table WorldStateExpression RecID 31915 valid
+4/20 14:39:53.577  	978 Table WorldStateExpression RecID 31916 valid
+4/20 14:39:53.577  	567 Table Spell RecID 24211 valid
+4/20 14:39:53.577  	567 Table SpellName RecID 24211 valid
+4/20 14:39:53.577  	874 Table SpellMisc RecID 328532 valid
+4/20 14:39:53.577  	552 Table Creature RecID 14967 invalid
+4/20 14:39:53.577  	587 Table AreaTriggerCreateProperties RecID 20151 invalid
+4/20 14:39:53.577  	830 Table WorldStateExpression RecID 3030 valid
+4/20 14:39:53.577  	558 Table TransmogHoliday RecID 19909 invalid
+4/20 14:39:53.577  	558 Table Item RecID 19909 valid
+4/20 14:39:53.577  	558 Table ItemSearchName RecID 19909 invalid
+4/20 14:39:53.577  	558 Table ItemSparse RecID 19909 valid
+4/20 14:39:53.577  	558 Table TradeSkillItem RecID 19909 invalid
+4/20 14:39:53.577  	865 Table BroadcastText RecID 9790 valid
+4/20 14:39:53.577  	251 Table DungeonEncounter RecID 617 valid
+4/20 14:39:53.577  	698 Table Cfg_Regions RecID 1156 valid
+4/20 14:39:53.577  	549 Table Creature RecID 14510 invalid
+4/20 14:39:53.577  	563 Table Spell RecID 24081 valid
+4/20 14:39:53.577  	563 Table SpellName RecID 24081 valid
+4/20 14:39:53.577  	872 Table SpellMisc RecID 314691 valid
+4/20 14:39:53.577  	875 Table SpellMisc RecID 330350 valid
+4/20 14:39:53.577  	877 Table SpellMisc RecID 331648 valid
+4/20 14:39:53.577  	292 Table Creature RecID 10717 invalid
+4/20 14:39:53.577  	878 Table SpellMisc RecID 333003 valid
+4/20 14:39:53.577  	551 Table Creature RecID 14966 invalid
+4/20 14:39:53.577  	886 Table Cfg_Regions RecID 1092 valid
+4/20 14:39:53.577  	554 Table Creature RecID 15041 invalid
+4/20 14:39:53.577  	880 Table SpellMisc RecID 333638 valid
+4/20 14:39:53.577  	569 Table Spell RecID 24686 valid
+4/20 14:39:53.577  	569 Table SpellName RecID 24686 valid
+4/20 14:39:53.577  	566 Table Spell RecID 24210 valid
+4/20 14:39:53.577  	566 Table SpellName RecID 24210 valid
+4/20 14:39:57.234  ---- Shutdown ----

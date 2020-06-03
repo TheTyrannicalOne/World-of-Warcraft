@@ -37,3 +37,9 @@ Updates/*
 *.curseclient
 
 *patch.result
+
+*bindings-cache.wtf
+
+*config-cache.wtf
+
+*macros-cache.txt

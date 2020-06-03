@@ -1,10 +1,77 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[11940] = {
-			["title"] = "Drake Hunt",
+		[13041] = {
+			["title"] = "Finish the Shipment",
 			["objectives"] = {
-				"0/1 Captured Nexus Drake", -- [1]
+				"0/1  ", -- [1]
+			},
+		},
+		[27354] = {
+			["title"] = "Mastering the Arcane",
+			["objectives"] = {
+				"0/1  ", -- [1]
+				"0/5  ", -- [2]
+				"0/5  ", -- [3]
+			},
+		},
+		[25186] = {
+			["title"] = "Futile Resistance",
+			["objectives"] = {
+				"0/1 Kona Thunderwalk slain", -- [1]
+			},
+		},
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+		[12292] = {
+			["title"] = "Local Support",
+			["objectives"] = {
+				"0/1  ", -- [1]
+			},
+		},
+		[28398] = {
+			["title"] = "The Pyromancer's Grimoire",
+			["objectives"] = {
+				"0/6 Twilight Emissary slain", -- [1]
+				"0/1  ", -- [2]
+			},
+		},
+		[12789] = {
+			["title"] = "Into the Breach!",
+			["objectives"] = {
+			},
+		},
+		[25191] = {
+			["title"] = "Survey the Destruction",
+			["objectives"] = {
+				"Survey Complete", -- [1]
+			},
+		},
+		[26013] = {
+			["title"] = "Assault on the Sanctum",
+			["objectives"] = {
+			},
+		},
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
+			["objectives"] = {
+			},
+		},
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
+			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
+			},
+		},
+		[12225] = {
+			["title"] = "Mmm... Amberseeds!",
+			["objectives"] = {
 			},
 		},
 		[31891] = {
@@ -15,6 +82,11 @@ QuestTogether = {
 				"Defeat Kela Grimtotem", -- [3]
 				"Defeat Zoltan", -- [4]
 				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[25768] = {
+			["title"] = "Bombs Away: Mirkfallon Post!",
+			["objectives"] = {
 			},
 		},
 		[26838] = {
@@ -28,74 +100,14 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[12728] = {
-			["title"] = "Monitoring the Rift: Winterfin Cavern",
+		[49864] = {
+			["title"] = "Wars on Two Fronts",
 			["objectives"] = {
-				"0/1 Winterfin Cavern Reading Taken", -- [1]
+				"0/1 Select your next assignment", -- [1]
 			},
 		},
-		[25186] = {
-			["title"] = "Futile Resistance",
-			["objectives"] = {
-				"0/1 Kona Thunderwalk slain", -- [1]
-			},
-		},
-		[27354] = {
-			["title"] = "Mastering the Arcane",
-			["objectives"] = {
-				"0/1 Silverlaine's Enchanted Crystal", -- [1]
-				"0/5 Moontouched Wood", -- [2]
-				"0/5 Ghostly Essence", -- [3]
-			},
-		},
-		[12794] = {
-			["title"] = "The Magical Kingdom of Dalaran",
-			["objectives"] = {
-				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
-			},
-		},
-		[25768] = {
-			["title"] = "Bombs Away: Mirkfallon Post!",
-			["objectives"] = {
-			},
-		},
-		[26897] = {
-			["title"] = "Blackfathom Deeps",
-			["objectives"] = {
-			},
-		},
-		[25191] = {
-			["title"] = "Survey the Destruction",
-			["objectives"] = {
-				"Survey Complete", -- [1]
-			},
-		},
-		[11932] = {
-			["title"] = "Cowards and Fools",
-			["objectives"] = {
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
-		[28398] = {
-			["title"] = "The Pyromancer's Grimoire",
-			["objectives"] = {
-				"0/6 Twilight Emissary slain", -- [1]
-				"0/1 Loregrain's Grimoire", -- [2]
-			},
-		},
-		[29608] = {
-			["title"] = "Allies in Dalaran",
-			["objectives"] = {
-			},
-		},
-		[11707] = {
-			["title"] = "Distress Call",
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
 			["objectives"] = {
 			},
 		},

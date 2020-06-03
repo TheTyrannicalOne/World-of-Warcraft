@@ -1,95 +1,84 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0324,
+	["LastVersion"] = 2.0326,
 	["LastPlayerFullName"] = "Darnastris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122250,
-			["Level"] = 82,
-			["Link"] = "|cff00ccff|Hitem:122250::::::::70:64:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
+			["Level"] = 113,
+			["Link"] = "|cff00ccff|Hitem:122250::::::::86:64:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122664,
-			["Level"] = 82,
-			["Link"] = "|cff00ccff|Hitem:122664::::::::70:64:::1:5805:::|h[Eternal Horizon Choker]|h|r",
+			["Level"] = 113,
+			["Link"] = "|cff00ccff|Hitem:122664::::::::86:64:::1:5805:::|h[Eternal Horizon Choker]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122360,
-			["Level"] = 82,
-			["Link"] = "|cff00ccff|Hitem:122360::::::::70:64:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
+			["Level"] = 113,
+			["Link"] = "|cff00ccff|Hitem:122360::::::::86:64:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122384,
-			["Level"] = 82,
-			["Link"] = "|cff00ccff|Hitem:122384::::::::70:64:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
+			["Level"] = 113,
+			["Link"] = "|cff00ccff|Hitem:122384::::::::86:64:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 37224,
-			["Level"] = 77,
-			["Link"] = "|cff0070dd|Hitem:37224::::::::68:64:512:11:2:3685:5536:67:::|h[Sweltering Belt]|h|r",
+			["ID"] = 173608,
+			["Level"] = 106,
+			["Link"] = "|cff1eff00|Hitem:173608::::::::86:64:512:11:1:6416:84:::|h[Mountainsage Cord]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122256,
-			["Level"] = 82,
-			["Link"] = "|cff00ccff|Hitem:122256::::::::70:64:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
+			["Level"] = 113,
+			["Link"] = "|cff00ccff|Hitem:122256::::::::86:64:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 37207,
-			["Level"] = 67,
-			["Link"] = "|cff1eff00|Hitem:37207::::::::65:64:512:11:1:3685:65:::|h[Seafarer Boots]|h|r",
+			["ID"] = 37962,
+			["Level"] = 99,
+			["Link"] = "|cff1eff00|Hitem:37962::::::::86:64:512:11:1:3687:80:::|h[Treads of the Charred Canyon]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 37208,
-			["Level"] = 71,
-			["Link"] = "|cff0070dd|Hitem:37208::::::::65:64:512:11:2:3685:5536:64:::|h[Transborean Bracers]|h|r",
+			["ID"] = 37957,
+			["Level"] = 99,
+			["Link"] = "|cff1eff00|Hitem:37957::::::::86:64:512:11:1:3687:80:::|h[Wastewind Bracers]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 56676,
-			["Level"] = 50,
-			["Link"] = "|cff1eff00|Hitem:56676::::::::50:64:512:11:1:3643:50:::|h[Whitemoon Gloves]|h|r",
+			["ID"] = 173603,
+			["Level"] = 105,
+			["Link"] = "|cff1eff00|Hitem:173603::::::::86:64:512:11:1:6416:83:::|h[Mountainsage Handwraps]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 122529,
-			["Level"] = 82,
+			["Level"] = 113,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::70:64:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122529::::::::86:64:::1:5805:::|h[Dread Pirate Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128169,
-			["Level"] = 82,
+			["Level"] = 113,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::70:64:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::86:64:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122362,
-			["Level"] = 82,
+			["Level"] = 113,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::70:64:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::86:64:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [13]
-		{
-			["ID"] = 122362,
-			["Level"] = 80,
-			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::69:64:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
-		}, -- [14]
+		nil, -- [14]
 		{
 			["ID"] = 122262,
-			["Level"] = 82,
-			["Link"] = "|cff00ccff|Hitem:122262::::::::70:64:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
+			["Level"] = 113,
+			["Link"] = "|cff00ccff|Hitem:122262::::::::86:64:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 122353,
-			["Level"] = 82,
-			["Link"] = "|cff00ccff|Hitem:122353::::::::70:64:::1:5805:::|h[Dignified Headmaster's Charge]|h|r",
+			["Level"] = 113,
+			["Link"] = "|cff00ccff|Hitem:122353::::::::86:64:::1:5805:::|h[Dignified Headmaster's Charge]|h|r",
 		}, -- [16]
-		{
-			["ID"] = 36674,
-			["Level"] = 59,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff1eff00|Hitem:36674::::::::64:64:512:27:2:1679:3868:63:::|h[Old Tooth of the Quickblade]|h|r",
-		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
 }

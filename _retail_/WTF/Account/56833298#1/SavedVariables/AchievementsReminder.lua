@@ -116,7 +116,7 @@ ralllocationnames = {
 	"The Emerald Nightmare", -- [114]
 	"The Nighthold", -- [115]
 	"Trial of Valor", -- [116]
-	"Return to Karazhan", -- [117]
+	"Karazhan", -- [117]
 	"Cathedral of Eternal Night", -- [118]
 	"Tomb of Sargeras", -- [119]
 }

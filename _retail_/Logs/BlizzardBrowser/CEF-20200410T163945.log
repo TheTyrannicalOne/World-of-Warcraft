@@ -1,6 +1,0 @@
-[0410/123948.161:WARNING:angle_platform_impl.cc(59)] compileToBinary(228): 
-C:\fakepath(65,10-34): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
-C:\fakepath(87,10-34): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
-
-[0410/124004.854:ERROR:quota_settings.cc(111)] Unable to compute QuotaSettings.
-[0410/124004.856:WARNING:quota_manager.cc(1625)] No storage quota provided in QuotaSettings.

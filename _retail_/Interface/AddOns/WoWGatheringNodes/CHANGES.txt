@@ -1,12 +1,11 @@
-lightweight tag b8ddfd68a7b0cea00c32151d482791f3066bbb76 BFA-8.2.5-update-v1.0
+lightweight tag 49c86364107c172e7d0ff5d77f5ee2c97ff2b57f BFA-8.3-update-v1.0
 Author:	SLOKnightfall <SLOKnightfall@gmail.com>
-Date:	Wed Oct 9 18:58:00 2019 -0700
+Date:	Sun Apr 19 18:40:25 2020 -0700
 
-commit b8ddfd68a7b0cea00c32151d482791f3066bbb76
+commit 49c86364107c172e7d0ff5d77f5ee2c97ff2b57f
 Author: SLOKnightfall <SLOKnightfall@gmail.com>
-Date:   Wed Oct 9 18:58:00 2019 -0700
+Date:   Sun Apr 19 18:40:25 2020 -0700
 
-    Updated toc
-    Added Jelly Deposit nodes
-    Refreshed Data
+    Toc Update
+    Data Refresh
 

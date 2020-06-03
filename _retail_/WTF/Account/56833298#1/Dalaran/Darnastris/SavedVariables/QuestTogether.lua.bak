@@ -1,10 +1,18 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[49860] = {
-			["title"] = "Adventure Calls",
+		[13041] = {
+			["title"] = "Finish the Shipment",
 			["objectives"] = {
-				"0/1 Select your next assignment", -- [1]
+				"0/1  ", -- [1]
+			},
+		},
+		[27354] = {
+			["title"] = "Mastering the Arcane",
+			["objectives"] = {
+				"0/1  ", -- [1]
+				"0/5  ", -- [2]
+				"0/5  ", -- [3]
 			},
 		},
 		[25186] = {
@@ -13,16 +21,39 @@ QuestTogether = {
 				"0/1 Kona Thunderwalk slain", -- [1]
 			},
 		},
-		[27354] = {
-			["title"] = "Mastering the Arcane",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/1 Silverlaine's Enchanted Crystal", -- [1]
-				"0/5 Moontouched Wood", -- [2]
-				"0/5 Ghostly Essence", -- [3]
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[25768] = {
-			["title"] = "Bombs Away: Mirkfallon Post!",
+		[12292] = {
+			["title"] = "Local Support",
+			["objectives"] = {
+				"0/1  ", -- [1]
+			},
+		},
+		[28398] = {
+			["title"] = "The Pyromancer's Grimoire",
+			["objectives"] = {
+				"0/6 Twilight Emissary slain", -- [1]
+				"0/1  ", -- [2]
+			},
+		},
+		[12789] = {
+			["title"] = "Into the Breach!",
+			["objectives"] = {
+			},
+		},
+		[25191] = {
+			["title"] = "Survey the Destruction",
+			["objectives"] = {
+				"Survey Complete", -- [1]
+			},
+		},
+		[26013] = {
+			["title"] = "Assault on the Sanctum",
 			["objectives"] = {
 			},
 		},
@@ -31,10 +62,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[25191] = {
-			["title"] = "Survey the Destruction",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
-				"Survey Complete", -- [1]
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
+			},
+		},
+		[12225] = {
+			["title"] = "Mmm... Amberseeds!",
+			["objectives"] = {
 			},
 		},
 		[31891] = {
@@ -47,18 +84,14 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[25768] = {
+			["title"] = "Bombs Away: Mirkfallon Post!",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[28398] = {
-			["title"] = "The Pyromancer's Grimoire",
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
 			["objectives"] = {
-				"0/6 Twilight Emissary slain", -- [1]
-				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
 		[44989] = {
@@ -67,8 +100,14 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[26838] = {
-			["title"] = "Rebels Without a Clue",
+		[49864] = {
+			["title"] = "Wars on Two Fronts",
+			["objectives"] = {
+				"0/1 Select your next assignment", -- [1]
+			},
+		},
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
 			["objectives"] = {
 			},
 		},

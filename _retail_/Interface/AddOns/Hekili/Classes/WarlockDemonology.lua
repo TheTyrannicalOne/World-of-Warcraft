@@ -163,6 +163,21 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
                 elseif spellID == 264130 then
                     if wild_imps[1] then table.remove( wild_imps, 1 ) end
                     if wild_imps[1] then table.remove( wild_imps, 1 ) end
+                    
+                    for i = 1, 2 do
+                        local lowest
+
+                        for id, imp in pairs( imps ) do
+                            if not lowest then lowest = id
+                            elseif imp.expires < imps[ lowest ].expires then
+                                lowest = id
+                            end
+                        end
+
+                        if lowest then
+                            imps[ lowest ] = nil
+                        end
+                    end
 
                 elseif spellID == 105174 then
                     -- Hand of Guldan; queue imps.
@@ -222,10 +237,19 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         wipe( vilefiend_v )
         for n, t in ipairs( vilefiend ) do vilefiend_v[ n ] = t end
 
-
+        
         for id, imp in pairs( imps ) do
             if imp.expires < now then
                 imps[ id ] = nil
+            end
+        end
+
+        i = 1
+        while( wild_imps[ i ] ) do
+            if wild_imps[ i ] < now then
+                table.remove( wild_imps, i )
+            else
+                i = i + 1
             end
         end
 
@@ -233,7 +257,14 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         for n, t in pairs( imps ) do table.insert( wild_imps_v, t.expires ) end
         table.sort( wild_imps_v )
 
+        local difference = #wild_imps_v - GetSpellCount( 196277 )
 
+        while difference > 0 do
+            table.remove( wild_imps_v, 1 )
+            difference = difference - 1
+        end
+
+        
         wipe( guldan_v )
         for n, t in ipairs( guldan ) do guldan_v[ n ] = t end
 
@@ -770,6 +801,45 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             max_stack = 1,
         },
     } )
+
+
+    local Glyphed = IsSpellKnownOrOverridesKnown
+
+    -- Fel Imp          58959
+    spec:RegisterPet( "imp",
+        function() return Glyphed( 112866 ) and 58959 or 416 end,
+        "summon_imp",
+        3600 )
+
+    -- Voidlord         58960
+    spec:RegisterPet( "voidwalker",
+        function() return Glyphed( 112867 ) and 58960 or 1860 end,
+        "summon_voidwalker",
+        3600 )
+
+    -- Observer         58964
+    spec:RegisterPet( "felhunter",
+        function() return Glyphed( 112869 ) and 58964 or 417 end,
+        "summon_felhunter",
+        3600 )
+
+    -- Fel Succubus     120526
+    -- Shadow Succubus  120527
+    -- Shivarra         58963
+    spec:RegisterPet( "succubus", 
+        function()
+            if Glyphed( 240263 ) then return 120526
+            elseif Glyphed( 240266 ) then return 120527
+            elseif Glyphed( 112868 ) then return 58963 end
+            return 1863
+        end,
+        3600 )
+
+    -- Wrathguard       58965
+    spec:RegisterPet( "felguard",
+        function() return Glyphed( 112870 ) and 58965 or 17252 end,
+        "summon_felguard",
+        3600 )
 
 
     -- Abilities
@@ -1321,9 +1391,9 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             gcd = "spell",
 
             startsCombat = true,
-            nobuff = "felstorm",
+            -- nobuff = "felstorm", -- Does not appear to prevent Soul Strike any longer.
 
-            usable = function () return pet.exists end,
+            usable = function () return pet.felguard.up and pet.alive end,
             handler = function ()
                 gain( 1, "soul_shards" )
             end,
@@ -1383,6 +1453,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             essential = true,
 
             bind = "summon_pet",
+            nomounted = true,
 
             usable = function () return not pet.exists end,
             handler = function ()

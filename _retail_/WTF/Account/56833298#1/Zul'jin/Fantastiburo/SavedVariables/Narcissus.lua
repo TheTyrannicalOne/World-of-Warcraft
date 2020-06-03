@@ -1,2 +1,7 @@
 
-NarcissusDB_PC = nil
+NarcissusDB_PC = {
+	["UseAlias"] = false,
+	["PlayerAlias"] = "",
+	["EquipmentSetDB"] = {
+	},
+}

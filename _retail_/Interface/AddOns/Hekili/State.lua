@@ -16,10 +16,7 @@ local orderedPairs = ns.orderedPairs
 local round, roundUp, roundDown = ns.round, ns.roundUp, ns.roundDown
 local safeMin, safeMax = ns.safeMin, ns.safeMax
 
-local table_insert = table.insert
-local table_sort = table.sort
-local table_wipe = table.wipe
-local table_copy = ns.tableCopy
+local tcopy = ns.tableCopy
 
 -- Clean up table_x later.
 local insert, remove, sort, unpack, wipe = table.insert, table.remove, table.sort, table.unpack, table.wipe
@@ -486,7 +483,7 @@ state.pairs = pairs
 state.rawget = rawget
 state.rawset = rawset
 state.select = select
-state.table_insert = table.insert
+state.tinsert = table.insert
 state.insert = table.insert
 state.remove = table.remove
 state.tonumber = tonumber
@@ -702,7 +699,7 @@ end
 -- Apply a buff to the current game state.
 local function applyBuff( aura, duration, stacks, value )
     if not aura then
-        Error( "Attempted to apply/remove a nameless aura '%s'.\n%s", aura or "nil", debugstack(2) )
+        Error( "Attempted to apply/remove a nameless aura '%s'.", aura or "nil" )
         return
     end
 
@@ -1093,11 +1090,11 @@ local function forecastResources( resource )
     wipe( events )
     wipe( remains )
 
-    local now = roundDown( state.now + state.offset, 2 )
+    local now = state.now + state.offset -- roundDown( state.now + state.offset, 2 )
 
-    local timeout = roundDown( FORECAST_DURATION * state.haste, 2 )
+    local timeout = FORECAST_DURATION * state.haste -- roundDown( FORECAST_DURATION * state.haste, 2 )
     if state.class.file == "DEATHKNIGHT" and state.runes then
-        timeout = max( timeout, 1 + state.runes.cooldown )
+        timeout = max( timeout, 0.01 + 2 * state.runes.cooldown )
     end       
 
     local r = state[ resource ]
@@ -1129,7 +1126,8 @@ local function forecastResources( resource )
                 local r = state[ v.resource ]
 
                 local l = v.last()
-                local i = roundDown( type( v.interval ) == 'number' and v.interval or ( type( v.interval ) == 'function' and v.interval( now, r.actual ) or ( type( v.interval ) == 'string' and state[ v.interval ] or 0 ) ), 2 )
+                local i = type( v.interval ) == 'number' and v.interval or ( type( v.interval ) == 'function' and v.interval( now, r.actual ) or ( type( v.interval ) == 'string' and state[ v.interval ] or 0 ) )
+                -- local i = roundDown( type( v.interval ) == 'number' and v.interval or ( type( v.interval ) == 'function' and v.interval( now, r.actual ) or ( type( v.interval ) == 'string' and state[ v.interval ] or 0 ) ), 2 )
 
                 v.next = l + i
                 v.name = k
@@ -1141,7 +1139,7 @@ local function forecastResources( resource )
         end
     end
 
-    table_sort( events, resourceModelSort )
+    sort( events, resourceModelSort )
 
     local finish = now + timeout
 
@@ -1214,7 +1212,7 @@ local function forecastResources( resource )
             end
         end
 
-        if #events > 1 then table_sort( events, resourceModelSort ) end
+        if #events > 1 then sort( events, resourceModelSort ) end
     end
 
     if r.regen > 0 and r.forecast[ r.fcount ].v < r.max then
@@ -1317,7 +1315,7 @@ do
 
     function state.recheck( ability, script, stack )
         local times = state.recheckTimes
-        table_wipe( times )
+        wipe( times )
 
         local debug = Hekili.ActiveDebug
 
@@ -1389,7 +1387,7 @@ do
             table.insert( times, remains )
         end
 
-        table_sort( times )
+        sort( times )
     end
 end
 
@@ -1538,6 +1536,9 @@ local mt_state = {
 
         elseif k == 'inEncounter' or k == 'encounter' then
             return t.encounterID > 0
+        
+        elseif k == 'mounted' or k == 'is_mounted' then
+            return IsMounted()
 
         elseif k == 'boss' then
             return ( t.encounterID > 0 or ( UnitCanAttack( "player", "target" ) and ( UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) ) ) == true
@@ -1887,10 +1888,7 @@ local mt_state = {
         if t.settings[ k ] ~= nil then return t.settings[ k ] end
         if t.toggle[ k ]   ~= nil then return t.toggle[ k ]   end
 
-        local stack = debugstack()
-        if stack then stack = stack:match( "^(.-\n?.-\n?.-)\n" ) end
-
-        Hekili:Error( "Returned unknown string '" .. k .. "' in state metatable [" .. state.scriptID .. "]." .. ( stack and ( "\n" .. stack ) or "" ) )
+        Hekili:Error( "Returned unknown string '" .. k .. "' in state metatable [" .. state.scriptID .. "]." )
         return nil
     end,
     __newindex = function(t, k, v)
@@ -2497,7 +2495,7 @@ local mt_default_cooldown = {
             return t[k]
 
         elseif k == 'charges' then
-            if not raw and state:IsDisabled( t.key ) then
+            if not raw and ( state:IsDisabled( t.key ) or ability.disabled ) then
                 return 0
             end
 
@@ -2519,7 +2517,7 @@ local mt_default_cooldown = {
 
             -- If the ability is toggled off in the profile, we may want to fake its CD.
             -- Revisit this if I add base_cooldown to the ability tables.
-            if not raw and state:IsDisabled( t.key ) then
+            if not raw and ( state:IsDisabled( t.key ) or ability.disabled ) then
                 return ability.cooldown
             end
 
@@ -2530,7 +2528,7 @@ local mt_default_cooldown = {
 
         elseif k == 'charges_fractional' then
             if not state:IsKnown( t.key ) then return 1 end
-            if not raw and state:IsDisabled( t.key ) then return 0 end
+            if not raw and ( state:IsDisabled( t.key ) or ability.disabled ) then return 0 end
 
             if ability.charges then 
                 if t.charge < ability.charges then
@@ -2634,6 +2632,7 @@ local mt_gcd = {
             if ability and ability.gcdTime then return ability.gcdTime end
 
             local gcd = ability and ability.gcd or "spell"
+
             if gcd == "off" then return 0 end
             if gcd == "totem" then return 1 end
 
@@ -3111,7 +3110,7 @@ local mt_default_buff = {
             end
         end
 
-        Error( "UNK: buff." .. t.key .. "." .. k .. "\n" .. debugstack(2) )
+        Error( "UNK: buff." .. t.key .. "." .. k )
 
     end,
 
@@ -3456,19 +3455,30 @@ ns.metatables.mt_totem = mt_totem
 
 do
     local db = {}
+    local cache = {}
     local pathState = {}
 
+    state.varDB = db
+    -- state.varCache = cache
+    state.varPaths = pathState
+
+
+    local entryPool = {}
+
     function state:RegisterVariable( key, scriptID, preconditions, preclusions )
-        local data = db[ key ] or {}
-        db[ key ] = data
+        db[ key ] = db[ key ] or {}
+        local data = db[ key ]
+        
+        cache[ key ] = cache[ key ] or {}
 
         local fullPath = scriptID
 
-        local entry = {
-            id = scriptID,
+        local entry = remove( entryPool ) or {
             mustPass = {},
             mustFail = {}
         }
+
+        entry.id = scriptID
 
         if preconditions then
             for i, prereq in ipairs( preconditions ) do
@@ -3497,20 +3507,30 @@ do
     
     function state:ResetVariables()
         for k, v in pairs( db ) do
-            wipe( v )
+            for i = #v, 1, -1 do
+                local x = remove( v, i )
+                wipe( x.mustPass )
+                wipe( x.mustFail )
+                insert( entryPool, x )
+            end
+            wipe( cache[ k ] )
+            wipe( self.variable )
         end
 
         wipe( pathState )
     end
 
+
     function state:GetVariableIDs( key )
         return db[ key ]
     end
 
-
+    
     state.variable = setmetatable( {}, {
         __index = function( t, var )
             local debug = Hekili.ActiveDebug
+
+            local now = state.query_time
 
             if class.variables[ var ] then
                 -- We have a hardcoded shortcut.
@@ -3523,14 +3543,11 @@ do
 
             state.variable[ var ] = 0
 
-            local varStart = debugprofilestop()
-
             if not db[ var ] then
-                -- if debug then Hekili:Debug( "var[%s] :: no data.\n%s", var, debugstack() ) end
                 return 0
             end
 
-            local data = table_copy( db[ var ] )
+            local data = db[ var ]
             local parent = state.scriptID
 
             -- If we're checking variable with no script loaded, don't bother.
@@ -3538,15 +3555,12 @@ do
 
             local default = 0
             local value = 0
-            local now = state.query_time
 
             local which_mod = "value"
 
             for i, entry in ipairs( data ) do
                 local scriptID = entry.id
                 local currPath = entry.fullPath .. ":" .. now
-
-                -- if debug then Hekili:Debug(" [%s] - %d of %d (%s) - %s", var, i, #data, currPath, tostring(pathState[ currPath ])) end
 
                 -- Check the requirements/exclusions in the APL stack.
                 if pathState[ currPath ] == nil then
@@ -3556,7 +3570,6 @@ do
                         state.scriptID = prereq
                         if not scripts:CheckScript( prereq ) then
                             pathState[ currPath ] = false
-                            -- if debug then Hekili:Debug( " - path to variable is blocked by prereq %s.", prereq ) end
                             break
                         end
                     end
@@ -3566,103 +3579,104 @@ do
                             state.scriptID = excl
                             if scripts:CheckScript( excl ) then
                                 pathState[ currPath ] = false
-                                -- if debug then Hekili:Debug( " - path to variable not reached due to forbidden %s.", prereq ) end
                                 break
                             end
                         end
                     end
                 end
 
-                if pathState[ currPath ] then
-                    state.scriptID = scriptID
-                    local op = state.args.op or "set"
+                if pathState[ currPath ] then                    
+                    local pathKey = currPath .. "-" .. i
 
-                    -- if debug then Hekili:Debug( 1, "Checking script for %s [%d]", scriptID, invocations ) end
+                    if cache[ var ][ pathKey ] ~= nil then
+                        value = cache[ var ][ pathKey ]
 
-                    local passed = scripts:CheckScript( scriptID )
+                    else
+                        state.scriptID = scriptID
+                        local op = state.args.op or "set"
 
-                    -- if debug then Hekili:Debug( -1, "Check DONE for script %s [%d]", scriptID, invocations ) end
+                        local passed = scripts:CheckScript( scriptID )
 
-                    -- if debug then Hekili:Debug( " - %s, %s, value: %s, value_else: %s, default: %s", op, tostring(passed), tostring(state.args.value), tostring(state.args.value_else), tostring(state.args.default) ) end
+                        --[[    add = "Add Value",
+                                ceil
+                                x default = "Set Default Value",
+                                div = "Divide Value",
+                                floor
+                                max = "Maximum Value",
+                                min = "Minimum Value",
+                                mod = "Modulo Value",
+                                mul = "Multiply Value",
+                                pow = "Raise Value to X Power",
+                                x reset = "Reset to Default",
+                                x set = "Set Value",
+                                x setif = "Set Value If...",
+                                sub = "Subtract Value" ]]
 
-                    --[[    add = "Add Value",
-                            ceil
-                            x default = "Set Default Value",
-                            div = "Divide Value",
-                            floor
-                            max = "Maximum Value",
-                            min = "Minimum Value",
-                            mod = "Modulo Value",
-                            mul = "Multiply Value",
-                            pow = "Raise Value to X Power",
-                            x reset = "Reset to Default",
-                            x set = "Set Value",
-                            x setif = "Set Value If...",
-                            sub = "Subtract Value" ]]
-
-                    if op == "set" or op == "setif" then
-                        if passed then
-                            local v1 = state.args.value
-                            if v1 ~= nil then value = v1
-                            else value = state.args.default end
-                        else
-                            local v2 = state.args.value_else
-                            if v2 ~= nil then
-                                value = v2
-                                which_mod = "value_else"
-                            end
-                        end
-
-                    elseif op == "reset" then
-                        if passed then
-                            local v = state.args.value
-                            if v == nil then v = state.args.default end
-                            if v == nil then v = 0 end
-                            value = v
-                        end
-
-                    elseif passed then
-                        -- Math Ops.
-                        local currType = type( value )
-
-                        if currType == 'number' then
-                            -- Operations on existing value.
-                            if op == "floor" then
-                                value = floor( value )
-                            elseif op == "ceil" then
-                                value = ceil( value )
+                        if op == "set" or op == "setif" then
+                            if passed then
+                                local v1 = state.args.value
+                                if v1 ~= nil then value = v1
+                                else value = state.args.default end
                             else
-                                -- Operations with two values.
-                                local newVal = state.args.value
-                                local valType = type( newVal )
-                                
-                                if valType == 'number' then
-                                    if op == "add" then
-                                        value = value + newVal
-                                    elseif op == "div" then
-                                        if newVal == 0 then value = 0
-                                        else value = value / newVal end
-                                    elseif op == "max" then
-                                        value = max( value, newVal )
-                                    elseif op == "min" then
-                                        value = min( value, newVal )
-                                    elseif op == "mod" then
-                                        if newVal == 0 then value = 0
-                                        else value = value % newVal end
-                                    elseif op == "mul" then
-                                        value = value * newVal
-                                    elseif op == "pow" then
-                                        value = value ^ newVal
-                                    elseif op == "sub" then
-                                        value = value - newVal
+                                local v2 = state.args.value_else
+                                if v2 ~= nil then
+                                    value = v2
+                                    which_mod = "value_else"
+                                end
+                            end
+
+                        elseif op == "reset" then
+                            if passed then
+                                local v = state.args.value
+                                if v == nil then v = state.args.default end
+                                if v == nil then v = 0 end
+                                value = v
+                            end
+
+                        elseif passed then
+                            -- Math Ops.
+                            local currType = type( value )
+
+                            if currType == 'number' then
+                                -- Operations on existing value.
+                                if op == "floor" then
+                                    value = floor( value )
+                                elseif op == "ceil" then
+                                    value = ceil( value )
+                                else
+                                    -- Operations with two values.
+                                    local newVal = state.args.value
+                                    local valType = type( newVal )
+                                    
+                                    if valType == 'number' then
+                                        if op == "add" then
+                                            value = value + newVal
+                                        elseif op == "div" then
+                                            if newVal == 0 then value = 0
+                                            else value = value / newVal end
+                                        elseif op == "max" then
+                                            value = max( value, newVal )
+                                        elseif op == "min" then
+                                            value = min( value, newVal )
+                                        elseif op == "mod" then
+                                            if newVal == 0 then value = 0
+                                            else value = value % newVal end
+                                        elseif op == "mul" then
+                                            value = value * newVal
+                                        elseif op == "pow" then
+                                            value = value ^ newVal
+                                        elseif op == "sub" then
+                                            value = value - newVal
+                                        end
                                     end
                                 end
                             end
                         end
-                    end
 
-                    -- Cache the value in case it is an intermediate value (i.e., multiple calculation steps).
-                    state.variable[ var ] = value
+                        -- Cache the value in case it is an intermediate value (i.e., multiple calculation steps).                        
+                        state.variable[ var ] = value
+                        cache[ var ][ pathKey ] = value
+                    end
                 end
             end
 
@@ -4158,10 +4172,10 @@ local mt_default_action = {
             return state:InFlightRemains( t.action )
 
         elseif k == "executing" then
-            return state:IsCasting( t.action, true ) or ( state.prev[1][ t.action ] and state.gcd.remains > 0 )
+            return state:IsCasting( t.action ) or ( state.prev[ 1 ][ t.action ] and state.gcd.remains > 0 )
 
         elseif k == 'execute_remains' then
-            return ( state:IsCasting( t.action, true ) and max( state:QueuedCastRemains( t.action, true ), state.gcd.remains ) ) or ( state.prev[1][ t.action ] and state.gcd.remains ) or 0
+            return ( state:IsCasting( t.action ) and max( state:QueuedCastRemains( t.action ), state.gcd.remains ) ) or ( state.prev[1][ t.action ] and state.gcd.remains ) or 0
 
         else
             local val = ability[ k ]
@@ -4718,6 +4732,8 @@ do
         
         end
 
+        scripts:ResetCache()
+
         state.this_action = curr_action
         state:RemoveEvent( e )
     end
@@ -4821,27 +4837,29 @@ function state:RunHandler( key, noStart )
     if ability.channeled and ability.start then ability.start()
     elseif ability.handler then ability.handler() end
 
-    state.prev.last = key
-    state[ ability.gcd == 'off' and 'prev_off_gcd' or 'prev_gcd' ].last = key
+    self.prev.last = key
+    self[ ability.gcd == 'off' and 'prev_off_gcd' or 'prev_gcd' ].last = key
 
-    table.insert( state.predictions, 1, key )
-    table.insert( state[ ability.gcd == 'off' and 'predictionsOff' or 'predictionsOn' ], 1, key )
+    table.insert( self.predictions, 1, key )
+    table.insert( self[ ability.gcd == 'off' and 'predictionsOff' or 'predictionsOn' ], 1, key )
 
-    state.predictions[6] = nil
-    state.predictionsOn[6] = nil
-    state.predictionsOff[6] = nil
+    self.history.casts[ key ] = self.query_time
 
-    state.prev.override = nil
-    state.prev_gcd.override = nil
-    state.prev_off_gcd.override = nil
+    self.predictions[6] = nil
+    self.predictionsOn[6] = nil
+    self.predictionsOff[6] = nil
 
-    if state.time == 0 and ability.startsCombat and not noStart then
-        state.false_start = state.query_time - 0.01
+    self.prev.override = nil
+    self.prev_gcd.override = nil
+    self.prev_off_gcd.override = nil
+
+    if self.time == 0 and ability.startsCombat and not noStart then
+        self.false_start = self.query_time - 0.01
 
         -- Assume MH swing at combat start and OH swing half a swing later?
-        if state.target.distance < 8 then
-            if state.swings.mainhand_speed > 0 and state.nextMH == 0 then state.swings.mh_pseudo = state.false_start end
-            if state.swings.offhand_speed > 0 and state.nextOH == 0 then state.swings.oh_pseudo = state.false_start + ( state.offhand_speed / 2 ) end
+        if self.target.distance < 8 then
+            if self.swings.mainhand_speed > 0 and self.nextMH == 0 then self.swings.mh_pseudo = self.false_start end
+            if self.swings.offhand_speed > 0 and self.nextOH == 0 then self.swings.oh_pseudo = self.false_start + ( self.offhand_speed / 2 ) end
         end
     end
 
@@ -4865,6 +4883,8 @@ function state.reset( dispName )
     state.resetting = true
 
     state.ClearCycle()
+    state:ResetVariables()    
+    scripts:ResetCache()
 
     state.selectionTime = 60
     state.selectedAction = nil
@@ -4915,8 +4935,6 @@ function state.reset( dispName )
         state[ state.purge[ i ] ] = nil
         table.remove( state.purge, i )
     end
-
-    state:ResetVariables()
 
     for k in pairs( state.active_dot ) do
         state.active_dot[ k ] = nil
@@ -5006,7 +5024,9 @@ function state.reset( dispName )
         petID = tonumber( petID:match( "%-(%d+)%-[0-9A-F]+$" ) )
 
         for k, v in pairs( class.pets ) do
-            if v.id == petID then
+            local id = v.id and ( type( v.id ) == 'function' and v.id() ) or v.id
+
+            if id == petID then
                 local lastCast = v.spell and class.abilities[ v.spell ] and class.abilities[ v.spell ].lastCast or 0
                 local duration = v.duration and ( ( type( v.duration ) == 'function' and v.duration() ) or v.duration ) or 3600
 
@@ -5662,6 +5682,14 @@ do
             end
         end
 
+        if ability.disabled then
+            return false, "ability.disabled returned true"
+        end
+
+        if ability.nomounted and IsMounted() then
+            return false, "not recommended while mounted"
+        end
+
         if ability.form and not state.buff[ ability.form ].up then
             return false, "required form (" .. ability.form .. ") not active"
         end
@@ -5714,7 +5742,6 @@ do
 end
 
 ns.hasRequiredResources = function( ability )
-
     local action = class.abilities[ ability ]
 
     if not action then return end
@@ -5758,6 +5785,8 @@ local debug_actions = {
     -- rune_of_power = true,
     -- fire_blast = true,
     -- skull_bash = true,
+    -- festering_strike = true,
+    -- scourge_strike = true
 }
 
 
@@ -5834,10 +5863,10 @@ function state:TimeToReady( action, pool )
     if spend and resource and spend > self[ resource ].current then
         wait = max( wait, self[ resource ][ 'time_to_' .. spend ] or 0 )        
         wait = ceil( wait * 100 ) / 100 -- round to the hundredth.
-        if debug_actions[ action ] then Hekili:Debug( "%d wait %.2f", 10, wait ) end
+        if debug_actions[ action ] then Hekili:Debug( "%d wait ( %s.current = %.2f, time_to ( %.2f ) = %.2f ) %.2f", 10, resource, self[ resource ].current, spend, self[ resource ][ 'time_to_' .. spend ] or 0, wait ) end
     end
 
-    if debug_actions[ action ] then Hekili:Debug( "%d %s prewait %.2f", 11, ability.nobuff, wait ) end
+    if debug_actions[ action ] then Hekili:Debug( "%d %s prewait %.2f", 11, ability.nobuff or "n/a", wait ) end
     if ability.nobuff and self.buff[ ability.nobuff ].up then
         wait = max( wait, self.buff[ ability.nobuff ].remains )
         if debug_actions[ action ] then Hekili:Debug( "%d wait %.2f", 11, wait ) end
@@ -5847,6 +5876,10 @@ function state:TimeToReady( action, pool )
     if self.debuff.repeat_performance.up and self.prev[1][ action ] then
         wait = max( wait, self.debuff.repeat_performance.remains )
         if debug_actions[ action ] then Hekili:Debug( "%d wait %.2f", 12, wait ) end
+    end
+
+    if ability.icd and self.query_time - ability.lastCast < ability.icd then
+        wait = max( wait, ability.lastCast + ability.icd - self.query_time )
     end
 
     -- If ready is a function, it returns time.

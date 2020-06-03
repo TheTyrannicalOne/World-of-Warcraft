@@ -381,6 +381,10 @@ L["opt_deleteName_confirm"] = "你確定你要刪除所有 %s 的紀錄嗎? 刪�
 --[[ L["opt_rejectTrade_Desc"] = ""--]] 
 L["opt_rejectTrade_Name"] = "允許保留裝備"
 --[[Translation missing --]]
+--[[ L["opt_saveBonusRolls_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["opt_saveBonusRolls_Name"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["options_autoAwardBoE_desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["options_autoAwardBoE_name"] = ""--]] 

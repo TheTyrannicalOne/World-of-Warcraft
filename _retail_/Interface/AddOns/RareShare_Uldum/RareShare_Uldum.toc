@@ -1,0 +1,15 @@
+## Interface: 80300
+## Title: Rare Share: |cffc5ae87Uldum
+## Notes: The Uldum extension for the Rare Share addon (8.3)
+## Author: pffScrub
+## Version: v0.6.0
+## DefaultState: enabled
+## Dependencies: RareShare
+
+locales\enUS.lua
+locales\ruRU.lua
+locales\deDE.lua
+locales\frFR.lua
+locales\koKR.lua
+
+RareShare_Uldum.lua

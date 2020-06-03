@@ -290,12 +290,20 @@ do
 end
 
 
-RegisterUnitEvent( "PLAYER_SPECIALIZATION_CHANGED", function ( event, unit )
-    if unit == 'player' then
-        Hekili:SpecializationChanged()
-        Hekili:ForceUpdate( event )
-    end
-end )
+
+-- ACTIVE_TALENT_GROUP_CHANGED fires 2x on talent swap.  Uggh, why?
+do
+    local lastChange = 0
+
+    RegisterEvent( "ACTIVE_TALENT_GROUP_CHANGED", function ( event, from, to )
+        local now = GetTime()
+        if now - lastChange > 4 then
+            Hekili:SpecializationChanged()
+            Hekili:ForceUpdate( event )
+            lastChange = now
+        end
+    end )
+end
 
 
 -- Hide when going into the barbershop.
@@ -811,6 +819,11 @@ RegisterEvent( "PLAYER_EQUIPMENT_CHANGED", function()
 end )
 
 
+RegisterEvent( "PLAYER_TALENT_UPDATE", function()
+    ns.updateTalents()
+end )
+
+
 -- Update Azerite Essence Data.
 do
     local azeriteEvents = {
@@ -837,9 +850,11 @@ do
 end
 
 
-RegisterEvent( "PLAYER_REGEN_DISABLED", function ()
+RegisterEvent( "PLAYER_REGEN_DISABLED", function( event )
     state.combat = GetTime() - 0.01
-    Hekili:ForceUpdate() -- Force update on entering combat since OOC refresh can be very slow (0.5s).
+
+    Hekili.HasSnapped = false -- some would disagree.
+    Hekili:ForceUpdate( event ) -- Force update on entering combat since OOC refresh can be very slow (0.5s).
 end )
 
 
@@ -849,6 +864,7 @@ RegisterEvent( "PLAYER_REGEN_ENABLED", function ()
     state.swings.mh_actual = 0
     state.swings.oh_actual = 0
 
+    Hekili.HasSnapped = false -- allows the addon to autosnapshot again if preference is set.
     Hekili:ReleaseHolds( true )
 end )
 
@@ -1593,6 +1609,7 @@ local function ReadKeybindings()
         -- Bartender
         local bt4Button
         local bt4Key
+        local bt4Page
 
         for i = 1, 12 do
             StoreKeybindInfo( 1, GetBindingKey( "ACTIONBUTTON" .. i ), GetActionInfo( i ) )
@@ -1602,9 +1619,11 @@ local function ReadKeybindings()
             bt4Key = GetBindingKey( "CLICK BT4Button" .. i .. ":LeftButton" )
             bt4Button = _G[ "BT4Button" .. i ]
 
+            local bt4Page = 1 + math.floor( ( i - 1 ) / 12 )
+
             if bt4Button then
                 local buttonActionType, buttonActionId = GetActionInfo( i )
-                StoreKeybindInfo( 2, bt4Key, buttonActionType, buttonActionId )
+                StoreKeybindInfo( bt4Page, bt4Key, buttonActionType, buttonActionId )
             end
         end
 

@@ -1,9 +1,8 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0246,
+	["LastVersion"] = 2.0324,
 	["LastPlayerFullName"] = "Vancard-Zul'jin",
 	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122250,
@@ -87,3 +86,4 @@ PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MAGE",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil

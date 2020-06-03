@@ -1,253 +1,103 @@
 
 HandyNotesDB = {
 	["profileKeys"] = {
-		["Detoxxn - Illidan"] = "Detoxxn - Illidan",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Xerret - Illidan"] = "Xerret - Illidan",
-		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
-		["Goramor - Runetotem"] = "Goramor - Runetotem",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Zerkun - Illidan"] = "Zerkun - Illidan",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Xerkinz - Illidan"] = "Xerkinz - Illidan",
-		["Zerkinz - Illidan"] = "Zerkinz - Illidan",
-		["Youngpoobs - Tanaris"] = "Youngpoobs - Tanaris",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Zerkinzz - Illidan"] = "Zerkinzz - Illidan",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Zerkin - Illidan"] = "Zerkin - Illidan",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Aerionz - Illidan"] = "Aerionz - Illidan",
-		["Klitpounder - Illidan"] = "Klitpounder - Illidan",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Xerkinz - Sargeras"] = "Xerkinz - Sargeras",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
-		["Zerkinz - Sargeras"] = "Zerkinz - Sargeras",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Aerion - Illidan"] = "Aerion - Illidan",
-		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Xerkin - Illidan"] = "Xerkin - Illidan",
-		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 	},
 	["profiles"] = {
-		["Detoxxn - Illidan"] = {
-		},
-		["Vancard - Zul'jin"] = {
-		},
-		["Tyrann - Zul'jin"] = {
-		},
-		["Xerret - Illidan"] = {
-		},
-		["Shaewong - Dalaran"] = {
-		},
-		["Goramor - Runetotem"] = {
-		},
-		["Gangus - Runetotem"] = {
+		["Avisar - Dalaran"] = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
-		["Serbitechna - Darkspear"] = {
-		},
-		["Zerkun - Illidan"] = {
-		},
-		["Malivant - Dalaran"] = {
-		},
-		["Durlok - Black Dragonflight"] = {
-		},
-		["Tyriinid - Dalaran"] = {
-		},
-		["Xerkinz - Illidan"] = {
-		},
-		["Zerkinz - Illidan"] = {
-		},
-		["Youngpoobs - Tanaris"] = {
-		},
-		["Tynster - Dalaran"] = {
-		},
-		["Zerkinzz - Illidan"] = {
-		},
-		["Shanyt - Argent Dawn"] = {
-		},
-		["Tynkster - Dalaran"] = {
-		},
-		["Brewnheimer - Darkspear"] = {
-		},
-		["Dialdaas - Darkspear"] = {
-		},
-		["Gillbourn - Runetotem"] = {
-		},
-		["Tinkster - Dalaran"] = {
-		},
-		["Zerkin - Illidan"] = {
-		},
-		["Sinh - Dalaran"] = {
-		},
-		["Aerionz - Illidan"] = {
-		},
-		["Klitpounder - Illidan"] = {
-		},
-		["Ruffinton - Dalaran"] = {
-		},
-		["Xerkinz - Sargeras"] = {
-		},
-		["Claugh - Runetotem"] = {
-		},
-		["Zerkinz - Sargeras"] = {
+		["Vancard - Zul'jin"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
-		["Aerion - Illidan"] = {
+		["Ruffinton - Dalaran"] = {
 		},
-		["Panboozled - Runetotem"] = {
+		["Kotalkhan - Zul'jin"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Datgore - Zul'jin"] = {
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyrannithal - Argent Dawn"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Zulbathal - Zul'jin"] = {
 		},
-		["Xerkin - Illidan"] = {
+		["Shanyt - Argent Dawn"] = {
 		},
-		["Narisaric - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
+		},
+		["Shimzo - Zul'jin"] = {
+		},
+		["Fantastiburo - Zul'jin"] = {
+		},
+		["Shaekhan - Zul'jin"] = {
+		},
+		["Tinkster - Dalaran"] = {
 		},
 	},
 }
 HandyNotes_HandyNotesDB = {
 	["profileKeys"] = {
-		["Detoxxn - Illidan"] = "Detoxxn - Illidan",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Xerret - Illidan"] = "Xerret - Illidan",
-		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
-		["Goramor - Runetotem"] = "Goramor - Runetotem",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Zerkun - Illidan"] = "Zerkun - Illidan",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Xerkinz - Illidan"] = "Xerkinz - Illidan",
-		["Zerkinz - Illidan"] = "Zerkinz - Illidan",
-		["Youngpoobs - Tanaris"] = "Youngpoobs - Tanaris",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Zerkinzz - Illidan"] = "Zerkinzz - Illidan",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Zerkin - Illidan"] = "Zerkin - Illidan",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Aerionz - Illidan"] = "Aerionz - Illidan",
-		["Klitpounder - Illidan"] = "Klitpounder - Illidan",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Xerkinz - Sargeras"] = "Xerkinz - Sargeras",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
-		["Zerkinz - Sargeras"] = "Zerkinz - Sargeras",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Aerion - Illidan"] = "Aerion - Illidan",
-		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Xerkin - Illidan"] = "Xerkin - Illidan",
-		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 	},
 	["profiles"] = {
-		["Detoxxn - Illidan"] = {
-		},
-		["Vancard - Zul'jin"] = {
-		},
-		["Tyrann - Zul'jin"] = {
-		},
-		["Xerret - Illidan"] = {
-		},
-		["Shaewong - Dalaran"] = {
-		},
-		["Goramor - Runetotem"] = {
-		},
-		["Gangus - Runetotem"] = {
+		["Avisar - Dalaran"] = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
-		["Serbitechna - Darkspear"] = {
-		},
-		["Zerkun - Illidan"] = {
-		},
-		["Malivant - Dalaran"] = {
-		},
-		["Durlok - Black Dragonflight"] = {
-		},
-		["Tyriinid - Dalaran"] = {
-		},
-		["Xerkinz - Illidan"] = {
-		},
-		["Zerkinz - Illidan"] = {
-		},
-		["Youngpoobs - Tanaris"] = {
-		},
-		["Tynster - Dalaran"] = {
-		},
-		["Zerkinzz - Illidan"] = {
-		},
-		["Shanyt - Argent Dawn"] = {
-		},
-		["Tynkster - Dalaran"] = {
-		},
-		["Brewnheimer - Darkspear"] = {
-		},
-		["Dialdaas - Darkspear"] = {
-		},
-		["Gillbourn - Runetotem"] = {
-		},
-		["Tinkster - Dalaran"] = {
-		},
-		["Zerkin - Illidan"] = {
-		},
-		["Sinh - Dalaran"] = {
-		},
-		["Aerionz - Illidan"] = {
-		},
-		["Klitpounder - Illidan"] = {
-		},
-		["Ruffinton - Dalaran"] = {
-		},
-		["Xerkinz - Sargeras"] = {
-		},
-		["Claugh - Runetotem"] = {
-		},
-		["Zerkinz - Sargeras"] = {
+		["Vancard - Zul'jin"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
-		["Aerion - Illidan"] = {
+		["Ruffinton - Dalaran"] = {
 		},
-		["Panboozled - Runetotem"] = {
+		["Kotalkhan - Zul'jin"] = {
 		},
-		["Shathiel - Darkspear"] = {
+		["Datgore - Zul'jin"] = {
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyrannithal - Argent Dawn"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Zulbathal - Zul'jin"] = {
 		},
-		["Xerkin - Illidan"] = {
+		["Shanyt - Argent Dawn"] = {
 		},
-		["Narisaric - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
+		},
+		["Shimzo - Zul'jin"] = {
+		},
+		["Fantastiburo - Zul'jin"] = {
+		},
+		["Shaekhan - Zul'jin"] = {
+		},
+		["Tinkster - Dalaran"] = {
 		},
 	},
 }

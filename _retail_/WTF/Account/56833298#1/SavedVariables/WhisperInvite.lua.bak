@@ -1,87 +1,7 @@
 
 WhisperInviteCoreDB = {
 	["char"] = {
-		["Shaewong - Dalaran"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Panboozled - Runetotem"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Vancard - Zul'jin"] = {
-			["info"] = {
-				["setup"] = 5,
-			},
-		},
-		["Zerkinz - Illidan"] = {
-			["info"] = {
-				["setup"] = 5,
-			},
-		},
-		["Shathiel - Darkspear"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Tynster - Dalaran"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Zerkkidan - Illidan"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Dialdaas - Darkspear"] = {
-			["info"] = {
-				["setup"] = 2,
-			},
-		},
-		["Xerret - Illidan"] = {
-			["info"] = {
-				["setup"] = 5,
-			},
-		},
-		["Shanyt - Argent Dawn"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Beeronimo - Dalaran"] = {
-			["info"] = {
-				["setup"] = 3,
-			},
-		},
-		["Brewnheimer - Darkspear"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Goramor - Runetotem"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Gillbourn - Runetotem"] = {
-			["info"] = {
-				["setup"] = 1,
-			},
-		},
-		["Tinkster - Dalaran"] = {
-			["info"] = {
-				["setup"] = 5,
-			},
-		},
-		["Zerkin - Illidan"] = {
-			["info"] = {
-				["setup"] = 2,
-			},
-		},
-		["Sinh - Dalaran"] = {
+		["Avisar - Dalaran"] = {
 			["info"] = {
 				["setup"] = 5,
 			},
@@ -91,14 +11,14 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Serbitechna - Darkspear"] = {
+		["Vancard - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 1,
+				["setup"] = 3,
 			},
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Tyrannithal - Argent Dawn"] = {
 			["info"] = {
-				["setup"] = 5,
+				["setup"] = 2,
 			},
 		},
 		["Ruffinton - Dalaran"] = {
@@ -106,14 +26,14 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Tynkster - Dalaran"] = {
+		["Zulbathal - Zul'jin"] = {
 			["info"] = {
 				["setup"] = 5,
 			},
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 1,
+				["setup"] = 3,
 			},
 		},
 		["Darnastris - Dalaran"] = {
@@ -121,133 +41,58 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Zerkun - Illidan"] = {
-			["info"] = {
-				["setup"] = 4,
-			},
-		},
-		["Tyrann - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["info"] = {
 				["setup"] = 5,
 			},
 		},
-		["Claugh - Runetotem"] = {
+		["Shanyt - Argent Dawn"] = {
 			["info"] = {
-				["setup"] = 1,
+				["setup"] = 5,
 			},
 		},
-		["Tyriinid - Dalaran"] = {
+		["Durlok - Black Dragonflight"] = {
 			["info"] = {
-				["setup"] = 1,
+				["setup"] = 5,
 			},
 		},
-		["Migimong - Runetotem"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 1,
+				["setup"] = 3,
 			},
 		},
-		["Gangus - Runetotem"] = {
+		["Shimzo - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 1,
+				["setup"] = 3,
 			},
 		},
-		["Narisaric - Dalaran"] = {
+		["Shaekhan - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 1,
+				["setup"] = 3,
 			},
 		},
-	},
-	["namespaces"] = {
-		["WhisperInviteAdvancedDB"] = {
-			["profiles"] = {
-				["ZerkinUI"] = {
-					["keywords"] = {
-						["autoinvite0"] = {
-							["keyword"] = "autoinvite",
-							["name"] = "autoinvite",
-						},
-						["inv0"] = {
-							["channels"] = {
-								["CHAT_MSG_WHISPER"] = true,
-							},
-							["fullMatch"] = false,
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_WHISPER"] = true,
-								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
-							},
-							["keyword"] = "inv",
-							["maxGroupSize"] = 25,
-							["showInviteBlockMessage"] = true,
-							["listType"] = 2,
-							["name"] = "inv",
-							["customBlockMessage"] = "Erorr filtering \"inv\" - Zerkin",
-						},
-						["auto invite0"] = {
-							["keyword"] = "auto invite",
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_WHISPER"] = true,
-							},
-							["name"] = "auto invite",
-							["channels"] = {
-								["CHAT_MSG_WHISPER"] = true,
-							},
-						},
-						["invite0"] = {
-							["showInviteBlockMessage"] = true,
-							["name"] = "invite",
-							["channels"] = {
-								["CHAT_MSG_OFFICER"] = false,
-								["CHAT_MSG_WHISPER"] = true,
-								["CHAT_MSG_GUILD"] = false,
-							},
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_CONVERSATION"] = false,
-								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
-								["CHAT_MSG_BN_WHISPER"] = true,
-							},
-							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
-							["keyword"] = "invite",
-							["maxGroupSize"] = 20,
-						},
-					},
-				},
+		["Tinkster - Dalaran"] = {
+			["info"] = {
+				["setup"] = 5,
 			},
-		},
-		["WhisperInviteBasicDB"] = {
 		},
 	},
 	["profileKeys"] = {
-		["Shaewong - Dalaran"] = "Default",
-		["Panboozled - Runetotem"] = "Default",
-		["Vancard - Zul'jin"] = "Default",
-		["Zerkinz - Illidan"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
-		["Tynster - Dalaran"] = "Default",
-		["Zerkkidan - Illidan"] = "Default",
-		["Dialdaas - Darkspear"] = "Default",
-		["Xerret - Illidan"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Beeronimo - Dalaran"] = "Default",
-		["Brewnheimer - Darkspear"] = "Default",
-		["Goramor - Runetotem"] = "Default",
-		["Gillbourn - Runetotem"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
-		["Zerkin - Illidan"] = "ZerkinUI",
-		["Sinh - Dalaran"] = "Default",
+		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
-		["Serbitechna - Darkspear"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
-		["Malivant - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
-		["Zerkun - Illidan"] = "Default",
-		["Tyrann - Zul'jin"] = "Default",
-		["Claugh - Runetotem"] = "Default",
-		["Tyriinid - Dalaran"] = "Default",
-		["Migimong - Runetotem"] = "Default",
-		["Gangus - Runetotem"] = "Default",
-		["Narisaric - Dalaran"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Shaekhan - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -267,21 +112,6 @@ WhisperInviteCoreDB = {
 				{
 				}, -- [7]
 			},
-		},
-		["ZerkinUI"] = {
-			["queueProtection"] = {
-				nil, -- [1]
-				{
-				}, -- [2]
-				{
-				}, -- [3]
-				{
-				}, -- [4]
-				nil, -- [5]
-				{
-				}, -- [6]
-			},
-			["selectedModuleName"] = "Advanced",
 		},
 	},
 }

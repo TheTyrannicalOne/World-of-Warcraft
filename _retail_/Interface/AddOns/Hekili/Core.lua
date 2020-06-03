@@ -22,6 +22,9 @@ local GetItemInfo = ns.CachedGetItemInfo
 local trim = string.trim
 
 
+local tcopy = ns.tableCopy
+local tinsert, tremove, twipe = table.insert, table.remove, table.wipe
+
 
 -- checkImports()
 -- Remove any displays or action lists that were unsuccessfully imported.
@@ -154,7 +157,7 @@ function Hekili:OnInitialize()
     self:RunOneTimeFixes()
     checkImports()
 
-    self:RefreshOptions()
+    -- self:RefreshOptions()
 
     ns.updateTalents()
 
@@ -265,24 +268,29 @@ local z_PVP = {
 
 
 local listStack = {}    -- listStack for a given index returns the scriptID of its caller (or 0 if called by a display).
+
 local listCache = {}    -- listCache is a table of return values for a given scriptID at various times.
 local listValue = {}    -- listValue shows the cached values from the listCache.
+
+local lcPool = {}
+local lvPool = {}
 
 local Stack = {}
 local Block = {}
 local InUse = {}
 
-local RecycleBin = {}
+local StackPool = {}
+
 
 function Hekili:AddToStack( script, list, parent, run )
-    local entry = table.remove( RecycleBin, 1 ) or {}
+    local entry = tremove( StackPool ) or {}
 
     entry.script = script
     entry.list   = list
     entry.parent = parent
     entry.run    = run
 
-    table.insert( Stack, entry )
+    tinsert( Stack, entry )
 
     if self.ActiveDebug then
         local path = "+"
@@ -305,7 +313,7 @@ end
 
 
 function Hekili:PopStack()
-    local x = table.remove( Stack, #Stack )
+    local x = tremove( Stack, #Stack )
 
     if self.ActiveDebug then
         if x.run then
@@ -318,16 +326,16 @@ function Hekili:PopStack()
     -- if self.ActiveDebug then self:Debug( "Removed " .. x.list .. " from stack." ) end
 
     for i = #Block, 1, -1 do
-        if Block[i].parent == x.script then
-            if self.ActiveDebug then self:Debug( "Removed " .. Block[i].list .. " from blocklist as " .. x.list .. " was its parent." ) end
-            table.remove( Block, i )
+        if Block[ i ].parent == x.script then
+            if self.ActiveDebug then self:Debug( "Removed " .. Block[ i ].list .. " from blocklist as " .. x.list .. " was its parent." ) end
+            tinsert( StackPool, tremove( Block, i ) )
         end
     end
 
     if x.run then
         -- This was called via Run Action List; we have to make sure it DOESN'T PASS until we exit this list.
         if self.ActiveDebug then self:Debug( "Added " .. x.list .. " to blocklist as it was called via RAL." ) end
-        table.insert( Block, x )
+        tinsert( Block, x )
     end
 
     InUse[ x.list ] = nil
@@ -336,19 +344,20 @@ end
 
 function Hekili:CheckStack()
     local t = state.query_time
-    local p = self.ActivePack
 
     for i, b in ipairs( Block ) do
-        local cache = listCache[ b.script ] or {}
+        listCache[ b.script ] = listCache[ b.script ] or tremove( lcPool ) or {}
+        local cache = listCache[ b.script ]
 
-        cache[ t ] = cache[ t ] or scripts:CheckScript( b.script )
+        if cache[ t ] == nil then cache[ t ] = scripts:CheckScript( b.script ) end
 
         if self.ActiveDebug then
-            local values = listValue[ b.script ] or {}
+            listValue[ b.script ] = listValue[ b.script ] or tremove( lvPool ) or {}
+            local values = listValue[ b.script ]
+
             values[ t ] = values[ t ] or scripts:GetConditionsAndValues( b.script )
             self:Debug( "Blocking list ( %s ) called from ( %s ) would %s at %.2f.", b.list, b.script, cache[ t ] and "BLOCK" or "NOT BLOCK", state.delay )
             self:Debug( values[ t ] )
-            listValue[ b.script ] = values
         end
 
         if cache[ t ] then
@@ -357,22 +366,24 @@ function Hekili:CheckStack()
     end
 
 
-    for i, s in ipairs( Stack ) do        
-        local cache = listCache[ s.script ] or {}
+    for i, s in ipairs( Stack ) do
+        listCache[ s.script ] = listCache[ s.script ] or tremove( lcPool ) or {}
+        local cache = listCache[ s.script ]
 
-        cache[ t ] = cache[ t ] or scripts:CheckScript( s.script )
+        if cache[ t ] == nil then cache[ t ] = scripts:CheckScript( s.script ) end
 
         if self.ActiveDebug then
-            local values = listValue[ s.script ] or {}
+            listValue[ s.script ] = listValue[ s.script ] or tremove( lvPool ) or {}
+            local values = listValue[ s.script ]
+
             values[ t ] = values[ t ] or scripts:GetConditionsAndValues( s.script )
             self:Debug( "List ( %s ) called from ( %s ) would %s at %.2f.", s.list, s.script, cache[ t ] and "PASS" or "FAIL", state.delay )
             self:Debug( values[ t ] )
-            listValue[ s.script ] = values
         end
 
-        listCache[ s.script ] = cache
-
-        if not cache[ t ] then return false end
+        if not cache[ t ] then
+            return false
+        end
     end
 
     return true
@@ -455,17 +466,16 @@ do
     local disabledCache = {}
 
     function Hekili:IsSpellEnabled( spell )
-        disabledCache[ spell ] = disabledCache[ spell ] or ( not state:IsDisabled( spell ) )
+        if disabledCache[ spell ] ~= nil then return disabledCache[ spell ] end
+        disabledCache[ spell ] = not state:IsDisabled( spell )
         return disabledCache[ spell ]
     end
 
 
-    local table_wipe = table.wipe
-
     function Hekili:ResetSpellCaches()
-        table_wipe( knownCache )
-        table_wipe( reasonCache )
-        table_wipe( disabledCache )
+        twipe( knownCache )
+        twipe( reasonCache )
+        twipe( disabledCache )
     end
 end
 
@@ -586,7 +596,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                         if script.Error then
                             if debug then self:Debug( "The conditions for this entry contain an error.  Skipping.\n" ) end
                         elseif wait_time > state.delayMax then
-                            if debug then self:Debug( "The action is not ready before our maximum delay window (%.2f) for this query.\n", state.delayMax ) end
+                            if debug then self:Debug( "The action is not ready ( %.2f ) before our maximum delay window ( %.2f ) for this query.\n", wait_time, state.delayMax ) end
                         elseif ( rWait - state.ClashOffset( rAction ) ) - ( wait_time - clash ) <= 0.05 then
                             if debug then self:Debug( "The action is not ready in time ( %.2f vs. %.2f ) [ Clash: %.2f vs. %.2f ] - padded by 0.05s.\n", wait_time, rWait, clash, state.ClashOffset( rAction ) ) end
                         else
@@ -601,7 +611,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                 if action == 'call_action_list' or action == 'run_action_list' or action == 'use_items' then
                                     -- We handle these here to avoid early forking between starkly different APLs.
                                     local aScriptPass = true
-                                    local ts = not strict and not entry.strict == 1 and scripts:IsTimeSensitive( scriptID )
+                                    local ts = not strict and entry.strict ~= 1 and scripts:IsTimeSensitive( scriptID )
 
                                     if not entry.criteria or entry.criteria == "" then
                                         if debug then self:Debug( "There is no criteria for %s.", action == 'use_items' and "Use Items" or "this action list." ) end
@@ -618,11 +628,10 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
 
                                     if aScriptPass then
                                         if action == "use_items" then
-                                            -- self:AddToStack( scriptID, "items", caller, action == "run_action_list" )
-                                            local pAction, pWait = rAction, rWait
+                                            self:AddToStack( scriptID, "items", caller )
                                             rAction, rWait, rDepth = self:GetPredictionFromAPL( dispName, "UseItems", "items", slot, rAction, rWait, rDepth, scriptID )
                                             if debug then self:Debug( "Returned from Use Items; current recommendation is %s (+%.2f).", rAction or "NO ACTION", rWait ) end
-                                            -- self:PopStack()
+                                            self:PopStack()
                                         else
                                             local name = state.args.list_name
 
@@ -655,8 +664,8 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                     local name = state.args.var_name
 
                                     if name ~= nil then
-                                        if debug then self:Debug( " - variable.%s will check this script entry (%s).", name, scriptID ) end                                    
                                         state:RegisterVariable( name, scriptID, Stack, Block )
+                                        if debug then self:Debug( " - variable.%s will check this script entry ( %s ).", name, scriptID ) end
                                     else
                                         if debug then self:Debug( " - variable name not provided, skipping." ) end
                                     end
@@ -688,6 +697,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                         if readyFirst then
                                             local hasResources = true
 
+        
                                             if hasResources then
                                                 local aScriptPass = self:CheckStack()
                                                 local channelPass = not state.channeling or self:CheckChannel( action, rWait )
@@ -974,8 +984,9 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
 
     local scriptID = listStack[ listName ]
     listStack[ listName ] = nil
-    if listCache[ scriptID ] then wipe( listCache[ scriptID ] ) end
-    if listValue[ scriptID ] then wipe( listValue[ scriptID ] ) end
+
+    if listCache[ scriptID ] then twipe( listCache[ scriptID ] ) end
+    if listValue[ scriptID ] then twipe( listValue[ scriptID ] ) end
 
     return rAction, rWait, rDepth
 end
@@ -987,18 +998,19 @@ function Hekili:GetNextPrediction( dispName, packName, slot )
 
     -- This is the entry point for the prediction engine.
     -- Any cache-wiping should happen here.
-    wipe( Stack )
-    wipe( Block )
-    wipe( InUse )
+    twipe( Stack )
+    twipe( Block )
+    twipe( InUse )
 
-    wipe( listStack )    
-    wipe( waitBlock )
+    twipe( listStack )    
+    twipe( waitBlock )
 
-    for k, v in pairs( listCache ) do wipe( v ) end
-    for k, v in pairs( listValue ) do wipe( v ) end
+    for k, v in pairs( listCache ) do tinsert( lcPool, v ); twipe( v ); listCache[ k ] = nil end
+    for k, v in pairs( listValue ) do tinsert( lvPool, v ); twipe( v ); listValue[ k ] = nil end
 
     self:ResetSpellCaches()
     state:ResetVariables()
+    scripts:ResetCache()
 
     local display = rawget( self.DB.profile.displays, dispName )
     local pack = rawget( self.DB.profile.packs, packName )
@@ -1180,7 +1192,11 @@ function Hekili:ProcessHooks( dispName, packName )
 
 
         while( event ) do
+            local eStart
+            
             if debug then
+                eStart = debugprofilestop()
+                
                 local resources
 
                 for k in orderedPairs( class.resources ) do
@@ -1239,10 +1255,11 @@ function Hekili:ProcessHooks( dispName, packName )
                 action, wait, depth = self:GetNextPrediction( dispName, packName, slot )
 
                 if not action then
-                    if debug then self:Debug( "Time spent on event #%d PREADVANCE: %.2fms...", n - 1, debugprofilestop() - actualStartTime ) end
+                    if debug then self:Debug( "Time spent on event #%d PREADVANCE: %.2fms...", n, debugprofilestop() - eStart ) end
                     if debug then self:Debug( 1, "No recommendation found before event #%d (%s %s) at %.2f; triggering event and continuing ( %.2f ).\n", n, event.action, event.type, t, state.offset + state.delay ) end
                     
                     state.advance( t )
+                    if debug then self:Debug( "Time spent on event #%d POSTADVANCE: %.2fms...", n, debugprofilestop() - eStart ) end
 
                     event = events[ 1 ]
                     n = n + 1
@@ -1256,11 +1273,15 @@ function Hekili:ProcessHooks( dispName, packName )
                 break
             end
 
-            if debug then self:Debug( "Time spent on event #%d: %.2fms...", n - 1, debugprofilestop() - actualStartTime ) end
+            if debug then self:Debug( "Time spent on event #%d: %.2fms...", n - 1, debugprofilestop() - eStart ) end
         end
 
         if not action then
-            state:SetConstraint( 0, 15 )
+            if class.file == "DEATHKNIGHT" then
+                state:SetConstraint( 0, max( 0.01 + state.rune.cooldown * 2, 15 ) )
+            else
+                state:SetConstraint( 0, 15 )
+            end
 
             if hadProj and debug then self:Debug( "[ ** ] No recommendation before queued event(s), checking recommendations after %.2f.", state.offset ) end
 
@@ -1268,7 +1289,7 @@ function Hekili:ProcessHooks( dispName, packName )
                 local resources
 
                 for k in orderedPairs( class.resources ) do
-                    resources = ( resources and ( resources .. ", " ) or "" ) .. k .. "[ " .. state[ k ].current .. " / " .. state[ k ].max .. " ]"
+                    resources = ( resources and ( resources .. ", " ) or "" ) .. string.format( "%s[ %.2f / %.2f ]", k, state[ k ].current, state[ k ].max )
                 end
                 self:Debug( 1, "Resources: %s", resources )
                 
@@ -1285,6 +1306,12 @@ function Hekili:ProcessHooks( dispName, packName )
 
         -- if debug then self:Debug( "Prediction engine would recommend %s at +%.2fs (%.2fs).\n", action or "NO ACTION", wait or 60, state.offset + state.delay ) end
         if debug then self:Debug( "Recommendation #%d is %s at %.2fs (%.2fs).", i, action or "NO ACTION", wait or 60, state.offset + state.delay ) end
+
+        if not debug and not Hekili.Config and not Hekili.HasSnapped and ( dispName == "Primary" or dispName == "AOE" ) and action == nil and Hekili.DB.profile.autoSnapshot then
+            Hekili:MakeSnapshot( dispName )
+            Hekili.HasSnapped = true
+            return
+        end
 
         if action then
             if debug then scripts:ImplantDebugData( slot ) end
@@ -1307,6 +1334,8 @@ function Hekili:ProcessHooks( dispName, packName )
 
             if i < display.numIcons then
                 -- Advance through the wait time.
+                state.this_action = action
+
                 if state.delay > 0 then state.advance( state.delay ) end
 
                 state.cycle = slot.indicator == 'cycle'
@@ -1336,7 +1365,6 @@ function Hekili:ProcessHooks( dispName, packName )
 
                 else
                     ns.spendResources( action )
-                    state.history.casts[ action ] = state.query_time
 
                     state:RunHandler( action )
 
@@ -1372,14 +1400,17 @@ function Hekili:ProcessHooks( dispName, packName )
                 checkstr = checkstr and ( checkstr .. ':' .. action ) or action
                 slot[n] = nil
             end
-            -- if i == 1 and not self.ActiveDebug then self:TogglePause() end -- use for disappearing display debugging.
             break
         end
 
     end
 
     if debug then
-        self:Debug( "Time spent generating recommendations:  %.3fms",  debugprofilestop() - actualStartTime )
+        self:Debug( "Time spent generating recommendations:  %.2fms",  debugprofilestop() - actualStartTime )
+    elseif InCombatLockdown() then
+        -- We don't track debug/snapshot recommendations because the additional debug info ~40% more CPU intensive.
+        -- We don't track out of combat because who cares?
+        UI:UpdatePerformance( GetTime(), debugprofilestop() - actualStartTime )
     end
 
     UI.NewRecommendations = true

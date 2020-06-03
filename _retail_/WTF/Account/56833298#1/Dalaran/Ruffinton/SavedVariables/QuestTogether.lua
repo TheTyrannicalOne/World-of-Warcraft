@@ -24,6 +24,13 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
+			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
+			},
+		},
 		[25621] = {
 			["title"] = "Field Test: Gnomecorder",
 			["objectives"] = {
@@ -73,7 +80,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

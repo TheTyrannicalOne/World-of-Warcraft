@@ -1,4 +1,4 @@
-local SLE, T, E, L, V, P, G = unpack(select(2, ...))  
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local DTP = SLE:NewModule('Datatexts', 'AceHook-3.0', 'AceEvent-3.0');
 local DT, MM = SLE:GetElvModules("DataTexts", "Minimap");
 --GLOBALS: ElvDB, hooksecurefunc
@@ -24,8 +24,8 @@ DTP.GoldCache = {}
 --Mouseover functions for panels and datatexts on them
 local function SubDTAlpha(panel, alpha)
 	for slot = 1, panel.numPoints do
-		local localtion = DT.PointLocation[slot]
-		panel.dataPanels[localtion]:SetAlpha(alpha)
+		local location = DT.PointLocation[slot]
+		panel.dataPanels[location]:SetAlpha(alpha)
 	end
 end
 
@@ -78,25 +78,25 @@ function DTP:LoadDTHook()
 	--Going through all registered datapanels
 	for panelName, panel in T.pairs(DT.RegisteredPanels) do
 		for slot = 1, panel.numPoints do
-			local localtion = DT.PointLocation[slot]
+			local location = DT.PointLocation[slot]
 			--If it is S&L's panel hook scripts for show/hide on mouseover
-			if DTP.Names[panelName] then 
-				panel.dataPanels[localtion]:HookScript("OnEnter", Button_OnEnter)
-				panel.dataPanels[localtion]:HookScript("OnLeave", Button_OnLeave)
+			if DTP.Names[panelName] then
+				panel.dataPanels[location]:HookScript("OnEnter", Button_OnEnter)
+				panel.dataPanels[location]:HookScript("OnLeave", Button_OnLeave)
 			end
 			--Searching for gold
 			for settingName, settingValue in T.pairs(DT.db.panels) do
 				if settingValue and T.type(settingValue) == 'table' then --if options for panel exist and it is 2+ slot panel (2 cause DTBars exists)
-					if settingName == panelName and DT.db.panels[settingName][localtion] and DT.db.panels[settingName][localtion] == "Gold" then
+					if settingName == panelName and DT.db.panels[settingName][location] and DT.db.panels[settingName][location] == "Gold" then
 						--if it is current panel and options for it exist and it is gold dt, put the location in da cache
-						DTP.GoldCache[panelName] = panel.dataPanels[localtion]
-					elseif settingName == panelName and DT.db.panels[settingName][localtion] and DT.db.panels[settingName][localtion] == "S&L Currency" then
+						DTP.GoldCache[panelName] = panel.dataPanels[location]
+					elseif settingName == panelName and DT.db.panels[settingName][location] and DT.db.panels[settingName][location] == "S&L Currency" then
 						--if it is current panel and options for it exist and it is s&l currency dt, set the flag to true
 						IsCurrencyDTSelected = true
 					end
 				elseif settingValue and T.type(settingValue) == 'string' and settingValue == "Gold" then --if options for panel exist and it is 1 slot panel with gold dt
 					if DT.db.panels[settingName] == "Gold" and settingName == panelName then
-						DTP.GoldCache[panelName] = panel.dataPanels[localtion]
+						DTP.GoldCache[panelName] = panel.dataPanels[location]
 					end
 				elseif settingValue and T.type(settingValue) == 'string' and settingValue == "S&L Currency" then --if options for panel exist and it is 1 slot panel with s&l currency
 					if DT.db.panels[settingName] == "Gold" and settingName == panelName then
@@ -105,7 +105,7 @@ function DTP:LoadDTHook()
 				end
 			end
 		end
-		--This should help with icons not following data panels 
+		--This should help with icons not following data panels
 		if DTP.Names[panelName] then  E:Delay(0.1, function() Bar_OnLeave(panel, true) end) end
 	end
 	--Throttle for the amount of times this message is called. This func is called for every single change in DT options, so having it flood the chat is bad
@@ -130,7 +130,7 @@ function DTP:MouseoverHook()
 	for panelName, panel in T.pairs(DT.RegisteredPanels) do
 		for i=1, panel.numPoints do
 			local pointIndex = DT.PointLocation[i]
-			if DTP.Names[panelName] then 
+			if DTP.Names[panelName] then
 				panel.dataPanels[pointIndex]:HookScript("OnEnter", Button_OnEnter)
 				panel.dataPanels[pointIndex]:HookScript("OnLeave", Button_OnLeave)
 			end
@@ -142,7 +142,7 @@ function DTP:CreatePanel(id)
 	local panel = CreateFrame('Frame', "SLE_DataPanel_"..id, E.UIParent)
 	panel.Num = id
 	panel:SetFrameStrata('LOW')
-	panel:Point(DTP.template[id].point, E.UIParent, DTP.template[id].point, DTP.template[id].x, 0); 
+	panel:Point(DTP.template[id].point, E.UIParent, DTP.template[id].point, DTP.template[id].x, 0);
 	DT:RegisterPanel(panel, DTP.template[id].numSlots, 'ANCHOR_BOTTOM', 0, -4)
 	panel:SetScript("OnEnter", Bar_OnEnter)
 	panel:SetScript("OnLeave", Bar_OnLeave)
@@ -164,7 +164,7 @@ end
 
 function DTP:Size(id)
 	self["Panel_"..id]:Size(DTP.db["panel"..id].width, 20)
-	DT:UpdateAllDimensions()
+	DT.UpdatePanelDimensions(self["Panel_"..id])
 end
 
 function DTP:Toggle(id)
@@ -205,12 +205,12 @@ function DTP:ChatResize()
 	_G["RightChatDataPanel"]:SetAlpha(DTP.db.rightchat.alpha)
 	_G["RightChatToggleButton"]:SetAlpha(DTP.db.rightchat.alpha)
 	--A lot of weird math to prevent chat frames from flying around the place
-	if DTP.db.chathandle and E.db.datatexts.leftChatPanel then 
+	if DTP.db.chathandle and E.db.datatexts.leftChatPanel then
 		_G["LeftChatDataPanel"]:Width(DTP.db.leftchat.width - E.Spacing*2)
 	else
 		_G["LeftChatDataPanel"]:Width(E.db.chat.panelWidth - (2*(E.Border*3 - E.Spacing) + 16))
 	end
-	if DTP.db.chathandle and E.db.datatexts.rightChatPanel then 
+	if DTP.db.chathandle and E.db.datatexts.rightChatPanel then
 		_G["RightChatDataPanel"]:Width(DTP.db.rightchat.width  - E.Spacing*2)
 	else
 		_G["RightChatDataPanel"]:Width(((E.db.chat.separateSizes and E.db.chat.panelWidthRight) or E.db.chat.panelWidth) - (2*(E.Border*3 - E.Spacing) + 16))
@@ -274,8 +274,8 @@ function DTP:Initialize()
 
 	--Finishing setup for delete character gold data popup
 	local popup = E.PopupDialogs['SLE_CONFIRM_DELETE_CURRENCY_CHARACTER']
-	popup.OnAccept = DTP.DeleteCurrencyEntry,
-	
+	popup.OnAccept = DTP.DeleteCurrencyEntry
+
 	--Hooking to default functions to remove gold conflicts
 	-- hooksecurefunc(DT, "LoadDataTexts", DTP.MouseoverHook)
 	hooksecurefunc(DT, "LoadDataTexts", DTP.LoadDTHook)

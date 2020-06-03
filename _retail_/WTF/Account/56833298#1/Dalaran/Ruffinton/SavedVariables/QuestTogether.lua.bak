@@ -10,7 +10,7 @@ QuestTogether = {
 		[13922] = {
 			["title"] = "In the Hands of the Perverse",
 			["objectives"] = {
-				"0/5 Fallen Moonstone", -- [1]
+				"0/5  ", -- [1]
 			},
 		},
 		[26479] = {
@@ -22,6 +22,13 @@ QuestTogether = {
 		[26453] = {
 			["title"] = "A Helping Hand",
 			["objectives"] = {
+			},
+		},
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
+			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[25621] = {
@@ -72,8 +79,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

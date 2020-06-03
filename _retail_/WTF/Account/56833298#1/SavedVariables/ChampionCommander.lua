@@ -1,10 +1,13 @@
 
 dbBFA = {
 	["char"] = {
-		["Shanyt - Argent Dawn"] = {
+		["Avisar - Dalaran"] = {
 			["firstun"] = false,
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Zulbathal - Zul'jin"] = {
+			["firstun"] = false,
+		},
+		["Shanyt - Argent Dawn"] = {
 			["firstun"] = false,
 		},
 	},
@@ -16,8 +19,9 @@ dbBFA = {
 		["warn02_seen"] = 0,
 	},
 	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -33,27 +37,20 @@ dbBFA = {
 				["USEALLY"] = false,
 				["SAVETROOPS"] = false,
 				["IGNOREINACTIVE"] = true,
-				["BONUS"] = false,
+				["BONUS"] = true,
 				["SORTMISSION2"] = "Garrison_SortMissions_Original",
 				["BONUSCHANCE"] = 100,
 				["IGNORELOW"] = false,
 				["NOWARN"] = false,
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
-				["MAKEITQUICK"] = false,
+				["MAKEITQUICK"] = true,
 				["MAXCHAMP"] = 3,
 				["TROOPALERT"] = true,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
-			["blacklist"] = {
-				[1933] = true,
-				[2078] = true,
-				[1921] = true,
-				[1944] = true,
-				[1926] = true,
-			},
-			["showmenu"] = false,
+			["showmenu"] = true,
 		},
 	},
 }

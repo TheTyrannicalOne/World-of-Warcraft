@@ -1,0 +1,15 @@
+## Interface: 80300
+## Title: Rare Share: |cffff9956Vale of Eternal Blossoms
+## Notes: The Vale of Eternal Blossoms extension for the Rare Share addon (8.3)
+## Author: pffScrub
+## Version: v0.1.1
+## DefaultState: enabled
+## Dependencies: RareShare
+
+locales\enUS.lua
+locales\ruRU.lua
+locales\deDE.lua
+locales\frFR.lua
+locales\koKR.lua
+
+RareShare_Vale of Eternal Blossoms.lua

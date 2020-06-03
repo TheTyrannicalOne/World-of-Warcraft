@@ -1,5 +1,10 @@
 OPie_Classic: disabled
-BigWigs_Core: enabled
-BigWigs_Options: enabled
-BigWigs_Plugins: enabled
-WeakAurasCompanion: enabled
+AAP-Core: disabled
+AAP-Vanilla: disabled
+AAP-TBC-WotLK: disabled
+AAP-Cata-MoP: disabled
+AAP-WoD: disabled
+AAP-Legion: disabled
+AAP-BfA: disabled
+Azeroth Auto Pilot: disabled
+Leatrix_Plus: disabled

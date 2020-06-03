@@ -1,10 +1,13 @@
 
 dbOHC = {
 	["char"] = {
-		["Shanyt - Argent Dawn"] = {
+		["Avisar - Dalaran"] = {
 			["firstun"] = false,
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Zulbathal - Zul'jin"] = {
+			["firstun"] = false,
+		},
+		["Shanyt - Argent Dawn"] = {
 			["firstun"] = false,
 		},
 	},
@@ -17,8 +20,9 @@ dbOHC = {
 		["firstrun"] = false,
 	},
 	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -48,9 +52,6 @@ dbOHC = {
 				["BASECHANCE"] = 0,
 			},
 			["showmenu"] = true,
-			["blacklist"] = {
-				[1767] = true,
-			},
 		},
 	},
 }

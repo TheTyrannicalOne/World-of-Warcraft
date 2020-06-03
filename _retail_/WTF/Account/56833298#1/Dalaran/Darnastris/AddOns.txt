@@ -1,13 +1,22 @@
-OPie_Classic: disabled
 BigWigs_Core: enabled
 BigWigs_Options: enabled
 BigWigs_Plugins: enabled
-WeakAurasCompanion: enabled
 ElvUI_VisualAuraTimers: disabled
 ElvUI_ExtraActionBars: disabled
 ElvUI_CastBarOverlay: disabled
 ElvUI_EverySecondCounts: disabled
 ElvUI_AuraBarsMovers: disabled
 ElvUI_CustomTweaks: disabled
+WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
+OPie_Classic: disabled
 ElvUI_OptionsUI: enabled
+AAP-Core: disabled
+AAP-Vanilla: disabled
+AAP-TBC-WotLK: disabled
+AAP-Cata-MoP: disabled
+AAP-WoD: disabled
+AAP-Legion: disabled
+AAP-BfA: disabled
+Azeroth Auto Pilot: disabled
+Leatrix_Plus: disabled

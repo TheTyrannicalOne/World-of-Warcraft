@@ -1,114 +1,66 @@
 
 PasteDB = {
 	["profileKeys"] = {
-		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
-		["Goramor - Runetotem"] = "Goramor - Runetotem",
-		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Tynkster - Dalaran"] = "Tynkster - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
-		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 	},
 	["profiles"] = {
-		["Panboozled - Runetotem"] = {
-			["loaded"] = true,
-		},
-		["Vancard - Zul'jin"] = {
-			["loaded"] = true,
-		},
-		["Tynster - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Tyrann - Zul'jin"] = {
-			["loaded"] = true,
-		},
-		["Shaewong - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Shanyt - Argent Dawn"] = {
-			["loaded"] = true,
-		},
-		["Shanyt - Zul'jin"] = {
-			["loaded"] = true,
-		},
-		["Brewnheimer - Darkspear"] = {
-			["loaded"] = true,
-		},
-		["Goramor - Runetotem"] = {
-			["loaded"] = true,
-		},
-		["Gillbourn - Runetotem"] = {
-			["loaded"] = true,
-		},
-		["Tinkster - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Migimong - Runetotem"] = {
-			["loaded"] = true,
-		},
-		["Sinh - Dalaran"] = {
+		["Avisar - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Thorinbane - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Serbitechna - Darkspear"] = {
+		["Vancard - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyrannithal - Argent Dawn"] = {
 			["loaded"] = true,
 		},
 		["Ruffinton - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Tynkster - Dalaran"] = {
+		["Zulbathal - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Darnastris - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Shathiel - Darkspear"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Claugh - Runetotem"] = {
+		["Shanyt - Argent Dawn"] = {
 			["loaded"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
 			["loaded"] = true,
 		},
-		["Tyriinid - Dalaran"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Dialdaas - Darkspear"] = {
+		["Shimzo - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Gangus - Runetotem"] = {
+		["Shaekhan - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Narisaric - Dalaran"] = {
+		["Tinkster - Dalaran"] = {
 			["loaded"] = true,
 		},
 	},

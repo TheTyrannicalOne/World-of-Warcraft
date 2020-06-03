@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.14 (15th April 2020)
+-- 	Leatrix Plus 8.3.21 (3rd June 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.3.14"
+	LeaPlusLC["AddonVer"] = "8.3.21"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -741,8 +741,8 @@
 
 				},
 
-				-- Mounts
-				["MuteMounts"] = {
+				-- Ban-LU
+				["MuteBanLu"] = {
 
 					-- Ban-Lu (sound/creature/ban-lu)
 					"vo_72_ban-lu_01_m.ogg#1593212", "vo_72_ban-lu_02_m.ogg#1593213", "vo_72_ban-lu_03_m.ogg#1593214", "vo_72_ban-lu_04_m.ogg#1593215", "vo_72_ban-lu_05_m.ogg#1593216", "vo_72_ban-lu_06_m.ogg#1593217", "vo_72_ban-lu_07_m.ogg#1593218", "vo_72_ban-lu_08_m.ogg#1593219", "vo_72_ban-lu_09_m.ogg#1593220", "vo_72_ban-lu_10_m.ogg#1593221", "vo_72_ban-lu_11_m.ogg#1593222", "vo_72_ban-lu_12_m.ogg#1593223", "vo_72_ban-lu_13_m.ogg#1593224", "vo_72_ban-lu_14_m.ogg#1593225", "vo_72_ban-lu_15_m.ogg#1593226", "vo_72_ban-lu_16_m.ogg#1593227", "vo_72_ban-lu_17_m.ogg#1593228", "vo_72_ban-lu_18_m.ogg#1593229", "vo_72_ban-lu_19_m.ogg#1593230", "vo_72_ban-lu_20_m.ogg#1593231", "vo_72_ban-lu_21_m.ogg#1593232", "vo_72_ban-lu_22_m.ogg#1593233", "vo_72_ban-lu_23_m.ogg#1593234", "vo_72_ban-lu_24_m.ogg#1593235", "vo_72_ban-lu_25_m.ogg#1593236",
@@ -767,6 +767,72 @@
 
 				},
 
+				-- Balls
+				["MuteBalls"] = {
+
+					-- Foot Ball (sound/item/weapons/mace2h)
+					"2hmacehitstone1b.ogg#567794", "2hmacehitstone1c.ogg#567797", "2hmacehitstone1a.ogg#567804",
+
+					-- Net sound (sound/spells)
+					"sound/spells/thrownet.ogg#569368",
+
+					-- The Pigskin (sound/item/weapons/weaponswings) (not used currently as the sound is more common and probably not annoying)
+					-- "fx_whoosh_small_revamp_01.ogg#1302923", "fx_whoosh_small_revamp_02.ogg#1302924", "fx_whoosh_small_revamp_03.ogg#1302925", "fx_whoosh_small_revamp_04.ogg#1302926", "fx_whoosh_small_revamp_05.ogg#1302927", "fx_whoosh_small_revamp_06.ogg#1302928", "fx_whoosh_small_revamp_07.ogg#1302929", "fx_whoosh_small_revamp_08.ogg#1302930", "fx_whoosh_small_revamp_09.ogg#1302931", "fx_whoosh_small_revamp_10.ogg#1302932", 
+
+				},
+
+				-- Vaults
+				["MuteVaults"] = {
+
+					-- Mechanical guild vault idle sound (such as those found in Booty Bay and Winterspring)
+					"sound/doodad/guildvault_goblin_01stand.ogg#566289",
+
+				},
+
+				-- Trains
+				["MuteTrains"] = {
+
+					--[[Blood Elf]]	"sound#539219", "sound#539203", "sound#1313588", "sound#1306531", 
+					--[[Draenei]]	"sound#539516", "sound#539730", 
+					--[[Dwarf]]		"sound#539802", "sound#539881", 
+					--[[Gnome]]		"sound#540271", "sound#540275", 
+					--[[Goblin]]	"sound#541769", "sound#542017", 
+					--[[Human]]		"sound#540535", "sound#540734", 
+					--[[Night Elf]]	"sound#540870", "sound#540947", "sound#1316209", "sound#1304872", 
+					--[[Orc]]		"sound#541157", "sound#541239", 
+					--[[Pandaren]]	"sound#636621", "sound#630296", "sound#630298", 
+					--[[Tauren]]	"sound#542818", "sound#542896", 
+					--[[Troll]] 	"sound#543085", "sound#543093", 
+					--[[Undead]]	"sound#542526", "sound#542600", 
+					--[[Worgen]]	"sound#542035", "sound#542206", "sound#541463", "sound#541601", 
+
+					--[[Dark Iron]]	"sound#1902030", "sound#1902543", 
+					--[[Highmount]]	"sound#1730534", "sound#1730908", 
+					--[[Kul Tiran]]	"sound#2531204", "sound#2491898", 
+					--[[Lightforg]]	"sound#1731282", "sound#1731656", 
+					--[[MagharOrc]] "sound#1951457", "sound#1951458", 
+					--[[Mechagnom]] "sound#3107651", "sound#3107182", 
+					--[[Nightborn]]	"sound#1732030", "sound#1732405", 
+					--[[Void Elf]]	"sound#1732785", "sound#1733163", 
+					--[[Vulpera]] 	"sound#3106252", "sound#3106717", 
+					--[[Zandalari]]	"sound#1903049", "sound#1903522", 
+
+				},
+
+				-- Xiwyllag ATV
+				["MuteATV"] = {
+
+					"sound/creature/goblinhovercraft/mon_goblinhovercraft_drive01.ogg#1859976",
+					"sound/creature/goblinhovercraft/mon_goblinhovercraft_enginesputter_pop_01.ogg#1859968", 
+					"sound/creature/goblinhovercraft/mon_goblinhovercraft_enginesputter_pop_02.ogg#1859967", 
+					"sound/creature/goblinhovercraft/mon_goblinhovercraft_enginesputter_pop_03.ogg#1859966", 
+					"sound/creature/goblinhovercraft/mon_goblinhovercraft_enginesputter_pop_04.ogg#1859965", 
+					"sound/creature/goblinhovercraft/mon_goblinhovercraft_fly.ogg#1859977",
+					"sound/creature/goblinhovercraft/mon_goblinhovercraft_idle01.ogg#1859978",
+					"sound/creature/goblinhovercraft/mon_goblinhovercraft_mountspecial.ogg#2059826",
+
+				},
+
 			}
 
 			-- Give table file level scope (its used during logout and for wipe and admin commands)
@@ -786,14 +852,32 @@
 			local SoundPanel = LeaPlusLC:CreatePanel("Mute game sounds", "SoundPanel")
 
 			-- Add checkboxes
-			LeaPlusLC:MakeTx(SoundPanel, "Settings", 16, -72)
+			LeaPlusLC:MakeTx(SoundPanel, "General", 16, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteFizzle", "Fizzle", 16, -92, false, "If checked, the spell fizzle sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteInterface", "Interface", 16, -112, false, "If checked, the interface button sound, the chat frame tab click sound and the game menu toggle sound will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSniffing", "Sniffing", 16, -132, false, "If checked, the worgen sniffing sounds will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 16, -152, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 16, -172, false, "If checked, battle shouts heard when casting specific spells will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteMounts", "Mounts", 16, -192, false, "If checked, talking mounts will be muted.|n|nThis applies to Ban-Lu.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 16, -212, false, "If checked, most of the bike mount sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBalls", "Balls", 16, -152, false, "If checked, the Foot Ball sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteTrains", "Trains", 16, -172, false, "If checked, train sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -192, false, "If checked, the mechanical guild vault idle sound will be muted.")
+
+			LeaPlusLC:MakeTx(SoundPanel, "Combat", 140, -72)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 140, -92, false, "If checked, battle shouts heard when casting specific spells will be muted.")
+
+			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 140, -132)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 140, -152, false, "If checked, most of the bike mount sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 140, -172, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 140, -192, false, "If checked, Ban-Lu will no longer talk to you.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteATV", "ATV", 140, -212, false, "If checked, Xiwyllag ATV will be muted.")
+
+			-- Set click width for sounds checkboxes
+			for k, v in pairs(muteTable) do
+				LeaPlusCB[k].f:SetWidth(80)
+				if LeaPlusCB[k].f:GetStringWidth() > 80 then
+					LeaPlusCB[k]:SetHitRectInsets(0, -70, 0, 0)
+				else
+					LeaPlusCB[k]:SetHitRectInsets(0, -LeaPlusCB[k].f:GetStringWidth() + 4, 0, 0)
+				end
+			end
 
 			-- Function to mute and unmute sounds
 			local function SetupMute()
@@ -1262,6 +1346,32 @@
 				GameTooltip:Hide()
 				SetQuestInBox()
 			end)
+
+			-- Function to move Wowhead link frame if Leatrix Maps is installed with Remove map border enabled
+			local function MoveWowheadLinks()
+				if LeaMapsDB and LeaMapsDB["NoMapBorder"] and LeaMapsDB["NoMapBorder"] == "On" then
+					mEB:SetParent(WorldMapFrame)
+					mEB:ClearAllPoints()
+					mEB:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 4, -64)
+					mEB:SetFontObject("GameFontNormalSmall")
+					mEB:SetFrameStrata("HIGH")
+					mEB:SetAlpha(0.5)
+				end
+			end
+
+			-- Run function when Leatrix Maps is loaded
+			if IsAddOnLoaded("Leatrix_Maps") then
+				MoveWowheadLinks()
+			else
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "Leatrix_Maps" then
+						MoveWowheadLinks()
+						waitFrame:UnregisterAllEvents()
+					end
+				end)
+			end
 
 		end
 
@@ -3267,6 +3377,31 @@
 	function LeaPlusLC:Player()
 
 		----------------------------------------------------------------------
+		--	Sync from friends (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			hooksecurefunc(QuestSessionManager.StartDialog, "Show", function(self)
+				if LeaPlusLC["SyncFromFriends"] == "On" then
+					local details = C_QuestSession.GetSessionBeginDetails()
+					if details then
+						for index, unit in ipairs({"player", "party1", "party2", "party3", "party4",}) do
+							if UnitGUID(unit) == details.guid then
+								local requesterName = GetUnitName(unit)
+								if LeaPlusLC:FriendCheck(requesterName) then
+									self.ButtonContainer.Confirm:Click()
+								end
+								return
+							end
+						end
+					end
+				end
+			end)
+
+		end
+
+		----------------------------------------------------------------------
 		--	Class icon portraits
 		----------------------------------------------------------------------
 
@@ -4247,17 +4382,8 @@
 
 		if LeaPlusLC["RecentChatWindow"] == "On" then
 
-			-- Create recent chat frame (not parenting to UIParent due to editbox scaling issue)
-			local editFrame = CreateFrame("ScrollFrame", nil, nil, "InputScrollFrameTemplate")
-
-			-- Toggle frame with UIParent and pet battles
-			local hideUI = false
-			local function HideRecentChatFrame() if editFrame:IsShown() then hideUI = true editFrame:Hide() end	end
-			local function ShowRecentChatFrame() if hideUI and not PetBattleFrame:IsShown() then editFrame:Show() hideUI = false end end
-			UIParent:HookScript("OnHide", HideRecentChatFrame)
-			UIParent:HookScript("OnShow", ShowRecentChatFrame)
-			hooksecurefunc("PetBattleFrame_Display", HideRecentChatFrame)
-			hooksecurefunc("PetBattleFrame_Remove", ShowRecentChatFrame)
+			-- Create recent chat frame
+			local editFrame = CreateFrame("ScrollFrame", nil, UIParent, "InputScrollFrameTemplate")
 
 			-- Set frame parameters
 			editFrame:ClearAllPoints()
@@ -4285,6 +4411,7 @@
 			editBox:SetAltArrowKeyMode(false)
 			editBox:SetTextInsets(4, 4, 4, 4)
 			editBox:SetWidth(editFrame:GetWidth() - 30)
+			editBox:SetFont(editBox:GetFont(), 16)
 
 			-- Close frame with right-click of editframe or editbox
 			local function CloseRecentChatWindow()
@@ -4325,11 +4452,33 @@
 				if NumMsg > 128 then StartMsg = NumMsg - 127 end
 				local totalMsgCount = 0
 				for iMsg = StartMsg, NumMsg do
-					local chatMessage = chtfrm:GetMessageInfo(iMsg)
+					local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
 					if chatMessage then
-						--chatMessage = gsub(chatMessage, "|T.-|t", "") -- Remove textures
-						--chatMessage = gsub(chatMessage, "{.-}", "") -- Remove ellipsis
+
+						-- Handle Battle.net
+						if string.match(chatMessage, "k:(%d+):(%d+):BN_WHISPER:") then
+							local id = tonumber(string.match(chatMessage, "k:(%d+):%d+:BN_WHISPER:"))
+							local totalBNFriends = BNGetNumFriends()
+							for friendIndex = 1, totalBNFriends do
+								local presenceID, name, tag = BNGetFriendInfo(friendIndex)
+								if id == presenceID then
+									tag = strsplit("#", tag)
+									chatMessage =  gsub(chatMessage, "|HBNplayer:.*:.*:.*:BN_WHISPER:.*:", "[" .. tag .. "]:")
+								end
+							end
+						end
+
+						-- Handle colors
+						if r and g and b and chatTypeID then
+							local colorCode = RGBToColorCode(r, g, b)
+							chatMessage = string.gsub(chatMessage, "|r", "|r" .. colorCode) -- Links
+							chatMessage = colorCode .. chatMessage
+						end
+
+						chatMessage = gsub(chatMessage, "|T.-|t", "") -- Remove textures
+						chatMessage = gsub(chatMessage, "{.-}", "") -- Remove ellipsis
 						editBox:Insert(chatMessage .. "|n")
+
 					end
 					totalMsgCount = totalMsgCount + 1
 				end
@@ -7342,14 +7491,24 @@
 
 		if event == "CONFIRM_SUMMON" then
 			if not UnitAffectingCombat("player") then
-				C_SummonInfo.ConfirmSummon()
-				StaticPopup_Hide("CONFIRM_SUMMON")
+				local sName = GetSummonConfirmSummoner()
+				local sLocation = GetSummonConfirmAreaName()
+				LeaPlusLC:Print(L["The summon from"] .. " " .. sName .. " (" .. sLocation .. ") " .. L["will be automatically accepted in 10 seconds unless cancelled."])
+				C_Timer.After(10, function()
+					local sNameNew = GetSummonConfirmSummoner()
+					local sLocationNew = GetSummonConfirmAreaName()
+					if sName == sNameNew and sLocation == sLocationNew then
+						-- Automatically accept summon after 10 seconds if summoner name and location have not changed
+						C_SummonInfo.ConfirmSummon()
+						StaticPopup_Hide("CONFIRM_SUMMON")
+					end
+				end)
 			end
 			return
 		end
 
 		----------------------------------------------------------------------
-		-- Block party invites
+		-- Block party invites and party from friends
 		----------------------------------------------------------------------
 
 		if event == "PARTY_INVITE_REQUEST" then
@@ -7369,6 +7528,10 @@
 							break
 						end
 					end
+					-- Confirm invite to party sync group request
+					if QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Confirm:IsShown() then
+						QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Confirm:Click()
+					end
 					return
 				end
 			end
@@ -7381,6 +7544,10 @@
 					DeclineGroup();
 					StaticPopup_Hide("PARTY_INVITE");
 					StaticPopup_Hide("PARTY_INVITE_XREALM");
+					-- Decline invite to party sync group request
+					if QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Decline:IsShown() then
+						QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Decline:Click()
+					end
 					return
 				end
 			end
@@ -7487,6 +7654,7 @@
 				LeaPlusLC:LoadVarChk("NoFriendRequests", "Off")				-- Block friend requests
 
 				LeaPlusLC:LoadVarChk("AcceptPartyFriends", "Off")			-- Party from friends
+				LeaPlusLC:LoadVarChk("SyncFromFriends", "Off")				-- Sync from friends
 				LeaPlusLC:LoadVarChk("AutoConfirmRole", "Off")				-- Queue from friends
 				LeaPlusLC:LoadVarChk("InviteFromWhisper", "Off")			-- Invite from whispers
 				LeaPlusLC:LoadVarChk("InviteFriendsOnly", "Off")			-- Restrict invites to friends
@@ -7651,6 +7819,7 @@
 			LeaPlusDB["NoFriendRequests"]		= LeaPlusLC["NoFriendRequests"]
 
 			LeaPlusDB["AcceptPartyFriends"]		= LeaPlusLC["AcceptPartyFriends"]
+			LeaPlusDB["SyncFromFriends"]		= LeaPlusLC["SyncFromFriends"]
 			LeaPlusDB["AutoConfirmRole"]		= LeaPlusLC["AutoConfirmRole"]
 			LeaPlusDB["InviteFromWhisper"]		= LeaPlusLC["InviteFromWhisper"]
 			LeaPlusDB["InviteFriendsOnly"]		= LeaPlusLC["InviteFriendsOnly"]
@@ -8485,12 +8654,13 @@
 			elseif str == "quest" then
 				-- Show quest completed status
 				if arg1 and arg1 ~= "" then
-					if tonumber(arg1) then
+					if tonumber(arg1) and tonumber(arg1) < 999999999 then
 						local questCompleted = IsQuestFlaggedCompleted(arg1)
+						local questTitle = C_TaskQuest.GetQuestInfoByQuestID(arg1) or C_QuestLog.GetQuestInfo(arg1) or L["Unknown"]
 						if questCompleted then
-							LeaPlusLC:Print(arg1 .. ": " .. L["Quest completed."])
+							LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Completed."])
 						else
-							LeaPlusLC:Print(arg1 .. ": " .. L["Quest not completed."])
+							LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Not completed."])
 						end
 					else
 						LeaPlusLC:Print("Invalid quest ID.")
@@ -9318,6 +9488,7 @@
 				LeaPlusDB["NoPartyInvites"] = "Off"				-- Block party invites
 				LeaPlusDB["NoFriendRequests"] = "Off"			-- Block friend requests			
 				LeaPlusDB["AcceptPartyFriends"] = "On"			-- Party from friends
+				LeaPlusDB["SyncFromFriends"] = "On"				-- Sync from friends
 				LeaPlusDB["AutoConfirmRole"] = "On"				-- Queue from friends
 				LeaPlusDB["InviteFromWhisper"] = "On"			-- Invite from whispers
 				LeaPlusDB["InviteFriendsOnly"] = "On"			-- Restrict invites to friends
@@ -9707,8 +9878,9 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Groups"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AcceptPartyFriends"		, 	"Party from friends"			, 	340, -92, 	false,	"If checked, party invitations from friends or guild members will be automatically accepted unless you are queued in Dungeon Finder.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoConfirmRole"			, 	"Queue from friends"			,	340, -112, 	false,	"If checked, requests initiated by your party leader to join the Dungeon Finder queue will be automatically accepted if the party leader is in your friends list or guild.|n|nThis option requires that you have selected a role for your character in the Dungeon Finder window.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -132,	false,	L["If checked, a group invite will be sent to anyone who whispers you with a set keyword as long as you are ungrouped, group leader or raid assistant."] .. "|n|n" .. L["Keyword"] .. ": |cffffffff" .. "dummy" .. "|r")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "SyncFromFriends"			, 	"Sync from friends"				,	340, -112, 	false,	"If checked, party sync requests from friends or guild members will be automatically accepted.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoConfirmRole"			, 	"Queue from friends"			,	340, -132, 	false,	"If checked, requests initiated by your party leader to join the Dungeon Finder queue will be automatically accepted if the party leader is in your friends list or guild.|n|nThis option requires that you have selected a role for your character in the Dungeon Finder window.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -152,	false,	L["If checked, a group invite will be sent to anyone who whispers you with a set keyword as long as you are ungrouped, group leader or raid assistant."] .. "|n|n" .. L["Keyword"] .. ": |cffffffff" .. "dummy" .. "|r")
 
  	LeaPlusLC:CfgBtn("InvWhisperBtn", LeaPlusCB["InviteFromWhisper"])
 

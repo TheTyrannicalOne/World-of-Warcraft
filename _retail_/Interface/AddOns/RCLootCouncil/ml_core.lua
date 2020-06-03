@@ -10,18 +10,15 @@
 local _,addon = ...
 _G.RCLootCouncilML = addon:NewModule("RCLootCouncilML", "AceEvent-3.0", "AceBucket-3.0", "AceComm-3.0", "AceTimer-3.0", "AceHook-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("RCLootCouncil")
-local LibDialog = LibStub("LibDialog-1.0")
 
 -- WoW API
 local GetItemInfo, GetItemInfoInstant, GetRaidRosterInfo
 	 = GetItemInfo, GetItemInfoInstant, GetRaidRosterInfo
 -- Lua
-local time, date, tonumber, unpack, select, wipe, pairs, ipairs, format, table, tinsert, tremove, bit, tostring, type, FindInTableIf, tFilter
-	 = time, date, tonumber, unpack, select, wipe, pairs, ipairs, format, table, tinsert, tremove, bit, tostring, type, FindInTableIf, tFilter
+local time, date, tonumber, unpack, select, wipe, pairs, ipairs, format, table, tinsert, tremove, bit, tostring, type, tFilter
+	 = time, date, tonumber, unpack, select, wipe, pairs, ipairs, format, table, tinsert, tremove, bit, tostring, type, tFilter
 
 local db;
-
-local LOOT_ITEM_PATTERN = "^".._G.LOOT_ITEM:gsub('%%s', '(.+)').."$"
 
 local LOOT_TIMEOUT = 3 -- If we give loot to someone, but loot slot is not cleared after this time period, consider this loot distribute as failed.
 						-- The real time needed is the sum of two players'(ML and the awardee) latency, so 1 second timeout should be enough.
@@ -62,8 +59,7 @@ end
 
 -- REVIEW v2.15 Almost all of these are added to `RCLootCouncil:PrepareLootTable` and can be removed from here.
 function RCLootCouncilML:GetItemInfo(item)
-	local name, link, rarity, ilvl, iMinLevel, type, subType, iStackCount, equipLoc, texture,
-		sellPrice, typeID, subTypeID, bindType, expansionID, itemSetID, isCrafting = GetItemInfo(item)
+	local name, link, rarity, ilvl, iMinLevel, type, subType, iStackCount, equipLoc, texture, sellPrice, typeID, subTypeID, bindType, expansionID, itemSetID, isCrafting = GetItemInfo(item) -- luacheck: ignore
 	local itemID = link and addon:GetItemIDFromLink(link)
 	if name then
 		return {
@@ -108,6 +104,7 @@ function RCLootCouncilML:AddItem(item, bagged, slotIndex, owner, entry)
 	entry.lootSlot = slotIndex
 	entry.awarded = false
 	entry.owner = owner or addon.bossName
+	entry.boss = addon.bossName
 	entry.isSent = false
 	entry.typeCode = self:GetTypeCodeForItem(item)
 
@@ -156,7 +153,7 @@ function RCLootCouncilML:GetTypeCodeForItem (item)
 	local itemID, _, _, itemEquipLoc, _, itemClassID, itemSubClassID = GetItemInfoInstant(item)
 	if not itemID then return "default" end -- We can't handle uncached items!
 
-	for i,func in ipairs(addon.RESPONSE_CODE_GENERATORS) do
+	for _,func in ipairs(addon.RESPONSE_CODE_GENERATORS) do
 		local val = func(item, db, itemID, itemEquipLoc,itemClassID, itemSubClassID)
 		if val then return val end
 	end
@@ -312,7 +309,7 @@ function RCLootCouncilML:SessionFromBags()
 	if self.running then return addon:Print(L["You're already running a session."]) end
 	local Items = addon.ItemStorage:GetAllItemsOfType("award_later")
 	if #Items == 0 then return addon:Print(L["No items to award later registered"]) end
-	for i, v in ipairs(Items) do
+	for _, v in ipairs(Items) do
 		self:AddItem(v.link, v, nil, addon.playerName)
 	end
 	if db.autoStart then
@@ -325,7 +322,7 @@ end
 
 function RCLootCouncilML:ClearOldItemsInBags()
 	local Items = addon.ItemStorage:GetAllItemsOfType("award_later")
-	for k,v in ipairs(Items) do
+	for _,v in ipairs(Items) do
 		-- Expire BOP items after 2h, Because Blizzard only gives a 2h window to trade soulbound items.
 		-- Expire items non BoP after 6h, in case some guild distribute boe items at the end of raid.
 		-- if v.addedTime is not recorded, then something is wrong, just remove it.
@@ -333,7 +330,7 @@ function RCLootCouncilML:ClearOldItemsInBags()
 		-- if (not v.time_added) or (v.args.bop and time(date("!*t")) - v.time_added > 3600*2) or (time(date("!*t")) - v.time_added > 3600*6) then -- time(date("!*t")) is UTC epoch.
 		-- 	tremove(db.baggedItems, i)
 		-- end
-		if (v.args.bop and (v.time_remaining <= 0 or v.time_remaning + v.time_added < time())) or -- BoP item, 2 hrs
+		if (v.args.bop and (v.time_remaining <= 0 or v.time_remaining + v.time_added < time())) or -- BoP item, 2 hrs
 			time() - v.time_added > 3600 * 6 then -- Non BoP, timeout after 6 hrs
 				addon:DebugLog("ML: Removed Item", v.link, "due to timeout.")
 				addon.ItemStorage:RemoveItem(v)
@@ -422,16 +419,15 @@ function RCLootCouncilML:ItemsInBagsLowTradeTimeRemainingReminder()
 	if GetTime() - lastCheckItemsInBagsLowTradeTimeRemainingReminder < 120 then -- Dont spam
 		return
 	end
-	local checkedSlots = {}
 	local entriesToRemind = {}
 	local remindThreshold = 1200 -- 20min
 	local Items = addon.ItemStorage:GetAllItemsOfType("award_later")
-	local remaningTime = 0
+	local remainingTime
 	for k, v in ipairs(Items) do
-		-- It should be precise enough to just check time_added + time_remaning
-		remaningTime = time() - v.time_added + v.time_remaning
-		if remaningTime > 0 and remaningTime < remindThreshold then
-			v.remainingTime = remaningTime
+		-- It should be precise enough to just check time_added + time_remaining
+		remainingTime = time() - v.time_added + v.time_remaining
+		if remainingTime > 0 and remainingTime < remindThreshold then
+			v.remainingTime = remainingTime
 			v.index = k
 			tinsert(entriesToRemind, v)
 		end
@@ -447,11 +443,11 @@ function RCLootCouncilML:ItemsInBagsLowTradeTimeRemainingReminder()
 	lastCheckItemsInBagsLowTradeTimeRemainingReminder = GetTime()
 end
 
-function RCLootCouncilML:ConfigTableChanged(val)
+function RCLootCouncilML:ConfigTableChanged(value)
 	-- The db was changed, so check if we should make a new mldb
 	-- We can do this by checking if the changed value is a key in mldb
 	if not addon.mldb then return self:UpdateMLdb() end -- mldb isn't made, so just make it
-	for val in pairs(val) do
+	for val in pairs(value) do
 		for key in pairs(addon.mldb) do
 			if key == val then return self:UpdateMLdb() end
 		end
@@ -587,7 +583,7 @@ function RCLootCouncilML:OnCommReceived(prefix, serializedMsg, distri, sender)
 					if db.observe or addon:CouncilContains(sender) then -- Only send all data to councilmen
 						local table = addon:GetActiveModule("votingframe"):GetLootTable()
 						-- Remove our own voting data if any
-						for ses, v in ipairs(table) do
+						for _, v in ipairs(table) do
 							v.haveVoted = false
 							for _, d in pairs(v.candidates) do
 								d.haveVoted = false
@@ -612,10 +608,19 @@ function RCLootCouncilML:OnCommReceived(prefix, serializedMsg, distri, sender)
 
 			elseif command == "not_tradeable" or command == "rejected_trade" then
 				self:HandleNonTradeable(unpack(data), addon:UnitName(sender), command)
+
+			elseif command == "bonus_roll" then
+				self:OnBonusRoll(unpack(data))
 			end
 		else
 			addon:Debug("Error in deserializing ML comm: ", command)
 		end
+	end
+end
+
+function RCLootCouncilML:OnBonusRoll (winner, type, link)
+	if db.saveBonusRolls then
+		self:TrackAndLogLoot(winner, link, "BONUSROLL", addon.bossName)
 	end
 end
 
@@ -644,7 +649,7 @@ function RCLootCouncilML:HandleReceivedTradeable (item, sender)
 		end
 		local boe = addon:IsItemBoE(item)
 		if	(not boe or (db.autolootOthersBoE and boe)) and -- BoE
-		 	(IsEquippableItem(item) or db.autolootEverything) and -- Safetee: I don't want to check db.autoloot here, because this is actually not a loot.
+			(IsEquippableItem(item) or db.autolootEverything) and -- Safetee: I don't want to check db.autoloot here, because this is actually not a loot.
 			not self:IsItemIgnored(item) and -- Item mustn't be ignored
 			(quality and quality >= (GetLootThreshold() or 1))  then
 				if InCombatLockdown() and not db.skipCombatLockdown then
@@ -746,12 +751,30 @@ function RCLootCouncilML:LootOpened()
 		end
 		if #self.lootTable > 0 and not self.running then
 			if db.autoStart and addon.candidates[addon.playerName] and #addon.council > 0 then -- Auto start only if data is ready
-				self:StartSession()
+				if db.awardLater then
+					self:DoAwardLater()
+				else
+					self:StartSession()
+				end
 			else
 				addon:CallModule("sessionframe")
 				sessionframe:Show(self.lootTable)
 			end
 		end
+	end
+end
+
+--- Awards all items in lootTable to the ML for award later
+function RCLootCouncilML:DoAwardLater (lootTable)
+	local awardsDone = 0
+	for session in ipairs(lootTable) do
+		self:Award(session, nil, nil, nil, function()
+			-- Ensure all awards are done before ending the session.
+			awardsDone = awardsDone + 1
+			if awardsDone >= #lootTable then
+				RCLootCouncilML:EndSession()
+			end
+		end)
 	end
 end
 
@@ -829,7 +852,7 @@ function RCLootCouncilML:CanGiveLoot(slot, item, winner)
 		end
 
 		local found = false
-		for i = 1, MAX_RAID_MEMBERS do
+		for i = 1, _G.MAX_RAID_MEMBERS do
 			if addon:UnitIsUnit(GetMasterLootCandidate(slot, i), winner) then
 				found = true
 				break
@@ -885,7 +908,7 @@ function RCLootCouncilML:GiveLoot(slot, winner, callback, ...)
 		entryInQueue.timer = self:ScheduleTimer(OnGiveLootTimeout, LOOT_TIMEOUT, entryInQueue)
 		tinsert(self.lootQueue, entryInQueue)
 
-		for i = 1, MAX_RAID_MEMBERS do
+		for i = 1, _G.MAX_RAID_MEMBERS do
 			if addon:UnitIsUnit(GetMasterLootCandidate(slot, i), winner) then
 				addon:Debug("GiveMasterLoot", slot, i)
 				GiveMasterLoot(slot, i)
@@ -952,7 +975,7 @@ function RCLootCouncilML:LootOnClick(button)
 	end
 
 	-- Check we're not already looting that item
-	for ses, v in ipairs(self.lootTable) do
+	for _, v in ipairs(self.lootTable) do
 		if button.slot == v.lootSlot then
 			addon:Print(L["The loot is already on the list"])
 			return
@@ -1046,7 +1069,10 @@ end
 
 local function registerAndAnnounceBagged(session)
 	local self = RCLootCouncilML
-	local Item = addon.ItemStorage:New(self.lootTable[session].link, "award_later", {bop = addon:IsItemBoP(self.lootTable[session].link)}):Store()
+	local Item = addon.ItemStorage:New(self.lootTable[session].link, "award_later", {
+		bop = addon:IsItemBoP(self.lootTable[session].link),
+		boss = self.lootTable[session].boss
+	}):Store()
 	if not Item.inBags then -- It wasn't found!
 		-- We don't care about onFound, as all we need is to record the time_remaining
 		addon.ItemStorage:WatchForItemInBags(Item, function(Item)
@@ -1284,7 +1310,7 @@ RCLootCouncilML.awardStringsDesc = {
 -- @param owner 		Owner of the item, used if not available in lootTable, i.e. on autoAwards
 function RCLootCouncilML:AnnounceAward(name, link, response, roll, session, changeAward, owner)
 	if db.announceAward then
-		for k,v in pairs(db.awardText) do
+		for _,v in pairs(db.awardText) do
 			local message = v.text
 			for text, func in pairs(self.awardStrings) do
 				-- escapePatternSymbols is defined in FrameXML/ChatFrame.lua that escapes special characters.
@@ -1309,7 +1335,7 @@ end
 --		winner string: The candidate that should receive the auto award.
 function RCLootCouncilML:ShouldAutoAward(item, quality)
 	if not item then return false end
-	local _, _, _, _, _, itemClassID, itemSubClassID = GetItemInfoInstant(item)
+	local _, _, _, _, _, itemClassID = GetItemInfoInstant(item)
 	if itemClassID == 1 then return false end -- Ignore containers
 
 	local boe = addon:IsItemBoE(item)
@@ -1325,7 +1351,7 @@ function RCLootCouncilML:ShouldAutoAward(item, quality)
 		return false
 	end
 	if db.autoAward and quality >= db.autoAwardLowerThreshold and quality <= db.autoAwardUpperThreshold
-	 	and IsEquippableItem(item) then
+		and IsEquippableItem(item) then
 		if db.autoAwardLowerThreshold >= GetLootThreshold() or db.autoAwardLowerThreshold < 2 then
 			if UnitInRaid(db.autoAwardTo) or UnitInParty(db.autoAwardTo) then -- TEST perhaps use self.group?
 				return true, "normal", db.autoAwardTo
@@ -1345,7 +1371,7 @@ end
 -- @param mode: The mode as returned by `:ShouldAutoAward`. Defaults to "normal".
 function RCLootCouncilML:AutoAward(lootIndex, item, quality, name, mode, boss, owner)
 	name = addon:UnitName(name)
-	addon:DebugLog("ML:AutoAward", lootIndex, item, quality, name, reason, boss)
+	addon:DebugLog("ML:AutoAward", lootIndex, item, quality, name, mode, boss, owner)
 	local reason = mode == "boe" and db.autoAwardBoEReason or db.autoAwardReason
 
 	if addon.lootMethod == "personalloot" then -- Normal restrictions doesn't apply here
@@ -1389,6 +1415,7 @@ local history_table = {}
 local historyCounter = 0 -- Used to generate history table entry unique id
 -- REVIEW Updated with recent changes in v2.9+.
 -- This should be refactored in v3.0 as several of the sources are no longer viable, and were ment to be used with ML.
+-- v2.19.0: Boss is included in lootTable, but kept as arg for backwards compatibility.
 function RCLootCouncilML:TrackAndLogLoot(winner, link, responseID, boss, reason, session, candData, owner)
 	if reason and not reason.log then return end -- Reason says don't log
 	if not (db.sendHistory or db.enableHistory) then return end -- No reason to do stuff when we won't use it
@@ -1397,6 +1424,12 @@ function RCLootCouncilML:TrackAndLogLoot(winner, link, responseID, boss, reason,
 	local typeCode = self.lootTable[session] and self.lootTable[session].typeCode
 	local response = addon:GetResponse(typeCode or equipLoc, responseID)
 	local instanceName, _, difficultyID, difficultyName, _,_,_,mapID, groupSize = GetInstanceInfo()
+	-- Check if the item has a specific boss associated
+	if self.lootTable[session] and self.lootTable[session].bagged and self.lootTable[session].bagged.args.boss then
+		boss = self.lootTable[session].bagged.args.boss
+	elseif self.lootTable[session] and self.lootTable[session].boss then
+		boss = self.lootTable[session].boss
+	end
 	addon:Debug("ML:TrackAndLogLoot()", winner, link, responseID, boss, reason, session, candData)
 	history_table["lootWon"] 		= link
 	history_table["date"] 			= date("%d/%m/%y")
@@ -1481,7 +1514,7 @@ function RCLootCouncilML:Test(items)
 	-- We must send candidates now, since we can't wait the normal 10 secs
 	addon:SendCommand("group", "candidates", self.candidates)
 	-- Add the items
-	for session, iName in ipairs(items) do
+	for _, iName in ipairs(items) do
 		self:AddItem(iName)
 	end
 	if db.autoStart then
@@ -1534,7 +1567,7 @@ function RCLootCouncilML:GetItemsFromMessage(msg, sender, retryCount)
 	if not arg1 then return end -- No response or item link
 
 	-- Set some locals
-	local item1, item2, isTier, isRelic, diff
+	local item1, item2, diff
 	local response = 1
 	if arg1:find("|Hitem:") then -- they didn't give a response
 		item1, item2 = arg1, arg2
@@ -1585,8 +1618,6 @@ function RCLootCouncilML:GetItemsFromMessage(msg, sender, retryCount)
 		diff = diff,
 		note = L["Auto extracted from whisper"],
 		response = response,
-		isTier = isTier,
-		isRelic = isRelic,
 	}
 
 	local count = 0
@@ -1645,7 +1676,7 @@ function RCLootCouncilML.AwardPopupOnClickYesCallback(awarded, session, winner, 
 		if oldHistory and oldHistory.id then -- Reaward, clear the old history entry
 			RCLootCouncilML:UnTrackAndLogLoot(oldHistory.id)
 		end
-		RCLootCouncilML.lootTable[session].history = RCLootCouncilML:TrackAndLogLoot(data.winner, data.link, data.responseID, addon.bossName, data.reason, session, data)
+		RCLootCouncilML.lootTable[session].history = RCLootCouncilML:TrackAndLogLoot(data.winner, data.link, data.responseID, data.boss, data.reason, session, data)
 	end
 end
 
@@ -1708,7 +1739,7 @@ end
 local function GetItemStatsSum(link)
 	local stats = GetItemStats(link)
 	local sum = 0
-	for stats, value in pairs(stats or {}) do
+	for _, value in pairs(stats or {}) do
 		sum = sum + value
 	end
 	return sum

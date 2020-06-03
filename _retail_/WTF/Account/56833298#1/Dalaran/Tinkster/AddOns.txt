@@ -11,3 +11,12 @@ ElvUI_CustomTweaks: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 ElvUI_OptionsUI: enabled
+AAP-Core: disabled
+AAP-Vanilla: disabled
+AAP-TBC-WotLK: disabled
+AAP-Cata-MoP: disabled
+AAP-WoD: disabled
+AAP-Legion: disabled
+AAP-BfA: disabled
+Azeroth Auto Pilot: disabled
+Leatrix_Plus: disabled

@@ -42,10 +42,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[40643] = {
@@ -53,16 +53,20 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10  ", -- [1]
+				"2/10 Fresh Star Moss", -- [1]
+			},
+		},
+		[56490] = {
+			["title"] = "Restless Dead",
+			["objectives"] = {
 			},
 		},
 		[44989] = {
@@ -77,10 +81,22 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[50603] = {
+			["title"] = "Voldunai",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
 		[31891] = {
@@ -93,28 +109,16 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
-			},
-		},
-		[50606] = {
-			["title"] = "Horde War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[51421] = {
-			["title"] = "Shiver Me Timbers",
-			["objectives"] = {
-				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 		[47105] = {
@@ -123,9 +127,10 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
+		[51421] = {
+			["title"] = "Shiver Me Timbers",
 			["objectives"] = {
+				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
 			},
 		},
 	},
