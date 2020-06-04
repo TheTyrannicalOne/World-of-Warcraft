@@ -1,7 +1,6 @@
 # Hekili
 
-## [v8.3.0-06](https://github.com/Hekili/hekili/tree/v8.3.0-06) (2020-06-01)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.3.0-06-beta2...v8.3.0-06)
+## [v8.3.0-07](https://github.com/Hekili/hekili/tree/v8.3.0-07) (2020-06-03)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.3.0-06...v8.3.0-07)
 
-- Arms:  Apply Colossus Smash faster with Warbreaker.  
-    cooldown.colossus\_smash replaced by cooldown.warbreaker when WB is talented.  
+- Give a false 100% value for pet.health\_pct when pet is dead/despawned.  
