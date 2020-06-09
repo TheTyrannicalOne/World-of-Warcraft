@@ -28,4 +28,4 @@ LegionInvasionTimerDB = {
 		},
 	},
 }
-LegionInvasionTime = 1590904834
+LegionInvasionTime = 1591637435

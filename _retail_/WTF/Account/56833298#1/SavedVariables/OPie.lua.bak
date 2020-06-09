@@ -264,10 +264,10 @@ OneRing_Config = {
 					460, -- [2]
 					["sliceToken"] = "ABuejtRGNKt",
 				}, -- [3]
-				["name"] = "Mounts",
+				["limit"] = "Avisar-Dalaran",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Avisar-Dalaran",
+				["name"] = "Mounts",
 			},
 			["Tools"] = {
 				{

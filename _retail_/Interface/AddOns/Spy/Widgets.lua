@@ -13,8 +13,11 @@ function Spy:CreateFrame(Name, Title, Height, Width, ShowFunc, HideFunc)
 	if not Spy.db.profile.InvertSpy then
 		theFrame:SetBackdrop({
 			bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16,
+--			bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 8,			
 			edgeFile = "Interface\\AddOns\\Spy\\Textures\\title-industrial.tga", edgeSize = 32,
+--			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 8,			
 			insets = {left = 0, right = 0, top = 31, bottom = 0},
+--			insets = {left = 0, right = 0, top = 9, bottom = 0},			
 		})
 	else
 		theFrame.Edge = theFrame:CreateTexture(nil, "OVERLAY")	

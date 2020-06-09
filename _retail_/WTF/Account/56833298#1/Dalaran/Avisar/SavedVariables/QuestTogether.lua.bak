@@ -1,22 +1,21 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[52948] = {
-			["title"] = "Call to Arms: Tiragarde Sound",
+		[53761] = {
+			["title"] = "The Pirate's Treasure",
 			["objectives"] = {
-				"0/10 Slay Horde Players", -- [1]
+				"0/1 Pirate's Den found", -- [1]
 			},
 		},
-		[52194] = {
-			["title"] = "What You May Regret",
+		[49926] = {
+			["title"] = "The Road to Corlain",
 			["objectives"] = {
-				"0/1 Speak with Genn Greymane", -- [1]
 			},
 		},
 		[54978] = {
 			["title"] = "Against Overwhelming Odds",
 			["objectives"] = {
-				"0/25 Slay Horde Players", -- [1]
+				"2/25 Slay Horde Players", -- [1]
 			},
 		},
 		[32806] = {
@@ -25,22 +24,16 @@ QuestTogether = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
-			["objectives"] = {
-				"3/12 Pilgrimage Scroll", -- [1]
-			},
-		},
 		[543] = {
 			["title"] = "The Perenolde Tiara",
 			["objectives"] = {
 				"0/1 Perenolde Tiara", -- [1]
 			},
 		},
-		[53295] = {
-			["title"] = "Do Your Part",
+		[52482] = {
+			["title"] = "The Old Bear",
 			["objectives"] = {
-				"0/1 Horde Players slain", -- [1]
+				"0/1 Speak with Ulfar", -- [1]
 			},
 		},
 		[54185] = {
@@ -56,70 +49,37 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[37433] = {
-			["title"] = "Proving Grounds",
-			["objectives"] = {
-				"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
-				"0/1 Complete a Bronze Trial", -- [2]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
-		[51490] = {
-			["title"] = "Border Issues",
-			["objectives"] = {
-				"37.5% Blockade cleared", -- [1]
-			},
-		},
 		[42483] = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
 				"0/1 Steelscale's Fin", -- [1]
 			},
 		},
-		[13413] = {
-			["title"] = "Aces High!",
+		[53888] = {
+			["title"] = "To Anglepoint",
 			["objectives"] = {
-				"1/5 Scalesworn Elites Killed", -- [1]
+				"0/1 Meet Jaina at the canal by Crosswind Commons", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[50533] = {
+			["title"] = "Stick It To 'Em!",
 			["objectives"] = {
-			},
-		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
-			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
-			},
-		},
-		[53075] = {
-			["title"] = "Dueler's Guild",
-			["objectives"] = {
-				"0/1 Speak to a bouncer at the Dueler's Guild.", -- [1]
+				"1/1 Use Greater Control Charm", -- [1]
+				"100% Destroy Witch Forces", -- [2]
+				"1/1 Signal Point reached", -- [3]
+				"1/1 Tell Cleardawn to send signal", -- [4]
 			},
 		},
 		[57743] = {
 			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
+				"100/500 Earn Conquest", -- [1]
 			},
 		},
 		[28405] = {
 			["title"] = "Weapons of Darkness",
 			["objectives"] = {
 				"0/5 Elemental-Imbued Weapon broken", -- [1]
-			},
-		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[56491] = {
@@ -129,15 +89,11 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[53847] = {
-			["title"] = "On Whispered Winds",
+		[51016] = {
+			["title"] = "Seeking More Knowledge",
 			["objectives"] = {
-			},
-		},
-		[52148] = {
-			["title"] = "Freehold: A Pirate's End",
-			["objectives"] = {
-				"0/1 Defeat Harlan Sweete in Freehold", -- [1]
+				"0/1 A Treatise on Anchor Weed", -- [1]
+				"0/1 Gorak Tul slain", -- [2]
 			},
 		},
 		[56119] = {
@@ -146,15 +102,41 @@ QuestTogether = {
 				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
+		[53036] = {
+			["title"] = "A Call to Battle",
+			["objectives"] = {
+				"0/4 Battlegrounds won", -- [1]
+			},
+		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
 			},
 		},
-		[52219] = {
-			["title"] = "Target: Blood Prince Dreven",
+		[48758] = {
+			["title"] = "Disgustingly Damp Flower",
 			["objectives"] = {
-				"0/1 Meet John J. Keeshan", -- [1]
+			},
+		},
+		[56489] = {
+			["title"] = "Restless Dead",
+			["objectives"] = {
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[13413] = {
+			["title"] = "Aces High!",
+			["objectives"] = {
+				"1/5 Scalesworn Elites Killed", -- [1]
+			},
+		},
+		[54184] = {
+			["title"] = "Trouble in Gnomeregan",
+			["objectives"] = {
 			},
 		},
 		[39060] = {
@@ -165,30 +147,28 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[51664] = {
-			["title"] = "Kulett the Ornery",
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
 			["objectives"] = {
-				"0/1 Kulett the Ornery slain", -- [1]
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
-		[52800] = {
-			["title"] = "Tol Dagor: The Ashvane Overseer",
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
-				"0/1 Tol Dagor Master Key", -- [1]
-				"0/1 Overseer Korgus slain", -- [2]
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[36615] = {
-			["title"] = "My Very Own Castle",
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
 			["objectives"] = {
-				"172/2000 Garrison Resources gathered (Optional)", -- [1]
-				"0/1 Upgrade your garrison to Tier 3", -- [2]
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[48902] = {
-			["title"] = "Monstrous Energy",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
-				"5/6 Pulsating Extract", -- [1]
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[31891] = {
@@ -201,17 +181,18 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[36615] = {
+			["title"] = "My Very Own Castle",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"172/2000 Garrison Resources gathered (Optional)", -- [1]
+				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

@@ -12,12 +12,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[53989] = {
-			["title"] = "Hope",
+		[50173] = {
+			["title"] = "Precious Metals",
 			["objectives"] = {
-				"0/1  ", -- [1]
-				"0/1  ", -- [2]
-				"0/1  ", -- [3]
+				"0/10  ", -- [1]
 			},
 		},
 		[13413] = {
@@ -26,16 +24,10 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[52194] = {
-			["title"] = "What You May Regret",
+		[57743] = {
+			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"0/1 Speak with Genn Greymane", -- [1]
-			},
-		},
-		[54041] = {
-			["title"] = "No Survivors",
-			["objectives"] = {
-				"0/8 Veiled Deathstalker slain", -- [1]
+				"100/500 Earn Conquest", -- [1]
 			},
 		},
 		[54180] = {
@@ -43,29 +35,27 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
+		[50151] = {
+			["title"] = "A Steady Ballast",
 			["objectives"] = {
-				"50/500 Earn Conquest", -- [1]
+				"0/1 Angus Ballaster found", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[53761] = {
+			["title"] = "The Pirate's Treasure",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/1 Pirate's Den found", -- [1]
 			},
 		},
-		[49223] = {
-			["title"] = "The Long Con",
+		[53036] = {
+			["title"] = "A Call to Battle",
 			["objectives"] = {
-				"0/1 Carentan slain", -- [1]
+				"0/4 Battlegrounds won", -- [1]
 			},
 		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
+		[54184] = {
+			["title"] = "Trouble in Gnomeregan",
 			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[54185] = {
@@ -75,16 +65,18 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[51016] = {
+			["title"] = "Seeking More Knowledge",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"0/1 A Treatise on Anchor Weed", -- [1]
+				"0/1 Gorak Tul slain", -- [2]
 			},
 		},
-		[51490] = {
-			["title"] = "Border Issues",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
-				"37.5% Blockade cleared", -- [1]
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[39060] = {
@@ -95,22 +87,22 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[54995] = {
-			["title"] = "A Savage Path Through Time",
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
-				"0/5 Timewalking dungeons completed", -- [1]
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[52148] = {
-			["title"] = "Freehold: A Pirate's End",
+		[56489] = {
+			["title"] = "Restless Dead",
 			["objectives"] = {
-				"0/1 Defeat Harlan Sweete in Freehold", -- [1]
 			},
 		},
-		[543] = {
-			["title"] = "The Perenolde Tiara",
+		[52486] = {
+			["title"] = "Waycrest Manor: Draining the Heartsbane",
 			["objectives"] = {
-				"0/1 Perenolde Tiara", -- [1]
+				"0/1 Korvash's Skull empowered", -- [1]
+				"0/1 Gorak Tul defeated", -- [2]
 			},
 		},
 		[36615] = {
@@ -126,23 +118,22 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[53295] = {
-			["title"] = "Do Your Part",
+		[543] = {
+			["title"] = "The Perenolde Tiara",
 			["objectives"] = {
-				"0/1 Horde Players slain", -- [1]
+				"0/1 Perenolde Tiara", -- [1]
 			},
 		},
-		[52800] = {
-			["title"] = "Tol Dagor: The Ashvane Overseer",
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
 			["objectives"] = {
-				"0/1 Tol Dagor Master Key", -- [1]
-				"0/1 Overseer Korgus slain", -- [2]
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[56119] = {
@@ -157,22 +148,22 @@ QuestTogether = {
 				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[52948] = {
-			["title"] = "Call to Arms: Tiragarde Sound",
-			["objectives"] = {
-				"0/10 Slay Horde Players", -- [1]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
 		[42483] = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
 				"0/1 Steelscale's Fin", -- [1]
+			},
+		},
+		[48755] = {
+			["title"] = "Pollen Punching",
+			["objectives"] = {
+				"0/12 Heaping Handful of Damp Pollen", -- [1]
+			},
+		},
+		[50605] = {
+			["title"] = "Alliance War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[31891] = {
@@ -188,27 +179,20 @@ QuestTogether = {
 		[54978] = {
 			["title"] = "Against Overwhelming Odds",
 			["objectives"] = {
-				"0/25 Slay Horde Players", -- [1]
+				"2/25 Slay Horde Players", -- [1]
 			},
 		},
-		[37433] = {
-			["title"] = "Proving Grounds",
+		[53888] = {
+			["title"] = "To Anglepoint",
 			["objectives"] = {
-				"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
-				"0/1 Complete a Bronze Trial", -- [2]
-			},
-		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
-			["objectives"] = {
-				"5/12 Pilgrimage Scroll", -- [1]
+				"0/1 Meet Jaina at the canal by Crosswind Commons", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

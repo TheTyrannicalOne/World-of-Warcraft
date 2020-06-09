@@ -5,40 +5,40 @@ PawnOptions = {
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 170527,
-			["Level"] = 385,
-			["Link"] = "|cffa335ee|Hitem:170527::::::::120:70::11:3:1577:4786:5414:::|h[7th Legionnaire's Headpiece]|h|r",
+			["ID"] = 159430,
+			["Level"] = 405,
+			["Link"] = "|cff0070dd|Hitem:159430::::::::120:70::1:5:4817:1572:4785:6258:4775:::|h[Helm of Abyssal Malevolence]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 298,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:4935:1490:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 324,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:4935:1516:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122355,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122355::::::::119:70:::1:5805:::|h[Polished Spaulders of Valor]|h|r",
+			["ID"] = 158060,
+			["Level"] = 330,
+			["Link"] = "|cff0070dd|Hitem:158060::::::::120:70::27:4:1517:4785:5439:4775:::|h[Shoalbreach Pauldrons]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 122381,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122381::::::::119:70:::1:5805:::|h[Polished Breastplate of Valor]|h|r",
+			["ID"] = 160890,
+			["Level"] = 300,
+			["Link"] = "|cff0070dd|Hitem:160890::::::::120:70::26:3:1467:4785:4775:::|h[Waycrest Militia Battleplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 158288,
-			["Level"] = 290,
-			["Link"] = "|cff1eff00|Hitem:158288::::::::120:70:512:11:1:4793:120:::|h[Sea Raider's Buckle]|h|r",
+			["ID"] = 159426,
+			["Level"] = 400,
+			["Link"] = "|cff0070dd|Hitem:159426::::::::120:70::1:6:4777:4802:6516:6513:1572:4785:::|h[Belt of the Unrelenting Gale]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122251,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122251::::::::119:70:::1:5805:::|h[Polished Legplates of Valor]|h|r",
+			["ID"] = 159419,
+			["Level"] = 400,
+			["Link"] = "|cff0070dd|Hitem:159419::::::::120:70::1:5:4777:6516:6515:1572:4785:::|h[Ironhull's Reinforced Legplates]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 158238,
-			["Level"] = 286,
-			["Link"] = "|cff1eff00|Hitem:158238::::::::120:70:512:11:1:4790:120:::|h[Sea Raider's Footguards]|h|r",
+			["ID"] = 158023,
+			["Level"] = 380,
+			["Link"] = "|cff0070dd|Hitem:158023::::::::120:70::26:5:4803:6516:6515:1572:4785:::|h[Bleakweald Stompers]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 160100,
@@ -46,21 +46,21 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:160100::::::::120:70:512:11:1:4790:120:::|h[Sea Raider's Shackles]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 172822,
-			["Level"] = 390,
-			["Link"] = "|cff0070dd|Hitem:172822::::::::120:70::47:7:4802:6578:6579:6540:6515:1502:4785:::|h[Corrupted Aspirant's Plate Gauntlets]|h|r",
+			["ID"] = 159421,
+			["Level"] = 400,
+			["Link"] = "|cff0070dd|Hitem:159421::::::::120:70::1:5:4777:6516:6513:1572:4785:::|h[Gauntlets of Total Subservience]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 122529,
-			["Level"] = 284,
+			["ID"] = 158314,
+			["Level"] = 400,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::119:70:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158314::::::::120:70::1:5:4777:6516:6515:1572:4785:::|h[Seal of Questionable Loyalties]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 128169,
-			["Level"] = 284,
+			["ID"] = 155236,
+			["Level"] = 290,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::119:70:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff1eff00|Hitem:155236::::::::120:70:512:11:1:4793:120:::|h[Stormwarden Seal]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 172846,
@@ -75,15 +75,20 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158220::::::::120:70:512:11:2:4790:4791:120:::|h[Cooper's Horseshoe]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 158229,
-			["Level"] = 286,
-			["Link"] = "|cff1eff00|Hitem:158229::::::::120:70:512:11:1:4790:120:::|h[Lucktail Riding Cloak]|h|r",
+			["ID"] = 155232,
+			["Level"] = 290,
+			["Link"] = "|cff1eff00|Hitem:155232::::::::120:70:512:11:1:4793:120:::|h[Proudmoore Battalion Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 163890,
 			["Level"] = 370,
 			["Link"] = "|cffa335ee|Hitem:163890::::::::120:70::30:2:1562:4786:::|h[7th Legionnaire's Claymore]|h|r",
 		}, -- [16]
+		{
+			["ID"] = 117413,
+			["Level"] = 136,
+			["Link"] = "|cff0070dd|Hitem:117413::::::::120:70::14::::|h[Stormwind Shield]|h|r",
+		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {

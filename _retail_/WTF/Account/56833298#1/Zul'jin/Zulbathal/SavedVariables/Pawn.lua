@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0326,
+	["LastVersion"] = 2.0328,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -13,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:102::11:4:4932:4933:4935:1484:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122359,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122359::::::::119:102:::1:5805:::|h[Preened Ironfeather Shoulders]|h|r",
+			["ID"] = 173841,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173841::::::::120:102::14:3:1472:4785:6259:::|h[Mantle of the Insatiable Maw]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -24,9 +24,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122382::::::::119:102:::1:5805:::|h[Preened Ironfeather Breastplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 155266,
-			["Level"] = 209,
-			["Link"] = "|cff1eff00|Hitem:155266::::::::111:102:512:11:1:4787:111:::|h[Jambani Waistwrap]|h|r",
+			["ID"] = 173512,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173512::::::::120:102::14:4:6412:6515:1467:4785:::|h[Grasp of the Insatiable Maw]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122255,

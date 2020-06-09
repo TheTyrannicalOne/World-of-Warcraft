@@ -4,7 +4,7 @@ QuestTogether = {
 		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4  ", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[42234] = {
@@ -17,7 +17,7 @@ QuestTogether = {
 			["title"] = "Antoran High Command",
 			["objectives"] = {
 				"Defeat the Antoran High Command in Antorus, The Burning Throne", -- [1]
-				"1/1  ", -- [2]
+				"1/1 Azeroth Invasion Plans", -- [2]
 			},
 		},
 		[56356] = {
@@ -66,13 +66,13 @@ QuestTogether = {
 		[49133] = {
 			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4  ", -- [1]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 		[13721] = {
 			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-				"10/25  ", -- [1]
+				"10/25 Valiant's Seal", -- [1]
 			},
 		},
 		[49015] = {
@@ -84,7 +84,7 @@ QuestTogether = {
 		[57396] = {
 			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
-				"0/4  ", -- [1]
+				"0/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
 		[54185] = {
@@ -103,7 +103,7 @@ QuestTogether = {
 		[57276] = {
 			["title"] = "Maintaining Focus",
 			["objectives"] = {
-				"5/20  ", -- [1]
+				"5/20 Shred of Insanity", -- [1]
 			},
 		},
 		[50602] = {
@@ -112,22 +112,16 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[51045] = {
-			["title"] = "Supplies Needed: Calcified Bone",
-			["objectives"] = {
-				"0/15  ", -- [1]
-			},
-		},
 		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4  ", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[57743] = {
@@ -159,25 +153,12 @@ QuestTogether = {
 			["title"] = "Tomb of Sargeras: Free The Tormented",
 			["objectives"] = {
 				"Defeat The Desolate Host", -- [1]
-				"1/1  ", -- [2]
+				"1/1 Worshipper's Scrawlings", -- [2]
 			},
 		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
-			},
-		},
-		[48639] = {
-			["title"] = "Army of the Light",
-			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
-		[56137] = {
-			["title"] = "Heroic Warfront: The Battle for Stromgarde",
-			["objectives"] = {
-				"0/1 View the War Table in Zuldazar (Optional)", -- [1]
-				"0/1 Defeat the Alliance at the Battle for Stromgarde", -- [2]
 			},
 		},
 		[56491] = {
@@ -187,32 +168,11 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[54453] = {
-			["title"] = "Supplies from Magni",
+		[56137] = {
+			["title"] = "Heroic Warfront: The Battle for Stromgarde",
 			["objectives"] = {
-			},
-		},
-		[54455] = {
-			["title"] = "Supplies from the Honorbound",
-			["objectives"] = {
-			},
-		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4  ", -- [1]
-			},
-		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
-			["objectives"] = {
-				"0/20  ", -- [1]
-			},
-		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4  ", -- [1]
+				"0/1 View the War Table in Zuldazar (Optional)", -- [1]
+				"0/1 Defeat the Alliance at the Battle for Stromgarde", -- [2]
 			},
 		},
 		[31891] = {
@@ -225,6 +185,40 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[54453] = {
+			["title"] = "Supplies from Magni",
+			["objectives"] = {
+			},
+		},
+		[54455] = {
+			["title"] = "Supplies from the Honorbound",
+			["objectives"] = {
+			},
+		},
+		[42170] = {
+			["title"] = "The Dreamweavers",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"0/20 Eternal Ornament", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
 		[45172] = {
 			["title"] = "To Battle!",
 			["objectives"] = {
@@ -234,8 +228,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

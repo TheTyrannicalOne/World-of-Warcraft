@@ -1,29 +1,33 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[25998] = {
-			["title"] = "Get to the Airfield",
+		[27465] = {
+			["title"] = "Argent Call: The Noxious Glade",
+			["objectives"] = {
+				"0/16 Noxious Glade Scourge slain", -- [1]
+				"0/8 Noxious Glade Cultists slain", -- [2]
+			},
+		},
+		[27919] = {
+			["title"] = "Onward to the Blasted Lands",
 			["objectives"] = {
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[27458] = {
+			["title"] = "Smokey and the Bandage",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/1  ", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[27762] = {
+			["title"] = "Fuselight, Ho!",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[28756] = {
+			["title"] = "Aberrations of Bone",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1   slain", -- [1]
 			},
 		},
 		[31891] = {
@@ -36,11 +40,64 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
+			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
+			},
+		},
+		[27915] = {
+			["title"] = "The Heart of the Temple",
+			["objectives"] = {
+			},
+		},
+		[27467] = {
+			["title"] = "Buried Blades",
+			["objectives"] = {
+				"0/10 Blades buried", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[49860] = {
+			["title"] = "Adventure Calls",
+			["objectives"] = {
+				"0/1 Select your next assignment", -- [1]
+			},
+		},
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+		[25998] = {
+			["title"] = "Get to the Airfield",
+			["objectives"] = {
+			},
+		},
+		[26137] = {
+			["title"] = "Checking on the Boys",
+			["objectives"] = {
+			},
+		},
+		[28755] = {
+			["title"] = "Annals of the Silver Hand",
+			["objectives"] = {
+				"0/1  ", -- [1]
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

@@ -1,7 +1,5 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
 	["Zul'jin"] = {
 		["Vancard"] = {
 			["class"] = "MAGE",
@@ -53,8 +51,8 @@ MasterPlanAG = {
 	},
 	["Dalaran"] = {
 		["Ruffinton"] = {
-			["faction"] = "Alliance",
 			["class"] = "ROGUE",
+			["faction"] = "Alliance",
 		},
 		["Avisar"] = {
 			["summary"] = {
@@ -69,16 +67,16 @@ MasterPlanAG = {
 			["lastCacheTime"] = 1590520104,
 		},
 		["Thorinbane"] = {
-			["class"] = "WARRIOR",
 			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
 		},
 		["Tinkster"] = {
 			["class"] = "WARLOCK",
 			["faction"] = "Alliance",
 		},
 		["Darnastris"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 	},
 	["Argent Dawn"] = {
@@ -113,5 +111,7 @@ MasterPlanAG = {
 			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

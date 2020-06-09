@@ -73,14 +73,14 @@ QuestTogether = {
 		[25616] = {
 			["title"] = "Hellscream's Legacy",
 			["objectives"] = {
-				"0/10 Krom'gar Incinerator slain", -- [1]
+				"0/10   slain", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

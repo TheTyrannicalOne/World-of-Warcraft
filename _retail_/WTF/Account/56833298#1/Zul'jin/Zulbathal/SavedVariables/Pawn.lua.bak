@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0326,
+	["LastVersion"] = 2.0328,
 	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -41,9 +41,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173496::::::::120:102::14:4:6412:6515:1467:4785:::|h[Footwraps of the Insatiable Maw]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 158447,
-			["Level"] = 272,
-			["Link"] = "|cff1eff00|Hitem:158447::::::::118:102:512:11:1:4787:118:::|h[Jambani Armguards]|h|r",
+			["ID"] = 173480,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173480::::::::120:102::14:4:6412:6513:1467:4785:::|h[Bindings of the Insatiable Maw]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 172790,
