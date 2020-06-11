@@ -22,7 +22,7 @@ KalielsTrackerDB = {
 		["Shaewong - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Goramor - Runetotem"] = {
+		["Shimzo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Gillbourn - Runetotem"] = {
@@ -73,7 +73,7 @@ KalielsTrackerDB = {
 		["Migimong - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Goramor - Runetotem"] = {
 			["collapsed"] = true,
 		},
 		["Narisaric - Dalaran"] = {

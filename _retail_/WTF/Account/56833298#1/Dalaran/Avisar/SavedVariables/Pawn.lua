@@ -11,19 +11,19 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 324,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:4935:1516:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 340,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:4935:1532:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 158060,
-			["Level"] = 330,
-			["Link"] = "|cff0070dd|Hitem:158060::::::::120:70::27:4:1517:4785:5439:4775:::|h[Shoalbreach Pauldrons]|h|r",
+			["ID"] = 159455,
+			["Level"] = 405,
+			["Link"] = "|cff0070dd|Hitem:159455::::::::120:70::1:5:4817:1572:4785:6259:4775:::|h[Pauldrons of the Horned Horror]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 160890,
-			["Level"] = 300,
-			["Link"] = "|cff0070dd|Hitem:160890::::::::120:70::26:3:1467:4785:4775:::|h[Waycrest Militia Battleplate]|h|r",
+			["ID"] = 159416,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:159416::::::::120:70::2:5:4818:1587:4785:6257:4775:::|h[Harpooner's Plate Cuirass]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 159426,
@@ -41,9 +41,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158023::::::::120:70::26:5:4803:6516:6515:1572:4785:::|h[Bleakweald Stompers]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 160100,
-			["Level"] = 286,
-			["Link"] = "|cff1eff00|Hitem:160100::::::::120:70:512:11:1:4790:120:::|h[Sea Raider's Shackles]|h|r",
+			["ID"] = 158630,
+			["Level"] = 290,
+			["Link"] = "|cff1eff00|Hitem:158630::::::::120:70:512:11:1:4793:120:::|h[Waycrest Militia Armplates]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 159421,
@@ -51,16 +51,16 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159421::::::::120:70::1:5:4777:6516:6513:1572:4785:::|h[Gauntlets of Total Subservience]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 158314,
-			["Level"] = 400,
+			["ID"] = 158362,
+			["Level"] = 430,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff0070dd|Hitem:158314::::::::120:70::1:5:4777:6516:6515:1572:4785:::|h[Seal of Questionable Loyalties]|h|r",
+			["Link"] = "|cffa335ee|Hitem:158362::::::::120:70::23:5:4779:6516:6513:1602:4786:::|h[Lord Waycrest's Signet]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 155236,
-			["Level"] = 290,
+			["ID"] = 159461,
+			["Level"] = 415,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff1eff00|Hitem:155236::::::::120:70:512:11:1:4793:120:::|h[Stormwarden Seal]|h|r",
+			["Link"] = "|cff0070dd|Hitem:159461::::::::120:70::2:5:4778:6516:6513:1587:4785:::|h[Band of the Ancient Dredger]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 172846,

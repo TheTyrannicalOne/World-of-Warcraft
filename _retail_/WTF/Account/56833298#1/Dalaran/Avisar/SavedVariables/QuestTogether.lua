@@ -12,12 +12,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50173] = {
-			["title"] = "Precious Metals",
-			["objectives"] = {
-				"0/10  ", -- [1]
-			},
-		},
 		[13413] = {
 			["title"] = "Aces High!",
 			["objectives"] = {
@@ -35,22 +29,22 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50151] = {
-			["title"] = "A Steady Ballast",
+		[54202] = {
+			["title"] = "Calibrate the Core",
 			["objectives"] = {
-				"0/1 Angus Ballaster found", -- [1]
+				"0/10 Embiggifier Core calibrated", -- [1]
 			},
 		},
-		[53761] = {
-			["title"] = "The Pirate's Treasure",
+		[53128] = {
+			["title"] = "The Lord Admiral's Lament",
 			["objectives"] = {
-				"0/1 Pirate's Den found", -- [1]
+				"Take the Illegible Correspondence to Kayla Mills in Stormwind City.", -- [1]
 			},
 		},
-		[53036] = {
-			["title"] = "A Call to Battle",
+		[543] = {
+			["title"] = "The Perenolde Tiara",
 			["objectives"] = {
-				"0/4 Battlegrounds won", -- [1]
+				"0/1 Perenolde Tiara", -- [1]
 			},
 		},
 		[54184] = {
@@ -65,11 +59,10 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[51016] = {
-			["title"] = "Seeking More Knowledge",
+		[54201] = {
+			["title"] = "Fit for Grong",
 			["objectives"] = {
-				"0/1 A Treatise on Anchor Weed", -- [1]
-				"0/1 Gorak Tul slain", -- [2]
+				"0/12 Azerite Infused Ore", -- [1]
 			},
 		},
 		[56491] = {
@@ -79,30 +72,22 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[39060] = {
-			["title"] = "Combustible Contagion",
+		[54126] = {
+			["title"] = "Twist the Knife",
 			["objectives"] = {
-				"0/1 Northern Plague Cache Burned", -- [1]
-				"0/1 Eastern Plague Cache Burned", -- [2]
-				"1/1 Western Plague Cache Burned", -- [3]
+				"0/1 Xal'atath found", -- [1]
+			},
+		},
+		[48755] = {
+			["title"] = "Pollen Punching",
+			["objectives"] = {
+				"5/12 Heaping Handful of Damp Pollen", -- [1]
 			},
 		},
 		[53436] = {
 			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
-		[56489] = {
-			["title"] = "Restless Dead",
-			["objectives"] = {
-			},
-		},
-		[52486] = {
-			["title"] = "Waycrest Manor: Draining the Heartsbane",
-			["objectives"] = {
-				"0/1 Korvash's Skull empowered", -- [1]
-				"0/1 Gorak Tul defeated", -- [2]
 			},
 		},
 		[36615] = {
@@ -118,10 +103,12 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[543] = {
-			["title"] = "The Perenolde Tiara",
+		[39060] = {
+			["title"] = "Combustible Contagion",
 			["objectives"] = {
-				"0/1 Perenolde Tiara", -- [1]
+				"0/1 Northern Plague Cache Burned", -- [1]
+				"0/1 Eastern Plague Cache Burned", -- [2]
+				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
 		[50599] = {
@@ -136,10 +123,10 @@ QuestTogether = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
-		[56119] = {
-			["title"] = "The Waveblade Ankoan",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -152,18 +139,6 @@ QuestTogether = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
 				"0/1 Steelscale's Fin", -- [1]
-			},
-		},
-		[48755] = {
-			["title"] = "Pollen Punching",
-			["objectives"] = {
-				"0/12 Heaping Handful of Damp Pollen", -- [1]
-			},
-		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[31891] = {
@@ -182,17 +157,22 @@ QuestTogether = {
 				"2/25 Slay Horde Players", -- [1]
 			},
 		},
-		[53888] = {
-			["title"] = "To Anglepoint",
+		[56489] = {
+			["title"] = "Restless Dead",
 			["objectives"] = {
-				"0/1 Meet Jaina at the canal by Crosswind Commons", -- [1]
+			},
+		},
+		[50600] = {
+			["title"] = "Order of Embers",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Drustvar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

@@ -12,8 +12,8 @@ HandyNotes_HallowsEndDB = {
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 	},
 	["profiles"] = {

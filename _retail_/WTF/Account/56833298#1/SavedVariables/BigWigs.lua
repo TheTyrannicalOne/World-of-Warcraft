@@ -19,9 +19,21 @@ BigWigs3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
+		["BigWigs_Bosses_Hadal Darkfathom"] = {
+		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Bosses_Viq'Goth"] = {
+		},
 		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Bosses_Dread Captain Lockwood"] = {
+		},
+		["BigWigs_Bosses_Chopper Redhook"] = {
+		},
+		["BigWigs_Bosses_Siege of Boralus Trash"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -33,15 +45,15 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.0000610351563,
-					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
 					["BigWigsAnchor_height"] = 15.99994277954102,
+					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 				},
 			},
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
+		["BigWigs_Bosses_Azurethos, The Winged Typhoon"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_Super Emphasize"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
@@ -50,16 +62,16 @@ BigWigs3DB = {
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["height"] = 120.0000076293945,
 					["width"] = 139.9999847412109,
+					["height"] = 120.0000076293945,
 				},
 			},
 		},
 		["BigWigs_Plugins_Messages"] = {
 		},
-		["BigWigs_Plugins_Pull"] = {
-		},
 		["BigWigs_Plugins_Wipe"] = {
+		},
+		["BigWigs_Plugins_Pull"] = {
 		},
 	},
 	["wipe80"] = true,
@@ -124,9 +136,9 @@ BigWigsStatsDB = {
 				["kills"] = 5,
 			},
 		},
-		[851] = {
+		[866] = {
 			["mythic"] = {
-				["best"] = 4.838999999999942,
+				["best"] = 8.614000000001397,
 				["kills"] = 5,
 			},
 		},
@@ -163,9 +175,9 @@ BigWigsStatsDB = {
 				["kills"] = 5,
 			},
 		},
-		[866] = {
+		[851] = {
 			["mythic"] = {
-				["best"] = 8.614000000001397,
+				["best"] = 4.838999999999942,
 				["kills"] = 5,
 			},
 		},

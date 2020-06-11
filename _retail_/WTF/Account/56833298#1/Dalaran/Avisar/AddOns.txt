@@ -22,3 +22,4 @@ WeakAurasArchive: enabled
 ElvUI_OptionsUI: enabled
 BigWigs_CommonAuras: enabled
 LittleWigs: enabled
+BigWigs_Azeroth: enabled
