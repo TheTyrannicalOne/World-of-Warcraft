@@ -5,14 +5,14 @@ PawnOptions = {
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 159430,
-			["Level"] = 405,
-			["Link"] = "|cff0070dd|Hitem:159430::::::::120:70::1:5:4817:1572:4785:6258:4775:::|h[Helm of Abyssal Malevolence]|h|r",
+			["ID"] = 157897,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:157897::::::::120:70::25:4:1607:4785:6258:4775:::|h[Bone-Fetished Faceguard]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 340,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:4935:1532:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 441,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:6316:1578:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 159455,
@@ -26,9 +26,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159416::::::::120:70::2:5:4818:1587:4785:6257:4775:::|h[Harpooner's Plate Cuirass]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 159426,
-			["Level"] = 400,
-			["Link"] = "|cff0070dd|Hitem:159426::::::::120:70::1:6:4777:4802:6516:6513:1572:4785:::|h[Belt of the Unrelenting Gale]|h|r",
+			["ID"] = 157997,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:157997::::::::120:70::27:5:4803:6516:6515:1607:4785:::|h[Harbormaster Greatbelt]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 159419,
@@ -36,19 +36,19 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159419::::::::120:70::1:5:4777:6516:6515:1572:4785:::|h[Ironhull's Reinforced Legplates]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 158023,
-			["Level"] = 380,
-			["Link"] = "|cff0070dd|Hitem:158023::::::::120:70::26:5:4803:6516:6515:1572:4785:::|h[Bleakweald Stompers]|h|r",
+			["ID"] = 158055,
+			["Level"] = 405,
+			["Link"] = "|cff0070dd|Hitem:158055::::::::120:70::26:5:4803:6516:6513:1597:4785:::|h[Shoalbreach Treads]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 158630,
-			["Level"] = 290,
-			["Link"] = "|cff1eff00|Hitem:158630::::::::120:70:512:11:1:4793:120:::|h[Waycrest Militia Armplates]|h|r",
+			["ID"] = 160474,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:160474::::::::120:70::26:3:4803:1602:4785:::|h[Vicemaul Wristpinchers]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 159421,
-			["Level"] = 400,
-			["Link"] = "|cff0070dd|Hitem:159421::::::::120:70::1:5:4777:6516:6513:1572:4785:::|h[Gauntlets of Total Subservience]|h|r",
+			["ID"] = 157928,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:157928::::::::120:70::26:5:4803:6516:6515:1607:4785:::|h[Battlegloves of Rezan's Bladeguard]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 158362,
@@ -57,22 +57,22 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:158362::::::::120:70::23:5:4779:6516:6513:1602:4786:::|h[Lord Waycrest's Signet]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 159461,
-			["Level"] = 415,
+			["ID"] = 158151,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:159461::::::::120:70::2:5:4778:6516:6513:1587:4785:::|h[Band of the Ancient Dredger]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158151::::::::120:70::27:7:4803:6578:6579:6539:6513:1612:4785:::|h[Zandalari Band]|h|r",
 		}, -- [12]
+		{
+			["ID"] = 158163,
+			["Level"] = 415,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff0070dd|Hitem:158163::::::::120:70::27:4:4803:6513:1607:4785:::|h[First Mate's Spyglass]|h|r",
+		}, -- [13]
 		{
 			["ID"] = 172846,
 			["Level"] = 390,
-			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff0070dd|Hitem:172846::::::::120:70::47:3:6513:1502:4785:::|h[Corrupted Aspirant's Medallion]|h|r",
-		}, -- [13]
-		{
-			["ID"] = 158220,
-			["Level"] = 294,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:158220::::::::120:70:512:11:2:4790:4791:120:::|h[Cooper's Horseshoe]|h|r",
+			["Link"] = "|cff0070dd|Hitem:172846::::::::120:70::47:3:6513:1502:4785:::|h[Corrupted Aspirant's Medallion]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 155232,

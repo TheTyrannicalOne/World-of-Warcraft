@@ -11,14 +11,14 @@ FishingBuddy_Info = {
 	},
 	["KnownZones"] = {
 	},
-	["Version"] = 19500,
+	["Settings"] = {
+		["CreateMacro"] = true,
+	},
 	["FishInfo2"] = 0,
 	["SubZones"] = {
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
 	},
-	["Settings"] = {
-		["CreateMacro"] = true,
-	},
+	["Version"] = 19500,
 }

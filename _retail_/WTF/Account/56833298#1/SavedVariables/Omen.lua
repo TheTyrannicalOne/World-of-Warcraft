@@ -19,12 +19,12 @@ Omen3DB = {
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
-			["PositionW"] = 258.9998168945313,
-			["PositionH"] = 195.9998779296875,
-			["VGrip2"] = 148.92482654198,
+			["PositionW"] = 262.9996948242188,
+			["PositionH"] = 199.9998168945313,
+			["VGrip2"] = 151.2247552987265,
 			["PositionY"] = 219.0002288818359,
 			["Shown"] = false,
-			["VGrip1"] = 110.0748717918983,
+			["VGrip1"] = 111.7748191338414,
 			["PositionX"] = 1750.499267578125,
 		},
 		["Thorinbane - Dalaran"] = {

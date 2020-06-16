@@ -4,2815 +4,2817 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/cw Willderhide-Stormrage all good thanks ", -- [1]
-		"/dance", -- [2]
-		"/s idk", -- [3]
-		"/fishingbuddy", -- [4]
-		"/skada toggle", -- [5]
-		"/ltp", -- [6]
-		"/s got to beat it all the way through i think", -- [7]
+		"/skada toggle", -- [2]
+		"/opie", -- [3]
+		"/s then chest?", -- [4]
+		"/dance", -- [5]
+		"/sleep", -- [6]
+		"/fishingbuddy", -- [7]
 		"/wave", -- [8]
-		"/opie", -- [9]
-		"/sleep", -- [10]
-		"/cw Willderhide-Stormrage all good thanks", -- [11]
-		"/reload", -- [12]
-		"/skada hide", -- [13]
-		"/s then chest?", -- [14]
-		"/cw Nelfdrid-Korialstrasz ty", -- [15]
+		"/s idk", -- [9]
+		"/reload", -- [10]
+		"/ltp", -- [11]
+		"/skada hide", -- [12]
+		"/s got to beat it all the way through i think", -- [13]
+		"/cw Nelfdrid-Korialstrasz ty", -- [14]
+		"/sit", -- [15]
+		"/cw Willderhide-Stormrage all good thanks", -- [16]
+		"/cw Genieb-ShatteredHalls TY!", -- [17]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"|cffffff00Eckhart Lodge is under attack!|r", -- [1]
-			"", -- [2]
+			"both mag and borg are on my shit list", -- [1]
+			"Kellarie-MoonGuard", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Stormsong Valley", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Kellarie-MoonGuard", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			316, -- [11]
-			false, -- [12]
+			1456, -- [11]
+			"Player-3675-08A5D02B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591468786,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeKellarie-MoonGuard|r",
+			[51] = 1592088459,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [1]
 		{
-			"Ricocheting Throw on Fluuf", -- [1]
-			"Fluuf-MoonGuard", -- [2]
-			"Common", -- [3]
+			"They need to die together, get zax", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fluuf-MoonGuard", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			487, -- [11]
-			"Player-3675-0836E520", -- [12]
+			1462, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Fluuf-MoonGuard|r",
-			[51] = 1591469981,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592088515,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [2]
 		{
-			"Ricocheting Throw on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"brez", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			488, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1469, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591469985,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088539,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [3]
 		{
-			"Ricocheting Throw on Fluuf", -- [1]
-			"Fluuf-MoonGuard", -- [2]
-			"Common", -- [3]
+			"br", -- [1]
+			"Kellarie-MoonGuard", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fluuf-MoonGuard", -- [5]
+			"Kellarie-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			489, -- [11]
-			"Player-3675-0836E520", -- [12]
+			1470, -- [11]
+			"Player-3675-08A5D02B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Fluuf-MoonGuard|r",
-			[51] = 1591469987,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeKellarie-MoonGuard|r",
+			[51] = 1592088544,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [4]
 		{
-			"Ricocheting Throw on Solipsism", -- [1]
-			"Solipsism-Undermine", -- [2]
-			"Common", -- [3]
+			"br", -- [1]
+			"Kellarie-MoonGuard", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Solipsism-Undermine", -- [5]
+			"Kellarie-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			503, -- [11]
-			"Player-1174-0BE48F08", -- [12]
+			1471, -- [11]
+			"Player-3675-08A5D02B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcSolipsism-Undermine|r",
-			[51] = 1591470039,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeKellarie-MoonGuard|r",
+			[51] = 1592088545,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [5]
 		{
-			"Ricocheting Throw on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"bres tank", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			505, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1472, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591470047,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088546,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [6]
 		{
-			"Cannon Barrage on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"BUBB", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			532, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1477, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591470433,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592088576,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [7]
 		{
-			"tyfg", -- [1]
-			"Solipsism-Undermine", -- [2]
+			"bubble", -- [1]
+			"Blazor-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Solipsism-Undermine", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			547, -- [11]
-			"Player-1174-0BE48F08", -- [12]
+			1478, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcSolipsism-Undermine|r",
-			[51] = 1591470458,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088577,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [8]
 		{
-			"afternnon quere poped later need a beer brb", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"gogoog", -- [1]
+			"Blazor-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			568, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1479, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591470643,
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088578,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [9]
 		{
-			"Upheaval on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			580, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591470742,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [10]
-		{
-			"ty", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"ALSO FOCUS ZAX", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			581, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1483, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591470745,
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592088587,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [10]
+		{
+			"omg", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1493, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088594,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [11]
 		{
-			"lol", -- [1]
-			"Rlstine-Stormrage", -- [2]
+			"mag ur dumb", -- [1]
+			"Kellarie-MoonGuard", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Rlstine-Stormrage", -- [5]
+			"Kellarie-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			603, -- [11]
-			"Player-60-0CC27F7F", -- [12]
+			1494, -- [11]
+			"Player-3675-08A5D02B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Rlstine-Stormrage|r",
-			[51] = 1591470903,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffefefeKellarie-MoonGuard|r",
+			[51] = 1592088597,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [12]
 		{
-			"no", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"u see", -- [1]
+			"Blazor-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			638, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1495, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591471071,
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088597,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [13]
 		{
-			"this way", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"lel", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			649, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1496, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591471111,
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592088597,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [14]
 		{
-			"stay with the star", -- [1]
-			"Rlstine-Stormrage", -- [2]
+			"duuuude", -- [1]
+			"Screamanddie-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Rlstine-Stormrage", -- [5]
+			"Screamanddie-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			685, -- [11]
-			"Player-60-0CC27F7F", -- [12]
+			1497, -- [11]
+			"Player-127-05BE5108", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Rlstine-Stormrage|r",
-			[51] = 1591471351,
+			[52] = "|cffa9d271Screamanddie-Stormscale|r",
+			[51] = 1592088598,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [15]
 		{
-			"here", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"at least 2 outise", -- [1]
+			"Blazor-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			700, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1498, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591471405,
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088604,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [16]
 		{
-			"May I please have |cff0070dd|Hitem:159293::::::::120:70::1:3:4777:1572:4785:::|h[Turncoat's Cape]|h|r if you don't need it?", -- [1]
-			"Turntsnaco-Stormrage", -- [2]
-			"Common", -- [3]
+			"so close", -- [1]
+			"Quikens-Proudmoore", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Turntsnaco-Stormrage", -- [5]
+			"Quikens-Proudmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			702, -- [11]
-			"Player-60-0CC27F18", -- [12]
+			1501, -- [11]
+			"Player-5-0A75E9CB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Turntsnaco-Stormrage|r",
-			[51] = 1591471411,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffa22fc8Quikens-Proudmoore|r",
+			[51] = 1592088606,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [17]
 		{
-			"its an interup", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"kick mag", -- [1]
+			"Kellarie-MoonGuard", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Kellarie", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			722, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1503, -- [11]
+			"Player-3675-08A5D02B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591471694,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffefefeKellarie-MoonGuard|r",
+			[51] = 1592088611,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [18]
 		{
-			"watch", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"ffs", -- [1]
+			"Johnyturk-Barthilas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Johnyturk-Barthilas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			750, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1504, -- [11]
+			"Player-3723-06FB6312", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591471931,
+			[52] = "|cffa9d271Johnyturk-Barthilas|r",
+			[51] = 1592088612,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [19]
 		{
-			"?", -- [1]
-			"Turntsnaco-Stormrage", -- [2]
+			"i was late but made it in. did i do it right?", -- [1]
+			"Frozenwings-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Turntsnaco-Stormrage", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			751, -- [11]
-			"Player-60-0CC27F18", -- [12]
+			1505, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Turntsnaco-Stormrage|r",
-			[51] = 1591471942,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088614,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [20]
 		{
-			"two mages knock ya dumb one at a time interup", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"Not close. They need to die together", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			752, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1506, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591471948,
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592088618,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [21]
 		{
-			"lol", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"One boss was nearly full", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			755, -- [11]
-			"Player-12-0AA3C833", -- [12]
+			1508, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591472061,
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592088625,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [22]
 		{
-			"Explosive Burst on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"u many have to kill at the samr time", -- [1]
+			"Novika-Elune", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Novika-Elune", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			760, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1509, -- [11]
+			"Player-67-0349FF6F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472127,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcNovika-Elune|r",
+			[51] = 1592088627,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [23]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"true", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			761, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1511, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472128,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088638,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [24]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"think i might need a 2nd tank for this the big guy decreases my stats by 5% every 15 seconds or so", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			762, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1513, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472128,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088648,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [25]
 		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"dropping my health to 150k", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			763, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1517, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472130,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088653,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [26]
 		{
-			"Explosive Burst on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"kk", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			768, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1520, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472150,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592088681,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [27]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"im here to completeion though so dont worry bout me leaving :)", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			770, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1522, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472151,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088747,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [28]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"same", -- [1]
+			"Gabor-Exodar", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Gabor-Exodar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			771, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1523, -- [11]
+			"Player-62-0CA03A54", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472152,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa22fc8Gabor-Exodar|r",
+			[51] = 1592088760,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [29]
 		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"That's whatr she said", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Ojoyuri-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			772, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1524, -- [11]
+			"Player-11-0BD64DDB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472153,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592088765,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [30]
 		{
-			"Explosive Burst on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"<3 dedication", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			786, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1525, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472198,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592088778,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [31]
 		{
-			"Explosive Burst on Clebanton", -- [1]
-			"Clebanton-Farstriders", -- [2]
-			"Common", -- [3]
+			"if anyone geared can switch to tank spec thatd be awesome. dont really need azerite traits for it with current gear level", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Clebanton-Farstriders", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			787, -- [11]
-			"Player-12-0BD0DB90", -- [12]
+			1526, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Clebanton-Farstriders|r",
-			[51] = 1591472198,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088860,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [32]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"no worries if you dont want to i know dps is fun", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			788, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1527, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472199,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088892,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [33]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			789, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472200,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
-		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			790, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591472201,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
-		{
-			"help plz", -- [1]
-			"Monacco-SilverHand", -- [2]
+			"so it is just off tank the big one right?", -- [1]
+			"Blazor-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Monacco-SilverHand", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			802, -- [11]
-			"Player-12-0AA3C833", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591472217,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
-		{
-			"ty", -- [1]
-			"Monacco-SilverHand", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Monacco-SilverHand", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			804, -- [11]
-			"Player-12-0AA3C833", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591472222,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
-		{
-			"ty for group", -- [1]
-			"Monacco-SilverHand", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Monacco-SilverHand", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			808, -- [11]
-			"Player-12-0AA3C833", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Monacco-SilverHand|r",
-			[51] = 1591472235,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
-		{
-			"Interrupted |cff71d5ff|Hspell:267969:0|h[Water Blast]|h|r on Temple Attendant", -- [1]
-			"Bouncebak-Stormrage", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Bouncebak-Stormrage", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			859, -- [11]
-			"Player-60-0B928CAD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Bouncebak-Stormrage|r",
-			[51] = 1591472578,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
-		{
-			"Interrupted |cff71d5ff|Hspell:267969:0|h[Water Blast]|h|r on Temple Attendant", -- [1]
-			"Bouncebak-Stormrage", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Bouncebak-Stormrage", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			861, -- [11]
-			"Player-60-0B928CAD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Bouncebak-Stormrage|r",
-			[51] = 1591472623,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
-		{
-			"Interrupted |cff71d5ff|Hspell:267969:0|h[Water Blast]|h|r on Temple Attendant", -- [1]
-			"Bouncebak-Stormrage", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Bouncebak-Stormrage", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			867, -- [11]
-			"Player-60-0B928CAD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Bouncebak-Stormrage|r",
-			[51] = 1591472667,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
-		{
-			"May I please have |cff0070dd|Hitem:159421::::::::120:70::1:5:4777:6516:6513:1572:4785:::|h[Gauntlets of Total Subservience]|h|r if you don't need it?", -- [1]
-			"Irizulos-MoonGuard", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Irizulos-MoonGuard", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			998, -- [11]
-			"Player-3675-08B4F1A0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cIrizulos-MoonGuard|r",
-			[51] = 1591473525,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [42]
-		{
-			"Trade :)", -- [1]
-			"Irizulos-MoonGuard", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Irizulos-MoonGuard", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1000, -- [11]
-			"Player-3675-08B4F1A0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cIrizulos-MoonGuard|r",
-			[51] = 1591473532,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [43]
-		{
-			"|cffffff00Bridgeport is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Tiragarde Sound", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tiragarde Sound", -- [9]
-			0, -- [10]
-			1300, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591475902,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
-		{
-			"|cffffff00Bridgeport is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Tiragarde Sound", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tiragarde Sound", -- [9]
-			0, -- [10]
-			1309, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591477075,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
-		{
-			"|cffffff00Bridgeport is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Tiragarde Sound", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tiragarde Sound", -- [9]
-			0, -- [10]
-			1310, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591477214,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
-		{
-			"|cffffff00Shrine of the Storm is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Stormsong Valley", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Stormsong Valley", -- [9]
-			0, -- [10]
-			1557, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591480264,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
-		{
-			"idk", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			110, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591545890,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
-		{
-			"got to beat it all the way through i think", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			114, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591545910,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
-		{
-			"then chest?", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			116, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591545914,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [50]
-		{
-			"May I please have |cff0070dd|Hitem:159668::::::::120:70::1:5:4777:6516:6515:1572:4785:::|h[Rattling Jar of Eyes]|h|r if you don't need it?", -- [1]
-			"Willderhide-Stormrage", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Willderhide-Stormrage", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			938, -- [11]
-			"Player-60-09EB40CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Willderhide-Stormrage|r",
-			[51] = 1591559600,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [51]
-		{
-			"sure", -- [1]
-			"Willderhide-Stormrage", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Willderhide-Stormrage", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			940, -- [11]
-			"Player-60-09EB40CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Willderhide-Stormrage|r",
-			[51] = 1591559630,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [52]
-		{
-			"wait it is bound", -- [1]
-			"Willderhide-Stormrage", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Willderhide-Stormrage", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			944, -- [11]
-			"Player-60-09EB40CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Willderhide-Stormrage|r",
-			[51] = 1591559645,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [53]
-		{
-			"sorry", -- [1]
-			"Willderhide-Stormrage", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Willderhide-Stormrage", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			946, -- [11]
-			"Player-60-09EB40CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Willderhide-Stormrage|r",
-			[51] = 1591559650,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [54]
-		{
-			"all good thanks ", -- [1]
-			"Willderhide-Stormrage", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Willderhide-Stormrage", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			951, -- [11]
-			"Player-60-09EB40CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Willderhide-Stormrage|r",
-			[51] = 1591559670,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [55]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Irontide Thug's |cff71d5ff|Hspell:258128:0|h[Debilitating Shout]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			963, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591559708,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [56]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Irontide Thug's |cff71d5ff|Hspell:258128:0|h[Debilitating Shout]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			971, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591559754,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [57]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Bilge Rat Seaspeaker's |cff71d5ff|Hspell:258153:0|h[Watery Dome]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			984, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591559805,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [58]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Bilge Rat Seaspeaker's |cff71d5ff|Hspell:258153:0|h[Watery Dome]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			992, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591559853,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [59]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Jes Howlis's |cff71d5ff|Hspell:257827:0|h[Motivating Cry]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1021, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591560007,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [60]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Irontide Thug's |cff71d5ff|Hspell:258128:0|h[Debilitating Shout]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1032, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591560057,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [61]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Ashvane Officer's |cff71d5ff|Hspell:258313:0|h[Handcuff]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1038, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591560092,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [62]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Ashvane Officer's |cff71d5ff|Hspell:258313:0|h[Handcuff]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1043, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591560173,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [63]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Ashvane Officer's |cff71d5ff|Hspell:258313:0|h[Handcuff]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1046, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591560235,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [64]
-		{
-			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Ashvane Priest's |cff71d5ff|Hspell:258935:0|h[Inner Flames]|h|r!", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1061, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591560378,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [65]
-		{
-			"May I please have |cff0070dd|Hitem:159440::::::::120:70::18:3:5116:1452:4785:::|h[Ashvane Warden's Cuirass]|h|r if you don't need it?", -- [1]
-			"Maxbeàrd-Sargeras", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Maxbeàrd-Sargeras", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1082, -- [11]
-			"Player-76-0A5C275D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
-			[51] = 1591560505,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [66]
-		{
-			"easy", -- [1]
-			"Asparagus-Blackhand", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Asparagus-Blackhand", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1384, -- [11]
-			"Player-54-0B8DB406", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Asparagus-Blackhand|r",
-			[51] = 1591563965,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [67]
-		{
-			"thanks all", -- [1]
-			"Dakalin-Lightbringer", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dakalin-Lightbringer", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			1528, -- [11]
-			"Player-3694-0907FFF9", -- [12]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Dakalin-Lightbringer|r",
-			[51] = 1591564925,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088914,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [34]
+		{
+			"I'm shit geared, and a mage.", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ojoyuri-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1529, -- [11]
+			"Player-11-0BD64DDB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592088921,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [35]
+		{
+			"yep just taunt the big guy off me till my stacks drop and ill take him back", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1530, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088934,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [36]
+		{
+			"i can try off tank if you want", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1531, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592088935,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [37]
+		{
+			"never tanked a raid", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Genieb-ShatteredHalls", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1532, -- [11]
+			"Player-155-0A74CBC6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592088939,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [38]
+		{
+			"I get one day off.", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ojoyuri-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1533, -- [11]
+			"Player-11-0BD64DDB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592088966,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [39]
+		{
+			"ranged guy looks like we're doing fine just the b ig guy giving me problems. need someone else to take some hits while stacks drop", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1534, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592088970,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [40]
+		{
+			"and I'm here", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ojoyuri-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1535, -- [11]
+			"Player-11-0BD64DDB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592088974,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [41]
+		{
+			"i will off tank for a while lol", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1536, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089013,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [42]
+		{
+			"lets go", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1537, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089018,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [43]
+		{
+			"awesome", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1538, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089019,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [44]
+		{
+			"ty", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1539, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089021,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [45]
+		{
+			"how many sec you need for the stacks to disappear?", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Genieb-ShatteredHalls", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1541, -- [11]
+			"Player-155-0A74CBC6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089031,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [46]
+		{
+			"bubbke", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1553, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089094,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [47]
+		{
+			"bubble", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Genieb-ShatteredHalls", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1555, -- [11]
+			"Player-155-0A74CBC6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089096,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [48]
+		{
+			"le", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1556, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089096,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [49]
+		{
+			"bubble", -- [1]
+			"Gabor-Exodar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gabor-Exodar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1557, -- [11]
+			"Player-62-0CA03A54", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Gabor-Exodar|r",
+			[51] = 1592089101,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [50]
+		{
+			"taunt", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1559, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089110,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [51]
+		{
+			":o", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ojoyuri-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1560, -- [11]
+			"Player-11-0BD64DDB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592089118,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [52]
+		{
+			"MORE ON ZAX NOW", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dhaalia-WyrmrestAccord", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1567, -- [11]
+			"Player-1171-08BC32B0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592089138,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [53]
+		{
+			"IN", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1571, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089147,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [54]
+		{
+			"bubble", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ojoyuri-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1572, -- [11]
+			"Player-11-0BD64DDB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592089149,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [55]
+		{
+			"u need to taunt faster dude", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1575, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089186,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [56]
+		{
+			"taunt", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1576, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089188,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [57]
+		{
+			"i got manu stacks", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1579, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089191,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [58]
+		{
+			"im dead", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1580, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089195,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [59]
+		{
+			"i still had stacks", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1581, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089198,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [60]
+		{
+			"mine never dropped ", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1582, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089207,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [61]
+		{
+			"hunter taunt lol", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1583, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089207,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [62]
+		{
+			"caster", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1591, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089238,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [63]
+		{
+			"kill caster", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1592, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089242,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [64]
+		{
+			"kill caster", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1596, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089262,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [65]
+		{
+			"b rest me ", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1599, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089263,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [66]
+		{
+			"taunt", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1600, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089263,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [67]
+		{
+			"b rest", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1602, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089267,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [68]
 		{
-			"|cffffff00Fogcliff Strand is under attack!|r", -- [1]
-			"", -- [2]
+			"think i got it", -- [1]
+			"Frozenwings-Stormscale", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Tiragarde Sound", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tiragarde Sound", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			807, -- [11]
-			false, -- [12]
+			1603, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591650918,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089275,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [69]
 		{
-			"Unstable Runic Mark on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"gogo u can", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			286, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1604, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743113,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089281,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [70]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"almost got it guys gogogo", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			289, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1605, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743116,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089299,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [71]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"gg", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			291, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1609, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743117,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089309,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [72]
 		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"wow gj guys", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			293, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1615, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743118,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089312,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [73]
 		{
-			"Unstable Runic Mark on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
+			"May I please have |cffa335ee|Hitem:167841::::::::120:70::4:4:4801:42:1497:4786:::|h[Abyssal Speaker's Gauntlets]|h|r if you don't need it?", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
 			"Common", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			296, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1625, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743125,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089330,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [74]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"find me", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			299, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1630, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743128,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089342,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [75]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"c:", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Ojoyuri-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			303, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1639, -- [11]
+			"Player-11-0BD64DDB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743130,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592089364,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [76]
 		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
+			"TY!", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
 			"Common", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			304, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1641, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743130,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089374,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [77]
 		{
-			"Uproot on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"Your welcome :)", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			336, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1643, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743291,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089382,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [78]
 		{
-			"Uproot on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"dispel", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			339, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1652, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743312,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089512,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [79]
 		{
-			"Runic Mark on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"cool", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Ojoyuri-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			392, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1676, -- [11]
+			"Player-11-0BD64DDB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743645,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592089723,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [80]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"can i go dps now? or do you need me?", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			394, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1677, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743648,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089725,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [81]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"anything we need to know", -- [1]
+			"Johnyturk-Barthilas", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Johnyturk-Barthilas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			395, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1678, -- [11]
+			"Player-3723-06FB6312", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743649,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Johnyturk-Barthilas|r",
+			[51] = 1592089727,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [82]
 		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"can i solo tank this", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			396, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1679, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743650,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089732,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [83]
 		{
-			"Runic Mark on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"ok", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			407, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1680, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743746,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089736,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [84]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"should be able to", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			408, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1681, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743749,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089737,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [85]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"Keep the guardians off of the boss", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			409, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1682, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743750,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592089737,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [86]
 		{
-			"Virulent Pathogen on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"dps w/ the crown", -- [1]
+			"Novika-Elune", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Novika-Elune", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			418, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1684, -- [11]
+			"Player-67-0349FF6F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743795,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcNovika-Elune|r",
+			[51] = 1592089747,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [87]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"We'll only need offtanks during that time", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			419, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1685, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743797,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592089748,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [88]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"ty Blazor", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			420, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1686, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743798,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089752,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [89]
 		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"youre a true hero", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			422, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1687, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591743799,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089754,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [90]
 		{
-			"3", -- [1]
-			"Fishmongerr-Dalaran", -- [2]
-			"Common", -- [3]
+			"np", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fishmongerr-Dalaran", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			429, -- [11]
-			"Player-3683-0BDF8929", -- [12]
+			1688, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Fishmongerr|r",
-			[51] = 1591743830,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089759,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [91]
 		{
-			"2", -- [1]
-			"Fishmongerr-Dalaran", -- [2]
-			"Common", -- [3]
+			":p", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fishmongerr-Dalaran", -- [5]
+			"Ojoyuri-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			430, -- [11]
-			"Player-3683-0BDF8929", -- [12]
+			1689, -- [11]
+			"Player-11-0BD64DDB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Fishmongerr|r",
-			[51] = 1591743831,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592089780,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [92]
 		{
-			"1", -- [1]
-			"Fishmongerr-Dalaran", -- [2]
-			"Common", -- [3]
+			"pop 15% b4 big add dies", -- [1]
+			"Novika-Elune", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fishmongerr-Dalaran", -- [5]
+			"Novika-Elune", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			431, -- [11]
-			"Player-3683-0BDF8929", -- [12]
+			1690, -- [11]
+			"Player-67-0349FF6F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Fishmongerr|r",
-			[51] = 1591743832,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcNovika-Elune|r",
+			[51] = 1592089780,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [93]
 		{
-			"3", -- [1]
-			"Fishmongerr-Dalaran", -- [2]
-			"Common", -- [3]
+			"maybe", -- [1]
+			"Novika-Elune", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fishmongerr-Dalaran", -- [5]
+			"Novika-Elune", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			433, -- [11]
-			"Player-3683-0BDF8929", -- [12]
+			1692, -- [11]
+			"Player-67-0349FF6F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Fishmongerr|r",
-			[51] = 1591743840,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcNovika-Elune|r",
+			[51] = 1592089788,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [94]
 		{
-			"2", -- [1]
-			"Fishmongerr-Dalaran", -- [2]
-			"Common", -- [3]
+			"adds / boss", -- [1]
+			"Novika-Elune", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fishmongerr-Dalaran", -- [5]
+			"Novika-Elune", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			434, -- [11]
-			"Player-3683-0BDF8929", -- [12]
+			1693, -- [11]
+			"Player-67-0349FF6F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Fishmongerr|r",
-			[51] = 1591743841,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcNovika-Elune|r",
+			[51] = 1592089798,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [95]
 		{
-			"1", -- [1]
-			"Fishmongerr-Dalaran", -- [2]
-			"Common", -- [3]
+			"yeah about", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fishmongerr-Dalaran", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			435, -- [11]
-			"Player-3683-0BDF8929", -- [12]
+			1694, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Fishmongerr|r",
-			[51] = 1591743842,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592089800,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [96]
 		{
-			"|cffffff00Teller Farm is under attack!|r", -- [1]
-			"", -- [2]
+			"pop ready check when youre done explaining", -- [1]
+			"Frozenwings-Stormscale", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			630, -- [11]
-			false, -- [12]
+			1695, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591745035,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089816,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [97]
 		{
-			"|cffffff00Arom's Stand is under attack!|r", -- [1]
-			"", -- [2]
+			"....", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Ojoyuri-Tichondrius", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			719, -- [11]
-			false, -- [12]
+			1696, -- [11]
+			"Player-11-0BD64DDB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591745618,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592089816,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [98]
 		{
-			"|cffffff00Watchman's Tower is under attack!|r", -- [1]
-			"", -- [2]
+			"wtf", -- [1]
+			"Blazor-Stormscale", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			734, -- [11]
-			false, -- [12]
+			1697, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591745708,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089817,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [99]
 		{
-			"|cffffff00Arom's Stand is under attack!|r", -- [1]
-			"", -- [2]
+			"thx", -- [1]
+			"Erebourne-Khaz'goroth", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Erebourne-Khaz'goroth", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			742, -- [11]
-			false, -- [12]
+			1698, -- [11]
+			"Player-3726-0AF18275", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591745752,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffe7b09Erebourne-Khaz'goroth|r",
+			[51] = 1592089820,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [100]
 		{
-			"|cffffff00Arom's Stand is under attack!|r", -- [1]
-			"", -- [2]
+			"LOLLLL", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			752, -- [11]
-			false, -- [12]
+			1699, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591745813,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592089821,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [101]
 		{
-			"|cffffff00Watchman's Rise is under attack!|r", -- [1]
-			"", -- [2]
+			"lmao", -- [1]
+			"Jaden-Warsong", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Jaden-Warsong", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			755, -- [11]
-			false, -- [12]
+			1700, -- [11]
+			"Player-71-0BF5749B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591745826,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa9d271Jaden-Warsong|r",
+			[51] = 1592089822,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [102]
 		{
-			"|cffffff00Arom's Stand is under attack!|r", -- [1]
-			"", -- [2]
+			"wait", -- [1]
+			"Blazor-Stormscale", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			763, -- [11]
-			false, -- [12]
+			1701, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591745906,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089823,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [103]
 		{
-			"Unstable Runic Mark on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"y", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			816, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1702, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591746277,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592089823,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [104]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"gonna reset boss", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			819, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1703, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591746280,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089826,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [105]
 		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"welp", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Ojoyuri-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			820, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1704, -- [11]
+			"Player-11-0BD64DDB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591746281,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592089828,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [106]
 		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"pull and run out", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			821, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1705, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591746282,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089831,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [107]
 		{
-			"Soul Thorns on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"run out", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			859, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1709, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591746475,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089845,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [108]
 		{
-			"Soul Thorns on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"leeerrrrroooyyy jeeennkins", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			865, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1710, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591746497,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592089848,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [109]
 		{
-			"|cffffff00Arom's Stand is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
-			0, -- [10]
-			990, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591747142,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [110]
-		{
-			"|cffffff00Arom's Stand is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
-			0, -- [10]
-			999, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591747206,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [111]
-		{
-			"you can pull big", -- [1]
-			"Scarpa-Sargeras", -- [2]
+			"so kill adds dont let them get to boss. anything else?", -- [1]
+			"Frozenwings-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scarpa-Sargeras", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			145, -- [11]
-			"Player-76-0A6E07BD", -- [12]
+			1711, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Scarpa-Sargeras|r",
-			[51] = 1591824987,
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089868,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [110]
+		{
+			"try to time the beams so you don't have a stack when you get hit by the other one", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dhaalia-WyrmrestAccord", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1712, -- [11]
+			"Player-1171-08BC32B0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592089887,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [111]
+		{
+			"dont stand in shit", -- [1]
+			"Blazor-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Blazor-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1713, -- [11]
+			"Player-127-05B94D28", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089888,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [112]
 		{
-			"and make this fast", -- [1]
-			"Scarpa-Sargeras", -- [2]
+			"kk", -- [1]
+			"Frozenwings-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scarpa-Sargeras", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			146, -- [11]
-			"Player-76-0A6E07BD", -- [12]
+			1714, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Scarpa-Sargeras|r",
-			[51] = 1591824990,
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089896,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [113]
 		{
-			"<3", -- [1]
-			"Scarpa-Sargeras", -- [2]
+			"as always", -- [1]
+			"Blazor-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scarpa-Sargeras", -- [5]
+			"Blazor-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			147, -- [11]
-			"Player-76-0A6E07BD", -- [12]
+			1715, -- [11]
+			"Player-127-05B94D28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Scarpa-Sargeras|r",
-			[51] = 1591824996,
+			[52] = "|cffc59a6cBlazor-Stormscale|r",
+			[51] = 1592089897,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [114]
 		{
-			"May I please have |cff0070dd|Hitem:162541::::::::120:70::2:5:4778:6516:6515:1587:4785:::|h[Band of the Roving Scalawag]|h|r if you don't need it?", -- [1]
-			"Scarpa-Sargeras", -- [2]
-			"Common", -- [3]
+			"lets give it a shot", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Scarpa-Sargeras", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			194, -- [11]
-			"Player-76-0A6E07BD", -- [12]
+			1717, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Scarpa-Sargeras|r",
-			[51] = 1591825314,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592089913,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [115]
 		{
-			"May I please have |cff0070dd|Hitem:159461::::::::120:70::2:5:4778:6516:6513:1587:4785:::|h[Band of the Ancient Dredger]|h|r if you don't need it?", -- [1]
-			"Nelfdrid-Korialstrasz", -- [2]
-			"Common", -- [3]
+			"hero?", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Nelfdrid-Korialstrasz", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			285, -- [11]
-			"Player-123-060665CB", -- [12]
+			1728, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
-			[51] = 1591825678,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592090076,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [116]
 		{
-			"ty", -- [1]
-			"Nelfdrid-Korialstrasz", -- [2]
-			"Common", -- [3]
+			"or wait", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Nelfdrid-Korialstrasz", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			294, -- [11]
-			"Player-123-060665CB", -- [12]
+			1729, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
-			[51] = 1591825755,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592090078,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [117]
 		{
-			"yw", -- [1]
-			"Nelfdrid-Korialstrasz", -- [2]
+			"TAKE OUT GUARDIAN", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Nelfdrid-Korialstrasz", -- [5]
+			"Dhaalia-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			297, -- [11]
-			"Player-123-060665CB", -- [12]
+			1732, -- [11]
+			"Player-1171-08BC32B0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
-			[51] = 1591825775,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592090085,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [118]
 		{
-			"Putrid Waters on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
+			"i take it torment can't be dispelled?", -- [1]
+			"Jaden-Warsong", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Avisar-Dalaran", -- [5]
+			"Jaden-Warsong", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			304, -- [11]
-			"Player-3683-0BE4455C", -- [12]
+			1742, -- [11]
+			"Player-71-0BF5749B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591825818,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Jaden-Warsong|r",
+			[51] = 1592090167,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [119]
 		{
-			"ty", -- [1]
-			"Nimbexx-Thunderlord", -- [2]
-			"", -- [3]
+			"Leech on Avisar", -- [1]
+			"Avisar-Dalaran", -- [2]
+			"Common", -- [3]
 			"", -- [4]
-			"Nimbexx-Thunderlord", -- [5]
+			"Avisar-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			308, -- [11]
-			"Player-77-0CC1E71E", -- [12]
+			1745, -- [11]
+			"Player-3683-0BE4455C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Nimbexx-Thunderlord|r",
-			[51] = 1591825842,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfff38bb9Avisar|r",
+			[51] = 1592090181,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [120]
 		{
-			"3", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			309, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591825845,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [121]
-		{
-			"2", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			310, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591825846,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [122]
-		{
-			"1", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			311, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591825847,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [123]
-		{
-			"yw", -- [1]
-			"Nelfdrid-Korialstrasz", -- [2]
+			"ezpz", -- [1]
+			"Frozenwings-Stormscale", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Nelfdrid-Korialstrasz", -- [5]
+			"Frozenwings-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			318, -- [11]
-			"Player-123-060665CB", -- [12]
+			1772, -- [11]
+			"Player-127-05C4D792", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
-			[51] = 1591825872,
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592090220,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [121]
+		{
+			"ty all", -- [1]
+			"Frozenwings-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Frozenwings-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1774, -- [11]
+			"Player-127-05C4D792", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Frozenwings-Stormscale|r",
+			[51] = 1592090221,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [122]
+		{
+			"ty", -- [1]
+			"Dhaalia-WyrmrestAccord", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dhaalia-WyrmrestAccord", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1778, -- [11]
+			"Player-1171-08BC32B0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeDhaalia-WyrmrestAccord|r",
+			[51] = 1592090225,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [123]
+		{
+			"ty", -- [1]
+			"Johnyturk-Barthilas", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Johnyturk-Barthilas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1780, -- [11]
+			"Player-3723-06FB6312", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Johnyturk-Barthilas|r",
+			[51] = 1592090225,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [124]
 		{
-			"ty all", -- [1]
-			"Nelfdrid-Korialstrasz", -- [2]
+			"yes ty", -- [1]
+			"Genieb-ShatteredHalls", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Nelfdrid-Korialstrasz", -- [5]
+			"Genieb-ShatteredHalls", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			320, -- [11]
-			"Player-123-060665CB", -- [12]
+			1781, -- [11]
+			"Player-155-0A74CBC6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
-			[51] = 1591825876,
+			[52] = "|cffc59a6cGenieb-ShatteredHalls|r",
+			[51] = 1592090226,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [125]
 		{
-			"May I please have |cff0070dd|Hitem:159431::::::::120:70::2:4:4818:1587:4785:6259:::|h[Kraken Shell Pauldrons]|h|r if you don't need it?", -- [1]
-			"Hacklol-Akama", -- [2]
-			"Common", -- [3]
+			"ty", -- [1]
+			"Jaden-Warsong", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Hacklol-Akama", -- [5]
+			"Jaden-Warsong", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			323, -- [11]
-			"Player-84-0796D331", -- [12]
+			1788, -- [11]
+			"Player-71-0BF5749B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cHacklol-Akama|r",
-			[51] = 1591825886,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffa9d271Jaden-Warsong|r",
+			[51] = 1592090229,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [126]
 		{
-			"|cffffff00Dazar'alor is under attack!|r", -- [1]
-			"", -- [2]
+			"ggwp", -- [1]
+			"Ojoyuri-Tichondrius", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Ojoyuri-Tichondrius", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			755, -- [11]
-			false, -- [12]
+			1792, -- [11]
+			"Player-11-0BD64DDB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591828566,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3ec5e9Ojoyuri-Tichondrius|r",
+			[51] = 1592090233,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [127]
 	},
 }

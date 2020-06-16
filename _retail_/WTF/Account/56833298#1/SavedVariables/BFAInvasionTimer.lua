@@ -6,15 +6,15 @@ BFAInvasionTimerDB = {
 		["Vancard - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 	},
 	["profiles"] = {
@@ -29,6 +29,6 @@ BFAInvasionTimerDB = {
 	},
 }
 BFAInvasionData = {
-	1591808406, -- [1]
-	6, -- [2]
+	1592082004, -- [1]
+	4, -- [2]
 }

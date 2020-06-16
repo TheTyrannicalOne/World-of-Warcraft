@@ -4,483 +4,23 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/cw Willderhide-Stormrage all good thanks ", -- [1]
-		"/ltp", -- [2]
-		"/reload", -- [3]
-		"/s then chest?", -- [4]
-		"/wave", -- [5]
-		"/s idk", -- [6]
-		"/skada hide", -- [7]
-		"/opie", -- [8]
-		"/dance", -- [9]
-		"/sleep", -- [10]
-		"/cw Willderhide-Stormrage all good thanks", -- [11]
-		"/skada toggle", -- [12]
-		"/s got to beat it all the way through i think", -- [13]
-		"/fishingbuddy", -- [14]
+		"/dance", -- [2]
+		"/s idk", -- [3]
+		"/s got to beat it all the way through i think", -- [4]
+		"/skada toggle", -- [5]
+		"/reload", -- [6]
+		"/s then chest?", -- [7]
+		"/wave", -- [8]
+		"/opie", -- [9]
+		"/ltp", -- [10]
+		"/sleep", -- [11]
+		"/skada hide", -- [12]
+		"/fishingbuddy", -- [13]
+		"/cw Nelfdrid-Korialstrasz ty", -- [14]
+		"/sit", -- [15]
+		"/cw Willderhide-Stormrage all good thanks", -- [16]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"larala laralo", -- [1]
-			"Dietecon-Aman'Thul", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dietecon-Aman'Thul", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			308, -- [11]
-			"Player-3722-00A085A1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Dietecon-Aman'Thul|r",
-			[51] = 1590605608,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"ooohhh", -- [1]
-			"Dietecon-Aman'Thul", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dietecon-Aman'Thul", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			324, -- [11]
-			"Player-3722-00A085A1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Dietecon-Aman'Thul|r",
-			[51] = 1590605730,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [2]
-		{
-			"|cffffff00Grand Bazaar is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			1715, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1590615070,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"|cffffff00Grand Bazaar is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			1725, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1590615191,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"|cffffff00Grand Bazaar is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			1731, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1590615252,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"|cffffff00Boralus is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Tiragarde Sound", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tiragarde Sound", -- [9]
-			0, -- [10]
-			741, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1590900938,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"|cffffff00Ashvane Company Yards is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Tiragarde Sound", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tiragarde Sound", -- [9]
-			0, -- [10]
-			742, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1590900961,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"|cffffff00Backwater Beach is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			31, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591384173,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"|cffffff00Xibala is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			11, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591388892,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"|cffffff00Port of Zandalar is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			14, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591390770,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"|cffffff00Xibala is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			52, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591391637,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"|cffffff00Xibala is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			64, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591391701,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"|cffffff00Xibala is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			73, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591391762,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"|cffffff00Xibala is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			96, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591391963,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"|cffffff00Whitegrove Chapel is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Drustvar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Drustvar", -- [9]
-			0, -- [10]
-			172, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591392574,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"|cffffff00Shrine of the Storm is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Stormsong Valley", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Stormsong Valley", -- [9]
-			0, -- [10]
-			475, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591394576,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"|cffffff00Eckhart Lodge is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Stormsong Valley", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Stormsong Valley", -- [9]
-			0, -- [10]
-			316, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1591468786,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"Ricocheting Throw on Fluuf", -- [1]
-			"Fluuf-MoonGuard", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Fluuf-MoonGuard", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			487, -- [11]
-			"Player-3675-0836E520", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Fluuf-MoonGuard|r",
-			[51] = 1591469981,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [18]
-		{
-			"Ricocheting Throw on Avisar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			488, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1591469985,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [19]
-		{
-			"Ricocheting Throw on Fluuf", -- [1]
-			"Fluuf-MoonGuard", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Fluuf-MoonGuard", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			489, -- [11]
-			"Player-3675-0836E520", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Fluuf-MoonGuard|r",
-			[51] = 1591469987,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [20]
-		{
-			"Ricocheting Throw on Solipsism", -- [1]
-			"Solipsism-Undermine", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Solipsism-Undermine", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			503, -- [11]
-			"Player-1174-0BE48F08", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcSolipsism-Undermine|r",
-			[51] = 1591470039,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [21]
 		{
 			"Ricocheting Throw on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -502,7 +42,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591470047,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [22]
+		}, -- [1]
 		{
 			"Cannon Barrage on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -524,7 +64,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591470433,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [23]
+		}, -- [2]
 		{
 			"tyfg", -- [1]
 			"Solipsism-Undermine", -- [2]
@@ -546,7 +86,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSolipsism-Undermine|r",
 			[51] = 1591470458,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [24]
+		}, -- [3]
 		{
 			"afternnon quere poped later need a beer brb", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -568,7 +108,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591470643,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [25]
+		}, -- [4]
 		{
 			"Upheaval on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -590,7 +130,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591470742,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [26]
+		}, -- [5]
 		{
 			"ty", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -612,7 +152,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591470745,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [27]
+		}, -- [6]
 		{
 			"lol", -- [1]
 			"Rlstine-Stormrage", -- [2]
@@ -634,7 +174,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rlstine-Stormrage|r",
 			[51] = 1591470903,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [28]
+		}, -- [7]
 		{
 			"no", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -656,7 +196,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591471071,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [29]
+		}, -- [8]
 		{
 			"this way", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -678,7 +218,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591471111,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [30]
+		}, -- [9]
 		{
 			"stay with the star", -- [1]
 			"Rlstine-Stormrage", -- [2]
@@ -700,7 +240,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rlstine-Stormrage|r",
 			[51] = 1591471351,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [31]
+		}, -- [10]
 		{
 			"here", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -722,7 +262,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591471405,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
+		}, -- [11]
 		{
 			"May I please have |cff0070dd|Hitem:159293::::::::120:70::1:3:4777:1572:4785:::|h[Turncoat's Cape]|h|r if you don't need it?", -- [1]
 			"Turntsnaco-Stormrage", -- [2]
@@ -744,7 +284,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Turntsnaco-Stormrage|r",
 			[51] = 1591471411,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [33]
+		}, -- [12]
 		{
 			"its an interup", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -766,7 +306,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591471694,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [34]
+		}, -- [13]
 		{
 			"watch", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -788,7 +328,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591471931,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [35]
+		}, -- [14]
 		{
 			"?", -- [1]
 			"Turntsnaco-Stormrage", -- [2]
@@ -810,7 +350,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Turntsnaco-Stormrage|r",
 			[51] = 1591471942,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [36]
+		}, -- [15]
 		{
 			"two mages knock ya dumb one at a time interup", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -832,7 +372,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591471948,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
+		}, -- [16]
 		{
 			"lol", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -854,7 +394,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591472061,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
+		}, -- [17]
 		{
 			"Explosive Burst on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -876,7 +416,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472127,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
+		}, -- [18]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -898,7 +438,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472128,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
+		}, -- [19]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -920,7 +460,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472128,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
+		}, -- [20]
 		{
 			"1", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -942,7 +482,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472130,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [42]
+		}, -- [21]
 		{
 			"Explosive Burst on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -964,7 +504,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472150,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [43]
+		}, -- [22]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -986,7 +526,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472151,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [44]
+		}, -- [23]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1008,7 +548,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472152,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [45]
+		}, -- [24]
 		{
 			"1", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1030,7 +570,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472153,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
+		}, -- [25]
 		{
 			"Explosive Burst on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1052,7 +592,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472198,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [47]
+		}, -- [26]
 		{
 			"Explosive Burst on Clebanton", -- [1]
 			"Clebanton-Farstriders", -- [2]
@@ -1074,7 +614,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Clebanton-Farstriders|r",
 			[51] = 1591472198,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
+		}, -- [27]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1096,7 +636,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472199,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
+		}, -- [28]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1118,7 +658,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472200,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [50]
+		}, -- [29]
 		{
 			"1", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1140,7 +680,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591472201,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [51]
+		}, -- [30]
 		{
 			"help plz", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -1162,7 +702,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591472217,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [52]
+		}, -- [31]
 		{
 			"ty", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -1184,7 +724,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591472222,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [53]
+		}, -- [32]
 		{
 			"ty for group", -- [1]
 			"Monacco-SilverHand", -- [2]
@@ -1206,7 +746,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Monacco-SilverHand|r",
 			[51] = 1591472235,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [54]
+		}, -- [33]
 		{
 			"Interrupted |cff71d5ff|Hspell:267969:0|h[Water Blast]|h|r on Temple Attendant", -- [1]
 			"Bouncebak-Stormrage", -- [2]
@@ -1228,7 +768,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bouncebak-Stormrage|r",
 			[51] = 1591472578,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
+		}, -- [34]
 		{
 			"Interrupted |cff71d5ff|Hspell:267969:0|h[Water Blast]|h|r on Temple Attendant", -- [1]
 			"Bouncebak-Stormrage", -- [2]
@@ -1250,7 +790,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bouncebak-Stormrage|r",
 			[51] = 1591472623,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
+		}, -- [35]
 		{
 			"Interrupted |cff71d5ff|Hspell:267969:0|h[Water Blast]|h|r on Temple Attendant", -- [1]
 			"Bouncebak-Stormrage", -- [2]
@@ -1272,7 +812,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bouncebak-Stormrage|r",
 			[51] = 1591472667,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
+		}, -- [36]
 		{
 			"May I please have |cff0070dd|Hitem:159421::::::::120:70::1:5:4777:6516:6513:1572:4785:::|h[Gauntlets of Total Subservience]|h|r if you don't need it?", -- [1]
 			"Irizulos-MoonGuard", -- [2]
@@ -1294,7 +834,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIrizulos-MoonGuard|r",
 			[51] = 1591473525,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [58]
+		}, -- [37]
 		{
 			"Trade :)", -- [1]
 			"Irizulos-MoonGuard", -- [2]
@@ -1316,7 +856,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIrizulos-MoonGuard|r",
 			[51] = 1591473532,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [59]
+		}, -- [38]
 		{
 			"|cffffff00Bridgeport is under attack!|r", -- [1]
 			"", -- [2]
@@ -1338,7 +878,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591475902,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [39]
 		{
 			"|cffffff00Bridgeport is under attack!|r", -- [1]
 			"", -- [2]
@@ -1360,7 +900,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591477075,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [40]
 		{
 			"|cffffff00Bridgeport is under attack!|r", -- [1]
 			"", -- [2]
@@ -1382,7 +922,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591477214,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [41]
 		{
 			"|cffffff00Shrine of the Storm is under attack!|r", -- [1]
 			"", -- [2]
@@ -1404,7 +944,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591480264,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [42]
 		{
 			"idk", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1426,7 +966,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591545890,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
+		}, -- [43]
 		{
 			"got to beat it all the way through i think", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1448,7 +988,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591545910,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [44]
 		{
 			"then chest?", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1470,7 +1010,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591545914,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
+		}, -- [45]
 		{
 			"May I please have |cff0070dd|Hitem:159668::::::::120:70::1:5:4777:6516:6515:1572:4785:::|h[Rattling Jar of Eyes]|h|r if you don't need it?", -- [1]
 			"Willderhide-Stormrage", -- [2]
@@ -1492,7 +1032,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Willderhide-Stormrage|r",
 			[51] = 1591559600,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [67]
+		}, -- [46]
 		{
 			"sure", -- [1]
 			"Willderhide-Stormrage", -- [2]
@@ -1514,7 +1054,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Willderhide-Stormrage|r",
 			[51] = 1591559630,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [68]
+		}, -- [47]
 		{
 			"wait it is bound", -- [1]
 			"Willderhide-Stormrage", -- [2]
@@ -1536,7 +1076,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Willderhide-Stormrage|r",
 			[51] = 1591559645,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [69]
+		}, -- [48]
 		{
 			"sorry", -- [1]
 			"Willderhide-Stormrage", -- [2]
@@ -1558,7 +1098,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Willderhide-Stormrage|r",
 			[51] = 1591559650,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [70]
+		}, -- [49]
 		{
 			"all good thanks ", -- [1]
 			"Willderhide-Stormrage", -- [2]
@@ -1580,7 +1120,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Willderhide-Stormrage|r",
 			[51] = 1591559670,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [71]
+		}, -- [50]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Irontide Thug's |cff71d5ff|Hspell:258128:0|h[Debilitating Shout]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1602,7 +1142,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591559708,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [72]
+		}, -- [51]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Irontide Thug's |cff71d5ff|Hspell:258128:0|h[Debilitating Shout]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1624,7 +1164,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591559754,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [73]
+		}, -- [52]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Bilge Rat Seaspeaker's |cff71d5ff|Hspell:258153:0|h[Watery Dome]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1646,7 +1186,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591559805,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [74]
+		}, -- [53]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Bilge Rat Seaspeaker's |cff71d5ff|Hspell:258153:0|h[Watery Dome]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1668,7 +1208,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591559853,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [75]
+		}, -- [54]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Jes Howlis's |cff71d5ff|Hspell:257827:0|h[Motivating Cry]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1690,7 +1230,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591560007,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [76]
+		}, -- [55]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Irontide Thug's |cff71d5ff|Hspell:258128:0|h[Debilitating Shout]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1712,7 +1252,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591560057,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [77]
+		}, -- [56]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Ashvane Officer's |cff71d5ff|Hspell:258313:0|h[Handcuff]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1734,7 +1274,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591560092,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [78]
+		}, -- [57]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Ashvane Officer's |cff71d5ff|Hspell:258313:0|h[Handcuff]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1756,7 +1296,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591560173,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [79]
+		}, -- [58]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Ashvane Officer's |cff71d5ff|Hspell:258313:0|h[Handcuff]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1778,7 +1318,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591560235,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [80]
+		}, -- [59]
 		{
 			"|cff71d5ff|Hspell:47528:0|h[Mind Freeze]|h|r interrupted Ashvane Priest's |cff71d5ff|Hspell:258935:0|h[Inner Flames]|h|r!", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1800,7 +1340,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591560378,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [81]
+		}, -- [60]
 		{
 			"May I please have |cff0070dd|Hitem:159440::::::::120:70::18:3:5116:1452:4785:::|h[Ashvane Warden's Cuirass]|h|r if you don't need it?", -- [1]
 			"Maxbeàrd-Sargeras", -- [2]
@@ -1822,7 +1362,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Maxbeàrd-Sargeras|r",
 			[51] = 1591560505,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [82]
+		}, -- [61]
 		{
 			"easy", -- [1]
 			"Asparagus-Blackhand", -- [2]
@@ -1844,7 +1384,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Asparagus-Blackhand|r",
 			[51] = 1591563965,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [83]
+		}, -- [62]
 		{
 			"thanks all", -- [1]
 			"Dakalin-Lightbringer", -- [2]
@@ -1866,7 +1406,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Dakalin-Lightbringer|r",
 			[51] = 1591564925,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [84]
+		}, -- [63]
 		{
 			"|cffffff00Fogcliff Strand is under attack!|r", -- [1]
 			"", -- [2]
@@ -1888,7 +1428,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591650918,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [64]
 		{
 			"Unstable Runic Mark on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1910,7 +1450,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743113,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [86]
+		}, -- [65]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1932,7 +1472,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743116,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [87]
+		}, -- [66]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1954,7 +1494,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743117,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [88]
+		}, -- [67]
 		{
 			"1", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1976,7 +1516,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743118,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [89]
+		}, -- [68]
 		{
 			"Unstable Runic Mark on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1998,7 +1538,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743125,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [90]
+		}, -- [69]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2020,7 +1560,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743128,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [91]
+		}, -- [70]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2042,7 +1582,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743130,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [92]
+		}, -- [71]
 		{
 			"1", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2064,7 +1604,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743130,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [93]
+		}, -- [72]
 		{
 			"Uproot on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2086,7 +1626,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743291,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [94]
+		}, -- [73]
 		{
 			"Uproot on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2108,7 +1648,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743312,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [95]
+		}, -- [74]
 		{
 			"Runic Mark on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2130,7 +1670,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743645,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [96]
+		}, -- [75]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2152,7 +1692,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743648,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [97]
+		}, -- [76]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2174,7 +1714,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743649,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
+		}, -- [77]
 		{
 			"1", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2196,7 +1736,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743650,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [78]
 		{
 			"Runic Mark on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2218,7 +1758,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743746,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [100]
+		}, -- [79]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2240,7 +1780,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743749,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [80]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2262,7 +1802,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743750,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [81]
 		{
 			"Virulent Pathogen on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2284,7 +1824,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743795,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
+		}, -- [82]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2306,7 +1846,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743797,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [83]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2328,7 +1868,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743798,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
+		}, -- [84]
 		{
 			"1", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2350,7 +1890,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591743799,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [106]
+		}, -- [85]
 		{
 			"3", -- [1]
 			"Fishmongerr-Dalaran", -- [2]
@@ -2372,7 +1912,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Fishmongerr|r",
 			[51] = 1591743830,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [107]
+		}, -- [86]
 		{
 			"2", -- [1]
 			"Fishmongerr-Dalaran", -- [2]
@@ -2394,7 +1934,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Fishmongerr|r",
 			[51] = 1591743831,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [87]
 		{
 			"1", -- [1]
 			"Fishmongerr-Dalaran", -- [2]
@@ -2416,7 +1956,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Fishmongerr|r",
 			[51] = 1591743832,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [109]
+		}, -- [88]
 		{
 			"3", -- [1]
 			"Fishmongerr-Dalaran", -- [2]
@@ -2438,7 +1978,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Fishmongerr|r",
 			[51] = 1591743840,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [110]
+		}, -- [89]
 		{
 			"2", -- [1]
 			"Fishmongerr-Dalaran", -- [2]
@@ -2460,7 +2000,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Fishmongerr|r",
 			[51] = 1591743841,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [111]
+		}, -- [90]
 		{
 			"1", -- [1]
 			"Fishmongerr-Dalaran", -- [2]
@@ -2482,7 +2022,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Fishmongerr|r",
 			[51] = 1591743842,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [112]
+		}, -- [91]
 		{
 			"|cffffff00Teller Farm is under attack!|r", -- [1]
 			"", -- [2]
@@ -2504,7 +2044,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591745035,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
+		}, -- [92]
 		{
 			"|cffffff00Arom's Stand is under attack!|r", -- [1]
 			"", -- [2]
@@ -2526,7 +2066,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591745618,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
+		}, -- [93]
 		{
 			"|cffffff00Watchman's Tower is under attack!|r", -- [1]
 			"", -- [2]
@@ -2548,7 +2088,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591745708,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [115]
+		}, -- [94]
 		{
 			"|cffffff00Arom's Stand is under attack!|r", -- [1]
 			"", -- [2]
@@ -2570,7 +2110,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591745752,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [116]
+		}, -- [95]
 		{
 			"|cffffff00Arom's Stand is under attack!|r", -- [1]
 			"", -- [2]
@@ -2592,7 +2132,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591745813,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [117]
+		}, -- [96]
 		{
 			"|cffffff00Watchman's Rise is under attack!|r", -- [1]
 			"", -- [2]
@@ -2614,7 +2154,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591745826,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [118]
+		}, -- [97]
 		{
 			"|cffffff00Arom's Stand is under attack!|r", -- [1]
 			"", -- [2]
@@ -2636,7 +2176,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591745906,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [119]
+		}, -- [98]
 		{
 			"Unstable Runic Mark on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2658,7 +2198,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591746277,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [120]
+		}, -- [99]
 		{
 			"3", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2680,7 +2220,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591746280,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [121]
+		}, -- [100]
 		{
 			"2", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2702,7 +2242,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591746281,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [122]
+		}, -- [101]
 		{
 			"1", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2724,7 +2264,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591746282,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [123]
+		}, -- [102]
 		{
 			"Soul Thorns on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2746,7 +2286,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591746475,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [124]
+		}, -- [103]
 		{
 			"Soul Thorns on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -2768,7 +2308,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1591746497,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [125]
+		}, -- [104]
 		{
 			"|cffffff00Arom's Stand is under attack!|r", -- [1]
 			"", -- [2]
@@ -2790,7 +2330,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591747142,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [105]
 		{
 			"|cffffff00Arom's Stand is under attack!|r", -- [1]
 			"", -- [2]
@@ -2812,6 +2352,468 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1591747206,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [106]
+		{
+			"you can pull big", -- [1]
+			"Scarpa-Sargeras", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Scarpa-Sargeras", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			145, -- [11]
+			"Player-76-0A6E07BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Scarpa-Sargeras|r",
+			[51] = 1591824987,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [107]
+		{
+			"and make this fast", -- [1]
+			"Scarpa-Sargeras", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Scarpa-Sargeras", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			146, -- [11]
+			"Player-76-0A6E07BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Scarpa-Sargeras|r",
+			[51] = 1591824990,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [108]
+		{
+			"<3", -- [1]
+			"Scarpa-Sargeras", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Scarpa-Sargeras", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			147, -- [11]
+			"Player-76-0A6E07BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Scarpa-Sargeras|r",
+			[51] = 1591824996,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [109]
+		{
+			"May I please have |cff0070dd|Hitem:162541::::::::120:70::2:5:4778:6516:6515:1587:4785:::|h[Band of the Roving Scalawag]|h|r if you don't need it?", -- [1]
+			"Scarpa-Sargeras", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Scarpa-Sargeras", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			194, -- [11]
+			"Player-76-0A6E07BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Scarpa-Sargeras|r",
+			[51] = 1591825314,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [110]
+		{
+			"May I please have |cff0070dd|Hitem:159461::::::::120:70::2:5:4778:6516:6513:1587:4785:::|h[Band of the Ancient Dredger]|h|r if you don't need it?", -- [1]
+			"Nelfdrid-Korialstrasz", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Nelfdrid-Korialstrasz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			285, -- [11]
+			"Player-123-060665CB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
+			[51] = 1591825678,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [111]
+		{
+			"ty", -- [1]
+			"Nelfdrid-Korialstrasz", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Nelfdrid-Korialstrasz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			294, -- [11]
+			"Player-123-060665CB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
+			[51] = 1591825755,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [112]
+		{
+			"yw", -- [1]
+			"Nelfdrid-Korialstrasz", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nelfdrid-Korialstrasz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			297, -- [11]
+			"Player-123-060665CB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
+			[51] = 1591825775,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [113]
+		{
+			"Putrid Waters on Avisar", -- [1]
+			"Avisar-Dalaran", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Avisar-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			304, -- [11]
+			"Player-3683-0BE4455C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Avisar|r",
+			[51] = 1591825818,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [114]
+		{
+			"ty", -- [1]
+			"Nimbexx-Thunderlord", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nimbexx-Thunderlord", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			308, -- [11]
+			"Player-77-0CC1E71E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Nimbexx-Thunderlord|r",
+			[51] = 1591825842,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [115]
+		{
+			"3", -- [1]
+			"Avisar-Dalaran", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Avisar-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			309, -- [11]
+			"Player-3683-0BE4455C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Avisar|r",
+			[51] = 1591825845,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [116]
+		{
+			"2", -- [1]
+			"Avisar-Dalaran", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Avisar-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			310, -- [11]
+			"Player-3683-0BE4455C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Avisar|r",
+			[51] = 1591825846,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [117]
+		{
+			"1", -- [1]
+			"Avisar-Dalaran", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Avisar-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			311, -- [11]
+			"Player-3683-0BE4455C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Avisar|r",
+			[51] = 1591825847,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [118]
+		{
+			"yw", -- [1]
+			"Nelfdrid-Korialstrasz", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nelfdrid-Korialstrasz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			318, -- [11]
+			"Player-123-060665CB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
+			[51] = 1591825872,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [119]
+		{
+			"ty all", -- [1]
+			"Nelfdrid-Korialstrasz", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nelfdrid-Korialstrasz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			320, -- [11]
+			"Player-123-060665CB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Nelfdrid-Korialstrasz|r",
+			[51] = 1591825876,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [120]
+		{
+			"May I please have |cff0070dd|Hitem:159431::::::::120:70::2:4:4818:1587:4785:6259:::|h[Kraken Shell Pauldrons]|h|r if you don't need it?", -- [1]
+			"Hacklol-Akama", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Hacklol-Akama", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			323, -- [11]
+			"Player-84-0796D331", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cHacklol-Akama|r",
+			[51] = 1591825886,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [121]
+		{
+			"|cffffff00Dazar'alor is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
+			0, -- [10]
+			755, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1591828566,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [122]
+		{
+			"|cffffff00Mariner's Row is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Tiragarde Sound", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Tiragarde Sound", -- [9]
+			0, -- [10]
+			613, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1591980273,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [123]
+		{
+			"|cffffff00Mariner's Row is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Tiragarde Sound", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Tiragarde Sound", -- [9]
+			0, -- [10]
+			614, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1591980341,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [124]
+		{
+			"go?", -- [1]
+			"Banuga-Nemesis", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Banuga-Nemesis", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			578, -- [11]
+			"Player-3208-0BDB5136", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcBanuga-Nemesis|r",
+			[51] = 1591999604,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [125]
+		{
+			"1/1 Azurethos slain", -- [1]
+			"Avisar-Dalaran", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Avisar-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			589, -- [11]
+			"Player-3683-0BE4455C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Avisar|r",
+			[51] = 1591999719,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [126]
+		{
+			"Completed: The Winged Typhoon", -- [1]
+			"Avisar-Dalaran", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Avisar-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			591, -- [11]
+			"Player-3683-0BE4455C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Avisar|r",
+			[51] = 1591999719,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [127]
 	},
 }
