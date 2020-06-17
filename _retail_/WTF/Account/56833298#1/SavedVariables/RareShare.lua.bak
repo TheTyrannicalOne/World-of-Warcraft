@@ -16,8 +16,8 @@ RareShareDB = {
 		["ChatAnnounce"] = true,
 		["OnDeath"] = false,
 		["CChannel"] = {
-			["CID"] = 1,
 			["CName"] = "General - Nazjatar",
+			["CID"] = 1,
 		},
 		["Duplicates"] = true,
 	},

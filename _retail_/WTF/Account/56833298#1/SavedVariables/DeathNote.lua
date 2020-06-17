@@ -4,16 +4,16 @@ DeathNoteDB = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 	},
@@ -24,25 +24,25 @@ DeathNoteDB = {
 		},
 		["Vancard - Zul'jin"] = {
 		},
-		["Darnastris - Dalaran"] = {
+		["Tyrannithal - Argent Dawn"] = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Zulbathal - Zul'jin"] = {
 		},
 		["Datgore - Zul'jin"] = {
 		},
-		["Tyrannithal - Argent Dawn"] = {
+		["Darnastris - Dalaran"] = {
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
 		["Durlok - Black Dragonflight"] = {
 		},
-		["Shimzo - Zul'jin"] = {
-		},
 		["Fantastiburo - Zul'jin"] = {
+		},
+		["Shimzo - Zul'jin"] = {
 		},
 		["Shaekhan - Zul'jin"] = {
 		},

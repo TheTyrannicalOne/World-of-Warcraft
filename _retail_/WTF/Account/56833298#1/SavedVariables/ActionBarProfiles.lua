@@ -4,16 +4,16 @@ ActionBarProfilesDBv3 = {
 		["Avisar - Dalaran"] = "PALADIN",
 		["Thorinbane - Dalaran"] = "WARRIOR",
 		["Vancard - Zul'jin"] = "MAGE",
-		["Darnastris - Dalaran"] = "MAGE",
-		["Ruffinton - Dalaran"] = "ROGUE",
-		["Kotalkhan - Zul'jin"] = "MONK",
-		["Datgore - Zul'jin"] = "HUNTER",
 		["Tyrannithal - Argent Dawn"] = "DEMONHUNTER",
+		["Ruffinton - Dalaran"] = "ROGUE",
 		["Zulbathal - Zul'jin"] = "DRUID",
+		["Datgore - Zul'jin"] = "HUNTER",
+		["Darnastris - Dalaran"] = "MAGE",
+		["Kotalkhan - Zul'jin"] = "MONK",
 		["Shanyt - Argent Dawn"] = "WARRIOR",
 		["Durlok - Black Dragonflight"] = "DRUID",
-		["Shimzo - Zul'jin"] = "ROGUE",
 		["Fantastiburo - Zul'jin"] = "SHAMAN",
+		["Shimzo - Zul'jin"] = "ROGUE",
 		["Shaekhan - Zul'jin"] = "MONK",
 		["Tinkster - Dalaran"] = "WARLOCK",
 	},
@@ -30,13 +30,13 @@ ActionBarProfilesDBv3 = {
 		},
 		["DEMONHUNTER"] = {
 		},
-		["PALADIN"] = {
+		["SHAMAN"] = {
 		},
 		["DRUID"] = {
 		},
 		["MONK"] = {
 		},
-		["SHAMAN"] = {
+		["PALADIN"] = {
 		},
 	},
 }

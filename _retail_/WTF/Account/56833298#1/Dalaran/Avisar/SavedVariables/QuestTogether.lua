@@ -7,38 +7,60 @@ QuestTogether = {
 				"0/5 Elemental-Imbued Weapon broken", -- [1]
 			},
 		},
+		[54485] = {
+			["title"] = "Battle of Dazar'alor",
+			["objectives"] = {
+				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+			},
+		},
+		[56128] = {
+			["title"] = "Drowning the Horde",
+			["objectives"] = {
+				"0/25 Horde Players slain", -- [1]
+			},
+		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
+			},
+		},
+		[57743] = {
+			["title"] = "Conquest's Reward",
+			["objectives"] = {
+				"160/500 Earn Conquest", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
+			},
+		},
+		[55608] = {
+			["title"] = "Shop Project",
+			["objectives"] = {
+				"0/1 Mechanobot Ignition", -- [1]
+				"0/1 Shellsteel Casing", -- [2]
+				"0/1 Multi-Leg Chaindrive", -- [3]
+			},
+		},
+		[56131] = {
+			["title"] = "Security First",
+			["objectives"] = {
+				"0/3 Rare Enemies slain in Mechagon", -- [1]
 			},
 		},
 		[13413] = {
 			["title"] = "Aces High!",
 			["objectives"] = {
 				"1/5 Scalesworn Elites Killed", -- [1]
-			},
-		},
-		[56162] = {
-			["title"] = "Back Out to Sea",
-			["objectives"] = {
-			},
-		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
-		[543] = {
-			["title"] = "The Perenolde Tiara",
-			["objectives"] = {
-				"0/1 Perenolde Tiara", -- [1]
-			},
-		},
-		[53037] = {
-			["title"] = "Emissary of War",
-			["objectives"] = {
-				"0/4 Mythic dungeons completed", -- [1]
 			},
 		},
 		[54185] = {
@@ -48,10 +70,16 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[58496] = {
-			["title"] = "An Unwelcome Advisor",
+		[57327] = {
+			["title"] = "Prototypes for Inspiration",
 			["objectives"] = {
-				"0/1 Speak with Anduin Wrynn", -- [1]
+				"0/150 Prototype Implant", -- [1]
+			},
+		},
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
+			["objectives"] = {
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[39060] = {
@@ -62,10 +90,24 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
+		[55708] = {
+			["title"] = "Upgraded",
+			["objectives"] = {
+				"0/20 Microcogs collected", -- [1]
+			},
+		},
 		[54438] = {
 			["title"] = "Crucible of Storms: Relics of Shadow",
 			["objectives"] = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
+			},
+		},
+		[57006] = {
+			["title"] = "A Worthy Ally",
+			["objectives"] = {
+				"0/1 Use the Deepflame Campfire", -- [1]
+				"0/1 Choose an ally", -- [2]
+				"0/3 Ally quests complete", -- [3]
 			},
 		},
 		[36615] = {
@@ -75,22 +117,34 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[56489] = {
-			["title"] = "Restless Dead",
+		[58502] = {
+			["title"] = "Where the Heart Is",
 			["objectives"] = {
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[53038] = {
+			["title"] = "The Very Best",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"0/5 Players defeated in pet battle", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[56211] = {
+			["title"] = "Scrying Stones",
+			["objectives"] = {
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
+			},
+		},
+		[56119] = {
+			["title"] = "The Waveblade Ankoan",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[31486] = {
@@ -99,16 +153,16 @@ QuestTogether = {
 				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
+		[56648] = {
+			["title"] = "Call to Arms: Nazjatar",
 			["objectives"] = {
-				"160/500 Earn Conquest", -- [1]
+				"0/25 Slay Horde Players", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[54975] = {
+			["title"] = "A Brief Respite",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 Reach rank 3 with an Ankoan ally", -- [1]
 			},
 		},
 		[42483] = {
@@ -133,22 +187,24 @@ QuestTogether = {
 				"2/25 Slay Horde Players", -- [1]
 			},
 		},
-		[54485] = {
-			["title"] = "Battle of Dazar'alor",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
-				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }

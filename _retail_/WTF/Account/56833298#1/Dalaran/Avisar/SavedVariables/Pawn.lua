@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
-	["LastPlayerFullName"] = "Avisar-Dalaran",
-	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 157897,
@@ -11,13 +9,13 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 441,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:6316:1578:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 469,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:6316:1606:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 159455,
-			["Level"] = 405,
-			["Link"] = "|cff0070dd|Hitem:159455::::::::120:70::1:5:4817:1572:4785:6259:4775:::|h[Pauldrons of the Horned Horror]|h|r",
+			["ID"] = 159439,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:159439::::::::120:70::2:5:4818:1587:4785:6259:4775:::|h[C'thraxxi Binders Pauldrons]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -31,9 +29,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:157997::::::::120:70::27:5:4803:6516:6515:1607:4785:::|h[Harbormaster Greatbelt]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 159419,
-			["Level"] = 400,
-			["Link"] = "|cff0070dd|Hitem:159419::::::::120:70::1:5:4777:6516:6515:1572:4785:::|h[Ironhull's Reinforced Legplates]|h|r",
+			["ID"] = 157931,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:157931::::::::120:70::26:5:4803:6516:6515:1607:4785:::|h[Wargreaves of Rezan's Bladeguard]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 158055,
@@ -69,20 +67,21 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158163::::::::120:70::27:4:4803:6513:1607:4785:::|h[First Mate's Spyglass]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 172846,
-			["Level"] = 390,
+			["ID"] = 158154,
+			["Level"] = 415,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:172846::::::::120:70::47:3:6513:1502:4785:::|h[Corrupted Aspirant's Medallion]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158154::::::::120:70::26:4:4803:6515:1607:4785:::|h[Emblem of Zandalar]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 155232,
-			["Level"] = 290,
-			["Link"] = "|cff1eff00|Hitem:155232::::::::120:70:512:11:1:4793:120:::|h[Proudmoore Battalion Cloak]|h|r",
+			["ID"] = 155164,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:155164::::::::120:70::26:3:4803:1607:4785:::|h[Beryl-Tide Greatcloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 163890,
-			["Level"] = 370,
-			["Link"] = "|cffa335ee|Hitem:163890::::::::120:70::30:2:1562:4786:::|h[7th Legionnaire's Claymore]|h|r",
+			["ID"] = 158093,
+			["Level"] = 410,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff0070dd|Hitem:158093::::::::120:70::25:5:4803:6516:6515:1602:4785:::|h[Stagheart Gavel]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 117413,
@@ -90,7 +89,8 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:117413::::::::120:70::14::::|h[Stormwind Shield]|h|r",
 		}, -- [17]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Avisar-Dalaran",
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {
@@ -104,6 +104,7 @@ PawnOptions = {
 			["Name"] = "Ashbringer",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

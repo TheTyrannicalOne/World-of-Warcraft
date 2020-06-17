@@ -10,8 +10,8 @@ RareShareDB = {
 			["Duplicates"] = true,
 		},
 		["CChannel"] = {
-			["CName"] = "General - Nazjatar",
 			["CID"] = 1,
+			["CName"] = "General - Mechagon",
 		},
 		["OnDeath"] = false,
 		["Sound"] = {
