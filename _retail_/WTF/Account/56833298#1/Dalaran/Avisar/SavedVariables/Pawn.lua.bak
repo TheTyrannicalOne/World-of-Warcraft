@@ -5,19 +5,19 @@ PawnOptions = {
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 157897,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:157897::::::::120:70::25:4:1607:4785:6258:4775:::|h[Bone-Fetished Faceguard]|h|r",
+			["ID"] = 173836,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:173836::::::::120:70::9:4:1487:4786:6502:4775:::|h[Malignant Leviathan's Helm]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 453,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:6316:1590:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 501,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:6316:1638:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 159439,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:159439::::::::120:70::2:4:4818:1587:4785:6259:::|h[C'thraxxi Binders Pauldrons]|h|r",
+			["ID"] = 158060,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:158060::::::::120:70::28:4:1622:4786:6503:4775:::|h[Shoalbreach Pauldrons]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -26,29 +26,29 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159416::::::::120:70::2:5:4818:1587:4785:6257:4775:::|h[Harpooner's Plate Cuirass]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 157997,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:157997::::::::120:70::27:5:4803:6516:6515:1607:4785:::|h[Harbormaster Greatbelt]|h|r",
+			["ID"] = 157901,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:157901::::::::120:70::27:5:4803:6516:6513:1612:4785:::|h[Bone-Fetished Greatbelt]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 159419,
-			["Level"] = 400,
-			["Link"] = "|cff0070dd|Hitem:159419::::::::120:70::1:5:4777:6516:6515:1572:4785:::|h[Ironhull's Reinforced Legplates]|h|r",
+			["ID"] = 173820,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:173820::::::::120:70::29:6:6412:4803:6515:6516:1487:4786:::|h[Malignant Leviathan's Greaves]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 158055,
-			["Level"] = 405,
-			["Link"] = "|cff0070dd|Hitem:158055::::::::120:70::26:5:4803:6516:6513:1597:4785:::|h[Shoalbreach Treads]|h|r",
+			["ID"] = 163421,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:163421::::::::120:70::28:6:5125:4802:6516:6513:1632:4786:::|h[7th Legionnaire's Greaves]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 160474,
-			["Level"] = 410,
-			["Link"] = "|cff0070dd|Hitem:160474::::::::120:70::26:3:4803:1602:4785:::|h[Vicemaul Wristpinchers]|h|r",
+			["ID"] = 174956,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:174956::::::::120:70::28:5:6540:6513:6578:6579:4803:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 157928,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:157928::::::::120:70::26:5:4803:6516:6515:1607:4785:::|h[Battlegloves of Rezan's Bladeguard]|h|r",
+			["ID"] = 157960,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:157960::::::::120:70::27:5:4803:6516:6515:1612:4785:::|h[Dunecrawler Crushers]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 158362,
@@ -63,32 +63,32 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158151::::::::120:70::27:7:4803:6578:6579:6539:6513:1612:4785:::|h[Zandalari Band]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 158163,
-			["Level"] = 415,
+			["ID"] = 172848,
+			["Level"] = 425,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff0070dd|Hitem:158163::::::::120:70::27:4:4803:6513:1607:4785:::|h[First Mate's Spyglass]|h|r",
+			["Link"] = "|cff0070dd|Hitem:172848::::::::120:70::47:4:41:6513:1537:4785:::|h[Corrupted Aspirant's Insignia]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 172846,
-			["Level"] = 390,
+			["ID"] = 158154,
+			["Level"] = 415,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:172846::::::::120:70::47:3:6513:1502:4785:::|h[Corrupted Aspirant's Medallion]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158154::::::::120:70::26:4:4803:6515:1607:4785:::|h[Emblem of Zandalar]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 155164,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:155164::::::::120:70::26:3:4803:1607:4785:::|h[Beryl-Tide Greatcloak]|h|r",
+			["ID"] = 169223,
+			["Level"] = 470,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:70::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158093,
-			["Level"] = 410,
-			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff0070dd|Hitem:158093::::::::120:70::25:5:4803:6516:6515:1602:4785:::|h[Stagheart Gavel]|h|r",
+			["ID"] = 172767,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:172767::::::::120:70::25:6:6387:6388:1552:4786:6516:6513:::|h[Corrupted Gladiator's Greatsword]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 117413,
-			["Level"] = 136,
-			["Link"] = "|cff0070dd|Hitem:117413::::::::120:70::14::::|h[Stormwind Shield]|h|r",
+			["ID"] = 159658,
+			["Level"] = 430,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:159658::::::::120:70::23:5:4779:6516:6515:1602:4786:::|h[Cudgel of Correctional Oversight]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

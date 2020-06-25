@@ -1,11 +1,4 @@
 Version: 1
-Frame: scanner_button
-FrameLevel: 200
-Anchor: LEFT
-X: 215
-Y: 142
-W: 200
-H: 50
 Frame: BagItemTooltipMover
 FrameLevel: 2
 Anchor: TOP
@@ -125,6 +118,13 @@ X: 161
 Y: 203
 W: 400
 H: 140
+Frame: RareShare_RareFrame
+FrameLevel: 1
+Anchor: TOP
+X: -9
+Y: -20
+W: 200
+H: 80
 Frame: RematchDialog
 FrameLevel: 1
 Anchor: CENTER
@@ -153,3 +153,10 @@ X: 0
 Y: 43
 W: 300
 H: 300
+Frame: scanner_button
+FrameLevel: 200
+Anchor: LEFT
+X: 215
+Y: 142
+W: 200
+H: 50

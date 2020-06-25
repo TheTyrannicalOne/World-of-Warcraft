@@ -4,15 +4,15 @@ QuestTogether = {
 		[13041] = {
 			["title"] = "Finish the Shipment",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Chalcedony", -- [1]
 			},
 		},
 		[27354] = {
 			["title"] = "Mastering the Arcane",
 			["objectives"] = {
-				"0/1  ", -- [1]
-				"0/5  ", -- [2]
-				"0/5  ", -- [3]
+				"0/1 Silverlaine's Enchanted Crystal", -- [1]
+				"0/5 Moontouched Wood", -- [2]
+				"0/5 Ghostly Essence", -- [3]
 			},
 		},
 		[25186] = {
@@ -24,21 +24,21 @@ QuestTogether = {
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[12292] = {
 			["title"] = "Local Support",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Cedar Chest", -- [1]
 			},
 		},
 		[28398] = {
 			["title"] = "The Pyromancer's Grimoire",
 			["objectives"] = {
 				"0/6 Twilight Emissary slain", -- [1]
-				"0/1  ", -- [2]
+				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
 		[12789] = {

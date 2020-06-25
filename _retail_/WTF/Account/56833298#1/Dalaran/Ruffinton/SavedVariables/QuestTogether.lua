@@ -10,7 +10,7 @@ QuestTogether = {
 		[13922] = {
 			["title"] = "In the Hands of the Perverse",
 			["objectives"] = {
-				"0/5  ", -- [1]
+				"0/5 Fallen Moonstone", -- [1]
 			},
 		},
 		[26479] = {
@@ -51,7 +51,7 @@ QuestTogether = {
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
@@ -73,14 +73,14 @@ QuestTogether = {
 		[25616] = {
 			["title"] = "Hellscream's Legacy",
 			["objectives"] = {
-				"0/10   slain", -- [1]
+				"0/10 Krom'gar Incinerator slain", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }

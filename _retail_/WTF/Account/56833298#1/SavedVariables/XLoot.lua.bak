@@ -8,9 +8,9 @@ XLootADB = {
 						["visible"] = false,
 					},
 					["roll_anchor"] = {
-						["y"] = 564.0005493164062,
-						["x"] = 1595.000122070313,
 						["visible"] = false,
+						["x"] = 1595.000122070313,
+						["y"] = 564.0005493164062,
 					},
 				},
 			},
@@ -22,6 +22,8 @@ XLootADB = {
 				},
 			},
 		},
+		["Master"] = {
+		},
 		["Monitor"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -31,23 +33,21 @@ XLootADB = {
 				},
 			},
 		},
-		["Master"] = {
-		},
 	},
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 	},

@@ -10,7 +10,7 @@ QuestTogether = {
 		[13922] = {
 			["title"] = "In the Hands of the Perverse",
 			["objectives"] = {
-				"0/5  ", -- [1]
+				"0/5 Fallen Moonstone", -- [1]
 			},
 		},
 		[26479] = {
@@ -48,18 +48,6 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
-		[26838] = {
-			["title"] = "Rebels Without a Clue",
-			["objectives"] = {
-			},
-		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -68,6 +56,24 @@ QuestTogether = {
 				"Defeat Kela Grimtotem", -- [3]
 				"Defeat Zoltan", -- [4]
 				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
+			["objectives"] = {
+			},
+		},
+		[53038] = {
+			["title"] = "The Very Best",
+			["objectives"] = {
+				"0/5 Players defeated in pet battle", -- [1]
 			},
 		},
 		[25616] = {
@@ -79,8 +85,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

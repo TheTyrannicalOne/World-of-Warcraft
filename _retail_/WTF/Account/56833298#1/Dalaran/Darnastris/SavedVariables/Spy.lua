@@ -1,10 +1,5 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
-	["KOSData"] = {
-	},
 	["PlayerData"] = {
 		["Warctooth-Thunderhorn"] = {
 			["mapID"] = 125,
@@ -64,5 +59,10 @@ SpyPerCharDB = {
 			["isGuess"] = false,
 			["time"] = 1589562307,
 		},
+	},
+	["IgnoreData"] = {
+	},
+	["version"] = "1.1",
+	["KOSData"] = {
 	},
 }

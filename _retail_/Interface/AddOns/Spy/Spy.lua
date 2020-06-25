@@ -7,7 +7,7 @@ local fonts = SM:List("font")
 local _
 
 Spy = LibStub("AceAddon-3.0"):NewAddon("Spy", "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceTimer-3.0")
-Spy.Version = "3.6.33"
+Spy.Version = "3.7.0"
 Spy.DatabaseVersion = "1.1"
 Spy.Signature = "[Spy]"
 Spy.ButtonLimit = 15
@@ -400,8 +400,8 @@ Spy.options = {
 					set = function(info, value)
 						Spy.db.profile.DisplayListData = value
 						Spy:RefreshCurrentList() 
-					end,					
-				},				
+					end,
+				},
 				SelectFont = {
 					type = "select",
 					order = 17,
@@ -618,10 +618,10 @@ Spy.options = {
 						return Spy.db.profile.DisplayWarnings
 					end,
 					set = function(info, value)
-						Spy.db.profile.DisplayWarnings = value 
+						Spy.db.profile.DisplayWarnings = value
 						Spy:UpdateAlertWindow()
-					end,					
-				},				
+					end,
+				},
 				WarnOnStealth = {
 					name = L["WarnOnStealth"],
 					desc = L["WarnOnStealthDescription"],
@@ -1344,7 +1344,7 @@ local Default_Profile = {
 --				x = 0,
 --				y = -140,
 				x = 750,
-				y = 750,				
+				y = 750,
 			},
 			NameSize=14,
 			LocationSize=10,			

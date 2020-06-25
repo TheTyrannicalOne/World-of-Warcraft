@@ -1643,13 +1643,13 @@ function BtWQuestsTooltipMixin:SetChain(chainID, character)
         self:AddLine(GREEN_FONT_COLOR_CODE..L["BTWQUESTS_QUEST_CHAIN_ACTIVE"]..FONT_COLOR_CODE_CLOSE)
     end
 
-    local prerequisites = chain:GetPrerequisites()
+    local prerequisites, hasLowPrio = chain:GetPrerequisites()
     if prerequisites then
         local addedPrerequisite
         for _,prerequisite in ipairs(prerequisites) do
             prerequisite = prerequisite:GetVariation(character) or prerequisite;
 
-            if prerequisite:IsValidForCharacter(character) and prerequisite:Visible(character) then
+            if prerequisite:IsValidForCharacter(character) and prerequisite:Visible(character, IsModifiedClick("SHIFT")) then
                 if not addedPrerequisite then
                     self:AddLine(" ")
                     self:AddLine(L["BTWQUESTS_TOOLTIP_PREREQUISITES"])

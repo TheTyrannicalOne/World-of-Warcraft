@@ -4,14 +4,14 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/cancelform", -- [1]
-		"/wAVE", -- [2]
-		"/reloadui", -- [3]
+		"/fishingbuddy", -- [2]
+		"/allthethings", -- [3]
 		"/wave", -- [4]
-		"/fishingbuddy", -- [5]
+		"/wAVE", -- [5]
 		"/omnicc", -- [6]
 		"/skada hide", -- [7]
 		"/reload", -- [8]
-		"/allthethings", -- [9]
+		"/reloadui", -- [9]
 		"/canimogit", -- [10]
 		"/opie", -- [11]
 		"/dance", -- [12]

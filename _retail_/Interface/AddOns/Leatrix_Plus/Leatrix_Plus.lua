@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.25 (16th June 2020)
+-- 	Leatrix Plus 8.3.26 (24th June 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "8.3.25"
+	LeaPlusLC["AddonVer"] = "8.3.26"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -394,6 +394,7 @@
 
 --	Set lock state for configuration buttons
 	function LeaPlusLC:SetDim()
+		LeaPlusLC:LockOption("AutomateQuests", "AutomateQuestsBtn", false)			-- Automate quests
 		LeaPlusLC:LockOption("AutoRepairGear", "AutoRepairBtn", false)				-- Repair automatically
 		LeaPlusLC:LockOption("InviteFromWhisper", "InvWhisperBtn", false)			-- Invite from whispers
 		LeaPlusLC:LockOption("MailFontChange", "MailTextBtn", true)					-- Resize mail text
@@ -845,6 +846,11 @@
 
 				},
 
+				-- Ready check
+				["MuteReady"] = {
+					"sound/interface/levelup2.ogg#567478",
+				},
+
 			}
 
 			-- Give table file level scope (its used during logout and for wipe and admin commands)
@@ -868,9 +874,10 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteFizzle", "Fizzle", 16, -92, false, "If checked, the spell fizzle sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteInterface", "Interface", 16, -112, false, "If checked, the interface button sound, the chat frame tab click sound and the game menu toggle sound will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSniffing", "Sniffing", 16, -132, false, "If checked, the worgen sniffing sounds will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBalls", "Balls", 16, -152, false, "If checked, the Foot Ball sounds will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteTrains", "Trains", 16, -172, false, "If checked, train sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteTrains", "Trains", 16, -152, false, "If checked, train sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBalls", "Balls", 16, -172, false, "If checked, the Foot Ball sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -192, false, "If checked, the mechanical guild vault idle sound will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteReady", "Ready", 16, -212, false, "If checked, the ready check sound will be muted.")
 
 			LeaPlusLC:MakeTx(SoundPanel, "Combat", 140, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 140, -92, false, "If checked, battle shouts heard when casting specific spells will be muted.")
@@ -947,6 +954,7 @@
 					for k, v in pairs(muteTable) do
 						LeaPlusLC[k] = "On"
 					end
+					LeaPlusLC["MuteReady"] = "Off"
 					SetupMute()
 				else
 					SoundPanel:Show()
@@ -1921,6 +1929,43 @@
 
 		do
 
+			-- Create configuration panel
+			local QuestPanel = LeaPlusLC:CreatePanel("Automate quests", "QuestPanel")
+
+			LeaPlusLC:MakeTx(QuestPanel, "Settings", 16, -72)
+			LeaPlusLC:MakeCB(QuestPanel, "AutoQuestShift", "Require shift key for quest automation", 16, -92, false, "If checked, you will need to hold the shift key down for quests to be automated.|n|nIf unchecked, holding shift will prevent quests from being automated.")
+
+			-- Help button hidden
+			QuestPanel.h:Hide()
+
+			-- Back button handler
+			QuestPanel.b:SetScript("OnClick", function() 
+				QuestPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page1"]:Show();
+				return
+			end)
+
+			-- Reset button handler
+			QuestPanel.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				LeaPlusLC["AutoQuestShift"] = "Off"
+
+				-- Refresh panel
+				QuestPanel:Hide(); QuestPanel:Show()
+
+			end)
+
+			-- Show panal when options panel button is clicked
+			LeaPlusCB["AutomateQuestsBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["AutoQuestShift"] = "Off"
+				else
+					QuestPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
 			-- Funcion to ignore specific NPCs
 			local function isNpcBlocked(actionType)
 				local npcGuid = UnitGUID("target") or nil
@@ -2072,8 +2117,10 @@
 					return
 				end
 
-				-- Do nothing if SHIFT key is being held
-				if IsShiftKeyDown() then return end
+				-- Check for SHIFT key modifier
+				if LeaPlusLC["AutoQuestShift"] == "On" and not IsShiftKeyDown() then return 
+				elseif LeaPlusLC["AutoQuestShift"] == "Off" and IsShiftKeyDown() then return 
+				end
 
 				----------------------------------------------------------------------
 				-- Accept quests automatically
@@ -7650,6 +7697,7 @@
 
 				-- Automation
 				LeaPlusLC:LoadVarChk("AutomateQuests", "Off")				-- Automate quests
+				LeaPlusLC:LoadVarChk("AutoQuestShift", "Off")				-- Automate quests requires shift
 				LeaPlusLC:LoadVarChk("AutomateGossip", "Off")				-- Automate gossip
 				LeaPlusLC:LoadVarChk("AutoAcceptSummon", "Off")				-- Accept summon
 				LeaPlusLC:LoadVarChk("AutoAcceptRes", "Off")				-- Accept resurrection
@@ -7815,6 +7863,7 @@
 
 			-- Automation
 			LeaPlusDB["AutomateQuests"]			= LeaPlusLC["AutomateQuests"]
+			LeaPlusDB["AutoQuestShift"]			= LeaPlusLC["AutoQuestShift"]
 			LeaPlusDB["AutomateGossip"]			= LeaPlusLC["AutomateGossip"]
 			LeaPlusDB["AutoAcceptSummon"] 		= LeaPlusLC["AutoAcceptSummon"]
 			LeaPlusDB["AutoAcceptRes"] 			= LeaPlusLC["AutoAcceptRes"]
@@ -8669,11 +8718,14 @@
 					if tonumber(arg1) and tonumber(arg1) < 999999999 then
 						local questCompleted = IsQuestFlaggedCompleted(arg1)
 						local questTitle = C_TaskQuest.GetQuestInfoByQuestID(arg1) or C_QuestLog.GetQuestInfo(arg1) or L["Unknown"]
-						if questCompleted then
-							LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Completed."])
-						else
-							LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Not completed."])
-						end
+						C_Timer.After(0.5, function()
+							local questTitle = C_TaskQuest.GetQuestInfoByQuestID(arg1) or C_QuestLog.GetQuestInfo(arg1) or L["Unknown"]
+							if questCompleted then
+								LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Completed."])
+							else
+								LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Not completed."])
+							end
+						end)
 					else
 						LeaPlusLC:Print("Invalid quest ID.")
 					end
@@ -9487,6 +9539,7 @@
 				LeaPlusLC:PlayerLogout(true)					-- Reset permanent settings
 				-- Automation
 				LeaPlusDB["AutomateQuests"] = "On"				-- Automate quests
+				LeaPlusDB["AutoQuestShift"] = "Off"				-- Automate quests requires shift
 				LeaPlusDB["AutomateGossip"] = "On"				-- Automate gossip
 				LeaPlusDB["AutoAcceptSummon"] = "On"			-- Accept summon
 				LeaPlusDB["AutoAcceptRes"] = "On"				-- Accept resurrection
@@ -9713,6 +9766,7 @@
 				for k, v in pairs(LeaPlusLC["muteTable"]) do
 					LeaPlusDB[k] = "On"
 				end
+				LeaPlusDB["MuteReady"] = "Off"	-- Mute ready check
 
 				-- Reload
 				ReloadUI()
@@ -9874,6 +9928,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoSellJunk"				,	"Sell junk automatically"		,	340, -92, 	false,	"If checked, all grey items in your bags will be sold automatically when you visit a merchant.|n|nYou can hold the shift key down when you talk to a merchant to override this setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoRepairGear"			, 	"Repair automatically"			,	340, -112, 	false,	"If checked, your gear will be repaired automatically when you visit a suitable merchant.|n|nYou can hold the shift key down when you talk to a merchant to override this setting.")
 
+ 	LeaPlusLC:CfgBtn("AutomateQuestsBtn", LeaPlusCB["AutomateQuests"])
  	LeaPlusLC:CfgBtn("AutoRepairBtn", LeaPlusCB["AutoRepairGear"])
 
 ----------------------------------------------------------------------

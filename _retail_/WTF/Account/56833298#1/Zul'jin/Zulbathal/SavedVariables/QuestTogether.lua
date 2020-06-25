@@ -104,7 +104,7 @@ QuestTogether = {
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
@@ -197,8 +197,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

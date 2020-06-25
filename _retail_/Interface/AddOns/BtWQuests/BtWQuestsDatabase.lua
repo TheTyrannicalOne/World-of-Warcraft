@@ -656,10 +656,10 @@ function DataMixin:IsValidForCharacter(character)
     return self.database:IsItemValidForCharacter(self, character);
 end
 function DataMixin:Visible(character)
-    if self.visible ~= nil and not self.database:EvalRequirement(self.visible, self, character) then
-        return false;
+    if self.visible ~= nil then
+        return self.database:EvalRequirement(self.visible, self, character);
     end
-
+    
     return true;
 end
 function DataMixin:IsAvailable(character)
@@ -714,7 +714,7 @@ function DataMixin:GetPrerequisites()
         end
     end
 
-    return self.prerequisitesItems;
+    return self.prerequisitesItems, self.hasLowPriorityPrerequisites;
 end
 function DataMixin:GetRewards()
     if self.rewardsItems == nil then
@@ -1305,12 +1305,12 @@ function ItemMixin:IsValidForCharacter(database, item, character)
 
     return true;
 end
-function ItemMixin:Visible(database, item, character)
+function ItemMixin:Visible(database, item, character, showAll)
     if item.visible ~= nil then
-        return database:EvalRequirement(item.visible, item, character);
+        return (showAll or not item.lowPriority) and database:EvalRequirement(item.visible, item, character);
     end
 
-    return true;
+    return (showAll or not item.lowPriority);
 end
 function ItemMixin:GetName(database, item, character)
     if item.name then
@@ -1411,7 +1411,7 @@ function ItemMixin:GetPrerequisites(database, item)
         for _,prerequisite in ipairs(item.prerequisites) do
             result[#result+1] = database:CreateItem(-1, prerequisite, item, self:GetRoot(database, item));
         end
-        return result;
+        return result, item.hasLowPriorityPrerequisites;
     end
 end
 function ItemMixin:GetRewards(database, item)
@@ -1578,7 +1578,11 @@ function TargetItemMixin:IsValidForCharacter(database, item, character)
 
     return true;
 end
-function TargetItemMixin:Visible(database, item, character)
+function TargetItemMixin:Visible(database, item, character, showAll)
+    if not showAll and item.lowPriority then
+        return false
+    end
+    
     if item.visible ~= nil then
         return ItemMixin.Visible(self, database, item, character);
     end
@@ -1839,7 +1843,7 @@ function CategoryItemMixin:GetListImage(database, item)
     return item.listImage.texture, unpack(item.listImage.texCoords)
 end
 function CategoryItemMixin:OnClick(database, item, character, button, frame, tooltip)
-    if BtWQuests_TryInsertChatLink(self:GetLink(database, item)) then
+    if ChatEdit_TryInsertChatLink(self:GetLink(database, item)) then
         return
     end
 
@@ -1896,7 +1900,7 @@ function ChainItemMixin:GetNumItems(database, item)
     return self:GetTarget(database, item):GetNumItems();
 end
 function ChainItemMixin:OnClick(database, item, character, button, frame, tooltip)
-    if BtWQuests_TryInsertChatLink(self:GetLink(database, item)) then
+    if ChatEdit_TryInsertChatLink(self:GetLink(database, item)) then
         return
     end
 
@@ -2539,6 +2543,29 @@ local function CreateTable(database, mixin)
     });
     return target, sources;
 end
+local function SplitRanges(...)
+    local i = 0
+    local tbl = {...}
+    return function ()
+        i = i + 1
+
+        local range = tbl[i]
+        if not range then
+            return nil
+        end
+        local from, to = strsplit("-", range, 2)
+        if to == nil then
+            to = from
+        end
+        from = tonumber(from)
+        to = tonumber(to)
+        assert(from and to, "Range number be number-number")
+        return from, to
+    end
+end
+local function GetRanges(str)
+    return SplitRanges(strsplit(",", str))
+end
 
 local Database = {};
 function Database:Init()
@@ -2553,6 +2580,7 @@ end
 function Database:RegisterDataType(dataType, mixin)
     self.DataTypes[dataType] = mixin;
     self[dataType], self[dataType.."List"] = CreateTable(self, mixin);
+    self[dataType.."Ranges"] = {}
 end
 function Database:AddData(dataType, id, item)
     assert(self[dataType] ~= nil, format("Missing data type %s", dataType));
@@ -2581,6 +2609,28 @@ end
 function Database:GetData(dataType, id)
     assert(self[dataType] ~= nil, format("Missing data type %s", dataType));
     return self[dataType][tonumber(id)];
+end
+function Database:AddDataRanges(dataType, str, target)
+    assert(self[dataType] ~= nil, format("Missing data type %s", dataType));
+    assert(target ~= nil, format("Must have a target"))
+    local tbl = self[dataType.."Ranges"];
+
+    for from,to in GetRanges(str) do
+        tbl[#tbl+1] = {from=from,to=to,target=target}
+    end
+    table.sort(tbl, function (a, b)
+        return a.from < b.from
+    end)
+end
+function Database:LoadExpansionForDataID(dataType, id)
+    assert(self[dataType] ~= nil, format("Missing data type %s", dataType));
+    local tbl = self[dataType.."Ranges"];
+    id = tonumber(id)
+    for _,item in ipairs(tbl) do
+        if item.from <= id and item.to >= id then
+            self:GetExpansionByID(item.target):Load()
+        end
+    end
 end
 function Database:RegisterItemType(itemType, mixin)
     self.ItemTypes[itemType] = mixin;
@@ -2829,6 +2879,13 @@ function Database:GetCategoryName(id)
     
     return item:GetName();
 end
+function Database:LoadCategory(id)
+    self:LoadExpansionForDataID("category", id)
+    return self:GetData("category", id);
+end
+function Database:AddCategoryRanges(str, target)
+    self:AddDataRanges("category", str, target)
+end
 
 function Database:AddChain(id, item)
     return self:AddData("chain", id, item);
@@ -2866,6 +2923,13 @@ function Database:GetChainName(id)
     end
     
     return item:GetName();
+end
+function Database:LoadChain(id)
+    self:LoadExpansionForDataID("chain", id)
+    return self:GetData("chain", id);
+end
+function Database:AddChainRanges(str, target)
+    self:AddDataRanges("chain", str, target)
 end
 
 function Database:AddQuest(id, item)
@@ -3283,6 +3347,7 @@ function Database:GetAvailableMapItems(mapID, character)
         local items = self.Continents[continentID]
         for _,item in ipairs(items) do
             local chain = self:GetChainByID(item.id)
+            assert(chain ~= nil, string.format("Missing chain %d on map %d within continent %d", item.id, mapID, continentID))
             if chain:IsValidForCharacter(character) and not chain:IsCompleted(character) and chain:IsAvailable(character) then
                 local item = chain:GetNextItem(character)
                 

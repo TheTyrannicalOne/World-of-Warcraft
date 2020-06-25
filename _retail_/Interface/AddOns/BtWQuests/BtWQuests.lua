@@ -226,6 +226,10 @@ function BtWQuestsMixin:SelectCategory(id, scrollTo, noHistory)
 
     local character = self:GetCharacter();
     local category = BtWQuestsDatabase:GetCategoryByID(id)
+    if not category then
+        category = BtWQuestsDatabase:LoadCategory(id)
+    end
+    assert(category, L["Failed to find request category"])
     if not category:IsValidForCharacter(character) then
         id = category:GetAlternative(character) or id
     end
@@ -254,6 +258,10 @@ function BtWQuestsMixin:SelectChain(id, scrollTo, noHistory)
 
     local character = self:GetCharacter();
     local chain = BtWQuestsDatabase:GetChainByID(id)
+    if not chain then
+        chain = BtWQuestsDatabase:LoadChain(id)
+    end
+    assert(chain, L["Failed to find request chain"])
     if not chain:IsValidForCharacter(character) then
         id = chain:GetAlternative(character) or id
     end
@@ -579,6 +587,7 @@ function BtWQuestsMixin:DisplayCurrentExpansion(scrollTo)
         print(L["BTWQUESTS_NO_EXPANSION_ERROR"])
         return;
     end
+    expansion:Load()
     local items = expansion:GetItemList(self:GetCharacter(), not categoryHeaders, filterCompleted, filterIgnored)
     if #items == 0 then -- Somehow selected an empty expansion, probably means all the BtWQuests modules are disabled
         print(L["BTWQUESTS_NO_EXPANSION_ERROR"])
@@ -658,6 +667,8 @@ function BtWQuestsMixin:OnLoad()
 
     self:RegisterEvent("QUEST_SESSION_JOINED")
     self:RegisterEvent("QUEST_SESSION_LEFT")
+    
+    self:RegisterEvent("MODIFIER_STATE_CHANGED")
 
 	self.TitleText:SetText(L["BTWQUESTS_QUEST_JOURNAL"]);
     SetPortraitToTexture(self.portrait, "Interface\\QuestFrame\\UI-QuestLog-BookIcon");
@@ -738,6 +749,19 @@ function BtWQuestsMixin:OnEvent(event, ...)
                             autoload = BtWQuests_AutoLoad[name] or autoload
                         end
 
+                        do
+                            local ranges = GetAddOnMetadata(name, "X-BtWQuests-Category-Range")
+                            if ranges then
+                                BtWQuestsDatabase:AddCategoryRanges(ranges, id)
+                            end
+                        end
+                        do
+                            local ranges = GetAddOnMetadata(name, "X-BtWQuests-Chain-Range")
+                            if ranges then
+                                BtWQuestsDatabase:AddChainRanges(ranges, id)
+                            end
+                        end
+
                         if autoload then
                             for name in pairs(expansion.addons) do
                                 BtWQuests_AutoLoad[name] = true
@@ -768,6 +792,25 @@ function BtWQuestsMixin:OnEvent(event, ...)
         if self:GetCharacter():IsPlayer() then
             self.Character = nil;
             self:GetCharacter();
+        end
+    elseif event == "MODIFIER_STATE_CHANGED" then
+        if ... == "LSHIFT" or ... == "RSHIFT" then
+            -- Update tooltips
+            local chain = self.Chain
+            if chain:IsShown() and BtWQuestSettingsData:GetValue("showChainTooltip") then
+                chain.Tooltip:SetOwner(chain, "ANCHOR_PRESERVE")
+                chain.Tooltip:SetChain(self:GetChain(), self:GetCharacter())
+            end
+
+            local tooltip = self.Tooltip
+            if tooltip:IsShown() then
+                local button = GetMouseFocus()
+                if button.OnEnter then
+                    button:OnEnter()
+                end
+                -- tooltip:SetOwner(tooltip, "ANCHOR_PRESERVE")
+                -- tooltip:SetChain(self:GetChain(), self:GetCharacter())
+            end
         end
     end
 end
@@ -964,7 +1007,7 @@ end
 -- [[ Hyperlink Handling ]]
 
 local function ChatFrame_Filter(self, event, msg, ...)
-	msg = msg:gsub("%[btwquests:([^:]+):(%d+):([^:]+):([^%]]+)%]","|c%3|Hbtwquests:%1:%2|h[%4]|h|r");
+    msg = msg:gsub("%[btwquests:([^:]+):(%d+):([^:]+):([^%]]+)%]","|c%3|Hbtwquests:%1:%2|h[%4]|h|r"):gsub("https://www.btwquests.com/([^/]+)/(%d+)[-%w]*","|cffffff00|Hbtwquests:%1:%2|h[%0]|h|r")
 
 	return false, msg, ...;
 end
@@ -997,33 +1040,25 @@ for i, event in ipairs(events) do
 	ChatFrame_AddMessageEventFilter(event, ChatFrame_Filter);
 end
 
--- Rewrite correctly syntaxed links to something that is viable to send
-function BtWQuests_InsertLink(link)
-    if link then
-        local _, _, color, type, text, name = string.find(link, "|c(%x*)|H([^:]+):([^|]+)|h%[([^%[%]]*)%]|h|r")
-        if not color then
-            _, _, type, text = string.find(link, "([^:]+):(.+)")
-        end
-        if type == "btwquests" then
-            link = format("[%s:%s:%s:%s]", type, text, color, name)
-        end
+-- Convert our links to something valid for blizzard to send
+hooksecurefunc("ChatEdit_ParseText", function (editBox, send, parseIfNoSpaces)
+    if send == 1 then
+        local text = editBox:GetText()
+        text = text:gsub("|c(%x*)|Hbtwquests:([^|]+)|h%[([^%[%]]*)%]|h|r", function (color,str,name)
+            return string.format("[btwquests:%s:%s:%s]", str, color,name)
+        end):gsub("|Hbtwquests:([^|]+)|h%[([^%[%]]*)%]|h", function (str,name)
+            return string.format("[btwquests:%s:%s:%s]", str, "ffffff00",name)
+        end)
+        editBox:SetText(text)
     end
-
-    return ChatEdit_InsertLink(link)
-end
-
-function BtWQuests_TryInsertChatLink(link)
-	if IsModifiedClick("CHATLINK") and link then
-		return BtWQuests_InsertLink(link)
-	end
-end
+end)
 
 -- Handles shift clicking btwquests links
 local original_HandleModifiedItemClick = HandleModifiedItemClick
 function HandleModifiedItemClick(link)
     if link and link:find("Hbtwquests") then
         if IsModifiedClick("CHATLINK") then
-			BtWQuests_InsertLink(link)
+			ChatEdit_InsertLink(link)
 		else
             BtWQuestsFrame:SelectFromLink(link)
 		end
@@ -1037,9 +1072,14 @@ local original_SetHyperlink = ItemRefTooltip.SetHyperlink
 function ItemRefTooltip:SetHyperlink(link)
     if link:find("^btwquests") then
         if IsModifiedClick("CHATLINK") then
-			BtWQuests_InsertLink(link)
-		else
-            BtWQuestsFrame:SelectFromLink(link)
+			ChatEdit_InsertLink(link)
+        else
+            local success, err = pcall(function ()
+                BtWQuestsFrame:SelectFromLink(link)
+            end)
+            if not success then
+                print(L["Error viewing link"])
+            end
 		end
 	else
 		original_SetHyperlink(self, link);

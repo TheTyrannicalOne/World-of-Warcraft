@@ -37,7 +37,7 @@ function Spy:RefreshCurrentList(player, source)
 				end
 				if playerData.guild then
 					guild = playerData.guild
-				end				
+				end
 			end
 			
 			if Spy.db.profile.DisplayListData == "NameLevelClass" then
@@ -49,7 +49,7 @@ function Spy:RefreshCurrentList(player, source)
 				description = level.." "
 			elseif Spy.db.profile.DisplayListData == "NameGuild" then
 					description = guild
-			end	
+			end
 			
 			if mode == 1 and Spy.InactiveList[data.player] then
 				opacity = 0.5
@@ -426,7 +426,7 @@ function Spy:AlertPlayer(player, source)
 	local playerData = SpyPerCharDB.PlayerData[player]
 	if SpyPerCharDB.KOSData[player] and Spy.db.profile.WarnOnKOS then
 --		if Spy.db.profile.DisplayWarningsInErrorsFrame then
-		if Spy.db.profile.DisplayWarnings == "ErrorFrame" then			
+		if Spy.db.profile.DisplayWarnings == "ErrorFrame" then
 			local text = Spy.db.profile.Colors.Warning["Warning Text"]
 			local msg = L["KOSWarning"]..player
 			UIErrorsFrame:AddMessage(msg, text.r, text.g, text.b, 1.0, UIERRORS_HOLD_TIME)
@@ -459,7 +459,7 @@ function Spy:AlertPlayer(player, source)
 	elseif Spy.db.profile.WarnOnKOSGuild then
 		if playerData and playerData.guild and Spy.KOSGuild[playerData.guild] then
 --			if Spy.db.profile.DisplayWarningsInErrorsFrame then
-			if Spy.db.profile.DisplayWarnings == "ErrorFrame" then				
+			if Spy.db.profile.DisplayWarnings == "ErrorFrame" then
 				local text = Spy.db.profile.Colors.Warning["Warning Text"]
 				local msg = L["KOSGuildWarning"].."<"..playerData.guild..">"
 				UIErrorsFrame:AddMessage(msg, text.r, text.g, text.b, 1.0, UIERRORS_HOLD_TIME)				
@@ -506,7 +506,7 @@ end
 function Spy:AlertStealthPlayer(player)
 	if Spy.db.profile.WarnOnStealth then
 --		if Spy.db.profile.DisplayWarningsInErrorsFrame then
-		if Spy.db.profile.DisplayWarnings == "ErrorFrame" then		
+		if Spy.db.profile.DisplayWarnings == "ErrorFrame" then
 			local text = Spy.db.profile.Colors.Warning["Warning Text"]
 			local msg = L["StealthWarning"]..player
 			UIErrorsFrame:AddMessage(msg, text.r, text.g, text.b, 1.0, UIERRORS_HOLD_TIME)
@@ -522,7 +522,7 @@ end
 function Spy:AlertProwlPlayer(player)
 	if Spy.db.profile.WarnOnStealth then
 --		if Spy.db.profile.DisplayWarningsInErrorsFrame then
-		if Spy.db.profile.DisplayWarnings == "ErrorFrame" then			
+		if Spy.db.profile.DisplayWarnings == "ErrorFrame" then
 			local text = Spy.db.profile.Colors.Warning["Warning Text"]
 			local msg = L["StealthWarning"]..player
 			UIErrorsFrame:AddMessage(msg, text.r, text.g, text.b, 1.0, UIERRORS_HOLD_TIME)

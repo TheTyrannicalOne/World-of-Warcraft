@@ -1,0 +1,591 @@
+﻿==============================================================================
+World of Warcraft: Retail Build (build 34769)
+
+Exe:      D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe
+Command:  "D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe" -launcherlogin -uid wow
+Time:     Jun 17, 2020 12:25:07.107 PM
+User:     rc_ba
+Computer: WIN10PRO-ULT
+------------------------------------------------------------------------------
+
+This application has encountered a critical error:
+
+ERROR #132 (0x85100084) Fatal exception!
+
+Program:	D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe
+ProcessID:	19568
+ThreadID:	14648
+Exception:	ACCESS_VIOLATION
+
+The instruction at "0x00007ff86ef5bc6a" referenced memory at "0x00007ff86ef5bc6a".
+The memory could not be "executed".
+
+<Exception.IssueType> Exception
+<ExceptionType> Crash
+<Exception.Summary:>
+ACCESS_VIOLATION
+(DBG-OPTIONS<FunctionsOnly SingleLine> DBG-ADDR<00007ff86ef5bc6a>("<unknown>") <- DBG-ADDR<00000039c83fd880>("<unknown>") <- DBG-ADDR<00000039c83fd9e4>("<unknown>") DBG-OPTIONS<>)
+The instruction at "0x00007ff86ef5bc6a" referenced memory at "0x00007ff86ef5bc6a".
+The memory could not be "executed".
+<:Exception.Summary>
+------------------------------------------------------------------------------
+<Exception.Assertion:>
+DBG-ADDR<00007ff86ef5bc6a>("<unknown>")
+DBG-ADDR<00007ff743f1b609>("Wow.exe")
+DBG-ADDR<00007ff743f1b608>("Wow.exe")
+DBG-ADDR<00000039c83fd430>("<unknown>")
+DBG-ADDR<00000039c83fd6b8>("<unknown>")
+DBG-ADDR<0000000000000001>("<unknown>")
+DBG-ADDR<00000039c83fd170>("<unknown>")
+DBG-ADDR<00007ff742083cec>("Wow.exe")
+DBG-ADDR<00000039c83fd100>("<unknown>")
+DBG-ADDR<00000039c83fd700>("<unknown>")
+DBG-ADDR<00000039c83fd100>("<unknown>")
+DBG-ADDR<0000000000000073>("<unknown>")
+DBG-ADDR<00000720fffffb30>("<unknown>")
+DBG-ADDR<0000000000000001>("<unknown>")
+DBG-ADDR<00000160000000f0>("<unknown>")
+DBG-ADDR<00000002c0000005>("<unknown>")
+DBG-ADDR<00007ff742a90ca0>("Wow.exe")
+DBG-ADDR<0000000000000002>("<unknown>")
+DBG-ADDR<0000000000000001>("<unknown>")
+DBG-ADDR<00007ff7440303e6>("Wow.exe")
+DBG-ADDR<00007ff743f1b608>("Wow.exe")
+DBG-ADDR<ffffffffffffffff>("<unknown>")
+DBG-ADDR<0000000b00000073>("<unknown>")
+DBG-ADDR<0000ff0000000000>("<unknown>")
+DBG-ADDR<00007ff742a90ca0>("Wow.exe")
+DBG-ADDR<00000039c83fd2e0>("<unknown>")
+DBG-ADDR<00000072c83fd600>("<unknown>")
+DBG-ADDR<000067564b300295>("<unknown>")
+DBG-ADDR<0000000000010002>("<unknown>")
+DBG-ADDR<00000039c83fd5d8>("<unknown>")
+DBG-ADDR<00000039c83fe880>("<unknown>")
+DBG-ADDR<00007ff871cae000>("SSPICLI.DLL")
+<:Exception.Assertion>
+<Exception.HashBlock:>
+DBG-OPTIONS<NoImage NoAddress NoFileLine NoFuncOffset NoDbgAddr>
+ERROR #132
+DBG-ADDR<00007ff86ef5bc6a>("<unknown>")
+DBG-ADDR<00007ff743f1bda0>("Wow.exe")
+DBG-ADDR<00007ff743f1bd98>("Wow.exe")
+DBG-ADDR<00000039c83fd430>("<unknown>")
+DBG-OPTIONS<>
+<:Exception.HashBlock>
+------------------------------------------------------------------------------
+<Version> 8.3.0.34769
+<Config> Retail
+Revision: 954315
+<Jira.JiraProjectId> 10900
+<Jira.JiraProjectKey> WOW8
+<Exception.ProjectId> 10
+<Exception.BuildNumber> 34769
+<Exception.Branch> 8.3.0
+<WowProject> Mainline
+<Application> World of Warcraft
+<ApplicationType> Client
+Type: WoW
+<Executable> Wow.exe
+Executable UUID: EE6DF68C-2A02-4394-BD4F-3819819CB502
+<Wow.Platform> X64
+<Exception.Platform> Win 10 (64-bit)
+User: rc_ba
+Computer: WIN10PRO-ULT
+Virtual Memory: 0.00 MB
+Free Disk Space: 66.59 GB
+Exe Built: Jun 11 2020 16:49:38
+<InitFlags> 0000007F 00001FFF 00001E00
+App Up Time: 0 days, 0 hours, 36 minutes, 29 seconds
+System Up Time: 0 days, 4 hours, 7 minutes, 4 seconds
+<TimingMethod> QueryPerformanceCounter
+Current Frame: 135887
+Current Time: 14821423
+Current Tick: 5526
+<SystemResumes> 0
+<CharLogins> 1
+Number of thread pool threads (Total): 27
+<LauncherName> Battle.net.exe
+<Locale.Text> enUS
+<Locale.Audio> enUS
+Session Time(hh:mm:ss): 00:36:21
+<SessionTime.Grouping> 00:30:00 - 00:59:59
+Time in World(hh:mm:ss): 00:00:00
+<TimeInWorld.Grouping> 00:00:00 - 00:00:00
+Total Time in World(hh:mm:ss): 00:00:00
+<TotalTimeInWorld.Grouping> 00:00:00 - 00:00:00
+<Set.Addons.All.Unloaded> AchievementsReminder
+<Set.Addons.All.Unloaded> AckisRecipeList
+<Set.Addons.All.Unloaded> AckisRecipeList_Alchemy
+<Set.Addons.All.Unloaded> AckisRecipeList_Blacksmithing
+<Set.Addons.All.Unloaded> AckisRecipeList_Cooking
+<Set.Addons.All.Unloaded> AckisRecipeList_Enchanting
+<Set.Addons.All.Unloaded> AckisRecipeList_Engineering
+<Set.Addons.All.Unloaded> AckisRecipeList_Inscription
+<Set.Addons.All.Unloaded> AckisRecipeList_Jewelcrafting
+<Set.Addons.All.Unloaded> AckisRecipeList_Leatherworking
+<Set.Addons.All.Unloaded> AckisRecipeList_Mining
+<Set.Addons.All.Unloaded> AckisRecipeList_Tailoring
+<Set.Addons.All.Unloaded> ActionBarProfiles
+<Set.Addons.All.Unloaded> ACP
+<Set.Addons.All.Unloaded> AdventureGuideLockouts
+<Set.Addons.All.Unloaded> AllTheThings
+<Set.Addons.All.Unloaded> AngryWorldQuests
+<Set.Addons.All.Unloaded> AzeritePowerWeights
+<Set.Addons.All.Unloaded> AzeriteTooltip
+<Set.Addons.All.Unloaded> hqAzerothAtWar
+<Set.Addons.All.Unloaded> AAP-Core
+<Set.Addons.All.Unloaded> AAP-Vanilla
+<Set.Addons.All.Unloaded> AAP-TBC-WotLK
+<Set.Addons.All.Unloaded> AAP-Cata-MoP
+<Set.Addons.All.Unloaded> AAP-WoD
+<Set.Addons.All.Unloaded> AAP-Legion
+<Set.Addons.All.Unloaded> AAP-BfA
+<Set.Addons.All.Unloaded> Azeroth Auto Pilot
+<Set.Addons.All.Unloaded> BattlePetBattleStats
+<Set.Addons.All.Unloaded> BattlePetBreedID
+<Set.Addons.All.Unloaded> BetterBattlePetTooltip
+<Set.Addons.All.Unloaded> BFAInvasionTimer
+<Set.Addons.All.Unloaded> BFAInvasionTimer_Options
+<Set.Addons.All.Unloaded> BigWigs
+<Set.Addons.All.Unloaded> BigWigs_Azeroth
+<Set.Addons.All.Unloaded> BigWigs_BattleOfDazaralor
+<Set.Addons.All.Unloaded> BigWigs_BurningCrusade
+<Set.Addons.All.Unloaded> BigWigs_Cataclysm
+<Set.Addons.All.Unloaded> BigWigs_Classic
+<Set.Addons.All.Unloaded> BigWigs_Core
+<Set.Addons.All.Unloaded> BigWigs_CrucibleOfStorms
+<Set.Addons.All.Unloaded> BigWigs_Legion
+<Set.Addons.All.Unloaded> BigWigs_MistsOfPandaria
+<Set.Addons.All.Unloaded> BigWigs_Nyalotha
+<Set.Addons.All.Unloaded> BigWigs_Options
+<Set.Addons.All.Unloaded> BigWigs_Plugins
+<Set.Addons.All.Unloaded> BigWigs_EternalPalace
+<Set.Addons.All.Unloaded> BigWigs_Uldir
+<Set.Addons.All.Unloaded> BigWigs_WarlordsOfDraenor
+<Set.Addons.All.Unloaded> BigWigs_WrathOfTheLichKing
+<Set.Addons.All.Unloaded> BigWigs_CommonAuras
+<Set.Addons.All.Unloaded> BigWigs_Voice_Arnold
+<Set.Addons.All.Unloaded> BonusRollPreview
+<Set.Addons.All.Unloaded> BtWQuests
+<Set.Addons.All.Unloaded> BtWQuestsBattleForAzeroth
+<Set.Addons.All.Unloaded> BtWQuestsBattleForAzerothPrologue
+<Set.Addons.All.Unloaded> BtWQuestsClassic
+<Set.Addons.All.Unloaded> BtWQuestsLegion
+<Set.Addons.All.Unloaded> BuyEmAll
+<Set.Addons.All.Unloaded> CanIMogIt
+<Set.Addons.All.Unloaded> ChampionCommander
+<Set.Addons.All.Unloaded> Clique
+<Set.Addons.All.Unloaded> CritterEmote
+<Set.Addons.All.Unloaded> DeathNote
+<Set.Addons.All.Unloaded> DerangementMinimapBlips
+<Set.Addons.All.Unloaded> DerangementShieldMeters
+<Set.Addons.All.Unloaded> DialogKey
+<Set.Addons.All.Unloaded> EasyScrap
+<Set.Addons.All.Unloaded> EasyDeleteConfirm
+<Set.Addons.All.Unloaded> FishingBuddy
+<Set.Addons.All.Unloaded> FB_TrackingFrame
+<Set.Addons.All.Unloaded> GarrisonMissionManager
+<Set.Addons.All.Unloaded> GatherMate2
+<Set.Addons.All.Unloaded> Grail
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-deDE
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-enUS
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-esES
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-esMX
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-frFR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-itIT
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-koKR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-ptBR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-ruRU
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-zhCN
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-zhTW
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-deDE
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-enUS
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-esES
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-esMX
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-frFR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-itIT
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-koKR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-ptBR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-ruRU
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-zhCN
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-zhTW
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-deDE
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-enUS
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-esES
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-esMX
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-frFR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-itIT
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-koKR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-ptBR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-ruRU
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-zhCN
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-zhTW
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-deDE
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-enUS
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-esES
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-esMX
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-frFR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-itIT
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-koKR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-ptBR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-ruRU
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-zhCN
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-zhTW
+<Set.Addons.All.Unloaded> Grail-Reputations-_retail_
+<Set.Addons.All.Unloaded> Grail-Reputations-_classic_
+<Set.Addons.All.Unloaded> Grail-Achievements
+<Set.Addons.All.Unloaded> Grail-Rewards
+<Set.Addons.All.Unloaded> Grail-When
+<Set.Addons.All.Unloaded> GTFO
+<Set.Addons.All.Unloaded> HHTD
+<Set.Addons.All.Unloaded> HandyNotes
+<Set.Addons.All.Unloaded> HandyNotes_Argus
+<Set.Addons.All.Unloaded> HandyNotes_BrokenShore
+<Set.Addons.All.Unloaded> HandyNotes_Achievements
+<Set.Addons.All.Unloaded> HandyNotes_BattleForAzerothTreasures
+<Set.Addons.All.Unloaded> HandyNotes_FieldPhotographer
+<Set.Addons.All.Unloaded> HandyNotes_MechagonAndNazjatar
+<Set.Addons.All.Unloaded> HandyNotes_VisionsOfNZoth
+<Set.Addons.All.Unloaded> HandyNotes_WarfrontTreasures
+<Set.Addons.All.Unloaded> HandyNotes_AzerothsTopTunes
+<Set.Addons.All.Unloaded> HandyNotes_DraenorTreasures
+<Set.Addons.All.Unloaded> HandyNotes_DungeonLocations
+<Set.Addons.All.Unloaded> HandyNotes_HallowsEnd
+<Set.Addons.All.Unloaded> HandyNotes_LegionRaresTreasures
+<Set.Addons.All.Unloaded> HandyNotes_LegionTreasures
+<Set.Addons.All.Unloaded> HandyNotes_LunarFestival
+<Set.Addons.All.Unloaded> HandyNotes_SummerFestival
+<Set.Addons.All.Unloaded> HandyNotes_TimelessIsle_RareElites
+<Set.Addons.All.Unloaded> HandyNotes_TimelessIsleChests
+<Set.Addons.All.Unloaded> HandyNotes_TimelessTreasures
+<Set.Addons.All.Unloaded> HandyNotes_WarfrontRares
+<Set.Addons.All.Unloaded> Hekili
+<Set.Addons.All.Unloaded> Immersion
+<Set.Addons.All.Unloaded> !KalielsTracker
+<Set.Addons.All.Unloaded> Kib_QuestMobs
+<Set.Addons.All.Unloaded> Leatrix_Plus
+<Set.Addons.All.Unloaded> LegionWardrobe
+<Set.Addons.All.Unloaded> LegionWardrobeData
+<Set.Addons.All.Unloaded> LegionInvasionTimer
+<Set.Addons.All.Unloaded> LegionInvasionTimer_Options
+<Set.Addons.All.Unloaded> LibPetJournal-2.0
+<Set.Addons.All.Unloaded> LittleWigs
+<Set.Addons.All.Unloaded> MacroToolkit
+<Set.Addons.All.Unloaded> MacroToolkitIcons
+<Set.Addons.All.Unloaded> Masque
+<Set.Addons.All.Unloaded> MasterPlan
+<Set.Addons.All.Unloaded> MasterPlanA
+<Set.Addons.All.Unloaded> MikScrollingBattleText
+<Set.Addons.All.Unloaded> MBB
+<Set.Addons.All.Unloaded> mOnArs_WardrobeHelper
+<Set.Addons.All.Unloaded> MountJournalEnhanced
+<Set.Addons.All.Unloaded> MoveAnything
+<Set.Addons.All.Unloaded> MSBTOptions
+<Set.Addons.All.Unloaded> MyMountspecial
+<Set.Addons.All.Unloaded> NomiCakes
+<Set.Addons.All.Unloaded> NPCScan
+<Set.Addons.All.Unloaded> Omen
+<Set.Addons.All.Unloaded> OmniCC
+<Set.Addons.All.Unloaded> OmniCC_Config
+<Set.Addons.All.Unloaded> OPie
+<Set.Addons.All.Unloaded> OPieMasque
+<Set.Addons.All.Unloaded> OrderHallCommander
+<Set.Addons.All.Unloaded> Overachiever
+<Set.Addons.All.Unloaded> Overachiever_Cache
+<Set.Addons.All.Unloaded> Overachiever_Tabs
+<Set.Addons.All.Unloaded> Overachiever_Trade
+<Set.Addons.All.Unloaded> Paste
+<Set.Addons.All.Unloaded> Pawn
+<Set.Addons.All.Unloaded> PersonalLootHelper
+<Set.Addons.All.Unloaded> PetEmote
+<Set.Addons.All.Unloaded> PetTracker
+<Set.Addons.All.Unloaded> PetTracker_Battle
+<Set.Addons.All.Unloaded> PetTracker_Config
+<Set.Addons.All.Unloaded> PetTracker_Journal
+<Set.Addons.All.Unloaded> QuestTogether
+<Set.Addons.All.Unloaded> RandomHearthToy
+<Set.Addons.All.Unloaded> RareShare
+<Set.Addons.All.Unloaded> RareShare_Uldum
+<Set.Addons.All.Unloaded> RareShareNazjatar
+<Set.Addons.All.Unloaded> RareShare_Vale of Eternal Blossoms
+<Set.Addons.All.Unloaded> RareShareMechagon
+<Set.Addons.All.Unloaded> RareScanner
+<Set.Addons.All.Unloaded> Rarity
+<Set.Addons.All.Unloaded> Rarity_Options
+<Set.Addons.All.Unloaded> RCLootCouncil
+<Set.Addons.All.Unloaded> Rematch
+<Set.Addons.All.Unloaded> Rematch_TSMPetValues
+<Set.Addons.All.Unloaded> RematchElvUISkin
+<Set.Addons.All.Unloaded> Skada
+<Set.Addons.All.Unloaded> Spy
+<Set.Addons.All.Unloaded> TargetNameplateIndicator
+<Set.Addons.All.Unloaded> TransmogTokens
+<Set.Addons.All.Unloaded> WarfrontRareTracker
+<Set.Addons.All.Unloaded> WeakAuras
+<Set.Addons.All.Unloaded> WeakAurasArchive
+<Set.Addons.All.Unloaded> WeakAurasModelPaths
+<Set.Addons.All.Unloaded> WeakAurasOptions
+<Set.Addons.All.Unloaded> WeakAurasTemplates
+<Set.Addons.All.Unloaded> WhisperInvite
+<Set.Addons.All.Unloaded> WhisperInviteAdvanced
+<Set.Addons.All.Unloaded> WhisperInviteBasic
+<Set.Addons.All.Unloaded> Wholly
+<Set.Addons.All.Unloaded> WoWDBProfiler
+<Set.Addons.All.Unloaded> WoWGatheringNodes
+<Set.Addons.All.Unloaded> XLoot
+<Set.Addons.All.Unloaded> XLoot_Frame
+<Set.Addons.All.Unloaded> XLoot_Group
+<Set.Addons.All.Unloaded> XLoot_Master
+<Set.Addons.All.Unloaded> XLoot_Monitor
+<Set.Addons.All.Unloaded> XLoot_Options
+<Set.Addons.All.Unloaded> ParagonReputation
+<Set.Addons.All.Unloaded> DejaCharacterStats
+<Set.Addons.All.Unloaded> TradeSkillMaster
+<Set.Addons.All.Unloaded> PetBattleFFVictory
+<Set.Addons.All.Unloaded> TradeSkillMaster_AppHelper
+<Set.Addons.All.Unloaded> ElvUI
+<Set.Addons.All.Unloaded> ElvUI_OptionsUI
+<Set.Addons.All.Unloaded> ElvUI_SLE
+<Set.Addons.All.Unloaded> ElvUI_CliqueDatatext
+<Set.Addons.All.Unloaded> Narcissus
+<Set.Addons.All.Unloaded> Narcissus_Database
+<Addons.HasAny.Loading> No
+<Addons.HasAny.Loaded> No
+<UIReloads> 0
+<LuaErrors> 0
+<BGDLEnabled> No
+<IME.Current> "", {00000000-0000-0000-0000000000000000}, inactive
+<SoundSystem.Restarts> 0
+<LoadingScreen.Enabled> No
+<CombatLogEntry.Current> CombatLogEntry::PushEvent(casterGuidType, targetGuidType): 2, 2
+Number of successful WoWConnections: 22
+<Realm.Name> Dalaran
+<Realm.IP> [2a04:e800:5020:1873:f816:4bff:fe53:5ba]:3724
+<Realm.Version> 8.3.0.32861
+<Realm.Flags> 0xA0
+Battle Tag: n/a
+Last Known Player: Player-3683-0BE4455C, (1642, -2602.02, 2276.42, 15.0136)
+Selected Player: Player-3683-0BE4455C
+
+CVar Settings: 
+<CVar.portal> US
+<CVar.textLocale> enUS
+<CVar.audioLocale> enUS
+<CVar.agentUID> wow
+<CVar.hwDetect> 0
+<CVar.videoOptionsVersion> 22
+<CVar.gxApi> D3D11
+<CVar.gxMaximize> 1
+<CVar.farclip> 8000.000000
+<CVar.horizonStart> 2400.000000
+<CVar.particleMTDensity> 100.000000
+<CVar.waterDetail> 3.000000
+<CVar.rippleDetail> 2.000000
+<CVar.reflectionMode> 3.000000
+<CVar.sunShafts> 2.000000
+<CVar.refraction> 2.000000
+<CVar.groundEffectDensity> 128.000000
+<CVar.groundEffectDist> 260.000000
+<CVar.volumeFogLevel> 3.000000
+<CVar.projectedTextures> 1.000000
+<CVar.shadowMode> 3.000000
+<CVar.shadowTextureSize> 2048.000000
+<CVar.shadowSoft> 1.000000
+<CVar.SSAO> 4.000000
+<CVar.DepthBasedOpacity> 1.000000
+<CVar.textureFilteringMode> 5.000000
+<CVar.terrainLodDist> 600.000000
+<CVar.wmoLodDist> 400.000000
+<CVar.entityLodDist> 10.000000
+<CVar.entityShadowFadeScale> 30.000000
+<CVar.terrainMipLevel> 0.000000
+<CVar.worldBaseMip> 0.000000
+<CVar.OutlineEngineMode> 2.000000
+<CVar.lodObjectCullSize> 19.000000
+<CVar.lodObjectCullDist> 30.000000
+<CVar.lodObjectMinSize> 0.000000
+<CVar.lodObjectFadeScale> 90.000000
+<CVar.RAIDfarclip> 5000.000000
+<CVar.RAIDWaterDetail> 1.000000
+<CVar.RAIDSSAO> 1.000000
+<CVar.RAIDDepthBasedOpacity> 1.000000
+<CVar.RAIDgroundEffectDensity> 40.000000
+<CVar.RAIDgroundEffectDist> 110.000000
+<CVar.RAIDshadowMode> 0.000000
+<CVar.RAIDterrainLodDist> 350.000000
+<CVar.RAIDwmoLodDist> 300.000000
+<CVar.RAIDhorizonStart> 1000.000000
+<CVar.RAIDentityLodDist> 7.000000
+<CVar.RAIDentityShadowFadeScale> 15.000000
+<CVar.RAIDterrainMipLevel> 1.000000
+<CVar.RAIDworldBaseMip> 1.000000
+<CVar.RAIDtextureFilteringMode> 3.000000
+<CVar.RAIDprojectedTextures> 0.000000
+<CVar.RAIDshadowTextureSize> 1024.000000
+<CVar.RAIDshadowSoft> 0.000000
+<CVar.RAIDreflectionMode> 0.000000
+<CVar.RAIDrippleDetail> 0.000000
+<CVar.RAIDsunShafts> 0.000000
+<CVar.RAIDparticleDensity> 50.000000
+<CVar.RAIDparticleMTDensity> 70.000000
+<CVar.RAIDrefraction> 0.000000
+<CVar.RAIDOutlineEngineMode> 1.000000
+<CVar.RAIDVolumeFogLevel> 1.000000
+<CVar.RAIDlodObjectCullSize> 22.000000
+<CVar.RAIDlodObjectCullDist> 30.000000
+<CVar.RAIDlodObjectMinSize> 0.000000
+<CVar.RAIDlodObjectFadeScale> 80.000000
+<CVar.componentTextureLevel> 0.000000
+<CVar.RAIDcomponentTextureLevel> 1.000000
+<CVar.weatherDensity> 3
+<CVar.RAIDweatherDensity> 3
+<CVar.graphicsTextureResolution> 3
+<CVar.graphicsTextureFiltering> 6
+<CVar.graphicsViewDistance> 8
+<CVar.graphicsGroundClutter> 8
+<CVar.graphicsSSAO> 5
+<CVar.raidGraphicsTextureResolution> 2
+<CVar.raidGraphicsViewDistance> 4
+<CVar.raidGraphicsEnvironmentDetail> 4
+<CVar.raidGraphicsGroundClutter> 4
+<CVar.raidGraphicsShadowQuality> 2
+<CVar.raidGraphicsParticleDensity> 3
+<CVar.raidGraphicsDepthEffects> 2
+<CVar.raidGraphicsOutlineMode> 2
+<CVar.playIntroMovie> 8
+<CVar.expandUpgradePanel> 0
+<CVar.seenAlliedRaceUnlocks> A@@@|q
+<CVar.Sound_MusicVolume> 0.40000000596046
+<CVar.Sound_AmbienceVolume> 0.60000002384186
+<CVar.MSAAQuality> 3,0
+<CVar.ResampleQuality> 1
+<CVar.gxWindowedResolution> 2560x1440
+<CVar.maxFPS> 0
+<CVar.RenderScale> 1.6
+<CVar.engineSurvey> 8
+<CVar.mouseSpeed> 1
+<CVar.gameTip> 94
+<CVar.twitterGetConfigTime> 1592323277284
+<CVar.CACHE-WQST-QuestV2RecordCount> 40086
+<CVar.CACHE-WQST-QuestV2HotfixCount> 0
+<CVar.CACHE-WQST-QuestObjectiveRecordCount> 40491
+<CVar.CACHE-WQST-QuestObjectiveHotfixCount> 0
+<CVar.CACHE-WQST-QuestObjectiveXEffectRecordCount> 14357
+<CVar.CACHE-WQST-QuestObjectiveXEffectHotfixCount> 0
+<CVar.CACHE-WGOB-GameObjectsRecordCount> 85721
+<CVar.CACHE-WGOB-GameObjectsHotfixCount> 0
+<CVar.screenshotQuality> 10
+<CVar.VoiceChatMasterVolumeScale> 1.000000
+<CVar.checkAddonVersion> 0
+<CVar.lastAddonVersion> 80300
+<CVar.spellEffectLevel> 125
+<CVar.useIPv6> 1
+<CVar.maxFPSBk> 0
+<CVar.gxAdapter> NVIDIA GeForce RTX 2080 Ti
+<CVar.physicsLevel> 2
+<CVar.RAIDsettingsEnabled> 1
+<CVar.Sound_OutputDriverName> Speakers (THX Spatial - Synapse)
+<CVar.raidOrBattleCount> 30
+<CVar.graphicsParticleDensity> 5
+<CVar.graphicsQuality> 8
+<CVar.graphicsShadowQuality> 6
+<CVar.Sound_MasterVolume> 1
+<CVar.Sound_SFXVolume> 1
+<CVar.lastCharacterIndex> 4
+<CVar.Sound_OutputDriverIndex> 1
+
+----------------------------------------
+Installation settings:
+----------------------------------------
+UID:  wow
+Expansion Level: 7
+PTR: 0
+Beta: 0
+ProductCode: 'WoW'
+
+----------------------------------------
+               GxInfo
+----------------------------------------
+No GX Device Created
+Desktop Display List:
+Device Name: \\.\DISPLAY1
+Device String: NVIDIA GeForce RTX 2080 Ti
+State Flags: 0x00080005
+Device ID: PCI\VEN_10DE&DEV_1E07&SUBSYS_37151462&REV_A1
+
+Device Name: \\.\DISPLAY2
+Device String: NVIDIA GeForce RTX 2080 Ti
+State Flags: 0x00080001
+Device ID: PCI\VEN_10DE&DEV_1E07&SUBSYS_37151462&REV_A1
+
+<GxRestarts> 0
+<GxFailedFrameStartRestarts> 0
+<GxDeviceLostCount> 0
+<BlacklistedDriverWarningShown> No
+
+----------------------------------------
+Streaming diagnostics (Errors):
+----------------------------------------
+[20200617T11:48:39] {63b0} ERR: .. is the leading path component: ../.build.info
+[20200617T11:48:39] {63b0} ERR: path normalization failed: ../.build.info
+----------------------------------------
+
+Streaming Errors Count: 0
+<Streaming.Errors> No
+
+----------------------------------------
+Streaming diagnostics (Info):
+----------------------------------------
+[20200617T11:48:39] {3530} INF: adding network address 137.221.64.8:443 for server https://us.cdn.blizzard.com/
+[20200617T11:48:39] {3530} INF: NameResolutionComplete numServers 5 numHosts 26
+[20200617T11:53:40] {3530} INF: adding network address 8.253.165.241:80 for server http://level3.blizzard.com/
+[20200617T11:53:40] {3530} INF: adding network address 67.24.73.254:80 for server http://level3.blizzard.com/
+[20200617T11:53:40] {3530} INF: adding network address 8.252.53.254:80 for server http://level3.blizzard.com/
+[20200617T11:53:40] {3530} INF: adding network address 23.199.48.136:443 for server https://blzddist1-a.akamaihd.net/
+[20200617T11:53:40] {3530} INF: adding network address 23.199.48.177:443 for server https://blzddist1-a.akamaihd.net/
+[20200617T11:53:40] {3530} INF: adding network address 67.24.80.30:443 for server https://level3.ssl.blizzard.com/
+[20200617T11:53:40] {3530} INF: adding network address 8.252.165.139:443 for server https://level3.ssl.blizzard.com/
+[20200617T11:53:40] {3530} INF: adding network address 8.240.114.139:443 for server https://level3.ssl.blizzard.com/
+[20200617T11:58:41] {3530} INF: adding network address 8.240.176.254:80 for server http://level3.blizzard.com/
+[20200617T11:58:41] {3530} INF: adding network address 8.253.149.120:80 for server http://level3.blizzard.com/
+[20200617T11:58:41] {3530} INF: adding network address 67.26.123.254:80 for server http://level3.blizzard.com/
+[20200617T11:58:41] {3530} INF: adding network address 67.26.122.30:443 for server https://level3.ssl.blizzard.com/
+[20200617T11:58:41] {3530} INF: adding network address 8.253.149.41:443 for server https://level3.ssl.blizzard.com/
+[20200617T11:58:41] {3530} INF: adding network address 8.240.176.139:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:03:42] {3530} INF: adding network address 67.26.127.254:80 for server http://level3.blizzard.com/
+[20200617T12:03:42] {3530} INF: adding network address 67.24.75.254:80 for server http://level3.blizzard.com/
+[20200617T12:03:42] {3530} INF: adding network address 8.253.165.248:80 for server http://level3.blizzard.com/
+[20200617T12:03:43] {3530} INF: adding network address 67.26.126.30:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:03:43] {3530} INF: adding network address 8.253.253.119:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:08:43] {3530} INF: adding network address 8.252.88.254:80 for server http://level3.blizzard.com/
+[20200617T12:08:43] {3530} INF: adding network address 8.253.253.126:80 for server http://level3.blizzard.com/
+[20200617T12:08:44] {3530} INF: adding network address 8.240.114.11:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:08:44] {3530} INF: adding network address 8.252.88.139:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:13:44] {3530} INF: adding network address 8.252.53.126:80 for server http://level3.blizzard.com/
+[20200617T12:13:44] {3530} INF: adding network address 8.253.165.230:80 for server http://level3.blizzard.com/
+[20200617T12:13:44] {3530} INF: adding network address 8.253.149.121:80 for server http://level3.blizzard.com/
+[20200617T12:13:45] {3530} INF: adding network address 67.24.72.30:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:18:46] {3530} INF: adding network address 104.124.62.16:443 for server https://blzddist1-a.akamaihd.net/
+[20200617T12:18:46] {3530} INF: adding network address 104.124.62.35:443 for server https://blzddist1-a.akamaihd.net/
+[20200617T12:18:46] {3530} INF: adding network address 8.240.1.139:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:18:46] {3530} INF: adding network address 8.253.165.174:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:23:47] {3530} INF: adding network address 8.240.114.126:80 for server http://level3.blizzard.com/
+[20200617T12:23:47] {3530} INF: adding network address 8.252.53.139:443 for server https://level3.ssl.blizzard.com/
+[20200617T12:23:47] {3530} INF: adding network address 8.240.176.11:443 for server https://level3.ssl.blizzard.com/
+----------------------------------------
+
+Locally overridden files
+ -12631 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091518_231734.jpg
+ -12463 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\labelframe.tcl
+ -12403 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\uk.msg
+ -12423 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\anilabel.tcl
+ -12227 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp874.enc
+ -12227 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp874.enc
+ -12423 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\anilabel.tcl
+ -12403 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\uk.msg
+ -12463 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\labelframe.tcl
+ -12631 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091518_231734.jpg

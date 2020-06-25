@@ -1,21 +1,28 @@
 
 ARLDB2 = {
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+	},
 	["global"] = {
 		["tradeskill"] = {
-			["Zul'jin"] = {
-				["Vancard"] = {
+			["Argent Dawn"] = {
+				["Shanyt"] = {
 				},
-				["Datgore"] = {
-				},
-				["Zulbathal"] = {
-				},
-				["Kotalkhan"] = {
-				},
-				["Shimzo"] = {
-				},
-				["Shaekhan"] = {
-				},
-				["Fantastiburo"] = {
+				["Tyrannithal"] = {
 				},
 			},
 			["Black Dragonflight"] = {
@@ -34,30 +41,23 @@ ARLDB2 = {
 				["Darnastris"] = {
 				},
 			},
-			["Argent Dawn"] = {
-				["Shanyt"] = {
+			["Zul'jin"] = {
+				["Vancard"] = {
 				},
-				["Tyrannithal"] = {
+				["Datgore"] = {
+				},
+				["Zulbathal"] = {
+				},
+				["Kotalkhan"] = {
+				},
+				["Shaekhan"] = {
+				},
+				["Shimzo"] = {
+				},
+				["Fantastiburo"] = {
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
@@ -66,25 +66,25 @@ ARLDB2 = {
 		},
 		["Vancard - Zul'jin"] = {
 		},
-		["Darnastris - Dalaran"] = {
+		["Tyrannithal - Argent Dawn"] = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Zulbathal - Zul'jin"] = {
 		},
 		["Datgore - Zul'jin"] = {
 		},
-		["Tyrannithal - Argent Dawn"] = {
+		["Darnastris - Dalaran"] = {
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
 		["Durlok - Black Dragonflight"] = {
 		},
-		["Shimzo - Zul'jin"] = {
-		},
 		["Fantastiburo - Zul'jin"] = {
+		},
+		["Shimzo - Zul'jin"] = {
 		},
 		["Shaekhan - Zul'jin"] = {
 		},

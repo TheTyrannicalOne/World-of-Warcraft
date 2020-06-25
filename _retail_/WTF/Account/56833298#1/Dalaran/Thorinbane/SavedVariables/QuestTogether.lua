@@ -16,7 +16,7 @@ QuestTogether = {
 		[27458] = {
 			["title"] = "Smokey and the Bandage",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Browman's Wrappings", -- [1]
 			},
 		},
 		[27762] = {
@@ -27,7 +27,7 @@ QuestTogether = {
 		[28756] = {
 			["title"] = "Aberrations of Bone",
 			["objectives"] = {
-				"0/1   slain", -- [1]
+				"0/1 Rattlegore slain", -- [1]
 			},
 		},
 		[31891] = {
@@ -73,7 +73,7 @@ QuestTogether = {
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
@@ -90,14 +90,14 @@ QuestTogether = {
 		[28755] = {
 			["title"] = "Annals of the Silver Hand",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Annals of the Silver Hand", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }
