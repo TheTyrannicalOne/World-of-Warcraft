@@ -22,7 +22,7 @@ QuestTogether = {
 		[57744] = {
 			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"60/500 Earn Conquest", -- [1]
+				"120/500 Earn Conquest", -- [1]
 			},
 		},
 		[53436] = {
@@ -31,9 +31,11 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[54185] = {
@@ -41,6 +43,17 @@ QuestTogether = {
 			["objectives"] = {
 				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[57006] = {
@@ -51,12 +64,10 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[57566] = {
@@ -72,10 +83,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"1/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[54438] = {
@@ -84,9 +95,12 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[56378] = {
+			["title"] = "The Missing Crew",
 			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[36615] = {
@@ -123,11 +137,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -167,7 +180,7 @@ QuestTogether = {
 		[54978] = {
 			["title"] = "Against Overwhelming Odds",
 			["objectives"] = {
-				"7/25 Slay Horde Players", -- [1]
+				"10/25 Slay Horde Players", -- [1]
 			},
 		},
 		[44720] = {
@@ -184,8 +197,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

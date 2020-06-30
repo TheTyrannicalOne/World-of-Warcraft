@@ -12,9 +12,9 @@ BtWQuests_Characters = {
 		["friendships"] = {
 			[2370] = {
 				["maxRep"] = 42000,
-				["nextThreshold"] = 4000,
-				["name"] = "Dino Training - Direhorn",
 				["threshold"] = 0,
+				["name"] = "Dino Training - Direhorn",
+				["nextThreshold"] = 4000,
 				["reaction"] = "Hatchling",
 				["text"] = "Direhorn has grown into a Hatchling.",
 				["rep"] = 0,
@@ -38,6 +38,7 @@ BtWQuests_Characters = {
 			[56329] = true,
 			[52490] = true,
 			[48523] = true,
+			[52874] = true,
 			[26505] = true,
 			[26569] = true,
 			[53386] = true,
@@ -90,6 +91,7 @@ BtWQuests_Characters = {
 			[32009] = true,
 			[48014] = true,
 			[52493] = true,
+			[52877] = true,
 			[36881] = true,
 			[28810] = true,
 			[53773] = true,
@@ -206,6 +208,7 @@ BtWQuests_Characters = {
 			[53652] = true,
 			[49813] = true,
 			[50069] = true,
+			[54292] = true,
 			[50325] = true,
 			[50453] = true,
 			[54676] = true,
@@ -439,6 +442,7 @@ BtWQuests_Characters = {
 			[28757] = true,
 			[28821] = true,
 			[50340] = true,
+			[54691] = true,
 			[54947] = true,
 			[38823] = true,
 			[29717] = true,
@@ -531,6 +535,7 @@ BtWQuests_Characters = {
 			[51242] = true,
 			[55465] = true,
 			[29848] = true,
+			[51626] = true,
 			[39597] = true,
 			[39725] = true,
 			[39853] = true,
@@ -549,6 +554,7 @@ BtWQuests_Characters = {
 			[51115] = true,
 			[51243] = true,
 			[31832] = true,
+			[51627] = true,
 			[52011] = true,
 			[56490] = true,
 			[57002] = true,
@@ -660,6 +666,7 @@ BtWQuests_Characters = {
 			[55089] = true,
 			[55729] = true,
 			[51762] = true,
+			[51890] = true,
 			[59] = true,
 			[48179] = true,
 			[56625] = true,
@@ -818,6 +825,7 @@ BtWQuests_Characters = {
 			[50492] = true,
 			[54715] = true,
 			[2158] = true,
+			[51388] = true,
 			[55995] = true,
 			[52028] = true,
 			[52156] = true,
@@ -908,6 +916,7 @@ BtWQuests_Characters = {
 			[40517] = true,
 			[239] = true,
 			[48963] = true,
+			[53186] = true,
 			[53442] = true,
 			[31140] = true,
 			[11605] = true,
@@ -919,12 +928,14 @@ BtWQuests_Characters = {
 			[11797] = true,
 			[43205] = true,
 			[47428] = true,
+			[51651] = true,
 			[51779] = true,
 			[51907] = true,
 			[52035] = true,
 			[52163] = true,
 			[52291] = true,
 			[56642] = true,
+			[53187] = true,
 			[53315] = true,
 			[28773] = true,
 			[53699] = true,
@@ -1014,6 +1025,7 @@ BtWQuests_Characters = {
 			[51913] = true,
 			[47946] = true,
 			[52169] = true,
+			[56520] = true,
 			[49226] = true,
 			[49738] = true,
 			[49866] = true,
@@ -1091,6 +1103,7 @@ BtWQuests_Characters = {
 			[55117] = true,
 			[51150] = true,
 			[51278] = true,
+			[51406] = true,
 			[35154] = true,
 			[29930] = true,
 			[51918] = true,
@@ -1353,6 +1366,7 @@ BtWQuests_Characters = {
 			[47329] = true,
 			[51552] = true,
 			[47585] = true,
+			[51808] = true,
 			[56031] = true,
 			[48353] = true,
 			[26292] = true,
@@ -1390,6 +1404,7 @@ BtWQuests_Characters = {
 			[48355] = true,
 			[48611] = true,
 			[52962] = true,
+			[53346] = true,
 			[53602] = true,
 			[53986] = true,
 			[54114] = true,
@@ -1437,6 +1452,8 @@ BtWQuests_Characters = {
 			[51941] = true,
 			[52453] = true,
 			[36201] = true,
+			[57060] = true,
+			[53221] = true,
 			[57956] = true,
 			[53989] = true,
 			[54117] = true,
@@ -1450,6 +1467,7 @@ BtWQuests_Characters = {
 			[51942] = true,
 			[52326] = true,
 			[36202] = true,
+			[53222] = true,
 			[57957] = true,
 			[53990] = true,
 			[54118] = true,
@@ -1463,258 +1481,279 @@ BtWQuests_Characters = {
 			[11902] = true,
 			[51943] = true,
 			[39786] = true,
+			[50776] = true,
+			[54694] = true,
+			[48778] = true,
 			[48616] = true,
+			[49223] = true,
+			[50605] = true,
+			[54196] = true,
+			[53267] = true,
 			[53351] = true,
 			[28791] = true,
+			[48598] = true,
+			[54539] = true,
+			[53043] = true,
 			[49896] = true,
 			[58214] = true,
 			[50152] = true,
 			[58470] = true,
+			[52888] = true,
+			[52802] = true,
+			[50622] = true,
+			[50792] = true,
 			[29559] = true,
 			[29623] = true,
+			[53814] = true,
 			[29751] = true,
 			[51432] = true,
+			[52886] = true,
 			[55783] = true,
+			[51209] = true,
 			[51944] = true,
 			[39787] = true,
+			[50898] = true,
+			[53276] = true,
 			[26232] = true,
 			[26296] = true,
 			[48617] = true,
 			[56935] = true,
 			[48873] = true,
+			[50825] = true,
 			[26616] = true,
 			[53352] = true,
-			[51621] = true,
-			[26872] = true,
-			[52888] = true,
-			[49897] = true,
-			[48778] = true,
-			[50767] = true,
-			[50622] = true,
-			[54504] = true,
-			[52886] = true,
+			[27400] = true,
 			[55464] = true,
+			[26872] = true,
+			[33073] = true,
+			[49897] = true,
+			[33359] = true,
+			[34193] = true,
+			[56139] = true,
+			[54504] = true,
+			[51528] = true,
+			[29585] = true,
 			[50793] = true,
-			[53276] = true,
-			[54537] = true,
+			[51664] = true,
+			[53006] = true,
 			[51177] = true,
 			[34925] = true,
 			[51433] = true,
-			[33073] = true,
+			[51092] = true,
 			[55784] = true,
-			[33359] = true,
+			[57063] = true,
 			[51945] = true,
 			[39788] = true,
-			[34193] = true,
+			[29547] = true,
 			[52329] = true,
 			[52457] = true,
-			[56139] = true,
+			[26568] = true,
 			[48618] = true,
-			[51092] = true,
+			[57492] = true,
 			[52969] = true,
 			[53097] = true,
-			[29585] = true,
-			[29547] = true,
+			[54187] = true,
+			[57942] = true,
 			[28792] = true,
-			[51613] = true,
-			[57063] = true,
-			[50825] = true,
+			[48521] = true,
+			[34775] = true,
+			[50099] = true,
 			[49898] = true,
 			[50026] = true,
-			[27400] = true,
-			[51664] = true,
-			[53435] = true,
-			[51103] = true,
-			[57492] = true,
-			[34775] = true,
+			[55521] = true,
+			[52456] = true,
+			[54705] = true,
+			[56541] = true,
+			[55264] = true,
+			[50355] = true,
 			[38637] = true,
 			[42860] = true,
 			[51178] = true,
 			[29752] = true,
-			[52456] = true,
+			[51659] = true,
 			[55657] = true,
-			[50705] = true,
-			[55264] = true,
+			[29865] = true,
+			[55375] = true,
 			[51946] = true,
 			[39789] = true,
-			[58155] = true,
-			[50355] = true,
-			[54705] = true,
+			[29639] = true,
+			[55463] = true,
+			[50824] = true,
 			[26297] = true,
 			[48619] = true,
-			[55521] = true,
-			[26568] = true,
+			[57027] = true,
+			[58510] = true,
 			[30648] = true,
-			[51659] = true,
+			[56540] = true,
 			[49259] = true,
-			[29865] = true,
+			[58502] = true,
 			[33135] = true,
 			[26873] = true,
-			[47584] = true,
-			[53994] = true,
-			[48521] = true,
-			[54471] = true,
-			[55375] = true,
-			[38935] = true,
 			[52318] = true,
-			[57027] = true,
-			[50795] = true,
+			[53994] = true,
+			[58802] = true,
+			[58085] = true,
 			[58008] = true,
-			[56540] = true,
-			[38894] = true,
-			[58510] = true,
+			[54229] = true,
 			[56162] = true,
+			[30500] = true,
+			[50795] = true,
+			[56889] = true,
+			[55393] = true,
+			[38894] = true,
+			[53127] = true,
+			[6181] = true,
 			[11871] = true,
 			[11903] = true,
-			[58634] = true,
+			[48776] = true,
 			[56042] = true,
 			[47980] = true,
 			[48108] = true,
-			[58778] = true,
+			[49419] = true,
 			[52459] = true,
-			[29639] = true,
-			[58085] = true,
-			[50824] = true,
-			[55393] = true,
-			[53099] = true,
-			[56889] = true,
-			[49260] = true,
-			[49388] = true,
-			[30500] = true,
-			[53739] = true,
-			[53867] = true,
-			[58502] = true,
-			[57524] = true,
-			[50156] = true,
-			[6181] = true,
-			[54507] = true,
 			[54837] = true,
 			[54714] = true,
-			[56542] = true,
-			[55397] = true,
-			[34672] = true,
 			[53567] = true,
+			[54712] = true,
+			[53099] = true,
+			[56377] = true,
+			[49260] = true,
+			[49388] = true,
+			[30485] = true,
+			[53739] = true,
+			[53867] = true,
+			[36624] = true,
+			[56167] = true,
+			[50156] = true,
+			[51892] = true,
+			[54507] = true,
+			[51175] = true,
+			[31814] = true,
+			[55302] = true,
+			[56374] = true,
+			[34672] = true,
+			[51119] = true,
 			[51308] = true,
 			[43246] = true,
 			[29881] = true,
-			[30485] = true,
+			[56156] = true,
 			[51820] = true,
 			[56043] = true,
 			[47981] = true,
 			[48109] = true,
-			[56377] = true,
+			[55055] = true,
 			[48365] = true,
-			[53127] = true,
+			[56536] = true,
 			[48621] = true,
-			[51108] = true,
+			[55057] = true,
 			[36592] = true,
-			[48776] = true,
-			[51175] = true,
+			[52460] = true,
+			[56376] = true,
 			[53356] = true,
-			[27228] = true,
+			[55519] = true,
 			[53612] = true,
 			[53740] = true,
-			[51119] = true,
-			[56374] = true,
-			[57133] = true,
+			[55096] = true,
+			[56131] = true,
+			[56982] = true,
 			[50157] = true,
 			[33905] = true,
 			[54508] = true,
-			[55057] = true,
-			[56156] = true,
+			[50315] = true,
+			[55737] = true,
 			[50797] = true,
-			[55055] = true,
-			[55096] = true,
+			[54088] = true,
+			[56089] = true,
 			[31737] = true,
 			[51309] = true,
-			[55707] = true,
-			[55735] = true,
-			[31814] = true,
+			[57221] = true,
+			[52998] = true,
+			[50858] = true,
 			[51821] = true,
-			[55302] = true,
+			[55466] = true,
 			[47982] = true,
 			[48110] = true,
-			[55347] = true,
+			[48026] = true,
 			[48366] = true,
-			[56131] = true,
+			[53131] = true,
 			[48622] = true,
 			[52845] = true,
-			[55737] = true,
-			[50315] = true,
+			[50853] = true,
+			[55349] = true,
 			[57324] = true,
-			[56982] = true,
+			[54945] = true,
 			[28794] = true,
-			[53132] = true,
+			[55362] = true,
 			[53741] = true,
-			[54088] = true,
-			[50098] = true,
-			[50858] = true,
+			[83] = true,
+			[55404] = true,
+			[26295] = true,
 			[50158] = true,
-			[48026] = true,
-			[55466] = true,
+			[29609] = true,
+			[31821] = true,
 			[50542] = true,
-			[53131] = true,
-			[52203] = true,
+			[53443] = true,
+			[55480] = true,
 			[29562] = true,
 			[29626] = true,
-			[50853] = true,
+			[27361] = true,
 			[51310] = true,
 			[55533] = true,
 			[29882] = true,
 			[51694] = true,
 			[55917] = true,
-			[54945] = true,
+			[46727] = true,
 			[39793] = true,
 			[48111] = true,
-			[83] = true,
+			[54992] = true,
 			[48367] = true,
-			[57221] = true,
-			[52998] = true,
-			[47533] = true,
+			[55618] = true,
+			[51090] = true,
+			[50697] = true,
 			[48879] = true,
 			[57197] = true,
-			[29609] = true,
-			[55404] = true,
-			[55363] = true,
-			[31821] = true,
+			[26571] = true,
+			[53464] = true,
+			[50107] = true,
+			[51638] = true,
 			[53742] = true,
-			[48439] = true,
-			[54992] = true,
+			[58141] = true,
+			[54953] = true,
 			[54126] = true,
-			[55480] = true,
-			[27361] = true,
+			[47289] = true,
+			[57097] = true,
 			[54510] = true,
-			[50874] = true,
+			[55210] = true,
 			[11648] = true,
 			[11680] = true,
-			[56979] = true,
-			[26571] = true,
+			[26506] = true,
+			[48902] = true,
 			[31738] = true,
 			[51311] = true,
-			[53464] = true,
+			[48774] = true,
 			[11872] = true,
 			[11904] = true,
 			[11936] = true,
 			[11968] = true,
-			[48593] = true,
-			[58141] = true,
-			[49223] = true,
+			[55400] = true,
+			[34398] = true,
 			[52463] = true,
-			[46727] = true,
-			[51638] = true,
+			[48368] = true,
+			[26396] = true,
+			[55374] = true,
 			[48752] = true,
 			[48880] = true,
-			[57097] = true,
-			[48368] = true,
-			[50519] = true,
+			[51361] = true,
+			[52495] = true,
+			[34393] = true,
 			[28795] = true,
-			[55210] = true,
+			[31918] = true,
 			[53743] = true,
-			[45] = true,
-			[29866] = true,
-			[543] = true,
-			[55400] = true,
+			[33116] = true,
+			[34420] = true,
 			[55407] = true,
+			[50160] = true,
+			[51205] = true,
 			[58606] = true,
 			[50544] = true,
 			[50672] = true,
@@ -1723,533 +1762,533 @@ BtWQuests_Characters = {
 			[29627] = true,
 			[51184] = true,
 			[51312] = true,
-			[51361] = true,
-			[51568] = true,
-			[26396] = true,
 			[55919] = true,
-			[55374] = true,
-			[50605] = true,
+			[51568] = true,
+			[38414] = true,
+			[35444] = true,
+			[52494] = true,
+			[42772] = true,
 			[52208] = true,
-			[48902] = true,
+			[38566] = true,
 			[52464] = true,
-			[48774] = true,
-			[52495] = true,
+			[40409] = true,
+			[13807] = true,
 			[48753] = true,
 			[52976] = true,
 			[57199] = true,
 			[57327] = true,
-			[42895] = true,
+			[49428] = true,
 			[49393] = true,
-			[34393] = true,
+			[51546] = true,
 			[53744] = true,
-			[33116] = true,
-			[50339] = true,
-			[50097] = true,
-			[50161] = true,
-			[42772] = true,
-			[50417] = true,
+			[27633] = true,
+			[50673] = true,
 			[58991] = true,
+			[50161] = true,
+			[34765] = true,
+			[50417] = true,
+			[50601] = true,
 			[54768] = true,
 			[34421] = true,
 			[50929] = true,
-			[38414] = true,
+			[54946] = true,
 			[31739] = true,
 			[51313] = true,
-			[38413] = true,
+			[53465] = true,
 			[51569] = true,
 			[51697] = true,
 			[51825] = true,
-			[50100] = true,
+			[51124] = true,
 			[39796] = true,
-			[42771] = true,
-			[51205] = true,
-			[48370] = true,
-			[27343] = true,
-			[52849] = true,
-			[48754] = true,
-			[48882] = true,
 			[57200] = true,
-			[51546] = true,
+			[38933] = true,
+			[48370] = true,
+			[29628] = true,
+			[48754] = true,
+			[52849] = true,
+			[48882] = true,
+			[53105] = true,
+			[51126] = true,
 			[49266] = true,
 			[49394] = true,
 			[49522] = true,
 			[53745] = true,
 			[57968] = true,
-			[55736] = true,
+			[29884] = true,
 			[50034] = true,
 			[50162] = true,
-			[42900] = true,
+			[50958] = true,
 			[50418] = true,
 			[50546] = true,
 			[50674] = true,
 			[50802] = true,
 			[42740] = true,
-			[29628] = true,
-			[29884] = true,
+			[55153] = true,
 			[51314] = true,
+			[29756] = true,
 			[55537] = true,
 			[51570] = true,
-			[53105] = true,
+			[50604] = true,
 			[51826] = true,
-			[49815] = true,
-			[34765] = true,
+			[50976] = true,
+			[47186] = true,
 			[56305] = true,
-			[38795] = true,
+			[51341] = true,
 			[52466] = true,
-			[54946] = true,
-			[53465] = true,
+			[31822] = true,
+			[55497] = true,
 			[48755] = true,
 			[48883] = true,
 			[57201] = true,
-			[51878] = true,
-			[51124] = true,
+			[34824] = true,
+			[29637] = true,
 			[49395] = true,
 			[49523] = true,
 			[53746] = true,
 			[57969] = true,
-			[50958] = true,
-			[50109] = true,
+			[30002] = true,
+			[29548] = true,
 			[50163] = true,
-			[47186] = true,
-			[11617] = true,
+			[50692] = true,
 			[58737] = true,
+			[11617] = true,
 			[50675] = true,
 			[31548] = true,
 			[42741] = true,
-			[51341] = true,
+			[42770] = true,
 			[31740] = true,
-			[50604] = true,
-			[55497] = true,
+			[11613] = true,
+			[50111] = true,
 			[51571] = true,
 			[51699] = true,
 			[26229] = true,
-			[52241] = true,
-			[31822] = true,
-			[50111] = true,
-			[29548] = true,
-			[48372] = true,
-			[11613] = true,
-			[52851] = true,
-			[48756] = true,
 			[55730] = true,
 			[38488] = true,
-			[42898] = true,
+			[38558] = true,
+			[51927] = true,
+			[48372] = true,
+			[29647] = true,
+			[55340] = true,
+			[52851] = true,
+			[11623] = true,
+			[53123] = true,
+			[50106] = true,
 			[49268] = true,
 			[28797] = true,
-			[34824] = true,
+			[48595] = true,
 			[53747] = true,
 			[57970] = true,
 			[49908] = true,
 			[50036] = true,
 			[50164] = true,
-			[29637] = true,
-			[39756] = true,
-			[1097] = true,
+			[48981] = true,
+			[11943] = true,
+			[26290] = true,
 			[54771] = true,
 			[58994] = true,
-			[50692] = true,
-			[29629] = true,
 			[51572] = true,
+			[29629] = true,
+			[31309] = true,
 			[55411] = true,
-			[51444] = true,
+			[1097] = true,
 			[29885] = true,
 			[51700] = true,
-			[29647] = true,
-			[51956] = true,
-			[38558] = true,
-			[48195] = true,
-			[11623] = true,
-			[50106] = true,
-			[48595] = true,
-			[52852] = true,
-			[48757] = true,
-			[55183] = true,
-			[26289] = true,
 			[38815] = true,
-			[31309] = true,
+			[51956] = true,
+			[51543] = true,
+			[11941] = true,
+			[26289] = true,
+			[42947] = true,
+			[52450] = true,
+			[31812] = true,
+			[52852] = true,
+			[34823] = true,
+			[38624] = true,
+			[54201] = true,
+			[31556] = true,
 			[37112] = true,
-			[53123] = true,
+			[27397] = true,
 			[53748] = true,
 			[57971] = true,
-			[42947] = true,
+			[38473] = true,
 			[50037] = true,
 			[50165] = true,
-			[50421] = true,
+			[54418] = true,
 			[31357] = true,
-			[42774] = true,
+			[40001] = true,
 			[50677] = true,
 			[34425] = true,
-			[52450] = true,
-			[38473] = true,
+			[42774] = true,
+			[50421] = true,
 			[31741] = true,
 			[51317] = true,
 			[51445] = true,
-			[38624] = true,
-			[39748] = true,
-			[48539] = true,
-			[47] = true,
+			[26228] = true,
+			[26291] = true,
+			[51280] = true,
+			[51204] = true,
 			[39800] = true,
 			[56308] = true,
-			[11941] = true,
-			[26228] = true,
-			[40001] = true,
-			[31826] = true,
-			[44663] = true,
-			[31812] = true,
-			[53109] = true,
-			[34823] = true,
-			[26291] = true,
-			[49398] = true,
-			[51280] = true,
-			[53749] = true,
-			[53877] = true,
-			[31556] = true,
-			[27397] = true,
-			[50166] = true,
-			[51367] = true,
 			[34592] = true,
 			[28772] = true,
-			[54199] = true,
 			[42948] = true,
+			[28771] = true,
+			[44663] = true,
 			[51395] = true,
-			[29630] = true,
-			[51190] = true,
-			[49292] = true,
-			[51446] = true,
-			[26726] = true,
-			[36131] = true,
-			[35450] = true,
-			[49997] = true,
-			[54870] = true,
+			[53109] = true,
+			[26355] = true,
+			[50583] = true,
+			[49398] = true,
+			[26356] = true,
+			[53749] = true,
+			[53877] = true,
 			[54] = true,
+			[36131] = true,
+			[50166] = true,
+			[26726] = true,
 			[11681] = true,
+			[29630] = true,
+			[54773] = true,
 			[28820] = true,
-			[46] = true,
 			[53206] = true,
-			[52854] = true,
+			[38777] = true,
+			[51190] = true,
+			[51586] = true,
+			[51446] = true,
+			[46] = true,
+			[29764] = true,
+			[35450] = true,
+			[29700] = true,
 			[42811] = true,
-			[53110] = true,
+			[31828] = true,
 			[39723] = true,
-			[52443] = true,
-			[49399] = true,
-			[49725] = true,
-			[53750] = true,
+			[33765] = true,
 			[42431] = true,
-			[27344] = true,
+			[49725] = true,
+			[52854] = true,
+			[58496] = true,
+			[53110] = true,
 			[39864] = true,
+			[50635] = true,
+			[49399] = true,
+			[112] = true,
+			[53750] = true,
+			[50105] = true,
+			[53978] = true,
+			[50897] = true,
 			[31230] = true,
 			[50295] = true,
 			[54518] = true,
-			[53978] = true,
+			[32675] = true,
 			[50679] = true,
 			[31550] = true,
-			[51586] = true,
+			[26391] = true,
 			[38778] = true,
 			[51191] = true,
 			[51319] = true,
 			[51447] = true,
-			[112] = true,
-			[29764] = true,
-			[29700] = true,
-			[11791] = true,
-			[11950] = true,
-			[29811] = true,
-			[51385] = true,
-			[50897] = true,
-			[48504] = true,
-			[26391] = true,
-			[58496] = true,
-			[26503] = true,
+			[39591] = true,
 			[26137] = true,
+			[26503] = true,
+			[51385] = true,
+			[48354] = true,
 			[52260] = true,
-			[48196] = true,
+			[52481] = true,
+			[26393] = true,
+			[48504] = true,
+			[11679] = true,
+			[52853] = true,
+			[56064] = true,
+			[30070] = true,
+			[29560] = true,
+			[50148] = true,
 			[49400] = true,
 			[49528] = true,
 			[53751] = true,
-			[52853] = true,
-			[11679] = true,
-			[50108] = true,
+			[49720] = true,
+			[29624] = true,
+			[54263] = true,
 			[50168] = true,
 			[50296] = true,
 			[54519] = true,
-			[30070] = true,
-			[29560] = true,
-			[29759] = true,
+			[26586] = true,
+			[40753] = true,
+			[34437] = true,
 			[50936] = true,
 			[29631] = true,
 			[51192] = true,
-			[51320] = true,
+			[29759] = true,
 			[51448] = true,
 			[29887] = true,
-			[47979] = true,
-			[40753] = true,
-			[26586] = true,
+			[40568] = true,
+			[39592] = true,
+			[51320] = true,
 			[39803] = true,
-			[49720] = true,
-			[52481] = true,
+			[33066] = true,
+			[51807] = true,
 			[52472] = true,
 			[48505] = true,
-			[54196] = true,
-			[29624] = true,
-			[39592] = true,
+			[31585] = true,
+			[52508] = true,
+			[53888] = true,
 			[26560] = true,
-			[56064] = true,
-			[44922] = true,
+			[54198] = true,
+			[49995] = true,
 			[49401] = true,
 			[49529] = true,
-			[40568] = true,
-			[49418] = true,
+			[44922] = true,
 			[44940] = true,
+			[50102] = true,
+			[54136] = true,
+			[29997] = true,
 			[50041] = true,
-			[49995] = true,
-			[31551] = true,
 			[58615] = true,
 			[50553] = true,
-			[51193] = true,
-			[34429] = true,
+			[47098] = true,
+			[31551] = true,
 			[50937] = true,
 			[51065] = true,
-			[47098] = true,
+			[51193] = true,
 			[51321] = true,
 			[51449] = true,
 			[51577] = true,
-			[52508] = true,
+			[29608] = true,
 			[51833] = true,
 			[51961] = true,
 			[39804] = true,
-			[34437] = true,
-			[54198] = true,
+			[31870] = true,
+			[48077] = true,
 			[52473] = true,
-			[29997] = true,
-			[35280] = true,
-			[48762] = true,
-			[29608] = true,
+			[26390] = true,
 			[51554] = true,
-			[49274] = true,
+			[48762] = true,
+			[36132] = true,
+			[54703] = true,
+			[26668] = true,
 			[53369] = true,
 			[49402] = true,
-			[12790] = true,
-			[53888] = true,
-			[31575] = true,
-			[48077] = true,
-			[38324] = true,
-			[50170] = true,
-			[26668] = true,
+			[50803] = true,
+			[29891] = true,
+			[11682] = true,
+			[51203] = true,
 			[54265] = true,
+			[50170] = true,
+			[29635] = true,
+			[50938] = true,
 			[34174] = true,
-			[29632] = true,
+			[55161] = true,
 			[50810] = true,
 			[55033] = true,
-			[55161] = true,
+			[29632] = true,
 			[47099] = true,
-			[50938] = true,
+			[26236] = true,
 			[31743] = true,
 			[29888] = true,
-			[50803] = true,
-			[31574] = true,
-			[51962] = true,
 			[35019] = true,
-			[11682] = true,
-			[48758] = true,
+			[33072] = true,
+			[51962] = true,
+			[27353] = true,
+			[39735] = true,
+			[31513] = true,
 			[26241] = true,
-			[26236] = true,
-			[47978] = true,
-			[31736] = true,
+			[53887] = true,
+			[12117] = true,
+			[27737] = true,
 			[57081] = true,
 			[26561] = true,
-			[31513] = true,
+			[31830] = true,
 			[53370] = true,
 			[49403] = true,
 			[49531] = true,
-			[29891] = true,
+			[36079] = true,
 			[49787] = true,
+			[51408] = true,
 			[50043] = true,
-			[54138] = true,
-			[31830] = true,
+			[48113] = true,
 			[50299] = true,
 			[31360] = true,
 			[11619] = true,
-			[27737] = true,
+			[86] = true,
 			[34431] = true,
 			[50939] = true,
-			[29635] = true,
+			[54138] = true,
 			[31744] = true,
 			[47228] = true,
 			[51451] = true,
-			[50088] = true,
-			[12117] = true,
+			[48881] = true,
+			[27362] = true,
 			[51835] = true,
-			[36079] = true,
-			[51408] = true,
-			[52219] = true,
-			[33070] = true,
+			[27227] = true,
+			[28796] = true,
+			[12035] = true,
+			[52461] = true,
 			[52475] = true,
 			[48508] = true,
-			[86] = true,
+			[31552] = true,
 			[48764] = true,
-			[48881] = true,
-			[52204] = true,
-			[27362] = true,
+			[49703] = true,
+			[51839] = true,
+			[11908] = true,
 			[49276] = true,
 			[49404] = true,
-			[53887] = true,
-			[28796] = true,
-			[52461] = true,
-			[49916] = true,
-			[33664] = true,
-			[50172] = true,
-			[31552] = true,
-			[49703] = true,
+			[47488] = true,
 			[51940] = true,
+			[53041] = true,
+			[49916] = true,
+			[50044] = true,
+			[50172] = true,
+			[51365] = true,
+			[33664] = true,
+			[51369] = true,
 			[54779] = true,
 			[34432] = true,
-			[53041] = true,
-			[29633] = true,
-			[49960] = true,
-			[47485] = true,
-			[29825] = true,
-			[29889] = true,
-			[51369] = true,
-			[52146] = true,
 			[52075] = true,
-			[49736] = true,
-			[47919] = true,
+			[29633] = true,
+			[27395] = true,
+			[29825] = true,
+			[51452] = true,
+			[47485] = true,
 			[34422] = true,
-			[56571] = true,
-			[34585] = true,
-			[26370] = true,
-			[52860] = true,
-			[51839] = true,
-			[26562] = true,
-			[11908] = true,
-			[53372] = true,
-			[49405] = true,
-			[47488] = true,
+			[52146] = true,
+			[29889] = true,
 			[48369] = true,
 			[51879] = true,
-			[26270] = true,
+			[11913] = true,
+			[56571] = true,
+			[33269] = true,
+			[26370] = true,
+			[52860] = true,
+			[34585] = true,
+			[26562] = true,
+			[34423] = true,
+			[53372] = true,
+			[49405] = true,
+			[34378] = true,
+			[106] = true,
+			[38058] = true,
+			[55409] = true,
 			[50045] = true,
 			[50173] = true,
 			[50301] = true,
 			[54524] = true,
-			[38060] = true,
+			[48767] = true,
 			[42495] = true,
 			[31553] = true,
-			[34378] = true,
+			[53098] = true,
 			[51069] = true,
 			[34817] = true,
-			[47235] = true,
+			[31745] = true,
 			[55548] = true,
 			[47486] = true,
-			[27395] = true,
-			[38058] = true,
+			[27968] = true,
+			[27356] = true,
 			[51965] = true,
 			[47998] = true,
-			[26237] = true,
-			[55409] = true,
-			[53098] = true,
-			[48874] = true,
-			[31745] = true,
-			[27356] = true,
-			[52989] = true,
-			[31742] = true,
 			[47489] = true,
-			[53373] = true,
-			[27435] = true,
+			[30969] = true,
 			[29883] = true,
-			[52042] = true,
-			[26271] = true,
+			[38331] = true,
+			[50955] = true,
+			[47487] = true,
+			[52989] = true,
+			[27435] = true,
+			[29754] = true,
+			[53373] = true,
 			[52205] = true,
+			[38785] = true,
+			[52462] = true,
+			[34434] = true,
+			[11603] = true,
 			[54141] = true,
 			[50174] = true,
-			[31735] = true,
-			[30011] = true,
-			[51582] = true,
-			[29634] = true,
-			[34434] = true,
-			[29890] = true,
-			[38785] = true,
-			[29698] = true,
-			[29762] = true,
-			[55549] = true,
-			[47487] = true,
-			[51882] = true,
 			[53445] = true,
 			[50814] = true,
 			[49739] = true,
-			[11603] = true,
-			[52462] = true,
+			[29890] = true,
 			[38529] = true,
+			[51882] = true,
+			[29634] = true,
+			[29698] = true,
+			[29762] = true,
+			[55549] = true,
+			[51582] = true,
 			[11587] = true,
-			[26371] = true,
-			[48767] = true,
+			[30011] = true,
+			[31735] = true,
 			[29755] = true,
-			[26563] = true,
-			[29754] = true,
-			[50955] = true,
-			[49407] = true,
-			[30969] = true,
+			[26271] = true,
+			[52042] = true,
+			[31742] = true,
+			[48874] = true,
+			[26371] = true,
+			[52862] = true,
 			[31549] = true,
-			[49791] = true,
-			[38331] = true,
+			[26563] = true,
+			[47235] = true,
 			[38576] = true,
+			[49407] = true,
+			[38060] = true,
+			[26237] = true,
+			[49791] = true,
+			[38710] = true,
+			[26270] = true,
 			[50175] = true,
-			[27968] = true,
+			[39791] = true,
 			[31362] = true,
 			[11620] = true,
 			[54782] = true,
 			[34435] = true,
-			[34423] = true,
-			[106] = true,
+			[49736] = true,
+			[47919] = true,
 			[51199] = true,
-			[38710] = true,
+			[49960] = true,
 			[55550] = true,
 			[11876] = true,
 			[51711] = true,
 			[35459] = true,
 			[51967] = true,
-			[39791] = true,
-			[11913] = true,
-			[33269] = true,
-			[51365] = true,
+			[52859] = true,
 			[11671] = true,
 			[11604] = true,
-			[51452] = true,
+			[52219] = true,
 			[40078] = true,
 			[52074] = true,
 			[39792] = true,
 			[29670] = true,
 			[39750] = true,
-			[50044] = true,
 			[28793] = true,
-			[49792] = true,
-			[12035] = true,
-			[54143] = true,
 			[29753] = true,
-			[52859] = true,
-			[27227] = true,
-			[48113] = true,
+			[52204] = true,
+			[50088] = true,
+			[33070] = true,
+			[49792] = true,
 			[51498] = true,
-			[34436] = true,
+			[54143] = true,
 			[43255] = true,
+			[52040] = true,
+			[47978] = true,
+			[48356] = true,
+			[31736] = true,
+			[34436] = true,
+			[48758] = true,
 			[34692] = true,
 			[51200] = true,
 			[29763] = true,
-			[52040] = true,
+			[52041] = true,
 			[51584] = true,
 			[51712] = true,
-			[33072] = true,
+			[49274] = true,
 			[51968] = true,
-			[27353] = true,
-			[39735] = true,
-			[48356] = true,
-			[52480] = true,
-			[51203] = true,
-			[52041] = true,
-			[48769] = true,
-			[54703] = true,
+			[31575] = true,
+			[31574] = true,
 			[39595] = true,
-			[36132] = true,
+			[52480] = true,
+			[29580] = true,
+			[38324] = true,
+			[48769] = true,
+			[34429] = true,
+			[12790] = true,
+			[35280] = true,
 			[26692] = true,
 			[49409] = true,
 			[13412] = true,
@@ -2258,262 +2297,262 @@ BtWQuests_Characters = {
 			[49921] = true,
 			[54144] = true,
 			[50177] = true,
-			[29580] = true,
-			[26390] = true,
-			[31870] = true,
+			[49418] = true,
+			[51211] = true,
+			[52496] = true,
 			[27396] = true,
 			[31555] = true,
 			[55040] = true,
 			[51073] = true,
 			[51201] = true,
-			[50102] = true,
+			[50108] = true,
 			[55552] = true,
 			[51585] = true,
-			[51211] = true,
-			[51807] = true,
+			[38053] = true,
+			[51841] = true,
 			[51969] = true,
-			[52496] = true,
-			[56320] = true,
-			[31585] = true,
-			[56576] = true,
-			[33066] = true,
 			[11793] = true,
+			[56320] = true,
+			[47979] = true,
+			[56576] = true,
+			[48196] = true,
+			[50758] = true,
 			[48770] = true,
 			[48898] = true,
 			[53121] = true,
-			[38053] = true,
+			[29555] = true,
 			[49282] = true,
-			[50148] = true,
-			[26393] = true,
+			[11791] = true,
+			[54262] = true,
 			[53761] = true,
 			[49794] = true,
-			[29555] = true,
-			[48354] = true,
-			[50758] = true,
+			[29811] = true,
+			[27344] = true,
+			[11950] = true,
 			[50306] = true,
-			[32675] = true,
+			[30486] = true,
 			[50562] = true,
 			[38405] = true,
 			[34438] = true,
-			[39591] = true,
+			[52443] = true,
 			[29636] = true,
 			[34822] = true,
 			[55425] = true,
 			[55553] = true,
 			[29892] = true,
 			[51714] = true,
-			[50635] = true,
-			[50105] = true,
-			[48003] = true,
-			[30486] = true,
-			[31828] = true,
-			[52482] = true,
-			[33765] = true,
+			[54870] = true,
 			[42782] = true,
+			[48003] = true,
+			[50965] = true,
+			[54261] = true,
+			[52482] = true,
+			[49997] = true,
+			[49292] = true,
 			[52866] = true,
 			[48899] = true,
-			[27351] = true,
-			[50965] = true,
-			[26693] = true,
-			[50583] = true,
-			[26356] = true,
-			[53762] = true,
+			[54199] = true,
 			[35] = true,
-			[38777] = true,
-			[26355] = true,
-			[28771] = true,
+			[26693] = true,
+			[34758] = true,
 			[26288] = true,
-			[51204] = true,
+			[53762] = true,
+			[51367] = true,
+			[50903] = true,
+			[29553] = true,
+			[31826] = true,
+			[48539] = true,
+			[50960] = true,
 			[50563] = true,
 			[50691] = true,
 			[34439] = true,
-			[34758] = true,
-			[50903] = true,
+			[47] = true,
+			[39748] = true,
 			[55298] = true,
 			[51331] = true,
-			[50960] = true,
-			[29553] = true,
+			[48757] = true,
+			[44785] = true,
 			[51715] = true,
 			[51843] = true,
 			[51971] = true,
 			[48004] = true,
-			[54418] = true,
-			[54201] = true,
+			[51444] = true,
+			[49869] = true,
 			[52483] = true,
 			[48516] = true,
-			[51543] = true,
-			[52867] = true,
-			[44785] = true,
-			[49028] = true,
-			[49869] = true,
 			[11663] = true,
+			[52867] = true,
+			[55183] = true,
+			[49028] = true,
+			[48195] = true,
+			[48756] = true,
 			[49412] = true,
 			[53635] = true,
 			[53763] = true,
-			[26290] = true,
-			[48981] = true,
-			[11943] = true,
-			[51927] = true,
-			[58498] = true,
 			[50110] = true,
+			[39756] = true,
+			[11965] = true,
+			[42898] = true,
+			[58498] = true,
+			[53462] = true,
 			[50564] = true,
 			[54787] = true,
 			[34440] = true,
-			[55340] = true,
+			[27365] = true,
 			[55171] = true,
 			[29701] = true,
-			[11965] = true,
+			[52241] = true,
 			[55555] = true,
 			[29893] = true,
-			[53462] = true,
+			[27404] = true,
 			[51844] = true,
-			[42770] = true,
+			[29808] = true,
 			[48005] = true,
-			[27365] = true,
-			[30002] = true,
+			[38811] = true,
+			[36630] = true,
 			[52484] = true,
 			[48517] = true,
-			[29808] = true,
+			[50109] = true,
 			[48773] = true,
-			[27404] = true,
+			[51878] = true,
 			[53124] = true,
-			[50976] = true,
+			[38795] = true,
 			[26694] = true,
-			[38811] = true,
-			[51126] = true,
-			[36630] = true,
-			[38933] = true,
-			[50601] = true,
 			[38486] = true,
+			[49815] = true,
+			[42900] = true,
+			[55736] = true,
+			[54020] = true,
+			[42771] = true,
 			[54276] = true,
 			[54404] = true,
-			[29756] = true,
-			[55153] = true,
+			[27343] = true,
+			[50100] = true,
 			[50693] = true,
-			[13807] = true,
+			[38413] = true,
 			[55044] = true,
-			[27633] = true,
+			[50097] = true,
 			[55300] = true,
 			[31813] = true,
 			[55556] = true,
-			[49428] = true,
-			[40409] = true,
-			[51845] = true,
-			[50673] = true,
 			[13132] = true,
-			[38566] = true,
-			[52494] = true,
+			[50339] = true,
+			[51845] = true,
+			[42895] = true,
+			[51652] = true,
+			[50967] = true,
+			[29866] = true,
 			[52485] = true,
 			[48518] = true,
-			[51652] = true,
+			[50962] = true,
 			[52869] = true,
 			[52997] = true,
 			[57220] = true,
-			[31918] = true,
-			[35444] = true,
+			[543] = true,
+			[45] = true,
 			[28806] = true,
-			[34420] = true,
+			[50519] = true,
 			[53765] = true,
-			[50962] = true,
-			[49926] = true,
-			[50967] = true,
-			[26506] = true,
-			[34398] = true,
-			[47289] = true,
 			[51120] = true,
+			[49926] = true,
+			[48593] = true,
+			[50874] = true,
+			[56979] = true,
+			[54533] = true,
+			[42773] = true,
 			[50694] = true,
 			[34442] = true,
 			[55045] = true,
 			[29638] = true,
 			[55301] = true,
-			[50107] = true,
-			[54953] = true,
+			[47533] = true,
+			[48439] = true,
 			[29894] = true,
-			[50697] = true,
+			[55363] = true,
 			[51846] = true,
-			[51090] = true,
-			[42773] = true,
-			[55618] = true,
-			[53443] = true,
+			[51646] = true,
+			[51371] = true,
+			[52203] = true,
+			[50098] = true,
 			[52486] = true,
 			[48519] = true,
-			[51646] = true,
+			[51610] = true,
 			[52870] = true,
 			[48903] = true,
 			[26567] = true,
-			[51371] = true,
-			[26295] = true,
-			[55362] = true,
-			[55349] = true,
-			[51610] = true,
-			[33419] = true,
 			[53138] = true,
 			[50064] = true,
-			[54278] = true,
-			[56089] = true,
-			[11590] = true,
 			[50871] = true,
+			[57915] = true,
+			[53132] = true,
+			[33419] = true,
+			[55735] = true,
+			[55707] = true,
+			[54278] = true,
+			[55347] = true,
+			[11590] = true,
+			[57133] = true,
 			[38410] = true,
 			[46728] = true,
 			[59141] = true,
-			[57915] = true,
+			[27228] = true,
 			[51207] = true,
 			[51335] = true,
-			[55519] = true,
+			[51108] = true,
 			[11878] = true,
 			[11910] = true,
 			[51847] = true,
-			[56376] = true,
+			[31823] = true,
 			[48008] = true,
-			[52460] = true,
-			[56536] = true,
+			[56542] = true,
+			[55397] = true,
 			[52487] = true,
 			[48520] = true,
-			[31823] = true,
+			[56537] = true,
 			[52871] = true,
 			[48904] = true,
 			[57222] = true,
-			[51892] = true,
-			[36624] = true,
-			[56167] = true,
-			[54712] = true,
-			[49419] = true,
-			[57990] = true,
 			[51637] = true,
 			[56538] = true,
-			[56537] = true,
-			[54407] = true,
+			[57524] = true,
+			[58634] = true,
 			[54832] = true,
-			[54229] = true,
+			[57990] = true,
+			[58778] = true,
+			[51633] = true,
+			[55395] = true,
+			[54407] = true,
+			[51098] = true,
+			[12796] = true,
 			[50696] = true,
 			[46729] = true,
-			[55395] = true,
+			[38935] = true,
 			[55175] = true,
 			[51208] = true,
-			[58802] = true,
+			[54471] = true,
 			[51464] = true,
-			[51633] = true,
+			[47584] = true,
 			[51720] = true,
 			[51848] = true,
 			[30087] = true,
 			[48009] = true,
-			[12796] = true,
-			[51098] = true,
+			[58155] = true,
+			[50705] = true,
 			[52488] = true,
 			[44426] = true,
-			[56541] = true,
-			[55463] = true,
+			[51103] = true,
+			[51613] = true,
 			[26504] = true,
 			[53128] = true,
-			[50099] = true,
+			[53435] = true,
 			[53384] = true,
 			[49417] = true,
 			[53640] = true,
 			[30983] = true,
 			[53896] = true,
 			[49929] = true,
-			[54187] = true,
-			[57942] = true,
+			[51813] = true,
+			[54537] = true,
 			[31303] = true,
 			[58631] = true,
 			[50569] = true,
@@ -2521,22 +2560,22 @@ BtWQuests_Characters = {
 			[34445] = true,
 			[50953] = true,
 			[42891] = true,
-			[51209] = true,
+			[55304] = true,
 			[31815] = true,
 			[51465] = true,
-			[51528] = true,
-			[53006] = true,
-			[51849] = true,
-			[50898] = true,
-			[51813] = true,
-			[56328] = true,
+			[50767] = true,
 			[11949] = true,
+			[51849] = true,
+			[51662] = true,
+			[51621] = true,
+			[56328] = true,
+			[51284] = true,
 			[52489] = true,
 			[48522] = true,
-			[53814] = true,
+			[53268] = true,
 			[52873] = true,
-			[53043] = true,
-			[52802] = true,
+			[54325] = true,
+			[27351] = true,
 		},
 		["xpModifier"] = 0,
 		["skills"] = {
@@ -2560,9 +2599,9 @@ BtWQuests_Characters = {
 				["maxLevel"] = 100,
 				["level"] = 12,
 			},
-			[182] = {
-				["maxLevel"] = 75,
-				["level"] = 175,
+			[2565] = {
+				["maxLevel"] = 175,
+				["level"] = 147,
 			},
 			[2556] = {
 				["maxLevel"] = 300,
@@ -2576,27 +2615,317 @@ BtWQuests_Characters = {
 				["maxLevel"] = 300,
 				["level"] = 74,
 			},
+			[182] = {
+				["maxLevel"] = 75,
+				["level"] = 175,
+			},
 			[2550] = {
 				["maxLevel"] = 100,
 				["level"] = 23,
 			},
-			[2565] = {
-				["maxLevel"] = 175,
-				["level"] = 145,
-			},
 			[186] = {
 				["maxLevel"] = 75,
-				["level"] = 145,
+				["level"] = 147,
 			},
 		},
 		["faction"] = "Alliance",
+		["warModeBonus"] = 25,
+		["warMode"] = true,
+		["name"] = "Avisar",
+		["sex"] = 2,
+		["professions"] = {
+			[182] = true,
+			[186] = true,
+			[356] = true,
+			[794] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
+		},
+		["questsActive"] = {
+			[28405] = {
+				{
+					"0/5 Elemental-Imbued Weapon broken", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44720] = {
+			},
+			[56378] = {
+				{
+					"0/1 Captain Stonestare found", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Captain Greensails found", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/1 Thermospark found", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[57744] = {
+				{
+					"120/500 Earn Conquest", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[54180] = {
+			},
+			[56128] = {
+				{
+					"0/25 Horde Players slain", -- [1]
+					"player", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57006] = {
+				{
+					"0/1 Use the Deepflame Campfire", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Choose an ally", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/3 Ally quests complete", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[13413] = {
+				{
+					"1/5 Scalesworn Elites Killed", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57563] = {
+				{
+					"0/1 [DNT] Dummy Credit slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[54185] = {
+				{
+					"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"Pulverizer Bot Mk 6001 defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[57378] = {
+				{
+					"0/1 \"Curse of Stone\" book obtained", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57566] = {
+			},
+			[39060] = {
+				{
+					"0/1 Northern Plague Cache Burned", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Eastern Plague Cache Burned", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"1/1 Western Plague Cache Burned", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [3]
+			},
+			[56499] = {
+				{
+					"Win a PVP Island Expedition", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Win an Epic Battleground", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/1 Win a Battleground", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[54438] = {
+				{
+					"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50604] = {
+				{
+					"1/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[36615] = {
+				{
+					"172/2000 Garrison Resources gathered (Optional)", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Upgrade your garrison to Tier 3", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[56211] = {
+				{
+					"1/1 Scrying Stone used", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"0/3 Hidden Treasure discovered", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[56491] = {
+				{
+					"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Blackmane Defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[32806] = {
+				{
+					"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50601] = {
+				{
+					"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31486] = {
+				{
+					"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+					"log", -- [2]
+					true, -- [3]
+				}, -- [1]
+			},
+			[58632] = {
+				{
+					"N'Zoth, the Corruptor defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[54975] = {
+				{
+					"0/1 Reach rank 3 with an Ankoan ally", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[42483] = {
+				{
+					"0/1  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[54978] = {
+				{
+					"10/25 Slay Horde Players", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[53436] = {
+				{
+					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[54485] = {
+				{
+					"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+		},
 		["reputations"] = {
 			[2161] = {
 				["barMin"] = 21000,
 				["name"] = "Order of Embers",
 				["standing"] = 7,
 				["barMax"] = 42000,
-				["barValue"] = 22869,
+				["barValue"] = 23089,
 			},
 			[1073] = {
 				["barMin"] = 9000,
@@ -2623,7 +2952,7 @@ BtWQuests_Characters = {
 				["barMin"] = 21000,
 				["name"] = "Storm's Wake",
 				["standing"] = 7,
-				["barValue"] = 24711,
+				["barValue"] = 24794,
 				["barMax"] = 42000,
 			},
 			[1731] = {
@@ -2697,11 +3026,11 @@ BtWQuests_Characters = {
 				["barMax"] = 3000,
 			},
 			[2164] = {
-				["barMin"] = 9000,
+				["barMin"] = 21000,
 				["name"] = "Champions of Azeroth",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 18986,
+				["standing"] = 7,
+				["barMax"] = 42000,
+				["barValue"] = 22478,
 			},
 			[1106] = {
 				["barMin"] = 0,
@@ -2785,7 +3114,7 @@ BtWQuests_Characters = {
 				["name"] = "Tortollan Seekers",
 				["standing"] = 6,
 				["barMax"] = 21000,
-				["barValue"] = 11693,
+				["barValue"] = 14113,
 			},
 			[1097] = {
 				["barMin"] = 0,
@@ -2869,7 +3198,7 @@ BtWQuests_Characters = {
 				["name"] = "Proudmoore Admiralty",
 				["standing"] = 7,
 				["barMax"] = 42000,
-				["barValue"] = 32147,
+				["barValue"] = 36547,
 			},
 			[1037] = {
 				["barMin"] = 0,
@@ -2928,298 +3257,6 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 			},
 		},
-		["warMode"] = true,
-		["name"] = "Avisar",
-		["sex"] = 2,
-		["professions"] = {
-			[182] = true,
-			[186] = true,
-			[356] = true,
-			[794] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
-		["warModeBonus"] = 25,
-		["questsActive"] = {
-			[56499] = {
-				{
-					"Win a PVP Island Expedition", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Win an Epic Battleground", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/1 Win a Battleground", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[56128] = {
-				{
-					"0/25 Horde Players slain", -- [1]
-					"player", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[56378] = {
-				{
-					"0/1 Captain Stonestare found", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Captain Greensails found", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/1 Thermospark found", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[28405] = {
-				{
-					"0/5 Elemental-Imbued Weapon broken", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57744] = {
-				{
-					"60/500 Earn Conquest", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[54180] = {
-			},
-			[13413] = {
-				{
-					"1/5 Scalesworn Elites Killed", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[54185] = {
-				{
-					"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"Pulverizer Bot Mk 6001 defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[57006] = {
-				{
-					"0/1 Use the Deepflame Campfire", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Choose an ally", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/3 Ally quests complete", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[57564] = {
-			},
-			[57378] = {
-				{
-					"0/1 \"Curse of Stone\" book obtained", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[50604] = {
-				{
-					"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57566] = {
-			},
-			[39060] = {
-				{
-					"0/1 Northern Plague Cache Burned", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Eastern Plague Cache Burned", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"1/1 Western Plague Cache Burned", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [3]
-			},
-			[50562] = {
-				{
-					"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[54438] = {
-				{
-					"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44720] = {
-			},
-			[36615] = {
-				{
-					"172/2000 Garrison Resources gathered (Optional)", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Upgrade your garrison to Tier 3", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[32806] = {
-				{
-					"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[56211] = {
-				{
-					"1/1 Scrying Stone used", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"0/3 Hidden Treasure discovered", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[51034] = {
-				{
-					"0/20  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[56491] = {
-				{
-					"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Blackmane Defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[31486] = {
-				{
-					"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
-					"log", -- [2]
-					true, -- [3]
-				}, -- [1]
-			},
-			[58632] = {
-				{
-					"N'Zoth, the Corruptor defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[54975] = {
-				{
-					"0/1 Reach rank 3 with an Ankoan ally", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[42483] = {
-				{
-					"0/1  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[54978] = {
-				{
-					"5/25 Slay Horde Players", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[53436] = {
-				{
-					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[54485] = {
-				{
-					"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-		},
 	}, -- [1]
 	{
 		["class"] = 8,
@@ -3234,83 +3271,6 @@ BtWQuests_Characters = {
 				["criterias"] = {
 				},
 				["name"] = "The Black Temple",
-			},
-			[4893] = {
-				["completed"] = true,
-				["rewardText"] = "",
-				["points"] = 10,
-				["wasEarnedByMe"] = false,
-				["criterias"] = {
-					{
-						["completed"] = false,
-						["criteriaID"] = 0,
-						["criteriaString"] = "The First Battle for Andorhal",
-					}, -- [1]
-					{
-						["completed"] = false,
-						["criteriaID"] = 0,
-						["criteriaString"] = "A Temporary Peace",
-					}, -- [2]
-					{
-						["completed"] = false,
-						["criteriaID"] = 0,
-						["criteriaString"] = "The Second Battle for Andorhal",
-					}, -- [3]
-					{
-						["completed"] = false,
-						["criteriaID"] = 0,
-						["criteriaString"] = "The Menders' Stead",
-					}, -- [4]
-				},
-				["name"] = "Western Plaguelands Quests",
-			},
-			[10746] = {
-				["completed"] = true,
-				["rewardText"] = "",
-				["points"] = 10,
-				["wasEarnedByMe"] = false,
-				["criterias"] = {
-				},
-				["name"] = "Forged for Battle",
-			},
-			[10617] = {
-				["completed"] = true,
-				["rewardText"] = "Reward: Suramar World Quests Unlocked",
-				["points"] = 10,
-				["wasEarnedByMe"] = false,
-				["criterias"] = {
-					{
-						["completed"] = false,
-						["criteriaID"] = 30134,
-						["criteriaString"] = "Nightfall",
-					}, -- [1]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30135,
-						["criteriaString"] = "Arcanist Kel'danath",
-					}, -- [2]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30136,
-						["criteriaString"] = "Chief Telemancer Oculeth",
-					}, -- [3]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30137,
-						["criteriaString"] = "Feeding Shal'Aran",
-					}, -- [4]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30138,
-						["criteriaString"] = "Masquerade",
-					}, -- [5]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30139,
-						["criteriaString"] = "The Light Below",
-					}, -- [6]
-				},
-				["name"] = "Nightfallen But Not Forgotten",
 			},
 			[10596] = {
 				["completed"] = false,
@@ -3410,6 +3370,83 @@ BtWQuests_Characters = {
 					}, -- [18]
 				},
 				["name"] = "Bigger Fish to Fry",
+			},
+			[10746] = {
+				["completed"] = true,
+				["rewardText"] = "",
+				["points"] = 10,
+				["wasEarnedByMe"] = false,
+				["criterias"] = {
+				},
+				["name"] = "Forged for Battle",
+			},
+			[4893] = {
+				["completed"] = true,
+				["rewardText"] = "",
+				["points"] = 10,
+				["wasEarnedByMe"] = false,
+				["criterias"] = {
+					{
+						["completed"] = false,
+						["criteriaID"] = 0,
+						["criteriaString"] = "The First Battle for Andorhal",
+					}, -- [1]
+					{
+						["completed"] = false,
+						["criteriaID"] = 0,
+						["criteriaString"] = "A Temporary Peace",
+					}, -- [2]
+					{
+						["completed"] = false,
+						["criteriaID"] = 0,
+						["criteriaString"] = "The Second Battle for Andorhal",
+					}, -- [3]
+					{
+						["completed"] = false,
+						["criteriaID"] = 0,
+						["criteriaString"] = "The Menders' Stead",
+					}, -- [4]
+				},
+				["name"] = "Western Plaguelands Quests",
+			},
+			[10617] = {
+				["completed"] = true,
+				["rewardText"] = "Reward: Suramar World Quests Unlocked",
+				["points"] = 10,
+				["wasEarnedByMe"] = false,
+				["criterias"] = {
+					{
+						["completed"] = false,
+						["criteriaID"] = 30134,
+						["criteriaString"] = "Nightfall",
+					}, -- [1]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30135,
+						["criteriaString"] = "Arcanist Kel'danath",
+					}, -- [2]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30136,
+						["criteriaString"] = "Chief Telemancer Oculeth",
+					}, -- [3]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30137,
+						["criteriaString"] = "Feeding Shal'Aran",
+					}, -- [4]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30138,
+						["criteriaString"] = "Masquerade",
+					}, -- [5]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30139,
+						["criteriaString"] = "The Light Below",
+					}, -- [6]
+				},
+				["name"] = "Nightfallen But Not Forgotten",
 			},
 		},
 		["race"] = "NightElf",
@@ -3910,13 +3947,13 @@ BtWQuests_Characters = {
 			[31581] = true,
 			[49863] = true,
 			[26457] = true,
-			[34774] = true,
+			[31725] = true,
 			[32668] = true,
 			[12258] = true,
 			[12266] = true,
 			[2561] = true,
 			[12282] = true,
-			[12290] = true,
+			[34774] = true,
 			[53220] = true,
 			[31584] = true,
 			[31568] = true,
@@ -3962,8 +3999,8 @@ BtWQuests_Characters = {
 			[28728] = true,
 			[11619] = true,
 			[11587] = true,
-			[31582] = true,
 			[11707] = true,
+			[26467] = true,
 			[6341] = true,
 			[39411] = true,
 			[923] = true,
@@ -3971,7 +4008,7 @@ BtWQuests_Characters = {
 			[42896] = true,
 			[31550] = true,
 			[11699] = true,
-			[26467] = true,
+			[31582] = true,
 			[28529] = true,
 			[11723] = true,
 			[927] = true,
@@ -4100,7 +4137,7 @@ BtWQuests_Characters = {
 			[11692] = true,
 			[11700] = true,
 			[11708] = true,
-			[31725] = true,
+			[12290] = true,
 			[53124] = true,
 			[26466] = true,
 			[32671] = true,
@@ -4161,191 +4198,6 @@ BtWQuests_Characters = {
 			[53750] = true,
 		},
 		["xpModifier"] = 0.55,
-		["warModeBonus"] = 25,
-		["reputations"] = {
-			[942] = {
-				["barMin"] = 3000,
-				["name"] = "Cenarion Expedition",
-				["standing"] = 5,
-				["barValue"] = 4230,
-				["barMax"] = 9000,
-			},
-			[1050] = {
-				["barMin"] = 9000,
-				["name"] = "Valiance Expedition",
-				["standing"] = 6,
-				["barValue"] = 20683,
-				["barMax"] = 21000,
-			},
-			[2135] = {
-				["barMin"] = 0,
-				["name"] = "Chromie",
-				["standing"] = 1,
-				["barValue"] = 0,
-				["barMax"] = 1000,
-			},
-			[1091] = {
-				["barMin"] = 9000,
-				["name"] = "The Wyrmrest Accord",
-				["standing"] = 6,
-				["barValue"] = 9048,
-				["barMax"] = 21000,
-			},
-			[72] = {
-				["barMin"] = 9000,
-				["name"] = "Stormwind",
-				["standing"] = 6,
-				["barValue"] = 12594,
-				["barMax"] = 21000,
-			},
-			[1118] = {
-				["barMin"] = 0,
-				["name"] = "Classic",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1037] = {
-				["barMin"] = 9000,
-				["name"] = "Alliance Vanguard",
-				["standing"] = 6,
-				["barValue"] = 13448,
-				["barMax"] = 21000,
-			},
-			[890] = {
-				["barMin"] = 0,
-				["name"] = "Silverwing Sentinels",
-				["standing"] = 4,
-				["barValue"] = 75,
-				["barMax"] = 3000,
-			},
-			[1090] = {
-				["barMin"] = 9000,
-				["name"] = "Kirin Tor",
-				["standing"] = 6,
-				["barValue"] = 9974,
-				["barMax"] = 21000,
-			},
-			[980] = {
-				["barMin"] = 0,
-				["name"] = "The Burning Crusade",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1068] = {
-				["barMin"] = 3000,
-				["name"] = "Explorers' League",
-				["standing"] = 5,
-				["barValue"] = 6724,
-				["barMax"] = 9000,
-			},
-			[609] = {
-				["barMin"] = 0,
-				["name"] = "Cenarion Circle",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1094] = {
-				["barMin"] = 3000,
-				["name"] = "The Silver Covenant",
-				["standing"] = 5,
-				["barValue"] = 6730,
-				["barMax"] = 9000,
-			},
-			[1126] = {
-				["barMin"] = 3000,
-				["name"] = "The Frostborn",
-				["standing"] = 5,
-				["barValue"] = 6724,
-				["barMax"] = 9000,
-			},
-			[47] = {
-				["barMin"] = 9000,
-				["name"] = "Ironforge",
-				["standing"] = 6,
-				["barValue"] = 9499,
-				["barMax"] = 21000,
-			},
-			[1097] = {
-				["barMin"] = 0,
-				["name"] = "Wrath of the Lich King",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[54] = {
-				["barMin"] = 9000,
-				["name"] = "Gnomeregan",
-				["standing"] = 6,
-				["barValue"] = 11854,
-				["barMax"] = 21000,
-			},
-			[891] = {
-				["barMin"] = 0,
-				["name"] = "Alliance Forces",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[69] = {
-				["barMin"] = 42000,
-				["name"] = "Darnassus",
-				["standing"] = 8,
-				["barValue"] = 42000,
-				["barMax"] = 42000,
-			},
-			[930] = {
-				["barMin"] = 9000,
-				["name"] = "Exodar",
-				["standing"] = 6,
-				["barValue"] = 9949,
-				["barMax"] = 21000,
-			},
-			[469] = {
-				["barMin"] = 9000,
-				["name"] = "Alliance",
-				["standing"] = 6,
-				["barValue"] = 14037,
-				["barMax"] = 21000,
-			},
-			[1134] = {
-				["barMin"] = 3000,
-				["name"] = "Gilneas",
-				["standing"] = 5,
-				["barValue"] = 8999,
-				["barMax"] = 9000,
-			},
-			[1073] = {
-				["barMin"] = 9000,
-				["name"] = "The Kalu'ak",
-				["standing"] = 6,
-				["barValue"] = 14940,
-				["barMax"] = 21000,
-			},
-			[1353] = {
-				["barMin"] = 3000,
-				["name"] = "Tushui Pandaren",
-				["standing"] = 5,
-				["barValue"] = 8999,
-				["barMax"] = 9000,
-			},
-			[1106] = {
-				["barMin"] = 0,
-				["name"] = "Argent Crusade",
-				["standing"] = 4,
-				["barValue"] = 1657,
-				["barMax"] = 3000,
-			},
-			[1834] = {
-				["barMin"] = 0,
-				["name"] = "Legion",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-		},
 		["questsActive"] = {
 			[13041] = {
 				{
@@ -4436,6 +4288,10 @@ BtWQuests_Characters = {
 			},
 			[12225] = {
 			},
+			[12466] = {
+			},
+			[25768] = {
+			},
 			[31891] = {
 				{
 					"Defeat Traitor Gluk", -- [1]
@@ -4463,10 +4319,6 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [5]
 			},
-			[25768] = {
-			},
-			[26838] = {
-			},
 			[44989] = {
 				{
 					"Level 25 Sharptalon Hatchling", -- [1]
@@ -4481,7 +4333,192 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[12466] = {
+			[26838] = {
+			},
+		},
+		["warModeBonus"] = 25,
+		["reputations"] = {
+			[942] = {
+				["barMin"] = 3000,
+				["name"] = "Cenarion Expedition",
+				["standing"] = 5,
+				["barValue"] = 4230,
+				["barMax"] = 9000,
+			},
+			[1050] = {
+				["barMin"] = 9000,
+				["name"] = "Valiance Expedition",
+				["standing"] = 6,
+				["barValue"] = 20683,
+				["barMax"] = 21000,
+			},
+			[2135] = {
+				["barMin"] = 0,
+				["name"] = "Chromie",
+				["standing"] = 1,
+				["barValue"] = 0,
+				["barMax"] = 1000,
+			},
+			[1091] = {
+				["barMin"] = 9000,
+				["name"] = "The Wyrmrest Accord",
+				["standing"] = 6,
+				["barValue"] = 9048,
+				["barMax"] = 21000,
+			},
+			[72] = {
+				["barMin"] = 9000,
+				["name"] = "Stormwind",
+				["standing"] = 6,
+				["barValue"] = 12594,
+				["barMax"] = 21000,
+			},
+			[1118] = {
+				["barMin"] = 0,
+				["name"] = "Classic",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1068] = {
+				["barMin"] = 3000,
+				["name"] = "Explorers' League",
+				["standing"] = 5,
+				["barValue"] = 6724,
+				["barMax"] = 9000,
+			},
+			[890] = {
+				["barMin"] = 0,
+				["name"] = "Silverwing Sentinels",
+				["standing"] = 4,
+				["barValue"] = 75,
+				["barMax"] = 3000,
+			},
+			[1090] = {
+				["barMin"] = 9000,
+				["name"] = "Kirin Tor",
+				["standing"] = 6,
+				["barValue"] = 9974,
+				["barMax"] = 21000,
+			},
+			[980] = {
+				["barMin"] = 0,
+				["name"] = "The Burning Crusade",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[891] = {
+				["barMin"] = 0,
+				["name"] = "Alliance Forces",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[609] = {
+				["barMin"] = 0,
+				["name"] = "Cenarion Circle",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1094] = {
+				["barMin"] = 3000,
+				["name"] = "The Silver Covenant",
+				["standing"] = 5,
+				["barValue"] = 6730,
+				["barMax"] = 9000,
+			},
+			[1126] = {
+				["barMin"] = 3000,
+				["name"] = "The Frostborn",
+				["standing"] = 5,
+				["barValue"] = 6724,
+				["barMax"] = 9000,
+			},
+			[47] = {
+				["barMin"] = 9000,
+				["name"] = "Ironforge",
+				["standing"] = 6,
+				["barValue"] = 9499,
+				["barMax"] = 21000,
+			},
+			[1097] = {
+				["barMin"] = 0,
+				["name"] = "Wrath of the Lich King",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[54] = {
+				["barMin"] = 9000,
+				["name"] = "Gnomeregan",
+				["standing"] = 6,
+				["barValue"] = 11854,
+				["barMax"] = 21000,
+			},
+			[1037] = {
+				["barMin"] = 9000,
+				["name"] = "Alliance Vanguard",
+				["standing"] = 6,
+				["barValue"] = 13448,
+				["barMax"] = 21000,
+			},
+			[69] = {
+				["barMin"] = 42000,
+				["name"] = "Darnassus",
+				["standing"] = 8,
+				["barValue"] = 42000,
+				["barMax"] = 42000,
+			},
+			[930] = {
+				["barMin"] = 9000,
+				["name"] = "Exodar",
+				["standing"] = 6,
+				["barValue"] = 9949,
+				["barMax"] = 21000,
+			},
+			[469] = {
+				["barMin"] = 9000,
+				["name"] = "Alliance",
+				["standing"] = 6,
+				["barValue"] = 14037,
+				["barMax"] = 21000,
+			},
+			[1134] = {
+				["barMin"] = 3000,
+				["name"] = "Gilneas",
+				["standing"] = 5,
+				["barValue"] = 8999,
+				["barMax"] = 9000,
+			},
+			[1073] = {
+				["barMin"] = 9000,
+				["name"] = "The Kalu'ak",
+				["standing"] = 6,
+				["barValue"] = 14940,
+				["barMax"] = 21000,
+			},
+			[1353] = {
+				["barMin"] = 3000,
+				["name"] = "Tushui Pandaren",
+				["standing"] = 5,
+				["barValue"] = 8999,
+				["barMax"] = 9000,
+			},
+			[1106] = {
+				["barMin"] = 0,
+				["name"] = "Argent Crusade",
+				["standing"] = 4,
+				["barValue"] = 1657,
+				["barMax"] = 3000,
+			},
+			[1834] = {
+				["barMin"] = 0,
+				["name"] = "Legion",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
 			},
 		},
 		["ignoredChains"] = {
@@ -4685,6 +4722,62 @@ BtWQuests_Characters = {
 		["skills"] = {
 		},
 		["faction"] = "Horde",
+		["warModeBonus"] = 10,
+		["warMode"] = true,
+		["name"] = "Datgore",
+		["sex"] = 2,
+		["professions"] = {
+		},
+		["ignoredChains"] = {
+		},
+		["questsActive"] = {
+			[54185] = {
+				{
+					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Pulverizer Bot Mk 6001 defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 3000,
@@ -4741,62 +4834,6 @@ BtWQuests_Characters = {
 				["standing"] = 5,
 				["barMax"] = 9000,
 				["barValue"] = 3100,
-			},
-		},
-		["warMode"] = true,
-		["name"] = "Datgore",
-		["sex"] = 2,
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
-		["warModeBonus"] = 10,
-		["questsActive"] = {
-			[54185] = {
-				{
-					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Pulverizer Bot Mk 6001 defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
 			},
 		},
 	}, -- [3]
@@ -5020,10 +5057,10 @@ BtWQuests_Characters = {
 			[49284] = true,
 			[49775] = true,
 			[40008] = true,
-			[47226] = true,
+			[31821] = true,
 			[50260] = true,
 			[31813] = true,
-			[47737] = true,
+			[47226] = true,
 			[49286] = true,
 			[50835] = true,
 			[51312] = true,
@@ -5061,14 +5098,14 @@ BtWQuests_Characters = {
 			[31590] = true,
 			[47587] = true,
 			[50100] = true,
-			[56633] = true,
+			[47435] = true,
 			[42229] = true,
 			[51443] = true,
 			[50948] = true,
 			[42948] = true,
 			[40760] = true,
 			[53743] = true,
-			[13807] = true,
+			[56633] = true,
 			[51539] = true,
 			[51555] = true,
 			[50154] = true,
@@ -5116,31 +5153,31 @@ BtWQuests_Characters = {
 			[31583] = true,
 			[51365] = true,
 			[40522] = true,
-			[50950] = true,
+			[50439] = true,
 			[31551] = true,
 			[49257] = true,
 			[47740] = true,
 			[49289] = true,
 			[47261] = true,
 			[40123] = true,
-			[50439] = true,
-			[47437] = true,
+			[56571] = true,
+			[56635] = true,
 			[52946] = true,
 			[52451] = true,
 			[46846] = true,
-			[56571] = true,
+			[50950] = true,
 			[39724] = true,
 			[48938] = true,
 			[48333] = true,
-			[46926] = true,
+			[47437] = true,
 			[49663] = true,
 			[31316] = true,
 			[50104] = true,
 			[42902] = true,
-			[47742] = true,
+			[31568] = true,
 			[42934] = true,
 			[34774] = true,
-			[31568] = true,
+			[50297] = true,
 			[49146] = true,
 			[31552] = true,
 			[53745] = true,
@@ -5148,10 +5185,10 @@ BtWQuests_Characters = {
 			[41002] = true,
 			[49769] = true,
 			[31815] = true,
-			[31823] = true,
+			[49274] = true,
 			[51286] = true,
 			[44659] = true,
-			[47741] = true,
+			[31823] = true,
 			[31831] = true,
 			[49767] = true,
 			[49147] = true,
@@ -5177,19 +5214,19 @@ BtWQuests_Characters = {
 			[49919] = true,
 			[47103] = true,
 			[49936] = true,
-			[49274] = true,
+			[47741] = true,
 			[50280] = true,
 			[51766] = true,
 			[49421] = true,
 			[49754] = true,
 			[49315] = true,
-			[50297] = true,
+			[47742] = true,
 			[31576] = true,
 			[31584] = true,
 			[31592] = true,
 			[48317] = true,
 			[47311] = true,
-			[56635] = true,
+			[46926] = true,
 			[56030] = true,
 			[51447] = true,
 			[49930] = true,
@@ -5210,7 +5247,7 @@ BtWQuests_Characters = {
 			[49148] = true,
 			[52210] = true,
 			[49495] = true,
-			[47435] = true,
+			[13807] = true,
 			[56042] = true,
 			[49060] = true,
 			[50101] = true,
@@ -5229,7 +5266,7 @@ BtWQuests_Characters = {
 			[51211] = true,
 			[51249] = true,
 			[46929] = true,
-			[31821] = true,
+			[47737] = true,
 			[50538] = true,
 			[50043] = true,
 			[48015] = true,
@@ -5299,6 +5336,185 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Horde",
+		["warModeBonus"] = 10,
+		["warMode"] = false,
+		["name"] = "Durlok",
+		["sex"] = 2,
+		["professions"] = {
+			[182] = true,
+			[356] = true,
+			[794] = true,
+			[171] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
+		},
+		["questsActive"] = {
+			[51448] = {
+				{
+					"0/1 Pollen Harvested", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57743] = {
+				{
+					"0/500 Earn Conquest", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[53435] = {
+				{
+					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[54180] = {
+			},
+			[56044] = {
+				{
+					"0/1 Speak to Captain Rez'okun to set sail", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[54185] = {
+				{
+					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Pulverizer Bot Mk 6001 defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[53101] = {
+			},
+			[48639] = {
+				{
+					"0/4 Complete 4 Army of the Light World Quests", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[48641] = {
+				{
+					"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[51432] = {
+			},
+			[51464] = {
+				{
+					"2/10  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[51421] = {
+				{
+					"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[56491] = {
+				{
+					"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Blackmane Defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[54042] = {
+				{
+					"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50603] = {
+				{
+					"0/4 Complete 4 world quests in Vol'dun", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50604] = {
+				{
+					"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[50606] = {
+				{
+					"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[42234] = {
+				{
+					"0/4 Complete 4 world quests in Stormheim", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[47105] = {
+				{
+					"0/1 Scout ahead", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40643] = {
+			},
+		},
 		["reputations"] = {
 			[889] = {
 				["barMin"] = 0,
@@ -5546,185 +5762,6 @@ BtWQuests_Characters = {
 				["barValue"] = 500,
 			},
 		},
-		["warMode"] = false,
-		["name"] = "Durlok",
-		["sex"] = 2,
-		["professions"] = {
-			[182] = true,
-			[356] = true,
-			[171] = true,
-			[185] = true,
-			[794] = true,
-		},
-		["ignoredChains"] = {
-		},
-		["warModeBonus"] = 10,
-		["questsActive"] = {
-			[51448] = {
-				{
-					"0/1 Pollen Harvested", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57743] = {
-				{
-					"0/500 Earn Conquest", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[53435] = {
-				{
-					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[54180] = {
-			},
-			[56044] = {
-				{
-					"0/1 Speak to Captain Rez'okun to set sail", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[54185] = {
-				{
-					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Pulverizer Bot Mk 6001 defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[53101] = {
-			},
-			[48639] = {
-				{
-					"0/4 Complete 4 Army of the Light World Quests", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[48641] = {
-				{
-					"0/4 Complete 4 world quests on the Broken Shore", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[51432] = {
-			},
-			[51464] = {
-				{
-					"2/10  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[51421] = {
-				{
-					"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[56491] = {
-				{
-					"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Blackmane Defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[54042] = {
-				{
-					"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[50603] = {
-				{
-					"0/4 Complete 4 world quests in Vol'dun", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[50604] = {
-				{
-					"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[50606] = {
-				{
-					"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[42234] = {
-				{
-					"0/4 Complete 4 world quests in Stormheim", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[47105] = {
-				{
-					"0/1 Scout ahead", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[40643] = {
-			},
-		},
 	}, -- [4]
 	{
 		["class"] = 7,
@@ -5884,6 +5921,54 @@ BtWQuests_Characters = {
 			[31571] = true,
 		},
 		["xpModifier"] = 0,
+		["questsActive"] = {
+			[54185] = {
+				{
+					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Pulverizer Bot Mk 6001 defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
 		["warModeBonus"] = 10,
 		["reputations"] = {
 			[81] = {
@@ -5962,54 +6047,6 @@ BtWQuests_Characters = {
 				["standing"] = 5,
 				["barValue"] = 3100,
 				["barMax"] = 9000,
-			},
-		},
-		["questsActive"] = {
-			[54185] = {
-				{
-					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Pulverizer Bot Mk 6001 defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
 			},
 		},
 		["ignoredChains"] = {
@@ -6110,11 +6147,11 @@ BtWQuests_Characters = {
 			[29775] = true,
 			[29771] = true,
 			[56625] = true,
-			[29665] = true,
-			[56628] = true,
 			[56652] = true,
-			[29406] = true,
+			[56628] = true,
 			[31450] = true,
+			[29406] = true,
+			[29665] = true,
 			[29414] = true,
 			[42898] = true,
 			[42906] = true,
@@ -6123,31 +6160,31 @@ BtWQuests_Characters = {
 			[29784] = true,
 			[29779] = true,
 			[29772] = true,
-			[31570] = true,
+			[29785] = true,
 			[50102] = true,
 			[30984] = true,
 			[30988] = true,
-			[29522] = true,
+			[29777] = true,
 			[30996] = true,
 			[50142] = true,
-			[56629] = true,
-			[29785] = true,
+			[29781] = true,
+			[31825] = true,
 			[31012] = true,
 			[53744] = true,
 			[31785] = true,
 			[29789] = true,
-			[29797] = true,
+			[30817] = true,
 			[42907] = true,
 			[31036] = true,
 			[31550] = true,
 			[29769] = true,
 			[31813] = true,
-			[31817] = true,
-			[31821] = true,
-			[31825] = true,
+			[29522] = true,
+			[56629] = true,
+			[31570] = true,
 			[31574] = true,
 			[31578] = true,
-			[42891] = true,
+			[29797] = true,
 			[31586] = true,
 			[31590] = true,
 			[29768] = true,
@@ -6189,7 +6226,7 @@ BtWQuests_Characters = {
 			[42948] = true,
 			[26642] = true,
 			[50104] = true,
-			[31830] = true,
+			[29790] = true,
 			[32009] = true,
 			[31814] = true,
 			[29778] = true,
@@ -6198,8 +6235,8 @@ BtWQuests_Characters = {
 			[53220] = true,
 			[39713] = true,
 			[29786] = true,
-			[29790] = true,
-			[29798] = true,
+			[31575] = true,
+			[30818] = true,
 			[42909] = true,
 			[31033] = true,
 			[31037] = true,
@@ -6209,9 +6246,9 @@ BtWQuests_Characters = {
 			[29523] = true,
 			[29782] = true,
 			[31316] = true,
-			[31575] = true,
+			[31830] = true,
 			[31579] = true,
-			[31583] = true,
+			[29798] = true,
 			[31587] = true,
 			[31591] = true,
 			[31571] = true,
@@ -6226,7 +6263,7 @@ BtWQuests_Characters = {
 			[29524] = true,
 			[29418] = true,
 			[50145] = true,
-			[30818] = true,
+			[31583] = true,
 			[29794] = true,
 			[53739] = true,
 			[56042] = true,
@@ -6254,12 +6291,12 @@ BtWQuests_Characters = {
 			[50098] = true,
 			[50106] = true,
 			[56633] = true,
-			[30817] = true,
+			[42891] = true,
 			[29793] = true,
 			[30998] = true,
 			[50146] = true,
-			[29781] = true,
-			[29777] = true,
+			[31821] = true,
+			[31817] = true,
 			[53740] = true,
 			[39723] = true,
 			[30767] = true,
@@ -6305,17 +6342,6 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Horde",
-		["warModeBonus"] = 10,
-		["warMode"] = true,
-		["name"] = "Kotalkhan",
-		["sex"] = 2,
-		["professions"] = {
-			[165] = true,
-			[333] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[54185] = {
 				{
@@ -6375,6 +6401,16 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [2]
 			},
+		},
+		["warMode"] = true,
+		["name"] = "Kotalkhan",
+		["sex"] = 2,
+		["professions"] = {
+			[165] = true,
+			[333] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[1216] = {
@@ -6455,6 +6491,7 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [6]
 	{
 		["class"] = 4,
@@ -6764,10 +6801,10 @@ BtWQuests_Characters = {
 			[31832] = true,
 			[13580] = true,
 			[24501] = true,
-			[13632] = true,
+			[31831] = true,
 			[13624] = true,
 			[31823] = true,
-			[24677] = true,
+			[13632] = true,
 			[13588] = true,
 			[31309] = true,
 			[13644] = true,
@@ -6814,7 +6851,7 @@ BtWQuests_Characters = {
 			[13907] = true,
 			[31574] = true,
 			[31815] = true,
-			[31831] = true,
+			[24677] = true,
 			[53124] = true,
 			[13576] = true,
 			[34774] = true,
@@ -6887,79 +6924,6 @@ BtWQuests_Characters = {
 			[53749] = true,
 		},
 		["xpModifier"] = 0,
-		["warModeBonus"] = 25,
-		["reputations"] = {
-			[1134] = {
-				["barMin"] = 9000,
-				["name"] = "Gilneas",
-				["standing"] = 6,
-				["barValue"] = 18195,
-				["barMax"] = 21000,
-			},
-			[54] = {
-				["barMin"] = 9000,
-				["name"] = "Gnomeregan",
-				["standing"] = 6,
-				["barValue"] = 9769,
-				["barMax"] = 21000,
-			},
-			[609] = {
-				["barMin"] = 0,
-				["name"] = "Cenarion Circle",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1353] = {
-				["barMin"] = 3000,
-				["name"] = "Tushui Pandaren",
-				["standing"] = 5,
-				["barValue"] = 8999,
-				["barMax"] = 9000,
-			},
-			[72] = {
-				["barMin"] = 3000,
-				["name"] = "Stormwind",
-				["standing"] = 5,
-				["barValue"] = 8999,
-				["barMax"] = 9000,
-			},
-			[930] = {
-				["barMin"] = 3000,
-				["name"] = "Exodar",
-				["standing"] = 5,
-				["barValue"] = 8999,
-				["barMax"] = 9000,
-			},
-			[1118] = {
-				["barMin"] = 0,
-				["name"] = "Classic",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[47] = {
-				["barMin"] = 9000,
-				["name"] = "Ironforge",
-				["standing"] = 6,
-				["barValue"] = 9421,
-				["barMax"] = 21000,
-			},
-			[69] = {
-				["barMin"] = 21000,
-				["name"] = "Darnassus",
-				["standing"] = 7,
-				["barValue"] = 30356,
-				["barMax"] = 42000,
-			},
-			[469] = {
-				["barMin"] = 9000,
-				["name"] = "Alliance",
-				["standing"] = 6,
-				["barValue"] = 12856,
-				["barMax"] = 21000,
-			},
-		},
 		["questsActive"] = {
 			[26456] = {
 				{
@@ -7059,6 +7023,79 @@ BtWQuests_Characters = {
 					"event", -- [2]
 					false, -- [3]
 				}, -- [5]
+			},
+		},
+		["warModeBonus"] = 25,
+		["reputations"] = {
+			[1134] = {
+				["barMin"] = 9000,
+				["name"] = "Gilneas",
+				["standing"] = 6,
+				["barValue"] = 18195,
+				["barMax"] = 21000,
+			},
+			[54] = {
+				["barMin"] = 9000,
+				["name"] = "Gnomeregan",
+				["standing"] = 6,
+				["barValue"] = 9769,
+				["barMax"] = 21000,
+			},
+			[609] = {
+				["barMin"] = 0,
+				["name"] = "Cenarion Circle",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1353] = {
+				["barMin"] = 3000,
+				["name"] = "Tushui Pandaren",
+				["standing"] = 5,
+				["barValue"] = 8999,
+				["barMax"] = 9000,
+			},
+			[72] = {
+				["barMin"] = 3000,
+				["name"] = "Stormwind",
+				["standing"] = 5,
+				["barValue"] = 8999,
+				["barMax"] = 9000,
+			},
+			[930] = {
+				["barMin"] = 3000,
+				["name"] = "Exodar",
+				["standing"] = 5,
+				["barValue"] = 8999,
+				["barMax"] = 9000,
+			},
+			[1118] = {
+				["barMin"] = 0,
+				["name"] = "Classic",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[47] = {
+				["barMin"] = 9000,
+				["name"] = "Ironforge",
+				["standing"] = 6,
+				["barValue"] = 9421,
+				["barMax"] = 21000,
+			},
+			[69] = {
+				["barMin"] = 21000,
+				["name"] = "Darnassus",
+				["standing"] = 7,
+				["barValue"] = 30356,
+				["barMax"] = 42000,
+			},
+			[469] = {
+				["barMin"] = 9000,
+				["name"] = "Alliance",
+				["standing"] = 6,
+				["barValue"] = 12856,
+				["barMax"] = 21000,
 			},
 		},
 		["ignoredChains"] = {
@@ -7254,23 +7291,6 @@ BtWQuests_Characters = {
 			[31571] = true,
 		},
 		["xpModifier"] = 0,
-		["warModeBonus"] = 10,
-		["reputations"] = {
-			[1245] = {
-				["barMin"] = 0,
-				["name"] = "Mists of Pandaria",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1216] = {
-				["barMin"] = 3000,
-				["name"] = "Shang Xi's Academy",
-				["standing"] = 5,
-				["barValue"] = 3000,
-				["barMax"] = 9000,
-			},
-		},
 		["questsActive"] = {
 			[54185] = {
 				{
@@ -7321,6 +7341,23 @@ BtWQuests_Characters = {
 				}, -- [5]
 			},
 		},
+		["warModeBonus"] = 10,
+		["reputations"] = {
+			[1245] = {
+				["barMin"] = 0,
+				["name"] = "Mists of Pandaria",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1216] = {
+				["barMin"] = 3000,
+				["name"] = "Shang Xi's Academy",
+				["standing"] = 5,
+				["barValue"] = 3000,
+				["barMax"] = 9000,
+			},
+		},
 		["ignoredChains"] = {
 		},
 		["name"] = "Shaekhan",
@@ -7342,6 +7379,54 @@ BtWQuests_Characters = {
 				["completed"] = true,
 				["rewardText"] = "",
 				["name"] = "The Black Temple",
+				["wasEarnedByMe"] = true,
+				["criterias"] = {
+				},
+				["points"] = 10,
+			},
+			[10617] = {
+				["completed"] = true,
+				["rewardText"] = "Reward: Suramar World Quests Unlocked",
+				["name"] = "Nightfallen But Not Forgotten",
+				["wasEarnedByMe"] = true,
+				["criterias"] = {
+					{
+						["completed"] = true,
+						["criteriaID"] = 30134,
+						["criteriaString"] = "Nightfall",
+					}, -- [1]
+					{
+						["completed"] = true,
+						["criteriaID"] = 30135,
+						["criteriaString"] = "Arcanist Kel'danath",
+					}, -- [2]
+					{
+						["completed"] = true,
+						["criteriaID"] = 30136,
+						["criteriaString"] = "Chief Telemancer Oculeth",
+					}, -- [3]
+					{
+						["completed"] = true,
+						["criteriaID"] = 30137,
+						["criteriaString"] = "Feeding Shal'Aran",
+					}, -- [4]
+					{
+						["completed"] = true,
+						["criteriaID"] = 30138,
+						["criteriaString"] = "Masquerade",
+					}, -- [5]
+					{
+						["completed"] = true,
+						["criteriaID"] = 30139,
+						["criteriaString"] = "The Light Below",
+					}, -- [6]
+				},
+				["points"] = 10,
+			},
+			[10746] = {
+				["completed"] = true,
+				["rewardText"] = "",
+				["name"] = "Forged for Battle",
 				["wasEarnedByMe"] = true,
 				["criterias"] = {
 				},
@@ -7446,15 +7531,6 @@ BtWQuests_Characters = {
 				},
 				["points"] = 10,
 			},
-			[10746] = {
-				["completed"] = true,
-				["rewardText"] = "",
-				["name"] = "Forged for Battle",
-				["wasEarnedByMe"] = true,
-				["criterias"] = {
-				},
-				["points"] = 10,
-			},
 			[4893] = {
 				["completed"] = true,
 				["rewardText"] = "",
@@ -7481,45 +7557,6 @@ BtWQuests_Characters = {
 						["criteriaID"] = 0,
 						["criteriaString"] = "The Menders' Stead",
 					}, -- [4]
-				},
-				["points"] = 10,
-			},
-			[10617] = {
-				["completed"] = true,
-				["rewardText"] = "Reward: Suramar World Quests Unlocked",
-				["name"] = "Nightfallen But Not Forgotten",
-				["wasEarnedByMe"] = true,
-				["criterias"] = {
-					{
-						["completed"] = true,
-						["criteriaID"] = 30134,
-						["criteriaString"] = "Nightfall",
-					}, -- [1]
-					{
-						["completed"] = true,
-						["criteriaID"] = 30135,
-						["criteriaString"] = "Arcanist Kel'danath",
-					}, -- [2]
-					{
-						["completed"] = true,
-						["criteriaID"] = 30136,
-						["criteriaString"] = "Chief Telemancer Oculeth",
-					}, -- [3]
-					{
-						["completed"] = true,
-						["criteriaID"] = 30137,
-						["criteriaString"] = "Feeding Shal'Aran",
-					}, -- [4]
-					{
-						["completed"] = true,
-						["criteriaID"] = 30138,
-						["criteriaString"] = "Masquerade",
-					}, -- [5]
-					{
-						["completed"] = true,
-						["criteriaID"] = 30139,
-						["criteriaString"] = "The Light Below",
-					}, -- [6]
 				},
 				["points"] = 10,
 			},
@@ -12964,9 +13001,9 @@ BtWQuests_Characters = {
 			[11070] = true,
 			[40109] = true,
 			[51157] = true,
-			[50420] = true,
-			[11582] = true,
 			[13968] = true,
+			[11582] = true,
+			[50420] = true,
 			[836] = true,
 			[11966] = true,
 			[12094] = true,
@@ -13812,9 +13849,9 @@ BtWQuests_Characters = {
 			[36111] = true,
 			[51470] = true,
 			[53518] = true,
-			[55054] = true,
 			[38671] = true,
 			[27528] = true,
+			[55054] = true,
 			[27784] = true,
 			[39499] = true,
 			[37835] = true,
@@ -13863,7 +13900,7 @@ BtWQuests_Characters = {
 			[34577] = true,
 			[13125] = true,
 			[11717] = true,
-			[37649] = true,
+			[54032] = true,
 			[11973] = true,
 			[12101] = true,
 			[12229] = true,
@@ -13876,7 +13913,7 @@ BtWQuests_Characters = {
 			[26249] = true,
 			[36625] = true,
 			[37137] = true,
-			[27017] = true,
+			[37649] = true,
 			[49932] = true,
 			[27529] = true,
 			[25732] = true,
@@ -13922,9 +13959,9 @@ BtWQuests_Characters = {
 			[50817] = true,
 			[43794] = true,
 			[50819] = true,
-			[49426] = true,
 			[49136] = true,
 			[13615] = true,
+			[49426] = true,
 			[33043] = true,
 			[49938] = true,
 			[25994] = true,
@@ -13958,13 +13995,13 @@ BtWQuests_Characters = {
 			[12418] = true,
 			[45843] = true,
 			[58312] = true,
-			[53011] = true,
+			[12482] = true,
 			[31882] = true,
 			[47891] = true,
 			[48403] = true,
 			[28645] = true,
 			[49427] = true,
-			[12482] = true,
+			[53011] = true,
 			[34068] = true,
 			[50963] = true,
 			[28133] = true,
@@ -13983,7 +14020,7 @@ BtWQuests_Characters = {
 			[10438] = true,
 			[58643] = true,
 			[24971] = true,
-			[34069] = true,
+			[12614] = true,
 			[12998] = true,
 			[11078] = true,
 			[13171] = true,
@@ -13997,7 +14034,7 @@ BtWQuests_Characters = {
 			[24459] = true,
 			[24715] = true,
 			[12486] = true,
-			[25227] = true,
+			[34069] = true,
 			[28043] = true,
 			[12870] = true,
 			[25995] = true,
@@ -14056,9 +14093,9 @@ BtWQuests_Characters = {
 			[49138] = true,
 			[867] = true,
 			[39501] = true,
-			[25996] = true,
-			[48406] = true,
 			[12992] = true,
+			[48406] = true,
+			[25996] = true,
 			[24716] = true,
 			[49942] = true,
 			[27276] = true,
@@ -14185,8 +14222,8 @@ BtWQuests_Characters = {
 			[13057] = true,
 			[50252] = true,
 			[26617] = true,
-			[34587] = true,
 			[49767] = true,
+			[34587] = true,
 			[24718] = true,
 			[33563] = true,
 			[34075] = true,
@@ -14222,14 +14259,14 @@ BtWQuests_Characters = {
 			[50260] = true,
 			[33564] = true,
 			[50459] = true,
-			[37148] = true,
+			[50360] = true,
 			[35100] = true,
+			[37148] = true,
 			[55067] = true,
-			[10440] = true,
 			[9160] = true,
 			[53531] = true,
 			[54043] = true,
-			[50360] = true,
+			[10440] = true,
 			[38684] = true,
 			[9800] = true,
 			[9928] = true,
@@ -14238,16 +14275,16 @@ BtWQuests_Characters = {
 			[10312] = true,
 			[58139] = true,
 			[10568] = true,
-			[12872] = true,
+			[25602] = true,
 			[33565] = true,
-			[53532] = true,
+			[12872] = true,
 			[44316] = true,
 			[11208] = true,
-			[13640] = true,
+			[53532] = true,
 			[11464] = true,
 			[11592] = true,
 			[11720] = true,
-			[38685] = true,
+			[27279] = true,
 			[11976] = true,
 			[12104] = true,
 			[24463] = true,
@@ -14257,17 +14294,17 @@ BtWQuests_Characters = {
 			[25487] = true,
 			[35101] = true,
 			[51996] = true,
-			[36125] = true,
-			[56604] = true,
+			[26255] = true,
+			[55068] = true,
 			[37149] = true,
 			[54044] = true,
-			[27279] = true,
-			[55068] = true,
-			[25602] = true,
+			[13640] = true,
+			[38685] = true,
+			[56604] = true,
 			[28047] = true,
 			[28303] = true,
+			[14408] = true,
 			[28815] = true,
-			[57628] = true,
 			[58140] = true,
 			[29327] = true,
 			[12991] = true,
@@ -14307,13 +14344,13 @@ BtWQuests_Characters = {
 			[47868] = true,
 			[44318] = true,
 			[44830] = true,
-			[26768] = true,
+			[53534] = true,
 			[27107] = true,
 			[33567] = true,
 			[25488] = true,
 			[51998] = true,
 			[26083] = true,
-			[53534] = true,
+			[37151] = true,
 			[28048] = true,
 			[33055] = true,
 			[49950] = true,
@@ -14323,7 +14360,7 @@ BtWQuests_Characters = {
 			[26000] = true,
 			[26256] = true,
 			[25315] = true,
-			[37151] = true,
+			[26768] = true,
 			[27024] = true,
 			[27280] = true,
 			[55070] = true,
@@ -14345,22 +14382,22 @@ BtWQuests_Characters = {
 			[48404] = true,
 			[36477] = true,
 			[53901] = true,
-			[49951] = true,
-			[32656] = true,
-			[12489] = true,
-			[33568] = true,
-			[56095] = true,
-			[50975] = true,
 			[24701] = true,
+			[32656] = true,
+			[33568] = true,
+			[49951] = true,
+			[26143] = true,
+			[50975] = true,
+			[12489] = true,
 			[35616] = true,
 			[36128] = true,
 			[9161] = true,
 			[37152] = true,
 			[54047] = true,
-			[10953] = true,
-			[33569] = true,
-			[25233] = true,
 			[39712] = true,
+			[43808] = true,
+			[33569] = true,
+			[56095] = true,
 			[56607] = true,
 			[10185] = true,
 			[10313] = true,
@@ -14368,14 +14405,14 @@ BtWQuests_Characters = {
 			[42272] = true,
 			[10738] = true,
 			[10825] = true,
-			[43808] = true,
+			[10953] = true,
 			[11081] = true,
 			[44832] = true,
-			[13001] = true,
+			[25233] = true,
 			[45856] = true,
 			[11593] = true,
 			[11721] = true,
-			[26143] = true,
+			[13001] = true,
 			[47904] = true,
 			[12105] = true,
 			[48928] = true,
@@ -14437,21 +14474,21 @@ BtWQuests_Characters = {
 			[44834] = true,
 			[26001] = true,
 			[30946] = true,
-			[26002] = true,
-			[25234] = true,
 			[52002] = true,
+			[25234] = true,
+			[35619] = true,
 			[47906] = true,
-			[37155] = true,
+			[26770] = true,
 			[54050] = true,
 			[24722] = true,
 			[24978] = true,
 			[50466] = true,
 			[25490] = true,
 			[25746] = true,
-			[35619] = true,
+			[26002] = true,
 			[36131] = true,
 			[55074] = true,
-			[53538] = true,
+			[37155] = true,
 			[37667] = true,
 			[27282] = true,
 			[38691] = true,
@@ -14488,7 +14525,7 @@ BtWQuests_Characters = {
 			[54563] = true,
 			[38692] = true,
 			[9802] = true,
-			[26771] = true,
+			[37157] = true,
 			[40228] = true,
 			[10186] = true,
 			[10314] = true,
@@ -14509,13 +14546,13 @@ BtWQuests_Characters = {
 			[12234] = true,
 			[33061] = true,
 			[33573] = true,
-			[37157] = true,
+			[53540] = true,
 			[34597] = true,
 			[25747] = true,
 			[26003] = true,
 			[13130] = true,
 			[26515] = true,
-			[53540] = true,
+			[26771] = true,
 			[37669] = true,
 			[27283] = true,
 			[27539] = true,
@@ -14736,8 +14773,8 @@ BtWQuests_Characters = {
 			[34092] = true,
 			[40897] = true,
 			[47856] = true,
-			[37164] = true,
 			[41135] = true,
+			[37164] = true,
 			[9164] = true,
 			[53547] = true,
 			[37676] = true,
@@ -14759,11 +14796,11 @@ BtWQuests_Characters = {
 			[46267] = true,
 			[11596] = true,
 			[11724] = true,
-			[24983] = true,
-			[11980] = true,
-			[34093] = true,
-			[12236] = true,
 			[42115] = true,
+			[11980] = true,
+			[24983] = true,
+			[12236] = true,
+			[34093] = true,
 			[33581] = true,
 			[50476] = true,
 			[13132] = true,
@@ -14891,9 +14928,9 @@ BtWQuests_Characters = {
 			[47920] = true,
 			[48432] = true,
 			[40681] = true,
-			[12621] = true,
+			[25241] = true,
 			[13005] = true,
-			[50480] = true,
+			[12621] = true,
 			[36657] = true,
 			[25753] = true,
 			[52016] = true,
@@ -14997,8 +15034,8 @@ BtWQuests_Characters = {
 			[36660] = true,
 			[47832] = true,
 			[9422] = true,
-			[56627] = true,
 			[35492] = true,
+			[56627] = true,
 			[9806] = true,
 			[9934] = true,
 			[40244] = true,
@@ -15009,14 +15046,14 @@ BtWQuests_Characters = {
 			[10702] = true,
 			[10830] = true,
 			[10958] = true,
-			[47924] = true,
+			[11982] = true,
 			[11214] = true,
 			[30942] = true,
 			[45876] = true,
 			[11598] = true,
 			[13134] = true,
 			[27547] = true,
-			[749] = true,
+			[47924] = true,
 			[12110] = true,
 			[12238] = true,
 			[24731] = true,
@@ -15494,13 +15531,13 @@ BtWQuests_Characters = {
 			[10606] = true,
 			[31138] = true,
 			[31394] = true,
-			[56131] = true,
+			[55252] = true,
 			[34116] = true,
 			[47939] = true,
 			[48451] = true,
 			[8169] = true,
 			[8274] = true,
-			[55252] = true,
+			[56131] = true,
 			[50499] = true,
 			[58691] = true,
 			[39860] = true,
@@ -15784,7 +15821,7 @@ BtWQuests_Characters = {
 			[25255] = true,
 			[51532] = true,
 			[47436] = true,
-			[52044] = true,
+			[26023] = true,
 			[48460] = true,
 			[48972] = true,
 			[49484] = true,
@@ -15792,7 +15829,7 @@ BtWQuests_Characters = {
 			[50508] = true,
 			[13140] = true,
 			[12884] = true,
-			[35661] = true,
+			[52044] = true,
 			[26279] = true,
 			[26535] = true,
 			[26791] = true,
@@ -15858,7 +15895,7 @@ BtWQuests_Characters = {
 			[35151] = true,
 			[52046] = true,
 			[26280] = true,
-			[30120] = true,
+			[39212] = true,
 			[26792] = true,
 			[54094] = true,
 			[27304] = true,
@@ -15869,7 +15906,7 @@ BtWQuests_Characters = {
 			[57166] = true,
 			[28840] = true,
 			[30936] = true,
-			[39212] = true,
+			[30120] = true,
 			[42831] = true,
 			[29864] = true,
 			[43855] = true,
@@ -15967,20 +16004,20 @@ BtWQuests_Characters = {
 			[42287] = true,
 			[58705] = true,
 			[42834] = true,
-			[33107] = true,
+			[34129] = true,
 			[43858] = true,
-			[26026] = true,
+			[33107] = true,
 			[44882] = true,
 			[45394] = true,
+			[26026] = true,
 			[25258] = true,
-			[35155] = true,
 			[46930] = true,
 			[47442] = true,
 			[47954] = true,
-			[52050] = true,
+			[35155] = true,
 			[48978] = true,
 			[49490] = true,
-			[34129] = true,
+			[52050] = true,
 			[34131] = true,
 			[25514] = true,
 			[51538] = true,
@@ -16008,13 +16045,13 @@ BtWQuests_Characters = {
 			[31402] = true,
 			[46931] = true,
 			[38318] = true,
+			[45267] = true,
+			[8171] = true,
 			[48979] = true,
-			[51539] = true,
-			[32682] = true,
 			[8278] = true,
-			[24747] = true,
+			[51539] = true,
 			[34132] = true,
-			[12886] = true,
+			[49492] = true,
 			[35156] = true,
 			[35668] = true,
 			[43348] = true,
@@ -16026,8 +16063,8 @@ BtWQuests_Characters = {
 			[9814] = true,
 			[39764] = true,
 			[12118] = true,
-			[33109] = true,
-			[12630] = true,
+			[24747] = true,
+			[34133] = true,
 			[10454] = true,
 			[10582] = true,
 			[42836] = true,
@@ -16036,18 +16073,18 @@ BtWQuests_Characters = {
 			[11094] = true,
 			[34645] = true,
 			[45396] = true,
-			[26283] = true,
+			[51540] = true,
 			[11606] = true,
+			[26283] = true,
 			[28843] = true,
-			[45267] = true,
 			[11990] = true,
 			[48468] = true,
 			[12246] = true,
-			[49492] = true,
+			[33109] = true,
 			[25003] = true,
-			[25259] = true,
+			[12630] = true,
 			[25515] = true,
-			[35157] = true,
+			[12886] = true,
 			[35669] = true,
 			[13142] = true,
 			[26539] = true,
@@ -16403,35 +16440,35 @@ BtWQuests_Characters = {
 			[35680] = true,
 			[43360] = true,
 			[9177] = true,
-			[48480] = true,
+			[12121] = true,
 			[37728] = true,
-			[12505] = true,
+			[24497] = true,
 			[55135] = true,
 			[9817] = true,
 			[9945] = true,
 			[56671] = true,
 			[10201] = true,
+			[12505] = true,
 			[12633] = true,
-			[34657] = true,
 			[10585] = true,
 			[10713] = true,
 			[10841] = true,
 			[43872] = true,
 			[29909] = true,
-			[24743] = true,
-			[38241] = true,
+			[34657] = true,
+			[37729] = true,
 			[11481] = true,
 			[11609] = true,
-			[55648] = true,
+			[38241] = true,
 			[11865] = true,
 			[11993] = true,
-			[12121] = true,
+			[48480] = true,
 			[48992] = true,
 			[24753] = true,
 			[25009] = true,
 			[50528] = true,
 			[25521] = true,
-			[37729] = true,
+			[55648] = true,
 			[26033] = true,
 			[13145] = true,
 			[13273] = true,
@@ -16485,26 +16522,26 @@ BtWQuests_Characters = {
 			[12955] = true,
 			[40009] = true,
 			[34793] = true,
-			[25522] = true,
+			[39607] = true,
+			[51042] = true,
 			[25778] = true,
 			[35683] = true,
-			[27058] = true,
-			[54626] = true,
+			[26802] = true,
 			[24498] = true,
 			[24754] = true,
 			[25010] = true,
-			[26802] = true,
-			[34659] = true,
+			[54114] = true,
+			[25522] = true,
 			[35171] = true,
 			[26034] = true,
-			[28338] = true,
+			[27314] = true,
 			[36707] = true,
 			[53602] = true,
-			[54114] = true,
-			[27314] = true,
+			[27058] = true,
+			[54626] = true,
 			[38755] = true,
 			[55650] = true,
-			[39607] = true,
+			[28338] = true,
 			[56674] = true,
 			[28594] = true,
 			[14226] = true,
@@ -16520,9 +16557,9 @@ BtWQuests_Characters = {
 			[31410] = true,
 			[31666] = true,
 			[12620] = true,
-			[56163] = true,
-			[48483] = true,
 			[24499] = true,
+			[48483] = true,
+			[56163] = true,
 			[8282] = true,
 			[10970] = true,
 			[34148] = true,
@@ -16592,9 +16629,9 @@ BtWQuests_Characters = {
 			[26386] = true,
 			[34662] = true,
 			[35174] = true,
-			[38246] = true,
-			[36198] = true,
 			[40229] = true,
+			[36198] = true,
+			[38246] = true,
 			[53605] = true,
 			[54117] = true,
 			[54629] = true,
@@ -16649,17 +16686,17 @@ BtWQuests_Characters = {
 			[39736] = true,
 			[40219] = true,
 			[26775] = true,
-			[25269] = true,
-			[41320] = true,
+			[13340] = true,
+			[39196] = true,
 			[8283] = true,
 			[33640] = true,
 			[50535] = true,
 			[34664] = true,
 			[35176] = true,
 			[52071] = true,
-			[13340] = true,
+			[41320] = true,
+			[25013] = true,
 			[11611] = true,
-			[50024] = true,
 			[54119] = true,
 			[54631] = true,
 			[38760] = true,
@@ -16668,7 +16705,7 @@ BtWQuests_Characters = {
 			[56679] = true,
 			[10203] = true,
 			[10331] = true,
-			[50536] = true,
+			[50024] = true,
 			[10587] = true,
 			[10715] = true,
 			[10843] = true,
@@ -16676,26 +16713,26 @@ BtWQuests_Characters = {
 			[11099] = true,
 			[11227] = true,
 			[11355] = true,
-			[12507] = true,
+			[25269] = true,
 			[2903] = true,
 			[46952] = true,
+			[26293] = true,
 			[13275] = true,
-			[13403] = true,
-			[54120] = true,
+			[53608] = true,
 			[28341] = true,
 			[3095] = true,
-			[25013] = true,
+			[12507] = true,
 			[12635] = true,
 			[34665] = true,
 			[12891] = true,
-			[40297] = true,
+			[28085] = true,
 			[36201] = true,
 			[26549] = true,
-			[53608] = true,
-			[27061] = true,
+			[13403] = true,
+			[54120] = true,
 			[54632] = true,
 			[38761] = true,
-			[28085] = true,
+			[40297] = true,
 			[56168] = true,
 			[56680] = true,
 			[14299] = true,
@@ -17171,8 +17208,8 @@ BtWQuests_Characters = {
 			[35704] = true,
 			[9705] = true,
 			[39031] = true,
-			[49528] = true,
 			[24765] = true,
+			[33145] = true,
 			[9193] = true,
 			[38776] = true,
 			[9823] = true,
@@ -17180,7 +17217,7 @@ BtWQuests_Characters = {
 			[56695] = true,
 			[10207] = true,
 			[10335] = true,
-			[25021] = true,
+			[33657] = true,
 			[35744] = true,
 			[10719] = true,
 			[10847] = true,
@@ -17195,8 +17232,8 @@ BtWQuests_Characters = {
 			[47992] = true,
 			[12127] = true,
 			[12255] = true,
-			[33145] = true,
-			[50040] = true,
+			[49528] = true,
+			[25021] = true,
 			[25277] = true,
 			[34681] = true,
 			[12895] = true,
@@ -17247,19 +17284,19 @@ BtWQuests_Characters = {
 			[58233] = true,
 			[39416] = true,
 			[28112] = true,
-			[49530] = true,
+			[25355] = true,
 			[43898] = true,
 			[27600] = true,
 			[44922] = true,
-			[25355] = true,
-			[27088] = true,
 			[24766] = true,
+			[27088] = true,
+			[33147] = true,
 			[46970] = true,
 			[36767] = true,
 			[47994] = true,
 			[48506] = true,
 			[24510] = true,
-			[33147] = true,
+			[49530] = true,
 			[25534] = true,
 			[34171] = true,
 			[34683] = true,
@@ -17309,31 +17346,31 @@ BtWQuests_Characters = {
 			[10208] = true,
 			[10336] = true,
 			[25479] = true,
-			[11232] = true,
+			[38871] = true,
 			[10720] = true,
 			[10848] = true,
 			[43900] = true,
-			[49020] = true,
+			[11232] = true,
 			[44924] = true,
+			[12256] = true,
 			[25791] = true,
-			[26047] = true,
 			[11616] = true,
-			[36221] = true,
+			[26047] = true,
 			[11872] = true,
 			[47996] = true,
 			[48508] = true,
-			[12256] = true,
+			[49020] = true,
 			[24767] = true,
 			[50044] = true,
 			[12640] = true,
-			[38871] = true,
+			[36221] = true,
 			[35197] = true,
 			[35709] = true,
 			[13152] = true,
-			[54652] = true,
+			[38269] = true,
 			[26815] = true,
 			[54140] = true,
-			[27327] = true,
+			[54652] = true,
 			[27583] = true,
 			[27839] = true,
 			[39838] = true,
@@ -17513,7 +17550,7 @@ BtWQuests_Characters = {
 			[53122] = true,
 			[53634] = true,
 			[27842] = true,
-			[42371] = true,
+			[29378] = true,
 			[24514] = true,
 			[24770] = true,
 			[25026] = true,
@@ -17532,8 +17569,8 @@ BtWQuests_Characters = {
 			[28354] = true,
 			[28610] = true,
 			[28866] = true,
-			[29378] = true,
 			[58754] = true,
+			[42371] = true,
 			[29634] = true,
 			[35185] = true,
 			[38069] = true,
@@ -17544,14 +17581,14 @@ BtWQuests_Characters = {
 			[31426] = true,
 			[28113] = true,
 			[31938] = true,
-			[51587] = true,
 			[35204] = true,
+			[8802] = true,
 			[32706] = true,
 			[33156] = true,
 			[44955] = true,
 			[50563] = true,
 			[51075] = true,
-			[8802] = true,
+			[51587] = true,
 			[35716] = true,
 			[36228] = true,
 			[53123] = true,
@@ -17571,10 +17608,10 @@ BtWQuests_Characters = {
 			[42907] = true,
 			[38599] = true,
 			[11234] = true,
-			[51076] = true,
+			[34692] = true,
 			[11490] = true,
 			[11618] = true,
-			[34692] = true,
+			[51076] = true,
 			[54660] = true,
 			[40347] = true,
 			[12130] = true,
@@ -17672,9 +17709,9 @@ BtWQuests_Characters = {
 			[31428] = true,
 			[52121] = true,
 			[51609] = true,
+			[38515] = true,
 			[34696] = true,
 			[35208] = true,
-			[38515] = true,
 			[33160] = true,
 			[50055] = true,
 			[50567] = true,
@@ -17688,12 +17725,12 @@ BtWQuests_Characters = {
 			[38085] = true,
 			[38792] = true,
 			[31949] = true,
-			[58759] = true,
+			[42376] = true,
 			[40328] = true,
 			[10211] = true,
 			[10339] = true,
 			[10467] = true,
-			[10595] = true,
+			[58759] = true,
 			[10723] = true,
 			[10851] = true,
 			[38629] = true,
@@ -17702,7 +17739,7 @@ BtWQuests_Characters = {
 			[25029] = true,
 			[51080] = true,
 			[11619] = true,
-			[37257] = true,
+			[13411] = true,
 			[28101] = true,
 			[28613] = true,
 			[12131] = true,
@@ -17715,7 +17752,7 @@ BtWQuests_Characters = {
 			[26053] = true,
 			[13155] = true,
 			[53128] = true,
-			[26821] = true,
+			[37257] = true,
 			[28869] = true,
 			[27333] = true,
 			[27589] = true,
@@ -17961,12 +17998,12 @@ BtWQuests_Characters = {
 			[34710] = true,
 			[13157] = true,
 			[12005] = true,
-			[55696] = true,
+			[53136] = true,
 			[12261] = true,
 			[24777] = true,
 			[25033] = true,
 			[34193] = true,
-			[53136] = true,
+			[55696] = true,
 			[12901] = true,
 			[56720] = true,
 			[26313] = true,
@@ -18239,14 +18276,14 @@ BtWQuests_Characters = {
 			[38499] = true,
 			[29389] = true,
 			[29645] = true,
-			[13411] = true,
+			[26821] = true,
 			[36745] = true,
 			[12899] = true,
 			[30669] = true,
 			[30925] = true,
 			[31181] = true,
 			[31437] = true,
-			[42376] = true,
+			[10595] = true,
 			[47513] = true,
 			[48025] = true,
 			[34184] = true,
@@ -18394,7 +18431,7 @@ BtWQuests_Characters = {
 			[33467] = true,
 			[56221] = true,
 			[13920] = true,
-			[38269] = true,
+			[27327] = true,
 			[25279] = true,
 			[12512] = true,
 			[24511] = true,
@@ -18449,7 +18486,7 @@ BtWQuests_Characters = {
 			[13151] = true,
 			[35232] = true,
 			[52127] = true,
-			[33657] = true,
+			[50040] = true,
 			[53151] = true,
 			[37280] = true,
 			[54175] = true,
@@ -18641,11 +18678,11 @@ BtWQuests_Characters = {
 			[34726] = true,
 			[35238] = true,
 			[35750] = true,
-			[39196] = true,
 			[27317] = true,
+			[27061] = true,
 			[53669] = true,
-			[26293] = true,
 			[25525] = true,
+			[50536] = true,
 			[38822] = true,
 			[10971] = true,
 			[56167] = true,
@@ -18720,7 +18757,7 @@ BtWQuests_Characters = {
 			[10603] = true,
 			[39267] = true,
 			[10859] = true,
-			[51042] = true,
+			[34659] = true,
 			[38639] = true,
 			[28593] = true,
 			[39733] = true,
@@ -18757,7 +18794,7 @@ BtWQuests_Characters = {
 			[12249] = true,
 			[30933] = true,
 			[31189] = true,
-			[24497] = true,
+			[24743] = true,
 			[32432] = true,
 			[41056] = true,
 			[40088] = true,
@@ -18890,16 +18927,16 @@ BtWQuests_Characters = {
 			[47533] = true,
 			[13654] = true,
 			[26027] = true,
-			[51540] = true,
+			[35157] = true,
 			[33198] = true,
-			[34133] = true,
+			[25259] = true,
 			[48980] = true,
 			[34734] = true,
 			[26413] = true,
 			[40476] = true,
 			[42273] = true,
 			[49491] = true,
-			[8171] = true,
+			[32682] = true,
 			[40675] = true,
 			[54701] = true,
 			[45395] = true,
@@ -18980,7 +19017,7 @@ BtWQuests_Characters = {
 			[44464] = true,
 			[9940] = true,
 			[45488] = true,
-			[26023] = true,
+			[35661] = true,
 			[11629] = true,
 			[47024] = true,
 			[11885] = true,
@@ -19330,7 +19367,7 @@ BtWQuests_Characters = {
 			[29918] = true,
 			[30174] = true,
 			[13262] = true,
-			[11982] = true,
+			[749] = true,
 			[45499] = true,
 			[25969] = true,
 			[31454] = true,
@@ -19388,7 +19425,7 @@ BtWQuests_Characters = {
 			[14192] = true,
 			[28639] = true,
 			[14448] = true,
-			[25241] = true,
+			[50480] = true,
 			[58812] = true,
 			[11981] = true,
 			[29919] = true,
@@ -19583,7 +19620,7 @@ BtWQuests_Characters = {
 			[49377] = true,
 			[58818] = true,
 			[42947] = true,
-			[26770] = true,
+			[53538] = true,
 			[30178] = true,
 			[44483] = true,
 			[30690] = true,
@@ -19654,14 +19691,14 @@ BtWQuests_Characters = {
 			[26174] = true,
 			[48320] = true,
 			[31459] = true,
-			[14408] = true,
+			[57628] = true,
 			[47557] = true,
 			[27535] = true,
 			[48581] = true,
-			[26255] = true,
+			[13128] = true,
 			[25999] = true,
 			[33734] = true,
-			[13128] = true,
+			[36125] = true,
 			[34758] = true,
 			[40220] = true,
 			[35782] = true,
@@ -19763,7 +19800,7 @@ BtWQuests_Characters = {
 			[13043] = true,
 			[36297] = true,
 			[26597] = true,
-			[12614] = true,
+			[25227] = true,
 			[27109] = true,
 			[38345] = true,
 			[38857] = true,
@@ -19807,7 +19844,7 @@ BtWQuests_Characters = {
 			[50231] = true,
 			[35973] = true,
 			[55056] = true,
-			[54032] = true,
+			[27017] = true,
 			[25993] = true,
 			[44490] = true,
 			[8323] = true,
@@ -20619,92 +20656,6 @@ BtWQuests_Characters = {
 		["xpModifier"] = 0,
 		["warMode"] = false,
 		["sex"] = 2,
-		["warModeBonus"] = 10,
-		["skills"] = {
-			[2437] = {
-				["maxLevel"] = 175,
-				["level"] = 175,
-			},
-			[2565] = {
-				["maxLevel"] = 175,
-				["level"] = 175,
-			},
-			[2474] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2476] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2571] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[164] = {
-				["maxLevel"] = 800,
-				["level"] = 300,
-			},
-			[2472] = {
-				["maxLevel"] = 100,
-				["level"] = 100,
-			},
-			[2569] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2566] = {
-				["maxLevel"] = 100,
-				["level"] = 100,
-			},
-			[2475] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2570] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2572] = {
-				["maxLevel"] = 300,
-				["level"] = 300,
-			},
-			[2477] = {
-				["maxLevel"] = 300,
-				["level"] = 300,
-			},
-			[2567] = {
-				["maxLevel"] = 100,
-				["level"] = 100,
-			},
-			[2454] = {
-				["maxLevel"] = 100,
-				["level"] = 100,
-			},
-			[2568] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2473] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[186] = {
-				["maxLevel"] = 800,
-				["level"] = 300,
-			},
-		},
-		["name"] = "Shanyt",
-		["faction"] = "Horde",
-		["professions"] = {
-			[186] = true,
-			[356] = true,
-			[794] = true,
-			[164] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[45382] = {
 				{
@@ -20810,10 +20761,10 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[57276] = {
+			[50598] = {
 				{
-					"5/20  ", -- [1]
-					"item", -- [2]
+					"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
@@ -20831,17 +20782,10 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[50606] = {
+			[45381] = {
 				{
-					"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[42420] = {
-				{
-					"0/4 Complete 4 world quests in Azsuna", -- [1]
-					"object", -- [2]
+					"1/4  ", -- [1]
+					"item", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
@@ -20903,17 +20847,17 @@ BtWQuests_Characters = {
 			},
 			[54180] = {
 			},
+			[45383] = {
+				{
+					"1/4  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
 			[48642] = {
 				{
 					"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[56352] = {
-				{
-					"0/20  ", -- [1]
-					"item", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
@@ -20931,10 +20875,24 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[45381] = {
+			[56352] = {
 				{
-					"1/4  ", -- [1]
+					"0/20  ", -- [1]
 					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[42233] = {
+				{
+					"0/4 Complete 4 world quests in Highmountain.", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57157] = {
+				{
+					"Drive back N'Zoth's Forces", -- [1]
+					"progressbar", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
@@ -20965,13 +20923,98 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [5]
 			},
-			[45383] = {
+			[57276] = {
 				{
-					"1/4  ", -- [1]
+					"5/20  ", -- [1]
 					"item", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
+		},
+		["skills"] = {
+			[2437] = {
+				["maxLevel"] = 175,
+				["level"] = 175,
+			},
+			[2565] = {
+				["maxLevel"] = 175,
+				["level"] = 175,
+			},
+			[2474] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2476] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2571] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[164] = {
+				["maxLevel"] = 800,
+				["level"] = 300,
+			},
+			[2472] = {
+				["maxLevel"] = 100,
+				["level"] = 100,
+			},
+			[2569] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2566] = {
+				["maxLevel"] = 100,
+				["level"] = 100,
+			},
+			[2475] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2570] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2572] = {
+				["maxLevel"] = 300,
+				["level"] = 300,
+			},
+			[2477] = {
+				["maxLevel"] = 300,
+				["level"] = 300,
+			},
+			[2567] = {
+				["maxLevel"] = 100,
+				["level"] = 100,
+			},
+			[2454] = {
+				["maxLevel"] = 100,
+				["level"] = 100,
+			},
+			[2568] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2473] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[186] = {
+				["maxLevel"] = 800,
+				["level"] = 300,
+			},
+		},
+		["name"] = "Shanyt",
+		["faction"] = "Horde",
+		["professions"] = {
+			[186] = true,
+			[356] = true,
+			[185] = true,
+			[794] = true,
+			[164] = true,
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[2010] = {
@@ -21353,6 +21396,7 @@ BtWQuests_Characters = {
 				["barValue"] = 42000,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [9]
 	{
 		["class"] = 4,
@@ -21516,6 +21560,63 @@ BtWQuests_Characters = {
 		["xpModifier"] = 0,
 		["warMode"] = true,
 		["sex"] = 2,
+		["warModeBonus"] = 10,
+		["skills"] = {
+		},
+		["name"] = "Shimzo",
+		["faction"] = "Horde",
+		["professions"] = {
+		},
+		["ignoredChains"] = {
+		},
+		["questsActive"] = {
+			[54185] = {
+				{
+					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Pulverizer Bot Mk 6001 defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
 		["reputations"] = {
 			[81] = {
 				["barMin"] = 3000,
@@ -21593,63 +21694,6 @@ BtWQuests_Characters = {
 				["standing"] = 6,
 				["barMax"] = 21000,
 				["barValue"] = 9000,
-			},
-		},
-		["skills"] = {
-		},
-		["name"] = "Shimzo",
-		["faction"] = "Horde",
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
-		["warModeBonus"] = 10,
-		["questsActive"] = {
-			[54185] = {
-				{
-					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Pulverizer Bot Mk 6001 defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
 			},
 		},
 	}, -- [10]
@@ -21847,8 +21891,8 @@ BtWQuests_Characters = {
 			[27166] = true,
 			[27174] = true,
 			[50098] = true,
+			[412] = true,
 			[27198] = true,
-			[26176] = true,
 			[27206] = true,
 			[31813] = true,
 			[31821] = true,
@@ -21867,11 +21911,11 @@ BtWQuests_Characters = {
 			[27385] = true,
 			[27845] = true,
 			[27853] = true,
-			[50101] = true,
+			[42947] = true,
 			[27869] = true,
 			[26855] = true,
 			[25841] = true,
-			[27382] = true,
+			[50101] = true,
 			[27390] = true,
 			[27909] = true,
 			[27030] = true,
@@ -21977,13 +22021,13 @@ BtWQuests_Characters = {
 			[25118] = true,
 			[27224] = true,
 			[25667] = true,
-			[6391] = true,
+			[27033] = true,
 			[31815] = true,
 			[31823] = true,
 			[31831] = true,
 			[13636] = true,
 			[32662] = true,
-			[27033] = true,
+			[27544] = true,
 			[13648] = true,
 			[27536] = true,
 			[13656] = true,
@@ -21998,18 +22042,18 @@ BtWQuests_Characters = {
 			[50105] = true,
 			[53123] = true,
 			[27368] = true,
-			[31552] = true,
+			[27464] = true,
 			[27384] = true,
 			[27392] = true,
 			[39406] = true,
 			[432] = true,
 			[53746] = true,
-			[27464] = true,
+			[26953] = true,
 			[27432] = true,
 			[26929] = true,
 			[27448] = true,
 			[27456] = true,
-			[26953] = true,
+			[31552] = true,
 			[26961] = true,
 			[31568] = true,
 			[31576] = true,
@@ -22019,7 +22063,7 @@ BtWQuests_Characters = {
 			[433] = true,
 			[27017] = true,
 			[27025] = true,
-			[27544] = true,
+			[6391] = true,
 			[24486] = true,
 			[32670] = true,
 			[27057] = true,
@@ -22062,7 +22106,7 @@ BtWQuests_Characters = {
 			[26842] = true,
 			[13639] = true,
 			[27369] = true,
-			[42947] = true,
+			[27382] = true,
 			[50107] = true,
 			[27904] = true,
 			[39408] = true,
@@ -22070,7 +22114,7 @@ BtWQuests_Characters = {
 			[53748] = true,
 			[42895] = true,
 			[42896] = true,
-			[412] = true,
+			[26176] = true,
 			[27449] = true,
 			[27876] = true,
 			[25932] = true,
@@ -22119,6 +22163,135 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Alliance",
+		["warModeBonus"] = 25,
+		["warMode"] = false,
+		["name"] = "Thorinbane",
+		["sex"] = 2,
+		["professions"] = {
+			[186] = true,
+			[164] = true,
+			[356] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
+		},
+		["questsActive"] = {
+			[28755] = {
+				{
+					"0/1  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[27919] = {
+			},
+			[27458] = {
+				{
+					"0/1  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[27762] = {
+			},
+			[28756] = {
+				{
+					"0/1 Rattlegore slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[56491] = {
+				{
+					"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Blackmane Defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[27915] = {
+			},
+			[27467] = {
+				{
+					"0/10 Blades buried", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[49860] = {
+				{
+					"0/1 Select your next assignment", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[54185] = {
+				{
+					"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"Pulverizer Bot Mk 6001 defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[25998] = {
+			},
+			[26137] = {
+			},
+			[27465] = {
+				{
+					"0/16 Noxious Glade Scourge slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/8 Noxious Glade Cultists slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+		},
 		["reputations"] = {
 			[942] = {
 				["barMin"] = 0,
@@ -22259,135 +22432,6 @@ BtWQuests_Characters = {
 				["standing"] = 5,
 				["barMax"] = 9000,
 				["barValue"] = 8302,
-			},
-		},
-		["warMode"] = false,
-		["name"] = "Thorinbane",
-		["sex"] = 2,
-		["professions"] = {
-			[186] = true,
-			[164] = true,
-			[356] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
-		["warModeBonus"] = 25,
-		["questsActive"] = {
-			[28755] = {
-				{
-					"0/1  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[27919] = {
-			},
-			[27458] = {
-				{
-					"0/1  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[27762] = {
-			},
-			[28756] = {
-				{
-					"0/1 Rattlegore slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[56491] = {
-				{
-					"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Blackmane Defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[27915] = {
-			},
-			[27467] = {
-				{
-					"0/10 Blades buried", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[49860] = {
-				{
-					"0/1 Select your next assignment", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[54185] = {
-				{
-					"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"Pulverizer Bot Mk 6001 defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[25998] = {
-			},
-			[26137] = {
-			},
-			[27465] = {
-				{
-					"0/16 Noxious Glade Scourge slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/8 Noxious Glade Cultists slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
 			},
 		},
 	}, -- [11]
@@ -22673,71 +22717,7 @@ BtWQuests_Characters = {
 		["xpModifier"] = 0.05,
 		["warMode"] = false,
 		["sex"] = 2,
-		["reputations"] = {
-			[1134] = {
-				["barMin"] = 3000,
-				["name"] = "Gilneas",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 4073,
-			},
-			[54] = {
-				["barMin"] = 9000,
-				["name"] = "Gnomeregan",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 15607,
-			},
-			[47] = {
-				["barMin"] = 9000,
-				["name"] = "Ironforge",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 14531,
-			},
-			[1353] = {
-				["barMin"] = 3000,
-				["name"] = "Tushui Pandaren",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 7173,
-			},
-			[930] = {
-				["barMin"] = 3000,
-				["name"] = "Exodar",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 7173,
-			},
-			[469] = {
-				["barMin"] = 3000,
-				["name"] = "Alliance",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 7373,
-			},
-			[69] = {
-				["barMin"] = 3000,
-				["name"] = "Darnassus",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 7173,
-			},
-			[1118] = {
-				["barMin"] = 0,
-				["name"] = "Classic",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[72] = {
-				["barMin"] = 3000,
-				["name"] = "Stormwind",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 7181,
-			},
-		},
+		["warModeBonus"] = 25,
 		["skills"] = {
 			[2494] = {
 				["maxLevel"] = 300,
@@ -22766,7 +22746,6 @@ BtWQuests_Characters = {
 		},
 		["ignoredChains"] = {
 		},
-		["warModeBonus"] = 25,
 		["questsActive"] = {
 			[56491] = {
 				{
@@ -22867,6 +22846,71 @@ BtWQuests_Characters = {
 					"item", -- [2]
 					false, -- [3]
 				}, -- [3]
+			},
+		},
+		["reputations"] = {
+			[1134] = {
+				["barMin"] = 3000,
+				["name"] = "Gilneas",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 4073,
+			},
+			[54] = {
+				["barMin"] = 9000,
+				["name"] = "Gnomeregan",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 15607,
+			},
+			[47] = {
+				["barMin"] = 9000,
+				["name"] = "Ironforge",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 14531,
+			},
+			[1353] = {
+				["barMin"] = 3000,
+				["name"] = "Tushui Pandaren",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 7173,
+			},
+			[930] = {
+				["barMin"] = 3000,
+				["name"] = "Exodar",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 7173,
+			},
+			[469] = {
+				["barMin"] = 3000,
+				["name"] = "Alliance",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 7373,
+			},
+			[69] = {
+				["barMin"] = 3000,
+				["name"] = "Darnassus",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 7173,
+			},
+			[1118] = {
+				["barMin"] = 0,
+				["name"] = "Classic",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[72] = {
+				["barMin"] = 3000,
+				["name"] = "Stormwind",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 7181,
 			},
 		},
 	}, -- [12]
@@ -23045,7 +23089,7 @@ BtWQuests_Characters = {
 			[40223] = true,
 			[40231] = true,
 			[38765] = true,
-			[31316] = true,
+			[31826] = true,
 			[40255] = true,
 			[31830] = true,
 			[31591] = true,
@@ -23054,7 +23098,7 @@ BtWQuests_Characters = {
 			[31814] = true,
 			[31308] = true,
 			[31822] = true,
-			[31571] = true,
+			[31316] = true,
 			[31575] = true,
 			[31579] = true,
 			[31583] = true,
@@ -23082,7 +23126,7 @@ BtWQuests_Characters = {
 			[37969] = true,
 			[38813] = true,
 			[39515] = true,
-			[31826] = true,
+			[31571] = true,
 			[38766] = true,
 			[56624] = true,
 			[39713] = true,
@@ -23132,6 +23176,64 @@ BtWQuests_Characters = {
 			[31569] = true,
 		},
 		["xpModifier"] = 0,
+		["reputations"] = {
+			[530] = {
+				["barMin"] = 0,
+				["name"] = "Darkspear Trolls",
+				["standing"] = 4,
+				["barValue"] = 500,
+				["barMax"] = 3000,
+			},
+			[911] = {
+				["barMin"] = 3000,
+				["name"] = "Silvermoon City",
+				["standing"] = 5,
+				["barValue"] = 4000,
+				["barMax"] = 9000,
+			},
+			[68] = {
+				["barMin"] = 3000,
+				["name"] = "Undercity",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[1133] = {
+				["barMin"] = 3000,
+				["name"] = "Bilgewater Cartel",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[81] = {
+				["barMin"] = 0,
+				["name"] = "Thunder Bluff",
+				["standing"] = 4,
+				["barValue"] = 500,
+				["barMax"] = 3000,
+			},
+			[67] = {
+				["barMin"] = 3000,
+				["name"] = "Horde",
+				["standing"] = 5,
+				["barValue"] = 3500,
+				["barMax"] = 9000,
+			},
+			[76] = {
+				["barMin"] = 0,
+				["name"] = "Orgrimmar",
+				["standing"] = 4,
+				["barValue"] = 500,
+				["barMax"] = 3000,
+			},
+			[1352] = {
+				["barMin"] = 3000,
+				["name"] = "Huojin Pandaren",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+		},
 		["questsActive"] = {
 			[56491] = {
 				{
@@ -23205,64 +23307,6 @@ BtWQuests_Characters = {
 			},
 		},
 		["warModeBonus"] = 10,
-		["reputations"] = {
-			[530] = {
-				["barMin"] = 0,
-				["name"] = "Darkspear Trolls",
-				["standing"] = 4,
-				["barValue"] = 500,
-				["barMax"] = 3000,
-			},
-			[911] = {
-				["barMin"] = 3000,
-				["name"] = "Silvermoon City",
-				["standing"] = 5,
-				["barValue"] = 4000,
-				["barMax"] = 9000,
-			},
-			[68] = {
-				["barMin"] = 3000,
-				["name"] = "Undercity",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[1133] = {
-				["barMin"] = 3000,
-				["name"] = "Bilgewater Cartel",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[81] = {
-				["barMin"] = 0,
-				["name"] = "Thunder Bluff",
-				["standing"] = 4,
-				["barValue"] = 500,
-				["barMax"] = 3000,
-			},
-			[67] = {
-				["barMin"] = 3000,
-				["name"] = "Horde",
-				["standing"] = 5,
-				["barValue"] = 3500,
-				["barMax"] = 9000,
-			},
-			[76] = {
-				["barMin"] = 0,
-				["name"] = "Orgrimmar",
-				["standing"] = 4,
-				["barValue"] = 500,
-				["barMax"] = 3000,
-			},
-			[1352] = {
-				["barMin"] = 3000,
-				["name"] = "Huojin Pandaren",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-		},
 		["ignoredChains"] = {
 		},
 		["name"] = "Tyrannithal",
@@ -23561,7 +23605,7 @@ BtWQuests_Characters = {
 			[31814] = true,
 			[31822] = true,
 			[31830] = true,
-			[27998] = true,
+			[31575] = true,
 			[53121] = true,
 			[26872] = true,
 			[44753] = true,
@@ -23573,7 +23617,7 @@ BtWQuests_Characters = {
 			[27974] = true,
 			[31918] = true,
 			[42837] = true,
-			[31575] = true,
+			[848] = true,
 			[27343] = true,
 			[27351] = true,
 			[844] = true,
@@ -23582,7 +23626,7 @@ BtWQuests_Characters = {
 			[50103] = true,
 			[845] = true,
 			[13971] = true,
-			[13975] = true,
+			[30984] = true,
 			[53744] = true,
 			[44051] = true,
 			[41704] = true,
@@ -23591,20 +23635,20 @@ BtWQuests_Characters = {
 			[13999] = true,
 			[31551] = true,
 			[42792] = true,
-			[56571] = true,
-			[848] = true,
+			[850] = true,
+			[27998] = true,
 			[31583] = true,
-			[40123] = true,
+			[44722] = true,
 			[44738] = true,
 			[44754] = true,
 			[45281] = true,
 			[40746] = true,
-			[42838] = true,
-			[40730] = true,
+			[851] = true,
+			[56571] = true,
 			[44834] = true,
 			[43317] = true,
 			[44724] = true,
-			[56635] = true,
+			[42838] = true,
 			[44756] = true,
 			[852] = true,
 			[31592] = true,
@@ -23631,9 +23675,9 @@ BtWQuests_Characters = {
 			[45266] = true,
 			[45282] = true,
 			[43587] = true,
-			[43813] = true,
+			[40747] = true,
 			[39709] = true,
-			[39725] = true,
+			[43813] = true,
 			[43318] = true,
 			[43566] = true,
 			[42839] = true,
@@ -23650,7 +23694,7 @@ BtWQuests_Characters = {
 			[43564] = true,
 			[44053] = true,
 			[27847] = true,
-			[40747] = true,
+			[39725] = true,
 			[43590] = true,
 			[43502] = true,
 			[31552] = true,
@@ -23661,23 +23705,23 @@ BtWQuests_Characters = {
 			[40125] = true,
 			[44740] = true,
 			[45267] = true,
-			[851] = true,
+			[56635] = true,
 			[43812] = true,
-			[850] = true,
+			[40730] = true,
 			[39724] = true,
 			[40748] = true,
 			[38720] = true,
-			[44722] = true,
+			[31591] = true,
 			[42840] = true,
 			[41834] = true,
 			[40317] = true,
 			[44562] = true,
-			[30984] = true,
+			[42486] = true,
 			[44964] = true,
-			[31591] = true,
+			[40123] = true,
 			[50106] = true,
 			[44833] = true,
-			[42486] = true,
+			[13975] = true,
 			[53220] = true,
 			[31870] = true,
 			[870] = true,
@@ -23746,6 +23790,97 @@ BtWQuests_Characters = {
 		["xpModifier"] = 0.5,
 		["warMode"] = true,
 		["sex"] = 2,
+		["warModeBonus"] = 10,
+		["skills"] = {
+			[2572] = {
+				["maxLevel"] = 300,
+				["level"] = 62,
+			},
+			[2524] = {
+				["maxLevel"] = 300,
+				["level"] = 45,
+			},
+			[755] = {
+				["maxLevel"] = 75,
+				["level"] = 45,
+			},
+			[186] = {
+				["maxLevel"] = 75,
+				["level"] = 62,
+			},
+		},
+		["name"] = "Vancard",
+		["faction"] = "Horde",
+		["professions"] = {
+			[186] = true,
+			[356] = true,
+			[755] = true,
+			[794] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
+		},
+		["questsActive"] = {
+			[28532] = {
+			},
+			[14066] = {
+				{
+					"Caravan Scene Searched", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[28493] = {
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[28496] = {
+			},
+			[54185] = {
+				{
+					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Pulverizer Bot Mk 6001 defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+		},
 		["reputations"] = {
 			[470] = {
 				["barMin"] = 0,
@@ -23839,97 +23974,6 @@ BtWQuests_Characters = {
 				["barValue"] = 500,
 			},
 		},
-		["skills"] = {
-			[2572] = {
-				["maxLevel"] = 300,
-				["level"] = 62,
-			},
-			[2524] = {
-				["maxLevel"] = 300,
-				["level"] = 45,
-			},
-			[755] = {
-				["maxLevel"] = 75,
-				["level"] = 45,
-			},
-			[186] = {
-				["maxLevel"] = 75,
-				["level"] = 62,
-			},
-		},
-		["name"] = "Vancard",
-		["faction"] = "Horde",
-		["professions"] = {
-			[186] = true,
-			[356] = true,
-			[755] = true,
-			[794] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
-		["warModeBonus"] = 10,
-		["questsActive"] = {
-			[28532] = {
-			},
-			[14066] = {
-				{
-					"Caravan Scene Searched", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[28493] = {
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[28496] = {
-			},
-			[54185] = {
-				{
-					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Pulverizer Bot Mk 6001 defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-		},
 	}, -- [14]
 	{
 		["class"] = 11,
@@ -23944,83 +23988,6 @@ BtWQuests_Characters = {
 				["criterias"] = {
 				},
 				["name"] = "The Black Temple",
-			},
-			[4893] = {
-				["completed"] = true,
-				["rewardText"] = "",
-				["wasEarnedByMe"] = false,
-				["points"] = 10,
-				["criterias"] = {
-					{
-						["completed"] = false,
-						["criteriaID"] = 0,
-						["criteriaString"] = "The First Battle for Andorhal",
-					}, -- [1]
-					{
-						["completed"] = false,
-						["criteriaID"] = 0,
-						["criteriaString"] = "A Temporary Peace",
-					}, -- [2]
-					{
-						["completed"] = false,
-						["criteriaID"] = 0,
-						["criteriaString"] = "The Second Battle for Andorhal",
-					}, -- [3]
-					{
-						["completed"] = false,
-						["criteriaID"] = 0,
-						["criteriaString"] = "The Menders' Stead",
-					}, -- [4]
-				},
-				["name"] = "Western Plaguelands Quests",
-			},
-			[10746] = {
-				["completed"] = true,
-				["rewardText"] = "",
-				["wasEarnedByMe"] = false,
-				["points"] = 10,
-				["criterias"] = {
-				},
-				["name"] = "Forged for Battle",
-			},
-			[10617] = {
-				["completed"] = true,
-				["rewardText"] = "Reward: Suramar World Quests Unlocked",
-				["wasEarnedByMe"] = false,
-				["points"] = 10,
-				["criterias"] = {
-					{
-						["completed"] = false,
-						["criteriaID"] = 30134,
-						["criteriaString"] = "Nightfall",
-					}, -- [1]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30135,
-						["criteriaString"] = "Arcanist Kel'danath",
-					}, -- [2]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30136,
-						["criteriaString"] = "Chief Telemancer Oculeth",
-					}, -- [3]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30137,
-						["criteriaString"] = "Feeding Shal'Aran",
-					}, -- [4]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30138,
-						["criteriaString"] = "Masquerade",
-					}, -- [5]
-					{
-						["completed"] = false,
-						["criteriaID"] = 30139,
-						["criteriaString"] = "The Light Below",
-					}, -- [6]
-				},
-				["name"] = "Nightfallen But Not Forgotten",
 			},
 			[10596] = {
 				["completed"] = false,
@@ -24121,6 +24088,83 @@ BtWQuests_Characters = {
 				},
 				["name"] = "Bigger Fish to Fry",
 			},
+			[10746] = {
+				["completed"] = true,
+				["rewardText"] = "",
+				["wasEarnedByMe"] = false,
+				["points"] = 10,
+				["criterias"] = {
+				},
+				["name"] = "Forged for Battle",
+			},
+			[4893] = {
+				["completed"] = true,
+				["rewardText"] = "",
+				["wasEarnedByMe"] = false,
+				["points"] = 10,
+				["criterias"] = {
+					{
+						["completed"] = false,
+						["criteriaID"] = 0,
+						["criteriaString"] = "The First Battle for Andorhal",
+					}, -- [1]
+					{
+						["completed"] = false,
+						["criteriaID"] = 0,
+						["criteriaString"] = "A Temporary Peace",
+					}, -- [2]
+					{
+						["completed"] = false,
+						["criteriaID"] = 0,
+						["criteriaString"] = "The Second Battle for Andorhal",
+					}, -- [3]
+					{
+						["completed"] = false,
+						["criteriaID"] = 0,
+						["criteriaString"] = "The Menders' Stead",
+					}, -- [4]
+				},
+				["name"] = "Western Plaguelands Quests",
+			},
+			[10617] = {
+				["completed"] = true,
+				["rewardText"] = "Reward: Suramar World Quests Unlocked",
+				["wasEarnedByMe"] = false,
+				["points"] = 10,
+				["criterias"] = {
+					{
+						["completed"] = false,
+						["criteriaID"] = 30134,
+						["criteriaString"] = "Nightfall",
+					}, -- [1]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30135,
+						["criteriaString"] = "Arcanist Kel'danath",
+					}, -- [2]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30136,
+						["criteriaString"] = "Chief Telemancer Oculeth",
+					}, -- [3]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30137,
+						["criteriaString"] = "Feeding Shal'Aran",
+					}, -- [4]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30138,
+						["criteriaString"] = "Masquerade",
+					}, -- [5]
+					{
+						["completed"] = false,
+						["criteriaID"] = 30139,
+						["criteriaString"] = "The Light Below",
+					}, -- [6]
+				},
+				["name"] = "Nightfallen But Not Forgotten",
+			},
 		},
 		["race"] = "ZandalariTroll",
 		["level"] = 120,
@@ -24128,11 +24172,11 @@ BtWQuests_Characters = {
 			[2370] = {
 				["maxRep"] = 42000,
 				["name"] = "Dino Training - Direhorn",
-				["threshold"] = 0,
+				["nextThreshold"] = 4000,
 				["reaction"] = "Hatchling",
 				["text"] = "Direhorn has grown into a Hatchling.",
 				["rep"] = 0,
-				["nextThreshold"] = 4000,
+				["threshold"] = 0,
 			},
 		},
 		["realm"] = "Zul'jin",
@@ -24903,8 +24947,8 @@ BtWQuests_Characters = {
 			[33707] = true,
 			[30097] = true,
 			[30105] = true,
+			[39408] = true,
 			[51440] = true,
-			[29822] = true,
 			[31549] = true,
 			[31581] = true,
 			[38646] = true,
@@ -24914,7 +24958,7 @@ BtWQuests_Characters = {
 			[29694] = true,
 			[31773] = true,
 			[51312] = true,
-			[39408] = true,
+			[29822] = true,
 			[33017] = true,
 			[11899] = true,
 			[33145] = true,
@@ -24952,12 +24996,12 @@ BtWQuests_Characters = {
 			[24769] = true,
 			[26047] = true,
 			[53744] = true,
-			[29087] = true,
+			[34592] = true,
 			[11563] = true,
 			[29023] = true,
-			[13620] = true,
 			[41782] = true,
-			[34592] = true,
+			[29087] = true,
+			[13620] = true,
 			[50098] = true,
 			[31230] = true,
 			[42038] = true,
@@ -24967,8 +25011,8 @@ BtWQuests_Characters = {
 			[11605] = true,
 			[29361] = true,
 			[11637] = true,
-			[36793] = true,
 			[14195] = true,
+			[36793] = true,
 			[31550] = true,
 			[31582] = true,
 			[11717] = true,
@@ -24980,13 +25024,13 @@ BtWQuests_Characters = {
 			[51442] = true,
 			[11893] = true,
 			[31870] = true,
-			[11957] = true,
+			[43702] = true,
 			[26337] = true,
 			[43446] = true,
 			[53745] = true,
 			[37433] = true,
 			[11941] = true,
-			[33467] = true,
+			[11957] = true,
 			[33531] = true,
 			[41783] = true,
 			[14052] = true,
@@ -25133,16 +25177,16 @@ BtWQuests_Characters = {
 			[11684] = true,
 			[42747] = true,
 			[38717] = true,
-			[36862] = true,
 			[44281] = true,
+			[36862] = true,
 			[49144] = true,
 			[55413] = true,
 			[24644] = true,
-			[25316] = true,
+			[11702] = true,
 			[51447] = true,
 			[33408] = true,
 			[41724] = true,
-			[11702] = true,
+			[25316] = true,
 			[53750] = true,
 			[33344] = true,
 			[47737] = true,
@@ -25335,22 +25379,22 @@ BtWQuests_Characters = {
 			[47423] = true,
 			[24775] = true,
 			[26416] = true,
-			[50430] = true,
-			[38148] = true,
 			[38596] = true,
+			[11592] = true,
+			[13751] = true,
 			[11560] = true,
 			[49918] = true,
-			[56571] = true,
+			[29317] = true,
+			[25319] = true,
 			[34438] = true,
-			[13751] = true,
 			[31588] = true,
 			[25127] = true,
 			[33926] = true,
 			[11576] = true,
-			[29317] = true,
+			[50430] = true,
 			[56635] = true,
 			[27334] = true,
-			[25319] = true,
+			[11640] = true,
 			[11656] = true,
 			[13815] = true,
 			[11688] = true,
@@ -25411,17 +25455,17 @@ BtWQuests_Characters = {
 			[25128] = true,
 			[42116] = true,
 			[25192] = true,
-			[12728] = true,
+			[40645] = true,
 			[25256] = true,
 			[27335] = true,
 			[44483] = true,
 			[34312] = true,
-			[29638] = true,
+			[42884] = true,
 			[34440] = true,
-			[31589] = true,
+			[12728] = true,
 			[38662] = true,
 			[42948] = true,
-			[40837] = true,
+			[29638] = true,
 			[29670] = true,
 			[29702] = true,
 			[11611] = true,
@@ -25429,8 +25473,8 @@ BtWQuests_Characters = {
 			[40522] = true,
 			[39174] = true,
 			[38922] = true,
+			[41413] = true,
 			[29926] = true,
-			[6462] = true,
 			[27593] = true,
 			[11936] = true,
 			[29576] = true,
@@ -25476,7 +25520,7 @@ BtWQuests_Characters = {
 			[11561] = true,
 			[25193] = true,
 			[11593] = true,
-			[25257] = true,
+			[11609] = true,
 			[11625] = true,
 			[42438] = true,
 			[27400] = true,
@@ -25526,12 +25570,12 @@ BtWQuests_Characters = {
 			[29639] = true,
 			[40647] = true,
 			[51587] = true,
-			[11609] = true,
+			[27304] = true,
 			[30983] = true,
 			[50242] = true,
 			[11705] = true,
 			[49860] = true,
-			[27304] = true,
+			[25257] = true,
 			[27591] = true,
 			[35242] = true,
 			[11574] = true,
@@ -25550,14 +25594,14 @@ BtWQuests_Characters = {
 			[50948] = true,
 			[29608] = true,
 			[53123] = true,
-			[41413] = true,
+			[6462] = true,
 			[29704] = true,
 			[34501] = true,
 			[31815] = true,
 			[34824] = true,
-			[42884] = true,
+			[40837] = true,
 			[48897] = true,
-			[40645] = true,
+			[31589] = true,
 			[29928] = true,
 			[51526] = true,
 			[31586] = true,
@@ -25583,11 +25627,11 @@ BtWQuests_Characters = {
 			[29637] = true,
 			[53124] = true,
 			[34765] = true,
-			[11640] = true,
 			[11624] = true,
 			[29349] = true,
-			[11592] = true,
+			[56571] = true,
 			[31556] = true,
+			[38148] = true,
 			[11969] = true,
 			[24779] = true,
 			[29401] = true,
@@ -25720,7 +25764,7 @@ BtWQuests_Characters = {
 			[53640] = true,
 			[24813] = true,
 			[42039] = true,
-			[43702] = true,
+			[33467] = true,
 			[30015] = true,
 			[49866] = true,
 			[49930] = true,
@@ -25902,380 +25946,6 @@ BtWQuests_Characters = {
 			[12796] = true,
 		},
 		["xpModifier"] = 0,
-		["warModeBonus"] = 10,
-		["reputations"] = {
-			[889] = {
-				["barMin"] = 0,
-				["name"] = "Warsong Outriders",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[1073] = {
-				["barMin"] = 9000,
-				["name"] = "The Kalu'ak",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 11520,
-			},
-			[1270] = {
-				["barMin"] = 3000,
-				["name"] = "Shado-Pan",
-				["standing"] = 5,
-				["barValue"] = 4010,
-				["barMax"] = 9000,
-			},
-			[1337] = {
-				["barMin"] = 9000,
-				["name"] = "The Klaxxi",
-				["standing"] = 6,
-				["barValue"] = 12000,
-				["barMax"] = 21000,
-			},
-			[1341] = {
-				["barMin"] = 9000,
-				["name"] = "The August Celestials",
-				["standing"] = 6,
-				["barValue"] = 10500,
-				["barMax"] = 21000,
-			},
-			[1097] = {
-				["barMin"] = 0,
-				["name"] = "Wrath of the Lich King",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[911] = {
-				["barMin"] = 9000,
-				["name"] = "Silvermoon City",
-				["standing"] = 6,
-				["barValue"] = 10009,
-				["barMax"] = 21000,
-			},
-			[980] = {
-				["barMin"] = 0,
-				["name"] = "The Burning Crusade",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[2163] = {
-				["barMin"] = 0,
-				["name"] = "Tortollan Seekers",
-				["standing"] = 4,
-				["barValue"] = 600,
-				["barMax"] = 3000,
-			},
-			[1133] = {
-				["barMin"] = 9000,
-				["name"] = "Bilgewater Cartel",
-				["standing"] = 6,
-				["barValue"] = 10449,
-				["barMax"] = 21000,
-			},
-			[1515] = {
-				["barMin"] = 21000,
-				["name"] = "Arakkoa Outcasts",
-				["standing"] = 7,
-				["barMax"] = 42000,
-				["barValue"] = 40000,
-			},
-			[1834] = {
-				["barMin"] = 0,
-				["name"] = "Legion",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[1271] = {
-				["barMin"] = 9000,
-				["name"] = "Order of the Cloud Serpent",
-				["standing"] = 6,
-				["barValue"] = 15000,
-				["barMax"] = 21000,
-			},
-			[1090] = {
-				["barMin"] = 3000,
-				["name"] = "Kirin Tor",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 4017,
-			},
-			[2164] = {
-				["barMin"] = 0,
-				["name"] = "Champions of Azeroth",
-				["standing"] = 4,
-				["barValue"] = 2750,
-				["barMax"] = 3000,
-			},
-			[1228] = {
-				["barMin"] = 42000,
-				["name"] = "Forest Hozen",
-				["standing"] = 8,
-				["barMax"] = 42000,
-				["barValue"] = 42000,
-			},
-			[81] = {
-				["barMin"] = 9000,
-				["name"] = "Thunder Bluff",
-				["standing"] = 6,
-				["barValue"] = 10859,
-				["barMax"] = 21000,
-			},
-			[1085] = {
-				["barMin"] = 9000,
-				["name"] = "Warsong Offensive",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 12214,
-			},
-			[1118] = {
-				["barMin"] = 0,
-				["name"] = "Classic",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[21] = {
-				["barMin"] = 0,
-				["name"] = "Booty Bay",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 1612,
-			},
-			[2157] = {
-				["barMin"] = 3000,
-				["name"] = "The Honorbound",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 3750,
-			},
-			[1445] = {
-				["barMin"] = 9000,
-				["name"] = "Frostwolf Orcs",
-				["standing"] = 6,
-				["barValue"] = 18256,
-				["barMax"] = 21000,
-			},
-			[67] = {
-				["barMin"] = 9000,
-				["name"] = "Horde",
-				["standing"] = 6,
-				["barValue"] = 15920,
-				["barMax"] = 21000,
-			},
-			[892] = {
-				["barMin"] = 0,
-				["name"] = "Horde Forces",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[1158] = {
-				["barMin"] = 0,
-				["name"] = "Guardians of Hyjal",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 650,
-			},
-			[59] = {
-				["barMin"] = 0,
-				["name"] = "Thorium Brotherhood",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[68] = {
-				["barMin"] = 9000,
-				["name"] = "Undercity",
-				["standing"] = 6,
-				["barValue"] = 10999,
-				["barMax"] = 21000,
-			},
-			[1091] = {
-				["barMin"] = 3000,
-				["name"] = "The Wyrmrest Accord",
-				["standing"] = 5,
-				["barValue"] = 3523,
-				["barMax"] = 9000,
-			},
-			[2158] = {
-				["barMin"] = 0,
-				["name"] = "Voldunai",
-				["standing"] = 4,
-				["barValue"] = 200,
-				["barMax"] = 3000,
-			},
-			[2103] = {
-				["barMin"] = 21000,
-				["name"] = "Zandalari Empire",
-				["standing"] = 7,
-				["barValue"] = 28850,
-				["barMax"] = 42000,
-			},
-			[1064] = {
-				["barMin"] = 9000,
-				["name"] = "The Taunka",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 11059,
-			},
-			[530] = {
-				["barMin"] = 9000,
-				["name"] = "Darkspear Trolls",
-				["standing"] = 6,
-				["barValue"] = 17391,
-				["barMax"] = 21000,
-			},
-			[270] = {
-				["barMin"] = 0,
-				["name"] = "Zandalar Tribe",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1052] = {
-				["barMin"] = 9000,
-				["name"] = "Horde Expedition",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 11589,
-			},
-			[1245] = {
-				["barMin"] = 0,
-				["name"] = "Mists of Pandaria",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[989] = {
-				["barMin"] = 0,
-				["name"] = "Keepers of Time",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1883] = {
-				["barMin"] = 9000,
-				["name"] = "Dreamweavers",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 17870,
-			},
-			[2104] = {
-				["barMin"] = 0,
-				["name"] = "Battle for Azeroth",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1135] = {
-				["barMin"] = 0,
-				["name"] = "The Earthen Ring",
-				["standing"] = 4,
-				["barValue"] = 250,
-				["barMax"] = 3000,
-			},
-			[609] = {
-				["barMin"] = 3000,
-				["name"] = "Cenarion Circle",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 6060,
-			},
-			[1269] = {
-				["barMin"] = 3000,
-				["name"] = "Golden Lotus",
-				["standing"] = 5,
-				["barValue"] = 6500,
-				["barMax"] = 9000,
-			},
-			[1162] = {
-				["barMin"] = 0,
-				["name"] = "Cataclysm",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[369] = {
-				["barMin"] = 0,
-				["name"] = "Gadgetzan",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 1612,
-			},
-			[470] = {
-				["barMin"] = 3000,
-				["name"] = "Ratchet",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 3225,
-			},
-			[1067] = {
-				["barMin"] = 3000,
-				["name"] = "The Hand of Vengeance",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 5801,
-			},
-			[1352] = {
-				["barMin"] = 3000,
-				["name"] = "Huojin Pandaren",
-				["standing"] = 5,
-				["barValue"] = 8999,
-				["barMax"] = 9000,
-			},
-			[577] = {
-				["barMin"] = 0,
-				["name"] = "Everlook",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 1612,
-			},
-			[76] = {
-				["barMin"] = 42000,
-				["name"] = "Orgrimmar",
-				["standing"] = 8,
-				["barValue"] = 42000,
-				["barMax"] = 42000,
-			},
-			[942] = {
-				["barMin"] = 3000,
-				["name"] = "Cenarion Expedition",
-				["standing"] = 5,
-				["barValue"] = 4230,
-				["barMax"] = 9000,
-			},
-			[729] = {
-				["barMin"] = 0,
-				["name"] = "Frostwolf Clan",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[169] = {
-				["barMin"] = 0,
-				["name"] = "Steamwheedle Cartel",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 1612,
-			},
-			[1124] = {
-				["barMin"] = 3000,
-				["name"] = "The Sunreavers",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 5801,
-			},
-			[1444] = {
-				["barMin"] = 0,
-				["name"] = "Warlords of Draenor",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-		},
 		["questsActive"] = {
 			[51230] = {
 				{
@@ -26553,6 +26223,380 @@ BtWQuests_Characters = {
 				}, -- [2]
 			},
 		},
+		["warModeBonus"] = 10,
+		["reputations"] = {
+			[889] = {
+				["barMin"] = 0,
+				["name"] = "Warsong Outriders",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[1073] = {
+				["barMin"] = 9000,
+				["name"] = "The Kalu'ak",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 11520,
+			},
+			[1270] = {
+				["barMin"] = 3000,
+				["name"] = "Shado-Pan",
+				["standing"] = 5,
+				["barValue"] = 4010,
+				["barMax"] = 9000,
+			},
+			[1337] = {
+				["barMin"] = 9000,
+				["name"] = "The Klaxxi",
+				["standing"] = 6,
+				["barValue"] = 12000,
+				["barMax"] = 21000,
+			},
+			[1341] = {
+				["barMin"] = 9000,
+				["name"] = "The August Celestials",
+				["standing"] = 6,
+				["barValue"] = 10500,
+				["barMax"] = 21000,
+			},
+			[1097] = {
+				["barMin"] = 0,
+				["name"] = "Wrath of the Lich King",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[911] = {
+				["barMin"] = 9000,
+				["name"] = "Silvermoon City",
+				["standing"] = 6,
+				["barValue"] = 10009,
+				["barMax"] = 21000,
+			},
+			[980] = {
+				["barMin"] = 0,
+				["name"] = "The Burning Crusade",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[2163] = {
+				["barMin"] = 0,
+				["name"] = "Tortollan Seekers",
+				["standing"] = 4,
+				["barValue"] = 600,
+				["barMax"] = 3000,
+			},
+			[1133] = {
+				["barMin"] = 9000,
+				["name"] = "Bilgewater Cartel",
+				["standing"] = 6,
+				["barValue"] = 10449,
+				["barMax"] = 21000,
+			},
+			[1515] = {
+				["barMin"] = 21000,
+				["name"] = "Arakkoa Outcasts",
+				["standing"] = 7,
+				["barMax"] = 42000,
+				["barValue"] = 40000,
+			},
+			[1834] = {
+				["barMin"] = 0,
+				["name"] = "Legion",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[1271] = {
+				["barMin"] = 9000,
+				["name"] = "Order of the Cloud Serpent",
+				["standing"] = 6,
+				["barValue"] = 15000,
+				["barMax"] = 21000,
+			},
+			[1090] = {
+				["barMin"] = 3000,
+				["name"] = "Kirin Tor",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 4017,
+			},
+			[2164] = {
+				["barMin"] = 0,
+				["name"] = "Champions of Azeroth",
+				["standing"] = 4,
+				["barValue"] = 2750,
+				["barMax"] = 3000,
+			},
+			[1228] = {
+				["barMin"] = 42000,
+				["name"] = "Forest Hozen",
+				["standing"] = 8,
+				["barMax"] = 42000,
+				["barValue"] = 42000,
+			},
+			[81] = {
+				["barMin"] = 9000,
+				["name"] = "Thunder Bluff",
+				["standing"] = 6,
+				["barValue"] = 10859,
+				["barMax"] = 21000,
+			},
+			[1085] = {
+				["barMin"] = 9000,
+				["name"] = "Warsong Offensive",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 12214,
+			},
+			[1118] = {
+				["barMin"] = 0,
+				["name"] = "Classic",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[21] = {
+				["barMin"] = 0,
+				["name"] = "Booty Bay",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 1612,
+			},
+			[2157] = {
+				["barMin"] = 3000,
+				["name"] = "The Honorbound",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 3750,
+			},
+			[1445] = {
+				["barMin"] = 9000,
+				["name"] = "Frostwolf Orcs",
+				["standing"] = 6,
+				["barValue"] = 18256,
+				["barMax"] = 21000,
+			},
+			[67] = {
+				["barMin"] = 9000,
+				["name"] = "Horde",
+				["standing"] = 6,
+				["barValue"] = 15920,
+				["barMax"] = 21000,
+			},
+			[892] = {
+				["barMin"] = 0,
+				["name"] = "Horde Forces",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[1158] = {
+				["barMin"] = 0,
+				["name"] = "Guardians of Hyjal",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 650,
+			},
+			[169] = {
+				["barMin"] = 0,
+				["name"] = "Steamwheedle Cartel",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 1612,
+			},
+			[68] = {
+				["barMin"] = 9000,
+				["name"] = "Undercity",
+				["standing"] = 6,
+				["barValue"] = 10999,
+				["barMax"] = 21000,
+			},
+			[1091] = {
+				["barMin"] = 3000,
+				["name"] = "The Wyrmrest Accord",
+				["standing"] = 5,
+				["barValue"] = 3523,
+				["barMax"] = 9000,
+			},
+			[2158] = {
+				["barMin"] = 0,
+				["name"] = "Voldunai",
+				["standing"] = 4,
+				["barValue"] = 200,
+				["barMax"] = 3000,
+			},
+			[2103] = {
+				["barMin"] = 21000,
+				["name"] = "Zandalari Empire",
+				["standing"] = 7,
+				["barValue"] = 28850,
+				["barMax"] = 42000,
+			},
+			[729] = {
+				["barMin"] = 0,
+				["name"] = "Frostwolf Clan",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[530] = {
+				["barMin"] = 9000,
+				["name"] = "Darkspear Trolls",
+				["standing"] = 6,
+				["barValue"] = 17391,
+				["barMax"] = 21000,
+			},
+			[270] = {
+				["barMin"] = 0,
+				["name"] = "Zandalar Tribe",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[59] = {
+				["barMin"] = 0,
+				["name"] = "Thorium Brotherhood",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1245] = {
+				["barMin"] = 0,
+				["name"] = "Mists of Pandaria",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[989] = {
+				["barMin"] = 0,
+				["name"] = "Keepers of Time",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1064] = {
+				["barMin"] = 9000,
+				["name"] = "The Taunka",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 11059,
+			},
+			[2104] = {
+				["barMin"] = 0,
+				["name"] = "Battle for Azeroth",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1135] = {
+				["barMin"] = 0,
+				["name"] = "The Earthen Ring",
+				["standing"] = 4,
+				["barValue"] = 250,
+				["barMax"] = 3000,
+			},
+			[609] = {
+				["barMin"] = 3000,
+				["name"] = "Cenarion Circle",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 6060,
+			},
+			[1269] = {
+				["barMin"] = 3000,
+				["name"] = "Golden Lotus",
+				["standing"] = 5,
+				["barValue"] = 6500,
+				["barMax"] = 9000,
+			},
+			[1162] = {
+				["barMin"] = 0,
+				["name"] = "Cataclysm",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[369] = {
+				["barMin"] = 0,
+				["name"] = "Gadgetzan",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 1612,
+			},
+			[470] = {
+				["barMin"] = 3000,
+				["name"] = "Ratchet",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 3225,
+			},
+			[1067] = {
+				["barMin"] = 3000,
+				["name"] = "The Hand of Vengeance",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 5801,
+			},
+			[1352] = {
+				["barMin"] = 3000,
+				["name"] = "Huojin Pandaren",
+				["standing"] = 5,
+				["barValue"] = 8999,
+				["barMax"] = 9000,
+			},
+			[577] = {
+				["barMin"] = 0,
+				["name"] = "Everlook",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 1612,
+			},
+			[76] = {
+				["barMin"] = 42000,
+				["name"] = "Orgrimmar",
+				["standing"] = 8,
+				["barValue"] = 42000,
+				["barMax"] = 42000,
+			},
+			[942] = {
+				["barMin"] = 3000,
+				["name"] = "Cenarion Expedition",
+				["standing"] = 5,
+				["barValue"] = 4230,
+				["barMax"] = 9000,
+			},
+			[1883] = {
+				["barMin"] = 9000,
+				["name"] = "Dreamweavers",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 17870,
+			},
+			[1052] = {
+				["barMin"] = 9000,
+				["name"] = "Horde Expedition",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 11589,
+			},
+			[1124] = {
+				["barMin"] = 3000,
+				["name"] = "The Sunreavers",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 5801,
+			},
+			[1444] = {
+				["barMin"] = 0,
+				["name"] = "Warlords of Draenor",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+		},
 		["ignoredChains"] = {
 		},
 		["name"] = "Zulbathal",
@@ -26560,9 +26604,9 @@ BtWQuests_Characters = {
 		["professions"] = {
 			[182] = true,
 			[356] = true,
+			[171] = true,
 			[185] = true,
 			[794] = true,
-			[171] = true,
 		},
 		["skills"] = {
 			[2551] = {

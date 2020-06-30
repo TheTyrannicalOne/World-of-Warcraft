@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Avisar-Dalaran",
+	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -9,8 +11,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 501,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:6316:1638:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 503,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:6316:1640:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 158060,
@@ -44,9 +46,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174956::::::::120:70::28:5:6540:6513:6578:6579:4803:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 157960,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:157960::::::::120:70::27:5:4803:6516:6515:1612:4785:::|h[Dunecrawler Crushers]|h|r",
+			["ID"] = 163414,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:163414::::::::120:70::28:5:5125:6516:6513:1632:4786:::|h[7th Legionnaire's Gauntlets]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 165678,
@@ -89,8 +91,7 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:159658::::::::120:70::23:5:4779:6516:6515:1602:4786:::|h[Cudgel of Correctional Oversight]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["LastPlayerFullName"] = "Avisar-Dalaran",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {
@@ -104,7 +105,6 @@ PawnOptions = {
 			["Name"] = "Ashbringer",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

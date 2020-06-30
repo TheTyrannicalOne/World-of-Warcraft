@@ -49,13 +49,6 @@ MJEGlobalSettings = {
 			["PVP"] = true,
 		},
 		["notCollected"] = true,
-		["onlyUsable"] = false,
-		["onlyFavorites"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -63,6 +56,13 @@ MJEGlobalSettings = {
 			["transform"] = true,
 			["ground"] = true,
 			["passenger"] = true,
+		},
+		["onlyFavorites"] = false,
+		["onlyUsable"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
 		},
 		["family"] = {
 			["Arachnids"] = {
@@ -140,10 +140,10 @@ MJEGlobalSettings = {
 				["Direhorns"] = true,
 			},
 			["Rays"] = {
-				["Stingrays"] = true,
-				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
 				["Nether Rays"] = true,
+				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Demons"] = {
 				["Felsabers"] = true,
@@ -171,9 +171,9 @@ MJEGlobalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
-				["Mushan"] = true,
 				["Kodos"] = true,
 				["Basilisks"] = true,
+				["Mushan"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -550,10 +550,10 @@ MJETrackingData = {
 		1898.352877082746, -- [4]
 	},
 	[246] = {
-		10, -- [1]
-		1590622249, -- [2]
-		423, -- [3]
-		5267.790650526168, -- [4]
+		11, -- [1]
+		1593024648, -- [2]
+		526, -- [3]
+		6712.417274620206, -- [4]
 	},
 	[507] = {
 		9, -- [1]
@@ -599,10 +599,10 @@ MJETrackingData = {
 		2870.057253935072, -- [4]
 	},
 	[460] = {
-		711, -- [1]
-		1593007860, -- [2]
-		20937, -- [3]
-		12886.02802780144, -- [4]
+		726, -- [1]
+		1593447043, -- [2]
+		20988, -- [3]
+		12947.48099675588, -- [4]
 	},
 	[600] = {
 		15, -- [1]
@@ -689,10 +689,10 @@ MJETrackingData = {
 		1587660271, -- [5]
 	},
 	[382] = {
-		5299, -- [1]
-		1593007869, -- [2]
-		231835, -- [3]
-		2587734.400893277, -- [4]
+		5459, -- [1]
+		1593459119, -- [2]
+		236963, -- [3]
+		2693551.415418607, -- [4]
 		1394640000, -- [5]
 	},
 	[1329] = {

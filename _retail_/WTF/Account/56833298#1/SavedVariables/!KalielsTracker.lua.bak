@@ -10,10 +10,10 @@ KalielsTrackerDB = {
 		["Tyrannithal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Zulbathal - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Shaekhan - Zul'jin"] = {

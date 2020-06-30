@@ -13,12 +13,6 @@ QuestTogether = {
 				"0/1 Shade of Xavius Slain", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
 		[57743] = {
 			["title"] = "Conquest's Reward",
 			["objectives"] = {
@@ -76,11 +70,10 @@ QuestTogether = {
 				"0/1 An empty bookshelf", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[42129] = {
@@ -108,6 +101,13 @@ QuestTogether = {
 				"0/1 Ten'gor slain", -- [2]
 			},
 		},
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -122,12 +122,6 @@ QuestTogether = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[53038] = {
-			["title"] = "The Very Best",
-			["objectives"] = {
-				"0/5 Players defeated in pet battle", -- [1]
 			},
 		},
 		[53476] = {
@@ -203,8 +197,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

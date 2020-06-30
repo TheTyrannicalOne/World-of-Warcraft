@@ -52,7 +52,14 @@ MJEGlobalSettings = {
 		["hidden"] = false,
 		["onlyFavorites"] = false,
 		["onlyTradable"] = false,
-		["onlyUsable"] = false,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["passenger"] = true,
+			["ground"] = true,
+			["transform"] = true,
+		},
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -114,10 +121,10 @@ MJEGlobalSettings = {
 				["Undead Steeds"] = true,
 			},
 			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Cats"] = {
 				["Sabers"] = true,
@@ -177,9 +184,9 @@ MJEGlobalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
-				["Kodos"] = true,
 				["Basilisks"] = true,
 				["Mushan"] = true,
+				["Kodos"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -225,19 +232,12 @@ MJEGlobalSettings = {
 			["Bats"] = true,
 		},
 		["collected"] = true,
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["passenger"] = true,
-			["ground"] = true,
-			["transform"] = true,
-		},
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,
 			["noFaction"] = true,
 		},
+		["onlyUsable"] = false,
 	},
 	["personalHiddenMounts"] = false,
 }
@@ -599,10 +599,10 @@ MJETrackingData = {
 		2870.057253935072, -- [4]
 	},
 	[460] = {
-		715, -- [1]
-		1593025455, -- [2]
-		20947, -- [3]
-		12906.64481771572, -- [4]
+		727, -- [1]
+		1593489635, -- [2]
+		20990, -- [3]
+		12947.48099675588, -- [4]
 	},
 	[600] = {
 		15, -- [1]
@@ -689,10 +689,10 @@ MJETrackingData = {
 		1587660271, -- [5]
 	},
 	[382] = {
-		5335, -- [1]
-		1593027838, -- [2]
-		233647, -- [3]
-		2622891.886035528, -- [4]
+		5467, -- [1]
+		1593489638, -- [2]
+		237062, -- [3]
+		2695933.665767618, -- [4]
 		1394640000, -- [5]
 	},
 	[1329] = {

@@ -52,10 +52,10 @@ QuestTogether = {
 				"10/25  ", -- [1]
 			},
 		},
-		[45172] = {
-			["title"] = "To Battle!",
+		[49015] = {
+			["title"] = "Antorus, the Burning Throne: The Death of a Titan",
 			["objectives"] = {
-				"Win a battleground", -- [1]
+				"Defeat Argus the Unmaker", -- [1]
 			},
 		},
 		[57396] = {
@@ -95,16 +95,10 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[42420] = {
-			["title"] = "Court of Farondis",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"1/4  ", -- [1]
 			},
 		},
 		[42422] = {
@@ -160,10 +154,28 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
 		[48642] = {
 			["title"] = "Argussian Reach",
 			["objectives"] = {
 				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+			},
+		},
+		[42233] = {
+			["title"] = "Highmountain Tribes",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+			},
+		},
+		[45172] = {
+			["title"] = "To Battle!",
+			["objectives"] = {
+				"Win a battleground", -- [1]
 			},
 		},
 		[49032] = {
@@ -178,16 +190,10 @@ QuestTogether = {
 				"0/20  ", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57157] = {
+			["title"] = "Assault: The Black Empire",
 			["objectives"] = {
-				"1/4  ", -- [1]
-			},
-		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4  ", -- [1]
+				"0% Drive back N'Zoth's Forces", -- [1]
 			},
 		},
 		[31891] = {
@@ -200,17 +206,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[49015] = {
-			["title"] = "Antorus, the Burning Throne: The Death of a Titan",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"Defeat Argus the Unmaker", -- [1]
+				"1/4  ", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

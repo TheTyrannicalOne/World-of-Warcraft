@@ -7,23 +7,23 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
-			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
-			},
-		},
 		[48288] = {
 			["title"] = "Antoran High Command",
 			["objectives"] = {
 				"Defeat the Antoran High Command in Antorus, The Burning Throne", -- [1]
-				"1/1  ", -- [2]
+				"1/1 Azeroth Invasion Plans", -- [2]
 			},
 		},
 		[56356] = {
 			["title"] = "The Eternal Palace: Queen's Gambit",
 			["objectives"] = {
 				"Queen Azshara defeated", -- [1]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[58632] = {
@@ -43,13 +43,13 @@ QuestTogether = {
 		[49133] = {
 			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4  ", -- [1]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 		[13721] = {
 			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-				"10/25  ", -- [1]
+				"10/25 Valiant's Seal", -- [1]
 			},
 		},
 		[49015] = {
@@ -89,12 +89,6 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
 		[50604] = {
 			["title"] = "Tortollan Seekers",
 			["objectives"] = {
@@ -113,10 +107,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"1/4  ", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[57743] = {
@@ -158,7 +152,7 @@ QuestTogether = {
 			["title"] = "Tomb of Sargeras: Free The Tormented",
 			["objectives"] = {
 				"Defeat The Desolate Host", -- [1]
-				"1/1  ", -- [2]
+				"1/1 Worshipper's Scrawlings", -- [2]
 			},
 		},
 		[54180] = {
@@ -166,28 +160,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"1/4  ", -- [1]
-			},
-		},
-		[42422] = {
-			["title"] = "The Wardens",
-			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
-			},
-		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
-			["objectives"] = {
-				"0/20 Eternal Ornament", -- [1]
-			},
-		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4  ", -- [1]
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 		[31891] = {
@@ -200,6 +176,36 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"0/20 Eternal Ornament", -- [1]
+			},
+		},
+		[57157] = {
+			["title"] = "Assault: The Black Empire",
+			["objectives"] = {
+				"0% Drive back N'Zoth's Forces", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
 		[45172] = {
 			["title"] = "To Battle!",
 			["objectives"] = {
@@ -210,7 +216,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

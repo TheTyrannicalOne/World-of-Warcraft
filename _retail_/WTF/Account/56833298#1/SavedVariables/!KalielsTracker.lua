@@ -10,7 +10,7 @@ KalielsTrackerDB = {
 		["Tyrannithal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Zulbathal - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Goramor - Runetotem"] = {
@@ -73,7 +73,7 @@ KalielsTrackerDB = {
 		["Migimong - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Fantastiburo - Argent Dawn"] = {

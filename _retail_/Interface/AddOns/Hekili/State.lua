@@ -1569,7 +1569,7 @@ local mt_state = {
         elseif k == 'query_time' then
             return t.now + t.offset + t.delay
 
-        elseif k == 'time_to_die' then
+        elseif k == 'time_to_die' or k == 'fight_remains' then
             if not t.boss then return 3600 end
             return max( 1, Hekili:GetGreatestTTD() - ( t.offset + t.delay ) )
         
@@ -1583,6 +1583,9 @@ local mt_state = {
 
         elseif k == 'moving' then
             return ( GetUnitSpeed('player') > 0 )
+
+        elseif k == 'solo' then
+            return GetNumGroupMembers() == 0
 
         elseif k == 'group' then
             return GetNumGroupMembers() > 1
@@ -1627,6 +1630,9 @@ local mt_state = {
         elseif k == 'true_my_enemies' then
             t[k] = max( 1, ns.numTargets() )
             return t[k]
+
+        elseif k == 'crit' or k == 'spell_crit' or k == 'attack_crit' then
+            return ( t.stat.crit / 100 )
 
         elseif k == 'haste' or k == 'spell_haste' then
             return ( 1 / ( 1 + t.stat.spell_haste ) )
@@ -4613,6 +4619,34 @@ do
                return event.action, event.start, event.time, event.type, event.target
             end
         end
+    end
+
+    function state:RemoveSpellEvent( action, real, eType, reverse )
+        local queue = real and realQueue or virtualQueue
+
+        local success = false
+
+        if reverse then
+            for i = #queue, 1, -1 do
+                local e = queue[ i ]
+
+                if e.action == action and ( eType == nil or e.type == eType ) then
+                    RecycleEvent( queue, i )
+                    return true
+                end
+            end
+        else
+            for i = 1, #queue do
+                local e = queue[ i ]
+
+                if e.action == action and ( eType == nil or e.type == eType ) then
+                    RecycleEvent( queue, i )
+                    return true
+                end
+            end
+        end
+
+        return false
     end
 
     function state:RemoveSpellEvents( action, real, eType )
