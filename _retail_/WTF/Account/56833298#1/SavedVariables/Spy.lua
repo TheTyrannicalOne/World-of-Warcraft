@@ -1,6 +1,36 @@
 
 SpyDB = {
 	["kosData"] = {
+		["Argent Dawn"] = {
+			["Horde"] = {
+				["Shanyt"] = {
+				},
+				["Tyrannithal"] = {
+				},
+			},
+		},
+		["Black Dragonflight"] = {
+			["Horde"] = {
+				["Durlok"] = {
+				},
+			},
+		},
+		["Dalaran"] = {
+			["Alliance"] = {
+				["Ruffinton"] = {
+				},
+				["Serbitechna"] = {
+				},
+				["Avisar"] = {
+				},
+				["Thorinbane"] = {
+				},
+				["Tinkster"] = {
+				},
+				["Darnastris"] = {
+				},
+			},
+		},
 		["Zul'jin"] = {
 			["Horde"] = {
 				["Vancard"] = {
@@ -23,74 +53,48 @@ SpyDB = {
 				},
 			},
 		},
+	},
+	["removeKOSData"] = {
+		["Argent Dawn"] = {
+			["Horde"] = {
+			},
+		},
 		["Black Dragonflight"] = {
 			["Horde"] = {
-				["Durlok"] = {
-				},
 			},
 		},
 		["Dalaran"] = {
 			["Alliance"] = {
-				["Ruffinton"] = {
-				},
-				["Avisar"] = {
-				},
-				["Thorinbane"] = {
-				},
-				["Tinkster"] = {
-				},
-				["Darnastris"] = {
-				},
 			},
 		},
-		["Argent Dawn"] = {
-			["Horde"] = {
-				["Shanyt"] = {
-				},
-				["Tyrannithal"] = {
-				},
-			},
-		},
-	},
-	["removeKOSData"] = {
 		["Zul'jin"] = {
 			["Horde"] = {
 			},
 			["Neutral"] = {
 			},
 		},
-		["Black Dragonflight"] = {
-			["Horde"] = {
-			},
-		},
-		["Dalaran"] = {
-			["Alliance"] = {
-			},
-		},
-		["Argent Dawn"] = {
-			["Horde"] = {
-			},
-		},
 	},
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 740.0001831054688,
@@ -116,7 +120,18 @@ SpyDB = {
 					["x"] = 4,
 				},
 			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Serbitechna - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Thorinbane - Dalaran"] = {
@@ -142,7 +157,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Darnastris - Dalaran"] = {
+		["Tyrannithal - Argent Dawn"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -165,17 +180,10 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["Colors"] = {
-				["Alert"] = {
-					["Stealth Text"] = {
-						["a"] = 1,
-					},
-					["Name Text"] = {
-						["a"] = 1,
-					},
-				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
@@ -195,7 +203,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Tyrannithal - Argent Dawn"] = {
+		["Darnastris - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -234,8 +242,6 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -243,6 +249,8 @@ SpyDB = {
 					},
 				},
 			},
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
@@ -257,9 +265,17 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
@@ -268,9 +284,8 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Shimzo - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {

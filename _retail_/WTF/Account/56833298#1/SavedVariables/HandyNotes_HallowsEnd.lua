@@ -4,6 +4,7 @@ HandyNotes_HallowsEndDB = {
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",

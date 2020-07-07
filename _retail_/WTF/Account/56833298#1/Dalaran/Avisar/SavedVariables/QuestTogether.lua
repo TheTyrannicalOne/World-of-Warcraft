@@ -19,16 +19,32 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
 		[57744] = {
 			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"120/500 Earn Conquest", -- [1]
+				"180/500 Earn Conquest", -- [1]
 			},
 		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[50605] = {
+			["title"] = "Alliance War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[50604] = {
+			["title"] = "Tortollan Seekers",
+			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[56491] = {
@@ -45,17 +61,6 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
 		[57006] = {
 			["title"] = "A Worthy Ally",
 			["objectives"] = {
@@ -64,15 +69,16 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
+			["objectives"] = {
+				"0/1   slain", -- [1]
+			},
+		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
 			},
 		},
 		[39060] = {
@@ -83,10 +89,12 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[56499] = {
+			["title"] = "Storming the Battlefields",
 			["objectives"] = {
-				"1/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"Win a PVP Island Expedition", -- [1]
+				"0/1 Win an Epic Battleground", -- [2]
+				"0/1 Win a Battleground", -- [3]
 			},
 		},
 		[54438] = {
@@ -95,12 +103,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[36615] = {
@@ -110,24 +116,24 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
-			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
-			},
-		},
 		[32806] = {
 			["title"] = "The King and the Council",
 			["objectives"] = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
-		[56499] = {
-			["title"] = "Storming the Battlefields",
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"0/1 Win an Epic Battleground", -- [2]
-				"0/1 Win a Battleground", -- [3]
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[56211] = {
@@ -164,7 +170,7 @@ QuestTogether = {
 		[42483] = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
-				"0/1 Steelscale's Fin", -- [1]
+				"0/1  ", -- [1]
 			},
 		},
 		[31891] = {
@@ -197,8 +203,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

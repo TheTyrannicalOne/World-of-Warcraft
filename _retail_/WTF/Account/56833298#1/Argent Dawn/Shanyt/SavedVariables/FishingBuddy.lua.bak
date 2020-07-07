@@ -20,21 +20,21 @@ FishingBuddy_Player = {
 		["EnhancePools"] = true,
 		["FishingPetBuddies"] = -3,
 		["OverWalking"] = true,
-		["AutoLoot"] = true,
+		["TurnOnSound"] = true,
 		["UseBladeboneHook"] = true,
 		["SpecialBobbers"] = -2,
-		["TurnOnSound"] = true,
-		["AlwaysLure"] = true,
-		["STVTimer"] = true,
-		["EasyLures"] = true,
+		["AutoLoot"] = true,
 		["EnhanceFishingSounds"] = true,
+		["AlwaysLure"] = true,
+		["EasyLures"] = true,
+		["STVTimer"] = true,
 		["MountedCast"] = true,
 	},
 	["WasWearing"] = {
 	},
-	["WatcherLocation"] = {
-	},
 	["Outfit"] = {
+	},
+	["WatcherLocation"] = {
 	},
 	["Version"] = 19500,
 }

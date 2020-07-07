@@ -6,6 +6,11 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
+		["Datgore - Zul'jin"] = {
+			["info"] = {
+				["setup"] = 3,
+			},
+		},
 		["Thorinbane - Dalaran"] = {
 			["info"] = {
 				["setup"] = 5,
@@ -16,9 +21,9 @@ WhisperInviteCoreDB = {
 				["setup"] = 3,
 			},
 		},
-		["Tyrannithal - Argent Dawn"] = {
+		["Darnastris - Dalaran"] = {
 			["info"] = {
-				["setup"] = 2,
+				["setup"] = 5,
 			},
 		},
 		["Ruffinton - Dalaran"] = {
@@ -26,22 +31,22 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Zulbathal - Zul'jin"] = {
-			["info"] = {
-				["setup"] = 5,
-			},
-		},
-		["Datgore - Zul'jin"] = {
+		["Shimzo - Zul'jin"] = {
 			["info"] = {
 				["setup"] = 3,
 			},
 		},
-		["Darnastris - Dalaran"] = {
+		["Serbitechna - Dalaran"] = {
 			["info"] = {
-				["setup"] = 5,
+				["setup"] = 3,
 			},
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Tyrannithal - Argent Dawn"] = {
+			["info"] = {
+				["setup"] = 2,
+			},
+		},
+		["Zulbathal - Zul'jin"] = {
 			["info"] = {
 				["setup"] = 5,
 			},
@@ -56,12 +61,12 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 3,
+				["setup"] = 5,
 			},
 		},
-		["Shimzo - Zul'jin"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["info"] = {
 				["setup"] = 3,
 			},
@@ -79,18 +84,19 @@ WhisperInviteCoreDB = {
 	},
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
 		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 	},

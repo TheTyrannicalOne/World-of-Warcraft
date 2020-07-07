@@ -9,8 +9,7 @@ FishingBuddy_Info = {
 	["DataFish"] = 0,
 	["FishingHoles"] = {
 	},
-	["Settings"] = {
-		["CreateMacro"] = true,
+	["KnownZones"] = {
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
@@ -19,6 +18,7 @@ FishingBuddy_Info = {
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
 	},
-	["KnownZones"] = {
+	["Settings"] = {
+		["CreateMacro"] = true,
 	},
 }

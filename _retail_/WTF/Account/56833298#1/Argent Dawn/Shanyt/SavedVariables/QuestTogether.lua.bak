@@ -1,10 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
+			},
+		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[48288] = {
@@ -20,16 +26,21 @@ QuestTogether = {
 				"Queen Azshara defeated", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
 				"N'Zoth, the Corruptor defeated", -- [1]
+			},
+		},
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
 			},
 		},
 		[56500] = {
@@ -89,6 +100,12 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
 		[50604] = {
 			["title"] = "Tortollan Seekers",
 			["objectives"] = {
@@ -101,16 +118,16 @@ QuestTogether = {
 				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 		[57743] = {
@@ -124,16 +141,6 @@ QuestTogether = {
 			["objectives"] = {
 				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
 				"Blackmane Defeated.", -- [2]
-			},
-		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
-			["objectives"] = {
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
 			},
 		},
 		[24756] = {
@@ -160,10 +167,28 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"0/20 Eternal Ornament", -- [1]
 			},
 		},
 		[31891] = {
@@ -176,36 +201,6 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
-			["objectives"] = {
-				"0/20 Eternal Ornament", -- [1]
-			},
-		},
-		[57157] = {
-			["title"] = "Assault: The Black Empire",
-			["objectives"] = {
-				"0% Drive back N'Zoth's Forces", -- [1]
-			},
-		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
-			},
-		},
 		[45172] = {
 			["title"] = "To Battle!",
 			["objectives"] = {
@@ -216,7 +211,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

@@ -2,10 +2,11 @@
 ## Interface: 80300
 ## X-Min-Interface: 80300
 ## Title: Rarity
-## Version: 1.0 (r697-release-2)
+## Version: 1.0 (r698-release)
 
 ## Notes: Tracks rare drops, including companions and mounts
 ## Notes-ruRU: Примечания
+## Notes-zhCN: 追踪稀有掉落，包括小宠物和坐骑
 ## Notes-frFR: Traque les butins rares, y compris les mascottes et montures
 
 ## LoadManagers: AddonLoader

@@ -1,16 +1,6 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
 		[27465] = {
 			["title"] = "Argent Call: The Noxious Glade",
 			["objectives"] = {
@@ -40,6 +30,16 @@ QuestTogether = {
 				"0/1 Rattlegore slain", -- [1]
 			},
 		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
 		[56491] = {
 			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
@@ -50,12 +50,6 @@ QuestTogether = {
 		[27915] = {
 			["title"] = "The Heart of the Temple",
 			["objectives"] = {
-			},
-		},
-		[53038] = {
-			["title"] = "The Very Best",
-			["objectives"] = {
-				"0/5 Players defeated in pet battle", -- [1]
 			},
 		},
 		[27467] = {
@@ -102,8 +96,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

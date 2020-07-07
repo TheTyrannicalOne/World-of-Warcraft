@@ -118,6 +118,13 @@ X: 161
 Y: 203
 W: 400
 H: 140
+Frame: scanner_button
+FrameLevel: 200
+Anchor: LEFT
+X: 231
+Y: 124
+W: 200
+H: 50
 Frame: RareShare_RareFrame
 FrameLevel: 1
 Anchor: TOP
@@ -153,10 +160,3 @@ X: 0
 Y: 43
 W: 300
 H: 300
-Frame: scanner_button
-FrameLevel: 200
-Anchor: LEFT
-X: 231
-Y: 124
-W: 200
-H: 50

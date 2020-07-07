@@ -1,10 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4  ", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[48288] = {
@@ -20,16 +20,21 @@ QuestTogether = {
 				"Queen Azshara defeated", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
 				"N'Zoth, the Corruptor defeated", -- [1]
+			},
+		},
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
 			},
 		},
 		[56500] = {
@@ -64,11 +69,10 @@ QuestTogether = {
 				"0/4  ", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[44989] = {
@@ -95,16 +99,22 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
 		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4  ", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 		[57743] = {
@@ -118,16 +128,6 @@ QuestTogether = {
 			["objectives"] = {
 				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
 				"Blackmane Defeated.", -- [2]
-			},
-		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
-			["objectives"] = {
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
 			},
 		},
 		[24756] = {
@@ -154,24 +154,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-			},
-		},
-		[48642] = {
-			["title"] = "Argussian Reach",
-			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
-			},
-		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
-			},
-		},
 		[45172] = {
 			["title"] = "To Battle!",
 			["objectives"] = {
@@ -190,10 +172,23 @@ QuestTogether = {
 				"0/20  ", -- [1]
 			},
 		},
-		[57157] = {
-			["title"] = "Assault: The Black Empire",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0% Drive back N'Zoth's Forces", -- [1]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+		[50603] = {
+			["title"] = "Voldunai",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4  ", -- [1]
 			},
 		},
 		[31891] = {
@@ -206,17 +201,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[45383] = {
+		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4  ", -- [1]
+				"0/4  ", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

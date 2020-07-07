@@ -1,57 +1,45 @@
 
 MasterPlanAG = {
-	["Zul'jin"] = {
-		["Vancard"] = {
-			["class"] = "MAGE",
-			["faction"] = "Horde",
-		},
-		["Datgore"] = {
-			["class"] = "HUNTER",
-			["faction"] = "Horde",
-		},
-		["Zulbathal"] = {
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["lastCacheTime"] = 1590006006,
 			["summary"] = {
+				["lastOilTime"] = 1590000294,
+				["ti2"] = 122486,
 				["inProgress"] = {
-					[189] = 1589937721,
-					[151] = 1589936833,
-					[155] = 1589938626,
-					[371] = 1589964003,
-					[153] = 1589938628,
-					[150] = 1589938631,
-					[186] = 1589938623,
+					[584] = 1590017694,
+					[263] = 1590025487,
+					[674] = 1590014680,
+					[564] = 1590017700,
+					[538] = 1590014698,
+					[575] = 1590046906,
+					[394] = 1590029068,
+					[539] = 1590017698,
 				},
+				["ti3"] = 127855,
+				["tt1"] = 1589554471,
+				["ti1"] = 118531,
+				["tt3"] = 1589210986,
+				["tt2"] = 1589692238,
 			},
 			["faction"] = "Horde",
-			["lastCacheTime"] = 1589928051,
-			["curRes"] = 1549,
-			["class"] = "DRUID",
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 3559,
+			["curOil"] = 88070,
 		},
-		["Kotalkhan"] = {
-			["class"] = "MONK",
+		["Tyrannithal"] = {
 			["faction"] = "Horde",
-		},
-		["Shimzo"] = {
-			["class"] = "ROGUE",
-			["faction"] = "Horde",
-		},
-		["Shaekhan"] = {
-			["faction"] = "Neutral",
-			["class"] = "MONK",
-		},
-		["Fantastiburo"] = {
-			["faction"] = "Horde",
-			["class"] = "SHAMAN",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["class"] = "DRUID",
-			["faction"] = "Horde",
+			["class"] = "DEMONHUNTER",
 		},
 	},
 	["Dalaran"] = {
 		["Ruffinton"] = {
 			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
 			["faction"] = "Alliance",
 		},
 		["Avisar"] = {
@@ -71,44 +59,60 @@ MasterPlanAG = {
 			["class"] = "WARRIOR",
 		},
 		["Tinkster"] = {
-			["class"] = "WARLOCK",
 			["faction"] = "Alliance",
+			["class"] = "WARLOCK",
 		},
 		["Darnastris"] = {
 			["class"] = "MAGE",
 			["faction"] = "Alliance",
 		},
 	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["curOil"] = 88070,
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
+		},
+	},
+	["Zul'jin"] = {
+		["Vancard"] = {
+			["faction"] = "Horde",
+			["class"] = "MAGE",
+		},
+		["Datgore"] = {
+			["faction"] = "Horde",
+			["class"] = "HUNTER",
+		},
+		["Zulbathal"] = {
 			["summary"] = {
-				["lastOilTime"] = 1590000294,
-				["tt2"] = 1589692238,
-				["tt3"] = 1589210986,
-				["ti1"] = 118531,
-				["tt1"] = 1589554471,
-				["ti3"] = 127855,
 				["inProgress"] = {
-					[539] = 1590017698,
-					[263] = 1590025487,
-					[674] = 1590014680,
-					[564] = 1590017700,
-					[538] = 1590014698,
-					[575] = 1590046906,
-					[584] = 1590017694,
-					[394] = 1590029068,
+					[189] = 1589937721,
+					[151] = 1589936833,
+					[155] = 1589938626,
+					[371] = 1589964003,
+					[153] = 1589938628,
+					[150] = 1589938631,
+					[186] = 1589938623,
 				},
-				["ti2"] = 122486,
 			},
 			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1590006006,
-			["curRes"] = 3559,
-			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1589928051,
+			["curRes"] = 1549,
+			["class"] = "DRUID",
 		},
-		["Tyrannithal"] = {
-			["class"] = "DEMONHUNTER",
+		["Kotalkhan"] = {
+			["faction"] = "Horde",
+			["class"] = "MONK",
+		},
+		["Shaekhan"] = {
+			["class"] = "MONK",
+			["faction"] = "Neutral",
+		},
+		["Shimzo"] = {
+			["faction"] = "Horde",
+			["class"] = "ROGUE",
+		},
+		["Fantastiburo"] = {
+			["class"] = "SHAMAN",
 			["faction"] = "Horde",
 		},
 	},
