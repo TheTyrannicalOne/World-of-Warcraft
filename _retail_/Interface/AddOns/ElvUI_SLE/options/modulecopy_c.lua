@@ -110,34 +110,6 @@ local function CreateDatatbarsConfig()
 
 	return config
 end
-local function CreateDatatextsConfig()
-	local config = MC:CreateModuleConfigGroup(L["DataTexts"], "datatexts", "sle")
-	for i = 1, 8 do
-		config.args["panel"..i] = {
-			order = 1 + i,
-			type = "toggle",
-			name = L["SLE_DataPanel_"..i],
-			get = function(info) return E.global.profileCopy.sle.datatexts[ info[#info] ] end,
-			set = function(info, value) E.global.profileCopy.sle.datatexts[ info[#info] ] = value; end
-		}
-	end
-	config.args.leftchat = {
-		order = 10,
-		type = "toggle",
-		name = L["leftchat"],
-		get = function(info) return E.global.profileCopy.sle.datatexts[ info[#info] ] end,
-		set = function(info, value) E.global.profileCopy.sle.datatexts[ info[#info] ] = value; end
-	}
-	config.args.rightchat = {
-		order = 11,
-		type = "toggle",
-		name = L["rightchat"],
-		get = function(info) return E.global.profileCopy.sle.datatexts[ info[#info] ] end,
-		set = function(info, value) E.global.profileCopy.sle.datatexts[ info[#info] ] = value; end
-	}
-
-	return config
-end
 local function CreateSLEDatatextsConfig()
 	local config = MC:CreateModuleConfigGroup(L["S&L Datatexts"], "dt", "sle")
 	config.args.friends = {
@@ -159,13 +131,6 @@ local function CreateSLEDatatextsConfig()
 		order = 4,
 		type = "toggle",
 		name = L["S&L Mail"],
-		get = function(info) return E.global.profileCopy.sle.dt[ info[#info] ] end,
-		set = function(info, value) E.global.profileCopy.sle.dt[ info[#info] ] = value; end
-	}
-	config.args.durability = {
-		order = 5,
-		type = "toggle",
-		name = DURABILITY,
 		get = function(info) return E.global.profileCopy.sle.dt[ info[#info] ] end,
 		set = function(info, value) E.global.profileCopy.sle.dt[ info[#info] ] = value; end
 	}
@@ -257,14 +222,14 @@ local function CreateMinimapConfig()
 	config.args.coords = {
 		order = 2,
 		type = "toggle",
-		name = L["Minimap Coordinates"],
+		name = L["Coordinates"],
 		get = function(info) return E.global.profileCopy.sle.minimap[ info[#info] ] end,
 		set = function(info, value) E.global.profileCopy.sle.minimap[ info[#info] ] = value; end
 	}
 	config.args.mapicons = {
 		order = 3,
 		type = "toggle",
-		name = L["Minimap Coordinates"],
+		name = L["Minimap Buttons"],
 		get = function(info) return E.global.profileCopy.sle.minimap[ info[#info] ] end,
 		set = function(info, value) E.global.profileCopy.sle.minimap[ info[#info] ] = value; end
 	}
@@ -369,20 +334,17 @@ end
 
 local function configTable()
 	if not E.Options.args.modulecontrol then return end
+	local ACH = E.Libs.ACH
 	MC = E:GetModule('ModuleCopy')
 
 	E.Options.args.modulecontrol.args.modulecopy.args.sle = {
-		order = 11,
+		order = 30,
 		type = 'group',
 		name = SLE.Title,
 		childGroups = "tab",
-		disabled = E.Options.args.profiles.args.copyfrom.disabled,
+		-- disabled = E.Options.args.profiles.args.profile.args.copyfrom.disabled,
 		args = {
-			header = {
-				order = 0,
-				type = "header",
-				name = L["|cff9482c9Shadow & Light|r options"],
-			},
+			header = ACH:Header(L["|cff9482c9Shadow & Light|r options"], 0),
 			actionbar = MC:CreateModuleConfigGroup(L["ActionBars"], "actionbars", "sle"),
 			armory = CreateArmory(),
 			backgrounds = CreateBackgrounds(),
@@ -390,7 +352,6 @@ local function configTable()
 			blizzard = MC:CreateModuleConfigGroup("Blizzard", "blizzard", "sle"),
 			chat = CreateChat(),
 			databars = CreateDatatbarsConfig(),
-			datatexts = CreateDatatextsConfig(),
 			dt = CreateSLEDatatextsConfig(),
 			legacy = CreateLegacyConfig(),
 			lfr = MC:CreateModuleConfigGroup(RAID_FINDER, "lfr", "sle"),
@@ -412,4 +373,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

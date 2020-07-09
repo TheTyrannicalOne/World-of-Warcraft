@@ -1,8 +1,12 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local C = SLE:GetModule("Chat")
+
 local NONE, INVITE = NONE, INVITE
+
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
+
 	local function CreateJustify(i)
 		local config = {
 			order = i + 1,
@@ -26,36 +30,14 @@ local function configTable()
 		childGroups = 'tab',
 		disabled = function() return not E.private.chat.enable end,
 		args = {
-			header = { order = 1, type = "header", name = L["Chat"] },
-			editreset = {
-				order = 3, type = 'execute',
-				name = L["Reset Editbox History"], desc = L["Clears the editbox history and will reload your UI."],
-				func = function() E:StaticPopup_Show("SLE_EDIT_HISTORY_CLEAR") end,
-			},
-			header2 = { order = 4, type = "description", name = "" },
+			header = ACH:Header(L["Chat"], 1),
+			spacer1 = ACH:Spacer(4),
 			guildmaster = {
 				order = 5, type = "toggle",
 				name = L["Guild Master Icon"],
 				desc = L["Displays an icon near your Guild Master in chat.\n\n|cffFF0000Note:|r Some messages in chat history may disappear on login."],
 				get = function(info) return E.db.sle.chat.guildmaster end,
 				set = function(info, value)	E.db.sle.chat.guildmaster = value; C:GMIconUpdate() end,
-			},
-			editboxhistory = {
-				order = 6, type = "range",
-				name = L["Chat Editbox History"],
-				desc = L["The amount of messages to save in the editbox history.\n\n|cffFF0000Note:|r To disable, set to 0."],
-				min = 5, max = 50, step = 1,
-				get = function(info) return E.db.sle.chat.editboxhistory end,
-				set = function(info, value) E.db.sle.chat.editboxhistory = value; end,
-			},
-			chatMax = {
-				order = 7, type = "range",
-				name = L["Chat Max Messages"],
-				desc = L["The amount of messages to save in chat window.\n\n|cffFF0000Warning:|r Can increase the amount of memory needed. Also changing this setting will clear the chat in all windows, leaving just lines saved in chat history."],
-				min = 10, max = 5000, step = 1,
-				disabled = function() return not E.private.chat.enable or SLE._Compatibility["ElvUI_CustomTweaks"] end,
-				get = function(info) return E.private.sle.chat.chatMax end,
-				set = function(info, value) E.private.sle.chat.chatMax = value; C:UpdateChatMax() end,
 			},
 			dpsSpam = {
 				order = 8, type = "toggle",
@@ -182,4 +164,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

@@ -33,20 +33,20 @@ MJEGlobalSettings = {
 		},
 		["source"] = {
 			["Black Market"] = true,
-			["Reputation"] = true,
-			["Vendor"] = true,
 			["Instance"] = true,
-			["Class"] = true,
+			["Vendor"] = true,
+			["Reputation"] = true,
+			["PVP"] = true,
 			["Promotion"] = true,
 			["World Event"] = true,
-			["Achievement"] = true,
+			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Garrison"] = true,
-			["Profession"] = true,
 			["Drop"] = true,
-			["Island Expedition"] = true,
+			["Profession"] = true,
+			["Achievement"] = true,
 			["Quest"] = true,
-			["PVP"] = true,
+			["Class"] = true,
 		},
 		["notCollected"] = true,
 		["mountType"] = {
@@ -64,6 +64,8 @@ MJEGlobalSettings = {
 			["alliance"] = true,
 			["noFaction"] = true,
 		},
+		["onlyTradable"] = false,
+		["collected"] = true,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -75,15 +77,15 @@ MJEGlobalSettings = {
 				["Discs"] = true,
 				["Kites"] = true,
 				["Jet Aerial Units"] = true,
-				["Carpets"] = true,
+				["Mechanical Animals"] = true,
 				["Rockets"] = true,
-				["Gyrocopters"] = true,
+				["Assault Wagons"] = true,
 				["Mechanostriders"] = true,
 				["Spider Tanks"] = true,
 				["Motorcycles"] = true,
-				["Mechanical Animals"] = true,
+				["Carpets"] = true,
 				["Airships"] = true,
-				["Assault Wagons"] = true,
+				["Gyrocopters"] = true,
 				["Hovercraft"] = true,
 				["Airplanes"] = true,
 			},
@@ -166,17 +168,6 @@ MJEGlobalSettings = {
 				["Ruinstriders"] = true,
 				["Goats"] = true,
 			},
-			["Crabs"] = true,
-			["Reptiles"] = {
-				["Snapdragons"] = true,
-				["Turtles"] = true,
-				["Crocolisks"] = true,
-				["Kodos"] = true,
-				["Basilisks"] = true,
-				["Mushan"] = true,
-				["Sea Serpents"] = true,
-				["N'Zoth Serpents"] = true,
-			},
 			["Ungulates"] = {
 				["Alpacas"] = true,
 				["Boars"] = true,
@@ -187,8 +178,23 @@ MJEGlobalSettings = {
 				["Moose"] = true,
 				["Mammoths"] = true,
 			},
+			["Reptiles"] = {
+				["Snapdragons"] = true,
+				["Turtles"] = true,
+				["Crocolisks"] = true,
+				["Kodos"] = true,
+				["Basilisks"] = true,
+				["Mushan"] = true,
+				["Sea Serpents"] = true,
+				["N'Zoth Serpents"] = true,
+			},
+			["Crabs"] = true,
 			["Jellyfish"] = true,
 			["Rats"] = true,
+			["Amphibian"] = {
+				["Crawgs"] = true,
+				["Toads"] = true,
+			},
 			["Elementals"] = {
 				["Sabers"] = true,
 				["Elementals"] = true,
@@ -196,10 +202,6 @@ MJEGlobalSettings = {
 				["Phoenixes"] = true,
 				["Core Hounds"] = true,
 				["Stone Drakes"] = true,
-			},
-			["Amphibian"] = {
-				["Crawgs"] = true,
-				["Toads"] = true,
 			},
 			["Insects"] = {
 				["Water Striders"] = true,
@@ -235,8 +237,6 @@ MJEGlobalSettings = {
 			},
 			["Bats"] = true,
 		},
-		["collected"] = true,
-		["onlyTradable"] = false,
 		["hidden"] = false,
 	},
 	["personalHiddenMounts"] = false,
@@ -701,10 +701,10 @@ MJETrackingData = {
 		1587660271, -- [5]
 	},
 	[382] = {
-		5579, -- [1]
-		1594047005, -- [2]
-		240637, -- [3]
-		2774153.379099694, -- [4]
+		5584, -- [1]
+		1594211745, -- [2]
+		240708, -- [3]
+		2775188.737524588, -- [4]
 		1394640000, -- [5]
 	},
 	[1329] = {
@@ -868,11 +868,12 @@ MJETrackingData = {
 		146, -- [3]
 		1017.400767249152, -- [4]
 	},
-	[1208] = {
-		12, -- [1]
-		1592405042, -- [2]
-		116, -- [3]
-		917.2457868090013, -- [4]
+	[606] = {
+		7, -- [1]
+		1590167403, -- [2]
+		129, -- [3]
+		953.0145185551189, -- [4]
+		1418835600, -- [5]
 	},
 	[1224] = {
 		24, -- [1]
@@ -1055,12 +1056,11 @@ MJETrackingData = {
 		47, -- [3]
 		564.3971722793211, -- [4]
 	},
-	[69] = {
-		10, -- [1]
-		1590507929, -- [2]
-		69, -- [3]
-		366.8816039701814, -- [4]
-		1381161600, -- [5]
+	[546] = {
+		3, -- [1]
+		1588771809, -- [2]
+		38, -- [3]
+		109.9462777957991, -- [4]
 	},
 	[867] = {
 		9, -- [1]
@@ -1173,11 +1173,12 @@ MJETrackingData = {
 		203, -- [3]
 		1885.503754752414, -- [4]
 	},
-	[546] = {
-		3, -- [1]
-		1588771809, -- [2]
-		38, -- [3]
-		109.9462777957991, -- [4]
+	[69] = {
+		10, -- [1]
+		1590507929, -- [2]
+		69, -- [3]
+		366.8816039701814, -- [4]
+		1381161600, -- [5]
 	},
 	[449] = {
 		12, -- [1]
@@ -1273,12 +1274,11 @@ MJETrackingData = {
 		104, -- [3]
 		702.6734149219373, -- [4]
 	},
-	[606] = {
-		7, -- [1]
-		1590167403, -- [2]
-		129, -- [3]
-		953.0145185551189, -- [4]
-		1418835600, -- [5]
+	[1208] = {
+		12, -- [1]
+		1592405042, -- [2]
+		116, -- [3]
+		917.2457868090013, -- [4]
 	},
 	[678] = {
 		3, -- [1]

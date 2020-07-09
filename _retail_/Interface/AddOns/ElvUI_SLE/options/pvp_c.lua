@@ -1,26 +1,19 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+
 local PVP = PVP
-local HONORABLE_KILLS = HONORABLE_KILLS
-local RANK = RANK
 local DUEL, PET_BATTLE_PVP_DUEL = DUEL, PET_BATTLE_PVP_DUEL
-local PvP = SLE:GetModule("PVP")
+
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
+
 	E.Options.args.sle.args.modules.args.pvp = {
 		type = "group",
 		name = PVP,
 		order = 1,
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = PVP,
-			},
-			intro = {
-				order = 2,
-				type = "description",
-				name = L["Functions dedicated to player versus player modes."],
-			},
+			header = ACH:Header(PVP, 1),
+			desc = ACH:Description(L["Functions dedicated to player versus player modes."], 2),
 			autorelease = {
 				type = "group",
 				name = L["PvP Auto Release"],
@@ -102,4 +95,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

@@ -7,12 +7,6 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
-			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
-			},
-		},
 		[48288] = {
 			["title"] = "Antoran High Command",
 			["objectives"] = {
@@ -75,11 +69,10 @@ QuestTogether = {
 				"0/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[44989] = {
@@ -98,12 +91,6 @@ QuestTogether = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[50604] = {
@@ -173,6 +160,13 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
 		[49032] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
@@ -183,6 +177,12 @@ QuestTogether = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[50603] = {
+			["title"] = "Voldunai",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[56352] = {
@@ -211,7 +211,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

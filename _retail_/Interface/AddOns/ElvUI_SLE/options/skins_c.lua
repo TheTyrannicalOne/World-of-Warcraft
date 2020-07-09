@@ -1,24 +1,19 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local Sk = SLE:GetModule("Skins")
 
+local IsAddOnLoaded = IsAddOnLoaded
+
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
 	E.Options.args.sle.args.skins = {
 		order = 30,
 		type = "group",
 		name = L["Skins"],
 		childGroups = 'tab',
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = L["Skins"],
-			},
-			info = {
-				order = 2,
-				type = "description",
-				name = L["SLE_SKINS_DESC"],
-			},
+			header = ACH:Header(L["Skins"], 1),
+			desc = ACH:Description(L["SLE_SKINS_DESC"], 2),
 			GoToSkins = {
 				order = 2,
 				type = "execute",
@@ -38,16 +33,8 @@ local function configTable()
 						name = L["Enable"],
 						disabled = function() return not E.private.skins.blizzard.enable or not E.private.skins.blizzard.objectiveTracker end,
 					},
-					space1 = {
-						order = 3,
-						type = "description",
-						name = "",
-					},
-					space2 = {
-						order = 3,
-						type = "description",
-						name = "",
-					},
+					spacer1 = ACH:Spacer(23),
+					spacer2 = ACH:Spacer(3),
 					texture = {
 						order = 3,
 						type = "select", dialogControl = "LSM30_Statusbar",
@@ -79,11 +66,7 @@ local function configTable()
 						name = L["Class Colored Statusbars"],
 						disabled = function() return not E.private.sle.skins.objectiveTracker.enable or not E.private.skins.blizzard.enable or not E.private.skins.blizzard.objectiveTracker end,
 					},
-					space3 = {
-						order = 6,
-						type = "description",
-						name = "",
-					},
+					spacer3 = ACH:Spacer(6),
 					underline = {
 						order = 7,
 						type = "toggle",
@@ -125,16 +108,8 @@ local function configTable()
 						min = 1, max = 10, step = 1,
 						disabled = function() return not E.private.sle.skins.objectiveTracker.enable or not E.private.skins.blizzard.enable or not E.private.skins.blizzard.objectiveTracker end,
 					},
-					space4 = {
-						order = 11,
-						type = "description",
-						name = "",
-					},
-					space5 = {
-						order = 12,
-						type = "description",
-						name = "",
-					},
+					spacer4 = ACH:Spacer(11),
+					spacer5 = ACH:Spacer(12),
 					colorHeader = {
 						type = 'color',
 						order = 13,
@@ -293,7 +268,7 @@ local function configTable()
 		},
 	}
 
-	if T.IsAddOnLoaded("QuestGuru") then
+	if IsAddOnLoaded("QuestGuru") then
 		E.Options.args.sle.args.skins.args.QuestGuru = {
 			order = 12,
 			type = "group",
@@ -316,4 +291,4 @@ local function configTable()
 	end
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

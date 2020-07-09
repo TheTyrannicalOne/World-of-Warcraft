@@ -1,11 +1,10 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local PI = E:GetModule("PluginInstaller")
-PI.SLE_Auth = ""
-PI.SLE_Word = ""
-local locale = GetLocale()
 
 --GLOBALS: SkadaDB, Skada, xCTSavedDB, xCT_Plus, UIParent
 local _G = _G
+local format = format
+local IsAddOnLoaded = IsAddOnLoaded
 local ENABLE, DISABLE, NONE = ENABLE, DISABLE, NONE
 local ADDONS = ADDONS
 local SetCVar = SetCVar
@@ -15,6 +14,9 @@ local GetCVarBool, StopMusic, ReloadUI = GetCVarBool, StopMusic, ReloadUI
 
 local dtbarsList = {}
 local dtbarsTexts = {}
+
+PI.SLE_Auth = ""
+PI.SLE_Word = ""
 
 local function DarthHeal()
 	E.db["unitframe"]["units"]["raid"]["health"]["frequentUpdates"] = true
@@ -38,10 +40,10 @@ function PI:DarthSetup()
 	local installMark = E.private["install_complete"]
 	local installMarkSLE = E.private["sle"]["install_complete"]
 
-	if T.IsAddOnLoaded("ElvUI_DTBars2") then
-		T.twipe(dtbarsList)
-		T.twipe(dtbarsTexts)
-		for name, data in T.pairs(E.global.dtbars) do
+	if IsAddOnLoaded("ElvUI_DTBars2") then
+		wipe(dtbarsList)
+		wipe(dtbarsTexts)
+		for name, data in pairs(E.global.dtbars) do
 			if E.db.dtbars and E.db.dtbars[name] then
 				dtbarsList[name] = E.db.dtbars[name]
 				dtbarsTexts[name] = E.db.datatexts.panels[name]
@@ -49,15 +51,15 @@ function PI:DarthSetup()
 		end
 	end
 
-	T.twipe(E.db)
+	wipe(E.db)
 	E:CopyTable(E.db, P)
 
-	T.twipe(E.private)
+	wipe(E.private)
 	E:CopyTable(E.private, V)
 
 	E:ResetMovers("")
 	if not E.db["movers"] then E.db["movers"] = {} end
-	-- if E.db['movers'] then T.twipe(E.db['movers']) else E.db['movers'] = {} end
+	-- if E.db['movers'] then wipe(E.db['movers']) else E.db['movers'] = {} end
 
 	--General
 	do
@@ -221,29 +223,29 @@ function PI:DarthSetup()
 		E.db["datatexts"]["fontOutline"] = "OUTLINE"
 		E.db["datatexts"]["noCombatHover"] = true
 
-		E.db["datatexts"]["panels"]["SLE_DataPanel_7"] = "System"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_7"] = "System"
 
-		E.db["datatexts"]["panels"]["RightChatDataPanel"]["right"] = "Talent/Loot Specialization"
-		E.db["datatexts"]["panels"]["RightChatDataPanel"]["left"] = "Mastery"
-		E.db["datatexts"]["panels"]["RightChatDataPanel"]["middle"] = "S&L Item Level"
+		E.db["datatexts"]["panels"]["RightChatDataPanel"][1] = "Mastery"
+		E.db["datatexts"]["panels"]["RightChatDataPanel"][2] = "S&L Item Level"
+		E.db["datatexts"]["panels"]["RightChatDataPanel"][3] = "Talent/Loot Specialization"
 
-		E.db["datatexts"]["panels"]["LeftChatDataPanel"]["left"] = "Combat/Arena Time"
-		E.db["datatexts"]["panels"]["LeftChatDataPanel"]["right"] = "S&L Guild"
+		E.db["datatexts"]["panels"]["LeftChatDataPanel"][1] = "Combat/Arena Time"
+		E.db["datatexts"]["panels"]["LeftChatDataPanel"][3] = "S&L Guild"
 
-		E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["right"] = "Bags"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["left"] = "S&L Friends"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["middle"] = "S&L Currency"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["right"] = "Bags"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["left"] = "S&L Friends"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["middle"] = "S&L Currency"
 
-		E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["right"] = "Haste"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Spell/Heal Power"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["middle"] = "Crit Chance"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["right"] = "Haste"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Spell/Heal Power"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["middle"] = "Crit Chance"
 
-		E.db["datatexts"]["panels"]["LeftMiniPanel"] = "S&L Time Played"
-		E.db["datatexts"]["panels"]["RightMiniPanel"] = "Time"
+		E.db["datatexts"]["panels"]["MinimapPanel"][1] = "S&L Time Played"
+		E.db["datatexts"]["panels"]["MinimapPanel"][2] = "Time"
 
-		if T.IsAddOnLoaded("ElvUI_DTBars2") then
+		if IsAddOnLoaded("ElvUI_DTBars2") then
 			if not E.db.dtbars then E.db.dtbars = {} end
-			for name, data in T.pairs(E.global.dtbars) do
+			for name, data in pairs(E.global.dtbars) do
 				if dtbarsList[name] then
 					E.db.dtbars[name] = dtbarsList[name]
 					E.db.datatexts.panels[name] = dtbarsTexts[name]
@@ -587,7 +589,7 @@ function PI:DarthSetup()
 		E.db["sle"]["armory"]["stats"]["IlvlColor"] = true
 		E.db["sle"]["armory"]["stats"]["IlvlFull"] = true
 
-		E.db["sle"]["chat"]["tab"]["select"] = true
+		-- E.db["sle"]["chat"]["tab"]["select"] = true
 		E.db["sle"]["chat"]["dpsSpam"] = true
 
 		E.db["sle"]["loot"]["autoroll"]["autoconfirm"] = true
@@ -624,21 +626,21 @@ function PI:DarthSetup()
 		E.db["sle"]["dt"]["durability"]["threshold"] = 30
 		E.db["sle"]["dt"]["durability"]["gradient"] = true
 
-		E.db["sle"]["datatexts"]["chathandle"] = true
-		E.db["sle"]["datatexts"]["leftchat"]["width"] = 458
-		E.db["sle"]["datatexts"]["panel7"]["enabled"] = true
-		E.db["sle"]["datatexts"]["panel7"]["pethide"] = false
-		E.db["sle"]["datatexts"]["panel7"]["width"] = 253
-		E.db["sle"]["datatexts"]["panel7"]["transparent"] = true
-		E.db["sle"]["datatexts"]["panel6"]["enabled"] = true
-		E.db["sle"]["datatexts"]["panel6"]["pethide"] = false
-		E.db["sle"]["datatexts"]["panel6"]["width"] = 470
-		E.db["sle"]["datatexts"]["panel6"]["transparent"] = true
-		E.db["sle"]["datatexts"]["rightchat"]["width"] = 458
-		E.db["sle"]["datatexts"]["panel8"]["enabled"] = true
-		E.db["sle"]["datatexts"]["panel8"]["pethide"] = false
-		E.db["sle"]["datatexts"]["panel8"]["width"] = 470
-		E.db["sle"]["datatexts"]["panel8"]["transparent"] = true
+		-- E.db["sle"]["datatexts"]["chathandle"] = true
+		-- E.db["sle"]["datatexts"]["leftchat"]["width"] = 458
+		-- E.db["sle"]["datatexts"]["panel7"]["enabled"] = true
+		-- E.db["sle"]["datatexts"]["panel7"]["pethide"] = false
+		-- E.db["sle"]["datatexts"]["panel7"]["width"] = 253
+		-- E.db["sle"]["datatexts"]["panel7"]["transparent"] = true
+		-- E.db["sle"]["datatexts"]["panel6"]["enabled"] = true
+		-- E.db["sle"]["datatexts"]["panel6"]["pethide"] = false
+		-- E.db["sle"]["datatexts"]["panel6"]["width"] = 470
+		-- E.db["sle"]["datatexts"]["panel6"]["transparent"] = true
+		-- E.db["sle"]["datatexts"]["rightchat"]["width"] = 458
+		-- E.db["sle"]["datatexts"]["panel8"]["enabled"] = true
+		-- E.db["sle"]["datatexts"]["panel8"]["pethide"] = false
+		-- E.db["sle"]["datatexts"]["panel8"]["width"] = 470
+		-- E.db["sle"]["datatexts"]["panel8"]["transparent"] = true
 
 		E.db["sle"]["nameplates"]["targetcount"]["enable"] = true
 		E.db["sle"]["nameplates"]["threat"]["enable"] = true
@@ -708,7 +710,7 @@ function PI:DarthSetup()
 		E.db["movers"]["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,1,0"
 	end
 
-	if T.IsAddOnLoaded("ElvUI_AuraBarsMovers") then
+	if IsAddOnLoaded("ElvUI_AuraBarsMovers") then
 		E.db["abm"]["target"] = true
 		E.db["abm"]["player"] = true
 		E.db["abm"]["playerw"] = 180
@@ -717,8 +719,8 @@ function PI:DarthSetup()
 		E.db["movers"]["ElvUF_TargetAuraMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-481,397"
 	end
 
-	if T.IsAddOnLoaded("AddOnSkins") then
-		local AS = T.unpack(_G["AddOnSkins"]) or nil
+	if IsAddOnLoaded("AddOnSkins") then
+		local AS = unpack(_G["AddOnSkins"]) or nil
 		if AS then
 			AS.db["Blizzard_AbilityButton"] = true
 			AS.db["EmbedRight"] = "Details"
@@ -746,8 +748,8 @@ function PI:DarthSetup()
 	E.private["sle"]["skins"]["merchant"]["style"] = "List"
 	E.private["sle"]["equip"]["setoverlay"] = true
 	E.private["sle"]["minimap"]["mapicons"]["enable"] = true
-	E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_GUILD_ACHIEVEMENT"] = false
-	E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_EMOTE"] = false
+	-- E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_GUILD_ACHIEVEMENT"] = false
+	-- E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_EMOTE"] = false
 	E.private["sle"]["uibuttons"]["style"] = "dropdown"
 
 	E.global["general"]["commandBarSetting"] = "DISABLED"
@@ -759,15 +761,15 @@ function PI:DarthSetup()
 	if layout then
 		if layout == 'tank' then
 			E.db["nameplates"]["threat"]["beingTankedByTank"] = true
-			E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Avoidance"
-			E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["middle"] = "Versatility"
+			-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Avoidance"
+			-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["middle"] = "Versatility"
 			E.db["unitframe"]["units"]["raid"]["power"]["enable"] = true
 			E.db["sle"]["armory"]["stats"]["List"]["SPELLPOWER"] = false
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_DAMAGE"] = true
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_AP"] = true
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_ATTACKSPEED"] = true
 		elseif layout == 'dpsMelee' then
-			E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Attack Power"
+			-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Attack Power"
 			E.db["sle"]["armory"]["stats"]["List"]["SPELLPOWER"] = false
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_DAMAGE"] = true
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_AP"] = true
@@ -787,7 +789,7 @@ function PI:DarthSetup()
 
 	E:StaggeredUpdateAll(nil, true)
 
-	_G["PluginInstallStepComplete"].message = L["Darth's Default Set"]..": "..(PI.SLE_Word == NONE and L['Caster DPS'] or PI.SLE_Word)
+	_G["PluginInstallStepComplete"].message = L["Darth's Default Set"]..": "..(PI.SLE_Word == NONE and L["Caster DPS"] or PI.SLE_Word)
 	_G["PluginInstallStepComplete"]:Show()
 end
 
@@ -796,10 +798,10 @@ function PI:DarthOldSetup()
 	local installMark = E.private["install_complete"]
 	local installMarkSLE = E.private["sle"]["install_complete"]
 
-	if T.IsAddOnLoaded("ElvUI_DTBars2") then
-		T.twipe(dtbarsList)
-		T.twipe(dtbarsTexts)
-		for name, data in T.pairs(E.global.dtbars) do
+	if IsAddOnLoaded("ElvUI_DTBars2") then
+		wipe(dtbarsList)
+		wipe(dtbarsTexts)
+		for name, data in pairs(E.global.dtbars) do
 			if E.db.dtbars and E.db.dtbars[name] then
 				dtbarsList[name] = E.db.dtbars[name]
 				dtbarsTexts[name] = E.db.datatexts.panels[name]
@@ -807,13 +809,13 @@ function PI:DarthOldSetup()
 		end
 	end
 
-	T.twipe(E.db)
+	wipe(E.db)
 	E:CopyTable(E.db, P)
 
-	T.twipe(E.private)
+	wipe(E.private)
 	E:CopyTable(E.private, V)
 
-	-- if E.db['movers'] then T.twipe(E.db['movers']) else E.db['movers'] = {} end
+	-- if E.db['movers'] then tremove(E.db['movers']) else E.db['movers'] = {} end
 	E:ResetMovers("")
 	if not E.db["movers"] then E.db["movers"] = {} end
 
@@ -956,23 +958,23 @@ function PI:DarthOldSetup()
 		E.db["datatexts"]["fontOutline"] = "OUTLINE"
 		E.db["datatexts"]["panelTransparency"] = true
 		E.db["datatexts"]["time24"] = true
-		E.db["datatexts"]["panels"]["SLE_DataPanel_7"] = "System"
-		E.db["datatexts"]["panels"]["RightChatDataPanel"]["right"] = "Talent/Loot Specialization"
-		E.db["datatexts"]["panels"]["RightChatDataPanel"]["left"] = "Mastery"
-		E.db["datatexts"]["panels"]["RightChatDataPanel"]["middle"] = "S&L Item Level"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["right"] = "Bags"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["left"] = "S&L Friends"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["middle"] = "S&L Currency"
-		E.db["datatexts"]["panels"]["LeftChatDataPanel"]["left"] = "Combat/Arena Time"
-		E.db["datatexts"]["panels"]["LeftChatDataPanel"]["right"] = "S&L Guild"
-		E.db["datatexts"]["panels"]["RightMiniPanel"] = "Time"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["right"] = "Haste"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Spell/Heal Power"
-		E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["middle"] = "Crit Chance"
-		E.db["datatexts"]["panels"]["LeftMiniPanel"] = "S&L Time Played"
-		if T.IsAddOnLoaded("ElvUI_DTBars2") then
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_7"] = "System"
+		E.db["datatexts"]["panels"]["RightChatDataPanel"][1] = "Mastery"
+		E.db["datatexts"]["panels"]["RightChatDataPanel"][2] = "S&L Item Level"
+		E.db["datatexts"]["panels"]["RightChatDataPanel"][3] = "Talent/Loot Specialization"
+		E.db["datatexts"]["panels"]["LeftChatDataPanel"][1] = "Combat/Arena Time"
+		E.db["datatexts"]["panels"]["LeftChatDataPanel"][3] = "S&L Guild"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["left"] = "S&L Friends"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["middle"] = "S&L Currency"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_6"]["right"] = "Bags"
+		E.db["datatexts"]["panels"]["MinimapPanel"][1] = "S&L Time Played"
+		E.db["datatexts"]["panels"]["MinimapPanel"][2] = "Time"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["right"] = "Haste"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Spell/Heal Power"
+		-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["middle"] = "Crit Chance"
+		if IsAddOnLoaded("ElvUI_DTBars2") then
 			if not E.db.dtbars then E.db.dtbars = {} end
-			for name, data in T.pairs(E.global.dtbars) do
+			for name, data in pairs(E.global.dtbars) do
 				if dtbarsList[name] then
 					E.db.dtbars[name] = dtbarsList[name]
 					E.db.datatexts.panels[name] = dtbarsTexts[name]
@@ -983,13 +985,13 @@ function PI:DarthOldSetup()
 	--Nameplates
 	do
 		E.db["v11NamePlateReset"] = true
-	
+
 		E.db["nameplates"]["fontSize"] = 12
 		E.db["nameplates"]["statusbar"] = "ElvUI Gloss"
 		E.db["nameplates"]["clampToScreen"] = true
 		E.db["nameplates"]["clickThrough"]["personal"] = true
 		E.db["nameplates"]["lowHealthThreshold"] = 0
-		
+
 		E.db["nameplates"]["colors"]["castNoInterruptColor"]["b"] = 0.12549019607843
 		E.db["nameplates"]["colors"]["castNoInterruptColor"]["g"] = 0.098039215686274
 		E.db["nameplates"]["colors"]["castNoInterruptColor"]["r"] = 0.85882352941176
@@ -1005,14 +1007,14 @@ function PI:DarthOldSetup()
 		E.db["nameplates"]["colors"]["reactions"]["neutral"]["b"] = 0.062745098039216
 		E.db["nameplates"]["colors"]["reactions"]["neutral"]["g"] = 0.81176470588235
 		E.db["nameplates"]["colors"]["reactions"]["neutral"]["r"] = 0.92156862745098
-		
+
 		E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["health"]["enable"] = true
 		E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["power"]["height"] = 4
 		E.db["nameplates"]["units"]["FRIENDLY_NPC"]["power"]["enable"] = true
 		E.db["nameplates"]["units"]["FRIENDLY_NPC"]["power"]["height"] = 4
 
 		E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["text"]["enable"] = true
-		E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["text"]["format"] = "[CURRENT_PERCENT]"
+		E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["text"]["format"] = "[health:current-percent]"
 		E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["numAuras"] = 6
 		E.db["nameplates"]["units"]["ENEMY_NPC"]["power"]["enable"] = true
 		E.db["nameplates"]["units"]["ENEMY_NPC"]["power"]["height"] = 4
@@ -1023,7 +1025,7 @@ function PI:DarthOldSetup()
 
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["debuffs"]["numAuras"] = 6
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["health"]["text"]["enable"] = true
-		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["health"]["text"]["format"] = "[CURRENT_PERCENT]"
+		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["health"]["text"]["format"] = "[health:current-percent]"
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["power"]["enable"] = true
 		E.db["nameplates"]["units"]["ENEMY_PLAYER"]["power"]["height"] = 4
 
@@ -1271,22 +1273,22 @@ function PI:DarthOldSetup()
 		E.db["sle"]["nameplates"]["threat"]["enable"] = true
 		E.db["sle"]["nameplates"]["targetcount"]["enable"] = true
 		E.db["sle"]["chat"]["dpsSpam"] = true
-		E.db["sle"]["chat"]["tab"]["select"] = true
-		E.db["sle"]["datatexts"]["chathandle"] = true
-		E.db["sle"]["datatexts"]["leftchat"]["width"] = 458
-		E.db["sle"]["datatexts"]["panel7"]["enabled"] = true
-		E.db["sle"]["datatexts"]["panel7"]["pethide"] = false
-		E.db["sle"]["datatexts"]["panel7"]["width"] = 253
-		E.db["sle"]["datatexts"]["panel7"]["transparent"] = true
-		E.db["sle"]["datatexts"]["panel6"]["enabled"] = true
-		E.db["sle"]["datatexts"]["panel6"]["pethide"] = false
-		E.db["sle"]["datatexts"]["panel6"]["width"] = 470
-		E.db["sle"]["datatexts"]["panel6"]["transparent"] = true
-		E.db["sle"]["datatexts"]["rightchat"]["width"] = 458
-		E.db["sle"]["datatexts"]["panel8"]["enabled"] = true
-		E.db["sle"]["datatexts"]["panel8"]["pethide"] = false
-		E.db["sle"]["datatexts"]["panel8"]["width"] = 470
-		E.db["sle"]["datatexts"]["panel8"]["transparent"] = true
+		-- E.db["sle"]["chat"]["tab"]["select"] = true
+		-- E.db["sle"]["datatexts"]["chathandle"] = true
+		-- E.db["sle"]["datatexts"]["leftchat"]["width"] = 458
+		-- E.db["sle"]["datatexts"]["panel7"]["enabled"] = true
+		-- E.db["sle"]["datatexts"]["panel7"]["pethide"] = false
+		-- E.db["sle"]["datatexts"]["panel7"]["width"] = 253
+		-- E.db["sle"]["datatexts"]["panel7"]["transparent"] = true
+		-- E.db["sle"]["datatexts"]["panel6"]["enabled"] = true
+		-- E.db["sle"]["datatexts"]["panel6"]["pethide"] = false
+		-- E.db["sle"]["datatexts"]["panel6"]["width"] = 470
+		-- E.db["sle"]["datatexts"]["panel6"]["transparent"] = true
+		-- E.db["sle"]["datatexts"]["rightchat"]["width"] = 458
+		-- E.db["sle"]["datatexts"]["panel8"]["enabled"] = true
+		-- E.db["sle"]["datatexts"]["panel8"]["pethide"] = false
+		-- E.db["sle"]["datatexts"]["panel8"]["width"] = 470
+		-- E.db["sle"]["datatexts"]["panel8"]["transparent"] = true
 		E.db["sle"]["unitframes"]["statusTextures"]["auraTexture"] = "Ohi Tribal4"
 		E.db["sle"]["unitframes"]["statusTextures"]["castTexture"] = "Ohi Tribal4"
 		E.db["sle"]["unitframes"]["statusTextures"]["classTexture"] = "ElvUI Gloss"
@@ -1370,7 +1372,7 @@ function PI:DarthOldSetup()
 		E.db["movers"]["SLE_DataPanel_6_Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,471,0"
 	end
 
-	if T.IsAddOnLoaded("ElvUI_AuraBarsMovers") then
+	if IsAddOnLoaded("ElvUI_AuraBarsMovers") then
 		E.db["abm"]["target"] = true
 		E.db["abm"]["player"] = true
 		E.db["abm"]["playerw"] = 180
@@ -1379,8 +1381,8 @@ function PI:DarthOldSetup()
 		E.db["movers"]["ElvUF_TargetAuraMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-468,209"
 	end
 
-	if T.IsAddOnLoaded("AddOnSkins") then
-		local AS = T.unpack(_G["AddOnSkins"]) or nil
+	if IsAddOnLoaded("AddOnSkins") then
+		local AS = unpack(_G["AddOnSkins"]) or nil
 		AS.db["EmbedOoCDelay"] = 3
 		AS.db["Blizzard_AbilityButton"] = true
 		AS.db["Blizzard_Transmogrify"] = false
@@ -1402,7 +1404,7 @@ function PI:DarthOldSetup()
 	E.private["general"]["normTex"] = "Ohi MetalSheet"
 	E.private["general"]["glossTex"] = "Ohi MetalSheet"
 	E.private["general"]["minimap"]["hideClassHallReport"] = true
-	
+
 	E.private["skins"]["blizzard"]["questChoice"] = false
 
 	E.private["sle"]["module"]["screensaver"] = true
@@ -1413,8 +1415,8 @@ function PI:DarthOldSetup()
 	E.private["sle"]["unitframe"]["statusbarTextures"]["cast"] = true
 	E.private["sle"]["unitframe"]["statusbarTextures"]["class"] = true
 	E.private["sle"]["unitframe"]["statusbarTextures"]["aura"] = true
-	E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_GUILD_ACHIEVEMENT"] = false
-	E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_EMOTE"] = false
+	-- E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_GUILD_ACHIEVEMENT"] = false
+	-- E.private["sle"]["chat"]["chatHistory"]["CHAT_MSG_EMOTE"] = false
 	E.private["sle"]["skins"]["merchant"]["enable"] = true
 	E.private["sle"]["skins"]["merchant"]["style"] = "List"
 	E.private["sle"]["skins"]["objectiveTracker"]["scenarioBG"] = true
@@ -1429,15 +1431,15 @@ function PI:DarthOldSetup()
 	if layout then
 		if layout == 'tank' then
 			E.db["nameplates"]["threat"]["beingTankedByTank"] = true
-			E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Avoidance"
-			E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["middle"] = "Versatility"
+			-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Avoidance"
+			-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["middle"] = "Versatility"
 			E.db["unitframe"]["units"]["raid"]["power"]["enable"] = true
 			E.db["sle"]["armory"]["stats"]["List"]["SPELLPOWER"] = false
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_DAMAGE"] = true
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_AP"] = true
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_ATTACKSPEED"] = true
 		elseif layout == 'dpsMelee' then
-			E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Attack Power"
+			-- E.db["datatexts"]["panels"]["SLE_DataPanel_8"]["left"] = "Attack Power"
 			E.db["sle"]["armory"]["stats"]["List"]["SPELLPOWER"] = false
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_DAMAGE"] = true
 			E.db["sle"]["armory"]["stats"]["List"]["ATTACK_AP"] = true
@@ -1457,12 +1459,12 @@ function PI:DarthOldSetup()
 
 	E:StaggeredUpdateAll(nil, true)
 
-	_G["PluginInstallStepComplete"].message = L["Darth's Default Set"]..": "..(PI.SLE_Word == NONE and L['Caster DPS'] or PI.SLE_Word)
+	_G["PluginInstallStepComplete"].message = L["Darth's Default Set"]..": "..(PI.SLE_Word == NONE and L["Caster DPS"] or PI.SLE_Word)
 	_G["PluginInstallStepComplete"]:Show()
 end
 
 function PI:DarthAddons()
-	if xCTSavedDB and T.IsAddOnLoaded("xCT+") then
+	if xCTSavedDB and IsAddOnLoaded("xCT+") then
 		xCTSavedDB["profiles"]["S&L Darth"] = {
 			["frames"] = {
 				["general"] = {
@@ -1635,16 +1637,16 @@ end
 
 local function SetupAddons(Author)
 	if AddOnSkins and (not EmbedSystem_LeftWindow or not EmbedSystem_LeftWindow) then
-		local AS = T.unpack(AddOnSkins)
+		local AS = unpack(AddOnSkins)
 		AS:Embed_Check(true)
 	end
 	if Author == "DARTH" then
 		local list = "xCT+"
-		E.PopupDialogs['SLE_INSTALL_SETTINGS_ADDONS'].text = T.format(L["SLE_INSTALL_SETTINGS_ADDONS_TEXT"], list)
+		E.PopupDialogs['SLE_INSTALL_SETTINGS_ADDONS'].text = format(L["SLE_INSTALL_SETTINGS_ADDONS_TEXT"], list)
 		E.PopupDialogs['SLE_INSTALL_SETTINGS_ADDONS'].OnAccept = PI.DarthAddons
 	-- elseif Author == "AFFINITY" then
 		-- local list = "Skada\nxCT+"
-		-- E.PopupDialogs['SLE_INSTALL_SETTINGS_ADDONS'].text = T.format(L["SLE_INSTALL_SETTINGS_ADDONS_TEXT"], list)
+		-- E.PopupDialogs['SLE_INSTALL_SETTINGS_ADDONS'].text = format(L["SLE_INSTALL_SETTINGS_ADDONS_TEXT"], list)
 		-- E.PopupDialogs['SLE_INSTALL_SETTINGS_ADDONS'].OnAccept = PI.AffinityAddons
 	end
 	E:StaticPopup_Show("SLE_INSTALL_SETTINGS_ADDONS")
@@ -1668,7 +1670,7 @@ SLE.installTable = {
 	["tutorialImagePoint"] = {0, 20},
 	["Pages"] = {
 		[1] = function()
-			_G["PluginInstallFrame"].SubTitle:SetText(T.format(L["Welcome to |cff9482c9Shadow & Light|r version %s!"], SLE.version))
+			_G["PluginInstallFrame"].SubTitle:SetText(format(L["Welcome to |cff9482c9Shadow & Light|r version %s!"], SLE.version))
 			_G["PluginInstallFrame"].Desc1:SetText(L["SLE_INSTALL_WELCOME"])
 			_G["PluginInstallFrame"].Desc2:SetText("")
 			_G["PluginInstallFrame"].Desc3:SetText(L["Please press the continue button to go onto the next step."])
@@ -1727,12 +1729,13 @@ SLE.installTable = {
 			end)
 			_G["PluginInstallFrame"].Option2:SetText(DISABLE)
 		end,
+		--[[
 		[5] = function()
 			PI.SLE_Auth = ""
-			PI.SLE_Word = E.db.layoutSet == 'tank' and L["Tank"] or E.db.layoutSet == 'healer' and L["Healer"] or E.db.layoutSet == 'dpsMelee' and L['Physical DPS'] or E.db.layoutSet == 'dpsCaster' and L['Caster DPS'] or NONE
+			PI.SLE_Word = E.db.layoutSet == 'tank' and L["Tank"] or E.db.layoutSet == 'healer' and L["Healer"] or E.db.layoutSet == 'dpsMelee' and L["Physical DPS"] or E.db.layoutSet == 'dpsCaster' and L["Caster DPS"] or NONE
 			_G["PluginInstallFrame"].SubTitle:SetText(L["Shadow & Light Imports"])
 			_G["PluginInstallFrame"].Desc1:SetText(L["You can now choose if you want to use one of the authors' set of options. This will change the positioning of some elements as well of other various options."])
-			_G["PluginInstallFrame"].Desc2:SetText(T.format(L["SLE_Install_Text_AUTHOR"], PI.SLE_Word))
+			_G["PluginInstallFrame"].Desc2:SetText(format(L["SLE_Install_Text_AUTHOR"], PI.SLE_Word))
 			_G["PluginInstallFrame"].Desc3:SetText(L["Importance: |cffFF0000Low|r"])
 
 			_G["PluginInstallFrame"].Option1:Show()
@@ -1751,13 +1754,11 @@ SLE.installTable = {
 		end,
 		[6] = function()
 			if PI.SLE_Auth == "" then _G["PluginInstallFrame"].SetPage(_G["PluginInstallFrame"].PrevPage == 5 and 7 or 5) return end
-			PI.SLE_Word = E.db.layoutSet == 'tank' and L["Tank"] or E.db.layoutSet == 'healer' and L["Healer"] or E.db.layoutSet == 'dpsMelee' and L['Physical DPS'] or E.db.layoutSet == 'dpsCaster' and L['Caster DPS'] or NONE
+			PI.SLE_Word = E.db.layoutSet == 'tank' and L["Tank"] or E.db.layoutSet == 'healer' and L["Healer"] or E.db.layoutSet == 'dpsMelee' and L["Physical DPS"] or E.db.layoutSet == 'dpsCaster' and L["Caster DPS"] or NONE
 			_G["PluginInstallFrame"].SubTitle:SetText(L["Layout & Settings Import"])
-			_G["PluginInstallFrame"].Desc1:SetText(T.format(L["You have selected to use %s and role %s."], PI.SLE_Auth == "DARTH" and L["Darth's Config"] or PI.SLE_Auth == "REPOOC" and L["Repooc's Config"] or PI.SLE_Auth == "AFFINITY" and L["Affinitii's Config"], PI.SLE_Word))
+			_G["PluginInstallFrame"].Desc1:SetText(format(L["You have selected to use %s and role %s."], PI.SLE_Auth == "DARTH" and L["Darth's Config"] or PI.SLE_Auth == "REPOOC" and L["Repooc's Config"] or PI.SLE_Auth == "AFFINITY" and L["Affinitii's Config"], PI.SLE_Word))
 			_G["PluginInstallFrame"].Desc2:SetText(L["SLE_INSTALL_LAYOUT_TEXT2"])
 			_G["PluginInstallFrame"].Desc3:SetText(L["Importance: |cffD3CF00Medium|r"])
-
-			
 
 			if PI.SLE_Auth == "DARTH" then
 				_G["PluginInstallFrame"].Option1:Show()
@@ -1767,7 +1768,7 @@ SLE.installTable = {
 				_G["PluginInstallFrame"].Option2:Show()
 				_G["PluginInstallFrame"].Option2:SetScript('OnClick', function() PI.SLE_Auth = "DARTHOLD"; StartSetup("DARTHOLD") end)
 				_G["PluginInstallFrame"].Option2:SetText(L["Layout Old"])
-				
+
 				_G["PluginInstallFrame"].Option3:Show()
 				_G["PluginInstallFrame"].Option3:SetScript('OnClick', function() SetupAddons("DARTH") end)
 				_G["PluginInstallFrame"].Option3:SetText(ADDONS)
@@ -1780,13 +1781,14 @@ SLE.installTable = {
 				_G["PluginInstallFrame"].Option1:Show()
 				_G["PluginInstallFrame"].Option1:SetScript('OnClick', function() StartSetup("AFFINITY") end)
 				_G["PluginInstallFrame"].Option1:SetText(L["Layout"])
-				
+
 				_G["PluginInstallFrame"].Option2:Show()
 				_G["PluginInstallFrame"].Option2:SetScript('OnClick', function() SetupAddons("AFFINITY") end)
 				_G["PluginInstallFrame"].Option2:SetText(ADDONS)
 			end
 		end,
-		[7] = function()
+		]]
+		[5] = function()
 			_G["PluginInstallFrame"].SubTitle:SetText(L["Installation Complete"])
 			_G["PluginInstallFrame"].Desc1:SetText(L["You are now finished with the installation process. If you are in need of technical support please visit us at http://www.tukui.org."])
 			_G["PluginInstallFrame"].Desc2:SetText(L["Please click the button below so you can setup variables and ReloadUI."])
@@ -1801,9 +1803,9 @@ SLE.installTable = {
 		[2] = L["Armory Mode"],
 		[3] = L["AFK Mode"],
 		[4] = L["Moving Frames"],
-		[5] = L["Import Profile"],
-		[6] = L["Author Presets"].." *",
-		[7] = L["Finished"],
+		-- [5] = L["Import Profile"],
+		-- [6] = L["Author Presets"].." *",
+		[5] = L["Finished"],
 	},
 	["StepTitlesColorSelected"] = {.53,.53,.93},
 }

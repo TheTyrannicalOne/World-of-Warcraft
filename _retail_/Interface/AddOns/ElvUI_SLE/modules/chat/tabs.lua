@@ -12,28 +12,6 @@ local FCFTab_UpdateColors = FCFTab_UpdateColors
 local FCFDock_ScrollToSelectedTab = FCFDock_ScrollToSelectedTab
 local PanelTemplates_TabResize = PanelTemplates_TabResize
 
---Styles for selected indicator
-C.SelectedStrings = {
-	["DEFAULT"] = "|cff%02x%02x%02x>|r %s |cff%02x%02x%02x<|r",
-	["SQUARE"] = "|cff%02x%02x%02x[|r %s |cff%02x%02x%02x]|r",
-	["HALFDEFAULT"] = "|cff%02x%02x%02x>|r %s",
-	["CHECKBOX"] = [[|TInterface\ACHIEVEMENTFRAME\UI-Achievement-Criteria-Check:%s|t%s]],
-	["ARROWRIGHT"] = [[|TInterface\BUTTONS\UI-SpellbookIcon-NextPage-Up:%s|t%s]],
-	["ARROWDOWN"] = [[|TInterface\BUTTONS\UI-MicroStream-Green:%s|t%s]],
-}
-
---Apply selected indicator to tab
-function C:ApplySelectedTabIndicator(tab, title)
-	local color = E.db.sle.chat.tab.color
-	if E.db.sle.chat.tab.style == "DEFAULT" or E.db.sle.chat.tab.style == "SQUARE" then
-		tab.text:SetText(T.format(C.SelectedStrings[E.db.sle.chat.tab.style], color.r * 255, color.g * 255, color.b * 255, title, color.r * 255, color.g * 255, color.b * 255))
-	elseif E.db.sle.chat.tab.style == "HALFDEFAULT" then
-		tab.text:SetText(T.format(C.SelectedStrings[E.db.sle.chat.tab.style], color.r * 255, color.g * 255, color.b * 255, title))
-	else
-		tab.text:SetText(T.format(C.SelectedStrings[E.db.sle.chat.tab.style], (E.db.chat.tabFontSize + 12), title))
-	end
-end
-
 --Analog for blizz dynamic chat framers calculation, used only here. Based on original blizz function with altered numbers and shit
 local function SLE_FCFDock_CalculateTabSize(dock, numDynFrames, sleWidth, sleTotalCustomWidth)
 	local MIN_SIZE, MAX_SIZE = 60, 100;
@@ -82,12 +60,8 @@ function C:FCFDock_UpdateTabs(dock, forceUpdate)
 	local sleTotalCustomWidth = 0 --This variable is used to see if overflow button should be shown when using non-blizz width
 	local sleWidth --Determain width for non blizzard resize. Needed cause I fucked up in the past allowing it for non-scroll tabs only
 
-	for index, chatFrame in T.ipairs(dock.DOCKED_CHAT_FRAMES) do
+	for index, chatFrame in ipairs(dock.DOCKED_CHAT_FRAMES) do
 		local chatTab = _G[chatFrame:GetName().."Tab"];
-		if chatTab.text then chatTab.text:SetText(chatFrame.name) end --Reseting tab name
-		if ( chatFrame == FCFDock_GetSelectedWindow(dock) ) and E.db.sle.chat.tab.select then --Tab is selected and option is enabled
-			C:ApplySelectedTabIndicator(chatTab, chatFrame.name)
-		end
 
 		--Resizing tabs, don't need to do that if blizz sizing is selected
 		if E.db.sle.chat.tab.resize ~= "Blizzard" then
@@ -128,7 +102,7 @@ function C:FCFDock_UpdateTabs(dock, forceUpdate)
 	local dynTabSize, hasOverflow = SLE_FCFDock_CalculateTabSize(dock, numDynFrames, sleWidth, sleTotalCustomWidth) --Call for own dynamic size calc, cause blizz one fuck up custom sized due to not even knowing we do custom shit
 
 	--Dynamically resize tabs
-	for index, chatFrame in T.ipairs(dock.DOCKED_CHAT_FRAMES) do
+	for index, chatFrame in ipairs(dock.DOCKED_CHAT_FRAMES) do
 		if ( not chatFrame.isStaticDocked ) then
 			local chatTab = _G[chatFrame:GetName().."Tab"];
 			PanelTemplates_TabResize(chatTab, chatTab.sizePadding or 0, dynTabSize);

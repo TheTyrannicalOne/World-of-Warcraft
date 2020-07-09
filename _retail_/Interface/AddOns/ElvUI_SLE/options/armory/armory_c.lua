@@ -1,12 +1,14 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local Armory = SLE:GetModule("Armory_Core")
--- local CA = SLE:GetModule("Armory_Character")
 local M = E:GetModule("Misc")
+-- local CA = SLE:GetModule("Armory_Character")
+
 local _G = _G
 local STAT_CATEGORY_ATTRIBUTES = STAT_CATEGORY_ATTRIBUTES
 
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
 
 	E.Options.args.sle.args.modules.args.armory = {
 		type = 'group',
@@ -15,12 +17,7 @@ local function configTable()
 		childGroups = "tab",
 		-- hidden = function() return not E.private.skins.blizzard.enable end,
 		args = {
-			info = {
-				order = 1,
-				type = "description",
-				name = L["SLE_Armory_Info"].."\n",
-				hidden = function() return not E.private.skins.blizzard.enable or (not E.private.skins.blizzard.character and not E.private.skins.blizzard.inspect) end,
-			},
+			desc = ACH:Description(L["SLE_Armory_Info"].."\n", 1, nil, nil, nil, nil, nil, nil,  function() return not E.private.skins.blizzard.enable or (not E.private.skins.blizzard.character and not E.private.skins.blizzard.inspect) end),
 			CA_enable = {
 				type = "toggle",
 				name = L["Character Armory"],
@@ -61,7 +58,7 @@ local function configTable()
 			},
 			corruption = {
 				type = 'group',
-				name = T.GetSpellInfo(172),
+				name = GetSpellInfo(172),
 				order = 13,
 				get = function(info) return E.db.sle.armory.character[(info[#info - 1])][(info[#info])] end,
 				set = function(info, value) E.db.sle.armory.character[(info[#info - 1])][(info[#info])] = value; SLE:GetModule("Armory_Character"):UpdateCorruptionText(); SLE:GetModule("Armory_Character"):UpdateCorruptionLevel() end,
@@ -92,11 +89,7 @@ local function configTable()
 							["Hide"] = HIDE,
 						},
 					},
-					space = {
-						order = 4,
-						type = "description",
-						name = "",
-					},
+					spacer1 = ACH:Spacer(4),
 					xOffset = {
 						type = 'range',
 						name = L["X-Offset"],
@@ -109,11 +102,7 @@ local function configTable()
 						order = 11,
 						min = -40, max = 40, step = 1,
 					},
-					space2 = {
-						order = 15,
-						type = "description",
-						name = "",
-					},
+					spacer2 = ACH:Spacer(15),
 					font = {
 						type = 'select', dialogControl = 'LSM30_Font',
 						name = L["Font"],
@@ -144,27 +133,19 @@ local function configTable()
 				type = "execute",
 				name = "ElvUI: "..L["Item Level"],
 				func = function() E.Libs["AceConfigDialog"]:SelectGroup("ElvUI", "general", "blizzUIImprovements") end,
-				hidden = function() 
+				hidden = function()
 					if not E.private.skins.blizzard.enable then return true end
 					return not (E.private.skins.blizzard.character or E.private.skins.blizzard.inspect)
 				end,
 			},
 			--In case some fucker disabled all the skins
-			SkinsDisabled = {
-				order = 500,
-				type = "description",
-				name = "|cffff0000 !!!|r "..L["SLE_Armory_SkinDisabled"].." |cffff0000 !!!|r",
-				hidden = function() 
-					if not E.private.skins.blizzard.enable then return false end
-					return (E.private.skins.blizzard.character or E.private.skins.blizzard.inspect)
-				end,
-			},
+			SkinsDisabled = ACH:Description("|cffff0000 !!!|r "..L["SLE_Armory_SkinDisabled"].." |cffff0000 !!!|r", 500, "medium", nil, nil, nil, nil, nil, function() if not E.private.skins.blizzard.enable then return false end return (E.private.skins.blizzard.character or E.private.skins.blizzard.inspect) end),
 			GoToElv_Skins = {
 				order = 501,
 				type = "execute",
 				name = "ElvUI: "..L["Skins"],
 				func = function() E.Libs["AceConfigDialog"]:SelectGroup("ElvUI", "skins") end,
-				hidden = function() 
+				hidden = function()
 					if not E.private.skins.blizzard.enable then return false end
 					return (E.private.skins.blizzard.character or E.private.skins.blizzard.inspect)
 				end,
@@ -173,4 +154,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

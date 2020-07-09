@@ -31,9 +31,9 @@ CliqueDB3 = {
 			["spec3_profileKey"] = "Zulbathal - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec4_profileKey"] = "Zulbathal - Zul'jin",
 			["specswap"] = false,
 			["spec2_profileKey"] = "Zulbathal - Zul'jin",
+			["spec4_profileKey"] = "Zulbathal - Zul'jin",
 		},
 	},
 	["profileKeys"] = {

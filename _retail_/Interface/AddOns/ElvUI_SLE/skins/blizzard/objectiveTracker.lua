@@ -1,12 +1,11 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local S = E:GetModule('Skins');
 local Sk = SLE:GetModule("Skins")
-local _G = _G
--- Cache global variables
--- GLOBALS: C_Scenario, BonusObjectiveTrackerProgressBar_PlayFlareAnim, hooksecurefunc, CreateFrame
--- Lua functions
-local unpack = unpack
 
+-- GLOBALS: C_Scenario, BonusObjectiveTrackerProgressBar_PlayFlareAnim, hooksecurefunc, CreateFrame
+local _G = _G
+
+local IsAddOnLoaded = IsAddOnLoaded
 local ScenarioStageBlock = ScenarioStageBlock
 local ScenarioProvingGroundsBlock = ScenarioProvingGroundsBlock
 local ScenarioProvingGroundsBlockAnim = ScenarioProvingGroundsBlockAnim
@@ -106,7 +105,9 @@ end
 -- Scenario buttons
 local function SkinScenarioButtons()
 	local block = ScenarioStageBlock
-	local _, currentStage, numStages, flags = C_Scenario.GetInfo()
+
+	--  TODO:  Shouldn't need this since you aren't using any of the variables u set Darth
+	-- local _, currentStage, numStages, flags = C_Scenario.GetInfo()
 
 	-- we have to independently resize the artwork
 	-- because we're messing with the tracker width >_>
@@ -221,10 +222,10 @@ local function SkinProvingGroundButtons()
 end
 
 local function ObjectiveReskin()
-	if T.IsAddOnLoaded("Blizzard_ObjectiveTracker") then
+	if IsAddOnLoaded("Blizzard_ObjectiveTracker") then
 		if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.objectiveTracker ~= true or E.private.sle.skins.objectiveTracker.enable ~= true then return end
 		-- Objective Tracker Bar
-		hooksecurefunc(_G["BONUS_OBJECTIVE_TRACKER_MODULE"], "AddProgressBar", skinObjectiveBar) 
+		hooksecurefunc(_G["BONUS_OBJECTIVE_TRACKER_MODULE"], "AddProgressBar", skinObjectiveBar)
 		-- World Quests can be bonus objective type
 		hooksecurefunc(_G["WORLD_QUEST_TRACKER_MODULE"], "AddProgressBar", skinObjectiveBar)
 
@@ -285,11 +286,11 @@ local function ObjectiveReskin()
 		_G["ObjectiveTrackerBlocksFrame"].ScenarioHeader.SLE_Underline = Sk:CreateUnderline(_G["ObjectiveTrackerBlocksFrame"].ScenarioHeader, flat, true, height)
 		_G["WORLD_QUEST_TRACKER_MODULE"].Header.SLE_Underline = Sk:CreateUnderline(_G["WORLD_QUEST_TRACKER_MODULE"].Header, flat, true, height)
 
-		T.tinsert(underlines, _G["ObjectiveTrackerBlocksFrame"].QuestHeader.SLE_Underline)
-		T.tinsert(underlines, _G["ObjectiveTrackerBlocksFrame"].AchievementHeader.SLE_Underline)
-		T.tinsert(underlines, _G['BONUS_OBJECTIVE_TRACKER_MODULE'].Header.SLE_Underline)
-		T.tinsert(underlines, _G["ObjectiveTrackerBlocksFrame"].ScenarioHeader.SLE_Underline)
-		T.tinsert(underlines, _G["WORLD_QUEST_TRACKER_MODULE"].Header.SLE_Underline)
+		tinsert(underlines, _G["ObjectiveTrackerBlocksFrame"].QuestHeader.SLE_Underline)
+		tinsert(underlines, _G["ObjectiveTrackerBlocksFrame"].AchievementHeader.SLE_Underline)
+		tinsert(underlines, _G['BONUS_OBJECTIVE_TRACKER_MODULE'].Header.SLE_Underline)
+		tinsert(underlines, _G["ObjectiveTrackerBlocksFrame"].ScenarioHeader.SLE_Underline)
+		tinsert(underlines, _G["WORLD_QUEST_TRACKER_MODULE"].Header.SLE_Underline)
 
 		Sk:Update_ObjectiveTrackerUnderlinesVisibility()
 		Sk:Update_ObjectiveTrackerUnderlinesColor()

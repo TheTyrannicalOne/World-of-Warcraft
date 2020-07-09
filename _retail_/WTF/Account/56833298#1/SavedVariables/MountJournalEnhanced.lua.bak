@@ -33,24 +33,30 @@ MJEGlobalSettings = {
 		},
 		["source"] = {
 			["Black Market"] = true,
-			["Class"] = true,
-			["Promotion"] = true,
-			["Instance"] = true,
 			["PVP"] = true,
+			["Promotion"] = true,
+			["Reputation"] = true,
+			["Class"] = true,
 			["Vendor"] = true,
-			["Achievement"] = true,
 			["Island Expedition"] = true,
+			["Achievement"] = true,
 			["Shop"] = true,
-			["Profession"] = true,
 			["Drop"] = true,
+			["Profession"] = true,
 			["Garrison"] = true,
 			["World Event"] = true,
 			["Quest"] = true,
-			["Reputation"] = true,
+			["Instance"] = true,
 		},
 		["notCollected"] = true,
 		["hidden"] = false,
 		["onlyFavorites"] = false,
+		["onlyTradable"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -62,15 +68,15 @@ MJEGlobalSettings = {
 				["Airplanes"] = true,
 				["Kites"] = true,
 				["Jet Aerial Units"] = true,
-				["Gyrocopters"] = true,
-				["Airships"] = true,
 				["Assault Wagons"] = true,
+				["Airships"] = true,
+				["Gyrocopters"] = true,
 				["Mechanostriders"] = true,
 				["Spider Tanks"] = true,
 				["Motorcycles"] = true,
-				["Mechanical Animals"] = true,
-				["Rockets"] = true,
 				["Carpets"] = true,
+				["Rockets"] = true,
+				["Mechanical Animals"] = true,
 				["Hovercraft"] = true,
 				["Discs"] = true,
 			},
@@ -181,6 +187,21 @@ MJEGlobalSettings = {
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
+			["Crabs"] = true,
+			["Jellyfish"] = true,
+			["Amphibian"] = {
+				["Crawgs"] = true,
+				["Toads"] = true,
+			},
+			["Elementals"] = {
+				["Sabers"] = true,
+				["Elementals"] = true,
+				["Wind Drakes"] = true,
+				["Phoenixes"] = true,
+				["Core Hounds"] = true,
+				["Stone Drakes"] = true,
+			},
+			["Rats"] = true,
 			["Ungulates"] = {
 				["Alpacas"] = true,
 				["Boars"] = true,
@@ -191,21 +212,6 @@ MJEGlobalSettings = {
 				["Moose"] = true,
 				["Riverbeasts"] = true,
 			},
-			["Jellyfish"] = true,
-			["Elementals"] = {
-				["Sabers"] = true,
-				["Elementals"] = true,
-				["Wind Drakes"] = true,
-				["Phoenixes"] = true,
-				["Core Hounds"] = true,
-				["Stone Drakes"] = true,
-			},
-			["Amphibian"] = {
-				["Crawgs"] = true,
-				["Toads"] = true,
-			},
-			["Rats"] = true,
-			["Crabs"] = true,
 			["Wolves"] = {
 				["Undead Wolves"] = true,
 				["Dire Wolves"] = true,
@@ -222,12 +228,6 @@ MJEGlobalSettings = {
 			["Rylaks"] = true,
 			["Bats"] = true,
 		},
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
-		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyUsable"] = false,
 		["mountType"] = {
@@ -701,10 +701,10 @@ MJETrackingData = {
 		1587660271, -- [5]
 	},
 	[382] = {
-		5579, -- [1]
-		1594047005, -- [2]
-		240637, -- [3]
-		2774153.379099694, -- [4]
+		5584, -- [1]
+		1594211745, -- [2]
+		240708, -- [3]
+		2775188.737524588, -- [4]
 		1394640000, -- [5]
 	},
 	[1329] = {
@@ -860,18 +860,18 @@ MJETrackingData = {
 		30, -- [3]
 		346.0720001780503, -- [4]
 	},
-	[1208] = {
-		12, -- [1]
-		1592405042, -- [2]
-		116, -- [3]
-		917.2457868090013, -- [4]
-	},
 	[606] = {
 		7, -- [1]
 		1590167403, -- [2]
 		129, -- [3]
 		953.0145185551189, -- [4]
 		1418835600, -- [5]
+	},
+	[1208] = {
+		12, -- [1]
+		1592405042, -- [2]
+		116, -- [3]
+		917.2457868090013, -- [4]
 	},
 	[614] = {
 		6, -- [1]
@@ -1041,12 +1041,11 @@ MJETrackingData = {
 		2795, -- [3]
 		20464.75092891341, -- [4]
 	},
-	[69] = {
-		10, -- [1]
-		1590507929, -- [2]
-		69, -- [3]
-		366.8816039701814, -- [4]
-		1381161600, -- [5]
+	[546] = {
+		3, -- [1]
+		1588771809, -- [2]
+		38, -- [3]
+		109.9462777957991, -- [4]
 	},
 	[769] = {
 		9, -- [1]
@@ -1054,11 +1053,12 @@ MJETrackingData = {
 		47, -- [3]
 		564.3971722793211, -- [4]
 	},
-	[546] = {
-		3, -- [1]
-		1588771809, -- [2]
-		38, -- [3]
-		109.9462777957991, -- [4]
+	[69] = {
+		10, -- [1]
+		1590507929, -- [2]
+		69, -- [3]
+		366.8816039701814, -- [4]
+		1381161600, -- [5]
 	},
 	[612] = {
 		13, -- [1]

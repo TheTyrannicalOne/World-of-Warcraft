@@ -1,5 +1,5 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
-if T.select(2, GetAddOnInfo('ElvUI_KnightFrame')) and IsAddOnLoaded('ElvUI_KnightFrame') then return end --Don't break korean code :D
+if select(2, GetAddOnInfo('ElvUI_KnightFrame')) and IsAddOnLoaded('ElvUI_KnightFrame') then return end --Don't break korean code :D
 local Armory = SLE:GetModule("Armory_Core")
 local CA = SLE:NewModule("Armory_Character", "AceEvent-3.0", "AceConsole-3.0", "AceHook-3.0");
 local LCG = LibStub('LibCustomGlow-1.0')
@@ -28,9 +28,9 @@ function CA:BuildLayout()
 	end
 	_G["PaperDollFrame"].SLE_Armory_BG:Hide()
 
-	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+	for i, SlotName in pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
-		Slot.ID = T.GetInventorySlotInfo(SlotName)
+		Slot.ID = GetInventorySlotInfo(SlotName)
 		-- print(Slot.ID, SlotName)
 		-- Slot:HookScript("OnEnter", function(self)
 			-- for i = 1, GameTooltip:NumLines() do
@@ -38,7 +38,7 @@ function CA:BuildLayout()
 				-- print(i, CurrentLineText)
 			-- end
 		-- end)
-		
+
 		--<<Create gems>>--
 		for t = 1, Armory.Constants.MaxGemSlots do
 			if Slot["textureSlot"..t] then
@@ -58,7 +58,7 @@ function CA:BuildLayout()
 			Slot.SLE_Gradient:SetPoint(Slot.Direction, Slot, Slot.Direction, 0, 0)
 			Slot.SLE_Gradient:Size(132, 41)
 			Slot.SLE_Gradient:SetTexture(Armory.Constants.GradientTexture)
-			Slot.SLE_Gradient:SetVertexColor(T.unpack(E.db.sle.armory.character.gradient.color))
+			Slot.SLE_Gradient:SetVertexColor(unpack(E.db.sle.armory.character.gradient.color))
 			if Slot.Direction == 'LEFT' then
 				Slot.SLE_Gradient:SetTexCoord(0, 1, 0, 1)
 			else
@@ -86,7 +86,7 @@ function CA:BuildLayout()
 		Slot["SLE_Warning"].texture:SetInside()
 		Slot["SLE_Warning"].texture:SetTexture(Armory.Constants.WarningTexture)
 		Slot["SLE_Warning"].texture:SetVertexColor(1, 0, 0)
-		
+
 		Slot["SLE_Warning"]:SetScript("OnEnter", Armory.Warning_OnEnter)
 		Slot["SLE_Warning"]:SetScript("OnLeave", Armory.Tooltip_OnLeave)
 		Slot["SLE_Warning"]:Hide()
@@ -142,7 +142,7 @@ function CA:BuildLayout()
 		Slot["CorText"] = Slot:CreateFontString(nil, "OVERLAY")
 		Slot["CorText"]:FontTemplate(E.LSM:Fetch('font', E.db.sle.armory.character.corruptionText.font), E.db.sle.armory.character.corruptionText.fontSize, E.db.sle.armory.character.corruptionText.fontStyle)
 	end
-	
+
 	--<<<Hooking some shit!>>>--
 	hooksecurefunc("CharacterFrame_Collapse", function()
 		if E.db.sle.armory.character.enable and _G["PaperDollFrame"]:IsShown() then _G["CharacterFrame"]:SetWidth(448) end
@@ -158,7 +158,7 @@ function CA:BuildLayout()
 	end)
 
 	hooksecurefunc('PaperDollFrame_SetLevel', function()
-		if E.db.sle.armory.character.enable then 
+		if E.db.sle.armory.character.enable then
 			_G["CharacterLevelText"]:SetText(_G["CharacterLevelText"]:GetText())
 
 			_G["CharacterFrameTitleText"]:ClearAllPoints()
@@ -169,7 +169,7 @@ function CA:BuildLayout()
 			_G["CharacterLevelText"]:SetParent(_G["CharacterFrame"])
 		end
 	end)
-	
+
 	if SLE._Compatibility["DejaCharacterStats"] then return end
 	--<<Corruption>>--
 	_G["CharacterFrame"].SLE_Corruption = CreateFrame("Frame", "SLE_CharacterCorruptionButton", _G["CharacterFrame"])
@@ -180,11 +180,7 @@ function CA:BuildLayout()
 	_G["CharacterFrame"].SLE_Corruption:SetScript("OnLeave", CharacterFrameCorruption_OnLeave)
 	_G["CharacterFrame"].SLE_Corruption:SetScript("OnEvent", function(self, event, ...)
 		CharacterFrameCorruption_OnEvent(self, event)
-		if (event == "COMBAT_RATING_UPDATE" and not self.ThrottleRating) or event == "PLAYER_ENTERING_WORLD" then
-			CA:UpdateCorruptionLevel()
-			self.ThrottleRating = true
-			E:Delay(1, function() _G["CharacterFrame"].SLE_Corruption.ThrottleRating = false end)
-		end
+		CA:UpdateCorruptionLevel()
 	end)
 	if SLE._Compatibility["CorruptionTooltips"] then
 		local CT = LibStub("AceAddon-3.0"):GetAddon("CorruptionTooltips")
@@ -196,7 +192,7 @@ function CA:BuildLayout()
 	--deal with the events
 	_G["CharacterFrame"].SLE_Corruption:RegisterEvent("COMBAT_RATING_UPDATE");
 	_G["CharacterFrame"].SLE_Corruption:RegisterEvent("PLAYER_ENTERING_WORLD");
-	_G["CharacterFrame"].SLE_Corruption:RegisterEvent("SPELL_TEXT_UPDATE");
+	-- _G["CharacterFrame"].SLE_Corruption:RegisterEvent("SPELL_TEXT_UPDATE");
 
 	_G["CharacterStatsPane"].ItemLevelFrame.Corruption:UnregisterEvent("COMBAT_RATING_UPDATE");
 	_G["CharacterStatsPane"].ItemLevelFrame.Corruption:UnregisterEvent("PLAYER_ENTERING_WORLD");
@@ -215,7 +211,7 @@ end
 function CA:Calculate_Durability(which, Slot)
 	if Slot["SLE_Durability"] then
 		if E.db.sle.armory.character.enable and E.db.sle.armory.character.durability.display ~= "Hide" then
-			local current, maximum = T.GetInventoryItemDurability(Slot.ID)
+			local current, maximum = GetInventoryItemDurability(Slot.ID)
 			if current and maximum and not (E.db.sle.armory.character.durability.display == 'DamagedOnly' and current == maximum) then
 				local r, g, b = E:ColorGradient((current / maximum), 1, 0, 0, 1, 1, 0, 0, 1, 0)
 				Slot["SLE_Durability"]:SetFormattedText("%s%.0f%%|r", E:RGBToHex(r, g, b), (current / maximum) * 100)
@@ -242,9 +238,9 @@ function CA:Update_BG()
 end
 
 function CA:Update_ItemLevel()
-	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+	for i, SlotName in pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
-		
+
 		if Slot.iLvlText then
 			Slot.iLvlText:ClearAllPoints()
 			Slot.iLvlText:Point("TOP"..Slot.Direction, Slot, "TOP"..(Slot.Direction == "LEFT" and "RIGHT" or "LEFT"), Slot.Direction == "LEFT" and 2+E.db.sle.armory.character.ilvl.xOffset or -2-E.db.sle.armory.character.ilvl.xOffset, -1+E.db.sle.armory.character.ilvl.yOffset)
@@ -253,9 +249,9 @@ function CA:Update_ItemLevel()
 end
 
 function CA:Update_Enchant()
-	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+	for i, SlotName in pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
-		
+
 		if Slot.enchantText then
 			Slot.enchantText:ClearAllPoints()
 			Slot.enchantText:Point(Slot.Direction, Slot, Slot.Direction == "LEFT" and "RIGHT" or "LEFT", Slot.Direction == "LEFT" and 2+E.db.sle.armory.character.enchant.xOffset or -2-E.db.sle.armory.character.enchant.xOffset, 1+E.db.sle.armory.character.enchant.yOffset)
@@ -264,7 +260,7 @@ function CA:Update_Enchant()
 end
 
 function CA:Update_SlotCorruption()
-	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+	for i, SlotName in pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
 
 		if Slot.CorText then
@@ -275,9 +271,9 @@ function CA:Update_SlotCorruption()
 end
 
 function CA:Update_Gems()
-	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+	for i, SlotName in pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
-		
+
 		if Slot.textureSlot1 then
 			Slot.textureSlot1:ClearAllPoints()
 			Slot.textureSlot1:Point('BOTTOM'..Slot.Direction, Slot, "BOTTOM"..(Slot.Direction == "LEFT" and "RIGHT" or "LEFT"), Slot.Direction == "LEFT" and 2+E.db.sle.armory.character.gem.xOffset or -2-E.db.sle.armory.character.gem.xOffset, 2+E.db.sle.armory.character.gem.yOffset)
@@ -289,7 +285,7 @@ function CA:Update_Gems()
 end
 
 function CA:Update_Durability()
-	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+	for i, SlotName in pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
 		if Slot.SLE_Durability then
 			Slot.SLE_Durability:FontTemplate(E.LSM:Fetch('font', E.db.sle.armory.character.durability.font), E.db.sle.armory.character.durability.fontSize, E.db.sle.armory.character.durability.fontStyle)
@@ -340,7 +336,7 @@ function CA:FixFuckingBlizzardLogic()
 	if not milestones then return end
 	for i, milestoneInfo in ipairs(milestones) do
 		if milestoneInfo.slot then
-			T.tinsert(Armory.Constants.EssenceMilestones, milestoneInfo.ID)
+			tinsert(Armory.Constants.EssenceMilestones, milestoneInfo.ID)
 		end
 	end
 	CA.HearthMilestonesCached = true
@@ -366,7 +362,7 @@ function CA:Enable()
 		_G["CharacterFrame"]:SetWidth(_G["CharacterFrame"].Expanded and 650 or 444)
 		_G["CharacterFrameInsetRight"]:SetPoint('TOPLEFT', _G["CharacterFrameInset"], 'TOPRIGHT', 110, 0)
 	end
-	
+
 	--This will hide default background stuff. I could make it being shown, but not feeling like figuring out how to stretch the damn texture.
 	if _G["CharacterModelFrame"] and _G["CharacterModelFrame"].BackgroundTopLeft and _G["CharacterModelFrame"].BackgroundTopLeft:IsShown() then
 		_G["CharacterModelFrame"].BackgroundTopLeft:Hide()
@@ -381,7 +377,7 @@ function CA:Enable()
 	--Overlay resize to match new width
 	_G["CharacterModelFrameBackgroundOverlay"]:SetPoint('TOPLEFT', _G["CharacterModelFrame"], -4, 0)
 	_G["CharacterModelFrameBackgroundOverlay"]:SetPoint('BOTTOMRIGHT', _G["CharacterModelFrame"], 4, 0)
-	
+
 	--Activating background
 	_G["PaperDollFrame"].SLE_Armory_BG:Show()
 	CA:Update_BG()
@@ -398,11 +394,11 @@ function CA:Disable()
 	-- Setting frame to default
 	_G["CharacterFrame"]:SetHeight(424)
 	_G["CharacterFrame"]:SetWidth(_G["PaperDollFrame"]:IsShown() and _G["CharacterFrame"].Expanded and CHARACTERFRAME_EXPANDED_WIDTH or PANEL_DEFAULT_WIDTH)
-	_G["CharacterFrameInsetRight"]:SetPoint(T.unpack(DefaultPosition.InsetDefaultPoint))
+	_G["CharacterFrameInsetRight"]:SetPoint(unpack(DefaultPosition.InsetDefaultPoint))
 
 	-- Move rightside equipment slots to default position
 	_G["CharacterHandsSlot"]:SetPoint('TOPRIGHT', _G["CharacterFrameInset"], 'TOPRIGHT', -4, -2)
-	
+
 	-- Move bottom equipment slots to default position
 	_G["CharacterMainHandSlot"]:SetPoint('BOTTOMLEFT', _G["PaperDollItemsFrame"], 'BOTTOMLEFT', 130, 16)
 
@@ -417,12 +413,12 @@ function CA:Disable()
 	_G["CharacterModelFrame"].backdrop:Show()
 
 	CA:Update_Durability() --Required for elements update
-	for i, SlotName in T.pairs(Armory.Constants.GearList) do
+	for i, SlotName in pairs(Armory.Constants.GearList) do
 		local Slot = _G["Character"..SlotName]
 		if Armory.Constants.Character_Defaults[SlotName] then
-			for element, points in T.pairs(Armory.Constants.Character_Defaults[SlotName]) do
+			for element, points in pairs(Armory.Constants.Character_Defaults[SlotName]) do
 				Slot[element]:ClearAllPoints()
-				Slot[element]:Point(T.unpack(points))
+				Slot[element]:Point(unpack(points))
 			end
 		end
 		if Slot.textureSlot1 then
@@ -431,7 +427,7 @@ function CA:Disable()
 		if Slot.SLE_Warning then Slot.SLE_Warning:Hide() end
 		if Slot.SLE_Durability then Slot["SLE_Durability"]:SetText('') end
 	end
-	
+
 	if _G["PaperDollFrame"].SLE_Armory_BG then _G["PaperDollFrame"].SLE_Armory_BG:Hide() end
 end
 
@@ -445,7 +441,7 @@ function CA:ToggleArmory()
 	CA:UpdateCorruptionText()
 	Armory:HandleCorruption()
 
-	for i, SlotName in T.pairs(Armory.Constants.AzeriteSlot) do PaperDollItemSlotButton_Update(_G["Character"..SlotName]) end
+	for i, SlotName in pairs(Armory.Constants.AzeriteSlot) do PaperDollItemSlotButton_Update(_G["Character"..SlotName]) end
 end
 
 function CA:LoadAndSetup()

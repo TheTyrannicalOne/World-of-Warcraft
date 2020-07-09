@@ -1,19 +1,17 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
-local GARRISON_LOCATION_TOOLTIP = GARRISON_LOCATION_TOOLTIP
-local EXPANSION_NAME5 = EXPANSION_NAME5
+
 local HallName = _G["ORDER_HALL_"..E.myclass]
+
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
+
 	E.Options.args.sle.args.modules.args.legacy.args.orderhall = {
 		type = "group",
 		name = L["Class Hall"].." ("..EXPANSION_NAME6..")",
 		order = 3,
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = HallName,
-			},
+			header = ACH:Header(HallName, 1),
 			autoOrder = {
 				order = 2,
 				type = "group",
@@ -40,4 +38,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

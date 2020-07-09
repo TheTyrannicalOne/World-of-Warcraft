@@ -18,12 +18,12 @@ function BG:CreateFrame(id)
 	frame.texture:Point('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', -2, 2)
 	frame:Hide()
 
-	frame.texture:SetAlpha(E.db.general.backdropfadecolor.a or 0.5) 
+	frame.texture:SetAlpha(E.db.general.backdropfadecolor.a or 0.5)
 	return frame
 end
 
 function BG:Positions(id)
-	local anchor, point, x, y = T.unpack(BG.pos[id])
+	local anchor, point, x, y = unpack(BG.pos[id])
 	BG["Frame_"..id]:SetPoint(anchor, E.UIParent, point, x, y)
 end
 

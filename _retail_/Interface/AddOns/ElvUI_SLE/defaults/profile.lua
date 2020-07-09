@@ -273,7 +273,6 @@ P["sle"] = {
 			["alpha"] = 0.5,
 		},
 		["combathide"] = "NONE",
-		["editboxhistory"] = 20,
 		["justify"] = {
 			["frame1"] = "LEFT",
 			["frame2"] = "LEFT",
@@ -287,9 +286,6 @@ P["sle"] = {
 			["frame10"] = "LEFT",
 		},
 		["tab"] = {
-			["select"] = false,
-			["style"] = "DEFAULT",
-			["color"] = {r = 1, g = 1, b = 1},
 			["resize"] = "Blizzard",
 			["customWidth"] = 50,
 		},
@@ -341,104 +337,32 @@ P["sle"] = {
 			},
 		},
 	},
-	--Datatexts panels
-	["datatexts"] = {
-		["panel1"] = {
-			["enabled"] = false,
-			["width"] = (E.eyefinity or E.screenwidth)/5,
-			["pethide"] = true,
-			["alpha"] = 1,
-			["transparent"] = false,
-			["noback"] = false,
-			["mouseover"] = false,
-		},
-		["panel2"] = {
-			["enabled"] = false,
-			["width"] = (E.eyefinity or E.screenwidth)/5,
-			["pethide"] = true,
-			["alpha"] = 1,
-			["transparent"] = false,
-			["noback"] = false,
-			["mouseover"] = false,
-		},
-		["panel3"] = {
-			["enabled"] = false,
-			["width"] = (E.eyefinity or E.screenwidth)/5 - 4,
-			["pethide"] = true,
-			["alpha"] = 1,
-			["transparent"] = false,
-			["noback"] = false,
-			["mouseover"] = false,
-		},
-		["panel4"] = {
-			["enabled"] = false,
-			["width"] = (E.eyefinity or E.screenwidth)/5,
-			["pethide"] = true,
-			["alpha"] = 1,
-			["transparent"] = false,
-			["noback"] = false,
-			["mouseover"] = false,
-		},
-		["panel5"] = {
-			["enabled"] = false,
-			["width"] = (E.eyefinity or E.screenwidth)/5,
-			["pethide"] = true,
-			["alpha"] = 1,
-			["transparent"] = false,
-			["noback"] = false,
-			["mouseover"] = false,
-		},
-		["panel6"] = {
-			["enabled"] = false,
-			["width"] = (E.eyefinity or E.screenwidth)/4 - 60,
-			["pethide"] = true,
-			["alpha"] = 1,
-			["transparent"] = false,
-			["noback"] = false,
-			["mouseover"] = false,
-		},
-		["panel7"] = {
-			["enabled"] = false,
-			["width"] = (E.eyefinity or E.screenwidth)/10 - 4,
-			["pethide"] = true,
-			["alpha"] = 1,
-			["transparent"] = false,
-			["noback"] = false,
-			["mouseover"] = false,
-		},
-		["panel8"] = {
-			["enabled"] = false,
-			["width"] = (E.eyefinity or E.screenwidth)/4 - 60,
-			["pethide"] = true,
-			["alpha"] = 1,
-			["transparent"] = false,
-			["noback"] = false,
-
-		},
-		["leftchat"] = {
-			["enabled"] = true,
-			["width"] = 396,
-			["alpha"] = 1,
-		},
-		["rightchat"] = {
-			["enabled"] = true,
-			["width"] = 396,
-			["alpha"] = 1,
-		},
-		["chathandle"] = false,
-	},
 	--SLE Datatexts
 	["dt"] = {
 		["friends"] = {
-			["combat"] = false,
-			["expandBNBroadcast"] = false,
-			["hideFriends"] = false,
-			["hide_hintline"] = false,
-			["hide_titleline"] = false,
-			["sortBN"] = 'TOONNAME',
-			["tooltipAutohide"] = 0.2,
-			["totals"] = false,
-			["textStyle"] = "Default",
+			--*  General Settings
+			panelStyle = "DEFAULT",
+			tooltipAutohide = 0.2,
+			hide_hintline = false,
+			combat = false,
+			hide_titleline = false,
+			--*  Hide By Clients
+			hideWoW = false,		--WoW Retail
+			hideWoWClassic = false,	--WoW Classic
+			hideApp = false,		--Launcher
+			hideBSAp = false,		--Mobile
+			hideD3 = false,			--Diablo 3
+			hideWTCG = false,		--Hearthstone
+			hideHero = false,		--Heros of the Storm
+			hidePro = false,		--Overwatch
+			hideS1 = false,			--Starcraft
+			hideS2 = false,			--Starcraft 2
+			hideVIPR = false,		--COD: Black Ops 4
+			hideODIN = false,		--COD: Modern Warfare
+			hideLAZR = false,		--COD: Modern Warfare 2
+			--*  Hide By Status
+			hideAFK = false,
+			hideDND = false,
 		},
 		["guild"] = {
 			["combat"] = false,
@@ -456,10 +380,6 @@ P["sle"] = {
 		},
 		["mail"] = {
 			["icon"] = true,
-		},
-		["durability"] = {
-			["gradient"] = false,
-			["threshold"] = -1,
 		},
 		["currency"] = {
 			["Archaeology"] = true,
@@ -555,6 +475,7 @@ P["sle"] = {
 			["daz"] = false,
 			["sc"] = false,
 			["ep"] = false,
+			["nzoth"] = false,
 		},
 	},
 	--Loot
@@ -667,8 +588,9 @@ P["sle"] = {
 		["combat"] = false,
 		["coords"] = {
 			["enable"] = false,
-			["display"] = "SHOW",
-			["position"] = "BOTTOM",
+			mouseover = false,
+			xOffset = 0,
+			yOffset = 0,
 			["format"] = "%.0f",
 			["font"] = "PT Sans Narrow",
 			["fontSize"] = 12,
@@ -918,6 +840,7 @@ P["sle"] = {
 				["daz"] = true,
 				["sc"] = true,
 				["ep"] = true,
+				["nzoth"] = true,
 			},
 		},
 	},
@@ -1167,38 +1090,4 @@ P["sle"] = {
 			["classTexture"] = "ElvUI Norm",
 		},
 	},
-}
-
---Datatexts
-P.datatexts.panels["SLE_DataPanel_1"] = {
-	["left"] = '',
-	["middle"] = '',
-	["right"] = '',
-}
-P.datatexts.panels["SLE_DataPanel_2"] = {
-	["left"] = '',
-	["middle"] = '',
-	["right"] = '',
-}
-P.datatexts.panels["SLE_DataPanel_3"] = 'Version'
-P.datatexts.panels["SLE_DataPanel_4"] = {
-	["left"] = '',
-	["middle"] = '',
-	["right"] = '',
-}
-P.datatexts.panels["SLE_DataPanel_5"] = {
-	["left"] = '',
-	["middle"] = '',
-	["right"] = '',
-}
-P.datatexts.panels["SLE_DataPanel_6"] = {
-	["left"] = '',
-	["middle"] = '',
-	["right"] = '',
-}
-P.datatexts.panels["SLE_DataPanel_7"] = ''
-P.datatexts.panels["SLE_DataPanel_8"] = {
-	["left"] = '',
-	["middle"] = '',
-	["right"] = '',
 }

@@ -1,9 +1,13 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local RP = SLE:NewModule("RaidProgress", "AceHook-3.0", "AceEvent-3.0")
 local TT = E:GetModule('Tooltip');
---GLOBALS: hooksecurefunc, AchievementFrame_DisplayComparison
-local MAX_PLAYER_LEVEL = MAX_PLAYER_LEVEL
+
+--GLOBALS: select, unpack, hooksecurefunc, AchievementFrame_DisplayComparison
 local _G = _G
+local format = format
+local GetTime = GetTime
+local IsAddOnLoaded = IsAddOnLoaded
+local UnitExists = UnitExists
 local utf8sub = string.utf8sub
 local ClearAchievementComparisonUnit = ClearAchievementComparisonUnit
 local SetAchievementComparisonUnit = SetAchievementComparisonUnit
@@ -18,16 +22,16 @@ RP.encounters = {
 		["option"] = "nightmare",
 		["statIDs"] = {
 			{ --Mythic
-				10914, 10923, 10927, 10919, 10931, 10935, 10939, 
+				10914, 10923, 10927, 10919, 10931, 10935, 10939,
 			},
 			{ -- Herioc
-				10913, 10922, 10926, 10917, 10930, 10934, 10938, 
+				10913, 10922, 10926, 10917, 10930, 10934, 10938,
 			},
 			{ -- Normal
-				10912, 10921, 10925, 10916, 10929, 10933, 10937, 
+				10912, 10921, 10925, 10916, 10929, 10933, 10937,
 			},
 			{ -- LFR
-				10911, 10920, 10924, 10915, 10928, 10932, 10936, 
+				10911, 10920, 10924, 10915, 10928, 10932, 10936,
 			},
 		},
 	},
@@ -83,7 +87,7 @@ RP.encounters = {
 		},
 	},
 	{ -- Antorus, the Burning Throne
-		
+
 		["option"] = "antorus",
 		["statIDs"] = {
 			{ -- Mythic
@@ -116,7 +120,7 @@ RP.encounters = {
 				12786, 12790, 12794, 12798, 12802, 12808, 12813, 12817,
 			},
 		},
-		
+
 	},
 	{ -- Dazar'Alor
 		["option"] = "daz",
@@ -154,16 +158,16 @@ RP.encounters = {
 		["option"] = "sc",
 		["statIDs"] = {
 			{ -- Mythic
-				13407, 13413, 
+				13407, 13413,
 			},
 			{ -- Heroic
-				13406, 13412, 
+				13406, 13412,
 			},
 			{ -- Normal
-				13405, 13411, 
+				13405, 13411,
 			},
 			{ -- LFR
-				13404, 13408, 
+				13404, 13408,
 			},
 		},
 	},
@@ -184,12 +188,29 @@ RP.encounters = {
 			},
 		},
 	},
+	{ -- Ni'alotha
+		["option"] = "nzoth",
+		["statIDs"] = {
+			{ -- Mythic
+				14082, 14094, 14098, 14105, 14110, 14120, 14211, 14126, 14130, 14134, 14138,
+			},
+			{ -- Heroic
+				14080, 14093, 14097, 14104, 14109, 14119, 14210, 14125, 14129, 14133, 14137,
+			},
+			{ -- Normal
+				14079, 14091, 14096, 14102, 14108, 14118, 14208, 14124, 14128, 14132, 14136,
+			},
+			{ -- LFR
+				14078, 14089, 14095, 14101, 14107, 14117, 14207, 14123, 14127, 14131, 14135,
+			},
+		},
+	},
 }
 RP.Raids = {}
-RP.modes = { 
+RP.modes = {
 	["LONG"] = {
 		PLAYER_DIFFICULTY6,
-		PLAYER_DIFFICULTY2, 
+		PLAYER_DIFFICULTY2,
 		PLAYER_DIFFICULTY1,
 		PLAYER_DIFFICULTY3,
 	},
@@ -211,7 +232,8 @@ local function PopulateRaidsTable()
 		SLE:GetMapInfo(1148, "name"),
 		SLE:GetMapInfo(1358, "name"),
 		SLE:GetMapInfo(1345, "name"),
-		SLE:GetMapInfo(1512, "name")
+		SLE:GetMapInfo(1512, "name"),
+		SLE:GetMapInfo(1580, "name"),
 	}
 	RP.Raids["SHORT"] = {
 		L["RAID_EN"],
@@ -223,13 +245,14 @@ local function PopulateRaidsTable()
 		L["RAID_DAZALOR"],
 		L["RAID_STORMCRUS"],
 		L["RAID_ETERNALPALACE"],
+		SLE:GetMapInfo(1580, "name"),
 	}
 end
 
 function RP:GetProgression(guid)
 	local kills, complete, pos = 0, false, 0
-	local statFunc = guid == RP.playerGUID and T.GetStatistic or T.GetComparisonStatistic
-	
+	local statFunc = guid == RP.playerGUID and GetStatistic or GetComparisonStatistic
+
 	for raid = 1, #RP.Raids["LONG"] do
 		local option = RP.encounters[raid].option
 		if E.db.sle.tooltip.RaidProg.raids[option] then
@@ -239,15 +262,15 @@ function RP:GetProgression(guid)
 			for level = 1, #statTable do
 				RP.highestKill = 0
 				for statInfo = 1, #statTable[level] do
-					kills = T.tonumber((statFunc(statTable[level][statInfo])))
+					kills = tonumber((statFunc(statTable[level][statInfo])))
 					if kills and kills > 0 then
 						RP.highestKill = RP.highestKill + 1
 					end
 				end
 				pos = RP.highestKill
 				if RP.highestKill > 0 or RP.ShowZeroesMode then
-					RP.Cache[guid].header[raid][level] = T.format("%s [%s]:", RP.Raids[E.db.sle.tooltip.RaidProg.NameStyle][raid], RP.modes[E.db.sle.tooltip.RaidProg.DifStyle][level])
-					RP.Cache[guid].info[raid][level] = T.format("%d/%d", RP.highestKill, #statTable[level])
+					RP.Cache[guid].header[raid][level] = format("%s [%s]:", RP.Raids[E.db.sle.tooltip.RaidProg.NameStyle][raid], RP.modes[E.db.sle.tooltip.RaidProg.DifStyle][level])
+					RP.Cache[guid].info[raid][level] = format("%d/%d", RP.highestKill, #statTable[level])
 					if RP.highestKill == #statTable[level] then
 						break
 					end
@@ -261,7 +284,7 @@ function RP:UpdateProgression(guid)
 	RP.Cache[guid] = RP.Cache[guid] or {}
 	RP.Cache[guid].header = RP.Cache[guid].header or {}
 	RP.Cache[guid].info =  RP.Cache[guid].info or {}
-	RP.Cache[guid].timer = T.GetTime()
+	RP.Cache[guid].timer = GetTime()
 
 	RP:GetProgression(guid)
 end
@@ -300,7 +323,7 @@ end
 local function AchieveReady(event, GUID)
 	if (TT.compareGUID ~= GUID) then return end
 	local unit = "mouseover"
-	if T.UnitExists(unit) then
+	if UnitExists(unit) then
 		RP:UpdateProgression(GUID)
 		_G["GameTooltip"]:SetUnit(unit)
 	end
@@ -309,17 +332,17 @@ local function AchieveReady(event, GUID)
 end
 
 local function OnInspectInfo(self, tt, unit, numTries, r, g, b)
-	if T.InCombatLockdown() then return end
+	if InCombatLockdown() then return end
 	if not E.db.sle.tooltip.RaidProg.enable then return end
-	if not (unit and T.CanInspect(unit)) then return end
-	
-	local guid = T.UnitGUID(unit)
-	if not RP.Cache[guid] or (T.GetTime() - RP.Cache[guid].timer) > 600 then
+	if not (unit and CanInspect(unit)) then return end
+
+	local guid = UnitGUID(unit)
+	if not RP.Cache[guid] or (GetTime() - RP.Cache[guid].timer) > 600 then
 		if guid == RP.playerGUID then
 			RP:UpdateProgression(guid)
 		else
 			ClearAchievementComparisonUnit()
-			if not self.loadedComparison and T.select(2, T.IsAddOnLoaded("Blizzard_AchievementUI")) then
+			if not self.loadedComparison and select(2, IsAddOnLoaded("Blizzard_AchievementUI")) then
 				AchievementFrame_DisplayComparison(unit)
 				HideUIPanel(_G["AchievementFrame"])
 				ClearAchievementComparisonUnit()

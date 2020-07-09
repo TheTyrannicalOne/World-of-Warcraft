@@ -1,20 +1,21 @@
-local SLE, T, E, L, V, P, G = unpack(select(2, ...))
-local ARTIFACT_POWER, AUCTION_CATEGORY_BATTLE_PETS = ARTIFACT_POWER, AUCTION_CATEGORY_BATTLE_PETS
+local SLE, _, E, L = unpack(select(2, ...))
 local B = E:GetModule("Bags")
+
+--GLOBALS: unpack, select, tinsert, AUCTION_CATEGORY_BATTLE_PETS, COLOR, AceGUIWidgetLSMlists
+local tinsert = tinsert
+local AUCTION_CATEGORY_BATTLE_PETS, COLOR = AUCTION_CATEGORY_BATTLE_PETS, COLOR
 
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
+
 	E.Options.args.sle.args.modules.args.bags = {
 		order = 1,
 		type = "group",
 		name = L["Bags"],
 		disabled = function() return not E.private.bags.enable end,
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = L["Bags"],
-			},
+			header = ACH:Header(L["Bags"], 1),
 			petLevel = {
 				order = 21,
 				type = "group",
@@ -85,4 +86,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

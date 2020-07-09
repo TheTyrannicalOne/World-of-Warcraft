@@ -3,6 +3,8 @@ local RP = SLE:GetModule("RaidProgress")
 
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
+
 	E.Options.args.sle.args.modules.args.tooltip = {
 		order = 1,
 		type = "group",
@@ -10,16 +12,8 @@ local function configTable()
 		get = function(info) return E.db.sle.tooltip[ info[#info] ] end,
 		name = L["Tooltip"],
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = L["Tooltip"],
-			},
-			space1 = {
-				order = 4,
-				type = 'description',
-				name = "",
-			},
+			header = ACH:Header(L["Tooltip"], 1),
+			spacer1 = ACH:Spacer(4),
 			showFaction = {
 				order = 5,
 				type = 'toggle',
@@ -54,7 +48,7 @@ local function configTable()
 						order = 2,
 						name = L["Name Style"],
 						type = "select",
-						set = function(info, value) E.db.sle.tooltip.RaidProg[ info[#info] ] = value; T.twipe(RP.Cache) end,
+						set = function(info, value) E.db.sle.tooltip.RaidProg[ info[#info] ] = value; wipe(RP.Cache) end,
 						values = {
 							["LONG"] = L["Full"],
 							["SHORT"] = L["Short"],
@@ -64,7 +58,7 @@ local function configTable()
 						order = 3,
 						name = L["Difficulty Style"],
 						type = "select",
-						set = function(info, value) E.db.sle.tooltip.RaidProg[ info[#info] ] = value; T.twipe(RP.Cache) end,
+						set = function(info, value) E.db.sle.tooltip.RaidProg[ info[#info] ] = value; wipe(RP.Cache) end,
 						values = {
 							["LONG"] = L["Full"],
 							["SHORT"] = L["Short"],
@@ -87,6 +81,7 @@ local function configTable()
 							daz = { order = -44, type = "toggle", name = SLE:GetMapInfo(1358, "name") },
 							sc = { order = -43, type = "toggle", name = SLE:GetMapInfo(1345, "name") },
 							ep = { order = -42, type = "toggle", name = SLE:GetMapInfo(1512, "name") },
+							nzoth = { order = -41, type = "toggle", name = SLE:GetMapInfo(1580, "name") },
 						},
 					},
 				},
@@ -95,4 +90,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

@@ -48,6 +48,8 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
+		["BigWigs_Plugins_Messages"] = {
+		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -55,8 +57,6 @@ BigWigs3DB = {
 					["width"] = 139.9999847412109,
 				},
 			},
-		},
-		["BigWigs_Plugins_Messages"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
@@ -98,9 +98,9 @@ BigWigsStatsDB = {
 				["kills"] = 5,
 			},
 		},
-		[866] = {
+		[851] = {
 			["mythic"] = {
-				["best"] = 8.614000000001397,
+				["best"] = 4.838999999999942,
 				["kills"] = 5,
 			},
 		},
@@ -117,9 +117,9 @@ BigWigsStatsDB = {
 				["kills"] = 5,
 			},
 		},
-		[851] = {
+		[866] = {
 			["mythic"] = {
-				["best"] = 4.838999999999942,
+				["best"] = 8.614000000001397,
 				["kills"] = 5,
 			},
 		},

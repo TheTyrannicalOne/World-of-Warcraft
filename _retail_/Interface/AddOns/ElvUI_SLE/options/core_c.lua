@@ -1,26 +1,13 @@
-local SLE, T, E, L, V, P, G = unpack(select(2, ...))
-local M = SLE:GetModule("Misc")
-local SETTINGS = SETTINGS
-local LFG_LIST_LEGACY = LFG_LIST_LEGACY
+local SLE, _, E, L = unpack(select(2, ...))
+-- local ACH = E.Libs.ACH
+
+--GLOBALS: unpack, select, tinsert, format
+local tinsert, format = tinsert, format
+
 local function configTable()
 	if not SLE.initialized then return end
-	E.Options.name = E.Options.name.." + |cff9482c9Shadow & Light|r"..T.format(": |cff99ff33%s|r",SLE.version)
+	E.Options.name = E.Options.name.." + |cff9482c9Shadow & Light|r"..format(": |cff99ff33%s|r", SLE.version)
 
-	local function CreateButton(number, text, ...)
-		local path = {}
-		local num = T.select("#", ...)
-		for i = 1, num do
-			local name = T.select(i, ...)
-			T.tinsert(path, #(path)+1, name)
-		end
-		local config = {
-			order = number,
-			type = 'execute',
-			name = text,
-			func = function() E.Libs["AceConfigDialog"]:SelectGroup("ElvUI", "sle", T.unpack(path)) end,
-		}
-		return config
-	end
 	--Main options group
 	E.Options.args.sle = {
 		type = "group",
@@ -30,11 +17,7 @@ local function configTable()
 		-- order = -4,
 		order = 6,
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = "|cff9482c9Shadow & Light|r"..T.format(": |cff99ff33%s|r", SLE.version),
-			},
+			header = E.Libs.ACH:Header("|cff9482c9Shadow & Light|r"..format(": |cff99ff33%s|r", SLE.version), 1),
 			logo = {
 				type = 'description',
 				name = "",
@@ -48,7 +31,6 @@ local function configTable()
 				desc = L["Run the installation process."],
 				func = function() E:GetModule("PluginInstaller"):Queue(SLE.installTable); E:ToggleOptionsUI();  end,
 			},
-			-- infoButton = CreateButton(5, L["About/Help"], "help"),
 			Reset = {
 				order = 6,
 				type = 'execute',
@@ -60,24 +42,16 @@ local function configTable()
 			modules = {
 				order = 10,
 				type = "group",
-				childGroups = "select",
+				-- childGroups = "select",
 				-- childGroups = "tab",
 				name = L["Modules"],
 				args = {
-					header = {
-						order = 1,
-						type = "header",
-						name = L["Modules"],
-					},
-					info = {
-						type = "description",
-						order = 2,
-						name = L["Options for different S&L modules."],
-					},
+					header = E.Libs.ACH:Header(L["Modules"], 1),
+					info = E.Libs.ACH:Description(L["Options for different S&L modules."], 2),
 				},
 			},
 		},
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

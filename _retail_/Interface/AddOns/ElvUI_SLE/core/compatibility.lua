@@ -1,5 +1,6 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 
+local gsub, pairs = gsub, pairs
 local GetAddOnEnableState = GetAddOnEnableState
 --Check if some stuff happens to be enable
 SLE._Compatibility = {}
@@ -28,8 +29,8 @@ end
 
 local Bastards = {}
 local function IsDeclined()
-	local CheckRealm = T.gsub(E.myrealm,'[%s%-]','')
-	for realm, people in T.pairs(Bastards) do
+	local CheckRealm = gsub(E.myrealm,'[%s%-]','')
+	for realm, people in pairs(Bastards) do
 		if people[E.myname] then return true end
 	end
 	return false

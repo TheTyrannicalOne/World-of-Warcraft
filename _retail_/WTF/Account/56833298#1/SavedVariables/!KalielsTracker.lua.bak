@@ -1,22 +1,22 @@
 
 KalielsTrackerDB = {
 	["char"] = {
-		["Gillbourn - Runetotem"] = {
-			["collapsed"] = true,
-		},
 		["Narisaric - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Tynster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Goramor - Runetotem"] = {
 			["collapsed"] = true,
 		},
 		["Tyrannithal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Gillbourn - Runetotem"] = {
 			["collapsed"] = true,
 		},
 		["Tyriinid - Dalaran"] = {
@@ -25,7 +25,7 @@ KalielsTrackerDB = {
 		["Shaewong - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Goramor - Runetotem"] = {
+		["Shimzo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Shaekhan - Zul'jin"] = {
@@ -76,7 +76,7 @@ KalielsTrackerDB = {
 		["Migimong - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Zulbathal - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Fantastiburo - Argent Dawn"] = {

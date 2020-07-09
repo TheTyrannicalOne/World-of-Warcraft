@@ -5,6 +5,7 @@ local M = E:GetModule("Misc")
 
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
 
 	local FontStyleList = {
 		NONE = NONE,
@@ -20,11 +21,7 @@ local function configTable()
 		disabled = function() return not E.db.sle.armory.character.enable end,
 		hidden = function() return not E.private.skins.blizzard.enable or not E.private.skins.blizzard.character end,
 		args = {
-			title = {
-				type = "header",
-				name = L["Character Armory"],
-				order = 1,
-			},
+			header = ACH:Header(L["Character Armory"], 1),
 			showWarning = {
 				order = 2,
 				type = "toggle",
@@ -202,8 +199,8 @@ local function configTable()
 						type = 'color',
 						name = L["Gradient Texture Color"],
 						order = 2,
-						get = function(info) 
-							return T.unpack(E.db.sle.armory.character[(info[#info - 1])][(info[#info])])
+						get = function(info)
+							return unpack(E.db.sle.armory.character[(info[#info - 1])][(info[#info])])
 						end,
 						set = function(info, r, g, b, a) E.db.sle.armory.character[(info[#info - 1])][(info[#info])] = { r, g, b, a }; M:UpdateCharacterInfo() end,
 						disabled = function() return E.db.sle.armory.character.enable == false or E.db.sle.armory.character.gradient.enable == false end,
@@ -233,11 +230,7 @@ local function configTable()
 							Hide = HIDE
 						},
 					},
-					space = {
-						type = 'description',
-						name = '',
-						order = 2
-					},
+					spacer1 = ACH:Spacer(2),
 					font = {
 						type = 'select', dialogControl = 'LSM30_Font',
 						name = L["Font"],
@@ -273,7 +266,7 @@ local function configTable()
 			corruptionText = {
 				type = "group",
 				order = 19,
-				name = T.GetSpellInfo(172),
+				name = GetSpellInfo(172),
 				get = function(info) return E.db.sle.armory.character[(info[#info - 1])][(info[#info])] end,
 				set = function(info, value) E.db.sle.armory.character[(info[#info - 1])][(info[#info])] = value; CA:Update_SlotCorruption(); Armory:UpdateSharedStringsFonts("Character"); Armory:UpdateCharacterInfo() end,
 				args = {
@@ -293,11 +286,7 @@ local function configTable()
 						name = L["Icon"],
 						type = "toggle",
 					},
-					space = {
-						order = 3,
-						type = "description",
-						name = "",
-					},
+					spacer1 = ACH:Spacer(3),
 					xOffset = {
 						type = 'range',
 						name = L["X-Offset"],
@@ -310,11 +299,7 @@ local function configTable()
 						order = 11,
 						min = -40, max = 40, step = 1,
 					},
-					space2 = {
-						order = 15,
-						type = "description",
-						name = "",
-					},
+					spacer2 = ACH:Spacer(15),
 					font = {
 						type = 'select', dialogControl = 'LSM30_Font',
 						name = L["Font"],
@@ -355,7 +340,7 @@ local function configTable()
 					},
 					customTexture = {
 						type = 'input',
-						name = L["Custom Image Path"],
+						name = L["Custom Texture"],
 						order = 2,
 						get = function() return E.db.sle.armory.character.background.customTexture end,
 						set = function(_, value) E.db.sle.armory.character.background.customTexture = value; CA:Update_BG() end,
@@ -376,4 +361,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

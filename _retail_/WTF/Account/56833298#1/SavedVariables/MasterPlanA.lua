@@ -2,35 +2,41 @@
 MasterPlanAG = {
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["lastCacheTime"] = 1590006006,
+			["class"] = "WARRIOR",
 			["summary"] = {
 				["lastOilTime"] = 1590000294,
 				["ti2"] = 122486,
 				["inProgress"] = {
-					[584] = 1590017694,
-					[263] = 1590025487,
+					[394] = 1590029068,
+					[539] = 1590017698,
 					[674] = 1590014680,
 					[564] = 1590017700,
 					[538] = 1590014698,
 					[575] = 1590046906,
-					[394] = 1590029068,
-					[539] = 1590017698,
+					[584] = 1590017694,
+					[263] = 1590025487,
 				},
 				["ti3"] = 127855,
-				["tt1"] = 1589554471,
 				["ti1"] = 118531,
+				["tt1"] = 1589554471,
 				["tt3"] = 1589210986,
 				["tt2"] = 1589692238,
 			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 3559,
 			["curOil"] = 88070,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1590006006,
+			["curRes"] = 3559,
+			["faction"] = "Horde",
 		},
 		["Tyrannithal"] = {
 			["faction"] = "Horde",
 			["class"] = "DEMONHUNTER",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Dalaran"] = {
@@ -65,12 +71,6 @@ MasterPlanAG = {
 		["Darnastris"] = {
 			["class"] = "MAGE",
 			["faction"] = "Alliance",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
 		},
 	},
 	["Zul'jin"] = {

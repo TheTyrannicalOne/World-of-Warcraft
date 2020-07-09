@@ -1,19 +1,15 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
-local DTP = SLE:GetModule('Datatexts')
 
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
 
 	E.Options.args.sle.args.modules.args.datatext.args.sldatatext.args.slguild = {
 		type = "group",
 		name = L["S&L Guild"],
 		order = 4,
 		args = {
-			header = {
-				order = 1,
-				type = "description",
-				name = L["These options are for modifying the Shadow & Light Guild datatext."],
-			},
+			desc = ACH:Description(L["These options are for modifying the Shadow & Light Guild datatext."], 1, "large"),
 			combat = {
 				order = 2,
 				type = "toggle",
@@ -111,4 +107,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

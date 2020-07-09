@@ -1,8 +1,34 @@
-local SLE, T, E, L, V, P, G = unpack(select(2, ...))
-local M = SLE:GetModule("Misc")
+local SLE, _, E, L = unpack(select(2, ...))
+
+--GLOBALS: unpack, select, tinsert
+local tinsert = tinsert
+
+L["SLE_CYR_COM_DESC"] = [[
+- /rl
+- /in
+- /ec
+- /elvui
+- /bgstats
+- /hellokitty
+- /hellokittyfix
+- /harlemshake
+- /egrid
+- /moveui
+- /resetui
+- /kb]]
+L["SLE_CYR_DEVCOM_DESC"] = [[
+- /luaerror
+- /frame
+- /framelist
+- /texlist
+- /cpuimpact
+- /cpuusage
+- /enableblizzard]]
 
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
+
 	--Main options group
 	E.Options.args.sle.args.advanced = {
 		type = "group",
@@ -11,16 +37,8 @@ local function configTable()
 		get = function(info) return E.global.sle.advanced[ info[#info] ] end,
 		set = function(info, value) E.global.sle.advanced[ info[#info] ] = value; end,
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = L["Advanced Options"],
-			},
-			info = {
-				order = 2,
-				type = "description",
-				name = L["SLE_Advanced_Desc"],
-			},
+			header = ACH:Header(L["Advanced Options"], 1),
+			info = ACH:Description(L["SLE_Advanced_Desc"], 2),
 			general = {
 				order = 3,
 				type = "toggle",
@@ -71,22 +89,23 @@ local function configTable()
 				get = function(info) return E.global.sle.advanced.cyrillics[ info[#info] ] end,
 				set = function(info, value) E.global.sle.advanced.cyrillics[ info[#info] ] = value; E:StaticPopup_Show("GLOBAL_RL") end,
 				args = {
-					info = {
-						order = 1,
-						type = "description",
-						name = L["SLE_CYR_DESC"],
-					},
+					info = ACH:Description(L["SLE_CYR_DESC"], 1),
 					commands = {
 						order = 2,
 						type = "toggle",
 						name = L["Commands"],
 						desc = L["SLE_CYR_COM_DESC"],
+						descStyle = "inline",
+						width = "full",
 					},
+					devCommandsInfo = ACH:Description(L["SLE_CYR_DEV_DESC"], 3),
 					devCommands = {
-						order = 3,
+						order = 4,
 						type = "toggle",
 						name = L["Dev Commands"],
 						desc = L["SLE_CYR_DEVCOM_DESC"],
+						descStyle = "inline",
+						width = "full",
 					},
 				},
 			},
@@ -94,4 +113,4 @@ local function configTable()
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

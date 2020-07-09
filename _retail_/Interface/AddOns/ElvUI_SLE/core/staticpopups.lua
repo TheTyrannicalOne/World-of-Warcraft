@@ -2,44 +2,23 @@ local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local CLOSE = CLOSE
 local ACCEPT = ACCEPT
 local CANCEL = CANCEL
-local _G = _G
 local ReloadUI = ReloadUI
 
 --Version check
 E.PopupDialogs["VERSION_MISMATCH"] = {
-	text = SLE:MismatchText(),
+	text = format(L["MSG_SLE_ELV_OUTDATED"], SLE.elvV, SLE.elvR),
 	button1 = CLOSE,
 	timeout = 0,
 	whileDead = 1,
 	preferredIndex = 3,
 }
 
---Chat stuff
-E.PopupDialogs["SLE_CHAT_HISTORY_CLEAR"] = {
-	text = L["This will clear your chat history and reload your UI.\nContinue?"],
-	button1 = ACCEPT,
-	button2 = CANCEL,
-	OnAccept = function(self) if _G["ElvCharacterDB"].ChatHistoryLog then T.twipe(_G["ElvCharacterDB"].ChatHistoryLog); ReloadUI() end end,
-	timeout = 0,
-	whileDead = 1,
-	hideOnEscape = false,
-}
-
-E.PopupDialogs["SLE_EDIT_HISTORY_CLEAR"] = {
-	text = L["This will clear your editbox history and reload your UI.\nContinue?"],
-	button1 = ACCEPT,
-	button2 = CANCEL,
-	OnAccept = function(self) if _G["ElvCharacterDB"].ChatEditHistory then T.twipe(_G["ElvCharacterDB"].ChatEditHistory); ReloadUI() end end,
-	timeout = 0,
-	whileDead = 1,
-	hideOnEscape = false,
-}
 --Do you sware you are not an idiot
 E.PopupDialogs["SLE_ADVANCED_POPUP"] = {
 	text = L["SLE_ADVANCED_POPUP_TEXT"],
 	button1 = L["I Swear"],
 	button2 = DECLINE,
-	OnAccept = function() 
+	OnAccept = function()
 		E.global.sle.advanced.confirmed = true
 		E.global.sle.advanced.general = true
 	end,
@@ -58,8 +37,8 @@ E.PopupDialogs['SLE_CONFIRM_DELETE_CURRENCY_CHARACTER'] = {
 --Incompatibility messages
 E.PopupDialogs["ENHANCED_SLE_INCOMPATIBLE"] = {
 	text = L["Oh lord, you have got ElvUI Enhanced and Shadow & Light both enabled at the same time. Select an addon to disable."],
-	OnAccept = function() T.DisableAddOn("ElvUI_Enhanced"); ReloadUI() end,
-	OnCancel = function() T.DisableAddOn("ElvUI_SLE"); ReloadUI() end,
+	OnAccept = function() DisableAddOn("ElvUI_Enhanced"); ReloadUI() end,
+	OnCancel = function() DisableAddOn("ElvUI_SLE"); ReloadUI() end,
 	button1 = 'ElvUI Enhanced',
 	button2 = 'Shadow & Light',
 	timeout = 0,
@@ -69,8 +48,8 @@ E.PopupDialogs["ENHANCED_SLE_INCOMPATIBLE"] = {
 
 E.PopupDialogs["LOOTCONFIRM_SLE_INCOMPATIBLE"] = {
 	text = L["You have got Loot Confirm and Shadow & Light both enabled at the same time. Select an addon to disable."],
-	OnAccept = function() T.DisableAddOn("LootConfirm"); ReloadUI() end,
-	OnCancel = function() T.DisableAddOn("ElvUI_SLE"); ReloadUI() end,
+	OnAccept = function() DisableAddOn("LootConfirm"); ReloadUI() end,
+	OnCancel = function() DisableAddOn("ElvUI_SLE"); ReloadUI() end,
 	button1 = 'Loot Confirm',
 	button2 = 'Shadow & Light',
 	timeout = 0,
@@ -80,8 +59,8 @@ E.PopupDialogs["LOOTCONFIRM_SLE_INCOMPATIBLE"] = {
 
 E.PopupDialogs["TRANSAB_SLE_INCOMPATIBLE"] = {
 	text = L["You have got ElvUI Transparent Actionbar Backdrops and Shadow & Light both enabled at the same time. Select an addon to disable."],
-	OnAccept = function() T.DisableAddOn("ElvUITransparentActionbars"); ReloadUI() end,
-	OnCancel = function() T.DisableAddOn("ElvUI_SLE"); ReloadUI() end,
+	OnAccept = function() DisableAddOn("ElvUITransparentActionbars"); ReloadUI() end,
+	OnCancel = function() DisableAddOn("ElvUI_SLE"); ReloadUI() end,
 	button1 = 'Transparent Actionbar Backdrops',
 	button2 = 'Shadow & Light',
 	timeout = 0,
@@ -90,8 +69,8 @@ E.PopupDialogs["TRANSAB_SLE_INCOMPATIBLE"] = {
 }
 
 E.PopupDialogs["SLE_INCOMPATIBLE_ADDON"] = {
-	text = T.gsub(L["INCOMPATIBLE_ADDON"], "ElvUI", "Shadow & Light"),
-	OnAccept = function(self) T.DisableAddOn(E.PopupDialogs["SLE_INCOMPATIBLE_ADDON"].addon); ReloadUI(); end,
+	text = gsub(L["INCOMPATIBLE_ADDON"], "ElvUI", "Shadow & Light"),
+	OnAccept = function(self) DisableAddOn(E.PopupDialogs["SLE_INCOMPATIBLE_ADDON"].addon); ReloadUI(); end,
 	OnCancel = function(self) E.PopupDialogs["SLE_INCOMPATIBLE_ADDON"].optiontable[E.PopupDialogs["SLE_INCOMPATIBLE_ADDON"].value] = false; ReloadUI(); end,
 	timeout = 0,
 	whileDead = 1,
@@ -133,7 +112,7 @@ E.PopupDialogs["SLE_APPLY_FONT_WARNING"] = {
 
 		E.db.sle.media.fonts.gossip.font = font
 		E.db.sle.media.fonts.gossip.size = fontSize
-		E.db.sle.media.fonts.gossip.outline = fontOutline
+		--E.db.sle.media.fonts.gossip.outline = fontOutline
 
 		E.db.sle.media.fonts.objective.font = font
 		E.db.sle.media.fonts.objective.size = fontSize

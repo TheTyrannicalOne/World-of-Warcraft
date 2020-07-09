@@ -1,5 +1,7 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local EM = SLE:GetModule('EquipManager')
+
+local format = format
 local NONE = NONE
 local PAPERDOLL_EQUIPMENTMANAGER = PAPERDOLL_EQUIPMENTMANAGER
 local SPECIALIZATION_PRIMARY = SPECIALIZATION_PRIMARY
@@ -14,7 +16,7 @@ local C_EquipmentSet = C_EquipmentSet
 
 local function FillTable()
 
-	T.twipe(sets)
+	wipe(sets)
 	sets["NONE"] = NONE
 	local equipmentSetIDs = C_EquipmentSet.GetEquipmentSetIDs()
 	for index = 1, C_EquipmentSet.GetNumEquipmentSets() do
@@ -28,9 +30,10 @@ end
 
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
 
 	local function ConstructSpecOption(ORDER, ID, OPTION)
-		local SpecID, SpecName = T.GetSpecializationInfo(ID)
+		local SpecID, SpecName = GetSpecializationInfo(ID)
 		if not SpecID then return nil end
 		local config = {
 			order = ORDER,
@@ -40,11 +43,7 @@ local function configTable()
 			get = function(info) return EM.db[OPTION][ info[#info] ] end,
 			set = function(info, value) EM.db[OPTION][ info[#info] ] = value; end,
 			args = {
-				infoz = {
-					order = 1,
-					type = "description",
-					name =  T.format(L["Equip this set when switching to specialization %s."], SpecName),
-				},
+				info = ACH:Description(L["Equip this set when switching to specialization %s."], 1),
 				general = {
 					order = 2,
 					type = "select",
@@ -98,16 +97,8 @@ local function configTable()
 		order = 1,
 		name = L["Equipment Manager"],
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = L["Equipment Manager"],
-			},
-			intro = {
-				order = 2,
-				type = 'description',
-				name = L["EM_DESC"],
-			},
+			header = ACH:Header(L["Equipment Manager"], 1),
+			intro = ACH:Description(L["EM_DESC"], 2),
 			enable = {
 				type = "toggle",
 				order = 3,
@@ -148,15 +139,11 @@ local function configTable()
 						get = function(info) return EM.db.conditions end,
 						set = function(info, value) EM.db.conditions = value; EM:UpdateTags() end
 					},
-					help = {
-						order = 2,
-						type = 'description',
-						name = L["SLE_EM_TAGS_HELP"],
-					},
+					help = ACH:Description(L["SLE_EM_TAGS_HELP"], 2),
 				},
 			},
 		},
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

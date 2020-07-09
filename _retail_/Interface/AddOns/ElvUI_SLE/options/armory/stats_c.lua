@@ -1,5 +1,4 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
-local Armory = SLE:GetModule("Armory_Core")
 local SA = SLE:GetModule("Armory_Stats")
 local M = E:GetModule("Misc")
 
@@ -69,7 +68,7 @@ local function configTable()
 							E.db.sle.armory.stats[ info[#info] ] = {}
 							local t = E.db.sle.armory.stats[ info[#info] ]
 							t.r, t.g, t.b, t.a = r, g, b, a
-							M:UpdateCharacterItemLevel() 
+							M:UpdateCharacterItemLevel()
 							PaperDollFrame_UpdateStats()
 						end,
 					},
@@ -188,7 +187,7 @@ local function configTable()
 						name = STAT_CATEGORY_ATTRIBUTES,
 						args = {
 							HEALTH = { order = 1,type = "toggle",name = HEALTH,},
-							POWER = { order = 2,type = "toggle",name = _G[T.select(2, UnitPowerType("player"))],},
+							POWER = { order = 2,type = "toggle",name = _G[select(2, UnitPowerType("player"))],},
 							ALTERNATEMANA = { order = 3,type = "toggle",name = ALTERNATE_RESOURCE_TEXT,},
 							MOVESPEED = { order = 4,type = "toggle",name = STAT_SPEED,},
 						},
@@ -235,9 +234,8 @@ local function configTable()
 					},
 				},
 			},
-			
 		},
 	}
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

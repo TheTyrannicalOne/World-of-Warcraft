@@ -26,20 +26,13 @@ V["sle"] = {
 			["skinmail"] = false,
 			["skingarrison"] = false,
 		},
+		rectangle = false,
 	},
-
-	["dt"] = {
-		["specswitch"] = {
-			["xOffset"] = -15,
-			["yOffset"] = -7,
-		},
-	},
-
 	["vehicle"] = {
 		["enable"] = false,
 		["numButtons"] = 7,
 	},
-	
+
 	["professions"] = {
 		["deconButton"] = {
 			["enable"] = true,
@@ -67,25 +60,31 @@ V["sle"] = {
 			["points"] = {},
 		},
 		["shadows"] = {
-			["vehicle"] = false,
-			["player"] = false,
-			["playerLegacy"] = false,
-			["target"] = false,
-			["targetLegacy"] = false,
-			["targettarget"] = false,
-			["targettargetLegacy"] = false,
+			["arena"] = false,
+			["arenaLegacy"] = false,
+			["boss"] = false,
+			["bossLegacy"] = false,
 			["focus"] = false,
 			["focusLegacy"] = false,
 			["focustarget"] = false,
 			["focustargetLegacy"] = false,
+			["party"] = false,
+			["partyLegacy"] = false,
 			["pet"] = false,
 			["petLegacy"] = false,
 			["pettarget"] = false,
 			["pettargetLegacy"] = false,
-			["boss"] = false,
-			["bossLegacy"] = false,
-			["arena"] = false,
-			["arenaLegacy"] = false,
+			["player"] = false,
+			["playerLegacy"] = false,
+			["raid"] = false,
+			["raidLegacy"] = false,
+			["raid40"] = false,
+			["raid40Legacy"] = false,
+			["target"] = false,
+			["targetLegacy"] = false,
+			["targettarget"] = false,
+			["targettargetLegacy"] = false,
+			["vehicle"] = false,
 			["actionbars"] = {
 				["bar1"] = false,
 				["bar2"] = false,
@@ -114,28 +113,23 @@ V["sle"] = {
 				["microbarbuttons"] = false,
 				["petbarbuttons"] = false,
 			},
-			["datatexts"] = {
-				["leftchat"] = false,
-				["righchat"] = false,
-				["panel1"] = false,
-				["panel2"] = false,
-				["panel3"] = false,
-				["panel4"] = false,
-				["panel5"] = false,
-				["panel6"] = false,
-				["panel7"] = false,
-				["panel8"] = false,
-				-- ["leftminipanel"] = false,
-				-- ["rightminipanel"] = false,
-			},
 			["minimap"] = false,
 			["chat"] = {
 				["left"] = false,
 				["right"] = false,
 			},
+			["datatexts"] = {
+				["leftchat"] = false,
+				["righchat"] = false,
+			},
+			["databars"] = {
+				["honorbar"] = false,
+				["expbar"] = false,
+				["repbar"] = false,
+				["azeritebar"] = false,
+			},
 		},
 	},
-	
 	["unitframe"] = {
 		["resizeHealthPrediction"] = false,
 		["statusbarTextures"] = {
@@ -145,31 +139,6 @@ V["sle"] = {
 			["class"] = false,
 		},
 	},
-	
-	["chat"] = {
-		["chatMax"] = 128,
-		["chatHistory"] = {
-			["CHAT_MSG_INSTANCE_CHAT"] = true,
-			["CHAT_MSG_INSTANCE_CHAT_LEADER"] = true,
-			["CHAT_MSG_BN_WHISPER"] = true,
-			["CHAT_MSG_BN_WHISPER_INFORM"] = true,
-			["CHAT_MSG_CHANNEL"] = true,
-			["CHAT_MSG_EMOTE"] = true,
-			["CHAT_MSG_GUILD"] = true,
-			["CHAT_MSG_GUILD_ACHIEVEMENT"] = true,
-			["CHAT_MSG_OFFICER"] = true,
-			["CHAT_MSG_PARTY"] = true,
-			["CHAT_MSG_PARTY_LEADER"] = true,
-			["CHAT_MSG_RAID"] = true,
-			["CHAT_MSG_RAID_LEADER"] = true,
-			["CHAT_MSG_RAID_WARNING"] = true,
-			["CHAT_MSG_SAY"] = true,
-			["CHAT_MSG_WHISPER"] = true,
-			["CHAT_MSG_WHISPER_INFORM"] = true,
-			["CHAT_MSG_YELL"] = true,
-			["size"] = 128,
-		},
-	},
 	["pvp"] = {
 		["KBbanner"] = {
 			["enable"] = false,
@@ -177,7 +146,6 @@ V["sle"] = {
 		},
 	},
 	["actionbars"] = {
-		["oorBind"] = false,
 		["checkedtexture"] = false,
 		["checkedColor"] = {r = 0, g = 1, b = 0, a = 0.3},
 	},
@@ -268,7 +236,6 @@ if G["profileCopy"] then
 		["chat"] = {
 			["general"] = true,
 			["justify"] = true,
-			["tab"] = true,
 			["invite"] = true,
 		},
 		["databars"] = {
@@ -277,24 +244,10 @@ if G["profileCopy"] then
 			["honor"] = true,
 			["azerite"] = true,
 		},
-		["datatexts"] = {
-			["panel1"] = true,
-			["panel2"] = true,
-			["panel3"] = true,
-			["panel4"] = true,
-			["panel5"] = true,
-			["panel6"] = true,
-			["panel7"] = true,
-			["panel8"] = true,
-			["leftchat"] = true,
-			["rightchat"] = true,
-			["general"] = true,
-		},
 		["dt"] = {
 			["friends"] = true,
 			["guild"] = true,
 			["mail"] = true,
-			["durability"] = true,
 			["currency"] = true,
 			["regen"] = true,
 		},

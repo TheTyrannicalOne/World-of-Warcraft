@@ -1,7 +1,9 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local UB = SLE:GetModule('UIButtons')
 
+--  GLOBALS: unpack, select, tinsert, pairs, type, ADDONS, DEFAULT, NONE, CUSTOM
 local CUSTOM, NONE, DEFAULT = CUSTOM, NONE, DEFAULT
+local ADDONS = ADDONS
 
 local positionValues = {
 	TOPLEFT = 'TOPLEFT',
@@ -28,22 +30,16 @@ local stratas = {
 
 local function configTable()
 	if not SLE.initialized then return end
+	local ACH = E.Libs.ACH
 	local Bar = UB.Holder
+
 	E.Options.args.sle.args.modules.args.uibuttons = {
 		type = "group",
 		name = L["UI Buttons"],
 		order = 1,
 		args = {
-			header = {
-				order = 1,
-				type = "header",
-				name = L["UI Buttons"],
-			},
-			intro = {
-				order = 2,
-				type = "description",
-				name = L["UB_DESC"],
-			},
+			header = ACH:Header(L["UI Buttons"], 1),
+			desc = ACH:Description(L["UB_DESC"], 2),
 			enabled = {
 				order = 3,
 				type = "toggle",
@@ -89,7 +85,6 @@ local function configTable()
 					transparent = {
 						order = 3,
 						name = L["Backdrop Template"],
-						desc = L["Change the template used for this backdrop."],
 						type = "select",
 						values = {
 							["NO"] = NONE,
@@ -99,11 +94,7 @@ local function configTable()
 					},
 				},
 			},
-			space = {
-				order = 6,
-				type = 'description',
-				name = "",
-			},
+			spacer1 = ACH:Spacer(6),
 			size = {
 				order = 7,
 				type = "range",
@@ -281,7 +272,7 @@ local function configTable()
 						desc = L["Function called by quick access."],
 						type = "select",
 						values = {
-							["Manager"] = L["AddOns"],
+							["Manager"] = ADDONS,
 						},
 						get = function(info) return E.db.sle.uibuttons.Addon.called end,
 						set = function(info, value) E.db.sle.uibuttons.Addon.called = value; end,
@@ -354,10 +345,10 @@ local function configTable()
 		},
 	}
 	if E.private.sle.uibuttons.style == "dropdown" then
-		for k, v in T.pairs(UB.Holder.Addon) do
-			if k ~= "Toggle" and T.type(v) == "table" and (v.HasScript and v:HasScript("OnClick")) then E.Options.args.sle.args.modules.args.uibuttons.args.Addon.args.called.values[k] = k end
+		for k, v in pairs(UB.Holder.Addon) do
+			if k ~= "Toggle" and type(v) == "table" and (v.HasScript and v:HasScript("OnClick")) then E.Options.args.sle.args.modules.args.uibuttons.args.Addon.args.called.values[k] = k end
 		end
 	end
 end
 
-T.tinsert(SLE.Configs, configTable)
+tinsert(SLE.Configs, configTable)

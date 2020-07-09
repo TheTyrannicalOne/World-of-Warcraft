@@ -1,5 +1,4 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
-	<Script file='AddOnSkins.lua'/>
 	<Script file='actionbars.lua'/>
 	<Script file='afk.lua'/>
 	<Include file='armory\load_armory.xml'/>
@@ -25,6 +24,7 @@
 	<Script file='raidmarkers.lua'/>
 	<Script file='raidroleicons.lua'/>
 	<Include file='sledatatexts\load_datatexts.xml'/>
+	<Script file='tags.lua'/>
 	<Include file='tooltips\load_tooltips.xml'/>
 	<Script file='uibuttons.lua'/>
 	<Include file='unitframes\load_unitframes.xml'/>
