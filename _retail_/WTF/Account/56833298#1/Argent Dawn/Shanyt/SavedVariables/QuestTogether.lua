@@ -1,16 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4  ", -- [1]
-			},
-		},
-		[42234] = {
-			["title"] = "The Valarjar",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[48288] = {
@@ -36,6 +30,12 @@ QuestTogether = {
 			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
 				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[56120] = {
+			["title"] = "The Unshackled",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[56500] = {
@@ -70,10 +70,11 @@ QuestTogether = {
 				"0/4  ", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[44989] = {
@@ -82,10 +83,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[57276] = {
+			["title"] = "Maintaining Focus",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"5/20  ", -- [1]
 			},
 		},
 		[53435] = {
@@ -94,10 +95,10 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[45381] = {
@@ -106,10 +107,10 @@ QuestTogether = {
 				"1/4  ", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"1/4  ", -- [1]
 			},
 		},
 		[57743] = {
@@ -154,10 +155,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57276] = {
-			["title"] = "Maintaining Focus",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"5/20  ", -- [1]
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"0/20  ", -- [1]
 			},
 		},
 		[45172] = {
@@ -172,22 +179,16 @@ QuestTogether = {
 				"1/4  ", -- [1]
 			},
 		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
-			["objectives"] = {
-				"0/20  ", -- [1]
-			},
-		},
 		[50603] = {
 			["title"] = "Voldunai",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"1/4  ", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[31891] = {
@@ -200,18 +201,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/4  ", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

@@ -1,3 +1,6 @@
+Versio 1.10.10
+- Fix a bug in fishing mode management
+
 Version 1.10.9
 - Update LibTourist
 - Bug fixes

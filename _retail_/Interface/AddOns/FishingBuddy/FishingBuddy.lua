@@ -1106,7 +1106,6 @@ local function SetAutoPoleLocation(clear)
     if clear then
         autopoleframe:Hide();
         ClearLastCastTime();
-        StopFishingMode();
         a.x, a.y, a.zone, a.instanceID = nil, nil, nil
     else
         a.x, a.y, a.zone, a.instanceID = FL:GetPlayerZoneCoords();
@@ -1122,15 +1121,17 @@ local function AutoPoleCheck(self, ...)
         local elapsed = (GetTime() - LastCastTime);
         if ( elapsed > FISHINGSPAN ) then
             SetAutoPoleLocation(true)
+            StopFishingMode();
         elseif ( not FishingBuddy.StartedFishing ) then
             StartFishingMode();
             SetAutoPoleLocation()
         elseif (self.zone) then
             if (self.moving) then
                 local distance = FL:GetDistanceTo(self.zone, self.x, self.y)
-                if disstance then
+                if distance then
                     if distance > 50 or (not FishingBuddy.HaveRafts() and distance > 10) then
                         SetAutoPoleLocation(true)
+                        StopFishingMode();
                     end
                 end
             elseif (self.stopped) then
