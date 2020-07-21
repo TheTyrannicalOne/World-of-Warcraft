@@ -1,11 +1,34 @@
 ------------------------------------------------------------------------
-r517 | Zensunim | 2020-04-01 03:05:57 +0000 (Wed, 01 Apr 2020) | 2 lines
+r521 | Zensunim | 2020-07-20 16:42:08 +0000 (Mon, 20 Jul 2020) | 1 line
+Changed paths:
+   M /trunk/GTFO_Spells_BFA.lua
+
+* Eye of Corruption (BFA) is now ignored by default (for real this time)
+------------------------------------------------------------------------
+r520 | Zensunim | 2020-07-19 16:38:06 +0000 (Sun, 19 Jul 2020) | 1 line
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO_Ignore.lua
+   M /trunk/ReadMe.txt
+
+* Eye of Corruption (BFA) is now ignored by default
+------------------------------------------------------------------------
+r519 | Zensunim | 2020-07-18 19:28:42 +0000 (Sat, 18 Jul 2020) | 4 lines
 Changed paths:
    M /trunk/GTFO.lua
    M /trunk/GTFO.toc
+   M /trunk/GTFO.xml
+   A /trunk/GTFO_FF_SL.lua
+   A /trunk/GTFO_Fail_SL.lua
+   M /trunk/GTFO_Ignore.lua
+   M /trunk/GTFO_Spells_BFA.lua
+   A /trunk/GTFO_Spells_SL.lua
+   M /trunk/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua
    M /trunk/ReadMe.txt
 
-4.55.2
-* Trying to fix Twitch/Curse from perpetually marking this out-of-date
+4.56
+* Added support for Shadowlands
+* Removed Eye of Corruption (BFA) from GTFO
+
 ------------------------------------------------------------------------
 

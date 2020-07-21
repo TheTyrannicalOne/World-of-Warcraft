@@ -1504,3 +1504,8 @@ Change Log:
 
 4.55.2
 * Trying to fix Twitch/Curse from perpetually marking this out-of-date
+
+4.56
+* Added support for Shadowlands
+* Eye of Corruption (BFA) is now ignored by default
+
