@@ -1508,4 +1508,7 @@ Change Log:
 4.56
 * Added support for Shadowlands
 * Eye of Corruption (BFA) is now ignored by default
+* Added Shadowlands spells (world)
+* Added SL spells for Halls of Atonement
+* Added SL spells for Plaguefall
 
