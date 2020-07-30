@@ -246,3 +246,4 @@ ElvUI_SLE: enabled
 ElvUI_CliqueDatatext: enabled
 Narcissus: enabled
 Narcissus_Database: enabled
+ElvUI_DTBars2: disabled

@@ -3,21 +3,21 @@ RareShareDB = {
 	["Modules"] = {
 	},
 	["Config"] = {
-		["Sound"] = {
-			["Rares"] = true,
-			["Master"] = true,
-			["Duplicates"] = true,
-		},
+		["ChatAnnounce"] = true,
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["ChatAnnounce"] = true,
-		["OnDeath"] = false,
 		["CChannel"] = {
-			["CID"] = 2,
 			["CName"] = "General - Ramkahen",
+			["CID"] = 2,
+		},
+		["OnDeath"] = false,
+		["Sound"] = {
+			["Rares"] = true,
+			["Master"] = true,
+			["Duplicates"] = true,
 		},
 		["Duplicates"] = true,
 	},

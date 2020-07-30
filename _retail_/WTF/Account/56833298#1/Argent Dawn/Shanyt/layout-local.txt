@@ -6,6 +6,13 @@ X: 0
 Y: 0
 W: 150
 H: 80
+Frame: PlayerPowerBarAlt
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 102
+W: 10
+H: 10
 Frame: ColorPickerFrame
 FrameLevel: 1
 Anchor: CENTER

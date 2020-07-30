@@ -21,6 +21,9 @@ L["Choose a TSM price source"] = true
 L[" hooked into Rematch"] = true
 L[" NOT hooked into Rematch"] = true
 
+L["ON"] = true
+L["OFF"] = true
+
 L["Default is 'DBMinBuyout', one of '/tsm sources'"] = true
 L["Default is 'DBRegionMarketAvg', one of '/tsm sources'"] = true
 L["Please disable 'Compact List Format' in Rematch > Options > Appearance Options."] = true

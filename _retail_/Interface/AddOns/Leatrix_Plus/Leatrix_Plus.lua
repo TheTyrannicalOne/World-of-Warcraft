@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.30 (21st July 2020)
+-- 	Leatrix Plus 8.3.31 (29th July 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "8.3.30"
+	LeaPlusLC["AddonVer"] = "8.3.31"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -80,6 +80,8 @@
 	local SelectGossipAvailableQuest = SelectGossipAvailableQuest or C_GossipInfo.SelectAvailableQuest
 	local SelectGossipActiveQuest = SelectGossipActiveQuest or C_GossipInfo.SelectActiveQuest
 	local SelectGossipOption = SelectGossipOption or C_GossipInfo.SelectOption
+
+	local CloseGossip = CloseGossip or C_GossipInfo.CloseGossip
 
 	local ActionStatus_DisplayMessage = ActionStatus_DisplayMessage or function(self) ActionStatus:DisplayMessage(self) end
 
@@ -311,39 +313,37 @@
 		end
 	end
 
-	-- Check if a name is in your friends list or guild
+	-- Check if a name is in your friends list or guild (does not check realm as realm is unknown for some checks)
 	function LeaPlusLC:FriendCheck(name)
+
+		-- Do nothing if name is empty (such as whispering from the Battle.net app)
+		if not name then return end
 
 		-- Update friends list
 		C_FriendList.ShowFriends()
 
+		-- Remove realm
+		name = strsplit("-", name, 2)
+
 		-- Check character friends
-		for i = 1, C_FriendList.GetNumOnlineFriends() do
+		for i = 1, C_FriendList.GetNumFriends() do
 			-- Return true if name matches with or without realm
 			local charFriendName = C_FriendList.GetFriendInfoByIndex(i).name
-			if name == charFriendName or name == strsplit("-", charFriendName, 2) then
+			charFriendName = strsplit("-", charFriendName, 2)
+			if name == charFriendName then
 				return true
 			end
-		end
-
-		-- Get realm name or set to player's own realm (same realm does not return realm)
-		local void, myRealm = UnitFullName(name)
-		if not myRealm or myRealm == "" then void, myRealm = UnitFullName("player") end
-		if not myRealm or myRealm == "" then return end
-
-		-- Add realm name to character name
-		if not string.find(name, "-") then
-			name = name .. "-" .. myRealm
 		end
 
 		-- Check Battle.net friends
 		local numfriends = BNGetNumFriends()
 		for i = 1, numfriends do
-			local numtoons = BNGetNumFriendGameAccounts(i)
+			local numtoons = C_BattleNet.GetFriendNumGameAccounts(i)
 			for j = 1, numtoons do
-				local void, toon, client, realm = BNGetFriendGameAccountInfo(i, j)
-				local toonname = toon .. "-" ..realm
-				if client == "WoW" and toonname == name then
+				local gameAccountInfo = C_BattleNet.GetFriendGameAccountInfo(i, j)
+				local characterName = gameAccountInfo.characterName
+				local client = gameAccountInfo.clientProgram
+				if client == "WoW" and characterName == name then
 					return true
 				end
 			end
@@ -354,11 +354,8 @@
 		for i = 1, gCount do
 			local gName, void, void, void, void, void, void, void, gOnline, void, void, void, void, gMobile = GetGuildRosterInfo(i)
 			if gOnline and not gMobile then
-				local gCompare = gName
-				if not string.find(gName, "-") then
-					gCompare = gName .. "-" .. myRealm
-				end
-				if gCompare == name then
+				gName = strsplit("-", gName, 2)
+				if gName == name then
 					return true
 				end
 			end
@@ -530,14 +527,14 @@
 		if LeaPlusLC["AutoConfirmRole"] == "On" then
 			LFDRoleCheckPopupAcceptButton:SetScript("OnShow", function()
 				local leader = ""
-				for i=1, GetNumSubgroupMembers() do 
-					if (UnitIsGroupLeader("party"..i)) then 
-						leader = UnitName("party"..i);
-						break;
+				for i = 1, GetNumSubgroupMembers() do 
+					if UnitIsGroupLeader("party" .. i) then 
+						leader = UnitName("party" .. i)
+						break
 					end
 				end
-				if (LeaPlusLC:FriendCheck(leader)) then
-					LFDRoleCheckPopupAcceptButton:Click();
+				if LeaPlusLC:FriendCheck(leader) then
+					LFDRoleCheckPopupAcceptButton:Click()
 				end
 			end)
 		else
@@ -2615,6 +2612,7 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["NoCombatLogTab"] == "On" then
+
 			-- Ensure combat log is docked
 			if ChatFrame2.isDocked then
 				-- Set combat log attributes when chat windows are updated
@@ -2629,6 +2627,44 @@
 					LeaPlusLC:Print("Combat log cannot be hidden while undocked.")
 				end)
 			end
+
+			-- ElvUI Fix
+			local eFixFuncApplied, eFixHookApplied
+			local function ElvUIFix()
+				if eFixFuncApplied then return end
+				local E = unpack(ElvUI)
+				if E.private.chat.enable then
+					C_Timer.After(2, function()
+						LeaPlusLC:Print("To hide the combat log, you need to disable the chat module in ElvUI.")
+						return
+					end)
+				end
+				hooksecurefunc(E, "PLAYER_ENTERING_WORLD", function()
+					if eFixHookApplied then return end
+					ChatFrame2Tab:EnableMouse(false)
+					ChatFrame2Tab:SetText(" ")
+					ChatFrame2Tab:SetScale(0.01)
+					ChatFrame2Tab:SetWidth(0.01)
+					ChatFrame2Tab:SetHeight(0.01)
+					eFixHookApplied = true
+				end)
+				eFixFuncApplied = true
+			end
+
+			-- Run ElvUI fix when ElvUI has loaded
+			if IsAddOnLoaded("ElvUI") then
+				ElvUIFix()
+			else
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "ElvUI" then
+						ElvUIFix()
+						waitFrame:UnregisterAllEvents()
+					end
+				end)
+			end
+
 		end
 
 		----------------------------------------------------------------------
@@ -5002,10 +5038,12 @@
 							local id = tonumber(string.match(chatMessage, "k:(%d+):%d+:BN_WHISPER:"))
 							local totalBNFriends = BNGetNumFriends()
 							for friendIndex = 1, totalBNFriends do
-								local presenceID, name, tag = BNGetFriendInfo(friendIndex)
-								if id == presenceID then
-									tag = strsplit("#", tag)
-									chatMessage =  gsub(chatMessage, "|HBNplayer:.*:.*:.*:BN_WHISPER:.*:", "[" .. tag .. "]:")
+								local accountInfo = C_BattleNet.GetFriendAccountInfo(friendIndex)
+								local bnetAccountID = accountInfo.bnetAccountID
+								local battleTag = accountInfo.battleTag
+								if id == bnetAccountID then
+									battleTag = strsplit("#", battleTag)
+									chatMessage =  gsub(chatMessage, "|HBNplayer:.*:.*:.*:BN_WHISPER:.*:", "[" .. battleTag .. "]:")
 								end
 							end
 						end
@@ -7945,17 +7983,19 @@
 			if (not UnitExists("party1") or UnitIsGroupLeader("player") or UnitIsGroupAssistant("player")) and strlower(strtrim(arg1)) == strlower(LeaPlusLC["InvKey"]) then
 				if not LeaPlusLC:IsInLFGQueue() then
 					if event == "CHAT_MSG_WHISPER" then
-						if LeaPlusLC:FriendCheck(strsplit("-", arg2, 2)) or LeaPlusLC["InviteFriendsOnly"] == "Off" then
-							InviteUnit(arg2)
+						if LeaPlusLC:FriendCheck(arg2) or LeaPlusLC["InviteFriendsOnly"] == "Off" then
+							C_PartyInfo.InviteUnit(arg2)
 						end
 					elseif event == "CHAT_MSG_BN_WHISPER" then
 						local presenceID = select(11, ...)
 						if presenceID and BNIsFriend(presenceID) then
-							local index = BNGetFriendIndex(presenceID);
+							local index = BNGetFriendIndex(presenceID)
 							if index then
-								local presenceID, presenceName, battleTag, isBattleTagPresence, toonName, toonID = BNGetFriendInfo(index);
-								if toonID then
-									BNInviteFriend(toonID);
+								local accountInfo = C_BattleNet.GetFriendAccountInfo(index)
+								local gameAccountInfo = accountInfo.gameAccountInfo
+								local gameAccountID = gameAccountInfo.gameAccountID
+								if gameAccountID then
+									BNInviteFriend(gameAccountID)
 								end
 							end
 						end
@@ -7970,8 +8010,8 @@
 		----------------------------------------------------------------------
 
 		if event == "DUEL_REQUESTED" and not LeaPlusLC:FriendCheck(arg1) then
-			CancelDuel();
-			StaticPopup_Hide("DUEL_REQUESTED");
+			CancelDuel()
+			StaticPopup_Hide("DUEL_REQUESTED")
 			return
 		end
 
@@ -8038,12 +8078,12 @@
 
 		if event == "CONFIRM_SUMMON" then
 			if not UnitAffectingCombat("player") then
-				local sName = GetSummonConfirmSummoner()
-				local sLocation = GetSummonConfirmAreaName()
+				local sName = C_SummonInfo.GetSummonConfirmSummoner()
+				local sLocation = C_SummonInfo.GetSummonConfirmAreaName()
 				LeaPlusLC:Print(L["The summon from"] .. " " .. sName .. " (" .. sLocation .. ") " .. L["will be automatically accepted in 10 seconds unless cancelled."])
 				C_Timer.After(10, function()
-					local sNameNew = GetSummonConfirmSummoner()
-					local sLocationNew = GetSummonConfirmAreaName()
+					local sNameNew = C_SummonInfo.GetSummonConfirmSummoner()
+					local sLocationNew = C_SummonInfo.GetSummonConfirmAreaName()
 					if sName == sNameNew and sLocation == sLocationNew then
 						-- Automatically accept summon after 10 seconds if summoner name and location have not changed
 						C_SummonInfo.ConfirmSummon()
@@ -8063,15 +8103,15 @@
 			-- If a friend, accept if you're accepting friends and not in Dungeon Finder
 			if (LeaPlusLC["AcceptPartyFriends"] == "On" and LeaPlusLC:FriendCheck(arg1)) then
 				if not LeaPlusLC:IsInLFGQueue() then
-					AcceptGroup();
+					AcceptGroup()
 					for i=1, STATICPOPUP_NUMDIALOGS do
 						if _G["StaticPopup"..i].which == "PARTY_INVITE" then
 							_G["StaticPopup"..i].inviteAccepted = 1
-							StaticPopup_Hide("PARTY_INVITE");
+							StaticPopup_Hide("PARTY_INVITE")
 							break
 						elseif _G["StaticPopup"..i].which == "PARTY_INVITE_XREALM" then
 							_G["StaticPopup"..i].inviteAccepted = 1
-							StaticPopup_Hide("PARTY_INVITE_XREALM");
+							StaticPopup_Hide("PARTY_INVITE_XREALM")
 							break
 						end
 					end
@@ -8088,9 +8128,9 @@
 				if LeaPlusLC:FriendCheck(arg1) then
 					return
 				else
-					DeclineGroup();
-					StaticPopup_Hide("PARTY_INVITE");
-					StaticPopup_Hide("PARTY_INVITE_XREALM");
+					DeclineGroup()
+					StaticPopup_Hide("PARTY_INVITE")
+					StaticPopup_Hide("PARTY_INVITE_XREALM")
 					-- Decline invite to party sync group request
 					if QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Decline:IsShown() then
 						QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Decline:Click()
@@ -9267,7 +9307,7 @@
 								else
 									tempGetQuestInfo = C_QuestLog.GetQuestInfo
 								end
-								local questCompleted = IsQuestFlaggedCompleted(arg1)
+								local questCompleted = C_QuestLog.IsQuestFlaggedCompleted(arg1)
 								local questTitle = C_TaskQuest.GetQuestInfoByQuestID(arg1) or tempGetQuestInfo(arg1)
 								if questTitle then
 									if success then

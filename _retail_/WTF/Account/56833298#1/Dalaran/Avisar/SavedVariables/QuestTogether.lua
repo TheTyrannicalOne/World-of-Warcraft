@@ -19,9 +19,11 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[57744] = {
@@ -43,24 +45,20 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[57006] = {
@@ -71,15 +69,18 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[56378] = {
+			["title"] = "The Missing Crew",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[39060] = {
@@ -90,9 +91,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[44720] = {
-			["title"] = "A Call to Action",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[54438] = {
@@ -101,10 +103,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[36615] = {
@@ -112,12 +114,6 @@ QuestTogether = {
 			["objectives"] = {
 				"172/2000 Garrison Resources gathered (Optional)", -- [1]
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[56499] = {
@@ -128,23 +124,28 @@ QuestTogether = {
 				"0/1 Win a Battleground", -- [3]
 			},
 		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
 		[50599] = {
 			["title"] = "Proudmoore Admiralty",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[56119] = {
+			["title"] = "The Waveblade Ankoan",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[31486] = {
@@ -187,11 +188,9 @@ QuestTogether = {
 				"10/25 Slay Horde Players", -- [1]
 			},
 		},
-		[56211] = {
-			["title"] = "Scrying Stones",
+		[44720] = {
+			["title"] = "A Call to Action",
 			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[54485] = {
@@ -203,8 +202,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

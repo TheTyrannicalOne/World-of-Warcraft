@@ -21,6 +21,9 @@ L["Choose a TSM price source"] = "Gib eine TSM-Preisquelle ein (eine von '/tsm s
 L[" hooked into Rematch"] = " Rematch wurde erweitert"
 L[" NOT hooked into Rematch"] = "Rematch wurde nicht erweitert"
 
+L["ON"] = "EIN"
+L["OFF"] = "AUS"
+
 L["Default is 'DBMinBuyout', one of '/tsm sources'"] = "z.B. 'DBMinBuyout', eine von '/tsm sources'"
 L["Default is 'DBRegionMarketAvg', one of '/tsm sources'"] = "z.B. 'DBRegionMarketAvg', eine von '/tsm sources'"
 L["Please disable 'Compact List Format' in Rematch > Options > Appearance Options."] = "Bitte 'Kompakte Listen' unter Erscheinungsoptionen in den Optionen von Rematch ausschalten."

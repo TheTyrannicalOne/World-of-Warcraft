@@ -2,644 +2,6 @@
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 		{
-			"gg", -- [1]
-			"Magerize-Mal'Ganis", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Magerize-Mal'Ganis", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1180, -- [11]
-			"Player-3684-09C87245", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Magerize-Mal'Ganis|r",
-			[51] = 1587844986,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [1]
-		{
-			"yessss |cffa335ee|Hitem:163360::::::::120:259::23:3:5845:1622:4786:::|h[Honorbound Outrider's Drape]|h|r", -- [1]
-			"Raenten-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Raenten-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1199, -- [11]
-			"Player-3683-0BD26271", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Raenten-Dalaran|r",
-			[51] = 1587845002,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [2]
-		{
-			"Severe Dusting on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			6187, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1587853314,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
-			"|cffffff00Warbeast Kraal is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"4. LocalDefense - Dazar'alor", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			4, -- [8]
-			"LocalDefense - Dazar'alor", -- [9]
-			0, -- [10]
-			314, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1587927287,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"he's at 62.94, 15.04", -- [1]
-			"Gorggash-Medivh", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gorggash-Medivh", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			779, -- [11]
-			"Player-62-0BC3B4E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cGorggash-Medivh|r",
-			[51] = 1587930433,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [5]
-		{
-			"alpaca found?", -- [1]
-			"Invictuz-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Invictuz-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			780, -- [11]
-			"Player-61-0C8BE217", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Invictuz-Zul'jin|r",
-			[51] = 1587930440,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [6]
-		{
-			"62, 15", -- [1]
-			"Anzhelika-Aggramar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Anzhelika-Aggramar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			783, -- [11]
-			"Player-106-0409701C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcAnzhelika-Aggramar|r",
-			[51] = 1587930455,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [7]
-		{
-			"where shoudl I head?", -- [1]
-			"Invictuz-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Invictuz-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			784, -- [11]
-			"Player-61-0C8BE217", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Invictuz-Zul'jin|r",
-			[51] = 1587930490,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [8]
-		{
-			"khartut's tomb, north east", -- [1]
-			"Gorggash-Medivh", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gorggash-Medivh", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			786, -- [11]
-			"Player-62-0BC3B4E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cGorggash-Medivh|r",
-			[51] = 1587930511,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [9]
-		{
-			"found?", -- [1]
-			"Invictuz-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Invictuz-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			788, -- [11]
-			"Player-61-0C8BE217", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Invictuz-Zul'jin|r",
-			[51] = 1587930536,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [10]
-		{
-			"yep", -- [1]
-			"Gorggash-Medivh", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gorggash-Medivh", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			791, -- [11]
-			"Player-62-0BC3B4E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cGorggash-Medivh|r",
-			[51] = 1587930541,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [11]
-		{
-			"this will be my 7th time to feed it. i have to find it again tomorrow to get the mount correct?", -- [1]
-			"Kaeric-Thunderhorn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kaeric-Thunderhorn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			792, -- [11]
-			"Player-105-08D20E8A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Kaeric-Thunderhorn|r",
-			[51] = 1587930545,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [12]
-		{
-			"same just 1 more day", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			794, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1587930564,
-			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [13]
-		{
-			"tyfp", -- [1]
-			"Zenophie-Mal'Ganis", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zenophie-Mal'Ganis", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			797, -- [11]
-			"Player-3684-0A0AE590", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Zenophie-Mal'Ganis|r",
-			[51] = 1587930569,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [14]
-		{
-			"thanks everyone. glhf", -- [1]
-			"Kaeric-Thunderhorn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kaeric-Thunderhorn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			799, -- [11]
-			"Player-105-08D20E8A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Kaeric-Thunderhorn|r",
-			[51] = 1587930578,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [15]
-		{
-			"Scoutmaster Moswen 44.21% ~(69.63, 41.7)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Uldum", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Uldum", -- [9]
-			0, -- [10]
-			822, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1587931055,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"Congrats", -- [1]
-			"Geenon-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			891, -- [11]
-			"Player-75-0AD86CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecGeenon|r",
-			[51] = 1587931994,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [17]
-		{
-			"that's those finally done", -- [1]
-			"Saleness-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			892, -- [11]
-			"Player-75-046479F3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Saleness|r",
-			[51] = 1587932002,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [18]
-		{
-			":-D", -- [1]
-			"Geenon-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			893, -- [11]
-			"Player-75-0AD86CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecGeenon|r",
-			[51] = 1587932006,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [19]
-		{
-			"ONLY TOOK ME LIKE 3 YEARS HURR HURR", -- [1]
-			"Saleness-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			896, -- [11]
-			"Player-75-046479F3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Saleness|r",
-			[51] = 1587932028,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [20]
-		{
-			"hehe", -- [1]
-			"Geenon-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			898, -- [11]
-			"Player-75-0AD86CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecGeenon|r",
-			[51] = 1587932051,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [21]
-		{
-			"Congrats", -- [1]
-			"Geenon-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			989, -- [11]
-			"Player-75-0AD86CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecGeenon|r",
-			[51] = 1587932332,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [22]
-		{
-			"Zror'um the Infinite 29.74% ~(71.03, 40.69)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			1334, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1587935445,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"Kilxl the Gaping Maw 100.00% ~(43.06, 64.94)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			1346, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1587935590,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"Veskan the Fallen 100.00% ~(85.91, 40.66)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			1390, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1587936195,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"Escaped Mutation 35.37% ~(47.07, 41.95)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			1738, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1587937037,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"Brother Meller 100.00% ~(55.51, 39.99)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			1750, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1587937102,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"Fangtaker Orsa 42.23% ~(74.82, 68.49)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Uldum", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Uldum", -- [9]
-			0, -- [10]
-			1328, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588003709,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"wtf none of you are on the map", -- [1]
-			"Yuddle-Darkspear", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Yuddle-Darkspear", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1363, -- [11]
-			"Player-120-08F031B9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Yuddle-Darkspear|r",
-			[51] = 1588004373,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [29]
-		{
 			"wtf does that even mean im not a calculator", -- [1]
 			"Yuddle-Darkspear", -- [2]
 			"", -- [3]
@@ -660,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Yuddle-Darkspear|r",
 			[51] = 1588004399,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [30]
+		}, -- [1]
 		{
 			"lol hi", -- [1]
 			"Prifddinas-CenarionCircle", -- [2]
@@ -682,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Prifddinas-CenarionCircle|r",
 			[51] = 1588004406,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [31]
+		}, -- [2]
 		{
 			"Muminah the Incandescent 100.00% ~(65.69, 19.86)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -704,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588005719,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [3]
 		{
 			"Scoutmaster Moswen 33.38% ~(69.99, 41.07)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -726,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588006101,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [4]
 		{
 			"55 69 come get em!", -- [1]
 			"Beltainne-CenarionCircle", -- [2]
@@ -748,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Beltainne-CenarionCircle|r",
 			[51] = 1588006146,
 			[50] = "CHAT_MSG_RAID_WARNING",
-		}, -- [34]
+		}, -- [5]
 		{
 			"55 69", -- [1]
 			"Beltainne-CenarionCircle", -- [2]
@@ -770,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Beltainne-CenarionCircle|r",
 			[51] = 1588006194,
 			[50] = "CHAT_MSG_RAID_WARNING",
-		}, -- [35]
+		}, -- [6]
 		{
 			"grats Belt", -- [1]
 			"Terrax-Mannoroth", -- [2]
@@ -792,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Terrax-Mannoroth|r",
 			[51] = 1588006222,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [36]
+		}, -- [7]
 		{
 			"Last one for me tomorrow", -- [1]
 			"Terrax-Mannoroth", -- [2]
@@ -814,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Terrax-Mannoroth|r",
 			[51] = 1588006229,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [37]
+		}, -- [8]
 		{
 			"ty :)", -- [1]
 			"Beltainne-CenarionCircle", -- [2]
@@ -836,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Beltainne-CenarionCircle|r",
 			[51] = 1588006230,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [38]
+		}, -- [9]
 		{
 			"Rotfeaster 96.75% ~(68.08, 31.79)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -858,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588006494,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [10]
 		{
 			"Veskan the Fallen 100.00% ~(86.01, 41.81)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -880,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588013405,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [11]
 		{
 			"Quid 100.00% ~(88.93, 44.97)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -902,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588013435,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [12]
 		{
 			"Brother Meller 23.37% ~(57.1, 41.69)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -924,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588013515,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [13]
 		{
 			"1/1 Aldrantiss slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -946,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588015844,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [43]
+		}, -- [14]
 		{
 			"Completed: Champion Aldrantiss, Defender of Her Kingdom", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -968,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588015844,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [44]
+		}, -- [15]
 		{
 			"grats", -- [1]
 			"Famin-ArgentDawn", -- [2]
@@ -990,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecFamin|r",
 			[51] = 1588046287,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [45]
+		}, -- [16]
 		{
 			"Whirling Edge on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1012,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588104144,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
+		}, -- [17]
 		{
 			"Harbinger Il'koxik 94.60% ~(29.31, 52.27)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1034,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588105756,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [18]
 		{
 			"Needler Zhesalla 100.00% ~(12.83, 33.78)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1056,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588106234,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [19]
 		{
 			"Infused Amber Ooze 25.23% ~(17.28, 63.88)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1078,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588106351,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [20]
 		{
 			"who formed a raid with the fucker dead", -- [1]
 			"Zweis-Sargeras", -- [2]
@@ -1100,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cZweis-Sargeras|r",
 			[51] = 1588106967,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [50]
+		}, -- [21]
 		{
 			"a prick", -- [1]
 			"Xertak-Kil'jaeden", -- [2]
@@ -1122,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cXertak-Kil'jaeden|r",
 			[51] = 1588106973,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [51]
+		}, -- [22]
 		{
 			"guess ill tank?", -- [1]
 			"Mournsong-Executus", -- [2]
@@ -1144,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecMournsong-Executus|r",
 			[51] = 1588107072,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [52]
+		}, -- [23]
 		{
 			"lol", -- [1]
 			"Mournsong-Executus", -- [2]
@@ -1166,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecMournsong-Executus|r",
 			[51] = 1588107074,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [53]
+		}, -- [24]
 		{
 			"Toxic Storm on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1188,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588109520,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
+		}, -- [25]
 		{
 			"Drillstorm on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1210,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588110312,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
+		}, -- [26]
 		{
 			"Laser on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1232,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588110328,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
+		}, -- [27]
 		{
 			"Laser on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1254,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588110338,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
+		}, -- [28]
 		{
 			"Garrosh Hellscream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1276,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588110447,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
+		}, -- [29]
 		{
 			"Lok'tar Ogar!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1298,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588110452,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
+		}, -- [30]
 		{
 			"Garrosh Hellscream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1320,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588110869,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
+		}, -- [31]
 		{
 			"Lok'tar Ogar!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1342,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588110872,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
+		}, -- [32]
 		{
 			"Desecrate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1364,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588111944,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
+		}, -- [33]
 		{
 			"R'khuzj the Unfathomable 100.00% ~(58.48, 65.23)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1386,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588165421,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [34]
 		{
 			"|cffffff00Valley of Strength is under attack!|r", -- [1]
 			"", -- [2]
@@ -1408,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588277410,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [35]
 		{
 			"(Cash): |cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r interrupted Gemshard Colossus's |cff71d5ff|Hspell:275140:0|h[Runic Hide]|h|r!", -- [1]
 			"Bearassed-Arthas", -- [2]
@@ -1430,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Bearassed-Arthas|r",
 			[51] = 1588621864,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
+		}, -- [36]
 		{
 			"big pulls", -- [1]
 			"Dhooki-Thrall", -- [2]
@@ -1452,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dhooki-Thrall|r",
 			[51] = 1588622163,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [66]
+		}, -- [37]
 		{
 			"Removed: The Lion's Roar", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1474,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588689613,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [67]
+		}, -- [38]
 		{
 			"Picked Up: The Lion's Roar", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1496,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588689652,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [68]
+		}, -- [39]
 		{
 			"Removed: The Lion's Roar", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1518,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588689697,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [69]
+		}, -- [40]
 		{
 			"your mog is badass", -- [1]
 			"Xellus-ArgentDawn", -- [2]
@@ -1540,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Xellus|r",
 			[51] = 1588697328,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [70]
+		}, -- [41]
 		{
 			"Yours is much better mines basic", -- [1]
 			"Xellus-ArgentDawn", -- [2]
@@ -1562,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Xellus|r",
 			[51] = 1588697366,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [71]
+		}, -- [42]
 		{
 			"yeah but your sword and helm are awsome", -- [1]
 			"Xellus-ArgentDawn", -- [2]
@@ -1584,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Xellus|r",
 			[51] = 1588697385,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [72]
+		}, -- [43]
 		{
 			"thanks", -- [1]
 			"Xellus-ArgentDawn", -- [2]
@@ -1606,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Xellus|r",
 			[51] = 1588697395,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [73]
+		}, -- [44]
 		{
 			"np", -- [1]
 			"Xellus-ArgentDawn", -- [2]
@@ -1628,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Xellus|r",
 			[51] = 1588697407,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [74]
+		}, -- [45]
 		{
 			"Inferno Strike on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1650,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588771060,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [75]
+		}, -- [46]
 		{
 			"Toxic Storm on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1672,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588772770,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [76]
+		}, -- [47]
 		{
 			"Laser on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1694,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588774100,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [77]
+		}, -- [48]
 		{
 			"Garrosh Hellscream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1716,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588774245,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [78]
+		}, -- [49]
 		{
 			"Lok'tar Ogar!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1738,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1588774682,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [79]
+		}, -- [50]
 		{
 			"|cffffff00The Sliver is under attack!|r", -- [1]
 			"", -- [2]
@@ -1760,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588783018,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [51]
 		{
 			"62% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1782,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559488,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [81]
+		}, -- [52]
 		{
 			"66% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1804,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559490,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [82]
+		}, -- [53]
 		{
 			"70% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1826,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559490,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [83]
+		}, -- [54]
 		{
 			"74% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1848,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559491,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [84]
+		}, -- [55]
 		{
 			"78% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1870,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559505,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [85]
+		}, -- [56]
 		{
 			"84% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1892,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559505,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [86]
+		}, -- [57]
 		{
 			"88% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1914,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559506,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [87]
+		}, -- [58]
 		{
 			"92% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1936,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559507,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [88]
+		}, -- [59]
 		{
 			"96% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1958,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559510,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [89]
+		}, -- [60]
 		{
 			"100% Zal'amak razed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1980,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559517,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [90]
+		}, -- [61]
 		{
 			"2/4 Complete 4 world quests in Nazmir.", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2002,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559517,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [91]
+		}, -- [62]
 		{
 			"Completed: Absolutely Barbaric", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2024,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589559518,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [92]
+		}, -- [63]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -2046,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1589768996,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [93]
+		}, -- [64]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -2068,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1589769313,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [94]
+		}, -- [65]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -2090,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1589769451,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [95]
+		}, -- [66]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -2112,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1589769636,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [96]
+		}, -- [67]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -2134,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1589769849,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [97]
+		}, -- [68]
 		{
 			"can i have a couple of gold?", -- [1]
 			"Neeyah-ArgentDawn", -- [2]
@@ -2156,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Neeyah|r",
 			[51] = 1589814945,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [98]
+		}, -- [69]
 		{
 			"i just need like 50", -- [1]
 			"Neeyah-ArgentDawn", -- [2]
@@ -2178,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Neeyah|r",
 			[51] = 1589814968,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [99]
+		}, -- [70]
 		{
 			"Inferno Strike on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2200,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589820495,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [100]
+		}, -- [71]
 		{
 			"Toxic Storm on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2222,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589822020,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [72]
 		{
 			"Laser on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2244,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589822855,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [73]
 		{
 			"Laser on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2266,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589822865,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
+		}, -- [74]
 		{
 			"Garrosh Hellscream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2288,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589824386,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [75]
 		{
 			"Lok'tar Ogar!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2310,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1589824393,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
+		}, -- [76]
 		{
 			"Inferno Strike on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2332,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1590006661,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [106]
+		}, -- [77]
 		{
 			"Toxic Storm on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2354,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1590008337,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [107]
+		}, -- [78]
 		{
 			"Drillstorm on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2376,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1590009301,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [79]
 		{
 			"Laser on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2398,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1590009317,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [109]
+		}, -- [80]
 		{
 			"Laser on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2420,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1590009327,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [110]
+		}, -- [81]
 		{
 			"Warchief Hellscream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2442,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1590009630,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [111]
+		}, -- [82]
 		{
 			"My life for the Horde!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2464,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1590009635,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [112]
+		}, -- [83]
 		{
 			"sorry to bother you", -- [1]
 			"Missdawn-ArgentDawn", -- [2]
@@ -2486,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Missdawn|r",
 			[51] = 1591368121,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [113]
+		}, -- [84]
 		{
 			"i'm new to the server.", -- [1]
 			"Missdawn-ArgentDawn", -- [2]
@@ -2508,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Missdawn|r",
 			[51] = 1591368126,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [114]
+		}, -- [85]
 		{
 			"would you be willing to buy one of my lvl 25 pets? for flying gold?", -- [1]
 			"Missdawn-ArgentDawn", -- [2]
@@ -2530,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Missdawn|r",
 			[51] = 1591368166,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [115]
+		}, -- [86]
 		{
 			"May I please have |cff0070dd|Hitem:168970::::::::120:71::2:3:4818:1472:4785:::|h[Trashmaster's Mantle]|h|r if you don't need it?", -- [1]
 			"Frostforger-Illidan", -- [2]
@@ -2552,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Frostforger-Illidan|r",
 			[51] = 1592779567,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [116]
+		}, -- [87]
 		{
 			"TY", -- [1]
 			"Frostforger-Illidan", -- [2]
@@ -2574,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Frostforger-Illidan|r",
 			[51] = 1592779638,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [117]
+		}, -- [88]
 		{
 			"np ", -- [1]
 			"Frostforger-Illidan", -- [2]
@@ -2596,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Frostforger-Illidan|r",
 			[51] = 1592779650,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [118]
+		}, -- [89]
 		{
 			"no fucking way", -- [1]
 			"Iroux-Hyjal", -- [2]
@@ -2618,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecIroux-Hyjal|r",
 			[51] = 1592779759,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [119]
+		}, -- [90]
 		{
 			"Giga-Zap on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2640,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1592780014,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [120]
+		}, -- [91]
 		{
 			"May I please have |cff0070dd|Hitem:168979::::::::120:71::2:4:4818:1472:4785:6257:::|h[Mechanized Plate Chasse]|h|r if you don't need it?", -- [1]
 			"Drboom-Hyjal", -- [2]
@@ -2662,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Drboom-Hyjal|r",
 			[51] = 1592780029,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [121]
+		}, -- [92]
 		{
 			"sure", -- [1]
 			"Drboom-Hyjal", -- [2]
@@ -2684,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Drboom-Hyjal|r",
 			[51] = 1592780043,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [122]
+		}, -- [93]
 		{
 			"ty!", -- [1]
 			"Drboom-Hyjal", -- [2]
@@ -2706,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Drboom-Hyjal|r",
 			[51] = 1592780074,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [123]
+		}, -- [94]
 		{
 			"Mr. Fixthis 70.51% ~(60.73, 60.97)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2728,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1592780683,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
+		}, -- [95]
 		{
 			"Maximum Thrust on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2750,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1592780884,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [125]
+		}, -- [96]
 		{
 			"Giga-Zap on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2772,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1592781314,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [126]
+		}, -- [97]
 		{
 			"Mecharantula 97.75% ~(87.73, 20.28)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2794,7 +2156,29 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1592781457,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [127]
+		}, -- [98]
+		{
+			"1", -- [1]
+			"Kaghr-ArgentDawn", -- [2]
+			"", -- [3]
+			"3. Trade - City", -- [4]
+			"Kaghr-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			418, -- [11]
+			"Player-75-0CDF10AB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cKaghr|r",
+			[51] = 1595950169,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [99]
 	},
 	["ChatEditHistory"] = {
 		"/wa", -- [1]

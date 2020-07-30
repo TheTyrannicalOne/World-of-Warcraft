@@ -6,1011 +6,21 @@ ElvCharacterDB = {
 		"/cancelform", -- [1]
 		"/wAVE", -- [2]
 		"/reloadui", -- [3]
-		"/click ExtraActionButton1", -- [4]
+		"/skada hide", -- [4]
 		"/fishingbuddy", -- [5]
-		"/canimogit", -- [6]
-		"/wave", -- [7]
+		"/opie", -- [6]
+		"/click ExtraActionButton1", -- [7]
 		"/reload", -- [8]
 		"/allthethings", -- [9]
-		"/opie", -- [10]
-		"/omnicc", -- [11]
+		"/omnicc", -- [10]
+		"/canimogit", -- [11]
 		"/dance", -- [12]
-		"/skada hide", -- [13]
+		"/wave", -- [13]
 		"/omen", -- [14]
 		"/skada toggle", -- [15]
 		"/click extraaddonbutton1", -- [16]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"3/8 Lava fissures filled", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1629, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588278981,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [1]
-		{
-			"4/10 Lava Rager slain", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1630, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588278990,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [2]
-		{
-			"5/10 Lava Rager slain", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1631, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279020,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [3]
-		{
-			"6/10 Lava Rager slain", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1632, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279029,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [4]
-		{
-			"4/8 Lava fissures filled", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1633, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279030,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [5]
-		{
-			"5/8 Lava fissures filled", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1634, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279032,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [6]
-		{
-			"7/10 Lava Rager slain", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1635, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279047,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [7]
-		{
-			"8/10 Lava Rager slain", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1636, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279067,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [8]
-		{
-			"9/10 Lava Rager slain", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1637, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279089,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [9]
-		{
-			"10/10 Lava Rager slain", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1638, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279112,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [10]
-		{
-			"ty", -- [1]
-			"Rosee-Alexstrasza", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rosee-Alexstrasza", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1639, -- [11]
-			"Player-1070-0BECBC3D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Rosee-Alexstrasza|r",
-			[51] = 1588279118,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [11]
-		{
-			"6/8 Lava fissures filled", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1640, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279118,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [12]
-		{
-			"7/8 Lava fissures filled", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1641, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279127,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [13]
-		{
-			"8/8 Lava fissures filled", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1643, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279171,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [14]
-		{
-			"Completed: Put Out The Fire", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1648, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279186,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [15]
-		{
-			"Completed: Hot Lava", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1653, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279190,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [16]
-		{
-			"Picked Up: Vortex", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1655, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279191,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [17]
-		{
-			"1/1 Lord Magmathar slain", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1656, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279236,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [18]
-		{
-			"Completed: Vortex", -- [1]
-			"Zulbathal-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zulbathal-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1663, -- [11]
-			"Player-61-0CA8EB69", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Zulbathal|r",
-			[51] = 1588279273,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [19]
-		{
-			"**Unhöly ** (Zul'jin) recherchant joueurs présents et motivés. Si tu cherches à te retrouver avec des joueurs mettant le plaisir et le respect en priorité, viens parmi nous ! PvP & PvE au RDV - Raid Ny'alotha Normal les vendredis 20hà23h", -- [1]
-			"Mattmânger-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Mattmânger-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1020, -- [11]
-			"Player-61-0C55BD6A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Mattmânger|r",
-			[51] = 1588365618,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [20]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1207, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588366777,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1216, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588366816,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1235, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588366900,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1254, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588366974,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1281, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588367133,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1283, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588367137,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1307, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588367202,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1321, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588367287,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1354, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588367391,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1362, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588367477,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1385, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588367570,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
-		{
-			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			1388, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588367609,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			22, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588396091,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			33, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588396151,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			41, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588396233,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			42, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588396246,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			58, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588396410,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			76, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588628906,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			83, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588628971,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			378, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588631292,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			379, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588631319,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			380, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588631357,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			383, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588631419,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			384, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588631423,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
-		{
-			"|cffffff00Warsong Hold is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Borean Tundra", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Borean Tundra", -- [9]
-			0, -- [10]
-			401, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588631579,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1032,7 +42,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588631648,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [1]
 		{
 			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
 			"", -- [2]
@@ -1054,7 +64,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588631679,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [2]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1076,7 +86,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588631721,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [3]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1098,7 +108,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588631803,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [4]
 		{
 			"|cffffff00Mightstone Quarry is under attack!|r", -- [1]
 			"", -- [2]
@@ -1120,7 +130,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588631863,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [5]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1142,7 +152,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588631882,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [6]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1164,7 +174,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588712815,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [7]
 		{
 			"|cffffff00Borean Tundra is under attack!|r", -- [1]
 			"", -- [2]
@@ -1186,7 +196,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588712829,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [8]
 		{
 			"|cffffff00Warsong Farms Outpost is under attack!|r", -- [1]
 			"", -- [2]
@@ -1208,7 +218,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588712922,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [9]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1230,7 +240,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713251,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [10]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1252,7 +262,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713261,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [11]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1274,7 +284,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713326,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [12]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1296,7 +306,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713326,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [13]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1318,7 +328,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713389,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [14]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1340,7 +350,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713452,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [15]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1362,7 +372,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713485,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [16]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1384,7 +394,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713565,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [17]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1406,7 +416,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713625,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [18]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1428,7 +438,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713692,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [19]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1450,7 +460,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713811,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [20]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1472,7 +482,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588713840,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [21]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1494,7 +504,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588714111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [22]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1516,7 +526,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588714161,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [23]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1538,7 +548,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588714237,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [24]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1560,7 +570,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588714348,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [25]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1582,7 +592,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588714477,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [26]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1604,7 +614,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588714610,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [27]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1626,7 +636,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588715110,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [28]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1648,7 +658,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588715188,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [29]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1670,7 +680,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588715253,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [30]
 		{
 			"|cffffff00Warsong Hold is under attack!|r", -- [1]
 			"", -- [2]
@@ -1692,7 +702,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588715313,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [31]
 		{
 			"|cffffff00Transitus Shield is under attack!|r", -- [1]
 			"", -- [2]
@@ -1714,7 +724,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588717287,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [32]
 		{
 			"|cffffff00Taunka'le Village is under attack!|r", -- [1]
 			"", -- [2]
@@ -1736,7 +746,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1588717323,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [33]
 		{
 			"|cffffff00Nethergarde Mines is under attack!|r", -- [1]
 			"", -- [2]
@@ -1758,7 +768,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589220351,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [34]
 		{
 			"|cffffff00Bladespire Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1780,7 +790,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589230214,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [35]
 		{
 			"|cffffff00Bladespire Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1802,7 +812,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589230279,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [36]
 		{
 			"|cffffff00The Crossroads is under attack!|r", -- [1]
 			"", -- [2]
@@ -1824,7 +834,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589384621,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [37]
 		{
 			"|cffffff00The Crossroads is under attack!|r", -- [1]
 			"", -- [2]
@@ -1846,7 +856,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589384705,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [38]
 		{
 			"|cffffff00Windshear Crag is under attack!|r", -- [1]
 			"", -- [2]
@@ -1868,7 +878,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589571439,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [39]
 		{
 			"|cffffff00The Crossroads is under attack!|r", -- [1]
 			"", -- [2]
@@ -1890,7 +900,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589574647,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [40]
 		{
 			"Hi there! Are you looking for a fun guild to grow with? <Logic Sold Separately> a mature, active guild looking to grow. Actively recruiting for our raid team. Come hang out, run some keys, do a dungeon, have a cookie.  Let me know if you're interested :D", -- [1]
 			"Kipza-Zul'jin", -- [2]
@@ -1912,7 +922,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kipza|r",
 			[51] = 1589604318,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [86]
+		}, -- [41]
 		{
 			"|cffffff00The Violet Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1934,7 +944,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589607354,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [42]
 		{
 			"|cffffff00Dalaran City is under attack!|r", -- [1]
 			"", -- [2]
@@ -1956,7 +966,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589607358,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [43]
 		{
 			"|cffffff00Krasus' Landing is under attack!|r", -- [1]
 			"", -- [2]
@@ -1978,7 +988,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589607366,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [44]
 		{
 			"What's a sexy toon like you doing without a guild?", -- [1]
 			"Orghanick-Zul'jin", -- [2]
@@ -2000,7 +1010,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOrghanick|r",
 			[51] = 1589640919,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [90]
+		}, -- [45]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2022,7 +1032,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589689587,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [46]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -2044,7 +1054,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589689607,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [47]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2066,7 +1076,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589689643,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [48]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2088,7 +1098,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690130,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [49]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -2110,7 +1120,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690137,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [50]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2132,7 +1142,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690243,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [51]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -2154,7 +1164,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690549,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [52]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2176,7 +1186,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690636,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [53]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -2198,7 +1208,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690664,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [99]
+		}, -- [54]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2220,7 +1230,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690844,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [100]
+		}, -- [55]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2242,7 +1252,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690897,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [101]
+		}, -- [56]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2264,7 +1274,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589690976,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
+		}, -- [57]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2286,7 +1296,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589691024,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
+		}, -- [58]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -2308,7 +1318,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589691073,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [104]
+		}, -- [59]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2330,7 +1340,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589691105,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [105]
+		}, -- [60]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2352,7 +1362,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589691257,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [106]
+		}, -- [61]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2374,7 +1384,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589691323,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [107]
+		}, -- [62]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2396,7 +1406,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589691405,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [108]
+		}, -- [63]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2418,7 +1428,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589691465,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [109]
+		}, -- [64]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2440,7 +1450,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589727398,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [110]
+		}, -- [65]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -2462,7 +1472,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589727513,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [111]
+		}, -- [66]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2484,7 +1494,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589727596,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
+		}, -- [67]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2506,7 +1516,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589727667,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
+		}, -- [68]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2528,7 +1538,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589729103,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
+		}, -- [69]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2550,7 +1560,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589730244,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [115]
+		}, -- [70]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2572,7 +1582,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589731307,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [116]
+		}, -- [71]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2594,7 +1604,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589731876,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [117]
+		}, -- [72]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -2616,7 +1626,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589731881,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [118]
+		}, -- [73]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2638,7 +1648,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589733182,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [119]
+		}, -- [74]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2660,7 +1670,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589733497,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [120]
+		}, -- [75]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2682,7 +1692,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589748584,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [121]
+		}, -- [76]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2704,7 +1714,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589749949,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
+		}, -- [77]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2726,7 +1736,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589750014,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
+		}, -- [78]
 		{
 			"Salut, es tu a la recherche d une guilde d\"entraide, respectueuse & SOCIALE sur discord?", -- [1]
 			"Gizmaux-Zul'jin", -- [2]
@@ -2748,7 +1758,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGizmaux|r",
 			[51] = 1589752768,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [124]
+		}, -- [79]
 		{
 			"|cffffff00Freehold is under attack!|r", -- [1]
 			"", -- [2]
@@ -2770,7 +1780,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589756797,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
+		}, -- [80]
 		{
 			"|cffffff00Grand Bazaar is under attack!|r", -- [1]
 			"", -- [2]
@@ -2792,7 +1802,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589771473,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [81]
 		{
 			"|cffffff00Zuldazar is under attack!|r", -- [1]
 			"", -- [2]
@@ -2814,6 +1824,380 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1589772513,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [127]
+		}, -- [82]
+		{
+			"WTS 12/12H || Get your AOTC before it's gone! || Funnels available|| M+ 10-20 || FREE ARMOR STACK || SPECIFIC KEYS || 0-5 Mask runs || HUOKAN || BEST PRICES || GOLD ONLY", -- [1]
+			"Conkarah-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Conkarah-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2464, -- [11]
+			"Player-61-0CDE3878", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcConkarah|r",
+			[51] = 1595952417,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			">>Huokan Community<< WTS +10-20 Keys w/free armor stacks || Heroic & Mythic Ny'lotha runs and specific mythic bosses || Jaina and Nzoth Mounts || PVP and Vision boosting available as well! Gold only!", -- [1]
+			"Chainsales-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chainsales-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2480, -- [11]
+			"Player-61-0CD8CEFF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcChainsales|r",
+			[51] = 1595952427,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"WTS Mythic + Keys AMAZING Sales with free armor stack  on 10-20 keys and Visions CHEAPEST guaranteed!", -- [1]
+			"Sellerguyme-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sellerguyme-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2535, -- [11]
+			"Player-61-0CDD4C63", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Sellerguyme|r",
+			[51] = 1595952443,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"casually tosses his |Hitem:36862|h|cFFFFFFFF[Worn Troll Dice]|r|h.", -- [1]
+			"Vibrateur-Zul'jin", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Vibrateur-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2544, -- [11]
+			"Player-61-0C98231F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Vibrateur|r",
+			[51] = 1595952444,
+			[50] = "CHAT_MSG_EMOTE",
+		}, -- [86]
+		{
+			"WTS 5 MASK VISION! FULL CLEAR under 20 min run by 5.1k IO hunter (TOP 5 in Zuljin), come get your 470 corrupted loot! Pst for Prices!!!", -- [1]
+			"Broteinshoot-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Broteinshoot-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2552, -- [11]
+			"Player-61-0CCF6661", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Broteinshoot|r",
+			[51] = 1595952446,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"WTS 5 mask Vision of Orgrimmar, 75k, PST", -- [1]
+			"Sporked-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sporked-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2583, -- [11]
+			"Player-61-0CDEA69F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8686ecSporked|r",
+			[51] = 1595952452,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"hell yeah brother you win x2 your bet", -- [1]
+			"Vibrateur-Zul'jin", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Vibrateur-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2603, -- [11]
+			"Player-61-0C98231F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Vibrateur|r",
+			[51] = 1595952456,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [89]
+		{
+			"WTS M15 140k <ARMOR STACK FREE>|| WTS M+ 10-20||WTS Heroic Ny'alotha full clears|| WTS Mythic Ny'alotha full clear and specific bosses || WTS Horrific Vision 0-5 masks|| WTS MOUNTS-PETS||PVP SERVICES|| WTS Jaina & N'zoth Mounts||>Huokan Community<", -- [1]
+			"Septhu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Septhu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2613, -- [11]
+			"Player-61-0CDD72C0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Septhu|r",
+			[51] = 1595952458,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"casually tosses his |Hitem:36862|h|cFFFFFFFF[Worn Troll Dice]|r|h.", -- [1]
+			"Vibrateur-Zul'jin", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Vibrateur-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2623, -- [11]
+			"Player-61-0C98231F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Vibrateur|r",
+			[51] = 1595952460,
+			[50] = "CHAT_MSG_EMOTE",
+		}, -- [91]
+		{
+			"<Gruuls Gone Wild> 6/12M  Recruiting Caster Dps(Mage/Lock)  + 1 Healer(Druid/Priest) + Warrior Dps MON/WED/THUR 8-11 EST. Fresh Guild looking to Push progression as far as possible then compete in Shadowlands with a proper roster! Must be Mythic ready", -- [1]
+			"Trâp-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Trâp-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2709, -- [11]
+			"Player-61-0C78B7C8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Trâp|r",
+			[51] = 1595952499,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			">>Huokan Community<< WTS +10-20 Keys w/free armor stacks || Heroic & Mythic Ny'lotha runs and specific mythic bosses || Jaina and Nzoth Mounts || PVP and Vision boosting available as well! Gold only!", -- [1]
+			"Chainsales-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chainsales-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2796, -- [11]
+			"Player-61-0CD8CEFF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcChainsales|r",
+			[51] = 1595952527,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"WTS M15 140k <ARMOR STACK FREE>|| WTS M+ 10-20||WTS Heroic Ny'alotha full clears|| WTS Mythic Ny'alotha full clear and specific bosses || WTS Horrific Vision 0-5 masks|| WTS MOUNTS-PETS||PVP SERVICES|| WTS Jaina & N'zoth Mounts||>Huokan Community<", -- [1]
+			"Septhu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Septhu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2910, -- [11]
+			"Player-61-0CDD72C0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Septhu|r",
+			[51] = 1595952556,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"Get your end of reset deals CHEAPEST M+ with free armor stack +10-20s available! BEST Vision prices on the server! :D  Huokan! ", -- [1]
+			"Sellerguyme-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sellerguyme-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3028, -- [11]
+			"Player-61-0CDD4C63", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Sellerguyme|r",
+			[51] = 1595952587,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"<Gruuls Gone Wild> 6/12M  Recruiting Caster Dps(Mage/Lock)  + 1 Healer(Druid/Priest) + Warrior Dps MON/WED/THUR 8-11 EST. Fresh Guild looking to Push progression as far as possible then compete in Shadowlands with a proper roster! Must be Mythic ready", -- [1]
+			"Trâp-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Trâp-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3208, -- [11]
+			"Player-61-0C78B7C8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Trâp|r",
+			[51] = 1595952639,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			">>Huokan Community<< WTS +10-20 Keys w/free armor stacks || Heroic & Mythic Ny'lotha runs and specific mythic bosses || Jaina and Nzoth Mounts || PVP and Vision boosting available as well! Gold only!", -- [1]
+			"Chainsales-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chainsales-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3223, -- [11]
+			"Player-61-0CD8CEFF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcChainsales|r",
+			[51] = 1595952643,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"WTS |cff66bbff|Hjournal:1:2364:14|h[Ra-den the Despoiled]|h|r  heroic  //Now ///Sum ready/// Gold", -- [1]
+			"Feshfesh-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Feshfesh-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3230, -- [11]
+			"Player-61-0CD09C16", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeFeshfesh|r",
+			[51] = 1595952647,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"wts |cff66bbff|Hjournal:1:2364:15|h[Ra-den the Despoiled]|h|r heroic( gold only)  start soon & summon ready", -- [1]
+			"Boosting-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Boosting-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3359, -- [11]
+			"Player-61-0CD2791D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcBoosting|r",
+			[51] = 1595952694,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [99]
 	},
 }

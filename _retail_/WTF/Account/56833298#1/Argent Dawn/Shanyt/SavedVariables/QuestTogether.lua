@@ -1,17 +1,17 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[48288] = {
 			["title"] = "Antoran High Command",
 			["objectives"] = {
 				"Defeat the Antoran High Command in Antorus, The Burning Throne", -- [1]
-				"1/1  ", -- [2]
+				"1/1 Azeroth Invasion Plans", -- [2]
 			},
 		},
 		[56356] = {
@@ -20,16 +20,21 @@ QuestTogether = {
 				"Queen Azshara defeated", -- [1]
 			},
 		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
 				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[56120] = {
@@ -49,13 +54,13 @@ QuestTogether = {
 		[49133] = {
 			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4  ", -- [1]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 		[13721] = {
 			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-				"10/25  ", -- [1]
+				"10/25 Valiant's Seal", -- [1]
 			},
 		},
 		[49015] = {
@@ -67,7 +72,7 @@ QuestTogether = {
 		[57396] = {
 			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
-				"0/4  ", -- [1]
+				"0/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
 		[54185] = {
@@ -83,10 +88,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57276] = {
-			["title"] = "Maintaining Focus",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"5/20  ", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -95,22 +100,16 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
 		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4  ", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"1/4  ", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[57743] = {
@@ -126,11 +125,6 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
 		[24756] = {
 			["title"] = "Blood Infusion",
 			["objectives"] = {
@@ -140,14 +134,14 @@ QuestTogether = {
 		[55743] = {
 			["title"] = "More Recycling",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Bundle of Recyclable Parts", -- [1]
 			},
 		},
 		[47118] = {
 			["title"] = "Tomb of Sargeras: Free The Tormented",
 			["objectives"] = {
 				"Defeat The Desolate Host", -- [1]
-				"1/1  ", -- [2]
+				"1/1 Worshipper's Scrawlings", -- [2]
 			},
 		},
 		[54180] = {
@@ -155,40 +149,45 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+			},
+		},
+		[57276] = {
+			["title"] = "Maintaining Focus",
+			["objectives"] = {
+				"5/20 Shred of Insanity", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[56352] = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
-				"0/20  ", -- [1]
+				"0/20 Eternal Ornament", -- [1]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[45172] = {
 			["title"] = "To Battle!",
 			["objectives"] = {
 				"Win a battleground", -- [1]
-			},
-		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4  ", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
-			},
-		},
-		[42422] = {
-			["title"] = "The Wardens",
-			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[31891] = {
@@ -201,17 +200,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
-				"0/4  ", -- [1]
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

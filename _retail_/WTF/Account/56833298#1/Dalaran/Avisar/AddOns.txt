@@ -24,3 +24,4 @@ BigWigs_CommonAuras: enabled
 LittleWigs: enabled
 BigWigs_Azeroth: enabled
 BigWigs_CrucibleOfStorms: enabled
+ElvUI_DTBars2: disabled

@@ -1511,4 +1511,13 @@ Change Log:
 * Added Shadowlands spells (world)
 * Added SL spells for Halls of Atonement
 * Added SL spells for Plaguefall
+* Added SL spells for Sanguine Depths
+* Added SL spells for Spires of Ascension
+* Added SL spells for Mists of Tirna Scithe
+* Added SL spells for Theater of Pain
+* Added SL spells for The Necrotic Wake
+* Added SL spells for De Other Side
 
+4.56.1
+* Added Battle for Azeroth spells (world)
+* Added BFA spells for Ny'alotha, the Waking City
