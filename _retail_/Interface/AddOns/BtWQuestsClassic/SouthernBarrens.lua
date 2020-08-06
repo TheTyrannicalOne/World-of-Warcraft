@@ -695,8 +695,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SOUTHERN_BARRENS_NORTHWATCH_H
     },
     completed = {
         type = "quest",
-        ids = {24939, 25036},
-        count = 2,
+        ids = {24939, 24948, 24956},
+        count = 3,
     },
     items = {
         {
@@ -1716,22 +1716,23 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SOUTHERN_BARRENS_EMBED_CHAIN1
             type = "quest",
             id = 24948,
             x = 0,
-            connections = {
-                2, 
-            },
+            -- connections = {
+            --     2, 
+            -- },
         },
         {
             type = "quest",
             id = 24956,
-            connections = {
-                1, 
-            },
+            -- connections = {
+            --     1, 
+            -- },
         },
-        {
-            type = "quest",
-            id = 25036,
-            x = 1,
-        },
+        -- {
+        --     type = "quest",
+        --     id = 25036,
+        --     aside = true,
+        --     x = 1,
+        -- },
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SOUTHERN_BARRENS_EMBED_CHAIN14, {

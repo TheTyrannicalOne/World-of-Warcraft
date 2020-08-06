@@ -1,6 +1,6 @@
 ## Interface: 80300
 ## Title: BtWQuests: Classic
-## Version: 14
+## Version: 16
 ## Notes: Classic quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
@@ -8,6 +8,7 @@
 ## X-BtWQuests: Classic
 ## X-BtWQuests-Expansion: 0
 ## X-BtWQuests-Expansion-Image: UI-Expansion 0 0.90625 0 0.8125
+## X-BtWQuests-Expansion-Movie-ID: 2
 ## X-Part-Of: BtWQuests
 
 Defines.lua

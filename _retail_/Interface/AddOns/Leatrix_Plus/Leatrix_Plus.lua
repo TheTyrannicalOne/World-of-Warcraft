@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.31 (29th July 2020)
+-- 	Leatrix Plus 8.3.32 (5th August 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "8.3.31"
+	LeaPlusLC["AddonVer"] = "8.3.32"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -43,8 +43,8 @@
 		end
 	end
 
-	-- If client restart is required and has not been done, show warning and quit
-	if LeaPlusLC["RestartReq"] then
+	-- If client restart is required and has not been done, show warning and quit (not needed in Shadowlands)
+	if not LeaPlusLC.SL and LeaPlusLC["RestartReq"] then
 		local metaVer = GetAddOnMetadata("Leatrix_Plus", "Version")
 		if metaVer and metaVer ~= LeaPlusLC["AddonVer"] then
 			C_Timer.After(1, function()
@@ -9058,8 +9058,6 @@
 		ddlist:SetPoint("TOP",0, -42)
 		ddlist:SetWidth(frame:GetWidth())
 		ddlist:SetHeight((#items * 17) + 17 + 17)
-		ddlist:SetFrameStrata("FULLSCREEN_DIALOG")
-		ddlist:SetFrameLevel(12)
 		ddlist:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = 4, top = 4, bottom = 4}})
 		ddlist:Hide()
 
