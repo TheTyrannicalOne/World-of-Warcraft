@@ -7,6 +7,12 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+			},
+		},
 		[48288] = {
 			["title"] = "Antoran High Command",
 			["objectives"] = {
@@ -20,12 +26,6 @@ QuestTogether = {
 				"Queen Azshara defeated", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
@@ -35,12 +35,6 @@ QuestTogether = {
 		[57567] = {
 			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-			},
-		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[56500] = {
@@ -63,10 +57,10 @@ QuestTogether = {
 				"10/25 Valiant's Seal", -- [1]
 			},
 		},
-		[49015] = {
-			["title"] = "Antorus, the Burning Throne: The Death of a Titan",
+		[45172] = {
+			["title"] = "To Battle!",
 			["objectives"] = {
-				"Defeat Argus the Unmaker", -- [1]
+				"Win a battleground", -- [1]
 			},
 		},
 		[57396] = {
@@ -88,10 +82,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[57276] = {
+			["title"] = "Maintaining Focus",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"5/20 Shred of Insanity", -- [1]
 			},
 		},
 		[53435] = {
@@ -100,16 +94,28 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
 		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 		[57743] = {
@@ -149,16 +155,9 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
-			},
-		},
-		[57276] = {
-			["title"] = "Maintaining Focus",
-			["objectives"] = {
-				"5/20 Shred of Insanity", -- [1]
 			},
 		},
 		[49032] = {
@@ -167,10 +166,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[49015] = {
+			["title"] = "Antorus, the Burning Throne: The Death of a Titan",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"Defeat Argus the Unmaker", -- [1]
 			},
 		},
 		[56352] = {
@@ -179,15 +178,16 @@ QuestTogether = {
 				"0/20 Eternal Ornament", -- [1]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[45172] = {
-			["title"] = "To Battle!",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"Win a battleground", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[31891] = {
@@ -200,17 +200,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

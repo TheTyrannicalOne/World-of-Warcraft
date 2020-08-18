@@ -24,8 +24,8 @@ MasterPlanAG = {
 			},
 			["curOil"] = 88070,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1590006006,
-			["curRes"] = 3559,
+			["lastCacheTime"] = 1597617291,
+			["curRes"] = 4559,
 			["faction"] = "Horde",
 		},
 		["Tyrannithal"] = {

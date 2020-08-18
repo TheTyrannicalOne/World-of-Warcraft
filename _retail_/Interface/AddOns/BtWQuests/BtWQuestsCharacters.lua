@@ -13,6 +13,12 @@ local function ArrayContains(a, item)
     return false
 end
 
+--@REMOVE AFTER 9.0
+local GetLogIndexForQuestID = C_QuestLog.GetLogIndexForQuestID
+if select(4, GetBuildInfo()) < 90000 then
+    GetLogIndexForQuestID = GetQuestLogIndexByID
+end
+
 local BtWQuestsCharactersMap = {} -- Map from name-realm to Character Mixin
 
 BtWQuestsCharactersCharacterMixin = {}
@@ -76,7 +82,6 @@ end
 function BtWQuestsCharactersCharacterMixin:AtleastLevel(level)
     return self:GetLevel() >= level
 end
-
 function BtWQuestsCharactersCharacterMixin:AtmostLevel(level)
     return self:GetLevel() <= level
 end
@@ -265,7 +270,6 @@ function BtWQuestsCharactersCharacterMixin:IsChainIgnored(id)
     return self.t.ignoredChains and self.t.ignoredChains[id]
 end
 
-
 function BtWQuestsCharactersCharacterMixin:GetHeartOfAzerothLevel()
     return self.t.heartOfAzerothLevel or 0
 end
@@ -275,6 +279,26 @@ end
 function BtWQuestsCharactersCharacterMixin:HeartOfAzerothAtmostLevel(level)
     return self:GetHeartOfAzerothLevel() <= level
 end
+
+function BtWQuestsCharactersCharacterMixin:GetRenownLevel()
+    return self.t.renownLevel or 0
+end
+function BtWQuestsCharactersCharacterMixin:RenownAtleastLevel(level)
+    return self:GetRenownLevel() >= level
+end
+function BtWQuestsCharactersCharacterMixin:RenownAtmostLevel(level)
+    return self:GetRenownLevel() <= level
+end
+function BtWQuestsCharactersCharacterMixin:GetCovenant()
+    return self.t.covenantID or 0
+end
+function BtWQuestsCharactersCharacterMixin:IsCovenant(id)
+    return self:GetCovenant() == id
+end
+function BtWQuestsCharactersCharacterMixin:GetChromieTimeID()
+    return self.t.chromieTimeID or 0
+end
+
 function BtWQuestsCharactersCharacterMixin:GetFriendshipReputation(factionID)
     local id, rep, maxRep, name, text, texture, reaction, threshold, nextThreshold;
     
@@ -295,7 +319,6 @@ function BtWQuestsCharactersCharacterMixin:GetFriendshipReputation(factionID)
     -- local _, _, _, name, _, _, _, _ = GetFriendshipReputation(factionID)
     -- return unpack((self.t.friendships or {})[factionID] or {})
 end
-
 function BtWQuestsCharactersCharacterMixin:GetAchievementInfo(achievementID)
     local id, name, points, completed, month, day, year, description,
     flags, icon, rewardText, isGuild, wasEarnedByMe, earnedBy = GetAchievementInfo(achievementID);
@@ -393,7 +416,6 @@ function BtWQuestsCharactersCharacterMixin:GetAchievementCriteriaInfoByID(achiev
     return criteriaString, criteriaType, completed, quantity, reqQuantity,
     charName, flags, assetID, quantityString, criteriaID, eligible;
 end
-
 function BtWQuestsCharactersCharacterMixin:GetXPModifier()
     return self.t.xpModifier or 0;
 end
@@ -413,7 +435,6 @@ function BtWQuestsCharactersCharacterMixin:GetWarModeRewardBonus()
         end
     end
 end
-
 function BtWQuestsCharactersCharacterMixin:GetNumQuestLeaderBoards(questID)
     local questID = tonumber(questID);
     local quest = self.t.questsActive[questID];
@@ -466,19 +487,18 @@ end
 function BtWQuestsCharactersPlayerMixin:GetSex()
     return UnitSex("player")
 end
-
 function BtWQuestsCharactersPlayerMixin:GetSkillInfo(skillID)
     local _, level, maxLevel = C_TradeSkillUI.GetTradeSkillLineInfoByID(skillID)
     return level, maxLevel
 end
-
 function BtWQuestsCharactersPlayerMixin:GetFactionInfoByID(faction)
     local factionName, _, standing, barMin, barMax, value = GetFactionInfoByID(faction)
 
     return factionName, standing, barMin, barMax, value
 end
 function BtWQuestsCharactersPlayerMixin:IsQuestActive(questID)
-    return GetQuestLogIndexByID(questID) > 0
+    local index = GetLogIndexForQuestID(questID)
+    return index and index > 0
 end
 function BtWQuestsCharactersPlayerMixin:IsQuestCompleted(questID)
     if C_QuestSession.HasJoined() then
@@ -487,8 +507,6 @@ function BtWQuestsCharactersPlayerMixin:IsQuestCompleted(questID)
         return IsQuestFlaggedCompleted(questID)
     end
 end
-
-
 function BtWQuestsCharactersPlayerMixin:GetHeartOfAzerothLevel()
     if C_AzeriteItem.HasActiveAzeriteItem() then
         local itemLocation = C_AzeriteItem.FindActiveAzeriteItem();
@@ -510,6 +528,15 @@ function BtWQuestsCharactersPlayerMixin:GetAchievementCriteriaInfo(achievementId
 end
 function BtWQuestsCharactersPlayerMixin:GetAchievementCriteriaInfoByID(achievementId, criteriaId)
     return GetAchievementCriteriaInfoByID(achievementId, criteriaId)
+end
+function BtWQuestsCharactersPlayerMixin:GetRenownLevel()
+    return C_CovenantSanctumUI.GetRenownLevel()
+end
+function BtWQuestsCharactersPlayerMixin:GetCovenant()
+    return C_Covenants.GetActiveCovenantID()
+end
+function BtWQuestsCharactersPlayerMixin:GetChromieTimeID()
+    return UnitChromieTimeID("player")
 end
 
 local xpTooltip = CreateFrame("GameTooltip", "BtWQuestsCharactersXPTooltip", UIParent, "GameTooltipTemplate");
@@ -590,12 +617,12 @@ function BtWQuestsCharactersPlayerMixin:GetWarModeRewardBonus()
 end
 
 function BtWQuestsCharactersPlayerMixin:GetNumQuestLeaderBoards(questID)
-    local index = GetQuestLogIndexByID(questID);
-    return GetNumQuestLeaderBoards(index);
+    local index = GetLogIndexForQuestID(questID);
+    return index and GetNumQuestLeaderBoards(index);
 end
 function BtWQuestsCharactersPlayerMixin:GetQuestLogLeaderBoard(objective, questID)
-    local index = GetQuestLogIndexByID(questID);
-    return GetQuestLogLeaderBoard(objective, index);
+    local index = GetLogIndexForQuestID(questID);
+    return index and GetQuestLogLeaderBoard(objective, index);
 end
 
 BtWQuestsCharactersPartySyncMixin = Mixin({}, BtWQuestsCharactersPlayerMixin)
@@ -615,7 +642,11 @@ function BtWQuestsCharactersPartySyncMixin:GetLevel()
     return UnitEffectiveLevel("player");
 end
 function BtWQuestsCharactersPartySyncMixin:IsQuestActive(questID)
-    return not C_QuestLog.IsQuestDisabledForSession(questID) and GetQuestLogIndexByID(questID) > 0
+    if C_QuestLog.IsQuestDisabledForSession(questID) then
+        return true
+    end
+    local index = GetLogIndexForQuestID(questID)
+    return index and index > 0
 end
 function BtWQuestsCharactersPartySyncMixin:IsQuestCompleted(questID)
     return IsQuestFlaggedCompleted(questID)
@@ -735,25 +766,60 @@ function BtWQuestsCharacters:GetPlayer()
     end
 end
 
-local temp = {};
-local function GetQuestsActive(tbl)
-    local tbl = tbl or {};
-
-    wipe(tbl);
-    local numEntries = GetNumQuestLogEntries()
-    for i=1,numEntries do
-        local questID = select(8, GetQuestLogTitle(i));
-        if questID ~= nil and questID ~= 0 then
-            tbl[questID] = {};
-
-            for objective=1,GetNumQuestLeaderBoards(i) do
-                tbl[questID][objective] = {GetQuestLogLeaderBoard(objective, i)};
+local GetQuestsActive
+if select(4, GetBuildInfo()) < 90000 then
+    function GetQuestsActive(tbl)
+        local tbl = tbl or {};
+    
+        wipe(tbl);
+        local numEntries = GetNumQuestLogEntries()
+        for i=1,numEntries do
+            local questID = select(8, GetQuestLogTitle(i));
+            if questID ~= nil and questID ~= 0 then
+                tbl[questID] = {};
+    
+                for objective=1,GetNumQuestLeaderBoards(i) do
+                    tbl[questID][objective] = {GetQuestLogLeaderBoard(objective, i)};
+                end
             end
         end
+        
+        return tbl;
     end
+else
+    function GetQuestsActive(tbl)
+        local tbl = tbl or {};
     
-    return tbl;
+        wipe(tbl);
+        local numEntries = C_QuestLog.GetNumQuestLogEntries()
+        for i=1,numEntries do
+            local info = C_QuestLog.GetInfo(i);
+            if info.questID ~= nil and info.questID ~= 0 then
+                tbl[info.questID] = {};
+    
+                for objective=1,GetNumQuestLeaderBoards(i) do
+                    tbl[info.questID][objective] = {GetQuestLogLeaderBoard(objective, i)};
+                end
+            end
+        end
+        
+        return tbl;
+    end
 end
+local GetQuestsCompleted = GetQuestsCompleted
+if not GetQuestsCompleted then
+    function GetQuestsCompleted(tbl)
+        local tbl = tbl or {};
+
+        wipe(tbl);
+        for _,questID in ipairs(C_QuestLog.GetAllCompletedQuestIDs()) do
+            tbl[questID] = true
+        end
+        
+        return tbl;
+    end
+end
+local temp = {};
 local function GetFactions(tbl)
     local tbl = tbl or {};
 
@@ -966,6 +1032,10 @@ function BtWQuestsCharacters:OnEvent(event, ...)
                 character.heartOfAzerothLevel = C_AzeriteItem.GetPowerLevel(itemLocation)
             end
         end
+
+        character.renownLevel = C_CovenantSanctumUI and C_CovenantSanctumUI.GetRenownLevel() or 0
+        character.covenantID = C_Covenants and C_Covenants.GetActiveCovenantID() or nil
+        character.chromieTimeID = UnitChromieTimeID and UnitChromieTimeID("player") or 0
 
         character.ignoredChains = character.ignoredChains or (BtWQuests_Settings and BtWQuests_Settings.ignoredChains or {});
         character.ignoredCategories = character.ignoredCategories or (BtWQuests_Settings and BtWQuests_Settings.ignoredCategories or {});

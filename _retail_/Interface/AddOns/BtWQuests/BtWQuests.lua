@@ -6,6 +6,12 @@ local L = BtWQuests.L;
 BINDING_HEADER_BTWQUESTS = "BtWQuests"
 BINDING_NAME_TOGGLE_BTWQUESTS = L["TOGGLE_BTWQUESTS"]
 
+--@REMOVE AFTER 9.0
+local GetLogIndexForQuestID = C_QuestLog.GetLogIndexForQuestID
+if select(4, GetBuildInfo()) < 90000 then
+    GetLogIndexForQuestID = GetQuestLogIndexByID
+end
+
 local BTWQUESTS_CATEGORY_ITEM_WIDTH = 174
 local BTWQUESTS_CATEGORY_ITEM_HEIGHT = 96
 local BTWQUESTS_CATEGORY_ITEM_PADDING = 12
@@ -275,7 +281,17 @@ function BtWQuestsMixin:SelectChain(id, scrollTo, noHistory)
         self:AddCurrentToHistory()
     end
 end
-
+local CanCompleteQuest
+if select(4, GetBuildInfo()) < 90000 then
+    function CanCompleteQuest(questLogIndex)
+        return IsQuestComplete(questID) and GetQuestLogIsAutoComplete(questLogIndex)
+    end
+else
+    function CanCompleteQuest(questLogIndex)
+        local info = C_QuestLog.GetInfo(questLogIndex)
+        return C_QuestLog.IsComplete(info.questID) and info.isAutoComplete
+    end
+end
 function BtWQuestsMixin:SelectFromLink(link, scrollTo)
     local _, _, color, type, text, name = string.find(link, "|cff(%x*)|H([^:]+):([^|]+)|h%[([^%[%]]*)%]|h|r")
     if not color then
@@ -291,9 +307,9 @@ function BtWQuestsMixin:SelectFromLink(link, scrollTo)
 
         id = tonumber(id)
 
-        local questLogIndex = GetQuestLogIndexByID(id);
-        if questLogIndex > 0 then
-            if IsQuestComplete(id) and GetQuestLogIsAutoComplete(questLogIndex) then
+        local questLogIndex = GetLogIndexForQuestID(id);
+        if questLogIndex and questLogIndex > 0 then
+            if CanCompleteQuest(questLogIndex) then
                 AutoQuestPopupTracker_RemovePopUp(id);
                 ShowQuestComplete(questLogIndex);
 
@@ -865,7 +881,7 @@ function BtWQuestsMixin:OnShow()
         self.navBar:EnableExpansions(BtWQuestsDatabase:HasMultipleExpansion())
 
         if self:GetExpansion() == nil and not BtWQuestsDatabase:HasMultipleExpansion() then -- Not guessed/set an expansion yet
-            self:SetExpansion(BtWQuestsDatabase:GuessExpansion(self.Character))
+            self:SetExpansion(BtWQuestsDatabase:GetBestExpansionForCharacter(self.Character))
             self:DisplayCurrentExpansion()
         end
 

@@ -94,10 +94,10 @@ SET maxFPS "0"
 SET RenderScale "1.6"
 SET engineSurvey "8"
 SET mouseSpeed "1"
-SET gameTip "61"
-SET twitterGetConfigTime "1595949739813"
+SET gameTip "78"
+SET twitterGetConfigTime "1597596421773"
 SET CACHE-WQST-QuestV2RecordCount "40089"
-SET CACHE-WQST-QuestV2HotfixCount "0"
+SET CACHE-WQST-QuestV2HotfixCount "1"
 SET CACHE-WQST-QuestObjectiveRecordCount "40493"
 SET CACHE-WQST-QuestObjectiveHotfixCount "0"
 SET CACHE-WQST-QuestObjectiveXEffectRecordCount "14357"
@@ -123,7 +123,4 @@ SET Sound_MasterVolume "1"
 SET Sound_SFXVolume "1"
 SET Sound_OutputDriverIndex "1"
 SET particleDensity "100.000000"
-
-
-
 

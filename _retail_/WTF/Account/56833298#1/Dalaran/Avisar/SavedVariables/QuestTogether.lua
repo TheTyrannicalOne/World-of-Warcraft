@@ -7,10 +7,10 @@ QuestTogether = {
 				"0/5 Elemental-Imbued Weapon broken", -- [1]
 			},
 		},
-		[56128] = {
-			["title"] = "Drowning the Horde",
+		[54485] = {
+			["title"] = "Battle of Dazar'alor",
 			["objectives"] = {
-				"0/25 Horde Players slain", -- [1]
+				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
 			},
 		},
 		[13413] = {
@@ -45,8 +45,8 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[44720] = {
+			["title"] = "A Call to Action",
 			["objectives"] = {
 			},
 		},
@@ -69,12 +69,10 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[57378] = {
@@ -91,10 +89,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[54438] = {
@@ -103,10 +101,9 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[36615] = {
@@ -114,6 +111,14 @@ QuestTogether = {
 			["objectives"] = {
 				"172/2000 Garrison Resources gathered (Optional)", -- [1]
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
+			},
+		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[56499] = {
@@ -129,23 +134,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50599] = {
-			["title"] = "Proudmoore Admiralty",
+		[50600] = {
+			["title"] = "Order of Embers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+				"0/4 Complete 4 world quests in Drustvar", -- [1]
 			},
 		},
-		[56211] = {
-			["title"] = "Scrying Stones",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
-			},
-		},
-		[56119] = {
-			["title"] = "The Waveblade Ankoan",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -188,22 +186,24 @@ QuestTogether = {
 				"10/25 Slay Horde Players", -- [1]
 			},
 		},
-		[44720] = {
-			["title"] = "A Call to Action",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[54485] = {
-			["title"] = "Battle of Dazar'alor",
+		[56128] = {
+			["title"] = "Drowning the Horde",
 			["objectives"] = {
-				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+				"0/25 Horde Players slain", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

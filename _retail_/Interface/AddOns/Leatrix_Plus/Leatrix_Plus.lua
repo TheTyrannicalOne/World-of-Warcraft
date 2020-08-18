@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.32 (5th August 2020)
+-- 	Leatrix Plus 8.3.33 (13th August 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "8.3.32"
+	LeaPlusLC["AddonVer"] = "8.3.33"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -9461,6 +9461,11 @@
 					LeaPlusLC["DbF"]:SetScript("OnEvent", nil)
 					LeaPlusLC:Print("Tracing stopped.")
 				end
+				return
+			elseif str == "game" then
+				-- Show game build
+				local version, build, gdate, tocversion = GetBuildInfo()
+				LeaPlusLC:Print(L["World of Warcraft"] .. ": |cffffffff" .. version .. "." .. build .. " (" .. gdate .. ") (" .. tocversion .. ")")
 				return
 			elseif str == "config" then
 				-- Show maximum camera distance

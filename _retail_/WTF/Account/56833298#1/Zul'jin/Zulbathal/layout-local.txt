@@ -111,13 +111,6 @@ X: 0
 Y: 19
 W: 130
 H: 20
-Frame: ScriptErrorsFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: 0
-Y: -35
-W: 500
-H: 300
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: RIGHT
@@ -131,4 +124,11 @@ Anchor: RIGHT
 X: 0
 Y: 23
 W: 300
+H: 300
+Frame: ScriptErrorsFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: 0
+Y: -35
+W: 500
 H: 300

@@ -9,6 +9,7 @@ BtWQuests = {
             WarlordsOfDraenor = LE_EXPANSION_WARLORDS_OF_DRAENOR or 5,
             Legion = LE_EXPANSION_LEGION or 6,
             BattleForAzeroth = LE_EXPANSION_BATTLE_FOR_AZEROTH or 7,
+            Shadowlands = LE_EXPANSION_SHADOWLANDS or 8,
         },
         Faction = {
             Alliance = "Alliance",
@@ -80,6 +81,7 @@ BtWQuests = {
             MistsOfPandaria = {},
             WarlordsOfDraenor = {},
             BattleForAzeroth = {},
+            Shadowlands = {},
         },
         Chain = {
             Classic = {},
@@ -89,6 +91,7 @@ BtWQuests = {
             MistsOfPandaria = {},
             WarlordsOfDraenor = {},
             BattleForAzeroth = {},
+            Shadowlands = {},
         },
         Restrictions = {
             Alliance = { type = "faction", id = "Alliance" },

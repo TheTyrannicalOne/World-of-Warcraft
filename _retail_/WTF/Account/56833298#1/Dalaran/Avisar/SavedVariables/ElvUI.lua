@@ -4,1016 +4,26 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/cw Willderhide-Stormrage all good thanks ", -- [1]
-		"/wave", -- [2]
-		"/dance", -- [3]
+		"/opie", -- [2]
+		"/fishingbuddy", -- [3]
 		"/sit", -- [4]
-		"/opie", -- [5]
+		"/cw Nelfdrid-Korialstrasz ty", -- [5]
 		"/cw Genieb-ShatteredHalls TY!", -- [6]
 		"/s idk", -- [7]
 		"/s got to beat it all the way through i think", -- [8]
-		"/fishingbuddy", -- [9]
+		"/reload", -- [9]
 		"/cw Willderhide-Stormrage all good thanks", -- [10]
 		"/skada hide", -- [11]
 		"/skada toggle", -- [12]
 		"/ltp", -- [13]
 		"/s then chest?", -- [14]
-		"/reload", -- [15]
+		"/dance", -- [15]
 		"/allthethings", -- [16]
 		"/sleep", -- [17]
-		"/cw Nelfdrid-Korialstrasz ty", -- [18]
+		"/wave", -- [18]
 		"/cw Bourbonn-Dalaran TY", -- [19]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"Picked Up: Azerite Wounds", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			171, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592343693,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [1]
-		{
-			"Removed: Azerite Wounds", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			172, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592343705,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [2]
-		{
-			"|cffffff00Mezzamere is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Nazjatar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Nazjatar", -- [9]
-			0, -- [10]
-			419, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592346239,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"|cffffff00The Hanging Reef is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Nazjatar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Nazjatar", -- [9]
-			0, -- [10]
-			422, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592346256,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"|cffffff00Mezzamere is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Nazjatar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Nazjatar", -- [9]
-			0, -- [10]
-			440, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592346367,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"|cffffff00Mezzamere is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Nazjatar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Nazjatar", -- [9]
-			0, -- [10]
-			459, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592346586,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"The Scrap King (Mounted) 52.47% ~(72.25, 49.95)", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Mechagon", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Mechagon", -- [9]
-			0, -- [10]
-			180, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592404930,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"Scrapclaw 100.00% ~(82.64, 76.18)", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Mechagon", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Mechagon", -- [9]
-			0, -- [10]
-			199, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592405072,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"Deepwater Maw 100.00% ~(37.54, 44.21)", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Mechagon", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Mechagon", -- [9]
-			0, -- [10]
-			249, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592405519,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"Bonepicker 100.00% ~(66.42, 28.05)", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Mechagon", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Mechagon", -- [9]
-			0, -- [10]
-			262, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592405943,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"Armored Vaultbot 99.50% ~(62.1, 45.99)", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Mechagon", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Mechagon", -- [9]
-			0, -- [10]
-			320, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592406413,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"|cffffff00Warbeast Kraal is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			29, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592435416,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"|cffffff00Warbeast Kraal is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			97, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592436067,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"Removed: Underlord Xerxiz", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			188, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592478502,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [14]
-		{
-			"Picked Up: Underlord Xerxiz", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			189, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592478520,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [15]
-		{
-			"Removed: Underlord Xerxiz", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			190, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592478539,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [16]
-		{
-			"Picked Up: Underlord Xerxiz", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			193, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592478582,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [17]
-		{
-			"Removed: Underlord Xerxiz", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			194, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592478597,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [18]
-		{
-			"Picked Up: Underlord Xerxiz", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			195, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592478622,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [19]
-		{
-			"Removed: Underlord Xerxiz", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			196, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592478644,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [20]
-		{
-			"Picked Up: Golanar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			215, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592479046,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [21]
-		{
-			"Removed: Golanar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			217, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592479116,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [22]
-		{
-			"|cffffff00Illidari Stand is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Azsuna", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Azsuna", -- [9]
-			0, -- [10]
-			743, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592482137,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"|cffffff00Orsis is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Uldum", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Uldum", -- [9]
-			0, -- [10]
-			1403, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592490975,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"|cffffff00Uldum is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Uldum", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Uldum", -- [9]
-			0, -- [10]
-			1404, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592490978,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"|cffffff00Bridgeport is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Tiragarde Sound", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Tiragarde Sound", -- [9]
-			0, -- [10]
-			56, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592507422,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"1/1 Blighted Monstrosity slain", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			67, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592572011,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [27]
-		{
-			"1/4 Complete 4 world quests in Drustvar", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			70, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592572011,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [28]
-		{
-			"Completed: Blighted Monstrosity", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			72, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592572012,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [29]
-		{
-			"Removed: Vuk'laz the Earthbreaker", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			189, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592573768,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [30]
-		{
-			"Picked Up: Vuk'laz the Earthbreaker", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			190, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592573770,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [31]
-		{
-			"1/1 Vuk'laz the Earthbreaker slain", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			195, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592573806,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [32]
-		{
-			"Completed: Vuk'laz the Earthbreaker", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			203, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592573807,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [33]
-		{
-			"awesome, thanks", -- [1]
-			"Shiralla-Velen", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shiralla-Velen", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			208, -- [11]
-			"Player-96-0A725BD5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Shiralla-Velen|r",
-			[51] = 1592573814,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [34]
-		{
-			"Qho 99.46% ~(37.45, 60.15)", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Uldum", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Uldum", -- [9]
-			0, -- [10]
-			262, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592574822,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"Veskan the Fallen 100.00% ~(85.2, 41.17)", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Vale of Eternal Blossoms", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			572, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592583749,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"Quid 100.00% ~(88.2, 45.16)", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Vale of Eternal Blossoms", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			573, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592583758,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"|cffffff00Orsis is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Uldum", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Uldum", -- [9]
-			0, -- [10]
-			783, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592588436,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"|cffffff00Uldum is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Uldum", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Uldum", -- [9]
-			0, -- [10]
-			784, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592588436,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"|cffffff00Orsis is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Uldum", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Uldum", -- [9]
-			0, -- [10]
-			851, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592589425,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"|cffffff00Uldum is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Uldum", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Uldum", -- [9]
-			0, -- [10]
-			852, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592589439,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"|cffffff00Orsis is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Uldum", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Uldum", -- [9]
-			0, -- [10]
-			107, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592598479,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"|cffffff00Uldum is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Uldum", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Uldum", -- [9]
-			0, -- [10]
-			138, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1592600159,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
-		{
-			"1/1 Ghost of the Deep slain", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			317, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592602426,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [44]
-		{
-			"Completed: Ghost of the Deep", -- [1]
-			"Avisar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Avisar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			322, -- [11]
-			"Player-3683-0BE4455C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Avisar|r",
-			[51] = 1592602427,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [45]
 		{
 			"Upheaval on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1035,7 +45,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592674334,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
+		}, -- [1]
 		{
 			"ok, the boss wasnt supose to get that xD", -- [1]
 			"Arkann-Velen", -- [2]
@@ -1057,7 +67,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arkann-Velen|r",
 			[51] = 1592674558,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [47]
+		}, -- [2]
 		{
 			"|cff71d5ff|Hspell:258150:0|h[Salt Blast]|h|r interrupted!", -- [1]
 			"Arkann-Velen", -- [2]
@@ -1079,7 +89,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arkann-Velen|r",
 			[51] = 1592674631,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
+		}, -- [3]
 		{
 			"May I please have |cff0070dd|Hitem:159293::::::::120:70::2:3:4778:1587:4785:::|h[Turncoat's Cape]|h|r if you don't need it?", -- [1]
 			"Chrolloo-Sargeras", -- [2]
@@ -1101,7 +111,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeChrolloo-Sargeras|r",
 			[51] = 1592674643,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [49]
+		}, -- [4]
 		{
 			"yes", -- [1]
 			"Chrolloo-Sargeras", -- [2]
@@ -1123,7 +133,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeChrolloo-Sargeras|r",
 			[51] = 1592674666,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [50]
+		}, -- [5]
 		{
 			"that was a bit more exciting then anticipated", -- [1]
 			"Arkann-Velen", -- [2]
@@ -1145,7 +155,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arkann-Velen|r",
 			[51] = 1592674667,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [51]
+		}, -- [6]
 		{
 			"|cff71d5ff|Hspell:258313:0|h[Handcuff]|h|r interrupted!", -- [1]
 			"Arkann-Velen", -- [2]
@@ -1167,7 +177,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arkann-Velen|r",
 			[51] = 1592674792,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [52]
+		}, -- [7]
 		{
 			"May I please have |cff0070dd|Hitem:155884::::::::120:70::2:3:4778:1587:4785:::|h[Parrotfeather Cloak]|h|r if you don't need it?", -- [1]
 			"Bourbonn-Dalaran", -- [2]
@@ -1189,7 +199,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bourbonn|r",
 			[51] = 1592675799,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [53]
+		}, -- [8]
 		{
 			"ima have to bail", -- [1]
 			"Wrathh-EarthenRing", -- [2]
@@ -1211,7 +221,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wrathh-EarthenRing|r",
 			[51] = 1592675916,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [54]
+		}, -- [9]
 		{
 			"falling asleep", -- [1]
 			"Wrathh-EarthenRing", -- [2]
@@ -1233,7 +243,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wrathh-EarthenRing|r",
 			[51] = 1592675920,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [55]
+		}, -- [10]
 		{
 			"TY", -- [1]
 			"Bourbonn-Dalaran", -- [2]
@@ -1255,7 +265,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bourbonn|r",
 			[51] = 1592675983,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [56]
+		}, -- [11]
 		{
 			"Ricocheting Throw on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1277,7 +287,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592676030,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
+		}, -- [12]
 		{
 			"Ricocheting Throw on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1299,7 +309,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592676046,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
+		}, -- [13]
 		{
 			"Ricocheting Throw on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1321,7 +331,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592676046,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
+		}, -- [14]
 		{
 			"Ricocheting Throw on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1343,7 +353,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592676054,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
+		}, -- [15]
 		{
 			"sorry about that last pull", -- [1]
 			"Demonvet-Garona", -- [2]
@@ -1365,7 +375,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Demonvet-Garona|r",
 			[51] = 1592676086,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [61]
+		}, -- [16]
 		{
 			"healer, let meknow when you are ready", -- [1]
 			"Demonvet-Garona", -- [2]
@@ -1387,7 +397,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Demonvet-Garona|r",
 			[51] = 1592676345,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [62]
+		}, -- [17]
 		{
 			"going to do the WQ after this boss", -- [1]
 			"Demonvet-Garona", -- [2]
@@ -1409,7 +419,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Demonvet-Garona|r",
 			[51] = 1592676564,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
+		}, -- [18]
 		{
 			"k", -- [1]
 			"Leifeng-MoonGuard", -- [2]
@@ -1431,7 +441,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Leifeng-MoonGuard|r",
 			[51] = 1592676575,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [64]
+		}, -- [19]
 		{
 			"tks everyone", -- [1]
 			"Demonvet-Garona", -- [2]
@@ -1453,7 +463,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Demonvet-Garona|r",
 			[51] = 1592676921,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
+		}, -- [20]
 		{
 			"Removed: Ivus the Decayed", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1475,7 +485,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592760894,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [66]
+		}, -- [21]
 		{
 			"Picked Up: Cyclarus", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1497,7 +507,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592760910,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [67]
+		}, -- [22]
 		{
 			"1/1 Cyclarus slain", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1519,7 +529,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592761017,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [68]
+		}, -- [23]
 		{
 			"Completed: Cyclarus", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1541,7 +551,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592761017,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [69]
+		}, -- [24]
 		{
 			"|cffffff00Bridgeport is under attack!|r", -- [1]
 			"", -- [2]
@@ -1563,7 +573,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1592761591,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [25]
 		{
 			"Picked Up: Pest Remover Mk. II", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1585,7 +595,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592763176,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [71]
+		}, -- [26]
 		{
 			"1/1 Pest Remover Mk. II slain", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1607,7 +617,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592763207,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [72]
+		}, -- [27]
 		{
 			"4/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1629,7 +639,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592763207,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [73]
+		}, -- [28]
 		{
 			"Completed: Pest Remover Mk. II", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1651,7 +661,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592763208,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [74]
+		}, -- [29]
 		{
 			"|cffffff00Dwarven District is under attack!|r", -- [1]
 			"", -- [2]
@@ -1673,7 +683,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1592784232,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [30]
 		{
 			"|cffffff00Predator Pass is under attack!|r", -- [1]
 			"", -- [2]
@@ -1695,7 +705,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1592841675,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [31]
 		{
 			"|cffffff00Mage Quarter is under attack!|r", -- [1]
 			"", -- [2]
@@ -1717,7 +727,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1592845093,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [32]
 		{
 			"|cffffff00The Canals is under attack!|r", -- [1]
 			"", -- [2]
@@ -1739,7 +749,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1592845096,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [33]
 		{
 			"Raging Gaze on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1761,7 +771,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592845720,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [79]
+		}, -- [34]
 		{
 			"Raging Gaze on Avisar", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1783,7 +793,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1592845742,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [80]
+		}, -- [35]
 		{
 			"thx all", -- [1]
 			"Hiruhunter-Ragnaros", -- [2]
@@ -1805,7 +815,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Hiruhunter-Ragnaros|r",
 			[51] = 1592846155,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [81]
+		}, -- [36]
 		{
 			"|cffffff00Backwater Beach is under attack!|r", -- [1]
 			"", -- [2]
@@ -1827,7 +837,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593026469,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [37]
 		{
 			"|cffffff00Seekers' Vista is under attack!|r", -- [1]
 			"", -- [2]
@@ -1849,7 +859,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593027234,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [38]
 		{
 			"|cffffff00Seekers' Vista is under attack!|r", -- [1]
 			"", -- [2]
@@ -1871,7 +881,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593027295,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [39]
 		{
 			"|cffffff00Seekers' Vista is under attack!|r", -- [1]
 			"", -- [2]
@@ -1893,7 +903,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593027438,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [40]
 		{
 			"|cffffff00The Sundered Span is under attack!|r", -- [1]
 			"", -- [2]
@@ -1915,7 +925,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593401137,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [41]
 		{
 			"|cffffff00Seekers' Vista is under attack!|r", -- [1]
 			"", -- [2]
@@ -1937,7 +947,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593446963,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [42]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Alobifada-Dalaran", -- [2]
@@ -1959,7 +969,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlobifada|r",
 			[51] = 1595952839,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [43]
 		{
 			"WTS |cff0070dd|Hitem:118831::::::::120:259:512:29:1:3916:120:::|h[Arentios' Amice of Alacrity]|h|r pst with offer", -- [1]
 			"Vyndarh-Dalaran", -- [2]
@@ -1981,7 +991,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Vyndarh|r",
 			[51] = 1595952848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [44]
 		{
 			"For someone who needs this today: If you're going to react angry, take a deep breath first and hold it for 10 seconds before exhaling, then face the issue calmly and with a clearer mind.   Hope everyone has a good Tuesday!", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -2003,7 +1013,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1595952877,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [45]
 		{
 			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Alobifada-Dalaran", -- [2]
@@ -2025,7 +1035,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlobifada|r",
 			[51] = 1595952928,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [46]
 		{
 			"WTS |cffa335ee|Hitem:22670::::::::110:64::::::|h[Icebane Gauntlets]|h|r 1.25mil - no longer obtainable item from Naxx40/vanilla, unique item model - pst if interested or with counter offer", -- [1]
 			"Sylvbank-Dalaran", -- [2]
@@ -2047,7 +1057,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSylvbank|r",
 			[51] = 1595952931,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [47]
 		{
 			"yeah, that's the same thing the instructor says at the gun range", -- [1]
 			"Elburner-Dalaran", -- [2]
@@ -2069,7 +1079,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Elburner|r",
 			[51] = 1595952959,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [48]
 		{
 			"WTS 12/12 HEROIC Ny'alotha ran by 12/12M Guild CHEAP! Also selling AOTC ONLY KILLS! Get your AOTC Achievement, 470 loot, and your Uncorrupted Voidwing mount! Also offering 10-20 M+ dungeons TIMED or UNTIMED! GOLD ONLY <3", -- [1]
 			"Radaleb-Dalaran", -- [2]
@@ -2091,7 +1101,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeRadaleb|r",
 			[51] = 1595952975,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [49]
 		{
 			"Can't |cffa335ee|Hitem:22670::::::::120:259::::::|h[Icebane Gauntlets]|h|r be crafter with blacksmithing now?", -- [1]
 			"Vyndarh-Dalaran", -- [2]
@@ -2113,7 +1123,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Vyndarh|r",
 			[51] = 1595953017,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [50]
 		{
 			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Alobifada-Dalaran", -- [2]
@@ -2135,7 +1145,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlobifada|r",
 			[51] = 1595953021,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [51]
 		{
 			"remeber reading somewhere that its not obtainable anymore", -- [1]
 			"Yanuin-Dalaran", -- [2]
@@ -2157,7 +1167,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Yanuin|r",
 			[51] = 1595953119,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [52]
 		{
 			"wts |cffa335ee|Hitem:163574::::::::120:63::::::|h[Chewed-On Reins of the Terrified Pack Mule]|h|r250K", -- [1]
 			"Hapheancesky-Dalaran", -- [2]
@@ -2179,7 +1189,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Hapheancesky|r",
 			[51] = 1596025926,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [53]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Deralabox-Dalaran", -- [2]
@@ -2200,6 +1210,996 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cffc59a6cDeralabox|r",
 			[51] = 1596025939,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [54]
+		{
+			"anyone teaming up for Visions?", -- [1]
+			"Stephenc-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Stephenc-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1, -- [11]
+			"Player-3683-099B18A6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Stephenc|r",
+			[51] = 1597596444,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [55]
+		{
+			"wts |cff1eff00|Hitem:72104::::::::120:256::::::|h[Living Steel]|h|r x50 pst ", -- [1]
+			"Pôtato-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pôtato-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2, -- [11]
+			"Player-3683-09BFF673", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefePôtato|r",
+			[51] = 1597596444,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [56]
+		{
+			"WTS Weekend  SPECIALS! H/M Ny'alotha || 0-5 Mask Visions & M+10-20s, run by 2.7k+ io players. Cheap M10 & 15s - get armor stack FREE on every key and all tradeable loot! GOLD ONLY", -- [1]
+			"Drizznix-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Drizznix-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3, -- [11]
+			"Player-3683-0C24C9B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Drizznix|r",
+			[51] = 1597596448,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [57]
+		{
+			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Hozoxocam-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hozoxocam-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			65, -- [11]
+			"Player-3683-0C24FC71", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHozoxocam|r",
+			[51] = 1597596477,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [58]
+		{
+			"WTS |cff66bbff|Hjournal:0:1001:23|h[Freehold]|h|r leveling 110-120, Pst for info.", -- [1]
+			"Sheloneous-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sheloneous-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			69, -- [11]
+			"Player-3683-07E1F197", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Sheloneous|r",
+			[51] = 1597596479,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"|cffffd000|Htrade:Player-3683-0BAB62D9:195097:164|h[Blacksmithing]|h|r old armorsmith looking for work. i have all current and several retired patterns.", -- [1]
+			"Zalgasha-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zalgasha-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			113, -- [11]
+			"Player-3683-0BAB62D9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Zalgasha|r",
+			[51] = 1597596571,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"wts |cff0070dd|Hitem:83090::::::::120:256::::::|h[Sapphire Panther]|h|r|cff0070dd|Hitem:83088::::::::120:256::::::|h[Jade Panther]|h|r|cff0070dd|Hitem:83087::::::::120:256::::::|h[Ruby Panther]|h|r 25k each pst ", -- [1]
+			"Pôtato-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pôtato-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			114, -- [11]
+			"Player-3683-09BFF673", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefePôtato|r",
+			[51] = 1597596572,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [61]
+		{
+			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Hozoxocam-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hozoxocam-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			115, -- [11]
+			"Player-3683-0C24FC71", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHozoxocam|r",
+			[51] = 1597596586,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [62]
+		{
+			"WTS Arena Carries 0-1800 Season Mount/Saddles, And Much More GET IT BEFORE ITS GONE (gold only)", -- [1]
+			"Ignice-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ignice-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			117, -- [11]
+			"Player-3683-0A2BE39B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Ignice|r",
+			[51] = 1597596602,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [63]
+		{
+			"WTS |cff66bbff|Hjournal:0:1001:23|h[Freehold]|h|r leveling 110-120, Pst for info.", -- [1]
+			"Sheloneous-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sheloneous-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			119, -- [11]
+			"Player-3683-07E1F197", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Sheloneous|r",
+			[51] = 1597596648,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [64]
+		{
+			"WTS |cffa335ee|Hitem:23629::::::::120:102::2::::|h[Plans: Felsteel Longblade]|h|r pst.", -- [1]
+			"Larmapueza-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Larmapueza-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			170, -- [11]
+			"Player-3683-0BF24B98", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Larmapueza|r",
+			[51] = 1597596683,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [65]
+		{
+			"WTS Weekend  SPECIALS! H/M Ny'alotha || 0-5 Mask Visions & M+10-20s, run by 2.7k+ io players. Cheap M10 & 15s - get armor stack FREE on every key and all tradeable loot! GOLD ONLY", -- [1]
+			"Drizznix-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Drizznix-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			171, -- [11]
+			"Player-3683-0C24C9B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Drizznix|r",
+			[51] = 1597596688,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [66]
+		{
+			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Hozoxocam-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hozoxocam-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			172, -- [11]
+			"Player-3683-0C24FC71", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHozoxocam|r",
+			[51] = 1597596691,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"anyone in boralus have a turnip i can wack?", -- [1]
+			"Vhye-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vhye-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			211, -- [11]
+			"Player-3683-0A90228E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Vhye|r",
+			[51] = 1597596735,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"You can wack my weeds.", -- [1]
+			"Jpierce-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jpierce-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			216, -- [11]
+			"Player-3683-07BFAD94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Jpierce|r",
+			[51] = 1597596749,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			" wack your own turnip sicko", -- [1]
+			"Monstr-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Monstr-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			224, -- [11]
+			"Player-3683-0BF36E88", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cMonstr|r",
+			[51] = 1597596764,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"you can turn my nips", -- [1]
+			"Dohaeris-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dohaeris-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			226, -- [11]
+			"Player-3683-0C149F6A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Dohaeris|r",
+			[51] = 1597596766,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"tempting offer", -- [1]
+			"Vhye-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vhye-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			227, -- [11]
+			"Player-3683-0A90228E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Vhye|r",
+			[51] = 1597596767,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"THAT CAN BE TAKEM A COUPLE DIFFERENT WAYS", -- [1]
+			"Hennison-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hennison-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			228, -- [11]
+			"Player-3683-08EF44FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Hennison|r",
+			[51] = 1597596767,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"|cffffd000|Htrade:Player-3683-0BAB62D9:195097:164|h[Blacksmithing]|h|r old armorsmith looking for work. i have all current and several retired patterns.", -- [1]
+			"Zalgasha-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zalgasha-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			232, -- [11]
+			"Player-3683-0BAB62D9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Zalgasha|r",
+			[51] = 1597596774,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"The answer is both.", -- [1]
+			"Jpierce-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jpierce-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			236, -- [11]
+			"Player-3683-07BFAD94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Jpierce|r",
+			[51] = 1597596780,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"WTS |cff66bbff|Hjournal:0:1001:23|h[Freehold]|h|r leveling 110-120, Pst for info.", -- [1]
+			"Sheloneous-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sheloneous-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			237, -- [11]
+			"Player-3683-07E1F197", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Sheloneous|r",
+			[51] = 1597596780,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"WTS Freehold LVL Boost 110-120 PST for info", -- [1]
+			"Notalentmage-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Notalentmage-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			262, -- [11]
+			"Player-3683-0C220959", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Notalentmage|r",
+			[51] = 1597596802,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"WTS Arena Carries 0-1800 Season Mount/Saddles, And Much More GET IT BEFORE ITS GONE (gold only)", -- [1]
+			"Ignice-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ignice-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			264, -- [11]
+			"Player-3683-0A2BE39B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Ignice|r",
+			[51] = 1597596803,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"comeon, share the turnip wacking love", -- [1]
+			"Vhye-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vhye-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			277, -- [11]
+			"Player-3683-0A90228E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Vhye|r",
+			[51] = 1597596810,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Hozoxocam-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hozoxocam-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			281, -- [11]
+			"Player-3683-0C24FC71", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHozoxocam|r",
+			[51] = 1597596818,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"I have to save my turnip for Battlegrounds so I can super inflate my damge numbers. ", -- [1]
+			"Jpierce-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jpierce-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			299, -- [11]
+			"Player-3683-07BFAD94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Jpierce|r",
+			[51] = 1597596837,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"WTS |cffa335ee|Hitem:23629::::::::120:102::2::::|h[Plans: Felsteel Longblade]|h|r pst.", -- [1]
+			"Larmapueza-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Larmapueza-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			301, -- [11]
+			"Player-3683-0BF24B98", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Larmapueza|r",
+			[51] = 1597596839,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"WTS Arena Carries 0-1800 Season Mount/Saddles, And Much More GET IT BEFORE ITS GONE (gold only)", -- [1]
+			"Ignice-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ignice-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			307, -- [11]
+			"Player-3683-0A2BE39B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Ignice|r",
+			[51] = 1597596887,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"looking for a friendly guild", -- [1]
+			"Diannaprince-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Diannaprince-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			308, -- [11]
+			"Player-3683-0A1D2952", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cDiannaprince|r",
+			[51] = 1597596890,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"What a new start with a different guild? Then join <ØMÍNOUS> we are a new guild looking for players for Shadowlands. We will be doing dungeons Normal to Mythic+  and completing end content up to Heroic difficulty. PST for more info or inv.", -- [1]
+			"Steelbrawn-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Steelbrawn-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			310, -- [11]
+			"Player-3683-0BE69DC7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cSteelbrawn|r",
+			[51] = 1597596903,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"Those don't exist. There's only unfriendly guilds.", -- [1]
+			"Jpierce-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jpierce-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			311, -- [11]
+			"Player-3683-07BFAD94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Jpierce|r",
+			[51] = 1597596911,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"<Beat Their Darnassus> is a new guild looking to build a heroic/mythic raid roster for the upcoming expansion. LF Healers and DPS, Leaders have Mythic Raid XP, Raid times Tues/Wed 9p-12a server, PST for more info.", -- [1]
+			"Obai-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Obai-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			313, -- [11]
+			"Player-3683-0BD10FCA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Obai|r",
+			[51] = 1597596915,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"WTS horrific vision 5 masks for 70K GOLD. come get your 470 corrupted item. pst", -- [1]
+			"Alashlor-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alashlor-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			314, -- [11]
+			"Player-3683-09DB8F3A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Alashlor|r",
+			[51] = 1597596915,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"WTS Freehold LVL Boost 110-120 PST for info", -- [1]
+			"Notalentmage-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Notalentmage-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			315, -- [11]
+			"Player-3683-0C220959", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Notalentmage|r",
+			[51] = 1597596915,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Hozoxocam-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hozoxocam-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			316, -- [11]
+			"Player-3683-0C24FC71", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHozoxocam|r",
+			[51] = 1597596918,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"WTS Weekend  SPECIALS! H/M Ny'alotha || 0-5 Mask Visions & M+10-20s, run by 2.7k+ io players. Cheap M10 & 15s - get armor stack FREE on every key and all tradeable loot! GOLD ONLY", -- [1]
+			"Drizznix-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Drizznix-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			319, -- [11]
+			"Player-3683-0C24C9B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Drizznix|r",
+			[51] = 1597596928,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"<Probably Drunk> Because we probably are. Pst", -- [1]
+			"Vodkatini-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vodkatini-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			326, -- [11]
+			"Player-3683-0AC636A5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVodkatini|r",
+			[51] = 1597596936,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"<<Hard Times>>is a new guild made by a group of friends, trying to establish a solid team to go into shadowlands with. With raiding as our priority we're looking for active to casual players in order to kick ass and chew bubblegum. pst for info", -- [1]
+			"Jabux-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jabux-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			347, -- [11]
+			"Player-3683-0BC1A79D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Jabux|r",
+			[51] = 1597596982,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"WTS |cff66bbff|Hjournal:0:1001:23|h[Freehold]|h|r leveling 110-120, Pst for info.", -- [1]
+			"Sheloneous-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sheloneous-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			352, -- [11]
+			"Player-3683-07E1F197", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Sheloneous|r",
+			[51] = 1597596990,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"|cffffd000|Htrade:Player-3683-0BAB62D9:195097:164|h[Blacksmithing]|h|r old armorsmith looking for work. i have all current and several retired patterns.", -- [1]
+			"Zalgasha-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zalgasha-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			358, -- [11]
+			"Player-3683-0BAB62D9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Zalgasha|r",
+			[51] = 1597597002,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"WTS Freehold LVL Boost 110-120 PST for info", -- [1]
+			"Notalentmage-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Notalentmage-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			366, -- [11]
+			"Player-3683-0C220959", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Notalentmage|r",
+			[51] = 1597597052,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Hozoxocam-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hozoxocam-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			380, -- [11]
+			"Player-3683-0C24FC71", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHozoxocam|r",
+			[51] = 1597597052,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"free tshirt day?", -- [1]
+			"Loakie-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Loakie-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			412, -- [11]
+			"Player-3683-0C1D345E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLoakie|r",
+			[51] = 1597597109,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"in SW dwarf dist", -- [1]
+			"Whatshesaidd-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Whatshesaidd-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			420, -- [11]
+			"Player-3683-0C13E8E3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Whatshesaidd|r",
+			[51] = 1597597130,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

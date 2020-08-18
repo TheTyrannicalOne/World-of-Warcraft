@@ -16,10 +16,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_INTRODUCT
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -241,10 +238,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_INTRODUCTION,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",
@@ -463,10 +457,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN,
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -1086,10 +1077,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN, {
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",
@@ -1710,10 +1698,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -1817,10 +1802,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",
@@ -1972,10 +1954,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -2046,10 +2025,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",
@@ -2129,10 +2105,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -2201,10 +2174,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_2,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",
@@ -2282,10 +2252,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_ZULDAZAR_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_TIRAGARDE_SOUND_FOOTHOLD,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -2479,10 +2446,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_VOLDUN_FO
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DRUSTVAR_FOOTHOLD,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -2695,10 +2659,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_NAZMIR_FO
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_STORMSONG_VALLEY_FOOTHOLD,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -2892,10 +2853,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_BLOOD_ON_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_FIRST_ASSAULT,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -3134,10 +3092,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CHASING_D
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_MARSHALS_GRAVE,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -3317,10 +3272,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_A_GOLDEN_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DEATH_OF_A_TIDESAGE,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -3489,10 +3441,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_BLOOD_IN_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_AT_THE_BOTTOM_OF_THE_SEA,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -3661,10 +3610,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_THE_STRIK
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_STRIKE_ON_BORALAS,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -3887,10 +3833,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_TIRAGARDE_SO
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_ZULDAZAR_FOOTHOLD,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -4072,10 +4015,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DRUSTVAR_FOO
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_VOLDUN_FOOTHOLD,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -4253,10 +4193,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_STORMSONG_VA
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_NAZMIR_FOOTHOLD,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -4444,10 +4381,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_FIRST_AS
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_BLOOD_ON_THE_SAND,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -4644,10 +4578,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_MARSHALS
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CHASING_DARKNESS,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -4780,10 +4711,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_DEATH_OF_A_T
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_A_GOLDEN_OPPORTUNITY,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -4936,10 +4864,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_AT_THE_BOTTO
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_BLOOD_IN_THE_WATER,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -5125,10 +5050,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_STRIKE_O
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_THE_STRIKE_ON_ZULDAZAR,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -5320,10 +5242,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -5510,10 +5429,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_2,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -5709,10 +5625,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_3,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -5803,10 +5716,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_4,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -5970,10 +5880,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_1, 
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -6109,10 +6016,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_2, 
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_2,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -6274,10 +6178,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_3, 
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_3,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -6391,10 +6292,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_4, 
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_4,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -6601,10 +6499,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PAR
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -6710,10 +6605,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PAR
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "chain",
@@ -6830,10 +6722,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_THE_HIGH_OVE
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -7010,10 +6899,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_1
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -7139,10 +7025,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_2,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "chain",
@@ -7242,10 +7125,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_PART_
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -7314,10 +7194,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1, 
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_PART_1,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",
@@ -7415,10 +7292,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_FOLLO
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_FOLLOWER,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -7474,10 +7348,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_FOLLOWER
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_FOLLOWER,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",
@@ -7534,10 +7405,7 @@ BtWQuestsDatabase:AddChain(Chain.Alliance825Campaign, {
         Chain.Horde825SylvanasCampaign,
         Chain.Horde825SaurfangCampaign,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -7998,10 +7866,7 @@ BtWQuestsDatabase:AddChain(Chain.Alliance825Calia, {
     alternatives = {
         Chain.Horde825Calia,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -8053,10 +7918,7 @@ BtWQuestsDatabase:AddChain(Chain.Horde825Calia, {
     alternatives = {
         Chain.Alliance825Calia,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",
@@ -8109,10 +7971,7 @@ BtWQuestsDatabase:AddChain(Chain.Alliance83Calia, {
     alternatives = {
         Chain.Horde83Calia,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-    },
+    restrictions = 924,
     prerequisites = {
         {
             type = "level",
@@ -8155,10 +8014,7 @@ BtWQuestsDatabase:AddChain(Chain.Horde83Calia, {
     alternatives = {
         Chain.Alliance83Calia,
     },
-    restrictions = {
-        type = "faction",
-        id = BTWQUESTS_FACTION_ID_HORDE,
-    },
+    restrictions = 923,
     prerequisites = {
         {
             type = "level",

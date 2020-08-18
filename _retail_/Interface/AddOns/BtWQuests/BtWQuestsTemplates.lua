@@ -11,6 +11,22 @@ local CHAIN_GRID_VERTICAL_SIZE = 80;
 local CHAIN_GRID_HORIZONTAL_PADDING = 99;
 local CHAIN_GRID_VERTICAL_PADDING = 52 + (CHAIN_GRID_VERTICAL_SIZE * 2);
 
+--@REMOVE AFTER 9.0
+local GetLogIndexForQuestID = C_QuestLog.GetLogIndexForQuestID
+local IsQuestComplete = C_QuestLog.IsComplete
+local IsQuestFailed = C_QuestLog.IsFailed
+if select(4, GetBuildInfo()) < 90000 then
+    GetLogIndexForQuestID = GetQuestLogIndexByID
+    function IsQuestComplete(questLogIndex)
+        local complete = select(6, GetQuestLogTitle(questLogIndex))
+        return complete and compelte > 0
+    end
+    function IsQuestFailed(questLogIndex)
+        local complete = select(6, GetQuestLogTitle(questLogIndex))
+        return complete and compelte < 0
+    end
+end
+
 -- [[ Chain ]]
 function BtWQuestsChainItemPool_HideAndClearAnchors(framePool, frame)
     FramePool_HideAndClearAnchors(framePool, frame)
@@ -893,7 +909,7 @@ function BtWQuestsNavBarMixin:GoToItem(item)
         if self.enableExpansions then
             BtWQuestsFrame:SelectExpansion()
         else
-            BtWQuestsFrame:SelectExpansion(BtWQuestsFrame.expansionID or BtWQuestsDatabase:GuessExpansion(self:GetCharacter()))
+            BtWQuestsFrame:SelectExpansion(BtWQuestsFrame.expansionID or BtWQuestsDatabase:GetBestExpansionForCharacter(self:GetCharacter()))
         end
     elseif item.type == "expansion" then
         BtWQuestsFrame:SelectExpansion(item.id)
@@ -1677,8 +1693,9 @@ function BtWQuestsTooltipMixin:SetActiveQuest(id, character)
     self.questID = id
 
     local quest = BtWQuestsDatabase:GetQuestByID(id)
-    local questLogIndex = GetQuestLogIndexByID(id)
-	local isComplete = select(6, GetQuestLogTitle(questLogIndex));
+    local questLogIndex = GetLogIndexForQuestID(id)
+	local isComplete = IsQuestComplete(id);
+	local isFailed = IsQuestFailed(id);
     local _, objectiveText = GetQuestLogQuestText(questLogIndex);
 
     self:ClearLines()
@@ -1694,11 +1711,11 @@ function BtWQuestsTooltipMixin:SetActiveQuest(id, character)
         end
     end
 
-	if isComplete and isComplete < 0 then
+	if isFailed then
 		QuestUtils_AddQuestTagLineToTooltip(self, FAILED, "FAILED", nil, RED_FONT_COLOR);
 	end
 
-	if isComplete and isComplete > 0 then
+	if isComplete then
 		local completionText = GetQuestLogCompletionText(questLogIndex) or QUEST_WATCH_QUEST_READY;
         self:AddLine(" ")
 		self:AddLine(completionText, 1, 1, 1, true);

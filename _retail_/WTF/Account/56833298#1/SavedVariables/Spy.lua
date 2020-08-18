@@ -94,6 +94,7 @@ SpyDB = {
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 740.0001831054688,
@@ -119,7 +120,6 @@ SpyDB = {
 					["x"] = 4,
 				},
 			},
-			["AppendUnitNameCheck"] = true,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Serbitechna - Dalaran"] = {
@@ -242,8 +242,6 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -251,6 +249,8 @@ SpyDB = {
 					},
 				},
 			},
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
