@@ -1,8 +1,9 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
+	},
+	["KOSData"] = {
 	},
 	["PlayerData"] = {
 		["Tautianna-Lightninghoof"] = {
@@ -526,5 +527,4 @@ SpyPerCharDB = {
 			["subZone"] = "",
 		},
 	},
-	["version"] = "1.1",
 }

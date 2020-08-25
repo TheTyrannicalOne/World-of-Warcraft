@@ -1,10 +1,5 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
-	["KOSData"] = {
-	},
 	["PlayerData"] = {
 		["Tautianna-Lightninghoof"] = {
 			["mapID"] = 1527,
@@ -526,5 +521,10 @@ SpyPerCharDB = {
 			["isGuess"] = false,
 			["time"] = 1592799432,
 		},
+	},
+	["IgnoreData"] = {
+	},
+	["version"] = "1.1",
+	["KOSData"] = {
 	},
 }

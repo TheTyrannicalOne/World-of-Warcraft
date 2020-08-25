@@ -7,10 +7,10 @@ QuestTogether = {
 				"0/5 Elemental-Imbued Weapon broken", -- [1]
 			},
 		},
-		[54485] = {
-			["title"] = "Battle of Dazar'alor",
+		[56128] = {
+			["title"] = "Drowning the Horde",
 			["objectives"] = {
-				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+				"0/25 Horde Players slain", -- [1]
 			},
 		},
 		[13413] = {
@@ -19,11 +19,10 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[57744] = {
@@ -38,79 +37,16 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
 				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
-		[44720] = {
-			["title"] = "A Call to Action",
-			["objectives"] = {
-			},
-		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[57006] = {
-			["title"] = "A Worthy Ally",
-			["objectives"] = {
-				"0/1 Use the Deepflame Campfire", -- [1]
-				"0/1 Choose an ally", -- [2]
-				"0/3 Ally quests complete", -- [3]
-			},
-		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
-			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
-			},
-		},
-		[39060] = {
-			["title"] = "Combustible Contagion",
-			["objectives"] = {
-				"0/1 Northern Plague Cache Burned", -- [1]
-				"0/1 Eastern Plague Cache Burned", -- [2]
-				"1/1 Western Plague Cache Burned", -- [3]
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
-		[54438] = {
-			["title"] = "Crucible of Storms: Relics of Shadow",
-			["objectives"] = {
-				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
-			},
-		},
-		[36615] = {
-			["title"] = "My Very Own Castle",
-			["objectives"] = {
-				"172/2000 Garrison Resources gathered (Optional)", -- [1]
-				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
 		[56378] = {
@@ -121,6 +57,76 @@ QuestTogether = {
 				"0/1 Thermospark found", -- [3]
 			},
 		},
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[57006] = {
+			["title"] = "A Worthy Ally",
+			["objectives"] = {
+				"0/1 Use the Deepflame Campfire", -- [1]
+				"0/1 Choose an ally", -- [2]
+				"0/3 Ally quests complete", -- [3]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
+			},
+		},
+		[39060] = {
+			["title"] = "Combustible Contagion",
+			["objectives"] = {
+				"0/1 Northern Plague Cache Burned", -- [1]
+				"0/1 Eastern Plague Cache Burned", -- [2]
+				"1/1 Western Plague Cache Burned", -- [3]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
+		[54438] = {
+			["title"] = "Crucible of Storms: Relics of Shadow",
+			["objectives"] = {
+				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
+			},
+		},
+		[50605] = {
+			["title"] = "Alliance War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[36615] = {
+			["title"] = "My Very Own Castle",
+			["objectives"] = {
+				"172/2000 Garrison Resources gathered (Optional)", -- [1]
+				"0/1 Upgrade your garrison to Tier 3", -- [2]
+			},
+		},
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
+			["objectives"] = {
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
+			},
+		},
+		[32806] = {
+			["title"] = "The King and the Council",
+			["objectives"] = {
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+			},
+		},
 		[56499] = {
 			["title"] = "Storming the Battlefields",
 			["objectives"] = {
@@ -129,21 +135,18 @@ QuestTogether = {
 				"0/1 Win a Battleground", -- [3]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
-			},
-		},
-		[50601] = {
-			["title"] = "Storm's Wake",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[31486] = {
@@ -167,7 +170,7 @@ QuestTogether = {
 		[42483] = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
-				"0/1 Steelscale's Fin", -- [1]
+				"0/1  ", -- [1]
 			},
 		},
 		[31891] = {
@@ -186,24 +189,22 @@ QuestTogether = {
 				"10/25 Slay Horde Players", -- [1]
 			},
 		},
-		[56211] = {
-			["title"] = "Scrying Stones",
+		[44720] = {
+			["title"] = "A Call to Action",
 			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56128] = {
-			["title"] = "Drowning the Horde",
+		[54485] = {
+			["title"] = "Battle of Dazar'alor",
 			["objectives"] = {
-				"0/25 Horde Players slain", -- [1]
+				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

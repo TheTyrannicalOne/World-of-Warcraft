@@ -1,5 +1,9 @@
 
 SpyPerCharDB = {
+	["KOSData"] = {
+	},
+	["IgnoreData"] = {
+	},
 	["PlayerData"] = {
 		["Warctooth-Thunderhorn"] = {
 			["mapID"] = 125,
@@ -10,11 +14,11 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["race"] = "Mag'har Orc",
 			["isGuess"] = false,
-			["subZone"] = "Dalaran",
-			["mapX"] = 0.38,
-			["level"] = 76,
-			["time"] = 1588561103,
 			["name"] = "Warctooth-Thunderhorn",
+			["time"] = 1588561103,
+			["level"] = 76,
+			["mapX"] = 0.38,
+			["subZone"] = "Dalaran",
 		},
 		["Hairycow-Whisperwind"] = {
 			["mapID"] = 125,
@@ -25,11 +29,11 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["race"] = "Tauren",
 			["isGuess"] = false,
-			["name"] = "Hairycow-Whisperwind",
-			["time"] = 1588784639,
-			["level"] = 120,
-			["mapX"] = 0.38,
 			["subZone"] = "Dalaran",
+			["mapX"] = 0.38,
+			["level"] = 120,
+			["time"] = 1588784639,
+			["name"] = "Hairycow-Whisperwind",
 		},
 		["Benjámin-Madoran"] = {
 			["mapID"] = 125,
@@ -39,11 +43,11 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["race"] = "Orc",
 			["name"] = "Benjámin-Madoran",
-			["subZone"] = "Dalaran",
-			["mapX"] = 0.38,
-			["level"] = 110,
-			["isGuess"] = false,
 			["time"] = 1587734604,
+			["isGuess"] = false,
+			["level"] = 110,
+			["mapX"] = 0.38,
+			["subZone"] = "Dalaran",
 		},
 		["ßãßë-Destromath"] = {
 			["mapID"] = 125,
@@ -53,16 +57,12 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["race"] = "Orc",
 			["name"] = "ßãßë-Destromath",
-			["subZone"] = "Dalaran",
-			["mapX"] = 0.39,
-			["level"] = 65,
-			["isGuess"] = false,
 			["time"] = 1589562307,
+			["isGuess"] = false,
+			["level"] = 65,
+			["mapX"] = 0.39,
+			["subZone"] = "Dalaran",
 		},
 	},
-	["IgnoreData"] = {
-	},
 	["version"] = "1.1",
-	["KOSData"] = {
-	},
 }

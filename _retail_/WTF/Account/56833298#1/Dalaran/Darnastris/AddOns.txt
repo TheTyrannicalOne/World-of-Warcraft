@@ -20,3 +20,4 @@ AAP-Legion: disabled
 AAP-BfA: disabled
 Azeroth Auto Pilot: disabled
 Leatrix_Plus: disabled
+ElvUI_DTBars2: disabled

@@ -4,21 +4,21 @@ QuestTogether = {
 		[13041] = {
 			["title"] = "Finish the Shipment",
 			["objectives"] = {
-				"0/1 Chalcedony", -- [1]
+				"0/1  ", -- [1]
 			},
 		},
 		[27354] = {
 			["title"] = "Mastering the Arcane",
 			["objectives"] = {
-				"0/1 Silverlaine's Enchanted Crystal", -- [1]
-				"0/5 Moontouched Wood", -- [2]
-				"0/5 Ghostly Essence", -- [3]
+				"0/1  ", -- [1]
+				"0/5  ", -- [2]
+				"0/5  ", -- [3]
 			},
 		},
 		[25186] = {
 			["title"] = "Futile Resistance",
 			["objectives"] = {
-				"0/1 Kona Thunderwalk slain", -- [1]
+				"0/1   slain", -- [1]
 			},
 		},
 		[54185] = {
@@ -31,14 +31,14 @@ QuestTogether = {
 		[12292] = {
 			["title"] = "Local Support",
 			["objectives"] = {
-				"0/1 Cedar Chest", -- [1]
+				"0/1  ", -- [1]
 			},
 		},
 		[28398] = {
 			["title"] = "The Pyromancer's Grimoire",
 			["objectives"] = {
-				"0/6 Twilight Emissary slain", -- [1]
-				"0/1 Loregrain's Grimoire", -- [2]
+				"0/6   slain", -- [1]
+				"0/1  ", -- [2]
 			},
 		},
 		[12789] = {
@@ -114,8 +114,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

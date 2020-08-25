@@ -32,11 +32,8 @@ RematchSettings = {
 	["HidePetToast"] = true,
 	["QueueSanctuary"] = {
 	},
-	["Sort"] = {
-		["Order"] = 1,
-		["FavoritesFirst"] = true,
-	},
-	["AllowHiddenPetsDefaulted"] = true,
+	["DialogXPos"] = 1284.007934570313,
+	["JournalPanel"] = 1,
 	["BackupCount"] = 0,
 	["TeamGroups"] = {
 		{
@@ -51,13 +48,13 @@ RematchSettings = {
 		},
 		["Script"] = {
 		},
-		["Moveset"] = {
+		["Types"] = {
 		},
-		["Tough"] = {
+		["Favorite"] = {
 		},
-		["Level"] = {
+		["Collected"] = {
 		},
-		["Sources"] = {
+		["Strong"] = {
 		},
 		["Similar"] = {
 		},
@@ -65,18 +62,18 @@ RematchSettings = {
 		},
 		["Rarity"] = {
 		},
-		["Strong"] = {
+		["Sources"] = {
 		},
-		["Collected"] = {
+		["Level"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Types"] = {
+		["Moveset"] = {
 		},
 	},
-	["SelectedTab"] = 1,
-	["YPos"] = 418.0044860839844,
-	["JournalPanel"] = 1,
+	["CustomScaleValue"] = 100,
+	["UseTypeBar"] = true,
+	["AllowHiddenPetsDefaulted"] = true,
 	["CollapsedOptHeaders"] = {
 	},
 	["SpecialSlots"] = {
@@ -88,9 +85,12 @@ RematchSettings = {
 	["ElvUIToastDefaulted"] = true,
 	["CornerPos"] = "BOTTOMLEFT",
 	["JournalUsed"] = true,
-	["DialogXPos"] = 1284.007934570313,
-	["UseTypeBar"] = true,
-	["CustomScaleValue"] = 100,
+	["Sort"] = {
+		["Order"] = 1,
+		["FavoritesFirst"] = true,
+	},
+	["YPos"] = 418.0044860839844,
+	["SelectedTab"] = 1,
 	["PetNotes"] = {
 	},
 }

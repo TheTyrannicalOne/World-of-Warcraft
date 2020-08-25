@@ -8,29 +8,29 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 6,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Privateer",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 1496635,
 			["players"] = {
 				{
 					["last"] = 1597641399,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Privateer"] = 1496635,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 5,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597641394,
 					["damage"] = 1496635,
 					["damagespells"] = {
 						["Overpower"] = {
@@ -58,26 +58,27 @@ SkadaPerCharDB = {
 							["damage"] = 601578,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597641394,
+					["healing"] = 0,
 					["auras"] = {
 						["Taunt"] = {
-							["school"] = 1,
 							["name"] = "Taunt",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 355,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 3,
 						},
 						["Overpower"] = {
-							["school"] = 1,
 							["name"] = "Overpower",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 7384,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
@@ -90,18 +91,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Privateer",
 			["healing"] = 0,
 			["mobtaken"] = 1496635,
 			["overhealing"] = 0,
@@ -141,46 +141,46 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 8,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Privateer",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 1593591,
 			["players"] = {
 				{
 					["last"] = 1597641278,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Privateer"] = 1181393,
 						["Southsea Cannoneer"] = 412198,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 6,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597641272,
 					["damage"] = 1593591,
 					["damagespells"] = {
 						["Whirlwind"] = {
 							["hitmin"] = 137527,
 							["criticalamount"] = 274671,
 							["id"] = 199658,
-							["criticalmin"] = 274671,
 							["hitamount"] = 137527,
+							["criticalmin"] = 274671,
 							["critical"] = 1,
 							["min"] = 137527,
 							["criticalmax"] = 274671,
 							["hitmax"] = 137527,
 							["hit"] = 1,
 							["school"] = 1,
-							["max"] = 274671,
 							["totalhits"] = 2,
+							["max"] = 274671,
 							["damage"] = 412198,
 						},
 						["Attack"] = {
@@ -196,18 +196,19 @@ SkadaPerCharDB = {
 							["damage"] = 1181393,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597641272,
+					["healing"] = 0,
 					["auras"] = {
 						["Tactician"] = {
-							["school"] = 1,
 							["name"] = "Tactician",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 199854,
 							["auratype"] = "BUFF",
 							["uptime"] = 2,
@@ -220,18 +221,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Privateer",
 			["healing"] = 0,
 			["mobtaken"] = 1593591,
 			["overhealing"] = 0,
@@ -289,30 +289,30 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 6,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Privateer",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 1467200,
 			["players"] = {
 				{
 					["last"] = 1597641143,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Privateer"] = 570912,
 						["Southsea Cutthroat"] = 896288,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 1,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597641142,
 					["damage"] = 1467200,
 					["damagespells"] = {
 						["Overpower"] = {
@@ -340,18 +340,19 @@ SkadaPerCharDB = {
 							["damage"] = 570912,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597641142,
+					["healing"] = 0,
 					["auras"] = {
 						["Overpower"] = {
-							["school"] = 1,
 							["name"] = "Overpower",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 7384,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
@@ -364,18 +365,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Privateer",
 			["healing"] = 0,
 			["mobtaken"] = 1467200,
 			["overhealing"] = 0,
@@ -433,30 +433,30 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 9,
 			["interrupts"] = 0,
-			["mobname"] = "Cap'n Garvey",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 1203537,
 			["players"] = {
 				{
 					["last"] = 1597640878,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Recruit"] = 584272,
 						["Cap'n Garvey"] = 619265,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 5,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597640873,
 					["damage"] = 1203537,
 					["damagespells"] = {
 						["Attack"] = {
@@ -472,13 +472,14 @@ SkadaPerCharDB = {
 							["damage"] = 1203537,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597640873,
+					["healing"] = 0,
 					["auras"] = {
 					},
 					["damagetakenspells"] = {
@@ -488,18 +489,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Cap'n Garvey",
 			["healing"] = 0,
 			["mobtaken"] = 1203537,
 			["overhealing"] = 0,
@@ -557,30 +557,30 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 11,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Cutthroat",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 756325,
 			["players"] = {
 				{
 					["last"] = 1597640686,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Cutthroat"] = 618808,
 						["Southsea Privateer"] = 137517,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 10,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597640676,
 					["damage"] = 756325,
 					["damagespells"] = {
 						["Whirlwind"] = {
@@ -608,34 +608,35 @@ SkadaPerCharDB = {
 							["damage"] = 618808,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597640676,
+					["healing"] = 0,
 					["auras"] = {
 						["Taunt"] = {
-							["school"] = 1,
 							["name"] = "Taunt",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 355,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 3,
 						},
 						["Will of the Loa"] = {
-							["school"] = 1,
 							["name"] = "Will of the Loa",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 273974,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Tactician"] = {
-							["school"] = 1,
 							["name"] = "Tactician",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 199854,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
@@ -648,18 +649,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Cutthroat",
 			["healing"] = 0,
 			["mobtaken"] = 756325,
 			["overhealing"] = 0,
@@ -717,55 +717,49 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 10,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Cutthroat",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 412578,
 			["players"] = {
 				{
 					["last"] = 1597640552,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Cutthroat"] = 412578,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 26550,
 					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597640552,
 					["damage"] = 412578,
 					["damagespells"] = {
 						["Whirlwind"] = {
 							["hitmin"] = 137527,
 							["criticalamount"] = 275051,
 							["id"] = 199658,
-							["criticalmin"] = 275051,
 							["hitamount"] = 137527,
+							["criticalmin"] = 275051,
 							["critical"] = 1,
 							["min"] = 137527,
 							["criticalmax"] = 275051,
 							["hitmax"] = 137527,
 							["hit"] = 1,
 							["school"] = 1,
-							["max"] = 275051,
 							["totalhits"] = 2,
+							["max"] = 275051,
 							["damage"] = 412578,
 						},
 					},
-					["power"] = {
-						{
-							["amount"] = 15,
-							["spells"] = {
-								[298321] = 15,
-							},
-						}, -- [1]
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 						["Player-75-058380E2"] = {
@@ -776,22 +770,29 @@ SkadaPerCharDB = {
 							["shielding"] = 0,
 						},
 					},
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["amount"] = 15,
+							["spells"] = {
+								[298321] = 15,
+							},
+						}, -- [1]
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597640552,
+					["healing"] = 0,
 					["auras"] = {
 						["Lucid Dreams"] = {
-							["school"] = 1,
 							["name"] = "Lucid Dreams",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 298343,
 							["auratype"] = "BUFF",
 							["uptime"] = 2,
 						},
 						["Reckless Force"] = {
-							["school"] = 1,
 							["name"] = "Reckless Force",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 302932,
 							["auratype"] = "BUFF",
 							["uptime"] = 0,
@@ -806,9 +807,9 @@ SkadaPerCharDB = {
 							["healing"] = 0,
 							["min"] = 0,
 							["name"] = "Lucid Dreams",
-							["max"] = 0,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 0,
 							["overhealing"] = 26550,
 							["hits"] = 1,
 						},
@@ -816,18 +817,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 26550,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Cutthroat",
 			["healing"] = 0,
 			["mobtaken"] = 412578,
 			["overhealing"] = 26550,
@@ -868,30 +868,30 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 9,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Cutthroat",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 1346836,
 			["players"] = {
 				{
 					["last"] = 1597638404,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Cutthroat"] = 137611,
 						["Glomp"] = 1209225,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 7,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597638397,
 					["damage"] = 1346836,
 					["damagespells"] = {
 						["Whirlwind"] = {
@@ -919,34 +919,35 @@ SkadaPerCharDB = {
 							["damage"] = 1209225,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597638397,
+					["healing"] = 0,
 					["auras"] = {
 						["Deadly Momentum"] = {
-							["school"] = 32,
 							["name"] = "Deadly Momentum",
 							["active"] = 0,
+							["school"] = 32,
 							["id"] = 318219,
 							["auratype"] = "BUFF",
 							["uptime"] = 4,
 						},
 						["Taunt"] = {
-							["school"] = 1,
 							["name"] = "Taunt",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 355,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 3,
 						},
 						["Tactician"] = {
-							["school"] = 1,
 							["name"] = "Tactician",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 199854,
 							["auratype"] = "BUFF",
 							["uptime"] = 2,
@@ -959,18 +960,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Cutthroat",
 			["healing"] = 0,
 			["mobtaken"] = 1346836,
 			["overhealing"] = 0,
@@ -1028,60 +1028,61 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 7,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Privateer",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 549902,
 			["players"] = {
 				{
 					["last"] = 1597637532,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Privateer"] = 549902,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 2,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597637530,
 					["damage"] = 549902,
 					["damagespells"] = {
 						["Whirlwind"] = {
 							["hitmin"] = 137331,
 							["criticalamount"] = 275044,
 							["id"] = 199658,
-							["criticalmin"] = 275044,
 							["hitamount"] = 274858,
+							["criticalmin"] = 275044,
 							["critical"] = 1,
 							["min"] = 137331,
 							["criticalmax"] = 275044,
 							["hitmax"] = 137527,
 							["hit"] = 2,
 							["school"] = 1,
-							["max"] = 275044,
 							["totalhits"] = 3,
+							["max"] = 275044,
 							["damage"] = 549902,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597637530,
+					["healing"] = 0,
 					["auras"] = {
 						["Tactician"] = {
-							["school"] = 1,
 							["name"] = "Tactician",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 199854,
 							["auratype"] = "BUFF",
 							["uptime"] = 2,
@@ -1094,18 +1095,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Privateer",
 			["healing"] = 0,
 			["mobtaken"] = 549902,
 			["overhealing"] = 0,
@@ -1145,29 +1145,29 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 6,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Cutthroat",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 1778346,
 			["players"] = {
 				{
 					["last"] = 1597637221,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Cutthroat"] = 1778346,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 2,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597637219,
 					["damage"] = 1778346,
 					["damagespells"] = {
 						["Warbreaker"] = {
@@ -1183,18 +1183,19 @@ SkadaPerCharDB = {
 							["damage"] = 1778346,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597637219,
+					["healing"] = 0,
 					["auras"] = {
 						["Crushing Assault"] = {
-							["school"] = 1,
 							["name"] = "Crushing Assault",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 278826,
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
@@ -1207,18 +1208,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Cutthroat",
 			["healing"] = 0,
 			["mobtaken"] = 1778346,
 			["overhealing"] = 0,
@@ -1258,60 +1258,61 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 7,
 			["interrupts"] = 0,
-			["mobname"] = "Southsea Cutthroat",
 			["ffdamagedone"] = 0,
 			["dispells"] = 0,
+			["auras"] = {
+			},
 			["damage"] = 550346,
 			["players"] = {
 				{
 					["last"] = 1597637176,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
 					["class"] = "WARRIOR",
+					["ffdamagedonespells"] = {
+					},
 					["damaged"] = {
 						["Southsea Cutthroat"] = 550346,
 					},
 					["alertDamage"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["overhealing"] = 0,
 					["role"] = "NONE",
 					["time"] = 2,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
+					["first"] = 1597637174,
 					["damage"] = 550346,
 					["damagespells"] = {
 						["Whirlwind"] = {
 							["hitmin"] = 137517,
 							["criticalamount"] = 275226,
 							["id"] = 199658,
-							["criticalmin"] = 275226,
 							["hitamount"] = 275120,
+							["criticalmin"] = 275226,
 							["critical"] = 1,
 							["min"] = 137517,
 							["criticalmax"] = 275226,
 							["hitmax"] = 137603,
 							["hit"] = 2,
 							["school"] = 1,
-							["max"] = 275226,
 							["totalhits"] = 3,
+							["max"] = 275226,
 							["damage"] = 550346,
 						},
 					},
-					["power"] = {
+					["ffdamagedonetargets"] = {
 					},
 					["healed"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["id"] = "Player-75-058380E2",
-					["first"] = 1597637174,
+					["healing"] = 0,
 					["auras"] = {
 						["Tactician"] = {
-							["school"] = 1,
 							["name"] = "Tactician",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 199854,
 							["auratype"] = "BUFF",
 							["uptime"] = 2,
@@ -1324,18 +1325,17 @@ SkadaPerCharDB = {
 					["maxhp"] = 412640,
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["overhealing"] = 0,
+					["shielding"] = 0,
 					["damagetaken"] = 0,
 					["alert"] = {
 					},
-					["healing"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 0,
 			["shielding"] = 0,
-			["auras"] = {
-			},
+			["mobname"] = "Southsea Cutthroat",
 			["healing"] = 0,
 			["mobtaken"] = 550346,
 			["overhealing"] = 0,
@@ -1386,227 +1386,14 @@ SkadaPerCharDB = {
 				},
 				["damaged"] = {
 				},
-				["auras"] = {
-					["Concentrated Flame"] = {
-						["started"] = 1597637427,
-						["uptime"] = 941,
-						["active"] = 3,
-						["id"] = 295368,
-						["name"] = "Concentrated Flame",
-						["auratype"] = "DEBUFF",
-						["school"] = 4,
-					},
-					["Charge"] = {
-						["uptime"] = 385,
-						["active"] = 0,
-						["id"] = 109128,
-						["name"] = "Charge",
-						["school"] = 1,
-						["auratype"] = "BUFF",
-					},
-					["Blood Rite"] = {
-						["active"] = 16,
-						["uptime"] = 45,
-						["started"] = 1597637107,
-						["id"] = 280409,
-						["name"] = "Blood Rite",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Crushing Assault"] = {
-						["active"] = 21,
-						["uptime"] = 66,
-						["started"] = 1597636938,
-						["id"] = 278826,
-						["name"] = "Crushing Assault",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Lucid Dreams"] = {
-						["active"] = 3,
-						["name"] = "Lucid Dreams",
-						["started"] = 1597637150,
-						["auratype"] = "BUFF",
-						["uptime"] = 100,
-						["school"] = 1,
-						["id"] = 298343,
-					},
-					["Sweeping Strikes"] = {
-						["active"] = 0,
-						["uptime"] = 73,
-						["id"] = 260708,
-						["name"] = "Sweeping Strikes",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Reckless Force"] = {
-						["active"] = 11,
-						["uptime"] = 293,
-						["started"] = 1597636871,
-						["id"] = 302917,
-						["name"] = "Reckless Force",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Test of Might"] = {
-						["started"] = 1597637731,
-						["uptime"] = 0,
-						["active"] = 1,
-						["id"] = 275540,
-						["name"] = "Test of Might",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Will of the Loa"] = {
-						["active"] = 14,
-						["uptime"] = 10,
-						["started"] = 1597636990,
-						["id"] = 273974,
-						["name"] = "Will of the Loa",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Ancient Flame"] = {
-						["started"] = 1597638745,
-						["uptime"] = 544,
-						["active"] = 3,
-						["id"] = 303380,
-						["name"] = "Ancient Flame",
-						["auratype"] = "BUFF",
-						["school"] = 4,
-					},
-					["Overpower"] = {
-						["active"] = 1,
-						["name"] = "Overpower",
-						["started"] = 1597641399,
-						["auratype"] = "BUFF",
-						["uptime"] = 3579,
-						["school"] = 1,
-						["id"] = 7384,
-					},
-					["Taunt"] = {
-						["uptime"] = 55,
-						["active"] = 0,
-						["id"] = 355,
-						["name"] = "Taunt",
-						["auratype"] = "DEBUFF",
-						["school"] = 1,
-					},
-					["Victorious"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["id"] = 32216,
-						["name"] = "Victorious",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Battle Shout"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 6673,
-						["auratype"] = "BUFF",
-						["name"] = "Battle Shout",
-					},
-					["Deadly Momentum"] = {
-						["active"] = 28,
-						["uptime"] = 30,
-						["started"] = 1597636842,
-						["id"] = 318219,
-						["name"] = "Deadly Momentum",
-						["auratype"] = "BUFF",
-						["school"] = 32,
-					},
-					["Colossus Smash"] = {
-						["uptime"] = 102,
-						["active"] = 0,
-						["school"] = 1,
-						["name"] = "Colossus Smash",
-						["auratype"] = "DEBUFF",
-						["id"] = 208086,
-					},
-					["Gathering Storm"] = {
-						["uptime"] = 10,
-						["active"] = 0,
-						["school"] = 1,
-						["name"] = "Gathering Storm",
-						["auratype"] = "BUFF",
-						["id"] = 273415,
-					},
-					["Tactician"] = {
-						["active"] = 18,
-						["uptime"] = 900,
-						["started"] = 1597637020,
-						["id"] = 199854,
-						["name"] = "Tactician",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Mortal Wounds"] = {
-						["name"] = "Mortal Wounds",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 144,
-						["auratype"] = "DEBUFF",
-						["id"] = 115804,
-					},
-					["Vampiric Speed"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["id"] = 269239,
-						["name"] = "Vampiric Speed",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Deep Wounds"] = {
-						["name"] = "Deep Wounds",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 155,
-						["auratype"] = "DEBUFF",
-						["id"] = 262115,
-					},
-					["Bladestorm"] = {
-						["name"] = "Bladestorm",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 15,
-						["auratype"] = "BUFF",
-						["id"] = 227847,
-					},
-					["Incite the Pack"] = {
-						["active"] = 12,
-						["name"] = "Incite the Pack",
-						["started"] = 1597637116,
-						["id"] = 280413,
-						["uptime"] = 88,
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Sated"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["name"] = "Sated",
-						["auratype"] = "DEBUFF",
-						["id"] = 57724,
-					},
-					["Avatar"] = {
-						["name"] = "Avatar",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 20,
-						["auratype"] = "BUFF",
-						["id"] = 107574,
-					},
-				},
 				["dispells"] = 0,
+				["overhealing"] = 3310510,
 				["ccbreaks"] = 0,
 				["time"] = 1797,
 				["interrupts"] = 0,
 				["alertDamage"] = 99498,
 				["ffdamagedone"] = 0,
-				["overhealing"] = 3310510,
+				["maxhp"] = 474536,
 				["damage"] = 730649569,
 				["damagespells"] = {
 					["Concentrated Flame"] = {
@@ -1930,125 +1717,126 @@ SkadaPerCharDB = {
 						["hitamount"] = 137668586,
 					},
 				},
-				["role"] = "DAMAGER",
+				["ffdamagedonetargets"] = {
+				},
 				["damagetaken"] = 1320823,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
-						["ts"] = 1597639248.547,
 						["amount"] = 0,
+						["ts"] = 1597639248.547,
 						["srcname"] = "Shanyt",
 						["spellid"] = 298318,
 						["hp"] = 412640,
 					}, -- [1]
 					{
 						["absorb"] = 0,
-						["srcname"] = "Shanyt",
 						["amount"] = 0,
+						["srcname"] = "Shanyt",
 						["spellid"] = 303380,
 						["hp"] = 412640,
 						["ts"] = 1597639482.231,
 					}, -- [2]
 					{
 						["absorb"] = 0,
-						["ts"] = 1597639488.186,
 						["amount"] = 0,
+						["ts"] = 1597639488.186,
 						["srcname"] = "Shanyt",
 						["spellid"] = 303380,
 						["hp"] = 412640,
 					}, -- [3]
 					{
 						["ts"] = 1597639664.314,
-						["absorb"] = 0,
 						["amount"] = 0,
+						["absorb"] = 0,
 						["srcname"] = "Shanyt",
 						["spellid"] = 298318,
 						["hp"] = 412640,
 					}, -- [4]
 					{
 						["ts"] = 1597639775.609,
-						["absorb"] = 0,
 						["amount"] = 0,
+						["absorb"] = 0,
 						["srcname"] = "Shanyt",
 						["spellid"] = 295384,
 						["hp"] = 412640,
 					}, -- [5]
 					{
 						["ts"] = 1597639779.635,
-						["absorb"] = 0,
 						["amount"] = 0,
+						["absorb"] = 0,
 						["srcname"] = "Shanyt",
 						["spellid"] = 295384,
 						["hp"] = 412640,
 					}, -- [6]
 					{
 						["ts"] = 1597639933.153,
-						["srcname"] = "Shanyt",
 						["amount"] = 0,
+						["srcname"] = "Shanyt",
 						["spellid"] = 295384,
 						["hp"] = 412640,
 						["absorb"] = 0,
 					}, -- [7]
 					{
 						["ts"] = 1597640073.012,
-						["absorb"] = 0,
 						["amount"] = 0,
+						["absorb"] = 0,
 						["srcname"] = "Shanyt",
 						["spellid"] = 298318,
 						["hp"] = 412640,
 					}, -- [8]
 					{
 						["ts"] = 1597640078.997,
-						["absorb"] = 0,
 						["amount"] = 0,
+						["absorb"] = 0,
 						["srcname"] = "Shanyt",
 						["spellid"] = 303380,
 						["hp"] = 412640,
 					}, -- [9]
 					{
 						["ts"] = 1597640081.016,
-						["srcname"] = "Shanyt",
 						["amount"] = 0,
+						["srcname"] = "Shanyt",
 						["spellid"] = 303380,
 						["hp"] = 412640,
 						["absorb"] = 0,
 					}, -- [10]
 					{
 						["ts"] = 1597640552.183,
-						["absorb"] = 0,
 						["amount"] = 0,
+						["absorb"] = 0,
 						["srcname"] = "Shanyt",
 						["spellid"] = 298318,
 						["hp"] = 412640,
 					}, -- [11]
 					{
 						["absorb"] = 0,
-						["srcname"] = "Shanyt",
 						["amount"] = 0,
+						["srcname"] = "Shanyt",
 						["spellid"] = 298318,
 						["hp"] = 412640,
 						["ts"] = 1597641405.832,
 					}, -- [12]
 					{
 						["ts"] = 1597638344.583,
-						["absorb"] = 0,
 						["amount"] = 0,
+						["absorb"] = 0,
 						["srcname"] = "Shanyt",
 						["spellid"] = 303380,
 						["hp"] = 412640,
 					}, -- [13]
 					{
 						["absorb"] = 0,
-						["ts"] = 1597638352.587,
 						["amount"] = 0,
+						["ts"] = 1597638352.587,
 						["srcname"] = "Shanyt",
 						["spellid"] = 303380,
 						["hp"] = 412640,
 					}, -- [14]
 					{
 						["ts"] = 1597638392.009,
-						["srcname"] = "Shanyt",
 						["amount"] = 0,
+						["srcname"] = "Shanyt",
 						["spellid"] = 298318,
 						["hp"] = 412640,
 						["absorb"] = 0,
@@ -2056,7 +1844,7 @@ SkadaPerCharDB = {
 					["pos"] = 13,
 				},
 				["id"] = "Player-75-058380E2",
-				["maxhp"] = 474536,
+				["healing"] = 1018229,
 				["healingspells"] = {
 					["Concentrated Flame"] = {
 						["shielding"] = 0,
@@ -2425,11 +2213,10 @@ SkadaPerCharDB = {
 						["amount"] = 1843.000001549721,
 					}, -- [1]
 				},
-				["ffdamagedonetargets"] = {
-				},
-				["alertCount"] = 11,
-				["healing"] = 1018229,
 				["name"] = "Shanyt",
+				["alertCount"] = 11,
+				["shielding"] = 0,
+				["role"] = "DAMAGER",
 				["alert"] = {
 					["Low"] = {
 						["alertDamage"] = 0,
@@ -2493,10 +2280,218 @@ SkadaPerCharDB = {
 						["alertDamage"] = 70728,
 					},
 				},
-				["shielding"] = 0,
+				["auras"] = {
+					["Concentrated Flame"] = {
+						["uptime"] = 941,
+						["active"] = 0,
+						["school"] = 4,
+						["name"] = "Concentrated Flame",
+						["auratype"] = "DEBUFF",
+						["id"] = 295368,
+					},
+					["Charge"] = {
+						["uptime"] = 385,
+						["active"] = 0,
+						["id"] = 109128,
+						["name"] = "Charge",
+						["school"] = 1,
+						["auratype"] = "BUFF",
+					},
+					["Blood Rite"] = {
+						["uptime"] = 45,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Blood Rite",
+						["auratype"] = "BUFF",
+						["id"] = 280409,
+					},
+					["Crushing Assault"] = {
+						["uptime"] = 66,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Crushing Assault",
+						["auratype"] = "BUFF",
+						["id"] = 278826,
+					},
+					["Lucid Dreams"] = {
+						["name"] = "Lucid Dreams",
+						["active"] = 0,
+						["id"] = 298343,
+						["uptime"] = 100,
+						["school"] = 1,
+						["auratype"] = "BUFF",
+					},
+					["Sweeping Strikes"] = {
+						["uptime"] = 73,
+						["active"] = 0,
+						["id"] = 260708,
+						["name"] = "Sweeping Strikes",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Reckless Force"] = {
+						["uptime"] = 293,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Reckless Force",
+						["auratype"] = "BUFF",
+						["id"] = 302917,
+					},
+					["Test of Might"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Test of Might",
+						["auratype"] = "BUFF",
+						["id"] = 275540,
+					},
+					["Will of the Loa"] = {
+						["uptime"] = 10,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Will of the Loa",
+						["auratype"] = "BUFF",
+						["id"] = 273974,
+					},
+					["Ancient Flame"] = {
+						["uptime"] = 544,
+						["active"] = 0,
+						["school"] = 4,
+						["name"] = "Ancient Flame",
+						["auratype"] = "BUFF",
+						["id"] = 303380,
+					},
+					["Overpower"] = {
+						["name"] = "Overpower",
+						["active"] = 0,
+						["id"] = 7384,
+						["uptime"] = 3579,
+						["school"] = 1,
+						["auratype"] = "BUFF",
+					},
+					["Taunt"] = {
+						["uptime"] = 55,
+						["active"] = 0,
+						["id"] = 355,
+						["name"] = "Taunt",
+						["auratype"] = "DEBUFF",
+						["school"] = 1,
+					},
+					["Victorious"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["id"] = 32216,
+						["name"] = "Victorious",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Battle Shout"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 6673,
+						["auratype"] = "BUFF",
+						["name"] = "Battle Shout",
+					},
+					["Deadly Momentum"] = {
+						["uptime"] = 30,
+						["active"] = 0,
+						["school"] = 32,
+						["name"] = "Deadly Momentum",
+						["auratype"] = "BUFF",
+						["id"] = 318219,
+					},
+					["Colossus Smash"] = {
+						["uptime"] = 102,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Colossus Smash",
+						["auratype"] = "DEBUFF",
+						["id"] = 208086,
+					},
+					["Gathering Storm"] = {
+						["uptime"] = 10,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Gathering Storm",
+						["auratype"] = "BUFF",
+						["id"] = 273415,
+					},
+					["Tactician"] = {
+						["uptime"] = 900,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Tactician",
+						["auratype"] = "BUFF",
+						["id"] = 199854,
+					},
+					["Mortal Wounds"] = {
+						["name"] = "Mortal Wounds",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 144,
+						["auratype"] = "DEBUFF",
+						["id"] = 115804,
+					},
+					["Vampiric Speed"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["id"] = 269239,
+						["name"] = "Vampiric Speed",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Deep Wounds"] = {
+						["name"] = "Deep Wounds",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 155,
+						["auratype"] = "DEBUFF",
+						["id"] = 262115,
+					},
+					["Bladestorm"] = {
+						["name"] = "Bladestorm",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 15,
+						["auratype"] = "BUFF",
+						["id"] = 227847,
+					},
+					["Incite the Pack"] = {
+						["name"] = "Incite the Pack",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 88,
+						["auratype"] = "BUFF",
+						["id"] = 280413,
+					},
+					["Sated"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Sated",
+						["auratype"] = "DEBUFF",
+						["id"] = 57724,
+					},
+					["Avatar"] = {
+						["name"] = "Avatar",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 20,
+						["auratype"] = "BUFF",
+						["id"] = 107574,
+					},
+				},
 			}, -- [1]
 			{
 				["healingabsorbed"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["class"] = "SHAMAN",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["time"] = 241,
 				["healingspells"] = {
 					["Leech"] = {
 						["shielding"] = 0,
@@ -2547,13 +2542,6 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["ffdamagedonespells"] = {
-				},
-				["damaged"] = {
-				},
-				["dispells"] = 0,
-				["class"] = "SHAMAN",
-				["ffdamagedone"] = 0,
 				["overhealing"] = 68134,
 				["interrupts"] = 1,
 				["auras"] = {
@@ -2831,7 +2819,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["ccbreaks"] = 0,
-				["time"] = 241,
+				["healing"] = 193004,
 				["damage"] = 8589160,
 				["damagespells"] = {
 					["Stormstrike Off-Hand"] = {
@@ -3147,7 +3135,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 299610,
 					},
 				},
-				["alertDamage"] = 0,
+				["name"] = "Braktul",
 				["healed"] = {
 					["Player-1427-0AE077CD"] = {
 						["role"] = "DAMAGER",
@@ -3175,7 +3163,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["id"] = "Player-1427-0AE077CD",
-				["healing"] = 193004,
+				["maxhp"] = 481436,
 				["role"] = "DAMAGER",
 				["damagetakenspells"] = {
 					["Buzz Saw"] = {
@@ -3379,9 +3367,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1592781354.056,
 						["amount"] = -7884,
+						["srcname"] = "Omega Buster",
 						["hp"] = 473552,
 						["spellid"] = 292267,
-						["srcname"] = "Omega Buster",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -3410,9 +3398,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1592781350.081,
 						["amount"] = -7689,
+						["srcname"] = "Omega Buster",
 						["hp"] = 425927,
 						["spellid"] = 292267,
-						["srcname"] = "Omega Buster",
 					}, -- [5]
 					{
 						["ts"] = 1592781350.895,
@@ -3441,9 +3429,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1592781352.072,
 						["amount"] = -7884,
+						["srcname"] = "Omega Buster",
 						["hp"] = 426583,
 						["spellid"] = 292267,
-						["srcname"] = "Omega Buster",
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -3495,17 +3483,24 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 3,
 				},
-				["name"] = "Braktul",
-				["alertCount"] = 0,
-				["maxhp"] = 481436,
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["alertDamage"] = 0,
+				["alert"] = {
+				},
+				["ffdamagedone"] = 0,
 			}, -- [2]
 			{
 				["healingabsorbed"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["class"] = "HUNTER",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["time"] = 238,
 				["healingspells"] = {
 					["Purification Protocol"] = {
 						["shielding"] = 0,
@@ -3580,13 +3575,6 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["ffdamagedonespells"] = {
-				},
-				["damaged"] = {
-				},
-				["dispells"] = 0,
-				["class"] = "HUNTER",
-				["ffdamagedone"] = 0,
 				["overhealing"] = 2353692.8828125,
 				["interrupts"] = 0,
 				["auras"] = {
@@ -3784,7 +3772,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["ccbreaks"] = 0,
-				["time"] = 238,
+				["healing"] = 406396,
 				["damage"] = 8586012,
 				["damagespells"] = {
 					["Purification Protocol"] = {
@@ -3966,7 +3954,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 526595,
 					},
 				},
-				["alertDamage"] = 0,
+				["name"] = "Klyne",
 				["healed"] = {
 					["Player-11-0B9F6D9F"] = {
 						["role"] = "DAMAGER",
@@ -3988,7 +3976,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["id"] = "Player-11-0B9F6D9F",
-				["healing"] = 406396,
+				["maxhp"] = 465336,
 				["role"] = "DAMAGER",
 				["damagetakenspells"] = {
 					["Giga-Wallop"] = {
@@ -4179,9 +4167,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1592781348.29,
 						["amount"] = -43329,
+						["srcname"] = "Plasma Orb",
 						["hp"] = 365370,
 						["spellid"] = 291856,
-						["srcname"] = "Plasma Orb",
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -4233,27 +4221,34 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 1,
 				},
-				["name"] = "Klyne",
-				["alertCount"] = 0,
-				["maxhp"] = 465336,
-				["shielding"] = 160577,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 160577,
+				["alertDamage"] = 0,
+				["alert"] = {
+				},
+				["ffdamagedone"] = 0,
 			}, -- [3]
 			{
 				["healingabsorbed"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["class"] = "SHAMAN",
+				["damaged"] = {
+				},
+				["dispells"] = 7,
+				["time"] = 230,
 				["healingspells"] = {
-					["Spirit Link Totem: Spirit Link"] = {
-						["shielding"] = 0,
-						["id"] = 98021,
-						["healing"] = 699,
-						["min"] = 699,
-						["name"] = "Spirit Link Totem: Spirit Link",
-						["hits"] = 1,
+					["Surging Tides"] = {
+						["shielding"] = 28142,
+						["id"] = 279187,
+						["healing"] = 28142,
+						["min"] = 0,
+						["name"] = "Surging Tides",
+						["hits"] = 7,
 						["overhealing"] = 0,
-						["max"] = 699,
+						["max"] = 9459,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -4269,16 +4264,16 @@ SkadaPerCharDB = {
 						["critical"] = 7,
 						["absorbed"] = 0,
 					},
-					["Riptide"] = {
+					["Self Reliance"] = {
 						["shielding"] = 0,
-						["id"] = 61295,
-						["healing"] = 342617,
-						["min"] = 0,
-						["name"] = "Riptide",
-						["hits"] = 139,
-						["overhealing"] = 288022,
-						["max"] = 14949,
-						["critical"] = 15,
+						["id"] = 270661,
+						["healing"] = 17554,
+						["min"] = 69,
+						["name"] = "Self Reliance",
+						["hits"] = 8,
+						["overhealing"] = 2458,
+						["max"] = 2517,
+						["critical"] = 0,
 						["absorbed"] = 0,
 					},
 					["Healing Surge"] = {
@@ -4341,15 +4336,15 @@ SkadaPerCharDB = {
 						["critical"] = 5,
 						["absorbed"] = 0,
 					},
-					["Surging Tides"] = {
-						["shielding"] = 28142,
-						["id"] = 279187,
-						["healing"] = 28142,
-						["min"] = 0,
-						["name"] = "Surging Tides",
-						["hits"] = 7,
+					["Spirit Link Totem: Spirit Link"] = {
+						["shielding"] = 0,
+						["id"] = 98021,
+						["healing"] = 699,
+						["min"] = 699,
+						["name"] = "Spirit Link Totem: Spirit Link",
+						["hits"] = 1,
 						["overhealing"] = 0,
-						["max"] = 9459,
+						["max"] = 699,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -4413,16 +4408,16 @@ SkadaPerCharDB = {
 						["critical"] = 3,
 						["absorbed"] = 0,
 					},
-					["Self Reliance"] = {
+					["Riptide"] = {
 						["shielding"] = 0,
-						["id"] = 270661,
-						["healing"] = 17554,
-						["min"] = 69,
-						["name"] = "Self Reliance",
-						["hits"] = 8,
-						["overhealing"] = 2458,
-						["max"] = 2517,
-						["critical"] = 0,
+						["id"] = 61295,
+						["healing"] = 342617,
+						["min"] = 0,
+						["name"] = "Riptide",
+						["hits"] = 139,
+						["overhealing"] = 288022,
+						["max"] = 14949,
+						["critical"] = 15,
 						["absorbed"] = 0,
 					},
 					["Blessed Portents"] = {
@@ -4438,13 +4433,6 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["ffdamagedonespells"] = {
-				},
-				["damaged"] = {
-				},
-				["dispells"] = 7,
-				["class"] = "SHAMAN",
-				["ffdamagedone"] = 0,
 				["overhealing"] = 1629853,
 				["interrupts"] = 1,
 				["auras"] = {
@@ -4560,6 +4548,14 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["id"] = 297412,
 					},
+					["Riptide"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 8,
+						["name"] = "Riptide",
+						["auratype"] = "BUFF",
+						["id"] = 61295,
+					},
 					["Surging Tides"] = {
 						["name"] = "Surging Tides",
 						["active"] = 0,
@@ -4575,14 +4571,6 @@ SkadaPerCharDB = {
 						["name"] = "Tidal Waves",
 						["auratype"] = "BUFF",
 						["id"] = 53390,
-					},
-					["Riptide"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["name"] = "Riptide",
-						["auratype"] = "BUFF",
-						["id"] = 61295,
 					},
 					["Synergistic Growth"] = {
 						["uptime"] = 30,
@@ -4642,7 +4630,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["ccbreaks"] = 0,
-				["time"] = 230,
+				["healing"] = 1432786,
 				["damage"] = 587814,
 				["damagespells"] = {
 					["Lava Burst"] = {
@@ -4726,7 +4714,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 105128,
 					},
 				},
-				["alertDamage"] = 0,
+				["name"] = "Senastrasa",
 				["healed"] = {
 					["Player-11-0B9F6D9F"] = {
 						["role"] = "DAMAGER",
@@ -4809,7 +4797,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["id"] = "Player-162-0A66C354",
-				["healing"] = 1432786,
+				["maxhp"] = 366641,
 				["role"] = "HEALER",
 				["damagetakenspells"] = {
 					["Air Drop"] = {
@@ -5100,17 +5088,24 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 12,
 				},
-				["name"] = "Senastrasa",
-				["alertCount"] = 0,
-				["maxhp"] = 366641,
-				["shielding"] = 41340,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 41340,
+				["alertDamage"] = 0,
+				["alert"] = {
+				},
+				["ffdamagedone"] = 0,
 			}, -- [4]
 			{
 				["healingabsorbed"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["class"] = "DRUID",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["time"] = 243,
 				["healingspells"] = {
 					["Brambles"] = {
 						["shielding"] = 172658,
@@ -5257,13 +5252,6 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["ffdamagedonespells"] = {
-				},
-				["damaged"] = {
-				},
-				["dispells"] = 0,
-				["class"] = "DRUID",
-				["ffdamagedone"] = 0,
 				["overhealing"] = 3829108.83203125,
 				["interrupts"] = 1,
 				["auras"] = {
@@ -5453,7 +5441,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["ccbreaks"] = 0,
-				["time"] = 243,
+				["healing"] = 2771148,
 				["damage"] = 8156438,
 				["damagespells"] = {
 					["Brambles"] = {
@@ -5667,7 +5655,7 @@ SkadaPerCharDB = {
 						["damage"] = 0,
 					},
 				},
-				["alertDamage"] = 0,
+				["name"] = "Sebasps",
 				["healed"] = {
 					["Player-1427-0779A36A"] = {
 						["role"] = "TANK",
@@ -5710,16 +5698,16 @@ SkadaPerCharDB = {
 						["spells"] = {
 							[8921] = 80,
 							[298321] = 80,
-							[17057] = 50,
-							[33917] = 299,
-							[195707] = 159,
 							[77758] = 172.7000000476837,
+							[17057] = 50,
+							[195707] = 159,
+							[33917] = 299,
 						},
 						["amount"] = 840.7000000476837,
 					}, -- [1]
 				},
 				["id"] = "Player-1427-0779A36A",
-				["healing"] = 2771148,
+				["maxhp"] = 661537,
 				["role"] = "TANK",
 				["damagetakenspells"] = {
 					["Discom-BOMB-ulator"] = {
@@ -5950,14 +5938,14 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 9,
 				},
-				["name"] = "Sebasps",
-				["alertCount"] = 0,
-				["maxhp"] = 661537,
-				["shielding"] = 1687659,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 1687659,
+				["alertDamage"] = 0,
+				["alert"] = {
+				},
+				["ffdamagedone"] = 0,
 			}, -- [5]
 		},
 		["deaths"] = 0,

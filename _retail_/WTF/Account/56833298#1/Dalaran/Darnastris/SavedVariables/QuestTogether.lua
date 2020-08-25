@@ -1,44 +1,86 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[13041] = {
-			["title"] = "Finish the Shipment",
+		[25507] = {
+			["title"] = "Hell's Shells",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Nemesis Shell Fragment", -- [1]
+			},
+		},
+		[34398] = {
+			["title"] = "The Dark Portal",
+			["objectives"] = {
+				"0/1 Talk to the Vanguard Battlemage (Optional)", -- [1]
+				"0/1 Speak with Archmage Khadgar", -- [2]
+			},
+		},
+		[28732] = {
+			["title"] = "This Can Only Mean One Thing...",
+			["objectives"] = {
+				"Arrive at Blackrock Caverns.", -- [1]
+			},
+		},
+		[28826] = {
+			["title"] = "The Eye of the Storm",
+			["objectives"] = {
+				"0/1 Peered into the Waters of Farseeing", -- [1]
 			},
 		},
 		[27354] = {
 			["title"] = "Mastering the Arcane",
 			["objectives"] = {
-				"0/1  ", -- [1]
-				"0/5  ", -- [2]
-				"0/5  ", -- [3]
+				"0/1 Silverlaine's Enchanted Crystal", -- [1]
+				"0/5 Moontouched Wood", -- [2]
+				"0/5 Ghostly Essence", -- [3]
+			},
+		},
+		[25663] = {
+			["title"] = "An Offering for Aviana",
+			["objectives"] = {
+				"0/1 Nectar Offered", -- [1]
 			},
 		},
 		[25186] = {
 			["title"] = "Futile Resistance",
 			["objectives"] = {
-				"0/1   slain", -- [1]
+				"0/1 Kona Thunderwalk slain", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[25655] = {
+			["title"] = "The Wormwing Problem",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/10 Wormwing Harpy", -- [1]
+			},
+		},
+		[25656] = {
+			["title"] = "Scrambling for Eggs",
+			["objectives"] = {
+				"0/8 Hyjal Egg", -- [1]
+			},
+		},
+		[25502] = {
+			["title"] = "Prepping the Soil",
+			["objectives"] = {
+				"0/1 Flameward Activated", -- [1]
+				"0/1 Flameward Defended", -- [2]
+			},
+		},
+		[27203] = {
+			["title"] = "The Maelstrom",
+			["objectives"] = {
 			},
 		},
 		[12292] = {
 			["title"] = "Local Support",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Cedar Chest", -- [1]
 			},
 		},
 		[28398] = {
 			["title"] = "The Pyromancer's Grimoire",
 			["objectives"] = {
-				"0/6   slain", -- [1]
-				"0/1  ", -- [2]
+				"0/6 Twilight Emissary slain", -- [1]
+				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
 		[12789] = {
@@ -57,35 +99,8 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[26897] = {
-			["title"] = "Blackfathom Deeps",
-			["objectives"] = {
-			},
-		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
-			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
-			},
-		},
-		[12225] = {
-			["title"] = "Mmm... Amberseeds!",
-			["objectives"] = {
-			},
-		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
-		[25768] = {
-			["title"] = "Bombs Away: Mirkfallon Post!",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
 			},
 		},
@@ -94,16 +109,20 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[12225] = {
+			["title"] = "Mmm... Amberseeds!",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[49864] = {
-			["title"] = "Wars on Two Fronts",
+		[13041] = {
+			["title"] = "Finish the Shipment",
 			["objectives"] = {
-				"0/1 Select your next assignment", -- [1]
+				"0/1 Chalcedony", -- [1]
+			},
+		},
+		[25768] = {
+			["title"] = "Bombs Away: Mirkfallon Post!",
+			["objectives"] = {
 			},
 		},
 		[12466] = {
@@ -111,11 +130,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
+			["objectives"] = {
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }
