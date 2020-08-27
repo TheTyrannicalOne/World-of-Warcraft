@@ -22,8 +22,8 @@ DejaCharacterStatsDB = {
 		["dejacharacterstatsItemLevelChecked"] = {
 			["ItemLevelTwoDecimalsSetChecked"] = true,
 			["ItemLevelEQ_AV_SetChecked"] = true,
-			["ItemLevelDecimalsSetChecked"] = false,
 			["ItemLevelClassColorSetChecked"] = true,
+			["ItemLevelDecimalsSetChecked"] = false,
 		},
 		["dejacharacterstatsLoginCounter"] = {
 			["Count"] = 0,
@@ -34,15 +34,15 @@ DejaCharacterStatsDB = {
 		["dejacharacterstatsShowDuraChecked"] = {
 			["ShowDuraSetChecked"] = false,
 		},
-		["dejacharacterstatsShowDuraTextureChecked"] = {
-			["ShowDuraTextureSetChecked"] = true,
+		["dejacharacterstatsHideMasteryChecked"] = {
+			["SetChecked"] = true,
 		},
 		["dejacharacterstatsSimpleItemColorChecked"] = {
 			["SimpleItemColorChecked"] = false,
 			["DarkerItemColorChecked"] = false,
 		},
-		["dejacharacterstatsHideMasteryChecked"] = {
-			["SetChecked"] = true,
+		["dejacharacterstatsShowDuraTextureChecked"] = {
+			["ShowDuraTextureSetChecked"] = true,
 		},
 		["dejacharacterstatsShowClassicChecked"] = {
 			["SetChecked"] = false,
@@ -273,11 +273,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [53]
 		["uniqueKey"] = "Vancard:Zul'jin:1",
 	},
@@ -487,11 +487,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [53]
 		["uniqueKey"] = "Shaekhan:Zul'jin:3",
 	},
@@ -701,11 +701,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
+			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
-			["hideAt"] = 0,
 		}, -- [53]
 		{
 			["statKey"] = "RATING_2V2",
@@ -947,11 +947,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
+			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
-			["hideAt"] = 0,
 		}, -- [53]
 		["uniqueKey"] = "Zulbathal:Zul'jin:4",
 	},
@@ -1163,11 +1163,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [53]
 		["uniqueKey"] = "Tinkster:Dalaran:3",
 	},
@@ -1319,11 +1319,11 @@ DCS_ClassSpecDB = {
 		}, -- [41]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = false,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = false,
+			["hideAt"] = 0,
 		}, -- [42]
 		{
 			["statKey"] = "RatingCategory",
@@ -1587,11 +1587,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [53]
 		["uniqueKey"] = "Zulbathal:Zul'jin:2",
 	},
@@ -1836,11 +1836,11 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [61]
 		["uniqueKey"] = "Serbitechna:Dalaran:1",
 	},
@@ -2052,11 +2052,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [53]
 		["uniqueKey"] = "Fantastiburo:Zul'jin:1",
 	},
@@ -2268,11 +2268,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [53]
 		{
 			["statKey"] = "RATING_2V2",
@@ -2512,11 +2512,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [53]
 		["uniqueKey"] = "Datgore:Zul'jin:1",
 	},
@@ -2726,11 +2726,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [53]
 		["uniqueKey"] = "Shimzo:Zul'jin:1",
 	},
@@ -2881,11 +2881,11 @@ DCS_ClassSpecDB = {
 		}, -- [41]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = false,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = false,
+			["hideAt"] = 0,
 		}, -- [42]
 		{
 			["statKey"] = "RatingCategory",
@@ -3179,11 +3179,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [53]
 		["uniqueKey"] = "Tyrannithal:Argent Dawn:1",
 	},
@@ -3335,11 +3335,11 @@ DCS_ClassSpecDB = {
 		}, -- [41]
 		{
 			["statKey"] = "STAGGER",
+			["hideAt"] = 0,
+			["hidden"] = false,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = false,
-			["hideAt"] = 0,
 		}, -- [42]
 		{
 			["statKey"] = "RatingCategory",
@@ -3603,36 +3603,32 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [53]
 		["uniqueKey"] = "Kotalkhan:Zul'jin:3",
 	},
-	["Avisar:Dalaran:3"] = {
+	["Shanyt:Argent Dawn:1"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
 		{
 			["statKey"] = "CorruptionCategory",
-			["hidden"] = true,
 		}, -- [2]
 		{
 			["statKey"] = "CR_CORRUPTION",
 			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [3]
 		{
 			["statKey"] = "CR_CORRUPTION_RESISTANCE",
 			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [4]
 		{
 			["statKey"] = "CR_TOTAL_CORRUPTION",
 			["hideAt"] = 0,
-			["hidden"] = true,
 		}, -- [5]
 		{
 			["statKey"] = "GeneralCategory",
@@ -3816,11 +3812,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
-			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [53]
 		{
 			["statKey"] = "RATING_2V2",
@@ -3852,7 +3848,7 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "ConquestCategory",
 		}, -- [61]
-		["uniqueKey"] = "Avisar:Dalaran:3",
+		["uniqueKey"] = "Shanyt:Argent Dawn:1",
 	},
 	["Zulbathal:Zul'jin:1"] = {
 		{
@@ -4062,11 +4058,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
+			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
-			["hideAt"] = 0,
 		}, -- [53]
 		{
 			["statKey"] = "RATING_2V2",
@@ -4100,24 +4096,28 @@ DCS_ClassSpecDB = {
 		}, -- [61]
 		["uniqueKey"] = "Zulbathal:Zul'jin:1",
 	},
-	["Shanyt:Argent Dawn:1"] = {
+	["Avisar:Dalaran:3"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
 		{
 			["statKey"] = "CorruptionCategory",
+			["hidden"] = true,
 		}, -- [2]
 		{
 			["statKey"] = "CR_CORRUPTION",
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [3]
 		{
 			["statKey"] = "CR_CORRUPTION_RESISTANCE",
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [4]
 		{
 			["statKey"] = "CR_TOTAL_CORRUPTION",
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [5]
 		{
 			["statKey"] = "GeneralCategory",
@@ -4301,11 +4301,11 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
-			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [53]
 		{
 			["statKey"] = "RATING_2V2",
@@ -4337,6 +4337,6 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "ConquestCategory",
 		}, -- [61]
-		["uniqueKey"] = "Shanyt:Argent Dawn:1",
+		["uniqueKey"] = "Avisar:Dalaran:3",
 	},
 }

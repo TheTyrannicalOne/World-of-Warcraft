@@ -10,8 +10,8 @@ RareShareDB = {
 			["Duplicates"] = true,
 		},
 		["CChannel"] = {
-			["CName"] = "General - Shrine of Two Moons",
 			["CID"] = 2,
+			["CName"] = "General - Shrine of Two Moons",
 		},
 		["OnDeath"] = false,
 		["Sound"] = {

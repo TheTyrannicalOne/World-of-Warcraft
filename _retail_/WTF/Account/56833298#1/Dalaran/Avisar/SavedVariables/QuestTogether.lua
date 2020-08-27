@@ -19,10 +19,10 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[57744] = {
@@ -37,9 +37,11 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[54185] = {
@@ -49,18 +51,14 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[57006] = {
@@ -77,9 +75,12 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[56378] = {
+			["title"] = "The Missing Crew",
 			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[39060] = {
@@ -90,10 +91,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[54438] = {
@@ -102,10 +103,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[36615] = {
@@ -113,18 +114,6 @@ QuestTogether = {
 			["objectives"] = {
 				"172/2000 Garrison Resources gathered (Optional)", -- [1]
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
-			},
-		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
-			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[56499] = {
@@ -135,6 +124,17 @@ QuestTogether = {
 				"0/1 Win a Battleground", -- [3]
 			},
 		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+			},
+		},
 		[56211] = {
 			["title"] = "Scrying Stones",
 			["objectives"] = {
@@ -142,11 +142,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[56119] = {
+			["title"] = "The Waveblade Ankoan",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[31486] = {

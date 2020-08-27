@@ -1,13 +1,13 @@
 
 KalielsTrackerDB = {
 	["char"] = {
-		["Goramor - Runetotem"] = {
+		["Avisar - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Tynster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Narisaric - Dalaran"] = {
+		["Fantastiburo - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
 		["Tyrannithal - Argent Dawn"] = {
@@ -16,16 +16,19 @@ KalielsTrackerDB = {
 		["Zulbathal - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Gillbourn - Runetotem"] = {
+		["Kotalkhan - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Shaekhan - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Shaewong - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Goramor - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Shaekhan - Zul'jin"] = {
+		["Gillbourn - Runetotem"] = {
 			["collapsed"] = true,
 		},
 		["Tinkster - Dalaran"] = {
@@ -43,46 +46,42 @@ KalielsTrackerDB = {
 		["Serbitechna - Darkspear"] = {
 			["collapsed"] = true,
 		},
-		["Tyriinid - Dalaran"] = {
+		["Beeronimo - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Shathiel - Darkspear"] = {
 			["collapsed"] = true,
 		},
-		["Brewnheimer - Darkspear"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Serbitechna - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Malivant - Dalaran"] = {
-			["collapsed"] = true,
-		},
 		["Datgore - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Brewnheimer - Darkspear"] = {
 			["collapsed"] = true,
 		},
 		["Tynkster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Beeronimo - Dalaran"] = {
+		["Tyriinid - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Migimong - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Shimzo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Fantastiburo - Argent Dawn"] = {
+		["Narisaric - Dalaran"] = {
 			["collapsed"] = true,
 		},
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "3.2.3",
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",
@@ -100,35 +99,39 @@ KalielsTrackerDB = {
 		["Durlok - Black Dragonflight"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
 		["Panboozled - Runetotem"] = "Default",
-		["Narisaric - Dalaran"] = "Default",
-		["Avisar - Dalaran"] = "Default",
-		["Migimong - Runetotem"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
+		["Serbitechna - Darkspear"] = "Default",
+		["Dialdaas - Darkspear"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
 		["Brewnheimer - Darkspear"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
-		["Vancard - Zul'jin"] = "Default",
+		["Claugh - Runetotem"] = "Default",
 		["Sinh - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
 		["Tynster - Dalaran"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
-		["Claugh - Runetotem"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
-		["Dialdaas - Darkspear"] = "Default",
-		["Serbitechna - Darkspear"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
+		["Migimong - Runetotem"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Narisaric - Dalaran"] = "Default",
+	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "3.2.3",
 	},
 	["profiles"] = {
 		["Default"] = {
