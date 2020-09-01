@@ -14,18 +14,18 @@ FishingBuddy_Player = {
 		["DrownedMana"] = true,
 		["LastResort"] = true,
 		["UseAction"] = true,
-		["TotalTimeFishing"] = 1,
+		["TotalTimeFishing"] = 1041.27299999997,
 		["MountedCast"] = true,
-		["STVTimer"] = true,
+		["AlwaysLure"] = true,
 		["SpecialBobbers"] = -2,
 		["FishingPetBuddies"] = -3,
 		["OverWalking"] = true,
-		["AlwaysLure"] = true,
+		["EnhanceFishingSounds"] = true,
 		["UseBladeboneHook"] = true,
 		["EnhancePools"] = true,
-		["AutoLoot"] = true,
-		["EnhanceFishingSounds"] = true,
 		["TurnOnSound"] = true,
+		["STVTimer"] = true,
+		["AutoLoot"] = true,
 		["EasyLures"] = true,
 		["EasyCastKeys"] = 2,
 		["ContestSupport"] = true,
@@ -33,8 +33,8 @@ FishingBuddy_Player = {
 	["WasWearing"] = {
 	},
 	["Version"] = 19500,
-	["WatcherLocation"] = {
-	},
 	["Outfit"] = {
+	},
+	["WatcherLocation"] = {
 	},
 }

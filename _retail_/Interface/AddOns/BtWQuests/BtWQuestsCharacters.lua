@@ -15,6 +15,7 @@ end
 
 --@REMOVE AFTER 9.0
 local GetLogIndexForQuestID = C_QuestLog.GetLogIndexForQuestID
+local IsQuestFlaggedCompleted = C_QuestLog and C_QuestLog.IsQuestFlaggedCompleted or IsQuestFlaggedCompleted;
 if select(4, GetBuildInfo()) < 90000 then
     GetLogIndexForQuestID = GetQuestLogIndexByID
 end

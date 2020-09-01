@@ -4,6 +4,8 @@ local Sk = SLE:NewModule("Skins")
 --GLOBALS: CreateFrame
 local _G = _G
 
+Sk.additionalTextures = {}
+
 function Sk:CreateUnderline(frame, texture, shadow, height)
 	local line = CreateFrame("Frame", nil, frame)
 	if line then
@@ -32,6 +34,16 @@ function Sk:Media()
 			button.iteminfo:SetFont(E.LSM:Fetch('font', E.db.sle.skins.merchant.list.subFont), E.db.sle.skins.merchant.list.subSize, E.db.sle.skins.merchant.list.subOutline)
 		end
 	end
+end
+
+function Sk:UpdateObjectiveFrameLogos()
+	Sk:UpdateAdditionalTexture(Sk.additionalTextures["ScenarioLogo"], SLE.ScenarioBlockLogos[E.private.sle.skins.objectiveTracker.skinnedTextureLogo] or E.private.sle.skins.objectiveTracker.customTextureLogo)
+	Sk:UpdateAdditionalTexture(Sk.additionalTextures["ChallengeModeLogo"], SLE.ScenarioBlockLogos[E.private.sle.skins.objectiveTracker.skinnedTextureLogo] or E.private.sle.skins.objectiveTracker.customTextureLogo)
+	if Sk.additionalTextures["WarfrontLogo"] then Sk:UpdateAdditionalTexture(Sk.additionalTextures["WarfrontLogo"], SLE.ScenarioBlockLogos[E.private.sle.skins.objectiveTracker.skinnedTextureLogo] or E.private.sle.skins.objectiveTracker.customTextureLogo) end
+end
+
+function Sk:UpdateAdditionalTexture(textureObject, newTexture)
+	if textureObject then textureObject:SetTexture(newTexture) end
 end
 
 function Sk:Initialize()

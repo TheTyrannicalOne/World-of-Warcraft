@@ -100,7 +100,7 @@ function BtWQuestsGuideDataProviderMixin:RefreshAllData(fromOnShow)
             position = select(2, C_Map.GetMapPosFromWorldPos(continentId, continentPosition, mapId))
         end
 
-        if position.x > 0 and position.x < 1 and position.y > 0 and position.y < 1 then
+        if position and position.x > 0 and position.x < 1 and position.y > 0 and position.y < 1 then
             local pin = self:GetMap():AcquirePin("BtWQuestsGuidePinTemplate", item.itemName);
             pin.waypoints = waypoints
             pin.item = item
@@ -128,13 +128,15 @@ function BtWQuestsGuidePinMixin:SetName(value)
 end
 
 function BtWQuestsGuidePinMixin:OnMouseEnter()
-	WorldMapTooltip:SetOwner(self, "ANCHOR_LEFT");
-	WorldMapTooltip:SetText(self.itemName);
-	WorldMapTooltip:Show();
+    local tooltip = WorldMapTooltip or GameTooltip
+	tooltip:SetOwner(self, "ANCHOR_LEFT");
+	tooltip:SetText(self.itemName);
+	tooltip:Show();
 end
 
 function BtWQuestsGuidePinMixin:OnMouseLeave()
-	WorldMapTooltip:Hide();
+    local tooltip = WorldMapTooltip or GameTooltip
+	tooltip:Hide();
 end
 
 function BtWQuestsGuidePinMixin:OnClick(button)

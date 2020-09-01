@@ -20,13 +20,13 @@ Omen3DB = {
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
-			["PositionW"] = 262.9996948242188,
-			["PositionH"] = 199.9998168945313,
 			["VGrip2"] = 151.2247552987265,
 			["PositionY"] = 219.0002288818359,
+			["PositionW"] = 262.9996948242188,
 			["Shown"] = false,
-			["VGrip1"] = 111.7748191338414,
+			["PositionH"] = 199.9998168945313,
 			["PositionX"] = 1750.499267578125,
+			["VGrip1"] = 111.7748191338414,
 		},
 		["Datgore - Zul'jin"] = {
 			["Shown"] = false,
@@ -85,14 +85,14 @@ Omen3DB = {
 			["PositionH"] = 201.0006561279297,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["VGrip2"] = 189.1753946055894,
-			["PositionY"] = 219.9980316162109,
-			["PositionW"] = 329.0009765625,
-			["PositionX"] = 1686.171508789063,
-			["Locked"] = true,
-			["VGrip1"] = 139.8252916650009,
-			["Shown"] = false,
+			["PositionW"] = 329.0010375976563,
 			["PositionH"] = 201.0007171630859,
+			["VGrip2"] = 189.1753946055894,
+			["PositionY"] = 201.0007171630859,
+			["Locked"] = true,
+			["Shown"] = false,
+			["VGrip1"] = 139.8252916650009,
+			["PositionX"] = 1684.171508789063,
 		},
 		["Durlok - Black Dragonflight"] = {
 			["Shown"] = false,

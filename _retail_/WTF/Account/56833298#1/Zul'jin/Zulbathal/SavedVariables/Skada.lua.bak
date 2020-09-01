@@ -566,13 +566,13 @@ SkadaPerCharDB = {
 						},
 					},
 					["auras"] = {
-						["Embrace of Krag'wa"] = {
-							["name"] = "Embrace of Krag'wa",
+						["Lunar Empowerment"] = {
+							["name"] = "Lunar Empowerment",
 							["active"] = 0,
-							["school"] = 8,
-							["uptime"] = 3,
+							["school"] = 64,
+							["uptime"] = 8,
 							["auratype"] = "BUFF",
-							["id"] = 292486,
+							["id"] = 164547,
 						},
 						["Moonfire"] = {
 							["name"] = "Moonfire",
@@ -582,13 +582,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["id"] = 164812,
 						},
-						["Lunar Empowerment"] = {
-							["name"] = "Lunar Empowerment",
+						["Sunfire"] = {
+							["name"] = "Sunfire",
 							["active"] = 0,
-							["school"] = 64,
-							["uptime"] = 8,
-							["auratype"] = "BUFF",
-							["id"] = 164547,
+							["school"] = 8,
+							["uptime"] = 31,
+							["auratype"] = "DEBUFF",
+							["id"] = 164815,
 						},
 						["Treant: Force of Nature"] = {
 							["name"] = "Treant: Force of Nature",
@@ -606,13 +606,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["id"] = 191034,
 						},
-						["Sunfire"] = {
-							["name"] = "Sunfire",
+						["Embrace of Krag'wa"] = {
+							["name"] = "Embrace of Krag'wa",
 							["active"] = 0,
 							["school"] = 8,
-							["uptime"] = 31,
-							["auratype"] = "DEBUFF",
-							["id"] = 164815,
+							["uptime"] = 3,
+							["auratype"] = "BUFF",
+							["id"] = 292486,
 						},
 						["Solar Beam"] = {
 							["name"] = "Solar Beam",
@@ -2335,6 +2335,14 @@ SkadaPerCharDB = {
 						},
 					},
 					["auras"] = {
+						["Embrace of Krag'wa"] = {
+							["name"] = "Embrace of Krag'wa",
+							["active"] = 0,
+							["school"] = 8,
+							["uptime"] = 4,
+							["auratype"] = "BUFF",
+							["id"] = 292486,
+						},
 						["Sunfire"] = {
 							["name"] = "Sunfire",
 							["active"] = 0,
@@ -2342,14 +2350,6 @@ SkadaPerCharDB = {
 							["uptime"] = 1,
 							["auratype"] = "DEBUFF",
 							["id"] = 164815,
-						},
-						["Lunar Empowerment"] = {
-							["name"] = "Lunar Empowerment",
-							["active"] = 0,
-							["school"] = 64,
-							["uptime"] = 11,
-							["auratype"] = "BUFF",
-							["id"] = 164547,
 						},
 						["Moonfire"] = {
 							["name"] = "Moonfire",
@@ -2359,13 +2359,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["id"] = 164812,
 						},
-						["Embrace of Krag'wa"] = {
-							["name"] = "Embrace of Krag'wa",
+						["Lunar Empowerment"] = {
+							["name"] = "Lunar Empowerment",
 							["active"] = 0,
-							["school"] = 8,
-							["uptime"] = 4,
+							["school"] = 64,
+							["uptime"] = 11,
 							["auratype"] = "BUFF",
-							["id"] = 292486,
+							["id"] = 164547,
 						},
 					},
 					["ffdamagedonetargets"] = {
@@ -2684,13 +2684,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["id"] = 8936,
 						},
-						["Sunfire"] = {
-							["name"] = "Sunfire",
+						["Embrace of Krag'wa"] = {
+							["name"] = "Embrace of Krag'wa",
 							["active"] = 0,
 							["school"] = 8,
-							["uptime"] = 31,
-							["auratype"] = "DEBUFF",
-							["id"] = 164815,
+							["uptime"] = 23,
+							["auratype"] = "BUFF",
+							["id"] = 292486,
 						},
 						["Treant: Force of Nature"] = {
 							["name"] = "Treant: Force of Nature",
@@ -2700,14 +2700,6 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["id"] = 205644,
 						},
-						["Embrace of Krag'wa"] = {
-							["name"] = "Embrace of Krag'wa",
-							["active"] = 0,
-							["school"] = 8,
-							["uptime"] = 23,
-							["auratype"] = "BUFF",
-							["id"] = 292486,
-						},
 						["Lunar Empowerment"] = {
 							["name"] = "Lunar Empowerment",
 							["active"] = 0,
@@ -2715,6 +2707,14 @@ SkadaPerCharDB = {
 							["uptime"] = 15,
 							["auratype"] = "BUFF",
 							["id"] = 164547,
+						},
+						["Sunfire"] = {
+							["name"] = "Sunfire",
+							["active"] = 0,
+							["school"] = 8,
+							["uptime"] = 31,
+							["auratype"] = "DEBUFF",
+							["id"] = 164815,
 						},
 						["Moonfire"] = {
 							["name"] = "Moonfire",
@@ -3508,9 +3508,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589952118.297,
 						["amount"] = -1856,
+						["srcname"] = "Zulian Crewman",
 						["hp"] = 35406,
 						["spellid"] = 88163,
-						["srcname"] = "Zulian Crewman",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -3523,9 +3523,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589952119.961,
 						["amount"] = -2041,
+						["srcname"] = "Zulian Crewman",
 						["hp"] = 31796,
 						["spellid"] = 269169,
-						["srcname"] = "Zulian Crewman",
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -3538,9 +3538,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589952121.995,
 						["amount"] = -163,
+						["srcname"] = "Zulian Crewman",
 						["hp"] = 32208,
 						["spellid"] = 269169,
-						["srcname"] = "Zulian Crewman",
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -3553,9 +3553,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589952113.896,
 						["amount"] = -400,
+						["srcname"] = "Zulian Crewman",
 						["hp"] = 30085,
 						["spellid"] = 269169,
-						["srcname"] = "Zulian Crewman",
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -3568,9 +3568,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589952115.921,
 						["amount"] = -405,
+						["hp"] = 29967,
 						["srcname"] = "Zulian Crewman",
 						["spellid"] = 269169,
-						["hp"] = 29967,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -3591,9 +3591,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589952116.342,
 						["amount"] = -1816,
+						["srcname"] = "Zulian Crewman",
 						["hp"] = 37442,
 						["spellid"] = 88163,
-						["srcname"] = "Zulian Crewman",
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -3606,16 +3606,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589952117.862,
 						["amount"] = -432,
+						["srcname"] = "Zulian Crewman",
 						["hp"] = 35482,
 						["spellid"] = 269169,
-						["srcname"] = "Zulian Crewman",
 					}, -- [14]
 					{
 						["ts"] = 1589952118.297,
 						["amount"] = -76,
+						["hp"] = 35406,
 						["srcname"] = "Zulian Crewman",
 						["spellid"] = 269169,
-						["hp"] = 35406,
 					}, -- [15]
 					["pos"] = 6,
 				},
@@ -3994,30 +3994,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589946631.04801,
 								["amount"] = -220,
+								["srcname"] = "Ankylodon",
 								["hp"] = 9421,
 								["spellid"] = 273871,
-								["srcname"] = "Ankylodon",
 							}, -- [1]
 							{
 								["ts"] = 1589946631.28902,
 								["amount"] = -222,
+								["srcname"] = "Ankylodon",
 								["hp"] = 9199,
 								["spellid"] = 273871,
-								["srcname"] = "Ankylodon",
 							}, -- [2]
 							{
 								["ts"] = 1589946631.44703,
 								["amount"] = -2577,
+								["srcname"] = "Ankylodon Bull",
 								["hp"] = 9199,
 								["spellid"] = 88163,
-								["srcname"] = "Ankylodon Bull",
 							}, -- [3]
 							{
 								["ts"] = 1589946631.44704,
 								["amount"] = -335,
+								["srcname"] = "Ankylodon Bull",
 								["hp"] = 8864,
 								["spellid"] = 273871,
-								["srcname"] = "Ankylodon Bull",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -4038,9 +4038,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589946632.60607,
 								["amount"] = -278,
+								["srcname"] = "Ankylodon",
 								["hp"] = 6245,
 								["spellid"] = 273871,
-								["srcname"] = "Ankylodon",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -4053,16 +4053,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589946633.33909,
 								["amount"] = -258,
+								["spellid"] = 273871,
 								["hp"] = 5991,
 								["srcname"] = "Ankylodon",
-								["spellid"] = 273871,
 							}, -- [9]
 							{
 								["ts"] = 1589946633.4981,
 								["amount"] = -381,
+								["srcname"] = "Ankylodon Bull",
 								["hp"] = 5610,
 								["spellid"] = 273871,
-								["srcname"] = "Ankylodon Bull",
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -4075,16 +4075,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589946634.30012,
 								["amount"] = -3506,
+								["srcname"] = "Ankylodon Bull",
 								["hp"] = 2334,
 								["spellid"] = 273871,
-								["srcname"] = "Ankylodon Bull",
 							}, -- [12]
 							{
 								["ts"] = 1589946634.53213,
 								["amount"] = -2366,
+								["srcname"] = "Ankylodon",
 								["hp"] = 1,
 								["spellid"] = 273871,
-								["srcname"] = "Ankylodon",
 							}, -- [13]
 							{
 								["spellname"] = "Zulbathal dies",
@@ -4095,9 +4095,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589946630.94515,
 								["amount"] = -2130,
+								["srcname"] = "Ankylodon",
 								["hp"] = 11771,
 								["spellid"] = 88163,
-								["srcname"] = "Ankylodon",
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -4109,30 +4109,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589944062.00301,
 								["amount"] = -1351,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 8083,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [1]
 							{
 								["ts"] = 1589944062.17002,
 								["amount"] = -1487,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 8083,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [2]
 							{
 								["ts"] = 1589944063.18803,
 								["amount"] = -712,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 5245,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [3]
 							{
 								["ts"] = 1589944063.42904,
 								["amount"] = -1698,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 4533,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [4]
 							{
 								["ts"] = 1589944063.85605,
@@ -4145,23 +4145,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589944064.02506,
 								["amount"] = -1554,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 3050,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [6]
 							{
 								["ts"] = 1589944064.17007,
 								["amount"] = -1378,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 1496,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [7]
 							{
 								["ts"] = 1589944065.00908,
 								["amount"] = -831,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 118,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [8]
 							{
 								["spellname"] = "Zulbathal dies",
@@ -4172,30 +4172,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589944060.9991,
 								["amount"] = -931,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 8081,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [10]
 							{
 								["ts"] = 1589944060.99911,
 								["amount"] = -1843,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 8081,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [11]
 							{
 								["ts"] = 1589944061.19812,
 								["amount"] = -858,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 5307,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [12]
 							{
 								["ts"] = 1589944061.44113,
 								["amount"] = -1738,
+								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 4449,
 								["spellid"] = 88163,
-								["srcname"] = "Zanchuli Betrayer",
 							}, -- [13]
 							{
 								["ts"] = 1589944061.89114,
@@ -4223,9 +4223,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589944039.98401,
 								["amount"] = -2703,
+								["hp"] = 1651,
 								["srcname"] = "Zanchuli Betrayer",
 								["spellid"] = 88163,
-								["hp"] = 1651,
 							}, -- [1]
 							{
 								["spellname"] = "Zulbathal dies",
@@ -4252,16 +4252,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589944037.06105,
 								["amount"] = -1834,
+								["hp"] = 12582,
 								["srcname"] = "Zanchuli Betrayer",
 								["spellid"] = 88163,
-								["hp"] = 12582,
 							}, -- [5]
 							{
 								["ts"] = 1589944037.68406,
 								["amount"] = -1853,
+								["hp"] = 10748,
 								["srcname"] = "Zanchuli Betrayer",
 								["spellid"] = 88163,
-								["hp"] = 10748,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -4274,23 +4274,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589944037.89208,
 								["amount"] = -1662,
+								["hp"] = 8918,
 								["srcname"] = "Zanchuli Betrayer",
 								["spellid"] = 88163,
-								["hp"] = 8918,
 							}, -- [8]
 							{
 								["ts"] = 1589944037.89209,
 								["amount"] = -1722,
+								["spellid"] = 88163,
 								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 8918,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["ts"] = 1589944038.1001,
 								["amount"] = -958,
+								["hp"] = 5534,
 								["srcname"] = "Zanchuli Betrayer",
 								["spellid"] = 88163,
-								["hp"] = 5534,
 							}, -- [10]
 							{
 								["ts"] = 1589944038.24011,
@@ -4311,23 +4311,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589944039.10013,
 								["amount"] = -1654,
+								["hp"] = 5035,
 								["srcname"] = "Zanchuli Betrayer",
 								["spellid"] = 88163,
-								["hp"] = 5035,
 							}, -- [13]
 							{
 								["ts"] = 1589944039.69314,
 								["amount"] = -1730,
+								["spellid"] = 88163,
 								["srcname"] = "Zanchuli Betrayer",
 								["hp"] = 3381,
-								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["ts"] = 1589944039.98315,
 								["amount"] = -1636,
+								["hp"] = 1651,
 								["srcname"] = "Zanchuli Betrayer",
 								["spellid"] = 88163,
-								["hp"] = 1651,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -4340,16 +4340,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935881.97701,
 								["amount"] = -3981,
+								["spellid"] = 88163,
 								["srcname"] = "Stormbound Conqueror",
 								["hp"] = 16712,
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1589935882.36502,
 								["amount"] = -5270,
+								["spellid"] = 88163,
 								["srcname"] = "Stormbound Conqueror",
 								["hp"] = 12731,
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -4378,9 +4378,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935883.99006,
 								["amount"] = -5144,
+								["spellid"] = 88163,
 								["srcname"] = "Stormbound Conqueror",
 								["hp"] = 13053,
-								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -4393,9 +4393,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935884.29908,
 								["amount"] = -4115,
+								["spellid"] = 88163,
 								["srcname"] = "Stormbound Conqueror",
 								["hp"] = 7917,
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -4416,9 +4416,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935886.00711,
 								["amount"] = -7271,
+								["spellid"] = 259832,
 								["srcname"] = "Stormbound Conqueror",
 								["hp"] = 1,
-								["spellid"] = 259832,
 							}, -- [11]
 							{
 								["spellname"] = "Zulbathal dies",
@@ -4476,9 +4476,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935645.72903,
 								["amount"] = -4004,
+								["srcname"] = "Kao-Tien Stormbinder",
 								["spellid"] = 259744,
 								["hp"] = 11486,
-								["srcname"] = "Kao-Tien Stormbinder",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -4499,16 +4499,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935646.52306,
 								["amount"] = -4403,
+								["hp"] = 11937,
 								["spellid"] = 88163,
 								["srcname"] = "Stormbound Conqueror",
-								["hp"] = 11937,
 							}, -- [6]
 							{
 								["ts"] = 1589935647.28407,
 								["amount"] = -1764,
+								["hp"] = 7534,
 								["srcname"] = "Stormbound Conqueror",
 								["spellid"] = 88163,
-								["hp"] = 7534,
 							}, -- [7]
 							{
 								["ts"] = 1589935647.53408,
@@ -4521,9 +4521,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935647.69509,
 								["amount"] = -1082,
+								["spellid"] = 88163,
 								["srcname"] = "Kao-Tien Stormbinder",
 								["hp"] = 5797,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -4544,9 +4544,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935649.47612,
 								["amount"] = -5252,
+								["srcname"] = "Stormbound Conqueror",
 								["hp"] = 1,
 								["spellid"] = 259832,
-								["srcname"] = "Stormbound Conqueror",
 							}, -- [12]
 							{
 								["spellname"] = "Zulbathal dies",
@@ -4565,9 +4565,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589935644.53415,
 								["amount"] = -4493,
+								["hp"] = 15256,
 								["srcname"] = "Stormbound Conqueror",
 								["spellid"] = 259832,
-								["hp"] = 15256,
 							}, -- [15]
 							["pos"] = 14,
 						},
@@ -4595,16 +4595,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589834376.08703,
 								["amount"] = -1329,
+								["spellid"] = 88163,
 								["hp"] = 6162,
 								["srcname"] = "Storm's Wake Footman",
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1589834376.29204,
 								["amount"] = -2567,
+								["spellid"] = 271287,
 								["hp"] = 2266,
 								["srcname"] = "Fettered Deluge",
-								["spellid"] = 271287,
 							}, -- [4]
 							{
 								["ts"] = 1589834377.08205,
@@ -4617,9 +4617,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589834377.50306,
 								["amount"] = -2651,
+								["spellid"] = 271083,
 								["hp"] = 1,
 								["srcname"] = "Storm's Wake Footman",
-								["spellid"] = 271083,
 							}, -- [6]
 							{
 								["spellname"] = "Zulbathal dies",
@@ -4678,9 +4678,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1589834375.18814,
 								["amount"] = -1636,
+								["spellid"] = 88163,
 								["srcname"] = "Storm's Wake Footman",
 								["hp"] = 7227,
-								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["ts"] = 1589834375.18815,
@@ -4695,14 +4695,15 @@ SkadaPerCharDB = {
 					}, -- [6]
 				},
 				["healed"] = {
-					["Creature-0-3020-1642-455-127254-0000C1FE0F"] = {
-						["amount"] = 28,
+					["Vehicle-0-3020-1642-455-122012-00004207EC"] = {
 						["role"] = "NONE",
-						["name"] = "Child of Gonk",
+						["name"] = "Direhorn Juvenile",
+						["amount"] = 11870,
+						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3020-1642-455-127254-000041FE0F"] = {
-						["amount"] = 27,
+					["Creature-0-3020-1642-455-127254-0000C1FE0F"] = {
+						["amount"] = 28,
 						["role"] = "NONE",
 						["name"] = "Child of Gonk",
 						["shielding"] = 0,
@@ -4732,11 +4733,10 @@ SkadaPerCharDB = {
 						["name"] = "Zeb'ahari Beastkeeper",
 						["amount"] = 8092,
 					},
-					["Vehicle-0-3020-1642-455-122012-00004207EC"] = {
+					["Creature-0-3020-1642-455-127254-000041FE0F"] = {
+						["amount"] = 27,
 						["role"] = "NONE",
-						["name"] = "Direhorn Juvenile",
-						["amount"] = 11870,
-						["class"] = "WARRIOR",
+						["name"] = "Child of Gonk",
 						["shielding"] = 0,
 					},
 				},
@@ -5889,20 +5889,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Blade Flurry"] = {
+					["Shoot"] = {
 						["crushing"] = 0,
-						["id"] = 271055,
-						["damage"] = 57021,
-						["max"] = 1516,
-						["name"] = "Blade Flurry",
-						["min"] = 412,
-						["totalhits"] = 64,
+						["id"] = 205689,
+						["damage"] = 88509,
+						["max"] = 2736,
+						["name"] = "Shoot",
+						["min"] = 275,
+						["totalhits"] = 123,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 0,
+						["absorbed"] = 61,
 					},
 					["Glaive Throw"] = {
 						["crushing"] = 0,
@@ -5919,20 +5919,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Shoot"] = {
+					["Bite"] = {
 						["crushing"] = 0,
-						["id"] = 205689,
-						["damage"] = 88509,
-						["max"] = 2736,
-						["name"] = "Shoot",
-						["min"] = 275,
-						["totalhits"] = 123,
+						["id"] = 272382,
+						["damage"] = 102328,
+						["max"] = 4837,
+						["name"] = "Bite",
+						["min"] = 1808,
+						["totalhits"] = 33,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 1,
+						["school"] = 8,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 61,
+						["absorbed"] = 0,
 					},
 					["Gruesome Tear"] = {
 						["crushing"] = 0,
@@ -6054,17 +6054,17 @@ SkadaPerCharDB = {
 						["max"] = 3291,
 						["damage"] = 20398,
 					},
-					["Bite"] = {
+					["Blade Flurry"] = {
 						["crushing"] = 0,
-						["id"] = 272382,
-						["damage"] = 102328,
-						["max"] = 4837,
-						["name"] = "Bite",
-						["min"] = 1808,
-						["totalhits"] = 33,
+						["id"] = 271055,
+						["damage"] = 57021,
+						["max"] = 1516,
+						["name"] = "Blade Flurry",
+						["min"] = 412,
+						["totalhits"] = 64,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 8,
+						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -6804,9 +6804,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751872.948,
 						["amount"] = -313,
+						["hp"] = 20767,
 						["spellid"] = 271740,
 						["srcname"] = "Flametron 5000",
-						["hp"] = 20767,
 					}, -- [10]
 					{
 						["ts"] = 1589751873.325,
@@ -7393,16 +7393,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751377.75,
 						["amount"] = -1111,
+						["hp"] = 14576,
 						["spellid"] = 280939,
 						["srcname"] = "Exodar High Priest",
-						["hp"] = 14576,
 					}, -- [2]
 					{
 						["ts"] = 1589751382.221,
 						["amount"] = -1391,
+						["hp"] = 13185,
 						["spellid"] = 280939,
 						["srcname"] = "Exodar High Priest",
-						["hp"] = 13185,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -8007,9 +8007,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751927.595,
 						["amount"] = -299,
+						["hp"] = 11734,
 						["spellid"] = 271740,
 						["srcname"] = "Flametron 5000",
-						["hp"] = 11734,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -9934,9 +9934,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751910.626,
 						["amount"] = -313,
+						["srcname"] = "Flametron 5000",
 						["spellid"] = 271740,
 						["hp"] = 21567,
-						["srcname"] = "Flametron 5000",
 					}, -- [2]
 					{
 						["ts"] = 1589751911.413,
@@ -9949,9 +9949,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751911.86,
 						["amount"] = -313,
+						["srcname"] = "Flametron 5000",
 						["spellid"] = 271740,
 						["hp"] = 21567,
-						["srcname"] = "Flametron 5000",
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -9964,9 +9964,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751913.06,
 						["amount"] = -313,
+						["hp"] = 21567,
 						["spellid"] = 271740,
 						["srcname"] = "Flametron 5000",
-						["hp"] = 21567,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -9979,9 +9979,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751914.27,
 						["amount"] = -313,
+						["hp"] = 21567,
 						["spellid"] = 271740,
 						["srcname"] = "Flametron 5000",
-						["hp"] = 21567,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -9994,9 +9994,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751926.4,
 						["amount"] = -313,
+						["hp"] = 21567,
 						["spellid"] = 271740,
 						["srcname"] = "Flametron 5000",
-						["hp"] = 21567,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -10009,9 +10009,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751927.595,
 						["amount"] = -313,
+						["hp"] = 21567,
 						["spellid"] = 271740,
 						["srcname"] = "Flametron 5000",
-						["hp"] = 21567,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -10032,9 +10032,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589751909.388,
 						["amount"] = -313,
+						["srcname"] = "Flametron 5000",
 						["hp"] = 21567,
 						["spellid"] = 271740,
-						["srcname"] = "Flametron 5000",
 					}, -- [15]
 					["pos"] = 14,
 				},

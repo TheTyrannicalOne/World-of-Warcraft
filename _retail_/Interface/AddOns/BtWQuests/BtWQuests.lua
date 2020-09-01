@@ -7,6 +7,7 @@ BINDING_HEADER_BTWQUESTS = "BtWQuests"
 BINDING_NAME_TOGGLE_BTWQUESTS = L["TOGGLE_BTWQUESTS"]
 
 --@REMOVE AFTER 9.0
+local CreateFramePoolCollection = CreateFramePoolCollection or CreatePoolCollection
 local GetLogIndexForQuestID = C_QuestLog.GetLogIndexForQuestID
 if select(4, GetBuildInfo()) < 90000 then
     GetLogIndexForQuestID = GetQuestLogIndexByID
@@ -699,7 +700,7 @@ function BtWQuestsMixin:OnLoad()
 
     self.NineSlice.TopEdge:SetPoint("TOPRIGHT", self.CharacterDropDown, "TOPLEFT", 0, 0);
 
-    self.categoryItemPool = CreatePoolCollection()--CreateFramePool("BUTTON", self.Category.Scroll.Child, "BtWQuestsCategoryButtonTemplate");
+    self.categoryItemPool = CreateFramePoolCollection()--CreateFramePool("BUTTON", self.Category.Scroll.Child, "BtWQuestsCategoryButtonTemplate");
 	self.categoryItemPool:CreatePool("BUTTON", self.Category.Scroll.Child, "BtWQuestsCategoryHeaderTemplate");
     self.categoryItemPool:CreatePool("BUTTON", self.Category.Scroll.Child, "BtWQuestsCategoryListItemTemplate");
 	self.categoryItemPool:CreatePool("BUTTON", self.Category.Scroll.Child, "BtWQuestsCategoryGridItemTemplate");

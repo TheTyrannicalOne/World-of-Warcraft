@@ -14,6 +14,12 @@ local classColor = RAID_CLASS_COLORS[E.myclass]
 local width = 190
 local dummy = function() return end
 local underlines = {}
+local skinnableWidgets = {
+	[1217] = true, --Alliance warfront BfA
+	[1329] = true, --Horde warfront BfA
+}
+local Chest3_Mult = 0.6
+local Chest2_Mult = 0.8
 
 function Sk:Update_ObjectiveTrackerUnderlinesVisibility()
 	local exe = E.db.sle.skins.objectiveTracker.underline and "Show" or "Hide"
@@ -111,12 +117,31 @@ local function SkinScenarioButtons()
 
 	-- we have to independently resize the artwork
 	-- because we're messing with the tracker width >_>
+	if not block.SLE_Block then
+		block.SLE_Block = CreateFrame("Frame", "ScenarioStageBlock_SLE_Block", block)
+		block.SLE_Block:SetAllPoints(block.NormalBG)
+		block.SLE_Block:SetTemplate("Transparent")
+		block.SLE_Block:SetFrameStrata("BACKGROUND")
+
+		block.SLE_Block.Logo = block.SLE_Block:CreateTexture(nil, "OVERLAY")
+		block.SLE_Block.Logo:SetPoint("BOTTOMRIGHT", block.SLE_Block, "BOTTOMRIGHT", -5,7)
+		block.SLE_Block.Logo:SetPoint("TOPLEFT", block.SLE_Block, "TOPRIGHT", -75,-7)
+		block.SLE_Block.Logo:SetAlpha(0.3)
+
+		block.SLE_Block:Hide()
+
+		Sk.additionalTextures["ScenarioLogo"] = block.SLE_Block.Logo
+		Sk:UpdateAdditionalTexture(Sk.additionalTextures["ScenarioLogo"], SLE.ScenarioBlockLogos[E.private.sle.skins.objectiveTracker.skinnedTextureLogo] or E.private.sle.skins.objectiveTracker.customTextureLogo)
+	end
+	
 	if not E.private.sle.skins.objectiveTracker.scenarioBG then
 		-- pop-up artwork
 		block.NormalBG:Hide()
 
 		-- pop-up final artwork
 		block.FinalBG:Hide()
+
+		if E.private.sle.skins.objectiveTracker.BGbackdrop then block.SLE_Block:Show() end
 	end
 
 	-- pop-up glow
@@ -127,14 +152,61 @@ end
 --Challengemode/M+
 -- local function Scenario_ChallengeMode_ShowBlock(timerID, elapsedTime, timeLimit)
 local function SkinChallengeModeBlock(timerID, elapsedTime, timeLimit)
-	local object = ScenarioChallengeModeBlock
+	local block = ScenarioChallengeModeBlock
+
+	if not block.SLE_Block then
+		block.SLE_Block = CreateFrame("Frame", "ScenarioStageBlock_SLE_Block", block)
+		block.SLE_Block:SetAllPoints(block)
+		block.SLE_Block:SetTemplate("Transparent")
+		block.SLE_Block:SetFrameStrata("BACKGROUND")
+
+		block.SLE_Block.Logo = block.SLE_Block:CreateTexture(nil, "OVERLAY")
+		block.SLE_Block.Logo:SetPoint("BOTTOMRIGHT", block.SLE_Block, "BOTTOMRIGHT", -5,7)
+		block.SLE_Block.Logo:SetPoint("TOPLEFT", block.SLE_Block, "TOPRIGHT", -75,-7)
+		block.SLE_Block.Logo:SetAlpha(0.3)
+
+		block.SLE_Block:Hide()
+
+		Sk.additionalTextures["ChallengeModeLogo"] = block.SLE_Block.Logo
+		Sk:UpdateAdditionalTexture(Sk.additionalTextures["ChallengeModeLogo"], SLE.ScenarioBlockLogos[E.private.sle.skins.objectiveTracker.skinnedTextureLogo] or E.private.sle.skins.objectiveTracker.customTextureLogo)
+
+		block.SLE_OverlayFrame = CreateFrame("Frame", "ScenarioStageBlock_SLE_Overlay", block)
+		block.SLE_OverlayFrame.LimitText = block.SLE_OverlayFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
+		block.SLE_OverlayFrame.LimitText:SetPoint("LEFT", block.TimeLeft, "RIGHT", 10, -2)
+		block.SLE_OverlayFrame.LimitText2 = block.SLE_OverlayFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
+		block.SLE_OverlayFrame.LimitText2:SetPoint("LEFT", block.SLE_OverlayFrame.LimitText, "RIGHT", 4, 0)
+		block.SLE_OverlayFrame.LimitText:Hide()
+		block.SLE_OverlayFrame.LimitText2:Hide()
+
+		block.SLE_OverlayFrame.Mark2 = block.SLE_OverlayFrame:CreateTexture(nil,"OVERLAY");
+		block.SLE_OverlayFrame.Mark2:SetPoint("TOPLEFT", block.StatusBar, "TOPLEFT", block.StatusBar:GetWidth() * (1 - Chest2_Mult) - 4, block.StatusBar:GetHeight())
+		block.SLE_OverlayFrame.Mark2:SetTexture("Interface\\CastingBar\\UI-CastingBar-Spark");
+		block.SLE_OverlayFrame.Mark2:SetWidth(5)
+		block.SLE_OverlayFrame.Mark2:SetBlendMode("ADD")
+		block.SLE_OverlayFrame.Mark2:SetHeight(block.StatusBar:GetHeight()*3)
+
+		block.SLE_OverlayFrame.Mark3 = block.SLE_OverlayFrame:CreateTexture(nil,"OVERLAY");
+		block.SLE_OverlayFrame.Mark3:SetPoint("TOPLEFT", block.StatusBar, "TOPLEFT", block.StatusBar:GetWidth() * (1 - Chest3_Mult) - 4, block.StatusBar:GetHeight())
+		block.SLE_OverlayFrame.Mark3:SetTexture("Interface\\CastingBar\\UI-CastingBar-Spark");
+		block.SLE_OverlayFrame.Mark3:SetWidth(5)
+		block.SLE_OverlayFrame.Mark3:SetBlendMode("ADD")
+		block.SLE_OverlayFrame.Mark3:SetHeight(block.StatusBar:GetHeight()*3)
+
+		block.SLE_OverlayFrame.Mark3:SetShown(false)
+		block.SLE_OverlayFrame.Mark2:SetShown(false)
+	end
+	
 	if not E.private.sle.skins.objectiveTracker.scenarioBG then
-		for i = 1, object:GetNumRegions() do
-			local region = select(i, object:GetRegions())
+		for i = 1, block:GetNumRegions() do
+			local region = select(i, block:GetRegions())
 			if region and region:IsObjectType('Texture') then --and region:IsObjectType(which) then
 				if region:GetAtlas() == "ChallengeMode-Timer" then region:SetAlpha(0) end
 			end
 		end
+		block.TimerBG:Kill();
+		block.TimerBGBack:Kill();
+
+		if E.private.sle.skins.objectiveTracker.BGbackdrop  then block.SLE_Block:Show() end
 	end
 	local COLOR
 	if E.private.sle.skins.objectiveTracker.class then
@@ -142,9 +214,49 @@ local function SkinChallengeModeBlock(timerID, elapsedTime, timeLimit)
 	else
 		COLOR = E.private.sle.skins.objectiveTracker.color
 	end
-	S:HandleStatusBar(object.StatusBar, {COLOR.r, COLOR.g, COLOR.b});
-	object.TimerBG:Kill();
-	object.TimerBGBack:Kill();
+	S:HandleStatusBar(block.StatusBar, {COLOR.r, COLOR.g, COLOR.b});
+end
+
+local function UpdateChallengeModeTime(block, elapsedTime)
+	if not block.SLE_Block then return end
+
+	local time3 = block.timeLimit * Chest3_Mult
+	local time2 = block.timeLimit * Chest2_Mult
+
+	if E.private.sle.skins.objectiveTracker.keyTimers.showMarks then
+		block.SLE_OverlayFrame.Mark3:SetShown(elapsedTime < time3)
+		block.SLE_OverlayFrame.Mark2:SetShown(elapsedTime < time2)
+	else
+		block.SLE_OverlayFrame.Mark3:SetShown(false)
+		block.SLE_OverlayFrame.Mark2:SetShown(false)
+	end
+
+	local timervalue, formatid
+
+	if elapsedTime < time3 then --3 chest timer
+		timervalue, formatID, nextUpdate, remainder = E:GetTimeInfo(time3 - elapsedTime, 0, 60, 3600)
+		block.SLE_OverlayFrame.LimitText:SetText(format(E.TimeFormats[formatID][1], timervalue, remainder))
+		block.SLE_OverlayFrame.LimitText:SetTextColor(1, 0.843, 0)
+		block.SLE_OverlayFrame.LimitText:Show()
+		--2 chest timer if needed
+		if E.private.sle.skins.objectiveTracker.keyTimers.showBothTimers then
+			timervalue, formatID, nextUpdate, remainder = E:GetTimeInfo(time2 - elapsedTime, 0, 60, 3600)
+			block.SLE_OverlayFrame.LimitText2:SetText(format(E.TimeFormats[formatID][1], timervalue, remainder))
+			block.SLE_OverlayFrame.LimitText2:SetTextColor(0.78, 0.78, 0.812)
+			block.SLE_OverlayFrame.LimitText2:Show()
+		else
+			block.SLE_OverlayFrame.LimitText2:Hide()
+		end
+	elseif elapsedTime < time2 then --2 chest timer 
+		timervalue, formatID, nextUpdate, remainder = E:GetTimeInfo(time2 - elapsedTime, 0, 60, 3600)
+		block.SLE_OverlayFrame.LimitText:SetText(format(E.TimeFormats[formatID][1], timervalue, remainder))
+		block.SLE_OverlayFrame.LimitText:SetTextColor(0.78, 0.78, 0.812)
+		block.SLE_OverlayFrame.LimitText:Show()
+		block.SLE_OverlayFrame.LimitText2:Hide()
+	else
+		block.SLE_OverlayFrame.LimitText:Hide()
+		block.SLE_OverlayFrame.LimitText2:Hide()
+	end
 end
 
 local function SkinAffixes(block,affixes)
@@ -243,8 +355,8 @@ local function ObjectiveReskin()
 				end
 				progressBar.Bar:SetStatusBarColor(COLOR.r, COLOR.g, COLOR.b)
 				progressBar.Bar:CreateBackdrop('Transparent')
-				progressBar.Bar.backdrop:Point('TOPLEFT', Bar, -1, 1)
-				progressBar.Bar.backdrop:Point('BOTTOMRIGHT', Bar, 1, -1)
+				progressBar.Bar.backdrop:Point('TOPLEFT', progressBar.Bar, -1, 1)
+				progressBar.Bar.backdrop:Point('BOTTOMRIGHT', progressBar.Bar, 1, -1)
 				progressBar.skinned = true
 			end
 		end)
@@ -253,7 +365,23 @@ local function ObjectiveReskin()
 		hooksecurefunc(_G["SCENARIO_CONTENT_TRACKER_MODULE"], "Update", SkinScenarioButtons)
 		hooksecurefunc("ScenarioBlocksFrame_OnLoad", SkinScenarioButtons)
 		hooksecurefunc("Scenario_ChallengeMode_ShowBlock", SkinChallengeModeBlock)
+		if E.private.sle.skins.objectiveTracker.keyTimers.enable then hooksecurefunc("Scenario_ChallengeMode_UpdateTime", UpdateChallengeModeTime) end
 		hooksecurefunc("Scenario_ChallengeMode_SetUpAffixes", SkinAffixes)
+		hooksecurefunc(ScenarioStageBlock.WidgetContainer, "CreateWidget", function(self, widgetID, widgetType, widgetTypeInfo, widgetInfo)
+			-- print(widgetID, widgetType, widgetTypeInfo, widgetInfo)
+			local widgetFrame = self.widgetFrames[widgetID]
+
+			if skinnableWidgets[widgetID] then
+				if not E.private.sle.skins.objectiveTracker.scenarioBG then
+					for i = 1, widgetFrame:GetNumRegions() do
+						local region = select(i, widgetFrame:GetRegions())
+						if region and region:IsObjectType('Texture') then
+							region:SetAlpha(0)
+						end
+					end
+				end
+			end
+		end)
 		-- Another ProgressBar in the ObjectiveTracker counting as Scenario (e.g. Legion Pre-Event)
 		hooksecurefunc(SCENARIO_TRACKER_MODULE, "AddProgressBar", function(self, block, line, criteriaIndex)
 			local progressBar = self.usedProgressBars[block] and self.usedProgressBars[block][line];
@@ -268,8 +396,8 @@ local function ObjectiveReskin()
 				end
 				progressBar.Bar:SetStatusBarColor(COLOR.r, COLOR.g, COLOR.b)
 				progressBar.Bar:CreateBackdrop()
-				progressBar.Bar.backdrop:Point('TOPLEFT', Bar, -1, 1)
-				progressBar.Bar.backdrop:Point('BOTTOMRIGHT', Bar, 1, -1)
+				progressBar.Bar.backdrop:Point('TOPLEFT', progressBar.Bar, -1, 1)
+				progressBar.Bar.backdrop:Point('BOTTOMRIGHT', progressBar.Bar, 1, -1)
 				progressBar.skinned = true
 				ScenarioTrackerProgressBar_PlayFlareAnim = dummy
 			end

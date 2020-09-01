@@ -2,1769 +2,2121 @@
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 		{
-			"Whirling Edge on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"fabius spawns for 2 mins", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Reportmepls-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			616, -- [11]
-			"Player-75-058380E2", -- [12]
+			1543, -- [11]
+			"Player-11-0B2371DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588104144,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598891969,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [1]
 		{
-			"Harbinger Il'koxik 94.60% ~(29.31, 52.27)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"is up, but we are chilling", -- [1]
+			"Ofaníel-Ragnaros", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Ofaníel-Ragnaros", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			689, -- [11]
-			"Player-75-058380E2", -- [12]
+			1547, -- [11]
+			"Player-1427-08CD9B7E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588105756,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa22fc8Ofaníel-Ragnaros|r",
+			[51] = 1598891974,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [2]
 		{
-			"Needler Zhesalla 100.00% ~(12.83, 33.78)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"gl finding a group and making it in time by chance", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Reportmepls-Tichondrius", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			706, -- [11]
-			"Player-75-058380E2", -- [12]
+			1548, -- [11]
+			"Player-11-0B2371DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588106234,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598891975,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [3]
 		{
-			"Infused Amber Ooze 25.23% ~(17.28, 63.88)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"lol", -- [1]
+			"Jahid-Azralon", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Jahid-Azralon", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			712, -- [11]
-			"Player-75-058380E2", -- [12]
+			1549, -- [11]
+			"Player-3209-057FFC92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588106351,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598891991,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [4]
 		{
-			"who formed a raid with the fucker dead", -- [1]
-			"Zweis-Sargeras", -- [2]
+			"Welcome to Fabious farm group", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zweis-Sargeras", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			761, -- [11]
-			"Player-76-0A5EB071", -- [12]
+			1552, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cZweis-Sargeras|r",
-			[51] = 1588106967,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598892003,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [5]
 		{
-			"a prick", -- [1]
-			"Xertak-Kil'jaeden", -- [2]
+			"Check wowhead for coords, pick one and wait", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Xertak-Kil'jaeden", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			766, -- [11]
-			"Player-9-09980994", -- [12]
+			1553, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cXertak-Kil'jaeden|r",
-			[51] = 1588106973,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598892003,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [6]
 		{
-			"guess ill tank?", -- [1]
-			"Mournsong-Executus", -- [2]
+			"WM off and prepare your SELFIE camera!", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mournsong-Executus", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			776, -- [11]
-			"Player-155-0A316758", -- [12]
+			1554, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecMournsong-Executus|r",
-			[51] = 1588107072,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598892003,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [7]
 		{
-			"lol", -- [1]
-			"Mournsong-Executus", -- [2]
+			"DO NOT KILL FABIOUS, you only  need to take a SELFIE with him", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mournsong-Executus", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			777, -- [11]
-			"Player-155-0A316758", -- [12]
+			1555, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecMournsong-Executus|r",
-			[51] = 1588107074,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598892003,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [8]
 		{
-			"Toxic Storm on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"NPC ID 65090", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1262, -- [11]
-			"Player-75-058380E2", -- [12]
+			1556, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588109520,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598892003,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [9]
 		{
-			"Drillstorm on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"If enough people, camp Soundless as well", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1493, -- [11]
-			"Player-75-058380E2", -- [12]
+			1557, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588110312,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598892003,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [10]
 		{
-			"Laser on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"whats the spawn time on fabious?", -- [1]
+			"Tissue-Wildhammer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Tissue-Wildhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1497, -- [11]
-			"Player-75-058380E2", -- [12]
+			1562, -- [11]
+			"Player-159-09127F40", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588110328,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa22fc8Tissue-Wildhammer|r",
+			[51] = 1598892026,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [11]
 		{
-			"Laser on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"2-8h", -- [1]
+			"Winryyn-Azralon", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Winryyn-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1500, -- [11]
-			"Player-75-058380E2", -- [12]
+			1564, -- [11]
+			"Player-3209-0A2B5657", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588110338,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598892033,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [12]
 		{
-			"Garrosh Hellscream", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"how long until it prolly spawns ", -- [1]
+			"Tissue-Wildhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Tissue-Wildhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1512, -- [11]
-			"Player-75-058380E2", -- [12]
+			1565, -- [11]
+			"Player-159-09127F40", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588110447,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa22fc8Tissue-Wildhammer|r",
+			[51] = 1598892046,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [13]
 		{
-			"Lok'tar Ogar!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"nobody knows", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1513, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588110452,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [14]
-		{
-			"Garrosh Hellscream", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1531, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588110869,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [15]
-		{
-			"Lok'tar Ogar!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1533, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588110872,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [16]
-		{
-			"Desecrate on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1646, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588111944,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [17]
-		{
-			"R'khuzj the Unfathomable 100.00% ~(58.48, 65.23)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Uldum", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Uldum", -- [9]
-			0, -- [10]
-			1, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588165421,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"|cffffff00Valley of Strength is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"4. LocalDefense - Orgrimmar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			4, -- [8]
-			"LocalDefense - Orgrimmar", -- [9]
-			0, -- [10]
-			1128, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588277410,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"(Cash): |cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r interrupted Gemshard Colossus's |cff71d5ff|Hspell:275140:0|h[Runic Hide]|h|r!", -- [1]
-			"Bearassed-Arthas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bearassed-Arthas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1450, -- [11]
-			"Player-69-0C9D930F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Bearassed-Arthas|r",
-			[51] = 1588621864,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [20]
-		{
-			"big pulls", -- [1]
-			"Dhooki-Thrall", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dhooki-Thrall", -- [5]
+			"Reportmepls-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			1566, -- [11]
-			"Player-3678-0BED9EE4", -- [12]
+			"Player-11-0B2371DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Dhooki-Thrall|r",
-			[51] = 1588622163,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598892053,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [14]
+		{
+			"No one knows", -- [1]
+			"Jahid-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jahid-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1569, -- [11]
+			"Player-3209-057FFC92", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598892054,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [15]
+		{
+			"but htis group is 3 hours in?", -- [1]
+			"Tissue-Wildhammer", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tissue-Wildhammer", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1570, -- [11]
+			"Player-159-09127F40", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Tissue-Wildhammer|r",
+			[51] = 1598892060,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [16]
+		{
+			"we are on hour 3 so at least 5", -- [1]
+			"Winryyn-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Winryyn-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1571, -- [11]
+			"Player-3209-0A2B5657", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598892060,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [17]
+		{
+			"at most", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Grinamdord-Bloodhoof", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1572, -- [11]
+			"Player-64-0047D3BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598892065,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [18]
+		{
+			"at most*", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Reportmepls-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1573, -- [11]
+			"Player-11-0B2371DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598892067,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [19]
+		{
+			"oh yeah", -- [1]
+			"Winryyn-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Winryyn-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1575, -- [11]
+			"Player-3209-0A2B5657", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598892071,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [20]
+		{
+			"sorry", -- [1]
+			"Winryyn-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Winryyn-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1576, -- [11]
+			"Player-3209-0A2B5657", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598892072,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [21]
 		{
-			"Removed: The Lion's Roar", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"use /rw when its up ", -- [1]
+			"Laridee-Nordrassil", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Laridee-Nordrassil", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			68, -- [11]
-			"Player-75-058380E2", -- [12]
+			1578, -- [11]
+			"Player-1182-07FCEF9F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588689613,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfffefefeLaridee-Nordrassil|r",
+			[51] = 1598892089,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [22]
 		{
-			"Picked Up: The Lion's Roar", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"and post coords", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			72, -- [11]
-			"Player-75-058380E2", -- [12]
+			1580, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588689652,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598892106,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [23]
 		{
-			"Removed: The Lion's Roar", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"NPC Scan can post to /rw", -- [1]
+			"Jahid-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Jahid-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			73, -- [11]
-			"Player-75-058380E2", -- [12]
+			1583, -- [11]
+			"Player-3209-057FFC92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588689697,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598892137,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [24]
 		{
-			"your mog is badass", -- [1]
-			"Xellus-ArgentDawn", -- [2]
-			"", -- [3]
+			"i was afk 2 sec, came back you werent here, i was scared", -- [1]
+			"Ofaníel-Ragnaros", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Xellus-ArgentDawn", -- [5]
+			"Ofaníel-Ragnaros", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			860, -- [11]
-			"Player-75-0AB4F66B", -- [12]
+			1594, -- [11]
+			"Player-1427-08CD9B7E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Xellus|r",
-			[51] = 1588697328,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffa22fc8Ofaníel-Ragnaros|r",
+			[51] = 1598892322,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [25]
 		{
-			"Yours is much better mines basic", -- [1]
-			"Xellus-ArgentDawn", -- [2]
-			"", -- [3]
+			"lol was just flying above sorry", -- [1]
+			"Ofaníel-Ragnaros", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Xellus-ArgentDawn", -- [5]
+			"Ofaníel-Ragnaros", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			862, -- [11]
-			"Player-75-0AB4F66B", -- [12]
+			1599, -- [11]
+			"Player-1427-08CD9B7E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Xellus|r",
-			[51] = 1588697366,
+			[52] = "|cffa22fc8Ofaníel-Ragnaros|r",
+			[51] = 1598892372,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [26]
 		{
-			"yeah but your sword and helm are awsome", -- [1]
-			"Xellus-ArgentDawn", -- [2]
-			"", -- [3]
+			"nothing yet", -- [1]
+			"Ofaníel-Ragnaros", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Xellus-ArgentDawn", -- [5]
+			"Ofaníel-Ragnaros", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			863, -- [11]
-			"Player-75-0AB4F66B", -- [12]
+			1600, -- [11]
+			"Player-1427-08CD9B7E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Xellus|r",
-			[51] = 1588697385,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffa22fc8Ofaníel-Ragnaros|r",
+			[51] = 1598892380,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [27]
 		{
-			"thanks", -- [1]
-			"Xellus-ArgentDawn", -- [2]
+			"xd np", -- [1]
+			"Ofaníel-Ragnaros", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Xellus-ArgentDawn", -- [5]
+			"Ofaníel-Ragnaros", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			864, -- [11]
-			"Player-75-0AB4F66B", -- [12]
+			1604, -- [11]
+			"Player-1427-08CD9B7E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Xellus|r",
-			[51] = 1588697395,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffa22fc8Ofaníel-Ragnaros|r",
+			[51] = 1598892387,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [28]
 		{
-			"np", -- [1]
-			"Xellus-ArgentDawn", -- [2]
+			"any luck yet?", -- [1]
+			"Talanicus-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Xellus-ArgentDawn", -- [5]
+			"Talanicus-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			865, -- [11]
-			"Player-75-0AB4F66B", -- [12]
+			1677, -- [11]
+			"Player-3209-092ACB61", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Xellus|r",
-			[51] = 1588697407,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffa22fc8Talanicus-Azralon|r",
+			[51] = 1598892983,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [29]
 		{
-			"Inferno Strike on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"Nada", -- [1]
+			"Dendrophobic-Ner'zhul", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Dendrophobic-Ner'zhul", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			77, -- [11]
-			"Player-75-058380E2", -- [12]
+			1678, -- [11]
+			"Player-128-08FC18E3", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588771060,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cDendrophobic-Ner'zhul|r",
+			[51] = 1598892990,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [30]
 		{
-			"Toxic Storm on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"You'll know hahah", -- [1]
+			"Jahid-Azralon", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Jahid-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			392, -- [11]
-			"Player-75-058380E2", -- [12]
+			1679, -- [11]
+			"Player-3209-057FFC92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588772770,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598892998,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [31]
 		{
-			"Laser on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"when all the nerds start losing it", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Reportmepls-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			661, -- [11]
-			"Player-75-058380E2", -- [12]
+			1682, -- [11]
+			"Player-11-0B2371DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588774100,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893014,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [32]
 		{
-			"Garrosh Hellscream", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"the mount will be around", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Reportmepls-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			699, -- [11]
-			"Player-75-058380E2", -- [12]
+			1683, -- [11]
+			"Player-11-0B2371DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588774245,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893018,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [33]
 		{
-			"Lok'tar Ogar!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"i gtg ", -- [1]
+			"Talanicus-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Talanicus-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1003, -- [11]
-			"Player-75-058380E2", -- [12]
+			1684, -- [11]
+			"Player-3209-092ACB61", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1588774682,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa22fc8Talanicus-Azralon|r",
+			[51] = 1598893028,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [34]
 		{
-			"|cffffff00The Sliver is under attack!|r", -- [1]
-			"", -- [2]
+			"not nerds... dorks... nerds are smart", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
-			"4. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
-			22, -- [7]
-			4, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			5463, -- [11]
-			false, -- [12]
+			1685, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1588783018,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893028,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [35]
 		{
-			"62% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"gl for u guys", -- [1]
+			"Talanicus-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Talanicus-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			167, -- [11]
-			"Player-75-058380E2", -- [12]
+			1686, -- [11]
+			"Player-3209-092ACB61", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559488,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa22fc8Talanicus-Azralon|r",
+			[51] = 1598893033,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [36]
 		{
-			"66% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"cya", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Reportmepls-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			168, -- [11]
-			"Player-75-058380E2", -- [12]
+			1687, -- [11]
+			"Player-11-0B2371DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559490,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893037,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [37]
 		{
-			"70% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"im losing it since half hour", -- [1]
+			"Winryyn-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Winryyn-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			169, -- [11]
-			"Player-75-058380E2", -- [12]
+			1688, -- [11]
+			"Player-3209-0A2B5657", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559490,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598893038,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [38]
 		{
-			"74% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Welcome to Fabious farm group", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			170, -- [11]
-			"Player-75-058380E2", -- [12]
+			1690, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559491,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893042,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [39]
 		{
-			"78% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Check wowhead for coords, pick one and wait", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			177, -- [11]
-			"Player-75-058380E2", -- [12]
+			1691, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559505,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893042,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [40]
 		{
-			"84% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"WM off and prepare your SELFIE camera!", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			178, -- [11]
-			"Player-75-058380E2", -- [12]
+			1692, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559505,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893042,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [41]
 		{
-			"88% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"DO NOT KILL FABIOUS, you only  need to take a SELFIE with him", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			179, -- [11]
-			"Player-75-058380E2", -- [12]
+			1693, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559506,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893042,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [42]
 		{
-			"92% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"NPC ID 65090", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			180, -- [11]
-			"Player-75-058380E2", -- [12]
+			1694, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559507,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893042,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [43]
 		{
-			"96% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"If enough people, camp Soundless as well", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			181, -- [11]
-			"Player-75-058380E2", -- [12]
+			1695, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559510,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893042,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [44]
 		{
-			"100% Zal'amak razed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"i think there is a spawn point by prince typhonus", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			192, -- [11]
-			"Player-75-058380E2", -- [12]
+			1700, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559517,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893081,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [45]
 		{
-			"2/4 Complete 4 world quests in Nazmir.", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Welcome to Fabious farm group", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			193, -- [11]
-			"Player-75-058380E2", -- [12]
+			1701, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559517,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893083,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [46]
 		{
-			"Completed: Absolutely Barbaric", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Check wowhead for coords, pick one and wait", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			195, -- [11]
-			"Player-75-058380E2", -- [12]
+			1702, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589559518,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893083,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [47]
 		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
+			"WM off and prepare your SELFIE camera!", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4, -- [11]
-			"Player-75-034D04EF", -- [12]
+			1703, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1589768996,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893083,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [48]
 		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
+			"DO NOT KILL FABIOUS, you only  need to take a SELFIE with him", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			18, -- [11]
-			"Player-75-034D04EF", -- [12]
+			1704, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1589769313,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893083,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [49]
 		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
+			"NPC ID 65090", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			32, -- [11]
-			"Player-75-034D04EF", -- [12]
+			1705, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1589769451,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893083,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [50]
 		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
+			"If enough people, camp Soundless as well", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			44, -- [11]
-			"Player-75-034D04EF", -- [12]
+			1706, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1589769636,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893083,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [51]
 		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
+			"all the spawn points are covered, at least according to wowhead pins", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Reportmepls-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			331, -- [11]
-			"Player-75-034D04EF", -- [12]
+			1707, -- [11]
+			"Player-11-0B2371DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1589769849,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893110,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [52]
 		{
-			"can i have a couple of gold?", -- [1]
-			"Neeyah-ArgentDawn", -- [2]
+			"Indeed", -- [1]
+			"Dendrophobic-Ner'zhul", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Neeyah-ArgentDawn", -- [5]
+			"Dendrophobic-Ner'zhul", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1093, -- [11]
-			"Player-75-0CB7291C", -- [12]
+			1709, -- [11]
+			"Player-128-08FC18E3", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Neeyah|r",
-			[51] = 1589814945,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffc59a6cDendrophobic-Ner'zhul|r",
+			[51] = 1598893117,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [53]
 		{
-			"i just need like 50", -- [1]
-			"Neeyah-ArgentDawn", -- [2]
+			"im flying around soundless area", -- [1]
+			"Ashaloth-Bloodscalp", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Neeyah-ArgentDawn", -- [5]
+			"Ashaloth-Bloodscalp", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1146, -- [11]
-			"Player-75-0CB7291C", -- [12]
+			1710, -- [11]
+			"Player-1185-0D693420", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Neeyah|r",
-			[51] = 1589814968,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffa9d271Ashaloth-Bloodscalp|r",
+			[51] = 1598893130,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [54]
 		{
-			"Inferno Strike on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"well i got me a deepglider", -- [1]
+			"Ashaloth-Bloodscalp", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Ashaloth-Bloodscalp", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4736, -- [11]
-			"Player-75-058380E2", -- [12]
+			1721, -- [11]
+			"Player-1185-0D693420", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589820495,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Ashaloth-Bloodscalp|r",
+			[51] = 1598893280,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [55]
 		{
-			"Toxic Storm on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"Interrupted |cff71d5ff|Hspell:304849:0|h[Water Spout]|h|r on Frenzied Elemental", -- [1]
+			"Tissue-Wildhammer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Tissue-Wildhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			5079, -- [11]
-			"Player-75-058380E2", -- [12]
+			1723, -- [11]
+			"Player-159-09127F40", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589822020,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa22fc8Tissue-Wildhammer|r",
+			[51] = 1598893362,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [56]
 		{
-			"Laser on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"Welcome to Fabious farm group", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			5322, -- [11]
-			"Player-75-058380E2", -- [12]
+			1734, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589822855,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893580,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [57]
 		{
-			"Laser on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			5324, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589822865,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
-		{
-			"Garrosh Hellscream", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Check wowhead for coords, pick one and wait", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			5339, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589824386,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
-		{
-			"Lok'tar Ogar!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			5340, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1589824393,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
-		{
-			"Inferno Strike on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1132, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1590006661,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
-		{
-			"Toxic Storm on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1479, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1590008337,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
-		{
-			"Drillstorm on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			1735, -- [11]
-			"Player-75-058380E2", -- [12]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1590009301,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [63]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893580,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [58]
 		{
-			"Laser on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"WM off and prepare your SELFIE camera!", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1736, -- [11]
+			"Player-64-0047D3BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893580,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [59]
+		{
+			"DO NOT KILL FABIOUS, you only  need to take a SELFIE with him", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Grinamdord-Bloodhoof", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1737, -- [11]
+			"Player-64-0047D3BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893580,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [60]
+		{
+			"NPC ID 65090", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Grinamdord-Bloodhoof", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1738, -- [11]
+			"Player-64-0047D3BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893580,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [61]
+		{
+			"If enough people, camp Soundless as well", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			1739, -- [11]
-			"Player-75-058380E2", -- [12]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1590009317,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893580,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [62]
 		{
-			"Laser on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"i keep seeing people sitting in areas - is it suppose to be up soon?", -- [1]
+			"Karayan-Moonrunner", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Karayan-Moonrunner", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1741, -- [11]
-			"Player-75-058380E2", -- [12]
+			1747, -- [11]
+			"Player-153-01EF15C0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1590009327,
+			[52] = "|cff8686ecKarayan-Moonrunner|r",
+			[51] = 1598893699,
 			[50] = "CHAT_MSG_SAY",
+		}, -- [63]
+		{
+			"no idea theres no way to tell", -- [1]
+			"Karayan-Moonrunner", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Karayan-Moonrunner", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1750, -- [11]
+			"Player-153-01EF15C0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecKarayan-Moonrunner|r",
+			[51] = 1598893735,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [64]
+		{
+			"we are in a raid group wiating 3 plus hours now", -- [1]
+			"Karayan-Moonrunner", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Karayan-Moonrunner", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1752, -- [11]
+			"Player-153-01EF15C0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecKarayan-Moonrunner|r",
+			[51] = 1598893755,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [65]
 		{
-			"Warchief Hellscream", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"thats what i figured - i do circles in the area cause its just lil ol me - but ive noticed the people waiting in each location lol", -- [1]
+			"Karayan-Moonrunner", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Karayan-Moonrunner", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			1755, -- [11]
-			"Player-75-058380E2", -- [12]
+			"Player-153-01EF15C0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1590009630,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8686ecKarayan-Moonrunner|r",
+			[51] = 1598893773,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [66]
 		{
-			"My life for the Horde!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"so all horses can fly in shadowlands?", -- [1]
+			"Ashaloth-Bloodscalp", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Ashaloth-Bloodscalp", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
 			1756, -- [11]
-			"Player-75-058380E2", -- [12]
+			"Player-1185-0D693420", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1590009635,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Ashaloth-Bloodscalp|r",
+			[51] = 1598893783,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [67]
 		{
-			"sorry to bother you", -- [1]
-			"Missdawn-ArgentDawn", -- [2]
-			"", -- [3]
+			"you can join the group if you would like", -- [1]
+			"Karayan-Moonrunner", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Missdawn-ArgentDawn", -- [5]
+			"Karayan-Moonrunner", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1876, -- [11]
-			"Player-75-0CC32F42", -- [12]
+			1757, -- [11]
+			"Player-153-01EF15C0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Missdawn|r",
-			[51] = 1591368121,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cff8686ecKarayan-Moonrunner|r",
+			[51] = 1598893797,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [68]
 		{
-			"i'm new to the server.", -- [1]
-			"Missdawn-ArgentDawn", -- [2]
+			"we have enough people here to double up on points.", -- [1]
+			"Bohe-Sen'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Missdawn-ArgentDawn", -- [5]
+			"Bohe-Sen'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1877, -- [11]
-			"Player-75-0CC32F42", -- [12]
+			1758, -- [11]
+			"Player-1185-0BA1CF0D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Missdawn|r",
-			[51] = 1591368126,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfffe7b09Bohe-Sen'jin|r",
+			[51] = 1598893798,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [69]
 		{
-			"would you be willing to buy one of my lvl 25 pets? for flying gold?", -- [1]
-			"Missdawn-ArgentDawn", -- [2]
+			"we are doubled on all points", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Missdawn-ArgentDawn", -- [5]
+			"Reportmepls-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1878, -- [11]
-			"Player-75-0CC32F42", -- [12]
+			1759, -- [11]
+			"Player-11-0B2371DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Missdawn|r",
-			[51] = 1591368166,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893810,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [70]
 		{
-			"May I please have |cff0070dd|Hitem:168970::::::::120:71::2:3:4818:1472:4785:::|h[Trashmaster's Mantle]|h|r if you don't need it?", -- [1]
-			"Frostforger-Illidan", -- [2]
-			"Orcish", -- [3]
+			"Doxx, turn WM off", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Frostforger-Illidan", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4416, -- [11]
-			"Player-57-0B4F1F62", -- [12]
+			1760, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Frostforger-Illidan|r",
-			[51] = 1592779567,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893816,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [71]
 		{
-			"TY", -- [1]
-			"Frostforger-Illidan", -- [2]
-			"Orcish", -- [3]
+			"i appreciate that - i am currently working from home so just doing this in between calls - i rather not know i missed it then get stuck in a call and miss it lol if that makes sense", -- [1]
+			"Karayan-Moonrunner", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Frostforger-Illidan", -- [5]
+			"Karayan-Moonrunner", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4418, -- [11]
-			"Player-57-0B4F1F62", -- [12]
+			1761, -- [11]
+			"Player-153-01EF15C0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Frostforger-Illidan|r",
-			[51] = 1592779638,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cff8686ecKarayan-Moonrunner|r",
+			[51] = 1598893832,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [72]
 		{
-			"np ", -- [1]
-			"Frostforger-Illidan", -- [2]
+			"it is off", -- [1]
+			"Ðoxx-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Frostforger-Illidan", -- [5]
+			"Ðoxx-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4422, -- [11]
-			"Player-57-0B4F1F62", -- [12]
+			1763, -- [11]
+			"Player-3684-0945CF8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Frostforger-Illidan|r",
-			[51] = 1592779650,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cff8686ecÐoxx-Mal'Ganis|r",
+			[51] = 1598893840,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [73]
 		{
-			"no fucking way", -- [1]
-			"Iroux-Hyjal", -- [2]
+			"Welcome to Fabious farm group", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Iroux-Hyjal", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4445, -- [11]
-			"Player-3661-08674EA4", -- [12]
+			1764, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecIroux-Hyjal|r",
-			[51] = 1592779759,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893841,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [74]
 		{
-			"Giga-Zap on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"Check wowhead for coords, pick one and wait", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4489, -- [11]
-			"Player-75-058380E2", -- [12]
+			1765, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1592780014,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893841,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [75]
 		{
-			"May I please have |cff0070dd|Hitem:168979::::::::120:71::2:4:4818:1472:4785:6257:::|h[Mechanized Plate Chasse]|h|r if you don't need it?", -- [1]
-			"Drboom-Hyjal", -- [2]
-			"Orcish", -- [3]
+			"WM off and prepare your SELFIE camera!", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Drboom-Hyjal", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4500, -- [11]
-			"Player-3661-07A0A2D1", -- [12]
+			1766, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Drboom-Hyjal|r",
-			[51] = 1592780029,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893841,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [76]
 		{
-			"sure", -- [1]
-			"Drboom-Hyjal", -- [2]
+			"DO NOT KILL FABIOUS, you only  need to take a SELFIE with him", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Drboom-Hyjal", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4514, -- [11]
-			"Player-3661-07A0A2D1", -- [12]
+			1767, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Drboom-Hyjal|r",
-			[51] = 1592780043,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893841,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [77]
 		{
-			"ty!", -- [1]
-			"Drboom-Hyjal", -- [2]
-			"Orcish", -- [3]
+			"NPC ID 65090", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Drboom-Hyjal", -- [5]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4520, -- [11]
-			"Player-3661-07A0A2D1", -- [12]
+			1768, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Drboom-Hyjal|r",
-			[51] = 1592780074,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893841,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [78]
 		{
-			"Mr. Fixthis 70.51% ~(60.73, 60.97)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"If enough people, camp Soundless as well", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
-			"2. General - Mechagon", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Grinamdord-Bloodhoof", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Mechagon", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			4600, -- [11]
-			"Player-75-058380E2", -- [12]
+			1769, -- [11]
+			"Player-64-0047D3BD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1592780683,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598893841,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [79]
 		{
-			"Maximum Thrust on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"Not all horses", -- [1]
+			"Jahid-Azralon", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Jahid-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4629, -- [11]
-			"Player-75-058380E2", -- [12]
+			1770, -- [11]
+			"Player-3209-057FFC92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1592780884,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598893849,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [80]
 		{
-			"Giga-Zap on Shanyt", -- [1]
+			"Unicorn-like horses", -- [1]
+			"Jahid-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jahid-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1771, -- [11]
+			"Player-3209-057FFC92", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598893854,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [81]
+		{
+			"ahhh", -- [1]
+			"Ashaloth-Bloodscalp", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ashaloth-Bloodscalp", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1772, -- [11]
+			"Player-1185-0D693420", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Ashaloth-Bloodscalp|r",
+			[51] = 1598893863,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [82]
+		{
+			"neat", -- [1]
+			"Ashaloth-Bloodscalp", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ashaloth-Bloodscalp", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1773, -- [11]
+			"Player-1185-0D693420", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Ashaloth-Bloodscalp|r",
+			[51] = 1598893866,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [83]
+		{
+			"Like |cff71d5ff|Hspell:247402:0|h[Pesadelo Lúcido]|h|r", -- [1]
+			"Jahid-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jahid-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1775, -- [11]
+			"Player-3209-057FFC92", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598893871,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [84]
+		{
+			"im felling deeply in my heart that it will spawn and i wont be able to get in time", -- [1]
+			"Winryyn-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Winryyn-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1776, -- [11]
+			"Player-3209-0A2B5657", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598893871,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [85]
+		{
+			"You will, don't worry", -- [1]
+			"Jahid-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jahid-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1777, -- [11]
+			"Player-3209-057FFC92", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598893885,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [86]
+		{
+			"u have the best chance", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Reportmepls-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1778, -- [11]
+			"Player-11-0B2371DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893889,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [87]
+		{
+			"paladins fly faster than other classes", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Reportmepls-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1779, -- [11]
+			"Player-11-0B2371DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893896,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [88]
+		{
+			"only one problem", -- [1]
+			"Winryyn-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Winryyn-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1781, -- [11]
+			"Player-3209-0A2B5657", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598893910,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [89]
+		{
+			"i dont have fly", -- [1]
+			"Winryyn-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Winryyn-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1782, -- [11]
+			"Player-3209-0A2B5657", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598893913,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [90]
+		{
+			"He cant fly here actually", -- [1]
+			"Jahid-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jahid-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1783, -- [11]
+			"Player-3209-057FFC92", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598893914,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [91]
+		{
+			"l", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Reportmepls-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1784, -- [11]
+			"Player-11-0B2371DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893917,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [92]
+		{
+			"o", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Reportmepls-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1785, -- [11]
+			"Player-11-0B2371DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893918,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [93]
+		{
+			"l", -- [1]
+			"Reportmepls-Tichondrius", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Reportmepls-Tichondrius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1786, -- [11]
+			"Player-11-0B2371DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecReportmepls-Tichondrius|r",
+			[51] = 1598893919,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [94]
+		{
+			"But we will take you", -- [1]
+			"Jahid-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jahid-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1787, -- [11]
+			"Player-3209-057FFC92", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Jahid-Azralon|r",
+			[51] = 1598893920,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [95]
+		{
+			":)", -- [1]
+			"Winryyn-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Winryyn-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1791, -- [11]
+			"Player-3209-0A2B5657", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Winryyn-Azralon|r",
+			[51] = 1598893949,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [96]
+		{
+			"well i got to drop out i hope yall get it soon ill check back later see if its still going", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"", -- [3]
 			"", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
@@ -1772,7 +2124,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4712, -- [11]
+			1796, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1780,427 +2132,75 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1592781314,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [81]
+			[51] = 1598894001,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [97]
 		{
-			"Mecharantula 97.75% ~(87.73, 20.28)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"later", -- [1]
+			"Grinamdord-Bloodhoof", -- [2]
 			"", -- [3]
-			"2. General - Mechagon", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Grinamdord-Bloodhoof", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1797, -- [11]
+			"Player-64-0047D3BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeGrinamdord-Bloodhoof|r",
+			[51] = 1598894007,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [98]
+		{
+			"king gakula is up -- 28/28", -- [1]
+			"Fuzzymonk-EarthenRing", -- [2]
+			"", -- [3]
+			"2. General - Nazjatar", -- [4]
+			"Fuzzymonk-EarthenRing", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
-			"General - Mechagon", -- [9]
+			"General - Nazjatar", -- [9]
 			0, -- [10]
-			4737, -- [11]
-			"Player-75-058380E2", -- [12]
+			1800, -- [11]
+			"Player-100-05CBE047", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1592781457,
+			[52] = "|cff00fe95Fuzzymonk-EarthenRing|r",
+			[51] = 1598894701,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
-		{
-			"1", -- [1]
-			"Kaghr-ArgentDawn", -- [2]
-			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Kaghr-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			418, -- [11]
-			"Player-75-0CDF10AB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cKaghr|r",
-			[51] = 1595950169,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:4619:Player-75-0627B6BC:1:8:16:20:4294967295:4294967295:4294967295:4294967295|h[Portal Jockey (25 player)]|h|r!", -- [1]
-			"Headshothank-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Headshothank-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2531, -- [11]
-			"Player-75-0627B6BC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Headshothank|r",
-			[51] = 1597599146,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [84]
-		{
-			"’s Ghoul Rootravager scratches at a patch of plague tangles growing from its side and mutters quietly \"Gnaw the bones, chew the ropes\".", -- [1]
-			"Taalle-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Taalle-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2766, -- [11]
-			"Player-75-0AFCBFBD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Taalle|r",
-			[51] = 1597599323,
-			[50] = "CHAT_MSG_EMOTE",
-		}, -- [85]
-		{
-			"’s Ghoul Rootravager edges up to its mistress, gazing up at her.", -- [1]
-			"Taalle-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Taalle-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3465, -- [11]
-			"Player-75-0AFCBFBD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Taalle|r",
-			[51] = 1597599922,
-			[50] = "CHAT_MSG_EMOTE",
-		}, -- [86]
-		{
-			"Are these transmogable?", -- [1]
-			"Mezil-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Mezil-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			7, -- [11]
-			"Player-75-0CDF092D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecMezil|r",
-			[51] = 1597601961,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [87]
-		{
-			"yes", -- [1]
-			"Panuru-TheScryers", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Panuru-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			9, -- [11]
-			"Player-75-08BCCC2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Panuru-TheScryers|r",
-			[51] = 1597601971,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [88]
-		{
-			"I think I just have all the apperances.", -- [1]
-			"Mezil-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Mezil-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			12, -- [11]
-			"Player-75-0CDF092D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecMezil|r",
-			[51] = 1597601977,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [89]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:9908:Player-75-0CC768E3:1:8:16:20:4294967295:4294967295:4294967295:4294967295|h[Ready for Powerleveling]|h|r!", -- [1]
-			"Urzamus-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Urzamus-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2533, -- [11]
-			"Player-75-0CC768E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Urzamus|r",
-			[51] = 1597624190,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [90]
-		{
-			"Gratz !", -- [1]
-			"Daniela-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2547, -- [11]
-			"Player-75-0B46B98A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Daniela|r",
-			[51] = 1597624206,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [91]
-		{
-			"Congrats", -- [1]
-			"Bothra-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2575, -- [11]
-			"Player-75-0AEBC855", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Bothra|r",
-			[51] = 1597624275,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [92]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:9909:Player-75-0CC768E3:1:8:16:20:4294967295:4294967295:4294967295:4294967295|h[Heirloom Hoarder]|h|r!", -- [1]
-			"Urzamus-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Urzamus-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2627, -- [11]
-			"Player-75-0CC768E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Urzamus|r",
-			[51] = 1597624344,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [93]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:12488:Player-75-03A67951:1:8:16:20:4294967295:4294967295:4294967295:4294967295|h[Mythic: Waycrest Manor]|h|r!", -- [1]
-			"Rawrior-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rawrior-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3865, -- [11]
-			"Player-75-03A67951", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cRawrior|r",
-			[51] = 1597626661,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [94]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:11185:Player-75-03A67951:1:8:16:20:4294967295:4294967295:4294967295:4294967295|h[Keystone Conqueror]|h|r!", -- [1]
-			"Rawrior-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rawrior-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3866, -- [11]
-			"Player-75-03A67951", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cRawrior|r",
-			[51] = 1597626661,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [95]
-		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3867, -- [11]
-			"Player-75-034D04EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1597626664,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [96]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14194:Player-75-0AEBC855:1:8:16:20:4294967295:4294967295:4294967295:4294967295|h[Halls of Devotion]|h|r!", -- [1]
-			"Bothra-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bothra-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			978, -- [11]
-			"Player-75-0AEBC855", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Bothra-TheScryers|r",
-			[51] = 1597629583,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [97]
-		{
-			"grats name", -- [1]
-			"Hypnos-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			985, -- [11]
-			"Player-75-036AB6D6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Hypnos|r",
-			[51] = 1597629586,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [98]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:13771:Player-75-09F9F1F6:1:8:21:20:4294967295:4294967295:4294967295:4294967295|h[Power Is Beautiful]|h|r!", -- [1]
-			"Gremlyk-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gremlyk-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1542, -- [11]
-			"Player-75-09F9F1F6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cGremlyk|r",
-			[51] = 1598012020,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [99]
 	},
 	["ChatEditHistory"] = {
-		"/wa", -- [1]
-		"/p now it makes sense", -- [2]
-		"/p found him on m", -- [3]
-		"/raid same just 1 more day", -- [4]
-		"/p do tell", -- [5]
-		"/ltp", -- [6]
-		"/p thanks!", -- [7]
-		"/cw Xellus-ArgentDawn Yours is much better mines basic", -- [8]
-		"/p im on day 3", -- [9]
-		"/omnicc", -- [10]
-		"/reload", -- [11]
-		"/p e", -- [12]
-		"/opie", -- [13]
-		"/p that was quick lol omw", -- [14]
-		"/cw Xellus-ArgentDawn thanks", -- [15]
-		"/p hows it going", -- [16]
-		"/allthethings", -- [17]
-		"/raid hes here", -- [18]
-		"/cw Frostforger-Illidan TY", -- [19]
-		"/cw Drboom-Hyjal ty!", -- [20]
+		"/raid what total time are we at now?", -- [1]
+		"/raid welp i tried gone be a rough day at work from staying up so late. maybe as i log off he will show for you all good luck!", -- [2]
+		"/p hi thanks", -- [3]
+		"/p i did it yesterday", -- [4]
+		"/p it was on the wowhead comments", -- [5]
+		"/canimogit", -- [6]
+		"/allthethings", -- [7]
+		"/raid yep", -- [8]
+		"/npcscan add 152290 Soundless", -- [9]
+		"/npcscan", -- [10]
+		"/raid also for the npcscan soundless question earlier do /npcscan add 152290 Soundless", -- [11]
+		"/raid yw", -- [12]
+		"/raid i heard it can be quick like 30s to 5m but whats best is to call it before anyone takes a photo get everyone there quickly then start taking", -- [13]
+		"/raid ha!", -- [14]
+		"/cw Ofaníel-Ragnaros lol was just flying above sorry", -- [15]
+		"/cw Ofaníel-Ragnaros nothing yet", -- [16]
+		"/cw Karayan-Moonrunner no idea theres no way to tell", -- [17]
+		"/cw Karayan-Moonrunner we are in a raid group wiating 3 plus hours now", -- [18]
+		"/cw Karayan-Moonrunner you can join the group if you would like", -- [19]
+		"/raid well i got to drop out i hope yall get it soon ill check back later see if its still going", -- [20]
 	},
 	["CliqueDatatext"] = {
 	},

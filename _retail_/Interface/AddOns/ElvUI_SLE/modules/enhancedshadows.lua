@@ -55,9 +55,8 @@ end
 
 --Update specific shadow
 function ES:UpdateShadow(shadow)
-	local ShadowColor = E.db.sle.shadows.shadowcolor
-	local r, g, b = ShadowColor['r'], ShadowColor['g'], ShadowColor['b']
-	if E.db.sle.shadows.classcolor then r, g, b = ClassColor['r'], ClassColor['g'], ClassColor['b'] end
+	local shadowcolor = E.db.sle.shadows.shadowcolor
+	local r, g, b = shadowcolor.r, shadowcolor.g, shadowcolor.b
 
 	local size = E.db.sle.shadows.size
 	shadow:SetOutside(shadow:GetParent(), size, size)
@@ -311,6 +310,8 @@ function ES:CreateShadows()
 end
 
 function ES:UpdateMinimap()
+	if not E.private.sle.minimap.rectangle then return end
+
 	ES.DummyPanels.Minimap:Point('TOPLEFT', _G.Minimap, 'TOPLEFT', -1, -(E.MinimapSize/6.1)+1)
 	if E.db.datatexts.panels.MinimapPanel.enable then
 		ES.DummyPanels.Minimap:Point('BOTTOMRIGHT', _G.MinimapPanel, 'BOTTOMRIGHT', 0, 0)

@@ -1685,6 +1685,12 @@ function BtWQuestsTooltipMixin:SetChain(chainID, character)
 
     self:Show();
 end
+local IsUnitOnQuest = C_QuestLog.IsUnitOnQuest
+if not IsUnitOnQuest then
+    function IsUnitOnQuest(unit, questID)
+        return IsUnitOnQuestByQuestID(questID, unit)
+    end
+end
 -- Custom function for displaying an active quest showing completed requirements
 function BtWQuestsTooltipMixin:SetActiveQuest(id, character)
     local id = tonumber(id)
@@ -1746,8 +1752,8 @@ function BtWQuestsTooltipMixin:SetActiveQuest(id, character)
     end
 
 	local partyMembersOnQuest = 0;
-	for i=1, GetNumSubgroupMembers() do
-		if IsUnitOnQuestByQuestID(id, "party"..i) then
+    for i=1, GetNumSubgroupMembers() do
+        if IsUnitOnQuest("party"..i, i) then
 			-- Found at least one party member who is also on the quest, set it up!
 			self:AddLine(" ");
 			self:AddLine(PARTY_QUEST_STATUS_ON);

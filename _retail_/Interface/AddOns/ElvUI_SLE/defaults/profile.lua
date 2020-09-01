@@ -339,7 +339,7 @@ P["sle"] = {
 	},
 	--SLE Datatexts
 	["dt"] = {
-		["friends"] = {
+		friends = {
 			--*  General Settings
 			panelStyle = "DEFAULT",
 			tooltipAutohide = 0.2,
@@ -377,9 +377,6 @@ P["sle"] = {
 			["textStyle"] = "Default",
 			["onoteColor"] = { r = 0, g = 1, b = 0 },
 			["noteColor"] = { r = 1, g = 1, b = 0 },
-		},
-		["mail"] = {
-			["icon"] = true,
 		},
 		["currency"] = {
 			["Archaeology"] = true,
@@ -598,6 +595,9 @@ P["sle"] = {
 			["throttle"] = 0.2,
 			["color"] = {r = 1,g = 1,b = 1},
 		},
+		mail = {
+			hideicon = false,
+		},
 		["mapicons"] = {
 			["iconmouseover"] = false,
 			["iconsize"] = 27,
@@ -796,7 +796,6 @@ P["sle"] = {
 	--Shadows
 	['shadows'] = {
 		['shadowcolor'] = { ['r'] = 0, ['g'] = 0, ['b'] = 0 },
-		['classcolor'] = false,
 		['size'] = 3,
 	},
 	--Skins
