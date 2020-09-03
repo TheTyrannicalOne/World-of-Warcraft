@@ -14,7 +14,7 @@ FishingBuddy_Player = {
 		["DrownedMana"] = true,
 		["LastResort"] = true,
 		["UseAction"] = true,
-		["TotalTimeFishing"] = 1041.27299999997,
+		["TotalTimeFishing"] = 1314.92499999997,
 		["MountedCast"] = true,
 		["AlwaysLure"] = true,
 		["SpecialBobbers"] = -2,
@@ -36,5 +36,17 @@ FishingBuddy_Player = {
 	["Outfit"] = {
 	},
 	["WatcherLocation"] = {
+		["grp_point"] = "CENTER",
+		["solo_y"] = -6.103515625e-05,
+		["solo_x"] = 0,
+		["solo_point"] = "CENTER",
+		["grp_x"] = 0,
+		["solo_scale"] = 1,
+		["raid_point"] = "CENTER",
+		["raid_x"] = 0,
+		["grp_scale"] = 1,
+		["grp_y"] = -6.103515625e-05,
+		["raid_y"] = -6.103515625e-05,
+		["raid_scale"] = 1,
 	},
 }

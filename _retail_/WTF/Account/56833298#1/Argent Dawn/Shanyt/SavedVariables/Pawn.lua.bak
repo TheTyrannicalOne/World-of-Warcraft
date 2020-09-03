@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0334,
+	["LastVersion"] = 2.0335,
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -85,10 +85,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 164342,
-			["Level"] = 325,
+			["ID"] = 170310,
+			["Level"] = 400,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff0070dd|Hitem:164342::::::::120:71::11::::|h[Plundered Geode Gavel]|h|r",
+			["Link"] = "|cffa335ee|Hitem:170310::::::::120:71::13:1:1678:::|h[Uncanny Combatant's Shanker of the Quickblade]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
