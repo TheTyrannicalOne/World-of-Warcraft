@@ -10,13 +10,13 @@ KalielsTrackerDB = {
 		["Tynster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Goramor - Runetotem"] = {
 			["collapsed"] = true,
 		},
 		["Tyrannithal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Beeronimo - Dalaran"] = {
@@ -55,10 +55,10 @@ KalielsTrackerDB = {
 		["Fantastiburo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Serbitechna - Dalaran"] = {
@@ -76,7 +76,7 @@ KalielsTrackerDB = {
 		["Migimong - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Goramor - Runetotem"] = {
+		["Zulbathal - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Narisaric - Dalaran"] = {
@@ -98,10 +98,11 @@ KalielsTrackerDB = {
 		["Mulmok - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
-		["Panboozled - Runetotem"] = "Default",
 		["Fantastiburo - Argent Dawn"] = "Default",
+		["Panboozled - Runetotem"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
@@ -115,15 +116,15 @@ KalielsTrackerDB = {
 		["Claugh - Runetotem"] = "Default",
 		["Sinh - Dalaran"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
-		["Tynster - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
+		["Tynster - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
-		["Vancard - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
 		["Migimong - Runetotem"] = "Default",
 		["Avisar - Dalaran"] = "Default",

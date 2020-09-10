@@ -638,7 +638,7 @@ WeakAurasSaved = {
 					["alphaType"] = "alphaPulse",
 					["colorA"] = 1,
 					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
+					["alphaFunc"] = "    function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
 					["use_alpha"] = true,
 					["type"] = "custom",
 					["duration_type"] = "seconds",
@@ -976,6 +976,12 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["startAngle"] = 0,
+			["stickyDuration"] = false,
+			["rotation"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["version"] = 2,
+			["height"] = 40,
 			["actions"] = {
 				["start"] = {
 				},
@@ -984,12 +990,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["stickyDuration"] = false,
-			["rotation"] = 0,
-			["font"] = "Friz Quadrata TT",
-			["version"] = 2,
-			["height"] = 40,
-			["selfPoint"] = "CENTER",
+			["crop_y"] = 0.41,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -1048,20 +1049,19 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorPoint"] = "CENTER",
 			["useAdjustededMax"] = false,
 			["textureWrapMode"] = "CLAMP",
 			["crop_x"] = 0.41,
-			["startAngle"] = 0,
 			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
+			["authorOptions"] = {
+			},
 			["useAdjustedMax"] = false,
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
-			["crop"] = 0.41,
 			["regionType"] = "progresstexture",
+			["backgroundTexture"] = "450915",
 			["blendMode"] = "BLEND",
-			["authorOptions"] = {
-			},
+			["crop"] = 0.41,
 			["uid"] = "SKVgVEnK4Qn",
 			["slantMode"] = "INSIDE",
 			["width"] = 40,
@@ -1073,15 +1073,15 @@ WeakAurasSaved = {
 			["parent"] = "ZerkinUI Secondary Trackers",
 			["frameStrata"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["backgroundTexture"] = "450915",
+			["desaturateForeground"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["desaturateForeground"] = false,
+			["anchorPoint"] = "CENTER",
 			["orientation"] = "VERTICAL",
 			["conditions"] = {
 			},
-			["crop_y"] = 0.41,
+			["selfPoint"] = "CENTER",
 			["backgroundOffset"] = 0,
 		},
 		["Maelstrom Resource"] = {
@@ -1285,7 +1285,7 @@ WeakAurasSaved = {
 					["alphaType"] = "alphaPulse",
 					["colorA"] = 1,
 					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
+					["alphaFunc"] = "    function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
 					["use_alpha"] = true,
 					["type"] = "custom",
 					["colorB"] = 0,
@@ -3049,8 +3049,8 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["anchorPoint"] = "CENTER",
-			["internalVersion"] = 33,
-			["yOffset"] = -215.999938964844,
+			["borderOffset"] = 5,
+			["xOffset"] = 141.99951171875,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3072,7 +3072,7 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "Maelstrom Bar OG",
-			["borderOffset"] = 5,
+			["internalVersion"] = 33,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["uid"] = "82ydMTeJ79l",
@@ -3139,7 +3139,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = 141.99951171875,
+			["yOffset"] = -215.999938964844,
 		},
 		["Flametongue Bar 2"] = {
 			["sparkWidth"] = 10,
@@ -4329,7 +4329,7 @@ WeakAurasSaved = {
 					["alphaType"] = "alphaPulse",
 					["colorB"] = 0,
 					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
+					["alphaFunc"] = "    function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
 					["use_alpha"] = true,
 					["type"] = "custom",
 					["colorA"] = 1,
@@ -4891,6 +4891,36 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["radius"] = 200,
+			["animate"] = false,
+			["sort"] = "none",
+			["scale"] = 1,
+			["authorOptions"] = {
+			},
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["rowSpace"] = 1,
+			["selfPoint"] = "TOP",
+			["constantFactor"] = "RADIUS",
+			["gridWidth"] = 5,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.25",
+			["tocversion"] = 80300,
+			["id"] = "Vision - Sanity Tracker",
+			["borderInset"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["config"] = {
+			},
+			["uid"] = "TzGqmFuTB8x",
+			["anchorPoint"] = "CENTER",
+			["stagger"] = 0,
+			["conditions"] = {
+			},
+			["arcLength"] = 360,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -4911,36 +4941,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["animate"] = false,
-			["sort"] = "none",
-			["scale"] = 1,
-			["arcLength"] = 360,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["limit"] = 5,
-			["authorOptions"] = {
-			},
-			["stagger"] = 0,
-			["constantFactor"] = "RADIUS",
-			["gridWidth"] = 5,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.25",
-			["tocversion"] = 80300,
-			["id"] = "Vision - Sanity Tracker",
-			["borderInset"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["config"] = {
-			},
-			["uid"] = "TzGqmFuTB8x",
-			["anchorPoint"] = "CENTER",
-			["radius"] = 200,
-			["conditions"] = {
-			},
-			["selfPoint"] = "TOP",
-			["rowSpace"] = 1,
 		},
 		["RejuvTracker 2"] = {
 			["outline"] = "OUTLINE",
@@ -5825,19 +5825,19 @@ WeakAurasSaved = {
 						["type"] = "custom",
 						["unevent"] = "auto",
 						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
 						["use_absorbMode"] = true,
 						["event"] = "Health",
-						["unit"] = "player",
+						["use_unit"] = true,
 						["duration"] = "1",
 						["custom_type"] = "event",
 						["custom"] = "function(e,...)\n    local frame = PlayerPowerBarAlt\n    UnregisterUnitWatch(frame)\n    frame:Hide()\n    \n    frame.powerBarAlt:UnregisterAllEvents()\n    frame:SetParent(aura_env.region)\n    frame:HookScript(\"OnShow\", aura_env.hide)\nend",
 						["events"] = "PLAYER_ENTERING_WORLD",
 						["spellIds"] = {
 						},
-						["use_unit"] = true,
-						["names"] = {
-						},
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -6230,8 +6230,8 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["anchorPoint"] = "CENTER",
-			["internalVersion"] = 33,
-			["yOffset"] = 1.99945068359375,
+			["borderOffset"] = 5,
+			["xOffset"] = -0.00018310546875,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -6253,7 +6253,7 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "ZerkinUI Primary Bars",
-			["borderOffset"] = 5,
+			["internalVersion"] = 33,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["uid"] = "70XyqZpFyS)",
@@ -6318,7 +6318,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = -0.00018310546875,
+			["yOffset"] = 1.99945068359375,
 		},
 		["GCD Shaman"] = {
 			["sparkWidth"] = 10,
@@ -7552,8 +7552,8 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["anchorPoint"] = "CENTER",
-			["internalVersion"] = 33,
-			["yOffset"] = -225,
+			["borderOffset"] = 5,
+			["xOffset"] = 0,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -7575,7 +7575,7 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "ZerkinUI Warlock",
-			["borderOffset"] = 5,
+			["internalVersion"] = 33,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["uid"] = "4iz3wZrJ2nZ",
@@ -7642,7 +7642,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = 0,
+			["yOffset"] = -225,
 		},
 		["Tidal Waves Bar"] = {
 			["sparkWidth"] = 12,
@@ -8284,16 +8284,17 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backgroundTexture"] = "450915",
+			["authorOptions"] = {
+			},
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
 			["version"] = 2,
 			["height"] = 40,
-			["foregroundColor"] = {
-				0.125490196078431, -- [1]
-				0.156862745098039, -- [2]
-				0.125490196078431, -- [3]
+			["backgroundColor"] = {
+				0.0470588235294118, -- [1]
+				0.0470588235294118, -- [2]
+				0.0470588235294118, -- [3]
 				1, -- [4]
 			},
 			["load"] = {
@@ -8354,24 +8355,24 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "CENTER",
+			["foregroundColor"] = {
+				0.125490196078431, -- [1]
+				0.156862745098039, -- [2]
+				0.125490196078431, -- [3]
+				1, -- [4]
+			},
 			["useAdjustededMax"] = false,
 			["textureWrapMode"] = "CLAMP",
 			["crop_x"] = 0.41,
 			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
-			["backgroundColor"] = {
-				0.0470588235294118, -- [1]
-				0.0470588235294118, -- [2]
-				0.0470588235294118, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["useAdjustedMax"] = false,
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
-			["regionType"] = "progresstexture",
 			["crop"] = 0.41,
+			["desaturateForeground"] = false,
 			["blendMode"] = "BLEND",
-			["xOffset"] = 0,
+			["regionType"] = "progresstexture",
 			["uid"] = "PlJa6oQjbhC",
 			["slantMode"] = "INSIDE",
 			["width"] = 40,
@@ -8383,17 +8384,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["color"] = {
-			},
+			["backgroundTexture"] = "450915",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
+			["color"] = {
 			},
 			["orientation"] = "VERTICAL",
 			["conditions"] = {
 			},
-			["desaturateForeground"] = false,
+			["selfPoint"] = "CENTER",
 			["backgroundOffset"] = 0,
 		},
 		["MaelBar BACKUP"] = {
@@ -8551,13 +8551,23 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 				["main"] = {
-					["colorType"] = "custom",
-					["duration_type"] = "seconds",
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["type"] = "custom",
 					["easeType"] = "none",
+					["use_color"] = true,
+					["alpha"] = 0,
+					["colorType"] = "custom",
+					["y"] = 0,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["rotate"] = 0,
 					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local _,_,_,s = UnitBuff(\"player\", 'Maelstrom', nil, \"PLAYER\")\n    \n    if not s then\n        s = 0\n    end\n    \n    if s < 1 then red, green, blue = 1,.1,.1  \n    elseif s < 2 then red, green, blue = 1,.7,.1\n    elseif s < 3 then red, green, blue = 0,1,.1\n    elseif s < 10 then red, green, blue = 1,1,.2\n    elseif s < 12 then red, green, blue = 1,.2,.2\n    end\n    return red,green,blue, 1\nend\n\n\n\n\n",
 					["easeStrength"] = 3,
-					["use_color"] = true,
-					["type"] = "custom",
+					["scaley"] = 1,
+					["colorA"] = 1,
 				},
 				["finish"] = {
 					["duration_type"] = "seconds",
@@ -9472,7 +9482,7 @@ WeakAurasSaved = {
 					["alphaType"] = "alphaPulse",
 					["colorA"] = 1,
 					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
+					["alphaFunc"] = "    function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
 					["use_alpha"] = true,
 					["type"] = "custom",
 					["colorB"] = 0,
@@ -9869,8 +9879,8 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["regionType"] = "group",
-			["internalVersion"] = 33,
-			["yOffset"] = -296.999771118164,
+			["borderOffset"] = 5,
+			["xOffset"] = -0.0001220703125,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -9892,7 +9902,7 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "ZerkinUI Secondary Trackers",
-			["borderOffset"] = 5,
+			["internalVersion"] = 33,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["uid"] = "nnolIU8y(H4",
@@ -9959,7 +9969,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = -0.0001220703125,
+			["yOffset"] = -296.999771118164,
 		},
 		["Rejuvs Bar"] = {
 			["sparkWidth"] = 10,
@@ -10167,7 +10177,7 @@ WeakAurasSaved = {
 					["alphaType"] = "alphaPulse",
 					["colorB"] = 0,
 					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
+					["alphaFunc"] = "    function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
 					["use_alpha"] = true,
 					["type"] = "custom",
 					["duration"] = "10",
@@ -11219,14 +11229,20 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["fontSize"] = 12,
+			["startAngle"] = 0,
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
 			["version"] = 2,
 			["height"] = 40,
-			["selfPoint"] = "CENTER",
-			["crop_y"] = 0.41,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -11285,18 +11301,19 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["anchorPoint"] = "CENTER",
 			["useAdjustededMax"] = false,
 			["textureWrapMode"] = "CLAMP",
 			["crop_x"] = 0.41,
-			["startAngle"] = 0,
 			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
+			["crop_y"] = 0.41,
 			["useAdjustedMax"] = false,
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
-			["crop"] = 0.41,
+			["regionType"] = "progresstexture",
 			["parent"] = "ZerkinUI Secondary Trackers",
 			["blendMode"] = "BLEND",
-			["regionType"] = "progresstexture",
+			["fontSize"] = 12,
 			["uid"] = "rQux7RC4S5Z",
 			["slantMode"] = "INSIDE",
 			["width"] = 40,
@@ -11314,23 +11331,16 @@ WeakAurasSaved = {
 			["backgroundTexture"] = "450915",
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
-			["authorOptions"] = {
-			},
+			["crop"] = 0.41,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["anchorPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["orientation"] = "VERTICAL",
 			["conditions"] = {
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["selfPoint"] = "CENTER",
 			["backgroundOffset"] = 0,
 		},
 		["Unleash Doom BG"] = {
@@ -12087,18 +12097,14 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backgroundTexture"] = "450915",
+			["authorOptions"] = {
+			},
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
 			["version"] = 2,
 			["height"] = 40,
-			["backgroundColor"] = {
-				0.184313725490196, -- [1]
-				0.266666666666667, -- [2]
-				0.494117647058824, -- [3]
-				1, -- [4]
-			},
+			["desaturateForeground"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -12157,19 +12163,29 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "CENTER",
+			["backgroundColor"] = {
+				0.184313725490196, -- [1]
+				0.266666666666667, -- [2]
+				0.494117647058824, -- [3]
+				1, -- [4]
+			},
 			["useAdjustededMax"] = false,
 			["textureWrapMode"] = "CLAMP",
 			["crop_x"] = 0.41,
 			["foregroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura58",
-			["desaturateForeground"] = false,
+			["xOffset"] = 0,
 			["useAdjustedMax"] = false,
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
-			["crop"] = 0.41,
 			["regionType"] = "progresstexture",
+			["foregroundColor"] = {
+				0, -- [1]
+				0.509803921568627, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["blendMode"] = "BLEND",
-			["xOffset"] = 0,
+			["crop"] = 0.41,
 			["uid"] = "S7dL9UVsz6F",
 			["slantMode"] = "INSIDE",
 			["width"] = 40,
@@ -12181,22 +12197,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["color"] = {
-			},
+			["backgroundTexture"] = "450915",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
+			["color"] = {
 			},
 			["orientation"] = "VERTICAL",
 			["conditions"] = {
 			},
-			["foregroundColor"] = {
-				0, -- [1]
-				0.509803921568627, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["backgroundOffset"] = 0,
 		},
 		["bak.Wind Strikes OG"] = {
@@ -13419,7 +13429,7 @@ WeakAurasSaved = {
 					["alphaType"] = "alphaPulse",
 					["colorA"] = 1,
 					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
+					["alphaFunc"] = "    function(progress, start, delta)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return start + (((math.sin(angle) + 1)/2) * delta)\n    end\n  ",
 					["use_alpha"] = true,
 					["type"] = "custom",
 					["colorB"] = 0,
@@ -14573,21 +14583,12 @@ WeakAurasSaved = {
 			["displayText"] = "%p",
 			["yOffset"] = 1,
 			["anchorPoint"] = "CENTER",
-			["glowYOffset"] = 0,
+			["wordWrap"] = "WordWrap",
 			["cooldownSwipe"] = true,
 			["cooldownTextDisabled"] = false,
 			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/QqZFpQSZ4/26",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.blacklist = {}\nfor spellId in string.gmatch(aura_env.config.blacklist,\"%d+\") do\n    aura_env.blacklist[spellId] = true\nend",
-					["do_custom"] = true,
-				},
-			},
+			["cooldownEdge"] = false,
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -14612,31 +14613,12 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["wordWrap"] = "WordWrap",
+			["keepAspectRatio"] = false,
 			["internalVersion"] = 33,
 			["glowXOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
-			["preferToUpdate"] = false,
-			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["useglowColor"] = false,
+			["xOffset"] = -70,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -14744,9 +14726,14 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["height"] = 20,
-			["useglowColor"] = false,
+			["color"] = {
+				0.92549019607843, -- [1]
+				0.87450980392157, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["glowLines"] = 8,
-			["icon"] = true,
+			["url"] = "https://wago.io/QqZFpQSZ4/26",
 			["glowFrequency"] = 0.25,
 			["fontSize"] = 30,
 			["config"] = {
@@ -14754,38 +14741,30 @@ WeakAurasSaved = {
 			},
 			["glowType"] = "buttonOverlay",
 			["glowThickness"] = 1,
-			["parent"] = "Vision - Sanity Tracker",
-			["width"] = 20,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+			},
+			["glowYOffset"] = 0,
 			["frameStrata"] = 1,
 			["regionType"] = "icon",
-			["automaticWidth"] = "Auto",
-			["authorOptions"] = {
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 2,
-					["default"] = "",
-					["name"] = "Blacklist",
-					["key"] = "blacklist",
-					["multiline"] = false,
-					["length"] = 10,
-					["desc"] = "SpellIds seperated by anything but a number.",
-					["useLength"] = false,
-				}, -- [1]
-			},
-			["glowScale"] = 1,
-			["auto"] = true,
-			["justify"] = "LEFT",
-			["color"] = {
-				0.92549019607843, -- [1]
-				0.87450980392157, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0,
-			["semver"] = "1.0.25",
-			["tocversion"] = 80300,
-			["id"] = "Power Gain/Loss",
+			["preferToUpdate"] = false,
 			["load"] = {
 				["use_zoneId"] = true,
 				["zoneId"] = "1470, 1469, 1379, 1570, 1571",
@@ -14805,14 +14784,45 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["alpha"] = 1,
+			["glowScale"] = 1,
+			["auto"] = true,
+			["justify"] = "LEFT",
+			["parent"] = "Vision - Sanity Tracker",
+			["zoom"] = 0,
+			["semver"] = "1.0.25",
+			["tocversion"] = 80300,
+			["id"] = "Power Gain/Loss",
 			["anchorFrameType"] = "SCREEN",
-			["cooldownEdge"] = false,
+			["alpha"] = 1,
+			["width"] = 20,
+			["automaticWidth"] = "Auto",
 			["uid"] = "oTOmGp3SIpf",
 			["inverse"] = false,
-			["xOffset"] = -70,
+			["authorOptions"] = {
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 2,
+					["default"] = "",
+					["name"] = "Blacklist",
+					["key"] = "blacklist",
+					["multiline"] = false,
+					["length"] = 10,
+					["desc"] = "SpellIds seperated by anything but a number.",
+					["useLength"] = false,
+				}, -- [1]
+			},
 			["fixedWidth"] = 200,
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.blacklist = {}\nfor spellId in string.gmatch(aura_env.config.blacklist,\"%d+\") do\n    aura_env.blacklist[spellId] = true\nend",
+					["do_custom"] = true,
+				},
+			},
 			["glowBorder"] = false,
 		},
 		["Frostbrand Bar Inactive 2"] = {
@@ -15507,11 +15517,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["auto"] = true,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["icon_color"] = {
@@ -15672,7 +15684,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 25,
-			["parent"] = "ZerkinUI Warlock",
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -15732,7 +15744,13 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			},
+			["parent"] = "ZerkinUI Warlock",
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -15756,12 +15774,6 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
 			["selfPoint"] = "CENTER",
 			["uid"] = "uJqn4(jw8aa",
 			["useAdjustedMax"] = false,
@@ -15784,7 +15796,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["sparkHidden"] = "NEVER",
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["useAdjustededMax"] = false,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["stickyDuration"] = false,
@@ -15795,15 +15807,13 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
-			["icon"] = true,
+			["borderBackdrop"] = "Blizzard Tooltip",
 		},
 		["Agony"] = {
 			["sparkWidth"] = 10,
@@ -15814,11 +15824,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["auto"] = true,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["icon_color"] = {
@@ -15979,7 +15991,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 25,
-			["parent"] = "ZerkinUI Warlock",
+			["icon"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -16039,7 +16051,13 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			},
+			["parent"] = "ZerkinUI Warlock",
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -16063,12 +16081,6 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
 			["selfPoint"] = "CENTER",
 			["uid"] = "8RmYkT(33VZ",
 			["useAdjustedMax"] = false,
@@ -16091,7 +16103,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["sparkHidden"] = "NEVER",
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["useAdjustededMax"] = false,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["stickyDuration"] = false,
@@ -16102,15 +16114,13 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
-			["icon"] = true,
+			["borderBackdrop"] = "Blizzard Tooltip",
 		},
 	},
 	["login_squelch_time"] = 10,
@@ -16124,10 +16134,10 @@ WeakAurasSaved = {
 	["registered"] = {
 	},
 	["frame"] = {
-		["xOffset"] = -799.498779296875,
+		["xOffset"] = -799.4989013671875,
 		["width"] = 750,
 		["height"] = 492,
-		["yOffset"] = -155.9990234375,
+		["yOffset"] = -155.9991455078125,
 	},
 	["editor_theme"] = "Monokai",
 }

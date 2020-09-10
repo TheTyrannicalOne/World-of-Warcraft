@@ -1,0 +1,749 @@
+﻿==============================================================================
+World of Warcraft: Retail Build (build 35662)
+
+Exe:      D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe
+Command:  "D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe" -launcherlogin -uid wow
+Time:     Sep  4, 2020  9:07:20.325 AM
+User:     rc_ba
+Computer: WIN10PRO-ULT
+------------------------------------------------------------------------------
+
+This application has encountered a critical error:
+
+ERROR #132 (0x85100084) Fatal exception!
+
+Program:	D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe
+ProcessID:	24944
+ThreadID:	16392
+Exception:	ACCESS_VIOLATION
+
+The instruction at "0x00007ffb506cbc6a" referenced memory at "0x00007ffb506cbc6a".
+The memory could not be "executed".
+
+<Exception.IssueType> Exception
+<ExceptionType> Crash
+<Exception.Summary:>
+ACCESS_VIOLATION
+(DBG-OPTIONS<FunctionsOnly SingleLine> DBG-ADDR<00007ffb506cbc6a>("<unknown>") <- DBG-ADDR<0000012c9946df20>("<unknown>") <- DBG-ADDR<0000002527b9de24>("<unknown>") DBG-OPTIONS<>)
+The instruction at "0x00007ffb506cbc6a" referenced memory at "0x00007ffb506cbc6a".
+The memory could not be "executed".
+<:Exception.Summary>
+------------------------------------------------------------------------------
+<Exception.Assertion:>
+DBG-ADDR<00007ffb506cbc6a>("<unknown>")
+DBG-ADDR<0000012c9946df20>("<unknown>")
+DBG-ADDR<00007ff7cff9a609>("Wow.exe")
+DBG-ADDR<00007ff7cff9a608>("Wow.exe")
+DBG-ADDR<0000002527b9d870>("<unknown>")
+DBG-ADDR<0000002527b9daf8>("<unknown>")
+DBG-ADDR<0000000000000001>("<unknown>")
+DBG-ADDR<0000002527b9d5b0>("<unknown>")
+DBG-ADDR<00007ff7ce0b26cc>("Wow.exe")
+DBG-ADDR<0000002527b9d540>("<unknown>")
+DBG-ADDR<0000002527b9db40>("<unknown>")
+DBG-ADDR<0000002527b9d540>("<unknown>")
+DBG-ADDR<0000000000000073>("<unknown>")
+DBG-ADDR<00000720fffffb30>("<unknown>")
+DBG-ADDR<0000000000000001>("<unknown>")
+DBG-ADDR<00000160000000f0>("<unknown>")
+DBG-ADDR<00000002c0000005>("<unknown>")
+DBG-ADDR<00007ff7ceada5d0>("Wow.exe")
+DBG-ADDR<0000000000000002>("<unknown>")
+DBG-ADDR<0000000000001722>("<unknown>")
+DBG-ADDR<00007ff7d00adfa6>("Wow.exe")
+DBG-ADDR<00007ff7cff9a608>("Wow.exe")
+DBG-ADDR<ffffffffffffffff>("<unknown>")
+DBG-ADDR<0000000b00000073>("<unknown>")
+DBG-ADDR<0000ff0000000000>("<unknown>")
+DBG-ADDR<00007ff7ceada5d0>("Wow.exe")
+DBG-ADDR<0000002527b9d720>("<unknown>")
+DBG-ADDR<0000007227b9da40>("<unknown>")
+DBG-ADDR<00000edb732aac2f>("<unknown>")
+DBG-ADDR<0000000000010002>("<unknown>")
+DBG-ADDR<0000002527b9da18>("<unknown>")
+DBG-ADDR<0000002527b9ecc0>("<unknown>")
+DBG-ADDR<00007ffb53435000>("SSPICLI.DLL")
+<:Exception.Assertion>
+<Exception.HashBlock:>
+DBG-OPTIONS<NoImage NoAddress NoFileLine NoFuncOffset NoDbgAddr>
+ERROR #132
+DBG-ADDR<00007ffb506cbc6a>("<unknown>")
+DBG-ADDR<0000012c9946df20>("<unknown>")
+DBG-ADDR<00007ff7cff9ada0>("Wow.exe")
+DBG-ADDR<00007ff7cff9ad98>("Wow.exe")
+DBG-ADDR<0000002527b9d870>("<unknown>")
+DBG-OPTIONS<>
+<:Exception.HashBlock>
+------------------------------------------------------------------------------
+<Version> 8.3.7.35662
+<Config> Retail
+Revision: 1019869
+<Jira.JiraProjectId> 10900
+<Jira.JiraProjectKey> WOW8
+<Exception.ProjectId> 10
+<Exception.BuildNumber> 35662
+<Exception.Branch> 8.3.7
+<WowProject> Mainline
+<Application> World of Warcraft
+<ApplicationType> Client
+Type: WoW
+<Executable> Wow.exe
+Executable UUID: E6E9462B-6C69-4E1B-9B8F-37A6F6F98485
+<Wow.Platform> X64
+<Exception.Platform> Win 10 (64-bit)
+User: rc_ba
+Computer: WIN10PRO-ULT
+Virtual Memory: 0.00 MB
+Free Disk Space: 64.35 GB
+Exe Built: Aug 24 2020 15:39:42
+<InitFlags> 0000007F 00001FFF 00001C00
+App Up Time: 0 days, 1 hours, 32 minutes, 11 seconds
+System Up Time: 0 days, 2 hours, 1 minutes, 2 seconds
+<TimingMethod> QueryPerformanceCounter
+Current Frame: 398878
+Current Time: 7246421
+Current Tick: 21
+<SystemResumes> 0
+<CharLogins> 2
+Number of thread pool threads (Total): 27
+<LauncherName> Battle.net.exe
+<Locale.Text> enUS
+<Locale.Audio> enUS
+Session Time(hh:mm:ss): 01:31:49
+<SessionTime.Grouping> 01:00:00 - 01:59:59
+Time in World(hh:mm:ss): 00:00:00
+<TimeInWorld.Grouping> 00:00:00 - 00:00:00
+Total Time in World(hh:mm:ss): 00:00:00
+<TotalTimeInWorld.Grouping> 00:00:00 - 00:00:00
+<Set.Addons.All.Unloaded> AceGUI-3.0_SFX-Widgets
+<Set.Addons.All.Unloaded> AchievementsReminder
+<Set.Addons.All.Unloaded> AckisRecipeList
+<Set.Addons.All.Unloaded> AckisRecipeList_Alchemy
+<Set.Addons.All.Unloaded> AckisRecipeList_Blacksmithing
+<Set.Addons.All.Unloaded> AckisRecipeList_Cooking
+<Set.Addons.All.Unloaded> AckisRecipeList_Enchanting
+<Set.Addons.All.Unloaded> AckisRecipeList_Engineering
+<Set.Addons.All.Unloaded> AckisRecipeList_Inscription
+<Set.Addons.All.Unloaded> AckisRecipeList_Jewelcrafting
+<Set.Addons.All.Unloaded> AckisRecipeList_Leatherworking
+<Set.Addons.All.Unloaded> AckisRecipeList_Mining
+<Set.Addons.All.Unloaded> AckisRecipeList_Tailoring
+<Set.Addons.All.Unloaded> ActionBarProfiles
+<Set.Addons.All.Unloaded> ACP
+<Set.Addons.All.Unloaded> AdventureGuideLockouts
+<Set.Addons.All.Unloaded> AllTheThings
+<Set.Addons.All.Unloaded> AngryWorldQuests
+<Set.Addons.All.Unloaded> AzeritePowerWeights
+<Set.Addons.All.Unloaded> AzeriteTooltip
+<Set.Addons.All.Unloaded> hqAzerothAtWar
+<Set.Addons.All.Unloaded> AAP-Core
+<Set.Addons.All.Unloaded> AAP-Vanilla
+<Set.Addons.All.Unloaded> AAP-TBC-WotLK
+<Set.Addons.All.Unloaded> AAP-Cata-MoP
+<Set.Addons.All.Unloaded> AAP-WoD
+<Set.Addons.All.Unloaded> AAP-Legion
+<Set.Addons.All.Unloaded> AAP-BfA
+<Set.Addons.All.Unloaded> Azeroth Auto Pilot
+<Set.Addons.All.Unloaded> BattlePetBattleStats
+<Set.Addons.All.Unloaded> BattlePetBreedID
+<Set.Addons.All.Unloaded> BetterBattlePetTooltip
+<Set.Addons.All.Unloaded> BFAInvasionTimer
+<Set.Addons.All.Unloaded> BFAInvasionTimer_Options
+<Set.Addons.All.Unloaded> BigWigs
+<Set.Addons.All.Unloaded> BigWigs_Azeroth
+<Set.Addons.All.Unloaded> BigWigs_BattleOfDazaralor
+<Set.Addons.All.Unloaded> BigWigs_BurningCrusade
+<Set.Addons.All.Unloaded> BigWigs_CastleNathria
+<Set.Addons.All.Unloaded> BigWigs_Cataclysm
+<Set.Addons.All.Unloaded> BigWigs_Classic
+<Set.Addons.All.Unloaded> BigWigs_Core
+<Set.Addons.All.Unloaded> BigWigs_CrucibleOfStorms
+<Set.Addons.All.Unloaded> BigWigs_Legion
+<Set.Addons.All.Unloaded> BigWigs_MistsOfPandaria
+<Set.Addons.All.Unloaded> BigWigs_Nyalotha
+<Set.Addons.All.Unloaded> BigWigs_Options
+<Set.Addons.All.Unloaded> BigWigs_Plugins
+<Set.Addons.All.Unloaded> BigWigs_EternalPalace
+<Set.Addons.All.Unloaded> BigWigs_Uldir
+<Set.Addons.All.Unloaded> BigWigs_WarlordsOfDraenor
+<Set.Addons.All.Unloaded> BigWigs_WrathOfTheLichKing
+<Set.Addons.All.Unloaded> BigWigs_CommonAuras
+<Set.Addons.All.Unloaded> BigWigs_Voice_Arnold
+<Set.Addons.All.Unloaded> BonusRollPreview
+<Set.Addons.All.Unloaded> BtWQuests
+<Set.Addons.All.Unloaded> BtWQuestsBattleForAzeroth
+<Set.Addons.All.Unloaded> BtWQuestsBattleForAzerothPrologue
+<Set.Addons.All.Unloaded> BtWQuestsClassic
+<Set.Addons.All.Unloaded> BtWQuestsLegion
+<Set.Addons.All.Unloaded> BuyEmAll
+<Set.Addons.All.Unloaded> CanIMogIt
+<Set.Addons.All.Unloaded> ChampionCommander
+<Set.Addons.All.Unloaded> Clique
+<Set.Addons.All.Unloaded> CritterEmote
+<Set.Addons.All.Unloaded> DeathNote
+<Set.Addons.All.Unloaded> DerangementMinimapBlips
+<Set.Addons.All.Unloaded> DerangementShieldMeters
+<Set.Addons.All.Unloaded> DialogKey
+<Set.Addons.All.Unloaded> EasyScrap
+<Set.Addons.All.Unloaded> EasyDeleteConfirm
+<Set.Addons.All.Unloaded> FishingBuddy
+<Set.Addons.All.Unloaded> FB_TrackingFrame
+<Set.Addons.All.Unloaded> GarrisonMissionManager
+<Set.Addons.All.Unloaded> GatherMate2
+<Set.Addons.All.Unloaded> Grail
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-deDE
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-enUS
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-esES
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-esMX
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-frFR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-itIT
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-koKR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-ptBR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-ruRU
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-zhCN
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-zhTW
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-deDE
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-enUS
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-esES
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-esMX
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-frFR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-itIT
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-koKR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-ptBR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-ruRU
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-zhCN
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-zhTW
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-deDE
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-enUS
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-esES
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-esMX
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-frFR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-itIT
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-koKR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-ptBR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-ruRU
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-zhCN
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-zhTW
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-deDE
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-enUS
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-esES
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-esMX
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-frFR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-itIT
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-koKR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-ptBR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-ruRU
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-zhCN
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-zhTW
+<Set.Addons.All.Unloaded> Grail-Reputations-_retail_
+<Set.Addons.All.Unloaded> Grail-Reputations-_classic_
+<Set.Addons.All.Unloaded> Grail-Achievements
+<Set.Addons.All.Unloaded> Grail-Rewards
+<Set.Addons.All.Unloaded> Grail-When
+<Set.Addons.All.Unloaded> GTFO
+<Set.Addons.All.Unloaded> HHTD
+<Set.Addons.All.Unloaded> HandyNotes
+<Set.Addons.All.Unloaded> HandyNotes_Argus
+<Set.Addons.All.Unloaded> HandyNotes_BrokenShore
+<Set.Addons.All.Unloaded> HandyNotes_Achievements
+<Set.Addons.All.Unloaded> HandyNotes_BattleForAzerothTreasures
+<Set.Addons.All.Unloaded> HandyNotes_FieldPhotographer
+<Set.Addons.All.Unloaded> HandyNotes_MechagonAndNazjatar
+<Set.Addons.All.Unloaded> HandyNotes_VisionsOfNZoth
+<Set.Addons.All.Unloaded> HandyNotes_WarfrontTreasures
+<Set.Addons.All.Unloaded> HandyNotes_AzerothsTopTunes
+<Set.Addons.All.Unloaded> HandyNotes_DraenorTreasures
+<Set.Addons.All.Unloaded> HandyNotes_DungeonLocations
+<Set.Addons.All.Unloaded> HandyNotes_HallowsEnd
+<Set.Addons.All.Unloaded> HandyNotes_LegionRaresTreasures
+<Set.Addons.All.Unloaded> HandyNotes_LegionTreasures
+<Set.Addons.All.Unloaded> HandyNotes_LunarFestival
+<Set.Addons.All.Unloaded> HandyNotes_SummerFestival
+<Set.Addons.All.Unloaded> HandyNotes_TimelessIsle_RareElites
+<Set.Addons.All.Unloaded> HandyNotes_TimelessIsleChests
+<Set.Addons.All.Unloaded> HandyNotes_TimelessTreasures
+<Set.Addons.All.Unloaded> HandyNotes_WarfrontRares
+<Set.Addons.All.Unloaded> Hekili
+<Set.Addons.All.Unloaded> Immersion
+<Set.Addons.All.Unloaded> !KalielsTracker
+<Set.Addons.All.Unloaded> Kib_QuestMobs
+<Set.Addons.All.Unloaded> Leatrix_Plus
+<Set.Addons.All.Unloaded> LegionWardrobe
+<Set.Addons.All.Unloaded> LegionWardrobeData
+<Set.Addons.All.Unloaded> LegionInvasionTimer
+<Set.Addons.All.Unloaded> LegionInvasionTimer_Options
+<Set.Addons.All.Unloaded> Ace3
+<Set.Addons.All.Unloaded> LibPetJournal-2.0
+<Set.Addons.All.Unloaded> LittleWigs
+<Set.Addons.All.Unloaded> MacroToolkit
+<Set.Addons.All.Unloaded> MacroToolkitIcons
+<Set.Addons.All.Unloaded> Masque
+<Set.Addons.All.Unloaded> MasterPlan
+<Set.Addons.All.Unloaded> MasterPlanA
+<Set.Addons.All.Unloaded> MikScrollingBattleText
+<Set.Addons.All.Unloaded> MBB
+<Set.Addons.All.Unloaded> mOnArs_WardrobeHelper
+<Set.Addons.All.Unloaded> MountJournalEnhanced
+<Set.Addons.All.Unloaded> MoveAnything
+<Set.Addons.All.Unloaded> MSBTOptions
+<Set.Addons.All.Unloaded> MyMountspecial
+<Set.Addons.All.Unloaded> NomiCakes
+<Set.Addons.All.Unloaded> NPCScan
+<Set.Addons.All.Unloaded> Omen
+<Set.Addons.All.Unloaded> OmniCC
+<Set.Addons.All.Unloaded> OmniCC_Config
+<Set.Addons.All.Unloaded> OPie
+<Set.Addons.All.Unloaded> OPieMasque
+<Set.Addons.All.Unloaded> OrderHallCommander
+<Set.Addons.All.Unloaded> Overachiever
+<Set.Addons.All.Unloaded> Overachiever_Cache
+<Set.Addons.All.Unloaded> Overachiever_Tabs
+<Set.Addons.All.Unloaded> Overachiever_Trade
+<Set.Addons.All.Unloaded> Paste
+<Set.Addons.All.Unloaded> Pawn
+<Set.Addons.All.Unloaded> PersonalLootHelper
+<Set.Addons.All.Unloaded> PetEmote
+<Set.Addons.All.Unloaded> PetTracker
+<Set.Addons.All.Unloaded> PetTracker_Battle
+<Set.Addons.All.Unloaded> PetTracker_Config
+<Set.Addons.All.Unloaded> PetTracker_Journal
+<Set.Addons.All.Unloaded> QuestTogether
+<Set.Addons.All.Unloaded> RandomHearthToy
+<Set.Addons.All.Unloaded> RareShare
+<Set.Addons.All.Unloaded> RareShare_Uldum
+<Set.Addons.All.Unloaded> RareShareNazjatar
+<Set.Addons.All.Unloaded> RareShare_Vale of Eternal Blossoms
+<Set.Addons.All.Unloaded> RareShareMechagon
+<Set.Addons.All.Unloaded> RareScanner
+<Set.Addons.All.Unloaded> Rarity
+<Set.Addons.All.Unloaded> Rarity_Options
+<Set.Addons.All.Unloaded> RCLootCouncil
+<Set.Addons.All.Unloaded> Rematch
+<Set.Addons.All.Unloaded> Rematch_TSMPetValues
+<Set.Addons.All.Unloaded> RematchElvUISkin
+<Set.Addons.All.Unloaded> Skada
+<Set.Addons.All.Unloaded> Spy
+<Set.Addons.All.Unloaded> TargetNameplateIndicator
+<Set.Addons.All.Unloaded> TransmogTokens
+<Set.Addons.All.Unloaded> WarfrontRareTracker
+<Set.Addons.All.Unloaded> WeakAuras
+<Set.Addons.All.Unloaded> WeakAurasArchive
+<Set.Addons.All.Unloaded> WeakAurasModelPaths
+<Set.Addons.All.Unloaded> WeakAurasOptions
+<Set.Addons.All.Unloaded> WeakAurasTemplates
+<Set.Addons.All.Unloaded> WhisperInvite
+<Set.Addons.All.Unloaded> WhisperInviteAdvanced
+<Set.Addons.All.Unloaded> WhisperInviteBasic
+<Set.Addons.All.Unloaded> Wholly
+<Set.Addons.All.Unloaded> WoWDBProfiler
+<Set.Addons.All.Unloaded> WoWGatheringNodes
+<Set.Addons.All.Unloaded> XLoot
+<Set.Addons.All.Unloaded> XLoot_Frame
+<Set.Addons.All.Unloaded> XLoot_Group
+<Set.Addons.All.Unloaded> XLoot_Master
+<Set.Addons.All.Unloaded> XLoot_Monitor
+<Set.Addons.All.Unloaded> XLoot_Options
+<Set.Addons.All.Unloaded> ParagonReputation
+<Set.Addons.All.Unloaded> DejaCharacterStats
+<Set.Addons.All.Unloaded> TradeSkillMaster
+<Set.Addons.All.Unloaded> PetBattleFFVictory
+<Set.Addons.All.Unloaded> TradeSkillMaster_AppHelper
+<Set.Addons.All.Unloaded> ElvUI
+<Set.Addons.All.Unloaded> ElvUI_OptionsUI
+<Set.Addons.All.Unloaded> ElvUI_SLE
+<Set.Addons.All.Unloaded> ElvUI_CliqueDatatext
+<Set.Addons.All.Unloaded> Narcissus
+<Set.Addons.All.Unloaded> Narcissus_Database
+<Addons.HasAny.Loading> No
+<Addons.HasAny.Loaded> No
+<UIReloads> 0
+<LuaErrors> 0
+<BGDLEnabled> No
+<IME.Current> "", {00000000-0000-0000-0000000000000000}, inactive
+<SoundSystem.Restarts> 0
+<LoadingScreen.Enabled> No
+<CombatLogEntry.Current> CombatLogEntry::PushEvent(casterGuidType, targetGuidType): 2, 0
+Number of successful WoWConnections: 36
+<Realm.Name> Dalaran
+<Realm.IP> [2a04:e800:5020:1873:f816:4bff:fe1d:1c10]:3724
+<Realm.Version> 8.3.7.35114
+<Realm.Flags> 0xA0
+Battle Tag: n/a
+Last Known Player: Player-3683-0C0E386E, (1527, 3673.48, 4869.43, 681.547)
+Selected Player: Player-3683-0C0E386E
+
+CVar Settings: 
+<CVar.portal> US
+<CVar.textLocale> enUS
+<CVar.audioLocale> enUS
+<CVar.agentUID> wow
+<CVar.hwDetect> 0
+<CVar.videoOptionsVersion> 22
+<CVar.gxApi> D3D11
+<CVar.gxMaximize> 1
+<CVar.farclip> 8000.000000
+<CVar.horizonStart> 2400.000000
+<CVar.particleMTDensity> 100.000000
+<CVar.waterDetail> 3.000000
+<CVar.rippleDetail> 2.000000
+<CVar.reflectionMode> 3.000000
+<CVar.sunShafts> 2.000000
+<CVar.refraction> 2.000000
+<CVar.groundEffectDensity> 128.000000
+<CVar.groundEffectDist> 260.000000
+<CVar.volumeFogLevel> 3.000000
+<CVar.projectedTextures> 1.000000
+<CVar.shadowMode> 3.000000
+<CVar.shadowTextureSize> 2048.000000
+<CVar.shadowSoft> 1.000000
+<CVar.SSAO> 4.000000
+<CVar.DepthBasedOpacity> 1.000000
+<CVar.textureFilteringMode> 5.000000
+<CVar.terrainLodDist> 600.000000
+<CVar.wmoLodDist> 400.000000
+<CVar.entityLodDist> 10.000000
+<CVar.entityShadowFadeScale> 30.000000
+<CVar.terrainMipLevel> 0.000000
+<CVar.worldBaseMip> 0.000000
+<CVar.OutlineEngineMode> 2.000000
+<CVar.lodObjectCullSize> 19.000000
+<CVar.lodObjectCullDist> 30.000000
+<CVar.lodObjectMinSize> 0.000000
+<CVar.lodObjectFadeScale> 90.000000
+<CVar.RAIDfarclip> 5000.000000
+<CVar.RAIDWaterDetail> 1.000000
+<CVar.RAIDSSAO> 1.000000
+<CVar.RAIDDepthBasedOpacity> 1.000000
+<CVar.RAIDgroundEffectDensity> 40.000000
+<CVar.RAIDgroundEffectDist> 110.000000
+<CVar.RAIDshadowMode> 0.000000
+<CVar.RAIDterrainLodDist> 350.000000
+<CVar.RAIDwmoLodDist> 300.000000
+<CVar.RAIDhorizonStart> 1000.000000
+<CVar.RAIDentityLodDist> 7.000000
+<CVar.RAIDentityShadowFadeScale> 15.000000
+<CVar.RAIDterrainMipLevel> 1.000000
+<CVar.RAIDworldBaseMip> 1.000000
+<CVar.RAIDtextureFilteringMode> 3.000000
+<CVar.RAIDprojectedTextures> 0.000000
+<CVar.RAIDshadowTextureSize> 1024.000000
+<CVar.RAIDshadowSoft> 0.000000
+<CVar.RAIDreflectionMode> 0.000000
+<CVar.RAIDrippleDetail> 0.000000
+<CVar.RAIDsunShafts> 0.000000
+<CVar.RAIDparticleDensity> 50.000000
+<CVar.RAIDparticleMTDensity> 70.000000
+<CVar.RAIDrefraction> 0.000000
+<CVar.RAIDOutlineEngineMode> 1.000000
+<CVar.RAIDVolumeFogLevel> 1.000000
+<CVar.RAIDlodObjectCullSize> 22.000000
+<CVar.RAIDlodObjectCullDist> 30.000000
+<CVar.RAIDlodObjectMinSize> 0.000000
+<CVar.RAIDlodObjectFadeScale> 80.000000
+<CVar.componentTextureLevel> 0.000000
+<CVar.RAIDcomponentTextureLevel> 1.000000
+<CVar.weatherDensity> 3
+<CVar.RAIDweatherDensity> 3
+<CVar.graphicsTextureResolution> 3
+<CVar.graphicsTextureFiltering> 6
+<CVar.graphicsViewDistance> 8
+<CVar.graphicsGroundClutter> 8
+<CVar.graphicsSSAO> 5
+<CVar.raidGraphicsTextureResolution> 2
+<CVar.raidGraphicsViewDistance> 4
+<CVar.raidGraphicsEnvironmentDetail> 4
+<CVar.raidGraphicsGroundClutter> 4
+<CVar.raidGraphicsShadowQuality> 2
+<CVar.raidGraphicsParticleDensity> 3
+<CVar.raidGraphicsDepthEffects> 2
+<CVar.raidGraphicsOutlineMode> 2
+<CVar.playIntroMovie> 8
+<CVar.expandUpgradePanel> 0
+<CVar.seenAlliedRaceUnlocks> A@@@|{A
+<CVar.Sound_MusicVolume> 0.40000000596046
+<CVar.Sound_AmbienceVolume> 0.60000002384186
+<CVar.MSAAQuality> 3,0
+<CVar.ResampleQuality> 1
+<CVar.gxWindowedResolution> 2560x1440
+<CVar.maxFPS> 0
+<CVar.RenderScale> 1.6
+<CVar.engineSurvey> 8
+<CVar.mouseSpeed> 1
+<CVar.gameTip> 3
+<CVar.twitterGetConfigTime> 1599161982460
+<CVar.CACHE-WQST-QuestV2RecordCount> 40089
+<CVar.CACHE-WQST-QuestV2HotfixCount> 0
+<CVar.CACHE-WQST-QuestObjectiveRecordCount> 40493
+<CVar.CACHE-WQST-QuestObjectiveHotfixCount> 0
+<CVar.CACHE-WQST-QuestObjectiveXEffectRecordCount> 14357
+<CVar.CACHE-WQST-QuestObjectiveXEffectHotfixCount> 0
+<CVar.CACHE-WGOB-GameObjectsRecordCount> 85721
+<CVar.CACHE-WGOB-GameObjectsHotfixCount> 0
+<CVar.screenshotQuality> 10
+<CVar.VoiceChatMasterVolumeScale> 1.000000
+<CVar.checkAddonVersion> 0
+<CVar.lastAddonVersion> 80300
+<CVar.spellEffectLevel> 125
+<CVar.useIPv6> 1
+<CVar.maxFPSBk> 0
+<CVar.gxAdapter> NVIDIA GeForce RTX 2080 Ti
+<CVar.physicsLevel> 2
+<CVar.RAIDsettingsEnabled> 1
+<CVar.Sound_OutputDriverName> Speakers (THX Spatial - Synapse)
+<CVar.raidOrBattleCount> 30
+<CVar.graphicsParticleDensity> 5
+<CVar.graphicsQuality> 8
+<CVar.graphicsShadowQuality> 6
+<CVar.Sound_MasterVolume> 1
+<CVar.Sound_SFXVolume> 1
+<CVar.Sound_DialogVolume> 0.80000001192093
+<CVar.Sound_OutputDriverIndex> 1
+<CVar.particleDensity> 100.000000
+<CVar.lastCharacterIndex> 1
+
+----------------------------------------
+Installation settings:
+----------------------------------------
+UID:  wow
+Expansion Level: 7
+PTR: 0
+Beta: 0
+ProductCode: 'WoW'
+
+----------------------------------------
+               GxInfo
+----------------------------------------
+No GX Device Created
+Desktop Display List:
+Device Name: \\.\DISPLAY1
+Device String: NVIDIA GeForce RTX 2080 Ti
+State Flags: 0x00080005
+Device ID: PCI\VEN_10DE&DEV_1E07&SUBSYS_37151462&REV_A1
+
+Device Name: \\.\DISPLAY2
+Device String: NVIDIA GeForce RTX 2080 Ti
+State Flags: 0x00080001
+Device ID: PCI\VEN_10DE&DEV_1E07&SUBSYS_37151462&REV_A1
+
+<GxRestarts> 0
+<GxFailedFrameStartRestarts> 0
+<GxDeviceLostCount> 0
+<BlacklistedDriverWarningShown> No
+
+----------------------------------------
+Streaming diagnostics (Errors):
+----------------------------------------
+[20200904T07:35:11] {3f2c} ERR: .. is the leading path component: ../.build.info
+[20200904T07:35:11] {3f2c} ERR: path normalization failed: ../.build.info
+----------------------------------------
+
+Streaming Errors Count: 0
+<Streaming.Errors> No
+
+----------------------------------------
+Streaming diagnostics (Info):
+----------------------------------------
+[20200904T07:35:11] {6298} INF: adding network address 137.221.64.4:443 for server https://us.cdn.blizzard.com/
+[20200904T07:35:11] {6298} INF: adding network address 137.221.64.1:443 for server https://us.cdn.blizzard.com/
+[20200904T07:35:11] {6298} INF: adding network address 137.221.64.7:443 for server https://us.cdn.blizzard.com/
+[20200904T07:35:11] {6298} INF: adding network address 137.221.64.5:443 for server https://us.cdn.blizzard.com/
+[20200904T07:35:11] {6298} INF: adding network address 137.221.64.8:443 for server https://us.cdn.blizzard.com/
+[20200904T07:35:11] {6298} INF: adding network address 137.221.64.2:443 for server https://us.cdn.blizzard.com/
+[20200904T07:35:11] {6298} INF: adding network address 137.221.64.6:443 for server https://us.cdn.blizzard.com/
+[20200904T07:35:11] {6298} INF: NameResolutionComplete numServers 5 numHosts 26
+[20200904T07:35:11] {3f2c} INF: initializing LRU status
+[20200904T07:35:11] {3f2c} INF: Initialization step - FETCHING_CDN_CONFIG
+[20200904T07:35:11] {3f2c} INF: Initialization step - FETCHING_BUILD_CONFIG
+[20200904T07:35:11] {3f2c} INF: Initialization step - FETCHING_PATCH_CONFIG
+[20200904T07:35:11] {3f2c} INF: Prepatch
+[20200904T07:35:11] {3f2c} INF: Prepatch done
+[20200904T07:40:12] {6298} INF: adding network address 8.252.16.126:80 for server http://level3.blizzard.com/
+[20200904T07:40:12] {6298} INF: adding network address 8.240.114.126:80 for server http://level3.blizzard.com/
+[20200904T07:40:12] {6298} INF: adding network address 8.240.176.126:80 for server http://level3.blizzard.com/
+[20200904T07:40:12] {6298} INF: adding network address 8.252.166.139:443 for server https://level3.ssl.blizzard.com/
+[20200904T07:40:12] {6298} INF: adding network address 67.24.74.30:443 for server https://level3.ssl.blizzard.com/
+[20200904T07:45:13] {6298} INF: adding network address 8.252.88.254:80 for server http://level3.blizzard.com/
+[20200904T07:45:13] {6298} INF: adding network address 8.240.140.126:80 for server http://level3.blizzard.com/
+[20200904T07:45:13] {6298} INF: adding network address 8.240.64.254:80 for server http://level3.blizzard.com/
+[20200904T07:50:14] {6298} INF: adding network address 8.240.1.254:80 for server http://level3.blizzard.com/
+[20200904T07:50:14] {6298} INF: adding network address 8.252.167.126:80 for server http://level3.blizzard.com/
+[20200904T07:50:14] {6298} INF: adding network address 8.252.166.254:80 for server http://level3.blizzard.com/
+[20200904T07:50:14] {6298} INF: adding network address 8.252.166.126:80 for server http://level3.blizzard.com/
+[20200904T07:55:15] {6298} INF: adding network address 8.252.88.126:80 for server http://level3.blizzard.com/
+[20200904T07:55:15] {6298} INF: adding network address 67.24.81.254:80 for server http://level3.blizzard.com/
+[20200904T07:55:16] {6298} INF: adding network address 67.24.72.30:443 for server https://level3.ssl.blizzard.com/
+[20200904T08:05:18] {6298} INF: adding network address 8.252.85.254:80 for server http://level3.blizzard.com/
+[20200904T08:10:19] {6298} INF: adding network address 67.24.75.254:80 for server http://level3.blizzard.com/
+[20200904T08:15:20] {6298} INF: adding network address 8.240.2.254:80 for server http://level3.blizzard.com/
+[20200904T08:15:20] {6298} INF: adding network address 8.252.168.254:80 for server http://level3.blizzard.com/
+[20200904T08:20:21] {6298} INF: adding network address 23.47.52.58:443 for server https://blzddist1-a.akamaihd.net/
+[20200904T08:20:21] {6298} INF: adding network address 23.47.52.60:443 for server https://blzddist1-a.akamaihd.net/
+[20200904T08:25:22] {6298} INF: adding network address 23.47.52.216:443 for server https://blzddist1-a.akamaihd.net/
+[20200904T08:25:22] {6298} INF: adding network address 23.47.52.209:443 for server https://blzddist1-a.akamaihd.net/
+[20200904T09:00:30] {6298} INF: adding network address 23.47.52.5:443 for server https://blzddist1-a.akamaihd.net/
+[20200904T09:00:30] {6298} INF: adding network address 23.47.52.17:443 for server https://blzddist1-a.akamaihd.net/
+----------------------------------------
+
+Locally overridden files
+ -12631 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\tcllogo.gif
+ -12463 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\be.msg
+ -12403 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp949.enc
+ -12423 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-2.enc
+ -12723 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\defaults.tcl
+ -12700 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\pt.msg
+ -12448 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macUkraine.enc
+ -12516 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr.msg
+ -12480 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_ie.msg
+ -12704 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\optMenu.tcl
+ -12618 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\hscale.tcl
+ -12596 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\anilabel.tcl
+ -12762 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041120_015005.jpg
+ -12406 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\ebcdic.enc
+ -12457 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\af_za.msg
+ -12592 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\choosedir.tcl
+ -12730 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\scale.tcl
+ -12720 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\classicTheme.tcl
+ -12568 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sv.msg
+ -12433 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\jis0212.enc
+ -12609 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\dialog2.tcl
+ -12386 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp737.enc
+ -12422 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-16.enc
+ -12548 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\mr.msg
+ -12593 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\clrpick.tcl
+ -12608 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\dialog1.tcl
+ -12778 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180856.jpg
+ -12370 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\select.pyd
+ -12801 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_070919_215344.jpg
+ -12517 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr_be.msg
+ -12640 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\menubu.tcl
+ -12814 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091518_231732.jpg
+ -12452 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\history.tcl
+     -8 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-11 14.13.02 Crash - 12152.txt
+ -12613 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\entry3.tcl
+ -12459 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar_in.msg
+ -12799 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_062120_191833.jpg
+ -12461 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar_lb.msg
+ -12692 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\en_gb.msg
+ -12600 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\bitmap.tcl
+ -12611 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\entry1.tcl
+ -12688 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\da.msg
+ -12482 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_nz.msg
+ -12521 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ga_ie.msg
+ -12551 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ms_my.msg
+ -12789 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051820_001619.jpg
+ -12580 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\zh_hk.msg
+ -12569 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sw.msg
+ -12442 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macIceland.enc
+ -12626 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\flagup.xbm
+ -12617 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\goldberg.tcl
+ -12561 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ru.msg
+ -12728 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\panedwindow.tcl
+ -12775 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180616.jpg
+ -12543 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\kw.msg
+ -12628 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\letters.xbm
+ -12492 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_co.msg
+ -12681 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\tai-ku.gif
+ -12724 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\entry.tcl
+ -12702 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\sv.msg
+ -12741 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\_ctypes.pyd
+ -12685 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\mkpsenc.tcl
+ -12510 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fa.msg
+ -12458 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar.msg
+ -12753 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_030120_012213.jpg
+ -12377 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1251.enc
+ -12519 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr_ch.msg
+ -12673 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\logoLarge.gif
+ -12667 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\dialog.tcl
+ -12477 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_ca.msg
+ -12447 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macTurkish.enc
+ -12643 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\paned1.tcl
+ -12650 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\sayings.tcl
+ -12821 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_120218_200756.jpg
+ -12533 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\is.msg
+ -12625 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\flagdown.xbm
+ -12591 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\button.tcl
+ -12405 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\dingbats.enc
+ -12635 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\label.tcl
+ -12664 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\twind.tcl
+ -12387 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp775.enc
+ -12639 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\menu.tcl
+ -12404 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp950.enc
+ -12623 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\earthris.gif
+ -12623 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\earthris.gif
+ -12404 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp950.enc
+ -12639 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\menu.tcl
+ -12387 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp775.enc
+ -12664 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\twind.tcl
+ -12635 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\label.tcl
+ -12405 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\dingbats.enc
+ -12591 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\button.tcl
+ -12625 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\flagdown.xbm
+ -12533 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\is.msg
+ -12821 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_120218_200756.jpg
+ -12650 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\sayings.tcl
+ -12643 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\paned1.tcl
+ -12447 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macTurkish.enc
+ -12477 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_ca.msg
+ -12667 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\dialog.tcl
+ -12673 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\logoLarge.gif
+ -12519 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr_ch.msg
+ -12377 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1251.enc
+ -12753 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_030120_012213.jpg
+ -12458 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar.msg
+ -12510 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fa.msg
+ -12685 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\mkpsenc.tcl
+ -12741 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\_ctypes.pyd
+ -12702 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\sv.msg
+ -12724 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\entry.tcl
+ -12681 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\tai-ku.gif
+ -12492 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_co.msg
+ -12628 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\letters.xbm
+ -12543 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\kw.msg
+ -12775 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180616.jpg
+ -12728 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\panedwindow.tcl
+ -12561 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ru.msg
+ -12617 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\goldberg.tcl
+ -12626 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\flagup.xbm
+ -12442 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macIceland.enc
+ -12569 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sw.msg
+ -12580 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\zh_hk.msg
+ -12789 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051820_001619.jpg
+ -12551 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ms_my.msg
+ -12521 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ga_ie.msg
+ -12482 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_nz.msg
+ -12688 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\da.msg
+ -12611 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\entry1.tcl
+ -12600 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\bitmap.tcl
+ -12692 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\en_gb.msg
+ -12461 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar_lb.msg
+ -12799 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_062120_191833.jpg
+ -12459 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar_in.msg
+ -12613 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\entry3.tcl
+     -8 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-11 14.13.02 Crash - 12152.txt
+ -12452 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\history.tcl
+ -12814 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091518_231732.jpg
+ -12640 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\menubu.tcl
+ -12517 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr_be.msg
+ -12801 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_070919_215344.jpg
+ -12370 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\select.pyd
+ -12778 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180856.jpg
+ -12608 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\dialog1.tcl
+ -12593 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\clrpick.tcl
+ -12548 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\mr.msg
+ -12422 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-16.enc
+ -12386 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp737.enc
+ -12609 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\dialog2.tcl
+ -12433 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\jis0212.enc
+ -12568 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sv.msg
+ -12720 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\classicTheme.tcl
+ -12730 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\scale.tcl
+ -12592 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\choosedir.tcl
+ -12457 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\af_za.msg
+ -12406 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\ebcdic.enc
+ -12762 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041120_015005.jpg
+ -12596 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\anilabel.tcl
+ -12618 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\hscale.tcl

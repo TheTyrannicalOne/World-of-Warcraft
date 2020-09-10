@@ -25,358 +25,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"make america great again, again", -- [1]
-			"Vezania-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vezania-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			97, -- [11]
-			"Player-3683-0B55A3C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Vezania|r",
-			[51] = 1598133894,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"- BATTLE FOR NAZJATAR LIVE! - NEW 445-460 CONQUEST PVP GEAR! LISTED: RUIN BATTLE FOR NAZJATAR - Custom PVP Group Finder - Discord: https://discord.gg/ruin - Honor - Conquest - MANAPEARLS FOR ALL -Achievements: https://twitch.tv/RuinTV", -- [1]
-			"Arconsolon-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Arconsolon-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			101, -- [11]
-			"Player-3683-0AE71CD7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeArconsolon|r",
-			[51] = 1598133897,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"hi guys", -- [1]
-			"Chippemonk-Dalaran", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Chippemonk-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			137, -- [11]
-			"Player-3683-0C241EAC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe95Chippemonk|r",
-			[51] = 1598133923,
-			[50] = "CHAT_MSG_YELL",
-		}, -- [3]
-		{
-			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
-			"Forejanep-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Forejanep-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			78, -- [11]
-			"Player-3683-0C2804E9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cForejanep|r",
-			[51] = 1598271681,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"<Brunch> Join us for bottomless mimosas! We're a casual guild building up for next xpac. Cheers!", -- [1]
-			"Conventional-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Conventional-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			82, -- [11]
-			"Player-3683-0A62C984", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Conventional|r",
-			[51] = 1598271763,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [5]
-		{
-			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
-			"Forejanep-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Forejanep-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			83, -- [11]
-			"Player-3683-0C2804E9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cForejanep|r",
-			[51] = 1598271777,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
-			"Forejanep-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Forejanep-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			179, -- [11]
-			"Player-3683-0C2804E9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cForejanep|r",
-			[51] = 1598271899,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"WTS Guaranteed Timed M+10-20s (3.2k+ io players)! All Loot + Armor Stack for free || Freehold Powerleveling || PvP Carries || Raid Carries || 0-5 Mask Visions || AOTC || PST Any Questions || GOLD ONLY", -- [1]
-			"Setsales-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Setsales-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			570, -- [11]
-			"Player-3683-0C286EB7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeSetsales|r",
-			[51] = 1598377675,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"i mean they are still together.  quality isnt their thing anymore though", -- [1]
-			"Pôtato-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Pôtato-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1, -- [11]
-			"Player-3683-09BFF673", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefePôtato|r",
-			[51] = 1598394431,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"when was it tho", -- [1]
-			"Marukobo-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Marukobo-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2, -- [11]
-			"Player-3683-0C26A69B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Marukobo|r",
-			[51] = 1598394438,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"Selling timed +15 keys for 130k || Heroic Ny'alotha full clears starting at 175k with loot funnel options available || Mythic Ny'alotha full clears || Mechagon with mount || Arena Boosts in 2s and 3s || Jaina mount|| Horrific Visions - GOLD ONLY", -- [1]
-			"Twitlonger-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Twitlonger-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			3, -- [11]
-			"Player-3683-0C2354E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Twitlonger|r",
-			[51] = 1598394439,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"WTS 5Mask Visions (470 item), for your achievement and mount", -- [1]
-			"Lucienanina-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lucienanina-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			11, -- [11]
-			"Player-3683-091D2C4B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeLucienanina|r",
-			[51] = 1598466392,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"WTS  Mythic & Heroic Ny'alotha Full clear & N'zoth only spots. Also Selling M+ carries || Op: Mechagon || Islands || Freehold boost || PVP carries || PVE Coaching || Visions || Void Talon, TLPD, Jaina! GOLD ONLY", -- [1]
-			"Drizznixa-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Drizznixa-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			173, -- [11]
-			"Player-3683-0C258C7E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Drizznixa|r",
-			[51] = 1598466530,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"WTB |cffa335ee|Hitem:82453::::::::120:72::::::|h[Jeweled Onyx Panther]|h|r 70k rn", -- [1]
-			"Euphoriã-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Euphoriã-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			176, -- [11]
-			"Player-3683-0B4E5535", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cEuphoriã|r",
-			[51] = 1598466546,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"WTS Guaranteed +10s -+20s s in time! (CHEAPER IF YOU DONT CARE ABOUT TIME) Come get your weekly chest! Also have NZOTH/VISIONS/FH LEVELS PST for more info *GOLD ONLY pay on any realm*<3", -- [1]
-			"Soulsales-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Soulsales-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			177, -- [11]
-			"Player-3683-0C257C5F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Soulsales|r",
-			[51] = 1598466553,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"anyone got some spare gold? neeed to repair and im out", -- [1]
-			"Retributione-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Retributione-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			178, -- [11]
-			"Player-3683-091C1E0F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Retributione|r",
-			[51] = 1598466553,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
 			"Do one World Quest and don't die.", -- [1]
 			"Fyrgrird-Dalaran", -- [2]
 			"", -- [3]
@@ -397,7 +45,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcFyrgrird|r",
 			[51] = 1598466591,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [1]
 		{
 			"WTS 5Mask Visions (470 item), for your achievement and mount", -- [1]
 			"Lucienanina-Dalaran", -- [2]
@@ -419,7 +67,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeLucienanina|r",
 			[51] = 1598466601,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [2]
 		{
 			"FREE ARMOR STACK on a timed 15 M+ >> Specific Key combos GOLD ONLY <3 msg for info", -- [1]
 			"Whimelle-Dalaran", -- [2]
@@ -441,7 +89,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeWhimelle|r",
 			[51] = 1598466645,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [3]
 		{
 			"LF Guild", -- [1]
 			"Jonjones-Dalaran", -- [2]
@@ -463,7 +111,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jonjones|r",
 			[51] = 1598466658,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [4]
 		{
 			"DRY PUS KINDA FYE THO", -- [1]
 			"Corenge-Dalaran", -- [2]
@@ -485,7 +133,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Corenge|r",
 			[51] = 1598585283,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [5]
 		{
 			"if TRUMP is BLUE biden is pink", -- [1]
 			"Hordelessia-Dalaran", -- [2]
@@ -507,7 +155,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcHordelessia|r",
 			[51] = 1598585292,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [6]
 		{
 			"then ur getting the wrong pussy sir", -- [1]
 			"Misberilla-Dalaran", -- [2]
@@ -529,7 +177,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Misberilla|r",
 			[51] = 1598585295,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [7]
 		{
 			"capitalist nazi? lol", -- [1]
 			"Hood-Dalaran", -- [2]
@@ -551,7 +199,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Hood|r",
 			[51] = 1598585296,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [8]
 		{
 			"TRUMP WILL DROP WLR", -- [1]
 			"Corenge-Dalaran", -- [2]
@@ -573,7 +221,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Corenge|r",
 			[51] = 1598585300,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [9]
 		{
 			"Selling |cff66bbff|Hjournal:1:2375:14|h[N'Zoth the Corruptor]|h|r Heroic Last Boss Only , Going right Now Pst For  More info , Summ rdy > GOLD ONLY <", -- [1]
 			"Bufoo-Dalaran", -- [2]
@@ -595,7 +243,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Bufoo|r",
 			[51] = 1598585311,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [10]
 		{
 			"TRUMP WILL DROP THE MIKE ;)", -- [1]
 			"Hordelessia-Dalaran", -- [2]
@@ -617,7 +265,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcHordelessia|r",
 			[51] = 1598585316,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [11]
 		{
 			"U BOOMERS WOULDNT EVEN KNOW WHAT THAT MEANS", -- [1]
 			"Corenge-Dalaran", -- [2]
@@ -639,7 +287,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Corenge|r",
 			[51] = 1598585319,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [12]
 		{
 			"2 more months of BFA but mounts and achievements are forever! Get your KSM, Jaina & N'zoth mount, M+10-25s (FREE LOOT STACK). Mythic and Heroic raids going ALL WEEK. PVP mount/goal before October.. Legacy mounts: void talon/TLPD. Much more! GOLD ONLY", -- [1]
 			"Canelant-Dalaran", -- [2]
@@ -661,7 +309,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Canelant|r",
 			[51] = 1598585324,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [13]
 		{
 			"<Pénsive> A dual faction guild is looking for community minded people, For our drama free guild. Offering guild events/perks/raffles/M+ Raiding at  EST's/Discord, Free bags to starters. /W4 Invite, Online atm +/-ask", -- [1]
 			"Workshorse-Dalaran", -- [2]
@@ -683,7 +331,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Workshorse|r",
 			[51] = 1598615760,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [14]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-10114-3683-71525869|h[Guild: Pénsive]|h|r", -- [1]
 			"Workshorse-Dalaran", -- [2]
@@ -705,7 +353,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Workshorse|r",
 			[51] = 1598615761,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [15]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Hicetaheg-Dalaran", -- [2]
@@ -727,7 +375,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHicetaheg|r",
 			[51] = 1598615766,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [16]
 		{
 			"wts |cffa335ee|Hitem:165925::::::::120:66::4:3:4801:1492:4786:::|h[Drape of Valiant Defense]|h|r 10k obo", -- [1]
 			"Jmni-Dalaran", -- [2]
@@ -749,7 +397,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jmni|r",
 			[51] = 1598615781,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [17]
 		{
 			"[Lions Guard] Is looking for people who want to grow with us and prepare for Shadowlands. Focused on keeping a social and active Discord, constant ever changing guild events and casual but dedicated raid TEAMS! LFM Raiders! [MSG me for more info]", -- [1]
 			"Wimpyhobo-Dalaran", -- [2]
@@ -771,7 +419,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Wimpyhobo|r",
 			[51] = 1598615794,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [18]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-147-3683-80082865|h[Guild: Justification]|h|r is recruiting for Shadowlands and beyond. Dual faction progression raiding and social guild looking for more. Click link or PST to apply or visit us at www.justificationnation.us to learn more!", -- [1]
 			"Seamonkèy-Dalaran", -- [2]
@@ -793,7 +441,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Seamonkèy|r",
 			[51] = 1598615830,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [19]
 		{
 			"ok", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -815,7 +463,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669506,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [20]
 		{
 			"WTS M+15 in time guaranteed done by 3.5k io players! pst for more info", -- [1]
 			"Gunnm-Dalaran", -- [2]
@@ -837,7 +485,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Gunnm|r",
 			[51] = 1598669507,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [21]
 		{
 			"no, just your girlfriend", -- [1]
 			"Terrariffic-Dalaran", -- [2]
@@ -859,7 +507,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Terrariffic|r",
 			[51] = 1598669507,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [22]
 		{
 			"In PvP is Frost or Unholy DK better at the moment?", -- [1]
 			"Vortis-Dalaran", -- [2]
@@ -881,7 +529,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Vortis|r",
 			[51] = 1598669509,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [23]
 		{
 			"you know who isnt bankrupt... bobby kosak, his wallet FEEDS on the broken dreams of blizz gamers everywhere", -- [1]
 			"Redpáth-Dalaran", -- [2]
@@ -903,7 +551,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Redpáth|r",
 			[51] = 1598669509,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [24]
 		{
 			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Alakifiga-Dalaran", -- [2]
@@ -925,7 +573,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlakifiga|r",
 			[51] = 1598669509,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [25]
 		{
 			"well they paid for it so i guess it was ok", -- [1]
 			"Gurlfiend-Dalaran", -- [2]
@@ -947,7 +595,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Gurlfiend|r",
 			[51] = 1598669512,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [26]
 		{
 			"WTS 12/12HC Nyalotha (loot funnels available) or just Nzoth! Pst for more info! Get your AOTC + Mount before it's gone! CHEAP DEALS!!", -- [1]
 			"Davedium-Dalaran", -- [2]
@@ -969,7 +617,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cDavedium|r",
 			[51] = 1598669515,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [27]
 		{
 			"ur mom!", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -991,7 +639,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669516,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [28]
 		{
 			"and Trump is not a fucking puppet? He is GW Bush but more stupid", -- [1]
 			"Duskstriker-Dalaran", -- [2]
@@ -1013,7 +661,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Duskstriker|r",
 			[51] = 1598669519,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [29]
 		{
 			"#JusticeforKatarian", -- [1]
 			"Rigôr-Dalaran", -- [2]
@@ -1035,7 +683,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Rigôr|r",
 			[51] = 1598669536,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [30]
 		{
 			"when you pay for beating a ho is it ok", -- [1]
 			"Bändäids-Dalaran", -- [2]
@@ -1057,7 +705,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeBändäids|r",
 			[51] = 1598669545,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [31]
 		{
 			"respec the drip karens", -- [1]
 			"Connormanz-Dalaran", -- [2]
@@ -1079,7 +727,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Connormanz|r",
 			[51] = 1598669548,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [32]
 		{
 			"nah no one is dummber than GW bush", -- [1]
 			"Rhayventha-Dalaran", -- [2]
@@ -1101,7 +749,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Rhayventha|r",
 			[51] = 1598669549,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [33]
 		{
 			"WEEKEND DEALS!!  WTS 0-5mask visions full objectives & M+10s-20s, ran by 4k+ io players. Guaranteed on time or re-run/refund and ALL tradeable loot. Get armor stack FREE for every M+ key! GOLD ONLY. PST for info.", -- [1]
 			"Buffsales-Dalaran", -- [2]
@@ -1123,7 +771,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeBuffsales|r",
 			[51] = 1598669552,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [34]
 		{
 			"Ur mom wers combat boots, so yeah", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -1145,7 +793,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669555,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [35]
 		{
 			"Looking to fire up the forge in sw. Now taking all your  |cffffd000|Htrade:Player-3683-0BAB62D9:195097:164|h[Blacksmithing]|h|r orders.", -- [1]
 			"Zalgasha-Dalaran", -- [2]
@@ -1167,7 +815,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zalgasha|r",
 			[51] = 1598669556,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [36]
 		{
 			"we me maybe lol", -- [1]
 			"Rhayventha-Dalaran", -- [2]
@@ -1189,7 +837,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Rhayventha|r",
 			[51] = 1598669557,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [37]
 		{
 			"the magic 8 ball says \"it is certain\"", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -1211,7 +859,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1598669573,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [38]
 		{
 			"Perhaps", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -1233,7 +881,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669574,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [39]
 		{
 			"ok", -- [1]
 			"Duskstriker-Dalaran", -- [2]
@@ -1255,7 +903,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Duskstriker|r",
 			[51] = 1598669578,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [40]
 		{
 			"RIP BLACK PANTHER", -- [1]
 			"Lyariea-Dalaran", -- [2]
@@ -1277,7 +925,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lyariea|r",
 			[51] = 1598669585,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [41]
 		{
 			"Yes", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -1299,7 +947,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669590,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [42]
 		{
 			";(", -- [1]
 			"Lyariea-Dalaran", -- [2]
@@ -1321,7 +969,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lyariea|r",
 			[51] = 1598669590,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [43]
 		{
 			":(", -- [1]
 			"Oryynn-Dalaran", -- [2]
@@ -1343,7 +991,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Oryynn|r",
 			[51] = 1598669594,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [44]
 		{
 			";", -- [1]
 			"Mixcoult-Dalaran", -- [2]
@@ -1365,7 +1013,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Mixcoult|r",
 			[51] = 1598669597,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [45]
 		{
 			"@JusticeforKatarian", -- [1]
 			"Rigôr-Dalaran", -- [2]
@@ -1387,7 +1035,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Rigôr|r",
 			[51] = 1598669599,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [46]
 		{
 			"the crack babies , babies babies , i think we may be doomed", -- [1]
 			"Sweetríde-Dalaran", -- [2]
@@ -1409,7 +1057,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sweetríde|r",
 			[51] = 1598669600,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [47]
 		{
 			":(", -- [1]
 			"Mixcoult-Dalaran", -- [2]
@@ -1431,7 +1079,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Mixcoult|r",
 			[51] = 1598669602,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [48]
 		{
 			"wakanda forever <3", -- [1]
 			"Logösh-Dalaran", -- [2]
@@ -1453,7 +1101,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogösh|r",
 			[51] = 1598669605,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [49]
 		{
 			"i heard the black panther got dusted?", -- [1]
 			"Lolurôwned-Dalaran", -- [2]
@@ -1475,7 +1123,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lolurôwned|r",
 			[51] = 1598669614,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [50]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Alakifiga-Dalaran", -- [2]
@@ -1497,7 +1145,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlakifiga|r",
 			[51] = 1598669616,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [51]
 		{
 			"my heart", -- [1]
 			"Lyariea-Dalaran", -- [2]
@@ -1519,7 +1167,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lyariea|r",
 			[51] = 1598669619,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [52]
 		{
 			"WTS M+15 in time guaranteed done by 3.5k io players! pst for more info", -- [1]
 			"Gunnm-Dalaran", -- [2]
@@ -1541,7 +1189,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Gunnm|r",
 			[51] = 1598669624,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [53]
 		{
 			"Yeah he died from cancer", -- [1]
 			"Goodfish-Dalaran", -- [2]
@@ -1563,7 +1211,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Goodfish|r",
 			[51] = 1598669624,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [54]
 		{
 			"big sad", -- [1]
 			"Goodfish-Dalaran", -- [2]
@@ -1585,7 +1233,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Goodfish|r",
 			[51] = 1598669625,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [55]
 		{
 			"fly high chadwick", -- [1]
 			"Lexax-Dalaran", -- [2]
@@ -1607,7 +1255,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lexax|r",
 			[51] = 1598669628,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [56]
 		{
 			"nah as long as theres no giant robot camels i think were ok", -- [1]
 			"Redpáth-Dalaran", -- [2]
@@ -1629,7 +1277,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Redpáth|r",
 			[51] = 1598669629,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [57]
 		{
 			"i didnt even know he had cancer", -- [1]
 			"Logösh-Dalaran", -- [2]
@@ -1651,7 +1299,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogösh|r",
 			[51] = 1598669633,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [58]
 		{
 			"same!", -- [1]
 			"Lyariea-Dalaran", -- [2]
@@ -1673,7 +1321,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lyariea|r",
 			[51] = 1598669641,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [59]
 		{
 			"uh, jim, robot camels", -- [1]
 			"Redpáth-Dalaran", -- [2]
@@ -1695,7 +1343,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Redpáth|r",
 			[51] = 1598669642,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [60]
 		{
 			"huh , so no way to blame the white people then...", -- [1]
 			"Sweetríde-Dalaran", -- [2]
@@ -1717,7 +1365,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sweetríde|r",
 			[51] = 1598669650,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [61]
 		{
 			"ok", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -1739,7 +1387,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669657,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [62]
 		{
 			"so if reincarnation is real, what do you suppose he will come back as?", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -1761,7 +1409,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1598669661,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [63]
 		{
 			"we have to do a time heist ", -- [1]
 			"Lolurôwned-Dalaran", -- [2]
@@ -1783,7 +1431,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lolurôwned|r",
 			[51] = 1598669665,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [64]
 		{
 			"........panther", -- [1]
 			"Goodfish-Dalaran", -- [2]
@@ -1805,7 +1453,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Goodfish|r",
 			[51] = 1598669672,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [65]
 		{
 			"Lmao sweetride tf", -- [1]
 			"Goodfish-Dalaran", -- [2]
@@ -1827,7 +1475,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Goodfish|r",
 			[51] = 1598669678,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [66]
 		{
 			"white panther? *cough*", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -1849,7 +1497,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1598669685,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [67]
 		{
 			"Something", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -1871,7 +1519,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669697,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [68]
 		{
 			"a giraffe", -- [1]
 			"Stealthloot-Dalaran", -- [2]
@@ -1893,7 +1541,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Stealthloot|r",
 			[51] = 1598669698,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [69]
 		{
 			"albino panther", -- [1]
 			"Sweetríde-Dalaran", -- [2]
@@ -1915,7 +1563,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sweetríde|r",
 			[51] = 1598669704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [70]
 		{
 			"Maybe a bird?", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -1937,7 +1585,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669705,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [71]
 		{
 			"damn it .. too soon black .. too soon", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -1959,7 +1607,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1598669705,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [72]
 		{
 			"well somebody has to be the black panther", -- [1]
 			"Èlliè-Dalaran", -- [2]
@@ -1981,7 +1629,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Èlliè|r",
 			[51] = 1598669726,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [73]
 		{
 			"will smith?", -- [1]
 			"Èlliè-Dalaran", -- [2]
@@ -2003,7 +1651,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Èlliè|r",
 			[51] = 1598669730,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [74]
 		{
 			"Looking to fire up the forge in sw. Now taking all your  |cffffd000|Htrade:Player-3683-0BAB62D9:195097:164|h[Blacksmithing]|h|r orders.", -- [1]
 			"Zalgasha-Dalaran", -- [2]
@@ -2025,7 +1673,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zalgasha|r",
 			[51] = 1598669730,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [75]
 		{
 			"Perhaps", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -2047,7 +1695,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669739,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [76]
 		{
 			"probably cast his sister as taking up the mantle.  or maybe the love interest.", -- [1]
 			"Nightfrenzy-Dalaran", -- [2]
@@ -2069,7 +1717,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNightfrenzy|r",
 			[51] = 1598669739,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [77]
 		{
 			"no will smith", -- [1]
 			"Duskstriker-Dalaran", -- [2]
@@ -2091,7 +1739,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Duskstriker|r",
 			[51] = 1598669741,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [78]
 		{
 			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Alakifiga-Dalaran", -- [2]
@@ -2113,7 +1761,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlakifiga|r",
 			[51] = 1598669743,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [79]
 		{
 			"I could see Shuri being next in line, but that's heartbreaking", -- [1]
 			"Kurokämi-Dalaran", -- [2]
@@ -2135,7 +1783,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kurokämi|r",
 			[51] = 1598669762,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [80]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-128773-3683-90918869|h[Guild: Lions Guard]|h|r Looking for people who want to grow with us. Focused on keeping a social and active Discord. M+ and dedicated raiding. [Raid: Friday - Saturday, 8pm-10pm Realm] 18+", -- [1]
 			"Jonjou-Dalaran", -- [2]
@@ -2157,7 +1805,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Jonjou|r",
 			[51] = 1598669777,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [81]
 		{
 			"guild looking to rectruit some rockstars to lvl, dungeon, mythix, raidz, BG, and whatever else WITH us!!! Must be chilled and like to have fun : )", -- [1]
 			"Liltrixy-Dalaran", -- [2]
@@ -2179,7 +1827,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLiltrixy|r",
 			[51] = 1598669794,
 			[50] = "CHAT_MSG_YELL",
-		}, -- [98]
+		}, -- [82]
 		{
 			"WQho is will smith?", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -2200,6 +1848,358 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1598669799,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"\"they were both too tired to sleep\" absolutely relatable", -- [1]
+			"Jørach-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jørach-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4, -- [11]
+			"Player-3683-0ADB9C7A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Jørach|r",
+			[51] = 1598743933,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"I wanna know what Love is", -- [1]
+			"Luvutxangel-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Luvutxangel-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			8, -- [11]
+			"Player-3683-0C26C709", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLuvutxangel|r",
+			[51] = 1598743936,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"i used to win so much food playin texas hold 'em lol", -- [1]
+			"Warsrus-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Warsrus-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			18, -- [11]
+			"Player-3683-0A7FBE52", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cWarsrus|r",
+			[51] = 1598743945,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"know when to walk away", -- [1]
+			"Meganhaste-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Meganhaste-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			21, -- [11]
+			"Player-3683-0A587777", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Meganhaste|r",
+			[51] = 1598743946,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"and know when to run", -- [1]
+			"Meganhaste-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Meganhaste-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			49, -- [11]
+			"Player-3683-0A587777", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Meganhaste|r",
+			[51] = 1598743963,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"baby dont hurt me?", -- [1]
+			"Mahlrond-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Mahlrond-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			50, -- [11]
+			"Player-3683-09C2094A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Mahlrond|r",
+			[51] = 1598743964,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"the thing most people lack is knowing when to run, like when bitches be crazy you gotta run, not stick your dick in crazy", -- [1]
+			"Asarella-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Asarella-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			55, -- [11]
+			"Player-3683-0A78496E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Asarella|r",
+			[51] = 1598743966,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"♪", -- [1]
+			"Warsrus-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Warsrus-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			60, -- [11]
+			"Player-3683-0A7FBE52", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cWarsrus|r",
+			[51] = 1598743970,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Evahewobe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Evahewobe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			68, -- [11]
+			"Player-3683-0C2F876B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEvahewobe|r",
+			[51] = 1598743976,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"is that wilferal guy still running his cock trap?", -- [1]
+			"Tinytimbs-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tinytimbs-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			69, -- [11]
+			"Player-3683-0BC46C17", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Tinytimbs|r",
+			[51] = 1598743976,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"you never count your money when you're sittin at the table", -- [1]
+			"Meganhaste-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Meganhaste-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			75, -- [11]
+			"Player-3683-0A587777", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Meganhaste|r",
+			[51] = 1598743979,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"φφφ", -- [1]
+			"Keltoren-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Keltoren-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			89, -- [11]
+			"Player-3683-0C2896BC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Keltoren|r",
+			[51] = 1598743984,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"bye", -- [1]
+			"Dèadèyès-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dèadèyès-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2549, -- [11]
+			"Player-3683-08E42468", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Dèadèyès|r",
+			[51] = 1599184461,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			" |cffffd100|HclubFinder:ClubFinder-1-128773-3683-90918869|h[Guild: Lions Guard]|h|rLooking for great people to venture into Shadowlands with, you found it. We focus on people and an active Discord, Lion’s Guard unique weekly guild events, PVP, PVE content, Mythics and dedicated raiding", -- [1]
+			"Fenyaa-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Fenyaa-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2551, -- [11]
+			"Player-3683-0A514E6D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Fenyaa|r",
+			[51] = 1599184462,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-128773-3683-90918869|h[Guild: Lions Guard]|h|r Looking for people to grow with us in Shadowlands. We focus on keeping a social and active discord, PVP, PVE, M+, and dedicated raid teams. 18+ Come join the fam!", -- [1]
+			"Eibhiln-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Eibhiln-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2557, -- [11]
+			"Player-3683-0B1504AA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeEibhiln|r",
+			[51] = 1599184468,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"WTS AOTC -- READY NOW! -- GET YOUR MOUNT/ACHEIVE/LOOT! Completely afkable! summons available!", -- [1]
+			"Salepiggy-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Salepiggy-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2644, -- [11]
+			"Player-3683-0C39EF00", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Salepiggy|r",
+			[51] = 1599184490,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

@@ -197,8 +197,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

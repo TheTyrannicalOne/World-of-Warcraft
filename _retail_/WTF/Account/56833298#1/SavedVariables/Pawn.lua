@@ -526,6 +526,9 @@ PawnCommon = {
 		["\"MrRobot\":DEMONHUNTER2"] = {
 			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
+				["Illingrath-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "a22fc8",
 			["LocalizedName"] = "Demon Hunter: Vengeance",

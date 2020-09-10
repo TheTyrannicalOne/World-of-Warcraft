@@ -2,11 +2,12 @@
 HandyNotes_HallowsEndDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",

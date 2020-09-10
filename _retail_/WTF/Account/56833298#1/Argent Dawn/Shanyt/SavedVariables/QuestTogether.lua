@@ -1,18 +1,23 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[56500] = {
-			["title"] = "Storming the Battlefields",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"1/1 Win an Epic Battleground", -- [2]
-				"1/1 Win a Battleground", -- [3]
+				"1/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[57276] = {
 			["title"] = "Maintaining Focus",
 			["objectives"] = {
-				"6/20 Shred of Insanity", -- [1]
+				"10/20 Shred of Insanity", -- [1]
+			},
+		},
+		[57959] = {
+			["title"] = "Heroic Warfront: The Battle for Darkshore",
+			["objectives"] = {
+				"1/1 View the War Table in Port of Zandalar (Optional)", -- [1]
+				"Alliance defeated at the Battle for Darkshore", -- [2]
 			},
 		},
 		[49032] = {
@@ -21,15 +26,35 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[13721] = {
-			["title"] = "The Valiant's Charge",
-			["objectives"] = {
-				"10/25 Valiant's Seal", -- [1]
-			},
-		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"3/20 Eternal Ornament", -- [1]
+			},
+		},
+		[52447] = {
+			["title"] = "Room To Grow",
+			["objectives"] = {
+				"Tend to Kua'fon", -- [1]
+			},
+		},
+		[56500] = {
+			["title"] = "Storming the Battlefields",
+			["objectives"] = {
+				"Win a PVP Island Expedition", -- [1]
+				"1/1 Win an Epic Battleground", -- [2]
+				"1/1 Win a Battleground", -- [3]
+			},
+		},
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[45382] = {
@@ -38,10 +63,22 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/20 Eternal Ornament", -- [1]
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[49135] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+			["objectives"] = {
+				"1/4 Sigil of the Dark Titan", -- [1]
+			},
+		},
+		[57743] = {
+			["title"] = "Conquest's Reward",
+			["objectives"] = {
+				"0/500 Earn Conquest", -- [1]
 			},
 		},
 		[54185] = {
@@ -51,51 +88,10 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
+		[49076] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[46746] = {
-			["title"] = "Supplies From the Valarjar",
-			["objectives"] = {
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
-		[47118] = {
-			["title"] = "Tomb of Sargeras: Free The Tormented",
-			["objectives"] = {
-				"Defeat The Desolate Host", -- [1]
-				"1/1 Worshipper's Scrawlings", -- [2]
-			},
-		},
-		[45172] = {
-			["title"] = "To Battle!",
-			["objectives"] = {
-				"Win a battleground", -- [1]
-			},
-		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
-			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
+				"1/4 Rune of Passage", -- [1]
 			},
 		},
 		[24756] = {
@@ -104,20 +100,24 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[55743] = {
-			["title"] = "More Recycling",
+		[48799] = {
+			["title"] = "Fuel of a Doomed World",
 			["objectives"] = {
-				"0/1 Bundle of Recyclable Parts", -- [1]
+				"0/50 Pristine Argunite", -- [1]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[37548] = {
-			["title"] = "Essence of the Iron Protector",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
 			},
 		},
@@ -134,10 +134,10 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[49133] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+		[45172] = {
+			["title"] = "To Battle!",
 			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
+				"Win a battleground", -- [1]
 			},
 		},
 		[42233] = {
@@ -146,26 +146,22 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[13721] = {
+			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"10/25 Valiant's Seal", -- [1]
 			},
 		},
-		[56356] = {
-			["title"] = "The Eternal Palace: Queen's Gambit",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"Queen Azshara defeated", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[51040] = {
+			["title"] = "Supplies Needed: Siren's Pollen",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/20 Siren's Pollen", -- [1]
 			},
 		},
 		[57396] = {
@@ -174,17 +170,16 @@ QuestTogether = {
 				"0/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[49015] = {
-			["title"] = "Antorus, the Burning Throne: The Death of a Titan",
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
 			["objectives"] = {
-				"Defeat Argus the Unmaker", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
-		[48288] = {
-			["title"] = "Antoran High Command",
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"Defeat the Antoran High Command in Antorus, The Burning Throne", -- [1]
-				"1/1 Azeroth Invasion Plans", -- [2]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 	},

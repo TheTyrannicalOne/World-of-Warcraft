@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.34 (26th August 2020)
+-- 	Leatrix Plus 8.3.35 (9th September 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "8.3.34"
+	LeaPlusLC["AddonVer"] = "8.3.35"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -2673,8 +2673,9 @@
 
 		if LeaPlusLC["ShowPlayerChain"] == "On" then
 
-			-- Ensure chain doesnt clip through pet portrait
+			-- Ensure chain doesnt clip through pet portrait and rune frame
 			PetPortrait:GetParent():SetFrameLevel(4)
+			RuneFrame:SetFrameLevel(4)
 
 			-- Create configuration panel
 			local ChainPanel = LeaPlusLC:CreatePanel("Show player chain", "ChainPanel")
@@ -7476,6 +7477,11 @@
 				-- Show search results
 				ShowSearchResults()
 			end)
+
+			-- Function to get random argument for random track listing
+			local function GetRandomArgument(...)
+				return (select(random(select("#", ...)), ...))
+			end
 
 			-- Function to show random track listing
 			local function ShowRandomList()

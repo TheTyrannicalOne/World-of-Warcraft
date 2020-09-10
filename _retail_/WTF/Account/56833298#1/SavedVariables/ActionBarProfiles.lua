@@ -1,22 +1,23 @@
 
 ActionBarProfilesDBv3 = {
 	["profileKeys"] = {
-		["Avisar - Dalaran"] = "PALADIN",
-		["Serbitechna - Dalaran"] = "HUNTER",
-		["Thorinbane - Dalaran"] = "WARRIOR",
 		["Vancard - Zul'jin"] = "MAGE",
+		["Illingrath - Dalaran"] = "DEMONHUNTER",
 		["Tyrannithal - Argent Dawn"] = "DEMONHUNTER",
-		["Ruffinton - Dalaran"] = "ROGUE",
-		["Fantastiburo - Zul'jin"] = "SHAMAN",
-		["Datgore - Zul'jin"] = "HUNTER",
-		["Darnastris - Dalaran"] = "MAGE",
-		["Zulbathal - Zul'jin"] = "DRUID",
-		["Shanyt - Argent Dawn"] = "WARRIOR",
-		["Durlok - Black Dragonflight"] = "DRUID",
 		["Kotalkhan - Zul'jin"] = "MONK",
+		["Shanyt - Argent Dawn"] = "WARRIOR",
 		["Shimzo - Zul'jin"] = "ROGUE",
 		["Shaekhan - Zul'jin"] = "MONK",
 		["Tinkster - Dalaran"] = "WARLOCK",
+		["Avisar - Dalaran"] = "PALADIN",
+		["Thorinbane - Dalaran"] = "WARRIOR",
+		["Ruffinton - Dalaran"] = "ROGUE",
+		["Datgore - Zul'jin"] = "HUNTER",
+		["Darnastris - Dalaran"] = "MAGE",
+		["Durlok - Black Dragonflight"] = "DRUID",
+		["Serbitechna - Dalaran"] = "HUNTER",
+		["Fantastiburo - Zul'jin"] = "SHAMAN",
+		["Zulbathal - Zul'jin"] = "DRUID",
 	},
 	["profiles"] = {
 		["HUNTER"] = {

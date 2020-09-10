@@ -10,7 +10,7 @@ RareShareDB = {
 			["Duplicates"] = true,
 		},
 		["CChannel"] = {
-			["CName"] = "General - Uldum",
+			["CName"] = "General - Nazjatar",
 			["CID"] = 2,
 		},
 		["OnDeath"] = false,
@@ -22,7 +22,7 @@ RareShareDB = {
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1599067711,
-		["ID"] = 151934,
+		["Time"] = 1599689100,
+		["ID"] = 151870,
 	},
 }

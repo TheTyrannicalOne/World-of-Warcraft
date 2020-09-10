@@ -1,0 +1,75 @@
+
+QuestTogether = {
+	["questTracker"] = {
+		[39134] = {
+			["title"] = "Wrathshard",
+			["objectives"] = {
+				"0/1 Wrathshard slain", -- [1]
+			},
+		},
+		[44400] = {
+			["title"] = "Assault on Violet Hold: Purple Pain",
+			["objectives"] = {
+				"0/1 Repel the Invasion of Violet Hold", -- [1]
+			},
+		},
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
+			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[38912] = {
+			["title"] = "The Bloodtotem Tribe",
+			["objectives"] = {
+			},
+		},
+		[38913] = {
+			["title"] = "The Skyhorn Tribe",
+			["objectives"] = {
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+		[42801] = {
+			["title"] = "Back in Black",
+			["objectives"] = {
+				"\"Back in Black\" mission completed", -- [1]
+			},
+		},
+		[44009] = {
+			["title"] = "A Falling Star",
+			["objectives"] = {
+				"0/1 Take Khadgar's Gryphon to Suramar", -- [1]
+			},
+		},
+	},
+	["DEBUG"] = {
+		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
+	},
+}

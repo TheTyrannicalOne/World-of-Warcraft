@@ -123,6 +123,40 @@ AzeritePowerWeightsDB = {
 			},
 		},
 		["Dalaran"] = {
+			["Illingrath"] = {
+				["specScales"] = {
+					[577] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/12/1/Default",
+					},
+					[581] = {
+						["scaleName"] = "Defensive",
+						["scaleID"] = "D/12/2/Defensive",
+					},
+				},
+				["addPrimaryStatToScore"] = false,
+				["showTooltipLegend"] = true,
+				["zonePowers"] = true,
+				["pvpPowers"] = false,
+				["addILvlToScore"] = false,
+				["relativeScore"] = false,
+				["rolePowersNoOffRolePowers"] = false,
+				["importingCanUpdate"] = true,
+				["tooltipScales"] = {
+				},
+				["enableEssences"] = true,
+				["onlyOwnClassDefaults"] = true,
+				["rolePowers"] = true,
+				["defensivePowers"] = true,
+				["enableTraits"] = true,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassCustoms"] = false,
+				["outlineScores"] = true,
+				["professionPowers"] = false,
+				["showOnlyUpgrades"] = false,
+				["debug"] = false,
+				["preferBiSMarjor"] = true,
+			},
 			["Ruffinton"] = {
 				["specScales"] = {
 					[260] = {

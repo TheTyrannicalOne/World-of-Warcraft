@@ -1,55 +1,58 @@
 
 HandyNotes_LegionTreasuresDB = {
 	["profileKeys"] = {
-		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
-		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 	},
 	["profiles"] = {
-		["Avisar - Dalaran"] = {
-		},
-		["Datgore - Zul'jin"] = {
-		},
-		["Thorinbane - Dalaran"] = {
-		},
 		["Vancard - Zul'jin"] = {
 		},
-		["Darnastris - Dalaran"] = {
-		},
-		["Ruffinton - Dalaran"] = {
-		},
-		["Shimzo - Zul'jin"] = {
-		},
-		["Serbitechna - Dalaran"] = {
+		["Illingrath - Dalaran"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Durlok - Black Dragonflight"] = {
-		},
-		["Kotalkhan - Zul'jin"] = {
-		},
-		["Fantastiburo - Zul'jin"] = {
+		["Shimzo - Zul'jin"] = {
 		},
 		["Shaekhan - Zul'jin"] = {
 		},
 		["Tinkster - Dalaran"] = {
+		},
+		["Avisar - Dalaran"] = {
+		},
+		["Thorinbane - Dalaran"] = {
+		},
+		["Ruffinton - Dalaran"] = {
+		},
+		["Datgore - Zul'jin"] = {
+		},
+		["Darnastris - Dalaran"] = {
+		},
+		["Durlok - Black Dragonflight"] = {
+		},
+		["Zulbathal - Zul'jin"] = {
+		},
+		["Fantastiburo - Zul'jin"] = {
+		},
+		["Serbitechna - Dalaran"] = {
 		},
 	},
 }

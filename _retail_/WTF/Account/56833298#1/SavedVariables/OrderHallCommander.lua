@@ -10,11 +10,9 @@ dbOHC = {
 		["Shanyt - Argent Dawn"] = {
 			["firstun"] = false,
 		},
-	},
-	["profileKeys"] = {
-		["Avisar - Dalaran"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
+		["Illingrath - Dalaran"] = {
+			["firstun"] = false,
+		},
 	},
 	["global"] = {
 		["warn01_seen"] = 0,
@@ -23,6 +21,12 @@ dbOHC = {
 		},
 		["warn02_seen"] = 0,
 		["firstrun"] = false,
+	},
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -38,16 +42,17 @@ dbOHC = {
 				["USEALLY"] = false,
 				["SAVETROOPS"] = false,
 				["IGNOREINACTIVE"] = true,
+				["NOTROOPS"] = false,
 				["BONUS"] = true,
 				["SORTMISSION2"] = "Garrison_SortMissions_Original",
 				["BONUSCHANCE"] = 100,
 				["IGNORELOW"] = false,
 				["NOWARN"] = false,
 				["PREFERHIGH"] = false,
-				["NOTROOPS"] = false,
+				["BAN160"] = true,
 				["MAKEITQUICK"] = true,
-				["TROOPALERT"] = true,
 				["MAXCHAMP"] = 3,
+				["TROOPALERT"] = true,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},

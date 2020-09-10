@@ -4,20 +4,20 @@ CliqueDB3 = {
 	["char"] = {
 		["Avisar - Dalaran"] = {
 			["spec1_profileKey"] = "Avisar - Dalaran",
-			["spec3_profileKey"] = "Avisar - Dalaran",
+			["spec2_profileKey"] = "Avisar - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec3_profileKey"] = "Avisar - Dalaran",
 			["specswap"] = false,
-			["spec2_profileKey"] = "Avisar - Dalaran",
 		},
 		["Zulbathal - Zul'jin"] = {
 			["spec1_profileKey"] = "Zulbathal - Zul'jin",
 			["spec3_profileKey"] = "Zulbathal - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec4_profileKey"] = "Zulbathal - Zul'jin",
 			["specswap"] = false,
 			["spec2_profileKey"] = "Zulbathal - Zul'jin",
+			["spec4_profileKey"] = "Zulbathal - Zul'jin",
 		},
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
@@ -25,6 +25,13 @@ CliqueDB3 = {
 			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 			["downclick"] = false,
 			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["specswap"] = false,
+		},
+		["Illingrath - Dalaran"] = {
+			["spec1_profileKey"] = "Illingrath - Dalaran",
+			["spec2_profileKey"] = "Illingrath - Dalaran",
+			["downclick"] = false,
+			["fastooc"] = false,
 			["specswap"] = false,
 		},
 		["Kotalkhan - Zul'jin"] = {
@@ -37,81 +44,25 @@ CliqueDB3 = {
 		},
 	},
 	["profileKeys"] = {
-		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 	["profiles"] = {
-		["Avisar - Dalaran"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Serbitechna - Dalaran"] = {
-			["bindings"] = {
-				{
-					["sets"] = {
-						["default"] = true,
-					},
-					["type"] = "target",
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Thorinbane - Dalaran"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
 		["Vancard - Zul'jin"] = {
 			["bindings"] = {
 				{
@@ -119,6 +70,25 @@ CliqueDB3 = {
 					["sets"] = {
 						["default"] = true,
 					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Illingrath - Dalaran"] = {
+			["bindings"] = {
+				{
+					["sets"] = {
+						["default"] = true,
+					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -150,89 +120,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Ruffinton - Dalaran"] = {
-			["bindings"] = {
-				{
-					["sets"] = {
-						["default"] = true,
-					},
-					["type"] = "target",
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Fantastiburo - Zul'jin"] = {
-			["bindings"] = {
-				{
-					["sets"] = {
-						["default"] = true,
-					},
-					["type"] = "target",
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Datgore - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Darnastris - Dalaran"] = {
-			["bindings"] = {
-				{
-					["sets"] = {
-						["default"] = true,
-					},
-					["type"] = "target",
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Zulbathal - Zul'jin"] = {
-			["bindings"] = {
-				{
-					["sets"] = {
-						["default"] = true,
-					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -246,44 +140,6 @@ CliqueDB3 = {
 			},
 		},
 		["Shanyt - Argent Dawn"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Durlok - Black Dragonflight"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Kotalkhan - Zul'jin"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -347,6 +203,177 @@ CliqueDB3 = {
 					["sets"] = {
 						["default"] = true,
 					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Avisar - Dalaran"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Thorinbane - Dalaran"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Ruffinton - Dalaran"] = {
+			["bindings"] = {
+				{
+					["sets"] = {
+						["default"] = true,
+					},
+					["type"] = "target",
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Datgore - Zul'jin"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Darnastris - Dalaran"] = {
+			["bindings"] = {
+				{
+					["sets"] = {
+						["default"] = true,
+					},
+					["type"] = "target",
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Durlok - Black Dragonflight"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Serbitechna - Dalaran"] = {
+			["bindings"] = {
+				{
+					["sets"] = {
+						["default"] = true,
+					},
+					["type"] = "target",
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Fantastiburo - Zul'jin"] = {
+			["bindings"] = {
+				{
+					["sets"] = {
+						["default"] = true,
+					},
+					["type"] = "target",
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Zulbathal - Zul'jin"] = {
+			["bindings"] = {
+				{
+					["sets"] = {
+						["default"] = true,
+					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
