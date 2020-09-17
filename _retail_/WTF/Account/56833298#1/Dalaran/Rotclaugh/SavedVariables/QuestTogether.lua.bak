@@ -1,0 +1,69 @@
+
+QuestTogether = {
+	["questTracker"] = {
+		[12060] = {
+			["title"] = "Projections and Plans",
+			["objectives"] = {
+				"0/1 Object on the Surge Needle observed", -- [1]
+			},
+		},
+		[12169] = {
+			["title"] = "The High Cultist",
+			["objectives"] = {
+				"0/1 High Cultist Zangus slain", -- [1]
+			},
+		},
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
+			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[12117] = {
+			["title"] = "Travel to Moa'ki Harbor",
+			["objectives"] = {
+			},
+		},
+		[12794] = {
+			["title"] = "The Magical Kingdom of Dalaran",
+			["objectives"] = {
+				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
+			},
+		},
+		[29608] = {
+			["title"] = "Allies in Dalaran",
+			["objectives"] = {
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+	},
+	["DEBUG"] = {
+		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
+	},
+}

@@ -5,10 +5,14 @@ ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		"/skada toggle", -- [1]
 		"/invite cayla", -- [2]
+		"/invite cayla-nordrassil", -- [3]
+		"/invite cayla-nordrasil", -- [4]
+		"/invite Cayla-nordrissil", -- [5]
+		"/invite Cayla-nordrassil", -- [6]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"Picked Up: The Dark Portal", -- [1]
+			"55/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -18,7 +22,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1323, -- [11]
+			2088, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -26,11 +30,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985794,
+			[51] = 1600314986,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [1]
 		{
-			"Completed: A New Master", -- [1]
+			"63/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -40,7 +44,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1324, -- [11]
+			2091, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -48,11 +52,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985794,
+			[51] = 1600314992,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [2]
 		{
-			"1/10 Raging Firestorm slain", -- [1]
+			"65/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -62,7 +66,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1326, -- [11]
+			2092, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -70,11 +74,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985800,
+			[51] = 1600314993,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [3]
 		{
-			"Picked Up: The Name Never Spoken", -- [1]
+			"66/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -84,7 +88,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1328, -- [11]
+			2093, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -92,11 +96,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985801,
+			[51] = 1600314993,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [4]
 		{
-			"1/1 Northern Firestone Examined", -- [1]
+			"67/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -106,7 +110,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1331, -- [11]
+			2094, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -114,11 +118,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985804,
+			[51] = 1600314995,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [5]
 		{
-			"1/10 Frightened Animal", -- [1]
+			"69/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -128,7 +132,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1337, -- [11]
+			2095, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -136,11 +140,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985825,
+			[51] = 1600314997,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [6]
 		{
-			"’ Water Elemental curls up into a perfect sphere.", -- [1]
+			"74/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -150,7 +154,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1339, -- [11]
+			2096, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -158,11 +162,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985830,
-			[50] = "CHAT_MSG_EMOTE",
+			[51] = 1600314997,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [7]
 		{
-			"2/10 Frightened Animal", -- [1]
+			"76/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -172,7 +176,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1342, -- [11]
+			2097, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -180,11 +184,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985834,
+			[51] = 1600314999,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [8]
 		{
-			"3/6 Twilight Inferno Lord slain", -- [1]
+			"77/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -194,7 +198,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1344, -- [11]
+			2098, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -202,11 +206,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985838,
+			[51] = 1600315000,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [9]
 		{
-			"3/10 Frightened Animal", -- [1]
+			"78/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -216,7 +220,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1347, -- [11]
+			2099, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -224,11 +228,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985844,
+			[51] = 1600315001,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [10]
 		{
-			"2/10 Raging Firestorm slain", -- [1]
+			"79/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -238,7 +242,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1350, -- [11]
+			2100, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -246,11 +250,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985851,
+			[51] = 1600315002,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [11]
 		{
-			"4/10 Frightened Animal", -- [1]
+			"81/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -260,7 +264,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1355, -- [11]
+			2101, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -268,11 +272,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985858,
+			[51] = 1600315002,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [12]
 		{
-			"5/10 Frightened Animal", -- [1]
+			"82/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -282,7 +286,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1360, -- [11]
+			2102, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -290,11 +294,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985867,
+			[51] = 1600315003,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [13]
 		{
-			"1/1 Central Firestone Examined", -- [1]
+			"84/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -304,7 +308,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1361, -- [11]
+			2103, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -312,11 +316,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985870,
+			[51] = 1600315003,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [14]
 		{
-			"4/6 Twilight Inferno Lord slain", -- [1]
+			"85/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -326,7 +330,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1364, -- [11]
+			2106, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -334,11 +338,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985875,
+			[51] = 1600315004,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [15]
 		{
-			"6/10 Frightened Animal", -- [1]
+			"86/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -348,7 +352,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1367, -- [11]
+			2107, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -356,11 +360,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985882,
+			[51] = 1600315005,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [16]
 		{
-			"3/10 Raging Firestorm slain", -- [1]
+			"87/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -370,7 +374,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1369, -- [11]
+			2108, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -378,11 +382,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985885,
+			[51] = 1600315006,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [17]
 		{
-			"7/10 Frightened Animal", -- [1]
+			"91/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -392,7 +396,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1371, -- [11]
+			2109, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -400,11 +404,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985886,
+			[51] = 1600315007,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [18]
 		{
-			"4/10 Raging Firestorm slain", -- [1]
+			"92/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -414,7 +418,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1376, -- [11]
+			2110, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -422,11 +426,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985895,
+			[51] = 1600315007,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [19]
 		{
-			"8/10 Frightened Animal", -- [1]
+			"93/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -436,7 +440,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1380, -- [11]
+			2111, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -444,11 +448,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985904,
+			[51] = 1600315008,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [20]
 		{
-			"5/6 Twilight Inferno Lord slain", -- [1]
+			"94/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -458,7 +462,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1381, -- [11]
+			2112, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -466,11 +470,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985904,
+			[51] = 1600315008,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [21]
 		{
-			"1/1 Southern Firestone Examined", -- [1]
+			"95/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -480,7 +484,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1382, -- [11]
+			2113, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -488,11 +492,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985909,
+			[51] = 1600315009,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [22]
 		{
-			"5/10 Raging Firestorm slain", -- [1]
+			"99/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -502,7 +506,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1384, -- [11]
+			2114, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -510,11 +514,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985920,
+			[51] = 1600315009,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [23]
 		{
-			"6/10 Raging Firestorm slain", -- [1]
+			"100/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -524,7 +528,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1387, -- [11]
+			2115, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -532,11 +536,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985923,
+			[51] = 1600315010,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [24]
 		{
-			"9/10 Frightened Animal", -- [1]
+			"103/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -546,7 +550,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1390, -- [11]
+			2116, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -554,11 +558,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985929,
+			[51] = 1600315010,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [25]
 		{
-			"6/6 Twilight Inferno Lord slain", -- [1]
+			"104/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -568,7 +572,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1392, -- [11]
+			2117, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -576,11 +580,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985932,
+			[51] = 1600315011,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [26]
 		{
-			"7/10 Raging Firestorm slain", -- [1]
+			"105/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -590,7 +594,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1395, -- [11]
+			2118, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -598,11 +602,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985944,
+			[51] = 1600315012,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [27]
 		{
-			"10/10 Frightened Animal", -- [1]
+			"106/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -612,7 +616,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1398, -- [11]
+			2119, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -620,11 +624,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985949,
+			[51] = 1600315012,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [28]
 		{
-			"8/10 Raging Firestorm slain", -- [1]
+			"107/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -634,7 +638,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1402, -- [11]
+			2120, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -642,11 +646,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985958,
+			[51] = 1600315014,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [29]
 		{
-			"9/10 Raging Firestorm slain", -- [1]
+			"108/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -656,7 +660,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1406, -- [11]
+			2121, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -664,11 +668,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985968,
+			[51] = 1600315014,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [30]
 		{
-			"10/10 Raging Firestorm slain", -- [1]
+			"111/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -678,7 +682,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1410, -- [11]
+			2123, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -686,11 +690,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985979,
+			[51] = 1600315016,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [31]
 		{
-			"Completed: Fighting Fire With ... Anything", -- [1]
+			"112/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -700,7 +704,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1418, -- [11]
+			2125, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -708,11 +712,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597985999,
+			[51] = 1600315018,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [32]
 		{
-			"Completed: Disrupting the Rituals", -- [1]
+			"113/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -722,7 +726,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1426, -- [11]
+			2126, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -730,11 +734,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986000,
+			[51] = 1600315019,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [33]
 		{
-			"Completed: Save the Wee Animals", -- [1]
+			"115/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -744,7 +748,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1432, -- [11]
+			2127, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -752,11 +756,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986011,
+			[51] = 1600315020,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [34]
 		{
-			"Picked Up: Oh, Deer!", -- [1]
+			"121/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -766,7 +770,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1434, -- [11]
+			2129, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -774,11 +778,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986011,
+			[51] = 1600315021,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [35]
 		{
-			"3/3 Injured Fawn Escorted Home", -- [1]
+			"124/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -788,7 +792,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1435, -- [11]
+			2130, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -796,11 +800,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986087,
+			[51] = 1600315022,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [36]
 		{
-			"Completed: Oh, Deer!", -- [1]
+			"129/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -810,7 +814,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1443, -- [11]
+			2132, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -818,11 +822,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986108,
+			[51] = 1600315023,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [37]
 		{
-			"Completed: The Name Never Spoken", -- [1]
+			"133/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -832,7 +836,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1448, -- [11]
+			2133, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -840,11 +844,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986132,
+			[51] = 1600315023,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [38]
 		{
-			"Picked Up: Black Heart of Flame", -- [1]
+			"135/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -854,7 +858,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1451, -- [11]
+			2134, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -862,11 +866,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986134,
+			[51] = 1600315024,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [39]
 		{
-			"1/1 Black Heart of Thol'embaar", -- [1]
+			"143/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -876,7 +880,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1457, -- [11]
+			2135, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -884,11 +888,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986172,
+			[51] = 1600315025,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [40]
 		{
-			"Picked Up: Good News... and Bad News", -- [1]
+			"145/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -898,7 +902,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1472, -- [11]
+			2137, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -906,11 +910,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986230,
+			[51] = 1600315026,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [41]
 		{
-			"Completed: Black Heart of Flame", -- [1]
+			"146/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -920,7 +924,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1473, -- [11]
+			2138, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -928,11 +932,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986231,
+			[51] = 1600315026,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [42]
 		{
-			"Picked Up: Last Stand at Whistling Grove", -- [1]
+			"148/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -942,7 +946,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1481, -- [11]
+			2139, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -950,11 +954,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986271,
+			[51] = 1600315027,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [43]
 		{
-			"Completed: Good News... and Bad News", -- [1]
+			"150/150 God-King's Minions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -964,7 +968,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1487, -- [11]
+			2140, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -972,11 +976,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986273,
+			[51] = 1600315030,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [44]
 		{
-			"Completed: Last Stand at Whistling Grove", -- [1]
+			"1/1 Leave Hrydshal", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -986,7 +990,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1494, -- [11]
+			2141, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -994,11 +998,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986307,
+			[51] = 1600315030,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [45]
 		{
-			"Picked Up: The Bears Up There", -- [1]
+			"Picked Up: The Trials Continue", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1008,7 +1012,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1497, -- [11]
+			2152, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1016,11 +1020,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986308,
+			[51] = 1600315073,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [46]
 		{
-			"1/6 Hyjal Bear Cubs Rescued", -- [1]
+			"Completed: Cry Thunder!", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1030,7 +1034,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1498, -- [11]
+			2153, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1038,33 +1042,33 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986315,
+			[51] = 1600315073,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [47]
 		{
-			"2/6 Hyjal Bear Cubs Rescued", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"3. LocalDefense - Stormheim", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Stormheim", -- [9]
 			0, -- [10]
-			1503, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2158, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986328,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "",
+			[51] = 1600315149,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [48]
 		{
-			"3/6 Hyjal Bear Cubs Rescued", -- [1]
+			"Picked Up: Speaking of Bones", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1074,7 +1078,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1505, -- [11]
+			2169, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1082,11 +1086,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986340,
+			[51] = 1600315218,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [49]
 		{
-			"4/6 Hyjal Bear Cubs Rescued", -- [1]
+			"Completed: The Trials Continue", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1096,7 +1100,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1506, -- [11]
+			2170, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1104,11 +1108,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986341,
+			[51] = 1600315218,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [50]
 		{
-			"5/6 Hyjal Bear Cubs Rescued", -- [1]
+			"1/1 Ironhorn Buck butchered", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1118,7 +1122,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1508, -- [11]
+			2175, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1126,55 +1130,55 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986356,
+			[51] = 1600315242,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [51]
 		{
-			"6/6 Hyjal Bear Cubs Rescued", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"3. LocalDefense - Stormheim", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Stormheim", -- [9]
 			0, -- [10]
-			1510, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2179, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986367,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "",
+			[51] = 1600315438,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [52]
 		{
-			"Completed: The Bears Up There", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"3. LocalDefense - Stormheim", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Stormheim", -- [9]
 			0, -- [10]
-			1518, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2181, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986386,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "",
+			[51] = 1600315499,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [53]
 		{
-			"Picked Up: Smashing Through Ashes", -- [1]
+			"Picked Up: To Haustvald", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1184,7 +1188,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1519, -- [11]
+			2193, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1192,11 +1196,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986386,
+			[51] = 1600315651,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [54]
 		{
-			"1/8 Charbringer slain", -- [1]
+			"Completed: Speaking of Bones", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1206,7 +1210,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1525, -- [11]
+			2194, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1214,275 +1218,275 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986432,
+			[51] = 1600315651,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [55]
 		{
-			"2/8 Charbringer slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS |cffa335ee|Hitem:72145::::::::120:64::14::::|h[Swift Springstrider]|h|r", -- [1]
+			"Sûcy-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Sûcy-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1531, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2200, -- [11]
+			"Player-3683-0BDE62AB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986445,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Sûcy|r",
+			[51] = 1600315750,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [56]
 		{
-			"3/8 Charbringer slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"<starlight> wts KEYS  +15 -20 TIMED (specific key available an free armor stacking)// aotc 55k// full nyalotha clear (heroic 150k and mythic) /loot funnels available//mounts//pvp carries and more // jaina mount//gold only dm for +info cheapest prices ", -- [1]
+			"Emmirs-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Emmirs-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1539, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2201, -- [11]
+			"Player-3683-0C0B6009", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986459,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cEmmirs|r",
+			[51] = 1600315797,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [57]
 		{
-			"4/8 Charbringer slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Okosaxoce-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Okosaxoce-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1544, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2202, -- [11]
+			"Player-3683-0C769181", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986474,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cOkosaxoce|r",
+			[51] = 1600315804,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [58]
 		{
-			"5/8 Charbringer slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS Mythic+11-20keys Carry-Get weekly chest 465-475ilvl and 100% Corruption gear,also do Heroic Ny'alotha (12/12) Full clear, Vision 5 mask. Jaina and Mechagon 8/8 HM for mount[Aerial Unit R-21/X],PST", -- [1]
+			"Daprunhith-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Daprunhith-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1549, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2203, -- [11]
+			"Player-3683-0C765C7C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986481,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffefefeDaprunhith|r",
+			[51] = 1600315847,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [59]
 		{
-			"6/8 Charbringer slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS |cffa335ee|Hitem:72145::::::::120:64::14::::|h[Swift Springstrider]|h|r", -- [1]
+			"Sûcy-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Sûcy-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1554, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2208, -- [11]
+			"Player-3683-0BDE62AB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986492,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Sûcy|r",
+			[51] = 1600315903,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [60]
 		{
-			"7/8 Charbringer slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"LF heals for +0 Underrot", -- [1]
+			"Nitôxin-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Nitôxin-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1559, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2209, -- [11]
+			"Player-3683-0C008782", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986516,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfff38bb9Nitôxin|r",
+			[51] = 1600315906,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [61]
 		{
-			"8/8 Charbringer slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Okosaxoce-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Okosaxoce-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1564, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2211, -- [11]
+			"Player-3683-0C769181", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986524,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cOkosaxoce|r",
+			[51] = 1600315920,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [62]
 		{
-			"Picked Up: Durable Seeds", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"|cffffd100|HclubFinder:ClubFinder-1-128773-3683-90918869|h[Guild: Lions Guard]|h|r Looking for people who want to grow with us. Focused on keeping a social and active Discord, constant guild events, M+ and dedicated AOTC raid TEAMS! LFM Raiders! +18", -- [1]
+			"Jonjou-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Jonjou-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1578, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2212, -- [11]
+			"Player-3683-0BF8C782", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986564,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Jonjou|r",
+			[51] = 1600315928,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [63]
 		{
-			"Completed: Smashing Through Ashes", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS Heroic N'zoth only kills! Kill includes Ahead of the Curve Achievement,|cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r mount and any loot via the personal loot system! Going soon!! GOLD ONLY", -- [1]
+			"Gochufour-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Gochufour-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1579, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2214, -- [11]
+			"Player-3683-0C67BB86", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986564,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffefefeGochufour|r",
+			[51] = 1600315945,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [64]
 		{
-			"Picked Up: Fresh Bait", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"<starlight> wts KEYS  +15 -20 TIMED (specific key available an free armor stacking)// aotc 55k// full nyalotha clear (heroic 150k and mythic) /loot funnels available//mounts//pvp carries and more // jaina mount//gold only dm for +info cheapest prices ", -- [1]
+			"Emmirs-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Emmirs-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1581, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2215, -- [11]
+			"Player-3683-0C0B6009", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986566,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cEmmirs|r",
+			[51] = 1600315947,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [65]
 		{
-			"Picked Up: Firebreak", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS AOTC Pulling now. GOLD ONLY, summons available and completely afkable! PST", -- [1]
+			"Salepiggy-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Salepiggy-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1583, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2218, -- [11]
+			"Player-3683-0C39EF00", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986570,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Salepiggy|r",
+			[51] = 1600315967,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [66]
 		{
-			"1/10 Lava Surger slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS:Mythic Ny'alotha1-10/Heroic Ny'alotha12/12;  Mythic+11-20keys Carry;Get weekly chest 465-475ilvl and 100% Corruption gear;Also do Jaina and Mechagon 8/8 get mount |cffa335ee|Hitem:168830::::::::1:256::::::|h[Aerial Unit R-21/X]|h|r; Pst !", -- [1]
+			"Daprunhith-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Daprunhith-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1586, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2219, -- [11]
+			"Player-3683-0C765C7C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986590,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffefefeDaprunhith|r",
+			[51] = 1600315977,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [67]
 		{
-			"2/10 Lava Surger slain", -- [1]
+			"Completed: Memories of Ebonchill", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1492,7 +1496,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1592, -- [11]
+			2225, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1500,11 +1504,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986613,
+			[51] = 1600315981,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [68]
 		{
-			"1/10 Hyjal Seedling", -- [1]
+			"Picked Up: Rise, Champions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1514,7 +1518,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1601, -- [11]
+			2233, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1522,11 +1526,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986637,
+			[51] = 1600315986,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [69]
 		{
-			"3/10 Lava Surger slain", -- [1]
+			"Picked Up: A Second Weapon", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1536,7 +1540,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1607, -- [11]
+			2237, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1544,11 +1548,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986648,
+			[51] = 1600315987,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [70]
 		{
-			"4/10 Lava Surger slain", -- [1]
+			"Completed: Growing Power", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1558,7 +1562,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1610, -- [11]
+			2238, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1566,11 +1570,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986653,
+			[51] = 1600315987,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [71]
 		{
-			"5/10 Lava Surger slain", -- [1]
+			"1/1 Recruit Archmage Modera", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1580,7 +1584,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1616, -- [11]
+			2241, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1588,11 +1592,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986666,
+			[51] = 1600315991,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [72]
 		{
-			"6/10 Lava Surger slain", -- [1]
+			"1/1 Recruit Archmage Kalec", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1602,7 +1606,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1625, -- [11]
+			2245, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1610,11 +1614,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986693,
+			[51] = 1600315994,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [73]
 		{
-			"7/10 Lava Surger slain", -- [1]
+			"Picked Up: Technical Wizardry", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1624,7 +1628,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1635, -- [11]
+			2252, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1632,11 +1636,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986724,
+			[51] = 1600315997,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [74]
 		{
-			"8/10 Lava Surger slain", -- [1]
+			"Completed: Rise, Champions", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1646,7 +1650,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1638, -- [11]
+			2253, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1654,77 +1658,77 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986728,
+			[51] = 1600315997,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [75]
 		{
-			"1/4 Core Hound Entrails", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS |cffa335ee|Hitem:72145::::::::120:64::14::::|h[Swift Springstrider]|h|r", -- [1]
+			"Sûcy-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Sûcy-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1642, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2255, -- [11]
+			"Player-3683-0BDE62AB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986730,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Sûcy|r",
+			[51] = 1600316000,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [76]
 		{
-			"9/10 Lava Surger slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"<starlight> wts KEYS  +15 -20 TIMED (specific key available an free armor stacking)// aotc 55k// full nyalotha clear (heroic 150k and mythic) /loot funnels available//mounts//pvp carries and more // jaina mount//gold only dm for +info cheapest prices ", -- [1]
+			"Emmirs-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Emmirs-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1648, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2256, -- [11]
+			"Player-3683-0C0B6009", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986740,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cEmmirs|r",
+			[51] = 1600316005,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [77]
 		{
-			"10/10 Lava Surger slain", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Okosaxoce-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Okosaxoce-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1654, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2257, -- [11]
+			"Player-3683-0C769181", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986761,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cOkosaxoce|r",
+			[51] = 1600316055,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [78]
 		{
-			"2/4 Core Hound Entrails", -- [1]
+			"Picked Up: Archmage Omniara", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1734,7 +1738,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1669, -- [11]
+			2264, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1742,11 +1746,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986811,
+			[51] = 1600316063,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [79]
 		{
-			"3/4 Core Hound Entrails", -- [1]
+			"Completed: Technical Wizardry", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1756,7 +1760,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1684, -- [11]
+			2265, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1764,187 +1768,187 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986840,
+			[51] = 1600316063,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [80]
 		{
-			"2/10 Hyjal Seedling", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS AOTC Pulling now. GOLD ONLY, summons available and completely afkable! PST", -- [1]
+			"Salepiggy-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Salepiggy-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1690, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2267, -- [11]
+			"Player-3683-0C39EF00", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986856,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Salepiggy|r",
+			[51] = 1600316076,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [81]
 		{
-			"3/10 Hyjal Seedling", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS |cff0070dd|Hitem:48126::::::::120:102::::::|h[Razzashi Hatchling]|h|r ", -- [1]
+			"Lightali-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Lightali-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1695, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2269, -- [11]
+			"Player-3683-0C762012", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986885,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffe7b09Lightali|r",
+			[51] = 1600316118,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [82]
 		{
-			"4/10 Hyjal Seedling", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"<Comrades> 10/12M Nya. Recruiting DPS (mage, warlock, hunter) for SL. Plan to get AoTC first week then moving into Mythic. Raid Times Tues/Wed 10pm-1230am. Pushing Mythic+ as well. Pst for more info.", -- [1]
+			"Nanerylia-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Nanerylia-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1697, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2270, -- [11]
+			"Player-3683-0AB976EF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986892,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffa9d271Nanerylia|r",
+			[51] = 1600316131,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [83]
 		{
-			"5/10 Hyjal Seedling", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Okosaxoce-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Okosaxoce-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1700, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2271, -- [11]
+			"Player-3683-0C769181", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986904,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cOkosaxoce|r",
+			[51] = 1600316160,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [84]
 		{
-			"6/10 Hyjal Seedling", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS M15 timed and untimed with FREE armor/loot stack. also selling KSM season 4 GOLD ONLY.", -- [1]
+			"Canasonne-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Canasonne-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1709, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2273, -- [11]
+			"Player-3683-0C76B322", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986934,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff00fe95Canasonne|r",
+			[51] = 1600316175,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [85]
 		{
-			"7/10 Hyjal Seedling", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS |cffa335ee|Hitem:72145::::::::120:64::14::::|h[Swift Springstrider]|h|r", -- [1]
+			"Sûcy-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Sûcy-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1711, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2274, -- [11]
+			"Player-3683-0BDE62AB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986941,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Sûcy|r",
+			[51] = 1600316177,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [86]
 		{
-			"8/10 Hyjal Seedling", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"<starlight> wts KEYS  +15 -20 TIMED (specific key available an free armor stacking)// aotc 55k// full nyalotha clear (heroic 150k and mythic) /loot funnels available//mounts//pvp carries and more // jaina mount//gold only dm for +info cheapest prices ", -- [1]
+			"Emmirs-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Emmirs-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1716, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2275, -- [11]
+			"Player-3683-0C0B6009", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986951,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cEmmirs|r",
+			[51] = 1600316180,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [87]
 		{
-			"9/10 Hyjal Seedling", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS Heroic N'zoth only kills! Kill includes Ahead of the Curve Achievement,|cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r mount and any loot via the personal loot system! Going soon!! GOLD ONLY", -- [1]
+			"Gochufour-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Gochufour-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1718, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2277, -- [11]
+			"Player-3683-0C67BB86", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986958,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffefefeGochufour|r",
+			[51] = 1600316210,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [88]
 		{
-			"4/4 Core Hound Entrails", -- [1]
+			"1/1 \"Omniara Needs Help\" mission completed", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1954,7 +1958,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1721, -- [11]
+			2280, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1962,11 +1966,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597986989,
+			[51] = 1600316228,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [89]
 		{
-			"10/10 Hyjal Seedling", -- [1]
+			"Picked Up: Building Our Troops", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1976,7 +1980,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1727, -- [11]
+			2288, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1984,33 +1988,33 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987000,
+			[51] = 1600316236,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [90]
 		{
-			"Completed: Firebreak", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS Mythic+11-20keys Carry-Get weekly chest 465-475ilvl and 100% Corruption gear,also do Heroic Ny'alotha (12/12) Full clear, Vision 5 mask. Jaina and Mechagon 8/8 HM for mount[Aerial Unit R-21/X],PST", -- [1]
+			"Daprunhith-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Daprunhith-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1734, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2289, -- [11]
+			"Player-3683-0C765C7C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987043,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffefefeDaprunhith|r",
+			[51] = 1600316236,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [91]
 		{
-			"Picked Up: Prepping the Soil", -- [1]
+			"Completed: Archmage Omniara", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2020,7 +2024,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1737, -- [11]
+			2290, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2028,55 +2032,55 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987045,
+			[51] = 1600316236,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [92]
 		{
-			"Completed: Durable Seeds", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"<starlight> wts KEYS  +15 -20 TIMED (specific key available an free armor stacking)// aotc 55k// full nyalotha clear (heroic 150k and mythic) /loot funnels available//mounts//pvp carries and more // jaina mount//gold only dm for +info cheapest prices ", -- [1]
+			"Emmirs-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Emmirs-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1744, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2291, -- [11]
+			"Player-3683-0C0B6009", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987049,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cEmmirs|r",
+			[51] = 1600316241,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [93]
 		{
-			"Completed: Fresh Bait", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Okosaxoce-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Okosaxoce-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1752, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2294, -- [11]
+			"Player-3683-0C769181", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987057,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cffc59a6cOkosaxoce|r",
+			[51] = 1600316267,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [94]
 		{
-			"Picked Up: Hell's Shells", -- [1]
+			"1/1 Recruit Water Elementals", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2086,7 +2090,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1755, -- [11]
+			2297, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2094,11 +2098,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987058,
+			[51] = 1600316289,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [95]
 		{
-			"Picked Up: Scrambling for Eggs", -- [1]
+			"Picked Up: Troops in the Field", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2108,7 +2112,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1761, -- [11]
+			2304, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2116,11 +2120,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987176,
+			[51] = 1600316296,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [96]
 		{
-			"Picked Up: The Wormwing Problem", -- [1]
+			"Completed: Building Our Troops", -- [1]
 			"Darnastris-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2130,7 +2134,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1763, -- [11]
+			2305, -- [11]
 			"Player-3683-0B9BB303", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2138,52 +2142,52 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987182,
+			[51] = 1600316296,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [97]
 		{
-			"Completed: Aviana's Legacy", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"|cffffd100|HclubFinder:ClubFinder-1-128773-3683-90918869|h[Guild: Lions Guard]|h|r Looking for people who want to grow with us. Focused on keeping a social and active Discord, constant guild events, M+ and dedicated AOTC raid TEAMS! LFM Raiders! +18", -- [1]
+			"Jonjou-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Jonjou-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1770, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2307, -- [11]
+			"Player-3683-0BF8C782", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987198,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Jonjou|r",
+			[51] = 1600316306,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [98]
 		{
-			"Picked Up: An Offering for Aviana", -- [1]
-			"Darnastris-Dalaran", -- [2]
+			"WTS |cffa335ee|Hitem:72145::::::::120:64::14::::|h[Swift Springstrider]|h|r", -- [1]
+			"Sûcy-Dalaran", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Darnastris-Dalaran", -- [5]
+			"2. Trade - City", -- [4]
+			"Sûcy-Dalaran", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1773, -- [11]
-			"Player-3683-0B9BB303", -- [12]
+			2308, -- [11]
+			"Player-3683-0BDE62AB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Darnastris|r",
-			[51] = 1597987199,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cff3ec5e9Sûcy|r",
+			[51] = 1600316308,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
 }

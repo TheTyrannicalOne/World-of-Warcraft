@@ -1,29 +1,29 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0333,
+	["LastVersion"] = 2.0335,
 	["LastPlayerFullName"] = "Darnastris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122250,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122250::::::::91:64:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
+			["Level"] = 153,
+			["Link"] = "|cff00ccff|Hitem:122250::::::::105:64:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122664,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122664::::::::91:64:::1:5805:::|h[Eternal Horizon Choker]|h|r",
+			["Level"] = 153,
+			["Link"] = "|cff00ccff|Hitem:122664::::::::105:64:::1:5805:::|h[Eternal Horizon Choker]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122360,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122360::::::::91:64:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
+			["Level"] = 153,
+			["Link"] = "|cff00ccff|Hitem:122360::::::::105:64:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122384,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122384::::::::91:64:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
+			["Level"] = 153,
+			["Link"] = "|cff00ccff|Hitem:122384::::::::105:64:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 57385,
@@ -32,8 +32,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122256,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122256::::::::91:64:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
+			["Level"] = 153,
+			["Link"] = "|cff00ccff|Hitem:122256::::::::105:64:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 57356,
@@ -46,44 +46,50 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:37957::::::::86:64:512:11:1:3687:80:::|h[Wastewind Bracers]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 57379,
-			["Level"] = 113,
-			["Link"] = "|cff1eff00|Hitem:57379::::::::88:64:512:11:1:3693:88:::|h[Clutches of the Worgen Spirit]|h|r",
+			["ID"] = 121160,
+			["Level"] = 142,
+			["Link"] = "|cff1eff00|Hitem:121160::::::::102:64:512::2:1812:1683:102:::|h[Hrydshal Handwraps of the Peerless]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 122529,
-			["Level"] = 123,
+			["Level"] = 153,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::91:64:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122529::::::::105:64:::1:5805:::|h[Dread Pirate Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128169,
-			["Level"] = 123,
+			["Level"] = 153,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::91:64:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::105:64:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122362,
-			["Level"] = 123,
+			["Level"] = 153,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::91:64:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::105:64:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122362,
-			["Level"] = 121,
+			["Level"] = 151,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::90:64:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::104:64:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122262,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122262::::::::91:64:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
+			["Level"] = 153,
+			["Link"] = "|cff00ccff|Hitem:122262::::::::105:64:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 122353,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122353::::::::91:64:::1:5805:::|h[Dignified Headmaster's Charge]|h|r",
+			["ID"] = 128862,
+			["Level"] = 152,
+			["Link"] = "|cffe6cc80|Hitem:128862::::::::101:64::9::::|h[Ebonchill]|h|r",
 		}, -- [16]
+		{
+			["ID"] = 116461,
+			["Level"] = 116,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff1eff00|Hitem:116461::::::::100:64:::1:152:::|h[Frostbitten Dagger of the Aurora]|h|r",
+		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
 }

@@ -1,38 +1,6 @@
 
 SpyDB = {
 	["kosData"] = {
-		["Argent Dawn"] = {
-			["Horde"] = {
-				["Shanyt"] = {
-				},
-				["Tyrannithal"] = {
-				},
-			},
-		},
-		["Black Dragonflight"] = {
-			["Horde"] = {
-				["Durlok"] = {
-				},
-			},
-		},
-		["Dalaran"] = {
-			["Alliance"] = {
-				["Illingrath"] = {
-				},
-				["Ruffinton"] = {
-				},
-				["Serbitechna"] = {
-				},
-				["Avisar"] = {
-				},
-				["Thorinbane"] = {
-				},
-				["Tinkster"] = {
-				},
-				["Darnastris"] = {
-				},
-			},
-		},
 		["Zul'jin"] = {
 			["Horde"] = {
 				["Vancard"] = {
@@ -42,6 +10,10 @@ SpyDB = {
 				["Zulbathal"] = {
 				},
 				["Kotalkhan"] = {
+				},
+				["Shanyt"] = {
+				},
+				["Tyranasticus"] = {
 				},
 				["Shimzo"] = {
 				},
@@ -55,10 +27,50 @@ SpyDB = {
 				},
 			},
 		},
-	},
-	["removeKOSData"] = {
+		["Black Dragonflight"] = {
+			["Horde"] = {
+				["Durlok"] = {
+				},
+			},
+		},
+		["Dalaran"] = {
+			["Alliance"] = {
+				["Rotclaugh"] = {
+				},
+				["Ruffinton"] = {
+				},
+				["Serbitechna"] = {
+				},
+				["Tinkster"] = {
+				},
+				["Darnastris"] = {
+				},
+				["Malivant"] = {
+				},
+				["Avisar"] = {
+				},
+				["Thorinbane"] = {
+				},
+				["Kelvalatar"] = {
+				},
+				["Illingrath"] = {
+				},
+			},
+		},
 		["Argent Dawn"] = {
 			["Horde"] = {
+				["Shanyt"] = {
+				},
+				["Tyrannithal"] = {
+				},
+			},
+		},
+	},
+	["removeKOSData"] = {
+		["Zul'jin"] = {
+			["Horde"] = {
+			},
+			["Neutral"] = {
 			},
 		},
 		["Black Dragonflight"] = {
@@ -69,15 +81,14 @@ SpyDB = {
 			["Alliance"] = {
 			},
 		},
-		["Zul'jin"] = {
+		["Argent Dawn"] = {
 			["Horde"] = {
-			},
-			["Neutral"] = {
 			},
 		},
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
@@ -88,16 +99,32 @@ SpyDB = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Tyranasticus - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -249,6 +276,18 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
+		["Kelvalatar - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
 		["Datgore - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
@@ -272,31 +311,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Durlok - Black Dragonflight"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-		},
-		["Serbitechna - Dalaran"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-		},
-		["Fantastiburo - Zul'jin"] = {
+		["Rotclaugh - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -326,6 +341,65 @@ SpyDB = {
 						["a"] = 1,
 					},
 				},
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Durlok - Black Dragonflight"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Fantastiburo - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Serbitechna - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Malivant - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Shanyt - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,

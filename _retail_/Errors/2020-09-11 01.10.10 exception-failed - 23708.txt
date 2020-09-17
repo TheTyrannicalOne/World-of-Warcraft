@@ -1,0 +1,5 @@
+Exception handler died
+Original exception:
+ACCESS_VIOLATION
+The instruction at "0x00007ff9262dbc6a" referenced memory at "0x00007ff9262dbc6a".
+The memory could not be "executed".

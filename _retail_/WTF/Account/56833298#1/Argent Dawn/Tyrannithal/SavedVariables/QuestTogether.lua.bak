@@ -8,10 +8,17 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
+		[44663] = {
+			["title"] = "In the Blink of an Eye",
+			["objectives"] = {
+				"0/1 Talk to the Kirin Tor Emissary to teleport you to Dalaran (Optional)", -- [1]
+				"0/1 Dalaran's Teleportation Witnessed", -- [2]
+			},
+		},
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
@@ -31,18 +38,11 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[44663] = {
-			["title"] = "In the Blink of an Eye",
-			["objectives"] = {
-				"0/1 Talk to the Kirin Tor Emissary to teleport you to Dalaran (Optional)", -- [1]
-				"0/1 Dalaran's Teleportation Witnessed", -- [2]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

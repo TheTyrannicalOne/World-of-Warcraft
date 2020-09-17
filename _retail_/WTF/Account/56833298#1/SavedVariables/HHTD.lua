@@ -4,6 +4,9 @@ HHTD_SavedVariables = {
 		["Vancard - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
+		["Tyranasticus - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
 		["Illingrath - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
@@ -34,27 +37,48 @@ HHTD_SavedVariables = {
 		["Ruffinton - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
+		["Kelvalatar - Dalaran"] = {
+			["settingsMigrated"] = false,
+		},
 		["Datgore - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Darnastris - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Durlok - Black Dragonflight"] = {
-			["settingsMigrated"] = false,
-		},
-		["Serbitechna - Dalaran"] = {
-			["settingsMigrated"] = false,
-		},
-		["Fantastiburo - Zul'jin"] = {
+		["Rotclaugh - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Zulbathal - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
+		["Durlok - Black Dragonflight"] = {
+			["settingsMigrated"] = false,
+		},
+		["Fantastiburo - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
+		["Serbitechna - Dalaran"] = {
+			["settingsMigrated"] = false,
+		},
+		["Malivant - Dalaran"] = {
+			["settingsMigrated"] = false,
+		},
+		["Shanyt - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
+	},
+	["namespaces"] = {
+		["Announcer"] = {
+		},
+		["CM"] = {
+		},
+		["NPH"] = {
+		},
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
@@ -65,23 +89,19 @@ HHTD_SavedVariables = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["global"] = {
 		["settingsMigrated"] = false,
 		["oldNameEnableState"] = 0,
-	},
-	["namespaces"] = {
-		["Announcer"] = {
-		},
-		["CM"] = {
-		},
-		["NPH"] = {
-		},
 	},
 }

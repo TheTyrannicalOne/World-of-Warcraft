@@ -13,12 +13,16 @@ dbBFA = {
 		["Illingrath - Dalaran"] = {
 			["firstun"] = false,
 		},
+		["Darnastris - Dalaran"] = {
+			["firstun"] = false,
+		},
 	},
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 	},
 	["global"] = {
 		["warn01_seen"] = 0,

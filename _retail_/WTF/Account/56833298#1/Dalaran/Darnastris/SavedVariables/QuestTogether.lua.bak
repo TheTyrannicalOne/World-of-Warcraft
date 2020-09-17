@@ -1,24 +1,36 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[13041] = {
-			["title"] = "Finish the Shipment",
+		[28732] = {
+			["title"] = "This Can Only Mean One Thing...",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"Arrive at Blackrock Caverns.", -- [1]
+			},
+		},
+		[42429] = {
+			["title"] = "Memories of Ebonchill",
+			["objectives"] = {
+				"Speak to a Reflection of the Council of Tirisfal", -- [1]
+			},
+		},
+		[28826] = {
+			["title"] = "The Eye of the Storm",
+			["objectives"] = {
+				"0/1 Peered into the Waters of Farseeing", -- [1]
 			},
 		},
 		[27354] = {
 			["title"] = "Mastering the Arcane",
 			["objectives"] = {
-				"0/1  ", -- [1]
-				"0/5  ", -- [2]
-				"0/5  ", -- [3]
+				"1/1 Silverlaine's Enchanted Crystal", -- [1]
+				"5/5 Moontouched Wood", -- [2]
+				"5/5 Ghostly Essence", -- [3]
 			},
 		},
 		[25186] = {
 			["title"] = "Futile Resistance",
 			["objectives"] = {
-				"0/1   slain", -- [1]
+				"0/1 Kona Thunderwalk slain", -- [1]
 			},
 		},
 		[54185] = {
@@ -28,22 +40,26 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[12292] = {
-			["title"] = "Local Support",
+		[27203] = {
+			["title"] = "The Maelstrom",
 			["objectives"] = {
-				"0/1  ", -- [1]
 			},
 		},
 		[28398] = {
 			["title"] = "The Pyromancer's Grimoire",
 			["objectives"] = {
-				"0/6   slain", -- [1]
-				"0/1  ", -- [2]
+				"0/6 Twilight Emissary slain", -- [1]
+				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
-		[12789] = {
-			["title"] = "Into the Breach!",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[25191] = {
@@ -69,19 +85,21 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[12225] = {
-			["title"] = "Mmm... Amberseeds!",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
 			["objectives"] = {
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[13041] = {
+			["title"] = "Finish the Shipment",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/1 Chalcedony", -- [1]
 			},
 		},
 		[25768] = {
@@ -94,21 +112,22 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[49864] = {
-			["title"] = "Wars on Two Fronts",
+		[37433] = {
+			["title"] = "Proving Grounds",
 			["objectives"] = {
-				"0/1 Select your next assignment", -- [1]
+				"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
+				"0/1 Complete a Bronze Trial", -- [2]
 			},
 		},
-		[12466] = {
-			["title"] = "Chasing Icestorm: The 7th Legion Front",
+		[34692] = {
+			["title"] = "Delegating on Draenor",
 			["objectives"] = {
+				"Use the Command Table", -- [1]
 			},
 		},
 	},

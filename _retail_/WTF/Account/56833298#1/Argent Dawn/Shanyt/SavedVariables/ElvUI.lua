@@ -2,909 +2,909 @@
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 		{
-			"they knew how it was going to go lolz", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"125 cap I bought one and couldnt equip it", -- [1]
+			"Zymor-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1123, -- [11]
-			"Player-75-058380E2", -- [12]
+			1305, -- [11]
+			"Player-75-0280C688", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697070,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcZymor|r",
+			[51] = 1600207881,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [1]
 		{
-			"lmfao its rlly ez", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Yeah, 125 is the cap", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1124, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1306, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697102,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600207891,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [2]
 		{
-			"so checked it out and i was able to get it pretty easy and i was in the down group which people kept saying was harder but not if you just pay attnetion and tanks pull to the tenticles", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"well hell", -- [1]
+			"Shambone-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1125, -- [11]
-			"Player-75-058380E2", -- [12]
+			1307, -- [11]
+			"Player-75-0BC9602C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697116,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcShambone|r",
+			[51] = 1600207896,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [3]
 		{
-			"exactlyyy", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"The store is just poorly coded so the core showed up when it shouldn't have", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1126, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1309, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697140,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600207904,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [4]
 		{
-			"must pay attention to what group youre in too", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"that's fun", -- [1]
+			"Shambone-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1127, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1310, -- [11]
+			"Player-75-0BC9602C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697150,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff006fdcShambone|r",
+			[51] = 1600207918,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [5]
 		{
-			"portal or stay groups", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Yup", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1128, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1311, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697183,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600207921,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [6]
 		{
-			"but after all that i think the people really learned and can go forward as when we beat it we beat it easily just people finanly listned", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"buying guild signatures 1k ea", -- [1]
+			"Morphntime-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"3. Trade - City", -- [4]
+			"Morphntime-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1129, -- [11]
-			"Player-75-058380E2", -- [12]
+			1312, -- [11]
+			"Player-75-0CB05C47", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697187,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffe7b09Morphntime|r",
+			[51] = 1600207923,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [7]
 		{
-			"never forget new lfr groups", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"The true Blizzard experience", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1130, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1313, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697203,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600207928,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [8]
 		{
-			"its aids once you do it over and over, i healed, dps, uhh not tanked yet but yeah", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"I wanted more!!", -- [1]
+			"Zymor-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1131, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1314, -- [11]
+			"Player-75-0280C688", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697226,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff006fdcZymor|r",
+			[51] = 1600207934,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [9]
 		{
-			"yeah if i get a few pieces of gear i might try and get in a heroric get the mount but likely not going to beat the prepatch", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"that means I'm going to have to cleanse something because this Thing from beyond business is out of control", -- [1]
+			"Shambone-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1132, -- [11]
-			"Player-75-058380E2", -- [12]
+			1322, -- [11]
+			"Player-75-0BC9602C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697244,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcShambone|r",
+			[51] = 1600207989,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [10]
 		{
-			"yeah i dont really tank i would liek to but people got very little patience to work with you always straight to blame", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"I had two chasing me", -- [1]
+			"Shambone-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1133, -- [11]
-			"Player-75-058380E2", -- [12]
+			1323, -- [11]
+			"Player-75-0BC9602C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697285,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcShambone|r",
+			[51] = 1600207995,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [11]
 		{
-			"awww :/", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Haha", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1134, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1324, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697288,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600207995,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [12]
 		{
-			"well some folks try to help but you got to listen which is exact oposite of what those tanks did lol", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"in that stupid vision", -- [1]
+			"Shambone-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1135, -- [11]
-			"Player-75-058380E2", -- [12]
+			1325, -- [11]
+			"Player-75-0BC9602C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697313,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcShambone|r",
+			[51] = 1600208001,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [13]
 		{
-			"I might have cheated on AOTC but thats okay lol", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"It gets rough sometimes, for sure", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1136, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1326, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697317,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600208003,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [14]
 		{
-			"ha", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"guess Void ritual is going away", -- [1]
+			"Shambone-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1137, -- [11]
-			"Player-75-058380E2", -- [12]
+			1330, -- [11]
+			"Player-75-0BC9602C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697328,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcShambone|r",
+			[51] = 1600208032,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [15]
 		{
-			"im rlly lazy with gearing", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"buying morphntime's mom, 1k ea", -- [1]
+			"Thiccsnicker-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"3. Trade - City", -- [4]
+			"Thiccsnicker-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1138, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1333, -- [11]
+			"Player-75-0D7F1A3B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697334,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Thiccsnicker|r",
+			[51] = 1600208042,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [16]
 		{
-			"sometimes", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"grow up", -- [1]
+			"Etmorechicn-TheScryers", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"3. Trade - City", -- [4]
+			"Etmorechicn-TheScryers", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1139, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1334, -- [11]
+			"Player-75-0B62658B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697336,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Etmorechicn-TheScryers|r",
+			[51] = 1600208057,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [17]
 		{
-			"they void weeklys helped me get a lot of good pieces its trinkets and weaon and rings i need to get further up ", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"sold!", -- [1]
+			"Morphntime-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"3. Trade - City", -- [4]
+			"Morphntime-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1140, -- [11]
-			"Player-75-058380E2", -- [12]
+			1336, -- [11]
+			"Player-75-0CB05C47", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697408,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffe7b09Morphntime|r",
+			[51] = 1600208075,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [18]
 		{
-			"ooooo", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"i know you are, but what am i?", -- [1]
+			"Shocknproc-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"3. Trade - City", -- [4]
+			"Shocknproc-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1141, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1337, -- [11]
+			"Player-75-0B82B35C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697427,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cff006fdcShocknproc|r",
+			[51] = 1600208078,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [19]
 		{
-			"youre somewhat 6 away from me", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Wait, that easy? I should've offered 500...", -- [1]
+			"Thiccsnicker-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"3. Trade - City", -- [4]
+			"Thiccsnicker-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1142, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1338, -- [11]
+			"Player-75-0D7F1A3B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697443,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Thiccsnicker|r",
+			[51] = 1600208108,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [20]
 		{
-			"i typically dont raid i think its fun in its own way its just to much time investment for me", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Good choice", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1143, -- [11]
-			"Player-75-058380E2", -- [12]
+			1342, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697446,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600208168,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [21]
 		{
-			"no one else wanted to join this one is always tough to find someone for", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"buying guild signatures 1k ea", -- [1]
+			"Morphntime-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"3. Trade - City", -- [4]
+			"Morphntime-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1144, -- [11]
-			"Player-75-058380E2", -- [12]
+			1345, -- [11]
+			"Player-75-0CB05C47", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697476,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffe7b09Morphntime|r",
+			[51] = 1600208228,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [22]
 		{
-			"same, ive been doing m+ on another alt", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"If you sign, he'll love you long time.", -- [1]
+			"Shocknproc-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"3. Trade - City", -- [4]
+			"Shocknproc-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1145, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1349, -- [11]
+			"Player-75-0B82B35C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697477,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cff006fdcShocknproc|r",
+			[51] = 1600208412,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [23]
 		{
-			"relist?", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"loooong time", -- [1]
+			"Morphntime-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"3. Trade - City", -- [4]
+			"Morphntime-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1147, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1350, -- [11]
+			"Player-75-0CB05C47", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697492,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Morphntime|r",
+			[51] = 1600208422,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [24]
 		{
-			"roger roger", -- [1]
+			"Infused Amber Ooze 83.21% ~(17.99, 65.39)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Vale of Eternal Blossoms", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1148, -- [11]
+			1358, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697500,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600208604,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [25]
 		{
-			"helloo", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Harrier Nir'verash 100.00% ~(13.62, 51.31)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1151, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1363, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697535,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600208668,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [26]
 		{
-			"howdy", -- [1]
+			"Enraged Amber Elemental 88.95% ~(11.18, 40.29)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Vale of Eternal Blossoms", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1152, -- [11]
+			1374, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697540,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600208830,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [27]
 		{
-			"i seen vids where people run across them quickly and it works but i couldnt get it to ", -- [1]
+			"Drone Keeper Ak'thet 92.66% ~(12.39, 40.79)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Vale of Eternal Blossoms", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1153, -- [11]
+			1379, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697560,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600208864,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [28]
 		{
-			"probably got patched", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Yup", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1154, -- [11]
-			"Player-75-058380E2", -- [12]
+			1384, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697568,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600208945,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [29]
 		{
-			"yeah im just not fast enough for the buff to stay", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Definitely a lot less interesting to do dailies knowing prepatch is just around the corner ", -- [1]
+			"Elzhu-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1155, -- [11]
-			"Player-75-058380E2", -- [12]
+			1385, -- [11]
+			"Player-75-0C315D30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697604,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff00fe95Elzhu|r",
+			[51] = 1600208974,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [30]
 		{
-			"miss it by a second ", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"No doubt", -- [1]
+			"Geenon-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1156, -- [11]
-			"Player-75-058380E2", -- [12]
+			1387, -- [11]
+			"Player-75-0AD86CF0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697610,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff8686ecGeenon|r",
+			[51] = 1600208988,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [31]
 		{
-			"lel", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Kal'tik the Blight here..", -- [1]
+			"Tallyr-Zul'jin", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Tallyr-Zul'jin", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1157, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1396, -- [11]
+			"Player-61-0A2A4521", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697625,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffa9d271Tallyr-Zul'jin|r",
+			[51] = 1600209031,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [32]
 		{
-			"nope", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"19.34,11.42", -- [1]
+			"Tallyr-Zul'jin", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Tallyr-Zul'jin", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1158, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1400, -- [11]
+			"Player-61-0A2A4521", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697640,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffa9d271Tallyr-Zul'jin|r",
+			[51] = 1600209058,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [33]
 		{
-			"anyone else in antoran waste right now?", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"大脚任务进度提示: 已消灭大女皇夏柯扎拉：1/1(完成)", -- [1]
+			"Shadowmn-Dalaran", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Shadowmn-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1159, -- [11]
-			"Player-75-058380E2", -- [12]
+			1408, -- [11]
+			"Player-3683-0A6C942F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697647,
-			[50] = "CHAT_MSG_YELL",
+			[52] = "|cff3ec5e9Shadowmn-Dalaran|r",
+			[51] = 1600209111,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [34]
 		{
-			"well the yell didnt work lol", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"大脚任务进度提示: 已消灭大女皇夏柯扎拉：1/1(完成)", -- [1]
+			"Laolaodee-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Laolaodee-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1161, -- [11]
-			"Player-75-058380E2", -- [12]
+			1409, -- [11]
+			"Player-3683-0A6E0A0D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697682,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfffefefeLaolaodee-Dalaran|r",
+			[51] = 1600209111,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [35]
 		{
-			"lol", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"大女皇夏柯扎拉 (任务完成)", -- [1]
+			"Shadowmn-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Shadowmn-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1162, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1435, -- [11]
+			"Player-3683-0A6C942F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697685,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff3ec5e9Shadowmn-Dalaran|r",
+			[51] = 1600209112,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [36]
 		{
-			"i really wanted to got the longboi before the prepatch but it isnt going to happen", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"|cffffff00|Hquest:58705:-1:120:120:0|h[Grand Empress Shek'zara]|h|r Quest completed", -- [1]
+			"Tazzmagaz-Dragonblight", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Tazzmagaz-Dragonblight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1163, -- [11]
-			"Player-75-058380E2", -- [12]
+			1436, -- [11]
+			"Player-114-0A24E3F7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697754,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff3ec5e9Tazzmagaz-Dragonblight|r",
+			[51] = 1600209113,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [37]
 		{
-			"homie can help :D", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Hive-Guard Naz'ruzek 84.45% ~(17.79, 62.9)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1164, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1474, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697761,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600209317,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [38]
 		{
-			"cool!", -- [1]
+			"Amber-Shaper Esh'ri 100.00% ~(19.3, 71.59)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Vale of Eternal Blossoms", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1166, -- [11]
+			1481, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697772,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600209367,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [39]
 		{
-			"im lazy with gold farming", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"wrong assault you gonna be waiting till friday night for that rare", -- [1]
+			"Jaylynn-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Jaylynn-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1167, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1555, -- [11]
+			"Player-3684-0A7B6296", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697774,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffe7b09Jaylynn-Mal'Ganis|r",
+			[51] = 1600210555,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [40]
 		{
-			"wm off bro ;P", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
-			"", -- [3]
+			"really thanks for the info", -- [1]
+			"Jaylynn-Mal'Ganis", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Jaylynn-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1168, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1557, -- [11]
+			"Player-3684-0A7B6296", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599697791,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffe7b09Jaylynn-Mal'Ganis|r",
+			[51] = 1600210663,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [41]
 		{
-			"i played the ah on my server and got to 2 but 5 isnt going to happen", -- [1]
+			"apparently its the wrong week for this rare someone just whispered so sorry folks", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -914,7 +914,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1169, -- [11]
+			1559, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -922,11 +922,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697813,
+			[51] = 1600210710,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [42]
 		{
-			"heard alot of folks just tokend and bougth it but some of them were spending like a grand to do that i dont want it that bad", -- [1]
+			"maybe friday", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -936,7 +936,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1170, -- [11]
+			1560, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -944,407 +944,407 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599697854,
+			[51] = 1600210716,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [43]
 		{
-			"idek how to get that mount anymore", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"No worries", -- [1]
+			"Idkpetahzer-Arathor", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Idkpetahzer-Arathor", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1174, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1563, -- [11]
+			"Player-1138-08B5A5FE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698133,
+			[52] = "|cffa22fc8Idkpetahzer-Arathor|r",
+			[51] = 1600210722,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [44]
 		{
-			"im stuck on one quest from brawl", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:14062:Player-75-03772F0D:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[Horrific Vision of Stormwind]|h|r!", -- [1]
+			"Ozzymandias-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Ozzymandias-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1175, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1606, -- [11]
+			"Player-75-03772F0D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698144,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff3ec5e9Ozzymandias|r",
+			[51] = 1600211564,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [45]
 		{
-			"brawlers guild its not to bad except one quest", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:14064:Player-75-03772F0D:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[The Even More Horrific Vision of Stormwind]|h|r!", -- [1]
+			"Ozzymandias-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Ozzymandias-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1176, -- [11]
-			"Player-75-058380E2", -- [12]
+			1607, -- [11]
+			"Player-75-03772F0D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698160,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff3ec5e9Ozzymandias|r",
+			[51] = 1600211564,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [46]
 		{
-			"you need people brawling to throw stuff at lol", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:14143:Player-75-03772F0D:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[Reeking of Visions]|h|r!", -- [1]
+			"Ozzymandias-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Ozzymandias-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1177, -- [11]
-			"Player-75-058380E2", -- [12]
+			1608, -- [11]
+			"Player-75-03772F0D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698173,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff3ec5e9Ozzymandias|r",
+			[51] = 1600211564,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [47]
 		{
-			"ohhhhhhh", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"grats name", -- [1]
+			"Tuskmunkey-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1178, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1609, -- [11]
+			"Player-75-034D04EF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698178,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa9d271Tuskmunkey|r",
+			[51] = 1600211567,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [48]
 		{
-			"oofers", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Tisiphon 20.87% ~(10, 67.39)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1179, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1616, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698181,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600211862,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [49]
 		{
-			"i think im on that part", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"hi all", -- [1]
+			"Famin-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1180, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1622, -- [11]
+			"Player-75-007DC40C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698193,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff8686ecFamin|r",
+			[51] = 1600211892,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [50]
 		{
-			"my server it was dead so i had to have a freind step in", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"hello", -- [1]
+			"Zymor-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1181, -- [11]
-			"Player-75-058380E2", -- [12]
+			1623, -- [11]
+			"Player-75-0280C688", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698194,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff006fdcZymor|r",
+			[51] = 1600211906,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [51]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12078:Player-75-058380E2:1:9:9:20:4294967295:4294967295:4294967295:4294967295|h[Commander of Argus]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Amber-Shaper Esh'ri 99.34% ~(19.6, 73.31)", -- [1]
+			"Rompus-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Rompus-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1182, -- [11]
-			"Player-75-058380E2", -- [12]
+			1624, -- [11]
+			"Player-75-0D0872AF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698213,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			true, -- [17]
+			[52] = "|cfffe7b09Rompus|r",
+			[51] = 1600211913,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [52]
 		{
-			"gay", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Hive-Guard Naz'ruzek 60.09% ~(20.7, 62.57)", -- [1]
+			"Rompus-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Rompus-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1200, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1626, -- [11]
+			"Player-75-0D0872AF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698218,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Rompus|r",
+			[51] = 1600211977,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [53]
 		{
-			"no toy", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12546:Player-75-0A8DD9B9:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[Superior]|h|r!", -- [1]
+			"Monkataur-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Monkataur-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1201, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1629, -- [11]
+			"Player-75-0A8DD9B9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698220,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff00fe95Monkataur|r",
+			[51] = 1600212018,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [54]
 		{
-			"f", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"grats name", -- [1]
+			"Tuskmunkey-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1202, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			1630, -- [11]
+			"Player-75-034D04EF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698223,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa9d271Tuskmunkey|r",
+			[51] = 1600212026,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [55]
 		{
-			"of course ", -- [1]
+			"Korzaran the Slaughterer 100.00% ~(71.74, 73.56)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Uldum", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Uldum", -- [9]
 			0, -- [10]
-			1203, -- [11]
+			1649, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698226,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600212393,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [56]
 		{
-			"homie guess what", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:14173:Player-75-0AEBC855:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[A Mountain of Mementos]|h|r!", -- [1]
+			"Bothra-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Bothra-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1204, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1657, -- [11]
+			"Player-75-0AEBC855", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698233,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa22fc8Bothra-TheScryers|r",
+			[51] = 1600212590,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [57]
 		{
-			"yey", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"grats name", -- [1]
+			"Tuskmunkey-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1205, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1658, -- [11]
+			"Player-75-034D04EF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698239,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa9d271Tuskmunkey|r",
+			[51] = 1600212593,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [58]
 		{
-			"thanks! though got that achive done", -- [1]
+			"Ishak of the Four Winds 100.00% ~(72.22, 82.18)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Uldum", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Uldum", -- [9]
 			0, -- [10]
-			1206, -- [11]
+			1701, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698241,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600213405,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [59]
 		{
-			"gz gz", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"hey, thanks for listing", -- [1]
+			"Skorkimus-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"Skorkimus-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1208, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			1715, -- [11]
+			"Player-73-0C8801DA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698249,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc31d39Skorkimus-BleedingHollow|r",
+			[51] = 1600213491,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [60]
 		{
-			"turns her |Hitem:118427|h|cFFFFFFFF[Autographed Hearthstone Card]|r|h card over, revealing a |cffff8000[Legendary Hearthstone Card]|r!", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"damn war mode..", -- [1]
+			"Naixzz-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Naixzz-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1209, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1716, -- [11]
+			"Player-11-0A6FBDE4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698277,
-			[50] = "CHAT_MSG_EMOTE",
+			[52] = "|cfffef367Naixzz-Tichondrius|r",
+			[51] = 1600213492,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [61]
 		{
-			"what toy does he drop?", -- [1]
+			"np", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1354,7 +1354,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1211, -- [11]
+			1717, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1362,99 +1362,99 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698283,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600213501,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [62]
 		{
-			"turns her |Hitem:118427|h|cFFFFFFFF[Autographed Hearthstone Card]|r|h card over, revealing a |cFFFFFFFF[Common Hearthstone Card]|r!", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"and yeah its off in the title", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1212, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			1719, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698292,
-			[50] = "CHAT_MSG_EMOTE",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600213510,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [63]
 		{
-			"hang on", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"i think there was a wm on group up too", -- [1]
+			"Lovex-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Lovex-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1213, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1724, -- [11]
+			"Player-73-06DC367F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698294,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffef367Lovex-BleedingHollow|r",
+			[51] = 1600213534,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [64]
 		{
-			"my addon wont show it on map", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"there is", -- [1]
+			"Uncledany-Barthilas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Uncledany-Barthilas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1214, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1725, -- [11]
+			"Player-3723-0AEFD837", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698299,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa22fc8Uncledany-Barthilas|r",
+			[51] = 1600213540,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [65]
 		{
-			"what was his name again?", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"maybe he clicked the wrong one", -- [1]
+			"Lovex-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Lovex-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1215, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1726, -- [11]
+			"Player-73-06DC367F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698319,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffef367Lovex-BleedingHollow|r",
+			[51] = 1600213541,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [66]
 		{
-			"suprax", -- [1]
+			"there was", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1464,7 +1464,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1216, -- [11]
+			1727, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1472,735 +1472,735 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698325,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600213543,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [67]
 		{
-			"|cff0070dd|Hitem:153194::::::::120:260::::::|h[Legion Communication Orb]|h|r", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"ty", -- [1]
+			"Asharyìa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Asharyìa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1218, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1763, -- [11]
+			"Player-3676-0AB8D57E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698332,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfff38bb9Asharyìa-Area52|r",
+			[51] = 1600213628,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [68]
 		{
-			"doomcaster syprax", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"thanks for the group", -- [1]
+			"Pummy-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Pummy-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1219, -- [11]
-			"Player-75-058380E2", -- [12]
+			1766, -- [11]
+			"Player-3678-0A86EF13", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698335,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffc31d39Pummy-Thrall|r",
+			[51] = 1600213630,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [69]
 		{
-			"well that ones going to be a pain to get then", -- [1]
+			"Korzaran the Slaughterer 100.00% ~(71.45, 72.39)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Uldum", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Uldum", -- [9]
 			0, -- [10]
-			1220, -- [11]
+			1775, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698362,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600213646,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [70]
 		{
-			"yeppp", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"When does m0 ilvl start?", -- [1]
+			"Azek-Maelstrom", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Uldum", -- [4]
+			"Azek-Maelstrom", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Uldum", -- [9]
 			0, -- [10]
-			1221, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1776, -- [11]
+			"Player-163-0B104401", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698367,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffef367Azek-Maelstrom|r",
+			[51] = 1600213660,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [71]
 		{
-			"no idea his timer either ", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:14173:Player-75-08C6E258:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[A Mountain of Mementos]|h|r!", -- [1]
+			"Falzemphx-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Falzemphx-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1222, -- [11]
-			"Player-75-058380E2", -- [12]
+			1833, -- [11]
+			"Player-75-08C6E258", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698377,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffc31d39Falzemphx-TheScryers|r",
+			[51] = 1600214201,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [72]
 		{
-			"oh wait-", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"grats name", -- [1]
+			"Tuskmunkey-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1224, -- [11]
-			"Player-100-08969E7E", -- [12]
+			1835, -- [11]
+			"Player-75-034D04EF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698415,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa9d271Tuskmunkey|r",
+			[51] = 1600214206,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [73]
 		{
-			"oh shit my druid has an eg-", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Arachnoid Harvester 45.97% ~(53.63, 46.34)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			1225, -- [11]
-			"Player-100-08969E7E", -- [12]
+			2033, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698421,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600268964,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [74]
 		{
-			"nvm", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Anyone for Reclamation Rig?", -- [1]
+			"Aethiria-EmeraldDream", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Aethiria-EmeraldDream", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			1226, -- [11]
-			"Player-100-08969E7E", -- [12]
+			2040, -- [11]
+			"Player-162-04547DB3", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698422,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Aethiria-EmeraldDream|r",
+			[51] = 1600269244,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [75]
 		{
-			"i opened it and got the same mount ", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Yep", -- [1]
+			"Kornephoros-EarthenRing", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Kornephoros-EarthenRing", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			1227, -- [11]
-			"Player-100-08969E7E", -- [12]
+			2041, -- [11]
+			"Player-100-05CC8D45", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698430,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffc31d39Kornephoros-EarthenRing|r",
+			[51] = 1600269258,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [76]
 		{
-			"rip", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"Needs 2k Parts", -- [1]
+			"Kornephoros-EarthenRing", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Kornephoros-EarthenRing", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			1228, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			2042, -- [11]
+			"Player-100-05CC8D45", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698437,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffc31d39Kornephoros-EarthenRing|r",
+			[51] = 1600269289,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [77]
 		{
-			"i dont have the white one", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"800 more", -- [1]
+			"Aethiria-EmeraldDream", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Aethiria-EmeraldDream", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			1229, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			2045, -- [11]
+			"Player-162-04547DB3", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698439,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Aethiria-EmeraldDream|r",
+			[51] = 1600269317,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [78]
 		{
-			"hah", -- [1]
+			"Rustfeather 100.00% ~(65.54, 78.68)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Mechagon", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			1230, -- [11]
+			2047, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698443,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600269398,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [79]
 		{
-			"but that one requires talent and dedication to get", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"Rig up.", -- [1]
+			"Tondelevo-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Tondelevo-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			1231, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			2054, -- [11]
+			"Player-1071-031396B5", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698446,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Tondelevo-KirinTor|r",
+			[51] = 1600269472,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [80]
 		{
-			"whic h i dont have", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12872:Player-75-09F9F1F6:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[The Dirty Five]|h|r!", -- [1]
+			"Gremlyk-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"Gremlyk-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1232, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			2296, -- [11]
+			"Player-75-09F9F1F6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698450,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc59a6cGremlyk|r",
+			[51] = 1600270604,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [81]
 		{
-			"white one not to bad now dino isle in mist", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12614:Player-75-09F9F1F6:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Loa Expectations]|h|r!", -- [1]
+			"Gremlyk-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Gremlyk-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1233, -- [11]
-			"Player-75-058380E2", -- [12]
+			2458, -- [11]
+			"Player-75-09F9F1F6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698454,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffc59a6cGremlyk|r",
+			[51] = 1600271286,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [82]
 		{
-			"need like 999 bones ", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12483:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Waycrest Manor]|h|r!", -- [1]
+			"Werepinguin-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Werepinguin-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1234, -- [11]
-			"Player-75-058380E2", -- [12]
+			2774, -- [11]
+			"Player-75-047B8E38", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698461,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff8686ecWerepinguin|r",
+			[51] = 1600273163,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [83]
 		{
-			"ye prob", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"|cffffff00Grand Bazaar is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"4. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			4, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
 			0, -- [10]
-			1235, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			3305, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698462,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "",
+			[51] = 1600274482,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [84]
 		{
-			"i dont even have like 100k bones", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Scale Matriarch Vynara (1.19m/1.31m 90.59%) is at 27.62 37.91 and has been engaged!", -- [1]
+			"Fwaang-EmeraldDream", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Nazjatar", -- [4]
+			"Fwaang-EmeraldDream", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Nazjatar", -- [9]
 			0, -- [10]
-			1236, -- [11]
-			"Player-100-08969E7E", -- [12]
+			3357, -- [11]
+			"Player-162-09CBBFFF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698468,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffa9d271Fwaang-EmeraldDream|r",
+			[51] = 1600274970,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [85]
 		{
-			"im prob near 10k", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12831:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Freehold]|h|r!", -- [1]
+			"Werepinguin-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Werepinguin-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1237, -- [11]
-			"Player-100-08969E7E", -- [12]
+			3395, -- [11]
+			"Player-75-047B8E38", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698477,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff8686ecWerepinguin|r",
+			[51] = 1600276121,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [86]
 		{
-			"I KEEP FORGETTING TO FARM LEGIONNN", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"avoirus the mineing boss is up please come help", -- [1]
+			"Rotsmell-Maelstrom", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Nazjatar", -- [4]
+			"Rotsmell-Maelstrom", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Nazjatar", -- [9]
 			0, -- [10]
-			1238, -- [11]
-			"Player-100-08969E7E", -- [12]
+			3422, -- [11]
+			"Player-163-02BE5DD9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698485,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffc31d39Rotsmell-Maelstrom|r",
+			[51] = 1600276667,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [87]
 		{
-			"theres a lot going on in my mind that i need to farm :c", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"please come helpawawadwwa", -- [1]
+			"Rotsmell-Maelstrom", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"2. General - Nazjatar", -- [4]
+			"Rotsmell-Maelstrom", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Nazjatar", -- [9]
 			0, -- [10]
-			1239, -- [11]
-			"Player-100-08969E7E", -- [12]
+			3439, -- [11]
+			"Player-163-02BE5DD9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698499,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cffc31d39Rotsmell-Maelstrom|r",
+			[51] = 1600277234,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [88]
 		{
-			"yeah got the last lightforged elephant and got all those ", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:11861:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[The Throne of Zuldazar]|h|r!", -- [1]
+			"Werepinguin-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Werepinguin-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1240, -- [11]
-			"Player-75-058380E2", -- [12]
+			3505, -- [11]
+			"Player-75-047B8E38", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698504,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff8686ecWerepinguin|r",
+			[51] = 1600278025,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [89]
 		{
-			"well runes are back but propabbly cant loot him again", -- [1]
+			"Shiz'narasz the Consumer 100.00% ~(39.44, 18.66)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Nazjatar", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Nazjatar", -- [9]
 			0, -- [10]
-			1241, -- [11]
+			3535, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698526,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[51] = 1600278403,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [90]
 		{
-			"lucky :c", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Clearance on |cffffffff|Hitem:171203::::::::120:104::13:1:3524:::|h[Vantus Rune: Ny'alotha, the Waking City]|h|r at the AH! 20 of them at 33% market price!", -- [1]
+			"Thiccsnicker-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"3. Trade - City", -- [4]
+			"Thiccsnicker-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1242, -- [11]
-			"Player-100-08969E7E", -- [12]
+			3872, -- [11]
+			"Player-75-0D7F1A3B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698527,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Thiccsnicker|r",
+			[51] = 1600278984,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [91]
 		{
-			"lets see", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Load up for your guild while the price is low!", -- [1]
+			"Thiccsnicker-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"3. Trade - City", -- [4]
+			"Thiccsnicker-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1243, -- [11]
-			"Player-75-058380E2", -- [12]
+			3897, -- [11]
+			"Player-75-0D7F1A3B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698530,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "|cfffe7b09Thiccsnicker|r",
+			[51] = 1600279003,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [92]
 		{
-			"dont be shy", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:10706:Player-75-007F7CAD:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Training the Troops]|h|r!", -- [1]
+			"Excelidrin-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Excelidrin-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1244, -- [11]
-			"Player-100-08969E7E", -- [12]
+			4067, -- [11]
+			"Player-75-007F7CAD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698537,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffefefeExcelidrin|r",
+			[51] = 1600279323,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [93]
 		{
-			"step on the rune", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:11126:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[50 World Quests Completed]|h|r!", -- [1]
+			"Werepinguin-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Werepinguin-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1245, -- [11]
-			"Player-100-08969E7E", -- [12]
+			39, -- [11]
+			"Player-75-047B8E38", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698540,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff8686ecWerepinguin|r",
+			[51] = 1600283267,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [94]
 		{
-			"nope", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"Anyone need |cff0070dd|Hitem:128319::::::::110:103::1::::|h[Void-Shrouded Satchel]|h|r at all?", -- [1]
+			"Tsujik-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"3. Trade - City", -- [4]
+			"Tsujik-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			3, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1246, -- [11]
-			"Player-100-08969E7E", -- [12]
+			279, -- [11]
+			"Player-75-0B1682E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698547,
-			[50] = "CHAT_MSG_PARTY",
+			true, -- [17]
+			[52] = "|cfffe7b09Tsujik|r",
+			[51] = 1600287055,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [95]
 		{
-			"it doesnt say rare nomo ;-;", -- [1]
-			"Tandrelisa-EarthenRing", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12840:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Tol Dagor]|h|r!", -- [1]
+			"Werepinguin-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tandrelisa-EarthenRing", -- [5]
+			"Werepinguin-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1247, -- [11]
-			"Player-100-08969E7E", -- [12]
+			286, -- [11]
+			"Player-75-047B8E38", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Tandrelisa-EarthenRing|r",
-			[51] = 1599698553,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff8686ecWerepinguin|r",
+			[51] = 1600287118,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [96]
 		{
-			"well thanks again for the help!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"|cffffff00Port of Zandalar is under attack!|r", -- [1]
+			"", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"4. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			22, -- [7]
+			4, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
 			0, -- [10]
-			1248, -- [11]
-			"Player-75-058380E2", -- [12]
+			3939, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698579,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			true, -- [17]
+			[52] = "",
+			[51] = 1600317923,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [97]
 		{
-			"ye np", -- [1]
-			"Morgoph-Illidan", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:14064:Player-75-08C68846:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[The Even More Horrific Vision of Stormwind]|h|r!", -- [1]
+			"Kitsunee-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Morgoph-Illidan", -- [5]
+			"Kitsunee-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1249, -- [11]
-			"Player-57-0A0AF71E", -- [12]
+			4140, -- [11]
+			"Player-75-08C68846", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcMorgoph-Illidan|r",
-			[51] = 1599698583,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffe7b09Kitsunee-TheScryers|r",
+			[51] = 1600319587,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [98]
 		{
-			"have a good one!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:14143:Player-75-08C68846:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Reeking of Visions]|h|r!", -- [1]
+			"Kitsunee-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Kitsunee-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1250, -- [11]
-			"Player-75-058380E2", -- [12]
+			4141, -- [11]
+			"Player-75-08C68846", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1599698590,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfffe7b09Kitsunee-TheScryers|r",
+			[51] = 1600319587,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [99]
 	},
 	["ChatEditHistory"] = {
-		"/p heard alot of folks just tokend and bougth it but some of them were spending like a grand to do that i dont want it that bad", -- [1]
-		"/dance", -- [2]
-		"/p brawlers guild its not to bad except one quest", -- [3]
-		"/p you need people brawling to throw stuff at lol", -- [4]
-		"/p my server it was dead so i had to have a freind step in", -- [5]
-		"/p of course", -- [6]
-		"/p thanks! though got that achive done", -- [7]
-		"/p what toy does he drop?", -- [8]
-		"/p suprax", -- [9]
-		"/p doomcaster syprax", -- [10]
-		"/p well that ones going to be a pain to get then", -- [11]
-		"/p no idea his timer either", -- [12]
-		"/p hah", -- [13]
-		"/p white one not to bad now dino isle in mist", -- [14]
-		"/p need like 999 bones", -- [15]
-		"/p yeah got the last lightforged elephant and got all those", -- [16]
-		"/p well runes are back but propabbly cant loot him again", -- [17]
-		"/p lets see", -- [18]
-		"/p well thanks again for the help!", -- [19]
-		"/p have a good one!", -- [20]
+		"/p yeah got the last lightforged elephant and got all those", -- [1]
+		"/p well runes are back but propabbly cant loot him again", -- [2]
+		"/p lets see", -- [3]
+		"/p well thanks again for the help!", -- [4]
+		"/p have a good one!", -- [5]
+		"/allthethings", -- [6]
+		"/dance", -- [7]
+		"/worldmarker marker", -- [8]
+		"/worldmarker 1", -- [9]
+		"/opie", -- [10]
+		"/wm", -- [11]
+		"/wa", -- [12]
+		"/skada toggle", -- [13]
+		"/cw Jaylynn-Mal'Ganis really thanks for the info", -- [14]
+		"/p apparently its the wrong week for this rare someone just whispered so sorry folks", -- [15]
+		"/p maybe friday", -- [16]
+		"/rarescanner", -- [17]
+		"/raid np", -- [18]
+		"/raid and yeah its off in the title", -- [19]
+		"/raid there was", -- [20]
 	},
 	["CliqueDatatext"] = {
 	},

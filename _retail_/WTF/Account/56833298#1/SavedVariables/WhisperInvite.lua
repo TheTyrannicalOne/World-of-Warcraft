@@ -6,6 +6,11 @@ WhisperInviteCoreDB = {
 				["setup"] = 3,
 			},
 		},
+		["Tyranasticus - Zul'jin"] = {
+			["info"] = {
+				["setup"] = 3,
+			},
+		},
 		["Illingrath - Dalaran"] = {
 			["info"] = {
 				["setup"] = 5,
@@ -13,7 +18,7 @@ WhisperInviteCoreDB = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 			["info"] = {
-				["setup"] = 2,
+				["setup"] = 4,
 			},
 		},
 		["Kotalkhan - Zul'jin"] = {
@@ -66,19 +71,19 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Rotclaugh - Dalaran"] = {
 			["info"] = {
 				["setup"] = 5,
 			},
 		},
-		["Serbitechna - Dalaran"] = {
+		["Kelvalatar - Dalaran"] = {
 			["info"] = {
-				["setup"] = 3,
+				["setup"] = 1,
 			},
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 			["info"] = {
-				["setup"] = 3,
+				["setup"] = 5,
 			},
 		},
 		["Zulbathal - Zul'jin"] = {
@@ -86,9 +91,25 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
+		["Fantastiburo - Zul'jin"] = {
+			["info"] = {
+				["setup"] = 3,
+			},
+		},
+		["Serbitechna - Dalaran"] = {
+			["info"] = {
+				["setup"] = 3,
+			},
+		},
+		["Shanyt - Zul'jin"] = {
+			["info"] = {
+				["setup"] = 1,
+			},
+		},
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
@@ -99,12 +120,16 @@ WhisperInviteCoreDB = {
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Malivant - Dalaran"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

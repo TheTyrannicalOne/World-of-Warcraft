@@ -11,8 +11,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 515,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1652:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 517,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1654:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 157964,
@@ -63,16 +63,16 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174268::::::::120:71::3:7:4822:6578:6579:6562:6513:1487:4786:::|h[Loop of Abhorrent Celerity]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 159627,
-			["Level"] = 430,
+			["ID"] = 165661,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:159627::::::::120:71::23:4:4779:6513:1602:4786:::|h[Jes' Howler]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165661::::::::120:71::28:4:4803:6513:1637:4786:::|h[Ancient Tuskarr Sea Charm]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 158153,
-			["Level"] = 420,
+			["ID"] = 159627,
+			["Level"] = 430,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:158153::::::::120:71::27:4:4803:6515:1612:4785:::|h[Gilded Loa Figurine]|h|r",
+			["Link"] = "|cffa335ee|Hitem:159627::::::::120:71::23:4:4779:6513:1602:4786:::|h[Jes' Howler]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 169223,

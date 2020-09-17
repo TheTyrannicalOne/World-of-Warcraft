@@ -2,6 +2,7 @@
 PasteDB = {
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
@@ -12,15 +13,22 @@ PasteDB = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
+			["loaded"] = true,
+		},
+		["Tyranasticus - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Illingrath - Dalaran"] = {
@@ -53,22 +61,34 @@ PasteDB = {
 		["Ruffinton - Dalaran"] = {
 			["loaded"] = true,
 		},
+		["Kelvalatar - Dalaran"] = {
+			["loaded"] = true,
+		},
 		["Datgore - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Darnastris - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Rotclaugh - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
+		["Zulbathal - Zul'jin"] = {
+			["loaded"] = true,
+		},
+		["Durlok - Black Dragonflight"] = {
 			["loaded"] = true,
 		},
 		["Fantastiburo - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
+			["loaded"] = true,
+		},
+		["Malivant - Dalaran"] = {
+			["loaded"] = true,
+		},
+		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
 	},

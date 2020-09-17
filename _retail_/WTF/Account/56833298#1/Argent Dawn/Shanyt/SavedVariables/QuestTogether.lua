@@ -10,14 +10,7 @@ QuestTogether = {
 		[57276] = {
 			["title"] = "Maintaining Focus",
 			["objectives"] = {
-				"10/20 Shred of Insanity", -- [1]
-			},
-		},
-		[57959] = {
-			["title"] = "Heroic Warfront: The Battle for Darkshore",
-			["objectives"] = {
-				"1/1 View the War Table in Port of Zandalar (Optional)", -- [1]
-				"Alliance defeated at the Battle for Darkshore", -- [2]
+				"11/20 Shred of Insanity", -- [1]
 			},
 		},
 		[49032] = {
@@ -28,6 +21,11 @@ QuestTogether = {
 		},
 		[54180] = {
 			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
 			},
 		},
@@ -43,12 +41,10 @@ QuestTogether = {
 				"Tend to Kua'fon", -- [1]
 			},
 		},
-		[56500] = {
-			["title"] = "Storming the Battlefields",
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"1/1 Win an Epic Battleground", -- [2]
-				"1/1 Win a Battleground", -- [3]
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[45381] = {
@@ -57,10 +53,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 		[45383] = {
@@ -69,10 +65,11 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[49135] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+		[48298] = {
+			["title"] = "The Unmaker",
 			["objectives"] = {
-				"1/4 Sigil of the Dark Titan", -- [1]
+				"Defeat Argus the Unmaker in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sanguine Argunite", -- [2]
 			},
 		},
 		[57743] = {
@@ -100,10 +97,10 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[48799] = {
-			["title"] = "Fuel of a Doomed World",
+		[45172] = {
+			["title"] = "To Battle!",
 			["objectives"] = {
-				"0/50 Pristine Argunite", -- [1]
+				"Win a battleground", -- [1]
 			},
 		},
 		[31891] = {
@@ -116,8 +113,8 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[48976] = {
+			["title"] = "Supplies From the Argussian Reach",
 			["objectives"] = {
 			},
 		},
@@ -134,16 +131,18 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[45172] = {
-			["title"] = "To Battle!",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"Win a battleground", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[56500] = {
+			["title"] = "Storming the Battlefields",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"Win a PVP Island Expedition", -- [1]
+				"1/1 Win an Epic Battleground", -- [2]
+				"1/1 Win a Battleground", -- [3]
 			},
 		},
 		[13721] = {
@@ -152,16 +151,16 @@ QuestTogether = {
 				"10/25 Valiant's Seal", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[51040] = {
-			["title"] = "Supplies Needed: Siren's Pollen",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/20 Siren's Pollen", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[57396] = {
@@ -170,23 +169,22 @@ QuestTogether = {
 				"0/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
-		[49133] = {
+		[49135] = {
 			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
+				"1/4 Sigil of the Dark Titan", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

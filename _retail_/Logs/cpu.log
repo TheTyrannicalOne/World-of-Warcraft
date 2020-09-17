@@ -1,8 +1,8 @@
-9/10 01:45:38.026  vendor: 1
-9/10 01:45:38.026  features: 00003F97
-9/10 01:45:38.026  cores: 6
-9/10 01:45:38.026  threads: 12
-9/10 01:45:38.026  vendor id string= GenuineIntel
-9/10 01:45:38.026  standard (13): 1b=08200800 1c=FE9AE383 1d=bfcbfbff 4a=3C004121
-9/10 01:45:38.026  extended (8): 1c=00000001 1d=2c100800 8c=00000000
-9/10 01:45:38.026  processor brand string= Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz
+9/16 21:30:38.515  vendor: 1
+9/16 21:30:38.515  features: 00003F97
+9/16 21:30:38.515  cores: 6
+9/16 21:30:38.515  threads: 12
+9/16 21:30:38.515  vendor id string= GenuineIntel
+9/16 21:30:38.515  standard (13): 1b=01200800 1c=FE9AE383 1d=bfcbfbff 4a=3C004121
+9/16 21:30:38.515  extended (8): 1c=00000001 1d=2c100800 8c=00000000
+9/16 21:30:38.515  processor brand string= Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz

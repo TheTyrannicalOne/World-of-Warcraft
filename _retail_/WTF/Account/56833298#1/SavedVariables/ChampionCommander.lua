@@ -13,6 +13,9 @@ dbBFA = {
 		["Illingrath - Dalaran"] = {
 			["firstun"] = false,
 		},
+		["Darnastris - Dalaran"] = {
+			["firstun"] = false,
+		},
 	},
 	["global"] = {
 		["warn01_seen"] = 0,
@@ -26,6 +29,7 @@ dbBFA = {
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

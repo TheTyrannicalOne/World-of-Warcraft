@@ -1,19 +1,6 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[25507] = {
-			["title"] = "Hell's Shells",
-			["objectives"] = {
-				"0/1 Nemesis Shell Fragment", -- [1]
-			},
-		},
-		[34398] = {
-			["title"] = "The Dark Portal",
-			["objectives"] = {
-				"0/1 Talk to the Vanguard Battlemage (Optional)", -- [1]
-				"0/1 Speak with Archmage Khadgar", -- [2]
-			},
-		},
 		[28732] = {
 			["title"] = "This Can Only Mean One Thing...",
 			["objectives"] = {
@@ -26,18 +13,15 @@ QuestTogether = {
 				"0/1 Peered into the Waters of Farseeing", -- [1]
 			},
 		},
-		[27354] = {
-			["title"] = "Mastering the Arcane",
+		[39796] = {
+			["title"] = "To Haustvald",
 			["objectives"] = {
-				"0/1 Silverlaine's Enchanted Crystal", -- [1]
-				"0/5 Moontouched Wood", -- [2]
-				"0/5 Ghostly Essence", -- [3]
 			},
 		},
-		[25663] = {
-			["title"] = "An Offering for Aviana",
+		[42687] = {
+			["title"] = "Troops in the Field",
 			["objectives"] = {
-				"0/1 Nectar Offered", -- [1]
+				"Complete \"Troops in the Field\"", -- [1]
 			},
 		},
 		[25186] = {
@@ -46,23 +30,11 @@ QuestTogether = {
 				"0/1 Kona Thunderwalk slain", -- [1]
 			},
 		},
-		[25655] = {
-			["title"] = "The Wormwing Problem",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-				"0/10 Wormwing Harpy", -- [1]
-			},
-		},
-		[25656] = {
-			["title"] = "Scrambling for Eggs",
-			["objectives"] = {
-				"0/8 Hyjal Egg", -- [1]
-			},
-		},
-		[25502] = {
-			["title"] = "Prepping the Soil",
-			["objectives"] = {
-				"0/1 Flameward Activated", -- [1]
-				"0/1 Flameward Defended", -- [2]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[27203] = {
@@ -70,10 +42,9 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[12292] = {
-			["title"] = "Local Support",
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
 			["objectives"] = {
-				"0/1 Cedar Chest", -- [1]
 			},
 		},
 		[28398] = {
@@ -83,9 +54,20 @@ QuestTogether = {
 				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
-		[12789] = {
-			["title"] = "Into the Breach!",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[25191] = {
@@ -99,18 +81,26 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
+			["objectives"] = {
+			},
+		},
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
+			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
+			},
+		},
+		[43441] = {
+			["title"] = "A Second Weapon",
+			["objectives"] = {
+				"0/1 Choose a second artifact to pursue", -- [1]
+			},
+		},
 		[29439] = {
 			["title"] = "The Call of the World-Shaman",
-			["objectives"] = {
-			},
-		},
-		[26838] = {
-			["title"] = "Rebels Without a Clue",
-			["objectives"] = {
-			},
-		},
-		[12225] = {
-			["title"] = "Mmm... Amberseeds!",
 			["objectives"] = {
 			},
 		},
@@ -125,14 +115,22 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[12466] = {
-			["title"] = "Chasing Icestorm: The 7th Legion Front",
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
 			["objectives"] = {
 			},
 		},
-		[26897] = {
-			["title"] = "Blackfathom Deeps",
+		[37433] = {
+			["title"] = "Proving Grounds",
 			["objectives"] = {
+				"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
+				"0/1 Complete a Bronze Trial", -- [2]
+			},
+		},
+		[34692] = {
+			["title"] = "Delegating on Draenor",
+			["objectives"] = {
+				"Use the Command Table", -- [1]
 			},
 		},
 	},

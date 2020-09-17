@@ -1,8 +1,8 @@
 
 OneRing_Config = {
 	["CharProfiles"] = {
-		["Dalaran-Darnastris-3"] = "default",
 		["Argent Dawn-Shanyt"] = "Shanyt",
+		["Dalaran-Darnastris-3"] = "default",
 		["Dalaran-Tynkster"] = "Shanyt",
 		["Black Dragonflight-Durlok-3"] = "default",
 	},
@@ -13,6 +13,8 @@ OneRing_Config = {
 			["Bindings"] = {
 				["Mounts"] = "ALT-Q",
 				["OPieAutoQuest"] = false,
+				["WorldMarkers"] = "ALT-Z",
+				["aidMarkers"] = "ALT-V",
 				["Mounts7"] = "ALT-Q",
 				["Utility"] = "ALT-E",
 			},
@@ -20,6 +22,7 @@ OneRing_Config = {
 		["default"] = {
 			["Bindings"] = {
 				["Mounts1"] = "ALT-Q",
+				["Mounts17"] = "ALT-Q",
 				["Mounts3"] = "ALT-Q",
 				["Tools2"] = "ALT-E",
 				["Mounts5"] = "ALT-Q",
@@ -30,16 +33,19 @@ OneRing_Config = {
 				["Utility2"] = "ALT-E",
 				["Utility8"] = "ALT-E",
 				["Utility3"] = "ALT-E",
+				["Mounts6"] = "ALT-Q",
 				["MageTools"] = false,
+				["Utility4"] = "ALT-E",
+				["Utility11"] = "ALT-E",
 				["Utility1"] = "ALT-E",
-				["Mounts15"] = "ALT-Q",
-				["Tools4"] = "ALT-E",
-				["Mounts2"] = "ALT-Q",
-				["Mounts31"] = "ALT-Q",
+				["Mounts8"] = "ALT-Q",
 				["Mounts14"] = "ALT-Q",
+				["Tools4"] = "ALT-E",
+				["Mounts31"] = "ALT-Q",
+				["Mounts2"] = "ALT-Q",
 				["Tools3"] = "ALT-E",
 				["Mounts4"] = "ALT-Q",
-				["Mounts8"] = "ALT-Q",
+				["Mounts15"] = "ALT-Q",
 			},
 		},
 	},
@@ -75,10 +81,50 @@ OneRing_Config = {
 					382, -- [2]
 					["sliceToken"] = "ABue4Ov/OTe",
 				}, -- [6]
+				["limit"] = "Thorinbane-Dalaran",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["name"] = "Mounts",
+			},
+			["Mounts5"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABue4=Mh6Wr",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABue4ZcOy02",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABue4ZcOy0i",
+				}, -- [3]
 				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Thorinbane-Dalaran",
+				["limit"] = "Zulbathal-Zul'jin",
+			},
+			["Mounts17"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABuekqRrJio",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABuekqRrJi2",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABuekqRrJii",
+				}, -- [3]
+				["name"] = "Mounts",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["limit"] = "Tyranasticus-Zul'jin",
 			},
 			["Mounts3"] = {
 				{
@@ -121,21 +167,32 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuedW477KwC",
 				}, -- [10]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
-			["Tools3"] = {
+			["Tools2"] = {
 				{
 					"macro", -- [1]
 					" ", -- [2]
-					["sliceToken"] = "ABue4979NIl",
+					["sliceToken"] = "ABue4OjoZGe",
 				}, -- [1]
-				["limit"] = "Ruffinton-Dalaran",
+				["name"] = "Tools",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Tools",
+				["limit"] = "Thorinbane-Dalaran",
+			},
+			["Utility4"] = {
+				{
+					"macro", -- [1]
+					" ", -- [2]
+					["sliceToken"] = "ABuekqRrJip",
+				}, -- [1]
+				["limit"] = "Tyranasticus-Zul'jin",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["name"] = "Utility",
 			},
 			["Mounts7"] = {
 				{
@@ -162,61 +219,13 @@ OneRing_Config = {
 					460, -- [2]
 					["sliceToken"] = "ABuehEXfjwe",
 				}, -- [5]
+				["name"] = "Mounts",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
 				["limit"] = "Tynkster-Dalaran",
-				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
 			},
-			["Tools1"] = {
-				{
-					"macro", -- [1]
-					" ", -- [2]
-					["sliceToken"] = "ABue49n/Qft",
-				}, -- [1]
-				["name"] = "Tools",
-				["save"] = true,
-				["hotkey"] = "ALT-E",
-				["limit"] = "Tinkster-Dalaran",
-			},
-			["Mounts11"] = {
-				{
-					["id"] = 150544,
-					["sliceToken"] = "ABue4CGrrUu",
-				}, -- [1]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABue4CGrrUy",
-				}, -- [2]
-				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABue4CGrrUt",
-				}, -- [3]
-				["limit"] = "Kotalkhan-Zul'jin",
-				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
-			},
-			["Mounts15"] = {
-				{
-					["id"] = 150544,
-					["sliceToken"] = "ABuejtRGNKu",
-				}, -- [1]
-				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABuejtRGNKy",
-				}, -- [2]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABuejtRGNKt",
-				}, -- [3]
-				["limit"] = "Avisar-Dalaran",
-				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+			["OPieFlagStore"] = {
+				["StoreVersion"] = 2,
 			},
 			["SpecMenu"] = {
 				{
@@ -267,8 +276,118 @@ OneRing_Config = {
 				["save"] = true,
 				["hotkey"] = "ALT-H",
 			},
-			["OPieFlagStore"] = {
-				["StoreVersion"] = 2,
+			["Tools1"] = {
+				{
+					"macro", -- [1]
+					" ", -- [2]
+					["sliceToken"] = "ABue49n/Qft",
+				}, -- [1]
+				["limit"] = "Tinkster-Dalaran",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["name"] = "Tools",
+			},
+			["Mounts11"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABue4CGrrUu",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABue4CGrrUy",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABue4CGrrUt",
+				}, -- [3]
+				["name"] = "Mounts",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["limit"] = "Kotalkhan-Zul'jin",
+			},
+			["WorldMarkers"] = {
+				{
+					"worldmark", -- [1]
+					1, -- [2]
+					["sliceToken"] = "OPCWMb",
+				}, -- [1]
+				{
+					"worldmark", -- [1]
+					2, -- [2]
+					["sliceToken"] = "OPCWMg",
+				}, -- [2]
+				{
+					"worldmark", -- [1]
+					3, -- [2]
+					["sliceToken"] = "OPCWMp",
+				}, -- [3]
+				{
+					"worldmark", -- [1]
+					4, -- [2]
+					["sliceToken"] = "OPCWMr",
+				}, -- [4]
+				{
+					"worldmark", -- [1]
+					5, -- [2]
+					["sliceToken"] = "OPCWMy",
+				}, -- [5]
+				{
+					"worldmark", -- [1]
+					6, -- [2]
+					["sliceToken"] = "OPCWMo",
+				}, -- [6]
+				{
+					"worldmark", -- [1]
+					7, -- [2]
+					["sliceToken"] = "OPCWMs",
+				}, -- [7]
+				{
+					"worldmark", -- [1]
+					8, -- [2]
+					["sliceToken"] = "OPCWMw",
+				}, -- [8]
+				{
+					"worldmark", -- [1]
+					0, -- [2]
+					["sliceToken"] = "OPCWMc",
+					["c"] = "ccd8e5",
+				}, -- [9]
+				["name"] = "World Markers",
+				["save"] = true,
+				["hotkey"] = "ALT-V",
+			},
+			["Mounts15"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABuejtRGNKu",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABuejtRGNKy",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABuejtRGNKt",
+				}, -- [3]
+				["name"] = "Mounts",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["limit"] = "Avisar-Dalaran",
+			},
+			["Tools3"] = {
+				{
+					"macro", -- [1]
+					" ", -- [2]
+					["sliceToken"] = "ABue4979NIl",
+				}, -- [1]
+				["name"] = "Tools",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["limit"] = "Ruffinton-Dalaran",
 			},
 			["Utility"] = {
 				{
@@ -306,16 +425,32 @@ OneRing_Config = {
 				["hotkey"] = "ALT-E",
 				["name"] = "Utility",
 			},
+			["Utility2"] = {
+				{
+					"toy", -- [1]
+					64488, -- [2]
+					["sliceToken"] = "ABuedW477Ke3",
+				}, -- [1]
+				{
+					"item", -- [1]
+					140192, -- [2]
+					["sliceToken"] = "ABuedW477Kes",
+				}, -- [2]
+				["name"] = "Utility",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["limit"] = "Durlok-BlackDragonflight",
+			},
 			["Utility8"] = {
 				{
 					"macro", -- [1]
 					" ", -- [2]
 					["sliceToken"] = "ABue4CGrrUi",
 				}, -- [1]
-				["name"] = "Utility",
+				["limit"] = "Kotalkhan-Zul'jin",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Kotalkhan-Zul'jin",
+				["name"] = "Utility",
 			},
 			["Utility3"] = {
 				{
@@ -328,21 +463,30 @@ OneRing_Config = {
 					110560, -- [2]
 					["sliceToken"] = "ABuejqEsE1e",
 				}, -- [2]
-				["limit"] = "Zulbathal-Zul'jin",
-				["save"] = true,
-				["hotkey"] = "ALT-E",
 				["name"] = "Utility",
-			},
-			["Tools2"] = {
-				{
-					"macro", -- [1]
-					" ", -- [2]
-					["sliceToken"] = "ABue4OjoZGe",
-				}, -- [1]
-				["limit"] = "Thorinbane-Dalaran",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Tools",
+				["limit"] = "Zulbathal-Zul'jin",
+			},
+			["Mounts6"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABuekqRHoFo",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABuekqRHoF2",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABuekqRHoFi",
+				}, -- [3]
+				["limit"] = "Rotclaugh-Dalaran",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["name"] = "Mounts",
 			},
 			["MageTools"] = {
 				{
@@ -367,46 +511,51 @@ OneRing_Config = {
 					["id"] = 1459,
 					["sliceToken"] = "OPCMTn",
 				}, -- [5]
-				["name"] = "Utility",
-				["save"] = true,
-				["hotkey"] = "ALT-E",
 				["limit"] = "MAGE",
-			},
-			["Utility2"] = {
-				{
-					"toy", -- [1]
-					64488, -- [2]
-					["sliceToken"] = "ABuedW477Ke3",
-				}, -- [1]
-				{
-					"item", -- [1]
-					140192, -- [2]
-					["sliceToken"] = "ABuedW477Kes",
-				}, -- [2]
-				["limit"] = "Durlok-BlackDragonflight",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
 				["name"] = "Utility",
 			},
-			["Mounts5"] = {
+			["Tools"] = {
+				{
+					"macro", -- [1]
+					" ", -- [2]
+					["sliceToken"] = "ABue4IMpSf2",
+				}, -- [1]
+				["name"] = "Tools",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["limit"] = "Darnastris-Dalaran",
+			},
+			["Mounts8"] = {
 				{
 					["id"] = 150544,
-					["sliceToken"] = "ABue4=Mh6Wr",
+					["sliceToken"] = "ABue49n/Qf1",
 				}, -- [1]
+				{
+					"mount", -- [1]
+					449, -- [2]
+					["sliceToken"] = "ABue49n/Qfr",
+				}, -- [2]
 				{
 					"mount", -- [1]
 					460, -- [2]
-					["sliceToken"] = "ABue4ZcOy02",
-				}, -- [2]
+					["sliceToken"] = "ABue497TF3u",
+				}, -- [3]
 				{
 					"mount", -- [1]
 					382, -- [2]
-					["sliceToken"] = "ABue4ZcOy0i",
-				}, -- [3]
-				["limit"] = "Zulbathal-Zul'jin",
+					["sliceToken"] = "ABue497TF3y",
+				}, -- [4]
+				{
+					"mount", -- [1]
+					959, -- [2]
+					["sliceToken"] = "ABue497TF3t",
+				}, -- [5]
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Tinkster-Dalaran",
 			},
 			["Utility1"] = {
 				{
@@ -414,10 +563,10 @@ OneRing_Config = {
 					64488, -- [2]
 					["sliceToken"] = "ABuedyqmNB16",
 				}, -- [1]
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Vancard-Zul'jin",
 			},
 			["Mounts"] = {
 				{
@@ -480,51 +629,32 @@ OneRing_Config = {
 					["sliceToken"] = "ABuede=1Sr1m",
 					["id"] = 75973,
 				}, -- [15]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
-			["Tools"] = {
+			["Tools4"] = {
 				{
 					"macro", -- [1]
 					" ", -- [2]
-					["sliceToken"] = "ABue4IMpSf2",
+					["sliceToken"] = "ABuejtRGNKi",
 				}, -- [1]
-				["limit"] = "Darnastris-Dalaran",
+				["name"] = "Tools",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Tools",
+				["limit"] = "Avisar-Dalaran",
 			},
-			["Mounts8"] = {
+			["Utility11"] = {
 				{
-					["id"] = 150544,
-					["sliceToken"] = "ABue49n/Qf1",
+					"macro", -- [1]
+					" ", -- [2]
+					["sliceToken"] = "ABuekqRHoFp",
 				}, -- [1]
-				{
-					"mount", -- [1]
-					449, -- [2]
-					["sliceToken"] = "ABue49n/Qfr",
-				}, -- [2]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABue497TF3u",
-				}, -- [3]
-				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABue497TF3y",
-				}, -- [4]
-				{
-					"mount", -- [1]
-					959, -- [2]
-					["sliceToken"] = "ABue497TF3t",
-				}, -- [5]
-				["limit"] = "Tinkster-Dalaran",
+				["limit"] = "Rotclaugh-Dalaran",
 				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["hotkey"] = "ALT-E",
+				["name"] = "Utility",
 			},
 			["Mounts31"] = {
 				{
@@ -540,72 +670,6 @@ OneRing_Config = {
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
 				["name"] = "Mounts",
-			},
-			["Mounts14"] = {
-				{
-					["id"] = 150544,
-					["sliceToken"] = "ABue4I0vm8e",
-				}, -- [1]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABue4I0vm86",
-				}, -- [2]
-				{
-					"mount", -- [1]
-					449, -- [2]
-					["sliceToken"] = "ABue4I0vm8m",
-				}, -- [3]
-				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABue4I0vm8n",
-				}, -- [4]
-				["limit"] = "Darnastris-Dalaran",
-				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
-			},
-			["Tools4"] = {
-				{
-					"macro", -- [1]
-					" ", -- [2]
-					["sliceToken"] = "ABuejtRGNKi",
-				}, -- [1]
-				["limit"] = "Avisar-Dalaran",
-				["save"] = true,
-				["hotkey"] = "ALT-E",
-				["name"] = "Tools",
-			},
-			["Mounts4"] = {
-				{
-					["id"] = 150544,
-					["sliceToken"] = "ABue4979NIk",
-				}, -- [1]
-				{
-					"mount", -- [1]
-					449, -- [2]
-					["sliceToken"] = "ABue4979NIj",
-				}, -- [2]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABue4979NI4",
-				}, -- [3]
-				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABue4979NIh",
-				}, -- [4]
-				{
-					"mount", -- [1]
-					959, -- [2]
-					["sliceToken"] = "ABue4979NIg",
-				}, -- [5]
-				["name"] = "Mounts",
-				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["limit"] = "Ruffinton-Dalaran",
 			},
 			["Mounts2"] = {
 				{
@@ -684,10 +748,116 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuedyqmNBrM",
 				}, -- [19]
+				["limit"] = "Vancard-Zul'jin",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["name"] = "Mounts",
+			},
+			["aidMarkers"] = {
+				{
+					"raidmark", -- [1]
+					0, -- [2]
+					["sliceToken"] = "ABuekwR08=wo",
+				}, -- [1]
+				{
+					"raidmark", -- [1]
+					1, -- [2]
+					["sliceToken"] = "ABuekwR08=w2",
+				}, -- [2]
+				{
+					"raidmark", -- [1]
+					2, -- [2]
+					["sliceToken"] = "ABuekwR08=wi",
+				}, -- [3]
+				{
+					"raidmark", -- [1]
+					3, -- [2]
+					["sliceToken"] = "ABuekwR08=wu",
+				}, -- [4]
+				{
+					"raidmark", -- [1]
+					4, -- [2]
+					["sliceToken"] = "ABuekwR08=wy",
+				}, -- [5]
+				{
+					"raidmark", -- [1]
+					5, -- [2]
+					["sliceToken"] = "ABuekwR08=wt",
+				}, -- [6]
+				{
+					"raidmark", -- [1]
+					6, -- [2]
+					["sliceToken"] = "ABuekwR08=w1",
+				}, -- [7]
+				{
+					"raidmark", -- [1]
+					7, -- [2]
+					["sliceToken"] = "ABuekwR08=wr",
+				}, -- [8]
+				{
+					"raidmark", -- [1]
+					8, -- [2]
+					["sliceToken"] = "ABuekwR08=we",
+				}, -- [9]
+				["limit"] = "Shanyt-ArgentDawn",
+				["save"] = true,
+				["hotkey"] = "ALT-V",
+				["name"] = "Raid Markers",
+			},
+			["Mounts4"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABue4979NIk",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					449, -- [2]
+					["sliceToken"] = "ABue4979NIj",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABue4979NI4",
+				}, -- [3]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABue4979NIh",
+				}, -- [4]
+				{
+					"mount", -- [1]
+					959, -- [2]
+					["sliceToken"] = "ABue4979NIg",
+				}, -- [5]
+				["limit"] = "Ruffinton-Dalaran",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["name"] = "Mounts",
+			},
+			["Mounts14"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABue4I0vm8e",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABue4I0vm86",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					449, -- [2]
+					["sliceToken"] = "ABue4I0vm8m",
+				}, -- [3]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABue4I0vm8n",
+				}, -- [4]
 				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Vancard-Zul'jin",
+				["limit"] = "Darnastris-Dalaran",
 			},
 		},
 	},

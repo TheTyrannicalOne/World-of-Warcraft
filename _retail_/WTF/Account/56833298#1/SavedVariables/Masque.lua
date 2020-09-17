@@ -6,6 +6,7 @@ MasqueDB = {
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
@@ -16,34 +17,38 @@ MasqueDB = {
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Malivant - Dalaran"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["Groups"] = {
-				["ElvUI_ActionBars"] = {
+				["WeakAuras_2pvBg5wcfEm"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["ElvUI_Pet Bar"] = {
+				["WeakAuras"] = {
 					["Inherit"] = false,
 				},
 				["Hekili"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_2pvBg5wcfEm"] = {
-					["Upgraded"] = true,
+				["ElvUI_ActionBars"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_oTOmGp3SIpf"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["ElvUI"] = {
+				["OPie"] = {
 					["Inherit"] = false,
 				},
 				["ElvUI_Debuffs"] = {
@@ -53,7 +58,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["OPie"] = {
+				["ElvUI"] = {
 					["Inherit"] = false,
 				},
 				["ElvUI_Buffs"] = {
@@ -74,7 +79,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras"] = {
+				["ElvUI_Pet Bar"] = {
 					["Inherit"] = false,
 				},
 			},

@@ -24,10 +24,10 @@ FishingBuddy_Player = {
 		["UseBladeboneHook"] = true,
 		["SpecialBobbers"] = -2,
 		["AutoLoot"] = true,
-		["EnhanceFishingSounds"] = true,
-		["AlwaysLure"] = true,
-		["EasyLures"] = true,
 		["STVTimer"] = true,
+		["EnhanceFishingSounds"] = true,
+		["EasyLures"] = true,
+		["AlwaysLure"] = true,
 		["ContestSupport"] = true,
 	},
 	["WasWearing"] = {

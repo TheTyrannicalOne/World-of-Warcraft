@@ -1,0 +1,4 @@
+
+MountJournalEnhancedSettings = nil
+MJEPersonalSettings = {
+}

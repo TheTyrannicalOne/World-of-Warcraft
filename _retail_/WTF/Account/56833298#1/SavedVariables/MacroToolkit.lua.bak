@@ -2,6 +2,7 @@
 MacroToolkitDB = {
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "profile",
+		["Tyranasticus - Zul'jin"] = "profile",
 		["Illingrath - Dalaran"] = "profile",
 		["Tyrannithal - Argent Dawn"] = "profile",
 		["Kotalkhan - Zul'jin"] = "profile",
@@ -12,12 +13,16 @@ MacroToolkitDB = {
 		["Avisar - Dalaran"] = "profile",
 		["Thorinbane - Dalaran"] = "profile",
 		["Ruffinton - Dalaran"] = "profile",
+		["Shanyt - Zul'jin"] = "profile",
 		["Datgore - Zul'jin"] = "profile",
 		["Darnastris - Dalaran"] = "profile",
+		["Rotclaugh - Dalaran"] = "profile",
+		["Malivant - Dalaran"] = "profile",
 		["Durlok - Black Dragonflight"] = "profile",
-		["Zulbathal - Zul'jin"] = "profile",
-		["Fantastiburo - Zul'jin"] = "profile",
 		["Serbitechna - Dalaran"] = "profile",
+		["Fantastiburo - Zul'jin"] = "profile",
+		["Zulbathal - Zul'jin"] = "profile",
+		["Kelvalatar - Dalaran"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {

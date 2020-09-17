@@ -13,12 +13,16 @@ dbOHC = {
 		["Illingrath - Dalaran"] = {
 			["firstun"] = false,
 		},
+		["Darnastris - Dalaran"] = {
+			["firstun"] = false,
+		},
 	},
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 	},
 	["global"] = {
 		["warn01_seen"] = 0,
@@ -57,6 +61,9 @@ dbOHC = {
 				["BASECHANCE"] = 0,
 			},
 			["showmenu"] = true,
+			["blacklist"] = {
+				[1816] = true,
+			},
 		},
 	},
 }
