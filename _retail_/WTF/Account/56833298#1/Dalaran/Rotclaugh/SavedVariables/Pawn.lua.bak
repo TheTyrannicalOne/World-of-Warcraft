@@ -6,90 +6,88 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 122263,
-			["Level"] = 101,
-			["Link"] = "|cff00ccff|Hitem:122263::::::::79:251:::1:5805:::|h[Burnished Helm of Might]|h|r",
+			["Level"] = 142,
+			["Link"] = "|cff00ccff|Hitem:122263::::::::100:251:::1:5805:::|h[Burnished Helm of Might]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122667,
-			["Level"] = 101,
-			["Link"] = "|cff00ccff|Hitem:122667::::::::79:251:::1:5805:::|h[Eternal Emberfury Talisman]|h|r",
+			["Level"] = 142,
+			["Link"] = "|cff00ccff|Hitem:122667::::::::100:251:::1:5805:::|h[Eternal Emberfury Talisman]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122355,
-			["Level"] = 101,
-			["Link"] = "|cff00ccff|Hitem:122355::::::::79:251:::1:5805:::|h[Polished Spaulders of Valor]|h|r",
+			["Level"] = 142,
+			["Link"] = "|cff00ccff|Hitem:122355::::::::100:251:::1:5805:::|h[Polished Spaulders of Valor]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122387,
-			["Level"] = 101,
-			["Link"] = "|cff00ccff|Hitem:122387::::::::79:251:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
+			["Level"] = 142,
+			["Link"] = "|cff00ccff|Hitem:122387::::::::100:251:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 37518,
-			["Level"] = 91,
-			["Link"] = "|cff1eff00|Hitem:37518::::::::76:251:512:11:1:3685:76:::|h[Amberplate Waistguard]|h|r",
+			["ID"] = 118034,
+			["Level"] = 135,
+			["Link"] = "|cff1eff00|Hitem:118034::::::::100:251:512:11:1:3708:99:::|h[Foundry-Fired Plate Waistguard]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122264,
-			["Level"] = 101,
-			["Link"] = "|cff00ccff|Hitem:122264::::::::79:251:::1:5805:::|h[Burnished Legplates of Might]|h|r",
+			["Level"] = 142,
+			["Link"] = "|cff00ccff|Hitem:122264::::::::100:251:::1:5805:::|h[Burnished Legplates of Might]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 37516,
-			["Level"] = 93,
-			["Link"] = "|cff1eff00|Hitem:37516::::::::77:251:512:11:1:3685:77:::|h[Chilled Greaves]|h|r",
+			["ID"] = 112591,
+			["Level"] = 133,
+			["Link"] = "|cff1eff00|Hitem:112591::::::::99:251:512:11:1:3708:98:::|h[Foundry-Fired Plate Warboots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 35986,
-			["Level"] = 80,
-			["Link"] = "|cff1eff00|Hitem:35986::::::::76:251:512:29:2:1678:3849:75:::|h[Foothold Cuffs of the Quickblade]|h|r",
+			["ID"] = 112617,
+			["Level"] = 138,
+			["Link"] = "|cff0070dd|Hitem:112617::::::::97:251:512:11:2:3708:4322:97:::|h[Foundry-Fired Plate Wristwraps]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 37478,
-			["Level"] = 95,
-			["Link"] = "|cff0070dd|Hitem:37478::::::::75:251:512:11:2:3685:5536:75:::|h[Amberplate Grips]|h|r",
+			["ID"] = 118031,
+			["Level"] = 127,
+			["Link"] = "|cff1eff00|Hitem:118031::::::::95:251:512:11:1:3708:95:::|h[Foundry-Fired Plate Handguards]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 128172,
-			["Level"] = 101,
+			["Level"] = 142,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128172::::::::79:251:::1:5805:::|h[Captain Sander's Returned Band]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128172::::::::100:251:::1:5805:::|h[Captain Sander's Returned Band]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 122529,
-			["Level"] = 101,
+			["Level"] = 142,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::79:251:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122529::::::::100:251:::1:5805:::|h[Dread Pirate Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122361,
-			["Level"] = 101,
+			["Level"] = 142,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::79:251:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::100:251:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 99,
+			["Level"] = 139,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::78:251:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::99:251:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
-			["Level"] = 101,
-			["Link"] = "|cff00ccff|Hitem:122260::::::::79:251:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
+			["Level"] = 142,
+			["Link"] = "|cff00ccff|Hitem:122260::::::::100:251:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 122389,
-			["Level"] = 101,
-			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff00ccff|Hitem:122389:3370:::::::79:251:::1:5805:::|h[Bloodsoaked Skullforge Reaver]|h|r",
+			["ID"] = 128292,
+			["Level"] = 152,
+			["Link"] = "|cffe6cc80|Hitem:128292::::::::100:251::9::::|h[Blades of the Fallen Prince]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 122389,
-			["Level"] = 101,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff00ccff|Hitem:122389:3368:::::::79:251:::1:5805:::|h[Bloodsoaked Skullforge Reaver]|h|r",
+			["ID"] = 128293,
+			["Level"] = 152,
+			["Link"] = "|cffe6cc80|Hitem:128293::::::::100:251::::::|h[Blades of the Fallen Prince]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

@@ -12,17 +12,18 @@ PasteDB = {
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
@@ -58,10 +59,13 @@ PasteDB = {
 		["Thorinbane - Dalaran"] = {
 			["loaded"] = true,
 		},
+		["Okona - Zul'jin"] = {
+			["loaded"] = true,
+		},
 		["Ruffinton - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Kelvalatar - Dalaran"] = {
+		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Datgore - Zul'jin"] = {
@@ -73,22 +77,22 @@ PasteDB = {
 		["Rotclaugh - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
 			["loaded"] = true,
 		},
-		["Fantastiburo - Zul'jin"] = {
-			["loaded"] = true,
-		},
 		["Serbitechna - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Malivant - Dalaran"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Shanyt - Zul'jin"] = {
+		["Zulbathal - Zul'jin"] = {
+			["loaded"] = true,
+		},
+		["Kelvalatar - Dalaran"] = {
 			["loaded"] = true,
 		},
 	},

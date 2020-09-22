@@ -1,6 +1,12 @@
 
 QuestTogether = {
 	["questTracker"] = {
+		[52748] = {
+			["title"] = "Eyes on the Skies",
+			["objectives"] = {
+				"Tend to Kua'fon", -- [1]
+			},
+		},
 		[47727] = {
 			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
@@ -19,13 +25,14 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
 			},
 		},
@@ -35,16 +42,10 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[52447] = {
-			["title"] = "Room To Grow",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"Tend to Kua'fon", -- [1]
-			},
-		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
-			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[45381] = {
@@ -72,19 +73,6 @@ QuestTogether = {
 				"1/1 Sanguine Argunite", -- [2]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
-			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
 		[49076] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
@@ -103,19 +91,19 @@ QuestTogether = {
 				"Win a battleground", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[56500] = {
+			["title"] = "Storming the Battlefields",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"Win a PVP Island Expedition", -- [1]
+				"1/1 Win an Epic Battleground", -- [2]
+				"1/1 Win a Battleground", -- [3]
 			},
 		},
-		[48976] = {
-			["title"] = "Supplies From the Argussian Reach",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[44989] = {
@@ -131,18 +119,16 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[56500] = {
-			["title"] = "Storming the Battlefields",
+		[57743] = {
+			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"1/1 Win an Epic Battleground", -- [2]
-				"1/1 Win a Battleground", -- [3]
+				"0/500 Earn Conquest", -- [1]
 			},
 		},
 		[13721] = {
@@ -151,22 +137,32 @@ QuestTogether = {
 				"10/25 Valiant's Seal", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[56433] = {
+			["title"] = "Drowning the Alliance",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/25 Alliance Players slain", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57396] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[47123] = {
+			["title"] = "Tomb of Sargeras: The Fallen Avatar",
+			["objectives"] = {
+				"Defeat the Fallen Avatar", -- [1]
+				"1/1 Wailing Soul", -- [2]
 			},
 		},
 		[49135] = {
@@ -175,16 +171,11 @@ QuestTogether = {
 				"1/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

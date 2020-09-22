@@ -1,13 +1,51 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[27874] = {
-			["title"] = "Aviana's Legacy",
+		[28732] = {
+			["title"] = "This Can Only Mean One Thing...",
+			["objectives"] = {
+				"Arrive at Blackrock Caverns.", -- [1]
+			},
+		},
+		[35702] = {
+			["title"] = "Chains of Iron",
+			["objectives"] = {
+				"1/1 Captain Brak slain", -- [1]
+				"1/1 Heart of the Magnaron recovered", -- [2]
+			},
+		},
+		[29199] = {
+			["title"] = "Calling for Reinforcements",
+			["objectives"] = {
+				"16/20 Mark of the World Tree", -- [1]
+			},
+		},
+		[36078] = {
+			["title"] = "Proof of Strength: Gronnling Scale",
 			["objectives"] = {
 			},
 		},
-		[28827] = {
-			["title"] = "To the Depths",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
+			["objectives"] = {
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+		[27203] = {
+			["title"] = "The Maelstrom",
+			["objectives"] = {
+			},
+		},
+		[37853] = {
+			["title"] = "The Death of the Eldest",
+			["objectives"] = {
+				"0/6   (Optional)", -- [1]
+				"0/1 Throw crystals into Senegos's pool", -- [2]
+			},
+		},
+		[33359] = {
+			["title"] = "Meet Us at Starfall Outpost",
 			["objectives"] = {
 			},
 		},
@@ -21,29 +59,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[25490] = {
-			["title"] = "Smashing Through Ashes",
+		[24432] = {
+			["title"] = "Sea Legs",
 			["objectives"] = {
-				"0/8 Charbringer slain", -- [1]
+				"0/3 Saltwater Starfish", -- [1]
+				"0/1 Conch Shell", -- [2]
 			},
 		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
-		[28732] = {
-			["title"] = "This Can Only Mean One Thing...",
-			["objectives"] = {
-				"Arrive at Blackrock Caverns.", -- [1]
 			},
 		},
 		[56491] = {
@@ -53,11 +79,51 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
+		[42449] = {
+			["title"] = "Return of the Four Horsemen",
+			["objectives"] = {
+			},
+		},
+		[36495] = {
+			["title"] = "News from Talador",
+			["objectives"] = {
+			},
+		},
+		[35166] = {
+			["title"] = "Ship Salvage",
+			["objectives"] = {
+				"0/15 Drudgeboat Salvage", -- [1]
+			},
+		},
+		[35633] = {
+			["title"] = "Scout Forensics",
+			["objectives"] = {
+				"0/5 Rangari Pouches recovered", -- [1]
+			},
+		},
+		[36440] = {
+			["title"] = "Saberon Population Reduction",
+			["objectives"] = {
+				"0/10 Steamscar saberon slain", -- [1]
+			},
+		},
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
+			["objectives"] = {
+			},
+		},
+		[35174] = {
+			["title"] = "Pale Moonlight",
+			["objectives"] = {
+				"0/1 Gnaw Bloodseeker slain", -- [1]
+				"0/8 Pale Devourer slain", -- [2]
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

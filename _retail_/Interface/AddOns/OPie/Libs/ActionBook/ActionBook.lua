@@ -1,4 +1,4 @@
-local apiV, AB, MAJ, REV, ext, T = {}, {}, 2, 23, ...
+local apiV, AB, MAJ, REV, ext, T = {}, {}, 2, 24, ...
 if T.ActionBook then return end
 apiV[MAJ], ext, T.Kindred, T.Rewire = AB, {Kindred=T.Kindred, Rewire=T.Rewire, ActionBook={}}
 
@@ -134,7 +134,7 @@ end
 core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
 	local i, ret, root, col, idx, aid, ecol = 1, "", tonumber((...)) or 0
 	wipe(outCount)
-	colStack[i], idxStack[i], ecStack[i] = root, 1, col
+	colStack[i], idxStack[i], ecStack[i] = root, 1, nil
 	repeat
 		col, idx, ecol = colStack[i], idxStack[i], ecStack[i]
 		if idx == 1 and not outCount[col] then
@@ -173,13 +173,14 @@ core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
 				end
 			end
 		else
-			i = i - 1
-			if colStack[i] == ecol then
-				ecol = nil
+			local openAction = (not ecol) and (i == 1 or (outCount[col] or 0) > 0) and metadata["openAction-" .. col]
+			if openAction then
+				ret = ret .. "\n" .. col .. " 0 " .. openAction .. " AOOA::" .. col
 			end
+			i = i - 1
 		end
 	until i == 0
-	return ret, metadata["openAction-" .. root]
+	return ret, metadata["openAction-" .. root] -- 2nd return is deprecated; use idx 0 actions in ret
 ]])
 core:SetAttribute("UseAction", [[-- AB:UseAction(slot[, ...])
 	local at = actInfo[...]
@@ -474,7 +475,7 @@ function AB:NotifyObservers(ident, data)
 	assert(type(ident) == "string", 'Syntax: ActionBook:NotifyObservers("identifier"[, data])')
 	assert(actionCreators[ident] or observers[ident] ~= nil, "Identifier %q is not registered", ident)
 	notifyCount = (notifyCount + 1) % 4503599627370495
-	for i=1,ident == "*" or not observers[ident] and 1 or 2 do
+	for i=ident == "*" or not observers[ident] and 1 or 2, 1, -1 do
 		for k,v in pairs(observers[i == 1 and "*" or ident]) do
 			securecall(k, v, ident, data)
 		end
@@ -525,7 +526,7 @@ function AB:locale(getWritableHandle)
 	if getWritableHandle then
 		local r = LW
 		LW = nil
-		return assert(r, "A writable handle has already been returned once")
+		return assert(r, "A writable locale handle has already been returned")
 	end
 	return L
 end

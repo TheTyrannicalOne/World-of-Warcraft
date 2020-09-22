@@ -11,8 +11,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 517,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1654:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 519,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1656:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 157964,
@@ -76,8 +76,8 @@ PawnOptions = {
 		}, -- [14]
 		{
 			["ID"] = 169223,
-			["Level"] = 484,
-			["Link"] = "|cffff8000|Hitem:169223::::::::120:71::11:2:6279:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["Level"] = 486,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:71::11:2:6280:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 163874,

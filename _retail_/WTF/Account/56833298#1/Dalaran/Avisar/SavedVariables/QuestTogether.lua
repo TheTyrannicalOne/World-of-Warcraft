@@ -7,10 +7,10 @@ QuestTogether = {
 				"0/5 Elemental-Imbued Weapon broken", -- [1]
 			},
 		},
-		[54485] = {
-			["title"] = "Battle of Dazar'alor",
+		[56128] = {
+			["title"] = "Drowning the Horde",
 			["objectives"] = {
-				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+				"0/25 Horde Players slain", -- [1]
 			},
 		},
 		[13413] = {
@@ -19,12 +19,11 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[56499] = {
-			["title"] = "Storming the Battlefields",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"0/1 Win an Epic Battleground", -- [2]
-				"0/1 Win a Battleground", -- [3]
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[57744] = {
@@ -46,9 +45,12 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[56378] = {
+			["title"] = "The Missing Crew",
 			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[44989] = {
@@ -57,10 +59,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[57006] = {
@@ -71,9 +73,10 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[44720] = {
-			["title"] = "A Call to Action",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[57566] = {
@@ -89,10 +92,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[54438] = {
@@ -120,30 +123,30 @@ QuestTogether = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
+		[56499] = {
+			["title"] = "Storming the Battlefields",
+			["objectives"] = {
+				"Win a PVP Island Expedition", -- [1]
+				"0/1 Win an Epic Battleground", -- [2]
+				"0/1 Win a Battleground", -- [3]
+			},
+		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
-			},
-		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
-			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -167,7 +170,7 @@ QuestTogether = {
 		[42483] = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Steelscale's Fin", -- [1]
 			},
 		},
 		[31891] = {
@@ -186,24 +189,22 @@ QuestTogether = {
 				"10/25 Slay Horde Players", -- [1]
 			},
 		},
-		[56211] = {
-			["title"] = "Scrying Stones",
+		[44720] = {
+			["title"] = "A Call to Action",
 			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56128] = {
-			["title"] = "Drowning the Horde",
+		[54485] = {
+			["title"] = "Battle of Dazar'alor",
 			["objectives"] = {
-				"0/25 Horde Players slain", -- [1]
+				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

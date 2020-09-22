@@ -12,17 +12,18 @@ HandyNotes_LegionTreasuresDB = {
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
@@ -47,9 +48,11 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
+		["Okona - Zul'jin"] = {
+		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Kelvalatar - Dalaran"] = {
+		["Shanyt - Zul'jin"] = {
 		},
 		["Datgore - Zul'jin"] = {
 		},
@@ -57,17 +60,17 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 		},
 		["Durlok - Black Dragonflight"] = {
 		},
-		["Fantastiburo - Zul'jin"] = {
-		},
 		["Serbitechna - Dalaran"] = {
 		},
-		["Malivant - Dalaran"] = {
+		["Fantastiburo - Zul'jin"] = {
 		},
-		["Shanyt - Zul'jin"] = {
+		["Zulbathal - Zul'jin"] = {
+		},
+		["Kelvalatar - Dalaran"] = {
 		},
 	},
 }

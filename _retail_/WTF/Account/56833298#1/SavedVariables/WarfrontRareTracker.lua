@@ -1,8 +1,5 @@
 
 WarfrontRareTrackerDB = {
-	["global"] = {
-		["printCompatibilityMessage1"] = false,
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
@@ -15,17 +12,21 @@ WarfrontRareTrackerDB = {
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
 		["Malivant - Dalaran"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+	},
+	["global"] = {
+		["printCompatibilityMessage1"] = false,
 	},
 	["profiles"] = {
 		["Default"] = {

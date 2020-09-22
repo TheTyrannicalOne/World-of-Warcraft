@@ -2,1117 +2,1447 @@
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 		{
-			"125 cap I bought one and couldnt equip it", -- [1]
-			"Zymor-ArgentDawn", -- [2]
+			"mine are gnome flavored", -- [1]
+			"Meleven-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Meleven-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1305, -- [11]
-			"Player-75-0280C688", -- [12]
+			506, -- [11]
+			"Player-3684-0AAF3CB4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcZymor|r",
-			[51] = 1600207881,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff8686ecMeleven-Mal'Ganis|r",
+			[51] = 1600637768,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [1]
 		{
-			"Yeah, 125 is the cap", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"ah reduced calorie cookies then", -- [1]
+			"Serigon-KirinTor", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Serigon-KirinTor", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1306, -- [11]
-			"Player-75-0C315D30", -- [12]
+			513, -- [11]
+			"Player-1071-09F2F85D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600207891,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcSerigon-KirinTor|r",
+			[51] = 1600637791,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [2]
 		{
-			"well hell", -- [1]
-			"Shambone-TheScryers", -- [2]
+			"but all the flavor", -- [1]
+			"Meleven-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Meleven-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1307, -- [11]
-			"Player-75-0BC9602C", -- [12]
+			514, -- [11]
+			"Player-3684-0AAF3CB4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcShambone|r",
-			[51] = 1600207896,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff8686ecMeleven-Mal'Ganis|r",
+			[51] = 1600637801,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [3]
 		{
-			"The store is just poorly coded so the core showed up when it shouldn't have", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"lol", -- [1]
+			"Hawgdream-Medivh", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Hawgdream-Medivh", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1309, -- [11]
-			"Player-75-0C315D30", -- [12]
+			517, -- [11]
+			"Player-62-09A460BA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600207904,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff8686ecHawgdream-Medivh|r",
+			[51] = 1600637815,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [4]
 		{
-			"that's fun", -- [1]
-			"Shambone-TheScryers", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:6:Player-75-0DE08E34:1:9:20:20:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r!", -- [1]
+			"Shiftheal-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Shiftheal-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1310, -- [11]
-			"Player-75-0BC9602C", -- [12]
+			520, -- [11]
+			"Player-75-0DE08E34", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcShambone|r",
-			[51] = 1600207918,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffe7b09Shiftheal-TheScryers|r",
+			[51] = 1600637844,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [5]
 		{
-			"Yup", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"Interrupted Drywhisker Surveyor's |cff71d5ff|Hspell:20822:0|h[Frostbolt]|h|r!", -- [1]
+			"Dronimo-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dronimo-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1311, -- [11]
-			"Player-75-0C315D30", -- [12]
+			536, -- [11]
+			"Player-3678-0AD0A2CD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600207921,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDronimo-Thrall|r",
+			[51] = 1600637949,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [6]
 		{
-			"buying guild signatures 1k ea", -- [1]
-			"Morphntime-ArgentDawn", -- [2]
+			"Oh its tur this week? :o", -- [1]
+			"Knarìng-Aggramar", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Morphntime-ArgentDawn", -- [5]
+			"", -- [4]
+			"Knarìng-Aggramar", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1312, -- [11]
-			"Player-75-0CB05C47", -- [12]
+			537, -- [11]
+			"Player-106-0C836F1F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Morphntime|r",
-			[51] = 1600207923,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffef367Knarìng-Aggramar|r",
+			[51] = 1600637953,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [7]
 		{
-			"The true Blizzard experience", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"yup", -- [1]
+			"Zhuvoc-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Zhuvoc-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1313, -- [11]
-			"Player-75-0C315D30", -- [12]
+			543, -- [11]
+			"Player-1428-0A9280DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600207928,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Zhuvoc-Quel'Thalas|r",
+			[51] = 1600638016,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [8]
 		{
-			"I wanted more!!", -- [1]
-			"Zymor-ArgentDawn", -- [2]
+			"Defent front", -- [1]
+			"Hawgdream-Medivh", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Hawgdream-Medivh", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1314, -- [11]
-			"Player-75-0280C688", -- [12]
+			556, -- [11]
+			"Player-62-09A460BA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcZymor|r",
-			[51] = 1600207934,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff8686ecHawgdream-Medivh|r",
+			[51] = 1600638104,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [9]
 		{
-			"that means I'm going to have to cleanse something because this Thing from beyond business is out of control", -- [1]
-			"Shambone-TheScryers", -- [2]
+			"lead him into the base", -- [1]
+			"Serigon-KirinTor", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Serigon-KirinTor", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1322, -- [11]
-			"Player-75-0BC9602C", -- [12]
+			558, -- [11]
+			"Player-1071-09F2F85D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcShambone|r",
-			[51] = 1600207989,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcSerigon-KirinTor|r",
+			[51] = 1600638140,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [10]
 		{
-			"I had two chasing me", -- [1]
-			"Shambone-TheScryers", -- [2]
+			"BRING HIM INTO THE BASE", -- [1]
+			"Serigon-KirinTor", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Serigon-KirinTor", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1323, -- [11]
-			"Player-75-0BC9602C", -- [12]
+			570, -- [11]
+			"Player-1071-09F2F85D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcShambone|r",
-			[51] = 1600207995,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcSerigon-KirinTor|r",
+			[51] = 1600638191,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [11]
 		{
-			"Haha", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"Interrupted Alliance Sorcerer's |cff71d5ff|Hspell:262007:0|h[Polymorph]|h|r!", -- [1]
+			"Dronimo-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dronimo-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1324, -- [11]
-			"Player-75-0C315D30", -- [12]
+			593, -- [11]
+			"Player-3678-0AD0A2CD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600207995,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDronimo-Thrall|r",
+			[51] = 1600638439,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [12]
 		{
-			"in that stupid vision", -- [1]
-			"Shambone-TheScryers", -- [2]
+			"Defend Mines!!!", -- [1]
+			"Hawgdream-Medivh", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Hawgdream-Medivh", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1325, -- [11]
-			"Player-75-0BC9602C", -- [12]
+			608, -- [11]
+			"Player-62-09A460BA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcShambone|r",
-			[51] = 1600208001,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff8686ecHawgdream-Medivh|r",
+			[51] = 1600638524,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [13]
 		{
-			"It gets rough sometimes, for sure", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"alliance in mines", -- [1]
+			"Orybro-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Orybro-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1326, -- [11]
-			"Player-75-0C315D30", -- [12]
+			625, -- [11]
+			"Player-3684-0CC0F50B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600208003,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffef367Orybro-Mal'Ganis|r",
+			[51] = 1600638625,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [14]
 		{
-			"guess Void ritual is going away", -- [1]
-			"Shambone-TheScryers", -- [2]
+			"inside mines", -- [1]
+			"Hawgdream-Medivh", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Hawgdream-Medivh", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1330, -- [11]
-			"Player-75-0BC9602C", -- [12]
+			627, -- [11]
+			"Player-62-09A460BA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcShambone|r",
-			[51] = 1600208032,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff8686ecHawgdream-Medivh|r",
+			[51] = 1600638642,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [15]
 		{
-			"buying morphntime's mom, 1k ea", -- [1]
-			"Thiccsnicker-ArgentDawn", -- [2]
+			"CLEAN MINES", -- [1]
+			"Serigon-KirinTor", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Thiccsnicker-ArgentDawn", -- [5]
+			"", -- [4]
+			"Serigon-KirinTor", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1333, -- [11]
-			"Player-75-0D7F1A3B", -- [12]
+			629, -- [11]
+			"Player-1071-09F2F85D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Thiccsnicker|r",
-			[51] = 1600208042,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff006fdcSerigon-KirinTor|r",
+			[51] = 1600638659,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [16]
 		{
-			"grow up", -- [1]
-			"Etmorechicn-TheScryers", -- [2]
+			"THEN CLEAN CENTER", -- [1]
+			"Serigon-KirinTor", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Etmorechicn-TheScryers", -- [5]
+			"", -- [4]
+			"Serigon-KirinTor", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1334, -- [11]
-			"Player-75-0B62658B", -- [12]
+			630, -- [11]
+			"Player-1071-09F2F85D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Etmorechicn-TheScryers|r",
-			[51] = 1600208057,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff006fdcSerigon-KirinTor|r",
+			[51] = 1600638662,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [17]
 		{
-			"sold!", -- [1]
-			"Morphntime-ArgentDawn", -- [2]
+			"ELEMENTS", -- [1]
+			"Serigon-KirinTor", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Morphntime-ArgentDawn", -- [5]
+			"", -- [4]
+			"Serigon-KirinTor", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1336, -- [11]
-			"Player-75-0CB05C47", -- [12]
+			640, -- [11]
+			"Player-1071-09F2F85D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Morphntime|r",
-			[51] = 1600208075,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff006fdcSerigon-KirinTor|r",
+			[51] = 1600638770,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [18]
 		{
-			"i know you are, but what am i?", -- [1]
-			"Shocknproc-ArgentDawn", -- [2]
+			"need ppl at circle of elements ", -- [1]
+			"Zhuvoc-Quel'Thalas", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Shocknproc-ArgentDawn", -- [5]
+			"", -- [4]
+			"Zhuvoc-Quel'Thalas", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1337, -- [11]
-			"Player-75-0B82B35C", -- [12]
+			649, -- [11]
+			"Player-1428-0A9280DC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcShocknproc|r",
-			[51] = 1600208078,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Zhuvoc-Quel'Thalas|r",
+			[51] = 1600638797,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [19]
 		{
-			"Wait, that easy? I should've offered 500...", -- [1]
-			"Thiccsnicker-ArgentDawn", -- [2]
+			"Interrupted Cresting Goliath's |cff71d5ff|Hspell:278219:0|h[Water Bolt]|h|r!", -- [1]
+			"Dronimo-Thrall", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Thiccsnicker-ArgentDawn", -- [5]
+			"", -- [4]
+			"Dronimo-Thrall", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1338, -- [11]
-			"Player-75-0D7F1A3B", -- [12]
+			668, -- [11]
+			"Player-3678-0AD0A2CD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Thiccsnicker|r",
-			[51] = 1600208108,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc59a6cDronimo-Thrall|r",
+			[51] = 1600639097,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [20]
 		{
-			"Good choice", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"Interrupted Cresting Goliath's |cff71d5ff|Hspell:278219:0|h[Water Bolt]|h|r!", -- [1]
+			"Dronimo-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dronimo-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1342, -- [11]
-			"Player-75-0C315D30", -- [12]
+			670, -- [11]
+			"Player-3678-0AD0A2CD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600208168,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDronimo-Thrall|r",
+			[51] = 1600639113,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [21]
 		{
-			"buying guild signatures 1k ea", -- [1]
-			"Morphntime-ArgentDawn", -- [2]
+			"CIRCLE", -- [1]
+			"Hawgdream-Medivh", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Morphntime-ArgentDawn", -- [5]
+			"", -- [4]
+			"Hawgdream-Medivh", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1345, -- [11]
-			"Player-75-0CB05C47", -- [12]
+			682, -- [11]
+			"Player-62-09A460BA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Morphntime|r",
-			[51] = 1600208228,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff8686ecHawgdream-Medivh|r",
+			[51] = 1600639333,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [22]
 		{
-			"If you sign, he'll love you long time.", -- [1]
-			"Shocknproc-ArgentDawn", -- [2]
+			"Is hostage in cave?", -- [1]
+			"Hawgdream-Medivh", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Shocknproc-ArgentDawn", -- [5]
+			"", -- [4]
+			"Hawgdream-Medivh", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1349, -- [11]
-			"Player-75-0B82B35C", -- [12]
+			689, -- [11]
+			"Player-62-09A460BA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcShocknproc|r",
-			[51] = 1600208412,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff8686ecHawgdream-Medivh|r",
+			[51] = 1600639518,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [23]
 		{
-			"loooong time", -- [1]
-			"Morphntime-ArgentDawn", -- [2]
+			"think so", -- [1]
+			"Sixxam-Blade'sEdge", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Morphntime-ArgentDawn", -- [5]
+			"", -- [4]
+			"Sixxam-Blade'sEdge", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1350, -- [11]
-			"Player-75-0CB05C47", -- [12]
+			690, -- [11]
+			"Player-1129-0B0D6749", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Morphntime|r",
-			[51] = 1600208422,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3ec5e9Sixxam-Blade'sEdge|r",
+			[51] = 1600639525,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [24]
 		{
-			"Infused Amber Ooze 83.21% ~(17.99, 65.39)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"yes", -- [1]
+			"Milphunter-Illidan", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Milphunter-Illidan", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1358, -- [11]
-			"Player-75-058380E2", -- [12]
+			691, -- [11]
+			"Player-57-0B22D895", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600208604,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa9d271Milphunter-Illidan|r",
+			[51] = 1600639527,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [25]
 		{
-			"Harrier Nir'verash 100.00% ~(13.62, 51.31)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"The one  by circle?", -- [1]
+			"Hawgdream-Medivh", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Hawgdream-Medivh", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1363, -- [11]
-			"Player-75-058380E2", -- [12]
+			695, -- [11]
+			"Player-62-09A460BA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600208668,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff8686ecHawgdream-Medivh|r",
+			[51] = 1600639580,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [26]
 		{
-			"Enraged Amber Elemental 88.95% ~(11.18, 40.29)", -- [1]
+			"1/1 Defeat the Alliance at the Battle for Stromgarde", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
+			"", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1374, -- [11]
+			700, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
+			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600208830,
-			[50] = "CHAT_MSG_CHANNEL",
+			[51] = 1600639637,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [27]
 		{
-			"Drone Keeper Ak'thet 92.66% ~(12.39, 40.79)", -- [1]
+			"Completed: Heroic Warfront: The Battle for Stromgarde", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
+			"", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1379, -- [11]
+			760, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
+			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600208864,
-			[50] = "CHAT_MSG_CHANNEL",
+			[51] = 1600639660,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [28]
 		{
-			"Yup", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"ty all", -- [1]
+			"Varthiis-WyrmrestAccord", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Varthiis-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1384, -- [11]
-			"Player-75-0C315D30", -- [12]
+			765, -- [11]
+			"Player-1171-08D7A847", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600208945,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Varthiis-WyrmrestAccord|r",
+			[51] = 1600639662,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [29]
 		{
-			"Definitely a lot less interesting to do dailies knowing prepatch is just around the corner ", -- [1]
-			"Elzhu-TheScryers", -- [2]
+			"GG", -- [1]
+			"Serigon-KirinTor", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Serigon-KirinTor", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1385, -- [11]
-			"Player-75-0C315D30", -- [12]
+			768, -- [11]
+			"Player-1071-09F2F85D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Elzhu|r",
-			[51] = 1600208974,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcSerigon-KirinTor|r",
+			[51] = 1600639663,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [30]
 		{
-			"No doubt", -- [1]
-			"Geenon-TheScryers", -- [2]
+			"EVERYONE ", -- [1]
+			"Serigon-KirinTor", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Serigon-KirinTor", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1387, -- [11]
-			"Player-75-0AD86CF0", -- [12]
+			769, -- [11]
+			"Player-1071-09F2F85D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecGeenon|r",
-			[51] = 1600208988,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcSerigon-KirinTor|r",
+			[51] = 1600639666,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [31]
 		{
-			"Kal'tik the Blight here..", -- [1]
-			"Tallyr-Zul'jin", -- [2]
+			"Picked Up: Shadowclaw", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Tallyr-Zul'jin", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1396, -- [11]
-			"Player-61-0A2A4521", -- [12]
+			782, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Tallyr-Zul'jin|r",
-			[51] = 1600209031,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600639707,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [32]
 		{
-			"19.34,11.42", -- [1]
-			"Tallyr-Zul'jin", -- [2]
+			"Completed: Shadowclaw", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Tallyr-Zul'jin", -- [5]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1400, -- [11]
-			"Player-61-0A2A4521", -- [12]
+			789, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600639720,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [33]
+		{
+			"|cffffff00Xibala is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"4. LocalDefense - Dazar'alor", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			4, -- [8]
+			"LocalDefense - Dazar'alor", -- [9]
+			0, -- [10]
+			834, -- [11]
+			false, -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffa9d271Tallyr-Zul'jin|r",
-			[51] = 1600209058,
+			[52] = "",
+			[51] = 1600640132,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"大脚任务进度提示: 已消灭大女皇夏柯扎拉：1/1(完成)", -- [1]
-			"Shadowmn-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shadowmn-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1408, -- [11]
-			"Player-3683-0A6C942F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Shadowmn-Dalaran|r",
-			[51] = 1600209111,
-			[50] = "CHAT_MSG_RAID",
 		}, -- [34]
 		{
-			"大脚任务进度提示: 已消灭大女皇夏柯扎拉：1/1(完成)", -- [1]
-			"Laolaodee-Dalaran", -- [2]
+			"weekly lock out on loot right?", -- [1]
+			"Sagemo-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Laolaodee-Dalaran", -- [5]
+			"Sagemo-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1409, -- [11]
-			"Player-3683-0A6E0A0D", -- [12]
+			941, -- [11]
+			"Player-61-0CDA39AC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeLaolaodee-Dalaran|r",
-			[51] = 1600209111,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cfff38bb9Sagemo-Zul'jin|r",
+			[51] = 1600640969,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [35]
 		{
-			"大女皇夏柯扎拉 (任务完成)", -- [1]
-			"Shadowmn-Dalaran", -- [2]
+			"I think its a daily thing", -- [1]
+			"Thorbiartl-Hyjal", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shadowmn-Dalaran", -- [5]
+			"Thorbiartl-Hyjal", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1435, -- [11]
-			"Player-3683-0A6C942F", -- [12]
+			947, -- [11]
+			"Player-3661-085FAB75", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Shadowmn-Dalaran|r",
-			[51] = 1600209112,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cfffef367Thorbiartl-Hyjal|r",
+			[51] = 1600640984,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [36]
 		{
-			"|cffffff00|Hquest:58705:-1:120:120:0|h[Grand Empress Shek'zara]|h|r Quest completed", -- [1]
-			"Tazzmagaz-Dragonblight", -- [2]
+			"Interrupted Baruk Stoneshaper's |cff71d5ff|Hspell:309055:0|h[Flesh to Stone]|h|r!", -- [1]
+			"ßlåçå-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tazzmagaz-Dragonblight", -- [5]
+			"ßlåçå-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1436, -- [11]
-			"Player-114-0A24E3F7", -- [12]
+			1013, -- [11]
+			"Player-3678-0B4B1DA2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Tazzmagaz-Dragonblight|r",
-			[51] = 1600209113,
+			[52] = "|cfffe7b09ßlåçå-Thrall|r",
+			[51] = 1600641741,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [37]
 		{
-			"Hive-Guard Naz'ruzek 84.45% ~(17.79, 62.9)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"someone lie to me", -- [1]
+			"Mangò-Thrall", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Mangò-Thrall", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1474, -- [11]
-			"Player-75-058380E2", -- [12]
+			1025, -- [11]
+			"Player-3678-0ABD7FE0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600209317,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffe7b09Mangò-Thrall|r",
+			[51] = 1600641825,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [38]
 		{
-			"Amber-Shaper Esh'ri 100.00% ~(19.3, 71.59)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"lied?", -- [1]
+			"Mangò-Thrall", -- [2]
 			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Mangò-Thrall", -- [5]
 			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1481, -- [11]
-			"Player-75-058380E2", -- [12]
+			1026, -- [11]
+			"Player-3678-0ABD7FE0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600209367,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffe7b09Mangò-Thrall|r",
+			[51] = 1600641832,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [39]
 		{
-			"wrong assault you gonna be waiting till friday night for that rare", -- [1]
-			"Jaylynn-Mal'Ganis", -- [2]
+			"ya english bad", -- [1]
+			"Mangò-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Jaylynn-Mal'Ganis", -- [5]
+			"Mangò-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1555, -- [11]
-			"Player-3684-0A7B6296", -- [12]
+			1027, -- [11]
+			"Player-3678-0ABD7FE0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Jaylynn-Mal'Ganis|r",
-			[51] = 1600210555,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfffe7b09Mangò-Thrall|r",
+			[51] = 1600641840,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [40]
 		{
-			"really thanks for the info", -- [1]
-			"Jaylynn-Mal'Ganis", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Jaylynn-Mal'Ganis", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1557, -- [11]
-			"Player-3684-0A7B6296", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Jaylynn-Mal'Ganis|r",
-			[51] = 1600210663,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [41]
-		{
-			"apparently its the wrong week for this rare someone just whispered so sorry folks", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1559, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600210710,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [42]
-		{
-			"maybe friday", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1560, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600210716,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [43]
-		{
-			"No worries", -- [1]
-			"Idkpetahzer-Arathor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Idkpetahzer-Arathor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1563, -- [11]
-			"Player-1138-08B5A5FE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Idkpetahzer-Arathor|r",
-			[51] = 1600210722,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [44]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14062:Player-75-03772F0D:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[Horrific Vision of Stormwind]|h|r!", -- [1]
-			"Ozzymandias-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ozzymandias-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1606, -- [11]
-			"Player-75-03772F0D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Ozzymandias|r",
-			[51] = 1600211564,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [45]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14064:Player-75-03772F0D:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[The Even More Horrific Vision of Stormwind]|h|r!", -- [1]
-			"Ozzymandias-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ozzymandias-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1607, -- [11]
-			"Player-75-03772F0D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Ozzymandias|r",
-			[51] = 1600211564,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [46]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14143:Player-75-03772F0D:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[Reeking of Visions]|h|r!", -- [1]
-			"Ozzymandias-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ozzymandias-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1608, -- [11]
-			"Player-75-03772F0D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Ozzymandias|r",
-			[51] = 1600211564,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [47]
-		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1609, -- [11]
-			"Player-75-034D04EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1600211567,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [48]
-		{
-			"Tisiphon 20.87% ~(10, 67.39)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Tisiphonm up", -- [1]
+			"Raê-Thrall", -- [2]
 			"", -- [3]
 			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Raê-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
 			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1616, -- [11]
-			"Player-75-058380E2", -- [12]
+			1142, -- [11]
+			"Player-3678-0ADAF699", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600211862,
+			[52] = "|cff3ec5e9Raê-Thrall|r",
+			[51] = 1600643176,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"Houndlor just pop", -- [1]
+			"Crayvan-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Crayvan-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1144, -- [11]
+			"Player-3678-07B73023", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Crayvan-Thrall|r",
+			[51] = 1600643197,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [42]
+		{
+			"lord", -- [1]
+			"Crayvan-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Crayvan-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1146, -- [11]
+			"Player-3678-07B73023", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Crayvan-Thrall|r",
+			[51] = 1600643201,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [43]
+		{
+			"Houndlord is dead", -- [1]
+			"Crayvan-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Crayvan-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1151, -- [11]
+			"Player-3678-07B73023", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Crayvan-Thrall|r",
+			[51] = 1600643235,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [44]
+		{
+			"I wou, I wou loo people saying oh Leafy come back. I would LOVE to see Leafy come back and try to exist in the landscape today, like the content he was making would NEEEVER fly on YouTube today and you have to adapt and overcome the fact that like.. you", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1195, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643547,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [45]
+		{
+			"can't even curse bro, like I don't know.", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1196, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643549,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [46]
+		{
+			"I think I lost brain cells reading that.", -- [1]
+			"Crase-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Crase-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1198, -- [11]
+			"Player-3678-0C62CED1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Crase-Thrall|r",
+			[51] = 1600643596,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [47]
+		{
+			"@#$", -- [1]
+			"Trypanozome-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Trypanozome-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1200, -- [11]
+			"Player-3678-07F7B1E4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Trypanozome-Thrall|r",
+			[51] = 1600643615,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [48]
+		{
+			"That's what happens when you watch H3H3", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1202, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643620,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [49]
 		{
-			"hi all", -- [1]
-			"Famin-ArgentDawn", -- [2]
+			"lol", -- [1]
+			"Crase-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Crase-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1203, -- [11]
+			"Player-3678-0C62CED1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Crase-Thrall|r",
+			[51] = 1600643628,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [50]
+		{
+			"I don't have language filter on what were you trying to say?", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1204, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643632,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [51]
+		{
+			"At Hashtag Dollarsign", -- [1]
+			"Trypanozome-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Trypanozome-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1206, -- [11]
+			"Player-3678-07F7B1E4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Trypanozome-Thrall|r",
+			[51] = 1600643650,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [52]
+		{
+			":)", -- [1]
+			"Trypanozome-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Trypanozome-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1207, -- [11]
+			"Player-3678-07F7B1E4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Trypanozome-Thrall|r",
+			[51] = 1600643656,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [53]
+		{
+			"{g1} is botting report them for using honorbuddy", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1209, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643666,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [54]
+		{
+			"oh noes... another bot goes down", -- [1]
+			"Trypanozome-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Trypanozome-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1213, -- [11]
+			"Player-3678-07F7B1E4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Trypanozome-Thrall|r",
+			[51] = 1600643696,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [55]
+		{
+			"I usually always get replies when I say that lmao", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1218, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643727,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [56]
+		{
+			"Like \"I'm not botting wtf\"", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1220, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643735,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [57]
+		{
+			"ha-li up", -- [1]
+			"Norikara-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Norikara-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1227, -- [11]
+			"Player-3678-0BC133D4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Norikara-Thrall|r",
+			[51] = 1600643797,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [58]
+		{
+			"HA LI IS UP", -- [1]
+			"Paxandoo-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Paxandoo-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1622, -- [11]
-			"Player-75-007DC40C", -- [12]
+			1232, -- [11]
+			"Player-3209-0A0FE0CD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecFamin|r",
-			[51] = 1600211892,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [50]
+			[52] = "|cfffefefePaxandoo-Azralon|r",
+			[51] = 1600643811,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [59]
 		{
-			"hello", -- [1]
-			"Zymor-ArgentDawn", -- [2]
+			"COME HERE", -- [1]
+			"Paxandoo-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Paxandoo-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1623, -- [11]
+			1233, -- [11]
+			"Player-3209-0A0FE0CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefePaxandoo-Azralon|r",
+			[51] = 1600643814,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [60]
+		{
+			"what if anh spawns tho", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1235, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643825,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [61]
+		{
+			"I got the mount!!!!!!", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1241, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643882,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [62]
+		{
+			"grats", -- [1]
+			"Crase-Thrall", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Crase-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1242, -- [11]
+			"Player-3678-0C62CED1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Crase-Thrall|r",
+			[51] = 1600643889,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [63]
+		{
+			"Without even having to kill/loot", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1243, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600643893,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [64]
+		{
+			"can this ugly rare spawn so i can get this ugly mount", -- [1]
+			"Animewarlord-Area52", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Animewarlord-Area52", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			1272, -- [11]
+			"Player-3676-0ABF6AE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Animewarlord-Area52|r",
+			[51] = 1600644105,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [65]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:578:Player-75-0280C688:1:9:21:20:4294967295:4294967295:4294967295:4294967295|h[The Dedicated Few (10 player)]|h|r!", -- [1]
+			"Zymor-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Zymor-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			109, -- [11]
 			"Player-75-0280C688", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1120,417 +1450,43 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff006fdcZymor|r",
-			[51] = 1600211906,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [51]
-		{
-			"Amber-Shaper Esh'ri 99.34% ~(19.6, 73.31)", -- [1]
-			"Rompus-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Rompus-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			1624, -- [11]
-			"Player-75-0D0872AF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Rompus|r",
-			[51] = 1600211913,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
-		{
-			"Hive-Guard Naz'ruzek 60.09% ~(20.7, 62.57)", -- [1]
-			"Rompus-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Vale of Eternal Blossoms", -- [4]
-			"Rompus-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			1626, -- [11]
-			"Player-75-0D0872AF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Rompus|r",
-			[51] = 1600211977,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:12546:Player-75-0A8DD9B9:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[Superior]|h|r!", -- [1]
-			"Monkataur-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Monkataur-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1629, -- [11]
-			"Player-75-0A8DD9B9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe95Monkataur|r",
-			[51] = 1600212018,
+			[51] = 1600693034,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [54]
-		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1630, -- [11]
-			"Player-75-034D04EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1600212026,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [55]
-		{
-			"Korzaran the Slaughterer 100.00% ~(71.74, 73.56)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Uldum", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Uldum", -- [9]
-			0, -- [10]
-			1649, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600212393,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14173:Player-75-0AEBC855:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[A Mountain of Mementos]|h|r!", -- [1]
-			"Bothra-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bothra-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1657, -- [11]
-			"Player-75-0AEBC855", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Bothra-TheScryers|r",
-			[51] = 1600212590,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [57]
-		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1658, -- [11]
-			"Player-75-034D04EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1600212593,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [58]
-		{
-			"Ishak of the Four Winds 100.00% ~(72.22, 82.18)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. General - Uldum", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Uldum", -- [9]
-			0, -- [10]
-			1701, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600213405,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
-		{
-			"hey, thanks for listing", -- [1]
-			"Skorkimus-BleedingHollow", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Skorkimus-BleedingHollow", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1715, -- [11]
-			"Player-73-0C8801DA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Skorkimus-BleedingHollow|r",
-			[51] = 1600213491,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [60]
-		{
-			"damn war mode..", -- [1]
-			"Naixzz-Tichondrius", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Naixzz-Tichondrius", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1716, -- [11]
-			"Player-11-0A6FBDE4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Naixzz-Tichondrius|r",
-			[51] = 1600213492,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [61]
-		{
-			"np", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1717, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600213501,
-			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [62]
-		{
-			"and yeah its off in the title", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1719, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600213510,
-			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [63]
-		{
-			"i think there was a wm on group up too", -- [1]
-			"Lovex-BleedingHollow", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lovex-BleedingHollow", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1724, -- [11]
-			"Player-73-06DC367F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Lovex-BleedingHollow|r",
-			[51] = 1600213534,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [64]
-		{
-			"there is", -- [1]
-			"Uncledany-Barthilas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Uncledany-Barthilas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1725, -- [11]
-			"Player-3723-0AEFD837", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Uncledany-Barthilas|r",
-			[51] = 1600213540,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [65]
-		{
-			"maybe he clicked the wrong one", -- [1]
-			"Lovex-BleedingHollow", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lovex-BleedingHollow", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1726, -- [11]
-			"Player-73-06DC367F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Lovex-BleedingHollow|r",
-			[51] = 1600213541,
-			[50] = "CHAT_MSG_RAID",
 		}, -- [66]
 		{
-			"there was", -- [1]
+			"Anh-De the Loyal 38.81% ~(34.31, 68.06)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
+			"2. General - Vale of Eternal Blossoms", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1727, -- [11]
+			112, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
+			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600213543,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[51] = 1600693096,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [67]
 		{
-			"ty", -- [1]
-			"Asharyìa-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Asharyìa-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1763, -- [11]
-			"Player-3676-0AB8D57E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Asharyìa-Area52|r",
-			[51] = 1600213628,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [68]
-		{
-			"thanks for the group", -- [1]
-			"Pummy-Thrall", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Pummy-Thrall", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1766, -- [11]
-			"Player-3678-0A86EF13", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Pummy-Thrall|r",
-			[51] = 1600213630,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [69]
-		{
-			"Korzaran the Slaughterer 100.00% ~(71.45, 72.39)", -- [1]
+			"Ha-Li 100.00% ~(31.69, 39.34)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"2. General - Uldum", -- [4]
+			"2. General - Vale of Eternal Blossoms", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
-			"General - Uldum", -- [9]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1775, -- [11]
+			122, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1538,77 +1494,99 @@ ElvCharacterDB = {
 			false, -- [16]
 			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600213646,
+			[51] = 1600693158,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [68]
 		{
-			"When does m0 ilvl start?", -- [1]
-			"Azek-Maelstrom", -- [2]
+			"Houndlord Ren 100.00% ~(10.89, 31.36)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"2. General - Uldum", -- [4]
-			"Azek-Maelstrom", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
-			"General - Uldum", -- [9]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			1776, -- [11]
-			"Player-163-0B104401", -- [12]
+			151, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffef367Azek-Maelstrom|r",
-			[51] = 1600213660,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600693440,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"wow thanks!", -- [1]
+			"Sardaukette-Mal'Ganis", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sardaukette-Mal'Ganis", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			163, -- [11]
+			"Player-3684-0C74D030", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Sardaukette-Mal'Ganis|r",
+			[51] = 1600693504,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [70]
+		{
+			"Anyone have eyes on Cogstar?", -- [1]
+			"Hikkup-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. General - Mechagon", -- [4]
+			"Hikkup-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
+			0, -- [10]
+			2584, -- [11]
+			"Player-75-057209FC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Hikkup|r",
+			[51] = 1600705067,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [71]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14173:Player-75-08C6E258:1:9:15:20:4294967295:4294967295:4294967295:4294967295|h[A Mountain of Mementos]|h|r!", -- [1]
-			"Falzemphx-TheScryers", -- [2]
+			"I REGRET DRINKING A ENERGY DRINK MY FUCKIN HEAD IT HURTS", -- [1]
+			"Blazikenowen-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Falzemphx-TheScryers", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Blazikenowen-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			1833, -- [11]
-			"Player-75-08C6E258", -- [12]
+			2599, -- [11]
+			"Player-1071-08A71082", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Falzemphx-TheScryers|r",
-			[51] = 1600214201,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			true, -- [17]
+			[52] = "|cffa9d271Blazikenowen-KirinTor|r",
+			[51] = 1600705755,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [72]
 		{
-			"grats name", -- [1]
-			"Tuskmunkey-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1835, -- [11]
-			"Player-75-034D04EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Tuskmunkey|r",
-			[51] = 1600214206,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [73]
-		{
-			"Arachnoid Harvester 45.97% ~(53.63, 46.34)", -- [1]
+			"Arachnoid Harvester 72.38% ~(52.19, 41.42)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"2. General - Mechagon", -- [4]
@@ -1618,7 +1596,7 @@ ElvCharacterDB = {
 			2, -- [8]
 			"General - Mechagon", -- [9]
 			0, -- [10]
-			2033, -- [11]
+			2600, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1626,351 +1604,219 @@ ElvCharacterDB = {
 			false, -- [16]
 			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600268964,
+			[51] = 1600705763,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"THROG ACTIVE", -- [1]
+			"Blazikenowen-KirinTor", -- [2]
+			"", -- [3]
+			"2. General - Mechagon", -- [4]
+			"Blazikenowen-KirinTor", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
+			0, -- [10]
+			2612, -- [11]
+			"Player-1071-08A71082", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Blazikenowen-KirinTor|r",
+			[51] = 1600706485,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [74]
 		{
-			"Anyone for Reclamation Rig?", -- [1]
-			"Aethiria-EmeraldDream", -- [2]
+			"*TROG", -- [1]
+			"Blazikenowen-KirinTor", -- [2]
 			"", -- [3]
 			"2. General - Mechagon", -- [4]
-			"Aethiria-EmeraldDream", -- [5]
+			"Blazikenowen-KirinTor", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
 			"General - Mechagon", -- [9]
 			0, -- [10]
-			2040, -- [11]
-			"Player-162-04547DB3", -- [12]
+			2613, -- [11]
+			"Player-1071-08A71082", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffe7b09Aethiria-EmeraldDream|r",
-			[51] = 1600269244,
+			[52] = "|cffa9d271Blazikenowen-KirinTor|r",
+			[51] = 1600706493,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [75]
 		{
-			"Yep", -- [1]
-			"Kornephoros-EarthenRing", -- [2]
+			"he died now", -- [1]
+			"Blazikenowen-KirinTor", -- [2]
 			"", -- [3]
 			"2. General - Mechagon", -- [4]
-			"Kornephoros-EarthenRing", -- [5]
+			"Blazikenowen-KirinTor", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
 			"General - Mechagon", -- [9]
 			0, -- [10]
-			2041, -- [11]
-			"Player-100-05CC8D45", -- [12]
+			2614, -- [11]
+			"Player-1071-08A71082", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc31d39Kornephoros-EarthenRing|r",
-			[51] = 1600269258,
+			[52] = "|cffa9d271Blazikenowen-KirinTor|r",
+			[51] = 1600706515,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [76]
 		{
-			"Needs 2k Parts", -- [1]
-			"Kornephoros-EarthenRing", -- [2]
+			"freza up ", -- [1]
+			"Mint-Sentinels", -- [2]
 			"", -- [3]
 			"2. General - Mechagon", -- [4]
-			"Kornephoros-EarthenRing", -- [5]
+			"Mint-Sentinels", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
 			"General - Mechagon", -- [9]
 			0, -- [10]
-			2042, -- [11]
-			"Player-100-05CC8D45", -- [12]
+			2616, -- [11]
+			"Player-1071-0BE0BE04", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc31d39Kornephoros-EarthenRing|r",
-			[51] = 1600269289,
+			[52] = "|cfff38bb9Mint-Sentinels|r",
+			[51] = 1600706721,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [77]
 		{
-			"800 more", -- [1]
-			"Aethiria-EmeraldDream", -- [2]
+			"is it over 9000?", -- [1]
+			"Blazikenowen-KirinTor", -- [2]
 			"", -- [3]
 			"2. General - Mechagon", -- [4]
-			"Aethiria-EmeraldDream", -- [5]
+			"Blazikenowen-KirinTor", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
 			"General - Mechagon", -- [9]
 			0, -- [10]
-			2045, -- [11]
-			"Player-162-04547DB3", -- [12]
+			2617, -- [11]
+			"Player-1071-08A71082", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffe7b09Aethiria-EmeraldDream|r",
-			[51] = 1600269317,
+			[52] = "|cffa9d271Blazikenowen-KirinTor|r",
+			[51] = 1600706733,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [78]
 		{
-			"Rustfeather 100.00% ~(65.54, 78.68)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"just 800k now", -- [1]
+			"Mint-Sentinels", -- [2]
 			"", -- [3]
 			"2. General - Mechagon", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Mint-Sentinels", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
 			"General - Mechagon", -- [9]
 			0, -- [10]
-			2047, -- [11]
-			"Player-75-058380E2", -- [12]
+			2619, -- [11]
+			"Player-1071-0BE0BE04", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600269398,
+			[52] = "|cfff38bb9Mint-Sentinels|r",
+			[51] = 1600706743,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [79]
 		{
-			"Rig up.", -- [1]
-			"Tondelevo-KirinTor", -- [2]
+			"someone turned me into a turkey so I used world shrinker and am now a giant turkey that devours souls", -- [1]
+			"Blazikenowen-KirinTor", -- [2]
 			"", -- [3]
 			"2. General - Mechagon", -- [4]
-			"Tondelevo-KirinTor", -- [5]
+			"Blazikenowen-KirinTor", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
 			"General - Mechagon", -- [9]
 			0, -- [10]
-			2054, -- [11]
-			"Player-1071-031396B5", -- [12]
+			2620, -- [11]
+			"Player-1071-08A71082", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffe7b09Tondelevo-KirinTor|r",
-			[51] = 1600269472,
+			[52] = "|cffa9d271Blazikenowen-KirinTor|r",
+			[51] = 1600706791,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [80]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12872:Player-75-09F9F1F6:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[The Dirty Five]|h|r!", -- [1]
-			"Gremlyk-ArgentDawn", -- [2]
+			"it wore off rip", -- [1]
+			"Blazikenowen-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Gremlyk-ArgentDawn", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Blazikenowen-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			2296, -- [11]
-			"Player-75-09F9F1F6", -- [12]
+			2622, -- [11]
+			"Player-1071-08A71082", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cGremlyk|r",
-			[51] = 1600270604,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			true, -- [17]
+			[52] = "|cffa9d271Blazikenowen-KirinTor|r",
+			[51] = 1600706814,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [81]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12614:Player-75-09F9F1F6:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Loa Expectations]|h|r!", -- [1]
-			"Gremlyk-ArgentDawn", -- [2]
+			"Jawbreaker (1.28m/1.35m 94.39%) is at 75.42 41.97 and has been engaged!", -- [1]
+			"Joonßugg-EmeraldDream", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Gremlyk-ArgentDawn", -- [5]
+			"2. General - Mechagon", -- [4]
+			"Joonßugg-EmeraldDream", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			2458, -- [11]
-			"Player-75-09F9F1F6", -- [12]
+			2626, -- [11]
+			"Player-162-0B135DAC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cGremlyk|r",
-			[51] = 1600271286,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			true, -- [17]
+			[52] = "|cfffe7b09Joonßugg-EmeraldDream|r",
+			[51] = 1600707244,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [82]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12483:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Waycrest Manor]|h|r!", -- [1]
-			"Werepinguin-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Werepinguin-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2774, -- [11]
-			"Player-75-047B8E38", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecWerepinguin|r",
-			[51] = 1600273163,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [83]
-		{
-			"|cffffff00Grand Bazaar is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"4. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			4, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			3305, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1600274482,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
-		{
-			"Scale Matriarch Vynara (1.19m/1.31m 90.59%) is at 27.62 37.91 and has been engaged!", -- [1]
-			"Fwaang-EmeraldDream", -- [2]
-			"", -- [3]
-			"2. General - Nazjatar", -- [4]
-			"Fwaang-EmeraldDream", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Nazjatar", -- [9]
-			0, -- [10]
-			3357, -- [11]
-			"Player-162-09CBBFFF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Fwaang-EmeraldDream|r",
-			[51] = 1600274970,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:12831:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Freehold]|h|r!", -- [1]
-			"Werepinguin-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Werepinguin-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3395, -- [11]
-			"Player-75-047B8E38", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecWerepinguin|r",
-			[51] = 1600276121,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [86]
-		{
-			"avoirus the mineing boss is up please come help", -- [1]
-			"Rotsmell-Maelstrom", -- [2]
-			"", -- [3]
-			"2. General - Nazjatar", -- [4]
-			"Rotsmell-Maelstrom", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Nazjatar", -- [9]
-			0, -- [10]
-			3422, -- [11]
-			"Player-163-02BE5DD9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Rotsmell-Maelstrom|r",
-			[51] = 1600276667,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
-		{
-			"please come helpawawadwwa", -- [1]
-			"Rotsmell-Maelstrom", -- [2]
-			"", -- [3]
-			"2. General - Nazjatar", -- [4]
-			"Rotsmell-Maelstrom", -- [5]
-			"", -- [6]
-			1, -- [7]
-			2, -- [8]
-			"General - Nazjatar", -- [9]
-			0, -- [10]
-			3439, -- [11]
-			"Player-163-02BE5DD9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Rotsmell-Maelstrom|r",
-			[51] = 1600277234,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:11861:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[The Throne of Zuldazar]|h|r!", -- [1]
-			"Werepinguin-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Werepinguin-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3505, -- [11]
-			"Player-75-047B8E38", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecWerepinguin|r",
-			[51] = 1600278025,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [89]
-		{
-			"Shiz'narasz the Consumer 100.00% ~(39.44, 18.66)", -- [1]
+			"Rustfeather 70.86% ~(65.64, 78.72)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"2. General - Nazjatar", -- [4]
+			"2. General - Mechagon", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			1, -- [7]
 			2, -- [8]
-			"General - Nazjatar", -- [9]
+			"General - Mechagon", -- [9]
 			0, -- [10]
-			3535, -- [11]
+			2629, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1978,229 +1824,383 @@ ElvCharacterDB = {
 			false, -- [16]
 			true, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1600278403,
+			[51] = 1600707299,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"ah so you can only loot rustfeather once per day?", -- [1]
+			"Haoaekai-EmeraldDream", -- [2]
+			"", -- [3]
+			"2. General - Mechagon", -- [4]
+			"Haoaekai-EmeraldDream", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
+			0, -- [10]
+			2635, -- [11]
+			"Player-162-09D20C67", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHaoaekai-EmeraldDream|r",
+			[51] = 1600707348,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"lame", -- [1]
+			"Haoaekai-EmeraldDream", -- [2]
+			"", -- [3]
+			"2. General - Mechagon", -- [4]
+			"Haoaekai-EmeraldDream", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Mechagon", -- [9]
+			0, -- [10]
+			2636, -- [11]
+			"Player-162-09D20C67", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHaoaekai-EmeraldDream|r",
+			[51] = 1600707358,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"soundless is up", -- [1]
+			"Shadd-Lightninghoof", -- [2]
+			"", -- [3]
+			"2. General - Nazjatar", -- [4]
+			"Shadd-Lightninghoof", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Nazjatar", -- [9]
+			0, -- [10]
+			2673, -- [11]
+			"Player-163-081B9032", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcShadd-Lightninghoof|r",
+			[51] = 1600708155,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"Ha-Li 100.00% ~(30.38, 40.82)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			7, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600719367,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"ty", -- [1]
+			"Lohnar-Greymane", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lohnar-Greymane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			51, -- [11]
+			"Player-158-0A12609F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Lohnar-Greymane|r",
+			[51] = 1600719490,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [88]
+		{
+			"ty for listing", -- [1]
+			"Belerash-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Belerash-Area52", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			71, -- [11]
+			"Player-3676-0AEFA7DE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcBelerash-Area52|r",
+			[51] = 1600719697,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [89]
+		{
+			"tx for group", -- [1]
+			"Flydais-Zul'jin", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Flydais-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			111, -- [11]
+			"Player-61-0B4C5A05", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Flydais-Zul'jin|r",
+			[51] = 1600719725,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [90]
 		{
-			"Clearance on |cffffffff|Hitem:171203::::::::120:104::13:1:3524:::|h[Vantus Rune: Ny'alotha, the Waking City]|h|r at the AH! 20 of them at 33% market price!", -- [1]
-			"Thiccsnicker-ArgentDawn", -- [2]
+			"ty", -- [1]
+			"Blëu-Zul'jin", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Thiccsnicker-ArgentDawn", -- [5]
+			"", -- [4]
+			"Blëu-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			3872, -- [11]
-			"Player-75-0D7F1A3B", -- [12]
+			114, -- [11]
+			"Player-61-0BC0D286", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Thiccsnicker|r",
-			[51] = 1600278984,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeBlëu-Zul'jin|r",
+			[51] = 1600719726,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [91]
 		{
-			"Load up for your guild while the price is low!", -- [1]
-			"Thiccsnicker-ArgentDawn", -- [2]
+			"t", -- [1]
+			"Hodor-Mal'Ganis", -- [2]
 			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Thiccsnicker-ArgentDawn", -- [5]
+			"", -- [4]
+			"Hodor-Mal'Ganis", -- [5]
 			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			3897, -- [11]
-			"Player-75-0D7F1A3B", -- [12]
+			170, -- [11]
+			"Player-3684-071796CF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Thiccsnicker|r",
-			[51] = 1600279003,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeHodor-Mal'Ganis|r",
+			[51] = 1600720982,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [92]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:10706:Player-75-007F7CAD:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Training the Troops]|h|r!", -- [1]
-			"Excelidrin-ArgentDawn", -- [2]
+			"y", -- [1]
+			"Hodor-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Excelidrin-ArgentDawn", -- [5]
+			"Hodor-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4067, -- [11]
-			"Player-75-007F7CAD", -- [12]
+			173, -- [11]
+			"Player-3684-071796CF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeExcelidrin|r",
-			[51] = 1600279323,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cfffefefeHodor-Mal'Ganis|r",
+			[51] = 1600720983,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [93]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:11126:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[50 World Quests Completed]|h|r!", -- [1]
-			"Werepinguin-ArgentDawn", -- [2]
+			"Houndlord Ren 34.91% ~(12.7, 27.92)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Werepinguin-ArgentDawn", -- [5]
+			"2. General - Vale of Eternal Blossoms", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			2, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
 			0, -- [10]
-			39, -- [11]
-			"Player-75-047B8E38", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecWerepinguin|r",
-			[51] = 1600283267,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [94]
-		{
-			"Anyone need |cff0070dd|Hitem:128319::::::::110:103::1::::|h[Void-Shrouded Satchel]|h|r at all?", -- [1]
-			"Tsujik-ArgentDawn", -- [2]
-			"", -- [3]
-			"3. Trade - City", -- [4]
-			"Tsujik-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			3, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			279, -- [11]
-			"Player-75-0B1682E2", -- [12]
+			176, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffe7b09Tsujik|r",
-			[51] = 1600287055,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600720986,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"Ishak of the Four Winds 100.00% ~(73.08, 80.24)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. General - Uldum", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			2, -- [8]
+			"General - Uldum", -- [9]
+			0, -- [10]
+			65, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1600757675,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [95]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12840:Player-75-047B8E38:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Tol Dagor]|h|r!", -- [1]
-			"Werepinguin-ArgentDawn", -- [2]
+			"Hurry up and get here", -- [1]
+			"Ixari-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Werepinguin-ArgentDawn", -- [5]
+			"Ixari-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			286, -- [11]
-			"Player-75-047B8E38", -- [12]
+			66, -- [11]
+			"Player-3684-081F62B7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecWerepinguin|r",
-			[51] = 1600287118,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cff8686ecIxari-Mal'Ganis|r",
+			[51] = 1600757681,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [96]
 		{
-			"|cffffff00Port of Zandalar is under attack!|r", -- [1]
-			"", -- [2]
+			"u can start", -- [1]
+			"Pandadot-Illidan", -- [2]
 			"", -- [3]
-			"4. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Pandadot-Illidan", -- [5]
 			"", -- [6]
-			22, -- [7]
-			4, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			3939, -- [11]
-			false, -- [12]
+			67, -- [11]
+			"Player-57-0C21C482", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1600317923,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff8686ecPandadot-Illidan|r",
+			[51] = 1600757690,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [97]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14064:Player-75-08C68846:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[The Even More Horrific Vision of Stormwind]|h|r!", -- [1]
-			"Kitsunee-TheScryers", -- [2]
+			"im almost there", -- [1]
+			"Pandadot-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Kitsunee-TheScryers", -- [5]
+			"Pandadot-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4140, -- [11]
-			"Player-75-08C68846", -- [12]
+			68, -- [11]
+			"Player-57-0C21C482", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Kitsunee-TheScryers|r",
-			[51] = 1600319587,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cff8686ecPandadot-Illidan|r",
+			[51] = 1600757692,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [98]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14143:Player-75-08C68846:1:9:16:20:4294967295:4294967295:4294967295:4294967295|h[Reeking of Visions]|h|r!", -- [1]
-			"Kitsunee-TheScryers", -- [2]
+			"ty for listing", -- [1]
+			"Pandadot-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Kitsunee-TheScryers", -- [5]
+			"Pandadot-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4141, -- [11]
-			"Player-75-08C68846", -- [12]
+			83, -- [11]
+			"Player-57-0C21C482", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Kitsunee-TheScryers|r",
-			[51] = 1600319587,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cff8686ecPandadot-Illidan|r",
+			[51] = 1600757760,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [99]
 	},
 	["ChatEditHistory"] = {
-		"/p yeah got the last lightforged elephant and got all those", -- [1]
-		"/p well runes are back but propabbly cant loot him again", -- [2]
-		"/p lets see", -- [3]
-		"/p well thanks again for the help!", -- [4]
-		"/p have a good one!", -- [5]
-		"/allthethings", -- [6]
-		"/dance", -- [7]
-		"/worldmarker marker", -- [8]
-		"/worldmarker 1", -- [9]
-		"/opie", -- [10]
-		"/wm", -- [11]
-		"/wa", -- [12]
-		"/skada toggle", -- [13]
-		"/cw Jaylynn-Mal'Ganis really thanks for the info", -- [14]
-		"/p apparently its the wrong week for this rare someone just whispered so sorry folks", -- [15]
-		"/p maybe friday", -- [16]
-		"/rarescanner", -- [17]
-		"/raid np", -- [18]
-		"/raid and yeah its off in the title", -- [19]
-		"/raid there was", -- [20]
+		"/p have a good one!", -- [1]
+		"/allthethings", -- [2]
+		"/dance", -- [3]
+		"/worldmarker marker", -- [4]
+		"/worldmarker 1", -- [5]
+		"/wm", -- [6]
+		"/wa", -- [7]
+		"/skada toggle", -- [8]
+		"/cw Jaylynn-Mal'Ganis really thanks for the info", -- [9]
+		"/p apparently its the wrong week for this rare someone just whispered so sorry folks", -- [10]
+		"/p maybe friday", -- [11]
+		"/rarescanner", -- [12]
+		"/raid np", -- [13]
+		"/raid and yeah its off in the title", -- [14]
+		"/raid there was", -- [15]
+		"/opie", -- [16]
+		"/p better hurry", -- [17]
+		"/p at ashen strand", -- [18]
+		"/p sorry he is gone", -- [19]
+		"/i is it broken?", -- [20]
 	},
 	["CliqueDatatext"] = {
 	},
