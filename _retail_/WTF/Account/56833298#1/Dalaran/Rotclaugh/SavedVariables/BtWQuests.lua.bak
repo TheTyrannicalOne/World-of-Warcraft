@@ -2,8 +2,8 @@
 BtWQuests_Settings = {
 }
 BtWQuests_AutoLoad = {
-	["BtWQuestsBattleForAzerothPrologue"] = true,
-	["BtWQuestsLegion"] = false,
-	["BtWQuestsClassic"] = false,
 	["BtWQuestsBattleForAzeroth"] = true,
+	["BtWQuestsClassic"] = false,
+	["BtWQuestsLegion"] = false,
+	["BtWQuestsBattleForAzerothPrologue"] = true,
 }

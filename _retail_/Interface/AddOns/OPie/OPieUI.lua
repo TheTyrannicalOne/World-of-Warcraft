@@ -99,6 +99,11 @@ local GhostIndication = {} do
 				cell:SetShown(true)
 				ret[i], angle, spareSlices[cell] = cell, angle - angleStep
 			end
+			for i=count+1,ret.count or 0 do
+				local cell = ret[i]
+				cell:SetShown(false)
+				spareSlices[cell], ret[i] = cell, nil
+			end
 			ret.incident, ret.count = incidentAngle, count
 			ret:SetPoint("CENTER", (mainRadius/0.80+radius)*cos(incidentAngle), (mainRadius/0.80+radius)*sin(incidentAngle))
 			ret:Show()
@@ -278,10 +283,11 @@ local function updateCentralElements(self, si)
 end
 local function updateSlice(self, originAngle, selected, tok, usable, state, icon, _, count, cd, cd2, _tf, _ta, ext, stext)
 	local isJump, origJumpIcon, jumpOtherTok = false, icon
+	state, usable, ext = state or 0, usable or (state and usable ~= false) or false, not tokenIcon[tok] and ext or nil
 	if state % 8192 >= 4096 then
 		icon, jumpOtherTok, isJump, count = 188515, count, true, 0
 	end
-	state, icon, ext, usable = state or 0, tokenIcon[tok] or icon or "Interface/Icons/INV_Misc_QuestionMark", not tokenIcon[tok] and ext or nil, usable or (state and usable ~= false) or false
+	icon = tokenIcon[tok] or icon or "Interface/Icons/INV_Misc_QuestionMark"
 	local active, overlay, faded, usableCharge, r,g,b = state % 2 >= 1, state % 4 >= 2, not usable, usable or (state % 128 >= 64)
 	self:SetIcon(icon)
 	if ext then
@@ -450,7 +456,8 @@ function iapi:Show(_, fcSlice, fastOpen, reFrame)
 
 	configCache.RingScale = max(0.1, configCache.RingScale)
 	mainFrame:SetScale(configCache.RingScale)
-	if configCache.RingAtMouse then
+	if fastOpen == "inplace-switch" then
+	elseif configCache.RingAtMouse then
 		local cx, cy = GetCursorPosition()
 		anchorFrame:SetPoint("CENTER", nil, "BOTTOMLEFT", cx + configCache.IndicationOffsetX, cy - configCache.IndicationOffsetY)
 	else
@@ -502,8 +509,19 @@ function api:RegisterIndicatorConstructor(key, info)
 	}
 end
 
+for k,v in pairs({ShowCooldowns=false, ShowRecharge=false, UseGameTooltip=true, ShowKeys=true, ShowOneCount=false,
+	MIScale=true, MISpinOnHide=true, MIButtonMargin=0.1, GhostMIRings=true,
+	IndicatorFactory="_",
+	XTPointerSpeed=0, XTScaleSpeed=0, XTZoomTime=0.3, XTRotationPeriod=4, GhostShowDelay=0.25}) do
+	OneRingLib:RegisterOption(k,v)
+end
+api:RegisterIndicatorConstructor("mirage", T.Mirage)
+
+T.OPieUI, OPie.UI = iapi, api
+
+local dapi = {}
 -- DEPRECATED: call RegisterIndicatorConstructor (once); OPie will switch (or not) based on user prefs.
-function api:SetIndicatorConstructor(func)
+function dapi:SetIndicatorConstructor(func)
 	if func then
 		ricErrorOffset = 1
 		return api:RegisterIndicatorConstructor("legacy", {
@@ -515,20 +533,8 @@ function api:SetIndicatorConstructor(func)
 		LastRegisteredIndicatorFactory = "mirage"
 	end
 end
+-- Moved; alias for a bit longer
+dapi.SetQuestHint = api.SetQuestHint
+dapi.SetDisplayOptions = api.SetDisplayOptions
 
-for k,v in pairs({ShowCooldowns=false, ShowRecharge=false, UseGameTooltip=true, ShowKeys=true, ShowOneCount=false,
-	MIScale=true, MISpinOnHide=true, MIButtonMargin=0.1, GhostMIRings=true,
-	IndicatorFactory="_",
-	XTPointerSpeed=0, XTScaleSpeed=0, XTZoomTime=0.3, XTRotationPeriod=4, GhostShowDelay=0.25}) do
-	OneRingLib:RegisterOption(k,v)
-end
-api:RegisterIndicatorConstructor("mirage", T.Mirage)
-
-local uiAPI = {}
-for k,v in pairs(api) do
-	uiAPI[k] = v
-end
-uiAPI.SetIndicatorConstructor = nil
-api.RegisterIndicatorConstructor = nil
-
-OneRingLib.ext.OPieUI, T.OPieUI, OPie.UI = api, iapi, uiAPI
+OneRingLib.ext.OPieUI = dapi

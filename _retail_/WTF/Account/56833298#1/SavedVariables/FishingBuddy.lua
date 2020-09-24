@@ -18,7 +18,9 @@ FishingBuddy_Info = {
 	["KnownZones"] = {
 		[1355] = "Chitterspine Caverns",
 	},
-	["Version"] = 19500,
+	["Settings"] = {
+		["CreateMacro"] = true,
+	},
 	["FishInfo2"] = 0,
 	["SubZones"] = {
 		[1355000] = 1,
@@ -32,7 +34,5 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 		},
 	},
-	["Settings"] = {
-		["CreateMacro"] = true,
-	},
+	["Version"] = 19500,
 }

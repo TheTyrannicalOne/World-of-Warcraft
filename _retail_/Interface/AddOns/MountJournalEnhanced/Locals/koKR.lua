@@ -1,6 +1,6 @@
-local ADDON_NAME, ADDON = ...
+﻿local _, ADDON = ...
 
-if (GetLocale() ~= 'koKR') then
+if GetLocale() ~= 'koKR' then
     return
 end
 
@@ -18,24 +18,60 @@ L["Only tradable"] = "교환가능"
 L["Only usable"] = "사용가능"
 L["Passenger"] = "승객"
 L["Reset filters"] = "필터 초기화"
+--[[Translation missing --]]
+--[[ L["ROTATE_DOWN"] = "Rotate Down"--]] 
+--[[Translation missing --]]
+--[[ L["ROTATE_UP"] = "Rotate Up"--]] 
 L["Show in Collections"] = "모음집에서 보기"
+--[[Translation missing --]]
+--[[ L["SORT_FAVORITES_FIRST"] = "Favorites First"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_REVERSE"] = "Reverse Sort"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_UNOWNED_BOTTOM"] = "Unowned at Bottom"--]] 
 L["TASK_END"] = "[MJE] 작업 완료"
 L["TASK_FAVOR_START"] = "[MJE] 탈것 목록 즐겨찾기 재설정을 시작합니다"
 L["Transform"] = "변환"
 L["Underwater"] = "수중"
 
--- Families
+-- Settings
 --[[Translation missing --]]
---[[ L["Airplanes"] = "Airplanes"--]]
+--[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
+L["SETTING_COMPACT_LIST"] = "간소한 목록"
+L["SETTING_CURSOR_KEYS"] = "위 아래 화살표 키로 목록 탐색하기"
+L["SETTING_FAVORITE_PER_CHAR"] = "캐릭터별 즐겨찾기"
+--[[Translation missing --]]
+--[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_MOUNT_COUNT"] = "Show personal mount count"--]] 
+L["SETTING_MOVE_EQUIPMENT"] = "착용 장비 표시 이동"
+--[[Translation missing --]]
+--[[ L["SETTING_PERSONAL_FILTER"] = "Apply filters only to this character"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Apply hidden mounts only to this character"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_PERSONAL_UI"] = "Apply Interface settings only to this character"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_PREVIEW_LINK"] = "Show Collection button in mount preview"--]] 
+L["SETTING_SHOP_BUTTON"] = "구매 버튼 활성화"
+--[[Translation missing --]]
+--[[ L["SETTING_SHOW_USAGE"] = "Display mount usage statistics"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_TRACK_USAGE"] = "Track mount usage behavior on all characters"--]] 
+L["SETTING_YCAMERA"] = "표시 화면에서 마우스로 Y 축 회전 잠금 해제"
+
+-- Families
+L["Airplanes"] = "비행기"
 L["Airships"] = "비행선"
+L["Alpacas"] = "알파카"
 L["Amphibian"] = "양서류"
+L["Aqir Flyers"] = "아퀴르 날벌레"
 L["Arachnids"] = "거미"
 L["Assault Wagons"] = "공성차량"
 L["Basilisks"] = "바실리스크"
 L["Bats"] = "박쥐"
 L["Bears"] = "곰"
---[[Translation missing --]]
---[[ L["Bees"] = "Bees"--]]
+L["Bees"] = "벌"
 L["Birds"] = "새"
 L["Blood Ticks"] = "흡혈충"
 L["Boars"] = "멧돼지"
@@ -110,6 +146,7 @@ L["Mountain Horses"] = "산악마"
 L["Mushan"] = "무샨"
 L["Nether Drakes"] = "황천의 비룡"
 L["Nether Rays"] = "황천 가오리"
+L["N'Zoth Serpents"] = "느조스 뱀"
 L["Others"] = "기타"
 L["Pandaren Phoenixes"] = "판다렌 불사조"
 L["Parrots"] = "앵무새"
@@ -152,6 +189,8 @@ L["Undead Wolves"] = "언데드 늑대"
 L["Ungulates"] = "유제류"
 L["Ur'zul"] = "우르줄"
 L["Vehicles"] = "차량"
+--[[Translation missing --]]
+--[[ L["Vultures"] = "Vultures"--]] 
 L["War Wolves"] = "전투 늑대"
 L["Water Striders"] = "소금쟁이"
 L["Wind Drakes"] = "바람 비룡"
@@ -161,28 +200,3 @@ L["Wyverns"] = "와이번"
 L["Yaks"] = "야크"
 L["Yetis"] = "예티"
 
--- Settings
---[[Translation missing --]]
---[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]]
-L["SETTING_COMPACT_LIST"] = "간소한 목록"
-L["SETTING_CURSOR_KEYS"] = "위 아래 화살표 키로 목록 탐색하기"
-L["SETTING_FAVORITE_PER_CHAR"] = "캐릭터별 즐겨찾기"
---[[Translation missing --]]
---[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]]
---[[Translation missing --]]
---[[ L["SETTING_MOUNT_COUNT"] = "Show personal mount count"--]]
-L["SETTING_MOVE_EQUIPMENT"] = "착용 장비 표시 이동"
---[[Translation missing --]]
---[[ L["SETTING_PERSONAL_FILTER"] = "Apply filters only to this character"--]]
---[[Translation missing --]]
---[[ L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Apply hidden mounts only to this character"--]]
---[[Translation missing --]]
---[[ L["SETTING_PERSONAL_UI"] = "Apply Interface settings only to this character"--]]
---[[Translation missing --]]
---[[ L["SETTING_PREVIEW_LINK"] = "Show Collection button in mount preview"--]]
-L["SETTING_SHOP_BUTTON"] = "구매 버튼 활성화"
---[[Translation missing --]]
---[[ L["SETTING_SHOW_USAGE"] = "Display mount usage statistics"--]]
---[[Translation missing --]]
---[[ L["SETTING_TRACK_USAGE"] = "Track mount usage behavior on all characters"--]]
-L["SETTING_YCAMERA"] = "표시 화면에서 마우스로 Y 축 회전 잠금 해제"

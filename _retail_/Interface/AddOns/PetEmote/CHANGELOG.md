@@ -1,0 +1,55 @@
+# PetEmote
+
+## [v1.8.14](https://github.com/Ravendwyr/PetEmote/tree/v1.8.14) (2020-09-22)
+[Full Changelog](https://github.com/Ravendwyr/PetEmote/commits/v1.8.14) [Previous Releases](https://github.com/Ravendwyr/PetEmote/releases)
+
+- Bump Interface number to 80300.  
+- Bump version number to 1.8.14.  
+- Create .pkgmeta  
+- Set theme jekyll-theme-leap-day  
+- Update README.md  
+- Updated issue config.  
+- Updated issue templates.  
+- Create FUNDING.yml  
+- Enabled Travis-CI packager.  
+- Bump version number to 1.8.13.  
+- Update README.md  
+- Fixed a broken Wolf emote.  
+- Fixed a broken Feathermane emote.  
+- Bump version number to 1.8.12.  
+- Fixed a taint issue with the Guild & Communities UI.  
+- Fixed a broken Lizard emote.  
+- Bump version number to 1.8.11.  
+- Bump Interface number to 80000.  
+- More emote updates. Thanks Varethyn!  
+- Fixed an error introduced in WoW 8.0.1.  
+- Bump version number to 1.8.10.  
+- More emote updates. Thanks Varethyn!  
+- Fixed an invalid chat event.  
+- Bump Interface number to 70300.  
+- Bump version number to 1.8.9.  
+- Bump Inferface number to 70000.  
+- Added emotes for Doomguard and Infernal pet families. Thanks Khormin!  
+- Updated emotes for most pet families. Thanks Varethyn!  
+- Bump Interface number to 60200.  
+- Bump version number to 1.8.7.  
+- Bump Interface number to 60100.  
+- Added /petemote slash command.  
+- Tweaked localisation.  
+- Use the AddOns category in the new Key Bindings UI.  
+- Fixed a mistake in a couple of Stag family emotes.  
+- Bump version number to 1.8.5.  
+- Bump Interface number to 60000.  
+- Added emotes for the new pet families. Thanks Varethyn!  
+- Moved variable declarations into their own file.  
+- Removed semicolons.  
+- Tweaked grammar.  
+- Use repository keyword instead of manually updating project version.  
+- Bump Interface number for Patch 5.4.  
+- Fixed line endings.  
+- Bump Interface number for Patch 5.3.  
+- Bump version number to 1.8.3.  
+- Trimmed trailing whitespace.  
+- Voidlords no longer act like Ghouls.  
+- Remove duplicate binding header.  
+- Updating .toc, custom emotes, and PetEmote\_HandleCombatLogEvent.  

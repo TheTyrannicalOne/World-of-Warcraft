@@ -16,7 +16,7 @@ QuestTogether = {
 		[57276] = {
 			["title"] = "Maintaining Focus",
 			["objectives"] = {
-				"11/20 Shred of Insanity", -- [1]
+				"12/20 Shred of Insanity", -- [1]
 			},
 		},
 		[49032] = {
@@ -25,10 +25,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
+		[53435] = {
+			["title"] = "Azerite for the Horde",
 			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[54180] = {
@@ -42,10 +42,9 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[45381] = {
@@ -73,6 +72,20 @@ QuestTogether = {
 				"1/1 Sanguine Argunite", -- [2]
 			},
 		},
+		[56500] = {
+			["title"] = "Storming the Battlefields",
+			["objectives"] = {
+				"Win a PVP Island Expedition", -- [1]
+				"1/1 Win an Epic Battleground", -- [2]
+				"1/1 Win a Battleground", -- [3]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
 		[49076] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
@@ -91,19 +104,21 @@ QuestTogether = {
 				"Win a battleground", -- [1]
 			},
 		},
-		[56500] = {
-			["title"] = "Storming the Battlefields",
-			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"1/1 Win an Epic Battleground", -- [2]
-				"1/1 Win a Battleground", -- [3]
-			},
-		},
 		[54185] = {
 			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
 				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[44989] = {
@@ -119,10 +134,10 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 		[57743] = {
@@ -137,24 +152,20 @@ QuestTogether = {
 				"10/25 Valiant's Seal", -- [1]
 			},
 		},
-		[56433] = {
-			["title"] = "Drowning the Alliance",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/25 Alliance Players slain", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[28884] = {
+			["title"] = "Victory in Tol Barad",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"Victory in Tol Barad", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
 			},
 		},
@@ -174,8 +185,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

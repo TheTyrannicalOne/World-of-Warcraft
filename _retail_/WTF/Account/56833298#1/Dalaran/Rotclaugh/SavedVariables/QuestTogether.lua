@@ -1,6 +1,11 @@
 
 QuestTogether = {
 	["questTracker"] = {
+		[53370] = {
+			["title"] = "Hour of Reckoning",
+			["objectives"] = {
+			},
+		},
 		[28732] = {
 			["title"] = "This Can Only Mean One Thing...",
 			["objectives"] = {
@@ -37,16 +42,29 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[37853] = {
-			["title"] = "The Death of the Eldest",
+		[38286] = {
+			["title"] = "Eye of Azshara: Wrath of Azshara",
 			["objectives"] = {
-				"0/6   (Optional)", -- [1]
-				"0/1 Throw crystals into Senegos's pool", -- [2]
+				"0/1 Eye of Azshara entered", -- [1]
+				"0/1 Warlord Parjesh slain", -- [2]
+				"0/1 Wrath of Azshara slain", -- [3]
 			},
 		},
-		[33359] = {
-			["title"] = "Meet Us at Starfall Outpost",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[38381] = {
+			["title"] = "Archdruid of Lore",
+			["objectives"] = {
+			},
+		},
+		[43962] = {
+			["title"] = "Blades of Destiny",
+			["objectives"] = {
+				"0/1 Choose a second artifact to pursue", -- [1]
 			},
 		},
 		[31891] = {
@@ -59,6 +77,11 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
+			["objectives"] = {
+			},
+		},
 		[24432] = {
 			["title"] = "Sea Legs",
 			["objectives"] = {
@@ -66,10 +89,9 @@ QuestTogether = {
 				"0/1 Conch Shell", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[36495] = {
+			["title"] = "News from Talador",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[56491] = {
@@ -84,8 +106,13 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[36495] = {
-			["title"] = "News from Talador",
+		[33359] = {
+			["title"] = "Meet Us at Starfall Outpost",
+			["objectives"] = {
+			},
+		},
+		[38142] = {
+			["title"] = "Archdruid of the Claw",
 			["objectives"] = {
 			},
 		},
@@ -107,11 +134,6 @@ QuestTogether = {
 				"0/10 Steamscar saberon slain", -- [1]
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
-			["objectives"] = {
-			},
-		},
 		[35174] = {
 			["title"] = "Pale Moonlight",
 			["objectives"] = {
@@ -119,11 +141,19 @@ QuestTogether = {
 				"0/8 Pale Devourer slain", -- [2]
 			},
 		},
+		[42750] = {
+			["title"] = "Dreamcatcher",
+			["objectives"] = {
+				"1/1 Shriektalon Totem siphoned", -- [1]
+				"0/1 Fearfeather Totem siphoned", -- [2]
+				"1/1 Reaverbeak Totem siphoned", -- [3]
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }

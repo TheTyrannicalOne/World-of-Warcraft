@@ -1,4 +1,4 @@
-PetEmote_DefaultEmotes["Aasvogel-de"] = {
+﻿PetEmote_DefaultEmotes["Aasvogel-de"] = {
 	[1] = {
 		["text"] = "flattert aufgeregt umher.",
 		["condition"] = PetIsUnhappy,

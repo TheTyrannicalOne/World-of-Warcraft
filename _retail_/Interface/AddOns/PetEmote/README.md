@@ -2,11 +2,11 @@
 
 PetEmote is a roleplay-focused add-on for classes in World of Warcraft who have combat pets (Hunters and Warlocks primarily, although there is support for Mage water elementals and Death Knight ghouls).
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/ravendwyr.svg?style=popout&label=Twitter)](https://twitter.com/Ravendwyr)
-[![GitHub Version](https://img.shields.io/github/tag/ethancentaurai/petemote.svg?style=popout&label=Version)](https://www.wowace.com/projects/chinchilla/files)
-[![GitHub Issues](https://img.shields.io/github/issues/ethancentaurai/petemote.svg?style=popout&label=Issues)](https://github.com/EthanCentaurai/Chinchilla/issues)
+[![Builder](https://img.shields.io/travis/com/ravendwyr/petemote.svg?label=Build&logo=travis&maxAge=600&style=popout)](https://travis-ci.com/github/Ravendwyr/PetEmote)
+[![Version](https://img.shields.io/github/tag-date/ravendwyr/petemote.svg?label=Version&logo=codeigniter&maxAge=600&style=popout)](https://www.curseforge.com/wow/addons/petemote/files/all)
+[![Tracker](https://img.shields.io/github/issues/ravendwyr/petemote.svg?label=Issues&logo=github&maxAge=600&style=popout)](https://github.com/Ravendwyr/PetEmote/issues)
 
-[Official Forum](http://forums.wow-petopia.com/viewtopic.php?f=3&t=20346)
+[Official Forum](https://forums.wow-petopia.com/viewtopic.php?f=3&t=20346)
 
 ***
 
@@ -58,9 +58,11 @@ Gender settings are saved between pets, which means Bubbles will be recognised a
 
 ## Editing Emotes
 
-An emote editor program for Windows OS can be downloaded from the [official forum thread](http://forums.wow-petopia.com/viewtopic.php?f=3&t=20346).
+An emote editor program for Windows OS can be downloaded from the [official forum thread](https://forums.wow-petopia.com/viewtopic.php?f=3&t=20346).
 
 This easy-to-use program can be used to add, remove, or modify many of the emotes the add-on can use.  Do note however that if you download updates to PetEmote via the Curse Client your custom emotes may be lost.  It is therefore recommended to keep backups of the `custom-emotes.lua` file in a safe place if you have made changes that you'd like to keep.
+
+The source code for the editor is available [here](https://github.com/Ravendwyr/PetEmote_Editor).
 
 There are currently no plans to release Mac OS or Linux versions of the editor.
 
@@ -74,7 +76,7 @@ PetEmote has been developed by many different people over the years, including b
 
 * Original creator and maintainer - Jorna
 * Original custom emote file maintainer - Teigan
-* Current maintainers - EthanCentaurai, Efindel
+* Current maintainers - Ravendwyr, Efindel
 * Current custom emote file maintainer - Varethyn
 
 Emote Contributors:
@@ -149,3 +151,15 @@ Emote Contributors:
 * Death Knight minions:
   * Abomination - Varethyn
   * Ghoul - Teigan, Jorna, 84
+
+***
+
+### Support
+
+[![Twitter](https://img.shields.io/twitter/follow/ravendwyr.svg?label=Twitter&logo=twitter&maxAge=600&style=popout)](https://twitter.com/Ravendwyr)
+[![Discord](https://img.shields.io/discord/299308204393889802.svg?label=Discord&logo=discord&maxAge=600&style=popout)](https://top.gg/servers/299308204393889802)
+
+[![Twitch](https://img.shields.io/badge/Twitch-subscribe-yellow.svg?&logo=twitch)](https://www.twitch.tv/subs/ravendwyr)
+[![Crypto](https://img.shields.io/badge/ETH-send-yellow.svg?&logo=ethereum)](https://enjinx.io/eth/address/0x332224Ed82264298B3DC68dAcf643E8Df4abDCC3/assets)
+[![PayPal](https://img.shields.io/badge/PayPal-donate-yellow.svg?logo=paypal)](https://www.paypal.me/Ravendwyr/5gbp)
+[![Coffee](https://img.shields.io/badge/Kofi-buy-yellow.svg?logo=ko-fi)](https://ko-fi.com/Ravendwyr)

@@ -1,27 +1,31 @@
-9/22 02:11:25.509  LogOpen
-9/22 02:11:25.588  NvAPI loaded
-9/22 02:11:26.316  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1b0015, 0xe1606) dx11:true dx12:true
-9/22 02:11:26.316  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
-9/22 02:11:26.316  	Monitor 1 "\\.\DISPLAY2" (1920x1080)
-9/22 02:11:26.389  D3d11 Device Create
-9/22 02:11:26.389  Taking Adapter by name:"NVIDIA GeForce RTX 2080 Ti"
-9/22 02:11:26.524  Created 11.1 Device
-9/22 02:11:26.524  ConstantBufferOffsetting Support: true
-9/22 02:11:26.524  SetMaximumFrameLatency set: 3
-9/22 02:11:26.524  AFR detection
-9/22 02:11:26.524  AFR found with 1 devices(s)
-9/22 02:11:26.524  AFR Groups: 1/1
-9/22 02:11:26.524  Feature Level: DX=4, MTL=0
-9/22 02:11:26.799  Deferred Mode = 1
-9/22 02:11:26.799  Driver Command Lists: yes
-9/22 02:11:26.799  NotifyOnDeviceCreate
-9/22 02:11:26.799  D3d11 Device Create Successful
-9/22 02:11:26.799  <IsGPUDriverOutOfDate> No
-9/22 02:11:26.828  CPU Processor Detection: 12 H/W threads
-9/22 02:11:26.828  Memory Detection: 34296328192 bytes of physical memory available
-9/22 02:11:26.828  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-9/22 02:11:26.949  RenderSettings::NotifyChanged
-9/22 03:09:34.097  D3d11 Device Destroy
-9/22 03:09:34.097  NotifyOnDeviceDestroy
-9/22 03:09:35.099  D3d11 Device Destroyed
-9/22 03:09:35.254  GxShutdown
+9/23 21:55:33.559  LogOpen
+9/23 21:55:33.637  NvAPI loaded
+9/23 21:55:34.493  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1b0015, 0xe1606) dx11:true dx12:true
+9/23 21:55:34.493  	Monitor 0 "\\.\DISPLAY1" (2560x1440)
+9/23 21:55:34.493  	Monitor 1 "\\.\DISPLAY2" (1920x1080)
+9/23 21:55:34.602  D3d11 Device Create
+9/23 21:55:34.602  Taking Adapter by name:"NVIDIA GeForce RTX 2080 Ti"
+9/23 21:55:34.778  Created 11.1 Device
+9/23 21:55:34.778  ConstantBufferOffsetting Support: true
+9/23 21:55:34.778  SetMaximumFrameLatency set: 3
+9/23 21:55:34.778  AFR detection
+9/23 21:55:34.778  AFR found with 1 devices(s)
+9/23 21:55:34.778  AFR Groups: 1/1
+9/23 21:55:34.778  Feature Level: DX=4, MTL=0
+9/23 21:55:35.101  Deferred Mode = 1
+9/23 21:55:35.101  Driver Command Lists: yes
+9/23 21:55:35.101  NotifyOnDeviceCreate
+9/23 21:55:35.101  D3d11 Device Create Successful
+9/23 21:55:35.101  <IsGPUDriverOutOfDate> No
+9/23 21:55:35.153  CPU Processor Detection: 12 H/W threads
+9/23 21:55:35.153  Memory Detection: 34296328192 bytes of physical memory available
+9/23 21:55:35.153  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+9/23 21:55:35.282  RenderSettings::NotifyChanged
+9/24 02:13:03.229  CharacterComponent Texture Level change
+9/24 02:13:03.733  RenderSettings::NotifyChanged
+9/24 02:16:36.475  CharacterComponent Texture Level change
+9/24 02:16:37.176  RenderSettings::NotifyChanged
+9/24 02:31:01.410  D3d11 Device Destroy
+9/24 02:31:01.410  NotifyOnDeviceDestroy
+9/24 02:31:03.309  D3d11 Device Destroyed
+9/24 02:31:03.478  GxShutdown

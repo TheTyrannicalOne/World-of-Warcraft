@@ -1,4 +1,4 @@
-PetEmote_DefaultEmotes["Abomination"] = {
+﻿PetEmote_DefaultEmotes["Abomination"] = {
 	[1] = {
 		["text"] = "belches",
 		["keywords"] = { "belches" },

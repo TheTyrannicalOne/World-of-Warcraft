@@ -1,4 +1,4 @@
-local apiV, AB, MAJ, REV, ext, T = {}, {}, 2, 24, ...
+local apiV, AB, MAJ, REV, ext, T = {}, {}, 2, 25, ...
 if T.ActionBook then return end
 apiV[MAJ], ext, T.Kindred, T.Rewire = AB, {Kindred=T.Kindred, Rewire=T.Rewire, ActionBook={}}
 
@@ -127,13 +127,13 @@ local actionCallbacks, core, coreEnv = {}, CreateFrame("Frame", nil, nil, "Secur
 		actInfo, busy, idle, _NIL, sidCastID = newtable(), newtable(), newtable(), newtable(), 30 + math.random(9)
 		actInfo[sidCastID] = newtable("attribute", 6, "spell",nil, "target",nil, "type","spell")
 		for _, c in pairs(self:GetChildList(newtable())) do idle[c] = c:GetName() end
-		KR, colStack, idxStack, ecStack, outCount = self:GetFrameRef("KR"), newtable(), newtable(), newtable(), newtable()
+		KR, colStack, idxStack, ecStack, onStack, outCount = self:GetFrameRef("KR"), newtable(), newtable(), newtable(), newtable(), newtable()
 	]=])
 	coreEnv = GetManagedEnvironment(core)
 end
 core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
 	local i, ret, root, col, idx, aid, ecol = 1, "", tonumber((...)) or 0
-	wipe(outCount)
+	wipe(outCount) wipe(onStack)
 	colStack[i], idxStack[i], ecStack[i] = root, 1, nil
 	repeat
 		col, idx, ecol = colStack[i], idxStack[i], ecStack[i]
@@ -141,7 +141,9 @@ core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
 			if outCount[col] == nil then
 				self:CallMethod("notifyCollectionOpen", col)
 			end
-			outCount[col] = not ecol and 0
+			if not ecol then
+				onStack[col], outCount[col] = true, 0
+			end
 		end
 		aid, idxStack[i] = collections[col][idx], idx + 1
 		if aid then
@@ -165,7 +167,7 @@ core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
 					end
 				elseif isCollection and not outCount[aid] then
 					i, idxStack[i], colStack[i+1], idxStack[i+1], ecStack[i+1] = i + 1, idx, aid, 1, false
-				elseif (outCount[aid] or 1) > 0 then
+				elseif (outCount[aid] or 1) > 0 or onStack[aid] then
 					local col = ecol or col
 					local nid = outCount[col] + 1
 					ret = ret .. "\n" .. col .. " " .. nid .. " " .. aid .. " " .. tok
@@ -173,9 +175,12 @@ core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
 				end
 			end
 		else
-			local openAction = (not ecol) and (i == 1 or (outCount[col] or 0) > 0) and metadata["openAction-" .. col]
-			if openAction then
-				ret = ret .. "\n" .. col .. " 0 " .. openAction .. " AOOA::" .. col
+			if not ecol then
+				onStack[col] = nil
+				local openAction = (i == 1 or (outCount[col] or 0) > 0) and metadata["openAction-" .. col]
+				if openAction then
+					ret = ret .. "\n" .. col .. " 0 " .. openAction .. " AOOA::" .. col
+				end
 			end
 			i = i - 1
 		end

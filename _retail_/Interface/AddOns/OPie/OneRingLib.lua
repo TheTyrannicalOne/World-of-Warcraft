@@ -678,12 +678,13 @@ local OR_FindFinalAction do
 	local secRotation, secCollections, secTokens, secRotationMode = OR_SecEnv.rotation, OR_SecEnv.collections, OR_SecEnv.ctokens, OR_SecEnv.rotationMode
 	function OR_FindFinalAction(collection, id, from, rotationBonus, followJumps)
 		wipe(seen)
-		while 1 do
+		for k=1,1e3 do
 			local col = secCollections[collection]
 			local act = col and col[id]
 			if act then
 				local nCol, tok = secCollections[act], secTokens[collection][id]
-				if secRotationMode[tok] == "jump" and nCol and tok ~= from and not followJumps then
+				local isJump = secRotationMode[tok] == "jump"
+				if isJump and nCol and tok ~= from and not followJumps then
 					return act, tok, "jump"
 				elseif nCol and not seen[tok] then
 					seen[tok] = true
@@ -692,6 +693,9 @@ local OR_FindFinalAction do
 					collection, id, from, rotationBonus = act, rot, from, rotationBonus
 				elseif nCol == nil then
 					return act, tok, "act"
+				else
+					-- TODO: ???
+					return act, tok, isJump and "jump" or "act"
 				end
 			end
 		end
@@ -709,7 +713,7 @@ function OR_SecCore:NotifyState(state, _ringName, collection, ...)
 	elseif state == "switch" then
 		OR_ActiveCollectionID, OR_ActiveSliceCount = collection, #OR_SecEnv.openCollection
 		if ORI then
-			securecall(ORI.Show, ORI, collection, ..., true, self)
+			securecall(ORI.Show, ORI, collection, ..., "inplace-switch", self)
 		end
 	elseif state == "close" then
 		if ORI then

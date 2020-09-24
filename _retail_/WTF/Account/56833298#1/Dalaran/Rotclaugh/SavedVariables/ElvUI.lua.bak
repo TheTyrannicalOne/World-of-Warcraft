@@ -11,116 +11,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"indeed", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1993, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1600407767,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"Anyone near by to help me kill biolante?", -- [1]
-			"Odyum-Khadgar", -- [2]
-			"", -- [3]
-			"1. General - Gorgrond", -- [4]
-			"Odyum-Khadgar", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Gorgrond", -- [9]
-			0, -- [10]
-			1859, -- [11]
-			"Player-52-0BE60D3B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Odyum-Khadgar|r",
-			[51] = 1600435947,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"|cffffff00Iron Docks is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Gorgrond", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Gorgrond", -- [9]
-			0, -- [10]
-			808, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1600468092,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"WTS 110-120 Freehold fast leveling. Cheap. PST", -- [1]
-			"Arriyaa-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Arriyaa-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1144, -- [11]
-			"Player-3683-0B567CE7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Arriyaa|r",
-			[51] = 1600470720,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"lets exsplore your feelings", -- [1]
-			"Bleedmor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bleedmor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1145, -- [11]
-			"Player-3683-0C57F8C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Bleedmor|r",
-			[51] = 1600470720,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
 			"WTS M15 timed and untimed cheap price with Armor/Loot STACK NO EXTRA COST.  GOLD ONLY. <3", -- [1]
 			"Coolguysl-Dalaran", -- [2]
 			"", -- [3]
@@ -141,7 +31,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Coolguysl|r",
 			[51] = 1600470728,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [1]
 		{
 			"That's an easy exploration", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -163,7 +53,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470733,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [2]
 		{
 			"It ends at the fridge", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -185,7 +75,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470736,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [3]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-128773-3683-90918869|h[Guild: Lions Guard]|h|r Looking for people who want to grow with us. Focused on keeping a social and active Discord, constant guild events, M+ and dedicated AOTC raid TEAMS! LFM Raiders! +18", -- [1]
 			"Jonjou-Dalaran", -- [2]
@@ -207,7 +97,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Jonjou|r",
 			[51] = 1600470743,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [4]
 		{
 			"wts|cffa335ee|Hitem:163573::::::::120:102::::::|h[Goldenmane's Reins]|h|r", -- [1]
 			"Eriettena-Dalaran", -- [2]
@@ -229,7 +119,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Eriettena|r",
 			[51] = 1600470756,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [5]
 		{
 			"looking for guild sigs", -- [1]
 			"Beneballoons-Staghelm", -- [2]
@@ -251,7 +141,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Beneballoons-Staghelm|r",
 			[51] = 1600470769,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [6]
 		{
 			"Unless I'm out of cheese, then I have other feelings", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -273,7 +163,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470778,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [7]
 		{
 			"<<Starlight>> selling 10-20 Keys done in TIME! Get your 475 guaranteed corrupted piece. GOLD ONLY! FREE ARMOR STACK ON ALL KEYS! CHEAP 15s! GET KEYSTONE MASTER BEFORE ITS GONE!", -- [1]
 			"Koalaslbx-Dalaran", -- [2]
@@ -295,7 +185,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Koalaslbx|r",
 			[51] = 1600470779,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [8]
 		{
 			"and they're all anger", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -317,7 +207,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470783,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [9]
 		{
 			"I am a liberal now and the feelings are rushing in like crazy ", -- [1]
 			"Bleedmor-Dalaran", -- [2]
@@ -339,7 +229,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Bleedmor|r",
 			[51] = 1600470807,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [10]
 		{
 			"except one of them is regret", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -361,7 +251,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470808,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [11]
 		{
 			"hello trade", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -383,7 +273,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600470814,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [12]
 		{
 			"for not buying cheese", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -405,7 +295,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470815,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [13]
 		{
 			"ok", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -427,7 +317,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1600470823,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [14]
 		{
 			"i would like it if my roommate bought more cheese", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -449,7 +339,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600470825,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [15]
 		{
 			"WTS |cffa335ee|Hitem:72145::::::::120:64::14::::|h[Swift Springstrider]|h|r", -- [1]
 			"Sûcy-Dalaran", -- [2]
@@ -471,7 +361,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Sûcy|r",
 			[51] = 1600470827,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [16]
 		{
 			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Misoxonap-Dalaran", -- [2]
@@ -493,7 +383,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMisoxonap|r",
 			[51] = 1600470828,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [17]
 		{
 			"Mecha ! Welcome !", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -515,7 +405,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1600470828,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [18]
 		{
 			"I need some cheese wiz", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -537,7 +427,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1600470836,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [19]
 		{
 			"roommates buy cheese?", -- [1]
 			"Robocopper-Dalaran", -- [2]
@@ -559,7 +449,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Robocopper|r",
 			[51] = 1600470842,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [20]
 		{
 			"roommates consume more cheese than they buy", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -581,7 +471,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470842,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [21]
 		{
 			"wheres the dude tht was looking to buy |cffffffff|Hitem:169445::::::::120:103::::::|h[Dredged Leather Bladder]|h|r", -- [1]
 			"Lolpounced-Dalaran", -- [2]
@@ -603,7 +493,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lolpounced|r",
 			[51] = 1600470843,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [22]
 		{
 			"WTS M15 timed and untimed cheap price with Armor/Loot STACK NO EXTRA COST.  GOLD ONLY. <3", -- [1]
 			"Coolguysl-Dalaran", -- [2]
@@ -625,7 +515,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Coolguysl|r",
 			[51] = 1600470845,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [23]
 		{
 			"all the daddies <3<3<3", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -647,7 +537,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600470847,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [24]
 		{
 			"cheese whiz is awesome sauce", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -669,7 +559,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1600470847,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [25]
 		{
 			"this is a mathematical constant", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -691,7 +581,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [26]
 		{
 			"Hay Dead ! W B ! ", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -713,7 +603,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1600470859,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [27]
 		{
 			"ty my brother from another mother", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -735,7 +625,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1600470871,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [28]
 		{
 			"roommates also drink all the good coke so when you want a mixer you have to use the shitty off-brand \"cola\" they bought \"because it's basically the same\"", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -757,7 +647,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470883,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [29]
 		{
 			"<<Starlight>> selling 10-20 Keys done in TIME! Get your 475 guaranteed corrupted piece. GOLD ONLY! FREE ARMOR STACK ON ALL KEYS! CHEAP 15s! GET KEYSTONE MASTER BEFORE ITS GONE!", -- [1]
 			"Koalaslbx-Dalaran", -- [2]
@@ -779,7 +669,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Koalaslbx|r",
 			[51] = 1600470886,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [30]
 		{
 			"THEY DO TELA THEY REALLY DO", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -801,7 +691,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600470893,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [31]
 		{
 			"cheeze wiz is sex sauce?", -- [1]
 			"Average-Dalaran", -- [2]
@@ -823,7 +713,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Average|r",
 			[51] = 1600470896,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [32]
 		{
 			"100g for guild signatures", -- [1]
 			"Beneballoons-Staghelm", -- [2]
@@ -845,7 +735,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Beneballoons-Staghelm|r",
 			[51] = 1600470901,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [33]
 		{
 			"if it were the same, kevin, IT WOULD COST THE SAME AND HAVE THE SAME LABEL", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -867,7 +757,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470906,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [34]
 		{
 			"that's the job of roommates - use what they have and take what you got and tell you you're not being understanding enough....", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -889,7 +779,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1600470909,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [35]
 		{
 			"so mine just used all my spouses hot sauce then bought his own and is hiding it in his room", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -911,7 +801,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600470910,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [36]
 		{
 			"WTS Heroic N'zoth only kills! Kill includes Ahead of the Curve Achievement,|cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r mount and any loot via the personal loot system! Going soon!! GOLD ONLY", -- [1]
 			"Gochufour-Dalaran", -- [2]
@@ -933,7 +823,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGochufour|r",
 			[51] = 1600470914,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [37]
 		{
 			"Four Loko", -- [1]
 			"Arachale-Dalaran", -- [2]
@@ -955,7 +845,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arachale|r",
 			[51] = 1600470917,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [38]
 		{
 			"*WaiT* ... that's ex wives... n v m", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -977,7 +867,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1600470922,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [39]
 		{
 			"No, but guacamole is gross", -- [1]
 			"Azshaela-Dalaran", -- [2]
@@ -999,7 +889,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Azshaela|r",
 			[51] = 1600470923,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [40]
 		{
 			"lol, Blackmoon", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -1021,7 +911,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1600470930,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [41]
 		{
 			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Misoxonap-Dalaran", -- [2]
@@ -1043,7 +933,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMisoxonap|r",
 			[51] = 1600470932,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [42]
 		{
 			"i dont have any of those yet xD", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -1065,7 +955,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600470936,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [43]
 		{
 			"As a new liberal could we please not say the S word in chat", -- [1]
 			"Bleedmor-Dalaran", -- [2]
@@ -1087,7 +977,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Bleedmor|r",
 			[51] = 1600470936,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [44]
 		{
 			"is there anything more disgusting than off-brand coke?", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -1109,7 +999,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470940,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [45]
 		{
 			"WTS M15 timed and untimed cheap price with Armor/Loot STACK NO EXTRA COST.  GOLD ONLY. <3", -- [1]
 			"Coolguysl-Dalaran", -- [2]
@@ -1131,7 +1021,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Coolguysl|r",
 			[51] = 1600470946,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [46]
 		{
 			"New Coke", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -1153,7 +1043,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1600470949,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [47]
 		{
 			"sauce?", -- [1]
 			"Average-Dalaran", -- [2]
@@ -1175,7 +1065,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Average|r",
 			[51] = 1600470952,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [48]
 		{
 			"Selling |cff66bbff|Hjournal:1:2375:14|h[N'Zoth the Corruptor]|h|r Heroic Last Boss Only , Going right Now Pst For  More info , Summ rdy > GOLD ONLY < Done +700 run , 12/12 Mythic Team", -- [1]
 			"Bufoo-Dalaran", -- [2]
@@ -1197,7 +1087,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Bufoo|r",
 			[51] = 1600470954,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [49]
 		{
 			"SUCK-ASS??", -- [1]
 			"Grannyw-Dalaran", -- [2]
@@ -1219,7 +1109,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Grannyw|r",
 			[51] = 1600470956,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [50]
 		{
 			"I said plz no S word", -- [1]
 			"Bleedmor-Dalaran", -- [2]
@@ -1241,7 +1131,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Bleedmor|r",
 			[51] = 1600470966,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [51]
 		{
 			"my roommate eating a family pack of chips ahoy cookies, a pound of sour cream,and a family bag of lays chips in ONE DAY", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -1263,7 +1153,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600470967,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [52]
 		{
 			"new coke was imitation pepsi, which is garbage", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -1285,7 +1175,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470968,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [53]
 		{
 			"wts |cff1eff00|Hbattlepet:2190:1:2:148:10:12:0000000000000000:86229|h[Guardian Cobra Hatchling]|h|r 250g", -- [1]
 			"Whereswally-Ysera", -- [2]
@@ -1307,7 +1197,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWhereswally-Ysera|r",
 			[51] = 1600470969,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [54]
 		{
 			"WTS |cffa335ee|Hitem:72145::::::::120:64::14::::|h[Swift Springstrider]|h|r", -- [1]
 			"Sûcy-Dalaran", -- [2]
@@ -1329,7 +1219,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Sûcy|r",
 			[51] = 1600470974,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [55]
 		{
 			"wts|cffa335ee|Hitem:163573::::::::120:102::::::|h[Goldenmane's Reins]|h|r", -- [1]
 			"Eriettena-Dalaran", -- [2]
@@ -1351,7 +1241,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Eriettena|r",
 			[51] = 1600470978,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [56]
 		{
 			"the only proper response to \"is pepsi okay?\" is \"was 9/11 okay?\"", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -1373,7 +1263,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600470995,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [57]
 		{
 			"SELF PLEASURING??", -- [1]
 			"Grannyw-Dalaran", -- [2]
@@ -1395,7 +1285,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Grannyw|r",
 			[51] = 1600470998,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [58]
 		{
 			"four loko", -- [1]
 			"Arachale-Dalaran", -- [2]
@@ -1417,7 +1307,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arachale|r",
 			[51] = 1600470999,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [59]
 		{
 			"lol", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -1439,7 +1329,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600471002,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [60]
 		{
 			"TRUMP", -- [1]
 			"Zath-Dalaran", -- [2]
@@ -1461,7 +1351,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zath|r",
 			[51] = 1600471011,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [61]
 		{
 			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Misoxonap-Dalaran", -- [2]
@@ -1483,7 +1373,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMisoxonap|r",
 			[51] = 1600471014,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [62]
 		{
 			"we're not talking about trump, we're talking about soda", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -1505,7 +1395,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600471026,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [63]
 		{
 			"+ 5  strap.. of pleasure", -- [1]
 			"Arachale-Dalaran", -- [2]
@@ -1527,7 +1417,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arachale|r",
 			[51] = 1600471031,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [64]
 		{
 			"Mech - for a second there I thought you were talking about me .. .until I realized you left out \"drinking a 2 liter bottle of soda\" ...", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -1549,7 +1439,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1600471034,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [65]
 		{
 			"and why they're all inferior to classic coca-cola", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -1571,7 +1461,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600471036,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [66]
 		{
 			"delicious cherry coke", -- [1]
 			"Acquinas-Dalaran", -- [2]
@@ -1593,7 +1483,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Acquinas|r",
 			[51] = 1600471044,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [67]
 		{
 			"orange soda", -- [1]
 			"Average-Dalaran", -- [2]
@@ -1615,7 +1505,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Average|r",
 			[51] = 1600471046,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [68]
 		{
 			"As a new liberal I would like to see america activly going to other countries and assisting with gender issues and surgeries", -- [1]
 			"Bleedmor-Dalaran", -- [2]
@@ -1637,7 +1527,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Bleedmor|r",
 			[51] = 1600471047,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [69]
 		{
 			"WTS M15 timed and untimed cheap price with Armor/Loot STACK NO EXTRA COST.  GOLD ONLY. <3", -- [1]
 			"Coolguysl-Dalaran", -- [2]
@@ -1659,7 +1549,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Coolguysl|r",
 			[51] = 1600471050,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [70]
 		{
 			"cherry coke gets a pass", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -1681,7 +1571,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600471056,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [71]
 		{
 			"I found my orange crush", -- [1]
 			"Arachale-Dalaran", -- [2]
@@ -1703,7 +1593,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arachale|r",
 			[51] = 1600471059,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [72]
 		{
 			"ok well thats ok but he also thinks he's like martial arts teacher who is super fit and such", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -1725,7 +1615,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600471062,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [73]
 		{
 			" /hug Telatheus-Dalaran", -- [1]
 			"Acquinas-Dalaran", -- [2]
@@ -1747,7 +1637,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Acquinas|r",
 			[51] = 1600471066,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [74]
 		{
 			"CHERR--- err... chery coke ... necter of the gods... mmmmm", -- [1]
 			"Blãckmoon-Dalaran", -- [2]
@@ -1769,7 +1659,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blãckmoon|r",
 			[51] = 1600471069,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [75]
 		{
 			"100g for guild signature, please", -- [1]
 			"Beneballoons-Staghelm", -- [2]
@@ -1791,7 +1681,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Beneballoons-Staghelm|r",
 			[51] = 1600471073,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [76]
 		{
 			" /hug Blãckmoon-Dalaran", -- [1]
 			"Acquinas-Dalaran", -- [2]
@@ -1813,7 +1703,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Acquinas|r",
 			[51] = 1600471084,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [77]
 		{
 			"also that he tries to hide the containers in his room and fills the trash while i sleep lol--whoah yall vanilla coke is good too", -- [1]
 			"Mechamonica-Dalaran", -- [2]
@@ -1835,7 +1725,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Mechamonica|r",
 			[51] = 1600471094,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [78]
 		{
 			"WTS |cffa335ee|Hitem:72145::::::::120:64::14::::|h[Swift Springstrider]|h|r", -- [1]
 			"Sûcy-Dalaran", -- [2]
@@ -1857,7 +1747,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Sûcy|r",
 			[51] = 1600471106,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [79]
 		{
 			"classic coke has vanilla in already", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -1879,7 +1769,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600471111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [80]
 		{
 			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Misoxonap-Dalaran", -- [2]
@@ -1901,7 +1791,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMisoxonap|r",
 			[51] = 1600471111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [81]
 		{
 			"mountain dew", -- [1]
 			"Arachale-Dalaran", -- [2]
@@ -1923,7 +1813,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Arachale|r",
 			[51] = 1600471114,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [82]
 		{
 			"seagrams and cherry coke", -- [1]
 			"Average-Dalaran", -- [2]
@@ -1945,7 +1835,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Average|r",
 			[51] = 1600471114,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [83]
 		{
 			"DON'T NEED MORE", -- [1]
 			"Telatheus-Dalaran", -- [2]
@@ -1967,7 +1857,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Telatheus|r",
 			[51] = 1600471115,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [84]
 		{
 			"nah", -- [1]
 			"Vulgari-Dalaran", -- [2]
@@ -1989,7 +1879,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Vulgari|r",
 			[51] = 1600497881,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [85]
 		{
 			"WTS |cffa335ee|Hitem:156798::::::::20:102::::::|h[The Hivemind]|h|r THE SECRET MOUNT run. takes 20 minutes. DONT WAIT> BE THE BRAIN TODAY. GOLD ONLY", -- [1]
 			"Akiraone-Dalaran", -- [2]
@@ -2011,7 +1901,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Akiraone|r",
 			[51] = 1600497887,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [86]
 		{
 			"should have or should've", -- [1]
 			"Gaelennata-Dalaran", -- [2]
@@ -2033,7 +1923,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Gaelennata|r",
 			[51] = 1600497889,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [87]
 		{
 			"theyre only liek 7s each but it adds up", -- [1]
 			"Vulgari-Dalaran", -- [2]
@@ -2055,7 +1945,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Vulgari|r",
 			[51] = 1600497895,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [88]
 		{
 			"my grammar sucks I know", -- [1]
 			"Tylordriel-Dalaran", -- [2]
@@ -2077,7 +1967,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Tylordriel|r",
 			[51] = 1600497913,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [89]
 		{
 			"WTS 110-120 Freehold fast Leveling, Cheap PST", -- [1]
 			"Arriyaa-Dalaran", -- [2]
@@ -2099,7 +1989,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Arriyaa|r",
 			[51] = 1600498660,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [90]
 		{
 			"WTS Mythic+11-20keys Carry-Get weekly chest 465-475ilvl and 100% Corruption gear,also do Heroic Ny'alotha (12/12) Full clear, Vision 5 mask. Jaina and Mechagon 8/8 HM for mount[Aerial Unit R-21/X],PST", -- [1]
 			"Gunellas-Dalaran", -- [2]
@@ -2121,7 +2011,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGunellas|r",
 			[51] = 1600498703,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [91]
 		{
 			"WTS:Mythic Ny'alotha1-10/Heroic Ny'alotha12/12;  Mythic+11-20keys Carry;Get weekly chest 465-475ilvl and 100% Corruption gear;Also do Jaina and Mechagon 8/8 get mount |cffa335ee|Hitem:168830::::::::1:256::::::|h[Aerial Unit R-21/X]|h|r; Pst !", -- [1]
 			"Gunellas-Dalaran", -- [2]
@@ -2143,7 +2033,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGunellas|r",
 			[51] = 1600498832,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [92]
 		{
 			"Starlight Boosting CRAZY WEEKEND DEALS !!!! Wts 12/12 Heroic/Mythic Nyalotha With FUNNELS!!!! Keystone master achievement// M+15 Timed/Untimed. Any rare mounts and pvp boosts. GOLD ONLY Pm for more. DON'T DELAY BUY TODAY", -- [1]
 			"Starlightmax-Dalaran", -- [2]
@@ -2165,7 +2055,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeStarlightmax|r",
 			[51] = 1600498878,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [93]
 		{
 			"indeed", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -2187,6 +2077,116 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1600498886,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"cant its BOP", -- [1]
+			"Melniboné-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Melniboné-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2124, -- [11]
+			"Player-3683-09664822", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Melniboné|r",
+			[51] = 1600699334,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"<Everbloom> Scared of starting an expansion alone? Unsure of which covenant matches you? Just want some friends? This is the guild for you! We're brand new and getting ready for Shadowlands. Wanting to raid soon! Come chill! Repairs included!", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2125, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600699341,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-171315-3683-94832704|h[Guild: Everbloom]|h|r", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2126, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600699344,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Mikowedix-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Mikowedix-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2127, -- [11]
+			"Player-3683-0C8AD139", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cMikowedix|r",
+			[51] = 1600699372,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"Hey there! Would you be interested in joining a guild that is part of a larger gaming community? We're coming back to wow for the next expansion and looking for new members as well as people interested in being a community coordinator", -- [1]
+			"Durimbor-Dalaran", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Durimbor-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2495, -- [11]
+			"Player-3683-0C7030B4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Durimbor|r",
+			[51] = 1600703334,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [99]
 	},
 }
