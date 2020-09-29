@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0335,
-	["LastPlayerFullName"] = "Illingrath-Dalaran",
-	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122249,
@@ -92,6 +90,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122351::::::::120:581:::1:5805:::|h[Venerable Dal'Rend's Sacred Charge]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Illingrath-Dalaran",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128832] = {
 			["Relics"] = {
@@ -105,7 +106,6 @@ PawnOptions = {
 			["Name"] = "The Aldrachi Warblades",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEMONHUNTER",

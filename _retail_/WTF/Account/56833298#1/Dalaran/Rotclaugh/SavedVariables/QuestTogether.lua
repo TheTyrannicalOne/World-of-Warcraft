@@ -1,11 +1,6 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[53370] = {
-			["title"] = "Hour of Reckoning",
-			["objectives"] = {
-			},
-		},
 		[28732] = {
 			["title"] = "This Can Only Mean One Thing...",
 			["objectives"] = {
@@ -17,6 +12,12 @@ QuestTogether = {
 			["objectives"] = {
 				"1/1 Captain Brak slain", -- [1]
 				"1/1 Heart of the Magnaron recovered", -- [2]
+			},
+		},
+		[43267] = {
+			["title"] = "Troops in the Field",
+			["objectives"] = {
+				"Complete the mission, \"Troops in the Field\"", -- [1]
 			},
 		},
 		[29199] = {
@@ -37,6 +38,13 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
+		[52946] = {
+			["title"] = "A Dying World",
+			["objectives"] = {
+				"1/1 Take portal to Uldum to get closer to Silithus (Optional)", -- [1]
+				"0/1 Silithus reached", -- [2]
+			},
+		},
 		[27203] = {
 			["title"] = "The Maelstrom",
 			["objectives"] = {
@@ -50,21 +58,15 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [3]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
 		[38381] = {
 			["title"] = "Archdruid of Lore",
 			["objectives"] = {
 			},
 		},
-		[43962] = {
-			["title"] = "Blades of Destiny",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 Choose a second artifact to pursue", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[31891] = {
@@ -101,11 +103,6 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[42449] = {
-			["title"] = "Return of the Four Horsemen",
-			["objectives"] = {
-			},
-		},
 		[33359] = {
 			["title"] = "Meet Us at Starfall Outpost",
 			["objectives"] = {
@@ -116,10 +113,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[35166] = {
-			["title"] = "Ship Salvage",
+		[42750] = {
+			["title"] = "Dreamcatcher",
 			["objectives"] = {
-				"0/15 Drudgeboat Salvage", -- [1]
+				"1/1 Shriektalon Totem siphoned", -- [1]
+				"0/1 Fearfeather Totem siphoned", -- [2]
+				"1/1 Reaverbeak Totem siphoned", -- [3]
 			},
 		},
 		[35633] = {
@@ -141,19 +140,17 @@ QuestTogether = {
 				"0/8 Pale Devourer slain", -- [2]
 			},
 		},
-		[42750] = {
-			["title"] = "Dreamcatcher",
+		[35166] = {
+			["title"] = "Ship Salvage",
 			["objectives"] = {
-				"1/1 Shriektalon Totem siphoned", -- [1]
-				"0/1 Fearfeather Totem siphoned", -- [2]
-				"1/1 Reaverbeak Totem siphoned", -- [3]
+				"0/15 Drudgeboat Salvage", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

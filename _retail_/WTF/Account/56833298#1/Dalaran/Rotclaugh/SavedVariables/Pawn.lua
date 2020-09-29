@@ -70,9 +70,9 @@ PawnOptions = {
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 163,
+			["Level"] = 170,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::109:251:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::110:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
@@ -80,14 +80,15 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122260::::::::110:251:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 128292,
-			["Level"] = 152,
-			["Link"] = "|cffe6cc80|Hitem:128292::::::::100:251::9::::|h[Blades of the Fallen Prince]|h|r",
+			["ID"] = 122349,
+			["Level"] = 170,
+			["Link"] = "|cff00ccff|Hitem:122349::::::::110:250:::1:5805:::|h[Bloodied Arcanite Reaper]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 128293,
-			["Level"] = 152,
-			["Link"] = "|cffe6cc80|Hitem:128293::::::::100:251::::::|h[Blades of the Fallen Prince]|h|r",
+			["ID"] = 122389,
+			["Level"] = 170,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff00ccff|Hitem:122389:3368:::::::110:250:::1:5805:::|h[Bloodsoaked Skullforge Reaver]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

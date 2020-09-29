@@ -70,12 +70,6 @@ QuestTogether = {
 				"0/1 An empty bookshelf", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
 		[42129] = {
 			["title"] = "The Pendant of Starlight",
 			["objectives"] = {
@@ -99,13 +93,6 @@ QuestTogether = {
 			["objectives"] = {
 				"0/1 Nol'ixwan slain", -- [1]
 				"0/1 Ten'gor slain", -- [2]
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[31891] = {
@@ -135,11 +122,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[31486] = {
@@ -197,8 +183,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
-		["events"] = false,
 		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
 	},
 }

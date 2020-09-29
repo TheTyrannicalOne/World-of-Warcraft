@@ -1,21 +1,20 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
 			["class"] = "WARRIOR",
 			["summary"] = {
-				["lastOilTime"] = 1600836514,
+				["lastOilTime"] = 1601296886,
 				["ti2"] = 122486,
 				["inProgress"] = {
-					[276] = 1600901915,
-					[264] = 1600899509,
-					[395] = 1600894648,
-					[191] = 1600891895,
-					[619] = 1600949916,
-					[745] = 1600901314,
-					[311] = 1600906696,
+					[677] = 1601381439,
+					[621] = 1601410284,
+					[397] = 1601381478,
+					[258] = 1601367606,
+					[619] = 1601410288,
+					[543] = 1601374289,
+					[745] = 1601361686,
+					[395] = 1601374221,
 				},
 				["ti3"] = 127855,
 				["ti1"] = 118531,
@@ -23,10 +22,10 @@ MasterPlanAG = {
 				["tt3"] = 1600132126,
 				["tt2"] = 1600564186,
 			},
-			["curOil"] = 91100,
+			["curOil"] = 92740,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1600888276,
-			["curRes"] = 4510,
+			["lastCacheTime"] = 1601360470,
+			["curRes"] = 7373,
 			["faction"] = "Horde",
 		},
 		["Tyrannithal"] = {
@@ -34,16 +33,10 @@ MasterPlanAG = {
 			["class"] = "DEMONHUNTER",
 		},
 	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
 	["Dalaran"] = {
 		["Rotclaugh"] = {
-			["class"] = "DEATHKNIGHT",
 			["lastCacheTime"] = 1600407706,
+			["class"] = "DEATHKNIGHT",
 			["curRes"] = 219,
 			["faction"] = "Alliance",
 		},
@@ -97,6 +90,12 @@ MasterPlanAG = {
 		["Kelvalatar"] = {
 			["faction"] = "Alliance",
 			["class"] = "SHAMAN",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Zul'jin"] = {
@@ -153,5 +152,7 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["faction"] = "Horde",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

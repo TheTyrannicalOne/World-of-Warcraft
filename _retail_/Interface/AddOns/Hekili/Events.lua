@@ -242,7 +242,7 @@ do
 end
 
 
-local OnFirstEntrance
+--[[ local OnFirstEntrance
 OnFirstEntrance = function ()
     Hekili.PLAYER_ENTERING_WORLD = true
     Hekili:SpecializationChanged()
@@ -259,7 +259,42 @@ OnFirstEntrance = function ()
     Hekili:BuildUI()
     UnregisterEvent( "PLAYER_ENTERING_WORLD", OnFirstEntrance )
 end
-RegisterEvent( "PLAYER_ENTERING_WORLD", OnFirstEntrance )
+RegisterEvent( "PLAYER_ENTERING_WORLD", OnFirstEntrance ) ]]
+
+
+-- Try to avoid updating between PLAYER_ENTERING_WORLD and PLAYER_LEAVING_WORLD.
+RegisterEvent( "PLAYER_ENTERING_WORLD", function ()
+    if Hekili.PLAYER_ENTERING_WORLD == nil then
+        Hekili.PLAYER_ENTERING_WORLD = true
+        Hekili:SpecializationChanged()
+        Hekili:RestoreDefaults()
+    
+        ns.checkImports()
+        ns.updateGear()
+    
+        if state.combat == 0 and InCombatLockdown() then
+            state.combat = GetTime() - 0.01
+            Hekili:UpdateDisplayVisibility()
+        end
+    
+        Hekili:BuildUI()
+        return
+    end
+
+    Hekili.PLAYER_ENTERING_WORLD = true
+end )
+
+RegisterEvent( "PLAYER_LEAVING_WORLD", function ()
+    Hekili.PLAYER_ENTERING_WORLD = false
+end )
+
+RegisterEvent( "LOADING_SCREEN_ENABLED", function ()
+    Hekili.PLAYER_ENTERING_WORLD = false
+end )
+
+RegisterEvent( "LOADING_SCREEN_DISABLED", function ()
+    Hekili.PLAYER_ENTERING_WORLD = true
+end )
 
 
 do
@@ -1488,7 +1523,7 @@ end
 
 local function StoreKeybindInfo( page, key, aType, id, console )
 
-    if not key then return end
+    if not key or not aType then return end
 
     local ability
 
@@ -1619,6 +1654,36 @@ local function ReadKeybindings()
                 end
 
                 StoreKeybindInfo( actionBarNumber, GetBindingKey( bindingKeyName ), GetActionInfo( actionBarButtonId ) )
+            end
+        end
+    elseif _G["ElvUI"] and _G["ElvUI_Bar1Button1"] then
+        for i = 1, 6 do
+            for b = 1, 12 do
+                local btn = _G["ElvUI_Bar" .. i .. "Button" .. b ]
+
+                local binding = btn.keyBoundTarget
+                local action, aType = btn._state_action, "spell"
+
+                if action and type( action ) == "number" then
+                    binding = GetBindingKey( binding )
+                    action, aType = GetActionInfo( action )
+                    StoreKeybindInfo( i, binding, action, aType )
+                end
+            end
+        end
+
+        for i = 7, 10 do
+            for b = 1, 12 do
+                local btn = _G["ElvUI_Bar" .. i .. "Button" .. b ]
+
+                local binding = "ACTIONBUTTON" .. b
+                local action, aType = btn._state_action, "spell"
+
+                if action and type( action ) == "number" then
+                    binding = GetBindingKey( binding )
+                    action, aType = GetActionInfo( action )
+                    StoreKeybindInfo( i, binding, action, aType )
+                end
             end
         end
     else

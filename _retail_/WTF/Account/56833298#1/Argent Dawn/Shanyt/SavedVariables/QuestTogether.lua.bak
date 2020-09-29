@@ -1,22 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[52748] = {
-			["title"] = "Eyes on the Skies",
-			["objectives"] = {
-				"Tend to Kua'fon", -- [1]
-			},
-		},
 		[47727] = {
 			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"1/4 Fragment of the Guardian's Seal", -- [1]
+				"2/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[57276] = {
-			["title"] = "Maintaining Focus",
+		[57462] = {
+			["title"] = "Dream Catcher",
 			["objectives"] = {
-				"12/20 Shred of Insanity", -- [1]
+				"0/200 Shred of Insanity", -- [1]
 			},
 		},
 		[49032] = {
@@ -25,10 +19,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[53435] = {
-			["title"] = "Azerite for the Horde",
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
 		[54180] = {
@@ -42,9 +36,16 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
+		[51049] = {
+			["title"] = "Supplies Needed: Mistscale",
 			["objectives"] = {
+				"0/15 Mistscale", -- [1]
+			},
+		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[45381] = {
@@ -62,34 +63,30 @@ QuestTogether = {
 		[45383] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
-		[48298] = {
-			["title"] = "The Unmaker",
+		[49135] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"Defeat Argus the Unmaker in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sanguine Argunite", -- [2]
+				"2/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[56500] = {
-			["title"] = "Storming the Battlefields",
+		[46749] = {
+			["title"] = "Supplies From the Wardens",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"1/1 Win an Epic Battleground", -- [2]
-				"1/1 Win a Battleground", -- [3]
 			},
 		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
+		[13721] = {
+			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+				"13/25 Valiant's Seal", -- [1]
 			},
 		},
 		[49076] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
+				"2/4 Rune of Passage", -- [1]
 			},
 		},
 		[24756] = {
@@ -98,17 +95,17 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[45172] = {
-			["title"] = "To Battle!",
+		[13780] = {
+			["title"] = "The Edge Of Winter",
 			["objectives"] = {
-				"Win a battleground", -- [1]
+				"0/1 Winter's Edge", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[48304] = {
+			["title"] = "The Soulhunter",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"Defeat Imonar the Soul Hunter in the Antorus, The Burning Throne", -- [1]
+				"1/1 Discharged Shock Lance", -- [2]
 			},
 		},
 		[31891] = {
@@ -127,35 +124,34 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
-			},
-		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[57743] = {
 			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
+				"98/500 Earn Conquest", -- [1]
 			},
 		},
-		[13721] = {
-			["title"] = "The Valiant's Charge",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"10/25 Valiant's Seal", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[42421] = {
+			["title"] = "The Nightfallen",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[28884] = {
@@ -169,24 +165,23 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[47123] = {
-			["title"] = "Tomb of Sargeras: The Fallen Avatar",
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
 			["objectives"] = {
-				"Defeat the Fallen Avatar", -- [1]
-				"1/1 Wailing Soul", -- [2]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
-		[49135] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4 Sigil of the Dark Titan", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

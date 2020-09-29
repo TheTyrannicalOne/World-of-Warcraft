@@ -19,14 +19,6 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
-			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
-			},
-		},
 		[57744] = {
 			["title"] = "Conquest's Reward",
 			["objectives"] = {
@@ -39,29 +31,24 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[56499] = {
-			["title"] = "Storming the Battlefields",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"0/1 Win an Epic Battleground", -- [2]
-				"0/1 Win a Battleground", -- [3]
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[56378] = {
+			["title"] = "The Missing Crew",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[57006] = {
@@ -72,10 +59,10 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[50604] = {
@@ -127,10 +114,9 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50599] = {
-			["title"] = "Proudmoore Admiralty",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
 		[50600] = {
@@ -139,11 +125,12 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Drustvar", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[56499] = {
+			["title"] = "Storming the Battlefields",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"Win a PVP Island Expedition", -- [1]
+				"0/1 Win an Epic Battleground", -- [2]
+				"0/1 Win a Battleground", -- [3]
 			},
 		},
 		[31486] = {

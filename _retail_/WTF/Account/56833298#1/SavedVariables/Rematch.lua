@@ -26,12 +26,13 @@ RematchSettings = {
 	},
 	["QueueSortOrder"] = 1,
 	["XPos"] = 995.0079345703125,
-	["DialogYPos"] = 715.0047607421875,
-	["JournalUsed"] = true,
+	["DialogYPos"] = 710.0047607421875,
+	["FavoriteFilters"] = {
+	},
 	["HidePetToast"] = true,
 	["QueueSanctuary"] = {
 	},
-	["DialogXPos"] = 1291.007934570313,
+	["DialogXPos"] = 1296.007934570313,
 	["JournalPanel"] = 1,
 	["BackupCount"] = 0,
 	["TeamGroups"] = {
@@ -40,7 +41,9 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
-	["LevelingQueue"] = {
+	["Sort"] = {
+		["Order"] = 1,
+		["FavoritesFirst"] = true,
 	},
 	["Filters"] = {
 		["Other"] = {
@@ -72,10 +75,7 @@ RematchSettings = {
 	},
 	["SelectedTab"] = 1,
 	["YPos"] = 418.0044860839844,
-	["Sort"] = {
-		["Order"] = 1,
-		["FavoritesFirst"] = true,
-	},
+	["JournalUsed"] = true,
 	["CollapsedOptHeaders"] = {
 	},
 	["SpecialSlots"] = {
@@ -86,9 +86,9 @@ RematchSettings = {
 	},
 	["ElvUIToastDefaulted"] = true,
 	["CornerPos"] = "BOTTOMLEFT",
-	["AllowHiddenPetsDefaulted"] = true,
-	["FavoriteFilters"] = {
+	["LevelingQueue"] = {
 	},
+	["AllowHiddenPetsDefaulted"] = true,
 	["UseTypeBar"] = true,
 	["CustomScaleValue"] = 100,
 	["PetNotes"] = {

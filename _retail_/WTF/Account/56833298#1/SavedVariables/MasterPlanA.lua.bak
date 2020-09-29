@@ -1,5 +1,7 @@
 
 MasterPlanAG = {
+	["IgnoreRewards"] = {
+	},
 	["Zul'jin"] = {
 		["Tyranasticus"] = {
 			["class"] = "DEMONHUNTER",
@@ -63,8 +65,8 @@ MasterPlanAG = {
 	},
 	["Dalaran"] = {
 		["Rotclaugh"] = {
-			["lastCacheTime"] = 1600407706,
 			["class"] = "DEATHKNIGHT",
+			["lastCacheTime"] = 1600407706,
 			["curRes"] = 219,
 			["faction"] = "Alliance",
 		},
@@ -122,36 +124,35 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["curOil"] = 91100,
+			["curOil"] = 92740,
 			["summary"] = {
-				["lastOilTime"] = 1600836514,
+				["lastOilTime"] = 1601296886,
 				["tt2"] = 1600564186,
 				["tt3"] = 1600132126,
 				["ti1"] = 118531,
 				["tt1"] = 1600436539,
 				["ti3"] = 127855,
 				["inProgress"] = {
-					[276] = 1600901915,
-					[264] = 1600899509,
-					[311] = 1600906696,
-					[191] = 1600891895,
-					[745] = 1600901314,
-					[619] = 1600949916,
-					[395] = 1600894648,
+					[677] = 1601381439,
+					[395] = 1601374221,
+					[397] = 1601381478,
+					[258] = 1601367606,
+					[745] = 1601361686,
+					[543] = 1601374289,
+					[619] = 1601410288,
+					[621] = 1601410284,
 				},
 				["ti2"] = 122486,
 			},
 			["faction"] = "Horde",
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1600888276,
-			["curRes"] = 4510,
+			["lastCacheTime"] = 1601360470,
+			["curRes"] = 7373,
 			["class"] = "WARRIOR",
 		},
 		["Tyrannithal"] = {
 			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }

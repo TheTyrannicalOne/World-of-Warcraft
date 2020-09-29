@@ -590,6 +590,18 @@ SkadaPerCharDB = {
 						["critical"] = 157,
 						["hitamount"] = 2135173,
 					},
+					["Bot Scrambler"] = {
+						["hitmin"] = 544,
+						["id"] = 281944,
+						["min"] = 544,
+						["damage"] = 9389,
+						["hitmax"] = 681,
+						["hit"] = 17,
+						["school"] = 65,
+						["totalhits"] = 17,
+						["max"] = 681,
+						["hitamount"] = 9389,
+					},
 					["Dorian Atwater: Lava Burst"] = {
 						["hitmin"] = 107252,
 						["id"] = 292223,
@@ -601,18 +613,6 @@ SkadaPerCharDB = {
 						["totalhits"] = 2,
 						["max"] = 108519,
 						["hitamount"] = 215771,
-					},
-					["Bottled Squall"] = {
-						["hitmin"] = 16543,
-						["id"] = 278898,
-						["min"] = 16543,
-						["hitamount"] = 16543,
-						["hitmax"] = 16543,
-						["hit"] = 1,
-						["school"] = 16,
-						["max"] = 16543,
-						["totalhits"] = 1,
-						["damage"] = 16543,
 					},
 					["Shortfuse Special"] = {
 						["hitmin"] = 2244,
@@ -661,10 +661,10 @@ SkadaPerCharDB = {
 					},
 					["Blade of Justice"] = {
 						["hitamount"] = 3986283,
-						["id"] = 184575,
+						["max"] = 29588,
 						["hitmin"] = 218,
 						["criticalamount"] = 2653703,
-						["max"] = 29588,
+						["EVADE"] = 1,
 						["criticalmin"] = 2448,
 						["school"] = 1,
 						["ABSORB"] = 4,
@@ -674,7 +674,7 @@ SkadaPerCharDB = {
 						["hit"] = 400,
 						["totalhits"] = 536,
 						["hitmax"] = 16262,
-						["EVADE"] = 1,
+						["id"] = 184575,
 						["damage"] = 6639986,
 					},
 					["Silver Shrapnel"] = {
@@ -707,17 +707,17 @@ SkadaPerCharDB = {
 						["max"] = 71233,
 						["damage"] = 7874560,
 					},
-					["Bot Scrambler"] = {
-						["hitmin"] = 544,
-						["id"] = 281944,
-						["min"] = 544,
-						["damage"] = 9389,
-						["hitmax"] = 681,
-						["hit"] = 17,
-						["school"] = 65,
-						["totalhits"] = 17,
-						["max"] = 681,
-						["hitamount"] = 9389,
+					["Bottled Squall"] = {
+						["hitmin"] = 16543,
+						["id"] = 278898,
+						["min"] = 16543,
+						["hitamount"] = 16543,
+						["hitmax"] = 16543,
+						["hit"] = 1,
+						["school"] = 16,
+						["max"] = 16543,
+						["totalhits"] = 1,
+						["damage"] = 16543,
 					},
 					["Blight Rupture"] = {
 						["hitmin"] = 8626,
@@ -826,16 +826,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1593401113.83903,
 								["amount"] = -5061,
-								["spellid"] = 88163,
 								["hp"] = 807,
 								["srcname"] = "Coroak-AeriePeak",
+								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1593401113.83904,
 								["amount"] = -1615,
-								["srcname"] = "Coroak-AeriePeak",
 								["spellid"] = 88163,
 								["hp"] = 807,
+								["srcname"] = "Coroak-AeriePeak",
 							}, -- [4]
 							{
 								["spellname"] = "Avisar dies",
@@ -846,9 +846,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1593401105.60106,
 								["amount"] = -3431,
-								["spellid"] = 55095,
 								["srcname"] = "Coroak-AeriePeak",
 								["hp"] = 26303,
+								["spellid"] = 55095,
 							}, -- [6]
 							{
 								["ts"] = 1593401107.07207,
@@ -885,37 +885,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1593401111.61711,
 								["amount"] = -14881,
-								["hp"] = 12836,
 								["srcname"] = "Coroak-AeriePeak",
 								["spellid"] = 311192,
+								["hp"] = 12836,
 							}, -- [11]
 							{
 								["ts"] = 1593401111.97712,
 								["amount"] = -3486,
-								["srcname"] = "Coroak-AeriePeak",
 								["hp"] = 12836,
 								["spellid"] = 88163,
+								["srcname"] = "Coroak-AeriePeak",
 							}, -- [12]
 							{
 								["ts"] = 1593401111.97713,
 								["amount"] = -2432,
-								["spellid"] = 88163,
 								["hp"] = 12836,
 								["srcname"] = "Coroak-AeriePeak",
+								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1593401111.97714,
 								["amount"] = -253,
-								["hp"] = 12583,
 								["spellid"] = 50401,
 								["srcname"] = "Coroak-AeriePeak",
+								["hp"] = 12583,
 							}, -- [14]
 							{
 								["ts"] = 1593401111.97715,
 								["amount"] = -5370,
-								["hp"] = 7213,
 								["spellid"] = 49184,
 								["srcname"] = "Coroak-AeriePeak",
+								["hp"] = 7213,
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -927,9 +927,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1593027354.15001,
 								["amount"] = -1960,
-								["hp"] = 6169,
 								["srcname"] = "Dank-Zul'jin",
 								["spellid"] = 88163,
+								["hp"] = 6169,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -942,23 +942,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1593027354.69503,
 								["amount"] = -1336,
-								["srcname"] = "Dank-Zul'jin",
 								["hp"] = 3239,
 								["spellid"] = 318187,
+								["srcname"] = "Dank-Zul'jin",
 							}, -- [3]
 							{
 								["ts"] = 1593027355.00204,
 								["amount"] = -2419,
-								["spellid"] = 258883,
 								["srcname"] = "Dank-Zul'jin",
 								["hp"] = 820,
+								["spellid"] = 258883,
 							}, -- [4]
 							{
 								["ts"] = 1593027355.11605,
 								["amount"] = -1632,
-								["hp"] = 1,
 								["srcname"] = "Dank-Zul'jin",
 								["spellid"] = 295367,
+								["hp"] = 1,
 							}, -- [5]
 							{
 								["spellname"] = "Avisar dies",
@@ -969,30 +969,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1593027351.87407,
 								["amount"] = -2707,
-								["hp"] = 41614,
 								["srcname"] = "Dank-Zul'jin",
 								["spellid"] = 88163,
+								["hp"] = 41614,
 							}, -- [7]
 							{
 								["ts"] = 1593027351.97808,
 								["amount"] = -16756,
-								["spellid"] = 311192,
 								["srcname"] = "Dank-Zul'jin",
 								["hp"] = 24858,
+								["spellid"] = 311192,
 							}, -- [8]
 							{
 								["ts"] = 1593027352.06709,
 								["amount"] = -3609,
-								["hp"] = 18542,
 								["srcname"] = "Dank-Zul'jin",
 								["spellid"] = 258883,
+								["hp"] = 18542,
 							}, -- [9]
 							{
 								["ts"] = 1593027352.1981,
 								["amount"] = -3455,
-								["spellid"] = 162243,
 								["srcname"] = "Dank-Zul'jin",
 								["hp"] = 15087,
+								["spellid"] = 162243,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -1005,30 +1005,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1593027352.71012,
 								["amount"] = -1305,
-								["spellid"] = 88163,
 								["srcname"] = "Dank-Zul'jin",
 								["hp"] = 15741,
+								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["ts"] = 1593027353.06013,
 								["amount"] = -2406,
-								["srcname"] = "Dank-Zul'jin",
 								["spellid"] = 258883,
 								["hp"] = 12030,
+								["srcname"] = "Dank-Zul'jin",
 							}, -- [13]
 							{
 								["ts"] = 1593027353.63514,
 								["amount"] = -3455,
-								["spellid"] = 162243,
 								["hp"] = 8575,
 								["srcname"] = "Dank-Zul'jin",
+								["spellid"] = 162243,
 							}, -- [14]
 							{
 								["ts"] = 1593027354.04515,
 								["amount"] = -2406,
-								["spellid"] = 258883,
 								["srcname"] = "Dank-Zul'jin",
 								["hp"] = 6169,
+								["spellid"] = 258883,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -1113,9 +1113,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1593747925.187,
 						["amount"] = -1074,
-						["srcname"] = "Bilefang Hunter",
 						["spellid"] = 88163,
 						["hp"] = 351414,
+						["srcname"] = "Bilefang Hunter",
 					}, -- [1]
 					{
 						["ts"] = 1593747926.295,
@@ -1128,9 +1128,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1593747926.671,
 						["amount"] = -1494,
-						["srcname"] = "Bilefang Hunter",
 						["spellid"] = 88163,
 						["hp"] = 350467,
+						["srcname"] = "Bilefang Hunter",
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -1151,9 +1151,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1593747937.241,
 						["amount"] = -1250,
-						["hp"] = 354200,
 						["spellid"] = 88163,
 						["srcname"] = "Bilefang Hunter",
+						["hp"] = 354200,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -1166,9 +1166,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1593747938.775,
 						["amount"] = -1082,
-						["hp"] = 353333,
 						["spellid"] = 88163,
 						["srcname"] = "Bilefang Hunter",
+						["hp"] = 353333,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -1181,9 +1181,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1593747866.699,
 						["amount"] = -619,
-						["srcname"] = "Bilefang Hunter",
 						["spellid"] = 256401,
 						["hp"] = 308732,
+						["srcname"] = "Bilefang Hunter",
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -1196,23 +1196,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1593747923.665,
 						["amount"] = -1218,
-						["srcname"] = "Bilefang Hunter",
 						["spellid"] = 88163,
 						["hp"] = 354200,
+						["srcname"] = "Bilefang Hunter",
 					}, -- [12]
 					{
 						["ts"] = 1593747925.075,
 						["amount"] = -778,
-						["srcname"] = "Bilefang Hunter",
 						["spellid"] = 256390,
 						["hp"] = 352204,
+						["srcname"] = "Bilefang Hunter",
 					}, -- [13]
 					{
 						["ts"] = 1593747925.075,
 						["amount"] = -851,
-						["spellid"] = 256391,
 						["hp"] = 351353,
 						["srcname"] = "Bilefang Hunter",
+						["spellid"] = 256391,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -4173,7 +4173,6 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["alertDamage"] = 0,
-				["ffdamagedone"] = 0,
 				["healingspells"] = {
 					["Healing Wave"] = {
 						["shielding"] = 0,
@@ -4188,6 +4187,7 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["role"] = "NONE",
 				["time"] = 57,
 				["interrupts"] = 0,
 				["dispells"] = 0,
@@ -4232,7 +4232,7 @@ SkadaPerCharDB = {
 				["ccbreaks"] = 0,
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [3]
 		},
 		["deaths"] = 2,
@@ -6270,52 +6270,6 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Ghost of the Deep"] = {
-				["players"] = {
-					["Avisar"] = {
-						["taken"] = 3467878,
-						["done"] = 377574,
-						["role"] = "NONE",
-						["class"] = "PALADIN",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 3467878,
-				["done"] = 377574,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Appletini-Khadgar"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-					["Lucid Dreams"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 34136,
-						["hits"] = 1,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-					["Lucid Dreams"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 34136,
-						["hits"] = 1,
-					},
-				},
-			},
 			["Alesterii-Baelgun"] = {
 				["players"] = {
 				},
@@ -6360,6 +6314,52 @@ SkadaPerCharDB = {
 					},
 				},
 			},
+			["Appletini-Khadgar"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["Lucid Dreams"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 34136,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["Lucid Dreams"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 34136,
+						["hits"] = 1,
+					},
+				},
+			},
+			["Bloodthirsty Crewman"] = {
+				["players"] = {
+					["Avisar"] = {
+						["taken"] = 704948,
+						["done"] = 46722,
+						["role"] = "NONE",
+						["class"] = "PALADIN",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 46722,
+				["taken"] = 704948,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
 			["Darktide Sorceress"] = {
 				["players"] = {
 					["Avisar"] = {
@@ -6378,11 +6378,11 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Orgrimmar Trainee"] = {
+			["Scrimshaw Racketeer"] = {
 				["players"] = {
 					["Avisar"] = {
-						["taken"] = 168429,
-						["done"] = 1289,
+						["taken"] = 576856,
+						["done"] = 42186,
 						["class"] = "PALADIN",
 						["role"] = "NONE",
 					},
@@ -6390,26 +6390,26 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 168429,
-				["done"] = 1289,
-				["htaken"] = 0,
+				["taken"] = 576856,
 				["htakenspell"] = {
 				},
+				["htaken"] = 0,
+				["done"] = 42186,
 			},
-			["Bloodthirsty Crewman"] = {
+			["Ghost of the Deep"] = {
 				["players"] = {
 					["Avisar"] = {
-						["taken"] = 704948,
-						["done"] = 46722,
+						["taken"] = 3467878,
+						["done"] = 377574,
 						["role"] = "NONE",
 						["class"] = "PALADIN",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 46722,
-				["taken"] = 704948,
 				["htakenspell"] = {
 				},
+				["taken"] = 3467878,
+				["done"] = 377574,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -6648,11 +6648,11 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Scrimshaw Racketeer"] = {
+			["Voidtouched Bloodseeker"] = {
 				["players"] = {
 					["Avisar"] = {
-						["taken"] = 576856,
-						["done"] = 42186,
+						["taken"] = 175743,
+						["done"] = 13259,
 						["class"] = "PALADIN",
 						["role"] = "NONE",
 					},
@@ -6660,11 +6660,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 576856,
+				["taken"] = 175743,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 42186,
+				["done"] = 13259,
 			},
 			["Chief Engineer Erzog"] = {
 				["players"] = {
@@ -6684,30 +6684,118 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Badyfrosty-Illidan"] = {
+			["Rasenstu-Shadowmoon"] = {
 				["players"] = {
 				},
-				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 0,
+				["hdone"] = 550992,
 				["htakenspell"] = {
-					["Cauterizing Blink"] = {
-						["min"] = 0,
+					["Consume Soul"] = {
+						["min"] = 76346,
+						["crits"] = 0,
+						["max"] = 76346,
+						["healing"] = 152692,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["Leech"] = {
+						["min"] = 23,
+						["crits"] = 0,
+						["max"] = 21861,
+						["healing"] = 232817,
+						["overhealing"] = 3617,
+						["hits"] = 55,
+					},
+					["Impassive Visage"] = {
+						["min"] = 777,
+						["crits"] = 5,
+						["max"] = 2632,
+						["healing"] = 25270,
+						["overhealing"] = 883,
+						["hits"] = 13,
+					},
+					["Luminescence"] = {
+						["min"] = 2640,
+						["crits"] = 0,
+						["max"] = 2640,
+						["healing"] = 2640,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Azerite Veins"] = {
+						["min"] = 3027,
 						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 47928,
+						["max"] = 7290,
+						["healing"] = 29906,
+						["overhealing"] = 0,
+						["hits"] = 6,
+					},
+					["Lucid Dreams"] = {
+						["min"] = 7235,
+						["crits"] = 1,
+						["max"] = 10997,
+						["healing"] = 25467,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Lethal Strikes"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 17155,
+						["healing"] = 84840,
+						["overhealing"] = 9663,
 						["hits"] = 8,
 					},
 				},
-				["htaken"] = 0,
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 553632,
 				["hdonespell"] = {
-					["Cauterizing Blink"] = {
-						["min"] = 0,
+					["Consume Soul"] = {
+						["min"] = 76346,
+						["crits"] = 0,
+						["max"] = 76346,
+						["healing"] = 152692,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["Impassive Visage"] = {
+						["min"] = 777,
+						["crits"] = 5,
+						["max"] = 2632,
+						["healing"] = 25270,
+						["overhealing"] = 883,
+						["hits"] = 13,
+					},
+					["Leech"] = {
+						["min"] = 23,
+						["crits"] = 0,
+						["max"] = 21861,
+						["healing"] = 232817,
+						["overhealing"] = 3617,
+						["hits"] = 55,
+					},
+					["Azerite Veins"] = {
+						["min"] = 3027,
 						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 47928,
+						["max"] = 7290,
+						["healing"] = 29906,
+						["overhealing"] = 0,
+						["hits"] = 6,
+					},
+					["Lucid Dreams"] = {
+						["min"] = 7235,
+						["crits"] = 1,
+						["max"] = 10997,
+						["healing"] = 25467,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Lethal Strikes"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 17155,
+						["healing"] = 84840,
+						["overhealing"] = 9663,
 						["hits"] = 8,
 					},
 				},
@@ -10556,22 +10644,32 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 1454,
 			},
-			["Grimestone Raider"] = {
+			["Badyfrosty-Illidan"] = {
 				["players"] = {
-					["Avisar"] = {
-						["taken"] = 317355,
-						["done"] = 20489,
-						["role"] = "NONE",
-						["class"] = "PALADIN",
-					},
 				},
 				["hdone"] = 0,
-				["done"] = 20489,
-				["taken"] = 317355,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
+					["Cauterizing Blink"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 47928,
+						["hits"] = 8,
+					},
 				},
 				["htaken"] = 0,
 				["hdonespell"] = {
+					["Cauterizing Blink"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 47928,
+						["hits"] = 8,
+					},
 				},
 			},
 			["Sythian the Swift"] = {
@@ -10592,11 +10690,11 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Voidtouched Bloodseeker"] = {
+			["Orgrimmar Trainee"] = {
 				["players"] = {
 					["Avisar"] = {
-						["taken"] = 175743,
-						["done"] = 13259,
+						["taken"] = 168429,
+						["done"] = 1289,
 						["class"] = "PALADIN",
 						["role"] = "NONE",
 					},
@@ -10604,11 +10702,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 175743,
+				["taken"] = 168429,
+				["done"] = 1289,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 13259,
 			},
 			["Umbral Hulk"] = {
 				["players"] = {
@@ -10654,120 +10752,22 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Rasenstu-Shadowmoon"] = {
+			["Grimestone Raider"] = {
 				["players"] = {
+					["Avisar"] = {
+						["taken"] = 317355,
+						["done"] = 20489,
+						["role"] = "NONE",
+						["class"] = "PALADIN",
+					},
 				},
-				["hdone"] = 550992,
+				["hdone"] = 0,
+				["done"] = 20489,
+				["taken"] = 317355,
 				["htakenspell"] = {
-					["Consume Soul"] = {
-						["min"] = 76346,
-						["crits"] = 0,
-						["max"] = 76346,
-						["healing"] = 152692,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
-					["Leech"] = {
-						["min"] = 23,
-						["crits"] = 0,
-						["max"] = 21861,
-						["healing"] = 232817,
-						["overhealing"] = 3617,
-						["hits"] = 55,
-					},
-					["Impassive Visage"] = {
-						["min"] = 777,
-						["crits"] = 5,
-						["max"] = 2632,
-						["healing"] = 25270,
-						["overhealing"] = 883,
-						["hits"] = 13,
-					},
-					["Luminescence"] = {
-						["min"] = 2640,
-						["crits"] = 0,
-						["max"] = 2640,
-						["healing"] = 2640,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Azerite Veins"] = {
-						["min"] = 3027,
-						["crits"] = 1,
-						["max"] = 7290,
-						["healing"] = 29906,
-						["overhealing"] = 0,
-						["hits"] = 6,
-					},
-					["Lucid Dreams"] = {
-						["min"] = 7235,
-						["crits"] = 1,
-						["max"] = 10997,
-						["healing"] = 25467,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-					["Lethal Strikes"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 17155,
-						["healing"] = 84840,
-						["overhealing"] = 9663,
-						["hits"] = 8,
-					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 553632,
+				["htaken"] = 0,
 				["hdonespell"] = {
-					["Consume Soul"] = {
-						["min"] = 76346,
-						["crits"] = 0,
-						["max"] = 76346,
-						["healing"] = 152692,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
-					["Impassive Visage"] = {
-						["min"] = 777,
-						["crits"] = 5,
-						["max"] = 2632,
-						["healing"] = 25270,
-						["overhealing"] = 883,
-						["hits"] = 13,
-					},
-					["Leech"] = {
-						["min"] = 23,
-						["crits"] = 0,
-						["max"] = 21861,
-						["healing"] = 232817,
-						["overhealing"] = 3617,
-						["hits"] = 55,
-					},
-					["Azerite Veins"] = {
-						["min"] = 3027,
-						["crits"] = 1,
-						["max"] = 7290,
-						["healing"] = 29906,
-						["overhealing"] = 0,
-						["hits"] = 6,
-					},
-					["Lucid Dreams"] = {
-						["min"] = 7235,
-						["crits"] = 1,
-						["max"] = 10997,
-						["healing"] = 25467,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-					["Lethal Strikes"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 17155,
-						["healing"] = 84840,
-						["overhealing"] = 9663,
-						["hits"] = 8,
-					},
 				},
 			},
 			["Dank-Zul'jin"] = {

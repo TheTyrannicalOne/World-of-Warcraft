@@ -1,6 +1,11 @@
 
 QuestTogether = {
 	["questTracker"] = {
+		[53370] = {
+			["title"] = "Hour of Reckoning",
+			["objectives"] = {
+			},
+		},
 		[28732] = {
 			["title"] = "This Can Only Mean One Thing...",
 			["objectives"] = {
@@ -14,12 +19,6 @@ QuestTogether = {
 				"1/1 Heart of the Magnaron recovered", -- [2]
 			},
 		},
-		[38460] = {
-			["title"] = "Let's Make A Deal",
-			["objectives"] = {
-				"0/1 Daglop's Contract Signed", -- [1]
-			},
-		},
 		[29199] = {
 			["title"] = "Calling for Reinforcements",
 			["objectives"] = {
@@ -31,15 +30,11 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[42372] = {
-			["title"] = "Felblaze Ingress",
+		[54185] = {
+			["title"] = "Gnomeregan's New Guardians",
 			["objectives"] = {
-			},
-		},
-		[37507] = {
-			["title"] = "Boss Whalebelly's in Charge",
-			["objectives"] = {
-				"0/1 Speak with Boss Whalebelly", -- [1]
+				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[27203] = {
@@ -55,28 +50,36 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [3]
 			},
 		},
-		[33359] = {
-			["title"] = "Meet Us at Starfall Outpost",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[38381] = {
+			["title"] = "Archdruid of Lore",
 			["objectives"] = {
 			},
 		},
-		[37855] = {
-			["title"] = "The Last of the Last",
+		[43962] = {
+			["title"] = "Blades of Destiny",
 			["objectives"] = {
+				"0/1 Choose a second artifact to pursue", -- [1]
 			},
 		},
-		[35174] = {
-			["title"] = "Pale Moonlight",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/1 Gnaw Bloodseeker slain", -- [1]
-				"0/8 Pale Devourer slain", -- [2]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[24432] = {
@@ -86,10 +89,9 @@ QuestTogether = {
 				"0/1 Conch Shell", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[36495] = {
+			["title"] = "News from Talador",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[56491] = {
@@ -104,8 +106,13 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
+		[33359] = {
+			["title"] = "Meet Us at Starfall Outpost",
+			["objectives"] = {
+			},
+		},
+		[38142] = {
+			["title"] = "Archdruid of the Claw",
 			["objectives"] = {
 			},
 		},
@@ -115,19 +122,10 @@ QuestTogether = {
 				"0/15 Drudgeboat Salvage", -- [1]
 			},
 		},
-		[36495] = {
-			["title"] = "News from Talador",
+		[35633] = {
+			["title"] = "Scout Forensics",
 			["objectives"] = {
-			},
-		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/5 Rangari Pouches recovered", -- [1]
 			},
 		},
 		[36440] = {
@@ -136,17 +134,26 @@ QuestTogether = {
 				"0/10 Steamscar saberon slain", -- [1]
 			},
 		},
-		[35633] = {
-			["title"] = "Scout Forensics",
+		[35174] = {
+			["title"] = "Pale Moonlight",
 			["objectives"] = {
-				"0/5 Rangari Pouches recovered", -- [1]
+				"0/1 Gnaw Bloodseeker slain", -- [1]
+				"0/8 Pale Devourer slain", -- [2]
+			},
+		},
+		[42750] = {
+			["title"] = "Dreamcatcher",
+			["objectives"] = {
+				"1/1 Shriektalon Totem siphoned", -- [1]
+				"0/1 Fearfeather Totem siphoned", -- [2]
+				"1/1 Reaverbeak Totem siphoned", -- [3]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

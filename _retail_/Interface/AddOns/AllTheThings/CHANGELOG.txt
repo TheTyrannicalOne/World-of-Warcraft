@@ -1,188 +1,60 @@
-2.0.7 Release Notes
+2.0.8 Release Notes
 Contributions made by Crieve:
-* Parser adjustment, rank can now be linked to spellID objects.
-* Implemented some new tech that should also us to use a script in the parser at run time to evaluate things OnUpdate.
-* Merge pull request #510 from ImUnicke/att-alignment
-* Merge pull request #509 from ImUnicke/attwq-update
-* Merge pull request #520 from ImUnicke/att-specadjustments
-* Merge pull request #521 from ImUnicke/att-storylines
-* Merge pull request #516 from ImUnicke/att-unobtainableindexes
-* Merge pull request #512 from ImUnicke/att-trackingfix2
-* Merge pull request #513 from ImUnicke/att-incomplete-icon
-* Merge pull request #515 from ImUnicke/att-groupexpansion
-* Merge pull request #522 from ImUnicke/att-various
-* Merge pull request #523 from ImUnicke/att-various
-* Merge pull request #524 from ImUnicke/att-breadcrumbstesting
-* Merge pull request #530 from ImUnicke/att-warfronts
-* Merge pull request #527 from ImUnicke/att-itemachievementsaved
-* Merge pull request #536 from ImUnicke/att-DBupdate
-* Merge pull request #535 from ImUnicke/att-wqmod
-* Added an error message in the case that Git wasn't installed for the Build Tool.
-* Azerite Essences are now tracked Account Wide.
-* ...
 
 Contributions made by slumber:
-* added missing kua'fon quest
-* fixed azjol nerub coordinates (replaced singular coords with coord)
-* excluded demon hunters from the battle for broken shore quest
-* added cat carrier (black tabby) as a zone drop in hillsbrad foothills
-* fixed npc ID of arcane head in ToT
-* added coords to bastion of twilight
-* moved sand dune belt from barim to lockmaw in lost city of the tol'vir TW difficulty
-* marked rewards horde-only for nazmir quest "kel'vax's home"
-* added a tracking quest for throne of the tides
-* some tracking quests
-* forgot to mark some quests as breadcrumbs
-* fix for a couple random azerite essence ranks showing up for the wrong role in /attwq
-* added missing wod world drop neck
-* fixed a typoed sq in tirisfal glades
-* added a missing item to nalak's cache
-* added 2 tracking quests
-* marked rewards for "dead men tell no tales" as horde-only
-* fixed the description for aqir flayer
-* a tracking quest and alliance outpost fixes
-* more outpost fixes
-* added azerite essence tracking in the settings
-* for sanct
-* revert uldum changes for clarity
-* finally remembered to update honeyback harvester description
-* moved emissary quests to main header section rather than subheaders in uldum/vale
-* added some nyi/removed quests/items
-* fleshed out jenafur secret
-* hopefully fixed random zone drop issue in several bc dungeons
-* interacting with empty dish during the jenafur secret is optional
-* added some more confirmed IE cache drops
-* fixed mapID for two silverpine forest/ruins of gilneas quests
-* added a tracking quest
-* fixed fenryr's tooltip in halls of valor
+* marked trueshot lodge fp hunter-only
+* hopefully fixed emerald nightmare raid skip quest items
+* mechagnomes can't do any quests in northshire apparently
+* updated/fixed a couple of descriptions
+* fixed some incorrect mapIDs in ruins of gilneas
+* some formatting updates
+* updated spawnpoints for fenissa the assassin on bloodmyst isle
+* carb and i solved the tanaan jungle baleful spaulders mystery!  added description/separated tokens for clarity
 
 Contributions made by Dmitry Volodin:
-* removed duplicate quest from DH Order Hall - some hidden quest triggers
-* added missing map for DH quest fixes #499
-* added mining WQ in Drustvar
-* marked Duskfall Daggers party sync loot as obtainable as it was confirmed dropping
-* Pirate's Day is actually Pirates' Day!
-* some hidden quest triggers
-* added Schematic: Reaves Module: Repair Mode to BRH
-* added hidden quest trigger
-* added Frostfire breadcrumbs
-* added "Soften them Up" quest to Grim Batol added Finkle's Twinkle to Cataclysm quest rewards some hidden triggers
-* added Vinyl: Triumph of Gnomeregan to Box of Assorted Parts
-* added treasure Bag of Herbs in Nagrand (Draenor)
-* some hidden quest triggers and small internal clean up
-* hidden quest triggers for Alaina's Bonnet
-* some breadcrumb fixes in Pandaria/Cata
-* The Stonecore quests can be done in Heroic too
-* added/blocked some Therazane items
-* added missing coords/questgivers to quests in Desolace
-* clarified pick up criteria for some quests in Feralas
-* fixed questline in Thousand Needles for Alliance
-* added description for Tanaris quest that has the last part in Uldum
-* added "Finding the Source" as prerequisite to "Lost!" in Un'Goro Crater
-* moved The Stonecore quests and zone drops out of individual difficulties
-* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
-* added coords to heroic Deadmines, Throne of the Tides
-* some hidden quest triggers
-* added Steamscale Incinerator
-* removed some erroneous data for Three Sheets to the Wind achievement
-* some Stockades items drop from/around Deadmines
-* some garrison campaign fixes
-* added mining WQ in Tiragarde Sound
-* Molten Front quests: sorted alphabetically, marked "The Warden's Charge" as removed and added "A Lieutenant of Flame" and "Into the Fiery Depths" as such, quest trigger for stafe 2 druid tree, fixed prereqs for some dailies
-* "For Posterity" quest marked as obtainable fixes #506
-* added treasure in garrison reverted "For Posterity" with questID 13098 to being unobtainable, there are 2 other versions that are obtainable some Legion triggers
-* fix code formatting and parse
-* fixed Brewfest marking heirloom upgrades
-* fixed Hallow's End marking heirloom upgrades
-* code formatting
-* some hidden quest triggers
-* fix source quests for "Peaked Interest" in Molten Front
-* ignored some useless Zul'Aman drops, added note about Sealed Scroll Case, added hidden quest trigger
-* ignored more uncollectible items - added Whale Shark to the achievement with the same name so you know to kill it when you see it - Lady La-La's Medallion drops as early as "Oh, the Insanity!" quest
-* Resonant Kris drops from High Prophet Barim in TW
-* small correction for "The Shining Light" quest in Howling Fjord - added Smoldering Slagstone Ring to Scorched Satchel of Helpful Goods (fixes #529)
-* hopefully fixed another breadcrumb "Outpost Over Yonder..." in Howling Fjord
-* some legacy/NYI quests
-* fixed questgiver for "Into the Depths" quest
-* added Seasoned Badge to Savage Crate of Battlefield Goods (fixes #534)
-* fixed questline in Silverpine forest removed alt quest field from Forsaken Forward Command flight point because it causes errors, description is left in place
-* some hidden quest triggers for paladin order hall
-* added another version of "We Meet at Light's Hope"
+* added a note to Brewfest quests that are not available in EU
 * ignored more uncollectable items
-* added "Moments of Reflection" quest in Antorus, the Burning Throne
-* ignored another uncollectable item
-* reformatted item sets from level boosts, now you can see which spec to boost in a few more cases (but we still need more data which spec gives which items)
-* added some initial quests to paladin class hall
-
-Contributions made by ImUnicke:
-* fixed name of variable within function a() - moved the stack count check outside of the loop running the stack functions - simplified the logic check for adding the OnUpdate script trigger - modified WorldQuests:Clear() to Update the window but not also trigger a Rebuild() - unutilized variable 'retry' in WorldQuests:Rebuild() will now track whether the Rebuild should be re-tried instead of immediately returning for any missing API data (this completely eliminates the refresh stuttering/persistent lag when refreshing the /attwq window during an active faction invasion) - added a 'Clear World Quests' button to the /attwq list when it becomes populated (this is nice for when the settings of 'treat currencies as containers' is toggled off, since that will not remove currencies from /attwq otherwise, plus Clear() was never being used, so now it has a purpose)
-* added source quests for garrison stables quests (#508)
-* fixed alignment of collection ATT icons in data rows due to how alignment is handled by the Client for textures - spec icons are sorted properly in data rows
-* removed logic that prevented repeatable quests from being considered collectible when toggled to be treated as such
-* added a blue version of the 'X' icon to allow for a distinction between "not collected" things and "visible, non-collectible" things - modified repeatable quest entries to have a blue icon preview instead of the yellow icon (assuming a provider model is not shown instead)
-* modified logic for recursive expand/collapse so that it works based on any subgroup rather than only the first subgroup (this allows the world quest list to be recursively collapsed finally)
-* fixed unobtainable indexes when an old unobtainable value is referenced in the data
-* fixed obsolete unobtainable indexes in data
-* fixed obsolete unobtainable indexes in zhCN locale file
-* modified how spec information is retrieved for Things so that filtering logic is consolidated and performed efficiently - added logic to add spec information for Legion and BFA rings/necks so that personal loot drop chances are properly determined - modified calculations for legacy/personal loot drop chances
-* consolidated a lot of world quest/quest object logic to ensure that quests are loaded/populated consistently - added Storyline data retrieval into the World Quests window IF Quest tracking or Debug is enabled - added additional Continent MapIDs for the Storyline support
-* slight adjustment to position of the 'Track Repeatable Quests' since it does not rely on 'Show Incomplete Things' - fixed unobtainable logic since it changed the dynamic unobtainables settings menu - added consolidated function for obtaining a MapObject for the world quest Rebuild() function - quest names are now attempted to pull into initial questObjects if immediately available - cached C_Map.GetMapInfo() since it is used rather often - modified group visibility filtering to accurately show/hide groups based on 'Show Incomplete Things' showing incomplete things within completed groups - modified tooltip progress text to properly indicate whether the Thing is 'Collectible/Collected' vs. 'Trackable/Completed' - fixed potential GroupFinder logic variable reference - modified the world quest list to sort the groups of each top-level group by raid,quest,map,level and then by name (if existing) within each category
-* fixed world bosses showing as their world quest - fixed world quest sorting map groups
-* fixed 'Non-Collectible, Completed' Things from sticking around in a list when becoming Completed
-* modified Debug to properly ignore 'Show Incomplete Things' and 'Filter Things By Level' settings (i.e. show everything regardless of completion state and required level) - fixed provider for #48492 'Getting a Leg Up' (creature ID changes from picking up to completion of quest)
-* actually fixed Debug... - only set parent visibilty based on Incomplete tracking of a child if the parent is not already visible
-* text for 'Show Collected Things' was the same as 'Show Completed Groups'
-* fixed visibility toggling on Complete Groups which contain Incomplete Things while 'Show Incomplete Things' is enabled
-* added capability of marking Items as Saved based on an AchievementID which is useful for Items have a QuestID attached but also unlock an Account-Wide AchievementID which prevents them from being obtained on any other characters on the Account (Shipyard Blueprints from Tanaan Jungle for instance) - removed duplicated Equipment Blueprints from Tanaan Zone Drops - tagged Tanaan Jungle/HFC Equipment Blueprints with respective hidden AchievementIDs
-* re-added equipment blueprints to zone drops in Tanaan since they have a very slim chance to also drop from random rares
-* removed individual tagging of once-per-account Item drops via achievementID - added garrison shipyard equipment to the allied race section of manually flagging questIDs based on achievementID completion for the account
-* added metadata files for new darkshore and darkshore warfront content - removed duplicated information from non-metadata files - removed random unrelated achievements from various warfront headers - added mapIDs for darkshore warfront (not up currently so can't really test, but based on discord map reports/github issues for the scenario)
-* show a bit more character info in the character tooltip in the Debug main list - wrap tooltips which show more than 4 race requirements
-* modified /attwq so that things which are available but not time-limited are able to be queried separately (i.e. Heroic Deeds & Available Map Quests currently)
-* moved heroic deeds logic out of the per-mapID loop since it snuck in while i wasn't looking
-* removed Horde/Alliance text from Faction ID tooltip line
-* Legion: Balance of Power Updates (#539)
-
-Contributions made by Oxlotus:
-* The quest, "A Lingering Suspicion" in Netherstorm, now shows its preceding quests when right clicked and is no longer shown as being in Un'Goro Crater.
-* "The Troll Incursion" and "The Zandalari Menace" are now marked as unavailable.
-* Added the LFR version of the Deeproot Treads to Nalak's Stormtouched Cache.
-* Added a comment to the Sparkmail Sabatons in the Cataclysm dungeon satchel, as it was confirmed on 8/20/2020 that it drops.
-* Seafaring Necessities, Dead Men Tell No Tales, and Captain Hartford in Vol'dun are no longer flagged as Horde only.
-* Due to a repository divergence, the Categories file didn't push with the recent quest changes in Vol'dun. This should fix that.
-* WANTED: Sandscout Vesarik is no longer flagged as Horde only.
-* Added the engineering quest, 'Iteration is Key', to Mechagon.
-* Added 'Cementing Our Victory' as a prereq to 'Saurfang Will be Pleased' in Twilight Highlands.
-* Corrected the coordinates to pickup 'Adventurers Wanted: Blackrock Depths' for Alliance players.
-* Added Flotsam's kill tracker and bonus roll quests. Added Hexos's kill tracker quest.
-* Added 3 hidden tracking quests for Pippers' Buried Supplies treasures in the Alliance level 1 Garrison.
-* Added the kill tracker quest for the Windfang Matriarch in Shadowmoon Valley - Draenor.
-* Added another hidden quest trigger from Shadowmoon Valley (Draenor), but didn't catch what triggered it.
+* small fixes to shaman class trial sets
+* fixed coord for Keiran Donoghue Brewfest vendor
+* formatting
 
 Contributions made by Gold:
-* sorted weekly holidays
-* relic fix
-* marked inelava as never:added
-* uldum rares now ultilize crs. all the rares still show that they drop the items, but now they count as +2 per item instead of +17
+* couple items blacklisted
+* update/fix regarding nice hat quest
+* future investigation needed
+* added 2nd legacy source for the 2007 ram. if you are lucky, one of your chars might have completed it and you never knew! if u did, you can get the ram
 
 Contributions made by Gaulish:
-* Advanced herbalism tagged removed from game
-* "Enable" changed to "Toggle" in the unobtainable settings
+* FP DB update.
+* FP DB round 2
+* Forgot one.
+* And another
+* pink elekks tagged yearly
+* Pink elekks description.
+* Mistdancer Pauldrons collectible.
 
-Contributions made by Alex:
-* Added a comment to the Venomtail Girdle in the Mists of Pandaria dungeon satchel, as it was confirmed on 8/23/2020 that it drops.
+Contributions made by Oxlotus:
+* Added the Vigorsteel Spaulders (Heroic only) to Darkmaster Gandling in Scholomance.
+* Implemented the entire Heritage of Gnomeregan quest chain.
+* Hid the full Heritage of Gnomeregan gearset. This allows the TRUE source to show on the tooltip.
+* Implemented the entire Heritage of Gilneas quest chain. Added the instance map for Gilneas City during the heritage quest chain. Unhid the Gnome heritage armor in Item Sets.
+* Corrected sourceQuests requirements to get the 'Clingy' quest in Deepholm.
+* Okay, now the prerequisites for Clingy are fixed.
+* Added another source quest to The Traitor's Shadow in Ghostlands.
+* Added an addition prerequisite to Lower the Boom in Tirisfal Glades.
+* Changed the provider for 'Avast Ye, Scallywag', as it's offered by "Good-Boy" Bruce as long as the player doesn't have 'Avast Ye, Admiral' in their quest log or completed.
+* Initial setup for Death Knight class hall and artifacts.
+* Added frost death knight artifact scenario maps to ICC.
+* Added additional quests from the Death Knight campaign.
+* More Death Knight class campaign setup.
+* More Death Knight class campaign quest chain...
+* More Death Knight class campaign quest setup.
+* More death knight class campaign implementations.
+* More death knight class campaign updates.
+* More death knight class campaign setup.
+* Implemented the rest of the death knight class campaign prior to patch 7.2.
 
-Contributions made by Pr3vention:
-* Reverted "Boxing Match" achievement ID change
-* Added a missing sourceQuest for loremaster criteria "Clearing a Path" in Stonetalon Mountains for the Alliance
-* Updated a few minor details in the mage order hall for Akazamzarak
-* Fixed the empowered artifact quests in Dalaran from Legion for mages
-* Confirmed a few breadcrumbs as still available ingame on the broken isle
-* Added triggering event during an Azsuna invasion
-* Added another missing tracker for azsuna invasion
-* Removed a pet journal check that causes an infinite loop during startup
-* Added missing alliance breadcrumb "The Warfront Looms"
-
-Contributions made by Jens:
-* More quests for issue #398 (#502)
+Contributions made by Peter Morgan:
+* Added missing coordinates for Treasures of Stormsong achievement
+* Added description to Legion Pre-Patch quest "Calling of the Council"
 

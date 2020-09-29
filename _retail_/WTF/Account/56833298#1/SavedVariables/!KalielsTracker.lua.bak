@@ -46,7 +46,7 @@ KalielsTrackerDB = {
 		["Bathal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
-		["Sinh - Dalaran"] = {
+		["Shathiel - Darkspear"] = {
 			["collapsed"] = true,
 		},
 		["Thorinbane - Dalaran"] = {
@@ -58,22 +58,22 @@ KalielsTrackerDB = {
 		["Tinkster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shathiel - Darkspear"] = {
-			["collapsed"] = true,
-		},
 		["Shaekhan - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Malivant - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Avisar - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Sinh - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Tynkster - Dalaran"] = {

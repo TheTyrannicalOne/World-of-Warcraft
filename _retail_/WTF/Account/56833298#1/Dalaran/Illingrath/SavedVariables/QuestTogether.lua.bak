@@ -1,88 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
-		[44720] = {
-			["title"] = "A Call to Action",
+		[53074] = {
+			["title"] = "Reinforcements",
 			["objectives"] = {
-			},
-		},
-		[54978] = {
-			["title"] = "Against Overwhelming Odds",
-			["objectives"] = {
-				"0/25 Slay Horde Players", -- [1]
-			},
-		},
-		[44400] = {
-			["title"] = "Assault on Violet Hold: Purple Pain",
-			["objectives"] = {
-				"0/1 Repel the Invasion of Violet Hold", -- [1]
-			},
-		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
-			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
-			},
-		},
-		[48475] = {
-			["title"] = "Seeing Spirits",
-			["objectives"] = {
-				"10/10 Gravebloom collected", -- [1]
-				"1/1 Salve created and applied", -- [2]
-				"0/1 Aaron Cresterly freed", -- [3]
-			},
-		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
-		[48942] = {
-			["title"] = "Yeti to Rumble",
-			["objectives"] = {
-				"0/8 Chillfur Yeti slain", -- [1]
-			},
-		},
-		[48943] = {
-			["title"] = "Salvage Rights",
-			["objectives"] = {
-				"0/1 Wrapped Supplies", -- [1]
-				"0/1 Cask of Salted Fish", -- [2]
-				"0/1 Hardened Lockbox", -- [3]
-				"0/1 Bucket of Grain", -- [4]
-			},
-		},
-		[56043] = {
-			["title"] = "Send the Fleet",
-			["objectives"] = {
-				"0/1 Speak to Harbormaster Cyrus Crestfall to set sail", -- [1]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
-		[52194] = {
-			["title"] = "What You May Regret",
-			["objectives"] = {
-				"0/1 Speak with Genn Greymane", -- [1]
+				"0/1 Troops ordered", -- [1]
 			},
 		},
 		[48540] = {
@@ -93,61 +21,15 @@ QuestTogether = {
 				"0/1 Seal Blubber", -- [3]
 			},
 		},
-		[53847] = {
-			["title"] = "On Whispered Winds",
+		[56043] = {
+			["title"] = "Send the Fleet",
 			["objectives"] = {
-			},
-		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
-			["objectives"] = {
-				"7/12 Pilgrimage Scroll", -- [1]
-			},
-		},
-		[42802] = {
-			["title"] = "Securing Mardum",
-			["objectives"] = {
-				"\"Securing Mardum\" mission completed", -- [1]
-			},
-		},
-		[48642] = {
-			["title"] = "Argussian Reach",
-			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
-			},
-		},
-		[51715] = {
-			["title"] = "War of Shadows",
-			["objectives"] = {
-				"\"The Shadow War\" mission completed", -- [1]
-			},
-		},
-		[41762] = {
-			["title"] = "Sympathizers Among the Shal'dorei",
-			["objectives"] = {
-				"0/1 Silgryn met", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[50599] = {
-			["title"] = "Proudmoore Admiralty",
-			["objectives"] = {
-				"1/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+				"0/1 Speak to Harbormaster Cyrus Crestfall to set sail", -- [1]
 			},
 		},
 		[38913] = {
 			["title"] = "The Skyhorn Tribe",
 			["objectives"] = {
-			},
-		},
-		[51283] = {
-			["title"] = "Voyage to the West",
-			["objectives"] = {
-				"0/1 Speak with Jes-Tereth to sail to Vol'dun", -- [1]
 			},
 		},
 		[47485] = {
@@ -156,11 +38,58 @@ QuestTogether = {
 				"0/1 Take the Ferry to Eastpoint Station", -- [1]
 			},
 		},
-		[49036] = {
-			["title"] = "Best In Show",
+		[44400] = {
+			["title"] = "Assault on Violet Hold: Purple Pain",
 			["objectives"] = {
-				"1/1 Mount Cooper", -- [1]
-				"0/1 Score 300 Points", -- [2]
+				"0/1 Repel the Invasion of Violet Hold", -- [1]
+			},
+		},
+		[53476] = {
+			["title"] = "The Great Sea Scrolls",
+			["objectives"] = {
+				"7/12 Pilgrimage Scroll", -- [1]
+			},
+		},
+		[48942] = {
+			["title"] = "Yeti to Rumble",
+			["objectives"] = {
+				"0/8 Chillfur Yeti slain", -- [1]
+			},
+		},
+		[41762] = {
+			["title"] = "Sympathizers Among the Shal'dorei",
+			["objectives"] = {
+				"0/1 Silgryn met", -- [1]
+			},
+		},
+		[53988] = {
+			["title"] = "Shores of Fate",
+			["objectives"] = {
+				"0/1 Travel to Zoram Strand", -- [1]
+			},
+		},
+		[53110] = {
+			["title"] = "The High Thornspeaker",
+			["objectives"] = {
+				"0/1 Meet Arthur Tradewind", -- [1]
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
+		[48641] = {
+			["title"] = "Armies of Legionfall",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[39134] = {
@@ -179,6 +108,99 @@ QuestTogether = {
 				"\"Working With the Wardens: Mal'Dreth the Corruptor\" completed", -- [5]
 			},
 		},
+		[42802] = {
+			["title"] = "Securing Mardum",
+			["objectives"] = {
+				"\"Securing Mardum\" mission completed", -- [1]
+			},
+		},
+		[53583] = {
+			["title"] = "Adapting Our Tactics",
+			["objectives"] = {
+				"0/1 Choose an upgrade to pursue", -- [1]
+			},
+		},
+		[57743] = {
+			["title"] = "Conquest's Reward",
+			["objectives"] = {
+				"0/500 Earn Conquest", -- [1]
+			},
+		},
+		[38912] = {
+			["title"] = "The Bloodtotem Tribe",
+			["objectives"] = {
+			},
+		},
+		[56119] = {
+			["title"] = "The Waveblade Ankoan",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
+			},
+		},
+		[44720] = {
+			["title"] = "A Call to Action",
+			["objectives"] = {
+			},
+		},
+		[48943] = {
+			["title"] = "Salvage Rights",
+			["objectives"] = {
+				"0/1 Wrapped Supplies", -- [1]
+				"0/1 Cask of Salted Fish", -- [2]
+				"0/1 Hardened Lockbox", -- [3]
+				"0/1 Bucket of Grain", -- [4]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[50600] = {
+			["title"] = "Order of Embers",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Drustvar", -- [1]
+			},
+		},
+		[54978] = {
+			["title"] = "Against Overwhelming Odds",
+			["objectives"] = {
+				"0/25 Slay Horde Players", -- [1]
+			},
+		},
+		[48475] = {
+			["title"] = "Seeing Spirits",
+			["objectives"] = {
+				"10/10 Gravebloom collected", -- [1]
+				"1/1 Salve created and applied", -- [2]
+				"0/1 Aaron Cresterly freed", -- [3]
+			},
+		},
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
+			["objectives"] = {
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[50601] = {
+			["title"] = "Storm's Wake",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
+			},
+		},
+		[49036] = {
+			["title"] = "Best In Show",
+			["objectives"] = {
+				"1/1 Mount Cooper", -- [1]
+				"0/1 Score 300 Points", -- [2]
+			},
+		},
+		[52194] = {
+			["title"] = "What You May Regret",
+			["objectives"] = {
+				"0/1 Speak with Genn Greymane", -- [1]
+			},
+		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -189,28 +211,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[53583] = {
-			["title"] = "Adapting Our Tactics",
+		[51283] = {
+			["title"] = "Voyage to the West",
 			["objectives"] = {
-				"0/1 Choose an upgrade to pursue", -- [1]
-			},
-		},
-		[38912] = {
-			["title"] = "The Bloodtotem Tribe",
-			["objectives"] = {
-			},
-		},
-		[53110] = {
-			["title"] = "The High Thornspeaker",
-			["objectives"] = {
-				"0/1 Meet Arthur Tradewind", -- [1]
+				"0/1 Speak with Jes-Tereth to sail to Vol'dun", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

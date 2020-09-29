@@ -10,7 +10,7 @@ RareShareDB = {
 			["Duplicates"] = true,
 		},
 		["CChannel"] = {
-			["CName"] = "General - Vale of Eternal Blossoms",
+			["CName"] = "General - Shrine of Two Moons",
 			["CID"] = 2,
 		},
 		["OnDeath"] = false,
@@ -22,7 +22,7 @@ RareShareDB = {
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1600884670,
-		["ID"] = 152657,
+		["Time"] = 1601325849,
+		["ID"] = 151124,
 	},
 }

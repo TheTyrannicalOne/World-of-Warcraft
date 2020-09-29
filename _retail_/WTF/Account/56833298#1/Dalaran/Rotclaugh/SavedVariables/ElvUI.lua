@@ -11,1568 +11,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"russia is more dominant militarily then america ever will be", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1001, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832363,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"anal |cffffff00|Hachievement:10337:Player-3683-0C802CE8:1:12:27:15:0:0:0:0|h[Crashin' Thrashin' Flamer]|h|r", -- [1]
-			"Narudos-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Narudos-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1002, -- [11]
-			"Player-3683-0C802CE8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Narudos|r",
-			[51] = 1600832366,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"Selling Heroic N'Zoth GOLD ONLY! Sold by 12/12M raiders!  Come get your AOTC and Uncorrupted Voidwing Mount! Message me if interested! |cffffff00|Hachievement:14069:Player-3683-0BF7C54C:1:4:24:20:4294967295:4294967295:4294967295:4294967295|h[Cutting Edge: N'Zoth the Corruptor]|h|r", -- [1]
-			"Rorztokens-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Rorztokens-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1003, -- [11]
-			"Player-3683-0BF7C54C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8686ecRorztokens|r",
-			[51] = 1600832368,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"dems just cant accept they lost lmao", -- [1]
-			"Satanshell-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Satanshell-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1004, -- [11]
-			"Player-3683-0C1648D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Satanshell|r",
-			[51] = 1600832375,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"WTS Horrific Vision 5 Masks for GOLD|| also selling THE HIVEMIND MOUNT. pst", -- [1]
-			"Alashlor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Alashlor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1005, -- [11]
-			"Player-3683-09DB8F3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Alashlor|r",
-			[51] = 1600832375,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"Russia formerly known as the USSR fell in the 1990s. PUTIN is not done fighting. He only wants to see us fail. He doesnt need all those nukes he has pointed at us", -- [1]
-			"Dianasou-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dianasou-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1006, -- [11]
-			"Player-3683-0BF64CA0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Dianasou|r",
-			[51] = 1600832377,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"anal|cffffff00|Hachievement:1165:Player-3683-0BC79A18:0:0:0:-1:0:0:0:0|h[My Sack is \"Gigantique\"]|h|r", -- [1]
-			"Naethoris-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Naethoris-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1007, -- [11]
-			"Player-3683-0BC79A18", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Naethoris|r",
-			[51] = 1600832381,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"yep the Russians made me do it ", -- [1]
-			"Ihaveursix-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ihaveursix-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1008, -- [11]
-			"Player-3683-0A5A8C51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Ihaveursix|r",
-			[51] = 1600832384,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"hahahahahahhahhaaaa", -- [1]
-			"Ihaveursix-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ihaveursix-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1009, -- [11]
-			"Player-3683-0A5A8C51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Ihaveursix|r",
-			[51] = 1600832390,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"Russia is so broke just like China all comunist countries are done", -- [1]
-			"Bleedmor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bleedmor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1011, -- [11]
-			"Player-3683-0C57F8C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Bleedmor|r",
-			[51] = 1600832403,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"Bleedmor has hemorrhoids", -- [1]
-			"Pathelayn-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Pathelayn-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1012, -- [11]
-			"Player-3683-07D25405", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefePathelayn|r",
-			[51] = 1600832407,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"nah, putin shit his pants when he saw the Mega Bomb get dropped", -- [1]
-			"Scunk-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Scunk-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1013, -- [11]
-			"Player-3683-07D324CF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Scunk|r",
-			[51] = 1600832407,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"america has a big sad scared military, all they do is spend money, when it comes to a fight the russians arent afraid to shoot", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1014, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832410,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"dude russias army is from like ww2 we dont give a fuck", -- [1]
-			"Satanshell-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Satanshell-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1015, -- [11]
-			"Player-3683-0C1648D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Satanshell|r",
-			[51] = 1600832412,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"RIGHTY", -- [1]
-			"Bleedmor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bleedmor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1016, -- [11]
-			"Player-3683-0C57F8C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Bleedmor|r",
-			[51] = 1600832420,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"na the russians didnt make you suck that cops dick you did it out of the kindness of youre heart", -- [1]
-			"Lucifermage-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lucifermage-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1017, -- [11]
-			"Player-3683-0B84C54F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Lucifermage|r",
-			[51] = 1600832423,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"WTS AOTC -- READY NOW! -- GET YOUR MOUNT/ACHIEVE Completely afkable! summons available! GOLD ONLY!", -- [1]
-			"Salepiggy-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Salepiggy-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1018, -- [11]
-			"Player-3683-0C39EF00", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Salepiggy|r",
-			[51] = 1600832426,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"lol at thinking Russia is a communist country. Doub as a box of rocks", -- [1]
-			"Cloudgate-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cloudgate-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1019, -- [11]
-			"Player-3683-0C861042", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Cloudgate|r",
-			[51] = 1600832430,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"russia is democratic", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1020, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832442,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"go fuck yourself Lucifer", -- [1]
-			"Ihaveursix-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ihaveursix-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1021, -- [11]
-			"Player-3683-0A5A8C51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Ihaveursix|r",
-			[51] = 1600832445,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"Russians have to buy the gas for there equiptment", -- [1]
-			"Bleedmor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bleedmor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1022, -- [11]
-			"Player-3683-0C57F8C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Bleedmor|r",
-			[51] = 1600832447,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"controlled by a dictator", -- [1]
-			"Scunk-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Scunk-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1023, -- [11]
-			"Player-3683-07D324CF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Scunk|r",
-			[51] = 1600832449,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"we elect lord putin ", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1024, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832449,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"yo", -- [1]
-			"Darkchemical-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Darkchemical-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1026, -- [11]
-			"Player-3683-08E1A6A0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8686ecDarkchemical|r",
-			[51] = 1600832461,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"putin just kills whoever runs against him", -- [1]
-			"Satanshell-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Satanshell-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1027, -- [11]
-			"Player-3683-0C1648D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Satanshell|r",
-			[51] = 1600832461,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"Selling |cff66bbff|Hjournal:1:2375:14|h[N'Zoth the Corruptor]|h|r Heroic Last Boss Only , Going right Now Pst For  More info , Summ rdy > GOLD ONLY < Done +700 run , 12/12 Mythic Team", -- [1]
-			"Bufoo-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bufoo-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1029, -- [11]
-			"Player-3683-0B33D4A2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Bufoo|r",
-			[51] = 1600832471,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"Russian have mroe gas than everyone", -- [1]
-			"Tashkasongs-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tashkasongs-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1030, -- [11]
-			"Player-3683-0BF3B054", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeTashkasongs|r",
-			[51] = 1600832475,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"he tansfers power back forth between president and PM every 8 years to assume power", -- [1]
-			"Scunk-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Scunk-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1031, -- [11]
-			"Player-3683-07D324CF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Scunk|r",
-			[51] = 1600832481,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"A pilot is not going to risk hurting his plane it comes out of his check", -- [1]
-			"Bleedmor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bleedmor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1032, -- [11]
-			"Player-3683-0C57F8C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Bleedmor|r",
-			[51] = 1600832481,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"Selling Heroic N'Zoth GOLD ONLY! Sold by 12/12M raiders!  Come get your AOTC and Uncorrupted Voidwing Mount! Message me if interested! |cffffff00|Hachievement:14069:Player-3683-0BF7C54C:1:4:24:20:4294967295:4294967295:4294967295:4294967295|h[Cutting Edge: N'Zoth the Corruptor]|h|r", -- [1]
-			"Rorztokens-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Rorztokens-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1033, -- [11]
-			"Player-3683-0BF7C54C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8686ecRorztokens|r",
-			[51] = 1600832484,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"Lets talk about our military. Guess who bad mouths all of the most famous current generals... hmm mister orange does. Now our troops are patriotic folk, so when mister orange says that KIA's are \"Losers\" and \"Suckers\"", -- [1]
-			"Dianasou-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dianasou-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1034, -- [11]
-			"Player-3683-0BF64CA0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Dianasou|r",
-			[51] = 1600832487,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
-		{
-			"russians have more gas,guns and guts then america", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1035, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832491,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
-		{
-			"putin was supposed to be up again in 2024 then he delayed it another so many years", -- [1]
-			"Uthalars-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Uthalars-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1036, -- [11]
-			"Player-3683-0BCF273C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cUthalars|r",
-			[51] = 1600832496,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"who said he said that diane?", -- [1]
-			"Scunk-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Scunk-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1037, -- [11]
-			"Player-3683-07D324CF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Scunk|r",
-			[51] = 1600832502,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"WTS Mythic+11-20keys Carry-Get weekly chest 465-475ilvl and 100% Corruption gear,also do Heroic Ny'alotha (12/12) Full clear, Vision 5 mask. Jaina and Mechagon 8/8 HM for mount[Aerial Unit R-21/X],PST", -- [1]
-			"Anaiyarix-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Anaiyarix-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1038, -- [11]
-			"Player-3683-0C9BBD80", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeAnaiyarix|r",
-			[51] = 1600832504,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"that was proven false", -- [1]
-			"Satanshell-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Satanshell-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1040, -- [11]
-			"Player-3683-0C1648D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Satanshell|r",
-			[51] = 1600832509,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"give me a name", -- [1]
-			"Scunk-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Scunk-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1041, -- [11]
-			"Player-3683-07D324CF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Scunk|r",
-			[51] = 1600832514,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"idiot", -- [1]
-			"Satanshell-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Satanshell-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1042, -- [11]
-			"Player-3683-0C1648D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Satanshell|r",
-			[51] = 1600832522,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"WTS Heroic N'zoth kills for AOTC + MOUNT|| 5 Masks Visions Get your +15 Mythic Keys done for the weekly chest. We also offer THE HIVEMIND MOUNT pst for more info hurry up before they are gone!", -- [1]
-			"Ataros-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ataros-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1043, -- [11]
-			"Player-3683-096033C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Ataros|r",
-			[51] = 1600832522,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"he did, he tweeted it", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1044, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832524,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"oh cause im not a cop you dont wana fuck me i get it ", -- [1]
-			"Lucifermage-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lucifermage-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1045, -- [11]
-			"Player-3683-0B84C54F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Lucifermage|r",
-			[51] = 1600832524,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"What a joke, they are inbreed, corn feed, meat heads", -- [1]
-			"Bleedmor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bleedmor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1046, -- [11]
-			"Player-3683-0C57F8C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Bleedmor|r",
-			[51] = 1600832527,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"Sounds like Trump 2020 to me, four more years", -- [1]
-			"Valdenroth-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Valdenroth-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1051, -- [11]
-			"Player-3683-0C64560F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Valdenroth|r",
-			[51] = 1600832556,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
-		{
-			"russia doesnt need to meddle in our elections, you fools do enough damage yourselves, we just do it for fun", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1052, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832557,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
-		{
-			"dems are just jealous of people with money", -- [1]
-			"Satanshell-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Satanshell-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1053, -- [11]
-			"Player-3683-0C1648D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Satanshell|r",
-			[51] = 1600832566,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
-		{
-			"bruh did you guys read the new raider.io website permissions?", -- [1]
-			"Warsrus-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Warsrus-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1054, -- [11]
-			"Player-3683-0A7FBE52", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cWarsrus|r",
-			[51] = 1600832572,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
-		{
-			"Trump 2024 is what im seeing", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1055, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832573,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
-		{
-			"Brennan and his boys are still at work you bet on that", -- [1]
-			"Ihaveursix-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ihaveursix-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1056, -- [11]
-			"Player-3683-0A5A8C51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Ihaveursix|r",
-			[51] = 1600832575,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
-		{
-			"wts|cffa335ee|Hitem:23543::::::::120:577::::::|h[Felsteel Reaper]|h|runpopular nice tmog only 50k! pst", -- [1]
-			"Naethoris-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Naethoris-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1059, -- [11]
-			"Player-3683-0BC79A18", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Naethoris|r",
-			[51] = 1600832595,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
-		{
-			"now i get why thats youre name you got all the cops six love that cop ass i see you boiii", -- [1]
-			"Lucifermage-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lucifermage-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1060, -- [11]
-			"Player-3683-0B84C54F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Lucifermage|r",
-			[51] = 1600832612,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
-		{
-			"who believes in privacy nowadays", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1061, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832612,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
-		{
-			"WTS Horrific Vision 5 Masks for GOLD|| also selling THE HIVEMIND MOUNT. pst", -- [1]
-			"Alashlor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Alashlor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1062, -- [11]
-			"Player-3683-09DB8F3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Alashlor|r",
-			[51] = 1600832615,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
-		{
-			"Selling |cff66bbff|Hjournal:1:2375:14|h[N'Zoth the Corruptor]|h|r Heroic Last Boss Only , Going right Now Pst For  More info , Summ rdy > GOLD ONLY < Done +700 run , 12/12 Mythic Team", -- [1]
-			"Bufoo-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bufoo-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1063, -- [11]
-			"Player-3683-0B33D4A2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Bufoo|r",
-			[51] = 1600832620,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
-		{
-			"theyre basically using your computer as an extra server", -- [1]
-			"Warsrus-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Warsrus-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1064, -- [11]
-			"Player-3683-0A7FBE52", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cWarsrus|r",
-			[51] = 1600832624,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
-		{
-			"God Emporer Trump. Future ruler of planet America.", -- [1]
-			"Freefall-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Freefall-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1065, -- [11]
-			"Player-3683-0B9E9960", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcFreefall|r",
-			[51] = 1600832629,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
-		{
-			"Look you all hate T-Rump, SORRY, he is the man, and russian china libya iran iraq isreal every one is trying to make a deal with T-Rump, you might say he is the , Shot caller", -- [1]
-			"Bleedmor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bleedmor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1066, -- [11]
-			"Player-3683-0C57F8C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Bleedmor|r",
-			[51] = 1600832632,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
-		{
-			"WTS:Mythic Ny'alotha1-10/Heroic Ny'alotha12/12;  Mythic+11-20keys Carry;Get weekly chest 465-475ilvl and 100% Corruption gear;Also do Jaina and Mechagon 8/8 get mount |cffa335ee|Hitem:168830::::::::1:256::::::|h[Aerial Unit R-21/X]|h|r; Pst !", -- [1]
-			"Anaiyarix-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Anaiyarix-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1067, -- [11]
-			"Player-3683-0C9BBD80", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeAnaiyarix|r",
-			[51] = 1600832633,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
-		{
-			"WTS M15 timed and untimed cheap price with Armor/Loot STACK NO EXTRA COST.  GOLD ONLY. <3", -- [1]
-			"Coolguysl-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Coolguysl-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1068, -- [11]
-			"Player-3683-0C631DCB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Coolguysl|r",
-			[51] = 1600832637,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
-		{
-			"If Trump wins this year, he can no longer run for President by law", -- [1]
-			"Heyyouturkey-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Heyyouturkey-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1069, -- [11]
-			"Player-3683-0C086428", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8686ecHeyyouturkey|r",
-			[51] = 1600832642,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
-		{
-			"Make the Galaxy Great Again", -- [1]
-			"Terravolta-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Terravolta-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1071, -- [11]
-			"Player-3683-0AFAF65D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcTerravolta|r",
-			[51] = 1600832644,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
-		{
-			"yea... ha putin till 2036.. the second he leaves they kill him", -- [1]
-			"Uthalars-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Uthalars-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1072, -- [11]
-			"Player-3683-0BCF273C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cUthalars|r",
-			[51] = 1600832648,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
-		{
-			"his son can", -- [1]
-			"Satanshell-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Satanshell-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1074, -- [11]
-			"Player-3683-0C1648D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Satanshell|r",
-			[51] = 1600832651,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
-		{
-			"oh god not this again", -- [1]
-			"Warsrus-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Warsrus-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1075, -- [11]
-			"Player-3683-0A7FBE52", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cWarsrus|r",
-			[51] = 1600832657,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
-		{
-			"laws can be changed", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1076, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832663,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
-		{
-			"T-Rump Jr 2024", -- [1]
-			"Bleedmor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bleedmor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1077, -- [11]
-			"Player-3683-0C57F8C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Bleedmor|r",
-			[51] = 1600832666,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
-		{
-			"WTS Heroic N'zoth only kills! Kill includes Ahead of the Curve Achievement,|cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r mount and any loot via the personal loot system! Going soon!! GOLD ONLY", -- [1]
-			"Gochufour-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Gochufour-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1078, -- [11]
-			"Player-3683-0C67BB86", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeGochufour|r",
-			[51] = 1600832678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
-		{
-			"you sound like you about to catch a case soon huh ", -- [1]
-			"Ihaveursix-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ihaveursix-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1079, -- [11]
-			"Player-3683-0A5A8C51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Ihaveursix|r",
-			[51] = 1600832678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
-		{
-			"Trump patch incoming", -- [1]
-			"Archaen-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Archaen-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1080, -- [11]
-			"Player-3683-094E6474", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Archaen|r",
-			[51] = 1600832678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
-		{
-			"just declare martial law and allow a 3rd term or more, oh wait we already did declare martial law", -- [1]
-			"Geirodur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Geirodur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1083, -- [11]
-			"Player-3683-0C65BCEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Geirodur|r",
-			[51] = 1600832694,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
-		{
-			"Trump will rule the world for 1,000 years. ", -- [1]
-			"Freefall-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Freefall-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1084, -- [11]
-			"Player-3683-0B9E9960", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcFreefall|r",
-			[51] = 1600832694,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
-		{
-			"Igotursix loves little cop dicks in and around his bum ", -- [1]
-			"Lucifermage-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lucifermage-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1085, -- [11]
-			"Player-3683-0B84C54F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Lucifermage|r",
-			[51] = 1600832698,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
-		{
 			"Trump silence patch, liberal control", -- [1]
 			"Bleedmor-Dalaran", -- [2]
 			"", -- [3]
@@ -1593,7 +31,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Bleedmor|r",
 			[51] = 1600832704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [1]
 		{
 			"ah a brit", -- [1]
 			"Ihaveursix-Dalaran", -- [2]
@@ -1615,7 +53,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Ihaveursix|r",
 			[51] = 1600832712,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [2]
 		{
 			"the 2 terms or 10 years thing can be done away with. It was FDR that was behind why it was made.", -- [1]
 			"Terravolta-Dalaran", -- [2]
@@ -1637,7 +75,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTerravolta|r",
 			[51] = 1600832716,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [3]
 		{
 			"Selling Heroic N'Zoth + Uncorrupted Voidwing NOW! Done by |cffffff00|Hachievement:14071:Guild-104-0000029535BD:1:3:29:20:4294967295:4294967295:4294967295:4294967295|h[Hall of Fame: N'Zoth the Corruptor (Alliance)]|h|r players. Also selling Mythic Jaina", -- [1]
 			"Luppsales-Dalaran", -- [2]
@@ -1659,7 +97,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Luppsales|r",
 			[51] = 1600832727,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [4]
 		{
 			"nah Ihaveursix-Dalaran youre prob a repair tech", -- [1]
 			"Warsrus-Dalaran", -- [2]
@@ -1681,7 +119,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWarsrus|r",
 			[51] = 1600832729,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [5]
 		{
 			"Sorry Trump will shut you down before you shut us down", -- [1]
 			"Bleedmor-Dalaran", -- [2]
@@ -1703,7 +141,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Bleedmor|r",
 			[51] = 1600832732,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [6]
 		{
 			"one thing i dont like about trump.. i think he favors church with state", -- [1]
 			"Uthalars-Dalaran", -- [2]
@@ -1725,7 +163,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cUthalars|r",
 			[51] = 1600832734,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [7]
 		{
 			"anyone care to help kill  TUR'XORAN", -- [1]
 			"Eitherial-Madoran", -- [2]
@@ -1747,7 +185,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Eitherial-Madoran|r",
 			[51] = 1600834386,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [8]
 		{
 			"only if I can eat your soul like a cupcake", -- [1]
 			"Sítrónu-Dalaran", -- [2]
@@ -1769,7 +207,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Sítrónu|r",
 			[51] = 1600834401,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [9]
 		{
 			"it is here in shala' nir", -- [1]
 			"Eitherial-Madoran", -- [2]
@@ -1791,7 +229,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Eitherial-Madoran|r",
 			[51] = 1600834414,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [10]
 		{
 			"sorry my wife took my soul already", -- [1]
 			"Eitherial-Madoran", -- [2]
@@ -1813,7 +251,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Eitherial-Madoran|r",
 			[51] = 1600834423,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [11]
 		{
 			"damn i gave both to the devil long time ago", -- [1]
 			"Rhentu-Aggramar", -- [2]
@@ -1835,7 +273,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Rhentu-Aggramar|r",
 			[51] = 1600834475,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [12]
 		{
 			"sometimes miss the soul", -- [1]
 			"Rhentu-Aggramar", -- [2]
@@ -1857,7 +295,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Rhentu-Aggramar|r",
 			[51] = 1600834488,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [13]
 		{
 			"LF help with killing this big demon... he hurts me :(", -- [1]
 			"Eitherial-Madoran", -- [2]
@@ -1879,7 +317,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Eitherial-Madoran|r",
 			[51] = 1600834503,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [14]
 		{
 			"the infernal?", -- [1]
 			"Alexandrìne-Dalaran", -- [2]
@@ -1901,7 +339,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Alexandrìne|r",
 			[51] = 1600834526,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [15]
 		{
 			"i help by letting you gain more independance!", -- [1]
 			"Rhentu-Aggramar", -- [2]
@@ -1923,7 +361,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Rhentu-Aggramar|r",
 			[51] = 1600834569,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [16]
 		{
 			"no itsa demon", -- [1]
 			"Eitherial-Madoran", -- [2]
@@ -1945,7 +383,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Eitherial-Madoran|r",
 			[51] = 1600834626,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [17]
 		{
 			"get your redwings boys ", -- [1]
 			"Ihaveursix-Dalaran", -- [2]
@@ -1967,7 +405,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Ihaveursix|r",
 			[51] = 1600834659,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [18]
 		{
 			"We need to change that to once an hour", -- [1]
 			"Bigjøb-Dalaran", -- [2]
@@ -1989,7 +427,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBigjøb|r",
 			[51] = 1600834660,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [19]
 		{
 			"WTS Heroic N'zoth only kills! Kill includes Ahead of the Curve Achievement,|cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r mount and any loot via the personal loot system! Going soon!! GOLD ONLY", -- [1]
 			"Gochufour-Dalaran", -- [2]
@@ -2011,7 +449,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGochufour|r",
 			[51] = 1600834663,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [20]
 		{
 			"ewwww ah ah ah ah", -- [1]
 			"Warsrus-Dalaran", -- [2]
@@ -2033,7 +471,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWarsrus|r",
 			[51] = 1600834664,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [21]
 		{
 			"WTS AOTC -- READY NOW! -- GET YOUR MOUNT/ACHIEVE Completely afkable! summons available! GOLD ONLY!", -- [1]
 			"Salepiggy-Dalaran", -- [2]
@@ -2055,7 +493,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Salepiggy|r",
 			[51] = 1600834681,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [22]
 		{
 			"dude shes still sells bathwater too. thats been going on for awhile now", -- [1]
 			"Uthalars-Dalaran", -- [2]
@@ -2077,7 +515,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cUthalars|r",
 			[51] = 1600834681,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [23]
 		{
 			"put that on your colors ", -- [1]
 			"Ihaveursix-Dalaran", -- [2]
@@ -2099,7 +537,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Ihaveursix|r",
 			[51] = 1600834690,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [24]
 		{
 			"oh fack naw Ihaveursix-Dalaran ill hit it raw on her period but im not eatin that", -- [1]
 			"Warsrus-Dalaran", -- [2]
@@ -2121,7 +559,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWarsrus|r",
 			[51] = 1600834693,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [25]
 		{
 			"Nothing like a mouth full of pennies", -- [1]
 			"Slantrix-Dalaran", -- [2]
@@ -2143,7 +581,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSlantrix|r",
 			[51] = 1600834715,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [26]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-172192-3683-94366876|h[Guild: The Final Frontier]|h|r is recruiting casual friends, dungeoneers and raiders for Shadowlands! LGBT+ friendly, always happy to teach new players, building for midcore raiding. Tu/Th/Sa 8:30-11:30 server raid times. All welcome!", -- [1]
 			"Kindraele-Dalaran", -- [2]
@@ -2165,7 +603,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Kindraele|r",
 			[51] = 1600834720,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [27]
 		{
 			"Belle Delphine literally looks like a whole ass rat", -- [1]
 			"Bigjøb-Dalaran", -- [2]
@@ -2186,6 +624,1568 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cffc59a6cBigjøb|r",
 			[51] = 1600834730,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [28]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			13, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600959568,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [29]
+		{
+			"WTS M15 timed and untimed cheap price with Armor/Loot STACK NO EXTRA COST.  GOLD ONLY. <3", -- [1]
+			"Coolguysl-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Coolguysl-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			16, -- [11]
+			"Player-3683-0C631DCB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Coolguysl|r",
+			[51] = 1600959590,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [30]
+		{
+			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			17, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600959657,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [31]
+		{
+			"<SLB> WTS +10-24 keys in time with FREE ARMOR STACK!  Also selling M/H/AOTC Ny'alotha, KSM, PvP rating, FH boosting, Jaina Mount, Horrific Visions and more. GOLD ONLY, ANY SERVER! Pst for pricing!", -- [1]
+			"Alesells-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alesells-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			31, -- [11]
+			"Player-3683-0C77959F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Alesells|r",
+			[51] = 1600959678,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [32]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-2642-3683-48747732|h[Guild: Natural Affinity]|h|r NA is a friendly guild recruiting for SL M Raiding and M+ looking for good players for our raid team we are rebuilding our roster Raiding Tues and Thur 8-11 server pst with questions 10/12M Nyl", -- [1]
+			"Lyicon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lyicon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			32, -- [11]
+			"Player-3683-0B76DF38", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Lyicon|r",
+			[51] = 1600959736,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [33]
+		{
+			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			37, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600959755,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [34]
+		{
+			"<SLB> WTS +10-24 keys in time with FREE ARMOR STACK!  Also selling M/H/AOTC Ny'alotha, KSM, PvP rating, FH boosting, Jaina Mount, Horrific Visions and more. GOLD ONLY, ANY SERVER! Pst for pricing!", -- [1]
+			"Alesells-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alesells-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			42, -- [11]
+			"Player-3683-0C77959F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Alesells|r",
+			[51] = 1600959814,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [35]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			43, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600959848,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [36]
+		{
+			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			61, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600959967,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [37]
+		{
+			"<Tina's Sales Group> is looking for experienced boosters with multiple accounts starting >TODAY< at 3PM EST (3pm server). Make more than 1m per day. DM me for more information.", -- [1]
+			"Tinasales-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tinasales-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			193, -- [11]
+			"Player-3683-0C9E15F3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeTinasales|r",
+			[51] = 1600961015,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [38]
+		{
+			"<SLB> WTS +10-24 keys in time with FREE ARMOR STACK!  Also selling M/H/AOTC Ny'alotha, KSM, PvP rating, FH boosting, Jaina Mount, Horrific Visions and more. GOLD ONLY, ANY SERVER! Pst for pricing!", -- [1]
+			"Alesells-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alesells-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			194, -- [11]
+			"Player-3683-0C77959F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Alesells|r",
+			[51] = 1600961024,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [39]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			199, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600961065,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [40]
+		{
+			"<Everbloom> Scared of starting an expansion alone? Unsure of which covenant matches you? Just want some friends? This is the guild for you! We're brand new and getting ready for Shadowlands. Wanting to raid soon! Come chill! Repairs included!", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			200, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600961075,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-171315-3683-94832704|h[Guild: Everbloom]|h|r", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			201, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600961078,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [42]
+		{
+			"WTS Horrific Vision 5 Masks for GOLD|| also selling THE HIVEMIND MOUNT. pst", -- [1]
+			"Alashlor-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alashlor-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			202, -- [11]
+			"Player-3683-09DB8F3A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Alashlor|r",
+			[51] = 1600961102,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [43]
+		{
+			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			205, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600961183,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [44]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-2642-3683-48747732|h[Guild: Natural Affinity]|h|r NA is a friendly guild recruiting for SL M Raiding and M+ looking for good players for our raid team we are rebuilding our roster Raiding Tues and Thur 8-11 server pst with questions 10/12M Nyl", -- [1]
+			"Lyicon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lyicon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			207, -- [11]
+			"Player-3683-0B76DF38", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Lyicon|r",
+			[51] = 1600961192,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [45]
+		{
+			"<Everbloom> Scared of starting an expansion alone? Unsure of which covenant matches you? Just want some friends? This is the guild for you! We're brand new and getting ready for Shadowlands. Wanting to raid soon! Come chill! Repairs included!", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			209, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600961215,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [46]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-171315-3683-94832704|h[Guild: Everbloom]|h|r", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			210, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600961218,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [47]
+		{
+			"<Tina's Sales Group> is looking for experienced boosters with multiple accounts starting >TODAY< at 3PM EST (3pm server). Make more than 1m per day. DM me for more information.", -- [1]
+			"Tinasales-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tinasales-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			214, -- [11]
+			"Player-3683-0C9E15F3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeTinasales|r",
+			[51] = 1600961239,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [48]
+		{
+			"<SLB> WTS +10-24 keys in time with FREE ARMOR STACK!  Also selling M/H/AOTC Ny'alotha, KSM, PvP rating, FH boosting, Jaina Mount, Horrific Visions and more. GOLD ONLY, ANY SERVER! Pst for pricing!", -- [1]
+			"Alesells-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alesells-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			216, -- [11]
+			"Player-3683-0C77959F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Alesells|r",
+			[51] = 1600961242,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [49]
+		{
+			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			220, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600961307,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [50]
+		{
+			"<Everbloom> Scared of starting an expansion alone? Unsure of which covenant matches you? Just want some friends? This is the guild for you! We're brand new and getting ready for Shadowlands. Wanting to raid soon! Come chill! Repairs included!", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			222, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600961311,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [51]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-171315-3683-94832704|h[Guild: Everbloom]|h|r", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			229, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600961314,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [52]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-2642-3683-48747732|h[Guild: Natural Affinity]|h|r NA is a friendly guild recruiting for SL M Raiding and M+ looking for good players for our raid team we are rebuilding our roster Raiding Tues and Thur 8-11 server pst with questions 10/12M Nyl", -- [1]
+			"Lyicon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lyicon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			231, -- [11]
+			"Player-3683-0B76DF38", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Lyicon|r",
+			[51] = 1600961366,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [53]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			287, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600961389,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [54]
+		{
+			"3", -- [1]
+			"Lyicon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lyicon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			454, -- [11]
+			"Player-3683-0B76DF38", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Lyicon|r",
+			[51] = 1600962507,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [55]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-2642-3683-48747732|h[Guild: Natural Affinity]|h|r Magnisè-Dalaran", -- [1]
+			"Lyicon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lyicon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			455, -- [11]
+			"Player-3683-0B76DF38", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Lyicon|r",
+			[51] = 1600962513,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [56]
+		{
+			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			456, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600962534,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [57]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			585, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600962639,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [58]
+		{
+			"WTS  timed M+ 15 keys with FREE ARMOR STACKING!! CHEAPER for untimed. GOLD ONLY pst for info <3 ", -- [1]
+			"Radaleb-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Radaleb-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			589, -- [11]
+			"Player-3683-0C136B22", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeRadaleb|r",
+			[51] = 1600962644,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"<Tina's Sales Group> is looking for experienced boosters with multiple accounts starting >TODAY< at 3PM EST (3pm server). Make more than 1m per day. DM me for more information.", -- [1]
+			"Tinasales-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tinasales-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			611, -- [11]
+			"Player-3683-0C9E15F3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeTinasales|r",
+			[51] = 1600962688,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			618, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600962739,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [61]
+		{
+			"<SLB> WTS +10-24 keys in time with FREE ARMOR STACK!  Also selling M/H/AOTC Ny'alotha, KSM, PvP rating, FH boosting, Jaina Mount, Horrific Visions and more. GOLD ONLY, ANY SERVER! Pst for pricing!", -- [1]
+			"Alesells-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alesells-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			655, -- [11]
+			"Player-3683-0C77959F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Alesells|r",
+			[51] = 1600962822,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [62]
+		{
+			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			656, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600962823,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [63]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			660, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600962937,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [64]
+		{
+			"WTS Horrific Vision 5 Masks for GOLD|| also selling THE HIVEMIND MOUNT. pst", -- [1]
+			"Alashlor-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alashlor-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			661, -- [11]
+			"Player-3683-09DB8F3A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Alashlor|r",
+			[51] = 1600962952,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [65]
+		{
+			"WTS  timed M+ 15 keys with FREE ARMOR STACKING!! CHEAPER for untimed. GOLD ONLY pst for info <3 ", -- [1]
+			"Radaleb-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Radaleb-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			662, -- [11]
+			"Player-3683-0C136B22", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeRadaleb|r",
+			[51] = 1600962958,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [66]
+		{
+			"<Tina's Sales Group> is looking for experienced boosters with multiple accounts starting >TODAY< at 3PM EST (3pm server). Make more than 1m per day. DM me for more information.", -- [1]
+			"Tinasales-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tinasales-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			667, -- [11]
+			"Player-3683-0C9E15F3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeTinasales|r",
+			[51] = 1600962980,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			678, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600963015,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"<SLB> WTS +10-24 keys in time with FREE ARMOR STACK!  Also selling M/H/AOTC Ny'alotha, KSM, PvP rating, FH boosting, Jaina Mount, Horrific Visions and more. GOLD ONLY, ANY SERVER! Pst for pricing!", -- [1]
+			"Alesells-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alesells-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			682, -- [11]
+			"Player-3683-0C77959F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Alesells|r",
+			[51] = 1600963068,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-2642-3683-48747732|h[Guild: Natural Affinity]|h|r NA is a friendly guild recruiting for SL M Raiding and M+ looking for good players for our raid team we are rebuilding our roster Raiding Tues and Thur 8-11 server pst with questions 10/12M Nyl", -- [1]
+			"Lyicon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lyicon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			685, -- [11]
+			"Player-3683-0B76DF38", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Lyicon|r",
+			[51] = 1600963090,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"WTS  timed M+ 15 keys with FREE ARMOR STACKING!! CHEAPER for untimed. GOLD ONLY pst for info <3 ", -- [1]
+			"Radaleb-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Radaleb-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			687, -- [11]
+			"Player-3683-0C136B22", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeRadaleb|r",
+			[51] = 1600963113,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			690, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600963142,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			696, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600963216,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"<Tina's Sales Group> is looking for experienced boosters with multiple accounts starting >TODAY< at 3PM EST (3pm server). Make more than 1m per day. DM me for more information.", -- [1]
+			"Tinasales-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tinasales-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			698, -- [11]
+			"Player-3683-0C9E15F3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeTinasales|r",
+			[51] = 1600963230,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"<SLB> WTS +10-24 keys in time with FREE ARMOR STACK!  Also selling M/H/AOTC Ny'alotha, KSM, PvP rating, FH boosting, Jaina Mount, Horrific Visions and more. GOLD ONLY, ANY SERVER! Pst for pricing!", -- [1]
+			"Alesells-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alesells-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			701, -- [11]
+			"Player-3683-0C77959F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Alesells|r",
+			[51] = 1600963269,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"Champion Sen-mat 100.00% ~(75.79, 51.01)", -- [1]
+			"Kaedan-Ysera", -- [2]
+			"", -- [3]
+			"1. General - Uldum", -- [4]
+			"Kaedan-Ysera", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Uldum", -- [9]
+			0, -- [10]
+			707, -- [11]
+			"Player-63-08E30D4F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Kaedan-Ysera|r",
+			[51] = 1600963363,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"I don't believe the cloak stuff is going away. Just the corruption resistance and corruption aspect of it. ", -- [1]
+			"Tinktinkk-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tinktinkk-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			763, -- [11]
+			"Player-3683-0C285475", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Tinktinkk|r",
+			[51] = 1600964159,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"well im guessing the cloak powers will nullify too", -- [1]
+			"Ånghellic-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ånghellic-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			764, -- [11]
+			"Player-3683-0C1B779F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Ånghellic|r",
+			[51] = 1600964162,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"oh. ok", -- [1]
+			"Ånghellic-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ånghellic-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			765, -- [11]
+			"Player-3683-0C1B779F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Ånghellic|r",
+			[51] = 1600964168,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"rumor is 1 week after the pvp season ends", -- [1]
+			"Earlywind-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Earlywind-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			766, -- [11]
+			"Player-3683-0BE74627", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeEarlywind|r",
+			[51] = 1600964171,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"<Everbloom> Scared of starting an expansion alone? Unsure of which covenant matches you? Just want some friends? This is the guild for you! We're brand new and getting ready for Shadowlands. Wanting raiders and officers!", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			767, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600964184,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-171315-3683-94832704|h[Guild: Everbloom]|h|r", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			768, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600964193,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"WTS  timed M+ 15 keys with FREE ARMOR STACKING!! CHEAPER for untimed. GOLD ONLY pst for info <3 ", -- [1]
+			"Radaleb-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Radaleb-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			769, -- [11]
+			"Player-3683-0C136B22", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeRadaleb|r",
+			[51] = 1600964206,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			770, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600964234,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"Starlight Boosting RESET DEALS!!!! Wts 12/12 Heroic/Mythic Nyalotha With FUNNELS!!!! Keystome master achievement// M+15 Timed/Untimed. Any rare mounts and pvp boosts. GOLD ONLY Pm for more. DON'T DELAY BUY TODAY", -- [1]
+			"Starlightmax-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Starlightmax-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			771, -- [11]
+			"Player-3683-0C7722E8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeStarlightmax|r",
+			[51] = 1600964287,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"[WТS] WТS Mythic +15/+16/+17/+18/+19/+20 key CARRY. Runs starting every hour, +2 FREE loot traders! You will get ilvl 460-475+ Gear & RIO Score. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			772, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600964318,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"<Everbloom> Scared of starting an expansion alone? Unsure of which covenant matches you? Just want some friends? This is the guild for you! We're brand new and getting ready for Shadowlands. Wanting raiders and officers!", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			786, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600964360,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-171315-3683-94832704|h[Guild: Everbloom]|h|r", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			787, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600964363,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"<SLB> WTS +10-24 keys in time with FREE ARMOR STACK!  Also selling M/H/AOTC Ny'alotha, KSM, PvP rating, FH boosting, Jaina Mount, Horrific Visions and more. GOLD ONLY, ANY SERVER! Pst for pricing!", -- [1]
+			"Alesells-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Alesells-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			788, -- [11]
+			"Player-3683-0C77959F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Alesells|r",
+			[51] = 1600964431,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"[WТS] Horrific Visions +5 masks Boost, freehold 110-120 express powerleveling, ilvl 460-470 gearing, Allied races, Mounts & other 8.3 BOOSTS! We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			789, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600964449,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"Starlight Boosting RESET DEALS!!!! Wts 12/12 Heroic/Mythic Nyalotha With FUNNELS!!!! Keystome master achievement// M+15 Timed/Untimed. Any rare mounts and pvp boosts. GOLD ONLY Pm for more. DON'T DELAY BUY TODAY", -- [1]
+			"Starlightmax-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Starlightmax-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			790, -- [11]
+			"Player-3683-0C7722E8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeStarlightmax|r",
+			[51] = 1600964466,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"<Everbloom> Scared of starting an expansion alone? Unsure of which covenant matches you? Just want some friends? This is the guild for you! We're brand new and getting ready for Shadowlands. Wanting raiders and officers!", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			798, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600964482,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-171315-3683-94832704|h[Guild: Everbloom]|h|r", -- [1]
+			"Elâe-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elâe-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			799, -- [11]
+			"Player-3683-080E83FD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Elâe|r",
+			[51] = 1600964485,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"Phoenix community ||WTS  Mythic & Heroic Ny'alotha Full clear & N'zoth || 10-24 M+ carries || Op Mechagon || Islands || POWERLEVELING || PVP carries || Coaching || Visions || Rare mounts like Void Talon, TLPD || Jaina || LEGACY CONTENT|| GOLD ONLY", -- [1]
+			"Tranalee-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tranalee-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			800, -- [11]
+			"Player-3683-0C80B256", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeTranalee|r",
+			[51] = 1600964492,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-2642-3683-48747732|h[Guild: Natural Affinity]|h|r NA is a friendly guild recruiting for SL M Raiding and M+ looking for good players for our raid team we are rebuilding our roster Raiding Tues and Thur 8-11 server pst with questions 10/12M Nyl", -- [1]
+			"Lyicon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lyicon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			801, -- [11]
+			"Player-3683-0B76DF38", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Lyicon|r",
+			[51] = 1600964499,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"WTS  timed M+ 15 keys with FREE ARMOR STACKING!! CHEAPER for untimed. GOLD ONLY pst for info <3 ", -- [1]
+			"Radaleb-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Radaleb-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			804, -- [11]
+			"Player-3683-0C136B22", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeRadaleb|r",
+			[51] = 1600964511,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"Just got a keyboard with mx browns. So much better than razer greens", -- [1]
+			"Jai-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jai-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			811, -- [11]
+			"Player-3683-0B072572", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Jai|r",
+			[51] = 1600964536,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"my keyboard is sticky because my keys arnt semen resistant", -- [1]
+			"Aquínas-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Aquínas-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			813, -- [11]
+			"Player-3683-0AE5075F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Aquínas|r",
+			[51] = 1600964578,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"[WТS] Nyalotha Heroic Boost Tonight: get ilvl 460-470+ corrupted gear, new mount & Curve Achieve. Fast runs with LOOT TRADING option every day. We have over 11670 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Efivequre-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Efivequre-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			814, -- [11]
+			"Player-3683-0C9E2B3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEfivequre|r",
+			[51] = 1600964583,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
