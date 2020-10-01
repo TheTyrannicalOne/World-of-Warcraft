@@ -2,19 +2,22 @@
 MasterPlanAG = {
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1601490340,
 			["summary"] = {
-				["lastOilTime"] = 1601296886,
+				["lastOilTime"] = 1601441582,
 				["ti2"] = 122486,
 				["inProgress"] = {
-					[677] = 1601381439,
-					[621] = 1601410284,
-					[397] = 1601381478,
-					[258] = 1601367606,
-					[619] = 1601410288,
-					[543] = 1601374289,
-					[745] = 1601361686,
-					[395] = 1601374221,
+					[563] = 1601518984,
+					[381] = 1601526149,
+					[177] = 1601492851,
+					[541] = 1601504589,
+					[127] = 1601504566,
+					[564] = 1601554985,
+					[675] = 1601518954,
+					[692] = 1601504587,
+					[745] = 1601506382,
+					[666] = 1601493763,
+					[396] = 1601518947,
 				},
 				["ti3"] = 127855,
 				["ti1"] = 118531,
@@ -22,15 +25,21 @@ MasterPlanAG = {
 				["tt3"] = 1600132126,
 				["tt2"] = 1600564186,
 			},
-			["curOil"] = 92740,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1601360470,
-			["curRes"] = 7373,
 			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 7421,
+			["curOil"] = 94400,
 		},
 		["Tyrannithal"] = {
 			["faction"] = "Horde",
 			["class"] = "DEMONHUNTER",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Dalaran"] = {
@@ -90,12 +99,6 @@ MasterPlanAG = {
 		["Kelvalatar"] = {
 			["faction"] = "Alliance",
 			["class"] = "SHAMAN",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
 		},
 	},
 	["Zul'jin"] = {

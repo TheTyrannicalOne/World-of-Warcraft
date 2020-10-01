@@ -19,10 +19,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
+		[53435] = {
+			["title"] = "Azerite for the Horde",
 			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[54180] = {
@@ -34,12 +34,6 @@ QuestTogether = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
 				"3/20 Eternal Ornament", -- [1]
-			},
-		},
-		[51049] = {
-			["title"] = "Supplies Needed: Mistscale",
-			["objectives"] = {
-				"0/15 Mistscale", -- [1]
 			},
 		},
 		[43179] = {
@@ -54,10 +48,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[49133] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[45383] = {
@@ -77,10 +71,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[13721] = {
-			["title"] = "The Valiant's Charge",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"13/25 Valiant's Seal", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[49076] = {
@@ -95,10 +89,10 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[13780] = {
-			["title"] = "The Edge Of Winter",
+		[57743] = {
+			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"0/1 Winter's Edge", -- [1]
+				"98/500 Earn Conquest", -- [1]
 			},
 		},
 		[48304] = {
@@ -106,6 +100,48 @@ QuestTogether = {
 			["objectives"] = {
 				"Defeat Imonar the Soul Hunter in the Antorus, The Burning Throne", -- [1]
 				"1/1 Discharged Shock Lance", -- [2]
+			},
+		},
+		[13780] = {
+			["title"] = "The Edge Of Winter",
+			["objectives"] = {
+				"0/1 Winter's Edge", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[42170] = {
+			["title"] = "The Dreamweavers",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+			},
+		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[13721] = {
+			["title"] = "The Valiant's Charge",
+			["objectives"] = {
+				"19/25 Valiant's Seal", -- [1]
+			},
+		},
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[31891] = {
@@ -118,63 +154,21 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
-			["objectives"] = {
-				"98/500 Earn Conquest", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
-			},
-		},
-		[42420] = {
-			["title"] = "Court of Farondis",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
-			},
-		},
-		[42421] = {
-			["title"] = "The Nightfallen",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
-			},
-		},
-		[28884] = {
-			["title"] = "Victory in Tol Barad",
-			["objectives"] = {
-				"Victory in Tol Barad", -- [1]
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[49293] = {
+			["title"] = "Invasion Onslaught",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/3 Invasion Points cleared", -- [1]
 			},
 		},
 	},

@@ -27,10 +27,10 @@ RematchSettings = {
 	["QueueSortOrder"] = 1,
 	["XPos"] = 995.0079345703125,
 	["DialogYPos"] = 710.0047607421875,
-	["FavoriteFilters"] = {
+	["LevelingQueue"] = {
 	},
 	["HidePetToast"] = true,
-	["QueueSanctuary"] = {
+	["FavoriteFilters"] = {
 	},
 	["DialogXPos"] = 1296.007934570313,
 	["JournalPanel"] = 1,
@@ -56,9 +56,9 @@ RematchSettings = {
 		},
 		["Level"] = {
 		},
-		["Sources"] = {
-		},
 		["Similar"] = {
+		},
+		["Sources"] = {
 		},
 		["Breed"] = {
 		},
@@ -86,7 +86,7 @@ RematchSettings = {
 	},
 	["ElvUIToastDefaulted"] = true,
 	["CornerPos"] = "BOTTOMLEFT",
-	["LevelingQueue"] = {
+	["QueueSanctuary"] = {
 	},
 	["AllowHiddenPetsDefaulted"] = true,
 	["UseTypeBar"] = true,
