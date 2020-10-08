@@ -1,9 +1,0 @@
-
-ElvCharacterDB = {
-	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-	},
-	["ChatHistoryLog"] = {
-	},
-}

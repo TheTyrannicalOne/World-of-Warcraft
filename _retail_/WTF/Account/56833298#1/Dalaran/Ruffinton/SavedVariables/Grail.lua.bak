@@ -2,16 +2,21 @@
 GrailDatabasePlayer = {
 	["controlCompletedQuests"] = {
 	},
-	["serverUpdated"] = "2020-06-24 09:19",
+	["spellsCast"] = {
+		[1806] = 33554432,
+		[2931] = 8388608,
+		[26] = 8,
+		[3834] = 524288,
+	},
 	["abandonedQuests"] = {
 	},
 	["buffsExperienced"] = {
 		[2931] = 8388608,
 		[77] = 16384,
-		[3834] = 524288,
+		[10200] = 262144,
 		[8408] = 67108864,
 		[5825] = 32,
-		[10200] = 262144,
+		[3834] = 524288,
 	},
 	["dailyGroups"] = {
 	},
@@ -104,10 +109,5 @@ GrailDatabasePlayer = {
 	},
 	["actuallyCompletedQuests"] = {
 	},
-	["spellsCast"] = {
-		[1806] = 33554432,
-		[2931] = 8388608,
-		[26] = 8,
-		[3834] = 524288,
-	},
+	["serverUpdated"] = "2020-07-03 18:46",
 }

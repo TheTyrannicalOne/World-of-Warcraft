@@ -12,17 +12,18 @@ BFAInvasionTimerDB = {
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Okona - Zul'jin"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
 		["Shanyt - Zul'jin"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -36,6 +37,6 @@ BFAInvasionTimerDB = {
 	},
 }
 BFAInvasionData = {
-	1601521204, -- [1]
-	4, -- [2]
+	1602068406, -- [1]
+	6, -- [2]
 }

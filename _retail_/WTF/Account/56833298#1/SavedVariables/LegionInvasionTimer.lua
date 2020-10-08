@@ -12,17 +12,18 @@ LegionInvasionTimerDB = {
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
 		["Okona - Zul'jin"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -35,4 +36,4 @@ LegionInvasionTimerDB = {
 		},
 	},
 }
-LegionInvasionTime = 1601494235
+LegionInvasionTime = 1602093635

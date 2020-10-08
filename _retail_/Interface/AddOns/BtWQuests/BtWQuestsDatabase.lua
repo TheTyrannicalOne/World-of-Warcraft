@@ -1813,9 +1813,13 @@ function QuestItemMixin:OnEnter(database, item, character, button, frame, toolti
         local link = userdata and userdata.link or (target and self:GetLink(database, item))
 
         if link then
-            tooltip:SetPoint("TOPLEFT", button, "TOPRIGHT")
-            tooltip:SetOwner(button, "ANCHOR_PRESERVE");
-            tooltip:SetHyperlink(link, character)
+            QuestEventListener:AddCallback(target:GetID(), function()
+                if button:IsMouseOver() then
+                    tooltip:SetPoint("TOPLEFT", button, "TOPRIGHT")
+                    tooltip:SetOwner(button, "ANCHOR_PRESERVE");
+                    tooltip:SetHyperlink(link, character)
+                end
+            end);
         end
     end
 end
@@ -1897,7 +1901,9 @@ end
 local ChainItemMixin = CreateFromMixins(TargetItemMixin);
 function ChainItemMixin:GetName(database, item, character)
     local name = TargetItemMixin.GetName(self, database, item, character)
-    if item.upto then
+    local uptoType = type(item.upto)
+    if uptoType == "table" then
+    elseif uptoType == "number" then
         local quest = database:GetQuestByID(item.upto)
         if quest then
             return string.format(L["UP_TO"], name, quest:GetName())
@@ -1973,7 +1979,9 @@ function ChainItemMixin:IsCompleted(database, item, character, ...)
         return ItemMixin.IsCompleted(self, database, item, character);
     end
 
-    if item.upto then
+    local uptoType = type(item.upto)
+    if uptoType == "table" then
+    elseif uptoType == "number" then
         return character:IsQuestCompleted(item.upto)
     end
 
@@ -2567,6 +2575,49 @@ function QuestLineItemMixin:IsCompleted(database, item, character)
 
     return false
 end
+
+local FollowerItemMixin = CreateFromMixins(ItemMixin);
+function FollowerItemMixin:GetName(database, item, character)
+    local follower = C_Garrison.GetFollowerInfo(item.id)
+    return follower and follower.name
+end
+function FollowerItemMixin:IsCompleted(database, item, character)
+
+    return false
+end
+local GarrisonTalentTreeItemMixin = CreateFromMixins(ItemMixin);
+function GarrisonTalentTreeItemMixin:GetName(database, item, character)
+    local info = C_Garrison.GetTalentTreeInfo(item.id)
+    if item.rank then
+        return string.format(L["RANK"], info and info.title or L["UNKNOWN"], item.rank)
+    else
+        return info and info.title or L["UNKNOWN"]
+    end
+end
+function GarrisonTalentTreeItemMixin:IsActive(database, item, character)
+	local treeInfo = C_Garrison.GetTalentTreeInfo(item.id);
+    for _,talent in ipairs(treeInfo.talents) do
+        if talent.tier + 1 == item.rank then
+            return talent.isBeingResearched
+        end
+    end
+
+    return false
+end
+function GarrisonTalentTreeItemMixin:IsCompleted(database, item, character)
+    local rank = C_Garrison.GetTalentPointsSpentInTalentTree(item.id)
+    if item.rank then
+        return item.rank <= rank
+    else
+        return rank >= 0
+    end
+end
+local CampaignItemMixin = CreateFromMixins(ItemMixin);
+function CampaignItemMixin:GetName(database, item, character)
+    local info = C_CampaignInfo.GetCampaignInfo(item.id)
+    return info and info.name or L["UNKNOWN"]
+end
+
 
 local DatabaseItemMetatable = {};
 function DatabaseItemMetatable.__index(tbl, key)
@@ -3595,6 +3646,9 @@ Database:RegisterItemType("profession", ProfessionItemMixin);
 Database:RegisterItemType("item", ItemItemMixin);
 Database:RegisterItemType("equipped", EquippedItemMixin);
 Database:RegisterItemType("questline", QuestLineItemMixin);
+Database:RegisterItemType("follower", FollowerItemMixin);
+Database:RegisterItemType("garrisontalentree", GarrisonTalentTreeItemMixin);
+Database:RegisterItemType("campaign", CampaignItemMixin);
 
 Database:AddCondition(923, { type = "faction", id = "Horde" });
 Database:AddCondition(924, { type = "faction", id = "Alliance" });

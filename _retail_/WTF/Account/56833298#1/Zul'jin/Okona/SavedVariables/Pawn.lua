@@ -1,29 +1,29 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0335,
+	["LastVersion"] = 2.0336,
 	["LastPlayerFullName"] = "Okona-Zul'jin",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122250,
-			["Level"] = 37,
-			["Link"] = "|cff00ccff|Hitem:122250::::::::33:256:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
+			["Level"] = 44,
+			["Link"] = "|cff00ccff|Hitem:122250::::::::40:256:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122664,
-			["Level"] = 37,
-			["Link"] = "|cff00ccff|Hitem:122664::::::::33:256:::1:5805:::|h[Eternal Horizon Choker]|h|r",
+			["Level"] = 44,
+			["Link"] = "|cff00ccff|Hitem:122664::::::::40:256:::1:5805:::|h[Eternal Horizon Choker]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122378,
-			["Level"] = 37,
-			["Link"] = "|cff00ccff|Hitem:122378::::::::33:256:::1:5805:::|h[Exquisite Sunderseer Mantle]|h|r",
+			["ID"] = 65670,
+			["Level"] = 45,
+			["Link"] = "|cff0070dd|Hitem:65670::::::::40:256:512:11:2:3642:5673:39:::|h[Spider-Handler's Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122384,
-			["Level"] = 37,
-			["Link"] = "|cff00ccff|Hitem:122384::::::::33:256:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
+			["Level"] = 44,
+			["Link"] = "|cff00ccff|Hitem:122384::::::::40:256:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 62867,
@@ -32,13 +32,13 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122256,
-			["Level"] = 37,
-			["Link"] = "|cff00ccff|Hitem:122256::::::::33:256:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
+			["Level"] = 44,
+			["Link"] = "|cff00ccff|Hitem:122256::::::::40:256:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 62860,
-			["Level"] = 28,
-			["Link"] = "|cff1eff00|Hitem:62860::::::::33:256:512:11:1:3638:28:::|h[Watched Watcher's Slippers]|h|r",
+			["ID"] = 62895,
+			["Level"] = 44,
+			["Link"] = "|cff0070dd|Hitem:62895::::::::39:256:512:11:1:3717:38:::|h[Slippers of Unturned Loyalties]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 62864,
@@ -46,38 +46,43 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:62864::::::::33:256:512:11:1:3638:31:::|h[Bracers of the Final Transmission]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 157707,
-			["Level"] = 25,
-			["Link"] = "|cff1eff00|Hitem:157707::::::::33:256::::::|h[Curate's Gloves]|h|r",
+			["ID"] = 62890,
+			["Level"] = 36,
+			["Link"] = "|cff1eff00|Hitem:62890::::::::36:256:512:11:1:3638:36:::|h[Ataeric's Gloves]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 122529,
-			["Level"] = 37,
+			["Level"] = 44,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::33:256:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122529::::::::40:256:::1:5805:::|h[Dread Pirate Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128169,
-			["Level"] = 37,
+			["Level"] = 44,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::33:256:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::40:256:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122362,
-			["Level"] = 37,
+			["Level"] = 44,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::33:256:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::40:256:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [13]
-		nil, -- [14]
+		{
+			["ID"] = 122362,
+			["Level"] = 43,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff00ccff|Hitem:122362::::::::39:256:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+		}, -- [14]
 		{
 			["ID"] = 122262,
-			["Level"] = 37,
-			["Link"] = "|cff00ccff|Hitem:122262::::::::33:256:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
+			["Level"] = 44,
+			["Link"] = "|cff00ccff|Hitem:122262::::::::40:256:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 122353,
-			["Level"] = 37,
-			["Link"] = "|cff00ccff|Hitem:122353::::::::33:256:::1:5805:::|h[Dignified Headmaster's Charge]|h|r",
+			["Level"] = 44,
+			["Link"] = "|cff00ccff|Hitem:122353::::::::40:256:::1:5805:::|h[Dignified Headmaster's Charge]|h|r",
 		}, -- [16]
 	},
 	["LastKeybindingsSet"] = 1,

@@ -1,17 +1,9 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[27475] = {
-			["title"] = "Unyielding Servitors",
+		[58122] = {
+			["title"] = "For the Horde",
 			["objectives"] = {
-				"0/6 Servitor Core", -- [1]
-			},
-		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
-			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[31891] = {
@@ -24,16 +16,28 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[28571] = {
-			["title"] = "Warchief's Command: Hillsbrad Foothills!",
+		[28144] = {
+			["title"] = "Thieving Little Monsters!",
 			["objectives"] = {
+				"0/6 Forsaken Camp \"Supplies\"", -- [1]
+			},
+		},
+		[28138] = {
+			["title"] = "Human Infestation",
+			["objectives"] = {
+				"0/8 Hillsbrad Human Captured", -- [1]
+			},
+		},
+		[28146] = {
+			["title"] = "Coastal Delicacies!",
+			["objectives"] = {
+				"0/12 Murlocs fed to Hungry Mine Spider", -- [1]
 			},
 		},
 		[11446] = {
@@ -41,23 +45,11 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[27474] = {
-			["title"] = "Breaking the Barrier",
-			["objectives"] = {
-				"0/1 Ambermill Codex", -- [1]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

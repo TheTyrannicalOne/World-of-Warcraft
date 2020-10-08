@@ -1,7 +1,5 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
 	["Zul'jin"] = {
 		["Tyranasticus"] = {
 			["class"] = "DEMONHUNTER",
@@ -65,8 +63,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Ruffinton"] = {
-			["faction"] = "Alliance",
 			["class"] = "ROGUE",
+			["faction"] = "Alliance",
 		},
 		["Serbitechna"] = {
 			["faction"] = "Alliance",
@@ -107,9 +105,13 @@ MasterPlanAG = {
 			["class"] = "WARRIOR",
 			["faction"] = "Alliance",
 		},
-		["Kelvalatar"] = {
+		["Varlouris"] = {
 			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+		},
+		["Kelvalatar"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
 		},
 		["Illingrath"] = {
 			["faction"] = "Alliance",
@@ -126,36 +128,40 @@ MasterPlanAG = {
 		["Shanyt"] = {
 			["faction"] = "Horde",
 			["summary"] = {
-				["lastOilTime"] = 1601441582,
-				["tt2"] = 1600564186,
-				["tt3"] = 1600132126,
-				["ti1"] = 118531,
-				["tt1"] = 1600436539,
-				["ti3"] = 127855,
+				["lastOilTime"] = 1602031980,
 				["inProgress"] = {
-					[563] = 1601518984,
-					[381] = 1601526149,
-					[177] = 1601492851,
-					[541] = 1601504589,
-					[127] = 1601504566,
-					[564] = 1601554985,
-					[675] = 1601518954,
-					[692] = 1601504587,
-					[396] = 1601518947,
-					[666] = 1601493763,
-					[745] = 1601506382,
+					[176] = 1602083221,
+					[503] = 1602102119,
+					[571] = 1602109385,
+					[265] = 1602109371,
+					[665] = 1602084138,
+					[745] = 1602096780,
+					[570] = 1602094989,
+					[565] = 1602145383,
+					[361] = 1602116561,
+					[302] = 1602102149,
+					[573] = 1602145388,
+					[677] = 1602116528,
+					[177] = 1602083224,
 				},
+				["ti3"] = 127855,
 				["ti2"] = 122486,
+				["tt1"] = 1601646576,
+				["ti1"] = 118531,
+				["tt3"] = 1601532756,
+				["tt2"] = 1601786308,
 			},
-			["curOil"] = 94400,
+			["curOil"] = 96320,
 			["cacheSize"] = 1000,
 			["class"] = "WARRIOR",
-			["curRes"] = 7421,
-			["lastCacheTime"] = 1601490340,
+			["curRes"] = 4865,
+			["lastCacheTime"] = 1602081602,
 		},
 		["Tyrannithal"] = {
 			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

@@ -72,8 +72,8 @@ H: 300
 Frame: PLH_LootedItemsFrame
 FrameLevel: 1
 Anchor: CENTER
-X: 161
-Y: 203
+X: -8
+Y: 164
 W: 400
 H: 140
 Frame: scanner_button

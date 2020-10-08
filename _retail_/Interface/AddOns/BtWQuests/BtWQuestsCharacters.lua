@@ -772,7 +772,6 @@ if select(4, GetBuildInfo()) < 90000 then
     function GetQuestsActive(tbl)
         local tbl = tbl or {};
     
-        wipe(tbl);
         local numEntries = GetNumQuestLogEntries()
         for i=1,numEntries do
             local questID = select(8, GetQuestLogTitle(i));
@@ -791,7 +790,6 @@ else
     function GetQuestsActive(tbl)
         local tbl = tbl or {};
     
-        wipe(tbl);
         local numEntries = C_QuestLog.GetNumQuestLogEntries()
         for i=1,numEntries do
             local info = C_QuestLog.GetInfo(i);
@@ -812,7 +810,6 @@ if not GetQuestsCompleted then
     function GetQuestsCompleted(tbl)
         local tbl = tbl or {};
 
-        wipe(tbl);
         for _,questID in ipairs(C_QuestLog.GetAllCompletedQuestIDs()) do
             tbl[questID] = true
         end
@@ -1007,6 +1004,12 @@ function BtWQuestsCharacters:OnEvent(event, ...)
         character.professions = GetKnownProfessions(character.professions, GetProfessions());
     end
     if event == "QUEST_ACCEPTED" or event == "QUEST_COMPLETE" or event == "QUEST_REMOVED" or event == "QUEST_TURNED_IN" or event == "PLAYER_ENTERING_WORLD" then
+        character.questsActive = character.questsActive or {}
+        character.questsCompleted = character.questsCompleted or {}
+
+        wipe(character.questsActive)
+        wipe(character.questsCompleted)
+        
         character.questsActive = GetQuestsActive(character.questsActive);
         character.questsCompleted = GetQuestsCompleted(character.questsCompleted);
     end

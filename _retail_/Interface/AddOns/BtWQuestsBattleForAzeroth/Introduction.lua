@@ -7399,6 +7399,7 @@ BtWQuestsDatabase:AddChain(Chain.Alliance825Campaign, {
         type = "quest",
         id = 56993,
     },
+    questline = 1004,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120,120},
     alternatives = {
@@ -7497,6 +7498,7 @@ BtWQuestsDatabase:AddChain(Chain.Horde825SaurfangCampaign, {
         type = "quest",
         id = 56993,
     },
+    questline = 1003,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120,120},
     alternatives = {
@@ -7619,6 +7621,7 @@ BtWQuestsDatabase:AddChain(Chain.Horde825SylvanasCampaign, {
         type = "quest",
         id = 56993,
     },
+    questline = 1003,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120,120},
     alternatives = {

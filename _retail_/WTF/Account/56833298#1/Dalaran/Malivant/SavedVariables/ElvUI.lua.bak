@@ -1,0 +1,5 @@
+
+ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
+}

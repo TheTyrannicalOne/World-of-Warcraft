@@ -794,6 +794,10 @@ function BtWQuestsMixin:OnEvent(event, ...)
             -- hooksecurefunc(QuestMapQuestOptionsDropDown, "initialize", function (self)
             --     BtWQuests_AddOpenChainMenuItem(self, self.questID)
             -- end)
+        elseif (...):sub(1, 9) == "BtWQuests" then
+            if self:IsShown() then
+                self:UpdateHereButton()
+            end
         end
     elseif event == "PLAYER_ENTERING_WORLD" then
         if not self.addedQuestDataProviders and BtWQuestSettingsData:GetValue("showMapPins") then

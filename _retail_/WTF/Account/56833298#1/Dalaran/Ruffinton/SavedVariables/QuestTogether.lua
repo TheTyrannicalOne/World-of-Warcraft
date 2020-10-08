@@ -24,13 +24,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
-			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
-			},
-		},
 		[25621] = {
 			["title"] = "Field Test: Gnomecorder",
 			["objectives"] = {
@@ -46,13 +39,6 @@ QuestTogether = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
 		[26838] = {
@@ -79,8 +65,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

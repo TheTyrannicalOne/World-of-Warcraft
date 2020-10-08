@@ -10,7 +10,7 @@ QuestTogether = {
 		[57462] = {
 			["title"] = "Dream Catcher",
 			["objectives"] = {
-				"0/200 Shred of Insanity", -- [1]
+				"1/200 Shred of Insanity", -- [1]
 			},
 		},
 		[49032] = {
@@ -30,22 +30,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57157] = {
-			["title"] = "Assault: The Black Empire",
-			["objectives"] = {
-				"0% Drive back N'Zoth's Forces", -- [1]
-			},
-		},
 		[56352] = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
 				"3/20 Eternal Ornament", -- [1]
-			},
-		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
-			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[45381] = {
@@ -72,15 +60,10 @@ QuestTogether = {
 				"2/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[46749] = {
-			["title"] = "Supplies From the Wardens",
+		[13697] = {
+			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-			},
-		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"0/25 Valiant's Seal", -- [1]
 			},
 		},
 		[49076] = {
@@ -95,61 +78,6 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
-			["objectives"] = {
-				"98/500 Earn Conquest", -- [1]
-			},
-		},
-		[48304] = {
-			["title"] = "The Soulhunter",
-			["objectives"] = {
-				"Defeat Imonar the Soul Hunter in the Antorus, The Burning Throne", -- [1]
-				"1/1 Discharged Shock Lance", -- [2]
-			},
-		},
-		[13780] = {
-			["title"] = "The Edge Of Winter",
-			["objectives"] = {
-				"0/1 Winter's Edge", -- [1]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
-			},
-		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
-			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
-			},
-		},
-		[13721] = {
-			["title"] = "The Valiant's Charge",
-			["objectives"] = {
-				"19/25 Valiant's Seal", -- [1]
-			},
-		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -160,8 +88,64 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[48304] = {
+			["title"] = "The Soulhunter",
+			["objectives"] = {
+				"Defeat Imonar the Soul Hunter in the Antorus, The Burning Throne", -- [1]
+				"1/1 Discharged Shock Lance", -- [2]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[47129] = {
+			["title"] = "Tomb of Sargeras: The Deceiver",
+			["objectives"] = {
+				"Defeat Kil'jaeden", -- [1]
+				"1/1 Seal of the Deceiver", -- [2]
+			},
+		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[57743] = {
+			["title"] = "Conquest's Reward",
+			["objectives"] = {
+				"98/500 Earn Conquest", -- [1]
+			},
+		},
+		[42234] = {
+			["title"] = "The Valarjar",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[42422] = {
+			["title"] = "The Wardens",
+			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
 			},
 		},
@@ -171,17 +155,17 @@ QuestTogether = {
 				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[49293] = {
-			["title"] = "Invasion Onslaught",
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
 			["objectives"] = {
-				"0/3 Invasion Points cleared", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

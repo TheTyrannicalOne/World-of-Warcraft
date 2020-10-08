@@ -574,5 +574,9 @@ BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_WAIST_OF_TIME = 89902
 BtWQuestsDatabase:AddExpansion(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     background = {
         atlas = "UI-EJ-BattleforAzeroth"
+    },
+    image = {
+        texture = "Interface\\AddOns\\BtWQuestsBattleForAzeroth\\UI-Expansion",
+        texCoords = {0, 0.90625, 0, 0.8125}
     }
 })

@@ -12,6 +12,7 @@ LegionInvasionTimerDB = {
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
@@ -35,4 +36,4 @@ LegionInvasionTimerDB = {
 		},
 	},
 }
-LegionInvasionTime = 1601494235
+LegionInvasionTime = 1601960433

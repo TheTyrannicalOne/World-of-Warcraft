@@ -37,13 +37,16 @@ HHTD_SavedVariables = {
 		["Okona - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Ruffinton - Dalaran"] = {
-			["settingsMigrated"] = false,
-		},
 		["Shanyt - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
+		["Ruffinton - Dalaran"] = {
+			["settingsMigrated"] = false,
+		},
 		["Datgore - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
+		["Malivant - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Darnastris - Dalaran"] = {
@@ -52,13 +55,10 @@ HHTD_SavedVariables = {
 		["Rotclaugh - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Malivant - Dalaran"] = {
+		["Serbitechna - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Durlok - Black Dragonflight"] = {
-			["settingsMigrated"] = false,
-		},
-		["Serbitechna - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Fantastiburo - Zul'jin"] = {
@@ -68,6 +68,9 @@ HHTD_SavedVariables = {
 			["settingsMigrated"] = false,
 		},
 		["Kelvalatar - Dalaran"] = {
+			["settingsMigrated"] = false,
+		},
+		["Varlouris - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 	},
@@ -84,17 +87,18 @@ HHTD_SavedVariables = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 	},
 	["global"] = {
 		["settingsMigrated"] = false,

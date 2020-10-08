@@ -13,17 +13,18 @@ PasteDB = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
@@ -62,13 +63,16 @@ PasteDB = {
 		["Okona - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Ruffinton - Dalaran"] = {
-			["loaded"] = true,
-		},
 		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
+		["Ruffinton - Dalaran"] = {
+			["loaded"] = true,
+		},
 		["Datgore - Zul'jin"] = {
+			["loaded"] = true,
+		},
+		["Malivant - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Darnastris - Dalaran"] = {
@@ -77,13 +81,10 @@ PasteDB = {
 		["Rotclaugh - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Malivant - Dalaran"] = {
+		["Serbitechna - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
-			["loaded"] = true,
-		},
-		["Serbitechna - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Fantastiburo - Zul'jin"] = {
@@ -93,6 +94,9 @@ PasteDB = {
 			["loaded"] = true,
 		},
 		["Kelvalatar - Dalaran"] = {
+			["loaded"] = true,
+		},
+		["Varlouris - Dalaran"] = {
 			["loaded"] = true,
 		},
 	},

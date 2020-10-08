@@ -7,10 +7,10 @@ QuestTogether = {
 				"0/5 Elemental-Imbued Weapon broken", -- [1]
 			},
 		},
-		[54485] = {
-			["title"] = "Battle of Dazar'alor",
+		[56128] = {
+			["title"] = "Drowning the Horde",
 			["objectives"] = {
-				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+				"0/25 Horde Players slain", -- [1]
 			},
 		},
 		[13413] = {
@@ -31,9 +31,12 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[44720] = {
-			["title"] = "A Call to Action",
+		[56378] = {
+			["title"] = "The Missing Crew",
 			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[44989] = {
@@ -42,10 +45,9 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[44720] = {
+			["title"] = "A Call to Action",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[57006] = {
@@ -56,16 +58,15 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[39060] = {
@@ -76,10 +77,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[54438] = {
@@ -101,17 +102,27 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+			},
+		},
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+			},
+		},
+		[56211] = {
+			["title"] = "Scrying Stones",
+			["objectives"] = {
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[56499] = {
@@ -120,17 +131,6 @@ QuestTogether = {
 				"Win a PVP Island Expedition", -- [1]
 				"0/1 Win an Epic Battleground", -- [2]
 				"0/1 Win a Battleground", -- [3]
-			},
-		},
-		[50600] = {
-			["title"] = "Order of Embers",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
 			},
 		},
 		[31486] = {
@@ -154,7 +154,7 @@ QuestTogether = {
 		[42483] = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
-				"0/1 Steelscale's Fin", -- [1]
+				"0/1  ", -- [1]
 			},
 		},
 		[31891] = {
@@ -173,24 +173,23 @@ QuestTogether = {
 				"10/25 Slay Horde Players", -- [1]
 			},
 		},
-		[56211] = {
-			["title"] = "Scrying Stones",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[56128] = {
-			["title"] = "Drowning the Horde",
+		[54485] = {
+			["title"] = "Battle of Dazar'alor",
 			["objectives"] = {
-				"0/25 Horde Players slain", -- [1]
+				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
-		["events"] = false,
 		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
 	},
 }

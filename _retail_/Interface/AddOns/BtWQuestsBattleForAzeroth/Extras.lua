@@ -1576,6 +1576,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_TROUBLE_IN_D
         },
     },
 })
+-- No longer available
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_NECK_LEVEL, {
     name = { -- A One-Way Ticket to the Heart
         type = "quest",
@@ -2945,10 +2946,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_OTHER_BOTH, {
         {
             type = "quest",
             id = 49759,
-        },
-        {
-            type = "quest",
-            id = 50520,
         },
         {
             type = "quest",

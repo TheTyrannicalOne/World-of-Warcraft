@@ -7,16 +7,19 @@ KalielsTrackerDB = {
 		["Zulbathal - Zul'jin"] = {
 			["collapsed"] = true,
 		},
+		["Brewnheimer - Darkspear"] = {
+			["collapsed"] = true,
+		},
 		["Tyranasticus - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Brewnheimer - Darkspear"] = {
+		["Beeronimo - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Tynster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Beeronimo - Dalaran"] = {
+		["Goramor - Runetotem"] = {
 			["collapsed"] = true,
 		},
 		["Tyrannithal - Argent Dawn"] = {
@@ -28,16 +31,16 @@ KalielsTrackerDB = {
 		["Kelvalatar - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Shathiel - Darkspear"] = {
 			["collapsed"] = true,
 		},
 		["Shaewong - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Goramor - Runetotem"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Gillbourn - Runetotem"] = {
+		["Shaekhan - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Shanyt - Zul'jin"] = {
@@ -46,7 +49,7 @@ KalielsTrackerDB = {
 		["Bathal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
-		["Shathiel - Darkspear"] = {
+		["Sinh - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Thorinbane - Dalaran"] = {
@@ -55,25 +58,25 @@ KalielsTrackerDB = {
 		["Serbitechna - Darkspear"] = {
 			["collapsed"] = true,
 		},
-		["Sinh - Dalaran"] = {
-			["collapsed"] = true,
-		},
 		["Avisar - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Malivant - Dalaran"] = {
+		["Ruffinton - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Datgore - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Shaekhan - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Serbitechna - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Tinkster - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Gillbourn - Runetotem"] = {
 			["collapsed"] = true,
 		},
 		["Tynkster - Dalaran"] = {
@@ -85,7 +88,7 @@ KalielsTrackerDB = {
 		["Migimong - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Shimzo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Narisaric - Dalaran"] = {
@@ -106,34 +109,35 @@ KalielsTrackerDB = {
 		["Ruffinton - Dalaran"] = "Default",
 		["Malivant - Dalaran"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Panboozled - Runetotem"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
-		["Tyranasticus - Zul'jin"] = "Default",
+		["Panboozled - Runetotem"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Brewnheimer - Darkspear"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Gillbourn - Runetotem"] = "Default",
 		["Okona - Zul'jin"] = "Default",
+		["Brewnheimer - Darkspear"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Gillbourn - Runetotem"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
 		["Sinh - Dalaran"] = "Default",
-		["Tynster - Dalaran"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
+		["Tynster - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",

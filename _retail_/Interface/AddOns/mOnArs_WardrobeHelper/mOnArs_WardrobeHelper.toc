@@ -1,6 +1,6 @@
-## Interface:  80200
+## Interface:  80350
 ## Title: mOnAr's WardrobeHelper
-## Version: 1.18.6
+## Version: 1.19
 ## Author: mOnAr
 ## Notes:
 ## SavedVariables: mOnWDSave

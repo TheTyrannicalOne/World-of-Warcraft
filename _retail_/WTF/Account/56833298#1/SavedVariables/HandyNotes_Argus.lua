@@ -13,17 +13,18 @@ HandyNotes_ArgusDB = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
@@ -50,27 +51,29 @@ HandyNotes_ArgusDB = {
 		},
 		["Okona - Zul'jin"] = {
 		},
-		["Ruffinton - Dalaran"] = {
-		},
 		["Shanyt - Zul'jin"] = {
 		},
+		["Ruffinton - Dalaran"] = {
+		},
 		["Datgore - Zul'jin"] = {
+		},
+		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Malivant - Dalaran"] = {
+		["Serbitechna - Dalaran"] = {
 		},
 		["Durlok - Black Dragonflight"] = {
-		},
-		["Serbitechna - Dalaran"] = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
 		["Zulbathal - Zul'jin"] = {
 		},
 		["Kelvalatar - Dalaran"] = {
+		},
+		["Varlouris - Dalaran"] = {
 		},
 	},
 }
