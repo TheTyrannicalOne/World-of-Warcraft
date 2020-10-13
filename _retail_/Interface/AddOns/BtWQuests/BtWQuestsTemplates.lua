@@ -1916,6 +1916,8 @@ function BtWQuestsSearchBoxMixin:OnFocusGained()
         return
     end
 
+    self:SetSearch(self:GetText())
+
     local resultsFrame = self:GetResultsFrame()
     local previewFrame = self:GetPreviewFrame()
     if previewFrame then

@@ -78,9 +78,11 @@ end
 LibMapPinHandler = {}
 setmetatable(LibMapPinHandler, {
     __index = function (self, frame)
-        local result = CreateCanvas(frame)
-        rawset(self, frame, result)
-        return result
+        if frame and type(frame) == "table" and frame.GetObjectType then
+            local result = CreateCanvas(frame)
+            rawset(self, frame, result)
+            return result
+        end
     end,
     __newindex = function ()
     end,

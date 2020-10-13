@@ -1287,6 +1287,7 @@ function ExpansionMixin:SetAutoLoad(value)
     end
 end
 function ExpansionMixin:Load()
+    wipe(self.database.questCache);
     for addon in pairs(self.addons) do
         LoadAddOn(addon)
     end
@@ -2475,7 +2476,7 @@ function AzeriteEssenceItemMixin:GetName(database, item, character, variation)
     local id = self:GetID(database, item)
     local rank = item.rank
     local essence = C_AzeriteEssence.GetEssenceInfo(id)
-    local name = essence.name or ""
+    local name = essence and essence.name or ""
     if rank then
         return string.format(AZERITE_ESSENCE_TOOLTIP_NAME_RANK, name, rank)
     else
@@ -3647,7 +3648,7 @@ Database:RegisterItemType("item", ItemItemMixin);
 Database:RegisterItemType("equipped", EquippedItemMixin);
 Database:RegisterItemType("questline", QuestLineItemMixin);
 Database:RegisterItemType("follower", FollowerItemMixin);
-Database:RegisterItemType("garrisontalentree", GarrisonTalentTreeItemMixin);
+Database:RegisterItemType("garrisontalenttree", GarrisonTalentTreeItemMixin);
 Database:RegisterItemType("campaign", CampaignItemMixin);
 
 Database:AddCondition(923, { type = "faction", id = "Horde" });

@@ -65,6 +65,8 @@ L["Airplanes"] = "비행기"
 L["Airships"] = "비행선"
 L["Alpacas"] = "알파카"
 L["Amphibian"] = "양서류"
+--[[Translation missing --]]
+--[[ L["Animite"] = "Animite"--]] 
 L["Aqir Flyers"] = "아퀴르 날벌레"
 L["Arachnids"] = "거미"
 L["Assault Wagons"] = "공성차량"
@@ -110,7 +112,13 @@ L["Felsabers"] = "지옥표범"
 L["Fish"] = "물고기"
 L["Flying Steeds"] = "비행군마"
 L["Foxes"] = "여우"
+--[[Translation missing --]]
+--[[ L["Gargon"] = "Gargon"--]] 
 L["Goats"] = "염소"
+--[[Translation missing --]]
+--[[ L["Gorger"] = "Gorger"--]] 
+--[[Translation missing --]]
+--[[ L["Gorm"] = "Gorm"--]] 
 L["Grand Drakes"] = "거대 비룡"
 L["Gronnlings"] = "그론링"
 L["Gryphons"] = "그리폰"
@@ -130,6 +138,8 @@ L["Jet Aerial Units"] = "제트 비행기"
 L["Kites"] = "연"
 L["Kodos"] = "코도"
 L["Krolusks"] = "크롤러스크"
+--[[Translation missing --]]
+--[[ L["Larion"] = "Larion"--]] 
 L["Lions"] = "사자"
 L["Mammoths"] = "매머드"
 L["Mana Rays"] = "마나 가오리"
@@ -141,6 +151,8 @@ L["Mechanical Steeds"] = "기계형 군마"
 L["Mechanostriders"] = "기계타조"
 L["Mecha-suits"] = "메카수트"
 L["Moose"] = "엘크"
+--[[Translation missing --]]
+--[[ L["Moth"] = "Moth"--]] 
 L["Motorcycles"] = "오토바이"
 L["Mountain Horses"] = "산악마"
 L["Mushan"] = "무샨"
@@ -162,13 +174,19 @@ L["Rays"] = "가오리"
 L["Reptiles"] = "파충류"
 L["Rhinos"] = "코뿔소"
 L["Riverbeasts"] = "강물하마"
+--[[Translation missing --]]
+--[[ L["Roc"] = "Roc"--]] 
 L["Rockets"] = "로켓"
 L["Ruinstriders"] = "파멸발굽"
+--[[Translation missing --]]
+--[[ L["Runestag"] = "Runestag"--]] 
 L["Rylaks"] = "라일라크"
 L["Sabers"] = "표범"
 L["Scorpions"] = "전갈"
 L["Sea Serpents"] = "바다뱀"
 L["Seahorses"] = "해마"
+--[[Translation missing --]]
+--[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "실리시드"
 L["Snapdragons"] = "치악룡"
 L["Spider Tanks"] = "거미 전차"
@@ -180,6 +198,8 @@ L["Stone Drakes"] = "비룡 석상"
 L["Talbuks"] = "탈부크"
 L["Tallstriders"] = "타조"
 L["Talonbirds"] = "탈론 버드"
+--[[Translation missing --]]
+--[[ L["Tauralus"] = "Tauralus"--]] 
 L["Tigers"] = "호랑이"
 L["Toads"] = "두꺼비"
 L["Turtles"] = "거북이"
@@ -189,6 +209,8 @@ L["Undead Wolves"] = "언데드 늑대"
 L["Ungulates"] = "유제류"
 L["Ur'zul"] = "우르줄"
 L["Vehicles"] = "차량"
+--[[Translation missing --]]
+--[[ L["Vulpin"] = "Vulpin"--]] 
 --[[Translation missing --]]
 --[[ L["Vultures"] = "Vultures"--]] 
 L["War Wolves"] = "전투 늑대"

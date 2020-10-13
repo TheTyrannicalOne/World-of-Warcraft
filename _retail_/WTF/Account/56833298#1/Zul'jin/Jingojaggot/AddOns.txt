@@ -239,3 +239,11 @@ ElvUI_SLE: enabled
 ElvUI_CliqueDatatext: enabled
 Narcissus: enabled
 Narcissus_Database: enabled
+ElvUI_VisualAuraTimers: disabled
+ElvUI_ExtraActionBars: disabled
+ElvUI_CastBarOverlay: disabled
+ElvUI_EverySecondCounts: disabled
+ElvUI_AuraBarsMovers: disabled
+ElvUI_CustomTweaks: disabled
+ElvUI_DTBars2: disabled
+WeakAurasCompanion: enabled

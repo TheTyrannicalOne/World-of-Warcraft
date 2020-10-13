@@ -71,6 +71,8 @@ L["Airships"] = "飞艇"
 --[[Translation missing --]]
 --[[ L["Amphibian"] = "Amphibian"--]] 
 --[[Translation missing --]]
+--[[ L["Animite"] = "Animite"--]] 
+--[[Translation missing --]]
 --[[ L["Aqir Flyers"] = "Aqir Flyers"--]] 
 L["Arachnids"] = "蛛形类"
 --[[Translation missing --]]
@@ -120,7 +122,13 @@ L["Felsabers"] = "邪刃豹"
 L["Fish"] = "鱼类"
 L["Flying Steeds"] = "天马"
 L["Foxes"] = "狐"
+--[[Translation missing --]]
+--[[ L["Gargon"] = "Gargon"--]] 
 L["Goats"] = "山羊"
+--[[Translation missing --]]
+--[[ L["Gorger"] = "Gorger"--]] 
+--[[Translation missing --]]
+--[[ L["Gorm"] = "Gorm"--]] 
 L["Grand Drakes"] = "大型龙"
 L["Gronnlings"] = "小戈隆"
 L["Gryphons"] = "狮鹫"
@@ -142,6 +150,8 @@ L["Jellyfish"] = "水母"
 L["Kites"] = "风筝"
 L["Kodos"] = "科多兽"
 L["Krolusks"] = "三叶虫"
+--[[Translation missing --]]
+--[[ L["Larion"] = "Larion"--]] 
 L["Lions"] = "狮"
 L["Mammoths"] = "猛犸象"
 L["Mana Rays"] = "法力鳐"
@@ -156,6 +166,8 @@ L["Mechanical Steeds"] = "机械马"
 L["Mechanostriders"] = "机械陆行鸟"
 L["Mecha-suits"] = "机甲"
 L["Moose"] = "驼鹿"
+--[[Translation missing --]]
+--[[ L["Moth"] = "Moth"--]] 
 L["Motorcycles"] = "摩托车"
 L["Mountain Horses"] = "山地马"
 L["Mushan"] = "穆山兽"
@@ -178,13 +190,19 @@ L["Rays"] = "镭射"
 L["Reptiles"] = "爬虫"
 L["Rhinos"] = "犀牛"
 L["Riverbeasts"] = "淡水兽"
+--[[Translation missing --]]
+--[[ L["Roc"] = "Roc"--]] 
 L["Rockets"] = "火箭"
 L["Ruinstriders"] = "游荡者"
+--[[Translation missing --]]
+--[[ L["Runestag"] = "Runestag"--]] 
 L["Rylaks"] = "魔龙"
 L["Sabers"] = "X刃豹"
 L["Scorpions"] = "蝎子"
 L["Sea Serpents"] = "海蛇"
 L["Seahorses"] = "海马"
+--[[Translation missing --]]
+--[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "异种蝎"
 --[[Translation missing --]]
 --[[ L["Snapdragons"] = "Snapdragons"--]] 
@@ -198,6 +216,8 @@ L["Stone Drakes"] = "石幼龙"
 L["Talbuks"] = "塔布羊"
 L["Tallstriders"] = "蛇鸟"
 L["Talonbirds"] = "鸦神"
+--[[Translation missing --]]
+--[[ L["Tauralus"] = "Tauralus"--]] 
 L["Tigers"] = "虎"
 --[[Translation missing --]]
 --[[ L["Toads"] = "Toads"--]] 
@@ -208,6 +228,8 @@ L["Undead Wolves"] = "不死战狼"
 L["Ungulates"] = "有蹄类"
 L["Ur'zul"] = "乌祖尔"
 L["Vehicles"] = "载具"
+--[[Translation missing --]]
+--[[ L["Vulpin"] = "Vulpin"--]] 
 --[[Translation missing --]]
 --[[ L["Vultures"] = "Vultures"--]] 
 L["War Wolves"] = "战狼"

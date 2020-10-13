@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0336,
+	["LastVersion"] = 2.04,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -41,7 +41,7 @@ PawnOptions = {
 		{
 			["ID"] = 174956,
 			["Level"] = 440,
-			["Link"] = "|cffa335ee|Hitem:174956::::::::120:70::28:5:6540:6513:6578:6579:4803:::|h[Malignant Leviathan's Armguards]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174956::::::::120:70::28:4:6513:6578:4803:6516:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 163414,
@@ -67,10 +67,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:172848::::::::120:70::47:4:41:6513:1537:4785:::|h[Corrupted Aspirant's Insignia]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 158154,
-			["Level"] = 415,
+			["ID"] = 122371,
+			["Level"] = 284,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:158154::::::::120:70::26:4:4803:6515:1607:4785:::|h[Emblem of Zandalar]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122371::::::::120:70::14:1:5805:::|h[Inherited Insignia of the Alliance]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 169223,
@@ -82,12 +82,6 @@ PawnOptions = {
 			["Level"] = 440,
 			["Link"] = "|cffa335ee|Hitem:172767::::::::120:70::25:6:6387:6388:1552:4786:6516:6513:::|h[Corrupted Gladiator's Greatsword]|h|r",
 		}, -- [16]
-		{
-			["ID"] = 159658,
-			["Level"] = 430,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cffa335ee|Hitem:159658::::::::120:70::23:5:4779:6516:6515:1602:4786:::|h[Cudgel of Correctional Oversight]|h|r",
-		}, -- [17]
 	},
 	["AutoSelectScales"] = true,
 	["LastPlayerFullName"] = "Avisar-Dalaran",

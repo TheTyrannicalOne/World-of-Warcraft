@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0336,
+	["LastVersion"] = 2.04,
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -11,8 +11,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 519,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1656:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 521,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:6316:4932:4933:1658:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 157964,
@@ -84,12 +84,6 @@ PawnOptions = {
 			["Level"] = 445,
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
-		{
-			["ID"] = 170310,
-			["Level"] = 400,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cffa335ee|Hitem:170310::::::::120:71::13:1:1678:::|h[Uncanny Combatant's Shanker of the Quickblade]|h|r",
-		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
 }

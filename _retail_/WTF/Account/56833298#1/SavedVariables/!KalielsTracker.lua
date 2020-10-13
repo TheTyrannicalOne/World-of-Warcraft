@@ -1,25 +1,43 @@
 
 KalielsTrackerDB = {
 	["char"] = {
-		["Fantastiburo - Argent Dawn"] = {
+		["Shaewong - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Goramor - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Brewnheimer - Darkspear"] = {
+		["Shaekhan - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Shanyt - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Avisar - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Thorinbane - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Serbitechna - Darkspear"] = {
+			["collapsed"] = true,
+		},
+		["Ruffinton - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Malivant - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Tynkster - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Tyriinid - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Tyranasticus - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Beeronimo - Dalaran"] = {
-			["collapsed"] = true,
-		},
 		["Tynster - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Goramor - Runetotem"] = {
 			["collapsed"] = true,
 		},
 		["Tyrannithal - Argent Dawn"] = {
@@ -31,69 +49,58 @@ KalielsTrackerDB = {
 		["Kelvalatar - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shathiel - Darkspear"] = {
-			["collapsed"] = true,
-		},
-		["Shaewong - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Fantastiburo - Zul'jin"] = {
-			["collapsed"] = true,
-		},
-		["Shaekhan - Zul'jin"] = {
-			["collapsed"] = true,
-		},
-		["Shanyt - Zul'jin"] = {
-			["collapsed"] = true,
-		},
-		["Bathal - Argent Dawn"] = {
-			["collapsed"] = true,
-		},
-		["Sinh - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Thorinbane - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Serbitechna - Darkspear"] = {
-			["collapsed"] = true,
-		},
-		["Avisar - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Ruffinton - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Datgore - Zul'jin"] = {
-			["collapsed"] = true,
-		},
-		["Malivant - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Serbitechna - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Tinkster - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Gillbourn - Runetotem"] = {
-			["collapsed"] = true,
-		},
-		["Tynkster - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Tyriinid - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Migimong - Runetotem"] = {
+		["Brewnheimer - Darkspear"] = {
 			["collapsed"] = true,
 		},
 		["Shimzo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
+		["Gillbourn - Runetotem"] = {
+			["collapsed"] = true,
+		},
+		["Tinkster - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Sinh - Dalaran"] = {
+			["collapsed"] = true,
+		},
 		["Narisaric - Dalaran"] = {
 			["collapsed"] = true,
 		},
+		["Zulbathal - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Serbitechna - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Jingojaggot - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Fantastiburo - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Shathiel - Darkspear"] = {
+			["collapsed"] = true,
+		},
+		["Bathal - Argent Dawn"] = {
+			["collapsed"] = true,
+		},
+		["Beeronimo - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Migimong - Runetotem"] = {
+			["collapsed"] = true,
+		},
+		["Datgore - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Fantastiburo - Argent Dawn"] = {
+			["collapsed"] = true,
+		},
+	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "3.2.3",
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",
@@ -109,48 +116,45 @@ KalielsTrackerDB = {
 		["Ruffinton - Dalaran"] = "Default",
 		["Malivant - Dalaran"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
+		["Narisaric - Dalaran"] = "Default",
+		["Claugh - Runetotem"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
-		["Serbitechna - Darkspear"] = "Default",
-		["Dialdaas - Darkspear"] = "Default",
+		["Migimong - Runetotem"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Panboozled - Runetotem"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Tyranasticus - Zul'jin"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
+		["Panboozled - Runetotem"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Brewnheimer - Darkspear"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Gillbourn - Runetotem"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
-		["Sinh - Dalaran"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Tynster - Dalaran"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+		["Brewnheimer - Darkspear"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Gillbourn - Runetotem"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Tynster - Dalaran"] = "Default",
+		["Sinh - Dalaran"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Vancard - Zul'jin"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
-		["Migimong - Runetotem"] = "Default",
-		["Claugh - Runetotem"] = "Default",
-		["Narisaric - Dalaran"] = "Default",
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "3.2.3",
+		["Dialdaas - Darkspear"] = "Default",
+		["Serbitechna - Darkspear"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

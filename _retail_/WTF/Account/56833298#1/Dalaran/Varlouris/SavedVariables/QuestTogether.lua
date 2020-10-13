@@ -1,30 +1,33 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[26734] = {
-			["title"] = "The Source of the Madness",
+		[11940] = {
+			["title"] = "Drake Hunt",
 			["objectives"] = {
-				"0/1 Whispering Blue Stone", -- [1]
+				"0/1 Captured Nexus Drake", -- [1]
 			},
 		},
-		[27353] = {
-			["title"] = "Blessings of the Elements",
+		[13412] = {
+			["title"] = "Corastrasza",
 			["objectives"] = {
-				"0/1 Walden's Talisman", -- [1]
-				"0/1 Book of Lost Souls", -- [2]
-				"0/5 Ghostly Essence", -- [3]
 			},
 		},
-		[208] = {
-			["title"] = "Big Game Hunter",
+		[26944] = {
+			["title"] = "Exploring Gnomeregan",
 			["objectives"] = {
-				"0/1 Head of Bangalash", -- [1]
 			},
 		},
-		[26345] = {
-			["title"] = "Excelsior",
+		[11931] = {
+			["title"] = "Cracking the Code",
 			["objectives"] = {
-				"0/1 Elder Crocolisk Skin", -- [1]
+				"1/3 Shimmering Rune", -- [1]
+				"1/1 Azure Codex", -- [2]
+			},
+		},
+		[12728] = {
+			["title"] = "Monitoring the Rift: Winterfin Cavern",
+			["objectives"] = {
+				"0/1 Winterfin Cavern Reading Taken", -- [1]
 			},
 		},
 		[31891] = {
@@ -37,19 +40,27 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[26744] = {
-			["title"] = "Deep Roots",
+		[12117] = {
+			["title"] = "Travel to Moa'ki Harbor",
 			["objectives"] = {
-				"0/1 Bloodscalp Lore Tablet", -- [1]
 			},
 		},
-		[26737] = {
-			["title"] = "Stopping Kurzen's Legacy",
+		[12794] = {
+			["title"] = "The Magical Kingdom of Dalaran",
 			["objectives"] = {
-				"0/1 Chief Anders slain", -- [1]
-				"0/1 Chief Gaulus slain", -- [2]
-				"0/1 Chief Miranda slain", -- [3]
-				"0/1 Chief Esquivel slain", -- [4]
+				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
+			},
+		},
+		[29608] = {
+			["title"] = "Allies in Dalaran",
+			["objectives"] = {
+			},
+		},
+		[11943] = {
+			["title"] = "The Cell",
+			["objectives"] = {
+				"0/1  ", -- [1]
+				"0/1  ", -- [2]
 			},
 		},
 		[44989] = {
@@ -58,11 +69,29 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
+		[11707] = {
+			["title"] = "Distress Call",
+			["objectives"] = {
+			},
+		},
+		[12086] = {
+			["title"] = "The Son of Karkut",
+			["objectives"] = {
+			},
+		},
+		[27353] = {
+			["title"] = "Blessings of the Elements",
+			["objectives"] = {
+				"0/1 Walden's Talisman", -- [1]
+				"0/1 Book of Lost Souls", -- [2]
+				"0/5 Ghostly Essence", -- [3]
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
-		["events"] = false,
 		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
 	},
 }

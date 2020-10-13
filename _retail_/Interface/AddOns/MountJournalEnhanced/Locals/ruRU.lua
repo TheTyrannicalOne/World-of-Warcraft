@@ -82,6 +82,8 @@ L["Underwater"] = "Подводные"
 --[[Translation missing --]]
 --[[ L["Amphibian"] = "Amphibian"--]] 
 --[[Translation missing --]]
+--[[ L["Animite"] = "Animite"--]] 
+--[[Translation missing --]]
 --[[ L["Aqir Flyers"] = "Aqir Flyers"--]] 
 --[[Translation missing --]]
 --[[ L["Arachnids"] = "Arachnids"--]] 
@@ -155,7 +157,13 @@ L["Fish"] = "Рыбы"
 --[[Translation missing --]]
 --[[ L["Flying Steeds"] = "Flying Steeds"--]] 
 L["Foxes"] = "лисицы"
+--[[Translation missing --]]
+--[[ L["Gargon"] = "Gargon"--]] 
 L["Goats"] = "Козлы"
+--[[Translation missing --]]
+--[[ L["Gorger"] = "Gorger"--]] 
+--[[Translation missing --]]
+--[[ L["Gorm"] = "Gorm"--]] 
 --[[Translation missing --]]
 --[[ L["Grand Drakes"] = "Grand Drakes"--]] 
 L["Gronnlings"] = "Малые гронны"
@@ -186,6 +194,8 @@ L["Kodos"] = "Кодо"
 --[[Translation missing --]]
 --[[ L["Krolusks"] = "Krolusks"--]] 
 --[[Translation missing --]]
+--[[ L["Larion"] = "Larion"--]] 
+--[[Translation missing --]]
 --[[ L["Lions"] = "Lions"--]] 
 L["Mammoths"] = "Мамонты"
 --[[Translation missing --]]
@@ -204,6 +214,8 @@ L["Mechanostriders"] = "Механодолгоноги"
 --[[Translation missing --]]
 --[[ L["Mecha-suits"] = "Mecha-suits"--]] 
 L["Moose"] = "Лось"
+--[[Translation missing --]]
+--[[ L["Moth"] = "Moth"--]] 
 --[[Translation missing --]]
 --[[ L["Motorcycles"] = "Motorcycles"--]] 
 --[[Translation missing --]]
@@ -237,9 +249,13 @@ L["Ravagers"] = "Разорители"
 L["Rhinos"] = "Носороги"
 L["Riverbeasts"] = "Речные чудовища"
 --[[Translation missing --]]
+--[[ L["Roc"] = "Roc"--]] 
+--[[Translation missing --]]
 --[[ L["Rockets"] = "Rockets"--]] 
 --[[Translation missing --]]
 --[[ L["Ruinstriders"] = "Ruinstriders"--]] 
+--[[Translation missing --]]
+--[[ L["Runestag"] = "Runestag"--]] 
 --[[Translation missing --]]
 --[[ L["Rylaks"] = "Rylaks"--]] 
 --[[Translation missing --]]
@@ -248,6 +264,8 @@ L["Scorpions"] = "Скорпионы"
 --[[Translation missing --]]
 --[[ L["Sea Serpents"] = "Sea Serpents"--]] 
 L["Seahorses"] = "Морские коньки"
+--[[Translation missing --]]
+--[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "Силитиды"
 --[[Translation missing --]]
 --[[ L["Snapdragons"] = "Snapdragons"--]] 
@@ -266,6 +284,8 @@ L["Talbuks"] = "Талбуки"
 L["Tallstriders"] = "Долгоноги"
 L["Talonbirds"] = "Вороны"
 --[[Translation missing --]]
+--[[ L["Tauralus"] = "Tauralus"--]] 
+--[[Translation missing --]]
 --[[ L["Tigers"] = "Tigers"--]] 
 --[[Translation missing --]]
 --[[ L["Toads"] = "Toads"--]] 
@@ -282,6 +302,8 @@ L["Turtles"] = "Черепахи"
 --[[ L["Ur'zul"] = "Ur'zul"--]] 
 --[[Translation missing --]]
 --[[ L["Vehicles"] = "Vehicles"--]] 
+--[[Translation missing --]]
+--[[ L["Vulpin"] = "Vulpin"--]] 
 --[[Translation missing --]]
 --[[ L["Vultures"] = "Vultures"--]] 
 --[[Translation missing --]]

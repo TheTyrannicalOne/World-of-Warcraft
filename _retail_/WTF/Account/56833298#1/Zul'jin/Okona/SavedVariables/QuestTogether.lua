@@ -1,8 +1,13 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[58122] = {
-			["title"] = "For the Horde",
+		[32674] = {
+			["title"] = "I Believe You Can Fly",
+			["objectives"] = {
+			},
+		},
+		[27683] = {
+			["title"] = "Into the Woods",
 			["objectives"] = {
 			},
 		},
@@ -16,40 +21,34 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[27144] = {
+			["title"] = "The Reckoning",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 Witness the Reckoning", -- [1]
 			},
 		},
-		[28144] = {
-			["title"] = "Thieving Little Monsters!",
+		[25056] = {
+			["title"] = "Grisly Grizzlies",
 			["objectives"] = {
-				"0/6 Forsaken Camp \"Supplies\"", -- [1]
+				"0/5 Plagued Bruin Hide", -- [1]
 			},
 		},
-		[28138] = {
-			["title"] = "Human Infestation",
+		[26935] = {
+			["title"] = "Northridge Lumber Mill",
 			["objectives"] = {
-				"0/8 Hillsbrad Human Captured", -- [1]
 			},
 		},
-		[28146] = {
-			["title"] = "Coastal Delicacies!",
+		[49813] = {
+			["title"] = "Adventure Calls",
 			["objectives"] = {
-				"0/12 Murlocs fed to Hungry Mine Spider", -- [1]
-			},
-		},
-		[11446] = {
-			["title"] = "Brewfest!",
-			["objectives"] = {
+				"0/1 Select your next assignment", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

@@ -1,21 +1,131 @@
 
 MasterPlanAG = {
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["lastCacheTime"] = 1602555727,
+			["summary"] = {
+				["lastOilTime"] = 1602526953,
+				["tt2"] = 1601786308,
+				["tt3"] = 1601532756,
+				["ti1"] = 118531,
+				["tt1"] = 1601646576,
+				["ti3"] = 127855,
+				["inProgress"] = {
+					[500] = 1602591692,
+					[745] = 1602591753,
+					[397] = 1602591694,
+					[119] = 1602559280,
+					[385] = 1602570082,
+					[699] = 1602559301,
+					[538] = 1602555750,
+					[675] = 1602555689,
+					[677] = 1602591677,
+					[184] = 1602557473,
+					[264] = 1602555736,
+					[563] = 1602555747,
+				},
+				["ti2"] = 122486,
+			},
+			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 5872,
+			["curOil"] = 99570,
+		},
+		["Tyrannithal"] = {
+			["faction"] = "Horde",
+			["class"] = "DEMONHUNTER",
+		},
+	},
+	["Dalaran"] = {
+		["Rotclaugh"] = {
+			["lastCacheTime"] = 1600407706,
+			["class"] = "DEATHKNIGHT",
+			["curRes"] = 219,
+			["faction"] = "Alliance",
+		},
+		["Ruffinton"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Tinkster"] = {
+			["faction"] = "Alliance",
+			["class"] = "WARLOCK",
+		},
+		["Darnastris"] = {
+			["summary"] = {
+				["inProgress"] = {
+					[468] = 1600238851,
+				},
+			},
+			["faction"] = "Alliance",
+			["lastCacheTime"] = 1600229469,
+			["curRes"] = 533,
+			["class"] = "MAGE",
+		},
+		["Malivant"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["Avisar"] = {
+			["summary"] = {
+				["inProgress"] = {
+					[65] = 1590515228,
+					[86] = 1590515225,
+				},
+			},
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+			["curRes"] = 172,
+			["lastCacheTime"] = 1590520104,
+		},
+		["Thorinbane"] = {
+			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
+		},
+		["Illingrath"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
+		},
+		["Kelvalatar"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+		["Varlouris"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
+		},
+	},
 	["Zul'jin"] = {
 		["Tyranasticus"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
+			["class"] = "DEMONHUNTER",
 		},
 		["Shimzo"] = {
+			["faction"] = "Horde",
 			["class"] = "ROGUE",
-			["faction"] = "Horde",
 		},
-		["Datgore"] = {
-			["class"] = "HUNTER",
+		["Shanyt"] = {
 			["faction"] = "Horde",
+			["class"] = "WARRIOR",
 		},
 		["Okona"] = {
 			["class"] = "PRIEST",
 			["faction"] = "Horde",
+		},
+		["Datgore"] = {
+			["faction"] = "Horde",
+			["class"] = "HUNTER",
 		},
 		["Zulbathal"] = {
 			["summary"] = {
@@ -35,130 +145,23 @@ MasterPlanAG = {
 			["class"] = "DRUID",
 		},
 		["Kotalkhan"] = {
-			["class"] = "MONK",
 			["faction"] = "Horde",
-		},
-		["Shaekhan"] = {
-			["faction"] = "Neutral",
 			["class"] = "MONK",
+		},
+		["Jingojaggot"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Horde",
 		},
 		["Vancard"] = {
+			["faction"] = "Horde",
 			["class"] = "MAGE",
-			["faction"] = "Horde",
 		},
-		["Shanyt"] = {
-			["class"] = "WARRIOR",
-			["faction"] = "Horde",
+		["Shaekhan"] = {
+			["class"] = "MONK",
+			["faction"] = "Neutral",
 		},
 		["Fantastiburo"] = {
-			["faction"] = "Horde",
 			["class"] = "SHAMAN",
-		},
-	},
-	["Dalaran"] = {
-		["Rotclaugh"] = {
-			["class"] = "DEATHKNIGHT",
-			["lastCacheTime"] = 1600407706,
-			["curRes"] = 219,
-			["faction"] = "Alliance",
-		},
-		["Ruffinton"] = {
-			["class"] = "ROGUE",
-			["faction"] = "Alliance",
-		},
-		["Serbitechna"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
-		},
-		["Tinkster"] = {
-			["class"] = "WARLOCK",
-			["faction"] = "Alliance",
-		},
-		["Darnastris"] = {
-			["summary"] = {
-				["inProgress"] = {
-					[468] = 1600238851,
-				},
-			},
-			["faction"] = "Alliance",
-			["lastCacheTime"] = 1600229469,
-			["curRes"] = 533,
-			["class"] = "MAGE",
-		},
-		["Malivant"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Avisar"] = {
-			["summary"] = {
-				["inProgress"] = {
-					[65] = 1590515228,
-					[86] = 1590515225,
-				},
-			},
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-			["curRes"] = 172,
-			["lastCacheTime"] = 1590520104,
-		},
-		["Thorinbane"] = {
-			["class"] = "WARRIOR",
-			["faction"] = "Alliance",
-		},
-		["Varlouris"] = {
-			["class"] = "SHAMAN",
-			["faction"] = "Alliance",
-		},
-		["Kelvalatar"] = {
-			["faction"] = "Alliance",
-			["class"] = "SHAMAN",
-		},
-		["Illingrath"] = {
-			["faction"] = "Alliance",
-			["class"] = "DEMONHUNTER",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["class"] = "DRUID",
-			["faction"] = "Horde",
-		},
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["faction"] = "Horde",
-			["summary"] = {
-				["lastOilTime"] = 1602031980,
-				["inProgress"] = {
-					[176] = 1602083221,
-					[503] = 1602102119,
-					[571] = 1602109385,
-					[265] = 1602109371,
-					[665] = 1602084138,
-					[745] = 1602096780,
-					[570] = 1602094989,
-					[565] = 1602145383,
-					[361] = 1602116561,
-					[302] = 1602102149,
-					[573] = 1602145388,
-					[677] = 1602116528,
-					[177] = 1602083224,
-				},
-				["ti3"] = 127855,
-				["ti2"] = 122486,
-				["tt1"] = 1601646576,
-				["ti1"] = 118531,
-				["tt3"] = 1601532756,
-				["tt2"] = 1601786308,
-			},
-			["curOil"] = 96320,
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 4865,
-			["lastCacheTime"] = 1602081602,
-		},
-		["Tyrannithal"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
 		},
 	},

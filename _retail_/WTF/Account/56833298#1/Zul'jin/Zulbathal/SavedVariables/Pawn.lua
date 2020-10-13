@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0336,
+	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
+	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -88,8 +90,7 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:128822::::::::108:104::::::|h[Claws of Ursoc]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128821] = {
 			["Relics"] = {
@@ -131,7 +132,6 @@ PawnOptions = {
 			["Name"] = "Scythe of Elune",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",

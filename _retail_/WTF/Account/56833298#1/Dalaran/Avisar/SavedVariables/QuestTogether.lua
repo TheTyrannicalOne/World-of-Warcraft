@@ -31,23 +31,20 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[44720] = {
-			["title"] = "A Call to Action",
-			["objectives"] = {
 			},
 		},
 		[57006] = {
@@ -58,15 +55,18 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[56378] = {
+			["title"] = "The Missing Crew",
 			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[39060] = {
@@ -77,10 +77,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[54438] = {
@@ -102,13 +102,16 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[56499] = {
+			["title"] = "Storming the Battlefields",
 			["objectives"] = {
+				"Win a PVP Island Expedition", -- [1]
+				"0/1 Win an Epic Battleground", -- [2]
+				"0/1 Win a Battleground", -- [3]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
 			},
 		},
@@ -125,12 +128,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56499] = {
-			["title"] = "Storming the Battlefields",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"0/1 Win an Epic Battleground", -- [2]
-				"0/1 Win a Battleground", -- [3]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -173,10 +174,9 @@ QuestTogether = {
 				"10/25 Slay Horde Players", -- [1]
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[44720] = {
+			["title"] = "A Call to Action",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[54485] = {
@@ -189,7 +189,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

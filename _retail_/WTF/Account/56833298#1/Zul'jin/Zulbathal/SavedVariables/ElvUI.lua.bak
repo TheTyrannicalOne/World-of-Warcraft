@@ -4,727 +4,23 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/cancelform", -- [1]
-		"/wAVE", -- [2]
-		"/reloadui", -- [3]
-		"/click ExtraActionButton1", -- [4]
-		"/fishingbuddy", -- [5]
-		"/canimogit", -- [6]
-		"/wave", -- [7]
+		"/fishingbuddy", -- [2]
+		"/allthethings", -- [3]
+		"/wave", -- [4]
+		"/wAVE", -- [5]
+		"/omnicc", -- [6]
+		"/skada hide", -- [7]
 		"/reload", -- [8]
-		"/allthethings", -- [9]
-		"/opie", -- [10]
-		"/omnicc", -- [11]
+		"/reloadui", -- [9]
+		"/canimogit", -- [10]
+		"/opie", -- [11]
 		"/dance", -- [12]
-		"/skada hide", -- [13]
+		"/click ExtraActionButton1", -- [13]
 		"/omen", -- [14]
 		"/skada toggle", -- [15]
 		"/click extraaddonbutton1", -- [16]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"<Black List> WTS  Nzoth Heroic  Now!!", -- [1]
-			"Lyenda-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lyenda-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			3490, -- [11]
-			"Player-61-0B9AD053", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Lyenda|r",
-			[51] = 1601079521,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"are you left in a Shroud of mystery of a raid spot? Does your leaders eat all the BLT's ? is your raid team always blaming the hunter? does your guild imply that no one listens to techno?  Come join the laid back place of [Guild: Raids Without Pants] ", -- [1]
-			"Mcmuffín-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mcmuffín-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			3493, -- [11]
-			"Player-61-06D9CC5E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Mcmuffín|r",
-			[51] = 1601079548,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"thought he was trolling ", -- [1]
-			"Itcoronatime-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Itcoronatime-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2223, -- [11]
-			"Player-61-0C92BFA2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Itcoronatime|r",
-			[51] = 1601194843,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"My mother may have been a bitch, but no worse than your's being a whore", -- [1]
-			"Kothy-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kothy-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2224, -- [11]
-			"Player-61-0DE4E8EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Kothy|r",
-			[51] = 1601194847,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
-			"Sorddon-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sorddon-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2225, -- [11]
-			"Player-61-0CA9A736", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcSorddon|r",
-			[51] = 1601194857,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"WTS 5 Mask vision full clear", -- [1]
-			"Sorddon-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sorddon-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2226, -- [11]
-			"Player-61-0CA9A736", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcSorddon|r",
-			[51] = 1601194857,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"have all my gold", -- [1]
-			"Itcoronatime-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Itcoronatime-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2227, -- [11]
-			"Player-61-0C92BFA2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Itcoronatime|r",
-			[51] = 1601194858,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"ok but at least my mom isnt a cockboy", -- [1]
-			"Ibelikebruh-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ibelikebruh-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2228, -- [11]
-			"Player-61-0DE52544", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Ibelikebruh|r",
-			[51] = 1601194891,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"tgurl?", -- [1]
-			"Glaiverobber-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Glaiverobber-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2235, -- [11]
-			"Player-61-0AD75E6F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Glaiverobber|r",
-			[51] = 1601194902,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"No, maybe not. She just took too many cocks. Reason being she doesn't know who your father is.", -- [1]
-			"Kothy-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kothy-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2263, -- [11]
-			"Player-61-0DE4E8EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Kothy|r",
-			[51] = 1601194922,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"she may have been a whore but she didnt let her son turn into a female", -- [1]
-			"Momochî-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Momochî-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2264, -- [11]
-			"Player-61-0DBAF979", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Momochî|r",
-			[51] = 1601194924,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"your dad is moms uncle shutup idiot", -- [1]
-			"Ibelikebruh-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ibelikebruh-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2265, -- [11]
-			"Player-61-0DE52544", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Ibelikebruh|r",
-			[51] = 1601194943,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"That wasn't good buddy. That sucked. Lol", -- [1]
-			"Kothy-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kothy-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2266, -- [11]
-			"Player-61-0DE4E8EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Kothy|r",
-			[51] = 1601194946,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
-			"Sorddon-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sorddon-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			17, -- [11]
-			"Player-61-0CA9A736", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcSorddon|r",
-			[51] = 1601196103,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"WTS 5 Mask vision full clear", -- [1]
-			"Sorddon-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sorddon-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			18, -- [11]
-			"Player-61-0CA9A736", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcSorddon|r",
-			[51] = 1601196103,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"--DEALS--||||<<WTS M+ 15 keys ONLY 85k!!! >> <<M+ 15 ArmorStack 89k>> <Only Gold> <<KEYSTONE MASTER DEAL 1’050k>><Mechagon Hertz Locker: 375K>> We Are Also Recruiting:  https://discord.gg/gdJzCzB", -- [1]
-			"Kandytopia-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kandytopia-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			471, -- [11]
-			"Player-61-0D68DD49", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcKandytopia|r",
-			[51] = 1601303236,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"WTS Heroic Ny'alotha Personal Loot 120k  and Funnels for 60k each TONIGHT @8PM EST! || AOTC for ONLY 40k|| Jaina Mount 325k || We are also recruiting high experienced advertisers & boosters to expand our roster <Gold Only> ||Torghast Community||", -- [1]
-			"Narab-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Narab-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			546, -- [11]
-			"Player-61-06D40856", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cNarab|r",
-			[51] = 1601303304,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"<BLT> Is a now recruiting! AOTC guild thats going to push into mythic progression content. 6/12m experienced lead. Going to get things done without the stress/tension/anger! In need of Range dps and healer! Raid times are Sunday and wednesday 9-12pm ", -- [1]
-			"Harleydamned-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Harleydamned-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			643, -- [11]
-			"Player-61-0CC2EDFB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Harleydamned|r",
-			[51] = 1601303329,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"--DEALS--||||<<WTS M+ 15 keys ONLY 85k!!! >> <<M+ 15 ArmorStack 89k>> <Only Gold> <<KEYSTONE MASTER DEAL 1’050k>><Mechagon Hertz Locker: 375K>> We Are Also Recruiting:  https://discord.gg/gdJzCzB", -- [1]
-			"Kandytopia-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kandytopia-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			669, -- [11]
-			"Player-61-0D68DD49", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcKandytopia|r",
-			[51] = 1601303336,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"|cffa335ee|Hitem:121815::::::::20:64::::::|h[Voidtalon of the Dark Star]|h|r|cffa335ee|Hitem:156798::::::::20:64::::::|h[The Hivemind]|h|r|cffa335ee|Hitem:138387::::::::20:64::::::|h[Ratstallion]|h|r|cffa335ee|Hitem:103638::::::::20:64::::::|h[Reins of the Ashhide Mushan Beast]|h|r|cffa335ee|Hitem:174836::::::::20:64::::::|h[Awakened Mindborer]|h|rRaids&Keys G0ld 0nly.", -- [1]
-			"Montitwo-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Montitwo-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2043, -- [11]
-			"Player-61-0CD7D0F5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Montitwo|r",
-			[51] = 1601360761,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"WTS M+15 85K (89k with armor stack ) Mythic & Heroic Ny'alotha || Horrific Vision 0-5 masks || Jaina & N'zoth Mounts || NEW Mecha Hardmode+MOUNT OR Hertz Locker!  || KSM  Deals get your mount today !!!PVP Sales!!! ! BEST PRICE  <3 ||GOLD ONLY", -- [1]
-			"Toxic-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Toxic-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			45, -- [11]
-			"Player-61-0B26AD19", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Toxic|r",
-			[51] = 1601385094,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"!M Nzoth! |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r||||2 spot Tuesday / Reserve your spot now !!  PST For info GOLD ONLY", -- [1]
-			"Toxic-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Toxic-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			46, -- [11]
-			"Player-61-0B26AD19", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Toxic|r",
-			[51] = 1601385096,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"paying 1k for guild sigs", -- [1]
-			"Bombadin-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bombadin-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			47, -- [11]
-			"Player-61-0D0515DD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Bombadin|r",
-			[51] = 1601385103,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"need 1 guild sig... paying 1k", -- [1]
-			"Bombadin-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bombadin-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			48, -- [11]
-			"Player-61-0D0515DD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Bombadin|r",
-			[51] = 1601385259,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"JAINA MOUNT 3 spots LEFT NEXT  SUNDAY  Hurry up and reserve your spot pst for info  |cffa335ee|Hitem:166705::::::::120:253::::::|h[Glacial Tidestorm]|h|r Get it now before it goes to 1% drop !! GOLD ONLY", -- [1]
-			"Toxic-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Toxic-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			49, -- [11]
-			"Player-61-0B26AD19", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Toxic|r",
-			[51] = 1601385282,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"!M Nzoth! |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r||||2 spot Tuesday / Reserve your spot now !!  PST For info GOLD ONLY", -- [1]
-			"Toxic-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Toxic-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			51, -- [11]
-			"Player-61-0B26AD19", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Toxic|r",
-			[51] = 1601385283,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"Paying 2k for guild sig", -- [1]
-			"Bombadin-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bombadin-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			60, -- [11]
-			"Player-61-0D0515DD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Bombadin|r",
-			[51] = 1601385336,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"WTS M+15 85K (89k with armor stack ) Mythic & Heroic Ny'alotha || Horrific Vision 0-5 masks || Jaina & N'zoth Mounts || NEW Mecha Hardmode+MOUNT OR Hertz Locker!  || KSM  Deals get your mount today !!!PVP Sales!!! ! BEST PRICE  <3 ||GOLD ONLY", -- [1]
-			"Toxic-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Toxic-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			75, -- [11]
-			"Player-61-0B26AD19", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Toxic|r",
-			[51] = 1601385386,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"WTS M15+!!ONLY! 85K!! (M+ 10-24) Specific KEYS!! > |||| <! ARMOR STACK 89k!>(special prices for multiple runs) ||||  KSM SPECIAL PRICE || Mech HM Mount || Mythic Ny'alotha full run  and specific bosses ||||GOLD ONLY https://discord.gg/esudQCa <Huokan>", -- [1]
-			"Orcrux-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Orcrux-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			270, -- [11]
-			"Player-61-0DDC78E9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cOrcrux|r",
-			[51] = 1601618064,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"*****wts +15 keys 75k!*****", -- [1]
-			"Shockiette-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shockiette-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			304, -- [11]
-			"Player-61-0DDFDB84", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Shockiette|r",
-			[51] = 1601618074,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"|cffa335ee|Hitem:121815::::::::20:64::::::|h[Voidtalon of the Dark Star]|h|r|cffa335ee|Hitem:156798::::::::20:64::::::|h[The Hivemind]|h|r|cffa335ee|Hitem:138387::::::::20:64::::::|h[Ratstallion]|h|r|cffa335ee|Hitem:103638::::::::20:64::::::|h[Reins of the Ashhide Mushan Beast]|h|r|cffa335ee|Hitem:174836::::::::20:64::::::|h[Awakened Mindborer]|h|rRaids&Keys G0ld 0nly.", -- [1]
-			"Montitwo-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Montitwo-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			319, -- [11]
-			"Player-61-0CD7D0F5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Montitwo|r",
-			[51] = 1601618087,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
-		{
-			"WTS Mythic+11-20 for 475weekly chest/Heroic Ny'alotha 12/12 PL,Guarantee FULL 460 Gear|cffa335ee|Hitem:174862::::::::1:262::::::|h[Uncorrupted Voidwing]|h|rMechagon 8/8 HM for|cffa335ee|Hitem:168830::::::::1:262::::::|h[Aerial Unit R-21/X]|h|rVisions Cloak Rank can now.PST", -- [1]
-			"Tirtzaklert-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tirtzaklert-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			333, -- [11]
-			"Player-61-0DE7F2E1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcTirtzaklert|r",
-			[51] = 1601618114,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
 		{
 			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
 			"Sorddon-Zul'jin", -- [2]
@@ -746,7 +42,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSorddon|r",
 			[51] = 1601618150,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [1]
 		{
 			"WTS 5 Mask vision full clear", -- [1]
 			"Sorddon-Zul'jin", -- [2]
@@ -768,7 +64,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSorddon|r",
 			[51] = 1601618150,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [2]
 		{
 			"WTS Mythic Nya 2 FULL RUNS + Mount later in the week. Don't hesitate, reserve your spot now!", -- [1]
 			"Tacodeals-Zul'jin", -- [2]
@@ -790,7 +86,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTacodeals|r",
 			[51] = 1601618164,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [3]
 		{
 			"Get your|cffffff00|Hachievement:14145:Player-57-0C739F50:0:0:0:-1:3434:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r B4 it goes away! |||||| M Nzoth |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r  2 spots open for next week!", -- [1]
 			"Tacodeals-Zul'jin", -- [2]
@@ -812,7 +108,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTacodeals|r",
 			[51] = 1601618164,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [4]
 		{
 			"2049 is where its at", -- [1]
 			"Palindari-Zul'jin", -- [2]
@@ -834,7 +130,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Palindari|r",
 			[51] = 1601618190,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [5]
 		{
 			"wts Timed +15 keys 85k! Add 5k for armor stack, +10k for specific key.  Ready to go now! Gold only, Pst =D", -- [1]
 			"Shockiette-Zul'jin", -- [2]
@@ -856,7 +152,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Shockiette|r",
 			[51] = 1601618196,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [6]
 		{
 			"Likes Leather - A late night 9/12M guild is recruiting warlocks, boomkins and a MW. We raid Tues/Weds 11pm-2am EST. We also run keys nightly. Accepting casuals and raiders for SL. Whisper for more info or an invite.", -- [1]
 			"Olïver-Zul'jin", -- [2]
@@ -878,7 +174,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Olïver|r",
 			[51] = 1601618198,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [7]
 		{
 			"2069*", -- [1]
 			"Ishalian-Zul'jin", -- [2]
@@ -900,7 +196,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Ishalian|r",
 			[51] = 1601618200,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [8]
 		{
 			":)", -- [1]
 			"Ishalian-Zul'jin", -- [2]
@@ -922,7 +218,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Ishalian|r",
 			[51] = 1601618203,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [9]
 		{
 			"WTS M15+!!ONLY! 85K!! (M+ 10-24) Specific KEYS!! > |||| <! ARMOR STACK 89k!>(special prices for multiple runs) ||||  KSM SPECIAL PRICE || Mech HM Mount || Mythic Ny'alotha full run  and specific bosses ||||GOLD ONLY https://discord.gg/esudQCa <Huokan>", -- [1]
 			"Orcrux-Zul'jin", -- [2]
@@ -944,7 +240,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOrcrux|r",
 			[51] = 1601618205,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [10]
 		{
 			">>BEST PRICES<< - combo DEAL for KSM achiev! - Ny'alotha full clear with funnels (heroic and mythic)  - horrific visions 0-5 masks loot/objectives  - Mechagon H.E.R.T.Z Locker / Mount -  GOLD ONLY ;)", -- [1]
 			"Huojina-Zul'jin", -- [2]
@@ -966,7 +262,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Huojina|r",
 			[51] = 1601650736,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [11]
 		{
 			"WTB  Any Mounts (Loot, crafted, Etc), Toy, Rare pets ( Tcg, unobtainable anymore), Abyssal Fragment, Medallion of the legion ! Pst :) ", -- [1]
 			"Banquièree-Zul'jin", -- [2]
@@ -988,7 +284,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecBanquièree|r",
 			[51] = 1601650738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [12]
 		{
 			"WTS powerleveling 110-120 FH, lvl both faction!!! 4K for lvl with heirlooms, 6k without, gold only! discount for two toon!!! // we also accept gold in zuljin and stormrage realm/faction PST", -- [1]
 			"Dõma-Zul'jin", -- [2]
@@ -1010,7 +306,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Dõma|r",
 			[51] = 1601650780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [13]
 		{
 			"WTS M15+!!ONLY! 85K!! (M+ 10-24) Specific KEYS!! > |||| <! ARMOR STACK 89k!>(special prices for multiple runs) ||||  KSM SPECIAL PRICE || Mech HM Mount || Mythic Ny'alotha full run  and specific bosses ||||GOLD ONLY https://discord.gg/esudQCa <Huokan>", -- [1]
 			"Orcrux-Zul'jin", -- [2]
@@ -1032,7 +328,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOrcrux|r",
 			[51] = 1601650784,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [14]
 		{
 			"Wts|cffa335ee|Hkeystone:158923:353:15:10:7:2:120|h[Keystone: Siege of Boralus (15)]|h|r-50k! Cheapest  carry on server, guaranteed! don't give your money to off-server bot spam or 1500 io noobs!", -- [1]
 			"Jeebahayderz-Zul'jin", -- [2]
@@ -1054,7 +350,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jeebahayderz|r",
 			[51] = 1601650791,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [15]
 		{
 			">>BEST PRICES<< - combo DEAL for KSM achiev! - Ny'alotha full clear with funnels (heroic and mythic)  - horrific visions 0-5 masks loot/objectives  - Mechagon H.E.R.T.Z Locker / Mount -  GOLD ONLY ;)", -- [1]
 			"Huojina-Zul'jin", -- [2]
@@ -1076,7 +372,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Huojina|r",
 			[51] = 1601650813,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [16]
 		{
 			"WTS M15+!!!!ONLY!!!>>>85K!! (M+ 15-24) Specific KEYS!! >>!! <<! ARMOR STACK 89k!>>|| || WTS Mythic Ny'alotha full clear<<DEAL for KSM ACHIEV>> || WTS Horrific Vision 0-5 masks guaranteed || WTS Jaina & N'zoth Mounts!WTS!PVP 2s3s!|| GOLD ONLY>>Huokan<<", -- [1]
 			"Ksadilla-Zul'jin", -- [2]
@@ -1098,7 +394,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cKsadilla|r",
 			[51] = 1601706735,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [17]
 		{
 			"sepultura?", -- [1]
 			"Fargunschnit-Zul'jin", -- [2]
@@ -1120,7 +416,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Fargunschnit|r",
 			[51] = 1601706764,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [18]
 		{
 			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
 			"Sorddon-Zul'jin", -- [2]
@@ -1142,7 +438,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSorddon|r",
 			[51] = 1601706784,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [19]
 		{
 			"WTS 5 Mask vision full clear", -- [1]
 			"Sorddon-Zul'jin", -- [2]
@@ -1164,7 +460,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSorddon|r",
 			[51] = 1601706784,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [20]
 		{
 			"Great deals on Ny'alotha H, Jaina Mount (330k) Ny'alotha M full clear. N'zoth Mount, specific kills || M+10-24s (+15 85k or 89k with armor stack) Horrific Visions 0-5 masks. Excellent KSM deal. Mechagon HM and Hertz Locker. *Includes a free hug*", -- [1]
 			"Lanf-Zul'jin", -- [2]
@@ -1186,7 +482,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLanf|r",
 			[51] = 1601706804,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [21]
 		{
 			"WTS M15+!!!!ONLY!!!>>>85K!! (M+ 15-24) Specific KEYS!! >>!! <<! ARMOR STACK 89k!>>|| || WTS Mythic Ny'alotha full clear<<DEAL for KSM ACHIEV>> || WTS Horrific Vision 0-5 masks guaranteed || WTS Jaina & N'zoth Mounts!WTS!PVP 2s3s!|| GOLD ONLY>>Huokan<<", -- [1]
 			"Ksadilla-Zul'jin", -- [2]
@@ -1208,7 +504,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cKsadilla|r",
 			[51] = 1601706812,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [22]
 		{
 			"FREE M+ 15-20 Carries! Come and hang out and get your weekly key done. Tune in at twitch.tv/pikacali and type !carry (^.^)", -- [1]
 			"Beautiesqt-Zul'jin", -- [2]
@@ -1230,7 +526,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBeautiesqt|r",
 			[51] = 1601706826,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [23]
 		{
 			"PR-PATCH DEALS >> Heroic 12/12 Full Clear Ny'alotha<< Personal Loot & funnel spots availables! Multiple runs. Nzoth only spams, and Also M+10s - 20s, ARMOR STACK FREE, specific key options available. & Horrific Visions GOLD ONLY", -- [1]
 			"Katsales-Zul'jin", -- [2]
@@ -1252,7 +548,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecKatsales|r",
 			[51] = 1601865330,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [24]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-165791-61-95947021|h[Guild: Apsis]|h|rAre you hoping to kill some cool stuff in Shadowlands? Maybe make some friends while doing it? Then look no further, <Apsis> is a new guild building a raid team of epic gamers, new and experienced :) fri/sat 9pm-12:30am est wsp for info/inv", -- [1]
 			"Lielynnda-Zul'jin", -- [2]
@@ -1274,7 +570,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lielynnda|r",
 			[51] = 1601865350,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [25]
 		{
 			"WTS Jaina Mount 330k! WTS Cara+N'Zoth 35k! HM Mechagon Mount for 125k Hertz Locker achievement at 375k! Heroic and Mythic Nyalotha! >>M15 85k<< KSM bundle 1.05M or 4 keys towards KSM for 350k! >>GOLD ONLY<<", -- [1]
 			"Throdabank-Zul'jin", -- [2]
@@ -1296,7 +592,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cThrodabank|r",
 			[51] = 1601865358,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [26]
 		{
 			"JUST FOR 30K -->  WTS AOTC (NZOTH HEROIC KILL) WITH MOUNT 100% DROP (UNCORRUPTED VOIDWING) --> + 150 RUN SOLD --> RUNNING NOW!!!", -- [1]
 			"Wilzull-Zul'jin", -- [2]
@@ -1318,7 +614,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Wilzull|r",
 			[51] = 1601865359,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [27]
 		{
 			"<Raids without Pants> is looking for like minded people who want to achieve AOTC every Tier. We Raid without pants on Tue/Thurs 9pm to 12am LF DPS Warrior. Rogue, Mage, Warlock Spriest", -- [1]
 			"Mcmuffín-Zul'jin", -- [2]
@@ -1340,7 +636,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mcmuffín|r",
 			[51] = 1601865375,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [28]
 		{
 			"Great deals!, Jaina M (330k) Ny'alotha H, M full clear. N'zoth Mount, specific kills || M+10-24s (+15 85k or 89k with armor stack) Horrific Visions 0-5 masks. Excellent KSM deal. Hertz Locker. *Includes a free hug* Join on https://discord.gg/dK7a8tk", -- [1]
 			"Lanf-Zul'jin", -- [2]
@@ -1362,7 +658,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLanf|r",
 			[51] = 1601865387,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [29]
 		{
 			"|cffa335ee|Hitem:166705::::::::20:64::::::|h[Glacial Tidestorm]|h|r |cffa335ee|Hitem:174872::::::::20:64::::::|h[Ny'alotha Allseer]|h|r also 12/12 H/M Nyalotha. M+ 15 Keys. Heroic N'Zoth AOTC. Going Tonight! G0ld 0nly 12/12H PL SPECIAL 125K!", -- [1]
 			"Montitwo-Zul'jin", -- [2]
@@ -1384,7 +680,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Montitwo|r",
 			[51] = 1601865388,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [30]
 		{
 			"<I M M O R T A L I T Y> 12/12M selling CE N'zoth + |cffa335ee|Hitem:174872::::::::120:66::6:1:3524:::|h[Ny'alotha Allseer]|h|r this Tuesday! Mount goes to a 1% drop in Shadowlands, so get it now guaranteed. Gold only, PST for info.", -- [1]
 			"Necrosanct-Zul'jin", -- [2]
@@ -1406,7 +702,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Necrosanct|r",
 			[51] = 1601865391,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [31]
 		{
 			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
 			"Sorddon-Zul'jin", -- [2]
@@ -1428,7 +724,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSorddon|r",
 			[51] = 1601865391,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [32]
 		{
 			"WTS 5 Mask vision full clear", -- [1]
 			"Sorddon-Zul'jin", -- [2]
@@ -1450,7 +746,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSorddon|r",
 			[51] = 1601865391,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [33]
 		{
 			"Multi R1 3300  Dk WTS 2s for gold  i can get you to a certain rating or just for wins just message me for more details (gold only) ", -- [1]
 			"Rlyspooky-Zul'jin", -- [2]
@@ -1472,7 +768,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Rlyspooky|r",
 			[51] = 1601865407,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [34]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-165791-61-95947021|h[Guild: Apsis]|h|rAre you hoping to kill some cool stuff in Shadowlands? Maybe make some friends while doing it? Then look no further, <Apsis> is a new guild building a raid team of epic gamers, new and experienced :) fri/sat 9pm-12:30am est wsp for info/inv", -- [1]
 			"Lielynnda-Zul'jin", -- [2]
@@ -1494,7 +790,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lielynnda|r",
 			[51] = 1601865411,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [35]
 		{
 			"Like to collect mounts? Need a new PVP mount? WTS |cff71d5ff|Hspell:148428:0|h[Ashhide Mushan Beast]|h|r for 100K! OBO! FAST & EASY!! 15 MINS AVG!! (Prorated costs for coins you have! +22 sold!) Willing to sell 'Fire-Watcher' title too!! ", -- [1]
 			"Sukular-Zul'jin", -- [2]
@@ -1516,7 +812,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSukular|r",
 			[51] = 1601865412,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [36]
 		{
 			"Anyone selling Mythic Jaina tonight?", -- [1]
 			"Nessajx-Zul'jin", -- [2]
@@ -1538,7 +834,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Nessajx|r",
 			[51] = 1601865422,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [37]
 		{
 			"<Raids Without Pants> what do we do in the RWP? We hustle, Smoke blunts, Slam shots, And Drink the Corona with lime! Are you a Warrior, Rogue, Mage, Warlock, Spriest ? Do you want to party without pants and raid!? Pst to your invite to the RWP!yolo", -- [1]
 			"Mcmuffín-Zul'jin", -- [2]
@@ -1560,7 +856,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mcmuffín|r",
 			[51] = 1601865422,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [38]
 		{
 			"<NOVA Boosting> Timed M15+ only 80k ( Armor stack 9k Spec key 15k) || KSM 950k || Mechagon HM mount 130k Hertz 250k || HC Nya Tues 8PM EST Full clear 125k Funnel 60k || Jaina mount 350k Tues 10PM EST || Gold Only", -- [1]
 			"Novanickz-Zul'jin", -- [2]
@@ -1582,7 +878,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNovanickz|r",
 			[51] = 1601865428,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [39]
 		{
 			"<Raids without Pants> look at your guild, now /who ours.... now back to yours...   now back to ours.. We have the power to make you stronger. To make you faster. We have compound V, Vought has sought us out to be the team in Shadowlands. its diabolical", -- [1]
 			"Mcmuffín-Zul'jin", -- [2]
@@ -1604,7 +900,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mcmuffín|r",
 			[51] = 1601865445,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [40]
 		{
 			"<TWSS> is selling M Jaina & |cffa335ee|Hitem:166705::::::::1:71::::::|h[Glacial Tidestorm]|h|r mount drop guaranteed!! Get it before the drop rate plummets in Shadowlands! PST for more info || GOLD ONLY!", -- [1]
 			"Deygoblino-Zul'jin", -- [2]
@@ -1626,7 +922,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cDeygoblino|r",
 			[51] = 1601865479,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [41]
 		{
 			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
 			"Sorddon-Zul'jin", -- [2]
@@ -1648,7 +944,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSorddon|r",
 			[51] = 1601865485,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [42]
 		{
 			"<NOVA Boosting> Timed M15+ only 80k ( Armor stack 9k Spec key 15k) || KSM 950k || Mechagon HM mount 130k Hertz 250k || HC Nya Tues 8PM EST Full clear 125k Funnel 60k || Jaina mount 350k Tues 10PM EST || Gold Only", -- [1]
 			"Novanickz-Zul'jin", -- [2]
@@ -1670,7 +966,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNovanickz|r",
 			[51] = 1601865485,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [43]
 		{
 			"WTS 5 Mask vision full clear", -- [1]
 			"Sorddon-Zul'jin", -- [2]
@@ -1692,7 +988,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSorddon|r",
 			[51] = 1601865485,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [44]
 		{
 			"<Raids without Pants> is looking for like minded people who want to achieve AOTC every Tier. We Raid without pants on Tue/Thurs 9pm to 12am LF DPS Warrior. Rogue, Mage, Warlock Spriest", -- [1]
 			"Mcmuffín-Zul'jin", -- [2]
@@ -1714,7 +1010,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mcmuffín|r",
 			[51] = 1601865489,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [45]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-165791-61-95947021|h[Guild: Apsis]|h|rAre you hoping to kill some cool stuff in Shadowlands? Maybe make some friends while doing it? Then look no further, <Apsis> is a new guild building a raid team of epic gamers, new and experienced :) fri/sat 9pm-12:30am est wsp for info/inv", -- [1]
 			"Lielynnda-Zul'jin", -- [2]
@@ -1736,7 +1032,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lielynnda|r",
 			[51] = 1601865498,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [46]
 		{
 			"JUST FOR 30K -->  WTS AOTC (NZOTH HEROIC KILL) WITH MOUNT 100% DROP (UNCORRUPTED VOIDWING) --> + 150 RUN SOLD --> RUNNING NOW!!!", -- [1]
 			"Wilzull-Zul'jin", -- [2]
@@ -1758,7 +1054,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Wilzull|r",
 			[51] = 1601865534,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [47]
 		{
 			"<Raids without Pants> is looking for like minded people who want to achieve AOTC every Tier. We Raid without pants on Tue/Thurs 9pm to 12am LF DPS Warrior. Rogue, Mage, Warlock Spriest", -- [1]
 			"Mcmuffín-Zul'jin", -- [2]
@@ -1780,7 +1076,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mcmuffín|r",
 			[51] = 1601865534,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [48]
 		{
 			"Like to collect mounts? Need a new PVP mount? WTS |cff71d5ff|Hspell:148428:0|h[Ashhide Mushan Beast]|h|r for 100K! OBO! FAST & EASY!! 15 MINS AVG!! (Prorated costs for coins you have! +22 sold!) Willing to sell 'Fire-Watcher' title too!! ", -- [1]
 			"Sukular-Zul'jin", -- [2]
@@ -1802,7 +1098,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSukular|r",
 			[51] = 1601865543,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [49]
 		{
 			">>BEST PRICES<< - combo DEAL for KSM achiev! - Ny'alotha full clear with funnels (heroic and mythic)  - horrific visions 0-5 masks loot/objectives  - Mechagon H.E.R.T.Z Locker / Mount -  GOLD ONLY ;)", -- [1]
 			"Huojina-Zul'jin", -- [2]
@@ -1824,7 +1120,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Huojina|r",
 			[51] = 1601914513,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [50]
 		{
 			"WTS End of Expansion Deals for 12/12H Nyalotha Full Clear. Personal loot (125k) and DISCOUNTED 4x Armor Funnels.  Mythic Jaina and Nzoth Mounts available as well! GOLD ONLY pm me", -- [1]
 			"Yeezyyeet-Zul'jin", -- [2]
@@ -1846,7 +1142,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cYeezyyeet|r",
 			[51] = 1601914515,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [51]
 		{
 			">Huokan Community< WTS M+15 Base 85k w/Armor Stack 89k WTS M+15-20 || Specific Keys 99k || Multi-run discounts & KSM || WTS Mecha & Jaina Mount || WTS M & H Ny'alotha full clear and specific bosses || Visions 0-5 Mask. Pst for more info >GOLD ONLY<", -- [1]
 			"Salezmon-Zul'jin", -- [2]
@@ -1868,7 +1164,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSalezmon|r",
 			[51] = 1601914516,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [52]
 		{
 			"WTS M15+!!!!ONLY!!!>>>85K!! (M+ 15-24) Specific KEYS!! >>!! <<! ARMOR STACK 89k!>>|| || WTS Mythic Ny'alotha full clear<<DEAL for KSM ACHIEV>> || WTS Horrific Vision 0-5 masks guaranteed ||Hardmode & N'zoth Mounts!WTS!PVP 2s3s!|| GOLD ONLY>>Huokan<<", -- [1]
 			"Ksadilla-Zul'jin", -- [2]
@@ -1890,7 +1186,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cKsadilla|r",
 			[51] = 1601914516,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [53]
 		{
 			"Huokan Community -> RESET DEALS -> WTS M+15 85k ArmorStack 89k!||Mechagon HARDMODE Mount || Mythic & Heroic Ny'alotha || Horrific Vision 0-5 masks || GOLD ONLY!", -- [1]
 			"Wilmbank-Zul'jin", -- [2]
@@ -1912,7 +1208,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wilmbank|r",
 			[51] = 1601914531,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [54]
 		{
 			"WTS M+ 10-20 keys || WTS Heroic Ny'alotha full clears with funneling options || WTS Mythic Ny'alotha full clear and specific bosses || WTS Horrific Vision 0-5 masks guaranteed || WTS Jaina & N'zoth Mounts || GOLD ONLY", -- [1]
 			"Goldcarries-Zul'jin", -- [2]
@@ -1934,7 +1230,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Goldcarries|r",
 			[51] = 1601914544,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [55]
 		{
 			"WTS M15+!!ONLY! 85K!! (M+ 10-24) Specific KEYS!! > |||| <! ARMOR STACK 89k!>(special prices for multiple runs) ||||  KSM SPECIAL PRICE || Mech HM Mount || Mythic Ny'alotha full run  and specific bosses ||||GOLD ONLY https://discord.gg/esudQCa <Huokan>", -- [1]
 			"Orcrux-Zul'jin", -- [2]
@@ -1956,7 +1252,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOrcrux|r",
 			[51] = 1601914553,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [56]
 		{
 			"WTS |cffa335ee|Hitem:65891::::::::40:253::::::|h[Fiole des sables]|h|r 53k PST. Have a 2 seater for your buddy! Allows tauren to (kind of?) fit through doors. ", -- [1]
 			"Uglowstack-Zul'jin", -- [2]
@@ -1978,7 +1274,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Uglowstack|r",
 			[51] = 1601914558,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [57]
 		{
 			".::Spartan Boosting::. Is recruiting Boosters and Advertisers for a HIGH CUT yielding Community || DAILY PAYOUTS || Make 1 MILLION GOLD per week advertising || Stricly a Gold Only Communty ---->  https://discord.gg/96M5Epu", -- [1]
 			"Zuljinbanks-Zul'jin", -- [2]
@@ -2000,7 +1296,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Zuljinbanks|r",
 			[51] = 1601914576,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [58]
 		{
 			">>BEST PRICES<< - combo DEAL for KSM achiev! - Ny'alotha full clear with funnels (heroic and mythic)  - horrific visions 0-5 masks loot/objectives  - Mechagon H.E.R.T.Z Locker / Mount -  GOLD ONLY ;)", -- [1]
 			"Huojina-Zul'jin", -- [2]
@@ -2022,7 +1318,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Huojina|r",
 			[51] = 1601914586,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [59]
 		{
 			"Do we live in a simaulation? Do Aliens or Bigfoot exist? Believe in the Paranomal? Or are you just looking for a friend? Would love to hear it! Twitch.tv/LL_Hand_J", -- [1]
 			"Moriartï-Zul'jin", -- [2]
@@ -2044,7 +1340,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecMoriartï|r",
 			[51] = 1601914587,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [60]
 		{
 			"|cffa335ee|Hitem:175008::::::::120:250::5:5:4823:6516:6515:1502:4786:::|h[Lurking Schemer's Band]|h|r 460 on AH now!", -- [1]
 			"Murthrek-Zul'jin", -- [2]
@@ -2066,7 +1362,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Murthrek|r",
 			[51] = 1601955783,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [61]
 		{
 			"<Weekly Disappointment> WTS Jaina+HM Mechagon mounts! || Heroic Nya'lotha with discounted 4x funnels and Mythic Nya'lotha with Top US Guilds || Horrific Vision Boosting || PvP Boosting || Gold only! Pst for more info!", -- [1]
 			"Calsale-Zul'jin", -- [2]
@@ -2088,7 +1384,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Calsale|r",
 			[51] = 1601955791,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [62]
 		{
 			"WTS M15+!!!!ONLY!!!>>>85K!! (M+ 15-24) Specific KEYS!! >>!! <<! ARMOR STACK 89k!>>|| || WTS Mythic Ny'alotha full clear<<DEAL for KSM ACHIEV>> || WTS Horrific Vision 0-5 masks guaranteed ||Hardmode & N'zoth Mounts!WTS!PVP 2s3s!|| GOLD ONLY>>Huokan<<", -- [1]
 			"Ksadilla-Zul'jin", -- [2]
@@ -2110,7 +1406,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cKsadilla|r",
 			[51] = 1601955832,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [63]
 		{
 			"WTS |cff66bbff|Hjournal:0:1001:1|h[Freehold]|h|r lvl boost, 110-120 in 1 hour, discount for heirlooms", -- [1]
 			"Saitaamaa-Zul'jin", -- [2]
@@ -2132,7 +1428,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSaitaamaa|r",
 			[51] = 1601955851,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [64]
 		{
 			"WTB Battle Pets I don't own yet 50g per! Pst if you got one for sale! c:", -- [1]
 			"Scarlessfate-Zul'jin", -- [2]
@@ -2154,7 +1450,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Scarlessfate|r",
 			[51] = 1601955860,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [65]
 		{
 			"WTS M+15 JUST FOR >>85k<< ALSO -> ArmorStack 89k -> Specific key 99k! ||MECHAGON HARDMODE MOUNT || MYTHIC & HEROIC NY'ALOTHA ||  VISIONS 0-5 MASKS (STORMWIND LAST DAY) || GOLD ONLY! HUOKAN COMMUNITY ", -- [1]
 			"Wilmbank-Zul'jin", -- [2]
@@ -2176,7 +1472,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wilmbank|r",
 			[51] = 1601960688,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [66]
 		{
 			"<Ohno-Zuljin 12/12M> Selling |cffffff00|Hachievement:14069:Player-61-0CDFD54D:1:6:2:20:4294967295:4294967295:4294967295:4294967295|h[Cutting Edge: N'Zoth the Corruptor]|h|r + Ny'alotha Allseer <Tuesday @10:00pm (server -EST) >> PST <<", -- [1]
 			"Canavi-Zul'jin", -- [2]
@@ -2197,6 +1493,710 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cfffe7b09Canavi|r",
 			[51] = 1601960692,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"(Weekly Disappointment) 12/12 Heroic Ny'alotha PL 125k || 4x Funnels 325k || 360k Jaina || KSM || AOTC 40k || HM Mechagon mount || PVP Boosts || AND MORE! PST FOR MORE INFO >gold only<", -- [1]
+			"Shoovwd-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Shoovwd-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			365, -- [11]
+			"Player-61-0DE7447C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShoovwd|r",
+			[51] = 1602163525,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"WTS |cff0070dd|Hitem:87250::::::::120:102::::::|h[Depleted-Kyparium Rocket]|h|r|cff0070dd|Hitem:87251::::::::120:102::::::|h[Geosynchronous World Spinner]|h|r|cffa335ee|Hitem:34061::::::::120:102::::::|h[Turbo-Charged Flying Machine]|h|r", -- [1]
+			"Thotsftw-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Thotsftw-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			488, -- [11]
+			"Player-61-0BE240EF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Thotsftw|r",
+			[51] = 1602163618,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"WTS M15+!!ONLY! 85K!! (M+ 10-24) Specific KEYS!! > |||| <! ARMOR STACK 89k!>(special prices for multiple runs) ||||  KSM SPECIAL PRICE || Mech HM Mount || Mythic Ny'alotha full run  and specific bosses ||||GOLD ONLY https://discord.gg/esudQCa <Huokan", -- [1]
+			"Piscaoo-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Piscaoo-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			489, -- [11]
+			"Player-61-0DC48E5B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cPiscaoo|r",
+			[51] = 1602163625,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"WTS Heroic Ny'alotha 12/12 PL,Guarantee FULL 460 Gear/Mythic+11-20 for 475weekly chest/Mechagon 8/8 HM for|cffa335ee|Hitem:168830::::::::1:262::::::|h[Aerial Unit R-21/X]|h|rMythic jaina mount.carry now PST", -- [1]
+			"Flinzerflak-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Flinzerflak-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1, -- [11]
+			"Player-61-0DEBD9ED", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcFlinzerflak|r",
+			[51] = 1602208913,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
+			"Sorddon-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sorddon-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1470, -- [11]
+			"Player-61-0CA9A736", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSorddon|r",
+			[51] = 1602225593,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"WTS 5 Mask vision full clear", -- [1]
+			"Sorddon-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sorddon-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1471, -- [11]
+			"Player-61-0CA9A736", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSorddon|r",
+			[51] = 1602225593,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"WTS Heroic Ny'alotha 12/12 PL,Guarantee FULL 460 Gear/Mythic+11-20 for 475weekly chest/Mechagon 8/8 HM for|cffa335ee|Hitem:168830::::::::1:262::::::|h[Aerial Unit R-21/X]|h|rMythic jaina mount.carry now PST", -- [1]
+			"Flinzerflak-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Flinzerflak-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1500, -- [11]
+			"Player-61-0DEBD9ED", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcFlinzerflak|r",
+			[51] = 1602225604,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
+			"Sorddon-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sorddon-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			425, -- [11]
+			"Player-61-0CA9A736", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSorddon|r",
+			[51] = 1602315006,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"WTS 5 Mask vision full clear", -- [1]
+			"Sorddon-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sorddon-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			426, -- [11]
+			"Player-61-0CA9A736", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSorddon|r",
+			[51] = 1602315006,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"Accelerate is looking for M+ Boosters! || Highest Booster Cuts || Payments Made Daily || Automated Selection Process || 2.6k io req for a +15 || Gold Only! || https://discord.gg/B5epuXC", -- [1]
+			"Xlreighter-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Xlreighter-Zul'jin", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			427, -- [11]
+			"Player-61-0DEAA016", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Xlreighter|r",
+			[51] = 1602315007,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"Accelerate is looking for M+ Boosters! || Highest Booster Cuts || Payments Made Daily || Automated Selection Process || 2.6k io req for a +15 || Gold Only! || https://discord.gg/B5epuXC", -- [1]
+			"Xlreighter-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Xlreighter-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			367, -- [11]
+			"Player-61-0DEAA016", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Xlreighter|r",
+			[51] = 1602353105,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"[Guild: Deep Smash] is an AOTC Guild new to Zul'jin and looking to build our ranks for raiding and mythic+ teams.   Raid days/times will be W/F @ 8pm server. pst for more info!  If you are also interested in getting AOTC, ask how!", -- [1]
+			"Vodel-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vodel-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			395, -- [11]
+			"Player-61-0DE29555", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVodel|r",
+			[51] = 1602353125,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"wts |cffffffff|Hitem:93228::::::::120:258::::::|h[Brawler's Pass]|h|r x15 2k gold ea", -- [1]
+			"Quetzilcoatl-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Quetzilcoatl-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			413, -- [11]
+			"Player-61-0DE721CE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeQuetzilcoatl|r",
+			[51] = 1602353129,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"Looking for \"|cffa335ee|Hitem:156798::::::::1:71::::::|h[The Hivemind]|h|r\" mount? Done 98 runs and counting!  Bring your friends (up to 4!) to mount it together! /w for more info!", -- [1]
+			"Fue-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Fue-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			470, -- [11]
+			"Player-61-0D698B39", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cFue|r",
+			[51] = 1602353145,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"Wanna be a \"Servant of N'zoth\" and kill your guildies with \"|cff0070dd|Hitem:173951::::::::1:71::::::|h[N'lyeth, Sliver of N'Zoth]|h|r\"? Get them & the account-wide title now!", -- [1]
+			"Fue-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Fue-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			472, -- [11]
+			"Player-61-0D698B39", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cFue|r",
+			[51] = 1602353145,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"|cffffffff|Hitem:113355::::::::110:262::::::|h[Card of Omens]|h|r  in game legal gambling created by blizz. Will you be tonight's first  |cffa335ee|Hitem:113354::::::::110:262::::::|h[Blood Card]|h|r   winner.", -- [1]
+			"Nimik-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Nimik-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			489, -- [11]
+			"Player-61-06AEC449", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcNimik|r",
+			[51] = 1602353171,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"Accelerate is looking for M+ Boosters! || Highest Booster Cuts || Payments Made Daily || Automated Selection Process || 2.6k io req for a +15 || Gold Only! || https://discord.gg/B5epuXC", -- [1]
+			"Xlreighter-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Xlreighter-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			493, -- [11]
+			"Player-61-0DEAA016", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Xlreighter|r",
+			[51] = 1602353178,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"if I recall, advertising in public chanels in not allowed", -- [1]
+			"Illjill-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Illjill-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			501, -- [11]
+			"Player-61-0896C7B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Illjill|r",
+			[51] = 1602353192,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			">>>NZOTH HEROIC<<  FAST AND CHEAP RIGHT NOW 12/12M GROUP [MOUNT + AOTC + CLOAK UPGRADE + CHANCE 470ILVL ITEM] GOLD ONLY.", -- [1]
+			"Blosmi-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Blosmi-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			508, -- [11]
+			"Player-61-0BEB9008", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Blosmi|r",
+			[51] = 1602353206,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"you would recall wrong", -- [1]
+			"Whoflungpoo-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Whoflungpoo-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			510, -- [11]
+			"Player-61-0B5D77C3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Whoflungpoo|r",
+			[51] = 1602353206,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"because of various gambling restrictions...", -- [1]
+			"Illjill-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Illjill-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			514, -- [11]
+			"Player-61-0896C7B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Illjill|r",
+			[51] = 1602353209,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"WTS |cffffffff|Hitem:93228::::::::111:260::::::|h[Brawler's Pass]|h|r, go get |cff71d5ff|Hspell:289639:0|h[Bruce]|h|r  before he goes away !", -- [1]
+			"Goldmus-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Goldmus-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			525, -- [11]
+			"Player-61-0C9F5DE0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Goldmus|r",
+			[51] = 1602353213,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"no, can't do in public channels, at least that was the old rules -- not they were enforced", -- [1]
+			"Illjill-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Illjill-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			571, -- [11]
+			"Player-61-0896C7B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Illjill|r",
+			[51] = 1602353229,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"you're recalling wrong... only place advertising is banned is the dungeon finder listings", -- [1]
+			"Kushmastêr-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kushmastêr-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			612, -- [11]
+			"Player-61-0BFA3722", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Kushmastêr|r",
+			[51] = 1602353245,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"for the gambling cards", -- [1]
+			"Illjill-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Illjill-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			630, -- [11]
+			"Player-61-0896C7B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Illjill|r",
+			[51] = 1602353254,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			".::Spartan Boosting::. Is recruiting boosters and advertisers for a HIGH CUT yielding community!! Make 250k PER DAY advertising! Sign up to win our 1 MILLION GOLD giveaway!! Gold ONLY Community!! ---->  https://discord.gg/spartan", -- [1]
+			"Zuljinbanks-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zuljinbanks-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			635, -- [11]
+			"Player-61-0CCA2695", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Zuljinbanks|r",
+			[51] = 1602353256,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"<Modest> (11/12M Ny'alotha) is recruiting a few more DPS to complete our roster for SL. ISO Rogue, DK, Mage, WW Monk. We raid T, TH, M from 8:20-11:30. PST for more info.", -- [1]
+			"Eleious-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Eleious-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			636, -- [11]
+			"Player-61-0B9FA239", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Eleious|r",
+			[51] = 1602353256,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"Accelerate is looking for M+ Boosters! || Highest Booster Cuts || Payments Made Daily || Automated Selection Process || 2.6k io req for a +15 || Gold Only! || https://discord.gg/B5epuXC", -- [1]
+			"Xlreighter-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Xlreighter-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			637, -- [11]
+			"Player-61-0DEAA016", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe95Xlreighter|r",
+			[51] = 1602353257,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"trade is fine to advertise otherwise, sort of what it is for", -- [1]
+			"Illjill-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Illjill-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			642, -- [11]
+			"Player-61-0896C7B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Illjill|r",
+			[51] = 1602353265,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"you see anyone listing m+ boosting/FH leveling in dungeon finder, and you can report em", -- [1]
+			"Kushmastêr-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kushmastêr-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			646, -- [11]
+			"Player-61-0BFA3722", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Kushmastêr|r",
+			[51] = 1602353271,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"Just report them for spamming, anything past 20 posts a day of the same message is spam", -- [1]
+			"Quetzilcoatl-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Quetzilcoatl-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			668, -- [11]
+			"Player-61-0DE721CE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeQuetzilcoatl|r",
+			[51] = 1602353282,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"BYE BYE BFA YOU WONT BE MISSED", -- [1]
+			"Khermy-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Khermy-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			69, -- [11]
+			"Player-61-0CDE6FCD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cKhermy|r",
+			[51] = 1602511578,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

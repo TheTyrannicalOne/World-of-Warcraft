@@ -5,11 +5,13 @@ ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		"/skada toggle", -- [1]
 		"/omen show", -- [2]
-		"/invite azaru-blackhand", -- [3]
+		"/p do you want to kill the big one outside", -- [3]
+		"/p thanks for the help later", -- [4]
+		"/invite azaru-blackhand", -- [5]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"Picked Up: Cities in Dust", -- [1]
+			"9/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -19,7 +21,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			887, -- [11]
+			2094, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -27,11 +29,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601958840,
+			[51] = 1602566102,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [1]
 		{
-			"Completed: On Her Majesty's Secret Service", -- [1]
+			"10/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -41,7 +43,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			888, -- [11]
+			2100, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -49,11 +51,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601958840,
+			[51] = 1602566113,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [2]
 		{
-			"1/1 Victory: Final and Absolute", -- [1]
+			"3/4 Diseased Wolf Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -63,7 +65,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1012, -- [11]
+			2101, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -71,11 +73,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959197,
+			[51] = 1602566113,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [3]
 		{
-			"Completed: Empire of Dirt", -- [1]
+			"11/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -85,7 +87,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1093, -- [11]
+			2111, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -93,11 +95,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959873,
+			[51] = 1602566140,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [4]
 		{
-			"Picked Up: Welcome to the Machine", -- [1]
+			"4/4 Diseased Wolf Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -107,7 +109,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1096, -- [11]
+			2115, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -115,11 +117,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959873,
+			[51] = 1602566141,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [5]
 		{
-			"Completed: Warchief's Command: Hillsbrad Foothills!", -- [1]
+			"12/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -129,7 +131,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1097, -- [11]
+			2126, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -137,11 +139,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959873,
+			[51] = 1602566158,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [6]
 		{
-			"1/1 First Quest Dispensed", -- [1]
+			"1/4 Plague Lurker Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -151,7 +153,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1106, -- [11]
+			2142, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -159,11 +161,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959912,
+			[51] = 1602566199,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [7]
 		{
-			"1/1 Second Quest Dispensed", -- [1]
+			"13/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -173,7 +175,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1113, -- [11]
+			2144, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -181,33 +183,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959935,
+			[51] = 1602566204,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [8]
 		{
-			"anyone help with the durnholde challenge?", -- [1]
-			"Noskillrogue-Area52", -- [2]
-			"", -- [3]
-			"1. General - Hillsbrad Foothills", -- [4]
-			"Noskillrogue-Area52", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Hillsbrad Foothills", -- [9]
-			0, -- [10]
-			1116, -- [11]
-			"Player-3676-0CCB6912", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Noskillrogue-Area52|r",
-			[51] = 1601959943,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"1/1 Third Quest Dispensed", -- [1]
+			"1/4 Venom Mist Lurker Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -217,7 +197,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1119, -- [11]
+			2154, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -225,11 +205,33 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959968,
+			[51] = 1602566211,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [9]
+		{
+			"14/20 Wildlife killed with Zen'Kiki", -- [1]
+			"Okona-Zul'jin", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2156, -- [11]
+			"Player-61-0DE12200", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602566218,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [10]
 		{
-			"Picked Up: Trouble at Azurelode", -- [1]
+			"2/4 Venom Mist Lurker Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -239,7 +241,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1125, -- [11]
+			2163, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -247,11 +249,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959972,
+			[51] = 1602566219,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [11]
 		{
-			"Completed: Welcome to the Machine", -- [1]
+			"15/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -261,7 +263,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1126, -- [11]
+			2171, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -269,11 +271,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959972,
+			[51] = 1602566234,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [12]
 		{
-			"Picked Up: Glorious Harvest", -- [1]
+			"16/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -283,7 +285,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1130, -- [11]
+			2177, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -291,11 +293,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959978,
+			[51] = 1602566239,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [13]
 		{
-			"Picked Up: Past Their Prime", -- [1]
+			"2/4 Plague Lurker Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -305,7 +307,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1131, -- [11]
+			2181, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -313,11 +315,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601959978,
+			[51] = 1602566240,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [14]
 		{
-			"1/8 Infested Bear slain", -- [1]
+			"3/4 Venom Mist Lurker Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -327,7 +329,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1136, -- [11]
+			2187, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -335,11 +337,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960020,
+			[51] = 1602566247,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [15]
 		{
-			"2/8 Infested Bear slain", -- [1]
+			"17/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -349,7 +351,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1141, -- [11]
+			2192, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -357,11 +359,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960032,
+			[51] = 1602566254,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [16]
 		{
-			"1/60 Creeper Egg", -- [1]
+			"4/4 Venom Mist Lurker Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -371,7 +373,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1146, -- [11]
+			2199, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -379,11 +381,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960033,
+			[51] = 1602566261,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [17]
 		{
-			"2/60 Creeper Egg", -- [1]
+			"18/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -393,7 +395,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1148, -- [11]
+			2207, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -401,11 +403,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960034,
+			[51] = 1602566273,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [18]
 		{
-			"3/60 Creeper Egg", -- [1]
+			"3/4 Plague Lurker Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -415,7 +417,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1151, -- [11]
+			2214, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -423,11 +425,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960048,
+			[51] = 1602566275,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [19]
 		{
-			"4/60 Creeper Egg", -- [1]
+			"19/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -437,7 +439,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1153, -- [11]
+			2216, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -445,11 +447,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960049,
+			[51] = 1602566293,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [20]
 		{
-			"5/60 Creeper Egg", -- [1]
+			"4/4 Plague Lurker Sample", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -459,7 +461,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1155, -- [11]
+			2219, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -467,11 +469,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960051,
+			[51] = 1602566294,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [21]
 		{
-			"3/8 Infested Bear slain", -- [1]
+			"20/20 Wildlife killed with Zen'Kiki", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -481,7 +483,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1157, -- [11]
+			2228, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -489,11 +491,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960057,
+			[51] = 1602566339,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [22]
 		{
-			"6/60 Creeper Egg", -- [1]
+			"Picked Up: Northridge Lumber Mill", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -503,7 +505,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1161, -- [11]
+			2249, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -511,11 +513,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960060,
+			[51] = 1602566389,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [23]
 		{
-			"7/60 Creeper Egg", -- [1]
+			"Completed: A New Era for the Plaguelands", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -525,7 +527,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1163, -- [11]
+			2250, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -533,11 +535,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960068,
+			[51] = 1602566389,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [24]
 		{
-			"8/60 Creeper Egg", -- [1]
+			"Picked Up: A Different Approach", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -547,7 +549,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1166, -- [11]
+			2258, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -555,11 +557,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960069,
+			[51] = 1602566399,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [25]
 		{
-			"9/60 Creeper Egg", -- [1]
+			"Completed: Zen'Kiki, the Druid", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -569,7 +571,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1167, -- [11]
+			2259, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -577,11 +579,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960069,
+			[51] = 1602566400,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [26]
 		{
-			"4/8 Infested Bear slain", -- [1]
+			"1/4 Rotten Apple Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -591,7 +593,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1169, -- [11]
+			2264, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -599,11 +601,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960076,
+			[51] = 1602566417,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [27]
 		{
-			"10/60 Creeper Egg", -- [1]
+			"2/4 Rotten Apple Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -613,7 +615,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1172, -- [11]
+			2289, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -621,11 +623,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960078,
+			[51] = 1602566433,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [28]
 		{
-			"11/60 Creeper Egg", -- [1]
+			"3/4 Rotten Apple Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -635,7 +637,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1174, -- [11]
+			2294, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -643,11 +645,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960078,
+			[51] = 1602566443,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [29]
 		{
-			"12/60 Creeper Egg", -- [1]
+			"4/4 Rotten Apple Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -657,7 +659,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1176, -- [11]
+			2299, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -665,11 +667,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960079,
+			[51] = 1602566457,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [30]
 		{
-			"13/60 Creeper Egg", -- [1]
+			"1/3 Unhealthy-Looking Pumpkin Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -679,7 +681,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1178, -- [11]
+			2301, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -687,11 +689,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960079,
+			[51] = 1602566462,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [31]
 		{
-			"14/60 Creeper Egg", -- [1]
+			"2/3 Unhealthy-Looking Pumpkin Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -701,7 +703,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1181, -- [11]
+			2314, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -709,11 +711,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960082,
+			[51] = 1602566477,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [32]
 		{
-			"15/60 Creeper Egg", -- [1]
+			"3/3 Unhealthy-Looking Pumpkin Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -723,7 +725,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1183, -- [11]
+			2320, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -731,11 +733,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960082,
+			[51] = 1602566490,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [33]
 		{
-			"16/60 Creeper Egg", -- [1]
+			"1/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -745,7 +747,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1184, -- [11]
+			2332, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -753,11 +755,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960082,
+			[51] = 1602566515,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [34]
 		{
-			"18/60 Creeper Egg", -- [1]
+			"2/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -767,7 +769,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1187, -- [11]
+			2343, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -775,11 +777,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960084,
+			[51] = 1602566530,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [35]
 		{
-			"19/60 Creeper Egg", -- [1]
+			"3/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -789,7 +791,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1190, -- [11]
+			2364, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -797,11 +799,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960085,
+			[51] = 1602566549,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [36]
 		{
-			"20/60 Creeper Egg", -- [1]
+			"4/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -811,7 +813,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1191, -- [11]
+			2370, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -819,11 +821,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960085,
+			[51] = 1602566566,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [37]
 		{
-			"21/60 Creeper Egg", -- [1]
+			"5/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -833,7 +835,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1193, -- [11]
+			2374, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -841,11 +843,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960087,
+			[51] = 1602566569,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [38]
 		{
-			"22/60 Creeper Egg", -- [1]
+			"6/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -855,7 +857,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1195, -- [11]
+			2380, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -863,11 +865,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960091,
+			[51] = 1602566587,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [39]
 		{
-			"5/8 Infested Bear slain", -- [1]
+			"Completed: I Ain't Sayin' You a Gourd-Digger...", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -877,7 +879,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1197, -- [11]
+			2411, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -885,11 +887,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960100,
+			[51] = 1602566659,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [40]
 		{
-			"6/8 Infested Bear slain", -- [1]
+			"1/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -899,7 +901,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1201, -- [11]
+			2416, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -907,11 +909,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960114,
+			[51] = 1602566706,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [41]
 		{
-			"7/8 Infested Bear slain", -- [1]
+			"2/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -921,7 +923,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1206, -- [11]
+			2438, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -929,11 +931,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960123,
+			[51] = 1602566721,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [42]
 		{
-			"23/60 Creeper Egg", -- [1]
+			"3/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -943,7 +945,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1210, -- [11]
+			2453, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -951,11 +953,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960124,
+			[51] = 1602566740,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [43]
 		{
-			"24/60 Creeper Egg", -- [1]
+			"4/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -965,7 +967,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1212, -- [11]
+			2493, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -973,11 +975,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960124,
+			[51] = 1602566926,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [44]
 		{
-			"25/60 Creeper Egg", -- [1]
+			"5/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -987,7 +989,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1217, -- [11]
+			2501, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -995,11 +997,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960126,
+			[51] = 1602566938,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [45]
 		{
-			"26/60 Creeper Egg", -- [1]
+			"6/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1009,7 +1011,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1218, -- [11]
+			2507, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1017,11 +1019,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960126,
+			[51] = 1602566950,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [46]
 		{
-			"27/60 Creeper Egg", -- [1]
+			"7/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1031,7 +1033,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1221, -- [11]
+			2514, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1039,11 +1041,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960127,
+			[51] = 1602566969,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [47]
 		{
-			"28/60 Creeper Egg", -- [1]
+			"Completed: A Different Approach", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1053,7 +1055,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1222, -- [11]
+			2524, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1061,11 +1063,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960127,
+			[51] = 1602566996,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [48]
 		{
-			"8/8 Infested Bear slain", -- [1]
+			"Picked Up: I Believe You Can Fly", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1075,7 +1077,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1224, -- [11]
+			2575, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1083,11 +1085,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960139,
+			[51] = 1602567128,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [49]
 		{
-			"30/60 Creeper Egg", -- [1]
+			"Picked Up: Adventure Calls", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1097,7 +1099,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1228, -- [11]
+			2576, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1105,11 +1107,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960140,
+			[51] = 1602567128,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [50]
 		{
-			"31/60 Creeper Egg", -- [1]
+			"Completed: The Battle Resumes!", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1119,7 +1121,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1231, -- [11]
+			2577, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1127,11 +1129,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960141,
+			[51] = 1602567128,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [51]
 		{
-			"32/60 Creeper Egg", -- [1]
+			"Picked Up: The Farmers' Militia", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1141,7 +1143,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1234, -- [11]
+			2582, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1149,11 +1151,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960143,
+			[51] = 1602567128,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [52]
 		{
-			"33/60 Creeper Egg", -- [1]
+			"Picked Up: Ashes to Ashes", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1163,7 +1165,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1236, -- [11]
+			2583, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1171,11 +1173,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960143,
+			[51] = 1602567129,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [53]
 		{
-			"34/60 Creeper Egg", -- [1]
+			"Picked Up: Supporting the Troops", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1185,7 +1187,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1237, -- [11]
+			2585, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1193,11 +1195,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960143,
+			[51] = 1602567132,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [54]
 		{
-			"35/60 Creeper Egg", -- [1]
+			"1/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1207,7 +1209,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1245, -- [11]
+			2587, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1215,11 +1217,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960167,
+			[51] = 1602567149,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [55]
 		{
-			"36/60 Creeper Egg", -- [1]
+			"2/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1229,7 +1231,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1247, -- [11]
+			2591, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1237,11 +1239,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960168,
+			[51] = 1602567157,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [56]
 		{
-			"37/60 Creeper Egg", -- [1]
+			"3/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1251,7 +1253,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1249, -- [11]
+			2596, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1259,11 +1261,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960169,
+			[51] = 1602567169,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [57]
 		{
-			"38/60 Creeper Egg", -- [1]
+			"1/3 Andorhal Force-Commander slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1273,7 +1275,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1254, -- [11]
+			2598, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1281,11 +1283,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960170,
+			[51] = 1602567181,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [58]
 		{
-			"39/60 Creeper Egg", -- [1]
+			"4/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1295,7 +1297,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1255, -- [11]
+			2601, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1303,11 +1305,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960170,
+			[51] = 1602567194,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [59]
 		{
-			"40/60 Creeper Egg", -- [1]
+			"5/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1317,7 +1319,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1257, -- [11]
+			2604, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1325,11 +1327,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960171,
+			[51] = 1602567207,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [60]
 		{
-			"41/60 Creeper Egg", -- [1]
+			"6/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1339,7 +1341,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1259, -- [11]
+			2607, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1347,11 +1349,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960171,
+			[51] = 1602567226,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [61]
 		{
-			"42/60 Creeper Egg", -- [1]
+			"7/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1361,7 +1363,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1264, -- [11]
+			2610, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1369,11 +1371,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960183,
+			[51] = 1602567236,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [62]
 		{
-			"43/60 Creeper Egg", -- [1]
+			"8/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1383,7 +1385,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1265, -- [11]
+			2615, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1391,11 +1393,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960183,
+			[51] = 1602567247,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [63]
 		{
-			"44/60 Creeper Egg", -- [1]
+			"9/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1405,7 +1407,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1267, -- [11]
+			2618, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1413,11 +1415,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960185,
+			[51] = 1602567255,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [64]
 		{
-			"45/60 Creeper Egg", -- [1]
+			"10/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1427,7 +1429,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1269, -- [11]
+			2621, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1435,11 +1437,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960186,
+			[51] = 1602567269,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [65]
 		{
-			"46/60 Creeper Egg", -- [1]
+			"2/3 Andorhal Force-Commander slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1449,7 +1451,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1271, -- [11]
+			2624, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1457,11 +1459,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960188,
+			[51] = 1602567281,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [66]
 		{
-			"47/60 Creeper Egg", -- [1]
+			"11/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1471,7 +1473,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1273, -- [11]
+			2627, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1479,11 +1481,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960188,
+			[51] = 1602567294,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [67]
 		{
-			"48/60 Creeper Egg", -- [1]
+			"3/3 Andorhal Force-Commander slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1493,7 +1495,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1275, -- [11]
+			2629, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1501,11 +1503,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960193,
+			[51] = 1602567304,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [68]
 		{
-			"49/60 Creeper Egg", -- [1]
+			"12/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1515,7 +1517,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1277, -- [11]
+			2633, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1523,11 +1525,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960193,
+			[51] = 1602567321,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [69]
 		{
-			"50/60 Creeper Egg", -- [1]
+			"13/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1537,7 +1539,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1279, -- [11]
+			2635, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1545,11 +1547,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960204,
+			[51] = 1602567332,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [70]
 		{
-			"51/60 Creeper Egg", -- [1]
+			"14/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1559,7 +1561,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1281, -- [11]
+			2638, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1567,11 +1569,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960205,
+			[51] = 1602567336,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [71]
 		{
-			"52/60 Creeper Egg", -- [1]
+			"15/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1581,7 +1583,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1283, -- [11]
+			2639, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1589,11 +1591,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960207,
+			[51] = 1602567336,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [72]
 		{
-			"53/60 Creeper Egg", -- [1]
+			"1/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1603,7 +1605,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1285, -- [11]
+			2647, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1611,11 +1613,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960207,
+			[51] = 1602567353,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [73]
 		{
-			"54/60 Creeper Egg", -- [1]
+			"2/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1625,7 +1627,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1287, -- [11]
+			2648, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1633,11 +1635,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960208,
+			[51] = 1602567358,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [74]
 		{
-			"55/60 Creeper Egg", -- [1]
+			"3/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1647,7 +1649,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1289, -- [11]
+			2649, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1655,11 +1657,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960209,
+			[51] = 1602567363,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [75]
 		{
-			"56/60 Creeper Egg", -- [1]
+			"4/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1669,7 +1671,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1291, -- [11]
+			2650, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1677,11 +1679,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960210,
+			[51] = 1602567368,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [76]
 		{
-			"57/60 Creeper Egg", -- [1]
+			"5/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1691,7 +1693,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1293, -- [11]
+			2655, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1699,11 +1701,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960213,
+			[51] = 1602567375,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [77]
 		{
-			"58/60 Creeper Egg", -- [1]
+			"6/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1713,7 +1715,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1302, -- [11]
+			2658, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1721,11 +1723,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960234,
+			[51] = 1602567380,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [78]
 		{
-			"59/60 Creeper Egg", -- [1]
+			"Completed: The Farmers' Militia", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1735,7 +1737,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1303, -- [11]
+			2675, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1743,11 +1745,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960234,
+			[51] = 1602567407,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [79]
 		{
-			"60/60 Creeper Egg", -- [1]
+			"Completed: Ashes to Ashes", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1757,7 +1759,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1305, -- [11]
+			2676, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1765,11 +1767,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960234,
+			[51] = 1602567407,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [80]
 		{
-			"Picked Up: Coastal Delicacies!", -- [1]
+			"Completed: Supporting the Troops", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1779,7 +1781,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1308, -- [11]
+			2683, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1787,11 +1789,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960252,
+			[51] = 1602567418,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [81]
 		{
-			"Completed: Glorious Harvest", -- [1]
+			"Picked Up: Lindsay Ravensun, Revealed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1801,7 +1803,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1318, -- [11]
+			2688, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1809,11 +1811,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960254,
+			[51] = 1602567460,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [82]
 		{
-			"Completed: Past Their Prime", -- [1]
+			"Completed: Lindsay Ravensun, Revealed", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1823,7 +1825,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1323, -- [11]
+			2694, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1831,11 +1833,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960255,
+			[51] = 1602567476,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [83]
 		{
-			"Picked Up: Human Infestation", -- [1]
+			"Picked Up: Ace in the Hole", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1845,7 +1847,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1330, -- [11]
+			2696, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1853,11 +1855,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960256,
+			[51] = 1602567477,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [84]
 		{
-			"Completed: Trouble at Azurelode", -- [1]
+			"1/5 Frightened Provincial Minuteman slain and converted", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1867,7 +1869,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1331, -- [11]
+			2710, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1875,11 +1877,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960256,
+			[51] = 1602567548,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [85]
 		{
-			"Picked Up: Thieving Little Monsters!", -- [1]
+			"1/5 Forsaken Trooper mobilized", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1889,7 +1891,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1333, -- [11]
+			2712, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1897,11 +1899,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960256,
+			[51] = 1602567551,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [86]
 		{
-			"Picked Up: For the Horde", -- [1]
+			"2/5 Frightened Provincial Minuteman slain and converted", -- [1]
 			"Okona-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1911,7 +1913,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1339, -- [11]
+			2714, -- [11]
 			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1919,272 +1921,272 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfffefefeOkona|r",
-			[51] = 1601960305,
+			[51] = 1602567554,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [87]
 		{
-			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
-			"Sorddon-Zul'jin", -- [2]
+			"2/5 Forsaken Trooper mobilized", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sorddon-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1340, -- [11]
-			"Player-61-0CA9A736", -- [12]
+			2716, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcSorddon|r",
-			[51] = 1601960343,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567556,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [88]
 		{
-			"WTS 5 Mask vision full clear", -- [1]
-			"Sorddon-Zul'jin", -- [2]
+			"3/5 Frightened Provincial Minuteman slain and converted", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sorddon-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1341, -- [11]
-			"Player-61-0CA9A736", -- [12]
+			2719, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcSorddon|r",
-			[51] = 1601960343,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567562,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [89]
 		{
-			"WTS M+15 JUST FOR >>85k<< ALSO -> ArmorStack 89k -> Specific key 99k! ||MECHAGON HARDMODE MOUNT || MYTHIC & HEROIC NY'ALOTHA ||  VISIONS 0-5 MASKS (STORMWIND LAST DAY) || GOLD ONLY! HUOKAN COMMUNITY ", -- [1]
-			"Wilmbank-Zul'jin", -- [2]
+			"3/5 Forsaken Trooper mobilized", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Wilmbank-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1342, -- [11]
-			"Player-61-0DDF85CC", -- [12]
+			2721, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Wilmbank|r",
-			[51] = 1601960355,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567565,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [90]
 		{
-			"WTS full Replica Darkmantle set, 8/8 pieces! |cffa335ee|Hitem:78263::::::::60:252::14::::|h[Replica Darkmantle Cap]|h|r|cff0070dd|Hitem:78268::::::::60:252::14::::|h[Replica Darkmantle Pants]|h|r|cffa335ee|Hitem:78269::::::::60:252::14::::|h[Replica Darkmantle Tunic]|h|r|cff0070dd|Hitem:78267::::::::60:252::14::::|h[Replica Darkmantle Spaulders]|h|r|cff0070dd|Hitem:78264::::::::60:252::14::::|h[Replica Darkmantle Bracers]|h|r", -- [1]
-			"Replicabank-Zul'jin", -- [2]
+			"4/5 Frightened Provincial Minuteman slain and converted", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Replicabank-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1343, -- [11]
-			"Player-61-0D027E13", -- [12]
+			2723, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Replicabank|r",
-			[51] = 1601960390,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567569,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [91]
 		{
-			"|cffa335ee|Hitem:166705::::::::20:64::::::|h[Glacial Tidestorm]|h|r|cffa335ee|Hitem:174872::::::::20:64::::::|h[Ny'alotha Allseer]|h|r|cffa335ee|Hitem:174836::::::::20:64::::::|h[Awakened Mindborer]|h|r|cffa335ee|Hitem:173713::::::::20:64::::::|h[Vicious White Bonesteed]|h|r also 12/12 H/M Nyalotha. M+ 15 Keys. G0ld 0nly", -- [1]
-			"Montitwo-Zul'jin", -- [2]
+			"4/5 Forsaken Trooper mobilized", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Montitwo-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1344, -- [11]
-			"Player-61-0CD7D0F5", -- [12]
+			2724, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Montitwo|r",
-			[51] = 1601960400,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567572,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [92]
 		{
-			"WTS [Goblin Glider Kit]. x100 for 2k gold. Have tons! PST, will CoD. It's no longboy, but have you ever seen a longboy fly.", -- [1]
-			"Axxios-Zul'jin", -- [2]
+			"5/5 Frightened Provincial Minuteman slain and converted", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Axxios-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1345, -- [11]
-			"Player-61-06AEDE62", -- [12]
+			2726, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Axxios|r",
-			[51] = 1601960402,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567576,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [93]
 		{
-			"WTS M+15 JUST FOR >>85k<< ALSO -> ArmorStack 89k -> Specific key 99k! ||MECHAGON HARDMODE MOUNT || MYTHIC & HEROIC NY'ALOTHA ||  VISIONS 0-5 MASKS (STORMWIND LAST DAY) || GOLD ONLY! HUOKAN COMMUNITY ", -- [1]
-			"Wilmbank-Zul'jin", -- [2]
+			"5/5 Forsaken Trooper mobilized", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Wilmbank-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1346, -- [11]
-			"Player-61-0DDF85CC", -- [12]
+			2727, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Wilmbank|r",
-			[51] = 1601960407,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567578,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [94]
 		{
-			"Are tired of farming gold in Atal'Dazar || Grinding 2x4 || Old Content Raids... Problems solved! Join Huokan Boosting Community, the biggest community of Boosting M+, Raids, PVPs and more!!! For more info join https://discord.gg/esudQCa - GOLD ON ", -- [1]
-			"Orcrux-Zul'jin", -- [2]
+			"1/1 Hunt Thassarian", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Orcrux-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1347, -- [11]
-			"Player-61-0DDC78E9", -- [12]
+			2790, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cOrcrux|r",
-			[51] = 1601960424,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567877,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [95]
 		{
-			"WTS Freehold Powerleveling (110-120). 4 mins per lvl with looms!", -- [1]
-			"Sorddon-Zul'jin", -- [2]
+			"Picked Up: Andorhal, Once and For All", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sorddon-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1350, -- [11]
-			"Player-61-0CA9A736", -- [12]
+			2797, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcSorddon|r",
-			[51] = 1601960470,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567880,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [96]
 		{
-			"WTS 5 Mask vision full clear", -- [1]
-			"Sorddon-Zul'jin", -- [2]
+			"Completed: Ace in the Hole", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sorddon-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1351, -- [11]
-			"Player-61-0CA9A736", -- [12]
+			2798, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcSorddon|r",
-			[51] = 1601960470,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567881,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [97]
 		{
-			"Great deals!, Jaina M (330k) Ny'alotha H, M full clear. N'zoth Mount, specific kills || M+10-24s (+15 85k or 89k with armor stack) Horrific Visions 0-5 masks. Excellent KSM deal. Hertz Locker. *Includes a free hug* Join on https://discord.gg/dK7a8tk", -- [1]
-			"Lanf-Zul'jin", -- [2]
+			"Completed: Andorhal, Once and For All", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lanf-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1358, -- [11]
-			"Player-61-0D360B96", -- [12]
+			2807, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cLanf|r",
-			[51] = 1601960529,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567937,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [98]
 		{
-			"Are tired of farming gold in Atal'Dazar || Grinding 2x4 || Old Content Raids... Problems solved! Join Huokan Boosting Community, the biggest community of Boosting M+, Raids, PVPs and more!!! For more info join https://discord.gg/esudQCa - GOLD ON ", -- [1]
-			"Orcrux-Zul'jin", -- [2]
+			"Picked Up: The Reckoning", -- [1]
+			"Okona-Zul'jin", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Orcrux-Zul'jin", -- [5]
+			"", -- [4]
+			"Okona-Zul'jin", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1359, -- [11]
-			"Player-61-0DDC78E9", -- [12]
+			2809, -- [11]
+			"Player-61-0DE12200", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cOrcrux|r",
-			[51] = 1601960532,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfffefefeOkona|r",
+			[51] = 1602567937,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [99]
 	},
 }

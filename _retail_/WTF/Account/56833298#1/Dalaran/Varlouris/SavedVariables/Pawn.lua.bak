@@ -6,90 +6,90 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 122246,
-			["Level"] = 53,
-			["Link"] = "|cff00ccff|Hitem:122246::::::::49:263:::1:5805:::|h[Tarnished Raging Berserker's Helm]|h|r",
+			["Level"] = 80,
+			["Link"] = "|cff00ccff|Hitem:122246::::::::69:263:::1:5805:::|h[Tarnished Raging Berserker's Helm]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122668,
-			["Level"] = 53,
-			["Link"] = "|cff00ccff|Hitem:122668::::::::49:263:::1:5805:::|h[Eternal Will of the Martyr]|h|r",
+			["Level"] = 80,
+			["Link"] = "|cff00ccff|Hitem:122668::::::::69:263:::1:5805:::|h[Eternal Will of the Martyr]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122374,
-			["Level"] = 53,
-			["Link"] = "|cff00ccff|Hitem:122374::::::::49:263:::1:5805:::|h[Prized Beastmaster's Mantle]|h|r",
+			["Level"] = 80,
+			["Link"] = "|cff00ccff|Hitem:122374::::::::69:263:::1:5805:::|h[Prized Beastmaster's Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122379,
-			["Level"] = 53,
-			["Link"] = "|cff00ccff|Hitem:122379::::::::49:263:::1:5805:::|h[Champion's Deathdealer Breastplate]|h|r",
+			["Level"] = 80,
+			["Link"] = "|cff00ccff|Hitem:122379::::::::69:263:::1:5805:::|h[Champion's Deathdealer Breastplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 131591,
-			["Level"] = 48,
-			["Link"] = "|cff1eff00|Hitem:131591::::::::49:263:512:11:1:3649:48:::|h[Cinch of the Ascetic]|h|r",
+			["ID"] = 37421,
+			["Level"] = 69,
+			["Link"] = "|cff1eff00|Hitem:37421::::::::67:263:512:11:1:3685:66:::|h[Waverunner Waistband]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122252,
-			["Level"] = 53,
-			["Link"] = "|cff00ccff|Hitem:122252::::::::49:263:::1:5805:::|h[Tarnished Leggings of Destruction]|h|r",
+			["Level"] = 80,
+			["Link"] = "|cff00ccff|Hitem:122252::::::::69:263:::1:5805:::|h[Tarnished Leggings of Destruction]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 131604,
-			["Level"] = 56,
-			["Link"] = "|cffa335ee|Hitem:131604::::::::44:263:512:11:2:3644:5645:44:::|h[Raven Hill Boots]|h|r",
+			["ID"] = 36068,
+			["Level"] = 67,
+			["Link"] = "|cff1eff00|Hitem:36068::::::::67:263:512:28:2:1708:3840:66:::|h[Daggercap Boots of the Aurora]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 131598,
-			["Level"] = 48,
-			["Link"] = "|cff1eff00|Hitem:131598::::::::48:263:512:11:1:3649:48:::|h[Bartered Wristguards]|h|r",
+			["ID"] = 36202,
+			["Level"] = 67,
+			["Link"] = "|cff1eff00|Hitem:36202::::::::67:263:512:28:2:1678:3840:67:::|h[Skom Bracers of the Quickblade]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 131596,
-			["Level"] = 50,
-			["Link"] = "|cff0070dd|Hitem:131596::::::::44:263:512:11:1:3723:44:::|h[Yorgen's Mitts]|h|r",
+			["ID"] = 37436,
+			["Level"] = 79,
+			["Link"] = "|cff0070dd|Hitem:37436::::::::69:263:512:11:2:3685:5536:68:::|h[Seaspeaker Gloves]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 122529,
-			["Level"] = 53,
+			["Level"] = 80,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::49:263:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122529::::::::69:263:::1:5805:::|h[Dread Pirate Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128173,
-			["Level"] = 53,
+			["Level"] = 80,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::49:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::69:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122361,
-			["Level"] = 53,
+			["Level"] = 80,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::49:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::69:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 52,
+			["Level"] = 77,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::48:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::68:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122261,
-			["Level"] = 53,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::49:263:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["Level"] = 80,
+			["Link"] = "|cff00ccff|Hitem:122261::::::::69:263:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 122385,
-			["Level"] = 53,
+			["Level"] = 80,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff00ccff|Hitem:122385::::::::49:263:::1:5805:::|h[Venerable Mass of McGowan]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122385::::::::69:263:::1:5805:::|h[Venerable Mass of McGowan]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 122385,
-			["Level"] = 52,
+			["Level"] = 77,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff00ccff|Hitem:122385::::::::48:263:::1:5805:::|h[Venerable Mass of McGowan]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122385::::::::68:263:::1:5805:::|h[Venerable Mass of McGowan]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

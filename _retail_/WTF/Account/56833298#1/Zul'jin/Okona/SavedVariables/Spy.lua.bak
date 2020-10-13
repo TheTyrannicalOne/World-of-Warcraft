@@ -1,10 +1,24 @@
 
 SpyPerCharDB = {
-	["PlayerData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
 	},
-	["version"] = "1.1",
 	["KOSData"] = {
+	},
+	["PlayerData"] = {
+		["Kiiàra-Stormrage"] = {
+			["mapID"] = 25,
+			["zone"] = "Hillsbrad Foothills",
+			["mapY"] = 0.62,
+			["class"] = "SHAMAN",
+			["isEnemy"] = true,
+			["mapX"] = 0.68,
+			["isGuess"] = true,
+			["time"] = 1602224161,
+			["subZone"] = "Durnholde Keep",
+			["level"] = 16,
+			["race"] = "Draenei",
+			["name"] = "Kiiàra-Stormrage",
+		},
 	},
 }

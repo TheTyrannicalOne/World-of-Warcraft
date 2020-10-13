@@ -1,10 +1,9 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[26344] = {
-			["title"] = "Some Assembly Required",
+		[26944] = {
+			["title"] = "Exploring Gnomeregan",
 			["objectives"] = {
-				"0/5 Snapjaw Crocolisk Skin", -- [1]
 			},
 		},
 		[27353] = {
@@ -13,6 +12,45 @@ QuestTogether = {
 				"0/1 Walden's Talisman", -- [1]
 				"0/1 Book of Lost Souls", -- [2]
 				"0/5 Ghostly Essence", -- [3]
+			},
+		},
+		[11575] = {
+			["title"] = "Nick of Time",
+			["objectives"] = {
+			},
+		},
+		[11872] = {
+			["title"] = "The Nefarious Clam Master...",
+			["objectives"] = {
+				"0/1 Clam Master K slain", -- [1]
+			},
+		},
+		[12794] = {
+			["title"] = "The Magical Kingdom of Dalaran",
+			["objectives"] = {
+				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
+			},
+		},
+		[29608] = {
+			["title"] = "Allies in Dalaran",
+			["objectives"] = {
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[11707] = {
+			["title"] = "Distress Call",
+			["objectives"] = {
+			},
+		},
+		[11878] = {
+			["title"] = "Khu'nok Will Know",
+			["objectives"] = {
+				"Orphaned Mammoth Calf Delivered to Khu'nok", -- [1]
 			},
 		},
 		[31891] = {
@@ -25,49 +63,11 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[26739] = {
-			["title"] = "I Think She's Hungry",
-			["objectives"] = {
-				"40/40 Bites of basilisk meat", -- [1]
-			},
-		},
-		[195] = {
-			["title"] = "Raptor Stalking",
-			["objectives"] = {
-				"0/10 Lashtail Raptor slain", -- [1]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[193] = {
-			["title"] = "Panther Mastery",
-			["objectives"] = {
-				"0/1  ", -- [1]
-			},
-		},
-		[26733] = {
-			["title"] = "Control Sample",
-			["objectives"] = {
-				"7/7 Crystal Spine Basilisk Blood", -- [1]
-			},
-		},
-		[26736] = {
-			["title"] = "Spared from Madness",
-			["objectives"] = {
-				"1/1 Rescue Berrin Burnquill", -- [1]
-				"1/1 Rescue Emerine Junis", -- [2]
-				"1/1 Rescue Osborn Obnoticus", -- [3]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }
