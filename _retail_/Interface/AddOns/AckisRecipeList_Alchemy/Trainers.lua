@@ -72,6 +72,7 @@ function module:InitializeTrainers()
 	AddTrainer(92458, "Deucus Valdera",		Z.DALARAN_BROKENISLES,		41.2, 33.3,	"Neutral")
 	AddTrainer(122703, "Clever Kumali", 		Z.DAZARALOR,			42.27, 38.13, 	"Horde")
 	AddTrainer(132228, "Elric Whalgrene",		Z.BORALUS,			74.6, 6.6,	"Alliance")
+	AddTrainer(156687, "Elixirist Au'pyr", 		Z.ORIBOS,			39.31, 39.88,	"Neutral")
 
 	self.InitializeTrainers = nil
 end

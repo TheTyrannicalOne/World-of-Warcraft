@@ -1,12 +1,24 @@
-tag b6d520b6636e716c1cfae2ee0d76e76b3f40864e 8.3.0.1
+tag a1a918cdeaddc773a052dea50a2f6edfceb5ac38 9.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Jan 14 18:09:05 2020 -0500
+Date:	Tue Oct 13 14:01:48 2020 -0400
 
-8.3.0 update
+9.0. update - includes scans of older vendors
 
-commit 81640a905fd623fb567cc06cc055786dba578a67
+commit b7213e7dc11ca1bb9651f9982774ea46dfc3e239
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Jan 14 17:49:30 2020 -0500
+Date:   Tue Oct 13 13:50:46 2020 -0400
 
-    8.3 update
+    9.0 update
+
+commit d335dcbc982d9b58af6256ee5fed7e15ba4b99b2
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Sep 6 22:02:46 2020 -0400
+
+    Fix coords
+
+commit 587ab99db8f4d808de15e51b24651c8d0951a822
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jul 5 15:01:49 2020 -0400
+
+    Add Hessir, Cooking trainer
 

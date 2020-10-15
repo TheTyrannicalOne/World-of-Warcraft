@@ -47,6 +47,7 @@ module.ITEM_FILTER_TYPES = {
 	BLACKSMITHING_CREATED_ITEM = true,
 	BLACKSMITHING_MOUNT = true,
 	BLACKSMITHING_RELIC = true,
+	BLACKSMITHING_WARGLAIVE = true,
 }
 
 function module:InitializeItemFilters(parent_panel)
@@ -127,6 +128,7 @@ function module:InitializeItemFilters(parent_panel)
 		blacksmithing_two_hand_axe	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Two-Handed Axe"]),	text = L["Two-Handed Axe"],	row = 4, col = 1 },
 		blacksmithing_two_hand_mace	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Two-Handed Mace"]),	text = L["Two-Handed Mace"],	row = 4, col = 2 },
 		blacksmithing_two_hand_sword	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Two-Handed Sword"]),	text = L["Two-Handed Sword"],	row = 5, col = 1 },
+		blacksmithing_warglaive		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Warglaive"]),	text = L["Warglaive"],		row = 5, col = 2 },
 	}
 
 	weapon_toggle:SetScript("OnClick", function(self, button)

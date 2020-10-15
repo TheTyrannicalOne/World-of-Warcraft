@@ -83,9 +83,11 @@ function module:InitializeTrainers()
 	AddTrainer(85925, "Elton Black", 		Z.STORMSHIELD, 			35.3, 76.3, "Alliance")
 	AddTrainer(86029, "Guy Fireeye", 		Z.WARSPEAR, 			46.0, 44.2, "Horde")
 	AddTrainer(93534, "Katherine Lee", 		Z.DALARAN_BROKENISLES, 		39.7, 66.5, "Alliance")
+	AddTrainer(129014, "Hessir", 			Z.VOLDUN, 			27.64, 53.23, "Neutral")
 	AddTrainer(136052, "\"Cap'n\" Byron Mehlsack",	Z.BORALUS,			71.3, 10.9, "Alliance")
 	AddTrainer(141549, "T'sarah the Royal Chef",	Z.DAZARALOR,			28.7, 47.4, "Horde")
 	AddTrainer(150632, "Stacks", 			Z.MECHAGON_ISLAND, 		71.18, 35.99, "Neutral")
+	AddTrainer(156672, "Chef Au'krut", 		Z.ORIBOS,		 	46.79, 26.25, "Neutral")
 
 	self.InitializeTrainers = nil
 end

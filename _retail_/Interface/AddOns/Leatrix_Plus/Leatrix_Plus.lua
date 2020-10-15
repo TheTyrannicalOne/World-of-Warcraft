@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.00 (12th October 2020)
+-- 	Leatrix Plus 9.0.01 (14th October 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.00"
+	LeaPlusLC["AddonVer"] = "9.0.01"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -2263,12 +2263,12 @@
 
 				-- Show quest dialog for quests that use the objective tracker (it will be completed automatically)
 				if event == "QUEST_AUTOCOMPLETE" then
-					if LeaPlusLC["AutoQuestCompleted"] == "On" then
-						local index = GetQuestLogIndexByID(arg1)
-						if GetQuestLogIsAutoComplete(index) then
-							ShowQuestComplete(index)
-						end
-					end
+					--if LeaPlusLC["AutoQuestCompleted"] == "On" then
+					--	local index = C_QuestLog.GetLogIndexForQuestID(arg1)
+					--	if GetQuestLogIsAutoComplete(index) then
+					--		ShowQuestComplete(index)
+					--	end
+					--end
 				end
 
 				----------------------------------------------------------------------

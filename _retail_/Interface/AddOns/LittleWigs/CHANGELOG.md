@@ -1,10 +1,7 @@
 # LittleWigs
 
-## [v8.3.11](https://github.com/BigWigsMods/LittleWigs/tree/v8.3.11) (2020-03-08)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.3.10...v8.3.11)
+## [v9.0.1](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.1) (2020-10-14)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.0...v9.0.1) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
 
-- Update ruRU (#519)  
-- Update ruRU (#518)  
-- Update ruRU (#516)  
-- Update ruRU (#514)  
-- BfA/WaycrestManor/Heartsbane: Improve timers (#517)  
+- Update gossip API for shadowlands  
+- Update gossip API for shadowlands  

@@ -29,7 +29,7 @@ BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L["TOGGLE_RANDOM"];
 BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"];
 
 -- The Settings Frame
-local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", UIParent);
+local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", UIParent, BackdropTemplateMixin and "BackdropTemplate");
 app.Settings = settings;
 settings.name = app:GetName();
 settings.MostRecentTab = nil;
@@ -2521,6 +2521,23 @@ end);
 ShowSourceLocationsForThingsCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations for Things.");
 ShowSourceLocationsForThingsCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForCreaturesCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowSourceLocationsForUnsortedCheckBox = settings:CreateCheckBox("For Unsorted",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Unsorted"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SourceLocations:Unsorted", self:GetChecked());
+end);
+ShowSourceLocationsForUnsortedCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations which have not been fully sourced into the database.");
+ShowSourceLocationsForUnsortedCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForThingsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);
 DebuggingLabel:SetJustifyH("LEFT");
@@ -2802,13 +2819,13 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("Auto:AH", self:GetChecked());
-	if app.Blizzard_AuctionUILoaded then
+	if app.Blizzard_AuctionHouseUILoaded then
 		if app.AuctionModuleTabID then
 			if self:GetChecked() then
-				PanelTemplates_EnableTab(AuctionFrame, app.AuctionModuleTabID);
+				PanelTemplates_EnableTab(AuctionHouseFrame, app.AuctionModuleTabID);
 				app:OpenAuctionModule();
 			else
-				PanelTemplates_DisableTab(AuctionFrame, app.AuctionModuleTabID);
+				PanelTemplates_DisableTab(AuctionHouseFrame, app.AuctionModuleTabID);
 			end
 		else
 			app:OpenAuctionModule();
@@ -2817,6 +2834,16 @@ function(self)
 end);
 ShowAuctionHouseModuleTab:SetATTTooltip("Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.");
 ShowAuctionHouseModuleTab:SetPoint("TOPLEFT", ShowCurrenciesInWorldQuestsList, "BOTTOMLEFT", -4, 4);
+
+local SortByCompletionInstead = settings:CreateCheckBox("Sort By Progress",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Sort:Progress"));
+end,
+function(self)
+	settings:SetTooltipSetting("Sort:Progress", self:GetChecked());
+end);
+SortByCompletionInstead:SetATTTooltip("Enable this option if you want the 'Sort' operation (Shift + Right Click) to sort by the total progress of each group (instead of by Name)");
+SortByCompletionInstead:SetPoint("TOPLEFT", ShowAuctionHouseModuleTab, "BOTTOMLEFT", 0, 4);
 
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -50, -8);

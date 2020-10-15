@@ -7,1524 +7,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"WTS Heroic N'zoth only kills! Kill includes Ahead of the Curve Achievement,|cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r mount and any loot via the personal loot system! Going soon!! GOLD ONLY", -- [1]
-			"Gochufour-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Gochufour-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			9, -- [11]
-			"Player-3683-0C67BB86", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeGochufour|r",
-			[51] = 1601935617,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"No sackcloth available?", -- [1]
-			"Bytan-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bytan-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			10, -- [11]
-			"Player-3683-0BE4F197", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8686ecBytan|r",
-			[51] = 1601935617,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"|cffffd100|HclubFinder:ClubFinder-1-171401-3683-94758003|h[Guild: The Pretenders]|h|r New PvE guild on Dalaran accepting players looking for a fresh start for Shadowlands. We have an AOTC experienced raid team and will be running M+ keys and more! pst", -- [1]
-			"Nibeku-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Nibeku-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			11, -- [11]
-			"Player-3683-0C34BDE0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Nibeku|r",
-			[51] = 1601935627,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"WTS |cffa335ee|Hitem:161134::::::::120:257::13::::|h[Mecha-Mogul Mk2]|h|r, cheaper than AH", -- [1]
-			"Ikuse-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ikuse-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			12, -- [11]
-			"Player-3683-0B4364F3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeIkuse|r",
-			[51] = 1601935632,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"hello all", -- [1]
-			"Drargon-Kel'Thuzad", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Drargon-Kel'Thuzad", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			87, -- [11]
-			"Player-3693-0CC15FEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcDrargon-Kel'Thuzad|r",
-			[51] = 1601936322,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"Warcraft The Gathering -We are a newly formed guild with dedicated PvP and PvE folk looking for more players of all skill levels. As we gear up for shadowlands, we encourage all to join the ranks as we organize core raiding groups as well as RBG. Pst 4MI", -- [1]
-			"Drargon-Kel'Thuzad", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Drargon-Kel'Thuzad", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			88, -- [11]
-			"Player-3693-0CC15FEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcDrargon-Kel'Thuzad|r",
-			[51] = 1601936324,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"this is so annoying", -- [1]
-			"Doggybows-Onyxia", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Doggybows-Onyxia", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			133, -- [11]
-			"Player-104-0CCB331C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Doggybows-Onyxia|r",
-			[51] = 1601936936,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"well i was staying out of it.. but im down to kil the shammy and priest haha", -- [1]
-			"Sixsixxsix-Shadowmoon", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Sixsixxsix-Shadowmoon", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			147, -- [11]
-			"Player-154-084FBE8F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Sixsixxsix-Shadowmoon|r",
-			[51] = 1601937106,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"|cffffff00Nesingwary's Expedition is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Northern Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			210, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1601937496,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"|cffffff00Nesingwary's Expedition is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Northern Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			244, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1601937580,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"|cffffff00Nesingwary's Expedition is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Northern Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			270, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1601937654,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"|cffffff00Nesingwary's Expedition is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Northern Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			302, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1601938046,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"so many hostiles here", -- [1]
-			"Huntertwink-Shadowmoon", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Huntertwink-Shadowmoon", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			448, -- [11]
-			"Player-154-0A38BF94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Huntertwink-Shadowmoon|r",
-			[51] = 1601939110,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"xD", -- [1]
-			"Huntertwink-Shadowmoon", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Huntertwink-Shadowmoon", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			450, -- [11]
-			"Player-154-0A38BF94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Huntertwink-Shadowmoon|r",
-			[51] = 1601939111,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"|cffffff00Nesingwary's Expedition is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Northern Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1103, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602165801,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"is there a mage that could make me a portal to sw?", -- [1]
-			"Relish-Malygos", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Relish-Malygos", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1104, -- [11]
-			"Player-104-0CCBC2C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Relish-Malygos|r",
-			[51] = 1602165815,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"yeah i can", -- [1]
-			"Addle-Mannoroth", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Addle-Mannoroth", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1105, -- [11]
-			"Player-77-0DE82036", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Addle-Mannoroth|r",
-			[51] = 1602165830,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"Oh nice, I was about to offer to Friend you, stone to SWC and pull you there.", -- [1]
-			"Gnomursnoot-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Gnomursnoot-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1109, -- [11]
-			"Player-3683-0CB622A3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Gnomursnoot|r",
-			[51] = 1602165847,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"That works lol, didn't know Mages can make portals to places.", -- [1]
-			"Gnomursnoot-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Gnomursnoot-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1110, -- [11]
-			"Player-3683-0CB622A3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Gnomursnoot|r",
-			[51] = 1602165858,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"how ever", -- [1]
-			"Relish-Malygos", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Relish-Malygos", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1111, -- [11]
-			"Player-104-0CCBC2C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Relish-Malygos|r",
-			[51] = 1602165865,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"|cffffff00Nesingwary's Expedition is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Northern Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1112, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602165868,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"I haven't been able to leave here in 3 days now", -- [1]
-			"Relish-Malygos", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Relish-Malygos", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1113, -- [11]
-			"Player-104-0CCBC2C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Relish-Malygos|r",
-			[51] = 1602165871,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"relish where you at?", -- [1]
-			"Addle-Mannoroth", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Addle-Mannoroth", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1116, -- [11]
-			"Player-77-0DE82036", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Addle-Mannoroth|r",
-			[51] = 1602165877,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"The other side of the river, north of nesingwary's camp. ", -- [1]
-			"Relish-Malygos", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Relish-Malygos", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1122, -- [11]
-			"Player-104-0CCBC2C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Relish-Malygos|r",
-			[51] = 1602165901,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"and I don't want to have to delete my character.. This is like the worst place to have warmode on at.", -- [1]
-			"Relish-Malygos", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Relish-Malygos", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1123, -- [11]
-			"Player-104-0CCBC2C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Relish-Malygos|r",
-			[51] = 1602165921,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"We got you bro.", -- [1]
-			"Gnomursnoot-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Gnomursnoot-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1124, -- [11]
-			"Player-3683-0CB622A3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Gnomursnoot|r",
-			[51] = 1602165951,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"Careful tho", -- [1]
-			"Gnomursnoot-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Gnomursnoot-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1125, -- [11]
-			"Player-3683-0CB622A3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Gnomursnoot|r",
-			[51] = 1602165953,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"on my way", -- [1]
-			"Addle-Mannoroth", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Addle-Mannoroth", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1126, -- [11]
-			"Player-77-0DE82036", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Addle-Mannoroth|r",
-			[51] = 1602166006,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"We're on a rock outcropping up here.", -- [1]
-			"Gnomursnoot-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Northern Stranglethorn", -- [4]
-			"Gnomursnoot-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1135, -- [11]
-			"Player-3683-0CB622A3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Gnomursnoot|r",
-			[51] = 1602166089,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"can you help me", -- [1]
-			"Darktrep-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Darktrep-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1137, -- [11]
-			"Player-61-0DE96A4B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecDarktrep-Zul'jin|r",
-			[51] = 1602166198,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [30]
-		{
-			"follow me", -- [1]
-			"Darktrep-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Darktrep-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1176, -- [11]
-			"Player-61-0DE96A4B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecDarktrep-Zul'jin|r",
-			[51] = 1602166452,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [31]
-		{
-			"poor ah", -- [1]
-			"Airinul-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Airinul-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			34, -- [11]
-			"Player-3683-0AA4D94D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Airinul|r",
-			[51] = 1602211273,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
-		{
-			"LF your weekly M+??? <<WTS>> +10-24's INTIME/UNTIMED. ARMOR STACK FREE!!!<<GOLD ONLY>>", -- [1]
-			"Starlightb-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Starlightb-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			35, -- [11]
-			"Player-3683-0CB640DD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Starlightb|r",
-			[51] = 1602211276,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"damn lag", -- [1]
-			"Xica-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Xica-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			36, -- [11]
-			"Player-3683-0C28B9EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Xica|r",
-			[51] = 1602211279,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"*wekeend deals*wts KEYS  +15 -24 TIMED (specific key available an free armor stacking)// aotc // full nyalotha clear (heroic  and mythic) /loot funnels available//mounts//pvp carries and more // jaina mount//gold only dm for +info cheapest prices around!", -- [1]
-			"Emmirs-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Emmirs-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			37, -- [11]
-			"Player-3683-0C0B6009", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cEmmirs|r",
-			[51] = 1602211292,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"i parked longboi next to the mail box rofl", -- [1]
-			"Fallenbolvar-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Fallenbolvar-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			38, -- [11]
-			"Player-3683-0C86D39F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Fallenbolvar|r",
-			[51] = 1602211293,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"i feel like i really helped there healing", -- [1]
-			"Vëlaword-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vëlaword-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			42, -- [11]
-			"Player-3683-0C0EE555", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeVëlaword|r",
-			[51] = 1602211310,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"HOOOORAAAAAH", -- [1]
-			"Carpets-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Carpets-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			43, -- [11]
-			"Player-3683-0CB54728", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Carpets|r",
-			[51] = 1602211310,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"Horde attacked? lmao", -- [1]
-			"Cydrin-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Cydrin-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			44, -- [11]
-			"Player-3683-09F7B421", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8686ecCydrin|r",
-			[51] = 1602211316,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"I hate poilitics in trade", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1159, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1602478020,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"WTS Horrific Vision 5 Masks for GOLD. pst", -- [1]
-			"Alashlor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Alashlor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1160, -- [11]
-			"Player-3683-09DB8F3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Alashlor|r",
-			[51] = 1602478023,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"Monks use their hands.", -- [1]
-			"Molikroth-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Molikroth-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1161, -- [11]
-			"Player-3683-0CB77BE9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Molikroth|r",
-			[51] = 1602478025,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"Selling Mythic+11-15 get all loots tradable weekly chest100% Corruption gear without trinket,mythicl/heroic Ny'alotha1-12,(full 445/460gear),also do Mechagon for mount+jaina mount,starting now PST", -- [1]
-			"Melmilleia-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Melmilleia-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			1162, -- [11]
-			"Player-3683-0CB7DEF9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeMelmilleia|r",
-			[51] = 1602478030,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
-		{
-			"the man has spoken!", -- [1]
-			"Lovêly-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lovêly-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1163, -- [11]
-			"Player-3683-09224709", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Lovêly|r",
-			[51] = 1602478032,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
-		{
-			"Have you not played D&D?", -- [1]
-			"Molikroth-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Molikroth-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1164, -- [11]
-			"Player-3683-0CB77BE9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Molikroth|r",
-			[51] = 1602478033,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
-		{
-			"it depends on the spec andas", -- [1]
-			"Kurokodieru-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kurokodieru-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1165, -- [11]
-			"Player-3683-0AD61FA0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Kurokodieru|r",
-			[51] = 1602478037,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
-		{
-			"ok", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1166, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1602478041,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
-		{
-			"dungeons and dragons", -- [1]
-			"Lukrieskai-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lukrieskai-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1167, -- [11]
-			"Player-3683-0C1C932D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Lukrieskai|r",
-			[51] = 1602478047,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
-		{
-			"satans game", -- [1]
-			"Lukrieskai-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lukrieskai-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1168, -- [11]
-			"Player-3683-0C1C932D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Lukrieskai|r",
-			[51] = 1602478050,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
-		{
-			"\"monk tanks\"", -- [1]
-			"Andas-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Andas-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1169, -- [11]
-			"Player-3683-0CB622D1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Andas|r",
-			[51] = 1602478052,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
-		{
-			"unless u meant talents?", -- [1]
-			"Andas-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Andas-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1170, -- [11]
-			"Player-3683-0CB622D1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Andas|r",
-			[51] = 1602478059,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
-		{
-			"idk tbh i only do windwalker and sometimes mistweaver", -- [1]
-			"Kurokodieru-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kurokodieru-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1174, -- [11]
-			"Player-3683-0AD61FA0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Kurokodieru|r",
-			[51] = 1602478074,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
-		{
-			"well, monks in dnd pretty cool", -- [1]
-			"Lukrieskai-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lukrieskai-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1175, -- [11]
-			"Player-3683-0C1C932D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Lukrieskai|r",
-			[51] = 1602478078,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
-		{
-			"|cffffff00Booty Bay is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Cape of Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Cape of Stranglethorn", -- [9]
-			0, -- [10]
-			1197, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602478370,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
-		{
-			"|cffffff00Booty Bay is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Cape of Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Cape of Stranglethorn", -- [9]
-			0, -- [10]
-			1241, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602478818,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
-		{
-			"|cffffff00Booty Bay is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Cape of Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Cape of Stranglethorn", -- [9]
-			0, -- [10]
-			1258, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602478989,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
-		{
-			"|cffffff00Booty Bay is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Cape of Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Cape of Stranglethorn", -- [9]
-			0, -- [10]
-			1267, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602479048,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
-		{
-			"|cffffff00Booty Bay is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Cape of Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Cape of Stranglethorn", -- [9]
-			0, -- [10]
-			1299, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602479276,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
-		{
-			"|cffffff00Booty Bay is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Cape of Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Cape of Stranglethorn", -- [9]
-			0, -- [10]
-			1332, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602479504,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
-		{
-			"|cffffff00Booty Bay is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Cape of Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Cape of Stranglethorn", -- [9]
-			0, -- [10]
-			1399, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602479804,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
-		{
-			"|cffffff00Booty Bay is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Cape of Stranglethorn", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Cape of Stranglethorn", -- [9]
-			0, -- [10]
-			1429, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1602480027,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
-		{
-			"[Spy] Kill On Sight player detected: Cconrogue-Area52 <Darkshire Gank Squad> - Level 120 Orc Rogue - Nesingwary's Expedition, Northern Stranglethorn (42,23)", -- [1]
-			"Paulaner-Undermine", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Northern Stranglethorn", -- [4]
-			"Paulaner-Undermine", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Northern Stranglethorn", -- [9]
-			0, -- [10]
-			1493, -- [11]
-			"Player-71-0DE28AEF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Paulaner-Undermine|r",
-			[51] = 1602480474,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
-		{
-			"Yay it wasnt vomit this time lol", -- [1]
-			"Natin-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Natin-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1525, -- [11]
-			"Player-3683-0BCEF7BC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Natin|r",
-			[51] = 1602480668,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
-		{
-			"Again. Keep Politics Out Of Trade Chat 2020", -- [1]
-			"Eishtar-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Eishtar-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1542, -- [11]
-			"Player-3683-0CB77BD7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Eishtar|r",
-			[51] = 1602480675,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
-		{
-			"nooooooooooooooooooooooooooooooo", -- [1]
-			"Sageraidis-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sageraidis-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1543, -- [11]
-			"Player-3683-0BCBC7E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Sageraidis|r",
-			[51] = 1602480675,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
-		{
-			"any healers or tanks up for mythin dazar?", -- [1]
-			"Galaveld-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Galaveld-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1553, -- [11]
-			"Player-3683-0A56A0BF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Galaveld|r",
-			[51] = 1602480676,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
-		{
-			"Gotta help our elders man... these guys getting ripped OFF.", -- [1]
-			"Molikroth-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Molikroth-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1556, -- [11]
-			"Player-3683-0CB77BE9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Molikroth|r",
-			[51] = 1602480678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
-		{
-			"thank goodness", -- [1]
-			"Cheezestickz-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cheezestickz-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1560, -- [11]
-			"Player-3683-0B44D152", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cheezestickz|r",
-			[51] = 1602480678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
-		{
-			"Never trust a burb lol", -- [1]
-			"Natin-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Natin-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1578, -- [11]
-			"Player-3683-0BCEF7BC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Natin|r",
-			[51] = 1602480688,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
-		{
 			"elders keep the game alive", -- [1]
 			"Sageraidis-Dalaran", -- [2]
 			"", -- [3]
@@ -1545,7 +27,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480692,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [1]
 		{
 			"true", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -1567,7 +49,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1602480696,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [2]
 		{
 			"Whats a burb? Is that like an ostrich?", -- [1]
 			"Eishtar-Dalaran", -- [2]
@@ -1589,7 +71,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Eishtar|r",
 			[51] = 1602480702,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [3]
 		{
 			"I mean I suppose that could go for adults too but mostly kids?? lol", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -1611,7 +93,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480703,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [4]
 		{
 			"they waste thousands of dallors", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -1633,7 +115,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [5]
 		{
 			"Biden and Kamala. :D ", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -1655,7 +137,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480715,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [6]
 		{
 			"BAMala", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -1677,7 +159,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480720,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [7]
 		{
 			"noty", -- [1]
 			"Synthëtíc-Dalaran", -- [2]
@@ -1699,7 +181,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Synthëtíc|r",
 			[51] = 1602480725,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [8]
 		{
 			"I'll not only help an elder, I'll build their computer for them, for the small price of a six pack", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -1721,7 +203,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480726,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [9]
 		{
 			"Lol whoops, burp. English D:", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -1743,7 +225,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480731,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [10]
 		{
 			"good news is 4 more years", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -1765,7 +247,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1602480735,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [11]
 		{
 			"i have  respect for you boomers", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -1787,7 +269,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480737,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [12]
 		{
 			"I don't respect the boomers", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -1809,7 +291,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480746,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [13]
 		{
 			"I aint playing this game to hear about the real world. Politics out of WoW 2020", -- [1]
 			"Eishtar-Dalaran", -- [2]
@@ -1831,7 +313,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Eishtar|r",
 			[51] = 1602480749,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [14]
 		{
 			"Only the elder ones that are almost dead :D", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -1853,7 +335,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480756,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [15]
 		{
 			"Zuxian is in denial.", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -1875,7 +357,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480767,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [16]
 		{
 			"except for the pedo", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -1897,7 +379,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480767,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [17]
 		{
 			"I cannot tell you how many times we thought that one of us said oh yeah the kid just needs to burp and surprise, vomit", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -1919,7 +401,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480772,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [18]
 		{
 			"He's ready to rock until he dies.", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -1941,7 +423,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [19]
 		{
 			"LOL you guys realize that a lot of grandparents now are GenX - right ?", -- [1]
 			"Tappacard-Dalaran", -- [2]
@@ -1963,7 +445,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tappacard|r",
 			[51] = 1602480783,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [20]
 		{
 			"Selling Mythic+11-15 get all loots tradable weekly chest100% Corruption gear without trinket,mythicl/heroic Ny'alotha1-12,(full 445/460gear),also do Mechagon for mount+jaina mount,starting now PST", -- [1]
 			"Melmilleia-Dalaran", -- [2]
@@ -1985,7 +467,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMelmilleia|r",
 			[51] = 1602480783,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [21]
 		{
 			"ouch", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -2007,7 +489,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1602480789,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [22]
 		{
 			"Sorry for that shit sentance lol", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -2029,7 +511,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480790,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [23]
 		{
 			"Ok boomer", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -2051,7 +533,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480797,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [24]
 		{
 			"lmnao", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -2073,7 +555,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480802,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [25]
 		{
 			"here comes the boom", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -2095,7 +577,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1602480809,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [26]
 		{
 			"i had to call the police on some pedo hitting on my little cousin had his dumbass arrested", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -2117,7 +599,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480813,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [27]
 		{
 			"? who me boomer?", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -2139,7 +621,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480816,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [28]
 		{
 			"Zuxian, never change. You're ok in my book.", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -2161,7 +643,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480817,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [29]
 		{
 			"powerleveling 110-120 - last day it is available before pre-patch breaks it!  PST", -- [1]
 			"Grakusgg-Dalaran", -- [2]
@@ -2182,6 +664,1524 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cfffe7b09Grakusgg|r",
 			[51] = 1602512156,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [30]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			811, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602559647,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [31]
+		{
+			"why are people dicks", -- [1]
+			"Eoran-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Eoran-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			816, -- [11]
+			"Player-3693-0CCBD12E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Eoran-Kel'Thuzad|r",
+			[51] = 1602559671,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [32]
+		{
+			"i dont get the fun in this", -- [1]
+			"Eoran-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Eoran-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			818, -- [11]
+			"Player-3693-0CCBD12E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Eoran-Kel'Thuzad|r",
+			[51] = 1602559682,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [33]
+		{
+			"cause they have nothing better to do LOL", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			820, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602559684,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [34]
+		{
+			"literally nothing", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			821, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602559692,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [35]
+		{
+			"hung like chipmunks", -- [1]
+			"Wightgirl-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Wightgirl-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			823, -- [11]
+			"Player-3693-0CC569DE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Wightgirl-Kel'Thuzad|r",
+			[51] = 1602559697,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [36]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			824, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602559707,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [37]
+		{
+			"dont go to keep", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			830, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602559744,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [38]
+		{
+			"theres 2 120s n I cant 1v2 them", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			832, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602559763,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [39]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			838, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602559777,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [40]
+		{
+			"and dh has |cff1eff00|Hitem:163604::::::::120:72::11::::|h[Net-o-Matic 5000]|h|r", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			839, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602559792,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"|cffffff00Valiant Rest is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			840, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602559793,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [42]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			841, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602559845,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [43]
+		{
+			"o and thers a 3rd hes a hunter cause you know back up for your back up cause the big bad 70s puta fight", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			844, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602559897,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [44]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			845, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602559906,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [45]
+		{
+			"|cffffff00Valiant Rest is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			852, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602559940,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [46]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			858, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602559967,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [47]
+		{
+			"and a 4th hes a pally", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			859, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602559977,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [48]
+		{
+			"|cffffff00Valiant Rest is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			873, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560065,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [49]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			881, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560113,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [50]
+		{
+			"wiping us out", -- [1]
+			"Ethot-Gnomeregan", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"Ethot-Gnomeregan", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			895, -- [11]
+			"Player-1175-0DE64C4C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeEthot-Gnomeregan|r",
+			[51] = 1602560178,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [51]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			896, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560181,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [52]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			899, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560241,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [53]
+		{
+			"|cffffff00Valiant Rest is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			900, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560246,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [54]
+		{
+			"Well that was obnoxious", -- [1]
+			"Deseadra-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Deseadra-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			901, -- [11]
+			"Player-3683-0C89BAB9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deseadra|r",
+			[51] = 1602560254,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [55]
+		{
+			"He still there?", -- [1]
+			"Deseadra-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Deseadra-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			905, -- [11]
+			"Player-3683-0C89BAB9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deseadra|r",
+			[51] = 1602560259,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [56]
+		{
+			"Oh there's also a warrior on the roof of the inn", -- [1]
+			"Deseadra-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Deseadra-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			913, -- [11]
+			"Player-3683-0C89BAB9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deseadra|r",
+			[51] = 1602560293,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [57]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			914, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560301,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [58]
+		{
+			"theres like 4 of em", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			915, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602560308,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"|cffffff00Valiant Rest is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			916, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560315,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"Yeah fuck all that", -- [1]
+			"Deseadra-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Deseadra-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			918, -- [11]
+			"Player-3683-0C89BAB9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deseadra|r",
+			[51] = 1602560319,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [61]
+		{
+			"They will die", -- [1]
+			"Chimimage-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Chimimage-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			919, -- [11]
+			"Player-3693-0AFDBAA6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
+			[51] = 1602560323,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [62]
+		{
+			"They're max lvl", -- [1]
+			"Deseadra-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Deseadra-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			920, -- [11]
+			"Player-3683-0C89BAB9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deseadra|r",
+			[51] = 1602560333,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [63]
+		{
+			"with my arcane mage", -- [1]
+			"Chimimage-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Chimimage-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			921, -- [11]
+			"Player-3693-0AFDBAA6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
+			[51] = 1602560336,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [64]
+		{
+			"we need an adult", -- [1]
+			"Oronaar-Stormrage", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Oronaar-Stormrage", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			922, -- [11]
+			"Player-60-0D68E004", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeOronaar-Stormrage|r",
+			[51] = 1602560336,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [65]
+		{
+			"I a 120 am not enuff need like 2 more atleast", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			930, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602560352,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [66]
+		{
+			"cause they 2v1", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			931, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602560357,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"Yeah", -- [1]
+			"Deseadra-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Deseadra-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			932, -- [11]
+			"Player-3683-0C89BAB9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deseadra|r",
+			[51] = 1602560363,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			934, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560368,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"Get on the boat with flying mount and stay hihg", -- [1]
+			"Deseadra-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Deseadra-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			937, -- [11]
+			"Player-3683-0C89BAB9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deseadra|r",
+			[51] = 1602560431,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			938, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560435,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"You'll be able to bail", -- [1]
+			"Deseadra-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Deseadra-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			939, -- [11]
+			"Player-3683-0C89BAB9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deseadra|r",
+			[51] = 1602560436,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"off to outlands", -- [1]
+			"Bumdk-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Bumdk-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			946, -- [11]
+			"Player-3693-0CCD3EA4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Bumdk-Kel'Thuzad|r",
+			[51] = 1602560484,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"|cffffff00Valiant Rest is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			949, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560495,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"I juust logged out my rogue to go to it to them", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			950, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602560504,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			951, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560505,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			964, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560565,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"killed the pally on his way back to org and a shammy", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			972, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602560606,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"|cffffff00Valiance Keep is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			973, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560629,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"|cffffff00Valiant Rest is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			974, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602560661,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"did they stop attacking the keep?", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1015, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602561040,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"havent seen em come back", -- [1]
+			"Thawne-DemonSoul", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Thawne-DemonSoul", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1016, -- [11]
+			"Player-157-096D930C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cThawne-DemonSoul|r",
+			[51] = 1602561053,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"seems so", -- [1]
+			"Thawne-DemonSoul", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Thawne-DemonSoul", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1017, -- [11]
+			"Player-157-096D930C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cThawne-DemonSoul|r",
+			[51] = 1602561057,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"if they do it will be an army of pist off horde :/", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1025, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602561082,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"yeah, pissed because they cant proceed with their no-life'ing", -- [1]
+			"Thawne-DemonSoul", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Thawne-DemonSoul", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1027, -- [11]
+			"Player-157-096D930C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cThawne-DemonSoul|r",
+			[51] = 1602561112,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"i mean im doing the same to their low levels", -- [1]
+			"Chimimage-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Chimimage-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1035, -- [11]
+			"Player-3693-0AFDBAA6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
+			[51] = 1602561130,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"welp", -- [1]
+			"Thawne-DemonSoul", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Thawne-DemonSoul", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1046, -- [11]
+			"Player-157-096D930C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cThawne-DemonSoul|r",
+			[51] = 1602561149,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"Im camping their airship teehee...", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1047, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602561152,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"you can still twink toons to lvl 48 just for ganking or lvl sink with lowlvls on a max and just gank away", -- [1]
+			"Cronicsweets-Sargeras", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Cronicsweets-Sargeras", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1048, -- [11]
+			"Player-76-0B1A5C31", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Cronicsweets-Sargeras|r",
+			[51] = 1602561157,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"i did that with a level 70 sub rogue", -- [1]
+			"Chimimage-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Chimimage-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1049, -- [11]
+			"Player-3693-0AFDBAA6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
+			[51] = 1602561172,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"48?", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1050, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602561183,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"after lvl 50 you cant gank lowbez", -- [1]
+			"Cronicsweets-Sargeras", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Cronicsweets-Sargeras", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1052, -- [11]
+			"Player-76-0B1A5C31", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Cronicsweets-Sargeras|r",
+			[51] = 1602561193,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"how so", -- [1]
+			"Chimimage-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Chimimage-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1061, -- [11]
+			"Player-3693-0AFDBAA6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
+			[51] = 1602561207,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"it kicks you out of croma time", -- [1]
+			"Cronicsweets-Sargeras", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Cronicsweets-Sargeras", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1064, -- [11]
+			"Player-76-0B1A5C31", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Cronicsweets-Sargeras|r",
+			[51] = 1602561232,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"HELLO EVERYONE, THIS IS MY ZONE NOW. SLAUGHTER HORDE OR GET THE FUCK OUT THANKS", -- [1]
+			"Holybelf-Wildhammer", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Holybelf-Wildhammer", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1065, -- [11]
+			"Player-53-0CB5BE7F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Holybelf-Wildhammer|r",
+			[51] = 1602561237,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"this isnt pre patch yet lmao", -- [1]
+			"Chimimage-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Chimimage-Kel'Thuzad", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1066, -- [11]
+			"Player-3693-0AFDBAA6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
+			[51] = 1602561248,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"^^^^ law of the land", -- [1]
+			"Logi-Alexstrasza", -- [2]
+			"", -- [3]
+			"1. General - Borean Tundra", -- [4]
+			"Logi-Alexstrasza", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Borean Tundra", -- [9]
+			0, -- [10]
+			1073, -- [11]
+			"Player-1070-0BA4788E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLogi-Alexstrasza|r",
+			[51] = 1602561251,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"|cffffff00Scalding Pools is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			1144, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602561782,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"|cffffff00D.E.H.T.A. Encampment is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			208, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602594113,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

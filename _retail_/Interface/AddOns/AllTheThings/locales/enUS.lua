@@ -26,6 +26,8 @@ app.L = {
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
+	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
+	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
 
 	-- Binding Localizations
 	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
@@ -217,7 +219,7 @@ app.L = {
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
 		[101] = TOOLTIP_BATTLE_PET,								-- Battle Pet
 		[102] = TOY,											-- Toy
-		[103] = "Illusions",
+		[103] = "Illusions",									-- Illusions
 		[104] = ITEM_BIND_QUEST, 								-- Quest Items
 		[105] = TRACKER_FILTER_ACHIEVEMENTS, 					-- Achievements
 		[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS, 				-- Holiday
@@ -1735,7 +1737,7 @@ app.L = {
 		[-9962] = BATTLE_PET_SOURCE_7,					-- World Events
 		[-9963] = SHOW_PET_BATTLES_ON_MAP_TEXT,			-- Pet Battles
 		[-9964] = COLLECTIONS,							-- Collections
-		[-9965] = select(1,GetCategoryInfo(15281)),		-- Class Hall
+		[-9965] = select(1,GetCategoryInfo(15304)),		-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),		-- Draenor Garrison
 		[-9967] = SCENARIOS,							-- Scenarios
 		[-9968] = LFG_LIST_LEGACY,						-- Legacy
@@ -2527,7 +2529,10 @@ app.L = {
 		[326418] = "Interface\\Icons\\inv_misc_treasurechest01c",
 		[326419] = "Interface\\Icons\\inv_misc_treasurechest01c",
 		[327230] = "Interface\\Icons\\inv_cooking_80_choralhoney3",
+		[327407] = "Interface\\Icons\\inv_misc_treasurechest01c",
 		[329783] = "Interface\\Icons\\inv_misc_treasurechest01b",
+		[329918] = "Interface\\Icons\\inv_misc_treasurechest01c",
+		[329919] = "Interface\\Icons\\inv_misc_treasurechest01c",
 		[332220] = "Interface\\Icons\\inv_misc_treasurechest01b",
 		[332569] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 		[332570] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
@@ -2540,7 +2545,9 @@ app.L = {
 		[332577] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 		[332704] = "Interface\\Icons\\inv_trinket_80_titan02e",
 		[339211] = "Interface\\Icons\\inv_misc_bowl_01",
+		[339770] = "Interface\\Icons\\inv_misc_treasurechest01c",
 		[343611] = "Interface\\Icons\\inv_misc_food_legion_gooamberpurple_chunk",
+		[357758] = "Interface\\Icons\\ability_vehicle_plaguebarrel",
 		[9999890] = "Interface\\Icons\\INV_Heart_of_the_Thunder King_Icon",
 		[9999891] = "Interface\\Icons\\ability_paladin_blessedmending",
 		[9999892] = "Interface\\Icons\\spell_holy_healingfocus",
@@ -2979,6 +2986,7 @@ app.L = {
 		[215844] = "Flagpole",
 		[216322] = "Bounty Board",
 		[218750] = "Work Orders",
+		[218949] = "Lei Shen's Burial Trove",
 		[220641] = "Thunderlord's Cache",
 		[220820] = "|cFFFFFFFFStep 6:|r Page 1127",
 		[220821] = "|cFFFFFFFFStep 5:|r Page 845",
@@ -4013,6 +4021,7 @@ app.L = {
 		[326588] = "Azerite Weapons Cache",
 		[327170] = "Weapon Rack",
 		[327230] = "Jelly Deposit",
+		[327407] = "Precious Ogre Stash",
 		[327548] = "Powerpack Blueprints",
 		[327585] = "Bounty Board",
 		[327591] = "Preserved Journal",
@@ -4022,6 +4031,8 @@ app.L = {
 		[329641] = "Wanted: Junkbrat and Roadtrogg",
 		[329783] = "Glowing Arcane Trunk",
 		[329805] = "Strange Crystal",
+		[329918] = "Quilboar Treasure",
+		[329919] = "Stolen Supplies",
 		[332220] = "Glowing Arcane Trunk",
 		[332569] = "Crystalline Cat Figurine",
 		[332570] = "Crystalline Cat Figurine",
@@ -4034,7 +4045,9 @@ app.L = {
 		[332577] = "Crystalline Cat Figurine",	-- Need to be confirmed
 		[332704] = "Corrupted Chest",
 		[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
+		[339770] = "Abandoned Treasure Chest",
 		[343611] = "Voidtouched Egg",
+		[357758] = "Plague Barrel",
 		[9999890] = "Corrupted Loot",
 		[9999891] = "Main Objective Only",
 		[9999892] = "Main Objective + 2 Bonus Areas",
@@ -4218,7 +4231,7 @@ app.L = {
 		{0, "", ""}, --32
 		{0, "", ""}, -- 33
 		{0, "", ""}, --34
-		{3, "|CFFFF0000This can be purchased from the In-Game Shop.|r", "In-Game Shop (35)"}, --35
+		{3, "|CFFFF0000This may be locked behind a paywall, probably the in-game shop, another Blizzard game, or Recruit A Friend.|r", "Blizzard Balance (35)"}, --35
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}, -- 36
 		{0, "", ""}, --37
 		{1, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}, --38

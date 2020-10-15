@@ -1,18 +1,24 @@
-tag 0509e1f646a7c7073ffdbf0e4bb25cb2ecbfc44e 8.3.0.1
+tag 04d75bb2bd28cf35febe1a3a570ad7bde3adbb43 9.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Jan 14 18:11:52 2020 -0500
+Date:	Tue Oct 13 14:03:46 2020 -0400
 
-8.3.0 update
+9.0. update - includes scans of older vendors
 
-commit c046e43d371e7093d1c2bc2f48bdda37558ae074
+commit 7f121669e75281cd139fe16595abfceefb9b6232
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Jan 14 18:01:08 2020 -0500
+Date:   Tue Oct 13 13:53:56 2020 -0400
 
-    8.3 update
+    9.0 update
 
-commit c046e43d371e7093d1c2bc2f48bdda37558ae074
+commit 968bbf93f6a5d4fbb4dd7f69a733e8bd61293ece
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Jan 14 18:01:08 2020 -0500
+Date:   Sun Sep 6 22:06:00 2020 -0400
 
-    8.3 update
+    Fix alignment issues
+
+commit 04cc230ce89c81737fccaad4552dfc0fcac4327e
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jul 5 14:58:51 2020 -0400
+
+    Scan of Nazmir profession trainer, update
 

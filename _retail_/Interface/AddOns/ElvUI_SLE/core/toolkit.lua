@@ -2,9 +2,9 @@ local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 
 --GLOBALS: unpack, NUM_BAG_SLOTS, IsAddOnLoaded, DEFAULT_CHAT_FRAME
 local _G = _G
-local select, format, tonumber, match, ipairs, pairs, gsub = select, format, tonumber, match, ipairs, pairs, gsub
+local select, format, tonumber, match, ipairs, pairs, gsub = select, format, tonumber, string.match, ipairs, pairs, gsub
 local getmetatable, error, type, assert, random = getmetatable, error, type, assert, random
-local tremove, tinsert, tconcat, date = tremove, tinsert, tconcat, date
+local tremove, tinsert, tconcat, date = tremove, tinsert, table.concat, date
 local strjoin, strmatch, strsplit, strfind = strjoin, strmatch, strsplit, strfind
 local EnumerateFrames = EnumerateFrames
 local GetItemInfo = GetItemInfo
@@ -533,41 +533,4 @@ function SLE:IsFoolsDay()
 	else
 		return false
 	end
-end
-
-function SLE:CreateSplashScreen()
-	local f = CreateFrame("Frame", "SLE_SplashScreen", E.UIParent)
-	f:Size(400, 200)
-	f:SetPoint("CENTER")
-	f:SetFrameStrata("TOOLTIP")
-	f:LevelUpBG()
-	f:SetAlpha(0)
-
-	f.logo = f:CreateTexture(nil, "OVERLAY")
-	f.logo:Size(240, 60)
-	f.logo:SetTexture([[Interface\AddOns\ElvUI_SLE\media\textures\SLE_Banner]])
-	f.logo:Point("TOP", f, "TOP", 0. - 80)
-
-	f.version = f:CreateFontString(nil, "OVERLAY")
-	f.version:FontTemplate(nil, 14, nil)
-	f.version:Point("TOP", f.logo, "BOTTOM", 0, -20)
-	f.version:SetText(L["SLE_BENIK_AF"])
-end
-
-local function HideSplashScreen()
-	SLE_SplashScreen:Hide()
-	E:Delay(0.5, function() assert(false, L["SLE_ERRORS_AF"][random(#L["SLE_ERRORS_AF"])]) end)
-	E.global.aprilFoolsSLE = true
-end
-
-local function FadeSplashScreen()
-	E:Delay(10, function()
-		E:UIFrameFadeOut(SLE_SplashScreen, 1, 1, 0)
-		SLE_SplashScreen.fadeInfo.finishedFunc = HideSplashScreen
-	end)
-end
-
-function SLE:ShowSplashScreen()
-	E:UIFrameFadeIn(SLE_SplashScreen, 2, 0, 1)
-	SLE_SplashScreen.fadeInfo.finishedFunc = FadeSplashScreen
 end

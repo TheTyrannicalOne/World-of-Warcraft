@@ -62,6 +62,7 @@ function module:InitializeTrainers()
 	AddTrainer(130399, "Zooey Inksprocket",		Z.BORALUS,			73.4, 6.3,	"Alliance")
 	AddTrainer(130901, "Chronicler Grazzul", 	Z.DAZARALOR, 			42.3, 39.7, 	"Horde")
 	AddTrainer(132264, "Chronicler Kizani", 	Z.DAZARALOR,			70.0, 34.0, 	"Horde")
+	AddTrainer(156685, "Scribe Au'tehshi", 		Z.ORIBOS, 			36.59, 37.18, 	"Neutral")
 
 	self.InitializeTrainers = nil
 end

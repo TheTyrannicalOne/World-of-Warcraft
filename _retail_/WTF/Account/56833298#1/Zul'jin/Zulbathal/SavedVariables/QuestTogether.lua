@@ -28,28 +28,28 @@ QuestTogether = {
 		[44074] = {
 			["title"] = "Neltharion's Lair: Essence of Tenacity",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Essence of Tenacity", -- [1]
 				"0/1 Dargrul slain", -- [2]
 			},
 		},
 		[44075] = {
 			["title"] = "Halls of Valor: Essence of Ferocity",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Essence of Ferocity", -- [1]
 				"0/1 Odyn's trial completed", -- [2]
 			},
 		},
 		[44076] = {
 			["title"] = "Darkheart Thicket: Essence of Regrowth",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Essence of Regrowth", -- [1]
 				"0/1 Shade of Xavius slain", -- [2]
 			},
 		},
 		[44077] = {
 			["title"] = "Eye of Azshara: Essence of Balance",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Essence of Balance", -- [1]
 			},
 		},
 		[43365] = {
@@ -61,7 +61,7 @@ QuestTogether = {
 		[47706] = {
 			["title"] = "Hunt for King K'tal",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Skull of K'tal", -- [1]
 			},
 		},
 		[31015] = {
@@ -73,13 +73,13 @@ QuestTogether = {
 		[42129] = {
 			["title"] = "The Pendant of Starlight",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Pendant of Starlight", -- [1]
 			},
 		},
 		[42719] = {
 			["title"] = "Eye of Azshara: Cleansing the Dreamway",
 			["objectives"] = {
-				"0/25  ", -- [1]
+				"0/25 Rarefied Water", -- [1]
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
@@ -95,6 +95,31 @@ QuestTogether = {
 				"0/1 Ten'gor slain", -- [2]
 			},
 		},
+		[53476] = {
+			["title"] = "The Great Sea Scrolls",
+			["objectives"] = {
+				"2/12 Pilgrimage Scroll", -- [1]
+			},
+		},
+		[25929] = {
+			["title"] = "Sea Legs",
+			["objectives"] = {
+				"0/3 Saltwater Starfish", -- [1]
+				"0/1 Conch Shell", -- [2]
+			},
+		},
+		[32806] = {
+			["title"] = "The King and the Council",
+			["objectives"] = {
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+			},
+		},
+		[49422] = {
+			["title"] = "Heretics",
+			["objectives"] = {
+				"0% Ruin wrought.", -- [1]
+			},
+		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -103,29 +128,6 @@ QuestTogether = {
 				"Defeat Kela Grimtotem", -- [3]
 				"Defeat Zoltan", -- [4]
 				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
-			["objectives"] = {
-				"2/12 Pilgrimage Scroll", -- [1]
-			},
-		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
-			["objectives"] = {
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[31486] = {
@@ -137,8 +139,8 @@ QuestTogether = {
 		[40019] = {
 			["title"] = "An Empathetic Herb",
 			["objectives"] = {
-				"9/15  ", -- [1]
-				"5/5  ", -- [2]
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[36614] = {
@@ -161,11 +163,10 @@ QuestTogether = {
 				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
 			},
 		},
-		[25929] = {
-			["title"] = "Sea Legs",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/3  ", -- [1]
-				"0/1  ", -- [2]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[31613] = {
@@ -174,17 +175,16 @@ QuestTogether = {
 				"0/1 Greenstone Village Defended", -- [1]
 			},
 		},
-		[49422] = {
-			["title"] = "Heretics",
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
 			["objectives"] = {
-				"0% Ruin wrought.", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
-		["events"] = false,
 		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
 	},
 }

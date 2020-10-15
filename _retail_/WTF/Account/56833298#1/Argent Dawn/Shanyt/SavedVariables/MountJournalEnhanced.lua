@@ -36,6 +36,7 @@ MJEPersonalSettings = {
 			true, -- [5]
 			true, -- [6]
 			true, -- [7]
+			true, -- [8]
 			[0] = true,
 		},
 		["source"] = {
@@ -45,16 +46,16 @@ MJEPersonalSettings = {
 			["Achievement"] = true,
 			["Instance"] = true,
 			["Class"] = true,
-			["Vendor"] = true,
+			["Promotion"] = true,
 			["Profession"] = true,
 			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
 			["Drop"] = true,
 			["Garrison"] = true,
-			["Promotion"] = true,
-			["Quest"] = true,
 			["World Event"] = true,
+			["Quest"] = true,
+			["Vendor"] = true,
 		},
 		["notCollected"] = true,
 		["hidden"] = false,
@@ -123,10 +124,10 @@ MJEPersonalSettings = {
 				["Undead Steeds"] = true,
 			},
 			["Rays"] = {
-				["Fathom Rays"] = true,
-				["Nether Rays"] = true,
-				["Mana Rays"] = true,
 				["Stingrays"] = true,
+				["Fathom Rays"] = true,
+				["Mana Rays"] = true,
+				["Nether Rays"] = true,
 			},
 			["Cats"] = {
 				["Sabers"] = true,
@@ -193,9 +194,9 @@ MJEPersonalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
-				["Basilisks"] = true,
 				["Mushan"] = true,
 				["Kodos"] = true,
+				["Basilisks"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -241,6 +242,14 @@ MJEPersonalSettings = {
 			["Rylaks"] = true,
 			["Bats"] = true,
 		},
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
+		["onlyTradable"] = false,
+		["collected"] = true,
+		["onlyUsable"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -249,14 +258,6 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["transform"] = true,
 		},
-		["onlyTradable"] = false,
-		["collected"] = true,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
-		["onlyUsable"] = false,
 	},
 	["personalHiddenMounts"] = false,
 }

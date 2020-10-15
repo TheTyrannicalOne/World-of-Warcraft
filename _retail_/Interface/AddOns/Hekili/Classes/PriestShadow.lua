@@ -7,18 +7,42 @@ local Hekili = _G[ addon ]
 local class = Hekili.Class
 local state = Hekili.State
 
-local FindUnitBuffByID = ns.FindUnitBuffByID
+local FindUnitBuffByID, FindUnitDebuffByID = ns.FindUnitBuffByID, ns.FindUnitDebuffByID
 
 
 local PTR = ns.PTR
 
 
-if UnitClassBase( 'player' ) == 'PRIEST' then
+-- Conduits
+-- [x] dissonant_echoes
+-- [-] haunting_apparitions
+-- [x] mind_devourer
+-- [x] rabid_shadows
+
+-- Covenant
+-- [-] courageous_ascension
+-- [x] shattered_perceptions
+-- [x] festering_transfusion
+-- [x] fae_fermata
+
+-- Endurance
+-- [x] charitable_soul
+-- [x] lights_inspiration
+-- [x] translucent_image
+
+-- Finesse
+-- [x] clear_mind
+-- [x] mental_recovery
+-- [-] move_with_grace
+-- [x] power_unto_others
+
+
+if UnitClassBase( "player" ) == "PRIEST" then
     local spec = Hekili:NewSpecialization( 258, true )
 
     spec:RegisterResource( Enum.PowerType.Insanity, {
         mind_flay = {
-            aura = 'mind_flay',
+            aura = "mind_flay",
             debuff = true,
 
             last = function ()
@@ -33,7 +57,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         },
 
         mind_sear = {
-            aura = 'mind_sear',
+            aura = "mind_sear",
             debuff = true,
 
             last = function ()
@@ -44,12 +68,13 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             end,
 
             interval = function () return class.auras.mind_sear.tick_time end,
-            value = function () return ( state.talent.fortress_of_the_mind.enabled and 1.2 or 1 ) * 1.25 * state.active_enemies end,
+            value = function () return state.active_enemies end,
         },
 
-        -- need to revise the value of this, void decay ticks up and is impacted by void torrent.
+        --[[ need to revise the value of this, void decay ticks up and is impacted by void torrent.
         voidform = {
             aura = "voidform",
+            talent = "legacy_of_the_void",
 
             last = function ()
                 local app = state.buff.voidform.applied
@@ -64,9 +89,9 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
             interval = 1,
             value = function ()
-                return ( state.debuff.void_torrent.up or state.debuff.dispersion.up ) and 0 or ( -6 - ( 0.8 * state.debuff.voidform.stacks ) )
+                return state.debuff.dispersion.up and 0 or ( -6 - ( 0.8 * state.debuff.voidform.stacks ) )
             end,
-        },
+        }, ]]
 
         void_torrent = {
             aura = "void_torrent",
@@ -82,24 +107,8 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
                 return x == 0
             end,
 
-            interval = 1,
-            value = 7.5,
-        },
-
-        vamp_touch_t19 = {
-            aura = "vampiric_touch",
-            set_bonus = "tier19_2pc",
-            debuff = true,
-
-            last = function ()
-                local app = state.debuff.vampiric_touch.applied
-                local t = state.query_time
-
-                return app + floor( ( t - app ) / class.auras.vampiric_touch.tick_time ) * class.auras.vampiric_touch.tick_time
-            end,
-
-            interval = function () return state.debuff.vampiric_touch.tick_time end,
-            value = 1
+            interval = function () return class.auras.void_torrent.tick_time end,
+            value = 6,
         },
 
         mindbender = {
@@ -112,8 +121,8 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
                 return app + floor( ( t - app ) / ( 1.5 * state.haste ) ) * ( 1.5 * state.haste )
             end,
 
-            interval = function () return 1.5 * state.haste end,
-            value = function () return state.debuff.surrendered_to_madness.up and 0 or ( state.buff.surrender_to_madness.up and 12 or 6 ) end,
+            interval = function () return 1.5 * state.haste * ( state.conduit.rabid_shadows.enabled and 0.8 or 1 ) end,
+            value = function () return ( state.buff.surrender_to_madness.up and 12 or 6 ) end,
         },
 
         shadowfiend = {
@@ -126,9 +135,23 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
                 return app + floor( ( t - app ) / ( 1.5 * state.haste ) ) * ( 1.5 * state.haste )
             end,
 
-            interval = function () return 1.5 * state.haste end,
-            value = function () return state.debuff.surrendered_to_madness.up and 0 or ( state.buff.surrender_to_madness.up and 6 or 3 ) end,
+            interval = function () return 1.5 * state.haste * ( state.conduit.rabid_shadows.enabled and 0.8 or 1 ) end,
+            value = function () return ( state.buff.surrender_to_madness.up and 6 or 3 ) end,
         },
+
+        death_and_madness = {
+            aura = "death_and_madness",
+
+            last = function ()
+                local app = state.buff.death_and_madness.applied
+                local t = state.query_time
+
+                return app + floor( t - app )
+            end,
+
+            interval = 1,
+            value = 1,
+        }
     } )
     spec:RegisterResource( Enum.PowerType.Mana )
 
@@ -136,8 +159,8 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
     -- Talents
     spec:RegisterTalents( {
         fortress_of_the_mind = 22328, -- 193195
-        shadowy_insight = 22136, -- 162452
-        shadow_word_void = 22314, -- 205351
+        death_and_madness = 22136, -- 321291
+        unfurling_darkness = 22314, -- 341273
 
         body_and_soul = 22315, -- 64129
         sanlayn = 23374, -- 199855
@@ -145,23 +168,24 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
         twist_of_fate = 23125, -- 109142
         misery = 23126, -- 238558
-        dark_void = 23127, -- 263346
+        searing_nightmare = 23127, -- 341385
 
         last_word = 23137, -- 263716
         mind_bomb = 23375, -- 205369
         psychic_horror = 21752, -- 64044
 
         auspicious_spirits = 22310, -- 155271
-        shadow_word_death = 22311, -- 32379
+        psychic_link = 22311, -- 199484
         shadow_crash = 21755, -- 205385
 
-        lingering_insanity = 21718, -- 199849
+        damnation = 21718, -- 341374
         mindbender = 21719, -- 200174
         void_torrent = 21720, -- 263165
 
-        legacy_of_the_void = 21637, -- 193225
-        dark_ascension = 21978, -- 280711
-        surrender_to_madness = 21979, -- 193223
+        ancient_madness = 21637, -- 341240
+        hungering_void = 21978, -- 345218
+        -- legacy_of_the_void = 21978, -- 193225
+        surrender_to_madness = 21979, -- 319952
     } )
 
 
@@ -190,12 +214,38 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
 
     local thought_harvester_consumed = 0
+    local unfurling_darkness_triggered = 0
+
+    local swp_applied = 0
 
     spec:RegisterHook( "COMBAT_LOG_EVENT_UNFILTERED", function( event, _, subtype, _, sourceGUID, sourceName, _, _, destGUID, destName, destFlags, _, spellID, spellName )
-        if sourceGUID == GUID and subtype == "SPELL_AURA_REMOVED" and spellID == 288343 then
-            thought_harvester_consumed = GetTime()
+        if sourceGUID == GUID then
+            if subtype == "SPELL_AURA_REMOVED" then
+                if spellID == 288343 then
+                    thought_harvester_consumed = GetTime()
+                elseif spellID == 341207 then
+                    Hekili:ForceUpdate( subtype, true )
+                end
+
+            elseif subtype == "SPELL_AURA_APPLIED" then
+                if spellID == 341273 then
+                    unfurling_darkness_triggered = GetTime()
+                elseif spellID == 341207 then
+                    Hekili:ForceUpdate( subtype, true )
+                end
+            end
+
+            --[[ if spellName == "Shadow Word: Pain" and ( subtype == "SPELL_DAMAGE" or subtype == "SPELL_PERIODIC_DAMAGE" ) then
+                local name, id, _, aType, duration, expiration = FindUnitDebuffByID( "target", class.auras.shadow_word_pain.id )
+                -- print( name, id, _, aType, duration, applied )
+                if expiration then print( "SWP", subtype, duration, ( GetTime() - ( expiration - duration ) ) / class.auras.shadow_word_pain.tick_time, ( expiration - GetTime() ) / class.auras.shadow_word_pain.tick_time ) end
+            end
+
+            if spellName == "Shadow Word: Pain" and ( subtype == "SPELL_AURA_APPLIED" or subtype == "SPELL_AURA_REFRESH" ) then
+                swp_applied = GetTime()
+            end ]]
         end
-    end )    
+    end )
 
 
     local hadShadowform = false
@@ -205,16 +255,22 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             applyBuff( "shadowform" )
         end
 
+        if unfurling_darkness_triggered > 0 and now - unfurling_darkness_triggered < 15 then
+            applyBuff( "unfurling_darkness_icd", now - unfurling_darkness_triggered )
+        end
+
         if pet.mindbender.active then
             applyBuff( "mindbender", pet.mindbender.remains )
             buff.mindbender.applied = action.mindbender.lastCast
             buff.mindbender.duration = 15
             buff.mindbender.expires = action.mindbender.lastCast + 15
+            summonPet( "fiend", buff.mindbender.remains )
         elseif pet.shadowfiend.active then
             applyBuff( "shadowfiend", pet.shadowfiend.remains )
             buff.shadowfiend.applied = action.shadowfiend.lastCast
             buff.shadowfiend.duration = 15
             buff.shadowfiend.expires = action.shadowfiend.lastCast + 15
+            summonPet( "fiend", buff.shadowfiend.remains )
         end
 
         if action.void_bolt.in_flight then
@@ -238,11 +294,10 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         else
             removeBuff( "mind_sear_th" )
         end
-
     end )
 
 
-    spec:RegisterHook( 'pregain', function( amount, resource, overcap )
+    spec:RegisterHook( "pregain", function( amount, resource, overcap )
         if amount > 0 and resource == "insanity" and state.buff.memory_of_lucid_dreams.up then
             amount = amount * 2
         end
@@ -251,20 +306,9 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
     end )
 
 
-
-    spec:RegisterHook( 'runHandler', function( ability )
-        -- Make sure only the correct debuff is applied for channels to help resource forecasting.
-        if ability == "mind_sear" then
-            removeDebuff( "target", "mind_flay" )
-        elseif ability == "mind_flay" then
-            removeDebuff( "target", "mind_sear" )
-            removeBuff( "mind_sear_th" )
-        else
-            removeDebuff( "target", "mind_flay" )
-            removeDebuff( "target", "mind_sear" )
-            removeBuff( "mind_sear_th" )
-        end
-    end )
+    spec:RegisterStateTable( "priest", {
+        self_power_infusion = true
+    } )
 
 
     -- Auras
@@ -273,6 +317,28 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             id = 65081,
             duration = 3,
             type = "Magic",
+            max_stack = 1,
+        },
+        dark_thought = {
+            id = 341207,
+            duration = 6,
+            max_stack = 1,
+            copy = "dark_thoughts"
+        },
+        death_and_madness = {
+            id = 321973,
+            duration = 4,
+            max_stack = 1,
+        },
+        desperate_prayer = {
+            id = 19236,
+            duration = 10,
+            max_stack = 1,
+        },
+        devouring_plague = {
+            id = 335467,
+            duration = 6,
+            type = "Disease",
             max_stack = 1,
         },
         dispersion = {
@@ -296,11 +362,6 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             type = "Magic",
             max_stack = 1,
         },
-        lingering_insanity = {
-            id = 197937,
-            duration = 60,
-            max_stack = 8,
-        },
         mind_bomb = {
             id = 226943,
             duration = 6,
@@ -309,13 +370,13 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         },
         mind_flay = {
             id = 15407,
-            duration = function () return 3 * haste end,
+            duration = function () return 4.5 * haste end,
             max_stack = 1,
             tick_time = function () return 0.75 * haste end,
         },
         mind_sear = {
             id = 48045,
-            duration = function () return 3 * haste end,
+            duration = function () return 4.5 * haste end,
             max_stack = 1,
             tick_time = function () return 0.75 * haste end,
         },
@@ -331,6 +392,11 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         mindbender = {
             duration = 15,
             max_stack = 1,
+        },
+        power_infusion = {
+            id = 10060,
+            duration = 20,
+            max_stack = 1
         },
         power_word_fortitude = {
             id = 21562,
@@ -363,6 +429,16 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             type = "Magic",
             max_stack = 1,
         },
+        shadow_crash_debuff = {
+            id = 342385,
+            duration = 15,
+            max_stack = 2
+        },
+        shadow_mend = {
+            id = 342992,
+            duration = 15,
+            max_stack = 2
+        },
         shadow_word_pain = {
             id = 589,
             duration = 16,
@@ -382,12 +458,6 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         shadowy_apparitions = {
             id = 78203,
         },
-        shadowy_insight = {
-            id = 124430,
-            duration = 12,
-            type = "Magic",
-            max_stack = 1,
-        },
         silence = {
             id = 15487,
             duration = 4,
@@ -395,14 +465,24 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             max_stack = 1,
         },
         surrender_to_madness = {
-            id = 193223,
-            duration = 60,
+            id = 319952,
+            duration = 25,
             max_stack = 1,
         },
-        surrendered_to_madness = {
-            id = 263406,
+        twist_of_fate = {
+            id = 123254,
+            duration = 8,
+            max_stack = 1,
+        },
+        unfurling_darkness = {
+            id = 341282,
             duration = 15,
             max_stack = 1,
+        },
+        unfurling_darkness_icd = {
+            id = 341291,
+            duration = 15,
+            max_stack = 1
         },
         vampiric_embrace = {
             id = 15286,
@@ -421,21 +501,21 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         },
         void_torrent = {
             id = 263165,
-            duration = 4,
+            duration = function () return 4 * haste end,
             max_stack = 1,
-            tick_time = 1,
+            tick_time = function () return haste end,
         },
         voidform = {
             id = 194249,
-            duration = 3600,
-            max_stack = 99,
-            generate = function( t )
+            duration = 15, -- function () return talent.legacy_of_the_void.enabled and 3600 or 15 end,
+            max_stack = 1,
+            --[[ generate = function( t )
                 local name, _, count, _, duration, expires, caster, _, _, spellID, _, _, _, _, timeMod, v1, v2, v3 = FindUnitBuffByID( "player", 194249 )
 
                 if name then
                     t.name = name
                     t.count = max( 1, count )
-                    t.applied = max( action.void_eruption.lastCast, action.dark_ascension.lastCast, now )
+                    t.applied = max( action.void_eruption.lastCast, now )
                     t.expires = t.applied + 3600
                     t.duration = 3600
                     t.caster = "player"
@@ -452,12 +532,12 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
                 t.expires = 0
                 t.applied = 0
                 t.duration = 3600
-                t.caster = 'nobody'
+                t.caster = "nobody"
                 t.timeMod = 1
                 t.v1 = 0
                 t.v2 = 0
                 t.v3 = 0
-                t.unit = 'player'
+                t.unit = "player"
             end,
             meta = {
                 up = function ()
@@ -489,7 +569,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
                 remains = function ()                    
                     return max( 0, buff.voidform.drop_time - query_time )
                 end,
-            },
+            }, ]]
         },
         weakened_soul = {
             id = 6788,
@@ -536,20 +616,32 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             copy = "harvested_thoughts" -- SimC uses this name (carryover from Legion?)
         },
 
+
+        -- Legendaries (Shadowlands)
+        mind_devourer = {
+            id = 338333,
+            duration = 15,
+            max_stack = 1,
+        },
+
+
+        -- Conduits
+        dissonant_echoes = {
+            id = 343144,
+            duration = 10,
+            max_stack = 1,
+        },
+
     } )
 
 
-    spec:RegisterHook( "advance_end", function ()
-        if buff.voidform.up and insanity.current == 0 then
+    --[[ spec:RegisterHook( "advance_end", function ()
+        if buff.voidform.up and talent.legacy_of_the_void.enabled and insanity.current == 0 then
             insanity.regen = 0
             removeBuff( "voidform" )
-            if buff.surrender_to_madness.up then
-                removeBuff( "surrender_to_madness" )
-                applyDebuff( "player", "surrendered_to_madness" )
-            end
             applyBuff( "shadowform" )
         end
-    end )
+    end ) ]]
 
 
     spec:RegisterGear( "tier21", 152154, 152155, 152156, 152157, 152158, 152159 )
@@ -589,42 +681,78 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
     -- Abilities
     spec:RegisterAbilities( {
-        dark_ascension = {
-            id = 280711,
+        damnation = {
+            id = 341374,
             cast = 0,
-            cooldown = 60,
+            cooldown = 45,
             gcd = "spell",
 
-            spend = -50,
-            spendType = "insanity",
+            talent = "damnation",
+            
+            startsCombat = true,
+            texture = 236295,
 
-            toggle = "cooldowns",
+            -- TODO: Set up cycle.
+            -- cycle = function ()
+            
+            handler = function ()
+                applyDebuff( "target", "shadow_word_pain" )
+                applyDebuff( "target", "vampiric_touch" )
+                applyDebuff( "target", "devouring_plague" )
+
+                if talent.unfurling_darkness.enabled and debuff.unfurling_darkness_icd.down then
+                    applyBuff( "unfurling_darkness" )
+                    applyDebuff( "player", "unfurling_darkness_icd" )
+                end
+            end,
+        },
+        
+        
+        desperate_prayer = {
+            id = 19236,
+            cast = 0,
+            cooldown = 90,
+            gcd = "spell",
+            
+            toggle = "defensives",
 
             startsCombat = true,
-            texture = 1711336,
-
-            talent = "dark_ascension",
-
-            handler = function ()
-                applyBuff( "voidform", nil, ( level < 116 and equipped.mother_shahrazs_seduction ) and 3 or 1 )
+            texture = 237550,
+            
+            handler = function ()                
+                health.max = health.max * 1.25
+                gain( 0.8 * health.max, "health" )
+                if conduit.lights_inspiration.enabled then applyBuff( "lights_inspiration" ) end
             end,
+
+            auras = {
+                -- Conduit
+                lights_inspiration = {
+                    id = 337749,
+                    duration = 5,
+                    max_stack = 1
+                }
+            }
         },
 
 
-        dark_void = {
-            id = 263346,
-            cast = 2,
-            cooldown = 30,
+        devouring_plague = {
+            id = 335467,
+            cast = 0,
+            cooldown = 0,
             gcd = "spell",
-
+            
+            spend = function () return buff.mind_devourer.up and 0 or 50 end,
+            spendType = "insanity",
+            
             startsCombat = true,
-            texture = 132851,
+            texture = 252997,
 
-            talent = "dark_void",
-
+            cycle = "devouring_plague",
+            
             handler = function ()
-                applyDebuff( "target", "shadow_word_pain" )
-                active_dot.shadow_word_pain = max( active_dot.shadow_word_pain, active_enemies )
+                removeBuff( "mind_devourer" )
+                applyDebuff( "target", "devouring_plague" )
             end,
         },
 
@@ -635,16 +763,16 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             cooldown = 0,
             gcd = "spell",
 
-            spend = 0.016,
+            spend = function () return 0.016 * ( 1 + conduit.clear_mind.mod * 0.01 ) end,
             spendType = "mana",
 
-            startsCombat = true,
+            startsCombat = false,
             texture = 136066,
 
             usable = function () return buff.dispellable_magic.up end,
             handler = function ()
                 removeBuff( "dispellable_magic" )
-                gain( 6, "insanity" )
+                if time > 0 then gain( 6, "insanity" ) end
             end,
         },
 
@@ -679,7 +807,17 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
             handler = function ()
                 applyBuff( "fade" )
+                if conduit.translucent_image.enabled then applyBuff( "translucent_image" ) end
             end,
+
+            auras = {
+                -- Conduit
+                translucent_image = {
+                    id = 337661,
+                    duration = 5,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -725,7 +863,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             cooldown = 45,
             gcd = "spell",
 
-            spend = 0.08,
+            spend = function () return 0.08 * ( 1 + ( conduit.clear_mind.mod * 0.01 ) ) end,
             spendType = "mana",
 
             startsCombat = true,
@@ -735,42 +873,42 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             handler = function ()
                 removeBuff( "dispellable_magic" )
                 removeDebuff( "player", "dispellable_magic" )
-                gain( 6, "insanity" )
+                if time > 0 then gain( 6, "insanity" ) end
             end,
         },
 
 
-        -- SimulationCraft module for Shadow Word: Void automatically substitutes SW:V for MB when talented.
         mind_blast = {
-            id = function () return talent.shadow_word_void.enabled and 205351 or 8092 end,
-            cast = function () return haste * ( buff.shadowy_insight.up and 0 or 1.5 ) end,
-            charges = function ()
-                local n = 1
-                if talent.shadow_word_void.enabled then n = n + 1 end
-                if level < 116 and equipped.mangazas_madness then n = n + 1 end
-                return n > 1 and n or nil
+            id = 8092,
+            cast = function () return buff.dark_thought.up and 0 or ( 1.5 * haste ) end,
+            charges = function () return 1 + ( buff.voidform.up and 1 or 0 ) + ( buff.dark_thought.up and 1 or 0 ) end,
+            cooldown = function ()
+                if buff.dark_thought.up then return 0 end
+                return 7.5 * haste
             end,
-            cooldown = function () return ( talent.shadow_word_void.enabled and 9 or 7.5 ) * haste end,
-            recharge = function () return ( talent.shadow_word_void.enabled and 9 or 7.5 ) * haste end,
+            recharge = function ()
+                if buff.dark_thought.up then return 0 end
+                return 7.5 * haste
+            end,
             gcd = "spell",
+            castableWhileCasting = function ()
+                if buff.dark_thought.up and ( buff.casting.v1 == class.abilities.mind_flay.id or buff.casting.v1 == class.abilities.mind_sear.id ) then return true end
+                return nil
+            end,
 
             velocity = 15,
 
-            spend = function () return ( talent.fortress_of_the_mind.enabled and 1.2 or 1 ) * ( ( talent.shadow_word_void.enabled and -15 or -12 ) - buff.empty_mind.stack ) * ( buff.surrender_to_madness.up and 2 or 1 ) * ( debuff.surrendered_to_madness.up and 0 or 1 ) end,
+            spend = function () return ( talent.fortress_of_the_mind.enabled and 1.2 or 1 ) * ( -8 - buff.empty_mind.stack ) * ( buff.surrender_to_madness.up and 2 or 1 ) end,
             spendType = "insanity",
 
             startsCombat = true,
-            texture = function () return talent.shadow_word_void.enabled and 610679 or 136224 end,
-
-            -- notalent = "shadow_word_void",
+            texture = 136224,
 
             handler = function ()
+                removeBuff( "dark_thought" )
                 removeBuff( "harvested_thoughts" )
-                removeBuff( "shadowy_insight" )
                 removeBuff( "empty_mind" )
             end,
-
-            copy = { "shadow_word_void", 205351, 8092 },
         },
 
 
@@ -791,23 +929,6 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         },
 
 
-        --[[ mind_control = {
-            id = 605,
-            cast = 1.8,
-            cooldown = 0,
-            gcd = "spell",
-
-            spend = 100,
-            spendType = "mana",
-
-            startsCombat = true,
-            texture = 136206,
-
-            handler = function ()
-            end,
-        }, ]]
-
-
         mind_flay = {
             id = 15407,
             cast = 3,
@@ -824,30 +945,19 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             end,
             prechannel = true,
 
+            tick_time = function () return class.auras.mind_flay.tick_time end,
+
             startsCombat = true,
             texture = 136208,
 
-            aura = 'mind_flay',
+            aura = "mind_flay",
+
+            nobuff = "boon_of_the_ascended",
+            bind = "ascended_blast",
 
             start = function ()
                 applyDebuff( "target", "mind_flay" )
                 channelSpell( "mind_flay" )
-
-                if level < 116 then
-                    if equipped.the_twins_painful_touch and action.mind_flay.lastCast < max( action.dark_ascension.lastCast, action.void_eruption.lastCast ) then
-                        if debuff.shadow_word_pain.up and active_dot.shadow_word_pain < min( 4, active_enemies ) then
-                            active_dot.shadow_word_pain = min( 4, active_enemies )
-                        end
-                        if debuff.vampiric_touch.up and active_dot.vampiric_touch < min( 4, active_enemies ) then
-                            active_dot.vampiric_touch = min( 4, active_enemies )
-                        end
-                    end
-
-                    if set_bonus.tier20_2pc == 1 then
-                        addStack( "empty_mind", nil, 3 )
-                    end
-                end
-
                 forecastResources( "insanity" )
             end,
         },
@@ -870,10 +980,12 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             end,            
             prechannel = true,
 
+            tick_time = function () return class.auras.mind_flay.tick_time end,
+
             startsCombat = true,
             texture = 237565,
 
-            aura = 'mind_sear',
+            aura = "mind_sear",
 
             start = function ()
                 applyDebuff( "target", "mind_sear" )
@@ -889,24 +1001,6 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
                 forecastResources( "insanity" )
             end,
         },
-
-
-        --[[ mind_vision = {
-            id = 2096,
-            cast = 0,
-            cooldown = 0,
-            gcd = "spell",
-
-            spend = 0.01,
-            spendType = "mana",
-
-            startsCombat = true,
-            texture = 135934,
-
-            handler = function ()
-                -- applies mind_vision (2096)
-            end,
-        }, ]]
 
 
         -- SimulationCraft module: Mindbender and Shadowfiend are interchangeable.
@@ -926,28 +1020,30 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             handler = function ()
                 summonPet( talent.mindbender.enabled and "mindbender" or "shadowfiend", 15 )
                 applyBuff( talent.mindbender.enabled and "mindbender" or "shadowfiend" )
+                summonPet( "fiend", 15 )
             end,
 
             copy = { "shadowfiend", 200174, 34433, 132603 }
         },
 
-        --[[ shadowfiend = {
-            id = 34433,
+        
+        power_infusion = {
+            id = 10060,
             cast = 0,
-            cooldown = 180,
-            gcd = "spell",
-
+            cooldown = function () return 120 - ( conduit.power_unto_others.mod and group and conduit.power_unto_others.mod or 0 ) end,
+            gcd = "off",
+            
             toggle = "cooldowns",
-            notalent = "mindbender",
 
-            startsCombat = true,
-            texture = 136199,
-
+            startsCombat = false,
+            texture = 135939,
+            
             handler = function ()
-                summonPet( "shadowfiend", 15 )
-                applyBuff( "shadowfiend" )
+                applyBuff( "power_infusion" )
+                stat.haste = stat.haste + 0.25
             end,
-        }, ]]                
+        },
+
 
         power_word_fortitude = {
             id = 21562,
@@ -971,8 +1067,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         power_word_shield = {
             id = 17,
             cast = 0,
-            cooldown = 6,
-            hasteCD = true,
+            cooldown = 0,
             gcd = "spell",
 
             spend = 0.02,
@@ -987,8 +1082,18 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
                 applyBuff( "power_word_shield" )
                 applyDebuff( "weakened_soul" )
                 if talent.body_and_soul.enabled then applyBuff( "body_and_soul" ) end
-                gain( 6, "insanity" )
+                if time > 0 then gain( 6, "insanity" ) end
+                -- charitable_soul triggered by casting on others; not modeled.
             end,
+
+            auras = {
+                -- Conduit
+                charitable_soul = {
+                    id = 337716,
+                    duration = 10,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -1015,7 +1120,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             cooldown = 60,
             gcd = "spell",
 
-            spend = 0.012,
+            spend = 0.01,
             spendType = "mana",
 
             startsCombat = true,
@@ -1026,15 +1131,22 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             handler = function ()
                 applyDebuff( "target", "psychic_scream" )
             end,
+
+            auras = {
+                -- Conduit
+                mental_recovery = {
+                    id = 337956,
+                    duration = 5,
+                    max_stack = 1
+                }
+            }
         },
 
 
          purify_disease = {
             id = 213634,
             cast = 0,
-            charges = 1,
             cooldown = 8,
-            recharge = 8,
             gcd = "spell",
 
             spend = 0.01,
@@ -1046,34 +1158,41 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             usable = function () return debuff.dispellable_disease.up end,
             handler = function ()
                 removeBuff( "dispellable_disease" )
+                if time > 0 then gain( 6, "insanity" ) end
             end,
         },
 
 
-        --[[ resurrection = {
-            id = 2006,
-            cast = 10,
+        searing_nightmare = {
+            id = 341385,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell",
+            castableWhileCasting = true,
+
+            talent = "searing_nightmare",
+            
+            spend = 30,
+            spendType = "insanity",
+            
+            startsCombat = true,
+            texture = 1022950,
+
+            debuff = "mind_sear",
+            
+            handler = function ()
+                applyDebuff( "target", "shadow_word_pain" )
+                active_dot.shadow_word_pain = max( active_enemies, active_dot.shadow_word_pain )
+            end,
+        },
+
+        shackle_undead = {
+            id = 9484,
+            cast = 1.275,
             cooldown = 0,
             gcd = "spell",
 
             spend = 0.01,
-            spendType = "mana",
-
-            startsCombat = true,
-            texture = 135955,
-
-            handler = function ()
-            end,
-        }, ]]
-
-
-        shackle_undead = {
-            id = 9484,
-            cast = 1.5,
-            cooldown = 0,
-            gcd = "spell",
-
-            spend = 0.012,
             spendType = "mana",
 
             startsCombat = true,
@@ -1086,18 +1205,24 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
 
         shadow_crash = {
-            id = 205385,
+            id = 342834,
             cast = 0,
-            cooldown = 20,
+            charges = 3,
+            cooldown = 45,
+            recharge = 45,
+            hasteCD = true,
             gcd = "spell",
 
-            spend = -20,
+            spend = -8,
             spendType = "insanity",
+
+            velocity = 10,
 
             startsCombat = true,
             texture = 136201,
 
-            handler = function ()
+            impact = function ()
+                if active_enemies == 1 then addStack( "shadow_crash_debuff", nil, 1 ) end
             end,
         },
 
@@ -1108,7 +1233,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             cooldown = 0,
             gcd = "spell",
 
-            spend = 0.03,
+            spend = 0.04,
             spendType = "mana",
 
             startsCombat = true,
@@ -1116,6 +1241,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
             handler = function ()
                 removeBuff( "depth_of_the_shadows" )
+                if level > 55 then addStack( "shadow_mend", nil, 1 ) end
             end,
         },
 
@@ -1123,20 +1249,13 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         shadow_word_death = {
             id = 32379,
             cast = 0,
-            charges = 2,
-            cooldown = 9,
-            recharge = 9,
+            cooldown = 20,
+            hasteCD = true,
             gcd = "spell",
-
-            spend = 15,
-            spendType = "insanity",
 
             startsCombat = true,
             texture = 136149,
 
-            talent = "shadow_word_death",
-
-            usable = function () return buff.zeks_exterminatus.up or target.health.pct < 20 end,
             handler = function ()
                 removeBuff( "zeks_exterminatus" )
             end,
@@ -1163,52 +1282,6 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
         },
 
 
-        --[[ shadow_word_void = {
-            id = 205351,
-            cast = 1.5,
-            charges = 2,
-            cooldown = 9,
-            recharge = 9,
-            hasteCD = true,
-            gcd = "spell",
-
-            velocity = 15,
-
-            spend = function () return ( talent.fortress_of_the_mind.enabled and 1.2 or 1 ) * ( -15 - buff.empty_mind.stack ) * ( buff.surrender_to_madness.up and 2 or 1 ) * ( debuff.surrendered_to_madness.up and 0 or 1 ) end,
-            spendType = "insanity",
-
-            startsCombat = true,
-            texture = 610679,
-
-            talent = "shadow_word_void",
-
-            handler = function ()
-                -- applies voidform (194249)
-                -- applies mind_flay (15407)
-                -- removes shadow_word_pain (589)
-            end,
-        }, ]]
-
-
-        --[[ shadowfiend = {
-            id = 34433,
-            cast = 0,
-            cooldown = 180,
-            gcd = "spell",
-
-            toggle = "cooldowns",
-            notalent = "mindbender",
-
-            startsCombat = true,
-            texture = 136199,
-
-            handler = function ()
-                summonPet( "shadowfiend", 15 )
-                applyBuff( "shadowfiend" )
-            end,
-        }, ]]
-
-
         shadowform = {
             id = 232698,
             cast = 0,
@@ -1219,7 +1292,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             texture = 136200,
 
             essential = true,
-            nobuff = function () return buff.voidform.up and 'voidform' or 'shadowform' end,
+            nobuff = function () return buff.voidform.up and "voidform" or "shadowform" end,
 
             handler = function ()
                 applyBuff( "shadowform" )
@@ -1250,9 +1323,9 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
 
         surrender_to_madness = {
-            id = 193223,
+            id = 319952,
             cast = 0,
-            cooldown = 180,
+            cooldown = 90,
             gcd = "spell",
 
             toggle = "cooldowns",
@@ -1277,29 +1350,40 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
 
             handler = function ()
                 applyBuff( "vampiric_embrace" )
+                if time > 0 then gain( 6, "insanity" ) end
             end,
         },
 
 
         vampiric_touch = {
             id = 34914,
-            cast = 1.5,
+            cast = function () return buff.unfurling_darkness.up and 0 or 1.5 end,
             cooldown = 0,
             gcd = "spell",
 
-            spend = -6,
+            spend = -5,
             spendType = "insanity",
 
             startsCombat = true,
             texture = 135978,
 
-            cycle = function () return talent.misery.enabled and 'shadow_word_pain' or 'vampiric_touch' end,
+            cycle = function () return talent.misery.enabled and "shadow_word_pain" or "vampiric_touch" end,
 
             handler = function ()
                 applyDebuff( "target", "vampiric_touch" )
+
                 if talent.misery.enabled then
                     applyDebuff( "target", "shadow_word_pain" )
                 end
+
+                if talent.unfurling_darkness.enabled then
+                    removeBuff( "unfurling_darkness" )
+                    if debuff.unfurling_darkness_icd.down then
+                        applyBuff( "unfurling_darkness" )
+                        applyDebuff( "player", "unfurling_darkness_icd" )
+                    end
+                end
+
                 -- Thought Harvester is a 20% chance to proc, consumed by Mind Sear.
                 -- if azerite.thought_harvester.enabled then applyBuff( "harvested_thoughts" ) end
             end,
@@ -1311,13 +1395,11 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             known = 228260,
             cast = 0,
             cooldown = function ()
-                if level < 116 and set_bonus.tier19_4pc > 0 and query_time - buff.voidform.applied < 2.5 then return 0 end
                 return haste * 4.5
             end,
             gcd = "spell",
 
             spend = function ()
-                if debuff.surrendered_to_madness.up then return 0 end
                 return buff.surrender_to_madness.up and -40 or -20
             end,
             spendType = "insanity",
@@ -1326,12 +1408,19 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             texture = 1035040,
 
             velocity = 40,
-            buff = "voidform",
+            buff = function () return buff.dissonant_echoes.up and "dissonant_echoes" or "voidform" end,
             bind = "void_eruption",
 
+            cooldown_ready = function ()
+                return cooldown.void_bolt.remains == 0 and ( buff.dissonant_echoes.up or buff.voidform.up )
+            end,
+
             handler = function ()
+                removeBuff( "dissonant_echoes" )
+
                 if debuff.shadow_word_pain.up then debuff.shadow_word_pain.expires = debuff.shadow_word_pain.expires + 3 end
                 if debuff.vampiric_touch.up then debuff.vampiric_touch.expires = debuff.vampiric_touch.expires + 3 end
+
                 removeBuff( "anunds_last_breath" )
             end,
         },
@@ -1341,26 +1430,25 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             id = 228260,
             cast = function ()
                 if pvptalent.void_origins.enabled then return 0 end
-                return haste * ( talent.legacy_of_the_void.enabled and 0.6 or 1 ) * 2.5 
+                return haste * 1.5 
             end,
-            cooldown = 0,
+            cooldown = 90,
             gcd = "spell",
-
-            spend = function ()
-                return talent.legacy_of_the_void.enabled and 60 or 90
-            end,
-            spendType = "insanity",
 
             startsCombat = true,
             texture = 1386548,
 
-            nobuff = "voidform",
+            nobuff = function () return buff.dissonant_echoes.up and "dissonant_echoes" or "voidform" end,
             bind = "void_bolt",
 
-            -- ready = function () return insanity.current >= ( talent.legacy_of_the_void.enabled and 60 or 90 ) end,
+            toggle = "cooldowns",
+
+            cooldown_ready = function ()
+                return cooldown.void_eruption.remains == 0 and buff.voidform.down
+            end,
+
             handler = function ()
-                applyBuff( "voidform", nil, ( level < 116 and equipped.mother_shahrazs_seduction ) and 3 or 1 )
-                gain( talent.legacy_of_the_void.enabled and 60 or 90, "insanity" )
+                applyBuff( "voidform" )
             end,
         },
 
@@ -1373,17 +1461,201 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
             cooldown = 45,
             gcd = "spell",
 
+            spend = -6,
+            spendType = "insanity",
+
             startsCombat = true,
             texture = 1386551,
 
             aura = "void_torrent",
             talent = "void_torrent",
-            buff = "voidform",
 
             start = function ()
                 applyDebuff( "target", "void_torrent" )
             end,
         },
+
+
+        -- Priest - Kyrian    - 325013 - boon_of_the_ascended (Boon of the Ascended)
+        boon_of_the_ascended = {
+            id = 325013,
+            cast = 1.5,
+            cooldown = 180,
+            gcd = "spell",
+
+            startsCombat = false,
+            texture = 3565449,
+
+            toggle = "essences",
+
+            handler = function ()
+                applyBuff( "boon_of_the_ascended" )
+            end,
+
+            auras = {
+                boon_of_the_ascended = {
+                    id = 325013,
+                    duration = 10,
+                    max_stack = 20 -- ???
+                }
+            }
+        },
+
+        ascended_nova = {
+            id = 325020,
+            known = 325013,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell", -- actually 1s and not 1.5s...
+
+            startsCombat = true,
+            texture = 3528287,
+
+            buff = "boon_of_the_ascended",
+            bind = "boon_of_the_ascended",
+
+            handler = function ()
+                addStack( "boon_of_the_ascended", nil, active_enemies )
+            end
+        },
+
+        ascended_blast = {
+            id = 325283,
+            known = 15407,
+            cast = 0,
+            cooldown = 3,
+            hasteCD = true,
+            gcd = "spell", -- actually 1s and not 1.5s...
+
+            startsCombat = true,
+            texture = 3528286,
+
+            buff = "boon_of_the_ascended",
+            bind = "mind_flay",
+
+            handler = function ()
+                addStack( "boon_of_the_ascended", nil, 5 )
+                if state.spec.shadow then gain( 6, "insanity" ) end
+            end,
+        },
+
+        -- Priest - Necrolord - 324724 - unholy_nova          (Unholy Nova)
+        unholy_nova = {
+            id = 324724,
+            cast = 0,
+            cooldown = 60,
+            gcd = "spell",
+
+            spend = 0.05,
+            spendType = "mana",
+
+            startsCombat = true,
+            texture = 3578229,
+
+            toggle = "essences",
+
+            handler = function ()
+                applyDebuff( "target", "unholy_transfusion" )
+                active_dot.unholy_transfusion = active_enemies
+            end,
+
+            auras = {
+                unholy_transfusion = {
+                    id = 324724,
+                    duration = function () return conduit.festering_transfusion.enabled and 20 or 15 end,
+                    max_stack = 1,
+                }
+            }
+        },
+
+        -- Priest - Night Fae - 327661 - fae_guardians        (Fae Guardians)
+        fae_guardians = {
+            id = 327661,
+            cast = 0,
+            cooldown = 90,
+            gcd = "spell",
+
+            spend = 0.02,
+            spendType = "mana",
+
+            toggle = "essences",
+
+            handler = function ()
+                applyBuff( "fae_guardians" )
+                summonPet( "wrathful_faerie" )
+                applyDebuff( "target", "wrathful_faerie" )
+                summonPet( "guardian_faerie" )
+                applyBuff( "guardian_faerie" )
+                summonPet( "benevolent_faerie" )
+                applyBuff( "benevolent_faerie" )
+                -- TODO: Check totem/guardian API re: faeries.
+            end,
+
+            auras = {
+                fae_guardians = {
+                    id = 327661,
+                    duration = 20,
+                    max_stack = 1,
+                },
+                wrathful_faerie = {
+                    id = 342132,
+                    duration = 20,
+                    max_stack = 1,
+                },
+                wrathful_faerie_fermata = {
+                    id = 345452,
+                    duration = function () return conduit.fae_fermata.enabled and ( conduit.fae_fermata.mod * 0.001 ) or 3 end,
+                    max_stack = 1
+                },
+                guardian_faerie = {
+                    id = 327694,
+                    duration = 20,
+                    max_stack = 1,
+                },
+                guardian_faerie_fermata = {
+                    id = 345451,
+                    duration = function () return conduit.fae_fermata.enabled and ( conduit.fae_fermata.mod * 0.001 ) or 3 end,
+                    max_stack = 1
+                },
+                benevolent_faerie = {
+                    id = 327710,
+                    duration = 20,
+                    max_stack = 1,
+                },
+                benevolent_faerie_fermata = {
+                    id = 345453,
+                    duration = function () return conduit.fae_fermata.enabled and ( conduit.fae_fermata.mod * 0.001 ) or 3 end,
+                    max_stack = 1
+                },
+            }
+        },
+
+        -- Priest - Venthyr   - 323673 - mindgames            (Mindgames)
+        mindgames = {
+            id = 323673,
+            cast = 1.5,
+            cooldown = 45,
+            gcd = "spell",
+
+            spend = 0.02,
+            spendType = "mana",
+
+            toggle = "essences",
+
+            handler = function ()
+                applyDebuff( "target", "mindgames" )
+            end,
+
+            auras = {
+                mindgames = {
+                    id = 323673,
+                    duration = function () return conduit.shattered_perceptions.enabled and 8 or 5 end,
+                    max_stack = 1,
+                },
+            },
+        },
+
+
     } )
 
 
@@ -1404,7 +1676,7 @@ if UnitClassBase( 'player' ) == 'PRIEST' then
     } )
 
 
-    spec:RegisterPack( "Shadow", 20200614, [[dOKidbqirvQhrr0LeLuytIsnkuQofQIvjk6vGIzbkDlrvSlr(fOQHjfogQQLjk8mrjMMOQCnus2MsP8nrjzCIQkNdLuzDIQQmpkc3de7dLYbfLuTquLEOOkzIOKIlkQQk2OsPszKIQQQtQuQYkLIMPOQQ0nvkv1orjgQOKspvjtfu5QOKsBvPuXxvkvYEH6VuAWqomPftHhtLjJ0Lj2mk(minAQYPLSArjf9ArLzlv3gv2Tk)wvdxP64kLkvlh45iMUW1PQ2Uu67uuJhLu15PiTELsMVsX(vmMpgo8IQHGzjJgz0OX24NVeFwLr(Xp)WRW0DbV2vxofQGxNYj41YtPVz8AxnT)kfdhErEFGtWlVi2j5p4HhAfE(gj3ZbpP487Au)5aktapP4CWJxg(vp2Eh2aVOAiywYOrgnASn(5lXNvzKF83gEP(H3dWRvXLx4LxrPYHnWlQqC4Ljh0YtPV5bL1ckHetttoiVi2j5p4HhAfE(gj3ZbpP487Au)5aktapP4CWpnn5GA6FYG4NpyhugnYOX0CAAYbLxE6bvi5VPPjhuEguwNsf6GwvxoNKMMMCq5zq51FTcie6GcfavcBXmiIPxOS(000KdkpdkV(RvaHqhuOaOsKIItSXBPLmO4huuCInElTKbz2taYG099E5uJUKMMMCq5zqzDkvOdIRoQLikWgEdYWNHzqXpiT9l6GmaIMRoOdA7xhDqlrbdY5P3jDYGcpngKcKbz4ZWi0bzy6GGZ79H6fdk)xbTcjeqcV6fjiy4WlsDq7cgoml8XWHxQlQ)WR2VOwb4Vh1F4LCQrxOyEXbMLmWWHxYPgDHI5fVCGkeqP4LHpdtQ9lkZd4s038HxQlQ)WlQcYzvItos9hoWSKfmC4L6I6p8Q9lQ147bEjNA0fkMxCGzjFy4Wl5uJUqX8IxQlQ)WlN27w1f1F2Erc8QxKWEkNGxokbhywyfgo8so1OlumV4LduHakfVm8zysEkOviHqTH37d1lij)9bL9GC)3PV5l1(f1A89ibeoToYGydYG4Ny1GYEq6wcOcjrefuhulT0(d1xsa9Yni2Gmi(4L6I6p8IRoQLikahyw2ggo8so1OlumV4LduHakfVcfavIuuCInElTKbzIbLLbTzZGC)3PV5lr8u6B2A(bulv0Wl58uauHmiidkJbTzZGyFqU)7038LiEk9nBn)aQLkA4LCEkaQqgeKbXFqzpi3)D6B(sepL(MTMFa1sfn8saHtRJmitmiOoAItz9dIh8sDr9hEr8u6B2A(bulv0WdhywYkmC4LCQrxOyEXlhOcbukEz4ZWKA)IY8aUejuxUbX2G43yqWmi2he)gdkZbz4ZWKm6)t7(Ki5VpiEWl1f1F4fXhaKJkaB8woLEcHGdml5hgo8so1OlumV4LduHakfVaArTsRCrsPusQUbX2G43aVuxu)HxufKZ2(ffhywyDy4Wl5uJUqX8IxoqfcOu8k0UCrIRoQHCubKKtn6cDqB2mi2hKHpdtQ9lkZd4sKqD5geBdIF(nOnBguuCInElTKbzIbXNvdIh8sDr9hEXvh1qoQaWbMf(nWWHxYPgDHI5fVCGkeqP4vEpidFgMu7xuMhWL83h0MndI9b5(VtFZxI4P03S18dOwQOHxY5PaOczqqgugdk7bz4ZWKA)IY8aUejuxUbzIbXNvdIh8sDr9hEr8u6B2A(bulv0Wdhyw4ZhdhEjNA0fkMx8YbQqaLIxaTOwPvUiPukjv3GyBqSAqzpiGwuR0kxKukLKO(anQ)gKjgugnWl1f1F4fXtPVzRdOepCGzHFgy4Wl5uJUqX8IxoqfcOu8QvbLA0Le9dI1FFqzpi2he7dcOf1kTYfjUVv4Kls1ni2gKtjHnkozqWmOgjwnOSheqlQvALlsCFRWjxKQBqMyq5Bq8mOnBguEpOq7YfjINsFZwZpGAB)IMKtn6cDqB2midFgMu7xuMhWLOV5BqB2midFgMu7xuMhWLiH6Yni2ge)8nOShe7dQoIEvy6GmXGYQgdAZMb58uauHyzaQlQ)0(GyBq8tzjldINbTzZGm8zysTFrzEaxIeQl3GmbKbXpFdk7bX(GQJOxfMoitmOT1yqB2miNNcGkeldqDr9N2heBdIFklzzq8miEWl1f1F4fxDuRrxjboWSWply4Wl5uJUqX8IxoqfcOu8I(rI4P03S18dO2DTUeq406idITbLVbL9GOFKAvU9cuoB8(oVeq406idITbLVbL9Gm8zysTFrzEaxYFhVuxu)HxTFrTXdaYf4aZc)8HHdVKtn6cfZlE5aviGsXlGWaeINA0LbL9GIItSXBPLmi2gu(gu2dkVhuOD5IexreGPj5uJUqhu2dkVhuOD5Ievb5STFrtYPgDHIxQlQ)WlINsFZwZpGA316WbMf(ScdhEjNA0fkMx8YbQqaLIxaHbiep1Oldk7bffNyJ3slzqSnOTnOnBge7dk0UCrIRicW0KCQrxOdk7br)ir8u6B2A(bu7UwxcimaH4PgDzq8GxQlQ)WRwLBVaLZgVVZdhyw4VnmC4LCQrxOyEXl1f1F4fxDultxnfVQleaWFpSfdEfLlhHnizKn7U)7038LA)IAn(EK833SX9FN(MVexDuRrxjrYFNh8QUqaa)9WwCCcT0qWl(4LZtRdV4Jdml8ZkmC4L6I6p8I4P03S18dO2DTo8so1OlumV4ah4fvyu)EGHdZcFmC4L6I6p8IuD5CcEjNA0fkMxCGzjdmC4L6I6p8YNi2keocEjNA0fkMxCGzjly4Wl5uJUqX8IxoqfcOu8YWNHjz0)N29jrciQlg0MndkkoXgVLwYGmbKbLFng0MndkuaujsEI2dV0UlgKjguwyfEPUO(dV2)O(dhywYhgo8so1OlumV41VJxejWl1f1F4vRck1Ol4vR29f8I(rI4P03S18dO2DTUuuUC1bDqzpi6hPwLBVaLZgVVZlfLlxDqXRwfypLtWl6heR)ooWSWkmC4LCQrxOyEXlhOcbukEz4ZWKA)IY8aUK)oEPUO(dVykGy0)NIdmlBddhEPUO(dVmeara5QdkEjNA0fkMxCGzjRWWHxQlQ)WREb1li2SM(uOCYf4LCQrxOyEXbML8ddhEjNA0fkMx8YbQqaLIxg(mmP2VOmpGl5VJxQlQ)Wl9CcjaA360EhhywyDy4Wl1f1F4LHc1(m2auUCe8so1OlumV4aZc)gy4Wl5uJUqX8IxoqfcOu8sDr1kw5eUsidITbXhVuxu)Hxa)ZQUO(Z2lsGx9Ie2t5e8Y1fTvWbMf(8XWHxYPgDHI5fVCGkeqP4L6IQvSYjCLqgeKbXhVuxu)Hxa)ZQUO(Z2lsGx9Ie2t5e8Iuh0UGdCGx7aX9CgAGHdZcFmC4L6I6p8A)J6p8so1OlumV4aZsgy4Wl5uJUqX8Ix)oErKaVuxu)HxTkOuJUGxTA3xWlM()GbX(GyFq5lXQbbZG0TeqfsYSxr2faX(m2WtSuL7eAcOxUbXZGYAmi2he)bbZGAKYiRguMds3savijIOG6GAPL2FO(scOxUbXZG4bVAvG9uobV4QJAn6kjSHcGkbbhywYcgo8so1OlumV41VJxejWl1f1F4vRck1Ol4vR29f8I9bXFq5zqnsnYQbL5G0TeqfsIkA4zdpWlKeqVCdcMb1iLXGYCq6wcOcjfEVpuVW6PGwHecib0l3G4zqzoi2he)bLNb1i1G1nOmhKULaQqsH37d1lSEkOviHasa9YnOmhKULaQqserb1b1slT)q9LeqVCdIh8Qvb2t5e8IyE3gaTclqVCeRZtC5WbML8HHdVKtn6cfZlE974frc8sDr9hE1QGsn6cE1QDFbVyFq8huEguJuJ8nOmhKULaQqsH37d1lSEkOviHasa9YnO8mOgPgSAqzoiDlbuHKi7vim(DRUVRGkQ)ijGE5gep4vRcSNYj4vBydGwHfOxoI15jUC4aZcRWWHxYPgDHI5fV(D8IibEPUO(dVAvqPgDbVA1UVGxSpi(dkpdQrQrwnOmhKULaQqsurdpB4bEHKa6LBq5zqnsnYYGYCq6wcOcjfEVpuVW6PGwHecib0l3GYZGAKAWkwnOmhKULaQqsK9keg)Uv33vqf1FKeqVCdINbL5GyFq8huEguJuJmYQbL5G0Teqfsk8EFOEH1tbTcjeqcOxUbL5G0TeqfsIikOoOwAP9hQVKa6LBq8GxTkWEkNGxTHLRi2aOvyb6LJyDEIlhoWSSnmC4LCQrxOyEXRFhVisGxQlQ)WRwfuQrxWRwT7l4f)bLNb1i1GF(guMds3savijIOG6GAPL2FO(scOxo8Qvb2t5e8QnSCfXsOwNN4YHdmlzfgo8so1OlumV4LduHakfVY7bz4ZWKiEk9nZ8aUK)oEPUO(dViEk9nZ8aoCGzj)WWHxYPgDHI5fVoLtWlDlINcuIL5VW(m293SaWl1f1F4LUfXtbkXY8xyFg7(Bwa4aZcRddhEjNA0fkMx8YbQqaLIxKDP3THcGkbjXvh1sefmitmOmg0Mnds3saviPW79H6fwpf0kKqajGE5geKb1aVuxu)HxC1rTgDLe4aZc)gy4Wl1f1F4vRYTxGYzJ335HxYPgDHI5fh4aVCucgoml8XWHxYPgDHI5fVCGkeqP4f7dYWNHj1(fL5bCjsOUCdITbLrJbL9GQJOxfMoitazqSQXG4zqB2mi2hKZhaKlS1r0RctTuGw3GYCqSpi2heuhnXPS(bL5GYyq8miygK6I6VexDuRrxjrYPKWgfNmiEgepdITbvhrVkmfVuxu)HxCc3dm1(m2UVROwkquocoWSKbgo8sDr9hEz0)NAFgB4jw5eotXl5uJUqX8IdmlzbdhEjNA0fkMx8YbQqaLIxg(mmP2VOmpGlrc1LBqSni(ScVuxu)Hxq9vaT0Z(mwDlb8HhoWSKpmC4LCQrxOyEXl1f1F4fNEfJqI3(mwoLEcHGxoqfcOu8ISl9UnuaujijU6OwIOGbXgKbLXG2SzqaTOwPvUiPukjv3GyBqBRbEDkNGxC6vmcjE7Zy5u6jecoWSWkmC4LCQrxOyEXlhOcbukEr2LE3gkaQeKexDulruWGydYGYyqB2miGwuR0kxKukLKQBqSnOT1aVuxu)HxmVZNiuRULaQqSgIYHdmlBddhEjNA0fkMx8YbQqaLIxKDP3THcGkbjXvh1sefmi2GmOmg0MndcOf1kTYfjLsjP6geBdABnWl1f1F41UpOymToOwJUscCGzjRWWHxYPgDHI5fVuxu)HxU)CYfaneQLPRCcE5aviGsXRO4KbzcidIFJbTzZGyFqg(mmjN3d8j2NXwhrVkmnrc1LBqSbzq8z1GYEqg(mmP2VOmpGl5VpiEg0MndIXV3TaX5PaOInkozqMyqqD0bTzZGIItSXBPLmitmiwHx96eRJIxBdhywYpmC4L6I6p8cu77DXwNLSRobVKtn6cfZloWSW6WWHxQlQ)WlGO71b1Y0voHGxYPgDHI5fhyw43adhEPUO(dVm)GoTvQZceYF65e8so1OlumV4aZcF(y4Wl5uJUqX8IxoqfcOu8I9bz4ZWKA)IY8aUK)(GYEqg(mmjN3d8j2NXwhrVkmnrc1LBqSnOmAmiEg0Mnds3savijN3d8j2NXwhrVkmnb0l3GGmOg4L6I6p8YP9UvDr9NTxKaV6fjSNYj4LduH1rj4aZc)mWWHxQlQ)WlFIyRq4i4LCQrxOyEXboWlhOcRJsWWHzHpgo8so1OlumV41PCcEPBr8uGsSm)f2NXU)MfaEPUO(dV0TiEkqjwM)c7Zy3FZcahywYadhEjNA0fkMx8sDr9hE5m11)a8x5SgDLe4LWWiUWEkNGxotD9pa)voRrxjboWbE56I2ky4WSWhdhEPUO(dVA)IAfG)Eu)HxYPgDHI5fhywYadhEjNA0fkMx8YbQqaLIxg(mmP2VOmpGlrFZhEPUO(dVOkiNvjo5i1F4aZswWWHxYPgDHI5fVCGkeqP4vEpOOC5Qd6GYEq6wcOcjfEVpuVW6PGwHecib0l3GydYG4JxQlQ)WRwLBVaLZgVVZdhywYhgo8so1OlumV4LduHakfVm8zysEkOviHqTH37d1lij)D8sDr9hEXvh1sefGdmlScdhEPUO(dVA)IAn(EGxYPgDHI5fhyw2ggo8so1OlumV4L6I6p8YP9UvDr9NTxKaV6fjSNYj4LJsWbMLScdhEjNA0fkMx8sDr9hEr8u6B2A(bulv0WdVCGkeqP4vuCInElTKbzIbLLbTzZGm8zysTFrzEaxI(Mp8YzQRl2qbqLGGzHpoWSKFy4Wl5uJUqX8IxoqfcOu8YWNHj1(fL5bCjsOUCdITbXVXGGzqSpi(nguMdYWNHjz0)N29jrYFFq8GxQlQ)WlIpaihva24TCk9ecbhywyDy4Wl5uJUqX8IxoqfcOu8cOf1kTYfjLsjP6geBdIFJbL9GyFq0psepL(MTMFa1UR1LacdqiEQrxg0MndkkoXgVLwYGyBqzPXG4bVuxu)HxufKZ2(ffhyw43adhEPUO(dV4QJAihva4LCQrxOyEXbMf(8XWHxYPgDHI5fVuxu)HxC1rTgDLe4LduHakfVi7sVBdfavcsIRoQLikyqMyqTkOuJUK4QJAn6kjSHcGkbbVCM66Inuaujiyw4Jdml8ZadhEjNA0fkMx8YbQqaLIxSpiGwuR0kxKukLKQBqSniwnOSheqlQvALlskLssuFGg1FdYedkJbXZG2SzqaTOwPvUiPukjr9bAu)ni2gug4L6I6p8I4P03S1buIhoWSWply4Wl5uJUqX8IxQlQ)WlINsFZwZpGA316WlhOcbukEL3dk0UCrIRicW0KCQrxOdk7bbegGq8uJUmOShuuCInElTKbX2GyFqSpO8mi(PmgemdklPSmOmhezx6DBOaOsqsC1rTerbdINbL5GAvqPgDjrmVBdGwHfOxoI15jUCdkZbX(G4pO8mOgPg8ZyqzoiDlbuHKiIcQdQLwA)H6ljGE5guMdISl9UnuaujijU6OwIOGbXZG4bVCM66Inuaujiyw4Jdml8Zhgo8so1OlumV4L6I6p8Qv52lq5SX778WlhOcbukEbegGq8uJUmOShuuCInElTKbX2GyFqSpi(dcMbLLuwguMdISl9UnuaujijU6OwIOGbXZGYCqTkOuJUKAdBa0kSa9YrSopXLBqzoi2he)bbZGAK43yqzoiDlbuHKiIcQdQLwA)H6ljGE5guMdISl9UnuaujijU6OwIOGbXZG4bVCM66Inuaujiyw4Jdml8zfgo8so1OlumV4L6I6p8Qv52lq5SX778WlhOcbukEr)ir8u6B2A(bu7UwxcimaH4PgDzqzpi2huOD5IexreGPj5uJUqhu2dkkoXgVLwYGyBqSpi2he)uJbbZGYi1yqzoiYU072qbqLGK4QJAjIcgepdkZb1QGsn6sQnSCfXgaTclqVCeRZtC5guMdI9b1QGsn6sQnSCfXsOwNN4YnOmhezx6DBOaOsqsC1rTerbdINbXZG4bVCM66Inuaujiyw4Jdml83ggo8so1OlumV4LduHakfVm8zysTFrzEaxYFhVuxu)HxTFrTXdaYf4aZc)ScdhEjNA0fkMx8sDr9hEXvh1sefGx1fca4Vh2IbVIYLJWgKmY2WNHjXvh1sefydVe9nF4vDHaa(7HT44eAPHGx8XlhOcbukEr2LE3gkaQeKexDulruWGyBq8XlNNwhEXhhyw4NFy4Wl5uJUqX8IxQlQ)WlU6OwMUAkEvxiaG)Eylg8kkxocBqYiB2D)3PV5l1(f1A89i5VVzJ7)o9nFjU6OwJUsIK)op4vDHaa(7HT44eAPHGx8XlNNwhEXhhyw4Z6WWHxQlQ)WlINsFZwZpGA316Wl5uJUqX8IdCGd8QvaK6pmlz0iJgn2wJTHxMvWvhucET942Fqi0bTTbPUO(Bq9IeK00eV2bpt1f8YKdA5P038GYAbLqIPPjhKxe7K8h8WdTcpFJK75GNuC(DnQ)CaLjGNuCo4NMMCqn9pzq8ZhSdkJgz0yAonn5GYlp9GkK8300KdkpdkRtPcDqRQlNtstttoO8mO86VwbecDqHcGkHTygeX0luwFAAAYbLNbLx)1kGqOdkuaujsrXj24T0sgu8dkkoXgVLwYGm7jazq6(EVCQrxstttoO8mOSoLk0bXvh1sefydVbz4ZWmO4hK2(fDqgarZvh0bT9RJoOLOGb5807KozqHNgdsbYGm8zye6GmmDqW59(q9IbL)RGwHecinnNMMCq5Fy9IZpe6GmeMhidY9CgAmidbADK0GY6oNShKbD)LhpfWX43hK6I6pYG(RBAAAAYbPUO(JK2bI75m0actxj5MMMCqQlQ)iPDG4EodnGbc8m)tNMMCqQlQ)iPDG4EodnGbc8Qpuo5cnQ)MMMCqRt3jEFmiGw0bz4ZWi0brcnidYqyEGmi3ZzOXGmeO1rgKE0bTdK8S)ruh0bvKbr)tstttoi1f1FK0oqCpNHgWabEYP7eVpSKqdY0uDr9hjTde3ZzObmqGF)J6VPP6I6psAhiUNZqdyGaFRck1OlWEkNaHRoQ1ORKWgkaQeey)DiejGTv7(ceM()a2zpFjwbJULaQqsM9kYUai2NXgEILQCNqta9YXtwd25dtJugzvM6wcOcjrefuhulT0(d1xsa9YXdptt1f1FK0oqCpNHgWab(wfuQrxG9uobcX8UnaAfwGE5iwNN4Yb7VdHibSTA3xGWo)80i1iRYu3savijQOHNn8aVqsa9YbtJugzQBjGkKu49(q9cRNcAfsiGeqVC8Kj78ZtJudwxM6wcOcjfEVpuVW6PGwHecib0lxM6wcOcjrefuhulT0(d1xsa9YXZ0uDr9hjTde3ZzObmqGVvbLA0fypLtG0g2aOvyb6LJyDEIlhS)oeIeW2QDFbc78ZtJuJ8LPULaQqsH37d1lSEkOviHasa9YLNgPgSktDlbuHKi7vim(DRUVRGkQ)ijGE54zAQUO(JK2bI75m0agiW3QGsn6cSNYjqAdlxrSbqRWc0lhX68exoy)DiejGTv7(ce25NNgPgzvM6wcOcjrfn8SHh4fscOxU80i1ilzQBjGkKu49(q9cRNcAfsiGeqVC5PrQbRyvM6wcOcjr2Rqy87wDFxbvu)rsa9YXtMSZppnsnYiRYu3saviPW79H6fwpf0kKqajGE5Yu3savijIOG6GAPL2FO(scOxoEMMQlQ)iPDG4EodnGbc8TkOuJUa7PCcK2WYvelHADEIlhS)oeIeW2QDFbc)80i1GF(Yu3savijIOG6GAPL2FO(scOxUPP6I6psAhiUNZqdyGapXtPVzMhWbBXajVn8zysepL(MzEaxYFFAQUO(JK2bI75m0agiW7teBfchSNYjq0TiEkqjwM)c7Zy3FZcyAQUO(JK2bI75m0agiWZvh1A0vsaBXaHSl9UnuaujijU6OwIOatKXMn6wcOcjfEVpuVW6PGwHecib0lhKgtt1f1FK0oqCpNHgWab(wLBVaLZgVVZBAonn5GY)W6fNFi0bjTcW0bffNmOWtgK6IhmOImiTvRUA0L00uDr9hbcP6Y5KPP6I6pcmqG3Ni2keoY0uDr9hbgiWV)r9hSfdedFgMKr)FA3NejGOUyZMO4eB8wAjMas(1yZMqbqLi5jAp8s7UWezHvtt1f1FeyGaFRck1OlWEkNaH(bX6Vd7VdHibSTA3xGq)ir8u6B2A(bu7UwxkkxU6GMn9JuRYTxGYzJ335LIYLRoOtt1f1FeyGaptbeJ()uylgig(mmP2VOmpGl5Vpnvxu)rGbc8gcGiGC1bDAQUO(Jade47fuVGyZA6tHYjxmnvxu)rGbc865esa0U1P9oSfdedFgMu7xuMhWL83NMQlQ)iWabEdfQ9zSbOC5itt1f1FeyGapW)SQlQ)S9IeWEkNaX1fTvGTyGOUOAfRCcxje24pnvxu)rGbc8a)ZQUO(Z2lsa7PCcesDq7cSfde1fvRyLt4kHaH)0CAAYbXAjYG2(c3dmDqpZGY)67k6Gynar5idcuq9IbzimpqgKPV)GuGmi149Jbf)Gy0EFqVFmONzqBNVOmpGBAQUO(JKCuceoH7bMAFgB33vulfikhb2Ibc7g(mmP2VOmpGlrc1LJTmAKDDe9QWutaHvn4zZg2D(aGCHToIEvyQLc06YKD2H6OjoL1Nzg8aJ6I6VexDuRrxjrYPKWgfNWdpSvhrVkmDAQUO(JKCucmqG3O)p1(m2WtSYjCMonvxu)rsokbgiWd1xb0sp7Zy1TeWhEWwmqm8zysTFrzEaxIeQlhB8z10uDr9hj5OeyGaVprSviCWEkNaHtVIriXBFglNspHqGTyGq2LE3gkaQeKexDulruaBqYyZgGwuR0kxKukLKQJTT1yAQUO(JKCucmqGN5D(eHA1TeqfI1quoylgiKDP3THcGkbjXvh1sefWgKm2SbOf1kTYfjLsjP6yBBnMMQlQ)ijhLade439bfJP1b1A0vsaBXaHSl9UnuaujijU6OwIOa2GKXMnaTOwPvUiPukjvhBBRX00KdA7sRyqAmOUOKyqBJmidjmlYniNsI6GoO8A7wAqSwImOWtgetbiXGCkjguwFL1ZAhu8dcQedQIb93GYlwdSdk8KBqsRamDqeFdISD3xUyqoLedI49(D6GmKb5te6Gm7j3GYlVh4tg0ZmOT3r0RcthurgK6IQvg0dgufdYC17dciopfavguDdk8KbDcRpgeuhf2b9GbfEYGcfavIbvKbPgVFmO4heTK00uDr9hj5OeyGaV7pNCbqdHAz6kNaBVoX6Oq2gSfdKO4etaHFJnBy3WNHj58EGpX(m26i6vHPjsOUCSbHpRY2WNHj1(fL5bCj)DE2SHXV3TaX5PaOInkoXeqD0nBIItSXBPLycwnnvxu)rsokbgiWdQ99UyRZs2vNmnvxu)rsokbgiWdeDVoOwMUYjKPP6I6psYrjWabEZpOtBL6SaH8NEozAAYbXAjYGcpHidY9FN(MpYGQBqgsywKBqM((GbXNedsp6GY4OdA78fDq8(9yq1nitFFWGY4OdA78fL5bCdYSNCdY03FqEARmO8Y7b(Kb9mdA7De9QW0bPUOALPP6I6psYrjWabEN27w1f1F2ErcypLtG4avyDucSfde2n8zysTFrzEaxYFpBdFgMKZ7b(e7ZyRJOxfMMiH6YXwgn4zZgDlbuHKCEpWNyFgBDe9QW0eqVCqAmnn5GyncJ63JbXO9UH6YniMhmiFIA0LbvHWrYFdI1sKb93GC)3PV5lnnvxu)rsokbgiW7teBfchzAonvxu)rsUUOTcK2VOwb4Vh1Ftt1f1FKKRlARade4PkiNvjo5i1FWwmqm8zysTFrzEaxI(MVPP6I6psY1fTvGbc8Tk3EbkNnEFNhSfdK8okxU6GMTULaQqsH37d1lSEkOviHasa9YXge(tt1f1FKKRlARade45QJAjIcGTyGy4ZWK8uqRqcHAdV3hQxqs(7tt1f1FKKRlARade4B)IAn(Emnvxu)rsUUOTcmqG3P9UvDr9NTxKa2t5eiokzAQUO(JKCDrBfyGapXtPVzR5hqTurdpyDM66Inuaujiq4dBXajkoXgVLwIjYYMng(mmP2VOmpGlrFZ30uDr9hj56I2kWabEIpaihva24TCk9ecb2IbIHpdtQ9lkZd4sKqD5yJFdyyNFJmn8zysg9)PDFsK835zAAYbXAjYGynki3G2oFrh0FdkVyndY)6cHmiLsjdsbYGQZ9C1bDq1ni(nid6bdQlesAAQUO(JKCDrBfyGapvb5STFrHTyGa0IALw5IKsPKuDSXVr2St)ir8u6B2A(bu7UwxcimaH4PgDzZMO4eB8wAjSLLg8mnvxu)rsUUOTcmqGNRoQHCubmnvxu)rsUUOTcmqGNRoQ1ORKawNPUUydfavcce(Wwmqi7sVBdfavcsIRoQLikWeTkOuJUK4QJAn6kjSHcGkbzAQUO(JKCDrBfyGapXtPVzRdOepylgiSd0IALw5IKsPKuDSXQSbArTsRCrsPusI6d0O(ZezWZMnaTOwPvUiPukjr9bAu)Xwgtt1f1FKKRlARade4jEk9nBn)aQDxRdwNPUUydfavcce(WwmqY7q7YfjUIiattYPgDHMnqyacXtn6s2rXj24T0syJD2Zd)ugWKLuwYKSl9UnuaujijU6OwIOaEYSvbLA0LeX8UnaAfwGE5iwNN4YLj78ZtJud(zKPULaQqserb1b1slT)q9LeqVCzs2LE3gkaQeKexDulruap8mnvxu)rsUUOTcmqGVv52lq5SX778G1zQRl2qbqLGaHpSfdeGWaeINA0LSJItSXBPLWg7SZhMSKYsMKDP3THcGkbjXvh1sefWtMTkOuJUKAdBa0kSa9YrSopXLlt25dtJe)gzQBjGkKeruqDqT0s7puFjb0lxMKDP3THcGkbjXvh1sefWdptt1f1FKKRlARade4BvU9cuoB8(opyDM66Inuaujiq4dBXaH(rI4P03S18dO2DTUeqyacXtn6s2ShAxUiXvebyAso1Ol0SJItSXBPLWg7SZp1aMmsnYKSl9UnuaujijU6OwIOaEYSvbLA0LuBy5kInaAfwGE5iwNN4YLj7TkOuJUKAdlxrSeQ15jUCzs2LE3gkaQeKexDulruap8WZ0uDr9hj56I2kWab(2VO24ba5cylgig(mmP2VOmpGl5Vpnvxu)rsUUOTcmqGNRoQLika2Ibczx6DBOaOsqsC1rTerbSXhwNNwhe(WwxiaG)EylooHwAiq4dBDHaa(7HTyGeLlhHnizKTHpdtIRoQLikWgEj6B(MMQlQ)ijxx0wbgiWZvh1Y0vtH15P1bHpS1fca4Vh2IJtOLgce(WwxiaG)Eylgir5YrydsgzZU7)o9nFP2VOwJVhj)9nBC)3PV5lXvh1A0vsK835zAQUO(JKCDrBfyGapXtPVzR5hqT7ADtZPP6I6psYbQW6Oei(eXwHWb7PCceDlINcuIL5VW(m293SaMMQlQ)ijhOcRJsGbc8(eXwHWbRWWiUWEkNaXzQR)b4VYzn6kjMMtt1f1FKePoODbs7xuRa83J6VPP6I6psIuh0Uade4PkiNvjo5i1FWwmqm8zysTFrzEaxI(MVPP6I6psIuh0Uade4B)IAn(Emnvxu)rsK6G2fyGaVt7DR6I6pBVibSNYjqCuY00KdI1sKbT9RJoOLOGb93GwWnO)6MoOIzqM((dcQedsheCEVpuVyq5)kOviHaguwl4DdYCfEdsJb1fLedI)GwIcQd6GynL2FO(YGGdOvKMMQlQ)ijsDq7cmqGNRoQLika2IbIHpdtYtbTcjeQn8EFOEbj5VNT7)o9nFP2VOwJVhjGWP1rydc)eRYw3savijIOG6GAPL2FO(scOxo2GWFAAYbXAjYGwBxSMbzimpqgKt33Rd6GCEkaQqGDqpyqHNmOqbqLyqfzqQX7hdk(brljnnvxu)rsK6G2fyGapXtPVzR5hqTurdpylgiHcGkrkkoXgVLwIjYYMnU)7038LiEk9nBn)aQLkA4LCEkaQqGKXMnS7(VtFZxI4P03S18dOwQOHxY5PaOcbc)SD)3PV5lr8u6B2A(bulv0WlbeoToIjG6OjoL1ZZ0uDr9hjrQdAxGbc8eFaqoQaSXB5u6jecSfdedFgMu7xuMhWLiH6YXg)gWWo)gzA4ZWKm6)t7(Ki5VZZ0eMbzYbXAjYGynki3G2oFrh0FdkVyndY)6cHmiLsjdsbYGQZ9C1bDq1ni(nid6bdQlesAAQUO(JKi1bTlWabEQcYzB)IcBXabOf1kTYfjLsjP6yJFJPPjheRLidA7xh1qoQagKgdIpRBqpyqCpqgejuxocSd6bdQygu4jdkuaujgK5Q3heTKbv3G6cHmOWtVbXNvK00uDr9hjrQdAxGbc8C1rnKJkaylgiH2LlsC1rnKJkGKCQrxOB2WUHpdtQ9lkZd4sKqD5yJF(TztuCInElTetWNv8mnvxu)rsK6G2fyGapXtPVzR5hqTurdpylgi5THpdtQ9lkZd4s(7B2WU7)o9nFjINsFZwZpGAPIgEjNNcGkeizKTHpdtQ9lkZd4sKqD5mbFwXZ00KdI1sKbT8u6BEq5fqjEd6VbLxSMb5FDHqgu4jazqkqgKsPKbvN75QdAAAQUO(JKi1bTlWabEINsFZwhqjEWwmqaArTsRCrsPusQo2yv2aTOwPvUiPukjr9bAu)zImAmnn5G4vVCdk8KbT8u6BEqBxpGM)g025l6GCEkaQqgeZdgKoiJkgu8dkaMoi9OdsB)IoOVvaoDFVoOd6VbT9oIEvyAAAQUO(JKi1bTlWabEU6OwJUscylgiTkOuJUKOFqS(7zZo7aTOwPvUiX9TcNCrQo2CkjSrXjW0iXQSbArTsRCrI7Bfo5IuDMiF8SztEhAxUir8u6B2A(buB7x0KCQrxOB2y4ZWKA)IY8aUe9nFB2y4ZWKA)IY8aUejuxo24NVSzVoIEvyQjYQgB248uauHyzaQlQ)0oB8tzjl8SzJHpdtQ9lkZd4sKqD5mbe(5lB2RJOxfMAIT1yZgNNcGkeldqDr9N2zJFklzHhEMMQlQ)ijsDq7cmqGV9lQnEaqUa2Ibc9JeXtPVzR5hqT7ADjGWP1rylFzt)i1QC7fOC249DEjGWP1rylFzB4ZWKA)IY8aUK)(0uDr9hjrQdAxGbc8epL(MTMFa1UR1bBXabimaH4PgDj7O4eB8wAjSLVSZ7q7YfjUIiattYPgDHMDEhAxUirvqoB7x0KCQrxOtt1f1FKePoODbgiW3QC7fOC249DEWwmqacdqiEQrxYokoXgVLwcBBBZg2dTlxK4kIamnjNA0fA20psepL(MTMFa1UR1LacdqiEQrx4zAQUO(JKi1bTlWabEU6OwMUAkSopToi8HTUqaa)9WwCCcT0qGWh26cba83dBXajkxocBqYiB2D)3PV5l1(f1A89i5VVzJ7)o9nFjU6OwJUsIK)optt1f1FKePoODbgiWt8u6B2A(bu7UwhEr2fhMLmyv(HdCGXa]] )
+    spec:RegisterPack( "Shadow", 20201014, [[dWuflbqisKEKIexcfvLSjjLprQkLrPi1Puu8ksuZcfClsvPQDPWVKenmvkDmfXYKK8muumnvkCnjPABOO03ivLmosvvNtsk16ivvmpse3tLSpjHdQijwiPkpKuvPjkjfxurs1gvKKyKKQsLtIIQQvQO6LOOQuZefvf3urszNOq)efvzOKQINQIPQs1vvPO2kkQ4Rssj7fQ)syWqomLflHhtLjt0Lr2mk9zsA0s0PfTAfjj9AfLMnvDBuz3s9BvnCs54OOslh45GMUW1rvBNu57KW4vKK68OiRxLImFjv7xPXtW3XhPfeMXQUTQBNC7KBmMWStQoZuTXNGjncF0m3SMkHpTXr4ZP0KVc8rZyY)MeFhFGppWr4tzeAq9tLvQMrjFXW9CvctoEVf53oGXgvctoxL4tbF6dM)gxGpslimJvDBv3o52j3ymHzNu9j6p(y8r5dWNtYPFXNYukPgxGpsc6WNPSOtPjFflsFajbJD(uweZZfFbbw0KBWWIQ62QUfF8jmG474dbHu7ii(oMXj474J5I8B8HJ4EatINv45DPuibKXbXhQTcpjX6HdmJvHVJpMlYVXNc))sXZkIssqnXXe(qTv4jjwpCGzKzW3XhZf534JkVbKP1INvy3eb(OeFO2k8KeRhoWmEd8D8HARWtsSE4JdKbbsdFGAK3lcdOsbCWLTuajdSOkUwuvlQE9fbSukiDuhdtkHJSxuflIzVfFmxKFJpSVJhssHDteidsuqghoWmwD8D8HARWtsSE4JdKbbsdFGAK3lcdOsbCWLTuajdSOkUwuvlQE9fbSukiDuhdtkHJSxuflIzVfFmxKFJpA8GKLPSvffEdg4aZiZIVJpuBfEsI1dFmxKFJpUVDuhaliPG1BCe(4azqG0WNi5OfPKRfn52fvV(Iy59EbGCLgqLerYrlsjls1jxu96lkmGkfJi5ir8czslsjlQ64JpBs4K4dZIdmJ6l8D8XCr(n(asnnpjYwa1mhHpuBfEsI1dhyg1F8D8XCr(n(aitlBvbR34ii(qTv4jjwpCGzSAJVJpMlYVXhfpWl1rzlae8BRDe(qTv4jjwpCGzCYT474J5I8B8jkjbFx88TuW(ahHpuBfEsI1dhygNmbFhFmxKFJpCe3dys8ScpVlLcjGmoi(qTv4jjwpCGzCsv474J5I8B8PW)Vu8SIOKeutCmHpuBfEsI1dhygNWm474J5I8B8rL3aY0AXZkSBIaFuIpuBfEsI1dhygNCd8D8HARWtsSE4JdKbbsdFGAK3lcdOsbCWLTuajdSOkUwuvlQE9fbSukiDuhdtkHJSxuflIzVfFmxKFJpSVJhssHDteidsuqghoWmoP6474d1wHNKy9WhhidcKg(a1iVxegqLc4GlBPasgyrvCTOQwu96lcyPuq6OogMuchzVOkweZEl(yUi)gF04bjltzRkk8gmWbMXjml(o(qTv4jjwp8XCr(n(4(2rDaSGKcwVXr4JdKbbsdFIKJwKsUw0KBxu96lIL37faYvAavsejhTiLSivNCr1RVOWaQumIKJeXlKjTiLSOQJp(SjHtIpmloWmorFHVJpMlYVXhqQP5jr2cOM5i8HARWtsSE4aZ4e9hFhFmxKFJpaY0YwvW6nocIpuBfEsI1dhygNuTX3XhZf534JIh4L6OSfac(T1ocFO2k8KeRhoWmw1T474J5I8B8jkjbFx88TuW(ahHpuBfEsI1dh4aFKeRX7d8DmJtW3XhZf534dm9u7i8HARWtsSE4aZyv474d1wHNKy9WhhidcKg(uWZYok8)l98WyaiZflQE9ffgqLIrKCKiEHmPfPKRfP)3UO61xuyavkgLK5JYHMlwKsweZuD8XCr(n(O9r(noWmYm474d1wHNKy9WNxdFGuGpMlYVXhDgiTcpHp6mppHpYpgWst(kekEGuOzzpI0nB2QlQ2IKFm0zCAjiDI45DLJiDZMTk(OZaI24i8r(buWRHdmJ3aFhFO2k8KeRh(8A4dKc8XCr(n(OZaPv4j8rN55j8r(XawAYxHqXdKcnl7rKUzZwDr1wK8JHoJtlbPtepVRCePB2SvxuTfj)yijDppiBvHM3u5PrKUzZwfF0zarBCe(yEVq(buWRHdmJvhFhFO2k8KeRh(8A4dKc8XCr(n(OZaPv4j8rN55j8bQrEVimGkfWbx2sbKmWIQyrvHp6mGOnocFGKbYwv0PAzWzas44JNLfhygzw8D8HARWtsSE4ZRHpqkWhZf534JodKwHNWhDMNNWNPxKgijymGKNvO9kiGiBwEy(9IQxFra(MyFGkncfzdfpRikjbKVfAGKGbbHdI5YNAAKCrZSOAlYt6i)IQ4Arvx)xuTf5(3lFf9q7vqar2S8W87bV2IQxFrtVipPJ8lsjlQ66)IQxFrkDrAGKGXasEwH2RGaISz5H53lQ2Iu6Ia8nX(avAekYgkEwrusciFl0ajbdccheZLp10i5IMzr1wK7FV8v0dDFkfeGxlYVh8A4JodiAJJWhTu8aHowbKP2jCFlZi)ghyg1x474d1wHNKy9WhhidcKg(uWZYo09PK9bCdEn8XCr(n(WMaQW)Vehyg1F8D8XCr(n(uqaibMnBv8HARWtsSE4aZy1gFhFmxKFJp(uTmGIPQ8svoQd8HARWtsSE4aZ4KBX3XhQTcpjX6Hpoqgein8PGNLDO7tj7d4g8A4J5I8B8XAhbdG5foZ7XbMXjtW3XhZf534tHPkEwras3Sq8HARWtsSE4aZ4KQW3XhQTcpjX6HpMlYVXhN59cZf53cFcd8XNWq0ghHpofoCGzCcZGVJpuBfEsI1dFmxKFJpa(wyUi)w4tyGp(egI24i8HZYgh4aF0aK75kSaFhZ4e8D8HARWtsSE4JdKbbsdFu6Ik4zzhWst(kyFa3GxdFmxKFJpWst(kyFahoWmwf(o(qTv4jjwp8PnocFSBcwAadky)oepRq7vqa8XCr(n(y3eS0aguW(DiEwH2RGa4aZiZGVJpuBfEsI1dFEn8bsb(yUi)gF0zG0k8e(OZ88e(mbF0zarBCe(WLTuajdiC8XZYIdmJ3aFhFmxKFJp6moTeKor88Us8HARWtsSE4ah4JtHdFhZ4e8D8HARWtsSE4dpKekktpjCgmYwfZ4e8XCr(n(ajdKTQOt1YGZae(4yY5jryavkGygNGpoqgein8z6fPZaPv4PbKmq2QIovldodqchF8SSlQ2Iu6I0zG0k80qlfpqOJvazQDc33YmYVx0mlQE9fn9IKFmGLM8viu8aPqZYEaiwablTcpTOAlcQrEVimGkfWbx2sbKmWIQyrtw0m4aZyv474d1wHNKy9WhEijuuMEs4myKTkMXj4J5I8B8bsgiBvrNQLbNbi8XXKZtIWaQuaXmobFCGmiqA4tyEQJbKmq2QIovldodqdQTcpjxuTfj)yaln5RqO4bsHML9aqSacwAfEAr1weuJ8EryavkGdUSLcizGfvXIQchygzg8D8HARWtsSE4Z3EMeofo8zc(yUi)gF4Ywkk8gmWboWhNeIVJzCc(o(qTv4jjwp8XbYGaPHpf8SSdDFkzFa3GxdFmxKFJpAVcciYMLhMFJdmJvHVJpuBfEsI1dFCGmiqA4dGVj2hOsdiPvYFtqHg4DEJZI87bXC5tnnsUOAlA6ffgqLIrcfMuUO61xKKk4zzhodgzRoaK5Ifnd(yUi)gFGPNAhHdmJmd(o(yUi)gFynsOYBazAneFO2k8KeRhoWmEd8D8HARWtsSE4JdKbbsdFYgADgmTiLSOQ9TlQ2IMEr6mqAfEAyEVq(buWRTO61xubpl7q3Ns2hWn41w0m4J5I8B8HlBPQXrqCGzS6474d1wHNKy9WhhidcKg(aSukiDuhdtkHJSxuflQQBXhZf534dFx(EMe9RZWbMrMfFhFO2k8KeRh(4azqG0WhLUOcEw2HUpLSpGBWRTOAlsPlY9Vx(k6HUpLccWRf53dETfvBrqnY7fHbuPao4YwkGKbwuflAYIQTiLUOW8uhdizGSvfDQwgCgGguBfEsUO61x00lQGNLDO7tj7d4g8AlQ2IGAK3lcdOsbCWLTuajdSiLSOQwuTfP0ffMN6yajdKTQOt1YGZa0GARWtYfnZIQxFrtVOcEw2HUpLSpGBWRTOAlkmp1XasgiBvrNQLbNbOb1wHNKlAg8XCr(n(u8FlEwruscd6OwssCGzuFHVJpuBfEsI1dFmxKFJpoZ7fMlYVf(eg4JpHHOnocFiiKAhbXbMr9hFhFmxKFJp8qsKbXbXhQTcpjX6HdCGpf)347ygNGVJpuBfEsI1dFCGmiqA4duJ8EryavkGdUSLcizGfPKRfXm4J5I8B8XGoQLKuu4nyGdmJvHVJpuBfEsI1dFCGmiqA4Z0lcQrEVimGkfWbx2sbKmWIQyrvTOAlkmp1XasgiBvrNQLbNbOb1wHNKlQE9fn9IGAK3lcdOsbCWLTuajdSOkw0KfvBrkDrH5PogqYazRk6uTm4manO2k8KCrZSOzwuTfb1iVxegqLc4WGoQLKu0VoBrvSOj4J5I8B8XGoQLKu0Vodh4aF4SSX3XmobFhFmxKFJpW0tTJWhQTcpjX6HdmJvHVJpuBfEsI1dFCGmiqA4tbpl7O4)w8SIOKeg0rTKKdEn8bgG0fygNGpMlYVXhN59cZf53cFcd8XNWq0ghHpf)34aZiZGVJpMlYVXhzc1iVGZuth(qTv4jjwpCGz8g474d1wHNKy9WhhidcKg(OZaPv4PHwkEGqhRaYu7eUVLzKFVOAlkBO1zW0IQ4Ar34w8XCr(n(O7tPGa8Ar(noWmwD8D8HARWtsSE4JdKbbsdFk4zzhSgju5nGmTgo41wuTfP0fjPcEw2HcGfLS8EbRrGKg8A4J5I8B8bwAYxHqXdKcnlBCGzKzX3XhQTcpjX6HpMlYVXhN59cZf53cFcd8XNWq0ghHpojehyg1x474d1wHNKy9WhhidcKg(eMN6yajdKTQOt1YGZa0GARWtYfvBrqnY7fHbuPao4YwkGKbwuflA6fPZaPv4Pbx2sbKmGWXhpl7IuErtw0mlQ2Iu6IKFmGLM8viu8aPqZYEePB2SvxuTfP0f5(3lFf9GlBzb1scm41WhZf534dx2sbKmaoWmQ)474d1wHNKy9WhZf534J04AlYVXhhidcKg(O0fPZaPv4PH59c5hqbVg(4yY5jryavkGygNGdmJvB8D8HARWtsSE4JdKbbsdFYgADgmTiLCTi9V6lQ2IMErtVOW8uhJs(wLazRk09PCqTv4j5IQTiOg59IWaQuahCzlfqYalsjlQ6lAMfvV(IGAK3lcdOsbCWLTuajdSORfnzrZGpMlYVXhDFkffVpWbMXj3IVJpuBfEsI1dFmxKFJpss3ZdYwvO5nvEcFCGmiqA4Z0lcqSacwAfEAr1RVOSHwNbtlQIfPVQ(IMzr1wKsxKodKwHNgAP4bcDScitTt4(wMr(9IQTOPxKsxuyEQJbKmq2QIovldodqdQTcpjxu96lA6ffMN6yajdKTQOt1YGZa0GARWtYfvBrkDr6mqAfEAajdKTQOt1YGZaKWXhpl7IMzrZGpoMCEsegqLciMXj4aZ4Kj474d1wHNKy9WhhidcKg(a1iVxegqLc4GlBPasgyrkzrtVOBSiLxK7BjFgdzcHFBDiix5tWb1wHNKlAMfvBrzdTodMwKsUwK(xD8XCr(n(O7tPO49boWmoPk8D8HARWtsSE4J5I8B8bwAYxHqXdKcjzrj(4azqG0WNWaQumkjZhLdnxSiLSOQUDr1RVOPxKgfd2KA5WCrQJwuTfb4BI9bQ0awAYxbR34iHgiHCdI5YNAAKCrZGpoMCEsegqLciMXj4aZ4eMbFhFO2k8KeRh(yUi)gFG8aa1sciIxWzYMGq8XbYGaPHpHbuPyejhjIxitArkzrvv9fvBrf8SSdDFkzFa3q(kA8XXKZtIWaQuaXmobhygNCd8D8HARWtsSE4JdKbbsdFKFm0zCAjiDI45DLJiDZMT6IQTOPx00lkmp1XasgiBvrNQLbNbOb1wHNKlQ2IGAK3lcdOsbCWLTuajdSOkw00lsNbsRWtdUSLcizaHJpEw2fP8IMSOzw0mlQE9fj)yaln5RqO4bsHML9is3SzRUOzWhZf534dx2YcQLeahygNuD8D8HARWtsSE4JdKbbsdF0zG0k80W8EH8dOGxBr1wKsxubpl7q3Ns2hWn41wuTffgqLIrKCKiEHmPfvXIUb(yUi)gF09PuepaqDGdmJtyw8D8HARWtsSE4JdKbbsdFa8nX(avAOzzxaiBwci0GMNBqmx(utJKlQ2I0zG0k80q(buWRTOAlkmGkfJi5ir8cnxiQ62fvXIMErU)9YxrpGLM8viu8aPqswuoK8alYVxKYls1jx0m4J5I8B8bwAYxHqXdKcjzrjoWmorFHVJpuBfEsI1dFCGmiqA4duJ8EryavkGdyPjFfchWGLl6ArtwuTfn9IC)7LVIEaln5Rq4agSC4knGkbx01IyMfvV(IKubpl7awAYxHWbmyPqsf8SSdETfvV(ImxKFpGLM8viCadwoYwW6t1Yyr1RVOWaQumIKJeXlKjTiLSi3)E5ROhWst(keoGblhS8EVaqUsdOsIi5OfnZIQTiGLsbPJ6yysjCK9IQyrmZT4J5I8B8bwAYxHWbmyjoWmor)X3XhQTcpjX6Hpoqgein8byPuq6OogMuchzVOkweZC7IQTiOg59IWaQuahWst(keoGblxuflAc(yUi)gFGLM8viCadwIdmJtQ2474d1wHNKy9WhZf534dx2sbKma(KDqaaVwisw8js3SWkUQcFYoiaGxlejhhjtli8zc(4azqG0WhOg59IWaQuahCzlfqYalQIfPZaPv4Pbx2sbKmGWXhpl7IQTOcEw2H0aZkIYNxTmGdEn8XvAzJptWbMXQUfFhFO2k8KeRh(yUi)gF4Ywky9gt4t2bba8AHizXNiDZcR4QQAU)9Yxrp09Puu8(yWRHpzheaWRfIKJJKPfe(mbFCGmiqA4tbpl7qAGzfr5ZRwgWbV2IQTiDgiTcpnKFaf8A4JR0YgFMGdmJvnbFhFO2k8KeRh(4azqG0WhDgiTcpnKFaf8AlQ2IawkfKoQJb3RJ4OogzVOkwKZGHisoArkVOBhvFr1weuJ8EryavkGdUSLcizGfPKfDd8XCr(n(WLTuu4nyGdmJvvf(o(qTv4jjwp8XCr(n(OZ40sq6eXZ7kXhhidcKg(aiwablTcpTOAlkmGkfJi5ir8czslQIfXSlQE9fn9IcZtDm4sibyAqTv4j5IQTi5hdyPjFfcfpqk0SShaIfqWsRWtlAMfvV(Ik4zzh8nlpWNTQqAGzBcch8A4JJjNNeHbuPaIzCcoWmwfZGVJpuBfEsI1dFCGmiqA4dGybeS0k80IQTOWaQumIKJeXlKjTOkw0nwuTfP0ffMN6yWLqcW0GARWtYfvBrH5PogAqMCLPt4ZE2b1wHNKlQ2IGAK3lcdOsbCWLTuajdSOkwuv4J5I8B8bwAYxHqXdKcnlBCGzSQBGVJpuBfEsI1dFmxKFJpWst(kekEGuOzzJpoqgein8bqSacwAfEAr1wuyavkgrYrI4fYKwufl6glQ2Iu6IcZtDm4sibyAqTv4j5IQTiLUOPxuyEQJbKmq2QIovldodqdQTcpjxuTfb1iVxegqLc4GlBPasgyrvSOPxKodKwHNgCzlfqYachF8SSls5fnzrZSOzwuTfn9Iu6IcZtDm0Gm5ktNWN9SdQTcpjxu96lA6ffMN6yObzYvMoHp7zhuBfEsUOAlcQrEVimGkfWbx2sbKmWIuY1IQArZSOzWhhtopjcdOsbeZ4eCGzSQQJVJpuBfEsI1dFmxKFJpCzlfqYa4t2bba8AHizXNiDZcR4Qk8j7GaaETqKCCKmTGWNj4JdKbbsdFGAK3lcdOsbCWLTuajdSOkwKodKwHNgCzlfqYachF8SS4JR0YgFMGdmJvXS474d1wHNKy9WhZf534dx2sbR3ycFYoiaGxlejl(ePBwyfxvvZ9Vx(k6HUpLII3hdEn8j7GaaETqKCCKmTGWNj4JR0YgFMGdmJvPVW3XhZf534dS0KVcHIhifAw24d1wHNKy9WboWb(OJaW8BmJvDBv3o52jmd(OWaD2Qq8H5Nt7bbjxK(ArMlYVxKpHbCSZXhOg5Wmwv11F8rd8SPNWNPSOtPjFflsFajbJD(uweZZfFbbw0KBWWIQ62QUDNVZNYIM6t1KJpi5Iki2hqlY9CfwSOcsnB4yrtfNJ0c4I6V13xAaowE)ImxKFdx03EMg7CZf53WHgGCpxHfkFvjS0KVc2hWXqYEP0cEw2bS0KVc2hWn4125MlYVHdna5EUclu(QsEijYG4yOno6YUjyPbmOG97q8ScTxbb25MlYVHdna5EUclu(QsDgiTcpXqBC0fx2sbKmGWXhplldV2fKcg0zEE6AYo3Cr(nCObi3ZvyHYxvQZ40sq6eXZ7k3578PSOP(un54dsUishbyArrYrlkkPfzU4blkHlY0zP3k80yNBUi)gEbtp1oANBUi)gQ8vLAFKFZqYEvWZYok8)l98WyaiZf1RhgqLIrKCKiEHmjLCP)3wVEyavkgLK5JYHMlucZu9DU5I8BOYxvQZaPv4jgAJJUKFaf8Am8AxqkyqN55Pl5hdyPjFfcfpqk0SShr6MnB1AYpg6moTeKor88UYrKUzZwDNBUi)gQ8vL6mqAfEIH24OlZ7fYpGcEngETlifmOZ880L8JbS0KVcHIhifAw2JiDZMTAn5hdDgNwcsNiEEx5is3SzRwt(Xqs6EEq2QcnVPYtJiDZMT6o3Cr(nu5Rk1zG0k8edTXrxqYazRk6uTm4majC8XZYYWRDbPGbDMNNUGAK3lcdOsbCWLTuajdurv78PSiMJbsRWtlk(fbvKHRCrfuOGOErqMAx2QlY9Vx(k6fXdnvArXVi95vqGfX83S8W87f9GfXC(uUOPoGxlYVxKK0OwMT6IuusrjbwKgijyiGKNvO9kiGiBwEy(9Is4IYEr8qArpyrkOfj)wFlwuPPJwK2RGalkBwEy(9I8KbAso25MlYVHkFvPodKwHNyOno6slfpqOJvazQDc33YmYVz41UGuWGoZZtxtRbscgdi5zfAVcciYMLhMFxVoGVj2hOsJqr2qXZkIssa5BHgijyqq4GyU8PMgjNPMN0r(kUQU(xZ9Vx(k6H2RGaISz5H53dET61N2t6iVsQU(xVUs1ajbJbK8ScTxbbezZYdZVRPuaFtSpqLgHISHINveLKaY3cnqsWGGWbXC5tnnsotn3)E5ROh6(ukiaVwKFp4125MlYVHkFvjBcOc))sgs2RcEw2HUpLSpGBWRTZnxKFdv(QYccajWSzRUZnxKFdv(QsFQwgqXuvEPkh1Xo3Cr(nu5RkT2rWayEHZ8Egs2RcEw2HUpLSpGBWRTZnxKFdv(QYctv8SIaKUzH7CZf53qLVQ0zEVWCr(TWNWGH24OlNc3o3Cr(nu5Rkb8TWCr(TWNWGH24Olol7D(o3Cr(nC4KWlTxbbezZYdZVzizVk4zzh6(uY(aUbV2o3Cr(nC4KqLVQeMEQDedj7fGVj2hOsdiPvYFtqHg4DEJZI87bXC5tnnswB6WaQumsOWKY61Lubpl7WzWiB1bGmxmZo3Cr(nC4KqLVQK1iHkVbKP1WDU5I8B4WjHkFvjx2svJJGmKSxzdTodMus1(2AtRZaPv4PH59c5hqbVw96f8SSdDFkzFa3GxBMDU5I8B4WjHkFvjFx(EMe9RZyizVawkfKoQJHjLWr2vu1T7CZf53WHtcv(QYI)BXZkIssyqh1ssYqYEP0cEw2HUpLSpGBWRvtPU)9Yxrp09PuqaETi)EWRvdQrEVimGkfWbx2sbKmqftQP0W8uhdizGSvfDQwgCgGguBfEswV(0f8SSdDFkzFa3GxRguJ8EryavkGdUSLcizaLuvnLgMN6yajdKTQOt1YGZa0GARWtYzQxF6cEw2HUpLSpGBWRvlmp1XasgiBvrNQLbNbOb1wHNKZSZnxKFdhoju5RkDM3lmxKFl8jmyOno6IGqQDeCNpLfvneRX7JfXAEFH5MDrSpyr8qRWtlkdIdQFw0ndPf99IC)7LVIESZnxKFdhoju5Rk5HKidIdUZ35MlYVHJI)7ld6OwssrH3Gbdj7fuJ8EryavkGdUSLcizaLCXm7CZf53WrX)TYxvAqh1ssk6xNXqYEnnuJ8EryavkGdUSLcizGkQQwyEQJbKmq2QIovldodqdQTcpjRxFAOg59IWaQuahCzlfqYavmPMsdZtDmGKbYwv0PAzWzaAqTv4j5mZudQrEVimGkfWHbDuljPOFDwft257CZf53WbbHu7i4fhX9aMepRWZ7sPqciJdUZnxKFdheesTJGkFvzH)FP4zfrjjOM4yANBUi)goiiKAhbv(QsvEditRfpRWUjc8r5o3Cr(nCqqi1ocQ8vLSVJhssHDteidsuqghdj7fuJ8EryavkGdUSLcizGkUQQEDGLsbPJ6yysjCKDfm7T7CZf53WbbHu7iOYxvQXdswMYwvu4nyWqYEb1iVxegqLc4GlBPasgOIRQQxhyPuq6OogMuchzxbZE7o3Cr(nCqqi1ocQ8vLUVDuhaliPG1BCed(SjHtEXSmKSxrYrk5AYT1RZY79ca5knGkjIKJuIQtwVEyavkgrYrI4fYKus135MlYVHdccP2rqLVQeKAAEsKTaQzoANBUi)goiiKAhbv(QsazAzRky9ghb35MlYVHdccP2rqLVQuXd8sDu2cab)2AhTZnxKFdheesTJGkFvzusc(U45BPG9boANVZNYIUziTOdzGSvxeJPAzWzaArj7Iy65xKI07xuzglI6NxTCrHbuPaUiRLlsFEfeyrm)nlpm)ErwlxeZ5tj7d4wKbOf1FSiazsMyyrpyrXViaXciy5Iovl9J(SOVxuO4x0dwe3dOffgqLc4yNBUi)goCkCxqYazRk6uTm4maXapKekktpjCgmYw9AcdoMCEsegqLc41egs2RP1zG0k80asgiBvrNQLbNbiHJpEw2AkvNbsRWtdTu8aHowbKP2jCFlZi)EM61Nw(XawAYxHqXdKcnl7bGybeS0k8unOg59IWaQuahCzlfqYavmzMD(uw0P8bXI0VjWXNXIoKbYwDrmMQLbNbOf5(wMr(9IIFrZsK2Iovl9J(SiETfL9IMk)uFNBUi)goCkCkFvjKmq2QIovldodqmWdjHIY0tcNbJSvVMWGJjNNeHbuPaEnHHK9kmp1XasgiBvrNQLbNbOb1wHNK1KFmGLM8viu8aPqZYEaiwablTcpvdQrEVimGkfWbx2sbKmqfvTZNYI(2ZKWPWTioBwcUOOKwK5I87f9TNPfXdTcpTijpiB1f5kTUjF2QlYA5I6pwKbxKTiaPY7nWImxKFp25MlYVHdNcNYxvYLTuu4nyWW3EMeofURj78DU5I8B4GGqQDe8IJ4EatINv45DPuibKXb35MlYVHdccP2rqLVQSW)Vu8SIOKeutCmTZnxKFdheesTJGkFvPkVbKP1INvy3eb(OCNBUi)goiiKAhbv(Qs23XdjPWUjcKbjkiJJHK9cQrEVimGkfWbx2sbKmqfxvvVoWsPG0rDmmPeoYUcM92DU5I8B4GGqQDeu5Rk14bjltzRkk8gmyizVGAK3lcdOsbCWLTuajduXvv1RdSukiDuhdtkHJSRGzVDNBUi)goiiKAhbv(Qs33oQdGfKuW6noIbF2KWjVywgs2Ri5iLCn5261z59EbGCLgqLerYrkr1jRxpmGkfJi5ir8czskP67CZf53WbbHu7iOYxvcsnnpjYwa1mhTZnxKFdheesTJGkFvjGmTSvfSEJJG7CZf53WbbHu7iOYxvQ4bEPokBbGGFBTJ25MlYVHdccP2rqLVQmkjbFx88TuW(ahTZ35MlYVHdol7ly6P2r7CZf53WbNLTYxv6mVxyUi)w4tyWqBC0vX)ndWaKU4Acdj7vbpl7O4)w8SIOKeg0rTKKdETDU5I8B4GZYw5RkLjuJ8cotnD78PSOdtTBr8AlI58PK9bClYA5I0NxbbweZFZYdZVxK(9FV8v0WfzTCrp7I4HzRUiMpFWCwK2)(fLn06myArfe7dOf5myKT6yNBUi)go4SSV09PuqaETi)MHK9sNbsRWtdTu8aHowbKP2jCFlZi)Uw2qRZGPkUUXT78PSOPMnlTiipGwetp)I04JfXRTOt1s)OplAQCMk6ZI(ErrjTOWaQuSOKDrvlGfLS8(fnvXiqslkHT(wSiZfPoASZnxKFdhCw2kFvjS0KVcHIhifAw2mKSxf8SSdwJeQ8gqMwdh8A1uQKk4zzhkawuYY7fSgbsAWRTZnxKFdhCw2kFvPZ8EH5I8BHpHbdTXrxojCNpLfPVlvlxK(aYhKbtlAQLTCrhYalYCr(9IIFraIfqWYfvn)D4IuKr5IoKbYwDrmMQLbNbODU5I8B4GZYw5Rk5YwkGKbyizVcZtDmGKbYwv0PAzWzaAqTv4jznOg59IWaQuahCzlfqYavmTodKwHNgCzlfqYachF8SSkpzMAkv(XawAYxHqXdKcnl7rKUzZwTMsD)7LVIEWLTSGAjbg8A78PSi9bqSeyrXViEiTOQX4AlYVx0u5mv0NfLSlYAMwu183xucxu)XI41g7CZf53WbNLTYxvknU2I8BgCm58KimGkfWRjmKSxkvNbsRWtdZ7fYpGcETD(uw0ndPfXC(uUi9EFSilwuzQwsGfPbYhKbtlsrgLlsFhFRsGSvxeZ5t5I41wu8l6glkmGkfqgw0dw0hLeyrH5PoGl67fDUp25MlYVHdolBLVQu3NsrX7dgs2RSHwNbtk5s)RETPNomp1XOKVvjq2QcDFkhuBfEswdQrEVimGkfWbx2sbKmGsQ(m1Rd1iVxegqLc4GlBPasg4AYm78PSOQ5B9Tyr8qArvdP75bzRUi9XBQ80Is2fX0ZViN1lsLIfLD8lI58PK9bClkByqMKHf9GfLSl6qgiB1fXyQwgCgGwucxuyEQdsUiRLlsr69lQmJfr9ZRwUOWaQuah7CZf53WbNLTYxvkjDppiBvHM3u5jgCm58KimGkfWRjmKSxtdiwablTcpvVE2qRZGPk0xvFMAkvNbsRWtdTu8aHowbKP2jCFlZi)U20knmp1XasgiBvrNQLbNbOb1wHNK1RpDyEQJbKmq2QIovldodqdQTcpjRPuDgiTcpnGKbYwv0PAzWzas44JNLDMz25tzr3mKweZrVf99I0VvZIs2fX0ZVi536BXIAIKlk(f5mySOQH098GSvxK(4nvEIHfzTCrrjbOfzaArEccxuuA9IUXIcdOsbCrpFSOPR(IuKr5ICFl5ZyMXo3Cr(nCWzzR8vL6(ukkEFWqYEb1iVxegqLc4GlBPasgqjtFdLDFl5Zyiti8BRdb5kFcoO2k8KCMAzdTodMuYL(x9D(uw0ndPfDkn5RyrvRhi1plQAilkxuYUOOKwuyavkwucxKv88XIIFrYKw0dwetp)IknD0IoLM8vW6noAr6diHClIyU8PMgjxKImkx0ulBzb1scSOhSOtPjFfSj1YfzUi1rJDU5I8B4GZYw5RkHLM8viu8aPqswuYGJjNNeHbuPaEnHHK9kmGkfJsY8r5qZfkPQBRxFAnkgSj1YH5IuhvdW3e7duPbS0KVcwVXrcnqc5geZLp10i5m78PSOBgsl6WdauljWIIFrtnt2eeUOVxKTOWaQuSOO0IfLWfP(zRUO4xKmPfzXIIsArGuTmwuKC0yNBUi)go4SSv(QsipaqTKaI4fCMSjiKbhtopjcdOsb8Acdj7vyavkgrYrI4fYKusvvVwbpl7q3Ns2hWnKVIENBUi)go4SSv(QsUSLfuljadj7L8JHoJtlbPtepVRCePB2SvRn90H5PogqYazRk6uTm4manO2k8KSguJ8EryavkGdUSLcizGkMwNbsRWtdUSLcizaHJpEwwLNmZm1Rl)yaln5RqO4bsHML9is3SzRoZoFkl6MH0IyoFkx09haOow03EMwuYUiZ7xu183HlYa0ImxK6OfzTCrrjTOWaQuSifFRVflsM0IK8GSvxuuslYvADt(Xo3Cr(nCWzzR8vL6(ukIhaOoyizVMWqYEPZaPv4PH59c5hqbVwnLwWZYo09PK9bCdETAHbuPyejhjIxitQIBSZNYIUziTOt1s)unlsrgLlsFSSlaKnlbwK(anp3I4BpbHlkkPffgqLIfPi9(fvqlQG8VIfv1TmFTOcI9b0IIsArU)9YxrVi3ZrWfvyUz35MlYVHdolBLVQewAYxHqXdKcjzrjdj7fGVj2hOsdnl7cazZsaHg08CdI5YNAAKSModKwHNgYpGcETAHbuPyejhjIxO5crv3wX0U)9YxrpGLM8viu8aPqswuoK8alYVvw1jNzNpLfDZqArM3VixPbuj4IE2fDkn5Ryr6xGblxu2lYwe4vSOVx0jBvpTOWaQuWWIEWIs2ffL0IkEiCrjCrwXZhlk(fjtASZnxKFdhCw2kFvjS0KVcHdyWsgs2lOg59IWaQuahWst(keoGblVMuBA3)E5ROhWst(keoGblhUsdOsWlMPEDjvWZYoGLM8viCadwkKubpl7GxREDZf53dyPjFfchWGLJSfS(uTmQxpmGkfJi5ir8czskX9Vx(k6bS0KVcHdyWYblV3laKR0aQKisoAMAalLcsh1XWKs4i7kyMB35tzr3mKw0P0KVIfPFbgSCrFVi9B1Si(2tq4IIscqlYa0ImPeUOSDpx2QJDU5I8B4GZYw5RkHLM8viCadwYqYEbSukiDuhdtkHJSRGzUTguJ8EryavkGdyPjFfchWGLvmzNpLfDZqArtTSLl6qgyrXVi33qEoArvJbMDr3lFE1YaUinW7Gl67fnvyEt9XIUZ8QgM3I0VFZMaUfLWffLjCrjCr2Ikt1scSinq(GmyArrP1lcqYpISvx03lAQW8M6lIV9eeUiPbMDrr5ZRwgWfLWfzfpFSO4xuKC0IE(yNBUi)go4SSv(QsUSLcizags2RjmKSxqnY7fHbuPao4YwkGKbQqNbsRWtdUSLcizaHJpEw2Af8SSdPbMveLpVAzah8Am4kTSVMWq2bba8AHi54izAbDnHHSdca41crYEfPBwyfxvTZNYIUziTOPw2YfnvXBmTO4xK7BiphTOQXaZUO7LpVAzaxKg4DWf99Io3hl6oZRAyEls)(nBc4wuYUOOmHlkHlYwuzQwsGfPbYhKbtlkkTEras(rKT6I4BpbHlsAGzxuu(8QLbCrjCrwXZhlk(ffjhTONp25MlYVHdolBLVQKlBPG1BmXqYEvWZYoKgywru(8QLbCWRvtNbsRWtd5hqbVgdUsl7RjmKDqaaVwisoosMwqxtyi7GaaETqKSxr6MfwXvv1C)7LVIEO7tPO49XGxBNpLfDN5vnmVfXCiqYY0IcdOsXICM2o3Cr(nCWzzR8vLCzlffEdgmKSx6mqAfEAi)ak41QbSukiDuhdUxhXrDmYUcNbdrKCKY3oQEnOg59IWaQuahCzlfqYak5g7CZf53WbNLTYxvQZ40sq6eXZ7kzWXKZtIWaQuaVMWqYEbiwablTcpvlmGkfJi5ir8czsvWS1RpDyEQJbxcjatdQTcpjRj)yaln5RqO4bsHML9aqSacwAfEAM61l4zzh8nlpWNTQqAGzBcch8A78PSOJg5sZVi33YmYVxu8lcgV2ICgmYwDrNQL(rFw03l6zz13hgqLc4Iuus9Iyt1YiB1fXml6blI7b0IGH5MLKlI7lGlYA5I4HzRUi9bYKRmDlI5t2ZUiRLlIrM39fn1sibyASZnxKFdhCw2kFvjS0KVcHIhifAw2mKSxaIfqWsRWt1cdOsXisoseVqMuf3OMsdZtDm4sibyAqTv4jzTW8uhdnitUY0j8zp7GARWtYAqnY7fHbuPao4YwkGKbQOQD(uweZ3ePTOt1s)OplIxBrFVidUioRzArHbuPaUidUiThcZcpXWIOPAhPflsrj1lInvlJSvxeZSOhSiUhqlcgMBwsUiUVaUifzuUi9bYKRmDlI5t2Zo25MlYVHdolBLVQewAYxHqXdKcnlBgCm58KimGkfWRjmKSxaIfqWsRWt1cdOsXisoseVqMuf3OMsdZtDm4sibyAqTv4jznLoDyEQJbKmq2QIovldodqdQTcpjRb1iVxegqLc4GlBPasgOIP1zG0k80GlBPasgq44JNLv5jZmtTPvAyEQJHgKjxz6e(SNDqTv4jz96thMN6yObzYvMoHp7zhuBfEswdQrEVimGkfWbx2sbKmGsUQAMz25MlYVHdolBLVQKlBPasgGHK9Acdj7fuJ8EryavkGdUSLcizGk0zG0k80GlBPasgq44JNLLbxPL91egYoiaGxlejhhjtlORjmKDqaaVwis2RiDZcR4QQDU5I8B4GZYw5Rk5Ywky9gtm4kTSVMWq2bba8AHi54izAbDnHHSdca41crYEfPBwyfxvvZ9Vx(k6HUpLII3hdETDU5I8B4GZYw5RkHLM8viu8aPqZYgh4aJb]] )
 
 
 end

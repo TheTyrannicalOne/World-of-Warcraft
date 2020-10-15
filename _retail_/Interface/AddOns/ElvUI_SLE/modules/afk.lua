@@ -49,7 +49,7 @@ end
 
 function S:Setup()
 	--Creating top panel
-	SS.Top = CreateFrame("Frame", nil, SS)
+	SS.Top = CreateFrame("Frame", nil, SS, 'BackdropTemplate')
 	SS.Top:SetFrameLevel(0)
 	SS.Top:SetWidth(GetScreenWidth() + (E.Border*2))
 
@@ -83,7 +83,8 @@ function S:Setup()
 	SS.ExPack:SetScript("OnClick", S.AbortAFK) --Allow to exit afk screen by clicking on the crest
 	SS.ExPack.texture = SS:CreateTexture(nil, 'OVERLAY')
 	SS.ExPack.texture:SetAllPoints(SS.ExPack)
-	SS.ExPack.texture:SetTexture([[Interface\Glues\Common\Glues-WoW-BattleforAzerothLogo.blp]])
+	SS.ExPack.texture:SetTexture(GetExpansionDisplayInfo(GetClientDisplayExpansionLevel()).logo)
+	-- SS.ExPack.texture:SetTexture([[Interface\Glues\Common\Glues-WoW-BattleforAzerothLogo.blp]])
 	-- SS.ExPack.texture:SetTexCoord(0, 1, 0, 0.25) --this was for legion logo
 	SS.FactCrest:SetTexture(CrestPath..E.myfaction)
 	SS.RaceCrest = SS:CreateTexture(nil, 'ARTWORK')
@@ -214,7 +215,7 @@ function S:Show()
 	SS.FactCrest:Point("CENTER", SS.Top, "BOTTOM", -(GetScreenWidth()/6) + S.db.crest.xOffset_faction, 0 + S.db.crest.yOffset_faction)
 	SS.RaceCrest:Point("CENTER", SS.Top, "BOTTOM", (GetScreenWidth()/6) + S.db.crest.xOffset_race, 0 + S.db.crest.yOffset_race)
 	SS.Date:Point("RIGHT", SS.Top, "RIGHT", -40 + S.db.date.xOffset, 10 + S.db.date.yOffset)
-	SS.PlayerInfo:Point("RIGHT", SS.TOP, "RIGHT", -(GetScreenWidth()/6), 0)
+	SS.PlayerInfo:Point("RIGHT", SS.Top, "RIGHT", -(GetScreenWidth()/6) + S.db.player.xOffset, 0 + S.db.player.yOffset)
 
 	--Resizing chat
 	SS.chat:SetHeight(SS.Top:GetHeight())

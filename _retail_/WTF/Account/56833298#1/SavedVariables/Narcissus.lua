@@ -6,9 +6,11 @@ NarcissusDB = {
 	["ShrinkArea"] = 0,
 	["ColorChoice"] = 0,
 	["Favorites"] = {
+		["FavoriteCreatureIDs"] = {
+		},
 		["FavoriteSpellVisualKitIDs"] = {
 		},
-		["FavoriteCreatureIDs"] = {
+		["FavoriteAnimationIDs"] = {
 		},
 	},
 	["IndependentMinimapButton"] = false,
@@ -23,16 +25,15 @@ NarcissusDB = {
 	["UseExitConfirmation"] = true,
 	["IsSortedByCategory"] = true,
 	["DetailedIlvlInfo"] = true,
-	["AutoPlayAnimation"] = true,
-	["AFKScreen"] = false,
 	["FontHeightItemName"] = 10,
-	["AFKAutoStand"] = false,
-	["CorruptionTooltip"] = false,
+	["AutoPlayAnimation"] = true,
+	["CameraTransition"] = true,
+	["AFKScreen"] = false,
 	["ShowMinimapButton"] = true,
-	["CameraSafeMode"] = true,
 	["FadeButton"] = false,
+	["CorruptionTooltip"] = false,
 	["BorderTheme"] = "Bright",
-	["EnableGrainEffect"] = false,
+	["CameraSafeMode"] = true,
 	["Tutorials"] = {
 		["ExitConfirmation"] = true,
 		["Movement"] = true,
@@ -43,24 +44,27 @@ NarcissusDB = {
 		["NPCBrowser"] = true,
 	},
 	["CameraOrbit"] = true,
+	["EnableGrainEffect"] = false,
 	["WeatherEffect"] = true,
-	["DressingRoomIncludeItemID"] = false,
-	["GemManager"] = true,
-	["ModelPanelScale"] = 1,
-	["TooltipTheme"] = "Dark",
+	["ShowFullBody"] = true,
 	["EyeColor"] = 1,
 	["LetterboxEffect"] = false,
+	["GemManager"] = true,
+	["ModelPanelScale"] = 1,
+	["DressingRoomIncludeItemID"] = false,
 	["LetterboxRatio"] = 2.35,
 	["EnableDoubleTap"] = false,
+	["TooltipTheme"] = "Dark",
+	["AlwaysShowModel"] = false,
 	["PhotoModeButton"] = {
 		["HideTexts"] = true,
 	},
-	["AlwaysShowModel"] = false,
-	["ShowFullBody"] = true,
-	["DefaultLayout"] = 2,
-	["Version"] = 10091,
 	["UseEntranceVisual"] = true,
 	["BaseLineOffset"] = 0,
+	["DefaultLayout"] = 2,
+	["Version"] = 10100,
+	["AFKAutoStand"] = false,
+	["AnchorToMinimap"] = true,
 	["FadeMusic"] = true,
 	["MinimapButton"] = {
 		["Position"] = 2.617993877991494,
@@ -76,3 +80,14 @@ NarciCreatureOptions = {
 	["Languages"] = {
 	},
 }
+NarciAchievementOptions = {
+	["DIY"] = {
+	},
+	["Scale"] = 1,
+	["UsedAsPrimary"] = true,
+	["Theme"] = 1,
+	["IncompleteFirst"] = true,
+}
+NarciStatisticsDB = {
+}
+NarciDevToolOutput = nil

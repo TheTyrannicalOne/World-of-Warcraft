@@ -1,10 +1,10 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: Ackis Recipe List: Alchemy
 ## Notes: Alchemy data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 8.3.0.1
-## X-Revision: 078f3a8
-## X-Date: 2020-01-14T22:34:41Z
+## Version: 9.0.1
+## X-Revision: 8ff83a3
+## X-Date: 2020-10-13T17:49:04Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

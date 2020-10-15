@@ -1,12 +1,12 @@
-tag aa9a1c04ded58646810a1314113d55ecba5df1b4 8.2.5.1
+tag 39a6d13328f4840ef4acc8971abee221b201e9e6 9.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Thu Jan 9 23:57:51 2020 -0500
+Date:	Tue Oct 13 14:04:22 2020 -0400
 
-8.2.5.1 update
+9.0. update - includes scans of older vendors
 
-commit 8a4c33ee30c22b3aa63a232d4c4c5d91e5f76d1d
+commit 6d756bce6d98cda7631f1a4395558c978919abff
 Author: Ressy <resa1983@hotmail.com>
-Date:   Thu Jan 9 23:57:17 2020 -0500
+Date:   Tue Oct 13 13:54:18 2020 -0400
 
-    Verification of db - went and scanned tons of vendors and trainers
+    9.0 update
 

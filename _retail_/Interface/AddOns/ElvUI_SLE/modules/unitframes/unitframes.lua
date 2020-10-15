@@ -1,7 +1,7 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local UF = E:GetModule('UnitFrames');
-local SUF = SLE:NewModule("UnitFrames", "AceEvent-3.0")
-
+local SUF = SLE:NewModule('UnitFrames', 'AceHook-3.0', 'AceEvent-3.0', 'AceTimer-3.0')
+SUF.CreatedShadows = {}
 --GLOBALS: hooksecurefunc, CreateFrame
 
 local function UpdateAuraTimer(self, elapsed)
@@ -28,12 +28,48 @@ local function UpdateAuraTimer(self, elapsed)
 	end
 end
 
+function SUF:UpdateUnitFrames()
+	--* Groups Folder
+	SUF:InitArena()
+	SUF:InitBoss()
+	SUF:InitParty()
+	SUF:InitRaid()
+	SUF:InitRaid40()
+
+	--* Units Folder
+	SUF:InitFocus()
+	SUF:InitFocusTarget()
+	SUF:InitPet()
+	SUF:InitPetTarget()
+	SUF:InitPlayer()
+	SUF:InitTarget()
+	SUF:InitTargetTarget()
+	SUF:InitTargetTargetTarget()
+end
+
+function SUF:UpdateShadows()
+	if UnitAffectingCombat('player') then SUF:RegisterEvent('PLAYER_REGEN_ENABLED', SUF.UpdateShadows) return end
+	SUF:UnregisterEvent('PLAYER_ENTERING_WORLD')
+
+	for frame, _ in pairs(SUF.CreatedShadows) do
+		SUF:UpdateShadowColor(frame)
+	end
+end
+
+function SUF:UpdateShadowColor(shadow)
+	local db = E.db.sle.shadows
+	local r, g, b = db.shadowcolor.r, db.shadowcolor.g, db.shadowcolor.b
+	shadow:SetBackdropColor(r, g, b, 0)
+	shadow:SetBackdropBorderColor(r, g, b, 0.9)
+end
+
 function SUF:Initialize()
 	if not SLE.initialized or not E.private.unitframe.enable then return end
 	--DB convert
 	if E.private.sle.unitframe.resizeHealthPrediction then E.private.sle.unitframe.resizeHealthPrediction = nil end
 
-	-- SUF:InitPlayer()
+	-- Init and Update Unitframe Stuff which is shadows atm
+	SUF:UpdateUnitFrames()
 
 	--Raid stuff
 	SUF.specNameToRole = {}
@@ -69,6 +105,7 @@ function SUF:Initialize()
 	function SUF:ForUpdateAll()
 		SUF:SetRoleIcons()
 		if E.private.sle.unitframe.statusbarTextures.power then SUF:BuildStatusTable() end
+		if E.private.sle.module.shadows.enable then SUF:UpdateUnitFrames() end
 	end
 end
 

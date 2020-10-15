@@ -210,7 +210,6 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
-			["MainWindowVis"] = false,
 		},
 		["Shimzo - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,

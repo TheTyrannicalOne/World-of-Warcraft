@@ -59,6 +59,8 @@ function module:InitializeTrainers()
 	AddTrainer(100538, "Timothy Jones",		Z.AZSUNA,		46.7, 41.4, "Neutral")
 	AddTrainer(122695, "Seshuli", 			Z.DAZARALOR, 		47.02, 37.88, "Horde")
 	AddTrainer(130368, "Samuel D. Colton III",	Z.BORALUS,		75.0, 10.0, "Alliance")
+	AddTrainer(156670, "Appraiser Au'vesk", 	Z.ORIBOS, 		35.7, 41.9, "Neutral")
+
 
 	self.InitializeTrainers = nil
 end

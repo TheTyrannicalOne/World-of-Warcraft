@@ -36,6 +36,8 @@ module.ITEM_FILTER_TYPES = {
 	INSCRIPTION_RESEARCH = true,
 	INSCRIPTION_VANTUS_RUNE = true,
 	INSCRIPTION_WAND = true,
+	INSCRIPTION_REAGENT = true,
+	INSCRIPTION_HEAD = true,
 }
 
 function module:InitializeItemFilters(parent_panel)
@@ -53,10 +55,11 @@ function module:InitializeItemFilters(parent_panel)
 	addon.SetTooltipScripts(armor_toggle, L["GROUP_TOGGLE_FORMAT"]:format(_G.ARMOR))
 
 	local armor_types = {
-		inscription_off_hand	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.SECONDARYHANDSLOT),	text = _G.SECONDARYHANDSLOT,	row = 1, col = 1 },
-		inscription_staff	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Staff"]), 		text = L["Staff"],		row = 1, col = 2 },
-		inscription_wand	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Wand"]), 		text = L["Wand"],		row = 2, col = 1 },
-		inscription_trinket	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_TRINKET),	text = _G.INVTYPE_TRINKET,	row = 2, col = 2 },
+		inscription_head 	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_HEAD),	text = _G.INVTYPE_HEAD,		row = 1, col = 1 },
+		inscription_off_hand	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.SECONDARYHANDSLOT),	text = _G.SECONDARYHANDSLOT,	row = 1, col = 2 },
+		inscription_staff	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Staff"]), 		text = L["Staff"],		row = 2, col = 1 },
+		inscription_wand	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Wand"]), 		text = L["Wand"],		row = 2, col = 2 },
+		inscription_trinket	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_TRINKET),	text = _G.INVTYPE_TRINKET,	row = 3, col = 1 },
 	}
 
 	armor_toggle:SetScript("OnClick", function(self, button)
@@ -96,7 +99,7 @@ function module:InitializeItemFilters(parent_panel)
 	general_toggle:SetNormalFontObject("QuestTitleFont")
 	general_toggle:SetHighlightFontObject("QuestTitleFontBlackShadow")
 	general_toggle:SetText(_G.GENERAL .. ":")
-	general_toggle:SetPoint("TOP", armor_panel, "BOTTOM", 0, 0)
+	general_toggle:SetPoint("TOP", armor_panel, "BOTTOM", 0, -10)
 	general_toggle:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
 	addon.SetTooltipScripts(general_toggle, L["GROUP_TOGGLE_FORMAT"]:format(_G.GENERAL))
@@ -111,6 +114,7 @@ function module:InitializeItemFilters(parent_panel)
 		inscription_research		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Research"]),		text = L["Research"],		row = 4, col = 1 },
 		inscription_scroll		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Scroll"]), 		text = L["Scroll"],		row = 4, col = 2 },
 		inscription_relic		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_RELIC), 	text = _G.INVTYPE_RELIC,	row = 5, col = 1 },
+		inscription_reagent		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Crafting Reagent"]), text = L["Crafting Reagent"],	row = 5, col = 2 },
 	}
 
 	general_toggle:SetScript("OnClick", function(self, button)

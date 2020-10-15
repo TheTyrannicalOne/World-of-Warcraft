@@ -14,6 +14,7 @@ local FindUnitBuffByID, FindUnitDebuffByID = ns.FindUnitBuffByID, ns.FindUnitDeb
 local GetItemInfo = ns.CachedGetItemInfo
 local GetResourceInfo, GetResourceKey = ns.GetResourceInfo, ns.GetResourceKey
 local RegisterEvent = ns.RegisterEvent
+local RegisterUnitEvent = ns.RegisterUnitEvent
 
 local formatKey = ns.formatKey
 local getSpecializationKey = ns.getSpecializationKey
@@ -47,7 +48,7 @@ local specTemplate = {
     nameplateRange = 8,
 
     petbased = false,
-
+    
     damage = true,
     damageExpiration = 8,
     damageDots = false,
@@ -147,7 +148,11 @@ local HekiliSpecMixin = {
 
         if r.state.regenModel then
             for _, v in pairs( r.state.regenModel ) do
-                v.resource = v.resoure or resource
+                v.resource = v.resource or resource
+
+                if v.aura then
+                    self.resourceAuras[ v.aura ] = resource
+                end
             end
         end
 
@@ -397,7 +402,7 @@ local HekiliSpecMixin = {
     
     RegisterHook = function( self, hook, func )
         self.hooks[ hook ] = self.hooks[ hook ] or {}
-        self.hooks[ hook ] = setfenv( func, state )
+        insert( self.hooks[ hook ], setfenv( func, state ) )
     end,
 
     RegisterAbility = function( self, ability, data )
@@ -608,6 +613,15 @@ local HekiliSpecMixin = {
             end
         end
 
+        if a.rangeSpell and type( a.rangeSpell ) == "number" then
+            local spell = Spell:CreateFromSpellID( a.rangeSpell )
+            if not spell:IsSpellEmpty() then
+                spell:ContinueOnSpellLoad( function ()
+                    a.rangeSpell = spell:GetSpellName()
+                end )
+            end
+        end
+
         self.abilities[ ability ] = a
         self.abilities[ a.id ] = a
 
@@ -623,7 +637,7 @@ local HekiliSpecMixin = {
             end
         end
 
-        if a.castableWhileCasting then
+        if a.castableWhileCasting or a.funcs.castableWhileCasting then
             self.canCastWhileCasting = true
             self.castableWhileCasting[ a.key ] = true
         end
@@ -659,6 +673,12 @@ local HekiliSpecMixin = {
 
     RegisterEvent = function( self, event, func )
         RegisterEvent( event, function( ... )
+            if state.spec.id == self.id then func( ... ) end
+        end )
+    end,
+
+    RegisterUnitEvent = function( self, event, unit1, unit2, func )
+        RegisterUnitEvent( event, unit1, unit2, function( ... )
             if state.spec.id == self.id then func( ... ) end
         end )
     end,
@@ -744,7 +764,7 @@ function Hekili:RestoreDefaults()
         end
     end
 
-    if changed then self:LoadScripts() end
+    if changed then self:LoadScripts(); self:RefreshOptions() end
 end
 
 
@@ -813,6 +833,7 @@ function Hekili:NewSpecialization( specID, isRanged )
         melee = not isRanged,
 
         resources = {},
+        resourceAuras = {},
         primaryResource = nil,
 
         talents = {},
@@ -915,6 +936,12 @@ all:RegisterAuras( {
         duration = 40,
     },
 
+    primal_rage = {
+        id = 264667,
+        duration = 40,
+        max_stack = 1,
+    },
+
     bloodlust = {
         id = 2825,
         duration = 40,
@@ -923,7 +950,8 @@ all:RegisterAuras( {
                 [90355] = 'ancient_hysteria',
                 [32182] = 'heroism',
                 [80353] = 'time_warp',
-                [160452] = 'netherwinds'
+                [160452] = 'netherwinds',
+                [264667] = 'primal_rage',
             }
 
             for id, key in pairs( bloodlusts ) do
@@ -938,19 +966,19 @@ all:RegisterAuras( {
             end
 
             local i = 1
-            local name, _, count, _, duration, expires, _, _, _, spellID = UnitBuff( 'player', i )
+            local name, _, count, _, duration, expires, caster, _, _, spellID = UnitBuff( 'player', i )
 
             while( name ) do
                 if spellID == 2525 then break end
                 i = i + 1
-                name, _, count, _, duration, expires, _, _, _, spellID = UnitBuff( 'player', i )
+                name, _, count, _, duration, expires, caster, _, _, spellID = UnitBuff( 'player', i )
             end
 
             if name then
                 buff.bloodlust.count = max( 1, count )
                 buff.bloodlust.expires = expires
                 buff.bloodlust.applied = expires - duration
-                buff.bloodlust.caster = 'unknown'
+                buff.bloodlust.caster = caster
                 return
             end
 
@@ -1929,6 +1957,13 @@ all:RegisterAbilities( {
         gcd = 'off',
     },
 
+    cancel_action = {
+        name = "|cff00ccff[Cancel Action]|r",
+        cast = 0,
+        cooldown = 0,
+        gcd = "off",        
+    },
+
     variable = {
         name = '|cff00ccff[Variable]|r',
         cast = 0,
@@ -1972,6 +2007,9 @@ all:RegisterAbilities( {
         cast = 0,
         cooldown = function () return time > 0 and 3600 or 60 end,
         gcd = "off",
+
+        item = 5512,
+        bagItem = true,
 
         startsCombat = false,
         texture = 538745,
@@ -2048,6 +2086,144 @@ do
         usable = function () return false, "your equipped major essence is supported elsewhere in the priority or is not an active ability" end
     } )
 end
+
+
+-- 9.0 Covenant Shared Abilities and Effects
+do
+    all:RegisterAbilities( {
+        door_of_shadows = {
+            id = 300728,
+            cast = 1.5,
+            cooldown = 60,
+            gcd = "spell",
+            
+            toggle = "cooldowns",
+
+            startsCombat = true,
+            texture = 3586270,
+            
+            handler = function ()
+            end,
+        },
+
+        phial_of_serenity = {
+            name = "|cff00ccff[Phial of Serenity]|r",
+            cast = 0,
+            cooldown = function () return time > 0 and 3600 or 60 end,
+            gcd = "off",
+
+            item = 177278,
+            bagItem = true,
+        
+            startsCombat = false,
+            texture = 463534,
+
+            toggle = function ()
+                if not toggle.interrupts then return "interrupts" end
+                if not toggle.essences then return "essences" end
+                return "essences"
+            end,
+    
+            usable = function ()
+                if GetItemCount( 177278 ) == 0 then return false, "requires phial in bags"
+                elseif not IsUsableItem( 177278 ) then return false, "phial on combat cooldown"
+                elseif health.current == health.max then return false, "requires a health deficit" end
+                return true
+            end,
+    
+            readyTime = function ()
+                local start, duration = GetItemCooldown( 177278 )            
+                return max( 0, start + duration - query_time )
+            end,
+    
+            handler = function ()
+                gain( 0.15 * health.max, "health" )
+                removeBuff( "dispellable_disease" )
+                removeBuff( "dispellable_poison" )
+                removeBuff( "dispellable_curse" )
+                removeBuff( "dispellable_bleed" ) -- TODO: Bleeds?
+            end,
+        },
+
+        fleshcraft = {
+            id = 324631,
+            cast = function () return 4 * haste end,            
+            channeled = true,
+            cooldown = 120,
+            gcd = "spell",
+            
+            toggle = "essences",
+
+            startsCombat = false,
+            texture = 3586267,
+            
+            start = function ()
+                applyBuff( "fleshcraft" )
+            end,
+
+            auras = {
+                fleshcraft = {
+                    id = 324867,
+                    duration = 120,
+                    max_stack = 1
+                }
+            }
+        },
+    } )
+
+    all:RegisterAuras( {
+        echo_of_eonar = {
+            id = 338481,
+            duration = 3600,
+            max_stack = 1,
+        },
+        echo_of_eonar_debuff = {
+            id = 338494,
+            duration = 15,
+            max_stack = 1,
+        },
+        echo_of_eonar_buff = {
+            id = 338489,
+            duration = 15,
+            max_stack = 1,
+        },
+
+        maw_rattle = {
+            id = 341617,
+            duration = 10,
+            max_stack = 1
+        },
+
+        sephuzs_proclamation = {
+            id = 339463,
+            duration = 15,
+            max_stack = 1
+        },
+        sephuz_proclamation_icd = {
+            duration = 30,
+            max_stack = 1,
+            -- TODO: Track last application of Sephuz's buff via event and create a generator to manufacture this buff.
+        },
+
+        third_eye_of_the_jailer = {
+            id = 339970,
+            duration = 60,
+            max_stack = 5,
+        },
+
+        vitality_sacrifice_buff = {
+            id = 338746,
+            duration = 60,
+            max_stack = 1,
+        },
+        vitality_sacrifice_debuff = {
+            id = 339131,
+            duration = 60,
+            max_stack = 1
+        }
+    } )
+end
+
 
 -- 8.3 - WORLD
 -- Corruption Curse that impacts resource costs.
@@ -2618,7 +2794,7 @@ do
 
     all:RegisterAbility( "cyclotronic_blast", {
         id = 293491,
-        -- key = "pocketsized_computation_device",
+        known = function () return equipped.cyclotronic_blast end,
         cast = function () return 1.5 * haste end,
         channeled = function () return cooldown.cyclotronic_blast.remains > 0 end,
         cooldown = function () return equipped.cyclotronic_blast and 120 or 0 end,
@@ -2654,7 +2830,7 @@ do
 
     all:RegisterAbility( "harmonic_dematerializer", {
         id = 293512,
-        -- key = "pocketsized_computation_device",
+        known = function () return equipped.harmonic_dematerializer end,
         cast = 0,
         cooldown = 15,
         gcd = "spell",
@@ -2724,24 +2900,6 @@ do
 end
 
 
-all:RegisterAbility( "wraps_of_electrostatic_potential", {
-    cast = 0,
-    cooldown = 60,
-    gcd = "off",
-
-    item = 169069,
-    toggle = "cooldowns",
-
-    handler = function () applyDebuff( "target", "electrostatic_induction" ) end
-} )
-
-all:RegisterAura( "electrostatic_induction", {
-    id = 300145,
-    duration = 8,
-    max_stack = 1
-} )
-
-
 -- Shockbiter's Fang
 all:RegisterAbility( "shockbiters_fang", {
     cast = 0,
@@ -2759,6 +2917,15 @@ all:RegisterAura( "shockbitten", {
     duration = 12,
     max_stack = 1
 } )
+
+
+all:RegisterAbility( "living_oil_canister", {
+    cast = 0,
+    cooldown = 60,
+    gcd = "off",
+
+    item = 158216,
+})
 
 
 -- Remote Guidance Device, 169769
@@ -4457,7 +4624,6 @@ all:RegisterAbility( "kiljaedens_burning_wish", {
     texture = 1357805,
 
     toggle = 'cooldowns',
-    usable = function () return level < 116 end,
 } )
 
 
@@ -4735,9 +4901,14 @@ do
 
     ns.callHook = function( hook, ... )
         if class.hooks[ hook ] and not inProgress[ hook ] then
+            local a1, a2, a3, a4, a5
+
             inProgress[ hook ] = true
-            local a1, a2, a3, a4, a5 = class.hooks[ hook ] ( ... )
+            for _, hook in ipairs( class.hooks[ hook ] ) do
+                a1, a2, a3, a4, a5 = hook ( ... )
+            end
             inProgress[ hook ] = nil
+
             if a1 ~= nil then
                 return a1, a2, a3, a4, a5
             else
@@ -4971,8 +5142,8 @@ function Hekili:SpecializationChanged()
     wipe( class.powers )
     wipe( class.gear )
     wipe( class.packs )
-    wipe( class.hooks )
     wipe( class.resources )
+    wipe( class.resourceAuras )
 
     wipe( class.pets )
 
@@ -5016,6 +5187,11 @@ function Hekili:SpecializationChanged()
         class[ key ] = nil
     end
     if rawget( state, "rune" ) then state.rune = nil; class.rune = nil; end
+    
+    for k in pairs( class.resourceAuras ) do
+        class.resourceAuras[ k ] = nil
+    end
+    
     class.primaryResource = nil
 
     for k in pairs( class.stateTables ) do
@@ -5050,6 +5226,10 @@ function Hekili:SpecializationChanged()
                 end
                 if rawget( state, "runes" ) then state.rune = state.runes end
 
+                for k,v in pairs( spec.resourceAuras ) do
+                    class.resourceAuras[ k ] = v
+                end
+
                 class.primaryResource = spec.primaryResource
 
                 for talent, id in pairs( spec.talents ) do
@@ -5060,9 +5240,10 @@ function Hekili:SpecializationChanged()
                     class.pvptalents[ talent ] = id
                 end
 
-                for name, func in pairs( spec.hooks ) do
+                class.hooks = spec.hooks or {}
+                --[[ for name, func in pairs( spec.hooks ) do
                     class.hooks[ name ] = func
-                end
+                end ]]
 
                 class.variables = spec.variables
 
@@ -5190,12 +5371,14 @@ function Hekili:SpecializationChanged()
     ns.updateTalents()
     -- ns.updateGear()
 
+    state.swings.mh_speed, state.swings.oh_speed = UnitAttackSpeed( "player" )
+
     self:UpdateDisplayVisibility()
 
     self:RefreshOptions()
     self:LoadScripts()
 
-    self:UpdateDamageDetectionForCLEU()
+    Hekili:UpdateDamageDetectionForCLEU()
 end
 
 

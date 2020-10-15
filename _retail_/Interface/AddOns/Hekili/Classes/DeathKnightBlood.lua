@@ -8,9 +8,31 @@ local class = Hekili.Class
 local state = Hekili.State
 
 local PTR = ns.PTR
+local FindUnitDebuffByID = ns.FindUnitDebuffByID
 
 
-if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
+-- Conduits
+-- [-] Withering Plague
+-- [x] Debilitating Malady
+
+-- [-] Kyrian: Proliferation
+-- [x] Venthyr: Impenetrable Gloom
+-- [-] Necrolord: Brutal Grasp
+-- [-] Night Fae: Withering Ground
+
+-- Endurance
+-- [x] hardened_bones
+-- [-] insatiable_appetite
+-- [x] reinforced_shell
+
+-- Finesse
+-- [x] chilled_resilience
+-- [x] fleeting_wind
+-- [x] spirit_drain
+-- [x] unending_grip
+
+
+if UnitClassBase( "player" ) == "DEATHKNIGHT" then
     local spec = Hekili:NewSpecialization( 250 )
 
     spec:RegisterResource( Enum.PowerType.Runes, {
@@ -80,7 +102,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
                 table.sort( t.expiry )
             end
 
-            state.gain( amount * 10, "runic_power" )
+            state.gain( amount * 10 * ( state.buff.rune_of_hysteria.up and 1.2 or 1 ), "runic_power" )
 
             if state.talent.rune_strike.enabled then state.gainChargeTime( "rune_strike", amount ) end
 
@@ -99,7 +121,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         end,
     }, {
         __index = function( t, k, v )
-            if k == 'actual' then
+            if k == "actual" then
                 local amount = 0
 
                 for i = 1, 6 do
@@ -110,7 +132,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
                 return amount
 
-            elseif k == 'current' then
+            elseif k == "current" then
                 -- If this is a modeled resource, use our lookup system.
                 if t.forecast and t.fcount > 0 then
                     local q = state.query_time
@@ -137,16 +159,16 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
                 return t.actual
             
-            elseif k == 'deficit' then
+            elseif k == "deficit" then
                 return t.max - t.current            
 
-            elseif k == 'time_to_next' then
-                return t[ 'time_to_' .. t.current + 1 ]
+            elseif k == "time_to_next" then
+                return t[ "time_to_" .. t.current + 1 ]
 
-            elseif k == 'time_to_max' then
+            elseif k == "time_to_max" then
                 return t.current == 6 and 0 or max( 0, t.expiry[6] - state.query_time )
 
-            elseif k == 'add' then
+            elseif k == "add" then
                 return t.gain
 
             else
@@ -158,11 +180,27 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         end
     } ) )
 
-    spec:RegisterResource( Enum.PowerType.RunicPower )
+    spec:RegisterResource( Enum.PowerType.RunicPower, {
+        swarming_mist = {
+            aura = "swarming_mist",
+
+            last = function ()
+                local app = state.debuff.swarming_mist.applied
+                local t = state.query_time
+
+                return app + floor( ( t - app ) / class.auras.swarming_mist.tick_time ) * class.auras.swarming_mist.tick_time
+            end,
+
+            interval = function () return class.auras.swarming_mist.tick_time end,
+            value = function () return min( 15, state.true_active_enemies * 3 ) end,
+        },        
+    } )
 
     local spendHook = function( amt, resource )
         if amt > 0 and resource == "runic_power" and talent.red_thirst.enabled then
             cooldown.vampiric_blood.expires = max( 0, cooldown.vampiric_blood.expires - amt / 10 )
+        elseif resource == "rune" and amt > 0 and active_dot.shackle_the_unworthy > 0 then
+            reduceCooldown( "shackle_the_unworthy", 4 * amt )
         end
     end
 
@@ -173,27 +211,27 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
     spec:RegisterTalents( {
         heartbreaker = 19165, -- 221536
         blooddrinker = 19166, -- 206931
-        rune_strike = 19217, -- 210764
+        tombstone = 23454, -- 219809
 
         rapid_decomposition = 19218, -- 194662
         hemostasis = 19219, -- 273946
         consumption = 19220, -- 274156
 
         foul_bulwark = 19221, -- 206974
-        ossuary = 22134, -- 219786
-        tombstone = 22135, -- 219809
+        relish_in_blood = 22134, -- 317610
+        blood_tap = 22135, -- 221699
 
         will_of_the_necropolis = 22013, -- 206967
         antimagic_barrier = 22014, -- 205727
-        rune_tap = 22015, -- 194679
+        mark_of_blood = 22015, -- 206940
 
         grip_of_the_dead = 19227, -- 273952
         tightening_grasp = 19226, -- 206970
         wraith_walk = 19228, -- 212552
 
         voracious = 19230, -- 273953
-        bloodworms = 19231, -- 195679
-        mark_of_blood = 19232, -- 206940
+        death_pact = 19231, -- 48743
+        bloodworms = 19232, -- 195679
 
         purgatory = 21207, -- 114556
         red_thirst = 21208, -- 205723
@@ -203,16 +241,11 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
     -- PvP Talents
     spec:RegisterPvpTalents( { 
-        adaptation = 3468, -- 214027
-        gladiators_medallion = 3467, -- 208683
-        relentless = 3466, -- 196029
-
-        antimagic_zone = 3434, -- 51052
         blood_for_blood = 607, -- 233411
         dark_simulacrum = 3511, -- 77606
         death_chain = 609, -- 203173
         decomposing_aura = 3441, -- 199720
-        heartstop_aura = 3438, -- 199719
+        dome_of_ancient_shadow = 5368, -- 328718
         last_dance = 608, -- 233412
         murderous_intent = 841, -- 207018
         necrotic_aura = 3436, -- 199642
@@ -224,30 +257,40 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
     -- Auras
     spec:RegisterAuras( {
+        abomination_limb = {
+            id = 315443,
+            duration = 12,
+            max_stack = 1,
+        },
         antimagic_shell = {
             id = 48707,
-            duration = function () return ( azerite.runic_barrier.enabled and 1 or 0 ) + ( talent.antimagic_barrier.enabled and 6.5 or 5 ) * ( ( level < 116 and equipped.acherus_drapes ) and 2 or 1 ) end,
+            duration = function () return ( legendary.deaths_embrace.enabled and 2 or 1 ) * ( ( azerite.runic_barrier.enabled and 1 or 0 ) + ( talent.antimagic_barrier.enabled and 7 or 5 ) ) + ( conduit.reinforced_shell.mod * 0.001 ) end,
+            max_stack = 1,
+        },
+        antimagic_zone = {
+            id = 145629,
+            duration = 10,
             max_stack = 1,
         },
         asphyxiate = {
-            id = 108194,
-            duration = 4,
+            id = 221562,
+            duration = 5,
             max_stack = 1,
         },
-        blooddrinker = {
-            id = 206931,
-            duration = 3,
-            max_stack = 1,
-        },        
         blood_plague = {
             id = 55078,
-            duration = 24, -- duration is capable of going to 32s if its reapplied before the first wears off
+            duration = 24,
             type = "Disease",
             max_stack = 1,
         },
         blood_shield = {
             id = 77535,
             duration = 10,
+            max_stack = 1,
+        },
+        blooddrinker = {
+            id = 206931,
+            duration = 3,
             max_stack = 1,
         },
         bone_shield = {
@@ -257,6 +300,13 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         },
         bonestorm = {
             id = 194844,
+            duration = 10,
+            max_stack = 1,
+        },
+        control_undead = {
+            id = 111673,
+            duration = 300,
+            max_stack = 1
         },
         crimson_scourge = {
             id = 81141,
@@ -270,12 +320,13 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         },
         dancing_rune_weapon = {
             id = 81256,
-            duration = 8,
+            duration = function () return pvptalent.last_dance.enabled and 4 or 8 end,
             max_stack = 1,
         },
         death_and_decay = {
-            id = 43265,
+            id = 188290,
             duration = 10,
+            max_stack = 1,
         },
         death_grip = {
             id = 51399,
@@ -286,13 +337,50 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             duration = 8,
             max_stack = 1,
         },
+        deaths_due_buff = {
+            id = 324165,
+            duration = 10,
+            max_stack = 15,
+        },
+        deaths_due_debuff = {
+            id = 324164,
+            duration = 15,
+            max_stack = 15,
+            generate = function( t, auraType )
+                local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = FindUnitDebuffByID( "target", 324164, "PLAYER" )
+
+                if name and expirationTime > query_time then
+                    t.name = name
+                    t.count = count > 0 and count or 1
+                    t.expires = expirationTime
+                    t.applied = expirationTime - duration
+                    t.caster = "player"
+                    return
+                end
+
+                t.count = 0
+                t.expires = 0
+                t.applied = 0
+                t.caster = "nobody"
+            end
+        },
+        gnaw = {
+            id = 91800,
+            duration = 1,
+            max_stack = 1,
+        },
         grip_of_the_dead = {
+            id = 273977,
+            duration = 3600,
+            max_stack = 1,
+        },        
+        --[[ ?? grip_of_the_dead = {
             id = 273984,
             duration = 10,
             max_stack = 10,
-        },
+        }, ]]
         heart_strike = {
-            id = 206930, -- slow debuff heart strike applies
+            id = 206930,
             duration = 8,
             max_stack = 1,
         },
@@ -307,9 +395,15 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             duration = 8,
             max_stack = 1,
         },
+        lichborne = {
+            id = 49039,
+            duration = 10,
+            max_stack = 1,
+        },
         mark_of_blood = {
             id = 206940,
             duration = 15,
+            type = "Magic",
             max_stack = 1,
         },
         on_a_pale_horse = {
@@ -317,7 +411,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         },
         ossuary = {
             id = 219788,
-            duration = 0, -- duration is persistent when boneshield stacks => 5
+            duration = 3600,
             max_stack = 1,
         },
         path_of_frost = {
@@ -325,9 +419,14 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             duration = 600,
             max_stack = 1,
         },
-        perdition = { -- debuff from purgatory getting procced
+        perdition = {
             id = 123981,
             duration = 240,
+            max_stack = 1,
+        },
+        rune_of_hysteria = {
+            id = 326918,
+            duration = 8,
             max_stack = 1,
         },
         rune_tap = {
@@ -335,9 +434,25 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             duration = 4,
             max_stack = 1,
         },
+        shackle_the_unworthy = {
+            id = 312202,
+            duration = 14,
+            max_stack = 1,
+        },
         shroud_of_purgatory = {
             id = 116888,
             duration = 3,
+            max_stack = 1,
+        },
+        strangulate = {
+            id = 47476,
+            duration = 5,
+            max_stack = 1,                
+        },
+        swarming_mist = { -- Venthyr
+            id = 311648,
+            duration = 8,
+            tick_time = 1,
             max_stack = 1,
         },
         tombstone = {
@@ -357,7 +472,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         },
         vampiric_blood = {
             id = 55233,
-            duration = 10,
+            duration = function () return level > 55 and 12 or 10 end,
             max_stack = 1,
         },
         veteran_of_the_third_war = {
@@ -368,7 +483,14 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             duration = 6,
             max_stack = 1,
         },
+        wraith_walk = {
+            id = 212552,
+            duration = 4,
+            type = "Magic",
+            max_stack = 1,
+        },
 
+        
         -- Azerite Powers
         bloody_runeblade = {
             id = 289349,
@@ -456,11 +578,20 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             max_stack = 1,
         },
 
-        strangulate = {
-            id = 47476,
-            duration = 5,
-            max_stack = 1,                
-        }, 
+
+        -- Legendaries
+        -- TODO:  Model +/- rune regen when applied/removed.
+        crimson_rune_weapon = {
+            id = 334526,
+            duration = 10,
+            max_stack = 1
+        },
+
+        grip_of_the_everlasting = {
+            id = 334722,
+            duration = 3,
+            max_stack = 1
+        }
     } )
 
 
@@ -501,11 +632,26 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
     spec:RegisterGear( "uvanimor_the_unbeautiful", 137037 )
 
 
+    spec:RegisterTotem( "ghoul", 1100170 ) -- Texture ID
+
+
     spec:RegisterHook( "reset_precast", function ()
-        local control_expires = action.control_undead.lastCast + 300
+        if UnitExists( "pet" ) then
+            for i = 1, 40 do
+                local expires, _, _, _, id = select( 6, UnitDebuff( "pet", i ) )
+
+                if not expires then break end
+
+                if id == 111673 then
+                    summonPet( "controlled_undead", expires - now )
+                    break
+                end
+            end
+        end
+        --[[ local control_expires = action.control_undead.lastCast + 300
         if control_expires > now and pet.up then
             summonPet( "controlled_undead", control_expires - now )
-        end
+        end ]]
     end )
 
     spec:RegisterStateExpr( "save_blood_shield", function ()
@@ -518,7 +664,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         antimagic_shell = {
             id = 48707,
             cast = 0,
-            cooldown = function () return talent.antimagic_barrier.enabled and 45 or 60 end,
+            cooldown = function () return talent.antimagic_barrier.enabled and 40 or 60 end,
             gcd = "off",
 
             toggle = "defensives",
@@ -542,8 +688,6 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
             startsCombat = false,
             texture = 237510,
-
-            pvptalent = "antimagic_zone",
 
             handler = function ()
                 applyBuff( "antimagic_zone" )
@@ -592,14 +736,48 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
                     applyBuff( "hemostasis", 15, min( 5, active_enemies) )
                 end
 
-                if level < 116 and equipped.skullflowers_haemostasis then
-                    applyBuff( "haemostasis" )
+                if legendary.superstrain.enabled then
+                    applyDebuff( "target", "frost_fever" )
+                    active_dot.frost_fever = active_enemies
+
+                    applyDebuff( "target", "virulent_plague" )
+                    active_dot.virulent_plague = active_enemies
                 end
 
-                if level < 116 and set_bonus.tier20_2pc == 1 then
-                    applyBuff( "gravewarden" )
+                if conduit.debilitating_malady.enabled then
+                    addStack( "debilitating_malady", nil, 1 )
                 end
             end,
+
+            auras = {
+                -- Conduit
+                debilitating_malady = {
+                    id = 338523,
+                    duration = 6,
+                    max_stack = 3
+                }
+            }
+        },
+
+
+        blood_tap = {
+            id = 221699,
+            cast = 0,
+            charges = 2,
+            cooldown = 60,
+            recharge = 60,
+            gcd = "off",
+
+            spend = -1,
+            spendType = "runes",
+
+            startsCombat = false,
+
+            talent = "blood_tap",
+
+            handler = function ()
+                gain( 1, "runes" )
+            end
         },
 
 
@@ -653,8 +831,6 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             spend = 0,
             spendType = "runic_power",
 
-            -- toggle = "cooldowns",
-
             startsCombat = true,
             texture = 342917,
 
@@ -664,6 +840,24 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
                 local cost = min( runic_power.current, 100 )
                 spend( cost, "runic_power" )
                 applyBuff( "bonestorm", cost / 10 )
+            end,
+        },
+
+
+        chains_of_ice = {
+            id = 45524,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell",
+            
+            spend = 1,
+            spendType = "runes",
+            
+            startsCombat = true,
+            texture = 135834,
+            
+            handler = function ()
+                applyDebuff( "target", "chains_of_ice" )
             end,
         },
 
@@ -696,7 +890,10 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             startsCombat = true,
             texture = 237273,
 
+            usable = function () return target.is_undead, "requires undead target" end,
+
             handler = function ()
+                summonPet( "controlled_undead" )
             end,
         },
 
@@ -709,7 +906,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
             toggle = "cooldowns",
 
-            startsCombat = true,
+            startsCombat = false,
             texture = 135277,
 
             handler = function ()
@@ -773,30 +970,18 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             startsCombat = true,
             texture = 136144,
 
+            noOverride = 324128,
+
             handler = function ()
-                applyBuff( "death_and_decay" )
                 removeBuff( "crimson_scourge" )
+
+                if legendary.phearomones.enabled and buff.death_and_decay.down then
+                    stat.haste = stat.haste + 0.1
+                end
+
+                applyBuff( "death_and_decay" )
             end,
         },
-
-
-        --[[ death_gate = {
-            id = 50977,
-            cast = 4,
-            cooldown = 60,
-            gcd = "spell",
-
-            spend = -10,
-            spendType = "runic_power",
-
-            toggle = "cooldowns",
-
-            startsCombat = true,
-            texture = 135766,
-
-            handler = function ()
-            end,
-        }, ]]
 
 
         death_chain = {
@@ -820,9 +1005,9 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         death_grip = {
             id = 49576,
             cast = 0,
-            charges = function () return pvptalent.unholy_command.enabled and 2 or 1 end,
+            charges = function () return pvptalent.unholy_command.enabled and 2 or nil end,
             cooldown = 15,
-            recharge = 15,
+            recharge = function () return pvptalent.unholy_command.enabled and 15 or nil end,
             gcd = "spell",
 
             startsCombat = true,
@@ -831,7 +1016,23 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             handler = function ()
                 applyDebuff( "target", "death_grip" )
                 setDistance( 5 )
+
+                if legendary.grip_of_the_everlasting.enabled and buff.grip_of_the_everlasting.down then
+                    applyBuff( "grip_of_the_everlasting" )
+                else
+                    removeBuff( "grip_of_the_everlasting" )
+                end
+
+                if conduit.unending_grip.enabled then applyDebuff( "target", "unending_grip" ) end
             end,
+
+            auras = {
+                unending_grip = {
+                    id = 338311,
+                    duration = 5,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -841,7 +1042,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             cooldown = 0,
             gcd = "spell",
 
-            spend = function () return ( talent.ossuary.enabled and buff.bone_shield.stack >= 5 ) and 40 or 45 end,
+            spend = function () return ( level > 57 and buff.bone_shield.stack >= 5 ) and 40 or 45 end,
             spendType = "runic_power",
 
             startsCombat = true,
@@ -852,6 +1053,8 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
                 gain( 0.075 * health.max * ( 1.2 * buff.haemostasis.stack ) * ( 1.08 * buff.hemostasis.stack ), "health" )
                 removeBuff( "haemostasis" )
                 removeBuff( "hemostasis" )
+
+                -- TODO: Calculate real health gain from Death Strike to trigger Bryndaor's Might legendary.
 
                 if talent.voracious.enabled then applyBuff( "voracious" ) end
             end,
@@ -869,7 +1072,17 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
             handler = function ()
                 applyBuff( "deaths_advance" )
+                if conduit.fleeting_wind.enabled then applyBuff( "fleeting_wind" ) end
             end,
+
+            auras = {
+                -- Conduit
+                fleeting_wind = {
+                    id = 338093,
+                    duration = 3,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -927,7 +1140,9 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
                 if azerite.deep_cuts.enabled then applyDebuff( "target", "deep_cuts" ) end
 
-                if level < 116 and equipped.service_of_gorefiend then cooldown.vampiric_blood.expires = max( 0, cooldown.vampiric_blood.expires - 2 ) end
+                if legendary.gorefiends_domination.enabled and cooldown.vampiric_blood.remains > 0 then
+                    cooldown.vampiric_blood.expires = cooldown.vampiric_blood.expires - 2
+                end
             end,
         },
 
@@ -935,10 +1150,7 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         icebound_fortitude = {
             id = 48792,
             cast = 0,
-            cooldown = function ()
-                if azerite.cold_hearted.enabled then return 165 end
-                return 180
-            end,
+            cooldown = function () return 180 - ( azerite.cold_hearted.enabled and 15 or 0 ) + ( conduit.chilled_resilience.mod * 0.001 ) end,
             gcd = "spell",
 
             toggle = "defensives",
@@ -952,14 +1164,38 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         },
 
 
+        lichborne = {
+            id = 49039,
+            cast = 0,
+            cooldown = 120,
+            gcd = "spell",
+            
+            toggle = "cooldowns",
+
+            startsCombat = true,
+            texture = 136187,
+            
+            handler = function ()
+                applyBuff( "lichborne" )
+                if conduit.hardened_bones.enabled then applyBuff( "hardened_bones" ) end
+            end,
+
+            auras = {
+                -- Conduit
+                hardened_bones = {
+                    id = 337973,
+                    duration = 10,
+                    max_stack = 1
+                }
+            }
+        },
+
+
         mark_of_blood = {
             id = 206940,
             cast = 0,
             cooldown = 6,
             gcd = "spell",
-
-            spend = 30,
-            spendType = "runic_power",
 
             startsCombat = true,
             texture = 132205,
@@ -997,17 +1233,16 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             cooldown = 15,
             gcd = "spell",
 
-            spend = 0,
-            spendType = "runic_power",
-
             startsCombat = true,
             texture = 237527,
 
             toggle = "interrupts",
+
             debuff = "casting",
             readyTime = state.timeToInterrupt,
 
             handler = function ()
+                if conduit.spirit_drain.enabled then gain( conduit.spirit_drain.mod * 0.1, "runic_power" ) end
                 interrupt()
             end,
         },
@@ -1048,40 +1283,18 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         },
 
 
-        --[[ raise_ally = {
-            id = 61999,
+        raise_dead = {
+            id = 46585,
             cast = 0,
-            cooldown = 600,
+            cooldown = 120,
             gcd = "spell",
 
-            spend = 30,
-            spendType = "runic_power",
+            startsCombat = false,
 
             toggle = "cooldowns",
 
-            startsCombat = true,
-            texture = 136143,
-
-            handler = function ()
-            end,
-        }, ]]
-
-
-        rune_strike = {
-            id = 210764,
-            cast = 0,
-            charges = 2,
-            cooldown = 60,
-            recharge = 60,
-            gcd = "spell",
-
-            startsCombat = true,
-            texture = 237518,
-
-            talent = "rune_strike",
-
-            handler = function ()
-                gain( 1, "runes" )
+            handler = function()
+                summonPet( "ghoul" )
             end,
         },
 
@@ -1089,9 +1302,9 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         rune_tap = {
             id = 194679,
             cast = 0,
-            charges = 2,
+            charges = function () return level > 43 and 2 or nil end,
             cooldown = 25,
-            recharge = 25,
+            recharge = function () return level > 43 and 25 or nil end,
             gcd = "spell",
 
             spend = 1,
@@ -1099,8 +1312,6 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
             startsCombat = true,
             texture = 237529,
-
-            talent = "rune_tap",
 
             handler = function ()
                 applyBuff( "rune_tap" )
@@ -1120,6 +1331,29 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
             handler = function ()
             end,
         }, ]]
+
+
+        sacrificial_pact = {
+            id = 327574,
+            cast = 0,
+            cooldown = 120,
+            gcd = "spell",
+            
+            spend = 20,
+            spendType = "runic_power",
+            
+            toggle = "defensives",
+
+            startsCombat = true,
+            texture = 136133,
+
+            usable = function () return pet.ghoul.alive, "requires an undead pet" end,
+            
+            handler = function ()
+                gain( 0.25 * health.max, "health" )
+                pet.ghoul.expires = query_time - 0.01
+            end,
+        },        
 
 
         strangulate = {
@@ -1167,6 +1401,15 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
 
                 removeStack( "bone_shield", bs )                
                 gain( 6 * bs, "runic_power" )
+
+                -- This is the only predictable Bone Shield consumption that I have noted.
+                if cooldown.dancing_rune_weapon.remains > 0 then
+                    cooldown.dancing_rune_weapon.expires = cooldown.dancing_rune_weapon.expires - ( 3 * bs )                    
+                end
+
+                if cooldown.blood_tap.charges_fractional < cooldown.blood_tap.max_charges then
+                    gainChargeTime( "blood_tap", 2 * bs )
+                end
 
                 if set_bonus.tier21_2pc == 1 then
                     cooldown.dancing_rune_weapon.expires = max( 0, cooldown.dancing_rune_weapon.expires - ( 3 * bs ) )
@@ -1223,6 +1466,104 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
                 applyBuff( "wraith_walk" )
             end,
         },
+
+
+        -- Death Knight - Kyrian    - 312202 - shackle_the_unworthy (Shackle the Unworthy)
+        shackle_the_unworthy = {
+            id = 312202,
+            cast = 0,
+            cooldown = 60,
+            gcd = "spell",
+
+            startsCombat = true,
+            texture = 3565442,
+
+            toggle = "essences",
+
+            handler = function ()
+                applyDebuff( "target", "shackle_the_unworthy" )
+            end,
+        },
+
+        -- Death Knight - Necrolord - 315443 - abomination_limb     (Abomination Limb)
+        abomination_limb = {
+            id = 315443,
+            cast = 0,
+            cooldown = 120,
+            gcd = "spell",
+
+            startsCombat = true,
+            texture = 3578196,
+
+            toggle = "essences",
+
+            handler = function ()
+                applyBuff( "abomination_limb" )
+            end,
+        },
+
+        -- Death Knight - Night Fae - 324128 - deaths_due           (Death's Due)
+        deaths_due = {
+            id = 324128,
+            cast = 0,
+            cooldown = 15,
+            gcd = "spell",
+
+            spend = function () return buff.crimson_scourge.up and 0 or 1 end,
+            spendType = "runes",
+
+            startsCombat = true,
+            texture = 3636837,
+
+            notalent = "defile",
+
+            handler = function ()
+                removeBuff( "crimson_scourge" )
+
+                if legendary.phearomones.enabled and buff.death_and_decay.down then
+                    stat.haste = stat.haste + 0.1
+                end
+
+                applyBuff( "death_and_decay" )
+                setCooldown( "death_and_decay", 15 )
+
+                applyBuff( "deaths_due_buff" )
+                applyDebuff( "target", "deaths_due_debuff" )
+                -- Note:  Debuff is actually a buff on the target...
+            end,
+        },
+
+        -- Death Knight - Venthyr   - 311648 - swarming_mist        (Swarming Mist)
+        swarming_mist = {
+            id = 311648,
+            cast = 0,
+            cooldown = 60,
+            gcd = "spell",
+            
+            spend = 1,
+            spendType = "runes",
+            
+            toggle = "essences",
+
+            startsCombat = true,
+            texture = 3565716,
+            
+            handler = function ()
+                applyBuff( "swarming_mist" )
+                if conduit.impenetrable_gloom.enabled then applyBuff( "impenetrable_gloom" ) end
+            end,
+
+            auras = {
+                -- Conduit
+                impenetrable_gloom = {
+                    id = 338629,
+                    duration = 4,
+                    max_stack = 1
+                }
+            }
+        },
+        
+
     } )
 
 
@@ -1247,10 +1588,10 @@ if UnitClassBase( 'player' ) == 'DEATHKNIGHT' then
         name = "Save |T237517:0|t Blood Shield",
         desc = "If checked, the default priority (or any priority checking |cFFFFD100save_blood_shield|r) will try to avoid letting your |T237517:0|t Blood Shield fall off during lulls in damage.",
         type = "toggle",
-        width = 1.5
-    } )   
+        width = "full"
+    } )
 
 
-    spec:RegisterPack( "Blood", 20200514, [[dCKcSaqivjEKqjxsHsXMqk(KqPyuqOofeYQuO4viHzHK6wirzxI8liQHHKCmiyzcspdPKPjiCnKkBdjsFdjIgNqP6CiLsRdjcnpHI7Pk2hsvhuHswia9qKiyIiLQCrfkvBePuWirkf6KiLIwPq1lrkv1nrkv2je5PkAQQsTxv(lrdMKdtzXQQhtyYiUmQndPpRGrdOtlz1kuk9AamBrDBHSBQ(TsdxGJlukTCqpNutxQRd02vL03fuJhjQoVcvRxq08vi7hQpeU33KynFifkvHsfv0Hqisuf70cbQcXn7Xd4BgycaSb(MUfX3eW8UKBgyJNxJCVVPEbHc(MZkcmBDToLa0q7B(bRCtB63)MeR5dPqPkuQOIoecrIQyNwurhL8M6awCifkDuDtGfHW(9VjH1IBglScW8UeSI2JTgiwr771aWghpwyfWUd0uIiJ8q1ab)jXgHSUIaZwxRlGgAJSUIe44XcROD24yfcHGASkuQcLkCCC8yHvucanFG1uI44XcROmSASieMGv0UYjyfTbiZHKt44XcROmSASieMGv0UQRbRR1XQCP7eoESWkkdRglcHjyvSzAVYyfG5Djy1eyXzcwnwF9c)XgSAd6A9eoESWkkdRg7VYowfTqgRSHbiR11RCECSAGDgAnJvaUoJvtGfNjyLUnba60nZLU137BYAn7cwFVpKq4EFt2TFMjhG3uaRMHLDtY2jX6c2BO1mrIMTiw(bHEcYrw5ASkgSkuSIgS6fS6dIIMiMlkFqcbDwgMTG1tGb30eDT(nfRlyVHwZejA2I4RpKc9EFt2TFMjhG3uaRMHLDZpikA6vlkOGLq(Z7ssGbyfnyfIXkOvej)k7DYieDIP8s3ASA0iScAfrYVYENmcrNkhROhRqGoScr30eDT(nnVIm5IkjS1aV(qIw37BYU9Zm5a8Mcy1mSSBcbDo1vel7vIawrpwniiyfnyfe0lHmydZqSkgSkeuDtt0163mIJw44YfvMbffrsGSfPV(qke37BAIUw)MHxyM8kxUeY61nxW3KD7NzYb41hs0DVVj72pZKdWBkGvZWYU5ly1hefnrmxu(Gec6SmmBbRNadUPj6A9BcRGGmllxQdmbF913KWOgyUV3hsiCVVPj6A9BgvorIczoK8nz3(zMCaE9HuO37BYU9Zm5a8Mcy1mSSBk2nt2WEIyUO8bje0zzy2cwpbzJmowrdwHyS6fSsSBMSH90pVlHalhagMGSrghRgncREbRAlZEN(5Djey5aWWe72pZeScr30eDT(n)5Djsuq44xFirR79nnrxRFZpd1meGYhUj72pZKdWRpKcX9(MSB)mtoaVPawndl7MMORxzj7CuXASI(hSkuSA0iScc6mwfdwHawrdwbb9sid2Wmmry0sunwrpwrPuDtt01630GcZzzaywZxFir39(MSB)mtoaVPawndl7MFqu0eOdCZJl1nK9Hgycm4MMOR1VzUga2A5yliziI9(6djk9EFtt01630CbRBOLLclNVj72pZKdWRpKOK37BAIUw)MOfK)5Dj3KD7NzYb41hsX(9(MMOR1V53gKlQSHLaa9nz3(zMCaE9HeT9EFt2TFMjhG3uaRMHLDtXUzYg2teZfLpiHGoldZwW6jihzLRXk6XkAlv30eDT(nb1SSAosF9HecuDVVj72pZKdWB6weFtOfscOdGw(RbjKjYpy3RFtt0163eAHKa6aOL)AqczI8d296xFiHac37BYU9Zm5a8MMOR1VPyCrEB46Lq(ZMUVPawndl7MIDZKnSNiMlkFqcbDwgMTG1tqoYkxJv0GvVGvFqu0eXCr5dsiOZYWSfSEcmaRObRGGoN6kIL9kdbwrpwjmDl7kIVPBr8nfJlYBdxVeYF2091hsie69(MSB)mtoaVPj6A9BAHud0GMwIUElxuzWgMH3uaRMHLDteJvIDZKnSNiMlkFqcbDwgMTG1tqoYkxJvXGv0Hv0GvTbh4o1vel7vskgROhRqGoScry1OryfIXQUIyzVssXyvmyfTcbwHOB6weFtlKAGg00s01B5Ikd2Wm86djeO19(MSB)mtoaVPj6A9BgXqgGgOPLOMpCtbSAgw2nrmwj2nt2WEIyUO8bje0zzy2cwpb5iRCnwrdw9cw9brrteZfLpiHGoldZwW6jWaSIgScc6CQRiw2Rmeyf9yfTWkeDt3I4BgXqgGgOPLOMpC9HecH4EFt2TFMjhG30eDT(nnnWxnN1sOfYfkfl0Y3uaRMHLDtc)brrtqlKlukwOLLe(dIIMiBy)MUfX300aF1CwlHwixOuSqlF9Hec0DVVj72pZKdWBAIUw)MMg4RMZAj0c5cLIfA5BkGvZWYUzBWbUtazl3atbIgRIbROfcyfnyfhBbRGaMKiW6)ZLpilhGGLCt3I4BAAGVAoRLqlKlukwOLV(qcbk9EFt2TFMjhG30eDT(nnnWxnN1sOfYfkfl0Y3uaRMHLDZpikAIyUO8bje0zzy2cwpbgGv0Gve(dIIMGwixOuSqllj8hefnbgGv0GvVGvCSfSccysIaR)px(GSCacwYnDlIVPPb(Q5SwcTqUqPyHw(6djeOK37BYU9Zm5a8Mcy1mSSB(brrteZfLpiHGoldZwW6jWGBAIUw)MbBxRF9HecX(9(MSB)mtoaVPawndl7MVGvTLzVt)8UecSCayyID7NzcwnAew9cwj2nt2WE6N3LqGLdadtq2iJFtt0163KyUO8bje0zzy2cw)6djeOT37BYU9Zm5a8Mcy1mSSB(brrt)1zPgyXzss3MaaSI(hSIsEtt0163S3OVUxNV(qkuQU33KD7NzYb4nfWQzyz3SCXgv(GKyr2alPtJv0JvuDtt0163uy5S0eDTUmx6(M5s3s3I4BgvDnyDT(1hsHIW9(MSB)mtoaVPj6A9BkSCwAIUwxMlDFZCPBPBr8nzTMDbRV(qk0qV33KD7NzYb4nnrxRFtHLZst016YCP7BMlDlDlIVPUnNyqY1xFZail2OV137djeU33KD7NzYb41hsHEVVj72pZKdWRpKO19(MSB)mtoaV(qke37BYU9Zm5a86dj6U330eDT(nd2Uw)MSB)mtoaV(6BgvDnyDT(9(qcH79nz3(zMCaEtbSAgw2nbYwUbMcenwfdwrhvy1OryfIXQxWQb4cgGv0Gvazl3atbIgRIbROukfRq0nnrxRFZxTOGcwc5pVl56dPqV33KD7NzYb4nfWQzyz3SCXgv(GKyr2alPtJv0)GvuLOdRgdwbKTCdmfzuownAewHyS6fSAaUGbyfnyv5InQ8bjXISbwsNgRO)bROkfkDy1yWkGSLBGPiJYXkeDtt0163KWwduQBybaF9HeTU33KD7NzYb4nfWQzyz3uBVYYFExIudS4mbRObRkxSrLpijwKnWs60yf9yfvyfny1hefn9Z7sKAGfNjjWaSIgS6dIIM(5DjsnWIZKeKJSY1yvmyfcj6WQXGvdcYnnrxRFtcBnqPUHfa81hsH4EFt2TFMjhG3uaRMHLDtGSLBGParJvXGv0rfwrzyfIXQqPcRgdw9brrt)8UePgyXzscmaRq0nnrxRFZsW)f0js0f2vds4RV(M62CIbj37djeU33KD7NzYb4nfWQzyz3ec6LqgSHzyIWOLOASkMhScbQWkAWkeJvVGvTLzVt)1zDVWOe72pZeSA0iS6fSsSBMSH90FDw3lmkbzJmownAew9brrteZfLpiHGoldZwW6jWaScr30eDT(njS1aL6gwaWxFif69(MSB)mtoaVPawndl7MVGvFqu0eXCr5dsiOZYWSfSEcm4MMOR1V5pVlHalhagE9HeTU33KD7NzYb4nfWQzyz38dIIM(RZsnWIZKeKJSY1yvmyfcj6WQXGvdcsIPCwa2mwnAewHyS6dIIM(RZsnWIZKeKJSY1yvmpyfe05uxrSSxjTWQrJWQpikA6Vol1alotsqoYkxJvX8GvigRgeeSIcSsSBMSH90pVlHalhagMGSrghRgdw1wM9o9Z7siWYbGHj2TFMjy1yWQqXkeHvJgHvFqu00FDwQbwCMK0TjaaRIbROfwHiSIgScc6LqgSHzyIWOLOASI(hSkuQUPj6A9Bgzq4ggYo56dPqCVVj72pZKdWBkGvZWYU5ly1hefnrmxu(Gec6SmmBbRNadUPj6A9BcKnylzTMDbF9HeD37BYU9Zm5a8Mcy1mSSBkaAWbwlrHMOR1Tmwr)dwHqk2XkAWkeJvFqu0eqoA1TPlDs3MaaSkMhScXyfDyfLHv6aoNLTbh4wN(5DjY)wzScry1OryLoGZzzBWbU1PFExI8VvgROhRcfRq0nnrxRFZFExI8Vv(6djk9EFt2TFMjhG3uaRMHLDZpikA6Vol1alots62eaGvX8Gvukwrdw1wM9oTAnObhpXU9ZmbRObRGGEjKbBygMimAjQgRO)bRqGUBAIUw)MrgeUHHStU(qIsEVVj72pZKdWBkGvZWYUje0lHmydZqSI(hScbQOcRObREbR(GOOjI5IYhKqqNLHzly9eyWnnrxRFZ)6SUxy01hsX(9(MSB)mtoaVPawndl7MqqVeYGnmdtegTevJvX8GvigRqGoSIcS6dIIMiMlkFqcbDwgMTG1tGby1yWk6WkkWkDaNZY2GdCRtazd2sDdlaySAmyvBz27eq2G9hYgammXU9ZmbRgdwfkwHiSA0iSQRiw2RKumwfdwHav30eDT(njS1aL6gwaWxFirBV33KD7NzYb4nfWQzyz3uhW5SSn4a36eHTgO0CIKWcBCSI(hSIw30eDT(njS1aLMtKewyJF9HecuDVVj72pZKdWBkGvZWYUjIXkbqdoWAjk0eDTULXk6FWkesXownAew9brrteZfLpiHGoldZwW6jWaScryfnyfe05uxrSSxjTWk6FWQbb5MMOR1Vje0zPUHfa81hsiGW9(MSB)mtoaVPawndl7MFqu0eXCr5dsiOZYWSfSEcmaRgncRGGoN6kIL9kdbwfdwnii30eDT(nbYgSL6gwaWxFiHqO37BYU9Zm5a8Mcy1mSSB(brrteZfLpiHGoldZwW6jWGBAIUw)M)8Ue5FR81hsiqR79nz3(zMCaEtbSAgw2n)GOOjbSI0Rl1IfeoWjWaSA0iSQTm7DcAbfrsyXgfS6QR1tSB)mtWQrJWkDaNZY2GdCRte2AGsZjsclSXXk6FWQqVPj6A9BsyRbknNijSWg)6djecX9(MMOR1VPyDnyuqxRFt2TFMjhGxFiHaD37BAIUw)M)8Ue5FR8nz3(zMCaE9Hecu69(MSB)mtoaVPawndl7MqqNtDfXYEL0cRIbRgeeSA0iS6dIIM(RZsnWIZKKUnbayf9yfLEtt0163eiBWwQBybaF9HecuY79nz3(zMCaEt3I4BoaxFqldGvKLLqBGVPj6A9BoaxFqldGvKLLqBGV(qcHy)EFtt0163ec6Su3Wca(MSB)mtoaV(qcbA79(MSB)mtoaVPawndl7MqqVeYGnmdtegTevJv0JvHs1nnrxRFtdkmNL9cHS3xF9138vgQR1pKcLQqPIQqekD3mSb9Yh03K2mkyHntWk6Wkt016yvU0ToHJFZa4Iwz(MXcRamVlbRO9yRbIv0(EnaSXXJfwbS7anLiYipunqWFsSriRRiWS116cOH2iRRiboESWkANnowHqiOgRcLQqPchhhpwyfLaqZhynLioESWkkdRglcHjyfTRCcwrBaYCi5eoESWkkdRglcHjyfTR6AW6ADSkx6oHJhlSIYWQXIqycwfBM2RmwbyExcwnbwCMGvJ1xVWFSbR2GUwpHJhlSIYWQX(RSJvrlKXkByaYAD9kNhhRgyNHwZyfGRZy1eyXzcwPBtaGoHJJJhlSASt5SaSzcw9z0fYyLyJ(wJvFEOCDcRglHGdAnw5RtzanyekygRmrxRRXQ1ZJNWXnrxRRtbqwSrFRFqZMgaCCt0166uaKfB03AkEqgDxcoUj6ADDkaYIn6BnfpiBGdrS3wxRJJhlSA6wGg42yf0kcw9brrzcwPBR1y1NrxiJvIn6Bnw95HY1yL5eSkaYuwW2D5dyvPXkY6Cch3eDTUofazXg9TMIhK1UfObUTu3wRXXnrxRRtbqwSrFRP4b5GTR1XXXXJfwn2PCwa2mbR4xz44yvxrmw1azSYe9cXQsJv2RwLTFMt44MOR11prLtKOqMdjJJBIUwxtXdY)8UejkiCCQl0hXUzYg2teZfLpiHGoldZwW6jiBKXPbXVi2nt2WE6N3LqGLdadtq2iJpA0lTLzVt)8UecSCayyID7NzcIWXnrxRRP4b5pd1meGYhWXnrxRRP4bzdkmNLbGzntDH(yIUELLSZrfRP)j0rJGGohdc0ab9sid2Wmmry0sun9ukv44MOR11u8GCUga2A5yliziI9M6c95dIIMaDGBECPUHSp0atGb44MOR11u8GS5cw3qllfwoJJBIUwxtXdYOfK)5Dj44MOR11u8G83gKlQSHLaanoUj6ADnfpidQzz1CKM6c9rSBMSH9eXCr5dsiOZYWSfSEcYrw5A6PTuHJBIUwxtXdYGAwwnhrTBr8d0cjb0bql)1GeYe5hS71XXnrxRRP4bzqnlRMJO2Ti(rmUiVnC9si)zt3uxOpIDZKnSNiMlkFqcbDwgMTG1tqoYkxtZlFqu0eXCr5dsiOZYWSfSEcmGgiOZPUIyzVYqqVW0TSRigh3eDTUMIhKb1SSAoIA3I4hlKAGg00s01B5Ikd2WmK6c9bXIDZKnSNiMlkFqcbDwgMTG1tqoYkxhdD00gCG7uxrSSxjPy6rGoenAeI7kIL9kjfhdTcbIWXnrxRRP4bzqnlRMJO2Ti(jIHmanqtlrnFG6c9bXIDZKnSNiMlkFqcbDwgMTG1tqoYkxtZlFqu0eXCr5dsiOZYWSfSEcmGgiOZPUIyzVYqqpTqeoUj6ADnfpidQzz1Ce1UfXpMg4RMZAj0c5cLIfAzQl0hc)brrtqlKlukwOLLe(dIIMiByhh3eDTUMIhKb1SSAoIA3I4htd8vZzTeAHCHsXcTm1f6tBWbUtazl3atbIogAHanCSfSccysIaR)px(GSCacwcoUj6ADnfpidQzz1Ce1UfXpMg4RMZAj0c5cLIfAzQl0NpikAIyUO8bje0zzy2cwpbgqdH)GOOjOfYfkfl0Ysc)brrtGb08chBbRGaMKiW6)ZLpilhGGLGJBIUwxtXdYbBxRtDH(8brrteZfLpiHGoldZwW6jWaCCt016AkEqMyUO8bje0zzy2cwN6c95L2YS3PFExcbwoammXU9Zmz0Oxe7MjByp9Z7siWYbGHjiBKXXXnrxRRP4b5EJ(6EDM6c95dIIM(RZsnWIZKKUnba0)qjXXnrxRRP4bzHLZst016YCPBQDlIFIQUgSUwN6c9PCXgv(GKyr2alPttpv44MOR11u8GSWYzPj6ADzU0n1UfXpSwZUG144MOR11u8GSWYzPj6ADzU0n1UfXp62CIbj4444MOR11jwRzxW6hX6c2BO1mrIMTiM6c9HSDsSUG9gAntKOzlILFqONGCKvUoMqP5LpikAIyUO8bje0zzy2cwpbgGJBIUwxNyTMDbRP4bzZRitUOscBnqQl0NpikA6vlkOGLq(Z7ssGb0GyOvej)k7DYieDIP8s36rJGwrK8RS3jJq0PYPhb6qeoUj6ADDI1A2fSMIhKJ4OfoUCrLzqrrKeiBrAQl0hiOZPUIyzVseOFqqObc6LqgSHzymHGkCCt0166eR1SlynfpihEHzYRC5siRx3CbJJBIUwxNyTMDbRP4bzyfeKzz5sDGjyQl0Nx(GOOjI5IYhKqqNLHzly9eyaoooUj6ADDkQ6AW6A9NxTOGcwc5pVlH6c9biB5gykq0XqhvJgH4xgGlyanazl3atbIogkLsreoESWkAtxSrLpGvelYgyScYXwWcYrS3yvPXQqPBSbRwuSkYOCSciB5giwP38snwrhvJny1IIvrgLJvazl3aXQYXkdRgGlyqch3eDTUofvDnyDTofpityRbk1nSaGPUqFkxSrLpijwKnWs600)qvIUXaKTCdmfzu(Ori(Lb4cgqt5InQ8bjXISbwsNM(hQsHs3yaYwUbMImkhr44XcRO9wp20yvMBSYCSIP8s3LpGvaM3LGvtGfNjyfbUbjCCt0166uu11G116u8GmHTgOu3WcaM6c9rBVYYFExIudS4mHMYfBu5dsIfzdSKon9urZhefn9Z7sKAGfNjjWaA(GOOPFExIudS4mjb5iRCDmiKOBmdccoUj6ADDkQ6AW6ADkEqUe8FbDIeDHD1GeM6c9biB5gykq0XqhvugIdLQX8brrt)8UePgyXzscmar4444MOR11jDBoXGKhcBnqPUHfam1f6de0lHmydZWeHrlr1X8Gav0G4xAlZEN(RZ6EHrj2TFMjJg9Iy3mzd7P)6SUxyucYgz8rJ(GOOjI5IYhKqqNLHzly9eyaIWXnrxRRt62CIbju8G8pVlHalhagsDH(8Yhefnrmxu(Gec6SmmBbRNadWXnrxRRt62CIbju8GCKbHByi7eQl0NpikA6Vol1alotsqoYkxhdcj6gZGGKykNfGnpAeI)GOOP)6SudS4mjb5iRCDmpqqNtDfXYEL0A0OpikA6Vol1alotsqoYkxhZdIheeke7MjByp9Z7siWYbGHjiBKXhtBz270pVlHalhagMy3(zMmMqr0OrFqu00FDwQbwCMK0TjaigAHiAGGEjKbBygMimAjQM(NqPch3eDTUoPBZjgKqXdYazd2swRzxWuxOpV8brrteZfLpiHGoldZwW6jWaCCt0166KUnNyqcfpi)Z7sK)TYuxOpcGgCG1suOj6ADlt)dcPyNge)brrta5Ov3MU0jDBcaI5bX0rz6aoNLTbh4wN(5DjY)wzenAKoGZzzBWbU1PFExI8VvM(qreoUj6ADDs3MtmiHIhKJmiCddzNqDH(8brrt)1zPgyXzss3MaGyEOuAAlZENwTg0GJNy3(zMqde0lHmydZWeHrlr10)GaD44MOR11jDBoXGekEq(VoR7fgrDH(ab9sid2WmK(heOIkAE5dIIMiMlkFqcbDwgMTG1tGb44MOR11jDBoXGekEqMWwduQBybatDH(ab9sid2Wmmry0suDmpigb6O4dIIMiMlkFqcbDwgMTG1tGbJHok0bColBdoWTobKnyl1nSaGhtBz27eq2G9hYgammXU9ZmzmHIOrJ6kIL9kjfhdcuHJBIUwxN0T5edsO4bzcBnqP5ejHf24uxOp6aoNLTbh4wNiS1aLMtKewyJt)dTWXnrxRRt62CIbju8Gme0zPUHfam1f6dIfan4aRLOqt016wM(hesX(OrFqu0eXCr5dsiOZYWSfSEcmar0abDo1vel7vsl6FgeeCCt0166KUnNyqcfpidKnyl1nSaGPUqF(GOOjI5IYhKqqNLHzly9eyWOrqqNtDfXYELHiMbbbh3eDTUoPBZjgKqXdY)8Ue5FRm1f6Zhefnrmxu(Gec6SmmBbRNadWXnrxRRt62CIbju8GmHTgO0CIKWcBCQl0NpikAsaRi96sTybHdCcmy0O2YS3jOfuejHfBuWQRUwpXU9Zmz0iDaNZY2GdCRte2AGsZjsclSXP)juCCt0166KUnNyqcfpilwxdgf01644MOR11jDBoXGekEq(N3Li)BLXXnrxRRt62CIbju8Gmq2GTu3WcaM6c9bc6CQRiw2RKwXmiiJg9brrt)1zPgyXzss3Maa6PuCCt0166KUnNyqcfpidQzz1Ce1UfXpdW1h0Yayfzzj0gyCCt0166KUnNyqcfpidbDwQBybaJJBIUwxN0T5edsO4bzdkmNL9cHS3uxOpqqVeYGnmdtegTevtFOuDtdSbUWBoRikbSIcSI2idqLRRV(oa]] )
+    spec:RegisterPack( "Blood", 20201013, [[dKKVVaqifv9iIk5sqIK2ervFcsKyueHofrfRsrfVcsAwqk3csuTlP6xePggrPJPQYYiIEgrW0uu4AuQSnfv6BuQQghKiohrLQ1POi8offrnpII7Pk2hrYbjQuSqvLEOIIYevuuDrirHrQOiYjjQuALcvVesu0ovv1pHeLCuirkpvHPQQ4RqIsTxL(lHbl4WKwmGhJYKH6YiBgIpRknAf50swnKivVgs1SLYTfYUP63QmCk54kkslh0ZPy6IUoqBhs47ukJNsv58kkTEkvz(cL9JQ3F7NDG1K2)skRKY(t2FsOllkXojmd7Fh5Sw0oSug66lTdxJOD8TDhEhw6STtX7NDyoqiJ2XOIaBAwNpZGksUdaWQLYT(cSdSM0(xszLu2FY(tYUK)K0(LeLSdJfX2)sANS7yQWyYxGDGjdBhYfp8TDhMhM5KMt8aktVENsEC5IhqzXYdGG8WpjGgpiPSsklpopUCXdZSj1FjZmbpUCXdOCEaLgyXqNhuhZd4cMZYdGwynjE4q4HViYn8qE8WysXNTM6ytFhTYKM9ZoiJHCgz2p7)F7NDqUc0i8(DhmyLeS0DGVSZoNrEc1KWcKMgrcaqO3HuKwUHhKHhKKhKNhMNhaarq6y1zL)kGGojSrQ15DqRDOSSoFhSZzKNqnjSaPPr0M7Fj3p7GCfOr497oyWkjyP7aaebPJcnYQGfta0Ud3bT4b55bjYdqTWccfKNDfJnDY(ktA4HyX4bOwybHcYZUIXME58Gu8Wp74b5SdLL157q9ksfhIatAoT5(xc7NDqUc0i8(DhmyLeS0DabDQNvejYt8JhKIhEzyEqEEac6ftyD2iipidpmdz3HYY68DerrhCwXHiAGSclWqsJmBU)NX(zhklRZ3HTd2WOGkxajZ5QZODqUc0i8(DZ9VD7NDqUc0i8(DhmyLeS0DmppaaIG0XQZk)vabDsyJuRZ7Gw7qzzD(oGLLvJeLlmwkJ2C)p39ZoixbAeE)UdgSscw6osf(szFI0wojSyjpi1dpGsKLhIfJhsf(szFI0wojSyjpiZdpiPS8qSy8as9oLcifPLB4bz4Hzy3ouwwNVdiPwL)kqAAez2CZDGjefSL7N9)V9ZouwwNVJOYXceir2J2b5kqJW73n3)sUF2b5kqJW73DWGvsWs3b7Ug(S5DS6SYFfqqNe2i168oKu8S8G88Ge5H55b2Dn8zZ7aT7Wyy5OtWoKu8S8qSy8W88qQnYZoq7omgwo6eStUc0impiNDOSSoFhaT7Wceq4SBU)LW(zhklRZ3babnee9YF3b5kqJW73n3)Zy)SdYvGgH3V7GbRKGLUdLLfkib5uurgEqQhEqsEiwmEac6epidp8JhKNhGGEXewNnc2XesXQKhKIhMRS7qzzD(ouitDsyb2m0M7F72p7GCfOr497oyWkjyP7aaebPd6txBwHjHK)MtDqRDOSSoFhT6Dkncu6G43iYZn3)ZD)SdLL157qDgzsO2emT12b5kqJW73n3)2)(zhklRZ3bsbjG2D4DqUc0i8(DZ9pkz)SdLL157aqFfhIiHfdDZoixbAeE)U5(xUVF2b5kqJW73DWGvsWs3b7Ug(S5DS6SYFfqqNe2i168oKI0Yn8Gu8GCx2DOSSoFhGgsujfz2C))t29ZoixbAeE)UdxJODav7HbD0ncG6vajSaamZZ3HYY68Dav7HbD0ncG6vajSaamZZ3C))73(zhKRancVF3bdwjblDhS7A4ZM3XQZk)vabDsyJuRZ7qksl3WdYZdZZdaGiiDS6SYFfqqNe2i168oOfpippabDQNvejYtmdEqkEGPMuKveTdLL157GnlRDj88IjaAQj3bHGqSu4AeTd2SS2LWZlMaOPMCZ9)pj3p7GCfOr497ouwwNVd1EMjfQgbY5P4qewNncUdgSscw6oKipWURHpBEhRoR8xbe0jHnsToVdPiTCdpidpyhpippKk8LYEwrKipbUiEqkE4ND8GC4HyX4bjYdPcFPSNvejYtGlIhKHhKWm4b5SdxJODO2ZmPq1iqopfhIW6SrWn3))KW(zhKRancVF3HYY68Derqc9Csnce1F3bdwjblDhsKhy31WNnVJvNv(Rac6KWgPwN3HuKwUHhKNhMNhaarq6y1zL)kGGojSrQ15DqlEqEEac6upRisKNyg8Gu8Ge4b5WdYZdZZdqTWccfKNDfJnDY(ktA4HyX4bOwybHcYZUIXME58Gu8Wp72HRr0oIiiHEoPgbI6VBU))nJ9ZoixbAeE)UdLL157qntOqDYiGQ9oOGDqTTdgSscw6oWeaicshQ27Gc2b1MataGiiD8zZ3HRr0ouZekuNmcOAVdkyhuBBU))z3(zhKRancVF3HYY68DOMjuOozeq1EhuWoO22bdwjblDhPcFPSprAlN6wSKhKHhKWpEqEEGMPGLLfH7yyba0k)vuo6whEhUgr7qntOqDYiGQ9oOGDqTT5()3C3p7GCfOr497ouwwNVd1mHc1jJaQ27Gc2b12oyWkjyP7aaebPJvNv(Rac6KWgPwN3bT4b55bmbaIG0HQ9oOGDqTjWeaicsh0IhKNhMNhOzkyzzr4ogwaaTYFfLJU1H3HRr0ouZekuNmcOAVdkyhuBBU))z)7NDqUc0i8(DhmyLeS0DaaIG0XQZk)vabDsyJuRZ7Gw7qzzD(oSUSoFZ9)puY(zhKRancVF3bdwjblDhqqNm9SIirEIF8Gu8WldVdLL157aODhwKQ1M7)FY99ZoixbAeE)UdgSscw6oGGEXewNnc2XesXQKhKIhMlpmhEqzzHcsqofvKzhklRZ3HXMcJk)vevMCZ9VKYUF2b5kqJW73DWGvsWs3X88GfLDTvOG2HYY68Da1YqcmP4n3)s(B)SdLL157qbUOY1Sox0QiGDqUc0i8(DZ9VKsUF2b5kqJW73DWGvsWs3X88qQnYZoq7omgwo6eStUc0impelgpmppWURHpBEhODhgdlhDc2HKINDhklRZ3bwDw5VciOtcBKAD(M7FjLW(zhKRancVF3bdwjblDhaGiiDGZjHzQOgUBsLHopi1dpy)7qzzD(oYlcWKNtBU)LCg7NDqUc0i8(DhklRZ3btBnHYY6CrRm5oyWkjyP7OC2fv(RaRr6ljSZWdsXdYUJwzsHRr0oIQSE1SoFZ9VK2TF2b5kqJW73DOSSoFhmT1eklRZfTYK7OvMu4AeTdYyiNrMn3)so39ZoixbAeE)UdLL157GPTMqzzDUOvMChTYKcxJODys1XkeV5M7WcsSlcqZ9Z()3(zhKRancVF3C)l5(zhKRancVF3C)lH9ZoixbAeE)U5(Fg7NDqUc0i8(DZ9VD7NDOSSoFhwxwNVdYvGgH3VBU)N7(zhKRancVF3HRr0ou7zMuOAeiNNIdryD2i4ouwwNVd1EMjfQgbY5P4qewNncU5(3(3p7GCfOr497ouwwNVd2SS2LWZlMaOPMCheccXsHRr0oyZYAxcpVycGMAYn3ChrvwVAwNVF2))2p7GCfOr497oyWkjyP7yI0wo1TyjpidpyNS8qSy8Ge5H55Hx4bAXdYZdtK2YPUfl5bz4H5oxEqo7qzzD(oqHgzvWIjaA3H3C)l5(zhKRancVF3bdwjblDhLZUOYFfynsFjHem8Gup8WePTCQZaHqYZDOSSoFhysZjHjHf60M7FjSF2b5kqJW73DWGvsWs3HrrbjaA3HfMPIAyEqEEOC2fv(RaRr6ljSZWdsXdYYdYZdaGiiDG2DyHzQOgUdAXdYZdaGiiDG2DyHzQOgUdPiTCdpidp8RBhpmhE4LH3HYY68DGjnNeMewOtBU)NX(zhKRancVF3bdwjblDhtK2YPUfl5bz4b7KLhq58Ge5bjLLhMdpaaIG0bA3HfMPIA4oOfpiNDOSSoFhfJaoqhlqoywjiM2C)B3(zhKRancVF3bdwjblDhtK2YPUfl5bz4b73oEqEEWIY(70b26qksl3WdYWd2TdLL157WOmyHuSsBclLLBU5omP6yfI3p7)F7NDqUc0i8(DhmyLeS0Dab9IjSoBeSJjKIvjpiZdp8twEqEEqI8W88qQnYZoW5KjpyuNCfOryEiwmEyEEGDxdF28oW5KjpyuhskEwEiwmEaaebPJvNv(Rac6KWgPwN3bT4b5SdLL157atAojmjSqN2C)l5(zhKRancVF3bdwjblDhwu2FNoWwhsrA5gEqgE4LH5H5WdsUdLL157WOmyHuSsBclLLBU)LW(zhKRancVF3bdwjblDhZZdaGiiDS6SYFfqqNe2i168oO1ouwwNVdG2DymSC0j4M7)zSF2b5kqJW73DWGvsWs3baicsh4CsyMkQH7qksl3WdYWd)62XdZHhEz4ozFedmjEiwmEqI8aaicsh4CsyMkQH7qksl3WdY8WdqqN6zfrI8esGhIfJhaarq6aNtcZurnChsrA5gEqMhEqI8WldZdOYdS7A4ZM3bA3HXWYrNGDiP4z5H5WdP2ip7aT7Wyy5OtWo5kqJW8WC4bj5b5WdXIXdaGiiDGZjHzQOgUBsLHopidpibEqo8G88ae0lMW6SrWoMqkwL8Gup8GKYUdLL157isHWZgKC8M7F72p7GCfOr497oyWkjyP7asiqYmPanAhklRZ3HzszO3irorcq32bZPz3C)p39ZoixbAeE)UdgSscw6oMNhaarq6y1zL)kGGojSrQ15DqRDOSSoFhtKctbzmKZOn3)2)(zhKRancVF3bdwjblDhSjf(sgbcuzzDU24bPE4HFDucpippirEaaebPprrNjvtz6MuzOZdY8WdsKhSJhq58GXIAnrQWxknDG2DybWvnEqo8qSy8GXIAnrQWxknDG2DybWvnEqkEqsEqo7qzzD(oaA3Hfax12C)Js2p7GCfOr497oyWkjyP7aaebPdCojmtf1WDtQm05bzE4H5YdYZdqqVycRZgb7ycPyvYds9Wd)SBhklRZ3rKcHNni54n3)Y99ZoixbAeE)UdgSscw6oGGEXewNncYds9Wd)KvwEqEEyEEaaebPJvNv(Rac6KWgPwN3bT2HYY68DaCozYdgT5()NS7NDqUc0i8(DhmyLeS0Dab9IjSoBeSJjKIvjpiZdpirE4ND8aQ8aaicshRoR8xbe0jHnsToVdAXdZHhSJhqLhmwuRjsf(sPPprkmfMewOt8WC4HuBKN9jsHjaKu0jyNCfOryEyo8GK8GC4HyX4HSIirEcCr8Gm8Wpz3HYY68DGjnNeMewOtBU))9B)SdYvGgH3V7GbRKGLUdJf1AIuHVuA6ysZjH6ybMy6S8Gup8Ge2HYY68DGjnNeQJfyIPZU5()NK7NDqUc0i8(DhmyLeS0DySOwtKk8LsthtAozeyqIhK6HhKWouwwNVdmP5KrGbPn3))KW(zhKRancVF3bdwjblDhaGiiDS6SYFfqqNe2i168oOfpelgpabDQNvejYtmdEqgE4LH3HYY68DmrkmfMewOtBU))nJ9ZoixbAeE)UdgSscw6oaarq6y1zL)kGGojSrQ15DqRDOSSoFhaT7WcGRABU))z3(zhKRancVF3bdwjblDhaGiiDgSImNlmSde(sDqlEiwmEi1g5zhQwfwGj2fzDMkRZ7KRancZdXIXdglQ1ePcFP00XKMtc1XcmX0z5bPE4bj3HYY68DGjnNeQJfyIPZU5()3C3p7GCfOr497oyWkjyP7aaebPZGvK5CHHDGWxQdAXdXIXdP2ip7q1QWcmXUiRZuzDENCfOryEiwmEWyrTMiv4lLMoM0CYiWGepi1dpi5ouwwNVdmP5KrGbPn3))S)9ZouwwNVd25gWiRSoFhKRancVF3C))dLSF2HYY68Da0UdlaUQTdYvGgH3VBU))j33p7GCfOr497oyWkjyP7ac6upRisKNqc8Gm8WldZdXIXdaGiiDGZjHzQOgUBsLHopifpm3DOSSoFhtKctHjHf60M7FjLD)SdYvGgH3V7GbRKGLUdiOxmH1zJGDmHuSk5bP4bjLDhklRZ3HczQtI8GqYZn3CZDGccAQZ3)skRKY(t2F)2Hnf6L)A2HCBK1btcZd2XdklRZ5HwzstNhFhkyoDWDmQOzgpGkpmtIqVA1oSGhs1ODix8W32DyEyMtAoXdOm96Dk5XLlEaLflpacYd)KaA8GKYkPS8484YfpmZMu)LmZe84YfpGY5buAGfdDEqDmpGlyolpaAH1K4HdHh(Ii3Wd5XdJjfF2AQJnDECEC5IhqzyFedmjmpaqihK4b2fbOjpaqVLB68GCdJrwPHh8Zr5tkmcbSXdklRZn8W5Tz784klRZnDliXUianFanKOskcnxJOh1EMjfQgbY5P4qewNncYJRSSo30TGe7Ia0e1hPbnKOskcncbHyPW1i6HnlRDj88IjaAQj5X5XLlEaLH9rmWKW8aHccolpKveXd5eXdklpipugEqrHwnfOrDECLL15MNOYXceir2J4XvwwNBq9rAG2DybciCw0kKh2Dn8zZ7y1zL)kGGojSrQ15DiP4zLxIZZURHpBEhODhgdlhDc2HKINnwS5tTrE2bA3HXWYrNGDYvGgHLdpUYY6CdQpsdqqdbrV8xECLL15guFKwHm1jHfyZqOvipklluqcYPOIms9izSyqqNK5N8qqVycRZgb7ycPyvk1CLLhxzzDUb1hPB17uAeO0bXVrKNOvipaGiiDqF6AZkmjK83CQdAXJRSSo3G6J0QZitc1MGPTgpUYY6CdQpsJuqcODhMhxzzDUb1hPb0xXHisyXq3WJRSSo3G6J0GgsujfzqRqEy31WNnVJvNv(Rac6KWgPwN3HuKwUrk5US84klRZnO(inOHevsrO5Ae9av7HbD0ncG6vajSaamZZ5XvwwNBq9rAqdjQKIqJqqiwkCnIEyZYAxcpVycGMAs0kKh2Dn8zZ7y1zL)kGGojSrQ15DifPLBKFEaqeKowDw5VciOtcBKADEh0sEiOt9SIirEIziftnPiRiIhxzzDUb1hPbnKOskcnxJOh1EMjfQgbY5P4qewNncIwH8ir2Dn8zZ7y1zL)kGGojSrQ15DifPLBKXo5tf(szpRisKNaxKu)StoXIjXuHVu2ZkIe5jWfjJeMHC4XvwwNBq9rAqdjQKIqZ1i6jIGe65KAeiQ)IwH8ir2Dn8zZ7y1zL)kGGojSrQ15DifPLBKFEaqeKowDw5VciOtcBKADEh0sEiOt9SIirEIziLeKJ8Zd1cliuqE2vm20j7RmPjwmOwybHcYZUIXME5s9ZoECLL15guFKg0qIkPi0CnIEuZekuNmcOAVdkyhuBOvipycaebPdv7Dqb7GAtGjaqeKo(S584klRZnO(inOHevsrO5Ae9OMjuOozeq1EhuWoO2qRqEsf(szFI0wo1TyPms4N80mfSSSiChdlaGw5VIYr36W84klRZnO(inOHevsrO5Ae9OMjuOozeq1EhuWoO2qRqEaarq6y1zL)kGGojSrQ15Dql5XeaicshQ27Gc2b1MataGiiDql5NNMPGLLfH7yyba0k)vuo6whMhxzzDUb1hPTUSohTc5baebPJvNv(Rac6KWgPwN3bT4XvwwNBq9rAG2DyrQwOvipqqNm9SIirEIFs9YW84klRZnO(iTXMcJk)vevMeTc5bc6ftyD2iyhtifRsPM7CuwwOGeKtrfz4XvwwNBq9rAOwgsGjfJwH8mVfLDTvOG4XvwwNBq9rAf4IkxZ6CrRIa4XvwwNBq9rAS6SYFfqqNe2i16C0kKN5tTrE2bA3HXWYrNGDYvGgHJfBE2Dn8zZ7aT7Wyy5OtWoKu8S84klRZnO(iDEraM8CcTc5baebPdCojmtf1WDtQm0L6X(5XvwwNBq9rAM2AcLL15Iwzs0CnIEIQSE1SohTc5PC2fv(RaRr6ljSZiLS84klRZnO(intBnHYY6CrRmjAUgrpKXqoJm84klRZnO(intBnHYY6CrRmjAUgrpMuDScX8484klRZnDYyiNrMh25mYtOMewG00icTc5bFzNDoJ8eQjHfinnIeaGqVdPiTCJmsk)8aGiiDS6SYFfqqNe2i168oOfpUYY6CtNmgYzKb1hPvVIuXHiWKMtOvipaGiiDuOrwfSycG2D4oOL8seQfwqOG8SRySPt2xzstSyqTWccfKNDfJn9YL6NDYHhxzzDUPtgd5mYG6J0ru0bNvCiIgiRWcmK0idAfYde0PEwrKipXpPEzy5HGEXewNnckZmKLhxzzDUPtgd5mYG6J02oydJcQCbKmNRoJ4XvwwNB6KXqoJmO(inSSSAKOCHXszeAfYZ8aGiiDS6SYFfqqNe2i168oOfpUYY6CtNmgYzKb1hPHKAv(RaPPrKbTc5jv4lL9jsB5KWILs9GsKnwSuHVu2NiTLtclwkZJKYglgs9oLcifPLBKzg2XJZJRSSo30JQSE1So)bfAKvblMaODhgTc5zI0wo1TyPm2jBSysC(x4bAj)ePTCQBXszM7CLdpopUCXdYTo7Ik)LhWAK(s8aKMPGfKIip5HYWdsAhkvE4q4Hi1(4HjsB5epyU2HgpyNSOu5HdHhIu7JhMiTLt8q58GYdVWd0QZJRSSo30JQSE1Soh1hPXKMtctcl0j0kKNYzxu5VcSgPVKqcgPEMiTLtDgiesEYJZJlx8Wm)Cukjp0OKhuNhi7Rmz5V8W32DyEymvudZdy4z15XvwwNB6rvwVAwNJ6J0ysZjHjHf6eAfYJrrbjaA3HfMPIAy5lNDrL)kWAK(sc7msjR8aGiiDG2DyHzQOgUdAjpaicshODhwyMkQH7qksl3iZVUDZ5LH5X5XvwwNB6rvwVAwNJ6J0fJaoqhlqoywjiMqRqEMiTLtDlwkJDYIYLOKYohaqeKoq7oSWmvud3bTKdpopUYY6CtpQY6vZ6CuFK2OmyHuSsBclLLOviptK2YPUflLX(TtElk7VthyRdPiTCJm2XJZJRSSo30nP6yfIFWKMtctcl0j0kKhiOxmH1zJGDmHuSkL55NSYlX5tTrE2boNm5bJ6KRanchl28S7A4ZM3boNm5bJ6qsXZglgaicshRoR8xbe0jHnsToVdAjhECLL15MUjvhRqmQpsBugSqkwPnHLYs0kKhlk7VthyRdPiTCJmVm8CKKhxzzDUPBs1XkeJ6J0aT7Wyy5Otq0kKN5barq6y1zL)kGGojSrQ15DqlECLL15MUjvhRqmQpshPq4zdsogTc5baebPdCojmtf1WDifPLBK5x3U58YWDY(igysXIjraqeKoW5KWmvud3HuKwUrMhiOt9SIirEcjelgaicsh4CsyMkQH7qksl3iZJeFzyuz31WNnVd0UdJHLJob7qsXZoNuBKNDG2DymSC0jyNCfOr45iPCIfdaebPdCojmtf1WDtQm0LrcYrEiOxmH1zJGDmHuSkL6rsz5XvwwNB6MuDScXO(iTzszO3irorcq32bZPzrRqEGecKmtkqJ4XvwwNB6MuDScXO(i9ePWuqgd5mcTc5zEaqeKowDw5VciOtcBKADEh0IhxzzDUPBs1XkeJ6J0aT7WcGRAOvipSjf(sgbcuzzDU2K65xhLiVebarq6tu0zs1uMUjvg6Y8ir7q5glQ1ePcFP00bA3Hfax1KtSyglQ1ePcFP00bA3Hfax1Kss5WJRSSo30nP6yfIr9r6ifcpBqYXOvipaGiiDGZjHzQOgUBsLHUmpZvEiOxmH1zJGDmHuSkL65ND84klRZnDtQowHyuFKg4CYKhmcTc5bc6ftyD2iOup)Kvw5NhaebPJvNv(Rac6KWgPwN3bT4XvwwNB6MuDScXO(inM0CsysyHoHwH8ab9IjSoBeSJjKIvPmps8NDOcaIG0XQZk)vabDsyJuRZ7GwZXounwuRjsf(sPPprkmfMewOtZj1g5zFIuycajfDc2jxbAeEoskNyXYkIe5jWfjZpz5XvwwNB6MuDScXO(inM0CsOowGjMolAfYJXIAnrQWxknDmP5KqDSatmDwPEKapUCXdOS1KnXdJkAMXdvKvJIip1SoNhG0mbpmZjnNqPy4HzointMhmeXdfcpKt0S8q5SgiM4bGlN4bfOAvwKHhoipui8aM0CsOowGjMolpGa6SSo3WdihKhaUCQZJRSSo30nP6yfIr9rAmP5KrGbj0kKhJf1AIuHVuA6ysZjJadss9ibECLL15MUjvhRqmQpsprkmfMewOtOvipaGiiDS6SYFfqqNe2i168oOvSyqqN6zfrI8eZqMxgMhxzzDUPBs1XkeJ6J0aT7WcGRAOvipaGiiDS6SYFfqqNe2i168oOfpUYY6Ct3KQJvig1hPXKMtc1XcmX0zrRqEaarq6myfzoxyyhi8L6GwXILAJ8SdvRclWe7ISotL15DYvGgHJfZyrTMiv4lLMoM0CsOowGjMoRupsYJRSSo30nP6yfIr9rAmP5KrGbj0kKhaqeKodwrMZfg2bcFPoOvSyP2ip7q1QWcmXUiRZuzDENCfOr4yXmwuRjsf(sPPJjnNmcmij1JK84klRZnDtQowHyuFKMDUbmYkRZ5XvwwNB6MuDScXO(inq7oSa4QgpUYY6Ct3KQJvig1hPNifMctcl0j0kKhiOt9SIirEcjiZldhlgaicsh4CsyMkQH7MuzOl1C5XvwwNB6MuDScXO(iTczQtI8GqYt0kKhiOxmH1zJGDmHuSkLssz3CZDb]] )
 
 end

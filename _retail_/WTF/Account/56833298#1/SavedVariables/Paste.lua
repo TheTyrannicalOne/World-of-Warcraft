@@ -45,8 +45,8 @@ PasteDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["loaded"] = true,
-			["where"] = "Default",
 			["whispertarget"] = "",
+			["where"] = "Default",
 			["pos"] = {
 			},
 		},

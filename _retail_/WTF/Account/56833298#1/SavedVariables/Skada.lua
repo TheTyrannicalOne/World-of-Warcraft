@@ -218,15 +218,15 @@ SkadaDB = {
 		["Default"] = {
 			["windows"] = {
 				{
-					["y"] = 23.86616134643555,
-					["x"] = -234.0107421875,
 					["barslocked"] = true,
-					["barwidth"] = 239.1666870117188,
+					["y"] = 23.86616134643555,
+					["point"] = "BOTTOMRIGHT",
 					["mode"] = "Damage",
+					["barwidth"] = 239.1666870117188,
 					["background"] = {
 						["height"] = 199.1881103515625,
 					},
-					["point"] = "BOTTOMRIGHT",
+					["x"] = -234.0107421875,
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -351,8 +351,12 @@ SkadaDB = {
 					["height"] = 30,
 				}, -- [2]
 			},
+			["report"] = {
+				["mode"] = "Healing taken",
+			},
 			["versions"] = {
 				["1.6.3"] = true,
+				["1.8.0"] = true,
 				["1.6.4"] = true,
 				["1.6.7"] = true,
 			},
@@ -362,22 +366,19 @@ SkadaDB = {
 				["Healing taken"] = 5,
 				["DPS"] = 3,
 			},
-			["report"] = {
-				["mode"] = "Healing taken",
-			},
 		},
 		["Shanyt - Argent Dawn"] = {
 			["windows"] = {
 				{
-					["barslocked"] = true,
 					["y"] = 22.86580467224121,
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
+					["x"] = -220.009521484375,
+					["barslocked"] = true,
 					["barwidth"] = 251.1667633056641,
+					["mode"] = "DPS",
 					["background"] = {
 						["height"] = 211.1883697509766,
 					},
-					["x"] = -220.009521484375,
+					["point"] = "BOTTOMRIGHT",
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -502,11 +503,9 @@ SkadaDB = {
 					["x"] = 0,
 				}, -- [2]
 			},
-			["report"] = {
-				["mode"] = "Healing taken",
-			},
 			["versions"] = {
 				["1.6.7"] = true,
+				["1.8.0"] = true,
 				["1.6.4"] = true,
 				["1.6.3"] = true,
 			},
@@ -515,6 +514,9 @@ SkadaDB = {
 				["Threat"] = 1,
 				["Healing taken"] = 7,
 				["Damage"] = 4,
+			},
+			["report"] = {
+				["mode"] = "Healing taken",
 			},
 		},
 	},

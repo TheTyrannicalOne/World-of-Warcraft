@@ -6,7 +6,7 @@ OneRing_Config = {
 		["Dalaran-Tynkster"] = "Shanyt",
 		["Black Dragonflight-Durlok-3"] = "default",
 	},
-	["_GameVersion"] = "8.3.7",
+	["_GameVersion"] = "9.0.1",
 	["_OPieVersion"] = "Xe 1a (3.102)",
 	["ProfileStorage"] = {
 		["Shanyt"] = {
@@ -835,10 +835,10 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuede=1Sr1m",
 				}, -- [15]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["Mounts8"] = {
 				{

@@ -31,42 +31,17 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
-			},
-		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[57006] = {
-			["title"] = "A Worthy Ally",
-			["objectives"] = {
-				"0/1 Use the Deepflame Campfire", -- [1]
-				"0/1 Choose an ally", -- [2]
-				"0/3 Ally quests complete", -- [3]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
 		[56378] = {
 			["title"] = "The Missing Crew",
 			["objectives"] = {
 				"0/1 Captain Stonestare found", -- [1]
 				"0/1 Captain Greensails found", -- [2]
 				"0/1 Thermospark found", -- [3]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[39060] = {
@@ -77,29 +52,18 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
+		[57006] = {
+			["title"] = "A Worthy Ally",
+			["objectives"] = {
+				"0/1 Use the Deepflame Campfire", -- [1]
+				"0/1 Choose an ally", -- [2]
+				"0/3 Ally quests complete", -- [3]
+			},
+		},
 		[57378] = {
 			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
 				"0/1 \"Curse of Stone\" book obtained", -- [1]
-			},
-		},
-		[54438] = {
-			["title"] = "Crucible of Storms: Relics of Shadow",
-			["objectives"] = {
-				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
-		[36615] = {
-			["title"] = "My Very Own Castle",
-			["objectives"] = {
-				"172/2000 Garrison Resources gathered (Optional)", -- [1]
-				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
 		[56499] = {
@@ -110,9 +74,46 @@ QuestTogether = {
 				"0/1 Win a Battleground", -- [3]
 			},
 		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
+			},
+		},
+		[54438] = {
+			["title"] = "Crucible of Storms: Relics of Shadow",
+			["objectives"] = {
+				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
+			},
+		},
+		[50604] = {
+			["title"] = "Tortollan Seekers",
+			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+			},
+		},
+		[36615] = {
+			["title"] = "My Very Own Castle",
+			["objectives"] = {
+				"172/2000 Garrison Resources gathered (Optional)", -- [1]
+				"0/1 Upgrade your garrison to Tier 3", -- [2]
+			},
+		},
+		[56211] = {
+			["title"] = "Scrying Stones",
+			["objectives"] = {
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[50599] = {
@@ -121,11 +122,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
-		[56211] = {
-			["title"] = "Scrying Stones",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[50601] = {
@@ -155,7 +155,7 @@ QuestTogether = {
 		[42483] = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Steelscale's Fin", -- [1]
 			},
 		},
 		[31891] = {
@@ -188,8 +188,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

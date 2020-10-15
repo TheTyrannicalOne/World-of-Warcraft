@@ -1,10 +1,10 @@
-lightweight tag 4cce91d3447aee8c95baf158f81c6bea71df39b0 2.0.8
+lightweight tag 4484e57c3178fe21894b8cd701b3c72b20a6746d 2.0.9
 Author:	solaldunckel <solaldunckel@gmail.com>
-Date:	Sat Jan 18 04:47:04 2020 +0100
+Date:	Tue Oct 13 23:54:46 2020 +0200
 
-commit 4cce91d3447aee8c95baf158f81c6bea71df39b0
+commit 4484e57c3178fe21894b8cd701b3c72b20a6746d
 Author: solaldunckel <solaldunckel@gmail.com>
-Date:   Sat Jan 18 04:47:04 2020 +0100
+Date:   Tue Oct 13 23:54:46 2020 +0200
 
-    8.3 tag + Bagnon fix + Icon Anchor option
+    Update TOC for 9.0.1
 

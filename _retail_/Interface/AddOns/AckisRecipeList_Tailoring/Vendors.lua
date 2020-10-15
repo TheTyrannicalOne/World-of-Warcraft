@@ -72,8 +72,8 @@ function module:InitializeVendors()
 	AddVendor(45558,	L["Lizna Goldweaver"],			Z.ORGRIMMAR,				41.3,	79.2,	"Horde")
 	AddVendor(50386,	L["Sal Ferraga"],			Z.TWILIGHT_HIGHLANDS,			78.6,	76.9,	"Alliance")
 	AddVendor(50433,	L["Aristaleon Sunweaver"],		Z.TWILIGHT_HIGHLANDS,			75.2,	50.1,	"Horde")
-	AddVendor(64051,	L["Esha the Loommaiden"],		Z.SHRINE_OF_TWO_MOONS,			29.8,	54.0,	"Horde")
-	AddVendor(64052,	L["Raishen the Needle"],		Z.SHRINE_OF_SEVEN_STARS,		67.6,	46.2,	"Alliance")
+	AddVendor(64051,	L["Esha the Loommaiden"],		Z.VALE_OF_ETERNAL_BLOSSOMS,		29.8,	54.0,	"Horde")	-- Needs updating
+	AddVendor(64052,	L["Raishen the Needle"],		Z.VALE_OF_ETERNAL_BLOSSOMS,		67.6,	46.2,	"Alliance")	-- Needs updating
 	AddVendor(77382,	L["Christopher Macdonald"],		Z.LUNARFALL,				0.0,	0.0,	"Alliance") -- Alliance Garrison
 	AddVendor(79864,	L["Warra the Weaver"],			Z.FROSTWALL,				0.0,	0.0,	"Horde") -- Horde Garrison
 	AddVendor(87049,	L["Steven Cochrane"],			Z.STORMSHIELD,				52.2,	36.8,	"Alliance") -- Alliance Ashran

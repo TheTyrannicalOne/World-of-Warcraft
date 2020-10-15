@@ -11,7 +11,33 @@ local state = Hekili.State
 local PTR = ns.PTR
 
 
-if UnitClassBase( 'player' ) == 'PALADIN' then
+-- Conduits
+-- [-] punish_the_guilty
+-- [x] vengeful_shock
+
+-- Covenant
+-- [-] ringing_clarity
+-- [-] hallowed_discernment
+-- [-] righteous_might
+-- [x] the_long_summer
+
+-- Endurance
+-- [-] divine_call
+-- [-] golden_path
+-- [x] shielding_words
+
+-- Protection Endurance
+-- [x] resolute_defender
+-- [x] royal_decree
+
+-- Finesse
+-- [ ] echoing_blessings -- NYI: auras not identified
+-- [x] lights_barding
+-- [-] pure_concentration
+-- [x] wrench_evil
+
+
+if UnitClassBase( "player" ) == "PALADIN" then
     local spec = Hekili:NewSpecialization( 66 )
 
     spec:RegisterResource( Enum.PowerType.HolyPower )
@@ -21,61 +47,51 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
     spec:RegisterTalents( {
         holy_shield = 22428, -- 152261
         redoubt = 22558, -- 280373
-        blessed_hammer = 22430, -- 204019
+        blessed_hammer = 23469, -- 204019
 
         first_avenger = 22431, -- 203776
         crusaders_judgment = 22604, -- 204023
-        bastion_of_light = 22594, -- 204035
+        moment_of_glory = 23468, -- 327193
 
-        fist_of_justice = 22179, -- 198054
+        fist_of_justice = 22179, -- 234299
         repentance = 22180, -- 20066
         blinding_light = 21811, -- 115750
 
-        retribution_aura = 22433, -- 203797
+        unbreakable_spirit = 22433, -- 114154
         cavalier = 22434, -- 230332
         blessing_of_spellwarding = 22435, -- 204018
 
-        unbreakable_spirit = 22705, -- 114154
-        final_stand = 21795, -- 204077
+        divine_purpose = 17597, -- 223817
+        holy_avenger = 17599, -- 105809
+        seraphim = 17601, -- 152262
+
         hand_of_the_protector = 17601, -- 213652
-
-        judgment_of_light = 22189, -- 183778
         consecrated_ground = 22438, -- 204054
-        aegis_of_light = 23087, -- 204150
+        judgment_of_light = 22189, -- 183778
 
-        last_defender = 21201, -- 203791
+        sanctified_wrath = 23457, -- 171648
         righteous_protector = 21202, -- 204074
-        seraphim = 22645, -- 152262
+        final_stand = 22645, -- 204077
     } )
 
     -- PvP Talents
     spec:RegisterPvpTalents( { 
-        gladiators_medallion = 3469, -- 208683
-        adaptation = 3470, -- 214027
-        relentless = 3471, -- 196029
-        shield_of_virtue = 861, -- 215652
-        warrior_of_light = 860, -- 210341
-        inquisition = 844, -- 207028
         cleansing_light = 3472, -- 236186
-        holy_ritual = 3473, -- 199422
-        luminescence = 3474, -- 199428
-        unbound_freedom = 3475, -- 199325
-        hallowed_ground = 90, -- 216868
-        steed_of_glory = 91, -- 199542
-        judgments_of_the_pure = 93, -- 216860
         guarded_by_the_light = 97, -- 216855
         guardian_of_the_forgotten_queen = 94, -- 228049
+        hallowed_ground = 90, -- 216868
+        inquisition = 844, -- 207028
+        judgments_of_the_pure = 93, -- 216860
+        luminescence = 3474, -- 199428
         sacred_duty = 92, -- 216853
+        shield_of_virtue = 861, -- 215652
+        steed_of_glory = 91, -- 199542
+        unbound_freedom = 3475, -- 305394
+        warrior_of_light = 860, -- 210341
     } )
 
     -- Auras
     spec:RegisterAuras( {
-        aegis_of_light = {
-            id = 204150,
-            duration = 6,
-            type = "Magic",
-            max_stack = 1,
-        },
         ardent_defender = {
             id = 31850,
             duration = 8,
@@ -87,14 +103,9 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             type = "Magic",
             max_stack = 1,
         },
-        avengers_valor = {
-            id = 197561,
-            duration = 15,
-            max_stack = 1,
-        },
         avenging_wrath = {
             id = 31884,
-            duration = function () return azerite.lights_decree.enabled and 25 or 20 end,
+            duration = function () return ( talent.sanctified_wrath.enabled and 1.25 or 1 ) * ( azerite.lights_decree.enabled and 25 or 20 ) end,
             max_stack = 1,
         },
         blessed_hammer = {
@@ -104,32 +115,37 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         },
         blessing_of_freedom = {
             id = 1044,
-            duration = function () return ( ( level < 116 and equipped.uthers_guard ) and 1.5 or 1 ) * 8 end,
+            duration = 8,
             type = "Magic",
             max_stack = 1,
         },
         blessing_of_protection = {
             id = 1022,
-            duration = function () return ( ( level < 116 and equipped.uthers_guard ) and 1.5 or 1 ) * 10 end,
+            duration = 10,
             max_stack = 1,
             type = "Magic",
         },
         blessing_of_sacrifice = {
             id = 6940,
-            duration = function () return ( ( level < 116 and equipped.uthers_guard ) and 1.5 or 1 ) * 12 end,
+            duration = 12,
             max_stack = 1,
             type = "Magic",
         },
         blessing_of_spellwarding = {
             id = 204018,
-            duration = function () return ( ( level < 116 and equipped.uthers_guard ) and 1.5 or 1 ) * 10 end,
+            duration = 10,
             type = "Magic",
             max_stack = 1,
         },
         blinding_light = {
-            id = 115750,
+            id = 105421,
             duration = 6,
             type = "Magic",
+            max_stack = 1,
+        },
+        concentration_aura = {
+            id = 317920,
+            duration = 3600,
             max_stack = 1,
         },
         consecration = {
@@ -170,8 +186,15 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             duration = 12,
             max_stack = 1,
         },
-        contemplation = {
-            id = 121183,
+        devotion_aura = {
+            id = 465,
+            duration = 3600,
+            max_stack = 1,
+        },
+        divine_purpose = {
+            id = 223819,
+            duration = 12,
+            max_stack = 1,
         },
         divine_shield = {
             id = 642,
@@ -180,12 +203,17 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             max_stack = 1,
         },
         divine_steed = {
-            id = 221883,
-            duration = 3,
+            id = 221886,
+            duration = function () return 3 * ( 1 + ( conduit.lights_barding.mod * 0.01 ) ) end,
             max_stack = 1,
         },
         final_stand = {
             id = 204079,
+            duration = 8,
+            max_stack = 1,
+        },
+        first_avenger = {
+            id = 327225,
             duration = 8,
             max_stack = 1,
         },
@@ -213,18 +241,30 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             duration = 3,
             max_stack = 1,
         },
-        heart_of_the_crusader = {
-            id = 32223,
+        holy_avenger = {
+            id = 105809,
+            duration = 20,
+            max_stack = 1,
+        },
+        judgment = {
+            id = 197277,
+            duration = 15,
+            max_stack = 1,
         },
         judgment_of_light = {
             id = 196941,
             duration = 30,
             max_stack = 25,
         },
+        moment_of_glory = {
+            id = 327193,
+            duration = 15,
+            max_stack = 3,
+        },
         redoubt = {
             id = 280375,
-            duration = 8,
-            max_stack = 1,
+            duration = 10,
+            max_stack = 3,
         },
         repentance = {
             id = 20066,
@@ -232,7 +272,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             max_stack = 1,
         },
         retribution_aura = {
-            id = 203797,
+            id = 183435,
             duration = 3600,
             max_stack = 1,
         },
@@ -246,21 +286,21 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             duration = 4.5,
             max_stack = 1,
         },
-        shield_of_the_righteous_icd = {
-            duration = 1,
-            max_stack = 1,
-            generate = function( t, type )
-                if type ~= "buff" then return end
-
-                local applied = action.shield_of_the_righteous.lastCast
-
-                if applied > 0 then
-                    t.applied = applied
-                    t.expires = applied + 1
-                    t.count = 1
-                    t.caster = "player"
-                end
-            end,
+        shining_light = {
+            id = 182104,
+            duration = 15,
+            max_stack = 5,
+        },
+        -- TODO: Check SimC implementation if they bother.
+        shining_light_full = {
+            id = 327510,
+            duration = 15,
+            max_stack = 1
+        },
+        turn_evil = {
+            id = 10326,
+            duration = 40,
+            max_stack = 1
         },
 
 
@@ -274,21 +314,43 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
     } )
 
 
+    -- Legendaries
+    -- Vanguard's Momentum
+    -- Badge of the Mad Paragon
+    -- Final Verdict
+    -- From Dusk till Dawn
+    -- The Magistrate's Judgment
+
+
+    -- Conduits
+    -- Ringing Clarity
+    -- Vengeful Shock
+    -- Focused Light
+    -- Light's Reach
+    -- Templar's Vindication
+    -- The Long Summer
+    -- Truth's Wake
+    -- Virtuous Command
+    -- Righteous Might
+    -- Hallowed Discernment
+    -- Punish the Guilty
+
+
     -- Gear Sets
-    spec:RegisterGear( 'tier19', 138350, 138353, 138356, 138359, 138362, 138369 )
-    spec:RegisterGear( 'tier20', 147160, 147162, 147158, 147157, 147159, 147161 )
-        spec:RegisterAura( 'sacred_judgment', {
+    spec:RegisterGear( "tier19", 138350, 138353, 138356, 138359, 138362, 138369 )
+    spec:RegisterGear( "tier20", 147160, 147162, 147158, 147157, 147159, 147161 )
+        spec:RegisterAura( "sacred_judgment", {
             id = 246973,
             duration = 8,
             max_stack = 1,
         } )        
 
-    spec:RegisterGear( 'tier21', 152151, 152153, 152149, 152148, 152150, 152152 )
-    spec:RegisterGear( 'class', 139690, 139691, 139692, 139693, 139694, 139695, 139696, 139697 )
+    spec:RegisterGear( "tier21", 152151, 152153, 152149, 152148, 152150, 152152 )
+    spec:RegisterGear( "class", 139690, 139691, 139692, 139693, 139694, 139695, 139696, 139697 )
 
     spec:RegisterGear( "breastplate_of_the_golden_valkyr", 137017 )
     spec:RegisterGear( "heathcliffs_immortality", 137047 )
-    spec:RegisterGear( 'justice_gaze', 137065 )
+    spec:RegisterGear( "justice_gaze", 137065 )
     spec:RegisterGear( "saruans_resolve", 144275 )
     spec:RegisterGear( "tyelca_ferren_marcuss_stature", 137070 )
     spec:RegisterGear( "tyrs_hand_of_faith", 137059 )
@@ -311,33 +373,43 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
     end )
 
 
+    spec:RegisterHook( "spend", function( amt, resource )
+        if amt > 0 and resource == "holy_power" then
+            if talent.righteous_protector.enabled then
+                reduceCooldown( "avenging_wrath", amt )
+                reduceCooldown( "guardian_of_ancient_kings", amt )
+            end
+            if talent.fist_of_justice.enabled then
+                reduceCooldown( "hammer_of_justice", 2 * amt )
+            end
+            if legendary.uthers_devotion.enabled then
+                setCooldown( "blessing_of_freedom", max( 0, cooldown.blessing_of_freedom.remains - 1 ) )
+                setCooldown( "blessing_of_protection", max( 0, cooldown.blessing_of_protection.remains - 1 ) )
+                setCooldown( "blessing_of_sacrifice", max( 0, cooldown.blessing_of_sacrifice.remains - 1 ) )
+                setCooldown( "blessing_of_spellwarding", max( 0, cooldown.blessing_of_spellwarding.remains - 1 ) )
+            end
+            if legendary.relentless_inquisitor.enabled then
+                addStack( "relentless_inquisitor", nil, amt )
+            end                
+            if legendary.of_dusk_and_dawn.enabled and holy_power.current == 0 then applyBuff( "blessing_of_dusk" ) end
+        end        
+    end )
+
+
+    spec:RegisterHook( "gain", function( amt, resource, overcap )
+        if legendary.of_dusk_and_dawn.enabled and amt > 0 and resource == "holy_power" and holy_power.current == 5 then
+            applyBuff( "blessing_of_dawn" )
+        end
+    end )
+
+
     -- Abilities
     spec:RegisterAbilities( {
-        aegis_of_light = {
-            id = 204150,
-            cast = 6,
-            channeled = true,
-            cooldown = 180,
-            gcd = "spell",
-
-            toggle = "defensives",
-            defensives = true,
-
-
-            startsCombat = false,
-            texture = 135909,
-
-            start = function ()
-                applyBuff( "aegis_of_light" )
-            end,
-        },
-
-
         ardent_defender = {
             id = 31850,
             cast = 0,
             cooldown = function ()
-                return ( talent.unbreakable_spirit.enabled and 0.7 or 1 ) * ( ( level < 116 and equipped.pillars_of_inmost_light ) and 0.75 or 1 ) * 120 end,
+                return ( talent.unbreakable_spirit.enabled and 0.7 or 1 ) * 120 end,
             gcd = "spell",
 
             toggle = "defensives",
@@ -355,7 +427,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         avengers_shield = {
             id = 31935,
             cast = 0,
-            cooldown = 15,
+            cooldown = function () return buff.moment_of_glory.up and 0 or 15 end,
             gcd = "spell",
 
             interrupt = true,
@@ -364,18 +436,28 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             texture = 135874,
 
             handler = function ()
-                applyBuff( "avengers_valor" )
                 applyDebuff( "target", "avengers_shield" )
                 interrupt()
 
-                if level < 116 and equipped.breastplate_of_the_golden_valkyr then
-                    cooldown.guardian_of_ancient_kings.expires = cooldown.guardian_of_ancient_kings.expires - ( 3 * min( 3 + ( talent.redoubt.enabled and 1 or 0 ) + ( equipped.tyelca_ferren_marcuss_stature and 2 or 0 ), active_enemies ) )
+                removeStack( "moment_of_glory", nil, 1 )
+
+                if talent.first_avenger.enabled then
+                    applyBuff( "first_avenger" )
                 end
 
-                if talent.redoubt.enabled then
-                    applyBuff( "redoubt" ) 
-                end
+                gain( buff.holy_avenger.up and 3 or 1, "holy_power" )
+
+                if conduit.vengeful_shock.enabled then applyDebuff( "target", "vengeful_shock" ) end
             end,
+
+            auras = {
+                -- Conduit
+                vengeful_shock = {
+                    id = 340007,
+                    duration = 5,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -383,7 +465,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             id = 31884,
             cast = 0,
             cooldown = function () return ( essence.vision_of_perfection.enabled and 0.87 or 1 ) * 120 end,
-            gcd = "spell",
+            gcd = "off",
 
             toggle = "cooldowns",
 
@@ -392,27 +474,6 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
 
             handler = function ()
                 applyBuff( "avenging_wrath" )
-                applyBuff( "avenging_wrath_crit" )
-            end,
-        },
-
-
-        bastion_of_light = {
-            id = 204035,
-            cast = 0,
-            cooldown = 120,
-            gcd = "spell",
-
-            toggle = "defensives",
-            defensives = true,
-
-            startsCombat = false,
-            texture = 535594,
-
-            talent = "bastion_of_light",
-
-            handler = function ()
-                gainCharges( "shield_of_the_righteous", 3 )
             end,
         },
 
@@ -421,8 +482,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             id = 204019,
             cast = 0,
             charges = 3,
-            cooldown = 4.5,
-            recharge = 4.5,
+            cooldown = 6,
+            recharge = 6,
             hasteCD = true,
             gcd = "spell",
 
@@ -434,6 +495,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             handler = function ()
                 applyDebuff( "target", "blessed_hammer" )
                 last_blessed_hammer = query_time
+
+                gain( buff.holy_avenger.up and 3 or 1, "holy_power" )
             end,
         },
 
@@ -441,9 +504,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         blessing_of_freedom = {
             id = 1044,
             cast = 0,
-            charges = 1,
             cooldown = 25,
-            recharge = 25,
             gcd = "spell",
 
             spend = 0.07,
@@ -461,9 +522,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         blessing_of_protection = {
             id = 1022,
             cast = 0,
-            charges = 1,
             cooldown = 300,
-            recharge = 300,
             gcd = "spell",
 
             spend = 0.15,
@@ -476,8 +535,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             texture = 135964,
 
             notalent = "blessing_of_spellwarding",
-
-            readyTime = function () return debuff.forbearance.remains end,
+            nodebuff = "forbearance",
 
             handler = function ()
                 applyBuff( "blessing_of_protection" )
@@ -489,9 +547,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         blessing_of_sacrifice = {
             id = 6940,
             cast = 0,
-            charges = 1,
             cooldown = 120,
-            recharge = 120,
             gcd = "off",
 
             spend = 0.07,
@@ -517,15 +573,13 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             spend = 0.15,
             spendType = "mana",
 
-            -- toggle = "cooldowns",
             defensives = true,
 
             startsCombat = false,
             texture = 135880,
 
             talent = "blessing_of_spellwarding",
-
-            readyTime = function () return debuff.forbearance.remains end,
+            nodebuff = "forbearance",
 
             handler = function ()
                 applyBuff( "blessing_of_spellwarding" )
@@ -540,6 +594,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             cooldown = 90,
             gcd = "spell",
 
+            toggle = "interrupts",
+
             spend = 0.06,
             spendType = "mana",
 
@@ -548,9 +604,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             startsCombat = true,
             texture = 571553,
 
-            toggle = "interrupts",
-
             talent = "blinding_light",
+
             usable = function () return target.casting end,
             readyTime = function () return debuff.casting.up and ( debuff.casting.remains - 0.5 ) or 3600 end,
             handler = function ()
@@ -575,7 +630,13 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             startsCombat = false,
             texture = 135953,
 
+            usable = function ()
+                return buff.dispellable_poison.up or buff.dispellable_disease.up, "requires poison or disease"
+            end,
+
             handler = function ()
+                removeBuff( "dispellable_poison" )
+                removeBuff( "dispellable_disease" )
             end,
         },
 
@@ -583,7 +644,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         consecration = {
             id = 26573,
             cast = 0,
-            cooldown = 4.5,
+            cooldown = 9,
             hasteCD = true,
             gcd = "spell",
 
@@ -591,25 +652,47 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             texture = 135926,
 
             handler = function ()
-                applyBuff( "consecration", 12 )
+                applyBuff( "consecration" )
                 applyDebuff( "target", "consecration_dot" )
                 last_consecration = query_time
             end,
         },
 
 
-        --[[ contemplation = {
-            id = 121183,
+        crusader_aura = {
+            id = 32223,
             cast = 0,
-            cooldown = 8,
+            cooldown = 0,
             gcd = "spell",
-
+            
             startsCombat = true,
-            texture = 134916,
-
+            texture = 135890,
+            
             handler = function ()
+                removeBuff( "concentration_aura" )
+                removeBuff( "devotion_aura" )
+                removeBuff( "retribution_aura" )
+                applyBuff( "crusader_aura" )
             end,
-        }, ]]
+        },
+        
+
+        devotion_aura = {
+            id = 465,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell",
+            
+            startsCombat = true,
+            texture = 135893,
+            
+            handler = function ()
+                removeBuff( "concentration_aura" )
+                removeBuff( "crusader_aura" )
+                removeBuff( "retribution_aura" )
+                applyBuff( "devotion_aura" )
+            end,
+        },
 
 
         divine_shield = {
@@ -624,13 +707,13 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             startsCombat = false,
             texture = 524354,
 
-            readyTime = function () return debuff.forbearance.remains end,
+            nodebuff = "forbearance",
 
             handler = function ()
                 applyBuff( "divine_shield" )
                 applyDebuff( "player", "forbearance" )
 
-                if talent.last_defender.enabled then
+                if talent.final_stand.enabled then
                     applyDebuff( "target", "final_stand" )
                     active_dot.final_stand = min( active_dot.final_stand, active_enemies )
                 end
@@ -643,7 +726,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             cast = 0,
             charges = function () return talent.cavalier.enabled and 2 or nil end,
             cooldown = 45,
-            recharge = 45,
+            recharge = function () return talent.cavalier.enabled and 45 or nil end,
             gcd = "spell",
 
             startsCombat = false,
@@ -668,7 +751,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             texture = 135907,
 
             handler = function ()
-                gain( 0.5 * health.max, "health" )
+                gain( 1.67 * 1.68 * ( 1 + stat.versatility_atk_mod ) * stat.spell_power, "health" )
             end,
         },
 
@@ -676,7 +759,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         guardian_of_ancient_kings = {
             id = 86659,
             cast = 0,
-            cooldown = 300,
+            cooldown = function () return 300 - ( conduit.royal_decree.mod * 0.001 ) end,
             gcd = "off",
 
             toggle = "defensives",
@@ -687,14 +770,24 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
 
             handler = function ()
                 applyBuff( "guardian_of_ancient_kings" )
+                if conduit.royal_decree.enabled then applyBuff( "royal_decree" ) end
             end,
+
+            auras = {
+                -- Conduit
+                royal_decree = {
+                    id = 340147,
+                    duration = 15,
+                    max_stack = 1
+                }
+            }
         },
 
 
         hammer_of_justice = {
             id = 853,
             cast = 0,
-            cooldown = function () return ( level < 116 and equipped.justice_gaze ) and 15 or 60 end,
+            cooldown = 60,
             gcd = "spell",
 
             spend = 0.04,
@@ -713,8 +806,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             id = 53595,
             cast = 0,
             charges = 2,
-            cooldown = 4.5,
-            recharge = 4.5,
+            cooldown = 6,
+            recharge = 6,
             hasteCD = true,
             gcd = "spell",
 
@@ -724,6 +817,25 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             notalent = "blessed_hammer",
 
             handler = function ()
+                gain( buff.holy_avenger.up and 3 or 1, "holy_power" )
+            end,
+        },
+
+
+        
+
+        hammer_of_wrath = {
+            id = 24275,
+            cast = 0,
+            cooldown = 7.5,
+            gcd = "spell",
+            
+            startsCombat = true,
+            texture = 613533,
+            
+            usable = function () return target.health_pct < 20 or ( level > 57 and buff.avenging_wrath.up ) or buff.hammer_of_wrath_hallow.up, "requires low health, avenging_wrath, or ashen_hallow" end,
+            handler = function ()
+                gain( buff.holy_avenger.up and 3 or 1, "holy_power" )
             end,
         },
 
@@ -748,25 +860,21 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         },
 
 
-        hand_of_the_protector = {
-            id = 213652,
+        holy_avenger = {
+            id = 105809,
             cast = 0,
-            charges = function () return ( level < 116 and equipped.saruans_resolve ) and 2 or nil end,
-            cooldown = function () return ( ( level < 116 and equipped.saruans_resolve ) and 0.9 or 1 ) * 15 * haste end,
-            recharge = function () return ( ( level < 116 and equipped.saruans_resolve ) and 0.9 or 1 ) * 15 * haste end,
+            cooldown = 180,
             gcd = "spell",
+            
+            toggle = "cooldowns",
 
-            toggle = "defensives",
-            defensives = true,
+            startsCombat = true,
+            texture = 571555,
 
-            startsCombat = false,
-            texture = 236248,
-
-            talent = "hand_of_the_protector",
-
+            talent = "holy_avenger",
+            
             handler = function ()
-                if buff.avenging_wrath_crit.up then removeBuff( "avenging_wrath_crit" ) end
-                gain( 0.1 * health.max, "health" )
+                applyBuff( "holy_avenger" )
             end,
         },
 
@@ -774,7 +882,12 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         judgment = {
             id = 275779,
             cast = 0,
-            charges = function () return talent.crusaders_judgment.enabled and 2 or nil end,
+            charges = function ()
+                local c = 1
+                if talent.crusaders_judgment.enabled then c = c + 1 end
+                if buff.grand_crusader.up then c = c + 1 end
+                return c > 1 and c or nil
+            end,
             cooldown = 6,
             recharge = 6,
             hasteCD = true,
@@ -788,8 +901,9 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
 
             handler = function ()
                 applyDebuff( "target", "judgment" )
+                gain( buff.holy_avenger.up and 3 or 1, "holy_power" )
 
-                if talent.judgment_of_light.enabled then applyDebuff( "target", "judgment_of_light", 30, 25 ) end
+                if talent.judgment_of_light.enabled then applyDebuff( "target", "judgment_of_light", nil, 25 ) end
 
                 if talent.fist_of_justice.enabled then
                     cooldown.hammer_of_justice.expires = max( 0, cooldown.hammer_of_justice.expires - 6 ) 
@@ -801,7 +915,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         lay_on_hands = {
             id = 633,
             cast = 0,
-            cooldown = function () return ( ( level < 116 and equipped.tyrs_hand_of_faith ) and 0.3 or 1 ) * ( talent.unbreakable_spirit.enabled and 0.7 or 1 ) * 600 end,
+            cooldown = function () return ( talent.unbreakable_spirit.enabled and 0.7 or 1 ) * 600 end,
             gcd = "spell",
 
             toggle = "defensives",
@@ -810,7 +924,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             startsCombat = false,
             texture = 135928,
 
-            readyTime = function () return debuff.forbearance.remains end,
+            nodebuff = "forbearance",
 
             handler = function ()
                 gain( health.max, "health" )
@@ -820,26 +934,22 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         },
 
 
-        light_of_the_protector = {
-            id = 184092,
+        moment_of_glory = {
+            id = 327193,
             cast = 0,
-            charges = function () return ( level < 116 and equipped.saruans_resolve ) and 2 or nil end,
-            cooldown = function () return ( ( level < 116 and equipped.saruans_resolve ) and 0.9 or 1 ) * 17 * haste end,
-            recharge = function () return ( ( level < 116 and equipped.saruans_resolve ) and 0.9 or 1 ) * 17 * haste end,
-            hasteCD = true,
+            cooldown = 90,
             gcd = "spell",
+            
+            toggle = "cooldowns",
 
-            toggle = "defensives",
-            defensives = true,
+            startsCombat = true,
+            texture = 589117,
 
-            startsCombat = false,
-            texture = 1360763,
-
-            notalent = "hand_of_the_protector",
-
+            talent = "moment_of_glory",
+            
             handler = function ()
-                if buff.avenging_wrath_crit.up then removeBuff( "avenging_wrath_crit" ) end
-                gain( 0.1 * health.max, "health" )
+                setCooldown( "avengers_shield", 0 )
+                applyBuff( "moment_of_glory", nil, 3 )
             end,
         },
 
@@ -899,7 +1009,24 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
                 applyDebuff( "target", "repentance" )
             end,
         },
+        
 
+        retribution_aura = {
+            id = 183435,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell",
+            
+            startsCombat = false,
+            texture = 135889,
+            
+            handler = function ()
+                removeBuff( "concentration_aura" )
+                removeBuff( "crusader_aura" )
+                removeBuff( "devotion_aura" )
+                applyBuff( "retribution_aura" )
+            end,
+        },
 
         seraphim = {
             id = 152262,
@@ -907,14 +1034,21 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             cooldown = 45,
             gcd = "spell",
 
+            spend = function ()
+                if buff.divine_purpose.up then return 0 end
+                return 3
+            end,
+            spendType = "holy_power",
+
             startsCombat = false,
             texture = 1030103,
 
-            usable = function () return cooldown.shield_of_the_righteous.charges > 0 end,
+            talent = "seraphim",
+
             handler = function ()
+                removeBuff( "divine_purpose" )                
                 local used = min( 2, cooldown.shield_of_the_righteous.charges )
                 applyBuff( "seraphim", used * 8 )
-                spendCharges( "shield_of_the_righteous", used )
             end,
         },
 
@@ -922,33 +1056,417 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
         shield_of_the_righteous = {
             id = 53600,
             cast = 0,
-            charges = 3,
-            cooldown = 18,
-            recharge = 18,
-            hasteCD = true,
+            cooldown = 1,
+            icd = 1,
             gcd = "off",
+
+            spend = function ()
+                if buff.divine_purpose.up then return 0 end
+                return 3
+            end,
+            spendType = "holy_power",
 
             defensives = true,
 
             startsCombat = true,
             texture = 236265,
 
-            readyTime = function () return max( gcd.remains, buff.shield_of_the_righteous_icd.remains, ( not talent.bastion_of_light.enabled or cooldown.bastion_of_light.remains > 0 ) and ( recharge * ( 2 - charges_fractional ) ) or 0 ) end,
             handler = function ()
-                removeBuff( "avengers_valor" )
+                if talent.redoubt.enabled then addStack( "redoubt", nil, 3 ) end
 
-                applyBuff( "shield_of_the_righteous", buff.shield_of_the_righteous.remains + 4.5 )
-                applyBuff( "shield_of_the_righteous_icd" )
+                removeBuff( "divine_purpose" )                
 
-                if talent.righteous_protector.enabled then
-                    cooldown.light_of_the_protector.expires = max( 0, cooldown.light_of_the_protector.expires - 3 )
-                    cooldown.hand_of_the_protector.expires = max( 0, cooldown.hand_of_the_protector.expires - 3 )
-                    cooldown.avenging_wrath.expires = max( 0, cooldown.avenging_wrath.expires - 3 )
+                if buff.shining_light_full.up then applyBuff( "shining_light_full" )
+                else
+                    addStack( "shining_light", nil, 1 )
+                    if buff.shining_light.stack == 5 then
+                        applyBuff( "shining_light_full" )
+                        removeBuff( "shining_light" )
+                    end
                 end
 
+                applyBuff( "shield_of_the_righteous", buff.shield_of_the_righteous.remains + 4.5 )
                 last_shield = query_time
+
+                if conduit.resolute_defender.enabled and buff.ardent_defender.up then
+                    buff.ardent_defender.expires = buff.ardent_defender.expires + ( buff.ardent_defender.duration * ( conduit.resolute_defender.mod * 0.01 ) )
+                end
             end,
         },
+
+
+        turn_evil = {
+            id = 10326,
+            cast = function () return 1.5 * ( 1 + ( conduit.wrench_evil.mod * 0.01 ) ) end,
+            cooldown = 15,
+            gcd = "spell",
+            
+            spend = 0.1,
+            spendType = "mana",
+            
+            startsCombat = true,
+            texture = 571559,
+            
+            handler = function ()
+                applyDebuff( "turn_evil" )
+            end,
+        },
+
+
+        word_of_glory = {
+            id = 85673,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell",
+            
+            spend = function ()
+                if buff.divine_purpose.up or buff.shining_light.stack == 5 or buff.royal_decree.up then return 0 end
+                return 3
+            end,
+            spendType = "holy_power",
+            
+            startsCombat = false,
+            texture = 133192,
+            
+            handler = function ()
+                if buff.royal_decree.up then removeBuff( "royal_decree" )
+                elseif buff.divine_purpose.up then removeBuff( "divine_purpose" )
+                else removeBuff( "shining_light_full" ) end
+
+                gain( 2.9 * stat.spell_power * ( 1 + stat.versatility_atk_mod ), "health" )
+
+                if buff.vanquishers_hammer.up then
+                    applyBuff( "shield_of_the_righteous" )
+                    removeBuff( "vanquishers_hammer" )
+                end
+
+                if conduit.shielding_words.enabled then applyBuff( "shielding_words" ) end
+            end,
+
+            auras = {
+                -- Conduit
+                shielding_words = {
+                    id = 338788,
+                    duration = 10,
+                    max_stack = 1
+                }
+            }
+        },
+
+
+        -- Paladin - Kyrian    - 304971 - divine_toll          (Divine Toll)
+        divine_toll = {
+            id = 304971,
+            cast = 0,
+            cooldown = 60,
+            gcd = "spell",
+
+            startsCombat = true,
+            texture = 3565448,
+
+            toggle = "essences",
+
+            handler = function ()
+                if state.spec.protection then
+                    -- Cast Avenger's Shield x5.
+                    -- This is lazy and may be wrong/bad.
+                    for i = 1, active_enemies do
+                        class.abilities.avengers_shield.handler()
+                    end
+                elseif state.spec.retribution then
+                    -- Cast Judgment x5.
+                    for i = 1, active_enemies do
+                        class.abilities.judgment.handler()
+                    end
+                elseif state.spec.holy then
+                    -- Cast Holy Shock x5.
+                    for i = 1, active_enemies do
+                        class.abilities.holy_shock.handler()
+                    end
+                end
+            end
+        },
+
+        -- Paladin - Necrolord - 328204 - vanquishers_hammer   (Vanquisher's Hammer)
+        vanquishers_hammer = {
+            id = 328204,
+            cast = 0,
+            cooldown = 30,
+            gcd = "spell",
+
+            spend = function ()
+                if buff.divine_purpose.up then return 0 end
+                return 1
+            end,
+            spendType = "holy_power",
+
+            startsCombat = true,
+            texture = 3578228,
+
+            toggle = "essences",
+
+            handler = function ()
+                removeBuff( "divine_purpose" )                
+                applyBuff( "vanquishers_hammer" )
+            end,
+
+            auras = {
+                vanquishers_hammer = {
+                    id = 328204,
+                    duration = 15,
+                    max_stack = 1
+                }
+            }
+        },
+
+        -- Paladin - Night Fae - 328620 - blessing_of_summer   (Blessing of Summer)
+        blessing_of_summer = {
+            id = 328620,
+            cast = 0,
+            cooldown = 45,
+            gcd = "spell",
+
+            spend = 0.05,
+            spendType = "mana",
+
+            startsCombat = false,
+            texture = 3636845,
+
+            toggle = "essences",
+            buff = "blessing_of_summer_active",
+
+            handler = function ()
+                applyBuff( "blessing_of_summer" ) -- We'll just apply to self because we don't care.
+                
+                removeBuff( "blessing_of_summer_active" )
+                applyBuff( "blessing_of_autumn_active" )
+                setCooldown( "blessing_of_autumn", 45 )
+            end,
+
+            auras = {
+                blessing_of_summer = {
+                    id = 328620,
+                    duration = function () return 30 * ( 1 - ( conduit.the_long_summer.mod * 0.01 ) ) end,
+                    max_stack = 1,
+                },
+
+                blessing_of_summer_active = {
+                    duration = 3600,
+                    max_stack = 1,
+                    generate = function( t )
+                        if IsActiveSpell( 328620 ) then
+                            t.name = class.auras.blessing_of_summer.name .. " Active"
+                            t.count = 1
+                            t.applied = now
+                            t.expires = now + 3600
+                            t.caster = "player"
+                            return
+                        end
+
+                        t.count = 0
+                        t.applied = 0
+                        t.expires = 0
+                        t.caster = "nobody"
+                    end,
+                },
+            }
+        },
+
+        blessing_of_autumn = {
+            id = 328622,
+            cast = 0,
+            cooldown = 45,
+            gcd = "spell",
+
+            spend = 0.05,
+            spendType = "mana",
+
+            startsCombat = false,
+            texture = 3636843,
+
+            toggle = "essences",
+            buff = "blessing_of_autumn_active",
+
+            handler = function ()
+                applyBuff( "blessing_of_autumn" )
+
+                removeBuff( "blessing_of_autumn_active" )
+                applyBuff( "blessing_of_winter_active" )
+                setCooldown( "blessing_of_winter", 45 )
+            end,
+
+            auras = {
+                blessing_of_autumn = {
+                    id = 328622,
+                    duration = 30,
+                    max_stack = 1,                    
+                },
+                blessing_of_autumn_active = {
+                    duration = 3600,
+                    max_stack = 1,
+                    generate = function( t )
+                        if IsActiveSpell( 328622 ) then
+                            t.name = class.auras.blessing_of_autumn.name .. " Active"
+                            t.count = 1
+                            t.applied = now
+                            t.expires = now + 3600
+                            t.caster = "player"
+                            return
+                        end
+
+                        t.count = 0
+                        t.applied = 0
+                        t.expires = 0
+                        t.caster = "nobody"
+                    end,
+                }
+            }
+        },
+
+        blessing_of_winter = {
+            id = 328281,
+            cast = 0,
+            cooldown = 45,
+            gcd = "spell",
+
+            spend = 0.05,
+            spendType = "mana",
+
+            startsCombat = false,
+            texture = 3636846,
+
+            toggle = "essences",
+            buff = "blessing_of_winter_active",
+
+            handler = function ()
+                applyBuff( "blessing_of_winter" )
+
+                removeBuff( "blessing_of_winter_active" )
+                applyBuff( "blessing_of_spring_active" )
+                setCooldown( "blessing_of_spring", 45 )
+            end,
+
+            auras = {
+                blessing_of_winter = {
+                    id = 328281,
+                    duration = 30,
+                    max_stack = 1,                    
+                },
+                blessing_of_winter_debuff = {
+                    id = 328506,
+                    duration = 6,
+                    max_stack = 10
+                },
+                blessing_of_winter_active = {
+                    duration = 3600,
+                    max_stack = 1,
+                    generate = function( t )
+                        if IsActiveSpell( 328281 ) then
+                            t.name = class.auras.blessing_of_winter.name .. " Active"
+                            t.count = 1
+                            t.applied = now
+                            t.expires = now + 3600
+                            t.caster = "player"
+                            return
+                        end
+
+                        t.count = 0
+                        t.applied = 0
+                        t.expires = 0
+                        t.caster = "nobody"
+                    end,
+                }
+            }
+        },
+
+        blessing_of_spring = {
+            id = 328282,
+            cast = 0,
+            cooldown = 45,
+            gcd = "spell",
+
+            spend = 0.05,
+            spendType = "mana",
+
+            startsCombat = false,
+            texture = 3636844,
+
+            toggle = "essences",
+            buff = "blessing_of_spring_active",
+
+            handler = function ()
+                applyBuff( "blessing_of_spring" )
+
+                removeBuff( "blessing_of_spring_active" )
+                applyBuff( "blessing_of_summer_active" )
+                setCooldown( "blessing_of_summer", 45 )
+            end,
+
+            auras = {
+                blessing_of_spring = {
+                    id = 328281,
+                    duration = 30,
+                    max_stack = 1,
+                    friendly = true,
+                },
+                blessing_of_spring_active = {
+                    duration = 3600,
+                    max_stack = 1,
+                    generate = function( t )
+                        if IsActiveSpell( 328282 ) then
+                            t.name = class.auras.blessing_of_winter.name .. " Active"
+                            t.count = 1
+                            t.applied = now
+                            t.expires = now + 3600
+                            t.caster = "player"
+                            return
+                        end
+
+                        t.count = 0
+                        t.applied = 0
+                        t.expires = 0
+                        t.caster = "nobody"
+                    end,
+                }
+            }
+        },
+
+        -- Paladin - Venthyr   - 316958 - ashen_hallow         (Ashen Hallow)
+        ashen_hallow = {
+            id = 316958,
+            cast = function () return 1.5 * haste end,
+            cooldown = 120,
+            gcd = "spell",
+
+            startsCombat = false,
+            texture = 3565722,
+
+            toggle = "essences",
+
+            auras = {
+                hammer_of_wrath_hallow = {
+                    duration = 30,
+                    max_stack = 1,
+                    generate = function( t )
+                        if IsUsableSpell( 24275 ) and not ( target.health_pct < 20 or ( level > 57 and ( buff.avenging_wrath.up or buff.crusade.up ) ) and not buff.final_verdict.up ) then
+                            t.name = class.abilities.hammer_of_wrath.name .. " " .. class.abilities.ashen_hallow.name
+                            t.count = 1
+                            t.applied = action.ashen_hallow.lastCast
+                            t.expires = action.ashen_hallow.lastCast + 30
+                            t.caster = "player"
+                            return
+                        end
+
+                        t.count = 0
+                        t.applied = 0
+                        t.expires = 0
+                        t.caster = "nobody"
+                    end,
+                },        
+            }
+        },
+
+
     } )
 
 
@@ -969,7 +1487,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
     } )
 
 
-    spec:RegisterPack( "Protection Paladin", 20200410, [[diKnVaqiuspcLqBss1OiPCkssRcLGxjjmljr3ssj1UG6xaQHjjDmsOLPc6zsk10aOUMkW2ijY3uHuJJKaoNKsSoscQ5jP4EKO9Hs0bLuswijvpKKGmrscuxKKOQtssGSsaStuQgkjrzPKevEkqtfLYEH8xsnyQ6WuwmOEmvMSexgzZc(miJwjNwQvdqETkuZwOBRs7wXVv1WrXYr1ZjA6IUUsTDsW3bKXRcX5vHK1tsO5RI2pHrkIydbwSKqSFy1dRwfWkwfxTwQDvfvebMhfdHazm3XgeHah7siqvg)tYL9pcVkZIwPheiJDuX3ki2qGYFZDecCLjJufgyGH6CTHXU)cSSV7OL9poUfsGL91bmceE3Xuf0GGrGflje7hw9WQvbSIvXvRLAxT6biqBNRNJab7RkecC1LcniyeyHKoeilk8Qm(NKl7FeEvMfTspcayrHFLjJufgyGH6CTHXU)cSSV7OL9poUfsGL91bSaawu4Rvm8ok8kwTsH)WQhwvaGaawu4vHw2arsbaSOWxRf(AvPqfHxLJG3htyeySLPeXgc82zdzz)dIne7kIydbsJbhPcsDeOJ3jXBdbYQWNwKMeljUXS6lMgdosfHVUWBUS)blxnfl6pOZfP5n0kPFlXULXHiPWZsH)qHVUWZQWRMWdVdbSrqTu)bDSHwjEZi81fE4DiGnEHMuxOanfIJ3mcFDHhEhcyOTXlTn6pOTX10K6J7bsI3mcFDHhEhc4sRqpKwUAkwWBgHVUWdVdbmZN9p4nJWRkc0Cz)dcuUAkw0FqNlsZBOvs)wIse7hIydbsJbhPcsDeOJ3jXBdbYQWNwKMeljUXS6lMgdosfHVUWNwKMedBYS)r)bDSHwjMgdosfHVUWBUS)blxnfl6pOZfP5n0kPFlXULXHiPWxJWRic0Cz)dce2Kz)J(d6ydTsuIyV2i2qG0yWrQGuhb64Ds82qGQj8lYI5cZ4sHVgHhWvfEvrGMl7FqGXgAL6pOZfPz4FsU85OeXoGrSHaPXGJubPoc0X7K4THavt4xKfZfMXLcFncpGRk8QIanx2)Gax2u0FqNlsZW)KC5ZrjI9dqSHaPXGJubPoc0X7K4THavt47X93EG0f7AqKwXQvRw9kf(Ae(fzXCHV2reEwq4veF4bcVQcFDHFrwmxygxk81i8hCGWxx4tlstI5n0kPFl1m8pjx(CmngCKkiqZL9piWydTs9h05I0m8pjx(CuIyxLqSHaPXGJubPoc0X7K4THavt47X93EG0f7AqKwXAxTA1Ru4Rr4xKfZf(Ahr4zbHxrSkj8Qk81f(fzXCHzCPWxJWFWbiqZL9piWydTs9h05I0m8pjx(CuIy)OrSHaPXGJubPoc0X7K4THavt47X93EG0f7AqKwLQwT6vk81i8lYI5cFTJi8SGWxfF0cVQcFDHFrwmxygxk81i8Q0bcFDHpTinjM3qRK(TuZW)KC5ZX0yWrQGanx2)Gax2u0FqNlsZW)KC5ZrjIDvaeBiqAm4ivqQJaD8ojEBiq1e(EC)ThiDXUgePRLQvRELcFnc)ISyUWx7icpli8kIpu4vv4Rl8lYI5cZ4sHVgH)GdqGMl7FqGlBk6pOZfPz4FsU85OeXETGydbsJbhPcsDeOJ3jXBdbYQWNwKMeljUXS6lMgdosfHVUW3J7V9aPl21Gi9HhuT6vk8Su4xKfZf(Ahr4zbHVkgWcFDHNvHxnHhEhcyJGAP(d6ydTs8Mr4ppfE4DiGnEHMuxOanfIJ3mc)5PWdVdbm024L2g9h024AAs9X9ajXBgH)8u4H3HaU0k0dPLRMIf8Mr4ppfE4DiGz(S)bVzeEvrGMl7FqGgb1s9h0XgALOeXUIvrSHaPXGJubPoc0X7K4THazv4tlstILe3yw9ftJbhPIWxx47X93EG0f7AqK(WdQw9kfEwk8lYI5cFTJi8SGWxfdyHVUWZQWRMWdVdbSrqTu)bDSHwjEZi8NNcp8oeWgVqtQluGMcXXBgH)8u4H3HagAB8sBJ(dABCnnP(4EGK4nJWFEk8W7qaxAf6H0YvtXcEZi8NNcp8oeWmF2)G3mcVQiqZL9piqOTXlTn6pOTX10K6J7bsIse7kQiIneingCKki1rGoENeVneiRcFArAsSK4gZQVyAm4ive(6cFArAsCOhlQLPnfmngCKkcFDHVh3F7bsxSRbr6dpOA1Ru4zPWVilMl81oIWZccFvmGf(6cpRcVAcp8oeWgb1s9h0XgAL4nJWFEk8W7qaB8cnPUqbAkehVze(ZtHhEhcyOTXlTn6pOTX10K6J7bsI3mc)5PWdVdbCPvOhslxnfl4nJWFEk8W7qaZ8z)dEZi8QIanx2)GalTc9qA5QPybLi2v8qeBiqAm4ivqQJaD8ojEBiqwf(0I0KyjXnMvFX0yWrQi81f(EC)ThiDXUgePp8GQvVsHNLc)ISyUWx7icpli8vXaw4Rl8Sk8Qj8W7qaBeul1FqhBOvI3mc)5PWdVdbSXl0K6cfOPqC8Mr4ppfE4DiGH2gV02O)G2gxttQpUhijEZi8NNcp8oeWLwHEiTC1uSG3mc)5PWdVdbmZN9p4nJWRkc0Cz)dc04fAsDHc0uiokrSRyTrSHaPXGJubPoc0X7K4THazv4tlstILe3yw9ftJbhPIWxx4xKfZfMXLcFncVIhGanx2)GaJ2rP)rVSPirjkrGU)JLhOrIydXUIi2qG0yWrQGuhb64Ds82qGW7qaBkqdupqAG4wUWBgeO5Y(heyO5eC8)ckrSFiIneingCKki1rGMl7FqGMkkxg3K6WpP(dAMhiIJaD8ojEBiq3)XYd0GLe3yw9fZPR1Ju4RrPWRyvH)8u4zv4tlstILe3yw9ftJbhPccCSlHanvuUmUj1HFs9h0mpqehLi2RnIneingCKki1rGMl7FqGMCPGnKuZnv85A3ZTic0X7K4THavt4le8oeWCtfFU29ClQle8oeWY0Chl8Su4pAHVUWdVdbSPanq9aPbIB5cVzeEvf(ZtHVqW7qaZnv85A3ZTOUqW7qaltZDSWRu4RIah7siqtUuWgsQ5Mk(CT75weLi2bmIneingCKki1rGoENeVneO7)y5bAWYvtXI(d6CrAEdTs63sSBzCisQdCZL9pwu4zPsH)qeO5Y(heOK4gZQVOeX(bi2qG0yWrQGuhb64Ds82qGW7qaljUXS6lEZi8NNcV7)y5bAWsIBmR(I5016rk81i8hk8NNcpRcFArAsSK4gZQVyAm4ivqGMl7FqGMc0a1dKgiULluIyxLqSHaPXGJubPoc0X7K4THaD)hlpqdwUAkw0FqNlsZBOvs)wIDlJdrsDGBUS)XIcFnkf(Q4dqGMl7FqGWMm7F0FqhBOvIse7hnIneingCKki1rGoENeVnei8oeWMc0a1dKgiULl8MbbAUS)bbY8z)dkrSRcGydbsJbhPcsDeOJ3jXBdbcVdbSK4gZQV4nJWFEk8Sk8PfPjXsIBmR(IPXGJubbAUS)bbULKUt6krjI9AbXgcKgdosfK6iqZL9piqi(pqsndVVwuZnicb64Ds82qGQj8Qj8U)JLhObdODb6stId7yuZj3Y4qKo7lj8Su4bSWFEk8Qj8Sk8PfPjXo(wAfIl1aAxGU0KyAm4ive(6cpdNuqd5kyfXaAxGU0KcVQcVQcFDH39FS8anytbAGiUulxnflyoDTEKcplfEal81fE4DiGLe3yw9fZPR1Ju4zPWdyHxvH)8u4vt4H3HawsCJz1xmNUwpsHVgHhWcVQiWXUeceI)dKuZW7Rf1CdIqjIDfRIydbsJbhPcsDeO5Y(he4L40X5YK6GnqiqhVtI3gcKvHhEhcytbAG6bsde3YfEZi81fE1eE4DiGLe3yw9fVze(ZtHNvHpTinjwsCJz1xmngCKkcVQiWXUec8sC64CzsDWgiuIyxrfrSHaPXGJubPocCSlHa5Mkw2ZXsnCdP5urdVZ8heO5Y(hei3uXYEowQHBinNkA4DM)GsuIaluW2XeXgIDfrSHanx2)Ga5e8(ycbsJbhPcsDuIy)qeBiqAm4ivqQJanx2)GaDwmQnx2)OJTmrGXwM6XUec09FS8ansuIyV2i2qG0yWrQGuhbAUS)bb6SyuBUS)rhBzIaJTm1JDje4TZgYY(huIyhWi2qG0yWrQGuhb64Ds82qGW7qah7abh)VGLP5ow4Rr4Rnc0Cz)dceONhlkq9O5K8hBCekrSFaIneingCKki1rGoENeVneOAcp8oeWMc0arCPwbl(C8Mr4Rl8U)JLhOblxnfl6pOZfP5n0kPFlXULXHiPoWnx2)yrHNLkf(dXhi8Qk81fE1eE3)XYd0GLe3yw9fZPR1Ju4zPWd5kc)5PWZQWNwKMeljUXS6lMgdosfHxveO5Y(heOC1uSO)GoxKM3qRK(TeLi2vjeBiqAm4ivqQJaD8ojEBiq1eE4DiGnfObQhinqClx4nJWxx4zv4tlstILe3yw9ftJbhPIWRQWFEk8W7qaljUXS6lEZi81fE4DiGnfObI4sTcw854ndc0Cz)dcuUAkw0FqNlsZBOvs)wIse7hnIneingCKki1rGoENeVneOAcp8oeWMc0a1dKgiULl8Mr4Rl8W7qaBkqdupqAG4wUWC6A9if(AeEal81fEwf(0I0KyjXnMvFX0yWrQi8Qk8NNcVAcp8oeWsIBmR(I5016rk81i8aw4Rl8W7qaljUXS6lEZi8QIanx2)GaLRMIf9h05I08gAL0VLOeXUkaIneingCKki1rGoENeVnei8oeWsIBmR(I3mcFDHhEhcyjXnMvFXC6A9if(Ae(AJanx2)GaJn0kLAaTlqxAsuIyVwqSHaPXGJubPoc0X7K4THazv4D)ijh3Y(h8MbbAUS)bb6(rsoUL9pOeXUIvrSHaPXGJubPoc0X7K4THavt4D)hlpqdgq7c0LMeZPR1Ju4Rr4HCfHVUW7(pwEGgmG2fOlnj2Tmoej1bU5Y(hlk8Su4vu4Rl8U)JLhOrZjZLcVQc)5PWZQWNwKMe74BPviUudODb6stIPXGJubbAUS)bbcODb6stIse7kQiIneingCKki1rGoENeVneO7)y5bA0CYCjc0Cz)dc0uGgiIl1YvtXckrSR4Hi2qG0yWrQGuhb64Ds82qGU)JLhOrZjZLc)5PWZQWNwKMe74BPviUudODb6stIPXGJubbAUS)bbcODb6stIse7kwBeBiqAm4ivqQJaD8ojEBiq1eEwf(0I0KyjXnMvFX0yWrQi8NNcp8oeWsIBmR(I3mcVQcFDHNvHV8j29JJMKBjv0HODjn8MpyoDTEKcplf(Qc)5PWtsjnocNls74Bxdhj9h0HODjm3MJf(Ae(AJanx2)GaD)4Oj5wsfDiAxcLi2veWi2qG0yWrQGuhb64Ds82qGSk8PfPjXsIBmR(IPXGJur4ppfE4DiGLe3yw9fVzqGMl7FqGXgALsnG2fOlnjkrSR4bi2qGMl7FqG20xt)bDHSCHaPXGJubPokrSROkHydbsJbhPcsDeO5Y(heiCKKsQOx29sCeOm59XKebwBuIyxXJgXgc0Cz)dcCz3lX1FqNlsZBOvs)wIaPXGJubPokrSROkaIneO5Y(heO7hj54w2)GaPXGJubPokrSRyTGydbsJbhPcsDeOJ3jXBdbYQWRMWtsjnocNls74Bxdhj9h0HODj81a0Zf(ZtHNKsACegONhlkq9O5K8hBCe(Aa65c)5PWtsjnocBtFn9h0XoqABk6cz5cFna9CH)8u4jPKghHV095hL(d6421fDHt2vIVgGEUWRkc0Cz)dcCrgp1KusJJqjkrGmCY9xylrSHyxreBiqAm4ivqQJse7hIydbsJbhPcsDuIyV2i2qG0yWrQGuhLi2bmIneingCKki1rjI9dqSHanx2)Gaz(S)bbsJbhPcsDuIyxLqSHanx2)GaJn0kLAaTlqxAseingCKki1rjkrjcubIl7FqSFyvfRLQ1YHhGabY4tpqseOkOlZZtQi8aw4nx2)i8XwMsSaaeOKHCi2vjvcbYW)qhjeilk8Qm(NKl7FeEvMfTspcayrHFLjJufgyGH6CTHXU)cSSV7OL9poUfsGL91bSaawu4Rvm8ok8kwTsH)WQhwvaGaawu4vHw2arsbaSOWxRf(AvPqfHxLJG3htybacayrHxL)iKBNur4HPWZjH39xylfEycQhjw4RvohXKsHF(PwVm(nSJcV5Y(hPW)t8OWcamx2)iXmCY9xylvgIM8ybaMl7FKygo5(lSLvOe4W)fbaMl7FKygo5(lSLvOeyBdDPjTS)raalk8GJXixFk8CRlcp8oeOIWltlLcpmfEoj8U)cBPWdtq9ifEBkcpdNQ1mFM9aj8Tu4l)qybaMl7FKygo5(lSLvOey5ymY1NAzAPuaG5Y(hjMHtU)cBzfkbM5Z(hbaMl7FKygo5(lSLvOe4ydTsPgq7c0LMuaGaawu4v5pc52jveEsbIFucF2xs4Zfj8MlFUW3sH3uW6ObhjSaaZL9psLCcEFmjaWCz)JScLa7SyuBUS)rhBzw5yxsP7)y5bAKcamx2)iRqjWolg1Ml7F0XwMvo2LuE7SHSS)raG5Y(hzfkbgONhlkq9O5K8hBCuLDqj8oeWXoqWX)lyzAUJRP2cayrHxf8(Y0dKWd(PkNW7wghIKcamx2)iRqjWYvtXI(d6CrAEdTs63Yk7Gs1G3Ha2uGgiIl1kyXNJ3m1D)hlpqdwUAkw0FqNlsZBOvs)wIDlJdrsDGBUS)XISu5H4duTUAU)JLhObljUXS6lMtxRhjlHCLZtwtlstILe3yw9ftJbhPIQcamx2)iRqjWYvtXI(d6CrAEdTs63Yk7Gs1G3Ha2uGgOEG0aXTCH3m1znTinjwsCJz1xmngCKkQEEcVdbSK4gZQV4ntD4DiGnfObI4sTcw854nJaaZL9pYkucSC1uSO)GoxKM3qRK(TSYoOun4DiGnfObQhinqClx4ntD4DiGnfObQhinqClxyoDTEK1a46SMwKMeljUXS6lMgdosfvppvdEhcyjXnMvFXC6A9iRbW1H3HawsCJz1x8MrvbaMl7FKvOe4ydTsPgq7c0LMSYoOeEhcyjXnMvFXBM6W7qaljUXS6lMtxRhzn1waG5Y(hzfkb29JKCCl7FQSdkz19JKCCl7FWBgbaMl7FKvOeyaTlqxAYk7Gs1C)hlpqdgq7c0LMeZPR1JSgixPU7)y5bAWaAxGU0Ky3Y4qKuh4Ml7FSilvSU7)y5bA0CYCPQNNSMwKMe74BPviUudODb6stIPXGJuraG5Y(hzfkb2uGgiIl1YvtXsLDqP7)y5bA0CYCPaaZL9pYkucmG2fOlnzLDqP7)y5bA0CYC55jRPfPjXo(wAfIl1aAxGU0KyAm4iveayUS)rwHsGD)4Oj5wsfDiAxQYoOunwtlstILe3yw9ftJbhPY5j8oeWsIBmR(I3mQwN1YNy3poAsULurhI2L0WB(G5016rYYQNNKusJJW5I0o(21Wrs)bDiAxcZT54AQTaaZL9pYkucCSHwPudODb6stwzhuYAArAsSK4gZQVyAm4ivopH3HawsCJz1x8MraG5Y(hzfkb2M(A6pOlKLlbaMl7FKvOey4ijLurVS7L4vktEFmjvwBbaMl7FKvOe4LDVex)bDUinVHwj9BPaaZL9pYkucS7hj54w2)iaWCz)JScLaViJNAskPXrv2bLSQgjL04iCUiTJVDnCK0FqhI2LWxdqp)8KKsACegONhlkq9O5K8hBCe(Aa65NNKusJJW20xt)bDSdK2MIUqwUWxdqp)8KKsACe(s3NFu6pOJBxx0fozxj(Aa65QkaqaG5Y(hj29FS8ansLHMtWX)lv2bLW7qaBkqdupqAG4wUWBgbaMl7FKy3)XYd0iRqjWBjP7KUvo2LuAQOCzCtQd)K6pOzEGiELDqP7)y5bAWsIBmR(I5016rwJsfREEYAArAsSK4gZQVyAm4iveayUS)rID)hlpqJScLaVLKUt6w5yxsPjxkydj1CtfFU29ClwzhuQwHG3HaMBQ4Z1UNBrDHG3HawMM7ywE01H3Ha2uGgOEG0aXTCH3mQEEwi4DiG5Mk(CT75wuxi4DiGLP5owzvbaMl7FKy3)XYd0iRqjWsIBmR(wzhu6(pwEGgSC1uSO)GoxKM3qRK(Te7wghIK6a3Cz)JfzPYdfayUS)rID)hlpqJScLaBkqdupqAG4wUQSdkH3HawsCJz1x8M5809FS8anyjXnMvFXC6A9iR5WZtwtlstILe3yw9ftJbhPIaaZL9psS7)y5bAKvOeyytM9p6pOJn0kRSdkD)hlpqdwUAkw0FqNlsZBOvs)wIDlJdrsDGBUS)XI1OSk(abaMl7FKy3)XYd0iRqjWmF2)uzhucVdbSPanq9aPbIB5cVzeayUS)rID)hlpqJScLaVLKUt6kRSdkH3HawsCJz1x8M58K10I0KyjXnMvFX0yWrQiaWCz)Je7(pwEGgzfkbEljDN0TYXUKsi(pqsndVVwuZniQYoOun1C)hlpqdgq7c0LMeh2XOMtULXHiD2xILa(8unwtlstID8T0kexQb0UaDPjX0yWrQuNHtkOHCfSIyaTlqxAsvvTU7)y5bAWMc0arCPwUAkwWC6A9izjGRdVdbSK4gZQVyoDTEKSeWQEEQg8oeWsIBmR(I5016rwdGvvaG5Y(hj29FS8anYkuc8ws6oPBLJDjLxIthNltQd2avzhuYk8oeWMc0a1dKgiULl8MPUAW7qaljUXS6lEZCEYAArAsSK4gZQVyAm4ivuvaG5Y(hj29FS8anYkuc8ws6oPBLJDjLCtfl75yPgUH0CQOH3z(JaabaMl7FK4BNnKL9pkLRMIf9h05I08gAL0VLv2bLSMwKMeljUXS6lMgdosL6Ml7FWYvtXI(d6CrAEdTs63sSBzCisYYdRZQAW7qaBeul1FqhBOvI3m1H3Ha24fAsDHc0uioEZuhEhcyOTXlTn6pOTX10K6J7bsI3m1H3HaU0k0dPLRMIf8MPo8oeWmF2)G3mQkaWCz)JeF7SHSS)PcLadBYS)r)bDSHwzLDqjRPfPjXsIBmR(IPXGJuPEArAsmSjZ(h9h0XgALyAm4ivQBUS)blxnfl6pOZfP5n0kPFlXULXHiznkkaWCz)JeF7SHSS)PcLahBOvQ)GoxKMH)j5YNxzhuQ2ISyUWmUSgaxvvbaMl7FK4BNnKL9pvOe4Lnf9h05I0m8pjx(8k7Gs1wKfZfMXL1a4QQkaWCz)JeF7SHSS)PcLahBOvQ)GoxKMH)j5YNxzhuQwpU)2dKUyxdI0kwTA1QxznlYI5cFTJWckIp8avRVilMlmJlR5GdQNwKMeZBOvs)wQz4FsU85yAm4iveayUS)rIVD2qw2)uHsGJn0k1FqNlsZW)KC5ZRSdkvRh3F7bsxSRbrAfRD1QvVYAwKfZf(AhHfueRsQwFrwmxygxwZbhiaWCz)JeF7SHSS)PcLaVSPO)GoxKMH)j5YNxzhuQwpU)2dKUyxdI0Qu1QvVYAwKfZf(AhHfQIpAvRVilMlmJlRrLoOEArAsmVHwj9BPMH)j5YNJPXGJuraG5Y(hj(2zdzz)tfkbEztr)bDUind)tYLpVYoOuTEC)ThiDXUgePRLQvREL1SilMl81oclOi(qvRVilMlmJlR5GdeayUS)rIVD2qw2)uHsGncQL6pOJn0kRSdkznTinjwsCJz1xmngCKk17X93EG0f7AqK(WdQw9kz5ISyUWx7iSqvmGRZQAW7qaBeul1FqhBOvI3mNNW7qaB8cnPUqbAkehVzopH3HagAB8sBJ(dABCnnP(4EGK4nZ5j8oeWLwHEiTC1uSG3mNNW7qaZ8z)dEZOQaaZL9ps8TZgYY(Nkucm024L2g9h024AAs9X9ajRSdkznTinjwsCJz1xmngCKk17X93EG0f7AqK(WdQw9kz5ISyUWx7iSqvmGRZQAW7qaBeul1FqhBOvI3mNNW7qaB8cnPUqbAkehVzopH3HagAB8sBJ(dABCnnP(4EGK4nZ5j8oeWLwHEiTC1uSG3mNNW7qaZ8z)dEZOQaaZL9ps8TZgYY(NkucCPvOhslxnflv2bLSMwKMeljUXS6lMgdosL6PfPjXHESOwM2uW0yWrQuVh3F7bsxSRbr6dpOA1RKLlYI5cFTJWcvXaUoRQbVdbSrqTu)bDSHwjEZCEcVdbSXl0K6cfOPqC8M58eEhcyOTXlTn6pOTX10K6J7bsI3mNNW7qaxAf6H0YvtXcEZCEcVdbmZN9p4nJQcamx2)iX3oBil7FQqjWgVqtQluGMcXRSdkznTinjwsCJz1xmngCKk17X93EG0f7AqK(WdQw9kz5ISyUWx7iSqvmGRZQAW7qaBeul1FqhBOvI3mNNW7qaB8cnPUqbAkehVzopH3HagAB8sBJ(dABCnnP(4EGK4nZ5j8oeWLwHEiTC1uSG3mNNW7qaZ8z)dEZOQaaZL9ps8TZgYY(NkucC0ok9p6LnfzLDqjRPfPjXsIBmR(IPXGJuP(ISyUWmUSgfpaLOeHa]] )
+    spec:RegisterPack( "Protection Paladin", 20201013, [[dm08PaqiQkEerLSjGyueLofrXQuQOxrenlIQUfkLODr4xqudJQQJbrwMsrptPGPHsX1uQ02as5BevQXHsP6CkfY6qPeAEuv6EOK9ruXbrPKAHOu9qukjxuPqPtQuOyLkL2je6NOucgkkLYsvku5PQYuHG9c6VuzWs6WuwmKESGjl0Lr2SeFgfJwvDAPwTsvEnqYSj1TvYUf9Bvgov54kfQA5q9CunDfxhW2jcFNinELkCELQA9aPA(a1(jzisqeGVOneeXn9VPFK8J0ge(3On3DdYn8n77rWNNfaLXqWxAlc(yB4BOW0xQQSntBXoHppBF9zricWh)aWbc((Z4XzlImYm98bqfHBHmVxaAB6ldyRmiZ7vaz4dfO1ZgtcrHVOneeXn9VPFK8J0ge(3On3Dd7cFgW8pm896fBf897yKsik8fjEa(KlvLTHVHctFPQY2mTf7uTvUuv2cH5qjSQI0gKxv30)M(vBvBLlvLT6BjdXvBLlvLTuvzRJrkQQBCekaOib8PB(WHiaFREAgB6lHiarejicWhLgQMIq2HVaUhc3g8Hcukc(VjD0Df38jhUz(dDaCr8KMQkiQQSQ6)0778oPewePsh6rvzPQ(vvWGvvuGsreBj6KCEayVJtcapvvg4ZctFj8X)nPJUR4Mp5WnZFOdGdhiIBcra(O0q1ueYo8fW9q42GpuGsrW)D2jJt3m)Xva0AbGNQcIQIcukc(VZozC6M5pUcGwlW0Y6KRQ(QQmHOQUtvDt4ZctFj8j9Wr3vCm6dVpCGiUbicWhLgQMIq2HVaUhc3g8jRQ(jtpFHxyuvFvv24xvLb(SW0xcFspC0DfhJ(W7dhiISbIa8rPHQPiKD4lG7HWTbFYQQDgUvNmUOTmgYHKF)(9V4QQVQ6Nm98flBhQ6ovvKeBURQkJQcIQ(jtpFHxyuvFv1D3vvbrvhtt5iWnZFOdG78W3qH5WcknunfHplm9LWN0dhDxXXOp8(WbI4UqeGpknunfHSdFbCpeUn4twvTZWT6KXfTLXqoK2GF)(xCv1xv9tME(ILTdvDNQkscqtvLrvbrv)KPNVWlmQQVQ6U7cFwy6lHpPho6UIJrF49HderqdIa8rPHQPiKD4lG7HWTbFYQQDgUvNmUOTmgYbA(97FXvvFv1pz65lw2ou1DQQ(fYTQkJQcIQ(jtpFHxyuvFvvqBxvfevDmnLJa3m)HoaUZdFdfMdlO0q1ue(SW0xcFspC0DfhJ(W7dhiIYneb4Jsdvtri7Wxa3dHBd(Kvv7mCRozCrBzmKBJ873)IRQ(QQFY0ZxSSDOQ7uvrsSPQkJQcIQ(jtpFHxyuvFv1D3f(SW0xcFspC0DfhJ(W7dhiISDicWhLgQMIq2HVaUhc3g85JQoMMYrWjS597LGsdvtrvfevTZWT6KXfTLXqUn31V)fxvLJQ(jtpFXY2HQUtv1VGnQkiQQpQQSQkkqPimCKYXfPcLrcla8uvWGvvuGsrWay4yBP7koldnLJduDYWfaEQkyWQkkqPiITeDso(VjDua4PQGbRQOaLIW7M(sbGNQkd8zHPVe(yamCST0DfNLHMYXbQoz4WbI4gbra(O0q1ueYo8fW9q42GpFu1X0uocoHnVFVeuAOAkQQGOQJPPCeLonTJpwgfuAOAkQQGOQDgUvNmUOTmgYT5U(9V4QQCu1pz65lw2ou1DQQ(fSrvbrv9rvLvvrbkfHHJuoUivOmsybGNQcgSQIcukcgadhBlDxXzzOPCCGQtgUaWtvbdwvrbkfrSLOtYX)nPJcapvfmyvffOueE30xka8uvzGplm9LWxSLOtYX)nPJWbIis(HiaFuAOAkczh(c4EiCBWNpQ6yAkhbNWM3Vxcknunfvvqu1od3Qtgx0wgd52Cx)(xCvvoQ6Nm98flBhQ6ovv)c2OQGOQ(OQYQQOaLIWWrkhxKkugjSaWtvbdwvrbkfbdGHJTLUR4Sm0uooq1jdxa4PQGbRQOaLIi2s0j54)M0rbGNQcgSQIcukcVB6lfaEQQmWNfM(s4ZWrkhxKkugjmCGiIesqeGpknunfHSdFbCpeUn4ZhvDmnLJGtyZ73lbLgQMIQkiQ6Nm98fEHrv9vvrAx4ZctFj8PT9Dx6(wg5WboWx4oD8KMCicqercIa8rPHQPiKD4lG7HWTbFOaLIWKGsMozCsX28faEWNfM(s4R0ycvFxeoqe3eIa8rPHQPiKD4ZctFj8zGo)ByJ7kxoUR48oPeg(c4EiCBWx4oD8KMcoHnVFVeyAzDYvvFzPQi5xvbdwv9rvhtt5i4e28(9sqPHQPi8L2IGpd05FdBCx5YXDfN3jLWWbI4gGiaFuAOAkczh(SW0xcFg)lHLe3Hnq)WUWHnn8fW9q42Gpzv1iHcukcSb6h2foSPDrcfOue8XcGsvLJQk3QkiQkkqPimjOKPtgNuSnFbGNQkJQcgSQgjuGsrGnq)WUWHnTlsOaLIGpwauQklv1p8L2IGpJ)LWsI7WgOFyx4WMgoqezdeb4ZctFj8XjS597f8rPHQPiKD4arCxicWNfM(s4Z4FkDFtRpPWhLgQMIq2HderqdIa8rPHQPiKD4lG7HWTbFOaLIGtyZ73lbGNQcgSQgUthpPPGtyZ73lbMwwNCv1xvDtvfmyv1hvDmnLJGtyZ73lbLgQMIWNfM(s4ZKGsMozCsX28Hder5gIa8rPHQPiKD4lG7HWTbFOaLIWKGsMozCsX28faEWNfM(s4Z7M(s4arKTdra(SW0xcFOAIZ7KXDfhhyTim8rPHQPiKD4arCJGiaFwy6lHpunX5DY4UIZagGvcFuAOAkczhoqerYpeb4ZctFj8HQjoVtg3vCs7Cim8rPHQPiKD4arejKGiaFwy6lHpunX5DY4UIJ7H7Kb(O0q1ueYoCGiI0MqeGplm9LWNewUXd08pH5UVTweg(O0q1ueYoCGiI0gGiaFuAOAkczh(c4EiCBW3)0778oPewePsh6rvLJQ6h(SW0xcFXwIoj3CAnCGiIeBGiaFuAOAkczh(c4EiCBWx4oD8KMctckzim3X)nPJcmTSo5WNfM(s4BDlkh3vCm6dVpCGiI0UqeGpknunfHSdFbCpeUn4dfOueCcBE)Eja8uvWGvvFu1X0uocoHnVFVeuAOAkcFwy6lHpao56HwC4arejqdIa8rPHQPiKD4ZctFj8XGVKH78W9Y0oSXqWxa3dHBd(KvvLvvd3PJN0uShqKzr5ikaATdtHVHzi30lsvLJQYgvfmyvvwv1hvDmnLJiGb4wKWC3EarMfLJGsdvtrvfev1dts4ycrbsI9aImlkhvvgvvgvfevnCNoEstHjbLmeM74)M0rbMwwNCvvoQkBuvquvuGsrWjS597LatlRtUQkhvLnQQmQkyWQQSQkkqPi4e28(9sGPL1jxv9vvzJQkd8L2IGpg8LmCNhUxM2HngcoqersUHiaFuAOAkczh(SW0xcFlctGA(g3vSKb(c4EiCBWNpQkkqPimjOKPtgNuSnFbGNQcIQkRQIcukcoHnVFVeaEQkyWQQpQ6yAkhbNWM3VxcknunfvvzGV0we8TimbQ5BCxXsg4arej2oeb4Jsdvtri7WxAlc(WgOhbsqXDOnJdtrhkWmxcFwy6lHpSb6rGeuChAZ4Wu0HcmZLWboWxKkgGEGiarejicWNfM(s4dtOaGIGpknunfHSdhiIBcra(O0q1ueYo8zHPVe(cMw7SW0x60nFGpDZhxAlc(c3PJN0KdhiIBaIa8rPHQPiKD4ZctFj8fmT2zHPV0PB(aF6MpU0we8T6PzSPVeoqezdeb4Jsdvtri7Wxa3dHBd(qbkfHUleQ(UOGpwauQQVQ6gGplm9LWN0dRJsqD6We)sldeCGiUleb4Jsdvtri7Wxa3dHBd((NEFN3jLWIiv6qpQklv1VQcIQkRQkRQIcukctckz6KXjfBZxa4PQGOQ(OQJPPCeCcBE)EjO0q1uuvLrvbdwvrbkfbNWM3Vxcapvvg4ZctFj8X)nPJUR4Mp5WnZFOdGdhiIGgeb4Jsdvtri7Wxa3dHBd(KvvrbkfHjbLmDY4KIT5la8uvquvuGsrysqjtNmoPyB(cmTSo5QQVQkBuvquvFu1X0uocoHnVFVeuAOAkQQYOQGbRQYQQOaLIGtyZ73lbMwwNCv1xvLnQkiQkkqPi4e28(9sa4PQYaFwy6lHp(VjD0Df38jhUz(dDaC4aruUHiaFuAOAkczh(c4EiCBW3)0778oPewePsh6rvLJQ6h(SW0xcFFBTiS7koPyB(WbIiBhIa8rPHQPiKD4lG7HWTbFOaLIGtyZ73lbGNQcIQIcukcoHnVFVeyAzDYvvFv1naFwy6lHpDZ8hUBpGiZIYboqe3iicWhLgQMIq2HVaUhc3g85JQgUKtbSn9Lcap4ZctFj8fUKtbSn9LWbIis(HiaFuAOAkczh(c4EiCBWNSQA4oD8KMI9aImlkhbMwwNCv1xvLjevvqu1WD64jnf7bezwuoIW3Wme3vWwy6lnTQkhvfjvfevnCNoEsthMSWOQYOQGbRQ(OQJPPCebma3IeM72diYSOCeuAOAkcFwy6lHV9aImlkh4arejKGiaFuAOAkczh(c4EiCBWx4oD8KMomzHb(SW0xcFMeuYqyUJ)BshHderK2eIa8rPHQPiKD4lG7HWTbFH70XtA6WKfgvfmyv1hvDmnLJiGb4wKWC3EarMfLJGsdvtr4ZctFj8ThqKzr5ahiIiTbicWhLgQMIq2HVaUhc3g8jRQ6JQoMMYrWjS597LGsdvtrvfmyvffOueCcBE)Eja8uvzuvquvFu14nIWLbkhSnu0v02ICOa4uGPL1jxvLJQ6xvbdwvjoNYajMp5cyGqJQj3vCfTTib2sqPQ(QQBa(SW0xcFHlduoyBOOROTfbhiIiXgicWhLgQMIq2HVaUhc3g85JQoMMYrWjS597LGsdvtrvfmyvffOueCcBE)Eja8Gplm9LWNUz(d3ThqKzr5ahiIiTleb4ZctFj8zzVm3vCrYMp8rPHQPiKD4arejqdIa8rPHQPiKD4ZctFj8HQjoNIUVTweg(4dUbfXHVnahiIij3qeGplm9LW33wlc7UIB(Kd3m)Hoao8rPHQPiKD4arej2oeb4ZctFj8fUKtbSn9LWhLgQMIq2HderK2iicWhLgQMIq2HVaUhc3g85JQkRQsCoLbsmFYfWaHgvtUR4kABrILT3HvvWGvvIZPmqcPhwhLG60Hj(LwgiXY27WQkyWQkX5ugiHL9YCxXP7c5Sm6IKnFXY27WQkyWQkX5ugiXIwhEF3vCAGqhDrmzlUyz7Dyvvg4ZctFj89jdpoIZPmqWboWNhMc3c1gicqercIa8zHPVe(0nZF4U9aImlkh4Jsdvtri7WboWb(KGW8(siIB6Ft)(3Onbn4tQHZoz4W3gZY7Wdfvv2OQwy6lvvDZhUqTf(8WxP1e8jxQkBdFdfM(svLTzAl2PARCPQSfcZHsyvfPniVQUP)n9R2Q2kxQkB13sgIR2kxQkBPQYwhJuuv34iuaqrc1w1w5sv3y3bfagkQQOu5WKQgUfQnQkkX0jxOQS1Ha5nCvnVKT8B4vbqRQwy6l5Q6L69fQTwy6l5cpmfUfQnsYczDZ8hUBpGiZIYrTvTvUu1n2DqbGHIQkjbH3xvNErQ68jv1cZHv1MRQMewRnunjuBTW0xYzHjuaqrQTwy6l5sYc5GP1olm9LoDZh5tBrSc3PJN0KR2AHPVKljlKdMw7SW0x60nFKpTfXA1tZytFPARfM(sUKSqw6H1rjOoDyIFPLbs(UWcfOue6UqO67Ic(ybq57guBTW0xYLKfY8Ft6O7kU5toCZ8h6a4Y3fw)tVVZ7KsyrKkDOhw(brwzrbkfHjbLmDY4KIT5la8aXNX0uocoHnVFVeuAOAkkdyWOaLIGtyZ73lbGNmQTwy6l5sYcz(VjD0Df38jhUz(dDaC57clzrbkfHjbLmDY4KIT5la8abfOueMeuY0jJtk2MVatlRtUVSbeFgtt5i4e28(9sqPHQPOmGbllkqPi4e28(9sGPL1j3x2ackqPi4e28(9sa4jJARfM(sUKSq(BRfHDxXjfBZx(UW6F69DENuclIuPd9ih)QTwy6l5sYczDZ8hUBpGiZIYr(UWcfOueCcBE)Eja8abfOueCcBE)EjW0Y6K77guBTW0xYLKfYHl5uaBtFP8DHLpHl5uaBtFPaWtT1ctFjxswiVhqKzr5iFxyjB4oD8KMI9aImlkhbMwwNCFzcrqc3PJN0uShqKzr5icFdZqCxbBHPV00Ybjqc3PJN00HjlmYagSpJPPCebma3IeM72diYSOCeuAOAkQ2AHPVKljlKnjOKHWCh)3KokFxyfUthpPPdtwyuBTW0xYLKfY7bezwuoY3fwH70XtA6WKfgWG9zmnLJiGb4wKWC3EarMfLJGsdvtr1wlm9LCjzHC4YaLd2gk6kABrY3fwY6ZyAkhbNWM3VxcknunfbdgfOueCcBE)Eja8KbeFI3icxgOCW2qrxrBlYHcGtbMwwNC54hmyIZPmqI5tUagi0OAYDfxrBlsGTeu(Ub1wlm9LCjzHSUz(d3ThqKzr5iFxy5ZyAkhbNWM3VxcknunfbdgfOueCcBE)Eja8uBTW0xYLKfYw2lZDfxKS5R2AHPVKljlKr1eNtr33wlclpFWnOioRnO2AHPVKljlK)2Ary3vCZNC4M5p0bWvBTW0xYLKfYHl5uaBtFPARfM(sUKSq(tgECeNtzGKVlS8rwIZPmqI5tUagi0OAYDfxrBlsSS9omyWeNtzGespSokb1Pdt8lTmqILT3HbdM4CkdKWYEzUR40DHCwgDrYMVyz7DyWGjoNYajw06W77UItde6OlIjBXflBVdlJARARfM(sUiCNoEstoRsJju9Dr57cluGsrysqjtNmoPyB(cap1wlm9LCr4oD8KMCjzHmaNC9ql5tBrSmqN)nSXDLlh3vCENuclFxyfUthpPPGtyZ73lbMwwNCFzHKFWG9zmnLJGtyZ73lbLgQMIQTwy6l5IWD64jn5sYczao56HwYN2Iyz8VewsCh2a9d7ch20Y3fwYgjuGsrGnq)WUWHnTlsOaLIGpwauYrUbbfOueMeuY0jJtk2MVaWtgWGJekqPiWgOFyx4WM2fjuGsrWhlakw(vBTW0xYfH70XtAYLKfYCcBE)EP2AHPVKlc3PJN0KljlKn(Ns3306tQARfM(sUiCNoEstUKSq2KGsMozCsX28LVlSqbkfbNWM3VxcapWGd3PJN0uWjS597LatlRtUVBcgSpJPPCeCcBE)EjO0q1uuT1ctFjxeUthpPjxswi7DtFP8DHfkqPimjOKPtgNuSnFbGNARfM(sUiCNoEstUKSqgvtCENmUR44aRfHvBTW0xYfH70XtAYLKfYOAIZ7KXDfNbmaRuT1ctFjxeUthpPjxswiJQjoVtg3vCs7CiSARfM(sUiCNoEstUKSqgvtCENmUR44E4ozuBTW0xYfH70XtAYLKfYsy5gpqZ)eM7(2Ary1wlm9LCr4oD8KMCjzHCSLOtYnNwlFxy9p9(oVtkHfrQ0HEKJF1wlm9LCr4oD8KMCjzH86wuoUR4y0hEF57cRWD64jnfMeuYqyUJ)BshfyAzDYvBTW0xYfH70XtAYLKfYaCY1dT4Y3fwOaLIGtyZ73lbGhyW(mMMYrWjS597LGsdvtr1wlm9LCr4oD8KMCjzHmaNC9ql5tBrSyWxYWDE4EzAh2yi57clzLnCNoEstXEarMfLJOaO1omf(gMHCtVi5WgWGL1NX0uoIagGBrcZD7bezwuocknunfbXdts4ycrbsI9aImlkhzKbKWD64jnfMeuYqyUJ)BshfyAzDYLdBabfOueCcBE)EjW0Y6Klh2idyWYIcukcoHnVFVeyAzDY9LnYO2AHPVKlc3PJN0KljlKb4KRhAjFAlI1IWeOMVXDflzKVlS8bfOueMeuY0jJtk2MVaWdezrbkfbNWM3VxcapWG9zmnLJGtyZ73lbLgQMIYO2AHPVKlc3PJN0KljlKb4KRhAjFAlIf2a9iqckUdTzCyk6qbM5s1w1wlm9LCXQNMXM(sw8Ft6O7kU5toCZ8h6a4Y3fwOaLIG)BshDxXnFYHBM)qhaxepPjiY(p9(oVtkHfrQ0HEy5hmyuGsreBj6KCEayVJtcapzuBTW0xYfREAgB6lLKfYspC0DfhJ(W7lFxyHcukc(VZozC6M5pUcGwla8abfOue8FNDY40nZFCfaTwGPL1j3xMqCNBQ2AHPVKlw90m20xkjlKLE4O7kog9H3x(UWs2pz65l8cJVSXVmQTwy6l5IvpnJn9LsYczPho6UIJrF49LVlSKTZWT6KXfTLXqoK873V)f33pz65lw2o2jsIn3vgq(KPNVWlm(U7UGmMMYrGBM)qha35HVHcZHfuAOAkQ2AHPVKlw90m20xkjlKLE4O7kog9H3x(UWs2od3Qtgx0wgd5qAd(97FX99tME(ILTJDIKa0KbKpz65l8cJV7URARfM(sUy1tZytFPKSqw6HJUR4y0hEF57clz7mCRozCrBzmKd0873)I77Nm98flBh70VqULbKpz65l8cJVG2UGmMMYrGBM)qha35HVHcZHfuAOAkQ2AHPVKlw90m20xkjlKLE4O7kog9H3x(UWs2od3Qtgx0wgd52i)(9V4((jtpFXY2XorsSPmG8jtpFHxy8D3DvBLlv1ctFjxS6PzSPVuswiZ)nPJUR4Mp5WnZFOdGlFxyHcukc(VjD0Df38jhUz(dDaCr8KMGi7)0778oPewoBcgmkqPiITeDsopaS3XjbGNmQTwy6l5IvpnJn9LsYczgadhBlDxXzzOPCCGQtgU8DHLpJPPCeCcBE)EjO0q1ueKod3Qtgx0wgd52Cx)(xC58jtpFXY2Xo9lydi(ilkqPimCKYXfPcLrcla8adgfOuemago2w6UIZYqt54avNmCbGhyWOaLIi2s0j54)M0rbGhyWOaLIW7M(sbGNmQTwy6l5IvpnJn9LsYc5ylrNKJ)BshLVlS8zmnLJGtyZ73lbLgQMIGmMMYru600o(yzuqPHQPiiDgUvNmUOTmgYT5U(9V4Y5tME(ILTJD6xWgq8rwuGsry4iLJlsfkJewa4bgmkqPiyamCST0DfNLHMYXbQoz4capWGrbkfrSLOtYX)nPJcapWGrbkfH3n9LcapzuBTW0xYfREAgB6lLKfYgos54IuHYiHLVlS8zmnLJGtyZ73lbLgQMIG0z4wDY4I2Yyi3M763)IlNpz65lw2o2PFbBaXhzrbkfHHJuoUivOmsybGhyWOaLIGbWWX2s3vCwgAkhhO6KHla8adgfOueXwIojh)3Koka8adgfOueE30xka8KrT1ctFjxS6PzSPVuswiRT9Dx6(wg5Y3fw(mMMYrWjS597LGsdvtrq(KPNVWlm(I0UWh3JcqebnqdoWbcb]] )
 
 
 end

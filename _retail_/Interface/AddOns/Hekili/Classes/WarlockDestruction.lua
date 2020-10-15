@@ -8,6 +8,13 @@ local class = Hekili.Class
 local state = Hekili.State
 
 
+-- Conduits
+-- [-] ashen_remains
+-- [x] combusting_engine
+-- [-] duplicitous_havoc
+-- [-] infernal_brand
+
+
 if UnitClassBase( 'player' ) == 'WARLOCK' then
     local spec = Hekili:NewSpecialization( 267, true )
 
@@ -22,7 +29,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
                 return app + floor( t - app )
             end,
 
-            interval = 1,
+            interval = 0.5,
             value = 0.1
         },
 
@@ -71,13 +78,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
     spec:RegisterHook( "spend", function( amt, resource )
         if resource == "soul_shards" and amt > 0 then
-            if talent.soul_fire.enabled and cooldown.soul_fire.remains > 0 then
-                setCooldown( "soul_fire", max( 0, cooldown.soul_fire.remains - ( 2 * amt ) ) )
-            end
-
-            if talent.grimoire_of_supremacy.enabled and pet.infernal.up then
-                addStack( "grimoire_of_supremacy", nil, amt )
-            end
+            -- ???
         end
     end )
 
@@ -102,10 +103,10 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
         darkfury = 22047, -- 264874
         mortal_coil = 19291, -- 6789
-        demonic_circle = 19288, -- 268358
+        howl_of_terror = 23465, -- 5484
 
         roaring_blaze = 23155, -- 205184
-        grimoire_of_supremacy = 23156, -- 266086
+        rain_of_chaos = 23156, -- 266086
         grimoire_of_sacrifice = 19295, -- 108503
 
         soul_conduit = 19284, -- 215941
@@ -116,42 +117,38 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
     -- PvP Talents
     spec:RegisterPvpTalents( { 
-        relentless = 3493, -- 196029
-        adaptation = 3494, -- 214027
-        gladiators_medallion = 3495, -- 208683
-
+        amplify_curse = 3504, -- 328774
+        bane_of_fragility = 3502, -- 199954
         bane_of_havoc = 164, -- 200546
-        entrenched_in_flame = 161, -- 233581
+        casting_circle = 3510, -- 221703
         cremation = 159, -- 212282
+        demon_armor = 3741, -- 285933
+        essence_drain = 3509, -- 221711
         fel_fissure = 157, -- 200586
         focused_chaos = 155, -- 233577
-        casting_circle = 3510, -- 221703
-        essence_drain = 3509, -- 221711
+        gateway_mastery = 5382, -- 248855
         nether_ward = 3508, -- 212295
-        curse_of_weakness = 3504, -- 199892
-        curse_of_tongues = 3503, -- 199890
-        curse_of_fragility = 3502, -- 199954
     } )
 
 
     -- Auras
     spec:RegisterAuras( {
         active_havoc = {
-            duration = 10,
+            duration = function () return level > 53 and 12 or 10 end,
             max_stack = 1,
 
             generate = function( ah )
                 if active_enemies > 1 then
-                    if pvptalent.bane_of_havoc.enabled and debuff.bane_of_havoc.up and query_time - last_havoc < 10 then
+                    if pvptalent.bane_of_havoc.enabled and debuff.bane_of_havoc.up and query_time - last_havoc < ah.duration then
                         ah.count = 1
                         ah.applied = last_havoc
-                        ah.expires = last_havoc + 10
+                        ah.expires = last_havoc + ah.duration
                         ah.caster = "player"
                         return
-                    elseif not pvptalent.bane_of_havoc.enabled and active_dot.havoc > 0 and query_time - last_havoc < 10 then
+                    elseif not pvptalent.bane_of_havoc.enabled and active_dot.havoc > 0 and query_time - last_havoc < ah.duration then
                         ah.count = 1
                         ah.applied = last_havoc
-                        ah.expires = last_havoc + 10
+                        ah.expires = last_havoc + ah.duration
                         ah.caster = "player"
                         return
                     end
@@ -167,17 +164,16 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             id = 117828,
             duration = 10,
             type = "Magic",
-            max_stack = function () return talent.flashover.enabled and 4 or 2 end,
+            max_stack = 2,
         },
-
         -- Going to need to keep an eye on this.  active_dot.bane_of_havoc won't work due to no SPELL_AURA_APPLIED event.
         bane_of_havoc = {
             id = 200548,
-            duration = 10,
+            duration = function () return level > 53 and 12 or 10 end,
             max_stack = 1,
             generate = function( boh )
                 boh.applied = action.bane_of_havoc.lastCast
-                boh.expires = boh.applied > 0 and ( boh.applied + 10 ) or 0
+                boh.expires = boh.applied > 0 and ( boh.applied + boh.duration ) or 0
             end,
         },
         blood_pact = {
@@ -195,8 +191,32 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         },
         conflagrate = {
             id = 265931,
-            duration = 6,
+            duration = 8,
             type = "Magic",
+            max_stack = 1,
+        },
+        corruption = {
+            id = 146739,
+            duration = 14,
+            type = "Magic",
+            max_stack = 1,
+        },
+        curse_of_exhaustion = {
+            id = 334275,
+            duration = 8,
+            type = "Curse",
+            max_stack = 1,
+        },
+        curse_of_tongues = {
+            id = 1714,
+            duration = 30,
+            type = "Curse",
+            max_stack = 1,
+        },
+        curse_of_weakness = {
+            id = 702,
+            duration = 120,
+            type = "Curse",
             max_stack = 1,
         },
         dark_pact = {
@@ -207,7 +227,9 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         dark_soul_instability = {
             id = 113858,
             duration = 20,
+            type = "Magic",
             max_stack = 1,
+            copy = "dark_soul"
         },
         demonic_circle = {
             id = 48018,
@@ -219,7 +241,8 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         },
         drain_life = {
             id = 234153,
-            duration = 4.95,
+            duration = function () return 5 * haste end,
+            tick_time = function () return haste end,
             max_stack = 1,
         },
         eradication = {
@@ -236,47 +259,28 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             type = "Magic",
             max_stack = 1,
         },
+        fel_domination = {
+            id = 333889,
+            duration = 15,
+            type = "Magic",
+            max_stack = 1,
+        },
         grimoire_of_sacrifice = {
             id = 196099,
             duration = 3600,
             max_stack = 1,
         },
-        grimoire_of_supremacy = {
-            id = 266091,
-            duration = 3600,
-            max_stack = 8,
-        },
         havoc = {
             id = 80240,
-            duration = 10,
+            duration = function () return level > 53 and 12 or 10 end,
             type = "Curse",
             max_stack = 1,
-
-            generate = function ( t, type )
-                if type == "buff" then
-                    t.count = 0
-                    t.applied = 0
-                    t.expires = 0
-                    t.caster = "nobody"
-                    return
-                end
-
-                local h = debuff.havoc
-                --[[ local name, _, count, _, duration, expires, caster = FindUnitDebuffByID( "target", 80240, "PLAYER" )
-
-                if active_enemies > 1 and name then
-                    h.count = 1
-                    h.applied = expires - duration
-                    h.expires = expires
-                    h.caster = "player"
-                    return
-                end ]]
-
-                h.count = 0
-                h.applied = 0
-                h.expires = 0
-                h.caster = "nobody"
-            end
+        },
+        howl_of_terror = {
+            id = 5484,
+            duration = 20,
+            type = "Magic",
+            max_stack = 1,
         },
         immolate = {
             id = 157736,
@@ -320,6 +324,11 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             type = "Magic",
             max_stack = 1,
         },
+        rain_of_chaos = {
+            id = 266087,
+            duration = 30,
+            max_stack = 1
+        },
         rain_of_fire = {
             id = 5740,
         },
@@ -350,6 +359,11 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         },
         soul_shards = {
             id = 246985,
+        },
+        soulstone = {
+            id = 20707,
+            duration = 900,
+            max_stack = 1,
         },
         unending_breath = {
             id = 5697,
@@ -397,6 +411,8 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
     spec:RegisterStateExpr( "soul_shard", function () return soul_shards.current end )
 
 
+    local lastTarget
+    
     spec:RegisterHook( "COMBAT_LOG_EVENT_UNFILTERED", function( event, _, subtype, _, sourceGUID, sourceName, _, _, destGUID, destName, destFlags, _, spellID, spellName )
         if sourceGUID == GUID and subtype == "SPELL_CAST_SUCCESS" and destGUID ~= nil and destGUID ~= "" then
             lastTarget = destGUID
@@ -516,6 +532,9 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             cast = 2,
             cooldown = 30,
             gcd = "spell",
+            
+            spend = 0.01,
+            spendType = "mana",
 
             startsCombat = true,
 
@@ -524,6 +543,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             handler = function ()
                 applyDebuff( "target", "immolate" )
                 active_dot.immolate = max( active_dot.immolate, true_active_enemies )
+                removeDebuff( "target", "combusting_engine" )                
             end,
         },
 
@@ -544,9 +564,6 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             talent = "channel_demonfire",
 
             usable = function () return active_dot.immolate > 0 end,
-            start = function ()
-                -- applies channel_demonfire (196447)
-            end,
         },
 
 
@@ -611,11 +628,41 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
             handler = function ()
                 gain( 0.5, "soul_shards" )
-                addStack( "backdraft", nil, talent.flashover.enabled and 4 or 2 )
+                applyBuff( "backdraft", nil, talent.flashover.enabled and 2 or 1 )
                 if talent.roaring_blaze.enabled then
                     applyDebuff( "target", "conflagrate" )
                     active_dot.conflagrate = max( active_dot.conflagrate, active_dot.bane_of_havoc )
                 end
+                if conduit.combusting_engine.enabled then
+                    applyDebuff( "target", "combusting_engine" )
+                end
+            end,
+
+            auras = {
+                -- Conduit
+                combusting_engine = {
+                    id = 339986,
+                    duration = 30,
+                    max_stack = 1
+                }
+            }
+        },
+        
+
+        corruption = {
+            id = 172,
+            cast = 1.885,
+            cooldown = 0,
+            gcd = "spell",
+            
+            spend = 0.01,
+            spendType = "mana",
+            
+            startsCombat = true,
+            texture = 136118,
+            
+            handler = function ()
+                applyDebuff( "target", "corruption" )
             end,
         },
 
@@ -654,6 +701,65 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         }, ]]
 
 
+        curse_of_exhaustion = {
+            id = 334275,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell",
+            
+            startsCombat = true,
+            texture = 136162,
+            
+            handler = function ()
+                applyDebuff( "target", "curse_of_exhaustion" )
+                removeDebuff( "target", "curse_of_tongues" )
+                removeDebuff( "target", "curse_of_weakness" )
+            end,
+        },
+        
+
+        curse_of_tongues = {
+            id = 1714,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell",
+            
+            spend = 0.01,
+            spendType = "mana",
+            
+            startsCombat = true,
+            texture = 136140,
+            
+            handler = function ()
+                removeDebuff( "target", "curse_of_exhaustion" )
+                applyDebuff( "target", "curse_of_tongues" )
+                removeDebuff( "target", "curse_of_weakness" )
+            end,
+        },
+        
+
+        curse_of_weakness = {
+            id = 702,
+            cast = 0,
+            cooldown = 0,
+            gcd = "spell",
+            
+            spend = 0.01,
+            spendType = "mana",
+            
+            startsCombat = true,
+            texture = 136138,
+            
+            handler = function ()
+                removeDebuff( "target", "curse_of_exhaustion" )
+                removeDebuff( "target", "curse_of_tongues" )
+                applyDebuff( "target", "curse_of_weakness" )
+            end,
+        },
+        
+
+
+
         dark_pact = {
             id = 108416,
             cast = 0,
@@ -666,7 +772,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
             talent = "dark_pact",
 
-            usable = function () return health.pct > 20 end,
+            usable = function () return health.pct > 20, "insufficient health" end,
             handler = function ()
                 applyBuff( "dark_pact" )
                 spend( 0.2 * health.max, "health" )
@@ -678,7 +784,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             id = 113858,
             cast = 0,
             cooldown = 120,
-            gcd = "spell",
+            gcd = "off",
 
             toggle = "cooldowns",
 
@@ -750,13 +856,17 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             cooldown = 0,
             gcd = "spell",
 
-            spend = 0,
+            spend = function () return debuff.soul_rot.up and 0 or 0.03 end,
             spendType = "mana",
 
             startsCombat = true,
 
             start = function ()
                 applyDebuff( "target", "drain_life" )
+            end,
+
+            finish = function ()
+                if conduit.accrued_vitality.enabled then applyBuff( "accrued_vitality" ) end
             end,
         },
 
@@ -795,7 +905,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
         fear = {
             id = 5782,
-            cast = 1.69983,
+            cast = 1.7,
             cooldown = 0,
             gcd = "spell",
 
@@ -808,7 +918,21 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
                 applyDebuff( "target", "fear" )
             end,
         },
+        
 
+        fel_domination = {
+            id = 333889,
+            cast = 0,
+            cooldown = function () return 180 + conduit.fel_celerity.mod * 0.001 end,
+            gcd = "spell",
+            
+            startsCombat = true,
+            texture = 237564,
+            
+            handler = function ()
+                applyBuff( "fel_domination" )
+            end,
+        },
 
         grimoire_of_sacrifice = {
             id = 108503,
@@ -845,12 +969,14 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             spendType = "mana",
 
             startsCombat = true,
+            texture = 460695,
+
             indicator = function () return ( lastTarget == "lastTarget" or target.unit == lastTarget ) and "cycle" or nil end,
             cycle = "havoc",
 
             bind = "bane_of_havoc",
 
-            usable = function () return not pvptalent.bane_of_havoc.enabled and active_enemies > 1 end,
+            usable = function () return not pvptalent.bane_of_havoc.enabled and active_enemies > 1, "requires multiple targets and no bane_of_havoc" end,
             handler = function ()
                 if class.abilities.havoc.indicator == "cycle" then
                     active_dot.havoc = active_dot.havoc + 1
@@ -877,14 +1003,14 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             bind = "havoc",
 
             pvptalent = "bane_of_havoc",
-            usable = function () return active_enemies > 1 end,
+            usable = function () return active_enemies > 1, "requires multiple targets" end,
             
             handler = function ()
                 applyDebuff( "target", "bane_of_havoc" )
                 active_dot.bane_of_havoc = active_enemies
                 applyBuff( "active_havoc" )
             end,
-        },        
+        },
 
 
         health_funnel = {
@@ -896,10 +1022,28 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             gcd = "spell",
 
             startsCombat = true,
+            texture = 136168,
 
-            usable = function () return pet.active end,
+            usable = function () return pet.active and pet.alive and pet.health_pct < 100, "requires pet" end,
             start = function ()
                 applyBuff( "health_funnel" )
+            end,
+        },
+
+
+        howl_of_terror = {
+            id = 5484,
+            cast = 0,
+            cooldown = 40,
+            gcd = "spell",
+            
+            startsCombat = true,
+            texture = 607852,
+
+            talent = "howl_of_terror",
+            
+            handler = function ()
+                applyDebuff( "target", "howl_of_terror" )
             end,
         },
 
@@ -919,6 +1063,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             handler = function ()
                 applyDebuff( "target", "immolate" )
                 active_dot.immolate = max( active_dot.immolate, active_dot.bane_of_havoc )
+                removeDebuff( "target", "combusting_engine" )
             end,
         },
 
@@ -942,6 +1087,8 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             handler = function ()
                 removeBuff( "chaotic_inferno" )
                 removeStack( "backdraft" )
+                removeStack( "decimating_bolt" )
+
                 -- Using true_active_enemies for resource predictions' sake.
                 gain( 0.2 + ( talent.fire_and_brimstone.enabled and ( ( true_active_enemies - 1 ) * 0.1 ) or 0 ), "soul_shards" )
             end,
@@ -958,6 +1105,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             spendType = "mana",
 
             startsCombat = true,
+            texture = 607853,
 
             talent = "mortal_coil",
 
@@ -987,6 +1135,44 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         },
 
 
+        --[[ ritual_of_doom = {
+            id = 342601,
+            cast = 0,
+            cooldown = 3600,
+            gcd = "spell",
+            
+            spend = 1,
+            spendType = "soul_shards",
+            
+            toggle = "cooldowns",
+
+            startsCombat = true,
+            texture = 538538,
+            
+            handler = function ()
+            end,
+        },
+        
+
+        ritual_of_summoning = {
+            id = 698,
+            cast = 0,
+            cooldown = 120,
+            gcd = "spell",
+            
+            spend = 0,
+            spendType = "mana",
+            
+            toggle = "cooldowns",
+
+            startsCombat = true,
+            texture = 136223,
+            
+            handler = function ()
+            end,
+        }, ]]
+
+
         shadowburn = {
             id = 17877,
             cast = 0,
@@ -995,10 +1181,11 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             recharge = 12,
             gcd = "spell",
 
-            spend = 0.01,
-            spendType = "mana",
-
+            spend = 1,
+            spendType = "soul_shards",
+            
             startsCombat = true,
+            texture = 136191,
 
             talent = "shadowburn",
 
@@ -1015,8 +1202,12 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             cast = 1.5,
             cooldown = function () return talent.darkfury.enabled and 45 or 60 end,
             gcd = "spell",
+            
+            spend = 0.01,
+            spendType = "mana",
 
             startsCombat = true,
+            texture = 607865,
 
             handler = function ()
                 applyDebuff( "target", "shadowfury" )
@@ -1026,6 +1217,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
         singe_magic = {
             id = 132411,
+            known = function () return IsSpellKnownOrOverridesKnown( 132411 ) or IsSpellKnownOrOverridesKnown( 119905 ) end,
             cast = 0,
             cooldown = 15,
             gcd = "spell",
@@ -1034,19 +1226,20 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
             spendType = "mana",
 
             startsCombat = true,
-
+            
+            buff = "dispellable_magic",
             usable = function ()
-                return pet.exists or buff.grimoire_of_sacrifice.up
+                return pet.imp.alive or buff.grimoire_of_sacrifice.up, "requires imp or grimoire_of_sacrifice"
             end,
             handler = function ()
-                -- generic dispel effect?
+                removeBuff( "dispellable_magic" )
             end,
         },
 
 
         soul_fire = {
             id = 6353,
-            cast = 1.5,
+            cast = function () return 4 * haste end,
             cooldown = 20,
             gcd = "spell",
 
@@ -1099,9 +1292,28 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
         },
 
 
+        subjugate_demon = {
+            id = 1098,
+            cast = 3,
+            cooldown = 0,
+            gcd = "spell",
+            
+            spend = 0.02,
+            spendType = "mana",
+            
+            startsCombat = true,
+            texture = 136154,
+            
+            usable = function () return target.is_demon and target.level < level + 2, "requires demon target" end,
+            handler = function ()
+                summonPet( "controlled_demon" )
+            end,
+        },
+        
+        
         summon_felhunter = {
             id = 691,
-            cast = 2.5,
+            cast = function () return ( buff.fel_domination.up and 0.5 or 6 ) * haste end,
             cooldown = 0,
             gcd = "spell",
 
@@ -1115,7 +1327,10 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
                 elseif buff.grimoire_of_sacrifice.up then return false, "grimoire_of_sacrifice is up" end
                 return true
             end,
-            handler = function () summonPet( "felhunter" ) end,
+            handler = function ()
+                summonPet( "felhunter" )
+                removeBuff( "fel_domination" )
+            end,
 
             copy = { 112869 }
         },
@@ -1123,7 +1338,7 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
         summon_imp = {
             id = 688,
-            cast = 2.5,
+            cast = function () return ( buff.fel_domination.up and 0.5 or 6 ) * haste end,
             cooldown = 0,
             gcd = "spell",
 
@@ -1139,7 +1354,10 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
                 elseif buff.grimoire_of_sacrifice.up then return false, "grimoire_of_sacrifice is up" end
                 return true
             end,
-            handler = function () summonPet( "imp" ) end,
+            handler = function ()
+                summonPet( "imp" )
+                removeBuff( "fel_domination" )
+            end,
 
             copy = "summon_pet"
         },
@@ -1160,7 +1378,32 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
 
             handler = function ()
                 summonPet( "infernal", 30 )
+                if talent.rain_of_chaos.enabled then applyBuff( "rain_of_chaos" ) end
                 if azerite.crashing_chaos.enabled then applyBuff( "crashing_chaos", 3600, 8 ) end
+            end,
+        },
+
+
+        summon_voidwalker = {
+            id = 697,
+            cast = function () return ( buff.fel_domination.up and 0.5 or 6 ) * haste end,
+            cooldown = 0,
+            gcd = "spell",
+            
+            spend = 1,
+            spendType = "soul_shards",
+            
+            startsCombat = true,
+            texture = 136221,
+            
+            usable = function ()
+                if pet.alive then return false, "pet is alive"
+                elseif buff.grimoire_of_sacrifice.up then return false, "grimoire_of_sacrifice is up" end
+                return true
+            end,
+            handler = function ()
+                summonPet( "voidwalker" )
+                removeBuff( "fel_domination" )
             end,
         },
 
@@ -1222,7 +1465,40 @@ if UnitClassBase( 'player' ) == 'WARLOCK' then
     } )
 
 
-    spec:RegisterPack( "Destruction", 20200124, [[dW0RQbqivipIsP2KkYNurjnkqKtbIAvusvEffvZcvXTOKk2LO(fQQgMkWXGQAzQGEgivtdKIRPIQTrPeFtfLyCGuQZrjv16OKkL5rr5EGY(OuCqvuelevPhQIctKsj5IQOO2iiL0hbPenskPsojLuSsqYmvrPe3ufLsANus(jLuPQHsjvQSuvukEkuMkQkxvfLs9vvuK2lr)vKbRQdtAXu4XeMSuDzKnRsFMImAq1PPA1ukPETkuZgLBlLDl53kgou54Guclh45qMUW1rLTdcFhQY4vrP68uQwpLuA(uI9R0s8L8jX6AqsRo8Gdp4a8peAY4FWbhEa0LyHDCKedNkownrsSsBKeZwrOaWjcFkjgo1oB0UKpjgA4acsIbpcCiRB8ZVjpGZzKftJFK34yA4tja6n4h5nb)smdoNfwtjnKyDniPvhEWHhCa(hcnz8p4Gdp4qjMYfWhGedZBNHedU37ujnKyDcjKy2EFBfHcaNi8P2)mvbSrC8cLT3hEe4qw34NFtEaNZilMg)iVXX0WNsa0BWpYBc(xOS9(qPfNcSV)H4ZZ(hEWHhiXyokqs(KyMgehUKxxcuktYN0k8L8jXOsnyuxYReta8GaUkXqdhlHGRG((W2)89pT)r7BWDVzdvCChO3iZHB)t7BWDV5g1gG90CtmoH3tDaPnuMd3(N23G7EZMaEBCaLMBcXHdqnvypJcvC8(MbBF8pqIPIWNsIbuVsZnDDajdPvhk5tIrLAWOUKxjMa4bbCvIzWDVzdvCChO3iZHtIPIWNsIjGRdkzmSqgsRGUKpjgvQbJ6sELycGheWvjgA4yjeCf033gy7dn5d336SVb39MBuBa2tZnX4eEp1bK2qzoCsmve(usmbCDqjJHfYqAf0i5tIrLAWOUKxjMa4bbCvID0(Izy9bVklM6YutanOmhojMkcFkjMaUoOKXWcziT6CjFsmQudg1L8kXeapiGRsmHIIu4nAFZ2hhfzVUeOuwgqn1l0(N2hhfzVUeOuwgqn1l0(MTVqrrk8gTV57Bs0LyQi8PKyc46GsgdlKH0kBrYNeJk1GrDjVsmbWdc4QeZG7EZgQ44oqVrUp4v7FAFdU7n3O2aSNMBIXj8EQdiTHYC42)0(OHJLqWvqFFBGTp(zOlXur4tjXetDzQjGgKmKwDwK8jXOsnyuxYReta8GaUkXm4U3SHkoUd0BK7dE1(N2)O9n4U3CJAdWEAUjgNW7PoG0gkZHB)t7dP9rdhlHGRG((2aB)dZq79TyzFbCfyIqPlqfHpLY23M9XpB93)0(OHJLqWvqFFBGTp(zOVpKLyQi8PKyIPUm1eqdsgsRG2s(KyuPgmQl5vIjaEqaxLy4Oi71LaLYYaQPEH23S9pxIPIWNsIjM6YutaniziTY6l5tIrLAWOUKxjMa4bbCvIjGRateAFB2hFjMkcFkjMyQltnb0GKH0k8pqYNetfHpLednCS01bKeJk1GrDjVYqAf(4l5tIPIWNsIHGR9bpdoqjXOsnyuxYRmKwH)Hs(KyQi8PKyEj8IaAqsmQudg1L8kdziXGRqmcjFsRWxYNeJk1GrDjVsmbWdc4QeZG7EZgQ44oqVrUp4v7FAF0WXsi4kOVVnW2h)9pTpA4yjeCf033my7dnsmve(usmXuxMAcObjdPvhk5tIrLAWOUKxjMa4bbCvIfkJQi7vqGszjX0m4qHpvMk1Gr99pTpGAQxO9nB)ohqdFQ9TE7Fq(89Tyz)J2pugvr2RGaLYsIPzWHcFQmvQbJ67FAFaDbecUAWijMkcFkjM3AdtdsgsRGUKpjgvQbJ6sELycGheWvjMqrrk8gTVz7dxHyeja1uVqsmve(usmbCDqjJHfYqAf0i5tIPIWNsIHgow66asIrLAWOUKxziT6CjFsmQudg1L8kXeapiGRsmveoeuIkQ5eAFZ2h67BXY(hTFOmQI81busREYa4numfLPsnyuxIPIWNsIHGR9bpdoqjdPv2IKpjgvQbJ6sELycGheWvjMqrrk8gTVz7dxHyeja1uVqsmve(usmVeEranizidjgoajMMHgs(KwHVKpjMkcFkjgIR1Mk5nCsmQudg1L8kdPvhk5tIrLAWOUKxjMa4bbCvIfkJQiBc4TXbuAUjKka(1fuMk1GrDjMkcFkjMjG3ghqP5MqQa4xxqYqAf0L8jXur4tjXWnHpLeJk1GrDjVYqAf0i5tIPIWNsIHgow66asIrLAWOUKxziT6CjFsmQudg1L8kXeapiGRsSJ2pugvrgnCS01buMk1GrDjMkcFkjMxcViGgKmKHethsYN0k8L8jXOsnyuxYReta8GaUkXWrr2RlbkLLvr4qq7FAFiTVb39Mfafb3ltjbCDq5(GxTVfl7F0(HYOkYMaEBCaLMBcXHdqnvyptLAWO((qE)t7dP9pAFXmS(GxLHRqmImG0U99TyzFveoeuIkQ5eAFB2h67dzjMkcFkjgq9kn301bKmKwDOKpjgvQbJ6sELycGheWvjwFIS3AdtdkdOM6fAFB2xOOifEJKyQi8PKyc4Avel1P2uxhqYqAf0L8jXOsnyuxYRetfHpLeZBTHPbjXeapiGRsma1uVq7B2(NV)P9H0(hTFOmQISqdvWSJAzQudg133IL9fZW6dEvwOHky2rTmGAQxO9TzFa1uVq7dzjMWUGrPqbMOajTcFziTcAK8jXOsnyuxYRetfHpLetOmwsfHpvI5OqIXCuKkTrsmrhjdPvNl5tIrLAWOUKxjMkcFkjgCfIriXeapiGRsmveoeuIkQ5eAFZ2hAKyc7cgLcfyIcK0k8LH0kBrYNeJk1GrDjVsmbWdc4Qelugvr2eWBJdO0CtioCaQPc7zQudg13)0(4Oi71LaLYYQiCiO9pTpK2hUcXisQiCiO9Tyz)qzufzHgQGzh1YuPgmQVVfl7hkJQi71La1KPsnyuF)t7RIWHGsurnNq7B2(qZ(qwIPIWNsIjGRdkzmSqgsRols(KyQi8PKya1R0CtxhqsmQudg1L8kdPvqBjFsmve(usS7i4qupPwlb8GsgK2KyuPgmQl5vgsRS(s(KyQi8PKy44a(1UxMsgmffsmQudg1L8kdPv4FGKpjgvQbJ6sELyQi8PKyWvigHeta8GaUkXG0(hTFOmQISjG3ghqP5MqC4autf2ZuPgmQVVfl7F0(HYOkYEDjqnzQudg133IL9dLrvKnb824akn3eIdhGAQWEMk1Gr99pTpokYEDjqPSmGAQxO9nd2(4FW(qwIjSlyukuGjkqsRWxgsRWhFjFsmQudg1L8kXeapiGRsSqzuf5RdOKw9KbWBOykktLAWO((N23G7EZgQ44oqVrMd3(N2hnCSecUc67B2(NVV1z)dYhUV1BFveoeuIkQ5esIPIWNsI5LWlcObjdPv4FOKpjMkcFkjgA4yPRdijgvQbJ6sELH0k8HUKpjgvQbJ6sELycGheWvjMb39MnuXXDGEJCFWRKyQi8PKyIPUm1eqdsgsRWhAK8jXOsnyuxYReta8GaUkXoA)qzuf5RdOKw9KbWBOykktLAWOUetfHpLedbx7dEgCGsgsRW)CjFsmQudg1L8kXeapiGRsSJ2VprwmLGQaOb1txM2OKbhOYaQPEH2)0(hTVkcFQSykbvbqdQNUmTrzVsxMBcES)P9vr4qqjQOMtO9nB)ZLyQi8PKyIPeufanOE6Y0gjdPv4Bls(KyQi8PKyEj8IaAqsmQudg1L8kdziXeDKKpPv4l5tIrLAWOUKxjMa4bbCvIfkJQiBc4TXbuAUjehoa1uH9mvQbJ67FAFa1uVq7B2(q79pTVygwFWRYiUwBQKxxcukldOM6fAFZ2hAYNlXur4tjX8wByAqYqA1Hs(KyuPgmQl5vIjaEqaxLyHYOkYMaEBCaLMBcXHdqnvyptLAWO((N2xmdRp4vzexRnvYRlbkLLbut9cTVz7dn5Z3)0(hTVb39MnuXXDGEJmhU9pTpA4yjeCf033S9HMm0LyQi8PKyIPUm1eqdsgsRGUKpjgvQbJ6sELyQi8PKyQ1IGRafLUtfP5MWn4rajMa4bbCvIjMH1h8QmIR1Mk51LaLYYC423IL9fZW6dEvgX1AtL86sGszza1uVq7BgS9HgjwPnsIPwlcUcuu6ovKMBc3GhbKH0kOrYNetfHpLedX1AtL86sGszsmQudg1L8kdPvNl5tIrLAWOUKxjMa4bbCvIHJISxxcuklRIWHGKyQi8PKyM4uq31kn3KATeyc4YqALTi5tIrLAWOUKxjMa4bbCvIHJISxxcuklRIWHG2)0(qAFCuK96sGszza1uVq7B2(hEq(89TyzFCuK96sGszza1uVq7B2(hE4(N2hnCSecUc67BdS9HE2w23IL9pA)qzufztaVnoGsZnH4WbOMkSNPsnyuFFilXur4tjX6k44eA4yjVqHA4mpSldPvNfjFsmQudg1L8kXeapiGRsmCuK96sGszzveoe0(N2hs7JJISxxcukldOM6fAFZ2h)ZZNVVfl7Jgowcbxb99nBFONpF)t7dP9n4U3CxbhNqdhl5fkudN5H9mhU9Tyz)J2pugvr2eWBJdO0CtioCaQPc7zQudg13)0(9jYERnmnOmGAQxO9TzF8pCFiVpKLyQi8PKynQna7P5MyCcVN6asBiziTcAl5tIrLAWOUKxjMa4bbCvIfEJsXK6oTVn7lMH1h8QmIR1Mk51LaLYYDoGg(u7B((q)ajMkcFkjgIR1Mk51LaLYKH0kRVKpjgvQbJ6sELycGheWvjw4nAFB2h6hS)P9dVrPysDN23M9fZW6dEv2eNc6UwP5MuRLatap35aA4tTV57d9dKyQi8PKyM4uq31kn3KATeyc4YqAf(hi5tIrLAWOUKxjMa4bbCvIfkJQi3vWXj0WXsEHc1WzEyptLAWO((N2xmdRp4v5UcooHgowYluOgoZd7za1uVq7BZ(Hcmrro8gLIj1DsIPIWNsIH4ATPsEDjqPmziTcF8L8jXOsnyuxYReta8GaUkXeZW6dEvgX1AtL86sGszza1uVq7BZ(H3OumPUtsmve(usmtCkO7ALMBsTwcmbCziTc)dL8jXOsnyuxYReta8GaUkXeZW6dEvgX1AtL86sGszza1uVq7BZ(H3OumPUt7FAFCuK96sGszza1uVq7B2(hEq(CjMkcFkjwxbhNqdhl5fkudN5HDziTcFOl5tIrLAWOUKxjMa4bbCvIjMH1h8QmIR1Mk51LaLYYaQPEH23M9dVrPysDN2)0(4Oi71LaLYYaQPEH23S9XhANpxIPIWNsIH3ayDiiVsacnLwcsgsRWhAK8jXOsnyuxYReta8GaUkXeZW6dEvgX1AtL86sGszza1uVq7BZ(H3OumPUt7FAFiTpokYEDjqPSmGAQxO9nBF8ppF((wSSVb39M7k44eA4yjVqHA4mpSN5WT)P9rdhlHGRG((MTp03hYsmve(usSg1gG90CtmoH3tDaPnKmKwH)5s(KyuPgmQl5vIjaEqaxLyH3OumPUt7B2(q)ajMkcFkjgIR1Mk51LaLYKH0k8TfjFsmQudg1L8kXeapiGRsSWBukMu3P9nBFOFGetfHpLeZeNc6UwP5MuRLataxgsRW)Si5tIrLAWOUKxjMa4bbCvIfEJsXK6oTVz7Fi(7FA)WBukMu3P9TzFOrIPIWNsI1vWXj0WXsEHc1WzEyxgsRWhAl5tIrLAWOUKxjMa4bbCvIfEJsXK6oTVz7JVTS)P9dVrPysDN23M9TfjMkcFkjwJAdWEAUjgNW7PoG0gsgsRW36l5tIrLAWOUKxjMa4bbCvIfEJsXK6oTVz7JV1F)t7hEJsXK6oTVn7dnsmve(usm8gaRdb5vcqOP0sqYqA1Hhi5tIrLAWOUKxjMa4bbCvIfEJsXK6oTVz7JVTS)P9dVrPysDN23M9TfjMkcFkjwJAdWEAUjgNW7PoG0gsgsRoeFjFsmve(usmd2m90CtbCkrf1SlXOsnyuxYRmKwD4Hs(KyuPgmQl5vIjaEqaxLyIzy9bVkJ4ATPsEDjqPSmGAQxO9Tb2(2Yb7BD2h)d3)0(hTpokYEDjqPSSkchcsIPIWNsIH3ayDiiVsacnLwcsgsRoe6s(KyQi8PKyahhogL8kHWPcsIrLAWOUKxziT6qOrYNeJk1GrDjVsmbWdc4QedhfzVUeOuwwfHdbTVfl7hEJsXK6oTVz7d9dKyQi8PKy4MWNsgsRo8CjFsmQudg1L8kXeapiGRsmCuK96sGszzveoe0(N2hs7F0(HYOkYMaEBCaLMBcXHdqnvyptLAWO((wSSpK2)O9jeIkbLBuBa2tZnX4eEp1bK2q5MARhW(wSSVb39MBuBa2tZnX4eEp1bK2qza1uVq7d59pTpK2)O9dLrvK7k44eA4yjVqHA4mpSNPsnyuFFlw23G7EZDfCCcnCSKxOqnCMh2ZaQPEH2hY7d59Tyz)WBukMu3P9nd2(4FUetfHpLeZGaicCSxMKH0QdTfjFsmQudg1L8kXeapiGRsmCuK96sGszzveoe0(N2hs7F0(HYOkYMaEBCaLMBcXHdqnvyptLAWO((wSSpK2)O9jeIkbLBuBa2tZnX4eEp1bK2q5MARhW(wSSVb39MBuBa2tZnX4eEp1bK2qza1uVq7d59pTpK2)O9dLrvK7k44eA4yjVqHA4mpSNPsnyuFFlw23G7EZDfCCcnCSKxOqnCMh2ZaQPEH2hY7d59Tyz)WBukMu3P9nd2(4FUetfHpLeZGntpD5a2LH0Qdpls(KyuPgmQl5vIjaEqaxLy4Oi71LaLYYQiCiO9pTpK2)O9dLrvKnb824akn3eIdhGAQWEMk1Gr99TyzFiT)r7tievck3O2aSNMBIXj8EQdiTHYn1wpG9TyzFdU7n3O2aSNMBIXj8EQdiTHYaQPEH2hY7FAFiT)r7hkJQi3vWXj0WXsEHc1WzEyptLAWO((wSSVb39M7k44eA4yjVqHA4mpSNbut9cTpK3hY7BXY(H3OumPUt7BgS9X)CjMkcFkj21bKbBMUmKwDi0wYNeJk1GrDjVsmbWdc4QedhfzVUeOuwwfHdbT)P9H0(hTFOmQISjG3ghqP5MqC4autf2ZuPgmQVVfl7JJISxxcukldOM6fAFZGT)HhSpK33IL9dVrPysDN23my7F4bsmve(usmoeL8GAiziT6qRVKpjgvQbJ6sELyQi8PKy4gXXuGCRL6jX0WXfA4tL6eeUGKycGheWvjwFIS3AdtdkdOM6fAFBGT)57FAFiTVygwFWRYiUwBQKxxcukldOM6fAFBGT)HhSVfl7hEJsXK6oTVz7d9d2hYsSsBKed3ioMcKBTupjMgoUqdFQuNGWfKmKwb9dK8jXOsnyuxYRetfHpLedmHaWHcQNGyM(mP(WysmbWdc4QeRpr2BTHPbLbut9cTVnW2)89pTpK2xmdRp4vzexRnvYRlbkLLbut9cTVnW2)Wd23IL9dVrPysDN23S9H(b7dzjwPnsIbMqa4qb1tqmtFMuFymziTc64l5tIrLAWOUKxjMkcFkjgcUdbbsqq10saI5cjMa4bbCvI1Ni7T2W0GYaQPEH23gy7F((N2hs7lMH1h8QmIR1Mk51LaLYYaQPEH23gy7F4b7BXY(H3OumPUt7B2(q)G9HSeR0gjXqWDiiqccQMwcqmxidPvq)qjFsmQudg1L8kXur4tjXuOfCoUjOksLYfoJdjXeapiGRsS(ezV1gMgugqn1l0(2aB)Z3)0(qAFXmS(GxLrCT2ujVUeOuwgqn1l0(2aB)dpyFlw2p8gLIj1DAFZ2h6hSpKLyL2ijMcTGZXnbvrQuUWzCiziTc6qxYNeJk1GrDjVsmve(usSW7ekgqljMoD2LycGheWvjwFIS3AdtdkdOM6fAFBGT)57FAFiTVygwFWRYiUwBQKxxcukldOM6fAFBGT)HhSVfl7hEJsXK6oTVz7d9d2hYsSsBKel8oHIb0sIPtNDziTc6qJKpjgvQbJ6sELyQi8PKyq4kln3ekgqdjXeapiGRsS(ezV1gMgugqn1l0(2aB)Z3)0(qAFXmS(GxLrCT2ujVUeOuwgqn1l0(2aB)dpyFlw2p8gLIj1DAFZ2h6hSpKLyL2ijgeUYsZnHIb0qYqgsSoDvowi5tAf(s(KyQi8PKyiCeJLyJ4yjgvQbJ6sELH0QdL8jXur4tjXqEzIsn1KlKyuPgmQl5vgsRGUKpjgvQbJ6sELycGheWvjgCfIrKur4qq7FAFveoeuIkQ5eAFZ2)89To7hkJQi71La1KPsnyuFFZ3hs7hkJQi71La1KPsnyuF)t7hkJQi7vqGszjX0m4qHpvMk1Gr99HSetfHpLetOmwsfHpvI5OqIXCuKkTrsm4keJqgsRGgjFsmQudg1L8kXeapiGRsSJ2hs7JJISxxcuklRIWHG2)0(9jYERnmnOmGAQxO9nFF833M9Xrr2RlbkLLbut9cTpK33IL9r4iglfkWefOSqdvWSJA7BZ(4VVfl7F0(HYOkYMaEBCaLMBcXHdqnvyptLAWOUetfHpLetOHky2rnziT6CjFsmQudg1L8kXeapiGRsmveoeuIkQ5eAFB2)qjMkcFkjMqzSKkcFQeZrHeJ5OivAJKy6qYqALTi5tIrLAWOUKxjMkcFkjM3AdtdsIjaEqaxLya6cieC1Gr7FAFiT)r7hkJQil0qfm7OwMk1Gr99TyzFXmS(GxLfAOcMDuldOM6fAFB2hqn1l0(qwIjSlyukuGjkqsRWxgsRols(KyuPgmQl5vIjaEqaxLyHYOkYEfeOuwsmndou4tLPsnyuF)t7RIWNklGRdkzmSi7v6YCtWJ9pTpGAQxO9nB)ohqdFQ9TE7Fq(CjMkcFkjM3AdtdsgsRG2s(KyuPgmQl5vIPIWNsIjuglPIWNkXCuiXyoksL2ijMOJKH0kRVKpjgvQbJ6sELycGheWvj2r7JJISxxcuklRIWHG23IL9pA)qzufztaVnoGsZnH4WbOMkSNPsnyuxIPIWNsIDhbhI6j1AjGhuYG0MmKwH)bs(KyuPgmQl5vIjaEqaxLygC3BgqIJzecLUdqqzaPIqIPIWNsIfWPexzmCvpDhGGKH0k8XxYNetfHpLedhhWV29YuYGPOqIrLAWOUKxziTc)dL8jXOsnyuxYReta8GaUkXoA)(ezXucQcGgupDzAJsgCGkdOM6fA)t7F0(Qi8PYIPeufanOE6Y0gL9kDzUj4HetfHpLetmLGQaOb1txM2iziTcFOl5tIPIWNsIbifNxMsxM2iKeJk1GrDjVYqAf(qJKpjMkcFkjMaUwfXsDQn11bKeJk1GrDjVYqAf(Nl5tIrLAWOUKxjMkcFkjgCfIriXeapiGRsmiTFFIS3AdtdkdOM6fAFB2Vpr2BTHPbL7Can8P236T)b5Z33IL9pA)qzufzVccukljMMbhk8PYuPgmQVpK3)0(qA)J2xmdRp4vzexRnvYRlbkLLbK2TVVfl7F0(HYOkYMaEBCaLMBcXHdqnvyptLAWO((wSSFOmQISjG3ghqP5MqC4autf2ZuPgmQV)P9Xrr2RlbkLLbut9cTVzW2h)d2hYsmHDbJsHcmrbsAf(YqAf(2IKpjgvQbJ6sELycGheWvjwOmQISjG3ghqP5MqC4autf2ZuPgmQV)P9Xrr2RlbkLLvr4qqsmve(usmHYyjve(ujMJcjgZrrQ0gjXmnioCjVUeOuMmKwH)zrYNetfHpLednCS01bKeJk1GrDjVYqAf(qBjFsmQudg1L8kXgCsmefsmve(usmiuGRgmsIbHY4ijMkchckrf1CcTVn7J)(N2xmdRp4vz4keJidOM6fAFZGTp(hSVfl7lMH1h8QmIR1Mk51LaLYYaQPEH23my7J)57FAFiTFOmQISjG3ghqP5MqC4autf2ZuPgmQVVfl7hkJQi3vWXj0WXsEHc1WzEyptLAWO((N2xmdRp4v5UcooHgowYluOgoZd7za1uVq7BgS9X)89H8(wSSFOmQICxbhNqdhl5fkudN5H9mvQbJ67FAFXmS(GxL7k44eA4yjVqHA4mpSNbut9cTVzW2h)Z3)0(qAFXmS(GxLrCT2ujVUeOuwgqn1l0(2SF4nkftQ70(wSSVygwFWRYiUwBQKxxcukldOM6fAFZ3xmdRp4vzexRnvYRlbkLL7Can8P23M9dVrPysDN2hYsmiuqQ0gjXWndlHgowcbxbDKmKwHV1xYNeJk1GrDjVsmbWdc4QeZG7EZgQ44oqVrUp4v7FAF0WXsi4kOVVnW2h)857BD2)Gm0336TFOmQI8LPi4deeitLAWO((N2)O9HqbUAWOmUzyj0WXsi4kOJKyQi8PKyIPUm1eqdsgsRo8ajFsmQudg1L8kXeapiGRsm0WXsi4kOVVz7F4(N2hs7F0(qOaxnyug3mSeA4yjeCf0r7BXY(c4kWeH23M9XFFilXur4tjXqW1(GNbhOKH0QdXxYNeJk1GrDjVsmbWdc4Qeds7hkJQiBc4TXbuAUjehoa1uH9mvQbJ67BXY(Q1sapOSaOi4EzkjGRdktLAWO((qE)t7JJISxxcuklRIWHG23IL9n4U3CxbhNqdhl5fkudN5H9mhU9TyzFdU7ndiXXmcHs3biOmGurS)P9n4U3mGehZiekDhGGYaQPEH23M9fkksH3ijMkcFkjMaUoOKXWcziT6WdL8jXOsnyuxYReta8GaUkXm4U3SHkoUd0BK5WT)P9pAFiuGRgmkJBgwcnCSecUc6O9pT)r7hkJQitaT7cn8PYuPgmQlXur4tjXeW1bLmgwidPvhcDjFsmQudg1L8kXeapiGRsSJ2hcf4QbJY4MHLqdhlHGRGoA)t7hkJQitaT7cn8PYuPgmQV)P9H0(DYG7EZeq7UqdFQmGAQxO9nBFHIIu4nAFlw23G7EZgQ44oqVrMd3(qwIPIWNsIjGRdkzmSqgsRoeAK8jXOsnyuxYReta8GaUkXG0(OHJLqWvqFFBGTp0KpFFRZ(hKpCFR3(QiCiOevuZj0(qE)t7dP9pA)qzufztaVnoGsZnH4WbOMkSNPsnyuFFlw2xmdRp4vzexRnvYRlbkLLbut9cTVn7Fw2hYsmve(usmbCDqjJHfYqA1HNl5tIrLAWOUKxjMa4bbCvIjGRateAFB2hFjMkcFkjMyQltnb0GKH0QdTfjFsmve(usmVeEranijgvQbJ6sELHmKHedccG8PKwD4b4B9paAJ)bsm8uq5LjKeZAA4gqq99TL9vr4tTpZrbkVqjXq4iH0QdTLZIedhyUoJKy2EFBfHcaNi8P2)mvbSrC8cLT3hEe4qw34NFtEaNZilMg)iVXX0WNsa0BWpYBc(xOS9(qPfNcSV)H4ZZ(hEWHhSqTqz79pZNDsWfuFFd6oaAFX0m0yFdYKxO8(NjcbHlq7xtzDGRG2LJTVkcFk0(tXSNxOS9(Qi8PqzCasmndnGDzk64fkBVVkcFkughGetZqdZHX)DM(cLT3xfHpfkJdqIPzOH5W4x5m1Ok0WNAHsfHpfkJdqIPzOH5W4hX1AtLWrXcLkcFkughGetZqdZHXVjG3ghqP5MqQa4xxq84xyHYOkYMaEBCaLMBcPcGFDbLPsnyuFHY27RIWNcLXbiX0m0WCy8Jkfhc(ejuObAHsfHpfkJdqIPzOH5W4h3e(uluQi8PqzCasmndnmhg)OHJLUoGwOur4tHY4aKyAgAyom(9s4fb0G4XVWokugvrgnCS01buMk1Gr9fQfkBV)z(StcUG67tqqa77hEJ2pGt7RIya77O9viuNPgmkVqPIWNcbdHJySeBehVqPIWNczom(rEzIsn1KlwOwOS9(wxkeJyFoeH2x3hHJeUY2hhWhGh23N5Oy)P2VnOy)ghl8qbMOyFKGkf4dIN9n4I9d40(HcmrX(bCaHGpS((cT2hcfyF)oHJQUxM2FQ9dLrvGwOur4tHGjuglPIWNkXCuWtPncgCfIrWJFHbxHyejveoe0jveoeuIkQ5eYSZToHYOkYEDjqnzQudg1nhsHYOkYEDjqnzQudg1pfkJQi7vqGszjX0m4qHpvMk1GrDiVqPIWNczom(fAOcMDuJh)c7iiHJISxxcuklRIWHGo1Ni7T2W0GYaQPEHmhFBWrr2RlbkLLbut9cbzlwq4iglfkWefOSqdvWSJA2GVflhfkJQiBc4TXbuAUjehoa1uH9mvQbJ6lu2EF(WB2puGjk2hjOsb(G2xb0(W1QZO((m)yAFKxMy0(HcmrX(45b89TUuigX(4rkeuFFVY7Jfki8Y0(45b89d4aI2puGjkq8SVUpchjCL5wl13)mzoZ7Jd4dWd777O9be0cohq9fkve(uiZHXVqzSKkcFQeZrbpL2iy6q84xyQiCiOevuZjKnhUqz79TMwByAq7JGpCS((fbbb2)Qm2(Z9UFaN2hhWBkW((HcmrrEFR5U)zOHky2rT9XZzS9b0fqi47BnT2W0G23GUdG23J9PZoohqiE2pGta6SI2VM9bKIMA)y2hpff0(H3O9fkk8Y0(ESqPIWNczom(9wByAq8iSlyukuGjkqWWNh)cdqxaHGRgm6eKokugvrwOHky2rTmvQbJ6wSiMH1h8QSqdvWSJAza1uVq2aOM6fcYlu2EFBFM6b89TMkiqPS9pJPzWHcFQ9dLrvqDE23JZkAFCdc5gmAFRP1gMg0(45m2(fr99JzFdAFaDbeco13hntrG9d4ATFaN2hqn1lVmTFNdOHp1(i1oIN997(bCcqNv0(kdqA3((6(NbCDq7Z7WI9NA)aoTpEQ99Jz)aoTFOatuKxOur4tHmhg)ERnmniE8lSqzufzVccukljMMbhk8PYuPgmQFsfHpvwaxhuYyyr2R0L5MGhNaut9czwNdOHpL17G85lu2EF(Gt7BIkcOS9bCmA)5UFaNRzS)Da7hkJQaTVJ2pM9B6z3BU1s7hWP9lUMbb2FU7ZHi0(ZDFsfWxOur4tHmhg)cLXsQi8Psmhf8uAJGj6Ofkve(uiZHX)DeCiQNuRLaEqjdsB84xyhHJISxxcuklRIWHGSy5OqzufztaVnoGsZnH4WbOMkSNPsnyuFHsfHpfYCy8hWPexzmCvpDhGG4XVWm4U3mGehZiekDhGGYasfXcLkcFkK5W4hhhWV29YuYGPOyHsfHpfYCy8lMsqva0G6PltBep(f2r9jYIPeufanOE6Y0gLm4avgqn1l0PJur4tLftjOkaAq90LPnk7v6YCtWJfkve(uiZHXpGuCEzkDzAJqluQi8PqMdJFbCTkIL6uBQRdOfkBVpFWP997(IP6E4tTpCcq7Rm8u7O9vC4yoH236sHye7hZ(OPrbCVmT)eWjW(bCT2pGt7Jd4nfyF)qbMOyHsfHpfYCy8dxHye8iSlyukuGjkqWWNh)cds9jYERnmnOmGAQxiB6tK9wByAq5ohqdFkR3b5ZTy5OqzufzVccukljMMbhk8PYuPgmQd5tq6iXmS(GxLrCT2ujVUeOuwgqA3UflhfkJQiBc4TXbuAUjehoa1uH9mvQbJ6wSekJQiBc4TXbuAUjehoa1uH9mvQbJ6NWrr2RlbkLLbut9czgm8paYluQi8PqMdJFHYyjve(ujMJcEkTrWmnioCjVUeOugp(fwOmQISjG3ghqP5MqC4autf2ZuPgmQFchfzVUeOuwwfHdbTqz79Xgo2(qRoG2hbF4y99nO95quF)P2xmdRp4v8SVh73hcTFnX(koCKc2hVbeW3hPq4LP9VdyFturan8Y0(ydhBFm4kOJ2VZb8Y0(Izy9bVcTqPIWNczom(rdhlDDaTqz79TM4SI2hVbeW3hfJ4yVmTphU9NAFSHJTpgCf0r7Bq3bq7R73uB9a2xmdRp4v7ZHut0cLkcFkK5W4hcf4QbJ4P0gbd3mSeA4yjeCf0r8aHY4iyQiCiOevuZjKn4FsmdRp4vz4keJidOM6fYmy4FGflIzy9bVkJ4ATPsEDjqPSmGAQxiZGH)5NGuOmQISjG3ghqP5MqC4autf2ZuPgmQBXsOmQICxbhNqdhl5fkudN5H9mvQbJ6NeZW6dEvURGJtOHJL8cfQHZ8WEgqn1lKzWW)CiBXsOmQICxbhNqdhl5fkudN5H9mvQbJ6NeZW6dEvURGJtOHJL8cfQHZ8WEgqn1lKzWW)8tqsmdRp4vzexRnvYRlbkLLbut9czt4nkftQ7KflIzy9bVkJ4ATPsEDjqPSmGAQxiZfZW6dEvgX1AtL86sGsz5ohqdFkBcVrPysDNG8cLT3)mM6YutanO9rWhowF)Py233G2Ndr99JzFef7ZHB)ZaUoO95DybkVp0ktrWhiiW(mkq7FgtDzQjGg0(g0(CiQVpPaMtG9JzFef7ZHBFT23AkHxeqdAFd6oaA)ZG38(wZDFD)MARhW(Izy9bVAFhTVyAEzAFoC8SpsHG2xaxbMi0(3bSVhluQi8PqMdJFXuxMAcObXJFHzWDVzdvCChO3i3h8QtOHJLqWvq3gy4Np36Cqg6wVqzuf5ltrWhiiqMk1Gr9thbHcC1GrzCZWsOHJLqWvqhTqz79XGR9bpdoqTVJ2Ndr99v0(6(DhjgUk2)mM6YutanO9JzFturanO9rWvqhTVF33(WTFFQZASpCfcAFQgotW3)oG919pd46G2N3Hf595doTpsB0(aogH2xngUyFKcHxM23J9Vdy)MARhW(Izy9bVcTVIdhZj0cLkcFkK5W4hbx7dEgCGIh)cdnCSecUc6MD4jiDeekWvdgLXndlHgowcbxbDKflc4kWeHSbFiVqz79pd46G2N3Hf7dxr7JiiiGY2h3GqUbJ2Ndr7lMQ7HpfkV)zaueCVmT)zaxhep7dTe4TXb0(ZDFmoCaQPc78SVw99Tvk449XgoM1T9TMcfQHZ8W((kJT)vHya7luu4LP9v0(nTSV)zWlAFfTpUbHCdgTpEWPAFTSV)C3pGtT9vaTVkchcAHsfHpfYCy8lGRdkzmSGh)cdsHYOkYMaEBCaLMBcXHdqnvyptLAWOUflQ1sapOSaOi4EzkjGRdktLAWOoKpHJISxxcuklRIWHGSyXG7EZDfCCcnCSKxOqnCMh2ZC4SyXG7EZasCmJqO0DackdiveNm4U3mGehZiekDhGGYaQPEHSrOOifEJwOS9(wZDFSHJTpgCf0r7RaA)AI9niVmTpUzyuFFT67FMbA3fA4tTVJ2VMy)qzufuNN9T1COyFeoQ67Fg8I2xr7hWj77BqIPr7RqOotny0cLkcFkK5W4xaxhuYyybp(fMb39MnuXXDGEJmhUthbHcC1GrzCZWsOHJLqWvqhD6OqzufzcODxOHpvMk1Gr9fkBV)zQhW3)md0Ul0WNIN994SI23Gk66cxz7hZ(n9S7n3AP9d40(C4cVr7p1(bCA)ozWDV59TUg8iiiap77XzfTpkCgBFdkccSFm7ZHO9pd46G2N3Hf77Tg1DniM9997(8QIJ7a9g77O95WTqPIWNczom(fW1bLmgwWJFHDeekWvdgLXndlHgowcbxbD0PqzufzcODxOHpvMk1Gr9tqQtgC3BMaA3fA4tLbut9czMqrrk8gzXIb39MnuXXDGEJmhoiVqz79pZqq1(4bNQ9rkeEzIN97Z(1e7pqqaHIB)P2hB4y7JbxbD0cLkcFkK5W4xaxhuYyybp(fgKqdhlHGRGUnWGM85wNdYhA9ur4qqjQOMtiiFcshfkJQiBc4TXbuAUjehoa1uH9mvQbJ6wSiMH1h8QmIR1Mk51LaLYYaQPEHS5Sa5fkBVVTAQZAS)abbekU9NAFbCfyIq7p39pJPUm1eqdAHsfHpfYCy8lM6YutaniE8lmbCfyIq2G)cLkcFkK5W43lHxeqdAHAHY27F2OET)C3hA1b0(oA)WooxOmM99d40(WDtWjuSpoGpapSVVkcFkE23Gl2xqGq9AFKhCA4tH2)QqmG95qEzA)ZaUoO95DyX(EHcs7luQi8PqzDiya1R0Ctxhq84xy4Oi71LaLYYQiCiOtqYG7EZcGIG7LPKaUoOCFWRSy5OqzufztaVnoGsZnH4WbOMkSNPsnyuhYNG0rIzy9bVkdxHyezaPD7wSOIWHGsurnNq2aDiVqz79pd4AveBFBf1M66aA)Py23ViQJ2FkAFRP1gMg0(QiCiO97CaVmTVhO9fkk2)oG9ptMZCEFR7aEtb23puGjk23r7ZHO((WjaT)Da7J8goMl8W(cLkcFkuwhYCy8lGRvrSuNAtDDaXJFH1Ni7T2W0GYaQPEHSrOOifEJwOS9(yEZzky)y2h5LjgTFOatuWZ(bCcq77O9Rz)IO((XSpGUacbFFRP1gMgeAF)U)zOHky2rT9fATFF23J99cfK2xOur4tHY6qMdJFV1gMgepc7cgLcfyIcem85XVWaut9cz25NG0rHYOkYcnubZoQLPsnyu3IfXmS(GxLfAOcMDuldOM6fYga1uVqqEHY27F2WXi0(3bSVygwFWRq73N9Rj2xaxlt0(3bS)zYCM5zF0SVqzS9d40(iTr7ZCuSVI2FQ9rEzIr7hkWefluQi8PqzDiZHXVqzSKkcFQeZrbpL2iyIoAHY27ZhCar7hkWefO9D0(ATVxwhdkWJOAFHIO9d4ASVjhccTVUpI5MGh7BqfD9y)y2hUBcob2hhWhGh2336sHyeluQi8PqzDiZHXpCfIrWJWUGrPqbMOabdFE8lmveoeuIkQ5eYmOzHY27F2OET)C3hA1b0(45m2(OqbX(XSFFAEPbT)u7dNuiSV)zYCM5zFdUyF00O9rUPYVUqRy)ZaUoO95DyX(gC3lAF8CgBFu4m2(MCiO9H7MGtG97Atnr7pCboUy)P2Fecf5tTqPIWNcL1Hmhg)c46Gsgdl4XVWcLrvKnb824akn3eIdhGAQWEMk1Gr9t4Oi71LaLYYQiCiOtqcUcXisQiCiilwcLrvKfAOcMDultLAWOUflHYOkYEDjqnzQudg1pPIWHGsurnNqMbnqEHY27ZRcaEzAFTSVpD2feUWNcXZ(NnQx7p39HwDaTpEoJTVbTphI67RO9BCc47RO9XniKBWiE2h5LG2VXXchhJ2xm4CcT)C33J9fATpkuXXluQi8PqzDiZHXpq9kn301b0cLkcFkuwhYCy8FhbhI6j1AjGhuYG02cLkcFkuwhYCy8JJd4x7EzkzWuuSqz79pZqq1((D)aoTV1LcXi2hhWhGh23N5OyF8M6Sg7Bq7ZHOop7BDPqmI9D0(4aue23VXjGV)fq0(DTPMO91QVpGqdhqqO91QVpc(WX67Bq7ZHO((kRnOy)P2xmdRp4vluQi8PqzDiZHXpCfIrWJWUGrPqbMOabdFE8lmiDuOmQISjG3ghqP5MqC4autf2ZuPgmQBXYrHYOkYEDjqnzQudg1Tyjugvr2eWBJdO0CtioCaQPc7zQudg1pHJISxxcukldOM6fYmy4FaKxOS9(NTr0(qRoG2xR((8c8gkMI23V7ZRkoUd0BSVJ2xfHdbXZ(kAF2uM2xr77X(45m2(1e7pqqaHIB)P2hB4y7JbxbD0cLkcFkuwhYCy87LWlcObXJFHfkJQiFDaL0QNmaEdftrzQudg1pzWDVzdvCChO3iZH7eA4yjeCf0n7CRZb5dTEQiCiOevuZj0cLT336(aob2hB4y7Jbxb99nrfb0Wlt7RgoZdNq7RaAFtZ03)6mgb23V7xtSphYlt7dT6aAFT67ZlWBOykAHsfHpfkRdzom(rdhlDDaTqPIWNcL1Hmhg)IPUm1eqdIh)cZG7EZgQ44oqVrUp4vluQi8PqzDiZHXpcU2h8m4afp(f2rHYOkYxhqjT6jdG3qXuuMk1Gr9fkve(uOSoK5W4xmLGQaOb1txM2iE8lSJ6tKftjOkaAq90LPnkzWbQmGAQxOthPIWNklMsqva0G6PltBu2R0L5MGhNur4qqjQOMtiZoFHY27FM6b89HwDaTVw995f4numfXZ(wtj8IaAq7JNZy7Bq7R7JcWuM2)6mgbY7BnXzfTpoMkO((WjaT)Da7Rm2(HYOkq7hZ(4aeeuf7RcH3PkugZ((CiVmTFaN2h5LjgTFOatuSpycn8P2N5OyHsfHpfkRdzom(9s4fb0GwOwOS9(Nn0fqi477T2W0G23GUdG2NQGaEzAFDFOLdghU9TM6sGsz7hZ(dUWBU1s7Bs0r5fkve(uOSOJG5T2W0G4XVWcLrvKnb824akn3eIdhGAQWEMk1Gr9taQPEHmdAFsmdRp4vzexRnvYRlbkLLbut9czg0KpFHY27F2gr7lM6YutanO9T1COyFd6oaAFOLdghU9TM6sGsz7hZ(dUWBU1s7Bs0r5fkve(uOSOJmhg)IPUm1eqdIh)clugvr2eWBJdO0CtioCaQPc7zQudg1pjMH1h8QmIR1Mk51LaLYYaQPEHmdAYNF6idU7nBOIJ7a9gzoCNqdhlHGRGUzqtg6luQi8Pqzrhzom(5quYdQXtPncMATi4kqrP7urAUjCdEeGh)ctmdRp4vzexRnvYRlbkLL5WzXIygwFWRYiUwBQKxxcukldOM6fYmyqZcLkcFkuw0rMdJFexRnvYRlbkLTqPIWNcLfDK5W43eNc6UwP5MuRLataNh)cdhfzVUeOuwwfHdbTqPIWNcLfDK5W4VRGJtOHJL8cfQHZ8Wop(fgokYEDjqPSSkchc6eKWrr2RlbkLLbut9cz2HhKp3IfCuK96sGszza1uVqMD4HNqdhlHGRGUnWGE2wSy5OqzufztaVnoGsZnH4WbOMkSNPsnyuhYluQi8Pqzrhzom(BuBa2tZnX4eEp1bK2q84xy4Oi71LaLYYQiCiOtqchfzVUeOuwgqn1lKz4FE(ClwqdhlHGRGUzqpF(jizWDV5UcooHgowYluOgoZd7zoCwSCuOmQISjG3ghqP5MqC4autf2ZuPgmQFQpr2BTHPbLbut9czd(hcziVqz79TM7(2kmRzFhTFnX(as7233Gl23(WTVqR9nrX(Tbq7hW1A)PO996sGsz771(g0Da0(bCAFQ67p39d40(x3e8GN9rCT2u7hWP9TM6sGsz7xdEluQi8Pqzrhzom(rCT2ujVUeOugp(fw4nkftQ7KnIzy9bVkJ4ATPsEDjqPSCNdOHpL5q)Gfkve(uOSOJmhg)M4uq31kn3KATeyc484xyH3iBG(bNcVrPysDNSrmdRp4vztCkO7ALMBsTwcmb8CNdOHpL5q)GfkBVV1C3pGt7FDtWJ9XZzS9PQVVbDhaTVTcZA23r7BOIJ3Ndhp7J4ATP2pGt7Bn1LaLYwOur4tHYIoYCy8J4ATPsEDjqPmE8lSqzuf5UcooHgowYluOgoZd7zQudg1pjMH1h8QCxbhNqdhl5fkudN5H9mGAQxiBcfyIIC4nkftQ70cLkcFkuw0rMdJFtCkO7ALMBsTwcmbCE8lmXmS(GxLrCT2ujVUeOuwgqn1lKnH3OumPUtlu2EFR5UFaN2)6MGh7JNZy7tvFFd6oaAFVUeOu2(oAFdvC8(C44zFoeTVTcZAwOur4tHYIoYCy83vWXj0WXsEHc1WzEyNh)ctmdRp4vzexRnvYRlbkLLbut9czt4nkftQ70jCuK96sGszza1uVqMD4b5ZxOur4tHYIoYCy8J3ayDiiVsacnLwcIh)ctmdRp4vzexRnvYRlbkLLbut9czt4nkftQ70jCuK96sGszza1uVqMHp0oF(cLkcFkuw0rMdJ)g1gG90CtmoH3tDaPnep(fMygwFWRYiUwBQKxxcukldOM6fYMWBukMu3PtqchfzVUeOuwgqn1lKz4FE(Clwm4U3CxbhNqdhl5fkudN5H9mhUtOHJLqWvq3mOd5fkBVV1C3pGt7FDtWJ9D0(QXWf7hZ(u15zFoeT)zyRq7J4eW3pGRX(bCY((MOyFfTFJtaF)WB0(C42xr7JBqi3GrluQi8Pqzrhzom(rCT2ujVUeOugp(fw4nkftQ7Kzq)Gfkve(uOSOJmhg)M4uq31kn3KATeyc484xyH3OumPUtMb9dwOur4tHYIoYCy83vWXj0WXsEHc1WzEyNh)cl8gLIj1DYSdX)u4nkftQ7KnqZcLkcFkuw0rMdJ)g1gG90CtmoH3tDaPnep(fw4nkftQ7Kz4BlNcVrPysDNSXwwOur4tHYIoYCy8J3ayDiiVsacnLwcIh)cl8gLIj1DYm8T(NcVrPysDNSbAwOur4tHYIoYCy83O2aSNMBIXj8EQdiTH4XVWcVrPysDNmdFB5u4nkftQ7Kn2YcLkcFkuw0rMdJFd2m90CtbCkrf1SVqPIWNcLfDK5W4hVbW6qqELaeAkTeep(fMygwFWRYiUwBQKxxcukldOM6fYgy2Ybwh8p80r4Oi71LaLYYQiCiOfkve(uOSOJmhg)ahhogL8kHWPcAHsfHpfkl6iZHXpUj8P4XVWWrr2RlbkLLvr4qqwSeEJsXK6ozg0pyHsfHpfkl6iZHXVbbqe4yVmXJFHHJISxxcuklRIWHGobPJcLrvKnb824akn3eIdhGAQWEMk1GrDlwG0recrLGYnQna7P5MyCcVN6asBOCtT1dWIfdU7n3O2aSNMBIXj8EQdiTHYaQPEHG8jiDuOmQICxbhNqdhl5fkudN5H9mvQbJ6wSyWDV5UcooHgowYluOgoZd7za1uVqqgYwSeEJsXK6ozgm8pFHsfHpfkl6iZHXVbBME6YbSZJFHHJISxxcuklRIWHGobPJcLrvKnb824akn3eIdhGAQWEMk1GrDlwG0recrLGYnQna7P5MyCcVN6asBOCtT1dWIfdU7n3O2aSNMBIXj8EQdiTHYaQPEHG8jiDuOmQICxbhNqdhl5fkudN5H9mvQbJ6wSyWDV5UcooHgowYluOgoZd7za1uVqqgYwSeEJsXK6ozgm8pFHsfHpfkl6iZHX)1bKbBMop(fgokYEDjqPSSkchc6eKokugvr2eWBJdO0CtioCaQPc7zQudg1Tybshrievck3O2aSNMBIXj8EQdiTHYn1wpalwm4U3CJAdWEAUjgNW7PoG0gkdOM6fcYNG0rHYOkYDfCCcnCSKxOqnCMh2ZuPgmQBXIb39M7k44eA4yjVqHA4mpSNbut9cbziBXs4nkftQ7KzWW)8fkve(uOSOJmhg)Cik5b1q84xy4Oi71LaLYYQiCiOtq6OqzufztaVnoGsZnH4WbOMkSNPsnyu3IfCuK96sGszza1uVqMb7WdGSflH3OumPUtMb7WdwOur4tHYIoYCy8ZHOKhuJNsBemCJ4ykqU1s9KyA44cn8PsDccxq84xy9jYERnmnOmGAQxiBGD(jijMH1h8QmIR1Mk51LaLYYaQPEHSb2HhyXs4nkftQ7Kzq)aiVqPIWNcLfDK5W4NdrjpOgpL2iyGjeaouq9eeZ0Nj1hgJh)cRpr2BTHPbLbut9czdSZpbjXmS(GxLrCT2ujVUeOuwgqn1lKnWo8alwcVrPysDNmd6ha5fkve(uOSOJmhg)Cik5b14P0gbdb3HGajiOAAjaXCbp(fwFIS3AdtdkdOM6fYgyNFcsIzy9bVkJ4ATPsEDjqPSmGAQxiBGD4bwSeEJsXK6ozg0paYluQi8Pqzrhzom(5quYdQXtPncMcTGZXnbvrQuUWzCiE8lS(ezV1gMgugqn1lKnWo)eKeZW6dEvgX1AtL86sGszza1uVq2a7WdSyj8gLIj1DYmOFaKxOur4tHYIoYCy8ZHOKhuJNsBeSW7ekgqljMoD25XVW6tK9wByAqza1uVq2a78tqsmdRp4vzexRnvYRlbkLLbut9czdSdpWILWBukMu3jZG(bqEHsfHpfkl6iZHXphIsEqnEkTrWGWvwAUjumGgIh)cRpr2BTHPbLbut9czdSZpbjXmS(GxLrCT2ujVUeOuwgqn1lKnWo8alwcVrPysDNmd6ha5fQfkBVpgNHIJTFNqUPI67hZ(dUWBU1s7hWP95qQjA)5UVHkoUd0BSFNd4LP9HwoyC423AQlbkLH4zFT67JdqqqvSVqXHZlt7JNhW3)S15SfBvEHsfHpfkBAqC4sEDjqPmya1R0Ctxhq84xyOHJLqWvqh25NoYG7EZgQ44oqVrMd3jdU7n3O2aSNMBIXj8EQdiTHYC4ozWDVztaVnoGsZnH4WbOMkSNrHko2my4FWcLkcFku20G4WL86sGszMdJFbCDqjJHf84xygC3B2qfh3b6nYC4wOur4tHYMgehUKxxcukZCy8lGRdkzmSGh)cdnCSecUc62adAYhADm4U3CJAdWEAUjgNW7PoG0gkZHBHsfHpfkBAqC4sEDjqPmZHXVaUoOKXWcE8lSJeZW6dEvwm1LPMaAqzoCluQi8PqztdIdxYRlbkLzom(fW1bLmgwWJFHjuuKcVrMHJISxxcukldOM6f6eokYEDjqPSmGAQxiZekksH3iZnj6luQi8PqztdIdxYRlbkLzom(ftDzQjGgep(fMb39MnuXXDGEJCFWRozWDV5g1gG90CtmoH3tDaPnuMd3j0WXsi4kOBdm8ZqFHsfHpfkBAqC4sEDjqPmZHXVyQltnb0G4XVWm4U3SHkoUd0BK7dE1PJm4U3CJAdWEAUjgNW7PoG0gkZH7eKqdhlHGRGUnWomdTTyraxbMiu6cur4tPmBWpB9pHgowcbxbDBGHFg6qEHsfHpfkBAqC4sEDjqPmZHXVyQltnb0G4XVWWrr2RlbkLLbut9cz25luQi8PqztdIdxYRlbkLzom(ftDzQjGgep(fMaUcmriBWFHsfHpfkBAqC4sEDjqPmZHXpA4yPRdOfkve(uOSPbXHl51LaLYmhg)i4AFWZGduluQi8PqztdIdxYRlbkLzom(9s4fb0GwOwOur4tHYWvigbmXuxMAcObXJFHzWDVzdvCChO3i3h8QtOHJLqWvq3gy4FcnCSecUc6MbdAwOur4tHYWvigH5W43BTHPbXJFHfkJQi7vqGszjX0m4qHpvMk1Gr9taQPEHmRZb0WNY6Dq(Clwokugvr2RGaLYsIPzWHcFQmvQbJ6Na0fqi4QbJwOur4tHYWvigH5W4xaxhuYyybp(fMqrrk8gzgCfIrKaut9cTqPIWNcLHRqmcZHXpA4yPRdOfkve(uOmCfIryom(rW1(GNbhO4XVWur4qqjQOMtiZGUflhfkJQiFDaL0QNmaEdftrzQudg1xOur4tHYWvigH5W43lHxeqdIh)ctOOifEJmdUcXisaQPEHKHmKs]] )
+    spec:RegisterSetting( "havoc_macro_text", nil, {
+        name = "When |T460695:0|t Havoc is shown with a |TInterface\\Addons\\Hekili\\Textures\\Cycle:0|t indicator, the addon is recommending that you cast Havoc on a different target (without swapping).  A mouseover macro is useful for this and an example is included below.",
+        type = "description",
+        width = "full",
+        fontSize = "medium"
+    } )
+
+    spec:RegisterSetting( "havoc_macro", nil, {
+        name = "|T460695:0|t Havoc Macro",
+        type = "input",
+        width = "full",
+        multiline = 2,
+        get = function () return "#showtooltip\n/use [@mouseover,harm][] " .. class.abilities.havoc.name end,
+        set = function () end,
+    } )
+
+    spec:RegisterSetting( "immolate_macro_text", nil, {
+        name = function () return "When |T" .. GetSpellTexture( 348 ) .. ":0|t Immolate is shown with a |TInterface\\Addons\\Hekili\\Textures\\Cycle:0|t indicator, the addon is recommending that you cast Immolate on a different target (without swapping).  A mouseover macro is useful for this and an example is included below." end,
+        type = "description",
+        width = "full",
+        fontSize = "medium"
+    } )
+
+    spec:RegisterSetting( "immolate_macro", nil, {
+        name = function () return "|T" .. GetSpellTexture( 348 ) .. ":0|t Immolate Macro" end,
+        type = "input",
+        width = "full",
+        multiline = 2,
+        get = function () return "#showtooltip\n/use [@mouseover,harm][] " .. class.abilities.immolate.name end,
+        set = function () end,
+    } )
+
+
+    spec:RegisterPack( "Destruction", 20201013, [[de0sRaqiIsEerPytqLgLuQCkPuAvqf1RuqZcQQBbvGDjQFPinmIIJPalte1ZKsvttkfxda2guH8nOI04GkIZruQwhuHQMNiY9uu7teCqIsPAHa0djkLYejkLCrOckNeQGQvksTtPOFcvq8uQAQsjFfQG0EL8xPAWQ0HrTyO8yvnzvCzKntKpRignGonLxdGMnKBd0Uf(TsdxKSCcph00jDDfA7evFxeA8qfQCEOkRhQqz(sH9tLRbvRYFyLQMjltYYmqMbTplJS3EzVnaO8kEPOYNIFaYtOYhmivEzlcQIXxTnkFkgp0YNQv5H7O4PYdu1uqC8tNoXuGJy5FbNcnWreR2gVGL0Pqd8NwESrdP4WJcR8hwPQzYYKSmdKzq7ZYi7Tx2BtYLNhvGRO8Edu2w5bANdffw5pe8lVSXDLTiOkgF12WDXHYc0(a0Lw24U4qEDXiH7oO947UjltYYuEKbvy1Q8eesXtWQv1Cq1Q88R2gLpXvGoYjl6ccUbhpvEkymeDkalTAMC1Q88R2gLhKaxbE9vQJgF70pcIbHLNcgdrNcWsRMTVAvE(vBJYJH290xPUcK6uqG4vEkymeDkalTA2MQv55xTnk)KrwCmo6RuNXXiXQalpfmgIofGLwnbq1Q88R2gLxyPsHOUfDyk(PYtbJHOtbyPvtCu1Q88R2gLxA)riD6mogjmL6yedwEkymeDkalTAItRwLNF12O8PgfMeEwmPJHyOwEkymeDkalTAItQwLNcgdrNcWY)ctjHXLxzXesZajgPa7PE1DtWDXjY4UnA4UklMqAgiXifyp1RUBsUBYY4UnA4Us2eGAxqGSfq3nj3nzzC3gnCxLftinRgi11TN61EYY4Uj4UTrMYZVABuEbXPSysxcXGeS0QPSxTkp)QTr5)nEkubR0PlHyqQ8uWyi6uawA1CGmvRYtbJHOtby5FHPKW4YJnkjLf0dqebHDPv8uwqGSfWYZVABuEfi1hdSDmoDPv8uPLwEGS89RwvZbvRYtbJHOtby5FHPKW4YJnkjLX4hGhblP5ZMy4U46UWDe1HazXXDty2Dh4U46UWDe1HazXXDtA2DBt55xTnk)VHeINiyLkTAMC1Q88R2gLhUJOUKjOYtbJHOtbyPvZ2xTkpfmgIofGL)fMscJl)ZqTRgi5Uj5Uaz573feiBbS88R2gLh(7OWIjD1uGuPvZ2uTkpfmgIofGL)fMscJlVYik0Sfkjcg1)feBeQ2gzkymeDCxCDxbbYwaD3KC3ZOGvBd3fNDxzYaWDB0WDLL7QmIcnBHsIGr9FbXgHQTrMcgdrh3fx3vqscccKXqu55xTnkVbcUiwPsRMaOAvEkymeDkal)lmLegx(NHAxnqYDtYDbYY3Vliq2cy55xTnk)dKxyhBrAPvtCu1Q88R2gLhcKpBIyJIO8uWyi6uawA1eNwTkpfmgIofGL)fMscJl)ZqTRgi5Uj5Uaz573feiBbS88R2gL3I3csWkvAPLpLG(feJ1Qv1Cq1Q88R2gLhoccUr3atvEkymeDkalTAMC1Q8uWyi6uaw(xykjmU8kJOqZteg4AcQVsDi)ctYEktbJHOt55xTnk)eHbUMG6RuhYVWKSNkTA2(Qv55xTnkpChrDjtqLNcgdrNcWsRMTPAvEkymeDkal)lmLegxEz5UkJOqZWDe1LmbLPGXq0P88R2gL3I3csWkvAPLNxQAvnhuTkpfmgIofGL)fMscJlFksZwirIGrz(vto5U46UTZDLL7(7IoBIrgilF)SG4dEUBJgUl)QjN6uqGgbD3eC327UTT88R2gLxWw0xPUKjOsRMjxTkpfmgIofGL)fMscJl)z1SbcUiwPSGazlGUBcU7ZqTRgivE(vBJY)a5iiu)qGBizcQ0Qz7RwLNcgdrNcWYZVABuEdeCrSsL)fMscJlVGazlGUBsUlaCxCD325UYYDvgrHMFw5hHhemtbJHOJ72OH7(7IoBIr(zLFeEqWSGazlGUBcURGazlGUBBl)J3JOUYIjKcRMdkTA2MQv5PGXq0PaS88R2gL)zeQZVAB0rgulpYGApyqQ8)bwA1eavRYtbJHOtby55xTnk)ZiuNF12OJmOwEKb1EWGu5jiKINGLwnXrvRYtbJHOtby55xTnkpqw((L)X7ruxzXesHvZbLwnXPvRYZVABuEbBrFL6sMGkpfmgIofGLwnXjvRYtbJHOtby55xTnkpqw((L)X7ruxzXesHvZbLwnL9Qv5PGXq0PaS8VWusyC5vgrHMLmb1540Xegiu3GYuWyi64U46UyJsszm(b4rWsAEmL7IR7c3ruhcKfh3nj3faUloWDLjNS7IZUl)QjN6uqGgblp)QTr5T4TGeSsLwnhit1Q88R2gLhUJOUKjOYtbJHOtbyPvZbdQwLNcgdrNcWY)ctjHXLhBuskJXpapcwsZNnXO88R2gL)3qcXteSsLwnhKC1Q8uWyi6uaw(xykjmU8klMqAgiXifyo1RUBsUBYYuE(vBJYdbYNnrSrruA1Cq7RwLNF12O8w8wqcwPYtbJHOtbyPLw()aRwvZbvRYZVABuE4ii4gDlKirWOYtbJHOtbyPvZKRwLNF12O8hwaWoChrDlGkJzitXR8uWyi6uawA1S9vRYtbJHOtby5FHPKW4YNI0SfsKiyuMF1KtLNF12O8Pw12O0QzBQwLNcgdrNcWY)ctjHXLpfPzlKirWOm)QjNkp)QTr5XibKea0IjLwnbq1Q8uWyi6uaw(xykjmU8PinBHejcgL5xn5u55xTnkpgA3txAuGxPvtCu1Q8uWyi6uaw(xykjmU8PinBHejcgL5xn5u55xTnkVKjim0UNsRM40Qv5PGXq0PaS8VWusyC5trA2cjsemkZVAYj3Trd3vzXesZQbsDD7hJC3KC3KLP88R2gLFesDtjqyPvtCs1Q88R2gL)qVbYQft6ylslpfmgIofGLwnL9Qv5PGXq0PaS8VWusyC55xn5uNcc0iO7MG7oWDB0WDXwiS88R2gL3atrXXIj9NvgQInfqQ0Q5azQwLNcgdrNcWY)ctjHXLNF1KtDkiqJGUBcU7a3Trd3fBHWYZVABuE4oI6IvlTAoyq1Q8uWyi6uaw(xykjmU88RMCQtbbAe0DND3bUBJgU7Vl6SjgzGS89ZccKTa6Uj4UaO88R2gLh(7OWIjD1uGuPLw(djXJiTAvnhuTkp)QTr5HPieQJ2hGLNcgdrNcWsRMjxTkp)QTr5HwmH6G8e7lpfmgIofGLwnBF1Q8uWyi6uaw(xykjmU8az5735xn5K7IR7YVAYPofeOrq3nj3faUloWDvgrHMTqIeXMPGXq0XDh6UTZDvgrHMTqIeXMPGXq0XDX1DvgrHMTqjrWO(VGyJq12itbJHOJ722YZVABu(NrOo)QTrhzqT8idQ9GbPYdKLVFPvZ2uTkpfmgIofGL)fMscJlVSC325UPinBHejcgL5xn5K7IR7EwnBGGlIvkliq2cO7o0Dh4Uj4UPinBHejcgLfeiBb0DBR72OH7ctriuxzXesH5Nv(r4bbD3eC3bLNF12O8pR8JWdcwA1eavRYtbJHOtby5FHPKW4YZVAYPofeOrq3nb3n5YZVABu(NrOo)QTrhzqT8idQ9GbPYZlvA1ehvTkpfmgIofGLNF12O8WDe1Lmbv(xykjmU8cssqqGmgICxCDx4oI6qGS44Ujn7UTXDX1DBN7kl3vzefA(zLFeEqWmfmgIoUBJgU7Vl6Sjg5Nv(r4bbZccKTa6Uj4UccKTa6UTT8pEpI6klMqkSAoO0QjoTAvEkymeDkalp)QTr5nqWfXkv(xykjmU8cssqqGmgICxCD325UYYDvgrHMFw5hHhemtbJHOJ72OH7(7IoBIr(zLFeEqWSGazlGUBcURGazlGUBBl)J3JOUYIjKcRMdkTAItQwLNcgdrNcWY)ctjHXLxzefA2cLebJ6)cIncvBJmfmgIoUlUUl)QTr(bYlSJTinBrxcztaQUlUURGazlGUBsU7zuWQTH7IZURmzauE(vBJYBGGlIvQ0QPSxTkpfmgIofGLNF12O8pJqD(vBJoYGA5rgu7bdsL)pWsRMdKPAvEkymeDkalp)QTr5FgH68R2gDKb1YJmO2dgKkpbHu8eS0Q5GbvRYZVABu(hihbH6hcCdjtqLNcgdrNcWsRMdsUAvEkymeDkalp)QTr5bYY3V8VWusyC5pRMnqWfXkLfeiBb0DtWDpRMnqWfXkLpJcwTnCxC2DLjda3Trd3vwURYik0Sfkjcg1)feBeQ2gzkymeDk)J3JOUYIjKcRMdkTAoO9vRYtbJHOtby53uLhsA55xTnkVCwymgIkVCgnsLNF1KtDkiqJGUBcU7a3fx393fD2eJmqw((zbbYwaD3KMD3bY4UnA4U)UOZMyKHJGGB0TqIebJYccKTa6Ujn7UdaG7IR7QmIcnFyba7WDe1TaQmMHmfVmfmgIoUlUU7Vl6Sjg5dlayhUJOUfqLXmKP4LfeiBb0DtA2Dhaa3Trd3vzefA(Wca2H7iQBbuzmdzkEzkymeDCxCD3Fx0ztmYhwaWoChrDlGkJzitXlliq2cO7M0S7oaaUlUUB7C3Fx0ztmYWrqWn6wirIGrzbbYwaD3eCxLftinRgi11TFmYDB0WD)DrNnXidhbb3OBHejcgLfeiBb0Dh6U)UOZMyKHJGGB0TqIebJYNrbR2gUBcURYIjKMvdK662pg5UTT8YzrpyqQ8P2f1H7iQdbYIdS0Q5G2uTkpfmgIofGL)fMscJlp2OKugJFaEeSKMpBIH7IR7c3ruhcKfh3nHz3DqgaUloWDLj3E3fNDxLruOzjedbUYjrMcgdrh3fx3vwURCwymgIYP2f1H7iQdbYIdS88R2gL)3qcXteSsLwnhaGQv5PGXq0PaS8VWusyC5XgLKYhwaWoChrDlGkJzitXlpMQ88R2gL)bYlSJTiT0Q5aCu1Q8uWyi6uaw(xykjmU8yJsszm(b4rWsAEmL7IR7kl3volmgdr5u7I6WDe1HazXb6U46UYYDvgrHMjbFSNvBJmfmgIoLNF12O8pqEHDSfPLwnhGtRwLNcgdrNcWY)ctjHXLxwURCwymgIYP2f1H7iQdbYId0DX1DvgrHMjbFSNvBJmfmgIoUlUUB7C3dHnkjLjbFSNvBJSGazlGUBsU7ZqTRgi5UnA4UyJsszm(b4rWsAEmL722YZVABu(hiVWo2I0sRMdWjvRYtbJHOtby5FHPKW4Yll3volmgdr5u7I6WDe1HazXb6UnA4UWDe1HazXXDty2DBtgaLNF12O8qG8zteBueLwnhi7vRYtbJHOtby5FHPKW4Y3o3fUJOoeiloUBcZUBBYaWDXbURm5KDxC2D5xn5uNcc0iO722YZVABu(hiVWo2I0sRMjlt1Q8uWyi6uaw(xykjmU8pqwmHGUBcU7GYZVABu(FdjeprWkvA1m5bvRYZVABuElElibRu5PGXq0PaS0slT8Yjb02OAMSmjlZazgKC5tKfHftGLhhoyQvO0XDXrUl)QTH7ImOcZU0LpLyLmevEzJ7kBrqvm(QTH7IdLfO9bOlTSXDXH86Irc3Dq7X3DtwMKLXL2Lw24U4WWXr)Osh3fJKwb5U)cIXQ7IrtSaMDxz7)tPuO7gBGdaYcqPrK7YVABaD3nq4LDP5xTnG5uc6xqmwNHJGGB0trQln)QTbmNsq)cIX6W5Pteg4AcQVsDi)ctYEcFtAwzefAEIWaxtq9vQd5xys2tzkymeDCP5xTnG5uc6xqmwhopfUJOUKjixA(vBdyoLG(feJ1HZtT4TGeSs4BsZYszefAgUJOUKjOmfmgIoU0U0Yg3fhgoo6hv64UKCsGN7Qgi5UkqYD5xxH7Aq3LLZgIXqu2LMF12aodtriuhTpaDP5xTnGdNNcTyc1b5j27s7sZVABahop9zeQZVAB0rguXpyqAgilFF8nPzGS8978RMCcx(vto1PGancMeaWbkJOqZwirIyZuWyi6mSDkJOqZwirIyZuWyi6GRYik0Sfkjcg1)feBeQ2gzkymeDARln)QTbC480Nv(r4bbX3KMLv7srA2cjsemkZVAYjCpRMnqWfXkLfeiBbC4GesrA2cjsemkliq2cyBB0aMIqOUYIjKcZpR8JWdcMWaxA(vBd4W5PpJqD(vBJoYGk(bdsZ8s4BsZ8RMCQtbbAemHKDP5xTnGdNNc3ruxYee(pEpI6klMqkCEa(M0SGKeeeiJHiCH7iQdbYItsZTb32jlLruO5Nv(r4bbZuWyi60OXVl6Sjg5Nv(r4bbZccKTaMGGazlGT1LMF12aoCEQbcUiwj8F8Ee1vwmHu48a8nPzbjjiiqgdr42ozPmIcn)SYpcpiyMcgdrNgn(DrNnXi)SYpcpiywqGSfWeeeiBbSTU08R2gWHZtnqWfXkHVjnRmIcnBHsIGr9FbXgHQTrMcgdrhC5xTnYpqEHDSfPzl6siBcqfxbbYwat6mky12aNLjdaxA(vBd4W5PpJqD(vBJoYGk(bdsZ)b6sZVABahop9zeQZVAB0rguXpyqAMGqkEc6sZVABahop9bYrqO(Ha3qYeKln)QTbC48uGS89X)X7ruxzXesHZdW3KMpRMnqWfXkLfeiBbmHZQzdeCrSs5ZOGvBdCwMmaA0qwkJOqZwOKiyu)xqSrOABKPGXq0XLMF12aoCEQCwymgIWpyqAo1UOoChrDiqwCG4lNrJ0m)QjN6uqGgbtyaU)UOZMyKbYY3pliq2cysZdKPrJFx0ztmYWrqWn6wirIGrzbbYwatAEaaWvzefA(Wca2H7iQBbuzmdzkEzkymeDW93fD2eJ8HfaSd3ru3cOYygYu8YccKTaM08aa0OHYik08HfaSd3ru3cOYygYu8YuWyi6G7Vl6Sjg5dlayhUJOUfqLXmKP4LfeiBbmP5baa3297IoBIrgoccUr3cjsemkliq2cycklMqAwnqQRB)yuJg)UOZMyKHJGGB0TqIebJYccKTao83fD2eJmCeeCJUfsKiyu(mky12ibLftinRgi11TFmQTU08R2gWHZt)nKq8ebRe(M0m2OKugJFaEeSKMpBIbUWDe1HazXjH5bzaGdKj3ECwzefAwcXqGRCsKPGXq0bxzjNfgJHOCQDrD4oI6qGS4aDP5xTnGdNN(a5f2XwKIVjnJnkjLpSaGD4oI6wavgZqMIxEmLln)QTbC480hiVWo2Iu8nPzSrjPmg)a8iyjnpMcxzjNfgJHOCQDrD4oI6qGS4aXvwkJOqZKGp2ZQTrMcgdrhxA(vBd4W5PpqEHDSfP4BsZYsolmgdr5u7I6WDe1HazXbIRYik0mj4J9SABKPGXq0b32DiSrjPmj4J9SABKfeiBbmPNHAxnqQrdSrjPmg)a8iyjnpMQTU08R2gWHZtHa5ZMi2OiW3KMLLCwymgIYP2f1H7iQdbYIdSrd4oI6qGS4KWCBYaWLMF12aoCE6dKxyhBrk(M0C7G7iQdbYItcZTjdaCGm5KXz(vto1PGanc2wxA(vBd4W5P)gsiEIGvcFtA(bYIjemHbU08R2gWHZtT4TGeSsU0U08R2gWmV0W5Pc2I(k1LmbHVjnNI0SfsKiyuMF1Kt42oz97IoBIrgilF)SG4dEnAWVAYPofeOrWeAFBDP5xTnGzEPHZtFGCeeQFiWnKmbHVjnFwnBGGlIvkliq2cycpd1UAGKln)QTbmZlnCEQbcUiwj8F8Ee1vwmHu48a8nPzbbYwatca42ozPmIcn)SYpcpiyMcgdrNgn(DrNnXi)SYpcpiywqGSfWeeeiBbSTU08R2gWmV0W5PpJqD(vBJoYGk(bdsZ)b6sZVABaZ8sdNN(mc15xTn6idQ4hmintqifpbDP5xTnGzEPHZtbYY3h)hVhrDLftifopaFtIF1KtDkiqJGj1gxA(vBdyMxA48ubBrFL6sMGCP5xTnGzEPHZtbYY3h)hVhrDLftifopWLMF12aM5Lgop1I3csWkHVjnRmIcnlzcQZXPJjmqOUbLPGXq0bxSrjPmg)a8iyjnpMcx4oI6qGS4KeaWbYKtgN5xn5uNcc0iOln)QTbmZlnCEkChrDjtqU08R2gWmV0W5P)gsiEIGvcFtAgBuskJXpapcwsZNnXWLMF12aM5LgopfcKpBIyJIaFtAwzXesZajgPaZPEnPKLXLMF12aM5Lgop1I3csWk5s7sZVABaZ)boCEkCeeCJUfsKiyKln)QTbm)h4W5PhwaWoChrDlGkJzitXZLMF12aM)dC480uRABGVjnNI0SfsKiyuMF1KtU08R2gW8FGdNNIrcijaOftW3KMtrA2cjsemkZVAYjxA(vBdy(pWHZtXq7E6sJc8W3KMtrA2cjsemkZVAYjxA(vBdy(pWHZtLmbHH29GVjnNI0SfsKiyuMF1KtU08R2gW8FGdNNocPUPeieFtAofPzlKirWOm)QjNA0qzXesZQbsDD7hJskzzCP5xTnG5)ahop9qVbYQft6ylsDP5xTnG5)ahop1atrXXIj9NvgQInfqcFtAMF1KtDkiqJGjmOrdSfcDP5xTnG5)ahopfUJOUyv8nPz(vto1PGancMWGgnWwi0LMF12aM)dC48u4VJclM0vtbs4BsZ8RMCQtbbAeCEqJg)UOZMyKbYY3pliq2cycaWL2LMF12aMbYY3F480FdjeprWkHVjnJnkjLX4hGhblP5ZMyGlChrDiqwCsyEaUWDe1HazXjP524sZVABaZaz57pCEkChrDjtqU08R2gWmqw((dNNc)DuyXKUAkqcFtA(zO2vdKscilF)UGazlGU08R2gWmqw((dNNAGGlIvcFtAwzefA2cLebJ6)cIncvBJmfmgIo4kiq2cysNrbR2g4Smza0OHSugrHMTqjrWO(VGyJq12itbJHOdUcssqqGmgICP5xTnGzGS89hop9bYlSJTifFtA(zO2vdKscilF)UGazlGU08R2gWmqw((dNNcbYNnrSrr4sZVABaZaz57pCEQfVfKGvcFtA(zO2vdKscilF)UGazlGU0U08R2gWmbHu8eC480exb6iNSOli4gC8Kln)QTbmtqifpbhopfKaxbE9vQJgF70pcIbHU08R2gWmbHu8eC48um0UN(k1vGuNccepxA(vBdyMGqkEcoCE6KrwCmo6RuNXXiXQaDP5xTnGzccP4j4W5Pclvke1TOdtXp5sZVABaZeesXtWHZtL2FesNoJJrctPogXGU08R2gWmbHu8eC480uJctcplM0XqmuDP5xTnGzccP4j4W5PcItzXKUeIbji(M0SYIjKMbsmsb2t9Ac4ezA0qzXesZajgPa7PEnPKLPrdjBcqTliq2cysjltJgklMqAwnqQRBp1R9KLjH2iJln)QTbmtqifpbhop934PqfSsNUeIbjxA(vBdyMGqkEcoCEQcK6Jb2ogNU0kEcFtAgBusklOhGicc7sR4PSGazlGLhMI(QzY4iCAPLwf]] )
 
 
 end

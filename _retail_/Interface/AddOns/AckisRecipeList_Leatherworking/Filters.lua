@@ -66,8 +66,8 @@ function module:InitializeItemFilters(parent_panel)
 		leatherworking_shoulder	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_SHOULDER), 	text = _G.INVTYPE_SHOULDER,	row = 4, col = 1 },
 		leatherworking_waist	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_WAIST), 	text = _G.INVTYPE_WAIST,	row = 4, col = 2 },
 		leatherworking_wrist	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_WRIST), 	text = _G.INVTYPE_WRIST,	row = 5, col = 1 },
-		leatherworking_bow 	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Bow"]), 		text = L["Bow"],		row = 6, col = 1 },
-		leatherworking_fist	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Fist Weapon"]), 	text = L["Fist Weapon"],	row = 6, col = 2 },
+		leatherworking_bow 	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Bow"]), 		text = L["Bow"],		row = 5, col = 2 },
+		leatherworking_fist	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Fist Weapon"]), 	text = L["Fist Weapon"],	row = 6, col = 1 },
 	}
 
 	armor_toggle:SetScript("OnClick", function(self, button)
@@ -107,7 +107,7 @@ function module:InitializeItemFilters(parent_panel)
 	general_toggle:SetNormalFontObject("QuestTitleFont")
 	general_toggle:SetHighlightFontObject("QuestTitleFontBlackShadow")
 	general_toggle:SetText(_G.GENERAL .. ":")
-	general_toggle:SetPoint("TOP", armor_panel, "BOTTOM", 0, 0)
+	general_toggle:SetPoint("TOP", armor_panel, "BOTTOM", 0, -20)
 	general_toggle:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
 	addon.SetTooltipScripts(general_toggle, L["GROUP_TOGGLE_FORMAT"]:format(_G.GENERAL))

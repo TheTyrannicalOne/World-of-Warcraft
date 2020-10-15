@@ -1,10 +1,10 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: Ackis Recipe List: Blacksmithing
 ## Notes: Blacksmithing data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 8.3.0.2
-## X-Revision: 1a878f1
-## X-Date: 2020-01-14T23:30:09Z
+## Version: 9.0.1
+## X-Revision: dac2b84
+## X-Date: 2020-10-13T17:50:19Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

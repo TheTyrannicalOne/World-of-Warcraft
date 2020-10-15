@@ -81,6 +81,7 @@ function module:InitializeTrainers()
 	AddTrainer(98964, "Celea",			Z.AZSUNA,			47.5, 44.2, "Neutral")
 	AddTrainer(122698, "Xanjo", 			Z.DAZARALOR, 			44.05, 34.50, "Horde")
 	AddTrainer(136063, "Cassandra Brennor",		Z.BORALUS, 			75.6, 12.6, "Alliance")
+	AddTrainer(156669, "Tanner Au'qil", 		Z.ORIBOS, 			42.52, 26.91, "Neutral")
 
 	self.InitializeTrainers = nil
 end

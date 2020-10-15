@@ -19,7 +19,7 @@ BPBID_Options = {
 		["BattleTooltip"] = true,
 	},
 	["format"] = 3,
-	["ManualChange"] = "r209",
+	["ManualChange"] = "r211",
 	["BattleFontFix"] = false,
 	["Names"] = {
 		["HSFUpdateRarity"] = true,

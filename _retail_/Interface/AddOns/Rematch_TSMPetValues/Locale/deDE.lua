@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------------------------
--- Rematch_TSMPetValues - Extends Rematch's pet list by TSM market values
+-- Rematch_TSMPetValues - Add TSM market values ​​to the Rematch pet list
 --------------------------------------------------------------------------------------------
 -- Locale/enUS.lua - Strings for enUS
 --
--- Author: Expelliarm5s / January 2020 / All Rights Reserved
+-- Author: Expelliarm5s / October 2020 / All Rights Reserved
 --
--- Version 0.1.16
+-- Version 1.1.18
 ------------------------------------------------------------------------------
 -- luacheck: max line length 350
 

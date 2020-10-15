@@ -38,7 +38,7 @@ function module:InitializeVendors()
 	AddVendor(44030,	L["Draelan"],				Z.TELDRASSIL,			39.0,	30.0,	"Alliance")
 	AddVendor(50134,	L["Senthii"],				Z.TWILIGHT_HIGHLANDS,		78.7,	77.0,	"Alliance")
 	AddVendor(50146,	L["Agatian Fallanos"],			Z.TWILIGHT_HIGHLANDS,		76.7,	49.5,	"Horde")
-	AddVendor(64001,	L["Sage Lotusbloom"],			Z.SHRINE_OF_TWO_MOONS,		62.6,	23.2,	"Horde")
+	AddVendor(64001,	L["Sage Lotusbloom"],			Z.VALE_OF_ETERNAL_BLOSSOMS,	62.6,	23.2,	"Horde") -- Needs updating
 	AddVendor(64595,	L["Rushi the Fox"],			Z.TOWNLONG_STEPPES,		48.8,	70.6,	"Neutral")
 	AddVendor(77354,	L["Ayada the White"],			Z.LUNARFALL,			 0.0,	 0.0,	"Alliance") -- Alliance Garrison
 	AddVendor(79821,	L["Yukla Greenshadow"],			Z.FROSTWALL,			 0.0,	 0.0,	"Horde") -- Horde Garrison

@@ -409,7 +409,9 @@ NL["Monelite Seam"] = "Monelitflöz"
 NL["Moonglow Cuttlefish School"] = "Ein Schwarm Mondlichtsepia"
 NL["Mossgill Perch School"] = "Ein Schwarm Mooskiemenbarsche"
 NL["Mossy Footlocker"] = "Moosbedeckte Schließkiste"
-NL["Mountain Silversage"] = "Bergsilbersalbei"
+NL["Mountain Silversage"] = [=[Bergsilberweisling - classic
+Bergsilbersalbei - 8.3.0
+]=]
 NL["Mountain Trout School"] = "Ein Schwarm Bergforellen"
 NL["Muddy Churning Water"] = "Schlammiges aufgewühltes Wasser"
 NL["Mudfish School"] = "Ein Schwarm Matschflosser"

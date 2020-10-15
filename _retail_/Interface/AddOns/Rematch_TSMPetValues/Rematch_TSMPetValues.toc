@@ -1,10 +1,10 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: Rematch - TSM Pet Values
-## Notes: Extends the Rematch pet list by TSM market values
+## Notes: Add TSM market values ​​to the Rematch pet list
 ## Notes-deDE: Ergänzt die Haustierliste von Rematch um TSM-Marktwerte
 ## Author: Expelliarm5s
-## Version: 1.1.17
-## Dependencies: 
+## Version: 1.1.18
+## Dependencies:
 ## SavedVariables: Rematch_TSMPetValuesDB
 
 
@@ -36,7 +36,7 @@ Libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
 Locale\enUS.lua
 Locale\deDE.lua
 
-# Main 
+# Main
 Rematch_TSMPetValues.lua
 Options.lua
 LDB.Lua

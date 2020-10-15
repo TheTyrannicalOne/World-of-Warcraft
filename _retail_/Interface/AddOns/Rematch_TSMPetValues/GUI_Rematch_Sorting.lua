@@ -1,11 +1,11 @@
 ------------------------------------------------------------------------------
--- Rematch_TSMPetValues - Extends the pet list by market values
+-- Rematch_TSMPetValues - Add TSM market values ​​to the Rematch pet list
 ------------------------------------------------------------------------------
 -- GUI_Rematch_Sorting.lua - Sorting Pets
 --
--- Author: Expelliarm5s / Juni 2020 / All Rights Reserved
+-- Author: Expelliarm5s / October 2020 / All Rights Reserved
 --
--- Version 1.1.17
+-- Version 1.1.18
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 -- luacheck: globals Rematch RematchSettings

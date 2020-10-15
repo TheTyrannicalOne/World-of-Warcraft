@@ -1,4 +1,49 @@
-10/13 01:53:53.632  Loading add-on HandyNotes_MechagonAndNazjatar
-10/13 01:53:53.632  ** Loading table of contents Interface\AddOns\HandyNotes_MechagonAndNazjatar\HandyNotes_MechagonAndNazjatar.toc
-10/13 01:53:53.632  Couldn't open Interface\AddOns\HandyNotes_MechagonAndNazjatar\core\core.xml
-10/13 01:53:53.632  Couldn't open Interface\AddOns\HandyNotes_MechagonAndNazjatar\plugin.xml
+10/15 01:21:04.637  Loading add-on !KalielsTracker
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\!KalielsTracker\!KalielsTracker.toc
+10/15 01:21:04.637  ++ Loading file Interface\AddOns\!KalielsTracker\Libs.xml
+10/15 01:21:04.637  ++ Loading file Interface\AddOns\!KalielsTracker\Libs\MSA-DropDownMenu-1.0\MSA-DropDownMenu-1.0.xml
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  ++ Loading file Interface\AddOns\!KalielsTracker\Modules.xml
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on AAP-Core
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\AAP-Core\AAP-Core.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on AckisRecipeList
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\AckisRecipeList\AckisRecipeList.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on AngryWorldQuests
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on EasyScrap
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\EasyScrap\EasyScrap.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on LegionWardrobe
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\LegionWardrobe\LegionWardrobe.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on MountJournalEnhanced
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\MountJournalEnhanced\MountJournalEnhanced.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on NPCScan
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\NPCScan\NPCScan.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  ++ Loading file Interface\AddOns\NPCScan\Preferences\Manifest.xml
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on QuestTogether
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\QuestTogether\QuestTogether.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on RareShare
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\RareShare\RareShare.toc
+10/15 01:21:04.637  (null)
+10/15 01:21:04.637  Loading add-on RCLootCouncil
+10/15 01:21:04.637  ** Loading table of contents Interface\AddOns\RCLootCouncil\RCLootCouncil.toc
+10/15 01:21:04.637  ++ Loading file Interface\AddOns\RCLootCouncil\Modules\Modules.xml
+10/15 01:21:04.637  error in error handling

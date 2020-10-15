@@ -587,24 +587,8 @@ function PlayerXPModifier()
                     end
                 end
             end
-
-            if not itemXpCache[itemLink] then
-                itemXpCache[itemLink] = 0;
-
-                local itemID = GetItemInfoInstant(itemLink);
-                local heirloomMaxLevel = select(10, C_Heirloom.GetHeirloomInfo(itemID));
-                if heirloomMaxLevel ~= nil and heirloomMaxLevel > UnitLevel("player") then
-                    itemXpCache[itemLink] = itemXPBySlot[inventorySlotId] or 0; -- Just guess quickly
-                end
-                if heirloomMaxLevel == nil or heirloomMaxLevel > UnitLevel("player") then
-                    xpTooltip:SetHyperlink(itemLink);
-                end
-            end
-
-            modifier = modifier + itemXpCache[itemLink];
         end
     end
-
     return modifier;
 end
 function BtWQuestsCharactersPlayerMixin:GetXPModifier()

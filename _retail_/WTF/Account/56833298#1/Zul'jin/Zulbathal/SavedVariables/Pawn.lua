@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0336,
-	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
-	["AutoSelectScales"] = true,
+	["LastVersion"] = 2.0401,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -23,7 +21,7 @@ PawnOptions = {
 		{
 			["ID"] = 122382,
 			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122382::::::::119:102:::1:5805:::|h[Preened Ironfeather Breastplate]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122382::::::::120:102:::1:5805:::|h[Preened Ironfeather Breastplate]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 173512,
@@ -33,7 +31,7 @@ PawnOptions = {
 		{
 			["ID"] = 122255,
 			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122255::::::::119:102:::1:5805:::|h[Preened Wildfeather Leggings]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122255::::::::120:102:::1:5805:::|h[Preened Wildfeather Leggings]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 173496,
@@ -48,49 +46,45 @@ PawnOptions = {
 		{
 			["ID"] = 172790,
 			["Level"] = 245,
-			["Link"] = "|cff0070dd|Hitem:172790::::::::115:102:512:7:3:4990:6516:6515:115:::|h[Corrupted Aspirant's Leather Gloves]|h|r",
+			["Link"] = "|cff0070dd|Hitem:172790::::::::120:102:512:7:3:4990:6516:6515:115:::|h[Corrupted Aspirant's Leather Gloves]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 122529,
 			["Level"] = 284,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::119:102:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122529::::::::120:102:::1:5805:::|h[Dread Pirate Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128169,
 			["Level"] = 284,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::119:102:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::120:102:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122362,
 			["Level"] = 284,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::119:102:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::120:102:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122362,
-			["Level"] = 284,
+			["Level"] = 58,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::120:102:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::50:102:::1:5805::::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122262,
 			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122262::::::::119:102:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122262::::::::120:102:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 159118,
 			["Level"] = 289,
 			["Link"] = "|cff0070dd|Hitem:159118::::::::120:102:512:11:1:4813:118:::|h[Rootway Safari Magestaff]|h|r",
 		}, -- [16]
-		{
-			["ID"] = 128822,
-			["Level"] = 152,
-			["Link"] = "|cffe6cc80|Hitem:128822::::::::108:104::::::|h[Claws of Ursoc]|h|r",
-		}, -- [17]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
 	["Artifacts"] = {
 		[128821] = {
 			["Relics"] = {
@@ -132,6 +126,7 @@ PawnOptions = {
 			["Name"] = "Scythe of Elune",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",

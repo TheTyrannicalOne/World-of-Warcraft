@@ -122,14 +122,14 @@ function module:InitializeVendors()
 	AddVendor(56069,	L["Tatia Brine"],			Z.DARKMOON_ISLAND,		52.5,	88.6,	"Neutral")
 	AddVendor(58706,	L["Gina Mudclaw"],			Z.VALLEY_OF_THE_FOUR_WINDS,	52.4,	51.6,	"Neutral")
 	AddVendor(63721,	L["Nat Pagle"],				Z.KRASARANG_WILDS,		68.4, 	43.5,	"Neutral")
-	AddVendor(64084,	L["Jojo"],				Z.SHRINE_OF_SEVEN_STARS,	62.4,	26.6,	"Alliance")
+	AddVendor(64084,	L["Jojo"],				Z.VALE_OF_ETERNAL_BLOSSOMS,	62.4,	26.6,	"Alliance") -- Needs updating
 	AddVendor(64395,	L["Nam Ironpaw"],			Z.VALLEY_OF_THE_FOUR_WINDS,	53.5,	51.3,	"Neutral")
 	AddVendor(64465,	L["Noodles"],				Z.VALLEY_OF_THE_FOUR_WINDS,	52.4,	51.6,	"Neutral")
 	AddVendor(76928,	L["Kraank"],				Z.FROSTWALL,			36.8,	39.6,	"Horde")
 	AddVendor(80159,	L["Arsenio Zerep"],			Z.LUNARFALL,			60.9,	76.2,	"Alliance")
 	AddVendor(101846,	L["Nomi"],				Z.DALARAN_BROKENISLES,		40.1,	66.1,	"Neutral")
 	AddVendor(112226,	L["Markus Hjolbruk"],			Z.SURAMAR,			71.6,	48.8,	"Neutral")
-	AddVendor(120456,	L["Keeper Raynae"],			Z.VALSHARAH,			0.0,	0.0,	"Neutral") -- Needs updating
+	AddVendor(120456,	L["Keeper Raynae"],			Z.VALSHARAH,			53.4,	72.8,	"Neutral")
 
 	self.InitializeVendors = nil
 end

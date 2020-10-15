@@ -54,13 +54,9 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
-		},
 		["BigWigs_Plugins_AutoReply"] = {
 		},
-		["BigWigs_Plugins_Messages"] = {
+		["BigWigs_Plugins_Common Auras"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -69,6 +65,10 @@ BigWigs3DB = {
 					["width"] = 139.9999847412109,
 				},
 			},
+		},
+		["BigWigs_Plugins_Messages"] = {
+		},
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
@@ -88,7 +88,7 @@ BigWigsStatsDB = {
 	[1205] = {
 		[959] = {
 			["mythic"] = {
-				["kills"] = 12,
+				["kills"] = 13,
 				["best"] = 16.48500000001513,
 				["wipes"] = 3,
 			},

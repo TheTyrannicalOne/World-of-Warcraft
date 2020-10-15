@@ -69,6 +69,8 @@ function module:InitializeTrainers()
 	AddTrainer(122694, "Secott the Goldsmith", 	Z.DAZARALOR, 		44.1, 39.1, "Horde")
 	AddTrainer(133236, "Layla Stonebreaker", 	Z.ORGRIMMAR, 		39.0, 85.3, "Horde")
 	AddTrainer(136091, "Myra Cabot", 		Z.BORALUS, 		75.1, 7.5, "Alliance")
+	AddTrainer(156668, "Excavationist Au'fer", 	Z.ORIBOS, 		39.65, 33.36, "Neutral")
+
 
 	self.InitializeTrainers = nil
 end

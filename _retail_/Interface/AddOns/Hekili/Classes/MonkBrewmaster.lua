@@ -9,8 +9,36 @@ local state = Hekili.State
 
 local PTR = ns.PTR
 
+local format = string.format
 
-if UnitClassBase( 'player' ) == 'MONK' then
+
+-- Conduits
+-- [-] scalding_brew
+-- [x] walk_with_the_ox
+
+-- Covenant
+-- [x] strike_with_clarity
+-- [-] imbued_reflections
+-- [-] bone_marrow_hops
+-- [-] way_of_the_fae
+
+-- Endurance
+-- [x] fortifying_ingredients
+-- [-] grounding_breath
+-- [-] harm_denial
+
+-- Brewmaster Endurance
+-- [x] celestial_effervescence
+-- [x] evasive_stride
+
+-- Finesse
+-- [x] dizzying_tumble
+-- [-] lingering_numbness
+-- [x] swift_transference
+-- [-] tumbling_technique
+
+
+if UnitClassBase( "player" ) == "MONK" then
     local spec = Hekili:NewSpecialization( 268 )
 
     spec:RegisterResource( Enum.PowerType.Energy )
@@ -27,7 +55,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
         chi_torpedo = 19818, -- 115008
         tigers_lust = 19302, -- 116841
 
-        light_brewing = 22099, -- 196721
+        light_brewing = 22099, -- 325093
         spitfire = 22097, -- 242580
         black_ox_brew = 19992, -- 115399
 
@@ -41,31 +69,26 @@ if UnitClassBase( 'player' ) == 'MONK' then
 
         special_delivery = 19819, -- 196730
         rushing_jade_wind = 20184, -- 116847
-        invoke_niuzao_the_black_ox = 22103, -- 132578
+        exploding_keg = 22103, -- 325153
 
         high_tolerance = 22106, -- 196737
-        guard = 22104, -- 115295
+        celestial_flames = 22104, -- 325177
         blackout_combo = 22108, -- 196736
     } )
 
     -- PvP Talents
     spec:RegisterPvpTalents( { 
-        adaptation = 3569, -- 214027
-        relentless = 3570, -- 196029
-        gladiators_medallion = 3571, -- 208683
         admonishment = 843, -- 207025
-        fast_feet = 3526, -- 201201
-        mighty_ox_kick = 673, -- 202370
-        eerie_fermentation = 765, -- 205147
-        niuzaos_essence = 1958, -- 232876
-        double_barrel = 672, -- 202335
-        incendiary_breath = 671, -- 202272
-        craft_nimble_brew = 670, -- 213658
         avert_harm = 669, -- 202162
-        hot_trub = 667, -- 202126
+        craft_nimble_brew = 670, -- 213658
+        double_barrel = 672, -- 202335
+        eerie_fermentation = 765, -- 205147
         guided_meditation = 668, -- 202200
-        eminence = 3617, -- 216255
+        hot_trub = 667, -- 202126
+        incendiary_breath = 671, -- 202272
         microbrew = 666, -- 202107
+        mighty_ox_kick = 673, -- 202370
+        niuzaos_essence = 1958, -- 232876
     } )
 
     -- Auras
@@ -84,13 +107,28 @@ if UnitClassBase( 'player' ) == 'MONK' then
             max_stack = 1,
             copy = "breath_of_fire"
         },
+        celestial_brew = {
+            id = 322507,
+            duration = 8,
+            max_stack = 1,
+        },
+        celestial_flames = {
+            id = 325190,
+            duration = 6,
+            max_stack = 1,
+        },
         celestial_fortune = {
             id = 216519,
         },
         chi_torpedo = {
-            id = 115008,
+            id = 119085,
             duration = 10,
             max_stack = 2,
+        },
+        clash = {
+            id = 128846,
+            duration = 4,
+            max_stack = 1,
         },
         crackling_jade_lightning = {
             id = 117952,
@@ -107,6 +145,11 @@ if UnitClassBase( 'player' ) == 'MONK' then
             duration = 10,
             max_stack = 10,
         },
+        exploding_keg = {
+            id = 325153,
+            duration = 3,
+            max_stack = 1,
+        },
         eye_of_the_tiger = {
             id = 196608,
             duration = 8,
@@ -119,15 +162,17 @@ if UnitClassBase( 'player' ) == 'MONK' then
         },
         gift_of_the_ox = {
             id = 124502,
+            duration = 3600,
+            max_stack = 10,
         },
         guard = {
             id = 115295,
             duration = 8,
             max_stack = 1,
         },
-        ironskin_brew = {
-            id = 215479,
-            duration = 21,
+        invoke_niuzao_the_black_ox = {
+            id = 132578,
+            duration = 25,
             max_stack = 1,
         },
         keg_smash = {
@@ -146,7 +191,9 @@ if UnitClassBase( 'player' ) == 'MONK' then
             max_stack = 1,
         },
         mystic_touch = {
-            id = 8647,
+            id = 113746,
+            duration = 3600,
+            max_stack = 1,
         },
         paralysis = {
             id = 115078,
@@ -158,14 +205,19 @@ if UnitClassBase( 'player' ) == 'MONK' then
             duration = 3,
             max_stack = 1,
         },
+        purified_chi = {
+            id = 325092,
+            duration = 15,
+            max_stack = 10,
+        },
         rushing_jade_wind = {
             id = 116847,
-            duration = function () return 6 * haste end,
+            duration = function () return 9 * haste end,
             max_stack = 1,
         },
-        sign_of_the_warrior = {
-            id = 225787,
-            duration = 3600,
+        shuffle = {
+            id = 215479,
+            duration = 7.11,
             max_stack = 1,
         },
         tiger_tail_sweep = {
@@ -175,6 +227,9 @@ if UnitClassBase( 'player' ) == 'MONK' then
             id = 116841,
             duration = 6,
             max_stack = 1,
+        },
+        touch_of_death = {
+            id = 325095,
         },
         transcendence = {
             id = 101643,
@@ -195,21 +250,21 @@ if UnitClassBase( 'player' ) == 'MONK' then
 
         light_stagger = {
             id = 124275,
-            duration = 10,
+            duration = function () return talent.bob_and_weave.enabled and 13 or 10 end,
             unit = "player",
         },
         moderate_stagger = {
             id = 124274,
-            duration = 10,
+            duration = function () return talent.bob_and_weave.enabled and 13 or 10 end,
             unit = "player",
         },
         heavy_stagger = {
             id = 124273,
-            duration = 10,
+            duration = function () return talent.bob_and_weave.enabled and 13 or 10 end,
             unit = "player",
         },
 
-        ironskin_brew_icd = {
+        --[[ ironskin_brew_icd = {
             duration = 1,
             generate = function ()
                 local icd = buff.ironskin_brew_icd
@@ -229,7 +284,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
                 icd.expires = 0
                 icd.caster = "nobody"
             end
-        },
+        }, ]]
 
 
         -- Azerite Powers
@@ -237,11 +292,19 @@ if UnitClassBase( 'player' ) == 'MONK' then
             id = 285959,
             duration = 7,
             max_stack = 1,
+        },
+
+
+        -- Conduits
+        lingering_numbness = {
+            id = 336884,
+            duration = 5,
+            max_stack = 1
         }
     } )
 
 
-    spec:RegisterHook( 'reset_postcast', function( x )
+    spec:RegisterHook( "reset_postcast", function( x )
         for k, v in pairs( stagger ) do
             stagger[ k ] = nil
         end
@@ -249,30 +312,33 @@ if UnitClassBase( 'player' ) == 'MONK' then
     end )
 
 
-    spec:RegisterGear( 'tier19', 138325, 138328, 138331, 138334, 138337, 138367 )
-    spec:RegisterGear( 'tier20', 147154, 147156, 147152, 147151, 147153, 147155 )
-    spec:RegisterGear( 'tier21', 152145, 152147, 152143, 152142, 152144, 152146 )
-    spec:RegisterGear( 'class', 139731, 139732, 139733, 139734, 139735, 139736, 139737, 139738 )
+    spec:RegisterGear( "tier19", 138325, 138328, 138331, 138334, 138337, 138367 )
+    spec:RegisterGear( "tier20", 147154, 147156, 147152, 147151, 147153, 147155 )
+    spec:RegisterGear( "tier21", 152145, 152147, 152143, 152142, 152144, 152146 )
+    spec:RegisterGear( "class", 139731, 139732, 139733, 139734, 139735, 139736, 139737, 139738 )
 
-    spec:RegisterGear( 'cenedril_reflector_of_hatred', 137019 )
-    spec:RegisterGear( 'cinidaria_the_symbiote', 133976 )
-    spec:RegisterGear( 'drinking_horn_cover', 137097 )
-    spec:RegisterGear( 'firestone_walkers', 137027 )
-    spec:RegisterGear( 'fundamental_observation', 137063 )
-    spec:RegisterGear( 'gai_plins_soothing_sash', 137079 )
-    spec:RegisterGear( 'hidden_masters_forbidden_touch', 137057 )
-    spec:RegisterGear( 'jewel_of_the_lost_abbey', 137044 )
-    spec:RegisterGear( 'katsuos_eclipse', 137029 )
-    spec:RegisterGear( 'march_of_the_legion', 137220 )
-    spec:RegisterGear( 'salsalabims_lost_tunic', 137016 )
-    spec:RegisterGear( 'soul_of_the_grandmaster', 151643 )
-    spec:RegisterGear( 'stormstouts_last_gasp', 151788 )
-    spec:RegisterGear( 'the_emperors_capacitor', 144239 )
-    spec:RegisterGear( 'the_wind_blows', 151811 )
+    spec:RegisterGear( "cenedril_reflector_of_hatred", 137019 )
+    spec:RegisterGear( "cinidaria_the_symbiote", 133976 )
+    spec:RegisterGear( "drinking_horn_cover", 137097 )
+    spec:RegisterGear( "firestone_walkers", 137027 )
+    spec:RegisterGear( "fundamental_observation", 137063 )
+    spec:RegisterGear( "gai_plins_soothing_sash", 137079 )
+    spec:RegisterGear( "hidden_masters_forbidden_touch", 137057 )
+    spec:RegisterGear( "jewel_of_the_lost_abbey", 137044 )
+    spec:RegisterGear( "katsuos_eclipse", 137029 )
+    spec:RegisterGear( "march_of_the_legion", 137220 )
+    spec:RegisterGear( "salsalabims_lost_tunic", 137016 )
+    spec:RegisterGear( "soul_of_the_grandmaster", 151643 )
+    spec:RegisterGear( "stormstouts_last_gasp", 151788 )
+    spec:RegisterGear( "the_emperors_capacitor", 144239 )
+    spec:RegisterGear( "the_wind_blows", 151811 )
 
 
     spec:RegisterHook( "reset_precast", function ()
         rawset( healing_sphere, "count", nil )
+        if healing_sphere.count > 0 then
+            applyBuff( "gift_of_the_ox", nil, healing_sphere.count )
+        end
         stagger.amount = nil
     end )
 
@@ -293,6 +359,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
 
 
     local staggered_damage = {}
+    local staggered_damage_pool = {}
     local total_staggered = 0
 
     local stagger_ticks = {}
@@ -303,21 +370,27 @@ if UnitClassBase( 'player' ) == 'MONK' then
                 local now = GetTime()
 
                 if arg1 == destGUID and arg5 == 115069 then
-                    table.insert( staggered_damage, 1, {
-                        t = now,
-                        d = arg8,
-                        s = 6603
-                    } )
+                    local dmg = table.remove( staggered_damage_pool, 1 ) or {}
+
+                    dmg.t = now
+                    dmg.d = arg8
+                    dmg.s = 6603
+
                     total_staggered = total_staggered + arg8
 
+                    table.insert( staggered_damage, 1, dmg )
+
                 elseif arg8 == 115069 then
-                    table.insert( staggered_damage, 1, {
-                        t = now,
-                        d = arg11,
-                        s = arg1,
-                    } )
+                    local dmg = table.remove( staggered_damage_pool, 1 ) or {}
+
+                    dmg.t = now
+                    dmg.d = arg11
+                    dmg.s = arg1
+
                     total_staggered = total_staggered + arg11
 
+                    table.insert( staggered_damage, 1, dmg )
+                    
                 end
             elseif subtype == "SPELL_PERIODIC_DAMAGE" and sourceGUID == state.GUID and arg1 == 124255 then
                 table.insert( stagger_ticks, 1, arg4 )
@@ -332,11 +405,9 @@ if UnitClassBase( 'player' ) == 'MONK' then
         trackBrewmasterDamage( "COMBAT_LOG_EVENT_UNFILTERED", CombatLogGetCurrentEventInfo() )
     end )
 
-    local function resetStaggerTicks()
+    spec:RegisterEvent( "PLAYER_REGEN_ENABLED", function ()
         table.wipe( stagger_ticks )
-    end
-
-    spec:RegisterEvent( "PLAYER_REGEN_ENABLED", resetStaggerTicks )
+    end )
 
 
     function stagger_in_last( t )
@@ -345,7 +416,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
         for i = #staggered_damage, 1, -1 do
             if staggered_damage[ i ].t + 10 < now then
                 total_staggered = max( 0, total_staggered - staggered_damage[ i ].d )
-                table.remove( staggered_damage, i )
+                staggered_damage_pool[ #staggered_damage_pool + 1 ] = table.remove( staggered_damage, i )
             end
         end
 
@@ -371,7 +442,6 @@ if UnitClassBase( 'player' ) == 'MONK' then
     end
 
 
-    local bt = BrewmasterTools
     state.UnitStagger = UnitStagger
 
 
@@ -382,8 +452,8 @@ if UnitClassBase( 'player' ) == 'MONK' then
             stagger = stagger or ( debuff.light_stagger.up and debuff.light_stagger ) or nil
 
             if not stagger then
-                if k == 'up' then return false
-                elseif k == 'down' then return true
+                if k == "up" then return false
+                elseif k == "down" then return true
                 else return 0 end
             end
 
@@ -400,26 +470,26 @@ if UnitClassBase( 'player' ) == 'MONK' then
             elseif k == "none" then
                 return stagger.down
 
-            elseif k == 'percent' or k == 'pct' then
-                -- stagger tick dmg / current hp
+            elseif k == "percent" or k == "pct" then
+                -- stagger tick dmg / current effective hp
+                if health.current == 0 then return 100 end
+                local current = health.current + UnitGetTotalAbsorbs( "player" )
                 return ceil( 100 * t.tick / health.current )
+            
+            elseif k == "percent_max" or k == "pct_max" then
+                if health.max == 0 then return 100 end
+                return ceil( 100 * t.tick / health.max )
 
-            elseif k == 'tick' then
-                if bt then
-                    return t.amount / 20
-                end
-                return t.amount / t.ticks_remain
-
-            elseif k == 'ticks_remain' then
+            elseif k == "tick" or k == "amount" then
+                if t.ticks_remain == 0 then return 0 end
+                return t.amount_remains / t.ticks_remain
+            
+            elseif k == "ticks_remain" then
                 return floor( stagger.remains / 0.5 )
 
-            elseif k == 'amount' or k == 'amount_remains' then
-                if bt then
-                    t.amount = bt.GetNormalStagger()
-                else
-                    t.amount = UnitStagger( 'player' )
-                end
-                return t.amount
+            elseif k == "amount_remains" then
+                t.amount_remains = UnitStagger( "player" )
+                return t.amount_remains
 
             elseif k:sub( 1, 17 ) == "last_tick_damage_" then
                 local ticks = k:match( "(%d+)$" )
@@ -438,23 +508,23 @@ if UnitClassBase( 'player' ) == 'MONK' then
 
 
                 -- Hekili-specific expressions.
-            elseif k == 'incoming_per_second' then
+            elseif k == "incoming_per_second" then
                 return avg_stagger_ps_in_last( 10 )
 
-            elseif k == 'time_to_death' then
+            elseif k == "time_to_death" then
                 return ceil( health.current / ( stagger.tick * 2 ) )
 
-            elseif k == 'percent_max_hp' then
+            elseif k == "percent_max_hp" then
                 return ( 100 * stagger.amount / health.max )
 
-            elseif k == 'percent_remains' then
+            elseif k == "percent_remains" then
                 return total_staggered > 0 and ( 100 * stagger.amount / stagger_in_last( 10 ) ) or 0
 
-            elseif k == 'total' then
+            elseif k == "total" then
                 return total_staggered
 
-            elseif k == 'dump' then
-                DevTools_Dump( staggered_damage )
+            elseif k == "dump" then
+                if DevTools_Dump then DevTools_Dump( staggered_damage ) end
 
             end
 
@@ -483,26 +553,34 @@ if UnitClassBase( 'player' ) == 'MONK' then
 
             handler = function ()
                 gain( energy.max, "energy" )
-                gainCharges( "ironskin_brew", class.abilities.ironskin_brew.charges )
+                setCooldown( "celestial_brew", 0 )
                 gainCharges( "purifying_brew", class.abilities.purifying_brew.charges )                
             end,
         },
 
 
-        blackout_strike = {
+        blackout_kick = {
             id = 205523,
             cast = 0,
-            cooldown = 3,
+            charges = 1,
+            cooldown = 4,
+            recharge = 4,
             hasteCD = true,
             gcd = "spell",
 
             startsCombat = true,
-            texture = 1500803,
+            texture = 574575,
 
             handler = function ()
+                applyBuff( "shuffle" )
+                if conduit.walk_with_the_ox.enabled and cooldown.invoke_niuzao.remains > 0 then
+                    reduceCooldown( "invoke_niuzao", 0.5 )
+                end
+
                 if talent.blackout_combo.enabled then
                     applyBuff( "blackout_combo" )
                 end
+
                 addStack( "elusive_brawler", 10, 1 )
             end,
         },
@@ -527,13 +605,28 @@ if UnitClassBase( 'player' ) == 'MONK' then
             handler = function ()
                 removeBuff( "blackout_combo" )
 
-                if level < 116 and equipped.firestone_walkers then setCooldown( "fortifying_brew", max( 0, cooldown.fortifying_brew.remains - ( min( 6, active_enemies * 2 ) ) ) ) end
-
                 if debuff.keg_smash.up then applyDebuff( "target", "breath_of_fire_dot" ) end
                 addStack( "elusive_brawler", 10, active_enemies * ( 1 + set_bonus.tier21_2pc ) )                
             end,
         },
 
+
+        celestial_brew = {
+            id = 322507,
+            cast = 0,
+            cooldown = 30,
+            gcd = "spell",
+            
+            startsCombat = false,
+            texture = 1360979,
+
+            toggle = "defensives",
+            
+            handler = function ()
+                removeBuff( "purified_chi" )
+                applyBuff( "celestial_brew" )
+            end,
+        },
 
         chi_burst = {
             id = 123986,
@@ -546,7 +639,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
 
             talent = "chi_burst",
 
-            handler = function ()                
+            handler = function ()
             end,
         },
 
@@ -586,6 +679,22 @@ if UnitClassBase( 'player' ) == 'MONK' then
         },
 
 
+        clash = {
+            id = 324312,
+            cast = 0,
+            cooldown = 30,
+            gcd = "spell",
+            
+            startsCombat = true,
+            texture = 628134,
+            
+            handler = function ()
+                setDistance( 5 )
+                applyDebuff( "target", "clash" )
+            end,
+        },
+
+
         crackling_jade_lightning = {
             id = 117952,
             cast = 4,
@@ -603,7 +712,6 @@ if UnitClassBase( 'player' ) == 'MONK' then
             start = function ()
                 removeBuff( "the_emperors_capacitor" )
                 applyDebuff( "target", "crackling_jade_lightning" )
-                -- applies crackling_jade_lightning (117952)
             end,
         },
 
@@ -654,9 +762,9 @@ if UnitClassBase( 'player' ) == 'MONK' then
 
 
         expel_harm = {
-            id = 115072,
+            id = 322101,
             cast = 0,
-            cooldown = 0,
+            cooldown = function () return level > 42 and 5 or 15 end,
             gcd = "spell",
 
             spend = 15,
@@ -666,18 +774,35 @@ if UnitClassBase( 'player' ) == 'MONK' then
             texture = 627486,
 
             usable = function ()
-                if healing_sphere.count == 0 then return false, "no healing spheres"
-                elseif ( settings.eh_percent > 0 and health.pct > settings.eh_percent ) then return false, "health is above " .. settings.eh_percent .. "%" end
+                if ( settings.eh_percent > 0 and health.pct > settings.eh_percent ) then return false, "health is above " .. settings.eh_percent .. "%" end
                 return true
             end,
             handler = function ()
-                if level < 116 and set_bonus.tier20_4pc == 1 then stagger.amount = stagger.amount * ( 1 - ( 0.05 * healing_sphere.count ) ) end
-                gain( healing_sphere.count * stat.attack_power * 2, "health" )
+                gain( ( healing_sphere.count * stat.attack_power ) + stat.spell_power * ( 1 + stat.versatility_atk_mod ), "health" )
+                removeBuff( "gift_of_the_ox" )
                 healing_sphere.count = 0
             end,
         },
 
 
+        exploding_keg = {
+            id = 325153,
+            cast = 0,
+            cooldown = 60,
+            gcd = "spell",
+            
+            toggle = "cooldowns",
+            talent = "exploding_keg",
+
+            startsCombat = true,
+            texture = 644378,
+            
+            handler = function ()
+                applyDebuff( "target", "exploding_keg" )
+            end,
+        },
+
+        
         fortifying_brew = {
             id = 115203,
             cast = 0,
@@ -694,11 +819,21 @@ if UnitClassBase( 'player' ) == 'MONK' then
                 applyBuff( "fortifying_brew" )
                 health.max = health.max * 1.2
                 health.actual = health.actual * 1.2
+                if conduit.fortifying_ingredients.enabled then applyBuff( "fortifying_ingredients" ) end
             end,
+
+            auras = {
+                -- Conduit
+                fortifying_ingredients = {
+                    id = 336874,
+                    duration = 15,
+                    max_stack = 1
+                }
+            }
         },
 
 
-        guard = {
+        --[[ guard = {
             id = 115295,
             cast = 0,
             cooldown = 30,
@@ -715,7 +850,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
             handler = function ()
                 applyBuff( "guard" )
             end,
-        },
+        }, ]]
 
 
         healing_elixir = {
@@ -759,7 +894,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
         },
 
 
-        ironskin_brew = {
+        --[[ ironskin_brew = {
             id = 115308,
             cast = 0,
             charges = function () return talent.light_brewing.enabled and 4 or 3 end,
@@ -795,15 +930,13 @@ if UnitClassBase( 'player' ) == 'MONK' then
             end,
 
             copy = "brews"
-        },
+        }, ]]
 
 
         keg_smash = {
             id = 121253,
             cast = 0,
-            charges = function () return ( level < 116 and equipped.stormstouts_last_gasp ) and 2 or nil end,
             cooldown = 8,
-            recharge = 8,
             gcd = "spell",
 
             spend = 40,
@@ -816,14 +949,18 @@ if UnitClassBase( 'player' ) == 'MONK' then
                 applyDebuff( "target", "keg_smash" )
                 active_dot.keg_smash = active_enemies
 
-                gainChargeTime( 'ironskin_brew', 4 + ( buff.blackout_combo.up and 2 or 0 ) )
-                gainChargeTime( 'purifying_brew', 4 + ( buff.blackout_combo.up and 2 or 0 ) )
-                cooldown.fortifying_brew.expires = max( 0, cooldown.fortifying_brew.expires - 4 + ( buff.blackout_combo.up and 2 or 0 ) )
+                applyBuff( "shuffle" )
+
+                setCooldown( "celestial_brew", max( 0, cooldown.celestial_brew.remains - ( 4 + ( buff.blackout_combo.up and 2 or 0 ) + ( buff.bonedust_brew.up and 1 or 0 ) ) ) )
+                setCooldown( "fortifying_brew", max( 0, cooldown.fortifying_brew.remains - ( 4 + ( buff.blackout_combo.up and 2 or 0 ) + ( buff.bonedust_brew.up and 1 or 0 ) ) ) )
+                gainChargeTime( "purifying_brew", 4 + ( buff.blackout_combo.up and 2 or 0 ) +  ( buff.bonedust_brew.up and 1 or 0 ) )
+
+                if buff.weapons_of_order.up then
+                    applyDebuff( "target", "weapons_of_order_debuff", nil, min( 5, debuff.weapons_of_order_debuff.stack + 1 ) )
+                end
 
                 removeBuff( "blackout_combo" )
                 addStack( "elusive_brawler", nil, 1 )
-
-                if level < 116 and equipped.salsalabims_lost_tunic then setCooldown( "breath_of_fire", 0 ) end
             end,
         },
 
@@ -842,7 +979,17 @@ if UnitClassBase( 'player' ) == 'MONK' then
             handler = function ()
                 applyDebuff( "target", "leg_sweep" )
                 interrupt()
+                if conduit.dizzying_tumble.enabled then applyDebuff( "target", "dizzying_tumble" ) end
             end,
+
+            auras = {
+                -- Conduit
+                dizzying_tumble = {
+                    id = 336891,
+                    duration = 5,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -882,7 +1029,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
         purifying_brew = {
             id = 119582,
             cast = 0,
-            charges = function () return talent.light_brewing.enabled and 4 or 3 end,
+            charges = 2,
             cooldown = function () return ( 15 - ( talent.light_brewing.enabled and 3 or 0 ) ) * haste end,
             recharge = function () return ( 15 - ( talent.light_brewing.enabled and 3 or 0 ) ) * haste end,
             gcd = "off",
@@ -893,34 +1040,26 @@ if UnitClassBase( 'player' ) == 'MONK' then
             startsCombat = false,
             texture = 133701,
 
-            readyTime = function ()
-                return ( 1 + settings.brew_charges - charges_fractional ) * recharge
-            end,
-
             usable = function ()
-                if stagger.pct == 0 then return false, "no damage is staggered" end
-                if settings.purify_stagger > 0 then
-                    if stagger.pct < settings.purify_stagger * ( group and 1 or 0.5 ) then return false, "stagger pct " .. stagger.pct .. " less than purify_stagger setting " .. ( settings.purify_stagger * ( group and 1 or 0.5 ) ) end
-                end
+                if stagger.amount == 0 then return false, "no damage is staggered" end
+                if health.current == 0 then return false, "you are dead" end
                 return true
             end,
 
             handler = function ()
-                spendCharges( 'ironskin_brew', 1 )
-
-                if set_bonus.tier20_2pc == 1 then healing_sphere.count = healing_sphere.count + 1 end
-
                 if buff.blackout_combo.up then
-                    addStack( 'elusive_brawler', 10, 1 )
-                    removeBuff( 'blackout_combo' )
+                    addStack( "elusive_brawler", 10, 1 )
+                    removeBuff( "blackout_combo" )
                 end
 
-                local reduction = 0.5
-                stagger.amount = stagger.amount * ( 1 - reduction )
-                stagger.tick = stagger.tick * ( 1 - reduction )
+                local stacks = stagger.heavy and 3 or stagger.moderate and 2 or 1
+                addStack( "purified_brew", nil, stacks )
 
-                if level < 116 and equipped.gai_plins_soothing_sash then gain( stagger.amount * 0.25, 'health' ) end
+                local reduction = 0.5
+                stagger.amount_remains = stagger.amount_remains * ( 1 - reduction )
             end,
+
+            copy = "brews"
         },
 
 
@@ -1014,6 +1153,29 @@ if UnitClassBase( 'player' ) == 'MONK' then
         },
 
 
+        spinning_crane_kick = {
+            id = 322729,
+            cast = 1.5,
+            channeled = true,
+            cooldown = 0,
+            gcd = "spell",
+            
+            spend = 25,
+            spendType = "energy",
+            
+            startsCombat = true,
+            texture = 606543,
+            
+            start = function ()
+                applyBuff( "shuffle" )
+                
+                if talent.celestial_flames.enabled then
+                    applyDebuff( "target", "breath_of_fire_dot" )
+                    active_dot.breath_of_fire_dot = active_enemies
+                end
+            end,
+        },
+        
         summon_black_ox_statue = {
             id = 115315,
             cast = 0,
@@ -1045,12 +1207,14 @@ if UnitClassBase( 'player' ) == 'MONK' then
 
             handler = function ()
                 removeBuff( "blackout_combo" )
+
                 if talent.eye_of_the_tiger.enabled then
                     applyDebuff( "target", "eye_of_the_tiger" )
                     applyBuff( "eye_of_the_tiger" )
                 end
-                gainChargeTime( 'ironskin_brew', 1 )
-                gainChargeTime( 'purifying_brew', 1 )
+                gainChargeTime( "celestial_brew", debuff.bonedust_brew.up and 2 or 1 )
+                gainChargeTime( "purifying_brew", debuff.bonedust_brew.up and 2 or 1 )
+
                 cooldown.fortifying_brew.expires = max( 0, cooldown.fortifying_brew.expires - 1 )
             end,
         },
@@ -1098,7 +1262,17 @@ if UnitClassBase( 'player' ) == 'MONK' then
             texture = 237585,
 
             handler = function ()
+                if conduit.swift_transference.enabled then applyBuff( "swift_transference" ) end
             end,
+
+            auras = {
+                -- Conduit
+                swift_transference = {
+                    id = 337079,
+                    duration = 5,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -1166,20 +1340,127 @@ if UnitClassBase( 'player' ) == 'MONK' then
         },
 
 
-        --[[ zen_pilgrimage = {
-            id = 126892,
-            cast = 10,
+        -- Monk - Kyrian    - 310454 - weapons_of_order     (Weapons of Order)
+        -- TODO:  Effects of WoO for each spec.
+        weapons_of_order = {
+            id = 310454,
+            cast = 0,
+            cooldown = 120,
+            gcd = "spell",
+
+            toggle = "essences",
+            
+            startsCombat = false,
+            texture = 3565447,
+
+            handler = function ()
+                applyBuff( "weapons_of_order" )
+
+                if state.spec.mistweaver then
+                    setCooldown( "essence_font", 0 )
+                end
+            end,
+
+            auras = {
+                weapons_of_order = {
+                    id = 310454,
+                    duration = function () return conduit.strike_with_clarity.enabled and 35 or 30 end,
+                    max_stack = 1
+                },
+                weapons_of_order_debuff = {
+                    id = 312106,
+                    duration = 8,
+                    max_stack = 5
+                },
+                weapons_of_order_buff = {
+                    id = 311054,
+                    duration = 5,
+                    max_stack = 1
+                }
+            }
+        },
+
+        -- Monk - Necrolord - 325216 - bonedust_brew        (Bonedust Brew)
+        bonedust_brew = {
+            id = 325216,
+            cast  = 0,
             cooldown = 60,
             gcd = "spell",
 
-            toggle = "cooldowns",
+            toggle = "essences",
 
             startsCombat = true,
-            texture = 775462,
+            texture = 3578227,
 
             handler = function ()
+                applyDebuff( "target", "bonedust_brew" )
             end,
-        },]]
+
+            auras = {
+                bonedust_brew = {
+                    id = 325216,
+                    duration = 10,
+                    max_stack = 1
+                }
+            }
+        },
+
+        -- Monk - Night Fae - 327104 - faeline_stomp        (Faeline Stomp)
+        faeline_stomp = {
+            id = 327104,
+            cast = 0,
+            cooldown = 30,
+            gcd = "spell",
+            
+            startsCombat = true,
+            texture = 3636842,
+
+            toggle = "essences",
+            
+            handler = function ()
+                applyBuff( "faeline_stomp" )
+
+                if spec.brewmaster then
+                    applyDebuff( "target", "breath_of_fire" )
+                    active_dot.breath_of_fire = active_enemies
+                end
+            end,
+
+            auras = {
+                faeline_stomp = {
+                    id = 327104,
+                    duration = 30,
+                    max_stack = 1,
+                },        
+            }
+        },
+
+        -- Monk - Venthyr   - 326860 - fallen_order         (Fallen Order)
+        fallen_order = {
+            id = 326860,
+            cast = 0,
+            cooldown = 180,
+            gcd = "spell",
+
+            startsCombat = false,
+            texture = 3565721,
+
+            toggle = "essences",
+
+            handler = function ()
+                applyBuff( "fallen_order" )
+            end,
+
+            auras = {
+                fallen_order = {
+                    id = 326860,
+                    duration = 24,
+                    max_stack = 1
+                }
+            }
+        }
+
+        
     } )
 
 
@@ -1223,7 +1504,7 @@ if UnitClassBase( 'player' ) == 'MONK' then
         width = 1.5
     } )
 
-    spec:RegisterSetting( "isb_overlap", 1, {
+    --[[ spec:RegisterSetting( "isb_overlap", 1, {
         name = "|T1360979:0|t Ironskin Brew: Overlap Duration",
         desc = "If set above zero, the addon will not recommend |T1360979:0|t Ironskin Brew until the buff has less than this number of seconds remaining, unless you are about to cap Ironskin Brew charges.",
         type = "range",
@@ -1241,21 +1522,34 @@ if UnitClassBase( 'player' ) == 'MONK' then
         max = 4,
         step = 0.1,
         width = 1.5
-    } )
+    } ) ]]
 
-    spec:RegisterSetting( "purify_stagger", 33, {
-        name = "|T133701:0|t Purifying Brew: Minimum Stagger %",
-        desc = "If set above zero, the addon will not recommend |T133701:0|t Purifying Brew if your current stagger is ticking for less than this percentage of your |cFFFF0000current|r health.\n\n" ..
+    spec:RegisterSetting( "purify_stagger_currhp", 12, {
+        name = "|T133701:0|t Purifying Brew: Stagger Tick % Current Health",
+        desc = "If set above zero, the addon will recommend |T133701:0|t Purifying Brew when your current stagger ticks for this percentage of your |cFFFF0000current|r effective health (or more).  " ..
+            "Custom priorities may ignore this setting.\n\n" ..
             "This value is halved when playing solo.",
         type = "range",
         min = 0,
         max = 100,
         step = 0.1,
-        width = 1.5
+        width = "full"
+    } )
+
+    spec:RegisterSetting( "purify_stagger_maxhp", 6, {
+        name = "|T133701:0|t Purifying Brew: Stagger Tick % Maximum Health",
+        desc = "If set above zero, the addon will recommend |T133701:0|t Purifying Brew when your current stagger ticks for this percentage of your |cFFFF0000maximum|r health (or more).  " ..
+            "Custom priorities may ignore this setting.\n\n" ..
+            "This value is halved when playing solo.",
+        type = "range",
+        min = 0,
+        max = 100,
+        step = 0.1,
+        width = "full"
     } )
 
 
-    spec:RegisterPack( "Brewmaster", 20200124, [[dW0cIaqiOkQhbfAtisFckOgfQQofQkRcQQELqzwKQ6wKkv7sj)siggI4yKQSmHQNrQyAcjUguv2guL6BqvKXrQeDoOaRtiPMNuO7HO2NuWbHcIfkf9qsLGjsQeYffsYhjvkAKKkLojufALOKxsQuyMKkPCtsLuTtOu)KujPHcvblfki9uLAQqrxLujHVsQeQ9c6Vu1GHCyklwQEmjtwvUmXMvvFgvgncNwXQrPQxJQmBb3Mu2Tk)gy4sPJtQKOLJ0ZPY0LCDuSDHuFhQmEOKZJsz9qvY8rPY(fnupiMW9ZkbIDCsItcj6fpklsWGOG36ef4UyRvG7wtXZ4e4(mnbUBsfCAMRekC3ASfa2dIjC7amuLa3ev16I6ir4MIGPVuaTiUrJjy1aof1(ve3OPIa3DMju4Xd2H7Nvce74KeNes0lEuwKGbrbVJJbWTXueakCVhnDb4MyEp5GD4(jofCJXe1Kk40mxj0ePRdoEjlmMiIQADrDKiCtrW0xkGwe3OXeSAaNIA)kIB0urswymrSSJXOSLO46PFIItsCsswjlmMiDbc74exuNSWyI09eHHkbdRefvy1kHePBnQwISe1NALSWyI09eHhyOZNTebUaBjA(jAQeHdCy4krTujA5QeXgGjrFkqlrkcBU54seEC3Cb3HXvoiMW9t(gtOGycXwpiMWTPQbCWTRvmQNWUN3v0HNa3Yz9G8GnHfe74qmHB5SEqEWMWTIoLqhdUjeluejQXeriwOiwAgwjc)jIKfEJp42u1ao4MB(Lh89fH4bybli26aXeULZ6b5bBc3k6ucDm4MqSqrSAvvIAmr4j8List0CkG2CC(NPzCIxhxIAireIfkILMHvIWFI4prKSINOyjI)erYkEIWFI4OaM2eXxI4lrKMOoZ)V(aAnF2MJZ3PcU1dG7GBtvd4G7NP1kNNWOAWcIDuGyc3Yz9G8GnHBfDkHogCtiwOiwTQkrnMi8rsIinrZPaAZX5FMMXjEDCjQHeriwOiwAgwjc)jI)erYkEIILi(tejR4jc)jIJcyAteFjIVerAI4prDM)F9mTw58egvB9a4UeXhCBQAahC)b0A(SnhNVtfCWcIn(Gyc3Yz9G8GnHBtvd4GBZreTDIZtn8cq9ka1cWTIoLqhdUFsN5)xudVauVcqTG)jDM)F9a4UeXo2LON0z()LcCpgvnrl(545FsN5)xmTjI0evgLtQfHyHIy1QQe1yI0rVeXo2LOA0eFb8VrsuJjkojW9zAcCBoIOTtCEQHxaQxbOwawqSXBiMWTPQbCWnJt8tjAo4woRhKhSjSGyJNGyc3MQgWb3TGAahClN1dYd2ewqS1LqmHBtvd4G7EaaE(pdLn4woRhKhSjSGyJbqmHBtvd4G7UqDcL3CCWTCwpipytybXwpsGyc3MQgWb3HHJOCE2Z840KRGB5SEqEWMWcITE6bXeUnvnGdU)dv6ba4b3Yz9G8GnHfeB9IdXeUnvnGdUTtjUIAbVYcb4woRhKhSjSGyRNoqmHB5SEqEWMWTIoLqhdURrt8fW)gjrnKO44dUnvnGdUNlAapXFddEzaybXwVOaXeULZ6b5bBc3k6ucDm4UZ8)REWu8amLxb06G1dG7sePjAofqBoo)Z0moXRhgGbyGMlrnKi(teHyHIyPzyLi8Nisw6LOyjYvghNqxbZv(Au88ptZ4eFuseFjI0e1z()LeyCt0IVtnCbHUCLP4LOgtu8erAIWZjQZ8)RHcohV58DQGBX0c3MQgWb3dfCoEZ57ubhSGyRh(Gyc3Yz9G8GnHBfDkHogCRaGWdG7wDQGZTuegLtC(p1u1aolKOgsKEjI0ePaGWdG7w9GP45by57ub3IkA2CUe1yI0bUnvnGdUhk4C8MZ3PcoybXwp8gIjClN1dYd2eUv0Pe6yWTRmooHUAvvIAir8NO44lr4pr8Ni9suSeXrbmTjIVeXxIinrDM)FnuW54nNVtfClM2erAI4prXtKUNifHr5eN)tnvnGZcjIVeH)erffHr5Ke1yI6m))AOGZXBoFNk4wurZMZb3MQgWb3Tm05Z2CC(ovWbli26HNGyc3Yz9G8GnHBfDkHogC7kJJtOlnWtOwjWTPQbCWnhJrFWcITE6siMWTCwpipyt4wrNsOJb3eIfkIvRQsuJjcFjc)jIqSWCCExlHqLLcWCvIyh7se)jIqSWCCExlHqLLcWCvIAGCI0jrKMicXcfXQvvjQXeHpsseFWTPQbCWTGvRe8egvdwqS1ddGyc3Yz9G8GnHBfDkHogCtiwOiwTQkrnMiD0bUnvnGdUjelmhNxcdwdfwqSJtcet4woRhKhSjCROtj0XGBfaeEaC3QtfCULIWOCIZ)PMQgWzHe1yIizHp42u1ao4UhmfppalFNk4Gfe746bXeULZ6b5bBc3k6ucDm4M)ejNq5ylrXse)jsoHYX2IkCYLi8NifaeEaC3INW5DAMJyrfnBoxI4lr8LOgtuuijrKMOoZ)V6btXdWuEfqRdwpaUlrKMifaeEaC3INW5DAMJyX0c3MQgWb39GP45by57ubhSGyhpoet4woRhKhSjCROtj0XGBxRec(YOCs5sudKtuC42u1ao4MNW5DAMJawqSJRdet42u1ao4(jfal4woRhKhSjSGyhpkqmHB5SEqEWMWTIoLqhdUDTsi4lJYjLlrnqorXtePjQZ8)lkJJyoop7TN4Xn3B9a4o42u1ao4MY4iMJZZE7jECZ9Gfe744dIjClN1dYd2eUv0Pe6yWDzb5QfLXrmhNN92t84M7TKZ6b5ListuN5)x9GP4bykVcO1blM2erAI6m))IY4iMJZZE7jECZ9wmTWTPQbCWDnCc13AbnybXooEdXeULZ6b5bBc3k6ucDm4M)evwqUAnx0aEI)gg8Ya(Iq89GP45byTKZ6b5Li2XUevwqUA5Af1yb)tct0cLTLCwpiVeXxIinrDM)F1dMIhGP8kGwhSyAHBtvd4G7A4eQV1cAWcIDC8eet4woRhKhSjCROtj0XG7oZ)V4MF5bFFriEawlxzkEjQHeff42u1ao4wWQvcEcJQbli2X1LqmHBtvd4G7EWu8amL3v0HNa3Yz9G8GnHfe74yaet42u1ao4MNW5DAMJaULZ6b5bBcli26qcet4woRhKhSjCROtj0XG7hOwkWPKROwjp)pyAYIkA2CUerorKa3MQgWb3kWPKROwjp)pyAcSGyRJEqmHB5SEqEWMWTIoLqhdUXZjsCo5uYQieVIYOMEq8GV)hmnzPzShqHBtvd4GBcXOLxCo5ucSGyRtCiMWTCwpipyt4wrNsOJb3DM)FXn)Yd((Iq8aSwUYu8sudKtKoWTPQbCWTGvRe8egvdwqS1rhiMWTCwpipyt4wrNsOJb3DM)FrzCeZX5zV9epU5ERha3b3MQgWb3ughXCCE2BpXJBUhSGyRtuGyc3Yz9G8GnHBfDkHogC3z()vpykEaMYRaADW6bWDjI0eXFI6m))QhaGxGXvRha3Li2XUeXFI6m))QhaGxGXvlM2erAIEGA1PIveEW3)hQ4FGArLpvCewpijIVeXhCBQAahC3PIveEW3)hQali26GpiMWTPQbCWTIy8DgQRGB5SEqEWMWcITo4net42u1ao4wrmECw0cClN1dYd2ewqS1bpbXeULZ6b5bBc3k6ucDm4UZ8)lU5xEW3xeIhG1YvMIxIAGCIId3MQgWb3cwTsWtyunybXwhDjet4woRhKhSjCROtj0XGB8CIklixT6btXdWuEfqRdwYz9G8sePjsbaHha3T4jCENM5iwurZMZLOgseN6Liste)jsoHYXwIILi(tKCcLJTfv4Klr4pr8NifaeEaC3INW5DAMJyrfnBoxIILio1lr8Li(seFjQbYjcVXhCBQAahCxdNq9TwqdwqS1bdGyc3Yz9G8GnHBfDkHogClNq5ylrnMiD0dUnvnGdUnQYoXxakvUcwqSJcjqmHBtvd4GBkJJyoop7TN4Xn3dULZ6b5bBclyb3Turb06wbXeITEqmHBtvd4G7wqnGdULZ6b5bBcli2XHyc3MQgWb3kIX3zOUcULZ6b5bBcli26aXeUnvnGdUveJhNfTa3Yz9G8GnHfSGfChTqDd4GyhNe9WasWG4Ka34m6nhNdU1fJHGHInEeBDZOorjctcjrJwlGwj6dOjcd)KVXekmCIOIUsMHkVe5aAsImMcOzL8sKIWooXTsw6AZjjkEuNiDfNJPTfql5Litvd4segMB(Lh89fH4byHHxjRKfEuRfql5LO4jYu1aUefgx5wjl421kki2XXBDjC3sb)jiWngtutQGtZCLqtKUo44LSWyIiQQ1f1rIWnfbtFPaArCJgtWQbCkQ9RiUrtfjzHXeXYogJYwIIRN(jkojXjjzLSWyI0fiSJtCrDYcJjs3tegQemSsuuHvResKU1OAjYsuFQvYcJjs3teEGHoF2se4cSLO5NOPseoWHHRe1sLOLRseBaMe9PaTePiS5MJlr4XDZvYkzHXefvyjkMsEjQlFavsKcO1TkrDHBo3kryikL0wUeDGt3jmQ2NjKitvd4CjcCb2wjlmMitvd4CRwQOaADRi)dMJxYcJjYu1ao3QLkkGw3QyKJ8bGxYcJjYu1ao3QLkkGw3QyKJymCAYvwnGlzHXeTpR1raQerT5LOoZ)lVe5kRCjQlFavsKcO1TkrDHBoxIS7LOwQO7TGQMJlrJlrpWjRKfgtKPQbCUvlvuaTUvXihXDwRJauExzLlzzQAaNB1sffqRBvmYrAb1aUKLPQbCUvlvuaTUvXihrrm(od1vjltvd4CRwQOaADRIroIIy84SOLKvYcJjkQWsumL8sKeTqzlr1OjjQiKezQcqt04sKfTnbRhKvYYu1aohzxRyupHDpVROdpjzzQAaNlg5iCZV8GVViepal9NpzcXcfrJeIfkILMHf(jzH34lzzQAaNlg5iptRvopHr10F(KjelueRwv1iEcFKoNcOnhN)zAgN41X1aHyHIyPzyHF(jzfpg)KSIJFokGPLp(iTZ8)RpGwZNT548DQGB9a4UKLPQbCUyKJ8b0A(SnhNVtfC6pFYeIfkIvRQAeFKq6CkG2CC(NPzCIxhxdeIfkILMHf(5NKv8y8tYko(5OaMw(4Ju(7m))6zATY5jmQ26bWD8LSmvnGZfJCegN4Ns00)mnHS5iI2oX5PgEbOEfGAb9Np5N0z()f1Wla1Raul4FsN5)xpaUJDS7jDM)FPa3Jrvt0IFoE(N0z()ftlPLr5KAriwOiwTQQrD0JDSRgnXxa)BKgJtsYYu1aoxmYryCIFkrZLSmvnGZfJCKwqnGlzzQAaNlg5i9aa88FgkBjltvd4CXihPluNq5nhxYYu1aoxmYrcdhr58SN5XPjxLSmvnGZfJCK)qLEaaEjltvd4CXihXoL4kQf8kleswMQgW5IroYCrd4j(ByWld4lcX3dMINhGL(ZNCnAIVa(3inehFjRKfgteEKcohV5sutQGlrT0bqNITeHJqojAHMOPsuba8sKB4U5pk7Qe9mnJtsKDVenuW54nxI6ubxI6m)FIgxI0gNBoUeXV9ypJRsurijIqSqrS0mSsKci))Og5QezkfG(MJlrfirZvY5MITeb(j6zAgNKOY4jhF6Ni7EjQaj6XO1MiblL4CjsryuoXLOU8bujrnbnxjltvd4CXihzOGZXBoFNk40F(K7m))Qhmfpat5vaToy9a4osNtb0MJZ)mnJt86HbyagO5AGFcXcfXsZWc)KS0lMRmooHUcMR81O45FMMXj(OWhPDM)Fjbg3eT47udxqOlxzkEngNu8CN5)xdfCoEZ57ub3IPnzzQAaNlg5idfCoEZ57ubN(ZNScacpaUB1Pco3sryuoX5)utvd4Sqd6rQcacpaUB1dMINhGLVtfClQOzZ5AuNKvYcJjcpWqNpBZXLOUqyrpagAIgxI6MtEjcCj6aunlm4Lvd4se)tuLOIqsuWkjrcwTuX5gWLOIoCCc1LO5NixzCCcnrUbVKenNIkMtEjceTqturijkyUkr6qsIQrXZLianr6HVe5ef4Eo(wjltvd4CXihPLHoF2MJZ3Pco9NpzxzCCcD1QQg4po(Wp)6fJJcyA5Jps7m))AOGZXBoFNk4wmTKYFCDxryuoX5)utvd4SaF4NkkcJYjn2z()1qbNJ3C(ovWTOIMnNlzLSWyI0nzm6lrrsKUvSWCCjkQcdwdnzzQAaNlg5iCmg9P)8j7kJJtOlnWtOwjjltvd4CXihrWQvcEcJQP)8jtiwOiwTQQr8HFcXcZX5DTecvwkaZvSJD8tiwyooVRLqOYsbyUQbY6qkHyHIy1QQgXhj8LSmvnGZfJCecXcZX5LWG1q1F(KjelueRwv1Oo6KSswymrndMIxI0vXkrnPcUenUePyOu5QaBjIXjVevGejtri0erL2GCJJirDQGZLOU5KxIaxIcIZLOIWUeryHFISe1PcUePimkNKilABcwpi6NianrbaUejNq5ylrfirYz9GKiDdHlrBnZrKSmvnGZfJCKEWu88aS8DQGt)5twbaHha3T6ubNBPimkN48FQPQbCwOrsw4lzzQAaNlg5i9GP45by57ubN(ZNm)Yjuo2IXVCcLJTfv4Kd)kai8a4UfpHZ70mhXIkA2Co(4RXOqcPDM)F1dMIhGP8kGwhSEaChPkai8a4UfpHZ70mhXIPnzLSWyI0v)F5Ct0sGn9turijcdbpORLOw6aOtn4L4sKUXorGlrQGyrl6NOMGDIKGt0pr4MIirYjuo2sKRvUNqDjYUxIupxICaAjVe1LaaxYYu1aoxmYr4jCENM5i0F(KDTsi4lJYjLRbYXtwjltvd4CXih5jfaRKLPQbCUyKJqzCeZX5zV9epU5E6pFYUwje8Lr5KY1a54K2z()fLXrmhNN92t84M7TEaCxYkzzQAaNlg5i1WjuFRf00F(KllixTOmoI548S3EIh3CVLCwpips7m))Qhmfpat5vaToyX0sAN5)xughXCCE2BpXJBU3IPnzzQAaNlg5i1WjuFRf00F(K5VSGC1AUOb8e)nm4Lb8fH47btXZdWAjN1dYJDSRSGC1Y1kQXc(NeMOfkBl5SEqE8rAN5)x9GP4bykVcO1blM2KLPQbCUyKJiy1kbpHr10F(K7m))IB(Lh89fH4byTCLP41quswMQgW5IrospykEaMY7k6WtswMQgW5IrocpHZ70mhrYYu1aoxmYruGtjxrTsE(FW0e9Np5hOwkWPKROwjp)pyAYIkA2CoYKKSmvnGZfJCecXOLxCo5uI(ZNmEwCo5uYQieVIYOMEq8GV)hmnzPzShqtwMQgW5IroIGvRe8egvt)5tUZ8)lU5xEW3xeIhG1YvMIxdK1jzzQAaNlg5iughXCCE2BpXJBUN(ZNCN5)xughXCCE2BpXJBU36bWDjltvd4CXihPtfRi8GV)pur)5tUZ8)REWu8amLxb06G1dG7iL)oZ)V6ba4fyC16bWDSJD83z()vpaaVaJRwmTK(a1QtfRi8GV)puX)a1IkFQ4iSEq4JVKLPQbCUyKJOigFNH6QKLPQbCUyKJOigpolAjzHXefvy1kHePBnQwIimxIigocHMiDr4HOcZeve2LimXdjchHCjInatIiSOLezvIcI5QefpraA3TswMQgW5IroIGvRe8egvt)5tUZ8)lU5xEW3xeIhG1YvMIxdKJNSmvnGZfJCKA4eQV1cA6pFY45YcYvREWu8amLxb06GLCwpipsvaq4bWDlEcN3PzoIfv0S5CnWPEKYVCcLJTy8lNq5yBrfo5Wp)kai8a4UfpHZ70mhXIkA2CUyCQhF8XxdKXB8LSmvnGZfJCeJQSt8fGsLR0F(KLtOCS1Oo6LSmvnGZfJCekJJyoop7TN4Xn3dwWccb]] )
+    spec:RegisterPack( "Brewmaster", 20201013, [[dGeVPaqiPqvpIIkxIIQsTjbAueLoffLvHI0RKIMLa6wsHkTlP6xGudtqDmPGLHaptaMgrrxtkX2OOkFdfHghkICoIcTokQQ08qqUhi2hkQdsrvvluk1dLcLAIuuvYfrruJukuXjLcLSsIQxkfkAMuuvXnLcf2jk4NOiWqrrqpvftfKCvkQk2lK)sPbd1HPAXG6XeMSkDzsBwP(SqJgLoTKvlfYRfKzRKBtHDd8BKgorwUQEoQMUORJOTlL03rOXJcDEkY6jky(iO2VIrnGGcDUEQigiimbHBiCdb0dhwMHjOb0jnjPOJKlc5rfDaUHIoTFLOHZt9rhj30I6xeuOdNs(cfDyZuIB(fAOJvYsc3fudO5Lb5YZIceVVtO5LHaA0bMSwzJfabJoxpvedeeMGWneUHa6HdlZWeGoozYsF05ugn2OdBDVkabJoxLlqhZn42Vs0W5P(dUXGccnYn3Gzcejfw)b3qaboycctqy0zv8KJGcDU62jxjckednGGcDCrwua6WLu)TSo4A55xHu0rbo8sVO2OeXabiOqhf4Wl9IAJoIVs9lhDyvFLSDjroycnyMyldo4GlGGAuGO96gEuTbWhmZdMv9vY2nCghmthSSdoCNGb3CWYo4WDcgmthC8PKsd2SbB2GdoyyY9UVPFwBtfiAHFLy)sjcqhxKffGox3qsbww)nqjIHaqqHokWHx6f1gDeFL6xo6WQ(kz7sICWeAWTeEWbhCbeuJceTx3WJQna(GzEWSQVs2UHZ4Gz6GLDWH7em4Mdw2bhUtWGz6GJpLuAWMnyZgCWbl7GHj37(1nKuGL1FJ(LsemyZqhxKffGoB6N12ubIw4xjIsedYebf6OahEPxuB0XfzrbOJZzB1bk3(UmqFRG((cDeFL6xo6CvyY9U)UmqFRG((YEvyY9UFPebdMWeEWxfMCV7ck4skYQv1wGq2RctU3DsPbhCWP)rn7SQVs2UKihmHgCanmyct4bNLHAtQ9w6Gj0Gjim6aCdfDCoBRoq523Lb6Bf03xOeXqliOqhxKffGoKC1wPAWrhf4Wl9IAJsedMhck0XfzrbOJenlkaDuGdV0lQnkrmWerqHoUilkaDGxu61UjFtOJcC4LErTrjIbMeck0XfzrbOdS(C9dvGi6OahEPxuBuIyqgrqHoUilkaDwvKn52grEJgkirhf4Wl9IAJsednegbf64ISOa0zxVcVO0l6OahEPxuBuIyOHgqqHoUilkaDCGq557lRWxl0rbo8sVO2OeXqdeGGcDuGdV0lQn6i(k1VC0jld1Mu7T0bZ8GjOf0XfzrbOtbALgsTGIugCkkrm0qaiOqhf4Wl9IAJoIVs9lhDeS(hv(GHmybR)rLBnCghCWbZtpg1VZQERMgCWbl7GHj37Ue5x7sVwbB1VuIGbtycpyyY9Ulr(1U0RvWw9xn8cWhmHgCd9wgmthCuChSzdo4Gfu66sjc6cDP8S8Lf(vI9xn8cWhmHgClOJlYIcqhjYV2Mkq0c)kruIyObzIGcDuGdV0lQn6i(k1VC0HRzwGiVlr(12KLNEmQVvq(pR0GzEWHhCWbhFkP0GdoyE6XO(DjroyMHmyUMzbI8Ue5xBtwE6XO(wb5)SsOJlYIcqhjYV2Mkq0c)kruIyOHwqqHokWHx6f1gDeFL6xo6W1mlqK3Li)ABYYtpg13ki)NvAWmp4Wdo4G50fDWbhmp9yu)UKihmZqgmxZSarExI8RTjlp9yuFRG8FwPbZ0bhU3c64ISOa0rI8RTPceTWVseLigAW8qqHokWHx6f1gDeFL6xo6W1mlqK3Li)ABYYtpg13A4mYknyMhC4bhCWXNskn4GdMNEmQFxsKdMzidMRzwGiVlr(12KLNEmQV1WzKvcDCrwua6ir(12ubIw4xjIsednWerqHokWHx6f1gDeFL6xo6W1mlqK3Li)ABYYtpg13A4mYknyMhC4bhCWC6Io4GdMNEmQFxsKdMzidMRzwGiVlr(12KLNEmQV1WzKvAWmDWH7TGoUilkaDKi)ABQarl8RerjIHgysiOqhf4Wl9IAJoIVs9lhD4AMfiY7sKFTnz5PhJ6BfK)Zknyido8GdoyUMzbI8Ue5xBtwE6XO(wdNrwPbdzWHhCWbhFkP0GdoyE6XO(DjroyMhmbHrhxKffGosKFTnvGOf(vIOeXqdYick0rbo8sVO2OJ4Ru)YrhUMzbI8Ue5xBtwE6XO(wb5)SsdgYGdp4GdMRzwGiVlr(12KLNEmQV1WzKvAWqgC4bhCWC6Io4GdMNEmQFxsKdM5b3qy0XfzrbOJe5xBtfiAHFLikrmqqyeuOJcC4LErTrhXxP(LJoSQVs2UKihmHgCldMPdMv9vbIwUeR(Axqjb5GjmHhSSdMv9vbIwUeR(Axqjb5GzgYGdyWbhmR6RKTljYbtOb3s4bBg64ISOa0rzusxww)nqjIbcAabf6OahEPxuB0r8vQF5OdR6RKTljYbtObhqaOJlYIcqhw1xfiA1vXy9OeXabeGGcDuGdV0lQn6i(k1VC0rqPRlLiOlr(12ubIw4xj2fS(hvUD)UilkWxdMqdoCVf0XfzrbOd8YfHSugTWVseLigiiaeuOJcC4LErTrhXxP(LJoYoyfOF00GBoyzhSc0pAQ)AubdMPdwqPRlLiOhsJwUHZz7VA4fGpyZgSzdMqdwMHhCWbdtU3D4LlcrjtRGAat7xkrWGdoybLUUuIGEinA5goNTtkHoUilkaDGxUiKLYOf(vIOeXabYebf6OahEPxuB0r8vQF5Odm5E3HxUieLmTcQbmTFPebdo4GlGGAuGO96gEuTeiJYOmAWhmZdw2bZQ(kz7goJdMPdoCpCldU5G5PhJ63xopTzjczVUHhvRmhSzdo4GHj37UUi5vRQf(DIl9780fHgmHgmbOJlYIcqhHUuEw(Yc)kruIyGGwqqHokWHx6f1gDeFL6xo6atU3DjYV2LETc2Qtkn4Gdw2bdtU3DjYV2LETc2Q)QHxa(Gj0GBO3YGz6GJI7GjmHhSGsxxkrqxI8RTPceTWVsS)QHxa(GzEWWK7DxI8RDPxRGT6VA4fGpyZqhxKffGocDP8S8Lf(vIOeXabMhck0rbo8sVO2OJ4Ru)YrhUKUw20)OM8bZmKbta64ISOa0jKgTCdNZIsedeWerqHoUilkaDUAszeDuGdV0lQnkrmqatcbf6OahEPxuB0r8vQF5OdxsxlB6Fut(GzgYGjyWbhmm5E3FsoBbI2g5x1sSa3(LseGoUilkaDEsoBbI2g5x1sSaxuIyGazebf64ISOa0bMc0ljpTWVseDuGdV0lQnkrmeqyeuOJlYIcqNTVwkWs)R(OJcC4LErTrjIHaAabf64ISOa0z76QaQLNudj0rbo8sVO2OeXqaeGGcDCrwua6quDjkGBPBl9V6JokWHx6f1gLigciaeuOJcC4LErTrhXxP(LJoPVuq2FsoBbI2g5x1sSa3UcC4LEhCWbdtU3D4LlcrjtRGAat7Ksdo4GHj37(tYzlq02i)QwIf42jLqhxKffGozf13k5lduIyiazIGcDuGdV0lQn6i(k1VC0r2bN(sbzVaTsdPwqrkdo1MSQfE5IqwkJDf4Wl9oyct4bN(sbzNlPIYx2RUQw13uxbo8sVd2SbhCWWK7DhE5IquY0kOgW0oPe64ISOa0jRO(wjFzGsedb0cck0rbo8sVO2OJ4Ru)YrhyY9UhRDAPBBYQwkJDE6IqdM5blt0XfzrbOJYOKUSS(BGsedbyEiOqhxKffGoWlxeIsM2qLie6OahEPxuBuIyiaMick0XfzrbOtinA5goNfDuGdV0lQnkrmeatcbf6OahEPxuB0r8vQF5OZLMDbfiuq(EQx7E5gA)vdVa8bdzWHrhxKffGockqOG89uV29YnuuIyiazebf6OahEPxuB0r8vQF5OtJFWkNRaH2tw1kEsrbVulDB3l3q7gEJOp64ISOa0Hv9pTkNRaHIsedYmmck0rbo8sVO2OJ4Ru)YrhyY9UhRDAPBBYQwkJDE6IqdMzidoa0XfzrbOJYOKUSS(BGsedYSbeuOJcC4LErTrhXxP(LJoWK7D)j5SfiABKFvlXcC7xkra64ISOa05j5SfiABKFvlXcCrjIbzsack0rbo8sVO2OJ4Ru)YrhyY9UdVCrikzAfudyA)sjcgCWbl7GHj37o8IsVlsE2VuIGbtycpyzhmm5E3Hxu6DrYZoP0Gdo4ln7WV6jRLUT76v7LM9x3VYzD4LoyZgSzOJlYIcqh4x9K1s32D9kkrmiZaqqHoUilkaDeSLfM85j6OahEPxuBuIyqMYebf64ISOa0rWwwIERk6OahEPxuBuIyqMTGGcDuGdV0lQn6i(k1VC0bMCV7XANw62MSQLYyNNUi0GzgYGjaDCrwua6OmkPllR)gOeXGmnpeuOJcC4LErTrhXxP(LJoUiRwvRcuJs5dMzidoGbhCWckDDPeb9qA0YnCoB)vdVa8bZ8GJI7GdoyzhSc0pAAWnhSSdwb6hn1FnQGbZ0bl7Gfu66sjc6H0OLB4C2(RgEb4dU5GJI7GnBWMnyZgmZqgS51c64ISOa0HlvaqbIwX7a1gQeHqjIbzYerqHokWHx6f1gDeFL6xo604hC6lfKD4LlcrjtRGAat7kWHx6DWbhSGsxxkrqpKgTCdNZ2F1WlaFWmp4O4o4Gdw2bRa9JMgCZbl7GvG(rt9xJkyWmDWYoybLUUuIGEinA5goNT)QHxa(GBo4O4oyZgSzd2SbZmKbBETGoUilkaDYkQVvYxgOeXGmzsiOqhf4Wl9IAJoIVs9lhDuG(rtdMqdoGgqhxKffGo(lCGAt6)kirjIbzkJiOqhxKffGopjNTarBJ8RAjwGl6OahEPxuBuIs0r6vb1a2teuigAabf64ISOa0zVuoR49DIokWHx6f1gLigiabf64ISOa0rWwwyYNNOJcC4LErTrjIHaqqHoUilkaDeSLLO3QIokWHx6f1gLOeLOtR6ZlkaXabHjiCdHBiCVb0HO)Gce5OtJLHe9t9oycgSlYIcg8Q4jVpYrhPNURLIoMBWTFLOHZt9hCJbfeAKBUbZeiskS(dUHacCWeeMGWJ8rU5gmtMrvqM6DWW6M(6GfudyphmSglaVpyZFHqLs(GbuqJlR)gBY1GDrwuaFWuWYuFKBUb7ISOaEx6vb1a2ti7LZdnYn3GDrwuaVl9QGAa7ztiqVP07i3Cd2fzrb8U0RcQbSNnHaTtgnuq6zrbJCZn4dWL4S0CWVx3bdtU36DW80t(GH1n91blOgWEoyynwa(GDWDWsV24krZSaXbx8bFPaTpYn3GDrwuaVl9QGAa7ztiqZbUeNLMwE6jFK7ISOaEx6vb1a2ZMqGEVuoR49DoYDrwuaVl9QGAa7ztiqlyllm5ZZrUlYIc4DPxfudypBcbAbBzj6TQJ8rU5gmtMrvqM6DWAR6BAWzzOdoz1b7IK(dU4d2B1RLdV0(i3fzrbCiCj1FlRdUwE(viDK7ISOaEtiqFDdjfyz93iWAdHv9vY2LejHyITeSacQrbI2RB4r1gaNzw1xjB3WzKPYgUtqtzd3jGPXNskzMzbHj37(M(zTnvGOf(vI9lLiyK7ISOaEtiqVPFwBtfiAHFLyG1gcR6RKTljsc1s4Gfqqnkq0EDdpQ2a4mZQ(kz7goJmv2WDcAkB4obmn(usjZmlOSWK7D)6gskWY6Vr)sjcmBK7ISOaEtiqtYvBLQrGa3qH4C2wDGYTVld03kOVVcS2qUkm5E3FxgOVvqFFzVkm5E3VuIact4RctU3DbfCjfz1QAlqi7vHj37oPuW0)OMDw1xjBxsKekGgimHZYqTj1ElLqeeEK7ISOaEtiqtYvBLQbFK7ISOaEtiqlrZIcg5UilkG3ec0Wlk9A3KVPrUlYIc4nHanS(C9dvG4i3fzrb8MqGEvr2KBBe5nAOGCK7ISOaEtiqVRxHxu6DK7ISOaEtiq7aHYZ3xwHVwJCxKffWBcb6c0knKAbfPm4uBYQw4LlczPmgyTHKLHAtQ9wkZe0YiFKBUbZes(12ubIdgwz9wlk5p4IpyyNR3btbdgqFdFvYGNffmyzlM8GtwDWlp1bRmk9kNxuWGZVIr95dU2dMNEmQ)G5LmOdUaIxDUEhmTv9hCYQdE58CWbeEWzjcXhm9hCdTmyUkOGl3S(i3fzrb8MqGwI8RTPceTWVsmWAdrW6Fu5qeS(hvU1Wzmip9yu)oR6TAkOSWK7DxI8RDPxRGT6xkraHjmm5E3Li)Ax61kyR(RgEb4eQHElmnkUMfuqPRlLiOl0LYZYxw4xj2F1WlaNqTmYh5MBWMpCDWckyxrYxVdwI8RTjlp9yuFRG8FwPbVFQXGB)krdNN6pyQuwuaVpYDrwuaVjeOLi)ABQarl8RedS2q4AMfiY7sKFTnz5PhJ6BfK)ZkXC4GXNskfKNEmQFxsKmdHRzwGiVlr(12KLNEmQVvq(pR0i3fzrb8MqGwI8RTPceTWVsmWAdHRzwGiVlr(12KLNEmQVvq(pReZHdYPlAqE6XO(DjrYmeUMzbI8Ue5xBtwE6XO(wb5)SsmnCVLr(i3Cd28HRdwqb7ks(6DWsKFTnz5PhJ6BnCgzLg8(PgdU9RenCEQ)GPszrb8(i3fzrb8MqGwI8RTPceTWVsmWAdHRzwGiVlr(12KLNEmQV1WzKvI5WbJpLukip9yu)UKizgcxZSarExI8RTjlp9yuFRHZiR0i3fzrb8MqGwI8RTPceTWVsmWAdHRzwGiVlr(12KLNEmQV1WzKvI5Wb50fnip9yu)UKizgcxZSarExI8RTjlp9yuFRHZiRetd3BzKpYn3GpPhJ6pyZ3dMUhmbHhmXATgCOATgSjk5GlWGjO3YG5QGcU8btSswkzoyw1xfioy6pyjYV2MkqSp4bB(W17GjYQGblr(12KLNEmQVvq(pR0GDWDWgoJSsd2FDW3I7Wl92h5UilkG3ec0sKFTnvGOf(vIbwBiCnZce5DjYV2MS80Jr9TcY)zLGeoixZSarExI8RTjlp9yuFRHZiReKWbJpLukip9yu)UKizMGWJCxKffWBcbAjYV2Mkq0c)kXaRneUMzbI8Ue5xBtwE6XO(wb5)SsqchKRzwGiVlr(12KLNEmQV1WzKvcs4GC6IgKNEmQFxsKm3q4r(i3CdUXr9vbIdMjVkgRFK7ISOaEtiqRmkPllR)gbwBiSQVs2UKijulmLv9vbIwUeR(AxqjbjHjSSSQVkq0YLy1x7ckjizgsabzvFLSDjrsOwcB2i3fzrb8MqGMv9vbIwDvmwFG1gcR6RKTljscfqaJ8rU5gC7LlcnyMaghC7xjo4Ipyb5)kixMgmjxVdoPdwRKv)b)Q0sbfNDWWVsKpyyNR3btbdEPC(GtwhmywFThSpy4xjoybR)rDWERETC4Lg4GP)GxuIdwb6hnn4Koyf4WlDWnMACWhdNZoYDrwuaVjeOHxUiKLYOf(vIbwBickDDPebDjYV2Mkq0c)kXUG1)OYT73fzrb(IqH7TmYDrwuaVjeOHxUiKLYOf(vIbwBiYQa9JMAkRc0pAQ)AubmvqPRlLiOhsJwUHZz7VA4fGBMzesMHdctU3D4LlcrjtRGAat7xkrqqbLUUuIGEinA5goNTtknYh5MBWn26s5z5Rb3(vIdw6l6xPPbtKvbAR6p4khCsPHgmVIGAxchKd(6gEuhSdUdUEkGhQadg(vIdgMCVhCXhSrX5fioyz9BJi55GtwDWSQVs2UHZ4GfuDVlrPGCWUqq)BbIdoPdUaPc4vAAW09GVUHh1bNEifywGd2b3bN0bFjnKgSYOq58bly9pQ8bdRB6RdUnTDFK7ISOaEtiql0LYZYxw4xjgyTHatU3D4LlcrjtRGAat7xkrqWciOgfiAVUHhvlbYOmkJgCMLLv9vY2nCgzA4E4wAYtpg1VVCEAZseYEDdpQwzAwqyY9URlsE1QAHFN4s)opDricrWi3fzrb8MqGwOlLNLVSWVsmWAdbMCV7sKFTl9AfSvNukOSWK7DxI8RDPxRGT6VA4fGtOg6TW0O4syclO01Lse0Li)ABQarl8Re7VA4fGZmm5E3Li)Ax61kyR(RgEb4MnYh5MBWmb7Tc4vR6YuGdoz1bB(ZeA(zWsFr)klzq5dUX8mykyWIL6TQbo420ZG1fxdCWeRKDWkq)OPbZLuWvF(GDWDWIlFWC6N6DWW6IsCK7ISOaEtiqhsJwUHZzdS2q4s6Azt)JAYzgcbJ8rUlYIc4nHa9vtkJJCxKffWBcb6NKZwGOTr(vTelWnWAdHlPRLn9pQjNzieeeMCV7pjNTarBJ8RAjwGB)sjcg5JCxKffWBcbAykqVK80c)kXrUlYIc4nHa92xlfyP)v)rUlYIc4nHa921vbulpPgsJCxKffWBcbAIQlrbClDBP)v)rUlYIc4nHaDwr9Ts(YiWAdj9LcY(tYzlq02i)QwIf42vGdV0BqyY9UdVCrikzAfudyANukim5E3FsoBbI2g5x1sSa3oP0i3fzrb8MqGoRO(wjFzeyTHiB6lfK9c0knKAbfPm4uBYQw4LlczPm2vGdV0lHjC6lfKDUKkkFzV6QAvFtDf4Wl9AwqyY9UdVCrikzAfudyANuAK7ISOaEtiqRmkPllR)gbwBiWK7Dpw70s32KvTug780fHywMJCxKffWBcbA4LlcrjtBOseAK7ISOaEtiqhsJwUHZzh5UilkG3ec0ckqOG89uV29Yn0aRnKln7ckqOG89uV29Yn0(RgEb4qcpYDrwuaVjeOzv)tRY5kqObwBinELZvGq7jRAfpPOGxQLUT7LBODdVr0FK7ISOaEtiqRmkPllR)gbwBiWK7Dpw70s32KvTug780fHygsaJCxKffWBcb6NKZwGOTr(vTelWnWAdbMCV7pjNTarBJ8RAjwGB)sjcg5UilkG3ec0WV6jRLUT761aRneyY9UdVCrikzAfudyA)sjccklm5E3Hxu6DrYZ(Lseqycllm5E3Hxu6DrYZoPuWln7WV6jRLUT76v7LM9x3VYzD4LAMzJCxKffWBcbAbBzHjFEoYDrwuaVjeOfSLLO3QoYn3GzYmkPRb344VXGzD(GzRiR(d28ftitgQbNSoyWqXeoyISkyWMOKdM1BvhSNdEPophmbdM(W8(i3fzrb8MqGwzusxww)ncS2qGj37ES2PLUTjRAPm25PlcXmecg5UilkG3ec0CPcakq0kEhO2qLiuG1gIlYQv1Qa1OuoZqciOGsxxkrqpKgTCdNZ2F1WlaN5O4guwfOF0utzvG(rt9xJkGPYkO01Lse0dPrl3W5S9xn8cWBgfxZmZmMHyETmYDrwuaVjeOZkQVvYxgbwBin(0xki7WlxeIsMwb1aM2vGdV0BqbLUUuIGEinA5goNT)QHxaoZrXnOSkq)OPMYQa9JM6VgvatLvqPRlLiOhsJwUHZz7VA4fG3mkUMzMzmdX8AzK7ISOaEtiq7VWbQnP)RGmWAdrb6hnrOaAyK7ISOaEtiq)KC2ceTnYVQLybUOdxsfigiW8ysOeLiea]] )
 
 
 end

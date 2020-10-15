@@ -48,6 +48,16 @@ function Hekili:GetUnitByGUID( id )
     end
 end
 
+function Hekili:GetUnitByName( name )
+    for _, unit in ipairs( unitIDs ) do
+        if UnitName( unit ) == name then return unit end
+    end
+
+    for unit in pairs( npUnits ) do
+        if UnitName( unit ) == name then return unit end
+    end
+end
+
 
 do
     -- Pet-Based Target Detection
@@ -171,12 +181,20 @@ end )
 Hekili:ProfileFrame( "NamePlateWatcherFrame", f )
 
 
+
+
+
 local RC = LibStub("LibRangeCheck-2.0")
 
 local lastCount = 1
 local lastCycle = 0
 
 local guidRanges = {}
+
+
+local function UnitInPhase( unit )
+    return UnitPhaseReason( unit ) == ( not IsInInstance() and C_PvP.IsWarModeDesired() and 2 or nil )
+end
 
 
 do
@@ -214,7 +232,7 @@ do
             
             if checkPets or checkPlates then
                 for unit, guid in pairs(npGUIDs) do
-                    if UnitExists( unit ) and not UnitIsDead( unit ) and UnitCanAttack( "player", unit ) and UnitHealth( unit ) > 1 and UnitInPhase( unit ) and ( UnitIsPVP( "player" ) or not UnitIsPlayer( unit ) ) then
+                    if UnitExists( unit ) and not UnitIsDead( unit ) and UnitCanAttack( "player", unit ) and UnitInPhase( unit ) and UnitHealth( unit ) > 1 and ( UnitIsPVP( "player" ) or not UnitIsPlayer( unit ) ) then
                         local npcid = guid:match( "(%d+)-%x-$" )
                         local excluded = enemyExclusions[ npcid ]
 
@@ -231,7 +249,7 @@ do
                             local _, range = RC:GetRange( unit )
                             guidRanges[ guid ] = range
 
-                            excluded = range and range > spec.nameplateRange
+                            excluded = range and range > spec.nameplateRange or false
                         end
 
                         -- Always count your target.
@@ -252,7 +270,7 @@ do
                     local guid = UnitGUID( unit )
         
                     if guid and counted[ guid ] == nil then
-                        if UnitExists( unit ) and not UnitIsDead( unit ) and UnitCanAttack( "player", unit ) and UnitHealth( unit ) > 1 and UnitInPhase( unit ) and ( UnitIsPVP( "player" ) or not UnitIsPlayer( unit ) ) then
+                        if UnitExists( unit ) and not UnitIsDead( unit ) and UnitCanAttack( "player", unit ) and UnitInPhase( unit ) and UnitHealth( unit ) > 1 and ( UnitIsPVP( "player" ) or not UnitIsPlayer( unit ) ) then
                             local npcid = guid:match( "(%d+)-%x-$" )
                             local excluded = enemyExclusions[ npcid ]
 
@@ -269,7 +287,7 @@ do
                                 local _, range = RC:GetRange( unit )
                                 guidRanges[ guid ] = range
 
-                                excluded = range and range > spec.nameplateRange
+                                excluded = range and range > spec.nameplateRange or false
                             end
         
                             -- Always count your target.
@@ -341,7 +359,6 @@ end
 
 function ns.updateTarget(id, time, mine)
     if not Hekili.DB.profile.specs[ state.spec.id ].damage then return end
-
     if id == state.GUID then
         return
     end
@@ -995,6 +1012,8 @@ do
                 else
                     local health, healthMax = UnitHealth(unit), UnitHealthMax(unit)
                     health = health + UnitGetTotalAbsorbs(unit)
+                    healthMax = max( 1, healthMax )
+
                     UpdateEnemy(guid, health / healthMax, unit, now)
                 end
                 seen[guid] = true

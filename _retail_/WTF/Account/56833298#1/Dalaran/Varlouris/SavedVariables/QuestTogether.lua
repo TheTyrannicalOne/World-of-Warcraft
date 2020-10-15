@@ -1,33 +1,24 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[11940] = {
-			["title"] = "Drake Hunt",
-			["objectives"] = {
-				"0/1 Captured Nexus Drake", -- [1]
-			},
-		},
-		[13412] = {
-			["title"] = "Corastrasza",
+		[11704] = {
+			["title"] = "King Mrgl-Mrgl",
 			["objectives"] = {
 			},
 		},
-		[26944] = {
-			["title"] = "Exploring Gnomeregan",
+		[27353] = {
+			["title"] = "Blessings of the Elements",
 			["objectives"] = {
+				"0/1 Walden's Talisman", -- [1]
+				"0/1 Book of Lost Souls", -- [2]
+				"0/5 Ghostly Essence", -- [3]
 			},
 		},
-		[11931] = {
-			["title"] = "Cracking the Code",
+		[11798] = {
+			["title"] = "The Gearmaster",
 			["objectives"] = {
-				"1/3 Shimmering Rune", -- [1]
-				"1/1 Azure Codex", -- [2]
-			},
-		},
-		[12728] = {
-			["title"] = "Monitoring the Rift: Winterfin Cavern",
-			["objectives"] = {
-				"0/1 Winterfin Cavern Reading Taken", -- [1]
+				"1/1 The Gearmaster's Manual researched", -- [1]
+				"1/1 Mechazod's Head", -- [2]
 			},
 		},
 		[31891] = {
@@ -45,22 +36,17 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[12794] = {
-			["title"] = "The Magical Kingdom of Dalaran",
+		[11699] = {
+			["title"] = "I'm Stuck in this Damned Cage... But Not For Long!",
 			["objectives"] = {
-				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
+				"0/1 Engine-Core Crystal", -- [1]
+				"1/1 Magical Gyroscope", -- [2]
+				"1/1 Piloting Scourgestone", -- [3]
 			},
 		},
 		[29608] = {
 			["title"] = "Allies in Dalaran",
 			["objectives"] = {
-			},
-		},
-		[11943] = {
-			["title"] = "The Cell",
-			["objectives"] = {
-				"0/1  ", -- [1]
-				"0/1  ", -- [2]
 			},
 		},
 		[44989] = {
@@ -69,8 +55,16 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[11707] = {
-			["title"] = "Distress Call",
+		[11650] = {
+			["title"] = "Just a Few More Things...",
+			["objectives"] = {
+				"1/1 Crafty's Tools", -- [1]
+				"0/1 Overcharged Capacitor", -- [2]
+				"0/1 A Handful of Rocknar's Grit", -- [3]
+			},
+		},
+		[26944] = {
+			["title"] = "Exploring Gnomeregan",
 			["objectives"] = {
 			},
 		},
@@ -79,19 +73,25 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[27353] = {
-			["title"] = "Blessings of the Elements",
+		[11713] = {
+			["title"] = "Scouting the Sinkholes",
 			["objectives"] = {
-				"0/1 Walden's Talisman", -- [1]
-				"0/1 Book of Lost Souls", -- [2]
-				"0/5 Ghostly Essence", -- [3]
+				"1/1 Mark Location of South Sinkhole", -- [1]
+				"1/1 Mark Location of Northeast Sinkhole", -- [2]
+				"1/1 Mark Location of Northwest Sinkhole", -- [3]
+			},
+		},
+		[12794] = {
+			["title"] = "The Magical Kingdom of Dalaran",
+			["objectives"] = {
+				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

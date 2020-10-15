@@ -4,30 +4,9 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/skada toggle", -- [1]
+		"/omen toggle", -- [2]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"Never trust a burb lol", -- [1]
-			"Natin-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Natin-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1578, -- [11]
-			"Player-3683-0BCEF7BC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Natin|r",
-			[51] = 1602480688,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
 		{
 			"elders keep the game alive", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -49,7 +28,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480692,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
+		}, -- [1]
 		{
 			"true", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -71,7 +50,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1602480696,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [2]
 		{
 			"Whats a burb? Is that like an ostrich?", -- [1]
 			"Eishtar-Dalaran", -- [2]
@@ -93,7 +72,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Eishtar|r",
 			[51] = 1602480702,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [3]
 		{
 			"I mean I suppose that could go for adults too but mostly kids?? lol", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -115,7 +94,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480703,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [4]
 		{
 			"they waste thousands of dallors", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -137,7 +116,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [5]
 		{
 			"Biden and Kamala. :D ", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -159,7 +138,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480715,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [6]
 		{
 			"BAMala", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -181,7 +160,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480720,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [7]
 		{
 			"noty", -- [1]
 			"Synthëtíc-Dalaran", -- [2]
@@ -203,7 +182,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Synthëtíc|r",
 			[51] = 1602480725,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [8]
 		{
 			"I'll not only help an elder, I'll build their computer for them, for the small price of a six pack", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -225,7 +204,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480726,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [9]
 		{
 			"Lol whoops, burp. English D:", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -247,7 +226,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480731,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [10]
 		{
 			"good news is 4 more years", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -269,7 +248,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1602480735,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [11]
 		{
 			"i have  respect for you boomers", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -291,7 +270,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480737,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [12]
 		{
 			"I don't respect the boomers", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -313,7 +292,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480746,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [13]
 		{
 			"I aint playing this game to hear about the real world. Politics out of WoW 2020", -- [1]
 			"Eishtar-Dalaran", -- [2]
@@ -335,7 +314,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Eishtar|r",
 			[51] = 1602480749,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [14]
 		{
 			"Only the elder ones that are almost dead :D", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -357,7 +336,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480756,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [15]
 		{
 			"Zuxian is in denial.", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -379,7 +358,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480767,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [16]
 		{
 			"except for the pedo", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -401,7 +380,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480767,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [17]
 		{
 			"I cannot tell you how many times we thought that one of us said oh yeah the kid just needs to burp and surprise, vomit", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -423,7 +402,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480772,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [18]
 		{
 			"He's ready to rock until he dies.", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -445,7 +424,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [19]
 		{
 			"LOL you guys realize that a lot of grandparents now are GenX - right ?", -- [1]
 			"Tappacard-Dalaran", -- [2]
@@ -467,7 +446,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tappacard|r",
 			[51] = 1602480783,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [20]
 		{
 			"Selling Mythic+11-15 get all loots tradable weekly chest100% Corruption gear without trinket,mythicl/heroic Ny'alotha1-12,(full 445/460gear),also do Mechagon for mount+jaina mount,starting now PST", -- [1]
 			"Melmilleia-Dalaran", -- [2]
@@ -489,7 +468,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMelmilleia|r",
 			[51] = 1602480783,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [21]
 		{
 			"ouch", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -511,7 +490,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1602480789,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [22]
 		{
 			"Sorry for that shit sentance lol", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -533,7 +512,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480790,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [23]
 		{
 			"Ok boomer", -- [1]
 			"Zuxian-Dalaran", -- [2]
@@ -555,7 +534,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZuxian|r",
 			[51] = 1602480797,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [24]
 		{
 			"lmnao", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -577,7 +556,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480802,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [25]
 		{
 			"here comes the boom", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -599,7 +578,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1602480809,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [26]
 		{
 			"i had to call the police on some pedo hitting on my little cousin had his dumbass arrested", -- [1]
 			"Sageraidis-Dalaran", -- [2]
@@ -621,7 +600,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sageraidis|r",
 			[51] = 1602480813,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [27]
 		{
 			"? who me boomer?", -- [1]
 			"Natin-Dalaran", -- [2]
@@ -643,7 +622,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Natin|r",
 			[51] = 1602480816,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [28]
 		{
 			"Zuxian, never change. You're ok in my book.", -- [1]
 			"Molikroth-Dalaran", -- [2]
@@ -665,7 +644,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Molikroth|r",
 			[51] = 1602480817,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [29]
 		{
 			"powerleveling 110-120 - last day it is available before pre-patch breaks it!  PST", -- [1]
 			"Grakusgg-Dalaran", -- [2]
@@ -687,7 +666,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Grakusgg|r",
 			[51] = 1602512156,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [30]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -709,7 +688,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602559647,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [31]
 		{
 			"why are people dicks", -- [1]
 			"Eoran-Kel'Thuzad", -- [2]
@@ -731,7 +710,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Eoran-Kel'Thuzad|r",
 			[51] = 1602559671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [32]
 		{
 			"i dont get the fun in this", -- [1]
 			"Eoran-Kel'Thuzad", -- [2]
@@ -753,7 +732,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Eoran-Kel'Thuzad|r",
 			[51] = 1602559682,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [33]
 		{
 			"cause they have nothing better to do LOL", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -775,7 +754,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602559684,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [34]
 		{
 			"literally nothing", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -797,7 +776,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602559692,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [35]
 		{
 			"hung like chipmunks", -- [1]
 			"Wightgirl-Kel'Thuzad", -- [2]
@@ -819,7 +798,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Wightgirl-Kel'Thuzad|r",
 			[51] = 1602559697,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [36]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -841,7 +820,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602559707,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [37]
 		{
 			"dont go to keep", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -863,7 +842,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602559744,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [38]
 		{
 			"theres 2 120s n I cant 1v2 them", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -885,7 +864,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602559763,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [39]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -907,7 +886,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602559777,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [40]
 		{
 			"and dh has |cff1eff00|Hitem:163604::::::::120:72::11::::|h[Net-o-Matic 5000]|h|r", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -929,7 +908,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602559792,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [41]
 		{
 			"|cffffff00Valiant Rest is under attack!|r", -- [1]
 			"", -- [2]
@@ -951,7 +930,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602559793,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [42]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -973,7 +952,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602559845,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [43]
 		{
 			"o and thers a 3rd hes a hunter cause you know back up for your back up cause the big bad 70s puta fight", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -995,7 +974,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602559897,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [44]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1017,7 +996,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602559906,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [45]
 		{
 			"|cffffff00Valiant Rest is under attack!|r", -- [1]
 			"", -- [2]
@@ -1039,7 +1018,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602559940,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [46]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1061,7 +1040,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602559967,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [47]
 		{
 			"and a 4th hes a pally", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1083,7 +1062,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602559977,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [48]
 		{
 			"|cffffff00Valiant Rest is under attack!|r", -- [1]
 			"", -- [2]
@@ -1105,7 +1084,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560065,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [49]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1127,7 +1106,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560113,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"wiping us out", -- [1]
 			"Ethot-Gnomeregan", -- [2]
@@ -1149,7 +1128,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeEthot-Gnomeregan|r",
 			[51] = 1602560178,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1171,7 +1150,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560181,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1193,7 +1172,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560241,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"|cffffff00Valiant Rest is under attack!|r", -- [1]
 			"", -- [2]
@@ -1215,7 +1194,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560246,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [54]
 		{
 			"Well that was obnoxious", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -1237,7 +1216,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1602560254,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [55]
 		{
 			"He still there?", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -1259,7 +1238,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1602560259,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [56]
 		{
 			"Oh there's also a warrior on the roof of the inn", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -1281,7 +1260,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1602560293,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [57]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1303,7 +1282,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560301,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [58]
 		{
 			"theres like 4 of em", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1325,7 +1304,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602560308,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [59]
 		{
 			"|cffffff00Valiant Rest is under attack!|r", -- [1]
 			"", -- [2]
@@ -1347,7 +1326,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560315,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [60]
 		{
 			"Yeah fuck all that", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -1369,7 +1348,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1602560319,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [61]
 		{
 			"They will die", -- [1]
 			"Chimimage-Kel'Thuzad", -- [2]
@@ -1391,7 +1370,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
 			[51] = 1602560323,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [62]
 		{
 			"They're max lvl", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -1413,7 +1392,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1602560333,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [63]
 		{
 			"with my arcane mage", -- [1]
 			"Chimimage-Kel'Thuzad", -- [2]
@@ -1435,7 +1414,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
 			[51] = 1602560336,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [64]
 		{
 			"we need an adult", -- [1]
 			"Oronaar-Stormrage", -- [2]
@@ -1457,7 +1436,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOronaar-Stormrage|r",
 			[51] = 1602560336,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [65]
 		{
 			"I a 120 am not enuff need like 2 more atleast", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1479,7 +1458,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602560352,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [66]
 		{
 			"cause they 2v1", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1501,7 +1480,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602560357,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [67]
 		{
 			"Yeah", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -1523,7 +1502,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1602560363,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [68]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1545,7 +1524,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560368,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [69]
 		{
 			"Get on the boat with flying mount and stay hihg", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -1567,7 +1546,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1602560431,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [70]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1589,7 +1568,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560435,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [71]
 		{
 			"You'll be able to bail", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -1611,7 +1590,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1602560436,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [72]
 		{
 			"off to outlands", -- [1]
 			"Bumdk-Kel'Thuzad", -- [2]
@@ -1633,7 +1612,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Bumdk-Kel'Thuzad|r",
 			[51] = 1602560484,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [73]
 		{
 			"|cffffff00Valiant Rest is under attack!|r", -- [1]
 			"", -- [2]
@@ -1655,7 +1634,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560495,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [74]
 		{
 			"I juust logged out my rogue to go to it to them", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1677,7 +1656,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602560504,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [75]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1699,7 +1678,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560505,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [76]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1721,7 +1700,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560565,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [77]
 		{
 			"killed the pally on his way back to org and a shammy", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1743,7 +1722,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602560606,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [78]
 		{
 			"|cffffff00Valiance Keep is under attack!|r", -- [1]
 			"", -- [2]
@@ -1765,7 +1744,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560629,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [79]
 		{
 			"|cffffff00Valiant Rest is under attack!|r", -- [1]
 			"", -- [2]
@@ -1787,7 +1766,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1602560661,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [80]
 		{
 			"did they stop attacking the keep?", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1809,7 +1788,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602561040,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"havent seen em come back", -- [1]
 			"Thawne-DemonSoul", -- [2]
@@ -1831,7 +1810,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cThawne-DemonSoul|r",
 			[51] = 1602561053,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [82]
 		{
 			"seems so", -- [1]
 			"Thawne-DemonSoul", -- [2]
@@ -1853,7 +1832,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cThawne-DemonSoul|r",
 			[51] = 1602561057,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [83]
 		{
 			"if they do it will be an army of pist off horde :/", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1875,7 +1854,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602561082,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [84]
 		{
 			"yeah, pissed because they cant proceed with their no-life'ing", -- [1]
 			"Thawne-DemonSoul", -- [2]
@@ -1897,7 +1876,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cThawne-DemonSoul|r",
 			[51] = 1602561112,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [85]
 		{
 			"i mean im doing the same to their low levels", -- [1]
 			"Chimimage-Kel'Thuzad", -- [2]
@@ -1919,7 +1898,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
 			[51] = 1602561130,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [86]
 		{
 			"welp", -- [1]
 			"Thawne-DemonSoul", -- [2]
@@ -1941,7 +1920,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cThawne-DemonSoul|r",
 			[51] = 1602561149,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [87]
 		{
 			"Im camping their airship teehee...", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -1963,7 +1942,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602561152,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [88]
 		{
 			"you can still twink toons to lvl 48 just for ganking or lvl sink with lowlvls on a max and just gank away", -- [1]
 			"Cronicsweets-Sargeras", -- [2]
@@ -1985,7 +1964,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Cronicsweets-Sargeras|r",
 			[51] = 1602561157,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [89]
 		{
 			"i did that with a level 70 sub rogue", -- [1]
 			"Chimimage-Kel'Thuzad", -- [2]
@@ -2007,7 +1986,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
 			[51] = 1602561172,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [90]
 		{
 			"48?", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -2029,7 +2008,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602561183,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [91]
 		{
 			"after lvl 50 you cant gank lowbez", -- [1]
 			"Cronicsweets-Sargeras", -- [2]
@@ -2051,7 +2030,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Cronicsweets-Sargeras|r",
 			[51] = 1602561193,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [92]
 		{
 			"how so", -- [1]
 			"Chimimage-Kel'Thuzad", -- [2]
@@ -2073,7 +2052,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
 			[51] = 1602561207,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [93]
 		{
 			"it kicks you out of croma time", -- [1]
 			"Cronicsweets-Sargeras", -- [2]
@@ -2095,7 +2074,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Cronicsweets-Sargeras|r",
 			[51] = 1602561232,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [94]
 		{
 			"HELLO EVERYONE, THIS IS MY ZONE NOW. SLAUGHTER HORDE OR GET THE FUCK OUT THANKS", -- [1]
 			"Holybelf-Wildhammer", -- [2]
@@ -2117,7 +2096,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Holybelf-Wildhammer|r",
 			[51] = 1602561237,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [95]
 		{
 			"this isnt pre patch yet lmao", -- [1]
 			"Chimimage-Kel'Thuzad", -- [2]
@@ -2139,7 +2118,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Chimimage-Kel'Thuzad|r",
 			[51] = 1602561248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [96]
 		{
 			"^^^^ law of the land", -- [1]
 			"Logi-Alexstrasza", -- [2]
@@ -2161,7 +2140,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogi-Alexstrasza|r",
 			[51] = 1602561251,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [97]
 		{
 			"|cffffff00Scalding Pools is under attack!|r", -- [1]
 			"", -- [2]
@@ -2182,6 +2161,28 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "",
 			[51] = 1602561782,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"|cffffff00D.E.H.T.A. Encampment is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Borean Tundra", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Borean Tundra", -- [9]
+			0, -- [10]
+			208, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1602594113,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

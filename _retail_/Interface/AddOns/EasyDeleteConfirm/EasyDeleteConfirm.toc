@@ -1,4 +1,4 @@
-## Interface: 80200
+## Interface: 90001
 ## Author: Kesava
 ## Title: EasyDeleteConfirm
 ## Notes: No longer will you type DELETE.

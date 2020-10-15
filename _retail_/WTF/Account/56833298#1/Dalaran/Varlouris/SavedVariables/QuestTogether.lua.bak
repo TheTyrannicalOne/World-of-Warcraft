@@ -1,8 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[26944] = {
-			["title"] = "Exploring Gnomeregan",
+		[11699] = {
+			["title"] = "I'm Stuck in this Damned Cage... But Not For Long!",
+			["objectives"] = {
+				"0/1 Engine-Core Crystal", -- [1]
+				"1/1 Magical Gyroscope", -- [2]
+				"1/1 Piloting Scourgestone", -- [3]
+			},
+		},
+		[11704] = {
+			["title"] = "King Mrgl-Mrgl",
 			["objectives"] = {
 			},
 		},
@@ -14,15 +22,26 @@ QuestTogether = {
 				"0/5 Ghostly Essence", -- [3]
 			},
 		},
-		[11575] = {
-			["title"] = "Nick of Time",
+		[11798] = {
+			["title"] = "The Gearmaster",
 			["objectives"] = {
+				"1/1 The Gearmaster's Manual researched", -- [1]
+				"1/1 Mechazod's Head", -- [2]
 			},
 		},
-		[11872] = {
-			["title"] = "The Nefarious Clam Master...",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/1 Clam Master K slain", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[12117] = {
+			["title"] = "Travel to Moa'ki Harbor",
+			["objectives"] = {
 			},
 		},
 		[12794] = {
@@ -42,32 +61,37 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[11707] = {
-			["title"] = "Distress Call",
+		[26944] = {
+			["title"] = "Exploring Gnomeregan",
 			["objectives"] = {
 			},
 		},
-		[11878] = {
-			["title"] = "Khu'nok Will Know",
+		[12086] = {
+			["title"] = "The Son of Karkut",
 			["objectives"] = {
-				"Orphaned Mammoth Calf Delivered to Khu'nok", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[11713] = {
+			["title"] = "Scouting the Sinkholes",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"1/1 Mark Location of South Sinkhole", -- [1]
+				"1/1 Mark Location of Northeast Sinkhole", -- [2]
+				"1/1 Mark Location of Northwest Sinkhole", -- [3]
+			},
+		},
+		[11650] = {
+			["title"] = "Just a Few More Things...",
+			["objectives"] = {
+				"1/1 Crafty's Tools", -- [1]
+				"0/1 Overcharged Capacitor", -- [2]
+				"0/1 A Handful of Rocknar's Grit", -- [3]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

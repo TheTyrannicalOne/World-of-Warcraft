@@ -1,10 +1,10 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: Ackis Recipe List: Cooking
 ## Notes: Cooking data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 8.3.0.1
-## X-Revision: 81640a9
-## X-Date: 2020-01-14T22:49:30Z
+## Version: 9.0.1
+## X-Revision: b7213e7
+## X-Date: 2020-10-13T17:50:46Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

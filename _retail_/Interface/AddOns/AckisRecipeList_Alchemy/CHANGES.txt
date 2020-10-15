@@ -1,18 +1,18 @@
-tag 29ede4e093d6de8c142b75a3059f551ffb5964d0 8.3.0.1
+tag 2df85bad071dd2ad0febec9a3ac1c23a4c919dbb 9.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Jan 14 18:07:49 2020 -0500
+Date:	Tue Oct 13 14:00:56 2020 -0400
 
-8.3.0 update
+9.0. update - includes scans of older vendors
 
-commit 47dd95a1bf5bf68f79a518b47c4e2b982835bde1
+commit 8ff83a3d21b64207358b83e8c43c77025e9258d8
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Jan 14 17:34:41 2020 -0500
+Date:   Tue Oct 13 13:49:04 2020 -0400
 
-    8.3 update
+    9.0 update
 
-commit 47dd95a1bf5bf68f79a518b47c4e2b982835bde1
+commit 359148d680d014ab53b392eefa7d90fc429ccf09
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Jan 14 17:34:41 2020 -0500
+Date:   Sun Jul 5 15:02:43 2020 -0400
 
-    8.3 update
+    Rescan of Alchemy TBC
 

@@ -5,3 +5,5 @@ NarcissusDB_PC = {
 	["EquipmentSetDB"] = {
 	},
 }
+NarciStatisticsDB_PC = {
+}

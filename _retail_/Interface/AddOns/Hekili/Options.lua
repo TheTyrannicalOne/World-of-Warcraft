@@ -279,15 +279,13 @@ local displayTemplate = {
     primaryWidth = 50,
     primaryHeight = 50,
 
+    elvuiCooldown = false,
+
     keepAspectRatio = true,
     zoom = 30,
 
-    frameStrata = "MEDIUM",
+    frameStrata = "LOW",
     frameLevel = 10,
-
-    --[[ font = ElvUI and 'PT Sans Narrow' or 'Arial Narrow',
-    fontSize = 12,
-    fontStyle = "OUTLINE", ]]
 
     queue = {
         anchor = 'RIGHT',
@@ -302,6 +300,8 @@ local displayTemplate = {
         offsetX = 5,
         offsetY = 0,
         spacing = 5,
+
+        elvuiCooldown = false,
 
         --[[ font = ElvUI and 'PT Sans Narrow' or 'Arial Narrow',
         fontSize = 12,
@@ -340,6 +340,7 @@ local displayTemplate = {
 
     border = {
         enabled = true,
+        width = 1,
         coloring = 'custom',
         color = { 0, 0, 0, 1 },
     },
@@ -406,6 +407,7 @@ local displayTemplate = {
         type = "__NA",
         fade = false,
         extend = true,
+        elvuiCooldowns = false,
 
         font = ElvUI and 'PT Sans Narrow' or 'Arial Narrow',
         fontSize = 12,
@@ -428,6 +430,12 @@ local displayTemplate = {
 
         lowercase = false,
 
+        queuedFont = ElvUI and "PT Sans Narrow" or "Arial Narrow",
+        queuedFontSize = 12,
+        queuedFontStyle = "OUTLINE",
+
+        queuedLowercase = false,
+
         anchor = "TOPRIGHT",
         x = 1,
         y = -1,
@@ -436,6 +444,7 @@ local displayTemplate = {
         cPortZoom = 0.6,
 
         color = { 1, 1, 1, 1 },
+        queuedColor = { 1, 1, 1, 1 },
     },
 
 }
@@ -588,7 +597,7 @@ function Hekili:GetDefaults()
                 }
             },
 
-            specs = {
+            specs = {                              
                 ['**'] = {
                     abilities = {
                         ['**'] = {
@@ -645,10 +654,14 @@ function Hekili:GetDefaults()
 
                     name = "Primary",
 
-                    x = -82,
+                    relativeTo = "SCREEN",
+                    displayPoint = "TOP",
+                    anchorPoint = "BOTTOM",
+
+                    x = -55,
                     y = -225,
 
-                    numIcons = 4,
+                    numIcons = 3,
                     order = 1,
 
                     flash = {
@@ -667,10 +680,10 @@ function Hekili:GetDefaults()
 
                     name = "AOE",
 
-                    x = -82,
+                    x = -55,
                     y = -170,
 
-                    numIcons = 4,
+                    numIcons = 3,
                     order = 2,
 
                     flash = { 
@@ -690,7 +703,7 @@ function Hekili:GetDefaults()
                     name = "Defensives",
                     filter = 'defensives',
 
-                    x = -192,
+                    x = -165,
                     y = -225,
 
                     numIcons = 1,
@@ -713,7 +726,7 @@ function Hekili:GetDefaults()
                     name = "Interrupts",
                     filter = 'interrupts',
 
-                    x = -137,
+                    x = -110,
                     y = -225,
 
                     numIcons = 1,
@@ -835,11 +848,11 @@ do
         local conf = self.DB.profile.displays[ display ]
         if category ~= option and category ~= 'main' then conf = conf[ category ] end
 
-        if option == 'color' then
-            conf.color = { val, v2, v3, v4 }
+        if option == 'color' or option == 'queuedColor' then
+            conf[ option ] = { val, v2, v3, v4 }
             set = true
         elseif option == 'frameStrata' then
-            conf.frameStrata = frameStratas[ val ] or "MEDIUM"
+            conf.frameStrata = frameStratas[ val ] or "LOW"
             set = true
         end
 
@@ -997,6 +1010,17 @@ do
     end
 
 
+    local function setWidth( info, field, condition, if_true, if_false )
+        local tab = getOptionTable( info )
+
+        if condition then
+            tab.args[ field ].width = if_true or "full"
+        else
+            tab.args[ field ].width = if_false or "full"
+        end
+    end
+
+
     local function rangeIcon( info )
         local tab = getOptionTable( info )
 
@@ -1045,7 +1069,7 @@ do
                     if data.builtIn then return '|cFF00B4FF' .. fancyName .. '|r' end
                     return fancyName
                 end,
-                childGroups = "select",
+                childGroups = "tab",
                 desc = data.desc,
                 order = 100 + pos,
                 args = {
@@ -1062,6 +1086,15 @@ do
                                 desc = "If disabled, this display will not appear under any circumstances.",
                                 order = 0.5,
                                 hidden = function () return name == "Primary" or name == "AOE" or name == "Defensives" or name == "Interrupts" end
+                            },
+
+                            elvuiCooldown = {
+                                type = "toggle",
+                                name = NewFeature .. " Apply ElvUI Cooldown Style",
+                                desc = "If ElvUI is installed, you can apply the ElvUI cooldown style to your queued icons.\n\nDisabling this setting requires you to reload your UI (|cFFFFD100/reload|r).",
+                                width = "full",
+                                order = 0.51,
+                                hidden = function () return _G["ElvUI"] == nil end,
                             },
 
                             numIcons = {
@@ -1092,6 +1125,46 @@ do
                                 order = 10,
 
                                 args = {
+                                    relativeTo = {
+                                        type = "select",
+                                        name = "Anchored To",
+                                        values = {
+                                            SCREEN = "Screen",
+                                            PERSONAL = "Personal Resource Display",
+                                            CUSTOM = "Custom"
+                                        },
+                                        order = 1,
+                                        width = 1.49,
+                                    },
+
+                                    customFrame = {
+                                        type = "input",
+                                        name = "Custom Frame",
+                                        desc = "Specify the name of the frame to which this display will be anchored.\n" ..
+                                                "If the frame does not exist, the display will not be shown.",
+                                        order = 1.1,
+                                        width = 1.49,
+                                        hidden = function() return data.relativeTo ~= "CUSTOM" end,
+                                    },
+
+
+                                    setParent = {
+                                        type = "toggle",
+                                        name = "Set Parent to Anchor",
+                                        desc = "If checked, the display will be shown/hidden when the anchor is shown/hidden.",
+                                        order = 3.9,
+                                        width = 1.49,
+                                        hidden = function() return data.relativeTo == "SCREEN" end,
+                                    },
+
+
+                                    preXY = {
+                                        type = "description",
+                                        name = " ",
+                                        width = "full",
+                                        order = 97
+                                    },
+
                                     x = {
                                         type = "range",
                                         name = "X",
@@ -1101,8 +1174,8 @@ do
                                         max = 512,
                                         step = 1,
 
-                                        order = 1,
-                                        width = "full",
+                                        order = 98,
+                                        width = 1.49,
                                     },
 
                                     y = {
@@ -1114,8 +1187,8 @@ do
                                         max = 384,
                                         step = 1,
 
-                                        order = 2,
-                                        width = "full",
+                                        order = 99,
+                                        width = 1.49,
                                     },
                                 },
                             },
@@ -1134,7 +1207,7 @@ do
                                         max = 500,
                                         step = 1,
 
-                                        width = "full",
+                                        width = 1.49,
                                         order = 1,
                                     },
 
@@ -1146,7 +1219,7 @@ do
                                         max = 500,
                                         step = 1,
 
-                                        width = "full",
+                                        width = 1.49,
                                         order = 2,                                            
                                     },
                                 },
@@ -1199,7 +1272,7 @@ do
                                 max = 100,
                                 step = 1,
 
-                                width = "full",
+                                width = 1.49,
                                 order = 20,
                             },
 
@@ -1211,7 +1284,7 @@ do
                                 disabled = function( info, val )
                                     return not ( data.primaryHeight ~= data.primaryWidth or ( data.numIcons > 1 and data.queue.height ~= data.queue.width ) )
                                 end,
-                                width = "full",
+                                width = 1.49,
                                 order = 25,
                             },
                         },
@@ -1227,6 +1300,15 @@ do
                         end,
 
                         args = {
+                            elvuiCooldown = {
+                                type = "toggle",
+                                name = NewFeature .. " Apply ElvUI Cooldown Style",
+                                desc = "If ElvUI is installed, you can apply the ElvUI cooldown style to your queued icons.\n\nDisabling this setting requires you to reload your UI (|cFFFFD100/reload|r).",
+                                width = "full",
+                                order = 0.5,
+                                hidden = function () return _G["ElvUI"] == nil end,
+                            },
+
                             anchor = {
                                 type = 'select',
                                 name = 'Anchor To',
@@ -1520,7 +1602,7 @@ do
 
                     keybindings = {
                         type = "group",
-                        name = NewFeature .. "Keybinds",
+                        name = "Keybinds",
                         desc = "Options for keybinding text on displayed icons.",
                         order = 7,
 
@@ -1582,9 +1664,74 @@ do
                             textStyle = {
                                 type = "group",
                                 inline = true,
-                                name = "Text",
+                                name = "Text Style",
                                 order = 5,
                                 args = fontElements,
+                            },
+
+                            lowercase = {
+                                type = "toggle",
+                                name = "Use Lowercase",
+                                order = 5.1,
+                                width = "full",
+                            },
+
+                            separateQueueStyle = {
+                                type = "toggle",
+                                name = "Use Different Settings for Queue",
+                                order = 6,
+                                width = "full",
+                            },
+
+                            queuedTextStyle = {
+                                type = "group",
+                                inline = true,
+                                name = "Queued Text Style",
+                                order = 7,
+                                hidden = function () return not data.keybindings.separateQueueStyle end,
+                                args = {
+                                    queuedFont = {
+                                        type = "select",
+                                        name = "Font",
+                                        order = 1,
+                                        width = 1.5,
+                                        dialogControl = 'LSM30_Font',
+                                        values = LSM:HashTable("font"),
+                                    },
+                            
+                                    queuedFontSize = {
+                                        type = "range",
+                                        name = "Size",
+                                        order = 2,
+                                        min = 8,
+                                        max = 64,
+                                        step = 1,
+                                        width = 1.5
+                                    },
+                            
+                                    queuedFontStyle = {
+                                        type = "select",
+                                        name = "Style",
+                                        order = 3,
+                                        values = fontStyles,
+                                        width = 1.5
+                                    },
+                            
+                                    queuedColor = {
+                                        type = "color",
+                                        name = "Color",
+                                        order = 4, 
+                                        width = 1.5           
+                                    }
+                                },
+                            },
+
+                            queuedLowercase = {
+                                type = "toggle",
+                                name = "Use Lowercase in Queue",
+                                order = 7.1,
+                                width = "full",
+                                hidden = function () return not data.keybindings.separateQueueStyle end,
                             },
 
                             cPort = {
@@ -1620,7 +1767,7 @@ do
 
                     border = {
                         type = "group",
-                        name = NewFeature .. "Border",
+                        name = "Border",
                         desc = "Enable/disable or set the color for icon borders.\n\n" ..
                             "You may want to disable this if you use Masque or other tools to skin your Hekili icons.",
                         order = 4,
@@ -1639,6 +1786,17 @@ do
                                 name = "Border Inside",
                                 desc = "If enabled, when borders are enabled, the button's border will fit inside the button (instead of around it).",
                                 order = 2,
+                                width = "full",
+                            },
+
+                            thickness = {
+                                type = "range",
+                                name = NewFeature .. " Border Thickness",
+                                desc = "Determines the thickness (width) of the border.  Default is 1.",
+                                softMin = 1,
+                                softMax = 20,
+                                step = 1,
+                                order = 2.5,
                                 width = "full",
                             },
 
@@ -1702,7 +1860,7 @@ do
 
                     glow = {
                         type = "group",
-                        name = NewFeature .. "Glows",
+                        name = "Glows",
                         desc = "Preferences for glows or overlays.",
                         order = 6,
                         args = {
@@ -3390,7 +3548,7 @@ do
         elseif option == "potion" and state.spec[ info[1] ] then class.potion = val
         elseif option == "enabled" then ns.StartConfiguration() end
 
-        Hekili:UpdateDamageDetectionForCLEU()        
+        Hekili:UpdateDamageDetectionForCLEU()
     end
 
 
@@ -3478,9 +3636,16 @@ do
 
         for k, v in orderedPairs( abilities ) do
             local ability = class.abilities[ v ]
+            local useName = ability.name
+
+            if not useName then
+                Hekili:Error( "No name available for %s (id:%d) in EmbedAbilityOptions.", ability.key or "no_id", ability.id or 0 )
+                useName = ability.key or ability.id or "???"
+            end
+
             local option = {
                 type = "group",
-                name = function () return ability.name end,
+                name = function () return ( state:IsDisabled( v, true ) and "|cFFFF0000" or "" ) .. useName .. "|r" end,
                 order = 1,
                 set = "SetAbilityOption",
                 get = "GetAbilityOption",
@@ -3529,7 +3694,7 @@ do
                             toggles.none = "None"
                             toggles.default = "Default" .. ( class.abilities[ v ].toggle and ( " |cffffd100(" .. class.abilities[ v ].toggle .. ")|r" ) or " |cffffd100(none)|r" )
                             toggles.defensives = "Defensives"
-                            toggles.essences = "Azerite Essences"
+                            toggles.essences = "Covenants"
                             toggles.cooldowns = "Cooldowns"
                             toggles.interrupts = "Interrupts"
                             toggles.potions = "Potions"
@@ -3600,7 +3765,7 @@ do
             local ability = class.abilities[ v ]
             local option = {
                 type = "group",
-                name = function () return ability.name end,
+                name = function () return ( state:IsDisabled( v, true ) and "|cFFFF0000" or "" ) .. ability.name .. "|r" end,
                 order = 1,
                 set = "SetItemOption",
                 get = "GetItemOption",
@@ -3649,7 +3814,7 @@ do
                             toggles.none = "None"
                             toggles.default = "Default" .. ( class.abilities[ v ].toggle and ( " |cffffd100(" .. class.abilities[ v ].toggle .. ")|r" ) or " |cffffd100(none)|r" )
                             toggles.defensives = "Defensives"
-                            toggles.essences = "Azerite Essences"
+                            toggles.essences = "Covenants"
                             toggles.cooldowns = "Cooldowns"
                             toggles.interrupts = "Interrupts"
                             toggles.potions = "Potions"
@@ -3962,7 +4127,7 @@ do
         
 
         options.args.toggles.plugins[ section ] = db
-    end   
+    end
 
 
     -- Options table constructors.
@@ -4459,8 +4624,8 @@ do
                 end
 
                 -- Toggles
-                BuildToggleList( options, id, "cooldowns", "Cooldowns" )
-                BuildToggleList( options, id, "essences", "Azerite Essences" )
+                BuildToggleList( options, id, "cooldowns",  "Cooldowns" )
+                BuildToggleList( options, id, "essences",   "Covenants" )
                 BuildToggleList( options, id, "interrupts", "Utility / Interrupts" )
                 BuildToggleList( options, id, "defensives", "Defensives",   "The defensive toggle is generally intended for tanking specializations, " ..
                                                                             "as you may want to turn on/off recommendations for damage mitigation abilities " ..
@@ -4525,7 +4690,15 @@ do
     local function GetListEntry( pack )
         local entry = rawget( Hekili.DB.profile.packs, pack )
 
+        if rawget( entry.lists, packControl.listName ) == nil then
+            packControl.listName = "default"
+        end
+
         if entry then entry = entry.lists[ packControl.listName ] else return end
+
+        if rawget( entry, tonumber( packControl.actionID ) ) == nil then
+            packControl.actionID = "0001"
+        end
 
         local listPos = tonumber( packControl.actionID )
         if entry and listPos > 0 then entry = entry[ listPos ] else return end
@@ -4537,6 +4710,10 @@ do
     function Hekili:GetActionOption( info )
         local n = #info
         local pack, option = info[ 2 ], info[ n ]
+
+        if rawget( self.DB.profile.packs[ pack ].lists, packControl.listName ) == nil then
+            packControl.listName = "default"
+        end
 
         local actionID = tonumber( packControl.actionID )
         local data = self.DB.profile.packs[ pack ].lists[ packControl.listName ]
@@ -4623,6 +4800,10 @@ do
     function Hekili:GetPackOption( info )
         local n = #info
         local category, subcat, option = info[ 2 ], info[ 3 ], info[ n ]
+
+        if rawget( self.DB.profile.packs, category ) and rawget( self.DB.profile.packs[ category ].lists, packControl.listName ) == nil then
+            packControl.listName = "default"
+        end
 
         if option == "newPackSpec" and packControl[ option ] == "" then
             packControl[ option ] = GetCurrentSpec()
@@ -5248,7 +5429,7 @@ do
                                         Hekili.Options.args.packs.plugins.packages[ pack ] = nil
 
                                         -- Hekili:EmbedPackOptions()
-                                        ACD:SelectGroup( "Hekili", "packs", defPack )
+                                        ACD:SelectGroup( "Hekili", "packs" )
                                     end,                                    
                                     hidden = data.builtIn
                                 },
@@ -5480,6 +5661,7 @@ do
                                     -- imageCoords = GetAtlasCoords( "communities-icon-redx" ),
                                     imageHeight = 20,
                                     imageWidth = 20,
+                                    confirm = function() return "Delete this action list?" end,
                                     disabled = function () return packControl.listName == "default" or packControl.listName == "precombat" end,
                                     func = function ()
                                         local p = rawget( Hekili.DB.profile.packs, pack )
@@ -5703,7 +5885,7 @@ do
                                     end,
                                     disabled = function ()
                                         local p = rawget( Hekili.DB.profile.packs, pack )
-                                        return #p.lists[ packControl.listName ] < 2 
+                                        return not p.lists[ packControl.listName ] or #p.lists[ packControl.listName ] < 2 
                                     end,
                                     hidden = function () return packControl.makingNew end,
                                 },
@@ -5971,7 +6153,7 @@ do
                                                             for i, entry in ipairs( alist ) do
                                                                 if name ~= list or i ~= action then
                                                                     if entry.action == "variable" and entry.var_name then
-                                                                        state:RegisterVariable( entry.var_name, pack .. ":" .. name .. ":" .. i )
+                                                                        state:RegisterVariable( entry.var_name, pack .. ":" .. name .. ":" .. i, name )
                                                                     end
                                                                 end
                                                             end
@@ -6011,7 +6193,7 @@ do
                                                             for i, entry in ipairs( alist ) do
                                                                 if name ~= list or i ~= action then
                                                                     if entry.action == "variable" and entry.var_name then
-                                                                        state:RegisterVariable( entry.var_name, pack .. ":" .. name .. ":" .. i )
+                                                                        state:RegisterVariable( entry.var_name, pack .. ":" .. name .. ":" .. i, name )
                                                                     end
                                                                 end
                                                             end
@@ -6172,17 +6354,24 @@ do
                                                     args = {
                                                         use_off_gcd = {
                                                             type = "toggle",
-                                                            name = "Use Off Global Cooldown",
+                                                            name = "Use Off GCD",
                                                             desc = "If checked, this entry can be checked even if the global cooldown (GCD) is active.",
                                                             order = 1,
-                                                            width = 1.5,
+                                                            width = 0.99,
                                                         },
                                                         use_while_casting = {
                                                             type = "toggle",
                                                             name = "Use While Casting",
-                                                            desc = "If checked, this entry can be checked even if the global cooldown (GCD) is active.",
+                                                            desc = "If checked, this entry can be checked even if you are already casting or channeling.",
                                                             order = 2,
-                                                            width = 1.5
+                                                            width = 0.99
+                                                        },
+                                                        only_cwc = {
+                                                            type = "toggle",
+                                                            name = "During Channel",
+                                                            desc = "If checked, this entry can only be used if you are channeling another spell.",
+                                                            order = 3,
+                                                            width = 0.99
                                                         }
                                                     },
                                                     hidden = function ()
@@ -6559,22 +6748,22 @@ do
                     args = {
                         key = {
                             type = "keybinding",
-                            name = "Essences",
-                            desc = "Set a key to toggle Azerite Essence recommendations on/off.",
+                            name = "Covenants",
+                            desc = "Set a key to toggle Covenant recommendations on/off.",
                             order = 1,
                         },
 
                         value = {
                             type = "toggle",
-                            name = "Show Essences",
-                            desc = "If checked, abilities from Azerite Essences can be recommended.",
+                            name = "Show Covenants",
+                            desc = "If checked, abilities from Covenants can be recommended.",
                             order = 2,                            
                         },
 
                         override = {
                             type = "toggle",
                             name = "Cooldowns Override",
-                            desc = "If checked, when Cooldowns are enabled, the addon will also recommend Azerite Essences even if Show Essences is not checked.",
+                            desc = "If checked, when Cooldowns are enabled, the addon will also recommend Covenants even if Show Covenants is not checked.",
                             order = 3,
                         },
                     }
@@ -7055,14 +7244,12 @@ do
             end
 
             wipe( pvptalents )
-            for i = 1, 2 do
-                local row = C_SpecializationInfo.GetPvpTalentSlotInfo( i )
+            local row = C_SpecializationInfo.GetPvpTalentSlotInfo( 1 )
 
-                for i, tID in ipairs( row.availableTalentIDs ) do
-                    local _, name, _, _, _, sID = GetPvpTalentInfoByID( tID )
-                    name = key( name )
-                    insert( pvptalents, { name = name, talent = tID, spell = sID } )
-                end
+            for i, tID in ipairs( row.availableTalentIDs ) do
+                local _, name, _, _, _, sID = GetPvpTalentInfoByID( tID )
+                name = key( name )
+                insert( pvptalents, { name = name, talent = tID, spell = sID } )
             end
 
             local haste = UnitSpellHaste( "player" )
@@ -7071,7 +7258,7 @@ do
             for i = 1, GetNumSpellTabs() do
                 local tab, _, offset, n = GetSpellTabInfo( i )
 
-                if tab == spec then
+                if i == 2 or tab == spec then
                     for j = offset, offset + n do
                         local name, _, texture, castTime, minRange, maxRange, spellID = GetSpellInfo( j, "spell" )
 
@@ -7539,6 +7726,12 @@ function Hekili:GenerateProfile()
         end
     end
 
+    local covenants = { "kyrian", "necrolord", "night_fae", "venthyr" }
+    local covenant = "none"
+    for i, v in ipairs( covenants ) do
+        if state.covenant[ v ] then covenant = v; break end
+    end
+
     local traits
     for k, v in orderedPairs( s.azerite ) do
         if v.rank > 0 then
@@ -7559,7 +7752,7 @@ function Hekili:GenerateProfile()
             end
         end
     end
-    essences = format( "%s, %s", major or "none*", minors or "none" )
+    essences = format( "%s, %s", major or "[none]", minors or "none" )
 
     local sets
     for k, v in orderedPairs( class.gear ) do
@@ -7582,11 +7775,11 @@ function Hekili:GenerateProfile()
         end
     end
 
-    local corruptions
-    for k, v in orderedPairs( state.corruptions ) do
+    local legendaries
+    for k, v in orderedPairs( state.legendary ) do
         if k ~= "no_trait" and v.rank > 0 then
-            if corruptions then corruptions = format( "%s\n    %s = %d", corruptions, k, v.rank )
-            else corruptions = format( "%s = %d", k, v.rank ) end
+            if legendaries then legendaries = format( "%s\n    %s = %d", legendaries, k, v.rank )
+            else legendaries = format( "%s = %d", k, v.rank ) end
         end
     end
 
@@ -7617,11 +7810,12 @@ function Hekili:GenerateProfile()
         "class: %s\n" ..
         "spec: %s\n\n" ..
         "talents: %s\n\n" ..
+        "covenant: %s\n\n" ..
         "azerite: %s\n\n" ..
         "essences: %s\n\n" ..
         "sets/legendaries/artifacts: %s\n\n" ..
         "gear: %s\n\n" ..
-        "corruptions: %s\n\n" ..
+        "legendaries: %s\n\n" ..
         "itemIDs: %s\n\n" ..
         "settings: %s\n\n" ..
         "toggles: %s\n",
@@ -7630,11 +7824,12 @@ function Hekili:GenerateProfile()
         class.file or "NONE",
         spec or "none",
         talents or "none",
+        covenant or "none",
         traits or "none",
         essences or "none",
         sets or "none",
         gear or "none",
-        corruptions or "none",
+        legendaries or "none",
         items or "none",
         settings or "none",
         toggles or "none" )
@@ -7688,7 +7883,7 @@ function Hekili:GetOptions()
                             desc = {
                                 type = 'description',
                                 name = function ()
-                                    local output = "\n|cFF00CCFFTHANK YOU TO ALL PATRONS SUPPORTING THIS ADDON'S DEVELOPMENT!|r\n\n"
+                                    local output = "\n|cFF00CCFFTHANK YOU TO OUR SUPPORTERS!|r\n\n"
 
                                     for i, name in ipairs( ns.Patrons ) do
                                         if i == 1 then
@@ -8795,7 +8990,7 @@ local function Sanitize( segment, i, line, warnings )
         ["~"] = true,
         ["+"] = true,
         ["-"] = true,
-        ["%"] = true,
+        ["%%"] = true,
         ["*"] = true
     }
 
@@ -8860,6 +9055,21 @@ local function Sanitize( segment, i, line, warnings )
 
     local times = 0
 
+    i, times = i:gsub( "([^%%])[ ]*%%[ ]*([^%%])", "%1 / %2" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted SimC syntax % to Lua division operator (/) (" .. times .. "x)." )
+    end
+    
+    i, times = i:gsub( "%%%%", "%%" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted SimC syntax %% to Lua modulus operator (%) (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "covenant%.([%w_]+)%.enabled", "covenant.%1" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'covenant.X.enabled' to 'covenant.X' (" .. times .. "x)." )
+    end
+
     i, times = i:gsub( "pet%.[%w_]+%.([%w_]+)%.", "%1." )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'pet.X.Y...' to 'Y...' (" .. times .. "x)." )
@@ -8895,6 +9105,16 @@ local function Sanitize( segment, i, line, warnings )
     i, times = i:gsub( "min:[a-z0-9_%.]+(,?$?)", "%1" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Removed min:X check (not available in emulation) (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "([%|%&]position_back)", "" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Removed position_back check (not available in emulation) (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "(position_back[%|%&]?)", "" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Removed position_back check (not available in emulation) (" .. times .. "x)." )
     end
 
     i, times = i:gsub( "max:[a-z0-9_%.]+(,?$?)", "%1" )
@@ -9274,27 +9494,25 @@ function Hekili:TogglePause( ... )
 end
 
 
+-- Key Bindings
 function Hekili:MakeSnapshot( dispName )
-
     self.ActiveDebug = true
-
     local success = false
 
     for i, display in pairs( ns.UI.Displays ) do
-        if self:IsDisplayActive( i ) and ( dispName == nil or display.id == dispName ) then
+        if self:IsDisplayActive( i ) and display.alpha > 0 and ( dispName == nil or display.id == dispName ) then
             self:ProcessHooks( i )
             self:SaveDebugSnapshot( i )
-            snapshotted = true
+            success = true
         end
-    end
-
-    if snapshotted then
-        self:Print( "Snapshot saved." )
-        self:Print( "Snapshots are viewable via /hekili (until you reload your UI)." )
     end
 
     self.ActiveDebug = false
 
+    if success then
+        self:Print( "Snapshot saved." )
+        self:Print( "Snapshots are viewable via /hekili (until you reload your UI)." )
+    end
 end
 
 

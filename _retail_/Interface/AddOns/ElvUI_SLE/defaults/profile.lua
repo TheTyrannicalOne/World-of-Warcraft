@@ -53,25 +53,6 @@ P["sle"] = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["corruption"] = {
-				["position"] = "SLE",
-				["xOffset"] = 0,
-				["yOffset"] = 0,
-				["font"] = "PT Sans Narrow",
-				["fontSize"] = 15,
-				["fontStyle"] = "OUTLINE",
-				["valueColor"] = false,
-				["style"] = "TOTAL",
-			},
-			["corruptionText"] = {
-				["xOffset"] = 0,
-				["yOffset"] = 0,
-				["font"] = "PT Sans Narrow",
-				["fontSize"] = 12,
-				["fontStyle"] = "OUTLINE",
-				["style"] = "AMOUNT/SPELL",
-				["icon"] = false,
-			},
 			["background"] = {
 				["selectedBG"] = "Space",
 				["customTexture"] = "",
@@ -111,15 +92,6 @@ P["sle"] = {
 				["enableArrow"] = true,
 				["glowNumber"] = 4,
 				["glowOffset"] = 1,
-			},
-			["corruptionText"] = {
-				["xOffset"] = 0,
-				["yOffset"] = 0,
-				["font"] = "PT Sans Narrow",
-				["fontSize"] = 12,
-				["fontStyle"] = "OUTLINE",
-				["style"] = "AMOUNT/SPELL",
-				["icon"] = false,
 			},
 			["background"] = {
 				["selectedBG"] = "Space",
@@ -598,15 +570,6 @@ P["sle"] = {
 		mail = {
 			hideicon = false,
 		},
-		["mapicons"] = {
-			["iconmouseover"] = false,
-			["iconsize"] = 27,
-			["iconperrow"] = 12,
-			["spacing"] = 4,
-			["growth_hor"] = "Right",
-			["growth_vert"] = "Down",
-			["visibility"] = "[petbattle] hide; show",
-		},
 		["instance"] = {
 			["enable"] = false,
 			["xoffset"] = -10,
@@ -795,8 +758,76 @@ P["sle"] = {
 	},
 	--Shadows
 	['shadows'] = {
-		['shadowcolor'] = { ['r'] = 0, ['g'] = 0, ['b'] = 0 },
-		['size'] = 3,
+		shadowcolor = { ['r'] = 0, ['g'] = 0, ['b'] = 0 },
+		size = 3,
+		unitframes = {
+			player = {
+				legacy = false,
+				health = false,
+				power = false,
+				classbar = false,
+			},
+			target = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			targettarget = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			targettargettarget = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			focus = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			focustarget = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			pet = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			pettarget = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			boss = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			arena = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			party = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			raid = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+			raid40 = {
+				legacy = false,
+				health = false,
+				power = false,
+			},
+		},
 	},
 	--Skins
 	["skins"] = {

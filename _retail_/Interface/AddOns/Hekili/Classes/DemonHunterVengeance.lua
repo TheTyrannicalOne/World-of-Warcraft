@@ -10,38 +10,32 @@ local state = Hekili.State
 local PTR = ns.PTR
 
 
-if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
+-- Conduits
+-- [x] soul_furnace -- NYI: forecast stacks.
+
+-- Vengeance Endurance
+-- [-] demon_muzzle
+-- [-] roaring_fire
+
+
+if UnitClassBase( "player" ) == "DEMONHUNTER" then
     local spec = Hekili:NewSpecialization( 581 )
 
-    spec:RegisterResource( Enum.PowerType.Pain, {
-        metamorphosis = {
-            aura = "metamorphosis",
-
-            last = function ()
-                local app = state.buff.metamorphosis.applied
-                local t = state.query_time
-
-                return app + floor( t - app )
-            end,
-
-            interval = 1,
-            value = 8,
-        },
-    } )
+    spec:RegisterResource( Enum.PowerType.Fury )
 
     -- Talents
     spec:RegisterTalents( {
         abyssal_strike = 22502, -- 207550
         agonizing_flames = 22503, -- 207548
-        razor_spikes = 22504, -- 209400
+        felblade = 22504, -- 232893
 
         feast_of_souls = 22505, -- 207697
         fallout = 22766, -- 227174
         burning_alive = 22507, -- 207739
 
-        flame_crash = 22324, -- 227322
-        charred_flesh = 22541, -- 264002
-        felblade = 22540, -- 232893
+        infernal_armor = 22324, -- 320331
+        charred_flesh = 22541, -- 336639
+        spirit_bomb = 22540, -- 247454
 
         soul_rending = 22508, -- 217996
         feed_the_demon = 22509, -- 218612
@@ -51,21 +45,17 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         quickened_sigils = 22510, -- 209281
         sigil_of_chains = 22511, -- 202138
 
-        gluttony = 22512, -- 264004
-        spirit_bomb = 22513, -- 247454
-        fel_devastation = 22768, -- 212084
+        void_reaver = 22512, -- 268175
+        demonic = 22513, -- 321453
+        soul_barrier = 22768, -- 263648
 
         last_resort = 22543, -- 209258
-        void_reaver = 22548, -- 268175
-        soul_barrier = 21902, -- 263648
+        ruinous_bulwark = 23464, -- 326853
+        bulk_extraction = 21902, -- 320341
     } )
 
     -- PvP Talents
     spec:RegisterPvpTalents( { 
-        gladiators_medallion = 3544, -- 208683
-        relentless = 3545, -- 196029
-        adaptation = 3546, -- 214027
-
         cleansed_by_flame = 814, -- 205625
         demonic_trample = 3423, -- 205629
         detainment = 3430, -- 205596
@@ -74,7 +64,6 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         jagged_spikes = 816, -- 205627
         reverse_magic = 3429, -- 205604
         sigil_mastery = 1948, -- 211489
-        solitude = 802, -- 211509
         tormentor = 1220, -- 207029
         unending_hatred = 3727, -- 213480
     } )
@@ -83,8 +72,13 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
     -- Auras
     spec:RegisterAuras( {
         chaos_brand = {
-            id = 281242,
+            id = 1490,
             duration = 3600,
+            max_stack = 1,
+        },
+        charred_flesh = {
+            id = 336640,
+            duration = 9,
             max_stack = 1,
         },
         demon_spikes = {
@@ -108,12 +102,12 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         },
         fiery_brand = {
             id = 207771,
-            duration = function () return azerite.revel_in_pain.enabled and 10 or 8 end,
+            duration = function () return ( level > 53 or azerite.revel_in_pain.enabled ) and 10 or 8 end,
             max_stack = 1,
         },
         frailty = {
             id = 247456,
-            duration = 26,
+            duration = 20,
             type = "Magic",
             max_stack = 1,
         },
@@ -123,29 +117,23 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             max_stack = 1,
         },
         immolation_aura = {
-            id = 178740,
-            duration = 6,
-            max_stack = 1,
-        },
-        infernal_striking = {
-            duration = 1,
-            generate = function ()
-                local is = buff.infernal_striking
-
-                is.count = 1
-                is.expires = last_infernal_strike + 1
-                is.applied = last_infernal_strike
-                is.caster = "player"
-            end,
-        },
-        mana_divining_stone = {
-            id = 227723,
-            duration = 3600,
+            id = 258920,
+            duration = function () return talent.agonizing_flames.enabled and 9 or 6 end,
             max_stack = 1,
         },
         metamorphosis = {
             id = 187827,
-            duration = 5,
+            duration = 10,
+            max_stack = 1,
+        },
+        revel_in_pain = {
+            id = 343013,
+            duration = 15,
+            max_stack = 1,
+        },
+        ruinous_bulwark = {
+            id = 326863,
+            duration = 10,
             max_stack = 1,
         },
         shattered_souls = {
@@ -235,8 +223,8 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
 
     local sigils = setmetatable( {}, {
         __index = function( t, k )
-            t[k] = 0
-            return t[k]
+            t[ k ] = 0
+            return t[ k ]
         end
     } )
 
@@ -262,7 +250,6 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
     end
 
     spec:RegisterStateExpr( "activation_time", activation_time )
-    spec:RegisterStateExpr( "sigil_placed", activation_time )
 
     local sigil_placed = function ()
         return sigils.flame > query_time
@@ -276,9 +263,9 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         realTime = 0,
     } )
 
-    spec:RegisterStateFunction( "queue_fragments", function( num )
+    spec:RegisterStateFunction( "queue_fragments", function( num, extraTime )
         fragments.real = fragments.real + num
-        fragments.realTime = GetTime() + 1.25
+        fragments.realTime = GetTime() + 1.25 + ( extraTime or 0 )
     end )
 
     spec:RegisterStateFunction( "purge_fragments", function()
@@ -333,12 +320,20 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             else sigils[ sigil ] = 0 end            
         end
 
-        if talent.flame_crash.enabled then
+        if IsSpellKnownOrOverridesKnown( class.abilities.elysian_decree.id ) then
+            local activation = ( action.elysian_decree.lastCast or 0 ) + ( talent.quickened_sigils.enabled and 2 or 1 )
+            if activation > now then sigils.elysian_decree = activation
+            else sigils.elysian_decree = 0 end
+        else
+            sigils.elysian_decree = 0
+        end
+
+        if talent.abyssal_strike.enabled then
             -- Infernal Strike is also a trigger for Sigil of Flame.
             local activation = ( action.infernal_strike.lastCast or 0 ) + ( talent.quickened_sigils.enabled and 2 or 1 )
             if activation > now and activation > sigils[ sigil ] then sigils.flame = activation end
         end
-
+ 
         if fragments.realTime > 0 and fragments.realTime < now then
             fragments.real = 0
             fragments.realTime = 0
@@ -378,45 +373,44 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
 
     spec:RegisterGear( "convergence_of_fates", 140806 )
 
-    spec:RegisterGear( "achor_the_eternal_hunger", 137014 )
-    spec:RegisterGear( "anger_of_the_halfgiants", 137038 )
-    spec:RegisterGear( "chaos_theory", 151798 )
-    spec:RegisterGear( "cloak_of_fel_flames", 137066 )
-    spec:RegisterGear( "cinidaria_the_symbiote", 133976 )
-    spec:RegisterGear( "delusions_of_grandeur", 144279 )
-    spec:RegisterGear( "fragment_of_the_betrayers_prison", 138854 )
-    spec:RegisterGear( "kirel_narak", 138949 )
-    spec:RegisterGear( "loramus_thalipedes_sacrifice", 137022 )
-    spec:RegisterGear( "moarg_bionic_stabilizers", 137090 )
-    spec:RegisterGear( "oblivions_embrace", 151799 )
-    spec:RegisterGear( "raddons_cascading_eyes", 137061 )
-    spec:RegisterGear( "runemasters_pauldrons", 137071 )
-    spec:RegisterGear( "soul_of_the_slayer", 151639 )
-    spec:RegisterGear( "spirit_of_the_darkness_flame", 144292 )
-        spec:RegisterAura( "spirit_of_the_darkness_flame", {
-            id = 235543,
-            duration = 3600,
-            max_stack = 15
-        } )
-
 
     -- Abilities
     spec:RegisterAbilities( {
+        bulk_extraction = {
+            id = 320341,
+            cast = 0,
+            cooldown = 90,
+            gcd = "spell",
+            
+            toggle = "defensives",
+
+            startsCombat = true,
+            texture = 136194,
+
+            talent = "bulk_extraction",
+            
+            handler = function ()                
+            end,
+        },
+        
+        
         consume_magic = {
             id = 278326,
             cast = 0,
             cooldown = 10,
             gcd = "spell",
 
+            spend = -20,
+            spendType = "fury",
+
             startsCombat = true,
             texture = 828455,
 
             toggle = "interrupts",
+            buff = "dispellable_magic",
 
-            usable = function () return buff.dispellable_magic.up end,
             handler = function ()
                 removeBuff( "dispellable_magic" )
-                gain( buff.solitude.up and 22 or 20, "pain" )
             end,
         },
 
@@ -424,7 +418,8 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         demon_spikes = {
             id = 203720,
             cast = 0,
-            charges = function () return ( ( level < 116 and equipped.oblivions_embrace ) and 3 or 2 ) end,
+            icd = 1,
+            charges = 2,
             cooldown = 20,
             recharge = 20,
             hasteCD = true,
@@ -436,11 +431,6 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             texture = 1344645,
 
             toggle = "defensives",
-
-            readyTime = function ()
-                return max( 0, ( 1 + action.demon_spikes.lastCast ) - query_time )
-            end, 
-                -- ICD
 
             handler = function ()
                 applyBuff( "demon_spikes", buff.demon_spikes.remains + buff.demon_spikes.duration )
@@ -478,6 +468,9 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
 
             interrupt = true,
 
+            spend = -30,
+            spendType = "fury",
+
             startsCombat = true,
             texture = 1305153,
 
@@ -487,7 +480,6 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             readyTime = state.timeToInterrupt,
 
             handler = function ()
-                gain( buff.solitude.up and 33 or 30, "pain" )
                 interrupt()
             end,
         },
@@ -498,19 +490,23 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             cast = 2,
             fixedCast = true,
             channeled = true,
-            cooldown = 60,
+            cooldown = 45,
             gcd = "spell",
-
-            -- toggle = "cooldowns",
+            
+            spend = 50,
+            spendType = "fury",
 
             startsCombat = true,
             texture = 1450143,
 
-            talent = "fel_devastation",
-
             start = function ()
                 applyBuff( "fel_devastation" )
             end,
+
+            finish = function ()
+                if talent.demonic.enabled then applyBuff( "metamorphosis", 8 ) end
+                if talent.ruinous_bulwark.enabled then applyBuff( "ruinous_bulwark" ) end
+            end
         },
 
 
@@ -520,8 +516,8 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             cooldown = 15,
             gcd = "spell",
 
-            spend = function () return buff.solitude.enabled and -33 or -30 end,
-            spendType = "pain",
+            spend = -40,
+            spendType = "fury",
 
             startsCombat = true,
             texture = 1344646,
@@ -537,17 +533,27 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         fiery_brand = {
             id = 204021,
             cast = 0,
-            cooldown = 60,
+            cooldown = function () return 60 + ( conduit.fel_defender.mod * 0.001 ) end,
             gcd = "spell",
 
-            toggle = "cooldowns",
+            toggle = "defensives",
 
             startsCombat = true,
             texture = 1344647,
 
             handler = function ()
                 applyDebuff( "target", "fiery_brand" )
+                if talent.charred_flesh.enabled then applyBuff( "charred_flesh" ) end
+                removeBuff( "spirit_of_the_darkness_flame" )
             end,
+
+            auras = {
+                spirit_of_the_darkness_flame = {
+                    id = 337542,
+                    duration = 3600,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -560,14 +566,15 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             hasteCD = true,
             gcd = "spell",
 
-            spend = function () return ( buff.solitude.up and -27 or -25 ) + ( buff.metamorphosis.up and -20 or 0 ) end,
-            spendType = "pain",            
+            spend = function () return level > 47 and buff.metamorphosis.up and -45 or -25 end,
+            spendType = "fury",            
 
             startsCombat = true,
             texture = 1388065,
 
+            talent = "fracture",
+
             handler = function ()
-                -- gain( buff.solitude.up and 27 or 25, "pain" )
                 addStack( "soul_fragments", nil, 2 )
             end,
         },
@@ -591,13 +598,13 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             id = function () return debuff.illidans_grasp.up and 208173 or 205630 end,
             known = 205630,
             cast = 0,
+            channeled = true,
             cooldown = function () return buff.illidans_grasp.up and ( 54 + buff.illidans_grasp.remains ) or 0 end,
             gcd = "off",
 
             pvptalent = "illidans_grasp",
             aura = "illidans_grasp",
             breakable = true,
-            channeled = true,
 
             startsCombat = true,
             texture = function () return buff.illidans_grasp.up and 252175 or 1380367 end,
@@ -612,9 +619,9 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
 
 
         immolation_aura = {
-            id = 178740,
+            id = 258920,
             cast = 0,
-            cooldown = 15,
+            cooldown = function () return level > 26 and 15 or 30 end,
             gcd = "spell",
 
             startsCombat = true,
@@ -623,14 +630,20 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             handler = function ()
                 applyBuff( "immolation_aura" )
 
-                if level < 116 and equipped.kirel_narak then
-                    cooldown.fiery_brand.expires = cooldown.fiery_brand.expires - ( 2 * active_enemies )
-                end
+                if legendary.fel_flame_fortification.enabled then applyBuff( "fel_flame_fortification" ) end
 
                 if pvptalent.cleansed_by_flame.enabled then
                     removeDebuff( "player", "reversible_magic" )
                 end
             end,
+
+            auras = {
+                fel_flame_fortification = {
+                    id = 337546,
+                    duration = function () return class.auras.immolation_aura.duration end,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -652,6 +665,7 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         infernal_strike = {
             id = 189110,
             cast = 0,
+            icd = 1,
             charges = 2,
             cooldown = function () return talent.abyssal_strike.enabled and 12 or 20 end,
             recharge = function () return talent.abyssal_strike.enabled and 12 or 20 end,
@@ -660,18 +674,17 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             startsCombat = true,
             texture = 1344650,
 
-            nobuff = "infernal_striking",
-
             sigil_placed = sigil_placed,
 
             handler = function ()
                 setDistance( 5 )
                 spendCharges( "demonic_trample", 1 )
-                applyBuff( "infernal_striking" )
 
-                if talent.flame_crash.enabled then
+                if talent.abyssal_strike.enabled then
                     create_sigil( "flame" )
                 end
+
+                if conduit.felfire_haste.enabled then applyBuff( "felfire_haste" ) end
             end,
         },
 
@@ -679,7 +692,8 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         metamorphosis = {
             id = 187827,
             cast = 0,
-            cooldown = function () return ( essence.vision_of_perfection.enabled and 0.87 or 1 ) * 180 end,
+            cooldown = function ()
+                return ( level > 47 and 180 or ( level > 19 and 240 or 300 ) ) * ( essence.vision_of_perfection.enabled and 0.87 or 1 ) end,
             gcd = "off",
 
             toggle = "cooldowns",
@@ -689,14 +703,11 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
 
             handler = function ()
                 applyBuff( "metamorphosis" )
-                gain( 8, "pain" )
+                gain( 8, "fury" )
 
-                if level < 116 and equipped.runemasters_pauldrons then
-                    setCooldown( "sigil_of_chains", 0 )
-                    setCooldown( "sigil_of_flame", 0 )
-                    setCooldown( "sigil_of_misery", 0 )
-                    setCooldown( "sigil_of_silence", 0 )
-                    gainCharges( "demon_spikes", 1 )
+                if IsSpellKnownOrOverridesKnown( 317009 ) then
+                    applyDebuff( "target", "sinful_brand" )
+                    active_dot.sinful_brand = active_enemies
                 end
 
                 last_metamorphosis = query_time
@@ -716,6 +727,8 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             startsCombat = false,
             texture = 1380372,
 
+            buff = "reversible_magic",
+
             handler = function ()
                 if debuff.reversible_magic.up then removeDebuff( "player", "reversible_magic" ) end
             end,
@@ -728,8 +741,8 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             cooldown = 0,
             gcd = "spell",
 
-            spend = function () return ( buff.solitude.up and -11 or -10 ) + ( buff.metamorphosis.up and -20 or 0 ) end,
-            spendType = "pain",
+            spend = function () return level > 47 and buff.metamorphosis.up and -30 or -10 end,
+            spendType = "fury",
 
             startsCombat = true,
             texture = 1344648,
@@ -755,10 +768,6 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
 
             handler = function ()
                 create_sigil( "chains" )
-
-                if level < 116 and equipped.spirit_of_the_darkness_flame then
-                    addStack( "spirit_of_the_darkness_flame", nil, active_enemies )
-                end
             end,
         },
 
@@ -826,6 +835,15 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             end,
 
             copy = { 207682, 202137 },
+
+            auras = {
+                -- Conduit, applies after SoS expires.
+                demon_muzzle = {
+                    id = 339589,
+                    duration = 6,
+                    max_stack = 1
+                }
+            }
         },
 
 
@@ -860,7 +878,7 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             gcd = "spell",
 
             spend = 30,
-            spendType = "pain",
+            spendType = "fury",
 
             startsCombat = true,
             texture = 1344653,
@@ -870,9 +888,24 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
                     gainChargeTime( "demon_spikes", 0.5 * buff.soul_fragments.stack )
                 end
 
-                removeStack( "soul_fragments", min( buff.soul_fragments.stack, 2 ) )
                 if talent.void_reaver.enabled then applyDebuff( "target", "void_reaver" ) end
+                if legendary.fiery_soul.enabled then reduceCooldown( "fiery_brand", 2 * min( 2, buff.soul_fragments.stack ) ) end
+
+                -- Razelikh's is random; can't predict it.
+
+                buff.soul_fragments.count = max( 0, buff.soul_fragments.stack - 2 )
+
+                if buff.soul_furnace.up and buff.soul_furnace.stack == 10 then removeBuff( "soul_furnace" ) end
             end,
+
+            auras = {
+                -- Conduit
+                soul_furnace = {
+                    id = 339424,
+                    duration = 30,
+                    max_stack = 10,
+                }
+            }
         },
 
 
@@ -897,7 +930,7 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             gcd = "spell",
 
             spend = 30,
-            spendType = "pain",
+            spendType = "fury",
 
             startsCombat = true,
             texture = 1097742,
@@ -909,6 +942,9 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
                     gainChargeTime( "demon_spikes", 0.5 * buff.soul_fragments.stack )
                 end
 
+                applyDebuff( "target", "frailty" )
+                active_dot.frailty = active_enemies
+
                 buff.soul_fragments.count = 0
             end,
         },
@@ -917,7 +953,7 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         throw_glaive = {
             id = 204157,
             cast = 0,
-            cooldown = 3,
+            cooldown = function () return level > 31 and 3 or 9 end,
             hasteCD = true,
             gcd = "spell",
 
@@ -925,6 +961,7 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             texture = 1305159,
 
             handler = function ()
+                if conduit.serrated_glaive.enabled then applyDebuff( "target", "exposed_wound" ) end
             end,
         },
 
@@ -981,7 +1018,6 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
     } )
 
 
-    spec:RegisterPack( "Vengeance", 20200124, [[dq0ADaqiGu9iksBsQKrjvQtjvXQqusVcrAwuIULuLAxG8lPIHHO6yavwgfXZOKmnkPCnku2gqk9nPkPXrjv15KQeRdOkEhfQkZdi5EaAFikoiLuzHaLhcKIjcuvxeOkzJuOQAKavPojfQYkbLDcelfrjEQuMQuvBLsQYEv5VcnyuomPfJWJrAYcUmXMv0Nby0uuNMQxdQmBuDBf2TOFR0WPGLd1ZHmDjxNsTDqvFNcz8ik15PewpfQmFeX(v1h4U(xlOLCGyc5Mqo5GZeRbrEVyf5gZyxRSWGCndkfofGCTuhY1SEscq0KkxZGAbF1W1)AO1gtLRzUkdiWtNoa8YSnbeDhDq(WMRLVjfRZQdYh0oxJW25LXlpIRf0soqmHCtiNCWzI1GiVxmPxmXyxdzqOhigZ6dURz2dbjpIRfee9AM(mRNKaenPYZaFzS5ZaVTZsWpmtFM5QmGapD6aWlZ2eq0D0b5dBUw(MuSoRoiFq78Wm9zW00wXw8mtmXYNzc5Mq(d7Hz6ZanM1eGGappmtFwVFM1fcs4zGVJW2gQNv7ZcYuT51ZuA5B(mUJkOhMPpR3pd0Sj8cUKWZSrs0lz8mjlSlONnx8ZkSNWjf6z1(mBKe9sgiJVNHLXcVeEgDZGx(MiOhMPpR3pZ6cbj8m0oKN5jDhEc4zbDOaKN15zuZkgG8mk2lb76ZQ9zGVm28zndoCcc6Hz6Z69ZilcsWWlptFg1SIbipBNpZ4LtbNk)zTc7WjptRNPC(ZkFiiOhMPpR3pZ6cbj8S2AZFgykg7cg6AgW705Y1m9zwpjbiAsLNb(YyZNbEBNLGFyM(mZvzabE60bGxMTjGO7OdYh2CT8nPyDwDq(G25Hz6ZGPPTIT4zMyILpZeYnH8h2dZ0NbAmRjabbEEyM(SE)mRleKWZaFhHTnupR2NfKPAZRNP0Y38zChvqpmtFwVFgOzt4fCjHNzJKOxY4zswyxqpBU4NvypHtk0ZQ9z2ij6LmqgFpdlJfEj8m6MbV8nrqpmtFwVFM1fcs4zODipZt6o8eWZc6qbipRZZOMvma5zuSxc21Nv7ZaFzS5ZAgC4ee0dZ0N17NrweKGHxEM(mQzfdqE2oFMXlNcov(ZAf2HtEMwpt58Nv(qqqpmtFwVFM1fcs4zT1M)mWum2fm0d7Hz6ZaViBHAxs4zeYCXYZO7GqRNria8eb9mRJsfdf6z5M92SIhtB(ZuA5BIE2MClGEyM(mLw(MiidyHUdcTao5kcUhMPptPLVjcYawO7Gqlsb2rTbmKS0Y38Hz6ZuA5BIGmGf6oi0IuGDM7gEyM(SwQgqM36zy1dpJWEoLWZqLwONriZflpJUdcTEgHaWt0Z0m8mdyP3g2Q8eWZC0ZcBkqpmtFMslFteKbSq3bHwKcSdkvdiZBfrLwOhMslFteKbSq3bHwKcSJnsIEjdltDiavJdzwXkko3SI7mAynsWpmLw(MiidyHUdcTifyhdB5B(WEyM(mWlYwO2LeEMaVGT4zLpKNvMLNP0AXpZrptHxDUsWfOhMslFteWGJW2gQhMslFtePa7q3ezpK4qb40hMslFtePa7yJKOxYa9WuA5BIifyhQY5rLw(MrUJkltDiajWAgS0NalLlzbrnRySeItUGmdjPsWLWdtPLVjIuGDOkNhvA5Bg5oQSm1Hamitjro8cYsFc0t6o8eqmOdfGengImK)WuA5BIifyhQY5rLw(MrUJkltDiaP7YdRrj6HP0Y3erkWouLZJkT8nJChvwM6qaMlEO8h2dZ0Nz87c2INbgwZWZilBPLV5dtPLVjcIaRzaiYb484oJtUoel9jq6U8WAucnDbBrKaRzacld1teOm5HP0Y3ebrG1mqkWoEofCQ8iQWoCIL(eiDxEynkHMUGTisG1maHLH6jci5pmLw(MiicSMbsb2z6c2IibwZWdtPLVjcIaRzGuGD8Xy5A5BgvBSAPpbg2cA6c2IibwZau5u48eWdtPLVjcIaRzGuGDMcpge4vuPLVPL(eyylOPlylIeyndqLtHZtapmLw(MiicSMbsb2XZPGtLhrf2HtS0NadBbnDbBrKaRzaQCkCEc4HP0Y3ebrG1mqkWoihGZJ7mo56qS0NadBbnDbBrKaRzaQCkCEc4H9Wm9zGMD5H1Oe9WuA5BIGO7YdRrjcOHT8nFykT8nrq0D5H1OerkWo0nPswyTKqCY1HyPpb2nOh2cIUjvYcRLeItUoKiHnoHkNcNNa6c0vA5Bcr3KkzH1scXjxhcKNXj3byUiHKPnNhXc1SIbiXYhcOaqdqdLS75HP0Y3ebr3LhwJsePa7y0I5b4fpJybTPMuXsFcKWEoH4(ui47gGqLsHduw9WuA5BIGO7YdRrjIuGDgYyXwe3zKBt9qmGfDGEyM(mWxMQnVE2u5CcLc3ZMl(z2iLGlptqijPcc6HP0Y3ebr3LhwJsePa7ywuCffessQ8WuA5BIGO7YdRrjIuGDSrs0lzyPmNcTIPoeGulO8TWB60ibxrLL(eiH9CcnKXITiUZi3M6Hyal6abfwJYhMslFteeDxEynkrKcSJnsIEjdltDiavKz41uqrSAClosxSYT0NadcH9CcHvJBXr6IvEmie2ZjuynkjHKGqypNq0nd20YHxIEcxmie2ZjKTHUkfdqkiZIYlZqgOfOScCKqs5djwBm4cOmH8hMPpd8LPAZRNnvoNqPW9S5IFMnsj4YZ8sgiOhMslFteeDxEynkrKcSJnsIEjd0d7Hz6ZaFzkjYHxqpmLw(MiOGmLe5WliGbzSzezWHtqw6tGDpT58iwOMvmajw(qaf46Yt6o8eqmOdfGeTc1djK0TslhEjkPmCbrgR6Yt6o8eqmOdfGeTc1fH9CcfKXMrKbhobbfwJYEiHKU9KUdpbed6qbirJHid5qMymYQzr5LzOHs298WuA5BIGcYusKdVGaIwBEKqXyxWw6tGDR0YHxIskdxqKXQU8KUdpbed6qbirRqDrypNqbzSzezWHtqqH1OShsiPBpP7WtaXGouas0yiYqoK1iRMfLxMHgkz3ZdtPLVjckitjro8cIuGDgsPJfBW8IC0dtPLVjckitjro8cIuGDMUGTisG1m8WEyM(mqw8q5pJSSLw(MpShMslFteuU4HYb65uWPYJOc7Wjw6tGtBopIfQzfdqILpeqbUU6g0lLlzbn56qIuSImdjPsWLajK0DyliKdW5XDgNCDiqyzOEIaLvDb6kT8nH8Ck4u5ruHD4eiKdW5rdCLkHE65HP0Y3ebLlEOCsb2bzWXEfj2bHL(ey3DtypNqdP0XInyErocY2qxO1MhNyfWqYcrgGw1djKGwBECIvadjlezaATEEykT8nrq5IhkNuGDqRnps5IcVyPpb2nOxkxYcczWXEfj2bbKKkbxcD1D3e2Zj0qkDSydMxKJGSn0fAT5XjwbmKSqKbOv9qcjO1MhNyfWqYcrgGwRNEEykT8nrq5IhkNuGDqRnps5IcVyPpbwkxYcczWXEfj2bbKKkbxcDHwBECIvadjleqYFykT8nrq5IhkNuGD8Xy5A5BgvBSAPpbAq9eua7fYFykT8nrq5IhkNuGDMcNGRbXsFc0G6jOa2RK)WuA5BIGYfpuoPa7mXkTSXIL(eiAT5XjwbmKSqGcOvpmLw(MiOCXdLtkWotHhdc8kQ0Y38HP0Y3ebLlEOCsb2b5aCECNXjxhYdtPLVjckx8q5KcSdYSO4hMslFteuU4HYjfyNYmEnkcGRo8Y1GxWiFZdeti3eYjhCMyTRzKItpbGUMXByyXLeEgO9zkT8nFg3rfc6HDn1UmV4R18bO5AChvOR)1iWAgU(hiG76FnjvcUeoWUgf7LGD9A0D5H1OeA6c2IibwZaewgQNONbQNzY1uA5BEnKdW5XDgNCDixDGyY1)AsQeCjCGDnk2lb761O7YdRrj00fSfrcSMbiSmuprpd4Zi)AkT8nVMNtbNkpIkSdNC1bIvx)RP0Y38AtxWwejWAgUMKkbxchyxDGyTR)1Kuj4s4a7AuSxc21Rf2cA6c2IibwZau5u48eW1uA5BEnFmwUw(Mr1gRxDGySR)1Kuj4s4a7AuSxc21Rf2cA6c2IibwZau5u48eW1uA5BETPWJbbEfvA5BE1bcO96FnjvcUeoWUgf7LGD9AHTGMUGTisG1mavofopbCnLw(MxZZPGtLhrf2HtU6aPxV(xtsLGlHdSRrXEjyxVwylOPlylIeyndqLtHZtaxtPLV51qoaNh3zCY1HC1vxlit1Mxx)deWD9VMslFZRfCe22qDnjvcUeoWU6aXKR)1uA5BEn6Mi7HehkaNEnjvcUeoWU6aXQR)1uA5BEnBKe9sgORjPsWLWb2vhiw76FnjvcUeoWUMslFZRrvopQ0Y3mYDuDnk2lb761kLlzbrnRySeItUGmdjPsWLW14oQIPoKRrG1mC1bIXU(xtsLGlHdSRP0Y38AuLZJkT8nJChvxJI9sWUEnpP7WtaXGouas0yONrMNr(14oQIPoKRfKPKihEbD1bcO96FnjvcUeoWUMslFZRrvopQ0Y3mYDuDnUJQyQd5A0D5H1OeD1bsVE9VMKkbxchyxtPLV51OkNhvA5Bg5oQUg3rvm1HCTCXdLF1vxZawO7GqRR)bc4U(xtsLGlHdSRL6qUMACiZkwrX5MvCNrdRrc(AkT8nVMACiZkwrX5MvCNrdRrc(QdetU(xtPLV51mSLV51Kuj4s4a7QRUgDxEynkrx)deWD9VMslFZRzylFZRjPsWLWb2vhiMC9VMKkbxchyxJI9sWUETUFgO)SWwq0nPswyTKqCY1HejSXju5u48eWZ66zG(ZuA5Bcr3KkzH1scXjxhcKNXj3byUEgjK8SPnNhXc1SIbiXYhYZa1ZaqdqdLSFwpxtPLV51OBsLSWAjH4KRd5QdeRU(xtsLGlHdSRrXEjyxVgH9CcX9PqW3naHkLc3Za1ZS6AkT8nVMrlMhGx8mIf0MAsLRoqS21)AkT8nV2qgl2I4oJCBQhIbSOd01Kuj4s4a7QdeJD9VMslFZRzwuCffessQCnjvcUeoWU6ab0E9VMKkbxchyxJI9sWUEnc75eAiJfBrCNrUn1dXaw0bckSgLxtPLV51Owq5BH30PrcUIQRjZPqRyQd5AulO8TWB60ibxr1vhi961)AsQeCjCGDTuhY1uKz41uqrSAClosxSYVMslFZRPiZWRPGIy14wCKUyLFnk2lb761ccH9CcHvJBXr6IvEmie2ZjuynkFgjK8SGqypNq0nd20YHxIEcxmie2ZjKTHN11ZkfdqkiZIYlZqgO1Za1ZScCpJesEw5djwBm4YZa1ZmH8RoqS(x)RP0Y38A2ij6LmqxtsLGlHdSRU6AbzkjYHxqx)deWD9VMKkbxchyxJI9sWUETUF20MZJyHAwXaKy5d5zG6zG7zD9mpP7WtaXGouas0k0Z65zKqYZ6(zkTC4LOKYWf0ZiZZS6zD9mpP7WtaXGouas0k0Z66ze2ZjuqgBgrgC4eeuynkFwppJesEw3pZt6o8eqmOdfGeng6zK5zKdzIXEgz9zMfLxMHgkz)SEUMslFZRfKXMrKbhobD1bIjx)RjPsWLWb21OyVeSRxR7NP0YHxIskdxqpJmpZQN11Z8KUdpbed6qbirRqpRRNrypNqbzSzezWHtqqH1O8z98msi5zD)mpP7WtaXGouas0yONrMNroK1Egz9zMfLxMHgkz)SEUMslFZRHwBEKqXyxWxDGy11)AkT8nV2qkDSydMxKJUMKkbxchyxDGyTR)1uA5BETPlylIeyndxtsLGlHdSRU6A5Ihk)6FGaUR)1Kuj4s4a7AuSxc21RnT58iwOMvmajw(qEgOEg4EwxpR7Nb6pRuUKf0KRdjsXkYmKKkbxcpJesEw3plSfeYb484oJtUoeiSmuprpdupZQN11Za9NP0Y3eYZPGtLhrf2HtGqoaNhnWvQeEwppRNRP0Y38AEofCQ8iQWoCYvhiMC9VMKkbxchyxJI9sWUETUFw3pJWEoHgsPJfBW8ICeKTHN11ZqRnpoXkGHKf6zKb4ZS6z98msi5zO1MhNyfWqYc9mYa8zw7z9CnLw(MxdzWXEfj2bXvhiwD9VMKkbxchyxJI9sWUETUFgO)Ss5swqido2RiXoiGKuj4s4zD9SUFw3pJWEoHgsPJfBW8ICeKTHN11ZqRnpoXkGHKf6zKb4ZS6z98msi5zO1MhNyfWqYc9mYa8zw7z98SEUMslFZRHwBEKYffE5QdeRD9VMKkbxchyxJI9sWUETs5swqido2RiXoiGKuj4s4zD9m0AZJtScyizHEgWNr(1uA5BEn0AZJuUOWlxDGySR)1Kuj4s4a7AuSxc21Rzq98zGc4Z6fYVMslFZR5JXY1Y3mQ2y9Qdeq71)AsQeCjCGDnk2lb761mOE(mqb8z9k5xtPLV51McNGRb5QdKE96FnjvcUeoWUgf7LGD9AO1MhNyfWqYc9mqb8zwDnLw(MxBIvAzJLRoqS(x)RP0Y38AtHhdc8kQ0Y38AsQeCjCGD1bsVC9VMslFZRHCaopUZ4KRd5AsQeCjCGD1bc4i)6FnLw(Mxdzwu81Kuj4s4a7QdeWbUR)1uA5BETYmEnkcGRo8Y1Kuj4s4a7QRU6QRUd]] )
-
+    spec:RegisterPack( "Vengeance", 20201013, [[dqe5Caqifv6rQQInHQ0OaQofeSkuvrVccnluvULQQQyxa(LQkddiogqzzujEgQOPHk01qfSnvvjFtvvLXHQQCofv06qvvP5rL09us7trvhuvvvAHQk9qvvvLjQQk1fvvvvTruvvmsuvvDsuvbRKkANQk(jQQqlvrf8uQAQkkBvrfAVs9xknykomPfdPhJ0Kv4YeBwP(SsmAuPtl61qKzJYTvLDl53QmCQWYH65iMUW1vKTdr9DG04vvvopQI1JQknFQu7h0ny9S2p0q6pUaIlGagiGXjai8hhaJJU0(Ghhs7DOuK0fP9L(K2phLAr0IkT3HYd70rpR9KBctL2Znche(3F)wYG7eka9E)i5BIPrEffR74hjF0FThDkzb)q1OTFOH0FCbexabmqaJtaq4poaghbR9ehcT)Wb(dS2ZnhdPA02pecT9)bA(B5Df0W)NQqWqZCuQfrlQaD(hOHFKghQGHgW4KpOXfqCbK27aF7KjT)pqZFlVRGg()ufcgAMJsTiArfOZ)an8J04qfm0agN8bnUaIlGaDcD(hOXxQdc3lGgSMdObDAVLb0qcniqdQSpSan07HQb0GklzrGgTgqJdS8)44IiRfOjjqZ4kba6uPrEfbWbwO3dvdex)nreBgYJVsFYQYVeUkwj29vH92whhOcg6e68pqZ)))e6uidOrqwW8anr(eOj4kqJsJddnjbAuK1KPOmba6uPrEfzDKe8KJa6uPrEfbX1F0RitpX(0LKcDQ0iVIG46pSGSGjI9Pljf6uPrEfbX1FuLXSknYRSSKe8v6twrXAnGovAKxrqC9hvzmRsJ8klljbFL(K1HSLIKileOtLg5veex)rvgZQ0iVYYssWxPpzLEhBCGweOtLg5veex)rvgZQ0iVYYssWxPpzTo8tzqNqN)bA4FsbZd08fR1aAMdxOrEf0PsJ8kcakwRXkjxsM922ntFcF5ELEhBCGwa7uW8yrXAnaWYtZI4QlqNknYRiaOyTgiU(lRTGlLzjbors4l3R07yJd0cyNcMhlkwRbawEAwKvqGovAKxraqXAnqC93ofmpwuSwdOtLg5veauSwdex)LV3X0iVYQtyLVCVoUayNcMhlkwRbqKuKYAb6uPrEfbafR1aX1FzTfCPmljWjscF5EDCbWofmpwuSwdGiPiL1c0PsJ8kcakwRbIR)i5sYS32Uz6t4l3RJla2PG5XII1AaejfPSwGoHovAKxraO3XghOfz1Xf5vqNknYRia07yJd0IG46psw7jMffR1GVCVo3XfaKS2tmlkwRbqKuKYAb6uPrEfbGEhBCGweex)fCfl3PkGovAKxraO3XghOfbX1F7BmeSnoBWvSBM(eOtLg5vea6DSXbArqC9NW4HKAzhcflc0PsJ8kca9o24aTiiU(JEfvQaRHmSBM(e(Y9k4ZDCba9kQubwdzy3m9jw0jCbejfPSw4DUknYRaOxrLkWAid7MPpbil7MLlCd3U3tmMfluUkErSr(exxOdGN(peGovAKxraO3XghOfbX1FGEy2azjllwixPfv4l3ROt7nal3ck7UbajuksUYj0PsJ8kca9o24aTiiU(7jVdZJ92w2enh2bw0hb68pqd))ydOzoiQJSwGg(hM(ec0Spm0i)tOtHanyTweO5WqdsjJbnOt7nHpOj3qJJJqsuMaan)VmqvEiqtG5bAIdAwKaAcUc0Woqfsan07yJd0cAqvImGMRGgfznzkktGgPKxkeaOtLg5vea6DSXbArqC9hwuhzTy3m9je(Y9AO4fjaI8j24SJuCfmao42n4GhkErcaUIYcUaoOX88hiUDhkErcaUIYcUaoOHRRUacc8cUsJezXkL8sHScMB37CHByXYtZImVlZjci42n4HIxKaiYNyJZ6GgwxazEobHxWvAKilwPKxkKvWC7ENlCdlwEAwK55ihrabOZ)an)TS1jwanBLXqvksqZ(WqZerrzc0ieIuuHaaDQ0iVIaqVJnoqlcIR)4kkoScHifvGovAKxraO3XghOfbX1FteXMH84t2BHg2sFYkLhk7c8vj1IYusWxUxrN2BGN8omp2BBzt0CyhyrFeGXbAbDQ0iVIaqVJnoqlcIR)MiInd5XxPpzvjCrwlHyXk)Eyl9WkJVCVoe0P9gaR87HT0dRm7qqN2BGXbA529qqN2Ba6vJjAKil2SqYoe0P9gyYbVHIxKaGROSGlGdA4kNG52DO4fjaI8j24SJuC1fqGo)d083YwNyb0SvgdvPibn7ddntefLjqtgYJaaDQ0iVIaqVJnoqlcIR)MiInd5rGoHo)d083YwksISqGovAKxragYwksISqwhY7klXrIKq4l3RHwiL1cVGd(EIXSyHYvXlInYN4ky8Mf9EzTyh6txelNeeC7gCLgjYIvk5LczEo5nl69YAXo0NUiwoj8IoT3ad5DLL4irsiaJd0cb3Ubpl69YAXo0NUiwoqMheax4a)KROSGlWt)hciaDQ0iVIamKTuKezHG46pYnXSOkgNcMVCVcUsJezXkL8sHmpN8Mf9EzTyh6txelNeErN2BGH8UYsCKijeGXbAHGB3GNf9EzTyh6txelhiZdcah5NCfLfCbE6)qa6uPrEfbyiBPijYcbX1FOtmKSY)cSsJ8k(Y9kxrzbxahcMkv4khab6uPrEfbyiBPijYcbX1Fpj03HDW9ijb6uPrEfbyiBPijYcbX1F7uW8yrXAnGoHo)d085WpLbnZHl0iVc6uPrEfbOo8tzRzTfCPmljWjscF5EDpXywSq5Q4fXg5tCfmEbFUHYKka2m9jwkwjCbKsrzYWTBWhxaqYLKzVTDZ0NaGLNMfXvo5DUknYRaYAl4szwsGtKeasUKmRdMsLbciaDQ0iVIauh(Pmex)rCK4mSO3dLVCVco4Ot7nWtc9DyhCpssaMCWl5My2nwxEsfK5x5eb3Uj3eZUX6YtQGm)khra6uPrEfbOo8tziU(JCtmlLjkYcF5Ef85gktQaG4iXzyrVhkGukktg8co4Ot7nWtc9DyhCpssaMCWl5My2nwxEsfK5x5eb3Uj3eZUX6YtQGm)khrabOtLg5veG6WpLH46pYnXSuMOil8L71qzsfaehjodl69qbKsrzYGxYnXSBSU8KkiRGaDQ0iVIauh(Pmex)LV3X0iVYQtyLVCVUNW8466Ccc0PsJ8kcqD4NYqC93wyOmDi8L719eMhxx)pqGovAKxraQd)ugIR)2yLgtyHVCVsUjMDJ1LNubX1voHovAKxraQd)ugIR)i5sYS32Uz6tGovAKxraQd)ugIR)iCffdDQ0iVIauh(Pmex)fCXhO2fMMilThzbtYR6pUaIlGagiGbw7bvXvwlK2Zp8CC4qgqZFbnknYRGgwscca0z71PG7HBVpF)FTNLKG0ZApkwRrpR)awpR9sPOmz0FBpfNHGtT907yJd0cyNcMhlkwRbawEAweOXvOXL2R0iVQ9KCjz2BB3m9jD0FCPN1EPuuMm6VTNIZqWP2E6DSXbAbStbZJffR1aalpnlc0ScnG0ELg5vTpRTGlLzjbors6O)WzpR9knYRA)ofmpwuSwJ2lLIYKr)TJ(dh7zTxkfLjJ(B7P4meCQTFCbWofmpwuSwdGiPiL1s7vAKx1(89oMg5vwDcRD0F4qpR9sPOmz0FBpfNHGtT9Jla2PG5XII1AaejfPSwAVsJ8Q2N1wWLYSKaNijD0F(REw7LsrzYO)2EkodbNA7hxaStbZJffR1aiskszT0ELg5vTNKljZEB7MPpPJoA)q26el6z9hW6zTxPrEv7hjbp5iAVukktg93o6pU0ZAVsJ8Q2tVIm9e7txsA7LsrzYO)2r)HZEw7vAKx1ESGSGjI9PljT9sPOmz0F7O)WXEw7LsrzYO)2ELg5vTNQmMvPrELLLKO9SKe2sFs7rXAn6O)WHEw7LsrzYO)2ELg5vTNQmMvPrELLLKO9SKe2sFs7hYwksISq6O)8x9S2lLIYKr)T9knYRApvzmRsJ8klljr7zjjSL(K2tVJnoqlsh9N)RN1EPuuMm6VTxPrEv7PkJzvAKxzzjjApljHT0N0(6WpL1rhT3bwO3dvJEw)bSEw7LsrzYO)2(sFs7v(LWvXkXUVkS3264avWTxPrEv7v(LWvXkXUVkS3264avWD0r7P3XghOfPN1FaRN1ELg5vT3Xf5vTxkfLjJ(Bh9hx6zTxkfLjJ(B7P4meCQTFUqZ4casw7jMffR1aiskszT0ELg5vTNK1EIzrXAn6O)WzpR9knYRAFWvSCNQO9sPOmz0F7O)WXEw7vAKx1(9ngc2gNn4k2ntFs7LsrzYO)2r)Hd9S2R0iVQ9cJhsQLDiuSiTxkfLjJ(Bh9N)QN1EPuuMm6VTNIZqWP2EWHM5cnJlaOxrLkWAid7MPpXIoHlGiPiL1c0Wl0mxOrPrEfa9kQubwdzy3m9jazz3SCHBanUDdn7jgZIfkxfVi2iFc04k0Sqhap9FqdcTxPrEv7PxrLkWAid7MPpPJ(Z)1ZAVukktg932tXzi4uBp60EdWYTGYUBaqcLIe04k0Wz7vAKx1EqpmBGSKLflKR0IkD0F4VEw7vAKx1(N8omp2BBzt0CyhyrFK2lLIYKr)TJ(ZC2ZAVukktg932tXzi4uBFO4fjaI8j24SJuGgxHgWa4a042n0ao0ao0ekErcaUIYcUaoOb0mp0WFGanUDdnHIxKaGROSGlGdAanUUcnUac0Ga0Wl0ao0O0irwSsjVuiqZk0ag042n0SZfUHflpnlc0mp04YCcnianianUDdnGdnHIxKaiYNyJZ6GgwxabAMhA4eeOHxObCOrPrISyLsEPqGMvObmOXTBOzNlCdlwEAweOzEOHJCeAqaAqO9knYRApwuhzTy3m9jKo6pGbspR9knYRApxrXHviePOs7LsrzYO)2r)bmW6zTxkfLjJ(B7vAKx1Ekpu2f4RsQfLPKO9uCgco12JoT3ap5DyES32YMO5WoWI(iaJd0Q9YEl0Ww6tApLhk7c8vj1IYus0r)bmx6zTxkfLjJ(B7vAKx1ELWfzTeIfR87HT0dRS2tXzi4uB)qqN2BaSYVh2spSYSdbDAVbghOf042n0me0P9gGE1yIgjYInlKSdbDAVbMCan8cnHIxKaGROSGlGdAanUcnCcg042n0ekErcGiFIno7ifOXvOXfqAFPpP9kHlYAjelw53dBPhwzD0FaJZEw7vAKx1(jIyZqEK2lLIYKr)TJoA)q2srsKfspR)awpR9sPOmz0FBpfNHGtT9HwiL1c0Wl0ao0ao0SNymlwOCv8IyJ8jqJRqdyqdVqtw07L1IDOpDrSCsGgeGg3UHgWHgLgjYIvk5LcbAMhA4eA4fAYIEVSwSd9PlILtc0Wl0GoT3ad5DLL4irsiaJd0cAqaAC7gAahAYIEVSwSd9PlILdeOzEObeax4a0WpHgUIYcUap9FqdcqdcTxPrEv7hY7klXrIKq6O)4spR9sPOmz0FBpfNHGtT9GdnknsKfRuYlfc0mp0Wj0Wl0Kf9EzTyh6txelNeOHxObDAVbgY7klXrIKqaghOf0Ga042n0ao0Kf9EzTyh6txelhiqZ8qdiaCeA4NqdxrzbxGN(pObH2R0iVQ9KBIzrvmofCh9ho7zTxkfLjJ(B7P4meCQTNROSGlGdbtLkGgxHgoas7vAKx1E0jgsw5FbwPrEvh9ho2ZAVsJ8Q2)KqFh2b3JKK2lLIYKr)TJ(dh6zTxPrEv73PG5XII1A0EPuuMm6VD0r7Rd)uwpR)awpR9sPOmz0FBpfNHGtT97jgZIfkxfVi2iFc04k0ag0Wl0ao0mxOjuMubWMPpXsXkHlGukktgqJB3qd4qZ4casUKm7TTBM(eaS80SiqJRqdNqdVqZCHgLg5vazTfCPmljWjscajxsM1btPYaAqaAqO9knYRAFwBbxkZscCIK0r)XLEw7LsrzYO)2EkodbNA7bhAahAqN2BGNe67Wo4EKKam5aA4fAi3eZUX6YtQGanZVcnCcnianUDdnKBIz3yD5jvqGM5xHgocni0ELg5vTN4iXzyrVhAh9ho7zTxkfLjJ(B7P4meCQThCOzUqtOmPcaIJeNHf9EOasPOmzan8cnGdnGdnOt7nWtc9DyhCpssaMCan8cnKBIz3yD5jvqGM5xHgoHgeGg3UHgYnXSBSU8KkiqZ8RqdhHgeGgeAVsJ8Q2tUjMLYefzPJ(dh7zTxkfLjJ(B7P4meCQTpuMubaXrIZWIEpuaPuuMmGgEHgYnXSBSU8KkiqZk0as7vAKx1EYnXSuMOilD0F4qpR9sPOmz0FBpfNHGtT97jmpqJRRqZCcs7vAKx1(89oMg5vwDcRD0F(REw7LsrzYO)2EkodbNA73tyEGgxxHM)dK2R0iVQ9BHHY0H0r)5)6zTxkfLjJ(B7P4meCQTNCtm7gRlpPcc046k0Wz7vAKx1(nwPXew6O)WF9S2R0iVQ9KCjz2BB3m9jTxkfLjJ(Bh9N5SN1ELg5vTNWvuC7LsrzYO)2r)bmq6zTxPrEv7dU4du7cttKL2lLIYKr)TJo6OJo6ga]] )
 
 end

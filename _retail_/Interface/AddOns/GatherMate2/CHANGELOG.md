@@ -1,9 +1,11 @@
 # GatherMate2
 
-## [1.45.6](https://github.com/Nevcairiel/GatherMate2/tree/1.45.6) (2020-09-01)
-[Full Changelog](https://github.com/Nevcairiel/GatherMate2/compare/1.45.5...1.45.6) [Previous Releases](https://github.com/Nevcairiel/GatherMate2/releases)
+## [1.46.0](https://github.com/Nevcairiel/GatherMate2/tree/1.46.0) (2020-10-13)
+[Full Changelog](https://github.com/Nevcairiel/GatherMate2/compare/1.45.6...1.46.0) [Previous Releases](https://github.com/Nevcairiel/GatherMate2/releases)
 
-- Remove classic packaging  
-- Use a different spell to get the "Herbalism" string  
-    - On retail we can use a different spell to get the skill name directly  
-    - On classic this fixes the string for non-ASCII names  
+- Update TOC for 9.0  
+- Add Shadowlands fishing pools  
+- Add Shadowlands Mining and Herbalism nodes  
+- Use new mapRadius source on WoW 9.0 to avoid event spam  
+- Delegate classic tags to the classic script  
+- Migrate to GitHub Actions  

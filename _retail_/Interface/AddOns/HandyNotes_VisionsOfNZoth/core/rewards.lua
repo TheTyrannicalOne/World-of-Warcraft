@@ -66,7 +66,12 @@ local Achievement = Class('Achievement', Reward)
 local GetCriteriaInfo = function (id, criteria)
     local results = {GetAchievementCriteriaInfoByID(id, criteria)}
     if not results[1] then
-        results = {GetAchievementCriteriaInfo(id, criteria)}
+        if criteria <= GetAchievementNumCriteria(id) then
+            results = {GetAchievementCriteriaInfo(id, criteria)}
+        else
+            ns.Error('unknown achievement criteria ('..id..', '..criteria..')')
+            return UNKNOWN
+        end
     end
     return unpack(results)
 end
@@ -101,7 +106,6 @@ function Achievement:IsObtained()
 end
 
 function Achievement:Render(tooltip)
-    if self.lineAbove then tooltip:AddLine(' ') end
     local _,name,_,completed,_,_,_,_,_,icon = GetAchievementInfo(self.id)
     tooltip:AddLine(ACHIEVEMENT_COLOR_CODE..'['..name..']|r')
     tooltip:AddTexture(icon, {margin={right=2}})

@@ -1,10 +1,10 @@
-## Interface: 80205
+## Interface: 90001
 ## Title: Ackis Recipe List: Mining
 ## Notes: Mining data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 8.2.5.1
-## X-Revision: 8a4c33e
-## X-Date: 2020-01-10T4:57:17Z
+## Version: 9.0.1
+## X-Revision: 6d756bc
+## X-Date: 2020-10-13T17:54:18Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

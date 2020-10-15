@@ -147,7 +147,7 @@ function ns.StartConfiguration( external )
     ns.UI.Notification:SetMovable( true )
     ns.UI.Notification.Mover = ns.UI.Notification.Mover or CreateFrame( "Frame", "HekiliNotificationMover", ns.UI.Notification )
     ns.UI.Notification.Mover:SetAllPoints(HekiliNotification)
-    ns.UI.Notification.Mover:SetBackdrop( {
+    --[[ ns.UI.Notification.Mover:SetBackdrop( {
         bgFile = "Interface/Buttons/WHITE8X8",
         edgeFile = "Interface/Buttons/WHITE8X8",
         tile = false,
@@ -157,7 +157,7 @@ function ns.StartConfiguration( external )
     } )
 
     ns.UI.Notification.Mover:SetBackdropColor( 0, 0, 0, .8 )
-    ns.UI.Notification.Mover:SetBackdropBorderColor( ccolor.r, ccolor.g, ccolor.b, 1 )
+    ns.UI.Notification.Mover:SetBackdropBorderColor( ccolor.r, ccolor.g, ccolor.b, 1 ) ]]
     ns.UI.Notification.Mover:Show()
 
     local f = ns.UI.Notification.Mover
@@ -207,7 +207,7 @@ function ns.StartConfiguration( external )
             v:EnableMouse( true )
             v:SetMovable( true )
 
-            v.Backdrop = v.Backdrop or CreateFrame( "Frame", v:GetName().. "_Backdrop", UIParent ) --, v )
+            v.Backdrop = v.Backdrop or Mixin( CreateFrame( "Frame", v:GetName().. "_Backdrop", UIParent ), BackdropTemplateMixin )
             v.Backdrop:ClearAllPoints()
             
             local left, right, top, bottom = v:GetPerimeterButtons()
@@ -289,11 +289,11 @@ function ns.StartConfiguration( external )
     -- HekiliNotification:SetMovable(true)
     if not external then
         local ACD = LibStub( "AceConfigDialog-3.0" )
-        ACD:SetDefaultSize( "Hekili", 800, 600 )
+        ACD:SetDefaultSize( "Hekili", 800, 608 )
         ACD:Open( "Hekili" )
 
         local oFrame = ACD.OpenFrames["Hekili"].frame
-        oFrame:SetMinResize(800,600)
+        oFrame:SetMinResize( 800,608 )
 
         ns.OnHideFrame = ns.OnHideFrame or CreateFrame( "Frame" )
         ns.OnHideFrame:SetParent( oFrame )
@@ -331,7 +331,7 @@ function ns.StopConfiguration()
     for i, v in pairs( ns.UI.Displays ) do
         v:EnableMouse( false )
         v:SetMovable( true )
-        v:SetBackdrop( nil )
+        -- v:SetBackdrop( nil )
         if v.Header then
             v.Header:Hide()
         end
@@ -366,10 +366,8 @@ do
 
     local function SetDisplayMode( mode )
         Hekili.DB.profile.toggles.mode.value = mode
-        Hekili.NotifyWeakAuras( "HEKILI_TOGGLE", "mode", mode )
-
+        if WeakAuras and WeakAuras.ScanEvents then WeakAuras.ScanEvents( "HEKILI_TOGGLE", "mode", mode ) end
         if ns.UI.Minimap then ns.UI.Minimap:RefreshDataText() end
-        
         Hekili:UpdateDisplayVisibility()
         Hekili:ForceUpdate( "HEKILI_TOGGLE", true )
     end
@@ -655,7 +653,7 @@ do
                     local a = r.actionName
 
                     if a then                        
-                        r.keybind = Hekili:GetBindingForAction( r.actionName, conf )
+                        r.keybind = Hekili:GetBindingForAction( r.actionName, conf, i )
                     end
 
                     if i == 1 or ( conf.keybindings.queued and not cPort ) then
@@ -905,9 +903,7 @@ do
                             if a.item then
                                 outOfRange = IsItemInRange( a.itemCd or a.item, "target" ) == false
                             else
-                                local name = a.range and class.abilities[ a.range ] and class.abilities[ a.range ].name
-                                name = name or a.actualName or a.name
-                                outOfRange = LSR.IsSpellInRange( name, "target" ) == 0
+                                outOfRange = LSR.IsSpellInRange( a.rangeSpell or a.actualName or a.name, "target" ) == 0
                             end
                         end
                     end
@@ -1133,10 +1129,10 @@ do
 
     local function Display_UpdateAlpha( self )
         if self.Backdrop then
-            if not Hekili:IsDisplayActive( self.id, true ) then self.Backdrop:SetBackdropBorderColor( 0.5, 0.5, 0.5, 0.5 )
+            --[[ if not Hekili:IsDisplayActive( self.id, true ) then self.Backdrop:SetBackdropBorderColor( 0.5, 0.5, 0.5, 0.5 )
             else
                 self.Backdrop:SetBackdropBorderColor( RAID_CLASS_COLORS[ class.file ]:GetRGBA() )
-            end
+            end ]]
         end
 
         if not self.Active then
@@ -1193,7 +1189,8 @@ do
                     duration = gDuration
                 end
 
-                if i == 1 and conf.delays.extend and rec.delay and rec.delay > 0 and rec.exact_time > max( now, start + duration ) then
+                if i == 1 and conf.delays.extend and rec.time > 0 and rec.exact_time > max( now, start + duration ) then
+                -- if i == 1 and conf.delays.extend and rec.exact_time > max( now, start + duration ) then
                     start = start > 0 and start or state.gcd.lastStart
                     duration = rec.exact_time - start
                 end
@@ -1600,33 +1597,6 @@ do
     local listActive = {}
     local actsActive = {}
 
-    function Hekili:ReviewPacks()
-        local profile = self.DB.profile
-
-        for list in pairs( listActive ) do
-            listActive[ list ] = nil
-        end
-
-        for a in pairs( actsActive ) do
-            actsActive[ a ] = nil
-        end
-
-        for packName, pack in pairs( profile.packs ) do
-            if pack.spec == 0 or pack.spec == state.spec.id then
-                for listName, list in pairs( pack.lists ) do
-                    listActive[ packName .. ":" .. listName ] = true
-
-                    -- NYI:  We can cache if abilities are disabled here as well to reduce checking in ProcessHooks.
-                    for a, entry in ipairs( list ) do
-                        if entry.enabled and entry.action and class.abilities[ entry.action ] then
-                            actsActive[ packName .. ":" .. listName .. ":" .. a ] = true
-                        end
-                    end
-                end
-            end
-        end
-    end
-
     function Hekili:UpdateDisplayVisibility()
         local profile = self.DB.profile
         local displays = ns.UI.Displays
@@ -1647,9 +1617,6 @@ do
         specEnabled = specEnabled and GetSpecializationInfo( specEnabled )
         specEnabled = specEnabled and profile.specs[ specEnabled ]
         specEnabled = specEnabled and specEnabled.enabled or false
-
-        -- Revise pack/list availability before displays potentially get activated.
-        self:ReviewPacks()
 
         if profile.enabled and specEnabled then
             for i, display in pairs( profile.displays ) do
@@ -1678,10 +1645,52 @@ do
                     end
                 end
             end
+
+            for packName, pack in pairs( profile.packs ) do
+                if pack.spec == 0 or pack.spec == state.spec.id then
+                    for listName, list in pairs( pack.lists ) do
+                        listActive[ packName .. ":" .. listName ] = true
+
+                        -- NYI:  We can cache if abilities are disabled here as well to reduce checking in ProcessHooks.
+                        for a, entry in ipairs( list ) do
+                            if entry.enabled and entry.action then
+                                actsActive[ packName .. ":" .. listName .. ":" .. a ] = true
+                            end
+                        end
+                    end
+                end
+            end
         end
 
         for i, d in pairs(ns.UI.Displays) do
             d:UpdateAlpha()
+        end
+    end
+
+    function Hekili:ReviewPacks()
+        local profile = self.DB.profile
+
+        for list in pairs( listActive ) do
+            listActive[ list ] = nil
+        end
+
+        for a in pairs( actsActive ) do
+            actsActive[ a ] = nil
+        end
+
+        for packName, pack in pairs( profile.packs ) do
+            if pack.spec == 0 or pack.spec == state.spec.id then
+                for listName, list in pairs( pack.lists ) do
+                    listActive[ packName .. ":" .. listName ] = true
+
+                    -- NYI:  We can cache if abilities are disabled here as well to reduce checking in ProcessHooks.
+                    for a, entry in ipairs( list ) do
+                        if entry.enabled and entry.action and class.abilities[ entry.action ] then
+                            actsActive[ packName .. ":" .. listName .. ":" .. a ] = true
+                        end
+                    end
+                end
+            end
         end
     end
 
@@ -1836,14 +1845,17 @@ do
 
         -- Keybinding Text
         b.Keybinding = b.Keybinding or b:CreateFontString(bName .. "_KB", "OVERLAY")
-        local kbFont = conf.keybindings.font or conf.font
-        b.Keybinding:SetFont( LSM:Fetch("font", kbFont), conf.keybindings.fontSize or 12, conf.keybindings.fontStyle or "OUTLINE" )
+
+        local queued = id > 1 and conf.keybindings.separateQueueStyle
+        local kbFont = queued and conf.keybindings.queuedFont or conf.keybindings.font or conf.font
+
+        b.Keybinding:SetFont( LSM:Fetch("font", kbFont), queued and conf.keybindings.queuedFontSize or conf.keybindings.fontSize or 12, queued and conf.keybindings.queuedFontStyle or conf.keybindings.fontStyle or "OUTLINE" )
 
         local kbAnchor = conf.keybindings.anchor or "TOPRIGHT"
         b.Keybinding:ClearAllPoints()
         b.Keybinding:SetPoint( kbAnchor, b, kbAnchor, conf.keybindings.x or 0, conf.keybindings.y or 0 )
         b.Keybinding:SetSize( 0, 0 )
-        b.Keybinding:SetTextColor( unpack( conf.keybindings.color ) )
+        b.Keybinding:SetTextColor( unpack( queued and conf.keybindings.queuedColor or conf.keybindings.color ) )
 
         local kbText = b.Keybinding:GetText()
         b.Keybinding:SetText( nil )
@@ -1859,11 +1871,17 @@ do
         b.Cooldown:SetDrawBling( false )
         b.Cooldown:SetDrawEdge( false )
 
+        if _G["ElvUI"] and ( ( id == 1 and conf.elvuiCooldown ) or ( id > 1 and conf.queue.elvuiCooldown ) ) and not b.Cooldown.elvRegistered then
+            local E = unpack( ElvUI )            
+            E:RegisterCooldown( b.Cooldown )
+            b.Cooldown.elvRegistered = true
+        end
+
         -- Backdrop (for borders)
-        b.Backdrop = b.Backdrop or CreateFrame("Frame", bName .. "_Backdrop", b )
+        b.Backdrop = b.Backdrop or Mixin( CreateFrame("Frame", bName .. "_Backdrop", b ), BackdropTemplateMixin )
         b.Backdrop:ClearAllPoints()
-        b.Backdrop:SetWidth( b:GetWidth() + 2 )
-        b.Backdrop:SetHeight( b:GetHeight() + 2 )
+        b.Backdrop:SetWidth( b:GetWidth() + ( conf.border.thickness and ( 2 * conf.border.thickness ) or 2 ) )
+        b.Backdrop:SetHeight( b:GetHeight() + ( conf.border.thickness and ( 2 * conf.border.thickness ) or 2 ) )
 
         local framelevel = b:GetFrameLevel()
         if framelevel > 0 then
@@ -1884,7 +1902,7 @@ do
                 edgeFile = "Interface\\Buttons\\WHITE8X8",
                 tile = false,
                 tileSize = 0,
-                edgeSize = 1,
+                edgeSize = conf.border.thickness or 1,
                 insets = { left = -1, right = -1, top = -1, bottom = -1 }
             } )
             if conf.border.coloring == 'custom' then
@@ -2273,8 +2291,8 @@ function Hekili:ShowDiagnosticTooltip( q )
 
     if backdrop then
         backdrop.bgFile = [[Interface\Buttons\WHITE8X8]]
-        tt:SetBackdrop(backdrop)
-        tt:SetBackdropColor(0, 0, 0, 1)
+        --[[ tt:SetBackdrop(backdrop)
+        tt:SetBackdropColor(0, 0, 0, 1) ]]
     end
 
     tt:SetOwner(UIParent, "ANCHOR_CURSOR")
@@ -2287,9 +2305,11 @@ function Hekili:ShowDiagnosticTooltip( q )
 
     if q.HookHeader or (q.HookScript and q.HookScript ~= "") then
         if q.HookHeader then
-            tt:AddLine("\n" .. q.HookHeader)
+            tt:AddLine(" ")
+            tt:AddLine(q.HookHeader)
         else
-            tt:AddLine("\nHook Criteria")
+            tt:AddLine(" ")
+            tt:AddLine("Hook Criteria")
         end
 
         if q.HookScript and q.HookScript ~= "" then
@@ -2301,10 +2321,11 @@ function Hekili:ShowDiagnosticTooltip( q )
             local applied = false
             for k, v in orderedPairs(q.HookElements) do
                 if not applied then
+                    tt:AddLine(" ")
                     tt:AddLine("Values")
                     applied = true
                 end
-                if not key_cache[k]:find( "safebool" ) and not key_cache[k]:find( "safenum" ) then
+                if not key_cache[k]:find( "safebool" ) and not key_cache[k]:find( "safenum" ) and not key_cache[k]:find( "ceil" ) and not key_cache[k]:find( "floor" ) then
                     tt:AddDoubleLine( key_cache[ k ], ns.formatValue(v), 1, 1, 1, 1, 1, 1)
                 end
             end
@@ -2312,7 +2333,8 @@ function Hekili:ShowDiagnosticTooltip( q )
     end
 
     if q.ReadyScript and q.ReadyScript ~= "" then
-        tt:AddLine("\nTime Script")
+        tt:AddLine(" ")
+        tt:AddLine("Time Script")
 
         local Text = Format(q.ReadyScript)
         tt:AddLine(fmt.FormatCode(Text, 0, SyntaxColors), 1, 1, 1, 1)
@@ -2320,7 +2342,7 @@ function Hekili:ShowDiagnosticTooltip( q )
         if q.ReadyElements then
             tt:AddLine("Values")
             for k, v in orderedPairs(q.ReadyElements) do
-                if not key_cache[k]:find( "safebool" ) and not key_cache[k]:find( "safenum" ) then
+                if not key_cache[k]:find( "safebool" ) and not key_cache[k]:find( "safenum" ) and not key_cache[k]:find( "ceil" ) and not key_cache[k]:find( "floor" ) then
                     tt:AddDoubleLine( key_cache[ k ], ns.formatValue(v), 1, 1, 1, 1, 1, 1)
                 end
             end
@@ -2328,15 +2350,17 @@ function Hekili:ShowDiagnosticTooltip( q )
     end
 
     if q.ActScript and q.ActScript ~= "" then
-        tt:AddLine("\nAction Criteria")
+        tt:AddLine(" ")
+        tt:AddLine("Action Criteria")
 
         local Text = Format(q.ActScript)
         tt:AddLine(fmt.FormatCode(Text, 0, SyntaxColors), 1, 1, 1, 1)
 
         if q.ActElements then
+            tt:AddLine(" ")
             tt:AddLine("Values")
             for k, v in orderedPairs(q.ActElements) do
-                if not key_cache[k]:find( "safebool" ) and not key_cache[k]:find( "safenum" ) then
+                if not key_cache[k]:find( "safebool" ) and not key_cache[k]:find( "safenum" ) and not key_cache[k]:find( "ceil" ) and not key_cache[k]:find( "floor" ) then
                     tt:AddDoubleLine( key_cache[ k ], ns.formatValue(v), 1, 1, 1, 1, 1, 1)
                 end
             end

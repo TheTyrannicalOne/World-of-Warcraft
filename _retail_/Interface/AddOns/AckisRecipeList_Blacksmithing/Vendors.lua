@@ -63,8 +63,8 @@ function module:InitializeVendors()
 	AddVendor(50375,	L["Kuldar Steeltooth"],			Z.TWILIGHT_HIGHLANDS,		77.3,	53.1,	"Horde")
 	AddVendor(50382,	L["Brundall Chiselgut"],		Z.TWILIGHT_HIGHLANDS,		79.1,	76.5,	"Alliance")
 	AddVendor(52641,	L["Layna Karner"],			Z.DARNASSUS,			56.8,	52.5,	"Alliance")
-	AddVendor(64058,	L["Jorunga Stonehoof"],			Z.SHRINE_OF_TWO_MOONS,		29.4,	43.4,	"Horde")
-	AddVendor(64085,	L["Cullen Hammerbrow"],			Z.SHRINE_OF_SEVEN_STARS,	74.4,	51.0,	"Alliance")
+	AddVendor(64058,	L["Jorunga Stonehoof"],			Z.VALE_OF_ETERNAL_BLOSSOMS,	59.25,  11.7,	"Horde")
+	AddVendor(64085,	L["Cullen Hammerbrow"],			Z.VALE_OF_ETERNAL_BLOSSOMS,	74.4,	51.0,	"Alliance") -- Needs updating
 	AddVendor(64599,	L["Ambersmith Zikk"],			Z.DREAD_WASTES,			55.0,	35.6,	"Neutral")
 	AddVendor(77359,	L["Auria Irondreamer"],			Z.LUNARFALL,			0.0,	0.0,	"Alliance")  -- Alliance Garrison
 	AddVendor(79867,	L["Orgek Ironhand"],			Z.FROSTWALL,			0.0,	0.0,	"Horde")  -- Horde Garrison

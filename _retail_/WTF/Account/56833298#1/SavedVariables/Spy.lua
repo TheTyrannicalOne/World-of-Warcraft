@@ -187,6 +187,7 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Shanyt - Argent Dawn"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 740.5000610351562,
@@ -208,8 +209,6 @@ SpyDB = {
 					},
 				},
 			},
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Shimzo - Zul'jin"] = {
@@ -326,7 +325,6 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Zulbathal - Zul'jin"] = {
-			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 739.500244140625,
@@ -349,6 +347,7 @@ SpyDB = {
 					},
 				},
 			},
+			["AppendUnitNameCheck"] = true,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Ruffinton - Dalaran"] = {

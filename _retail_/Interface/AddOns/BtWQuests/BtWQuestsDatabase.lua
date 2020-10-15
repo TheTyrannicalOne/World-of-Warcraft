@@ -2448,52 +2448,6 @@ function AuraItemMixin:IsCompleted(database, item, character)
     end
 end
 
-local HeartOfAzerothLevelItemMixin = CreateFromMixins(ItemMixin);
-function HeartOfAzerothLevelItemMixin:GetName(database, item, character)
-    if item.name then
-        return ItemMixin.GetName(self, database, item, character);
-    end
-
-    return string.format(L["BTWQUESTS_HEART_OF_AZEROTH_LEVEL"], item.level)
-end
-function HeartOfAzerothLevelItemMixin:IsActive(database, item, character)
-    return true
-end
-function HeartOfAzerothLevelItemMixin:IsCompleted(database, item, character)
-    if item.atmost then
-        return character:HeartOfAzerothAtmostLevel(item.level)
-    else
-        return character:HeartOfAzerothAtleastLevel(item.level)
-    end
-end
-
-local AzeriteEssenceItemMixin = CreateFromMixins(ItemMixin);
-function AzeriteEssenceItemMixin:GetName(database, item, character, variation)
-    if item.name then
-        return ItemMixin.GetName(self, database, item, character);
-    end
-    
-    local id = self:GetID(database, item)
-    local rank = item.rank
-    local essence = C_AzeriteEssence.GetEssenceInfo(id)
-    local name = essence and essence.name or ""
-    if rank then
-        return string.format(AZERITE_ESSENCE_TOOLTIP_NAME_RANK, name, rank)
-    else
-        return name
-    end
-end
-function AzeriteEssenceItemMixin:IsCompleted(database, item)
-    local id = self:GetID(database, item)
-    local rank = item.rank
-    local essence = C_AzeriteEssence.GetEssenceInfo(id)
-    if rank then
-        return essence.rank >= rank and essence.unlocked
-    else
-        return essence.unlocked
-    end
-end
-
 local ProfessionItemMixin = CreateFromMixins(ItemMixin);
 function ProfessionItemMixin:GetName(database, item, character, variation)
     if item.name then
@@ -3641,8 +3595,6 @@ Database:RegisterItemType("pet", PetItemMixin);
 Database:RegisterItemType("mount", MountItemMixin);
 Database:RegisterItemType("toy", ToyItemMixin);
 Database:RegisterItemType("aura", AuraItemMixin);
-Database:RegisterItemType("heartlevel", HeartOfAzerothLevelItemMixin);
-Database:RegisterItemType("azessence", AzeriteEssenceItemMixin);
 Database:RegisterItemType("profession", ProfessionItemMixin);
 Database:RegisterItemType("item", ItemItemMixin);
 Database:RegisterItemType("equipped", EquippedItemMixin);

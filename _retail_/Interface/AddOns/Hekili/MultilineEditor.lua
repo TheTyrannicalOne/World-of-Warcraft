@@ -292,7 +292,7 @@ local function GenerateDiagnosticTooltip( widget, event )
 
         GameTooltip:AddLine( "Values" )
         for k, v in orderedPairs( arg ) do
-          if not key_cache[k]:find( "safebool" ) and not key_cache[k]:find( "safenum" ) then
+          if not key_cache[k]:find( "safebool" ) and not key_cache[k]:find( "safenum" ) and not key_cache[k]:find("floor") and not key_cache[k]:find( "ceil" ) and ( type(v) ~= "string" or not v:find( "function" ) ) then
             GameTooltip:AddDoubleLine( key_cache[ k ], ns.formatValue( v ), 1, 1, 1, 1, 1, 1 )
           end
         end
@@ -530,7 +530,7 @@ local function Constructor()
   text:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -5, 1)
   text:SetJustifyV("MIDDLE")
 
-  local scrollBG = CreateFrame("Frame", nil, frame)
+  local scrollBG = Mixin(CreateFrame("Frame", nil, frame),BackdropTemplateMixin)
   scrollBG:SetBackdrop(backdrop)
   scrollBG:SetBackdropColor(0, 0, 0)
   scrollBG:SetBackdropBorderColor(0.4, 0.4, 0.4)

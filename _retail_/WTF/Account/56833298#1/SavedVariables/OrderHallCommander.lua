@@ -67,6 +67,7 @@ dbOHC = {
 			["showmenu"] = true,
 			["blacklist"] = {
 				[1816] = true,
+				[1765] = false,
 			},
 		},
 	},

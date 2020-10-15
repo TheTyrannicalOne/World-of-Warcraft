@@ -1,28 +1,28 @@
 
 MasterPlanAG = {
+	["IgnoreRewards"] = {
+	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["lastCacheTime"] = 1602555727,
+			["lastCacheTime"] = 1602691382,
 			["summary"] = {
-				["lastOilTime"] = 1602526953,
+				["lastOilTime"] = 1602682669,
 				["tt2"] = 1601786308,
 				["tt3"] = 1601532756,
 				["ti1"] = 118531,
 				["tt1"] = 1601646576,
 				["ti3"] = 127855,
 				["inProgress"] = {
-					[500] = 1602591692,
-					[745] = 1602591753,
-					[397] = 1602591694,
-					[119] = 1602559280,
-					[385] = 1602570082,
-					[699] = 1602559301,
-					[538] = 1602555750,
-					[675] = 1602555689,
-					[677] = 1602591677,
-					[184] = 1602557473,
-					[264] = 1602555736,
-					[563] = 1602555747,
+					[396] = 1602760046,
+					[184] = 1602733051,
+					[684] = 1602752844,
+					[673] = 1602745655,
+					[128] = 1602760060,
+					[677] = 1602767253,
+					[174] = 1602734849,
+					[619] = 1602755587,
+					[303] = 1602752858,
+					[745] = 1602747469,
 				},
 				["ti2"] = 122486,
 			},
@@ -35,6 +35,12 @@ MasterPlanAG = {
 		["Tyrannithal"] = {
 			["faction"] = "Horde",
 			["class"] = "DEMONHUNTER",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Dalaran"] = {
@@ -100,12 +106,6 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
 	["Zul'jin"] = {
 		["Tyranasticus"] = {
 			["faction"] = "Horde",
@@ -164,7 +164,5 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["faction"] = "Horde",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }

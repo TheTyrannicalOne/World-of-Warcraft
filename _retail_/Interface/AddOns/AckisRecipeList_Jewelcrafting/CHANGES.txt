@@ -1,18 +1,12 @@
-tag 2429032818c084fb700cc3eae6dc580e0f6f11d7 8.3.0.1
+tag ddb6a01b16f41c370432cdefcf6f8a93255bd11c 9.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Jan 14 18:11:19 2020 -0500
+Date:	Tue Oct 13 14:03:16 2020 -0400
 
-8.3.0 update
+9.0. update - includes scans of older vendors
 
-commit 04a4954061d156166850fa9225b0103ebe8a87a2
+commit 40b3166a5df94462999f2e26f17f9527240dc449
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Jan 14 17:59:31 2020 -0500
+Date:   Tue Oct 13 13:53:24 2020 -0400
 
-    8.3 update
-
-commit 04a4954061d156166850fa9225b0103ebe8a87a2
-Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Jan 14 17:59:31 2020 -0500
-
-    8.3 update
+    9.0 update
 

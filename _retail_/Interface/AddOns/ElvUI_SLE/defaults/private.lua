@@ -15,24 +15,12 @@ V["sle"] = {
 	},
 	--Minimap Module
 	["minimap"] = {
-		["buttons"] = {
-			["enable"] = true,
-		},
-		["mapicons"] = {
-			["enable"] = false,
-			["barenable"] = false,
-			["template"] = "Transparent",
-			["skindungeon"] = false,
-			["skinmail"] = false,
-			["skingarrison"] = false,
-		},
 		rectangle = false,
 	},
 	["vehicle"] = {
 		["enable"] = false,
 		["numButtons"] = 7,
 	},
-
 	["professions"] = {
 		["deconButton"] = {
 			["enable"] = true,
@@ -60,30 +48,7 @@ V["sle"] = {
 			["points"] = {},
 		},
 		["shadows"] = {
-			["arena"] = false,
-			["arenaLegacy"] = false,
-			["boss"] = false,
-			["bossLegacy"] = false,
-			["focus"] = false,
-			["focusLegacy"] = false,
-			["focustarget"] = false,
-			["focustargetLegacy"] = false,
-			["party"] = false,
-			["partyLegacy"] = false,
-			["pet"] = false,
-			["petLegacy"] = false,
-			["pettarget"] = false,
-			["pettargetLegacy"] = false,
-			["player"] = false,
-			["playerLegacy"] = false,
-			["raid"] = false,
-			["raidLegacy"] = false,
-			["raid40"] = false,
-			["raid40Legacy"] = false,
-			["target"] = false,
-			["targetLegacy"] = false,
-			["targettarget"] = false,
-			["targettargetLegacy"] = false,
+			enable = true, -- TODO: Still need to implement this
 			["vehicle"] = false,
 			["actionbars"] = {
 				["bar1"] = false,
@@ -280,7 +245,6 @@ if G["profileCopy"] then
 		},
 		["minimap"] = {
 			["coords"] = true,
-			["mapicons"] = true,
 			["instance"] = true,
 			["locPanel"] = true,
 		},

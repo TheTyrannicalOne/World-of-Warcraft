@@ -74,7 +74,7 @@ function module:InitializeTrainers()
 	AddTrainer(52636, "Tana Lentner", 		Z.DARNASSUS, 			49.6, 32.3, "Alliance")
 	AddTrainer(52651, "Engineer Palehoof", 		Z.THUNDER_BLUFF, 		36.1, 59.6, "Horde")
 	AddTrainer(55143, "Sally Fizzlefury", 		Z.VALLEY_OF_THE_FOUR_WINDS, 	16.1, 83.1, "Neutral")
-	AddTrainer(64924, "Guyo Crystalgear",		Z.SHRINE_OF_TWO_MOONS,		60.8, 44.1, "Horde")
+	AddTrainer(64924, "Guyo Crystalgear",		Z.VALE_OF_ETERNAL_BLOSSOMS,	62.2, 11.6, "Horde") -- Needs updating
 	AddTrainer(85918, "Hilda Copperfuze", 		Z.STORMSHIELD, 			48.2, 40.5, "Alliance")
 	AddTrainer(86012, "Han Leaprocket", 		Z.WARSPEAR, 			71.8, 39.2, "Horde")
 	AddTrainer(92194, "Timofey Oshenko",		Z.DALARAN_BROKENISLES,		38.2, 26.1, "Neutral")
@@ -83,6 +83,7 @@ function module:InitializeTrainers()
 	AddTrainer(136059, "Layla Evenkeel", 		Z.BORALUS, 			77.3, 14.2, "Alliance")
 	AddTrainer(150630, "Flip Quickcharge", 		Z.MECHAGON_ISLAND, 		70.86, 39.16, "Neutral")
 	AddTrainer(150631, "Pristy Quickcharge", 	Z.MECHAGON_ISLAND, 		70.82, 38.42, "Neutral")
+	AddTrainer(156691, "Machinist Au'gur", 		Z.ORIBOS,			37.47, 44.40, "Neutral")
 
 	self.InitializeTrainers = nil
 end

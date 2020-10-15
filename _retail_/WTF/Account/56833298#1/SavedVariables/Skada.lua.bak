@@ -210,6 +210,7 @@ SkadaDB = {
 			},
 			["versions"] = {
 				["1.6.7"] = true,
+				["1.8.0"] = true,
 				["1.6.4"] = true,
 				["1.6.3"] = true,
 			},
@@ -228,10 +229,10 @@ SkadaDB = {
 					["barslocked"] = true,
 					["barwidth"] = 251.1667633056641,
 					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
 					["background"] = {
 						["height"] = 211.1883697509766,
 					},
-					["point"] = "BOTTOMRIGHT",
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -358,17 +359,18 @@ SkadaDB = {
 			},
 			["versions"] = {
 				["1.6.3"] = true,
+				["1.8.0"] = true,
 				["1.6.4"] = true,
 				["1.6.7"] = true,
+			},
+			["report"] = {
+				["mode"] = "Healing taken",
 			},
 			["modeclicks"] = {
 				["Damage"] = 4,
 				["Threat"] = 1,
 				["Healing taken"] = 7,
 				["DPS"] = 2,
-			},
-			["report"] = {
-				["mode"] = "Healing taken",
 			},
 		},
 		["Darth Eng"] = {

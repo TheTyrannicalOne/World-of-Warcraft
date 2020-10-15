@@ -28,11 +28,19 @@ OmniCCDB = {
 		["Jingojaggot - Zul'jin"] = "Default",
 	},
 	["global"] = {
-		["addonVersion"] = "8.3.6",
+		["addonVersion"] = "9.0.0",
 		["dbVersion"] = 5,
 	},
 	["profiles"] = {
 		["Default"] = {
+			["rules"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+			},
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {

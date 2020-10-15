@@ -1,6 +1,6 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: BtWQuests: Battle for Azeroth Prologue
-## Version: 14
+## Version: 15
 ## Notes: Battle for Azeroth Prologue quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
