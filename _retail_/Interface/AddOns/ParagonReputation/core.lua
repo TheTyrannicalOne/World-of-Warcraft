@@ -1,5 +1,5 @@
 		-------------------------------------------------
-		-- Paragon Reputation 1.29 by Fail US-Ragnaros --
+		-- Paragon Reputation 1.31 by Fail US-Ragnaros --
 		-------------------------------------------------
 
 		  --[[	  Special thanks to Ammako for
@@ -148,11 +148,10 @@ end
 -- [Paragon Toast] Handle the QUEST_ACCEPTED event.
 local reward = CreateFrame("FRAME")
 reward:RegisterEvent("QUEST_ACCEPTED")
-reward:SetScript("OnEvent",function(self,event,...)
-	local questIndex,questID = ...
+reward:SetScript("OnEvent",function(self,event,questID)
 	if PR.DB.toast and PARAGON_QUEST_ID[questID] then
 		local name = GetFactionInfoByID(PARAGON_QUEST_ID[questID][1])
-		local text = GetQuestLogCompletionText(questIndex)
+		local text = GetQuestLogCompletionText(C_QuestLog.GetLogIndexForQuestID(questID))
 		if ACTIVE_TOAST then
 			WAITING_TOAST[#WAITING_TOAST+1] = {name,text} --Toast is already active, put this info on the line.
 		else

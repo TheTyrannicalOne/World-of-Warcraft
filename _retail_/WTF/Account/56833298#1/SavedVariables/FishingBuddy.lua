@@ -15,10 +15,12 @@ FishingBuddy_Info = {
 			[168646] = 1,
 		},
 	},
+	["KnownZones"] = {
+		[1355] = "Chitterspine Caverns",
+	},
 	["Settings"] = {
 		["CreateMacro"] = true,
 	},
-	["Version"] = 19500,
 	["FishInfo2"] = 0,
 	["SubZones"] = {
 		[1355000] = 1,
@@ -28,11 +30,9 @@ FishingBuddy_Info = {
 	["Fishies"] = {
 		[168646] = {
 			["enUS"] = "Mauve Stinger",
-			["quality"] = 1,
 			["texture"] = 3007472,
+			["quality"] = 1,
 		},
 	},
-	["KnownZones"] = {
-		[1355] = "Chitterspine Caverns",
-	},
+	["Version"] = 19500,
 }

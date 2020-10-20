@@ -1,16 +1,12 @@
-lightweight tag d0ef004f71e38d7ac00f49d8d012989b18d0f110 v2.1.11
+tag 6def9dcbc7e5efc10ff34dca88805ec06fff1ed5 v2.1.12
 Author:	Chev <chev@chevtek.io>
-Date:	Wed Sep 25 09:39:27 2019 -0600
+Date:	Fri Oct 16 11:13:57 2020 -0600
 
-commit d0ef004f71e38d7ac00f49d8d012989b18d0f110
+v2.1.12
+
+commit 9956aa7c9988db3465efcca043d36839bc631e61
 Author: Chev <chev@chevtek.io>
-Date:   Wed Sep 25 09:39:27 2019 -0600
+Date:   Fri Oct 16 11:10:51 2020 -0600
 
-    Update WoW version.
-
-commit caa9102876b4925abbc19f59384cbe5029835f95
-Author: Chev <chev@chevtek.io>
-Date:   Wed Sep 25 09:37:09 2019 -0600
-
-    Preserving updates.
+    Update WoW interface version.
 

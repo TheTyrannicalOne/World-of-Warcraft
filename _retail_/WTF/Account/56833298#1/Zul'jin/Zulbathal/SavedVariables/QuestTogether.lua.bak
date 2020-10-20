@@ -95,6 +95,18 @@ QuestTogether = {
 				"0/1 Ten'gor slain", -- [2]
 			},
 		},
+		[53476] = {
+			["title"] = "The Great Sea Scrolls",
+			["objectives"] = {
+				"2/12 Pilgrimage Scroll", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
 		[49422] = {
 			["title"] = "Heretics",
 			["objectives"] = {
@@ -106,23 +118,14 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[25929] = {
-			["title"] = "Sea Legs",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/3 Saltwater Starfish", -- [1]
-				"0/1 Conch Shell", -- [2]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[29907] = {
-			["title"] = "Chen and Li Li",
-			["objectives"] = {
-				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[31486] = {
@@ -152,14 +155,10 @@ QuestTogether = {
 				"0/1 Speak with Brewmaster Boof", -- [2]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[29907] = {
+			["title"] = "Chen and Li Li",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
 			},
 		},
 		[32806] = {
@@ -174,17 +173,18 @@ QuestTogether = {
 				"0/1 Greenstone Village Defended", -- [1]
 			},
 		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
+		[25929] = {
+			["title"] = "Sea Legs",
 			["objectives"] = {
-				"2/12 Pilgrimage Scroll", -- [1]
+				"0/3 Saltwater Starfish", -- [1]
+				"0/1 Conch Shell", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }

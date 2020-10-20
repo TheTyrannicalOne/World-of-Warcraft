@@ -1156,7 +1156,7 @@ local function FilterSpecs(specs)
 			for i=specCount,1,-1 do
 				local specID = specs[i];
 				local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-				if class ~= app.Class then
+				if class ~= app.Class or not name or name == "" then
 					table.remove(specs, i);
 				end
 			end
@@ -3614,7 +3614,7 @@ end
 app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
-local function AddTomTomWaypoint(group, auto)
+local function AddTomTomWaypoint(group, auto, recur)
 	if TomTom and (group.visible or (group.objectiveID and not group.saved) or (app.Settings:Get("DebugMode"))) then
 		if group.coords or group.coord then
 			local opt = {
@@ -3641,18 +3641,22 @@ local function AddTomTomWaypoint(group, auto)
 					TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
 				end
 			end
-			if group.coord then TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt); end
+			if group.coord then
+				TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt);
+			end
 		end
 		if group.g then
 			for i,subgroup in ipairs(group.g) do
 				-- only automatically plot subGroups if they are not quests with incomplete source quests
 				if not subgroup.sourceQuests or subgroup.sourceQuestsCompleted then
-					AddTomTomWaypoint(subgroup, auto);
+					AddTomTomWaypoint(subgroup, auto, true);
 				end
 			end
 		end
-		-- point arrow at closest waypoint
-		TomTom:SetClosestWaypoint();
+		-- point arrow at closest waypoint once leaving the first recursive call
+		if not recur then
+			TomTom:SetClosestWaypoint();
+		end
 	end
 end
 -- Populates/replaces data within a questObject for displaying in a row
@@ -4482,13 +4486,15 @@ local function AttachTooltip(self)
 				-- Does the tooltip have an itemlink?
 				local link = select(2, self:GetItem());
 				if link then
+					--[[
 					local itemString = string.match(link, "item[%-?%d:]+");
+					-- mythic keystones have no itemID ... ?? so itemString is nil here
 					local itemID = GetItemInfoInstant(itemString);
-					--[[if not AllTheThingsAuctionData then return end;
+					if not AllTheThingsAuctionData then return end;
 					if AllTheThingsAuctionData[itemID] then
 						self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
-					end]]
-					-- print("Search Item",itemID);
+					end
+					-- print("Search Item",itemID);--]]					
 					AttachTooltipSearchResults(self, link, SearchForLink, link);
 				end
 				
@@ -8252,11 +8258,12 @@ UpdateGroup = function(parent, group)
 				group.total = 0;
 			end
 			
-			-- Update the subgroups recursively...
-			UpdateGroups(group, group.g);
-			
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
+			
+				-- Update the subgroups recursively...
+				UpdateGroups(group, group.g);
+				
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
@@ -9965,7 +9972,7 @@ RowOnEnter = function (self)
 				local altQuests="";
 				for i,questID in ipairs(reference.altQuests) do
 					if (i > 1) then altQuests = altQuests .. ","; end
-					altQuests = altQuests .. tostring(questID) .. GetCompletionIcon(questID);
+					altQuests = altQuests .. tostring(questID) .. GetCompletionIcon(IsQuestFlaggedCompleted(questID));
 				end
 				GameTooltip:AddDoubleLine(" ", "[" .. altQuests .. "]"); 
 			end

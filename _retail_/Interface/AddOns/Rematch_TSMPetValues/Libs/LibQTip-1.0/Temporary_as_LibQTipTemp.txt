@@ -1,2 +1,0 @@
--- Name changed to LibQTipTemp-1.0 until fixed by author
-

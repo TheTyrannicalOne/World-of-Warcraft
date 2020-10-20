@@ -40,6 +40,8 @@ L["Underwater"] = "水中"
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
 L["SETTING_COMPACT_LIST"] = "紧凑坐骑列表"
 L["SETTING_CURSOR_KEYS"] = "允许上下键浏览坐骑"
+--[[Translation missing --]]
+--[[ L["SETTING_CUSTOM_SORT_OPTIONS"] = "Enable more sort options"--]] 
 L["SETTING_FAVORITE_PER_CHAR"] = "收藏坐骑每个角色"
 --[[Translation missing --]]
 --[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]] 

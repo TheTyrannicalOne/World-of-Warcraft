@@ -48,6 +48,8 @@ L["Underwater"] = "Aquatiques"
 --[[Translation missing --]]
 --[[ L["SETTING_CURSOR_KEYS"] = "Enable Up&Down keys to browse mounts"--]] 
 --[[Translation missing --]]
+--[[ L["SETTING_CUSTOM_SORT_OPTIONS"] = "Enable more sort options"--]] 
+--[[Translation missing --]]
 --[[ L["SETTING_FAVORITE_PER_CHAR"] = "Favorite mounts per character"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]] 

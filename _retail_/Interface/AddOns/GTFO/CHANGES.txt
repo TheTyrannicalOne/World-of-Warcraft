@@ -1,4 +1,14 @@
 ------------------------------------------------------------------------
+r528 | Zensunim | 2020-10-16 03:08:30 +0000 (Fri, 16 Oct 2020) | 3 lines
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/ReadMe.txt
+
+4.56.2
+* Updated for patch 9.0
+
+------------------------------------------------------------------------
 r527 | Zensunim | 2020-07-29 03:19:17 +0000 (Wed, 29 Jul 2020) | 1 line
 Changed paths:
    M /trunk/GTFO_Spells_BFA.lua

@@ -4,6 +4,7 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/skada toggle", -- [1]
+		"/omen toggle", -- [2]
 	},
 	["ChatHistoryLog"] = {
 		{

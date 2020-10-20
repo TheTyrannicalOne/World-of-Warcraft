@@ -1,14 +1,14 @@
-## Interface: 80300
+## Interface: 90001
 ## Notes: Gathering Node data from WoWHead for GatherMate2 & Gatherer
-## Title: WoWGatheringNodes v.BFA-8.3-update-v1.0
+## Title: WoWGatheringNodes v.V9.0.1_Update
 ## Author: SLOKnightfall
 ## X-Category: Map
 ## X-Email:
-## Version:BFA-8.3-update-v1.0
+## Version:V9.0.1_Update
 ## OptionalDeps: Gatherer, GatherMate2, Carbonite
 ## X-Gatherer-Plugin-Name: WoWGatheringNodes
 ## X-Gatherer-Plugin-Type: DATABASE
-## X-Gatherer-Plugin-DatabaseID: WoWGatheringNodes 2020-04-20T1:40:25Z
+## X-Gatherer-Plugin-DatabaseID: WoWGatheringNodes 2020-10-16T21:50:21Z
 
 ## SavedVariables: WoWGatheringNodesConfig,
 

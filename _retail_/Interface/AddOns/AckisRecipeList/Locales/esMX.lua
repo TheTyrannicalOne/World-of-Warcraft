@@ -5,8 +5,8 @@ esMX localization strings for Ackis Recipe List
 ************************************************************************
 File date: 2012-08-18T4:52:05Z 
 File revision: 4d6b8e446c1381fe41575a671a6c54702932e4db 
-Project revision: dcbbd7e2534986794940f4e464e90d685780d3cf
-Project version: 8.3.0.2
+Project revision: 08bcd10c50d88ac18b01b3db1f94b2db490aab4b
+Project version: 9.0.2
 ************************************************************************
 Currently maintained by:
 http://www.wowace.com/addons/arl/localization/translators/
@@ -54,11 +54,13 @@ L["Akma'hat"] = true
 L["Alanna Raveneye"] = "Alanna Cuervojo"
 L["Alard Schmied"] = true
 L["Alchemist Finklestein"] = "Alquimista Finklestein"
+L["Alchemist Funen"] = "Alquimista Funen"
 L["Alchemist Gribble"] = "Alquimista Gribble"
 L["Alchemist Kanhu"] = "Alquimista Kanhu"
 L["Alchemist Mallory"] = "Alquimista Mallory"
 L["Alchemist Narett"] = "Alquimista Narett"
 L["Alchemist Pestlezugg"] = "Alquimista Morterozugg"
+L["Alchemy"] = "Alquimia"
 L["Aldraan"] = true
 L["Alegorn"] = true
 L["Aleinia"] = true
@@ -106,6 +108,7 @@ L["Arathel Sunforge"] = "Arathel Forjasol"
 L["Arcanist Sheynathren"] = "Arcanista Sheynathren"
 L["Arcatraz Sentinel"] = "Centinela de Arcatraz"
 L["ARCH_DROP_ULD"] = "Esta receta es un botín al azar de \"Vaso Canope\", un artefacto de Arqueología."
+L["ARCHAEOLOGY_HIGHBORNE"] = "Disponible en las excavaciones arqueológicas de los Altonato"
 L["Archmage Alvareaux"] = "Archimago Alvareaux"
 L["Aresella"] = true
 L["Argent Quartermaster Hasana"] = "Intendente Argenta Hasana"
@@ -173,6 +176,7 @@ L["BOEFilter"] = "Se Liga al Equiparlo (LaE)"
 L["Bombus Finespindle"] = "Bombus Bueneje"
 L["Bonechewer Backbreaker"] = "Partedorsales Mascahuesos"
 L["Booker Kells"] = true
+L["BOON_OF_THE_BUILDER"] = "Disponible aleatoriamente en 'Contenedor con dientes de engranaje'. Haz la misión 'Favor del constructor' y usa el encantamiento de sobrehombros en tus sobrehombros para que esos contenedores caigan."
 L["Boots"] = "Botas"
 L["BOP_DESC"] = "Las recetas 'LaR' serán incluidas en la exploración."
 L["BOPFilter"] = "Se Liga al Recogerlo (LaR)"

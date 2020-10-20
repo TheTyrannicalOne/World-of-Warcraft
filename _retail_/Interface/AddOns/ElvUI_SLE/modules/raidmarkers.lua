@@ -49,7 +49,7 @@ end
 function RM:CreateButton(index)
 	local info = layouts[index]
 	local target, worldmarker = info.RT, info.WM
-	local button = CreateFrame("Button", format("SLE_RaidMarkerBarButton%d", index), RM.frame, "SecureActionButtonTemplate")
+	local button = CreateFrame("Button", format("SLE_RaidMarkerBarButton%d", index), RM.frame, "SecureActionButtonTemplate, BackdropTemplate")
 	button:Size(E.db.sle.raidmarkers.buttonSize)
 	button:SetTemplate('Transparent')
 
@@ -213,7 +213,7 @@ function RM:Initialize()
 	end
 	self:UpdateWorldMarkersAndTooltips()
 
-	E:CreateMover(self.frame, "RaidMarkerBarAnchor", L["Raid Marker Bar"], nil, nil, nil, "ALL,S&L,S&L MISC")
+	E:CreateMover(self.frame, 'RaidMarkerBarAnchor', L["Raid Marker Bar"], nil, nil, nil, 'ALL,S&L,S&L MISC', nil, 'sle, modules, raidmarkerbars')
 
 	function RM:ForUpdateAll()
 		RM.db = E.db.sle.raidmarkers

@@ -247,3 +247,4 @@ ElvUI_CliqueDatatext: enabled
 Narcissus: enabled
 Narcissus_Database: enabled
 ElvUI_DTBars2: disabled
+ElvUI_QuestXP: disabled

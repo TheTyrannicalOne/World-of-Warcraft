@@ -11,3 +11,7 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 OPie_Classic: disabled
 ElvUI_OptionsUI: enabled
+ElvUI_DTBars2: disabled
+ElvUI_QuestXP: disabled
+BigWigs_CommonAuras: enabled
+LittleWigs: enabled

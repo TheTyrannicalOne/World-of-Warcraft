@@ -63,10 +63,39 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
+			["objectives"] = {
+			},
+		},
+		[36495] = {
+			["title"] = "News from Talador",
+			["objectives"] = {
+			},
+		},
+		[24432] = {
+			["title"] = "Sea Legs",
+			["objectives"] = {
+				"0/3 Saltwater Starfish", -- [1]
+				"0/1 Conch Shell", -- [2]
+			},
+		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
+			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
+			},
+		},
+		[38142] = {
+			["title"] = "Archdruid of the Claw",
+			["objectives"] = {
 			},
 		},
 		[31891] = {
@@ -79,38 +108,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
+		[35166] = {
+			["title"] = "Ship Salvage",
 			["objectives"] = {
-			},
-		},
-		[24432] = {
-			["title"] = "Sea Legs",
-			["objectives"] = {
-				"0/3 Saltwater Starfish", -- [1]
-				"0/1 Conch Shell", -- [2]
-			},
-		},
-		[36495] = {
-			["title"] = "News from Talador",
-			["objectives"] = {
-			},
-		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
-			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
-			},
-		},
-		[33359] = {
-			["title"] = "Meet Us at Starfall Outpost",
-			["objectives"] = {
-			},
-		},
-		[38142] = {
-			["title"] = "Archdruid of the Claw",
-			["objectives"] = {
+				"0/15 Drudgeboat Salvage", -- [1]
 			},
 		},
 		[42750] = {
@@ -133,6 +134,11 @@ QuestTogether = {
 				"0/10 Steamscar saberon slain", -- [1]
 			},
 		},
+		[33359] = {
+			["title"] = "Meet Us at Starfall Outpost",
+			["objectives"] = {
+			},
+		},
 		[35174] = {
 			["title"] = "Pale Moonlight",
 			["objectives"] = {
@@ -140,17 +146,11 @@ QuestTogether = {
 				"0/8 Pale Devourer slain", -- [2]
 			},
 		},
-		[35166] = {
-			["title"] = "Ship Salvage",
-			["objectives"] = {
-				"0/15 Drudgeboat Salvage", -- [1]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

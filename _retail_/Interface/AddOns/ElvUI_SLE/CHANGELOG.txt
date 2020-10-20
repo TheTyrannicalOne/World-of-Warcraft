@@ -1,3 +1,42 @@
+v4.08 [October 20, 2020]
+Fixes:
+- Fixed not able to invite Guild member via S&L Guild datatext
+- Fixed not able to invite Friends via S&L Friends datatext
+- Fixed not able to edit Officer Note via S&L Guild datatext
+- Fixed error with objective tracker do to createbackdrop error
+- Fixed missing crit not being in Darth's setup
+Added:
+- Added ability to right click enhanced vehicle bar which takes you to the options for it
+- Added ability to right click raid marker bar which takes you to the options for it
+
+v4.07 [October 15, 2020]
+Updated:
+- Update LibProcessable which fixed some errors in deconstruction
+
+v4.06 [October 14, 2020]
+Fixes:
+- Fix some professions buttons not showing like deconstruction
+
+v4.05 [October 14, 2020]
+Fixes:
+- Fix Inspect Armory backdrop selection if you haven't inspected someone yet
+
+v4.04 [October 14, 2020]
+Fixes:
+- Fix Merchant skin
+
+v4.03 [October 13, 2020]
+Fixes:
+- Fix Raid Marker bar not displaying
+
+v4.02 [October 13, 2020]
+Fixes:
+- Fix LibQTip error
+
+v4.01 [October 13, 2020]
+Fixes:
+- Fix S&L Current DT error
+
 v4.00 [October 13, 2020]
 Removed:
 - SquareMinimapButtons (use ProjectAzilroka for now in case we change our mind and bring it back)

@@ -76,28 +76,23 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[54042] = {
-			["title"] = "Trouble in Darkshore",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
-				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
-			},
-		},
-		[50606] = {
-			["title"] = "Horde War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[42234] = {
 			["title"] = "The Valarjar",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
+		[50603] = {
+			["title"] = "Voldunai",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[50604] = {
@@ -116,6 +111,12 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
 		[48641] = {
 			["title"] = "Armies of Legionfall",
 			["objectives"] = {
@@ -128,18 +129,17 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[54042] = {
+			["title"] = "Trouble in Darkshore",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

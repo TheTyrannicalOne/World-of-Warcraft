@@ -5,6 +5,6 @@
 --
 -- Author: Expelliarm5s / October 2020 / All Rights Reserved
 --
--- Version 1.1.18
+-- Version 1.1.19
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI

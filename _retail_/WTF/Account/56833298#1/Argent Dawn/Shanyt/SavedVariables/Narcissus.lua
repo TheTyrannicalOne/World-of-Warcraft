@@ -6,4 +6,13 @@ NarcissusDB_PC = {
 	},
 }
 NarciStatisticsDB_PC = {
+	["Barbershop"] = {
+		["Locations"] = {
+			[85] = {
+				["visit"] = 1,
+				["time"] = 142,
+			},
+		},
+		["CoinSpentBeforeShadowlands"] = 163889,
+	},
 }

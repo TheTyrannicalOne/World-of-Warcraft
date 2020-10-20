@@ -5,7 +5,7 @@
 --
 -- Author: Expelliarm5s / October 2020 / All Rights Reserved
 --
--- Version 1.1.18
+-- Version 1.1.19
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 -- luacheck: globals Rematch RematchSettings
@@ -26,7 +26,7 @@ function Rematch_Sorting:DebugPrintf(...)
 	if addon.isDebug then
 		local status, res = pcall(format, ...)
 		if status then
-			addon:DebugLog("Rematch_Sorting~" .. res)
+			addon:DebugLog("RemSort~" .. res)
 		end
 	end
 end

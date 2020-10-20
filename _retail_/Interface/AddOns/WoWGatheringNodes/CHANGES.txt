@@ -1,11 +1,19 @@
-lightweight tag 49c86364107c172e7d0ff5d77f5ee2c97ff2b57f BFA-8.3-update-v1.0
+tag d9bb067c3c09d9ef42e47b490a9512dcc3823338 V9.0.1_Update
 Author:	SLOKnightfall <SLOKnightfall@gmail.com>
-Date:	Sun Apr 19 18:40:25 2020 -0700
+Date:	Fri Oct 16 14:50:47 2020 -0700
 
-commit 49c86364107c172e7d0ff5d77f5ee2c97ff2b57f
+-Shadowlands update
+
+commit ea5740839d9368c6d207d865644cda642642ccc4
 Author: SLOKnightfall <SLOKnightfall@gmail.com>
-Date:   Sun Apr 19 18:40:25 2020 -0700
+Date:   Fri Oct 16 14:50:21 2020 -0700
 
-    Toc Update
-    Data Refresh
+    -Shadowlands Update
+    -Made it so the import button is not disabled after an auto import
+
+commit 2fae8fd10c77d1964b568ad8ceb06f5579dd48ff
+Author: SLOKnightfall <SLOKnightfall@gmail.com>
+Date:   Sat Oct 10 14:57:36 2020 -0700
+
+    Update README.md
 

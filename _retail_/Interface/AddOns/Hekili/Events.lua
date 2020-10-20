@@ -6,6 +6,7 @@ local Hekili = _G[ addon ]
 
 local class = Hekili.Class
 local state = Hekili.State
+local PTR = ns.PTR
 local TTD = ns.TTD
 
 local formatKey = ns.formatKey
@@ -442,7 +443,7 @@ do
         local p = state.azerite
 
         for k, v in pairs( p ) do
-            v.rank = 0
+            v.__rank = 0
         end
 
         if next( class.powers ) == nil then
@@ -549,7 +550,7 @@ do
     }
 
     for _, key in pairs( essenceKeys ) do
-        state.essence[ key ] = { rank = 0, major = false }
+        state.essence[ key ] = { __rank = 0, __major = false }
     end
 
 
@@ -557,7 +558,7 @@ do
         local e = state.essence
 
         for k, v in pairs( e ) do
-            v.rank = 0
+            v.__rank = 0
         end
 
         class.active_essence = nil
@@ -689,7 +690,7 @@ do
         -- Paladin/Holy
         [7053] = { "uthers_devotion", 1, 65 }, -- 337600
         [7054] = { "vanguards_momentum", 1, 65 }, -- 337638
-        [7055] = { "of_dusk_and_dawn", 1, 65 }, -- 337746
+        [7055] = { "from_dusk_till_dawn", 1, 65 }, -- 337746
         [7056] = { "the_magistrates_judgment", 1, 65 }, -- 337681
         [7057] = { "shadowbreaker_dawn_of_the_sun", 1, 65 }, -- 337812
         [7058] = { "inflorescence_of_the_sunwell", 1, 65 }, -- 337777
@@ -871,7 +872,7 @@ do
         -- Warlock/Affliction
         [7025] = { "wilfreds_sigil_of_superior_summoning", 1, 265 }, -- 337020
         [7026] = { "claw_of_endereth", 1, 265 }, -- 337038
-        [7027] = { "mark_of_borrowed_power", 1, 265 }, -- 337057
+        [7027] = { "relic_of_demonic_synergy", 1, 265 }, -- 337057
         [7028] = { "pillars_of_the_dark_portal", 1, 265 }, -- 337065
         [7029] = { "perpetual_agony_of_azjaqir", 1, 265 }, -- 337106
         [7030] = { "sacrolashs_dark_strike", 1, 265 }, -- 337111
@@ -914,13 +915,15 @@ do
 
         -- Demon Hunter/Havoc
         [7041] = { "collective_anguish", 1, 577 }, -- 337504
-        [7042] = { "halfgiant_empowerment", 1, 577 }, -- 337532
-        [7043] = { "darkglare_boon", 1, 577 }, -- 337534
+        -- [7042] = { "halfgiant_empowerment", 1, 577 }, -- 337532
+        [7043] = { "darkglare_medallion", 1, 577 }, -- 337534
         [7044] = { "darkest_hour", 1, 577 }, -- 337539
-        [7049] = { "inner_demons", 1, 577 }, -- 337548
+        -- [7049] = { "inner_demons", 1, 577 }, -- 337548
         [7050] = { "chaos_theory", 1, 577 }, -- 337551
         [7051] = { "erratic_fel_core", 1, 577 }, -- 337685
         [7052] = { "fel_bombardment", 1, 577 }, -- 337775
+        [7218] = { "darker_nature", 1, 577 }, -- 346264
+        [7219] = { "burning_wound", 1, 577 }, -- 346279
 
         -- Demon Hunter/Vengeance
         [7045] = { "spirit_of_the_darkness_flame", 1, 581 }, -- 337541
@@ -1524,17 +1527,26 @@ do
         [333950] = "brons_call_to_action",               -- Forgelite Prime Mikanikos
     }
 
-    local soulbindEvents = {
-        "SOULBIND_ACTIVATED",
-        "SOULBIND_CONDUIT_INSTALLED",
-        "SOULBIND_CONDUIT_UNINSTALLED",
-        "SOULBIND_CONDUITS_RESET",
-        "SOULBIND_NODE_LEARNED",
-        "SOULBIND_NODE_UNLEARNED",
-        "SOULBIND_NODE_UPDATED",
-        "SOULBIND_PATH_CHANGED",
-        "PLAYER_ENTERING_WORLD"
-    }
+    local soulbindEvents
+    
+    if PTR then 
+        soulbindEvents = {
+            "SOULBIND_ACTIVATED",
+            "SOULBIND_CONDUIT_CHARGES_UPDATED",
+            "SOULBIND_CONDUIT_INSTALLED",
+            "SOULBIND_CONDUIT_UNINSTALLED",
+            "SOULBIND_FORGE_INTERACTION_STARTED",
+            "SOULBIND_FORGE_INTERACTION_ENDED",
+            "SOULBIND_NODE_LEARNED",
+            "SOULBIND_NODE_UNLEARNED",
+            "SOULBIND_NODE_UPDATED",
+            "SOULBIND_PATH_CHANGED",
+            "SOULBIND_PENDING_CONDUIT_CHANGED",
+            "PLAYER_ENTERING_WORLD"
+        }
+    else
+        soulbindEvents = {}
+    end
 
     local GetActiveSoulbindID, GetSoulbindData, GetConduitSpellID = C_Soulbinds.GetActiveSoulbindID, C_Soulbinds.GetSoulbindData, C_Soulbinds.GetConduitSpellID
 

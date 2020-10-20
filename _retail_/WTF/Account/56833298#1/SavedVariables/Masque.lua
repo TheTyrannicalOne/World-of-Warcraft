@@ -15,43 +15,43 @@ MasqueDB = {
 		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Malivant - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Malivant - Dalaran"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["Groups"] = {
-				["WeakAuras_2pvBg5wcfEm"] = {
-					["Upgraded"] = true,
+				["ElvUI_ActionBars"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras"] = {
+				["ElvUI_Pet Bar"] = {
 					["Inherit"] = false,
 				},
 				["Hekili"] = {
 					["Inherit"] = false,
 				},
-				["ElvUI_ActionBars"] = {
+				["WeakAuras_2pvBg5wcfEm"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
 				["WeakAuras_oTOmGp3SIpf"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["OPie"] = {
+				["ElvUI"] = {
 					["Inherit"] = false,
 				},
 				["ElvUI_Debuffs"] = {
@@ -61,7 +61,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["ElvUI"] = {
+				["OPie"] = {
 					["Inherit"] = false,
 				},
 				["ElvUI_Buffs"] = {
@@ -82,7 +82,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["ElvUI_Pet Bar"] = {
+				["WeakAuras"] = {
 					["Inherit"] = false,
 				},
 			},

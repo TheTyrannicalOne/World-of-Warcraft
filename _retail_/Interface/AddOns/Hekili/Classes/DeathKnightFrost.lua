@@ -438,7 +438,7 @@ if UnitClassBase( "player" ) == "DEATHKNIGHT" then
         },
         pillar_of_frost = {
             id = 51271,
-            duration = 15,
+            duration = 12,
             max_stack = 1,
         },
         razorice = {
@@ -852,7 +852,10 @@ if UnitClassBase( "player" ) == "DEATHKNIGHT" then
             cooldown = 0,
             gcd = "spell",
 
-            spend = function () return buff.dark_succor.up and 0 or ( ( ( buff.transfusion.up and 0.5 or 1 ) * 35 ) * ( buff.hypothermic_presence.up and 0.65 and 1 ) ) end,
+            spend = function ()
+                if buff.dark_succor.up then return 0 end
+                return 35 * ( buff.transfusion.up and 0.5 or 1 ) * ( buff.hypothermic_presence.up and 0.65 or 1 )
+            end,
             spendType = "runic_power",
 
             startsCombat = true,
@@ -1173,7 +1176,7 @@ if UnitClassBase( "player" ) == "DEATHKNIGHT" then
         pillar_of_frost = {
             id = 51271,
             cast = 0,
-            cooldown = 45,
+            cooldown = 60,
             gcd = "off",
 
             startsCombat = false,
@@ -1272,6 +1275,8 @@ if UnitClassBase( "player" ) == "DEATHKNIGHT" then
 
             startsCombat = true,
             texture = 136133,
+
+            usable = function () return pet.alive, "requires an undead pet" end,
 
             handler = function ()
                 dismissPet( "ghoul" )

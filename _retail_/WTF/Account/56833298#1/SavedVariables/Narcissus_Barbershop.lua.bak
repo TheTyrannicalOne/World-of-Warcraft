@@ -1,0 +1,26 @@
+
+NarciBarberShopDB = {
+	["ToggleRandomAppearance"] = false,
+	["ToggleNotification"] = true,
+	["Hotkeys"] = {
+		["RotateRight"] = "D",
+		["RotateLeft"] = "A",
+		["ZoomOut"] = "S",
+		["ZoomIn"] = "W",
+	},
+	["PlayerData"] = {
+		["058380E2"] = {
+			["playerName"] = "Shanyt",
+			["realmID"] = "75",
+			["SavedLooks"] = {
+				[5] = {
+					["male"] = {
+					},
+					["female"] = {
+					},
+				},
+			},
+			["realmName"] = "Argent Dawn",
+		},
+	},
+}

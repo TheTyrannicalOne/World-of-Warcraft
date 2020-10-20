@@ -5,7 +5,7 @@
 --
 -- Author: Expelliarm5s / October 2020 / All Rights Reserved
 --
--- Version 1.1.18
+-- Version 1.1.19
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 
@@ -99,7 +99,7 @@ end
 -- called by AceAddon on PLAYER_LOGIN
 function addon:OnEnable()
 	addon:DebugPrintf("OnEnable()")
-	print("|cFF33FF99" .. addonName .. " (" .. addon.METADATA.VERSION .. ")|r")
+	-- print("|cFF33FF99" .. addonName .. " (" .. addon.METADATA.VERSION .. ")|r")
 
 	addon:DebugPrintf("Calling Login() in all modules")
 	for modle in pairs(addon.modules) do

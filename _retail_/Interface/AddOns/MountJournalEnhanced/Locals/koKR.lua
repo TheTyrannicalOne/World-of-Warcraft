@@ -39,6 +39,8 @@ L["Underwater"] = "수중"
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
 L["SETTING_COMPACT_LIST"] = "간소한 목록"
 L["SETTING_CURSOR_KEYS"] = "위 아래 화살표 키로 목록 탐색하기"
+--[[Translation missing --]]
+--[[ L["SETTING_CUSTOM_SORT_OPTIONS"] = "Enable more sort options"--]] 
 L["SETTING_FAVORITE_PER_CHAR"] = "캐릭터별 즐겨찾기"
 --[[Translation missing --]]
 --[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]] 

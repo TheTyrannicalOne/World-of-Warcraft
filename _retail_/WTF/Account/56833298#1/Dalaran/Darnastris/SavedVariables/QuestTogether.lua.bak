@@ -7,24 +7,21 @@ QuestTogether = {
 				"Arrive at Blackrock Caverns.", -- [1]
 			},
 		},
-		[42429] = {
-			["title"] = "Memories of Ebonchill",
-			["objectives"] = {
-				"Speak to a Reflection of the Council of Tirisfal", -- [1]
-			},
-		},
 		[28826] = {
 			["title"] = "The Eye of the Storm",
 			["objectives"] = {
 				"0/1 Peered into the Waters of Farseeing", -- [1]
 			},
 		},
-		[27354] = {
-			["title"] = "Mastering the Arcane",
+		[39796] = {
+			["title"] = "To Haustvald",
 			["objectives"] = {
-				"1/1 Silverlaine's Enchanted Crystal", -- [1]
-				"5/5 Moontouched Wood", -- [2]
-				"5/5 Ghostly Essence", -- [3]
+			},
+		},
+		[42687] = {
+			["title"] = "Troops in the Field",
+			["objectives"] = {
+				"Complete \"Troops in the Field\"", -- [1]
 			},
 		},
 		[25186] = {
@@ -45,6 +42,11 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
+			["objectives"] = {
+			},
+		},
 		[28398] = {
 			["title"] = "The Pyromancer's Grimoire",
 			["objectives"] = {
@@ -60,6 +62,12 @@ QuestTogether = {
 				"Defeat Kela Grimtotem", -- [3]
 				"Defeat Zoltan", -- [4]
 				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[25191] = {
@@ -85,14 +93,14 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[43441] = {
+			["title"] = "A Second Weapon",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 Choose a second artifact to pursue", -- [1]
 			},
 		},
-		[12466] = {
-			["title"] = "Chasing Icestorm: The 7th Legion Front",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
 			},
 		},
@@ -112,11 +120,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
-			["objectives"] = {
-			},
-		},
 		[37433] = {
 			["title"] = "Proving Grounds",
 			["objectives"] = {
@@ -133,8 +136,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

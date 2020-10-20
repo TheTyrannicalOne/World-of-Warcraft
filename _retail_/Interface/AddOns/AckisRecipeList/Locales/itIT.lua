@@ -5,8 +5,8 @@ itIT localization strings for Ackis Recipe List
 ************************************************************************
 File date: 2012-08-18T4:52:05Z 
 File revision: 4d6b8e446c1381fe41575a671a6c54702932e4db 
-Project revision: dcbbd7e2534986794940f4e464e90d685780d3cf
-Project version: 8.3.0.2
+Project revision: 08bcd10c50d88ac18b01b3db1f94b2db490aab4b
+Project version: 9.0.2
 ************************************************************************
 Original translated by: Pettigrow
 Currently maintained by:

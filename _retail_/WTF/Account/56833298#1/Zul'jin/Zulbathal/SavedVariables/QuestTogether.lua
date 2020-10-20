@@ -95,23 +95,11 @@ QuestTogether = {
 				"0/1 Ten'gor slain", -- [2]
 			},
 		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
-			["objectives"] = {
-				"2/12 Pilgrimage Scroll", -- [1]
-			},
-		},
 		[25929] = {
 			["title"] = "Sea Legs",
 			["objectives"] = {
 				"0/3 Saltwater Starfish", -- [1]
 				"0/1 Conch Shell", -- [2]
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[49422] = {
@@ -120,14 +108,22 @@ QuestTogether = {
 				"0% Ruin wrought.", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[29907] = {
+			["title"] = "Chen and Li Li",
+			["objectives"] = {
+				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
 			},
 		},
 		[31486] = {
@@ -157,16 +153,19 @@ QuestTogether = {
 				"0/1 Speak with Brewmaster Boof", -- [2]
 			},
 		},
-		[29907] = {
-			["title"] = "Chen and Li Li",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[31613] = {
@@ -175,16 +174,17 @@ QuestTogether = {
 				"0/1 Greenstone Village Defended", -- [1]
 			},
 		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
+		[53476] = {
+			["title"] = "The Great Sea Scrolls",
 			["objectives"] = {
+				"2/12 Pilgrimage Scroll", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

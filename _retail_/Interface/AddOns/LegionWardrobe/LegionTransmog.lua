@@ -1,8 +1,15 @@
 local GlobalAddonName, LTS = ...
 
-local ADDON_VERSION = "3.0 (22.08.2018)"
+local ADDON_VERSION = "3.2 (20.10.2020)"
 
 --[[
+3.2
+Updated recolors data for all new models
+Added reset filter button outside dropdown
+
+3.1
+9.0.1 update
+
 3.0
 8.0.1 Update
 
@@ -229,6 +236,28 @@ local FilterInstance, FilterInstanceDifficulty, FilterInstanceZoneDrop
 local FilterRecolors
 local FindBonuses
 local LocMapNames, LocInstanceNames, LocBossNames = nil,{},{}
+
+local function IsQuestDone(questID)
+	local min = 1
+	local max = #CharQuestsData
+	local mid
+	while min <= max do
+		mid = floor((max + min) / 2)
+		local now = CharQuestsData[mid]
+		if now == questID then
+			return true
+		elseif questID > now then
+			min = mid + 1
+		else
+			max = mid - 1
+		end
+	end
+end
+
+local function GetCurrencyInfo(id)
+	local data = C_CurrencyInfo.GetCurrencyInfo(id) or {name = "unk",iconFileID = ""}
+	return data.name, nil, data.iconFileID
+end
 
 local clientLocale = GetLocale()
 local isNotENClient = not clientLocale:find("^en")
@@ -484,7 +513,7 @@ sourcesFrame.TextLine:SetSize(0,20)
 sourcesFrame.TextLine:SetJustifyH("LEFT")
 sourcesFrame.TextLine:SetJustifyV("MIDDLE")
 
-sourcesFrame.moreInfo = CreateFrame("Frame",nil,sourcesFrame)
+sourcesFrame.moreInfo = CreateFrame("Frame",nil,sourcesFrame,"BackdropTemplate")
 sourcesFrame.moreInfo:Hide()
 sourcesFrame.moreInfo:SetPoint("TOPLEFT",sourcesFrame,"TOPRIGHT",0,-25)
 sourcesFrame.moreInfo:SetSize(220,300)
@@ -503,7 +532,15 @@ sourcesFrame.Recolors:SetScript("OnClick",function (self)
 		for j=1,#t do
 			if t[j] == visualID then
 				FilterRecolors = t
-				WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory)
+
+				local cat = WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory
+				if cat == 1 then
+					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(2)
+				else
+					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(1)
+				end
+				WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(cat)
+
 				return
 			end
 		end
@@ -821,9 +858,9 @@ local function SourcesFrame_MoreInfo_OnClick(self)
 			
 			local line = SourceFrame_MoreInfo_CreateLine(i-1)
 			if questName then
-				line.text:SetText((CharQuestsData[questID] and "|cff00ff00" or "") .. questName)
+				line.text:SetText((IsQuestDone(questID) and "|cff00ff00" or "") .. questName)
 			else
-				line.text:SetText((CharQuestsData[questID] and "|cff00ff00" or "") .."Quest: "..questID)
+				line.text:SetText((IsQuestDone(questID) and "|cff00ff00" or "") .."Quest: "..questID)
 			end
 			line.textFrame.type = 4
 			line.textFrame.data = questID
@@ -1237,7 +1274,12 @@ local function Model_OnClick(self,button)
 	for i=c+1,#sourcesFrame.lines do
 		sourcesFrame.lines[i]:Hide()
 	end
-	sourcesFrame.Recolors:SetShown(HaveRecolors[self.visualID])
+	local pos = floor((self.visualID - 1) / 4) + 1
+	local d = tonumber(HaveRecolors:sub(pos,pos),16) or 0
+	pos = (self.visualID - 1) % 4
+	local haveRecolor = bit.band(d,tonumber( ("0"):rep(pos).."1"..("0"):rep(3-pos) ,2)) > 0
+
+	sourcesFrame.Recolors:SetShown(haveRecolor)
 	sourcesFrame.moreInfo:Hide()
 	sourcesFrame:Show()
 	
@@ -1321,7 +1363,7 @@ end
 local models = {}
 mainFrame.models = models
 do
-	local borderFrame = CreateFrame("Frame",nil,mainFrame)
+	local borderFrame = CreateFrame("Frame",nil,mainFrame,"BackdropTemplate")
 
 	local model = CreateFrame("DressUpModel",nil,mainFrame)
 	models[1] = model
@@ -1371,7 +1413,8 @@ local function FindVisualAndOpen(visualID,isCollected)
 			end
 		end
 		if canObtained then
-			GetQuestsCompleted(CharQuestsData)	--Update Quests Data
+			--GetQuestsCompleted(CharQuestsData)	--Update Quests Data
+			CharQuestsData = C_QuestLog.GetAllCompletedQuestIDs()
 			break
 		end
 	end
@@ -1671,7 +1714,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				
 				LTSData = nil
 				
-				CharQuestsData = GetQuestsCompleted()
+				CharQuestsData = C_QuestLog.GetAllCompletedQuestIDs()
 				
 				dataLoaded = true
 			end
@@ -1857,8 +1900,13 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 			local AddAllSlotsToCurrentFilter = nil
 			
 			hooksecurefunc(WardrobeCollectionFrame.ItemsCollectionFrame,"FilterVisuals", function ()
-				if WardrobeFrame_IsAtTransmogrifier() or WardrobeCollectionFrame.ItemsCollectionFrame.transmogType == LE_TRANSMOG_TYPE_ILLUSION then
+				if WardrobeFrame_IsAtTransmogrifier() or not WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory then
 					return
+				end
+				if FilterInstance or FilterRecolors then
+					mainFrame.resetFilterButton:Show()
+				else
+					mainFrame.resetFilterButton:Hide()
 				end
 				if FilterRecolors then
 					local filteredVisualsList = { }
@@ -1866,11 +1914,38 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 					for q,w in pairs(FilterRecolors) do tmp[w] = true end
 					
 					local visualsList = WardrobeCollectionFrame.ItemsCollectionFrame.visualsList
+					if WardrobeCollectionFrame.ItemsCollectionFrame.transmogLocation:IsOffHand() then
+						for categoryID=1,100 do
+							local name, isWeapon, canEnchant, canMainHand, canOffHand = C_TransmogCollection.GetCategoryInfo(categoryID)
+							if canMainHand then
+								local toAdd = C_TransmogCollection.GetCategoryAppearances(categoryID, 1)
+								if toAdd then
+									for i=1,#toAdd do 
+										visualsList[#visualsList+1] = toAdd[i]
+									end
+								end
+							end
+						end
+					elseif WardrobeCollectionFrame.ItemsCollectionFrame.transmogLocation:IsMainHand() then
+						for categoryID=1,100 do
+							local name, isWeapon, canEnchant, canMainHand, canOffHand = C_TransmogCollection.GetCategoryInfo(categoryID)
+							if canOffHand then
+								local toAdd = C_TransmogCollection.GetCategoryAppearances(categoryID, 2)
+								if toAdd then
+									for i=1,#toAdd do 
+										visualsList[#visualsList+1] = toAdd[i]
+									end
+								end
+							end
+						end
+					end
 					for i = 1, #visualsList do
 						if tmp[ visualsList[i].visualID ] then
 							tinsert(filteredVisualsList, visualsList[i])
+							tmp[ visualsList[i].visualID ] = nil
 						end
 					end
+
 					WardrobeCollectionFrame.ItemsCollectionFrame.filteredVisualsList = filteredVisualsList
 					return
 				end
@@ -2024,11 +2099,18 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 					FilterInstance = nil
 				else
 					if WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory > 11 then
-						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot("HEADSLOT", LE_TRANSMOG_TYPE_APPEARANCE)
+						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
 					end
 				end
 				CloseDropDownMenus()
-				WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory)
+
+				local cat = WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory
+				if cat == 1 then
+					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(2)
+				else
+					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(1)
+				end
+				WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(cat)
 			end
 
 			
@@ -2069,7 +2151,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 					info.func = function(_, _, _, value)
 						LoadData()
 						if WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory > 11 then
-							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot("HEADSLOT", LE_TRANSMOG_TYPE_APPEARANCE)
+							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
 						end
 						AddAllSlotsToCurrentFilter = true
 						local mapID = ZoneIDToOldID( C_Map.GetBestMapForUnit("player") or 0 )
@@ -2088,7 +2170,8 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 							FilterInstance = nil
 						end
 						CloseDropDownMenus()
-						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory)
+						
+						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(WardrobeCollectionFrame.ItemsCollectionFrame.transmogLocation)
 					end
 					info.hasArrow = false
 					UIDropDownMenu_AddButton(info, level)	
@@ -2101,10 +2184,10 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						AddAllSlotsToCurrentFilter = nil
 						CloseDropDownMenus()
 						if WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory == 1 then
-							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot("SHOULDERSLOT", LE_TRANSMOG_TYPE_APPEARANCE)
-							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot("HEADSLOT", LE_TRANSMOG_TYPE_APPEARANCE)
+							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("SHOULDERSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
+							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
 						else
-							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot("HEADSLOT", LE_TRANSMOG_TYPE_APPEARANCE)
+							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
 						end
 					end
 					UIDropDownMenu_AddButton(info, level)
@@ -2207,35 +2290,6 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 
 			UIDropDownMenu_Initialize(WardrobeFilterDropDown, WardrobeFilterDropDown_Initialize, "MENU")
 		
-			--[[
-			hooksecurefunc("WardrobeCollectionFrameModel_OnMouseDown", function (self,button)
-				if IsModifiedClick("CHATLINK") or IsModifiedClick("DRESSUP") or WardrobeFrame_IsAtTransmogrifier() or WardrobeCollectionFrame.transmogType == LE_TRANSMOG_TYPE_ILLUSION then
-					return
-				end
-				if button == "RightButton" then
-					if not self.visualInfo or self.visualInfo.isCollected then
-						return
-					end
-					local visualID = self.visualInfo.visualID
-					if VLTW._Fav2[ visualID ] then
-						VLTW._Fav2[ visualID ] = nil
-					else
-						VLTW._Fav2[ visualID ] = true
-					end
-					WardrobeCollectionFrame_SortVisuals()
-					WardrobeCollectionFrame_Update()
-					return
-				end
-				if button ~= "LeftButton" then
-					return
-				end
-				local visualInfo = self.visualInfo
-				LoadData()
-				UpdateModel(models[1], visualInfo.visualID, visualInfo.isCollected)
-				Model_OnClick(models[1],"LeftButton")			
-			end)
-			]]
-			
 			C_Timer.NewTimer(2,function()
 				for i=1,3 do
 					for j=1,6 do
@@ -2247,7 +2301,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 							if oldFunc then
 								oldFunc(self,button,...)
 							end
-							if IsModifiedClick("CHATLINK") or IsModifiedClick("DRESSUP") or WardrobeFrame_IsAtTransmogrifier() or WardrobeCollectionFrame.ItemsCollectionFrame.transmogType == LE_TRANSMOG_TYPE_ILLUSION then
+							if IsModifiedClick("CHATLINK") or IsModifiedClick("DRESSUP") or WardrobeFrame_IsAtTransmogrifier() or not WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory then
 								return
 							end
 							if button == "RightButton" then
@@ -2303,7 +2357,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				local IsSavePosition = false
 				local IsUseBigModelPosition = false
 
-				local model = CreateFrame("DressUpModel",nil,WardrobeCollectionFrame)
+				local model = CreateFrame("DressUpModel",nil,WardrobeCollectionFrame,"BackdropTemplate")
 				model:SetPoint("TOPLEFT",WardrobeCollectionFrame,"TOPRIGHT",5,0)
 				
 				mainFrame.bigModel = model
@@ -2448,7 +2502,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 					if slotToCamera[newSlot] and not slotToCamera[newSlot][2] then
 						C_Timer.NewTimer(0.1,function ()
 							local m = WardrobeCollectionFrame.ItemsCollectionFrame.ModelR1C1
-							if not m.visualInfo or WardrobeCollectionFrame.ItemsCollectionFrame.transmogType ~= LE_TRANSMOG_TYPE_APPEARANCE then
+							if not m.visualInfo or not WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory then
 								return
 							end
 							local cameraID = C_TransmogCollection.GetAppearanceCameraID(m.visualInfo.visualID)
@@ -2465,7 +2519,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 					for j=1,6 do
 						local frame = WardrobeCollectionFrame.ItemsCollectionFrame["ModelR"..i.."C"..j]
 						frame:HookScript("OnEnter",function(self,button)
-							if not self.visualInfo or WardrobeCollectionFrame.ItemsCollectionFrame.transmogType == LE_TRANSMOG_TYPE_ILLUSION or WardrobeFrame_IsAtTransmogrifier() or not model:IsShown() then
+							if not self.visualInfo or not WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory or WardrobeFrame_IsAtTransmogrifier() or not model:IsShown() then
 								return
 							end
 							
@@ -2507,7 +2561,35 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				bigModelButton.Texture:SetTexture([[Interface\AddOns\LegionWardrobe\Transmogrify]])
 				bigModelButton.Texture:SetTexCoord(450/512,482/512,88/512,120/512)
 				bigModelButton.Texture:SetDesaturated(true)
+
+
+				local resetFilterButton = CreateFrame("Button",nil,WardrobeCollectionFrame)
+				resetFilterButton:SetPoint("TOPRIGHT", WardrobeCollectionFrameWeaponDropDown, -105, -27)
+				resetFilterButton:SetSize(31,31)
+				resetFilterButton:SetScript("OnClick",function(self)
+					FilterInstance = nil
+					FilterRecolors = nil
+					AddAllSlotsToCurrentFilter = nil
+
+					local cat = WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory
+					if cat == 1 then
+						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(2)
+					else
+						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(1)
+					end
+					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(cat)
+				end)
+				resetFilterButton:SetScript("OnEnter",ButtonOnEnter)
+				resetFilterButton:SetScript("OnLeave",ButtonOnLeave)
+				resetFilterButton.tooltip = "Reset filter"
 				
+				resetFilterButton.Texture = resetFilterButton:CreateTexture(nil,"ARTWORK")
+				resetFilterButton.Texture:SetAllPoints()
+				resetFilterButton.Texture:SetTexture([[Interface\AddOns\LegionWardrobe\Transmogrify]])
+				resetFilterButton.Texture:SetTexCoord(482/512,512/512,85/512,115/512)
+				
+				mainFrame.resetFilterButton = resetFilterButton
+
 				local f=CreateFrame("Frame",nil,WardrobeCollectionFrame)
 				f:SetPoint("TOPLEFT")
 				f:SetSize(1,1)
@@ -2528,6 +2610,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				end)
 				
 				tinsert(mainFrame.hideButtonsList,bigModelButton)
+				tinsert(mainFrame.hideButtonsList,resetFilterButton)
 			end	
 			
 			do
@@ -2901,7 +2984,7 @@ end
 do
 	local CURRENT_SETS_TYPE = 1
 
-	local setsFrame = CreateFrame("Frame",nil,UIParent)
+	local setsFrame = CreateFrame("Frame",nil,UIParent,"BackdropTemplate")
 	setsFrame:SetPoint("CENTER")
 	setsFrame:SetSize(585,600)
 	setsFrame:SetFrameStrata("DIALOG")
@@ -3102,7 +3185,7 @@ do
 	local models = {}
 	for i=0,1 do
 		for j=0,2 do
-			local borderFrame = CreateFrame("Frame",nil,setsFrame)
+			local borderFrame = CreateFrame("Frame",nil,setsFrame,"BackdropTemplate")
 		
 			local model = CreateFrame("DressUpModel",nil,setsFrame)
 			models[i*3+j+1] = model

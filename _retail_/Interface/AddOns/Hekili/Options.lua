@@ -3691,8 +3691,11 @@ do
                         values = function ()
                             table.wipe( toggles )
 
+                            local t = class.abilities[ v ].toggle or "none"
+                            if t == "essences" then t = "covenants" end
+
                             toggles.none = "None"
-                            toggles.default = "Default" .. ( class.abilities[ v ].toggle and ( " |cffffd100(" .. class.abilities[ v ].toggle .. ")|r" ) or " |cffffd100(none)|r" )
+                            toggles.default = "Default |cffffd100(" .. t .. ")|r"
                             toggles.defensives = "Defensives"
                             toggles.essences = "Covenants"
                             toggles.cooldowns = "Cooldowns"
@@ -5183,9 +5186,8 @@ do
 
                                 exportString = {
                                     type = "input",
-                                    name = "Priority Export String",
+                                    name = "Priority Export String (CTRL+A to Select, CTRL+C to Copy)",
                                     order = 3,
-                                    multiline = 8,
                                     get = function ()
                                         if rawget( Hekili.DB.profile.packs, shareDB.actionPack ) then
                                             shareDB.export = self:SerializeActionPack( shareDB.actionPack )
@@ -6565,8 +6567,7 @@ do
                             args = {
                                 exportString = {
                                     type = "input",
-                                    name = "Export String",
-                                    multiline = 20,
+                                    name = "Export String (CTRL+A to Select, CTRL+C to Copy)",
                                     get = function( info )
                                         return self:SerializeActionPack( pack )
                                     end,
@@ -7667,12 +7668,12 @@ do
 
         db.args.errors = {
             type = "group",
-            name = "Errors",
+            name = "Warnings",
             order = 99,
             args = {
                 errName = {
                     type = "select",
-                    name = "Error Identifier",
+                    name = "Warning Identifier",
                     width = "full",
                     order = 1,
 
@@ -7694,7 +7695,7 @@ do
 
                 errorInfo = {
                     type = "input",
-                    name = "Error Information",
+                    name = "Warning Information",
                     width = "full",
                     multiline = 10,
                     order = 2,
@@ -9547,6 +9548,8 @@ do
         custom2 = "Custom #2",
     }, {
         __index = function( t, k )
+            if k == "essences" then k = "covenants" end
+            
             local name = k:gsub( "^(.)", strupper )
             t[k] = name
             return name

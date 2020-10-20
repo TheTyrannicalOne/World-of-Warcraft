@@ -274,6 +274,7 @@ app.L = {
 		[100] = "Interface\\Icons\\ability_mount_fireravengodmountgreen",		-- Mounts
 		[101] = "Interface\\Icons\\Tracking_WildPet", 							-- Battle Pet
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",							-- Toy
+		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",							-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
 		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
@@ -1858,6 +1859,7 @@ app.L = {
 		[-10080] = "Horrific Visions",
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
+		-- 9.0
 	},
 
 	["OBJECT_ID_ICONS"] = {

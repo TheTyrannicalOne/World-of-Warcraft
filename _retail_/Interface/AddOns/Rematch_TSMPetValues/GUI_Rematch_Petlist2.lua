@@ -5,10 +5,10 @@
 --
 -- Author: Expelliarm5s / October 2020 / All Rights Reserved
 --
--- Version 1.1.18
+-- Version 1.1.19
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
--- luacheck: globals Rematch
+-- luacheck: globals Rematch RematchPetPanel
 
 local addonName, addon = ...
 local Rematch_PetList2 = addon:NewModule("Rematch_PetList2", "AceConsole-3.0")
@@ -22,7 +22,7 @@ function Rematch_PetList2:DebugPrintf(...)
 	if addon.isDebug then
 		local status, res = pcall(format, ...)
 		if status then
-			addon:DebugLog("Rematch_PetList2~" .. res)
+			addon:DebugLog("RemPL2~" .. res)
 		end
 	end
 end
@@ -43,6 +43,14 @@ function Rematch_PetList2:Login()
 
 		private.OldRFNPLB = Rematch.FillNewPetListButton
 		Rematch.FillNewPetListButton = addon.NewRFNPLB
+
+		-- fix for very weird Ace3 loading/initialization error
+		if RematchPetPanel and RematchPetPanel.List and RematchPetPanel.List.callback then
+			if RematchPetPanel.List.callback == private.OldRFNPLB then
+				RematchPetPanel.List.callback = addon.NewRFNPLB
+				Rematch_PetList2:DebugPrintf("Ace3 loading fix: hooked RematchPetPanel.List.callback")
+			end
+		end
 
 		addon.db.global[Rematch_PetList2:ModuleName()] = true
 	end

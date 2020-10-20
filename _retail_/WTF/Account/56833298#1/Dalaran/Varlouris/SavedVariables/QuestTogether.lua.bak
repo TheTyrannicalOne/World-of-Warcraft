@@ -1,14 +1,6 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[11699] = {
-			["title"] = "I'm Stuck in this Damned Cage... But Not For Long!",
-			["objectives"] = {
-				"0/1 Engine-Core Crystal", -- [1]
-				"1/1 Magical Gyroscope", -- [2]
-				"1/1 Piloting Scourgestone", -- [3]
-			},
-		},
 		[11704] = {
 			["title"] = "King Mrgl-Mrgl",
 			["objectives"] = {
@@ -44,10 +36,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[12794] = {
-			["title"] = "The Magical Kingdom of Dalaran",
+		[11699] = {
+			["title"] = "I'm Stuck in this Damned Cage... But Not For Long!",
 			["objectives"] = {
-				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
+				"0/1 Engine-Core Crystal", -- [1]
+				"1/1 Magical Gyroscope", -- [2]
+				"1/1 Piloting Scourgestone", -- [3]
 			},
 		},
 		[29608] = {
@@ -59,6 +53,14 @@ QuestTogether = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[11650] = {
+			["title"] = "Just a Few More Things...",
+			["objectives"] = {
+				"1/1 Crafty's Tools", -- [1]
+				"0/1 Overcharged Capacitor", -- [2]
+				"0/1 A Handful of Rocknar's Grit", -- [3]
 			},
 		},
 		[26944] = {
@@ -79,19 +81,17 @@ QuestTogether = {
 				"1/1 Mark Location of Northwest Sinkhole", -- [3]
 			},
 		},
-		[11650] = {
-			["title"] = "Just a Few More Things...",
+		[12794] = {
+			["title"] = "The Magical Kingdom of Dalaran",
 			["objectives"] = {
-				"1/1 Crafty's Tools", -- [1]
-				"0/1 Overcharged Capacitor", -- [2]
-				"0/1 A Handful of Rocknar's Grit", -- [3]
+				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

@@ -33,6 +33,7 @@ L["Underwater"] = "Unterwasser"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Zeige Erfolgspunkte"
 L["SETTING_COMPACT_LIST"] = "Kompakte Mount-Liste"
 L["SETTING_CURSOR_KEYS"] = "Aktiviere Aufwärts- und Abwärtspfeiltaste zum Durchblättern"
+L["SETTING_CUSTOM_SORT_OPTIONS"] = "Aktiviere weitere Sortiermöglichkeiten"
 L["SETTING_FAVORITE_PER_CHAR"] = "Speichere Favoriten pro Charakter"
 L["SETTING_HEAD_BEHAVIOUR"] = "Verhalten"
 L["SETTING_MOUNT_COUNT"] = "Zeige Reittieranzahl diesen Charakters"
@@ -43,7 +44,7 @@ L["SETTING_PERSONAL_UI"] = "Benutze Interface-Einstellungen nur bei diesem Chara
 L["SETTING_PREVIEW_LINK"] = "Zeige Knopf zur Sammlung in Anprobe"
 L["SETTING_SHOP_BUTTON"] = "Zeige Shop bei verfügbaren Reittieren"
 L["SETTING_SHOW_USAGE"] = "Zeige Statistiken zum Nutzungsverhalten"
-L["SETTING_TRACK_USAGE"] = "Verfolge Reittier Nutzungsverhalten bei allen Charakteren "
+L["SETTING_TRACK_USAGE"] = "Verfolge Reittier Nutzungsverhalten bei allen Charakteren"
 L["SETTING_YCAMERA"] = "Aktiviere Y-Rotation via Maus in Modellanzeige"
 
 -- Families

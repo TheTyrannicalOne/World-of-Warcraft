@@ -15,12 +15,12 @@ local HBDPins = LibStub("HereBeDragons-Pins-2.0")
 -----------------------------------------------
 local floor, mod, format, strsplit, table, tonumber, type, pairs, next = floor, mod, format, strsplit, table, tonumber, type, pairs, next
 local UnitName, GetRealmName, IsInInstance, GetItemInfo, GetServerTime, GetUnit, IsQuestFlaggedCompleted, PlayerHasToy, UnitAffectingCombat, UnitCanAttack, UnitCreatureType, UnitFactionGroup, UnitGUID, UnitIsPlayer, UnitIsPVP, UnitLevel = UnitName, GetRealmName, IsInInstance, GetItemInfo, GetServerTime, GetUnit, IsQuestFlaggedCompleted, PlayerHasToy, UnitAffectingCombat, UnitCanAttack, UnitCreatureType, UnitFactionGroup, UnitGUID, UnitIsPlayer, UnitIsPVP, UnitLevel
-local C_ContributionCollector, C_Map, C_MountJournal, C_PetJournal, C_Timer, GameTooltip, MouseIsOver = C_ContributionCollector, C_Map, C_MountJournal, C_PetJournal, C_Timer, GameTooltip, MouseIsOver
-
+local C_QuestLog, C_ContributionCollector, C_Map, C_MountJournal, C_PetJournal, C_Timer, GameTooltip, MouseIsOver = C_QuestLog, C_ContributionCollector, C_Map, C_MountJournal, C_PetJournal, C_Timer, GameTooltip, MouseIsOver
+local _G = _G
 ------------
 -- Constants
 ------------
-local PLAYER_MAXLEVEL = 120
+local PLAYER_MAXLEVEL = 50
 local SECONDS_IN_MIN = 60
 local SECONDS_IN_HOUR = SECONDS_IN_MIN * 60
 local SECONDS_IN_DAY = SECONDS_IN_HOUR * 24
@@ -371,7 +371,7 @@ local rareDB = {
             [157134] = { name = L["ishak_of_the_four_winds"], npcid = 157134, questId = { 57259 }, type = TYPE_ELITE, faction = FACTION_ALL, coord = { 73918364 }, bothphases = true, assault = assaultType.all, loot = { { droptype = DROP_MOUNT, itemID = 174641, mountID = 1314, isKnown = false } } }, -- Ishak of the Four Winds | Invasion Type: Black Empire
             [157146] = { name = L["rotfeaster"], npcid = 157146, questId = { 57273 }, type = TYPE_ELITE, faction = FACTION_ALL, coord = { 68593204 }, bothphases = true, assault = assaultType.amathet, loot = { { droptype = DROP_MOUNT, itemID = 174753, mountID = 1317, isKnown = false } } }, -- Rotfeaster | Invasion Type: Amathet
             -- Pet Drops:
-            [157593] = { name = L["amalgamation_of_flesh"], npcid = 157593, questId = { 57667 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 0 }, bothphases = true, assault = assaultType.blackEmpire, loot = { { droptype = DROP_PET, itemID = 174478, petID = 162012, speciesID = 2851, isKnown = false } } }, -- Amalgamation of Flesh | Invasion Type: Black Empire !Coords
+            [157593] = { name = L["amalgamation_of_flesh"], npcid = 157593, questId = { 57667 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 59907230 }, bothphases = true, assault = assaultType.blackEmpire, loot = { { droptype = DROP_PET, itemID = 174478, petID = 162012, speciesID = 2851, isKnown = false } } }, -- Amalgamation of Flesh | Invasion Type: Black Empire !Coords
             [154604] = { name = L["lord_ajqirai"], npcid = 154604, questId = { 56340 }, type = TYPE_ELITE, faction = FACTION_ALL, coord = { 34741885 }, bothphases = true, assault = assaultType.aqir, cave = { 36852093 }, note = "Located inside the Obelisk of the Moon.", loot = { { droptype = DROP_PET, itemID = 174475, petID = 161997, speciesID = 2847, isKnown = false } } }, -- Lord Aj'qirai | Invasion Type: Aqir
             [162140] = { name = L["skikxtraz"], npcid = 162140, questId = { 58697 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 21236105 }, bothphases = true, assault = assaultType.aqir, note = "Patrols in a big area around Ankhaten Harbor.", loot = { { droptype = DROP_PET, itemID = 174476, petID = 162004, speciesID = 2848, isKnown = false } } }, -- Skikx'traz | Invasion Type: Aqir
             -- Toy Drops:
@@ -466,7 +466,7 @@ local rareDB = {
             -- Toy Drops:
             [155958] = { name = L["tashara"], npcid = 155958, questId = { 58507 }, type = TYPE_ELITE, faction = FACTION_ALL, coord = { 29342238 }, bothphases = true, assault = assaultType.mogu, loot = { { droptype = DROP_TOY, itemID = 174873, isKnown = false } } }, -- Tashara
             -- Item Only:
-            [157287] = { name = L["dokani_obliterator"], npcid = 157287, questId = { 57349 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 41205630 }, bothphases = true, assault = assaultType.mogu, loot = { { droptype = DROP_ITEM, itemID = 174927, isKnown = false } } }, -- Dokani Obliterator
+            [157287] = { name = L["dokani_obliterator"], npcid = 157287, questId = { 57349 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 41205630 }, bothphases = true, assault = assaultType.mogu, loot = { { droptype = DROP_ITEM, itemID = 174927, checkMountID = 1311, isKnown = false } } }, -- Dokani Obliterator
             [156083] = { name = L["sanguifang"], npcid = 156083, questId = { 56954 }, type = TYPE_UNCOMMON, faction = FACTION_ALL, coord = { 46185713 }, bothphases = true, assault = assaultType.mogu, loot = { { droptype = DROP_ITEM, itemID = 174071, isKnown = false } } }, -- Sanguifang
             [157162] = { name = L["rei_lun"], npcid = 157162, questId = { 57346 }, type = TYPE_UNCOMMON, faction = FACTION_ALL, coord = { 21901234 }, bothphases = true, assault = assaultType.mogu, loot = { { droptype = DROP_ITEM, itemID = 174230, isKnown = false } } }, -- Rei Lun
             -- Gear Only:
@@ -853,7 +853,7 @@ local function isQuestCompleted(mapid, npcid)
         return false
     else
         for k, v in pairs(rareDB[mapid].rares[npcid].questId) do
-            if IsQuestFlaggedCompleted(rareDB[mapid].rares[npcid].questId[k]) then
+            if C_QuestLog.IsQuestFlaggedCompleted(rareDB[mapid].rares[npcid].questId[k]) then
                 return true
             end
         end
@@ -1369,6 +1369,14 @@ local function showRare(mapid, npcid, mode)
         return false
     end
 end
+
+local function playerHasMount(mountID)
+    local name, spellId, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountID)
+    if isCollected then
+        return true
+    end
+    return false
+end
   
 local function scanForKnownItems()
     if newPetAdedTimer then
@@ -1376,13 +1384,18 @@ local function scanForKnownItems()
         newPetAdedTimer = nil
     end
     for mapid, content in pairs(rareDB) do
-        for k, rare in pairs(content.rares) do
+        for k, rare in pairs(content.rares) do -- checkMountID
             if #rare.loot > 0 then
                 local i
                 for i = 1, #rare.loot do
                     if rare.loot[i].droptype == DROP_MOUNT then
-                        local name, spellId, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(rare.loot[i].mountID)
-                        if isCollected then
+                        --local name, spellId, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(rare.loot[i].mountID)
+                        if playerHasMount(rare.loot[i].mountID) then
+                            rare.loot[i].isKnown = true
+                        end
+                    elseif rare.loot[i].droptype == DROP_ITEM and rare.loot[i].checkMountID ~= nil then
+                        --local name, spellId, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(rare.loot[i].checkMountID)
+                        if playerHasMount(rare.loot[i].checkMountID) then
                             rare.loot[i].isKnown = true
                         end
                     elseif rare.loot[i].droptype == DROP_TOY then
@@ -1395,7 +1408,7 @@ local function scanForKnownItems()
                             rare.loot[i].isKnown = true
                         end
                     elseif rare.loot[i].droptype == DROP_QUEST or rare.loot[i].droptype == DROP_BLUEPRINT then
-                        if rare.loot[i].checkId ~= nil and rare.loot[i].checkId > 0 and IsQuestFlaggedCompleted(rare.loot[i].checkId) then
+                        if rare.loot[i].checkId ~= nil and rare.loot[i].checkId > 0 and C_QuestLog.IsQuestFlaggedCompleted(rare.loot[i].checkId) then
                             rare.loot[i].isKnown = true
                         end
                     end
@@ -1774,6 +1787,9 @@ function WarfrontRareTracker:DelayedInitialize(init)
     if IsAddOnLoaded("TomTom") then
         isTomTomloaded = true
     end
+    if rareDB[WarfrontRareTracker.db.char.selectedZone] == nil then
+        WarfrontRareTracker.db.char.selectedZone = 14
+    end
     checkAssaults()
     scanForKnownItems()
     checkWarfrontZonePhases()
@@ -1867,10 +1883,7 @@ function WarfrontRareTracker:PLAYER_ENTERING_WORLD()
     C_Timer.After(5, function() WarfrontRareTracker:DelayedInitialize(true) end)
 end
 
-
-
-function WarfrontRareTracker:QUEST_WATCH_UPDATE(_, index)
-    local _, _, _, _, _, _, _, questID = GetQuestLogTitle(index)
+function WarfrontRareTracker:QUEST_WATCH_UPDATE(_, questID)
     if questID == 56376 then
         --print('Uldum assaults unlock detected')
         C_Timer.After(1, function()
@@ -1879,8 +1892,8 @@ function WarfrontRareTracker:QUEST_WATCH_UPDATE(_, index)
     end
 end
 
-function WarfrontRareTracker:QUEST_ACCEPTED(_, _, id)
-    if id == 56540 then
+function WarfrontRareTracker:QUEST_ACCEPTED(_, questID)
+    if questID == 56540 then
         --print('Vale assaults unlock detected')
         C_Timer.After(1, function()
             checkAssaults()
@@ -2906,7 +2919,7 @@ local function getNewPin()
 		return pin
     end
     pinCount = pinCount + 1
-    pin = CreateFrame("Button", WARFRONT_PINNAME..pinCount, Minimap)
+    pin = CreateFrame("Button", WARFRONT_PINNAME..pinCount, Minimap, _G.UIParent, BackdropTemplateMixin and "BackdropTemplate")
     pin:SetFrameLevel(5)
 	pin:EnableMouse(true)
 	pin:SetWidth(12)

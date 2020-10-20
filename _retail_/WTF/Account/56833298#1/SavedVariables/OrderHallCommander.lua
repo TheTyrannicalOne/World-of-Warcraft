@@ -10,31 +10,32 @@ dbOHC = {
 		["Shanyt - Argent Dawn"] = {
 			["firstun"] = false,
 		},
-		["Rotclaugh - Dalaran"] = {
+		["Darnastris - Dalaran"] = {
 			["firstun"] = false,
 		},
 		["Illingrath - Dalaran"] = {
 			["firstun"] = false,
 		},
-		["Darnastris - Dalaran"] = {
+		["Rotclaugh - Dalaran"] = {
 			["firstun"] = false,
 		},
+	},
+	["global"] = {
+		["news"] = {
+		},
+		["warn02_seen"] = 0,
+		["warn01_seen"] = 0,
+		["warn03_seen"] = 3,
+		["firstrun"] = false,
+		["changedkeywarned"] = true,
 	},
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Rotclaugh - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
-	},
-	["global"] = {
-		["warn01_seen"] = 0,
-		["warn03_seen"] = 3,
-		["news"] = {
-		},
-		["warn02_seen"] = 0,
-		["firstrun"] = false,
+		["Illingrath - Dalaran"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -51,24 +52,26 @@ dbOHC = {
 				["SAVETROOPS"] = false,
 				["IGNOREINACTIVE"] = true,
 				["NOTROOPS"] = false,
-				["BONUS"] = true,
-				["SORTMISSION2"] = "Garrison_SortMissions_Original",
+				["BONUS"] = false,
+				["SORTMISSION2"] = "Garrison_SortMissions_Class",
 				["BONUSCHANCE"] = 100,
 				["IGNORELOW"] = false,
 				["NOWARN"] = false,
 				["PREFERHIGH"] = false,
 				["BAN160"] = true,
-				["MAKEITQUICK"] = true,
-				["TROOPALERT"] = true,
+				["MAKEITQUICK"] = false,
 				["MAXCHAMP"] = 3,
+				["TROOPALERT"] = true,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
-			["showmenu"] = true,
 			["blacklist"] = {
-				[1816] = true,
+				[1377] = false,
 				[1765] = false,
+				[1325] = false,
+				[1816] = true,
 			},
+			["showmenu"] = false,
 		},
 	},
 }

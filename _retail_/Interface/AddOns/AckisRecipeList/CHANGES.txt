@@ -1,18 +1,12 @@
-tag c4c425fe1508bc0891bbb4507add9681f58a1da0 8.3.0.2
+tag 99dc480010ff2f7f27efb95af4660938e3471ef6 9.0.2
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Sun Jan 19 19:59:44 2020 -0500
+Date:	Thu Oct 15 19:22:29 2020 -0400
 
-8.3.0.2 update
+Updated lib url, it'll build now
 
-commit dcbbd7e2534986794940f4e464e90d685780d3cf
+commit 08bcd10c50d88ac18b01b3db1f94b2db490aab4b
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sat Jan 18 16:00:09 2020 -0500
+Date:   Thu Oct 15 19:18:19 2020 -0400
 
-    To fix various errors popping up
-
-commit 789c54134457bc76c7f8a03f3839fccd3e2be5c0
-Author: Ressy <resa1983@hotmail.com>
-Date:   Wed Jan 15 19:20:32 2020 -0500
-
-    To fix Acquire type error
+    Cuz apparently this is causing the build to fail
 

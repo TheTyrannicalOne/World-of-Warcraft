@@ -1,6 +1,4 @@
--- changed to LibQTipTemp-1.0 until fixed by author
-
-local MAJOR = "LibQTipTemp-1.0"
+local MAJOR = "LibQTip-1.0"
 local MINOR = 48 -- Should be manually increased
 local LibStub = _G.LibStub
 
@@ -39,7 +37,12 @@ local geterrorhandler = _G.geterrorhandler
 ------------------------------------------------------------------------------
 -- Tables and locals
 ------------------------------------------------------------------------------
-lib.frameMetatable = lib.frameMetatable or {__index = CreateFrame("Frame", nil, nil, BackdropTemplateMixin and "BackdropTemplate")}
+if BackdropTemplateMixin and oldMinor and (oldMinor < 48) and lib.frameMetatable then
+    -- mix new BackdropTemplateMixin into frame metatable
+    Mixin(lib.frameMetatable["__index"], BackdropTemplateMixin)
+else
+    lib.frameMetatable = lib.frameMetatable or {__index = CreateFrame("Frame", nil, nil, BackdropTemplateMixin and "BackdropTemplate")}
+end
 
 lib.tipPrototype = lib.tipPrototype or setmetatable({}, lib.frameMetatable)
 lib.tipMetatable = lib.tipMetatable or {__index = lib.tipPrototype}
@@ -183,10 +186,7 @@ local function ReleaseFrame(frame)
 	frame:Hide()
 	frame:SetParent(nil)
 	frame:ClearAllPoints()
-
-	if frame.SetBackdrop then
-		frame:SetBackdrop(nil)
-	end
+	frame:SetBackdrop(nil)
 
 	ClearFrameScripts(frame)
 
@@ -248,7 +248,7 @@ function providerPrototype:AcquireCell()
 	local cell = tremove(self.heap)
 
 	if not cell then
-		cell = setmetatable(CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate"), self.cellMetatable)
+		cell = setmetatable(CreateFrame("Frame", nil, UIParent), self.cellMetatable)
 
 		if type(cell.InitializeCell) == "function" then
 			cell:InitializeCell()
@@ -387,7 +387,7 @@ function AcquireTooltip()
 	local tooltip = tremove(tooltipHeap)
 
 	if not tooltip then
-		tooltip = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
+		tooltip = CreateFrame("Frame", nil, UIParent)
 
 		local scrollFrame = CreateFrame("ScrollFrame", nil, tooltip)
 		scrollFrame:SetPoint("TOP", tooltip, "TOP", 0, -TOOLTIP_PADDING)
@@ -695,7 +695,7 @@ end
 ------------------------------------------------------------------------------
 -- Scrollbar data and functions
 ------------------------------------------------------------------------------
-local BACKDROP_SLIDER_8_8 = {
+local BACKDROP_SLIDER_8_8 = BACKDROP_SLIDER_8_8 or {
 	bgFile = "Interface\\Buttons\\UI-SliderBar-Background",
 	edgeFile = "Interface\\Buttons\\UI-SliderBar-Border",
 	tile = true,
@@ -1546,6 +1546,6 @@ local function PrintStats()
 	end
 end
 
-SLASH_LibQTipTemp1 = "/qtiptemp"
-_G.SlashCmdList["LibQTipTemp"] = PrintStats
+SLASH_LibQTip1 = "/qtip"
+_G.SlashCmdList["LibQTip"] = PrintStats
 --@end-debug@

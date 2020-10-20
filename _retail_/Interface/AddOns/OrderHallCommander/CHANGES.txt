@@ -1,12 +1,12 @@
-tag 90a0a93921c3e9b777cf8000c2e27401f243bb9b 1.7.6
-Author:	Giovanni Gargani <g.gargani@hu-care.com>
-Date:	Fri Jan 17 22:10:06 2020 +0100
+tag 76cb0e1b0831d48625840112466f6db10eb25ef5 1.8.1
+Author:	Giovanni G <19211824+alar77@users.noreply.github.com>
+Date:	Sun Oct 18 20:05:36 2020 +0200
 
-toc 80300
+Fixes error in Followers Tab
 
-commit be2ba42e4bb78c99b376171a3b113c05b6456f81
-Author: Giovanni Gargani <g.gargani@hu-care.com>
-Date:   Fri Jan 17 22:09:45 2020 +0100
+commit ab2e721043b3574bf55313cc36b9b35e9fe6410a
+Author: Giovanni G <19211824+alar77@users.noreply.github.com>
+Date:   Sun Oct 18 19:56:48 2020 +0200
 
-    toc bumo
+    Fixes Follower Page Error
 

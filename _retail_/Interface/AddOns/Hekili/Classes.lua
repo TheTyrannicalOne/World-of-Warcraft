@@ -945,7 +945,7 @@ all:RegisterAuras( {
     bloodlust = {
         id = 2825,
         duration = 40,
-        generate = function ()
+        generate = function ( t )
             local bloodlusts = {
                 [90355] = 'ancient_hysteria',
                 [32182] = 'heroism',
@@ -957,37 +957,29 @@ all:RegisterAuras( {
             for id, key in pairs( bloodlusts ) do
                 local aura = buff[ key ]
                 if aura.up then
-                    buff.bloodlust.count = aura.count
-                    buff.bloodlust.expires = aura.expires
-                    buff.bloodlust.applied = aura.applied
-                    buff.bloodlust.caster = aura.caster
+                    t.count = aura.count
+                    t.expires = aura.expires
+                    t.applied = aura.applied
+                    t.caster = aura.caster
                     return
                 end
             end
 
-            local i = 1
-            local name, _, count, _, duration, expires, caster, _, _, spellID = UnitBuff( 'player', i )
-
-            while( name ) do
-                if spellID == 2525 then break end
-                i = i + 1
-                name, _, count, _, duration, expires, caster, _, _, spellID = UnitBuff( 'player', i )
-            end
+            local name, _, count, _, duration, expires, caster, _, _, spellID = GetPlayerAuraBySpellID( 2825 )
 
             if name then
-                buff.bloodlust.count = max( 1, count )
-                buff.bloodlust.expires = expires
-                buff.bloodlust.applied = expires - duration
-                buff.bloodlust.caster = caster
+                t.count = max( 1, count )
+                t.expires = expires
+                t.applied = expires - duration
+                t.caster = caster
                 return
             end
 
-            buff.bloodlust.count = 0
-            buff.bloodlust.expires = 0
-            buff.bloodlust.applied = 0
-            buff.bloodlust.caster = 'nobody'
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.caster = 'nobody'
         end,
-
     },
 
     exhaustion = {

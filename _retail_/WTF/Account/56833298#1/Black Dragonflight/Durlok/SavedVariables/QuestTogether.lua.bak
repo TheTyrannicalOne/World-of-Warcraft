@@ -19,9 +19,10 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[51421] = {
+			["title"] = "Shiver Me Timbers",
 			["objectives"] = {
+				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
 			},
 		},
 		[56044] = {
@@ -42,10 +43,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[48639] = {
+			["title"] = "Army of the Light",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[40643] = {
@@ -61,12 +62,14 @@ QuestTogether = {
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10 Fresh Star Moss", -- [1]
+				"2/10  ", -- [1]
 			},
 		},
-		[56490] = {
-			["title"] = "Restless Dead",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[44989] = {
@@ -81,10 +84,10 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[50603] = {
@@ -93,10 +96,22 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
+		[48641] = {
+			["title"] = "Armies of Legionfall",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[31891] = {
@@ -109,35 +124,22 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
-			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
-			},
-		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
-			},
-		},
 		[47105] = {
 			["title"] = "Into The Darkness",
 			["objectives"] = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[51421] = {
-			["title"] = "Shiver Me Timbers",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

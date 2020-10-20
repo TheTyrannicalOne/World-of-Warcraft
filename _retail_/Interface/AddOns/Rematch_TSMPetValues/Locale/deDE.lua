@@ -5,7 +5,7 @@
 --
 -- Author: Expelliarm5s / October 2020 / All Rights Reserved
 --
--- Version 1.1.18
+-- Version 1.1.19
 ------------------------------------------------------------------------------
 -- luacheck: max line length 350
 

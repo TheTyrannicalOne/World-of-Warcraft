@@ -243,3 +243,19 @@ ElvUI: enabled
 WeakAurasCompanion: enabled
 OPie_Classic: disabled
 ElvUI_DTBars2: disabled
+AAP-EasternKingdoms: enabled
+AAP-Shadowlands: enabled
+AceGUI-3.0_SFX-Widgets: enabled
+BigWigs_CastleNathria: enabled
+BtWQuestsCataclysm: enabled
+Ace3: enabled
+RareShare: enabled
+RareShare_Uldum: enabled
+RareShareNazjatar: enabled
+RareShare_Vale of Eternal Blossoms: enabled
+RareShareMechagon: enabled
+TomTom: enabled
+TradeSkillMaster_AppHelper: enabled
+Narcissus_Barbershop: enabled
+Narcissus_Database: enabled
+ElvUI_QuestXP: disabled

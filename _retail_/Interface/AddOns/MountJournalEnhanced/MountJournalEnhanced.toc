@@ -1,8 +1,8 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: Mount Journal Enhanced
 ## Notes: Extends the default Mount Journal
 ## Author: eXochron
-## Version: 2.9.2
+## Version: 2.9.3
 ## SavedVariablesPerCharacter: MountJournalEnhancedSettings, MJEPersonalSettings
 ## SavedVariables: MJEGlobalSettings, MJETrackingData
 ## X-Curse-Project-ID: 86372
@@ -15,8 +15,10 @@ Libs\HereBeDragons\HereBeDragons-2.0.lua
 
 Locals\enUS.lua
 Locals\deDE.lua
+Locals\esES.lua
 Locals\frFR.lua
 Locals\koKR.lua
+Locals\ptBR.lua
 Locals\ruRU.lua
 Locals\zhCN.lua
 

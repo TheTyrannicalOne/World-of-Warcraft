@@ -1,94 +1,95 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0335,
+	["LastVersion"] = 2.0401,
 	["LastPlayerFullName"] = "Rotclaugh-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122263,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122263::::::::110:251:::1:5805:::|h[Burnished Helm of Might]|h|r",
+			["Level"] = 52,
+			["Link"] = "|cff00ccff|Hitem:122263::::::::46:251:::1:5805::::|h[Burnished Helm of Might]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122667,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122667::::::::110:251:::1:5805:::|h[Eternal Emberfury Talisman]|h|r",
+			["Level"] = 52,
+			["Link"] = "|cff00ccff|Hitem:122667::::::::46:251:::1:5805::::|h[Eternal Emberfury Talisman]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122355,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122355::::::::110:251:::1:5805:::|h[Polished Spaulders of Valor]|h|r",
+			["Level"] = 52,
+			["Link"] = "|cff00ccff|Hitem:122355::::::::46:251:::1:5805::::|h[Polished Spaulders of Valor]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122387,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122387::::::::110:251:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
+			["Level"] = 52,
+			["Link"] = "|cff00ccff|Hitem:122387::::::::46:251:::1:5805::::|h[Burnished Breastplate of Might]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 121440,
-			["Level"] = 160,
-			["Link"] = "|cff0070dd|Hitem:121440::::::::105:251:512:11:1:1793:105:::|h[Nar'thalas Girdle]|h|r",
+			["Level"] = 50,
+			["Link"] = "|cff0070dd|Hitem:121440::::::::45:251::11:1:1793:1:9:42:::|h[Nar'thalas Girdle]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122264,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122264::::::::110:251:::1:5805:::|h[Burnished Legplates of Might]|h|r",
+			["Level"] = 52,
+			["Link"] = "|cff00ccff|Hitem:122264::::::::46:251:::1:5805::::|h[Burnished Legplates of Might]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 133544,
-			["Level"] = 153,
-			["Link"] = "|cffa335ee|Hitem:133544::::::::106:251:512:11:2:665:664:106:::|h[Kul'Tiras Dress Sabatons]|h|r",
+			["Level"] = 49,
+			["Link"] = "|cffa335ee|Hitem:133544::::::::45:251::11:2:665:664:1:9:43:::|h[Kul'Tiras Dress Sabatons]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 132907,
-			["Level"] = 149,
-			["Link"] = "|cff1eff00|Hitem:132907::::::::104:251:512:11:1:768:103:::|h[Nar'thalas Bracers]|h|r",
+			["Level"] = 46,
+			["Link"] = "|cff1eff00|Hitem:132907::::::::45:251::11:1:768:1:9:41:::|h[Nar'thalas Bracers]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 138840,
-			["Level"] = 146,
-			["Link"] = "|cff1eff00|Hitem:138840::::::::103:251:512:11:1:664:103:::|h[Fortified Librarian's Grips]|h|r",
+			["Level"] = 46,
+			["Link"] = "|cff1eff00|Hitem:138840::::::::45:251::11:1:664:1:9:41:::|h[Fortified Librarian's Grips]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 128172,
-			["Level"] = 170,
+			["Level"] = 52,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128172::::::::110:251:::1:5805:::|h[Captain Sander's Returned Band]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128172::::::::46:251:::1:5805::::|h[Captain Sander's Returned Band]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 122529,
-			["Level"] = 170,
+			["Level"] = 52,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::110:251:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122529::::::::46:251:::1:5805::::|h[Dread Pirate Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122361,
-			["Level"] = 170,
+			["Level"] = 52,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::110:251:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::46:251:::1:5805::::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 170,
+			["Level"] = 50,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::110:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::45:251:::1:5805::::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122260::::::::110:251:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
+			["Level"] = 52,
+			["Link"] = "|cff00ccff|Hitem:122260::::::::46:251:::1:5805::::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 122349,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122349::::::::110:250:::1:5805:::|h[Bloodied Arcanite Reaper]|h|r",
+			["ID"] = 122389,
+			["Level"] = 52,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff00ccff|Hitem:122389:3370:::::::46:251:::1:5805::::|h[Bloodsoaked Skullforge Reaver]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 122389,
-			["Level"] = 170,
+			["Level"] = 52,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff00ccff|Hitem:122389:3368:::::::110:250:::1:5805:::|h[Bloodsoaked Skullforge Reaver]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122389:3368:::::::46:251:::1:5805::::|h[Bloodsoaked Skullforge Reaver]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
