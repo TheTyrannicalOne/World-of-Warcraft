@@ -10,32 +10,36 @@ dbOHC = {
 		["Shanyt - Argent Dawn"] = {
 			["firstun"] = false,
 		},
-		["Darnastris - Dalaran"] = {
+		["Rotclaugh - Dalaran"] = {
+			["firstun"] = false,
+		},
+		["Varlouris - Dalaran"] = {
 			["firstun"] = false,
 		},
 		["Illingrath - Dalaran"] = {
 			["firstun"] = false,
 		},
-		["Rotclaugh - Dalaran"] = {
+		["Darnastris - Dalaran"] = {
 			["firstun"] = false,
 		},
+	},
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 	},
 	["global"] = {
 		["news"] = {
 		},
 		["warn02_seen"] = 0,
 		["warn01_seen"] = 0,
-		["warn03_seen"] = 3,
 		["firstrun"] = false,
+		["warn03_seen"] = 3,
 		["changedkeywarned"] = true,
-	},
-	["profileKeys"] = {
-		["Avisar - Dalaran"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Rotclaugh - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -60,18 +64,18 @@ dbOHC = {
 				["PREFERHIGH"] = false,
 				["BAN160"] = true,
 				["MAKEITQUICK"] = false,
-				["MAXCHAMP"] = 3,
 				["TROOPALERT"] = true,
+				["MAXCHAMP"] = 3,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
+			["showmenu"] = false,
 			["blacklist"] = {
 				[1377] = false,
 				[1765] = false,
 				[1325] = false,
 				[1816] = true,
 			},
-			["showmenu"] = false,
 		},
 	},
 }

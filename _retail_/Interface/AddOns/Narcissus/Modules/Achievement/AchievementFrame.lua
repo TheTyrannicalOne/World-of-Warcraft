@@ -73,6 +73,7 @@ else
 end
 
 local themeID = 0;
+local showNotEarnedMark = false;
 local isDarkTheme = true;
 local isGuildView = false;
 local texturePrefix = "Interface\\AddOns\\Narcissus\\Art\\Modules\\Achievement\\DarkWood\\";
@@ -100,18 +101,22 @@ local function ReskinButton(button)
     button.icon:ClearAllPoints();
     button.lion:ClearAllPoints();
     button.date:ClearAllPoints();
-    button.trackIcon:ClearAllPoints();
-
+    button.NotEarned:ClearAllPoints();
+    if showNotEarnedMark then
+        button.NotEarned:SetWidth(20);
+    else
+        button.NotEarned:SetWidth(0.1);
+    end
     if themeID == 3 then
         button.icon:SetPoint("CENTER", button.border, "LEFT", 32, 0);
         button.lion:SetPoint("CENTER", button.border, "RIGHT", -28, -1);
         button.date:SetPoint("RIGHT", button.border, "TOPRIGHT", -54, -25);
-        button.trackIcon:SetPoint("TOPLEFT", button.icon, "TOPRIGHT", 6, -2);
+        button.NotEarned:SetPoint("TOPLEFT", button.icon, "TOPRIGHT", 6, -2);
     else
         button.icon:SetPoint("CENTER", button.border, "LEFT", 27, 4);
         button.lion:SetPoint("CENTER", button.border, "RIGHT", -22, 3);
         button.date:SetPoint("RIGHT", button.border, "TOPRIGHT", -48, -25);
-        button.trackIcon:SetPoint("TOPLEFT", button.icon, "TOPRIGHT", 7, -6.5);
+        button.NotEarned:SetPoint("TOPLEFT", button.icon, "TOPRIGHT", 7, -6.5);
     end
 
     button.isDark = nil;
@@ -147,7 +152,6 @@ DataProvider.id2Button = {};
 DataProvider.currentCategory = 0;
 DataProvider.isTrackedAchievements = {};
 DataProvider.trackedAchievements = {};
-
 
 function DataProvider:GetCategoryInfo(id, index)
     if not self.categoryCache[id] then
@@ -404,108 +408,6 @@ function animFlyOut:Play()
 end
 
 ------------------------------------------------------------------------------------------------------
-local function SetCategoryButtonProgress(button, numAchievements, numCompleted, isFeatsOfStrength)
-    if numAchievements == 0 or numCompleted == 0 then
-        button.fill:Hide();
-        button.fillEnd:Hide();
-        button.progress:SetText(0 .."/".. numAchievements);
-    else
-        if isFeatsOfStrength then
-            button.fill:Hide();
-            button.fillEnd:Hide();
-            button.progress:SetText(numCompleted);
-        else
-            local percentage = numCompleted / numAchievements;
-            if false and percentage == 1 then
-                button.fill:Hide();
-                button.fillEnd:Hide();
-                button.progress:SetText("");
-            else
-                button.fill:Show();
-                button.fillEnd:Show();
-                button.fill:SetWidth(182 * percentage);
-                button.fill:SetTexCoord(0, percentage *  0.75, 0, 1);
-                button.progress:SetText(numCompleted .."/".. numAchievements);
-            end
-        end
-    end
-    button.progress:Show();
-    button.percentSign:Hide();
-    button.value:Hide();
-    button.numAchievements, button.numCompleted = totalAchievements, totalCompleted;
-end
-
-local function UpdateCategoryButtonProgress(button)
-    local id = button.id;
-    local totalAchievements, totalCompleted = GetCategoryNumAchievements(id, true);   --ACHIEVEMENT_COMPARISON_SUMMARY_ID
-    button.numAchievements, button.numCompleted = totalAchievements, totalCompleted;
-    --print(button.label:GetText().." ".. totalCompleted .. "/" ..totalAchievements);
-    local noPercent = button.noPercent;
-    if noPercent then
-        button.progress:SetText(totalCompleted);
-    else
-        button.progress:SetText(totalCompleted .."/".. totalAchievements);
-    end
-
-    if button.expanded then
-        button.progress:Show();
-        button.percentSign:Hide();
-        button.value:Hide();
-    else
-        button.progress:Hide();
-        button.percentSign:Show();
-        button.value:Show();
-    end
-
-
-    if button.subCategories then
-        local numAchievements, numCompleted;
-        for i = 1, #button.subCategories do
-            id = button.subCategories[i];
-            numAchievements, numCompleted = GetCategoryNumAchievements(id, true);
-            totalAchievements = totalAchievements + numAchievements;
-            totalCompleted = totalCompleted + numCompleted;
-            local childButton = DataProvider:GetCategoryButtonByID(id);
-            if childButton then
-                SetCategoryButtonProgress(childButton, numAchievements, numCompleted, noPercent);
-            end
-        end
-    end
-
-    button.totalAchievements, button.totalCompleted = totalAchievements, totalCompleted;
-    
-
-    if totalAchievements == 0 or totalCompleted == 0 then
-        button.fill:Hide();
-        button.fillEnd:Hide();
-        button.value:SetText("0");
-    else
-        if noPercent then
-            button.fill:Hide();
-            button.fillEnd:Hide();
-            button.value:SetText(totalCompleted);
-        else
-            button.fill:Show();
-            button.fillEnd:Show();
-
-            local percentage = totalCompleted / totalAchievements;
-            button.fill:SetWidth(198 * percentage);
-            button.fill:SetTexCoord(0, percentage *  0.75, 0, 1);
-            if percentage == 1 then
-                button.value:SetText("100");
-            else
-                button.value:SetText( floor(100 * percentage) );
-            end
-        end
-    end
-end
-
-local function UpdateSubCategoryButtonProgress(button)
-    local id = button.id;
-    local numAchievements, numCompleted = GetCategoryNumAchievements(id);   --ACHIEVEMENT_COMPARISON_SUMMARY_ID
-    SetCategoryButtonProgress(button, numAchievements, numCompleted);
-end
-
 local function DisplayProgress(id, flags)
     --print(id)
     local cData, iData = {}, {};
@@ -665,7 +567,7 @@ local function GetProgressivePoints(achievementID, basePoints)
 end
 
 
-local function FormatAchievementCard(buttonIndex, id, name, points, completed, month, day, year, description, flags, icon, rewardText)
+local function FormatAchievementCard(buttonIndex, id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe)
     local headerObject, numLines, textHeight;
     local button = AchievementCards[buttonIndex];
     if not button then
@@ -679,6 +581,11 @@ local function FormatAchievementCard(buttonIndex, id, name, points, completed, m
 
     button.id = id;
     button.trackIcon:SetShown( DataProvider:IsTrackedAchievement(id) );
+    if (not (wasEarnedByMe and completed) ) and (showNotEarnedMark) and (not isGuildView) then
+        button.NotEarned:Show();
+    else
+        button.NotEarned:Hide();
+    end
 
     --for long text
     button.header:SetText(name);
@@ -868,8 +775,8 @@ end
 local function InspectAchievement(id)
     if not id then return end;
     
-    local id, name, points, completed, month, day, year, description, flags, icon, rewardText = DataProvider:GetAchievementInfo(id);
-    FormatAchievementCard(-1, id, name, points, completed, month, day, year, description, flags, icon, rewardText);
+    local id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe = DataProvider:GetAchievementInfo(id);
+    FormatAchievementCard(-1, id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe);
     DisplayProgress(id, flags);
     InspectionFrame.currentAchievementID = id;
     InspectionFrame.currentAchievementName = name;
@@ -945,15 +852,15 @@ local function Slice_UpdateAchievementCards(categoryID, startIndex)
     --from 1st complete achievement to bottom
     local slice = 4;
     local button;
-    local id, name, points, completed, month, day, year, description, flags, icon, rewardText;
+    local id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe;
     local processComplete = false;
     local numProcessed = 0;
     
     --print("process: "..startIndex);
     for i = startIndex, startIndex + slice do
-        id, name, points, completed, month, day, year, description, flags, icon, rewardText = DataProvider:GetAchievementInfoByOrder(categoryID, i);
+        id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe = DataProvider:GetAchievementInfoByOrder(categoryID, i);
         if i > 0 and id then
-            FormatAchievementCard(i, id, name, points, completed, month, day, year, description, flags, icon, rewardText);
+            FormatAchievementCard(i, id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe);
             numProcessed = i;
         else
             processComplete = true;
@@ -968,16 +875,16 @@ local function Slice_ReverselyUpdateAchievementCards_Callback(categoryID, startI
     --from 1st complete achievement to 1st incomplete
     local slice = 4;
     local button;
-    local id, name, points, completed, month, day, year, description, flags, icon, rewardText;
+    local id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe;
     local processComplete = false;
     local numProcessed = 0;
     local numAchievements, numCompleted, numIncomplete = GetCategoryNumAchievements(categoryID, false);
     local index;
     for i = startIndex, startIndex + slice do
-        id, name, points, completed, month, day, year, description, flags, icon, rewardText = DataProvider:GetAchievementInfoByOrder(categoryID, i);
+        id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe = DataProvider:GetAchievementInfoByOrder(categoryID, i);
         if i <= numCompleted then
             index = i + numIncomplete;
-            FormatAchievementCard(index, id, name, points, completed, month, day, year, description, flags, icon, rewardText);
+            FormatAchievementCard(index, id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe);
             numProcessed = i;
         else
             processComplete = true;
@@ -992,18 +899,18 @@ local function Slice_ReverselyUpdateAchievementCards(categoryID, startIndex)
     --from 1st incomplete achievement to the bottom
     local slice = 4;
     local button;
-    local id, name, points, completed, month, day, year, description, flags, icon, rewardText;
+    local id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe;
     local processComplete = false;
     local numProcessed = 0;
     local numAchievements, numCompleted = GetCategoryNumAchievements(categoryID, false);
 
     --print("reverse process: "..startIndex);
     for i = startIndex, startIndex + slice do
-        id, name, points, completed, month, day, year, description, flags, icon, rewardText = DataProvider:GetAchievementInfoByOrder(categoryID, numCompleted + i);
+        id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe = DataProvider:GetAchievementInfoByOrder(categoryID, numCompleted + i);
         if id then
             --print("id #"..id)
             if not completed then
-                FormatAchievementCard(i, id, name, points, completed, month, day, year, description, flags, icon, rewardText);
+                FormatAchievementCard(i, id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe);
                 numProcessed = i;
             end
         else
@@ -1027,7 +934,7 @@ local function UpdateAchievementScrollRange()
     if numAchievements == 0 or not AchievementCards[numAchievements] then
         range = 0;
     else
-        range = max(0, AchievementCards[1]:GetTop() -  AchievementCards[numAchievements]:GetBottom() - AchievementContainer:GetHeight() + 44);
+        range = max(0, AchievementCards[1]:GetTop() -  AchievementCards[numAchievements]:GetBottom() - AchievementContainer:GetHeight() + 40);
     end
     scrollBar:SetMinMaxValues(0, range);
     AchievementContainer.range = range;
@@ -1245,6 +1152,115 @@ function animExpand:CollapseAll()
 end
 
 
+local function SetCategoryButtonProgress(button, numAchievements, numCompleted, isFeatsOfStrength)
+    if numAchievements == 0 or numCompleted == 0 then
+        button.fill:Hide();
+        button.fillEnd:Hide();
+        button.progress:SetText(0 .."/".. numAchievements);
+    else
+        if isFeatsOfStrength then
+            button.fill:Hide();
+            button.fillEnd:Hide();
+            button.progress:SetText(numCompleted);
+        else
+            local percentage = numCompleted / numAchievements;
+            if false and percentage == 1 then
+                button.fill:Hide();
+                button.fillEnd:Hide();
+                button.progress:SetText("");
+            else
+                button.fill:Show();
+                button.fillEnd:Show();
+                button.fill:SetWidth(182 * percentage);
+                button.fill:SetTexCoord(0, percentage *  0.75, 0, 1);
+                button.progress:SetText(numCompleted .."/".. numAchievements);
+            end
+        end
+    end
+    button.progress:Show();
+    button.percentSign:Hide();
+    button.value:Hide();
+    button.numAchievements, button.numCompleted = totalAchievements, totalCompleted;
+end
+
+local function UpdateCategoryButtonProgress(button)
+    local categoryID = button.id;
+    local totalAchievements, totalCompleted = GetCategoryNumAchievements(categoryID, true);   --ACHIEVEMENT_COMPARISON_SUMMARY_ID
+    button.numAchievements, button.numCompleted = totalAchievements, totalCompleted;
+    --print(button.label:GetText().." ".. totalCompleted .. "/" ..totalAchievements);
+    local noPercent = button.noPercent;
+    if noPercent then
+        button.progress:SetText(totalCompleted);
+    else
+        button.progress:SetText(totalCompleted .."/".. totalAchievements);
+    end
+
+    if button.expanded then
+        button.progress:Show();
+        button.percentSign:Hide();
+        button.value:Hide();
+    else
+        button.progress:Hide();
+        button.percentSign:Show();
+        button.value:Show();
+    end
+
+
+    if button.subCategories then
+        local numAchievements, numCompleted;
+        for i = 1, #button.subCategories do
+            categoryID = button.subCategories[i];
+            numAchievements, numCompleted = GetCategoryNumAchievements(categoryID, true);
+            totalAchievements = totalAchievements + numAchievements;
+            totalCompleted = totalCompleted + numCompleted;
+            local childButton = DataProvider:GetCategoryButtonByID(categoryID);
+            if childButton then
+                SetCategoryButtonProgress(childButton, numAchievements, numCompleted, noPercent);
+            end
+        end
+    end
+
+    button.totalAchievements, button.totalCompleted = totalAchievements, totalCompleted;
+    
+
+    if totalAchievements == 0 or totalCompleted == 0 then
+        button.fill:Hide();
+        button.fillEnd:Hide();
+        button.value:SetText("0");
+    else
+        if noPercent then
+            button.fill:Hide();
+            button.fillEnd:Hide();
+            button.value:SetText(totalCompleted);
+        else
+            button.fill:Show();
+            button.fillEnd:Show();
+
+            local percentage = totalCompleted / totalAchievements;
+            button.fill:SetWidth(198 * percentage);
+            button.fill:SetTexCoord(0, percentage *  0.75, 0, 1);
+            if percentage == 1 then
+                button.value:SetText("100");
+            else
+                button.value:SetText( floor(100 * percentage) );
+            end
+        end
+    end
+end
+
+local function UpdateCategoryButtonProgressByCategoryID(categoryID)
+    local button = DataProvider:GetCategoryButtonByID(categoryID);
+    if button then
+        UpdateCategoryButtonProgress(button)
+    end
+end
+
+local function SelectCategory(categoryID)
+    local numAchievements = GetCategoryNumAchievements(categoryID, false);
+    InspectionFrame.numAchievements = numAchievements;
+    UpdateAchievementCardsBySlice(categoryID);
+end
+
 local function SubCategoryButton_OnClick(button)
     local categoryID = button.id;
     if categoryID ~= DataProvider.currentCategory then
@@ -1255,12 +1271,7 @@ local function SubCategoryButton_OnClick(button)
             lastButton.label:SetTextColor(0.8, 0.8, 0.8);
         end
         button.label:SetTextColor(1, 0.91, 0.647);
-
-        local numAchievements = GetCategoryNumAchievements(categoryID, false);
-        
-        InspectionFrame.numAchievements = numAchievements;
-    
-        UpdateAchievementCardsBySlice(categoryID);
+        SelectCategory(categoryID);
     else
         --print("old")
     end
@@ -2126,9 +2137,9 @@ function NarciAchievementInspectionFrameMixin:ShowOrHideChainDates()
 
     --Update toggle visual
     if showDates then
-        ChainFrame.DateToggle:SetLabelText("Hide Dates");
+        ChainFrame.DateToggle:SetLabelText(L["Hide Dates"]);
     else
-        ChainFrame.DateToggle:SetLabelText("Show Dates");
+        ChainFrame.DateToggle:SetLabelText(L["Show Dates"]);
     end
     ChainFrame.count:SetShown(not showDates);
     ChainFrame.header:SetShown(not showDates);
@@ -3008,13 +3019,14 @@ end
 
 --------------------------------------------------------------
 local function FilterButton_OnClick(self)
-    self.completeFirst = not self.completeFirst;
-    if self.completeFirst then
-        self.label:SetText(L["Earned First"]);
-        SwitchToSortMethod(2);
-    else
+    local state = not NarciAchievementOptions.IncompleteFirst;
+    NarciAchievementOptions.IncompleteFirst = state;
+    if state then
         self.label:SetText(L["Incomplete First"]);
         SwitchToSortMethod(1);
+    else
+        self.label:SetText(L["Earned First"]);
+        SwitchToSortMethod(2);
     end
 end
 
@@ -3061,7 +3073,7 @@ local function CreateTabButtons()
         end,
 
         function(self)
-            MainFrame.Settings:ToggleFrame();
+            MainFrame.Settings:Toggle();
         end,
     }
     
@@ -3245,6 +3257,18 @@ local function InitializeFrame(frame)
     UpdateCategoryScrollRange();
 
 
+    --Sort Method
+    local FilterButton = frame.FilterButton;
+    if NarciAchievementOptions.IncompleteFirst then
+        SORT_FUNC = Slice_ReverselyUpdateAchievementCards;
+        FilterButton.label:SetText(L["Incomplete First"]);
+    else
+        SORT_FUNC = Slice_UpdateAchievementCards;
+        FilterButton.label:SetText(L["Earned First"]);
+    end
+    FilterButton:SetScript("OnClick", FilterButton_OnClick);
+    showNotEarnedMark = NarciAchievementOptions.ShowRedMark;
+
     --Achievement
     AchievementContainer = frame.AchievementCardFrame;
     CreateAchievementButtons(AchievementContainer.ScrollChild);
@@ -3272,9 +3296,7 @@ local function InitializeFrame(frame)
 
     --Header Filter, Total Points, Search, Close
     local HeaderFrame = frame.HeaderFrame;
-    frame.FilterButton:SetScript("OnClick", FilterButton_OnClick);
 
-    
     SummaryButton = frame.SummaryButton;
     SummaryButton:SetScript("OnClick", SummaryButton_OnClick);
     
@@ -3312,7 +3334,7 @@ local function InitializeFrame(frame)
     --
     tinsert(UISpecialFrames, frame:GetName());
     frame:Hide();
-
+    frame:SetAlpha(1);
 end
 
 -----------------------------------------
@@ -3440,11 +3462,33 @@ end
 
 --------------------------------------------------------------------
 --Public
-function NarciAchievement_ToggleTracking(achievementID)
-    ToggleTracking(achievementID);
+NarciAchivementFrameMixin = {};
+
+function NarciAchivementFrameMixin:OnShow()
+    if self.pendingCategoryID then
+        SelectCategory(self.pendingCategoryID);
+        self.pendingCategoryID = nil;
+    end
 end
 
-function NarciAchievement_LocateAchievement(achievementID, clickAgainToClose)
+function NarciAchivementFrameMixin:ShowRedMark(visible)
+    showNotEarnedMark = visible;
+    for i = 1, #AchievementCards do
+        if visible then
+            AchievementCards[i].NotEarned:SetWidth(20);
+        else
+            AchievementCards[i].NotEarned:SetWidth(0.1);
+        end
+    end
+    if MainFrame:IsShown() then
+        local categoryID = DataProvider.currentCategory;
+        if categoryID and categoryID ~= 0 then
+            UpdateAchievementCardsBySlice(categoryID);
+        end
+    end
+end
+
+function NarciAchivementFrameMixin:LocateAchievement(achievementID, clickAgainToClose)
     local Card = InspectionFrame.Card;
 
     if  (not achievementID) or ( clickAgainToClose and (Card.id == achievementID) and MainFrame:IsShown() and InspectionFrame:IsShown() ) then
@@ -3796,34 +3840,13 @@ local function RestoreFunctions()
             ObjectiveTracker_ToggleDropDown(block, AchievementObjectiveTracker_OnOpenDropDown);
         end
     end
-
-    --[[
-    function AchievementAlertFrame_OnClick(self, button, down)
-        if( AlertFrame_OnClick(self, button, down) ) then
-            return;
-        end
-        local id = self.id;
-        if ( not id ) then
-            return;
-        end
-        CloseAllWindows();
-        ShowUIPanel(AchievementFrame);
-        local _, _, _, achCompleted = GetAchievementInfo(id);
-        if ( achCompleted and (ACHIEVEMENTUI_SELECTEDFILTER == AchievementFrameFilters[ACHIEVEMENT_FILTER_INCOMPLETE].func) ) then
-            AchievementFrame_SetFilter(ACHIEVEMENT_FILTER_ALL);
-        elseif ( (not achCompleted) and (ACHIEVEMENTUI_SELECTEDFILTER == AchievementFrameFilters[ACHIEVEMENT_FILTER_COMPLETE].func) ) then
-            AchievementFrame_SetFilter(ACHIEVEMENT_FILTER_ALL);
-        end
-        AchievementFrame_SelectAchievement(id)
-    end
-    --]]
 end
 
 local function OverrideFunctions()
     hasOverwritten = true;
 
     function OpenAchievementFrameToAchievement(achievementID)
-        NarciAchievement_LocateAchievement(achievementID);
+        MainFrame:LocateAchievement(achievementID);
     end
 
     function ACHIEVEMENT_TRACKER_MODULE:OnBlockHeaderClick(block, mouseButton)
@@ -3834,36 +3857,19 @@ local function OverrideFunctions()
             end
         elseif ( mouseButton ~= "RightButton" ) then
             if ( IsModifiedClick("QUESTWATCHTOGGLE") ) then
-                NarciAchievement_ToggleTracking(block.id);
+                ToggleTracking(block.id);
             else
                 local clickAgainToClose = true;
-                NarciAchievement_LocateAchievement(block.id, clickAgainToClose);
+                MainFrame:LocateAchievement(block.id, clickAgainToClose);
             end
         else
             ObjectiveTracker_ToggleDropDown(block, AchievementObjectiveTracker_OnOpenDropDown);
         end
     end
-
-    --[[
-    function AchievementAlertFrame_OnClick(self, button, down)
-        if( AlertFrame_OnClick(self, button, down) ) then
-            return;
-        end
-        local id = self.id;
-        if ( not id ) then
-            return;
-        end
-        
-        NarciAchievement_LocateAchievement(id);
-    end
-    --]]
-
-
-    --AchievementAlertSystem.alertFramePool.frameTemplate = "NarciAchievementAlertFrameTemplate";
 end
 
 function NarciAchievement_RedirectPrimaryAchievementFrame()
-    if NarciAchievementOptions.UsedAsPrimary then
+    if NarciAchievementOptions.UseAsDefault then
         if not hasOverwritten then
             OverrideFunctions();
         end
@@ -3873,6 +3879,26 @@ function NarciAchievement_RedirectPrimaryAchievementFrame()
             RestoreFunctions();
         end
         NarciAchievementAlertSystem:Disable();
+    end
+end
+
+local function OnAchivementEarned(achievementID)
+    DataProvider:UpdateAchievementCache(achievementID);
+    RefreshInspection(achievementID);
+    
+    local categoryID = GetAchievementCategory(achievementID);
+    if categoryID then
+        if DataProvider.achievementOrderCache[categoryID] then
+            wipe(DataProvider.achievementOrderCache[categoryID]);
+        end
+        UpdateCategoryButtonProgressByCategoryID(categoryID);
+        if categoryID == DataProvider.currentCategory then
+            if MainFrame:IsShown() then
+                SelectCategory(categoryID);
+            else
+                MainFrame.pendingCategoryID = categoryID;
+            end
+        end
     end
 end
 
@@ -3904,8 +3930,7 @@ initialize:SetScript("OnEvent", function(self, event, ...)
 
     elseif event == "ACHIEVEMENT_EARNED" then
         local achievementID = ...;
-        DataProvider:UpdateAchievementCache(achievementID);
-        RefreshInspection(achievementID);
+        OnAchivementEarned(achievementID);
         if not self.pauseUpdate then
             self.pauseUpdate = true;
             After(0, function()

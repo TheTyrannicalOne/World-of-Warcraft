@@ -3,20 +3,28 @@ FishingBuddy_Info = {
 	["FishTotals"] = {
 		[1355000] = 1,
 		[1355001] = 1,
+		[1527001] = 2,
+		[1527000] = 2,
 	},
 	["HiddenFishies"] = {
 	},
 	["FishingSkill"] = {
 		[1355001] = 0,
+		[1527001] = 0,
 	},
 	["DataFish"] = 0,
 	["FishingHoles"] = {
 		[1355001] = {
 			[168646] = 1,
 		},
+		[1527001] = {
+			[45188] = 1,
+			[27422] = 1,
+		},
 	},
 	["KnownZones"] = {
 		[1355] = "Chitterspine Caverns",
+		[1527] = "Uldum",
 	},
 	["Settings"] = {
 		["CreateMacro"] = true,
@@ -25,9 +33,22 @@ FishingBuddy_Info = {
 	["SubZones"] = {
 		[1355000] = 1,
 		[1355001] = "Chitterspine Caverns",
+		[1527001] = "Uldum",
+		[1527000] = 1,
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
+		[45188] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Withered Kelp",
+			["quality"] = 0,
+			["texture"] = 134192,
+		},
+		[27422] = {
+			["enUS"] = "Barbed Gill Trout",
+			["quality"] = 1,
+			["texture"] = 133923,
+		},
 		[168646] = {
 			["enUS"] = "Mauve Stinger",
 			["texture"] = 3007472,

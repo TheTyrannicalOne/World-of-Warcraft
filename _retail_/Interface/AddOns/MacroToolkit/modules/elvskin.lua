@@ -224,15 +224,13 @@ function MT:LoadElvSkin(frame)
 			local pt = _G[format("MacroToolkitPopupButton%dIcon", i)]
 			if b then
 				b:StripTextures()
-				b:CreateBackdrop('Default')
 				b:StyleButton(true)
-				--b:SetTemplate("Default", true)
+				b:SetTemplate("Default", true)
 			end
 			if c then
 				c:StripTextures()
-				c:CreateBackdrop('Default')
 				c:StyleButton(true)
-				--c:SetTemplate("Default", true)
+				c:SetTemplate("Default", true)
 			end
 			if t then
 				t:SetTexCoord(unpack(E.TexCoords))
@@ -244,9 +242,8 @@ function MT:LoadElvSkin(frame)
 			end
 			if pb then
 				pb:StripTextures()
-				pb:CreateBackdrop('Default')
 				pb:StyleButton(true)
-				--pb:SetTemplate("Default")					
+				pb:SetTemplate("Default")					
 			end
 			if pt then
 				pt:SetTexCoord(unpack(E.TexCoords))

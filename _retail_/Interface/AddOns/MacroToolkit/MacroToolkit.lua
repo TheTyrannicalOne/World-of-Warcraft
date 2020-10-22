@@ -349,8 +349,8 @@ function MT:DoMTMacroCommand(command, parameters)
 		SetMapToCurrentZone()
 		local x, y = GetPlayerMapPosition("player")
 		print(format("%.1f %.1f", x*100, y*100))
-	elseif command == "mttc" then ShowCloak(not ShowingCloak())
-	elseif command == "mtth" then ShowHelm(not ShowingHelm())
+	--elseif command == "mttc" then ShowCloak(not ShowingCloak())
+	--elseif command == "mtth" then ShowHelm(not ShowingHelm())
 	elseif command == "mtep" then for seat = 1,2 do if CanEjectPassengerFromSeat(seat) then EjectPassengerFromSeat(seat) end end
 	elseif command == "mtsg" then
 		local GetContainerItemInfo, GetItemInfo, UseContainerItem, cash = GetContainerItemInfo, GetItemInfo, UseContainerItem, 0
@@ -780,6 +780,7 @@ function MT:MacroFrameUpdate()
 					macroButton:SetChecked(true)
 					if tab < 4 then MacroToolkitSelMacroName:SetText(name)
 					else MacroToolkitCSelMacroName:SetText(name) end
+					--body = body or ""
 					local s, e, index = string.find(body, "MTSB(%d+)")
 					if index then
 						body = MT:GetExtendedBody(index, tab)
@@ -937,7 +938,7 @@ function MT:ContainerOnLoad(this)
 	local maxMacroButtons = (this:GetName() == "MacroToolkitCButtonContainer") and _G.MAX_CHARACTER_MACROS or max(_G.MAX_ACCOUNT_MACROS, _G.MAX_CHARACTER_MACROS)
 	local bname = (this:GetName() == "MacroToolkitCButtonContainer") and "MacroToolkitCButton" or "MacroToolkitButton"
 	for i = 1, maxMacroButtons do
-		button = CreateFrame("CheckButton", format("%s%d", bname, i), this, "MacroToolkitButtonTemplate")
+		button = CreateFrame("CheckButton", format("%s%d", bname, i), this, "MacroToolkitButtonTemplate,BackdropTemplate")
 		button:SetScript("OnClick", function(this, button) MT:MacroButtonOnClick(this, button) end)
 		button:SetScript("OnDragStart", function(this) if not InCombatLockdown() then PickupMacro(MTF.macroBase + this:GetID()) end end)
 		button:SetID(i)

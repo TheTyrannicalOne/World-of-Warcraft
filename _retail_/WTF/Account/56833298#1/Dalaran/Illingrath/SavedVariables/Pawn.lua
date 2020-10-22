@@ -73,11 +73,17 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:166770::::::::50:581:::1:5805::::|h[Banded Gilnean Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 122351,
-			["Level"] = 58,
+			["ID"] = 117356,
+			["Level"] = 82,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff00ccff|Hitem:122351::::::::50:581:::1:5805::::|h[Venerable Dal'Rend's Sacred Charge]|h|r",
+			["Link"] = "|cffa335ee|Hitem:117356::::::::50:581::11:1:6423:2:28:2063:9:50:::|h[The Horseman's Sinister Slicer]|h|r",
 		}, -- [16]
+		{
+			["ID"] = 117356,
+			["Level"] = 82,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:117356::::::::50:581::11:1:6423:2:9:50:28:2063:::|h[The Horseman's Sinister Slicer]|h|r",
+		}, -- [17]
 	},
 	["AutoSelectScales"] = true,
 	["LastPlayerFullName"] = "Illingrath-Dalaran",

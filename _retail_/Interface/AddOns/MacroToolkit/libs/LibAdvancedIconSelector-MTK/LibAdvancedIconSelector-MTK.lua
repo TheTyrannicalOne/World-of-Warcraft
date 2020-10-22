@@ -258,7 +258,7 @@ function IconSelectorWindow:Create(name, parent, options)
 	if not parent then parent = UIParent end
 	options = Helpers.ApplyDefaults(options, defaults)
 
-	self = self:MixInto(CreateFrame("Frame", name, parent, BackdropTemplateMixin and "BackdropTemplate"))
+	self = self:MixInto(CreateFrame("Frame", name, parent, "BackdropTemplate"))
 	self:Hide()
 	self:SetFrameStrata("MEDIUM")
 	self:SetSize(options.width, options.height)
@@ -289,7 +289,7 @@ function IconSelectorWindow:Create(name, parent, options)
 	end
 
 	if not options.noCloseButton then
-		self.closeButton = CreateFrame("Button", nil, self, "UIPanelCloseButton", BackdropTemplateMixin and "BackdropTemplate")
+		self.closeButton = CreateFrame("Button", nil, self, "UIPanelCloseButton")
 		self.closeButton:SetPoint("TOPRIGHT", 0, 0)
 
 		self.closeButton:SetScript("OnClick", function(...)
@@ -351,7 +351,7 @@ function IconSelectorWindow:Create(name, parent, options)
 	self.searchLabel:SetText(L["Search:"])
 	self.searchLabel:SetHeight(22)
 
-	self.searchBox = CreateFrame("EditBox", name .. "_SearchBox", self, "BackdropTemplate,InputBoxTemplate")
+	self.searchBox = CreateFrame("EditBox", name .. "_SearchBox", self, "InputBoxTemplate")
 	self.searchBox:SetAutoFocus(false)
 	self.searchBox:SetHeight(22)
 	self.searchBox:SetScript("OnTextChanged", function(editBox, userInput)
@@ -360,7 +360,7 @@ function IconSelectorWindow:Create(name, parent, options)
 		end
 	end)
 
-	self.cancelButton = CreateFrame("Button", name .. "_Cancel", self, "BackdropTemplate,UIPanelButtonTemplate")
+	self.cancelButton = CreateFrame("Button", name .. "_Cancel", self, "UIPanelButtonTemplate")
 	if options.okayCancel then
 		self.cancelButton:SetText(L["Cancel"])
 	else
@@ -376,7 +376,7 @@ function IconSelectorWindow:Create(name, parent, options)
 	end)
 
 	if options.okayCancel then
-		self.okButton = CreateFrame("Button", name .. "_OK", self, "BackdropTemplate,UIPanelButtonTemplate")
+		self.okButton = CreateFrame("Button", name .. "_OK", self, "UIPanelButtonTemplate")
 		self.okButton:SetText(L["Okay"])
 		self.okButton:SetSize(78, 22)
 		self.okButton:SetScript("OnClick", function(...)
@@ -391,7 +391,7 @@ function IconSelectorWindow:Create(name, parent, options)
 		for _, buttonInfo in ipairs(options.visibilityButtons) do
 			local sectionName, buttonText = unpack(buttonInfo)
 			local buttonName = name .. "_" .. sectionName .. "_Visibility"
-			local button = CreateFrame("CheckButton", buttonName, self, "BackdropTemplate,UICheckButtonTemplate")
+			local button = CreateFrame("CheckButton", buttonName, self, "UICheckButtonTemplate")
 			_G[buttonName .. "Text"]:SetText(buttonText)
 			button:SetChecked(self.iconsFrame:GetSectionVisibility(sectionName))
 			button:SetSize(24, 24)
@@ -482,7 +482,7 @@ function IconSelectorFrame:Create(name, parent, options)
 	assert(name, "The icon selector frame must have a name")
 	options = Helpers.ApplyDefaults(options, defaults)
 
-	self = self:MixInto(CreateFrame("Frame", name, parent, BackdropTemplateMixin and "BackdropTemplate"))
+	self = self:MixInto(CreateFrame("Frame", name, parent))
 	self.scrollOffset = 0
 	self.iconsX = 1
 	self.iconsY = 1
@@ -502,14 +502,14 @@ function IconSelectorFrame:Create(name, parent, options)
 	end)
 
 	-- Create the scroll bar
-	self.scrollFrame = CreateFrame("ScrollFrame", name .. "_ScrollFrame", self, "BackdropTemplate,FauxScrollFrameTemplate")
+	self.scrollFrame = CreateFrame("ScrollFrame", name .. "_ScrollFrame", self, "FauxScrollFrameTemplate")
 	self.scrollFrame:SetScript("OnVerticalScroll", function(scrollFrame, offset)
 		if offset == 0 then self.fauxResults = 0 end	-- Remove all faux results when the top of the list is hit.
 		FauxScrollFrame_OnVerticalScroll(self.scrollFrame, offset, ICON_HEIGHT + ICON_SPACING, function() self:private_UpdateScrollFrame() end)
 	end)
 
 	-- Create the internal frame to display the icons
-	self.internalFrame = CreateFrame("Frame", name .. "_Internal", self, BackdropTemplateMixin and "BackdropTemplate")
+	self.internalFrame = CreateFrame("Frame", name .. "_Internal", self)
 	self.internalFrame.parent = self
 	self.internalFrame:SetScript("OnSizeChanged", self.private_OnInternalFrameSizeChanged)
 
@@ -737,7 +737,7 @@ function IconSelectorFrame.private_OnInternalFrameSizeChanged(internalFrame, wid
 			-- Create the button if it doesn't exist (but don't set its normal texture yet)
 			local button = self.icons[i]
 			if not button then
-				button = CreateFrame("CheckButton", format("MTAISButton%d", i), self.internalFrame, "BackdropTemplate,PopupButtonTemplate")
+				button = CreateFrame("CheckButton", format("MTAISButton%d", i), self.internalFrame, "PopupButtonTemplate")
 				button.icon = _G[format("MTAISButton%dIcon", i)]
 				self.icons[i] = button
 				button:SetSize(36, 36)

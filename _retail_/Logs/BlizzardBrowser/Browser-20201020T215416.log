@@ -1,0 +1,42 @@
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - setting background color 'ff000000'.
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - UserAgent: BlizzardBrowser/4.1.37.249 Chrome/69.0.3497.81
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - [BrowserProcessHandler] Create invoked. winSize: {0, 0}; 746; 468
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::backgroundColor: {r:0, g:0, b:0, a:255}
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::blizzardErrorPath: ""
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::enableHardwareAcceleration: true
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::enableLocalStorage: false
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::enablePlugins: false
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:16 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::showCrashDialog: false
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::showNativeScrollBar: true
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::startUrl: "about:blank"
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::userAgentToken: ""
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] BrowserConfig::webkitLocale: 2
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Renderer]: 2020-10-20T17:54:17 {152c} [INFO] - browser created
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnLoadStart type:1 frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - first page load completed
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:17 {37cc} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:18 {37cc} [INFO] - [BrowserProcessHandler] OnLoadStart type:0 frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:19 {37cc} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:19 {37cc} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:19 {37cc} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:19 {37cc} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:19 {37cc} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:19 {37cc} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:21 {37cc} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:21 {37cc} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:21 {37cc} [INFO] - [BrowserProcessHandler] OnLoadError frame:3 errorCode:-3 errorText:ERR_ABORTED
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:22 {37cc} [INFO] - [BrowserProcessHandler] OnLoadStart type:8 frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:22 {37cc} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Scene]: 2020-10-20T17:54:23 {37cc} [INFO] - received shutdown message from client.
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:23 {37cc} [INFO] - [BrowserProcessHandler] Shutdown invoked
+[INFO]-[BNL_Browser]: 2020-10-20T17:54:23 {37cc} [INFO] - [BrowserProcessHandler] OnBeforeClose

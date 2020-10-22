@@ -93,7 +93,7 @@ function MT:CreateMTPopup()
 	local mtpfavailable = mtpf:CreateFontString("MacroToolkitPopupAvailable", "BACKGROUND", "GameFontHighlightSmall")
 	mtpfavailable:SetPoint("LEFT", mtpfcicon, "RIGHT", 20, 0)
 
-	local mtpfedit = CreateFrame("EditBox", "MacroToolkitPopupEdit", mtpf, "BackdropTemplate")
+	local mtpfedit = CreateFrame("EditBox", "MacroToolkitPopupEdit", mtpf)
 	mtpfedit:SetMaxLetters(16)
 	mtpfedit:SetSize(182, 20)
 	mtpfedit:SetPoint("TOPLEFT", 29, -35)
@@ -165,13 +165,13 @@ function MT:CreateMTPopup()
 		end
 	end
 	
-	local searchBox = CreateFrame("EditBox", "MacroToolkitSearchBox", mtpf, "BackdropTemplate,InputBoxTemplate")
+	local searchBox = CreateFrame("EditBox", "MacroToolkitSearchBox", mtpf, "InputBoxTemplate")
 	searchBox:SetAutoFocus(false)
 	searchBox:SetSize(150, 22)
 	searchBox:SetPoint("LEFT", searchLabel, "RIGHT", 10, 0)
 	searchBox:SetScript("OnTextChanged", searchtextchanged)
 	
-	local spellsearch = CreateFrame("CheckButton", "MacroToolkitSpellCheck", mtpf, "BackdropTemplate,UICheckButtonTemplate")
+	local spellsearch = CreateFrame("CheckButton", "MacroToolkitSpellCheck", mtpf, "UICheckButtonTemplate")
 	spellsearch:SetSize(32, 32)
 	spellsearch:SetPoint("LEFT", searchBox, "RIGHT", 10, 0)
 	
@@ -224,7 +224,7 @@ function MT:CreateMTPopup()
 		b:SetScript("OnClick", function(this) MT:PopupButtonOnClick(this) end)
 	end
 ]]--
-	local mtpfcancel = CreateFrame("Button", "MacroToolkitPopupCancel", mtpf, "BackdropTemplate,UIPanelButtonTemplate")
+	local mtpfcancel = CreateFrame("Button", "MacroToolkitPopupCancel", mtpf, "UIPanelButtonTemplate")
 	mtpfcancel:SetText(_G.CANCEL)
 	mtpfcancel:SetSize(78, 22)
 	mtpfcancel:SetPoint("BOTTOMRIGHT", -11, 13)
@@ -235,7 +235,7 @@ function MT:CreateMTPopup()
 			PlaySound(798)
 		end)
 
-	local mtpfok = CreateFrame("Button", "MacroToolkitPopupOk", mtpf, "BackdropTemplate,UIPanelButtonTemplate")
+	local mtpfok = CreateFrame("Button", "MacroToolkitPopupOk", mtpf, "UIPanelButtonTemplate")
 	mtpfok:SetText(_G.OKAY)
 	mtpfok:SetSize(78, 22)
 	mtpfok:SetPoint("RIGHT", mtpfcancel, "LEFT", -2, 0)
@@ -319,7 +319,7 @@ function MT:CreateMTPopup()
 			collectgarbage()
 		end)
 
-	local mtpfgl = CreateFrame("Button", "MacroToolkitPopupGoLarge", mtpf, "BackdropTemplate,UIPanelButtonTemplate")
+	local mtpfgl = CreateFrame("Button", "MacroToolkitPopupGoLarge", mtpf, "UIPanelButtonTemplate")
 	
 	MT.golarge =
 		function()

@@ -9,358 +9,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"lemme check", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1116, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046324,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"what if u like ass aphroditte", -- [1]
-			"Dëxter-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dëxter-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1117, -- [11]
-			"Player-3683-0BE3CD24", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edDëxter|r",
-			[51] = 1603046334,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"Free Horseman run, Tank que, Just invite me", -- [1]
-			"Peteimus-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Peteimus-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1118, -- [11]
-			"Player-3683-0CB911B1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Peteimus|r",
-			[51] = 1603046339,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"you guys talking about pvp or pve", -- [1]
-			"Sisili-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sisili-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1119, -- [11]
-			"Player-3683-0B3ECE11", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Sisili|r",
-			[51] = 1603046339,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"profession recs for warrior - please?", -- [1]
-			"Twillite-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Twillite-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1120, -- [11]
-			"Player-3683-0CC0BB2E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cTwillite|r",
-			[51] = 1603046346,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"Disc,Sham,Monk,Druid,Pally,HolyPriest in that order for new raid", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1121, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046364,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"data analyst or accountant imo", -- [1]
-			"Heart-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Heart-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1123, -- [11]
-			"Player-3683-0CB8E3FE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Heart|r",
-			[51] = 1603046369,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"wow", -- [1]
-			"Jharvus-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jharvus-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1127, -- [11]
-			"Player-3683-0CC0A6C1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Jharvus|r",
-			[51] = 1603046376,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"shaman is ass till 40-50 though ", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1134, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046389,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"i figured rshaman would beat disc priest in the new raid.", -- [1]
-			"ßlur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"ßlur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1137, -- [11]
-			"Player-3683-0BFB7DDD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97ßlur|r",
-			[51] = 1603046393,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"the dps disc puts out puts them over shaman", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1144, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046407,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"Yeah, but in term's of healing and utility i'd put rshaman over disc.", -- [1]
-			"ßlur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"ßlur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1150, -- [11]
-			"Player-3683-0BFB7DDD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97ßlur|r",
-			[51] = 1603046426,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"LF Tank for Horseman", -- [1]
-			"Seliv-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Seliv-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1151, -- [11]
-			"Player-3683-0AC47DA4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Seliv|r",
-			[51] = 1603046442,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"either way, shaman will still be a huge help in raids", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1153, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046469,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"heyyyyyy ;))", -- [1]
-			"Gorgei-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Gorgei-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1155, -- [11]
-			"Player-3683-09D961A9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcGorgei|r",
-			[51] = 1603046487,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"Free Horseman run, Tank que, Just invite me", -- [1]
-			"Peteimus-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Peteimus-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1157, -- [11]
-			"Player-3683-0CB911B1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Peteimus|r",
-			[51] = 1603046497,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
 			"100% agree mom", -- [1]
 			"ßlur-Dalaran", -- [2]
 			"", -- [3]
@@ -381,7 +29,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97ßlur|r",
 			[51] = 1603046517,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [1]
 		{
 			"need people for horsemen", -- [1]
 			"Fabinnalt-Dalaran", -- [2]
@@ -403,7 +51,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Fabinnalt|r",
 			[51] = 1603046530,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [2]
 		{
 			"Paladins ain't tanks. More like cannon fodder.", -- [1]
 			"Missdemeanor-Dalaran", -- [2]
@@ -425,7 +73,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMissdemeanor|r",
 			[51] = 1603046531,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [3]
 		{
 			"its saying disc is also over shaman due to the insane effective health pool increase from the shields", -- [1]
 			"Thickmom-Dalaran", -- [2]
@@ -447,7 +95,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thickmom|r",
 			[51] = 1603046541,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [4]
 		{
 			"i dunno... i tend to not die as apally tank... ", -- [1]
 			"Ginasue-Dalaran", -- [2]
@@ -469,7 +117,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ginasue|r",
 			[51] = 1603046585,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [5]
 		{
 			"LF people for horsemen", -- [1]
 			"Fabinnalt-Dalaran", -- [2]
@@ -491,7 +139,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Fabinnalt|r",
 			[51] = 1603046587,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [6]
 		{
 			"they are able to get the highest heal/second during high stress situations too", -- [1]
 			"Thickmom-Dalaran", -- [2]
@@ -513,7 +161,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thickmom|r",
 			[51] = 1603046587,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [7]
 		{
 			"pally tank is fine lol", -- [1]
 			"Aphroditte-Dalaran", -- [2]
@@ -535,7 +183,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Aphroditte|r",
 			[51] = 1603046592,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [8]
 		{
 			"Come at me Missdemeanor. ", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -557,7 +205,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1603046595,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [9]
 		{
 			"only other tank spec i like is vengance", -- [1]
 			"Ginasue-Dalaran", -- [2]
@@ -579,7 +227,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ginasue|r",
 			[51] = 1603046599,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [10]
 		{
 			"i like how i still have 280% flying", -- [1]
 			"Blarrinny-Dalaran", -- [2]
@@ -601,7 +249,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Blarrinny|r",
 			[51] = 1603046608,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [11]
 		{
 			"why is the headless horseman queue so long?", -- [1]
 			"Terenarrus-Dalaran", -- [2]
@@ -623,7 +271,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Terenarrus|r",
 			[51] = 1603046611,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [12]
 		{
 			"isnt this out of the game>", -- [1]
 			"Blarrinny-Dalaran", -- [2]
@@ -645,7 +293,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Blarrinny|r",
 			[51] = 1603046613,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [13]
 		{
 			"pally tanks are 4/6 right now", -- [1]
 			"Thickmom-Dalaran", -- [2]
@@ -667,7 +315,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thickmom|r",
 			[51] = 1603046615,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [14]
 		{
 			"interesting i thought mw could heal the highest in high stress situations.", -- [1]
 			"ßlur-Dalaran", -- [2]
@@ -689,7 +337,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97ßlur|r",
 			[51] = 1603046623,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [15]
 		{
 			"i got in after 3 seconds", -- [1]
 			"Sisili-Dalaran", -- [2]
@@ -711,7 +359,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sisili|r",
 			[51] = 1603046624,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [16]
 		{
 			"but I also have tank and heals checked", -- [1]
 			"Sisili-Dalaran", -- [2]
@@ -733,7 +381,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sisili|r",
 			[51] = 1603046631,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [17]
 		{
 			"who doin horseman runs?", -- [1]
 			"Ravendreth-Dalaran", -- [2]
@@ -755,7 +403,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edRavendreth|r",
 			[51] = 1603046631,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [18]
 		{
 			"not enough tanks lol", -- [1]
 			"Ginasue-Dalaran", -- [2]
@@ -777,7 +425,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ginasue|r",
 			[51] = 1603046636,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [19]
 		{
 			"DHs and druids are both C tier, poor druid will stay bottom for a while :(", -- [1]
 			"Thickmom-Dalaran", -- [2]
@@ -799,7 +447,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thickmom|r",
 			[51] = 1603046637,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [20]
 		{
 			"DPS LF HHM Run", -- [1]
 			"Hopelite-Dalaran", -- [2]
@@ -821,7 +469,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Hopelite|r",
 			[51] = 1603046646,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [21]
 		{
 			"good", -- [1]
 			"Logösh-Dalaran", -- [2]
@@ -843,7 +491,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogösh|r",
 			[51] = 1603046647,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [22]
 		{
 			"fuck malfurion and his little clan", -- [1]
 			"Logösh-Dalaran", -- [2]
@@ -865,7 +513,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogösh|r",
 			[51] = 1603046652,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [23]
 		{
 			"how do I unlock world quest after doing chromie time", -- [1]
 			"Kreygula-Dalaran", -- [2]
@@ -887,7 +535,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kreygula|r",
 			[51] = 1603046659,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [24]
 		{
 			"i can do druid tanking but... frankly i dont like it myself", -- [1]
 			"Ginasue-Dalaran", -- [2]
@@ -909,7 +557,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ginasue|r",
 			[51] = 1603046659,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [25]
 		{
 			"is HHM broken? i've been in a queue for like 40 minutes", -- [1]
 			"Irythell-Dalaran", -- [2]
@@ -931,7 +579,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edIrythell|r",
 			[51] = 1603046671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [26]
 		{
 			"do you have to do the dungeon the motherlaod for darkiron dwarf unlocking?", -- [1]
 			"Gran-Dalaran", -- [2]
@@ -953,7 +601,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaGran|r",
 			[51] = 1603046677,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [27]
 		{
 			"lmao druid tanking is by far the most boring tank spec", -- [1]
 			"ßlur-Dalaran", -- [2]
@@ -975,7 +623,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97ßlur|r",
 			[51] = 1603046677,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [28]
 		{
 			"Blood DK is S tier, Monk A, War/Pally are B, and DH/Druid C", -- [1]
 			"Thickmom-Dalaran", -- [2]
@@ -997,7 +645,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thickmom|r",
 			[51] = 1603046680,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [29]
 		{
 			"LF port to darn from IF. will tip", -- [1]
 			"Apöcolypse-Dalaran", -- [2]
@@ -1019,7 +667,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cApöcolypse|r",
 			[51] = 1603046682,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [30]
 		{
 			"nope.  ive queued on 8 toons so far and got in within 2 mins...", -- [1]
 			"Shribberz-Dalaran", -- [2]
@@ -1041,7 +689,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaShribberz|r",
 			[51] = 1603046685,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [31]
 		{
 			"^", -- [1]
 			"Logösh-Dalaran", -- [2]
@@ -1063,7 +711,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLogösh|r",
 			[51] = 1603046690,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [32]
 		{
 			"they really broke blood dks with their changes lol", -- [1]
 			"Thickmom-Dalaran", -- [2]
@@ -1085,7 +733,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thickmom|r",
 			[51] = 1603046690,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [33]
 		{
 			"This queue will not break me, to 30 minutes and beyond...", -- [1]
 			"Daladar-Dalaran", -- [2]
@@ -1107,7 +755,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Daladar|r",
 			[51] = 1603046702,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [34]
 		{
 			"Monk is S tier actually", -- [1]
 			"Spacecop-Dalaran", -- [2]
@@ -1129,7 +777,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSpacecop|r",
 			[51] = 1603046704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [35]
 		{
 			"BM hunter is gonna suck due to losing azerite powers", -- [1]
 			"Thickmom-Dalaran", -- [2]
@@ -1151,7 +799,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thickmom|r",
 			[51] = 1603046867,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [36]
 		{
 			"Anyone looking to group up for the Horseman dungeon?", -- [1]
 			"Samythemage-Dalaran", -- [2]
@@ -1173,7 +821,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSamythemage|r",
 			[51] = 1603046867,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [37]
 		{
 			"and they still good", -- [1]
 			"Eilester-Dalaran", -- [2]
@@ -1195,7 +843,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Eilester|r",
 			[51] = 1603046867,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [38]
 		{
 			"Pally has alot of \"oh im nearly dead... haha healing go brrr\" buttons", -- [1]
 			"Ginasue-Dalaran", -- [2]
@@ -1217,7 +865,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ginasue|r",
 			[51] = 1603046867,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [39]
 		{
 			"Are you tired of being in a guild without me in it? Then join |cffffd100|HclubFinder:ClubFinder-1-10223-3683-83614866|h[Guild: Soulforged]|h|r! We are currently building up our raid roster for Shadowlands! So if youre looking for a home for SL, PST ME!", -- [1]
 			"Jaidiest-Dalaran", -- [2]
@@ -1239,7 +887,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edJaidiest|r",
 			[51] = 1603046872,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [40]
 		{
 			"make the pizza crust out of pure ham", -- [1]
 			"Shadowanya-Dalaran", -- [2]
@@ -1261,7 +909,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edShadowanya|r",
 			[51] = 1603127995,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [41]
 		{
 			"pep and japs is the best pizza", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1283,7 +931,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603127996,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [42]
 		{
 			"spinach :)", -- [1]
 			"Fireflyglow-Dalaran", -- [2]
@@ -1305,7 +953,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Fireflyglow|r",
 			[51] = 1603128001,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [43]
 		{
 			"agreed", -- [1]
 			"Molestos-Dalaran", -- [2]
@@ -1327,7 +975,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMolestos|r",
 			[51] = 1603128004,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [44]
 		{
 			"pep and peno", -- [1]
 			"Molestos-Dalaran", -- [2]
@@ -1349,7 +997,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMolestos|r",
 			[51] = 1603128013,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [45]
 		{
 			"white with sponoch is good", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1371,7 +1019,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128022,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [46]
 		{
 			"im about to order dominos tbh", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -1393,7 +1041,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128027,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [47]
 		{
 			"gross im ordering mellow mushroom", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1415,7 +1063,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128039,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [48]
 		{
 			"was the event glitch fixed?", -- [1]
 			"Naelar-Dalaran", -- [2]
@@ -1437,7 +1085,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNaelar|r",
 			[51] = 1603128041,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [49]
 		{
 			"what glitch", -- [1]
 			"Shadowanya-Dalaran", -- [2]
@@ -1459,7 +1107,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edShadowanya|r",
 			[51] = 1603128050,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [50]
 		{
 			"what glitch", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1481,7 +1129,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128052,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [51]
 		{
 			"dominos is the best shithole brazil has to offer", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -1503,7 +1151,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128059,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [52]
 		{
 			"when you logged out your candy would disappear", -- [1]
 			"Naelar-Dalaran", -- [2]
@@ -1525,7 +1173,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNaelar|r",
 			[51] = 1603128060,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [53]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-193532-3683-96325487|h[Guild: Mütiny]|h|rLF more folks to bolster our raid team,and guild,in Shadowlands. We are a heroic guild, that pushes further once AOTC is reached.We will raid Tues and Wed 9pm to 12am EST.Whisper for info", -- [1]
 			"Lockthedk-Dalaran", -- [2]
@@ -1547,7 +1195,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lockthedk|r",
 			[51] = 1603128068,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [54]
 		{
 			"brazil has good bakerys", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1569,7 +1217,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128076,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [55]
 		{
 			"false", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -1591,7 +1239,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128083,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [56]
 		{
 			"theres a brazillian bakery near my house its really good", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1613,7 +1261,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128097,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [57]
 		{
 			"where tf is akazamzarak", -- [1]
 			"Ryunoske-Dalaran", -- [2]
@@ -1635,7 +1283,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaRyunoske|r",
 			[51] = 1603128099,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [58]
 		{
 			"are u in brazil or in the us?", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -1657,7 +1305,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128108,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [59]
 		{
 			"who was selling me a shadoweave mask?", -- [1]
 			"Nesii-Dalaran", -- [2]
@@ -1679,7 +1327,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaNesii|r",
 			[51] = 1603128110,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [60]
 		{
 			"good coffee beans", -- [1]
 			"Coldeze-Dalaran", -- [2]
@@ -1701,7 +1349,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaColdeze|r",
 			[51] = 1603128111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [61]
 		{
 			"in your heart. im in atlanta", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1723,7 +1371,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128115,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [62]
 		{
 			"ok then its not a literal br bakery", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -1745,7 +1393,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128129,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [63]
 		{
 			"it is a brazillian bakery yes", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1767,7 +1415,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128147,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [64]
 		{
 			"anyone running hh?", -- [1]
 			"Serpentagram-Dalaran", -- [2]
@@ -1789,7 +1437,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSerpentagram|r",
 			[51] = 1603128147,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [65]
 		{
 			"its right there on the sign", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1811,7 +1459,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128157,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [66]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-180238-3683-95753396|h[Guild: Dvali]|h|r is a cross-faction guild that offers knowledgeable, helpful members that value friends over gear & does not rush you. We welcome all like-minded people for PVE, Raids, & M+.", -- [1]
 			"Qelorn-Dalaran", -- [2]
@@ -1833,7 +1481,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Qelorn|r",
 			[51] = 1603128159,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [67]
 		{
 			"Hey its the guy who loves shit up his ass, Cashewpal", -- [1]
 			"Naelar-Dalaran", -- [2]
@@ -1855,7 +1503,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNaelar|r",
 			[51] = 1603128164,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [68]
 		{
 			"do you think chinese food in the us is the same as in china?", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -1877,7 +1525,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128166,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [69]
 		{
 			"It's a generalized term for a type of product you dingdong", -- [1]
 			"Naelar-Dalaran", -- [2]
@@ -1899,7 +1547,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNaelar|r",
 			[51] = 1603128193,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [70]
 		{
 			"no", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1921,7 +1569,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128195,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [71]
 		{
 			"dont you lie to me", -- [1]
 			"Naelar-Dalaran", -- [2]
@@ -1943,7 +1591,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNaelar|r",
 			[51] = 1603128209,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [72]
 		{
 			"i dont think so, since we arnt allowed to kill dog to eat", -- [1]
 			"Cieloscuro-Dalaran", -- [2]
@@ -1965,7 +1613,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cCieloscuro|r",
 			[51] = 1603128213,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [73]
 		{
 			"its a bakery run by and exclusively employed brazillians. ", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1987,7 +1635,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128222,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [74]
 		{
 			"cringe", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -2009,7 +1657,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128235,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [75]
 		{
 			"brs.. jajajajajaj. god help me", -- [1]
 			"Impellar-Dalaran", -- [2]
@@ -2031,7 +1679,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Impellar|r",
 			[51] = 1603128248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [76]
 		{
 			"its really good", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -2053,7 +1701,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [77]
 		{
 			"WM starts at lvl 10 right? @ 15 I cant access my PVP talents or WM Icon - bug?", -- [1]
 			"Okäy-Dalaran", -- [2]
@@ -2075,7 +1723,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaOkäy|r",
 			[51] = 1603128249,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [78]
 		{
 			"20", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -2097,7 +1745,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603128258,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [79]
 		{
 			"lvl 20", -- [1]
 			"Rpnzl-Dalaran", -- [2]
@@ -2119,7 +1767,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rpnzl|r",
 			[51] = 1603128260,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [80]
 		{
 			"got it - thanks!", -- [1]
 			"Okäy-Dalaran", -- [2]
@@ -2141,7 +1789,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaOkäy|r",
 			[51] = 1603128267,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [81]
 		{
 			"i went to germany a lot growing up", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -2163,7 +1811,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128466,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [82]
 		{
 			"everywhere looks good from the outside", -- [1]
 			"Helissithe-Dalaran", -- [2]
@@ -2184,6 +1832,358 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cff8687edHelissithe|r",
 			[51] = 1603128468,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"PAID TRANSMOGS WTF BLOZZZARDDD", -- [1]
+			"Draûgluin-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Draûgluin-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			3, -- [11]
+			"Player-3683-0C165C19", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Draûgluin|r",
+			[51] = 1603214826,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"15k?", -- [1]
+			"Natblîda-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Natblîda-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4, -- [11]
+			"Player-3683-0B013329", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Natblîda|r",
+			[51] = 1603214833,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"Damn bro, almost like it's optional", -- [1]
+			"Elscootador-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Elscootador-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			6, -- [11]
+			"Player-3683-0C293BC6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Elscootador|r",
+			[51] = 1603214868,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"thanks!", -- [1]
+			"Magziee-CenarionCircle", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Magziee-CenarionCircle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			49, -- [11]
+			"Player-125-09AC9119", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec6eaMagziee-CenarionCircle|r",
+			[51] = 1603215039,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [87]
+		{
+			"cant use = garbo", -- [1]
+			"Elunenaria-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elunenaria-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			58, -- [11]
+			"Player-3683-0CBFD1EB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeElunenaria|r",
+			[51] = 1603215058,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"thats a horrible price anyways lol", -- [1]
+			"Lacrïma-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lacrïma-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			59, -- [11]
+			"Player-3683-0BE88388", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaLacrïma|r",
+			[51] = 1603215072,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"FUCK PAID TRANSMOGS", -- [1]
+			"Draûgluin-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Draûgluin-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			60, -- [11]
+			"Player-3683-0C165C19", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Draûgluin|r",
+			[51] = 1603215083,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"yeah for real.  ilvl 200... easy 2 mil", -- [1]
+			"Quadcon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Quadcon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			61, -- [11]
+			"Player-3683-0972377F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaQuadcon|r",
+			[51] = 1603215086,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"Imdawolf what are you talking about", -- [1]
+			"Draalanii-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Draalanii-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1935, -- [11]
+			"Player-3683-0AE126AF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Draalanii|r",
+			[51] = 1603294810,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"Planning to try feral druid for real in SL. I just feel such a strong urge to be feral. I'm just sad that I don't have any feral buddies to compare with.", -- [1]
+			"Blamemypets-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Blamemypets-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1936, -- [11]
+			"Player-3683-0CC1008E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Blamemypets|r",
+			[51] = 1603294811,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"talking bout rogue complaining", -- [1]
+			"Imdawolf-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Imdawolf-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1942, -- [11]
+			"Player-3683-091FCEDF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Imdawolf|r",
+			[51] = 1603294825,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"how is he complaining? lol", -- [1]
+			"Draalanii-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Draalanii-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1944, -- [11]
+			"Player-3683-0AE126AF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Draalanii|r",
+			[51] = 1603294833,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"i said rogues not him particulary", -- [1]
+			"Imdawolf-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Imdawolf-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1946, -- [11]
+			"Player-3683-091FCEDF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Imdawolf|r",
+			[51] = 1603294850,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"The only class right now I can truly say I don't have any confidence in is SV hunter", -- [1]
+			"Blamemypets-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Blamemypets-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1958, -- [11]
+			"Player-3683-0CC1008E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Blamemypets|r",
+			[51] = 1603294905,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"ya", -- [1]
+			"Voidspark-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Voidspark-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2005, -- [11]
+			"Player-3683-0BD0B53B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaVoidspark|r",
+			[51] = 1603295046,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"ah kk", -- [1]
+			"Eziochamberl-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Eziochamberl-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2006, -- [11]
+			"Player-3683-0B6FDB35", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaEziochamberl|r",
+			[51] = 1603295050,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

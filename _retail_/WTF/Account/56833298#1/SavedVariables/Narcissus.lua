@@ -28,13 +28,14 @@ NarcissusDB = {
 	["MinimapButton"] = {
 		["Position"] = 2.617993877991494,
 	},
-	["CameraTransition"] = true,
-	["AutoPlayAnimation"] = true,
-	["AFKScreen"] = false,
 	["AnchorToMinimap"] = true,
+	["AutoPlayAnimation"] = true,
+	["CameraTransition"] = true,
+	["AFKScreen"] = false,
 	["AFKAutoStand"] = false,
+	["Version"] = 10102,
 	["CorruptionTooltip"] = false,
-	["Version"] = 10100,
+	["ShowModulePanelOnMouseOver"] = true,
 	["CameraSafeMode"] = true,
 	["DefaultLayout"] = 2,
 	["BaseLineOffset"] = 0,
@@ -81,8 +82,10 @@ NarciCreatureOptions = {
 	},
 }
 NarciAchievementOptions = {
+	["UseAsDefault"] = false,
 	["DIY"] = {
 	},
+	["ShowRedMark"] = false,
 	["Scale"] = 1,
 	["Theme"] = 1,
 	["UsedAsPrimary"] = true,

@@ -12,3 +12,4 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 OPie_Classic: disabled
 ElvUI_OptionsUI: enabled
+ElvUI_QuestXP: disabled

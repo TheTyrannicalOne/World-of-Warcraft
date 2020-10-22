@@ -1515,7 +1515,7 @@
 								end
 							</OnLeave>
 							<OnLoad>
-								self.Label:SetText(NARCI_GROUP_PHOTO);
+								self.Label:SetText(Narci.L["Group Photo"]);
 								self.Label:SetTextColor(0.25, 0.78, 0.92);
 							</OnLoad>
 							<OnClick function="Narci_ActorPanelExpandButton_OnClick"/>
@@ -3110,8 +3110,8 @@
 						</Anchors>
 						<Scripts>
 							<OnLoad>
-								self.Label:SetText(NARCI_LAYOUT_3)
-								self.tooltip = {NARCI_LAYOUT_3, Narci.L["Compact Mode Tooltip"]}
+								self.Label:SetText(Narci.L["Transmog Layout3"])
+								self.tooltip = {Narci.L["Transmog Layout3"], Narci.L["Compact Mode Tooltip"]}
 								self.GuideIndex = 5;
 							</OnLoad>
 							<OnShow>

@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0401,
-	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
-	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -85,7 +83,8 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159118::::::::120:102:512:11:1:4813:118:::|h[Rootway Safari Magestaff]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
 	["Artifacts"] = {
 		[128821] = {
 			["Relics"] = {
@@ -127,6 +126,7 @@ PawnOptions = {
 			["Name"] = "Scythe of Elune",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",

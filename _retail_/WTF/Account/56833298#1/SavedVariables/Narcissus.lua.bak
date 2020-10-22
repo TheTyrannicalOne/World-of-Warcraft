@@ -26,13 +26,14 @@ NarcissusDB = {
 	["IsSortedByCategory"] = true,
 	["DetailedIlvlInfo"] = true,
 	["FontHeightItemName"] = 10,
-	["AutoPlayAnimation"] = true,
+	["AnchorToMinimap"] = true,
+	["ShowMinimapButton"] = true,
 	["CameraTransition"] = true,
 	["AFKScreen"] = false,
-	["ShowMinimapButton"] = true,
 	["FadeButton"] = false,
-	["CorruptionTooltip"] = false,
 	["BorderTheme"] = "Bright",
+	["CorruptionTooltip"] = false,
+	["ShowModulePanelOnMouseOver"] = true,
 	["CameraSafeMode"] = true,
 	["Tutorials"] = {
 		["ExitConfirmation"] = true,
@@ -62,9 +63,9 @@ NarcissusDB = {
 	["UseEntranceVisual"] = true,
 	["BaseLineOffset"] = 0,
 	["DefaultLayout"] = 2,
-	["Version"] = 10100,
+	["Version"] = 10102,
 	["AFKAutoStand"] = false,
-	["AnchorToMinimap"] = true,
+	["AutoPlayAnimation"] = true,
 	["FadeMusic"] = true,
 	["MinimapButton"] = {
 		["Position"] = 2.617993877991494,
@@ -81,12 +82,14 @@ NarciCreatureOptions = {
 	},
 }
 NarciAchievementOptions = {
+	["UseAsDefault"] = false,
 	["DIY"] = {
 	},
+	["IncompleteFirst"] = true,
 	["Scale"] = 1,
 	["UsedAsPrimary"] = true,
 	["Theme"] = 1,
-	["IncompleteFirst"] = true,
+	["ShowRedMark"] = false,
 }
 NarciStatisticsDB = {
 }

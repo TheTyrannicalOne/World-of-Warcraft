@@ -787,12 +787,12 @@ PMAI:SetScript("OnShow", function(self)		--PlayerModelAnimIn
 	model:RefreshUnit();
 	model.isPlayer = true;
 	model.hasRaceChanged = false;
-	local ZoomMode;
-	if NarcissusDB.ShowFullBody then
-		ZoomMode = 2;	--Full body
-	else
-		ZoomMode = 1;
-	end
+	local ZoomMode = 2;
+	--if NarcissusDB.ShowFullBody then
+	--	ZoomMode = 2;	--Full body
+	--else
+	--	ZoomMode = 1;
+	--end
 	AssignModelPositionTable();
 	local zoomLevel = TranslateValue[ZoomMode][1] or 0.05;
 	defaultY = TranslateValue[ZoomMode][2] or 0.4;
@@ -1334,7 +1334,7 @@ function Narci_LayerButton_OnLoad(self)
 		AlphaButton.tooltip = L["Toggle Text Mask"];
 	elseif ID == 2 then
 		--3D Model Visibility
-		self.Label:SetText(NARCI_3DMODEL);
+		self.Label:SetText(L["3D Model"]);
 		self:SetScript("OnClick", PlayerModelLayerButton_OnClick);
 		self:SetScript("OnShow", function(self)
 			HighlightButton(self, true);
@@ -4122,10 +4122,7 @@ function Narci_ActorPanelExpandButton_OnClick(self)
 		Narci_SlotLayerButton:Click();
 	end
 
-	if NarcissusDB.UseExitConfirmation then
-		--Ask for confirmation when exiting the addon
-		Narci.showExitConfirm = true;
-	end
+	Narci.showExitConfirm = true;
 end
 
 
@@ -4366,16 +4363,3 @@ Patch	SpellVisualKit max ID
 
 /run PrimaryPlayerModel:SetLight(true, false, -pi/4, pi/4, 0, 1, 1, 1, 1, 500, 10, 10, 10);
 --]]
-
-function GetNumValidAnimations()
-	local id = 0;
-	local total = 0;
-	local model = NarciPlayerModelFrame1;
-	while id < animationID_Max do
-		if model:HasAnimation(id) then
-			total = total + 1;
-		end
-		id = id + 1;
-	end
-	return total
-end

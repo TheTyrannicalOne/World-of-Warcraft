@@ -1,0 +1,98 @@
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:20 {3fec} [INFO] - setting background color 'ff000000'.
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:20 {3fec} [INFO] - UserAgent: BlizzardBrowser/4.1.37.249 Chrome/69.0.3497.81
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] Create invoked. winSize: {0, 0}; 746; 468
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::backgroundColor: {r:0, g:0, b:0, a:255}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::blizzardErrorPath: ""
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::enableHardwareAcceleration: true
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::enableLocalStorage: false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::enablePlugins: false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::showCrashDialog: false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::showNativeScrollBar: true
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::startUrl: "about:blank"
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::userAgentToken: ""
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] BrowserConfig::webkitLocale: 2
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Renderer]: 2020-10-20T17:55:21 {63d8} [INFO] - browser created
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnLoadStart type:1 frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - first page load completed
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:false goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:21 {3fec} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:22 {3fec} [INFO] - [BrowserProcessHandler] OnLoadStart type:0 frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:22 {3fec} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:22 {3fec} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:22 {3fec} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:23 {3fec} [INFO] - [BrowserProcessHandler] OnTakeFocus source:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:23 {3fec} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:23 {3fec} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:24 {3fec} [INFO] - [BrowserProcessHandler] OnLoadStart type:0 frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:24 {3fec} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:24 {3fec} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:24 {3fec} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:24 {3fec} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:25 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:2
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:25 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:25 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:2
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{0, 0}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnTakeFocus source:1
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnGotFocus
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:26 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:27 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:27 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{1, 1}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:27 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:27 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{2, 2}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:28 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:28 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{3, 3}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:28 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:28 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{4, 4}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:28 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:28 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{5, 5}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:28 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:28 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{6, 6}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:29 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:29 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{7, 7}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:29 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:29 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{8, 8}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:29 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:29 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{9, 9}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{10, 10}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{11, 11}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{12, 12}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnTextSelectionChanged offset:0 range:{13, 13}
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:30 {3fec} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:true goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnLoadStart type:7 frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnImeStateChanged type:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnLoadEnd frame:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnLoadingStateChange loading:false goBack:true goForward:false
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnTitleChange
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:2
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:31 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:32 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:32 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:32 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:32 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:33 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:3
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:33 {3fec} [INFO] - [BrowserProcessHandler] OnCursorChange type:0
+[INFO]-[BNL_Scene]: 2020-10-20T17:55:37 {3fec} [INFO] - received shutdown message from client.
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:37 {3fec} [INFO] - [BrowserProcessHandler] Shutdown invoked
+[INFO]-[BNL_Browser]: 2020-10-20T17:55:37 {3fec} [INFO] - [BrowserProcessHandler] OnBeforeClose

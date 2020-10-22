@@ -63,14 +63,15 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
-			["objectives"] = {
-			},
-		},
 		[36495] = {
 			["title"] = "News from Talador",
 			["objectives"] = {
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[24432] = {
@@ -80,10 +81,9 @@ QuestTogether = {
 				"0/1 Conch Shell", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[56491] = {
@@ -149,8 +149,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

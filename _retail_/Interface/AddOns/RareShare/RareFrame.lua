@@ -2,7 +2,7 @@ local AddonName, Addon = ...;
 
 local frameName = string.format("%s_RareFrame", AddonName);
 
-local frame = CreateFrame("frame", frameName, UIParent);
+local frame = CreateFrame("frame", frameName, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 local frameText = frame:CreateFontString(string.format("%s_Text", frameName), "OVERLAY", "GameFontNormalSmall");
 local frameButton = CreateFrame("button", string.format("%s_Button", frameName), frame);
 local ntex = frameButton:CreateTexture();

@@ -968,6 +968,23 @@ local function AAP_PrintQStep()
 				end
 			end
 		end
+		
+		if (AAP.Level > 35 and AAP.Level < 50) then
+			local OnTime = 0
+			local ChrimeTimez = C_ChromieTime.GetChromieTimeExpansionOptions()
+			for AAP_index,AAP_value in pairs(ChrimeTimez) do
+				if (ChrimeTimez[AAP_index] and ChrimeTimez[AAP_index]["id"] and ChrimeTimez[AAP_index]["id"] == 9 and ChrimeTimez[AAP_index]["alreadyOn"] and ChrimeTimez[AAP_index]["alreadyOn"] == true) then
+					OnTime = 1
+				end
+			end
+			if (OnTime == 0) then
+				LineNr = LineNr + 1
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Your NOT on ChromieTime!")
+				AAP.QuestList.QuestFrames[LineNr]:Show()
+			end
+		end
+		
+		
 		if (GetSpellBookItemInfo(GetSpellInfo(90265))) then
 		elseif (AAP.Level > 39) then
 			LineNr = LineNr + 1
@@ -2313,7 +2330,7 @@ local function AAP_PrintQStep()
 		AAP.QuestListShown = LineNr
 		AAP.BookingList["SetQPTT"] = 1
 		if (AAP.ZoneQuestOrder:IsShown() == true) then
-			AAP.UpdateZoneQuestOrderList("LoadIn")
+			AAP.BookingList["UpdateZoneQuestOrderListL"] = 1
 		end
 	elseif (AAPWhereToGo and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQList"] == 1 and AAP.ZoneTransfer == 0) then
 		LineNr = LineNr + 1
@@ -2896,7 +2913,7 @@ local function AAP_UpdateMapId()
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] = 1
 	end
 	if (AAP.ZoneQuestOrder:IsShown() == true) then
-		AAP.UpdateZoneQuestOrderList("LoadIn")
+		AAP.BookingList["UpdateZoneQuestOrderListL"] = 1
 	end
 	AAP.BookingList["PrintQStep"] = 1
 	C_Timer.After(0.1, AAP_BookQStep)
@@ -3226,6 +3243,9 @@ local function AAP_LoopBookingFunc()
 			AAP_AntiTaxiLoop = 0
 		end
 		TestaAAP = "TestTaxiFunc"
+	elseif (AAP.BookingList["UpdateZoneQuestOrderListL"]) then
+		AAP.UpdateZoneQuestOrderList("LoadIn")
+		AAP.BookingList["UpdateZoneQuestOrderListL"] = nil
 	elseif (AAP.BookingList["SkipCutscene"]) then
 		AAP.BookingList["SkipCutscene"] = nil
 		--CinematicFrame_CancelCinematic()
@@ -3655,7 +3675,6 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 					local opzios = C_PlayerChoice.GetPlayerChoiceOptionInfo(CLi)
 					local optionID = opzios["id"]
 					if (steps["SparringRing"] == optionID) then
-						--C_PlayerChoice.SendQuestChoiceResponse(GetQuestChoiceOptionInfo(CLi))
 						PlayerChoiceFrame["Option"..CLi]["OptionButtonsContainer"]["button1"]:Click()
 						AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] + 1
 						AAP.BookingList["UpdateQuest"] = 1

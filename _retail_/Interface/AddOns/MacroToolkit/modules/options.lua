@@ -9,7 +9,7 @@ local CreateFrame, ipairs, pairs, string, tonumber = CreateFrame, ipairs, pairs,
 
 --First visible frame
 local function createMainPanel()
-	local frame = CreateFrame("Frame", "MacroToolkitOptionsMain", nil, "BackdropTemplate")
+	local frame = CreateFrame("Frame", "MacroToolkitOptionsMain")
 	local title = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 	local version = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 	local author = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")

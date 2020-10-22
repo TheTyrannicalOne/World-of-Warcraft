@@ -920,6 +920,20 @@ function AAP.FP.GetMeToNextZone2()
 				end
 			end
 		end
+		if (AAP.Level > 35 and AAP.Level < 50) then
+			local OnTime = 0
+			local ChrimeTimez = C_ChromieTime.GetChromieTimeExpansionOptions()
+			for AAP_index,AAP_value in pairs(ChrimeTimez) do
+				if (ChrimeTimez[AAP_index] and ChrimeTimez[AAP_index]["id"] and ChrimeTimez[AAP_index]["id"] == 9 and ChrimeTimez[AAP_index]["alreadyOn"] and ChrimeTimez[AAP_index]["alreadyOn"] == true) then
+					OnTime = 1
+				end
+			end
+			if (OnTime == 0) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Your NOT on ChromieTime!")
+				AAP.QuestList.QuestFrames[LineNr]:Show()
+				LineNr = LineNr + 1
+			end
+		end
 		AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Destination: "..mapzinfoz.name..", "..mapzinfoz2.name.." ("..GoToZone..")")
 		AAP.QuestList.QuestFrames[LineNr]:Show()
 		DestSet = 1

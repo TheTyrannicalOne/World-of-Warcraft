@@ -1,7 +1,5 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
 	["Zul'jin"] = {
 		["Tyranasticus"] = {
 			["class"] = "DEMONHUNTER",
@@ -61,12 +59,6 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
 	["Dalaran"] = {
 		["Rotclaugh"] = {
 			["class"] = "DEATHKNIGHT",
@@ -118,8 +110,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Varlouris"] = {
-			["faction"] = "Alliance",
 			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
 		},
 		["Kelvalatar"] = {
 			["faction"] = "Alliance",
@@ -130,43 +122,46 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["curOil"] = 99645,
+			["curOil"] = 99570,
 			["summary"] = {
-				["lastOilTime"] = 1603159298,
+				["lastOilTime"] = 1603244575,
 				["tt2"] = 1601786308,
 				["tt3"] = 1602792717,
-				["ti1"] = 118531,
 				["tt1"] = 1602855178,
+				["ti1"] = 118531,
 				["ti3"] = 127855,
 				["inProgress"] = {
-					[131] = 1603173690,
-					[132] = 1603180874,
-					[541] = 1603173700,
-					[486] = 1603180888,
-					[186] = 1603162876,
-					[175] = 1603161978,
-					[391] = 1603188082,
-					[189] = 1603160630,
-					[128] = 1603188086,
-					[585] = 1603162897,
-					[482] = 1603170084,
-					[396] = 1603188067,
-					[394] = 1603188070,
-					[745] = 1603224098,
+					[380] = 1603307568,
+					[565] = 1603357973,
+					[571] = 1603331046,
+					[573] = 1603367044,
+					[668] = 1603307559,
+					[302] = 1603314766,
+					[303] = 1603314763,
+					[304] = 1603320880,
+					[745] = 1603309375,
 				},
 				["ti2"] = 122486,
 			},
 			["faction"] = "Horde",
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1603159328,
-			["curRes"] = 6763,
+			["lastCacheTime"] = 1603306498,
+			["curRes"] = 8768,
 			["class"] = "WARRIOR",
 		},
 		["Tyrannithal"] = {
 			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

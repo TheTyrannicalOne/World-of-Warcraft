@@ -300,6 +300,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Thorinbane - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,

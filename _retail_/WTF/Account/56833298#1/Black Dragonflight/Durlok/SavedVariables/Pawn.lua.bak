@@ -51,16 +51,16 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159337::::::::50:104::19:1:4776:1:9:48:::|h[Grips of Electrified Defense]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 159458,
-			["Level"] = 62,
+			["ID"] = 143901,
+			["Level"] = 82,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff0070dd|Hitem:159458::::::::50:104::1:4:4777:1473:5847:4781::::|h[Seal of the Regal Loa]|h|r",
+			["Link"] = "|cffa335ee|Hitem:143901::::::::50:104:::1:6423:2:28:2063:9:50:::|h[Band of the Petrified Pumpkin]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 122529,
-			["Level"] = 58,
+			["ID"] = 159458,
+			["Level"] = 62,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::50:104:::1:5805::::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:159458::::::::50:104::1:4:4777:1473:5847:4781::::|h[Seal of the Regal Loa]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122361,

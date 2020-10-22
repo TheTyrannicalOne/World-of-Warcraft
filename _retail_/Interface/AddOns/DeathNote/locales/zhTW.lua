@@ -25,8 +25,7 @@ L["All friendly players, including those not in your group"] = "所有友方玩�
 L["Amount"] = "計數"
 L["Announce"] = "通報"
 L["Announce deaths"] = "通報死亡"
---[[Translation missing --]]
-L["Announce deaths in LFR"] = "Announce deaths in LFR"
+L["Announce deaths in LFR"] = "在隨機團隊中通告死亡"
 L["Announce deaths with an unknown cause"] = "通報不明原因死亡"
 L["Announces/10 seconds limit"] = "通報/10秒限制"
 L["Auras"] = "光環"
