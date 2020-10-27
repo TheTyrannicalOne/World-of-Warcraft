@@ -2,7 +2,7 @@
 ## Title: Legion Wardrobe
 ## Author: ykiigor
 ## Notes: Improvement for default UI
-## Version: 31
+## Version: 33
 ## SavedVariables: VLTW
 Data.lua
 LegionTransmog.lua

@@ -136,6 +136,8 @@ local MovAny = {
 		["ArenaPrepFrames"] = true,
 		--["ArenaEnemyFrames"] = true,
 		["PetBattleFrame"] = true,
+		["ExtraActionBarFrame"] = true,
+		["ZoneAbilityFrame"] = true,
 		["StoreFrame"] = true
 	},
 	lCreateVMs = {
@@ -283,6 +285,8 @@ local MovAny = {
 		BuffFrame = "BuffFrame",
 		ConsolidatedBuffFrame = "ConsolidatedBuffFrame",
 		TemporaryEnchantFrame = "TemporaryEnchantFrame",
+		ExtraActionBarFrame = "ExtraActionBarFrame",
+		ZoneAbilityFrame = "ZoneAbilityFrame",
 	},
 	rendered = nil,
 	nextFrameIdx = 1,
@@ -1482,6 +1486,7 @@ function MovAny.hSetPoint(f, ...)
 					f.MAPoint = nil
 					f:ClearAllPoints()
 					if p then
+						f:ClearAllPoints()
 						f:SetPoint(unpack(p))
 						f.MAPoint = p
 					end
@@ -3138,7 +3143,7 @@ function MovAny:MoverOnSizeChanged(mover)
 			mover:SetWidth(w)
 			mover:SetHeight(h)
 			local label = _G[ mover:GetName().."BackdropInfoLabel"]
-			label:SetWidth(w+100)
+			label:SetWidth(w + 100)
 			label:SetHeight(h)
 		end
 		local label = _G[ mover:GetName().."BackdropInfoLabel"]
@@ -3830,27 +3835,24 @@ function MovAny:Center(lock)
 	if lock == 0 then
 		-- Both
 		mover:ClearAllPoints()
-		mover:SetPoint("CENTER",0,0)
+		mover:SetPoint("CENTER", 0, 0)
 		x = mover:GetLeft()
 		y = mover:GetBottom()
-		mover:ClearAllPoints()
-		mover:SetPoint("BOTTOMLEFT",x,y)
+		mover:SetPoint("BOTTOMLEFT", x, y)
 	else
 		x = mover:GetLeft()
 		y = mover:GetBottom()
 		mover:ClearAllPoints()
 		if lock == 1 then
 			-- Horizontal
-			mover:SetPoint("CENTER",0,0)
+			mover:SetPoint("CENTER", 0, 0)
 			x = mover:GetLeft()
-			mover:ClearAllPoints()
-			mover:SetPoint("BOTTOMLEFT",x,y)
+			mover:SetPoint("BOTTOMLEFT", x, y)
 		elseif lock == 2 then
 			-- Vertical
-			mover:SetPoint("CENTER",0,0)
+			mover:SetPoint("CENTER", 0, 0)
 			y = mover:GetBottom()
-			mover:ClearAllPoints()
-			mover:SetPoint("BOTTOMLEFT",x,y)
+			mover:SetPoint("BOTTOMLEFT", x, y)
 		end
 	end
 	mover.skipGroups = true

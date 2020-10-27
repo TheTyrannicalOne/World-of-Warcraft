@@ -57,10 +57,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:143901::::::::50:104:::1:6423:2:28:2063:9:50:::|h[Band of the Petrified Pumpkin]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 159458,
-			["Level"] = 62,
+			["ID"] = 143901,
+			["Level"] = 82,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:159458::::::::50:104::1:4:4777:1473:5847:4781::::|h[Seal of the Regal Loa]|h|r",
+			["Link"] = "|cffa335ee|Hitem:143901::::::::50:104:::1:6423:2:9:50:28:2063:::|h[Band of the Petrified Pumpkin]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122361,

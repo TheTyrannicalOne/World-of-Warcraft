@@ -13,6 +13,9 @@ TomTomDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["general"] = {
+				["announce"] = true,
+			},
 			["arrow"] = {
 				["position"] = {
 					"TOP", -- [1]

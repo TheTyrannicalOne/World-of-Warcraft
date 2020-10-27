@@ -3557,6 +3557,8 @@ AAP.QuestStepListListingZone = {
 	["(6/6) 10-50 Spires of Arak"] = 542,
 	
 	["Legion - Azsuna"] = 630,
+	["Legion - Val'Sharah"] = 641,
+	["Legion - Stormheim"] = 634,
 }
 AAP.QuestStepListListing = {}
 AAP.QuestStepListListing["Shadowlands"] = {
@@ -3602,6 +3604,8 @@ AAP.QuestStepListListing["SpeedRun"] = {
 }
 AAP.QuestStepListListing["EasternKingdom"] = {
 	["630-Azsuna"] = "Legion - Azsuna",
+	["641-ValSharah"] = "Legion - Val'Sharah",
+	["634-Stormheim"] = "Legion - Stormheim",
 }
 AAP["Kalimdor"] = {}
 AAP["Kalimdor"][1] = 1

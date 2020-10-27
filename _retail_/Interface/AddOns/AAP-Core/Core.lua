@@ -33,6 +33,7 @@ AAP.MapZoneIcons = {}
 AAP.MapZoneIconsRed = {}
 AAP.SettingsOpen = 0
 AAP.InCombat = 0
+AAP.ProgressShown = 0
 AAP.BookUpdAfterCombat = 0
 AAP.QuestListShown = 0
 AAP.MapLoaded = 0
@@ -349,11 +350,6 @@ function AAP.ResetSettings()
 	else
 		AAP.OptionsFrame.ShowGroupCheckButton:SetChecked(true)
 	end
-	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["BannerShow"] == 0) then
-		AAP.OptionsFrame.BannerShowCheckButton:SetChecked(false)
-	else
-		AAP.OptionsFrame.BannerShowCheckButton:SetChecked(true)
-	end
 	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["AutoGossip"] == 0) then
 		AAP.OptionsFrame.AutoGossipCheckButton:SetChecked(false)
 	else
@@ -401,11 +397,28 @@ function AAP.ResetSettings()
 	AAP.OptionsFrame.QuestListScaleSlider:SetValue(AAP1[AAP.Realm][AAP.Name]["Settings"]["Scale"] * 100)
 	AAP.OptionsFrame.ArrowScaleSlider:SetValue(AAP1[AAP.Realm][AAP.Name]["Settings"]["ArrowScale"] * 100)
 
-
+	AAP.QuestList.MainFrame:ClearAllPoints()
 	AAP.QuestList.MainFrame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["left"], AAP1[AAP.Realm][AAP.Name]["Settings"]["top"])
 	AAP.ArrowFrame:SetScale(AAP1[AAP.Realm][AAP.Name]["Settings"]["ArrowScale"])
 	AAP.ArrowFrameM:ClearAllPoints()
 	AAP.ArrowFrameM:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"], AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"])
+	AAP.ZoneQuestOrder:ClearAllPoints()
+	AAP.ZoneQuestOrder:SetPoint("CENTER", UIParent, "CENTER",1,1)
+	AAP1[AAP.Realm][AAP.Name]["Settings"]["ArrowScale"] = UIParent:GetScale()
+	AAP1[AAP.Realm][AAP.Name]["Settings"]["LockArrow"] = 0
+	AAP1[AAP.Realm][AAP.Name]["Settings"]["ArrowFPS"] = 2
+	AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"] = GetScreenWidth() / 2.05
+	AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"] = -(GetScreenHeight() / 1.5)
+	AAP.ArrowFrame:SetScale(AAP1[AAP.Realm][AAP.Name]["Settings"]["ArrowScale"])
+	AAP.ArrowFrameM:ClearAllPoints()
+	AAP.ArrowFrameM:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"], AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"])
+	AAP.OptionsFrame.ArrowFpsSlider:SetValue(AAP1[AAP.Realm][AAP.Name]["Settings"]["ArrowFPS"])
+	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["LockArrow"] == 0) then
+		AAP.OptionsFrame.LockArrowCheckButton:SetChecked(false)
+	else
+		AAP.OptionsFrame.LockArrowCheckButton:SetChecked(true)
+	end
+	AAP.OptionsFrame.ArrowScaleSlider:SetValue(AAP1[AAP.Realm][AAP.Name]["Settings"]["ArrowScale"] * 100)
 end
 local function AAP_SlashCmd(AAP_index)
 	if (AAP_index == "reset") then
@@ -1994,8 +2007,10 @@ function AAP.NumbRoutePlan(Continz)
 				zenr = zenr + 1
 			end
 		end
-		for AAP_index2,AAP_value2 in pairs(AAP.QuestStepListListing["Kalimdor"]) do
-			zenr = zenr + 1
+		if (AAP.QuestStepListListing["Kalimdor"]) then
+			for AAP_index2,AAP_value2 in pairs(AAP.QuestStepListListing["Kalimdor"]) do
+				zenr = zenr + 1
+			end
 		end
 	elseif (Continz == "BrokenIsles") then
 		if (AAP.QuestStepListListingStartAreas["BrokenIsles"]) then
@@ -2244,6 +2259,9 @@ AAP.CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			end
 			if (not AAP1[AAP.Realm][AAP.Name]["Settings"]["AutoGossip"]) then
 				AAP1[AAP.Realm][AAP.Name]["Settings"]["AutoGossip"] = 1
+			end
+			if (not AAP1[AAP.Realm][AAP.Name]["Settings"]["AutoFlight"]) then
+				AAP1[AAP.Realm][AAP.Name]["Settings"]["AutoFlight"] = 1
 			end
 			if (not AAP1[AAP.Realm][AAP.Name]["Settings"]["Hcampleft"]) then
 				AAP1[AAP.Realm][AAP.Name]["Settings"]["Hcampleft"] = GetScreenWidth() / 1.6

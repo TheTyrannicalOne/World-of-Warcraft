@@ -9,1392 +9,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"100% agree mom", -- [1]
-			"ßlur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"ßlur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1160, -- [11]
-			"Player-3683-0BFB7DDD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97ßlur|r",
-			[51] = 1603046517,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"need people for horsemen", -- [1]
-			"Fabinnalt-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Fabinnalt-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1162, -- [11]
-			"Player-3683-0C615479", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Fabinnalt|r",
-			[51] = 1603046530,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"Paladins ain't tanks. More like cannon fodder.", -- [1]
-			"Missdemeanor-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Missdemeanor-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1163, -- [11]
-			"Player-3683-0CBEF4F9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeMissdemeanor|r",
-			[51] = 1603046531,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"its saying disc is also over shaman due to the insane effective health pool increase from the shields", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1165, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046541,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"i dunno... i tend to not die as apally tank... ", -- [1]
-			"Ginasue-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ginasue-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1170, -- [11]
-			"Player-3683-0AC41EC1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Ginasue|r",
-			[51] = 1603046585,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"LF people for horsemen", -- [1]
-			"Fabinnalt-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Fabinnalt-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1172, -- [11]
-			"Player-3683-0C615479", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Fabinnalt|r",
-			[51] = 1603046587,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"they are able to get the highest heal/second during high stress situations too", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1173, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046587,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"pally tank is fine lol", -- [1]
-			"Aphroditte-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Aphroditte-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1174, -- [11]
-			"Player-3683-0CB7BA00", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Aphroditte|r",
-			[51] = 1603046592,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"Come at me Missdemeanor. ", -- [1]
-			"Jpierce-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jpierce-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1175, -- [11]
-			"Player-3683-07BFAD94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Jpierce|r",
-			[51] = 1603046595,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"only other tank spec i like is vengance", -- [1]
-			"Ginasue-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ginasue-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1177, -- [11]
-			"Player-3683-0AC41EC1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Ginasue|r",
-			[51] = 1603046599,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"i like how i still have 280% flying", -- [1]
-			"Blarrinny-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Blarrinny-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1179, -- [11]
-			"Player-3683-0CAE1846", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Blarrinny|r",
-			[51] = 1603046608,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"why is the headless horseman queue so long?", -- [1]
-			"Terenarrus-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Terenarrus-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1180, -- [11]
-			"Player-3683-0A888F04", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Terenarrus|r",
-			[51] = 1603046611,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"isnt this out of the game>", -- [1]
-			"Blarrinny-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Blarrinny-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1181, -- [11]
-			"Player-3683-0CAE1846", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Blarrinny|r",
-			[51] = 1603046613,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"pally tanks are 4/6 right now", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1182, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046615,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"interesting i thought mw could heal the highest in high stress situations.", -- [1]
-			"ßlur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"ßlur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1184, -- [11]
-			"Player-3683-0BFB7DDD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97ßlur|r",
-			[51] = 1603046623,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"i got in after 3 seconds", -- [1]
-			"Sisili-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sisili-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1185, -- [11]
-			"Player-3683-0B3ECE11", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Sisili|r",
-			[51] = 1603046624,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"but I also have tank and heals checked", -- [1]
-			"Sisili-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sisili-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1187, -- [11]
-			"Player-3683-0B3ECE11", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Sisili|r",
-			[51] = 1603046631,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"who doin horseman runs?", -- [1]
-			"Ravendreth-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ravendreth-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1188, -- [11]
-			"Player-3683-0C1A0EC4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edRavendreth|r",
-			[51] = 1603046631,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"not enough tanks lol", -- [1]
-			"Ginasue-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ginasue-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1190, -- [11]
-			"Player-3683-0AC41EC1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Ginasue|r",
-			[51] = 1603046636,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"DHs and druids are both C tier, poor druid will stay bottom for a while :(", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1191, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046637,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"DPS LF HHM Run", -- [1]
-			"Hopelite-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hopelite-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1193, -- [11]
-			"Player-3683-0BF09519", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Hopelite|r",
-			[51] = 1603046646,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"good", -- [1]
-			"Logösh-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Logösh-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1195, -- [11]
-			"Player-3683-0A9505C1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cLogösh|r",
-			[51] = 1603046647,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"fuck malfurion and his little clan", -- [1]
-			"Logösh-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Logösh-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1196, -- [11]
-			"Player-3683-0A9505C1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cLogösh|r",
-			[51] = 1603046652,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"how do I unlock world quest after doing chromie time", -- [1]
-			"Kreygula-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kreygula-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1197, -- [11]
-			"Player-3683-0CBF9780", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Kreygula|r",
-			[51] = 1603046659,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"i can do druid tanking but... frankly i dont like it myself", -- [1]
-			"Ginasue-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ginasue-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1198, -- [11]
-			"Player-3683-0AC41EC1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Ginasue|r",
-			[51] = 1603046659,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"is HHM broken? i've been in a queue for like 40 minutes", -- [1]
-			"Irythell-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Irythell-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1202, -- [11]
-			"Player-3683-0ABD821B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edIrythell|r",
-			[51] = 1603046671,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"do you have to do the dungeon the motherlaod for darkiron dwarf unlocking?", -- [1]
-			"Gran-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Gran-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1203, -- [11]
-			"Player-3683-0BB26E99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaGran|r",
-			[51] = 1603046677,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"lmao druid tanking is by far the most boring tank spec", -- [1]
-			"ßlur-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"ßlur-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1204, -- [11]
-			"Player-3683-0BFB7DDD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97ßlur|r",
-			[51] = 1603046677,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"Blood DK is S tier, Monk A, War/Pally are B, and DH/Druid C", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1205, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046680,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"LF port to darn from IF. will tip", -- [1]
-			"Apöcolypse-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Apöcolypse-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1207, -- [11]
-			"Player-3683-09EBF1B7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cApöcolypse|r",
-			[51] = 1603046682,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"nope.  ive queued on 8 toons so far and got in within 2 mins...", -- [1]
-			"Shribberz-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shribberz-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1208, -- [11]
-			"Player-3683-0B335B14", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaShribberz|r",
-			[51] = 1603046685,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
-		{
-			"^", -- [1]
-			"Logösh-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Logösh-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1209, -- [11]
-			"Player-3683-0A9505C1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cLogösh|r",
-			[51] = 1603046690,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
-		{
-			"they really broke blood dks with their changes lol", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1210, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046690,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"This queue will not break me, to 30 minutes and beyond...", -- [1]
-			"Daladar-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Daladar-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1213, -- [11]
-			"Player-3683-0CBA7D8A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Daladar|r",
-			[51] = 1603046702,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"Monk is S tier actually", -- [1]
-			"Spacecop-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Spacecop-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1214, -- [11]
-			"Player-3683-0CB5EEA3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edSpacecop|r",
-			[51] = 1603046704,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"BM hunter is gonna suck due to losing azerite powers", -- [1]
-			"Thickmom-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thickmom-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1272, -- [11]
-			"Player-3683-0CBA5EC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thickmom|r",
-			[51] = 1603046867,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"Anyone looking to group up for the Horseman dungeon?", -- [1]
-			"Samythemage-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Samythemage-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1273, -- [11]
-			"Player-3683-0B6F75F2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaSamythemage|r",
-			[51] = 1603046867,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"and they still good", -- [1]
-			"Eilester-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Eilester-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1274, -- [11]
-			"Player-3683-0BA499DA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Eilester|r",
-			[51] = 1603046867,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"Pally has alot of \"oh im nearly dead... haha healing go brrr\" buttons", -- [1]
-			"Ginasue-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ginasue-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1275, -- [11]
-			"Player-3683-0AC41EC1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Ginasue|r",
-			[51] = 1603046867,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"Are you tired of being in a guild without me in it? Then join |cffffd100|HclubFinder:ClubFinder-1-10223-3683-83614866|h[Guild: Soulforged]|h|r! We are currently building up our raid roster for Shadowlands! So if youre looking for a home for SL, PST ME!", -- [1]
-			"Jaidiest-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jaidiest-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1277, -- [11]
-			"Player-3683-0AAF3B5A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edJaidiest|r",
-			[51] = 1603046872,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"make the pizza crust out of pure ham", -- [1]
-			"Shadowanya-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shadowanya-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			261, -- [11]
-			"Player-3683-0B0974C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edShadowanya|r",
-			[51] = 1603127995,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"pep and japs is the best pizza", -- [1]
-			"Cashewpal-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cashewpal-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			262, -- [11]
-			"Player-3683-0BEE8FC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cashewpal|r",
-			[51] = 1603127996,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"spinach :)", -- [1]
-			"Fireflyglow-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Fireflyglow-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			263, -- [11]
-			"Player-3683-0CC1D61C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Fireflyglow|r",
-			[51] = 1603128001,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
-		{
-			"agreed", -- [1]
-			"Molestos-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Molestos-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			264, -- [11]
-			"Player-3683-0CB653D4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeMolestos|r",
-			[51] = 1603128004,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
-		{
-			"pep and peno", -- [1]
-			"Molestos-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Molestos-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			265, -- [11]
-			"Player-3683-0CB653D4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeMolestos|r",
-			[51] = 1603128013,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
-		{
-			"white with sponoch is good", -- [1]
-			"Cashewpal-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cashewpal-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			266, -- [11]
-			"Player-3683-0BEE8FC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cashewpal|r",
-			[51] = 1603128022,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
-		{
-			"im about to order dominos tbh", -- [1]
-			"Sickledemon-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sickledemon-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			268, -- [11]
-			"Player-3683-0C22EF67", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edSickledemon|r",
-			[51] = 1603128027,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
-		{
-			"gross im ordering mellow mushroom", -- [1]
-			"Cashewpal-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cashewpal-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			270, -- [11]
-			"Player-3683-0BEE8FC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cashewpal|r",
-			[51] = 1603128039,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
-		{
-			"was the event glitch fixed?", -- [1]
-			"Naelar-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Naelar-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			271, -- [11]
-			"Player-3683-0CBB258B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeNaelar|r",
-			[51] = 1603128041,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
-		{
-			"what glitch", -- [1]
-			"Shadowanya-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shadowanya-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			272, -- [11]
-			"Player-3683-0B0974C6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edShadowanya|r",
-			[51] = 1603128050,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
-		{
-			"what glitch", -- [1]
-			"Cashewpal-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cashewpal-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			273, -- [11]
-			"Player-3683-0BEE8FC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cashewpal|r",
-			[51] = 1603128052,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
-		{
-			"dominos is the best shithole brazil has to offer", -- [1]
-			"Sickledemon-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sickledemon-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			274, -- [11]
-			"Player-3683-0C22EF67", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edSickledemon|r",
-			[51] = 1603128059,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
-		{
-			"when you logged out your candy would disappear", -- [1]
-			"Naelar-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Naelar-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			275, -- [11]
-			"Player-3683-0CBB258B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeNaelar|r",
-			[51] = 1603128060,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
-		{
-			"|cffffd100|HclubFinder:ClubFinder-1-193532-3683-96325487|h[Guild: Mütiny]|h|rLF more folks to bolster our raid team,and guild,in Shadowlands. We are a heroic guild, that pushes further once AOTC is reached.We will raid Tues and Wed 9pm to 12am EST.Whisper for info", -- [1]
-			"Lockthedk-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lockthedk-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			276, -- [11]
-			"Player-3683-0C9BDF68", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Lockthedk|r",
-			[51] = 1603128068,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
-		{
-			"brazil has good bakerys", -- [1]
-			"Cashewpal-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cashewpal-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			277, -- [11]
-			"Player-3683-0BEE8FC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cashewpal|r",
-			[51] = 1603128076,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
-		{
-			"false", -- [1]
-			"Sickledemon-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sickledemon-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			278, -- [11]
-			"Player-3683-0C22EF67", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edSickledemon|r",
-			[51] = 1603128083,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
-		{
-			"theres a brazillian bakery near my house its really good", -- [1]
-			"Cashewpal-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cashewpal-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			281, -- [11]
-			"Player-3683-0BEE8FC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cashewpal|r",
-			[51] = 1603128097,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
-		{
-			"where tf is akazamzarak", -- [1]
-			"Ryunoske-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ryunoske-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			282, -- [11]
-			"Player-3683-0CBE13D9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaRyunoske|r",
-			[51] = 1603128099,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
-		{
-			"are u in brazil or in the us?", -- [1]
-			"Sickledemon-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sickledemon-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			283, -- [11]
-			"Player-3683-0C22EF67", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edSickledemon|r",
-			[51] = 1603128108,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
-		{
-			"who was selling me a shadoweave mask?", -- [1]
-			"Nesii-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Nesii-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			285, -- [11]
-			"Player-3683-0CB786BF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaNesii|r",
-			[51] = 1603128110,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
-		{
-			"good coffee beans", -- [1]
-			"Coldeze-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Coldeze-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			286, -- [11]
-			"Player-3683-0B8E3ABD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaColdeze|r",
-			[51] = 1603128111,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
-		{
-			"in your heart. im in atlanta", -- [1]
-			"Cashewpal-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cashewpal-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			287, -- [11]
-			"Player-3683-0BEE8FC6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cashewpal|r",
-			[51] = 1603128115,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
-		{
-			"ok then its not a literal br bakery", -- [1]
-			"Sickledemon-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sickledemon-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			288, -- [11]
-			"Player-3683-0C22EF67", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edSickledemon|r",
-			[51] = 1603128129,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
-		{
 			"it is a brazillian bakery yes", -- [1]
 			"Cashewpal-Dalaran", -- [2]
 			"", -- [3]
@@ -1415,7 +29,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128147,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [1]
 		{
 			"anyone running hh?", -- [1]
 			"Serpentagram-Dalaran", -- [2]
@@ -1437,7 +51,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSerpentagram|r",
 			[51] = 1603128147,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [2]
 		{
 			"its right there on the sign", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1459,7 +73,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128157,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [3]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-180238-3683-95753396|h[Guild: Dvali]|h|r is a cross-faction guild that offers knowledgeable, helpful members that value friends over gear & does not rush you. We welcome all like-minded people for PVE, Raids, & M+.", -- [1]
 			"Qelorn-Dalaran", -- [2]
@@ -1481,7 +95,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Qelorn|r",
 			[51] = 1603128159,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [4]
 		{
 			"Hey its the guy who loves shit up his ass, Cashewpal", -- [1]
 			"Naelar-Dalaran", -- [2]
@@ -1503,7 +117,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNaelar|r",
 			[51] = 1603128164,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [5]
 		{
 			"do you think chinese food in the us is the same as in china?", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -1525,7 +139,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128166,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [6]
 		{
 			"It's a generalized term for a type of product you dingdong", -- [1]
 			"Naelar-Dalaran", -- [2]
@@ -1547,7 +161,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNaelar|r",
 			[51] = 1603128193,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [7]
 		{
 			"no", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1569,7 +183,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128195,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [8]
 		{
 			"dont you lie to me", -- [1]
 			"Naelar-Dalaran", -- [2]
@@ -1591,7 +205,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNaelar|r",
 			[51] = 1603128209,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [9]
 		{
 			"i dont think so, since we arnt allowed to kill dog to eat", -- [1]
 			"Cieloscuro-Dalaran", -- [2]
@@ -1613,7 +227,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cCieloscuro|r",
 			[51] = 1603128213,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [10]
 		{
 			"its a bakery run by and exclusively employed brazillians. ", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1635,7 +249,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128222,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [11]
 		{
 			"cringe", -- [1]
 			"Sickledemon-Dalaran", -- [2]
@@ -1657,7 +271,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSickledemon|r",
 			[51] = 1603128235,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [12]
 		{
 			"brs.. jajajajajaj. god help me", -- [1]
 			"Impellar-Dalaran", -- [2]
@@ -1679,7 +293,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Impellar|r",
 			[51] = 1603128248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [13]
 		{
 			"its really good", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1701,7 +315,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [14]
 		{
 			"WM starts at lvl 10 right? @ 15 I cant access my PVP talents or WM Icon - bug?", -- [1]
 			"Okäy-Dalaran", -- [2]
@@ -1723,7 +337,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaOkäy|r",
 			[51] = 1603128249,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [15]
 		{
 			"20", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -1745,7 +359,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603128258,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [16]
 		{
 			"lvl 20", -- [1]
 			"Rpnzl-Dalaran", -- [2]
@@ -1767,7 +381,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rpnzl|r",
 			[51] = 1603128260,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [17]
 		{
 			"got it - thanks!", -- [1]
 			"Okäy-Dalaran", -- [2]
@@ -1789,7 +403,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaOkäy|r",
 			[51] = 1603128267,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [18]
 		{
 			"i went to germany a lot growing up", -- [1]
 			"Cashewpal-Dalaran", -- [2]
@@ -1811,7 +425,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cashewpal|r",
 			[51] = 1603128466,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [19]
 		{
 			"everywhere looks good from the outside", -- [1]
 			"Helissithe-Dalaran", -- [2]
@@ -1833,7 +447,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHelissithe|r",
 			[51] = 1603128468,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [20]
 		{
 			"PAID TRANSMOGS WTF BLOZZZARDDD", -- [1]
 			"Draûgluin-Dalaran", -- [2]
@@ -1855,7 +469,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Draûgluin|r",
 			[51] = 1603214826,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [21]
 		{
 			"15k?", -- [1]
 			"Natblîda-Dalaran", -- [2]
@@ -1877,7 +491,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Natblîda|r",
 			[51] = 1603214833,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [22]
 		{
 			"Damn bro, almost like it's optional", -- [1]
 			"Elscootador-Dalaran", -- [2]
@@ -1899,7 +513,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Elscootador|r",
 			[51] = 1603214868,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [23]
 		{
 			"thanks!", -- [1]
 			"Magziee-CenarionCircle", -- [2]
@@ -1921,7 +535,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaMagziee-CenarionCircle|r",
 			[51] = 1603215039,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [87]
+		}, -- [24]
 		{
 			"cant use = garbo", -- [1]
 			"Elunenaria-Dalaran", -- [2]
@@ -1943,7 +557,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeElunenaria|r",
 			[51] = 1603215058,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [25]
 		{
 			"thats a horrible price anyways lol", -- [1]
 			"Lacrïma-Dalaran", -- [2]
@@ -1965,7 +579,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLacrïma|r",
 			[51] = 1603215072,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [26]
 		{
 			"FUCK PAID TRANSMOGS", -- [1]
 			"Draûgluin-Dalaran", -- [2]
@@ -1987,7 +601,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Draûgluin|r",
 			[51] = 1603215083,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [27]
 		{
 			"yeah for real.  ilvl 200... easy 2 mil", -- [1]
 			"Quadcon-Dalaran", -- [2]
@@ -2009,7 +623,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaQuadcon|r",
 			[51] = 1603215086,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [28]
 		{
 			"Imdawolf what are you talking about", -- [1]
 			"Draalanii-Dalaran", -- [2]
@@ -2031,7 +645,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Draalanii|r",
 			[51] = 1603294810,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [29]
 		{
 			"Planning to try feral druid for real in SL. I just feel such a strong urge to be feral. I'm just sad that I don't have any feral buddies to compare with.", -- [1]
 			"Blamemypets-Dalaran", -- [2]
@@ -2053,7 +667,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blamemypets|r",
 			[51] = 1603294811,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [30]
 		{
 			"talking bout rogue complaining", -- [1]
 			"Imdawolf-Dalaran", -- [2]
@@ -2075,7 +689,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Imdawolf|r",
 			[51] = 1603294825,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [31]
 		{
 			"how is he complaining? lol", -- [1]
 			"Draalanii-Dalaran", -- [2]
@@ -2097,7 +711,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Draalanii|r",
 			[51] = 1603294833,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [32]
 		{
 			"i said rogues not him particulary", -- [1]
 			"Imdawolf-Dalaran", -- [2]
@@ -2119,7 +733,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Imdawolf|r",
 			[51] = 1603294850,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [33]
 		{
 			"The only class right now I can truly say I don't have any confidence in is SV hunter", -- [1]
 			"Blamemypets-Dalaran", -- [2]
@@ -2141,7 +755,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blamemypets|r",
 			[51] = 1603294905,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [34]
 		{
 			"ya", -- [1]
 			"Voidspark-Dalaran", -- [2]
@@ -2163,7 +777,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVoidspark|r",
 			[51] = 1603295046,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [35]
 		{
 			"ah kk", -- [1]
 			"Eziochamberl-Dalaran", -- [2]
@@ -2184,6 +798,1392 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cff3ec6eaEziochamberl|r",
 			[51] = 1603295050,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [36]
+		{
+			"wts |cffa335ee|Hitem:163576::::::::50:104:::::::|h[Captured Dune Scavenger]|h|r pst cheaper then ah", -- [1]
+			"Jillien-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jillien-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			134, -- [11]
+			"Player-3683-0B54D8B0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Jillien|r",
+			[51] = 1603380208,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [37]
+		{
+			"I enjoy Ironic protesting.", -- [1]
+			"Jpierce-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jpierce-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			141, -- [11]
+			"Player-3683-07BFAD94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Jpierce|r",
+			[51] = 1603380227,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [38]
+		{
+			"we need more trolling of dumb protesting like that", -- [1]
+			"Vestelvia-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vestelvia-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			142, -- [11]
+			"Player-3683-0CBA8C6E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Vestelvia|r",
+			[51] = 1603380243,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [39]
+		{
+			"all gas no breaks is amazing for that", -- [1]
+			"Hogdwarf-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hogdwarf-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			144, -- [11]
+			"Player-3683-0B1C5AB4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cHogdwarf|r",
+			[51] = 1603380254,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [40]
+		{
+			"lol", -- [1]
+			"Gummießear-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Gummießear-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			145, -- [11]
+			"Player-3683-0CB8A4F1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Gummießear|r",
+			[51] = 1603380256,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"yeah, its pretty crazy when you watch him.", -- [1]
+			"Vestelvia-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vestelvia-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			146, -- [11]
+			"Player-3683-0CBA8C6E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Vestelvia|r",
+			[51] = 1603380265,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [42]
+		{
+			"I tried to cut my own hair last month and ended up having to shave it", -- [1]
+			"Marolann-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Marolann-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			147, -- [11]
+			"Player-3683-0C28DB3A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMarolann|r",
+			[51] = 1603380266,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [43]
+		{
+			"ive always cut my own", -- [1]
+			"Gummießear-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Gummießear-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			148, -- [11]
+			"Player-3683-0CB8A4F1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Gummießear|r",
+			[51] = 1603380282,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [44]
+		{
+			"so this is nothing new for me", -- [1]
+			"Gummießear-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Gummießear-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			149, -- [11]
+			"Player-3683-0CB8A4F1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Gummießear|r",
+			[51] = 1603380289,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [45]
+		{
+			"especially when they are all like dont be a sheep and make your own decisions but dont make a decision for themselves", -- [1]
+			"Vestelvia-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vestelvia-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			151, -- [11]
+			"Player-3683-0CBA8C6E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Vestelvia|r",
+			[51] = 1603380300,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [46]
+		{
+			"I like the idea of cutting my own hair since its free", -- [1]
+			"Marolann-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Marolann-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			152, -- [11]
+			"Player-3683-0C28DB3A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMarolann|r",
+			[51] = 1603380308,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [47]
+		{
+			"but i need practice ", -- [1]
+			"Marolann-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Marolann-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			153, -- [11]
+			"Player-3683-0C28DB3A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMarolann|r",
+			[51] = 1603380316,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [48]
+		{
+			"WTS |cff71d5ff|Hspell:231428:0|h[Smoldering Ember Wyrm]|h|r 100% GUARANTEED!!! GOLD ONLY!!!", -- [1]
+			"Lzanami-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lzanami-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			899, -- [11]
+			"Player-3683-09F83F65", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaLzanami|r",
+			[51] = 1603467574,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [49]
+		{
+			"mt str is 538 stam is 1,522 and armor is 467 with is and 513/ 1,450/445 with fallen crusader", -- [1]
+			"Márskjöldr-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Márskjöldr-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			904, -- [11]
+			"Player-3683-0C25F9D5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Márskjöldr|r",
+			[51] = 1603467635,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [50]
+		{
+			"WTS |cff71d5ff|Hspell:231428:0|h[Smoldering Ember Wyrm]|h|r 100% GUARANTEED!!! GOLD ONLY!!!", -- [1]
+			"Lzanami-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lzanami-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			905, -- [11]
+			"Player-3683-09F83F65", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaLzanami|r",
+			[51] = 1603467652,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [51]
+		{
+			"you can solo that though", -- [1]
+			"Voidbért-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Voidbért-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			907, -- [11]
+			"Player-3683-0CC4FDE7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaVoidbért|r",
+			[51] = 1603467661,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [52]
+		{
+			"no you cant dummy lol", -- [1]
+			"Lzanami-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lzanami-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			908, -- [11]
+			"Player-3683-09F83F65", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaLzanami|r",
+			[51] = 1603467673,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [53]
+		{
+			"definitely can and did", -- [1]
+			"Voidbért-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Voidbért-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			910, -- [11]
+			"Player-3683-0CC4FDE7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaVoidbért|r",
+			[51] = 1603467680,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [54]
+		{
+			"anyone else want HH queue?", -- [1]
+			"Slicecream-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Slicecream-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			973, -- [11]
+			"Player-3683-0CBABD2A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Slicecream|r",
+			[51] = 1603467997,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [55]
+		{
+			"its just absurd...because I did not ask for this..and a lot of changes are truly fustrating. Meh", -- [1]
+			"Moonwíllow-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Moonwíllow-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			974, -- [11]
+			"Player-3683-0C1CE686", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edMoonwíllow|r",
+			[51] = 1603468007,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [56]
+		{
+			"Blizzard likes to keep it fresh... ", -- [1]
+			"Grakusgg-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Grakusgg-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			977, -- [11]
+			"Player-3683-0ACA0C2B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Grakusgg|r",
+			[51] = 1603468021,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [57]
+		{
+			"why did they take away the got mail symbol i saw the other day?", -- [1]
+			"Bankbabey-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bankbabey-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			133, -- [11]
+			"Player-3683-0AD91250", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBankbabey|r",
+			[51] = 1603603254,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [58]
+		{
+			"level up yo io scores before talking shit lmao", -- [1]
+			"Jørach-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jørach-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			135, -- [11]
+			"Player-3683-0ADB9C7A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Jørach|r",
+			[51] = 1603603260,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"you gotta be taken against your will to be considered used", -- [1]
+			"Blãckmoon-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Blãckmoon-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			137, -- [11]
+			"Player-3683-0AB29CAB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Blãckmoon|r",
+			[51] = 1603603277,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"Fun detected... Fun removed.", -- [1]
+			"Jpierce-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jpierce-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			138, -- [11]
+			"Player-3683-07BFAD94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Jpierce|r",
+			[51] = 1603603277,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [61]
+		{
+			"i'm not sad dead you are because you just talk shit in trade all day", -- [1]
+			"Fulysick-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Fulysick-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			139, -- [11]
+			"Player-3683-07D2F7FF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edFulysick|r",
+			[51] = 1603603284,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [62]
+		{
+			"ds", -- [1]
+			"Thericcan-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Thericcan-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			140, -- [11]
+			"Player-3683-0CB927CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeThericcan|r",
+			[51] = 1603603292,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [63]
+		{
+			"Indeed, I am sorry I am lost in like a shit ton of whispers I cannot keep it straight", -- [1]
+			"Dèadèyès-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dèadèyès-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			141, -- [11]
+			"Player-3683-08E42468", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Dèadèyès|r",
+			[51] = 1603603303,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [64]
+		{
+			"ofcoursei  am taken against my will, i never want to be sexed", -- [1]
+			"Dårknèss-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dårknèss-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			142, -- [11]
+			"Player-3683-0BAF9BE7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edDårknèss|r",
+			[51] = 1603603312,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [65]
+		{
+			"wut?", -- [1]
+			"Nelfßarbie-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Nelfßarbie-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			143, -- [11]
+			"Player-3683-0C129F76", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Nelfßarbie|r",
+			[51] = 1603603324,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [66]
+		{
+			"Anyone know why healbot wont show up when im using elvui", -- [1]
+			"Cirederkin-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Cirederkin-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			144, -- [11]
+			"Player-3683-0BE5DAB0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Cirederkin|r",
+			[51] = 1603603336,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"Agreed Dark, too much energy.", -- [1]
+			"Audahvin-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Audahvin-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			145, -- [11]
+			"Player-3683-0CC23057", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaAudahvin|r",
+			[51] = 1603603336,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"Selling unobtainable vanilla plate s l u t mog set (ornate mithril set) pm me if you want to make a direct deal or just buy it instantly off the AH.", -- [1]
+			"Humbleenough-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Humbleenough-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			200, -- [11]
+			"Player-3683-0A3AAA5D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Humbleenough|r",
+			[51] = 1603603509,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"go down naked with a hard on and holding the cat or dog under one of ur arms", -- [1]
+			"Mysticalmage-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Mysticalmage-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1281, -- [11]
+			"Player-3683-08A9BB47", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMysticalmage|r",
+			[51] = 1603649545,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"wouldnt look good", -- [1]
+			"Chilliethree-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chilliethree-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1282, -- [11]
+			"Player-3683-0A6AC249", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Chilliethree|r",
+			[51] = 1603649550,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"2:12", -- [1]
+			"Leilo-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Leilo-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1285, -- [11]
+			"Player-3683-087DD2B5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Leilo|r",
+			[51] = 1603649554,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"10 pounds? Are u a girl?", -- [1]
+			"Wiredhot-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wiredhot-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1286, -- [11]
+			"Player-3683-0CC1EBC9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Wiredhot|r",
+			[51] = 1603649554,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"something hour", -- [1]
+			"Cherise-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Cherise-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1287, -- [11]
+			"Player-3683-0A5075DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Cherise|r",
+			[51] = 1603649555,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"guys dont complain about 10 pounds", -- [1]
+			"Wiredhot-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wiredhot-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1296, -- [11]
+			"Player-3683-0CC1EBC9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Wiredhot|r",
+			[51] = 1603649565,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"Type /time, it'll tell you the server's time", -- [1]
+			"Celesande-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Celesande-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1298, -- [11]
+			"Player-3683-0A83B319", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeCelesande|r",
+			[51] = 1603649568,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			" hes a guy", -- [1]
+			"Laahara-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Laahara-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1300, -- [11]
+			"Player-3683-08B4490E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Laahara|r",
+			[51] = 1603649568,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"LF jewlcrafter to prospect ore", -- [1]
+			"Slipshadows-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Slipshadows-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1302, -- [11]
+			"Player-3683-0C18D711", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edSlipshadows|r",
+			[51] = 1603649570,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"im a guy how isnt going to die young wiredhot you fat pig", -- [1]
+			"Chilliethree-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chilliethree-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1308, -- [11]
+			"Player-3683-0A6AC249", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Chilliethree|r",
+			[51] = 1603649576,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"10 pounds over is fat??!?!?1 rofl", -- [1]
+			"Wiredhot-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wiredhot-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1310, -- [11]
+			"Player-3683-0CC1EBC9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Wiredhot|r",
+			[51] = 1603649589,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"go eat some fritos", -- [1]
+			"Chilliethree-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chilliethree-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1313, -- [11]
+			"Player-3683-0A6AC249", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Chilliethree|r",
+			[51] = 1603649592,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"anything over 130 pounts is obese", -- [1]
+			"Laahara-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Laahara-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1320, -- [11]
+			"Player-3683-08B4490E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Laahara|r",
+			[51] = 1603649601,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"ok well not that ^", -- [1]
+			"Chilliethree-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chilliethree-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1326, -- [11]
+			"Player-3683-0A6AC249", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Chilliethree|r",
+			[51] = 1603649611,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"thats like 8 ounces of fat on each limb plus some belly and chest", -- [1]
+			"Wiredhot-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wiredhot-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1328, -- [11]
+			"Player-3683-0CC1EBC9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Wiredhot|r",
+			[51] = 1603649622,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"is there an item in game that will let me float in teh air and meditate like a monk?", -- [1]
+			"Kalvictus-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kalvictus-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1329, -- [11]
+			"Player-3683-09C3B25C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaKalvictus|r",
+			[51] = 1603649630,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"imagine not understanding what obese means", -- [1]
+			"Lillarina-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lillarina-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1331, -- [11]
+			"Player-3683-0CC077E0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Lillarina|r",
+			[51] = 1603649633,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"I'm 6'3\" 220", -- [1]
+			"Mãtthew-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Mãtthew-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1382, -- [11]
+			"Player-3683-0CBE9F17", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cMãtthew|r",
+			[51] = 1603649801,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"lol i cant talk shit i gained weight from covid but mostly because i stuffed my face", -- [1]
+			"Marolann-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Marolann-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1383, -- [11]
+			"Player-3683-0C28DB3A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMarolann|r",
+			[51] = 1603649801,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"i think so Kalvictus", -- [1]
+			"Leilo-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Leilo-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1384, -- [11]
+			"Player-3683-087DD2B5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Leilo|r",
+			[51] = 1603649802,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"oh thats terriblle", -- [1]
+			"Wiredhot-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wiredhot-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1385, -- [11]
+			"Player-3683-0CC1EBC9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Wiredhot|r",
+			[51] = 1603649806,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"im 270 and all fat :(((((((((((((", -- [1]
+			"Voidsuccubus-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Voidsuccubus-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1386, -- [11]
+			"Player-3683-0AA7DE9D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edVoidsuccubus|r",
+			[51] = 1603649808,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"SILENCE", -- [1]
+			"Subtronics-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Subtronics-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			153, -- [11]
+			"Player-3683-0CB25985", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSubtronics|r",
+			[51] = 1603734857,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"Now FEEL the FERN!", -- [1]
+			"Jpierce-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jpierce-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			155, -- [11]
+			"Player-3683-07BFAD94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Jpierce|r",
+			[51] = 1603734872,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"True, Jpierce...been a long time since we could though.", -- [1]
+			"Mechashooter-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Mechashooter-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			156, -- [11]
+			"Player-3683-0CC65493", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Mechashooter|r",
+			[51] = 1603734889,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"have yall ever considered that balance druids are just herbologists and botanists tripping on acid", -- [1]
+			"Jørach-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jørach-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			157, -- [11]
+			"Player-3683-0ADB9C7A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Jørach|r",
+			[51] = 1603734898,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"When I queue as a tank it takes aroud 1min to join dungeons. When I queue as a healer it takes around 20seconds lol", -- [1]
+			"Løthar-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Løthar-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			158, -- [11]
+			"Player-3683-096EF314", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLøthar|r",
+			[51] = 1603734905,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"have you ever considered if you love a druid you gotta love all of its forms", -- [1]
+			"Narneda-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Narneda-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			163, -- [11]
+			"Player-3683-0B2B3439", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Narneda|r",
+			[51] = 1603734923,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"hackerz", -- [1]
+			"Ponterus-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ponterus-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			218, -- [11]
+			"Player-3683-0B4638C9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcPonterus|r",
+			[51] = 1603735100,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"you'll heal a million times better ", -- [1]
+			"Moonfiire-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Moonfiire-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			223, -- [11]
+			"Player-3683-0C18DF27", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMoonfiire|r",
+			[51] = 1603735108,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

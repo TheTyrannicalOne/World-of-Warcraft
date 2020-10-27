@@ -44,18 +44,18 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
-			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
-			},
-		},
 		[57006] = {
 			["title"] = "A Worthy Ally",
 			["objectives"] = {
 				"0/1 Use the Deepflame Campfire", -- [1]
 				"0/1 Choose an ally", -- [2]
 				"0/3 Ally quests complete", -- [3]
+			},
+		},
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
+			["objectives"] = {
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[56499] = {
@@ -188,8 +188,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

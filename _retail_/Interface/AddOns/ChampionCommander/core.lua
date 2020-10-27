@@ -297,6 +297,7 @@ function addon:MarkAsSeen(key)
 	if newsframes[key] then newsframes[key]:Hide() end
 end
 
+
 if not _G.BFA then
 _G.BFA=addon
 end

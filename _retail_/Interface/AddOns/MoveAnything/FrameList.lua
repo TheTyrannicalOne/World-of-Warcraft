@@ -138,7 +138,6 @@ local m = {
 		API:AddElement({name = "PrestigeLevelUpBanner", displayName = "Prestige Banner"}, c)
 		c = API:GetCategory("Blizzard Bags")
 		API:AddElement({name = "BagsMover", displayName = "All Bags", noHide = 1}, c)
-		API:AddElement({name = "BagButtonsMover", displayName = "Bag Buttons"}, c)
 		API:AddElement({name = "BagButtonsVerticalMover", displayName = "Bag Buttons - Vertical"}, c)
 		API:AddElement({name = "BagItemSearchBox", displayName = "Bag Item Search"}, c)
 		API:AddElement({name = "BagItemAutoSortButton", displayName = "Clean Up Bags"}, c)
@@ -155,7 +154,7 @@ local m = {
 		API:AddElement({name = "CharacterBag3Slot", displayName = "Bag Button 4"}, c)
 		--API:AddElement({name = "KeyRingButton", displayName = "Key Ring Button"}, c)
 		c = API:GetCategory("Blizzard Action Bars")
-		API:AddElement({name = "BasicActionButtonsMover", displayName = "Action Bar", linkedScaling = {"ActionBarDownButton", "ActionBarUpButton"}}, c)
+		API:AddElement({name = "BasicActionButtonsMover", displayName = "Action Bar", --[[linkedScaling = {"ActionBarDownButton", "ActionBarUpButton"}--]]}, c)
 		API:AddElement({name = "BasicActionButtonsVerticalMover", displayName = "Action Bar - Vertical"}, c)
 		API:AddElement({name = "MultiBarBottomLeft", displayName = "Bottom Left Action Bar"}, c)
 		API:AddElement({name = "MultiBarBottomRight", displayName = "Bottom Right Action Bar"}, c)
@@ -173,11 +172,11 @@ local m = {
 		end}, c)]] --MultiBarLeftMover
 		API:AddElement({name = "MultiBarLeftMover", displayName = "Right Action Bar 2"}, c)
 		API:AddElement({name = "MultiBarLeftHorizontalMover", displayName = "Right Action Bar 2 - Horizontal"}, c)
-		API:AddElement({name = "MainMenuBarPageNumber", displayName = "Action Bar Page Number"}, c)
+		--API:AddElement({name = "MainMenuBarPageNumber", displayName = "Action Bar Page Number"}, c)
+		API:AddElement({name = "MainMenuBarPageNumberMover", displayName = "Action Bar Page Number"}, c)
 		API:AddElement({name = "ActionBarUpButton", displayName = "Action Bar Page Up"}, c)
 		API:AddElement({name = "ActionBarDownButton", displayName = "Action Bar Page Down"}, c)
-		API:AddElement({name = "ExtraActionBarFrame", displayName = "Extra Action Bar"}, c)
-		API:AddElement({name = "ZoneAbilityFrame", displayName = "Zone Ability"}, c)
+		API:AddElement({name = "ExtraAbilityContainer", displayName = "Extra Ability Bar"}, c)
 		API:AddElement({name = "PetActionButtonsMover", displayName = "Pet Action Bar"}, c)
 		API:AddElement({name = "PetActionButtonsVerticalMover", displayName = "Pet Action Bar - Vertical"}, c)
 		API:AddElement({name = "StanceButtonsMover", displayName = "Stance Buttons"}, c)
@@ -302,6 +301,8 @@ local m = {
 				ReputationXPBarTexture3,
 			}
 		}, c)--]]
+		API:AddElement({name = "MicroButtonAndBagsBar", displayName = "Micro Bags Bar"}, c)
+		API:AddElement({name = "BagButtonsMover", displayName = "Bag Buttons"}, c)
 		API:AddElement({name = "MicroButtonsMover", displayName = "Micro Menu"}, c)
 		--API:AddElement({name = "MicroButtonsSplitMover", displayName = "Micro Menu - Split"}, c)
 		--API:AddElement({name = "MicroButtonsVerticalMover", displayName = "Micro Menu - Vertical"}, c)

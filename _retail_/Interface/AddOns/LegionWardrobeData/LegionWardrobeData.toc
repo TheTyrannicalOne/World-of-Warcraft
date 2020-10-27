@@ -3,5 +3,7 @@
 ## Author: ykiigor
 ## LoadOnDemand: 1
 ## RequiredDeps: LegionWardrobe
+## Version: 33
 Data.lua
+Data2.lua
 LegionWardrobeData.lua

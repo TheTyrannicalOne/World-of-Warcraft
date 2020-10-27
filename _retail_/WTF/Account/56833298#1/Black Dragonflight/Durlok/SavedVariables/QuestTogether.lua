@@ -65,9 +65,11 @@ QuestTogether = {
 				"2/10  ", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 		[44989] = {
@@ -82,10 +84,10 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[50603] = {
@@ -94,10 +96,16 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
+		[48641] = {
+			["title"] = "Armies of Legionfall",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[50606] = {
@@ -116,30 +124,22 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
-			},
-		},
 		[47105] = {
 			["title"] = "Into The Darkness",
 			["objectives"] = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

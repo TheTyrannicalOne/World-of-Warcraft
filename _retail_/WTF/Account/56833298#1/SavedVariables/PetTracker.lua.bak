@@ -2,8 +2,9 @@
 PetTracker_Sets = {
 	["mapSearch"] = "Not Maximized",
 	["tutorial"] = 12,
-	["rivalSearch"] = "",
+	["trackPets"] = true,
 	["rivalHistory"] = {
 	},
 	["hideSpecies"] = true,
+	["rivalSearch"] = "",
 }

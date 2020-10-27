@@ -6287,6 +6287,7 @@ AAP.QuestStepListListingZone = {
 	
 	["Legion - Azsuna"] = 630,
 	["Legion - Val'Sharah"] = 641,
+	["Legion - Stormheim"] = 634,
 }
 AAP.QuestStepListListing = {}
 AAP.QuestStepListListing["Shadowlands"] = {
@@ -6322,7 +6323,7 @@ AAP.QuestStepListListing["Kalimdor"] = {
 	["A57-Teldrassil"] = "01-30 Teldrassil (Full)",
 	["A630-Azsuna"] = "Legion - Azsuna",
 	["A641-ValSharah"] = "Legion - Val'Sharah",
-
+	["A634-Stormheim"] = "Legion - Stormheim",
 }
 AAP.QuestStepListListing["SpeedRun"] = {
 	["1648-Z0-TheMaw-Story"] = "Z-00-TheMaw-Story",

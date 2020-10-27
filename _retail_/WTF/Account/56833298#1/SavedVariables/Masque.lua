@@ -15,46 +15,30 @@ MasqueDB = {
 		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Malivant - Dalaran"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["Groups"] = {
-				["ElvUI_ActionBars"] = {
-					["Inherit"] = false,
-				},
-				["ElvUI_Pet Bar"] = {
-					["Inherit"] = false,
-				},
-				["Hekili"] = {
-					["Inherit"] = false,
-				},
 				["WeakAuras_2pvBg5wcfEm"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_oTOmGp3SIpf"] = {
-					["Upgraded"] = true,
-					["Inherit"] = false,
-				},
-				["ElvUI"] = {
-					["Inherit"] = false,
-				},
-				["ElvUI_Debuffs"] = {
+				["Kaliel's Tracker_Active Button"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_iKS2EQzNKJL"] = {
@@ -62,9 +46,6 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["OPie"] = {
-					["Inherit"] = false,
-				},
-				["ElvUI_Buffs"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_wRYv9xethaV"] = {
@@ -75,6 +56,34 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
+				["WeakAuras"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_oTOmGp3SIpf"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+				},
+				["ElvUI_ActionBars"] = {
+					["Inherit"] = false,
+				},
+				["Kaliel's Tracker"] = {
+					["Inherit"] = false,
+				},
+				["ElvUI_Debuffs"] = {
+					["Inherit"] = false,
+				},
+				["ElvUI"] = {
+					["Inherit"] = false,
+				},
+				["Hekili"] = {
+					["Inherit"] = false,
+				},
+				["ElvUI_Buffs"] = {
+					["Inherit"] = false,
+				},
+				["Kaliel's Tracker_Quest Item Button"] = {
+					["Inherit"] = false,
+				},
 				["ElvUI_Stance Bar"] = {
 					["Inherit"] = false,
 				},
@@ -82,7 +91,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras"] = {
+				["ElvUI_Pet Bar"] = {
 					["Inherit"] = false,
 				},
 			},

@@ -4,6 +4,8 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/skada toggle", -- [1]
+		"/dance", -- [2]
+		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [3]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -556,5 +558,137 @@ ElvCharacterDB = {
 			[51] = 1603296312,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [25]
+		{
+			"the 200g listings are still there", -- [1]
+			"Njobu-Gul'dan", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Njobu-Gul'dan", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			138, -- [11]
+			"Player-96-0CEA7C2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Njobu-Gul'dan|r",
+			[51] = 1603666244,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [26]
+		{
+			"Does anyone know if I use |cffe6cc80|Hitem:168622::::::::50:268::23:::::|h[Stabilizing Lens of the Focusing Iris]|h|r will it also be rank 3 for brewmaster?", -- [1]
+			"Wonton-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wonton-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			139, -- [11]
+			"Player-96-0CC3CE2F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Wonton-Skullcrusher|r",
+			[51] = 1603666246,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [27]
+		{
+			"sadly they are 750 on the one server that I desperately need bags", -- [1]
+			"Devyl-Velen", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Devyl-Velen", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			140, -- [11]
+			"Player-96-0656B736", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaDevyl-Velen|r",
+			[51] = 1603666273,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [28]
+		{
+			"oops", -- [1]
+			"Dedaerodra-Eonar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dedaerodra-Eonar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			168, -- [11]
+			"Player-96-08D26EA5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Dedaerodra-Eonar|r",
+			[51] = 1603666449,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [29]
+		{
+			"teach a man to fish...", -- [1]
+			"Occamsrazor-Velen", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Occamsrazor-Velen", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			192, -- [11]
+			"Player-96-08D1310D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Occamsrazor-Velen|r",
+			[51] = 1603666496,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [30]
+		{
+			"top wall above portal room", -- [1]
+			"Agaymar-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Agaymar-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			426, -- [11]
+			"Player-96-0CE57BBA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Agaymar|r",
+			[51] = 1603735806,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [31]
 	},
 }

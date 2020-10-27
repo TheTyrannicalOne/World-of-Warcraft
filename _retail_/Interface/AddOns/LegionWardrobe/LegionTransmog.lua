@@ -1,8 +1,13 @@
 local GlobalAddonName, LTS = ...
 
-local ADDON_VERSION = "3.2 (20.10.2020)"
+local ADDON_VERSION = "3.3 (26.10.2020)"
 
 --[[
+3.3
+Updated most missing data
+Added color selector: you can filter items by any color
+Added sets to default interface
+
 3.2
 Updated recolors data for all new models
 Added reset filter button outside dropdown
@@ -131,6 +136,9 @@ Added zones names for quests info
 
 local tonumber, GetItemCount, strtrim, bit_band, type = tonumber, GetItemCount, strtrim, bit.band, type
 
+local Addon = {}
+_G.LTA = Addon
+
 local ItemsCheckBonuses = LTS.ItemsCheckBonuses
 local ZonesFilterList = LTS.ZonesFilterList
 
@@ -148,6 +156,7 @@ local ZonesNames
 local ZoneToDataID
 local DiffToDataID
 local QuestZoneToDataID
+local QuestZoneToDataIDModern
 local NPCToZone
 local NPCReact
 local InstanceToEJ
@@ -156,6 +165,7 @@ local SetsAllData
 local Sets
 local Recolors
 local HaveRecolors
+local VisualColors
 
 local VLTW
 
@@ -228,12 +238,16 @@ local function ZoneIDToOldID(zoneID)
 	end
 end
 
+Addon.SetsData = {}
+Addon.SetsFilter = {}
+
 
 local CharQuestsData
 local UpdateModel
 local eventsFrame
 local FilterInstance, FilterInstanceDifficulty, FilterInstanceZoneDrop
 local FilterRecolors
+local FilterColor
 local FindBonuses
 local LocMapNames, LocInstanceNames, LocBossNames = nil,{},{}
 
@@ -415,6 +429,33 @@ end
 local closeButton = CreateFrame("Button",nil,mainFrame,"UIPanelCloseButton")
 closeButton:SetPoint("TOPRIGHT",4,5)
 
+local t_copy
+function t_copy(t)
+	local new = {}
+	for k,v in pairs(t or {}) do
+		if type(v) == "table" then
+			new[k] = t_copy(v)
+		else
+			new[k] = v
+		end
+	end
+	return new
+end
+
+function Addon:CreateEJData()
+	Addon.InstanceNameToMap = {}
+	local EJ_GetInstanceForMap, EJ_GetInstanceInfo = EJ_GetInstanceForMap, EJ_GetInstanceInfo
+	for mapID=1,2500 do
+		local ej = EJ_GetInstanceForMap(mapID)
+		if ej then
+			local instName = EJ_GetInstanceInfo(ej)
+			if instName and not Addon.InstanceNameToMap[instName] then
+				Addon.InstanceNameToMap[instName] = mapID
+			end
+		end
+	end
+end
+
 local function UpdateLocalizatedEJ()
 	if not InstanceToEJ then
 		return
@@ -450,6 +491,14 @@ local function UpdateLocalizatedZones()
 end
 
 local function ZoneToMapID(zoneID)
+	for mapID,zones in pairs(QuestZoneToDataIDModern) do
+		for i=1,#zones do
+			if zoneID == zones[i] then
+				return mapID
+			end
+		end
+	end
+
 	for mapID,zones in pairs(QuestZoneToDataID) do
 		for i=1,#zones do
 			if zoneID == zones[i] then
@@ -474,6 +523,26 @@ local function GetZoneName(zoneID,formatString)
 		return zoneName
 	end
 	return ""
+end
+
+function Addon:ResetCategory(notFullReset)
+	if notFullReset then Addon.IsReset = true end
+	WardrobeCollectionFrame.ItemsCollectionFrame.SlotsFrame.Buttons[1]:Click()
+	if notFullReset then Addon.IsReset = false end
+end
+
+function Addon:ReloadCategory()
+	Addon.IsReset = true
+
+	local transmogLocation = WardrobeCollectionFrame.ItemsCollectionFrame.transmogLocation
+	WardrobeCollectionFrame.ItemsCollectionFrame.transmogLocation = nil
+	WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory = nil
+
+	WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(transmogLocation)
+
+	WardrobeCollectionFrame.ItemsCollectionFrame.PagingFrame:SetCurrentPage(1)
+
+	Addon.IsReset = false
 end
 
 local inspectScantip = CreateFrame("GameTooltip", GlobalAddonName.."ScanningTooltip", nil, "GameTooltipTemplate")
@@ -533,13 +602,7 @@ sourcesFrame.Recolors:SetScript("OnClick",function (self)
 			if t[j] == visualID then
 				FilterRecolors = t
 
-				local cat = WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory
-				if cat == 1 then
-					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(2)
-				else
-					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(1)
-				end
-				WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(cat)
+				Addon:ReloadCategory()
 
 				return
 			end
@@ -623,18 +686,24 @@ local function SourcesFrame_SourceData_OnEnter(self)
 			GameTooltip:AddLine(amount)
 		elseif data[1] == 2 then
 			for i=2,#data,2 do
-				local name, _, texturePath = GetCurrencyInfo(data[i])
-				--GameTooltip:AddLine(name..": "..data[i+1])
-				--GameTooltip:AddTexture(texturePath)
-				GameTooltip:AddLine((texturePath and "|T"..texturePath..":0|t " or "")..name..": "..data[i+1])
+				if data[i] == -1 then
+					local amount = GetCoinTextureString(data[i+1])
+					GameTooltip:AddLine(amount)
+				else
+					local name, _, texturePath = GetCurrencyInfo(data[i])
+					GameTooltip:AddLine((texturePath and "|T"..texturePath..":0|t " or "")..name..": "..data[i+1])
+				end
 			end
 		elseif data[1] == 3 then
 			for i=2,#data,2 do
-				local _, link, _, _, _, _, _, _, _, texturePath = GetItemInfo(data[i])
-				if link then
-					--GameTooltip:AddLine(link..": "..data[i+1])
-					--GameTooltip:AddTexture(texturePath)
-					GameTooltip:AddLine((texturePath and "|T"..texturePath..":0|t " or "")..link..": "..data[i+1])
+				if data[i] == -1 then
+					local amount = GetCoinTextureString(data[i+1])
+					GameTooltip:AddLine(amount)
+				else
+					local _, link, _, _, _, _, _, _, _, texturePath = GetItemInfo(data[i])
+					if link then
+						GameTooltip:AddLine((texturePath and "|T"..texturePath..":0|t " or "")..link..": "..data[i+1])
+					end
 				end
 			end
 		end
@@ -651,17 +720,17 @@ local function SourcesFrame_SourceData_OnEnter(self)
 		GameTooltip:AddLine(self.sourceType)
 		GameTooltip:AddLine(self.instanceType == 2 and "Raid" or "Instance")
 		
-		GameTooltip:AddLine("Zone: |cffffffff"..(LocInstanceNames[self.instanceID] or InstanceList[self.instanceID]).."|r")
-		GameTooltip:AddLine("Boss: |cffffffff"..(LocBossNames[self.bossID] or BossList[self.bossID]).."|r")
+		GameTooltip:AddLine("Zone: |cffffffff"..(LocInstanceNames[self.instanceID] or InstanceList[self.instanceID] or self.instanceID).."|r")
+		GameTooltip:AddLine("Boss: |cffffffff"..(LocBossNames[self.bossID] or BossList[self.bossID] or self.bossID).."|r")
 		if #self.diffList > 1 then
 			GameTooltip:AddLine("Difficulties:")
 			for i=1,#self.diffList do
-				GameTooltip:AddLine("- |cffffffff"..DiffList[tonumber(self.diffList[i])].."|r")
+				GameTooltip:AddLine("- |cffffffff"..(DiffList[tonumber(self.diffList[i]) or ""] or self.diffList[i]).."|r")
 			end
 		elseif self.diffList[1] == "" then
 			--nothing
 		else
-			GameTooltip:AddLine("Difficulty: |cffffffff"..DiffList[tonumber(self.diffList[1])].."|r")
+			GameTooltip:AddLine("Difficulty: |cffffffff"..(DiffList[tonumber(self.diffList[1]) or ""] or self.diffList[1] or "").."|r")
 		end
 	end
 	GameTooltip:Show()
@@ -772,19 +841,24 @@ local function SourcesFrame_MoreInfo_Text_OnEnter(self)
 			GameTooltip:AddLine(amount)
 		elseif data[1] == 2 then
 			for i=2,#data,2 do
-				local name, _, texturePath = GetCurrencyInfo(data[i])
-				--GameTooltip:AddLine(name..": "..data[i+1])
-				--GameTooltip:AddTexture(texturePath)
-				GameTooltip:AddLine((texturePath and "|T"..texturePath..":0|t " or "")..name..": "..data[i+1])
-				
+				if data[i] == -1 then
+					local amount = GetCoinTextureString(data[i+1])
+					GameTooltip:AddLine(amount)
+				else
+					local name, _, texturePath = GetCurrencyInfo(data[i])
+					GameTooltip:AddLine((texturePath and "|T"..texturePath..":0|t " or "")..name..": "..data[i+1])
+				end
 			end
 		elseif data[1] == 3 then
 			for i=2,#data,2 do
-				local _, link, _, _, _, _, _, _, _, texturePath = GetItemInfo(data[i])
-				if link then
-					--GameTooltip:AddLine(link..": "..data[i+1])
-					--GameTooltip:AddTexture(texturePath)
-					GameTooltip:AddLine((texturePath and "|T"..texturePath..":0|t " or "")..link..": "..data[i+1])
+				if data[i] == -1 then
+					local amount = GetCoinTextureString(data[i+1])
+					GameTooltip:AddLine(amount)
+				else
+					local _, link, _, _, _, _, _, _, _, texturePath = GetItemInfo(data[i])
+					if link then
+						GameTooltip:AddLine((texturePath and "|T"..texturePath..":0|t " or "")..link..": "..data[i+1])
+					end
 				end
 			end
 		end
@@ -800,17 +874,17 @@ local function SourcesFrame_MoreInfo_Text_OnEnter(self)
 		local data = self.data
 		GameTooltip:AddLine(data[1] == 2 and "Raid" or "Instance")
 		
-		GameTooltip:AddLine("Zone: |cffffffff"..(LocInstanceNames[ data[2] ] or InstanceList[ data[2] ]).."|r")
-		GameTooltip:AddLine("Boss: |cffffffff"..(LocBossNames[ data[3] ] or BossList[ data[3] ]).."|r")
+		GameTooltip:AddLine("Zone: |cffffffff"..(LocInstanceNames[ data[2] ] or InstanceList[ data[2] ] or data[2]).."|r")
+		GameTooltip:AddLine("Boss: |cffffffff"..(LocBossNames[ data[3] ] or BossList[ data[3] ] or data[3]).."|r")
 		if #data[4] > 1 then
 			GameTooltip:AddLine("Difficulties:")
 			for i=1,#data[4] do
-				GameTooltip:AddLine("- |cffffffff"..DiffList[tonumber(data[4][i])].."|r")
+				GameTooltip:AddLine("- |cffffffff"..(DiffList[tonumber(data[4][i]) or ""] or data[4][i]).."|r")
 			end
 		elseif data[4][1] == "" then
 			--nothing
 		else
-			GameTooltip:AddLine("Difficulty: |cffffffff"..DiffList[tonumber(data[4][1])].."|r")
+			GameTooltip:AddLine("Difficulty: |cffffffff"..(DiffList[tonumber(data[4][1]) or ""] or data[4][1]).."|r")
 		end
 	end
 	GameTooltip:Show()
@@ -921,6 +995,29 @@ local function SourcesFrame_MoreInfo_OnClick(self)
 				local item = self:GetParent().DATA[3]
 				local s = type(item)=='string' and '"' or ''
 				line.link.link = "["..s..item..s.."] = "..'"'..self.data[i]..'",'
+			end
+			line:Show()
+		end
+	elseif self.type == 1.5 then
+		-- boss drop
+		for i=2,#self.data do
+			local instanceType,instanceID,bossID,diffList = self.data[i].instanceType, self.data[i].instance, self.data[i].encounter, self.data[i].difficulties
+			
+			local line = SourceFrame_MoreInfo_CreateLine(i-1)
+			line.text:SetText(bossID or "")
+			
+			line.textFrame.type = 1
+			line.textFrame.data = {
+				instanceType,
+				instanceID,
+				bossID,
+				diffList,
+			}
+			line.link.link = wowheadPrefix.."wowhead.com/search?q="..bossID
+			if IsDebugVersion then
+				local item = self:GetParent().DATA[3]
+				local s = type(item)=='string' and '"' or ''
+				--line.link.link = "["..s..item..s.."] = "..'"'..self.data[i]..'",'
 			end
 			line:Show()
 		end
@@ -1096,7 +1193,8 @@ local function ScheduledQuestNameUpdate(s,link,frame)
 		local tooltipLine = _G["LegionWardrobeScanningTooltipTextLeft1"]
 		local text = tooltipLine:GetText()
 		if text and text ~= "" then
-			frame:SetText(text)
+			local questID = tonumber(link:match("quest:(%d+)"),nil)
+			frame:SetText((IsQuestDone(questID) and "|cff00ff00" or "")..text)
 			inspectScantip:ClearLines()
 			return true
 		end
@@ -1116,7 +1214,7 @@ local function Model_OnClick(self,button)
 		line.DATA = source
 		
 		local name,link = GetItemInfo(source[2])
-		line.itemName:SetText(link)
+		line.itemName:SetText((IsDebugVersion and source.sourceID or "")..(link or ""))
 		line.itemLink.link = wowheadPrefix.."wowhead.com/item="..source[1]..(source[6] and "&bonus="..source[6] or "")
 		line.sourceName:SetText(SourceTypeNames[ source[4] ] or "")
 		if source[7] then
@@ -1130,7 +1228,7 @@ local function Model_OnClick(self,button)
 		line.moreInfo:Show()
 		line.moreInfo.itemID = source[1]
 		line.sourceDataAndMore:SetText("")
-		
+
 		if source[4] == 3 and #source[5] > 1 then
 			line.moreInfo.data = source[5]
 			line.moreInfo.itemID = source[1]
@@ -1233,6 +1331,25 @@ local function Model_OnClick(self,button)
 			
 			line.moreInfo.data = source[5]
 			line.moreInfo.type = 1
+		elseif source[4] == 1 and #source[5] == 1 and source.sourceID then
+			local sourceData = C_TransmogCollection.GetAppearanceSourceDrops(source.sourceID)
+	
+			sourceData[1] = sourceData[1] or {difficulties={}}
+			local instanceType = sourceData[1].instanceType
+			
+			line.sourceData:SetText((sourceData[1].instance or "")..": "..(sourceData[1].encounter or ""))
+			
+			line.sourceDataFrame.instanceType = instanceType
+			line.sourceDataFrame.instanceID = sourceData[1].instance or ""
+			line.sourceDataFrame.bossID = sourceData[1].encounter or ""
+			line.sourceDataFrame.sourceType = SourceTypeNames[ source[4] ]
+			line.sourceDataFrame.diffList = sourceData[1].difficulties
+			line.sourceDataFrame.type = 1
+			
+			tinsert(sourceData,1,0)
+			line.moreInfo.data = sourceData
+			line.moreInfo.type = 1.5
+			
 		elseif source[4] == 4 and #source[5] > 1 then
 			line.moreInfo.data = source[5]
 			line.moreInfo.type = 4
@@ -1413,7 +1530,6 @@ local function FindVisualAndOpen(visualID,isCollected)
 			end
 		end
 		if canObtained then
-			--GetQuestsCompleted(CharQuestsData)	--Update Quests Data
 			CharQuestsData = C_QuestLog.GetAllCompletedQuestIDs()
 			break
 		end
@@ -1423,7 +1539,7 @@ local function FindVisualAndOpen(visualID,isCollected)
 	Model_OnClick(model,"LeftButton")
 end
 
-function UpdateModel(model,visualID,isCollected)
+function UpdateModel(model,visualID,isCollected,visualDefData)
 	model:Show()
 	model.border:Show()
 	model:Undress()
@@ -1477,12 +1593,32 @@ function UpdateModel(model,visualID,isCollected)
 				local _,_,_,_,_,itemLink = C_TransmogCollection.GetAppearanceSourceInfo(sources[i].sourceID)
 				if itemLink then
 					local itemID = itemLink:match("item:(%d+)")
+					itemID = tonumber(itemID)
+
+					local sourceData = itemID and ItemSource[itemID] or {sources[i].sourceType}
+					local sourceType = sourceData and sourceData[1] or sources[i].sourceType
+
 					model.data[i] = {
 						itemID,
 						itemLink,
 						itemLink,
-						sources[i].sourceType,
-						{sources[i].sourceType},
+						sourceType,
+						sourceData,
+						sourceID = sources[i].sourceID,
+					}
+				end
+			end
+		elseif visualDefData and visualDefData.sourceID then
+			local source = C_TransmogCollection.GetSourceInfo(visualDefData.sourceID)
+			if source and C_Item.DoesItemExistByID(source.itemID) then
+				local _,_,_,_,_,itemLink = C_TransmogCollection.GetAppearanceSourceInfo(visualDefData.sourceID)
+				if itemLink then
+					model.data[1] = {
+						source.itemID,
+						itemLink,
+						itemLink,
+						source.sourceType or 5,
+						{source.sourceType or 5},
 					}
 				end
 			end
@@ -1521,6 +1657,30 @@ local function CheckFilterInstance(sourceData,type,secondFilter)
 				diffFilter = true
 			end
 			if instanceDataID == FilterInstance and diffFilter then
+				return true
+			end
+		end
+	elseif type == 1.5 then
+		if C_TransmogCollection.IsSourceTypeFilterChecked(1) then
+			return false
+		end
+		for i=2,#sourceData do
+			--2#17#192#3
+			local instanceType,instanceDataID,bossDataID,diffDataIDs = sourceData[i]:match("^(%d+)#(%d+)#(%d+)#(.*)")
+			local diffFilter = false
+			if FilterInstanceDifficulty and diffDataIDs and diffDataIDs ~= "" then
+				diffDataIDs = {strsplit(":", diffDataIDs)}
+				for j=1,#diffDataIDs do
+					if FilterInstanceDifficulty == diffDataIDs[j] then
+						diffFilter = true
+						break
+					end
+				end
+			else
+				diffFilter = true
+			end
+			local oldZoneID = ZoneIDToOldID(FilterInstance.mapID)
+			if oldZoneID and instanceDataID == ZoneToDataID[oldZoneID] and diffFilter then
 				return true
 			end
 		end
@@ -1660,6 +1820,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 			VLTW = _G.VLTW
 			
 			VLTW._Fav2 = VLTW._Fav2 or {}
+			VLTW.FavSet = VLTW.FavSet or {}
 								
 			if IsAddOnLoaded("Blizzard_Collections") and CollectionsJournal then
 				self:GetScript("OnEvent")(self,"ADDON_LOADED","Blizzard_Collections")
@@ -1693,15 +1854,20 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				ZoneToDataID = LTS.ZoneToDataID
 				DiffToDataID = LTS.DiffToDataID
 				QuestZoneToDataID = LTS.QuestZoneToDataID
+				QuestZoneToDataIDModern = LTS.QuestZoneToDataIDModern
 				NPCToZone = LTS.NPCToZone
 				NPCReact = LTS.NPCReact
 				InstanceToEJ = LTS.InstanceToEJ
 				BossToEJ = LTS.BossToEJ
 				Recolors = LTS.Recolors
 				HaveRecolors = LTS.HaveRecolors
+				VisualColors = LTS.VisualColors
 		
 				SetsAllData = LTS.SetsAllData
 				Sets = LTS.Sets
+
+				Addon.SetsAllDataSource = LTS.SetsAllDataSource
+				Addon.SetsListSource = LTS.SetsSource
 				
 				AllDataAll = AllData.ALL
 				local factionData = AllData[playerFaction] or AllData["Horde"]
@@ -1715,6 +1881,8 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				LTSData = nil
 				
 				CharQuestsData = C_QuestLog.GetAllCompletedQuestIDs()
+
+				Addon:CreateEJData()
 				
 				dataLoaded = true
 			end
@@ -1723,34 +1891,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				UpdateLocalizatedZones()
 				UpdateLocalizatedEJ()
 			end
-			
-			local function ZoneToMapID(zoneID)
-				for mapID,zones in pairs(QuestZoneToDataID) do
-					for i=1,#zones do
-						if zoneID == zones[i] then
-							return ZoneIDToNewID(mapID)
-						end
-					end
-				end
-			end
-			
-			local function GetZoneName(zoneID,formatString)
-				local zoneName = zoneID and ZonesNames[zoneID]
-				if zoneName then
-					if isNotENClient then
-						local mapID = ZoneToMapID(zoneID)
-						if mapID then
-							zoneName = zoneName .. " |cffaaffaa("..((C_Map.GetMapInfo(mapID or 0) or {}).name or "")..")|r"
-						end
-					end
-					if formatString then
-						zoneName = format(formatString,zoneName)
-					end
-					return zoneName
-				end
-				return ""
-			end
-			
+						
 			hooksecurefunc("WardrobeCollectionFrame_SetAppearanceTooltip", function (contentFrame, sources, primarySourceID)
 				if WardrobeFrame_IsAtTransmogrifier() then
 					return
@@ -1785,7 +1926,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				local itemID = tonumber(itemLink:match("item:(%d+)"))
 				
 				if ItemsCheckBonuses[ itemID ] then
-					local bonus = FindBonuses(link)
+					local bonus = FindBonuses(itemLink)
 					if bonus ~= 0 then
 						itemID = itemID ..":"..bonus
 					end
@@ -1814,7 +1955,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						str = str .." and "..(#sourceData - 2).." more"
 					end
 					
-					GameTooltipTextLeft2:SetText(GameTooltipTextLeft2:GetText()..": "..str)
+					GameTooltipTextLeft2:SetText((GameTooltipTextLeft2:GetText() or "")..": "..str)
 					GameTooltip:Show()
 				elseif sourceType == 8 then
 					local SpellName = GetSpellInfo(sourceData[2])
@@ -1823,7 +1964,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						str = str .." and "..(#sourceData - 2).." more"
 					end
 					
-					GameTooltipTextLeft2:SetText(GameTooltipTextLeft2:GetText()..": "..str)
+					GameTooltipTextLeft2:SetText((GameTooltipTextLeft2:GetText() or "")..": "..str)
 					GameTooltip:Show()
 				elseif sourceType == 7 then
 					local _,A4ivName = GetAchievementInfo(sourceData[2])
@@ -1832,7 +1973,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						str = str .." and "..(#sourceData - 2).." more"
 					end
 					
-					GameTooltipTextLeft2:SetText(GameTooltipTextLeft2:GetText()..": "..str)
+					GameTooltipTextLeft2:SetText((GameTooltipTextLeft2:GetText() or "")..": "..str)
 					GameTooltip:Show()
 				elseif sourceType == 2 then
 					local str = "ID "..sourceData[2]..(QuestToZone[ sourceData[2] ] and " (Zone: "..GetZoneName( QuestToZone[ sourceData[2] ] )..")" or "")
@@ -1857,7 +1998,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						str = str .." and "..(#sourceData - 2).." more"
 					end
 					
-					GameTooltipTextLeft2:SetText(GameTooltipTextLeft2:GetText()..": "..str)
+					GameTooltipTextLeft2:SetText((GameTooltipTextLeft2:GetText() or "")..": "..str)
 					GameTooltip:Show()
 				elseif sourceType == 4 then
 					local str = GetZoneName( sourceData[2] )
@@ -1866,7 +2007,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						str = str .." and "..(#sourceData - 2).." more"
 					end
 					
-					GameTooltipTextLeft2:SetText(GameTooltipTextLeft2:GetText()..": "..str)
+					GameTooltipTextLeft2:SetText((GameTooltipTextLeft2:GetText() or "")..": "..str)
 					GameTooltip:Show()
 				elseif sourceType == 6 then
 					local str = "from "
@@ -1888,7 +2029,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						str = str .." and "..(#sourceData - 2).." more"
 					end
 					
-					GameTooltipTextLeft2:SetText(GameTooltipTextLeft2:GetText()..": "..str)
+					GameTooltipTextLeft2:SetText((GameTooltipTextLeft2:GetText() or "")..": "..str)
 					GameTooltip:Show()
 				
 				end
@@ -1898,15 +2039,24 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 			end)
 			
 			local AddAllSlotsToCurrentFilter = nil
+
+			function Addon:ResetFilier()
+				FilterInstance = nil
+				FilterRecolors = nil
+				AddAllSlotsToCurrentFilter = nil
+				FilterColor = nil
+
+				Addon:ReloadCategory()
+			end
 			
 			hooksecurefunc(WardrobeCollectionFrame.ItemsCollectionFrame,"FilterVisuals", function ()
-				if WardrobeFrame_IsAtTransmogrifier() or not WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory then
-					return
-				end
-				if FilterInstance or FilterRecolors then
+				if FilterInstance or FilterRecolors or FilterColor then
 					mainFrame.resetFilterButton:Show()
 				else
 					mainFrame.resetFilterButton:Hide()
+				end
+				if WardrobeFrame_IsAtTransmogrifier() or not WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory then
+					return
 				end
 				if FilterRecolors then
 					local filteredVisualsList = { }
@@ -1998,13 +2148,63 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 							if sourceData then
 								local sourceType = sourceData[1]
 								
-								if
+								if (
 								   (type(FilterInstance)~='table' and ((sourceType == 1 and CheckFilterInstance(sourceData,1)) or (FilterInstanceZoneDrop and ((sourceType == 2 and CheckFilterInstance(sourceData,2,true)) or (sourceType == 3 and CheckFilterInstance(sourceData,3,true)) or sourceType == 4 and CheckFilterInstance(sourceData,4,true))))) or 
-								   (type(FilterInstance)=='table' and ((sourceType == 2 and CheckFilterInstance(sourceData,2)) or (sourceType == 3 and CheckFilterInstance(sourceData,3)) or (sourceType == 4 and CheckFilterInstance(sourceData,4))))
-								   and not visualsList[i].isHideVisual
+								   (type(FilterInstance)=='table' and ((sourceType == 2 and CheckFilterInstance(sourceData,2)) or (sourceType == 3 and CheckFilterInstance(sourceData,3)) or (sourceType == 4 and CheckFilterInstance(sourceData,4)))) or
+								   (type(FilterInstance)=='table' and FilterInstance.mapID and (sourceType == 1 and CheckFilterInstance(sourceData,1.5)))
+								   ) and not visualsList[i].isHideVisual
 								then
 									tinsert(filteredVisualsList, visualsList[i])
 									break
+								end
+							end
+						end
+					elseif not visualsList[i].isHideVisual then
+						visualData = visualsList[i]
+						local sources = C_TransmogCollection.GetAppearanceSources(visualData.visualID)
+						if sources then
+							local isBreak
+							for k=1,#sources do
+								local itemID = sources[k].itemID
+								if itemID then
+									local sourceData = ItemSource[itemID]
+									if sourceData then
+										local sourceType = sourceData[1]
+										
+										if
+										   (type(FilterInstance)~='table' and ((sourceType == 1 and CheckFilterInstance(sourceData,1)) or (FilterInstanceZoneDrop and ((sourceType == 2 and CheckFilterInstance(sourceData,2,true)) or (sourceType == 3 and CheckFilterInstance(sourceData,3,true)) or sourceType == 4 and CheckFilterInstance(sourceData,4,true))))) or 
+										   (type(FilterInstance)=='table' and ((sourceType == 2 and CheckFilterInstance(sourceData,2)) or (sourceType == 3 and CheckFilterInstance(sourceData,3)) or (sourceType == 4 and CheckFilterInstance(sourceData,4)))) or
+										   (type(FilterInstance)=='table' and FilterInstance.mapID and (sourceType == 1 and CheckFilterInstance(sourceData,1.5)))
+										then
+											tinsert(filteredVisualsList, visualsList[i])
+											break
+										end
+									elseif sources[k].sourceType == 1 and type(FilterInstance) == "table" and FilterInstance.mapID then
+										local drops = C_TransmogCollection.GetAppearanceSourceDrops(sources[k].sourceID)
+										if drops then
+											for l=1,#drops do
+												if drops[l].instance and Addon.InstanceNameToMap[ drops[l].instance ] == FilterInstance.mapID then
+													local toAdd = false
+													if not FilterInstance.diffID then
+														toAdd = true
+													else
+														for m=1,#drops[l].difficulties do
+															if GetDifficultyInfo(FilterInstance.diffID) == drops[l].difficulties[m] then
+																toAdd = true
+																break
+															end
+														end
+													end
+													if toAdd then
+														tinsert(filteredVisualsList, visualsList[i])
+														isBreak = true
+														break
+													end
+												end
+											end
+											if isBreak then break end
+										end
+									end
 								end
 							end
 						end
@@ -2015,6 +2215,9 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 
 			hooksecurefunc(WardrobeCollectionFrame.ItemsCollectionFrame,"SortVisuals", function ()
 				local comparison = function(source1, source2)
+					if ( source1.colorDiff ~= source2.colorDiff ) then
+						return source1.colorDiff > source2.colorDiff;
+					end
 					if ( source1.isCollected ~= source2.isCollected ) then
 						return source1.isCollected;
 					end
@@ -2041,7 +2244,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 			
 				table.sort(WardrobeCollectionFrame.ItemsCollectionFrame.filteredVisualsList, comparison)
 
-			end)	
+			end)
 			
 			
 			hooksecurefunc(WardrobeCollectionFrame.ItemsCollectionFrame,"UpdateItems", function ()
@@ -2072,17 +2275,28 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				end
 			end)	
 			hooksecurefunc(WardrobeCollectionFrame.ItemsCollectionFrame,"SetActiveSlot", function (...)
+				if Addon.IsReset then
+					return
+				end
+				FilterColor = nil
 				if AddAllSlotsToCurrentFilter then
 					AddAllSlotsToCurrentFilter = nil
 					WardrobeCollectionFrame.ItemsCollectionFrame.SetActiveSlot(...)
 				end
-			end)				
-			
+			end)			
 
 			local function FilerZoneFunc(_,zoneID,diffID)
 				LoadData()
-				FilterInstance = ZoneToDataID[zoneID] or QuestZoneToDataID[zoneID]
+				if type(zoneID) == "table" then
+					FilterInstance = t_copy(QuestZoneToDataIDModern[ zoneID[1] ])
+					FilterInstance.mapID = zoneID.mapID
+				else
+					FilterInstance = ZoneToDataID[zoneID] or QuestZoneToDataID[zoneID]
+				end
 				if diffID then
+					if type(zoneID) == "table" then
+						FilterInstance.diffID = diffID
+					end
 					FilterInstanceDifficulty = DiffToDataID[diffID]
 				else
 					FilterInstanceDifficulty = nil
@@ -2099,18 +2313,12 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 					FilterInstance = nil
 				else
 					if WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory > 11 then
-						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
+						Addon:ResetCategory(true)
 					end
 				end
 				CloseDropDownMenus()
 
-				local cat = WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory
-				if cat == 1 then
-					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(2)
-				else
-					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(1)
-				end
-				WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(cat)
+				Addon:ReloadCategory()
 			end
 
 			
@@ -2120,170 +2328,151 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				end
 				if ( WardrobeCollectionFrame.activeFrame.searchType == LE_TRANSMOG_SEARCH_TYPE_BASE_SETS ) then
 					WardrobeFilterDropDown_InitializeBaseSets(self, level)
-					return
+					if VLTW.DisableSetsPage then
+						return
+					end
 				elseif ( WardrobeCollectionFrame.activeFrame.searchType == LE_TRANSMOG_SEARCH_TYPE_ITEMS ) then
 					if level ~= 2 or (level == 2 and UIDROPDOWNMENU_MENU_VALUE ~= 10) then
 						WardrobeFilterDropDown_InitializeItems(self, level)
 					end
 				end
 			
-				local info = UIDropDownMenu_CreateInfo();
-				info.keepShownOnClick = true;
 				if WardrobeFrame_IsAtTransmogrifier() then
 					return
 				end
-			
-				if level == 1 then
-					info.isNotRadio = true;
-					info.isNotRadio = true;
-			
-					info.checked = 	nil;
-					info.isNotRadio = nil;
-					info.func =  nil;
-					info.hasArrow = true;
-					info.notCheckable = true;
-								
-					info.text = "Zone"
-					info.value = 10;
-					UIDropDownMenu_AddButton(info, level)
-					
-					info.text = "Current zone"
-					info.func = function(_, _, _, value)
-						LoadData()
-						if WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory > 11 then
-							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
-						end
-						AddAllSlotsToCurrentFilter = true
-						local mapID = ZoneIDToOldID( C_Map.GetBestMapForUnit("player") or 0 )
-						if ZoneToDataID[mapID] then
-							FilterInstance = ZoneToDataID[mapID]
-							local _, _, difficulty = GetInstanceInfo()
-							if difficulty then
-								FilterInstanceDifficulty = DiffToDataID[difficulty]
-							else
-								FilterInstanceDifficulty = nil
-							end
-						elseif QuestZoneToDataID[mapID] then
-							FilterInstance = QuestZoneToDataID[mapID]
-						else
-							print("<Legion Wardrobe>: Filter not added: No data for current zone")
-							FilterInstance = nil
-						end
-						CloseDropDownMenus()
+				if WardrobeCollectionFrame.activeFrame.searchType == LE_TRANSMOG_SEARCH_TYPE_ITEMS then			
+					if level == 1 then
+						local info = UIDropDownMenu_CreateInfo();
+						info.keepShownOnClick = true;
+	
+						info.isNotRadio = true;
+						info.isNotRadio = true;
+				
+						info.checked = 	nil;
+						info.isNotRadio = nil;
+						info.func =  nil;
+						info.hasArrow = true;
+						info.notCheckable = true;
+									
+						info.text = "Zone"
+						info.value = 10;
+						UIDropDownMenu_AddButton(info, level)
 						
-						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(WardrobeCollectionFrame.ItemsCollectionFrame.transmogLocation)
-					end
-					info.hasArrow = false
-					UIDropDownMenu_AddButton(info, level)	
-					
-					info.hasArrow = false
-					info.text = "Reset filter"
-					info.func = function()
-						FilterInstance = nil
-						FilterRecolors = nil
-						AddAllSlotsToCurrentFilter = nil
-						CloseDropDownMenus()
-						if WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory == 1 then
-							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("SHOULDERSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
-							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
-						else
-							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
-						end
-					end
-					UIDropDownMenu_AddButton(info, level)
-				elseif UIDROPDOWNMENU_MENU_VALUE ~= 1 and UIDROPDOWNMENU_MENU_VALUE ~= 2 then
-					local info = UIDropDownMenu_CreateInfo()
-					if level == 2 then
-						for i=1,#ZonesFilterList do
-							local info = UIDropDownMenu_CreateInfo()
-							info.hasArrow = true
-							info.notCheckable = true
-							info.text = ZonesFilterList[i][1]
-							info.value = {
-								["Level1_Key"] = i
-							}
-							UIDropDownMenu_AddButton(info, level)
-						end
-					end
-					
-					if (level == 3) then
-						local Level1_Key = UIDROPDOWNMENU_MENU_VALUE["Level1_Key"]
-						local w1 = ZonesFilterList[Level1_Key]
-						for i=2,#w1 do
-							local info = UIDropDownMenu_CreateInfo()
-							info.hasArrow = false
-							info.notCheckable = true
-							info.text = w1[i][1]
-							info.isTitle = true
-							UIDropDownMenu_AddButton(info, level)
-							local w = w1[i]
-							for j=2,#w do
-								local info = UIDropDownMenu_CreateInfo()
-								if type(w[j][2]) == 'table' then
-									info.hasArrow = true
-									info.text = w[j][1]
+						info.text = "Current zone"
+						info.func = function(_, _, _, value)
+							LoadData()
+
+							AddAllSlotsToCurrentFilter = true
+							local uiMapID = C_Map.GetBestMapForUnit("player") or 0
+							local mapID = ZoneIDToOldID( uiMapID )
+							if ZoneToDataID[mapID] then
+								FilterInstance = ZoneToDataID[mapID]
+								local _, _, difficulty = GetInstanceInfo()
+								if difficulty then
+									FilterInstanceDifficulty = DiffToDataID[difficulty]
 								else
-									info.hasArrow = false
-									info.text = w[j][2]
-									if isNotENClient and C_Map.GetMapInfo(w[j][1] or 0) then
-										info.text = info.text .. " |cffaaffaa("..((C_Map.GetMapInfo(w[j][1] or 0) or {}).name or "")..")"
-									end		
+									FilterInstanceDifficulty = nil
+								end
+							elseif QuestZoneToDataID[mapID] then
+								FilterInstance = QuestZoneToDataID[mapID]
+							elseif QuestZoneToDataIDModern[uiMapID] then
+								FilterInstance = QuestZoneToDataIDModern[uiMapID]
+							else
+								print("<Legion Wardrobe>: Filter not added: No data for current zone")
+								FilterInstance = nil
+							end
+							CloseDropDownMenus()
+							
+							if WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory > 11 then
+								Addon:ResetCategory()
+							else
+								Addon:ReloadCategory()
+							end
+						end
+						info.hasArrow = false
+						UIDropDownMenu_AddButton(info, level)	
+						
+						info.hasArrow = false
+						info.text = "Reset filter"
+						info.func = function()
+							FilterInstance = nil
+							FilterRecolors = nil
+							AddAllSlotsToCurrentFilter = nil
+							FilterColor = nil
+							CloseDropDownMenus()
+							if WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory == 1 then
+								WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("SHOULDERSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
+								WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
+							else
+								WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot(TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.None))
+							end
+						end
+						UIDropDownMenu_AddButton(info, level)
+					elseif UIDROPDOWNMENU_MENU_VALUE ~= 1 and UIDROPDOWNMENU_MENU_VALUE ~= 2 then
+						local info = UIDropDownMenu_CreateInfo()
+	
+						if level > 1 then
+							local w = level > 2 and UIDROPDOWNMENU_MENU_VALUE["WData"] or ZonesFilterList
+							for j=1,#w do
+								local info = UIDropDownMenu_CreateInfo()
+								info.hasArrow = w[j][3] and true or false
+								info.text = w[j].isDiff and RaidDiffToDiffName[ w[j][2] ] or w[j][2]
+								if isNotENClient and C_Map.GetMapInfo(w[j][1] or 0) then
+									info.text = info.text .. " |cffaaffaa("..((C_Map.GetMapInfo(w[j][1] or 0) or {}).name or "")..")"
+								end
+								if w[j][1]~=0 then
 									info.func = FilerZoneFunc
-									info.arg1 =  w[j][1]
+									info.arg1 = {w[j][1],mapID=w[j][1]}
+									if w[j].isDiff then
+										info.arg2 = w[j][2]
+									end
+								end
+								if w[j][1]==0 and not w[j][3] then
+									info.isTitle = true
+								end
+								if w[j][1]<0 and not w[j][3] then
+									info.colorCode = "|cffaaaaaa"
 								end
 								info.notCheckable = true
-								info.value = {
-									["Level1_Key"] = Level1_Key,
-									["Level2_Key"] = i,
-									["Level3_Key"] = j,
-								}
+								if w[j][3] then
+									info.value = {
+										["WData"] = w[j][3],
+									}
+								end
 								UIDropDownMenu_AddButton(info, level)
 							end
 						end
 					end
-					   
-					  
-					if (level == 4) then
-						local Level1_Key = UIDROPDOWNMENU_MENU_VALUE["Level1_Key"]
-						local Level2_Key = UIDROPDOWNMENU_MENU_VALUE["Level2_Key"]
-						local Level3_Key = UIDROPDOWNMENU_MENU_VALUE["Level3_Key"]
-						local w = ZonesFilterList[Level1_Key][Level2_Key][Level3_Key]
-						for i=2,#w do
-							local info = UIDropDownMenu_CreateInfo()
-							info.hasArrow = #w[i] > 2
-							info.text = w[i][2]
-							if isNotENClient and C_Map.GetMapInfo(w[i][1] or 0) then
-								info.text = info.text .. " |cffaaffaa("..((C_Map.GetMapInfo(w[i][1] or 0) or {}).name or "")..")"
-							end	      
-							info.func = FilerZoneFunc
-							info.arg1 =  w[i][1]
-							info.notCheckable = true
-							info.value = {
-								["Level1_Key"] = Level1_Key,
-								["Level2_Key"] = Level2_Key,
-								["Level3_Key"] = Level3_Key,
-								["Level4_Key"] = i,
-							}
-							UIDropDownMenu_AddButton(info, level)
-						end
+				elseif WardrobeCollectionFrame.activeFrame.searchType == LE_TRANSMOG_SEARCH_TYPE_BASE_SETS then
+					local function SetFilter(_, arg1, _, value)
+						Addon.SetsFilter[ arg1 ] = value
+						WardrobeCollectionFrame.SetsCollectionFrame:Refresh()
 					end
-					
-					if (level == 5) then
-						local Level1_Key = UIDROPDOWNMENU_MENU_VALUE["Level1_Key"]
-						local Level2_Key = UIDROPDOWNMENU_MENU_VALUE["Level2_Key"]
-						local Level3_Key = UIDROPDOWNMENU_MENU_VALUE["Level3_Key"]
-						local Level4_Key = UIDROPDOWNMENU_MENU_VALUE["Level4_Key"]
-						local w = ZonesFilterList[Level1_Key][Level2_Key][Level3_Key][Level4_Key]
-						for i=3,#w do
-							local info = UIDropDownMenu_CreateInfo()
-							info.hasArrow = false
-							info.text = RaidDiffToDiffName[ w[i] ]    
-							info.func = FilerZoneFunc
-							info.arg1 =  w[1]
-							info.arg2 =  w[i]
-							info.notCheckable = true
-							UIDropDownMenu_AddButton(info, level)
-						end
+
+					local list = {
+						"Classic World Set",1,
+						"Dungeon Set",2,
+						"Event Set",3,
+						"Garrison Set",4,
+						"PvP Set",5,
+						"Raid Set",6,
+						"Questing Set",7,
+						"Allied Races Set",8,
+						"Other",0,
+					}
+
+					UIDropDownMenu_AddSeparator();
+
+					local info = UIDropDownMenu_CreateInfo();
+
+					for i=1,#list,2 do
+						info.hasArrow = false
+						info.isNotRadio = true
+						info.text = list[i]
+						info.func = SetFilter
+						info.checked = not Addon.SetsFilter[ list[i+1] ]
+						info.arg1 = list[i+1]
+						UIDropDownMenu_AddButton(info, level)
 					end
 				end
 			end
@@ -2323,7 +2512,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 							end
 							local visualInfo = self.visualInfo
 							LoadData()
-							UpdateModel(models[1], visualInfo.visualID, visualInfo.isCollected)
+							UpdateModel(models[1], visualInfo.visualID, visualInfo.isCollected, visualInfo)
 							Model_OnClick(models[1],"LeftButton")
 						end)
 					end
@@ -2351,7 +2540,626 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 		
 			eventsFrame:EnableKeyboard(true)
 			
+			local function rgb2lab(r,g,b)
+				r = r / 255;
+				g = g / 255;
+				b = b / 255;
+				local x, y, z;
+				
+				r = (r > 0.04045) and math.pow((r + 0.055) / 1.055, 2.4) or r / 12.92;
+				g = (g > 0.04045) and math.pow((g + 0.055) / 1.055, 2.4) or g / 12.92;
+				b = (b > 0.04045) and math.pow((b + 0.055) / 1.055, 2.4) or b / 12.92;
+				
+				x = (r * 0.4124 + g * 0.3576 + b * 0.1805) / 0.95047;
+				y = (r * 0.2126 + g * 0.7152 + b * 0.0722) / 1.00000;
+				z = (r * 0.0193 + g * 0.1192 + b * 0.9505) / 1.08883;
+				
+				x = (x > 0.008856) and math.pow(x, 1/3) or (7.787 * x) + 16/116;
+				y = (y > 0.008856) and math.pow(y, 1/3) or (7.787 * y) + 16/116;
+				z = (z > 0.008856) and math.pow(z, 1/3) or (7.787 * z) + 16/116;
+				
+				return (116 * y) - 16, 500 * (x - y), 200 * (y - z)
+			end
+
+			local function labDiff(Ar,Ag,Ab,Br,Bg,Bb)
+				local deltaL = Ar - Br;
+				local deltaA = Ag - Bg;
+				local deltaB = Ab - Bb;
+				local c1 = math.sqrt(Ag * Ag + Ab * Ab);
+				local c2 = math.sqrt(Bg * Bg + Bb * Bb);
+				local deltaC = c1 - c2;
+				local deltaH = deltaA * deltaA + deltaB * deltaB - deltaC * deltaC;
+				deltaH = deltaH < 0 and 0 or math.sqrt(deltaH);
+				local sc = 1.0 + 0.045 * c1;
+				local sh = 1.0 + 0.015 * c1;
+				local deltaLKlsl = deltaL / (1.0);
+				local deltaCkcsc = deltaC / (sc);
+				local deltaHkhsh = deltaH / (sh);
+				local i = deltaLKlsl * deltaLKlsl + deltaCkcsc * deltaCkcsc + deltaHkhsh * deltaHkhsh;
+				return i < 0 and 0 or math.sqrt(i);
+			end
 			
+			local colorPick
+			do
+				local prevR, prevG, prevB, prevCat
+				function colorPick()
+					ColorPickerFrame.hasOpacity = false
+					local function changedCallback(restore)
+						local newR, newG, newB
+						if restore then
+							newR, newG, newB = unpack(restore)
+						else
+							newR, newG, newB = ColorPickerFrame:GetColorRGB()
+						end
+
+						if prevR == newR and prevG == newG and prevB == newB and prevCat == WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory then
+							return
+						end
+						prevR, prevG, prevB, prevCat = newR, newG, newB, WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory
+
+						FilterColor = true
+	
+						local visualsList
+						if( WardrobeCollectionFrame.ItemsCollectionFrame.transmogLocation:IsMainHand() ) then
+							visualsList = C_TransmogCollection.GetCategoryAppearances(WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory, 2);
+						elseif (WardrobeCollectionFrame.ItemsCollectionFrame.transmogLocation:IsOffHand() ) then
+							visualsList = C_TransmogCollection.GetCategoryAppearances(WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory, 1);
+						else
+							visualsList = C_TransmogCollection.GetCategoryAppearances(WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory);
+						end
+	
+						local tone = max(newR, newG, newB)
+						ColorPickerWheel:SetVertexColor(tone,tone,tone,1)
+	
+						newR, newG, newB = newR * 255, newG * 255, newB * 255
+	
+						local labA, labB, labC = rgb2lab(newR, newG, newB)
+	
+						for i=#visualsList,1,-1 do
+							local colors = VisualColors[ visualsList[i].visualID ]
+							local colorDiff
+							local isValid
+							if colors then
+								for c=1,#colors,4 do
+									local cR = colors:byte(c+0)
+									local cG = colors:byte(c+1)
+									local cB = colors:byte(c+2)
+									local cP = colors:byte(c+3)
+									if cR and cG and cB and cP then
+										local diff = labDiff(labA, labB, labC, rgb2lab(cR, cG, cB))
+		
+										if diff <= 10 then
+											isValid = true
+											if diff == 0 then diff = 0.00001 end
+											colorDiff = max(colorDiff or 0, (1 / diff) * cP)
+										end
+									end
+								end
+							end
+							if not isValid then
+								tremove(visualsList, i)
+							else
+								visualsList[i].colorDiff = colorDiff
+							end
+						end
+	
+						WardrobeCollectionFrame.ItemsCollectionFrame.visualsList = visualsList
+	
+						WardrobeCollectionFrame.ItemsCollectionFrame:FilterVisuals()
+						WardrobeCollectionFrame.ItemsCollectionFrame:SortVisuals()
+						WardrobeCollectionFrame.ItemsCollectionFrame.PagingFrame:SetMaxPages(ceil(#WardrobeCollectionFrame.ItemsCollectionFrame.filteredVisualsList / WardrobeCollectionFrame.ItemsCollectionFrame.PAGE_SIZE))
+						WardrobeCollectionFrame.ItemsCollectionFrame:ResetPage()
+					end
+					LoadData()
+
+					Addon:ResetFilier()
+	
+					ColorPickerFrame.func, ColorPickerFrame.cancelFunc = changedCallback, function() Addon:ResetFilier() end
+					ColorPickerFrame:SetColorRGB(.8,.8,.8)
+					ColorPickerFrame:Show()
+				end
+			end
+
+			if not VLTW.DisableSetsPage then
+
+				function Addon:CheckSetFilter(set,filterCollected,filterUncollected)
+					local topSourcesCollected, topSourcesTotal = 0, 0
+					for j=4,#set do
+						topSourcesTotal = topSourcesTotal + 1
+						local appInfo = C_TransmogCollection.GetAppearanceInfoBySource(set[j])
+						if appInfo and appInfo.appearanceIsCollected then
+							topSourcesCollected = topSourcesCollected + 1
+						end
+					end
+					if topSourcesTotal > 0 and (filterCollected and topSourcesCollected == topSourcesTotal) or (filterUncollected and topSourcesCollected < topSourcesTotal) then
+						return true
+					end
+				end
+
+				local IN_PROGRESS_FONT_COLOR = CreateColor(0.251, 0.753, 0.251);
+				local SET_PROGRESS_BAR_MAX_WIDTH = 204;
+				local BASE_SET_BUTTON_HEIGHT = 46;
+				function Addon:SetsBuildData(isAtTransmog)
+					Addon.SetsData = {}
+
+					local search = WardrobeCollectionFrame.searchBox:GetText()
+					if not search or search:trim() == "" then
+						search = nil
+					else
+						search = search:lower()
+					end
+
+					local filterCollected = C_TransmogSets.GetBaseSetsFilter(LE_TRANSMOG_SET_FILTER_COLLECTED)
+					local filterUncollected = C_TransmogSets.GetBaseSetsFilter(LE_TRANSMOG_SET_FILTER_UNCOLLECTED)
+
+					if isAtTransmog then
+						filterCollected = true
+						filterUncollected = false
+					end
+					
+					local currData = Addon.SetsAllDataSource[select(2,UnitClass'player')]
+					for i=1,#currData do					
+						local set = Addon.SetsListSource[ currData[i] ]
+						if not search or set[1]:lower():find(search) or (set[2] and set[2]:lower():find(search)) then
+							local filter = floor(set[3]/100)
+							if not Addon.SetsFilter[filter] and ((filterCollected and filterUncollected) or Addon:CheckSetFilter(set,filterCollected,filterUncollected)) then
+
+								local new = {
+									name = set[1],
+									setID = -currData[i],
+									label = set[2],
+									addonSetData = set,
+									uiOrder = set[3],
+									favoriteSetID = VLTW.FavSet[ -currData[i] ],
+								}
+								Addon.SetsData[#Addon.SetsData+1] = new
+							end
+						end
+					end
+	
+					sort(Addon.SetsData,function(a,b)
+						if a.favoriteSetID ~= b.favoriteSetID then
+							return a.favoriteSetID
+						elseif a.uiOrder == b.uiOrder then
+							return a.setID < b.setID
+						else
+							return a.uiOrder < b.uiOrder
+						end
+					end)
+				end
+				function Addon:SetsGetSetInfo(setID)
+					local set = Addon.SetsListSource[ -setID ]
+					if not set then
+						return
+					end
+					return {
+						name = set[1],
+						label = set[2],
+						setID = setID,
+						addonSetData = set,
+					}				
+				end
+	
+				WardrobeCollectionFrame.SetsCollectionFrame.ScrollFrame.Update = function (self)
+					local offset = HybridScrollFrame_GetOffset(self);
+					local buttons = self.buttons;
+					local baseSets = WardrobeSetsDataProviderMixin:GetBaseSets();
+					
+					-- show the base set as selected
+					local selectedSetID = self:GetParent():GetSelectedSetID();
+					local selectedBaseSetID = selectedSetID and C_TransmogSets.GetBaseSetID(selectedSetID);
+
+					local numBaseFavs, numCustomFavs = 0, 0
+					for i = 1, #baseSets do if baseSets[i].favoriteSetID then numBaseFavs = numBaseFavs + 1 end end
+					for i = 1, #Addon.SetsData do if Addon.SetsData[i].favoriteSetID then numCustomFavs = numCustomFavs + 1 end end
+					
+					for i = 1, #buttons do
+						local button = buttons[i];
+						local setIndex = i + offset;
+						if ( setIndex <= (#baseSets+#Addon.SetsData) ) then
+							--local baseSet = baseSets[setIndex] or Addon.SetsData[setIndex-#baseSets];
+							local baseSet
+							if setIndex <= numBaseFavs then
+								baseSet = baseSets[setIndex]
+							elseif setIndex <= numCustomFavs + numBaseFavs then
+								baseSet = Addon.SetsData[setIndex-numBaseFavs]
+							elseif setIndex <= #baseSets + numCustomFavs then
+								baseSet = baseSets[setIndex-numCustomFavs]
+							else
+								baseSet = Addon.SetsData[setIndex-#baseSets]
+							end
+
+							button:Show();
+							local topSourcesCollected, topSourcesTotal
+							if baseSet.setID > 0 then
+								topSourcesCollected, topSourcesTotal = WardrobeSetsDataProviderMixin:GetSetSourceTopCounts(baseSet.setID);
+							else
+								topSourcesCollected, topSourcesTotal = 0, 0
+								for j=4,#baseSet.addonSetData do
+									topSourcesTotal = topSourcesTotal + 1
+									local appInfo = C_TransmogCollection.GetAppearanceInfoBySource(baseSet.addonSetData[j])
+									if appInfo and appInfo.appearanceIsCollected or C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance(baseSet.addonSetData[j]) then
+										topSourcesCollected = topSourcesCollected + 1
+									end
+								end
+							end
+							button.Name:SetText((topSourcesCollected ~= topSourcesTotal and "["..topSourcesCollected.."/"..topSourcesTotal.."] " or "")..baseSet.name);
+							local setCollected = baseSet.setID > 0 and C_TransmogSets.IsBaseSetCollected(baseSet.setID);
+							if baseSet.setID < 0 then
+								setCollected = (topSourcesCollected == topSourcesTotal) and (topSourcesTotal > 0)
+							end
+							local color = IN_PROGRESS_FONT_COLOR;
+							if ( setCollected ) then
+								color = NORMAL_FONT_COLOR;
+							elseif ( topSourcesCollected == 0 ) then
+								color = GRAY_FONT_COLOR;
+							end
+							button.Name:SetTextColor(color.r, color.g, color.b);
+							button.Label:SetText(baseSet.label);
+							button.Icon:SetTexture(baseSet.setID > 0 and WardrobeSetsDataProviderMixin:GetIconForSet(baseSet.setID) or 236401);
+							button.Icon:SetDesaturation((topSourcesCollected == 0) and 1 or 0);
+							button.SelectedTexture:SetShown(baseSet.setID == selectedBaseSetID);
+							button.Favorite:SetShown(baseSet.favoriteSetID);
+							button.New:SetShown(baseSet.setID > 0 and WardrobeSetsDataProviderMixin:IsBaseSetNew(baseSet.setID));
+							button.setID = baseSet.setID;
+					
+							if ( topSourcesCollected == 0 or setCollected ) then
+								button.ProgressBar:Hide();
+							else
+								button.ProgressBar:Show();
+								button.ProgressBar:SetWidth(SET_PROGRESS_BAR_MAX_WIDTH * topSourcesCollected / topSourcesTotal);
+							end
+							button.IconCover:SetShown(not setCollected);
+						else
+							button:Hide();
+						end
+					end
+					
+					local extraHeight = (self.largeButtonHeight and self.largeButtonHeight - BASE_SET_BUTTON_HEIGHT) or 0;
+					local totalHeight = (#baseSets + #Addon.SetsData) * BASE_SET_BUTTON_HEIGHT + extraHeight;
+					HybridScrollFrame_Update(self, totalHeight, self:GetHeight());
+				end
+				WardrobeCollectionFrame.SetsCollectionFrame.ScrollFrame.update = WardrobeCollectionFrame.SetsCollectionFrame.ScrollFrame.Update
+				WardrobeCollectionFrame.SetsCollectionFrame.Refresh = function (self)
+					LoadData()
+					Addon:SetsBuildData()
+					self.ScrollFrame:Update();
+					self:DisplaySet(self:GetSelectedSetID());
+				end
+	
+				WardrobeCollectionFrame.SetsCollectionFrame.SelectSetFromButton = function (self,setID)
+					CloseDropDownMenus();
+					if setID > 0 then
+						self:SelectSet(self:GetDefaultSetIDForBaseSet(setID));
+					else
+						self.selectedSetID = setID;
+						self:Refresh()
+					end
+				end
+
+
+				local WardrobeSetsCollectionScrollFrame_FavoriteDropDownInit_old = WardrobeCollectionFrame.SetsCollectionFrame.ScrollFrame.FavoriteDropDown.initialize
+				UIDropDownMenu_Initialize(WardrobeCollectionFrame.SetsCollectionFrame.ScrollFrame.FavoriteDropDown, function(self, level)
+					if not self.baseSetID or (self.baseSetID > 0) then
+						return WardrobeSetsCollectionScrollFrame_FavoriteDropDownInit_old(self)
+					else
+						local info = UIDropDownMenu_CreateInfo();
+						info.notCheckable = true;
+						info.disabled = nil;
+						if VLTW.FavSet[self.baseSetID] then
+							info.text = BATTLE_PET_UNFAVORITE;
+							info.func = function()
+								VLTW.FavSet[self.baseSetID] = nil
+								WardrobeCollectionFrame.SetsCollectionFrame:Refresh()
+							end
+						else
+							info.text = BATTLE_PET_FAVORITE;
+							info.func = function()
+								VLTW.FavSet[self.baseSetID] = true
+								WardrobeCollectionFrame.SetsCollectionFrame:Refresh()
+							end
+						end
+
+						UIDropDownMenu_AddButton(info, level);
+						info.disabled = nil;
+
+					
+						info.text = CANCEL;
+						info.func = nil;
+						UIDropDownMenu_AddButton(info, level);
+					end
+				end, "MENU")
+	
+				function Addon:GetSortedSetSources(setData)
+					local returnTable = { };
+					for i=4,#setData do
+						local sourceID = setData[i]
+						local sourceInfo = C_TransmogCollection.GetSourceInfo(sourceID);
+						local appInfo = C_TransmogCollection.GetAppearanceInfoBySource(sourceID)
+						if ( sourceInfo ) then
+							local sortOrder = EJ_GetInvTypeSortOrder(sourceInfo.invType);
+							tinsert(returnTable, { sourceID = sourceID, collected = appInfo and appInfo.appearanceIsCollected or sourceInfo.isCollected, sortOrder = sortOrder, itemID = sourceInfo.itemID, invType = sourceInfo.invType });
+						end
+					end
+				
+					local comparison = function(entry1, entry2)
+						if ( entry1.sortOrder == entry2.sortOrder ) then
+							return entry1.itemID < entry2.itemID;
+						else
+							return entry1.sortOrder < entry2.sortOrder;
+						end
+					end
+					table.sort(returnTable, comparison);
+					return returnTable;
+				end
+				function Addon:GetSetSourceData(setID)
+					local setData = Addon.SetsListSource[ -setID ]
+					local returnTable = { };
+					if setData then
+						for i=4,#setData do
+							local sourceID = setData[i]
+							returnTable[sourceID] = true
+						end
+					end
+
+					return returnTable
+				end
+
+	
+				WardrobeCollectionFrame.SetsCollectionFrame.DisplaySet = function (self,setID)
+					if not setID or (setID > 0) then
+						WardrobeSetsCollectionMixin.DisplaySet(self,setID)
+					else
+						local setInfo = Addon:SetsGetSetInfo(setID);
+						if ( not setInfo ) then
+							self.DetailsFrame:Hide();
+							self.Model:Hide();
+							return;
+						else
+							self.DetailsFrame:Show();
+							self.Model:Show();
+						end
+					
+						self.DetailsFrame.Name:SetText(setInfo.name);
+						if ( self.DetailsFrame.Name:IsTruncated() ) then
+							self.DetailsFrame.Name:Hide();
+							self.DetailsFrame.LongName:SetText(setInfo.name);
+							self.DetailsFrame.LongName:Show();
+						else
+							self.DetailsFrame.Name:Show();
+							self.DetailsFrame.LongName:Hide();
+						end
+						self.DetailsFrame.Label:SetText(setInfo.label);
+						self.DetailsFrame.LimitedSet:SetShown(setInfo.limitedTimeSet);
+					
+						self.DetailsFrame.itemFramesPool:ReleaseAll();
+						self.Model:Undress();
+						local BUTTON_SPACE = 37;	-- button width + spacing between 2 buttons
+						local sortedSources = Addon:GetSortedSetSources(setInfo.addonSetData);
+						local xOffset = -floor((#sortedSources - 1) * BUTTON_SPACE / 2);
+						for i = 1, #sortedSources do
+							local itemFrame = self.DetailsFrame.itemFramesPool:Acquire();
+							itemFrame.sourceID = sortedSources[i].sourceID;
+							itemFrame.itemID = sortedSources[i].itemID;
+							itemFrame.collected = sortedSources[i].collected;
+							itemFrame.invType = sortedSources[i].invType;
+							local texture = C_TransmogCollection.GetSourceIcon(sortedSources[i].sourceID);
+							itemFrame.Icon:SetTexture(texture);
+							if ( sortedSources[i].collected ) then
+								itemFrame.Icon:SetDesaturated(false);
+								itemFrame.Icon:SetAlpha(1);
+								itemFrame.IconBorder:SetDesaturation(0);
+								itemFrame.IconBorder:SetAlpha(1);
+					
+								local transmogSlot = C_Transmog.GetSlotForInventoryType(itemFrame.invType);
+								if ( false ) then
+									itemFrame.New:Show();
+									itemFrame.New.Anim:Play();
+								else
+									itemFrame.New:Hide();
+									itemFrame.New.Anim:Stop();
+								end
+							else
+								itemFrame.Icon:SetDesaturated(true);
+								itemFrame.Icon:SetAlpha(0.3);
+								itemFrame.IconBorder:SetDesaturation(1);
+								itemFrame.IconBorder:SetAlpha(0.3);
+								itemFrame.New:Hide();
+							end
+							self:SetItemFrameQuality(itemFrame);
+							itemFrame:SetPoint("TOP", self.DetailsFrame, "TOP", xOffset + (i - 1) * BUTTON_SPACE, -94);
+							itemFrame:Show();
+							self.Model:TryOn(sortedSources[i].sourceID);
+						end
+					
+						-- variant sets
+						--local baseSetID = C_TransmogSets.GetBaseSetID(setID);
+						--local variantSets = SetsDataProvider:GetVariantSets(baseSetID);
+						--if ( #variantSets == 0 )  then
+						if ( true )  then
+							self.DetailsFrame.VariantSetsButton:Hide();
+						else
+							self.DetailsFrame.VariantSetsButton:Show();
+							self.DetailsFrame.VariantSetsButton:SetText(setInfo.description);
+						end
+					end
+	
+					for button,_ in pairs(self.DetailsFrame.itemFramesPool.activeObjects) do
+						if not button.isHooked then
+							button.isHooked = true
+							button:HookScript("OnMouseDown",function(self)
+								if IsModifiedClick("CHATLINK") or IsModifiedClick("DRESSUP") then
+									return
+								end
+								local sourceInfo = C_TransmogCollection.GetSourceInfo(self.sourceID)
+								if sourceInfo then
+									local appInfo = C_TransmogCollection.GetAppearanceInfoBySource(self.sourceID)
+									UpdateModel(models[1], sourceInfo.visualID, appInfo and appInfo.appearanceIsCollected or sourceInfo.isCollected, sourceInfo)
+									Model_OnClick(models[1],"LeftButton")
+								end
+							end)
+						end
+					end
+				end
+	
+				WardrobeCollectionFrame.SetsCollectionFrame.RefreshAppearanceTooltip = function (self)
+					if ( not self.tooltipTransmogSlot ) then
+						return;
+					end
+				
+					local setID = self:GetSelectedSetID()
+					if not setID or (setID > 0) then
+						local sources = C_TransmogSets.GetSourcesForSlot(self:GetSelectedSetID(), self.tooltipTransmogSlot);
+						if ( #sources == 0 ) then
+							-- can happen if a slot only has HiddenUntilCollected sources
+							local sourceInfo = C_TransmogCollection.GetSourceInfo(self.tooltipPrimarySourceID);
+							tinsert(sources, sourceInfo);
+						end
+						WardrobeCollectionFrame_SortSources(sources, sources[1].visualID, self.tooltipPrimarySourceID);
+						WardrobeCollectionFrame_SetAppearanceTooltip(self, sources, self.tooltipPrimarySourceID);
+					else
+						local sourceInfo = C_TransmogCollection.GetSourceInfo(self.tooltipPrimarySourceID);
+						local sources = {sourceInfo}
+						WardrobeCollectionFrame_SortSources(sources, sources[1].visualID, self.tooltipPrimarySourceID);
+						WardrobeCollectionFrame_SetAppearanceTooltip(self, sources, self.tooltipPrimarySourceID);
+					end
+				end
+
+				hooksecurefunc(WardrobeCollectionFrame.SetsCollectionFrame,"OnSearchUpdate", function (self)
+					if ( self.init ) then
+						WardrobeSetsDataProviderMixin:ClearBaseSets();
+						WardrobeSetsDataProviderMixin:ClearVariantSets();
+						WardrobeSetsDataProviderMixin:ClearUsableSets();
+						self:Refresh();
+					end
+				end)
+
+
+				function WardrobeCollectionFrame.SetsTransmogFrame.PagingFrame:SetMaxPages(maxPages,isFromHook)
+					maxPages = math.max(maxPages, 1);
+					if ( self.maxPages == maxPages ) then
+						return;
+					end
+					self.maxPages = maxPages;
+					if ( self.maxPages < self.currentPage ) and isFromHook then
+						self.currentPage = self.maxPages;
+					end
+					self:Update();
+				end
+
+				local function SetsTransmogFrame_Model_RefreshTooltip(self)
+					local color = ITEM_QUALITY_COLORS[4]
+					GameTooltip:SetText(self.setData.name, color.r, color.g, color.b)
+					if self.setData.label then
+						GameTooltip:AddLine(self.setData.label)
+						GameTooltip:Show()
+					end
+				end
+
+				hooksecurefunc(WardrobeCollectionFrame.SetsTransmogFrame,"UpdateSets", function (self)
+					LoadData()
+					Addon:SetsBuildData(true)
+					local usableSets = WardrobeSetsDataProviderMixin:GetUsableSets()
+
+					self.PagingFrame:SetMaxPages(ceil((#usableSets+#Addon.SetsData) / self.PAGE_SIZE), true);
+					local pendingTransmogModelFrame = nil;
+					local indexOffset = (self.PagingFrame:GetCurrentPage() - 1) * self.PAGE_SIZE;
+					for i = 1, #self.Models do
+						local model = self.Models[i];
+						if model._RefreshTooltip then
+							model.RefreshTooltip = model._RefreshTooltip
+							model._RefreshTooltip = nil
+						end
+						model.setData = nil;
+					end
+					for i = 1, self.PAGE_SIZE do
+						local model = self.Models[i];
+						local index = i + indexOffset;
+						if index > #usableSets then
+							local set = Addon.SetsData[index-#usableSets];
+							if ( set ) then
+								model:Show();
+								if ( model.setID ~= set.setID ) then
+									model:Undress();
+									local sourceData = Addon:GetSetSourceData(set.setID);
+									for sourceID  in pairs(sourceData) do
+										model:TryOn(sourceID);
+									end
+								end
+								local transmogStateAtlas;
+								if ( set.setID == self.appliedSetID and set.setID == self.selectedSetID ) then
+									transmogStateAtlas = "transmog-set-border-current-transmogged";
+								elseif ( set.setID == self.selectedSetID ) then
+									transmogStateAtlas = "transmog-set-border-selected";
+									pendingTransmogModelFrame = model;
+								end
+								if ( transmogStateAtlas ) then
+									model.TransmogStateTexture:SetAtlas(transmogStateAtlas, true);
+									model.TransmogStateTexture:Show();
+								else
+									model.TransmogStateTexture:Hide();
+								end
+								model.Favorite.Icon:SetShown(set.favoriteSetID);
+								model.setID = set.setID;
+
+								model.setData = set;
+
+								model._RefreshTooltip = model.RefreshTooltip
+								model.RefreshTooltip = SetsTransmogFrame_Model_RefreshTooltip
+							else
+								model:Hide();
+							end
+						end
+					end
+					
+				end)
+
+				hooksecurefunc(WardrobeCollectionFrame.SetsTransmogFrame,"OnSearchUpdate", function (self)
+					WardrobeSetsDataProviderMixin:ClearUsableSets();
+					self:UpdateSets();
+				end)
+
+				WardrobeCollectionFrame.SetsTransmogFrame._LoadSet = WardrobeCollectionFrame.SetsTransmogFrame.LoadSet
+				function WardrobeCollectionFrame.SetsTransmogFrame:LoadSet(setID,...)
+					if not setID or setID > 0 then
+						return WardrobeCollectionFrame.SetsTransmogFrame:_LoadSet(setID,...)
+					else
+						local waitingOnData = false;
+						local transmogSources = { };
+						local sources = Addon:GetSetSourceData(setID);
+						for sourceID in pairs(sources) do
+							local sourceInfo = C_TransmogCollection.GetSourceInfo(sourceID);
+							local slot = C_Transmog.GetSlotForInventoryType(sourceInfo.invType);
+							local slotSources = C_TransmogCollection.GetAppearanceSources(sourceInfo.visualID);
+							WardrobeCollectionFrame_SortSources(slotSources, sourceInfo.visualID);
+							local index = WardrobeCollectionFrame_GetDefaultSourceIndex(slotSources, sourceID);
+							transmogSources[slot] = slotSources[index].sourceID;
+					
+							for i, slotSourceInfo in ipairs(slotSources) do
+								if ( not slotSourceInfo.name ) then
+									waitingOnData = true;
+								end
+							end
+						end
+						if ( waitingOnData ) then
+							self.loadingSetID = setID;
+						else
+							self.loadingSetID = nil;
+							-- if we don't ignore the event, clearing will momentarily set the page to the one with the set the user currently has transmogged
+							-- if that's a different page from the current one then the models will flicker as we swap the gear to different sets and back
+							self.ignoreTransmogrifyUpdateEvent = true;
+							C_Transmog.ClearAllPending();
+							self.ignoreTransmogrifyUpdateEvent = false;
+							C_Transmog.LoadSources(transmogSources, -1, -1);
+						end
+					end
+				end
+
+
+
+
+			end
+
 			do
 				local IsEnableUndress = true
 				local IsSavePosition = false
@@ -2372,10 +3180,10 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				
 				model:Hide()
 				
-				local previewModelsList = {}
+				model.previewModelsList = {}
 				for i=1,3 do
 					for j=1,6 do
-						tinsert(previewModelsList,WardrobeCollectionFrame.ItemsCollectionFrame["ModelR"..i.."C"..j])
+						tinsert(model.previewModelsList,WardrobeCollectionFrame.ItemsCollectionFrame["ModelR"..i.."C"..j])
 					end
 				end
 				
@@ -2406,16 +3214,16 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						self:SetFacing(self.cf + diff_x / 65)
 						
 						if IsUseBigModelPosition then
-							for i=1,#previewModelsList do
-								previewModelsList[i]:SetFacing(self.cf + diff_x / 65)
+							for i=1,#self.previewModelsList do
+								self.previewModelsList[i]:SetFacing(self.cf + diff_x / 65)
 							end
 						end
 					else
 						self:SetPosition(self.cx,self.cy + diff_x / 200,self.cz - diff_y / 200)
 						
 						if IsUseBigModelPosition then
-							for i=1,#previewModelsList do
-								previewModelsList[i]:SetPosition(self.cx,self.cy + diff_x / 200,self.cz - diff_y / 200)
+							for i=1,#self.previewModelsList do
+								self.previewModelsList[i]:SetPosition(self.cx,self.cy + diff_x / 200,self.cz - diff_y / 200)
 							end
 						end
 					end
@@ -2425,8 +3233,8 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 					self:SetPosition(cx + delta / 7,cy,cz)
 					
 					if IsUseBigModelPosition then
-						for i=1,#previewModelsList do
-							previewModelsList[i]:SetPosition(cx + delta / 7,cy,cz)
+						for i=1,#self.previewModelsList do
+							self.previewModelsList[i]:SetPosition(cx + delta / 7,cy,cz)
 						end
 					end
 				end)
@@ -2434,14 +3242,13 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 
 				end)
 				
-				local function Reload(self,undress)
+				function model:Reload(undress)
 					self:SetUnit("player")
 					if undress then
 						self:Undress()
 					end
 					--self:TryOn(self.itemID or "item:94984")
 				end
-				model.Reload = Reload
 				
 				local lastCamera = 152
 				model:SetScript("OnShow",function (self)
@@ -2517,8 +3324,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				
 				for i=1,3 do
 					for j=1,6 do
-						local frame = WardrobeCollectionFrame.ItemsCollectionFrame["ModelR"..i.."C"..j]
-						frame:HookScript("OnEnter",function(self,button)
+						WardrobeCollectionFrame.ItemsCollectionFrame["ModelR"..i.."C"..j]:HookScript("OnEnter",function(self,button)
 							if not self.visualInfo or not WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory or WardrobeFrame_IsAtTransmogrifier() or not model:IsShown() then
 								return
 							end
@@ -2563,25 +3369,33 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				bigModelButton.Texture:SetDesaturated(true)
 
 
+				local colorSelectButton = CreateFrame("Button",nil,WardrobeCollectionFrame)
+				colorSelectButton:SetPoint("TOPRIGHT", WardrobeCollectionFrameWeaponDropDown, -105, -27)
+				colorSelectButton:SetSize(31,31)
+				colorSelectButton:SetScript("OnClick",function(self)
+					colorPick()
+				end)
+				colorSelectButton:SetScript("OnEnter",ButtonOnEnter)
+				colorSelectButton:SetScript("OnLeave",ButtonOnLeave)
+				colorSelectButton.tooltip = "Select color"
+				
+				colorSelectButton.Texture = colorSelectButton:CreateTexture(nil,"ARTWORK")
+				colorSelectButton.Texture:SetPoint("CENTER")
+				colorSelectButton.Texture:SetSize(22,22)
+				colorSelectButton.Texture:SetTexture([[Interface\AddOns\LegionWardrobe\wheeltexture]])
+
+
 				local resetFilterButton = CreateFrame("Button",nil,WardrobeCollectionFrame)
-				resetFilterButton:SetPoint("TOPRIGHT", WardrobeCollectionFrameWeaponDropDown, -105, -27)
+				--resetFilterButton:SetPoint("TOPRIGHT", WardrobeCollectionFrameWeaponDropDown, -135, -27)
+				resetFilterButton:SetPoint("RIGHT", colorSelectButton, "LEFT", -4, 0)
 				resetFilterButton:SetSize(31,31)
 				resetFilterButton:SetScript("OnClick",function(self)
-					FilterInstance = nil
-					FilterRecolors = nil
-					AddAllSlotsToCurrentFilter = nil
-
-					local cat = WardrobeCollectionFrame.ItemsCollectionFrame.activeCategory
-					if cat == 1 then
-						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(2)
-					else
-						WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(1)
-					end
-					WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveCategory(cat)
+					Addon:ResetFilier()
 				end)
 				resetFilterButton:SetScript("OnEnter",ButtonOnEnter)
 				resetFilterButton:SetScript("OnLeave",ButtonOnLeave)
 				resetFilterButton.tooltip = "Reset filter"
+
 				
 				resetFilterButton.Texture = resetFilterButton:CreateTexture(nil,"ARTWORK")
 				resetFilterButton.Texture:SetAllPoints()
@@ -2601,16 +3415,26 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						if model:IsShown() then
 							bigModelButton:Click()
 						end
+						colorSelectButton:SetPoint("TOPRIGHT", WardrobeCollectionFrameWeaponDropDown, -190, -3)
 					else
 						for _,but in pairs(mainFrame.hideButtonsList) do
 							but:Show()
 						end
+						colorSelectButton:SetPoint("TOPRIGHT", WardrobeCollectionFrameWeaponDropDown, -105, -27)
 					end
 					
 				end)
+
+				WardrobeCollectionFrameTab1:HookScript("OnClick",function(self)
+					colorSelectButton:Show()
+				end)
+				WardrobeCollectionFrameTab2:HookScript("OnClick",function(self)
+					colorSelectButton:Hide()
+					resetFilterButton:Hide()
+				end)
+
 				
 				tinsert(mainFrame.hideButtonsList,bigModelButton)
-				tinsert(mainFrame.hideButtonsList,resetFilterButton)
 			end	
 			
 			do
@@ -2671,36 +3495,45 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 						end
 						UIDropDownMenu_AddButton(info, level)
 						
+
+						info.hasArrow = false
+						info.isNotRadio = true
+						info.notCheckable = false
+						info.checked = function() return VLTW.DisableSetsPage end
+						
+						info.text = 'Disable Sets page modifiactions'
+						info.func = function(_, _, _, value)
+							if value then
+								VLTW.DisableSetsPage = nil
+							else
+								VLTW.DisableSetsPage = true
+							end
+							ReloadUI()
+						end
+						UIDropDownMenu_AddButton(info, level)
 						
 					end
-				end
-				
-				
-				
-				local function ButtonOnClick(self)
-					if not isInited then
-						UIDropDownMenu_Initialize(ButtonDropDown, InitButtonDropDown , "MENU")
-						isInited = true
-					end
-					ToggleDropDownMenu(1, nil, ButtonDropDown, self, 20, 5)
-				end
-				
-				local function ButtonOnEnter(self)
-					if not self.tooltip then return end
-					GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-					GameTooltip:AddLine(self.tooltip)
-					GameTooltip:Show()
-				end
-				local function ButtonOnLeave(self)
-					GameTooltip_Hide()
 				end
 				
 				local optionsButton = CreateFrame("Button",nil,WardrobeCollectionFrame)
 				optionsButton:SetPoint("TOPRIGHT", WardrobeCollectionFrameWeaponDropDown, -75, -28)
 				optionsButton:SetSize(31,31)
-				optionsButton:SetScript("OnClick",ButtonOnClick)
-				optionsButton:SetScript("OnEnter",ButtonOnEnter)
-				optionsButton:SetScript("OnLeave",ButtonOnLeave)
+				optionsButton:SetScript("OnClick",function(self)
+					if not isInited then
+						UIDropDownMenu_Initialize(ButtonDropDown, InitButtonDropDown , "MENU")
+						isInited = true
+					end
+					ToggleDropDownMenu(1, nil, ButtonDropDown, self, 20, 5)
+				end)
+				optionsButton:SetScript("OnEnter",function(self)
+					if not self.tooltip then return end
+					GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+					GameTooltip:AddLine(self.tooltip)
+					GameTooltip:Show()
+				end)
+				optionsButton:SetScript("OnLeave",function(self)
+					GameTooltip_Hide()
+				end)
 				optionsButton.tooltip = "Options"
 				
 				optionsButton.Texture = optionsButton:CreateTexture(nil,"ARTWORK")
@@ -2907,7 +3740,9 @@ do
 				end
 				return
 			end
-			if not PlayerCanEquipItem(itemLink) then
+			if itemAppearanceID and not C_TransmogCollection.PlayerCanCollectSource(itemAppearanceID) then
+				self:AddLine(ERR_TRANSMOGRIFY_CANT_EQUIP,1,.5,.5,true)
+			elseif not PlayerCanEquipItem(itemLink) then
 				self:AddLine(ERR_TRANSMOGRIFY_CANT_EQUIP,1,.5,.5,true)
 			else
 				self:AddLine(ERR_TRANSMOGRIFY_INVALID_SOURCE,1,.5,.5,true)

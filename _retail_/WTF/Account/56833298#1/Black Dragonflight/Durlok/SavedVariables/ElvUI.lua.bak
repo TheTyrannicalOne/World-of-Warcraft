@@ -4,6 +4,7 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/skada toggle", -- [1]
+		"/dance", -- [2]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -292,5 +293,379 @@ ElvCharacterDB = {
 			[51] = 1603227473,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [13]
+		{
+			"Sykvanus won't tell us whether she plans to stack the council or not.", -- [1]
+			"Knucklebrew-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Knucklebrew-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2173, -- [11]
+			"Player-96-0CC05734", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Knucklebrew-Skullcrusher|r",
+			[51] = 1603295964,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [14]
+		{
+			"i dont know shit of the lore i left in Wotlk, how can I catch up?", -- [1]
+			"Deathklaat-Andorhal", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Deathklaat-Andorhal", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2174, -- [11]
+			"Player-96-0B86A87A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Deathklaat-Andorhal|r",
+			[51] = 1603295966,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [15]
+		{
+			"got banned", -- [1]
+			"Impimpimpimp-Zuluhed", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Impimpimpimp-Zuluhed", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2175, -- [11]
+			"Player-96-0C474EBF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edImpimpimpimp-Zuluhed|r",
+			[51] = 1603295968,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [16]
+		{
+			"oh lore", -- [1]
+			"Impimpimpimp-Zuluhed", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Impimpimpimp-Zuluhed", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2176, -- [11]
+			"Player-96-0C474EBF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edImpimpimpimp-Zuluhed|r",
+			[51] = 1603295973,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [17]
+		{
+			"Aww..", -- [1]
+			"Cathedral-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Cathedral-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2178, -- [11]
+			"Player-96-0C79D08D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeCathedral-Skullcrusher|r",
+			[51] = 1603295986,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [18]
+		{
+			"it's in this xpac", -- [1]
+			"Valanath-Eonar", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Valanath-Eonar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2179, -- [11]
+			"Player-96-099B110E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaValanath-Eonar|r",
+			[51] = 1603295999,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [19]
+		{
+			"\"How can I catch up?\" watch lore videos on youtube for actual deep lore coverage, or just play through the xpacs and read quest text now that leveling through areas is dope", -- [1]
+			"Anja-BlackDragonflight", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Anja-BlackDragonflight", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2180, -- [11]
+			"Player-96-0CE3CC00", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcAnja|r",
+			[51] = 1603296058,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [20]
+		{
+			"WTS |cff0070dd|Hitem:128807::::::::50:102::::1:28:435:::|h[Moneda de muchas caras]|h|r", -- [1]
+			"Uskdudu-BlackDragonflight", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Uskdudu-BlackDragonflight", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2181, -- [11]
+			"Player-96-0CC11B7C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Uskdudu|r",
+			[51] = 1603296065,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [21]
+		{
+			"Doing this tank thing for HH if anyone wants a semi faster que.", -- [1]
+			"Abáddon-Eonar", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Abáddon-Eonar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2183, -- [11]
+			"Player-96-0A746DEE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Abáddon-Eonar|r",
+			[51] = 1603296074,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [22]
+		{
+			"WTS |cff0070dd|Hitem:154695::::::::50:253:::::::|h[Deep Sea Bag]|h|r|cff0070dd|Hitem:154695::::::::50:253:::::::|h[Deep Sea Bag]|h|r|cff0070dd|Hitem:154695::::::::50:253:::::::|h[Deep Sea Bag]|h|r Dirt cheap on ah. ", -- [1]
+			"Zeebs-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zeebs-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2184, -- [11]
+			"Player-96-0CC12642", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Zeebs-Skullcrusher|r",
+			[51] = 1603296085,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [23]
+		{
+			"WTS |cff0070dd|Hitem:154695::::::::50:253:::::::|h[Deep Sea Bag]|h|r|cff0070dd|Hitem:154695::::::::50:253:::::::|h[Deep Sea Bag]|h|r|cff0070dd|Hitem:154695::::::::50:253:::::::|h[Deep Sea Bag]|h|r ON AH ONLY 125g!!! ", -- [1]
+			"Zeebs-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zeebs-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2237, -- [11]
+			"Player-96-0CC12642", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Zeebs-Skullcrusher|r",
+			[51] = 1603296299,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [24]
+		{
+			"WTS |cff0070dd|Hitem:128807::::::::50:102::::1:28:435:::|h[Moneda de muchas caras]|h|r", -- [1]
+			"Uskdudu-BlackDragonflight", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Uskdudu-BlackDragonflight", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2239, -- [11]
+			"Player-96-0CC11B7C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Uskdudu|r",
+			[51] = 1603296312,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [25]
+		{
+			"the 200g listings are still there", -- [1]
+			"Njobu-Gul'dan", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Njobu-Gul'dan", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			138, -- [11]
+			"Player-96-0CEA7C2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Njobu-Gul'dan|r",
+			[51] = 1603666244,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [26]
+		{
+			"Does anyone know if I use |cffe6cc80|Hitem:168622::::::::50:268::23:::::|h[Stabilizing Lens of the Focusing Iris]|h|r will it also be rank 3 for brewmaster?", -- [1]
+			"Wonton-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wonton-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			139, -- [11]
+			"Player-96-0CC3CE2F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Wonton-Skullcrusher|r",
+			[51] = 1603666246,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [27]
+		{
+			"sadly they are 750 on the one server that I desperately need bags", -- [1]
+			"Devyl-Velen", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Devyl-Velen", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			140, -- [11]
+			"Player-96-0656B736", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaDevyl-Velen|r",
+			[51] = 1603666273,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [28]
+		{
+			"oops", -- [1]
+			"Dedaerodra-Eonar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dedaerodra-Eonar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			168, -- [11]
+			"Player-96-08D26EA5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Dedaerodra-Eonar|r",
+			[51] = 1603666449,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [29]
+		{
+			"teach a man to fish...", -- [1]
+			"Occamsrazor-Velen", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Occamsrazor-Velen", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			192, -- [11]
+			"Player-96-08D1310D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Occamsrazor-Velen|r",
+			[51] = 1603666496,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [30]
 	},
 }
