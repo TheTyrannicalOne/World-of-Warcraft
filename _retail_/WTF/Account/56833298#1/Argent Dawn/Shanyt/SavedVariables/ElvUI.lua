@@ -2,28 +2,6 @@
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 		{
-			":D", -- [1]
-			"Nuxx-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Nuxx-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2448, -- [11]
-			"Player-3676-0A0AAF8B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcNuxx-Area52|r",
-			[51] = 1603680041,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [1]
-		{
 			"|cffa335ee|Hitem:151939::::::::50:102::6:3:3612:1475:3528:1:28:637:::|h[Whisperstep Runners]|h|r roll", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
 			"", -- [3]
@@ -44,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603680264,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [2]
+		}, -- [1]
 		{
 			"ROLL |cffa335ee|Hitem:151944::::::::50:70::6:4:3612:1808:1475:3528:1:28:637:::|h[Capucha del cazador de almas]|h|r", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -66,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603680327,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [3]
+		}, -- [2]
 		{
 			"LOL", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -88,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603680368,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [4]
+		}, -- [3]
 		{
 			"TRADWWWW", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -110,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603680390,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [5]
+		}, -- [4]
 		{
 			"[IAT] Tracking: |cffffff00|Hachievement:12030:Player-11-0DC1CCB8:1:9:20:20:4294967295:4294967295:4294967295:4294967295|h[The World Revolves Around Me]|h|r", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -132,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680392,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [6]
+		}, -- [5]
 		{
 			"[IAT] Diabolic Bomb Gained (3/9)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -154,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680399,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [7]
+		}, -- [6]
 		{
 			"[IAT] Cerallae-Hyjal Absorbed Diabolic Bomb (2/9)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -176,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680407,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [8]
+		}, -- [7]
 		{
 			"[IAT] Ankranir-Ragnaros Absorbed Diabolic Bomb (1/9)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -198,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680409,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [9]
+		}, -- [8]
 		{
 			"[IAT] Zeelzufli-Kil'jaeden Absorbed Diabolic Bomb (0/9)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -220,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680415,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [10]
+		}, -- [9]
 		{
 			"[IAT] Diabolic Bomb Gained (3/9)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -242,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680465,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [11]
+		}, -- [10]
 		{
 			"[IAT] Atherion-ArgentDawn Absorbed Diabolic Bomb (2/9)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -264,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680472,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [12]
+		}, -- [11]
 		{
 			"[IAT] Harambedotz Absorbed Diabolic Bomb (1/9)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -286,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680473,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [13]
+		}, -- [12]
 		{
 			"[IAT] Harambedotz Absorbed Diabolic Bomb (0/9)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -308,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680482,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [14]
+		}, -- [13]
 		{
 			"|cffa335ee|Hitem:152180::::::::50:102::6:3:3612:1475:3528:1:28:637:::|h[Juggernaut Gauntlets]|h|r rol", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -330,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603680492,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [15]
+		}, -- [14]
 		{
 			"roll|cffa335ee|Hitem:152152::::::::50:265::6:3:3612:1475:3528:1:28:637:::|h[Light's Vanguard Legplates]|h|r", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -352,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680528,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [16]
+		}, -- [15]
 		{
 			"TRADE ", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -374,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603680544,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [17]
+		}, -- [16]
 		{
 			"|cffa335ee|Hitem:151944::::::::50:70::6:4:3612:1808:1475:3528:1:28:637:::|h[Capucha del cazador de almas]|h|r", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -396,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603680548,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [18]
+		}, -- [17]
 		{
 			":D", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -418,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603680595,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [19]
+		}, -- [18]
 		{
 			"[IAT] Tracking: |cffffff00|Hachievement:11948:Player-11-0DC1CCB8:1:9:20:20:4294967295:4294967295:4294967295:4294967295|h[Together We Stand]|h|r", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -440,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680636,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [20]
+		}, -- [19]
 		{
 			"[IAT] |cffffff00|Hachievement:11948:Player-11-0DC1CCB8:1:9:20:20:4294967295:4294967295:4294967295:4294967295|h[Together We Stand]|h|r FAILED! (Halstraza-Hyjal)", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -462,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680641,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [21]
+		}, -- [20]
 		{
 			"ROLL PÁNTS :;p", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -484,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603680707,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [22]
+		}, -- [21]
 		{
 			"[IAT] Tracking: |cffffff00|Hachievement:11915:Player-11-0DC1CCB8:1:9:20:20:4294967295:4294967295:4294967295:4294967295|h[Don't Sweat the Technique]|h|r", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -506,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603680971,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [23]
+		}, -- [22]
 		{
 			"|cffa335ee|Hitem:152151::::::::50:102::6:4:3612:40:1475:3528:1:28:637:::|h[Light's Vanguard Helm]|h|r roll", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -528,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603681077,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [24]
+		}, -- [23]
 		{
 			"roll|cffa335ee|Hitem:152018::::::::50:266::6:3:3612:1475:3528:1:28:637:::|h[Breastplate of Molten Rebirth]|h|r", -- [1]
 			"Halstraza-Hyjal", -- [2]
@@ -550,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHalstraza-Hyjal|r",
 			[51] = 1603681083,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [25]
+		}, -- [24]
 		{
 			"roll was for pally helm", -- [1]
 			"Atherion-ArgentDawn", -- [2]
@@ -572,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Atherion|r",
 			[51] = 1603681157,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [26]
+		}, -- [25]
 		{
 			"roll |cffa335ee|Hitem:151995::::::::50:71::6:4:3612:1808:1475:3528:1:28:637:::|h[Robes of the Forsaken Dreadlord]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -594,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603681175,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [27]
+		}, -- [26]
 		{
 			"roll |cffa335ee|Hitem:151946::::::::50:71::6:3:3612:1475:3528:1:28:637:::|h[Fervent Twilight Legwraps]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -616,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603681203,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [28]
+		}, -- [27]
 		{
 			"[IAT] Tracking: |cffffff00|Hachievement:12257:Player-11-0DC1CCB8:1:9:23:20:4294967295:4294967295:4294967295:4294967295|h[Stardust Crusaders]|h|r", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -638,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603681244,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [29]
+		}, -- [28]
 		{
 			"omg", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -660,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603681340,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [30]
+		}, -- [29]
 		{
 			"how u alive", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -682,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603681344,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [31]
+		}, -- [30]
 		{
 			"grats on sycthe", -- [1]
 			"Harambedotz-Tichondrius", -- [2]
@@ -704,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHarambedotz-Tichondrius|r",
 			[51] = 1603681407,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [32]
+		}, -- [31]
 		{
 			"SCYTH", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -726,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603681409,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [33]
+		}, -- [32]
 		{
 			"GRATS", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -748,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603681410,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [34]
+		}, -- [33]
 		{
 			"OMG", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -770,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603681411,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [35]
+		}, -- [34]
 		{
 			"Nice!", -- [1]
 			"Madarlan-Hyjal", -- [2]
@@ -792,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMadarlan-Hyjal|r",
 			[51] = 1603681418,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [36]
+		}, -- [35]
 		{
 			"Omg the red one too im so jealous", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -814,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603681426,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [37]
+		}, -- [36]
 		{
 			"*Drools", -- [1]
 			"Madarlan-Hyjal", -- [2]
@@ -836,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMadarlan-Hyjal|r",
 			[51] = 1603681435,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [38]
+		}, -- [37]
 		{
 			"ROLLL!", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -858,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603681449,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [39]
+		}, -- [38]
 		{
 			"D:", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -880,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603681453,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [40]
+		}, -- [39]
 		{
 			"XD", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -902,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603681454,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [41]
+		}, -- [40]
 		{
 			"ty for group!!", -- [1]
 			"Zeelzufli-Kil'jaeden", -- [2]
@@ -924,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zeelzufli-Kil'jaeden|r",
 			[51] = 1603681456,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [42]
+		}, -- [41]
 		{
 			"ty", -- [1]
 			"Nuxx-Area52", -- [2]
@@ -946,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcNuxx-Area52|r",
 			[51] = 1603681468,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [43]
+		}, -- [42]
 		{
 			"Well done everyone! Grats on the loots!", -- [1]
 			"Madarlan-Hyjal", -- [2]
@@ -968,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMadarlan-Hyjal|r",
 			[51] = 1603681469,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [44]
+		}, -- [43]
 		{
 			" YOU TO", -- [1]
 			"Ankranir-Ragnaros", -- [2]
@@ -990,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ankranir-Ragnaros|r",
 			[51] = 1603681469,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [45]
+		}, -- [44]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:5447:Player-75-058380E2:1:10:25:20:4294967295:4294967295:4294967295:4294967295|h[My Very Own Broodmother]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1012,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603683225,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [46]
+		}, -- [45]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:5482:Player-75-058380E2:1:10:25:20:4294967295:4294967295:4294967295:4294967295|h[Dragonmaw Tour of Duty]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1034,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603684266,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [47]
+		}, -- [46]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:5872:Player-75-058380E2:1:10:25:20:4294967295:4294967295:4294967295:4294967295|h[King of the Spider-Hill]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1056,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603686872,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [48]
+		}, -- [47]
 		{
 			"congrats~!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -1078,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz|r",
 			[51] = 1603686887,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [49]
+		}, -- [48]
 		{
 			"grats", -- [1]
 			"Headshothank-ArgentDawn", -- [2]
@@ -1100,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Headshothank|r",
 			[51] = 1603686894,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [50]
+		}, -- [49]
 		{
 			"is shadow sec hard to play", -- [1]
 			"Volxra-ArgentDawn", -- [2]
@@ -1122,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVolxra|r",
 			[51] = 1603688765,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"spec^", -- [1]
 			"Volxra-ArgentDawn", -- [2]
@@ -1144,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVolxra|r",
 			[51] = 1603688770,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"looking for an active helful guild to join", -- [1]
 			"Volxra-ArgentDawn", -- [2]
@@ -1166,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVolxra|r",
 			[51] = 1603690932,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"helpful^", -- [1]
 			"Volxra-ArgentDawn", -- [2]
@@ -1188,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVolxra|r",
 			[51] = 1603690945,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"wait for others", -- [1]
 			"Rotrude-Frostwolf", -- [2]
@@ -1210,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Rotrude-Frostwolf|r",
 			[51] = 1603713937,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [55]
+		}, -- [54]
 		{
 			"mhm", -- [1]
 			"Kynarreth-Mal'Ganis", -- [2]
@@ -1232,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kynarreth-Mal'Ganis|r",
 			[51] = 1603713942,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [56]
+		}, -- [55]
 		{
 			"I'm planning to multitag, I'm just gonna cc and log over", -- [1]
 			"Kynarreth-Mal'Ganis", -- [2]
@@ -1254,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kynarreth-Mal'Ganis|r",
 			[51] = 1603713969,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [57]
+		}, -- [56]
 		{
 			"well monk left combat now lol", -- [1]
 			"Castîel-Frostwolf", -- [2]
@@ -1276,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Castîel-Frostwolf|r",
 			[51] = 1603714059,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [58]
+		}, -- [57]
 		{
 			"Sorry about the wait. Had to turn war mode on", -- [1]
 			"Orkane-Khaz'goroth", -- [2]
@@ -1298,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOrkane-Khaz'goroth|r",
 			[51] = 1603714099,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [59]
+		}, -- [58]
 		{
 			"reset lol", -- [1]
 			"Attícus-Warsong", -- [2]
@@ -1320,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Attícus-Warsong|r",
 			[51] = 1603714100,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [60]
+		}, -- [59]
 		{
 			"they not get loot", -- [1]
 			"Attícus-Warsong", -- [2]
@@ -1342,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Attícus-Warsong|r",
 			[51] = 1603714113,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [61]
+		}, -- [60]
 		{
 			"I'll just get back on my monk again", -- [1]
 			"Vaêrmina-Mal'Ganis", -- [2]
@@ -1364,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVaêrmina-Mal'Ganis|r",
 			[51] = 1603714120,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [62]
+		}, -- [61]
 		{
 			"not a huge deal", -- [1]
 			"Vaêrmina-Mal'Ganis", -- [2]
@@ -1386,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVaêrmina-Mal'Ganis|r",
 			[51] = 1603714123,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [63]
+		}, -- [62]
 		{
 			"ready?", -- [1]
 			"Rotrude-Frostwolf", -- [2]
@@ -1408,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Rotrude-Frostwolf|r",
 			[51] = 1603714129,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [64]
+		}, -- [63]
 		{
 			"r", -- [1]
 			"Takatomutsu-Barthilas", -- [2]
@@ -1430,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Takatomutsu-Barthilas|r",
 			[51] = 1603714137,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [65]
+		}, -- [64]
 		{
 			"Soundless 79.94% ~(58.15, 41.59)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1452,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603714164,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [65]
 		{
 			"|cffffff00|Hworldmap:1355:5882:4167|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Orkane-Khaz'goroth", -- [2]
@@ -1474,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOrkane-Khaz'goroth|r",
 			[51] = 1603714174,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [66]
 		{
 			"slow down a bit", -- [1]
 			"Rotrude-Frostwolf", -- [2]
@@ -1496,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Rotrude-Frostwolf|r",
 			[51] = 1603714176,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [68]
+		}, -- [67]
 		{
 			"monks back", -- [1]
 			"Rotrude-Frostwolf", -- [2]
@@ -1518,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Rotrude-Frostwolf|r",
 			[51] = 1603714195,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [69]
+		}, -- [68]
 		{
 			"we good", -- [1]
 			"Rotrude-Frostwolf", -- [2]
@@ -1540,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Rotrude-Frostwolf|r",
 			[51] = 1603714196,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [70]
+		}, -- [69]
 		{
 			"ty for listing <3", -- [1]
 			"Takatomutsu-Barthilas", -- [2]
@@ -1562,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Takatomutsu-Barthilas|r",
 			[51] = 1603714238,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [71]
+		}, -- [70]
 		{
 			"good pc, it take 5/10 min here get one alt for tag", -- [1]
 			"Attícus-Warsong", -- [2]
@@ -1584,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Attícus-Warsong|r",
 			[51] = 1603714241,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [72]
+		}, -- [71]
 		{
 			"Ok thanks for having me", -- [1]
 			"Orkane-Khaz'goroth", -- [2]
@@ -1606,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOrkane-Khaz'goroth|r",
 			[51] = 1603714241,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [73]
+		}, -- [72]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:8100:Player-75-058380E2:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Pay to Slay]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1628,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603722474,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [74]
+		}, -- [73]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:9082:Player-75-09F9F1F6:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Take Cover!]|h|r!", -- [1]
 			"Gremlyk-ArgentDawn", -- [2]
@@ -1650,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cGremlyk|r",
 			[51] = 1603722634,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [75]
+		}, -- [74]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:9047:Player-75-09F9F1F6:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Heroic: Iron Docks]|h|r!", -- [1]
 			"Gremlyk-ArgentDawn", -- [2]
@@ -1672,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cGremlyk|r",
 			[51] = 1603722634,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [76]
+		}, -- [75]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:9207:Player-75-09F9F1F6:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Goren Invasion]|h|r!", -- [1]
 			"Gremlyk-ArgentDawn", -- [2]
@@ -1694,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cGremlyk|r",
 			[51] = 1603724031,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [77]
+		}, -- [76]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:12844:Player-75-05CF992E:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[The MOTHERLODE!!]|h|r!", -- [1]
 			"Senzala-ArgentDawn", -- [2]
@@ -1716,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Senzala|r",
 			[51] = 1603725633,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [78]
+		}, -- [77]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14782:Player-75-05CF992E:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Level 50]|h|r!", -- [1]
 			"Senzala-ArgentDawn", -- [2]
@@ -1738,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Senzala|r",
 			[51] = 1603726636,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [79]
+		}, -- [78]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:12840:Player-75-05C00D20:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Tol Dagor]|h|r!", -- [1]
 			"Bellesaria-ArgentDawn", -- [2]
@@ -1760,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBellesaria|r",
 			[51] = 1603729760,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [80]
+		}, -- [79]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10776:Player-75-058380E2:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[No Time to Waste]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1782,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603738732,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [81]
+		}, -- [80]
 		{
 			"Corpse Eater 62.59% ~(30.95, 49.61)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1804,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603741653,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10807:Player-75-05C00D20:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Maw of Souls]|h|r!", -- [1]
 			"Bellesaria-ArgentDawn", -- [2]
@@ -1826,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBellesaria|r",
 			[51] = 1603741720,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [83]
+		}, -- [82]
 		{
 			"Congrats!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -1848,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz|r",
 			[51] = 1603741723,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [84]
+		}, -- [83]
 		{
 			"Arachnoid Harvester 99.98% ~(52.1, 40.92)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1870,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603742512,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [84]
 		{
 			"harvester 0.0000%", -- [1]
 			"Sixequjfiver-ArgentDawn", -- [2]
@@ -1892,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sixequjfiver|r",
 			[51] = 1603742573,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [85]
 		{
 			"Rustfeather 98.98% ~(65.76, 78.42)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1914,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603742695,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [86]
 		{
 			"i am coming up with 33.3333 repeating of course....", -- [1]
 			"Sixequjfiver-ArgentDawn", -- [2]
@@ -1936,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Sixequjfiver|r",
 			[51] = 1603742737,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [87]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10461:Player-75-05C00D20:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Fighting with Style: Classic]|h|r!", -- [1]
 			"Bellesaria-ArgentDawn", -- [2]
@@ -1958,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBellesaria|r",
 			[51] = 1603743076,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [89]
+		}, -- [88]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10585:Player-75-05C00D20:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Fel-Smelter]|h|r!", -- [1]
 			"Bellesaria-ArgentDawn", -- [2]
@@ -1980,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBellesaria|r",
 			[51] = 1603743257,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [90]
+		}, -- [89]
 		{
 			"congrats", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -2002,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz|r",
 			[51] = 1603743306,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [91]
+		}, -- [90]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14782:Player-75-05C00D20:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Level 50]|h|r!", -- [1]
 			"Bellesaria-ArgentDawn", -- [2]
@@ -2024,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBellesaria|r",
 			[51] = 1603743481,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [92]
+		}, -- [91]
 		{
 			"Congrats", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -2046,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz|r",
 			[51] = 1603743556,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [93]
+		}, -- [92]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:13770:Player-75-0DE0AA56:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Power Creep]|h|r!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -2068,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz-TheScryers|r",
 			[51] = 1603744446,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [94]
+		}, -- [93]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:13771:Player-75-0DE0AA56:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[Power Is Beautiful]|h|r!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -2090,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz-TheScryers|r",
 			[51] = 1603744849,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [95]
+		}, -- [94]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:3803:Player-75-058380E2:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[The Faceroller]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2112,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1603744998,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [96]
+		}, -- [95]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:12416:Player-75-0DE0AA56:1:10:26:20:4294967295:4294967295:4294967295:4294967295|h[The Total Package]|h|r!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -2134,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz-TheScryers|r",
 			[51] = 1603745655,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [97]
+		}, -- [96]
 		{
 			"anyone wanan group for rares?", -- [1]
 			"Ziggybronson-EmeraldDream", -- [2]
@@ -2156,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edZiggybronson-EmeraldDream|r",
 			[51] = 1603746459,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [97]
 		{
 			"Will of N'Zoth 100.00% ~(52.23, 62.92)", -- [1]
 			"Stabine-EarthenRing", -- [2]
@@ -2178,6 +2156,28 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Stabine-EarthenRing|r",
 			[51] = 1603747174,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:7288:Player-75-058380E2:1:10:27:20:4294967295:4294967295:4294967295:4294967295|h[Yak Attack]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			75, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1603803894,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [99]
 	},
 	["ChatEditHistory"] = {

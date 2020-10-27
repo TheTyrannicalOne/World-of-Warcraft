@@ -1,7 +1,6 @@
 
 GrailDatabase = {
 	["_retail_"] = {
-		["delayEvents"] = true,
 		["learned"] = {
 			["QUEST_NAME"] = {
 				"enUS|36322|54591|Rumbling Goliath", -- [1]
@@ -7339,8 +7338,13 @@ GrailDatabase = {
 				"36322|enUS|51051|L3289855", -- [5779]
 				"36322|enUS|52342|A:-1165", -- [5780]
 				"36322|enUS|52342|L3289855", -- [5781]
+				"36322|enUS|30243|L2302975", -- [5782]
+				"36322|enUS|31200|T:63624", -- [5783]
+				"36322|enUS|54462|L3289855", -- [5784]
+				"36322|enUS|48977|A:-695", -- [5785]
 			},
 		},
+		["delayEventsHandled"] = true,
 		["Tracking"] = {
 			"2020-04-20 23:25 Argent Dawn/Shanyt/Horde/WARRIOR/Scourge/2/enUS/US/33941", -- [1]
 			"New quest completed 55604 UNKNOWN NAME", -- [2]
@@ -21490,7 +21494,7 @@ GrailDatabase = {
 			"New quest completed 54649 Flames of War", -- [14146]
 			"New quest completed 54646 Grand Marshal Fury", -- [14147]
 		},
-		["delayEventsHandled"] = true,
+		["delayEvents"] = true,
 	},
 	["BadQuestData"] = {
 		"G110|48639|1024|F:Horde", -- [1]

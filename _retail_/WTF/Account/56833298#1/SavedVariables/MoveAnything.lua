@@ -9,32 +9,6 @@ MADB = {
 		["default"] = {
 			["name"] = "default",
 			["frames"] = {
-				["ExtraActionBarFrame"] = {
-					["orgPos"] = {
-						{
-							"TOPLEFT", -- [1]
-							nil, -- [2]
-							"TOPLEFT", -- [3]
-							0, -- [4]
-							0, -- [5]
-						}, -- [1]
-						{
-							"BOTTOMRIGHT", -- [1]
-							nil, -- [2]
-							"BOTTOMRIGHT", -- [3]
-							0, -- [4]
-							0, -- [5]
-						}, -- [2]
-					},
-					["name"] = "ExtraActionBarFrame",
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						653.0001220703125, -- [4]
-						-1077.999969482422, -- [5]
-					},
-				},
 				["BagItemTooltipMover"] = {
 					["orgPos"] = {
 						"TOP", -- [1]
@@ -71,8 +45,8 @@ MADB = {
 			},
 		},
 	},
-	["closeGUIOnEscape"] = false,
-	["playSound"] = false,
-	["noBags"] = false,
 	["frameListRows"] = 18,
+	["noBags"] = false,
+	["playSound"] = false,
+	["closeGUIOnEscape"] = false,
 }
