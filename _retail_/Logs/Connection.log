@@ -1,15 +1,32 @@
-10/27 12:08:43.762  Connection Initialize
-10/27 12:08:51.469  Glue Start Login
-10/27 12:08:51.469  BattleNet Attempt Logon
-10/27 12:08:51.945  BattleNet Front Connected
-10/27 12:08:52.078  BattleNet Logon Queue Update
-10/27 12:08:52.178  BattleNet Logon Complete
-10/27 12:08:52.328  BattleNet Game Account Name
-10/27 12:08:52.328  BattleNet Game Account Name
-10/27 12:08:52.328  BattleNet Attempt Complete Login
-10/27 12:08:52.411  BattleNet Realm List Ticket
-10/27 12:08:52.411  Glue Fatal Error: 34200
-10/27 12:08:52.411  BattleNet Defer Disconnect
-10/27 12:08:52.411  BattleNet Front Disconnecting
-10/27 12:08:52.495  BattleNet Front Disconnected
-10/27 12:08:56.253  Connection Destroy
+10/28 18:49:18.971  Connection Initialize
+10/28 18:49:29.847  Glue Start Login
+10/28 18:49:29.847  BattleNet Attempt Logon
+10/28 18:49:30.322  BattleNet Front Connected
+10/28 18:49:30.454  BattleNet Logon Queue Update
+10/28 18:49:30.654  BattleNet Logon Complete
+10/28 18:49:30.738  BattleNet Game Account Name
+10/28 18:49:30.805  BattleNet Game Account Name
+10/28 18:49:30.805  BattleNet Attempt Complete Login
+10/28 18:49:31.238  BattleNet Realm List Ticket
+10/28 18:49:31.338  BattleNet Sub Region List
+10/28 18:49:31.722  BattleNet Last Played Char
+10/28 18:49:31.772  BattleNet Last Played Char
+10/28 18:49:31.839  BattleNet Last Played Char
+10/28 18:49:32.005  BattleNet Last Played Char
+10/28 18:49:32.071  BattleNet Last Played Char
+10/28 18:49:32.071  BattleNet Join Realm
+10/28 18:49:32.221  BattleNet Realm Join
+10/28 18:49:32.221  Change Connection
+10/28 18:49:32.221  Connect
+10/28 18:49:32.271  Handle Connect
+10/28 18:49:33.654  Handle Auth Response: 0
+10/28 18:49:33.654  Glue Authed To WoW: 0
+10/28 18:49:34.176  BattleNet Connected To Realm
+10/28 18:49:34.176  BattleNet Front Disconnecting
+10/28 18:49:34.300  Handle Char Enum
+10/28 18:49:34.813  Handle Char Enum
+10/28 18:49:34.926  BattleNet Front Disconnected
+10/28 19:24:04.697  Handle Logout Response: 0
+10/28 19:24:05.548  Handle Logout Complete
+10/28 19:24:15.298  Disconnect: 13
+10/28 19:24:15.300  Connection Destroy

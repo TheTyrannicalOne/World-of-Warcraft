@@ -707,6 +707,38 @@ AAP.LoadInOptionFrame["B2"]:Hide()
 	end)
 	
 	
+	
+		AAP.RoutePlan.FG1.HelpText = CreateFrame("frame", "AAP.RoutePlanMainFsramex2xxxshlp", AAP.RoutePlan.FG1)
+		AAP.RoutePlan.FG1.HelpText:SetWidth(250)
+		AAP.RoutePlan.FG1.HelpText:SetHeight(20)
+		AAP.RoutePlan.FG1.HelpText:SetMovable(true)
+		AAP.RoutePlan.FG1.HelpText:EnableMouse(true)
+		AAP.RoutePlan.FG1.HelpText:SetFrameStrata("HIGH")
+		AAP.RoutePlan.FG1.HelpText:SetResizable(true)
+		AAP.RoutePlan.FG1.HelpText:SetScale(0.7)
+		AAP.RoutePlan.FG1.HelpText:SetPoint("BOTTOMLEFT", AAP.RoutePlan.FG1.xg2, "BOTTOMLEFT", 20,-15)
+		--AAP.RoutePlan.FG1["Fxz"..CLi]:SetBackdrop( { 
+		--	bgFile = "Interface\\Buttons\\WHITE8X8", tile = false, tileSize=0,
+		--	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		--	tile = true, tileSize = 10, edgeSize = 10, insets = { left = 2, right = 2, top = 2, bottom = 2 }
+		--});
+		local t = AAP.RoutePlan.FG1.HelpText:CreateTexture(nil,"BACKGROUND")
+		t:SetTexture("Interface\\Buttons\\WHITE8X8")
+		t:SetAllPoints(AAP.RoutePlan.FG1.HelpText)
+		t:SetColorTexture(0.1,0.1,0.4,1)
+		AAP.RoutePlan.FG1.HelpText.texture = t
+		AAP.RoutePlan.FG1.HelpText.FS = AAP.RoutePlan.FG1.HelpText:CreateFontString("AAP.RoutePlan_Fx3x_FFGs1Shlp","ARTWORK", "ChatFontNormal")
+		AAP.RoutePlan.FG1.HelpText.FS:SetParent(AAP.RoutePlan.FG1.HelpText)
+		AAP.RoutePlan.FG1.HelpText.FS:SetPoint("TOP",AAP.RoutePlan.FG1.HelpText,"TOP",0,1)
+		AAP.RoutePlan.FG1.HelpText.FS:SetWidth(250)
+		AAP.RoutePlan.FG1.HelpText.FS:SetHeight(20)
+		AAP.RoutePlan.FG1.HelpText.FS:SetJustifyH("CENTER")
+		AAP.RoutePlan.FG1.HelpText.FS:SetFontObject("GameFontNormal")
+		AAP.RoutePlan.FG1.HelpText.FS:SetText("Right-click or drag to move routes")
+	
+	
+	
+	
 	AAP.RoutePlan.FG1.F24 = CreateFrame("frame", "AAP.RoutePlanMainFr22ame4", AAP.RoutePlan.FG1)
 	AAP.RoutePlan.FG1.F24:SetWidth(165)
 	AAP.RoutePlan.FG1.F24:SetHeight(275)

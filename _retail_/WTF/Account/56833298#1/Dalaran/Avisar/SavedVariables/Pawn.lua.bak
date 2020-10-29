@@ -84,6 +84,7 @@ PawnOptions = {
 		}, -- [16]
 	},
 	["AutoSelectScales"] = true,
+	["LastKeybindingsSet"] = 1,
 	["LastPlayerFullName"] = "Avisar-Dalaran",
 	["Artifacts"] = {
 		[120978] = {
@@ -98,7 +99,6 @@ PawnOptions = {
 			["Name"] = "Ashbringer",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

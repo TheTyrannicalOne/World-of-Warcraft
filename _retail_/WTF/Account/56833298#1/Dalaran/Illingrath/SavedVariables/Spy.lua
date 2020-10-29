@@ -1,9 +1,5 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
-	["IgnoreData"] = {
-	},
 	["PlayerData"] = {
 		["Mannyribera-Khadgar"] = {
 			["mapID"] = 720,
@@ -488,5 +484,9 @@ SpyPerCharDB = {
 			["subZone"] = "The Fel Hammer",
 		},
 	},
+	["IgnoreData"] = {
+	},
 	["version"] = "1.1",
+	["KOSData"] = {
+	},
 }

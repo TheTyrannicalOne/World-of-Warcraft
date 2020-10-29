@@ -63,15 +63,14 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[35174] = {
-			["title"] = "Pale Moonlight",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 Gnaw Bloodseeker slain", -- [1]
-				"0/8 Pale Devourer slain", -- [2]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[33359] = {
-			["title"] = "Meet Us at Starfall Outpost",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
 			},
 		},
@@ -82,8 +81,8 @@ QuestTogether = {
 				"0/1 Conch Shell", -- [2]
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
+		[36495] = {
+			["title"] = "News from Talador",
 			["objectives"] = {
 			},
 		},
@@ -94,29 +93,9 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[35166] = {
-			["title"] = "Ship Salvage",
-			["objectives"] = {
-				"0/15 Drudgeboat Salvage", -- [1]
-			},
-		},
-		[35633] = {
-			["title"] = "Scout Forensics",
-			["objectives"] = {
-				"0/5 Rangari Pouches recovered", -- [1]
-			},
-		},
 		[38142] = {
 			["title"] = "Archdruid of the Claw",
 			["objectives"] = {
-			},
-		},
-		[42750] = {
-			["title"] = "Dreamcatcher",
-			["objectives"] = {
-				"1/1 Shriektalon Totem siphoned", -- [1]
-				"0/1 Fearfeather Totem siphoned", -- [2]
-				"1/1 Reaverbeak Totem siphoned", -- [3]
 			},
 		},
 		[31891] = {
@@ -129,28 +108,49 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[35166] = {
+			["title"] = "Ship Salvage",
+			["objectives"] = {
+				"0/15 Drudgeboat Salvage", -- [1]
+			},
+		},
+		[42750] = {
+			["title"] = "Dreamcatcher",
+			["objectives"] = {
+				"1/1 Shriektalon Totem siphoned", -- [1]
+				"0/1 Fearfeather Totem siphoned", -- [2]
+				"1/1 Reaverbeak Totem siphoned", -- [3]
+			},
+		},
+		[35633] = {
+			["title"] = "Scout Forensics",
+			["objectives"] = {
+				"0/5 Rangari Pouches recovered", -- [1]
+			},
+		},
 		[36440] = {
 			["title"] = "Saberon Population Reduction",
 			["objectives"] = {
 				"0/10 Steamscar saberon slain", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[33359] = {
+			["title"] = "Meet Us at Starfall Outpost",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[36495] = {
-			["title"] = "News from Talador",
+		[35174] = {
+			["title"] = "Pale Moonlight",
 			["objectives"] = {
+				"0/1 Gnaw Bloodseeker slain", -- [1]
+				"0/8 Pale Devourer slain", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

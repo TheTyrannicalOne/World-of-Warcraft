@@ -8,9 +8,9 @@ XLootADB = {
 						["visible"] = false,
 					},
 					["roll_anchor"] = {
-						["visible"] = false,
-						["x"] = 1595.000122070313,
 						["y"] = 564.0005493164062,
+						["x"] = 1595.000122070313,
+						["visible"] = false,
 					},
 				},
 			},
@@ -22,8 +22,6 @@ XLootADB = {
 				},
 			},
 		},
-		["Master"] = {
-		},
 		["Monitor"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -32,6 +30,8 @@ XLootADB = {
 					},
 				},
 			},
+		},
+		["Master"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -45,21 +45,21 @@ XLootADB = {
 		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Malivant - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
