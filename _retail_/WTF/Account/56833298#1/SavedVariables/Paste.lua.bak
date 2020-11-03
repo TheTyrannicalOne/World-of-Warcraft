@@ -16,8 +16,8 @@ PasteDB = {
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -77,10 +77,10 @@ PasteDB = {
 		["Ruffinton - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Darnastris - Dalaran"] = {

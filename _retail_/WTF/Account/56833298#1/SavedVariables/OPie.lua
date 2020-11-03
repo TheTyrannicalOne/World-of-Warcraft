@@ -35,7 +35,7 @@ OneRing_Config = {
 				["Utility11"] = "ALT-E",
 				["Mounts61"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
-				["Utility9"] = "ALT-E",
+				["Utility8"] = "ALT-E",
 				["Utility5"] = "ALT-E",
 				["Utility3"] = "ALT-E",
 				["Mounts6"] = "ALT-Q",
@@ -50,7 +50,7 @@ OneRing_Config = {
 				["Mounts2"] = "ALT-Q",
 				["Mounts15"] = "ALT-Q",
 				["Mounts4"] = "ALT-Q",
-				["Utility8"] = "ALT-E",
+				["Utility9"] = "ALT-E",
 			},
 		},
 	},
@@ -149,10 +149,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 			},
 			["Utility9"] = {
 				{
@@ -609,10 +609,10 @@ OneRing_Config = {
 					140192, -- [2]
 					["sliceToken"] = "ABuedW477Kes",
 				}, -- [2]
-				["name"] = "Utility",
+				["limit"] = "Durlok-BlackDragonflight",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Utility",
 			},
 			["Utility11"] = {
 				{

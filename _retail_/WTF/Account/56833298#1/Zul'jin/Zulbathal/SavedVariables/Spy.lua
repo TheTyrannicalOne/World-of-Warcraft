@@ -1,10 +1,5 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
-	["KOSData"] = {
-	},
 	["PlayerData"] = {
 		["Hyecho-Stormrage"] = {
 			["mapID"] = 1,
@@ -28,11 +23,11 @@ SpyPerCharDB = {
 			["zone"] = "Frostfire Ridge",
 			["mapY"] = 0.61,
 			["class"] = "HUNTER",
-			["time"] = 1589339205,
-			["isEnemy"] = true,
-			["name"] = "Daehkcarc-Stormrage",
-			["mapX"] = 0.63,
 			["isGuess"] = false,
+			["isEnemy"] = true,
+			["time"] = 1589339205,
+			["mapX"] = 0.63,
+			["name"] = "Daehkcarc-Stormrage",
 			["race"] = "Night Elf",
 			["subZone"] = "Grom'gar",
 			["level"] = 100,
@@ -260,5 +255,10 @@ SpyPerCharDB = {
 			["race"] = "Worgen",
 			["name"] = "Darknova-Whisperwind",
 		},
+	},
+	["IgnoreData"] = {
+	},
+	["version"] = "1.1",
+	["KOSData"] = {
 	},
 }

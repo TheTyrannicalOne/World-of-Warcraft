@@ -46,10 +46,10 @@ HHTD_SavedVariables = {
 		["Ruffinton - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Darnastris - Dalaran"] = {
@@ -77,10 +77,6 @@ HHTD_SavedVariables = {
 			["settingsMigrated"] = false,
 		},
 	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
@@ -97,8 +93,8 @@ HHTD_SavedVariables = {
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -107,6 +103,10 @@ HHTD_SavedVariables = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
 	},
 	["namespaces"] = {
 		["Announcer"] = {

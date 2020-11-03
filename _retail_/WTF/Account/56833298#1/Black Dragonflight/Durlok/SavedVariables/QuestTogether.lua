@@ -65,10 +65,9 @@ QuestTogether = {
 				"2/10  ", -- [1]
 			},
 		},
-		[54042] = {
-			["title"] = "Trouble in Darkshore",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
 		[44989] = {
@@ -84,10 +83,10 @@ QuestTogether = {
 				"Blackmane Defeated.", -- [2]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[50603] = {
@@ -96,16 +95,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
-			},
-		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[31891] = {
@@ -124,22 +117,29 @@ QuestTogether = {
 				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
+		[48641] = {
+			["title"] = "Armies of Legionfall",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+			},
+		},
 		[47105] = {
 			["title"] = "Into The Darkness",
 			["objectives"] = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[54042] = {
+			["title"] = "Trouble in Darkshore",
 			["objectives"] = {
+				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

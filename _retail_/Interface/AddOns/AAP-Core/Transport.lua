@@ -740,6 +740,10 @@ function AAP.FP.GetMeToNextZoneSpecialRe(AAPt_Zone)
 	if (AAP.ActiveMap == "535-DesMephisto-Talador-p1" and AAPt_Zone == 542) then
 		AAPt_Zone = 535
 	end
+	if (AAP.ActiveMap == "550-DesMephisto-Nagrand" and AAPt_Zone == 535) then
+		AAPt_Zone = 550
+	end
+	
 
 	
 	if (AAP.ActiveMap == "1409-Exile's Reach" and AAPt_Zone == 85) then
@@ -2275,7 +2279,13 @@ AAP_Transport_EventFrame:SetScript("OnEvent", function(self, event, ...)
 			local Nodetotake
 			for CLi = 1, NumTaxiNodes() do
 				if (TaxiNodeName(CLi) == AAP.FP.QuedFP) then
-					Nodetotake = CLi
+					if (steps and steps["UseFlightPath"] and TaxiNodeGetType(CLi) == "CURRENT") then
+						AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] + 1
+						AAP.BookingList["UpdateQuest"] = 1
+						AAP.BookingList["PrintQStep"] = 1
+					else
+						Nodetotake = CLi
+					end
 					break
 				end
 			end

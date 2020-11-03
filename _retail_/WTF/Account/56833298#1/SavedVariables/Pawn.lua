@@ -7,12 +7,10 @@ PawnCommon = {
 	["ShowRelicUpgrades"] = false,
 	["ShowValuesForUpgradesOnly"] = true,
 	["ShowItemLevelUpgrades"] = true,
-	["IgnoreGemsWhileLeveling"] = true,
 	["Debug"] = false,
+	["IgnoreGemsWhileLeveling"] = true,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShowSpecIcons"] = true,
-	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -47,10 +45,10 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN1"] = {
 			["IconTexturePath"] = 136048,
 			["PerCharacterOptions"] = {
-				["Kelvalatar-Dalaran"] = {
+				["Fantastiburo-Zul'jin"] = {
 					["Visible"] = true,
 				},
-				["Fantastiburo-Zul'jin"] = {
+				["Kelvalatar-Dalaran"] = {
 					["Visible"] = true,
 				},
 			},
@@ -338,21 +336,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "6464b1",
 			["SpecID"] = 2,
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "006fdc",
-			["LocalizedName"] = "Shaman: Restoration",
-			["ClassID"] = 7,
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "0053a5",
-			["SpecID"] = 3,
-		},
 		["\"MrRobot\":DEMONHUNTER2"] = {
 			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
@@ -371,19 +354,34 @@ PawnCommon = {
 			["UnenchantedColor"] = "792396",
 			["SpecID"] = 2,
 		},
-		["\"MrRobot\":PALADIN2"] = {
-			["IconTexturePath"] = 236264,
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "f38bb9",
-			["LocalizedName"] = "Paladin: Protection",
-			["ClassID"] = 2,
+			["Color"] = "006fdc",
+			["LocalizedName"] = "Shaman: Restoration",
+			["ClassID"] = 7,
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "b6688a",
+			["UnenchantedColor"] = "0053a5",
+			["SpecID"] = 3,
+		},
+		["\"MrRobot\":DRUID2"] = {
+			["IconTexturePath"] = 132115,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "fe7b09",
+			["LocalizedName"] = "Druid: Feral",
+			["ClassID"] = 11,
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["UnenchantedColor"] = "be5c06",
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DEATHKNIGHT1"] = {
@@ -539,19 +537,19 @@ PawnCommon = {
 			["UnenchantedColor"] = "2e93ae",
 			["SpecID"] = 1,
 		},
-		["\"MrRobot\":DRUID2"] = {
-			["IconTexturePath"] = 132115,
+		["\"MrRobot\":PALADIN2"] = {
+			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "fe7b09",
-			["LocalizedName"] = "Druid: Feral",
-			["ClassID"] = 11,
-			["DoNotShow1HUpgrades"] = true,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
+			["Color"] = "f38bb9",
+			["LocalizedName"] = "Paladin: Protection",
+			["ClassID"] = 2,
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "be5c06",
+			["UnenchantedColor"] = "b6688a",
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DRUID3"] = {
@@ -627,7 +625,9 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 	},
-	["LastVersion"] = 2.0402,
+	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
+	["LastVersion"] = 2.0404,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,

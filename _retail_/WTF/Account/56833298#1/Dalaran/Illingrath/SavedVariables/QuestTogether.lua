@@ -162,10 +162,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[48475] = {
+			["title"] = "Seeing Spirits",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"10/10 Gravebloom collected", -- [1]
+				"1/1 Salve created and applied", -- [2]
+				"0/1 Aaron Cresterly freed", -- [3]
 			},
 		},
 		[52194] = {
@@ -174,10 +176,10 @@ QuestTogether = {
 				"0/1 Speak with Genn Greymane", -- [1]
 			},
 		},
-		[53110] = {
-			["title"] = "The High Thornspeaker",
+		[54978] = {
+			["title"] = "Against Overwhelming Odds",
 			["objectives"] = {
-				"0/1 Meet Arthur Tradewind", -- [1]
+				"0/25 Slay Horde Players", -- [1]
 			},
 		},
 		[53436] = {
@@ -193,10 +195,10 @@ QuestTogether = {
 				"0/1 Score 300 Points", -- [2]
 			},
 		},
-		[54978] = {
-			["title"] = "Against Overwhelming Odds",
+		[53110] = {
+			["title"] = "The High Thornspeaker",
 			["objectives"] = {
-				"0/25 Slay Horde Players", -- [1]
+				"0/1 Meet Arthur Tradewind", -- [1]
 			},
 		},
 		[31891] = {
@@ -209,19 +211,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[48475] = {
-			["title"] = "Seeing Spirits",
+		[50600] = {
+			["title"] = "Order of Embers",
 			["objectives"] = {
-				"10/10 Gravebloom collected", -- [1]
-				"1/1 Salve created and applied", -- [2]
-				"0/1 Aaron Cresterly freed", -- [3]
+				"0/4 Complete 4 world quests in Drustvar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }

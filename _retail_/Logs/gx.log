@@ -1,46 +1,53 @@
-10/28 18:49:22.378  LogOpen
-10/28 18:49:22.378  World of Warcraft Retail x86_64 9.0.1.36372
-10/28 18:49:22.378  Windows 10 (10.0.19042) x86_64
-10/28 18:49:22.378         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
-10/28 18:49:22.378  31.9 GB System Memory
-10/28 18:49:22.378  On AC Power - Battery Not Present
-10/28 18:49:22.884  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing vendor:0x10de device:0x1e07 driver(0x1b0015000e1627) location:1 dx11:true dx12:true
-10/28 18:49:22.884  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0x0)
-10/28 18:49:22.884  	Monitor 1 "ZOWIE XL LCD (DisplayPort)" Size(1920x1080) Pos(-1920x353)
-10/28 18:49:22.884  Nvidia driver version: r456_61
-10/28 18:49:22.902  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
-10/28 18:49:22.902  D3d12 Device Create
-10/28 18:49:23.089  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
-10/28 18:49:23.089  Ray Tracing Support: DXR 1.1
-10/28 18:49:23.089  Variable Rate Shading Supported: true
-10/28 18:49:25.021  NotifyOnDeviceCreate
-10/28 18:49:25.021  D3d12 Device Create Successful
-10/28 18:49:25.021  <IsGPUDriverOutOfDate> No
-10/28 18:49:25.021  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7)
-10/28 18:49:25.133  Render Settings Changed. New Render Size: 2560x1440
-10/28 18:49:25.133  RTShadows: 3
-10/28 18:49:28.093  Detected SwapChain::Present Modified
-10/28 18:50:25.582  Render Settings Changed
-10/28 18:51:14.027  Error DeviceRemoved: The GPU device instance has been suspended. Use GetDeviceRemovedReason to determine the appropriate action. (0x887A0005).
-10/28 18:51:14.027  Device Removed Reason: The GPU device instance has been suspended. Use GetDeviceRemovedReason to determine the appropriate action. (0x887A0005).
-10/28 18:51:14.063  Device context was lost. Attempting recovery. Occurrence: 1
-10/28 18:51:14.063  GxRestart
-10/28 18:51:14.063  D3d12 Device Destroy
-10/28 18:51:14.063  NotifyOnDeviceDestroy
-10/28 18:51:14.430  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
-10/28 18:51:14.430  D3d12 Device Create
-10/28 18:51:14.430  Error D3D12 Create Device failed: The GPU device instance has been suspended. Use GetDeviceRemovedReason to determine the appropriate action. (0x887A0005).
-10/28 18:51:14.430  D3d12 Device Create Failed
-10/28 18:51:14.430  D3d12 Device Destroy
-10/28 18:51:14.430  NotifyOnDeviceDestroy
-10/28 18:51:14.443  Trying DX11
-10/28 18:51:14.465  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
-10/28 18:51:15.173  NotifyOnDeviceCreate
-10/28 18:51:18.053  Dx11 Device Create Successful
-10/28 18:51:18.053  <IsGPUDriverOutOfDate> No
-10/28 18:51:18.053  Render Settings Changed
-10/28 18:51:18.053  RTShadows: 0
-10/28 18:51:55.355  Detected SwapChain Present Modified
-10/28 19:24:13.774  Dx11 Device Destroy
-10/28 19:24:13.774  NotifyOnDeviceDestroy
-10/28 19:24:15.265  GxShutdown
+11/2 23:34:49.129  LogOpen
+11/2 23:34:49.129  World of Warcraft Retail x86_64 9.0.1.36372
+11/2 23:34:49.129  Windows 10 (10.0.19042) x86_64
+11/2 23:34:49.129         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
+11/2 23:34:49.129  31.9 GB System Memory
+11/2 23:34:49.129  On AC Power - Battery Not Present
+11/2 23:34:49.477  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing vendor:0x10de device:0x1e07 driver(0x1b0015000e164d) location:1 dx11:true dx12:true
+11/2 23:34:49.477  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0x0)
+11/2 23:34:49.477  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920x353)
+11/2 23:34:49.477  Nvidia driver version: r456_87
+11/2 23:34:49.493  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
+11/2 23:34:49.493  D3d12 Device Create
+11/2 23:34:49.664  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
+11/2 23:34:49.664  Ray Tracing Support: DXR 1.1
+11/2 23:34:49.664  Variable Rate Shading Supported: true
+11/2 23:34:51.235  NotifyOnDeviceCreate
+11/2 23:34:51.246  D3d12 Device Create Successful
+11/2 23:34:51.246  <IsGPUDriverOutOfDate> No
+11/2 23:34:51.246  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7)
+11/2 23:34:51.344  Render Settings Changed. New Render Size: 2560x1440
+11/2 23:34:51.344  RTShadows: 3
+11/2 23:34:53.026  Detected SwapChain::Present Modified
+11/2 23:35:18.702  Render Settings Changed
+11/2 23:35:18.702  RTShadows: 0
+11/2 23:51:01.958  Render Settings Changed
+11/2 23:51:01.958  RTShadows: 3
+11/2 23:54:28.932  Error DeviceRemoved: The GPU device instance has been suspended. Use GetDeviceRemovedReason to determine the appropriate action. (0x887A0005).
+11/2 23:54:28.932  Device Removed Reason: The GPU device instance has been suspended. Use GetDeviceRemovedReason to determine the appropriate action. (0x887A0005).
+11/2 23:54:28.952  Device context was lost. Attempting recovery. Occurrence: 1
+11/2 23:54:28.952  GxRestart
+11/2 23:54:28.952  D3d12 Device Destroy
+11/2 23:54:28.952  NotifyOnDeviceDestroy
+11/2 23:54:29.489  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
+11/2 23:54:29.489  D3d12 Device Create
+11/2 23:54:29.489  Error D3D12 Create Device failed: The GPU device instance has been suspended. Use GetDeviceRemovedReason to determine the appropriate action. (0x887A0005).
+11/2 23:54:29.489  D3d12 Device Create Failed
+11/2 23:54:29.489  D3d12 Device Destroy
+11/2 23:54:29.489  NotifyOnDeviceDestroy
+11/2 23:54:29.507  Trying DX11
+11/2 23:54:29.535  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
+11/2 23:54:30.204  NotifyOnDeviceCreate
+11/2 23:54:33.013  Dx11 Device Create Successful
+11/2 23:54:33.013  <IsGPUDriverOutOfDate> No
+11/2 23:54:33.013  Render Settings Changed
+11/2 23:54:33.013  RTShadows: 0
+11/2 23:54:34.739  Detected SwapChain Present Modified
+11/3 00:03:02.145  Render Settings Changed
+11/3 00:16:30.424  Render Settings Changed
+11/3 00:31:39.695  Render Settings Changed
+11/3 00:44:17.184  Render Settings Changed
+11/3 01:04:28.861  Dx11 Device Destroy
+11/3 01:04:28.861  NotifyOnDeviceDestroy
+11/3 01:04:30.221  GxShutdown

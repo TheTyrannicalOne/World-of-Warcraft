@@ -1,0 +1,2898 @@
+﻿==============================================================================
+World of Warcraft: Retail Build (build 36372)
+
+Exe:      D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe
+Command:  "D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe" -launcherlogin -uid wow
+Time:     Oct 29, 2020  7:03:06.913 PM
+User:     rc_ba
+Computer: WIN10PRO-ULT
+------------------------------------------------------------------------------
+
+This application has encountered a critical error:
+
+ERROR #132 (0x85100084) Fatal exception!
+
+Program:	D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe
+ProcessID:	21396
+ThreadID:	9312
+Exception:	ACCESS_VIOLATION
+
+The instruction at "0x00007ff70ad87ae1" referenced memory at "0x00000178dfcae0c8".
+The memory could not be "read".
+
+<Exception.IssueType> Exception
+<ExceptionType> Crash
+<Exception.Summary:>
+ACCESS_VIOLATION
+(DBG-OPTIONS<FunctionsOnly SingleLine> DBG-ADDR<00007ff70ad87ae1>("Wow.exe") <- DBG-ADDR<00007ff70ad7e501>("Wow.exe") <- DBG-ADDR<00007ff70adccf09>("Wow.exe") DBG-OPTIONS<>)
+The instruction at "0x00007ff70ad87ae1" referenced memory at "0x00000178dfcae0c8".
+The memory could not be "read".
+<:Exception.Summary>
+<Exception.Assertion:>
+DBG-ADDR<00007ff70ad87ae1>("Wow.exe")
+DBG-ADDR<00007ff70ad7e501>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+<:Exception.Assertion>
+<Exception.HashBlock:>
+DBG-OPTIONS<NoImage NoAddress NoFileLine NoFuncOffset NoDbgAddr>
+ERROR #132
+DBG-ADDR<00007ff70ad87ae1>("Wow.exe")
+DBG-ADDR<00007ff70ad7e501>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-OPTIONS<>
+<:Exception.HashBlock>
+<Version> 9.0.1.36372
+<Config> Retail
+Revision: 1073608
+<Jira.JiraProjectId> 11106
+<Jira.JiraProjectKey> WOW9
+<Exception.ProjectId> 10
+<Exception.BuildNumber> 36372
+<Exception.Branch> 9.0.1
+<WowProject> Mainline
+<Application> World of Warcraft
+<ApplicationType> Client
+Type: WoW
+<Executable> Wow.exe
+Executable UUID: 58719A22-FB33-4EC2-9157-495A77170EC3
+<Wow.Platform> X64
+<Exception.Platform> Win 10 (64-bit)
+User: rc_ba
+Computer: WIN10PRO-ULT
+Virtual Memory: 0.00 MB
+Free Disk Space: 51.48 GB
+Exe Built: Oct 23 2020 11:51:49
+<InitFlags> 0000007F 00001FFF 00000400
+App Up Time: 0 days, 0 hours, 42 minutes, 19 seconds
+System Up Time: 0 days, 1 hours, 37 minutes, 14 seconds
+<TimingMethod> QueryPerformanceCounter
+Current Frame: 161965
+Current Time: 5833615
+Current Tick: 15
+<SystemResumes> 0
+<CharLogins> 1
+Number of thread pool threads (Total): 27
+<LauncherName> Battle.net.exe
+<Locale.Text> enUS
+<Locale.Audio> enUS
+Session Time(hh:mm:ss): 00:42:08
+<SessionTime.Grouping> 00:30:00 - 00:59:59
+Time in World(hh:mm:ss): 00:41:55
+<TimeInWorld.Grouping> 00:30:00 - 00:59:59
+Total Time in World(hh:mm:ss): 00:41:55
+<TotalTimeInWorld.Grouping> 00:30:00 - 00:59:59
+<Set.Addons.All.Loaded> AllTheThings 2.1.2
+<Set.Addons.All.Loaded> AAP-Core 9.053
+<Set.Addons.All.Loaded> AceGUI-3.0_SFX-Widgets 1.0.4
+<Set.Addons.All.Loaded> AchievementsReminder
+<Set.Addons.All.Loaded> AckisRecipeList 9.0.2
+<Set.Addons.All.Loaded> ActionBarProfiles 9.0.1-1
+<Set.Addons.All.Loaded> ACP 3.5.7 
+<Set.Addons.All.Loaded> AdventureGuideLockouts 1.3.4
+<Set.Addons.All.Loaded> AngryWorldQuests
+<Set.Addons.All.Loaded> AzeritePowerWeights 8.3.14
+<Set.Addons.All.Loaded> AzeriteTooltip 2.0.9
+<Set.Addons.All.Loaded> BattlePetBattleStats 1.0.11
+<Set.Addons.All.Loaded> BattlePetBreedID r211
+<Set.Addons.All.Loaded> BetterBattlePetTooltip 8.0.0.0
+<Set.Addons.All.Loaded> BFAInvasionTimer v9.0.2
+<Set.Addons.All.Loaded> BigWigs v185.4
+<Set.Addons.All.Loaded> BigWigs_Voice_Arnold 0.11
+<Set.Addons.All.Loaded> BonusRollPreview 90000.48-Release
+<Set.Addons.All.Loaded> BtWQuests 1.73.3
+<Set.Addons.All.Loaded> BtWQuestsBattleForAzeroth 53.2
+<Set.Addons.All.Loaded> BtWQuestsBattleForAzerothPrologue 15
+<Set.Addons.All.Loaded> BtWQuestsLegion 29.1
+<Set.Addons.All.Loaded> BuyEmAll 3.5.9
+<Set.Addons.All.Loaded> CanIMogIt 9.0.1v1.28
+<Set.Addons.All.Loaded> Clique v90001-1.0.1
+<Set.Addons.All.Loaded> CritterEmote 1.8
+<Set.Addons.All.Loaded> DeathNote 90001.0-release
+<Set.Addons.All.Loaded> DerangementMinimapBlips v1.1.8
+<Set.Addons.All.Loaded> DerangementShieldMeters v1.0.7
+<Set.Addons.All.Loaded> DialogKey 1.7.3
+<Set.Addons.All.Loaded> EasyScrap 30
+<Set.Addons.All.Loaded> EasyDeleteConfirm
+<Set.Addons.All.Loaded> FishingBuddy 1.11 Beta 1
+<Set.Addons.All.Loaded> FB_TrackingFrame 1.10.2
+<Set.Addons.All.Loaded> GatherMate2 1.46.0
+<Set.Addons.All.Loaded> Grail 112
+<Set.Addons.All.Loaded> Grail-NPCs-_retail_ 27178
+<Set.Addons.All.Loaded> Grail-NPCs-_retail_-enUS 27178
+<Set.Addons.All.Loaded> Grail-Quests-_retail_ 31478
+<Set.Addons.All.Loaded> Grail-Quests-_retail_-enUS 31478
+<Set.Addons.All.Loaded> Grail-Reputations-_retail_ 007
+<Set.Addons.All.Loaded> Grail-Achievements 011
+<Set.Addons.All.Loaded> GTFO 4.56.2
+<Set.Addons.All.Loaded> HHTD 2.4.9.6
+<Set.Addons.All.Loaded> HandyNotes v1.6.0
+<Set.Addons.All.Loaded> HandyNotes_Argus v0.19
+<Set.Addons.All.Loaded> HandyNotes_BrokenShore v1.38
+<Set.Addons.All.Loaded> HandyNotes_Achievements 0.5.0
+<Set.Addons.All.Loaded> HandyNotes_BattleForAzerothTreasures 1
+<Set.Addons.All.Loaded> HandyNotes_FieldPhotographer 8.0.0.0
+<Set.Addons.All.Loaded> HandyNotes_MechagonAndNazjatar 16
+<Set.Addons.All.Loaded> HandyNotes_VisionsOfNZoth 41
+<Set.Addons.All.Loaded> HandyNotes_WarfrontTreasures 1
+<Set.Addons.All.Loaded> HandyNotes_AzerothsTopTunes v1.3.1
+<Set.Addons.All.Loaded> HandyNotes_DraenorTreasures 1.21
+<Set.Addons.All.Loaded> HandyNotes_DungeonLocations 1.51
+<Set.Addons.All.Loaded> HandyNotes_HallowsEnd v1.5.1
+<Set.Addons.All.Loaded> HandyNotes_LegionRaresTreasures 1.1
+<Set.Addons.All.Loaded> HandyNotes_LegionTreasures 1
+<Set.Addons.All.Loaded> HandyNotes_LunarFestival v1.6.2
+<Set.Addons.All.Loaded> HandyNotes_SummerFestival v1.6.2
+<Set.Addons.All.Loaded> HandyNotes_TimelessIsle_RareElites 2.32
+<Set.Addons.All.Loaded> HandyNotes_TimelessIsleChests 1.23
+<Set.Addons.All.Loaded> HandyNotes_TimelessTreasures 1.1.0
+<Set.Addons.All.Loaded> HandyNotes_WarfrontRares 0.5.0
+<Set.Addons.All.Loaded> Hekili v9.0.1-1.0.16
+<Set.Addons.All.Loaded> Immersion 1.2.5
+<Set.Addons.All.Loaded> !KalielsTracker 4.1.0
+<Set.Addons.All.Loaded> Kib_QuestMobs 1.15
+<Set.Addons.All.Loaded> Leatrix_Plus 9.0.02
+<Set.Addons.All.Loaded> LegionWardrobe 33
+<Set.Addons.All.Loaded> LegionInvasionTimer v9.0.2
+<Set.Addons.All.Loaded> Ace3 r1243
+<Set.Addons.All.Loaded> LibPetJournal-2.0
+<Set.Addons.All.Loaded> MacroToolkit v7.3.0.2
+<Set.Addons.All.Loaded> MacroToolkitIcons 7.2.0.0
+<Set.Addons.All.Loaded> Masque 9.0.2
+<Set.Addons.All.Loaded> MasterPlanA A
+<Set.Addons.All.Loaded> MikScrollingBattleText 5.7.152
+<Set.Addons.All.Loaded> MBB 4.0.1
+<Set.Addons.All.Loaded> mOnArs_WardrobeHelper 1.20
+<Set.Addons.All.Loaded> MountJournalEnhanced 2.9.3
+<Set.Addons.All.Loaded> MoveAnything 18.0.3
+<Set.Addons.All.Loaded> MyMountspecial 8.0.1.0
+<Set.Addons.All.Loaded> NomiCakes 8.3.0.1
+<Set.Addons.All.Loaded> NPCScan 9.0.1.2
+<Set.Addons.All.Loaded> Omen 3.2.3
+<Set.Addons.All.Loaded> OmniCC 9.0.1
+<Set.Addons.All.Loaded> OPie Xe 1a
+<Set.Addons.All.Loaded> OPieMasque 7.3.5.0
+<Set.Addons.All.Loaded> Overachiever 1.1.1
+<Set.Addons.All.Loaded> Overachiever_Cache 1.1.1
+<Set.Addons.All.Loaded> Overachiever_Tabs 1.1.1
+<Set.Addons.All.Loaded> Overachiever_Trade 1.1.1
+<Set.Addons.All.Loaded> Paste 1.4.10
+<Set.Addons.All.Loaded> Pawn 2.4.2
+<Set.Addons.All.Loaded> PersonalLootHelper 2.23
+<Set.Addons.All.Loaded> PetEmote v1.8.14
+<Set.Addons.All.Loaded> PetTracker 9.0.1
+<Set.Addons.All.Loaded> PetTracker_Journal
+<Set.Addons.All.Loaded> QuestTogether 2.1.12
+<Set.Addons.All.Loaded> RandomHearthToy 1.4.2
+<Set.Addons.All.Loaded> RareShare v1.0.1
+<Set.Addons.All.Loaded> RareShare_Uldum v0.6.0
+<Set.Addons.All.Loaded> RareShareNazjatar v1.0.0
+<Set.Addons.All.Loaded> RareShare_Vale of Eternal Blossoms v0.1.1
+<Set.Addons.All.Loaded> RareShareMechagon v1.0.0
+<Set.Addons.All.Loaded> RareScanner 9.0.1.3
+<Set.Addons.All.Loaded> Rarity 1.0 (r700-release-5)
+<Set.Addons.All.Loaded> Rarity_Options
+<Set.Addons.All.Loaded> RCLootCouncil 2.19.3
+<Set.Addons.All.Loaded> Rematch 4.11.6
+<Set.Addons.All.Loaded> Rematch_TSMPetValues 1.1.19
+<Set.Addons.All.Loaded> RematchElvUISkin 1.2.2
+<Set.Addons.All.Loaded> Skada 1.8.2
+<Set.Addons.All.Loaded> Spy 3.8.1
+<Set.Addons.All.Loaded> TargetNameplateIndicator 1.36
+<Set.Addons.All.Loaded> TomTom v90001-1.1.5
+<Set.Addons.All.Loaded> TransmogTokens 1.4.9
+<Set.Addons.All.Loaded> WarfrontRareTracker 1.2.1-1
+<Set.Addons.All.Loaded> WeakAuras 3.0.5
+<Set.Addons.All.Loaded> WhisperInvite 2.1.7
+<Set.Addons.All.Loaded> Wholly 080
+<Set.Addons.All.Loaded> WoWDBProfiler
+<Set.Addons.All.Loaded> WoWGatheringNodes V9.0.1_Update
+<Set.Addons.All.Loaded> XLoot 9.0-2
+<Set.Addons.All.Loaded> XLoot_Frame 9.0-2
+<Set.Addons.All.Loaded> XLoot_Group 9.0-2
+<Set.Addons.All.Loaded> XLoot_Master 9.0-2
+<Set.Addons.All.Loaded> XLoot_Monitor 9.0-2
+<Set.Addons.All.Loaded> ParagonReputation 1.31
+<Set.Addons.All.Loaded> DejaCharacterStats 900r1
+<Set.Addons.All.Loaded> TradeSkillMaster v4.10.13
+<Set.Addons.All.Loaded> PetBattleFFVictory |cffFF4500v1.2.9|r
+<Set.Addons.All.Loaded> TradeSkillMaster_AppHelper v4.0.9
+<Set.Addons.All.Loaded> ElvUI 12.06
+<Set.Addons.All.Loaded> ElvUI_SLE 4.08
+<Set.Addons.All.Loaded> ElvUI_CliqueDatatext 1.11
+<Set.Addons.All.Loaded> Narcissus 1.1.0c
+<Set.Addons.All.Unloaded> AllTheThings
+<Set.Addons.All.Unloaded> AAP-Core
+<Set.Addons.All.Unloaded> AAP-EasternKingdoms
+<Set.Addons.All.Unloaded> AAP-Shadowlands
+<Set.Addons.All.Unloaded> AceGUI-3.0_SFX-Widgets
+<Set.Addons.All.Unloaded> AchievementsReminder
+<Set.Addons.All.Unloaded> AckisRecipeList
+<Set.Addons.All.Unloaded> AckisRecipeList_Alchemy
+<Set.Addons.All.Unloaded> AckisRecipeList_Blacksmithing
+<Set.Addons.All.Unloaded> AckisRecipeList_Cooking
+<Set.Addons.All.Unloaded> AckisRecipeList_Enchanting
+<Set.Addons.All.Unloaded> AckisRecipeList_Engineering
+<Set.Addons.All.Unloaded> AckisRecipeList_Inscription
+<Set.Addons.All.Unloaded> AckisRecipeList_Jewelcrafting
+<Set.Addons.All.Unloaded> AckisRecipeList_Leatherworking
+<Set.Addons.All.Unloaded> AckisRecipeList_Mining
+<Set.Addons.All.Unloaded> AckisRecipeList_Tailoring
+<Set.Addons.All.Unloaded> ActionBarProfiles
+<Set.Addons.All.Unloaded> ACP
+<Set.Addons.All.Unloaded> AdventureGuideLockouts
+<Set.Addons.All.Unloaded> AngryWorldQuests
+<Set.Addons.All.Unloaded> AzeritePowerWeights
+<Set.Addons.All.Unloaded> AzeriteTooltip
+<Set.Addons.All.Unloaded> hqAzerothAtWar
+<Set.Addons.All.Unloaded> BattlePetBattleStats
+<Set.Addons.All.Unloaded> BattlePetBreedID
+<Set.Addons.All.Unloaded> BetterBattlePetTooltip
+<Set.Addons.All.Unloaded> BFAInvasionTimer
+<Set.Addons.All.Unloaded> BFAInvasionTimer_Options
+<Set.Addons.All.Unloaded> BigWigs
+<Set.Addons.All.Unloaded> BigWigs_Azeroth
+<Set.Addons.All.Unloaded> BigWigs_BattleOfDazaralor
+<Set.Addons.All.Unloaded> BigWigs_BurningCrusade
+<Set.Addons.All.Unloaded> BigWigs_CastleNathria
+<Set.Addons.All.Unloaded> BigWigs_Cataclysm
+<Set.Addons.All.Unloaded> BigWigs_Classic
+<Set.Addons.All.Unloaded> BigWigs_Core
+<Set.Addons.All.Unloaded> BigWigs_CrucibleOfStorms
+<Set.Addons.All.Unloaded> BigWigs_Legion
+<Set.Addons.All.Unloaded> BigWigs_MistsOfPandaria
+<Set.Addons.All.Unloaded> BigWigs_Nyalotha
+<Set.Addons.All.Unloaded> BigWigs_Options
+<Set.Addons.All.Unloaded> BigWigs_Plugins
+<Set.Addons.All.Unloaded> BigWigs_EternalPalace
+<Set.Addons.All.Unloaded> BigWigs_Uldir
+<Set.Addons.All.Unloaded> BigWigs_WarlordsOfDraenor
+<Set.Addons.All.Unloaded> BigWigs_WrathOfTheLichKing
+<Set.Addons.All.Unloaded> BigWigs_CommonAuras
+<Set.Addons.All.Unloaded> BigWigs_Voice_Arnold
+<Set.Addons.All.Unloaded> BonusRollPreview
+<Set.Addons.All.Unloaded> BtWQuests
+<Set.Addons.All.Unloaded> BtWQuestsBattleForAzeroth
+<Set.Addons.All.Unloaded> BtWQuestsBattleForAzerothPrologue
+<Set.Addons.All.Unloaded> BtWQuestsCataclysm
+<Set.Addons.All.Unloaded> BtWQuestsClassic
+<Set.Addons.All.Unloaded> BtWQuestsLegion
+<Set.Addons.All.Unloaded> BuyEmAll
+<Set.Addons.All.Unloaded> CanIMogIt
+<Set.Addons.All.Unloaded> ChampionCommander
+<Set.Addons.All.Unloaded> Clique
+<Set.Addons.All.Unloaded> CritterEmote
+<Set.Addons.All.Unloaded> DeathNote
+<Set.Addons.All.Unloaded> DerangementMinimapBlips
+<Set.Addons.All.Unloaded> DerangementShieldMeters
+<Set.Addons.All.Unloaded> DialogKey
+<Set.Addons.All.Unloaded> EasyScrap
+<Set.Addons.All.Unloaded> EasyDeleteConfirm
+<Set.Addons.All.Unloaded> FishingBuddy
+<Set.Addons.All.Unloaded> FB_TrackingFrame
+<Set.Addons.All.Unloaded> GarrisonMissionManager
+<Set.Addons.All.Unloaded> GatherMate2
+<Set.Addons.All.Unloaded> Grail
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-deDE
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-enUS
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-esES
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-esMX
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-frFR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-itIT
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-koKR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-ptBR
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-ruRU
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-zhCN
+<Set.Addons.All.Unloaded> Grail-NPCs-_retail_-zhTW
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-deDE
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-enUS
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-esES
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-esMX
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-frFR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-itIT
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-koKR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-ptBR
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-ruRU
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-zhCN
+<Set.Addons.All.Unloaded> Grail-NPCs-_classic_-zhTW
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-deDE
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-enUS
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-esES
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-esMX
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-frFR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-itIT
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-koKR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-ptBR
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-ruRU
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-zhCN
+<Set.Addons.All.Unloaded> Grail-Quests-_retail_-zhTW
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-deDE
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-enUS
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-esES
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-esMX
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-frFR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-itIT
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-koKR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-ptBR
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-ruRU
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-zhCN
+<Set.Addons.All.Unloaded> Grail-Quests-_classic_-zhTW
+<Set.Addons.All.Unloaded> Grail-Reputations-_retail_
+<Set.Addons.All.Unloaded> Grail-Reputations-_classic_
+<Set.Addons.All.Unloaded> Grail-Achievements
+<Set.Addons.All.Unloaded> Grail-Rewards
+<Set.Addons.All.Unloaded> Grail-When
+<Set.Addons.All.Unloaded> GTFO
+<Set.Addons.All.Unloaded> HHTD
+<Set.Addons.All.Unloaded> HandyNotes
+<Set.Addons.All.Unloaded> HandyNotes_Argus
+<Set.Addons.All.Unloaded> HandyNotes_BrokenShore
+<Set.Addons.All.Unloaded> HandyNotes_Achievements
+<Set.Addons.All.Unloaded> HandyNotes_BattleForAzerothTreasures
+<Set.Addons.All.Unloaded> HandyNotes_FieldPhotographer
+<Set.Addons.All.Unloaded> HandyNotes_MechagonAndNazjatar
+<Set.Addons.All.Unloaded> HandyNotes_VisionsOfNZoth
+<Set.Addons.All.Unloaded> HandyNotes_WarfrontTreasures
+<Set.Addons.All.Unloaded> HandyNotes_AzerothsTopTunes
+<Set.Addons.All.Unloaded> HandyNotes_DraenorTreasures
+<Set.Addons.All.Unloaded> HandyNotes_DungeonLocations
+<Set.Addons.All.Unloaded> HandyNotes_HallowsEnd
+<Set.Addons.All.Unloaded> HandyNotes_LegionRaresTreasures
+<Set.Addons.All.Unloaded> HandyNotes_LegionTreasures
+<Set.Addons.All.Unloaded> HandyNotes_LunarFestival
+<Set.Addons.All.Unloaded> HandyNotes_SummerFestival
+<Set.Addons.All.Unloaded> HandyNotes_TimelessIsle_RareElites
+<Set.Addons.All.Unloaded> HandyNotes_TimelessIsleChests
+<Set.Addons.All.Unloaded> HandyNotes_TimelessTreasures
+<Set.Addons.All.Unloaded> HandyNotes_WarfrontRares
+<Set.Addons.All.Unloaded> Hekili
+<Set.Addons.All.Unloaded> Immersion
+<Set.Addons.All.Unloaded> !KalielsTracker
+<Set.Addons.All.Unloaded> Kib_QuestMobs
+<Set.Addons.All.Unloaded> Leatrix_Plus
+<Set.Addons.All.Unloaded> LegionWardrobe
+<Set.Addons.All.Unloaded> LegionWardrobeData
+<Set.Addons.All.Unloaded> LegionInvasionTimer
+<Set.Addons.All.Unloaded> LegionInvasionTimer_Options
+<Set.Addons.All.Unloaded> Ace3
+<Set.Addons.All.Unloaded> LibPetJournal-2.0
+<Set.Addons.All.Unloaded> LittleWigs
+<Set.Addons.All.Unloaded> MacroToolkit
+<Set.Addons.All.Unloaded> MacroToolkitIcons
+<Set.Addons.All.Unloaded> Masque
+<Set.Addons.All.Unloaded> MasterPlan
+<Set.Addons.All.Unloaded> MasterPlanA
+<Set.Addons.All.Unloaded> MikScrollingBattleText
+<Set.Addons.All.Unloaded> MBB
+<Set.Addons.All.Unloaded> mOnArs_WardrobeHelper
+<Set.Addons.All.Unloaded> MountJournalEnhanced
+<Set.Addons.All.Unloaded> MoveAnything
+<Set.Addons.All.Unloaded> MSBTOptions
+<Set.Addons.All.Unloaded> MyMountspecial
+<Set.Addons.All.Unloaded> NomiCakes
+<Set.Addons.All.Unloaded> NPCScan
+<Set.Addons.All.Unloaded> Omen
+<Set.Addons.All.Unloaded> OmniCC
+<Set.Addons.All.Unloaded> OmniCC_Config
+<Set.Addons.All.Unloaded> OPie
+<Set.Addons.All.Unloaded> OPieMasque
+<Set.Addons.All.Unloaded> OrderHallCommander
+<Set.Addons.All.Unloaded> Overachiever
+<Set.Addons.All.Unloaded> Overachiever_Cache
+<Set.Addons.All.Unloaded> Overachiever_Tabs
+<Set.Addons.All.Unloaded> Overachiever_Trade
+<Set.Addons.All.Unloaded> Paste
+<Set.Addons.All.Unloaded> Pawn
+<Set.Addons.All.Unloaded> PersonalLootHelper
+<Set.Addons.All.Unloaded> PetEmote
+<Set.Addons.All.Unloaded> PetTracker
+<Set.Addons.All.Unloaded> PetTracker_Battle
+<Set.Addons.All.Unloaded> PetTracker_Config
+<Set.Addons.All.Unloaded> PetTracker_Journal
+<Set.Addons.All.Unloaded> QuestTogether
+<Set.Addons.All.Unloaded> RandomHearthToy
+<Set.Addons.All.Unloaded> RareShare
+<Set.Addons.All.Unloaded> RareShare_Uldum
+<Set.Addons.All.Unloaded> RareShareNazjatar
+<Set.Addons.All.Unloaded> RareShare_Vale of Eternal Blossoms
+<Set.Addons.All.Unloaded> RareShareMechagon
+<Set.Addons.All.Unloaded> RareScanner
+<Set.Addons.All.Unloaded> Rarity
+<Set.Addons.All.Unloaded> Rarity_Options
+<Set.Addons.All.Unloaded> RCLootCouncil
+<Set.Addons.All.Unloaded> Rematch
+<Set.Addons.All.Unloaded> Rematch_TSMPetValues
+<Set.Addons.All.Unloaded> RematchElvUISkin
+<Set.Addons.All.Unloaded> Skada
+<Set.Addons.All.Unloaded> Spy
+<Set.Addons.All.Unloaded> TargetNameplateIndicator
+<Set.Addons.All.Unloaded> TomTom
+<Set.Addons.All.Unloaded> TransmogTokens
+<Set.Addons.All.Unloaded> WarfrontRareTracker
+<Set.Addons.All.Unloaded> WeakAuras
+<Set.Addons.All.Unloaded> WeakAurasArchive
+<Set.Addons.All.Unloaded> WeakAurasModelPaths
+<Set.Addons.All.Unloaded> WeakAurasOptions
+<Set.Addons.All.Unloaded> WeakAurasTemplates
+<Set.Addons.All.Unloaded> WhisperInvite
+<Set.Addons.All.Unloaded> WhisperInviteAdvanced
+<Set.Addons.All.Unloaded> WhisperInviteBasic
+<Set.Addons.All.Unloaded> Wholly
+<Set.Addons.All.Unloaded> WoWDBProfiler
+<Set.Addons.All.Unloaded> WoWGatheringNodes
+<Set.Addons.All.Unloaded> XLoot
+<Set.Addons.All.Unloaded> XLoot_Frame
+<Set.Addons.All.Unloaded> XLoot_Group
+<Set.Addons.All.Unloaded> XLoot_Master
+<Set.Addons.All.Unloaded> XLoot_Monitor
+<Set.Addons.All.Unloaded> XLoot_Options
+<Set.Addons.All.Unloaded> ParagonReputation
+<Set.Addons.All.Unloaded> DejaCharacterStats
+<Set.Addons.All.Unloaded> TradeSkillMaster
+<Set.Addons.All.Unloaded> PetBattleFFVictory
+<Set.Addons.All.Unloaded> TradeSkillMaster_AppHelper
+<Set.Addons.All.Unloaded> ElvUI
+<Set.Addons.All.Unloaded> ElvUI_OptionsUI
+<Set.Addons.All.Unloaded> ElvUI_SLE
+<Set.Addons.All.Unloaded> ElvUI_CliqueDatatext
+<Set.Addons.All.Unloaded> Narcissus
+<Set.Addons.All.Unloaded> Narcissus_Database
+<Set.Addons.All.Unloaded> Narcissus_Barbershop
+<Addons.HasAny.Loading> No
+<Addons.HasAny.Loaded> Yes
+<UIReloads> 0
+<LuaErrors> 9
+<BGDLEnabled> No
+<IME.Current> "", {00000000-0000-0000-0000000000000000}, inactive
+<SoundSystem.Restarts> 0
+<LoadingScreen.Enabled> No
+<CombatLogEntry.Current> CombatLogEntry::PushEvent(casterGuidType, targetGuidType): 2, 2
+Number of successful WoWConnections: 16
+<Realm.Name> Argent Dawn
+<Realm.IP> [2a04:e800:5020:1823:f816:3aff:feaf:aea9]:3724
+<Realm.Version> 9.0.1.36072
+<Realm.Flags> 0xA0
+Battle Tag: Tyrannical#1115
+<MapId> 870
+<LocalZone.Name> Autumnshade Ridge, Vale of Eternal Blossoms
+<LocalZone.AreaID> 11108
+Local Player: Shanyt, Player-75-058380E2, (1795, 1450.47, 2148.53, 364.193)
+Locked Target: Nightskull, Player-3684-0B220EE2, (1795, 1457, 2151.64, 364.865)
+Selected Player: Player-75-058380E2
+<Character.Info.Race> Undead
+<Character.Info.Class> Warrior
+<Character.Info.Spec> Arms
+
+CVar Settings: 
+<CVar.portal> US
+<CVar.textLocale> enUS
+<CVar.audioLocale> enUS
+<CVar.agentUID> wow
+<CVar.hwDetect> 0
+<CVar.videoOptionsVersion> 28
+<CVar.gxApi> D3D12
+<CVar.gxMaximize> 1
+<CVar.farclip> 10000
+<CVar.horizonStart> 4000
+<CVar.waterDetail> 3
+<CVar.sunShafts> 2
+<CVar.refraction> 2
+<CVar.groundEffectDensity> 256
+<CVar.groundEffectDist> 320
+<CVar.projectedTextures> 1
+<CVar.shadowMode> 4
+<CVar.shadowTextureSize> 2048
+<CVar.SSAO> 4
+<CVar.terrainLodDist> 650
+<CVar.wmoLodDist> 400
+<CVar.OutlineEngineMode> 2
+<CVar.lodObjectCullSize> 14
+<CVar.RAIDfarclip> 6000
+<CVar.RAIDWaterDetail> 2
+<CVar.RAIDSSAO> 2
+<CVar.RAIDgroundEffectDensity> 64
+<CVar.RAIDgroundEffectDist> 160
+<CVar.RAIDshadowMode> 2
+<CVar.RAIDwmoLodDist> 350
+<CVar.RAIDhorizonStart> 1400
+<CVar.RAIDentityShadowFadeScale> 20
+<CVar.RAIDtextureFilteringMode> 3.000000
+<CVar.RAIDprojectedTextures> 1
+<CVar.RAIDreflectionMode> 0
+<CVar.RAIDrippleDetail> 1
+<CVar.RAIDsunShafts> 1
+<CVar.RAIDparticleDensity> 50
+<CVar.RAIDrefraction> 1
+<CVar.RAIDOutlineEngineMode> 1
+<CVar.RAIDlodObjectCullSize> 20
+<CVar.RAIDlodObjectMinSize> 0
+<CVar.weatherDensity> 3
+<CVar.RAIDweatherDensity> 3
+<CVar.graphicsTextureResolution> 3
+<CVar.graphicsTextureFiltering> 6
+<CVar.graphicsGroundClutter> 10
+<CVar.raidGraphicsEnvironmentDetail> 5
+<CVar.raidGraphicsGroundClutter> 5
+<CVar.raidGraphicsParticleDensity> 4
+<CVar.raidGraphicsDepthEffects> 3
+<CVar.raidGraphicsOutlineMode> 2
+<CVar.playIntroMovie> 9
+<CVar.expandUpgradePanel> 0
+<CVar.seenAlliedRaceUnlocks> A@@@|{A
+<CVar.Sound_MusicVolume> 0.40000000596046
+<CVar.Sound_AmbienceVolume> 0.60000002384186
+<CVar.gxWindowedResolution> 2560x1440
+<CVar.engineSurvey> 8
+<CVar.mouseSpeed> 1
+<CVar.gameTip> 157
+<CVar.twitterGetConfigTime> 1602537150910
+<CVar.CACHE-WQST-QuestV2RecordCount> 44542
+<CVar.CACHE-WQST-QuestV2HotfixCount> 2
+<CVar.CACHE-WQST-QuestObjectiveRecordCount> 45911
+<CVar.CACHE-WQST-QuestObjectiveHotfixCount> 0
+<CVar.CACHE-WQST-QuestObjectiveXEffectRecordCount> 17703
+<CVar.CACHE-WQST-QuestObjectiveXEffectHotfixCount> 0
+<CVar.CACHE-WGOB-GameObjectsRecordCount> 93290
+<CVar.CACHE-WGOB-GameObjectsHotfixCount> 0
+<CVar.screenshotQuality> 10
+<CVar.VoiceChatMasterVolumeScale> 1.000000
+<CVar.checkAddonVersion> 0
+<CVar.lastAddonVersion> 90001
+<CVar.spellEffectLevel> 125
+<CVar.useIPv6> 1
+<CVar.RAIDsettingsEnabled> 1
+<CVar.Sound_OutputDriverName> Speakers (THX Spatial - Synapse)
+<CVar.raidOrBattleCount> 30
+<CVar.graphicsParticleDensity> 6
+<CVar.graphicsQuality> 7
+<CVar.graphicsShadowQuality> 6
+<CVar.Sound_MasterVolume> 1
+<CVar.Sound_SFXVolume> 1
+<CVar.Sound_DialogVolume> 0.80000001192093
+<CVar.Sound_OutputDriverIndex> 1
+<CVar.Sound_ZoneMusicNoDelay> 1
+<CVar.RAIDgraphicsQuality> 5
+<CVar.horizonClip> 10000
+<CVar.RAIDTerrainLodDiv> 512
+<CVar.RAIDhorizonClip> 6000
+<CVar.graphicsSpellDensity> 5.000000
+<CVar.graphicsOutlineMode> 3.000000
+<CVar.raidGraphicsProjectedTextures> 2
+<CVar.raidGraphicsLiquidDetail> 3
+<CVar.raidGraphicsSunshafts> 2
+<CVar.raidGraphicsSSAO> 3
+<CVar.KioskCanSessionExpire> 1
+<CVar.KioskLobbyKickSeconds> 30
+<CVar.KioskCharacterTemplateSet> 0
+<CVar.seenLevelSquishPopup> 1
+<CVar.azeriteEssenceSwapTutorial> 2
+<CVar.lodObjectFadeScale> 150
+<CVar.gxFullscreenResolution> 2560x1440
+<CVar.maxFPS> 0
+<CVar.graphicsViewDistance> 10
+<CVar.RenderScale> 1
+<CVar.maxFPSBk> 65
+<CVar.targetFPS> 144
+<CVar.graphicsEnvironmentDetail> 10
+<CVar.shadowRt> 3
+<CVar.vsync> 0
+<CVar.RAIDentityLodDist> 8
+<CVar.RAIDparticleMTDensity> 70
+<CVar.RAIDVolumeFogLevel> 1
+<CVar.RAIDlodObjectFadeScale> 90
+<CVar.MSAAQuality> 1,0
+<CVar.graphicsSSAO> 5
+<CVar.volumeFogLevel> 3
+<CVar.shadowSoft> 1
+<CVar.doodadLodScale> 150
+
+----------------------------------------
+Installation settings:
+----------------------------------------
+UID:  wow
+Expansion Level: 8
+PTR: 0
+Beta: 0
+ProductCode: 'WoW'
+
+----------------------------------------
+               GxInfo
+----------------------------------------
+<GxApi> D3D11
+<Graphics.ShaderModel> dx_5_0
+<PresentModificationState> Modified
+<WarnedPresentModified> Yes
+  <Graphics.VendorID> 0x10DE
+  Device ID: 0x1E07
+  Device Name: NVIDIA GeForce RTX 2080 Ti
+  <Graphics.VideoMemory> 11048 MB
+
+<GxRestarts> 1
+<GxFailedFrameStartRestarts> 1
+<GxDeviceLostCount> 1
+<BlacklistedDriverWarningShown> No
+
+----------------------------------------
+Streaming diagnostics (Errors):
+----------------------------------------
+[20201029T18:20:48] {32d8} ERR: .. is the leading path component: ../.build.info
+[20201029T18:20:48] {32d8} ERR: path normalization failed: ../.build.info
+----------------------------------------
+
+Streaming Errors Count: 0
+<Streaming.Errors> No
+
+----------------------------------------
+Streaming diagnostics (Info):
+----------------------------------------
+[20201029T18:20:48] {32d8} INF: Initialization step - FETCHING_CDN_CONFIG
+[20201029T18:20:48] {32d8} INF: Initialization step - FETCHING_BUILD_CONFIG
+[20201029T18:20:48] {32d8} INF: Initialization step - FETCHING_PATCH_CONFIG
+[20201029T18:20:48] {32d8} INF: Prepatch
+[20201029T18:20:48] {32d8} INF: Prepatch done
+[20201029T18:25:48] {4ce8} INF: adding network address 8.251.147.254:80 for server http://level3.blizzard.com/
+[20201029T18:25:48] {4ce8} INF: adding network address 8.240.64.254:80 for server http://level3.blizzard.com/
+[20201029T18:25:48] {4ce8} INF: adding network address 8.240.253.126:80 for server http://level3.blizzard.com/
+[20201029T18:25:48] {4ce8} INF: adding network address 8.240.114.126:80 for server http://level3.blizzard.com/
+[20201029T18:25:48] {4ce8} INF: adding network address 8.252.103.11:443 for server https://level3.ssl.blizzard.com/
+[20201029T18:25:48] {4ce8} INF: adding network address 8.252.171.11:443 for server https://level3.ssl.blizzard.com/
+[20201029T18:30:48] {4ce8} INF: adding network address 8.252.171.126:80 for server http://level3.blizzard.com/
+[20201029T18:30:48] {4ce8} INF: adding network address 8.252.171.254:80 for server http://level3.blizzard.com/
+[20201029T18:30:48] {4ce8} INF: adding network address 8.251.157.126:80 for server http://level3.blizzard.com/
+[20201029T18:30:49] {4ce8} INF: adding network address 23.199.48.177:443 for server https://blzddist1-a.akamaihd.net/
+[20201029T18:30:49] {4ce8} INF: adding network address 23.199.48.136:443 for server https://blzddist1-a.akamaihd.net/
+[20201029T18:30:49] {4ce8} INF: adding network address 8.240.252.139:443 for server https://level3.ssl.blizzard.com/
+[20201029T18:35:50] {4ce8} INF: adding network address 8.240.176.126:80 for server http://level3.blizzard.com/
+[20201029T18:35:50] {4ce8} INF: adding network address 8.252.103.126:80 for server http://level3.blizzard.com/
+[20201029T18:35:50] {4ce8} INF: adding network address 8.252.103.139:443 for server https://level3.ssl.blizzard.com/
+[20201029T18:40:50] {4ce8} INF: adding network address 8.240.253.254:80 for server http://level3.blizzard.com/
+[20201029T18:40:50] {4ce8} INF: adding network address 8.252.85.254:80 for server http://level3.blizzard.com/
+[20201029T18:40:50] {4ce8} INF: adding network address 8.251.157.11:443 for server https://level3.ssl.blizzard.com/
+[20201029T18:40:50] {4ce8} INF: adding network address 8.240.253.139:443 for server https://level3.ssl.blizzard.com/
+[20201029T18:45:50] {4ce8} INF: adding network address 8.251.157.254:80 for server http://level3.blizzard.com/
+[20201029T18:45:50] {4ce8} INF: adding network address 23.47.52.244:443 for server https://blzddist1-a.akamaihd.net/
+[20201029T18:45:50] {4ce8} INF: adding network address 23.47.52.245:443 for server https://blzddist1-a.akamaihd.net/
+[20201029T18:45:50] {4ce8} INF: adding network address 8.251.147.11:443 for server https://level3.ssl.blizzard.com/
+[20201029T18:50:50] {4ce8} INF: adding network address 8.251.147.126:80 for server http://level3.blizzard.com/
+[20201029T18:55:51] {4ce8} INF: adding network address 67.24.75.254:80 for server http://level3.blizzard.com/
+[20201029T18:55:51] {4ce8} INF: adding network address 8.27.231.254:80 for server http://level3.blizzard.com/
+[20201029T18:55:51] {4ce8} INF: adding network address 23.46.28.24:443 for server https://blzddist1-a.akamaihd.net/
+[20201029T18:55:51] {4ce8} INF: adding network address 23.46.28.41:443 for server https://blzddist1-a.akamaihd.net/
+[20201029T18:55:51] {4ce8} INF: adding network address 8.240.3.139:443 for server https://level3.ssl.blizzard.com/
+[20201029T19:00:51] {4ce8} INF: adding network address 67.24.81.254:80 for server http://level3.blizzard.com/
+[20201029T19:00:51] {4ce8} INF: adding network address 8.240.1.254:80 for server http://level3.blizzard.com/
+[20201029T19:00:52] {4ce8} INF: adding network address 23.199.48.17:443 for server https://blzddist1-a.akamaihd.net/
+[20201029T19:00:52] {4ce8} INF: adding network address 23.199.48.24:443 for server https://blzddist1-a.akamaihd.net/
+----------------------------------------
+
+Locally overridden files
+    -38 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-13 15.33.33 Crash - 5696.txt
+ -13186 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-8.enc
+ -13532 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180616.jpg
+ -13199 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macIceland.enc
+ -13593 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091920_172258.jpg
+ -13476 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\clamTheme.tcl
+ -13237 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_ie.msg
+ -13596 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_092220_200040.jpg
+ -13298 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\kok_in.msg
+    -37 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-11 21.44.19 exception-failed - 15696.txt
+ -13603 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_100420_013853.jpg
+ -13238 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_in.msg
+ -13309 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\mt.msg
+ -13547 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051820_141730.jpg
+ -13225 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\cs.msg
+ -13230 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\el.msg
+ -13574 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090920_204912.jpg
+ -13155 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp866.enc
+ -13167 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\gb12345.enc
+ -13615 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_120218_200756.jpg
+ -13377 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\image1.tcl
+ -13281 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\gv.msg
+ -13448 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\en.msg
+    -40 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-15 09.56.18 Crash - 34412.txt
+ -13344 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\safe.tcl
+    -36 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-11 21.44.19 Crash - 15696.txt
+ -13463 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\panedwindow.tcl
+ -13397 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\menubu.tcl
+ -13253 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_gt.msg
+ -13459 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\sv.msg
+ -13208 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\tis-620.enc
+ -13369 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\entry2.tcl
+ -13247 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_bo.msg
+ -13507 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_020820_100230.jpg
+ -13338 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\zh_sg.msg
+    -42 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-15 13.20.19 Crash - 13116.txt
+ -13233 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_bw.msg
+ -13569 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090320_190355.jpg
+ -13609 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_101220_000654.jpg
+ -13516 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_040220_121706.jpg
+ -13408 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\search.tcl
+ -13426 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\focus.tcl
+ -13403 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\plot.tcl
+     -8 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-11 14.13.02 Crash - 12152.txt
+ -13395 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\mclist.tcl
+ -13496 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\xmfbox.tcl
+ -13437 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\pwrdLogo75.gif
+ -13322 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sl.msg
+ -13594 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_092219_182630.jpg
+ -13193 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\ksc5601.enc
+ -13320 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sh.msg
+ -13211 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\http1.0\pkgIndex.tcl
+ -13321 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sk.msg
+ -13349 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\choosedir.tcl
+ -13467 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\scrlbar.tcl
+ -13481 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\entry.tcl
+ -13489 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\sizegrip.tcl
+ -13141 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1258.enc
+ -13138 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1255.enc
+ -13559 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_081119_182035.jpg
+ -13323 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sq.msg
+ -13367 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\en.msg
+ -13258 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_pe.msg
+ -13218 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar_lb.msg
+ -13419 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\ttkpane.tcl
+ -13175 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-10.enc
+ -13389 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\teapot.ppm
+ -13375 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\hscale.tcl
+ -13201 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macRoman.enc
+ -13221 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\bg.msg
+ -13203 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macThai.enc
+ -13598 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_092420_231423.jpg
+ -13214 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\af_za.msg
+ -13571 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090720_030712.jpg
+ -13137 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1254.enc
+ -13555 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_062120_134019.jpg
+ -13229 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\de_be.msg
+ -13174 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-1.enc
+ -13573 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090920_180934.jpg
+ -13277 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ga.msg
+ -13180 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-2.enc
+ -13505 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_020820_100224.jpg
+ -13398 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\msgbox.tcl
+ -13534 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180829.jpg
+ -13240 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_ph.msg
+ -13390 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\items.tcl
+ -13331 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\th.msg
+ -13336 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\zh_cn.msg
+ -13185 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-7.enc
+ -13212 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\init.tcl
+ -13227 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\de.msg
+ -13528 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042120_181251.jpg
+ -13523 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041320_114129.jpg
+ -13509 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_022320_100147.jpg
+ -13454 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\it.msg
+ -13508 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_022220_144948.jpg
+ -13394 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\license.terms
+ -13449 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\en_gb.msg
+ -13553 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_061719_182114.jpg
+ -13209 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\history.tcl
+    -32 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-10 13.36.31 Crash - 30656.txt
+ -13351 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\comdlg.tcl
+ -13548 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051919_165430.jpg
+ -13329 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\te.msg
+ -13297 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\kok.msg
+    -20 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-08-16 21.12.46 Crash - 15844.txt
+ -13526 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041820_224037.jpg
+ -13443 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgbox.tcl
+ -13373 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\form.tcl
+ -13310 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\nb.msg
+ -13604 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_100420_195713.jpg
+ -13368 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\entry1.tcl
+ -13246 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_ar.msg
+ -13143 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp737.enc
+ -13176 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-13.enc
+ -13380 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\earthris.gif
+     -7 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-11 13.15.49 exception-failed - 13596.txt
+ -13432 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\pwrdLogo.eps
+ -13184 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-6.enc
+ -13462 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\palette.tcl
+ -13524 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041320_150634.jpg
+ -13517 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041020_143757.jpg
+ -13270 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fi.msg
+ -13195 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macCroatian.enc
+ -13464 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\pkgIndex.tcl
+ -13576 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091120_160255.jpg
+ -13159 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp936.enc
+ -13546 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051820_001619.jpg
+ -13294 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\kl.msg
+ -13393 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\labelframe.tcl
+ -13518 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041020_160604.jpg
+ -13152 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp863.enc
+ -13266 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\eu_es.msg
+ -13456 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\pl.msg
+ -13206 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\shiftjis.enc
+ -13239 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_nz.msg
+ -13222 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\bn.msg
+ -13469 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\tearoff.tcl
+ -13343 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\parray.tcl
+ -13452 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\fr.msg
+ -13316 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\pt_br.msg
+ -13328 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ta_in.msg
+ -13340 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\opt0.4\optparse.tcl
+ -13563 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_083020_183808.jpg
+ -13276 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr_ch.msg
+ -13168 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\gb1988.enc
+ -13236 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_hk.msg
+ -13431 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\logoMed.gif
+ -13177 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-14.enc
+ -13458 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\ru.msg
+ -13522 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041220_231154.jpg
+ -13614 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_110318_030012.jpg
+ -13483 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\menubutton.tcl
+     -4 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-08 16.18.12 Crash - 21420.txt
+ -13613 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_102920_143859.jpg
+ -13296 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ko.msg
+ -13278 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ga_ie.msg
+ -13591 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091920_172256.jpg
+ -13292 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\it_ch.msg
+ -13315 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\pt.msg
+ -13264 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\et.msg
+    -16 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-28 16.17.25 Crash - 1400.txt
+ -13427 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\logo.eps
+ -13274 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr_be.msg
+ -13490 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\treeview.tcl
+ -13307 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ms.msg
+ -13421 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\twind.tcl
+ -13178 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-15.enc
+ -13341 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\opt0.4\pkgIndex.tcl
+ -13423 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\vscale.tcl
+ -13584 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091518_231732.jpg
+ -13484 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\notebook.tcl
+ -13436 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\pwrdLogo200.gif
+ -13539 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_043020_101607.jpg
+ -13610 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_102320_110221.jpg
+ -13289 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\id_id.msg
+ -13433 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\pwrdLogo100.gif
+ -13455 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\nl.msg
+ -13179 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-16.enc
+ -13134 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1251.enc
+ -13228 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\de_at.msg
+ -13446 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\de.msg
+ -13461 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\optMenu.tcl
+ -13332 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\tr.msg
+ -13139 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1256.enc
+ -13128 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\llficon.ico
+ -13339 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\zh_tw.msg
+ -13360 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\clrpick.tcl
+ -13330 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\te_in.msg
+ -13302 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\lt.msg
+    -45 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-16 14.03.50 exception-failed - 23160.txt
+ -13286 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\hr.msg
+ -13284 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\hi.msg
+ -13396 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\menu.tcl
+ -13335 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\zh.msg
+ -13342 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\package.tcl
+ -13429 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\logo64.gif
+ -13158 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp932.enc
+ -13488 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\scrollbar.tcl
+ -13359 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\check.tcl
+ -13255 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_mx.msg
+ -13204 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macTurkish.enc
+ -13148 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp857.enc
+    -21 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-08-16 21.12.46 exception-failed - 15844.txt
+ -13235 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_gb.msg
+ -13337 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\zh_hk.msg
+ -13451 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\es.msg
+ -13135 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1252.enc
+ -13334 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\vi.msg
+ -13220 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\be.msg
+ -13312 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\nl_be.msg
+ -13273 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr.msg
+    -19 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-06-17 12.25.07 exception-failed - 19568.txt
+ -13200 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macJapan.enc
+ -13409 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\spin.tcl
+ -13303 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\lv.msg
+ -13311 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\nl.msg
+ -13130 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\clock.tcl
+    -30 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-08 17.35.59 Crash - 5684.txt
+ -13352 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\console.tcl
+ -13561 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_081719_094039.jpg
+    -33 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-10 13.36.31 exception-failed - 30656.txt
+ -13554 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_062120_133659.jpg
+ -13460 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\obsolete.tcl
+ -13465 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\safetk.tcl
+ -13564 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_083020_225824.jpg
+ -13411 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\style.tcl
+ -13381 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\face.xbm
+ -13422 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\unicodeout.tcl
+ -13502 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_012719_121253.jpg
+ -13140 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1257.enc
+ -13494 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\xpTheme.tcl
+ -13354 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\aniwave.tcl
+ -13587 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091520_185952.jpg
+ -13207 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\symbol.enc
+ -13402 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\pendulum.tcl
+ -13248 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_cl.msg
+ -13401 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\paned2.tcl
+    -47 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-18 09.46.06 exception-failed - 24244.txt
+ -13439 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\license.terms
+ -13599 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_092420_234447.jpg
+ -13577 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091220_164952.jpg
+ -13457 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\pt.msg
+ -13543 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_050520_094905.jpg
+ -13357 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\bitmap.tcl
+ -13407 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\sayings.tcl
+ -13486 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\progress.tcl
+ -13545 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051720_225305.jpg
+ -13170 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\gb2312.enc
+    -18 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-06-17 12.25.07 Crash - 19568.txt
+ -13160 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp949.enc
+     -1 : D:\Program Files (x86)\World of Warcraft\_retail_\.flavor.info
+ -13126 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\bz2.pyd
+ -13531 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180613.jpg
+ -13399 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\nl.msg
+    -27 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-04 09.07.20 exception-failed - 24944.txt
+     -6 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-11 13.15.49 Crash - 13596.txt
+ -13551 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051919_192003.jpg
+     -5 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-08 16.18.12 exception-failed - 21420.txt
+ -13510 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_030120_012213.jpg
+ -13556 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_062120_191833.jpg
+     -2 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-06 00.52.32 Crash - 18560.txt
+ -13558 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_070919_215344.jpg
+ -13412 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\text.tcl
+ -13420 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\ttkprogress.tcl
+ -13363 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\cscroll.tcl
+ -13269 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fa_ir.msg
+ -13365 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\dialog1.tcl
+ -13425 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\entry.tcl
+ -13566 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090220_093508.jpg
+ -13326 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sw.msg
+    -11 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-20 19.33.09 exception-failed - 18700.txt
+ -13379 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\earth.gif
+ -13205 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macUkraine.enc
+ -13249 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_co.msg
+ -13133 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1250.enc
+ -13301 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\kw_gb.msg
+ -13586 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091518_234416.jpg
+ -13530 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180304.jpg
+ -13162 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\dingbats.enc
+ -13540 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_050420_161202.jpg
+ -13202 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macRomania.enc
+ -13187 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-9.enc
+ -13364 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\ctext.tcl
+ -13520 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041120_161527.jpg
+ -13263 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_ve.msg
+ -13482 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\fonts.tcl
+ -13219 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar_sy.msg
+ -13319 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ru_ua.msg
+ -13271 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fo.msg
+ -13144 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp775.enc
+ -13300 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\kw.msg
+ -13430 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\logoLarge.gif
+ -13549 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051919_165437.jpg
+ -13265 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\eu.msg
+ -13552 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051920_121803.jpg
+ -13472 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\tkfbox.tcl
+ -13417 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\ttkmenu.tcl
+ -13272 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fo_fo.msg
+ -13370 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\entry3.tcl
+ -13279 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\gl.msg
+ -13570 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090720_013351.jpg
+ -13491 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\ttk.tcl
+ -13232 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_be.msg
+ -13290 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\is.msg
+ -13388 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\tcllogo.gif
+ -13527 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041920_012840.jpg
+ -13575 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091020_234414.jpg
+    -10 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-20 19.33.09 Crash - 18700.txt
+ -13405 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\radio.tcl
+ -13353 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\anilabel.tcl
+ -13216 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar_in.msg
+ -13428 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\logo100.gif
+ -13192 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\koi8-u.enc
+ -13442 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\mkpsenc.tcl
+ -13533 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180623.jpg
+    -41 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-15 09.56.18 exception-failed - 34412.txt
+ -13538 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042520_014532.jpg
+ -13529 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180259.jpg
+ -13611 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_102320_172653.jpg
+ -13387 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\pattern.xbm
+ -13361 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\colors.tcl
+ -13256 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_ni.msg
+ -13244 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\eo.msg
+ -13515 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_040220_121551.jpg
+ -13306 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\mr_in.msg
+ -13535 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180856.jpg
+ -13376 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\icon.tcl
+ -13183 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-5.enc
+ -13288 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\id.msg
+ -13194 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macCentEuro.enc
+ -13348 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\button.tcl
+ -13146 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp852.enc
+ -13355 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\arrow.tcl
+ -13470 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\text.tcl
+ -13450 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\eo.msg
+ -13245 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es.msg
+ -13181 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-3.enc
+    -46 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-18 09.46.06 Crash - 24244.txt
+ -13324 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sr.msg
+ -13304 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\mk.msg
+ -13362 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\combo.tcl
+ -13252 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_ec.msg
+ -13299 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ko_kr.msg
+ -13468 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\spinbox.tcl
+ -13260 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_py.msg
+ -13542 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_050520_094445.jpg
+ -13582 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091420_225440.jpg
+ -13242 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_za.msg
+ -13172 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso2022-kr.enc
+ -13592 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091920_172257.jpg
+ -13560 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_081119_182038.jpg
+ -13132 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\big5.enc
+ -13466 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\scale.tcl
+ -13257 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_pa.msg
+ -13590 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091920_172248.jpg
+ -13196 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macCyrillic.enc
+ -13416 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\ttkbut.tcl
+ -13583 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091518_231730.jpg
+ -13438 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\tai-ku.gif
+ -13511 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_030120_231943.jpg
+ -13550 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_051919_191946.jpg
+ -13261 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_sv.msg
+ -13356 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\bind.tcl
+    -13 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-21 12.15.34 exception-failed - 16508.txt
+    -39 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-13 15.33.33 exception-failed - 5696.txt
+ -13514 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_032420_165307.jpg
+ -13251 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_do.msg
+     -9 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-11 14.13.02 exception-failed - 12152.txt
+ -13291 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\it.msg
+ -13581 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091220_233838.jpg
+ -13293 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ja.msg
+ -13127 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\select.pyd
+ -13568 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090320_003905.jpg
+ -13163 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\ebcdic.enc
+ -13480 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\defaults.tcl
+ -13541 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_050420_163636.jpg
+ -13501 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_012719_121245.jpg
+ -13287 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\hu.msg
+ -13283 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\he.msg
+ -13147 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp855.enc
+ -13314 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\pl.msg
+ -13544 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_050520_095310.jpg
+ -13440 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\listbox.tcl
+ -13149 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp860.enc
+ -13346 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\word.tcl
+ -13327 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ta.msg
+ -13474 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\aquaTheme.tcl
+ -13165 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\euc-jp.enc
+ -13499 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\_hashlib.pyd
+ -13495 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\unsupported.tcl
+ -13191 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\koi8-r.enc
+ -13333 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\uk.msg
+ -13198 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macGreek.enc
+ -13606 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_100920_092431.jpg
+ -13605 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_100820_181444.jpg
+ -13607 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_100920_203656.jpg
+ -13142 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp437.enc
+    -22 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-08-26 08.05.32 Crash - 28576.txt
+ -13478 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\combobox.tcl
+ -13295 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\kl_gl.msg
+ -13473 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\altTheme.tcl
+ -13166 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\euc-kr.enc
+ -13285 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\hi_in.msg
+ -13519 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041120_015005.jpg
+ -13386 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\noletter.xbm
+ -13578 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091220_200013.jpg
+ -13589 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091920_172242.jpg
+    -35 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-11 01.10.10 exception-failed - 23708.txt
+ -13447 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\el.msg
+ -13434 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\pwrdLogo150.gif
+ -13441 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\menu.tcl
+ -13217 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar_jo.msg
+    -17 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-28 16.17.25 exception-failed - 1400.txt
+ -13275 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fr_ca.msg
+ -13385 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\letters.xbm
+ -13475 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\button.tcl
+ -13498 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\_ctypes.pyd
+ -13585 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091518_231734.jpg
+ -13131 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\ascii.enc
+ -13536 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_180948.jpg
+ -13254 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_hn.msg
+ -13305 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\mr.msg
+ -13197 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\macDingbats.enc
+    -34 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-11 01.10.10 Crash - 23708.txt
+ -13572 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090720_225632.jpg
+    -12 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-21 12.15.34 Crash - 16508.txt
+    -44 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-16 14.03.50 Crash - 23160.txt
+ -13400 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\paned1.tcl
+    -28 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-08 02.02.41 Crash - 20552.txt
+ -13267 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fa.msg
+ -13345 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\tm.tcl
+ -13171 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso2022-jp.enc
+    -15 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-24 22.17.39 exception-failed - 25984.txt
+ -13231 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_au.msg
+ -13358 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\button.tcl
+    -29 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-08 02.02.41 exception-failed - 20552.txt
+ -13557 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_070619_222821.jpg
+ -13413 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\textpeer.tcl
+ -13503 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_020319_232731.jpg
+ -13565 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090120_132455.jpg
+ -13224 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ca.msg
+ -13392 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\label.tcl
+ -13150 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp861.enc
+ -13600 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_092520_160354.jpg
+ -13383 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\flagup.xbm
+ -13445 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\da.msg
+ -13601 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_092820_225321.jpg
+ -13384 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\gray25.xbm
+ -13497 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\unicodedata.pyd
+ -13506 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_020820_100228.jpg
+ -13250 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_cr.msg
+ -13161 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp950.enc
+ -13512 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_030820_113912.jpg
+ -13164 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\euc-cn.enc
+ -13504 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_020820_100215.jpg
+    -26 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-04 09.07.20 Crash - 24944.txt
+ -13453 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\hu.msg
+ -13479 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\cursors.tcl
+ -13226 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\da.msg
+ -13588 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091720_120009.jpg
+ -13173 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso2022.enc
+ -13318 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ru.msg
+ -13513 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_030920_004512.jpg
+ -13374 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\goldberg.tcl
+ -13280 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\gl_es.msg
+ -13608 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_101120_022037.jpg
+     -3 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-06 00.52.32 exception-failed - 18560.txt
+ -13215 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ar.msg
+ -13313 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\nn.msg
+ -13410 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\states.tcl
+ -13382 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\images\flagdown.xbm
+ -13136 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp1253.enc
+ -13371 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\filebox.tcl
+ -13525 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041720_174939.jpg
+ -13156 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp869.enc
+ -13404 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\puzzle.tcl
+ -13169 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\gb2312-raw.enc
+ -13153 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp864.enc
+    -14 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-05-24 22.17.39 Crash - 25984.txt
+ -13129 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\auto.tcl
+ -13157 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp874.enc
+ -13151 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp862.enc
+ -13189 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\jis0208.enc
+    -23 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-08-26 08.05.32 exception-failed - 28576.txt
+ -13521 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_041120_161538.jpg
+ -13317 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ro.msg
+ -13595 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_092219_182813.jpg
+    -24 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-08-28 01.27.22 Crash - 12496.txt
+ -13308 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\ms_my.msg
+ -13493 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\winTheme.tcl
+ -13223 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\bn_in.msg
+ -13471 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\tk.tcl
+    -31 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-08 17.35.59 exception-failed - 5684.txt
+ -13241 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_sg.msg
+ -13210 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\http1.0\http.tcl
+ -13444 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\msgs\cs.msg
+    -25 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-08-28 01.27.22 exception-failed - 12496.txt
+ -13435 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\images\pwrdLogo175.gif
+ -13562 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_083020_181604.jpg
+ -13602 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_100220_114337.jpg
+ -13415 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\tree.tcl
+ -13190 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\jis0212.enc
+ -13282 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\gv_gb.msg
+ -13477 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\classicTheme.tcl
+ -13372 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\floor.tcl
+ -13424 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\dialog.tcl
+    -43 : D:\Program Files (x86)\World of Warcraft\_retail_\Errors\2020-09-15 13.20.19 exception-failed - 13116.txt
+ -13234 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_ca.msg
+ -13579 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091220_205431.jpg
+ -13347 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\bgerror.tcl
+ -13259 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_pr.msg
+ -13487 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\scale.tcl
+ -13500 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\_tkinter.pyd
+ -13612 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_102520_193940.jpg
+ -13378 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\image2.tcl
+ -13597 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_092318_121926.jpg
+ -13145 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp850.enc
+ -13154 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\cp865.enc
+ -13414 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\toolbar.tcl
+ -13580 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_091220_233753.jpg
+ -13366 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\dialog2.tcl
+ -13537 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_042220_225856.jpg
+ -13418 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\ttknote.tcl
+ -13485 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\panedwindow.tcl
+ -13182 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\iso8859-4.enc
+ -13325 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\sv.msg
+ -13567 : D:\Program Files (x86)\World of Warcraft\_retail_\Screenshots\WoWScrnShot_090320_000913.jpg
+ -13350 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\clrpick.tcl
+ -13268 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\fa_in.msg
+ -13406 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\ruler.tcl
+ -13243 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\en_zw.msg
+ -13391 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\demos\knightstour.tcl
+ -13492 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tk8.5\ttk\utils.tcl
+ -13188 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\encoding\jis0201.enc
+ -13262 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\es_uy.msg
+ -13213 : D:\Program Files (x86)\World of Warcraft\_retail_\Leatrix_Latency_Fix_3.03\tcl\tcl8.5\msgs\af.msg
+----------------------------------------
+
+-----------------------------------------
+DBG-DATA<
+E02D0FE033A9C8081C320896B599762CB2B24416B20445E433BD43F5EB9C3F22A5E8BE00000000000000000000000006000004010008E02D0FE0658D1C0B2432
+0895B499768CCCB34469D306452838B6432BEEAD400000000000000000000000000000000000000024020008E02D0FE09346C50724320830B799766483B644E3
+DB05452F47B6433E0720400000000000000000000000000000000000000004020008E02D0FE09346C50724320830B799766483B644E3DB05452F47B6433E0720
+400000000000000000000000000000000000000000020008E02D0FE045C8680D84120857B49976C50DB744891D0645F1A6B74372AE8C40000000000000000000
+0000000000000000002000000048B2010000D893FEC08063A834BF546135BF00000000222C004071000FE0B2F1E607C011081B2C0FE04D0BE40B2401080FE04D
+0BE40B240108EC690200010000000014000000000000000000000000000000000000000000000000000000200080F642D50EF64200000000320032320080E02D
+0FE0658D1C0B24320844B4997658BFB344E5DA0645D73DB6432BEEAD400000000000000000000000000000000000000004020008FFFFE02D0FE0371DF7098802
+08DEB69976E174B6449F2E0645A294B64395EC38400000000000000000000000000000000000000004020008E02D0FE0770B220B24320829B499760EA5B74423
+DD0545AAC9B6433C7DBD400000000000000000000000000000000000000004020008222C00401E000FE00482B10B1C3208CB27020000006603003F000000000F
+A073BACA07F4080D000000200000000C00000002000000020067FF134A1BB95E808195C06CAC3C2011000000200000000280000002031E000000000000222C00
+406E000FA0E20A070A3008E02D0FE033A9C8081C320811B599766696B2446D8B044543EBBB43F5EB9C3F22A5E8BE000000000000000000000000068000040100
+08E02D0FE08A93DC030C010806B59976A9F3B644140C064546B4B643854E39400000000000000000000000000000000000000024020008392C0FA073BACA07F4
+080FA073BACA07F4086FFF294A9B1BB95ECD6836C16CAC3CBC0000A3D9040044550400000000000503000000000000DEB3997600000000000000000000000000
+0000000000000000000000000000000001000000010000000000000000008000000000000FA073BACA07F4080000222C00409F806FFF294A9B1BB95ECD6836C1
+6CAC3CBCA3D9040044550400000000000F00010000009B000000000000604000983A0000973A0000000034430FA073BACA07F408322C67FF134A1BB95E808195
+C06CAC3C200FA073BACA07F4086FFF294A1B42B95E43644FC06CAC3CBC913D01006E740100000000003600000035000000FFFFFFFF0200000000000000000000
+0000052000F00443000000000000FA3A320732320020392C0FA073BACA07F4080FA073BACA07F4086FFF294A1B42B95E43644FC06CAC3CBC0000913D01006E74
+0100000000000D01000010400000C6B399760000000000000000000000002B0000000000000000000000000000000001000000010000000000000000109C0000
+0000000000E889B44423770645F2FDB543DB0FC93F6603000067FF134A1BB95E808195C06CAC3C200000E02D0FE04D0BE40B240108F7B39976E0EAB7448B8705
+45E2D9B643C00356400000000000000000000000000000000000000014022008E02D0FE045C8680D841208D0B39976C50DB744891D0645A597B7437305864000
+000000000000000000000000000000000020000000482B010000D893FEC08063A834BF546135BF00000000FFFFE02D0FE0658D1C0B243208E0B39976FBAEB344
+1BE40645CD44B643560EAE400000000000000000000000000000000000000004020008E02D0FE04D0BE40B240108D5B3997647F4B7444688054545DFB643A27D
+51400000000000000000000000000000000000000004022008E02D0FE03CAAD80940120893B7997671B6B6443AD00645B98BB643E3A48E400000000000000000
+000000000000000000000000020008E02D0FE04D0BE40B240108B4B399767FFDB7448D880545E3E4B643CCF44A40000000000000000000000000000000000000
+0004022008392C9FE099BE66F5064024320C0FE083AB7F052432086FFF294A1B1AB95E8DE820C16CAC3CBC6FFFB73B1B30284B87D120C16CAC3CBCA283040092
+1F0400000000000503000000000000A7B39976000000000000000000000000000000000000000000000000000000000001000000010000000000000000008000
+000000000FE083AB7F052432080000222C004010806FFF294A1B1AB95E8DE820C16CAC3CBCA2830400921F0400000000000D0001000000900000000000006040
+800040F442394DF4420000000032003232008010270000102700003DA210450FE083AB7F052432081B2C0FE025E6E80A4C16080FE025E6E80A4C160845210400
+0100000000080000006200000062000000620000000000000000000000000000002000A0CD42A38DCD42000000003200323200801B2C0FE005BF92051C32080F
+E005BF92051C320845210400010000000008000000830100008301000083010000000000000000000000000000A00020D542B77CD64200000000320032320080
+CB2701000000660300250000000067FF134A1BB95E808195C06CAC3C2011000000200000000280000002391E000000000000E02D0FE0658D1C0B2432087CB399
+769B9EB34450ED0645EC44B643560EAE400000000000000000000000000000000000000004020008FFFF222C004016806FFF294A1B3DB95E83BDA2C06CAC3CBC
+F68A02000000000000000000220001000000320000000000008000000FE0C0E9EF0A7039087FFF04A10E0203B95E4051A1C06CAC3C28322C67FF134A1BB95E80
+8195C06CAC3C200FA073BACA07F4086FFF294A9B3AB95E038617C16CAC3CBC185E0400CD080400000000002E0200002D020000FFFFFFFF020000000000000000
+00000000052000F00443000000000000FA3A320732320020E02D0FE0371DF70988020805B699760FA4B644CA28064550A6B6435C323D40000000000000000000
+0000000000000000000004020008E02D0FE04D0BE40B24010850B399767FFDB7448D880545E3E4B643BCCE2E4000000000000000000000000000000000000000
+00022008D62D0FE09346C507243208E8B59976A1C5B6442BC305452527B6433E072040000000000000000000000000000000000000000402000862FCFB40E02D
+0FE045C8680D84120818B39976C50DB744891D0645533AB743E1A08240000000000000000000000000000000000000200000004873000000D893FEC08063A834
+BF546135BF00000000E02D0FE033A9C8081C320838B49976E967B244944C044513D3B943DB25933FF41CEDBE0000000000000000000000000680000401000839
+2C0FA073BACA07F4080FA073BACA07F4086FFF294A9B3AB95E038617C16CAC3CBC6FFF294A9B26B95E035834C06CAC3CBC185E0400CD08040000000000094100
+001060000032B399760000000000000000000000002A000000000000000000000000000000000100000001000000000000000018BC00000000000000E889B444
+23770645F2FDB5430000E889B44423770645F2FDB543345EE23F6603000067FF134A1BB95E808195C06CAC3C200000CB27010000006603001B000000000FE08D
+5A700A2C3A080D000000200000001048000000FC0F0000D42D7FFF0C50100205B95E4051A1C06CAC3C28034FB644BDF50645DB78B64319369611000000000000
+0000000000002000000000000000000000000000000000000000FFC00000000000A2D79740E02D0FE0658D1C0B24320818B399763C8EB34485F60645D044B643
+560EAE400000000000000000000000000000000000000004020008FFFFE02D0FE08A93DC030C0108FCB399769011B7444FF20545FCA3B643FFDC364000000000
+00000000000000000000000000000024020008E02D0FE09346C50724320851B5997645E4B644BCB70545E627B6433E0720400000000000000000000000000000
+000000000004020008E02D0FE0371DF70988020890B599761BBEB644DD28064567B0B64306D556400000000000000000000000000000000000000004020008E0
+2D0FE0371DF7098802087FB599765AC1B644DE27064552B1B643B91658400000000000000000000000000000000000000024020008222C0040000067FF134A1B
+B95E808195C06CAC3C20CB270300000066030064000000000FA073BACA07F40812000000600000001028000000010000000800000004000FE0B0935805C01008
+120000006000000014000000020000000208000000040067FF134A1BB95E808195C06CAC3C20110000002000000002800000026720000000000000E02D0FE065
+8D1C0B243208B4B29976DC7DB344BAFF06458C44B643560EAE400000000000000000000000000000000000000004020008E02D0FE045C8680D841208A5B29976
+C50DB744891D06458CD5B64383747B40000000000000000000000000000000000000200002004800000000D893FEC08063A834BF546135BF00000000E02D0FE0
+3CAAD80940120888B6997600C5B64448F0064534B1B643482891400000000000000000000000000000000000000004020008322C67FF134A1BB95E808195C06C
+AC3C200FA073BACA07F4086FFF294A9B26B95E035834C06CAC3CBC60D10000A550000000000000B102000026020000FFFFFFFF02000000000000000000000000
+252000F00443000000000000FA3A320732320020222C00409E806FFF294A9B27B95E03D6B1C06CAC3CBC58C7020000000000000000000F000100000032000100
+000000604000983A0000983A00000000803F0FA073BACA07F408392C0FA073BACA07F4080FA073BACA07F4086FFF294A9B26B95E035834C06CAC3CBC000060D1
+0000A550000000000000000904001040000085B29976000000000000000000000000000000000000000000000000000000000001000000010000008000000000
+0080000000000067FF134A1BB95E808195C06CAC3C20000100000009003A2C0FA073BACA07F4080FA073BACA07F4086FFF294A9B26B95E035834C06CAC3CBC00
+0060D10000A550000000000000020004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000222C00409D806FFF294A1B27B95EC34C81C06CAC3CBC3305020000000000000000000F00010000003200000000000060400094110000
+9411000000002A430FA073BACA07F408E02D0FE045C8680D8412088AB29976C50DB744891D06458CD5B643C1EF77400000000000000000000000000000000000
+000000020008E02D0FE033A9C8081C3208B3B39976F636B244FE2B0445738AB8430C103B3FB001FCBE00000000000000000000000006800004010008222C0040
+77806FFF294A1B26B95E433523C16CAC3CBCD58C040000000000000000000B0003000000320001000000000082800060CA42E5CBD94200000000320032320080
+0000404100003343000040417A9F3F430FE0B0935805C01008222C00404A000FE0F699310A383A08FFFFE02D0FE033A9C8081C320891B399765726B244932504
+457136B84378E0173FC13C00BF00000000000000000000000006800004010008E02D0FE0371DF7098802083CB59976E9CEB644AA24064543B5B643AD25634000
+000000000000000000000000000000000000240200081B2C0FE0F699310A383A080FE0F699310A383A0845210400010000000008000000060100000601000006
+010000000000000000000000000000A00060F742D67B004300000000320032320080E02D0FE0371DF709880208F9B49976BFD5B644FD1D064583B8B64383AE69
+400000000000000000000000000000000000000020020008E02D0FE0770B220B2432084CB29976853AB74452D205454C8CB6434223433F000000000000000000
+0000000000000000000084020008E02D0FE0658D1C0B24320850B29976606DB344E20807456A44B6435ACFAE4000000000000000000000000000000000000000
+04020008392C0FE0371DF7098802080FE0371DF7098802086FFF294A9B22B95E43644FC06CAC3CBC0000913D01006E740100000000000D0300001040000022B2
+9976000000000000000000000000E60000000000000000000000000000000000000000000000000000000000109C00000000000000EC7BB644583F06451F99B6
+43CB141A406603000000CB27010000006603003F000000000FE08A93DC030C010831000000200000003800001E822800000007000000ADF9563FADF9563FADF9
+563FADF9563FADF9563F36020000CF0B00008F060000E02D0FE0770B220B24320823B299766433B744EBCE05455D82B6434223433F0000000000000000000000
+000000000000000004020008FFFF1927294A9B5FFFFFE02D0FE08A93DC030C010822B399766125B7443FDC05453190B6436FF722400000000000000000000000
+000000000000000024020008E02D0FE0770B220B24320823B299766433B744EBCE05455D82B6434223433F000000000000000000000000000000000000200402
+0048000000000000000080D728393F3EC8303F00002040E02D0FE0770B220B24320823B299766433B744EBCE05455D82B6434223433F00000000000000000000
+00000000000000002000020048000000000000000080D728393F3EC8303F00000000392C0FE0770B220B2432080FE0770B220B2432086FFF294A1B21B95E8372
+C2C06CAC3CBC0000CA0903000000000000000000000300001000000000B299760000000000000000000000000000000000000000000000000000000000010000
+00010000000000000000008000000000000FE0770B220B24320800003A2C0FE0770B220B2432080FE0770B220B2432086FFF294A1B21B95E8372C2C06CAC3CBC
+0000CA09030000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000E02D0FE045C8680D84120806B29976C50DB744891D06458CD5B64369CC5D4000000000000000000000000000000000000000000200
+08222C004045000FE08A93DC030C0108CB270300000066030077000000000FE08A93DC030C01080D00000020000000102800000037020000000FE09346C50724
+320829000000200000002800001E8207000000E7654C3FE7654C3FE7654C3FE7654C3FE7654C3F1C0800003D0600000067FF134A1BB95E808195C06CAC3C2011
+0000002000000002800000021823000000000000222C00404A806FFFC8499B1CB95E4D9E12C16CAC3CBC794A0400000000000000000003000100000032001400
+0000000000000FE08A93DC030C01084C2900500000000204000067FF134A1BB95E808195C06CAC3C200FA073BACA07F4080000000000000000FFFFFFFF010100
+00000000000000000000020000000000000000013207323200000000F0044300000000000000E02D0FE045C8680D841208CEB19976C50DB744891D06458CD5B6
+4393435740000000000000000000000000000000000000000002004839030000D893FEC000E02D0FE033A9C8081C3208FCB29976CBC5B14465070445A032B943
+E7430D3F06BA01BF00000000000000000000000006000004010008E02D0FE0658D1C0B243208ECB19976585CB344C8110745A245B6430C11B040000000000000
+0000000000000000000000000004020008222C004010806FFF294A9B1FB95E83BDA2C06CAC3CBCF68A0200000000000000000022000100000032000000000000
+8000000FE0C0E9EF0A7039087FFF0C50100205B95E4051A1C06CAC3C28222C004003806FFF294A1B1FB95E8374C7C06CAC3CBCD21D030000000000000000001C
+000300000032000000000000E080000FA073BACA07F408E02E0000E02E0000000000000000000067FF134A1BB95E808195C06CAC3C20222C00406C000FE09346
+C507243208222C004011806FFF294A1B20B95E033720C16CAC3CBCDC80040000000000000000000D000100000032000000000000604000A8610000A861000000
+00C8410FE0B0935805C01008FFFFE02D0FE045C8680D84120884B19976C50DB744891D0645FD19B7437A7E534000000000000000000000000000000000000020
+00000048EF020000D893FEC080EC2B7FBFCFA0A43D00000000E02D0FE08A93DC030C01088CB299767B2AB744A5CB05459677B643DBA21B400000000000000000
+000000000000000000000024020008E02D0FE0658D1C0B24320888B19976724AB3443F1A0745E045B64341B3B140000000000000000000000000000000000000
+0004020008E02D0FE0371DF70988020833B4997687EEB644A40B0645A0B0B6435937704000000000000000000000000000000000000000200200084C29005400
+0000021E00000FA073BACA07F40867FF134A1BB95E808195C06CAC3C2080020000C8010000FFFFFFFF0101000000000020448002000001FFFFFFFF00000000A0
+6B3E3D023207323200000000F0044300000000FA3A001D2C0FA073BACA07F4080FA073BACA07F408343202000100000001000000010000000000000000222C00
+4038806FFF294A1B10B95E8308E1C06CAC3CBC2284030000000000000000002000010000000100007301000080000067FFF9491BB95E401271C06CAC3C200FE0
+590E770B203208CB2701000000660300290000000067FFF9491BB95E401271C06CAC3C2015000000200000000200800002228403000000000000000000342C67
+FFF9491BB95E401271C06CAC3C20228403000000000000000000FFFFFFFF00D42D67FF55441B7C41403561C06CAC3C20CD0CB444968E0545934BB543BA309611
+0000000000000000000000004000000000000000000000000000000000000000FF000000000000E02D0FE00768D80B203208FBB29976ECE4B544E7F10545F644
+B64394D9ED3F0000000000000000000000000000000000000000030008E02D0FE08A93DC030C01085AB29976D722B7448DC70545406CB6432A19174000000000
+00000000000000000000000000000020020008E02D0FE08A93DC030C01085AB29976D722B7448DC70545406CB643EF8938400000000000000000000000000000
+000000000020020008FFFFCB2704000000660300B1000000000FA073BACA07F40809000000200000000400000002000FE08A93DC030C01081A00000060000000
+06001000020000100200000800000004000004040000000FE085A5AA094012082E000000600000002800001E8207000000CF94523FCF94523FCF94523FCF9452
+3FCF94523F5B0800005B0800000800000004000FE0230C250790390829000000200000002800001E82070000000862513F0862513F0862513F0862513F086251
+3F4F08000064060000E02D0FE033A9C8081C320823B29976D136B144DEDD03458EA4BA434B18DD3ED63106BF00000000000000000000000006000004010008E0
+2D0FE045C8680D841208F4B09976C50DB744891D0645C978B743A4F54C4000000000000000000000000000000000000020000000485F020000D893FEC080EC2B
+7FBFCFA0A43D00000000E02D0FE0658D1C0B24320824B199767C37B3441B2207451845B64323D6B3400000000000000000000000000000000000000004020008
+E02D0FE00768D80B2032087BB29976ECE4B544E7F10545F644B643247F04400000000000000000000000000000000000000000030008E02D0FE00768D80B2032
+08FAB19976ECE4B544E7F10545F644B643221011400000000000000000000000000000000000000000030008E02D0FE00768D80B20320873B19976ECE4B544E7
+F10545F644B643EFF92F400000000000000000000000000000000000000000030008E02D0FE00768D80B20320832B19976ECE4B544E7F10545F644B643D4C538
+400000000000000000000000000000000000000000030008222C00409C806FFF294A1B09B95E83F4B7C06CAC3CBCD2DF020000000000000000000B0003000000
+3200000000000000800000000000EC844BC10FA073BACA07F408E02D0FE087AF670D84120808B299762F0FB5448F3805450EB3B8431CAD8B3FAFBD75BE000000
+00000000000000000006000000010008222C004074806FFF294A9B07B95E433C28C16CAC3CBCF1A0040000000000000000000E000100000032000000000000E0
+40000FA073BACA07F40810270000102700000000A8410FE0230C2507903908222C00407B806FFF294A9B07B95E433C28C16CAC3CBCF1A0040000000000000000
+000E000100000032000000000000E040000FA073BACA07F408102700000F2700000000A8410FE085A5AA094012084C277D340000F644AC0700FFFF1D2C0FA073
+BACA07F4080FA073BACA07F4088A850400B0060000B0060000B006000000000000080020024346E7034300000000320032320080392C0FA073BACA07F4080FA0
+73BACA07F4086FFF294A9B08B95E03231FC06CAC3CBC00008C7C0000AA1E0000000000000D03002094026000BAB0997600000000000000000000000000000000
+0000000000000000000000000001000000010000000000000000008000000000000FA073BACA07F4080000222C00409B806FFF294A9B08B95E03231FC06CAC3C
+BC8C7C0000AA1E0000000000000F00BF00000032000000000000620000581B0000581B00000000A0410000A0410000A0410000A0410000A04100000000000000
+00000000000FA073BACA07F408392C0FA073BACA07F4080FA073BACA07F4086FFF294A1B08B95E832423C16CAC3CBC0000928C0400EE23040000000000090300
+0010000000B9B09976000000000000000000000000000000000000000000000000000000000001000000010000000000000000008000000000000FA073BACA07
+F4080000222C004090806FFF294A1B08B95E832423C16CAC3CBC928C0400EE230400000000000D000100000032000000000000604000581B0000581B000000D0
+BB450FA073BACA07F408222C004015806FFF294A1B07B95E033C28C16CAC3CBCF0A0040000000000000000002F00010000003200000000000060400010270000
+0F2700000000A8410FA073BACA07F408CB27020000006603008F210000000FE09346C5072432085C210000600000000400001002080000007C0000044FFFFFFF
+F3FFFFFFFFFFFFFFFFFFFFFFFE0000000000003F35000000000000000000000183975F0000000001000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000F97200000000000000000000D63A7A5F00000000FA0000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000043730000000000000000000071377A5F000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000BAA4000000000000000000004AA4985F0000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000B6A500000000000000000000A3E4995F00000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000002CB80000000000000000000071F3BA5E000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000006FBA00000000000000000000EEE9B65E0000000003
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000067BC000000000000000000006AD0755A00
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000B4A50000000000000000000055
+3C9B5F0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000088BF00000000000000
+000000C3E9635F00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000EFBF000000
+0000000000000072F1635F00000000030000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000A6
+C500000000000000000000553C9B5F00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000000ABC500000000000000000000A3E4995F000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000AEC5000000000000000000004AA4985F0000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000ABCF000000000000000000008396675F00000000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000B1CF00000000000000000000BA9AE15E000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000B2CF000000000000000000009F6D395F0000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000B3CF000000000000000000009E58E25E00000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000B4CF00000000000000000000448EE15E000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000BECF00000000000000000000E9F9DB5E0000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000BBD0000000000000000000004AA4985F00000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000046DF00000000000000000000EB499B5F000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000A4D3000000000000000000004AA4985F0000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000A7D4000000000000000000007DEA9D5D00
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009AD60000000000000000000076
+0E965F00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000B0DE00000000000000
+000000DDF5995F00000000000000000F0000000100000002000100000000000000000000000000000000000000000000000000000000000000000076E0000000
+0000000000000064E00D5F00000000150000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000DB
+E0000000000000000000004AA4985F00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000000DEE0000000000000000000004AA4985F000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000098E1000000000000000000001EC5835F000000005C440000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000067FF134A1BB95E808195C06CAC3C20110000002000000002800000029825000000000000E02D0FE09346C5072432085DB39976B949B744E0
+910545174EB6433E0720400000000000000000000000000000000000000004020008E02D0FE09346C5072432085CB39976B949B744E0910545174EB6433E0720
+40000000000000000000000000000000000000000002000820260FE09346C50724320814FFFFFFFF00000000010000000E000000000000000000000000000000
+000000000000000000001A3A8F020000004C277C34000034EF481400322C67FF134A1BB95E808195C06CAC3C200FA073BACA07F4086FFF294A1B06B95E43644F
+C06CAC3CBC913D01006E740100000000002E0000002D000000FFFFFFFF02000000000000000000000000052000F00443000000000000FA3A320732320020D42D
+67FF55441B7C41403561C06CAC3C20F7B6B44471630545EC68B543352F96110000000000000000000000000000002091000000003704000000000000000000FF
+0000400050008DFFB04464540645BCD0B443D6A780FFF627C0FF24683F0032303F0039107F00E02D0FE087AF670D841208C5B199767048B544AC2905450EB3B8
+431CAD8B3FAFBD75BE00000000000000000000000006000010010008
+>
+----------------------------------------
+
+
+----------------------------------------
+Info stack for thread with exception (llu)
+----------------------------------------
+------------------------------------------------------------------------------
+
+----------------------------------------
+    Compatibility Info
+----------------------------------------
+
+<HasCompatibilitySettings> No
+
+----------------------------------------
+    x64 Registers
+----------------------------------------
+
+RAX=000001F6BCA13050  RCX=00007FF70AD87A5B  RDX=000000000000001F  RBX=00000178DFCAE0B0
+RSP=000000022D0F0D00  RBP=000000022D0F0E00  RSI=0000000000000000  RDI=0000000000000001
+R8 =0000000000001932  R9 =0000000000000000  R10=00007FF70CF66610  R11=00007FF70AA50000
+R12=0000000000000000  R13=00000000000102F0  R14=0000000000000000  R15=0000000000000000
+RIP=00007FF70AD87AE1  CSR=00001FA0          FLG=00010202
+CS =0033      DS =002B      ES =002B      SS =002B      FS =0053      GS =002B
+
+XMM0 =000001F6BCA13048000001F6BCA13040  XMM1 =000001F6BCA13050000001F6BCA1304C
+XMM2 =00000000000000000000000100000000  XMM3 =00000000000000000000000000000000
+XMM4 =00000000000000000000000000000000  XMM5 =00000000000000000000000000000000
+XMM6 =00000000000000000000000000000001  XMM7 =00000000000000000000000000000000
+XMM8 =00000000000000000000000000000000  XMM9 =00000000000000000000000000000000
+XMM10=00000000000000000000000000000000  XMM11=00000000000000000000000000000000
+XMM12=00000000000000000000000000000000  XMM13=00000000000000000000000000000000
+XMM14=00000000000000000000000000000000  XMM15=00000000000000000000000000000000
+CSR=00001FA0  MSK=0000FFFF
+
+
+----------------------------------------
+    Stack Trace (Manual)
+----------------------------------------
+
+Showing 112/112 threads...
+
+--- Thread ID: 13016 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70add74d0>("Wow.exe")
+DBG-ADDR<00007ff70ad97a87>("Wow.exe")
+DBG-ADDR<00007ff70ad27127>("Wow.exe")
+DBG-ADDR<00007ff70ad045c4>("Wow.exe")
+DBG-ADDR<00007ff70ac4d843>("Wow.exe")
+DBG-ADDR<00007ff70ac34f75>("Wow.exe")
+DBG-ADDR<00007ff70ac22325>("Wow.exe")
+DBG-ADDR<00007ff70addb5d2>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 18040 ---
+DBG-ADDR<00007ffd4e4ac414>("ntdll.dll")
+DBG-ADDR<00007ffd4c05818e>("KERNELBASE.dll")
+DBG-ADDR<00007ffd330496f0>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd33035501>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd33035843>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 6576 ---
+DBG-ADDR<00007ffd4e4ac8e4>("ntdll.dll")
+DBG-ADDR<00007ffd4c058910>("KERNELBASE.dll")
+DBG-ADDR<00007ffd4c05880e>("KERNELBASE.dll")
+DBG-ADDR<00007ffd330121bb>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 15912 ---
+DBG-ADDR<00007ffd4e4ac8e4>("ntdll.dll")
+DBG-ADDR<00007ffd4c058910>("KERNELBASE.dll")
+DBG-ADDR<00007ffd4c05880e>("KERNELBASE.dll")
+DBG-ADDR<00007ffd3301fd8e>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd330277ed>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd33027aad>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd33024b0d>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd33013209>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd3305bd08>("Graphics Hook64.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 23452 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70ac85086>("Wow.exe")
+DBG-ADDR<00007ff70ac32fda>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 20016 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4b2f80fc>("mswsock.dll")
+DBG-ADDR<00007ffd4b2ff4de>("mswsock.dll")
+DBG-ADDR<00007ffd4d7516f7>("WS2_32.dll")
+DBG-ADDR<00007ff70ac85efc>("Wow.exe")
+DBG-ADDR<00007ff70ac8492e>("Wow.exe")
+DBG-ADDR<00007ff70ac32fda>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 22924 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4b2f80fc>("mswsock.dll")
+DBG-ADDR<00007ffd4b2ff4de>("mswsock.dll")
+DBG-ADDR<00007ffd4d7516f7>("WS2_32.dll")
+DBG-ADDR<00007ff70ac89eb5>("Wow.exe")
+DBG-ADDR<00007ff70ac8ba58>("Wow.exe")
+DBG-ADDR<00007ff70ac32fda>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 4068 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70cbd3063>("Wow.exe")
+DBG-ADDR<00007ff70cbcdd89>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 19688 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4b2f80fc>("mswsock.dll")
+DBG-ADDR<00007ffd4b2ff4de>("mswsock.dll")
+DBG-ADDR<00007ffd4d7516f7>("WS2_32.dll")
+DBG-ADDR<00007ff70cbb23a7>("Wow.exe")
+DBG-ADDR<00007ff70cbb5060>("Wow.exe")
+DBG-ADDR<00007ff70cbacd8d>("Wow.exe")
+DBG-ADDR<00007ff70cbcb2a0>("Wow.exe")
+DBG-ADDR<00007ff70be7613c>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 12024 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 25376 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 19076 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21476 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 13820 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 22344 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 22636 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 9404 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 18880 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 5600 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 12232 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 10076 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 2760 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 20664 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 14792 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21808 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 2456 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 14708 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 20072 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21120 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 16452 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 1620 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21860 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 25200 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 1632 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 17812 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 3432 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ff70bd545ac>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 23068 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70b16d006>("Wow.exe")
+DBG-ADDR<00007ff70ac32fda>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 10204 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70b16d47c>("Wow.exe")
+DBG-ADDR<00007ff70ac32fda>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 23360 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70b16d47c>("Wow.exe")
+DBG-ADDR<00007ff70ac32fda>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 616 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70b16d47c>("Wow.exe")
+DBG-ADDR<00007ff70ac32fda>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 24436 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70b16d711>("Wow.exe")
+DBG-ADDR<00007ff70ac32fda>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 5944 ---
+DBG-ADDR<00007ffd4bc1a104>("win32u.dll")
+DBG-ADDR<00007ffd4d34060e>("USER32.dll")
+DBG-ADDR<00007ffd2e5c8e40>("gdiplus.dll")
+DBG-ADDR<00007ffd2e5c8d9f>("gdiplus.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 4920 ---
+DBG-ADDR<00007ffd4e4ac8e4>("ntdll.dll")
+DBG-ADDR<00007ffd4c058910>("KERNELBASE.dll")
+DBG-ADDR<00007ffd49047fef>("CoreMessaging.dll")
+DBG-ADDR<00007ffd49047cd9>("CoreMessaging.dll")
+DBG-ADDR<00007ffd49047461>("CoreMessaging.dll")
+DBG-ADDR<00007ffd49046734>("CoreMessaging.dll")
+DBG-ADDR<00007ffd4904995b>("CoreMessaging.dll")
+DBG-ADDR<00007ffd49046c18>("CoreMessaging.dll")
+DBG-ADDR<00007ffd4907eb85>("CoreMessaging.dll")
+DBG-ADDR<00007ffd4907da3b>("CoreMessaging.dll")
+DBG-ADDR<00007ffd3f4926fa>("inputhost.dll")
+DBG-ADDR<00007ffd3f495e69>("inputhost.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21936 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 2248 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 24032 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 5252 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 7720 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 5700 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 13316 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbf3c7252>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf3c6229>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf3bd08d>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbebbadaa>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 19000 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 17684 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 13884 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 11628 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 14884 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21208 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 19132 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 20904 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ffd4c2eff45>("msvcp_win.dll")
+DBG-ADDR<00007ffd4c2eff0d>("msvcp_win.dll")
+DBG-ADDR<00007ffd4c2f080a>("msvcp_win.dll")
+DBG-ADDR<00007ffd16188938>("d3d12.dll")
+DBG-ADDR<00007ffd16187ed4>("d3d12.dll")
+DBG-ADDR<00007ffd4c3a14c2>("ucrtbase.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 4652 ---
+DBG-ADDR<00007ffd4e4af784>("ntdll.dll")
+DBG-ADDR<00007ffd4e475071>("ntdll.dll")
+DBG-ADDR<00007ffd4c07ab69>("KERNELBASE.dll")
+DBG-ADDR<00007ffd4c2eff45>("msvcp_win.dll")
+DBG-ADDR<00007ffd4c2eff0d>("msvcp_win.dll")
+DBG-ADDR<00007ffd4c2f080a>("msvcp_win.dll")
+DBG-ADDR<00007ffd16188938>("d3d12.dll")
+DBG-ADDR<00007ffd16187ed4>("d3d12.dll")
+DBG-ADDR<00007ffd4c3a14c2>("ucrtbase.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 6872 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70ae42156>("Wow.exe")
+DBG-ADDR<00007ff70ae443df>("Wow.exe")
+DBG-ADDR<00007ff70ae41934>("Wow.exe")
+DBG-ADDR<00007ff70ae4cae9>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 12536 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70ae4ca6f>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 6420 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70c76af0f>("Wow.exe")
+DBG-ADDR<00007ff70c76ae5e>("Wow.exe")
+DBG-ADDR<00007ff70c6cb1e1>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21236 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70c746e21>("Wow.exe")
+DBG-ADDR<00007ff70c6ca86c>("Wow.exe")
+DBG-ADDR<00007ff70c6cb1c1>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 24060 ---
+DBG-ADDR<00007ffd4e4ac414>("ntdll.dll")
+DBG-ADDR<00007ffd4c05818e>("KERNELBASE.dll")
+DBG-ADDR<00007ff70c6caa2a>("Wow.exe")
+DBG-ADDR<00007ff70c6cb1fa>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 15936 ---
+DBG-ADDR<00007ffd4e4ac414>("ntdll.dll")
+DBG-ADDR<00007ffd4c05818e>("KERNELBASE.dll")
+DBG-ADDR<000001f6b8d0d8b0>("<unknown>")
+DBG-ADDR<000001f6b8d06bc6>("<unknown>")
+DBG-ADDR<000001f6b8d0ca5b>("<unknown>")
+DBG-ADDR<000001f6b8d06a6c>("<unknown>")
+DBG-ADDR<000001f6b8d09ce4>("<unknown>")
+DBG-ADDR<000001f6b8d064ac>("<unknown>")
+DBG-ADDR<000001f6b8d0014e>("<unknown>")
+
+--- Thread ID: 18640 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70c746e21>("Wow.exe")
+DBG-ADDR<00007ff70c6ca86c>("Wow.exe")
+DBG-ADDR<00007ff70c6cb1c1>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 20772 ---
+DBG-ADDR<00007ffd4e4ac414>("ntdll.dll")
+DBG-ADDR<00007ffd4c05818e>("KERNELBASE.dll")
+DBG-ADDR<00007ff70c6caa2a>("Wow.exe")
+DBG-ADDR<00007ff70c6cb1fa>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21300 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ff70ac721b2>("Wow.exe")
+DBG-ADDR<00007ff70ac7225b>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 3468 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcfe19aa30>("MessageBus.dll")
+DBG-ADDR<00007ffcfe19ccf1>("MessageBus.dll")
+DBG-ADDR<00007ffcfe1c0aa6>("MessageBus.dll")
+DBG-ADDR<00007ffcfe416ba0>("MessageBus.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 18656 ---
+DBG-ADDR<00007ffd4e4abeb4>("ntdll.dll")
+DBG-ADDR<00007ffd4c06e9bf>("KERNELBASE.dll")
+DBG-ADDR<00007ffcfe183020>("MessageBus.dll")
+DBG-ADDR<00007ffcfe1bdae6>("MessageBus.dll")
+DBG-ADDR<00007ffcfe19cd14>("MessageBus.dll")
+DBG-ADDR<00007ffcfe1c0aa6>("MessageBus.dll")
+DBG-ADDR<00007ffcfe416ba0>("MessageBus.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 1672 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbf504238>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 5916 ---
+DBG-ADDR<00007ffd4e4ac8e4>("ntdll.dll")
+DBG-ADDR<00007ffd4c058910>("KERNELBASE.dll")
+DBG-ADDR<00007ffd4c05880e>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbd42bb54>("nvcuda64.dll")
+DBG-ADDR<00007ffcbd4c09ed>("nvcuda64.dll")
+DBG-ADDR<00007ffcbd42b523>("nvcuda64.dll")
+DBG-ADDR<00007ffcbd73a750>("nvcuda64.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 15908 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 12348 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 1924 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 6900 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 22064 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 17524 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 18176 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbf3c7252>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf3c6229>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf3bd08d>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbebbadaa>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 25056 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 6260 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 8400 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 2112 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 6960 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 22976 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 1928 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 2272 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbf3c7252>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf3c6229>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf3bd08d>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbebbadaa>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 19124 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 24524 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 23308 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 14320 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 9624 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 11976 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 19476 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 9312 [Current Thread] ---
+DBG-ADDR<00007ff70ad87ae1>("Wow.exe")
+DBG-ADDR<00007ff70ad7e501>("Wow.exe")
+DBG-ADDR<00007ff70adccf09>("Wow.exe")
+DBG-ADDR<00007ff70ae04228>("Wow.exe")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 11100 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 22684 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 3680 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 20644 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 21228 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 19716 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 12972 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 11924 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcfe19aabd>("MessageBus.dll")
+DBG-ADDR<00007ffcfe18a0c9>("MessageBus.dll")
+DBG-ADDR<00007ffcfe1bdae6>("MessageBus.dll")
+DBG-ADDR<00007ffcfe19cd14>("MessageBus.dll")
+DBG-ADDR<00007ffcfe1c0aa6>("MessageBus.dll")
+DBG-ADDR<00007ffcfe416ba0>("MessageBus.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 17092 ---
+DBG-ADDR<00007ffd4e4abeb4>("ntdll.dll")
+DBG-ADDR<00007ffd4c06e9bf>("KERNELBASE.dll")
+DBG-ADDR<00007ffcfe183020>("MessageBus.dll")
+DBG-ADDR<00007ffcfe1bdae6>("MessageBus.dll")
+DBG-ADDR<00007ffcfe19cd14>("MessageBus.dll")
+DBG-ADDR<00007ffcfe1c0aa6>("MessageBus.dll")
+DBG-ADDR<00007ffcfe416ba0>("MessageBus.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 5084 ---
+DBG-ADDR<00007ffd4e4ac8e4>("ntdll.dll")
+DBG-ADDR<00007ffd4c058910>("KERNELBASE.dll")
+DBG-ADDR<00007ffd4c05880e>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbe966e17>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbebbadaa>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 20996 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 9048 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 14136 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 25408 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 23488 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 16872 ---
+DBG-ADDR<00007ffd4e4abe14>("ntdll.dll")
+DBG-ADDR<00007ffd4c0326ee>("KERNELBASE.dll")
+DBG-ADDR<00007ffcbec43476>("nvwgf2umx.dll")
+DBG-ADDR<00007ffcbf8d165c>("nvwgf2umx.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+--- Thread ID: 18000 ---
+DBG-ADDR<00007ffd4e4af7e4>("ntdll.dll")
+DBG-ADDR<00007ffd4e4223d7>("ntdll.dll")
+DBG-ADDR<00007ffd4de17034>("KERNEL32.DLL")
+DBG-ADDR<00007ffd4e45cec1>("ntdll.dll")
+
+
+----------------------------------------
+    Loaded Modules
+----------------------------------------
+
+<Exception.DebugModules:>
+DBG-MODULE<0000000180000000 003C0000 "RTSSHooks64.dll" "" 0 {00000000-0000-0000-0000000000000000} 0 1594124690>
+DBG-MODULE<000001f6fefc0000 00467000 "SETUPAPI.DLL" "setupapi.pdb" 0 {83088592-204d-e5d7-8489c2ba7b595045} 1 4070003617>
+DBG-MODULE<00007ff70aa50000 0345B000 "Wow.exe" "Wow.pdb" 0 {58719a22-fb33-4ec2-9157495a77170ec3} 1 1603479206>
+DBG-MODULE<00007ffcb9fc0000 032BC000 "nvrtum64.dll" "nvrtum64.pdb" 0 {a7cb8bdb-c99a-457e-b39f9a3217b5e09e} 1 1603382935>
+DBG-MODULE<00007ffcbd280000 0152C000 "nvcuda64.dll" "nvcuda.pdb" 0 {05fbbd98-9a4c-4f9b-b8c47b7233be445e} 1 1603383720>
+DBG-MODULE<00007ffcbe7b0000 02AC1000 "nvwgf2umx.dll" "nvwgf2umx.pdb" 0 {510b0cd4-9911-41b5-b9eecad132d7c671} 1 1603382707>
+DBG-MODULE<00007ffcc6170000 00404000 "d3dcompiler_47_64.dll" "D3DCompiler_47.pdb" 0 {918de2c6-43bb-479c-9a097be3c9419de3} 1 1377170154>
+DBG-MODULE<00007ffcc6580000 0079B000 "NvCamera64.dll" "NvCamera64.pdb" 0 {270bd8e6-f866-4a7f-884a5bed60cb88fe} 1 1602623476>
+DBG-MODULE<00007ffcf92a0000 002B9000 "nvspcap64.dll" "nvspcap64.pdb" 0 {73913f5c-1241-4f55-9ebcbb82ab6940fa} 36 1603198031>
+DBG-MODULE<00007ffcfe040000 00737000 "MessageBus.dll" "MessageBus.pdb" 0 {3e4214ca-94b5-42e3-ba09be011911952d} 14 1573217556>
+DBG-MODULE<00007ffd0c270000 00026000 "winmmbase.dll" "WINMMBASE.pdb" 0 {6362ba6a-afe3-0572-60465e01af1bae91} 1 2953835666>
+DBG-MODULE<00007ffd155e0000 0002B000 "D3DSCache.dll" "D3DSCache.pdb" 0 {61669984-4643-854e-bdc06f6bfc5a3bdc} 1 1045065377>
+DBG-MODULE<00007ffd16090000 001E0000 "d3d12.dll" "d3d12.pdb" 0 {58077315-4529-b634-28285df5d4e111c0} 1 2729806799>
+DBG-MODULE<00007ffd1d6e0000 00181000 "AUDIOSES.DLL" "audioses.pdb" 0 {e9cadd83-9add-dd67-0662b9d96b0ff0f9} 1 3438806210>
+DBG-MODULE<00007ffd1df20000 00009000 "ksuser.dll" "ksuser.pdb" 0 {da4ca94a-4c34-1609-ebbf29ab405af4c1} 1 994468694>
+DBG-MODULE<00007ffd2cdd0000 00015000 "mskeyprotect.dll" "mskeyprotect.pdb" 0 {6107fee4-05d5-b450-8e74a3735c591b7a} 1 3773382750>
+DBG-MODULE<00007ffd2e320000 0029B000 "COMCTL32.dll" "comctl32.pdb" 0 {6f9e4087-9949-9207-3b4376a040d35317} 1 1191946936>
+DBG-MODULE<00007ffd2e5c0000 001A6000 "gdiplus.dll" "gdiplus.pdb" 0 {fc7d4498-207e-3090-e2d1facac9653efa} 1 3042827013>
+DBG-MODULE<00007ffd2f040000 006D6000 "nvapi64.dll" "nvapi64.pdb" 0 {6bb23d37-112b-40cb-999cb335feba06a5} 1 1603382358>
+DBG-MODULE<00007ffd306e0000 00085000 "MMDevApi.dll" "MMDevAPI.pdb" 0 {64a6e529-0a7a-fae0-e2c07dfc2b025229} 1 679087134>
+DBG-MODULE<00007ffd321a0000 0000C000 "secur32.dll" "secur32.pdb" 0 {4103238d-f66a-8868-f72c432d27393c83} 1 2062290500>
+DBG-MODULE<00007ffd33010000 0012A000 "Graphics Hook64.dll" "Graphics Hook64.pdb" 0 {ff09f581-969d-4a3d-b4d0b6f1683809d2} 1 1594353472>
+DBG-MODULE<00007ffd331d0000 00102000 "nvldumdx.dll" "nvldumdx.pdb" 0 {f8313eba-4347-472c-a5d032a9bd9cfba6} 1 1603382641>
+DBG-MODULE<00007ffd36920000 000AC000 "TextShaping.dll" "TextShaping.pdb" 0 {1e59ac4f-e3d3-ae30-76ec4044f1a13cf8} 1 465736327>
+DBG-MODULE<00007ffd3ad20000 0027F000 "DWrite.dll" "DWrite.pdb" 0 {4239ae48-9fc1-b349-6f8363ac3be51f8e} 1 3679658791>
+DBG-MODULE<00007ffd3c730000 00046000 "wdmaud.drv" "wdmaud.pdb" 0 {e50d6536-7595-0ec4-b55afa62097734bf} 1 211884543>
+DBG-MODULE<00007ffd3f480000 00152000 "inputhost.dll" "InputHost.pdb" 0 {402a0c98-f14d-17cb-c549c079b54c1e0d} 1 4109094601>
+DBG-MODULE<00007ffd3ffd0000 0001E000 "MSACM32.dll" "msacm32.pdb" 0 {d6ef6ec2-2ee5-13d3-9904a73c6579ff56} 1 2129323861>
+DBG-MODULE<00007ffd405b0000 00045000 "DINPUT8.dll" "dinput8.pdb" 0 {001a8cb0-3527-d78c-08c4edc9da0f78e7} 1 2087051820>
+DBG-MODULE<00007ffd40600000 00007000 "wshunix.dll" "wshunix.pdb" 0 {98d6743a-69ce-3633-e2d8b2deed3efe27} 1 2858564050>
+DBG-MODULE<00007ffd40610000 0009A000 "riched20.dll" "riched20.pdb" 0 {d38cec2c-ecdc-b27d-d9c885974a3570bf} 1 2057911377>
+DBG-MODULE<00007ffd41780000 00039000 "msls31.dll" "msls31.pdb" 0 {b2e9d3ab-bc9e-634e-d224e22e97c688b9} 1 1418624891>
+DBG-MODULE<00007ffd41940000 00007000 "XINPUT9_1_0.dll" "XInput9_1_0.pdb" 0 {277f50ec-51ee-ed90-c93a75c4a5aee312} 1 572196266>
+DBG-MODULE<00007ffd41980000 0000B000 "midimap.dll" "midimap.pdb" 0 {7cd5318b-addf-24fd-5af910eb112b262f} 1 3601711880>
+DBG-MODULE<00007ffd41aa0000 000FC000 "textinputframework.dll" "TextInputFramework.pdb" 0 {35f98709-b29c-2d95-e5d1e024c2849fa0} 1 872106302>
+DBG-MODULE<00007ffd41f00000 00027000 "WINMM.dll" "winmm.pdb" 0 {31adb453-ffaf-ae03-33718e86e81811cf} 1 3100257655>
+DBG-MODULE<00007ffd41f30000 00026000 "ncryptsslp.dll" "ncryptsslp.pdb" 0 {2c92cf7f-20fa-b565-a6b287b912d72ae8} 1 466188536>
+DBG-MODULE<00007ffd421b0000 0000D000 "msacm32.drv" "msacm32.pdb" 0 {3119dfda-0559-8be5-b4115ff58f6c2cc3} 1 2881167907>
+DBG-MODULE<00007ffd42320000 00031000 "cryptnet.dll" "cryptnet.pdb" 0 {9910b27a-7507-d8d2-60c4fd4bdccea398} 1 1920330404>
+DBG-MODULE<00007ffd428b0000 0003B000 "dxcore.dll" "DXCore.pdb" 0 {8f50320a-e761-0508-d80184c1bed349d9} 1 3002465626>
+DBG-MODULE<00007ffd431c0000 0000A000 "rasadhlp.dll" "rasadhlp.pdb" 0 {35d4c21c-edfb-30af-46feee9e4e10378b} 1 1242704408>
+DBG-MODULE<00007ffd43250000 0007F000 "fwpuclnt.dll" "fwpuclnt.pdb" 0 {18be316e-d3ac-05e4-d986c1917535651e} 1 3521049421>
+DBG-MODULE<00007ffd437a0000 00043000 "icm32.dll" "icm32.pdb" 0 {d2c9cf78-ad14-ec38-db778c83350cea99} 1 1474316886>
+DBG-MODULE<00007ffd43820000 00100000 "WINHTTP.dll" "winhttp.pdb" 0 {a4b3c04a-442d-c3ad-ca2aa1d592b1a4c6} 1 1890180728>
+DBG-MODULE<00007ffd44120000 0000A000 "VERSION.dll" "version.pdb" 0 {7ecfcc58-6d6a-a8fe-95166abb4a567c13} 1 340988162>
+DBG-MODULE<00007ffd445d0000 00011000 "ColorAdapterClient.dll" "ColorAdapterClient.pdb" 0 {1389c05d-2178-9888-e18bcbd31b44711a} 1 2900060839>
+DBG-MODULE<00007ffd445f0000 000AE000 "mscms.dll" "mscms.pdb" 0 {d3a1fa29-efbb-cbb7-eece5e620373a641} 1 2887149774>
+DBG-MODULE<00007ffd44dc0000 001B4000 "WindowsCodecs.dll" "WindowsCodecs.pdb" 0 {e75ecdcc-1c2e-b8cd-1fa74a35dab136af} 1 1173295261>
+DBG-MODULE<00007ffd451c0000 00208000 "twinapi.appcore.dll" "twinapi.appcore.pdb" 0 {f722b5a6-92d8-c399-b77d457073890e7a} 1 2983380525>
+DBG-MODULE<00007ffd454b0000 0001D000 "dhcpcsvc.DLL" "dhcpcsvc.pdb" 0 {79111301-eb61-5313-aa245f007d0468ce} 1 471687581>
+DBG-MODULE<00007ffd459e0000 00017000 "dhcpcsvc6.DLL" "dhcpcsvc6.pdb" 0 {78cff2a1-6dc0-6ec5-318b1573fbd859e9} 1 3378700340>
+DBG-MODULE<00007ffd45a30000 0000A000 "AVRT.dll" "avrt.pdb" 0 {88902b9f-bb98-160c-7d60416eb61721d9} 1 249105492>
+DBG-MODULE<00007ffd476c0000 000F7000 "PROPSYS.dll" "propsys.pdb" 0 {946f4e66-b44c-5465-d80a94df32901698} 1 3167548980>
+DBG-MODULE<00007ffd47970000 00264000 "d3d11.dll" "d3d11.pdb" 0 {fc905645-f2e0-edd9-708a296e97a1dcaf} 1 4018558283>
+DBG-MODULE<00007ffd47be0000 0045D000 "D3DCompiler_47.dll" "D3DCompiler_47.pdb" 0 {8d3fc496-f8d6-4b3c-4b3da43081bfd998} 1 2578403945>
+DBG-MODULE<00007ffd48600000 00156000 "wintypes.dll" "WinTypes.pdb" 0 {10b8fa2a-4ce5-b410-29a5025b913e60db} 1 1319234307>
+DBG-MODULE<00007ffd48760000 001E5000 "dcomp.dll" "dcomp.pdb" 0 {ec41304f-77b6-fb3d-981f357a12e193af} 1 2538023668>
+DBG-MODULE<00007ffd48cd0000 0035E000 "CoreUIComponents.dll" "CoreUIComponents.pdb" 0 {93d62a29-44f1-cb17-57f422268b382ba0} 1 3459616227>
+DBG-MODULE<00007ffd49030000 000F2000 "CoreMessaging.dll" "CoreMessaging.pdb" 0 {be8e4c5c-1118-37a2-d5ca88637b020b91} 1 2923064559>
+DBG-MODULE<00007ffd49290000 00019000 "USP10.dll" "usp10.pdb" 0 {8ffda42c-c533-c8d2-ac093466180c3795} 1 204895021>
+DBG-MODULE<00007ffd494f0000 0009F000 "uxtheme.dll" "UxTheme.pdb" 0 {bc2ed1c9-275a-4d17-ceba32dfaadb5a13} 1 3177539308>
+DBG-MODULE<00007ffd495f0000 00014000 "resourcepolicyclient.dll" "ResourcePolicyClient.pdb" 0 {745c721f-2233-e918-ed85531902cdaa43} 1 4111285253>
+DBG-MODULE<00007ffd496e0000 0002F000 "dwmapi.dll" "dwmapi.pdb" 0 {7fe45617-c22d-6ab1-ebea4fc40ecc6b75} 1 3459498228>
+DBG-MODULE<00007ffd49bb0000 00794000 "windows.storage.dll" "Windows.Storage.pdb" 0 {4a72245b-2fd6-2e7b-961d40bd2a86f9da} 1 3444972431>
+DBG-MODULE<00007ffd4a350000 0000D000 "HID.DLL" "hid.pdb" 0 {bcd6356d-30e5-90ab-602b18418de68fd4} 1 2529998450>
+DBG-MODULE<00007ffd4a420000 00012000 "kernel.appcore.dll" "Kernel.Appcore.pdb" 0 {5e49b315-7247-a4ce-babe3e86c162bf9c} 1 4033953741>
+DBG-MODULE<00007ffd4a470000 000F3000 "dxgi.dll" "dxgi.pdb" 0 {1e0c98ab-24e5-d4f4-6e854aa5a88c7899} 1 943662672>
+DBG-MODULE<00007ffd4a860000 00033000 "ntmarta.dll" "ntmarta.pdb" 0 {aeec81d0-5cb7-34c3-e3fdb90242efb91a} 1 1029745924>
+DBG-MODULE<00007ffd4ab50000 00091000 "schannel.DLL" "schannel.pdb" 0 {31ed8ae8-e212-0490-c375f3cbb66e198e} 1 3506064336>
+DBG-MODULE<00007ffd4ac30000 00034000 "rsaenh.dll" "rsaenh.pdb" 0 {75ed21c4-2143-b3d3-d043d2cdc94db830} 1 2266550370>
+DBG-MODULE<00007ffd4ac70000 0000A000 "DPAPI.dll" "dpapi.pdb" 0 {09f7c11d-1509-d82a-bc1c8319f8a2a3e6} 1 2182944100>
+DBG-MODULE<00007ffd4af90000 00012000 "UMPDC.dll" "UMPDC.pdb" 0 {70506691-1372-169e-08bcb22260f64cc2} 1 1493927030>
+DBG-MODULE<00007ffd4afb0000 0003B000 "IPHLPAPI.DLL" "iphlpapi.pdb" 0 {4e37cf50-14f2-c685-340a20e5308d5172} 1 3482980890>
+DBG-MODULE<00007ffd4b000000 000CB000 "DNSAPI.dll" "dnsapi.pdb" 0 {66f89568-0c49-c6c5-f81f9e8f0230c007} 1 1031558669>
+DBG-MODULE<00007ffd4b120000 0004B000 "powrprof.dll" "powrprof.pdb" 0 {269647d7-a816-fb97-df6e45324856dc36} 1 2871989681>
+DBG-MODULE<00007ffd4b2f0000 0006A000 "mswsock.dll" "mswsock.pdb" 0 {bcc0796e-6035-fc89-ce7531fb953fb072} 1 4096564257>
+DBG-MODULE<00007ffd4b470000 0000C000 "cryptbase.dll" "cryptbase.pdb" 0 {c47f41e3-5d73-9c2c-30e3d66270ad094a} 1 686332483>
+DBG-MODULE<00007ffd4b500000 0002C000 "Wldp.dll" "WLDP.pdb" 0 {1dcbfd54-fe16-d9f6-bf3a2a2fb554dbc7} 1 238008487>
+DBG-MODULE<00007ffd4b540000 00018000 "CRYPTSP.dll" "cryptsp.pdb" 0 {17cfc317-28b0-4198-7ccc51fc9cabcf70} 1 81361638>
+DBG-MODULE<00007ffd4b600000 0003B000 "NTASN1.dll" "ntasn1.pdb" 0 {c8dd8abe-6e04-44af-3db421fbd5038c2b} 1 443565554>
+DBG-MODULE<00007ffd4b640000 00027000 "ncrypt.dll" "ncrypt.pdb" 0 {975cbbe6-3394-c8da-b37915a220b5dcc9} 1 3164828341>
+DBG-MODULE<00007ffd4b750000 00012000 "MSASN1.dll" "msasn1.pdb" 0 {c9d15598-bb87-54c3-5c6f58c2f6a5d6a9} 1 2647452527>
+DBG-MODULE<00007ffd4b910000 0002C000 "DEVOBJ.dll" "devobj.pdb" 0 {beb1ff37-1a0c-c3a7-f21768baaf6f83e3} 1 1856155424>
+DBG-MODULE<00007ffd4ba10000 0002E000 "USERENV.dll" "userenv.pdb" 0 {adccefbf-72ae-efe0-a3576e899fc6cd2e} 1 4202194487>
+DBG-MODULE<00007ffd4ba40000 0003C000 "SSPICLI.DLL" "sspicli.pdb" 0 {dc529152-a78c-a81e-974c126f669cb73b} 1 1167034584>
+DBG-MODULE<00007ffd4ba90000 00026000 "profapi.dll" "profapi.pdb" 0 {38cb46c3-e267-0c7f-fc4dd120e8ecb59d} 1 3858164592>
+DBG-MODULE<00007ffd4bc10000 00022000 "win32u.dll" "win32u.pdb" 0 {771c2e28-ad61-1fa7-edee8227da66c935} 1 231539219>
+DBG-MODULE<00007ffd4bc40000 00109000 "gdi32full.dll" "gdi32full.pdb" 0 {f43f5a0e-3839-c7f8-54b6027da568c64d} 1 2536777986>
+DBG-MODULE<00007ffd4bd50000 0015D000 "CRYPT32.dll" "crypt32.pdb" 0 {9786ba94-f7a7-e883-9143468679d368e4} 1 346565121>
+DBG-MODULE<00007ffd4beb0000 0007F000 "bcryptPrimitives.dll" "bcryptprimitives.pdb" 0 {5d9564fd-8692-c0b4-12cd6a28474b35ce} 1 191149250>
+DBG-MODULE<00007ffd4bf30000 00060000 "WINTRUST.dll" "wintrust.pdb" 0 {66c641b9-a05d-2129-bca2fd7b9e41bb39} 1 3897828225>
+DBG-MODULE<00007ffd4bf90000 0004E000 "cfgmgr32.dll" "cfgmgr32.pdb" 0 {db6cf136-6a2b-6792-754d1cc70d42b723} 1 1153287294>
+DBG-MODULE<00007ffd4bfe0000 00027000 "bcrypt.dll" "bcrypt.pdb" 0 {bfd53b86-3e59-5430-473c6128da2fbf49} 1 728401088>
+DBG-MODULE<00007ffd4c010000 002C8000 "KERNELBASE.dll" "kernelbase.pdb" 0 {5fb214a5-33d3-cb12-7ade9f509d0eacad} 1 293835884>
+DBG-MODULE<00007ffd4c2e0000 0009D000 "msvcp_win.dll" "msvcp_win.pdb" 0 {05c9daa5-0c56-25a8-a54295b732954b3f} 1 958749903>
+DBG-MODULE<00007ffd4c380000 00100000 "ucrtbase.dll" "ucrtbase.pdb" 0 {a7f4b8b1-85c8-e5d7-b315ca78fde84b06} 1 1137426717>
+DBG-MODULE<00007ffd4c480000 00055000 "SHLWAPI.dll" "shlwapi.pdb" 0 {1c8e9d2c-e5b1-1e48-163706843e0b77fd} 1 487282223>
+DBG-MODULE<00007ffd4c950000 0009B000 "sechost.dll" "sechost.pdb" 0 {da6ecf19-2e1f-879f-7c8ed4a924731b06} 1 415961451>
+DBG-MODULE<00007ffd4c9f0000 00115000 "MSCTF.dll" "msctf.pdb" 0 {671cfd1c-d503-64c9-e920abb99706de5b} 1 1170563460>
+DBG-MODULE<00007ffd4cb10000 00740000 "SHELL32.dll" "shell32.pdb" 0 {16361ba2-0597-16ca-47546eab1181dc2d} 1 2017370412>
+DBG-MODULE<00007ffd4d250000 000CD000 "OLEAUT32.dll" "oleaut32.pdb" 0 {8a141962-04d0-3462-b591184412b02178} 1 213394435>
+DBG-MODULE<00007ffd4d320000 001A0000 "USER32.dll" "user32.pdb" 0 {b59a7d5a-7eee-5341-fc73fd03bb03cb23} 1 989001382>
+DBG-MODULE<00007ffd4d4c0000 00030000 "IMM32.DLL" "imm32.pdb" 0 {265bcb59-f688-6a8f-9f482a4a4903527b} 1 974035268>
+DBG-MODULE<00007ffd4d4f0000 0009E000 "msvcrt.dll" "msvcrt.pdb" 0 {8f2b808e-7da3-6eb9-0342fdd8bca575db} 1 1448058681>
+DBG-MODULE<00007ffd4d590000 0012A000 "ole32.dll" "ole32.pdb" 0 {56fde24d-b0b8-adbf-9a3e8e8f055f6adc} 1 2084395209>
+DBG-MODULE<00007ffd4d6c0000 0001D000 "imagehlp.dll" "imagehlp.pdb" 0 {a6b8201d-6b44-fcf5-36439aad37b3d285} 1 692250003>
+DBG-MODULE<00007ffd4d740000 0006B000 "WS2_32.dll" "ws2_32.pdb" 0 {5c73fc6f-5404-0814-59a8538913657c76} 1 2951950683>
+DBG-MODULE<00007ffd4d7b0000 0002A000 "GDI32.dll" "gdi32.pdb" 0 {81cfdeb7-f217-2e64-1d92b1549a044c9c} 1 1077777438>
+DBG-MODULE<00007ffd4d7f0000 000AA000 "ADVAPI32.dll" "advapi32.pdb" 0 {03382542-f0f5-4b94-c3d18b0eea43de2d} 1 1449516564>
+DBG-MODULE<00007ffd4d900000 000A9000 "clbcatq.dll" "CLBCatQ.pdb" 0 {f7693376-394b-2532-ea876d244be0303e} 1 3684659850>
+DBG-MODULE<00007ffd4da90000 00355000 "combase.dll" "combase.pdb" 0 {2c7e11a1-a727-128b-aa5ecdf9beda2347} 1 1699420317>
+DBG-MODULE<00007ffd4de00000 000BD000 "KERNEL32.DLL" "kernel32.pdb" 0 {5f594577-80f8-dafa-fa895a3da232a208} 1 796707254>
+DBG-MODULE<00007ffd4dec0000 00124000 "RPCRT4.dll" "rpcrt4.pdb" 0 {32e500bb-4fa6-aa10-023c74e7366ee2b0} 1 3970262587>
+DBG-MODULE<00007ffd4e080000 000AE000 "SHCORE.dll" "shcore.pdb" 0 {32679ba5-8644-48b2-8b6a9c5bbb5a1692} 1 254226034>
+DBG-MODULE<00007ffd4e360000 00009000 "NSI.dll" "nsi.pdb" 0 {23cec2ea-d818-68f9-0a3d0a2523819095} 1 2247670982>
+DBG-MODULE<00007ffd4e410000 001F6000 "ntdll.dll" "ntdll.pdb" 0 {422541f7-5bb2-921a-229379a0c6b06224} 1 1532368763>
+<:Exception.DebugModules>
+Unloaded Module: 00007ffd40330000 000AC000 "NvCameraAllowlisting64.dll"
+Unloaded Module: 00007ffd15610000 00139000 "dxilconv.dll"
+Unloaded Module: 00007ffd34e30000 000AC000 "NvCameraAllowlisting64.dll"
+Unloaded Module: 00007ffd41940000 00007000 "XINPUT9_1_0.dll"
+Unloaded Module: 00007ffd4a350000 0000D000 "HID.DLL"
+Unloaded Module: 00007ffcc6580000 0079B000 "NvCamera64.dll"
+Unloaded Module: 00007ffcc6170000 00404000 "d3dcompiler_47_64.dll"
+Unloaded Module: 00007ffd15610000 00139000 "dxilconv.dll"
+Unloaded Module: 00007ffd34e30000 000AC000 "NvCameraAllowlisting64.dll"
+Unloaded Module: 00007ffd496e0000 0002F000 "dwmapi.dll"
+Unloaded Module: 00007ffd1a460000 001DE000 "d3d12.dll"
+Unloaded Module: 00007ffd41940000 00007000 "XINPUT9_1_0.dll"
+Unloaded Module: 00007ffd4a350000 0000D000 "HID.DLL"
+Unloaded Module: 00007ffcc6580000 0079B000 "NvCamera64.dll"
+Unloaded Module: 00007ffcc6170000 00404000 "d3dcompiler_47_64.dll"
+Unloaded Module: 00007ffd40550000 000AC000 "NvCameraAllowlisting64.dll"
+Unloaded Module: 00007ffd495f0000 00014000 "resourcepolicyclient.dll"
+Unloaded Module: 00007ffd14310000 00017000 "OnDemandConnRouteHelper.dll"
+Unloaded Module: 00007ffd4aff0000 0000C000 "NETUTILS.DLL"
+Unloaded Module: 00007ffd2d390000 00028000 "SRVCLI.DLL"
+Unloaded Module: 00007ffd2d3c0000 00018000 "netapi32.dll"
+Unloaded Module: 00007ffd2c1d0000 0001D000 "mpr.dll"
+<Set.HookModules> RTSSHooks64.dll
+<Set.HookModules> Graphics Hook64.dll
+<Set.NotableModules> NvCamera64.dll
+<Set.NotableModules> nvspcap64.dll
+<HookModuleFound> Yes
+Last Guard Dispatch Func[0]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[1]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[2]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[3]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[4]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[5]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[6]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[7]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[8]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[9]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[10]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[11]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[12]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[13]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[14]: 0x00007ffd4c0583b0
+Last Guard Dispatch Func[15]: 0x00007ffd4c0583b0
+
+----------------------------------------
+    Memory Dump
+----------------------------------------
+
+Code: 32 bytes starting at (RIP = 00007ff70ad87ae1 - 10)
+
+00007ff70ad87ad1: 8B 2C B0 48  85 DB 75 08  49 8B C9 E9  2B 01 00 00  .,.H..u.I...+...
+* = addr          **                                                  *               
+00007ff70ad87ae1: 48 83 7B 18  00 75 09 48  8B 4B 08 E9  1B 01 00 00  H.{..u.H.K......
+
+
+Stack: 1024 bytes starting at (RSP = 000000022d0f0d00 - 20)
+
+000000022d0f0ce0: 00 0E 0F 2D  02 00 00 00  B0 1A 8B A8  F6 01 00 00  ...-............
+000000022d0f0cf0: 00 00 00 00  00 00 00 00  45 78 D8 0A  F7 7F 00 00  ........Ex......
+* = addr          **                                                  *               
+000000022d0f0d00: A8 0D 0F 2D  02 00 00 00  01 00 00 00  02 00 00 00  ...-............
+000000022d0f0d10: 90 8F E0 DF  F8 01 00 00  F0 0D 0F 2D  02 00 00 00  ...........-....
+000000022d0f0d20: A8 0D 0F 2D  02 00 00 00  D8 FD 0F 2D  02 00 00 00  ...-.......-....
+000000022d0f0d30: 78 56 B5 01  F8 01 00 00  00 00 00 00  00 00 00 00  xV..............
+000000022d0f0d40: 70 0D 0F 2D  02 00 00 00  00 00 00 00  00 00 00 00  p..-............
+000000022d0f0d50: 32 19 00 00  00 00 00 00  00 00 00 00  00 00 00 00  2...............
+000000022d0f0d60: 00 00 00 00  00 00 00 00  B0 1A 8B A8  F6 01 00 00  ................
+000000022d0f0d70: 2A 00 00 00  10 00 00 00  E0 64 3E 0D  F8 01 00 00  *........d>.....
+000000022d0f0d80: 01 00 00 00  01 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0d90: 00 00 00 45  00 00 00 45  00 00 00 00  00 00 80 3F  ...E...E.......?
+000000022d0f0da0: 00 00 00 00  00 00 00 00  D0 F5 01 00  00 00 00 00  ................
+000000022d0f0db0: 98 1A 8B A8  F6 01 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0dc0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0dd0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0de0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0df0: 78 85 6D CC  F7 01 00 00  00 00 00 00  00 00 00 00  x.m.............
+000000022d0f0e00: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0e10: 04 00 00 00  04 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0e20: 8A 03 00 00  00 00 00 00  00 08 00 00  7D 04 00 00  ............}...
+000000022d0f0e30: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0e40: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0e50: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0e60: 21 00 00 00  18 00 00 00  03 00 00 00  01 00 00 00  !...............
+000000022d0f0e70: 00 00 00 00  00 00 00 00  00 00 10 00  02 00 00 00  ................
+000000022d0f0e80: 02 00 00 00  00 00 01 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0e90: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0ea0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0eb0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0ec0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0ed0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0ee0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0ef0: 22 00 00 00  20 00 00 00  36 18 00 00  01 00 00 00  "... ...6.......
+000000022d0f0f00: 00 00 00 00  00 00 00 00  00 00 00 00  01 00 00 00  ................
+000000022d0f0f10: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0f20: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0f30: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0f40: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0f50: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0f60: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0f70: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0f80: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0f90: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0fa0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f0fb0: 1F 00 00 00  30 00 00 00  00 00 00 00  01 00 00 00  ....0...........
+000000022d0f0fc0: 40 30 A1 BC  F6 01 00 00  48 30 A1 BC  F6 01 00 00  @0......H0......
+000000022d0f0fd0: 4C 30 A1 BC  F6 01 00 00  50 30 A1 BC  F6 01 00 00  L0......P0......
+000000022d0f0fe0: 05 00 00 00  40 00 00 00  20 66 64 72  F8 01 00 00  ....@... fdr....
+000000022d0f0ff0: 60 69 65 E2  F6 01 00 00  00 EC 0B 00  00 04 00 00  `ie.............
+000000022d0f1000: 00 00 00 00  06 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f1010: 00 00 00 00  04 00 00 00  04 00 00 00  01 00 00 00  ................
+000000022d0f1020: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f1030: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f1040: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f1050: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f1060: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f1070: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f1080: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f1090: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f10a0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f10b0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f10c0: F8 3A A7 0F  F7 01 00 00  D6 08 BE C4  00 00 00 00  .:..............
+000000022d0f10d0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f10e0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+000000022d0f10f0: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  ................
+
+
+------------------------------------------------------------------------------
+Percent memory used:    40
+Total physical memory:  34296328192 (31.94G)
+Free physical memory:   20282556416 (18.89G)
+Total Page file:        70803550208 (65.94G)
+Free Page file:         46371184640 (43.19G)
+Total virtual memory:   140737488224256 (128.00T)
+Free virtual memory:    140666712043520 (127.94T)
+<Memory.HighLoad> No
+------------------------------------------------------------------------------
+Working Set Size:       6374998016 (5.94G)
+Peak Working Set Size:  7837691904 (7.30G)
+Pagefile Usage:         9525776384 (8.87G)
+Peak Pagefile Usage:    10730655744 (9.99G)
+Page Fault Count:       4335447
+Quota Paged Pool Usage:           1905008 (1.82M)
+Quota Peak Paged Pool Usage:      2123968 (2.03M)
+Quota Non-Paged Pool Usage:       378584 (369.71K)
+Quota Peak Non-Paged Pool Usage:  437820 (427.56K)
+------------------------------------------------------------------------------
+Loaded Module Total: 289.78M
+Debug Tracking Total: 0.00B
+
+<FreePageAccessViolation> No
+
+List of running Wow.exe processes
+
+Process: D:\Program Files (x86)\World of Warcraft\_retail_\Wow.exe; pid: 21396
+
+List of running Agent.exe processes
+
+Process: C:\ProgramData\Battle.net\Agent\Agent.7220\Agent.exe; pid: 4640

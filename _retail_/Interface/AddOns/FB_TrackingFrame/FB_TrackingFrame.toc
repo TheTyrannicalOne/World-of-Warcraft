@@ -1,6 +1,6 @@
 ## Interface: 90001
 ## Title: Fishing Buddy - Tracking Frame
-## Version: 1.10.2
+## Version: 1.10.3
 ## Author: Sutorix=AT=hotmail.com
 ## RequiredDeps: FishingBuddy
 ## SavedVariables: PBTF_Info

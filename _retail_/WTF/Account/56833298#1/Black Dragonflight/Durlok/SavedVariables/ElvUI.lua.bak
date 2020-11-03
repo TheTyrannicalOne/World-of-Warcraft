@@ -4,8 +4,8 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/skada toggle", -- [1]
-		"/dance", -- [2]
-		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [3]
+		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [2]
+		"/dance", -- [3]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -690,5 +690,247 @@ ElvCharacterDB = {
 			[51] = 1603735806,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [31]
+		{
+			":(", -- [1]
+			"Shadowknight-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Shadowknight-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			289, -- [11]
+			"Player-96-0CF0B150", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Shadowknight-Skullcrusher|r",
+			[51] = 1604008039,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [32]
+		{
+			"i got the Ready for War achi and exaulted with honourbound, how come i cant unlock maghar orcs?", -- [1]
+			"Rukaz-Scilla", -- [2]
+			"", -- [3]
+			"1. General - Orgrimmar", -- [4]
+			"Rukaz-Scilla", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Orgrimmar", -- [9]
+			0, -- [10]
+			290, -- [11]
+			"Player-96-0C45F2AC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Rukaz-Scilla|r",
+			[51] = 1604008039,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [33]
+		{
+			"follow instructions", -- [1]
+			"Shadowknight-Skullcrusher", -- [2]
+			"", -- [3]
+			"1. General - Orgrimmar", -- [4]
+			"Shadowknight-Skullcrusher", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Orgrimmar", -- [9]
+			0, -- [10]
+			292, -- [11]
+			"Player-96-0CF0B150", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Shadowknight-Skullcrusher|r",
+			[51] = 1604008056,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [34]
+		{
+			"do you have a quest at the embassy", -- [1]
+			"Chillytusks-Eonar", -- [2]
+			"", -- [3]
+			"1. General - Orgrimmar", -- [4]
+			"Chillytusks-Eonar", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Orgrimmar", -- [9]
+			0, -- [10]
+			294, -- [11]
+			"Player-96-03CC94ED", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Chillytusks-Eonar|r",
+			[51] = 1604008066,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [35]
+		{
+			"let the |cff00ccff|Hitem:128318::::::::50:64:::1:5805:1:28:2055:::|h[Touch of the Void]|h|r lead the way to maghar orcs ", -- [1]
+			"Elisande-Eonar", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Elisande-Eonar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			296, -- [11]
+			"Player-96-0027746E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaElisande-Eonar|r",
+			[51] = 1604008092,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [36]
+		{
+			"i dont, saw that on wow head but i dont see a quest", -- [1]
+			"Rukaz-Scilla", -- [2]
+			"", -- [3]
+			"1. General - Orgrimmar", -- [4]
+			"Rukaz-Scilla", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Orgrimmar", -- [9]
+			0, -- [10]
+			297, -- [11]
+			"Player-96-0C45F2AC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Rukaz-Scilla|r",
+			[51] = 1604008104,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [37]
+		{
+			"did you go to the embassy and click the maghar thingy that tells you exactly what you need to do?", -- [1]
+			"Shadowknight-Skullcrusher", -- [2]
+			"", -- [3]
+			"1. General - Orgrimmar", -- [4]
+			"Shadowknight-Skullcrusher", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Orgrimmar", -- [9]
+			0, -- [10]
+			298, -- [11]
+			"Player-96-0CF0B150", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Shadowknight-Skullcrusher|r",
+			[51] = 1604008125,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [38]
+		{
+			"it should let you know what you're missing", -- [1]
+			"Shadowknight-Skullcrusher", -- [2]
+			"", -- [3]
+			"1. General - Orgrimmar", -- [4]
+			"Shadowknight-Skullcrusher", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Orgrimmar", -- [9]
+			0, -- [10]
+			299, -- [11]
+			"Player-96-0CF0B150", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Shadowknight-Skullcrusher|r",
+			[51] = 1604008153,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [39]
+		{
+			"why would they have that", -- [1]
+			"Selændis-BlackDragonflight", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Selændis-BlackDragonflight", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			359, -- [11]
+			"Player-96-0CBB8CAA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Selændis|r",
+			[51] = 1604008371,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [40]
+		{
+			"idk i know some gave gold benefits", -- [1]
+			"Hellsgift-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hellsgift-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			363, -- [11]
+			"Player-96-0C84ED88", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcHellsgift-Skullcrusher|r",
+			[51] = 1604008384,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"how much", -- [1]
+			"Hay-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hay-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			449, -- [11]
+			"Player-96-0CC9CCF9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeHay-Skullcrusher|r",
+			[51] = 1604082914,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [42]
 	},
 }

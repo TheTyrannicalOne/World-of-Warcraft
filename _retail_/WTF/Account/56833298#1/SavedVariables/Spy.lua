@@ -109,12 +109,12 @@ SpyDB = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
@@ -209,6 +209,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Shimzo - Zul'jin"] = {
@@ -374,7 +375,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
 				["Bar"] = {
@@ -433,7 +434,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
 				["Bar"] = {

@@ -668,7 +668,18 @@ local function AAP_PrintQStep()
 	if (AAP1["Debug"]) then
 		print("Function: AAP_PrintQStep()")
 	end
+	if (IsInGroup() and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowGroup"] == 1) then
+	elseif (AAP.PartyList.PartyFrames[1]:IsShown()) then
+		for CLi = 1, 5 do
+			AAP.PartyList.PartyFrames[CLi]:Hide()
+			AAP.PartyList.PartyFrames2[CLi]:Hide()
+		end
+	end
 	if (IsInInstance()) then
+		for CLi = 1, 5 do
+			AAP.PartyList.PartyFrames[CLi]:Hide()
+			AAP.PartyList.PartyFrames2[CLi]:Hide()
+		end
 		AAP.ZoneQuestOrder:Hide()
 		return
 	elseif (AAP1[AAP.Realm][AAP.Name]["Settings"] and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQuestListOrder"] and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQuestListOrder"] == 1) then
@@ -743,7 +754,8 @@ local function AAP_PrintQStep()
 		end
 		return
 	end
-	if (AAP.ProgressText and AAP.ProgressShown == 1) then
+	
+	if (AAP.ActiveMap and AAP.QuestStepList and AAP.QuestStepList[AAP.ActiveMap] and AAP.ProgressText and AAP.ProgressShown == 1) then
 		AAP.QuestList.QuestFrames["MyProgress"]:Show()
 		AAP.QuestList.QuestFrames["MyProgressFS"]:SetText(AAP.ProgressText)
 	else

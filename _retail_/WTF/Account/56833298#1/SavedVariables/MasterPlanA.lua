@@ -19,9 +19,9 @@ MasterPlanAG = {
 			["faction"] = "Neutral",
 			["class"] = "MONK",
 		},
-		["Datgore"] = {
-			["class"] = "HUNTER",
+		["Okona"] = {
 			["faction"] = "Horde",
+			["class"] = "PRIEST",
 		},
 		["Zulbathal"] = {
 			["summary"] = {
@@ -52,9 +52,9 @@ MasterPlanAG = {
 			["class"] = "MAGE",
 			["faction"] = "Horde",
 		},
-		["Okona"] = {
+		["Datgore"] = {
+			["class"] = "HUNTER",
 			["faction"] = "Horde",
-			["class"] = "PRIEST",
 		},
 		["Fantastiburo"] = {
 			["faction"] = "Horde",
@@ -63,8 +63,8 @@ MasterPlanAG = {
 	},
 	["Dalaran"] = {
 		["Rotclaugh"] = {
-			["class"] = "DEATHKNIGHT",
 			["lastCacheTime"] = 1600407706,
+			["class"] = "DEATHKNIGHT",
 			["curRes"] = 219,
 			["faction"] = "Alliance",
 		},
@@ -132,38 +132,34 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["faction"] = "Horde",
+			["curOil"] = 99420,
 			["summary"] = {
-				["lastOilTime"] = 1603815155,
+				["lastOilTime"] = 1604328288,
 				["ti2"] = 122486,
 				["inProgress"] = {
-					[335] = 1603881735,
-					[396] = 1603892522,
-					[132] = 1603874538,
-					[676] = 1603892544,
-					[543] = 1603892560,
-					[266] = 1603878148,
-					[667] = 1603878146,
-					[745] = 1603879955,
-					[391] = 1603892528,
-					[495] = 1603892533,
-					[331] = 1603865540,
-					[189] = 1603866442,
-					[563] = 1603892558,
-					[696] = 1603878163,
-					[620] = 1603928557,
+					[745] = 1604393088,
+					[503] = 1604398472,
+					[399] = 1604412874,
+					[618] = 1604517981,
+					[402] = 1604398470,
+					[699] = 1604391293,
+					[332] = 1604380481,
+					[617] = 1604405689,
+					[577] = 1604405691,
+					[264] = 1604391277,
+					[265] = 1604391279,
 				},
 				["ti3"] = 127855,
 				["ti1"] = 118531,
-				["tt1"] = 1602855178,
-				["tt3"] = 1602792717,
-				["tt2"] = 1601786308,
+				["tt1"] = 1604067761,
+				["tt3"] = 1603975826,
+				["tt2"] = 1604207439,
 			},
-			["curOil"] = 99545,
+			["faction"] = "Horde",
 			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1604345198,
+			["curRes"] = 3377,
 			["class"] = "WARRIOR",
-			["curRes"] = 8589,
-			["lastCacheTime"] = 1603806411,
 		},
 		["Tyrannithal"] = {
 			["class"] = "DEMONHUNTER",

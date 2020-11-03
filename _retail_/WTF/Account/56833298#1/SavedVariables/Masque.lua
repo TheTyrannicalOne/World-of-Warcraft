@@ -21,12 +21,12 @@ MasqueDB = {
 		["Zulbathal - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
-		["Malivant - Dalaran"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
+		["Malivant - Dalaran"] = "Default",
 		["Shanyt - Zul'jin"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 		["Jingojaggot - Zul'jin"] = "Default",
@@ -40,6 +40,7 @@ MasqueDB = {
 				},
 				["Kaliel's Tracker_Active Button"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
 				},
 				["WeakAuras_iKS2EQzNKJL"] = {
 					["Upgraded"] = true,

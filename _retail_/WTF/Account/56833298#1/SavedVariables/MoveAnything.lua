@@ -9,6 +9,39 @@ MADB = {
 		["default"] = {
 			["name"] = "default",
 			["frames"] = {
+				["BagItemTooltipMover"] = {
+					["orgPos"] = {
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["name"] = "BagItemTooltipMover",
+					["pos"] = {
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						-6.103515625e-05, -- [4]
+						0, -- [5]
+					},
+				},
+				["ExtraAbilityContainer"] = {
+					["orgPos"] = {
+						"TOP", -- [1]
+						"MainMenuBar", -- [2]
+						"TOP", -- [3]
+						0, -- [4]
+						180, -- [5]
+					},
+					["name"] = "ExtraAbilityContainer",
+					["pos"] = {
+						"TOP", -- [1]
+						"MainMenuBar", -- [2]
+						"TOP", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
 				["TooltipMover"] = {
 					["orgPos"] = {
 						"BOTTOMRIGHT", -- [1]
@@ -24,22 +57,6 @@ MADB = {
 						"BOTTOMRIGHT", -- [3]
 						0, -- [4]
 						0.000118994532385841, -- [5]
-					},
-				},
-				["BagItemTooltipMover"] = {
-					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["name"] = "BagItemTooltipMover",
-					["pos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						-6.103515625e-05, -- [4]
-						0, -- [5]
 					},
 				},
 			},

@@ -35,18 +35,18 @@ CliqueDB3 = {
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Shanyt - Argent Dawn",
-			["downclick"] = false,
 			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["downclick"] = false,
 			["specswap"] = false,
+			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 		},
 		["Rotclaugh - Dalaran"] = {
 			["spec1_profileKey"] = "Rotclaugh - Dalaran",
-			["spec3_profileKey"] = "Rotclaugh - Dalaran",
+			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
-			["specswap"] = false,
 			["spec2_profileKey"] = "Rotclaugh - Dalaran",
+			["spec3_profileKey"] = "Rotclaugh - Dalaran",
 		},
 		["Varlouris - Dalaran"] = {
 			["spec1_profileKey"] = "Varlouris - Dalaran",
@@ -90,8 +90,8 @@ CliqueDB3 = {
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -387,13 +387,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -406,13 +406,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]

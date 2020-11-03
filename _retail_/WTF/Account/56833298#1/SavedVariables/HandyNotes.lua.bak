@@ -16,8 +16,8 @@ HandyNotesDB = {
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -58,9 +58,9 @@ HandyNotesDB = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Malivant - Dalaran"] = {
-		},
 		["Datgore - Zul'jin"] = {
+		},
+		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
@@ -97,8 +97,8 @@ HandyNotes_HandyNotesDB = {
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -139,9 +139,9 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Malivant - Dalaran"] = {
-		},
 		["Datgore - Zul'jin"] = {
+		},
+		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},

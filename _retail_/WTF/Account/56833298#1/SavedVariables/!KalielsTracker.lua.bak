@@ -82,16 +82,16 @@ KalielsTrackerDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["quests"] = {
-				["num"] = 14,
+				["num"] = 15,
 			},
 		},
 		["Jingojaggot - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Bathal - Argent Dawn"] = {
@@ -99,7 +99,7 @@ KalielsTrackerDB = {
 		},
 		["Rotclaugh - Dalaran"] = {
 			["quests"] = {
-				["num"] = 20,
+				["num"] = 21,
 			},
 		},
 		["Fantastiburo - Zul'jin"] = {
@@ -139,7 +139,7 @@ KalielsTrackerDB = {
 		["Mulmok - Argent Dawn"] = "Default",
 		["Fantastiburo - Argent Dawn"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
-		["Claugh - Runetotem"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
 		["Avisar - Dalaran"] = "Default",
@@ -150,7 +150,7 @@ KalielsTrackerDB = {
 		["Shanyt - Argent Dawn"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
@@ -170,11 +170,11 @@ KalielsTrackerDB = {
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
 		["Migimong - Runetotem"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Claugh - Runetotem"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 	},
 	["global"] = {

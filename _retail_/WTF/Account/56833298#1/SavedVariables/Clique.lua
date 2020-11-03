@@ -35,18 +35,18 @@ CliqueDB3 = {
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Shanyt - Argent Dawn",
-			["downclick"] = false,
-			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 			["specswap"] = false,
+			["downclick"] = false,
+			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 		},
 		["Rotclaugh - Dalaran"] = {
 			["spec1_profileKey"] = "Rotclaugh - Dalaran",
-			["spec3_profileKey"] = "Rotclaugh - Dalaran",
+			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec3_profileKey"] = "Rotclaugh - Dalaran",
 			["spec2_profileKey"] = "Rotclaugh - Dalaran",
-			["specswap"] = false,
 		},
 		["Varlouris - Dalaran"] = {
 			["spec1_profileKey"] = "Varlouris - Dalaran",
@@ -91,12 +91,12 @@ CliqueDB3 = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
@@ -406,13 +406,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -501,13 +501,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]

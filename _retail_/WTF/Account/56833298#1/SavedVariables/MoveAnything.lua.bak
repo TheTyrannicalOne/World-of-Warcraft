@@ -25,6 +25,23 @@ MADB = {
 						0, -- [5]
 					},
 				},
+				["ExtraAbilityContainer"] = {
+					["orgPos"] = {
+						"TOP", -- [1]
+						"MainMenuBar", -- [2]
+						"TOP", -- [3]
+						0, -- [4]
+						180, -- [5]
+					},
+					["name"] = "ExtraAbilityContainer",
+					["pos"] = {
+						"TOP", -- [1]
+						"MainMenuBar", -- [2]
+						"TOP", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
 				["TooltipMover"] = {
 					["orgPos"] = {
 						"BOTTOMRIGHT", -- [1]

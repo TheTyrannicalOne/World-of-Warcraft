@@ -11,7 +11,7 @@ ARLDB2 = {
 				},
 				["Shaekhan"] = {
 				},
-				["Datgore"] = {
+				["Okona"] = {
 				},
 				["Zulbathal"] = {
 				},
@@ -21,7 +21,7 @@ ARLDB2 = {
 				},
 				["Vancard"] = {
 				},
-				["Okona"] = {
+				["Datgore"] = {
 				},
 				["Fantastiburo"] = {
 				},
@@ -77,12 +77,12 @@ ARLDB2 = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
@@ -120,7 +120,7 @@ ARLDB2 = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
@@ -130,7 +130,7 @@ ARLDB2 = {
 		},
 		["Durlok - Black Dragonflight"] = {
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 		},
 		["Shanyt - Zul'jin"] = {
 		},

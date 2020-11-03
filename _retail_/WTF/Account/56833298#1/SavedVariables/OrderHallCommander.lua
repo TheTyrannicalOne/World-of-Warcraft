@@ -70,10 +70,11 @@ dbOHC = {
 				["BASECHANCE"] = 0,
 			},
 			["blacklist"] = {
-				[1377] = false,
 				[1765] = false,
+				[1377] = false,
 				[1325] = false,
 				[1816] = true,
+				[1762] = true,
 			},
 			["showmenu"] = false,
 		},

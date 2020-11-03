@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0401,
+	["LastVersion"] = 2.0402,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -84,8 +84,8 @@ PawnOptions = {
 		}, -- [16]
 	},
 	["AutoSelectScales"] = true,
-	["LastKeybindingsSet"] = 1,
 	["LastPlayerFullName"] = "Avisar-Dalaran",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {

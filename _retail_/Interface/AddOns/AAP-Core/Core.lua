@@ -128,6 +128,7 @@ function AAP.AutoPathOnBeta(ChoiceZ)
 		tinsert(AAP_Custom[AAP.Name.."-"..AAP.Realm],"(4/6) 10-50 Gorgrond")
 		tinsert(AAP_Custom[AAP.Name.."-"..AAP.Realm],"(5/6) 10-50 Talador")
 		tinsert(AAP_Custom[AAP.Name.."-"..AAP.Realm],"(6/6) 10-50 Spires of Arak")
+		tinsert(AAP_Custom[AAP.Name.."-"..AAP.Realm],"(7-extra) 10-50 Nagrand")
 	elseif (ChoiceZ == 1 and AAP.Level < 50 and AAP.Level > 9 and AAP.Faction == "Horde") then
 		AAP_Custom[AAP.Name.."-"..AAP.Realm] = nil
 		AAP_Custom[AAP.Name.."-"..AAP.Realm] = {}
@@ -141,6 +142,7 @@ function AAP.AutoPathOnBeta(ChoiceZ)
 		tinsert(AAP_Custom[AAP.Name.."-"..AAP.Realm],"(4/6) 10-50 Gorgrond")
 		tinsert(AAP_Custom[AAP.Name.."-"..AAP.Realm],"(5/6) 10-50 Talador")
 		tinsert(AAP_Custom[AAP.Name.."-"..AAP.Realm],"(6/6) 10-50 Spires of Arak")
+		tinsert(AAP_Custom[AAP.Name.."-"..AAP.Realm],"(7-extra) 10-50 Nagrand")
 	elseif (ZeMap == 1409 or ZeMap == 1726 or ZeMap == 1727) then
 		AAP_Custom[AAP.Name.."-"..AAP.Realm] = nil
 		AAP_Custom[AAP.Name.."-"..AAP.Realm] = {}

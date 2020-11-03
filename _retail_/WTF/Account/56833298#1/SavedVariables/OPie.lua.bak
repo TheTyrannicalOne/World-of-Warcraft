@@ -27,7 +27,7 @@ OneRing_Config = {
 				["Tools2"] = "ALT-E",
 				["Mounts9"] = "ALT-Q",
 				["Mounts5"] = "ALT-Q",
-				["Utility9"] = "ALT-E",
+				["Utility8"] = "ALT-E",
 				["Tools1"] = "ALT-E",
 				["Mounts11"] = "ALT-Q",
 				["OPieAutoQuest"] = false,
@@ -35,7 +35,7 @@ OneRing_Config = {
 				["Mounts4"] = "ALT-Q",
 				["Mounts61"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
-				["Utility8"] = "ALT-E",
+				["Utility9"] = "ALT-E",
 				["Mounts15"] = "ALT-Q",
 				["Utility3"] = "ALT-E",
 				["Mounts6"] = "ALT-Q",
@@ -619,10 +619,10 @@ OneRing_Config = {
 					140192, -- [2]
 					["sliceToken"] = "ABuedW477Kes",
 				}, -- [2]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
 			["Utility11"] = {
 				{

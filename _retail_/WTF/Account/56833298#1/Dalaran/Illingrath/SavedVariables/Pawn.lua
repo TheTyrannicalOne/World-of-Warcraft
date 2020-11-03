@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0402,
-	["LastPlayerFullName"] = "Illingrath-Dalaran",
-	["AutoSelectScales"] = true,
+	["LastVersion"] = 2.0404,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122249,
@@ -87,6 +85,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:117356::::::::50:581::11:1:6423:2:9:50:28:2063:::|h[The Horseman's Sinister Slicer]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Illingrath-Dalaran",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128832] = {
 			["Relics"] = {
@@ -100,7 +101,6 @@ PawnOptions = {
 			["Name"] = "The Aldrachi Warblades",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEMONHUNTER",

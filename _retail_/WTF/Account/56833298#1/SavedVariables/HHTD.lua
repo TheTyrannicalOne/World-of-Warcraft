@@ -49,7 +49,7 @@ HHTD_SavedVariables = {
 		["Fantastiburo - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Darnastris - Dalaran"] = {
@@ -64,7 +64,7 @@ HHTD_SavedVariables = {
 		["Durlok - Black Dragonflight"] = {
 			["settingsMigrated"] = false,
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Shanyt - Zul'jin"] = {
@@ -85,10 +85,6 @@ HHTD_SavedVariables = {
 		["NPH"] = {
 		},
 	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
@@ -106,14 +102,18 @@ HHTD_SavedVariables = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
 	},
 }

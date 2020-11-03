@@ -8,11 +8,16 @@ PawnCommon = {
 	["ShowValuesForUpgradesOnly"] = true,
 	["ShowItemLevelUpgrades"] = true,
 	["ShownGettingStarted"] = true,
-	["Debug"] = false,
+	["IgnoreGemsWhileLeveling"] = true,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
 	["Digits"] = 1,
 	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
+	["LastVersion"] = 2.0404,
+	["ButtonPosition"] = 2,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -47,10 +52,10 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN1"] = {
 			["IconTexturePath"] = 136048,
 			["PerCharacterOptions"] = {
-				["Fantastiburo-Zul'jin"] = {
+				["Kelvalatar-Dalaran"] = {
 					["Visible"] = true,
 				},
-				["Kelvalatar-Dalaran"] = {
+				["Fantastiburo-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},
@@ -338,39 +343,6 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "6464b1",
 		},
-		["\"MrRobot\":PALADIN2"] = {
-			["IconTexturePath"] = 236264,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "f38bb9",
-			["ClassID"] = 2,
-			["LocalizedName"] = "Paladin: Protection",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "b6688a",
-		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = 1247265,
-			["PerCharacterOptions"] = {
-				["Illingrath-Dalaran"] = {
-					["Visible"] = true,
-				},
-			},
-			["Color"] = "a22fc8",
-			["ClassID"] = 12,
-			["LocalizedName"] = "Demon Hunter: Vengeance",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "792396",
-		},
 		["\"MrRobot\":DRUID2"] = {
 			["IconTexturePath"] = 132115,
 			["PerCharacterOptions"] = {
@@ -385,6 +357,36 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "be5c06",
+		},
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "006fdc",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0053a5",
+		},
+		["\"MrRobot\":PALADIN2"] = {
+			["IconTexturePath"] = 236264,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "f38bb9",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Protection",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "b6688a",
 		},
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = 135932,
@@ -539,20 +541,23 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "bf3950",
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
+				["Illingrath-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
-			["Color"] = "006fdc",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
+			["Color"] = "a22fc8",
+			["ClassID"] = 12,
+			["LocalizedName"] = "Demon Hunter: Vengeance",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0053a5",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "792396",
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
@@ -627,10 +632,5 @@ PawnCommon = {
 			["UnenchantedColor"] = "00be6f",
 		},
 	},
-	["LastVersion"] = 2.0402,
-	["ButtonPosition"] = 2,
-	["ShowLootUpgradeAdvisor"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowSpecIcons"] = true,
-	["IgnoreGemsWhileLeveling"] = true,
+	["Debug"] = false,
 }

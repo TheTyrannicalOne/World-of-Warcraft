@@ -83,10 +83,10 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[49076] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
+		[13720] = {
+			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-				"3/4 Rune of Passage", -- [1]
+				"2/25 Valiant's Seal", -- [1]
 			},
 		},
 		[50598] = {
@@ -95,10 +95,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
-		[49133] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[44989] = {
@@ -120,9 +120,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[57743] = {
+			["title"] = "Conquest's Reward",
 			["objectives"] = {
+				"443/500 Earn Conquest", -- [1]
 			},
 		},
 		[50604] = {
@@ -147,29 +148,28 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"443/500 Earn Conquest", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[13720] = {
-			["title"] = "The Valiant's Charge",
+		[49076] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"2/25 Valiant's Seal", -- [1]
+				"3/4 Rune of Passage", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

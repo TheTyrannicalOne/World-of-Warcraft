@@ -16,8 +16,8 @@ ARLDB2 = {
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -68,9 +68,9 @@ ARLDB2 = {
 				},
 				["Shanyt"] = {
 				},
-				["Datgore"] = {
-				},
 				["Okona"] = {
+				},
+				["Datgore"] = {
 				},
 				["Zulbathal"] = {
 				},
@@ -118,9 +118,9 @@ ARLDB2 = {
 		},
 		["Ruffinton - Dalaran"] = {
 		},
-		["Malivant - Dalaran"] = {
-		},
 		["Datgore - Zul'jin"] = {
+		},
+		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},

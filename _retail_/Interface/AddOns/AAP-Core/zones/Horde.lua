@@ -3555,6 +3555,7 @@ AAP.QuestStepListListingZone = {
 	["(4/6) 10-50 Gorgrond"] = 543,
 	["(5/6) 10-50 Talador"] = 535,
 	["(6/6) 10-50 Spires of Arak"] = 542,
+	["(7-extra) 10-50 Nagrand"] = 550,
 	
 	["Legion - Azsuna"] = 630,
 	["Legion - Val'Sharah"] = 641,
@@ -3569,6 +3570,7 @@ AAP.QuestStepListListing["Shadowlands"] = {
 	["543-DesMephisto-Gorgrond-p1"] = "(4/6) 10-50 Gorgrond",
 	["535-DesMephisto-Talador-p1"] = "(5/6) 10-50 Talador",
 	["542-DesMephisto-SpiresOfArak"] = "(6/6) 10-50 Spires of Arak",
+	["550-DesMephisto-Nagrand"] = "(7-extra) 10-50 Nagrand",
 }
 if (AAP.Level < 33) then
 	AAP.QuestStepListListing["Shadowlands"]["1409-Exile's Reach"] = "01-10 Exile's Reach"
