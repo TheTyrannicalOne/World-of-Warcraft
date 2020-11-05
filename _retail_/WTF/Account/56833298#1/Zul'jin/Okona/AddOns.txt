@@ -16,3 +16,4 @@ ElvUI_SLE: enabled
 AddonSkins: enabled
 Hermes: enabled
 xCT+: enabled
+ElvUI_QuestXP: disabled

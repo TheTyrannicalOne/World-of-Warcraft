@@ -995,7 +995,7 @@ local function AAP_PrintQStep()
 				end
 				if (OnTime == 0) then
 					LineNr = LineNr + 1
-					AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Your NOT on ChromieTime!")
+					AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** You are not in Chromie Time!")
 					AAP.QuestList.QuestFrames[LineNr]:Show()
 				end
 			end

@@ -8,6 +8,7 @@ ElvCharacterDB = {
 		"/p do you want to kill the big one outside", -- [3]
 		"/p thanks for the help later", -- [4]
 		"/invite azaru-blackhand", -- [5]
+		"/opie", -- [6]
 	},
 	["ChatHistoryLog"] = {
 		{

@@ -678,7 +678,6 @@ Database:AddChain(Chain.SilverTideHollow, {
     expansion = EXPANSION_ID,
     range = {30,35},
     major = true,
-    restrictions = ALLIANCE_RESTRICTION,
     prerequisites = {
         {
             type = "level",

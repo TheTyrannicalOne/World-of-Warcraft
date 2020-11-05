@@ -102,22 +102,21 @@ QuestTogether = {
 				"0/1 Conch Shell", -- [2]
 			},
 		},
-		[49422] = {
-			["title"] = "Heretics",
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
 			["objectives"] = {
-				"0% Ruin wrought.", -- [1]
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[32806] = {
+			["title"] = "The King and the Council",
+			["objectives"] = {
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[29907] = {
@@ -163,9 +162,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
+		[49422] = {
+			["title"] = "Heretics",
 			["objectives"] = {
+				"0% Ruin wrought.", -- [1]
 			},
 		},
 		[31613] = {
@@ -183,8 +183,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

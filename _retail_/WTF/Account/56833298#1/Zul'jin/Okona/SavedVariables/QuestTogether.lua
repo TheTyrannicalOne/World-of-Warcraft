@@ -1,13 +1,31 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[32674] = {
-			["title"] = "I Believe You Can Fly",
+		[49813] = {
+			["title"] = "Adventure Calls",
+			["objectives"] = {
+				"0/1 Select your next assignment", -- [1]
+			},
+		},
+		[26935] = {
+			["title"] = "Northridge Lumber Mill",
 			["objectives"] = {
 			},
 		},
-		[27683] = {
-			["title"] = "Into the Woods",
+		[25056] = {
+			["title"] = "Grisly Grizzlies",
+			["objectives"] = {
+				"0/5 Plagued Bruin Hide", -- [1]
+			},
+		},
+		[27144] = {
+			["title"] = "The Reckoning",
+			["objectives"] = {
+				"0/1 Witness the Reckoning", -- [1]
+			},
+		},
+		[32674] = {
+			["title"] = "I Believe You Can Fly",
 			["objectives"] = {
 			},
 		},
@@ -21,34 +39,16 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[27144] = {
-			["title"] = "The Reckoning",
+		[27683] = {
+			["title"] = "Into the Woods",
 			["objectives"] = {
-				"0/1 Witness the Reckoning", -- [1]
-			},
-		},
-		[25056] = {
-			["title"] = "Grisly Grizzlies",
-			["objectives"] = {
-				"0/5 Plagued Bruin Hide", -- [1]
-			},
-		},
-		[26935] = {
-			["title"] = "Northridge Lumber Mill",
-			["objectives"] = {
-			},
-		},
-		[49813] = {
-			["title"] = "Adventure Calls",
-			["objectives"] = {
-				"0/1 Select your next assignment", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

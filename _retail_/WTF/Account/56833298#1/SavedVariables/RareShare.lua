@@ -4,8 +4,8 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["CChannel"] = {
-			["CName"] = "General - Nazjatar",
 			["CID"] = 2,
+			["CName"] = "General - Mechagon",
 		},
 		["TomTom"] = {
 			["Rares"] = true,
@@ -22,7 +22,7 @@ RareShareDB = {
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1604356308,
-		["ID"] = 152290,
+		["Time"] = 1604530344,
+		["ID"] = 150394,
 	},
 }

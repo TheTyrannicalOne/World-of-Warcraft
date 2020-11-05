@@ -1761,12 +1761,16 @@ function state:AddToHistory( spellID, destGUID )
 end
 
 
-local SpellQueueWindow = tonumber( GetCVar( "SpellQueueWindow" ) ) / 1000
+local SpellQueueWindow = 0.4
 
-RegisterEvent( "CVAR_UPDATE", function( event )
-    SpellQueueWindow = tonumber( GetCVar( "SpellQueueWindow" ) ) / 1000
-end )
+local function UpdateSpellQueueWindow()
+    SpellQueueWindow = ( tonumber( GetCVar( "SpellQueueWindow" ) ) or 400 ) / 1000
+end
 
+RegisterEvent( "CVAR_UPDATE", UpdateSpellQueueWindow )
+RegisterEvent( "VARIABLES_LOADED", UpdateSpellQueueWindow )
+
+C_Timer.After( 60, UpdateSpellQueueWindow )
 
 
 do
@@ -2302,8 +2306,7 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
                         end
                     end
 
-
-                    if ability.isProjectile then
+                    if ability.isProjectile and not state:IsInFlight( ability.key, true ) then
                         local travel
 
                         if ability.flightTime then

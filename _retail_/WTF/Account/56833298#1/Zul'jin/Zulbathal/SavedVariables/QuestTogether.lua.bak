@@ -101,21 +101,21 @@ QuestTogether = {
 				"2/12 Pilgrimage Scroll", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+			},
+		},
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
+			["objectives"] = {
 			},
 		},
 		[49422] = {
 			["title"] = "Heretics",
 			["objectives"] = {
 				"0% Ruin wrought.", -- [1]
-			},
-		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
-			["objectives"] = {
 			},
 		},
 		[31891] = {
@@ -161,10 +161,10 @@ QuestTogether = {
 				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[31613] = {
@@ -184,7 +184,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

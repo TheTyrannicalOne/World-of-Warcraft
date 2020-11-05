@@ -1,6 +1,6 @@
 ## Interface: 90001
 ## Title: BtWQuests: Cataclysm
-## Version: 2
+## Version: 2.1
 ## Notes: Cataclysm quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests

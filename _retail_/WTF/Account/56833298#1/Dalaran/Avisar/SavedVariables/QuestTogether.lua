@@ -31,10 +31,12 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[54485] = {
-			["title"] = "Battle of Dazar'alor",
+		[56378] = {
+			["title"] = "The Missing Crew",
 			["objectives"] = {
-				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[57562] = {
@@ -42,9 +44,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44720] = {
-			["title"] = "A Call to Action",
+		[57006] = {
+			["title"] = "A Worthy Ally",
 			["objectives"] = {
+				"0/1 Use the Deepflame Campfire", -- [1]
+				"0/1 Choose an ally", -- [2]
+				"0/3 Ally quests complete", -- [3]
 			},
 		},
 		[57378] = {
@@ -61,17 +66,17 @@ QuestTogether = {
 				"0/1 Win a Battleground", -- [3]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
-			},
-		},
 		[39060] = {
 			["title"] = "Combustible Contagion",
 			["objectives"] = {
 				"0/1 Northern Plague Cache Burned", -- [1]
 				"0/1 Eastern Plague Cache Burned", -- [2]
 				"1/1 Western Plague Cache Burned", -- [3]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
 			},
 		},
 		[54180] = {
@@ -85,10 +90,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[54975] = {
-			["title"] = "A Brief Respite",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/1 Reach rank 3 with an Ankoan ally", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[36615] = {
@@ -98,17 +103,17 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
 		[56211] = {
 			["title"] = "Scrying Stones",
 			["objectives"] = {
 				"1/1 Scrying Stone used", -- [1]
 				"0/3 Hidden Treasure discovered", -- [2]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[50599] = {
@@ -117,10 +122,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[50601] = {
@@ -141,10 +146,10 @@ QuestTogether = {
 				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[54975] = {
+			["title"] = "A Brief Respite",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/1 Reach rank 3 with an Ankoan ally", -- [1]
 			},
 		},
 		[42483] = {
@@ -169,27 +174,22 @@ QuestTogether = {
 				"10/25 Slay Horde Players", -- [1]
 			},
 		},
-		[57006] = {
-			["title"] = "A Worthy Ally",
+		[44720] = {
+			["title"] = "A Call to Action",
 			["objectives"] = {
-				"0/1 Use the Deepflame Campfire", -- [1]
-				"0/1 Choose an ally", -- [2]
-				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[54485] = {
+			["title"] = "Battle of Dazar'alor",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }
