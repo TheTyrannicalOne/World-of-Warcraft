@@ -1,5 +1,6 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
+local LSM = E.Libs.LSM
 
 local unpack, tonumber, abs = unpack, tonumber, abs
 
@@ -43,13 +44,11 @@ function UF:Construct_Castbar(frame, moverName)
 	castbar:CreateBackdrop(nil, nil, nil, nil, true)
 
 	castbar.Time = castbar:CreateFontString(nil, 'OVERLAY')
-	UF:Configure_FontString(castbar.Time)
 	castbar.Time:Point('RIGHT', castbar, 'RIGHT', -4, 0)
 	castbar.Time:SetTextColor(0.84, 0.75, 0.65)
 	castbar.Time:SetJustifyH('RIGHT')
 
 	castbar.Text = castbar:CreateFontString(nil, 'OVERLAY')
-	UF:Configure_FontString(castbar.Text)
 	castbar.Text:Point('LEFT', castbar, 'LEFT', 4, 0)
 	castbar.Text:Point('RIGHT', castbar.Time, 'LEFT', -4, 0)
 	castbar.Text:SetTextColor(0.84, 0.75, 0.65)
@@ -128,6 +127,21 @@ function UF:Configure_Castbar(frame)
 	else
 		castbar.SafeZone = nil
 		castbar.LatencyTexture:Hide()
+	end
+
+	--Font Options
+	local customFont = db.customTextFont
+	if customFont.enable then
+		castbar.Text:FontTemplate(LSM:Fetch('font', customFont.font), customFont.fontSize, customFont.fontStyle)
+	else
+		UF:Update_FontString(castbar.Text)
+	end
+
+	customFont = db.customTimeFont
+	if customFont.enable then
+		castbar.Time:FontTemplate(LSM:Fetch('font', customFont.font), customFont.fontSize, customFont.fontStyle)
+	else
+		UF:Update_FontString(castbar.Time)
 	end
 
 	local textColor = db.textColor
@@ -325,15 +339,16 @@ end
 function UF:SetCastTicks(frame, numTicks, extraTickRatio)
 	extraTickRatio = extraTickRatio or 0
 	UF:HideTicks()
-	if numTicks and numTicks <= 0 then return end;
+
+	if numTicks and numTicks <= 0 then return end
+
 	local w = frame:GetWidth()
 	local d = w / (numTicks + extraTickRatio)
-	--local _, _, _, ms = GetNetStats()
-	for i = 1, numTicks do
+
+	for i = 1, numTicks - 1 do
 		if not ticks[i] then
 			ticks[i] = frame:CreateTexture(nil, 'OVERLAY')
 			ticks[i]:SetTexture(E.media.normTex)
-			E:RegisterStatusBar(ticks[i])
 			ticks[i]:SetVertexColor(frame.tickColor.r, frame.tickColor.g, frame.tickColor.b, frame.tickColor.a)
 			ticks[i]:Width(frame.tickWidth)
 		end

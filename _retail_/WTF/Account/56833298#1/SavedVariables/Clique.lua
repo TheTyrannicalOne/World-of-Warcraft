@@ -4,11 +4,11 @@ CliqueDB3 = {
 	["char"] = {
 		["Avisar - Dalaran"] = {
 			["spec1_profileKey"] = "Avisar - Dalaran",
-			["spec3_profileKey"] = "Avisar - Dalaran",
+			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
-			["specswap"] = false,
 			["spec2_profileKey"] = "Avisar - Dalaran",
+			["spec3_profileKey"] = "Avisar - Dalaran",
 		},
 		["Tyranasticus - Zul'jin"] = {
 			["spec1_profileKey"] = "Tyranasticus - Zul'jin",
@@ -50,28 +50,28 @@ CliqueDB3 = {
 		},
 		["Varlouris - Dalaran"] = {
 			["spec1_profileKey"] = "Varlouris - Dalaran",
-			["spec2_profileKey"] = "Varlouris - Dalaran",
+			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec2_profileKey"] = "Varlouris - Dalaran",
 			["spec3_profileKey"] = "Varlouris - Dalaran",
-			["specswap"] = false,
 		},
 		["Zulbathal - Zul'jin"] = {
 			["spec1_profileKey"] = "Zulbathal - Zul'jin",
-			["spec3_profileKey"] = "Zulbathal - Zul'jin",
+			["spec2_profileKey"] = "Zulbathal - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
 			["spec4_profileKey"] = "Zulbathal - Zul'jin",
+			["spec3_profileKey"] = "Zulbathal - Zul'jin",
 			["specswap"] = false,
-			["spec2_profileKey"] = "Zulbathal - Zul'jin",
 		},
 		["Okona - Zul'jin"] = {
 			["spec1_profileKey"] = "Okona - Zul'jin",
-			["specswap"] = false,
+			["spec3_profileKey"] = "Okona - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Okona - Zul'jin",
 			["spec2_profileKey"] = "Okona - Zul'jin",
+			["specswap"] = false,
 		},
 	},
 	["profileKeys"] = {
@@ -90,8 +90,8 @@ CliqueDB3 = {
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -387,13 +387,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -406,13 +406,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]

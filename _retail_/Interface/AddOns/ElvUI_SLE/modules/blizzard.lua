@@ -290,6 +290,14 @@ function B:MakeMovable(Name, AddOn)
 end
 
 function B:Addons(event, addon)
+	if addon == 'Blizzard_TalkingHeadUI' then
+		hooksecurefunc('TalkingHeadFrame_PlayCurrent', function()
+			-- -- SLE:Print('TalkingHead Frame initilized PlayCurrent')
+			if E.db.sle.skins.talkinghead.hide then
+				_G.TalkingHeadFrame:Hide()
+			end
+		end)
+	end
 	if not B.AddonsList[addon] then return end
 	if type(B.AddonsList[addon]) == 'table' then
 		for FrameName, state in pairs(B.AddonsList[addon]) do
@@ -309,6 +317,31 @@ end
 
 local function CompatibilityChecks()
 	if SLE._Compatibility['Mapster'] then B.Frames['WorldMapFrame'] = false end
+end
+
+function B:SLETalkingHead()
+	if E.db.sle.skins.talkinghead.hide then
+		E:DisableMover(_G.TalkingHeadFrame.mover:GetName())
+	else
+		E:EnableMover(_G.TalkingHeadFrame.mover:GetName())
+	end
+end
+
+function B:BlizzTest(_, addon)
+	if addon == 'Blizzard_TalkingHeadUI' then
+		hooksecurefunc('TalkingHeadFrame_PlayCurrent', function()
+			-- -- SLE:Print('TalkingHead Frame initilized PlayCurrent')
+			if E.db.sle.skins.talkinghead.hide then
+				_G.TalkingHeadFrame:Hide()
+			end
+		end)
+	end
+end
+
+function B:UpdateAll()
+	B.db = E.db.sle.blizzard
+	B:ErrorFrameSize()
+	B:SLETalkingHead()
 end
 
 function B:Initialize()
@@ -345,10 +378,9 @@ function B:Initialize()
 	end
 
 	B:ErrorFrameSize()
-	function B:ForUpdateAll()
-		B.db = E.db.sle.blizzard
-		B:ErrorFrameSize()
-	end
+	SLE.UpdateFunctions["Blizzard"] = B.UpdateAll
+
+	B:SLETalkingHead()
 end
 
 SLE:RegisterModule(B:GetName())

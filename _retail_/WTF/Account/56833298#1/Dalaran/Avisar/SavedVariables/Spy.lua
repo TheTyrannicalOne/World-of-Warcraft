@@ -1,5 +1,10 @@
 
 SpyPerCharDB = {
+	["version"] = "1.1",
+	["IgnoreData"] = {
+	},
+	["KOSData"] = {
+	},
 	["PlayerData"] = {
 		["Civo"] = {
 			["mapID"] = 84,
@@ -77,21 +82,19 @@ SpyPerCharDB = {
 			["subZone"] = "",
 			["time"] = 1603045667,
 		},
-		["Connordan-Illidan"] = {
-			["mapID"] = 942,
-			["guild"] = "House Wives of Azeroth",
-			["zone"] = "Stormsong Valley",
-			["mapY"] = 0.28,
-			["class"] = "DEMONHUNTER",
+		["Kaeleren"] = {
+			["mapID"] = 84,
+			["zone"] = "Stormwind City",
+			["mapY"] = 0.7,
+			["class"] = "PALADIN",
 			["isEnemy"] = true,
-			["isGuess"] = false,
-			["mapX"] = 0.78,
-			["name"] = "Connordan-Illidan",
+			["mapX"] = 0.61,
+			["isGuess"] = true,
+			["time"] = 1603467431,
+			["subZone"] = "",
+			["level"] = 28,
 			["race"] = "Blood Elf",
-			["subZone"] = "Shrine of the Storm",
-			["level"] = 120,
-			["time"] = 1591561859,
-			["wins"] = 1,
+			["name"] = "Kaeleren",
 		},
 		["Hatred-Hyjal"] = {
 			["mapID"] = 896,
@@ -109,20 +112,6 @@ SpyPerCharDB = {
 			["subZone"] = "Arom's Stand",
 			["loses"] = 1,
 		},
-		["Kaeleren"] = {
-			["mapID"] = 84,
-			["zone"] = "Stormwind City",
-			["mapY"] = 0.7,
-			["class"] = "PALADIN",
-			["isEnemy"] = true,
-			["mapX"] = 0.61,
-			["isGuess"] = true,
-			["time"] = 1603467431,
-			["subZone"] = "",
-			["level"] = 28,
-			["race"] = "Blood Elf",
-			["name"] = "Kaeleren",
-		},
 		["Deminadraeda"] = {
 			["mapID"] = 84,
 			["zone"] = "Stormwind City",
@@ -135,6 +124,22 @@ SpyPerCharDB = {
 			["time"] = 1603087462,
 			["race"] = "Blood Elf",
 			["name"] = "Deminadraeda",
+		},
+		["Connordan-Illidan"] = {
+			["mapID"] = 942,
+			["guild"] = "House Wives of Azeroth",
+			["zone"] = "Stormsong Valley",
+			["mapY"] = 0.28,
+			["class"] = "DEMONHUNTER",
+			["isEnemy"] = true,
+			["isGuess"] = false,
+			["mapX"] = 0.78,
+			["name"] = "Connordan-Illidan",
+			["race"] = "Blood Elf",
+			["subZone"] = "Shrine of the Storm",
+			["level"] = 120,
+			["time"] = 1591561859,
+			["wins"] = 1,
 		},
 		["Thorc-Anetheron"] = {
 			["mapID"] = 942,
@@ -474,10 +479,5 @@ SpyPerCharDB = {
 			["subZone"] = "Farshire",
 			["loses"] = 1,
 		},
-	},
-	["IgnoreData"] = {
-	},
-	["version"] = "1.1",
-	["KOSData"] = {
 	},
 }

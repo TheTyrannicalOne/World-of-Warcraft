@@ -1757,19 +1757,13 @@ local mt_state = {
 
         elseif k == 'in_flight' then
             local data = t.action[ t.this_action ]
-            if data and data.flightTime then
-                return data.lastCast + data.flightTime - query_time > 0
-            end
-
-            return state:IsInFlight( t.this_action )
+            if data then return data.in_flight end
+            return false
 
         elseif k == 'in_flight_remains' then
             local data = t.action[ t.this_action ]
-            if data and data.flightTime then
-                return max( 0, data.lastCast + data.flightTime - query_time )
-            end
-
-            return state:InFlightRemains( t.this_action )
+            if data then return data.in_flight.remains end
+            return 0
 
         elseif k == 'executing' then
             return state:IsCasting( t.this_action ) or ( state.prev[1][ t.this_action ] and state.gcd.remains > 0 )
@@ -1910,10 +1904,24 @@ local mt_state = {
             return t.cooldown[ action ].recharge_time
 
         elseif k == 'cost' then
-            return ability and ability.spend or 0
+            if ability then
+                local c = ability.cost
+
+                if c then return c end
+
+                c = ability.spend
+
+                if c and c > 0 and c < 1 then
+                    c = c * state[ ability.spendType or class.primaryResource ].modmax
+                end
+
+                return c or 0
+            end
+
+            return 0
 
         elseif k == 'cast_regen' then
-            return ( max( state.gcd.execute, ability.cast or 0 ) * state[ ability.spendType or class.primaryResource ].regen ) -- - ( ability and ability.spend or 0 )
+            return ( max( state.gcd.execute, ability.cast or 0 ) * state[ ability.spendType or class.primaryResource ].regen ) - ( ability and ability.spend or 0 )
 
         elseif k == 'crit_pct_current' or k == 'crit_percent_current' then
             -- This is the crit % of the current ability.
@@ -3170,8 +3178,12 @@ local mt_default_buff = {
 
                 t.unit = real.unit
             else
+                local meta = aura and rawget( aura, "meta" )
+
                 for attr, a_val in pairs( default_buff_values ) do
-                    t[ attr ] = aura and aura[ attr ] or a_val
+                    if not meta or not meta[ attr ] then
+                        t[ attr ] = aura and aura[ attr ] or a_val
+                    end
                 end
 
                 t.id = rawget( t, id ) or ( aura and aura.id ) or t.key
@@ -3272,16 +3284,20 @@ ns.metatables.mt_default_buff = mt_default_buff
 
 
 local unknown_buff = setmetatable( {
-    key = 'unknown_buff',
+    key = "unknown_buff",
+    name = "No Name",
     count = 0,
-    duration = 0,
+    lastCount = 0,
+    lastApplied = 0,
+    duration = 30,
     expires = 0,
     applied = 0,
-    caster = 'nobody',
+    caster = "nobody",
     timeMod = 1,
     v1 = 0,
     v2 = 0,
-    v3 = 0
+    v3 = 0,
+    unit = "player"
 }, mt_default_buff )
 
 
@@ -3343,23 +3359,6 @@ local mt_buffs = {
             buff.v3 = real.v3
 
             buff.unit = real.unit
-
-        else
-            buff.name = aura.name or "No Name"
-            buff.count = 0
-            buff.lastCount = 0
-            buff.lastApplied = 0
-            buff.duration = aura.duration or 30
-            buff.expires = 0
-            buff.applied = 0
-            buff.caster = 'nobody'
-            -- buff.id = nil
-            buff.timeMod = 1
-            buff.v1 = 0
-            buff.v2 = 0
-            buff.v3 = 0
-
-            buff.unit = aura.unit or 'player'
         end
 
         return t[ k ]
@@ -4424,16 +4423,24 @@ local mt_default_action = {
             return 0
 
         elseif k == 'cast_regen' then
-            return floor( max( state.gcd.execute, t.cast_time ) * state[ class.primaryResource ].regen ) -- - ( ability and t.cost or 0 )
+            return floor( max( state.gcd.execute, t.cast_time ) * state[ class.primaryResource ].regen ) - t.cost
 
         elseif k == 'cost' then
-            local a = ability.spend
-            if not a then return 0 end
-            if type( a ) == 'function' then a = a() end
-            if a > 0 and a < 1 then
-                a = a * state[ ability.spendType or class.primaryResource ].modmax
+            if ability then
+                local c = ability.cost
+
+                if c then return c end
+
+                c = ability.spend
+
+                if c and c > 0 and c < 1 then
+                    c = c * state[ ability.spendType or class.primaryResource ].modmax
+                end
+
+                return c or 0
             end
-            return a
+
+            return 0
 
         elseif k == 'cost_type' then
             local a, _ = ability.spendType
@@ -4448,14 +4455,12 @@ local mt_default_action = {
             if ability and ability.flightTime then
                 return ability.lastCast + ability.flightTime > state.query_time
             end
-
             return state:IsInFlight( t.action )
 
         elseif k == "in_flight_remains" then
             if ability and ability.flightTime then
                 return max( 0, ability.lastCast + ability.flightTime - state.query_time )
             end
-
             return state:InFlightRemains( t.action )
         
         elseif k == "channeling" then

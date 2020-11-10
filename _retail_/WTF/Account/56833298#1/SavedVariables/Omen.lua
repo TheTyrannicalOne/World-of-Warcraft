@@ -16,8 +16,8 @@ Omen3DB = {
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -125,12 +125,12 @@ Omen3DB = {
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Malivant - Dalaran"] = {
-		},
 		["Datgore - Zul'jin"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
+		},
+		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 			["VGrip2"] = 204.125044622081,
@@ -188,8 +188,8 @@ Omen3DB = {
 			["PositionY"] = 244.9993591308594,
 			["PositionW"] = 269.9999084472656,
 			["Shown"] = false,
-			["VGrip1"] = 114.7499085617484,
 			["PositionX"] = 1729.5,
+			["VGrip1"] = 114.7499085617484,
 			["PositionH"] = 215.9998474121094,
 		},
 	},

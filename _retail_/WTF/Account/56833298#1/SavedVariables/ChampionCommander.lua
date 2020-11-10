@@ -68,6 +68,7 @@ dbBFA = {
 			},
 			["showmenu"] = true,
 			["blacklist"] = {
+				[2077] = false,
 				[1951] = false,
 				[1892] = true,
 				[1938] = false,

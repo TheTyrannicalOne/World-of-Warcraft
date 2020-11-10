@@ -3,7 +3,6 @@
 	1) You must know the base rank of a recipe to receive higher ranked versions of it
 	2) You must already know all recipes which are reagents for the recipe (No longer true in 7.1)
 --]]
-NomiCakesGossipButtonName = 'GossipTitleButton' -- Allow other addons to override the buttons we hook, if needed
 
 local HookedButtons = {} -- [button] = true
 local Undiscoverable = { -- List of rank 1 recipes that can't be obtained from nomi
@@ -206,10 +205,9 @@ local function DecorateNomi()
 		local _, _, _, _, ingredientIcon = GetItemInfoInstant(ingredientItemID)
 		if count >= 5 then -- we have enough of an ingredient for nomi to display it
 			i = i + 1
-			local buttonName = NomiCakesGossipButtonName .. i
-			local button = _G[buttonName]
-			local buttonIcon = _G[buttonName .. 'GossipIcon'] -- check that the icon is for a work order, otherwise we might overwrite a quest button or something
-			if button and button:IsShown() and buttonIcon and buttonIcon:GetTexture():lower() == 'interface\\gossipframe\\workordergossipicon' then
+			local button = GossipFrame_GetTitleButton(i)
+			local buttonIcon = button.Icon
+			if button and button:IsShown() and buttonIcon and button.type == "Gossip" then
 				if not HookedButtons[button] then
 					button:HookScript('OnEnter', function(self)
 						if not IsNomi then return end
@@ -289,7 +287,7 @@ local function DecorateNomi()
 						end
 						button:SetText(text)
 					end
-					GossipResize(button)
+					button:Resize()
 				end
 			else
 				break
@@ -298,17 +296,19 @@ local function DecorateNomi()
 	end
 end
 
-f:SetScript('OnEvent', function(self, event, ...)
-	if event == 'GOSSIP_SHOW' then
-		local guid = UnitGUID('npc')
-		if guid then
-			local _, _, _, _, _, npcID = strsplit('-', guid)
-			if npcID == '101846' then -- Nomi
-				IsNomi = true
-				RequestCookingStuff(DecorateNomi)
-			end
+hooksecurefunc("GossipFrameUpdate", function()
+	local guid = UnitGUID("npc")
+	if guid then
+		local _, _, _, _, _, npcID = strsplit("-", guid)
+		if npcID == "101846" then -- Nomi
+			IsNomi = true
+			RequestCookingStuff(DecorateNomi)
 		end
-	elseif event == 'GOSSIP_CLOSED' then
+	end
+end)
+
+f:SetScript('OnEvent', function(self, event, ...)
+	if event == 'GOSSIP_CLOSED' then
 		IsNomi = false
 	elseif event == 'TRADE_SKILL_SHOW' then
 		self:UnregisterEvent('TRADE_SKILL_SHOW')
@@ -339,7 +339,6 @@ f:SetScript('OnEvent', function(self, event, ...)
 		end
 	end
 end)
-f:RegisterEvent('GOSSIP_SHOW')
 f:RegisterEvent('GOSSIP_CLOSED')
 f:RegisterEvent('GET_ITEM_INFO_RECEIVED')
 f:RegisterEvent('PLAYER_LOGIN')

@@ -3,7 +3,7 @@ RematchSaved = {
 }
 RematchSettings = {
 	["JournalUsed"] = true,
-	["DialogYPos"] = 674.0051879882812,
+	["DialogYPos"] = 674.0053100585938,
 	["HidePetToast"] = true,
 	["QueueSanctuary"] = {
 	},
@@ -66,9 +66,9 @@ RematchSettings = {
 		},
 		["Level"] = {
 		},
-		["Sources"] = {
-		},
 		["Similar"] = {
+		},
+		["Sources"] = {
 		},
 		["Breed"] = {
 		},

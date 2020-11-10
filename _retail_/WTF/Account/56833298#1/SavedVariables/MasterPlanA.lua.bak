@@ -17,8 +17,8 @@ MasterPlanAG = {
 			["faction"] = "Neutral",
 			["class"] = "MONK",
 		},
-		["Okona"] = {
-			["class"] = "PRIEST",
+		["Datgore"] = {
+			["class"] = "HUNTER",
 			["faction"] = "Horde",
 		},
 		["Zulbathal"] = {
@@ -50,8 +50,8 @@ MasterPlanAG = {
 			["class"] = "MAGE",
 			["faction"] = "Horde",
 		},
-		["Datgore"] = {
-			["class"] = "HUNTER",
+		["Okona"] = {
+			["class"] = "PRIEST",
 			["faction"] = "Horde",
 		},
 		["Fantastiburo"] = {
@@ -130,37 +130,30 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["curOil"] = 99695,
-			["summary"] = {
-				["lastOilTime"] = 1604536546,
-				["inProgress"] = {
-					[120] = 1604599538,
-					[305] = 1604592337,
-					[495] = 1604613935,
-					[564] = 1604649948,
-					[685] = 1604628334,
-					[570] = 1604599545,
-					[745] = 1604601346,
-					[127] = 1604599540,
-				},
-				["ti3"] = 127855,
-				["ti2"] = 122486,
-				["tt1"] = 1604067761,
-				["ti1"] = 118531,
-				["tt3"] = 1603975826,
-				["tt2"] = 1604207439,
-			},
 			["faction"] = "Horde",
+			["summary"] = {
+				["lastOilTime"] = 1604878255,
+				["tt2"] = 1604207439,
+				["tt3"] = 1603975826,
+				["ti1"] = 118531,
+				["tt1"] = 1604067761,
+				["ti3"] = 127855,
+				["inProgress"] = {
+					[335] = 1604940157,
+					[745] = 1604943055,
+					[126] = 1604943532,
+				},
+				["ti2"] = 122486,
+			},
+			["curOil"] = 99940,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1604585224,
-			["curRes"] = 6249,
 			["class"] = "WARRIOR",
+			["curRes"] = 3609,
+			["lastCacheTime"] = 1604939081,
 		},
 		["Tyrannithal"] = {
 			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }

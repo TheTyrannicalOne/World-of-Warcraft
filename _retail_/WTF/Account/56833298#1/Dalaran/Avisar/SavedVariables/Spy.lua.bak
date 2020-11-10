@@ -1,9 +1,8 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
 	["KOSData"] = {
+	},
+	["IgnoreData"] = {
 	},
 	["PlayerData"] = {
 		["Arasune-Stormreaver"] = {
@@ -126,18 +125,21 @@ SpyPerCharDB = {
 			["race"] = "Pandaren",
 			["name"] = "Jinteng",
 		},
-		["Deminadraeda"] = {
-			["mapID"] = 84,
-			["zone"] = "Stormwind City",
-			["mapY"] = 0.7,
+		["Connordan-Illidan"] = {
+			["mapID"] = 942,
+			["guild"] = "House Wives of Azeroth",
+			["zone"] = "Stormsong Valley",
+			["mapY"] = 0.28,
 			["class"] = "DEMONHUNTER",
 			["isEnemy"] = true,
-			["mapX"] = 0.61,
-			["isGuess"] = true,
-			["name"] = "Deminadraeda",
+			["wins"] = 1,
+			["mapX"] = 0.78,
+			["name"] = "Connordan-Illidan",
+			["time"] = 1591561859,
+			["subZone"] = "Shrine of the Storm",
+			["level"] = 120,
 			["race"] = "Blood Elf",
-			["time"] = 1603087462,
-			["subZone"] = "",
+			["isGuess"] = false,
 		},
 		["Thorc-Anetheron"] = {
 			["mapID"] = 942,
@@ -421,6 +423,19 @@ SpyPerCharDB = {
 			["isGuess"] = false,
 			["name"] = "Eladarmri-Zul'jin",
 		},
+		["Deminadraeda"] = {
+			["mapID"] = 84,
+			["zone"] = "Stormwind City",
+			["mapY"] = 0.7,
+			["class"] = "DEMONHUNTER",
+			["isEnemy"] = true,
+			["mapX"] = 0.61,
+			["isGuess"] = true,
+			["name"] = "Deminadraeda",
+			["race"] = "Blood Elf",
+			["time"] = 1603087462,
+			["subZone"] = "",
+		},
 		["Kaeleren"] = {
 			["mapID"] = 84,
 			["zone"] = "Stormwind City",
@@ -434,22 +449,6 @@ SpyPerCharDB = {
 			["level"] = 28,
 			["subZone"] = "",
 			["time"] = 1603467431,
-		},
-		["Connordan-Illidan"] = {
-			["mapID"] = 942,
-			["guild"] = "House Wives of Azeroth",
-			["zone"] = "Stormsong Valley",
-			["mapY"] = 0.28,
-			["class"] = "DEMONHUNTER",
-			["isEnemy"] = true,
-			["wins"] = 1,
-			["mapX"] = 0.78,
-			["name"] = "Connordan-Illidan",
-			["time"] = 1591561859,
-			["subZone"] = "Shrine of the Storm",
-			["level"] = 120,
-			["race"] = "Blood Elf",
-			["isGuess"] = false,
 		},
 		["Deceive"] = {
 			["mapID"] = 84,
@@ -480,4 +479,5 @@ SpyPerCharDB = {
 			["subZone"] = "",
 		},
 	},
+	["version"] = "1.1",
 }

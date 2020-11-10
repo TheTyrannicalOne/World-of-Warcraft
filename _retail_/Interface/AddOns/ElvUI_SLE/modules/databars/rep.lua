@@ -25,6 +25,7 @@ local a, b, c, d = '([%(%)%.%%%+%-%*%?%[%^%$])', '%%%1', '%%%%[ds]', '(.-)'
 local formatFactionStanding = function(str) return str:gsub(a, b):gsub(c, d) end
 local strMatchCombat = {}
 
+DB.RepChatFrames = {}
 DB.RepIncreaseStrings = {}
 DB.RepDecreaseStrings = {}
 DB.factionVars = {}
@@ -157,16 +158,15 @@ function DB:ScanFactions()
 	end
 end
 
-DB.RepChatFrames = {}
 function DB:NewRepString()
-	if not DB.db.reputation or not DB.db.reputation.chatfilter.enable then return end
+	if not E.db.sle.databars.reputation or not E.db.sle.databars.reputation.chatfilter.enable then return end
 	local stop = false
 	local tempfactions = GetNumFactions()
 	if (tempfactions > DB.factions) then
 		DB:ScanFactions()
 		DB.factions = tempfactions
 	end
-	if DB.db.reputation.chatfilter.chatframe == "AUTO" then
+	if E.db.sle.databars.reputation.chatfilter.chatframe == 'AUTO' then
 		wipe(DB.RepChatFrames)
 		for i = 1, NUM_CHAT_WINDOWS do
 			if SLE:SimpleTable(_G['ChatFrame'..i]['messageTypeList'], 'COMBAT_FACTION_CHANGE') then
@@ -195,21 +195,21 @@ function DB:NewRepString()
 			if StyleTable then
 				-- local change = abs(barValue - DB.factionVars[name].Value)
 
-				if DB.db.reputation.chatfilter.chatframe == 'AUTO' then
+				if E.db.sle.databars.reputation.chatfilter.chatframe == 'AUTO' then
 					for n = 1, #(DB.RepChatFrames) do
 						local chatframe = _G[DB.RepChatFrames[n]]
-						chatframe:AddMessage(format(DB[StyleTable][DB.db.reputation.chatfilter.style] , DB.db.reputation.chatfilter.iconsize, name, diff))
+						chatframe:AddMessage(format(DB[StyleTable][E.db.sle.databars.reputation.chatfilter.style] , E.db.sle.databars.reputation.chatfilter.iconsize, name, diff))
 
-						if not DB.db.reputation.chatfilter.showAll then
+						if not E.db.sle.databars.reputation.chatfilter.showAll then
 							stop = true
 							break
 						end
 					end
 				else
-					local chatframe = _G[DB.db.reputation.chatfilter.chatframe]
-					chatframe:AddMessage(format(DB[StyleTable][DB.db.reputation.chatfilter.style] , DB.db.reputation.chatfilter.iconsize, name, diff))
+					local chatframe = _G[E.db.sle.databars.reputation.chatfilter.chatframe]
+					chatframe:AddMessage(format(DB[StyleTable][E.db.sle.databars.reputation.chatfilter.style] , E.db.sle.databars.reputation.chatfilter.iconsize, name, diff))
 
-					if not DB.db.reputation.chatfilter.showAll then
+					if not E.db.sle.databars.reputation.chatfilter.showAll then
 						stop = true
 						break
 					end

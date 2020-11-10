@@ -211,14 +211,12 @@ L["Config_WeightEditor_ShowRolesOnlyForOwnSpec"] = "Rollenspezifische Fähigkeit
 --[[Translation missing --]]
 L["Config_WeightEditor_ShowRolesOnlyForOwnSpec_Desc"] = "Show common and current specialization related specific Role specific powers in the scale weight editor. Enabling this setting e.g. hides healer only specific powers from damagers and tanks etc."
 L["Config_WeightEditor_ShowZone"] = "Zonenspezifische Fähigkeiten anzeigen"
---[[Translation missing --]]
-L["Config_WeightEditor_ShowZone_Desc"] = "Show Zone specific powers in the scale weight editor. These powers can only appear in items acquired in particular zones related to the power."
+L["Config_WeightEditor_ShowZone_Desc"] = "Zeige Zonenspezifische Macht im Skalierungsgewichtseditor. Diese Kräfte können nur bei Gegenständen erscheinen, die in bestimmten Zonen erworben wurden, welche mit der Kraft in Zusammenhang stehen."
 L["Config_WeightEditor_ShowZone_Desc_Proc"] = "Zonenspezifische Kräfte können / proc überall aktivieren, aber Schlachtzugsmächte haben einen sekundären Effekt, der nur aktiviert wird, wenn sie sich innerhalb ihrer zugehörigen Schlachtzugsinstanz befinden (z. B. wird der sekundäre Effekt von Uldir-Kräften nur in der Uldir-Schlachtzugsinstanz ausgeführt). Die Schlachtzugskraft ist im Skala Gewicht Editor mit einem Stern (*) neben ihrem Namen gekennzeichnet."
 L["Config_WeightEditor_Title"] = "Skalierungseditor"
 L["CreatePopup_Desc"] = "Erstelle eine neue Skalierung. Wähle deine Klasse und Spezialisierung aus der Liste und vergebe einen Namen für die Skalierung. Zur Bestätigung drücke %1$s"
 L["CreatePopup_Error_CreatedNewScale"] = "Skalierung \"%s\" erfolgreich erstellt "
---[[Translation missing --]]
-L["CreatePopup_Error_UnknownError"] = "ERROR: Something went wrong creating new scale \"%s\"!"
+L["CreatePopup_Error_UnknownError"] = "FEHLER: Etwas ist bei der Neuerstellung der Skalierung \"%s\" falsch gelaufen!"
 L["CreatePopup_Title"] = "Erstelle Skalierung "
 L["Debug_CopyToBugReport"] = "Kopiere den obrigen Text in deine Fehlermeldung, wenn du denkst es ist relevant."
 L["DefaultScaleName_Default"] = "Standard"
@@ -233,12 +231,9 @@ L["ExportPopup_Desc"] = [=[Um die Skalierung %1$s zu exportieren, drücke %2$sST
 ]=]
 L["ExportPopup_Title"] = "Skala exportieren"
 L["ImportPopup_CreatedNewScale"] = "Importiere neue Skalierung \"%s\" "
---[[Translation missing --]]
-L["ImportPopup_Desc"] = [=[Importing scale from string
-Press %1$sCtrl+V%2$s to paste string to the editbox and press %3$s]=]
+L["ImportPopup_Desc"] = "Importiere Skalierung. Drücke %1$sSTRG+V%2$s, um die Zeichenkette in die Textbox einzufügen, und drücke %3$s zum Importieren."
 L["ImportPopup_Error_MalformedString"] = "ERROR: Fehlerhafter Import-String!"
---[[Translation missing --]]
-L["ImportPopup_Error_OldStringRetry"] = "ERROR: Old or malformed \"Import string\" -version is used, trying to import it anyway as a new scale!"
+L["ImportPopup_Error_OldStringRetry"] = "FEHLER: Es wird eine alte oder schlecht Formatierte \"Import String\"-Version genutzt und versucht, ihn trotzdem als neue Skalierung zu Importieren."
 L["ImportPopup_Error_OldStringVersion"] = "ERROR: \"Import-String\" -Version ist zu alt oder fehlerhafter Import-String!"
 L["ImportPopup_Title"] = "Importiere Skalierung"
 L["ImportPopup_UpdatedScale"] = "Skalierung \"%s\" wurde aktualisiert"
@@ -405,38 +400,22 @@ L["WeightEditor_VersionText"] = "Versión %s"
 elseif LOCALE == "esMX" then
 	-- 0 = 0
 	-- 0% translated
---[[Translation missing --]]
-L["Config_Enable_Essences"] = "Azerite Essences"
---[[Translation missing --]]
-L["Config_Enable_Essences_Desc"] = "Enable %s for Azerite Essences."
---[[Translation missing --]]
-L["Config_Enable_Traits"] = "Azerite Traits"
---[[Translation missing --]]
-L["Config_Enable_Traits_Desc"] = "Enable %s for Azerite Empowered items."
---[[Translation missing --]]
-L["Config_Importing_ImportingCanUpdate"] = "Importing can update existing scales"
---[[Translation missing --]]
-L["Config_Importing_ImportingCanUpdate_Desc"] = "When importing scale with same name, class and specialization as pre-existing scale, existing scale will be updated with the new weights instead of creating new scale."
---[[Translation missing --]]
-L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "There can be multiple scales with same name as long as they are for different specializations or classes."
---[[Translation missing --]]
-L["Config_Importing_Title"] = "Importing"
---[[Translation missing --]]
-L["Config_Scales_OwnClassCustomsOnly"] = "List own class Custom-scales only"
---[[Translation missing --]]
-L["Config_Scales_OwnClassCustomsOnly_Desc"] = "List Custom-scales for your own class only, instead of listing all of them."
---[[Translation missing --]]
-L["Config_Scales_OwnClassDefaultsOnly"] = "List own class Default-scales only"
---[[Translation missing --]]
-L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "List Default-scales for your own class only, instead of listing all of them."
---[[Translation missing --]]
-L["Config_Scales_Title"] = "Scales list"
---[[Translation missing --]]
-L["Config_Score_AddItemLevelToScore"] = "Add itemlevel to all scores"
---[[Translation missing --]]
-L["Config_Score_AddItemLevelToScore_Desc"] = "Add Azerite items itemlevel to all current score, current potential and maximum score calculations."
---[[Translation missing --]]
-L["Config_Score_AddPrimaryStatToScore"] = "Add primary stat to all scores"
+L["Config_Enable_Essences"] = "Esencias de Azerita"
+L["Config_Enable_Essences_Desc"] = "Activa %s para las Esencias de Azerita"
+L["Config_Enable_Traits"] = "Rasgos de Azerita"
+L["Config_Enable_Traits_Desc"] = "Activa %s para los objetos Potenciados con Azerita"
+L["Config_Importing_ImportingCanUpdate"] = "Importar puede causar que cambien las escalas actuales"
+L["Config_Importing_ImportingCanUpdate_Desc"] = "Cuando importes una escala con el mismo nombre, clase y especialización de una existente, la escala existente será actualizada con los nuevos valores en lugar de crear una nueva escala"
+L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Pueden haber múltiples escalas con el mismo nombre mientras sean para diferentes especializaciones o clases"
+L["Config_Importing_Title"] = "Importando"
+L["Config_Scales_OwnClassCustomsOnly"] = "Mostrar solo tus escalas personalizadas "
+L["Config_Scales_OwnClassCustomsOnly_Desc"] = "Mostrar solo tus escalas personalizadas para tu clase, en lugar de enumerarlas todas"
+L["Config_Scales_OwnClassDefaultsOnly"] = "Muestra solo las propias escalas predeterminadas de clase "
+L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Mostrar solo las propias escalas predeterminadas para tu propia clase, en lugar de enumerarlas todas"
+L["Config_Scales_Title"] = "Lista de escalas"
+L["Config_Score_AddItemLevelToScore"] = "Añade nivel de objeto a todas las puntuaciones "
+L["Config_Score_AddItemLevelToScore_Desc"] = "Añade el nivel de objeto de Azerita a todos los cálculos de puntuación actual, potencial actual y puntuación máxima."
+L["Config_Score_AddPrimaryStatToScore"] = "Añadir estadísticas primarias a todas las puntuaciones"
 --[[Translation missing --]]
 L["Config_Score_AddPrimaryStatToScore_Desc"] = "Add Azerite items amount of primary stat (%s/%s/%s) to all current score, current potential and maximum score calculations."
 --[[Translation missing --]]
@@ -1709,7 +1688,7 @@ L["ImportPopup_Error_OldStringRetry"] = "錯誤：舊的或格式錯誤的\"匯�
 L["ImportPopup_Error_OldStringVersion"] = "錯誤：\"導入字串\" -版本太舊或是導入字串格式錯誤！"
 L["ImportPopup_Title"] = "導入比例"
 L["ImportPopup_UpdatedScale"] = "更新現有的比重 \"%s\""
-L["ItemToolTip_AzeriteLevel"] = "艾澤萊等級: %1$d / %2$d"
+L["ItemToolTip_AzeriteLevel"] = "艾澤萊等級：%1$d / %2$d"
 L["ItemToolTip_Legend"] = "當前分數 / 當前潛力 / 最大分數"
 L["MassImportPopup_Desc"] = [=[從字串一次匯入多重比重
 按下 %1$sCtrl+V%2$s 在輸入框貼上字串並按下 %3$s]=]
@@ -1733,7 +1712,7 @@ L["ScalesList_DefaultGroupName"] = "預設比例"
 L["ScaleWeightEditor_Title"] = "%s 比重權值編輯器"
 L["Slash_Command"] = "/azerite"
 L["Slash_Error_Unkown"] = "錯誤：出了些問題了！"
-L["Slash_RemindConfig"] = "到ESC -> 介面 -> 插件 -> %s來設置"
+L["Slash_RemindConfig"] = "到ESC → 介面 → 插件 → %s來設置。"
 L["WeightEditor_CreateNewText"] = "建立新的"
 L["WeightEditor_CurrentScale"] = "當前比重: %s"
 L["WeightEditor_DeleteText"] = "刪除"

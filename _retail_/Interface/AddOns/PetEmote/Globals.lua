@@ -27,7 +27,7 @@ PetEmote_CombatEmotes  = {}
 PetEmote_apos = "’"
 PetEmote_nbsp = " "
 
-PetEmote_Version = { 1, 8, 14 }
+PetEmote_Version = { 1, 8, 15 }
 
 PetEmote_Family = {}
 PetEmote_Gender = {}

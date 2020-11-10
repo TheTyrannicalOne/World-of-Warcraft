@@ -1,11 +1,11 @@
 
 PetEmote_Settings = {
+	["RandomEmotes"] = true,
+	["UseMask"] = true,
 	["Version"] = {
 		1, -- [1]
 		8, -- [2]
-		14, -- [3]
+		15, -- [3]
 	},
-	["RandomEmotes"] = true,
-	["UseMask"] = true,
 	["UseHappiness"] = true,
 }

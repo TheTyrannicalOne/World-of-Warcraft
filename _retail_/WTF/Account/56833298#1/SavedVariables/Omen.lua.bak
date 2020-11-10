@@ -17,12 +17,12 @@ Omen3DB = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
@@ -63,14 +63,14 @@ Omen3DB = {
 			["VGrip1"] = 87.97494675829464,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["PositionW"] = 339.0011291503906,
-			["PositionH"] = 217.0006713867188,
 			["VGrip2"] = 194.9254411081601,
 			["PositionY"] = 245.0004119873047,
+			["PositionW"] = 339.0011291503906,
+			["PositionH"] = 217.0006713867188,
 			["Locked"] = true,
 			["Shown"] = false,
-			["VGrip1"] = 144.0753260364662,
 			["PositionX"] = 1663.17138671875,
+			["VGrip1"] = 144.0753260364662,
 		},
 		["Shimzo - Zul'jin"] = {
 			["Shown"] = false,
@@ -97,13 +97,13 @@ Omen3DB = {
 			["PositionH"] = 199.9998168945313,
 		},
 		["Varlouris - Dalaran"] = {
+			["PositionW"] = 269.9999084472656,
+			["PositionH"] = 215.9998474121094,
 			["VGrip2"] = 155.2498762894243,
 			["PositionY"] = 244.9993591308594,
-			["PositionW"] = 269.9999084472656,
 			["Shown"] = false,
-			["PositionH"] = 215.9998474121094,
-			["PositionX"] = 1729.5,
 			["VGrip1"] = 114.7499085617484,
+			["PositionX"] = 1729.5,
 		},
 		["Thorinbane - Dalaran"] = {
 			["Shown"] = false,
@@ -135,10 +135,7 @@ Omen3DB = {
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
-		["Datgore - Zul'jin"] = {
-			["Shown"] = false,
-			["PositionY"] = 675.0000610351562,
-			["PositionX"] = 954.1666870117188,
+		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 			["VGrip2"] = 204.125044622081,
@@ -171,7 +168,10 @@ Omen3DB = {
 			["PositionX"] = 2139.166015625,
 			["PositionH"] = 148.0000152587891,
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
+			["Shown"] = false,
+			["PositionY"] = 675.0000610351562,
+			["PositionX"] = 954.1666870117188,
 		},
 		["Shanyt - Zul'jin"] = {
 			["Shown"] = false,

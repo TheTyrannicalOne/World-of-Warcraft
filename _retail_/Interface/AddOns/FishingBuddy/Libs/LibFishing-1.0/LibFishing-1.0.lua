@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 101072
+local MINOR_VERSION = 101074
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -86,12 +86,20 @@ FishLib.UNKNOWN = "UNKNOWN";
 
 function FishLib:GetFishingSpellInfo()
     local _, _, _, fishing, _, _ = GetProfessions();
-    if ( fishing ) then
-        local name, _, _, _, _, _, _ = GetProfessionInfo(fishing);
-        -- is this always the same as PROFESSIONS_FISHING?
-        return fishing, name;
+    if not fishing then
+        return 131474, PROFESSIONS_FISHING
     end
-    return 9, PROFESSIONS_FISHING;
+    local name, _, _, _, count, offset, _ = GetProfessionInfo(fishing);
+    local id = nil;
+    for i = 1, count do
+        local _, spellId = GetSpellLink(offset + i, "spell");
+        local spellName = GetSpellInfo(spellId);
+        if (spellName == name) then
+            id = spellId;
+            break;
+        end
+    end
+    return id, name
 end
 
 local DEFAULT_SKILL = { ["max"] = 300, ["skillid"] = 356, ["cat"] = 1100, ["rank"] = 0 }
@@ -723,6 +731,7 @@ if ( not fishlibframe) then
     fishlibframe:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START");
     fishlibframe:RegisterEvent("UNIT_SPELLCAST_CHANNEL_STOP");
     fishlibframe:RegisterEvent("ITEM_LOCK_CHANGED");
+	fishlibframe:RegisterEvent("ACTIONBAR_SLOT_CHANGED");
     fishlibframe:RegisterEvent("TRADE_SKILL_DATA_SOURCE_CHANGED")
     fishlibframe:RegisterEvent("TRADE_SKILL_LIST_UPDATE")
     fishlibframe:RegisterEvent("EQUIPMENT_SWAP_FINISHED");
@@ -764,6 +773,8 @@ fishlibframe:SetScript("OnEvent", function(self, event, ...)
         self:UnregisterEvent("SPELLS_CHANGED")
     elseif (event == "TRADE_SKILL_DATA_SOURCE_CHANGED" or event == "TRADE_SKILL_LIST_UPDATE") then
         self.fl:QueueUpdateFishingSkillData();
+    elseif (event == "ACTIONBAR_SLOT_CHANGED") then
+        self.fl:GetFishingActionBarID(true)
     end
 end);
 fishlibframe:Show();
@@ -1633,7 +1644,10 @@ end
 -- this should be something useful for BfA
 function FishLib:GetCurrentFishingLevel()
     local mapID = self:GetCurrentMapId()
-    local current_max = LT:GetFishingLevel(mapID)
+    local current_max = 0
+    if LT.GetFishinglevel then
+        current_max = LT:GetFishingLevel(mapID)
+    end
     local continent, _ = self:GetCurrentMapContinent()
     if current_max == 0 then
         -- Let's just go with continent level skill for now, since
@@ -2023,11 +2037,11 @@ function FishLib:InvokeFishing(useaction)
     if ( not btn ) then
         return;
     end
-    local _, name = self:GetFishingSpellInfo();
+    local id, name = self:GetFishingSpellInfo();
     local findid = self:GetFishingActionBarID();
     if ( not useaction or not findid ) then
         btn:SetAttribute("type", "spell");
-        btn:SetAttribute("spell", name);
+        btn:SetAttribute("spell", id);
         btn:SetAttribute("action", nil);
     else
         btn:SetAttribute("type", "action");
@@ -2060,6 +2074,7 @@ function FishLib:InvokeLuring(id, itemtype, targetslot)
     end
     btn:SetAttribute("spell", nil);
     btn:SetAttribute("action", nil);
+    btn:SetAttribute("macrotext", nil);
     -- btn.postclick = nil;
 end
 
@@ -2080,6 +2095,7 @@ function FishLib:InvokeMacro(macrotext)
     btn:SetAttribute("target-slot", nil);
     btn:SetAttribute("spell", nil);
     btn:SetAttribute("action", nil);
+    btn:SetAttribute("unit", nil)
     -- btn.postclick = nil;
 end
 

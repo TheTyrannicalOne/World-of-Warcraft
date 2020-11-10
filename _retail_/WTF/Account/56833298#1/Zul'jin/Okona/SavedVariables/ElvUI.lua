@@ -3,12 +3,12 @@ ElvCharacterDB = {
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
-		"/skada toggle", -- [1]
-		"/omen show", -- [2]
-		"/p do you want to kill the big one outside", -- [3]
-		"/p thanks for the help later", -- [4]
-		"/invite azaru-blackhand", -- [5]
-		"/opie", -- [6]
+		"/opie", -- [1]
+		"/invite azaru-blackhand", -- [2]
+		"/omen show", -- [3]
+		"/skada toggle", -- [4]
+		"/p do you want to kill the big one outside", -- [5]
+		"/p thanks for the help later", -- [6]
 	},
 	["ChatHistoryLog"] = {
 		{

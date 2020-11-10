@@ -4,41 +4,41 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1604939081,
 			["summary"] = {
-				["lastOilTime"] = 1604536546,
-				["tt2"] = 1604207439,
-				["tt3"] = 1603975826,
-				["ti1"] = 118531,
-				["tt1"] = 1604067761,
-				["ti3"] = 127855,
+				["lastOilTime"] = 1604971349,
 				["inProgress"] = {
-					[120] = 1604599538,
-					[305] = 1604592337,
-					[495] = 1604613935,
-					[564] = 1604649948,
-					[685] = 1604628334,
-					[127] = 1604599540,
-					[570] = 1604599545,
-					[745] = 1604601346,
+					[485] = 1605034331,
+					[396] = 1605048683,
+					[262] = 1605027122,
+					[543] = 1605048751,
+					[266] = 1605034334,
+					[267] = 1605034328,
+					[202] = 1605023286,
+					[745] = 1605036149,
+					[391] = 1605048718,
+					[481] = 1605034324,
+					[174] = 1605023516,
+					[675] = 1605048720,
+					[190] = 1605022614,
+					[127] = 1605034336,
 				},
+				["ti3"] = 127855,
 				["ti2"] = 122486,
+				["tt1"] = 1604067761,
+				["ti1"] = 118531,
+				["tt3"] = 1603975826,
+				["tt2"] = 1604207439,
 			},
-			["curOil"] = 99695,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1604585224,
-			["curRes"] = 6249,
 			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 4829,
+			["curOil"] = 99895,
 		},
 		["Tyrannithal"] = {
 			["faction"] = "Horde",
 			["class"] = "DEMONHUNTER",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["class"] = "DRUID",
-			["faction"] = "Horde",
 		},
 	},
 	["Dalaran"] = {
@@ -104,6 +104,12 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
 	["Zul'jin"] = {
 		["Tyranasticus"] = {
 			["faction"] = "Horde",
@@ -117,13 +123,13 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 			["class"] = "WARRIOR",
 		},
-		["Datgore"] = {
-			["faction"] = "Horde",
-			["class"] = "HUNTER",
-		},
 		["Okona"] = {
 			["faction"] = "Horde",
 			["class"] = "PRIEST",
+		},
+		["Datgore"] = {
+			["faction"] = "Horde",
+			["class"] = "HUNTER",
 		},
 		["Zulbathal"] = {
 			["summary"] = {

@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0401,
+	["LastVersion"] = 2.0405,
 	["LastPlayerFullName"] = "Varlouris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

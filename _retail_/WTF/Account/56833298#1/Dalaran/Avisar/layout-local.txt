@@ -3,7 +3,7 @@ Frame: ScriptErrorsFrame
 FrameLevel: 1
 Anchor: TOPRIGHT
 X: 0
-Y: -262
+Y: -255
 W: 500
 H: 300
 Frame: BagItemTooltipMover

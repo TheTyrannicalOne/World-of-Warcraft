@@ -15,8 +15,8 @@ BFAInvasionTimerDB = {
 		["Okona - Zul'jin"] = "Default",
 		["Shanyt - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
@@ -38,6 +38,6 @@ BFAInvasionTimerDB = {
 	},
 }
 BFAInvasionData = {
-	1604599204, -- [1]
+	1605009606, -- [1]
 	1, -- [2]
 }

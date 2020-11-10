@@ -170,6 +170,7 @@ end
 P.databars.threat.hideInCombat = nil -- always on in code
 
 P.databars.experience.hideAtMaxLevel = true
+P.databars.experience.showLevel = false
 P.databars.experience.width = 348
 P.databars.experience.fontSize = 12
 P.databars.experience.questCompletedOnly = false
@@ -792,52 +793,45 @@ P.nameplates.units.ENEMY_NPC.level.format = '[difficultycolor][level][shortclass
 P.nameplates.units.ENEMY_NPC.title.format = '[npctitle]'
 P.nameplates.units.ENEMY_NPC.name.format = '[name]'
 
---Auras
-P.auras = {
-	font = 'Homespun',
-	fontOutline = 'MONOCHROMEOUTLINE',
-	countYOffset = 0,
-	countXOffset = 0,
-	timeYOffset = 0,
-	timeXOffset = 0,
-	fadeThreshold = 6,
-	showDuration = true,
-	barShow = false,
-	barTexture = 'ElvUI Norm',
-	barPosition = 'BOTTOM',
-	barWidth = 2,
-	barHeight = 2,
-	barSpacing = 2,
+local TopAuras = {
 	barColor = { r = 0, g = .8, b = 0 },
 	barColorGradient = false,
+	barSize = 2,
 	barNoDuration = true,
-	buffs = {
-		growthDirection = 'LEFT_DOWN',
-		wrapAfter = 12,
-		maxWraps = 3,
-		horizontalSpacing = 6,
-		verticalSpacing = 16,
-		sortMethod = 'TIME',
-		sortDir = '-',
-		seperateOwn = 1,
-		size = 32,
-		countFontSize = 10,
-		durationFontSize = 10,
-	},
-	debuffs = {
-		growthDirection = 'LEFT_DOWN',
-		wrapAfter = 12,
-		maxWraps = 1,
-		horizontalSpacing = 6,
-		verticalSpacing = 16,
-		sortMethod = 'TIME',
-		sortDir = '-',
-		seperateOwn = 1,
-		size = 32,
-		countFontSize = 10,
-		durationFontSize = 10,
-	},
+	barPosition = 'BOTTOM',
+	barShow = false,
+	barSpacing = 2,
+	barTexture = 'ElvUI Norm',
+	countFont = 'Homespun',
+	countFontOutline = 'MONOCHROMEOUTLINE',
+	countFontSize = 10,
+	countXOffset = 0,
+	countYOffset = 0,
+	timeFont = 'Homespun',
+	timeFontOutline = 'MONOCHROMEOUTLINE',
+	timeFontSize = 10,
+	timeXOffset = 0,
+	timeYOffset = 0,
+	fadeThreshold = 6,
+	growthDirection = 'LEFT_DOWN',
+	horizontalSpacing = 6,
+	maxWraps = 3,
+	seperateOwn = 1,
+	showDuration = true,
+	size = 32,
+	sortDir = '-',
+	sortMethod = 'TIME',
+	verticalSpacing = 16,
+	wrapAfter = 12,
 }
+
+--Auras
+P.auras = {
+	buffs = CopyTable(TopAuras),
+	debuffs = CopyTable(TopAuras),
+}
+
+P.auras.debuffs.maxWraps = 1
 
 --Chat
 P.chat = {
@@ -1068,6 +1062,18 @@ local UF_AuraWatch = {
 }
 
 local UF_Castbar = {
+	customTextFont = {
+		enable = false,
+		font = 'PT Sans Narrow',
+		fontSize = 12,
+		fontStyle = 'OUTLINE'
+	},
+	customTimeFont = {
+		enable = false,
+		font = 'PT Sans Narrow',
+		fontSize = 12,
+		fontStyle = 'OUTLINE'
+	},
 	displayTarget = false,
 	enable = true,
 	format = 'REMAINING',
@@ -1179,6 +1185,14 @@ local UF_PhaseIndicator = {
 	scale = 0.8,
 	xOffset = 0,
 	yOffset = 0,
+}
+
+local UF_PartyIndicator = {
+	anchorPoint = 'TOPRIGHT',
+	enable = true,
+	scale = 1,
+	xOffset = -5,
+	yOffset = 10
 }
 
 local UF_Portrait = {
@@ -1552,6 +1566,7 @@ P.unitframe = {
 			health = CopyTable(UF_Health),
 			infoPanel = CopyTable(UF_InfoPanel),
 			name = CopyTable(UF_Name),
+			partyIndicator = CopyTable(UF_PartyIndicator),
 			portrait = CopyTable(UF_Portrait),
 			power = CopyTable(UF_Power),
 			pvpIcon = CopyTable(UF_PVPIcon),
@@ -2168,7 +2183,7 @@ P.actionbar = {
 	rightClickSelfCast = false,
 	desaturateOnCooldown = false,
 	chargeCooldown = false,
-
+	handleOverlay = true,
 	barPet = {
 		enabled = true,
 		mouseover = false,

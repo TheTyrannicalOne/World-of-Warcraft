@@ -1,7 +1,7 @@
 
 OmniCCDB = {
 	["global"] = {
-		["addonVersion"] = "9.0.2",
+		["addonVersion"] = "9.0.3",
 		["dbVersion"] = 5,
 	},
 	["profileKeys"] = {
@@ -20,8 +20,8 @@ OmniCCDB = {
 		["Okona - Zul'jin"] = "Default",
 		["Shanyt - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Malivant - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
+		["Malivant - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",

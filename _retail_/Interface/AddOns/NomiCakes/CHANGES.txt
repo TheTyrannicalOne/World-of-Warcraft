@@ -1,6 +1,12 @@
-commit 865f9539ff4fa426994f3b7f455fefdcfd891425
-Author: semlar <teslagraafs@gmail.com>
-Date:   Fri Jan 24 01:28:55 2020 -0500
+tag f414567ed9df52d164e630e5c564e50fdb395292 9.0.0.0
+Author:	semlar <teslagraafs@gmail.com>
+Date:	Mon Nov 9 14:59:36 2020 -0500
 
-    Bump toc for 8.3
+commit d1f6fe483c2a6352ddcf0667759eba0eeb1831e6
+Author: semlar <teslagraafs@gmail.com>
+Date:   Mon Nov 9 14:59:24 2020 -0500
+
+    Update for 9.0
+    
+    - See FrameXML/GossipFrame.lua for new GossipFrame mixin using frame pool instead of global buttons
 

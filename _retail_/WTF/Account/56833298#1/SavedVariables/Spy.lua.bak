@@ -109,12 +109,12 @@ SpyDB = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
@@ -187,6 +187,7 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Shanyt - Argent Dawn"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 817.4998168945312,
@@ -209,9 +210,8 @@ SpyDB = {
 					},
 				},
 			},
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Shimzo - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
@@ -278,7 +278,6 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Varlouris - Dalaran"] = {
-			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 740.500244140625,
@@ -300,8 +299,8 @@ SpyDB = {
 					},
 				},
 			},
+			["AppendUnitNameCheck"] = true,
 			["AppendUnitKoSCheck"] = true,
-			["MainWindowVis"] = false,
 		},
 		["Thorinbane - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
@@ -376,7 +375,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
 				["Bar"] = {
@@ -435,7 +434,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Malivant - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
 				["Bar"] = {
