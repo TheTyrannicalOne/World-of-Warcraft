@@ -1,0 +1,12 @@
+## Interface: 80300
+## Title: TomCat's Tours: Warfronts Command Center
+## Author: TomCat
+## Version: @{version}
+## DefaultState: enabled
+## SavedVariablesPerCharacter: TomCats_WarfrontsCommandCenter_Character
+## OptionalDeps: TomCats
+## X-Part-Of: TomCat's Tours:
+## X-Category: Achievements, Map, Miscellaneous
+## X-Localizations: enUS, deDE, esES, esMX, frFR, itIT, koKR, ptBR, ruRU, zhCN, zhTW
+
+Main.xml

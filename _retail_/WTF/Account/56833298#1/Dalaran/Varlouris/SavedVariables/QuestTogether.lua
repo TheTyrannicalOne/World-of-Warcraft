@@ -55,10 +55,12 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[12794] = {
-			["title"] = "The Magical Kingdom of Dalaran",
+		[11650] = {
+			["title"] = "Just a Few More Things...",
 			["objectives"] = {
-				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
+				"1/1 Crafty's Tools", -- [1]
+				"0/1 Overcharged Capacitor", -- [2]
+				"0/1 A Handful of Rocknar's Grit", -- [3]
 			},
 		},
 		[26944] = {
@@ -79,19 +81,17 @@ QuestTogether = {
 				"1/1 Mark Location of Northwest Sinkhole", -- [3]
 			},
 		},
-		[11650] = {
-			["title"] = "Just a Few More Things...",
+		[12794] = {
+			["title"] = "The Magical Kingdom of Dalaran",
 			["objectives"] = {
-				"1/1 Crafty's Tools", -- [1]
-				"0/1 Overcharged Capacitor", -- [2]
-				"0/1 A Handful of Rocknar's Grit", -- [3]
+				"Deliver the Kirin Tor Signet to Archmage Celindra at the Violet Gate in Dalaran.", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

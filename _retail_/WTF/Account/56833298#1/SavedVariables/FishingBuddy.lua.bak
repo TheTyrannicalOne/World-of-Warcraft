@@ -22,10 +22,11 @@ FishingBuddy_Info = {
 			[27422] = 1,
 		},
 	},
-	["Version"] = 19500,
-	["Settings"] = {
-		["CreateMacro"] = true,
+	["KnownZones"] = {
+		[1355] = "Chitterspine Caverns",
+		[1527] = "Uldum",
 	},
+	["Version"] = 19500,
 	["FishInfo2"] = 0,
 	["SubZones"] = {
 		[1355000] = 1,
@@ -38,22 +39,21 @@ FishingBuddy_Info = {
 		[45188] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Withered Kelp",
-			["texture"] = 134192,
 			["quality"] = 0,
-		},
-		[168646] = {
-			["enUS"] = "Mauve Stinger",
-			["quality"] = 1,
-			["texture"] = 3007472,
+			["texture"] = 134192,
 		},
 		[27422] = {
 			["enUS"] = "Barbed Gill Trout",
+			["quality"] = 1,
 			["texture"] = 133923,
+		},
+		[168646] = {
+			["enUS"] = "Mauve Stinger",
+			["texture"] = 3007472,
 			["quality"] = 1,
 		},
 	},
-	["KnownZones"] = {
-		[1355] = "Chitterspine Caverns",
-		[1527] = "Uldum",
+	["Settings"] = {
+		["CreateMacro"] = true,
 	},
 }

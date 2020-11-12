@@ -9,28 +9,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"|cffffd100|HclubFinder:ClubFinder-1-111098-3683-60480757|h[Guild: The Mystery Machine]|h|r is opening our roster to active players for shadowlands If you're new to the game or returning a veteran consider if our crew is right for you Scooby Dooby Doo!", -- [1]
-			"Constitution-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Constitution-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			322, -- [11]
-			"Player-3683-0BA594F2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cConstitution|r",
-			[51] = 1603837221,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
 			"fastest way to lvl 50? quest grind or dungens?", -- [1]
 			"Ikindasuck-Dalaran", -- [2]
 			"", -- [3]
@@ -51,7 +29,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIkindasuck|r",
 			[51] = 1603837256,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
+		}, -- [1]
 		{
 			"With chromie now, questing", -- [1]
 			"Baenan-Dalaran", -- [2]
@@ -73,7 +51,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Baenan|r",
 			[51] = 1603837267,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [2]
 		{
 			"both", -- [1]
 			"Rollerballz-Dalaran", -- [2]
@@ -95,7 +73,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rollerballz|r",
 			[51] = 1603837270,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [3]
 		{
 			"Used to be dungeons", -- [1]
 			"Baenan-Dalaran", -- [2]
@@ -117,7 +95,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Baenan|r",
 			[51] = 1603837271,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [4]
 		{
 			"quests and picking flowers and mining", -- [1]
 			"Leilo-Dalaran", -- [2]
@@ -139,7 +117,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Leilo|r",
 			[51] = 1603837274,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [5]
 		{
 			"quest and que", -- [1]
 			"Rollerballz-Dalaran", -- [2]
@@ -161,7 +139,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rollerballz|r",
 			[51] = 1603837277,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [6]
 		{
 			"wod bonus objectives", -- [1]
 			"Galexi-Dalaran", -- [2]
@@ -183,7 +161,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Galexi|r",
 			[51] = 1603837289,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [7]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-111098-3683-60480757|h[Guild: The Mystery Machine]|h|r is opening our roster to active players for shadowlands If you're new to the game or returning a veteran consider if our crew is right for you Scooby Dooby Doo!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -205,7 +183,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1603837292,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [8]
 		{
 			"pvp faster", -- [1]
 			"Arlyan-Dalaran", -- [2]
@@ -227,7 +205,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Arlyan|r",
 			[51] = 1603837297,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [9]
 		{
 			"If youre straight dps class, queue and run dungeons in between questing", -- [1]
 			"Baenan-Dalaran", -- [2]
@@ -249,7 +227,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Baenan|r",
 			[51] = 1603837298,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [10]
 		{
 			"sigh, no dice", -- [1]
 			"Presttige-Dalaran", -- [2]
@@ -271,7 +249,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Presttige|r",
 			[51] = 1603837312,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [11]
 		{
 			"did they disable Ray tracing?", -- [1]
 			"Hugehole-Dalaran", -- [2]
@@ -293,7 +271,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Hugehole|r",
 			[51] = 1603837319,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [12]
 		{
 			":( sorry", -- [1]
 			"Nelfßarbie-Dalaran", -- [2]
@@ -315,7 +293,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Nelfßarbie|r",
 			[51] = 1603837320,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [13]
 		{
 			"nice", -- [1]
 			"Kyrex-Dalaran", -- [2]
@@ -337,7 +315,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kyrex|r",
 			[51] = 1603837462,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [14]
 		{
 			"Y'all seriously need to do yourselves a favor and watch some youtube videos on what Raytracing is and how it works. ", -- [1]
 			"Lightgiver-Dalaran", -- [2]
@@ -359,7 +337,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lightgiver|r",
 			[51] = 1603837466,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [15]
 		{
 			"any1 want hh tank quie?", -- [1]
 			"Wesleymorber-Dalaran", -- [2]
@@ -381,7 +359,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWesleymorber|r",
 			[51] = 1603899356,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [16]
 		{
 			"yes invite me please", -- [1]
 			"Fireforgesam-Dalaran", -- [2]
@@ -403,7 +381,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Fireforgesam|r",
 			[51] = 1603899374,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [17]
 		{
 			"i can't tell you how happy i would be if i saw a panda in the parking lot at work. it's usually an angry racoon.", -- [1]
 			"Amysue-Dalaran", -- [2]
@@ -425,7 +403,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAmysue|r",
 			[51] = 1603899378,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [18]
 		{
 			"WTS|cffff8000|Hitem:17771::::::::50:252:::::::|h[Enchanted Elementium Bar]|h|rx18 7.5k a piece get them before their gone", -- [1]
 			"Vyrael-Dalaran", -- [2]
@@ -447,7 +425,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Vyrael|r",
 			[51] = 1603899385,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [19]
 		{
 			"too bad stupids are stupid enough to breed stupids", -- [1]
 			"Hear-Dalaran", -- [2]
@@ -469,7 +447,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHear|r",
 			[51] = 1603899389,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [20]
 		{
 			"how do i get to stormwind from here", -- [1]
 			"Thandonis-Dalaran", -- [2]
@@ -491,7 +469,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Thandonis|r",
 			[51] = 1603899425,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [21]
 		{
 			"ahhh hear is here", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -513,7 +491,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603899430,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [22]
 		{
 			"take the portal", -- [1]
 			"Aerisella-Dalaran", -- [2]
@@ -535,7 +513,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aerisella|r",
 			[51] = 1603899440,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [23]
 		{
 			"hows my favorite lefty today", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -557,7 +535,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603899446,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [24]
 		{
 			"How come cata time line gives \"classic\" dung but every other one does whatever you pick?", -- [1]
 			"Basserd-Dalaran", -- [2]
@@ -579,7 +557,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Basserd|r",
 			[51] = 1603899450,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [25]
 		{
 			"TED CRUZ JUST WRECKED THE OWNER OF TWITTER HAHA", -- [1]
 			"Tonygabbagoo-Dalaran", -- [2]
@@ -601,7 +579,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tonygabbagoo|r",
 			[51] = 1603899465,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [26]
 		{
 			"one million sperms and Trump makes it ... sigh", -- [1]
 			"Hear-Dalaran", -- [2]
@@ -623,7 +601,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHear|r",
 			[51] = 1603899473,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [27]
 		{
 			"id rather get corona", -- [1]
 			"Aurinna-Dalaran", -- [2]
@@ -645,7 +623,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinna|r",
 			[51] = 1604007248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [28]
 		{
 			"<Starlight Boosting> Selling Mythic + Dungeons // Armor Stacking // Mythic Jaina Mount // Mech Hardmode // Heroic-Mythic N'zoth // [GOLD ONLY] PST", -- [1]
 			"Spikesells-Dalaran", -- [2]
@@ -667,7 +645,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSpikesells|r",
 			[51] = 1604007261,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [29]
 		{
 			"well theres like a 99.96% you wont ", -- [1]
 			"Sheeldon-Dalaran", -- [2]
@@ -689,7 +667,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Sheeldon|r",
 			[51] = 1604007263,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [30]
 		{
 			"Just get something to seperate the images right? that way each eye focuses on the video to give it the same effect", -- [1]
 			"Lysitheia-Dalaran", -- [2]
@@ -711,7 +689,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lysitheia|r",
 			[51] = 1604007269,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [31]
 		{
 			"here we fucking go", -- [1]
 			"Apáche-Dalaran", -- [2]
@@ -733,7 +711,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Apáche|r",
 			[51] = 1604007271,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [32]
 		{
 			"im waiting for Elon's brain attachment thingy", -- [1]
 			"Apáche-Dalaran", -- [2]
@@ -755,7 +733,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Apáche|r",
 			[51] = 1604007295,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [33]
 		{
 			"You can literally do vr video with cardboard", -- [1]
 			"Lysitheia-Dalaran", -- [2]
@@ -777,7 +755,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lysitheia|r",
 			[51] = 1604007296,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [34]
 		{
 			"just had a mental image of someone so desperate for pron they are making cardboard cutouts, ty for that", -- [1]
 			"Apáche-Dalaran", -- [2]
@@ -799,7 +777,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Apáche|r",
 			[51] = 1604007369,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [35]
 		{
 			"haha", -- [1]
 			"Apáche-Dalaran", -- [2]
@@ -821,7 +799,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Apáche|r",
 			[51] = 1604007573,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [36]
 		{
 			"oof", -- [1]
 			"Jayci-Dalaran", -- [2]
@@ -843,7 +821,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcJayci|r",
 			[51] = 1604007577,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [37]
 		{
 			"frfr", -- [1]
 			"Apolles-Dalaran", -- [2]
@@ -865,7 +843,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cApolles|r",
 			[51] = 1604081926,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [38]
 		{
 			"i learned how to drift on a straightway :P", -- [1]
 			"Twinrage-Dalaran", -- [2]
@@ -887,7 +865,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTwinrage|r",
 			[51] = 1604081962,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [39]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-195694-3683-96640320|h[Guild: The Middle Shoe]|h|r is an LGBTQ+ affirming 18+ guild! We are a growing guild looking for more members to go into Shadowlands with for end game content. PM for more info and an invite!", -- [1]
 			"Deseadra-Dalaran", -- [2]
@@ -909,7 +887,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deseadra|r",
 			[51] = 1604081966,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [40]
 		{
 			"i knocked a girls tooth out with my SKEET SKEET SKEET!!!", -- [1]
 			"Léeland-Dalaran", -- [2]
@@ -931,7 +909,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Léeland|r",
 			[51] = 1604081971,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [41]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-193532-3683-96325487|h[Guild: Mütiny]|h|rLF more folks to bolster our raid team,and guild,in Shadowlands. We are a heroic guild, that pushes further once AOTC is reached.We will raid Tues and Wed 9pm to 12am EST.Whisper for info", -- [1]
 			"Lockthedk-Dalaran", -- [2]
@@ -953,7 +931,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lockthedk|r",
 			[51] = 1604081988,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [42]
 		{
 			"WTS |cff1eff00|Hitem:4035::::::::50:103:::::::|h[Silver-Thread Robe]|h|r", -- [1]
 			"Brotoz-Dalaran", -- [2]
@@ -975,7 +953,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Brotoz|r",
 			[51] = 1604190691,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [43]
 		{
 			"can we go one day without politics in trade?  that's not too much to ask", -- [1]
 			"Ozymandis-Dalaran", -- [2]
@@ -997,7 +975,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edOzymandis|r",
 			[51] = 1604190692,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [44]
 		{
 			"oh please.", -- [1]
 			"Elystelvia-Dalaran", -- [2]
@@ -1019,7 +997,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edElystelvia|r",
 			[51] = 1604190695,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [45]
 		{
 			"hahaha of course not", -- [1]
 			"Bunamoh-Dalaran", -- [2]
@@ -1041,7 +1019,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bunamoh|r",
 			[51] = 1604190701,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [46]
 		{
 			"<Hard Times>we are looking for social and progressive minded players to join into our home. we are currently enjoying the downtime before launch but want to be ready to hit the ground running, if you would like to try us out , pst for invite. ", -- [1]
 			"Kabani-Dalaran", -- [2]
@@ -1063,7 +1041,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKabani|r",
 			[51] = 1604190703,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [47]
 		{
 			"censorship much", -- [1]
 			"Tåssiåh-Dalaran", -- [2]
@@ -1085,7 +1063,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tåssiåh|r",
 			[51] = 1604190704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [48]
 		{
 			"WTS |cff0070dd|Hitem:128807::::::::45:102::::1:28:435:::|h[Coin of Many Faces]|h|r 666g Have Many in Stormwind Trade district", -- [1]
 			"Oakshrodiian-Dalaran", -- [2]
@@ -1107,7 +1085,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Oakshrodiian|r",
 			[51] = 1604190708,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [49]
 		{
 			"there's been independant commissions that have said Joe Biden had nothing to do with Burisma", -- [1]
 			"Pullfasttank-Dalaran", -- [2]
@@ -1129,7 +1107,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePullfasttank|r",
 			[51] = 1604190708,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"fuck trump now move on!!!", -- [1]
 			"Magistro-Dalaran", -- [2]
@@ -1151,7 +1129,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaMagistro|r",
 			[51] = 1604190709,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"They impeached Trump over a phone call. And yet when they have pictures and documents about Hunter Biden's corruption? Shhhhhhhhhhhhhhhhhhhhhhhh! SHHHHHHHHH! ", -- [1]
 			"Nekromantic-Dalaran", -- [2]
@@ -1173,7 +1151,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nekromantic|r",
 			[51] = 1604190710,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"Tired of politics in trade chat? sick of hearing people sling shit at eachother for hours on end? So is <The Mystery Machine>!  Good news now that you've found us you can /leave trade to their own devices! Thank you all and have a nice day!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -1195,7 +1173,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1604190713,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"T  R U  M  P 2020 YEA!!!!", -- [1]
 			"Jaelaani-Dalaran", -- [2]
@@ -1217,7 +1195,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeJaelaani|r",
 			[51] = 1604190715,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [54]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-111098-3683-60480757|h[Guild: The Mystery Machine]|h|r is opening our roster to active players for shadowlands If you're new to the game or returning a veteran consider if our crew is right for you Scooby Dooby Doo!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -1239,7 +1217,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1604190717,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [55]
 		{
 			"<The Mystery Machine> sends our regards! We are a unique guild teaching our new or returning players more about what it means to move from h to m raiding. We will be a mythic  guild with a cultivated community. Yearning burning for learning? Come see!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -1261,7 +1239,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1604190720,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [56]
 		{
 			"not 3 days away from an\\ super important election we cant", -- [1]
 			"Fasalar-Dalaran", -- [2]
@@ -1283,7 +1261,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fasalar|r",
 			[51] = 1604190723,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [57]
 		{
 			"WTS |cffffffff|Hitem:10713::::::::13:256:::1:6839::::|h[Plans: Inlaid Mithril Cylinder]|h|r PST", -- [1]
 			"Nereka-Dalaran", -- [2]
@@ -1305,7 +1283,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNereka|r",
 			[51] = 1604190727,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [58]
 		{
 			"maybe a month after", -- [1]
 			"Fasalar-Dalaran", -- [2]
@@ -1327,7 +1305,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fasalar|r",
 			[51] = 1604190729,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [59]
 		{
 			"you dont get impeaced over one phone call lol", -- [1]
 			"Duskstriker-Dalaran", -- [2]
@@ -1349,7 +1327,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Duskstriker|r",
 			[51] = 1604190734,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [60]
 		{
 			"hunter biden isn't running for president...", -- [1]
 			"Pullfasttank-Dalaran", -- [2]
@@ -1371,7 +1349,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePullfasttank|r",
 			[51] = 1604190735,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [61]
 		{
 			"nepotism is involved in all politicians. If he is guilty of treason then charge him as such, he hasnt been charged yet.", -- [1]
 			"Elystelvia-Dalaran", -- [2]
@@ -1393,7 +1371,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edElystelvia|r",
 			[51] = 1604190736,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [62]
 		{
 			"Trump was impeached , but not removed from office", -- [1]
 			"Traenaria-Dalaran", -- [2]
@@ -1415,7 +1393,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTraenaria|r",
 			[51] = 1604190738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [63]
 		{
 			"Skycoach community will help you for ONE TOKEN Price  with Ny'alotha heroic. Mythic +10, +11,+12,+13,+14,+15 +20 with loottrade and much more! Get your gear today! Please PM", -- [1]
 			"Besttraid-Dalaran", -- [2]
@@ -1437,7 +1415,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeBesttraid|r",
 			[51] = 1604190743,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [64]
 		{
 			"1,000G bet that Trump & Family flee out of the country before inaugeration.", -- [1]
 			"Bunamoh-Dalaran", -- [2]
@@ -1459,7 +1437,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bunamoh|r",
 			[51] = 1604190744,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [65]
 		{
 			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rcool MOUNT! Get yours now! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -1481,7 +1459,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604190745,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [66]
 		{
 			"If trump wins are they going to spend his whole term trying to get rid of him again?", -- [1]
 			"Smokeebudd-Dalaran", -- [2]
@@ -1503,7 +1481,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSmokeebudd|r",
 			[51] = 1604190750,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [67]
 		{
 			"I'll take that bet", -- [1]
 			"Tåssiåh-Dalaran", -- [2]
@@ -1525,7 +1503,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tåssiåh|r",
 			[51] = 1604190752,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [68]
 		{
 			"<The Mystery Machine> sends our regards. We're a unique guild teaching our new or returning players more about what it means to move from h to m raiding. We will be a mythic  guild with a cultivated community. Yearning burning for learning? Come see!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -1547,7 +1525,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1604190752,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [69]
 		{
 			"Or just take the L", -- [1]
 			"Smokeebudd-Dalaran", -- [2]
@@ -1569,7 +1547,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSmokeebudd|r",
 			[51] = 1604190754,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [70]
 		{
 			"Impeached just means charged", -- [1]
 			"Owaisy-Dalaran", -- [2]
@@ -1591,7 +1569,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Owaisy|r",
 			[51] = 1604190757,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [71]
 		{
 			"tired of hearing shoogi and more interested in politics screw his scooby doo mystery machine and wake up to realitity", -- [1]
 			"Leonardó-Dalaran", -- [2]
@@ -1613,7 +1591,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Leonardó|r",
 			[51] = 1604190764,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [72]
 		{
 			"LFGuild :)", -- [1]
 			"Arcaniax-Dalaran", -- [2]
@@ -1635,7 +1613,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeArcaniax|r",
 			[51] = 1604190766,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [73]
 		{
 			"The answer is yes Smoke lol", -- [1]
 			"Melliko-Dalaran", -- [2]
@@ -1657,7 +1635,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Melliko|r",
 			[51] = 1604190767,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [74]
 		{
 			"some people (most) we also too stupid to read the documments surrounding the impeachment", -- [1]
 			"Fasalar-Dalaran", -- [2]
@@ -1679,7 +1657,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fasalar|r",
 			[51] = 1604190772,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [75]
 		{
 			"even if trump wins its possible democrats would take house and senate and just impeach him.", -- [1]
 			"Elystelvia-Dalaran", -- [2]
@@ -1701,7 +1679,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edElystelvia|r",
 			[51] = 1604190773,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [76]
 		{
 			"Yes they will", -- [1]
 			"Melliko-Dalaran", -- [2]
@@ -1723,7 +1701,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Melliko|r",
 			[51] = 1604190773,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [77]
 		{
 			"a phone call attempting to force another country to interfere with an election. We impeached for less... \"cough\" clinton \"cough\"", -- [1]
 			"Grandbrae-Dalaran", -- [2]
@@ -1745,7 +1723,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Grandbrae|r",
 			[51] = 1604190775,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [78]
 		{
 			"Congress is going blue if Trump wins he will be impeached and removed", -- [1]
 			"Traenaria-Dalaran", -- [2]
@@ -1767,7 +1745,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTraenaria|r",
 			[51] = 1604190780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [79]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-111098-3683-60480757|h[Guild: The Mystery Machine]|h|r is opening our roster to active players for shadowlands If you're new to the game or returning a veteran consider if our crew is right for you Scooby Dooby Doo!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -1789,7 +1767,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1604190784,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [80]
 		{
 			"Democrats have proven over the last 4 years that THEY CANNOT, AND WILL NOT EVER 'Take the L'", -- [1]
 			"Nekromantic-Dalaran", -- [2]
@@ -1811,7 +1789,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nekromantic|r",
 			[51] = 1604190785,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"man this guy is lost.", -- [1]
 			"Elystelvia-Dalaran", -- [2]
@@ -1833,7 +1811,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edElystelvia|r",
 			[51] = 1604190796,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [82]
 		{
 			"Democrats cant take the L", -- [1]
 			"Smokeebudd-Dalaran", -- [2]
@@ -1855,7 +1833,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSmokeebudd|r",
 			[51] = 1604190799,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [83]
 		{
 			"Hopefully after the Election, Trade chat will resume to normla", -- [1]
 			"Firedguy-Dalaran", -- [2]
@@ -1877,7 +1855,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaFiredguy|r",
 			[51] = 1604190800,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [84]
 		{
 			"Tired of politics in trade chat? sick of hearing people sling shit at eachother for hours on end? So is <The Mystery Machine>!  Good news now that you've found us you can /leave trade to their own devices! Thank you all and have a nice day!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -1899,7 +1877,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1604190806,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [85]
 		{
 			"Sore losers", -- [1]
 			"Smokeebudd-Dalaran", -- [2]
@@ -1921,7 +1899,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSmokeebudd|r",
 			[51] = 1604190810,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [86]
 		{
 			"wth was normal about trade chat", -- [1]
 			"Plznoslows-Dalaran", -- [2]
@@ -1943,7 +1921,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Plznoslows|r",
 			[51] = 1604190812,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [87]
 		{
 			"trade chat is always politics since 2016", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -1965,7 +1943,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1604190816,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [88]
 		{
 			"if you cant get term limits it dont matter what shitty face runs this country", -- [1]
 			"Wikkd-Dalaran", -- [2]
@@ -1987,7 +1965,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Wikkd|r",
 			[51] = 1604190817,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [89]
 		{
 			"wts|cff0070dd|Hbattlepet:156:1:3:155:11:11:0000000000000000:21362|h[Bananas]|h|rcool pet!Cheaper than AH! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -2009,7 +1987,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604190819,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [90]
 		{
 			"save it for after the election", -- [1]
 			"Elystelvia-Dalaran", -- [2]
@@ -2031,7 +2009,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edElystelvia|r",
 			[51] = 1604190820,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [91]
 		{
 			"Dems will never get 60 in the senate ", -- [1]
 			"Helabb-Dalaran", -- [2]
@@ -2053,7 +2031,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHelabb|r",
 			[51] = 1604190824,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [92]
 		{
 			"GOP can't take the W either, its a constant loop of fixing shit, and the other guy wrecking shit", -- [1]
 			"Duskstriker-Dalaran", -- [2]
@@ -2075,7 +2053,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Duskstriker|r",
 			[51] = 1604190826,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [93]
 		{
 			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rcool MOUNT! Get yours now! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -2097,7 +2075,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604190826,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [94]
 		{
 			"tank lf guild", -- [1]
 			"Dkp-Dalaran", -- [2]
@@ -2119,7 +2097,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dkp|r",
 			[51] = 1604190832,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [95]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-165417-3683-48827660|h[Guild: Obey The Giant]|h|rLooking for players to join as we form a Normal/Heroic raid team for SL. No pressure to be the best just be willing to learn.", -- [1]
 			"Ajaina-Dalaran", -- [2]
@@ -2141,7 +2119,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAjaina|r",
 			[51] = 1604190841,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [96]
 		{
 			"Ty", -- [1]
 			"Airamii-WyrmrestAccord", -- [2]
@@ -2163,7 +2141,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Airamii-WyrmrestAccord|r",
 			[51] = 1604191006,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [98]
+		}, -- [97]
 		{
 			"All I heard was ignore the guy spamming wall text because he's salty about trade subjects", -- [1]
 			"Thiccneese-Dalaran", -- [2]
@@ -2184,6 +2162,28 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cfffe7b09Thiccneese|r",
 			[51] = 1604191025,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"WTS:  Mythic/Heroic Ny'alotha12/12; Mythic+11-20keys Carry;Weekly reward 130ilvl gear ;Guaranteed transmog gear (Dazar'alor).Also do Jaina mount |cffa335ee|Hitem:166705::::::::10:1448:::::::|h[Glacial Tidestorm]|h|r; Pst !", -- [1]
+			"Nobze-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Nobze-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1676, -- [11]
+			"Player-3683-0CD0E4C1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Nobze|r",
+			[51] = 1605086790,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

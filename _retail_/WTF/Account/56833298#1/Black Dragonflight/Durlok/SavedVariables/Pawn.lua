@@ -1,13 +1,13 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0404,
+	["LastVersion"] = 2.0405,
 	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 122249,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122249::::::::50:104:::1:5805::::|h[Preened Tribal War Feathers]|h|r",
+			["ID"] = 183579,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183579::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Mask]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
@@ -15,9 +15,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:104::11:4:4932:4933:4935:1478::::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122359,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122359::::::::50:104:::1:5805::::|h[Preened Ironfeather Shoulders]|h|r",
+			["ID"] = 183578,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183578::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Pauldrons]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -26,9 +26,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122382::::::::50:104:::1:5805::::|h[Preened Ironfeather Breastplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 158443,
-			["Level"] = 58,
-			["Link"] = "|cff1eff00|Hitem:158443::::::::50:104::11:1:4793:1:9:49:::|h[Jambani Belt]|h|r",
+			["ID"] = 183668,
+			["Level"] = 110,
+			["Link"] = "|cffa335ee|Hitem:183668::::::::50:104:::2:1482:4786:1:28:1401:::|h[Razor-Barbed Leather Belt]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122255,
@@ -75,9 +75,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122261::::::::50:104:::1:5805::::|h[Inherited Cape of the Black Baron]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 140773,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:140773::::::::50:104:::1:5805::::|h[Eagletalon Spear]|h|r",
+			["ID"] = 165613,
+			["Level"] = 115,
+			["Link"] = "|cffa335ee|Hitem:165613::::::::50:104::81:3:5844:1527:4786:1:28:1401:::|h[Plaguebringer's Halberd]|h|r",
 		}, -- [16]
 	},
 	["LastKeybindingsSet"] = 1,

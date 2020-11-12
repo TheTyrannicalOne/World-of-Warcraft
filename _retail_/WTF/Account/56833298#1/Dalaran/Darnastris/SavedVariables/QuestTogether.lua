@@ -37,31 +37,24 @@ QuestTogether = {
 				"Complete \"Troops in the Field\"", -- [1]
 			},
 		},
+		[27203] = {
+			["title"] = "The Maelstrom",
+			["objectives"] = {
+			},
+		},
 		[34692] = {
 			["title"] = "Delegating on Draenor",
 			["objectives"] = {
 				"Use the Command Table", -- [1]
 			},
 		},
-		[28398] = {
-			["title"] = "The Pyromancer's Grimoire",
-			["objectives"] = {
-				"0/6 Twilight Emissary slain", -- [1]
-				"0/1 Loregrain's Grimoire", -- [2]
-			},
-		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
 		[26838] = {
 			["title"] = "Rebels Without a Clue",
+			["objectives"] = {
+			},
+		},
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
 			["objectives"] = {
 			},
 		},
@@ -95,8 +88,8 @@ QuestTogether = {
 				"0/1 Choose a second artifact to pursue", -- [1]
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
 			["objectives"] = {
 			},
 		},
@@ -111,13 +104,18 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[12466] = {
-			["title"] = "Chasing Icestorm: The 7th Legion Front",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[26897] = {
-			["title"] = "Blackfathom Deeps",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
 			},
 		},
@@ -128,16 +126,18 @@ QuestTogether = {
 				"0/1 Complete a Bronze Trial", -- [2]
 			},
 		},
-		[27203] = {
-			["title"] = "The Maelstrom",
+		[28398] = {
+			["title"] = "The Pyromancer's Grimoire",
 			["objectives"] = {
+				"0/6 Twilight Emissary slain", -- [1]
+				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

@@ -27,9 +27,9 @@ SkadaPerCharDB = {
 		},
 		["name"] = "Total",
 		["alertCount"] = 0,
-		["starttime"] = 1604961848,
+		["starttime"] = 1605136196,
 		["mobhdone"] = 0,
-		["last_action"] = 1604961848,
+		["last_action"] = 1605136196,
 		["mobdone"] = 0,
 	},
 }

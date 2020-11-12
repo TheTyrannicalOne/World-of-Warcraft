@@ -430,16 +430,16 @@ function AAP.FP.GetCustomZone()
 			zenr = zenr + 1
 		end
 	end
-	if (UnitFactionGroup("player") == "Alliance" and C_QuestLog.IsQuestFlaggedCompleted(59751) == false and (C_QuestLog.IsQuestFlaggedCompleted(60545) == true or C_QuestLog.IsOnQuest(60545) == true)) then
+	if (zenr == 0 and UnitFactionGroup("player") == "Alliance" and C_QuestLog.IsQuestFlaggedCompleted(59751) == false and (C_QuestLog.IsQuestFlaggedCompleted(60545) == true or C_QuestLog.IsOnQuest(60545) == true)) then
 		return 84, "84-IntroQline"
 	end
-	if (UnitFactionGroup("player") == "Horde" and C_QuestLog.IsQuestFlaggedCompleted(59751) == false and (C_QuestLog.IsQuestFlaggedCompleted(61874) == true or C_QuestLog.IsOnQuest(61874) == true)) then
+	if (zenr == 0 and UnitFactionGroup("player") == "Horde" and C_QuestLog.IsQuestFlaggedCompleted(59751) == false and (C_QuestLog.IsQuestFlaggedCompleted(61874) == true or C_QuestLog.IsOnQuest(61874) == true)) then
 		return 85, "85-IntroQline"
 	end
-	if (not ZeMap and C_QuestLog.IsOnQuest(57159)) then
+	if (zenr == 0 and not ZeMap and C_QuestLog.IsOnQuest(57159)) then
 		return AAP.QuestStepListListingZone["Z-12-Revendreth-Story"], "1525-Z12-Revendreth-Story"
 	end
-	if (C_QuestLog.IsOnQuest(57876) and C_QuestLog.IsQuestFlaggedCompleted(57876) == false) then
+	if (zenr == 0 and C_QuestLog.IsOnQuest(57876) and C_QuestLog.IsQuestFlaggedCompleted(57876) == false) then
 		return AAP.QuestStepListListingZone["Z-14-Revendreth-Story"], "1525-Z14-Revendreth-Story"
 	end
 	if (zenr == 0 and AAP.Level > 49) then
@@ -601,19 +601,19 @@ function AAP.FP.GetCustomZone()
 		end
 
 	end
-	if (C_QuestLog.IsQuestFlaggedCompleted(62023) == true and C_QuestLog.IsQuestFlaggedCompleted(57904) == false) then
+	if (zenr == 0 and C_QuestLog.IsQuestFlaggedCompleted(62023) == true and C_QuestLog.IsQuestFlaggedCompleted(57904) == false) then
 		AAP.ProgressShown = 1
 		return 1533, "1670-Kyrian"
 	end
-	if (C_QuestLog.IsQuestFlaggedCompleted(62019) == true and C_QuestLog.IsQuestFlaggedCompleted(58159) == false) then
+	if (zenr == 0 and C_QuestLog.IsQuestFlaggedCompleted(62019) == true and C_QuestLog.IsQuestFlaggedCompleted(58159) == false) then
 		AAP.ProgressShown = 1
 		return 1565, "1670-NightFae"
 	end
-	if (C_QuestLog.IsQuestFlaggedCompleted(62020) == true and C_QuestLog.IsQuestFlaggedCompleted(59320) == false) then
+	if (zenr == 0 and C_QuestLog.IsQuestFlaggedCompleted(62020) == true and C_QuestLog.IsQuestFlaggedCompleted(59320) == false) then
 		AAP.ProgressShown = 1
 		return 1525, "1670-Venthyr"
 	end
-	if (C_QuestLog.IsQuestFlaggedCompleted(62017) == true and C_QuestLog.IsQuestFlaggedCompleted(60049) == false) then
+	if (zenr == 0 and C_QuestLog.IsQuestFlaggedCompleted(62017) == true and C_QuestLog.IsQuestFlaggedCompleted(60049) == false) then
 		AAP.ProgressShown = 1
 		return 1536, "1670-Necrolords"
 	end
@@ -725,6 +725,13 @@ function AAP.FP.GetMeToNextZoneSpecialRe(AAPt_Zone)
 		AAPt_Zone = 1409
 	end
 	
+	
+	if (AAP.ActiveMap == "Shadowlands-StoryOnly-A" and ((AAPt_Zone == 84) or (AAPt_Zone == 1648) or (AAPt_Zone == 1670) or (AAPt_Zone == 1671) or (AAPt_Zone == 1533) or (AAPt_Zone == 1613) or (AAPt_Zone == 1536) or (AAPt_Zone == 1543) or (AAPt_Zone == 1565) or (AAPt_Zone == 1525))) then
+		AAPt_Zone = 1670
+	end
+	if (AAP.ActiveMap == "Shadowlands-StoryOnly-H" and ((AAPt_Zone == 85) or (AAPt_Zone == 1648) or (AAPt_Zone == 1670) or (AAPt_Zone == 1671) or (AAPt_Zone == 1533) or (AAPt_Zone == 1613) or (AAPt_Zone == 1536) or (AAPt_Zone == 1543) or (AAPt_Zone == 1565) or (AAPt_Zone == 1525))) then
+		AAPt_Zone = 1670
+	end
 	if (AAP.ActiveMap == "85-DesMephisto-Orgrimmar-p1" and AAPt_Zone == 17) then
 		AAPt_Zone = 85
 	end
@@ -875,6 +882,8 @@ function AAP.FP.GetMeToNextZoneSpecialRe(AAPt_Zone)
 	if (AAP.ActiveMap == "1670-Z1-Oribos-ZonePick" and (AAPt_Zone == 1762 or AAPt_Zone == 1656 or AAPt_Zone == 1525 or AAPt_Zone == 1543 or AAPt_Zone == 1565 or AAPt_Zone == 1533 or AAPt_Zone == 1536)) then
 		AAPt_Zone = 1670
 	end
+	
+	
 	
 	
 	return AAPt_Zone

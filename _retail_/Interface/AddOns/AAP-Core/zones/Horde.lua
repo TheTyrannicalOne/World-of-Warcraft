@@ -3560,6 +3560,10 @@ AAP.QuestStepListListingZone = {
 	["Legion - Azsuna"] = 630,
 	["Legion - Val'Sharah"] = 641,
 	["Legion - Stormheim"] = 634,
+	
+	-- ["DEV - Silverpine Forest"] = 21,
+	-- ["DEV - Hillsbrad Foothills"] = 25,
+	["DEV - StoryMode Only (Not Enough XP)"] = 1670,
 }
 AAP.QuestStepListListing = {}
 AAP.QuestStepListListing["Shadowlands"] = {
@@ -3571,6 +3575,8 @@ AAP.QuestStepListListing["Shadowlands"] = {
 	["535-DesMephisto-Talador-p1"] = "(5/6) 10-50 Talador",
 	["542-DesMephisto-SpiresOfArak"] = "(6/6) 10-50 Spires of Arak",
 	["550-DesMephisto-Nagrand"] = "(7-extra) 10-50 Nagrand",
+	
+	["Shadowlands-StoryOnly-H"] = "DEV - StoryMode Only (Not Enough XP)",
 }
 if (AAP.Level < 33) then
 	AAP.QuestStepListListing["Shadowlands"]["1409-Exile's Reach"] = "01-10 Exile's Reach"
@@ -3580,7 +3586,8 @@ AAP.QuestStepListListing["Kalimdor"] = {
 	["1-Durotar"] = "01-30 Durotar (Full)",
 	["10-NorthernBarrens"] = "10-30 Northern Barrens",
 	["199-SouthernBarrens"] = "10-30 Southern Barrens",
-	
+	-- ["DEV-Silverpine"] = "DEV - Silverpine Forest",
+	-- ["DEV-Hillsbrad"] = "DEV - Hillsbrad Foothills",
 	
 	
 }
@@ -3601,6 +3608,7 @@ AAP.QuestStepListListing["SpeedRun"] = {
 	["1543-Z13-TheMaw-Story"] = "Z-13-The Maw-Story",
 	["1525-Z14-Revendreth-Story"] = "Z-14-Revendreth-Story",
 	["1671-Z15-Oribos-Story"] = "Z-15-Oribos-Story",
+	
 	
 	["1533-Bastion-NonStoryMode-1"] = "Test1",
 }

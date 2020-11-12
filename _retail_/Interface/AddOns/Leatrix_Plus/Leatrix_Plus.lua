@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.05 (4th November 2020)
+-- 	Leatrix Plus 9.0.06 (11th November 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.05"
+	LeaPlusLC["AddonVer"] = "9.0.06"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -2186,6 +2186,7 @@
 					if questID == 43923		-- Starlight Rose
 					or questID == 43924		-- Leyblood
 					or questID == 43925		-- Runescale Koi
+
 					then
 						return true
 					end
@@ -2226,6 +2227,26 @@
 				local goldRequiredAmount = GetQuestMoneyToGet()
 				if goldRequiredAmount and goldRequiredAmount > 0 then
 					return true
+				end
+			end
+
+			-- Function to check if quest ID has requirements met
+			local function DoesQuestHaveRequirementsMet(qID)
+				if qID and qID ~= "" then
+
+					if not qID then
+
+					-- Scourgestones
+					elseif qID == 62293 then
+						-- Quest Darkened Scourgestones requires 25 Darkened Scourgestones
+						if GetItemCount(180720) >= 25 then return true end
+
+					elseif qID == 62292 then
+						-- Quest Pitch Black Scourgestones requires 25 Pitch Black Scourgestones
+						if GetItemCount(183200) >= 25 then return true end
+
+					else return true
+					end
 				end
 			end
 
@@ -2404,7 +2425,7 @@
 								for titleIndex, questInfo in ipairs(GossipQuests) do
 									if questInfo.frequency ~= 2 or LeaPlusLC["AutoQuestNoDaily"] == "Off" then
 										if questInfo.frequency ~= 3 or LeaPlusLC["AutoQuestNoWeekly"] == "Off" then
-											if not questInfo.questID or not IsQuestIDBlocked(questInfo.questID) then
+											if not questInfo.questID or not IsQuestIDBlocked(questInfo.questID) and DoesQuestHaveRequirementsMet(questInfo.questID) then
 												return C_GossipInfo.SelectAvailableQuest(titleIndex)
 											end
 										end

@@ -18,12 +18,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[42687] = {
-			["title"] = "Troops in the Field",
-			["objectives"] = {
-				"Complete \"Troops in the Field\"", -- [1]
-			},
-		},
 		[25186] = {
 			["title"] = "Futile Resistance",
 			["objectives"] = {
@@ -37,14 +31,16 @@ QuestTogether = {
 				"Pulverizer Bot Mk 6001 defeated.", -- [2]
 			},
 		},
-		[27203] = {
-			["title"] = "The Maelstrom",
+		[42687] = {
+			["title"] = "Troops in the Field",
 			["objectives"] = {
+				"Complete \"Troops in the Field\"", -- [1]
 			},
 		},
-		[12466] = {
-			["title"] = "Chasing Icestorm: The 7th Legion Front",
+		[34692] = {
+			["title"] = "Delegating on Draenor",
 			["objectives"] = {
+				"Use the Command Table", -- [1]
 			},
 		},
 		[28398] = {
@@ -64,10 +60,9 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[25191] = {
@@ -81,9 +76,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[26897] = {
-			["title"] = "Blackfathom Deeps",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[56491] = {
@@ -115,8 +111,13 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[26838] = {
-			["title"] = "Rebels Without a Clue",
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
+			["objectives"] = {
+			},
+		},
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
 			["objectives"] = {
 			},
 		},
@@ -127,17 +128,16 @@ QuestTogether = {
 				"0/1 Complete a Bronze Trial", -- [2]
 			},
 		},
-		[34692] = {
-			["title"] = "Delegating on Draenor",
+		[27203] = {
+			["title"] = "The Maelstrom",
 			["objectives"] = {
-				"Use the Command Table", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

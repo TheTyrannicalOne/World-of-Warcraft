@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0402,
+	["LastVersion"] = 2.0405,
 	["LastPlayerFullName"] = "Illingrath-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -26,14 +26,14 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122382::::::::50:581:::1:5805::::|h[Preened Ironfeather Breastplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 155120,
-			["Level"] = 54,
-			["Link"] = "|cff1eff00|Hitem:155120::::::::50:581::11:1:4787:1:9:47:::|h[Banisher Belt]|h|r",
+			["ID"] = 152756,
+			["Level"] = 60,
+			["Link"] = "|cffa335ee|Hitem:152756::::::::50:581:::6:1712:1808:3629:1472:5855:3336::::|h[Arinor Keeper's Belt of the Harmonious]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122255,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122255::::::::50:581:::1:5805::::|h[Preened Wildfeather Leggings]|h|r",
+			["ID"] = 173442,
+			["Level"] = 76,
+			["Link"] = "|cff0070dd|Hitem:173442::::::::50:581::14:4:6412:6513:1470:4785::::|h[Legwraps of the Insatiable Maw]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 158241,

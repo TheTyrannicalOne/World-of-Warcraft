@@ -95,16 +95,10 @@ QuestTogether = {
 				"0/1 Ten'gor slain", -- [2]
 			},
 		},
-		[25929] = {
-			["title"] = "Sea Legs",
+		[53476] = {
+			["title"] = "The Great Sea Scrolls",
 			["objectives"] = {
-				"0/3 Saltwater Starfish", -- [1]
-				"0/1 Conch Shell", -- [2]
-			},
-		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
-			["objectives"] = {
+				"2/12 Pilgrimage Scroll", -- [1]
 			},
 		},
 		[44989] = {
@@ -113,16 +107,25 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[49422] = {
+			["title"] = "Heretics",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"0% Ruin wrought.", -- [1]
 			},
 		},
-		[29907] = {
-			["title"] = "Chen and Li Li",
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
 			["objectives"] = {
-				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[31486] = {
@@ -152,20 +155,16 @@ QuestTogether = {
 				"0/1 Speak with Brewmaster Boof", -- [2]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[29907] = {
+			["title"] = "Chen and Li Li",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
 			},
 		},
-		[49422] = {
-			["title"] = "Heretics",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0% Ruin wrought.", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[31613] = {
@@ -174,17 +173,18 @@ QuestTogether = {
 				"0/1 Greenstone Village Defended", -- [1]
 			},
 		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
+		[25929] = {
+			["title"] = "Sea Legs",
 			["objectives"] = {
-				"2/12 Pilgrimage Scroll", -- [1]
+				"0/3 Saltwater Starfish", -- [1]
+				"0/1 Conch Shell", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

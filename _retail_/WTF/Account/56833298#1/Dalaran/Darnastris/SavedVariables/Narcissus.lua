@@ -5,4 +5,5 @@ NarcissusDB_PC = {
 	["EquipmentSetDB"] = {
 	},
 }
-NarciStatisticsDB_PC = nil
+NarciStatisticsDB_PC = {
+}

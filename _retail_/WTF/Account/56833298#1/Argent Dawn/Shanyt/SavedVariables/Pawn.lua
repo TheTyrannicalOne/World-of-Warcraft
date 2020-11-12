@@ -85,10 +85,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 55387,
-			["Level"] = 38,
+			["ID"] = 36497,
+			["Level"] = 57,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff1eff00|Hitem:55387::::::::50:71:::2:6655:1715:2:28:656:9:35:::|h[Irontree Mace of the Harmonious]|h|r",
+			["Link"] = "|cff1eff00|Hitem:36497::::::::50:71:::2:6655:1694:2:28:1401:9:50:::|h[Adamant Mallet of the Fireflash]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

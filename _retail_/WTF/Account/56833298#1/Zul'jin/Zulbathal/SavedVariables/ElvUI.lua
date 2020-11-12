@@ -4,245 +4,25 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/cancelform", -- [1]
-		"/p weird", -- [2]
-		"/allthethings", -- [3]
+		"/dance", -- [2]
+		"/opie", -- [3]
 		"/click ExtraActionButton1", -- [4]
-		"/p cant it says an invite pending", -- [5]
+		"/wAVE", -- [5]
 		"/canimogit", -- [6]
 		"/wave", -- [7]
 		"/reload", -- [8]
-		"/dance", -- [9]
-		"/reloadui", -- [10]
+		"/reloadui", -- [9]
+		"/p cant it says an invite pending", -- [10]
 		"/omnicc", -- [11]
-		"/wAVE", -- [12]
+		"/allthethings", -- [12]
 		"/skada hide", -- [13]
 		"/omen", -- [14]
 		"/click extraaddonbutton1", -- [15]
 		"/fishingbuddy", -- [16]
-		"/opie", -- [17]
+		"/p weird", -- [17]
 		"/skada toggle", -- [18]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"larper civil war begins", -- [1]
-			"Elmocoo-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Elmocoo-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			773, -- [11]
-			"Player-61-097B88DA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Elmocoo|r",
-			[51] = 1604703364,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"Hai! <We Win These> is a small guild recruiting for Shadowlands! We are looking to fill our ranks for raiding, mythic+, and PvP.  PM for more info. Need healers, will take all.", -- [1]
-			"Büññÿ-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Büññÿ-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			774, -- [11]
-			"Player-61-0DE7BA1D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edBüññÿ|r",
-			[51] = 1604703366,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"Wts m + 15 keys only 89k> <m + 15 armorstack 95k <>specific keys 105k > <<<Jaina Mount> Ask me about the offers I have for you for Multiple Runs<< huokan community >>  ", -- [1]
-			"Belszu-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Belszu-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			775, -- [11]
-			"Player-61-0E016CF2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBelszu|r",
-			[51] = 1604703375,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"wts|cffa335ee|Hitem:90655::::::::12:269:::::::|h[Riendas del dragón nimbo rubí tronador]|h|r15k", -- [1]
-			"Crunchyrol-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Crunchyrol-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			776, -- [11]
-			"Player-61-0DF3FDE5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Crunchyrol|r",
-			[51] = 1604703378,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"|cffffffff|Hitem:128768::::::::50:64:::::::|h[Candy Cane]|h|r|cffffffff|Hitem:21254::::::::50:64:::::::|h[Winter Veil Cookie]|h|r mhmmmm", -- [1]
-			"Murmer-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Murmer-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			777, -- [11]
-			"Player-61-0B893E75", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaMurmer|r",
-			[51] = 1604703381,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"<<Phoenix Community>> || WTS  Mythic & Heroic Ny'alotha Full clear || N'Zoth Spams || Also Selling M+ carries, Islands, FH Leveling,  Jaina! GOLD ONLY  ****Also taking Pre-Orders for Castle Nathria in SL!", -- [1]
-			"Riftsale-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Riftsale-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			778, -- [11]
-			"Player-61-0E0E4018", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Riftsale|r",
-			[51] = 1604703451,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"Selling Jaina mount TONIGHT! Gold Only. Friendly and quick guild run. Pst for more info!", -- [1]
-			"Retrodk-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Retrodk-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			779, -- [11]
-			"Player-61-0DA94121", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Retrodk|r",
-			[51] = 1604703491,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			".::Spartan Boosting::. WTS Heroic Ny'alotha - Tonight - Funnels Avail || 9pm EST || Cheap prices || Get geared before SL leveling!! || Gold only", -- [1]
-			"Zuljinbankz-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zuljinbankz-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			780, -- [11]
-			"Player-61-0DFD0F96", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Zuljinbankz|r",
-			[51] = 1604703510,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"someone post that big monkee face again", -- [1]
-			"Praiiseallah-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Praiiseallah-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			781, -- [11]
-			"Player-61-0DFBAA17", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Praiiseallah|r",
-			[51] = 1604703577,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"wts|cffa335ee|Hitem:90655::::::::12:269:::::::|h[Riendas del dragón nimbo rubí tronador]|h|r15k", -- [1]
-			"Crunchyrol-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Crunchyrol-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			782, -- [11]
-			"Player-61-0DF3FDE5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Crunchyrol|r",
-			[51] = 1604703592,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
 		{
 			"yo can someone post that huge monkee face again", -- [1]
 			"Praiiseallah-Zul'jin", -- [2]
@@ -264,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Praiiseallah|r",
 			[51] = 1604703614,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [1]
 		{
 			"<<Phoenix Community>> || WTS  Mythic & Heroic Ny'alotha Full clear || N'Zoth Spams || Also Selling M+ carries, Islands, FH Leveling,  Jaina! GOLD ONLY  ****Also taking Pre-Orders for Castle Nathria in SL!", -- [1]
 			"Riftsale-Zul'jin", -- [2]
@@ -286,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Riftsale|r",
 			[51] = 1604703634,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [2]
 		{
 			"PREORDERING FUCKING RAID CLEARS?! HOLY SHIT MY SIDES", -- [1]
 			"Shahde-Zul'jin", -- [2]
@@ -308,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edShahde|r",
 			[51] = 1604703655,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [3]
 		{
 			"hahahahahahahaha", -- [1]
 			"Krilko-Zul'jin", -- [2]
@@ -330,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKrilko|r",
 			[51] = 1604703669,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [4]
 		{
 			"Selling Jaina mount TONIGHT! Gold Only. Friendly and quick guild run. Pst for more info!", -- [1]
 			"Retrodk-Zul'jin", -- [2]
@@ -352,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Retrodk|r",
 			[51] = 1604703680,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [5]
 		{
 			"LFM M JAINA PST FOR INV", -- [1]
 			"Faepoa-Zul'jin", -- [2]
@@ -374,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcFaepoa|r",
 			[51] = 1604703682,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [6]
 		{
 			"SOMEONE POST THAT BIG MONKEE FACE", -- [1]
 			"Praiiseallah-Zul'jin", -- [2]
@@ -396,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Praiiseallah|r",
 			[51] = 1604703701,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [7]
 		{
 			"guys let me sell content I haven't achieved yet. Preorder SL glad season 1!!!", -- [1]
 			"Krilko-Zul'jin", -- [2]
@@ -418,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKrilko|r",
 			[51] = 1604703705,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [8]
 		{
 			"LFG for NZGOTH Heroic klll I can buy", -- [1]
 			"Klaww-Zul'jin", -- [2]
@@ -440,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKlaww|r",
 			[51] = 1604703724,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [9]
 		{
 			"GOD KING TRUMP WILLL PREVAIL IN T HE COURTS. AMY CONEY BARRET, AMERICA'S' SWEETHEART WILL COME THROUGH FOR TRUMP!", -- [1]
 			"Xhandalari-Zul'jin", -- [2]
@@ -462,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Xhandalari|r",
 			[51] = 1604703757,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [10]
 		{
 			"you are insane", -- [1]
 			"Elyie-Zul'jin", -- [2]
@@ -484,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Elyie|r",
 			[51] = 1604703777,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [11]
 		{
 			"wts|cffa335ee|Hitem:90655::::::::12:269:::::::|h[Riendas del dragón nimbo rubí tronador]|h|r15k", -- [1]
 			"Crunchyrol-Zul'jin", -- [2]
@@ -506,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Crunchyrol|r",
 			[51] = 1604703792,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [12]
 		{
 			"lol it's not going to get to the supreme court.... has it even gotten into any of the lower courts? Because from what i heard they keep rejecting his lack of a case", -- [1]
 			"Krilko-Zul'jin", -- [2]
@@ -528,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKrilko|r",
 			[51] = 1604703793,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [13]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-82044-61-46426919|h[Guild: Holistic]|h|r An adult,casual/social/no pressure Guild, looking to add to our family and expand our M+ and weekend raid teams! All Welcome!", -- [1]
 			"Icabodcrane-Zul'jin", -- [2]
@@ -550,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaIcabodcrane|r",
 			[51] = 1604703802,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [14]
 		{
 			"god king trump? you mean GOD KING SKOVAALD. WHO HAS CLAIM TO THE AEGIS", -- [1]
 			"Rathbubbles-Zul'jin", -- [2]
@@ -572,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeRathbubbles|r",
 			[51] = 1604703807,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [15]
 		{
 			"<Reality Check> is recruiting for heroic raiding & M+ in Shadowlands! Our raid times are Sat 7-10p/Sun 6-8p. We are recruiting active players of all roles to diversify the guild!  Casuals&Pvpers are also welcome! 21+ only PST for info/invite ", -- [1]
 			"Alkiir-Zul'jin", -- [2]
@@ -594,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAlkiir|r",
 			[51] = 1604703811,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [16]
 		{
 			"NO SKOVALD, THESE HEROES HAVE CLAIMED THE AEGIS, AS IS THEIR RIGHT", -- [1]
 			"Shahde-Zul'jin", -- [2]
@@ -616,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edShahde|r",
 			[51] = 1604703825,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [17]
 		{
 			"is crow's nest still bis enchant for bm hunter wep?", -- [1]
 			"Kittniss-Zul'jin", -- [2]
@@ -638,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kittniss|r",
 			[51] = 1604703826,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [18]
 		{
 			"Selling Jaina mount TONIGHT! Gold Only. Friendly and quick guild run. Pst for more info!", -- [1]
 			"Retrodk-Zul'jin", -- [2]
@@ -660,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Retrodk|r",
 			[51] = 1604703855,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [19]
 		{
 			".::Spartan Boosting::. WTS Heroic Ny'alotha - Tonight - Funnels Avail || 9pm EST || Cheap prices || Get geared before SL leveling!! || Gold only", -- [1]
 			"Zuljinbankz-Zul'jin", -- [2]
@@ -682,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Zuljinbankz|r",
 			[51] = 1604703857,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [20]
 		{
 			"WTS|cffa335ee|Hitem:92426::::::::1:1449::::1:28:167:::|h[Sealed Tome of the Lost Legion]|h|r Fel Fire Spells For Warlock PTS", -- [1]
 			"Pänwshop-Zul'jin", -- [2]
@@ -704,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcPänwshop|r",
 			[51] = 1604703858,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [21]
 		{
 			"|cff0070dd|Hitem:158090:5955:::::::50:253::27:5:4803:6516:6515:1494:4785::::|h[Ironcrest Longrifle]|h|r", -- [1]
 			"Kittniss-Zul'jin", -- [2]
@@ -726,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kittniss|r",
 			[51] = 1604703878,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [22]
 		{
 			"lfm m jaina pst for inv", -- [1]
 			"Faepoa-Zul'jin", -- [2]
@@ -748,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcFaepoa|r",
 			[51] = 1604703884,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [23]
 		{
 			"FREE M+ 15-20 Carries! Come and hang out and get your weekly key done. Tune in at twitch.tv/pikacali and type !carry (^.^)", -- [1]
 			"Beautiesqt-Zul'jin", -- [2]
@@ -770,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBeautiesqt|r",
 			[51] = 1604703919,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [24]
 		{
 			"Wts m + 15 keys only 89k> <m + 15 armorstack 95k <>specific keys 105k > <<<Jaina Mount> Ask me about the offers I have for you for Multiple Runs<< huokan community >>  ", -- [1]
 			"Belszu-Zul'jin", -- [2]
@@ -792,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBelszu|r",
 			[51] = 1604703951,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [25]
 		{
 			"Selling Jaina mount TONIGHT! Gold Only. Friendly and quick guild run. Pst for more info!", -- [1]
 			"Retrodk-Zul'jin", -- [2]
@@ -814,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Retrodk|r",
 			[51] = 1604703996,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [26]
 		{
 			".::Spartan Boosting::. WTS Heroic Ny'alotha - Tonight - Funnels Avail || 9pm EST || Cheap prices || Get geared before SL leveling!! || Gold only", -- [1]
 			"Zuljinbankz-Zul'jin", -- [2]
@@ -836,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Zuljinbankz|r",
 			[51] = 1604704008,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [27]
 		{
 			"|||| BEST DEALS HERE |||| M+15 89K || HEROIC RAID 120K || JAINA MOUNT 335K || VISION 5 MASK 65K || FULL MYTHIC RAID + 4 FUNNELS 3.2M || NZOTH+MOUNT TODAY'S PROMOTION! || PM FOR MORE INFO! -GOLD ONLY-", -- [1]
 			"Hertzs-Zul'jin", -- [2]
@@ -858,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Hertzs|r",
 			[51] = 1604704012,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [28]
 		{
 			"ask a class spec enchant question : no body bats and eye - post a monkey icon and everybody loses their mind", -- [1]
 			"Kittniss-Zul'jin", -- [2]
@@ -880,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kittniss|r",
 			[51] = 1604704047,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [29]
 		{
 			"lol the new Halloween movie is about BLM", -- [1]
 			"Malkavian-Zul'jin", -- [2]
@@ -902,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Malkavian|r",
 			[51] = 1604704049,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [30]
 		{
 			"holy shit", -- [1]
 			"Malkavian-Zul'jin", -- [2]
@@ -924,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Malkavian|r",
 			[51] = 1604704051,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [31]
 		{
 			"LF Tank for KR+7", -- [1]
 			"Jumpy-Zul'jin", -- [2]
@@ -946,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaJumpy|r",
 			[51] = 1604783665,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [32]
 		{
 			"Give it a month to blow over, trump who?", -- [1]
 			"Blessy-Zul'jin", -- [2]
@@ -968,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Blessy|r",
 			[51] = 1604783667,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [33]
 		{
 			"WTS Heroic NYA Personal Loot 100k SUNDAY @7PM EST!  || N'zoth Only 40k! || TIMED M+ 15 Only 80k || We are also recruiting exp boosters to expand our roster! https://discord.gg/mMt4eBUVB5 <Gold Only> ||Torghast Community|| ", -- [1]
 			"Narab-Zul'jin", -- [2]
@@ -990,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNarab|r",
 			[51] = 1604783667,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [34]
 		{
 			"No we had bill already", -- [1]
 			"Inferneux-Zul'jin", -- [2]
@@ -1012,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edInferneux|r",
 			[51] = 1604783669,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [35]
 		{
 			"LOL Steaîth ", -- [1]
 			"Delimaul-Zul'jin", -- [2]
@@ -1034,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Delimaul|r",
 			[51] = 1604783675,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [36]
 		{
 			"Trump did get almost 8 million more votes than last election", -- [1]
 			"Trapsiefly-Zul'jin", -- [2]
@@ -1056,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Trapsiefly|r",
 			[51] = 1604783678,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [37]
 		{
 			"HE THIILL YO PRETHIDENT", -- [1]
 			"Renarouge-Zul'jin", -- [2]
@@ -1078,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Renarouge|r",
 			[51] = 1604783678,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [38]
 		{
 			"We also had trump", -- [1]
 			"Teraku-Zul'jin", -- [2]
@@ -1100,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Teraku|r",
 			[51] = 1604783681,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [39]
 		{
 			"you just had Trump for 4 years what do you mean first pedo", -- [1]
 			"Deladorc-Zul'jin", -- [2]
@@ -1122,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Deladorc|r",
 			[51] = 1604783683,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [40]
 		{
 			"WH?ERE IS Q WWGGWGWGA", -- [1]
 			"Mydg-Zul'jin", -- [2]
@@ -1144,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMydg|r",
 			[51] = 1604783685,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [41]
 		{
 			"Lol ", -- [1]
 			"Resetpull-Zul'jin", -- [2]
@@ -1166,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeResetpull|r",
 			[51] = 1604783689,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [42]
 		{
 			"WTS|cffa335ee|Hitem:92426::::::::1:1449::::1:28:167:::|h[Sealed Tome of the Lost Legion]|h|r Fel Fire Spells For Warlock PTS", -- [1]
 			"Harrybank-Zul'jin", -- [2]
@@ -1188,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaHarrybank|r",
 			[51] = 1604783692,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [43]
 		{
 			"what does truininanashabadepressure even mean", -- [1]
 			"Delimaul-Zul'jin", -- [2]
@@ -1210,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Delimaul|r",
 			[51] = 1604783692,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [44]
 		{
 			"something about those damned second floor ladies department quartermasters", -- [1]
 			"Inferneux-Zul'jin", -- [2]
@@ -1232,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edInferneux|r",
 			[51] = 1604783716,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [45]
 		{
 			"Asking for a friend, I want some but I have no clue", -- [1]
 			"Delimaul-Zul'jin", -- [2]
@@ -1254,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Delimaul|r",
 			[51] = 1604783720,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [46]
 		{
 			"trabagath care is a human right damn it", -- [1]
 			"Steaîth-Zul'jin", -- [2]
@@ -1276,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Steaîth|r",
 			[51] = 1604783720,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [47]
 		{
 			"why do you guys actually defend a literal pedophile by justifying it claiming someone else is one..... so fucked up lol", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1298,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783722,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [48]
 		{
 			"every us pres has been a pedo since lincoln", -- [1]
 			"Undertankker-Zul'jin", -- [2]
@@ -1320,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Undertankker|r",
 			[51] = 1604783728,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [49]
 		{
 			"uwu", -- [1]
 			"Thymass-Zul'jin", -- [2]
@@ -1342,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Thymass|r",
 			[51] = 1604783739,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [50]
 		{
 			"|||| M+15 BUNDLE |||| THREE DUNGEONS WITH ARMOR STACK || 6 TO 9 LOOTS PLUS AN ILVL 130 ON TUESDAY CHEST! || PM FOR INFO! ||GOLD ONLY||", -- [1]
 			"Hertzs-Zul'jin", -- [2]
@@ -1364,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Hertzs|r",
 			[51] = 1604783742,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [51]
 		{
 			"pedos are the deep state", -- [1]
 			"Undertankker-Zul'jin", -- [2]
@@ -1386,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Undertankker|r",
 			[51] = 1604783752,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [52]
 		{
 			"Truly", -- [1]
 			"Mydg-Zul'jin", -- [2]
@@ -1408,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMydg|r",
 			[51] = 1604783756,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [53]
 		{
 			"get in where you fit in i guess. and if 13yr old chicks is the only place you can fit i guess you don't have as big as balls as you claim", -- [1]
 			"Steaîth-Zul'jin", -- [2]
@@ -1430,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Steaîth|r",
 			[51] = 1604783757,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [54]
 		{
 			"show me a president that isn't fucked on a moral level. ", -- [1]
 			"Inferneux-Zul'jin", -- [2]
@@ -1452,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edInferneux|r",
 			[51] = 1604783757,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [55]
 		{
 			"Rich white men fuck kids. ", -- [1]
 			"Renarouge-Zul'jin", -- [2]
@@ -1474,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Renarouge|r",
 			[51] = 1604783761,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [56]
 		{
 			"Trump has been the most presidential pedo ever, except maybe Lincoln, when he's wearing the hat", -- [1]
 			"Deladorc-Zul'jin", -- [2]
@@ -1496,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Deladorc|r",
 			[51] = 1604783771,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [57]
 		{
 			"did the civil war start yet?", -- [1]
 			"Llc-Zul'jin", -- [2]
@@ -1518,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Llc|r",
 			[51] = 1604783771,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [58]
 		{
 			"rich black men like obama fuck trannies like michelle", -- [1]
 			"Steaîth-Zul'jin", -- [2]
@@ -1540,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Steaîth|r",
 			[51] = 1604783777,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [59]
 		{
 			"WTS|cffa335ee|Hitem:92426::::::::1:1449::::1:28:167:::|h[Sealed Tome of the Lost Legion]|h|r Fel Fire Spells For Warlock PTS", -- [1]
 			"Harrybank-Zul'jin", -- [2]
@@ -1562,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaHarrybank|r",
 			[51] = 1604783779,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [60]
 		{
 			"Pedos become priests, not politicians.", -- [1]
 			"Millpool-Zul'jin", -- [2]
@@ -1584,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Millpool|r",
 			[51] = 1604783781,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [61]
 		{
 			"pedos are everywhere u stupid child ", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1606,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783790,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [62]
 		{
 			"they should all be killed", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1628,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783797,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [63]
 		{
 			"pedos are behind the lgbtq agenda", -- [1]
 			"Undertankker-Zul'jin", -- [2]
@@ -1650,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Undertankker|r",
 			[51] = 1604783799,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [64]
 		{
 			"lots of pedo boyscout leaders too", -- [1]
 			"Inferneux-Zul'jin", -- [2]
@@ -1672,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edInferneux|r",
 			[51] = 1604783801,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [65]
 		{
 			"At least he's getting laid, why you hating?", -- [1]
 			"Renarouge-Zul'jin", -- [2]
@@ -1694,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Renarouge|r",
 			[51] = 1604783804,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [66]
 		{
 			"I also can't believe you guys voted against \"Abraham lincoln\"- Biden.", -- [1]
 			"Delimaul-Zul'jin", -- [2]
@@ -1716,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Delimaul|r",
 			[51] = 1604783808,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [67]
 		{
 			"Why do trump supporters latch on to these insane conspiracy theories rather than try and back policies that mean something? Michelle is a tranny? Grow up, let's have real conversations", -- [1]
 			"Deladorc-Zul'jin", -- [2]
@@ -1738,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Deladorc|r",
 			[51] = 1604783829,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [68]
 		{
 			"Um Lincoln was confirmed deepstate", -- [1]
 			"Mydg-Zul'jin", -- [2]
@@ -1760,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMydg|r",
 			[51] = 1604783832,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [69]
 		{
 			"no he was from indiana", -- [1]
 			"Uxie-Zul'jin", -- [2]
@@ -1782,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Uxie|r",
 			[51] = 1604783840,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [70]
 		{
 			"have you seen her hands?", -- [1]
 			"Inferneux-Zul'jin", -- [2]
@@ -1804,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edInferneux|r",
 			[51] = 1604783844,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [71]
 		{
 			"No they're not everywhere, there are a lot but it's not as prevalent as the right or left would have you believe, that it exists is a crime itself, but to baselessly acuse people of things doesn't help anyone.", -- [1]
 			"Trapsiefly-Zul'jin", -- [2]
@@ -1826,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Trapsiefly|r",
 			[51] = 1604783846,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [72]
 		{
 			"On a real note . At least CA didnt vote to be openly racist", -- [1]
 			"Delimaul-Zul'jin", -- [2]
@@ -1848,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Delimaul|r",
 			[51] = 1604783848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [73]
 		{
 			"Voting was rigged", -- [1]
 			"Lemmywinkss-Zul'jin", -- [2]
@@ -1870,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lemmywinkss|r",
 			[51] = 1604783848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [74]
 		{
 			"Trump 2020", -- [1]
 			"Lemmywinkss-Zul'jin", -- [2]
@@ -1892,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lemmywinkss|r",
 			[51] = 1604783852,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [75]
 		{
 			"noone is grown up in trade chat , ur all a bunch of cave dwellers lmao", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1914,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783854,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [76]
 		{
 			"You're just jealous cos u have baby hands", -- [1]
 			"Mydg-Zul'jin", -- [2]
@@ -1936,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMydg|r",
 			[51] = 1604783859,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [77]
 		{
 			"noone to talk to in real life", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1958,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783860,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [78]
 		{
 			"How is warrior in SL?", -- [1]
 			"Snurlax-Zul'jin", -- [2]
@@ -1980,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSnurlax|r",
 			[51] = 1604783862,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [79]
 		{
 			"They don't have any appealing policies or achievements so they have to do what they're doing now. Conspiracies and namecalling. Adorbs.", -- [1]
 			"Renarouge-Zul'jin", -- [2]
@@ -2002,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Renarouge|r",
 			[51] = 1604783862,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [80]
 		{
 			"WTS M15+!!ONLY!!!>>>89K!! (M+ 15-24) Specific KEYS!! >>!! <<! ARMOR STACK 95k!>>|| || WTS Harmode+Mount<<RAID Mythic / Heroic >> || WTS Horrific Vision 0-5 masks guaranteed ||WTS!PVP 2s OR 3s!|| GOLD ONLY/ JAINA Mount>>Huokan Community<<", -- [1]
 			"Krakensales-Zul'jin", -- [2]
@@ -2024,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edKrakensales|r",
 			[51] = 1604929517,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [81]
 		{
 			"Frost mage LF guild for SL Raiding. 9pm starting raid time or later preferred. ", -- [1]
 			"Kaxy-Zul'jin", -- [2]
@@ -2046,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaKaxy|r",
 			[51] = 1604962130,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [82]
 		{
 			"Phoenix Community || WTS Freehold Powerleveling!  10-50 individual level options available. Fastest clears around. Can buy any levels needed! GOLD ONLY", -- [1]
 			"Zachphoenix-Zul'jin", -- [2]
@@ -2068,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cZachphoenix|r",
 			[51] = 1604962145,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [83]
 		{
 			"Meow! <MachineGunKitties> is Meow! Meow meow meow meow meow meow. Meow meow meow meow, meow, meow, meow, Meow meow. We like cats. That is all. Join Meow! PM me to see this message in hooman instead.", -- [1]
 			"Nyqe-Zul'jin", -- [2]
@@ -2090,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nyqe|r",
 			[51] = 1604962184,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [84]
 		{
 			"Frost mage LF guild for SL Raiding. 9pm starting raid time or later preferred. ", -- [1]
 			"Kaxy-Zul'jin", -- [2]
@@ -2112,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaKaxy|r",
 			[51] = 1604962235,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [85]
 		{
 			"WTS N'zoth Heroic Kill for GOLD! We accept gold in ANY realm! 12/12 Mythic Raiders selling |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r", -- [1]
 			"Aurinia-Zul'jin", -- [2]
@@ -2134,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinia|r",
 			[51] = 1604962246,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [86]
 		{
 			"LFM|cffffff00|Hachievement:10754:Player-61-0B470153:0:0:0:-1:0:0:0:0|h[Fruit of All Evil]|h|r, requirement for |cffffff00|Hachievement:11180:Player-61-0B470153:0:0:0:-1:58367:0:0:0|h[Glory of the Legion Raider]|h|r and gives|cff71d5ff|Hspell:193007:0|h[Grove Defiler]|h|r", -- [1]
 			"Tayr-Zul'jin", -- [2]
@@ -2156,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Tayr|r",
 			[51] = 1604962253,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [87]
 		{
 			"Skycoach community will help you for ONE TOKEN Price  with Ny'alotha heroic. Mythic +10, +11,+12,+13,+14,+15 +20 with loottrade and much more! Get your gear today! Please PM", -- [1]
 			"Bestdungg-Zul'jin", -- [2]
@@ -2178,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeBestdungg|r",
 			[51] = 1604962256,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [88]
 		{
 			"WTS N'zoth Heroic Kill for GOLD! We accept gold in ANY realm! 12/12 Mythic Raiders selling |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r", -- [1]
 			"Aurinia-Zul'jin", -- [2]
@@ -2199,6 +1979,226 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cfffe7b09Aurinia|r",
 			[51] = 1604962366,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"i wan't same drug", -- [1]
+			"ßærføøtz-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"ßærføøtz-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			17, -- [11]
+			"Player-61-0887AA90", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97ßærføøtz|r",
+			[51] = 1605071442,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"i want you to look me in the eyes and fart", -- [1]
+			"Madgic-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Madgic-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			18, -- [11]
+			"Player-61-0E11B518", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMadgic|r",
+			[51] = 1605071461,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"i can totally do that", -- [1]
+			"Dinai-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dinai-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			19, -- [11]
+			"Player-61-0DF3934F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Dinai|r",
+			[51] = 1605071479,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"LF guild charter signatures 100g pst", -- [1]
+			"Prófgrizwald-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Prófgrizwald-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			20, -- [11]
+			"Player-61-0704078C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Prófgrizwald|r",
+			[51] = 1605071483,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"whats happening with the lich king new story line????", -- [1]
+			"Zoggloxx-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zoggloxx-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			33, -- [11]
+			"Player-61-0CC4BCD9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edZoggloxx|r",
+			[51] = 1605071505,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"WTS Loot Stack M+ Carry, H/M Ny’alotha || Visions || FH Powerlvling, HM.Mecha Mount || |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r|cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r Before Shadowlands! || GOLD ONLY <3", -- [1]
+			"Surveysaleh-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Surveysaleh-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			34, -- [11]
+			"Player-61-0E0072C5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSurveysaleh|r",
+			[51] = 1605071507,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"<Combat Locked> Is looking for Raiders, M+ players and casuals of all kind for Shadowlands!  All Classes are welcome. Filling second team for heroic and possible backups for mythic. Raid times are tues/thurs 930PM-1230AM EST. MSG for more info!", -- [1]
+			"Bananahair-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bananahair-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			35, -- [11]
+			"Player-61-0CC6526B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBananahair|r",
+			[51] = 1605071510,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"Anyone selling |cffa335ee|Hitem:82453::::::::50:65:::::::|h[Jeweled Onyx Panther]|h|r???", -- [1]
+			"Brewista-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Brewista-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			36, -- [11]
+			"Player-61-0CA42086", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Brewista|r",
+			[51] = 1605071516,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"where the scourge", -- [1]
+			"Deathtoll-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Deathtoll-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			37, -- [11]
+			"Player-61-0DF0B94A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Deathtoll|r",
+			[51] = 1605071523,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"new story line with the scourge??????", -- [1]
+			"Zoggloxx-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zoggloxx-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			40, -- [11]
+			"Player-61-0CC4BCD9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edZoggloxx|r",
+			[51] = 1605071539,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

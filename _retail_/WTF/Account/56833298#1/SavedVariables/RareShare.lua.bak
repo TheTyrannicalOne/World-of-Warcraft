@@ -4,8 +4,8 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["CChannel"] = {
-			["CName"] = "General - Mechagon",
 			["CID"] = 2,
+			["CName"] = "General - Shrine of Two Moons",
 		},
 		["TomTom"] = {
 			["Rares"] = true,
@@ -22,7 +22,7 @@ RareShareDB = {
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1604959082,
-		["ID"] = 152182,
+		["Time"] = 1605048160,
+		["ID"] = 151672,
 	},
 }
