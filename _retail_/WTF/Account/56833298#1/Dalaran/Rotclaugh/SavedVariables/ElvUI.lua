@@ -11,116 +11,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"biden is worse than any candidate aside from hillary", -- [1]
-			"Thoreldjin-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thoreldjin-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			821, -- [11]
-			"Player-3683-0CC6E2A0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Thoreldjin|r",
-			[51] = 1603840477,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"anyone got an extra shirt?", -- [1]
-			"Jahhbless-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jahhbless-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			822, -- [11]
-			"Player-3683-0CBC57F1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeJahhbless|r",
-			[51] = 1603840479,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"Does anyone here do tailoring", -- [1]
-			"Humbleenough-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Humbleenough-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			823, -- [11]
-			"Player-3683-0A3AAA5D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Humbleenough|r",
-			[51] = 1603840479,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"Oh crime bill biden. Black ppl are super predator biden? That Biden?", -- [1]
-			"Loudpackk-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Loudpackk-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			824, -- [11]
-			"Player-3683-0B16A3C2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Loudpackk|r",
-			[51] = 1603840479,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"i mean.... the entire democratic party are giant pedos...", -- [1]
-			"Tzaphqiel-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tzaphqiel-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			825, -- [11]
-			"Player-3683-09373E22", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Tzaphqiel|r",
-			[51] = 1603840485,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
 			"ONYONE DOING THE HEADLESS HOURSEMEN DONGEON", -- [1]
 			"Dandelthren-Dalaran", -- [2]
 			"", -- [3]
@@ -141,7 +31,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Dandelthren|r",
 			[51] = 1603840486,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [1]
 		{
 			"Biden wont pick fights with the TV", -- [1]
 			"Silviasaint-Dalaran", -- [2]
@@ -163,7 +53,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Silviasaint|r",
 			[51] = 1603840491,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [2]
 		{
 			"i heard Biden is going to make all the neckbeards shave", -- [1]
 			"Notodaysatan-Dalaran", -- [2]
@@ -185,7 +75,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNotodaysatan|r",
 			[51] = 1603840494,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [3]
 		{
 			"i think a center right is better than a far right demagogue", -- [1]
 			"Earthrender-Dalaran", -- [2]
@@ -207,7 +97,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEarthrender|r",
 			[51] = 1603840496,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [4]
 		{
 			"what is up with that borat 2 with rudy juliani ", -- [1]
 			"Gearavieve-Dalaran", -- [2]
@@ -229,7 +119,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaGearavieve|r",
 			[51] = 1603840498,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [5]
 		{
 			"praenun that means congress decides with a nominal election", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -251,7 +141,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603840498,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [6]
 		{
 			"biden never said super predator, and he said the crime bill was a mistake", -- [1]
 			"Ellyssia-Dalaran", -- [2]
@@ -273,7 +163,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEllyssia|r",
 			[51] = 1603840500,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [7]
 		{
 			"2020 doesnt matter who wins, bye bye bye baby killers", -- [1]
 			"Talerric-Dalaran", -- [2]
@@ -295,7 +185,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Talerric|r",
 			[51] = 1603840510,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [8]
 		{
 			"Jørach ty", -- [1]
 			"Praenuntius-Dalaran", -- [2]
@@ -317,7 +207,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Praenuntius|r",
 			[51] = 1603840510,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [9]
 		{
 			"Oh well i guess that makes up for it", -- [1]
 			"Loudpackk-Dalaran", -- [2]
@@ -339,7 +229,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Loudpackk|r",
 			[51] = 1603840514,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [10]
 		{
 			"keep living that sheltered life where you think democrats aren't pedos", -- [1]
 			"Tzaphqiel-Dalaran", -- [2]
@@ -361,7 +251,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tzaphqiel|r",
 			[51] = 1603840514,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [11]
 		{
 			"and no, biden is not a pedo, you freakin lunatics", -- [1]
 			"Ellyssia-Dalaran", -- [2]
@@ -383,7 +273,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEllyssia|r",
 			[51] = 1603840514,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [12]
 		{
 			"Trump literally was the spearhead of the birtherism movement, might as well be wearing a klan hood at that point.", -- [1]
 			"Justroot-Dalaran", -- [2]
@@ -405,7 +295,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edJustroot|r",
 			[51] = 1603840516,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [13]
 		{
 			"not-a-criminal biden. yeah that one", -- [1]
 			"Vaxt-Dalaran", -- [2]
@@ -427,7 +317,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Vaxt|r",
 			[51] = 1603840520,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [14]
 		{
 			"whats the lowest ilvl gear u can scrap for titan residuum?", -- [1]
 			"Ðreadz-Dalaran", -- [2]
@@ -449,7 +339,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ðreadz|r",
 			[51] = 1603840524,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [15]
 		{
 			"I think America will be having another Civil War no matter who wins", -- [1]
 			"Taihon-Dalaran", -- [2]
@@ -471,7 +361,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTaihon|r",
 			[51] = 1603840532,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [16]
 		{
 			"i heard Biden will make all trailers into jail cells", -- [1]
 			"Notodaysatan-Dalaran", -- [2]
@@ -493,7 +383,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNotodaysatan|r",
 			[51] = 1603840539,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [17]
 		{
 			"biden was caught touching young girls and tried grouping them on the news while sniffing them", -- [1]
 			"Hunterhawkey-Dalaran", -- [2]
@@ -515,7 +405,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Hunterhawkey|r",
 			[51] = 1603840550,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [18]
 		{
 			"no he didnt you fucking insane clown", -- [1]
 			"Ellyssia-Dalaran", -- [2]
@@ -537,7 +427,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEllyssia|r",
 			[51] = 1603840562,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [19]
 		{
 			"One side has guns, the other wants to give them to people in power. Lets see how that works out", -- [1]
 			"Loudpackk-Dalaran", -- [2]
@@ -559,7 +449,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Loudpackk|r",
 			[51] = 1603840562,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [20]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-734-3683-82440866|h[Guild: Sodality]|h|r is a Mythic Casual guild recruiting for Shadowlands. We raid Tues 8pm-11pm and Sun 5pm-8pm EST. We finished BfA 11/12 M. Looking for DPS! PST if interested.", -- [1]
 			"Clearstrider-Dalaran", -- [2]
@@ -581,7 +471,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cClearstrider|r",
 			[51] = 1603840568,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [21]
 		{
 			"guns dont know party lines dude", -- [1]
 			"Ellyssia-Dalaran", -- [2]
@@ -603,7 +493,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEllyssia|r",
 			[51] = 1603840575,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [22]
 		{
 			"There will be no civil war", -- [1]
 			"Woddershins-Dalaran", -- [2]
@@ -625,7 +515,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Woddershins|r",
 			[51] = 1603840576,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [23]
 		{
 			"god damn LIBERALS", -- [1]
 			"Xevyira-Dalaran", -- [2]
@@ -647,7 +537,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edXevyira|r",
 			[51] = 1603840577,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [24]
 		{
 			"Dont listen Elly Tza is an inbread cow tippin cousin fuckin redneck hick", -- [1]
 			"Vexxlar-Dalaran", -- [2]
@@ -669,7 +559,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Vexxlar|r",
 			[51] = 1603840582,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [25]
 		{
 			"it will really depend on who the military sides with", -- [1]
 			"Taihon-Dalaran", -- [2]
@@ -691,7 +581,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTaihon|r",
 			[51] = 1603840587,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [26]
 		{
 			"i lost 7 guns in a boating accident, also lost the ammo", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -713,7 +603,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603840587,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [27]
 		{
 			"a", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -735,7 +625,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603840588,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [28]
 		{
 			"i heard biden would make red necks turn in all shotguns", -- [1]
 			"Notodaysatan-Dalaran", -- [2]
@@ -757,7 +647,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNotodaysatan|r",
 			[51] = 1603840592,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [29]
 		{
 			"good", -- [1]
 			"Duskstriker-Dalaran", -- [2]
@@ -779,7 +669,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Duskstriker|r",
 			[51] = 1603840599,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [30]
 		{
 			"sounds like a whole lotta venting going on in here, coming off a little creepy. ", -- [1]
 			"Kyrex-Dalaran", -- [2]
@@ -801,7 +691,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kyrex|r",
 			[51] = 1603840610,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [31]
 		{
 			"this smells of BO ", -- [1]
 			"Dankbanana-Dalaran", -- [2]
@@ -823,7 +713,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDankbanana|r",
 			[51] = 1603840612,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [32]
 		{
 			"Nop biden saideveryone should have a shotgun and shoot it off thier front porch. ", -- [1]
 			"Loudpackk-Dalaran", -- [2]
@@ -845,7 +735,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Loudpackk|r",
 			[51] = 1603840613,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [33]
 		{
 			"with the generals go with Trump or Biden?", -- [1]
 			"Taihon-Dalaran", -- [2]
@@ -867,7 +757,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTaihon|r",
 			[51] = 1603840614,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [34]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-111098-3683-60480757|h[Guild: The Mystery Machine]|h|r is opening our roster to active players for shadowlands If you're new to the game or returning a veteran consider if our crew is right for you Scooby Dooby Doo!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -889,7 +779,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1603840615,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [35]
 		{
 			"yeah exactly taihon these fuckin gun loving morons think they stand a chance against any military force is ridiculous", -- [1]
 			"Volatize-Dalaran", -- [2]
@@ -911,7 +801,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Volatize|r",
 			[51] = 1603840616,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [36]
 		{
 			"i lost my keys to my rental car in the ocean once", -- [1]
 			"Gaiandris-Dalaran", -- [2]
@@ -933,7 +823,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Gaiandris|r",
 			[51] = 1603840620,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [37]
 		{
 			"<The Mystery Machine> sends our regards. We're a unique guild teaching our new or returning players more about what it means to move from h to m raiding. We will be a mythic  guild with a cultivated community. Yearning burning for learning? Come see!", -- [1]
 			"Shoogi-Dalaran", -- [2]
@@ -955,7 +845,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoogi|r",
 			[51] = 1603840620,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [38]
 		{
 			"I heard if biden wins he si goona give away little toons to hsi supporters", -- [1]
 			"Guchito-Dalaran", -- [2]
@@ -977,7 +867,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGuchito|r",
 			[51] = 1603840622,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [39]
 		{
 			"go trump go", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -999,7 +889,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1603840623,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [40]
 		{
 			"There will be no civil war", -- [1]
 			"Woddershins-Dalaran", -- [2]
@@ -1021,7 +911,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Woddershins|r",
 			[51] = 1603840625,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [41]
 		{
 			"2020 2024 2028", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -1043,7 +933,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1603840632,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [42]
 		{
 			"Spammers take it away! clear em out lol", -- [1]
 			"Kyrex-Dalaran", -- [2]
@@ -1065,7 +955,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kyrex|r",
 			[51] = 1603840633,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [43]
 		{
 			"Go Trump GO to jail!!", -- [1]
 			"Duskstriker-Dalaran", -- [2]
@@ -1087,7 +977,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Duskstriker|r",
 			[51] = 1603840642,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [44]
 		{
 			"definitely a civil war", -- [1]
 			"Taihon-Dalaran", -- [2]
@@ -1109,7 +999,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTaihon|r",
 			[51] = 1603840644,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [45]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-132573-3683-91314870|h[Guild: Desired Rage]|h|r12/12H Nya Friendly social leveling and raiding guild looking to grow our numbers for Shadowlands. Raid nights (T/TH) M+ (Friday) at 7PM CSTPST Maravox for info.", -- [1]
 			"Marabrand-Dalaran", -- [2]
@@ -1131,7 +1021,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Marabrand|r",
 			[51] = 1603840645,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [46]
 		{
 			"ANAL |cff71d5ff|Hpvptal:757|h[Jurisdiction]|h|r", -- [1]
 			"Holyhandx-Dalaran", -- [2]
@@ -1153,7 +1043,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Holyhandx|r",
 			[51] = 1603840648,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [47]
 		{
 			"get ready to cry in 7 days liberals", -- [1]
 			"Tastykake-Dalaran", -- [2]
@@ -1175,7 +1065,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tastykake|r",
 			[51] = 1603840665,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [48]
 		{
 			"theres not gonna be a civil war lmfao first day of fighting everyones gonna be like \"fuck i cant check-in at this restaurant on facebook to not give away my location? Im outtie\"", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -1197,7 +1087,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603840669,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [49]
 		{
 			"i heard biden would take away all the jarbs", -- [1]
 			"Notodaysatan-Dalaran", -- [2]
@@ -1219,7 +1109,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNotodaysatan|r",
 			[51] = 1603840670,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [50]
 		{
 			"lol", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -1241,7 +1131,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1603840671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [51]
 		{
 			"is there such a thing as an \"uncivil\" war?", -- [1]
 			"Inashesxx-Dalaran", -- [2]
@@ -1263,7 +1153,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeInashesxx|r",
 			[51] = 1603840671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [52]
 		{
 			"i think all politicians should go away...", -- [1]
 			"Tzaphqiel-Dalaran", -- [2]
@@ -1285,7 +1175,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tzaphqiel|r",
 			[51] = 1603840671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [53]
 		{
 			"civil war? ROFL you wont have any guns the pedo will take them away", -- [1]
 			"Talerric-Dalaran", -- [2]
@@ -1307,7 +1197,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Talerric|r",
 			[51] = 1603840672,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [54]
 		{
 			"\"liberal\" is right wing, you idiot", -- [1]
 			"Ellyssia-Dalaran", -- [2]
@@ -1329,7 +1219,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEllyssia|r",
 			[51] = 1603840678,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [55]
 		{
 			"just had another downs syndrome retard trump supporter tell me he can't be racist because he is 1/16ths cherokee", -- [1]
 			"Justroot-Dalaran", -- [2]
@@ -1351,7 +1241,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edJustroot|r",
 			[51] = 1603840679,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [56]
 		{
 			"i think if the supreme court is involved in this election in any capacity, there will be riots that absolutely dwarf what weve seen so far", -- [1]
 			"Volatize-Dalaran", -- [2]
@@ -1373,7 +1263,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Volatize|r",
 			[51] = 1603840679,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [57]
 		{
 			"yeah im gonna love the liberals crying again in 7 days", -- [1]
 			"Loudpackk-Dalaran", -- [2]
@@ -1395,7 +1285,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Loudpackk|r",
 			[51] = 1603840681,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [58]
 		{
 			"liberal is left, conservative is right you mindless twit", -- [1]
 			"Tzaphqiel-Dalaran", -- [2]
@@ -1417,7 +1307,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tzaphqiel|r",
 			[51] = 1603840695,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [59]
 		{
 			"Americans are a particularly vulgar sort", -- [1]
 			"Silviasaint-Dalaran", -- [2]
@@ -1439,7 +1329,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Silviasaint|r",
 			[51] = 1603840700,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [60]
 		{
 			"smelly chat ", -- [1]
 			"Dankbanana-Dalaran", -- [2]
@@ -1461,7 +1351,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDankbanana|r",
 			[51] = 1603840701,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [61]
 		{
 			"so who want to pick it?", -- [1]
 			"Bankrel-Dalaran", -- [2]
@@ -1483,7 +1373,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bankrel|r",
 			[51] = 1603859167,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [62]
 		{
 			"any one got a blingaton for sw ah steps pls", -- [1]
 			"Cromlust-Dalaran", -- [2]
@@ -1505,7 +1395,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cromlust|r",
 			[51] = 1603859274,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [63]
 		{
 			"Any healers wanna queue for bfda wing 1 lfr so i can finish and sleep :))", -- [1]
 			"Vangzi-Dalaran", -- [2]
@@ -1527,7 +1417,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Vangzi|r",
 			[51] = 1603859346,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [64]
 		{
 			"WTS:  Mythic/Heroic Ny'alotha12/12; Mythic+11-20keys Carry;Weekly reward 130ilvl gear ;Guaranteed transmog gear (Dazar'alor).Also do Jaina mount |cffa335ee|Hitem:166705::::::::10:1448:::::::|h[Glacial Tidestorm]|h|r; Pst !", -- [1]
 			"Dopeu-Dalaran", -- [2]
@@ -1549,7 +1439,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Dopeu|r",
 			[51] = 1603859457,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [65]
 		{
 			"who would win in a fight hitler or fat albert?", -- [1]
 			"Gadzaka-Dalaran", -- [2]
@@ -1571,7 +1461,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGadzaka|r",
 			[51] = 1603900261,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [66]
 		{
 			"they're unironically really realistic now", -- [1]
 			"Memeshizzle-Dalaran", -- [2]
@@ -1593,7 +1483,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memeshizzle|r",
 			[51] = 1604007640,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [67]
 		{
 			"look real, feel fake", -- [1]
 			"Aurinna-Dalaran", -- [2]
@@ -1615,7 +1505,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinna|r",
 			[51] = 1604007649,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [68]
 		{
 			"for some you can hardly tell it's a doll with a good photo it's insane", -- [1]
 			"Memeshizzle-Dalaran", -- [2]
@@ -1637,7 +1527,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memeshizzle|r",
 			[51] = 1604007652,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [69]
 		{
 			"jesus crist!", -- [1]
 			"Biufor-Dalaran", -- [2]
@@ -1659,7 +1549,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBiufor|r",
 			[51] = 1604007666,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [70]
 		{
 			"No, there's no jesus here", -- [1]
 			"Jayci-Dalaran", -- [2]
@@ -1681,7 +1571,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcJayci|r",
 			[51] = 1604007687,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [71]
 		{
 			"next step if evolution is no ones married, sits at home hooked to a machine with a sex robot", -- [1]
 			"Apáche-Dalaran", -- [2]
@@ -1703,7 +1593,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Apáche|r",
 			[51] = 1604007693,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [72]
 		{
 			"can a mage port me to iron forge?", -- [1]
 			"Nirvãna-Dalaran", -- [2]
@@ -1725,7 +1615,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Nirvãna|r",
 			[51] = 1604007710,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [73]
 		{
 			"He left when we started talking about porn. He's a good Christian kid ya know", -- [1]
 			"Lysitheia-Dalaran", -- [2]
@@ -1747,7 +1637,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lysitheia|r",
 			[51] = 1604007711,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [74]
 		{
 			"people do that already apache", -- [1]
 			"Aurinna-Dalaran", -- [2]
@@ -1769,7 +1659,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinna|r",
 			[51] = 1604007715,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [75]
 		{
 			"freshly baked tendies and a handjob simultaneously, that's the future", -- [1]
 			"Memeshizzle-Dalaran", -- [2]
@@ -1791,7 +1681,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memeshizzle|r",
 			[51] = 1604007723,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [76]
 		{
 			"Freshly baked tendies sounds amazing", -- [1]
 			"Demonmara-Dalaran", -- [2]
@@ -1813,7 +1703,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Demonmara|r",
 			[51] = 1604007736,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [77]
 		{
 			"Buffalo tendies", -- [1]
 			"Demonmara-Dalaran", -- [2]
@@ -1835,7 +1725,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Demonmara|r",
 			[51] = 1604007738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [78]
 		{
 			"door dash for nuggies, and have dick pump on max", -- [1]
 			"Aurinna-Dalaran", -- [2]
@@ -1857,7 +1747,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinna|r",
 			[51] = 1604007740,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [79]
 		{
 			"It'll get incel genes out the pool so I can dig it.", -- [1]
 			"Lysitheia-Dalaran", -- [2]
@@ -1879,7 +1769,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lysitheia|r",
 			[51] = 1604007750,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [80]
 		{
 			"kinda sad, then a few hundred years after that there will be a \"nostalgia\" phase we're people brave going outside", -- [1]
 			"Apáche-Dalaran", -- [2]
@@ -1901,7 +1791,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Apáche|r",
 			[51] = 1604007757,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [81]
 		{
 			"Is uhh Anduin dead?", -- [1]
 			"Humblewar-Dalaran", -- [2]
@@ -1923,7 +1813,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHumblewar|r",
 			[51] = 1604007974,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [82]
 		{
 			"how hard is it to say \"stop sending me your fetish\"", -- [1]
 			"Kandalla-Dalaran", -- [2]
@@ -1945,7 +1835,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kandalla|r",
 			[51] = 1604007976,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [83]
 		{
 			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rcool MOUNT! Get yours now! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -1967,7 +1857,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604082245,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [84]
 		{
 			"trying to complete achievement \"tides of vengeance\" but stuck....watched youtube video but something is not matching up...any help would be awesome", -- [1]
 			"Siñ-Dalaran", -- [2]
@@ -1989,7 +1879,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSiñ|r",
 			[51] = 1604082300,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [85]
 		{
 			"nov 23rd shadowlands drops", -- [1]
 			"Marketvalue-Dalaran", -- [2]
@@ -2011,7 +1901,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Marketvalue|r",
 			[51] = 1604194245,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [86]
 		{
 			"6pm est", -- [1]
 			"Marketvalue-Dalaran", -- [2]
@@ -2033,7 +1923,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Marketvalue|r",
 			[51] = 1604194246,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [87]
 		{
 			"If you redistribute the funds police and their shit unions get and give that to support and mental health workers, you end up with way better opportunity to get to the route of issues rather than just shooting people who don't follow your commands", -- [1]
 			"Prot-Dalaran", -- [2]
@@ -2055,7 +1945,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Prot|r",
 			[51] = 1604194247,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [88]
 		{
 			"Nov 3'rd Trump wins", -- [1]
 			"Tåssiåh-Dalaran", -- [2]
@@ -2077,7 +1967,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tåssiåh|r",
 			[51] = 1604194251,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [89]
 		{
 			"The moon is flat", -- [1]
 			"Coolranched-Dalaran", -- [2]
@@ -2099,7 +1989,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Coolranched|r",
 			[51] = 1604194255,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [90]
 		{
 			"im just curious how that convictd pimp they put in charge of public safty is going to handle a domestic abuse call?  Seriously, its concerning.", -- [1]
 			"Numinøus-Dalaran", -- [2]
@@ -2121,7 +2011,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNuminøus|r",
 			[51] = 1604194259,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [91]
 		{
 			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rcool MOUNT! Get yours now! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -2143,7 +2033,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604194262,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [92]
 		{
 			"nov 3rd Trump drops and get fucked his ass", -- [1]
 			"Lógic-Dalaran", -- [2]
@@ -2165,7 +2055,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lógic|r",
 			[51] = 1604194262,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [93]
 		{
 			"wts|cffa335ee|Hitem:163573::::::::50:577:::::::|h[Goldenmane's Reins]|h|rCheaper than AH! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -2186,6 +2076,116 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604194265,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"Wts +15 timed keys cheaper than a wow token. Gold ONLY. The KSM mount is still achieveable (A nice bug) thats unobtainable on the 23rd! Add Awaked Mindborer to your collection now! Will trade all gear aswell. Will gear stack if we can!", -- [1]
+			"Kinkyspal-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kinkyspal-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3114, -- [11]
+			"Player-3683-0C15BB81", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Kinkyspal|r",
+			[51] = 1605219868,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"Looking for a buddy to do |cffffff00|Hachievement:6932:Player-3683-0B191C83:0:0:0:-1:536866944:0:0:0|h[Glory of the Pandaria Raider]|h|r", -- [1]
+			"Zukkoh-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zukkoh-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3128, -- [11]
+			"Player-3683-0B191C83", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Zukkoh|r",
+			[51] = 1605219939,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rNice looking MOUNT!Get yours now! pst", -- [1]
+			"Naethoris-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Naethoris-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3129, -- [11]
+			"Player-3683-0BC79A18", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Naethoris|r",
+			[51] = 1605219964,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"Sigh.......SIGH......SIGHHHHHH.....", -- [1]
+			"Nekromantic-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Nekromantic-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3130, -- [11]
+			"Player-3683-0CBCB8A7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Nekromantic|r",
+			[51] = 1605219974,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"indeed", -- [1]
+			"Cheezestickz-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Cheezestickz-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3131, -- [11]
+			"Player-3683-0B44D152", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Cheezestickz|r",
+			[51] = 1605219989,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

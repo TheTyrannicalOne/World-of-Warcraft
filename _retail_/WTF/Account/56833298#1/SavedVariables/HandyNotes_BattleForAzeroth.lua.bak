@@ -2,11 +2,13 @@
 HandyNotes_BattleForAzerothDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

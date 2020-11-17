@@ -10,7 +10,7 @@ dbBFA = {
 		["Shanyt - Argent Dawn"] = {
 			["firstun"] = false,
 		},
-		["Darnastris - Dalaran"] = {
+		["Rotclaugh - Dalaran"] = {
 			["firstun"] = false,
 		},
 		["Varlouris - Dalaran"] = {
@@ -19,9 +19,18 @@ dbBFA = {
 		["Illingrath - Dalaran"] = {
 			["firstun"] = false,
 		},
-		["Rotclaugh - Dalaran"] = {
+		["Darnastris - Dalaran"] = {
 			["firstun"] = false,
 		},
+	},
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 	},
 	["global"] = {
 		["warn01_seen"] = 0,
@@ -29,15 +38,6 @@ dbBFA = {
 		["news"] = {
 		},
 		["warn02_seen"] = 0,
-	},
-	["profileKeys"] = {
-		["Avisar - Dalaran"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Rotclaugh - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -61,22 +61,22 @@ dbBFA = {
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
 				["MAKEITQUICK"] = true,
-				["MAXCHAMP"] = 3,
 				["TROOPALERT"] = true,
+				["MAXCHAMP"] = 3,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
-			["showmenu"] = true,
 			["blacklist"] = {
 				[2077] = false,
 				[1951] = false,
 				[1892] = true,
 				[1938] = false,
-				[2086] = false,
+				[1959] = false,
 				[1953] = false,
 				[1936] = true,
-				[1959] = false,
+				[2086] = false,
 			},
+			["showmenu"] = true,
 		},
 	},
 }

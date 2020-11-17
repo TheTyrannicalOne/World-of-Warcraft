@@ -15,7 +15,7 @@ KalielsTrackerDB = {
 		},
 		["Avisar - Dalaran"] = {
 			["quests"] = {
-				["num"] = 24,
+				["num"] = 25,
 			},
 		},
 		["Thorinbane - Dalaran"] = {
@@ -39,16 +39,14 @@ KalielsTrackerDB = {
 		["Tyranasticus - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Narisaric - Dalaran"] = {
+		["Fantastiburo - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
 		["Tynster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Varlouris - Dalaran"] = {
-			["quests"] = {
-				["num"] = 23,
-			},
+		["Bathal - Argent Dawn"] = {
+			["collapsed"] = true,
 		},
 		["Tyrannithal - Argent Dawn"] = {
 			["collapsed"] = true,
@@ -59,22 +57,24 @@ KalielsTrackerDB = {
 		["Kelvalatar - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
+			["quests"] = {
+				["num"] = 2,
+			},
 			["collapsed"] = true,
 		},
 		["Brewnheimer - Darkspear"] = {
 			["collapsed"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
-			["collapsed"] = true,
+		["Varlouris - Dalaran"] = {
+			["quests"] = {
+				["num"] = 22,
+			},
 		},
 		["Gillbourn - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Okona - Zul'jin"] = {
-			["quests"] = {
-				["num"] = 2,
-			},
+		["Tinkster - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Illingrath - Dalaran"] = {
@@ -85,14 +85,12 @@ KalielsTrackerDB = {
 		["Sinh - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shanyt - Argent Dawn"] = {
-			["quests"] = {
-				["num"] = 15,
-			},
+		["Shathiel - Darkspear"] = {
+			["collapsed"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 			["quests"] = {
-				["num"] = 26,
+				["num"] = 12,
 			},
 		},
 		["Jingojaggot - Zul'jin"] = {
@@ -101,29 +99,31 @@ KalielsTrackerDB = {
 		["Fantastiburo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Darnastris - Dalaran"] = {
 			["quests"] = {
-				["num"] = 25,
+				["num"] = 22,
 			},
 		},
 		["Rotclaugh - Dalaran"] = {
 			["quests"] = {
-				["num"] = 21,
+				["num"] = 22,
 			},
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Zulbathal - Zul'jin"] = {
 			["quests"] = {
-				["num"] = 12,
+				["num"] = 18,
 			},
 		},
-		["Shathiel - Darkspear"] = {
-			["collapsed"] = true,
+		["Shanyt - Argent Dawn"] = {
+			["quests"] = {
+				["num"] = 17,
+			},
 		},
 		["Beeronimo - Dalaran"] = {
 			["collapsed"] = true,
@@ -131,16 +131,12 @@ KalielsTrackerDB = {
 		["Migimong - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Bathal - Argent Dawn"] = {
+		["Shimzo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Fantastiburo - Argent Dawn"] = {
+		["Narisaric - Dalaran"] = {
 			["collapsed"] = true,
 		},
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "4.1.0",
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",
@@ -156,45 +152,49 @@ KalielsTrackerDB = {
 		["Ruffinton - Dalaran"] = "Default",
 		["Malivant - Dalaran"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
-		["Narisaric - Dalaran"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
+		["Serbitechna - Darkspear"] = "Default",
 		["Claugh - Runetotem"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
-		["Migimong - Runetotem"] = "Default",
+		["Dialdaas - Darkspear"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Vancard - Zul'jin"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
 		["Panboozled - Runetotem"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Brewnheimer - Darkspear"] = "Default",
 		["Jingojaggot - Zul'jin"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Tynster - Dalaran"] = "Default",
-		["Sinh - Dalaran"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
+		["Sinh - Dalaran"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Tynster - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
-		["Dialdaas - Darkspear"] = "Default",
-		["Serbitechna - Darkspear"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
+		["Migimong - Runetotem"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Narisaric - Dalaran"] = "Default",
+	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "4.2.4",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -202,8 +202,8 @@ KalielsTrackerDB = {
 			["yOffset"] = 0,
 			["anchorPoint"] = "TOPLEFT",
 			["addonTomTom"] = true,
-			["addonMasque"] = true,
 			["addonPetTracker"] = true,
+			["addonMasque"] = true,
 		},
 	},
 }

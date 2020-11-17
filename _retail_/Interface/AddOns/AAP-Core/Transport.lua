@@ -445,7 +445,7 @@ function AAP.FP.GetCustomZone()
 	if (zenr == 0 and AAP.Level > 49) then
 		AAP.ProgressText = "Auto Path"
 		AAP.ProgressShown = 0
-		if (C_QuestLog.IsQuestFlaggedCompleted(58086) == false and (C_QuestLog.IsOnQuest(61874) == true or C_QuestLog.IsQuestFlaggedCompleted(61874) == true)) then
+		if (C_QuestLog.IsQuestFlaggedCompleted(58086) == false and (C_QuestLog.IsOnQuest(61874) == true or C_QuestLog.IsQuestFlaggedCompleted(61874) == true or C_QuestLog.IsOnQuest(59751) or C_QuestLog.IsQuestFlaggedCompleted(59751) == true)) then
 			if (C_QuestLog.IsQuestFlaggedCompleted(59770) == false) then
 				AAP.ProgressShown = 1
 				return AAP.QuestStepListListingZone["Z-00-TheMaw-Story"], "1648-Z0-TheMaw-Story"

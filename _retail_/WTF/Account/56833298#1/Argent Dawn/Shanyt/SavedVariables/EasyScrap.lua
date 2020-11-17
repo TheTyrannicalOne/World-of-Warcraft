@@ -1,6 +1,5 @@
 
 EasyScrap_IgnoreList = {
-	["addonVersion"] = 30,
 	[169489] = {
 		["isAzeriteArmor"] = false,
 		[385] = {
@@ -16,6 +15,37 @@ EasyScrap_IgnoreList = {
 				{
 					"6288", -- [1]
 					"6300", -- [2]
+				}, -- [1]
+			},
+		},
+	},
+	[172747] = {
+		["isAzeriteArmor"] = false,
+		[95] = {
+			["Corrupted Gladiator's Pummeler"] = {
+				{
+					"6387", -- [1]
+					"6388", -- [2]
+					"1507", -- [3]
+					"4786", -- [4]
+					"1", -- [5]
+					"28", -- [6]
+					"802", -- [7]
+				}, -- [1]
+			},
+		},
+	},
+	["addonVersion"] = 30,
+	[159665] = {
+		["isAzeriteArmor"] = false,
+		[85] = {
+			["Targe of the Ancient Warder"] = {
+				{
+					"4779", -- [1]
+					"6516", -- [2]
+					"6513", -- [3]
+					"1498", -- [4]
+					"4786", -- [5]
 				}, -- [1]
 			},
 		},

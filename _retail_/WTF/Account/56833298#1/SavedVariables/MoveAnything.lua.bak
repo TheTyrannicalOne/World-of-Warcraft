@@ -27,11 +27,20 @@ MADB = {
 				},
 				["ExtraAbilityContainer"] = {
 					["orgPos"] = {
-						"TOP", -- [1]
-						"MainMenuBar", -- [2]
-						"TOP", -- [3]
-						0, -- [4]
-						180, -- [5]
+						{
+							"CENTER", -- [1]
+							"UIParent", -- [2]
+							"CENTER", -- [3]
+							0, -- [4]
+							0, -- [5]
+						}, -- [1]
+						{
+							"BOTTOM", -- [1]
+							"UIParent", -- [2]
+							"BOTTOM", -- [3]
+							0, -- [4]
+							110, -- [5]
+						}, -- [2]
 					},
 					["name"] = "ExtraAbilityContainer",
 					["pos"] = {
@@ -62,8 +71,8 @@ MADB = {
 			},
 		},
 	},
-	["frameListRows"] = 18,
-	["noBags"] = false,
-	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["noBags"] = false,
+	["frameListRows"] = 18,
 }

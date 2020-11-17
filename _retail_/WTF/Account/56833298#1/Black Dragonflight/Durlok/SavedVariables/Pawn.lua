@@ -21,9 +21,9 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 122382,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122382::::::::50:104:::1:5805::::|h[Preened Ironfeather Breastplate]|h|r",
+			["ID"] = 183537,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183537::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Tunic]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 183668,
@@ -31,24 +31,24 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:183668::::::::50:104:::2:1482:4786:1:28:1401:::|h[Razor-Barbed Leather Belt]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122255,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122255::::::::50:104:::1:5805::::|h[Preened Wildfeather Leggings]|h|r",
+			["ID"] = 183540,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183540::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Leggings]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 155245,
-			["Level"] = 53,
-			["Link"] = "|cff1eff00|Hitem:155245::::::::50:104::11:1:4790:1:9:47:::|h[Jambani Footpads]|h|r",
+			["ID"] = 183581,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183581::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Boots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 158415,
-			["Level"] = 54,
-			["Link"] = "|cff1eff00|Hitem:158415::::::::50:104::11:1:4787:1:9:47:::|h[Jambani Wristwraps]|h|r",
+			["ID"] = 183544,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183544::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Wriststraps]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 159337,
-			["Level"] = 55,
-			["Link"] = "|cff0070dd|Hitem:159337::::::::50:104::19:1:4776:1:9:48:::|h[Grips of Electrified Defense]|h|r",
+			["ID"] = 183580,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183580::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Grips]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 143901,
@@ -70,9 +70,9 @@ PawnOptions = {
 		}, -- [13]
 		nil, -- [14]
 		{
-			["ID"] = 122261,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::50:104:::1:5805::::|h[Inherited Cape of the Black Baron]|h|r",
+			["ID"] = 183553,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183553::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 165613,

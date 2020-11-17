@@ -5,9 +5,9 @@ PawnOptions = {
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 122246,
-			["Level"] = 93,
-			["Link"] = "|cff00ccff|Hitem:122246::::::::75:263:::1:5805:::|h[Tarnished Raging Berserker's Helm]|h|r",
+			["ID"] = 183561,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183561::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Helmet]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122668,
@@ -15,9 +15,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122668::::::::75:263:::1:5805:::|h[Eternal Will of the Martyr]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122374,
-			["Level"] = 93,
-			["Link"] = "|cff00ccff|Hitem:122374::::::::75:263:::1:5805:::|h[Prized Beastmaster's Mantle]|h|r",
+			["ID"] = 183560,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183560::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Shoulderguards]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -41,9 +41,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:36068::::::::72:263:512:28:2:1708:3840:66:::|h[Daggercap Boots of the Aurora]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 37458,
-			["Level"] = 85,
-			["Link"] = "|cff1eff00|Hitem:37458::::::::73:263:512:11:1:3685:73:::|h[Wristguards of Rocky Horror]|h|r",
+			["ID"] = 183533,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183533::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Wristclamps]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 37439,
@@ -80,16 +80,16 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122261::::::::75:263:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 122385,
-			["Level"] = 93,
+			["ID"] = 165625,
+			["Level"] = 115,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff00ccff|Hitem:122385::::::::75:263:::1:5805:::|h[Venerable Mass of McGowan]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165625::::::::50:263::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Warhammer]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 122385,
-			["Level"] = 91,
+			["Level"] = 93,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff00ccff|Hitem:122385::::::::74:263:::1:5805:::|h[Venerable Mass of McGowan]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122385::::::::75:263:::1:5805:::|h[Venerable Mass of McGowan]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

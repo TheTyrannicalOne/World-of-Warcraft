@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0405,
-	["LastPlayerFullName"] = "Illingrath-Dalaran",
-	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122249,
@@ -21,14 +19,14 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 122382,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122382::::::::50:581:::1:5805::::|h[Preened Ironfeather Breastplate]|h|r",
+			["ID"] = 183526,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183526::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Tunic]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 152756,
-			["Level"] = 60,
-			["Link"] = "|cffa335ee|Hitem:152756::::::::50:581:::6:1712:1808:3629:1472:5855:3336::::|h[Arinor Keeper's Belt of the Harmonious]|h|r",
+			["ID"] = 173815,
+			["Level"] = 76,
+			["Link"] = "|cff0070dd|Hitem:173815::::::::50:581::14:4:6412:6515:1470:4785::::|h[Girdle of the Insatiable Maw]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 173442,
@@ -41,14 +39,14 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:158241::::::::50:581::11:1:4790:1:9:49:::|h[Freebooter Striders]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 158279,
-			["Level"] = 56,
-			["Link"] = "|cff1eff00|Hitem:158279::::::::50:581::11:1:4787:1:9:48:::|h[Freebooter Bindings]|h|r",
+			["ID"] = 183534,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183534::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Wriststraps]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 155100,
-			["Level"] = 54,
-			["Link"] = "|cff1eff00|Hitem:155100::::::::50:581::11:1:4787:1:9:47:::|h[Banisher Gloves]|h|r",
+			["ID"] = 183528,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183528::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Grips]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 143903,
@@ -63,22 +61,27 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:143903::::::::50:581:::1:6423:2:9:50:28:2063:::|h[The Horseman's Ring]|h|r",
 		}, -- [12]
 		{
+			["ID"] = 183650,
+			["Level"] = 110,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cffa335ee|Hitem:183650::::::::50:581:::2:1482:4786:1:28:1401:::|h[Miniscule Abomination in a Jar]|h|r",
+		}, -- [13]
+		{
 			["ID"] = 122361,
 			["Level"] = 58,
-			["AlsoFitsIn"] = 14,
+			["AlsoFitsIn"] = 13,
 			["Link"] = "|cff00ccff|Hitem:122361::::::::50:581:::1:5805::::|h[Swift Hand of Justice]|h|r",
-		}, -- [13]
-		nil, -- [14]
+		}, -- [14]
 		{
-			["ID"] = 166770,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:166770::::::::50:581:::1:5805::::|h[Banded Gilnean Cloak]|h|r",
+			["ID"] = 183549,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183549::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 117356,
-			["Level"] = 82,
+			["ID"] = 165635,
+			["Level"] = 115,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cffa335ee|Hitem:117356::::::::50:581::11:1:6423:2:28:2063:9:50:::|h[The Horseman's Sinister Slicer]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165635::::::::50:581::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Moonglaive]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 117356,
@@ -87,6 +90,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:117356::::::::50:581::11:1:6423:2:9:50:28:2063:::|h[The Horseman's Sinister Slicer]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Illingrath-Dalaran",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128832] = {
 			["Relics"] = {
@@ -100,7 +106,6 @@ PawnOptions = {
 			["Name"] = "The Aldrachi Warblades",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEMONHUNTER",

@@ -5,9 +5,9 @@ PawnOptions = {
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 122250,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122250::::::::49:64:::1:5805::::|h[Tattered Dreadmist Mask]|h|r",
+			["ID"] = 183546,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183546::::::::50:64::14::1:28:1401:::|h[Argent Conscript's Circlet]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122664,
@@ -15,9 +15,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122664::::::::49:64:::1:5805::::|h[Eternal Horizon Choker]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122360,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122360::::::::49:64:::1:5805::::|h[Tattered Dreadmist Mantle]|h|r",
+			["ID"] = 183545,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183545::::::::50:64::14::1:28:1401:::|h[Argent Conscript's Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -26,35 +26,35 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122384::::::::49:64:::1:5805::::|h[Tattered Dreadmist Robe]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 158690,
-			["Level"] = 56,
-			["Link"] = "|cff1eff00|Hitem:158690::::::::48:64::11:1:3631:2:28:188:9:48:::|h[Tidespeaker Cord]|h|r",
+			["ID"] = 152772,
+			["Level"] = 60,
+			["Link"] = "|cffa335ee|Hitem:152772::::::::50:64:::5:1699:3629:1472:5855:3336::::|h[Azurelight Sage's Sash of the Feverflare]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122256,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122256::::::::49:64:::1:5805::::|h[Tattered Dreadmist Leggings]|h|r",
+			["ID"] = 183529,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183529::::::::50:64::14::1:28:1401:::|h[Argent Conscript's Leggings]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 158686,
-			["Level"] = 58,
-			["Link"] = "|cff1eff00|Hitem:158686::::::::49:64::11:1:4790:2:28:188:9:49:::|h[Tidespeaker Slippers]|h|r",
+			["ID"] = 173495,
+			["Level"] = 76,
+			["Link"] = "|cff0070dd|Hitem:173495::::::::50:64::14:4:6412:6515:1470:4785::::|h[Vile Manipulator's Soles]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 158699,
-			["Level"] = 52,
-			["Link"] = "|cff1eff00|Hitem:158699::::::::46:64::11:1:4793:2:28:188:9:46:::|h[Tidespeaker Bindings]|h|r",
+			["ID"] = 36042,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:36042::::::::50:64:::2:6654:1706:2:28:1401:9:50:::|h[Condor Bindings of the Aurora]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 121160,
-			["Level"] = 45,
-			["Link"] = "|cff1eff00|Hitem:121160::::::::43:64:::2:1812:1683:1:9:41:::|h[Hrydshal Handwraps of the Peerless]|h|r",
+			["ID"] = 36038,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:36038::::::::50:64:::2:6654:1709:2:28:1401:9:50:::|h[Condor Gloves of the Aurora]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 122529,
-			["Level"] = 58,
+			["ID"] = 183659,
+			["Level"] = 110,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::49:64:::1:5805::::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:183659::::::::50:64:::2:1482:4786:1:28:1401:::|h[Annhylde's Band]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128169,
@@ -80,9 +80,10 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122262::::::::49:64:::1:5805::::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 122353,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122353::::::::49:64:::1:5805::::|h[Dignified Headmaster's Charge]|h|r",
+			["ID"] = 165629,
+			["Level"] = 115,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cffa335ee|Hitem:165629::::::::50:64::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Spellblade]|h|r",
 		}, -- [16]
 	},
 	["LastKeybindingsSet"] = 1,

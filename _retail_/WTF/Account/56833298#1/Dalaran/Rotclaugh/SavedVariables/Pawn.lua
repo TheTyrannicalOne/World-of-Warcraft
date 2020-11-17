@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0404,
+	["LastVersion"] = 2.0405,
 	["LastPlayerFullName"] = "Rotclaugh-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

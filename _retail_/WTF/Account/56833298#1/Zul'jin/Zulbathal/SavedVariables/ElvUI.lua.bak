@@ -4,1565 +4,27 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/cancelform", -- [1]
-		"/p weird", -- [2]
-		"/allthethings", -- [3]
-		"/click ExtraActionButton1", -- [4]
-		"/p cant it says an invite pending", -- [5]
-		"/canimogit", -- [6]
-		"/wave", -- [7]
-		"/reload", -- [8]
-		"/dance", -- [9]
-		"/reloadui", -- [10]
-		"/omnicc", -- [11]
-		"/wAVE", -- [12]
-		"/skada hide", -- [13]
-		"/omen", -- [14]
-		"/click extraaddonbutton1", -- [15]
-		"/fishingbuddy", -- [16]
-		"/opie", -- [17]
-		"/skada toggle", -- [18]
+		"/reloadui", -- [2]
+		"/wave", -- [3]
+		"/invite melene-blackhand", -- [4]
+		"/skada hide", -- [5]
+		"/p cant it says an invite pending", -- [6]
+		"/reload", -- [7]
+		"/click extraaddonbutton1", -- [8]
+		"/click ExtraActionButton1", -- [9]
+		"/skada toggle", -- [10]
+		"/invite melene-bladefist", -- [11]
+		"/omnicc", -- [12]
+		"/dance", -- [13]
+		"/wAVE", -- [14]
+		"/allthethings", -- [15]
+		"/p weird", -- [16]
+		"/fishingbuddy", -- [17]
+		"/opie", -- [18]
+		"/omen", -- [19]
+		"/canimogit", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"larper civil war begins", -- [1]
-			"Elmocoo-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Elmocoo-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			773, -- [11]
-			"Player-61-097B88DA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Elmocoo|r",
-			[51] = 1604703364,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"Hai! <We Win These> is a small guild recruiting for Shadowlands! We are looking to fill our ranks for raiding, mythic+, and PvP.  PM for more info. Need healers, will take all.", -- [1]
-			"Büññÿ-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Büññÿ-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			774, -- [11]
-			"Player-61-0DE7BA1D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edBüññÿ|r",
-			[51] = 1604703366,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"Wts m + 15 keys only 89k> <m + 15 armorstack 95k <>specific keys 105k > <<<Jaina Mount> Ask me about the offers I have for you for Multiple Runs<< huokan community >>  ", -- [1]
-			"Belszu-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Belszu-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			775, -- [11]
-			"Player-61-0E016CF2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBelszu|r",
-			[51] = 1604703375,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"wts|cffa335ee|Hitem:90655::::::::12:269:::::::|h[Riendas del dragón nimbo rubí tronador]|h|r15k", -- [1]
-			"Crunchyrol-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Crunchyrol-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			776, -- [11]
-			"Player-61-0DF3FDE5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Crunchyrol|r",
-			[51] = 1604703378,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"|cffffffff|Hitem:128768::::::::50:64:::::::|h[Candy Cane]|h|r|cffffffff|Hitem:21254::::::::50:64:::::::|h[Winter Veil Cookie]|h|r mhmmmm", -- [1]
-			"Murmer-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Murmer-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			777, -- [11]
-			"Player-61-0B893E75", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaMurmer|r",
-			[51] = 1604703381,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"<<Phoenix Community>> || WTS  Mythic & Heroic Ny'alotha Full clear || N'Zoth Spams || Also Selling M+ carries, Islands, FH Leveling,  Jaina! GOLD ONLY  ****Also taking Pre-Orders for Castle Nathria in SL!", -- [1]
-			"Riftsale-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Riftsale-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			778, -- [11]
-			"Player-61-0E0E4018", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Riftsale|r",
-			[51] = 1604703451,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"Selling Jaina mount TONIGHT! Gold Only. Friendly and quick guild run. Pst for more info!", -- [1]
-			"Retrodk-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Retrodk-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			779, -- [11]
-			"Player-61-0DA94121", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Retrodk|r",
-			[51] = 1604703491,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			".::Spartan Boosting::. WTS Heroic Ny'alotha - Tonight - Funnels Avail || 9pm EST || Cheap prices || Get geared before SL leveling!! || Gold only", -- [1]
-			"Zuljinbankz-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zuljinbankz-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			780, -- [11]
-			"Player-61-0DFD0F96", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Zuljinbankz|r",
-			[51] = 1604703510,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"someone post that big monkee face again", -- [1]
-			"Praiiseallah-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Praiiseallah-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			781, -- [11]
-			"Player-61-0DFBAA17", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Praiiseallah|r",
-			[51] = 1604703577,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"wts|cffa335ee|Hitem:90655::::::::12:269:::::::|h[Riendas del dragón nimbo rubí tronador]|h|r15k", -- [1]
-			"Crunchyrol-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Crunchyrol-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			782, -- [11]
-			"Player-61-0DF3FDE5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Crunchyrol|r",
-			[51] = 1604703592,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"yo can someone post that huge monkee face again", -- [1]
-			"Praiiseallah-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Praiiseallah-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			783, -- [11]
-			"Player-61-0DFBAA17", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Praiiseallah|r",
-			[51] = 1604703614,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"<<Phoenix Community>> || WTS  Mythic & Heroic Ny'alotha Full clear || N'Zoth Spams || Also Selling M+ carries, Islands, FH Leveling,  Jaina! GOLD ONLY  ****Also taking Pre-Orders for Castle Nathria in SL!", -- [1]
-			"Riftsale-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Riftsale-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			784, -- [11]
-			"Player-61-0E0E4018", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Riftsale|r",
-			[51] = 1604703634,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"PREORDERING FUCKING RAID CLEARS?! HOLY SHIT MY SIDES", -- [1]
-			"Shahde-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shahde-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			785, -- [11]
-			"Player-61-0A684957", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edShahde|r",
-			[51] = 1604703655,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"hahahahahahahaha", -- [1]
-			"Krilko-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Krilko-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			786, -- [11]
-			"Player-61-0E043A46", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcKrilko|r",
-			[51] = 1604703669,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"Selling Jaina mount TONIGHT! Gold Only. Friendly and quick guild run. Pst for more info!", -- [1]
-			"Retrodk-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Retrodk-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			787, -- [11]
-			"Player-61-0DA94121", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Retrodk|r",
-			[51] = 1604703680,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"LFM M JAINA PST FOR INV", -- [1]
-			"Faepoa-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Faepoa-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			788, -- [11]
-			"Player-61-0CBF9182", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcFaepoa|r",
-			[51] = 1604703682,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"SOMEONE POST THAT BIG MONKEE FACE", -- [1]
-			"Praiiseallah-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Praiiseallah-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			789, -- [11]
-			"Player-61-0DFBAA17", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Praiiseallah|r",
-			[51] = 1604703701,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"guys let me sell content I haven't achieved yet. Preorder SL glad season 1!!!", -- [1]
-			"Krilko-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Krilko-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			790, -- [11]
-			"Player-61-0E043A46", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcKrilko|r",
-			[51] = 1604703705,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"LFG for NZGOTH Heroic klll I can buy", -- [1]
-			"Klaww-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Klaww-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			791, -- [11]
-			"Player-61-0CA122E0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcKlaww|r",
-			[51] = 1604703724,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"GOD KING TRUMP WILLL PREVAIL IN T HE COURTS. AMY CONEY BARRET, AMERICA'S' SWEETHEART WILL COME THROUGH FOR TRUMP!", -- [1]
-			"Xhandalari-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Xhandalari-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			792, -- [11]
-			"Player-61-07A77CBC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Xhandalari|r",
-			[51] = 1604703757,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"you are insane", -- [1]
-			"Elyie-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Elyie-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			793, -- [11]
-			"Player-61-0E095E4E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Elyie|r",
-			[51] = 1604703777,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"wts|cffa335ee|Hitem:90655::::::::12:269:::::::|h[Riendas del dragón nimbo rubí tronador]|h|r15k", -- [1]
-			"Crunchyrol-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Crunchyrol-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			794, -- [11]
-			"Player-61-0DF3FDE5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Crunchyrol|r",
-			[51] = 1604703792,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"lol it's not going to get to the supreme court.... has it even gotten into any of the lower courts? Because from what i heard they keep rejecting his lack of a case", -- [1]
-			"Krilko-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Krilko-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			795, -- [11]
-			"Player-61-0E043A46", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcKrilko|r",
-			[51] = 1604703793,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"|cffffd100|HclubFinder:ClubFinder-1-82044-61-46426919|h[Guild: Holistic]|h|r An adult,casual/social/no pressure Guild, looking to add to our family and expand our M+ and weekend raid teams! All Welcome!", -- [1]
-			"Icabodcrane-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Icabodcrane-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			796, -- [11]
-			"Player-61-0A13954A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaIcabodcrane|r",
-			[51] = 1604703802,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"god king trump? you mean GOD KING SKOVAALD. WHO HAS CLAIM TO THE AEGIS", -- [1]
-			"Rathbubbles-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Rathbubbles-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			797, -- [11]
-			"Player-61-0B878F0B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeRathbubbles|r",
-			[51] = 1604703807,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"<Reality Check> is recruiting for heroic raiding & M+ in Shadowlands! Our raid times are Sat 7-10p/Sun 6-8p. We are recruiting active players of all roles to diversify the guild!  Casuals&Pvpers are also welcome! 21+ only PST for info/invite ", -- [1]
-			"Alkiir-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Alkiir-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			798, -- [11]
-			"Player-61-0B37C820", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeAlkiir|r",
-			[51] = 1604703811,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"NO SKOVALD, THESE HEROES HAVE CLAIMED THE AEGIS, AS IS THEIR RIGHT", -- [1]
-			"Shahde-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shahde-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			799, -- [11]
-			"Player-61-0A684957", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edShahde|r",
-			[51] = 1604703825,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"is crow's nest still bis enchant for bm hunter wep?", -- [1]
-			"Kittniss-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kittniss-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			800, -- [11]
-			"Player-61-08A8EEE6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Kittniss|r",
-			[51] = 1604703826,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"Selling Jaina mount TONIGHT! Gold Only. Friendly and quick guild run. Pst for more info!", -- [1]
-			"Retrodk-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Retrodk-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			801, -- [11]
-			"Player-61-0DA94121", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Retrodk|r",
-			[51] = 1604703855,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			".::Spartan Boosting::. WTS Heroic Ny'alotha - Tonight - Funnels Avail || 9pm EST || Cheap prices || Get geared before SL leveling!! || Gold only", -- [1]
-			"Zuljinbankz-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zuljinbankz-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			802, -- [11]
-			"Player-61-0DFD0F96", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Zuljinbankz|r",
-			[51] = 1604703857,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"WTS|cffa335ee|Hitem:92426::::::::1:1449::::1:28:167:::|h[Sealed Tome of the Lost Legion]|h|r Fel Fire Spells For Warlock PTS", -- [1]
-			"Pänwshop-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Pänwshop-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			803, -- [11]
-			"Player-61-0DF491E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcPänwshop|r",
-			[51] = 1604703858,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
-		{
-			"|cff0070dd|Hitem:158090:5955:::::::50:253::27:5:4803:6516:6515:1494:4785::::|h[Ironcrest Longrifle]|h|r", -- [1]
-			"Kittniss-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kittniss-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			804, -- [11]
-			"Player-61-08A8EEE6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Kittniss|r",
-			[51] = 1604703878,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
-		{
-			"lfm m jaina pst for inv", -- [1]
-			"Faepoa-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Faepoa-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			805, -- [11]
-			"Player-61-0CBF9182", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcFaepoa|r",
-			[51] = 1604703884,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"FREE M+ 15-20 Carries! Come and hang out and get your weekly key done. Tune in at twitch.tv/pikacali and type !carry (^.^)", -- [1]
-			"Beautiesqt-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Beautiesqt-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			806, -- [11]
-			"Player-61-0DE3CEAA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBeautiesqt|r",
-			[51] = 1604703919,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"Wts m + 15 keys only 89k> <m + 15 armorstack 95k <>specific keys 105k > <<<Jaina Mount> Ask me about the offers I have for you for Multiple Runs<< huokan community >>  ", -- [1]
-			"Belszu-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Belszu-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			807, -- [11]
-			"Player-61-0E016CF2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBelszu|r",
-			[51] = 1604703951,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"Selling Jaina mount TONIGHT! Gold Only. Friendly and quick guild run. Pst for more info!", -- [1]
-			"Retrodk-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Retrodk-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			842, -- [11]
-			"Player-61-0DA94121", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Retrodk|r",
-			[51] = 1604703996,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			".::Spartan Boosting::. WTS Heroic Ny'alotha - Tonight - Funnels Avail || 9pm EST || Cheap prices || Get geared before SL leveling!! || Gold only", -- [1]
-			"Zuljinbankz-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zuljinbankz-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			843, -- [11]
-			"Player-61-0DFD0F96", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Zuljinbankz|r",
-			[51] = 1604704008,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"|||| BEST DEALS HERE |||| M+15 89K || HEROIC RAID 120K || JAINA MOUNT 335K || VISION 5 MASK 65K || FULL MYTHIC RAID + 4 FUNNELS 3.2M || NZOTH+MOUNT TODAY'S PROMOTION! || PM FOR MORE INFO! -GOLD ONLY-", -- [1]
-			"Hertzs-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hertzs-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			844, -- [11]
-			"Player-61-0DFD6957", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Hertzs|r",
-			[51] = 1604704012,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"ask a class spec enchant question : no body bats and eye - post a monkey icon and everybody loses their mind", -- [1]
-			"Kittniss-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kittniss-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			845, -- [11]
-			"Player-61-08A8EEE6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Kittniss|r",
-			[51] = 1604704047,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"lol the new Halloween movie is about BLM", -- [1]
-			"Malkavian-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Malkavian-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			846, -- [11]
-			"Player-61-0C4FFC6B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Malkavian|r",
-			[51] = 1604704049,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"holy shit", -- [1]
-			"Malkavian-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Malkavian-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			847, -- [11]
-			"Player-61-0C4FFC6B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Malkavian|r",
-			[51] = 1604704051,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"LF Tank for KR+7", -- [1]
-			"Jumpy-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jumpy-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			254, -- [11]
-			"Player-61-0DF37CF3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaJumpy|r",
-			[51] = 1604783665,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"Give it a month to blow over, trump who?", -- [1]
-			"Blessy-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Blessy-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			257, -- [11]
-			"Player-61-0C97E54C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Blessy|r",
-			[51] = 1604783667,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
-		{
-			"WTS Heroic NYA Personal Loot 100k SUNDAY @7PM EST!  || N'zoth Only 40k! || TIMED M+ 15 Only 80k || We are also recruiting exp boosters to expand our roster! https://discord.gg/mMt4eBUVB5 <Gold Only> ||Torghast Community|| ", -- [1]
-			"Narab-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Narab-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			258, -- [11]
-			"Player-61-06D40856", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cNarab|r",
-			[51] = 1604783667,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
-		{
-			"No we had bill already", -- [1]
-			"Inferneux-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Inferneux-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			260, -- [11]
-			"Player-61-0BE9BE57", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edInferneux|r",
-			[51] = 1604783669,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
-		{
-			"LOL Steaîth ", -- [1]
-			"Delimaul-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Delimaul-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			269, -- [11]
-			"Player-61-07090670", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Delimaul|r",
-			[51] = 1604783675,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
-		{
-			"Trump did get almost 8 million more votes than last election", -- [1]
-			"Trapsiefly-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Trapsiefly-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			274, -- [11]
-			"Player-61-098E9E50", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Trapsiefly|r",
-			[51] = 1604783678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
-		{
-			"HE THIILL YO PRETHIDENT", -- [1]
-			"Renarouge-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Renarouge-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			276, -- [11]
-			"Player-61-0C93536B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Renarouge|r",
-			[51] = 1604783678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
-		{
-			"We also had trump", -- [1]
-			"Teraku-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Teraku-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			283, -- [11]
-			"Player-61-0E093EB5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Teraku|r",
-			[51] = 1604783681,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
-		{
-			"you just had Trump for 4 years what do you mean first pedo", -- [1]
-			"Deladorc-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Deladorc-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			291, -- [11]
-			"Player-61-0DFB97C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Deladorc|r",
-			[51] = 1604783683,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
-		{
-			"WH?ERE IS Q WWGGWGWGA", -- [1]
-			"Mydg-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mydg-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			296, -- [11]
-			"Player-61-0C737767", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcMydg|r",
-			[51] = 1604783685,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
-		{
-			"Lol ", -- [1]
-			"Resetpull-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Resetpull-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			309, -- [11]
-			"Player-61-0B2ABFC2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeResetpull|r",
-			[51] = 1604783689,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
-		{
-			"WTS|cffa335ee|Hitem:92426::::::::1:1449::::1:28:167:::|h[Sealed Tome of the Lost Legion]|h|r Fel Fire Spells For Warlock PTS", -- [1]
-			"Harrybank-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Harrybank-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			317, -- [11]
-			"Player-61-0DFE5C37", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaHarrybank|r",
-			[51] = 1604783692,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
-		{
-			"what does truininanashabadepressure even mean", -- [1]
-			"Delimaul-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Delimaul-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			318, -- [11]
-			"Player-61-07090670", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Delimaul|r",
-			[51] = 1604783692,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
-		{
-			"something about those damned second floor ladies department quartermasters", -- [1]
-			"Inferneux-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Inferneux-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			385, -- [11]
-			"Player-61-0BE9BE57", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edInferneux|r",
-			[51] = 1604783716,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
-		{
-			"Asking for a friend, I want some but I have no clue", -- [1]
-			"Delimaul-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Delimaul-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			391, -- [11]
-			"Player-61-07090670", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Delimaul|r",
-			[51] = 1604783720,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
-		{
-			"trabagath care is a human right damn it", -- [1]
-			"Steaîth-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Steaîth-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			393, -- [11]
-			"Player-61-0E0F4081", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Steaîth|r",
-			[51] = 1604783720,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
-		{
-			"why do you guys actually defend a literal pedophile by justifying it claiming someone else is one..... so fucked up lol", -- [1]
-			"Bulma-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Bulma-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			394, -- [11]
-			"Player-61-0DFA72AF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaBulma|r",
-			[51] = 1604783722,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
-		{
-			"every us pres has been a pedo since lincoln", -- [1]
-			"Undertankker-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Undertankker-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			406, -- [11]
-			"Player-61-0DB9740C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Undertankker|r",
-			[51] = 1604783728,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
-		{
-			"uwu", -- [1]
-			"Thymass-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thymass-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			423, -- [11]
-			"Player-61-0648CF9E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Thymass|r",
-			[51] = 1604783739,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
-		{
-			"|||| M+15 BUNDLE |||| THREE DUNGEONS WITH ARMOR STACK || 6 TO 9 LOOTS PLUS AN ILVL 130 ON TUESDAY CHEST! || PM FOR INFO! ||GOLD ONLY||", -- [1]
-			"Hertzs-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hertzs-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			427, -- [11]
-			"Player-61-0DFD6957", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Hertzs|r",
-			[51] = 1604783742,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
-		{
-			"pedos are the deep state", -- [1]
-			"Undertankker-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Undertankker-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			441, -- [11]
-			"Player-61-0DB9740C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Undertankker|r",
-			[51] = 1604783752,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
-		{
-			"Truly", -- [1]
-			"Mydg-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mydg-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			448, -- [11]
-			"Player-61-0C737767", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcMydg|r",
-			[51] = 1604783756,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
-		{
-			"get in where you fit in i guess. and if 13yr old chicks is the only place you can fit i guess you don't have as big as balls as you claim", -- [1]
-			"Steaîth-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Steaîth-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			451, -- [11]
-			"Player-61-0E0F4081", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Steaîth|r",
-			[51] = 1604783757,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
-		{
-			"show me a president that isn't fucked on a moral level. ", -- [1]
-			"Inferneux-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Inferneux-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			452, -- [11]
-			"Player-61-0BE9BE57", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edInferneux|r",
-			[51] = 1604783757,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
-		{
-			"Rich white men fuck kids. ", -- [1]
-			"Renarouge-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Renarouge-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			459, -- [11]
-			"Player-61-0C93536B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Renarouge|r",
-			[51] = 1604783761,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
-		{
-			"Trump has been the most presidential pedo ever, except maybe Lincoln, when he's wearing the hat", -- [1]
-			"Deladorc-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Deladorc-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			484, -- [11]
-			"Player-61-0DFB97C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Deladorc|r",
-			[51] = 1604783771,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
-		{
-			"did the civil war start yet?", -- [1]
-			"Llc-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Llc-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			487, -- [11]
-			"Player-61-0E0AAC88", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Llc|r",
-			[51] = 1604783771,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
-		{
-			"rich black men like obama fuck trannies like michelle", -- [1]
-			"Steaîth-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Steaîth-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			505, -- [11]
-			"Player-61-0E0F4081", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Steaîth|r",
-			[51] = 1604783777,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
-		{
-			"WTS|cffa335ee|Hitem:92426::::::::1:1449::::1:28:167:::|h[Sealed Tome of the Lost Legion]|h|r Fel Fire Spells For Warlock PTS", -- [1]
-			"Harrybank-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Harrybank-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			510, -- [11]
-			"Player-61-0DFE5C37", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaHarrybank|r",
-			[51] = 1604783779,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
 		{
 			"Pedos become priests, not politicians.", -- [1]
 			"Millpool-Zul'jin", -- [2]
@@ -1584,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Millpool|r",
 			[51] = 1604783781,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [1]
 		{
 			"pedos are everywhere u stupid child ", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1606,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783790,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [2]
 		{
 			"they should all be killed", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1628,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783797,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [3]
 		{
 			"pedos are behind the lgbtq agenda", -- [1]
 			"Undertankker-Zul'jin", -- [2]
@@ -1650,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Undertankker|r",
 			[51] = 1604783799,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [4]
 		{
 			"lots of pedo boyscout leaders too", -- [1]
 			"Inferneux-Zul'jin", -- [2]
@@ -1672,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edInferneux|r",
 			[51] = 1604783801,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [5]
 		{
 			"At least he's getting laid, why you hating?", -- [1]
 			"Renarouge-Zul'jin", -- [2]
@@ -1694,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Renarouge|r",
 			[51] = 1604783804,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [6]
 		{
 			"I also can't believe you guys voted against \"Abraham lincoln\"- Biden.", -- [1]
 			"Delimaul-Zul'jin", -- [2]
@@ -1716,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Delimaul|r",
 			[51] = 1604783808,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [7]
 		{
 			"Why do trump supporters latch on to these insane conspiracy theories rather than try and back policies that mean something? Michelle is a tranny? Grow up, let's have real conversations", -- [1]
 			"Deladorc-Zul'jin", -- [2]
@@ -1738,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Deladorc|r",
 			[51] = 1604783829,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [8]
 		{
 			"Um Lincoln was confirmed deepstate", -- [1]
 			"Mydg-Zul'jin", -- [2]
@@ -1760,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMydg|r",
 			[51] = 1604783832,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [9]
 		{
 			"no he was from indiana", -- [1]
 			"Uxie-Zul'jin", -- [2]
@@ -1782,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Uxie|r",
 			[51] = 1604783840,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [10]
 		{
 			"have you seen her hands?", -- [1]
 			"Inferneux-Zul'jin", -- [2]
@@ -1804,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edInferneux|r",
 			[51] = 1604783844,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [11]
 		{
 			"No they're not everywhere, there are a lot but it's not as prevalent as the right or left would have you believe, that it exists is a crime itself, but to baselessly acuse people of things doesn't help anyone.", -- [1]
 			"Trapsiefly-Zul'jin", -- [2]
@@ -1826,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Trapsiefly|r",
 			[51] = 1604783846,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [12]
 		{
 			"On a real note . At least CA didnt vote to be openly racist", -- [1]
 			"Delimaul-Zul'jin", -- [2]
@@ -1848,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Delimaul|r",
 			[51] = 1604783848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [13]
 		{
 			"Voting was rigged", -- [1]
 			"Lemmywinkss-Zul'jin", -- [2]
@@ -1870,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lemmywinkss|r",
 			[51] = 1604783848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [14]
 		{
 			"Trump 2020", -- [1]
 			"Lemmywinkss-Zul'jin", -- [2]
@@ -1892,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lemmywinkss|r",
 			[51] = 1604783852,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [15]
 		{
 			"noone is grown up in trade chat , ur all a bunch of cave dwellers lmao", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1914,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783854,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [16]
 		{
 			"You're just jealous cos u have baby hands", -- [1]
 			"Mydg-Zul'jin", -- [2]
@@ -1936,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMydg|r",
 			[51] = 1604783859,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [17]
 		{
 			"noone to talk to in real life", -- [1]
 			"Bulma-Zul'jin", -- [2]
@@ -1958,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBulma|r",
 			[51] = 1604783860,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [18]
 		{
 			"How is warrior in SL?", -- [1]
 			"Snurlax-Zul'jin", -- [2]
@@ -1980,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSnurlax|r",
 			[51] = 1604783862,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [19]
 		{
 			"They don't have any appealing policies or achievements so they have to do what they're doing now. Conspiracies and namecalling. Adorbs.", -- [1]
 			"Renarouge-Zul'jin", -- [2]
@@ -2002,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Renarouge|r",
 			[51] = 1604783862,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [20]
 		{
 			"WTS M15+!!ONLY!!!>>>89K!! (M+ 15-24) Specific KEYS!! >>!! <<! ARMOR STACK 95k!>>|| || WTS Harmode+Mount<<RAID Mythic / Heroic >> || WTS Horrific Vision 0-5 masks guaranteed ||WTS!PVP 2s OR 3s!|| GOLD ONLY/ JAINA Mount>>Huokan Community<<", -- [1]
 			"Krakensales-Zul'jin", -- [2]
@@ -2024,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edKrakensales|r",
 			[51] = 1604929517,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [21]
 		{
 			"Frost mage LF guild for SL Raiding. 9pm starting raid time or later preferred. ", -- [1]
 			"Kaxy-Zul'jin", -- [2]
@@ -2046,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaKaxy|r",
 			[51] = 1604962130,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [22]
 		{
 			"Phoenix Community || WTS Freehold Powerleveling!  10-50 individual level options available. Fastest clears around. Can buy any levels needed! GOLD ONLY", -- [1]
 			"Zachphoenix-Zul'jin", -- [2]
@@ -2068,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cZachphoenix|r",
 			[51] = 1604962145,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [23]
 		{
 			"Meow! <MachineGunKitties> is Meow! Meow meow meow meow meow meow. Meow meow meow meow, meow, meow, meow, Meow meow. We like cats. That is all. Join Meow! PM me to see this message in hooman instead.", -- [1]
 			"Nyqe-Zul'jin", -- [2]
@@ -2090,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nyqe|r",
 			[51] = 1604962184,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [24]
 		{
 			"Frost mage LF guild for SL Raiding. 9pm starting raid time or later preferred. ", -- [1]
 			"Kaxy-Zul'jin", -- [2]
@@ -2112,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaKaxy|r",
 			[51] = 1604962235,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [25]
 		{
 			"WTS N'zoth Heroic Kill for GOLD! We accept gold in ANY realm! 12/12 Mythic Raiders selling |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r", -- [1]
 			"Aurinia-Zul'jin", -- [2]
@@ -2134,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinia|r",
 			[51] = 1604962246,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [26]
 		{
 			"LFM|cffffff00|Hachievement:10754:Player-61-0B470153:0:0:0:-1:0:0:0:0|h[Fruit of All Evil]|h|r, requirement for |cffffff00|Hachievement:11180:Player-61-0B470153:0:0:0:-1:58367:0:0:0|h[Glory of the Legion Raider]|h|r and gives|cff71d5ff|Hspell:193007:0|h[Grove Defiler]|h|r", -- [1]
 			"Tayr-Zul'jin", -- [2]
@@ -2156,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Tayr|r",
 			[51] = 1604962253,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [27]
 		{
 			"Skycoach community will help you for ONE TOKEN Price  with Ny'alotha heroic. Mythic +10, +11,+12,+13,+14,+15 +20 with loottrade and much more! Get your gear today! Please PM", -- [1]
 			"Bestdungg-Zul'jin", -- [2]
@@ -2178,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeBestdungg|r",
 			[51] = 1604962256,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [28]
 		{
 			"WTS N'zoth Heroic Kill for GOLD! We accept gold in ANY realm! 12/12 Mythic Raiders selling |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r", -- [1]
 			"Aurinia-Zul'jin", -- [2]
@@ -2199,6 +661,1546 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cfffe7b09Aurinia|r",
 			[51] = 1604962366,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [29]
+		{
+			"i wan't same drug", -- [1]
+			"ßærføøtz-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"ßærføøtz-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			17, -- [11]
+			"Player-61-0887AA90", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97ßærføøtz|r",
+			[51] = 1605071442,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [30]
+		{
+			"i want you to look me in the eyes and fart", -- [1]
+			"Madgic-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Madgic-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			18, -- [11]
+			"Player-61-0E11B518", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMadgic|r",
+			[51] = 1605071461,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [31]
+		{
+			"i can totally do that", -- [1]
+			"Dinai-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dinai-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			19, -- [11]
+			"Player-61-0DF3934F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Dinai|r",
+			[51] = 1605071479,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [32]
+		{
+			"LF guild charter signatures 100g pst", -- [1]
+			"Prófgrizwald-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Prófgrizwald-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			20, -- [11]
+			"Player-61-0704078C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Prófgrizwald|r",
+			[51] = 1605071483,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [33]
+		{
+			"whats happening with the lich king new story line????", -- [1]
+			"Zoggloxx-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zoggloxx-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			33, -- [11]
+			"Player-61-0CC4BCD9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edZoggloxx|r",
+			[51] = 1605071505,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [34]
+		{
+			"WTS Loot Stack M+ Carry, H/M Ny’alotha || Visions || FH Powerlvling, HM.Mecha Mount || |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r|cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r Before Shadowlands! || GOLD ONLY <3", -- [1]
+			"Surveysaleh-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Surveysaleh-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			34, -- [11]
+			"Player-61-0E0072C5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSurveysaleh|r",
+			[51] = 1605071507,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [35]
+		{
+			"<Combat Locked> Is looking for Raiders, M+ players and casuals of all kind for Shadowlands!  All Classes are welcome. Filling second team for heroic and possible backups for mythic. Raid times are tues/thurs 930PM-1230AM EST. MSG for more info!", -- [1]
+			"Bananahair-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bananahair-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			35, -- [11]
+			"Player-61-0CC6526B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBananahair|r",
+			[51] = 1605071510,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [36]
+		{
+			"Anyone selling |cffa335ee|Hitem:82453::::::::50:65:::::::|h[Jeweled Onyx Panther]|h|r???", -- [1]
+			"Brewista-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Brewista-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			36, -- [11]
+			"Player-61-0CA42086", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Brewista|r",
+			[51] = 1605071516,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [37]
+		{
+			"where the scourge", -- [1]
+			"Deathtoll-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Deathtoll-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			37, -- [11]
+			"Player-61-0DF0B94A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Deathtoll|r",
+			[51] = 1605071523,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [38]
+		{
+			"new story line with the scourge??????", -- [1]
+			"Zoggloxx-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zoggloxx-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			40, -- [11]
+			"Player-61-0CC4BCD9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edZoggloxx|r",
+			[51] = 1605071539,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [39]
+		{
+			"<NOVA Boosting>  ||||  Mythic Jaina = 280k!  ||||  Going at 8pm EST!  ||||   <NOVA> is recruiting more Advertisers/Boosters!  ||||  Pst for info! ", -- [1]
+			"Novall-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novall-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			306, -- [11]
+			"Player-61-0E1188E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Novall|r",
+			[51] = 1605224936,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [40]
+		{
+			"Bonjour a tous QC PVP est a la recherche de player qui aime la competition mais aussi l'esprit d'équipe car ses se que nous somme une grande équipe on est la pour le plaisir au menu PVP,Mythic et raid pour Shadowland Bienvenue a Tous  serveur Zuljin", -- [1]
+			"Justîce-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Justîce-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			382, -- [11]
+			"Player-61-0BBE9410", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Justîce|r",
+			[51] = 1605224962,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"WTS  MYTHIC +15 BUNDLEE X3 RUNS WITH ARMOR STACK GET 6-9 ITEMS ILVL 120|||| ALSO X5 RUNS BUNDLE AND  JUST 1 RUN |||| VISIONS |||| RAID H & M |||| AND MORE.GOLD ONLY PST ME!!", -- [1]
+			"Zulgotcha-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zulgotcha-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			383, -- [11]
+			"Player-61-0DBF35BE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Zulgotcha|r",
+			[51] = 1605224969,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [42]
+		{
+			"WTS |cff0070dd|Hbattlepet:2766:1:3:180:9:9:0000000000000000:92502|h[Armored Vaultbot]|h|r 45K", -- [1]
+			"Meaftucc-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Meaftucc-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			385, -- [11]
+			"Player-61-0DE4AF4B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Meaftucc|r",
+			[51] = 1605225002,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [43]
+		{
+			"WTs this Flying mount |cffa335ee|Hitem:153594::::::::1:71::13:::::|h[VTT Xiwyllag]|h|r 7k AT AH!", -- [1]
+			"Rosebae-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Rosebae-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			437, -- [11]
+			"Player-61-0D03A62E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cRosebae|r",
+			[51] = 1605225026,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [44]
+		{
+			"WTS|cffa335ee|Hitem:92426::::::::1:1449::::1:28:167:::|h[Sealed Tome of the Lost Legion]|h|r Fel Fire Spells For Warlock PTS", -- [1]
+			"Harrybank-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Harrybank-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			508, -- [11]
+			"Player-61-0DFE5C37", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaHarrybank|r",
+			[51] = 1605225116,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [45]
+		{
+			"<NOVA Boosting>  ||||  Mythic Jaina = 280k!  ||||  Going at 8pm EST!  ||||   <NOVA> is recruiting more Advertisers/Boosters!  ||||  Pst for info! ", -- [1]
+			"Novall-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novall-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			514, -- [11]
+			"Player-61-0E1188E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Novall|r",
+			[51] = 1605225158,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [46]
+		{
+			"WTS  MYTHIC +15 BUNDLEE X3 RUNS WITH ARMOR STACK GET 6-9 ITEMS ILVL 120|||| ALSO X5 RUNS BUNDLE AND  JUST 1 RUN |||| VISIONS |||| RAID H & M |||| AND MORE.GOLD ONLY PST ME!!", -- [1]
+			"Zulgotcha-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zulgotcha-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			515, -- [11]
+			"Player-61-0DBF35BE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Zulgotcha|r",
+			[51] = 1605225166,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [47]
+		{
+			"Selling carry +15 - 20 // armor stack // specific key /// Jaina 325k// legacy achievements // winter comunity // only gold whisp for more info > https://discord.gg/kMyhMwz ", -- [1]
+			"Ghorosd-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ghorosd-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			575, -- [11]
+			"Player-61-0E123AF3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cGhorosd|r",
+			[51] = 1605225840,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [48]
+		{
+			"wts|cffa335ee|Hitem:17193::::::::10:269::1:1:6883::::|h[Martillo de Sulfuron]|h|ronly 80k", -- [1]
+			"Yuryhu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Yuryhu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			576, -- [11]
+			"Player-61-0D047489", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Yuryhu|r",
+			[51] = 1605225855,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [49]
+		{
+			"selling girlfriend experience for 1 gold", -- [1]
+			"Dixiepalee-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dixiepalee-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			577, -- [11]
+			"Player-61-0BAEEA7E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Dixiepalee|r",
+			[51] = 1605225872,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [50]
+		{
+			"does hit just stay in the middle?", -- [1]
+			"Xannill-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Xannill-Area52", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			637, -- [11]
+			"Player-3676-09821EF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Xannill-Area52|r",
+			[51] = 1605226238,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [51]
+		{
+			"cant be moved?", -- [1]
+			"Xannill-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Xannill-Area52", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			640, -- [11]
+			"Player-3676-09821EF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Xannill-Area52|r",
+			[51] = 1605226262,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [52]
+		{
+			"feel free to take the green shit out of the group", -- [1]
+			"Faegis-KirinTor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Faegis-KirinTor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			641, -- [11]
+			"Player-1071-09E8F248", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Faegis-KirinTor|r",
+			[51] = 1605226283,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [53]
+		{
+			"Nouvelle Guilde Qc <Optimum> recherche des joueurs pour ShadowLands. Objectifs → PVE  (Push Keys + Raid MM) & PVP (Rbgs + Arenas).  Guilde avec une bonne ambiance & friendly.♥", -- [1]
+			"Sickydruid-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sickydruid-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			672, -- [11]
+			"Player-61-0BB03490", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Sickydruid|r",
+			[51] = 1605226397,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [54]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-162771-61-95586548|h[Guild: Until Eternity]|h|r Is recruiting DPS for our Core raid team, We run Mythic+ Raiding (Eventually mythic), and other guild hosted events.  Casuals, alts, and new players welcome! Raid times fri-sat 8-11pm server.", -- [1]
+			"Zòma-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zòma-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			673, -- [11]
+			"Player-61-0CCF87D0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Zòma|r",
+			[51] = 1605226403,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [55]
+		{
+			"What's the fastest way to get from like 36 to 50?", -- [1]
+			"Kommador-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kommador-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			682, -- [11]
+			"Player-61-0CA79C14", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Kommador|r",
+			[51] = 1605226437,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [56]
+		{
+			"questing", -- [1]
+			"Zuldazaur-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zuldazaur-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			685, -- [11]
+			"Player-61-0E11FCBF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Zuldazaur|r",
+			[51] = 1605226452,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [57]
+		{
+			"a shadowlands boost in the store", -- [1]
+			"Doen-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Doen-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			686, -- [11]
+			"Player-61-0CC60AAE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Doen|r",
+			[51] = 1605226469,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [58]
+		{
+			"^^^^^^^^^", -- [1]
+			"Zotika-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zotika-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			687, -- [11]
+			"Player-61-0E09D1A9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Zotika|r",
+			[51] = 1605226487,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-162771-61-95586548|h[Guild: Until Eternity]|h|r Is recruiting DPS for our Core raid team, We run Mythic+ Raiding (Eventually mythic), and other guild hosted events.  Casuals, alts, and new players welcome! Raid times fri-sat 8-11pm server.", -- [1]
+			"Zòma-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zòma-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			688, -- [11]
+			"Player-61-0CCF87D0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Zòma|r",
+			[51] = 1605226503,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"could i get the ping please", -- [1]
+			"Gorebag-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Gorebag-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			704, -- [11]
+			"Player-61-0E1209D2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Gorebag|r",
+			[51] = 1605226706,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [61]
+		{
+			"|cffffff00|Hworldmap:118:5047:7927|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Hêrßs-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Hêrßs-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			708, -- [11]
+			"Player-61-0B88CC4D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeHêrßs|r",
+			[51] = 1605226731,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [62]
+		{
+			"|cffffff00|Hworldmap:118:5753:2919|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Itsbutter-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Itsbutter-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			715, -- [11]
+			"Player-61-0E0B9E04", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Itsbutter|r",
+			[51] = 1605226823,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [63]
+		{
+			"can i get a ping plz? <3", -- [1]
+			"Sasi-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Sasi-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			721, -- [11]
+			"Player-61-0E0A4BC6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cSasi|r",
+			[51] = 1605226869,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [64]
+		{
+			"nvm lol", -- [1]
+			"Sasi-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Sasi-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			726, -- [11]
+			"Player-61-0E0A4BC6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cSasi|r",
+			[51] = 1605226877,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [65]
+		{
+			"Inc", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			727, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605226880,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [66]
+		{
+			"|cffffff00|Hworldmap:118:5810:5609|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Jigjug-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Jigjug-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			751, -- [11]
+			"Player-61-0D8D8F06", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaJigjug|r",
+			[51] = 1605227110,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"cant look lol", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			752, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605227122,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"loot*", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			753, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605227126,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"same problem", -- [1]
+			"Naniwe-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Naniwe-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			754, -- [11]
+			"Player-61-0B75D1D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Naniwe|r",
+			[51] = 1605227139,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"now I could lol", -- [1]
+			"Naniwe-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Naniwe-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			759, -- [11]
+			"Player-61-0B75D1D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Naniwe|r",
+			[51] = 1605227195,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"not my night keep having to afk and come back to dead boss lol - which is next one plz", -- [1]
+			"Kittniss-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Kittniss-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			781, -- [11]
+			"Player-61-08A8EEE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Kittniss|r",
+			[51] = 1605227510,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"|cffffff00|Hworldmap:118:5851:5530|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			782, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605227522,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"Skadi", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			783, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605227525,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"ty", -- [1]
+			"Kittniss-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Kittniss-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			784, -- [11]
+			"Player-61-08A8EEE6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Kittniss|r",
+			[51] = 1605227528,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"are there any rare mob groups?  what kinda timer are these fools on?", -- [1]
+			"Ghatsbe-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Ghatsbe-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			800, -- [11]
+			"Player-61-0BB909A8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Ghatsbe|r",
+			[51] = 1605227650,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"Every 20 minutes", -- [1]
+			"Pixoll-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Pixoll-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			802, -- [11]
+			"Player-61-0E0FC101", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Pixoll|r",
+			[51] = 1605227658,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"starts at the top of the hour, then at x:20, x:40, and so on", -- [1]
+			"Pixoll-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Pixoll-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			804, -- [11]
+			"Player-61-0E0FC101", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Pixoll|r",
+			[51] = 1605227667,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"Google shadowlands pre patch rare spawns for details maps and coordinates", -- [1]
+			"Pixoll-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Pixoll-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			809, -- [11]
+			"Player-61-0E0FC101", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Pixoll|r",
+			[51] = 1605227690,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"https://www.wowhead.com/guides/shadowlands-deaths-rising-prelaunch-event-scourge-invasions#gearhorde-horde-plate", -- [1]
+			"Itsbutter-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Itsbutter-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			813, -- [11]
+			"Player-61-0E0B9E04", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Itsbutter|r",
+			[51] = 1605227718,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"scroll down, there's a list of all times, locations, and loot tables of all the rares", -- [1]
+			"Itsbutter-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Itsbutter-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			823, -- [11]
+			"Player-61-0E0B9E04", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Itsbutter|r",
+			[51] = 1605227747,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"anyone have a pin for the next boss?", -- [1]
+			"Artibeastjr-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Artibeastjr-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			826, -- [11]
+			"Player-61-0A094325", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcArtibeastjr|r",
+			[51] = 1605227756,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"Skadi?", -- [1]
+			"Artibeastjr-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Artibeastjr-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			828, -- [11]
+			"Player-61-0A094325", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcArtibeastjr|r",
+			[51] = 1605227762,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"Yea", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			830, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605227787,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"TAG & LAG INC", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			867, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605228180,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"|cffffff00|Hworldmap:118:5265:5254|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			873, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605228298,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"Ingvar", -- [1]
+			"Basicpain-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Basicpain-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			874, -- [11]
+			"Player-61-0C6468D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeBasicpain|r",
+			[51] = 1605228303,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"Who's next?", -- [1]
+			"Grimloki-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Grimloki-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			283, -- [11]
+			"Player-61-0C445C81", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Grimloki|r",
+			[51] = 1605385745,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"|cffffff00|Hworldmap:118:6896:5748|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r NEXT", -- [1]
+			"Atròpòs-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Atròpòs-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			284, -- [11]
+			"Player-61-0B2489EB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Atròpòs|r",
+			[51] = 1605385751,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"ty", -- [1]
+			"Grimloki-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Grimloki-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			286, -- [11]
+			"Player-61-0C445C81", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Grimloki|r",
+			[51] = 1605385774,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			":)", -- [1]
+			"Atròpòs-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Atròpòs-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			288, -- [11]
+			"Player-61-0B2489EB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Atròpòs|r",
+			[51] = 1605385781,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"is there a group for rare farming?", -- [1]
+			"Biakk-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Biakk-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			289, -- [11]
+			"Player-61-0CD2CEEB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Biakk|r",
+			[51] = 1605385786,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"i started my morning with that one", -- [1]
+			"Atròpòs-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Atròpòs-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			290, -- [11]
+			"Player-61-0B2489EB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Atròpòs|r",
+			[51] = 1605385795,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"no actual group, just a bunch of people spawncamping them", -- [1]
+			"Atròpòs-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Atròpòs-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			303, -- [11]
+			"Player-61-0B2489EB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Atròpòs|r",
+			[51] = 1605385829,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"just checking, occasionally there is a raid lol", -- [1]
+			"Biakk-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Biakk-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			306, -- [11]
+			"Player-61-0CD2CEEB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Biakk|r",
+			[51] = 1605385850,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"pin?", -- [1]
+			"Isabellavc-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Isabellavc-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			373, -- [11]
+			"Player-61-0BC17201", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Isabellavc|r",
+			[51] = 1605386739,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"|cffffff00|Hworldmap:118:2960:6220|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Nadinda-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Nadinda-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			390, -- [11]
+			"Player-61-097F6E3F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Nadinda|r",
+			[51] = 1605386814,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"anyone else tmorgs bugged?  the vendor says i have the shoulds appearance but i dont", -- [1]
+			"Isabellavc-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Isabellavc-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			391, -- [11]
+			"Player-61-0BC17201", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Isabellavc|r",
+			[51] = 1605386851,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"they also dont show for other toons", -- [1]
+			"Isabellavc-Zul'jin", -- [2]
+			"", -- [3]
+			"1. General - Icecrown", -- [4]
+			"Isabellavc-Zul'jin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Icecrown", -- [9]
+			0, -- [10]
+			392, -- [11]
+			"Player-61-0BC17201", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Isabellavc|r",
+			[51] = 1605386859,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

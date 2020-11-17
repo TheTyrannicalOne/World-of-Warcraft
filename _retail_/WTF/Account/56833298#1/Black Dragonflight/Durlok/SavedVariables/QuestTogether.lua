@@ -65,10 +65,9 @@ QuestTogether = {
 				"2/10  ", -- [1]
 			},
 		},
-		[54042] = {
-			["title"] = "Trouble in Darkshore",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
 		[44989] = {
@@ -77,23 +76,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[54042] = {
+			["title"] = "Trouble in Darkshore",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
 		[42234] = {
@@ -102,10 +88,22 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[50604] = {
+			["title"] = "Tortollan Seekers",
+			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[31891] = {
@@ -118,10 +116,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[47105] = {
@@ -130,16 +128,18 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[56491] = {
+			["title"] = "Tiny Terrors of Stratholme",
 			["objectives"] = {
+				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
+				"Blackmane Defeated.", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

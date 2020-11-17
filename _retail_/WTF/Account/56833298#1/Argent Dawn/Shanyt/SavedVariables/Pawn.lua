@@ -85,10 +85,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 36497,
-			["Level"] = 57,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff1eff00|Hitem:36497::::::::50:71:::2:6655:1694:2:28:1401:9:50:::|h[Adamant Mallet of the Fireflash]|h|r",
+			["ID"] = 159665,
+			["Level"] = 85,
+			["Link"] = "|cffa335ee|Hitem:159665::::::::50:71::23:5:4779:6516:6513:1498:4786::::|h[Targe of the Ancient Warder]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

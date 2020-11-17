@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.06 (11th November 2020)
+-- 	Leatrix Plus 9.0.07 (14th November 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.06"
+	LeaPlusLC["AddonVer"] = "9.0.07"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -842,7 +842,7 @@
 
 				},
 
-				-- Sky Golem ()
+				-- Sky Golem
 				["MuteGolem"] = {
 
 					-- Footsteps (sound/creature/goblinshredder/footstep_goblinshreddermount_general_)
@@ -4056,8 +4056,10 @@
 			-- Function to toggle LibDBIcon
 			local function SetLibDBIconFunc()
 				if LeaPlusLC["ShowMinimapIcon"] == "On" then
+					LeaPlusDB["hide"] = false
 					icon:Show("Leatrix_Plus")
 				else
+					LeaPlusDB["hide"] = true
 					icon:Hide("Leatrix_Plus")
 				end
 			end
