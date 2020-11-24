@@ -1,3 +1,4 @@
-11/16 22:42:52.680  M2Initialize()
-11/17 03:07:33.339  M2Destroy()
-11/17 03:07:33.439  M2DestroySkeletons()
+11/24 00:54:54.332  M2Initialize()
+11/24 00:54:54.353  M2_USE_LOD: 512
+11/24 01:12:19.563  M2Destroy()
+11/24 01:12:19.603  M2DestroySkeletons()

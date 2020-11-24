@@ -21,8 +21,7 @@ local function SkinRecipeList(self, _, tradeSkillInfo)
 		self.SubSkillRankBar.BorderRight:Hide()
 
 		if not self.SubSkillRankBar.backdrop then
-			self.SubSkillRankBar:CreateBackdrop()
-			self.SubSkillRankBar.backdrop:SetAllPoints()
+			self.SubSkillRankBar:CreateBackdrop(nil, nil, nil, nil, nil, nil, true)
 			self.SubSkillRankBar:SetStatusBarTexture(E.media.normTex)
 			E:RegisterStatusBar(self.SubSkillRankBar)
 		end
@@ -117,7 +116,6 @@ function S:Blizzard_TradeSkillUI()
 			Button.NameFrame:Kill()
 		end
 
-		-- 9.0 Shadowlands
 		for i = 1, #TradeSkillFrame.DetailsFrame.Contents.OptionalReagents do
 			local Button = TradeSkillFrame.DetailsFrame.Contents.OptionalReagents[i]
 			local Icon = Button.Icon
@@ -162,7 +160,6 @@ function S:Blizzard_TradeSkillUI()
 	--S:HandleScrollBar(TradeSkillFrame.DetailsFrame.GuildFrame.Container.ScrollFrame.scrollBar) --This cannot be skinned due to issues on Blizzards end.
 	S:HandleScrollBar(TradeSkillFrame.RecipeList.scrollBar)
 
-	-- 9.0 Shadowlands
 	local OptionalReagents = TradeSkillFrame.OptionalReagentList
 	OptionalReagents:StripTextures()
 	OptionalReagents:CreateBackdrop('Transparent')
@@ -190,8 +187,7 @@ function S:Blizzard_TradeSkillUI()
 		end
 
 		if not frame.backdrop then
-			frame:CreateBackdrop()
-			frame.backdrop:SetAllPoints()
+			frame:CreateBackdrop(nil, nil, nil, nil, nil, nil, true)
 		end
 	end)
 end

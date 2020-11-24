@@ -2,6 +2,7 @@
 TomTomDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
@@ -42,6 +43,7 @@ TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
@@ -53,6 +55,8 @@ TomTomWaypointsM = {
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
+		},
+		["Shaekhan - Argent Dawn"] = {
 		},
 		["Illingrath - Dalaran"] = {
 		},

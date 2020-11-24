@@ -37,17 +37,17 @@ QuestTogether = {
 				"Complete \"Troops in the Field\"", -- [1]
 			},
 		},
+		[34692] = {
+			["title"] = "Delegating on Draenor",
+			["objectives"] = {
+				"Use the Command Table", -- [1]
+			},
+		},
 		[28398] = {
 			["title"] = "The Pyromancer's Grimoire",
 			["objectives"] = {
 				"0/6 Twilight Emissary slain", -- [1]
 				"0/1 Loregrain's Grimoire", -- [2]
-			},
-		},
-		[34692] = {
-			["title"] = "Delegating on Draenor",
-			["objectives"] = {
-				"Use the Command Table", -- [1]
 			},
 		},
 		[44989] = {
@@ -56,8 +56,8 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
 			["objectives"] = {
 			},
 		},
@@ -72,8 +72,8 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[26897] = {
-			["title"] = "Blackfathom Deeps",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
 			},
 		},
@@ -111,13 +111,13 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[26838] = {
-			["title"] = "Rebels Without a Clue",
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
 			["objectives"] = {
 			},
 		},
-		[12466] = {
-			["title"] = "Chasing Icestorm: The 7th Legion Front",
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
 			["objectives"] = {
 			},
 		},
@@ -137,7 +137,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

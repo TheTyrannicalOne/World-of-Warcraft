@@ -57,8 +57,7 @@ local function HotkeyColor(self, r, g, b)
 end
 
 local function SkinItemButton(item)
-	item:CreateBackdrop('Transparent')
-	item.backdrop:SetAllPoints()
+	item:CreateBackdrop('Transparent', nil, nil, nil, nil, nil, true)
 	item:StyleButton()
 	item:SetNormalTexture(nil)
 
@@ -101,11 +100,11 @@ local function HandleItemButton(block)
 	end
 end
 
--- 9.0 Needs Update
 local function SkinProgressBars(_, _, line)
 	local progressBar = line and line.ProgressBar
 	local bar = progressBar and progressBar.Bar
 	if not bar then return end
+
 	local icon = bar.Icon
 	local label = bar.Label
 
@@ -188,12 +187,8 @@ end
 
 local function SkinFindGroupButton(block)
 	if block.hasGroupFinderButton and block.groupFinderButton then
-		if block.groupFinderButton and not block.groupFinderButton.skinned then
-			S:HandleButton(block.groupFinderButton)
-			block.groupFinderButton:Size(20)
-			block.groupFinderButton.backdrop:SetFrameLevel(block:GetFrameLevel())
-			block.groupFinderButton.skinned = true
-		end
+		S:HandleButton(block.groupFinderButton, nil, nil, nil, nil, nil, nil, nil, 3)
+		block.groupFinderButton:Size(20)
 	end
 end
 

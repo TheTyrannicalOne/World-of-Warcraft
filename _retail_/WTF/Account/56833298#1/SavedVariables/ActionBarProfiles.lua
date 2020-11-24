@@ -7,25 +7,26 @@ ActionBarProfilesDBv3 = {
 		["Tyrannithal - Argent Dawn"] = "DEMONHUNTER",
 		["Kotalkhan - Zul'jin"] = "MONK",
 		["Shanyt - Argent Dawn"] = "WARRIOR",
+		["Kelvalatar - Dalaran"] = "SHAMAN",
 		["Shimzo - Zul'jin"] = "ROGUE",
 		["Shaekhan - Zul'jin"] = "MONK",
 		["Tinkster - Dalaran"] = "WARLOCK",
 		["Avisar - Dalaran"] = "PALADIN",
-		["Jingojaggot - Zul'jin"] = "DEATHKNIGHT",
+		["Varlouris - Dalaran"] = "SHAMAN",
 		["Thorinbane - Dalaran"] = "WARRIOR",
-		["Okona - Zul'jin"] = "PRIEST",
-		["Shanyt - Zul'jin"] = "WARRIOR",
+		["Shaekhan - Argent Dawn"] = "MONK",
+		["Zulbathal - Zul'jin"] = "DRUID",
 		["Ruffinton - Dalaran"] = "ROGUE",
-		["Malivant - Dalaran"] = "PALADIN",
+		["Fantastiburo - Zul'jin"] = "SHAMAN",
 		["Datgore - Zul'jin"] = "HUNTER",
 		["Darnastris - Dalaran"] = "MAGE",
 		["Rotclaugh - Dalaran"] = "DEATHKNIGHT",
 		["Serbitechna - Dalaran"] = "HUNTER",
 		["Durlok - Black Dragonflight"] = "DRUID",
-		["Fantastiburo - Zul'jin"] = "SHAMAN",
-		["Zulbathal - Zul'jin"] = "DRUID",
-		["Kelvalatar - Dalaran"] = "SHAMAN",
-		["Varlouris - Dalaran"] = "SHAMAN",
+		["Malivant - Dalaran"] = "PALADIN",
+		["Shanyt - Zul'jin"] = "WARRIOR",
+		["Okona - Zul'jin"] = "PRIEST",
+		["Jingojaggot - Zul'jin"] = "DEATHKNIGHT",
 	},
 	["profiles"] = {
 		["HUNTER"] = {
@@ -38,7 +39,7 @@ ActionBarProfilesDBv3 = {
 		},
 		["PRIEST"] = {
 		},
-		["SHAMAN"] = {
+		["DEATHKNIGHT"] = {
 		},
 		["WARLOCK"] = {
 		},
@@ -50,7 +51,7 @@ ActionBarProfilesDBv3 = {
 		},
 		["MONK"] = {
 		},
-		["DEATHKNIGHT"] = {
+		["SHAMAN"] = {
 		},
 	},
 }

@@ -42,19 +42,20 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[34692] = {
-			["title"] = "Delegating on Draenor",
+		[28398] = {
+			["title"] = "The Pyromancer's Grimoire",
 			["objectives"] = {
-				"Use the Command Table", -- [1]
+				"0/6 Twilight Emissary slain", -- [1]
+				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
-		[26897] = {
-			["title"] = "Blackfathom Deeps",
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
 			},
 		},
-		[26838] = {
-			["title"] = "Rebels Without a Clue",
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
 			["objectives"] = {
 			},
 		},
@@ -88,8 +89,8 @@ QuestTogether = {
 				"0/1 Choose a second artifact to pursue", -- [1]
 			},
 		},
-		[12466] = {
-			["title"] = "Chasing Icestorm: The 7th Legion Front",
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
 			["objectives"] = {
 			},
 		},
@@ -114,8 +115,8 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
 			["objectives"] = {
 			},
 		},
@@ -126,18 +127,17 @@ QuestTogether = {
 				"0/1 Complete a Bronze Trial", -- [2]
 			},
 		},
-		[28398] = {
-			["title"] = "The Pyromancer's Grimoire",
+		[34692] = {
+			["title"] = "Delegating on Draenor",
 			["objectives"] = {
-				"0/6 Twilight Emissary slain", -- [1]
-				"0/1 Loregrain's Grimoire", -- [2]
+				"Use the Command Table", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

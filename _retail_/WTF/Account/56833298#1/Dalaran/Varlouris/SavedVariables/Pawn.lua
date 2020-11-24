@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0405,
+	["LastVersion"] = 2.0406,
 	["LastPlayerFullName"] = "Varlouris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -21,24 +21,24 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 122379,
-			["Level"] = 93,
-			["Link"] = "|cff00ccff|Hitem:122379::::::::75:263:::1:5805:::|h[Champion's Deathdealer Breastplate]|h|r",
+			["ID"] = 183646,
+			["Level"] = 110,
+			["Link"] = "|cffa335ee|Hitem:183646::::::::50:263:::2:1482:4786:1:28:1401:::|h[Chestguard of Siphoned Vitality]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 37427,
-			["Level"] = 89,
-			["Link"] = "|cff1eff00|Hitem:37427::::::::75:263:512:11:1:3685:75:::|h[Plainhunter's Waistband]|h|r",
+			["ID"] = 183565,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183565::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Cinch]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122252,
-			["Level"] = 93,
-			["Link"] = "|cff00ccff|Hitem:122252::::::::75:263:::1:5805:::|h[Tarnished Leggings of Destruction]|h|r",
+			["ID"] = 183530,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183530::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Pants]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 36068,
-			["Level"] = 67,
-			["Link"] = "|cff1eff00|Hitem:36068::::::::72:263:512:28:2:1708:3840:66:::|h[Daggercap Boots of the Aurora]|h|r",
+			["ID"] = 183564,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183564::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Folded Boots]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 183533,
@@ -46,15 +46,15 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:183533::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Wristclamps]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 37439,
-			["Level"] = 85,
-			["Link"] = "|cff1eff00|Hitem:37439::::::::74:263:512:11:1:3685:73:::|h[Spiked Magmoth Gloves]|h|r",
+			["ID"] = 183562,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183562::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Overgloves]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 122529,
-			["Level"] = 93,
+			["ID"] = 183676,
+			["Level"] = 110,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::75:263:::1:5805:::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:183676::::::::50:263:::2:1482:4786:1:28:1401:::|h[Hailstone Loop]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128173,
@@ -75,9 +75,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122361::::::::74:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 122261,
-			["Level"] = 93,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::75:263:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["ID"] = 183550,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183550::::::::50:263::14::1:28:1401:::|h[Argent Conscript's Cape]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 165625,

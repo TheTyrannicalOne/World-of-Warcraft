@@ -1,0 +1,492 @@
+
+BetterWardrobe_Options = {
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+BetterWardrobe_CharacterData = {
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+	},
+}
+BetterWardrobe_SavedSetData = {
+	["global"] = {
+		["sets"] = {
+			["Shanyt - Argent Dawn"] = {
+				{
+					["name"] = "Warlord",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 133194,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 100,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						19684, -- [1]
+						0, -- [2]
+						44897, -- [3]
+						83202, -- [4]
+						24793, -- [5]
+						71940, -- [6]
+						26234, -- [7]
+						22010, -- [8]
+						33402, -- [9]
+						33179, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						62761, -- [15]
+						0, -- [16]
+						0, -- [17]
+						0, -- [18]
+						83203, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5000,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [1]
+				{
+					["name"] = "Blue Knight",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 133124,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 200,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						4421, -- [1]
+						0, -- [2]
+						4422, -- [3]
+						83202, -- [4]
+						21256, -- [5]
+						51156, -- [6]
+						4423, -- [7]
+						13456, -- [8]
+						19619, -- [9]
+						28562, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						24198, -- [15]
+						1120, -- [16]
+						0, -- [17]
+						0, -- [18]
+						83203, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5004,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [2]
+				{
+					["name"] = "Sea Warrior",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 1727712,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 300,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						94929, -- [1]
+						0, -- [2]
+						94931, -- [3]
+						83202, -- [4]
+						94926, -- [5]
+						91807, -- [6]
+						91809, -- [7]
+						96133, -- [8]
+						94933, -- [9]
+						78973, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						66690, -- [15]
+						95352, -- [16]
+						0, -- [17]
+						0, -- [18]
+						83203, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5001,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [3]
+				{
+					["name"] = "Molten Warrior",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 985878,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 400,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						67175, -- [1]
+						0, -- [2]
+						60995, -- [3]
+						83202, -- [4]
+						36809, -- [5]
+						67158, -- [6]
+						36811, -- [7]
+						67796, -- [8]
+						97044, -- [9]
+						67163, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						100003, -- [15]
+						62706, -- [16]
+						0, -- [17]
+						0, -- [18]
+						83203, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5002,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [4]
+				{
+					["name"] = "Zandalri",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 133095,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 500,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						15657, -- [1]
+						0, -- [2]
+						15475, -- [3]
+						83202, -- [4]
+						94766, -- [5]
+						94633, -- [6]
+						96975, -- [7]
+						96973, -- [8]
+						96215, -- [9]
+						97041, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						94730, -- [15]
+						51138, -- [16]
+						0, -- [17]
+						0, -- [18]
+						83203, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5003,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [5]
+				{
+					["name"] = "Forsaken Warrior",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 2394124,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 600,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						103038, -- [1]
+						0, -- [2]
+						103061, -- [3]
+						22037, -- [4]
+						101699, -- [5]
+						101706, -- [6]
+						101704, -- [7]
+						101700, -- [8]
+						101707, -- [9]
+						102972, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						103099, -- [15]
+						102755, -- [16]
+						0, -- [17]
+						0, -- [18]
+						22004, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5005,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [6]
+				{
+					["name"] = "FTH",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 1781051,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 700,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						99333, -- [1]
+						0, -- [2]
+						97395, -- [3]
+						83202, -- [4]
+						105638, -- [5]
+						99342, -- [6]
+						99330, -- [7]
+						97530, -- [8]
+						99319, -- [9]
+						99337, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						100003, -- [15]
+						99967, -- [16]
+						0, -- [17]
+						0, -- [18]
+						83203, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5006,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [7]
+				{
+					["name"] = "Void",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 2917477,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 800,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						107744, -- [1]
+						0, -- [2]
+						107743, -- [3]
+						83202, -- [4]
+						107745, -- [5]
+						107729, -- [6]
+						107515, -- [7]
+						107484, -- [8]
+						108791, -- [9]
+						107539, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						105938, -- [15]
+						62417, -- [16]
+						0, -- [17]
+						0, -- [18]
+						83203, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5007,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [8]
+				{
+					["name"] = "Purple",
+					["type"] = "Saved",
+					["description"] = "",
+					["label"] = "Saved Set",
+					["icon"] = 575824,
+					["limitedTimeSet"] = false,
+					["uiOrder"] = 900,
+					["hiddenUtilCollected"] = false,
+					["items"] = {
+					},
+					["sources"] = {
+						46982, -- [1]
+						0, -- [2]
+						70053, -- [3]
+						83202, -- [4]
+						102791, -- [5]
+						70074, -- [6]
+						102974, -- [7]
+						102971, -- [8]
+						102977, -- [9]
+						102972, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						103108, -- [15]
+						62635, -- [16]
+						0, -- [17]
+						0, -- [18]
+						83203, -- [19]
+					},
+					["isClass"] = true,
+					["setID"] = 5008,
+					["patchID"] = "",
+					["collected"] = true,
+					["favorite"] = false,
+					["expansionID"] = 1,
+				}, -- [9]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+	},
+	["profiles"] = {
+		["Shanyt - Argent Dawn"] = {
+		},
+	},
+}
+BetterWardrobe_SubstituteItemData = {
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+BetterWardrobe_ListData = {
+	["favoritesDB"] = {
+		["profileKeys"] = {
+			["Avisar - Dalaran"] = "Avisar - Dalaran",
+			["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+			["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+			["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+			["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+			["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+			["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		},
+		["profiles"] = {
+			["Shanyt - Argent Dawn"] = {
+			},
+		},
+	},
+	["collectionListDB"] = {
+		["profileKeys"] = {
+			["Avisar - Dalaran"] = "Avisar - Dalaran",
+			["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+			["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+			["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+			["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+			["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+			["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		},
+		["profiles"] = {
+			["Avisar - Dalaran"] = {
+			},
+			["Zulbathal - Zul'jin"] = {
+			},
+			["Shanyt - Argent Dawn"] = {
+			},
+			["Shaekhan - Argent Dawn"] = {
+			},
+			["Varlouris - Dalaran"] = {
+			},
+			["Illingrath - Dalaran"] = {
+			},
+			["Durlok - Black Dragonflight"] = {
+			},
+		},
+	},
+	["lastUpdte"] = 1,
+	["OutfitDB"] = {
+		["profileKeys"] = {
+			["Avisar - Dalaran"] = "Avisar - Dalaran",
+			["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+			["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+			["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+			["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+			["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+			["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		},
+		["char"] = {
+			["Shanyt - Argent Dawn"] = {
+				["lastTransmogOutfitIDSpec"] = {
+					"8", -- [1]
+				},
+			},
+		},
+	},
+	["HiddenAppearanceDB"] = {
+		["profileKeys"] = {
+			["Avisar - Dalaran"] = "Avisar - Dalaran",
+			["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+			["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+			["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+			["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+			["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+			["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		},
+		["profiles"] = {
+			["Shanyt - Argent Dawn"] = {
+			},
+		},
+	},
+}

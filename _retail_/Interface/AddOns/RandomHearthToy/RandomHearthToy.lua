@@ -7,7 +7,7 @@ local frame = CreateFrame("Frame")
 RHT.b = CreateFrame("Button","RHTB",nil,"SecureActionButtonTemplate")
 RHT.b:SetAttribute("type","item")
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
-frame:RegisterEvent("BAG_UPDATE")
+--frame:RegisterEvent("BAG_UPDATE")
 frame:RegisterEvent("UNIT_SPELLCAST_STOP")
 
 local function Event(self, event, arg1, arg2, arg3)
@@ -28,7 +28,7 @@ frame:SetScript("OnEvent", Event)
 
 function GetLearnedStones()
 	HearthToyIndex = {}
-	local stones = {166747, 165802, 165670, 165669, 166746, 163045, 162973, 142542, 64488, 54452, 93672, 168907}
+	local stones = {166747, 165802, 165670, 165669, 166746, 163045, 162973, 142542, 64488, 54452, 93672, 168907, 172179, 182773, 180290, 184353, 183716}
 	for i = 1, table.getn(stones) do
 		if PlayerHasToy(stones[i]) then
 			table.insert(HearthToyIndex, stones[i])
@@ -116,7 +116,7 @@ function RemoveStone(HearthToyIndex, i)
 end
 
 function SpellcastUpdate(spellID)
-	local IDs = {278559, 285362, 285424, 286031, 286353, 286331, 278244, 231504, 94719, 75136, 136508}
+	local IDs = {278559, 285362, 285424, 286031, 286353, 286331, 278244, 231504, 94719, 75136, 136508, 345393, 342122, 308742, 340200, 326064}
 	if not InCombatLockdown() then
 		for i = 1, table.getn(IDs) do
 			if spellID == IDs[i] then

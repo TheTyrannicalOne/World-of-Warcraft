@@ -8,23 +8,24 @@ BFAInvasionTimerDB = {
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -38,6 +39,6 @@ BFAInvasionTimerDB = {
 	},
 }
 BFAInvasionData = {
-	1605488404, -- [1]
-	2, -- [2]
+	1606172406, -- [1]
+	6, -- [2]
 }

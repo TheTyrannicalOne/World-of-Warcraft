@@ -1,11 +1,13 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0405,
+	["LastVersion"] = 2.0406,
+	["LastPlayerFullName"] = "Illingrath-Dalaran",
+	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 122249,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122249::::::::50:581:::1:5805::::|h[Preened Tribal War Feathers]|h|r",
+			["ID"] = 183649,
+			["Level"] = 110,
+			["Link"] = "|cffa335ee|Hitem:183649::::::::50:581:::2:1482:4786:1:28:1401:::|h[Bag of Discarded Entrails]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
@@ -13,9 +15,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:581::11:4:4932:4933:4935:1474::::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122376,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122376::::::::50:581:::1:5805::::|h[Exceptional Stormshroud Shoulders]|h|r",
+			["ID"] = 183556,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183556::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Pauldrons]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -24,19 +26,19 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:183526::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Tunic]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 173815,
-			["Level"] = 76,
-			["Link"] = "|cff0070dd|Hitem:173815::::::::50:581::14:4:6412:6515:1470:4785::::|h[Girdle of the Insatiable Maw]|h|r",
+			["ID"] = 183668,
+			["Level"] = 110,
+			["Link"] = "|cffa335ee|Hitem:183668::::::::50:581:::2:1482:4786:1:28:1401:::|h[Razor-Barbed Leather Belt]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 173442,
-			["Level"] = 76,
-			["Link"] = "|cff0070dd|Hitem:173442::::::::50:581::14:4:6412:6513:1470:4785::::|h[Legwraps of the Insatiable Maw]|h|r",
+			["ID"] = 183531,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183531::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Leggings]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 158241,
-			["Level"] = 58,
-			["Link"] = "|cff1eff00|Hitem:158241::::::::50:581::11:1:4790:1:9:49:::|h[Freebooter Striders]|h|r",
+			["ID"] = 183558,
+			["Level"] = 100,
+			["Link"] = "|cff0070dd|Hitem:183558::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Boots]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 183534,
@@ -49,10 +51,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:183528::::::::50:581::14::1:28:1401:::|h[Argent Conscript's Grips]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 143903,
-			["Level"] = 82,
+			["ID"] = 183673,
+			["Level"] = 110,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:143903::::::::50:581:::1:6423:2:28:2063:9:50:::|h[The Horseman's Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:183673::::::::50:581:::2:1482:4786:1:28:1401:::|h[Nerubian Aegis Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 143903,
@@ -90,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:117356::::::::50:581::11:1:6423:2:9:50:28:2063:::|h[The Horseman's Sinister Slicer]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["LastPlayerFullName"] = "Illingrath-Dalaran",
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128832] = {
 			["Relics"] = {
@@ -106,6 +105,7 @@ PawnOptions = {
 			["Name"] = "The Aldrachi Warblades",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEMONHUNTER",
