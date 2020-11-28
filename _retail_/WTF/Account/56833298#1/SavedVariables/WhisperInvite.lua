@@ -51,9 +51,9 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Varlouris - Dalaran"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 5,
+				["setup"] = 3,
 			},
 		},
 		["Thorinbane - Dalaran"] = {
@@ -66,9 +66,9 @@ WhisperInviteCoreDB = {
 				["setup"] = 1,
 			},
 		},
-		["Kelvalatar - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 4,
+				["setup"] = 5,
 			},
 		},
 		["Ruffinton - Dalaran"] = {
@@ -76,9 +76,9 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Shanyt - Zul'jin"] = {
 			["info"] = {
-				["setup"] = 5,
+				["setup"] = 2,
 			},
 		},
 		["Datgore - Zul'jin"] = {
@@ -96,7 +96,7 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
 			["info"] = {
 				["setup"] = 3,
 			},
@@ -106,24 +106,24 @@ WhisperInviteCoreDB = {
 				["setup"] = 5,
 			},
 		},
-		["Serbitechna - Dalaran"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["info"] = {
 				["setup"] = 3,
 			},
 		},
-		["Shanyt - Zul'jin"] = {
-			["info"] = {
-				["setup"] = 2,
-			},
-		},
-		["Okona - Zul'jin"] = {
+		["Zulbathal - Zul'jin"] = {
 			["info"] = {
 				["setup"] = 5,
 			},
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Kelvalatar - Dalaran"] = {
 			["info"] = {
-				["setup"] = 3,
+				["setup"] = 4,
+			},
+		},
+		["Varlouris - Dalaran"] = {
+			["info"] = {
+				["setup"] = 5,
 			},
 		},
 	},
@@ -134,26 +134,26 @@ WhisperInviteCoreDB = {
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
+		["Malivant - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Malivant - Dalaran"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

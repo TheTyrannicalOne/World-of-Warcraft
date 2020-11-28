@@ -47,12 +47,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57006] = {
-			["title"] = "A Worthy Ally",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/1 Use the Deepflame Campfire", -- [1]
-				"0/1 Choose an ally", -- [2]
-				"0/3 Ally quests complete", -- [3]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[56499] = {
@@ -100,17 +98,16 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
 		[32806] = {
 			["title"] = "The King and the Council",
 			["objectives"] = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
-		[56211] = {
-			["title"] = "Scrying Stones",
-			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[50599] = {
@@ -119,10 +116,11 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[50601] = {
@@ -171,10 +169,12 @@ QuestTogether = {
 				"10/25 Slay Horde Players", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[57006] = {
+			["title"] = "A Worthy Ally",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"0/1 Use the Deepflame Campfire", -- [1]
+				"0/1 Choose an ally", -- [2]
+				"0/3 Ally quests complete", -- [3]
 			},
 		},
 		[56378] = {
@@ -189,7 +189,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

@@ -85,9 +85,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 159665,
-			["Level"] = 85,
-			["Link"] = "|cffa335ee|Hitem:159665::::::::50:71::23:5:4779:6516:6513:1498:4786::::|h[Targe of the Ancient Warder]|h|r",
+			["ID"] = 180749,
+			["Level"] = 110,
+			["Link"] = "|cff0070dd|Hitem:180749::::::::55:71::11:2:6706:6652:2:28:1325:9:53:::|h[Hauk's Battle-Scarred Bulwark]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

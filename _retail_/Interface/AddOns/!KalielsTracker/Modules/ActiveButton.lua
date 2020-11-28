@@ -66,7 +66,7 @@ local function ActiveFrame_Update()
 	if isElvui then
 		yOfs = yOfs - 29
 	end
-	if HasExtraActionBar() then
+	if HasExtraActionBar() or #C_ZoneAbility.GetActiveAbilities() > 0 then
 		yOfs = yOfs + 100
 	end
 	KT:prot(activeFrame, "ClearAllPoints")
@@ -252,6 +252,10 @@ end
 
 local function SetHooks()
 	hooksecurefunc("ExtraActionBar_Update", function()
+		ActiveFrame_Update()
+	end)
+
+	hooksecurefunc(ZoneAbilityFrame, "UpdateDisplayedZoneAbilities", function(self)
 		ActiveFrame_Update()
 	end)
 

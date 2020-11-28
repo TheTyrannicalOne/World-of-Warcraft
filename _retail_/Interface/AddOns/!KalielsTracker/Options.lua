@@ -98,7 +98,7 @@ local defaults = {
 		tooltipShowID = true,
         menuWowheadURL = true,
         menuWowheadURLModifier = "ALT",
-        questDefaultActionMap = false,
+        questDefaultActionMap = true,
 		questShowTags = true,
 
 		messageQuest = true,

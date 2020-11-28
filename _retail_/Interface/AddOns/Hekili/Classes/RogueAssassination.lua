@@ -255,9 +255,9 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
     spec:RegisterStateTable( "stealthed", setmetatable( {}, {
         __index = function( t, k )
             if k == "rogue" then
-                return buff.stealth.up or buff.vanish.up or buff.shadow_dance.up or buff.subterfuge.up
+                return buff.stealth.up or buff.vanish.up or buff.shadow_dance.up or buff.subterfuge.up or buff.sepsis_buff.up
             elseif k == "rogue_remains" then
-                return max( buff.stealth.remains, buff.vanish.remains, buff.shadow_dance.remains, buff.subterfuge.remains )
+                return max( buff.stealth.remains, buff.vanish.remains, buff.shadow_dance.remains, buff.subterfuge.remains, buff.sepsis_buff.remains )
 
             elseif k == "mantle" then
                 return buff.stealth.up or buff.vanish.up
@@ -265,9 +265,9 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
                 return max( buff.stealth.remains, buff.vanish.remains )
             
             elseif k == "all" then
-                return buff.stealth.up or buff.vanish.up or buff.shadow_dance.up or buff.subterfuge.up or buff.shadowmeld.up
+                return buff.stealth.up or buff.vanish.up or buff.shadow_dance.up or buff.subterfuge.up or buff.shadowmeld.up or buff.sepsis_buff.up
             elseif k == "remains" or k == "all_remains" then
-                return max( buff.stealth.remains, buff.vanish.remains, buff.shadow_dance.remains, buff.subterfuge.remains, buff.shadowmeld.remains )
+                return max( buff.stealth.remains, buff.vanish.remains, buff.shadow_dance.remains, buff.subterfuge.remains, buff.shadowmeld.remains, buff.sepsis_buff.remains )
             end
 
             return false
@@ -897,10 +897,13 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
             startsCombat = true,
             texture = 132282,
             
-            usable = function () return stealthed.all or buff.blindside.up, "requires stealth or blindside proc" end,
-            handler = function ()
+            usable = function () return stealthed.all or buff.blindside.up or buff.sepsis_buff.up, "requires stealth or blindside or sepsis proc" end,
+            handler = function ()                
                 gain( 2, "combo_points" )
-                removeBuff( "blindside" )
+                if buff.sepsis_buff.up then removeBuff( "sepsis_buff" )
+                else
+                    removeBuff( "blindside" )
+                end
             end,
         },
         
@@ -938,12 +941,14 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
 
             usable = function ()
                 if boss then return false, "cheap_shot assumed unusable in boss fights" end
-                return stealthed.all or buff.subterfuge.up, "not stealthed"
+                return stealthed.all or buff.subterfuge.up or buff.sepsis_buff.up, "not stealthed"
             end,
 
             handler = function ()
                 applyDebuff( "target", "cheap_shot" )
                 gain( 2, "combo_points" )
+
+                removeBuff( "sepsis_buff" )
 
                 if talent.prey_on_the_weak.enabled then applyDebuff( "target", "prey_on_the_weak" ) end
             end,
@@ -1442,9 +1447,11 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
             startsCombat = true,
             texture = 132310,
 
-            usable = function () return stealthed.all, "requires stealth" end,
+            usable = function () return stealthed.all or buff.sepsis_buff.up, "requires stealth" end,
             handler = function ()
                 applyDebuff( "target", "sap" )
+
+                removeBuff( "sepsis_buff" )
             end,
         },
 
@@ -1796,6 +1803,11 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
                     id = 328305,
                     duration = 10,
                     max_stack = 1,
+                },
+                sepsis_buff = {
+                    id = 347037,
+                    duration = 5,
+                    max_stack = 1
                 }
             }
         },

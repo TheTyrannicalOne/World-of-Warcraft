@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.09 (23rd November 2020)
+-- 	Leatrix Plus 9.0.10 (25th November 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.09"
+	LeaPlusLC["AddonVer"] = "9.0.10"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -7113,10 +7113,19 @@
 				"|Cffffffff" .. L["Warlords of Draenor"] .. " |r#1068826#258", -- interface/cinematics/wod_mainintro.mp3
 				"|Cffffffff" .. L["Darkness Falls"] .. " |r#1068485#91", -- interface/cinematics/wod_vel.mp3
 				"|Cffffffff" .. L["The Battle of Thunder Pass"] .. " |r#1068482#86", -- interface/cinematics/wod_fwv.mp3
+				"|Cffffffff" .. L["And Justice for Thrall"] .. " |r#1068483#157", -- interface/cinematics/wod_gvt.mp3
+				"|Cffffffff" .. L["Into the Portal"] .. " |r#1068480#41", -- interface/cinematics/wod_dpi.mp3
 				"|Cffffffff" .. L["A Taste of Iron"] .. " |r#1068481#44", -- interface/cinematics/wod_dpo.mp3
+				"|Cffffffff" .. L["The Battle for Shattrath"] .. " |r#1068484#138", -- interface/cinematics/wod_sra.mp3
+				"|Cffffffff" .. L["Gul'dan Ascendant"] .. " |r#1112524#139", -- interface/cinematics/wod_gto.mp3
+				"|Cffffffff" .. L["Gul'dan's Plan"] .. " |r#1139556#29", -- interface/cinematics/wod_hfi.mp3
+				"|Cffffffff" .. L["Victory in Draenor!"] .. " |r#1139557#120", -- interface/cinematics/wod_hfo.mp3
+				"|Cffffffff" .. L["Establish Your Garrison (Horde)"] .. " |r#1068476#18", -- interface/cinematics/wod_gar_horde_tier0-1.mp3
+				"|Cffffffff" .. L["Establish Your Garrison (Alliance)"] .. " |r#1068351#21", -- interface/cinematics/wod_gar_alliance_tier0-1.mp3
 				"|Cffffffff" .. L["Bigger is Better (Horde)"] .. " |r#1068475#23", -- interface/cinematics/wod_gar_horde_tier1-2.mp3
 				"|Cffffffff" .. L["Bigger is Better (Alliance)"] .. " |r#1068478#26", -- interface/cinematics/wod_gar_alliance_tier1-2.mp3
-				"|Cffffffff" .. L["Gul'dan Ascendant"] .. " |r#1112524#139", -- interface/cinematics/wod_gto.mp3
+				"|Cffffffff" .. L["My Very Own Castle (Horde)"] .. " |r#1068474#26", -- interface/cinematics/wod_gar_horde_tier2-3.mp3
+				"|Cffffffff" .. L["My Very Own Castle (Alliance)"] .. " |r#1068477#22", -- interface/cinematics/wod_gar_alliance_tier2-3.mp3
 				"|Cffffffff" .. L["Shipyard Construction (Horde)"] .. " |r#1137841#19", -- interface/cinematics/wod_gar_shipyard_lj_h.mp3
 				"|Cffffffff" .. L["Shipyard Construction (Alliance)"] .. " |r#1137839#20", -- interface/cinematics/wod_gar_shipyard_lj_a.mp3
 
@@ -7228,7 +7237,7 @@
 			Zn(L["Movies"], L["Movies"], L["Wrath of the Lich King"]					, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Wrath of the Lich King"], prefol, L["Wrath of the Lich King"] .. " |r(18)", L["Battle of Angrathar the Wrathgate"] .. " |r(14)", L["Fall of the Lich King"] .. " |r(16)"})
 			Zn(L["Movies"], L["Movies"], L["Cataclysm"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Cataclysm"], prefol, L["Cataclysm"] .. " |r(23)", L["Last Stand"] .. " |r(21)", L["Leaving Kezan"] .. " |r(22)", L["The Dragon Soul"] .. " |r(73)", L["Spine of Deathwing"] .. " |r(74)", L["Madness of Deathwing"] .. " |r(75)", L["Fall of Deathwing"] .. " |r(76)"})
 			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["Jade Forest Crash"] .. " |r(121)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
-			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
+			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)",	L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Gul'dan Ascendant"] .. " |r(270)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)"})
 			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["Stormheim (Alliance)"] .. " |r(483)", L["Stormheim (Horde)"] .. " |r(484)", L["Tomb of Sargeras"] .. " |r(486)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["Destiny Unfulfilled"] .. " |r(490)", L["The Nighthold"] .. " |r(549)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Assault on the Broken Shore"] .. " |r(637)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
 			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, 
 				L["Battle for Azeroth"] .. " |r(852)", 

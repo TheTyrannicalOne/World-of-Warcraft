@@ -5,10 +5,10 @@ DialogKeyDB = {
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 	},
 	["global"] = {
 		["shownBindWarning"] = true,

@@ -1,9 +1,7 @@
-## v4.10.16 Changes
+## v4.10.19 Changes
 
-* [Retail] Fixed issue with Rich/Light Illusion Dust transformation
-* [Retail] Fixed issue with tabards showing as disenchantable
-* [Retail] Fixed some issues with disenchanting ratios
-* Fixed issue with buying from the vendor
-* Added `TSM_API.RegisterUICallback` for 3rd-party developers
+* [Retail] Updated prospecting ratios
+* [Retail] Fixed issue with TSM not showing proper stats on SL items
+* [Retail] Fixed SL enchanting not working properly
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

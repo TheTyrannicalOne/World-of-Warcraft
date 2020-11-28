@@ -202,18 +202,16 @@ local function SetupTutorials()
 			shineRight = 11,
 		},
 		{	-- 11
-			text = cTitle.."         What's NEW in version |r|cffffffff4.2.5|r\n\n"..
-					"- FIXED - issue #490 - ElvUI - Error when use Blizzard or other Action Bars\n"..
-					"- FIXED - Collapsed tracker opens after game start (with empty cache)\n"..
-					"- ADDED - New options \"Auto Quest tracking\" and \"Auto Quest progress"..
-					offs.."tracking\"\n"..
-					"- IMPROVED - Modules order\n"..
-					"- IMPROVED - TomTom support\n"..
-					"- UPDATED - Active Button - Support for Tukui mover\n"..
-					"- UPDATED - Addon support - Masque 9.0.4\n"..
-					"- UPDATED - Addon support - ElvUI 12.13, Tukui 20.09, RealUI 2.2.5,"..
-					offs.."SpartanUI 6.0.14\n"..
-					"- UPDATED - Help\n\n"..
+			text = cTitle.."         What's NEW in version |r|cffffffff4.2.8|r\n\n"..
+					"- FIXED - TomTom support - When support enabled, Calling quests generate"..
+					offs.."map loop and FPS drop\n\n"..
+
+					cTitle.."What's NEW in version |r|cffffffff4.2.7|r\n\n"..
+					"- ADDED - Support for Jailer's Tower (Torghast)\n"..
+					"- FIXED - issue #504 - Error when clicking on Q/WQ POI on map, with TomTom"..
+					offs.."support enabled\n"..
+					"- FIXED - Active Button - Wrong position, when Zone Ability is active\n"..
+					"- UPDATED - Lib - MSA-DropDownMenu-1.0\n\n"..
 
                     cTitle.."WoW 9.0.2 - Known issues w/o solution|r\n"..
                     "- Clicking on tracked quests or achievements has no response during combat.\n"..

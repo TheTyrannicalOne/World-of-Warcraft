@@ -109,6 +109,10 @@ local function SetWaypointTag(button, show)
 end
 
 local function AddWaypoint(questID, isSilent)
+	if C_QuestLog.IsQuestCalling(questID) then
+		return false
+	end
+
 	local title, mapID
 	local x, y, completed
 	if QuestUtils_IsQuestWorldQuest(questID) then
@@ -242,7 +246,9 @@ local function SetHooks()
 	local bck_QuestPOI_GetButton = QuestPOI_GetButton
 	QuestPOI_GetButton = function(parent, questID, style, index)
 		local poiButton = bck_QuestPOI_GetButton(parent, questID, style, index)
-		SetWaypointTag(poiButton, questWaypoints[questID])
+		if poiButton then
+			SetWaypointTag(poiButton, questWaypoints[questID])
+		end
 		return poiButton
 	end
 

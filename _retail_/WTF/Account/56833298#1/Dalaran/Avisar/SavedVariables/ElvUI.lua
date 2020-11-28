@@ -3,226 +3,28 @@ ElvCharacterDB = {
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
-		"/sleep", -- [1]
-		"/cw Nelfdrid-Korialstrasz ty", -- [2]
-		"/cw Bourbonn-Dalaran TY", -- [3]
-		"/dance", -- [4]
-		"/sit", -- [5]
-		"/skada hide", -- [6]
-		"/s idk", -- [7]
-		"/ltp", -- [8]
-		"/fishingbuddy", -- [9]
-		"/skada toggle", -- [10]
-		"/s got to beat it all the way through i think", -- [11]
-		"/wave", -- [12]
-		"/reload", -- [13]
-		"/cw Willderhide-Stormrage all good thanks", -- [14]
-		"/cw Genieb-ShatteredHalls TY!", -- [15]
-		"/s then chest?", -- [16]
-		"/invite ailden-bladefist", -- [17]
-		"/flirt", -- [18]
-		"/kiss", -- [19]
-		"/allthethings", -- [20]
+		"/cw Bourbonn-Dalaran TY", -- [1]
+		"/dance", -- [2]
+		"/sit", -- [3]
+		"/skada hide", -- [4]
+		"/s idk", -- [5]
+		"/ltp", -- [6]
+		"/fishingbuddy", -- [7]
+		"/skada toggle", -- [8]
+		"/s got to beat it all the way through i think", -- [9]
+		"/wave", -- [10]
+		"/reload", -- [11]
+		"/cw Willderhide-Stormrage all good thanks", -- [12]
+		"/cw Genieb-ShatteredHalls TY!", -- [13]
+		"/s then chest?", -- [14]
+		"/invite ailden-bladefist", -- [15]
+		"/flirt", -- [16]
+		"/kiss", -- [17]
+		"/allthethings", -- [18]
+		"/aap", -- [19]
+		"/hekili", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"an Argent Healer", -- [1]
-			"Formrage-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Formrage-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2005, -- [11]
-			"Player-3683-0A92BEC2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Formrage|r",
-			[51] = 1605730246,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"ahh the bfa loading screen come back to normal :D", -- [1]
-			"Rudiblade-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Rudiblade-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2007, -- [11]
-			"Player-3683-0BB9501F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cRudiblade|r",
-			[51] = 1605730252,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"its sad no one knows how an election works", -- [1]
-			"Tonygabbagoo-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tonygabbagoo-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2008, -- [11]
-			"Player-3683-0CBADFD6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Tonygabbagoo|r",
-			[51] = 1605730254,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"and the second half ", -- [1]
-			"Tonygabbagoo-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tonygabbagoo-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2009, -- [11]
-			"Player-3683-0CBADFD6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Tonygabbagoo|r",
-			[51] = 1605730263,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"No Silenar, we're talking about meanies, handies AND blowies", -- [1]
-			"Falbeast-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Falbeast-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2011, -- [11]
-			"Player-3683-085CA06E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Falbeast|r",
-			[51] = 1605730269,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"Not about politics", -- [1]
-			"Falbeast-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Falbeast-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2012, -- [11]
-			"Player-3683-085CA06E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Falbeast|r",
-			[51] = 1605730276,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"pig bussy", -- [1]
-			"Krimkey-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Krimkey-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2013, -- [11]
-			"Player-3683-0CB9E81B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcKrimkey|r",
-			[51] = 1605730278,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"its sad no biden bois whispered me saying they were ready to assemble", -- [1]
-			"Dårknèss-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dårknèss-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2015, -- [11]
-			"Player-3683-0BAF9BE7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edDårknèss|r",
-			[51] = 1605730291,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"oh yes joe biden and kamila hariis totally have our best interest in mind cant wait", -- [1]
-			"Leiyestra-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Leiyestra-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2016, -- [11]
-			"Player-3683-0CB499CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Leiyestra|r",
-			[51] = 1605730297,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
 		{
 			"so excited", -- [1]
 			"Gauia-Dalaran", -- [2]
@@ -244,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Gauia|r",
 			[51] = 1605730307,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [1]
 		{
 			"need a tank for mechagon part 2 will pay 500 Gold for the run", -- [1]
 			"Tyralious-Dalaran", -- [2]
@@ -266,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralious|r",
 			[51] = 1605730311,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [2]
 		{
 			"totally not going to line their own pockets", -- [1]
 			"Leiyestra-Dalaran", -- [2]
@@ -288,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Leiyestra|r",
 			[51] = 1605730315,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [3]
 		{
 			"No one cares you chickpea", -- [1]
 			"Falbeast-Dalaran", -- [2]
@@ -310,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Falbeast|r",
 			[51] = 1605730325,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [4]
 		{
 			"dont care if he does", -- [1]
 			"Alodine-Dalaran", -- [2]
@@ -332,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlodine|r",
 			[51] = 1605730326,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [5]
 		{
 			"yeah we know you guys dont", -- [1]
 			"Leiyestra-Dalaran", -- [2]
@@ -354,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Leiyestra|r",
 			[51] = 1605730332,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [6]
 		{
 			"\"we\" you", -- [1]
 			"Alodine-Dalaran", -- [2]
@@ -376,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlodine|r",
 			[51] = 1605730342,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [7]
 		{
 			"its pretty sad", -- [1]
 			"Leiyestra-Dalaran", -- [2]
@@ -398,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Leiyestra|r",
 			[51] = 1605730346,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [8]
 		{
 			"remember when trump was literally found using russia to alter the elections in 2016 and now conservatives are upset", -- [1]
 			"Alven-Dalaran", -- [2]
@@ -420,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAlven|r",
 			[51] = 1605730348,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [9]
 		{
 			"?", -- [1]
 			"Rollerballz-Dalaran", -- [2]
@@ -442,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rollerballz|r",
 			[51] = 1605730361,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [10]
 		{
 			"OMFG please, not like this. NO POLITICS", -- [1]
 			"Falbeast-Dalaran", -- [2]
@@ -464,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Falbeast|r",
 			[51] = 1605730364,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [11]
 		{
 			"this time fraud is real tho", -- [1]
 			"Alodine-Dalaran", -- [2]
@@ -486,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlodine|r",
 			[51] = 1605730367,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [12]
 		{
 			"no", -- [1]
 			"Bluebeetlz-Dalaran", -- [2]
@@ -508,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBluebeetlz|r",
 			[51] = 1605730382,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [13]
 		{
 			"need a tank for mechagon part 2 will pay 500 Gold for the run", -- [1]
 			"Tyralious-Dalaran", -- [2]
@@ -530,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralious|r",
 			[51] = 1605730387,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [14]
 		{
 			"guys please dtop bringing irl problems into wow", -- [1]
 			"Crystalwarri-Dalaran", -- [2]
@@ -552,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cCrystalwarri|r",
 			[51] = 1605730390,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [15]
 		{
 			"wow is irl problems", -- [1]
 			"Alodine-Dalaran", -- [2]
@@ -574,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlodine|r",
 			[51] = 1605730397,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [16]
 		{
 			"stop talking about politics!Q!!!!!!!!!!!!!!!!!lets talk about how girl in red released a new song today", -- [1]
 			"Gwandyl-Dalaran", -- [2]
@@ -596,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Gwandyl|r",
 			[51] = 1605730400,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [17]
 		{
 			"WTS|cffa335ee|Hitem:168830::::::::50:250:::::::|h[Aerial Unit R-21/X]|h|r! Hardmode Mechagon Mount! Fly the Zapper Today!", -- [1]
 			"Saktwo-Dalaran", -- [2]
@@ -618,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSaktwo|r",
 			[51] = 1605730402,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [18]
 		{
 			"girls are smelly ", -- [1]
 			"Dårknèss-Dalaran", -- [2]
@@ -640,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDårknèss|r",
 			[51] = 1605730415,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [19]
 		{
 			"Trump was Trumped. Plain and simple", -- [1]
 			"Icekrispies-Dalaran", -- [2]
@@ -662,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaIcekrispies|r",
 			[51] = 1605730416,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [20]
 		{
 			"Selling sweet pet!! Super cheap pst me", -- [1]
 			"Solizmir-Dalaran", -- [2]
@@ -684,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Solizmir|r",
 			[51] = 1605730417,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [21]
 		{
 			"Yes, WoW is our fantasy escape.  Where are my goth girls?", -- [1]
 			"Rollerballz-Dalaran", -- [2]
@@ -706,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rollerballz|r",
 			[51] = 1605730418,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [22]
 		{
 			"remember how that was proven to be bullshit?  and now the dems don't want any investigations of biden goin on cause its now called obstruction?  ", -- [1]
 			"Astarean-Dalaran", -- [2]
@@ -728,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAstarean|r",
 			[51] = 1605730425,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [23]
 		{
 			"where are my mens at", -- [1]
 			"Dårknèss-Dalaran", -- [2]
@@ -750,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDårknèss|r",
 			[51] = 1605730427,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [24]
 		{
 			"Vtubers are my escape", -- [1]
 			"Alodine-Dalaran", -- [2]
@@ -772,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAlodine|r",
 			[51] = 1605730430,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [25]
 		{
 			"NOBODY CARES ASTAREAN", -- [1]
 			"Falbeast-Dalaran", -- [2]
@@ -794,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Falbeast|r",
 			[51] = 1605730437,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [26]
 		{
 			"You smell like old, milky fartsà", -- [1]
 			"Falbeast-Dalaran", -- [2]
@@ -816,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Falbeast|r",
 			[51] = 1605730447,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [27]
 		{
 			"Selling sweet PET CHEAP PST ME |cff0070dd|Hbattlepet:1802:1:3:158:11:11:0000000000000000:66155|h[Fetid Waveling]|h|r", -- [1]
 			"Solizmir-Dalaran", -- [2]
@@ -838,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Solizmir|r",
 			[51] = 1605730454,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [28]
 		{
 			"oh no", -- [1]
 			"Dårknèss-Dalaran", -- [2]
@@ -860,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDårknèss|r",
 			[51] = 1605730460,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [29]
 		{
 			"is that stupid zombie event over", -- [1]
 			"Jarenko-Dalaran", -- [2]
@@ -882,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cJarenko|r",
 			[51] = 1605730462,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [30]
 		{
 			"WHO ARE YOU PEOPLE?", -- [1]
 			"Maridene-Dalaran", -- [2]
@@ -904,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMaridene|r",
 			[51] = 1605730463,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [31]
 		{
 			"btw to leave trade chat the command is /leave trade", -- [1]
 			"Gwandyl-Dalaran", -- [2]
@@ -926,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Gwandyl|r",
 			[51] = 1605730471,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [32]
 		{
 			"No Gwandyl, too soon", -- [1]
 			"Falbeast-Dalaran", -- [2]
@@ -948,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Falbeast|r",
 			[51] = 1605730482,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [33]
 		{
 			"i understand that YOU don't care,, but just blind ignorance to say that nobody cares", -- [1]
 			"Astarean-Dalaran", -- [2]
@@ -970,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAstarean|r",
 			[51] = 1605730489,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [34]
 		{
 			"its raining men, halleujiah its raining men", -- [1]
 			"Dårknèss-Dalaran", -- [2]
@@ -992,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDårknèss|r",
 			[51] = 1605730490,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [35]
 		{
 			"need a tank for mechagon part 2 will pay 500 Gold for the run", -- [1]
 			"Tyralious-Dalaran", -- [2]
@@ -1014,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralious|r",
 			[51] = 1605730492,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [36]
 		{
 			"WTB bean salad", -- [1]
 			"Infest-Dalaran", -- [2]
@@ -1036,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edInfest|r",
 			[51] = 1605730506,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [37]
 		{
 			"Yeah, sure Astarean. Anyways, where were we?", -- [1]
 			"Falbeast-Dalaran", -- [2]
@@ -1058,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Falbeast|r",
 			[51] = 1605730521,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [38]
 		{
 			"|cff0070dd|Hbattlepet:1802:1:3:158:11:11:0000000000000000:66155|h[Fetid Waveling]|h|r SELLING PST ME", -- [1]
 			"Solizmir-Dalaran", -- [2]
@@ -1080,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Solizmir|r",
 			[51] = 1605730523,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [39]
 		{
 			"Ahh, yes. We were talking about goth handies!", -- [1]
 			"Falbeast-Dalaran", -- [2]
@@ -1102,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Falbeast|r",
 			[51] = 1605730546,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [40]
 		{
 			"Can we stop arguing about a topic as contentious as fast-food and move on to more civilized topics... like politics?  =P", -- [1]
 			"Lythe-Dalaran", -- [2]
@@ -1124,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lythe|r",
 			[51] = 1606108272,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [41]
 		{
 			"did shadowlands drop or what???? no start quest?", -- [1]
 			"Wickedbolts-Dalaran", -- [2]
@@ -1146,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edWickedbolts|r",
 			[51] = 1606108275,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [42]
 		{
 			"tomarrow", -- [1]
 			"Matrixwolf-Dalaran", -- [2]
@@ -1168,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Matrixwolf|r",
 			[51] = 1606108281,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [43]
 		{
 			"not yet", -- [1]
 			"Darkchemical-Dalaran", -- [2]
@@ -1190,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDarkchemical|r",
 			[51] = 1606108289,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [44]
 		{
 			"Trump will win 2020", -- [1]
 			"Jarenko-Dalaran", -- [2]
@@ -1212,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cJarenko|r",
 			[51] = 1606108292,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [45]
 		{
 			"Wts |cff0070dd|Hbattlepet:264:1:3:155:12:10:0000000000000000:34262|h[Crawling Claw]|h|r110k OBO pst me 40k+ cheaper than AH! save some money on a dope pet!", -- [1]
 			"Kinkylock-Dalaran", -- [2]
@@ -1234,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edKinkylock|r",
 			[51] = 1606108293,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [46]
 		{
 			"tomato", -- [1]
 			"Fullmoonkin-Dalaran", -- [2]
@@ -1256,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Fullmoonkin|r",
 			[51] = 1606108299,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [47]
 		{
 			"dammit I thought it dropped at midnight", -- [1]
 			"Wickedbolts-Dalaran", -- [2]
@@ -1278,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edWickedbolts|r",
 			[51] = 1606108305,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [48]
 		{
 			"prediction is he'll flip a couple states through the legislatures and win in December", -- [1]
 			"Jarenko-Dalaran", -- [2]
@@ -1300,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cJarenko|r",
 			[51] = 1606108307,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [49]
 		{
 			"Lol nah.", -- [1]
 			"Postpunk-Dalaran", -- [2]
@@ -1322,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePostpunk|r",
 			[51] = 1606108314,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [50]
 		{
 			"tomorrow 3pm pacific time", -- [1]
 			"Hydrolase-Dalaran", -- [2]
@@ -1344,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Hydrolase|r",
 			[51] = 1606108319,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [51]
 		{
 			"^^", -- [1]
 			"Khaaferrnus-Dalaran", -- [2]
@@ -1366,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Khaaferrnus|r",
 			[51] = 1606108324,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [52]
 		{
 			"ahhh man ok ty ty", -- [1]
 			"Wickedbolts-Dalaran", -- [2]
@@ -1388,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edWickedbolts|r",
 			[51] = 1606108329,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [53]
 		{
 			"How about predictions about the next German general election? I'd say Merkel is replaced", -- [1]
 			"Cleveland-Dalaran", -- [2]
@@ -1410,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cCleveland|r",
 			[51] = 1606108338,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [54]
 		{
 			"no, its tomarrow", -- [1]
 			"Fullmoonkin-Dalaran", -- [2]
@@ -1432,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Fullmoonkin|r",
 			[51] = 1606108346,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [55]
 		{
 			"agreed", -- [1]
 			"Jarenko-Dalaran", -- [2]
@@ -1454,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cJarenko|r",
 			[51] = 1606108347,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [56]
 		{
 			"and that's the same time for everywhere", -- [1]
 			"Hydrolase-Dalaran", -- [2]
@@ -1476,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Hydrolase|r",
 			[51] = 1606108347,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [57]
 		{
 			"6pm est", -- [1]
 			"Chrump-Dalaran", -- [2]
@@ -1498,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edChrump|r",
 			[51] = 1606108362,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [58]
 		{
 			"Wts |cff0070dd|Hbattlepet:264:1:3:155:12:10:0000000000000000:34262|h[Crawling Claw]|h|r110k OBO pst me 40k+ cheaper than AH! save some money on a dope pet!", -- [1]
 			"Kinkylock-Dalaran", -- [2]
@@ -1520,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edKinkylock|r",
 			[51] = 1606108368,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [59]
 		{
 			"Hello! |cffffd100|HclubFinder:ClubFinder-1-193316-3683-94294873|h[Guild: Backpacks]|h|r 12/12H is looking to stitch together some raiders for shadowlands progression! To apply send a message on discord to BackpacksGuild#9755 for a short interview!", -- [1]
 			"Cmiaw-Dalaran", -- [2]
@@ -1542,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcCmiaw|r",
 			[51] = 1606108412,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [60]
 		{
 			"can anyone make glyphs. aint none on the AH", -- [1]
 			"Wtbworldtree-Dalaran", -- [2]
@@ -1564,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wtbworldtree|r",
 			[51] = 1606108429,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [61]
 		{
 			"you're doing something wrong", -- [1]
 			"Apheleiå-Dalaran", -- [2]
@@ -1586,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Apheleiå|r",
 			[51] = 1606108448,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [62]
 		{
 			"Wts |cff0070dd|Hbattlepet:264:1:3:155:12:10:0000000000000000:34262|h[Crawling Claw]|h|r110k OBO pst me 40k+ cheaper than AH! save some money on a dope pet!", -- [1]
 			"Kinkylock-Dalaran", -- [2]
@@ -1608,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edKinkylock|r",
 			[51] = 1606108448,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [63]
 		{
 			"inscriptionist, but glyphs are basically dead", -- [1]
 			"Hydrolase-Dalaran", -- [2]
@@ -1630,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Hydrolase|r",
 			[51] = 1606108452,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [64]
 		{
 			"is inscription a useful profession anymore or is it a joke now", -- [1]
 			"Jarenko-Dalaran", -- [2]
@@ -1652,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cJarenko|r",
 			[51] = 1606108458,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [65]
 		{
 			"Joke", -- [1]
 			"Vaelien-Dalaran", -- [2]
@@ -1674,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Vaelien|r",
 			[51] = 1606108464,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [66]
 		{
 			"Everything a scribe can make you can buy on the AH for dirt cheap", -- [1]
 			"Vaelien-Dalaran", -- [2]
@@ -1696,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Vaelien|r",
 			[51] = 1606108475,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [67]
 		{
 			"aint dead if u wanna change your travel form or water form", -- [1]
 			"Wtbworldtree-Dalaran", -- [2]
@@ -1718,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wtbworldtree|r",
 			[51] = 1606108481,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [68]
 		{
 			"selling Mythic+11-20keys Carry-Get115-120ilvl gears and weekly chest 130ilvl+aBattle for Azeroth-Keystone Master+void wing mount Pst !", -- [1]
 			"Braletht-Dalaran", -- [2]
@@ -1740,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Braletht|r",
 			[51] = 1606108492,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [69]
 		{
 			"the glyphs are not on here, im looking now", -- [1]
 			"Wtbworldtree-Dalaran", -- [2]
@@ -1762,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wtbworldtree|r",
 			[51] = 1606108493,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [70]
 		{
 			"Good luck. Selling glyphs is hard af", -- [1]
 			"Vaelien-Dalaran", -- [2]
@@ -1784,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Vaelien|r",
 			[51] = 1606108494,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [71]
 		{
 			"Wts |cff0070dd|Hbattlepet:264:1:3:155:12:10:0000000000000000:34262|h[Crawling Claw]|h|r110k OBO pst me 40k+ cheaper than AH! save some money on a dope pet!", -- [1]
 			"Kinkylock-Dalaran", -- [2]
@@ -1806,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edKinkylock|r",
 			[51] = 1606108498,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [72]
 		{
 			"what glyphs", -- [1]
 			"Apheleiå-Dalaran", -- [2]
@@ -1828,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Apheleiå|r",
 			[51] = 1606108503,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [73]
 		{
 			"was wanting the travel form doe and the whale water form", -- [1]
 			"Wtbworldtree-Dalaran", -- [2]
@@ -1850,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wtbworldtree|r",
 			[51] = 1606108523,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [74]
 		{
 			"some of them are called 'Marks' now, like Glyph of the Doe is now Mark of the Doe", -- [1]
 			"Apheleiå-Dalaran", -- [2]
@@ -1872,7 +1674,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Apheleiå|r",
 			[51] = 1606108523,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [75]
 		{
 			"probably because nobody does them anymore because they're purely cosmetic", -- [1]
 			"Hydrolase-Dalaran", -- [2]
@@ -1894,7 +1696,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Hydrolase|r",
 			[51] = 1606108530,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [76]
 		{
 			"Of course theres nothing on the AH rn. Everythings getting bought and sold for last gold push before tomrrow", -- [1]
 			"Vaelien-Dalaran", -- [2]
@@ -1916,7 +1718,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Vaelien|r",
 			[51] = 1606108534,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [77]
 		{
 			"i see that Apheleiå-Dalaran", -- [1]
 			"Wtbworldtree-Dalaran", -- [2]
@@ -1938,7 +1740,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wtbworldtree|r",
 			[51] = 1606108544,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [78]
 		{
 			"thanks for the help", -- [1]
 			"Wtbworldtree-Dalaran", -- [2]
@@ -1960,7 +1762,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wtbworldtree|r",
 			[51] = 1606108547,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [79]
 		{
 			"is pilgrim's bounty happening this year ?", -- [1]
 			"Burntcrysler-Dalaran", -- [2]
@@ -1982,7 +1784,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Burntcrysler|r",
 			[51] = 1606108564,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [80]
 		{
 			"dunno why people are complaining, Inscription will probably be best profession in SL", -- [1]
 			"Apheleiå-Dalaran", -- [2]
@@ -2004,7 +1806,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Apheleiå|r",
 			[51] = 1606108580,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [81]
 		{
 			"with the launch probably, or so the calendar says", -- [1]
 			"Hydrolase-Dalaran", -- [2]
@@ -2026,7 +1828,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Hydrolase|r",
 			[51] = 1606108582,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [82]
 		{
 			"who watches curb?", -- [1]
 			"Faber-Dalaran", -- [2]
@@ -2048,7 +1850,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Faber|r",
 			[51] = 1606108587,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [83]
 		{
 			"or soccer", -- [1]
 			"Faber-Dalaran", -- [2]
@@ -2070,7 +1872,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Faber|r",
 			[51] = 1606108599,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [84]
 		{
 			"wts|cffa335ee|Hitem:30722::::::::50:577:::::::|h[Ethereum Nexus-Reaver]|h|rPopular tmog!cheaper than AH! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -2092,7 +1894,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1606108611,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [85]
 		{
 			"where do you start the quests for Pilgrim's Bounty ?", -- [1]
 			"Burntcrysler-Dalaran", -- [2]
@@ -2114,7 +1916,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Burntcrysler|r",
 			[51] = 1606108617,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [86]
 		{
 			"liverpool DESTROYED leicster today", -- [1]
 			"Faber-Dalaran", -- [2]
@@ -2136,7 +1938,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Faber|r",
 			[51] = 1606108618,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [87]
 		{
 			"So what kinda gear is gonna drop in the first zone of SL", -- [1]
 			"Chrump-Dalaran", -- [2]
@@ -2158,7 +1960,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edChrump|r",
 			[51] = 1606108620,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [88]
 		{
 			"Wts |cff0070dd|Hbattlepet:264:1:3:155:12:10:0000000000000000:34262|h[Crawling Claw]|h|r110k OBO pst me 40k+ cheaper than AH! save some money on a dope pet!", -- [1]
 			"Kinkylock-Dalaran", -- [2]
@@ -2180,7 +1982,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edKinkylock|r",
 			[51] = 1606108624,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [89]
 		{
 			"it'll be the same professions as usual alchemy and cooking...... lol", -- [1]
 			"Hydrolase-Dalaran", -- [2]
@@ -2201,6 +2003,204 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cffc31d39Hydrolase|r",
 			[51] = 1606108681,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"WTT Darkmoon cards! We can both complete sets. PST", -- [1]
+			"Skàmunist-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Skàmunist-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			80, -- [11]
+			"Player-3683-0BF28710", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeSkàmunist|r",
+			[51] = 1606255133,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"WTS |cff0070dd|Hitem:173078::::::::50:265::13:::::|h[Darkmoon Deck: Repose]|h|r|cff0070dd|Hitem:173087::::::::50:265::13:::::|h[Darkmoon Deck: Voracity]|h|r|cff0070dd|Hitem:173069::::::::50:265::13:::::|h[Darkmoon Deck: Putrescence]|h|r", -- [1]
+			"Guncanos-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Guncanos-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			81, -- [11]
+			"Player-3683-0AF56C3F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edGuncanos|r",
+			[51] = 1606255167,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"WHOA. How does someone have |cff71d5ff|Hspell:334352:0|h[Wildseed Cradle]|h|r already!?", -- [1]
+			"Caldric-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Caldric-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			82, -- [11]
+			"Player-3683-0CD4A880", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Caldric|r",
+			[51] = 1606255174,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"It's easy to get", -- [1]
+			"Snowrayvn-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Snowrayvn-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			83, -- [11]
+			"Player-3683-0B9946DD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaSnowrayvn|r",
+			[51] = 1606255183,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"I thought its a rare drop?", -- [1]
+			"Caldric-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Caldric-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			84, -- [11]
+			"Player-3683-0CD4A880", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Caldric|r",
+			[51] = 1606255189,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"I have |cff71d5ff|Hspell:332252:0|h[Shimmermist Runner]|h|r already. And no it's not a rare drop.", -- [1]
+			"Snowrayvn-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Snowrayvn-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			85, -- [11]
+			"Player-3683-0B9946DD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaSnowrayvn|r",
+			[51] = 1606255199,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"I thought |cff71d5ff|Hspell:332252:0|h[Shimmermist Runner]|h|r and the seed are things you have to camp?", -- [1]
+			"Caldric-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Caldric-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			86, -- [11]
+			"Player-3683-0CD4A880", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Caldric|r",
+			[51] = 1606251622,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"Shimmermist Runner is a rare spawn. I went to kill the lvl 60 elite at lvl 57.", -- [1]
+			"Snowrayvn-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Snowrayvn-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			92, -- [11]
+			"Player-3683-0B9946DD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaSnowrayvn|r",
+			[51] = 1606251646,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"are mythic dungeons open yet", -- [1]
+			"Joshwiles-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Joshwiles-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			93, -- [11]
+			"Player-3683-0C09BFA2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Joshwiles|r",
+			[51] = 1606251652,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
