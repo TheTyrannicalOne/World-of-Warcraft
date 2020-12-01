@@ -7,8 +7,8 @@ Omen3DB = {
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
@@ -17,8 +17,8 @@ Omen3DB = {
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -73,15 +73,15 @@ Omen3DB = {
 			["VGrip1"] = 144.0753260364662,
 			["PositionX"] = 1663.17138671875,
 		},
-		["Shimzo - Zul'jin"] = {
-			["Shown"] = false,
-			["PositionY"] = 675.0000610351562,
-			["PositionX"] = 954.1666870117188,
-		},
 		["Jingojaggot - Zul'jin"] = {
 			["Shown"] = false,
 			["PositionY"] = 795,
 			["PositionX"] = 1167.5,
+		},
+		["Shimzo - Zul'jin"] = {
+			["Shown"] = false,
+			["PositionY"] = 675.0000610351562,
+			["PositionX"] = 954.1666870117188,
 		},
 		["Shaekhan - Zul'jin"] = {
 			["Shown"] = false,
@@ -131,12 +131,12 @@ Omen3DB = {
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
 		},
+		["Malivant - Dalaran"] = {
+		},
 		["Datgore - Zul'jin"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.0000610351562,
 			["PositionX"] = 954.1666870117188,
-		},
-		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 			["VGrip2"] = 204.125044622081,

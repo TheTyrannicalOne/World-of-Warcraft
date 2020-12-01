@@ -2436,6 +2436,7 @@ Database:AddChain(Chain.EmbedChain07, {
         {
             type = "item",
             id = 182738,
+            breadcrumb = true,
             locations = {
                 [1525] = {
                     {
@@ -2655,10 +2656,6 @@ Database:AddCategory(CATEGORY_ID, {
         {
             type = "chain",
             id = Chain.Chain07,
-        },
-        {
-            type = "chain",
-            id = Chain.Chain09,
         },
     },
 })

@@ -1,7 +1,5 @@
-## v4.10.19 Changes
+## v4.10.22 Changes
 
-* [Retail] Updated prospecting ratios
-* [Retail] Fixed issue with TSM not showing proper stats on SL items
-* [Retail] Fixed SL enchanting not working properly
+* [Retail] Disenchant value and ratio fixes
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

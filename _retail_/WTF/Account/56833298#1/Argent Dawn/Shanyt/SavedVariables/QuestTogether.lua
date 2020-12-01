@@ -101,10 +101,10 @@ QuestTogether = {
 				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[13720] = {
+			["title"] = "The Valiant's Charge",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"2/25 Valiant's Seal", -- [1]
 			},
 		},
 		[47129] = {
@@ -114,10 +114,10 @@ QuestTogether = {
 				"1/1 Seal of the Deceiver", -- [2]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[57567] = {
@@ -153,23 +153,23 @@ QuestTogether = {
 				"443/500 Earn Conquest", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
-		[13720] = {
-			["title"] = "The Valiant's Charge",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"2/25 Valiant's Seal", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

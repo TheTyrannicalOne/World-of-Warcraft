@@ -18893,8 +18893,7 @@ L["Alt Guild Bank"] = "小号工会银行"
 L["Alts"] = "小号"
 L["Alts AH"] = "小号AH"
 L["Amount"] = "数量"
---[[Translation missing --]]
-L["Amount kept in bags"] = "Amount kept in bags"
+L["Amount kept in bags"] = "背包中保存的数量"
 L["Amount of bag space to keep free"] = "可用背包空间"
 L["An old TSM addon was found installed. Please remove %s and any other old TSM addons to avoid issues."] = "发现已安装旧的TSM插件。请删除%s和任何其他旧的TSM插件，以避免出现问题。"
 L["App Not Synced"] = "应用未同步"
@@ -18925,10 +18924,8 @@ L["AuctionDB - Region Market Value Average (via TSM App)"] = "拍卖行数据库
 L["AuctionDB - Region Minimum Buyout Average (via TSM App)"] = "拍卖行数据库-地区最低一口价平均值（通过TSM应用）"
 L["AuctionDB - Region Sale Average (via TSM App)"] = "拍卖数据库-区域销售均值（通过TSM应用）"
 L["AuctionDB - Region Sale Rate (via TSM App)"] = "TSM数据库-所选区域成交率（数据引自 TSM App）"
---[[Translation missing --]]
-L["AuctionDB - Region Sold Per Day (via TSM App)"] = "AuctionDB - Region Sold Per Day (via TSM App)"
---[[Translation missing --]]
-L["AuctionDB Realm Data is %s Old"] = "AuctionDB Realm Data is %s Old"
+L["AuctionDB - Region Sold Per Day (via TSM App)"] = "AuctionDB - 每日地区成交量 (通过 TSM App)"
+L["AuctionDB Realm Data is %s Old"] = "AuctionDB 服务器数据是 %s 过期"
 --[[Translation missing --]]
 L["AuctionDB Region Data is %s Old"] = "AuctionDB Region Data is %s Old"
 L["Auctioneer - Appraiser"] = "Auctioneer - 估价"

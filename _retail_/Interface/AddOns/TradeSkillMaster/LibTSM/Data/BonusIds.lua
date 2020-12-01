@@ -1753,7 +1753,6 @@ local ALL_BONUS_ID_MAP = {
 	[3520] = 3520,
 	[3521] = 3521,
 	[3522] = 3522,
-	[3524] = 3524,
 	[3526] = 3526,
 	[3527] = 3527,
 	[3528] = 3528,
@@ -3295,8 +3294,12 @@ function private.FilterBonusIds(bonusIds, map)
 		end
 		sort(private.bonusIdTemp)
 		cache.num = #private.bonusIdTemp - adjust
-		cache.bonusIds = table.concat(private.bonusIdTemp, ":")
-		cache.value = strjoin(":", cache.num, cache.bonusIds)
+		if cache.num == 0 then
+			cache.value = ""
+		else
+			local str = table.concat(private.bonusIdTemp, ":")
+			cache.value = strjoin(":", cache.num, str)
+		end
 	end
 	return cache.value
 end
