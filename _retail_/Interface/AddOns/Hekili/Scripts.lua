@@ -436,6 +436,8 @@ do
 
         { "^!?consecration.up",                     "consecration.remains" }, -- Prot Paladin
         { "^!?contagion<=?(.-)",                    "contagion-%1" }, -- Affliction Warlock
+
+        { "^time_to_imps%.(.+)$",                   "time_to_imps[%1]" }, -- Demo Warlock
         
         { "^!?action%.([a-z0-9_]+)%.in_flight$",    "action.%1.in_flight_remains" }, -- Fire Mage, but others too, potentially.
 
@@ -1334,6 +1336,10 @@ local scriptsLoaded = false
 
 local function scriptLoader()
     if not scriptsLoaded then scripts:LoadScripts() end
+end
+
+function Hekili:ScriptsLoaded()
+    return scriptsLoaded
 end
 
 

@@ -120,3 +120,5 @@ SET physicsLevel "2"
 SET lodObjectFadeScale "150"
 SET graphicsGroundClutter "10"
 SET doodadLodScale "150"
+
+SET shadowRt "3"
