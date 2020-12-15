@@ -31,38 +31,33 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[54485] = {
-			["title"] = "Battle of Dazar'alor",
-			["objectives"] = {
-				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
-			},
-		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
-			},
-		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
-		[56499] = {
-			["title"] = "Storming the Battlefields",
+		[57006] = {
+			["title"] = "A Worthy Ally",
 			["objectives"] = {
-				"Win a PVP Island Expedition", -- [1]
-				"0/1 Win an Epic Battleground", -- [2]
-				"0/1 Win a Battleground", -- [3]
+				"0/1 Use the Deepflame Campfire", -- [1]
+				"0/1 Choose an ally", -- [2]
+				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
 			},
 		},
@@ -74,9 +69,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[54438] = {
@@ -85,10 +81,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[54975] = {
-			["title"] = "A Brief Respite",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/1 Reach rank 3 with an Ankoan ally", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[36615] = {
@@ -98,22 +94,21 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
 		[32806] = {
 			["title"] = "The King and the Council",
 			["objectives"] = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
-		[50599] = {
-			["title"] = "Proudmoore Admiralty",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+			},
+		},
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+			["objectives"] = {
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[56211] = {
@@ -123,10 +118,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[50601] = {
-			["title"] = "Storm's Wake",
+		[56119] = {
+			["title"] = "The Waveblade Ankoan",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[31486] = {
@@ -135,16 +130,19 @@ QuestTogether = {
 				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[60151] = {
+			["title"] = "A Doorway Through the Veil",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"1/1 Speak to the Acolyte", -- [1]
+				"1/1 Head to the landing", -- [2]
+				"1/1 Establish portals back to Azeroth", -- [3]
+				"0/1 Return to the Overseers", -- [4]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[54975] = {
+			["title"] = "A Brief Respite",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/1 Reach rank 3 with an Ankoan ally", -- [1]
 			},
 		},
 		[42483] = {
@@ -163,20 +161,6 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54978] = {
-			["title"] = "Against Overwhelming Odds",
-			["objectives"] = {
-				"10/25 Slay Horde Players", -- [1]
-			},
-		},
-		[57006] = {
-			["title"] = "A Worthy Ally",
-			["objectives"] = {
-				"0/1 Use the Deepflame Campfire", -- [1]
-				"0/1 Choose an ally", -- [2]
-				"0/3 Ally quests complete", -- [3]
-			},
-		},
 		[56378] = {
 			["title"] = "The Missing Crew",
 			["objectives"] = {
@@ -185,11 +169,23 @@ QuestTogether = {
 				"0/1 Thermospark found", -- [3]
 			},
 		},
+		[50605] = {
+			["title"] = "Alliance War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[54485] = {
+			["title"] = "Battle of Dazar'alor",
+			["objectives"] = {
+				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

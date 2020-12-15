@@ -757,7 +757,7 @@ app.print = function(...)
 	print(L["TITLE"], ...);
 end
 app.report = function()
-	app.print(app.Version .. ": Please report this to the ATT Discord! Thanks!");
+	app.print(app.Version .. ": Please report this to the ATT Discord in #errors! Thanks!");
 end
 
 -- audio lib
@@ -1221,6 +1221,29 @@ local function GetFixedItemSpecInfo(itemID)
 end
 
 -- Quest Completion Lib
+local PrintQuestInfo = function(questID, new, info)
+	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
+		local searchResults = app.SearchForField("questID", questID)
+		if not searchResults or #searchResults <= 0 or (searchResults[1].parent and searchResults[1].parent.parent.text == "Unsorted") then
+			questID = questID .. " (Not in ATT " .. app.Version .. ")";
+		else
+			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+				return true;
+			end
+			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
+			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet  .. select(1, EJ_GetEncounterInfo(group.encounterID)) .. 
+			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
+			if searchResults[1].parent and searchResults[1].parent.parent.text == "Hidden Quest Triggers" then
+				questID = questID .. " [HQT]";
+			end
+		end
+		if new then
+			print("Quest accepted: #" .. questID .. (info or ""));
+		else
+			print("Completed Quest #" .. questID .. (info or ""));
+		end
+	end
+end
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	if value then
@@ -1228,17 +1251,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		rawset(DirtyQuests, key, true);
 		SetDataSubMember("CollectedQuests", key, 1);
 		SetTempDataSubMember("CollectedQuests", key, 1);
-		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-			local searchResults = app.SearchForField("questID", key)
-			if not searchResults or #searchResults <= 0 or (searchResults[1].parent and searchResults[1].parent.parent.text == "Unsorted") then
-			   key = key .. " (Missing in ATT)";
-			else
-				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-					return true;
-				end
-			end
-			print("Completed Quest ID #" .. key);
-		end
+		PrintQuestInfo(key);
 	end
 end});
 -- returns nil if nil provided, otherwise true/false based on the specific quest being completed by the current character
@@ -1305,7 +1318,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			local wqt_global = wqt_questDoneHistory.global
 			local wqt_local = wqt_questDoneHistory.character[app.GUID]
 
-			if wqt_local and wqt_local[questID] and wqt_local[questID] > 0 then
+			if wqt_local and wqt_local[t.questID] and wqt_local[t.questID] > 0 then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
 				SetTempDataSubMember("CollectedQuests", t.questID, 1);
 				return 1;
@@ -1326,7 +1339,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- quest completed on any character, return shared completion
-			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
+			if wqt_global and wqt_global[t.questID] and wqt_global[t.questID] > 0 then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
 				-- only return as completed if tracking account wide
 				if app.AccountWideQuests then
@@ -1356,12 +1369,9 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	if not id then return nil; end
 	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 	QuestHarvester:SetHyperlink("quest:"..id);
---<<<<<<< HEAD
 	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetTitleForQuestID(id);
---=======
 	-- QuestHarvester:SetHyperlink("\124cffaaaaaa\124Hquest:".. id.."\124h[QUEST:".. id .. "]\124h\124r");
 --	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
--->>>>>>> 0875f21fddd2c298b32f8171030d1a637614cf34
 	QuestHarvester:Hide()
 	if title and title ~= RETRIEVING_DATA then
 		-- working Quest Link Example from Wowhead
@@ -2333,80 +2343,83 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local progress = 0;
 	for i,group in ipairs(groups) do
 		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
-		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
-		if app.RecursiveGroupRequirementsFilter(group) then
-			local right = nil;
-			if group.total and (group.collectible and group.total > 1 or group.total > 0) then
-				total = total + group.total;
-				progress = progress + (group.progress or 0);
-				if app.GroupVisibilityFilter(group) then
-					right = GetProgressColorText(group.progress, group.total);
-				-- the group itself may be a trackable thing
-				elseif group.trackable then
-					if group.saved then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
+		-- dont list itself under Contains
+		if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
+			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
+			if app.RecursiveGroupRequirementsFilter(group) then
+				local right = nil;
+				if group.total and (group.collectible and group.total > 1 or group.total > 0) then
+					total = total + group.total;
+					progress = progress + (group.progress or 0);
+					if app.GroupVisibilityFilter(group) then
+						right = GetProgressColorText(group.progress, group.total);
+					-- the group itself may be a trackable thing
+					elseif group.trackable then
+						if group.saved then
+							if app.CollectedItemVisibilityFilter(group) then
+								right = L["COMPLETE_ICON"];
+							end
+						elseif app.ShowIncompleteThings(group) then
+							right = L["INCOMPLETE_ICON"];
 						end
-					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
+					elseif group.visible then
+						right = group.count and (group.count .. "x") or "---";
 					end
-				elseif group.visible then
-					right = group.count and (group.count .. "x") or "---";
+				else
+					if group.collectible then
+						total = total + 1;
+						if group.collected then
+							progress = progress + 1;
+							if app.CollectedItemVisibilityFilter(group) then
+								right = GetCollectionIcon(group.collected);
+							end
+						else
+							right = L["NOT_COLLECTED_ICON"];
+						end
+					elseif group.trackable then
+						if group.saved then
+							if app.CollectedItemVisibilityFilter(group) then
+								right = L["COMPLETE_ICON"];
+							end
+						elseif app.ShowIncompleteThings(group) then
+							right = L["INCOMPLETE_ICON"];
+						end
+					elseif group.visible then
+						right = group.count and (group.count .. "x") or "---";
+					end
 				end
-			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
-				if group.collectible then
-					total = total + 1;
-					if group.collected then
-						progress = progress + 1;
-						if app.CollectedItemVisibilityFilter(group) then
-							right = GetCollectionIcon(group.collected);
-						end
-					else
-						right = L["NOT_COLLECTED_ICON"];
-					end
-				elseif group.trackable then
-					if group.saved then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
-						end
-					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
-					end
-				elseif group.visible then
-					right = group.count and (group.count .. "x") or "---";
-				end
-			end
 
-			-- If there's progress to display, then let's summarize a bit better.
-			if right then
-				-- Insert into the display.
-				local o = { prefix = indent, group = group, right = right };
-				-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
-				-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
-				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
-				tinsert(entries, o);
+				-- If there's progress to display, then let's summarize a bit better.
+				if right then
+					-- Insert into the display.
+					local o = { prefix = indent, group = group, right = right };
+					-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
+					-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
+					if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
+					tinsert(entries, o);
 
-				-- Only go down one more level.
-				if layer < 3 and group.g and (not group.achievementID or paramA == "creatureID") and (not group.parent or not group.parent.difficultyID) and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
-					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
-				-- else
-					-- print("skipped sub-contains");
+					-- Only go down one more level.
+					if layer < 3 and group.g and (not group.achievementID or paramA == "creatureID") and (not group.parent or not group.parent.difficultyID) and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
+						BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
+					-- else
+						-- print("skipped sub-contains");
+					end
+				-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
+				-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
+				-- elseif group.questID and not group.isBreadcrumb then
+					-- -- print("check if is a sourceQuest for",group.questID);
+					-- local search = app.SearchForField("sourceQuests", group.questID);
+					-- if search then
+						-- -- for i,g in ipairs(search) do
+							-- -- print("has sq",RecurseGroupParent(g));
+						-- -- end
+						-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
+					-- end
 				end
-			-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
-			-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
-			-- elseif group.questID and not group.isBreadcrumb then
-				-- -- print("check if is a sourceQuest for",group.questID);
-				-- local search = app.SearchForField("sourceQuests", group.questID);
-				-- if search then
-					-- -- for i,g in ipairs(search) do
-						-- -- print("has sq",RecurseGroupParent(g));
-					-- -- end
-					-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
-				-- end
+				-- print("total",tostring(total),"progress",tostring(progress));
+			-- else
+				-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 			end
-			-- print("total",tostring(total),"progress",tostring(progress));
-		-- else
-			-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 		end
 	end
 	if (total > 0) then
@@ -3108,18 +3121,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
 			-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
-			-- local uniques, dupes = {}, {};
-			-- for i,item in ipairs(info) do
-				-- if not item.left then
-					-- tinsert(uniques, item);
-				-- elseif not dupes[item.left] then
-					-- dupes[item.left] = true;
-					-- tinsert(uniques, item);
-				-- end
-			-- end
-
-			group.info = info;
+			-- putting this back due to descriptions, ugh
+			local uniques, dupes = {}, {};
 			for i,item in ipairs(info) do
+				if not item.left then
+					tinsert(uniques, item);
+				elseif not dupes[item.left] then
+					dupes[item.left] = true;
+					tinsert(uniques, item);
+				end
+			end
+
+			group.info = uniques;
+			for i,item in ipairs(uniques) do
 				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 			end
 		end
@@ -3829,6 +3843,7 @@ local function AddTomTomWaypoint(group, auto, recur)
 		if group.g then
 			for i,subgroup in ipairs(group.g) do
 				-- only automatically plot subGroups if they are not quests with incomplete source quests
+				-- TODO: use 'isLockedBy' property for quests
 				if not subgroup.sourceQuests or subgroup.sourceQuestsCompleted then
 					AddTomTomWaypoint(subgroup, auto, true);
 				end
@@ -7474,35 +7489,33 @@ app.BaseQuest = {
 				for i,questID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, mark the altQuestID
 					if not found and IsQuestFlaggedCompleted(questID) then
+						-- print(t.questID,"locked by",questID,"alt-quest");
 						found = questID;
-						-- print("complete altquest found",questID,"=>",t.questID);
 					end
 				end
 			end
 			if found then rawset(t, "altcollected", found); end
 			return rawget(t, "altcollected");
 		-- returns nil if available or non-breadcrumb quest, or returns a completed questID which blocks this breadcrumb from being obtained
+		-- TODO: change to 'isLockedBy' property for all quests
 		elseif key == "breadcrumbLockedBy" then
+			-- do not consider a completed breadcrumb as being locked from being collectible
+			if IsQuestFlaggedCompleted(t.questID) then return nil; end
 			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
 			local found;
 			if t.isBreadcrumb and t.nextQuests then
 				for i,questID in ipairs(t.nextQuests) do
 					-- any nextQuests completed specifically on this character, mark the nextQuestsID
 					if not found and IsQuestFlaggedCompleted(questID) then
+						-- print(t.questID,"locked by",questID,"directly");
 						found = questID;
 					elseif not found then
 						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						local qs = SearchForField("questID", questID);
+						local nq = app.SearchForObjectClone("questID", questID);
 						-- check the quests cached under this questID for the correct quest group
-						if qs and #qs > 0 then
-							local i, sq = #qs;
-							while not sq and i > 0 do
-								if qs[i].questID == questID then sq = qs[i]; end
-								i = i - 1;
-							end
-						end
-						if sq then
-							if sq.collected or sq.altcollected or sq.breadcrumbLockedBy then
+						if nq then
+							if nq.collected or nq.altcollected or nq.breadcrumbLockedBy then
+								-- print(t.questID,"locked by",questID,"locked by",nq.breadcrumbLockedBy);
 								found = questID;
 							end
 						end
@@ -8737,11 +8750,11 @@ UpdateGroup = function(parent, group, defaultVisibility)
 					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group. We aren't filtering for it.
-					group.visible = false;
+					group.visible = defaultVisibility;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
-				group.visible = false;
+				group.visible = defaultVisibility;
 			end
 		else
 			-- If the 'can equip' filter says true
@@ -10800,7 +10813,7 @@ RowOnEnter = function (self)
 		-- restriction on the Thing which this character does not meet
 		if reference.customCollect and not app.CustomCollects[reference.customCollect] then
 			local customCollectEx = L["CUSTOM_COLLECTS_REASONS"][reference.customCollect];
-			GameTooltip:AddDoubleLine("Requires: |cff5bc41d" .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]") .. "|r", customCollectEx[2] or "[MISSING_LOCAL_REASON");
+			GameTooltip:AddDoubleLine("Requires: |cff5bc41d" .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]") .. "|r", customCollectEx[2] or "");
 		end
 
 		-- Show Quest Prereqs
@@ -10855,15 +10868,7 @@ RowOnEnter = function (self)
 				local nextq, nq = {};
 				for i,nextQuestID in ipairs(reference.nextQuests) do
 					if nextQuestID > 0 then
-						local nqs = SearchForField("questID", nextQuestID);
-						if nqs and #nqs > 1 then
-							local i = #nqs;
-							nq = nil;
-							while not nq and i > 0 do
-								if nqs[i].questID == sourceQuestID then nq = nqs[i]; end
-								i = i - 1;
-							end
-						end
+						local nq = app.SearchForObjectClone("questID", nextQuestID);
 						-- existing quest group
 						if nq then
 							table.insert(nextq, nq);
@@ -11207,9 +11212,10 @@ function app:GetDataCache()
 
 		-- Holidays
 		if app.Categories.Holidays then
-			-- db = {};
-			-- db.g = app.Categories.Holidays;
-			db = app.CreateAchievement(2144, app.Categories.Holidays);
+			db = {};
+			db.g = app.Categories.Holidays;
+			-- db = app.CreateAchievement(2144, app.Categories.Holidays);
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\Hol";
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
 			db.npcID = -3;
@@ -14681,9 +14687,9 @@ hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
 end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
-local ProcessAuctions = function()
-	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
-end
+-- local ProcessAuctions = function()
+-- 	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
+-- end
 
 local ProcessAuctionData = function()
 	-- If we have no auction data, then simply return now.
@@ -15731,6 +15737,7 @@ app.events.VARIABLES_LOADED = function()
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
+		app:RegisterEvent("QUEST_ACCEPTED");
 		RefreshSaves();
 
 		app.CacheFlightPathData();
@@ -15793,10 +15800,26 @@ app.events.VARIABLES_LOADED = function()
 			end
 			return cc;
 		end);
+		-- Shadowlands Skip
+		app.SetCustomCollectibility("SL_SKIP", function(cc)
+			-- character is not checked
+			if cc == nil then
+				-- print("first check of SL_SKIP");
+				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+				cc = IsQuestFlaggedCompleted(62713);
+			elseif not cc then
+				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+				cc = IsQuestFlaggedCompleted(62713);
+			end
+			-- no apparent way to revert this choice, so no logic to revert the CC value
+			-- print("isSkip",cc);
+			return cc;
+		end);
 
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
+		-- print("ATT is Ready!");
 
 		if needRefresh then
 			-- collection refresh includes data refresh
@@ -15964,6 +15987,23 @@ app.events.QUEST_TURNED_IN = function(questID)
 end
 app.events.QUEST_LOG_UPDATE = function()
 	RefreshQuestCompletionState()
+end
+app.events.QUEST_ACCEPTED = function(questID)
+	if questID then		
+		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
+		local freq;
+		if logIndex then
+			info = C_QuestLog.GetInfo(logIndex);
+			if info then
+				if info.frequency == 1 then
+					freq = " (D)";
+				elseif info.frequency == 2 then
+					freq = " (W)";
+				end
+			end
+		end
+		PrintQuestInfo(questID, 1, freq);
+	end
 end
 app.events.PET_BATTLE_OPENING_START = function(...)
 	local mini = app:GetWindow("CurrentInstance");

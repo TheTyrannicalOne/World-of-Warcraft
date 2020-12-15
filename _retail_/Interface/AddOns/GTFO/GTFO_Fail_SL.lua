@@ -21,6 +21,169 @@ GTFO.SpellID["325246"] = {
   sound = 3;
 };
 
+GTFO.SpellID["308502"] = {
+  --desc = "Unstable Shadows (Gor'groth)";
+  sound = 3;
+};
+
+GTFO.SpellID["305515"] = {
+  --desc = "Necrotic Breath (Ravnyr)";
+  sound = 3;
+};
+
+GTFO.SpellID["340207"] = {
+  --desc = "Anima Flash (Aethon)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["332569"] = {
+  --desc = "Pinning Spear (Fallen Acolyte Erisne)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["343090"] = {
+  --desc = "Dissonance";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["329569"] = {
+  --desc = "Void Collapse (Seething Voidripper)";
+  sound = 3;
+};
+
+GTFO.SpellID["308838"] = {
+  --desc = "Void Rain";
+  sound = 3;
+};
+
+GTFO.SpellID["331270"] = {
+  --desc = "Fling Goop (Diseased Remnant)";
+  sound = 3;
+};
+
+GTFO.SpellID["330404"] = {
+  --desc = "Wing Buffet (Gristlebeak)";
+  sound = 3;
+};
+
+GTFO.SpellID["322014"] = {
+  --desc = "Risen Shadows (Architect Halen)";
+  sound = 3;
+};
+
+GTFO.SpellID["320028"] = {
+  --desc = "Ground Pound (Strategist Ocra)";
+  sound = 3;
+};
+
+GTFO.SpellID["333710"] = {
+  --desc = "Grasping Hands (Sharrex the Fleshcrafter)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["320734"] = {
+  --desc = "Massive Strike (Brethlun the Brand)";
+  sound = 3;
+};
+
+GTFO.SpellID["320726"] = {
+  --desc = "Colossal Exhumation (Brethlun the Brand)";
+  sound = 3;
+};
+
+GTFO.SpellID["334509"] = {
+  --desc = "Warlord's Slam (Baron Vyraz)";
+  sound = 3;
+};
+
+GTFO.SpellID["342704"] = {
+  --desc = "Rotting Tempest (Rotbriar Boggart)";
+  sound = 3;
+};
+
+GTFO.SpellID["314182"] = {
+  --desc = "Sin Lash";
+  sound = 3;
+};
+
+GTFO.SpellID["321366"] = {
+  --desc = "Crimson Barrage (Lady Inerva Darkvein)";
+  sound = 3;
+  negatingBuffSpellID = 321345; -- Harvester's Might
+};
+
+GTFO.SpellID["342499"] = {
+  --desc = "Lurking Eruption (Niya, As Xavius)";
+  sound = 3;
+};
+
+GTFO.SpellID["342488"] = {
+  --desc = "Nightmare Blades (Niya, As Xavius)";
+  sound = 3;
+};
+
+GTFO.SpellID["340808"] = {
+  --desc = "Armageddon (Glimmerdust, As Kil'jaeden)";
+  sound = 3;
+};
+
+GTFO.SpellID["340566"] = {
+  --desc = "Poison Bomb (Invasive Terror)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["340639"] = {
+  --desc = "Binding Fungus (Humon'gozz)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["345454"] = {
+  --desc = "Magma Wave (Borr-Geth)";
+  sound = 3;
+};
+
+GTFO.SpellID["341562"] = {
+  --desc = "Nightmare Blades (Niya, As Xavius)";
+  sound = 3;
+};
+
+GTFO.SpellID["341548"] = {
+  --desc = "Lurking Eruption (Niya, As Xavius)";
+  sound = 3;
+};
+
+GTFO.SpellID["324603"] = {
+  --desc = "Ashen Winds";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["317783"] = {
+  --desc = "Shadow Eruption (Soul Well)";
+  sound = 3;
+};
+
+GTFO.SpellID["344988"] = {
+  --desc = "Shower of Misery (Drifting Sorrow)";
+  sound = 3;
+};
+
+GTFO.SpellID["346251"] = {
+  --desc = "Anima Nova (Ghastly Willbreaker)";
+  sound = 3;
+};
+
+GTFO.SpellID["346439"] = {
+  --desc = "Culling Blades (Seeker Xeros)";
+  sound = 3;
+};
+
 --- **********************
 --- * Halls of Atonement *
 --- **********************
@@ -28,6 +191,12 @@ GTFO.SpellID["325246"] = {
 GTFO.SpellID["326440"] = {
   --desc = "Sin Quake (Shard of Halkias)";
   sound = 3;
+};
+
+GTFO.SpellID["346866"] = {
+  --desc = "Stone Breath (Loyal Stoneborn)";
+  sound = 3;
+  tankSound = 0;
 };
 
 GTFO.SpellID["322945"] = {
@@ -44,6 +213,34 @@ GTFO.SpellID["323126"] = {
   --desc = "Telekinetic Collision (Lord Chamberlain)";
   sound = 3
 };
+
+GTFO.SpellID["314926"] = {
+  --desc = "Soul Surge";
+  sound = 3;
+};
+
+GTFO.SpellID["338848"] = {
+  --desc = "Spine Crawl (Mortanis)";
+  sound = 3;
+};
+
+GTFO.SpellID["337196"] = {
+  --desc = "Active Volcano";
+  sound = 3;
+};
+
+GTFO.SpellID["336809"] = {
+  --desc = "Soul Fissure (Azmogal)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["336893"] = {
+  --desc = "Terrifying Chaos (Azmogal)";
+  applicationOnly = true;
+  sound = 3;
+};
+
 
 --- **************
 --- * Plaguefall *
@@ -73,6 +270,7 @@ GTFO.SpellID["326242"] = {
 
 GTFO.SpellID["328501"] = {
   --desc = "Plague Bomb (Rigged Plagueborer)";
+  applicationOnly = true;
   sound = 3;
 };
 
@@ -116,6 +314,21 @@ GTFO.SpellID["322475"] = {
 --- * Sanguine Depths *
 --- *******************
 
+GTFO.SpellID["320999"] = {
+  --desc = "Echoing Thrust (Regal Mistdancer)";
+  sound = 3;
+};
+
+GTFO.SpellID["320991"] = {
+  --desc = "Echoing Thrust (Regal Mistdancer)";
+  sound = 3;
+};
+
+GTFO.SpellID["334921"] = {
+  --desc = "Umbral Crash (Insatiable Brute)";
+  sound = 3;
+};
+
 GTFO.SpellID["322418"] = {
   --desc = "Craggy Fracture (Chamber Sentinel)";
   sound = 3;
@@ -131,6 +344,12 @@ GTFO.SpellID["322429"] = {
   applicationOnly = true;
   sound = 3;
   tankSound = 0;
+};
+
+GTFO.SpellID["328494"] = {
+  --desc = "Sintouched Anima";
+  applicationOnly = true;
+  sound = 3;
 };
 
 GTFO.SpellID["325885"] = {
@@ -152,6 +371,12 @@ GTFO.SpellID["334563"] = {
 --- ***********************
 --- * Spires of Ascension *
 --- ***********************
+
+GTFO.SpellID["317943"] = {
+  --desc = "Sweeping Blow (Forsworn Vanguard)";
+  sound = 3;
+  tankSound = 0;
+};
 
 GTFO.SpellID["324370"] = {
   --desc = "Attenuated Barrage (Azules)";
@@ -205,14 +430,24 @@ GTFO.SpellID["328466"] = {
   sound = 3;
 };
 
-GTFO.SpellID["322817"] = {
-  --desc = "Lingering Doubt (Devos)";
+GTFO.SpellID["334625"] = {
+  --desc = "Abyssal Detonation (Devos)";
+  sound = 3;
+};
+
+GTFO.SpellID["323831"] = {
+  --desc = "Death Grasp (Mordretha, the Endless Empress)";
   applicationOnly = true;
   sound = 3;
 };
 
-GTFO.SpellID["334625"] = {
-  --desc = "Abyssal Detonation (Devos)";
+GTFO.SpellID["336420"] = {
+  --desc = "Diminuendo (Lakesis)";
+  sound = 3;
+};
+
+GTFO.SpellID["323943"] = {
+  --desc = "Run Through (Devos)";
   sound = 3;
 };
 
@@ -242,11 +477,6 @@ GTFO.SpellID["321834"] = {
 
 GTFO.SpellID["321893"] = {
   --desc = "Freezing Burst (Illusionary Vulpin)";
-  sound = 3;
-};
-
-GTFO.SpellID["325418"] = {
-  --desc = "Acid Spray (Spinemaw Acidgullet)";
   sound = 3;
 };
 
@@ -339,12 +569,25 @@ GTFO.SpellID["319567"] = {
   sound = 3;
 };
 
+GTFO.SpellID["330592"] = {
+  --desc = "Vile Eruption (Rancid Gasbag)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["321768"] = {
+  --desc = "On the Hook";
+  applicationOnly = true;
+  sound = 3;
+};
+
 --- *********************
 --- * The Necrotic Wake *
 --- *********************
 
 GTFO.SpellID["320596"] = {
   --desc = "Heaving Retch (Blightbone)";
+  applicationOnly = true;
   sound = 3;
 };
 
@@ -365,9 +608,36 @@ GTFO.SpellID["321253"] = {
   test = true;
 };
 
+GTFO.SpellID["320365"] = {
+  --desc = "Embalming Ichor (Surgeon Stitchflesh)";
+  sound = 3;
+};
+
+GTFO.SpellID["327240"] = {
+  --desc = "Spine Crush (Loyal Creation)";
+  sound = 3;
+};
+
 --- *****************
 --- * De Other Side *
 --- *****************
+
+GTFO.SpellID["340026"] = {
+  --desc = "Wailing Grief (Mythresh, Sky's Talons)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["320232"] = {
+  --desc = "Explosive Contrivance (Dealer Xy'exa)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["320723"] = {
+  --desc = "Displaced Blastwave (Dealer Xy'exa)";
+  sound = 3;
+};
 
 GTFO.SpellID["328729"] = {
   --desc = "Dark Lotus (Risen Cultist)";
@@ -386,6 +656,13 @@ GTFO.SpellID["323118"] = {
   test = true;
 };
 
+GTFO.SpellID["323136"] = {
+  --desc = "Anima Starstorm (Runestag Elderhorn)";
+  soundHeroic = 3;
+  soundChallenge = 3;
+  sound = 0;
+};
+
 GTFO.SpellID["334913"] = {
   --desc = "Master of Death (Mueh'zala)";
   applicationOnly = true;
@@ -402,4 +679,190 @@ GTFO.SpellID["326171"] = {
   sound = 3;
 };
 
+GTFO.SpellID["331008"] = {
+  --desc = "Icky Sticky (Experimental Sludge)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+
+--- ************
+--- * Torghast *
+--- ************
+
+GTFO.SpellID["348131"] = {
+  --desc = "Soul Emanation";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["292903"] = {
+  --desc = "Massive Strike (Empowered Mawsworn Guard)";
+  sound = 3;
+};
+
+GTFO.SpellID["326056"] = {
+  --desc = "Anima Missile";
+  sound = 3;
+};
+
+GTFO.SpellID["306772"] = {
+  --desc = "Massive Scythe";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["330347"] = {
+  --desc = "Flamestrike (Forge Keeper)";
+  sound = 3;
+};
+
+GTFO.SpellID["307115"] = {
+  --desc = "Flame Vent";
+  sound = 3;
+};
+
+GTFO.SpellID["325514"] = {
+  --desc = "Flame Jet";
+  sound = 3;
+};
+
+GTFO.SpellID["331295"] = {
+  --desc = "Burning (Fire Spike)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["331310"] = {
+  --desc = "Burning (Green Spike)";
+  sound = 3;
+  applicationOnly = true;
+};
+
+GTFO.SpellID["331349"] = {
+  --desc = "Spike Trap";
+  sound = 3;
+  applicationOnly = true;
+};
+
+GTFO.SpellID["298172"] = {
+  --desc = "Collapse (Kosarus the Fallen)";
+  sound = 3;
+};
+
+GTFO.SpellID["319813"] = {
+  --desc = "Soul Emanation";
+  sound = 3;
+};
+
+GTFO.SpellID["295945"] = {
+  --desc = "Rat Traps";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["294173"] = {
+  --desc = "Hulking Charge (Warden Arkoban)";
+  sound = 3;
+};
+
+GTFO.SpellID["294405"] = {
+  --desc = "Discordant Barrage (Deadsoul Echo)";
+  sound = 3;
+};
+
+GTFO.SpellID["294533"] = {
+  --desc = "Soulblast Nova (Deadsoul Devil)";
+  sound = 3;
+};
+
+GTFO.SpellID["333091"] = {
+  --desc = "Lance of Darkness (Coldheart Ambusher)";
+  sound = 3;
+};
+
+GTFO.SpellID["322724"] = {
+  --desc = "Divebomb (Coldheart Ambusher)";
+  sound = 3;
+};
+
+GTFO.SpellID["308096"] = {
+  --desc = "Crashing Inferno (Empowered Flameforge Master)";
+  sound = 3;
+};
+
+GTFO.SpellID["308098"] = {
+  --desc = "Crashing Inferno (Empowered Flameforge Master)";
+  sound = 3;
+};
+
+GTFO.SpellID["296355"] = {
+  --desc = "Subjugate Spirit (Subjugator Klontzas)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["296372"] = {
+  --desc = "Subjugate Soul (Subjugator Klontzas)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+--- ******************
+--- * Castle Nathria *
+--- ******************
+
+GTFO.SpellID["330711"] = {
+  --desc = "Earsplitting Shriek (Shriekwing)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["330712"] = {
+  --desc = "Earsplitting Shriek (Shriekwing)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["343022"] = {
+  --desc = "Echoing Sonar (Shriekwing)";
+  sound = 3;
+};
+
+GTFO.SpellID["343005"] = {
+  --desc = "Blind Swipe (Shriekwing)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["345425"] = {
+  --desc = "Murder Prey (Shriekwing)";
+  sound = 3;
+};
+
+GTFO.SpellID["341304"] = {
+  --desc = "Mastercrafted Gamesman's Snare (Nathrian Gargon Rider)";
+  sound = 3;
+  test = true;
+};
+
+GTFO.SpellID["326455"] = {
+  --desc = "Fiery Strike (Shade of Kael'thas)";
+  sound = 3;
+  tankSound = 0;
+  test = true;
+};
+
+GTFO.SpellID["339553"] = {
+  --desc = "Lingering Anima (Deplina)";
+  sound = 1;
+};
+
+GTFO.SpellID["325713"] = {
+  --desc = "Lingering Anima (Lady Inerva Darkvein)";
+  sound = 1;
+};
+
+
 end
+

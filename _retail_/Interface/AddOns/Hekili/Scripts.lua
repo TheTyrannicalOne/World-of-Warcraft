@@ -381,8 +381,8 @@ do
         { "^^!?remains$",                           "remains" },
         { "^refreshable",                           "time_to_refresh" },
         
-        { "^(.-)%.deficit<=?(.-)$",                 "%1.timeTo(%1.max-(%2))" },
-        { "^(.-)%.deficit>=?(.-)$",                 "%1.timeTo(%1.max-(%2))" },        
+        { "^(.-)%.deficit<=?(.-)$",                 "0.01+%1.timeTo(%1.max-(%2))" },
+        { "^(.-)%.deficit>=?(.-)$",                 "0.01+%1.timeTo(%1.max-(%2))" },        
         
         { "^cooldown%.([a-z0-9_]+)%.ready$",        "cooldown.%1.remains" },
         { "^cooldown%.([a-z0-9_]+)%.up$",           "cooldown.%1.remains" },
@@ -588,6 +588,8 @@ do
     end
 
     function scripts:BuildRecheck( conditions )
+        if type( conditions ) ~= "string" then return end
+        
         local recheck
 
         conditions = conditions:gsub( " +", "" )

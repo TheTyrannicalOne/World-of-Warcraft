@@ -234,7 +234,6 @@ local HekiliSpecMixin = {
                         end
                         Hekili.InvalidSpellIDs = Hekili.InvalidSpellIDs or {}
                         insert( Hekili.InvalidSpellIDs, a.id )
-                        Hekili.NewSpellInfo = true
                         return
                     end
 
@@ -272,8 +271,6 @@ local HekiliSpecMixin = {
                         self.pendingItemSpells[ a.name ] = nil
                         self.itemPended = nil
                     end
-
-                    Hekili.NewSpellInfo = true
                 end )
             end
             self.auras[ a.id ] = a
@@ -393,8 +390,6 @@ local HekiliSpecMixin = {
             data.link = link
 
             class.potionList[ potion ] = link
-
-            Hekili.NewItemInfo = true
         end )
     end,
 
@@ -455,7 +450,6 @@ local HekiliSpecMixin = {
 
             a.name = name or ability
             a.link = link or ability
-            -- a.texture = texture or "Interface\\ICONS\\Spell_Nature_BloodLust"
 
             class.itemMap[ item ] = ability
 
@@ -477,12 +471,11 @@ local HekiliSpecMixin = {
                 end
 
                 local name, link, _, _, _, _, _, _, slot, texture = GetItemInfo( item )
-                Hekili.NewItemInfo = true
 
                 if name then
                     a.name = name
                     a.link = link
-                    a.texture = a.texture or texture
+                    a.texture = texture
 
                     if a.suffix then
                         a.actualName = name
@@ -527,7 +520,7 @@ local HekiliSpecMixin = {
                     end
 
                     if not a.unlisted then
-                        class.abilityList[ ability ] = "|T" .. a.texture .. ":0|t " .. link
+                        class.abilityList[ ability ] = "|T" .. ( a.texture or texture ) .. ":0|t " .. link
                         class.itemList[ item ] = "|T" .. a.texture .. ":0|t " .. link
 
                         class.abilityByName[ a.name ] = a
@@ -548,7 +541,8 @@ local HekiliSpecMixin = {
                     class.abilities[ a.link ] = a
                     class.abilities[ a.id ] = a
 
-                    Hekili:EmbedItemOptions()
+                    if not a.key then Hekili:Error( "Wanted to EmbedItemOption but no key for " .. ( a.id or "UNKNOWN" ) .. "." )
+                    else Hekili:EmbedItemOption( nil, a.key ) end
 
                     return true
                 end
@@ -607,12 +601,11 @@ local HekiliSpecMixin = {
                     end
                     Hekili.InvalidSpellIDs = Hekili.InvalidSpellIDs or {}
                     table.insert( Hekili.InvalidSpellIDs, a.id )
-                    Hekili.NewSpellInfo = true
                     return
                 end
 
                 a.name = GetSpellInfo( a.id )
-                if not a.name then Hekili:Print( "Name info not available for " .. a.id .. "." ); return false end
+                if not a.name then Hekili:Error( "Name info not available for " .. a.id .. "." ); return false end
 
                 a.desc = GetSpellDescription( a.id ) -- was returning raw tooltip data.
 
@@ -631,7 +624,7 @@ local HekiliSpecMixin = {
                     class.abilityByName[ a.name ] = class.abilities[ a.name ] or a
                 end
 
-                Hekili.NewSpellInfo = true
+                Hekili:EmbedAbilityOption( nil, a.key )
             end )
         end
 
@@ -663,10 +656,6 @@ local HekiliSpecMixin = {
         if a.castableWhileCasting or a.funcs.castableWhileCasting then
             self.canCastWhileCasting = true
             self.castableWhileCasting[ a.key ] = true
-        end
-
-        if a.id > 0 and not rawget( a, "texture" ) and not a.funcs.texture then
-            a.autoTexture = true
         end
 
         if a.auras then
@@ -1561,7 +1550,58 @@ all:RegisterAuras( {
 } )
 
 
-all:RegisterPotions( {    
+all:RegisterPotions( {
+    -- 9.0
+    potion_of_spectral_strength = {
+        item = 171275,
+        buff = "potion_of_spectral_strength",
+        copy = "spectral_strength",
+    },
+    potion_of_spectral_agility = {
+        item = 171270,
+        buff = "potion_of_spectral_agility",
+        copy = "spectral_agility",        
+    },
+    potion_of_spiritual_clarity = {
+        item = 171272,
+        buff = "potion_of_spiritual_clarity",
+        copy = "spiritual_clarity"
+    },
+    potion_of_phantom_fire = {
+        item = 171349,
+        buff = "potion_of_phantom_fire",
+        copy = "phantom_fire",
+    },
+    potion_of_spectral_intellect = {
+        item = 171273,
+        buff = "potion_of_spectral_intellect",
+        copy = "spectral_intellect"
+    },
+    potion_of_deathly_fixation = {
+        item = 171351,
+        buff = "potion_of_deathly_fixation",
+        copy = "deathly_fixation"
+    },
+    strength_of_blood = {
+        item = 182163,
+        buff = "strength_of_blood",
+    },
+    potion_of_empowered_exorcisms = {
+        item = 171352,
+        buff = "potion_of_empowered_exorcisms",
+        copy = "empowered_exorcisms"
+    },
+    potion_of_unusual_strength = {
+        item = 180771,
+        buff = "potion_of_unusual_strength",
+        copy = "unusual_strength"
+    },
+    potion_of_spectral_stamina = {
+        item = 171274,
+        buff = "potion_of_spectral_stamina",
+        copy = "spectral_stamina"
+    },
+
     -- 8.2
     potion_of_empowered_proximity = {
         item = 168529,
@@ -1630,24 +1670,71 @@ all:RegisterPotions( {
         item = 152557,
         buff = 'steelskin_potion',
     },
-
-    -- Legion
-    old_war = {
-        item = 127844,
-        buff = 'old_war'
-    },
-    deadly_grace = {
-        item = 127843,
-        buff = 'deadly_grace'
-    },
-    prolonged_power = {
-        item = 142117,
-        buff = 'prolonged_power'
-    },
 } )
 
 
 all:RegisterAuras( {
+    -- 9.0
+    potion_of_spectral_strength = {
+        id = 307164,
+        duration = 25,
+        max_stack = 1,
+        copy = "spectral_strength"
+    },
+    potion_of_spectral_agility = {
+        id = 307159,
+        duration = 25,
+        max_stack = 1,
+        copy = "spectral_agility"
+    },
+    potion_of_spiritual_clarity = {
+        id = 307161,
+        duration = 10,
+        max_stack = 1,
+        copy = "spiritual_clarity"
+    },
+    potion_of_phantom_fire = {
+        id = 307495,
+        duration = 25,
+        max_stack = 1,
+        copy = "phantom_fire",
+    },
+    potion_of_spectral_intellect = {
+        id = 307162,
+        duration = 25,
+        max_stack = 1,
+        copy = "spectral_intellect"
+    },
+    potion_of_deathly_fixation = {
+        id = 307497,
+        duration = 25,
+        max_stack = 1,
+        copy = "deathly_fixation"
+    },
+    strength_of_blood = {
+        id = 338385,
+        duration = 60,
+        max_stack = 1
+    },
+    potion_of_empowered_exorcisms = {
+        id = 307494,
+        duration = 25,
+        max_stack = 1,
+        copy = "empowered_exorcisms"
+    },
+    potion_of_unusual_strength = {
+        id = 334436,
+        duration = 25,
+        max_stack = 1,
+        copy = "unusual_strength"
+    },
+    potion_of_spectral_stamina = {
+        id = 307163,
+        duration = 25,
+        max_stack = 1,
+        copy = "spectral_stamina"
+    },
+
     -- 8.2
     potion_of_empowered_proximity = {
         id = 298225,
@@ -4990,8 +5077,7 @@ function Hekili:GetActivePack()
 end
 
 
-local lastChange = 0
-
+local optionsInitialized = false
 function Hekili:SpecializationChanged()
     local currentSpec = GetSpecialization()
     local currentID = GetSpecializationInfo( currentSpec )
@@ -5233,9 +5319,8 @@ function Hekili:SpecializationChanged()
                 local name, _, tex = GetSpellInfo( ability.id )
 
                 if name and tex then
-                    ability.texture = ability.texture or tex
                     ability.name = ability.name or name
-                    class.abilityList[ k ] = "|T" .. ability.texture .. ":0|t " .. ability.name
+                    class.abilityList[ k ] = "|T" .. tex .. ":0|t " .. ability.name
                 end
             else
                 class.abilityList[ k ] = "|T" .. ability.texture .. ":0|t " .. ability.name
@@ -5254,7 +5339,13 @@ function Hekili:SpecializationChanged()
     state.swings.mh_speed, state.swings.oh_speed = UnitAttackSpeed( "player" )
 
     self:UpdateDisplayVisibility()
-    -- self:RefreshOptions()
+
+    if not optionsInitialized then
+        Hekili:EmbedAbilityOptions()
+        Hekili:EmbedSpecOptions()
+        optionsInitialized = true
+    end
+
     if not self:ScriptsLoaded() then self:LoadScripts() end
 
     Hekili:UpdateDamageDetectionForCLEU()
@@ -5269,6 +5360,16 @@ end
 ns.specializationChanged = function()
     Hekili:SpecializationChanged()
 end
+
+
+RegisterEvent( "PLAYER_ENTERING_WORLD", function( event )
+    local currentSpec = GetSpecialization()
+    local currentID = GetSpecializationInfo( currentSpec )
+
+    if currentID ~= state.spec.id then
+        Hekili:SpecializationChanged()
+    end
+end )
 
 
 function Hekili:IsValidSpec()

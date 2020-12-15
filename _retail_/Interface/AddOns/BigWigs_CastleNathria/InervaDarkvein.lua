@@ -1,4 +1,3 @@
-
 --------------------------------------------------------------------------------
 -- Module Declaration
 --
@@ -13,14 +12,14 @@ mod.respawnTime = 30
 -- Locals
 --
 
-local cognitionOnMe = nil
-local bottleTimers = {28.5, 36, 20, 24, 26.8, 10.8, 14.9, 18.3, 17.4, 18.3, 28.5, 36.9, 36.5}
+local bottleTimers = {20, 43, 18, 32, 30, 35, 35, 35, 35}
 local bottleCount = 1
 local anima = {}
 local concentrateAnimaCount = 1
 local mobCollector = {}
 local conjuredManifestationList = {}
 local conjuredManifestationCount = 1
+local enableContainerCount = 1
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -32,6 +31,11 @@ if L then
 
 	L.level = "%s (Level |cffffff00%d|r)"
 	L.full = "%s (|cffff0000FULL|r)"
+
+	L.container_active = "Enable Container: %s"
+
+	L.anima_adds = "Concentrate Anima Adds"
+	L.anima_adds_desc = "Show a timer for when adds spawn from the Concentrate Anima debuffs."
 
 	L.custom_off_experimental = "Enable experimental features"
 	L.custom_off_experimental_desc = "These features are |cffff0000not tested|r and could |cffff0000spam|r."
@@ -61,8 +65,9 @@ function mod:GetOptions()
 		"custom_on_stop_timers",
 		331870, -- Focus Anima
 		-- Container of Desire
-		{341621, "TANK"}, -- Expose Desires
-		325382, -- Warped Desires
+		{341621, "TANK_HEALER"}, -- Expose Desires
+		{325382, "TANK"}, -- Warped Desires
+		{340452, "SAY", "SAY_COUNTDOWN", "ME_ONLY", "ME_ONLY_EMPHASIZE"}, -- Change of Heart
 		325936, -- Shared Cognition
 		-- Container of Bottled Anima
 		325769, -- Bottled Anima
@@ -72,17 +77,19 @@ function mod:GetOptions()
 		sharedSufferingMarker,
 		-- Container of Concentrated Anima
 		{332664, "SAY", "SAY_COUNTDOWN", "PROXIMITY"}, -- Concentrate Anima
+		"anima_adds",
 		concentrateAnimaMarker,
 		conjuredManifestationMarker,
 		{331573, "ME_ONLY"}, -- Unconscionable Guilt
 		331550, -- Condemn
-	}, {
+	},{
 		[331870] = "general",
 		[325379] = -22571, -- Container of Desire
 		[325769] = -22592, -- Container of Bottled Anima
 		[324983] = -22599, -- Container of Sin
 		[332664] = -22567, -- Container of Concentrated Anima
 	},{
+		[340452] = CL.bomb, -- Change of Heart (Bomb)
 		[325769] = L.bottles, -- Bottled Anima (Bottles)
 		[324983] = L.sins, -- Shared Suffering (Sins)
 		[332664] = CL.adds, -- Concentrate Anima (Adds)
@@ -102,6 +109,8 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED_DOSE", "WarpedDesiresApplied", 325382)
 	self:Log("SPELL_AURA_APPLIED", "SharedCognitionApplied", 325936)
 	self:Log("SPELL_AURA_REMOVED", "SharedCognitionRemoved", 325936)
+	self:Log("SPELL_AURA_APPLIED", "ChangeOfHeartApplied", 340452)
+	self:Log("SPELL_AURA_REMOVED", "ChangeOfHeartRemoved", 340452)
 
 	-- Container of Bottled Anima
 	--self:Log("SPELL_CAST_SUCCESS", "BottledAnima", 325769) -- see USCS
@@ -128,15 +137,15 @@ function mod:OnEngage()
 	mobCollector = {}
 	conjuredManifestationList = {}
 	conjuredManifestationCount = 1
-	cognitionOnMe = nil
 	bottleCount = 1
 	concentrateAnimaCount = 1
+	enableContainerCount = 1
 	wipe(anima)
 
 	self:Bar(341621, 12) -- Expose Desires
 	self:Bar(324983, 23, L.sins) -- Shared Suffering
 	self:Bar(325769, bottleTimers[bottleCount], L.bottles) -- Bottled Anima
-	self:Bar(332664, 56, CL.count:format(CL.adds, concentrateAnimaCount)) -- Concentrate Anima
+	self:Bar(332664, 54, CL.count:format(CL.adds, concentrateAnimaCount)) -- Concentrate Anima
 
 	if self:GetOption("custom_off_experimental") then
 		self:OpenInfo("anima_tracking", L.anima_tracking)
@@ -282,28 +291,44 @@ do
 				bottleCount = bottleCount + 1 -- amount of cast
 				self:ScheduleTimer(printBottleMessage, 0.1, self)
 				self:PlaySound(325769, "info")
-				self:CDBar(325769, bottleTimers[bottleCount] or 20, L.bottles)
+				self:CDBar(325769, bottleTimers[bottleCount], L.bottles)
 			end
 		elseif spellId == 338750 then -- Enable Container
-			self:Message(331870, "cyan")
-			self:PlaySound(331870, "long")
-			self:Bar(331870, 100)
+			local container = ""
+			if enableContainerCount == 1 then
+				container = self:SpellName(341621) -- Exposed Desires
+			elseif enableContainerCount == 4 then
+				container = L.bottles
+			elseif enableContainerCount == 5 then
+				container = L.sins
+			elseif enableContainerCount == 6 then
+				container = CL.adds
+			end
+			if enableContainerCount ~= 2 and enableContainerCount ~= 3 then -- She casts it 3x on pull for some reason
+				local msg = L.container_active:format(container)
+				self:Message(331870, "cyan", msg)
+				self:PlaySound(331870, "long")
+				enableContainerCount = enableContainerCount + 1
+				self:Bar(331870, 100)
+			end
 		end
 	end
 end
 
 function mod:ExposeDesires(args)
-	if self:Tank() or self:Healer() then --or cognitionOnMe then < fai
-		self:Message(args.spellId, "purple")
+	self:Message(args.spellId, "purple", CL.casting:format(args.spellName))
+	self:Bar(args.spellId, enableContainerCount < 4 and 9.7 or 10.9)
+	if self:Tanking("boss1") or self:Healer() then
 		self:PlaySound(args.spellId, "alert")
 	end
-	self:CDBar(args.spellId, 8.5)
 end
 
 function mod:WarpedDesiresApplied(args)
 	local amount = args.amount or 1
 	self:StackMessage(args.spellId, args.destName, amount, "purple")
-	self:PlaySound(args.spellId, "alarm")
+	if amount > 1 and not self:Tanking("boss1") then
+		self:PlaySound(args.spellId, "alarm")
+	end
 end
 
 do
@@ -314,7 +339,6 @@ do
 			self:Bar(args.spellId, 10)
 		end
 		if self:Me(args.destGUID) then
-			cognitionOnMe = true
 			self:PlaySound(args.spellId, "alarm")
 			self:TargetBar(args.spellId, 21, args.destName)
 		end
@@ -323,10 +347,26 @@ do
 
 	function mod:SharedCognitionRemoved(args)
 		if self:Me(args.destGUID) then
-			cognitionOnMe = nil
 			self:StopBar(args.spellId, args.destName)
 		end
 	end
+end
+
+function mod:ChangeOfHeartApplied(args)
+	if self:Me(args.destGUID) then
+		self:Say(args.spellId, CL.bomb)
+		self:SayCountdown(args.spellId, 4)
+		self:PlaySound(args.spellId, "warning")
+	end
+	self:TargetBar(args.spellId, 4, args.destName, CL.bomb)
+	self:TargetMessage(args.spellId, "purple", args.destName, CL.bomb)
+end
+
+function mod:ChangeOfHeartRemoved(args)
+	if self:Me(args.destGUID) then
+		self:CancelSayCountdown(args.spellId)
+	end
+	self:StopBar(args.spellId, args.destName)
 end
 
 function mod:BottledAnima(args)
@@ -397,9 +437,10 @@ do
 		if #playerList == 1 then
 			self:StopBar(CL.count:format(CL.adds, concentrateAnimaCount))
 			concentrateAnimaCount = concentrateAnimaCount + 1
-			self:Bar(332664, 36, CL.count:format(CL.adds, concentrateAnimaCount))
+			self:CDBar(332664, 60, CL.count:format(CL.adds, concentrateAnimaCount))
 			conjuredManifestationList = {}
 			conjuredManifestationCount = 1
+			self:Bar("anima_adds", 10, CL.spawning:format(CL.adds), 332664) -- Adds Spawning
 		end
 		if self:Me(args.destGUID) then
 			isOnMe = true

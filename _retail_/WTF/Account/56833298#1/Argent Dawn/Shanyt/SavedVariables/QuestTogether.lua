@@ -4,137 +4,30 @@ QuestTogether = {
 		[47727] = {
 			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"2/4 Fragment of the Guardian's Seal", -- [1]
+				"3/4  ", -- [1]
 			},
 		},
 		[57462] = {
 			["title"] = "Dream Catcher",
 			["objectives"] = {
-				"2/200 Shred of Insanity", -- [1]
+				"28/200 Shred of Insanity", -- [1]
 			},
 		},
 		[49032] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
+				"1/4  ", -- [1]
 			},
 		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
+		[53435] = {
+			["title"] = "Azerite for the Horde",
 			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
-			},
-		},
-		[51051] = {
-			["title"] = "Supplies Needed: Deep Sea Satin",
-			["objectives"] = {
-				"0/10 Deep Sea Satin", -- [1]
-			},
-		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
-			},
-		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
-			},
-		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
-			},
-		},
-		[49135] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
-			["objectives"] = {
-				"3/4 Sigil of the Dark Titan", -- [1]
-			},
-		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
-			},
-		},
-		[48642] = {
-			["title"] = "Argussian Reach",
-			["objectives"] = {
-				"3/4 Complete 4 Argussian Reach World Quests", -- [1]
-			},
-		},
-		[24756] = {
-			["title"] = "Blood Infusion",
-			["objectives"] = {
-				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
-			},
-		},
-		[49076] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"3/4 Rune of Passage", -- [1]
-			},
-		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-			},
-		},
-		[49133] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
-			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
-			},
-		},
-		[13720] = {
-			["title"] = "The Valiant's Charge",
-			["objectives"] = {
-				"2/25 Valiant's Seal", -- [1]
-			},
-		},
-		[47129] = {
-			["title"] = "Tomb of Sargeras: The Deceiver",
-			["objectives"] = {
-				"Defeat Kil'jaeden", -- [1]
-				"1/1 Seal of the Deceiver", -- [2]
-			},
-		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
-			["objectives"] = {
-				"3/20 Eternal Ornament", -- [1]
 			},
 		},
 		[31891] = {
@@ -147,22 +40,149 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
-				"443/500 Earn Conquest", -- [1]
+				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"2/3 Complete 3 Kirin Tor World Quests", -- [1]
+			},
+		},
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4  ", -- [1]
+			},
+		},
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+			["objectives"] = {
+				"0/4  ", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"2/4  ", -- [1]
+			},
+		},
+		[58714] = {
+			["title"] = "The Forest Has Eyes",
+			["objectives"] = {
+				"0/6 Possessed Spy slain", -- [1]
+			},
+		},
+		[62807] = {
+			["title"] = "Forest Refugees",
+			["objectives"] = {
+			},
+		},
+		[62622] = {
+			["title"] = "A Travel Journal",
+			["objectives"] = {
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4  ", -- [1]
+			},
+		},
+		[24756] = {
+			["title"] = "Blood Infusion",
+			["objectives"] = {
+				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
+			},
+		},
+		[58719] = {
+			["title"] = "The Droman's Call",
+			["objectives"] = {
+				"0/1 Horn Sounded at East Road", -- [1]
+				"0/1 Horn Sounded at North Road", -- [2]
+				"0/1 Horn Sounded at West Road", -- [3]
+			},
+		},
+		[57744] = {
+			["title"] = "Conquest's Reward",
+			["objectives"] = {
+				"150/500 Earn Conquest", -- [1]
+			},
+		},
+		[48305] = {
+			["title"] = "The Burning Coven",
+			["objectives"] = {
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[47129] = {
+			["title"] = "Tomb of Sargeras: The Deceiver",
+			["objectives"] = {
+				"Defeat Kil'jaeden", -- [1]
+				"1/1 Seal of the Deceiver", -- [2]
+			},
+		},
+		[56120] = {
+			["title"] = "The Unshackled",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
+			},
+		},
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
+			},
+		},
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"0/4  ", -- [1]
+			},
+		},
+		[42422] = {
+			["title"] = "The Wardens",
+			["objectives"] = {
+				"3/4 Complete 4 Wardens World Quests", -- [1]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
+		[58265] = {
+			["title"] = "Blooming Villains",
+			["objectives"] = {
+				"0/15 Ritualists slain", -- [1]
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"1/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 	},

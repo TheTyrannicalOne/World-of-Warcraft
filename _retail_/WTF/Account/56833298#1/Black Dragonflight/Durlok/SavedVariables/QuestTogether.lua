@@ -25,17 +25,10 @@ QuestTogether = {
 				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
 			},
 		},
-		[56044] = {
-			["title"] = "Send the Fleet",
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
 			["objectives"] = {
-				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
-			},
-		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
-			["objectives"] = {
-				"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[53101] = {
@@ -47,6 +40,12 @@ QuestTogether = {
 			["title"] = "Army of the Light",
 			["objectives"] = {
 				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[40643] = {
@@ -62,12 +61,7 @@ QuestTogether = {
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10  ", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
+				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
 		[44989] = {
@@ -76,29 +70,16 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
+		[54042] = {
+			["title"] = "Trouble in Darkshore",
 			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
+				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[31891] = {
@@ -111,16 +92,28 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
+			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
+			},
+		},
 		[50606] = {
 			["title"] = "Horde War Effort",
 			["objectives"] = {
 				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[47105] = {
@@ -129,17 +122,17 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[54042] = {
-			["title"] = "Trouble in Darkshore",
+		[56044] = {
+			["title"] = "Send the Fleet",
 			["objectives"] = {
-				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
+				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

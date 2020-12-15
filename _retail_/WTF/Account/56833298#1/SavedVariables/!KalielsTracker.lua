@@ -15,7 +15,7 @@ KalielsTrackerDB = {
 		},
 		["Avisar - Dalaran"] = {
 			["quests"] = {
-				["num"] = 23,
+				["num"] = 20,
 			},
 		},
 		["Thorinbane - Dalaran"] = {
@@ -93,7 +93,7 @@ KalielsTrackerDB = {
 		},
 		["Zulbathal - Zul'jin"] = {
 			["quests"] = {
-				["num"] = 18,
+				["num"] = 19,
 			},
 		},
 		["Jingojaggot - Zul'jin"] = {
@@ -120,7 +120,7 @@ KalielsTrackerDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["quests"] = {
-				["num"] = 16,
+				["num"] = 19,
 			},
 		},
 		["Illingrath - Dalaran"] = {
@@ -163,21 +163,21 @@ KalielsTrackerDB = {
 		["Tyriinid - Dalaran"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Jingojaggot - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Panboozled - Runetotem"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 		["Brewnheimer - Darkspear"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
@@ -186,7 +186,7 @@ KalielsTrackerDB = {
 		["Tyran - Argent Dawn"] = "Default",
 		["Tynster - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
@@ -199,7 +199,7 @@ KalielsTrackerDB = {
 	},
 	["global"] = {
 		["helpTutorial"] = 11,
-		["version"] = "4.2.9",
+		["version"] = "4.2.11",
 	},
 	["profiles"] = {
 		["Default"] = {

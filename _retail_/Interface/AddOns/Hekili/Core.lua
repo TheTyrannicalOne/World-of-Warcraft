@@ -183,7 +183,7 @@ end
 
 function Hekili:OnEnable()  
     ns.StartEventHandler()
-    self:TotalRefresh()
+    self:TotalRefresh( true )
 
     ns.ReadKeybindings()
     self:ForceUpdate( "ADDON_ENABLED" )
@@ -1525,7 +1525,7 @@ function Hekili:ProcessHooks( dispName, packName )
 
                     if debug then self:Debug( 1, "Queued event #%d (%s %s) due at %.2f; checking pre-event recommendations.\n", n, event.action, event.type, t ) end
 
-                    if state:IsCasting() or state:IsChanneling() then
+                    if casting or channeling then
                         state:ApplyCastingAuraFromQueue()
                         if debug then self:Debug( 2, "Player is casting for %.2f seconds.  %s.", state.buff.casting.remains, shouldBreak and "We can break the channel" or "Only spells castable while casting will be used" ) end
                     else
@@ -1608,7 +1608,8 @@ function Hekili:ProcessHooks( dispName, packName )
 
             checkstr = checkstr and ( checkstr .. ':' .. action ) or action
 
-            slot.keybind = self:GetBindingForAction( action, display, i )
+            slot.keybind, slot.keybindFrom = self:GetBindingForAction( action, display, i )
+
             slot.resource_type = state.GetResourceType( action )
 
             for k,v in pairs( class.resources ) do
@@ -1651,6 +1652,7 @@ function Hekili:ProcessHooks( dispName, packName )
                         ns.spendResources( action )
                         state:RunHandler( action )
 
+                        state.channelSpell( action, state.query_time, cast, ability.id )
                         if debug then Hekili:Debug( "Queueing %s channel finish at %.2f [%.2f+%.2f].", action, state.query_time + cast, state.offset, cast, cast_target ) end
                         state:QueueEvent( action, state.query_time, state.query_time + cast, "CHANNEL_FINISH", cast_target )
     

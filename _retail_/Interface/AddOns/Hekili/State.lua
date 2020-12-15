@@ -22,6 +22,7 @@ local tcopy = ns.tableCopy
 -- Clean up table_x later.
 local insert, remove, sort, unpack, wipe = table.insert, table.remove, table.sort, table.unpack, table.wipe
 local RC = LibStub( "LibRangeCheck-2.0" )
+local LSR = LibStub( "SpellRange-1.0" )
 
 
 local class = Hekili.Class
@@ -724,7 +725,7 @@ end
 
 
 -- Apply a buff to the current game state.
-local function applyBuff( aura, duration, stacks, value )
+local function applyBuff( aura, duration, stacks, value, v2, v3 )
     if not aura then
         Error( "Attempted to apply/remove a nameless aura '%s'.", aura or "nil" )
         return
@@ -768,6 +769,8 @@ local function applyBuff( aura, duration, stacks, value )
         b.last_application = b.applied or 0
 
         b.v1 = 0
+        b.v2 = nil
+        b.v3 = nil
         b.applied = 0
         b.caster = 'unknown'
 
@@ -788,6 +791,8 @@ local function applyBuff( aura, duration, stacks, value )
 
         b.count = min( class.auras[ aura ].max_stack or 1, stacks or 1 )
         b.v1 = value or 0
+        b.v2 = v2
+        b.v3 = v3
         b.caster = 'player'
     end
 
@@ -1042,10 +1047,9 @@ function state.channelSpell( name, start, duration, id )
         state.player.channelStart = start
         state.player.channelEnd = start + duration
 
-        applyBuff( "casting", duration, nil, id or ( ability and ability.id ) or 0 )
+        applyBuff( "casting", duration, nil, id or ( ability and ability.id ) or 0, nil, true )
         state.buff.casting.applied = start
         state.buff.casting.expires = start + duration
-        -- state.buff.casting.v3 = true
     end
 end
 
@@ -1967,6 +1971,9 @@ local mt_state = {
             -- Pulse from the ability's 'critical' value or uses current character sheet crit.
             return ability and ability.critical or t.stat.crit
 
+        elseif k == "in_range" then
+            return t.action[ action ].in_range
+
         end
 
 
@@ -2469,6 +2476,9 @@ local mt_target = {
 
         elseif k == "is_add" then
             return not t.is_boss
+        
+        elseif k == "is_friendly" then
+            return UnitExists( "target" ) and UnitIsFriend( "target", "player" )
 
         elseif k:sub(1, 6) == 'within' then
             local maxR = k:match( "^within(%d+)$" )
@@ -4077,12 +4087,6 @@ local mt_default_debuff = {
     __index = function( t, k )
         local aura = class.auras[ t.key ]
 
-        -- The aura is flagged to get info from a different target.
-        if t.key == "festering_wound" then
-            local exp, min, max, a_name = state.GetCycleInfo()
-            if Hekili.ActiveDebug then Hekili:Debug( "festering_wound.%s ... Cycling? %s, cycle_debuff.%s = %s [ %.2f | %d | %d | %s ]", k, tostring( state.IsCycling( t.key ) ), k, tostring( cycle_debuff[ k ] ), exp or 0, min or 0, max or 0, a_name or 'n/a' ) end
-        end
-
         if state.IsCycling( t.key ) and cycle_debuff[ k ] ~= nil then
             return cycle_debuff[ k ]
         end
@@ -4469,6 +4473,13 @@ local mt_default_action = {
 
         elseif k == "last_used" then
             return state.combat > 0 and max( 0, ability.lastCast - state.combat ) or 0
+        
+        elseif k == "in_range" then
+            if UnitExists( "target" ) and UnitCanAttack( "player", "target" ) and LSR.IsSpellInRange( ability.rangeSpell or ability.id, "target" ) == 0 then
+                return false
+            end
+
+            return true
 
         else
             local val = ability[ k ]
@@ -5298,6 +5309,8 @@ do
                     local spell = class.abilities[ entry.action ]
                     if spell and spell.id then
                         self.buff.casting.v1 = spell.id
+                        self.buff.casting.v3 = entry.type == "CHANNEL_FINISH"
+
                         self.channelSpell( entry.action, entry.start or self.now, entry.time - ( entry.start or self.now ), spell.id )
                     end
                 end
@@ -5409,6 +5422,7 @@ function state.reset( dispName )
             if mode == "single" or mode == "dual" or mode == "reactive" then state.max_targets = 1
             elseif mode == "aoe" then state.min_targets = spec and spec.aoe or 3 end
         elseif dispName == 'AOE' then state.min_targets = spec and spec.aoe or 3
+        elseif dispName == 'Cooldowns' then state.filter = 'cooldowns'
         elseif dispName == 'Interrupts' then state.filter = 'interrupts'
         elseif dispName == 'Defensives' then state.filter = 'defensives'
         end
@@ -6141,8 +6155,6 @@ end
 
 
 do
-    local LSR = LibStub( "SpellRange-1.0" )
-
     local toggleSpells = {
         potion = true,
         cancel_buff = true,
@@ -6178,6 +6190,35 @@ do
                 elseif toggle and toggle ~= 'none' then
                     if not self.toggle[ toggle ] or ( profile.toggles[ toggle ].separate and state.filter ~= toggle ) then return true, "toggle" end
                 end
+            end
+        end
+
+        return false
+    end
+
+
+    -- TODO:  Finish this, need to support toggles that knock spells to their own display vs. toggles that disable an ability entirely.
+    function state:IsFiltered( spell )
+        if state.filter == "none" then return false end
+
+        spell = spell or self.this_action
+
+        local ability = class.abilities[ spell ]
+        if not ability then return false end
+
+        spell = ability.key
+
+        local profile = Hekili.DB.profile
+        local spec = profile.specs[ state.spec.id ]
+
+        local toggle = option.toggle
+        if not toggle or toggle == 'default' then toggle = ability.toggle end
+
+        if ability.id < -100 or ability.id > 0 or toggleSpells[ spell ] then
+            if state.filter ~= 'none' and state.filter ~= toggle and not ability[ state.filter ] then return true, "display"
+            elseif ability.item and not state.equipped[ ability.item ] then return false
+            elseif toggle and toggle ~= 'none' then
+                if not self.toggle[ toggle ] or ( profile.toggles[ toggle ].separate and state.filter ~= toggle ) then return true, "toggle" end
             end
         end
 
@@ -6231,7 +6272,7 @@ do
             return false, "ability.disabled returned true"
         end
 
-        if self.args.only_cwc and ( not self.buff.casting.up or not self.buff.casting.v3 ) then
+        if self.args.only_cwc and ( not self.buff.casting.up or not self.buff.casting.v3 or not ability.castableWhileCasting ) then
             return false, "only castable while channeling"
         end
 
@@ -6253,6 +6294,14 @@ do
 
         if ability.debuff and not state.debuff[ ability.debuff ].up then
             return false, "required debuff (" ..ability.debuff .. ") not active"
+        end
+
+        if ability.channeling then
+            local c = class.abilities[ ability.channeling ] and class.abilities[ ability.channeling ].id
+            
+            if not c or state.buff.casting.down or not state.buff.casting.v3 or state.buff.casting.v1 ~= c then
+                return false, "required channel (" .. ability.channeling .. ") not active"
+            end
         end
 
         if self.args.moving == 1 and state.buff.movement.down then
@@ -6526,4 +6575,4 @@ for k, v in pairs( state ) do
     ns.commitKey( k )
 end
 
-ns.attr = { "serenity", "active", "active_enemies", "my_enemies", "active_flame_shock", "adds", "agility", "air", "armor", "attack_power", "bonus_armor", "cast_delay", "cast_time", "casting", "cooldown_react", "cooldown_remains", "cooldown_up", "crit_rating", "deficit", "distance", "down", "duration", "earth", "enabled", "energy", "execute_time", "fire", "five", "focus", "four", "gcd", "hardcasts", "haste", "haste_rating", "health", "health_max", "health_pct", "intellect", "level", "mana", "mastery_rating", "mastery_value", "max_nonproc", "max_stack", "maximum_energy", "maximum_focus", "maximum_health", "maximum_mana", "maximum_rage", "maximum_runic", "melee_haste", "miss_react", "moving", "mp5", "multistrike_pct", "multistrike_rating", "one", "pct", "rage", "react", "regen", "remains", "resilience_rating", "runic", "seal", "spell_haste", "spell_power", "spirit", "stack", "stack_pct", "stacks", "stamina", "strength", "this_action", "three", "tick_damage", "tick_dmg", "tick_time", "ticking", "ticks", "ticks_remain", "time", "time_to_die", "time_to_max", "travel_time", "two", "up", "water", "weapon_dps", "weapon_offhand_dps", "weapon_offhand_speed", "weapon_speed", "single", "aoe", "cleave", "percent", "last_judgment_target", "unit", "ready", "refreshable", "pvptalent", "conduit", "legendary", "runeforge", "covenant" }
+ns.attr = { "serenity", "active", "active_enemies", "my_enemies", "active_flame_shock", "adds", "agility", "air", "armor", "attack_power", "bonus_armor", "cast_delay", "cast_time", "casting", "cooldown_react", "cooldown_remains", "cooldown_up", "crit_rating", "deficit", "distance", "down", "duration", "earth", "enabled", "energy", "execute_time", "fire", "five", "focus", "four", "gcd", "hardcasts", "haste", "haste_rating", "health", "health_max", "health_pct", "intellect", "level", "mana", "mastery_rating", "mastery_value", "max_nonproc", "max_stack", "maximum_energy", "maximum_focus", "maximum_health", "maximum_mana", "maximum_rage", "maximum_runic", "melee_haste", "miss_react", "moving", "mp5", "multistrike_pct", "multistrike_rating", "one", "pct", "rage", "react", "regen", "remains", "resilience_rating", "runic", "seal", "spell_haste", "spell_power", "spirit", "stack", "stack_pct", "stacks", "stamina", "strength", "this_action", "three", "tick_damage", "tick_dmg", "tick_time", "ticking", "ticks", "ticks_remain", "time", "time_to_die", "time_to_max", "travel_time", "two", "up", "water", "weapon_dps", "weapon_offhand_dps", "weapon_offhand_speed", "weapon_speed", "single", "aoe", "cleave", "percent", "last_judgment_target", "unit", "ready", "refreshable", "pvptalent", "conduit", "legendary", "runeforge", "covenant", "soulbind", "enabled" }

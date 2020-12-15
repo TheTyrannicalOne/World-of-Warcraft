@@ -302,10 +302,10 @@ else
 			minLevel = 24,
 			maxLevel = 27,
 			sourceInfo = {
-				{classId = LE_ITEM_CLASS_ARMOR, quality = 2, minItemLevel = 30, maxItemLevel = 31, matRate = 0.750, minAmount = 2, maxAmount = 7, amountOfMats = 1.933},
-				{classId = LE_ITEM_CLASS_ARMOR, quality = 2, minItemLevel = 32, maxItemLevel = 33, matRate = 0.750, minAmount = 2, maxAmount = 9, amountOfMats = 2.655},
-				{classId = LE_ITEM_CLASS_WEAPON, quality = 2, minItemLevel = 30, maxItemLevel = 31, matRate = 0.220, minAmount = 2, maxAmount = 5, amountOfMats = 0.750},
-				{classId = LE_ITEM_CLASS_WEAPON, quality = 2, minItemLevel = 32, maxItemLevel = 33, matRate = 0.220, minAmount = 2, maxAmount = 7, amountOfMats = 0.787},
+				{classId = LE_ITEM_CLASS_ARMOR, quality = 2, minItemLevel = 30, maxItemLevel = 30, matRate = 0.750, minAmount = 2, maxAmount = 7, amountOfMats = 1.933},
+				{classId = LE_ITEM_CLASS_ARMOR, quality = 2, minItemLevel = 31, maxItemLevel = 31, matRate = 0.750, minAmount = 2, maxAmount = 9, amountOfMats = 2.655},
+				{classId = LE_ITEM_CLASS_WEAPON, quality = 2, minItemLevel = 30, maxItemLevel = 30, matRate = 0.220, minAmount = 2, maxAmount = 5, amountOfMats = 0.750},
+				{classId = LE_ITEM_CLASS_WEAPON, quality = 2, minItemLevel = 31, maxItemLevel = 31, matRate = 0.220, minAmount = 2, maxAmount = 7, amountOfMats = 0.787},
 			},
 		},
 		["i:34054"] = { -- Infinite Dust

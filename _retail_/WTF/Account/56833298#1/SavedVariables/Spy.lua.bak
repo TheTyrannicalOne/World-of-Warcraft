@@ -205,6 +205,7 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Shanyt - Argent Dawn"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 817.4998168945312,
@@ -227,9 +228,8 @@ SpyDB = {
 					},
 				},
 			},
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Kelvalatar - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
@@ -381,6 +381,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Ruffinton - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
@@ -452,7 +453,6 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
-			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -460,6 +460,8 @@ SpyDB = {
 					},
 				},
 			},
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Malivant - Dalaran"] = {

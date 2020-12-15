@@ -432,6 +432,7 @@ SpyDB = {
 		},
 		["Durlok - Black Dragonflight"] = {
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -478,6 +479,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Varlouris - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,

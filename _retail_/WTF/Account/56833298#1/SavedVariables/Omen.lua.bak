@@ -64,14 +64,14 @@ Omen3DB = {
 			["VGrip1"] = 87.97494675829464,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["PositionW"] = 339.0011291503906,
-			["PositionH"] = 217.0006713867188,
 			["VGrip2"] = 194.9254411081601,
 			["PositionY"] = 245.0004119873047,
+			["PositionW"] = 339.0011291503906,
+			["PositionH"] = 217.0006713867188,
 			["Locked"] = true,
 			["Shown"] = false,
-			["VGrip1"] = 144.0753260364662,
 			["PositionX"] = 1663.17138671875,
+			["VGrip1"] = 144.0753260364662,
 		},
 		["Kelvalatar - Dalaran"] = {
 			["Shown"] = false,
@@ -169,13 +169,13 @@ Omen3DB = {
 			["PositionX"] = 1821.499877929688,
 		},
 		["Durlok - Black Dragonflight"] = {
+			["PositionW"] = 402.0000305175781,
+			["PositionH"] = 250.0000915527344,
 			["VGrip2"] = 231.149911735575,
 			["PositionY"] = 493.0004272460938,
-			["PositionW"] = 402.0000305175781,
 			["Shown"] = false,
 			["VGrip1"] = 170.8499347610773,
 			["PositionX"] = 2157.999755859375,
-			["PositionH"] = 250.0000915527344,
 		},
 		["Malivant - Dalaran"] = {
 		},

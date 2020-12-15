@@ -1,12 +1,12 @@
-tag 6def9dcbc7e5efc10ff34dca88805ec06fff1ed5 v2.1.12
+tag cdea32970feb53d54eb9914ac796e58dcb332dc3 v2.1.15
 Author:	Chev <chev@chevtek.io>
-Date:	Fri Oct 16 11:13:57 2020 -0600
+Date:	Sat Dec 12 12:25:57 2020 -0700
 
-v2.1.12
+v2.1.15
 
-commit 9956aa7c9988db3465efcca043d36839bc631e61
+commit bd590ee338e7b413b1e228d4417b363ebe06976c
 Author: Chev <chev@chevtek.io>
-Date:   Fri Oct 16 11:10:51 2020 -0600
+Date:   Sat Dec 12 12:25:23 2020 -0700
 
-    Update WoW interface version.
+    Fix quest accept bug with event params
 

@@ -246,7 +246,12 @@ local oneTimeFixes = {
             p.specs[ 261 ].settings.mfd_waste = nil
         end
     end,
-            
+
+    resetAllPotions_20201209 = function( p )
+        for id in pairs( p.specs ) do
+            p.specs[ id ].potion = nil
+        end
+    end,
 }
 
 
@@ -559,6 +564,7 @@ function Hekili:GetDefaults()
                     key = "ALT-SHIFT-R",
                     value = false,
                     override = false,
+                    separate = false,
                 },
 
                 defensives = {
@@ -696,6 +702,29 @@ function Hekili:GetDefaults()
                     },
                 },
 
+                Cooldowns = {
+                    enabled = true,
+                    builtIn = true,
+
+                    name = "Cooldowns",
+                    filter = 'cooldowns',
+
+                    x = 0,
+                    y = -280,
+
+                    numIcons = 1,
+                    order = 3,
+
+                    flash = {
+                        color = { 0, 0, 1, 1 },
+                    },
+
+                    glow = {
+                        enabled = true,
+                        mode = "autocast",
+                    },
+                },
+
                 Defensives = {
                     enabled = true,
                     builtIn = true,
@@ -707,7 +736,7 @@ function Hekili:GetDefaults()
                     y = -225,
 
                     numIcons = 1,
-                    order = 3,
+                    order = 4,
 
                     flash = {
                         color = { 0, 0, 1, 1 },
@@ -730,7 +759,7 @@ function Hekili:GetDefaults()
                     y = -225,
 
                     numIcons = 1,
-                    order = 4,
+                    order = 5,
 
                     flash = {
                         color = { 1, 1, 1, 1 },
@@ -1052,6 +1081,7 @@ do
 
         if name == "Defensives" then fancyName = AtlasToString( "nameplates-InterruptShield" ) .. " " .. name
         elseif name == "Interrupts" then fancyName = AtlasToString( "communities-icon-redx" ) .. " " .. name
+        elseif name == "Cooldowns" then fancyName = NewFeature .. " " .. name
         else fancyName = name end
 
         return {
@@ -1085,7 +1115,7 @@ do
                                 name = "Enabled",
                                 desc = "If disabled, this display will not appear under any circumstances.",
                                 order = 0.5,
-                                hidden = function () return name == "Primary" or name == "AOE" or name == "Defensives" or name == "Interrupts" end
+                                hidden = function () return name == "Primary" or name == "AOE" or name == "Cooldowns"  or name == "Defensives" or name == "Interrupts" end
                             },
 
                             elvuiCooldown = {
@@ -1110,7 +1140,7 @@ do
                                     local n = #info
                                     local display = info[2]
 
-                                    if display == "Interrupts" or display == "Defensives" then
+                                    if display == "Defensives" or display == "Interrupts" then
                                         return true
                                     end
 
@@ -3067,8 +3097,8 @@ ns.AbilitySettings = function ()
 
                         abilityToggles[ 'none' ] = 'None'
                         abilityToggles[ 'default' ] = 'Default' .. ( ability.toggle and ( ' |cFFFFD100(' .. ability.toggle .. ')|r' ) or ' |cFFFFD100(none)|r' )
-                        abilityToggles[ 'defensives' ] = 'Defensives'
                         abilityToggles[ 'cooldowns' ] = 'Cooldowns'
+                        abilityToggles[ 'defensives' ] = 'Defensives'
                         abilityToggles[ 'interrupts' ] = 'Interrupts'
                         abilityToggles[ 'potions' ] = 'Potions'
 
@@ -3487,8 +3517,8 @@ local specs = {}
 local activeSpec
 
 local function GetCurrentSpec()
-    local id, name = GetSpecializationInfo( GetSpecialization() )
-    return activeSpec or id
+    activeSpec = activeSpec or GetSpecializationInfo( GetSpecialization() )
+    return activeSpec
 end
 
 local function SetCurrentSpec( _, val )
@@ -3598,7 +3628,7 @@ do
         local spec = GetCurrentSpec()
 
         self.DB.profile.specs[ spec ].abilities[ ability ][ option ] = val
-        if option == "toggle" then Hekili:EmbedSpecOptions() end
+        if option == "toggle" then Hekili:EmbedAbilityOption( nil, ability ) end
     end
 
     function Hekili:GetAbilityOption( info )
@@ -3618,7 +3648,7 @@ do
         local spec = GetCurrentSpec()
 
         self.DB.profile.specs[ spec ].items[ item ][ option ] = val
-        if option == "toggle" then Hekili:EmbedSpecOptions() end
+        if option == "toggle" then Hekili:EmbedSpecOption( nil, item ) end
     end
 
     function Hekili:GetItemOption( info )
@@ -3630,6 +3660,131 @@ do
         return self.DB.profile.specs[ spec ].items[ item ][ option ]
     end
 
+
+    function Hekili:EmbedAbilityOption( db, key )
+        db = db or self.Options
+        if not db or not key then return end
+
+        local ability = class.abilities[ key ]
+        if not ability then return end
+
+        local toggles = {}
+
+        local k = class.abilityList[ ability.key ]
+        local v = ability.key
+
+        if not k or not v then return end
+
+        local useName = class.abilityList[ v ] and class.abilityList[v]:match("|t (.+)$") or ability.name
+
+        if not useName then
+            Hekili:Error( "No name available for %s (id:%d) in EmbedAbilityOptions.", ability.key or "no_id", ability.id or 0 )
+            useName = ability.key or ability.id or "???"
+        end
+
+        local option = db.args.abilities.plugins.actions[ v ] or {}
+
+        option.type = "group"
+        option.name = function () return ( state:IsDisabled( v, true ) and "|cFFFF0000" or "" ) .. useName .. "|r" end
+        option.order = 1
+        option.set = "SetAbilityOption"
+        option.get = "GetAbilityOption"
+        option.args = {
+            disabled = {
+                type = "toggle",
+                name = function () return "Disable " .. ( ability.item and ability.link or k ) end,
+                desc = function () return "If checked, this ability will |cffff0000NEVER|r be recommended by the addon.  This can cause " ..
+                    "issues for some specializations, if other abilities depend on you using " .. ( ability.item and ability.link or k ) .. "." end,
+                width = 1.5,
+                order = 1,
+            },
+
+            boss = {
+                type = "toggle",
+                name = "Boss Encounter Only",
+                desc = "If checked, the addon will not recommend " .. k .. " unless you are in a boss fight (or encounter).  If left unchecked, " .. k .. " can be recommended in any type of fight.",
+                width = 1.5,
+                order = 1.1,
+            },                    
+
+            keybind = {
+                type = "input",
+                name = "Override Keybind Text",
+                desc = "If specified, the addon will show this text in place of the auto-detected keybind text when recommending this ability.  " ..
+                    "This can be helpful if the addon incorrectly detects your keybindings.",
+                validate = function( info, val )
+                    val = val:trim()
+                    if val:len() > 6 then return "Keybindings should be no longer than 6 characters in length." end
+                    return true
+                end,
+                width = 1.5,
+                order = 2,
+            },
+
+            toggle = {
+                type = "select",
+                name = "Require Toggle",
+                desc = "Specify a required toggle for this action to be used in the addon action list.  When toggled off, abilities are treated " ..
+                    "as unusable and the addon will pretend they are on cooldown (unless specified otherwise).",
+                width = 1.5,
+                order = 3,
+                values = function ()
+                    table.wipe( toggles )
+
+                    local t = class.abilities[ v ].toggle or "none"
+                    if t == "essences" then t = "covenants" end
+
+                    toggles.none = "None"
+                    toggles.default = "Default |cffffd100(" .. t .. ")|r"
+                    toggles.cooldowns = "Cooldowns"
+                    toggles.essences = "Covenants"
+                    toggles.defensives = "Defensives"
+                    toggles.interrupts = "Interrupts"
+                    toggles.potions = "Potions"
+                    toggles.custom1 = "Custom 1"
+                    toggles.custom2 = "Custom 2"
+
+                    return toggles
+                end,
+            },
+
+            targetMin = {
+                type = "range",
+                name = "Minimum Targets",
+                desc = "If set above zero, the addon will only allow " .. k .. " to be recommended, if there are at least this many detected enemies.  All other action list conditions must also be met.\nSet to zero to ignore.",
+                width = 1.5,
+                min = 0,
+                max = 15,
+                step = 1,
+                order = 3.1,
+            },
+
+            targetMax = {
+                type = "range",
+                name = "Maximum Targets",
+                desc = "If set above zero, the addon will only allow " .. k .. " to be recommended if there are this many detected enemies (or fewer).  All other action list conditions must also be met.\nSet to zero to ignore.",
+                width = 1.5,
+                min = 0,
+                max = 15,
+                step = 1,
+                order = 3.2,
+            },
+
+            clash = {
+                type = "range",
+                name = "Clash",
+                desc = "If set above zero, the addon will pretend " .. k .. " has come off cooldown this much sooner than it actually has.  " ..
+                    "This can be helpful when an ability is very high priority and you want the addon to prefer it over abilities that are available sooner.",
+                width = 3,
+                min = -1.5,
+                max = 1.5,
+                step = 0.05,
+                order = 4,
+            },
+        }
+
+        db.args.abilities.plugins.actions[ v ] = option
+    end
 
     function Hekili:EmbedAbilityOptions( db )
         db = db or self.Options
@@ -3707,9 +3862,9 @@ do
 
                             toggles.none = "None"
                             toggles.default = "Default |cffffd100(" .. t .. ")|r"
-                            toggles.defensives = "Defensives"
-                            toggles.essences = "Covenants"
                             toggles.cooldowns = "Cooldowns"
+                            toggles.essences = "Covenants"
+                            toggles.defensives = "Defensives"
                             toggles.interrupts = "Interrupts"
                             toggles.potions = "Potions"
                             toggles.custom1 = "Custom 1"
@@ -3757,8 +3912,123 @@ do
 
             db.args.abilities.plugins.actions[ v ] = option
         end
+    end
 
-        self.NewSpellInfo = false
+
+    function Hekili:EmbedItemOption( db, item )
+        db = db or self.Options
+        if not db then return end
+
+        local ability = class.abilities[ item ]
+        local toggles = {}
+
+        local k = class.itemList[ ability.item ]
+        local v = ability.itemKey or ability.key
+
+        if not item or not ability.item or not k then
+            Hekili:Error( "Unable to find %s / %s / %s in the itemlist.", item or "unknown", ability.item or "unknown", k or "unknown" )
+            return
+        end
+
+        local option = db.args.items.plugins.equipment[ v ] or {}
+
+        option.type = "group"
+        option.name = function () return ( state:IsDisabled( v, true ) and "|cFFFF0000" or "" ) .. ability.name .. "|r" end
+        option.order = 1
+        option.set = "SetItemOption"
+        option.get = "GetItemOption"
+        option.args = {
+            disabled = {
+                type = "toggle",
+                name = function () return "Disable " .. ( ability.item and ability.link or k ) end,
+                desc = function () return "If checked, this ability will |cffff0000NEVER|r be recommended by the addon.  This can cause " ..
+                    "issues for some specializations, if other abilities depend on you using " .. ( ability.item and ability.link or k ) .. "." end,
+                width = 1.5,
+                order = 1,
+            },
+
+            boss = {
+                type = "toggle",
+                name = "Boss Encounter Only",
+                desc = "If checked, the addon will not recommend " .. k .. " via [Use Items] unless you are in a boss fight (or encounter).  If left unchecked, " .. k .. " can be recommended in any type of fight.",
+                width = 1.5,
+                order = 1.1,
+            },
+
+            keybind = {
+                type = "input",
+                name = "Override Keybind Text",
+                desc = "If specified, the addon will show this text in place of the auto-detected keybind text when recommending this ability.  " ..
+                    "This can be helpful if the addon incorrectly detects your keybindings.",
+                validate = function( info, val )
+                    val = val:trim()
+                    if val:len() > 6 then return "Keybindings should be no longer than 6 characters in length." end
+                    return true
+                end,
+                width = 1.5,
+                order = 2,
+            },
+
+            toggle = {
+                type = "select",
+                name = "Require Toggle",
+                desc = "Specify a required toggle for this action to be used in the addon action list.  When toggled off, abilities are treated " ..
+                    "as unusable and the addon will pretend they are on cooldown (unless specified otherwise).",
+                width = 1.5,
+                order = 3,
+                values = function ()
+                    table.wipe( toggles )
+
+                    toggles.none = "None"
+                    toggles.default = "Default" .. ( class.abilities[ v ].toggle and ( " |cffffd100(" .. class.abilities[ v ].toggle .. ")|r" ) or " |cffffd100(none)|r" )
+                    toggles.cooldowns = "Cooldowns"
+                    toggles.essences = "Covenants"
+                    toggles.defensives = "Defensives"
+                    toggles.interrupts = "Interrupts"
+                    toggles.potions = "Potions"
+                    toggles.custom1 = "Custom 1"
+                    toggles.custom2 = "Custom 2"
+
+                    return toggles
+                end,
+            },
+
+            --[[ clash = {
+                type = "range",
+                name = "Clash",
+                desc = "If set above zero, the addon will pretend " .. k .. " has come off cooldown this much sooner than it actually has.  " ..
+                    "This can be helpful when an ability is very high priority and you want the addon to prefer it over abilities that are available sooner.",
+                width = "full",
+                min = -1.5,
+                max = 1.5,
+                step = 0.05,
+                order = 4,
+            }, ]]
+
+            targetMin = {
+                type = "range",
+                name = "Minimum Targets",
+                desc = "If set above zero, the addon will only allow " .. k .. " to be recommended via [Use Items] if there are at least this many detected enemies.\nSet to zero to ignore.",
+                width = 1.5,
+                min = 0,
+                max = 15,
+                step = 1,
+                order = 5,
+            },
+
+            targetMax = {
+                type = "range",
+                name = "Maximum Targets",
+                desc = "If set above zero, the addon will only allow " .. k .. " to be recommended via [Use Items] if there are this many detected enemies (or fewer).\nSet to zero to ignore.",
+                width = 1.5,
+                min = 0,
+                max = 15,
+                step = 1,
+                order = 6,
+            },
+        }
+
+        db.args.items.plugins.equipment[ v ] = option
     end
 
 
@@ -3827,9 +4097,9 @@ do
 
                             toggles.none = "None"
                             toggles.default = "Default" .. ( class.abilities[ v ].toggle and ( " |cffffd100(" .. class.abilities[ v ].toggle .. ")|r" ) or " |cffffd100(none)|r" )
-                            toggles.defensives = "Defensives"
-                            toggles.essences = "Covenants"
                             toggles.cooldowns = "Cooldowns"
+                            toggles.essences = "Covenants"
+                            toggles.defensives = "Defensives"
                             toggles.interrupts = "Interrupts"
                             toggles.potions = "Potions"
                             toggles.custom1 = "Custom 1"
@@ -4504,7 +4774,8 @@ do
                             args = {
                                 toggleDesc = {
                                     type = "description",
-                                    name = "This section controls which abilities are enabled/disabled when you toggle each category when in this specialization.  Gear and Trinkets can be adjusted via their own section (left).",
+                                    name = "This section shows which Abilities are enabled/disabled when you toggle each category when in this specialization.  Gear and Trinkets can be adjusted via their own section (left).\n\n" ..
+                                        "Removing an ability from its toggle leaves it |cFF00FF00ENABLED|r regardless of whether the toggle is active.",
                                     fontSize = "medium",
                                     order = 1,
                                     width = 3,
@@ -5561,11 +5832,13 @@ do
                                 },
 
                                 warnings = {
-                                    type = "input",
-                                    name = "Import Log",
-                                    desc = "If this pack's action lists were imported from a SimulationCraft profile, any details logged at import are included here.",
+                                    type = "description",
+                                    name = function ()
+                                        local p = rawget( Hekili.DB.profile.packs, pack )
+                                        return "|cFFFFD100Import Log|r\n" .. ( p.warnings ) .. "\n\n"
+                                    end,
                                     order = 5,
-                                    multiline = 10,
+                                    fontSize = "medium",
                                     width = "full",                                
                                     hidden = function ()
                                         local p = rawget( Hekili.DB.profile.packs, pack )
@@ -6743,12 +7016,34 @@ do
                             order = 2,                            
                         },
 
+                        separate = {
+                            type = "toggle",
+                            name = NewFeature .. " Show Separately",
+                            desc = "If checked, cooldown abilities will be shown separately in your Cooldowns Display.\n\n" ..
+                                "This is an experimental feature and may not work well for some specializations.",
+                            order = 3,
+                        },
+
+                        lineBreak = {
+                            type = "description",
+                            name = "",
+                            width = "full",
+                            order = 3.1,
+                        },
+
+                        indent = {
+                            type = "description",
+                            name = "",
+                            width = 1,
+                            order = 3.2
+                        },
+
                         override = {
                             type = "toggle",
                             name = "Bloodlust Override",
                             desc = "If checked, when Bloodlust (or similar effects) are active, the addon will recommend cooldown abilities even if Show Cooldowns is not checked.",
-                            order = 3,
-                        },
+                            order = 4,
+                        }
                     }
                 },
 
@@ -7752,28 +8047,6 @@ function Hekili:GenerateProfile()
         if state.covenant[ v ] then covenant = v; break end
     end
 
-    local traits
-    for k, v in orderedPairs( s.azerite ) do
-        if v.rank > 0 then
-            if traits then traits = format( "%s\n    %s = %d", traits, k, v.rank )
-            else traits = format( "%s = %d", k, v.rank ) end
-        end
-    end
-
-    local essences
-    local major, minors
-
-    for k, v in orderedPairs( s.essence ) do
-        if v.rank > 0 then
-            if v.major then major = format( "[%s] = %d", k, v.rank )
-            else
-                if minors then minors = format( "%s, %s = %d", minors, k, v.rank )
-                else minors = format( "%s = %d", k, v.rank ) end
-            end
-        end
-    end
-    essences = format( "%s, %s", major or "[none]", minors or "none" )
-
     local sets
     for k, v in orderedPairs( class.gear ) do
         if s.set_bonus[ k ] > 0 then
@@ -7832,9 +8105,7 @@ function Hekili:GenerateProfile()
         "talents: %s\n\n" ..
         "pvptalents: %s\n\n" ..
         "covenant: %s\n\n" ..
-        "azerite: %s\n\n" ..
-        "essences: %s\n\n" ..
-        "sets/legendaries/artifacts: %s\n\n" ..
+        "sets: %s\n\n" ..
         "gear: %s\n\n" ..
         "legendaries: %s\n\n" ..
         "itemIDs: %s\n\n" ..
@@ -7847,8 +8118,6 @@ function Hekili:GenerateProfile()
         talents or "none",
         pvptalents or "none",
         covenant or "none",
-        traits or "none",
-        essences or "none",
         sets or "none",
         gear or "none",
         legendaries or "none",
@@ -7873,27 +8142,18 @@ function Hekili:GetOptions()
                 order = 10,
                 childGroups = "tab",
                 args = {
-                    topRow = {
-                        type = "group",
-                        inline = true,
-                        name = "",
-                        order = 1,
-                        width = "full",
-                        args = {
-                            enabled = {
-                                type = "toggle",
-                                name = "Enabled",
-                                desc = "Enables or disables the addon.",
-                                order = 1
-                            },
+                    enabled = {
+                        type = "toggle",
+                        name = "Enabled",
+                        desc = "Enables or disables the addon.",
+                        order = 1
+                    },
 
-                            minimapIcon = {
-                                type = "toggle",
-                                name = "Hide Minimap Icon",
-                                desc = "If checked, the minimap icon will be hidden.",
-                                order = 2,
-                            },
-                        },                      
+                    minimapIcon = {
+                        type = "toggle",
+                        name = "Hide Minimap Icon",
+                        desc = "If checked, the minimap icon will be hidden.",
+                        order = 2,
                     },
 
                     welcome = {
@@ -8156,7 +8416,7 @@ function Hekili:GetOptions()
 end
 
 
-function Hekili:TotalRefresh()
+function Hekili:TotalRefresh( noOptions )
 
     if Hekili.PLAYER_ENTERING_WORLD then
         self:SpecializationChanged()
@@ -8176,13 +8436,19 @@ function Hekili:TotalRefresh()
     ns.checkImports()
 
     -- self:LoadScripts()
-    self:RefreshOptions()
+    if not noOptions then self:RefreshOptions() end
     self:UpdateDisplayVisibility()
     self:BuildUI()
 
     self:OverrideBinds()
 
-    LibStub("LibDBIcon-1.0"):Refresh( "Hekili", self.DB.profile.iconStore )
+    -- LibStub("LibDBIcon-1.0"):Refresh( "Hekili", self.DB.profile.iconStore )
+    
+    if WeakAuras and WeakAuras.ScanEvents then
+        for name in pairs( Hekili.DB.profile.toggles ) do
+            WeakAuras.ScanEvents( "HEKILI_TOGGLE" )
+        end
+    end
 
 end
 
@@ -8627,41 +8893,210 @@ function Hekili:SetOption( info, input, ... )
 end
 
 
-function Hekili:CmdLine( input )
-    if not input or input:trim() == "" or input:trim() == "makedefaults" or input:trim() == 'import' or input:trim() == 'skeleton' then
-        --[[ if InCombatLockdown() and input:trim() ~= 'force' then
-            Hekili:Print( "This addon cannot be configured while in combat." )
+
+do
+    local validCommands = {
+        makedefaults = true,
+        import = true,
+        skeleton = true,
+        recover = true,
+        
+        profile = true,
+        set = true
+    }
+
+    local info = {}
+
+
+    function Hekili:CmdLine( input )
+        if not input or input:trim() == "" or input:trim() == "makedefaults" or input:trim() == "import" or input:trim() == "skeleton" then
+            if input:trim() == 'makedefaults' then
+                Hekili.MakeDefaults = true
+
+            elseif input:trim() == 'import' then
+                Hekili.AllowSimCImports = true
+
+            elseif input:trim() == 'skeleton' then
+                self:StartListeningForSkeleton()
+                self:Print( "Addon will now gather specialization information.  Select all talents and use all abilities for best results." )
+                self:Print( "See the Skeleton tab for more information. ")
+                Hekili.Skeleton = ""
+            end
+            ns.StartConfiguration()
             return
-        end ]]
-        if input:trim() == 'makedefaults' then
-            Hekili.MakeDefaults = true
-        elseif input:trim() == 'import' then
-            Hekili.AllowSimCImports = true
-        elseif input:trim() == 'skeleton' then
-            self:StartListeningForSkeleton()
-            self:Print( "Addon will now gather specialization information.  Select all talents and use all abilities for best results." )
-            self:Print( "See the Skeleton tab for more information. ")
-            Hekili.Skeleton = ""
+
+        elseif input:trim() == "center" then                
+            for i, v in ipairs( Hekili.DB.profile.displays ) do
+                ns.UI.Buttons[i][1]:ClearAllPoints()
+                ns.UI.Buttons[i][1]:SetPoint("CENTER", 0, (i-1) * 50 )
+            end
+            self:SaveCoordinates()
+            return
+
+        elseif input:trim() == "recover" then
+            self.DB.profile.displays = {}
+            self.DB.profile.actionLists = {}
+            self:RestoreDefaults()
+            -- ns.convertDisplays()
+            self:BuildUI()
+            self:Print("Default displays and action lists restored.")
+            return
+        
         end
-        ns.StartConfiguration()
 
-    elseif input:trim() == 'center' then                
-        for i, v in ipairs( Hekili.DB.profile.displays ) do
-            ns.UI.Buttons[i][1]:ClearAllPoints()
-            ns.UI.Buttons[i][1]:SetPoint("CENTER", 0, (i-1) * 50 )
+        if input then
+            input = input:trim()
+            local args = {}
+
+            for arg in string.gmatch( input, "%S+" ) do
+                insert( args, lower( arg ) )
+            end
+
+            if args[1] == "set" then
+                local prefs = Hekili.DB.profile.specs[ state.spec.id ].settings
+                local settings = class.specs[ state.spec.id ].settings
+
+                local index
+
+                if args[2] then
+                    for i, setting in ipairs( settings ) do
+                        if setting.name == args[2] then
+                            index = i
+                            break
+                        end
+                    end
+                end
+
+                if #args == 1 or not index then
+                    -- No arguments, list options.
+                    local output = "Use |cFFFFD100/hekili set|r to adjust your specialization options via chat or macros.\n\nOptions for " .. state.spec.name .. " are:"
+
+                    local hasToggle, hasNumber = false, false
+                    local exToggle, exNumber
+
+                    for i, setting in ipairs( settings ) do
+                        if setting.info.type == "toggle" then
+                            output = format( "%s\n - |cFFFFD100%s|r = |cFF00FF00%s|r (%s)", output, setting.name, prefs[ setting.name ] and "ON" or "OFF", setting.info.name )
+                            hasToggle = true
+                            exToggle = setting.name
+                        elseif setting.info.type == "range" then
+                            output = format( "%s\n - |cFFFFD100%s|r = |cFF00FF00%.2f|r, min: %.2f, max: %.2f (%s)", output, setting.name, prefs[ setting.name ], ( setting.info.min and format( "%.2f", setting.info.min ) or "N/A" ), ( setting.info.max and format( "%.2f", setting.info.max ) or "N/A" ), setting.info.name )
+                            hasNumber = true
+                            exNumber = setting.name
+                        end
+                    end
+
+                    if hasToggle then
+                        output = format( "%s\n\nTo set a |cFFFFD100toggle|r, use the following commands:\n" ..
+                            " - Switch On/Off:  |cFFFFD100/hek set %s|r\n" ..
+                            " - Set to On:  |cFFFFD100/hek set %s on|r\n" ..
+                            " - Set to Off:  |cFFFFD100/hek set %s off|r\n" ..
+                            " - Reset to Default:  |cFFFFD100/hek set %s default|r", output, exToggle, exToggle, exToggle, exToggle )
+                    end
+
+                    if hasNumber then
+                        output = format( "%s\n\nTo set a |cFFFFD100number|r value, use the following commands:\n" ..
+                            " - Set to #:  |cFFFFD100/hek set %s #|r\n" ..
+                            " - Reset to Default:  |cFFFFD100/hek set %s default|r", output, exNumber, exNumber )
+                    end
+
+                    Hekili:Print( output )
+                    return
+                end
+
+                -- Two or more arguments, we're setting (or querying).
+                local setting = settings[ index ]
+
+                if setting.info.type == "toggle" then
+                    local to
+
+                    if args[3] then
+                        if args[3] == "on" then to = true
+                        elseif args[3] == "off" then to = false
+                        elseif args[3] == "default" then to = setting.default
+                        else
+                            Hekili:Print( format( "'%s' is not a valid option for |cFFFFD100%s|r.", args[3] ) )
+                            return
+                        end
+                    else
+                        to = not prefs[ setting.name ]
+                    end
+                    
+                    Hekili:Print( format( "%s set to %s.", setting.info.name, ( to and "|cFF00FF00ON|r" or "|cFFFF0000OFF|r" ) ) )
+
+                    info[ 1 ] = setting.name
+                    setting.info.set( info, to )
+
+                    Hekili:ForceUpdate( "CLI_TOGGLE" )
+                    return
+
+                elseif setting.info.type == "range" then
+                    local to
+
+                    if args[3] == "default" then
+                        to = setting.default
+                    else
+                        to = tonumber( args[3] )
+                    end
+
+                    if to and ( ( setting.info.min and to < setting.info.min ) or ( setting.info.max and to > setting.info.max ) ) then
+                        Hekili:Print( format( "The value for %s must be between %s and %s.", args[2], ( setting.info.min and format( "%.2f", setting.info.min ) or "N/A" ), ( setting.info.max and format( "%.2f", setting.info.max ) or "N/A" ) ) )
+                        return
+                    end
+
+                    if not to then
+                        Hekili:Print( format( "You must provide a number value for %s (or default).", args[2] ) )
+                        return
+                    end
+
+                    Hekili:Print( format( "%s set to |cFF00B4FF%.2f|r.", setting.info.name, to ) )
+                    prefs[ setting.name ] = to
+                    Hekili:ForceUpdate( "CLI_NUMBER" )
+                    return
+
+                end
+
+            
+            elseif args[1] == "profile" then
+                if not args[2] then
+                    local output = "Use |cFFFFD100/hekili profile name|r to swap profiles via command-line or macro.\nValid profile |cFFFFD100name|rs are:"
+
+                    for name, prof in ns.orderedPairs( Hekili.DB.profiles ) do
+                        output = format( "%s\n - |cFFFFD100%s|r %s", output, name, Hekili.DB.profile == prof and "|cFF00FF00(current)|r" or "" )
+                    end
+
+                    output = format( "%s\nTo create a new profile, see |cFFFFD100/hekili|r > |cFFFFD100Profiles|r.", output )
+
+                    Hekili:Print( output )
+                    return
+                end
+
+                local profileName = input:match( "%s+(.+)$" )
+
+                if not rawget( Hekili.DB.profiles, profileName ) then
+                    local output = format( "'%s' is not a valid profile name.\nValid profile |cFFFFD100name|rs are:", profileName )
+
+                    local count = 0
+
+                    for name, prof in ns.orderedPairs( Hekili.DB.profiles ) do
+                        count = count + 1
+                        output = format( "%s\n - |cFFFFD100%s|r %s", output, name, Hekili.DB.profile == prof and "|cFF00FF00(current)|r" or "" )
+                    end
+
+                    output = format( "%s\nTo create a new profile, see |cFFFFD100/hekili|r > |cFFFFD100Profiles|r.", output )
+
+                    Hekili:Print( output )
+                    return
+                end
+
+                Hekili:Print( format( "Set profile to |cFF00FF00%s|r.", profileName ) )
+                self.DB:SetProfile( profileName )
+                return
+
+            else
+                LibStub( "AceConfigCmd-3.0" ):HandleCommand( "hekili", "Hekili", input )
+            end
         end
-        self:SaveCoordinates()
-
-    elseif input:trim() == 'recover' then
-        self.DB.profile.displays = {}
-        self.DB.profile.actionLists = {}
-        self:RestoreDefaults()
-        -- ns.convertDisplays()
-        self:BuildUI()
-        self:Print("Default displays and action lists restored.")
-
-    else
-        LibStub( "AceConfigCmd-3.0" ):HandleCommand( "hekili", "Hekili", input )
     end
 end
 

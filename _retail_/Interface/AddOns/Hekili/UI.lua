@@ -126,15 +126,11 @@ local function Button_OnMouseDown(self, btn)
 
     if Hekili.Config and btn == "LeftButton" and not mover.Moving then
         startScreenMovement(mover)
-
     end
 end
 
 
 function ns.StartConfiguration( external )
-    if Hekili.NewSpellInfo then Hekili:EmbedAbilityOptions(); Hekili:EmbedSpecOptions() end
-    if Hekili.NewItemInfo  then Hekili:EmbedItemOptions()    end
-
     Hekili.Config = true
 
     local scaleFactor = Hekili:GetScale()
@@ -222,7 +218,6 @@ function ns.StartConfiguration( external )
                 end
             end
 
-
             v.Backdrop:SetFrameStrata( v:GetFrameStrata() )
             v.Backdrop:SetFrameLevel( v:GetFrameLevel() + 1 )
 
@@ -277,6 +272,7 @@ function ns.StartConfiguration( external )
 
             if i == "Defensives" then v.Header:SetText( AtlasToString( "nameplates-InterruptShield", 20, 20 ) )
             elseif i == "Interrupts" then v.Header:SetText( AtlasToString( "communities-icon-redx", 20, 20 ) )
+            elseif i == "Cooldowns" then v.Header:SetText( "CD" )
             else v.Header:SetText( i ) end
             
             v.Header:SetJustifyH("CENTER")
@@ -646,18 +642,16 @@ do
         local conf = Hekili.DB.profile.displays[ self.id ]
 
         if conf.keybindings and conf.keybindings.enabled then
-            local cPort = conf.keybindings.cPortOverride and ConsolePort ~= nil
-
             for i, b in ipairs( self.Buttons ) do
                 local r = self.Recommendations[i]
                 if r then
                     local a = r.actionName
 
                     if a then                        
-                        r.keybind = Hekili:GetBindingForAction( r.actionName, conf, i )
+                        r.keybind, r.keybindFrom = Hekili:GetBindingForAction( r.actionName, conf, i )
                     end
 
-                    if i == 1 or ( conf.keybindings.queued and not cPort ) then
+                    if i == 1 or conf.keybindings.queued then
                         b.Keybinding:SetText( r.keybind )
                     else
                         b.Keybinding:SetText( nil )
@@ -679,7 +673,8 @@ do
         Primary = 0.1,
         AOE = 0.2,
         Interrupts = 1,
-        Defensives = 1
+        Defensives = 1,
+        Cooldowns = 0.2
     }
 
     local LRC = LibStub("LibRangeCheck-2.0")
@@ -763,7 +758,7 @@ do
                         b.Caption:SetText(nil)
                     end
 
-                    if conf.keybindings.enabled and ( i == 1 or conf.keybindings.queued and not ( conf.keybindings.cPortOverride and ConsolePort ~= nil ) ) then
+                    if conf.keybindings.enabled and ( i == 1 or conf.keybindings.queued ) then
                         b.Keybinding:SetText( keybind )
                     else
                         b.Keybinding:SetText(nil)
@@ -930,17 +925,21 @@ do
                         local _, unusable
 
                         if a.itemCd or a.item then
-                            unusable = not IsUsableItem(a.itemCd or a.item)
+                            unusable = not IsUsableItem( a.itemCd or a.item )
                         else
-                            _, unusable = IsUsableSpell(a.actualName or a.name)
+                            _, unusable = IsUsableSpell( a.actualName or a.name )
                         end
 
                         if i == 1 and conf.delays.fade then
                             local delay = r.exact_time - now            
                             local moment = 0
+
+                            local start, duration = 0, 0
                 
-                            local start, duration = GetSpellCooldown( 61304 )
-                            if start > 0 then moment = start + duration - now end
+                            if a.gcd ~= "off" then
+                                start, duration = GetSpellCooldown( 61304 )
+                                if start > 0 then moment = start + duration - now end
+                            end
     
                             local rStart, rDuration
                             if a.item then
@@ -1066,8 +1065,12 @@ do
             local moment = 0
 
             if delay > 0 then
-                local start, duration = GetSpellCooldown( 61304 )
-                if start > 0 then moment = start + duration - now end
+                local start, duration = 0, 0
+
+                if a.gcd ~= "off" then
+                    start, duration = GetSpellCooldown( 61304 )
+                    if start > 0 then moment = start + duration - now end
+                end
 
                 _, _, _, start, duration = UnitCastingInfo( "player" )
                 if start and start > 0 then moment = max( ( start / 1000 ) + ( duration / 1000 ) - now, moment ) end
@@ -1661,6 +1664,8 @@ do
                         dispActive[i] = ( profile.toggles.interrupts.value and profile.toggles.interrupts.separate ) and 1 or nil
                     elseif i == 'Defensives' then
                         dispActive[i] = ( profile.toggles.defensives.value and profile.toggles.defensives.separate ) and 1 or nil
+                    elseif i == 'Cooldowns' then
+                        dispActive[i] = ( profile.toggles.cooldowns.value and profile.toggles.cooldowns.separate ) and 1 or nil
                     else
                         dispActive[i] = 1
                     end
@@ -2112,7 +2117,7 @@ end
 -- Buttons (as frames) are never deleted, but should get reused effectively.
 
 local builtIns = {
-    "Primary", "AOE", "Interrupts", "Defensives"
+    "Primary", "AOE", "Cooldowns", "Interrupts", "Defensives"
 }
 
 function Hekili:BuildUI()

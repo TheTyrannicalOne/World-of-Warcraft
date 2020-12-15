@@ -165,9 +165,9 @@ Omen3DB = {
 			["PositionY"] = 493.0004272460938,
 			["PositionW"] = 402.0000305175781,
 			["Shown"] = false,
-			["PositionH"] = 250.0000915527344,
 			["PositionX"] = 2157.999755859375,
 			["VGrip1"] = 170.8499347610773,
+			["PositionH"] = 250.0000915527344,
 		},
 		["Fantastiburo - Zul'jin"] = {
 			["Shown"] = false,
