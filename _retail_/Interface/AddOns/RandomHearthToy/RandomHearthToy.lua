@@ -28,7 +28,23 @@ frame:SetScript("OnEvent", Event)
 
 function GetLearnedStones()
 	HearthToyIndex = {}
-	local stones = {166747, 165802, 165670, 165669, 166746, 163045, 162973, 142542, 64488, 54452, 93672, 168907, 172179, 182773, 180290, 184353, 183716}
+	local stones = {166747, --Brewfest
+					165802, --Noble
+					165670, --Peedlefeet
+					165669, --Lunar
+					166746, --Fire Eater
+					163045, --Horseman
+					162973, --Greatfather
+					142542, --Tome of TP
+					64488,  --Innkeeper
+					54452,  --Ethereal
+					93672,  --Dark Portal
+					168907, --Holographic Digitalization 
+					172179, --Eternal Traveler
+					182773, --Necrolord 
+					180290, --Night Fae
+					184353, --Kyrian
+					183716} --Venthyr
 	for i = 1, table.getn(stones) do
 		if PlayerHasToy(stones[i]) then
 			table.insert(HearthToyIndex, stones[i])
@@ -116,7 +132,23 @@ function RemoveStone(HearthToyIndex, i)
 end
 
 function SpellcastUpdate(spellID)
-	local IDs = {278559, 285362, 285424, 286031, 286353, 286331, 278244, 231504, 94719, 75136, 136508, 345393, 342122, 308742, 340200, 326064}
+	local IDs = {278559, --Headless
+				 285362, --Lunar
+				 285424, --Peddlefeet
+				 286031, --Noble
+				 286353, --Brewfest
+				 286331, --Fire Eater
+				 278244, --Greatfather
+				 231504, --TP
+				 94719,  --Innkeeper
+				 75136,  --Ethereal
+				 136508, --Dark Portal
+				 345393, --Kyrian
+				 342122, --Venthyr
+				 308742, --Eternal Traveler
+				 340200, --Necrolord
+				 326064, --Night Fae
+				 298068} --Holographic Digitalization
 	if not InCombatLockdown() then
 		for i = 1, table.getn(IDs) do
 			if spellID == IDs[i] then

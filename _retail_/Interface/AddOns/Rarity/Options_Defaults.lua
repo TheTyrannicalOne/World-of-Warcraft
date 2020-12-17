@@ -1458,7 +1458,7 @@ function R:PrepareDefaults()
 				{ m = CONSTANTS.UIMAPIDS.REVENDRETH, x = 46.0, y = 78.5, n = L["Harika the Horrid"] },
 			},
 			requiresCovenant = true,
-			requiredCovenantID = CONSTANTS.COVENANT_IDS.VENTYHR
+			requiredCovenantID = CONSTANTS.COVENANT_IDS.VENTHYR
 		},
 
 		["Bonehoof Tauralus"] = {
@@ -2251,7 +2251,7 @@ function R:PrepareDefaults()
 			name = L["Mawsworn Soulhunter"],
 			itemId = 184167,
 			spellId = 312762,
-			npcs = { 174827 },
+			npcs = { 174861 },
 			chance = 100,	-- Estimate
 			groupSize = 5,
 			equalOdds = true,
@@ -6991,6 +6991,34 @@ function R:PrepareDefaults()
 		questId = { 60997 },
 		coords = {
 			{ m = CONSTANTS.UIMAPIDS.BASTION, x = 43.6, y = 25.6, n = L["Unstable Memory"] },
+		},
+	},
+
+	["Vixx's Chest of Tricks"] = {
+		cat = LEGION,
+		type = ITEM,
+		isToy = true,
+		method = NPC,
+		name = L["Vixx's Chest of Tricks"],
+		itemId = 152982,
+		npcs = { 127882 },
+		chance = 4,
+		coords = {
+			{ m = CONSTANTS.UIMAPIDS.SEAT_OF_THE_TRIUMVIRATE },
+		},
+	},
+
+	["Unstable Portal Emitter"] = {
+		cat = LEGION,
+		type = ITEM,
+		isToy = true,
+		method = NPC,
+		name = L["Unstable Portal Emitter"],
+		itemId = 153004,
+		npcs = { 127882 },
+		chance = 7,
+		coords = {
+			{ m = CONSTANTS.UIMAPIDS.SEAT_OF_THE_TRIUMVIRATE },
 		},
 	},
 
