@@ -131,7 +131,6 @@ BigWigs:AddSounds("Stone Legion Generals", {
 	[332406] = "info",
 	[332683] = "warning",
 	[333387] = "warning",
-	[334009] = "warning",
 	[334498] = "long",
 	[334765] = "alarm",
 	[334929] = "info",
@@ -147,6 +146,7 @@ BigWigs:AddSounds("Stone Legion Generals", {
 	[342733] = "warning",
 	[342985] = "alert",
 	[343063] = "alarm",
+	[344496] = "warning",
 })
 
 BigWigs:AddSounds("Sire Denathrius", {

@@ -304,3 +304,7 @@ TomCats-Bundled-Nazjatar: enabled
 TomCats-Bundled-Nzoth: enabled
 UnlimitedMapPinDistance: enabled
 WorldQuestTab: enabled
+LibSharedMedia-3.0: enabled
+AceGUI-3.0-SharedMediaWidgets: enabled
+LibSink-2.0: enabled
+MSA-DropDownMenu-1.0: enabled

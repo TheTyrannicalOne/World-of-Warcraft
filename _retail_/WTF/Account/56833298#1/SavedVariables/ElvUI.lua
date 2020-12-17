@@ -9247,13 +9247,13 @@ ElvDB = {
 			},
 			["nameplates"] = {
 				["statusbar"] = "Polished Wood",
-				["fadeIn"] = false,
-				["clickThrough"] = {
-					["personal"] = true,
-				},
 				["threat"] = {
 					["beingTankedByTank"] = false,
 				},
+				["clickThrough"] = {
+					["personal"] = true,
+				},
+				["fadeIn"] = false,
 				["clampToScreen"] = true,
 				["visibility"] = {
 					["enemy"] = {
@@ -9449,8 +9449,8 @@ ElvDB = {
 					["point"] = "TOPLEFT",
 					["buttonsize"] = 44,
 				},
-				["bar6"] = {
-					["visibility"] = "[petbattle] hide; show",
+				["microbar"] = {
+					["buttons"] = 11,
 				},
 				["bar5"] = {
 					["point"] = "TOPLEFT",
@@ -9460,10 +9460,10 @@ ElvDB = {
 					["visibility"] = "[petbattle] hide; show",
 					["buttonsize"] = 38,
 				},
-				["transparent"] = true,
-				["microbar"] = {
-					["buttons"] = 11,
+				["bar6"] = {
+					["visibility"] = "[petbattle] hide; show",
 				},
+				["transparent"] = true,
 				["font"] = "PT Sans Narrow",
 				["desaturateOnCooldown"] = true,
 				["fontOutline"] = "OUTLINE",
@@ -9591,10 +9591,10 @@ ElvDB = {
 					["target"] = {
 						["debuffs"] = {
 							["anchorPoint"] = "TOPLEFT",
-							["attachTo"] = "FRAME",
+							["perrow"] = 7,
 							["maxDuration"] = 0,
 							["priority"] = "Blacklist,Personal,nonPersonal",
-							["perrow"] = 7,
+							["attachTo"] = "FRAME",
 							["yOffset"] = 14,
 						},
 						["portrait"] = {
@@ -9742,11 +9742,11 @@ ElvDB = {
 						["buffs"] = {
 							["anchorPoint"] = "RIGHT",
 							["sizeOverride"] = 30,
-							["attachTo"] = "HEALTH",
+							["perrow"] = 4,
 							["maxDuration"] = 0,
 							["enable"] = true,
 							["priority"] = "Blacklist,blockNoDuration,Personal,PlayerBuffs,CastByUnit,Dispellable,RaidBuffsElvUI",
-							["perrow"] = 4,
+							["attachTo"] = "HEALTH",
 							["yOffset"] = -4,
 						},
 						["raidicon"] = {
@@ -23235,11 +23235,11 @@ ElvDB = {
 				["LootFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-500,-200",
 				["ZoneAbility"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,500",
 				["SocialMenuMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-589,-1",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,430,295",
+				["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,315",
 				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,707,226",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,0",
 				["ElvUF_BodyGuardMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,143,500",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,430,295",
 				["ElvUF_FocusMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,165",
 				["PetAB"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,219",
 				["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-485,0",
@@ -23277,8 +23277,8 @@ ElvDB = {
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-483,370",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,483,159",
 				["BossHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-260,370",
+				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,0",
 				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,224",
-				["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,315",
 				["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,0",
 				["AlertFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,500,-200",
 				["DebuffsMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,259,238",
@@ -25599,8 +25599,8 @@ ElvDB = {
 			},
 			["Argent Dawn"] = {
 				["Shanyt"] = {
-					["TotalTime"] = 24292718,
-					["LevelTime"] = 25943,
+					["TotalTime"] = 24312850,
+					["LevelTime"] = 46075,
 					["Level"] = 60,
 					["Class"] = "WARRIOR",
 					["LastLevelTime"] = 6263,
@@ -25712,7 +25712,7 @@ ElvDB = {
 		["Argent Dawn"] = {
 			["Tyrannithal"] = 16,
 			["Shaekhan"] = 0,
-			["Shanyt"] = 27802756638,
+			["Shanyt"] = 27882461880,
 		},
 		["Black Dragonflight"] = {
 			["Durlok"] = 651897331,
@@ -26397,6 +26397,13 @@ ElvPrivateDB = {
 								"TOPLEFT", -- [3]
 								15.99999809265137, -- [4]
 								-116, -- [5]
+							},
+							["ChatConfigFrame"] = {
+								"CENTER", -- [1]
+								"UIParent", -- [2]
+								"CENTER", -- [3]
+								0, -- [4]
+								0, -- [5]
 							},
 							["CollectionsJournal"] = {
 								"TOPLEFT", -- [1]

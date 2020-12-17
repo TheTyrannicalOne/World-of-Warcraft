@@ -2,204 +2,6 @@
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 		{
-			"Picked Up: For the Sake of Spirit", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2137, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924353,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [1]
-		{
-			"Picked Up: Despoilers", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2140, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924367,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [2]
-		{
-			"1/12 Witherscorn or Blighted slain", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2141, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924375,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [3]
-		{
-			"Completed: For the Sake of Spirit", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2145, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924377,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [4]
-		{
-			"2/12 Witherscorn or Blighted slain", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2147, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924392,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [5]
-		{
-			"Picked Up: The Restless Dreamer", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2148, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924392,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [6]
-		{
-			"Picked Up: Caring for the Caretakers", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2151, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924402,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [7]
-		{
-			"1/1 North Dreamshrine attuned", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2153, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924406,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [8]
-		{
-			"3/12 Witherscorn or Blighted slain", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2156, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1607924431,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [9]
-		{
 			"1/8 Trapped Spirit Tenders freed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
@@ -220,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924437,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [10]
+		}, -- [1]
 		{
 			"4/12 Witherscorn or Blighted slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -242,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924466,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [11]
+		}, -- [2]
 		{
 			"1/1 Skell the Despoiler slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -264,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924482,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [12]
+		}, -- [3]
 		{
 			"5/12 Witherscorn or Blighted slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -286,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924485,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [13]
+		}, -- [4]
 		{
 			"2/8 Trapped Spirit Tenders freed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -308,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924495,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [14]
+		}, -- [5]
 		{
 			"3/8 Trapped Spirit Tenders freed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -330,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924502,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [15]
+		}, -- [6]
 		{
 			"4/8 Trapped Spirit Tenders freed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -352,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924516,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [16]
+		}, -- [7]
 		{
 			"6/12 Witherscorn or Blighted slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -374,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924534,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [17]
+		}, -- [8]
 		{
 			"5/8 Trapped Spirit Tenders freed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -396,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924543,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [18]
+		}, -- [9]
 		{
 			"7/12 Witherscorn or Blighted slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -418,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924564,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [19]
+		}, -- [10]
 		{
 			"8/12 Witherscorn or Blighted slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -440,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924610,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [20]
+		}, -- [11]
 		{
 			"9/12 Witherscorn or Blighted slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -462,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924614,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [21]
+		}, -- [12]
 		{
 			"6/8 Trapped Spirit Tenders freed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -484,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924618,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [22]
+		}, -- [13]
 		{
 			"7/8 Trapped Spirit Tenders freed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -506,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924629,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [23]
+		}, -- [14]
 		{
 			"8/8 Trapped Spirit Tenders freed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -528,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924634,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [24]
+		}, -- [15]
 		{
 			"1/1 South Dreamshrine attuned", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -550,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924647,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [25]
+		}, -- [16]
 		{
 			"11/12 Witherscorn or Blighted slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -572,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924667,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [26]
+		}, -- [17]
 		{
 			"1/1 Heart Bound to Dreamer's Wildseed", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -594,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924675,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [27]
+		}, -- [18]
 		{
 			"12/12 Witherscorn or Blighted slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -616,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924683,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [28]
+		}, -- [19]
 		{
 			"Completed: The Restless Dreamer", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -638,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924805,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [29]
+		}, -- [20]
 		{
 			"Completed: Caring for the Caretakers", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -660,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924812,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [30]
+		}, -- [21]
 		{
 			"Completed: Despoilers", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -682,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924823,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [31]
+		}, -- [22]
 		{
 			"Picked Up: Visions of the Dreamer: Origins", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -704,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924838,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [32]
+		}, -- [23]
 		{
 			"Picked Up: Visions of the Dreamer: The Betrayal", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -726,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924849,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [33]
+		}, -- [24]
 		{
 			"man...that ursoc video...", -- [1]
 			"Skuzzy-Llane", -- [2]
@@ -748,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSkuzzy-Llane|r",
 			[51] = 1607924888,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [25]
 		{
 			"1/1 Enter the spirit's dream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -770,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924895,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [35]
+		}, -- [26]
 		{
 			"1/1 Enter the spirit's dream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -792,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924895,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [36]
+		}, -- [27]
 		{
 			"right in the feels", -- [1]
 			"Skuzzy-Llane", -- [2]
@@ -814,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSkuzzy-Llane|r",
 			[51] = 1607924919,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [28]
 		{
 			"1/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -836,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924934,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [38]
+		}, -- [29]
 		{
 			"1/1 Worldbreaker defeated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -858,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924934,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [39]
+		}, -- [30]
 		{
 			"2/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -880,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924955,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [40]
+		}, -- [31]
 		{
 			"3/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -902,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924956,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [41]
+		}, -- [32]
 		{
 			"4/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -924,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924979,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [42]
+		}, -- [33]
 		{
 			"5/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -946,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607924994,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [43]
+		}, -- [34]
 		{
 			"1/6 Abandoned Whelps comforted", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -968,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925001,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [44]
+		}, -- [35]
 		{
 			"6/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -990,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925055,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [45]
+		}, -- [36]
 		{
 			"2/6 Abandoned Whelps comforted", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1012,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925062,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [46]
+		}, -- [37]
 		{
 			"7/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1034,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925082,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [47]
+		}, -- [38]
 		{
 			"3/6 Abandoned Whelps comforted", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1056,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925086,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [48]
+		}, -- [39]
 		{
 			"4/6 Abandoned Whelps comforted", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1078,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925095,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [49]
+		}, -- [40]
 		{
 			"5/6 Abandoned Whelps comforted", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1100,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925102,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [50]
+		}, -- [41]
 		{
 			"8/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1122,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925109,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [51]
+		}, -- [42]
 		{
 			"6/6 Abandoned Whelps comforted", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1144,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925111,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [52]
+		}, -- [43]
 		{
 			"9/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1166,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925119,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [53]
+		}, -- [44]
 		{
 			"10/10 Nightmares slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1188,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925129,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [54]
+		}, -- [45]
 		{
 			"Completed: Visions of the Dreamer: Origins", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1210,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925154,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [55]
+		}, -- [46]
 		{
 			"Completed: Visions of the Dreamer: The Betrayal", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1232,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925160,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [56]
+		}, -- [47]
 		{
 			"Picked Up: End of the Dream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1254,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925172,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [57]
+		}, -- [48]
 		{
 			"1/1 Speak to Dreamweaver", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1276,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925179,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [58]
+		}, -- [49]
 		{
 			"1/1 Witness the end of the spirit's life", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1298,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925316,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [59]
+		}, -- [50]
 		{
 			"Completed: End of the Dream", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1320,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925431,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [60]
+		}, -- [51]
 		{
 			"Picked Up: The Forest Has Eyes", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1342,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925456,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [61]
+		}, -- [52]
 		{
 			"Picked Up: The Droman's Call", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1364,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925477,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [62]
+		}, -- [53]
 		{
 			"Picked Up: A Travel Journal", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1386,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607925526,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [63]
+		}, -- [54]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14796:Player-75-00D7EAD1:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[Superior]|h|r!", -- [1]
 			"Heracy-ArgentDawn", -- [2]
@@ -1408,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Heracy|r",
 			[51] = 1607956694,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [64]
+		}, -- [55]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:13878:Player-75-0DE0AA56:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[The Master of Revendreth]|h|r!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -1430,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz-TheScryers|r",
 			[51] = 1607960495,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [65]
+		}, -- [56]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14835:Player-75-05BA416E:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[A Resolute Bond]|h|r!", -- [1]
 			"Kelustu-ArgentDawn", -- [2]
@@ -1452,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Kelustu|r",
 			[51] = 1607964011,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [66]
+		}, -- [57]
 		{
 			"hello?", -- [1]
 			"Madwyn-ArgentDawn", -- [2]
@@ -1474,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Madwyn|r",
 			[51] = 1607966063,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [58]
 		{
 			"hi?", -- [1]
 			"Mässacre-ArgentDawn", -- [2]
@@ -1496,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mässacre|r",
 			[51] = 1607966067,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [59]
 		{
 			"Good aftermorning", -- [1]
 			"Lavadin-ArgentDawn", -- [2]
@@ -1518,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lavadin|r",
 			[51] = 1607966089,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [60]
 		{
 			"its morning ", -- [1]
 			"Vandell-ArgentDawn", -- [2]
@@ -1540,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVandell|r",
 			[51] = 1607966099,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [61]
 		{
 			"<older than dirt>  is a group of immature old geezers who love to explore, quest, fish, cook, enjoy the lore and dig up old bones. We are here to have fun and there is absolutely no pressure to give up your walker. Scryers/Argent Dawn based.", -- [1]
 			"Madwyn-ArgentDawn", -- [2]
@@ -1562,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Madwyn|r",
 			[51] = 1607966102,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [62]
 		{
 			"nerd", -- [1]
 			"Vandell-ArgentDawn", -- [2]
@@ -1584,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVandell|r",
 			[51] = 1607966110,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [63]
 		{
 			"got em", -- [1]
 			"Mässacre-ArgentDawn", -- [2]
@@ -1606,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mässacre|r",
 			[51] = 1607966124,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [64]
 		{
 			"dab", -- [1]
 			"Vandell-ArgentDawn", -- [2]
@@ -1628,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVandell|r",
 			[51] = 1607966133,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [65]
 		{
 			"Ha-Li 100.00% ~(31.69, 42.02)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1650,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607966333,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [66]
 		{
 			"Thank you for posting", -- [1]
 			"Midoras-Zul'jin", -- [2]
@@ -1672,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Midoras-Zul'jin|r",
 			[51] = 1607966436,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [76]
+		}, -- [67]
 		{
 			"no problem", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1694,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607966448,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [77]
+		}, -- [68]
 		{
 			"thanks!", -- [1]
 			"Baeloc-Zul'jin", -- [2]
@@ -1716,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBaeloc-Zul'jin|r",
 			[51] = 1607966492,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [78]
+		}, -- [69]
 		{
 			"Thanks again, cheers", -- [1]
 			"Midoras-Zul'jin", -- [2]
@@ -1738,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Midoras-Zul'jin|r",
 			[51] = 1607966504,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [79]
+		}, -- [70]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14306:Player-75-0DE0AA56:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[Explore Revendreth]|h|r!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -1760,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz-TheScryers|r",
 			[51] = 1607966567,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [80]
+		}, -- [71]
 		{
 			"Houndlord Ren 91.12% ~(12.47, 29.14)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1782,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607967267,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [72]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14371:Player-75-00DF5006:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[Mists of Tirna Scithe]|h|r!", -- [1]
 			"Excelimagust-ArgentDawn", -- [2]
@@ -1804,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaExcelimagust|r",
 			[51] = 1607973766,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [82]
+		}, -- [73]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14412:Player-75-00DF5006:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[Heroic: Mists of Tirna Scithe]|h|r!", -- [1]
 			"Excelimagust-ArgentDawn", -- [2]
@@ -1826,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaExcelimagust|r",
 			[51] = 1607973766,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [83]
+		}, -- [74]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14304:Player-75-05BA416E:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[Explore Ardenweald]|h|r!", -- [1]
 			"Kelustu-ArgentDawn", -- [2]
@@ -1848,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Kelustu|r",
 			[51] = 1607975575,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [84]
+		}, -- [75]
 		{
 			"If your looking for a guild you can call home then <wish you were here> is it. we are very casual and drama free. raid, groups and solo all welcome here! you can be super new or super seasoned. be kind and be welcome", -- [1]
 			"Taizart-ArgentDawn", -- [2]
@@ -1870,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTaizart|r",
 			[51] = 1607975641,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [76]
 		{
 			"anyone around want to do heroic rig?", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1892,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607978255,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [77]
 		{
 			"Arachnoid Harvester 82.46% ~(52.72, 40.73)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1914,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607978907,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [78]
 		{
 			"Rustfeather 63.44% ~(65.79, 77.99)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1936,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607979349,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [79]
 		{
 			"anyone need rec rig hard mode thats on the island?", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1958,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607979561,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [80]
 		{
 			"omw", -- [1]
 			"Byebyetwinks-KhazModan", -- [2]
@@ -1980,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Byebyetwinks-KhazModan|r",
 			[51] = 1607980387,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [90]
+		}, -- [81]
 		{
 			"I'll swap tank", -- [1]
 			"Byebyetwinks-KhazModan", -- [2]
@@ -2002,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Byebyetwinks-KhazModan|r",
 			[51] = 1607980391,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [91]
+		}, -- [82]
 		{
 			"ok thanks", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2024,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607980398,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [92]
+		}, -- [83]
 		{
 			"oh wm off ", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2046,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607980494,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [93]
+		}, -- [84]
 		{
 			"i forgot to put in in the description sorry", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2068,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607980504,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [94]
+		}, -- [85]
 		{
 			"Just toggled off", -- [1]
 			"Byebyetwinks-KhazModan", -- [2]
@@ -2090,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Byebyetwinks-KhazModan|r",
 			[51] = 1607980560,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [95]
+		}, -- [86]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14773:Player-75-034D04EF:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[Explosive Extermination]|h|r!", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -2112,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1607980586,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [96]
+		}, -- [87]
 		{
 			"cheers", -- [1]
 			"Byebyetwinks-KhazModan", -- [2]
@@ -2134,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Byebyetwinks-KhazModan|r",
 			[51] = 1607981028,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [97]
+		}, -- [88]
 		{
 			"thanks!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2156,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1607981036,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [98]
+		}, -- [89]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14483:Player-75-034D04EF:1:12:14:20:4294967295:4294967295:4294967295:4294967295|h[Coldheart Interstitia]|h|r!", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -2178,29 +1980,227 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1607981409,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [90]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14628:Player-75-09F9F1F6:1:12:15:20:4294967295:4294967295:4294967295:4294967295|h[The Road to Renown]|h|r!", -- [1]
+			"Gremlyk-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gremlyk-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			11, -- [11]
+			"Player-75-09F9F1F6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGremlyk|r",
+			[51] = 1608076857,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [91]
+		{
+			"hi all", -- [1]
+			"Sorche-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			319, -- [11]
+			"Player-75-0E12B763", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Sorche|r",
+			[51] = 1608081176,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [92]
+		{
+			"heya", -- [1]
+			"Famin-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			320, -- [11]
+			"Player-75-007DC40C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8687edFamin|r",
+			[51] = 1608081183,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [93]
+		{
+			"evening", -- [1]
+			"Rammpage-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			321, -- [11]
+			"Player-75-0C139900", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcRammpage|r",
+			[51] = 1608081188,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [94]
+		{
+			"hello", -- [1]
+			"Zymor-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			322, -- [11]
+			"Player-75-0280C688", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcZymor|r",
+			[51] = 1608081189,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [95]
+		{
+			"howdy", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			323, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8687edGeenon|r",
+			[51] = 1608081197,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [96]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14894:Player-75-0280C688:1:12:16:20:4294967295:4294967295:4294967295:4294967295|h[To 'Ghast, Two Curios]|h|r!", -- [1]
+			"Zymor-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Zymor-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1665, -- [11]
+			"Player-75-0280C688", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcZymor|r",
+			[51] = 1608130877,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [97]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14306:Player-75-00DF5006:1:12:16:20:4294967295:4294967295:4294967295:4294967295|h[Explore Revendreth]|h|r!", -- [1]
+			"Excelimagust-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Excelimagust-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1987, -- [11]
+			"Player-75-00DF5006", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec6eaExcelimagust|r",
+			[51] = 1608137995,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [98]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:516:Player-75-0B7555D2:1:12:16:20:4294967295:4294967295:4294967295:4294967295|h[1000 Honorable Kills]|h|r!", -- [1]
+			"Elzera-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elzera-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			151, -- [11]
+			"Player-75-0B7555D2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Elzera-TheScryers|r",
+			[51] = 1608158095,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [99]
 	},
 	["ChatEditHistory"] = {
-		"until you finish the story", -- [1]
-		"i havva no moneys", -- [2]
-		"thats a name allowed no longer", -- [3]
-		"well we are in fairy land now so i took the few copper in the vault and moved it there", -- [4]
-		"no such currency in the wow", -- [5]
-		"its what i do", -- [6]
-		"/invite lilys-bladefist", -- [7]
-		"/invite lilys-blackhand", -- [8]
-		"/hi", -- [9]
-		"/lol", -- [10]
-		"/rasp", -- [11]
-		"/flex", -- [12]
-		"/dance", -- [13]
-		"/p no problem", -- [14]
-		"/1 anyone around want to do heroic rig?", -- [15]
-		"/1 anyone need rec rig hard mode thats on the island?", -- [16]
-		"/p ok thanks", -- [17]
-		"/p oh wm off", -- [18]
-		"/p i forgot to put in in the description sorry", -- [19]
-		"/p thanks!", -- [20]
+		"thats a name allowed no longer", -- [1]
+		"well we are in fairy land now so i took the few copper in the vault and moved it there", -- [2]
+		"no such currency in the wow", -- [3]
+		"its what i do", -- [4]
+		"/invite lilys-bladefist", -- [5]
+		"/invite lilys-blackhand", -- [6]
+		"/hi", -- [7]
+		"/lol", -- [8]
+		"/rasp", -- [9]
+		"/flex", -- [10]
+		"/dance", -- [11]
+		"/p no problem", -- [12]
+		"/1 anyone around want to do heroic rig?", -- [13]
+		"/1 anyone need rec rig hard mode thats on the island?", -- [14]
+		"/p ok thanks", -- [15]
+		"/p oh wm off", -- [16]
+		"/p i forgot to put in in the description sorry", -- [17]
+		"/p thanks!", -- [18]
+		"/wa", -- [19]
+		"/grail", -- [20]
 	},
 	["CliqueDatatext"] = {
 	},
