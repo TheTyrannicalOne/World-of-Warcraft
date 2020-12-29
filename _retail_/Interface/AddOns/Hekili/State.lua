@@ -445,6 +445,8 @@ state.print = print
 state.Enum = Enum
 state.FindUnitBuffByID = ns.FindUnitBuffByID
 state.FindUnitDebuffByID = ns.FindUnitDebuffByID
+state.GetActiveLossOfControlData = C_LossOfControl.GetActiveLossOfControlData
+state.GetActiveLossOfControlDataCount = C_LossOfControl.GetActiveLossOfControlDataCount
 state.GetItemCooldown = GetItemCooldown
 state.GetItemCount = GetItemCount
 state.GetItemGem = GetItemGem
@@ -796,7 +798,7 @@ local function applyBuff( aura, duration, stacks, value, v2, v3, applied )
 
         b.duration = duration
 
-        b.expires = b.applied + duration
+        b.expires = b.applied + min( b.remains, 0.3 * ( class.auras[ aura ].duration or 15 ) ) + duration
         b.last_expiry = b.expires
 
         b.count = min( class.auras[ aura ].max_stack or 1, stacks or 1 )
@@ -938,7 +940,7 @@ local function applyDebuff( unit, aura, duration, stacks, value )
         end
 
         -- state.debuff[ aura ] = state.debuff[ aura ] or {}
-        d.expires = state.query_time + duration
+        d.expires = state.query_time + min( d.remains, 0.3 * ( class.auras[ aura ].duration or 15 ) ) + duration
 
         d.lastCount = d.count or 0
         d.lastApplied = d.applied or 0
@@ -1371,8 +1373,12 @@ do
 
         for i = 1, n do
             local x = select( i, ... )
-            if type( x ) == "number" and x > 0 and x >= state.delayMin and x <= state.delayMax then
-                t[ x ] = true
+            if type( x ) == "number" then
+                if x > 0 and x >= state.delayMin and x <= state.delayMax then
+                    t[ x ] = true
+                elseif x < 60 then
+                    Hekili:Debug( "Excluded %.2f recheck time as it is outside our constraints ( %.2f - %.2f ).", x, state.delayMin or -1, state.delayMax or -1 )
+                end
             end
         end
     end
@@ -2765,10 +2771,8 @@ local mt_default_cooldown = {
             if not ability.charges then return t.duration or 0 end
             return t.recharge
 
-        elseif k == 'up' or k == 'ready' then
-            -- This cooldown_ready flag
-            if ability.cooldown_ready ~= nil then return ability.cooldown_ready end
-            return t.remains == 0
+        elseif k == "up" or k == "ready" then
+            return ( ability.cooldown_ready == nil or ability.cooldown_ready ) and t.remains == 0
 
         -- Hunters
         elseif k == 'remains_guess' then
@@ -6271,7 +6275,7 @@ do
                 return false, "item not equipped"
             end
         else
-            local cfg = self.settings.spec and self.settings.spec.abilities[ spell ]
+            local cfg = self.settings.spec and self.settings.spec.abilities[ ability.key ]
 
             if cfg then
                 if cfg.targetMin > 0 and self.active_enemies < cfg.targetMin then

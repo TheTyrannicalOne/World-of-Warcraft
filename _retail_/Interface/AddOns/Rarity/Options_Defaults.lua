@@ -2253,6 +2253,7 @@ function R:PrepareDefaults()
 			spellId = 312762,
 			npcs = { 174861 },
 			chance = 100,	-- Estimate
+			questId = 63433,
 			groupSize = 5,
 			equalOdds = true,
 			coords = {
@@ -2270,6 +2271,7 @@ function R:PrepareDefaults()
 			npcs = { 162873, 162880, 162875, 162853, 162874, 162872 },
 			chance = 100,	-- Estimate
 			questId =  62786 ,
+			questCompletesAfterLooting = true,
 			groupSize = 5,
 			equalOdds = true,
 			coords = {

@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0408,
+	["LastVersion"] = 2.0409,
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -85,9 +85,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 180749,
-			["Level"] = 110,
-			["Link"] = "|cff0070dd|Hitem:180749::::::::55:71::11:2:6706:6652:2:28:1325:9:53:::|h[Hauk's Battle-Scarred Bulwark]|h|r",
+			["ID"] = 179319,
+			["Level"] = 131,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff1eff00|Hitem:179319::::::::60:71::9:3:6908:6652:1694:2:28:1429:9:60:::|h[Caged Cudgel of the Fireflash]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

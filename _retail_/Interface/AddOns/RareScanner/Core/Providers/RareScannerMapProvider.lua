@@ -11,6 +11,7 @@ local AL = LibStub("AceLocale-3.0"):GetLocale("RareScanner");
 local RSGeneralDB = private.ImportLib("RareScannerGeneralDB")
 local RSGuideDB = private.ImportLib("RareScannerGuideDB")
 local RSContainerDB = private.ImportLib("RareScannerContainerDB")
+local RSConfigDB = private.ImportLib("RareScannerConfigDB")
 
 -- RareScanner general libraries
 local RSLogger = private.ImportLib("RareScannerLogger")
@@ -80,54 +81,77 @@ function RareScannerDataProviderMixin:RefreshAllData(fromOnShow)
 	-- Add tooltips to ingame vignettes
 	for pin in self:GetMap():EnumeratePinsByTemplate("VignettePinTemplate") do
 		if (pin:GetObjectGUID()) then
-			pin:HookScript("OnEnter", function(self)
-				local POI = RSMap.GetWorldMapPOI(self:GetObjectGUID(), self:GetMap():GetMapID())
-				if (POI) then
-					self.POI = POI
-					-- Just in case the user didnt have the questID when he found it
-					if (POI.isOpened) then
-						RSContainerDB.DeleteContainerOpened(POI.entityID)
+			if (not pin.initialized) then
+				-- Saves name if we dont have it
+				if (pin:GetVignetteType() == Enum.VignetteType.Treasure) then
+					local _, _, _, _, _, vignetteObjectID = strsplit("-", pin:GetObjectGUID())
+					local containerID = tonumber(vignetteObjectID)
+					if (not RSContainerDB.GetContainerName(containerID) and pin:GetVignetteName()) then
+						RSContainerDB.SetContainerName(containerID, pin:GetVignetteName())
 					end
-					self.hasTooltip = false
-					RSTooltip.ShowSimpleTooltip(self)
-				else
-					self.tooltip = nil
-					self.POI = nil
 				end
-			end)
-			pin:HookScript("OnLeave", function(self)
-				pin.POI = nil
-				if (RSTooltip.HideTooltip(self.tooltip)) then
-					pin.tooltip = nil
-				end
-			end)
-			pin:HookScript("OnMouseDown", function(self, button)
-				if (button == "RightButton") then
+				
+				pin:HookScript("OnEnter", function(self)
+					if (not RSConfigDB.IsShowingTooltipsOnIngameIcons()) then
+						self.hasTooltip = true
+						return
+					end
+					
 					local POI = RSMap.GetWorldMapPOI(self:GetObjectGUID(), self:GetMap():GetMapID())
 					if (POI) then
-						-- If displaying guides
-						if (self:GetMap():GetNumActivePinsByTemplate("RSGuideTemplate") > 0) then	
-							self:GetMap():RemoveAllPinsByTemplate("RSGuideTemplate");
-												
-							local guideEntityID = RSGeneralDB.GetGuideActive()
-							if (guideEntityID) then
-								-- If same guide showing then disable it
-								if (guideEntityID ~= POI.entityID) then
-									ShowInGameVignetteGuide(self, POI)
-								else
-									RSGeneralDB.RemoveGuideActive()
-								end
-							end
-						-- If not displaying guides show current
-						else
-							ShowInGameVignetteGuide(self, POI)
+						self.POI = POI
+						-- Just in case the user didnt have the questID when he found it
+						if (POI.isOpened) then
+							RSContainerDB.DeleteContainerOpened(POI.entityID)
 						end
-	
-						-- Refresh minimap
-						RSMinimap.RefreshAllData(true)
+						self.hasTooltip = false
+						RSTooltip.ShowSimpleTooltip(self)
+					else
+						self.tooltip = nil
+						self.POI = nil
 					end
-				end
-			end)
+				end)
+				pin:HookScript("OnLeave", function(self)
+					if (not RSConfigDB.IsShowingTooltipsOnIngameIcons()) then
+						return
+					end
+					
+					pin.POI = nil
+					if (RSTooltip.HideTooltip(self.tooltip)) then
+						pin.tooltip = nil
+					end
+				end)
+				pin:HookScript("OnMouseDown", function(self, button)					
+					if (button == "RightButton") then
+						local POI = RSMap.GetWorldMapPOI(self:GetObjectGUID(), self:GetMap():GetMapID())
+						if (POI) then
+							-- If displaying guides
+							if (self:GetMap():GetNumActivePinsByTemplate("RSGuideTemplate") > 0) then	
+								self:GetMap():RemoveAllPinsByTemplate("RSGuideTemplate");
+													
+								local guideEntityID = RSGeneralDB.GetGuideActive()
+								if (guideEntityID) then
+									-- If same guide showing then disable it
+									if (guideEntityID ~= POI.entityID) then
+										ShowInGameVignetteGuide(self, POI)
+									else
+										RSGeneralDB.RemoveGuideActive()
+									end
+								end
+							-- If not displaying guides show current
+							else
+								ShowInGameVignetteGuide(self, POI)
+							end
+		
+							-- Refresh minimap
+							RSMinimap.RefreshAllData(true)
+						end
+					end
+				end)
+			
+				RSLogger:PrintDebugMessage(string.format("Sobreescrito contenedor del mapa del mundo: %s", pin:GetObjectGUID()))
+				pin.initialized = true
+			end
 
 			-- Adds guide if active
 			local POI = RSMap.GetWorldMapPOI(pin:GetObjectGUID(), self:GetMap():GetMapID())

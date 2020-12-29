@@ -19,4 +19,6 @@ NarciStatisticsDB_PC = {
 		},
 		["CoinSpentBeforeShadowlands"] = 163889,
 	},
+	["CovenantDecision"] = 28,
+	["CovenantWalkthrough"] = 144,
 }

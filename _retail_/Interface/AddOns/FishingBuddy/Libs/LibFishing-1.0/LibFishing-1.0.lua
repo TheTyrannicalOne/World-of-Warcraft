@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 101075
+local MINOR_VERSION = 101076
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -87,7 +87,7 @@ FishLib.UNKNOWN = "UNKNOWN";
 function FishLib:GetFishingSpellInfo()
     local _, _, _, fishing, _, _ = GetProfessions();
     if not fishing then
-        return 131474, PROFESSIONS_FISHING
+        return 9, PROFESSIONS_FISHING
     end
     local name, _, _, _, count, offset, _ = GetProfessionInfo(fishing);
     local id = nil;
@@ -232,8 +232,8 @@ end
 
 
 function FishLib:UpdateFishingSkill()
-    local fishing, _ = self:GetFishingSpellInfo();
-    if (fishing and self.havedata) then
+    local _, _, _, fishing, _, _ = GetProfessions();
+    if (fishing) then
         local continent, _ = self:GetCurrentMapContinent();
         local info = FishLib.continent_fishing[continent];
         if (info) then
@@ -242,14 +242,17 @@ function FishLib:UpdateFishingSkill()
             if (info.rank < skill) then
                 info.rank = skill
             end
+            if skill then
+                self.registered:Fire(FishLib.PLAYER_SKILL_READY)
+            end
         end
     end
 end
 
 -- get the fishing skill for the specified continent
 function FishLib:GetContinentSkill(continent)
-    local fishing, _ = self:GetFishingSpellInfo();
-    if (fishing and self.havedata) then
+    local _, _, _, fishing, _, _ = GetProfessions();
+    if (fishing) then
         local info = FishLib.continent_fishing[continent];
         if (info) then
             local name, _, _, skillmax, _, _, _, mods = GetProfessionInfo(fishing);

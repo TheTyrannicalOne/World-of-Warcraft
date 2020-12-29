@@ -499,12 +499,15 @@ local HekiliSpecMixin = {
 
                         if a.itemSpellName == a.name then                    
                             a.itemSpellKey = a.key .. "_" .. a.itemSpellID
+                            self.abilities[ a.itemSpellKey ] = a
+
                         elseif a.itemSpellName then
                             local itemAura = self.auras[ a.itemSpellName ]
 
                             if itemAura then
                                 a.itemSpellKey = itemAura.key .. "_" .. a.itemSpellID
                                 self.abilities[ a.itemSpellKey ] = a
+                                
                             else
                                 if self.pendingItemSpells[ a.itemSpellName ] then
                                     if type( self.pendingItemSpells[ a.itemSpellName ] ) == 'table' then
@@ -657,6 +660,12 @@ local HekiliSpecMixin = {
                 end
             end
         end
+
+        if data.items then
+            for _, itemID in ipairs( data.items ) do
+                class.itemMap[ itemID ] = ability
+            end
+        end        
 
         if a.castableWhileCasting or a.funcs.castableWhileCasting then
             self.canCastWhileCasting = true
@@ -1315,8 +1324,7 @@ all:RegisterAuras( {
         id = 273104,
         duration = 8,
     },
-
-
+   
     out_of_range = {
         generate = function ()
             local oor = buff.out_of_range
@@ -1333,6 +1341,45 @@ all:RegisterAuras( {
             oor.applied = 0
             oor.expires = 0
             oor.caster = "nobody"
+        end,
+    },
+
+    loss_of_control = {
+        duration = 10,
+        generate = function( t )
+            local max_events = GetActiveLossOfControlDataCount()
+            
+            if max_events > 0 then
+                local spell, start, duration, remains = "none", 0, 0, 0
+
+                for i = 1, max_events do
+                    local event = GetActiveLossOfControlData( i )
+                    
+                    if event.lockoutSchool == 0 and event.startTime and event.startTime > 0 and event.timeRemaining and event.timeRemaining > 0 and event.startTime > start and event.timeRemaining > remains then
+                        spell = event.spellID
+                        start = event.startTime
+                        duration = event.duration
+                        remains = event.timeRemaining
+                    end
+                end
+
+                if start + duration > query_time then
+                    t.count = 1
+                    t.expires = start + duration
+                    t.applied = start
+                    t.duration = duration
+                    t.caster = "anybody"
+                    t.v1 = spell
+                    return
+                end
+            end
+
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.duration = 10
+            t.caster = "nobody"
+            t.v1 = 0
         end,
     },
 
@@ -1991,6 +2038,15 @@ all:RegisterAbilities( {
 
             removeBuff( "dispellable_magic" )
         end,
+    },
+
+    will_to_survive = {
+        id = 59752,
+        cast = 0,
+        cooldown = 180,
+        gcd = "off",
+
+        toggle = "defensives",        
     },
 
     shadowmeld = {
@@ -3982,8 +4038,10 @@ do
             end            
             return m
         end,
-        
-        toggle = "cooldowns",
+        items = { 162897, 161674, 165220, 165055, 167525, 167525, 167377, 172666, 184058, 184055, 184052, 181333 },
+        toggle = "defensives",
+
+        usable = function () return debuff.loss_of_control.up, "requires loss of control effect" end,
 
         handler = function ()
             applyBuff( "gladiators_medallion" )
@@ -4035,6 +4093,7 @@ do
             end
             return b
         end,
+        items = { 162966, 161902, 165223, 165058, 167528, 167528, 167380, 172849, 172669, 175884, 175921 },
             
         toggle = "cooldowns",
 
@@ -4105,7 +4164,7 @@ do
             end
             return e
         end,
-
+        items = { 161812, 162898, 161675, 165221, 165056, 167378, 167526, 172667, 172847, 178334, 178447 },
         toggle = "cooldowns",
 
         handler = function ()
@@ -4392,6 +4451,7 @@ all:RegisterAbility( "ancient_knot_of_wisdom", {
         if equipped[161417] then return 161417 end
         return 166793
     end,
+    items = { 167417, 166793 },
     toggle = "cooldowns",
 
     handler = function ()

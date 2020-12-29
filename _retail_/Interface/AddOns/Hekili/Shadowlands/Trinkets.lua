@@ -146,6 +146,10 @@ do
                 applyBuff( "huntsmans_bond" )
             end,
 
+            usable = function ()
+                return incoming_damage_3s > 0 and health.pct < 70, "requires incoming damage and health below 70 percent"
+            end,
+
             auras = {
                 huntsmans_bond = {
                     id = 344388,
@@ -488,6 +492,27 @@ do
             }
         },
 
+        instructors_divine_bell = {
+            cast = 0,
+            cooldown = 90,
+            gcd = "off",
+
+            item = 184842,
+            toggle = "cooldowns",
+
+            handler = function ()
+                applyBuff( "instructors_divine_bell" )
+            end,
+
+            auras = {
+                instructors_divine_bell = {
+                    id = 348139,
+                    duration = 9,
+                    max_stack = 1
+                }
+            }
+        },
+
         macabre_sheet_music = {
             cast = 0,
             cooldown = 90,
@@ -612,6 +637,7 @@ do
                 if equipped[ 177657 ] then return 177657 end
                 return 181359
             end,
+            items = { 177657, 181359 },
             toggle = "cooldowns",
 
             handler = function ()
@@ -806,7 +832,9 @@ do
                     duration = 20,
                     max_stack = 1,
                 }
-            }
+            },
+
+            copy = "soul_infusion"
         },
 
         spare_meat_hook = {
@@ -919,10 +947,7 @@ do
             cooldown = 120,
             gcd = "off",
 
-            item = function ()
-                if equipped[ 181457 ] then return 181457 end
-                return 183850
-            end,
+            item = 181457,
             toggle = "cooldowns",
 
             handler = function ()
@@ -935,7 +960,7 @@ do
                     duration = 12,
                     max_stack = 1
                 }
-            }
+            },
         },
     } )
 end

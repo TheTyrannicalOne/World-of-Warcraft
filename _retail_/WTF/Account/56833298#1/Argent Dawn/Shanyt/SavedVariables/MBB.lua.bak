@@ -8,8 +8,8 @@ MBB_Options = {
 	["ExpandDirection"] = 1,
 	["MaxButtonsPerLine"] = 0,
 	["ButtonPos"] = {
-		-25.6649227142334, -- [1]
-		-74.30879974365234, -- [2]
+		-18, -- [1]
+		-100, -- [2]
 	},
-	["DetachedButtonPos"] = "TOPLEFT",
+	["DetachedButtonPos"] = "CENTER",
 }

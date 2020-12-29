@@ -21,8 +21,7 @@ L["Add Note"] = "Añadir una nota"
 L["Add ranks"] = "Agregar Rangos"
 L["Add rolls"] = "Agregar Especializacion"
 L["Add Rolls"] = "Añadir tiradas de dados"
---[[Translation missing --]]
---[[ L["add_candidate"] = ""--]] 
+L["add_candidate"] = "Añadir candidato"
 L["add_ranks_desc"] = "Seleccionar una rango mínimo para poder usar el lootcouncil:"
 L["add_ranks_desc2"] = [=[Seleccione el rango de mayor categoría para añadir a todos los miembros en ese y por encima del mismo al consejo.
 
@@ -314,10 +313,8 @@ L["Open the Loot History"] = "Abrir Hitorial de botin"
 L["open_the_loot_history_desc"] = "Pulsar para abrir historial de botin"
 L["Opens the synchronizer"] = "Abrir el sincronizador"
 L["opt_addButton_desc"] = "Añade un nuevo grupo de botones para la casilla seleccionada."
---[[Translation missing --]]
---[[ L["opt_autoAddBoEs_desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["opt_autoAddBoEs_name"] = ""--]] 
+L["opt_autoAddBoEs_desc"] = "Añadir automáticamente todos los BoE (Ligados al equipar) a la sesión."
+L["opt_autoAddBoEs_name"] = "Añadir automáticamente BoEs"
 --[[Translation missing --]]
 --[[ L["opt_autoAddItems_desc"] = ""--]] 
 --[[Translation missing --]]

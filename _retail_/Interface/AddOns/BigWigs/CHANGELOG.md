@@ -1,13 +1,11 @@
 # BigWigs
 
-## [v194.1](https://github.com/BigWigsMods/BigWigs/tree/v194.1) (2020-12-16)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v194...v194.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v199.2](https://github.com/BigWigsMods/BigWigs/tree/v199.2) (2020-12-26)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v199.1...v199.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Update deDE (#882)  
-- CastleNathria/TheCouncilofBlood: Emphasize link by default  
-- CastleNathria/Shriekwing: Revert cast time back to 6s for stage 1  
-- CastleNathria/Xymox: Start working on Mythic timers  
-- CastleNathria/Shriekwing: Add berserk and fix respawn  
-- CastleNathria/HungeringDestroyer: Add Berserk  
-- CastleNathria/Altimor: Update a timer for Mythic  
-- CastleNathria/HungeringDestroyer: Move Miasma mark clearing to win/wipe  
+- Shadowlands/NurgashMuckformed: Import module  
+- CastleNathria/Xymox: Filter Stasis Trap messages for Normal and below  
+- CastleNathria/TheCouncilofBlood: Improve timers on Duelist Riposte and Evasive Lunge when you leave Frieda alive (#894)  
+- CastleNathria/Denathrius: Update and fix some options and localization  
+- CastleNathria/TheCouncilofBlood: Update normal/heroic timers for Drain Essence & Prideful Eruption (#902)  
+- CastleNathria: Add missing strings to locale files (#901)  

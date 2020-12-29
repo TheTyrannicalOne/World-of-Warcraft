@@ -1,7 +1,7 @@
 
 BigWigs:AddSounds("Shriekwing", {
-	[328857] = "info",
-	[328897] = {"alert","info"},
+	[328857] = "warning",
+	[328897] = {"info","warning"},
 	[328921] = "long",
 	[329362] = "info",
 	[330711] = "long",
@@ -75,6 +75,7 @@ BigWigs:AddSounds("Sun King's Salvation", {
 	[333145] = "info",
 	[337859] = {"info","warning"},
 	[339251] = "info",
+	[343026] = {"info","warning"},
 	["stages"] = "long",
 })
 
@@ -122,6 +123,7 @@ BigWigs:AddSounds("Sludgefist", {
 	[335361] = "alarm",
 	[335470] = "warning",
 	[340817] = "long",
+	[341193] = "long",
 	[341250] = "alert",
 })
 
@@ -161,13 +163,17 @@ BigWigs:AddSounds("Sire Denathrius", {
 	[329181] = {"alert","warning"},
 	[329906] = "alarm",
 	[329951] = "warning",
-	[330068] = "alarm",
+	[330042] = "alarm",
 	[332585] = "alert",
 	[332619] = "alert",
 	[332794] = "warning",
 	[332849] = "alert",
 	[333932] = "warning",
+	[333979] = "warning",
 	[333980] = "alarm",
 	[335873] = "alarm",
+	[338738] = "info",
+	[344776] = "alert",
+	["hymn_stacks"] = {"alert","info"},
 	["stages"] = "long",
 })

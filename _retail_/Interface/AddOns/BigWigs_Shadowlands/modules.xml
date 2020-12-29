@@ -2,6 +2,8 @@
 ..\FrameXML\UI.xsd">
 
 <Script file="Mortanis.lua"/>
+<Script file="Oranomonos.lua"/>
+<Script file="NurgashMuckformed.lua"/>
 
 <Include file="Options\options.xml"/>
 
