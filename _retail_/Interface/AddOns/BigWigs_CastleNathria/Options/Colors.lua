@@ -41,7 +41,7 @@ BigWigs:AddColors("Hungering Destroyer", {
 })
 
 BigWigs:AddColors("Artificer Xy'mox", {
-	[325236] = {"blue","purple"},
+	[325236] = {"blue","purple","yellow"},
 	[325399] = "yellow",
 	[326271] = "red",
 	[327414] = {"blue","red"},
@@ -129,6 +129,7 @@ BigWigs:AddColors("Sludgefist", {
 	[340817] = "yellow",
 	[341193] = "yellow",
 	[341250] = "yellow",
+	["fun_info"] = "green",
 })
 
 BigWigs:AddColors("Stone Legion Generals", {

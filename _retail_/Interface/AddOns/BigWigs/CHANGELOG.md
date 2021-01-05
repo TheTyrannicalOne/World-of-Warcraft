@@ -1,11 +1,18 @@
 # BigWigs
 
-## [v199.2](https://github.com/BigWigsMods/BigWigs/tree/v199.2) (2020-12-26)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v199.1...v199.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v202](https://github.com/BigWigsMods/BigWigs/tree/v202) (2021-01-04)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v201.2...v202) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Shadowlands/NurgashMuckformed: Import module  
-- CastleNathria/Xymox: Filter Stasis Trap messages for Normal and below  
-- CastleNathria/TheCouncilofBlood: Improve timers on Duelist Riposte and Evasive Lunge when you leave Frieda alive (#894)  
-- CastleNathria/Denathrius: Update and fix some options and localization  
-- CastleNathria/TheCouncilofBlood: Update normal/heroic timers for Drain Essence & Prideful Eruption (#902)  
-- CastleNathria: Add missing strings to locale files (#901)  
+- bump version  
+- Plugins/Pull: Don't enable unless all the checks have passed.  
+- Plugins: Tweak layering  
+- Update ptBR (#938)  
+- CastleNathria/StoneLegionGenerals: Add some throttles, emphasize defaults & a yell for meteor.  
+- Update zhCN (#937)  
+- Loader: Remove another locale print  
+- Update zhCN (#936)  
+- Update ptBR (#935)  
+- Add :CustomIcon and use it in modules  
+- Update luacheck  
+- Update ruRU (#934)  
+- Update frFR (#933)  

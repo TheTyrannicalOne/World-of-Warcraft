@@ -196,7 +196,7 @@ local EventHandlers = {
           for objectiveIndex=1, numObjectives do
             local objectiveText, type, complete, currentValue, maxValue = GetQuestObjectiveInfo(questId, objectiveIndex, false);
             if (type=="progressbar") then
-              local progress = C_QuestLog.GetQuestProgressBarPercent(questId);
+              local progress = GetQuestProgressBarPercent(questId);
               objectiveText = progress.."% "..objectiveText;
               currentValue = progress;
             end
@@ -236,8 +236,6 @@ local EventHandlers = {
 
 local function eventHandler(self, event, ...)
   if (EventHandlers[event] ~= nil) then
-    print(event);
-    print(...);
     EventHandlers[event](...);
   end
   if (QuestTogether.DEBUG.events and event ~= "CHAT_MSG_ADDON" and (event ~= "QUEST_LOG_UPDATE" or QuestTogether.DEBUG.questLogUpdate)) then

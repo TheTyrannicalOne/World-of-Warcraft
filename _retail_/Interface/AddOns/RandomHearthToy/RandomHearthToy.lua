@@ -3,14 +3,31 @@
 local AllHearthToyIndex = {} --All the toys
 local UsableHearthToyIndex = {} --Usable toys
 local RHTIndex = false --Macro index
-RHT = {} --Info for button
+RHT = {} --Setup for button and timeout frame
 
 -- Setting up an invisible button named RHTB.  Toys can only be used through a button click, so we need one for the macro to click.
 local frame = CreateFrame("Frame")
 RHT.b = CreateFrame("Button","RHTB",nil,"SecureActionButtonTemplate")
 RHT.b:SetAttribute("type","item")
+-- Setting up a frame to wait and see if the toybox is loaded before getting stones on login.
+local timeOut = 10 --Delay for checking stones.
+RHT.to = CreateFrame("Frame","RHTO", UIParent)
+RHT.to:SetScript("OnUpdate", function (self, elapse)
+	if timeOut > 0 then
+		timeOut = timeOut - elapse
+	else
+		if C_ToyBox.GetNumFilteredToys() then
+			SetRandomHearthToy()
+			print "RHT initialized"
+			RHT.to:SetScript("OnUpdate", nil)
+		else
+			timeOut = 10
+		end
+	end
+end)
 
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+
 -- Blizz broke deleting items from bags, leaving code incase I find a fix.  Yeah.  Right.
 --frame:RegisterEvent("BAG_UPDATE")
 
@@ -20,7 +37,7 @@ frame:RegisterEvent("UNIT_SPELLCAST_STOP")
 local function Event(self, event, arg1, arg2, arg3)
 	if event == "PLAYER_ENTERING_WORLD" then
 		GetMacroIndex()
-		SetRandomHearthToy()
+		frame:UnregisterEvent("PLAYER_ENTERING_WORLD")
 	end
 	-- When a spell cast stops and it's the player's spell, send the ID to check if it's a stone.
 	if event == "UNIT_SPELLCAST_STOP" and arg1 == "player" then
@@ -55,22 +72,27 @@ AllHearthToyIndex[183716] = 342122 --Venthyr
 
 -- This is the meat right here.
 function SetRandomHearthToy()
-	-- Find the macro.
-	CheckMacroIndex()
-	-- Rebuild the stone list if it's empty.
-	while next(UsableHearthToyIndex) == nil do
-		GetLearnedStones()
-	end		
-	local itemID, toyName = ''
-	-- Randomly pick one.
-	local k = RandomKey(UsableHearthToyIndex)
-	local itemID, toyName = C_ToyBox.GetToyInfo(k)
-	if toyName then
-		-- Remove it from the list so we don't pick it again.
-		RemoveStone(k)
-		-- Write the macro.
-		GenMacro(itemID, toyName)
-	end
+	-- Setting the new stone while in combat is bad.
+	--if not InCombatLockdown() then
+		-- Find the macro.
+		CheckMacroIndex()
+		-- Rebuild the stone list if it's empty.
+		while next(UsableHearthToyIndex) == nil do
+			GetLearnedStones()
+		end		
+		local itemID, toyName = ''
+		-- Randomly pick one.
+		local k = RandomKey(UsableHearthToyIndex)
+		local itemID, toyName = C_ToyBox.GetToyInfo(k)
+		if toyName then
+			-- Remove it from the list so we don't pick it again.
+			RemoveStone(k)
+			-- Write the macro.
+			GenMacro(itemID, toyName)
+			-- Set button for first use
+			if not RHT.b:GetAttribute("item") then RHT.b:SetAttribute("item",toyName) end
+		end
+	--end
 end
 
 -- Get stones learned and usable by character
@@ -131,7 +153,6 @@ function GenMacro(itemID, toyName)
 		-- No macro found, make a new one, get it's ID, then set the toy on the invisble button. This one is named so people can find it on first use.
 		CreateMacro("RHT", "INV_MISC_QUESTIONMARK", "#showtooltip item:" .. itemID .. "\r/run if not InCombatLockdown() then RHT.b:SetAttribute(\"item\",\"" .. toyName .. "\") end\r/click RHTB")
 		GetMacroIndex()
-		RHT.b:SetAttribute("item",toyName)
 	end
 end
 
@@ -142,15 +163,14 @@ end
 
 -- Did a stone get used?
 function SpellcastUpdate(spellID)
-	-- Setting the new stone while in combat is bad.
-	if not InCombatLockdown() then
-		for k in pairs(AllHearthToyIndex) do
-			if spellID == AllHearthToyIndex[k] then
-				SetRandomHearthToy()
-				break
-			end
+if not InCombatLockdown() then
+	for k in pairs(AllHearthToyIndex) do
+		if spellID == AllHearthToyIndex[k] then
+			SetRandomHearthToy()
+			break
 		end
 	end
+end
 end
 
 -- Old function to delete the base HS from bags.  Leaving in case I can find a workaround from Blizz's change.

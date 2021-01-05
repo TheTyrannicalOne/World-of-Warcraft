@@ -10,10 +10,18 @@ if L then
 	-- L.killed = "%s Killed"
 end
 
+L = BigWigs:NewBossLocale("Hungering Destroyer", "esES") or BigWigs:NewBossLocale("Hungering Destroyer", "esMX")
+if L then
+	L.miasma = "Miasma" -- Short for Gluttonous Miasma
+end
+
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "esES") or BigWigs:NewBossLocale("Artificer Xy'mox", "esMX")
 if L then
 	-- L.stage2_yell = "The anticipation to use this relic is killing me! Though, it will more likely kill you."
 	-- L.stage3_yell = "I hope this wondrous item is as lethal as it looks!"
+	L.tear = "Rasgadura" -- Short for Dimensional Tear
+	L.spirits = "Espíritus" -- Short for Fleeting Spirits
+	L.seeds = "Semillas" -- Short for Seeds of Extinction
 end
 
 L = BigWigs:NewBossLocale("Lady Inerva Darkvein", "esES") or BigWigs:NewBossLocale("Lady Inerva Darkvein", "esMX")
@@ -73,6 +81,11 @@ end
 L = BigWigs:NewBossLocale("Sludgefist", "esES") or BigWigs:NewBossLocale("Sludgefist", "esMX")
 if L then
 	-- L.stomp_shift = "Stomp & Shift" -- Destructive Stomp + Seismic Shift
+
+	-- L.fun_info = "Damage Info"
+	-- L.fun_info_desc = "Display a message showing how much health the boss lost during Destructive Impact."
+
+	-- L.health_lost = "Sludgefist went down %.1f%%!"
 end
 
 L = BigWigs:NewBossLocale("Stone Legion Generals", "esES") or BigWigs:NewBossLocale("Stone Legion Generals", "esMX")

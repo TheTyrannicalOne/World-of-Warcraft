@@ -40,7 +40,7 @@ BigWigs:AddSounds("Hungering Destroyer", {
 })
 
 BigWigs:AddSounds("Artificer Xy'mox", {
-	[325236] = "warning",
+	[325236] = {"alert","warning"},
 	[325399] = "alert",
 	[326271] = "alert",
 	[327902] = "warning",

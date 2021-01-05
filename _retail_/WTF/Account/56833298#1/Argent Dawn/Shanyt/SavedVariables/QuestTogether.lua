@@ -43,14 +43,15 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[45381] = {
@@ -74,13 +75,17 @@ QuestTogether = {
 		[48639] = {
 			["title"] = "Army of the Light",
 			["objectives"] = {
-				"2/4 Complete 4 Army of the Light World Quests", -- [1]
+				"3/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
-		[57744] = {
-			["title"] = "Conquest's Reward",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"150/500 Earn Conquest", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[62932] = {
@@ -101,15 +106,16 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
 		[57403] = {
 			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[48305] = {
@@ -132,9 +138,10 @@ QuestTogether = {
 				"1/1 Seal of the Deceiver", -- [2]
 			},
 		},
-		[57918] = {
-			["title"] = "The Absolution of Souls",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[62371] = {
@@ -143,15 +150,15 @@ QuestTogether = {
 				"1/1 Tred'ova slain", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[50606] = {
@@ -172,17 +179,16 @@ QuestTogether = {
 				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[57918] = {
+			["title"] = "The Absolution of Souls",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
-		["events"] = false,
 		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
 	},
 }

@@ -1,7 +1,7 @@
-## Interface: 90001
+## Interface: 90002
 ## Title: PetEmote
 ## Author: Jorna, Travis Casey, Teigan, others on the Petopia forums
-## Version: v1.8.15
+## Version: v1.8.16
 ## Notes: Allows you to send emotes from Hunter, Warlock, Death Knight and Mage pets.
 ## Notes-deDE: Ermöglicht Emotes für die Begleiter von Jägern, Hexenmeistern, Todesrittern und Magiern.
 

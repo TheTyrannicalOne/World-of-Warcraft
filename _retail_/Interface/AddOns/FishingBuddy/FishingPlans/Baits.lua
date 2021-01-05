@@ -76,34 +76,37 @@ Maintainable[139175] = {
     continent = FBConstants.BROKEN_ISLES,
 };
 
+Maintainable[173043] = {
+    ["enUS"] = "Elysian Thade Bait",
+    spell = 331698,
+};
 Maintainable[173038] = {
     ["enUS"] = "Lost Sole Bait",
     spell = 331688,
     continent = FBConstants.SHADOWLANDS,
 };
-Maintainable[173043] = {
-    ["enUS"] = "Elysian Thade Bait",
-    spell = 331698,
-    continent = FBConstants.SHADOWLANDS,
-};
 Maintainable[173040] = {
     ["enUS"] = "Silvergill Pike Bait",
     spell = 331690,
+    mapId = 1533,
     continent = FBConstants.SHADOWLANDS,
 };
 Maintainable[173041] = {
     ["enUS"] = "Pocked Bonefish Bait",
     spell = 331695,
+    mapId = 1536,
     continent = FBConstants.SHADOWLANDS,
 };
 Maintainable[173039] = {
     ["enUS"] = "Iridescent Amberjack Bait",
     spell = 331692,
+    mapId = 1565,
     continent = FBConstants.SHADOWLANDS,
 };
 Maintainable[173042] = {
     ["enUS"] = "Spinefin Piranha Bait",
     spell = 331699,
+    mapId = 1525,
     continent = FBConstants.SHADOWLANDS,
 };
 
@@ -204,7 +207,7 @@ end
 local function SpecialBaitPlan(queue)
     if (not FishingBuddy.IsQuestFishing()) then
         if (GSB("EasyLures") and GSB("DraenorBait")) then
-            local continent, _ = FL:GetCurrentMapContinent();
+            local continent, _, lastMap = FL:GetCurrentMapContinent();
             if (SpecialBait[continent]) then
                 local current = CurrentSpecialBait();
                 if ( GSB("DraenorBaitMaintainOnly") ) then
@@ -219,16 +222,24 @@ local function SpecialBaitPlan(queue)
                     return
                 end
 
-                local mapId, subzone = FL:GetBaseZoneInfo();
+                local _, subzone = FL:GetBaseZoneInfo();
                 for _, baitid in ipairs(SpecialBait[continent]) do
                     local info = Maintainable[baitid];
-                    if not info.mapId or mapId == info.mapId then
+                    if info.mapId and lastMap == info.mapId then
                         if info.override and overrides[info.override] then
                             local check = overrides[info.override];
                             if (check[mapId] and check[mapId][subzone] and CheckBait(info.override)) then
                                 return
                             end
                         end
+                        if CheckBait(baitid) then
+                            return
+                        end
+                    end
+                end
+                for _, baitid in ipairs(SpecialBait[continent]) do
+                    local info = Maintainable[baitid];
+                    if not info.mapId then
                         if CheckBait(baitid) then
                             return
                         end

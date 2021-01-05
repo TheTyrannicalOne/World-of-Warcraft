@@ -1,7 +1,8 @@
 # LittleWigs
 
-## [v9.0.16](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.16) (2020-12-24)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.15...v9.0.16) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
+## [v9.0.19](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.19) (2021-01-04)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.18...v9.0.19) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
 
-- Shadowlands/DeOtherSide/Trash: Warn about stacks of "Gushing Wound" less often  
-- Shadowlands/DeOtherSide/Trash: Fix timers and countdown for "W-00F"  
+- Shadowlands/TheNecroticWake/Nalthor: Fix \"Icebound Aegis\" warnings not working on Mythic difficulty  
+    Closes #556  
+- Shadowlands/SanguineDepths/Tarvold: Fix "Coalesce Manifestation" warnings  
