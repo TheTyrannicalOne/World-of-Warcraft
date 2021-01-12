@@ -1,12 +1,6 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[51230] = {
-			["title"] = "Emergency Transplants",
-			["objectives"] = {
-				"0/10 Riverbud Seeds planted", -- [1]
-			},
-		},
 		[40567] = {
 			["title"] = "Darkheart Thicket: Enter the Nightmare",
 			["objectives"] = {
@@ -16,7 +10,7 @@ QuestTogether = {
 		[57743] = {
 			["title"] = "Conquest's Reward",
 			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
+				"50/500 Earn Conquest", -- [1]
 			},
 		},
 		[53435] = {
@@ -58,12 +52,6 @@ QuestTogether = {
 				"0/100 Dream Seeds planted", -- [1]
 			},
 		},
-		[47706] = {
-			["title"] = "Hunt for King K'tal",
-			["objectives"] = {
-				"0/1 Skull of K'tal", -- [1]
-			},
-		},
 		[31015] = {
 			["title"] = "Your Private Collection",
 			["objectives"] = {
@@ -83,23 +71,28 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
-		[51555] = {
-			["title"] = "Keep Them On Task",
+		[36614] = {
+			["title"] = "My Very Own Fortress",
+			["objectives"] = {
+				"1589/2000 Garrison resources gathered (Optional)", -- [1]
+				"0/1 Upgrade your garrison to Tier 3", -- [2]
+			},
+		},
+		[56120] = {
+			["title"] = "The Unshackled",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
 			},
 		},
-		[51091] = {
-			["title"] = "WANTED: Ten'gor and Nol'ixwan",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
-				"0/1 Nol'ixwan slain", -- [1]
-				"0/1 Ten'gor slain", -- [2]
-			},
-		},
-		[25929] = {
-			["title"] = "Sea Legs",
-			["objectives"] = {
-				"0/3 Saltwater Starfish", -- [1]
-				"0/1 Conch Shell", -- [2]
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[44555] = {
@@ -107,22 +100,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
-		[29907] = {
-			["title"] = "Chen and Li Li",
-			["objectives"] = {
-				"0/1 Follow Chen and Li Li to Pang's Stead", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[31486] = {
@@ -131,25 +112,23 @@ QuestTogether = {
 				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[40019] = {
-			["title"] = "An Empathetic Herb",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
-				"9/15 Healthy Dreamleaf", -- [1]
-				"5/5 Blight-Infested Dreamleaf", -- [2]
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[36614] = {
-			["title"] = "My Very Own Fortress",
+		[52444] = {
+			["title"] = "The Final Foothold",
 			["objectives"] = {
-				"1589/2000 Garrison resources gathered (Optional)", -- [1]
-				"0/1 Upgrade your garrison to Tier 3", -- [2]
+				"0/1 Review final foothold", -- [1]
 			},
 		},
-		[31255] = {
-			["title"] = "The Road to Kun-Lai",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 Speak with the Highroad Grummle", -- [1]
-				"0/1 Speak with Brewmaster Boof", -- [2]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[31891] = {
@@ -162,29 +141,29 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[49422] = {
-			["title"] = "Heretics",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"0% Ruin wrought.", -- [1]
 			},
 		},
-		[31613] = {
-			["title"] = "Volatile Greenstone Brew",
+		[40019] = {
+			["title"] = "An Empathetic Herb",
 			["objectives"] = {
-				"0/1 Greenstone Village Defended", -- [1]
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
+		[49901] = {
+			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
-				"2/12 Pilgrimage Scroll", -- [1]
+				"0/1 Yazma slain", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

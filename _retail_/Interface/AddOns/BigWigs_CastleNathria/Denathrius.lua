@@ -128,7 +128,8 @@ function mod:GetOptions()
 		{326699, "INFOBOX"}, -- Burden of Sin
 		326707, -- Cleansing Pain
 		326851, -- Blood Price
-		{327796, "SAY", "SAY_COUNTDOWN"}, -- Night Hunter
+		{327039, "SAY", "SAY_COUNTDOWN", "ME_ONLY_EMPHASIZE"}, -- Feeding Time (Normal mode version of Night Hunter)
+		{327796, "SAY", "SAY_COUNTDOWN", "ME_ONLY_EMPHASIZE"}, -- Night Hunter
 		"custom_on_repeating_nighthunter",
 		nightHunterMarker,
 		327122, -- Ravage
@@ -140,6 +141,7 @@ function mod:GetOptions()
 		"custom_on_repeating_impale",
 		impaleMarker,
 		-22131, -- Crimson Cabalist
+		{336162, "EMPHASIZE"}, -- Crescendo
 		335873, -- Rancor
 		329181, -- Wracking Pain
 		333932, -- Hand of Destruction
@@ -165,6 +167,11 @@ function mod:GetOptions()
 		[329906] = -22059, -- Stage Two: The Crimson Chorus
 		[332585] = -22195,-- Stage Three: Indignation
 		["hymn_stacks"] = "mythic",
+	},{
+		[327039] = CL.normal,
+		[327796] = CL.heroic .."/".. CL.mythic,
+		[328276] = CL.intermission,
+		[-22131] = CL.adds,
 	}
 end
 
@@ -180,6 +187,8 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "CleansingPain", 326707)
 	self:Log("SPELL_CAST_SUCCESS", "CleansingPainSuccess", 326707)
 	self:Log("SPELL_CAST_START", "BloodPriceStart", 326851)
+	self:Log("SPELL_AURA_APPLIED", "FeedingTimeApplied", 327039)
+	self:Log("SPELL_AURA_REMOVED", "FeedingTimeRemoved", 327039)
 	self:Log("SPELL_AURA_APPLIED", "NightHunterApplied", 327796)
 	self:Log("SPELL_AURA_REMOVED", "NightHunterRemoved", 327796)
 	self:Log("SPELL_CAST_START", "Ravage", 327122)
@@ -198,6 +207,8 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED_DOSE", "WrackingPainApplied", 329181)
 	self:Log("SPELL_CAST_START", "HandofDestruction", 333932)
 	self:Log("SPELL_CAST_SUCCESS", "Massacre", 330042)
+
+	self:Death("AddDeaths", 169196, 169470, 173161, 173162, 173163, 173164) -- Crimson Cabalist x2, Lady Sinsear, Lord Evershade, Baron Duskhollow, Countess Gloomveil
 
 	-- Stage Three: Indignation
 	self:Log("SPELL_CAST_SUCCESS", "IndignationSuccess", 326005)
@@ -221,6 +232,13 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "ThroughtheMirror", 338738)
 	self:Log("SPELL_AURA_REMOVED", "ThroughtheMirrorRemoved", 338738)
 	self:Log("SPELL_CAST_SUCCESS", "SinisterReflection", 333979)
+end
+
+function mod:VerifyEnable(unit)
+	local hp = UnitHealth(unit) / UnitHealthMax(unit) * 100
+	if hp > 5 then
+		return true
+	end
 end
 
 function mod:OnEngage()
@@ -264,6 +282,24 @@ end
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
+
+do
+	local prev = 0
+	local function crescendoMessage()
+		mod:PersonalMessage(336162, "underyou")
+		mod:PlaySound(336162, "warning")
+	end
+	function mod:AddDeaths(args)
+		local t = args.time
+		if t - prev > 0.3 then
+			prev = t
+
+			if not self:Easy() then
+				self:SimpleTimer(crescendoMessage, 2)
+			end
+		end
+	end
+end
 
 function mod:RAID_BOSS_EMOTE(_, msg)
 	if msg:find(L.add_spawn, nil, true) then -- Crimson Cabalists spawned
@@ -315,9 +351,8 @@ do
 		-- count the raid size so we can colour accordingly
 		local playersAlive = 0
 		for unit in self:IterateGroup() do
-			local _, _, _, tarInstanceId = UnitPosition(unit)
 			local name = self:UnitName(unit)
-			if name and tarInstanceId == 2296 and not UnitIsDead(unit) then
+			if name and not UnitIsDead(unit) then
 				playersAlive = playersAlive + 1
 			end
 		end
@@ -408,6 +443,21 @@ function mod:CleansingPainSuccess(args)
 	self:Bar(args.spellId, timers[stage][args.spellId][cleansingPainCount], CL.count:format(args.spellName, cleansingPainCount))
 end
 
+
+function mod:FeedingTimeApplied(args)
+	if self:Me(args.destGUID)then
+		self:PersonalMessage(args.spellId)
+		self:Say(args.spellId)
+		self:SayCountdown(args.spellId, 5)
+	end
+end
+
+function mod:FeedingTimeRemoved(args)
+	if self:Me(args.destGUID) then
+		self:CancelSayCountdown(args.spellId)
+	end
+end
+
 do
 	local playerList, playerIcons = mod:NewTargetList(), {}
 	local sayTimer = nil
@@ -461,9 +511,9 @@ function mod:MarchofthePenitentStart(args)
 		stage = 2
 		self.stage = stage
 		intermission = true
-		self:Message("stages", "green", CL.intermission, false)
-		self:PlaySound("stages", "long")
-		self:CastBar("stages", 16.5, CL.intermission, 328276) -- 1.5s precast, 15s channel // March of the Penitent icon
+		self:Message(328276, "green", CL.percent:format(70, args.spellName), false)
+		self:PlaySound(328276, "long")
+		self:Bar(328276, 16.5, CL.intermission) -- 1.5s precast, 15s channel
 
 		self:StopBar(CL.count:format(self:SpellName(326707), cleansingPainCount)) -- Cleansing Pain
 		self:StopBar(CL.count:format(self:SpellName(326851), bloodPriceCount)) -- Blood Price
@@ -764,9 +814,8 @@ do
 		-- count the raid size so we can colour accordingly
 		local playersAlive = 0
 		for unit in self:IterateGroup() do
-			local _, _, _, tarInstanceId = UnitPosition(unit)
 			local name = self:UnitName(unit)
-			if name and tarInstanceId == 2296 and not UnitIsDead(unit) then
+			if name and not UnitIsDead(unit) then
 				playersAlive = playersAlive + 1
 			end
 		end

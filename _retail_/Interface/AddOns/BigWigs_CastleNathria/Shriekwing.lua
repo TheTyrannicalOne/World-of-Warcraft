@@ -133,7 +133,7 @@ do
 		playerList[#playerList+1] = args.destName
 		if self:Me(args.destGUID) then
 			self:Say(342074)
-			self:SayCountdown(342074, 8)
+			self:SayCountdown(342074, self:Mythic() and 6 or 8)
 			self:PlaySound(342074, "warning")
 		end
 		if #playerList == 1 then
@@ -260,13 +260,13 @@ function mod:TheBloodLanternApplied(args)
 		self:PersonalMessage(args.spellId)
 		self:PlaySound(args.spellId, "warning")
 	else
-		self:Message(args.spellId, "green", L.pickup_lantern:format(args.destName))
+		self:Message(args.spellId, "green", L.pickup_lantern:format(self:ColorName(args.destName)))
 		self:PlaySound(args.spellId, "info")
 	end
 end
 
 function mod:TheBloodLanternRemoved(args)
-	self:Message(args.spellId, "red", L.dropped_lantern:format(args.destName))
+	self:Message(args.spellId, "red", L.dropped_lantern:format(self:ColorName(args.destName)))
 	self:PlaySound(args.spellId, "info")
 end
 

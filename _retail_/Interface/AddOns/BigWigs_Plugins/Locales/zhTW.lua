@@ -5,6 +5,7 @@ L.comma = "，"
 L.width = "寬度"
 L.height = "高度"
 L.sizeDesc = "通常透過拖動錨點來條整尺寸，如果你需要一個精確的尺寸大小，可以調整這個值，或直接輸入到框中"
+--L.fontSizeDesc = "Adjust the font size using the slider or type the value into the box which has a much higher maximum of 200."
 
 L.abilityName = "技能名稱"
 L.abilityNameDesc = "在視窗上面顯示或隱藏技能名稱。"
@@ -215,7 +216,20 @@ L.wrongTime = "指定的時間無效。 <time> 可以為一個秒數，一個 �
 -- AltPower.lua
 --
 
+--L.altPowerDesc = "The AltPower display will only appear for bosses that apply AltPower to players, which is extremely rare. The display measures the amount of 'Alternative Power' you and your group has, displaying it in a list. To move the display around, please use the test button below."
 L.resetAltPowerDesc = "重設所有特殊能量自訂選項，包括錨點和位置。"
+--L.test = "Test"
+--L.altPowerTestDesc = "Show the 'Alternative Power' display, allowing you to move it, and simulating the power changes you would see on a boss encounter."
+--L.yourPowerBar = "Your Power Bar"
+--L.barColor = "Bar color"
+--L.barTextColor = "Bar text color"
+--L.additionalWidth = "Additional Width"
+--L.additionalHeight = "Additional Height"
+--L.additionalSizeDesc = "Add to the size of the standard display by adjusting this slider, or type the value into the box which has a much higher maximum of 100."
+--L.yourPowerTest = "Your Power: %d" -- Your Power: 42
+--L.yourAltPower = "Your %s: %d" -- e.g. Your Corruption: 42
+--L.player = "Player %d" -- Player 7
+--L.disableAltPowerDesc = "Globally disable the AltPower display, it will never show for any boss encounter."
 
 -----------------------------------------------------------------------
 -- AutoReply.lua
@@ -261,7 +275,7 @@ L.resetBarsDesc = "重設所有計時條自訂選項，包括錨點和位置。"
 -- BossBlock.lua
 --
 
-L.audio = "語音"
+L.audio = "音效"
 L.music = "音樂"
 L.ambience = "環境音效"
 L.sfx = "音效"
@@ -319,7 +333,7 @@ L.infoBox = "訊息盒"
 -- Messages.lua
 --
 
---L.emphasizedDesc = "The point of an emphasized message is to get your attention by being a large message in the middle of your screen. It is rarely enabled by default, but you can enable it for any boss ability when looking at the specific boss encounter settings."
+L.emphasizedDesc = "強調訊息的目的，是通過在螢幕中央顯示巨大的文字訊息，從而引起你的注意。 預設情況下，此功能很少啟用，但你可以為任何技能單獨啟用；在首領模組的技能列表中點擊「>>」，就可以選擇單獨啟用特定技能的強調訊息。"
 L.resetMessagesDesc = "重設所有訊息自訂選項，包括錨點和位置。"
 L.uppercase = "大寫"
 L.uppercaseDesc = "所有的強調訊息都會被轉換為大寫。"

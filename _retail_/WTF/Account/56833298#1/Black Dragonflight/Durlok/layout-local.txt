@@ -174,14 +174,14 @@ X: 550
 Y: 0
 W: 300
 H: 518
-Frame: AllTheThings-Window-Bounty
+Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: RIGHT
 X: 0
 Y: -84
 W: 300
 H: 300
-Frame: AllTheThings-Window-CurrentInstance
+Frame: AllTheThings-Window-Bounty
 FrameLevel: 1
 Anchor: RIGHT
 X: 0

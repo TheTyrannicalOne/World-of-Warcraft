@@ -26,7 +26,7 @@ RematchSettings = {
 	["XPos"] = 995.0079345703125,
 	["LevelingQueue"] = {
 	},
-	["DialogXPos"] = 1340.008544921875,
+	["DialogXPos"] = 1341.008422851563,
 	["TeamGroups"] = {
 		{
 			"General", -- [1]
@@ -46,9 +46,9 @@ RematchSettings = {
 		},
 		["Level"] = {
 		},
-		["Similar"] = {
-		},
 		["Sources"] = {
+		},
+		["Similar"] = {
 		},
 		["Breed"] = {
 		},

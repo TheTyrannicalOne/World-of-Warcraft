@@ -19,20 +19,19 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[57744] = {
-			["title"] = "Conquest's Reward",
-			["objectives"] = {
-				"180/500 Earn Conquest", -- [1]
-			},
-		},
 		[53436] = {
 			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[44720] = {
-			["title"] = "A Call to Action",
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[62801] = {
+			["title"] = "The Call of Fate",
 			["objectives"] = {
 			},
 		},
@@ -50,10 +49,10 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[56119] = {
+			["title"] = "The Waveblade Ankoan",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[57566] = {
@@ -69,10 +68,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[54438] = {
@@ -94,21 +93,22 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
 		[58632] = {
 			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
 				"N'Zoth, the Corruptor defeated", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
 		[56211] = {
@@ -118,10 +118,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56119] = {
-			["title"] = "The Waveblade Ankoan",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -169,10 +169,9 @@ QuestTogether = {
 				"0/1 Thermospark found", -- [3]
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[44720] = {
+			["title"] = "A Call to Action",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[54485] = {
@@ -184,8 +183,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

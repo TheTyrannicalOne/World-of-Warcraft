@@ -20,6 +20,16 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
 		[49032] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
@@ -37,21 +47,28 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"0/4 Echo of Time", -- [1]
+			},
+		},
 		[56352] = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
 		[43179] = {
 			["title"] = "The Kirin Tor of Dalaran",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"2/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[45381] = {
@@ -60,10 +77,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
 		[45383] = {
@@ -72,20 +89,15 @@ QuestTogether = {
 				"2/4 Echo of Time", -- [1]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[62371] = {
+			["title"] = "Tirna Scithe: A Warning Silence",
 			["objectives"] = {
-				"3/4 Complete 4 Army of the Light World Quests", -- [1]
+				"1/1 Tred'ova slain", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[62932] = {
@@ -106,10 +118,10 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[50598] = {
@@ -144,27 +156,40 @@ QuestTogether = {
 				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
-		[62371] = {
-			["title"] = "Tirna Scithe: A Warning Silence",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"1/1 Tred'ova slain", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[61981] = {
+			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
+				"336/1000 Anima collected", -- [1]
 			},
 		},
 		[42421] = {
 			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"4/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
+			},
+		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[61334] = {
+			["title"] = "Return Lost Souls",
+			["objectives"] = {
+				"0/5 Rescue Souls from the Maw", -- [1]
 			},
 		},
 		[62730] = {
@@ -173,22 +198,11 @@ QuestTogether = {
 				"0/1 Ripe Purian", -- [1]
 			},
 		},
-		[49133] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
-			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
-			},
-		},
-		[57918] = {
-			["title"] = "The Absolution of Souls",
-			["objectives"] = {
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

@@ -7,12 +7,6 @@ QuestTogether = {
 				"0/1 Pollen Harvested", -- [1]
 			},
 		},
-		[57743] = {
-			["title"] = "Conquest's Reward",
-			["objectives"] = {
-				"0/500 Earn Conquest", -- [1]
-			},
-		},
 		[53435] = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
@@ -25,27 +19,15 @@ QuestTogether = {
 				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[56044] = {
+			["title"] = "Send the Fleet",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
 		[53101] = {
 			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-			},
-		},
-		[48639] = {
-			["title"] = "Army of the Light",
-			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[40643] = {
@@ -64,6 +46,18 @@ QuestTogether = {
 				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[56120] = {
+			["title"] = "The Unshackled",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
+			},
+		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
@@ -76,20 +70,10 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[54180] = {
@@ -104,10 +88,10 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[42422] = {
@@ -116,23 +100,33 @@ QuestTogether = {
 				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+			},
+		},
 		[47105] = {
 			["title"] = "Into The Darkness",
 			["objectives"] = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[56044] = {
-			["title"] = "Send the Fleet",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

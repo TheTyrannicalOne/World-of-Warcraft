@@ -160,13 +160,6 @@ X: 550
 Y: 0
 W: 300
 H: 518
-Frame: SplashFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 60
-W: 882
-H: 584
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: RIGHT
@@ -181,13 +174,6 @@ X: 0
 Y: -40
 W: 300
 H: 300
-Frame: CollectionsJournal
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 42
-Y: -130
-W: 703
-H: 606
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER
