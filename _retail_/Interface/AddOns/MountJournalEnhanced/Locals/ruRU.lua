@@ -18,7 +18,6 @@ L["Ground"] = "Наземный"
 L["Hidden"] = "Скрытые"
 --[[Translation missing --]]
 --[[ L["Only tradable"] = "Only tradable"--]] 
-L["Only usable"] = "Только доступные"
 L["Passenger"] = "Пассажирский"
 L["Reset filters"] = "Сбросить фильтры"
 --[[Translation missing --]]

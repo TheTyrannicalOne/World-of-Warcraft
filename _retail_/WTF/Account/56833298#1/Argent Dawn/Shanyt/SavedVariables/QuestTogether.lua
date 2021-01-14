@@ -1,6 +1,131 @@
 
 QuestTogether = {
 	["questTracker"] = {
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"2/3 Complete 3 Kirin Tor World Quests", -- [1]
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"3/20 Eternal Ornament", -- [1]
+			},
+		},
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+			["objectives"] = {
+				"3/4 Fragment of the Guardian's Seal", -- [1]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
+		[61981] = {
+			["title"] = "Replenish the Reservoir",
+			["objectives"] = {
+				"336/1000 Anima collected", -- [1]
+			},
+		},
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+			["objectives"] = {
+				"0/4 Sigil of the Dark Titan", -- [1]
+			},
+		},
+		[62932] = {
+			["title"] = "Explore Torghast",
+			["objectives"] = {
+				"0/1 Information found", -- [1]
+			},
+		},
+		[46745] = {
+			["title"] = "Supplies From the Court",
+			["objectives"] = {
+			},
+		},
+		[62371] = {
+			["title"] = "Tirna Scithe: A Warning Silence",
+			["objectives"] = {
+				"1/1 Tred'ova slain", -- [1]
+			},
+		},
+		[47129] = {
+			["title"] = "Tomb of Sargeras: The Deceiver",
+			["objectives"] = {
+				"Defeat Kil'jaeden", -- [1]
+				"1/1 Seal of the Deceiver", -- [2]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[53435] = {
+			["title"] = "Azerite for the Horde",
+			["objectives"] = {
+				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"2/4 Echo of Time", -- [1]
+			},
+		},
+		[60267] = {
+			["title"] = "Prison of the Forgotten",
+			["objectives"] = {
+				"1/1 Speak with Ve'nari", -- [1]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
+			},
+		},
+		[62730] = {
+			["title"] = "Fruit of the Gods",
+			["objectives"] = {
+				"0/1 Ripe Purian", -- [1]
+			},
+		},
+		[48305] = {
+			["title"] = "The Burning Coven",
+			["objectives"] = {
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
+			},
+		},
+		[24756] = {
+			["title"] = "Blood Infusion",
+			["objectives"] = {
+				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
+			},
+		},
 		[60281] = {
 			["title"] = "Rule 4: Make A List",
 			["objectives"] = {
@@ -8,10 +133,20 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[57326] = {
+			["title"] = "Prototypes for Profit",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+				"125/150 Prototype Implant", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[46748] = {
+			["title"] = "Supplies From the Nightfallen",
+			["objectives"] = {
 			},
 		},
 		[57462] = {
@@ -30,130 +165,22 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
-			},
-		},
-		[53435] = {
-			["title"] = "Azerite for the Horde",
-			["objectives"] = {
-				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
-			},
-		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
-			["objectives"] = {
-				"3/20 Eternal Ornament", -- [1]
-			},
-		},
 		[57403] = {
 			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"2/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[49133] = {
-			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
-			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
-			},
-		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
-			},
-		},
-		[62371] = {
-			["title"] = "Tirna Scithe: A Warning Silence",
-			["objectives"] = {
-				"1/1 Tred'ova slain", -- [1]
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
-		[62932] = {
-			["title"] = "Explore Torghast",
-			["objectives"] = {
-				"0/1 Information found", -- [1]
-			},
-		},
-		[60267] = {
-			["title"] = "Prison of the Forgotten",
-			["objectives"] = {
-				"1/1 Speak with Ve'nari", -- [1]
-			},
-		},
-		[24756] = {
-			["title"] = "Blood Infusion",
-			["objectives"] = {
-				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
-			},
-		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-			},
-		},
-		[48305] = {
-			["title"] = "The Burning Coven",
-			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[47129] = {
-			["title"] = "Tomb of Sargeras: The Deceiver",
-			["objectives"] = {
-				"Defeat Kil'jaeden", -- [1]
-				"1/1 Seal of the Deceiver", -- [2]
-			},
-		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[57919] = {
@@ -162,40 +189,16 @@ QuestTogether = {
 				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
-		[61981] = {
-			["title"] = "Replenish the Reservoir",
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"336/1000 Anima collected", -- [1]
+				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"4/4 Complete 4 world quests in Suramar", -- [1]
-			},
-		},
-		[42422] = {
-			["title"] = "The Wardens",
-			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
-			},
-		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
-		[61334] = {
-			["title"] = "Return Lost Souls",
-			["objectives"] = {
-				"0/5 Rescue Souls from the Maw", -- [1]
-			},
-		},
-		[62730] = {
-			["title"] = "Fruit of the Gods",
-			["objectives"] = {
-				"0/1 Ripe Purian", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 	},

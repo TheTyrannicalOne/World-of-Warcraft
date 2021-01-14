@@ -15,7 +15,6 @@ L["Flying"] = "비행"
 L["Ground"] = "지상"
 L["Hidden"] = "숨김"
 L["Only tradable"] = "교환가능"
-L["Only usable"] = "사용가능"
 L["Passenger"] = "승객"
 L["Reset filters"] = "필터 초기화"
 --[[Translation missing --]]

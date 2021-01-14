@@ -18,7 +18,6 @@ L["Ground"] = "Terrestre"
 L["Hidden"] = "Cachées"
 --[[Translation missing --]]
 --[[ L["Only tradable"] = "Only tradable"--]] 
-L["Only usable"] = "Utilisables"
 L["Passenger"] = "Passagers"
 L["Reset filters"] = "Réinitialiser les filtres"
 --[[Translation missing --]]

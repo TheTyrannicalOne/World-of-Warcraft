@@ -3,21 +3,21 @@ RareShareDB = {
 	["Modules"] = {
 	},
 	["Config"] = {
-		["ChatAnnounce"] = true,
+		["Sound"] = {
+			["Rares"] = true,
+			["Master"] = true,
+			["Duplicates"] = true,
+		},
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["CChannel"] = {
-			["CName"] = "General - Nazjatar",
-			["CID"] = 1,
-		},
+		["ChatAnnounce"] = true,
 		["OnDeath"] = false,
-		["Sound"] = {
-			["Rares"] = true,
-			["Master"] = true,
-			["Duplicates"] = true,
+		["CChannel"] = {
+			["CID"] = 1,
+			["CName"] = "General - Mechagon",
 		},
 		["Duplicates"] = true,
 	},

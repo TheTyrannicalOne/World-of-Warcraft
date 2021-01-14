@@ -5,10 +5,10 @@ Details_StreamerDB = {
 		["Zulbathal - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Shaekhan - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
+		["Darnastris - Dalaran"] = "Shanyt - Argent Dawn",
 		["Varlouris - Dalaran"] = "Shanyt - Argent Dawn",
 		["Illingrath - Dalaran"] = "Shanyt - Argent Dawn",
-		["Darnastris - Dalaran"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
@@ -38,12 +38,7 @@ Details_StreamerDB = {
 			["row_texture"] = "Details Serenity",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = false,
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 10,
 			["per_second"] = {
@@ -64,14 +59,19 @@ Details_StreamerDB = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["font_size"] = 10,
 			["use_spark"] = true,
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
 			["y"] = 1.52587890625e-05,
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["point"] = "CENTER",
 			["row_height"] = 20,
 			["scale"] = 1,
