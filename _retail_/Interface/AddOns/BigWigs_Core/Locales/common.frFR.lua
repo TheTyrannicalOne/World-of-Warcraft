@@ -1,5 +1,6 @@
 local L = BigWigsAPI:NewLocale("BigWigs: Common", "frFR")
 if not L then return end
+local female = UnitSex("player") == 3
 
 L.add = "Add"
 L.add_killed = "Add tué (%d/%d)"
@@ -56,7 +57,7 @@ L.on_group = "%s sur le GROUPE" -- spell on group
 
 L.big_add = "Gros add" -- singular
 L.big_adds = "Gros adds" -- plural
-L.small_add = "Petite add" -- singular
+L.small_add = "Petit add" -- singular
 L.small_adds = "Petits adds" -- plural
 
 L.active = "Actif" -- When a boss becomes active, after speech finishes
@@ -68,9 +69,10 @@ L.marker_npc_desc = "Marque %s avec %s. Nécessite d'être assistant ou chef de 
 
 -- Ability where two players have to move close to each other
 L.link = "Lien"
-L.link_with = "Lié(e) avec %s"
-L.link_short = "Lié : %s"
-L.link_both = "%s est lié(e) avec %s"
+L.link_with = (female and "Liée" or "Lié") .." avec %s"
+L.link_with_icon = (female and "Liée" or "Lié") .." avec |T13700%d:0|t%s"
+L.link_short = (female and "Liée" or "Lié") .." : %s"
+L.link_both = "%s est ".. (female and "liée" or "lié") .." avec %s"
 L.link_removed = "Lien enlevé"
 
 -- Abbreviated numbers
@@ -83,3 +85,5 @@ L.seconds = "%.1fs" -- 1.1 seconds
 L.laser = "Laser" -- Used for abilities that act like a laser. Usually from the boss to a player, or, from the boss to a specific area
 L.bomb = "Bombe" -- Used for debuffs that make players explode
 L.fixate = "Fixer" -- Used when a boss or add is chasing/fixated on a player
+--L.knockback = "Knockback" -- Used when an abily knocks players away from a certain point, like a "smash" type ability that knocks you back 10 meters
+L.traps = "Pièges" -- Used for abilities that act like traps on the floor e.g. move into it and something bad happens like you die, or are rooted, etc.

@@ -1,184 +1,32 @@
-2.2.0 Release Notes
+2.2.2 Release Notes
 Contributions made by Gold:
-* changed tahonta mount to NYI
-
-Contributions made by ImUnicke:
-* conduit from calling
-* added the remaining CN Zone Drops (based on wowhead data) (will re-harvest/parse soon)
-* added modID to the itemID in the shown Shared Appearances (to help in any debugging issues of msimatched visuals/etc.) - stubbed out/added castle nathria kill HQTs
-* added Venthyr Renown 11 quest chain
-* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
-* various quick updates from previous screenshots
-* some HQT organizing for Adventures
-* sludgefist heroic HQT
-* API harvest - 20201216 - collected a few random missing items from last time - modified in-game harvesting logic to allow for re-harvesting sourceIDs on items with existing sourceIDs - added capability to in-game harvesting to specify an itemID range for harvesting - re-harvested items 172000+ to fix a lot of broken sourceIDs in LFR Castle Nathria and new items in the API Harvest
-* fixed symbolic link resolving on the root object of a search group - fixed a few accidental global variable uses - modified Contains to include symbolized results because the code is grabbing them anyway, might as well show them
-* found out the name of the latest adventure campaign mission + necrolord HQT
-* someone put an item into HQT :P - HQT comments
-* finally last HQT for whisper in the dark campaign!
-* Merge branch 'master' of https://github.com/DFortun81/AllTheThings - added all torghast lockouts for this week - other random stuff
-* stubbed out next adventure mission - couple other HQT
-* added coords for 'We'll Workshop It" - fixed a Torghast quest id - various other quests and things
-* stubbed another campaign mission
-* conduit, missing object, maw crs
-* HQT for venthyr anima conduit
-* some campaign HQT and conduits
-* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
-* added Achievements header to the It's in the Mix achievement so that it puts itself into the correct group in the zone list
-* Merge pull request #653 from stijnherreman/patch-1
-* added venthyr anima conduit daily
-* fixed Orgrimmar vendor for Blackfang spaulders
-* adv campaign HQT
-* today's Venthyr Tier 2 anima conductor dailies
-* realigned Castle Nathria HQTs for testing again next week (since Blizz hotfixed some shared difficulty loot lockouts early this week) - couple adventure HQTs
-* HQT for adv. campaign on Venthyr
-* converted Garrison > Trading Post > AH Quest/Item to utilize 'cost' instead of nesting/tagging items required for the quest - removed modID from various Alliance Lunarfall Inn daily quests which somehow breaks the Contains functionality on the Horde versions of the reward containers... - fixed tooltip Progress on Toys - fixed building empty Currency groups - modified symlinks to always return cloned objects so that they cannot modify the Source structure - modified Search/Contains logic to ensure only cloned objects are returned in the final result so that they cannot modify the Source structure
-* changed logic to clone data instead of creating identical objects (it was probably copying the actual source groups for things like .parent every time a new minilist was generated, etc. thus eventually leading to stack overflows when changing zones enough..?)
-* modified CreateObject to utilize CloneData if it is trying to create an object which is already an object - some comments for places where CreateObject is no longer necessary to call because it's being called earlier in the logic
-* actually finished campaign mission as Venthyr LOL what a scuffed set of companions...
-* fixed double nested item for the Harika the Horrid rare in Revendreth which basically caused infinite recursion in some situations
-* added Spirited Skyfoal - fixed questID for 'Humble Gatherer' - some Ember Court things
-* campaign save the sky foal HQTs from venthyr
-* various small additions
-* fix commented names of Sire Denathrius memories - various other additions
-* various additions/clean up
-* quest item in heroic CN
-* added torghast weekly lockout quests (Coldheart/Mort'regar)
-* couple HQT - added Venthyr follower 'Dug Gravewell'
-* campaign HQTs - calling conduit
-* added Revendreth initial travel skip quest - couple campaign HQT
-* HQT for campaign
-* added HQT for campaign adv. - moved Enticing Anima item and put cost back on the Worldedge to reference it
-* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
-* campaign adv HQT
-* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
-* campaign adv HQT
-* campaign adv HQT
-* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
-* removed enticing anima for the time being again
 
 Contributions made by slumber:
-* oribos weekly quests
-* a bastion zone reward
-* some rare/treasure/achievement descriptions, crs, tracking quests, blahblahblah
-* today's shenanigans
-* some missing torghast maps
-* added a couple missing vendors + a zone reward set
-* another missing vendor, more ember court nightmare tracking quest shenaniganery
-* another missing vendor, a missing wq
-* fixed some crs + generally tidied nathria
-* trash, coords/quests for a rare or two, more useless torghast map annotation that i compulsively Must Do
-* a missing zone reward + some missing profession wqs
-* got a couple to-dos done, added a missing ardenweald treasure
-* added some missing path of ascension vendors (ty to nohh!)
-* missing rare data/wqs/treasure chests/some anima trash/hqt blah blah
-* added missing loot to lady inerva in nathria
-* missing wq stuff/zone reward/some heycutie
-* attached wq-only rare to wqs (in bfa+sl)
-* started working on venthyr renown 13 quests
-* corrected coords on a maw rare, dug gravewell providers
-* more venthyr campaign/ember court nightmares
-* added remaining missing conduits/legendary powers to nathria
-* added conduits/legendary powers to de other side
-* added conduits/legendary powers to halls of atonement
-* fixed duplicate winter veil quests, sort of added toy/pet for this year's rewards
-* 2020 winter veil (may cause issues for people who haven't opened presents yet)
-* some missing wqs, forgot to mark 2019 gifts unobtainable
-* moved another wq-only rare to its wq
-* more missing zone rewards, a missing treasure chest, a missing wq
-* some more little threads things + crs for a treasure that begins as an npc
-* some missing zone rewards/wqs
-* added conduits/legendary powers to mists of tirna scithe
-* added conduits / legendary powers to necrotic wake
-* added conduits/legendary powers to plaguefall
-* added some weird rep items
+* missing venthyr daily + twisting corridors layer 4 quest
+* added tier 3 mirror's edge quests + transmog rewards
+* forgot an hqt
+* fixed general kaal crs in sanguine depths
+* some unsorted cleanup (into NYI and also various SL files)
+* i am stupid
+* one to-do to-done
+* another venthyr mirror repair reward
+* crypt couture is largely necrolord-only (requires account progression on a necrolord character to unlock)
+
+Contributions made by ImUnicke:
+* BoEs which are NYI will show the red unobtainable circle instead of green
+* added all known costs (Tier 2) for abom stitching table cosmetic crafts/unlocks - customCollect requirements will now show on Contains rows if required
+* added item costs for the 'Crypt Couture' achievement - flipped heirarchy of 'It's in the Mix' from Ach > Crit > NPC to Ach > NPC > Crit to easier show which NPCs are available to be killed - inferred remaining adv campaign HQTs based on the incremental pattern of questIDs (waiting to find out ONE of them is not actually sequential because blizzard)
+* got rid of the evil default dropdown and put in some pseudo-radio buttons to allow for selecting the tooltip modifier key (fixes #656) - tooltip modifier key now affects NPC hover tooltips as well (since tooltips do not refresh by default, pressing the mod key while the tooltip is open will not adjust the tooltip until hovering) - fixed a couple locale keys/values
+* fixed a global-defined function
+* missing map in torghast
+* another (last?) adv cache
+* fixed/added references for 'The Great Luckydo'
 
 Contributions made by mogwai316:
-* New quest from Bolvar this week too
-* Updated Oranomonnononononos and alphabetized world bosses for my sanity
-* New Ve'nari weekly quests. Marked some weekly Ve'nari quests that were previously marked as daily.
-* Night Fae chapter 5 quests added. Various other minor updates.
-* Glimmerfly Cocoon marked as never implemented. Added a missing item sold by Mar'lan.
-* Made Triage quest obtainable again, changed from First Aid to Tailoring and removed sourceQuest that is still removed from game.
-* A few Night Fae additions/updates
-* Made Ever-Abundant Hearth a collectible toy - Moved a couple Night Fae quests under Command Table header - Added a couple Necrolord weekly quests
-* Added new pepe for winter veil - Made Jiggles a collectible pet - Other minor magic pet corrections
-* Added missing followers (mission table) and their quests for all covenants - Added Ruffle to vendor and pet journal - Added Sinheart to pet journal
-* Added quest trackers for each possible construct body to the Abominable Stitching Table to track construction of them - Fixed costs of items on Abominable Stitching Table - Added Backbone pet to Abominable Stitching Table - Moved Abominable Stitching Table under Necrolord Covenants header (Sanctum Upgrades - Abomination Factory) - Moved Atticus to Necrolord Covenant vendors and updated all his items/costs
-* Added Clyde (vendor) and contents of Arsenal: Stitchmasters' Weapons
-* Added Necrolord chapter 5 questline
-* Added Gomling in a Bag toy / world quest.
-* Soulshape forms updated
-* Various minor updates in SL zones
-* Added some more world/daily quests
-* Added Bound in Dreams quest
-* Added more crs for the Torghast pet drops
-* Added Seed Merchant Daybreak (Queen's conservatory vendor) and Conservator's ensembles - Added Tome of Polymorph: Monkey to Deadmines zone drops - Other minor updates/additions
-* Doh, fixed bad npc id.
-* Added some more world/daily quests
-* Added Spinebug. Added Battlecry of Krexus. Changed description on Blackhound Cache.
-* Added items in Necrolord transmog ensembles - Added Slayer Araya's items and costs - Various minor additions/updates
-* Added items in the Winterborn ensembles
-* Updated Rapier of the Fearless, and marked another location of Bonehoof Tauralus as nyi
-* Added garbage trinket
-* Added Vantus Rune for Nathria and more trinkets. Marked some unimplemented recipes.
-* Added pets: Lucy, Pernicious Bonetusk and Char. - Removed a few weapons from NYI that had been added to vendor. - Added some more NYI things. - Removed Callings files from Mald/Reven that were already moved into covenant headers
-* Fixed items that were showing up as unobtainable on Big Zokk because they were marked that way on Talgaiir.  Updated Talgaiir's description.
-* Marked "The Symbol of Life" quests as unobtainable. Added The Tome of Divinity quest and marked it unobtainable as well, just so there's a historical record that it existed at some point.
-* Added Covenant Combat achievement
-* Added Oribos week 5 quests
-* Updated Nurgash Muckformed (world boss) and added another Ve'nari weekly.
-* Night Fae chapter 6 questline added
-* Added Blisswing (follower) and various other minor updates
-* Commented out Torghast quests from beta that still have yet to be seen in game
-* Moved Marasmius quests under Transport Network header in Night Fae covenant, added a new Marasmius quest, added some Necrolord weeklies.
-* Removed Spirited Skyfoal from NYI
-* Added items in Arsenal: Winterborn Weapons
-* Marked Lavender Nibbler unobtainable for now as it doesn't appear to have ever dropped. - Added/updated a few Night Fae things
-* Brawler's Guild achievements marked unobtainable since Brawler's Guild fights are currently not available in the game.
-* Made parser happy again with Crown of Honor - Reworked Mystic Rainbowhorn a bit
-* Necrolord chapter 6 questline added
-* Added a couple Night Fae daily/wq's
-* Minor update to Sire Ladinas description and some other little things
-* Marked Tunk's Backscratcher as never implemented, as there is still no evidence of it dropping for anyone ever.
-* Added Ascended paragon loot (Larion Cub pet and Mark of Purity toy). - Marked Larion Pouncer pet as obtainable; it should be available from Larionrider Orstus but it requires tier 3 anima conductor so hasn't been seen yet.
-* Various minor updates
-* Adjutant Galos items/costs added - Commented out 2nd copy of Binkiros and Zeleskos, still need to figure out which version is correct and verify items/costs - Added quest "From a Dark Place"
-* Things not being in alphabetic order hurts my soul.
-* Undead pet journal fixes
-* Added a bunch of missing drops from Maldraxxus rares
-* Added Secretest Fish.  Fixed a couple typos in comments.
+* Marked the remaining WoD removed recipe items on vendors as not collectible and added descriptions explaining the items are still in game but are no longer usable/learnable
+* Added 2 new Night Fae quests
+* Added many missing Kyrian achievements
 
-Contributions made by Aiue:
-* Move the call to the recurser to the outside of the circular reference check iterator.
-* Merge branch 'master' of github.com:DFortun81/AllTheThings
-* Comment-tag line responsible for bad behaviour.
-* Merge branch 'master' of github.com:DFortun81/AllTheThings
-* Group progress incrementation should now update more accurately.
-* Merge branch 'master' of github.com:DFortun81/AllTheThings
-* Better progress incrementation fix.
-* Merge branch 'master' of github.com:DFortun81/AllTheThings
-* Revert previous meddling with UpdateParentProgress(), it was fine. Disable one of the calls in app.QuestCompletionHelper() that probably shouldn't be made.
-* Merge branch 'master' of github.com:DFortun81/AllTheThings
-* Attempt to fix stack overflow.
-* Revert "Attempt to fix stack overflow."
-* Remove redundant safety measure.
-
-Contributions made by Dmitry Volodin:
-* future proofing Stolen Gift description
-
-Contributions made by Jens Nilsson Sahlin:
-* Add some safety measures against what may have been a case of infinite recursion. Randomly could not replicate, however, so consider it untested. And temporary.
-* Also comment my code. Tsk.
-
-Contributions made by Stijn Herreman:
-* Fix cost of Blackfang Battleweave Spaulders
-
-Contributions made by Gromwind:
-* Added some Revendreth achievements to Revendreth outdoor zones.
-* Removing the achievements again as I've just found them...
-
-Contributions made by Sanctuari:
-* Added some missing Conquest weapons. Hopefully all of them when the 'All' button on the vendor is weird with weapons.
-* I parsed and staged you! Bad categories! Bad!
+Contributions made by henbe:
+* locale support for Settings tab and main file (#673)
 

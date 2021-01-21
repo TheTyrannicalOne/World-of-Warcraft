@@ -13,6 +13,12 @@ end
 L = BigWigs:NewBossLocale("Hungering Destroyer", "frFR")
 if L then
 	L.miasma = "Miasme" -- Short for Gluttonous Miasma
+
+	--L.custom_on_repeating_yell_miasma = "Repeating Miasma Health Yell"
+	--L.custom_on_repeating_yell_miasma_desc = "Repeating yell messages for Gluttonous Miasma to let others know when you are below 75% health."
+
+	--L.custom_on_repeating_say_laser = "Repeating Volatile Ejection Say"
+	--L.custom_on_repeating_say_laser_desc = "Repeating say messages for Volatile Ejection to help when moving into chat range of players that didn't see your first message."
 end
 
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "frFR")
@@ -30,8 +36,6 @@ if L then
 
 	L.level = "%s (niveau |cffffff00%d|r)"
 	L.full = "%s (|cffff0000PLEIN|r)"
-
-	L.container_active = "Conteneur actif : %s"
 
 	L.anima_adds = "Adds de l'Anima concentré"
 	L.anima_adds_desc = "Affiche un délai indiquant quand les adds apparaissent des affaiblissements de Anima concentré."
@@ -121,4 +125,27 @@ if L then
 
 	L.no_mirror = "Sans Miroir : %d" -- Player amount that does not have the Through the Mirror
 	L.mirror = "Miroir : %d" -- Player amount that does have the Through the Mirror
+end
+
+L = BigWigs:NewBossLocale("Castle Nathria Trash", "frFR")
+if L then
+	--[[ Pre Shriekwing ]]--
+	L.moldovaak = "Moldovaak"
+	L.caramain = "Caramain"
+	L.sindrel = "Sindrel"
+	L.hargitas = "Hargitas"
+
+	--[[ Shriekwing -> Huntsman Altimor ]]--
+	L.gargon = "Gargon massif"
+	L.hawkeye = "Oeil-de-faucon nathrian"
+
+	--[[ Huntsman Altimor -> Hungering Destroyer ]]--
+	L.feaster = "Festoyeur de l'effroi"
+	L.rat = "Rat de taille inhabituelle"
+	L.miasma = "Miasme" -- Short for Gluttonous Miasma
+
+	--[[ Hungering Destroyer -> Lady Inerva Darkvein ]]--
+	L.deplina = "Deplina"
+	L.dragost = "Dragost"
+	L.kullan = "Kullan"
 end

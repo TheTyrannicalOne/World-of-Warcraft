@@ -83,8 +83,10 @@ optionsButton.t:SetTexture('Interface/HelpFrame/HelpIcon-CharacterStuck')
 optionsButton.t:SetDesaturated(true)
 
 
-
-
+--SUper ugly fix, easymenu was breaking, so we create a duplicate frame and hide the original button which was breaking
+local filterSelection2 = CreateFrame("Frame", "EasyScrapFilterSelectionMenu2", mainFrame, "UIDropDownMenuTemplate")
+filterSelection2.Middle:SetWidth(96)
+filterSelection2:SetPoint("LEFT", mainFrame.searchBox, "RIGHT", 56, -4) --32
 
 local filterSelection = CreateFrame("Frame", "EasyScrapFilterSelectionMenu", mainFrame, "UIDropDownMenuTemplate")
 filterSelection.Middle:SetWidth(96)
@@ -95,15 +97,12 @@ filterSelection.text:SetFontObject('GameFontNormal')
 filterSelection.text:SetText('Filter:')
 filterSelection.text:SetPoint('RIGHT', filterSelection, 'LEFT', 16, 4)
 
-filterSelection.Button:SetScript('OnClick', function() 
-    if DropDownList1:IsVisible() then
-        DropDownList1:Hide()
+filterSelection.Button:Hide()
+filterSelection2.Button:SetScript('OnClick', function() 
+    if not EasyScrap.scrapInProgress then
+        EasyMenu(EasyScrap.filterSelectionMenuTable, EasyScrapFilterSelectionMenu, EasyScrapFilterSelectionMenu, 16, 8, nil, 3)
     else
-        if not EasyScrap.scrapInProgress then
-            EasyMenu(EasyScrap.filterSelectionMenuTable, filterSelection, filterSelection, 16, 8, nil, 3)
-        else
-            DEFAULT_CHAT_FRAME:AddMessage('Easy Scrap: Cannot switch filters while scrapping items.')
-        end
+        DEFAULT_CHAT_FRAME:AddMessage('Easy Scrap: Cannot switch filters while scrapping items.')
     end
 end)
 UIDropDownMenu_SetText(filterSelection, "Default")

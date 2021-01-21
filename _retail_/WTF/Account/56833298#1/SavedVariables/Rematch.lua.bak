@@ -3,7 +3,7 @@ RematchSaved = {
 }
 RematchSettings = {
 	["JournalUsed"] = true,
-	["DialogYPos"] = 669.0055541992188,
+	["DialogYPos"] = 668.0055541992188,
 	["HidePetToast"] = true,
 	["QueueSanctuary"] = {
 	},
@@ -24,7 +24,7 @@ RematchSettings = {
 	["SpecialSlots"] = {
 	},
 	["XPos"] = 995.0079345703125,
-	["LevelingQueue"] = {
+	["FavoriteFilters"] = {
 	},
 	["DialogXPos"] = 1341.008544921875,
 	["TeamGroups"] = {
@@ -40,27 +40,27 @@ RematchSettings = {
 		},
 		["Script"] = {
 		},
-		["Moveset"] = {
+		["Types"] = {
 		},
-		["Tough"] = {
+		["Favorite"] = {
 		},
-		["Level"] = {
+		["Collected"] = {
+		},
+		["Strong"] = {
 		},
 		["Similar"] = {
-		},
-		["Sources"] = {
 		},
 		["Breed"] = {
 		},
 		["Rarity"] = {
 		},
-		["Strong"] = {
+		["Sources"] = {
 		},
-		["Collected"] = {
+		["Level"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Types"] = {
+		["Moveset"] = {
 		},
 	},
 	["ExpandedOptHeaders"] = {
@@ -92,7 +92,7 @@ RematchSettings = {
 		}, -- [5]
 	},
 	["QueueSortOrder"] = 1,
-	["FavoriteFilters"] = {
+	["LevelingQueue"] = {
 	},
 	["CornerPos"] = "BOTTOMLEFT",
 	["JournalPanel"] = 1,

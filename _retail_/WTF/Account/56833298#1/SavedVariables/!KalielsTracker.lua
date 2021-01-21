@@ -36,20 +36,24 @@ KalielsTrackerDB = {
 		["Tyriinid - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Fantastiburo - Argent Dawn"] = {
+		["Narisaric - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Tyranasticus - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Bathal - Argent Dawn"] = {
-			["collapsed"] = true,
+		["Shaekhan - Argent Dawn"] = {
+			["quests"] = {
+				["num"] = 2,
+			},
 		},
 		["Tynster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
-			["collapsed"] = true,
+		["Varlouris - Dalaran"] = {
+			["quests"] = {
+				["num"] = 20,
+			},
 		},
 		["Tyrannithal - Argent Dawn"] = {
 			["collapsed"] = true,
@@ -60,35 +64,193 @@ KalielsTrackerDB = {
 		["Kelvalatar - Dalaran"] = {
 			["collapsed"] = true,
 		},
+		["Tinkster - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Brewnheimer - Darkspear"] = {
+			["collapsed"] = true,
+		},
+		["Shimzo - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Gillbourn - Runetotem"] = {
+			["collapsed"] = true,
+		},
 		["Okona - Zul'jin"] = {
 			["quests"] = {
 				["num"] = 2,
 			},
 			["collapsed"] = true,
 		},
-		["Brewnheimer - Darkspear"] = {
-			["collapsed"] = true,
-		},
-		["Varlouris - Dalaran"] = {
+		["Illingrath - Dalaran"] = {
 			["quests"] = {
-				["num"] = 20,
+				["num"] = 22,
 			},
-		},
-		["Gillbourn - Runetotem"] = {
-			["collapsed"] = true,
-		},
-		["Tinkster - Dalaran"] = {
-			["collapsed"] = true,
 		},
 		["Sinh - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Shathiel - Darkspear"] = {
-			["collapsed"] = true,
-		},
-		["Durlok - Black Dragonflight"] = {
+		["Shanyt - Argent Dawn"] = {
 			["quests"] = {
-				["num"] = 12,
+				["num"] = 22,
+				["cache"] = {
+					[62730] = {
+						["title"] = "Fruit of the Gods",
+						["zone"] = "Bastion",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[47727] = {
+						["title"] = "Tomb of Sargeras: Aegwynn's Path",
+						["zone"] = "Tomb of Sargeras",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[57462] = {
+						["title"] = "Dream Catcher",
+						["zone"] = "Professions",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[49032] = {
+						["title"] = "Antorus, the Burning Throne: Dark Passage",
+						["zone"] = "Antorus, the Burning Throne",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[57403] = {
+						["title"] = "Reconstructing \"Fear and Flesh\"",
+						["zone"] = "Visions of N'Zoth",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[56352] = {
+						["title"] = "The Eternal Palace: We Can Make It Stronger...",
+						["zone"] = "Professions",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[45381] = {
+						["title"] = "The Nighthold: Talisman of the Shal'dorei",
+						["zone"] = "The Nighthold",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[45382] = {
+						["title"] = "The Nighthold: Talisman of the Shal'dorei",
+						["zone"] = "The Nighthold",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[62371] = {
+						["state"] = "complete",
+						["title"] = "Tirna Scithe: A Warning Silence",
+						["zone"] = "Dungeon",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[62932] = {
+						["title"] = "Explore Torghast",
+						["zone"] = "The Maw",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[60267] = {
+						["state"] = "complete",
+						["title"] = "Prison of the Forgotten",
+						["zone"] = "Venthyr Campaign",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[24756] = {
+						["title"] = "Blood Infusion",
+						["zone"] = "Icecrown Citadel",
+						["level"] = 30,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[48305] = {
+						["title"] = "The Burning Coven",
+						["zone"] = "Antorus, the Burning Throne",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[44989] = {
+						["title"] = "Raising Your Sharptalon",
+						["zone"] = "Battle Pets",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[47129] = {
+						["title"] = "Tomb of Sargeras: The Deceiver",
+						["zone"] = "Tomb of Sargeras",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[57919] = {
+						["title"] = "An Abuse of Power",
+						["zone"] = "Revendreth",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[61981] = {
+						["title"] = "Replenish the Reservoir",
+						["zone"] = "Venthyr Campaign",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[60281] = {
+						["title"] = "Rule 4: Make A List",
+						["zone"] = "The Maw",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[31891] = {
+						["title"] = "Battle Pet Tamers: Kalimdor",
+						["zone"] = "Battle Pets",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[49133] = {
+						["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+						["zone"] = "Antorus, the Burning Throne",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[37548] = {
+						["title"] = "Essence of the Iron Protector",
+						["zone"] = "Talador",
+						["level"] = 40,
+						["isCalling"] = false,
+						["startMapID"] = 600,
+					},
+					[45383] = {
+						["title"] = "The Nighthold: Talisman of the Shal'dorei",
+						["zone"] = "The Nighthold",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+				},
 			},
 		},
 		["Zulbathal - Zul'jin"] = {
@@ -99,13 +261,13 @@ KalielsTrackerDB = {
 		["Jingojaggot - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Fantastiburo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 		["Darnastris - Dalaran"] = {
@@ -118,15 +280,13 @@ KalielsTrackerDB = {
 				["num"] = 22,
 			},
 		},
-		["Shanyt - Argent Dawn"] = {
+		["Durlok - Black Dragonflight"] = {
 			["quests"] = {
-				["num"] = 22,
+				["num"] = 12,
 			},
 		},
-		["Illingrath - Dalaran"] = {
-			["quests"] = {
-				["num"] = 22,
-			},
+		["Shathiel - Darkspear"] = {
+			["collapsed"] = true,
 		},
 		["Beeronimo - Dalaran"] = {
 			["collapsed"] = true,
@@ -134,14 +294,16 @@ KalielsTrackerDB = {
 		["Migimong - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Shaekhan - Argent Dawn"] = {
-			["quests"] = {
-				["num"] = 2,
-			},
-		},
-		["Narisaric - Dalaran"] = {
+		["Bathal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
+		["Fantastiburo - Argent Dawn"] = {
+			["collapsed"] = true,
+		},
+	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "4.2.12",
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",
@@ -157,49 +319,45 @@ KalielsTrackerDB = {
 		["Ruffinton - Dalaran"] = "Default",
 		["Malivant - Dalaran"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
-		["Serbitechna - Darkspear"] = "Default",
+		["Narisaric - Dalaran"] = "Default",
+		["Claugh - Runetotem"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
-		["Dialdaas - Darkspear"] = "Default",
+		["Migimong - Runetotem"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Panboozled - Runetotem"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Tyranasticus - Zul'jin"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
+		["Panboozled - Runetotem"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Brewnheimer - Darkspear"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Gillbourn - Runetotem"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
-		["Sinh - Dalaran"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Tynster - Dalaran"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+		["Brewnheimer - Darkspear"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Gillbourn - Runetotem"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Tynster - Dalaran"] = "Default",
+		["Sinh - Dalaran"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Vancard - Zul'jin"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
-		["Migimong - Runetotem"] = "Default",
-		["Claugh - Runetotem"] = "Default",
-		["Narisaric - Dalaran"] = "Default",
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "4.2.11",
+		["Dialdaas - Darkspear"] = "Default",
+		["Serbitechna - Darkspear"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

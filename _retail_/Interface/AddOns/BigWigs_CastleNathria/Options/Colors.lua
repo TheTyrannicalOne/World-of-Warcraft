@@ -162,8 +162,9 @@ BigWigs:AddColors("Sire Denathrius", {
 	[326699] = {"blue","green","red"},
 	[326707] = "purple",
 	[326851] = {"blue","red"},
-	[327039] = "blue",
+	[327039] = {"blue","orange"},
 	[327122] = "orange",
+	[327227] = "yellow",
 	[327796] = {"blue","orange"},
 	[327992] = "blue",
 	[328276] = "green",
@@ -185,4 +186,21 @@ BigWigs:AddColors("Sire Denathrius", {
 	[344776] = "yellow",
 	["hymn_stacks"] = {"blue","green"},
 	["stages"] = "green",
+})
+
+BigWigs:AddColors("Castle Nathria Trash", {
+	[325382] = {"blue","purple"},
+	[329298] = {"blue","yellow"},
+	[329989] = "orange",
+	[339525] = {"blue","orange"},
+	[339553] = "blue",
+	[339557] = "yellow",
+	[340630] = {"blue","purple"},
+	[341352] = "yellow",
+	[343155] = {"orange","red"},
+	[343302] = "orange",
+	[343316] = "yellow",
+	[343320] = "yellow",
+	[343322] = "yellow",
+	[343325] = "yellow",
 })

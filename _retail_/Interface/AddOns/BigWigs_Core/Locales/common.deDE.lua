@@ -51,8 +51,8 @@ L.add_remaining = "Add getötet, noch %d übrig"
 L.add = "Add"
 L.adds = "Adds"
 L.big_add = "Großes Add" -- singular
-L.big_adds = "Großes Adds" -- plural
-L.small_add = "Kleine Add" -- singular
+L.big_adds = "Große Adds" -- plural
+L.small_add = "Kleines Add" -- singular
 L.small_adds = "Kleine Adds" -- plural
 
 -- Mob related
@@ -78,6 +78,7 @@ L.marker_npc_desc = "Markiert %s mit %s. Benötigt Leiter oder Assistent."
 -- Ability where two players have to move close to each other
 --L.link = "Link"
 L.link_with = "Verbunden mit %s"
+L.link_with_icon = "Verbunden mit |T13700%d:0|t%s"
 L.link_short = "Verbunden: %s"
 L.link_both = "%s verbunden mit %s"
 L.link_removed = "Verbindung entfernt"
@@ -92,3 +93,5 @@ L.seconds = "%.1fs" -- 1.1 seconds
 L.laser = "Laser" -- Used for abilities that act like a laser. Usually from the boss to a player, or, from the boss to a specific area
 L.bomb = "Bombe" -- Used for debuffs that make players explode
 L.fixate = "Fixieren" -- Used when a boss or add is chasing/fixated on a player
+L.knockback = "Rückstoß" -- Used when an abily knocks players away from a certain point, like a "smash" type ability that knocks you back 10 meters
+L.traps = "Fallen" -- Used for abilities that act like traps on the floor e.g. move into it and something bad happens like you die, or are rooted, etc.
