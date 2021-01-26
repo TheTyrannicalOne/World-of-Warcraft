@@ -19,6 +19,8 @@ if L then
 
 	L.custom_on_repeating_say_laser = "重复不稳定的喷发说话"
 	L.custom_on_repeating_say_laser_desc = "重复不稳定的喷发说话信息来帮助没有看到您的第一条消息的玩家移入聊天范围。"
+
+	--L.tempPrint = "We've added health yells for Miasma. If you previously used a WeakAura for this, you might want to delete it to prevent double yells."
 end
 
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "zhCN")
@@ -137,6 +139,7 @@ if L then
 	--[[ Shriekwing -> Huntsman Altimor ]]--
 	L.gargon = "魁梧的加尔贡"
 	L.hawkeye = "纳斯利亚鹰眼射手"
+	L.overseer = "狗舍监督者"
 
 	--[[ Huntsman Altimor -> Hungering Destroyer ]]--
 	L.feaster = "恐惧吞食者"

@@ -1713,7 +1713,7 @@ local mt_state = {
             return t.now + t.offset + t.delay
 
         elseif k == "time_to_die" or k == "fight_remains" or k == "interpolated_fight_remains" then
-            if not t.boss then return 3600 end
+            -- if not t.boss then return 3600 end
             return max( 1, Hekili:GetGreatestTTD() - ( t.offset + t.delay ) )
 
         elseif k:sub(1, 12) == "time_to_pct_" then
@@ -2632,7 +2632,7 @@ local mt_default_cooldown = {
             end
         end
 
-        local raw = false
+        local raw = state.display ~= "Primary" and state.display ~= "AOE"
 
         if k:sub(1, 5) == "true_" then
             k = k:sub(6)
@@ -2778,7 +2778,7 @@ local mt_default_cooldown = {
             return ( ability.cooldown_ready == nil or ability.cooldown_ready ) and t.remains == 0
 
         -- Hunters
-        elseif k == "remains_guess" then
+        elseif k == "remains_guess" or k == "remains_expected" then
             if t.remains == t.duration then return t.remains end
 
             local lastCast = state.action[ t.key ].lastCast or 0
@@ -6429,7 +6429,7 @@ function state:TimeToReady( action, pool )
 
     if ability.id < -99 or ability.id > 0 then
         -- if not ability.castableWhileCasting and ( ability.gcd ~= "off" or ( ability.item and not ability.essence ) or not ability.interrupt ) then
-        if not ( ability.castableWhileCasting and ability.gcd == "off" ) or ( ability.item and not ability.essence ) or not ability.interrupt then
+        if ( ability.gcd ~= "off" or ability.castableWhileCasting ) or ( ability.item and not ability.essence ) then
             wait = max( wait, self.cooldown.global_cooldown.remains )
         end
 

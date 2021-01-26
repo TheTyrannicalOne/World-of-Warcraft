@@ -10,6 +10,60 @@ BigWigs3DB = {
 		["Illingrath - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
 	},
+	["namespaces"] = {
+		["BigWigs_Plugins_Alt Power"] = {
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Plugins_Wipe"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+		},
+		["BigWigs_Plugins_Victory"] = {
+		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
+		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Plugins_AltPower"] = {
+		},
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Plugins_Countdown"] = {
+		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
+		["BigWigs_Plugins_InfoBox"] = {
+		},
+		["BigWigs_Plugins_Bars"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BigWigsAnchor_width"] = 219.9998626708984,
+					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
+					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
+					["BigWigsAnchor_height"] = 15.99994277954102,
+				},
+			},
+		},
+		["BigWigs_Plugins_Super Emphasize"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["height"] = 120.0000076293945,
+					["width"] = 139.9999847412109,
+				},
+			},
+		},
+		["BigWigs_Plugins_Pull"] = {
+		},
+	},
 	["global"] = {
 		["watchedMovies"] = {
 			[926] = true,
@@ -31,62 +85,6 @@ BigWigs3DB = {
 			[-563] = true,
 		},
 	},
-	["namespaces"] = {
-		["BigWigs_Plugins_Victory"] = {
-		},
-		["BigWigs_Plugins_Alt Power"] = {
-		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Plugins_Countdown"] = {
-		},
-		["BigWigs_Plugins_AltPower"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_InfoBox"] = {
-		},
-		["BigWigs_Plugins_Bars"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BigWigsAnchor_width"] = 219.9998626708984,
-					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
-					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
-					["BigWigsAnchor_height"] = 15.99994277954102,
-				},
-			},
-		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
-		},
-		["BigWigs_Plugins_Wipe"] = {
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["height"] = 120.0000076293945,
-					["width"] = 139.9999847412109,
-				},
-			},
-		},
-		["BigWigs_Plugins_Messages"] = {
-		},
-		["BigWigs_Plugins_Pull"] = {
-		},
-		["BigWigs_Plugins_AutoReply"] = {
-		},
-	},
-	["wipe80"] = true,
-	["discord"] = 15,
 	["profiles"] = {
 		["Default"] = {
 		},

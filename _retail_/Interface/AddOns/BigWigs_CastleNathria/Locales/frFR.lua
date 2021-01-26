@@ -14,11 +14,13 @@ L = BigWigs:NewBossLocale("Hungering Destroyer", "frFR")
 if L then
 	L.miasma = "Miasme" -- Short for Gluttonous Miasma
 
-	--L.custom_on_repeating_yell_miasma = "Repeating Miasma Health Yell"
-	--L.custom_on_repeating_yell_miasma_desc = "Repeating yell messages for Gluttonous Miasma to let others know when you are below 75% health."
+	L.custom_on_repeating_yell_miasma = "Répéter Vie sous Miasme en /crier"
+	L.custom_on_repeating_yell_miasma_desc = "Répète des messages en /crier pour Miasme glouton afin d'indiquer aux autres quand vous êtes en dessous de 75% de vie."
 
-	--L.custom_on_repeating_say_laser = "Repeating Volatile Ejection Say"
-	--L.custom_on_repeating_say_laser_desc = "Repeating say messages for Volatile Ejection to help when moving into chat range of players that didn't see your first message."
+	L.custom_on_repeating_say_laser = "Répéter Expulsion instable en /dire"
+	L.custom_on_repeating_say_laser_desc = "Répète des messages en /dire pour Expulsion instable afin de vous aider quand vous vous déplacez à portée de discussion des joueurs qui n'ont pas vu votre premier message."
+
+	L.tempPrint = "Nous avons ajouté les /crier des points de vie durant le Miasme. Si vous utilisiez récemment un WeakAura pour cela, vous devriez l'enlever afin d'éviter les /crier en double."
 end
 
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "frFR")
@@ -138,6 +140,7 @@ if L then
 	--[[ Shriekwing -> Huntsman Altimor ]]--
 	L.gargon = "Gargon massif"
 	L.hawkeye = "Oeil-de-faucon nathrian"
+	L.overseer = "Surveillante des Chenils"
 
 	--[[ Huntsman Altimor -> Hungering Destroyer ]]--
 	L.feaster = "Festoyeur de l'effroi"

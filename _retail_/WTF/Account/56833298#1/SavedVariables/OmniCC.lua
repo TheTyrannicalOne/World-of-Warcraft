@@ -37,11 +37,11 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
 						},
 						["minutes"] = {
+						},
+						["seconds"] = {
 						},
 					},
 					["enableText"] = false,

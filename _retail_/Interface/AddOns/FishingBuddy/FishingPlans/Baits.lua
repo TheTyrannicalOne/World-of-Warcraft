@@ -18,6 +18,7 @@ local LastSpecialBait = nil;
 local SpecialBait = {};
 
 local SEA_SCORPION = 110292;
+local ELYSIAN_THADE = 173043;
 local Maintainable = {}
 -- Blind Lake Sturgeon, 158035
 Maintainable[110290] = {
@@ -79,35 +80,42 @@ Maintainable[139175] = {
 Maintainable[173043] = {
     ["enUS"] = "Elysian Thade Bait",
     spell = 331698,
+    continent = FBConstants.SHADOWLANDS,
+    manual = true,
 };
 Maintainable[173038] = {
     ["enUS"] = "Lost Sole Bait",
     spell = 331688,
     continent = FBConstants.SHADOWLANDS,
+    override = ELYSIAN_THADE,
 };
 Maintainable[173040] = {
     ["enUS"] = "Silvergill Pike Bait",
     spell = 331690,
     mapId = 1533,
     continent = FBConstants.SHADOWLANDS,
+    override = ELYSIAN_THADE,
 };
 Maintainable[173041] = {
     ["enUS"] = "Pocked Bonefish Bait",
     spell = 331695,
     mapId = 1536,
     continent = FBConstants.SHADOWLANDS,
+    override = ELYSIAN_THADE,
 };
 Maintainable[173039] = {
     ["enUS"] = "Iridescent Amberjack Bait",
     spell = 331692,
     mapId = 1565,
     continent = FBConstants.SHADOWLANDS,
+    override = ELYSIAN_THADE,
 };
 Maintainable[173042] = {
     ["enUS"] = "Spinefin Piranha Bait",
     spell = 331699,
     mapId = 1525,
     continent = FBConstants.SHADOWLANDS,
+    override = ELYSIAN_THADE,
 };
 
 local seascorpion = {
@@ -181,6 +189,7 @@ local seascorpion = {
 
 local overrides = {}
 overrides[SEA_SCORPION] = seascorpion;
+overrides[ELYSIAN_THADE] = {};
 
 local function CurrentSpecialBait()
     local continent, _ = FL:GetCurrentMapContinent();
@@ -198,10 +207,12 @@ end
 
 local function CheckBait(baitid)
     local baitinfo = Maintainable[baitid];
-    if (GetItemCount(baitid) > 0 and not FL:HasBuff(baitinfo.spell)) then
+    local got_bait = FL:HasBuff(baitinfo.spell)
+    if (GetItemCount(baitid) > 0 and not got_bait and not baitinfo.manual) then
         PLANS:AddEntry(baitinfo.id, baitinfo[CurLoc])
         return true
     end
+    return got_bait
 end
 
 local function SpecialBaitPlan(queue)
@@ -227,6 +238,7 @@ local function SpecialBaitPlan(queue)
                     local info = Maintainable[baitid];
                     if info.mapId and lastMap == info.mapId then
                         if info.override and overrides[info.override] then
+                            local mapId = info.mapId
                             local check = overrides[info.override];
                             if (check[mapId] and check[mapId][subzone] and CheckBait(info.override)) then
                                 return

@@ -1,10 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[56352] = {
@@ -19,16 +25,10 @@ QuestTogether = {
 				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"673/1000 Anima collected", -- [1]
+				"763/1000 Anima collected", -- [1]
 			},
 		},
 		[49133] = {
@@ -53,12 +53,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
-			["objectives"] = {
-				"2/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -70,6 +64,12 @@ QuestTogether = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -84,21 +84,15 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
 		[54453] = {
 			["title"] = "Supplies from Magni",
 			["objectives"] = {
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[60267] = {
@@ -113,11 +107,9 @@ QuestTogether = {
 				"0/1 Ripe Purian", -- [1]
 			},
 		},
-		[48305] = {
-			["title"] = "The Burning Coven",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[24756] = {
@@ -143,19 +135,14 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[45382] = {
+		[45383] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[54180] = {
 			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[37548] = {
-			["title"] = "Essence of the Iron Protector",
 			["objectives"] = {
 			},
 		},
@@ -164,10 +151,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[57462] = {
@@ -188,21 +175,22 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[45383] = {
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
+			["objectives"] = {
+			},
+		},
+		[48305] = {
+			["title"] = "The Burning Coven",
+			["objectives"] = {
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
+			},
+		},
+		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[49032] = {
@@ -211,10 +199,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 	},

@@ -1,5 +1,117 @@
 
 BigWigs3DB = {
+	["profileKeys"] = {
+		["Darnastris - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
+	},
+	["namespaces"] = {
+		["BigWigs_Bosses_Commander Sarannis"] = {
+		},
+		["BigWigs_Plugins_Alt Power"] = {
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Bosses_Warbringer O'mrogg"] = {
+		},
+		["BigWigs_Bosses_Grand Warlock Nethekurse"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Bosses_Omor the Unscarred"] = {
+		},
+		["BigWigs_Bosses_Keli'dan the Breaker"] = {
+		},
+		["BigWigs_Bosses_Warp Splinter"] = {
+		},
+		["BigWigs_Plugins_Wipe"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+		},
+		["BigWigs_Bosses_Vazruden"] = {
+		},
+		["BigWigs_Bosses_Watchkeeper Gargolmar"] = {
+		},
+		["BigWigs_Plugins_Victory"] = {
+		},
+		["BigWigs_Bosses_Mechano-Lord Capacitus"] = {
+		},
+		["BigWigs_Bosses_Gatewatcher Iron-Hand"] = {
+		},
+		["BigWigs_Bosses_Harbinger Skyriss"] = {
+		},
+		["BigWigs_Bosses_Wrath-Scryer Soccothrates"] = {
+		},
+		["BigWigs_Bosses_Dalliah the Doomsayer"] = {
+		},
+		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Bosses_Blood Guard Porung"] = {
+		},
+		["BigWigs_Bosses_The Arcatraz Trash"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Bosses_High Botanist Freywinn"] = {
+		},
+		["BigWigs_Bosses_Thorngrin the Tender"] = {
+		},
+		["BigWigs_Bosses_Zereketh the Unbound"] = {
+		},
+		["BigWigs_Plugins_Countdown"] = {
+		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
+		["BigWigs_Bosses_The Shattered Halls Trash"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
+		["BigWigs_Plugins_Pull"] = {
+		},
+		["BigWigs_Plugins_InfoBox"] = {
+		},
+		["BigWigs_Plugins_Bars"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BigWigsAnchor_width"] = 219.9998626708984,
+					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
+					["BigWigsAnchor_height"] = 15.99994277954102,
+					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
+				},
+			},
+		},
+		["BigWigs_Bosses_The Maker"] = {
+		},
+		["BigWigs_Plugins_Super Emphasize"] = {
+		},
+		["BigWigs_Bosses_Warchief Kargath Bladefist"] = {
+		},
+		["BigWigs_Bosses_Gatewatcher Gyro-Kill"] = {
+		},
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Plugins_AltPower"] = {
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["width"] = 139.9999847412109,
+					["height"] = 120.0000076293945,
+				},
+			},
+		},
+		["BigWigs_Bosses_Broggok"] = {
+		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
+		["BigWigs_Bosses_Laj"] = {
+		},
+	},
 	["global"] = {
 		["watchedMovies"] = {
 			[926] = true,
@@ -21,72 +133,6 @@ BigWigs3DB = {
 			[-1004] = true,
 		},
 	},
-	["profileKeys"] = {
-		["Darnastris - Dalaran"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Avisar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Rotclaugh - Dalaran"] = "Default",
-	},
-	["namespaces"] = {
-		["BigWigs_Plugins_Victory"] = {
-		},
-		["BigWigs_Plugins_Alt Power"] = {
-		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Plugins_Countdown"] = {
-		},
-		["BigWigs_Plugins_AltPower"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_InfoBox"] = {
-		},
-		["BigWigs_Plugins_Bars"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BigWigsAnchor_width"] = 219.9998626708984,
-					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
-					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
-					["BigWigsAnchor_height"] = 15.99994277954102,
-				},
-			},
-		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-		},
-		["BigWigs_Plugins_AutoReply"] = {
-		},
-		["BigWigs_Plugins_Pull"] = {
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["height"] = 120.0000076293945,
-					["width"] = 139.9999847412109,
-				},
-			},
-		},
-		["BigWigs_Plugins_Messages"] = {
-		},
-		["BigWigs_Plugins_Wipe"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-	},
-	["wipe80"] = true,
-	["discord"] = 15,
 	["profiles"] = {
 		["Default"] = {
 		},

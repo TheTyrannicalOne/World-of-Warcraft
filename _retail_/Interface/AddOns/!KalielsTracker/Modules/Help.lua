@@ -203,26 +203,15 @@ local function SetupTutorials()
 			shineRight = 11,
 		},
 		{	-- 11
-			text = cTitle.."         What's NEW in version |r|cffffffff4.2.12|r\n\n"..
-					cWarning.."I apologize for the delay in updating, I was in the hospital.|r\n\n"..
-
-					"- FIXED - Torghast - Error blocking UI (maybe is also fixed error loop during"..
-					offs.."1st visit)\n"..
-					"- FIXED - Scenario / Dungeon - Part of Scenarios widget is hidden\n"..
-					"- FIXED - Scenario / Dungeon - Visual bug after reload, when Scenario is"..
-					offs.."completed\n"..
-					"- FIXED - Quests - PvP tag is not displayed\n"..
-					"- FIXED - Bonus Quests - quest title sometimes does not displayed inside"..
-					offs.."dropdown menu (Blizz bug)\n"..
-					"- FIXED - Active Button - Quest item of selected Quest (with yellow POI button)"..
-					offs.."is not displayed\n"..
-					"- UPDATED - Addon support - PetTracker 9.0.7\n"..
-					"- UPDATED - Addon support - TomTom v90002-1.2.0\n"..
-					"- IMPROVED - Quests - Zone filter (static / dynamic) also filters by quest start"..
-					offs.."location\n"..
-					"- IMPROVED - Quests - Zone filter - Inside In-Between location filtering is"..
-					offs.."paused\n"..
-					"- REMOVED - Icecrown Rare Monitor\n\n"..
+			text = cTitle.."         What's NEW in version |r|cffffffff4.2.13|r\n\n"..
+					"- FIXED - Game freezing after long combat\n"..
+					"- FIXED - LUA Error after Accepting Quest, when active Auto Zone tracking"..
+					offs.."and active ElvUI\n"..
+					"- FIXED - Quest item buttons - visible during Pet Battles after some user actions\n"..
+					"- FIXED - Active Button - Quest item of selected Campaign Quest (with yellow"..
+					offs.."POI button) is not displayed\n"..
+					"- UPDATED - Options - added new Strata option \"BACKGROUND\"\n"..
+					"- UPDATED - Addon support - ElvUI 12.17, Tukui 20.14, SpartanUI 6.0.17\n\n"..
 
                     cTitle.."WoW 9.0.2 - Known issues w/o solution|r\n"..
                     "- Clicking on tracked quests or achievements has no response during combat.\n"..
