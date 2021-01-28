@@ -31,7 +31,7 @@ local C_EncounterJournal_GetSectionInfo, GetSpellInfo, GetSpellTexture, GetTime,
 local EJ_GetEncounterInfo, UnitGroupRolesAssigned = EJ_GetEncounterInfo, UnitGroupRolesAssigned
 local SendChatMessage, GetInstanceInfo, Timer, SetRaidTarget = BigWigsLoader.SendChatMessage, BigWigsLoader.GetInstanceInfo, BigWigsLoader.CTimerAfter, BigWigsLoader.SetRaidTarget
 local UnitName, UnitGUID, UnitHealth, UnitHealthMax = BigWigsLoader.UnitName, BigWigsLoader.UnitGUID, BigWigsLoader.UnitHealth, BigWigsLoader.UnitHealthMax
-local UnitDetailedThreatSituation = UnitDetailedThreatSituation
+local UnitDetailedThreatSituation = BigWigsLoader.UnitDetailedThreatSituation
 local format, find, gsub, band, tremove, wipe = string.format, string.find, string.gsub, bit.band, table.remove, table.wipe
 local select, type, next, tonumber = select, type, next, tonumber
 local C = core.C
@@ -242,6 +242,23 @@ end
 -- @return true or nil
 function boss:IsEngaged()
 	return self.isEngaged
+end
+
+--- Check what stage of the encounter the module is set to.
+-- @return number
+function boss:GetStage()
+	return self.stage
+end
+
+--- Set a module to a specific stage of the encounter
+-- @number stage the stage to set the module to
+function boss:SetStage(stage)
+	if stage > 0 then
+		self.stage = stage
+		if self:IsEngaged() then
+			self:SendMessage("BigWigs_SetStage", self, stage)
+		end
+	end
 end
 
 function boss:Initialize() core:RegisterBossModule(self) end
@@ -1389,12 +1406,23 @@ function boss:Tank(unit)
 	end
 end
 
---- Check if you are tanking a unit.
--- @string targetUnit check if you are currently tanking this unit
--- @string[opt="player"] sourceUnit check if a different player is currently tanking the targetUnit
+--- Check if you are tanking a specific NPC unit.
+-- @string targetUnit the unit token of the NPC you wish to check
+-- @string[opt="player"] sourceUnit If a player unit is specified, this unit will be checked to see if they are tanking, otherwise use nil to check yourself
 -- @return boolean
 function boss:Tanking(targetUnit, sourceUnit)
 	return UnitDetailedThreatSituation(sourceUnit or "player", targetUnit)
+end
+
+--- Check if you have the highest threat on a specific NPC unit.
+-- @string targetUnit the unit token of the NPC you wish to check
+-- @string[opt="player"] sourceUnit the specific unit you want to check the threat level of, otherwise use nil to check yourself
+-- @return boolean
+function boss:TopThreat(targetUnit, sourceUnit)
+	local _, status = UnitDetailedThreatSituation(sourceUnit or "player", targetUnit)
+	if status == 1 or status == 3 then
+		return true
+	end
 end
 
 --- Check if your talent tree role is HEALER.

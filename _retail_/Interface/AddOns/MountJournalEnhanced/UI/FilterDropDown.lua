@@ -12,9 +12,10 @@ local SETTING_FACTION = "faction"
 local SETTING_FAMILY = "family"
 local SETTING_EXPANSION = "expansion"
 local SETTING_HIDDEN = "hidden"
+local SETTING_HIDDEN_INGAME = "hiddenIngame"
 local SETTING_SORT = "sort"
 
-local function CreateFilterInfo(text, filterKey, filterSettings, callback)
+local function CreateFilterInfo(text, filterKey, filterSettings, toggleButtons)
     local info = {
         keepShownOnClick = true,
         isNotRadio = true,
@@ -31,14 +32,23 @@ local function CreateFilterInfo(text, filterKey, filterSettings, callback)
         info.checked = function(self)
             return self.arg1[filterKey]
         end
-        info.func = function(_, arg1, arg2, value)
+        info.func = function(self, arg1, arg2, value)
             arg1[filterKey] = arg2 or value
             ADDON:UpdateIndex()
             MountJournal_UpdateMountList()
             UIDropDownMenu_RefreshAll(_G[ADDON_NAME .. "FilterMenu"])
 
-            if callback then
-                callback(value)
+            if toggleButtons then
+                local name = self:GetName()
+                local x = tonumber(string.match(name, "%d+"))
+                local y = tonumber(string.match(name, "%d+$"))
+                for _, toggleNext in ipairs(toggleButtons) do
+                    if value then
+                        UIDropDownMenu_EnableButton(x, y + toggleNext)
+                    else
+                        UIDropDownMenu_DisableButton(x, y + toggleNext)
+                    end
+                end
             end
         end
     else
@@ -172,19 +182,24 @@ local function ShouldDisplayFamily(spellIds)
     return false
 end
 
+local function HasUserHiddenMounts()
+    for _, value in pairs(ADDON.settings.hiddenMounts) do
+        if value == true then
+            return true
+        end
+    end
+
+    return false
+end
+
 local function InitializeFilterDropDown(filterMenu, level)
     local info
 
-    if (level == 1) then
-        info = CreateFilterInfo(COLLECTED, SETTING_COLLECTED, nil, function(value)
-            if (value) then
-                UIDropDownMenu_EnableButton(1, 2)
-                UIDropDownMenu_EnableButton(1, 3)
-            else
-                UIDropDownMenu_DisableButton(1, 2)
-                UIDropDownMenu_DisableButton(1, 3)
-            end
-        end)
+    if level == 1 then
+        UIDropDownMenu_AddButton(CreateFilterCategory(CLUB_FINDER_SORT_BY, SETTING_SORT), level)
+        UIDropDownMenu_AddSpace(level)
+
+        info = CreateFilterInfo(COLLECTED, SETTING_COLLECTED, nil, { 1, 2 })
         UIDropDownMenu_AddButton(info, level)
 
         info = CreateFilterInfo(FAVORITES_FILTER, SETTING_ONLY_FAVORITES)
@@ -196,9 +211,19 @@ local function InitializeFilterDropDown(filterMenu, level)
         info.disabled = not ADDON.settings.filter.collected
         UIDropDownMenu_AddButton(info, level)
 
-        UIDropDownMenu_AddButton(CreateFilterInfo(NOT_COLLECTED, SETTING_NOT_COLLECTED), level)
+        info = CreateFilterInfo(NOT_COLLECTED, SETTING_NOT_COLLECTED, nil, { 1 })
+        UIDropDownMenu_AddButton(info, level)
+        info = CreateFilterInfo(L.FILTER_SECRET, SETTING_HIDDEN_INGAME)
+        info.leftPadding = 16
+        info.disabled = not ADDON.settings.filter.notCollected
+        UIDropDownMenu_AddButton(info, level)
+
         UIDropDownMenu_AddButton(CreateFilterInfo(L["Only tradable"], SETTING_ONLY_TRADABLE), level)
-        UIDropDownMenu_AddButton(CreateFilterInfo(L["Hidden"], SETTING_HIDDEN), level)
+
+        if ADDON.settings.filter[SETTING_HIDDEN] or HasUserHiddenMounts() then
+            UIDropDownMenu_AddButton(CreateFilterInfo(L["Hidden"], SETTING_HIDDEN), level)
+        end
+
         UIDropDownMenu_AddSpace(level)
 
         UIDropDownMenu_AddButton(CreateFilterCategory(SOURCES, SETTING_SOURCE), level)
@@ -216,12 +241,7 @@ local function InitializeFilterDropDown(filterMenu, level)
             MountJournal_UpdateMountList()
         end
         UIDropDownMenu_AddButton(info, level)
-
-        if ADDON.settings.ui.enableSortOptions then
-            UIDropDownMenu_AddSpace(level)
-            UIDropDownMenu_AddButton(CreateFilterCategory(CLUB_FINDER_SORT_BY, SETTING_SORT), level)
-        end
-    elseif (UIDROPDOWNMENU_MENU_VALUE == SETTING_SOURCE) then
+    elseif UIDROPDOWNMENU_MENU_VALUE == SETTING_SOURCE then
         local settings = ADDON.settings.filter[SETTING_SOURCE]
         AddCheckAllAndNoneInfo(settings, level)
         UIDropDownMenu_AddButton(CreateFilterInfo(BATTLE_PET_SOURCE_1, "Drop", settings), level)
@@ -231,11 +251,7 @@ local function InitializeFilterDropDown(filterMenu, level)
         UIDropDownMenu_AddButton(CreateFilterInfo(INSTANCE, "Instance", settings), level)
         UIDropDownMenu_AddButton(CreateFilterInfo(REPUTATION, "Reputation", settings), level)
         UIDropDownMenu_AddButton(CreateFilterInfo(BATTLE_PET_SOURCE_6, "Achievement", settings), level)
-
-        if select(4, GetBuildInfo()) >= 90000 then
-            UIDropDownMenu_AddButton(CreateFilterInfo(GetCategoryInfo(15441), "Covenants", settings), level)
-        end
-
+        UIDropDownMenu_AddButton(CreateFilterInfo(GetCategoryInfo(15441), "Covenants", settings), level)
         UIDropDownMenu_AddButton(CreateFilterInfo(ISLANDS_HEADER, "Island Expedition", settings), level)
         UIDropDownMenu_AddButton(CreateFilterInfo(GARRISON_LOCATION_TOOLTIP, "Garrison", settings), level)
         UIDropDownMenu_AddButton(CreateFilterInfo(PVP, "PVP", settings), level)
@@ -310,9 +326,28 @@ local function InitializeFilterDropDown(filterMenu, level)
         UIDropDownMenu_AddButton(CreateFilterRadio(NAME, "by", settings, 'name'), level)
         UIDropDownMenu_AddButton(CreateFilterRadio(TYPE, "by", settings, 'type'), level)
         UIDropDownMenu_AddButton(CreateFilterRadio(EXPANSION_FILTER_TEXT, "by", settings, 'expansion'), level)
+
+        local trackingEnabled = ADDON.settings.trackUsageStats
+        info = CreateFilterRadio(L.SORT_BY_USAGE_COUNT, "by", settings, 'usage_count')
+        info.disabled = not trackingEnabled
+        UIDropDownMenu_AddButton(info, level)
+        info = CreateFilterRadio(L.SORT_BY_LAST_USAGE, "by", settings, 'last_usage')
+        info.disabled = not trackingEnabled
+        UIDropDownMenu_AddButton(info, level)
+        info = CreateFilterRadio(L.SORT_BY_LEARNED_DATE, "by", settings, 'learned_date')
+        info.disabled = not trackingEnabled
+        UIDropDownMenu_AddButton(info, level)
+        info = CreateFilterRadio(L.SORT_BY_TRAVEL_DURATION, "by", settings, 'travel_duration')
+        info.disabled = not trackingEnabled
+        UIDropDownMenu_AddButton(info, level)
+        info = CreateFilterRadio(L.SORT_BY_TRAVEL_DISTANCE, "by", settings, 'travel_distance')
+        info.disabled = not trackingEnabled
+        UIDropDownMenu_AddButton(info, level)
+
         UIDropDownMenu_AddSpace(level)
         UIDropDownMenu_AddButton(CreateFilterInfo(L.SORT_REVERSE, 'descending', settings), level)
         UIDropDownMenu_AddButton(CreateFilterInfo(L.SORT_FAVORITES_FIRST, 'favoritesOnTop', settings), level)
+        UIDropDownMenu_AddButton(CreateFilterInfo(L.SORT_UNUSABLE_BOTTOM, 'unusableToBottom', settings), level)
         UIDropDownMenu_AddButton(CreateFilterInfo(L.SORT_UNOWNED_BOTTOM, 'unownedOnBottom', settings), level)
         UIDropDownMenu_AddSpace(level)
 

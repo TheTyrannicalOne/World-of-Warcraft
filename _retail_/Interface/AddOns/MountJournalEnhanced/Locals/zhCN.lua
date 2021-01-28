@@ -11,6 +11,8 @@ L["Black Market"] = "黑市"
 L["Family"] = "系列"
 L["FAVOR_DISPLAYED"] = "全部显示"
 L["FAVOR_PER_CHARACTER"] = "每角色"
+--[[Translation missing --]]
+--[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
 L["Flying"] = "飞行"
 L["Ground"] = "陆行"
 L["Hidden"] = "隐藏"
@@ -20,9 +22,21 @@ L["Reset filters"] = "重置过滤器"
 L["ROTATE_DOWN"] = "向下旋转"
 L["ROTATE_UP"] = "向上旋转"
 L["Show in Collections"] = "在收集中显示"
+--[[Translation missing --]]
+--[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_TRAVEL_DISTANCE"] = "Travelled distance"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
 L["SORT_FAVORITES_FIRST"] = "收藏优先"
 L["SORT_REVERSE"] = "反向排序"
 L["SORT_UNOWNED_BOTTOM"] = "未收集在底部"
+--[[Translation missing --]]
+--[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
 L["TASK_END"] = "[MJE] 唷！完成了。"
 L["TASK_FAVOR_START"] = "[MJE] 正在给你的坐骑重新标星收藏。请等待一会儿直到完成。"
 L["Transform"] = "变形"
@@ -32,7 +46,6 @@ L["Underwater"] = "水中"
 L["SETTING_ACHIEVEMENT_POINTS"] = "显示成就点"
 L["SETTING_COMPACT_LIST"] = "紧凑坐骑列表"
 L["SETTING_CURSOR_KEYS"] = "启用上下键浏览坐骑"
-L["SETTING_CUSTOM_SORT_OPTIONS"] = "启用更多排序选项"
 L["SETTING_FAVORITE_PER_CHAR"] = "每角色坐骑收藏"
 L["SETTING_HEAD_BEHAVIOUR"] = "行为"
 L["SETTING_MOUNT_COUNT"] = "显示个人坐骑数量"
@@ -41,6 +54,8 @@ L["SETTING_PERSONAL_FILTER"] = "仅对这个角色应用过滤器"
 L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "仅对这个角色应用坐骑隐藏"
 L["SETTING_PERSONAL_UI"] = "仅对这个角色应用界面设置"
 L["SETTING_PREVIEW_LINK"] = "在坐骑预览中显示收集按钮"
+--[[Translation missing --]]
+--[[ L["SETTING_SEARCH_MORE"] = "Search also in description text"--]] 
 L["SETTING_SHOP_BUTTON"] = "在未学习的商店坐骑上显示购买按钮"
 L["SETTING_SHOW_USAGE"] = "显示坐骑使用统计"
 L["SETTING_TRACK_USAGE"] = "跟踪所有角色的坐骑使用行为"

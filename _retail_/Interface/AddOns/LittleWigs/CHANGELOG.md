@@ -1,8 +1,7 @@
 # LittleWigs
 
-## [v9.0.22](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.22) (2021-01-23)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.21...v9.0.22) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
+## [v9.0.23](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.23) (2021-01-27)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.22...v9.0.23) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
 
-- Cleanups  
-- Update option and locale files  
-- Shadowlands/TheaterOfPain: Enable Trash module (#566)  
+- Shadowlands/SpiresOfAscension/KinTara: Fallback to emote-scanning when Kin-Tara is about to cast "Charged Spear" while targetting a tank  
+- Cleanup  

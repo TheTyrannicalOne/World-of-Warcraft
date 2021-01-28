@@ -154,7 +154,8 @@ BigWigs:AddColors("Stone Legion Generals", {
 	[342985] = "cyan",
 	[343063] = "blue",
 	[344496] = {"blue","red"},
-	["stages"] = "cyan",
+	["commando"] = "cyan",
+	["goliath"] = "cyan",
 })
 
 BigWigs:AddColors("Sire Denathrius", {

@@ -39,6 +39,7 @@ GrailDatabase = {
 				"enUS|36949|53256|Arathi Donations: Deadly Solstone", -- [34]
 				"enUS|37176|62568|Adventurers Wanted: Chromie's Call", -- [35]
 				"enUS|37176|53248|Arathi Donations: Battle Flag: Phalanx Defense", -- [36]
+				"enUS|37176|53263|Arathi Donations: Grilled Catfish", -- [37]
 			},
 			["OBJECT_NAME"] = {
 				"33941|enUS|282723|X-53 Touring Rocket", -- [1]
@@ -9323,6 +9324,13 @@ GrailDatabase = {
 				"37176|enUS|54649|L3289855", -- [7559]
 				"37176|enUS|28678|T:3000096", -- [7560]
 				"37176|enUS|35572|T:17307", -- [7561]
+				"37176|enUS|46844|K262208", -- [7562]
+				"37176|enUS|60456|P:a60456", -- [7563]
+				"37176|enUS|56120|A:-590", -- [7564]
+				"37176|enUS|48642|L3947775", -- [7565]
+				"37176|enUS|30738|L2302975", -- [7566]
+				"37176|enUS|55466|L3947775", -- [7567]
+				"37176|enUS|51039|A:-875", -- [7568]
 			},
 		},
 		["delayEventsHandled"] = true,

@@ -11,6 +11,8 @@ L["Black Market"] = "Mercado Negro"
 L["Family"] = "Família"
 L["FAVOR_DISPLAYED"] = "Exibir todos"
 L["FAVOR_PER_CHARACTER"] = "Por personagem"
+--[[Translation missing --]]
+--[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
 L["Flying"] = "Voador"
 L["Ground"] = "Terrestre"
 L["Hidden"] = "Oculto"
@@ -20,9 +22,21 @@ L["Reset filters"] = "Resetar filtros "
 L["ROTATE_DOWN"] = "Girar para Baixo"
 L["ROTATE_UP"] = "Girar para Cima"
 L["Show in Collections"] = "Mostrar nas Coleções"
+--[[Translation missing --]]
+--[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_TRAVEL_DISTANCE"] = "Travelled distance"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
 L["SORT_FAVORITES_FIRST"] = "Favoritos Primeiro"
 L["SORT_REVERSE"] = "Ordem Inversa"
 L["SORT_UNOWNED_BOTTOM"] = "Não aprendidos por último"
+--[[Translation missing --]]
+--[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
 L["TASK_END"] = "[MJE] Ufa! Terminei."
 L["TASK_FAVOR_START"] = "[MJE] Reaplicando estrelas em todas as suas montagens. Por favor, espere alguns segundos até eu terminar."
 L["Transform"] = "Transformar"
@@ -32,7 +46,6 @@ L["Underwater"] = "Embaixo d'água "
 L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar Pontos de Conquista"
 L["SETTING_COMPACT_LIST"] = "Lista de Montarias Compacta"
 L["SETTING_CURSOR_KEYS"] = "Ativar as teclas para cima e para baixo para navegar pelas montarias"
-L["SETTING_CUSTOM_SORT_OPTIONS"] = "Habilitar mais opções de classificação"
 L["SETTING_FAVORITE_PER_CHAR"] = "Montarias favoritas por personagem"
 L["SETTING_HEAD_BEHAVIOUR"] = "Comportamento"
 L["SETTING_MOUNT_COUNT"] = "Mostrar contagem de montaria pessoal"
@@ -41,6 +54,8 @@ L["SETTING_PERSONAL_FILTER"] = "Aplicar filtros apenas para este personagem"
 L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Aplicar montarias ocultas apenas para este personagem"
 L["SETTING_PERSONAL_UI"] = "Aplicar configurações de inferface apenas para este personagem"
 L["SETTING_PREVIEW_LINK"] = "Mostrar Botão de Coleção na pré-visualização de montaria"
+--[[Translation missing --]]
+--[[ L["SETTING_SEARCH_MORE"] = "Search also in description text"--]] 
 L["SETTING_SHOP_BUTTON"] = "Mostrar o botão de loja em montarias de loja não aprendidas"
 L["SETTING_SHOW_USAGE"] = "Exibir estatísticas de uso de montarias"
 L["SETTING_TRACK_USAGE"] = "Rastreie o comportamento de uso da montaria em todos os personagens"

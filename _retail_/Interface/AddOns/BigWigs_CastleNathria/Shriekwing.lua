@@ -7,6 +7,7 @@ if not mod then return end
 mod:RegisterEnableMob(164406) -- Shriekwing
 mod.engageId = 2398
 mod.respawnTime = 30
+mod:SetStage(1)
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -101,6 +102,7 @@ function mod:OnEngage()
 	echolocationCount = 1
 	blindSwipeCount = 1
 	waveofBloodCount = 1
+	self:SetStage(1)
 
 	self:CDBar(328857, 8) -- Exsanguinating Bite
 	self:CDBar(345397, 13, CL.count:format(self:SpellName(345397), waveofBloodCount)) -- Wave of Blood
@@ -197,8 +199,7 @@ end
 function mod:ExsanguinatingBite(args)
 	for i = 1, #tankList do
 		local unit = tankList[i]
-		local _, status = UnitDetailedThreatSituation(unit, "boss1")
-		if status == 1 or status == 3 then
+		if self:TopThreat("boss1", unit) then
 			self:TargetMessage(args.spellId, "purple", self:UnitName(unit), CL.casting:format(args.spellName))
 			break
 		elseif i == #tankList then
@@ -227,6 +228,7 @@ end
 
 -- Stage Two - Terror of Castle Nathria
 function mod:BloodShroud(args)
+	self:SetStage(2)
 	self:Message(328921, "green")
 	self:PlaySound(328921, "long")
 
@@ -260,6 +262,7 @@ function mod:EchoingSonar(args)
 end
 
 function mod:BloodShroudRemoved(args)
+	self:SetStage(1)
 	self:Message("stages", "green", CL.stage:format(1), false)
 	self:PlaySound("stages", "info")
 

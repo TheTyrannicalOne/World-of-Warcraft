@@ -1,10 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[43179] = {
@@ -23,6 +23,23 @@ QuestTogether = {
 			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
 				"3/4 Fragment of the Guardian's Seal", -- [1]
+			},
+		},
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
+		[56120] = {
+			["title"] = "The Unshackled",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[61981] = {
@@ -66,33 +83,28 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-			},
-		},
 		[53435] = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[54453] = {
-			["title"] = "Supplies from Magni",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[60267] = {
@@ -107,9 +119,11 @@ QuestTogether = {
 				"0/1 Ripe Purian", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[48305] = {
+			["title"] = "The Burning Coven",
 			["objectives"] = {
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[24756] = {
@@ -125,22 +139,6 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
-			},
-		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
@@ -151,22 +149,20 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"1/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
-		[57462] = {
-			["title"] = "Dream Catcher",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
-			},
-		},
-		[62371] = {
-			["title"] = "Tirna Scithe: A Warning Silence",
-			["objectives"] = {
-				"1/1 Tred'ova slain", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[57403] = {
@@ -175,22 +171,22 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[57462] = {
+			["title"] = "Dream Catcher",
 			["objectives"] = {
+				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[48305] = {
-			["title"] = "The Burning Coven",
-			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
-			},
-		},
-		[45381] = {
+		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[62371] = {
+			["title"] = "Tirna Scithe: A Warning Silence",
+			["objectives"] = {
+				"1/1 Tred'ova slain", -- [1]
 			},
 		},
 		[49032] = {
@@ -199,10 +195,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 	},

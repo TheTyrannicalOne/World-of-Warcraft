@@ -19,7 +19,7 @@ local ldbi = LibStub("LibDBIcon-1.0")
 -- Generate our version variables
 --
 
-local BIGWIGS_VERSION = 208
+local BIGWIGS_VERSION = 209
 local BIGWIGS_RELEASE_STRING, BIGWIGS_VERSION_STRING = "", ""
 local versionQueryString, versionResponseString = "Q^%d^%s^%d^%s", "V^%d^%s^%d^%s"
 local customGuildName = false
@@ -34,7 +34,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "b1e519f" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "187d098" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[=[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -82,7 +82,7 @@ end
 --
 
 local tooltipFunctions = {}
-local next, tonumber, strsplit = next, tonumber, strsplit
+local next, tonumber, type, strsplit = next, tonumber, type, strsplit
 local SendAddonMessage, Ambiguate, CTimerAfter, CTimerNewTicker = C_ChatInfo.SendAddonMessage, Ambiguate, C_Timer.After, C_Timer.NewTicker
 local GetInstanceInfo, GetBestMapForUnit, GetMapInfo = GetInstanceInfo, C_Map.GetBestMapForUnit, C_Map.GetMapInfo
 local UnitName, UnitGUID = UnitName, UnitGUID
@@ -100,6 +100,7 @@ public.UnitGUID = UnitGUID
 public.SetRaidTarget = SetRaidTarget
 public.UnitHealth = UnitHealth
 public.UnitHealthMax = UnitHealthMax
+public.UnitDetailedThreatSituation = UnitDetailedThreatSituation
 
 -- Version
 local usersHash = {}
@@ -954,13 +955,20 @@ do
 		end
 	end
 
+	local pcall, geterrorhandler = pcall, geterrorhandler
 	function public:SendMessage(msg, ...)
 		if callbackMap[msg] then
 			for k,v in next, callbackMap[msg] do
 				if type(v) == "function" then
-					v(msg, ...)
+					local success, errorMsg = pcall(v, msg, ...)
+					if not success then
+						geterrorhandler()(("BigWigs: One of your addons caused an error on the %q callback:\n%s"):format(msg, errorMsg))
+					end
 				else
-					k[v](k, msg, ...)
+					local success, errorMsg = pcall(k[v], k, msg, ...)
+					if not success then
+						geterrorhandler()(("BigWigs: One of your addons caused an error on the %q callback:\n%s"):format(msg, errorMsg))
+					end
 				end
 			end
 		end
@@ -985,9 +993,9 @@ end
 --
 
 do
-	local DBMdotRevision = "20210119152747" -- The changing version of the local client, changes with every new zip using the project-date-integer packager replacement.
-	local DBMdotDisplayVersion = "9.0.18" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration.
-	local DBMdotReleaseRevision = "20210119000000" -- Hardcoded time, manually changed every release, they use it to track the highest release version, a new DBM release is the only time it will change.
+	local DBMdotRevision = "20210127052658" -- The changing version of the local client, changes with every new zip using the project-date-integer packager replacement.
+	local DBMdotDisplayVersion = "9.0.19" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration.
+	local DBMdotReleaseRevision = "20210127000000" -- Hardcoded time, manually changed every release, they use it to track the highest release version, a new DBM release is the only time it will change.
 
 	local timer, prevUpgradedUser = nil, nil
 	local function sendMsg()
