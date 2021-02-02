@@ -1,8 +1,8 @@
 
 PetTracker_Sets = {
-	["tutorial"] = 9,
-	["mapSearch"] = "",
-	["hideSpecies"] = true,
 	["rivalHistory"] = {
 	},
+	["mapSearch"] = "",
+	["tutorial"] = 9,
+	["hideSpecies"] = true,
 }

@@ -1,16 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[56352] = {
@@ -19,16 +19,10 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
-			},
-		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[57567] = {
@@ -36,16 +30,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"763/1000 Anima collected", -- [1]
+				"853/1000 Anima collected", -- [1]
 			},
 		},
 		[49133] = {
@@ -70,6 +58,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"3/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -87,6 +81,12 @@ QuestTogether = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[50604] = {
+			["title"] = "Tortollan Seekers",
+			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[50606] = {
@@ -111,6 +111,18 @@ QuestTogether = {
 			["title"] = "Prison of the Forgotten",
 			["objectives"] = {
 				"1/1 Speak with Ve'nari", -- [1]
+			},
+		},
+		[14142] = {
+			["title"] = "You've Really Done It This Time, Kul",
+			["objectives"] = {
+				"1/1 Kul the Reckless rescued", -- [1]
+				"4/4 Captive Aspirant rescued", -- [2]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[62730] = {
@@ -149,10 +161,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[57462] = {
+			["title"] = "Dream Catcher",
 			["objectives"] = {
-				"1/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"28/200 Shred of Insanity", -- [1]
 			},
 		},
 		[31891] = {
@@ -171,16 +183,10 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[57462] = {
-			["title"] = "Dream Catcher",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
-			},
-		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[62371] = {
@@ -189,23 +195,29 @@ QuestTogether = {
 				"1/1 Tred'ova slain", -- [1]
 			},
 		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+			},
+		},
 		[49032] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

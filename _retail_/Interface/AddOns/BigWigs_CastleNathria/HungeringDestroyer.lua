@@ -18,7 +18,8 @@ local consumeCount = 1
 local expungeCount = 1
 local desolateCount = 1
 local overwhelmCount = 1
-local miasmaMarkClear = {}
+local miasmaPlayerList = {}
+local volEjectionList = {}
 local scheduledChatMsg = false
 local volEjectionOnMe = false
 local miasmaOnMe = false
@@ -103,17 +104,18 @@ function mod:OnEngage()
 	scheduledChatMsg = false
 	volEjectionOnMe = false
 	miasmaOnMe = false
+	volEjectionList = {}
 
 	self:Bar(329298, 3, CL.count:format(L.miasma, miasmaCount)) -- Gluttonous Miasma
 	if self:Easy() then
 		self:Bar(329774, 5.3) -- Overwhelm
-		self:Bar(334266, 10.6, CL.count:format(self:SpellName(334266), volatileCount)) -- Volatile Ejection
+		self:Bar(334266, 10.6, CL.count:format(CL.beam, volatileCount)) -- Volatile Ejection
 		self:Bar(329455, 23.2, CL.count:format(self:SpellName(329455), desolateCount)) -- Desolate
 		self:Bar(329725, 35.7, CL.count:format(self:SpellName(329725), expungeCount)) -- Expunge
 		self:Bar(334522, 93.7, CL.count:format(self:SpellName(334522), consumeCount)) -- Consume
 	else
 		self:Bar(329774, 5) -- Overwhelm
-		self:Bar(334266, 10, CL.count:format(self:SpellName(334266), volatileCount)) -- Volatile Ejection
+		self:Bar(334266, 10, CL.count:format(CL.beam, volatileCount)) -- Volatile Ejection
 		self:Bar(329455, 22, CL.count:format(self:SpellName(329455), desolateCount)) -- Desolate
 		self:Bar(329725, 32, CL.count:format(self:SpellName(329725), expungeCount)) -- Expunge
 		self:Bar(334522, 89, CL.count:format(self:SpellName(334522), consumeCount)) -- Consume
@@ -132,15 +134,22 @@ function mod:OnBossDisable()
 	volEjectionOnMe = false -- Compensate for the boss dieing mid cast
 	miasmaOnMe = false
 	if self:GetOption(gluttonousMiasmaMarker) then
-		for i = 1, #miasmaMarkClear do
-			local n = miasmaMarkClear[i]
+		for i = 1, #miasmaPlayerList do
+			local name = miasmaPlayerList[i]
 			-- Clearing marks on _REMOVED doesn't work great on this boss
 			-- The second set of marks is applied before the first is removed
 			-- When trying to remove the first set of marks it can clear the second set
-			self:CustomIcon(gluttonousMiasmaMarker, n)
+			self:CustomIcon(false, name)
 		end
-		miasmaMarkClear = {}
 	end
+	miasmaPlayerList = {}
+	if self:GetOption(volatileEjectionMarker) then -- Compensate for the boss dieing mid cast
+		for i = 1, #volEjectionList do
+			local name = volEjectionList[i]
+			self:CustomIcon(false, name)
+		end
+	end
+	volEjectionList = {}
 end
 
 --------------------------------------------------------------------------------
@@ -169,12 +178,20 @@ local function RepeatingChatMessages()
 end
 
 do
-	local playerList, playerIcons = mod:NewTargetList(), {}
+	local prev = 0
 	function mod:GluttonousMiasmaApplied(args)
 		if self:MobId(args.sourceGUID) == 164261 then -- Boss only, filter trash
-			local count = #playerList+1
-			playerList[count] = args.destName
-			playerIcons[count] = count
+			local t = args.time
+			if t-prev > 3 then
+				prev = t
+				miasmaPlayerList = {}
+				miasmaCount = miasmaCount + 1
+				self:Bar(args.spellId, 24, CL.count:format(L.miasma, miasmaCount))
+			end
+
+			local count = #miasmaPlayerList+1
+			miasmaPlayerList[count] = args.destName
+			miasmaPlayerList[args.destName] = count -- Set raid marker
 			if self:Me(args.destGUID) then
 				miasmaOnMe = true
 				self:Yell(args.spellId, CL.count_rticon:format(L.miasma, count, count))
@@ -185,13 +202,7 @@ do
 				end
 			end
 			self:CustomIcon(gluttonousMiasmaMarker, args.destName, count)
-			if count == 1 then
-				miasmaMarkClear = {}
-				miasmaCount = miasmaCount + 1
-				self:Bar(args.spellId, 24, CL.count:format(L.miasma, miasmaCount))
-			end
-			miasmaMarkClear[count] = args.destName -- For clearing marks OnBossDisable
-			self:TargetsMessage(args.spellId, "yellow", playerList, nil, CL.count:format(L.miasma, miasmaCount-1), nil, nil, playerIcons)
+			self:NewTargetsMessage(args.spellId, "yellow", miasmaPlayerList, nil, CL.count:format(L.miasma, miasmaCount-1))
 		end
 	end
 
@@ -266,12 +277,11 @@ end
 -- end
 
 do
-	local playerList = {}
 	local function addPlayerToList(self, name)
-		if not tContains(playerList, name) then
-			local count = #playerList+1
-			playerList[count] = name
-			self:TargetsMessage(334266, "orange", self:ColorName(playerList), self:Mythic() and 5 or 3, CL.beam, nil, 2)
+		if not tContains(volEjectionList, name) then
+			local count = #volEjectionList+1
+			volEjectionList[count] = name
+			self:NewTargetsMessage(334266, "orange", volEjectionList, self:Mythic() and 5 or 3, CL.beam, nil, 2)
 			self:CustomIcon(volatileEjectionMarker, name, count+4)
 		end
 	end
@@ -307,11 +317,12 @@ do
 
 	function mod:VolatileEjectionSuccess()
 		if self:GetOption(volatileEjectionMarker) then
-			for _, name in pairs(playerList) do
-				self:CustomIcon(volatileEjectionMarker, name)
+			for i = 1, #volEjectionList do
+				local name = volEjectionList[i]
+				self:CustomIcon(false, name)
 			end
 		end
-		playerList = {}
+		volEjectionList = {}
 		volEjectionOnMe = false
 	end
 end
