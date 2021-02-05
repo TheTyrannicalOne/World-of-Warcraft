@@ -4,6 +4,7 @@ local AllHearthToyIndex = {} --All the toys
 local UsableHearthToyIndex = {} --Usable toys
 local RHTIndex = false --Macro index
 RHT = {} --Setup for button and timeout frame
+local RHTInitialized = false
 
 -- Setting up an invisible button named RHTB.  Toys can only be used through a button click, so we need one for the macro to click.
 local frame = CreateFrame("Frame")
@@ -16,12 +17,17 @@ RHT.to:SetScript("OnUpdate", function (self, elapse)
 	if timeOut > 0 then
 		timeOut = timeOut - elapse
 	else
-		if C_ToyBox.GetNumFilteredToys() then
-			SetRandomHearthToy()
-			print "RHT initialized"
-			RHT.to:SetScript("OnUpdate", nil)
+		if C_ToyBox.GetNumToys() > 0 then
+			GetLearnedStones()
+			if RHTInitialized then
+				SetRandomHearthToy()
+				print "RHT initialized"
+				RHT.to:SetScript("OnUpdate", nil)
+			else
+				timeOut = 1
+			end
 		else
-			timeOut = 10
+			timeOut = 1
 		end
 	end
 end)
@@ -65,7 +71,8 @@ AllHearthToyIndex[54452]  = 75136   --Ethereal
 AllHearthToyIndex[93672]  = 136508  --Dark Portal
 AllHearthToyIndex[168907] = 298068 --Holographic Digitalization
 AllHearthToyIndex[172179] = 308742 --Eternal Traveler
-AllHearthToyIndex[182773] = 340200 --Necrolord
+--Necrolords have to be special, can't use it unless you are one.  Also, covenant check can't occur until fully loaded; moving this to check along stone checking.
+--AllHearthToyIndex[182773] = 340200 --Necrolord
 AllHearthToyIndex[180290] = 326064 --Night Fae
 AllHearthToyIndex[184353] = 345393 --Kyrian
 AllHearthToyIndex[183716] = 342122 --Venthyr
@@ -77,7 +84,7 @@ function SetRandomHearthToy()
 		-- Find the macro.
 		CheckMacroIndex()
 		-- Rebuild the stone list if it's empty.
-		while next(UsableHearthToyIndex) == nil do
+		if next(UsableHearthToyIndex) == nil then
 			GetLearnedStones()
 		end		
 		local itemID, toyName = ''
@@ -97,6 +104,10 @@ end
 
 -- Get stones learned and usable by character
 function GetLearnedStones()
+	-- Checking to see if we're a Necrolord. We should be fully loaded by now since we're wating for the ToyBox to load.
+	if C_Covenants.GetActiveCovenantID() == 4 then
+		AllHearthToyIndex[182773] = 340200 --Necrolord
+	end
 	-- Get the current setting for the toybox so we can set it back after we're done.
 	ToyCollSetting = C_ToyBox.GetCollectedShown()
 	ToyUnCollSetting = C_ToyBox.GetUncollectedShown()
@@ -104,7 +115,7 @@ function GetLearnedStones()
 	
 	C_ToyBox.SetCollectedShown(true) -- List collected toys
 	C_ToyBox.SetUncollectedShown(false) -- Don't list uncollected toys
-	C_ToyBox.SetUnusableShown(false) -- Don't list unusable toys in the the collection.
+	C_ToyBox.SetUnusableShown(false) -- Don't list unusable toys in the the collection.	
 	
 	-- Go through all the toys to find the usable stons.
 	for i = 1, C_ToyBox.GetNumFilteredToys() do
@@ -119,6 +130,9 @@ function GetLearnedStones()
 	C_ToyBox.SetCollectedShown(ToyCollSetting)
 	C_ToyBox.SetUncollectedShown(ToyUnCollSetting)
 	C_ToyBox.SetUnusableShown(ToyUsableSetting)
+	if next(UsableHearthToyIndex) then
+		RHTInitialized = true
+	end
 end
 
 -- We've removed the name from the macro, so now we need to find it so we know which one to edit.

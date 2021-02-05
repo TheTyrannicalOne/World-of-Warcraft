@@ -1,6 +1,6 @@
 ## Interface: 90002
 ## Title: Random Hearth Toy
 ## Author: Hemco
-## Version: 2.1
+## Version: 2.1a
 
 RandomHearthToy.lua

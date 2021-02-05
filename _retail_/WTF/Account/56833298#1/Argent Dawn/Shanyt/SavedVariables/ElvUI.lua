@@ -2,534 +2,6 @@
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 		{
-			"tell me the last time you saw a trade go down in this channel", -- [1]
-			"Zoxxiz-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zoxxiz-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			954, -- [11]
-			"Player-75-055FCE33", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcZoxxiz|r",
-			[51] = 1611353700,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"does anyone remeber shrek ", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			955, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611353721,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"Yes", -- [1]
-			"Shrrek-TheScryers", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shrrek-TheScryers", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			956, -- [11]
-			"Player-75-08BEC8B4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Shrrek-TheScryers|r",
-			[51] = 1611353734,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"lol", -- [1]
-			"Feldelphine-TheScryers", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Feldelphine-TheScryers", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			957, -- [11]
-			"Player-75-0BF4CCCD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Feldelphine-TheScryers|r",
-			[51] = 1611353742,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"loved u in a xmas story ", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			958, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611353743,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"its funny, when people are actually trying to do trade in this channell....people say shut up, youre spamming", -- [1]
-			"Zoxxiz-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zoxxiz-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			959, -- [11]
-			"Player-75-055FCE33", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcZoxxiz|r",
-			[51] = 1611353753,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"youll put your eye out kid", -- [1]
-			"Dojasmoke-TheScryers", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dojasmoke-TheScryers", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			960, -- [11]
-			"Player-75-0B8D1F47", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
-			[51] = 1611353761,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"STOP TRADING WE ARE CHILLING", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			961, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611353767,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"HELP IM BEING REPRESSED", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			962, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611353789,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"biden just signed executive order removing all mounts from the game and requiring everyone 2 use / when they travel", -- [1]
-			"Zoxxiz-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zoxxiz-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			963, -- [11]
-			"Player-75-055FCE33", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcZoxxiz|r",
-			[51] = 1611353808,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"Come see the violence inherint in the system", -- [1]
-			"Shrrek-TheScryers", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shrrek-TheScryers", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			964, -- [11]
-			"Player-75-08BEC8B4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Shrrek-TheScryers|r",
-			[51] = 1611353815,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"FFS WHY ", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			965, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611353817,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"Thrall 2024", -- [1]
-			"Mizzex-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mizzex-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1117, -- [11]
-			"Player-75-0E4227BB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Mizzex|r",
-			[51] = 1611354347,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"NO ! WHITEMANE 2024", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1118, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611354355,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"Sylvannas - Gucci Mane 2024", -- [1]
-			"Zoxxiz-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zoxxiz-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1119, -- [11]
-			"Player-75-055FCE33", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcZoxxiz|r",
-			[51] = 1611354367,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"I thought we loved democracy ", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1120, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611354388,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"isnt that was castro said", -- [1]
-			"Zoxxiz-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zoxxiz-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1121, -- [11]
-			"Player-75-055FCE33", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcZoxxiz|r",
-			[51] = 1611354421,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"If Whitemane takes Ashenvale I'll eat my hat.", -- [1]
-			"Mizzex-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mizzex-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1122, -- [11]
-			"Player-75-0E4227BB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Mizzex|r",
-			[51] = 1611354436,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"shes take everything ", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1123, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611354447,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"oof I dank too much", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1124, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611354468,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"Majordomo needs a cabinet position", -- [1]
-			"Zoxxiz-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zoxxiz-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1127, -- [11]
-			"Player-75-055FCE33", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcZoxxiz|r",
-			[51] = 1611354488,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"no lol", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1141, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611354519,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"And Majordomo shall. Just vote for Thrall and there will be a delicious chocolate cake on every table", -- [1]
-			"Mizzex-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mizzex-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1142, -- [11]
-			"Player-75-0E4227BB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Mizzex|r",
-			[51] = 1611354520,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"they wont be manufactured till next year prob without scalping ", -- [1]
-			"Vandull-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vandull-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1145, -- [11]
-			"Player-75-05EA1B65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVandull|r",
-			[51] = 1611354537,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
 			"Vote for Thrall, he'll put the peons back to work!", -- [1]
 			"Mizzex-ArgentDawn", -- [2]
 			"", -- [3]
@@ -550,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mizzex|r",
 			[51] = 1611354562,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [1]
 		{
 			"we need a president that knows how to pronounce C'Thun", -- [1]
 			"Zoxxiz-ArgentDawn", -- [2]
@@ -572,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZoxxiz|r",
 			[51] = 1611354573,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [2]
 		{
 			"selling |cff0070dd|Hbattlepet:2450:25:3:1400:277:301:0000000000000000:88004|h[Tinder Pup]|h|r 5k", -- [1]
 			"Lareths-TheScryers", -- [2]
@@ -594,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lareths-TheScryers|r",
 			[51] = 1611431332,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [3]
 		{
 			"lvl25", -- [1]
 			"Lareths-TheScryers", -- [2]
@@ -616,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lareths-TheScryers|r",
 			[51] = 1611431352,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [4]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1556:Player-75-0DE3A059:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[25 Fish]|h|r!", -- [1]
 			"Forrowland-TheScryers", -- [2]
@@ -638,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Forrowland-TheScryers|r",
 			[51] = 1611480300,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [29]
+		}, -- [5]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:153:Player-75-0DE3A059:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[The Old Gnome and the Sea]|h|r!", -- [1]
 			"Forrowland-TheScryers", -- [2]
@@ -660,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Forrowland-TheScryers|r",
 			[51] = 1611480482,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [30]
+		}, -- [6]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:890:Player-75-0DE3A059:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[Into the Wild Blue Yonder]|h|r!", -- [1]
 			"Forrowland-TheScryers", -- [2]
@@ -682,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Forrowland-TheScryers|r",
 			[51] = 1611481175,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [31]
+		}, -- [7]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:11213:Player-75-0DE0AA56:1:1:24:21:4294967295:4294967295:4294967295:4294967295|h[Lead a Legion]|h|r!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -704,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz-TheScryers|r",
 			[51] = 1611525631,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [32]
+		}, -- [8]
 		{
 			"First person to group me, and get to me gets all of my gold. Leaving server.", -- [1]
 			"Imnotalock-ArgentDawn", -- [2]
@@ -726,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edImnotalock|r",
 			[51] = 1611580659,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [9]
 		{
 			"Really can't even GIVE away 30k on this server, huh?", -- [1]
 			"Imnotalock-ArgentDawn", -- [2]
@@ -748,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edImnotalock|r",
 			[51] = 1611580714,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [10]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14847:Player-75-007DC40C:1:1:25:21:4294967295:4294967295:4294967295:4294967295|h[Adventures: Protector of the Shadowlands]|h|r!", -- [1]
 			"Famin-ArgentDawn", -- [2]
@@ -770,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edFamin|r",
 			[51] = 1611586418,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [35]
+		}, -- [11]
 		{
 			"Prince Vortran 100.00% ~(42.97, 73.15)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -792,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1611590857,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [12]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14371:Player-75-08C450DD:1:1:25:21:4294967295:4294967295:4294967295:4294967295|h[Mists of Tirna Scithe]|h|r!", -- [1]
 			"Santia-TheScryers", -- [2]
@@ -814,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Santia-TheScryers|r",
 			[51] = 1611603230,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [37]
+		}, -- [13]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:4840:Player-75-062EF6AB:1:1:25:21:4294967295:4294967295:4294967295:4294967295|h[Grim Batol]|h|r!", -- [1]
 			"Ozzyheffer-ArgentDawn", -- [2]
@@ -836,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Ozzyheffer|r",
 			[51] = 1611614659,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [38]
+		}, -- [14]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:5062:Player-75-062EF6AB:1:1:25:21:4294967295:4294967295:4294967295:4294967295|h[Heroic: Grim Batol]|h|r!", -- [1]
 			"Ozzyheffer-ArgentDawn", -- [2]
@@ -858,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Ozzyheffer|r",
 			[51] = 1611614659,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [39]
+		}, -- [15]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -880,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1611614663,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [40]
+		}, -- [16]
 		{
 			"WTS|cff0070dd|Hbattlepet:1723:1:3:158:12:10:0000000000000000:71945|h[Nightmare Whelpling]|h|r|cff0070dd|Hbattlepet:2157:1:3:155:12:10:0000000000000000:81984|h[Dart]|h|r|cff0070dd|Hbattlepet:2702:1:3:152:12:11:0000000000000000:50613|h[Stormwrath]|h|r", -- [1]
 			"Greutok-ArgentDawn", -- [2]
@@ -902,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGreutok|r",
 			[51] = 1611622106,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [17]
 		{
 			"WHATS NEW NERDS ", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -924,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611688307,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [18]
 		{
 			"WheeeeoooOOoooaaaAAAAAaaaaaooooo", -- [1]
 			"Contempt-ArgentDawn", -- [2]
@@ -946,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeContempt|r",
 			[51] = 1611693974,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [19]
 		{
 			"WEEEEEEeeeeEEEOOOOOOOOOoooUUUUUUUU", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -968,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611693981,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [20]
 		{
 			"That's the sound a whale makes", -- [1]
 			"Contempt-ArgentDawn", -- [2]
@@ -990,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeContempt|r",
 			[51] = 1611693981,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [21]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:3936:Player-75-058380E2:1:1:26:21:4294967295:4294967295:4294967295:4294967295|h[Not One, But Two Jormungars (10 player)]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1012,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1611696701,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [46]
+		}, -- [22]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:3797:Player-75-058380E2:1:1:26:21:4294967295:4294967295:4294967295:4294967295|h[Upper Back Pain (10 player)]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1034,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1611696711,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [47]
+		}, -- [23]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:3996:Player-75-058380E2:1:1:26:21:4294967295:4294967295:4294967295:4294967295|h[Three Sixty Pain Spike (10 player)]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1056,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1611696908,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [48]
+		}, -- [24]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -1078,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1611696914,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [49]
+		}, -- [25]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:3800:Player-75-058380E2:1:1:26:21:4294967295:4294967295:4294967295:4294967295|h[The Traitor King (10 player)]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1100,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1611697505,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [50]
+		}, -- [26]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -1122,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1611697507,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [51]
+		}, -- [27]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:3918:Player-75-058380E2:1:1:26:21:4294967295:4294967295:4294967295:4294967295|h[Call of the Grand Crusade (10 player)]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1144,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1611697529,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [52]
+		}, -- [28]
 		{
 			"grats name", -- [1]
 			"Tuskmunkey-ArgentDawn", -- [2]
@@ -1166,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tuskmunkey|r",
 			[51] = 1611697532,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [53]
+		}, -- [29]
 		{
 			"GME! GME!", -- [1]
 			"Dapunisha-ArgentDawn", -- [2]
@@ -1188,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dapunisha|r",
 			[51] = 1611698004,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [30]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14374:Player-75-0DE0AA56:1:1:27:21:4294967295:4294967295:4294967295:4294967295|h[Couple's Therapy]|h|r!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -1210,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz-TheScryers|r",
 			[51] = 1611763767,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [55]
+		}, -- [31]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14409:Player-75-0DE0AA56:1:1:27:21:4294967295:4294967295:4294967295:4294967295|h[Mythic: De Other Side]|h|r!", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -1232,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz-TheScryers|r",
 			[51] = 1611764560,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [56]
+		}, -- [32]
 		{
 			"gratz giz", -- [1]
 			"Asimagan-ArgentDawn", -- [2]
@@ -1254,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edAsimagan|r",
 			[51] = 1611764571,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [57]
+		}, -- [33]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14770:Player-75-0280C688:1:1:27:21:4294967295:4294967295:4294967295:4294967295|h[What We Ride in the Shadows]|h|r!", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1276,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZymor|r",
 			[51] = 1611765365,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [58]
+		}, -- [34]
 		{
 			"Congrats", -- [1]
 			"Giz-TheScryers", -- [2]
@@ -1298,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGiz|r",
 			[51] = 1611765396,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [59]
+		}, -- [35]
 		{
 			"ty", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1320,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZymor|r",
 			[51] = 1611765437,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [60]
+		}, -- [36]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14791:Player-75-05A87A5B:1:1:27:21:4294967295:4294967295:4294967295:4294967295|h[Toss a Seed to Your Hunter...]|h|r!", -- [1]
 			"Kasseopeia-ArgentDawn", -- [2]
@@ -1342,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKasseopeia|r",
 			[51] = 1611780349,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [61]
+		}, -- [37]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10355:Player-75-0280C688:1:1:28:21:4294967295:4294967295:4294967295:4294967295|h[Lord of the Reins]|h|r!", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1364,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZymor|r",
 			[51] = 1611861978,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [62]
+		}, -- [38]
 		{
 			"Grats Zymor", -- [1]
 			"Excelimagust-ArgentDawn", -- [2]
@@ -1386,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaExcelimagust|r",
 			[51] = 1611862008,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [63]
+		}, -- [39]
 		{
 			"ty  that was work", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1408,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZymor|r",
 			[51] = 1611862028,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [64]
+		}, -- [40]
 		{
 			"You have 108 more than me.  :-)", -- [1]
 			"Excelimagust-ArgentDawn", -- [2]
@@ -1430,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaExcelimagust|r",
 			[51] = 1611862226,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [65]
+		}, -- [41]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14760:Player-75-0A8D9265:1:1:28:21:4294967295:4294967295:4294967295:4294967295|h[Recollection Collection]|h|r!", -- [1]
 			"Twistedbolt-TheScryers", -- [2]
@@ -1452,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTwistedbolt-TheScryers|r",
 			[51] = 1611864556,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [66]
+		}, -- [42]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:7287:Player-75-058380E2:1:1:28:21:4294967295:4294967295:4294967295:4294967295|h[Champion of Chi-Ji]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1474,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1611865619,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [67]
+		}, -- [43]
 		{
 			"go to honry jail", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1496,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611868938,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [44]
 		{
 			"guantanamo", -- [1]
 			"Dojasmoke-TheScryers", -- [2]
@@ -1518,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
 			[51] = 1611869003,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [45]
 		{
 			"bae ", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1540,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611869007,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [46]
 		{
 			"is love a real construct or simply chemicals in our brain to simulate the stimulation of companionship ?", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1562,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611869117,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [47]
 		{
 			"love existed once", -- [1]
 			"Dojasmoke-TheScryers", -- [2]
@@ -1584,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
 			[51] = 1611869138,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [48]
 		{
 			"second one for sure", -- [1]
 			"Haliey-ArgentDawn", -- [2]
@@ -1606,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHaliey|r",
 			[51] = 1611869149,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [49]
 		{
 			"truth ", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1628,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611869163,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [50]
 		{
 			"i think it was in the 60s", -- [1]
 			"Dojasmoke-TheScryers", -- [2]
@@ -1650,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
 			[51] = 1611869193,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [51]
 		{
 			"SOMEBODY ONCE TOLD ME ", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1672,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611869226,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [52]
 		{
 			"only way to my heart is through pvp", -- [1]
 			"Dojasmoke-TheScryers", -- [2]
@@ -1694,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
 			[51] = 1611869237,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [53]
 		{
 			"im beginning to believe marriage is only a contract between 2 people because they need each other. there is no love", -- [1]
 			"Haliey-ArgentDawn", -- [2]
@@ -1716,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHaliey|r",
 			[51] = 1611869239,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [54]
 		{
 			"marrage is for the goverment to tax you a certain rate ", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1738,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611869257,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [55]
 		{
 			"true", -- [1]
 			"Haliey-ArgentDawn", -- [2]
@@ -1760,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHaliey|r",
 			[51] = 1611869269,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [56]
 		{
 			"I love you Haliey", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1782,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611869293,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [57]
 		{
 			"<3", -- [1]
 			"Haliey-ArgentDawn", -- [2]
@@ -1804,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHaliey|r",
 			[51] = 1611869315,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [58]
 		{
 			"<3", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1826,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611869327,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [59]
 		{
 			"get a room", -- [1]
 			"Dojasmoke-TheScryers", -- [2]
@@ -1848,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
 			[51] = 1611869330,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [60]
 		{
 			"we got... the TRADE room", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1870,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611869343,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [61]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:6753:Player-75-0A8D9265:1:1:28:21:4294967295:4294967295:4294967295:4294967295|h[Got My Mind On My Money]|h|r!", -- [1]
 			"Twistedbolt-TheScryers", -- [2]
@@ -1892,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTwistedbolt-TheScryers|r",
 			[51] = 1611874326,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [86]
+		}, -- [62]
 		{
 			"whale whale whale ", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1914,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611943398,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [63]
 		{
 			"gamerz we did the rising ", -- [1]
 			"Vandull-ArgentDawn", -- [2]
@@ -1936,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVandull|r",
 			[51] = 1611943406,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [64]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14471:Player-75-0AD86CF0:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Twisting Corridors: Layer 4]|h|r!", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1958,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGeenon-TheScryers|r",
 			[51] = 1612127183,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [89]
+		}, -- [65]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:3776:Player-75-0AB910DC:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Isle of Conquest Victory]|h|r!", -- [1]
 			"Dementiarexx-TheScryers", -- [2]
@@ -1980,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDementiarexx-TheScryers|r",
 			[51] = 1612130313,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [90]
+		}, -- [66]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:229:Player-75-0AB910DC:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[The Grim Reaper]|h|r!", -- [1]
 			"Dementiarexx-TheScryers", -- [2]
@@ -2002,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDementiarexx-TheScryers|r",
 			[51] = 1612131463,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [91]
+		}, -- [67]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1727:Player-75-0AB910DC:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Leaning Tower]|h|r!", -- [1]
 			"Dementiarexx-TheScryers", -- [2]
@@ -2024,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDementiarexx-TheScryers|r",
 			[51] = 1612131664,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [92]
+		}, -- [68]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:11213:Player-75-08BCA480:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Lead a Legion]|h|r!", -- [1]
 			"Tsayid-TheScryers", -- [2]
@@ -2046,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Tsayid-TheScryers|r",
 			[51] = 1612131997,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [93]
+		}, -- [69]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:2476:Player-75-0AB910DC:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Destruction Derby]|h|r!", -- [1]
 			"Dementiarexx-TheScryers", -- [2]
@@ -2068,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDementiarexx-TheScryers|r",
 			[51] = 1612132130,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [94]
+		}, -- [70]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1717:Player-75-0AB910DC:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Wintergrasp Victory]|h|r!", -- [1]
 			"Dementiarexx-TheScryers", -- [2]
@@ -2090,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDementiarexx-TheScryers|r",
 			[51] = 1612133053,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [95]
+		}, -- [71]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14629:Player-75-0AB910DC:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Gaining Respect]|h|r!", -- [1]
 			"Dementiarexx-TheScryers", -- [2]
@@ -2112,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDementiarexx-TheScryers|r",
 			[51] = 1612133053,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [96]
+		}, -- [72]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2134,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edGeenon|r",
 			[51] = 1612133065,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [97]
+		}, -- [73]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14305:Player-75-0AB910DC:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Explore Maldraxxus]|h|r!", -- [1]
 			"Dementiarexx-TheScryers", -- [2]
@@ -2156,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDementiarexx-TheScryers|r",
 			[51] = 1612135736,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [98]
+		}, -- [74]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1755:Player-75-0AB910DC:1:1:31:21:4294967295:4294967295:4294967295:4294967295|h[Within Our Grasp]|h|r!", -- [1]
 			"Dementiarexx-TheScryers", -- [2]
@@ -2177,6 +1649,534 @@ ElvCharacterDB = {
 			false, -- [17]
 			[52] = "|cff8687edDementiarexx-TheScryers|r",
 			[51] = 1612137120,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [75]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14337:Player-75-09F9F1F6:1:2:2:21:4294967295:4294967295:4294967295:4294967295|h[The Wild Hunt]|h|r!", -- [1]
+			"Gremlyk-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gremlyk-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			98, -- [11]
+			"Player-75-09F9F1F6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGremlyk|r",
+			[51] = 1612287916,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [76]
+		{
+			"Looks like it's gonna take a little extra hoop jumping to get all my anima today", -- [1]
+			"Elzera-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			196, -- [11]
+			"Player-75-0B7555D2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Elzera|r",
+			[51] = 1612290159,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [77]
+		{
+			"just a few hoops lol", -- [1]
+			"Rammpage-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			197, -- [11]
+			"Player-75-0C139900", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcRammpage|r",
+			[51] = 1612290195,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [78]
+		{
+			"I guess now would be as good a time as any to see if I can solo dungeons on normal :p", -- [1]
+			"Elzera-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			201, -- [11]
+			"Player-75-0B7555D2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Elzera|r",
+			[51] = 1612290258,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [79]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14758:Player-75-0B7555D2:1:2:2:21:4294967295:4294967295:4294967295:4294967295|h[The World Beyond]|h|r!", -- [1]
+			"Elzera-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elzera-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			211, -- [11]
+			"Player-75-0B7555D2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Elzera-TheScryers|r",
+			[51] = 1612290380,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [80]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:6753:Player-75-08C6E363:1:2:2:21:4294967295:4294967295:4294967295:4294967295|h[Got My Mind On My Money]|h|r!", -- [1]
+			"Silvelle-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Silvelle-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			528, -- [11]
+			"Player-75-08C6E363", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Silvelle-TheScryers|r",
+			[51] = 1612301618,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [81]
+		{
+			"wts |cffa335ee|Hitem:116794::::::::60:253::::1:28:64:::|h[Garn Nighthowl]|h|r super cheap. pm me offers", -- [1]
+			"Galaxydusk-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Galaxydusk-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			538, -- [11]
+			"Player-75-0E2E3B62", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Galaxydusk|r",
+			[51] = 1612301832,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"1s", -- [1]
+			"Hunterlori-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hunterlori-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			546, -- [11]
+			"Player-75-0AE57E3E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Hunterlori|r",
+			[51] = 1612301878,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14630:Player-75-00DF5006:1:2:2:21:4294967295:4294967295:4294967295:4294967295|h[Becoming a Hero]|h|r!", -- [1]
+			"Excelimagust-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Excelimagust-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1625, -- [11]
+			"Player-75-00DF5006", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec6eaExcelimagust|r",
+			[51] = 1612305484,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [84]
+		{
+			"grats name", -- [1]
+			"Tuskmunkey-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1626, -- [11]
+			"Player-75-034D04EF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tuskmunkey|r",
+			[51] = 1612305487,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [85]
+		{
+			"don't think my leatherworker is high enough sorry", -- [1]
+			"Megeara-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Megeara-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			110, -- [11]
+			"Player-75-0E56B6DD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMegeara|r",
+			[51] = 1612359969,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"i'll have to ask my guild later today when they are all online", -- [1]
+			"Àriyanna-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Àriyanna-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			196, -- [11]
+			"Player-75-0B424BC6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Àriyanna|r",
+			[51] = 1612360111,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14809:Player-75-007DC40C:1:2:3:21:4294967295:4294967295:4294967295:4294967295|h[Traversing Torghast]|h|r!", -- [1]
+			"Famin-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Famin-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			451, -- [11]
+			"Player-75-007DC40C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8687edFamin|r",
+			[51] = 1612360695,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [88]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14325:Player-75-0DE0AA56:1:2:3:21:4294967295:4294967295:4294967295:4294967295|h[Mythic: Spires of Ascension]|h|r!", -- [1]
+			"Giz-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Giz-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			734, -- [11]
+			"Player-75-0DE0AA56", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8687edGiz-TheScryers|r",
+			[51] = 1612367061,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [89]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14335:Player-75-0C139900:1:2:3:21:4294967295:4294967295:4294967295:4294967295|h[The Ascended]|h|r!", -- [1]
+			"Rammpage-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rammpage-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1101, -- [11]
+			"Player-75-0C139900", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcRammpage-TheScryers|r",
+			[51] = 1612373108,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [90]
+		{
+			"SELLING |cffa335ee|Hitem:116794::::::::60:253::::1:28:64:::|h[Garn Nighthowl]|h|r FOR 9K (1K LESS THAN AH), PM IF DEAL! COMES WITH FREE OXYGEN! ALSO I CAN GO DOWN IN PRICE IF NEEDED. DON'T BE AFRAID TO PM ME, I DON'T BITE! IM JUST TOO LAZY TO TURN CAPS LOCK OFF :)", -- [1]
+			"Galaxydusk-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Galaxydusk-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			143, -- [11]
+			"Player-75-0E2E3B62", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Galaxydusk|r",
+			[51] = 1612375440,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"I CAN GO DOWN TO 5K EVEN", -- [1]
+			"Galaxydusk-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Galaxydusk-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			190, -- [11]
+			"Player-75-0E2E3B62", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Galaxydusk|r",
+			[51] = 1612375478,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"selling garn lmao 15 minute farm ", -- [1]
+			"Tarat-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tarat-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			270, -- [11]
+			"Player-75-0E3A67B3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaTarat|r",
+			[51] = 1612375529,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"the devil went down to Georgia", -- [1]
+			"Dojasmoke-TheScryers", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dojasmoke-TheScryers", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			334, -- [11]
+			"Player-75-0B8D1F47", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
+			[51] = 1612375591,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"e was looking for some polls to steal", -- [1]
+			"Dojasmoke-TheScryers", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dojasmoke-TheScryers", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			337, -- [11]
+			"Player-75-0B8D1F47", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
+			[51] = 1612375629,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"*rimshot*", -- [1]
+			"Dojasmoke-TheScryers", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dojasmoke-TheScryers", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			338, -- [11]
+			"Player-75-0B8D1F47", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
+			[51] = 1612375658,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"Get out of trade with your Qanon BS man. ", -- [1]
+			"Contempt-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Contempt-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			339, -- [11]
+			"Player-75-0268EFF3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeContempt|r",
+			[51] = 1612375658,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"pooanon", -- [1]
+			"Dojasmoke-TheScryers", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dojasmoke-TheScryers", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			340, -- [11]
+			"Player-75-0B8D1F47", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Dojasmoke-TheScryers|r",
+			[51] = 1612375673,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14472:Player-75-0B7555D2:1:2:4:21:4294967295:4294967295:4294967295:4294967295|h[Twisting Corridors: Layer 5]|h|r!", -- [1]
+			"Elzera-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elzera-TheScryers", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1377, -- [11]
+			"Player-75-0B7555D2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Elzera-TheScryers|r",
+			[51] = 1612477809,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [99]
 	},

@@ -15,9 +15,11 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Alt Power"] = {
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_AutoReply"] = {
 		},
@@ -25,9 +27,11 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_AltPower"] = {
 		},
+		["BigWigs_Plugins_Pull"] = {
+		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 		},
@@ -41,13 +45,15 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-		},
 		["BigWigs_Plugins_Messages"] = {
 		},
-		["BigWigs_Plugins_Pull"] = {
+		["BigWigs_Plugins_Super Emphasize"] = {
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_Wipe"] = {
+		},
+		["BigWigs_Plugins_Common Auras"] = {
+		},
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -56,12 +62,6 @@ BigWigs3DB = {
 					["width"] = 139.9999847412109,
 				},
 			},
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Plugins_Common Auras"] = {
-		},
-		["BigWigs_Plugins_BossBlock"] = {
 		},
 	},
 	["global"] = {
@@ -96,7 +96,7 @@ BigWigsStatsDB = {
 	[1205] = {
 		[959] = {
 			["mythic"] = {
-				["kills"] = 25,
+				["kills"] = 26,
 				["best"] = 16.48500000001513,
 				["wipes"] = 3,
 			},
@@ -174,9 +174,9 @@ BigWigsStatsDB = {
 		},
 	},
 	[2164] = {
-		[2347] = {
+		[2354] = {
 			["LFR"] = {
-				["best"] = 247.9619999999995,
+				["best"] = 240.8419999999969,
 				["kills"] = 1,
 			},
 		},
@@ -199,11 +199,10 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[2361] = {
+		[2347] = {
 			["LFR"] = {
+				["best"] = 247.9619999999995,
 				["kills"] = 1,
-				["wipes"] = 1,
-				["best"] = 490.721000000005,
 			},
 		},
 		[2359] = {
@@ -219,10 +218,11 @@ BigWigsStatsDB = {
 				["best"] = 373.2479999999996,
 			},
 		},
-		[2354] = {
+		[2361] = {
 			["LFR"] = {
-				["best"] = 240.8419999999969,
 				["kills"] = 1,
+				["wipes"] = 1,
+				["best"] = 490.721000000005,
 			},
 		},
 	},

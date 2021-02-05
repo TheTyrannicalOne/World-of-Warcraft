@@ -4,11 +4,11 @@ CliqueDB3 = {
 	["char"] = {
 		["Avisar - Dalaran"] = {
 			["spec1_profileKey"] = "Avisar - Dalaran",
-			["spec2_profileKey"] = "Avisar - Dalaran",
+			["spec3_profileKey"] = "Avisar - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec2_profileKey"] = "Avisar - Dalaran",
 			["specswap"] = false,
-			["spec3_profileKey"] = "Avisar - Dalaran",
 		},
 		["Tyranasticus - Zul'jin"] = {
 			["spec1_profileKey"] = "Tyranasticus - Zul'jin",
@@ -35,11 +35,11 @@ CliqueDB3 = {
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Shanyt - Argent Dawn",
-			["downclick"] = false,
 			["alerthidden"] = true,
+			["downclick"] = false,
 			["specswap"] = false,
 			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 		},
 		["Rotclaugh - Dalaran"] = {
 			["spec1_profileKey"] = "Rotclaugh - Dalaran",
@@ -59,11 +59,11 @@ CliqueDB3 = {
 		},
 		["Zulbathal - Zul'jin"] = {
 			["spec1_profileKey"] = "Zulbathal - Zul'jin",
-			["spec3_profileKey"] = "Zulbathal - Zul'jin",
+			["spec2_profileKey"] = "Zulbathal - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Zulbathal - Zul'jin",
 			["specswap"] = false,
+			["spec3_profileKey"] = "Zulbathal - Zul'jin",
 			["spec4_profileKey"] = "Zulbathal - Zul'jin",
 		},
 		["Okona - Zul'jin"] = {

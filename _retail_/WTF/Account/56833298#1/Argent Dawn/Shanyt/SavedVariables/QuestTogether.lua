@@ -1,16 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
-			},
-		},
-		[42234] = {
-			["title"] = "The Valarjar",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[56352] = {
@@ -19,21 +13,22 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"853/1000 Anima collected", -- [1]
+				"973/1000 Anima collected", -- [1]
 			},
 		},
 		[49133] = {
@@ -58,12 +53,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
-			["objectives"] = {
-				"3/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -77,22 +66,22 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
 		[53435] = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
-		[50606] = {
-			["title"] = "Horde War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[45381] = {
@@ -101,10 +90,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[60267] = {
@@ -113,22 +102,9 @@ QuestTogether = {
 				"1/1 Speak with Ve'nari", -- [1]
 			},
 		},
-		[14142] = {
-			["title"] = "You've Really Done It This Time, Kul",
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
-				"1/1 Kul the Reckless rescued", -- [1]
-				"4/4 Captive Aspirant rescued", -- [2]
-			},
-		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
-			},
-		},
-		[62730] = {
-			["title"] = "Fruit of the Gods",
-			["objectives"] = {
-				"0/1 Ripe Purian", -- [1]
 			},
 		},
 		[48305] = {
@@ -151,22 +127,6 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[46748] = {
-			["title"] = "Supplies From the Nightfallen",
-			["objectives"] = {
-			},
-		},
-		[57462] = {
-			["title"] = "Dream Catcher",
-			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
-			},
-		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -177,16 +137,20 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
+		[62730] = {
+			["title"] = "Fruit of the Gods",
 			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+				"0/1 Ripe Purian", -- [1]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+			},
+		},
+		[46748] = {
+			["title"] = "Supplies From the Nightfallen",
+			["objectives"] = {
 			},
 		},
 		[62371] = {
@@ -195,10 +159,39 @@ QuestTogether = {
 				"1/1 Tred'ova slain", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[57462] = {
+			["title"] = "Dream Catcher",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"28/200 Shred of Insanity", -- [1]
+			},
+		},
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"2/4 Echo of Time", -- [1]
+			},
+		},
+		[48641] = {
+			["title"] = "Armies of Legionfall",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
 			},
 		},
 		[49032] = {
@@ -207,17 +200,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }
