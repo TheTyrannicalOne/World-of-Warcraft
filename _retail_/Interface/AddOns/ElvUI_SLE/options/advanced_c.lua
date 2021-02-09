@@ -1,4 +1,4 @@
-﻿local SLE, _, E, L = unpack(select(2, ...))
+local SLE, _, E, L = unpack(select(2, ...))
 
 --GLOBALS: unpack, select
 local tinsert = tinsert

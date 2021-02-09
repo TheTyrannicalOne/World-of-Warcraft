@@ -1,4 +1,4 @@
-﻿local SLE, _, E, L = unpack(select(2, ...))
+local SLE, _, E, L = unpack(select(2, ...))
 local Pr = SLE:GetModule("Professions")
 
 local TRADE_SKILLS, NONE = TRADE_SKILLS, NONE

@@ -1,4 +1,4 @@
-﻿-- German localization
+-- German localization
 local L = ElvUI[1].Libs.ACL:NewLocale("ElvUI", "deDE")
 
 if not L then return end

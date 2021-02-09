@@ -1,4 +1,4 @@
-﻿local SLE, _, E, L = unpack(select(2, ...))
+local SLE, _, E, L = unpack(select(2, ...))
 
 local PVP = PVP
 local DUEL, PET_BATTLE_PVP_DUEL = DUEL, PET_BATTLE_PVP_DUEL

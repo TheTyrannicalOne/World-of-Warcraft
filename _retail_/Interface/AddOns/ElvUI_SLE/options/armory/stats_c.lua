@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local SA = SLE:GetModule('Armory_Stats')
 local M = E:GetModule('Misc')
 

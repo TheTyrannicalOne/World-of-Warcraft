@@ -1,10 +1,13 @@
 # LittleWigs
 
-## [v9.0.26](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.26) (2021-02-05)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.25...v9.0.26) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
+## [v9.0.28](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.28) (2021-02-07)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.27...v9.0.28) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
 
-- Shadowlands/TheNecroticWake/Stitchflesh: Fix "Morbid Fixation" warnings  
-    Closes #572  
-- Shadowlands/HallsOfAtonement: Update option and locale files  
-- Shadowlands/HallsOfAtonement/Trash: Add "Powerful Swipe" (#576)  
-- Split out BfA modules (#575)  
+- Shadowlands/TheNecroticWake/Nalthor: Add an early warning for "Frozen Binds", mark its target (#552)  
+- Update zhTW/zhCN (#581)  
+- Shadowlands/Plaguefall/Trash: Add warnings for "Beckon Slime" (#562)  
+- Update deDE (#580)  
+- Shadowlands/SpiresOfAscension/Oryphrion: Fix locale  
+- Update ruRU (#579)  
+- Update ruRU (#578)  
+- Update ptBR (#577)  

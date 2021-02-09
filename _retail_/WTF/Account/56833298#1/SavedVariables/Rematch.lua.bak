@@ -11,7 +11,7 @@ RematchSettings = {
 		["Order"] = 1,
 		["FavoritesFirst"] = true,
 	},
-	["AllowHiddenPetsDefaulted"] = true,
+	["JournalPanel"] = 1,
 	["BackupCount"] = 0,
 	["PetCardXPos"] = 401,
 	["ElvUIToastDefaulted"] = true,
@@ -20,55 +20,6 @@ RematchSettings = {
 	},
 	["YPos"] = 418.0044860839844,
 	["SelectedTab"] = 1,
-	["PetCardYPos"] = 1232,
-	["SpecialSlots"] = {
-	},
-	["XPos"] = 995.0079345703125,
-	["LevelingQueue"] = {
-	},
-	["DialogXPos"] = 1342.008544921875,
-	["TeamGroups"] = {
-		{
-			"General", -- [1]
-			"Interface\\Icons\\PetJournalPortrait", -- [2]
-		}, -- [1]
-	},
-	["Filters"] = {
-		["Other"] = {
-		},
-		["Expansion"] = {
-		},
-		["Script"] = {
-		},
-		["Moveset"] = {
-		},
-		["Tough"] = {
-		},
-		["Level"] = {
-		},
-		["Sources"] = {
-		},
-		["Similar"] = {
-		},
-		["Breed"] = {
-		},
-		["Rarity"] = {
-		},
-		["Strong"] = {
-		},
-		["Collected"] = {
-		},
-		["Favorite"] = {
-		},
-		["Types"] = {
-		},
-	},
-	["ExpandedOptHeaders"] = {
-	},
-	["CollapsedOptHeaders"] = {
-	},
-	["ExpandedTargetHeaders"] = {
-	},
 	["ScriptFilters"] = {
 		{
 			"Unnamed Pets", -- [1]
@@ -92,10 +43,59 @@ RematchSettings = {
 		}, -- [5]
 	},
 	["QueueSortOrder"] = 1,
+	["XPos"] = 995.0079345703125,
+	["LevelingQueue"] = {
+	},
+	["DialogXPos"] = 1342.008544921875,
+	["TeamGroups"] = {
+		{
+			"General", -- [1]
+			"Interface\\Icons\\PetJournalPortrait", -- [2]
+		}, -- [1]
+	},
+	["Filters"] = {
+		["Other"] = {
+		},
+		["Expansion"] = {
+		},
+		["Script"] = {
+		},
+		["Types"] = {
+		},
+		["Favorite"] = {
+		},
+		["Collected"] = {
+		},
+		["Strong"] = {
+		},
+		["Similar"] = {
+		},
+		["Breed"] = {
+		},
+		["Rarity"] = {
+		},
+		["Sources"] = {
+		},
+		["Level"] = {
+		},
+		["Tough"] = {
+		},
+		["Moveset"] = {
+		},
+	},
+	["ExpandedOptHeaders"] = {
+	},
+	["CollapsedOptHeaders"] = {
+	},
+	["ExpandedTargetHeaders"] = {
+	},
+	["PetCardYPos"] = 1232,
+	["SpecialSlots"] = {
+	},
 	["FavoriteFilters"] = {
 	},
 	["CornerPos"] = "BOTTOMLEFT",
-	["JournalPanel"] = 1,
+	["AllowHiddenPetsDefaulted"] = true,
 	["PreferredMode"] = 1,
 	["UseTypeBar"] = true,
 	["CustomScaleValue"] = 100,

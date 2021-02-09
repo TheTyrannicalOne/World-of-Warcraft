@@ -1,4 +1,4 @@
-﻿## Interface: 90002
+## Interface: 90002
 ## Title: |cff1784d1ElvUI|r |cff9482c9Shadow & Light|r
 ## Author: Darth Predator, Repooc
 ## Version: 4.20

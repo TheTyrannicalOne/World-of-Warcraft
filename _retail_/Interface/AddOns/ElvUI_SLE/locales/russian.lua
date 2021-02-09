@@ -1,4 +1,4 @@
-﻿-- Russian localization
+-- Russian localization
 local L = ElvUI[1].Libs.ACL:NewLocale("ElvUI", "ruRU")
 
 if not L then return end

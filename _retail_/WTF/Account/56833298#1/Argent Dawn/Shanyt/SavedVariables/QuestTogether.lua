@@ -1,10 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[56352] = {
@@ -19,16 +19,16 @@ QuestTogether = {
 				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
 		[56120] = {
 			["title"] = "The Unshackled",
 			["objectives"] = {
 				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
-		[61981] = {
-			["title"] = "Replenish the Reservoir",
-			["objectives"] = {
-				"973/1000 Anima collected", -- [1]
 			},
 		},
 		[49133] = {
@@ -66,22 +66,22 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-			},
-		},
 		[53435] = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[24612] = {
+			["title"] = "A Gift for the Warchief's Advisor",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/1 Lovely Charm Bracelet", -- [1]
+			},
+		},
+		[50604] = {
+			["title"] = "Tortollan Seekers",
+			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[45381] = {
@@ -90,10 +90,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[60267] = {
@@ -102,16 +102,15 @@ QuestTogether = {
 				"1/1 Speak with Ve'nari", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[62730] = {
+			["title"] = "Fruit of the Gods",
 			["objectives"] = {
+				"0/1 Ripe Purian", -- [1]
 			},
 		},
-		[48305] = {
-			["title"] = "The Burning Coven",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[24756] = {
@@ -137,22 +136,6 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[62730] = {
-			["title"] = "Fruit of the Gods",
-			["objectives"] = {
-				"0/1 Ripe Purian", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[46748] = {
-			["title"] = "Supplies From the Nightfallen",
-			["objectives"] = {
-			},
-		},
 		[62371] = {
 			["title"] = "Tirna Scithe: A Warning Silence",
 			["objectives"] = {
@@ -165,10 +148,39 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[24636] = {
+			["title"] = "Bonbon Blitz",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/10 Samples Given", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[46748] = {
+			["title"] = "Supplies From the Nightfallen",
+			["objectives"] = {
+			},
+		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[48642] = {
+			["title"] = "Argussian Reach",
+			["objectives"] = {
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+			},
+		},
+		[44546] = {
+			["title"] = "Crushing the Crown",
+			["objectives"] = {
+				"0/1 Chemical Wagon Destroyed", -- [1]
+				"0/12 Crown Chemical Co. Employees Slain", -- [2]
 			},
 		},
 		[57403] = {
@@ -177,21 +189,23 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[48305] = {
+			["title"] = "The Burning Coven",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[49032] = {
@@ -200,17 +214,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }

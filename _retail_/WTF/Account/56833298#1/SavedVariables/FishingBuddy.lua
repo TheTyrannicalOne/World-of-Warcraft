@@ -16,19 +16,10 @@ FishingBuddy_Info = {
 		[1527001] = 0,
 	},
 	["DataFish"] = 0,
-	["FishSchools"] = {
-		[641] = {
-			{
-				["y"] = 0.6958590428832376,
-				["x"] = 0.4698031428195008,
-				["sidx"] = 641000,
-				["kind"] = 0,
-				["fish"] = {
-					[134568] = 1,
-				},
-				["count"] = 1,
-			}, -- [1]
-		},
+	["KnownZones"] = {
+		[1527] = "Uldum",
+		[1355] = "Chitterspine Caverns",
+		[641] = "Thas'talah Basin",
 	},
 	["FishingHoles"] = {
 		[641001] = {
@@ -42,10 +33,10 @@ FishingBuddy_Info = {
 			[27422] = 1,
 		},
 	},
+	["Version"] = 19500,
 	["Settings"] = {
 		["CreateMacro"] = true,
 	},
-	["Version"] = 19500,
 	["FishInfo2"] = 0,
 	["SubZones"] = {
 		[1355001] = "Chitterspine Caverns",
@@ -60,30 +51,39 @@ FishingBuddy_Info = {
 		[45188] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Withered Kelp",
-			["texture"] = 134192,
 			["quality"] = 0,
+			["texture"] = 134192,
 		},
 		[134568] = {
 			["enUS"] = "Huge Mossgill Perch",
 			["canopen"] = false,
-			["quality"] = 1,
-			["quest"] = true,
 			["texture"] = 350868,
-		},
-		[168646] = {
-			["enUS"] = "Mauve Stinger",
+			["quest"] = true,
 			["quality"] = 1,
-			["texture"] = 3007472,
 		},
 		[27422] = {
 			["enUS"] = "Barbed Gill Trout",
+			["quality"] = 1,
 			["texture"] = 133923,
+		},
+		[168646] = {
+			["enUS"] = "Mauve Stinger",
+			["texture"] = 3007472,
 			["quality"] = 1,
 		},
 	},
-	["KnownZones"] = {
-		[1527] = "Uldum",
-		[1355] = "Chitterspine Caverns",
-		[641] = "Thas'talah Basin",
+	["FishSchools"] = {
+		[641] = {
+			{
+				["y"] = 0.6958590428832376,
+				["x"] = 0.4698031428195008,
+				["sidx"] = 641000,
+				["kind"] = 0,
+				["count"] = 1,
+				["fish"] = {
+					[134568] = 1,
+				},
+			}, -- [1]
+		},
 	},
 }
