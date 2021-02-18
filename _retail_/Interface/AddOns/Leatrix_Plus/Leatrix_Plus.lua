@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.14 (22nd January 2021)
+-- 	Leatrix Plus 9.0.16 (18th February 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.14"
+	LeaPlusLC["AddonVer"] = "9.0.16"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -5627,6 +5627,7 @@
 		if LeaPlusLC["LockoutSharing"] == "On" then
 			-- Check the display menu option, update the game options panel and lockout changes
 			ShowAccountAchievements(true)
+			InterfaceOptionsSocialPanelShowAccountAchievments:SetChecked(true)
 			InterfaceOptionsPanel_CheckButton_Update(InterfaceOptionsSocialPanelShowAccountAchievments)
 			InterfaceOptionsSocialPanelShowAccountAchievments:Disable()
 			InterfaceOptionsSocialPanelShowAccountAchievments:SetAlpha(0.5)
@@ -10504,6 +10505,17 @@
 					table.insert(UISpecialFrames, "LeaPlusGlobalHelpPanel")
 				end
 				if LeaPlusLC.HelpFrame:IsShown() then LeaPlusLC.HelpFrame:Hide() else LeaPlusLC.HelpFrame:Show() end
+				return
+			elseif str == "who" then
+				-- Print out who list URLs
+				ChatFrame1:Clear()
+				local realmName = gsub(GetRealmName(), " ", "-")
+				for i = 1,C_FriendList.GetNumWhoResults() do
+					local p = C_FriendList.GetWhoInfo(i)
+					if not string.find(p.fullName, "-") then
+						print("https://worldofwarcraft.com/en-gb/character/eu/" .. realmName .. "/" .. p.fullName .. "/collections/pets")
+					end
+				end
 				return
 			elseif str == "admin" then
 				-- Preset profile (used for testing)

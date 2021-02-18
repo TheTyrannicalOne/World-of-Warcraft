@@ -1,64 +1,195 @@
-2.2.3 Release Notes
+2.2.4 Release Notes
 Contributions made by Gold:
-* isyearly update for cots
-* removed torghast layer9
-
-Contributions made by mogwai316:
-* Added Locked Toolbox and a couple HQTs
-* Added Velkein (Necrolord follower from Torghast)
-* Added Malfunctioning Goliath Gauntlet - Moved Mark of Purity from Toys-Drops to Toys-Emissary Quests - Added Empowerment quest in Shadowmourne questline
-* Added some new weeklies
-* Added Flexing Phalanges
-* Necrolord weekly and HQTs
-* Added Bloodfeaster Spiderling to Queen's Conservatory drops, and a couple more Necrolord HQTs
-* Added Forgemaster Madalav questID/coords - Updated tier 3 version of "A Rare and Unusual Spirit"
-* Moved Grand Marshal Mudrag from Venthyr vendors to Revendreth vendors
-* Phylactery of the Dead Conniver is obtainable now
-
-Contributions made by Dmitry Volodin:
-* The Alliance Dun Morogh quest "The Public Servant" is now marked as a Yearly quest to match the behaviour of the game.
+* parsing
+* panda spirit pets
+* battleground note upate
+* more tahonta infos
 
 Contributions made by ImUnicke:
-* fixed/consolidated logic for collecting factions and items tied to factions
-* fixed Necrolord Tier 1 stiching table group
-* minor additions and fixes
-* 'maps' tech now handles Faction groups appropriately - moved the dynamic 'Guild' Faction into the Factions category instead of being under Outdoor Zones - consolidated A/H faction tagging via sharedData
-* added descriptions of requirement for rank 3 workshop quest (marked removed on wowhead but what do they know, I just did it today!)
-* modified minilist to remember whether it was fully-collapsed by the user so that it will not re-expand itself when changing location
-* modified logic for coloring group names to be more consistent - fixed sorting of the top-level groups in the minilist when groups are colorized
-* couple random things from today's travels in the shadowlands...
-* added/stubbed remaining 'Return Lost Souls' sanctum weeklies
-* consolidated covenant layouts/callings
-* Merge branch 'master' of https://github.com/DFortun81/AllTheThings - reparse
-* added version number to the current 'mode' string (maybe people like this?)
-* various SL updates
+* moved Maw weeklies into their own header for easier tracking - added bi-weekly Hunt headers with tracking (only shadehound has a collectible from them)
+* 'The SL' is now just 'SL' in Source tooltips - added an option to allow wrapping Source information in tooltips because some people prefer taller tooltips with less readability
+* added logic to adjust the indentation of rows within an ATT window such that the row information is always left-aligned within the window (this should make long quest chain requirements MUCH easier to view) - fixed logic for adding the 'No entries match your filters' row so that it only displays if there are actually no visible groups within the window
+* fixed quest chain requirements heirarchy when passing through a class-specific quest split within a generic quest chain using the 'Nested Quest Chain Requirements' Feature
+* used locale table in a couple places for tooltip info - row indent adjustment only takes place if there is adjusting to be done
+* fixed expanding groups for popout windows of Items
+* fixed current Hunt name
+* added Necrolord item from Maldraxxus rare
+* finally killed Reekmonger, the worst-conceptualized rare spawn in the game - collecting info about 'trainees' which will actually spawn the lootable 'Dirty Glinting Object'
+* added Ember Court RSVP quests + organized some RSVP HQTs - added another Trainee ID which drops lootables
+* marked 'Bell or Remembrance' and respective follow-ups as Venthyr-only based on reported non-evidence of non-Venthyr acquisition
+* added corresponding cost items to Ardenweald Gourmand since the items do appear on various other vendors as well
+* added another Trainee confirmed to drop lootables
+* moved all Kyrian covenant achieves into the Path of Ascension since all of them are obtained via that system - quest ID for Gelloh - couple updates for Venthyr/Ember Court
 * Merge branch 'master' of https://github.com/DFortun81/AllTheThings
-* testing mount collection logic/fanfare
-* mount testing
-* fixed mount collection logic with rare find sound
-* some 'new pet' comments snuck in
-* questID for the Skeletal Hand Fragments
-* added an Ember Court Tier 3 quest - added info/note about 'Forgotten Village'
-* plotting TomTom waypoints from ATT groups will now include any description for those groups
+* git really really does not like simultaneous changes within a single file which both shift lines... oof... hopefully i caught everything correctly - fixed some locale abbreviations in Source lines since the format slightly changed
+* fixed current Maw Hunt name
+* fixed races/classes swap
+* added in-bag quest item
+* bunch of various Garrison things that were unsorted/missing/inconsistent between A/H - maldraxxus epic calling box can also drop the necroray egg - added a creature for Field Repair Bot 110G drop
+* consolidated a lot of Fishing daily rewards from the daily city fishing quests - added some crs for visibility - few more Garrison adjustments
+* added crs for Covenant Command Tables
+* skip showing Sources for Things which have a 'cost' using the Thing showing the tooltip (i.e. pet charms no longer show a billion 'Sources' since those are actually Vendors which sell Things which use the pet charm as a 'cost')
+* tagged New Player Experience quests in Org & SW
+* fixed category heirarchy for Old Barrens Quests - added some altQuests to Samophlange questline in N. Barrens since they prevent a character from aqcuiring post-4.0 versions of the quests - moved Scale of the Sands' Quests into its own Factions file under Tanaris - fixed heirarchy of Scale of the Sands Quests to represent their actual collectibility (enjoy your new Quest +1's)
+* fell into a bit of a 'Factions' clean-up spree rabbithole... * use 'crs' instead of 'creatureID' except when the faction is specifically a freindship faction with that creature * nested under a 'Faction' header * only 1 header of a faction is set as collectible in a zone category for factions which are shared between zones * some factionsa re now collectible since they are actually collectible in ATT (probably old data from before factions could be collectible?)
+* couple items from Dirty object + followers which will not spawn it
+* added factionID to key generation so faction groups can be properly hashed - no longer need COMPAINON_LEARNED/UNLEARNED events because they always trigger corresponding NEW_PET/MOUNT events as well which handle collection updates in a more efficient way - slight adjustment to quest completion updates - fixed another global variable
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
+* added Night Fae conduit drop
+* couple Abominable Stitching HQT
+* added some Ember court items - couple HQT things
+* few more Venthyr Dredger quests/criteria alignment - various Maldraxxus things
+* re-arranged sourcing of 'Rendle's Big Day' achievement criteria
+* couple quest ID from mixing pool in Maldraxxus - removed/consolidated a Venthyr-only vendor (even though it's accessible to others, it's ltierally unusable to other covenants) - confirmed mail legs from Sinstone Hoarder
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings - reparse
+* cleaned up some API-included Abominable Stitching quest data - removed a Sourced quest from HQT
+* improved logic of MergeProperties such that metatables are also checked for property values to merge - removed deletion of MergeObject sub-groups since sometimes the object being merged should retain its sub-groups - added an additional process to recursively expand Contains content to find additional requirements for a given Item which itself might not be collectible or contain an immediate collectible (i.e. like Crafting Materials, but for anything else which requires the Item) - improved logic for building and retrieving data for the current zone minilist (this also fixes the duplication in minilist when using Debug mode) - moved NPC-skill correlation logic to the addon start up process
+* names of Exalted factions will show with the 'Completed' color to better differentiate them from other faction standing colors
+* added covenant-specific info about Necrolord hearthstone Toy
+* small tweaks/additions
+* harvested from API 2021-02-03 - modified DB compare tool to remove the 'b' tag from items when it is not included in subsequent DB harvests (indicating that an item was errorneously marked by Blizzard as BoP in a previous Harvest) - consolidated itemDB and questDB again instead of worrying about DIFF DBs for each Harvest - various BoE items (previously considered BoP) now respect filters properly as BoE items within ATT (including BoA items, technically) - unused debugging code (will probably delete later idk)
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings - reparsed - added 'BoA' to Setting text concerning 'BoE' items since BoA items are now treated as BoE in the context of BoE filtering in ATT
+* couple HQTs
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
+* drop API races tag for neutral quest
+* added logic to allow for shared, localized descriptions by comon NPCID
+* added a few more garrison mission rewards
+* added Ember Court RSVP for Tier 3 - added missing JC WQ - reward from Ember Court - added Ember Court consumable - extensive clean up in BRF to make sure loot and items match what actually drop in-game
+* removed HFC Tier tokens (the direct item drops as part of each loot table) [will try to symlink the tokens to remove unobtainable duplication]
+* fixed symlink logic using 'contains' to account for table values on the filtered group - symlinked all the removed tier tokens in HFC
+* small fix to Contains for things which already have sub-items
+* added a bunch of Ember Court things - added Ember Court HQTs - hearthstone item/toy from Garrison missions
+* modified parser to work with string values for 'item' type costs so that modID items can be used as 'cost' accurately
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
+* modified logic to cache items using their applied modID if available - modified cache lookup logic to include modID if available - modified logic to cache cost using the direct string value if necessary since this is how modItem keys are currently stored - modified logic to search for an item link to utilize the modID properly if available - removed some obsolete code - added example modItem cost to Venthyr vendor
+* couple garrison mission items - changed an HQT description
+* major overhaul to modID treatment on everything... but hopefully more accurate now for sources/etc. - storing cost items with modID requirements using decimals instead of strings for ease of use - adjusted parser to work with the different format of moditem cost value
+* further adjustment to single group match in search results
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
+* fix standalone item popouts
+* adjustments to ensure source harvesting still works
+* stopped Parser from forcing the 'Consumable' filter onto items, causing them to effectively disappear from the Main List. Enjoy your -1's or +1's depending on if you had them already - removed some arbitrary filtering of Consumable things - added faction tagging back to island exp. vendors
+* re-arranged shadowlands covenants such that they are listed under the Expansion Features > Shadowlands category, and dynamically displayed in the respective Covenant maps. This should help cut-down on the Shadowlands Zone bloat which is mostly unobtainable for any given character - fixed bug when cursoring over a battle pet row
+* incorporated suggested changes from (#695) [which surprisingly works with ArkInventory] and hopefully provides the same lag-reduction as originally intended (fixes #695)
+* some Covenant adjustments
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
+* Leafadore is actually usable by all Covenants, as all battle pets should be (cough Jiggles cough)
+* finally finished 'It's in the Mix' and added last quest ID - mapID for Heart of the Forest - HQT for first kill of amalgamation of light
+* slight adjustments to minilist location update logic
+* added Tier 4 Ember Court unlock quest
+* couple Garrison mission items - Ember Court death + Tier 4 stuff - various HQT
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
+* removed event filter from love tokens.... probably have to review the filter logic regarding arbitrary filters and potentially adjust the source or filter logic to appropriately filter correctly
+* some arbitrary filtering logic to not exclude Things (and their sub-Things) simply because they have a manually-assigned misc. filterID
+* 20 Souls weekly quests for Kyrian/Venthyr
 
-Contributions made by Gromwind:
-* Added quest A Spirit's Duty to Queen's Conservatory.
-* Added HQTs relating to WQ 'A Few Bumps Along the Way' in Maldraxxus.
-* Added HQT for two weapon enchantment illusions.
-* Removed Gormbore trash loot description post hotfix.
-* Added HQT for Gormbore.
+Contributions made by mogwai316:
+* Added intro quests for Ohm of Meditation - Removed Deathbringer achievement
+* Added a conservatory quest, updated a couple others
+* Added a couple new Necrolord weeklies
+* Added/updated some items from treasure chests in Revendreth
+* Added Depraved Darkblade's Epaulets
+* Added new Ohm quest and an HQT
+* Added Lucky Yun, Snowstorm, Moon-Touched Netherwhelp. Fixed some things that were not in alphabetic order.
+* Added Abomination Station tier 3 quests
+* Added new Ohm quest and Necrolord weeklies
+* Bonehoof Tauralus mount is now obtainable (for Necrolords with renown >= 32)
+* Marked 4 Legion Rank 3 recipes as unobtainable (came from Legion RBG wins but haven't been seen since Legion ended)
+* Fixed a few trinkets that were incorrectly showing up as collectible things
+* Minor updates for Queen's Conservatory tier 4 and marked a Kyrian quest as weekly
+* Added some new quests for this week
 
 Contributions made by slumber:
-* added reverent sets for kyrian's trial of humility
-* more unsorted.  why did i start doing this lmfao
-* let me reiterate that i am dumb
-* moved twisting corridors quests to hqt since they apparently do not reset
-* added a couple missing illusions
+* a bunch of little fixes/additions
+* weather-beaten journal was being a little by├»tch
+* added path of ascension mapID
+* a bunch of coords/some hqt for legion monk class hall
+* fixed titleID for "the proud" so it no longer shows as "retrieving data"
+* corrected crs for stone legion generals in nathria
+* more of My Sworn Enemy, The Ember Court
+* i hate it here (at the ember court)
+* first 2 mirror repair sets done.  ugh
+* (cups hands around mouth) thE MARIANAS TREEEEEEEEEEEEEEENCHHHHH
+* some missing alliance sourcequests in val'sharah
+* matchymatched venthyr/night fae renown descriptions for consistency
+* some more missing legion sourcequest and treasure stuff
+* some more legion monk coords
+* more legion monk junk
+* a couple calling quest corrections
+* nazjatar hqt organization for my sanity
+* started next set of venthyr mirrors, will finish tomorrow (just pushing what i have so far to minimize conflicts)
+* ember court sighhhhhhhhhhh
+* this week's mirror quests + night fae calling quest correction
+* more legion monk coords
+* corrected mapID for a revendreth vendor + added "cost" to dredger barrow racer
+* new venthyr adventurer
+* part of a missing bfa questline (will finish when i am not sleepyslumber)
+* some more missing bfa shenaniganery (still not done)
+* some more missing bfa quests
+* cleaned up some formatting (mostly timewalking)
+* fixed crs for denathrius in nathria
+* a missing zone reward, + internal documentation in case anybody needs to look up why there are 2 items with the same name
+* added some more missing bfa quests
+* added daily tag to some treasures in maldraxxus (more might still need it)
+* a couple more missing bfa quests, fixed ascended council hqt
+* some bastion treasure updates
+* more treasure additions/fixes
+* why does god allow suffering
+* description adjustment because i have a Brain Problem SituationÔäó
 
-Contributions made by Crieve:
-* The field "reqlvl" has been baked into the "lvl" field as an alternate. They are now functionally and logically identical between Classic, TBC, and Retail versions of ATT.
-* Now exporting the filter field "f" for items. (Needed for Classic.)
+Contributions made by Dmitry Volodin:
+* Just some formatting in source
+* Shorten one Russian line, still need to verify and fix more
+* Typo in ru localization
+* Moonkin and Cenarion Hatchlings are no longer beeing sold so mark them as removed from game in species tabs (they were already marked as removed in game shop tab), fixes #680
+* Add She Had a Stone Heart to Castle Nathria drops, fixes #683
+* Update Russian localization
+* Update ru localization
+* Just some comments
+* ru localization update
+* Added Steamscale Incinerator to In-Game Shop->Mounts. It was added before but only to Mounts->In-Game Shop, fixes #687
+* parse
+* Was able to pick up Adventurers Wanted: Blackrock Depths 28068 on my lvl 60 main so removed description saying you can't pick it up above level 56 I'm not even sure it's a breadcrumb anymore, cuase I have all questlines completed here
+* Added Cataclysm: Onward to Adventure in Kalimdor for Horde, part of #688
+* hidden quest trigger, part of #688
+* Removed some stuff in Chamber of Herat that we can't track properly, no big deal
+* Added a bunch of removed quests, part of #688
+* Added "Heritage of Highmountain" quest, part of #688
+* More Russian localization
+* Aaand a bit more sync
+* Added some legacy quests for #398 (#696)
+* Added coords to the rest of Love is in the Air quests
+* Fixed a bunch of models, fixes #681
+* Fix last commit
+* Sync ru translation
+
+Contributions made by zenith:
+* Slightly altered the description how to spawn the extra boss.  (also my first test commit)
+* Forgot categories.lua :)
+* Revert "Forgot categories.lua :)"
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
+* addded npc location for a breadcrumb quest for love is in the air
+* changed coordinates to the right quest.
+* Added description to lunar festival quests.
 
 Contributions made by henbe:
-* Update enUS.lua (#675)
+* Russian UI Localization  (#676)
+* Ru localization (#682)
+* Update ruRU.lua (#684)
+* Update ruRU.lua (#685)
+* Update ruRU.lua (#686)
+* ru localization (#690)
+* Ru localization (#698)
+
+Contributions made by Crieve:
+* Removing "Invalid" (0) filterID values.
+* Parser now supports explorationID. (For Classic)
+* Parser now also exports a sorted Item ID, Item Name file for debugging.
+* Fixed a bug with One-Handed Axe filter types Classic and TBC.
+* Standalone Items are no longer displayed underneath a header when popped out by themselves.
+
+Contributions made by Gromwind:
+* Champion's Pelt (Unsorted -> Path of Ascension materials)
+* Fixing some incorrect source quests in Maldraxxus (Theater of Pain storyline)
+* Added some High Inquisitor common boss drops
 

@@ -1,109 +1,1428 @@
-2/9 01:48:44.977  Client Initialize.
-2/9 01:48:52.590  Initial Hotfixes: Requested
-2/9 01:48:53.534  Initial Hotfixes: Received
-2/9 01:48:54.861  Initial Hotfixes: Applied
-2/9 01:48:57.538  Loading Screen Enable (1) : 1 - 1
-2/9 01:48:59.611  Client Object Manager Initialized: 1
-2/9 01:48:59.981  Succesfully Registered Nameplate
-2/9 01:48:59.981  Loading Screen : Loading : Files Read 1868 : Bytes Read 792790620 : Elapsed MS 2444 : MBytes Per Sec 309.355
-2/9 01:48:59.981  Loading Screen : XML Loaded 0%
-2/9 01:49:02.006  Loading Screen : Loading : Files Read 197 : Bytes Read 16190100 : Elapsed MS 2024 : MBytes Per Sec 7.628
-2/9 01:49:02.006  Loading Screen : XML Loaded 22%
-2/9 01:49:04.098  Loading Screen : Loading : Files Read 25 : Bytes Read 2206596 : Elapsed MS 2091 : MBytes Per Sec 1.006
-2/9 01:49:04.098  Loading Screen : XML Loaded 27%
-2/9 01:49:06.230  Loading Screen : Loading : Files Read 14 : Bytes Read 260824 : Elapsed MS 2132 : MBytes Per Sec 0.117
-2/9 01:49:06.230  Loading Screen : XML Loaded 30%
-2/9 01:49:08.320  Loading Screen : Loading : Files Read 3 : Bytes Read 21378 : Elapsed MS 2091 : MBytes Per Sec 0.010
-2/9 01:49:08.320  Loading Screen : XML Loaded 34%
-2/9 01:49:10.646  Loading Screen : Loading : Files Read 15 : Bytes Read 190484 : Elapsed MS 2325 : MBytes Per Sec 0.078
-2/9 01:49:10.646  Loading Screen : XML Loaded 35%
-2/9 01:49:12.826  Loading Screen : Loading : Files Read 16 : Bytes Read 1142708 : Elapsed MS 2181 : MBytes Per Sec 0.500
-2/9 01:49:12.826  Loading Screen : XML Loaded 39%
-2/9 01:49:15.285  Loading Screen : Loading : Files Read 33 : Bytes Read 3483463 : Elapsed MS 2459 : MBytes Per Sec 1.351
-2/9 01:49:15.285  Loading Screen : XML Loaded 45%
-2/9 01:49:17.309  Loading Screen : Loading : Files Read 4 : Bytes Read 52096 : Elapsed MS 2023 : MBytes Per Sec 0.025
-2/9 01:49:17.309  Loading Screen : XML Loaded 50%
-2/9 01:49:19.613  Loading Screen : XML Loaded 55%
-2/9 01:49:21.618  Loading Screen : Loading : Files Read 518 : Bytes Read 83848 : Elapsed MS 2005 : MBytes Per Sec 0.040
-2/9 01:49:21.618  Loading Screen : XML Loaded 58%
-2/9 01:49:23.704  Loading Screen : Loading : Files Read 1306 : Bytes Read 269272 : Elapsed MS 2087 : MBytes Per Sec 0.123
-2/9 01:49:23.704  Loading Screen : XML Loaded 62%
-2/9 01:49:25.753  Loading Screen : Loading : Files Read 7 : Bytes Read 219210 : Elapsed MS 2048 : MBytes Per Sec 0.102
-2/9 01:49:25.753  Loading Screen : XML Loaded 68%
-2/9 01:49:27.710  Loading Screen Ping SEND
-2/9 01:49:27.812  Loading Screen : Loading : Files Read 22 : Bytes Read 1402587 : Elapsed MS 2059 : MBytes Per Sec 0.650
-2/9 01:49:27.812  Loading Screen : XML Loaded 72%
-2/9 01:49:29.908  Loading Screen : XML Loaded 75%
-2/9 01:49:31.993  Loading Screen : Loading : Files Read 2 : Bytes Read 9224 : Elapsed MS 2085 : MBytes Per Sec 0.004
-2/9 01:49:31.993  Loading Screen : XML Loaded 82%
-2/9 01:49:34.013  Loading Screen : Loading : Files Read 10 : Bytes Read 10657 : Elapsed MS 2019 : MBytes Per Sec 0.005
-2/9 01:49:34.013  Loading Screen : XML Loaded 90%
-2/9 01:49:42.868  Client : Load Map Begin : 1
-2/9 01:49:42.868  Loading Screen : Loading : Files Read 41 : Bytes Read 1768460 : Elapsed MS 8855 : MBytes Per Sec 0.190
-2/9 01:49:42.868  Loading Screen : XML Loaded 100%
-2/9 01:49:44.917  Loading Screen : Loading : Files Read 4502 : Bytes Read 363843710 : Elapsed MS 2049 : MBytes Per Sec 169.345
-2/9 01:49:44.917  Loading Screen : XML Loaded 100%
-2/9 01:49:44.917  Loading Screen : World Loaded 100%
-2/9 01:49:44.922  Client : Load Map End
-2/9 01:49:44.922  Start waiting for active player
-2/9 01:49:44.935  Character Login SEND
-2/9 01:49:47.965  Stop waiting for active player
-2/9 01:49:47.999  Loading Screen : Loading : Files Read 3181 : Bytes Read 206899120 : Elapsed MS 3082 : MBytes Per Sec 64.022
-2/9 01:49:47.999  Loading Screen : XML Loaded 100%
-2/9 01:49:47.999  Loading Screen : World Loaded 100%
-2/9 01:49:47.999  Loading Screen : Spell Loaded 0%
-2/9 01:50:03.610  Active Player Created
-2/9 01:50:03.610  Loading Screen Disable (0)
-2/9 01:50:03.627  Loading Screen : Loading : Files Read 2873 : Bytes Read 53945133 : Elapsed MS 15609 : MBytes Per Sec 3.296
-2/9 01:50:03.627  Loading Screen : XML Loaded 100%
-2/9 01:50:03.627  Loading Screen : World Loaded 100%
-2/9 01:50:03.627  Loading Screen : Spell Loaded 100%
-2/9 01:50:03.627  Spellbook : Make Models Local Begin : 148
-2/9 01:50:03.627  Spellbook : Make Models Local End
-2/9 01:50:40.828  Loading Screen Enable (1) : 1 - 1
-2/9 01:50:41.157  Client Object Manager Destroyed
-2/9 01:50:41.157  Client Object Manager Initialized: 1
-2/9 01:50:41.157  Client : Load Map Begin : 1
-2/9 01:50:42.893  Loading Screen : Loading : Files Read 17321 : Bytes Read 446819563 : Elapsed MS 2066 : MBytes Per Sec 206.254
-2/9 01:50:42.893  Loading Screen : World Loaded 24%
-2/9 01:50:44.885  Client : Load Map End
-2/9 01:50:44.885  Start waiting for active player
-2/9 01:50:44.885  New World Handler : Send World Port Response
-2/9 01:50:44.907  Waiting for active player: 22 ms
-2/9 01:50:45.440  Stop waiting for active player
-2/9 01:50:45.497  Loading Screen : Loading : Files Read 4272 : Bytes Read 366852301 : Elapsed MS 2604 : MBytes Per Sec 134.354
-2/9 01:50:45.497  Loading Screen : World Loaded 100%
-2/9 01:50:46.904  Active Player Created
-2/9 01:50:46.904  Loading Screen Disable (0)
-2/9 01:50:46.904  Loading Screen : Streaming 0
-2/9 01:50:46.904  Loading Screen : World Loaded 100%
-2/9 01:50:46.904  Spellbook : Make Models Local Begin : 148
-2/9 01:50:46.904  Spellbook : Make Models Local End
-2/9 01:52:23.420  Loading Screen Enable (1) : 1153 - 1
-2/9 01:52:24.579  Client Object Manager Destroyed
-2/9 01:52:24.592  Client Object Manager Initialized: 1153
-2/9 01:52:24.592  Client : Load Map Begin : 1153
-2/9 01:52:25.501  Loading Screen : Loading : Files Read 8172 : Bytes Read 250894442 : Elapsed MS 2081 : MBytes Per Sec 114.979
-2/9 01:52:25.501  Loading Screen : World Loaded 15%
-2/9 01:52:27.525  Loading Screen : Loading : Files Read 1641 : Bytes Read 228744452 : Elapsed MS 2024 : MBytes Per Sec 107.780
-2/9 01:52:27.525  Loading Screen : World Loaded 55%
-2/9 01:52:29.577  Loading Screen : Loading : Files Read 2044 : Bytes Read 287250608 : Elapsed MS 2052 : MBytes Per Sec 133.501
-2/9 01:52:29.577  Loading Screen : World Loaded 60%
-2/9 01:52:31.538  Client : Load Map End
-2/9 01:52:31.538  Start waiting for active player
-2/9 01:52:31.538  New World Handler : Send World Port Response
-2/9 01:52:31.548  Waiting for active player: 10 ms
-2/9 01:52:31.956  Stop waiting for active player
-2/9 01:52:32.012  Loading Screen : Loading : Files Read 3824 : Bytes Read 289009222 : Elapsed MS 2435 : MBytes Per Sec 113.191
-2/9 01:52:32.012  Loading Screen : World Loaded 100%
-2/9 01:52:35.378  Active Player Created
-2/9 01:52:35.378  Loading Screen Disable (0)
-2/9 01:52:35.378  Loading Screen : Streaming 0
-2/9 01:52:35.378  Loading Screen : World Loaded 100%
-2/9 01:52:35.378  Spellbook : Make Models Local Begin : 149
-2/9 01:52:35.378  Spellbook : Make Models Local End
-2/9 02:03:58.831  Client Object Manager Destroyed
-2/9 02:04:02.802  Nameplate Shutting Down
-2/9 02:04:03.778  Loading Screen Disable (-1)
-2/9 02:04:04.404  Loading Screen Disable (-1)
-2/9 02:04:04.404  Client Destroy
+2/17 14:54:48.001  Client Initialize.
+2/17 14:54:54.856  Initial Hotfixes: Requested
+2/17 14:54:55.497  Initial Hotfixes: Received
+2/17 14:54:56.917  Initial Hotfixes: Applied
+2/17 14:54:58.008  Loading Screen Enable (1) : 1643 - 1
+2/17 14:54:58.070  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:00.319  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:00.367  Client Object Manager Initialized: 1643
+2/17 14:55:00.367  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:00.761  Succesfully Registered Nameplate
+2/17 14:55:00.762  Loading Screen : Loading : Files Read 1856 : Bytes Read 802279996 : Elapsed MS 2755 : MBytes Per Sec 277.718
+2/17 14:55:00.762  Loading Screen : XML Loaded 0%
+2/17 14:55:00.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:00.864  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:00.969  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:01.077  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:01.183  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:01.294  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:01.409  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:01.513  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:01.617  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:01.738  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:02.057  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:02.159  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:02.284  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:02.390  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:02.491  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:02.592  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:03.464  Loading Screen : Loading : Files Read 236 : Bytes Read 18657520 : Elapsed MS 2702 : MBytes Per Sec 6.585
+2/17 14:55:03.464  Loading Screen : XML Loaded 28%
+2/17 14:55:03.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:03.574  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:03.680  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:03.786  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:03.930  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:04.032  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:04.201  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:04.852  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:05.267  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:05.374  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:05.475  Loading Screen : Loading : Files Read 21 : Bytes Read 219278 : Elapsed MS 2011 : MBytes Per Sec 0.104
+2/17 14:55:05.475  Loading Screen : XML Loaded 38%
+2/17 14:55:05.475  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:05.807  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:05.907  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:06.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:06.112  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:06.384  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:06.615  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:06.742  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:06.843  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:06.944  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:07.147  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:07.264  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:07.365  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:08.413  Loading Screen : Loading : Files Read 50 : Bytes Read 4670851 : Elapsed MS 2938 : MBytes Per Sec 1.516
+2/17 14:55:08.413  Loading Screen : XML Loaded 55%
+2/17 14:55:08.413  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:08.515  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:08.817  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:08.976  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:09.148  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:09.316  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:09.421  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:09.548  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:09.650  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:09.803  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:09.915  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:10.026  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:10.349  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:10.459  Loading Screen : Loading : Files Read 1857 : Bytes Read 1975621 : Elapsed MS 2046 : MBytes Per Sec 0.921
+2/17 14:55:10.459  Loading Screen : XML Loaded 74%
+2/17 14:55:10.459  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:10.564  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:10.667  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:10.774  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:10.916  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:11.049  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:11.172  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:11.288  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:11.388  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:11.511  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:11.612  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:11.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:18.221  Client : Load Map Begin : 1643
+2/17 14:55:18.221  Loading Screen : Loading : Files Read 53 : Bytes Read 1788341 : Elapsed MS 7763 : MBytes Per Sec 0.220
+2/17 14:55:18.221  Loading Screen : XML Loaded 100%
+2/17 14:55:18.221  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:18.341  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:18.442  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:18.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:18.651  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:18.751  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:18.852  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:18.953  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.054  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.155  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.257  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.358  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.460  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.561  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.662  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.768  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.869  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:19.970  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.071  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.172  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.273  Loading Screen : Loading : Files Read 2064 : Bytes Read 257061121 : Elapsed MS 2051 : MBytes Per Sec 119.528
+2/17 14:55:20.273  Loading Screen : XML Loaded 100%
+2/17 14:55:20.273  Loading Screen : World Loaded 60%
+2/17 14:55:20.273  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.374  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.475  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.576  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.677  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.879  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:20.980  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.081  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.127  Client : Load Map End
+2/17 14:55:21.127  Start waiting for active player
+2/17 14:55:21.127  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.127  Character Login SEND
+2/17 14:55:21.127  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.127  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.127  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.137  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.153  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.168  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.184  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.200  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.215  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.231  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.246  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.262  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.278  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.293  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.309  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.325  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.340  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.356  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.371  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.387  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.403  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.418  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.434  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.450  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.465  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.484  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.512  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.528  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.543  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.559  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.575  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.590  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.606  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.621  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.637  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.653  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.668  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.684  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.700  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.731  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.746  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.762  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.778  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.793  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.809  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.825  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.840  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.856  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.871  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.903  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.918  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.934  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.950  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.965  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.981  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:21.996  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.012  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.043  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.059  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.075  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.090  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.106  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.106  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.106  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.106  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.106  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.106  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:22.106  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:23.939  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:23.994  Stop waiting for active player
+2/17 14:55:24.026  Loading Screen : Loading : Files Read 1359 : Bytes Read 110386316 : Elapsed MS 3753 : MBytes Per Sec 28.050
+2/17 14:55:24.026  Loading Screen : XML Loaded 100%
+2/17 14:55:24.026  Loading Screen : World Loaded 100%
+2/17 14:55:24.026  Loading Screen : Spell Loaded 0%
+2/17 14:55:24.026  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:24.030  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+2/17 14:55:37.549  Active Player Created
+2/17 14:55:37.549  Loading Screen Disable (0)
+2/17 14:55:37.549  Loading Screen : Streaming 0
+2/17 14:55:37.549  Loading Screen : XML Loaded 100%
+2/17 14:55:37.549  Loading Screen : World Loaded 100%
+2/17 14:55:37.549  Loading Screen : Spell Loaded 100%
+2/17 14:55:37.549  Spellbook : Make Models Local Begin : 148
+2/17 14:55:37.549  Spellbook : Make Models Local End
+2/17 15:03:37.429  Loading Screen Enable Custom (1) : 1642
+2/17 15:03:38.701  Client Object Manager Destroyed
+2/17 15:03:38.701  Client Object Manager Initialized: 1642
+2/17 15:03:38.701  Client : Load Map Begin : 1642
+2/17 15:03:39.449  Loading Screen : Loading : Files Read 23731 : Bytes Read 550318538 : Elapsed MS 2021 : MBytes Per Sec 259.686
+2/17 15:03:39.449  Loading Screen : World Loaded 14%
+2/17 15:03:41.477  Loading Screen : Loading : Files Read 2637 : Bytes Read 237130590 : Elapsed MS 2028 : MBytes Per Sec 111.512
+2/17 15:03:41.477  Loading Screen : World Loaded 60%
+2/17 15:03:43.510  Loading Screen : Loading : Files Read 2030 : Bytes Read 251210032 : Elapsed MS 2033 : MBytes Per Sec 117.842
+2/17 15:03:43.510  Loading Screen : World Loaded 61%
+2/17 15:03:43.932  Client : Load Map End
+2/17 15:03:43.932  Start waiting for active player
+2/17 15:03:43.932  New World Handler : Send World Port Response
+2/17 15:03:43.940  Waiting for active player: 9 ms
+2/17 15:03:44.146  Stop waiting for active player
+2/17 15:03:45.985  Active Player Created
+2/17 15:03:45.985  Loading Screen Disable (0)
+2/17 15:03:45.985  Loading Screen : Loading : Files Read 3051 : Bytes Read 119729364 : Elapsed MS 635 : MBytes Per Sec 179.815
+2/17 15:03:45.985  Loading Screen : World Loaded 100%
+2/17 15:03:45.985  Spellbook : Make Models Local Begin : 148
+2/17 15:03:45.985  Spellbook : Make Models Local End
+2/17 15:06:15.591  Client Object Manager Destroyed
+2/17 15:06:19.477  Nameplate Shutting Down
+2/17 15:06:20.402  Loading Screen Disable (-1)
+2/17 15:06:20.618  Loading Screen Disable (-1)
+2/17 15:06:20.618  Client Destroy
