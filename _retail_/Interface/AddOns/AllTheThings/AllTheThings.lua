@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
+--				Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
 local app = select(2, ...);
 local L = app.L;
@@ -1038,7 +1038,7 @@ local function VerifySourceID(item)
 	if item.link and not item.retries then
 		-- quality below UNCOMMON means no source
 		if item.q and item.q < 2 then return true; end
-		
+
 		local linkInfoSourceID = app.GetSourceID(item.link, item.itemID);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
@@ -2528,7 +2528,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						and (not group.achievementID or paramA == "creatureID")
 						-- not for things with a parent unless the parent has no difficultyID
 						and (not group.parent or not group.parent.difficultyID)
-						-- not for group which contains an artifact 
+						-- not for group which contains an artifact
 						and not group.g[1].artifactID
 						-- not for heirlooms
 						and not (group.filterID == 109)
@@ -3456,7 +3456,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 									else
 										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
 									end
-								end								
+								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
@@ -3484,7 +3484,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 									else
 										right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
 									end
-								end								
+								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
@@ -3564,7 +3564,9 @@ app.BuildCrafted_IncludedItems = {};
 app.BuildCrafted = function(item)
 	local itemID = item.itemID;
 	if not itemID then return; end
-	
+
+	-- TODO: similar to 'customCollect' showing in the BuildContains, add a property to items in the crafted contains which shows the crafting Profession
+
 	-- track the starting item
 	tinsert(app.BuildCrafted_IncludedItems, itemID);
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
@@ -3658,7 +3660,7 @@ app.ExpandSubGroups_IncludedItems = {};
 app.ExpandSubGroups = function(item)
 	local itemID = item.modItemID or item.itemID;
 	if not itemID or itemID < 1 or not item.g then return; end
-	
+
 	-- print("ExpandSubGroups",itemID);
 	if not contains(app.ExpandSubGroups_IncludedItems, itemID) then
 		-- track the starting item
@@ -3672,7 +3674,7 @@ app.ExpandSubGroups = function(item)
 				modItemID = GetGroupItemIDWithModID(sub);
 				-- print("Search sub",modItemID)
 				-- find a reference to the item in the DB and add it to the group
-				clone = GetCachedSearchResults("itemID:" .. tostring(modItemID), app.SearchForField, "itemID", modItemID)				
+				clone = GetCachedSearchResults("itemID:" .. tostring(modItemID), app.SearchForField, "itemID", modItemID)
 				if clone then
 					if not clone.g then
 						clone.total = nil;
@@ -3892,17 +3894,13 @@ fieldConverters = {
 	["instanceID"] = function(group, value)
 		CacheField(group, "instanceID", value);
 	end,
-	["itemID"] = function(group, value)
+	["itemID"] = function(group, value, raw)
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
-		-- TODO: when modID eventually gets all fixed to be accurate to in-game, adjust this logic
-		-- if not group.modID or group.modID < 2 then
-		-- cache with the modID as a decimal
-		CacheField(group, "itemID", GetGroupItemIDWithModID(group) or value);
-		-- else
-		-- 	-- cache items with modID differently so that we can use modID items as lookups to their proper results
-		-- 	-- print("mitemID-cache",value,group.modID)
-		-- 	CacheField(group, "itemID", tostring(value) .. ":" .. tostring(group.modID));
-		-- end
+		if raw then
+			CacheField(group, "itemID", value);
+		else
+			CacheField(group, "itemID", group.modItemID or GetGroupItemIDWithModID(group) or value);
+		end
 	end,
 	["mapID"] = function(group, value)
 		CacheField(group, "mapID", value);
@@ -3967,7 +3965,7 @@ fieldConverters = {
 				if v[1] == "n" then
 					rawget(fieldConverters, "creatureID")(group, v[2]);
 				elseif v[1] == "i" then
-					rawget(fieldConverters, "itemID")(group, v[2]);
+					rawget(fieldConverters, "itemID")(group, v[2], true);
 				elseif v[1] == "o" then
 					rawget(fieldConverters, "objectID")(group, v[2]);
 				end
@@ -4003,7 +4001,7 @@ fieldConverters = {
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
 					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
-						CacheField(group, "itemID", v[2]);
+						rawget(fieldConverters, "itemID")(group, v[2], true);
 					end
 				elseif v[1] == "c" and v[2] > 0 then
 					CacheField(group, "currencyID", v[2]);
@@ -4028,20 +4026,15 @@ fieldConverters = {
 	end,
 };
 CacheFields = function(group)
-	-- local n = 0;
-	-- local clone = {};
-	-- for key,value in pairs(group) do
-	-- 	n = n + 1;
-	-- 	rawset(clone, n, key);
-	-- end
-	-- for i=1,n,1 do
-	-- 	_cache = rawget(fieldConverters, rawget(clone, i));
-	-- 	if _cache then _cache(group, rawget(group, rawget(clone, i))); end
-	-- end
-	-- iteration only moves across raw values
-	for key,value in pairs(group) do
+	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
+	local n, keys = 0, {};
+	for key,_ in pairs(group) do
+		n = n + 1;
+		rawset(keys, n, key);
+	end
+	for _,key in pairs(keys) do
 		_cache = rawget(fieldConverters, key);
-		if _cache then _cache(group, value); end
+		if _cache then _cache(group, rawget(group,key)); end
 	end
 end
 end)();
@@ -5044,7 +5037,7 @@ local function RefreshMountCollection(newMountID)
 		-- Wait a frame before harvesting item collection status.
 		coroutine.yield();
 		-- print("Refresh to check progress after collection...")
-		app:RefreshData(false, true);		
+		app:RefreshData(false, true);
 
 		-- Wait 2 frames before refreshing states.
 		coroutine.yield();
@@ -5293,7 +5286,7 @@ local function AttachTooltip(self)
 		end
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
-		if link then 
+		if link then
 			if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == link) then
 				return true
 			else
@@ -5301,24 +5294,24 @@ local function AttachTooltip(self)
 			end
 		else
 			 target = select(2, self:GetUnit());
-			if target then 
+			if target then
 				if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == target) then
 					return true
 				else
-					self.AllTheThingsProcessing = target	
+					self.AllTheThingsProcessing = target
 				end
 			else
 				spellID = select(2, self:GetSpell());
-				if spellID then 
+				if spellID then
 					if self.AllTheThingsProcessing and (self.AllTheThingsProcessing == spellID) then
 						return true
-					else	
+					else
 						self.AllTheThingsProcessing = spellID
 					end
-				end	
+				end
 			end
 		end
-				
+
 		--[[--
 		-- Debug all of the available fields on the tooltip.
 		for i,j in pairs(self) do
@@ -7611,7 +7604,7 @@ local appearanceFields = {
 	end,
 	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
 	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t));
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
 		return rawget(t, "modItemID");
 	end,
 	["link"] = function(t)
@@ -8342,8 +8335,8 @@ app.CollectibleAsQuest = function(t)
 	and app.CheckCustomCollects(t)
 	-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 	-- TODO: revisit if party sync option becomes a thing
-	and ((not t.isBreadcrumb and not t.DisablePartySync) or
-		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.Settings:Get("AccountMode"))));
+	and (app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
+		(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT)));
 end
 local function RefreshQuestCompletionState(questID)
 	if questID ~= nil then
@@ -9395,7 +9388,7 @@ end
 -- Verify no infinite parent recursion exists for a given group
 app.VerifyRecursion = function(group, checked)
 	if type(group) ~= "table" then return; end
-	if not checked then 
+	if not checked then
 		checked = { };
 		-- print("test",group.key,group[group.key]);
 	end
@@ -10019,7 +10012,7 @@ end
 -- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
 app.CheckCustomCollects = function(t)
 	-- no customCollect, or Account/Debug mode then disregard
-	if not t.customCollect or app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode") then return true; end
+	if app.MODE_DEBUG or app.MODE_ACCOUNT or not t.customCollect then return true; end
 	for k,c in ipairs(t.customCollect) do
 		if not app.CustomCollects[c] then
 			return false;
@@ -10698,7 +10691,7 @@ local function AdjustRowIndent(row, indentAdjust)
 	end
 	if row.Texture then
 		-- only ever LEFT point set
-		-- for i=1, row.Texture:GetNumPoints() do   
+		-- for i=1, row.Texture:GetNumPoints() do
 		-- 	print(row.Texture:GetPoint(i));
 		-- end
 		-- print("---")
@@ -10723,6 +10716,51 @@ local function SetRowData(self, row, data)
 			-- This means the link is still rendering
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
+		-- WARNING: DEV ONLY START
+		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
+		elseif data.reSource and (not data.q or data.q > 1) then
+			-- If it doesn't, the source ID will need to be harvested.
+			local s, dressable = GetSourceID(text, data.itemID);
+			if s and s > 0 then
+				data.reSource = nil;
+				-- only save the source if it is different than what we already have
+				if not data.s or data.s < 1 or data.s ~= s then
+					print("SourceID Update",data.text,data.s,"=>",s);
+					data.s = s;
+					if data.collected then
+						data.parent.progress = data.parent.progress + 1;
+					end
+					local item = AllTheThingsHarvestItems[data.itemID];
+					if not item then
+						item = {};
+					end
+					if data.bonusID then
+						local bonuses = item.bonuses;
+						if not bonuses then
+							bonuses = {};
+							item.bonuses = bonuses;
+						end
+						bonuses[data.bonusID] = s;
+					else
+						local mods = item.mods;
+						if not mods then
+							mods = {};
+							item.mods = mods;
+						end
+						mods[data.modID or 0] = s;
+					end
+					-- print("NEW SOURCE ID!",text,s);
+					AllTheThingsHarvestItems[data.itemID] = item;
+				end
+			else
+				--print("NARP", text);
+				data.s = nil;
+				data.reSource = nil;
+				data.parent.total = data.parent.total - 1;
+			end
+		else
+			data.reSource = nil;
+		-- WARNING: DEV ONLY END
 		end
 		local leftmost = row;
 		local relative = "LEFT";
@@ -15132,14 +15170,14 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				self:Update();
 			end
 			-- World Quests (Tasks)
-			self.MergeTasks = function(self, mapObject, includeAll, includePermanent, includeQuests)	
+			self.MergeTasks = function(self, mapObject, includeAll, includePermanent, includeQuests)
 				local mapID = mapObject.mapID;
 				if not mapID then return; end
 				local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
 				-- print(#pois,"WQ in",mapID);
 				if pois then
 					for i,poi in ipairs(pois) do
-						-- only include Tasks on this actual mapID since each Zone mapID is checked individually						
+						-- only include Tasks on this actual mapID since each Zone mapID is checked individually
 						if poi.mapID == mapID then
 							local questObject = GetPopulatedQuestObject(poi.questId);
 							if includeAll or
@@ -15158,7 +15196,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							end
 						end
 					end
-				end				
+				end
 			end
 			-- Storylines/Map Quest Icons
 			self.MergeStorylines = function(self, mapObject, includeAll, includePermanent, includeQuests)
@@ -15261,7 +15299,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 							-- Merge Storylines for Zone
 							self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
-							
+
 							MergeObject(mapObject.g, subMapObject);
 						end
 					end
@@ -15572,6 +15610,361 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 	end
 end);
 
+-- WARNING: DEV ONLY START
+--[[--
+-- Uncomment this section if you need to enable Debugger:
+-- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
+app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
+app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
+	local _,event = CombatLogGetCurrentEventInfo();
+	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
+		RefreshQuestCompletionState()
+	end
+end
+-- This event is helpful for world objects used as treasures. Won't help with objects without rewards (e.g. cat statues in Nazjatar)
+app:RegisterEvent("LOOT_OPENED")
+app.events.LOOT_OPENED = function()
+	local guid = GetLootSourceInfo(1)
+	if guid then
+		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
+		if(type == "GameObject") then
+		  local text = GameTooltipTextLeft1:GetText()
+		  print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
+		  RefreshQuestCompletionState()
+	   end
+	end
+end
+app:GetWindow("Debugger", UIParent, function(self)
+	if not self.initialized then
+		self.initialized = true;
+		self.data = {
+			['text'] = "Session History",
+			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
+			["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
+			['visible'] = true,
+			['expanded'] = true,
+			['back'] = 1,
+			['options'] = {
+				{
+					['text'] = "Clear History",
+					['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath.blp",
+					["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
+					['visible'] = true,
+					['count'] = 0,
+					['OnClick'] = function(row, button)
+						local copy = {};
+						for i,o in ipairs(self.rawData) do
+							tinsert(copy, o);
+						end
+						if #copy < 1 then
+							app.print("There is nothing to clear.");
+							return true;
+						end
+						row.ref.count = row.ref.count + 1;
+						tinsert(self.data.options, {
+							['text'] = "Restore Button " .. row.ref.count,
+							['icon'] = "Interface\\Icons\\ability_monk_roll.blp",
+							["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
+							['visible'] = true,
+							['data'] = copy,
+							['OnClick'] = function(row, button)
+								for i,info in ipairs(row.ref.data) do
+									MergeObject(self.data.g, CreateObject(info));
+									MergeObject(self.rawData, info);
+								end
+								self:Update();
+								return true;
+							end,
+						});
+						wipe(self.rawData);
+						wipe(self.data.g);
+						for i=#self.data.options,1,-1 do
+							tinsert(self.data.g, 1, self.data.options[i]);
+						end
+						self:Update();
+						return true;
+					end,
+				},
+			},
+			['g'] = {},
+		};
+		self.rawData = {};
+
+		local AddObject = function(info)
+			-- Bubble Up the Maps
+			local mapInfo;
+			local mapID = app.GetCurrentMapID();
+			if mapID then
+				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
+				if pos then
+					local px, py = pos:GetXY();
+					info.coord = { px * 100, py * 100, mapID };
+				end
+				repeat
+					mapInfo = C_Map_GetMapInfo(mapID);
+					if mapInfo then
+						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+						mapID = mapInfo.parentMapID
+					end
+				until not mapInfo or not mapID;
+			end
+
+			MergeObject(self.data.g, CreateObject(info));
+			MergeObject(self.rawData, info);
+			self:Update();
+		end
+
+
+		-- Setup Event Handlers and register for events
+		self:SetScript("OnEvent", function(self, e, ...)
+			print(e, ...);
+			if e == "VARIABLES_LOADED" then
+				if not AllTheThingsDebugData then
+					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
+					app.SetDataMember("Debugger", nil);
+				end
+				self.rawData = AllTheThingsDebugData;
+				self.data.g = CreateObject(self.rawData);
+				for i=#self.data.options,1,-1 do
+					tinsert(self.data.g, 1, self.data.options[i]);
+				end
+				self:Update();
+			elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
+				-- Bubble Up the Maps
+				local mapInfo, info;
+				local mapID = app.GetCurrentMapID();
+				if mapID then
+					repeat
+						mapInfo = C_Map_GetMapInfo(mapID);
+						if mapInfo then
+							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+							mapID = mapInfo.parentMapID
+						end
+					until not mapInfo or not mapID;
+
+					MergeObject(self.data.g, CreateObject(info));
+					MergeObject(self.rawData, info);
+					self:Update();
+				end
+			elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
+				MerchantFrame_SetFilter(MerchantFrame, 1);
+				C_Timer.After(0.6, function()
+					local guid = UnitGUID("npc");
+					local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
+					if guid then ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
+					if npc_id then
+						npc_id = tonumber(npc_id);
+
+						-- Ignore vendor mount...
+						if npc_id == 62822 then
+							return true;
+						end
+
+						local numItems = GetMerchantNumItems();
+						print("MERCHANT DETAILS", ty, npc_id, numItems);
+
+						local rawGroups = {};
+						for i=1,numItems,1 do
+							local link = GetMerchantItemLink(i);
+							if link then
+								local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
+								if extendedCost then
+									cost = {};
+									local itemCount = GetMerchantItemCostInfo(i);
+									for j=1,itemCount,1 do
+										local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
+										if itemLink then
+											-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
+											local m = itemLink:match("currency:(%d+)");
+											if m then
+												-- Parse as a CURRENCY.
+												tinsert(cost, {"c", tonumber(m), itemValue});
+											else
+												-- Parse as an ITEM.
+												tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
+											end
+										end
+									end
+								end
+
+								-- Parse as an ITEM LINK.
+								table.insert(rawGroups, {["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
+							end
+						end
+
+						local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npc_id };
+						info.faction = UnitFactionGroup("npc");
+						info.text = UnitName("npc");
+						info.g = rawGroups;
+						AddObject(info);
+					end
+				end);
+			elseif e == "TRADE_SKILL_LIST_UPDATE" then
+				local tradeSkillID = AllTheThings.GetTradeSkillLine();
+				local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
+				local categoryList, rawGroups = {}, {};
+				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				for i = 1,#categoryIDs do
+					currentCategoryID = categoryIDs[i];
+					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+					if categoryData then
+						if not categories[currentCategoryID] then
+							local category = {
+								["parentCategoryID"] = categoryData.parentCategoryID,
+								["categoryID"] = currentCategoryID,
+								["name"] = categoryData.name,
+								["g"] = {}
+							};
+							categories[currentCategoryID] = category;
+							table.insert(categoryList, category);
+						end
+					end
+				end
+
+				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				for i = 1,#recipeIDs do
+					local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeIDs[i]);
+					if spellRecipeInfo then
+						currentCategoryID = spellRecipeInfo.categoryID;
+						if not categories[currentCategoryID] then
+							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+							if categoryData then
+								local category = {
+									["parentCategoryID"] = categoryData.parentCategoryID,
+									["categoryID"] = currentCategoryID,
+									["name"] = categoryData.name,
+									["g"] = {}
+								};
+								categories[currentCategoryID] = category;
+								table.insert(categoryList, category);
+							end
+						end
+						local recipe = {
+							["recipeID"] = spellRecipeInfo.recipeID,
+							["requireSkill"] = tradeSkillID,
+							["name"] = spellRecipeInfo.name,
+						};
+						if spellRecipeInfo.previousRecipeID then
+							recipe.previousRecipeID = spellRecipeInfo.previousRecipeID;
+						end
+						if spellRecipeInfo.nextRecipeID then
+							recipe.nextRecipeID = spellRecipeInfo.nextRecipeID;
+						end
+						table.insert(categories[currentCategoryID].g, recipe);
+					end
+				end
+
+				-- Make each category parent have children. (not as gross as that sounds)
+				for i=#categoryList,1,-1 do
+					local category = categoryList[i];
+					if category.parentCategoryID then
+						local parentCategory = categories[category.parentCategoryID];
+						category.parentCategoryID = nil;
+						if parentCategory then
+							table.insert(parentCategory.g, 1, category);
+							table.remove(categoryList, i);
+						end
+					end
+				end
+
+				-- Now merge the categories into the raw groups table.
+				for i,category in ipairs(categoryList) do
+					table.insert(rawGroups, category);
+				end
+				local info = {
+					["professionID"] = tradeSkillID,
+					["icon"] = C_TradeSkillUI.GetTradeSkillTexture(tradeSkillID),
+					["name"] = C_TradeSkillUI.GetTradeSkillDisplayName(tradeSkillID),
+					["g"] = rawGroups
+				};
+				MergeObject(self.data.g, CreateObject(info));
+				MergeObject(self.rawData, info);
+				self:Update();
+			elseif e == "QUEST_DETAIL" then
+				local questStartItemID = ...;
+				local questID = GetQuestID();
+				if questID == 0 then return false; end
+				local npc = "questnpc";
+				local guid = UnitGUID(npc);
+				if not guid then
+					npc = "npc";
+					guid = UnitGUID(npc);
+				end
+				local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
+				if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
+				print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id);
+
+				local rawGroups = {};
+				for i=1,GetNumQuestRewards(),1 do
+					local link = GetQuestItemLink("reward", i);
+					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+				end
+				for i=1,GetNumQuestChoices(),1 do
+					local link = GetQuestItemLink("choice", i);
+					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+				end
+				for i=1,GetNumQuestLogRewardSpells(questID),1 do
+					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
+					if garrFollowerID then
+						table.insert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
+					elseif spellID then
+						if isTradeskillSpell then
+							table.insert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
+						else
+							table.insert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
+						end
+					end
+				end
+
+				local info = { ["questID"] = questID, ["g"] = rawGroups };
+				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
+				if npc_id then
+					npc_id = tonumber(npc_id);
+					if type == "GameObject" then
+						info = { ["objectID"] = npc_id, ["text"] = UnitName(npc), ["g"] = { info } };
+					else
+						info.qgs = {npc_id};
+						info.name = UnitName(npc);
+					end
+					info.faction = UnitFactionGroup(npc);
+				end
+				AddObject(info);
+			elseif e == "CHAT_MSG_LOOT" then
+				local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
+				local itemString = string.match(msg, "item[%-?%d:]+");
+				if itemString then
+					local rawGroups = {};
+					local itemID = GetItemInfoInstant(itemString);
+					table.insert(rawGroups, { ["itemID"] = itemID, ["s"] = app.GetSourceID(itemString, itemID) });
+					AddObject({ ["unit"] = j, ["g"] = rawGroups });
+				end
+			end
+		end);
+		self:RegisterEvent("VARIABLES_LOADED");
+		self:RegisterEvent("QUEST_DETAIL");
+		self:RegisterEvent("QUEST_LOOT_RECEIVED");
+		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		self:RegisterEvent("NEW_WMO_CHUNK");
+		self:RegisterEvent("MERCHANT_SHOW");
+		self:RegisterEvent("MERCHANT_UPDATE");
+		self:RegisterEvent("CHAT_MSG_LOOT");
+		--self:RegisterAllEvents();
+	end
+
+	-- Update the window and all of its row data
+	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+	for i,g in ipairs(self.data.g) do
+		if g.OnUpdate then g.OnUpdate(g); end
+	end
+	self.data.index = 0;
+	self.data.back = 1;
+	self.data.indent = 0;
+	BuildGroups(self.data, self.data.g);
+	self:BaseUpdate(true);
+end):Show();
+--]]--
+-- WARNING: DEV ONLY END
 
 hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 	local link = C_ToyBox_GetToyLink(itemID);
@@ -16331,7 +16724,17 @@ app.events.ARTIFACT_UPDATE = function(...)
 	end
 end
 app.events.VARIABLES_LOADED = function()
-	app.Version = GetAddOnMetadata("AllTheThings", "Version");
+	local v = GetAddOnMetadata("AllTheThings", "Version");
+	-- if placeholder exists as the Version tag, then assume we are not on the Release version
+	if string.match(v, "version") then
+		app.Version = "[Git]";
+		-- adjust the Setting screen version display since it was already set from metadata
+		if app.Settings.version then
+			app.Settings.version:SetText("[Git]");
+		end
+	else
+		app.Version = "v" .. v;
+	end
 	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
 	if not AllTheThingsAD then
 		AllTheThingsAD = { };
@@ -16997,7 +17400,7 @@ app.events.QUEST_LOG_UPDATE = function()
 	RefreshQuestCompletionState()
 end
 app.events.QUEST_ACCEPTED = function(questID)
-	if questID then		
+	if questID then
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
 		local freq;
 		if logIndex then

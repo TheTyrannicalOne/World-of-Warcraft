@@ -25,22 +25,21 @@ QuestTogether = {
 				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[53101] = {
+			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[48639] = {
+			["title"] = "Army of the Light",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
-		[40643] = {
-			["title"] = "A Summons From Moonglade",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[51432] = {
@@ -54,9 +53,10 @@ QuestTogether = {
 				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[44989] = {
@@ -71,22 +71,21 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
 		[50606] = {
@@ -105,10 +104,11 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[47105] = {
@@ -117,8 +117,8 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[40643] = {
+			["title"] = "A Summons From Moonglade",
 			["objectives"] = {
 			},
 		},
@@ -126,7 +126,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

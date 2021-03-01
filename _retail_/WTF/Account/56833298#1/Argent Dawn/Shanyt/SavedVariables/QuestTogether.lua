@@ -25,10 +25,9 @@ QuestTogether = {
 				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[56120] = {
@@ -37,10 +36,10 @@ QuestTogether = {
 				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
-		[52342] = {
-			["title"] = "Work Order: Monel-Hardened Hoofplates",
+		[61981] = {
+			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"0/3  ", -- [1]
+				"30/1000 Anima collected", -- [1]
 			},
 		},
 		[49133] = {
@@ -60,9 +59,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[46747] = {
-			["title"] = "Supplies From the Dreamweavers",
+		[62371] = {
+			["title"] = "Tirna Scithe: A Warning Silence",
 			["objectives"] = {
+				"1/1 Tred'ova slain", -- [1]
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"1/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[47129] = {
@@ -76,6 +82,12 @@ QuestTogether = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -96,16 +108,33 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"2/4 Echo of Time", -- [1]
+			},
+		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[54843] = {
+			["title"] = "Remaining Threats",
+			["objectives"] = {
+				"1/12 Rare enemies slain", -- [1]
 			},
 		},
 		[60267] = {
 			["title"] = "Prison of the Forgotten",
 			["objectives"] = {
 				"1/1 Speak with Ve'nari", -- [1]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[62730] = {
@@ -134,10 +163,26 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[51051] = {
-			["title"] = "Supplies Needed: Deep Sea Satin",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/10  ", -- [1]
+			},
+		},
+		[46748] = {
+			["title"] = "Supplies From the Nightfallen",
+			["objectives"] = {
+			},
+		},
+		[57462] = {
+			["title"] = "Dream Catcher",
+			["objectives"] = {
+				"28/200 Shred of Insanity", -- [1]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
 		[31891] = {
@@ -150,55 +195,16 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[46748] = {
-			["title"] = "Supplies From the Nightfallen",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-			},
-		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
-			},
-		},
-		[57462] = {
-			["title"] = "Dream Catcher",
-			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
-			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
-			},
-		},
-		[62371] = {
-			["title"] = "Tirna Scithe: A Warning Silence",
-			["objectives"] = {
-				"1/1 Tred'ova slain", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
-			},
-		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[49032] = {
@@ -207,17 +213,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

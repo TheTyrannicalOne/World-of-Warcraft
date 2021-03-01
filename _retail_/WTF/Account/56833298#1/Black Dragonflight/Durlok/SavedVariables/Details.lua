@@ -21,7 +21,7 @@ _detalhes_database = {
 		["pos"] = {
 		},
 	},
-	["last_version"] = "v9.0.2.8192",
+	["last_version"] = "v9.0.2.8246",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -51,8 +51,8 @@ _detalhes_database = {
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["showamount"] = false,
 			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -128,22 +128,22 @@ _detalhes_database = {
 				["radius"] = 160,
 				["hide"] = false,
 			},
-			["font_size"] = 10,
-			["arrow_anchor_x"] = 0,
 			["point"] = "CENTER",
-			["row_texture"] = "Details Serenity",
-			["use_square_mode"] = false,
-			["scale"] = 1,
+			["arrow_anchor_x"] = 0,
 			["row_height"] = 20,
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
+			["row_texture"] = "Details Serenity",
+			["scale"] = 1,
+			["use_square_mode"] = false,
 			["row_color"] = {
 				0.1, -- [1]
 				0.1, -- [2]
 				0.1, -- [3]
 				0.4, -- [4]
 			},
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["y"] = 1.52587890625e-05,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -151,13 +151,9 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["use_spark"] = true,
-			["y"] = 1.52587890625e-05,
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
+			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -169,17 +165,15 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["author"] = "Details! Team",
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["use_spark"] = true,
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
 	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["last_day"] = "02",
 	["cd_tracker"] = {
 		["enabled"] = false,
 		["cds_enabled"] = {
@@ -202,6 +196,12 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["last_day"] = "21",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -213,7 +213,7 @@ _detalhes_database = {
 	["combat_id"] = 0,
 	["savedStyles"] = {
 	},
-	["combat_counter"] = 14,
+	["combat_counter"] = 18,
 	["force_font_outline"] = "",
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -412,10 +412,10 @@ _detalhes_database = {
 		}, -- [2]
 	},
 	["character_data"] = {
-		["logons"] = 7,
+		["logons"] = 9,
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1613571542,
+		["nextreset"] = 1615246673,
 		["last_version"] = 14,
 	},
 	["announce_cooldowns"] = {
@@ -435,5 +435,6 @@ _detalhes_database = {
 	},
 	["cached_specs"] = {
 		["Player-96-0CBEA15E"] = 104,
+		["Player-67-0E0D50BA"] = 64,
 	},
 }

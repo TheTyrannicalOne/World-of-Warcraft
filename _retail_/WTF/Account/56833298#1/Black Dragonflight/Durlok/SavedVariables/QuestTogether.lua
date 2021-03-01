@@ -25,11 +25,9 @@ QuestTogether = {
 				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[53101] = {
+			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[48639] = {
@@ -38,15 +36,10 @@ QuestTogether = {
 				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
-		[40643] = {
-			["title"] = "A Summons From Moonglade",
-			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[51432] = {
@@ -58,6 +51,12 @@ QuestTogether = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
 				"2/10 Fresh Star Moss", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[44989] = {
@@ -72,27 +71,16 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[42234] = {
-			["title"] = "The Valarjar",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 		[31891] = {
@@ -105,10 +93,22 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
+			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[47105] = {
@@ -117,16 +117,16 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[40643] = {
+			["title"] = "A Summons From Moonglade",
 			["objectives"] = {
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }
