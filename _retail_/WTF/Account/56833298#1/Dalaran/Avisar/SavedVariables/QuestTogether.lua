@@ -19,10 +19,20 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
 		[53436] = {
 			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[54180] = {
@@ -35,9 +45,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[57006] = {
@@ -48,15 +59,16 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
 		[32806] = {
 			["title"] = "The King and the Council",
 			["objectives"] = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
 			},
 		},
 		[39060] = {
@@ -67,10 +79,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[54438] = {
@@ -79,10 +91,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[36615] = {
@@ -92,10 +104,10 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[44989] = {
@@ -117,10 +129,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56119] = {
-			["title"] = "The Waveblade Ankoan",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -147,7 +159,7 @@ QuestTogether = {
 		[42483] = {
 			["title"] = "Put It All on Red",
 			["objectives"] = {
-				"0/1 Steelscale's Fin", -- [1]
+				"0/1  ", -- [1]
 			},
 		},
 		[31891] = {
@@ -182,8 +194,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

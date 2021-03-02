@@ -1,10 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[42234] = {
@@ -28,12 +28,6 @@ QuestTogether = {
 		[57567] = {
 			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-			},
-		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[61981] = {
@@ -100,6 +94,12 @@ QuestTogether = {
 			["title"] = "Talanji's Expedition",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[45381] = {
@@ -201,10 +201,10 @@ QuestTogether = {
 				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[49032] = {
@@ -213,17 +213,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

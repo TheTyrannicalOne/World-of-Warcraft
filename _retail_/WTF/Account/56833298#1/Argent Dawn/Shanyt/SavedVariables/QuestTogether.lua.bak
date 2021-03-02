@@ -1,10 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[42234] = {
@@ -28,12 +28,6 @@ QuestTogether = {
 		[57567] = {
 			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-			},
-		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[61981] = {
@@ -65,6 +59,12 @@ QuestTogether = {
 				"1/1 Tred'ova slain", -- [1]
 			},
 		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"1/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -88,6 +88,12 @@ QuestTogether = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[50606] = {
@@ -173,6 +179,12 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -183,22 +195,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
-			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
-			},
-		},
 		[40329] = {
 			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
 				"2/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[43179] = {
@@ -213,17 +213,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }
