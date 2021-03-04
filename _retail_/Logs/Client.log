@@ -1,170 +1,452 @@
-3/1 12:51:12.856  Client Initialize.
-3/1 12:51:20.680  Initial Hotfixes: Requested
-3/1 12:51:21.508  Initial Hotfixes: Received
-3/1 12:51:22.857  Initial Hotfixes: Applied
-3/1 12:51:43.321  Initial Hotfixes: Requested
-3/1 12:51:44.102  Initial Hotfixes: Received
-3/1 12:51:45.441  Initial Hotfixes: Applied
-3/1 12:52:08.297  Loading Screen Enable (1) : 0 - 1
-3/1 12:52:10.356  Client Object Manager Initialized: 0
-3/1 12:52:10.753  Succesfully Registered Nameplate
-3/1 12:52:10.753  Loading Screen : Loading : Files Read 1933 : Bytes Read 798199632 : Elapsed MS 2457 : MBytes Per Sec 309.818
-3/1 12:52:10.753  Loading Screen : XML Loaded 0%
-3/1 12:52:13.016  Loading Screen : Loading : Files Read 237 : Bytes Read 18691460 : Elapsed MS 2262 : MBytes Per Sec 7.880
-3/1 12:52:13.016  Loading Screen : XML Loaded 28%
-3/1 12:52:15.025  Loading Screen : Loading : Files Read 21 : Bytes Read 219278 : Elapsed MS 2009 : MBytes Per Sec 0.104
-3/1 12:52:15.025  Loading Screen : XML Loaded 38%
-3/1 12:52:17.687  Loading Screen : Loading : Files Read 50 : Bytes Read 4670851 : Elapsed MS 2662 : MBytes Per Sec 1.673
-3/1 12:52:17.687  Loading Screen : XML Loaded 56%
-3/1 12:52:19.743  Loading Screen : Loading : Files Read 1841 : Bytes Read 1974065 : Elapsed MS 2056 : MBytes Per Sec 0.916
-3/1 12:52:19.743  Loading Screen : XML Loaded 75%
-3/1 12:52:25.779  Client : Load Map Begin : 0
-3/1 12:52:25.779  Loading Screen : Loading : Files Read 53 : Bytes Read 1788341 : Elapsed MS 6037 : MBytes Per Sec 0.283
-3/1 12:52:25.779  Loading Screen : XML Loaded 100%
-3/1 12:52:27.872  Loading Screen : Loading : Files Read 1287 : Bytes Read 221181817 : Elapsed MS 2093 : MBytes Per Sec 100.781
-3/1 12:52:27.872  Loading Screen : XML Loaded 100%
-3/1 12:52:27.872  Loading Screen : World Loaded 35%
-3/1 12:52:29.913  Loading Screen : Loading : Files Read 2570 : Bytes Read 224756567 : Elapsed MS 2041 : MBytes Per Sec 105.019
-3/1 12:52:29.913  Loading Screen : XML Loaded 100%
-3/1 12:52:29.913  Loading Screen : World Loaded 61%
-3/1 12:52:31.589  Client : Load Map End
-3/1 12:52:31.589  Start waiting for active player
-3/1 12:52:31.602  Character Login SEND
-3/1 12:52:35.267  Stop waiting for active player
-3/1 12:52:35.284  Loading Screen : Loading : Files Read 6718 : Bytes Read 334010476 : Elapsed MS 5371 : MBytes Per Sec 59.307
-3/1 12:52:35.284  Loading Screen : XML Loaded 100%
-3/1 12:52:35.284  Loading Screen : World Loaded 100%
-3/1 12:52:35.284  Loading Screen : Spell Loaded 0%
-3/1 12:52:50.595  Active Player Created
-3/1 12:52:50.595  Loading Screen Disable (0)
-3/1 12:52:50.595  Loading Screen : Loading : Files Read 1394 : Bytes Read 82122368 : Elapsed MS 15305 : MBytes Per Sec 5.117
-3/1 12:52:50.595  Loading Screen : XML Loaded 100%
-3/1 12:52:50.595  Loading Screen : World Loaded 100%
-3/1 12:52:50.595  Loading Screen : Spell Loaded 100%
-3/1 12:52:50.595  Spellbook : Make Models Local Begin : 120
-3/1 12:52:50.601  Spellbook : Make Models Local End
-3/1 12:56:59.447  Client Object Manager Destroyed
-3/1 12:57:01.375  Nameplate Shutting Down
-3/1 12:57:02.241  Loading Screen Disable (-1)
-3/1 12:57:13.665  Initial Hotfixes: Requested
-3/1 12:57:14.650  Initial Hotfixes: Received
-3/1 12:57:17.120  Initial Hotfixes: Applied
-3/1 12:57:17.688  Loading Screen Enable (1) : 1 - 1
-3/1 12:57:17.729  Client Object Manager Initialized: 1
-3/1 12:57:18.114  Succesfully Registered Nameplate
-3/1 12:57:20.313  Loading Screen : Loading : Files Read 30131 : Bytes Read 1273623457 : Elapsed MS 2626 : MBytes Per Sec 462.537
-3/1 12:57:20.313  Loading Screen : XML Loaded 28%
-3/1 12:57:22.748  Loading Screen : Loading : Files Read 18 : Bytes Read 211862 : Elapsed MS 2435 : MBytes Per Sec 0.083
-3/1 12:57:22.748  Loading Screen : XML Loaded 39%
-3/1 12:57:25.393  Loading Screen : Loading : Files Read 51 : Bytes Read 4639299 : Elapsed MS 2645 : MBytes Per Sec 1.673
-3/1 12:57:25.393  Loading Screen : XML Loaded 59%
-3/1 12:57:27.563  Loading Screen : Loading : Files Read 1920 : Bytes Read 1987665 : Elapsed MS 2170 : MBytes Per Sec 0.874
-3/1 12:57:27.563  Loading Screen : XML Loaded 79%
-3/1 12:57:34.038  Client : Load Map Begin : 1
-3/1 12:57:34.038  Loading Screen : Loading : Files Read 53 : Bytes Read 1788341 : Elapsed MS 6476 : MBytes Per Sec 0.263
-3/1 12:57:34.038  Loading Screen : XML Loaded 100%
-3/1 12:57:36.074  Loading Screen : Loading : Files Read 2335 : Bytes Read 338681842 : Elapsed MS 2036 : MBytes Per Sec 158.641
-3/1 12:57:36.074  Loading Screen : XML Loaded 100%
-3/1 12:57:36.074  Loading Screen : World Loaded 59%
-3/1 12:57:37.170  Client : Load Map End
-3/1 12:57:37.170  Start waiting for active player
-3/1 12:57:37.181  Character Login SEND
-3/1 12:57:40.626  Stop waiting for active player
-3/1 12:57:40.645  Loading Screen : Loading : Files Read 6507 : Bytes Read 268186482 : Elapsed MS 4571 : MBytes Per Sec 55.953
-3/1 12:57:40.645  Loading Screen : XML Loaded 100%
-3/1 12:57:40.645  Loading Screen : World Loaded 100%
-3/1 12:57:40.645  Loading Screen : Spell Loaded 0%
-3/1 12:57:56.193  Active Player Created
-3/1 12:57:56.193  Loading Screen Disable (0)
-3/1 12:57:56.198  Loading Screen : Loading : Files Read 1409 : Bytes Read 71612510 : Elapsed MS 15517 : MBytes Per Sec 4.401
-3/1 12:57:56.198  Loading Screen : XML Loaded 100%
-3/1 12:57:56.198  Loading Screen : World Loaded 100%
-3/1 12:57:56.198  Loading Screen : Spell Loaded 100%
-3/1 12:57:56.198  Spellbook : Make Models Local Begin : 178
-3/1 12:57:56.198  Spellbook : Make Models Local End
-3/1 13:01:09.548  Client Object Manager Destroyed
-3/1 13:01:11.419  Nameplate Shutting Down
-3/1 13:01:12.306  Loading Screen Disable (-1)
-3/1 13:01:28.524  Initial Hotfixes: Requested
-3/1 13:01:29.336  Initial Hotfixes: Received
-3/1 13:01:31.787  Initial Hotfixes: Applied
-3/1 13:01:32.239  Loading Screen Enable (1) : 1 - 1
-3/1 13:01:32.279  Client Object Manager Initialized: 1
-3/1 13:01:32.661  Succesfully Registered Nameplate
-3/1 13:01:34.869  Loading Screen : Loading : Files Read 22527 : Bytes Read 1400704398 : Elapsed MS 2630 : MBytes Per Sec 507.915
-3/1 13:01:34.869  Loading Screen : XML Loaded 28%
-3/1 13:01:36.967  Loading Screen : Loading : Files Read 56 : Bytes Read 4787509 : Elapsed MS 2098 : MBytes Per Sec 2.176
-3/1 13:01:36.967  Loading Screen : XML Loaded 44%
-3/1 13:01:38.996  Loading Screen : Loading : Files Read 147 : Bytes Read 87516 : Elapsed MS 2029 : MBytes Per Sec 0.041
-3/1 13:01:38.996  Loading Screen : XML Loaded 57%
-3/1 13:01:41.046  Loading Screen : Loading : Files Read 1786 : Bytes Read 1963801 : Elapsed MS 2050 : MBytes Per Sec 0.914
-3/1 13:01:41.046  Loading Screen : XML Loaded 75%
-3/1 13:01:47.106  Client : Load Map Begin : 1
-3/1 13:01:47.106  Loading Screen : Loading : Files Read 54 : Bytes Read 1952249 : Elapsed MS 6064 : MBytes Per Sec 0.307
-3/1 13:01:47.106  Loading Screen : XML Loaded 100%
-3/1 13:01:49.171  Loading Screen : Loading : Files Read 3520 : Bytes Read 360175898 : Elapsed MS 2061 : MBytes Per Sec 166.662
-3/1 13:01:49.171  Loading Screen : XML Loaded 100%
-3/1 13:01:49.171  Loading Screen : World Loaded 61%
-3/1 13:01:50.146  Client : Load Map End
-3/1 13:01:50.146  Start waiting for active player
-3/1 13:01:50.158  Character Login SEND
-3/1 13:01:53.736  Stop waiting for active player
-3/1 13:01:53.752  Loading Screen : Loading : Files Read 5245 : Bytes Read 246642210 : Elapsed MS 4581 : MBytes Per Sec 51.346
-3/1 13:01:53.752  Loading Screen : XML Loaded 100%
-3/1 13:01:53.752  Loading Screen : World Loaded 100%
-3/1 13:01:53.752  Loading Screen : Spell Loaded 0%
-3/1 13:02:09.128  Active Player Created
-3/1 13:02:09.128  Loading Screen Disable (0)
-3/1 13:02:09.133  Loading Screen : Loading : Files Read 1630 : Bytes Read 104682899 : Elapsed MS 15375 : MBytes Per Sec 6.493
-3/1 13:02:09.133  Loading Screen : XML Loaded 100%
-3/1 13:02:09.133  Loading Screen : World Loaded 100%
-3/1 13:02:09.133  Loading Screen : Spell Loaded 100%
-3/1 13:02:09.133  Spellbook : Make Models Local Begin : 155
-3/1 13:02:09.133  Spellbook : Make Models Local End
-3/1 13:03:01.527  Client Object Manager Destroyed
-3/1 13:03:03.400  Nameplate Shutting Down
-3/1 13:03:04.296  Loading Screen Disable (-1)
-3/1 13:03:22.727  Initial Hotfixes: Requested
-3/1 13:03:23.742  Initial Hotfixes: Received
-3/1 13:03:26.171  Initial Hotfixes: Applied
-3/1 13:03:28.008  Loading Screen Enable (1) : 1153 - 1
-3/1 13:03:28.032  Client Object Manager Initialized: 1153
-3/1 13:03:28.418  Succesfully Registered Nameplate
-3/1 13:03:30.665  Loading Screen : Loading : Files Read 13400 : Bytes Read 384091282 : Elapsed MS 2657 : MBytes Per Sec 137.861
-3/1 13:03:30.665  Loading Screen : XML Loaded 28%
-3/1 13:03:32.729  Loading Screen : Loading : Files Read 45 : Bytes Read 2575296 : Elapsed MS 2064 : MBytes Per Sec 1.190
-3/1 13:03:32.729  Loading Screen : XML Loaded 42%
-3/1 13:03:34.761  Loading Screen : Loading : Files Read 26 : Bytes Read 2314833 : Elapsed MS 2032 : MBytes Per Sec 1.086
-3/1 13:03:34.761  Loading Screen : XML Loaded 55%
-3/1 13:03:36.842  Loading Screen : Loading : Files Read 1857 : Bytes Read 1975621 : Elapsed MS 2081 : MBytes Per Sec 0.905
-3/1 13:03:36.842  Loading Screen : XML Loaded 75%
-3/1 13:03:46.178  Client : Load Map Begin : 1153
-3/1 13:03:46.180  Loading Screen : Loading : Files Read 53 : Bytes Read 1788341 : Elapsed MS 9338 : MBytes Per Sec 0.183
-3/1 13:03:46.180  Loading Screen : XML Loaded 100%
-3/1 13:03:48.194  Loading Screen : Loading : Files Read 2090 : Bytes Read 363725456 : Elapsed MS 2014 : MBytes Per Sec 172.232
-3/1 13:03:48.194  Loading Screen : XML Loaded 100%
-3/1 13:03:48.194  Loading Screen : World Loaded 57%
-3/1 13:03:50.252  Loading Screen : Loading : Files Read 3317 : Bytes Read 408177274 : Elapsed MS 2058 : MBytes Per Sec 189.149
-3/1 13:03:50.252  Loading Screen : XML Loaded 100%
-3/1 13:03:50.252  Loading Screen : World Loaded 60%
-3/1 13:03:50.717  Client : Load Map End
-3/1 13:03:50.717  Start waiting for active player
-3/1 13:03:50.717  Character Login SEND
-3/1 13:03:54.762  Stop waiting for active player
-3/1 13:03:54.803  Loading Screen : Loading : Files Read 3709 : Bytes Read 262272628 : Elapsed MS 4551 : MBytes Per Sec 54.960
-3/1 13:03:54.803  Loading Screen : XML Loaded 100%
-3/1 13:03:54.803  Loading Screen : World Loaded 100%
-3/1 13:03:54.803  Loading Screen : Spell Loaded 0%
-3/1 13:04:08.912  Active Player Created
-3/1 13:04:08.912  Loading Screen Disable (0)
-3/1 13:04:08.912  Loading Screen : Streaming 0
-3/1 13:04:08.912  Loading Screen : XML Loaded 100%
-3/1 13:04:08.912  Loading Screen : World Loaded 100%
-3/1 13:04:08.912  Loading Screen : Spell Loaded 100%
-3/1 13:04:08.912  Spellbook : Make Models Local Begin : 150
-3/1 13:04:08.912  Spellbook : Make Models Local End
-3/1 13:04:35.057  Client Object Manager Destroyed
-3/1 13:04:38.741  Nameplate Shutting Down
-3/1 13:04:39.721  Loading Screen Disable (-1)
-3/1 13:04:39.945  Loading Screen Disable (-1)
-3/1 13:04:39.945  Client Destroy
+3/3 14:07:06.442  Client Initialize.
+3/3 14:07:13.326  Initial Hotfixes: Requested
+3/3 14:07:13.954  Initial Hotfixes: Received
+3/3 14:07:15.294  Initial Hotfixes: Applied
+3/3 14:07:16.917  Loading Screen Enable (1) : 870 - 1
+3/3 14:07:19.068  Client Object Manager Initialized: 870
+3/3 14:07:19.472  Succesfully Registered Nameplate
+3/3 14:07:19.472  Loading Screen : Loading : Files Read 1844 : Bytes Read 791578698 : Elapsed MS 2558 : MBytes Per Sec 295.117
+3/3 14:07:19.472  Loading Screen : XML Loaded 0%
+3/3 14:07:21.808  Loading Screen : Loading : Files Read 236 : Bytes Read 18657520 : Elapsed MS 2335 : MBytes Per Sec 7.620
+3/3 14:07:21.808  Loading Screen : XML Loaded 28%
+3/3 14:07:23.826  Loading Screen : Loading : Files Read 34 : Bytes Read 1354570 : Elapsed MS 2018 : MBytes Per Sec 0.640
+3/3 14:07:23.826  Loading Screen : XML Loaded 38%
+3/3 14:07:26.574  Loading Screen : Loading : Files Read 37 : Bytes Read 3535559 : Elapsed MS 2748 : MBytes Per Sec 1.227
+3/3 14:07:26.574  Loading Screen : XML Loaded 55%
+3/3 14:07:28.729  Loading Screen : Loading : Files Read 1857 : Bytes Read 1975621 : Elapsed MS 2155 : MBytes Per Sec 0.874
+3/3 14:07:28.729  Loading Screen : XML Loaded 75%
+3/3 14:07:38.313  Client : Load Map Begin : 870
+3/3 14:07:38.313  Loading Screen : Loading : Files Read 53 : Bytes Read 1788341 : Elapsed MS 9588 : MBytes Per Sec 0.178
+3/3 14:07:38.313  Loading Screen : XML Loaded 100%
+3/3 14:07:40.402  Loading Screen : Loading : Files Read 1617 : Bytes Read 328971633 : Elapsed MS 2085 : MBytes Per Sec 150.471
+3/3 14:07:40.402  Loading Screen : XML Loaded 100%
+3/3 14:07:40.402  Loading Screen : World Loaded 39%
+3/3 14:07:42.456  Loading Screen : Loading : Files Read 3026 : Bytes Read 442263275 : Elapsed MS 2054 : MBytes Per Sec 205.343
+3/3 14:07:42.456  Loading Screen : XML Loaded 100%
+3/3 14:07:42.456  Loading Screen : World Loaded 61%
+3/3 14:07:44.000  Client : Load Map End
+3/3 14:07:44.000  Start waiting for active player
+3/3 14:07:44.000  Character Login SEND
+3/3 14:07:47.594  Stop waiting for active player
+3/3 14:07:47.628  Loading Screen Ping SEND
+3/3 14:07:47.628  Loading Screen : Loading : Files Read 5489 : Bytes Read 343012720 : Elapsed MS 5172 : MBytes Per Sec 63.249
+3/3 14:07:47.628  Loading Screen : XML Loaded 100%
+3/3 14:07:47.628  Loading Screen : World Loaded 100%
+3/3 14:07:47.628  Loading Screen : Spell Loaded 0%
+3/3 14:08:02.421  Active Player Created
+3/3 14:08:02.421  Loading Screen Disable (0)
+3/3 14:08:02.438  Loading Screen : Loading : Files Read 2939 : Bytes Read 23260521 : Elapsed MS 14791 : MBytes Per Sec 1.500
+3/3 14:08:02.438  Loading Screen : XML Loaded 100%
+3/3 14:08:02.438  Loading Screen : World Loaded 100%
+3/3 14:08:02.438  Loading Screen : Spell Loaded 100%
+3/3 14:08:02.438  Spellbook : Make Models Local Begin : 148
+3/3 14:08:02.438  Spellbook : Make Models Local End
+3/3 14:08:30.573  Loading Screen Enable (1) : 1 - 1
+3/3 14:08:31.846  Client Object Manager Destroyed
+3/3 14:08:31.870  Client Object Manager Initialized: 1
+3/3 14:08:31.870  Client : Load Map Begin : 1
+3/3 14:08:32.611  Loading Screen : Loading : Files Read 7171 : Bytes Read 201458680 : Elapsed MS 2039 : MBytes Per Sec 94.226
+3/3 14:08:32.611  Loading Screen : World Loaded 17%
+3/3 14:08:34.666  Loading Screen : Loading : Files Read 4478 : Bytes Read 354142645 : Elapsed MS 2055 : MBytes Per Sec 164.349
+3/3 14:08:34.666  Loading Screen : World Loaded 61%
+3/3 14:08:35.084  Client : Load Map End
+3/3 14:08:35.084  Start waiting for active player
+3/3 14:08:35.084  New World Handler : Send World Port Response
+3/3 14:08:35.104  Waiting for active player: 20 ms
+3/3 14:08:35.412  Stop waiting for active player
+3/3 14:08:39.424  Active Player Created
+3/3 14:08:39.424  Loading Screen Disable (0)
+3/3 14:08:39.424  Loading Screen : Loading : Files Read 4678 : Bytes Read 141572391 : Elapsed MS 726 : MBytes Per Sec 185.970
+3/3 14:08:39.424  Loading Screen : World Loaded 100%
+3/3 14:08:39.424  Spellbook : Make Models Local Begin : 148
+3/3 14:08:39.424  Spellbook : Make Models Local End
+3/3 14:10:13.838  Loading Screen Enable (1) : 732 - 1
+3/3 14:10:15.092  Client Object Manager Destroyed
+3/3 14:10:15.111  Client Object Manager Initialized: 732
+3/3 14:10:15.111  Client : Load Map Begin : 732
+3/3 14:10:15.606  Client : Load Map End
+3/3 14:10:15.606  Start waiting for active player
+3/3 14:10:15.606  New World Handler : Send World Port Response
+3/3 14:10:15.624  Waiting for active player: 18 ms
+3/3 14:10:15.795  Stop waiting for active player
+3/3 14:10:19.031  Active Player Created
+3/3 14:10:19.031  Loading Screen Disable (0)
+3/3 14:10:19.031  Loading Screen : Loading : Files Read 20157 : Bytes Read 462753879 : Elapsed MS 1956 : MBytes Per Sec 225.622
+3/3 14:10:19.031  Loading Screen : World Loaded 100%
+3/3 14:10:19.031  Spellbook : Make Models Local Begin : 148
+3/3 14:10:19.031  Spellbook : Make Models Local End
+3/3 14:10:32.893  Loading Screen Enable (1) : 1 - 1
+3/3 14:10:34.092  Client Object Manager Destroyed
+3/3 14:10:34.092  Client Object Manager Initialized: 1
+3/3 14:10:34.092  Client : Load Map Begin : 1
+3/3 14:10:34.924  Loading Screen : Loading : Files Read 884 : Bytes Read 136036522 : Elapsed MS 2031 : MBytes Per Sec 63.877
+3/3 14:10:34.924  Loading Screen : World Loaded 20%
+3/3 14:10:36.965  Loading Screen : Loading : Files Read 4785 : Bytes Read 353120537 : Elapsed MS 2041 : MBytes Per Sec 164.999
+3/3 14:10:36.965  Loading Screen : World Loaded 61%
+3/3 14:10:37.149  Client : Load Map End
+3/3 14:10:37.149  Start waiting for active player
+3/3 14:10:37.149  New World Handler : Send World Port Response
+3/3 14:10:37.156  Waiting for active player: 7 ms
+3/3 14:10:37.455  Stop waiting for active player
+3/3 14:10:43.422  Active Player Created
+3/3 14:10:43.422  Loading Screen Disable (0)
+3/3 14:10:43.422  Loading Screen : Loading : Files Read 2899 : Bytes Read 139156621 : Elapsed MS 476 : MBytes Per Sec 278.803
+3/3 14:10:43.422  Loading Screen : World Loaded 100%
+3/3 14:10:43.422  Spellbook : Make Models Local Begin : 148
+3/3 14:10:43.422  Spellbook : Make Models Local End
+3/3 14:11:17.847  Loading Screen Enable (1) : 2222 - 1
+3/3 14:11:17.925  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.925  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.940  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.940  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.953  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.953  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.953  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.969  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.969  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.969  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.983  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.983  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.983  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.999  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.999  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:17.999  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.014  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.014  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.014  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.030  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.030  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.030  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.047  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.047  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.047  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.063  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.063  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.063  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.079  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.079  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.079  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.094  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.094  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.094  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.112  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.112  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.123  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.123  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.123  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.140  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.140  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.140  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.157  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.157  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.157  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.172  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.172  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.172  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.187  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.187  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.187  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.202  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.202  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.202  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.216  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.216  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.216  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.216  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.236  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.236  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.236  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.252  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.252  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.263  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.263  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.263  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.280  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.280  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.280  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.296  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.296  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.296  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.312  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.312  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.312  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.328  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.328  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.328  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.345  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.345  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.359  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.359  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.359  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.374  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.374  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.374  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.389  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.389  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.389  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.404  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.404  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.404  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.424  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.424  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.438  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.438  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.438  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.454  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.454  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.454  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.469  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.469  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.469  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.485  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.485  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.485  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.502  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.502  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.502  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.517  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.517  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.517  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.532  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.532  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.532  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.547  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.547  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.547  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.564  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.564  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.564  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.582  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.582  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.593  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.593  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.593  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.608  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.608  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.608  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.623  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.623  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.623  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.638  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.638  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.638  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.654  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.654  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.654  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.670  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.670  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.670  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.685  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.685  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.685  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.702  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.702  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.702  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.718  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.718  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.718  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.733  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.733  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.733  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.749  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.749  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.749  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.767  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.767  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.767  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.783  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.783  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.794  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.794  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.794  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.811  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.811  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.811  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.828  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.828  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.828  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.844  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.844  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.844  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.860  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.860  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.860  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.877  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.877  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.888  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.888  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.888  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.904  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.904  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.904  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.920  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.920  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.920  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.937  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.937  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.937  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.953  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.953  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.953  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.971  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.971  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.971  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.987  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.987  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:18.987  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.002  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.002  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.013  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.013  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.013  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.040  Client Object Manager Destroyed
+3/3 14:11:19.059  Client Object Manager Initialized: 2222
+3/3 14:11:19.059  Client : Load Map Begin : 2222
+3/3 14:11:19.060  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.161  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.261  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.362  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.464  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.565  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.665  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.766  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.867  Loading Screen : Loading : Files Read 4710 : Bytes Read 443744032 : Elapsed MS 2021 : MBytes Per Sec 209.395
+3/3 14:11:19.867  Loading Screen : World Loaded 14%
+3/3 14:11:19.867  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:19.968  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.069  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.170  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.271  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.372  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.473  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.574  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.675  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.776  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.877  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:20.978  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.079  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.180  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.281  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.382  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.483  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.584  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.685  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.786  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.887  Loading Screen : Loading : Files Read 1945 : Bytes Read 238849477 : Elapsed MS 2020 : MBytes Per Sec 112.765
+3/3 14:11:21.887  Loading Screen : World Loaded 27%
+3/3 14:11:21.887  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:21.988  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.089  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.190  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.291  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.392  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.496  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.603  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.704  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.805  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:22.906  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.007  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.108  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.209  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.311  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.412  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.513  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.614  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.715  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.816  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:23.917  Loading Screen : Loading : Files Read 4245 : Bytes Read 360189582 : Elapsed MS 2030 : MBytes Per Sec 169.214
+3/3 14:11:23.917  Loading Screen : World Loaded 69%
+3/3 14:11:23.917  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.018  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.119  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.220  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.321  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.422  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.523  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.624  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.725  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.826  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:24.927  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.028  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.129  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.230  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.331  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.432  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.533  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.634  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.695  Client : Load Map End
+3/3 14:11:25.695  Start waiting for active player
+3/3 14:11:25.695  New World Handler : Send World Port Response
+3/3 14:11:25.714  Waiting for active player: 19 ms
+3/3 14:11:25.717  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.740  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.753  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.753  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.774  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.774  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.782  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.782  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.782  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.794  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.794  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.794  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.794  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.794  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.814  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.814  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.814  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.828  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.828  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.828  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.841  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.841  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.841  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.841  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.858  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.858  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.858  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.858  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.858  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.877  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.877  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.877  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.888  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.888  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.888  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.888  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.888  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.907  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.907  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.929  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.940  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.940  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.940  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.952  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.952  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.952  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.952  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.967  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.967  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.967  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.967  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.982  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.982  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.982  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.982  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.999  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:25.999  Stop waiting for active player
+3/3 14:11:26.044  Loading Screen : Loading : Files Read 1281 : Bytes Read 350191108 : Elapsed MS 2127 : MBytes Per Sec 157.014
+3/3 14:11:26.044  Loading Screen : World Loaded 100%
+3/3 14:11:26.044  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:26.044  PaintSimpleBackground: s_simpleBackgroundTexture doesn't exist
+3/3 14:11:31.914  Active Player Created
+3/3 14:11:31.914  Loading Screen Disable (0)
+3/3 14:11:31.914  Loading Screen : Streaming 0
+3/3 14:11:31.914  Loading Screen : World Loaded 100%
+3/3 14:11:31.914  Spellbook : Make Models Local Begin : 148
+3/3 14:11:31.914  Spellbook : Make Models Local End
+3/3 14:17:29.485  Client Object Manager Destroyed
+3/3 14:17:34.283  Nameplate Shutting Down
+3/3 14:17:35.251  Loading Screen Disable (-1)
+3/3 14:17:35.849  Loading Screen Disable (-1)
+3/3 14:17:35.849  Client Destroy

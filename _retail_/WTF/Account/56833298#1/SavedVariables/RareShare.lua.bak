@@ -16,13 +16,13 @@ RareShareDB = {
 		["ChatAnnounce"] = true,
 		["OnDeath"] = false,
 		["CChannel"] = {
-			["CName"] = "General - Mechagon",
 			["CID"] = 1,
+			["CName"] = "General - Shrine of Two Moons",
 		},
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1614566094,
+		["Time"] = 1614795872,
 		["ID"] = 151934,
 	},
 }
