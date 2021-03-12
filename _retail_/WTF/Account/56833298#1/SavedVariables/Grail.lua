@@ -1,6 +1,7 @@
 
 GrailDatabase = {
 	["_retail_"] = {
+		["delayEventsHandled"] = true,
 		["learned"] = {
 			["QUEST_NAME"] = {
 				"enUS|36322|54591|Rumbling Goliath", -- [1]
@@ -43,6 +44,7 @@ GrailDatabase = {
 				"enUS|37176|54334|Darkshore Donations: Electroshock Mount Motivator", -- [38]
 				"enUS|37176|54335|Darkshore Donations: Unstable Temporal Time Shifter", -- [39]
 				"enUS|37474|53242|Arathi Donations: Coastal Healing Potion", -- [40]
+				"enUS|37474|54343|Darkshore Donations: Potion of Replenishment", -- [41]
 			},
 			["OBJECT_NAME"] = {
 				"33941|enUS|282723|X-53 Touring Rocket", -- [1]
@@ -9518,9 +9520,19 @@ GrailDatabase = {
 				"37474|enUS|42234|L3289855", -- [7743]
 				"37474|enUS|43179|L3289855", -- [7744]
 				"37474|enUS|57566|L3947775", -- [7745]
+				"37474|enUS|50602|A:-1699", -- [7746]
+				"37474|enUS|51037|A:-1165", -- [7747]
+				"37474|enUS|48642|A:-1164", -- [7748]
+				"37474|enUS|56120|A:-1164", -- [7749]
+				"37474|enUS|51044|A:-1164", -- [7750]
+				"37474|enUS|48639|A:-1462", -- [7751]
+				"37474|enUS|48639|L3947775", -- [7752]
+				"37474|enUS|50604|A:-1462", -- [7753]
+				"37474|enUS|52383|A:-1165", -- [7754]
+				"37474|enUS|42713|K262208", -- [7755]
+				"37864|enUS|57567|L3947775", -- [7756]
 			},
 		},
-		["delayEventsHandled"] = true,
 		["Tracking"] = {
 			"2020-04-20 23:25 Argent Dawn/Shanyt/Horde/WARRIOR/Scourge/2/enUS/US/33941", -- [1]
 			"New quest completed 55604 UNKNOWN NAME", -- [2]

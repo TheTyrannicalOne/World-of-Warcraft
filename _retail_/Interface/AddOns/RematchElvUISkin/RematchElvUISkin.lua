@@ -1,4 +1,3 @@
-
 local _,skin = ...
 
 local rematch
@@ -9,6 +8,7 @@ local S = E:GetModule("Skins")
 skin.panels = {
 
 	Frame = function(self)
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
 		self:SetTemplate("Transparent")
 		self.TitleBar:StripTextures()
@@ -30,6 +30,7 @@ skin.panels = {
 	end,
 
 	Journal = function(self)
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
 		self:SetTemplate("Transparent")
 		for _,tab in ipairs(self.PanelTabs.Tabs) do
@@ -76,6 +77,7 @@ skin.panels = {
 	end,
 
 	PetCard = function(self)
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
 		self:SetTemplate("Transparent")
 		S:HandleCloseButton(self.CloseButton)
@@ -83,13 +85,16 @@ skin.panels = {
 		skin:SetButtonIcon(self.PinButton,"Pinned")
 		self.Title.TitleBG:SetDrawLayer("BACKGROUND",2)
 		local r,g,b = 0.05, 0.05, 0.05
+		Mixin(self.Front, BackdropTemplateMixin)
 		self.Front:SetBackdrop({edgeFile="Interface\\ChatFrame\\ChatFrameBackground",edgeSize=4})
 		self.Front:SetBackdropBorderColor(r,g,b)
+		Mixin(self.Back, BackdropTemplateMixin)
 		self.Back:SetBackdrop({})
 		self.Back:SetBackdrop({edgeFile="Interface\\ChatFrame\\ChatFrameBackground",edgeSize=4})
 		self.Back:SetBackdropBorderColor(r,g,b)
 		-- also reskinning ability card here
 		local abilityCard = RematchAbilityCard
+		Mixin(abilityCard, BackdropTemplateMixin)
 		abilityCard:SetBackdrop({edgeFile="Interface\\ChatFrame\\ChatFrameBackground",edgeSize=4})
 		abilityCard:SetBackdropBorderColor(r,g,b)
 		-- change all the horizontal divider lines to solid black lines
@@ -105,10 +110,13 @@ skin.panels = {
 	end,
 
 	LoadoutPanel = function(self)
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
+		Mixin(self.Target, BackdropTemplateMixin)
 		self.Target:StripTextures()
 		self.Target:SetTemplate("Transparent")
 	  for i=1,3 do
+			Mixin(self.Loadouts[i], BackdropTemplateMixin)
 	    self.Loadouts[i]:StripTextures()
 	    self.Loadouts[i]:SetTemplate("Default")
 	  end
@@ -128,8 +136,10 @@ skin.panels = {
 	end,
 
 	LoadedTeamPanel = function(self)
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
 		self:SetTemplate("Transparent")
+		Mixin(self.Footnotes, BackdropTemplateMixin)
 		self.Footnotes:StripTextures()
 		self.Footnotes:SetTemplate("Transparent")
 		S:HandleCloseButton(self.Footnotes.Close)
@@ -139,11 +149,14 @@ skin.panels = {
 	PetPanel = function(self)
 		skin:HandleAutoScrollFrame(self.List)
 		-- top
+		Mixin(self.Top, BackdropTemplateMixin)
 		self.Top:StripTextures()
+		Mixin(self.Top.TypeBar, BackdropTemplateMixin)
 		self.Top.TypeBar:StripTextures()
 		S:HandleButton(self.Top.Filter)
 		S:HandleButton(self.Top.Toggle)
 		S:HandleEditBox(self.Top.SearchBox,true)
+		Mixin(self.Top.SearchBox, BackdropTemplateMixin)		
 		self.Top.SearchBox:SetBackdrop({})
 		for _,region in ipairs({self.Top.SearchBox:GetRegions()}) do
 			if region:GetDrawLayer()=="BACKGROUND" then
@@ -153,20 +166,27 @@ skin.panels = {
 		self.Top.SearchBox:SetHeight(22)
 		self.Top.SearchBox:SetPoint("LEFT",self.Top.Toggle,"RIGHT",4,0)
 		self.Top.SearchBox:SetPoint("RIGHT",self.Top.Filter,"LEFT",-4,0)
+		Mixin(self.Results, BackdropTemplateMixin)
 		self.Results:StripTextures()
 		self.Results:SetTemplate("Transparent")
 		-- typebar requires a bit of extra work
 		self.Top.TypeBar:SetPoint("BOTTOM",0,-2)
+		
+		-- DISABLED until i get a fix for those custom tabs..
+		--[[
 		for _,button in ipairs(self.Top.TypeBar.Tabs) do
-			S:HandleButton(button)
-			button:SetWidth(78)
+			if button then
+				S:HandleButton(button)
+				button:SetWidth(78)
+			end
 		end
+
 		for _,button in ipairs(self.Top.TypeBar.Tabs) do
 		  button.Selected:ClearAllPoints()
 		  button.Selected:SetPoint("TOPLEFT",2,-2)
 		  button.Selected:SetPoint("BOTTOMRIGHT",-2,2)
 		  for _,texture in ipairs({"LeftSelected","RightSelected","MidSelected"}) do
-		    button.Selected[texture]:SetTexture(1,1,1,0.25)
+		    button.Selected[texture]:SetColorTexture(1,1,1,0.25)
 		    button.Selected[texture]:SetHeight(20)
 		  end
 			for _,region in ipairs({button.Selected:GetRegions()}) do
@@ -182,18 +202,29 @@ skin.panels = {
 		  button.HasStuff:SetPoint("TOPLEFT",3,-18)
 			button.HasStuff:SetAlpha(1)
 		end
+]]
+
 		for _,button in ipairs(self.Top.TypeBar.Buttons) do
 			S:HandleButton(button)
 			button.IconBorder:Hide()
+		end
+		
+		for _,button in ipairs({"HealthButton", "PowerButton", "SpeedButton", "RareButton", "Level25Button"}) do
+			local btn = self.Top.TypeBar.QualityBar[button]
+			S:HandleButton(btn)
+			btn.IconBorder:Hide()
 		end
 	end,
 
 	TeamPanel = function(self)
 		skin:HandleAutoScrollFrame(self.List)
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
+		Mixin(self.Top, BackdropTemplateMixin)
 		self.Top:StripTextures()
 		S:HandleButton(self.Top.Teams)
 		S:HandleEditBox(self.Top.SearchBox,true)
+		Mixin(self.Top.SearchBox, BackdropTemplateMixin)	
 		self.Top.SearchBox:SetBackdrop({})
 		for _,region in ipairs({self.Top.SearchBox:GetRegions()}) do
 			if region:GetDrawLayer()=="BACKGROUND" then
@@ -206,16 +237,20 @@ skin.panels = {
 
 	MiniQueue = function(self)
 		skin:HandleAutoScrollFrame(self.List)
+		Mixin(self.Top, BackdropTemplateMixin)
 		self.Top:StripTextures()
 		self.Top:SetTemplate("Transparent")
 		S:HandleButton(self.Top.QueueButton)
+		Mixin(self.Status, BackdropTemplateMixin)
 		self.Status:StripTextures()
 		self.Status:SetTemplate("Transparent")
 	end,
 
 	MiniPanel = function(self)
+		Mixin(self.Background, BackdropTemplateMixin)
 		self.Background:StripTextures()
 		self.Background:SetTemplate("Transparent")
+		Mixin(self.Target, BackdropTemplateMixin)
 		self.Target:StripTextures()
 		self.Target:SetTemplate("Transparent")
 		S:HandleButton(self.Target.LoadButton)
@@ -234,8 +269,10 @@ skin.panels = {
 
 	QueuePanel = function(self)
 		skin:HandleAutoScrollFrame(self.List)
+		Mixin(self.Top, BackdropTemplateMixin)
 		self.Top:StripTextures()
 		S:HandleButton(self.Top.QueueButton)
+		Mixin(self.Status, BackdropTemplateMixin)
 		self.Status:StripTextures()
 		self.Status:SetTemplate("Transparent")
 	end,
@@ -270,22 +307,30 @@ skin.panels = {
 	end,	
 
 	Dialog = function(self)
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
 		self:SetTemplate("Default")
 		S:HandleCloseButton(self.CloseButton)
 		S:HandleButton(self.Accept,true)
 		S:HandleButton(self.Cancel,true)
 		S:HandleButton(self.Other,true)
+		Mixin(self.Prompt, BackdropTemplateMixin)
 		self.Prompt:StripTextures()
 		self.Prompt:SetTemplate("Transparent")
 		S:HandleEditBox(self.EditBox)
 		self.EditBox:SetBackdrop({})
-		S:HandleButton(self.TabPicker)
+		--S:HandleButton(self.TabPicker)
+		Mixin(self.TabPicker, BackdropTemplateMixin)
+		self.TabPicker:StripTextures()
+		self.TabPicker:SetTemplate(nil, true)
+		self.TabPicker.isSkinned = true		
 		self.TabPicker.Icon:SetDrawLayer("ARTWORK")
+		Mixin(self.TeamTabIconPicker, BackdropTemplateMixin)
 		self.TeamTabIconPicker:StripTextures()
 		self.TeamTabIconPicker:SetTemplate("Transparent")
 		S:HandleScrollBar(self.TeamTabIconPicker.ScrollFrame.ScrollBar)
 		S:HandleEditBox(self.MultiLine)
+		Mixin(self.MultiLine, BackdropTemplateMixin)
 		self.MultiLine:SetTemplate("Transparent")
 		S:HandleScrollBar(self.MultiLine.ScrollBar)
 		for _,child in ipairs({self.MultiLine:GetChildren()}) do
@@ -299,6 +344,7 @@ skin.panels = {
 		S:HandleEditBox(self.SaveAs.Name)
 		self.SaveAs.Name:SetBackdrop({})
 		S:HandleEditBox(self.SaveAs.Target)
+		Mixin(self.SaveAs.Target, BackdropTemplateMixin)
 		self.SaveAs.Target:StripTextures()
 		self.SaveAs.Target:SetTemplate("Transparent")
 		S:HandleEditBox(self.ScriptFilter.Name)
@@ -324,6 +370,7 @@ skin.panels = {
 	end,
 
 	Notes = function(self)
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
 		self:SetTemplate("Transparent")
 		S:HandleButton(self.Controls.SaveButton)
@@ -357,6 +404,7 @@ skin.misc = {
 		for i=1,3 do
 			local menu = rematch:GetMenuFrame(i,UIParent)
 			menu:Hide()
+			Mixin(menu, BackdropTemplateMixin)
 			menu:StripTextures()
 			menu:SetTemplate("Default")
 			for _,region in ipairs({menu.Title:GetRegions()}) do
@@ -368,14 +416,17 @@ skin.misc = {
 	end,
 
 	Tooltip = function()
+		Mixin(RematchTooltip, BackdropTemplateMixin)
 		RematchTooltip:StripTextures()
 		RematchTooltip:SetTemplate("Default")
+		Mixin(RematchTableTooltip, BackdropTemplateMixin)
 		RematchTableTooltip:StripTextures()
 		RematchTableTooltip:SetTemplate("Default")
 	end,
 
 	WinRecordCard = function()
 		local self = RematchWinRecordCard
+		Mixin(self, BackdropTemplateMixin)
 		self:StripTextures()
 		self:SetTemplate("Transparent")
 		for _,button in ipairs({"SaveButton","CancelButton","ResetButton"}) do
@@ -383,6 +434,7 @@ skin.misc = {
 			self.Controls[button]:SetHeight(20)
 		end
 		S:HandleCloseButton(self.CloseButton)
+		Mixin(self.Content, BackdropTemplateMixin)
 		self.Content:StripTextures()
 		self.Content:SetTemplate("Default")
 		for _,stat in ipairs({"Wins","Losses","Draws"}) do
@@ -451,6 +503,8 @@ end
 
 function skin:HandlePanelTab(tab)
   if not tab then return end
+	Mixin(tab, BackdropTemplateMixin)
+	
   for _,texture in ipairs({tab:GetRegions()}) do
     if texture:GetDrawLayer()=="BACKGROUND" then
       texture:SetTexture(nil)
@@ -461,32 +515,35 @@ function skin:HandlePanelTab(tab)
   if tab.GetHighlightTexture and tab:GetHighlightTexture() then
       tab:GetHighlightTexture():SetTexture(nil)
   else
-      tab:StripTextures()
-  end
-  tab.backdrop = CreateFrame("Frame", nil, tab)
-  tab.backdrop:SetTemplate("Default")
-  tab.backdrop:SetFrameLevel(tab:GetFrameLevel() - 1)
-  tab.backdrop:Point("TOPLEFT", 10, E.PixelMode and -1 or -3)
-  tab.backdrop:Point("BOTTOMRIGHT", -10, 3)
-  if tab.GetHighlightTexture and tab:GetHighlightTexture() then
-    tab:GetHighlightTexture():SetTexture(nil)
-  else
+		Mixin(tab, BackdropTemplateMixin)
     tab:StripTextures()
   end
+	
   tab.backdrop = CreateFrame("Frame", nil, tab)
+	Mixin(tab.backdrop, BackdropTemplateMixin)
   tab.backdrop:SetTemplate("Default")
   tab.backdrop:SetFrameLevel(tab:GetFrameLevel() - 1)
   tab.backdrop:Point("TOPLEFT", 10, E.PixelMode and -1 or -3)
   tab.backdrop:Point("BOTTOMRIGHT", -10, 3)
+	
+  if tab.GetHighlightTexture and tab:GetHighlightTexture() then
+    tab:GetHighlightTexture():SetTexture(nil)
+  else		
+    tab:StripTextures()
+  end
 end
 
 function skin:HandleAutoScrollFrame(listFrame)
 	if not listFrame then
 		return
 	end
+	Mixin(listFrame, BackdropTemplateMixin)
+	Mixin(listFrame.Background, BackdropTemplateMixin)
 	listFrame:StripTextures()
 	listFrame.Background:StripTextures()
 
+	Mixin(listFrame.ScrollFrame, BackdropTemplateMixin)
+	Mixin(listFrame.ScrollFrame.ScrollBar, BackdropTemplateMixin)
 	listFrame.ScrollFrame:StripTextures()
 	listFrame.ScrollFrame.ScrollBar:StripTextures()
 

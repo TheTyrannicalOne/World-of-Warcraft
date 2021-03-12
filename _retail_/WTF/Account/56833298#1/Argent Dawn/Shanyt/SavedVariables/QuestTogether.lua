@@ -7,12 +7,6 @@ QuestTogether = {
 				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
-			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
-			},
-		},
 		[56352] = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
@@ -25,10 +19,15 @@ QuestTogether = {
 				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"30/1000 Anima collected", -- [1]
+				"90/1000 Anima sources", -- [1]
 			},
 		},
 		[49133] = {
@@ -52,6 +51,12 @@ QuestTogether = {
 			["title"] = "Tirna Scithe: A Warning Silence",
 			["objectives"] = {
 				"1/1 Tred'ova slain", -- [1]
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"1/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[47129] = {
@@ -85,22 +90,20 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[54453] = {
+			["title"] = "Supplies from Magni",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[42233] = {
 			["title"] = "Highmountain Tribes",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+			},
+		},
+		[48976] = {
+			["title"] = "Supplies From the Argussian Reach",
+			["objectives"] = {
 			},
 		},
 		[44948] = {
@@ -121,15 +124,22 @@ QuestTogether = {
 				"1/1 Speak with Ve'nari", -- [1]
 			},
 		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
+			},
+		},
 		[62730] = {
 			["title"] = "Fruit of the Gods",
 			["objectives"] = {
 				"0/1 Ripe Purian", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[48305] = {
+			["title"] = "The Burning Coven",
 			["objectives"] = {
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[24756] = {
@@ -155,6 +165,12 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"0/4 Echo of Time", -- [1]
+			},
+		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
@@ -177,10 +193,10 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[56141] = {
+			["title"] = "Security First",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/3 Rare Enemies slain in Mechagon", -- [1]
 			},
 		},
 		[57403] = {
@@ -195,16 +211,16 @@ QuestTogether = {
 				"2/4 Echo of Time", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[48305] = {
-			["title"] = "The Burning Coven",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[49032] = {
@@ -213,17 +229,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
-		["messages"] = false,
 		["showDebugInfo"] = false,
+		["messages"] = false,
+		["events"] = false,
 	},
 }
