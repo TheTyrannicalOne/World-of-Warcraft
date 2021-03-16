@@ -2356,7 +2356,18 @@ function TimeZoneItemMixin:IsCompleted(database, item, character)
 end
 
 local CoordsItemMixin = CreateFromMixins(ItemMixin);
-function CoordsItemMixin:GetLocation(database, item, relativeMapID)
+function CoordsItemMixin:IsBreadcrumb(database, item, character)
+    if item.breadcrumb ~= nil then
+        return item.breadcrumb;
+    end
+
+    return true
+end
+function CoordsItemMixin:GetLocation(database, item, relativeMapID, ...)
+    if item.locations ~= nil then
+        return BtWQuests_GetBestLocation(item.locations, relativeMapID, ...)
+    end
+
     if relativeMapID == nil or item.mapID == relativeMapID then
         return item.mapID, CreateVector2D(item.x, item.y)
     else
@@ -2376,6 +2387,12 @@ function CoordsItemMixin:GetLocation(database, item, relativeMapID)
         end
 
         return relativeMapID, coords
+    end
+end
+function CoordsItemMixin:OnClick(database, item, character, button, frame, tooltip)
+    local mapID, coords = self:GetLocation(database, item)
+    if mapID and coords then
+        BtWQuests_ShowMapWithWaypoint(mapID, coords.x, coords.y, self:GetName(database, item))
     end
 end
 
@@ -2573,6 +2590,10 @@ function CampaignItemMixin:GetName(database, item, character)
     return info and info.name or L["UNKNOWN"]
 end
 
+local AreaItemMixin = CreateFromMixins(CoordsItemMixin);
+function AreaItemMixin:GetName(database, item, character)
+    return string.format(L["BTWQUESTS_GO_TO"], (C_Map.GetAreaInfo(item.id)))
+end
 
 local DatabaseItemMetatable = {};
 function DatabaseItemMetatable.__index(tbl, key)
@@ -3603,6 +3624,7 @@ Database:RegisterItemType("follower", FollowerItemMixin);
 Database:RegisterItemType("garrisontalenttree", GarrisonTalentTreeItemMixin);
 Database:RegisterItemType("campaign", CampaignItemMixin);
 Database:RegisterItemType("spell", ItemMixin); -- Is just used to track with rewards spells are used
+Database:RegisterItemType("area", AreaItemMixin);
 
 Database:AddCondition(923, { type = "faction", id = "Horde" });
 Database:AddCondition(924, { type = "faction", id = "Alliance" });

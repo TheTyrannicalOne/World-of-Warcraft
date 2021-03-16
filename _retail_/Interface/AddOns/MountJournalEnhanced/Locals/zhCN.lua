@@ -9,6 +9,8 @@ local L = ADDON.L or {}
 
 L["Black Market"] = "黑市"
 L["Family"] = "系列"
+--[[Translation missing --]]
+--[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
 L["FAVOR_DISPLAYED"] = "全部显示"
 L["FAVOR_PER_CHARACTER"] = "每角色"
 --[[Translation missing --]]
@@ -43,7 +45,11 @@ L["Transform"] = "变形"
 L["Underwater"] = "水中"
 
 -- Settings
+--[[Translation missing --]]
+--[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
 L["SETTING_ACHIEVEMENT_POINTS"] = "显示成就点"
+--[[Translation missing --]]
+--[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
 L["SETTING_COMPACT_LIST"] = "紧凑坐骑列表"
 L["SETTING_CURSOR_KEYS"] = "启用上下键浏览坐骑"
 L["SETTING_FAVORITE_PER_CHAR"] = "每角色坐骑收藏"

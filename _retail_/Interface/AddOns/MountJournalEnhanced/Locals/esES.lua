@@ -9,6 +9,7 @@ local L = ADDON.L or {}
 
 L["Black Market"] = "Mercado Negro"
 L["Family"] = "Familia"
+L["FAVOR_AUTO"] = "Nuevas monturas auto-favoritas"
 L["FAVOR_DISPLAYED"] = "Todas mostradas"
 L["FAVOR_PER_CHARACTER"] = "Por personaje"
 L["FILTER_SECRET"] = "Oculto por el juego"
@@ -36,7 +37,9 @@ L["Transform"] = "Transformaciones"
 L["Underwater"] = "Submarino"
 
 -- Settings
+L["DISPLAY_ALL_SETTINGS"] = "Mostrar todos los ajustes"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar puntos de logros"
+L["SETTING_AUTO_FAVOR"] = "Selecciona automáticamente las nuevas monturas como favoritas"
 L["SETTING_COMPACT_LIST"] = "Compactar la lista de monturas"
 L["SETTING_CURSOR_KEYS"] = "Habilitar las teclas Arriba y Abajo para explorar las monturas"
 L["SETTING_FAVORITE_PER_CHAR"] = "Monturas favoritas por personaje"

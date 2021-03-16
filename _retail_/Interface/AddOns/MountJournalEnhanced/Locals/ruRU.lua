@@ -10,6 +10,8 @@ local L = ADDON.L or {}
 L["Black Market"] = "Черный рынок"
 L["Family"] = "Семейство"
 --[[Translation missing --]]
+--[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
+--[[Translation missing --]]
 --[[ L["FAVOR_DISPLAYED"] = "All Displayed"--]] 
 --[[Translation missing --]]
 --[[ L["FAVOR_PER_CHARACTER"] = "Per Character"--]] 
@@ -55,7 +57,11 @@ L["Underwater"] = "Подводные"
 
 -- Settings
 --[[Translation missing --]]
+--[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
+--[[Translation missing --]]
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_COMPACT_LIST"] = "Compact mount list"--]] 
 --[[Translation missing --]]

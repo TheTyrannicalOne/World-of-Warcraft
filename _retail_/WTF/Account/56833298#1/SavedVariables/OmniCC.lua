@@ -1,5 +1,9 @@
 
 OmniCCDB = {
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.0.8",
+	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
@@ -7,39 +11,35 @@ OmniCCDB = {
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
 		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Malivant - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Malivant - Dalaran"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-	},
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.0.7",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["minutes"] = {
-						},
 						["soon"] = {
+						},
+						["minutes"] = {
 						},
 						["seconds"] = {
 						},

@@ -1,7 +1,7 @@
 
 GrailDatabase = {
 	["_retail_"] = {
-		["delayEventsHandled"] = true,
+		["delayEvents"] = true,
 		["learned"] = {
 			["QUEST_NAME"] = {
 				"enUS|36322|54591|Rumbling Goliath", -- [1]
@@ -9531,6 +9531,15 @@ GrailDatabase = {
 				"37474|enUS|52383|A:-1165", -- [7754]
 				"37474|enUS|42713|K262208", -- [7755]
 				"37864|enUS|57567|L3947775", -- [7756]
+				"37899|enUS|43179|L3947775", -- [7757]
+				"37899|enUS|48642|A:-876", -- [7758]
+				"37899|enUS|50562|A:-876", -- [7759]
+				"37899|enUS|50602|A:-876", -- [7760]
+				"37899|enUS|50603|A:-876", -- [7761]
+				"37899|enUS|57565|A:-876", -- [7762]
+				"37899|enUS|54550|A:-14", -- [7763]
+				"37899|enUS|54550|L3947775", -- [7764]
+				"37899|enUS|54548|T:142686", -- [7765]
 			},
 		},
 		["Tracking"] = {
@@ -23682,7 +23691,7 @@ GrailDatabase = {
 			"New quest completed 54649 Flames of War", -- [14146]
 			"New quest completed 54646 Grand Marshal Fury", -- [14147]
 		},
-		["delayEvents"] = true,
+		["delayEventsHandled"] = true,
 	},
 	["BadQuestData"] = {
 		"G110|48639|1024|F:Horde", -- [1]

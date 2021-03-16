@@ -9,10 +9,11 @@ local L = ADDON.L or {}
 
 L["Black Market"] = "Mercado Negro"
 L["Family"] = "Família"
+--[[Translation missing --]]
+--[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
 L["FAVOR_DISPLAYED"] = "Exibir todos"
 L["FAVOR_PER_CHARACTER"] = "Por personagem"
---[[Translation missing --]]
---[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
+L["FILTER_SECRET"] = "Oculto pelo jogo"
 L["Flying"] = "Voador"
 L["Ground"] = "Terrestre"
 L["Hidden"] = "Oculto"
@@ -22,28 +23,27 @@ L["Reset filters"] = "Resetar filtros "
 L["ROTATE_DOWN"] = "Girar para Baixo"
 L["ROTATE_UP"] = "Girar para Cima"
 L["Show in Collections"] = "Mostrar nas Coleções"
---[[Translation missing --]]
---[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
+L["SORT_BY_LAST_USAGE"] = "Último uso"
 --[[Translation missing --]]
 --[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
---[[Translation missing --]]
---[[ L["SORT_BY_TRAVEL_DISTANCE"] = "Travelled distance"--]] 
---[[Translation missing --]]
---[[ L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"--]] 
---[[Translation missing --]]
---[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
+L["SORT_BY_TRAVEL_DISTANCE"] = "Distância percorrida"
+L["SORT_BY_TRAVEL_DURATION"] = "Duração de viagem"
+L["SORT_BY_USAGE_COUNT"] = "Contagem de uso"
 L["SORT_FAVORITES_FIRST"] = "Favoritos Primeiro"
 L["SORT_REVERSE"] = "Ordem Inversa"
 L["SORT_UNOWNED_BOTTOM"] = "Não aprendidos por último"
---[[Translation missing --]]
---[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
+L["SORT_UNUSABLE_BOTTOM"] = "Inutilizável depois de utilizável"
 L["TASK_END"] = "[MJE] Ufa! Terminei."
 L["TASK_FAVOR_START"] = "[MJE] Reaplicando estrelas em todas as suas montagens. Por favor, espere alguns segundos até eu terminar."
 L["Transform"] = "Transformar"
 L["Underwater"] = "Embaixo d'água "
 
 -- Settings
+--[[Translation missing --]]
+--[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
 L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar Pontos de Conquista"
+--[[Translation missing --]]
+--[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
 L["SETTING_COMPACT_LIST"] = "Lista de Montarias Compacta"
 L["SETTING_CURSOR_KEYS"] = "Ativar as teclas para cima e para baixo para navegar pelas montarias"
 L["SETTING_FAVORITE_PER_CHAR"] = "Montarias favoritas por personagem"
@@ -54,8 +54,7 @@ L["SETTING_PERSONAL_FILTER"] = "Aplicar filtros apenas para este personagem"
 L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Aplicar montarias ocultas apenas para este personagem"
 L["SETTING_PERSONAL_UI"] = "Aplicar configurações de inferface apenas para este personagem"
 L["SETTING_PREVIEW_LINK"] = "Mostrar Botão de Coleção na pré-visualização de montaria"
---[[Translation missing --]]
---[[ L["SETTING_SEARCH_MORE"] = "Search also in description text"--]] 
+L["SETTING_SEARCH_MORE"] = "Pesquisar também no texto de descrição"
 L["SETTING_SHOP_BUTTON"] = "Mostrar o botão de loja em montarias de loja não aprendidas"
 L["SETTING_SHOW_USAGE"] = "Exibir estatísticas de uso de montarias"
 L["SETTING_TRACK_USAGE"] = "Rastreie o comportamento de uso da montaria em todos os personagens"
@@ -155,8 +154,7 @@ L["Nether Drakes"] = "Dracos Etéreos"
 L["Nether Rays"] = "Arraias Etéreas "
 L["N'Zoth Serpents"] = "Serpentes de N'Zoth"
 L["Others"] = "Outros"
---[[Translation missing --]]
---[[ L["Ox"] = "Ox"--]] 
+L["Ox"] = "Boi"
 L["Pandaren Phoenixes"] = "Fênix Pandarênicas"
 L["Parrots"] = "Papagaios"
 L["Phoenixes"] = "Fênix"

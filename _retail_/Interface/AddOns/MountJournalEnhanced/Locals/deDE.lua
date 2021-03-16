@@ -9,6 +9,7 @@ local L = ADDON.L or {}
 
 L["Black Market"] = "Schwarzmarkt"
 L["Family"] = "Familie"
+L["FAVOR_AUTO"] = "Neue Mounts automatisch setzen"
 L["FAVOR_DISPLAYED"] = "Alle Angezeigten Wählen"
 L["FAVOR_PER_CHARACTER"] = "Pro Charakter"
 L["FILTER_SECRET"] = "vom Spiel versteckt"
@@ -36,7 +37,9 @@ L["Transform"] = "Verwandlung"
 L["Underwater"] = "Unterwasser"
 
 -- Settings
+L["DISPLAY_ALL_SETTINGS"] = "Zeige alle Einstellungen"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Zeige Erfolgspunkte"
+L["SETTING_AUTO_FAVOR"] = "Setze neue Reittiere automatisch als Favoriten"
 L["SETTING_COMPACT_LIST"] = "Kompakte Mount-Liste"
 L["SETTING_CURSOR_KEYS"] = "Aktiviere Aufwärts- und Abwärtspfeiltaste zum Durchblättern"
 L["SETTING_FAVORITE_PER_CHAR"] = "Speichere Favoriten pro Charakter"

@@ -9,6 +9,8 @@ local L = ADDON.L or {}
 
 L["Black Market"] = "암시장"
 L["Family"] = "종류"
+--[[Translation missing --]]
+--[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
 L["FAVOR_DISPLAYED"] = "모두 표시"
 L["FAVOR_PER_CHARACTER"] = "캐릭터별 표시"
 --[[Translation missing --]]
@@ -49,7 +51,11 @@ L["Underwater"] = "수중"
 
 -- Settings
 --[[Translation missing --]]
+--[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
+--[[Translation missing --]]
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
 L["SETTING_COMPACT_LIST"] = "간소한 목록"
 L["SETTING_CURSOR_KEYS"] = "위 아래 화살표 키로 목록 탐색하기"
 L["SETTING_FAVORITE_PER_CHAR"] = "캐릭터별 즐겨찾기"

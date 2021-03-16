@@ -1,8 +1,5 @@
 
 WarfrontRareTrackerDB = {
-	["global"] = {
-		["printCompatibilityMessage1"] = false,
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
@@ -10,26 +7,29 @@ WarfrontRareTrackerDB = {
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
 		["Shaekhan - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Avisar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Ruffinton - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Malivant - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Malivant - Dalaran"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+	},
+	["global"] = {
+		["printCompatibilityMessage1"] = false,
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -1,10 +1,22 @@
 
 QuestTogether = {
 	["questTracker"] = {
+		[51050] = {
+			["title"] = "Supplies Needed: Tidespray Linen",
+			["objectives"] = {
+				"0/20 Tidespray Linen", -- [1]
+			},
+		},
 		[57919] = {
 			["title"] = "An Abuse of Power",
 			["objectives"] = {
 				"0/1 Abused Soul subjugated", -- [1]
+			},
+		},
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
+			["objectives"] = {
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[56352] = {
@@ -17,6 +29,12 @@ QuestTogether = {
 			["title"] = "Champions of Azeroth",
 			["objectives"] = {
 				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[57567] = {
@@ -53,12 +71,6 @@ QuestTogether = {
 				"1/1 Tred'ova slain", -- [1]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
-			["objectives"] = {
-				"1/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -84,10 +96,10 @@ QuestTogether = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[54453] = {
@@ -95,10 +107,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[48976] = {
@@ -122,11 +134,6 @@ QuestTogether = {
 			["title"] = "Prison of the Forgotten",
 			["objectives"] = {
 				"1/1 Speak with Ve'nari", -- [1]
-			},
-		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
 			},
 		},
 		[62730] = {
@@ -165,12 +172,6 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
-			},
-		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
@@ -181,10 +182,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[57462] = {
@@ -193,10 +194,10 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[56141] = {
-			["title"] = "Security First",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/3 Rare Enemies slain in Mechagon", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[57403] = {
@@ -217,10 +218,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[49032] = {
@@ -229,17 +230,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }
