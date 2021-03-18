@@ -3,22 +3,22 @@ RareShareDB = {
 	["Modules"] = {
 	},
 	["Config"] = {
-		["CChannel"] = {
-			["CName"] = "General - Nazjatar",
-			["CID"] = 1,
+		["Sound"] = {
+			["Rares"] = true,
+			["Master"] = true,
+			["Duplicates"] = true,
 		},
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["Sound"] = {
-			["Rares"] = true,
-			["Master"] = true,
-			["Duplicates"] = true,
-		},
-		["OnDeath"] = false,
 		["ChatAnnounce"] = true,
+		["OnDeath"] = false,
+		["CChannel"] = {
+			["CName"] = "General - Shrine of Seven Stars",
+			["CID"] = 1,
+		},
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {

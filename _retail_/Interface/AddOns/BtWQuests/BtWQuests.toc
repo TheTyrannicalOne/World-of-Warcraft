@@ -1,6 +1,6 @@
 ## Interface: 90005
 ## Title: BtWQuests
-## Version: 1.76.0
+## Version: 1.77.0
 ## Notes: 
 ## Author: Breen
 ## SavedVariables: BtWQuests_Characters

@@ -2093,7 +2093,7 @@ function ExperienceItemMixin:GetName(database, item, character)
     end
 
     local modifier = 1 + character:GetXPModifier();
-    if character:IsWarModeDesired() and item.noWarModeBonus then
+    if character:IsWarModeDesired() and not item.noWarModeBonus then
         modifier = modifier + (character:GetWarModeRewardBonus() * 0.01);
     end
 
@@ -2593,6 +2593,15 @@ end
 local AreaItemMixin = CreateFromMixins(CoordsItemMixin);
 function AreaItemMixin:GetName(database, item, character)
     return string.format(L["BTWQUESTS_GO_TO"], (C_Map.GetAreaInfo(item.id)))
+end
+local ChromieTimeItemMixin = CreateFromMixins(ItemMixin);
+function ChromieTimeItemMixin:IsCompleted(database, item, character)
+    local chromieId = character:GetChromieTimeID()
+    if item.id then
+        return item.id == chromieId
+    else
+        return chromieId >= 0
+    end
 end
 
 local DatabaseItemMetatable = {};
@@ -3625,7 +3634,9 @@ Database:RegisterItemType("garrisontalenttree", GarrisonTalentTreeItemMixin);
 Database:RegisterItemType("campaign", CampaignItemMixin);
 Database:RegisterItemType("spell", ItemMixin); -- Is just used to track with rewards spells are used
 Database:RegisterItemType("area", AreaItemMixin);
+Database:RegisterItemType("chromietime", ChromieTimeItemMixin);
 
+Database:AddCondition(-1, { type = "chromietime" });
 Database:AddCondition(923, { type = "faction", id = "Horde" });
 Database:AddCondition(924, { type = "faction", id = "Alliance" });
 

@@ -153,10 +153,13 @@ skin.panels = {
 		self.Top:StripTextures()
 		Mixin(self.Top.TypeBar, BackdropTemplateMixin)
 		self.Top.TypeBar:StripTextures()
+		for _, tab in ipairs(self.Top.TypeBar.Tabs) do
+			skin:HandlePanelTab(tab)
+		end
 		S:HandleButton(self.Top.Filter)
 		S:HandleButton(self.Top.Toggle)
 		S:HandleEditBox(self.Top.SearchBox,true)
-		Mixin(self.Top.SearchBox, BackdropTemplateMixin)		
+		Mixin(self.Top.SearchBox, BackdropTemplateMixin)
 		self.Top.SearchBox:SetBackdrop({})
 		for _,region in ipairs({self.Top.SearchBox:GetRegions()}) do
 			if region:GetDrawLayer()=="BACKGROUND" then
@@ -171,7 +174,7 @@ skin.panels = {
 		self.Results:SetTemplate("Transparent")
 		-- typebar requires a bit of extra work
 		self.Top.TypeBar:SetPoint("BOTTOM",0,-2)
-		
+
 		-- DISABLED until i get a fix for those custom tabs..
 		--[[
 		for _,button in ipairs(self.Top.TypeBar.Tabs) do
@@ -208,7 +211,7 @@ skin.panels = {
 			S:HandleButton(button)
 			button.IconBorder:Hide()
 		end
-		
+
 		for _,button in ipairs({"HealthButton", "PowerButton", "SpeedButton", "RareButton", "Level25Button"}) do
 			local btn = self.Top.TypeBar.QualityBar[button]
 			S:HandleButton(btn)
@@ -224,7 +227,7 @@ skin.panels = {
 		self.Top:StripTextures()
 		S:HandleButton(self.Top.Teams)
 		S:HandleEditBox(self.Top.SearchBox,true)
-		Mixin(self.Top.SearchBox, BackdropTemplateMixin)	
+		Mixin(self.Top.SearchBox, BackdropTemplateMixin)
 		self.Top.SearchBox:SetBackdrop({})
 		for _,region in ipairs({self.Top.SearchBox:GetRegions()}) do
 			if region:GetDrawLayer()=="BACKGROUND" then
@@ -304,7 +307,7 @@ skin.panels = {
 			self.DownButton:SetSize(40,40)
 			self.DownButton.Icon:SetPoint("CENTER")
 		end)
-	end,	
+	end,
 
 	Dialog = function(self)
 		Mixin(self, BackdropTemplateMixin)
@@ -323,7 +326,7 @@ skin.panels = {
 		Mixin(self.TabPicker, BackdropTemplateMixin)
 		self.TabPicker:StripTextures()
 		self.TabPicker:SetTemplate(nil, true)
-		self.TabPicker.isSkinned = true		
+		self.TabPicker.isSkinned = true
 		self.TabPicker.Icon:SetDrawLayer("ARTWORK")
 		Mixin(self.TeamTabIconPicker, BackdropTemplateMixin)
 		self.TeamTabIconPicker:StripTextures()
@@ -504,7 +507,7 @@ end
 function skin:HandlePanelTab(tab)
   if not tab then return end
 	Mixin(tab, BackdropTemplateMixin)
-	
+
   for _,texture in ipairs({tab:GetRegions()}) do
     if texture:GetDrawLayer()=="BACKGROUND" then
       texture:SetTexture(nil)
@@ -518,17 +521,17 @@ function skin:HandlePanelTab(tab)
 		Mixin(tab, BackdropTemplateMixin)
     tab:StripTextures()
   end
-	
+
   tab.backdrop = CreateFrame("Frame", nil, tab)
 	Mixin(tab.backdrop, BackdropTemplateMixin)
   tab.backdrop:SetTemplate("Default")
   tab.backdrop:SetFrameLevel(tab:GetFrameLevel() - 1)
   tab.backdrop:Point("TOPLEFT", 10, E.PixelMode and -1 or -3)
   tab.backdrop:Point("BOTTOMRIGHT", -10, 3)
-	
+
   if tab.GetHighlightTexture and tab:GetHighlightTexture() then
     tab:GetHighlightTexture():SetTexture(nil)
-  else		
+  else
     tab:StripTextures()
   end
 end

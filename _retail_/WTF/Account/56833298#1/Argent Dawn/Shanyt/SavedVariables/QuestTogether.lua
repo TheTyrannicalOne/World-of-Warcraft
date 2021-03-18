@@ -1,45 +1,34 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[51050] = {
-			["title"] = "Supplies Needed: Tidespray Linen",
-			["objectives"] = {
-				"0/20 Tidespray Linen", -- [1]
-			},
-		},
 		[57919] = {
 			["title"] = "An Abuse of Power",
 			["objectives"] = {
 				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[56352] = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
-				"3/20 Eternal Ornament", -- [1]
+				"3/20  ", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"3/4  ", -- [1]
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
 				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
 			},
 		},
 		[61981] = {
@@ -51,7 +40,7 @@ QuestTogether = {
 		[49133] = {
 			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
 			["objectives"] = {
-				"0/4 Sigil of the Dark Titan", -- [1]
+				"0/4  ", -- [1]
 			},
 		},
 		[62932] = {
@@ -75,7 +64,7 @@ QuestTogether = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
 				"Defeat Kil'jaeden", -- [1]
-				"1/1 Seal of the Deceiver", -- [2]
+				"1/1  ", -- [2]
 			},
 		},
 		[44989] = {
@@ -84,10 +73,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -96,21 +85,28 @@ QuestTogether = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
 		[50606] = {
 			["title"] = "Horde War Effort",
 			["objectives"] = {
 				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[54453] = {
-			["title"] = "Supplies from Magni",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
+				"1/4  ", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 		[48976] = {
@@ -139,14 +135,14 @@ QuestTogether = {
 		[62730] = {
 			["title"] = "Fruit of the Gods",
 			["objectives"] = {
-				"0/1 Ripe Purian", -- [1]
+				"0/1  ", -- [1]
 			},
 		},
 		[48305] = {
 			["title"] = "The Burning Coven",
 			["objectives"] = {
 				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
+				"1/1  ", -- [2]
 			},
 		},
 		[24756] = {
@@ -162,14 +158,10 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[54180] = {
@@ -182,58 +174,60 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57462] = {
-			["title"] = "Dream Catcher",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[54453] = {
+			["title"] = "Supplies from Magni",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[57403] = {
 			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+				"2/4  ", -- [1]
+			},
+		},
+		[57462] = {
+			["title"] = "Dream Catcher",
+			["objectives"] = {
+				"28/200  ", -- [1]
 			},
 		},
 		[45383] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"2/4  ", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
-			},
-		},
-		[45381] = {
+		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4  ", -- [1]
 			},
 		},
 		[49032] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
+				"1/4  ", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 	},
