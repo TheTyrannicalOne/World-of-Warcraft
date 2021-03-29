@@ -1,0 +1,110 @@
+
+QuestTogether = {
+	["questTracker"] = {
+		[13890] = {
+			["title"] = "Keep the Fires Burning",
+			["objectives"] = {
+				"0/1 Lighthouse Fire Lit", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[28549] = {
+			["title"] = "Warchief's Command: Southern Barrens!",
+			["objectives"] = {
+				"0/1 Flight from Doras in Orgrimmar (Optional)", -- [1]
+				"0/1 Speak with Nura Pathfinder on The High Road", -- [2]
+			},
+		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[13883] = {
+			["title"] = "Lousy Pieces of Ship",
+			["objectives"] = {
+				"0/10 Sunken Scrap Metal", -- [1]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[6442] = {
+			["title"] = "Naga at the Zoram Strand",
+			["objectives"] = {
+				"0/20 Wrathtail Head", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[26878] = {
+			["title"] = "Disciples of Naralex",
+			["objectives"] = {
+			},
+		},
+		[28532] = {
+			["title"] = "Warchief's Command: Stonetalon Mountains!",
+			["objectives"] = {
+			},
+		},
+		[27396] = {
+			["title"] = "Blade of the Shattered Hand",
+			["objectives"] = {
+				"0/1 Springvale's Sharpening Stone", -- [1]
+				"0/5 Moonsteel Ingots", -- [2]
+				"0/5 Deathless Sinew", -- [3]
+			},
+		},
+		[26890] = {
+			["title"] = "The Essence of Aku'Mai",
+			["objectives"] = {
+				"0/20 Sapphire of Aku'Mai", -- [1]
+			},
+		},
+		[26894] = {
+			["title"] = "Blackfathom Deeps",
+			["objectives"] = {
+			},
+		},
+		[13871] = {
+			["title"] = "Security!",
+			["objectives"] = {
+				"0/1 Kaldorei Assassin's Head", -- [1]
+			},
+		},
+		[28548] = {
+			["title"] = "Warchief's Command: Desolace!",
+			["objectives"] = {
+			},
+		},
+		[13842] = {
+			["title"] = "Dread Head Redemption",
+			["objectives"] = {
+				"0/1 Durak Persuaded", -- [1]
+			},
+		},
+	},
+	["DEBUG"] = {
+		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
+	},
+}

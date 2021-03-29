@@ -7,7 +7,7 @@ L.comma = ", "
 L.positionX = "Position X"
 L.positionY = "Position Y"
 L.positionExact = "Positionnement exact"
--- L.positionDesc = "Type in the box or move the slider if you need exact positioning from the anchor."
+L.positionDesc = "Tapez dans la saisie ou déplacez le curseur si vous avez besoin d'un positionnement exact par rapport à l'ancre."
 L.width = "Largeur"
 L.height = "Hauteur"
 L.sizeDesc = "Normalement, la taille peut être définie en tirant sur l'ancre. Si vous avez besoin d'une taille bien précise, vous pouvez utiliser ce slider ou taper la valeur dans la boîte de saisie, qui n'a pas de limite."
@@ -167,9 +167,11 @@ L.audio = "Audio"
 L.music = "Musique"
 L.ambience = "Ambiance"
 L.sfx = "Effets sonores"
+L.errorSpeech = "Mess. vocaux d'erreur"
 L.disableMusic = "Couper la musique (recommandé)"
 L.disableAmbience = "Couper les sons ambiants (recommandé)"
 L.disableSfx = "Couper les effets sonores (non recommandé)"
+--L.disableErrorSpeech = "Mute error speech (recommended)"
 L.disableAudioDesc = "L'option '%s' des options de Son de WoW sera désactivé, et ensuite réactivé une fois que la rencontre de boss est terminée. Cela peut vous aider à vous concentrer sur les sons d'alerte de BigWigs."
 L.blockTooltipQuests = "Bloquer les objectifs de quête dans la bulle d'aide"
 L.blockTooltipQuestsDesc = "Quand vous devez tuer un boss pour une quête, cela sera affiché sous la forme '0/1 terminé' dans la bulle d'aide quand vous survolez le boss avec votre souris. Cela sera caché lors du combat face à ce boss pour éviter que sa bulle d'aide ne devienne trop grande."
@@ -330,6 +332,8 @@ L.pullStoppedCombat = "Délai de pull annulé car vous êtes entré en combat."
 L.pullIn = "Pull dans %d sec."
 L.sendPull = "Envoi d'un délai de pull aux utilisateurs de BigWigs et DBM."
 L.wrongPullFormat = "Doit être compris entre 1 et 60 secondes. Un exemple correct est le suivant : /pull 5"
+L.countdownBegins = "Début du compte à rebours"
+L.countdownBegins_desc = "Choisissez combien de temps il doit rester sur le délai de pull (en secondes) pour que le compte à rebours commence."
 
 -----------------------------------------------------------------------
 -- RaidIcon.lua
@@ -348,6 +352,7 @@ L.secondaryDesc = "La seconde icône de cible de raid qu'un script de rencontre 
 --
 
 L.Sounds = "Sons"
+L.soundsDesc = "BigWigs utilise le canal son 'Principal' pour jouer ses sons. Si vous trouvez que ces sons sont trop discrets ou trop bruyants, ouvrez les paramètres de son de WoW et ajustez le curseur 'Principal' selon vos préférences.\n\nCi-dessous, vous pouvez configurer globalement les différents sons joués lors d'actions spécifiques, ou les mettre à 'Aucun' pour les désactiver. Si vous souhaitez changer uniquement le son d'une technique de boss spécifique, rendez-vous dans les paramètres de cette rencontre de boss.\n\n"
 L.oldSounds = "Anciens sons"
 
 L.Alarm = "Alarme"
@@ -359,7 +364,6 @@ L.onyou = "Un sort, amélioration ou affaiblissement est sur vous"
 L.underyou = "Vous devez bouger hors d'un sort qui se trouve en dessous de vous"
 
 L.sound = "Son"
-L.soundDesc = "Les messages sont le plus souvent accompagnés de sons. Certaines personnes trouvent plus faciles d'entendre ces sons pour réagir une fois qu'elles ont appris quels sons sont liés à quels messages, plutôt que de lire les messages à chaque fois."
 
 L.customSoundDesc = "Joue le son personnalisé sélectionné au lieu de celui fourni par le module."
 L.resetSoundDesc = "Réinitialise les sons ci-dessous à leurs valeurs par défaut."

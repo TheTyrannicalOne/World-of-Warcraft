@@ -166,9 +166,11 @@ L.audio = "Áudio"
 L.music = "Música"
 L.ambience = "Som ambiente"
 L.sfx = "Efeitos sonoros"
+L.errorSpeech = "Sons de erro"
 L.disableMusic = "Desativar música (recomendado)"
 L.disableAmbience = "Desativar sons ambiente (recomendado)"
 L.disableSfx = "Desativar efeitos sonoros (não recomendado)"
+--L.disableErrorSpeech = "Mute error speech (recommended)"
 L.disableAudioDesc = "A opção '%s' do WoW será desligada, e depois será ligado novamente quando a luta contra o chefe acabar. Isso pode ajudar você a focar nos sons de alertas do BigWigs."
 L.blockTooltipQuests = "Bloqueia a dica de objetivos de missões"
 L.blockTooltipQuestsDesc = "Quando você precisa matar um chefe para uma missão, normalmente irá mostrar '0/1 completo' na barra de dica quando você passa o mouse pelo chefe. Isso será escondido quando em combate com o chefe para prevenir que a bara de dica fique muito grande."
@@ -329,6 +331,8 @@ L.pullStoppedCombat = "Temporizador cancelado porque você entrou em combate."
 L.pullIn = "Pull em %d seg"
 L.sendPull = "Enviando contador de pull para usuários BigWigs e DBM."
 L.wrongPullFormat = "Deve estar entre 1 e 60 segundos. Um exemplo correto seria: /pull 5"
+L.countdownBegins = "Iniciar Contagem"
+L.countdownBegins_desc = "Escolhe quanto tempo deve restar de tempo de pull (em segundos) para começar a contagem."
 
 -----------------------------------------------------------------------
 -- RaidIcon.lua
@@ -347,6 +351,7 @@ L.secondaryDesc = "O segundo ícone de raide que um script usará."
 --
 
 L.Sounds = "Sons"
+L.soundsDesc = "BigWigs usa o canal de som 'Geral' para reproduzir todos os sons. Se você acha que os sons estão muito baixos ou muito altos, abra as configurações de som do WoW e ajuste o 'Volume geral' para um nível que você goste.\n\nAbaixo você pode configurar globalmente os diferentes sons que irão reproduzir para ações específicas, ou configurar eles para 'Nenhum' para desabilita-los. Se você quer mudar somente o som para uma habilidade específica de chefe, isso pode ser feito nas configurações de encontro do chefe.\n\n"
 L.oldSounds = "Sons antigos"
 
 L.Alarm = "Alarme"
@@ -358,7 +363,6 @@ L.onyou = "Um feitiço, buff, ou debuff em você"
 L.underyou = "Você precisa se mover do feitiço embaixo de você"
 
 L.sound = "Som"
-L.soundDesc = "As mensagens podem conter um som. Para algumas pessoas fica mais fácil escutar quando aprendem que tal som aparece com tal mensagem, ao invés de ler a mensagem."
 
 L.customSoundDesc = "Reproduzir um som personalizado ao invés do padrão do módulo."
 L.resetSoundDesc = "Reinicia os sons acima para os padrões."

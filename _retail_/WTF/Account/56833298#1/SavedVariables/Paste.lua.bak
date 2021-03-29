@@ -4,29 +4,31 @@ PasteDB = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
@@ -38,20 +40,22 @@ PasteDB = {
 		["Illingrath - Dalaran"] = {
 			["loaded"] = true,
 		},
+		["Brotus - Argent Dawn"] = {
+			["loaded"] = true,
+		},
 		["Tyrannithal - Argent Dawn"] = {
 			["loaded"] = true,
 		},
 		["Kotalkhan - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Shanyt - Argent Dawn"] = {
-			["loaded"] = true,
-			["where"] = "Default",
-			["whispertarget"] = "",
-			["pos"] = {
-			},
-		},
 		["Kelvalatar - Dalaran"] = {
+			["loaded"] = true,
+		},
+		["Varlouris - Dalaran"] = {
+			["loaded"] = true,
+		},
+		["Okona - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Shimzo - Zul'jin"] = {
@@ -66,7 +70,7 @@ PasteDB = {
 		["Avisar - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Varlouris - Dalaran"] = {
+		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Thorinbane - Dalaran"] = {
@@ -75,16 +79,16 @@ PasteDB = {
 		["Shaekhan - Argent Dawn"] = {
 			["loaded"] = true,
 		},
-		["Zulbathal - Zul'jin"] = {
-			["loaded"] = true,
-		},
 		["Ruffinton - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Vadder - Argent Dawn"] = {
 			["loaded"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Malivant - Dalaran"] = {
+			["loaded"] = true,
+		},
+		["Serbitechna - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Darnastris - Dalaran"] = {
@@ -93,23 +97,27 @@ PasteDB = {
 		["Rotclaugh - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
 			["loaded"] = true,
 		},
-		["Malivant - Dalaran"] = {
-			["loaded"] = true,
-		},
-		["Shanyt - Zul'jin"] = {
-			["loaded"] = true,
-		},
-		["Okona - Zul'jin"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Jingojaggot - Zul'jin"] = {
 			["loaded"] = true,
+		},
+		["Zulbathal - Zul'jin"] = {
+			["loaded"] = true,
+		},
+		["Shanyt - Argent Dawn"] = {
+			["loaded"] = true,
+			["whispertarget"] = "",
+			["where"] = "Default",
+			["pos"] = {
+			},
 		},
 	},
 }

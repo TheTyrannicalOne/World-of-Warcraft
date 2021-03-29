@@ -1,8 +1,8 @@
 ## Author: Allara
-## Interface: 90002
-## X-Min-Interface: 90002
+## Interface: 90005
+## X-Min-Interface: 90005
 ## Title: Rarity
-## Version: 1.0 (r706-release-2)
+## Version: 1.0 (r707-release-2)
 
 ## Notes: Tracks rare drops, including companions and mounts
 ## Notes-ruRU: Примечания

@@ -1,17 +1,18 @@
 # BigWigs
 
-## [v218.1](https://github.com/BigWigsMods/BigWigs/tree/v218.1) (2021-03-11)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v218...v218.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v220](https://github.com/BigWigsMods/BigWigs/tree/v220) (2021-03-29)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v219.1...v220) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Update option files  
-- CastleNathria/Locales: Cleanups  
-- Update itIT (#1027)  
-- CastleNathria/TheCouncilofBlood: Fix Dancing bar icon  
-- CastleNathria/HungeringDestroyer: Fix a missed 'then'  
-- CastleNathria/HungeringDestroyer: Fix LFR timings  
-- CastleNathria/Trash: Tweak  
-- CastleNathria/HungeringDestroyer: Volatile Ejection is now in the combat log for LFR also, remove old code.  
-- CastleNathria/TheCouncilofBlood: Add a Dancing bar for the duration of the dance  
-- CastleNathria/Altimor: Stop playing sound & emphasizing Crushing Stone if it's being ignored  
-- CastleNathria/Trash: Throttle more things  
-- CastleNathria/Denathrius: Tweak  
+- bump version  
+- Update koKR (#1053)  
+- Update koKR (#1052)  
+- Update deDE (#1051)  
+- Plugins/Sound: Fix options validation  
+- Plugins/BossBlock: Include error speech in the audio muting options  
+- Loader: Remove an old check  
+- CastleNathria/Denathrius: Use combatlog event for adds spawning  
+- CastleNathria/Xymox: Tweak  
+- CastleNathria/Altimor: Use the hotfixed combatlog event to detect Huntsman's Bond (stage changes)  
+- CastleNathria/SunKingsSalvation: Use the hotfixed combatlog event to detect Ember Blast target  
+- Update ptBR (#1049)  
+- Loader: Enforce the minimum sound cache size  

@@ -44,6 +44,7 @@ GrailDatabase = {
 				"enUS|37176|54335|Darkshore Donations: Unstable Temporal Time Shifter", -- [39]
 				"enUS|37474|53242|Arathi Donations: Coastal Healing Potion", -- [40]
 				"enUS|37474|54343|Darkshore Donations: Potion of Replenishment", -- [41]
+				"enUS|37988|53241|Arathi Donations: Coastal Mana Potion", -- [42]
 			},
 			["OBJECT_NAME"] = {
 				"33941|enUS|282723|X-53 Touring Rocket", -- [1]
@@ -1772,6 +1773,7 @@ GrailDatabase = {
 				"37474|enUS|34772|118:76.09,24.04", -- [1568]
 				"37474|enUS|115669|650:35.18,21.19", -- [1569]
 				"37474|enUS|115784|76:42.18,49.09", -- [1570]
+				"37988|enUS|147659|62:60.07,22.55", -- [1571]
 			},
 			["QUEST_CODE"] = {
 				"0|enUS|0|A:3000001", -- [1]
@@ -9544,9 +9546,30 @@ GrailDatabase = {
 				"37899|enUS|57563|A:-875", -- [7768]
 				"37899|enUS|57566|A:-875", -- [7769]
 				"37899|enUS|54180|A:-875", -- [7770]
+				"37988|enUS|48639|A:-875", -- [7771]
+				"37988|enUS|50562|A:-875", -- [7772]
+				"37988|enUS|57564|A:-424", -- [7773]
+				"37988|enUS|57564|L3947775", -- [7774]
+				"37988|enUS|42233|L3947775", -- [7775]
+				"37988|enUS|50604|A:-882", -- [7776]
+				"37988|enUS|50606|A:-875", -- [7777]
+				"37988|enUS|49444|A:-1163", -- [7778]
+				"37988|enUS|54180|A:-572", -- [7779]
+				"37988|enUS|56120|A:-12", -- [7780]
+				"37988|enUS|56139|A:-1163", -- [7781]
+				"37988|enUS|48641|A:-875", -- [7782]
+				"37988|enUS|54810|A:-62", -- [7783]
+				"37988|enUS|54810|L3947775", -- [7784]
+				"37988|enUS|54467|T:147659", -- [7785]
+				"37988|enUS|57562|L3947775", -- [7786]
+				"37988|enUS|57562|L3289855", -- [7787]
+				"37988|enUS|57567|L3289855", -- [7788]
+				"37988|enUS|42233|L3289855", -- [7789]
+				"37988|enUS|42420|L3289855", -- [7790]
+				"37988|enUS|42421|L3289855", -- [7791]
 			},
 		},
-		["delayEventsHandled"] = true,
+		["delayEvents"] = true,
 		["Tracking"] = {
 			"2020-04-20 23:25 Argent Dawn/Shanyt/Horde/WARRIOR/Scourge/2/enUS/US/33941", -- [1]
 			"New quest completed 55604 UNKNOWN NAME", -- [2]
@@ -23696,7 +23719,7 @@ GrailDatabase = {
 			"New quest completed 54649 Flames of War", -- [14146]
 			"New quest completed 54646 Grand Marshal Fury", -- [14147]
 		},
-		["delayEvents"] = true,
+		["delayEventsHandled"] = true,
 	},
 	["BadQuestData"] = {
 		"G110|48639|1024|F:Horde", -- [1]

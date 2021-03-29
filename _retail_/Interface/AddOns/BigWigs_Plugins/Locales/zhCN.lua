@@ -186,7 +186,6 @@ L.soundButton = "音效按钮"
 L.soundButtonDesc = "显示或隐藏音效按钮。"
 L.soundDelay = "音效延迟"
 L.soundDelayDesc = "当有人太靠近你时指定多长时间 BigWigs 重复间隔等待指定的音效。"
-L.soundDesc = "信息出现时伴随着音效。有些人更容易在听到何种音效后发现何种警报，而不是阅读的实际信息。"
 L.Sounds = "音效"
 L.style = "风格"
 L.text = "文本"
@@ -292,9 +291,11 @@ L.audio = "语音"
 L.music = "音乐"
 L.ambience = "环境音效"
 L.sfx = "声音效果"
+L.errorSpeech = "错误提示"
 L.disableMusic = "音乐静音（推荐）"
 L.disableAmbience = "环境音效静音（推荐）"
 L.disableSfx = "声音效果静音（不推荐）"
+--L.disableErrorSpeech = "Mute error speech (recommended)"
 L.disableAudioDesc = "魔兽世界声音选项中的“%s”选项将被关闭，当首领战斗结束后会重新打开。这有助于将注意力集中在 BigWigs 警报音效上。"
 L.blockTooltipQuests = "屏蔽提示任务物品"
 L.blockTooltipQuestsDesc = "当需要因任务击杀首领时，通常在鼠标悬停在首领上会显示为“0/1 完成”的提示。此功能将在战斗中将其隐藏以防止提示变得非常大。"
@@ -368,9 +369,17 @@ L.chatMessagesDesc = "除了显示设置，输出所有 BigWigs 信息到默认�
 L.resetProximityDesc = "重置全部近距离有关选项，包括近距离锚点位置。"
 
 -----------------------------------------------------------------------
+-- Pull.lua
+--
+
+L.countdownBegins = "开始倒计时"
+L.countdownBegins_desc = "选择拉怪计时器上倒计开始时应剩余多少时间（以秒为单位）。"
+
+-----------------------------------------------------------------------
 -- Sound.lua
 --
 
+L.soundsDesc = "BigWigs 使用“主音量”通道播放全部音效。如果发现音效过小或过大，打开游戏声音设置并调整“主音量”滑块到所需的级别。\n\n下面可以全局配置为特定操作播放的不同音效，或将它们设置为“无”以将其禁用。如果只想更改特定首领技能音效，可以在首领战斗进行设置。\n\n"
 L.oldSounds = "传统音效"
 L.resetSoundDesc = "重置以上音效为默认。"
 L.onyou = "一个法术，增益或负面效果在你身上"

@@ -186,7 +186,6 @@ L.soundButton = "Pulsante del Suono"
 L.soundButtonDesc = "Visualizza o nasconde il pulsante del Suono"
 L.soundDelay = "Ritardo del Suono"
 L.soundDelayDesc = "Specifica per quanto tempo BigWigs dovrebbe aspettare per ripetere il suono quando qualcuno è vicino a te."
-L.soundDesc = "I messaggi possono essere visualizzati insieme a dei suoni. Alcuni trovano più semplice associare il suono all'abilità che viene mostrata nel messaggio piuttosto che leggere il messaggio stesso."
 L.Sounds = "Suoni"
 L.style = "Stile"
 L.text = "Testo"
@@ -292,9 +291,11 @@ L.audio = "Audio"
 L.music = "Musica"
 L.ambience = "Audio ambientale"
 L.sfx = "Effetti audio"
+L.errorSpeech = "Messaggi d'errore"
 L.disableMusic = "Togli la musica (raccomandato)"
 L.disableAmbience = "Togli i suoni ambientali (raccomandato)"
 L.disableSfx = "Togli gli effetti sonori (non raccomandato)"
+--L.disableErrorSpeech = "Mute error speech (recommended)"
 --L.disableAudioDesc = "The '%s' option in WoW's sound options will be turned off, then turned back on when the boss encounter is over. This can help you focus on warning sounds from BigWigs."
 --L.blockTooltipQuests = "Block tooltip quest objectives"
 --L.blockTooltipQuestsDesc = "When you need to kill a boss for a quest, it will usually show as '0/1 complete' in the tooltip when you place your mouse over the boss. This will be hidden whilst in combat with that boss to prevent the tooltip growing very large."
@@ -368,9 +369,17 @@ L.chatMessagesDesc = "Invia tutti i messaggi di BigWigs alla chat oltre che nei 
 --L.resetProximityDesc = "Reset all the options related to proximity, including the position of the proximity anchor."
 
 -----------------------------------------------------------------------
+-- Pull.lua
+--
+
+--L.countdownBegins = "Begin Countdown"
+--L.countdownBegins_desc = "Choose how much time should be remaining on the pull timer (in seconds) when the countdown begins."
+
+-----------------------------------------------------------------------
 -- Sound.lua
 --
 
+--L.soundsDesc = "BigWigs uses the 'Master' sound channel to play all of its sounds. If you find that sounds are too quiet or too loud, open WoW's sound settings and adjust the 'Volume principale' slider to a level you like.\n\nBelow you can globally configure the different sounds that play for specific actions, or set them to 'None' to disable them. If you only want to change a sound for a specific boss ability, that can be done at the boss encounter settings.\n\n"
 --L.oldSounds = "Old Sounds"
 --L.resetSoundDesc = "Resets the above sounds to their defaults."
 --L.onyou = "A spell, buff, or debuff is on you"

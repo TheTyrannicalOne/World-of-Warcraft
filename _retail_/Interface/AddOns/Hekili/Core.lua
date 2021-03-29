@@ -1140,7 +1140,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                         if state.args.for_next == 1 then
                                                             -- Pooling for the next entry in the list.
                                                             local next_entry  = list[ actID + 1 ]
-                                                            local next_action = next_entry and next_action
+                                                            local next_action = next_entry and next_entry.action
                                                             local next_id     = next_action and class.abilities[ next_action ] and class.abilities[ next_action ].id
 
                                                             local extra_amt   = state.args.extra_amount or 0
@@ -1148,7 +1148,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                             local next_known  = next_action and state:IsKnown( next_action )
                                                             local next_usable, next_why = next_action and state:IsUsable( next_action )
                                                             local next_cost   = next_action and state.action[ next_action ].cost or 0
-                                                            local next_res    = next_action and state.GetResourceType( next_action ) or class.primaryResource                                                    
+                                                            local next_res    = next_action and state.GetResourceType( next_action ) or class.primaryResource
 
                                                             if not next_entry then
                                                                 if debug then self:Debug( "Attempted to Pool Resources for non-existent next entry in the APL.  Skipping." ) end
@@ -1157,9 +1157,18 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                             elseif not next_known then
                                                                 if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but the next entry is not known.  Skipping.", next_action ) end
                                                             elseif not next_usable then
-                                                                if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but the next entry is not usable because %s.  Skipping.", next_action, next_why ) end
+                                                                if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but the next entry is not usable because %s.  Skipping.", next_action, next_why or "of an unknown reason" ) end
+                                                            elseif state.cooldown[ next_action ].remains > 0 then
+                                                                if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but the next entry is on cooldown.  Skipping.", next_action ) end
+                                                            elseif state[ next_res ].current >= next_cost + extra_amt then
+                                                                if debut then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but we already have all the resources needed ( %.2f > %.2f + %.2f ).  Skipping.", next_ation, state[ next_res ].current, next_cost, extra_amt ) end
                                                             else
-                                                                local next_wait = max( state:TimeToReady( next_action, true ), state[ next_res ][ "time_to_" .. ( next_cost + extra_amt ) ] )
+                                                                -- Oops.  We only want to wait if 
+                                                                local next_wait = state[ next_res ][ "time_to_" .. ( next_cost + extra_amt ) ]
+
+                                                                --[[ if next_wait > 0 then
+                                                                    if debug then self:Debug( "Next Wait: %.2f; TTR: %.2f, Resource(%.2f): %.2f", next_wait, state:TimeToReady( next_action, true ), next_cost + extra_amt, state[ next_res ][ "time_to_" .. ( next_cost + extra_amt ) ] ) end
+                                                                end ]]
 
                                                                 if next_wait <= 0 then
                                                                     if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but there is no need to wait.  Skipping.", next_action ) end
@@ -1174,7 +1183,9 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                                     next_wait = next_wait + 0.01
                                                                     state.offset = state.offset + next_wait
 
+                                                                    state.this_action = next_action
                                                                     aScriptPass = not next_entry.criteria or next_entry.criteria == '' or scripts:CheckScript( packName .. ':' .. listName .. ':' .. ( actID + 1 ) )
+                                                                    state.this_action = "pool_resource"
 
                                                                     if not aScriptPass then
                                                                         if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but its conditions would not be met.  Skipping.", next_action ) end
@@ -1684,7 +1695,7 @@ function Hekili:ProcessHooks( dispName, packName )
 
                     if not action then
                         if debug then self:Debug( "Time spent on event #%d PREADVANCE: %.2fms...", n, debugprofilestop() - eStart ) end
-                        if debug then self:Debug( 1, "No recommendation found before event #%d (%s %s) at %.2f; triggering event and continuing ( %.2f ).\n", n, event.action, event.type, t, state.offset + state.delay ) end
+                        if debug then self:Debug( 1, "No recommendation found before event #%d (%s %s) at %.2f; triggering event and continuing ( %.2f ).\n", n, event.action or "NO ACTION", event.type or "NO TYPE", t, state.offset + state.delay ) end
                         
                         state.advance( overrideTime or t )
                         if debug then self:Debug( "Time spent on event #%d POSTADVANCE: %.2fms...", n, debugprofilestop() - eStart ) end
