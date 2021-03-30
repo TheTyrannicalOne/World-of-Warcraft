@@ -32,10 +32,10 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[40643] = {
@@ -51,7 +51,7 @@ QuestTogether = {
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10 Fresh Star Moss", -- [1]
+				"2/10  ", -- [1]
 			},
 		},
 		[54180] = {
@@ -59,16 +59,15 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[53101] = {
+			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[44989] = {
@@ -89,21 +88,22 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[31891] = {
@@ -137,8 +137,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

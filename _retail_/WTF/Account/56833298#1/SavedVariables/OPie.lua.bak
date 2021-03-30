@@ -27,7 +27,7 @@ OneRing_Config = {
 				["Tools2"] = "ALT-E",
 				["Mounts9"] = "ALT-Q",
 				["Mounts5"] = "ALT-Q",
-				["Utility8"] = "ALT-E",
+				["Utility9"] = "ALT-E",
 				["Tools1"] = "ALT-E",
 				["Mounts11"] = "ALT-Q",
 				["OPieAutoQuest"] = false,
@@ -35,7 +35,7 @@ OneRing_Config = {
 				["Mounts4"] = "ALT-Q",
 				["Mounts61"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
-				["Utility9"] = "ALT-E",
+				["Utility8"] = "ALT-E",
 				["Mounts15"] = "ALT-Q",
 				["Utility3"] = "ALT-E",
 				["Mounts6"] = "ALT-Q",
@@ -149,10 +149,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 			},
 			["Utility8"] = {
 				{
@@ -437,8 +437,8 @@ OneRing_Config = {
 					["sliceToken"] = "OPCTA4",
 				}, -- [4]
 				{
-					["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
 					["sliceToken"] = "OPCTAc",
+					["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
 				}, -- [5]
 				{
 					"item", -- [1]
@@ -486,8 +486,8 @@ OneRing_Config = {
 			},
 			["Mounts5"] = {
 				{
-					["id"] = 150544,
 					["sliceToken"] = "ABue4=Mh6Wr",
+					["id"] = 150544,
 				}, -- [1]
 				{
 					"mount", -- [1]

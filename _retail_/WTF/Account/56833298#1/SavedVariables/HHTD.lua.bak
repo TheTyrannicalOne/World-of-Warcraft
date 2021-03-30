@@ -19,13 +19,13 @@ HHTD_SavedVariables = {
 		["Kotalkhan - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Kelvalatar - Dalaran"] = {
+		["Shanyt - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
 		["Varlouris - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Shimzo - Zul'jin"] = {
@@ -34,7 +34,7 @@ HHTD_SavedVariables = {
 		["Shaekhan - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Avisar - Dalaran"] = {
@@ -82,9 +82,13 @@ HHTD_SavedVariables = {
 		["Zulbathal - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Shanyt - Argent Dawn"] = {
+		["Kelvalatar - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
@@ -93,12 +97,12 @@ HHTD_SavedVariables = {
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
@@ -114,11 +118,7 @@ HHTD_SavedVariables = {
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 	},
 	["namespaces"] = {
 		["Announcer"] = {

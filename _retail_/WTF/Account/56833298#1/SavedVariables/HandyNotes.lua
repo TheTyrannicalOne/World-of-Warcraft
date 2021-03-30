@@ -4,15 +4,15 @@ HandyNotesDB = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
@@ -26,7 +26,7 @@ HandyNotesDB = {
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 	},
@@ -37,13 +37,13 @@ HandyNotesDB = {
 		},
 		["Illingrath - Dalaran"] = {
 		},
-		["Shanyt - Argent Dawn"] = {
+		["Kelvalatar - Dalaran"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
 		["Kotalkhan - Zul'jin"] = {
 		},
-		["Kelvalatar - Dalaran"] = {
+		["Shanyt - Argent Dawn"] = {
 		},
 		["Zulbathal - Zul'jin"] = {
 		},
@@ -53,7 +53,7 @@ HandyNotesDB = {
 		},
 		["Shaekhan - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Avisar - Dalaran"] = {
 		},
@@ -81,7 +81,7 @@ HandyNotesDB = {
 		},
 		["Shanyt - Zul'jin"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 		},
 		["Shimzo - Zul'jin"] = {
 		},
@@ -94,15 +94,15 @@ HandyNotes_HandyNotesDB = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
@@ -116,7 +116,7 @@ HandyNotes_HandyNotesDB = {
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 	},
@@ -127,13 +127,13 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Illingrath - Dalaran"] = {
 		},
-		["Shanyt - Argent Dawn"] = {
+		["Kelvalatar - Dalaran"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
 		["Kotalkhan - Zul'jin"] = {
 		},
-		["Kelvalatar - Dalaran"] = {
+		["Shanyt - Argent Dawn"] = {
 		},
 		["Zulbathal - Zul'jin"] = {
 		},
@@ -143,7 +143,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Shaekhan - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Avisar - Dalaran"] = {
 		},
@@ -171,7 +171,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Shanyt - Zul'jin"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 		},
 		["Shimzo - Zul'jin"] = {
 		},

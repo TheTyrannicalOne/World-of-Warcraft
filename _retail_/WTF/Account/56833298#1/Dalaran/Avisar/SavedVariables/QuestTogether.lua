@@ -19,12 +19,10 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[53436] = {
@@ -33,16 +31,15 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
+			},
+		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[62801] = {
@@ -50,10 +47,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[57006] = {
@@ -70,10 +67,10 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[39060] = {
@@ -96,9 +93,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[36615] = {
@@ -108,15 +106,9 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-			},
-		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
-			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[57567] = {
@@ -124,10 +116,17 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+			},
+		},
+		[56211] = {
+			["title"] = "Scrying Stones",
+			["objectives"] = {
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[50601] = {
@@ -173,16 +172,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
+			},
+		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
-			},
-		},
-		[56211] = {
-			["title"] = "Scrying Stones",
-			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[54485] = {
@@ -194,8 +194,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

@@ -11,7 +11,7 @@ RareShareDB = {
 		},
 		["CChannel"] = {
 			["CID"] = 1,
-			["CName"] = "General - Nazjatar",
+			["CName"] = "General - Vale of Eternal Blossoms",
 		},
 		["OnDeath"] = false,
 		["Sound"] = {

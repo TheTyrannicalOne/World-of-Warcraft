@@ -85,10 +85,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 179319,
-			["Level"] = 131,
+			["ID"] = 178056,
+			["Level"] = 140,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff1eff00|Hitem:179319::::::::60:71::9:3:6908:6652:1694:2:28:1429:9:60:::|h[Caged Cudgel of the Fireflash]|h|r",
+			["Link"] = "|cff0070dd|Hitem:178056::::::::60:71::11:1:6706:2:9:58:28:1425:::|h[Stonevigil Rapier]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

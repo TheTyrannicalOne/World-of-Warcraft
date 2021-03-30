@@ -16,7 +16,7 @@ RareShareDB = {
 		["ChatAnnounce"] = true,
 		["OnDeath"] = false,
 		["CChannel"] = {
-			["CName"] = "General - Nazjatar",
+			["CName"] = "General - Vale of Eternal Blossoms",
 			["CID"] = 1,
 		},
 		["Duplicates"] = true,

@@ -25,11 +25,9 @@ QuestTogether = {
 				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[53101] = {
+			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[50562] = {
@@ -54,20 +52,22 @@ QuestTogether = {
 				"2/10  ", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[44989] = {
@@ -94,10 +94,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[42421] = {
@@ -116,10 +116,11 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[47105] = {
@@ -128,17 +129,16 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

@@ -763,44 +763,6 @@ AzeritePowerWeightsDB = {
 				["debug"] = false,
 				["preferBiSMarjor"] = true,
 			},
-			["Okona"] = {
-				["specScales"] = {
-					[257] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/5/2/Default",
-					},
-					[258] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/5/3/Default",
-					},
-					[256] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/5/1/Default",
-					},
-				},
-				["addPrimaryStatToScore"] = false,
-				["showTooltipLegend"] = true,
-				["zonePowers"] = true,
-				["pvpPowers"] = false,
-				["addILvlToScore"] = false,
-				["relativeScore"] = false,
-				["rolePowersNoOffRolePowers"] = false,
-				["importingCanUpdate"] = true,
-				["tooltipScales"] = {
-				},
-				["enableEssences"] = true,
-				["onlyOwnClassDefaults"] = true,
-				["rolePowers"] = true,
-				["defensivePowers"] = true,
-				["enableTraits"] = true,
-				["scaleByAzeriteEmpowered"] = false,
-				["onlyOwnClassCustoms"] = false,
-				["outlineScores"] = true,
-				["professionPowers"] = false,
-				["showOnlyUpgrades"] = false,
-				["debug"] = false,
-				["preferBiSMarjor"] = true,
-			},
 			["Datgore"] = {
 				["specScales"] = {
 					[255] = {
@@ -838,6 +800,44 @@ AzeritePowerWeightsDB = {
 				["showOnlyUpgrades"] = false,
 				["onlyOwnClassDefaults"] = true,
 				["enableEssences"] = true,
+			},
+			["Okona"] = {
+				["specScales"] = {
+					[257] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/5/2/Default",
+					},
+					[258] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/5/3/Default",
+					},
+					[256] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/5/1/Default",
+					},
+				},
+				["addPrimaryStatToScore"] = false,
+				["showTooltipLegend"] = true,
+				["zonePowers"] = true,
+				["pvpPowers"] = false,
+				["addILvlToScore"] = false,
+				["relativeScore"] = false,
+				["rolePowersNoOffRolePowers"] = false,
+				["importingCanUpdate"] = true,
+				["tooltipScales"] = {
+				},
+				["enableEssences"] = true,
+				["onlyOwnClassDefaults"] = true,
+				["rolePowers"] = true,
+				["defensivePowers"] = true,
+				["enableTraits"] = true,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassCustoms"] = false,
+				["outlineScores"] = true,
+				["professionPowers"] = false,
+				["showOnlyUpgrades"] = false,
+				["debug"] = false,
+				["preferBiSMarjor"] = true,
 			},
 			["Zulbathal"] = {
 				["specScales"] = {

@@ -16,28 +16,28 @@ QuestTogether = {
 		[44074] = {
 			["title"] = "Neltharion's Lair: Essence of Tenacity",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Essence of Tenacity", -- [1]
 				"0/1 Dargrul slain", -- [2]
 			},
 		},
 		[44075] = {
 			["title"] = "Halls of Valor: Essence of Ferocity",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Essence of Ferocity", -- [1]
 				"0/1 Odyn's trial completed", -- [2]
 			},
 		},
 		[44076] = {
 			["title"] = "Darkheart Thicket: Essence of Regrowth",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Essence of Regrowth", -- [1]
 				"0/1 Shade of Xavius slain", -- [2]
 			},
 		},
 		[44077] = {
 			["title"] = "Eye of Azshara: Essence of Balance",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Essence of Balance", -- [1]
 			},
 		},
 		[43365] = {
@@ -56,13 +56,13 @@ QuestTogether = {
 		[42129] = {
 			["title"] = "The Pendant of Starlight",
 			["objectives"] = {
-				"0/1  ", -- [1]
+				"0/1 Pendant of Starlight", -- [1]
 			},
 		},
 		[42719] = {
 			["title"] = "Eye of Azshara: Cleansing the Dreamway",
 			["objectives"] = {
-				"0/25  ", -- [1]
+				"0/25 Rarefied Water", -- [1]
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
@@ -78,10 +78,10 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[50602] = {
@@ -90,10 +90,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[51432] = {
@@ -118,10 +118,10 @@ QuestTogether = {
 				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[40329] = {
@@ -149,8 +149,8 @@ QuestTogether = {
 		[40019] = {
 			["title"] = "An Empathetic Herb",
 			["objectives"] = {
-				"9/15  ", -- [1]
-				"5/5  ", -- [2]
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[49901] = {
@@ -168,8 +168,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }
