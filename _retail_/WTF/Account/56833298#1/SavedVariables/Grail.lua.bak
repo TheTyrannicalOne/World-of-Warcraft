@@ -45,6 +45,7 @@ GrailDatabase = {
 				"enUS|37474|53242|Arathi Donations: Coastal Healing Potion", -- [40]
 				"enUS|37474|54343|Darkshore Donations: Potion of Replenishment", -- [41]
 				"enUS|37988|53241|Arathi Donations: Coastal Mana Potion", -- [42]
+				"enUS|37988|54330|Darkshore Donations: Platinum Ore", -- [43]
 			},
 			["OBJECT_NAME"] = {
 				"33941|enUS|282723|X-53 Touring Rocket", -- [1]
@@ -9573,9 +9574,13 @@ GrailDatabase = {
 				"37988|enUS|61442|P:a61442+PF001", -- [7794]
 				"37988|enUS|61442|T:-1533", -- [7795]
 				"37988|enUS|61442|A:6000025", -- [7796]
+				"37988|enUS|42422|L3289855", -- [7797]
+				"37988|enUS|56120|A:-542", -- [7798]
+				"37988|enUS|54330|T:142969", -- [7799]
+				"37988|enUS|54619|L3947775", -- [7800]
 			},
 		},
-		["delayEvents"] = true,
+		["delayEventsHandled"] = true,
 		["Tracking"] = {
 			"2020-04-20 23:25 Argent Dawn/Shanyt/Horde/WARRIOR/Scourge/2/enUS/US/33941", -- [1]
 			"New quest completed 55604 UNKNOWN NAME", -- [2]
@@ -23725,7 +23730,7 @@ GrailDatabase = {
 			"New quest completed 54649 Flames of War", -- [14146]
 			"New quest completed 54646 Grand Marshal Fury", -- [14147]
 		},
-		["delayEventsHandled"] = true,
+		["delayEvents"] = true,
 	},
 	["BadQuestData"] = {
 		"G110|48639|1024|F:Horde", -- [1]

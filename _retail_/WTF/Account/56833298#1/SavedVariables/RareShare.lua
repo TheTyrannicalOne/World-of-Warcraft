@@ -3,21 +3,21 @@ RareShareDB = {
 	["Modules"] = {
 	},
 	["Config"] = {
-		["ChatAnnounce"] = true,
+		["Sound"] = {
+			["Rares"] = true,
+			["Master"] = true,
+			["Duplicates"] = true,
+		},
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
+		["ChatAnnounce"] = true,
+		["OnDeath"] = false,
 		["CChannel"] = {
 			["CID"] = 1,
-			["CName"] = "General - Vale of Eternal Blossoms",
-		},
-		["OnDeath"] = false,
-		["Sound"] = {
-			["Rares"] = true,
-			["Master"] = true,
-			["Duplicates"] = true,
+			["CName"] = "General - Mechagon",
 		},
 		["Duplicates"] = true,
 	},

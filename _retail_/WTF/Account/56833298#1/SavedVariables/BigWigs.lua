@@ -21,9 +21,13 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
+		["BigWigs_Bosses_Murmur"] = {
+		},
 		["BigWigs_Plugins_Countdown"] = {
 		},
 		["BigWigs_Plugins_AltPower"] = {
+		},
+		["BigWigs_Bosses_Blackheart the Inciter"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -35,29 +39,33 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 219.9998626708984,
-					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
 					["BigWigsAnchor_height"] = 15.99994277954102,
+					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 				},
 			},
 		},
+		["BigWigs_Bosses_Grandmaster Vorpil"] = {
+		},
 		["BigWigs_Plugins_Super Emphasize"] = {
+		},
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_AutoReply"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
+		["BigWigs_Bosses_Ambassador Hellmaw"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["height"] = 120.0000076293945,
 					["width"] = 139.9999847412109,
+					["height"] = 120.0000076293945,
 				},
 			},
+		},
+		["BigWigs_Plugins_Messages"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
@@ -174,11 +182,10 @@ BigWigsStatsDB = {
 		},
 	},
 	[2164] = {
-		[2361] = {
+		[2354] = {
 			["LFR"] = {
+				["best"] = 240.8419999999969,
 				["kills"] = 1,
-				["wipes"] = 1,
-				["best"] = 490.721000000005,
 			},
 		},
 		[2351] = {
@@ -200,9 +207,9 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[2354] = {
+		[2347] = {
 			["LFR"] = {
-				["best"] = 240.8419999999969,
+				["best"] = 247.9619999999995,
 				["kills"] = 1,
 			},
 		},
@@ -219,10 +226,11 @@ BigWigsStatsDB = {
 				["best"] = 373.2479999999996,
 			},
 		},
-		[2347] = {
+		[2361] = {
 			["LFR"] = {
-				["best"] = 247.9619999999995,
 				["kills"] = 1,
+				["wipes"] = 1,
+				["best"] = 490.721000000005,
 			},
 		},
 	},

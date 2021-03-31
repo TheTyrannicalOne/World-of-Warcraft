@@ -39,7 +39,7 @@ MADB = {
 							"UIParent", -- [2]
 							"BOTTOM", -- [3]
 							0, -- [4]
-							110, -- [5]
+							75, -- [5]
 						}, -- [2]
 					},
 					["name"] = "ExtraAbilityContainer",

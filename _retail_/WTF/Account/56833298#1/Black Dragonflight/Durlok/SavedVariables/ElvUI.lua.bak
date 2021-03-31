@@ -3,14 +3,14 @@ ElvCharacterDB = {
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
-		"/skada toggle", -- [1]
-		"/dance", -- [2]
+		"/1 ok", -- [1]
+		"/sleep", -- [2]
 		"/1 how long before patchwork is attackable?", -- [3]
-		"/1 ok", -- [4]
+		"/skada toggle", -- [4]
 		"/1 ok ty omw", -- [5]
 		"/allthethings", -- [6]
 		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [7]
-		"/sleep", -- [8]
+		"/dance", -- [8]
 		"/train", -- [9]
 		"/invite Lilanda-blackhand", -- [10]
 	},

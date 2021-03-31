@@ -58,16 +58,17 @@ QuestTogether = {
 				"0/1 Pendant of Starlight", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[42719] = {
+			["title"] = "Eye of Azshara: Cleansing the Dreamway",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/25 Rarefied Water", -- [1]
+				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[49901] = {
+			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 Yazma slain", -- [1]
 			},
 		},
 		[36614] = {
@@ -77,17 +78,16 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
-			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
-			},
-		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[50598] = {
@@ -146,11 +146,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[42719] = {
-			["title"] = "Eye of Azshara: Cleansing the Dreamway",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
-				"0/25 Rarefied Water", -- [1]
-				"0/1 Wrath of Azshara slain", -- [2]
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[31486] = {
@@ -159,17 +165,11 @@ QuestTogether = {
 				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[49901] = {
-			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
-			["objectives"] = {
-				"0/1 Yazma slain", -- [1]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

@@ -1,10 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
+			},
+		},
+		[42234] = {
+			["title"] = "The Valarjar",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[54460] = {
@@ -18,15 +24,16 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[61981] = {
@@ -113,11 +120,6 @@ QuestTogether = {
 				"1/1 Speak with Ve'nari", -- [1]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
-			},
-		},
 		[62730] = {
 			["title"] = "Fruit of the Gods",
 			["objectives"] = {
@@ -144,12 +146,6 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -158,6 +154,12 @@ QuestTogether = {
 				"Defeat Kela Grimtotem", -- [3]
 				"Defeat Zoltan", -- [4]
 				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[54180] = {
@@ -170,10 +172,9 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[57462] = {
@@ -193,16 +194,15 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
-			},
-		},
 		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[45383] = {
@@ -217,17 +217,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }
