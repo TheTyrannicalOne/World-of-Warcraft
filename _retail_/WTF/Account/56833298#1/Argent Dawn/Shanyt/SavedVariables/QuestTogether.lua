@@ -1,10 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[42234] = {
@@ -24,10 +24,10 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[56120] = {
@@ -88,12 +88,6 @@ QuestTogether = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[45381] = {
@@ -162,6 +156,17 @@ QuestTogether = {
 				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
+		[49413] = {
+			["title"] = "Scamps With Scrolls",
+			["objectives"] = {
+				"0/5 Scheming Street Scamps dispelled", -- [1]
+			},
+		},
+		[54453] = {
+			["title"] = "Supplies from Magni",
+			["objectives"] = {
+			},
+		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
@@ -172,9 +177,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[57462] = {
@@ -183,9 +189,10 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[54453] = {
-			["title"] = "Supplies from Magni",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[57403] = {
@@ -217,17 +224,16 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

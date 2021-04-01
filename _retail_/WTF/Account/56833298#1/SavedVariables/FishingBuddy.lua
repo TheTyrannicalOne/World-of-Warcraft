@@ -58,10 +58,10 @@ FishingBuddy_Info = {
 			[27422] = 1,
 		},
 		[534001] = {
-			[127991] = 8,
-			[127759] = 1,
 			[118391] = 1,
+			[127759] = 1,
 			[127994] = 3,
+			[127991] = 8,
 		},
 		[534002] = {
 			[127991] = 3,
@@ -114,18 +114,6 @@ FishingBuddy_Info = {
 			["texture"] = 132107,
 			["quality"] = 1,
 		},
-		[127759] = {
-			["color"] = "ff0070dd",
-			["enUS"] = "Felblight",
-			["texture"] = 576311,
-			["quality"] = 3,
-		},
-		[127994] = {
-			["color"] = "ff0070dd",
-			["enUS"] = "Felmouth Frenzy Lunker",
-			["texture"] = 132103,
-			["quality"] = 3,
-		},
 		[134568] = {
 			["enUS"] = "Huge Mossgill Perch",
 			["canopen"] = false,
@@ -133,11 +121,23 @@ FishingBuddy_Info = {
 			["quest"] = true,
 			["texture"] = 350868,
 		},
+		[127994] = {
+			["color"] = "ff0070dd",
+			["enUS"] = "Felmouth Frenzy Lunker",
+			["texture"] = 132103,
+			["quality"] = 3,
+		},
+		[127759] = {
+			["color"] = "ff0070dd",
+			["enUS"] = "Felblight",
+			["texture"] = 576311,
+			["quality"] = 3,
+		},
 	},
 	["KnownZones"] = {
 		[1527] = "Uldum",
 		[641] = "Thas'talah Basin",
-		[534] = "Hellfire Citadel",
 		[1355] = "Chitterspine Caverns",
+		[534] = "Hellfire Citadel",
 	},
 }

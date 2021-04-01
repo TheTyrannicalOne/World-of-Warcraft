@@ -7,28 +7,28 @@ HandyNotes_BrokenShoreDB = {
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
@@ -43,17 +43,17 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Kotalkhan - Zul'jin"] = {
 		},
-		["Shanyt - Argent Dawn"] = {
-		},
-		["Shimzo - Zul'jin"] = {
-		},
-		["Tinkster - Dalaran"] = {
+		["Kelvalatar - Dalaran"] = {
 		},
 		["Jingojaggot - Zul'jin"] = {
 		},
+		["Okona - Zul'jin"] = {
+		},
+		["Varlouris - Dalaran"] = {
+		},
 		["Shaekhan - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Avisar - Dalaran"] = {
 		},
@@ -67,25 +67,25 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Vadder - Argent Dawn"] = {
 		},
-		["Serbitechna - Dalaran"] = {
-		},
 		["Datgore - Zul'jin"] = {
+		},
+		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Malivant - Dalaran"] = {
+		["Serbitechna - Dalaran"] = {
 		},
 		["Durlok - Black Dragonflight"] = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
-		["Varlouris - Dalaran"] = {
+		["Shimzo - Zul'jin"] = {
 		},
 		["Zulbathal - Zul'jin"] = {
 		},
-		["Kelvalatar - Dalaran"] = {
+		["Shanyt - Argent Dawn"] = {
 		},
 	},
 }
