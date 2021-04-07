@@ -679,6 +679,8 @@ if UnitClassBase( "player" ) == "HUNTER" then
         if debuff.tar_trap.up then
             debuff.tar_trap.expires = debuff.tar_trap.applied + 30
         end
+
+        if now - action.resonating_arrow.lastCast < 6 then applyBuff( "resonating_arrow", 10 - ( now - action.resonating_arrow.lastCast ) ) end
     end )
 
 
@@ -1778,6 +1780,7 @@ if UnitClassBase( "player" ) == "HUNTER" then
             handler = function ()
                 applyDebuff( "target", "resonating_arrow" )
                 active_dot.resonating_arrow = active_enemies
+                applyBuff( "resonating_arrow" )
             end,
 
             toggle = "essences",

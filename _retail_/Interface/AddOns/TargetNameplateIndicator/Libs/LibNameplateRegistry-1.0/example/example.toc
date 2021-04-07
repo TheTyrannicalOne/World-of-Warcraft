@@ -1,5 +1,5 @@
-## Interface: 80200
-## X-Max-Interface: 80200
+## Interface: 90005
+## X-Max-Interface: 90005
 ## X-Min-Interface: 70000
 
 ## Title: example

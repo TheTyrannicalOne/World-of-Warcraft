@@ -267,7 +267,7 @@ function addon:UnregisterFrame(button)
 
     self.ccframes[button] = nil
 
-    -- Unwrap the OnEnter/OnLeave scripts, if they were set
+    -- Unwrap the OnEnter/OnLeave scripts, if they w/conere set
     addon.header:UnwrapScript(button, "OnEnter")
     addon.header:UnwrapScript(button, "OnLeave")
 end
@@ -513,7 +513,7 @@ function addon:GetClickAttributes(global)
                 bits[#bits + 1] = ATTR(indent, prefix, "type", suffix, entry.type)
                 rembits[#rembits + 1] = REMATTR(prefix, "type", suffix)
             elseif entry.type == "menu" then
-                set_text = ATTR(indent, prefix, "type", suffix, "togglemenu")
+                local set_text = ATTR(indent, prefix, "type", suffix, "togglemenu")
                 bits[#bits + 1] = string.gsub(set_text, '"togglemenu"', 'button:GetAttribute("*type2") == "menu" and "menu" or "togglemenu"')
                 rembits[#rembits + 1] = REMATTR(prefix, "type", suffix)
             elseif entry.type == "spell" and self.settings.stopcastingfix then

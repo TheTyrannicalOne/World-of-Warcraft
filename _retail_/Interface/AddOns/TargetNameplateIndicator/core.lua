@@ -13,7 +13,7 @@ local LNR = LibStub("LibNameplateRegistry-1.0")
 LibStub("AceAddon-3.0"):NewAddon(TNI, addon, "AceConsole-3.0")
 
 
---[===[@debug@
+--[==[@debug@
 local DEBUG = false
 
 local function debugprint(...)
@@ -21,7 +21,7 @@ local function debugprint(...)
 		print("TNI DEBUG:", ...)
 	end
 end
---@end-debug@]===]
+--@end-debug@]==]
 
 -----
 -- Error callbacks
@@ -92,11 +92,11 @@ function TNI:OnInitialize()
 
 	self:LNR_RegisterCallback("LNR_ERROR_FATAL_INCOMPATIBILITY", "OnError_FatalIncompatibility")
 
-	--[===[@debug@
+	--[==[@debug@
 	if DEBUG then
 		TNI:LNR_RegisterCallback("LNR_DEBUG", debugprint)
 	end
-	--@end-debug@]===]
+	--@end-debug@]==]
 end
 
 function TNI:OnEnable()
@@ -153,9 +153,9 @@ function Indicator:Refresh()
 end
 
 function Indicator:OnRecyclePlate(callback, nameplate, plateData)
-	--[===[@debug@
+	--[==[@debug@
 	debugprint("Callback fired (recycle)", self.unit, nameplate == self.currentNameplate)
-	--@end-debug@]===]
+	--@end-debug@]==]
 
 	if nameplate == self.currentNameplate then
 		self:Update()
@@ -220,9 +220,9 @@ local TargetIndicator = CreateIndicator("target")
 function TargetIndicator:PLAYER_TARGET_CHANGED()
 	local nameplate, plateData = self:GetPlateByGUID(UnitGUID("target"))
 
-	--[===[@debug@
+	--[==[@debug@
 	debugprint("Player target changed", nameplate)
-	--@end-debug@]===]
+	--@end-debug@]==]
 
 	if not nameplate then
 		self:Update()
@@ -230,9 +230,9 @@ function TargetIndicator:PLAYER_TARGET_CHANGED()
 end
 
 function TargetIndicator:OnTargetPlateOnScreen(callback, nameplate, plateData)
-	--[===[@debug@
+	--[==[@debug@
 	debugprint("Callback fired (target found)")
-	--@end-debug@]===]
+	--@end-debug@]==]
 
 	self:Update(nameplate)
 end
@@ -257,9 +257,9 @@ function MouseoverIndicator:OnUpdate()
 
 	local areOtherIndicatorsDisplayed = self:AreOtherIndicatorsDisplayed()
 
-	--[===[@debug@
+	--[==[@debug@
 	debugprint("Player mouseover changed", nameplate, "areOtherIndicatorsDisplayed?", areOtherIndicatorsDisplayed)
-	--@end-debug@]===]
+	--@end-debug@]==]
 
 	-- If the player has their mouse over a unit that doesn't already have an indicator displaying on it, update the mouseover indicator; otherwise hide it
 	if not areOtherIndicatorsDisplayed then
@@ -289,9 +289,9 @@ function FocusIndicator:OnUpdate()
 
 	local areOtherIndicatorsDisplayed = self:AreOtherIndicatorsDisplayed()
 
-	--[===[@debug@
+	--[==[@debug@
 	debugprint("Player focus changed", nameplate, "areOtherIndicatorsDisplayed?", areOtherIndicatorsDisplayed)
-	--@end-debug@]===]
+	--@end-debug@]==]
 
 	-- If the player has their focus set to a unit that doesn't already have an indicator displaying on it, update the focus indicator; otherwise hide it
 	if not areOtherIndicatorsDisplayed then

@@ -88,9 +88,7 @@
         <Scripts>
             <OnEnter>
                 local parent = self:GetParent()
-                if Clique:APIIsTrue(parent:IsEnabled()) then
-                    SpellButton_OnEnter(parent)
-                else
+                if not Clique:APIIsTrue(parent:IsEnabled()) then
                     self:GetHighlightTexture():Hide()
                 end
 
@@ -304,7 +302,9 @@
                         </Anchors>
                         <Scripts>
                             <OnLoad>
-                                WhoFrameColumn_SetWidth(self, 203);
+                                local width = 203
+                                self:SetWidth(width);
+	                            _G[self:GetName().."Middle"]:SetWidth(width - 9);
                             </OnLoad>
                         </Scripts>
                     </Button>
@@ -316,7 +316,9 @@
                         </Anchors>
                         <Scripts>
                             <OnLoad>
-                                WhoFrameColumn_SetWidth(self, 120);
+                                local width = 120
+                                self:SetWidth(width);
+	                            _G[self:GetName().."Middle"]:SetWidth(width - 9);
                             </OnLoad>
                         </Scripts>
                         <ButtonText>

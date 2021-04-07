@@ -84,4 +84,3 @@ L["Usage.FractionalNumber"] = "Must be a number between 0 and 1"
 L["Usage.PositiveNumber"] = "Must be a positive number"
 
 
-

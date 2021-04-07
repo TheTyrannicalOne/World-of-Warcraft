@@ -3,26 +3,26 @@ RareShareDB = {
 	["Modules"] = {
 	},
 	["Config"] = {
-		["CChannel"] = {
-			["CID"] = 1,
-			["CName"] = "General - Mechagon",
+		["Sound"] = {
+			["Rares"] = true,
+			["Master"] = true,
+			["Duplicates"] = true,
 		},
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["Sound"] = {
-			["Rares"] = true,
-			["Master"] = true,
-			["Duplicates"] = true,
-		},
-		["OnDeath"] = false,
 		["ChatAnnounce"] = true,
+		["OnDeath"] = false,
+		["CChannel"] = {
+			["CID"] = 1,
+			["CName"] = "General - Shrine of Two Moons",
+		},
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1616716183,
-		["ID"] = 151934,
+		["Time"] = 1617479369,
+		["ID"] = 157153,
 	},
 }

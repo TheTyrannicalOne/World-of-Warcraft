@@ -210,6 +210,17 @@ KalielsTrackerDB = {
 				["num"] = 2,
 			},
 		},
+		["Tynster - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Tyranasticus - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+		["Illingrath - Dalaran"] = {
+			["quests"] = {
+				["num"] = 22,
+			},
+		},
 		["Brotus - Argent Dawn"] = {
 			["quests"] = {
 				["num"] = 24,
@@ -388,17 +399,6 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 					},
 				},
-			},
-		},
-		["Tyranasticus - Zul'jin"] = {
-			["collapsed"] = true,
-		},
-		["Tynster - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Illingrath - Dalaran"] = {
-			["quests"] = {
-				["num"] = 22,
 			},
 		},
 		["Shimzo - Zul'jin"] = {
@@ -728,7 +728,7 @@ KalielsTrackerDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["quests"] = {
-				["num"] = 23,
+				["num"] = 25,
 				["cache"] = {
 					[62730] = {
 						["title"] = "Fruit of the Gods",
@@ -765,6 +765,13 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
+					[48642] = {
+						["title"] = "Argussian Reach",
+						["zone"] = "Mac'Aree",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
 					[56352] = {
 						["title"] = "The Eternal Palace: We Can Make It Stronger...",
 						["zone"] = "Professions",
@@ -778,6 +785,14 @@ KalielsTrackerDB = {
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 76,
+					},
+					[28069] = {
+						["state"] = "complete",
+						["title"] = "Adventurers Wanted: Blackrock Depths",
+						["zone"] = "Blackrock Depths",
+						["level"] = 30,
+						["isCalling"] = false,
+						["startMapID"] = 36,
 					},
 					[45381] = {
 						["title"] = "The Nighthold: Talisman of the Shal'dorei",
@@ -808,9 +823,9 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[48642] = {
-						["title"] = "Argussian Reach",
-						["zone"] = "Mac'Aree",
+					[45383] = {
+						["title"] = "The Nighthold: Talisman of the Shal'dorei",
+						["zone"] = "The Nighthold",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -844,10 +859,10 @@ KalielsTrackerDB = {
 						["startMapID"] = 875,
 						["isCalling"] = false,
 					},
-					[57919] = {
-						["title"] = "An Abuse of Power",
-						["zone"] = "Revendreth",
-						["level"] = 60,
+					[50606] = {
+						["title"] = "Horde War Effort",
+						["zone"] = "Zuldazar",
+						["level"] = 50,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
@@ -872,10 +887,10 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[50606] = {
-						["title"] = "Horde War Effort",
-						["zone"] = "Zuldazar",
-						["level"] = 50,
+					[57919] = {
+						["title"] = "An Abuse of Power",
+						["zone"] = "Revendreth",
+						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
@@ -893,9 +908,9 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 1699,
 					},
-					[45383] = {
-						["title"] = "The Nighthold: Talisman of the Shal'dorei",
-						["zone"] = "The Nighthold",
+					[49133] = {
+						["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+						["zone"] = "Antorus, the Burning Throne",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -903,13 +918,6 @@ KalielsTrackerDB = {
 					[31891] = {
 						["title"] = "Battle Pet Tamers: Kalimdor",
 						["zone"] = "Battle Pets",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[49133] = {
-						["title"] = "Antorus, the Burning Throne: The Heart of Argus",
-						["zone"] = "Antorus, the Burning Throne",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -925,6 +933,13 @@ KalielsTrackerDB = {
 						["title"] = "Rule 4: Make A List",
 						["zone"] = "The Maw",
 						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[31443] = {
+						["title"] = "Flying Tiger Gourami",
+						["zone"] = "Fishing",
+						["level"] = 35,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
@@ -1084,13 +1099,13 @@ KalielsTrackerDB = {
 		["Tyranasticus - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Brewnheimer - Darkspear"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 		["Tynster - Dalaran"] = "Default",
@@ -1099,12 +1114,12 @@ KalielsTrackerDB = {
 		["Shathiel - Darkspear"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",

@@ -7,12 +7,6 @@ QuestTogether = {
 				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
-			},
-		},
 		[54460] = {
 			["title"] = "Supplies from Talanji's Expedition",
 			["objectives"] = {
@@ -24,10 +18,15 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
 			},
 		},
 		[56120] = {
@@ -54,6 +53,11 @@ QuestTogether = {
 				"0/1 Information found", -- [1]
 			},
 		},
+		[28069] = {
+			["title"] = "Adventurers Wanted: Blackrock Depths",
+			["objectives"] = {
+			},
+		},
 		[46745] = {
 			["title"] = "Supplies From the Court",
 			["objectives"] = {
@@ -63,6 +67,12 @@ QuestTogether = {
 			["title"] = "Tirna Scithe: A Warning Silence",
 			["objectives"] = {
 				"1/1 Tred'ova slain", -- [1]
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[47129] = {
@@ -78,10 +88,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[53435] = {
@@ -90,16 +100,22 @@ QuestTogether = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[44948] = {
@@ -112,6 +128,11 @@ QuestTogether = {
 			["title"] = "Prison of the Forgotten",
 			["objectives"] = {
 				"1/1 Speak with Ve'nari", -- [1]
+			},
+		},
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[62730] = {
@@ -140,33 +161,6 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[49413] = {
-			["title"] = "Scamps With Scrolls",
-			["objectives"] = {
-				"0/5 Scheming Street Scamps dispelled", -- [1]
-			},
-		},
-		[54453] = {
-			["title"] = "Supplies from Magni",
-			["objectives"] = {
-			},
-		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
@@ -177,10 +171,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[31443] = {
+			["title"] = "Flying Tiger Gourami",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+				"0/1 Flying Tiger Gourami", -- [1]
 			},
 		},
 		[57462] = {
@@ -189,10 +183,14 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[57403] = {
@@ -207,15 +205,16 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[49032] = {
@@ -224,9 +223,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 	},
