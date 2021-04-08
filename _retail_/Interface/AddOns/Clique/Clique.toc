@@ -1,7 +1,7 @@
 ## Interface: 90005
 ## Title: Clique
 ## Author: Cladhaire
-## Version: v90005-1.0.1
+## Version: v90005-2.0.2
 ## Notes: Simply powerful click-casting interface
 ## SavedVariables: CliqueDB, CliqueDB3
 ## X-Curse-Project-ID: 15564
