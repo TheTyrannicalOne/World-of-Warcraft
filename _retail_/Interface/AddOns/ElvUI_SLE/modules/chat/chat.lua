@@ -1,4 +1,4 @@
-local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local CH, LO = SLE:GetElvModules("Chat", "Layout")
 local C = SLE:NewModule("Chat",  'AceHook-3.0', 'AceEvent-3.0', 'AceTimer-3.0')
 
@@ -148,7 +148,7 @@ function C:Initialize()
 		end
 	end
 
-	hooksecurefunc(CH, "StyleChat", Style)
+	-- hooksecurefunc(CH, "StyleChat", Style)
 	hooksecurefunc(E, "UpdateMedia", ChatTextures)
 
 	if E.db.sle.chat.guildmaster then

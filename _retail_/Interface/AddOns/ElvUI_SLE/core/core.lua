@@ -1,4 +1,4 @@
-local E, _, V, P, G = unpack(ElvUI);
+﻿local E, _, V, P, G = unpack(ElvUI);
 -- local locale = (E.global.general.locale and E.global.general.locale ~= "auto") and E.global.general.locale or GetLocale()
 
 -- local L = E.Libs.ACL:GetLocale('ElvUI', locale)

@@ -1,4 +1,4 @@
-local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local EM = SLE:NewModule('EquipManager', 'AceHook-3.0', 'AceEvent-3.0')
 
 --GLOBALS: unpack, select, CreateFrame, CharacterFrame
@@ -37,8 +37,10 @@ local Difficulties = {
 	[45] = 'pvp', -- PvP Scenario (Islands)
 	[147] = 'normal', -- Warfront
 	[149] = 'heroic', -- Heroic Warfront
+	[150] = 'timewalking', -- Timewalking Campaign (Chromie Time)
 	[151] = 'timewalking', -- LFR Timewalking Raids
 	[152] = 'horrificvision', -- Horrific Vision of Stormwind|Orgrimmar
+	[167] = 'torghast', -- Torghast
 }
 
 --Table of tags conditions for gear switching

@@ -1,4 +1,4 @@
-local SLE, _, E, L = unpack(select(2, ...))
+﻿local SLE, _, E, L = unpack(select(2, ...))
 local EDB = E:GetModule('DataBars')
 local DB = SLE:GetModule("DataBars")
 
@@ -177,7 +177,7 @@ local function configTable()
 						type = "toggle",
 						name = L["Full value on Honor Bar"],
 						get = function() return E.db.sle.databars.honor.longtext end,
-						set = function(_, value) E.db.sle.databars.honor.longtext = value; EDB:UpdateHonor() end,
+						set = function(_, value) E.db.sle.databars.honor.longtext = value; EDB:HonorBar_Update() end,
 					},
 					chatfilters = {
 						order = 3,
@@ -254,7 +254,7 @@ local function configTable()
 						type = "toggle",
 						name = L["Full value on Azerite Bar"],
 						get = function() return E.db.sle.databars.azerite.longtext end,
-						set = function(_, value) E.db.sle.databars.azerite.longtext = value; EDB:UpdateAzerite() end,
+						set = function(_, value) E.db.sle.databars.azerite.longtext = value; EDB:AzeriteBar_Update() end,
 					},
 					--[[chatfilters = {
 						order = 3,

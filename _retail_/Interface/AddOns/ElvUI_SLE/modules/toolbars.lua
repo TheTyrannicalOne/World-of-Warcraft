@@ -1,4 +1,4 @@
-local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local S = E:GetModule("Skins")
 local Tools = SLE:NewModule("Toolbars", 'AceHook-3.0', 'AceEvent-3.0')
 
@@ -244,7 +244,7 @@ function Tools:PopulateBar(bar)
 	if not bar then return end
 	if not bar.Buttons then bar.Buttons = {} end
 	for id, data in pairs(bar.Items) do
-		tinsert(bar.Buttons, Tools:CreateToolsButton(id, bar, "item", data.name, data.texture, true, E.db.sle.legacy.farm))
+		tinsert(bar.Buttons, Tools:CreateToolsButton(id, bar, "item", data.name, data.texture, true, E.db.sle.legacy.garrison.toolbar))
 	end
 	--This is my nightmare
 	sort(bar.Buttons, function(a, b)

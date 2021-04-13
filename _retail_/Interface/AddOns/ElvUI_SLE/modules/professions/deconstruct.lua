@@ -1,4 +1,4 @@
-local SLE, _, E, L, _, _, _ = unpack(select(2, ...))
+﻿local SLE, _, E, L, _, _, _ = unpack(select(2, ...))
 local Pr = SLE:GetModule('Professions')
 local B = E:GetModule('Bags')
 local lib = LibStub('LibProcessable')
