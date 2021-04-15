@@ -118,5 +118,4 @@ SET graphicsGroundClutter "10"
 SET maxFPSBk "0"
 SET lodObjectFadeScale "150"
 SET doodadLodScale "150"
-
 SET shadowRt "3"

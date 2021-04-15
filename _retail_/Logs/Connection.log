@@ -1,32 +1,15 @@
-4/6 22:00:18.723  Connection Initialize
-4/6 22:00:36.935  Glue Start Login
-4/6 22:00:36.935  BattleNet Attempt Logon
-4/6 22:00:37.334  BattleNet Front Connected
-4/6 22:00:37.400  BattleNet Logon Queue Update
-4/6 22:00:37.684  BattleNet Logon Complete
-4/6 22:00:37.784  BattleNet Game Account Name
-4/6 22:00:37.850  BattleNet Game Account Name
-4/6 22:00:37.850  BattleNet Attempt Complete Login
-4/6 22:00:38.234  BattleNet Realm List Ticket
-4/6 22:00:38.317  BattleNet Sub Region List
-4/6 22:00:38.684  BattleNet Last Played Char
-4/6 22:00:38.751  BattleNet Last Played Char
-4/6 22:00:38.751  BattleNet Last Played Char
-4/6 22:00:38.817  BattleNet Last Played Char
-4/6 22:00:38.884  BattleNet Last Played Char
-4/6 22:00:38.884  BattleNet Join Realm
-4/6 22:00:39.017  BattleNet Realm Join
-4/6 22:00:39.017  Change Connection
-4/6 22:00:39.017  Connect
-4/6 22:00:39.034  Handle Cant Connect
-4/6 22:00:39.084  Handle Connect
-4/6 22:00:40.601  Handle Auth Response: 0
-4/6 22:00:40.601  Glue Authed To WoW: 0
-4/6 22:00:41.130  BattleNet Connected To Realm
-4/6 22:00:41.130  BattleNet Front Disconnecting
-4/6 22:00:41.235  BattleNet Front Disconnected
-4/6 22:00:41.281  Handle Char Enum
-4/6 22:08:05.954  Handle Logout Response: 0
-4/6 22:08:06.878  Handle Logout Complete
-4/6 22:08:15.445  Disconnect: 13
-4/6 22:08:15.445  Connection Destroy
+4/13 10:12:14.501  Connection Initialize
+4/13 10:12:23.832  Glue Start Login
+4/13 10:12:23.832  BattleNet Attempt Logon
+4/13 10:12:24.214  BattleNet Front Connected
+4/13 10:12:24.280  BattleNet Logon Queue Update
+4/13 10:12:24.447  BattleNet Logon Complete
+4/13 10:12:24.598  BattleNet Game Account Name
+4/13 10:12:24.598  BattleNet Game Account Name
+4/13 10:12:24.598  BattleNet Attempt Complete Login
+4/13 10:12:24.681  BattleNet Realm List Ticket
+4/13 10:12:24.681  Glue Fatal Error: 34200
+4/13 10:12:24.683  BattleNet Defer Disconnect
+4/13 10:12:24.683  BattleNet Front Disconnecting
+4/13 10:12:24.764  BattleNet Front Disconnected
+4/13 10:12:36.544  Connection Destroy
