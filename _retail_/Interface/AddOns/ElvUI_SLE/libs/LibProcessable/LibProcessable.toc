@@ -1,6 +1,6 @@
 ## Interface: 90001
 ## Author: p3lim
-## Version: v4.21
+## Version: v4.21-11-g85d61a8
 ## Title: Lib: Processable
 ## Notes: Library that lets you easily check if you can process resources
 ## OptionalDeps: LibStub

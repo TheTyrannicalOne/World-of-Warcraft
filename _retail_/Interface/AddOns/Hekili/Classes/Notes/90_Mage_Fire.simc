@@ -1,6 +1,6 @@
 ## Fire Mage
 ## https://github.com/simulationcraft/simc/
-## April 2, 2021
+## April 13, 2021
 
 ## Changes:
 ## - Use fight_remains rather than target.time_to_die for last-second ability usages.
@@ -199,7 +199,7 @@ actions.rop_phase+=/pyroblast,if=buff.hot_streak.up&searing_touch.active&active_
 actions.rop_phase+=/phoenix_flames,if=!variable.phoenix_pooling&buff.heating_up.up&!buff.hot_streak.up&(active_dot.ignite<2|active_enemies>=variable.hard_cast_flamestrike|active_enemies>=variable.hot_streak_flamestrike)
 actions.rop_phase+=/scorch,if=searing_touch.active
 actions.rop_phase+=/dragons_breath,if=active_enemies>2
-actions.rop_phase+=/arcane_explosion,if=active_enemies>=variable.arcane_explosion&mana.pct>=variable.arcane_explosion_mana
+actions.rop_phase+=/arcane_explosion,if=active_enemies>=variable.arcane_explosion&mana.pct>=variable.arcane_explosion_mana&target.within10
 # With enough targets, it is a gain to cast Flamestrike as filler instead of Fireball.
 actions.rop_phase+=/flamestrike,if=active_enemies>=variable.hard_cast_flamestrike
 actions.rop_phase+=/fireball
@@ -219,7 +219,7 @@ actions.standard_rotation+=/phoenix_flames,if=!variable.phoenix_pooling&(!talent
 actions.standard_rotation+=/call_action_list,name=active_talents
 actions.standard_rotation+=/dragons_breath,if=active_enemies>1
 actions.standard_rotation+=/scorch,if=searing_touch.active
-actions.standard_rotation+=/arcane_explosion,if=active_enemies>=variable.arcane_explosion&mana.pct>=variable.arcane_explosion_mana
+actions.standard_rotation+=/arcane_explosion,if=active_enemies>=variable.arcane_explosion&mana.pct>=variable.arcane_explosion_mana&target.within10
 # With enough targets, it is a gain to cast Flamestrike as filler instead of Fireball.
 actions.standard_rotation+=/flamestrike,if=active_enemies>=variable.hard_cast_flamestrike
 actions.standard_rotation+=/fireball

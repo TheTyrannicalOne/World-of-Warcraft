@@ -1520,7 +1520,7 @@ local function UNIT_POWER_FREQUENT( event, unit, power )
 
     end
 
-    Hekili:ForceUpdate( event, true )
+    Hekili:ForceUpdate( event )
 end
 Hekili:ProfileCPU( "UNIT_POWER_UPDATE", UNIT_POWER_FREQUENT )
 
@@ -1578,6 +1578,7 @@ RegisterEvent( "PLAYER_TARGET_CHANGED", function( event )
     Hekili.ScrapeUnitAuras( "target", true )
     state.target.updated = false
 
+    ns.getNumberTargets( true )
     Hekili:ForceUpdate( event, true )
 end )
 
@@ -1889,7 +1890,7 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
         
                     if ability then
                         if state:RemoveSpellEvent( ability.key, true, "PROJECTILE_IMPACT" ) then
-                            Hekili:ForceUpdate( "PROJECTILE_IMPACT", true )
+                            Hekili:ForceUpdate( "PROJECTILE_IMPACT" )
                         end
                     end
                 
