@@ -84,6 +84,14 @@ L["Group.target.hostile.Desc"] = "이 옵션은 적대적인 대상에 사용됩
 L["Group.target.Name"] = "대상"
 --[[Translation missing --]]
 L["Group.target.self.Desc"] = "These options are used when targeting yourself"
+--[[Translation missing --]]
+L["Group.targettarget.friendly.Desc"] = "These options are used when your target's target is friendly to you"
+--[[Translation missing --]]
+L["Group.targettarget.hostile.Desc"] = "These options are used when your target's target is hostile to you"
+--[[Translation missing --]]
+L["Group.targettarget.Name"] = "Target of Target"
+--[[Translation missing --]]
+L["Group.targettarget.self.Desc"] = "These options are used when your target is targeting you"
 L["Option.Unit.enable.Desc"] = "이 유닛에 대해 표시기를 켜거나 끕니다."
 L["Option.Unit.enable.Name"] = "사용"
 L["Option.UnitReactionType.anchorPoint.Desc"] = "텍스처가 고정되어야 하는 이름표의 지점"

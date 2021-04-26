@@ -3,9 +3,6 @@
 --        Do not change anything in this file       --
 ------------------------------------------------------
 
--- List globals here for Mikk's FindGlobals script
--- GLOBALS: LibStub, UnitIsUnit, UnitGUID, UnitIsFriend, UnitExists, CreateFrame, Mixin, print, pairs, error
-
 local addon, TNI = ...
 
 local LNR = LibStub("LibNameplateRegistry-1.0")
@@ -22,6 +19,7 @@ local function debugprint(...)
 	end
 end
 --@end-debug@]==]
+
 
 -----
 -- Error callbacks
@@ -45,6 +43,7 @@ function TNI:OnError_FatalIncompatibility(callback, incompatibilityType)
 
 	errorPrint(true, "(Error Code: %s) %s", incompatibilityType, detailedMessage)
 end
+
 
 ------
 -- Initialisation
@@ -81,6 +80,7 @@ do
 			target = CreateUnitDefaults(),
 			mouseover = CreateUnitDefaults(),
 			focus = CreateUnitDefaults(),
+			targettarget = CreateUnitDefaults(),
 		}
 	}
 end
@@ -120,6 +120,7 @@ function TNI:RefreshIndicator(unit)
 
 	indicator:Refresh()
 end
+
 
 ------
 -- Indicator functions
@@ -162,15 +163,25 @@ function Indicator:OnRecyclePlate(callback, nameplate, plateData)
 	end
 end
 
--- Are other indicators already displaying on this indicator's unit?
-function Indicator:AreOtherIndicatorsDisplayed()
+-- Checks if other indicators are already displaying on this indicator's unit, hides lower priority indicators and returns true when this indicator should be shown.
+--
+-- - If no other indicator is displaying, this returns true.
+-- - If a lower priority indicator is displaying, it is hidden and this returns true.
+-- - If an equal or higher priority indicator is displaying, this returns false.
+function Indicator:CheckAndHideLowerPriorityIndicators()
 	for unit, indicator in pairs(TNI.Indicators) do
-		if self.unit ~= indicator.unit and UnitIsUnit(self.unit, unit) then -- If the indicator is for a different unit token but it's the same unit, return true
-			return true
+		if self.unit ~= indicator.unit and UnitIsUnit(self.unit, unit) then -- If the indicator is for a different unit token but it's the same unit,
+			if self.priority > indicator.priority then -- If this indicator is a higher priority, hide the other indicator and return true
+				indicator:Update()
+				return true
+			else -- If this indicator is a lower or equal priority, return false
+				return false
+			end
 		end
 	end
 
-	return false
+	-- No other indicator is displaying, return true
+	return true
 end
 
 -- Verfies that the current nameplate (if there is one) has a unit token and disables the indicator and throws an error if it doesn't.
@@ -179,23 +190,24 @@ function Indicator:VerifyNameplateUnitToken()
 	if self.currentNameplate and not self.currentNameplate.namePlateUnitToken then
 		TNI.db.profile[self.unit].enable = false
 		self:Hide()
-	
+
 		error((
-			"TargetNameplateIndicator: %s indicator found a nameplate without a unit token and as such is unable to function." .. 
+			"TargetNameplateIndicator: %s indicator found a nameplate without a unit token and as such is unable to function." ..
 			" This is usually caused by AddOns that replace the default nameplates (e.g. EKPlates)." ..
 			" This indicator will now be disabled until it's re-enabled in the options menu."
 		):format(self.unit))
 	end
-	
+
 	return true
 end
 
-local function CreateIndicator(unit)
+local function CreateIndicator(unit, priority)
 	local indicator = CreateFrame("Frame", "TargetNameplateIndicator_" .. unit)
 	indicator:SetFrameStrata("BACKGROUND")
 	indicator.Texture = indicator:CreateTexture("$parentTexture", "OVERLAY")
 
 	indicator.unit = unit
+	indicator.priority = priority
 
 	LNR:Embed(indicator)
 	Mixin(indicator, Indicator)
@@ -211,11 +223,56 @@ local function CreateIndicator(unit)
 	return indicator
 end
 
+
+------
+-- Non-target Indicator functions
+------
+
+local NonTargetIndicator = {}
+
+function NonTargetIndicator:OnUpdate()
+	-- If there's a current nameplate and it's still this indicator's unit, do nothing
+	if self.currentNameplate and self:VerifyNameplateUnitToken() and UnitIsUnit(self.unit, self.currentNameplate.namePlateUnitToken) then
+		return
+	end
+
+	-- If there isn't a current nameplate and this indicator's unit doesn't exist, do nothing
+	if not self.currentNameplate and not UnitExists(self.unit) then
+		return
+	end
+
+	local nameplate, plateData = self:GetPlateByGUID(UnitGUID(self.unit))
+
+	local shouldDisplay = self:CheckAndHideLowerPriorityIndicators()
+
+	--[==[@debug@
+	debugprint(self.unit, "changed", nameplate, "shouldDisplay?", shouldDisplay)
+	--@end-debug@]==]
+
+	-- If the nameplate for this indicator's unit doesn't already have a higher priority indicator displaying on it, update the indicator; otherwise hide it.
+	if shouldDisplay then
+		self:Update(nameplate)
+	else
+		self:Update(nil)
+	end
+end
+
+local function CreateNonTargetIndicator(unit, priority)
+	local indicator = CreateIndicator(unit, priority)
+
+	Mixin(indicator, NonTargetIndicator)
+
+	indicator:SetScript("OnUpdate", indicator.OnUpdate)
+
+	return indicator
+end
+
+
 ------
 -- Target Indicator
 ------
 
-local TargetIndicator = CreateIndicator("target")
+local TargetIndicator = CreateIndicator("target", 100)
 
 function TargetIndicator:PLAYER_TARGET_CHANGED()
 	local nameplate, plateData = self:GetPlateByGUID(UnitGUID("target"))
@@ -234,71 +291,37 @@ function TargetIndicator:OnTargetPlateOnScreen(callback, nameplate, plateData)
 	debugprint("Callback fired (target found)")
 	--@end-debug@]==]
 
-	self:Update(nameplate)
+	local shouldDisplay = self:CheckAndHideLowerPriorityIndicators()
+
+	if shouldDisplay then
+		self:Update(nameplate)
+	else
+		self:Update()
+	end
 end
 
 TargetIndicator:RegisterEvent("PLAYER_TARGET_CHANGED")
 TargetIndicator:LNR_RegisterCallback("LNR_ON_TARGET_PLATE_ON_SCREEN", "OnTargetPlateOnScreen")
 
+
 ------
 -- Mouseover Indicator
 ------
 
-local MouseoverIndicator = CreateIndicator("mouseover")
-
-function MouseoverIndicator:OnUpdate()
-	-- If there's a current nameplate and it's still the mouseover unit, do nothing
-	if self.currentNameplate and self:VerifyNameplateUnitToken() and UnitIsUnit("mouseover", self.currentNameplate.namePlateUnitToken) then return end
-
-	-- If there isn't a current nameplate and there's no mouseover unit, do nothing
-	if not self.currentNameplate and not UnitExists("mouseover") then return end
-
-	local nameplate, plateData = self:GetPlateByGUID(UnitGUID("mouseover"))
-
-	local areOtherIndicatorsDisplayed = self:AreOtherIndicatorsDisplayed()
-
-	--[==[@debug@
-	debugprint("Player mouseover changed", nameplate, "areOtherIndicatorsDisplayed?", areOtherIndicatorsDisplayed)
-	--@end-debug@]==]
-
-	-- If the player has their mouse over a unit that doesn't already have an indicator displaying on it, update the mouseover indicator; otherwise hide it
-	if not areOtherIndicatorsDisplayed then
-		self:Update(nameplate)
-	else
-		self:Update(nil)
-	end
-end
-
-MouseoverIndicator:SetScript("OnUpdate", MouseoverIndicator.OnUpdate)
+---@diagnostic disable-next-line: unused-local
+local MouseoverIndicator = CreateNonTargetIndicator("mouseover", 10)
 
 
 ------
 -- Focus Indicator
 ------
 
-local FocusIndicator = CreateIndicator("focus")
+---@diagnostic disable-next-line: unused-local
+local FocusIndicator = CreateNonTargetIndicator("focus", 90)
 
-function FocusIndicator:OnUpdate()
-	-- If there's a current nameplate and it's still the focus unit, do nothing
-	if self.currentNameplate and self:VerifyNameplateUnitToken() and UnitIsUnit("focus", self.currentNameplate.namePlateUnitToken) then return end
+------
+-- Target of Target Indicator
+------
 
-	-- If there isn't a current nameplate and there's no focus unit, do nothing
-	if not self.currentNameplate and not UnitExists("focus") then return end
-
-	local nameplate, plateData = self:GetPlateByGUID(UnitGUID("focus"))
-
-	local areOtherIndicatorsDisplayed = self:AreOtherIndicatorsDisplayed()
-
-	--[==[@debug@
-	debugprint("Player focus changed", nameplate, "areOtherIndicatorsDisplayed?", areOtherIndicatorsDisplayed)
-	--@end-debug@]==]
-
-	-- If the player has their focus set to a unit that doesn't already have an indicator displaying on it, update the focus indicator; otherwise hide it
-	if not areOtherIndicatorsDisplayed then
-		self:Update(nameplate)
-	else
-		self:Update(nil)
-	end
-end
-
-FocusIndicator:SetScript("OnUpdate", FocusIndicator.OnUpdate)
+---@diagnostic disable-next-line: unused-local
+local TargetOfTargetIndicator = CreateNonTargetIndicator("targettarget", 50)

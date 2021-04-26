@@ -116,6 +116,14 @@ L["Group.target.Name"] = "Target"
 --[[Translation missing --]]
 L["Group.target.self.Desc"] = "These options are used when targeting yourself"
 --[[Translation missing --]]
+L["Group.targettarget.friendly.Desc"] = "These options are used when your target's target is friendly to you"
+--[[Translation missing --]]
+L["Group.targettarget.hostile.Desc"] = "These options are used when your target's target is hostile to you"
+--[[Translation missing --]]
+L["Group.targettarget.Name"] = "Target of Target"
+--[[Translation missing --]]
+L["Group.targettarget.self.Desc"] = "These options are used when your target is targeting you"
+--[[Translation missing --]]
 L["Option.Unit.enable.Desc"] = "Enables/disables the indicator for this unit"
 --[[Translation missing --]]
 L["Option.Unit.enable.Name"] = "Enable"
