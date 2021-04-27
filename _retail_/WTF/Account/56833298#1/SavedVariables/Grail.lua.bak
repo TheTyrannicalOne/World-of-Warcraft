@@ -1,7 +1,6 @@
 
 GrailDatabase = {
 	["_retail_"] = {
-		["delayEventsHandled"] = true,
 		["learned"] = {
 			["QUEST_NAME"] = {
 				"enUS|36322|54591|Rumbling Goliath", -- [1]
@@ -9587,8 +9586,15 @@ GrailDatabase = {
 				"38134|enUS|28069|L1974015", -- [7806]
 				"38134|enUS|44765|A:-50", -- [7807]
 				"38134|enUS|44765|L3947775", -- [7808]
+				"38134|enUS|57567|L3947775", -- [7809]
+				"38134|enUS|42233|L3947775", -- [7810]
+				"38134|enUS|57567|L3289855", -- [7811]
+				"38134|enUS|42233|L3289855", -- [7812]
+				"38134|enUS|48639|L3289855", -- [7813]
+				"38134|enUS|35307|T:5775", -- [7814]
 			},
 		},
+		["delayEventsHandled"] = true,
 		["Tracking"] = {
 			"2020-04-20 23:25 Argent Dawn/Shanyt/Horde/WARRIOR/Scourge/2/enUS/US/33941", -- [1]
 			"New quest completed 55604 UNKNOWN NAME", -- [2]

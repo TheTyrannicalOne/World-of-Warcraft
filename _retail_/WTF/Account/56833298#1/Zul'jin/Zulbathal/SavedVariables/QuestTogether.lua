@@ -46,10 +46,11 @@ QuestTogether = {
 				"0/100 Dream Seeds planted", -- [1]
 			},
 		},
-		[31015] = {
-			["title"] = "Your Private Collection",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
-				"0/1 An empty bookshelf", -- [1]
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[42129] = {
@@ -65,10 +66,9 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
-		[49901] = {
-			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/1 Yazma slain", -- [1]
 			},
 		},
 		[36614] = {
@@ -78,10 +78,10 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[44989] = {
@@ -90,38 +90,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-			},
-		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
-			["objectives"] = {
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
-		[52444] = {
-			["title"] = "The Final Foothold",
-			["objectives"] = {
-				"0/1 Review final foothold", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[51432] = {
@@ -129,11 +101,39 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[40019] = {
-			["title"] = "An Empathetic Herb",
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
 			["objectives"] = {
-				"9/15 Healthy Dreamleaf", -- [1]
-				"5/5 Blight-Infested Dreamleaf", -- [2]
+			},
+		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
+			["objectives"] = {
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+			},
+		},
+		[50603] = {
+			["title"] = "Voldunai",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[50604] = {
+			["title"] = "Tortollan Seekers",
+			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+			},
+		},
+		[52444] = {
+			["title"] = "The Final Foothold",
+			["objectives"] = {
+				"0/1 Review final foothold", -- [1]
 			},
 		},
 		[31891] = {
@@ -146,30 +146,30 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[40019] = {
+			["title"] = "An Empathetic Herb",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[49901] = {
+			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/1 Yazma slain", -- [1]
 			},
 		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
+		[31015] = {
+			["title"] = "Your Private Collection",
 			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+				"0/1 An empty bookshelf", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

@@ -18,21 +18,15 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[57567] = {
 			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-			},
-		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[61981] = {
@@ -100,22 +94,22 @@ QuestTogether = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
-			},
-		},
-		[45383] = {
+		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[42233] = {
+			["title"] = "Highmountain Tribes",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 		[44948] = {
@@ -161,6 +155,16 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
@@ -183,14 +187,10 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[57403] = {
@@ -211,10 +211,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[49032] = {
@@ -223,17 +223,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

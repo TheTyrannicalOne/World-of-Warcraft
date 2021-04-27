@@ -19,10 +19,9 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[53436] = {
@@ -31,15 +30,16 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
-			},
-		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[62801] = {
@@ -47,10 +47,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[57006] = {
@@ -67,10 +67,10 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[39060] = {
@@ -93,10 +93,9 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[36615] = {
@@ -106,14 +105,15 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
 		[57567] = {
 			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
+			},
+		},
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+			["objectives"] = {
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[50599] = {
@@ -194,8 +194,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

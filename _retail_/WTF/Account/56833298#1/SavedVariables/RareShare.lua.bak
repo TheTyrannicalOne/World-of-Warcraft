@@ -4,8 +4,8 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["CChannel"] = {
-			["CName"] = "General - Shrine of Two Moons",
 			["CID"] = 1,
+			["CName"] = "General - Shrine of Two Moons",
 		},
 		["TomTom"] = {
 			["Rares"] = true,
