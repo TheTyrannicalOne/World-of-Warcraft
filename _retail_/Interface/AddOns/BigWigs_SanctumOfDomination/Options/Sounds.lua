@@ -20,7 +20,7 @@ BigWigs:AddSounds("The Eye of the Jailer", {
 	[348074] = "alarm",
 	[349028] = "alarm",
 	[349979] = "warning",
-	[350028] = "alert",
+	[350028] = {"alert","warning"},
 	[350713] = "alarm",
 	[350764] = "warning",
 	[350803] = "alert",
@@ -50,6 +50,17 @@ BigWigs:AddSounds("The Nine", {
 	[351399] = "alert",
 })
 
+BigWigs:AddSounds("Remnant of Ner'zhul", {
+	[349889] = "warning",
+	[349890] = {"alarm","warning"},
+	[350073] = "alarm",
+	[350388] = "alarm",
+	[350469] = "warning",
+	[350489] = "underyou",
+	[351066] = "long",
+	[353332] = "alert",
+})
+
 BigWigs:AddSounds("Soulrender Dormazain", {
 	[349985] = "alert",
 	[350217] = "alert",
@@ -72,4 +83,23 @@ BigWigs:AddSounds("Guardian of the First Ones", {
 	[352589] = "alert",
 	[352660] = "long",
 	[352833] = "alert",
+})
+
+BigWigs:AddSounds("Kel'Thuzad", {
+	[346459] = "alert",
+	[346530] = {"info","warning"},
+	[347292] = "warning",
+	[348071] = "alarm",
+	[348756] = {"alert","warning"},
+	[348978] = {"alarm","info","warning"},
+	[352051] = "info",
+	[352293] = "long",
+	[352355] = "warning",
+	[352379] = "alarm",
+	[352530] = "long",
+	[354198] = {"long","underyou"},
+	[354289] = "alert",
+	[354639] = "underyou",
+	[355055] = "info",
+	[355389] = "alarm",
 })

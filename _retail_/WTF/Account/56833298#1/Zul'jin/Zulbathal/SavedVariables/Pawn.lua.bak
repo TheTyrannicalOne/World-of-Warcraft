@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0417,
+	["LastVersion"] = 2.0418,
 	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

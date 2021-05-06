@@ -210,13 +210,16 @@ KalielsTrackerDB = {
 				["num"] = 2,
 			},
 		},
+		["Tynster - Dalaran"] = {
+			["collapsed"] = true,
+		},
+		["Tyranasticus - Zul'jin"] = {
+			["collapsed"] = true,
+		},
 		["Illingrath - Dalaran"] = {
 			["quests"] = {
 				["num"] = 22,
 			},
-		},
-		["Tyranasticus - Zul'jin"] = {
-			["collapsed"] = true,
 		},
 		["Brotus - Argent Dawn"] = {
 			["quests"] = {
@@ -397,9 +400,6 @@ KalielsTrackerDB = {
 					},
 				},
 			},
-		},
-		["Tynster - Dalaran"] = {
-			["collapsed"] = true,
 		},
 		["Varlouris - Dalaran"] = {
 			["quests"] = {
@@ -728,11 +728,11 @@ KalielsTrackerDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["quests"] = {
-				["num"] = 25,
+				["num"] = 26,
 				["cache"] = {
-					[62730] = {
-						["title"] = "Fruit of the Gods",
-						["zone"] = "Bastion",
+					[60281] = {
+						["title"] = "Rule 4: Make A List",
+						["zone"] = "The Maw",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -765,12 +765,19 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[40329] = {
-						["title"] = "Battle Pet Tamers: Warlords",
-						["zone"] = "Battle Pets",
+					[31443] = {
+						["title"] = "Flying Tiger Gourami",
+						["zone"] = "Fishing",
+						["level"] = 35,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[62730] = {
+						["title"] = "Fruit of the Gods",
+						["zone"] = "Bastion",
 						["level"] = 60,
 						["isCalling"] = false,
-						["startMapID"] = 590,
+						["startMapID"] = 0,
 					},
 					[56352] = {
 						["title"] = "The Eternal Palace: We Can Make It Stronger...",
@@ -779,12 +786,12 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[45383] = {
-						["title"] = "The Nighthold: Talisman of the Shal'dorei",
-						["zone"] = "The Nighthold",
+					[40329] = {
+						["title"] = "Battle Pet Tamers: Warlords",
+						["zone"] = "Battle Pets",
 						["level"] = 60,
 						["isCalling"] = false,
-						["startMapID"] = 0,
+						["startMapID"] = 590,
 					},
 					[28069] = {
 						["state"] = "complete",
@@ -801,12 +808,12 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[44948] = {
-						["title"] = "Raising Your Snowfeather",
-						["zone"] = "Battle Pets",
+					[49133] = {
+						["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+						["zone"] = "Antorus, the Burning Throne",
 						["level"] = 60,
 						["isCalling"] = false,
-						["startMapID"] = 76,
+						["startMapID"] = 0,
 					},
 					[62371] = {
 						["state"] = "complete",
@@ -823,13 +830,12 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[60267] = {
-						["state"] = "complete",
-						["title"] = "Prison of the Forgotten",
-						["zone"] = "Venthyr Campaign",
-						["level"] = 60,
+					[30567] = {
+						["title"] = "Blanche's Boomer Brew",
+						["zone"] = "Pandaren Brewmasters",
+						["level"] = 35,
 						["isCalling"] = false,
-						["startMapID"] = 0,
+						["startMapID"] = 371,
 					},
 					[62932] = {
 						["title"] = "Explore Torghast",
@@ -859,10 +865,10 @@ KalielsTrackerDB = {
 						["startMapID"] = 875,
 						["isCalling"] = false,
 					},
-					[50606] = {
-						["title"] = "Horde War Effort",
-						["zone"] = "Zuldazar",
-						["level"] = 50,
+					[31891] = {
+						["title"] = "Battle Pet Tamers: Kalimdor",
+						["zone"] = "Battle Pets",
+						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
@@ -887,17 +893,17 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
+					[44948] = {
+						["title"] = "Raising Your Snowfeather",
+						["zone"] = "Battle Pets",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 76,
+					},
 					[50603] = {
 						["title"] = "Voldunai",
 						["zone"] = "Vol'dun",
 						["level"] = 50,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[57919] = {
-						["title"] = "An Abuse of Power",
-						["zone"] = "Revendreth",
-						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
@@ -908,16 +914,31 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 1699,
 					},
-					[49133] = {
-						["title"] = "Antorus, the Burning Throne: The Heart of Argus",
-						["zone"] = "Antorus, the Burning Throne",
+					[57919] = {
+						["title"] = "An Abuse of Power",
+						["zone"] = "Revendreth",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[31891] = {
-						["title"] = "Battle Pet Tamers: Kalimdor",
-						["zone"] = "Battle Pets",
+					[50606] = {
+						["title"] = "Horde War Effort",
+						["zone"] = "Zuldazar",
+						["level"] = 50,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[60267] = {
+						["state"] = "complete",
+						["title"] = "Prison of the Forgotten",
+						["zone"] = "Venthyr Campaign",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[45383] = {
+						["title"] = "The Nighthold: Talisman of the Shal'dorei",
+						["zone"] = "The Nighthold",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -926,20 +947,6 @@ KalielsTrackerDB = {
 						["title"] = "The Nighthold: Talisman of the Shal'dorei",
 						["zone"] = "The Nighthold",
 						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[60281] = {
-						["title"] = "Rule 4: Make A List",
-						["zone"] = "The Maw",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[31443] = {
-						["title"] = "Flying Tiger Gourami",
-						["zone"] = "Fishing",
-						["level"] = 35,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},

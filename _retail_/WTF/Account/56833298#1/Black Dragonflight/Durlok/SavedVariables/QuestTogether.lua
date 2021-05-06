@@ -13,10 +13,9 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[51421] = {
-			["title"] = "Shiver Me Timbers",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
 			},
 		},
 		[56044] = {
@@ -25,23 +24,15 @@ QuestTogether = {
 				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[53101] = {
+			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[40643] = {
@@ -49,9 +40,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 		[51464] = {
@@ -60,14 +52,23 @@ QuestTogether = {
 				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
+			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[44989] = {
@@ -82,28 +83,28 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[31891] = {
@@ -116,10 +117,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[51421] = {
+			["title"] = "Shiver Me Timbers",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"0/1 Speak with Tattersail to sail to Tiragarde Sound", -- [1]
 			},
 		},
 		[47105] = {
@@ -128,17 +129,16 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

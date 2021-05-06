@@ -35,27 +35,25 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 219.9998626708984,
+					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
 					["BigWigsAnchor_height"] = 15.99994277954102,
-					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 				},
 			},
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 		},
-		["BigWigs_Bosses_Nalak"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["width"] = 139.9999847412109,
 					["height"] = 120.0000076293945,
+					["width"] = 139.9999847412109,
 				},
 			},
 		},
@@ -176,9 +174,9 @@ BigWigsStatsDB = {
 		},
 	},
 	[2164] = {
-		[2354] = {
+		[2347] = {
 			["LFR"] = {
-				["best"] = 240.8419999999969,
+				["best"] = 247.9619999999995,
 				["kills"] = 1,
 			},
 		},
@@ -201,10 +199,11 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[2347] = {
+		[2361] = {
 			["LFR"] = {
-				["best"] = 247.9619999999995,
 				["kills"] = 1,
+				["wipes"] = 1,
+				["best"] = 490.721000000005,
 			},
 		},
 		[2359] = {
@@ -220,11 +219,10 @@ BigWigsStatsDB = {
 				["best"] = 373.2479999999996,
 			},
 		},
-		[2361] = {
+		[2354] = {
 			["LFR"] = {
+				["best"] = 240.8419999999969,
 				["kills"] = 1,
-				["wipes"] = 1,
-				["best"] = 490.721000000005,
 			},
 		},
 	},

@@ -65,10 +65,10 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
-		[49901] = {
-			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/1 Yazma slain", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[36614] = {
@@ -78,16 +78,14 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[50598] = {
@@ -96,10 +94,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[44555] = {
@@ -107,33 +105,34 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+			},
+		},
+		[50603] = {
+			["title"] = "Voldunai",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[52444] = {
 			["title"] = "The Final Foothold",
 			["objectives"] = {
 				"0/1 Review final foothold", -- [1]
-			},
-		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
-			["objectives"] = {
-			},
-		},
-		[40019] = {
-			["title"] = "An Empathetic Herb",
-			["objectives"] = {
-				"9/15 Healthy Dreamleaf", -- [1]
-				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[31891] = {
@@ -146,6 +145,13 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[40019] = {
+			["title"] = "An Empathetic Herb",
+			["objectives"] = {
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
+			},
+		},
 		[61874] = {
 			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
@@ -153,23 +159,17 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[49901] = {
+			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
-			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+				"0/1 Yazma slain", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }
