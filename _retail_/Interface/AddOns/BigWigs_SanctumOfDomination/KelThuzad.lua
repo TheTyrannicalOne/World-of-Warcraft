@@ -15,6 +15,9 @@ mod:SetStage(1)
 --
 
 local tankList = {}
+local mobCollector = {}
+local glacialSpikeMarks = {}
+local mindControlled = false
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -23,6 +26,7 @@ local tankList = {}
 local L = mod:GetLocale()
 if L then
 	L.spikes = "Spikes" -- Short for Glacial Spikes
+	L.spike = "Spike"
 	L.silence = mod:SpellName(226452) -- Silence
 	L.miasma = "Miasma" -- Short for Necrotic Miasma
 end
@@ -31,6 +35,8 @@ end
 -- Initialization
 --
 
+local glacialWrathMarker = mod:AddMarkerOption(false, "player", 1, 346459, 1, 2, 3, 4, 5) -- Glacial Wrath
+local soulReaverMarker = mod:AddMarkerOption(false, "npc", 8, -23435, 8, 7, 6) -- Soul Reaver
 function mod:GetOptions()
 	return {
 		"stages",
@@ -40,10 +46,11 @@ function mod:GetOptions()
 		{355389, "SAY"}, -- Corpse Detonation
 		348071, -- Soul Fracture // Tank hit but spawns Soul Shards for DPS
 		{348978, "TANK"}, -- Soul Exhaustion
-		346459, -- Glacial Wrath
+		{346459, "SAY", "SAY_COUNTDOWN"}, -- Glacial Wrath
+		glacialWrathMarker,
 		{346530, "ME_ONLY"}, -- Shatter
 		{347292, "SAY", "SAY_COUNTDOWN", "ME_ONLY_EMPHASIZE"}, -- Oblivion's Echo
-		{348756, "SAY", "SAY_COUNTDOWN", "FLASH", "ME_ONLY_EMPHASIZE"}, -- Frost Blast
+		{348760, "SAY", "SAY_COUNTDOWN", "FLASH", "ME_ONLY_EMPHASIZE"}, -- Frost Blast
 		-- Stage Two: The Phylactery Opens
 		354289, -- Necrotic Miasma
 		352051, -- Necrotic Surge
@@ -51,6 +58,8 @@ function mod:GetOptions()
 		352379, -- Freezing Blast
 		355055, -- Glacial Winds
 		352355, -- Necrotic Obliteration
+		352141, -- Banshee's Cry (Soul Reaver)
+		soulReaverMarker,
 		-- Stage Three: The Final Stand
 		354639, -- Deep Freeze
 	},{
@@ -69,17 +78,21 @@ end
 function mod:OnBossEnable()
 	-- Stage One - Thirst for Blood
 	self:Log("SPELL_CAST_START", "HowlingBlizzardStart", 354198)
+	self:Log("SPELL_CAST_SUCCESS", "HowlingBlizzard", 354198)
 	self:Log("SPELL_CAST_SUCCESS", "DarkEvocation", 352530)
 	self:Log("SPELL_AURA_APPLIED", "CorpseDetonationFixateApplied", 355389)
 	self:Log("SPELL_CAST_START", "SoulFractureStart", 348071)
 	self:Log("SPELL_AURA_APPLIED", "SoulExhaustionApplied", 348978)
 	self:Log("SPELL_AURA_REMOVED", "SoulExhaustionRemoved", 348978)
 	self:Log("SPELL_CAST_START", "GlacialWrath", 346459)
+	self:Log("SPELL_SUMMON", "GlacialWrathSummon", 346459)
+	self:Log("SPELL_AURA_APPLIED", "GlacialWrathApplied", 353808)
+	self:Log("SPELL_AURA_REMOVED", "GlacialWrathRemoved", 353808)
 	self:Log("SPELL_AURA_APPLIED", "ShatterApplied", 346530)
 	self:Log("SPELL_AURA_APPLIED_DOSE", "ShatterApplied", 346530)
 	self:Log("SPELL_AURA_APPLIED", "OblivionsEchoApplied", 347292)
 	self:Log("SPELL_AURA_REMOVED", "OblivionsEchoRemoved", 347292)
-	self:Log("SPELL_CAST_START", "FrostBlastStart", 348756)
+	self:Log("SPELL_AURA_APPLIED", "FrostBlastApplied", 348760)
 
 	-- Stage Two: The Phylactery Opens
 	self:Log("SPELL_AURA_APPLIED", "NecroticMiasmaApplied", 354289)
@@ -91,21 +104,32 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "GlacialWinds", 355055)
 	self:Log("SPELL_CAST_START", "NecroticObliteration", 352355)
 
+	self:Log("SPELL_CAST_START", "BansheesCry", 352141)
+	self:Log("SPELL_SUMMON", "MarchOfTheForsakenSummon", 352094)
+
 	self:Log("SPELL_AURA_APPLIED", "GroundDamage", 354198, 354639) -- Howling Blizzard, Deep Freeze
 	self:Log("SPELL_PERIODIC_DAMAGE", "GroundDamage", 354198, 354639)
 	self:Log("SPELL_PERIODIC_MISSED", "GroundDamage", 354198, 354639)
 
+	self:Log("SPELL_AURA_APPLIED", "ReturnOfTheDamned", 348638)
+	self:Log("SPELL_AURA_REMOVED", "ReturnOfTheDamnedRemoved", 348638)
+
 	self:RegisterEvent("GROUP_ROSTER_UPDATE")
+	self:RegisterEvent("UNIT_SPELLCAST_STOP")
 	self:GROUP_ROSTER_UPDATE()
 end
 
 function mod:OnEngage()
+	mobCollector = {}
+	glacialSpikeMarks = {}
+	mindControlled = false
+	self:CDBar(347292, 11, L.silence)
+	self:CDBar(346459, 19, L.spikes)
 end
 
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
-
 function mod:GROUP_ROSTER_UPDATE() -- Compensate for quitters (LFR)
 	tankList = {}
 	for unit in self:IterateGroup() do
@@ -119,6 +143,10 @@ end
 function mod:HowlingBlizzardStart(args)
 	self:Message(args.spellId, "cyan", CL.casting:format(args.spellName))
 	self:PlaySound(args.spellId, "long")
+end
+
+function mod:HowlingBlizzard(args)
+	self:Bar(args.spellId, 20)
 end
 
 function mod:DarkEvocation(args)
@@ -169,7 +197,58 @@ end
 function mod:GlacialWrath(args)
 	self:Message(args.spellId, "orange", CL.casting:format(L.spikes))
 	self:PlaySound(args.spellId, "alert")
+	self:Bar(args.spellId, 45, L.spikes)
+
+	mobCollector = {}
+	glacialSpikeMarks = {}
+	if self:GetOption(glacialWrathMarker) then
+		self:RegisterTargetEvents("GlacialSpikeMarker")
+		self:ScheduleTimer("UnregisterTargetEvents", 10)
+	end
 end
+
+function mod:GlacialWrathSummon(args)
+	mobCollector[args.destGUID] = tremove(glacialSpikeMarks, 1)
+end
+
+function mod:GlacialSpikeMarker(event, unit, guid)
+	if self:MobId(guid) == 175861 and mobCollector[guid] then
+		self:CustomIcon(glacialWrathMarker, unit, mobCollector[guid])
+		mobCollector[guid] = nil
+	end
+end
+
+do
+	local playerList = {}
+	local prev = 0
+	function mod:GlacialWrathApplied(args)
+		local t = args.time -- new set of debuffs
+		if t-prev > 5 then
+			prev = t
+			playerList = {}
+		end
+		local count = #playerList+1
+		local icon = count
+		playerList[count] = args.destName
+		playerList[args.destName] = icon -- Set raid marker
+		if self:Me(args.destGUID) then
+			self:Say(346459, CL.count_rticon:format(L.spike, count, count))
+			self:SayCountdown(346459, 6, count)
+			self:PlaySound(346459, "warning")
+		end
+		self:NewTargetsMessage(346459, "orange", playerList, nil, L.spike)
+		self:CustomIcon(glacialWrathMarker, args.destName, icon)
+	end
+
+	function mod:GlacialWrathRemoved(args)
+		if self:Me(args.destGUID) then
+			self:CancelSayCountdown(346459)
+		end
+		self:CustomIcon(glacialWrathMarker, args.destName)
+		glacialSpikeMarks[#glacialSpikeMarks+1] = playerList[args.destName] -- _REMOVED is more reliable for spike order
+	end
+end
+
 
 do
 	local playerName = mod:UnitName("player")
@@ -218,22 +297,17 @@ function mod:OblivionsEchoRemoved(args)
 		self:CancelSayCountdown(args.spellId)
 	end
 end
-do
-	local function printTarget(self, player, guid)
-		if self:Me(guid) then
-			self:PlaySound(348756, "warning")
-			self:Yell(348756)
-			self:Flash(348756)
-			self:YellCountdown(348756, 3, nil, 2)
-		else
-			self:PlaySound(348756, "alert")
-		end
-		self:TargetMessage(348756, "orange", player)
-	end
 
-	function mod:FrostBlastStart(args)
-		self:GetNextBossTarget(printTarget, args.sourceGUID)
+function mod:FrostBlastApplied(args)
+	if self:Me(args.destGUID) then
+		self:PlaySound(args.spellId, "warning")
+		self:Yell(args.spellId)
+		self:Flash(args.spellId)
+		self:YellCountdown(args.spellId, 6)
+	else
+		self:PlaySound(args.spellId, "alert")
 	end
+	self:TargetMessage(args.spellId, "orange", args.destName)
 end
 
 function mod:NecroticMiasmaApplied(args) -- Tune stack numbers
@@ -256,7 +330,15 @@ end
 function mod:NecroticDestruction(args)
 	self:Message(args.spellId, "yellow", CL.casting:format(args.spellName))
 	self:PlaySound(args.spellId, "long")
-	--self:CastBar(args.spellId, 45)
+	self:CastBar(args.spellId, 45)
+	self:StopBar(L.spikes) -- Glacial Wrath
+end
+
+function mod:UNIT_SPELLCAST_STOP(_, _, _, spellId)
+	if spellId == 352293 then -- Necrotic Destruction
+		self:StopBar(CL.cast:format(self:SpellName(spellId))) -- Necrotic Destruction
+		self:CDBar(346459, 19.5, L.spikes) -- Glacial Wrath
+	end
 end
 
 function mod:FreezingBlast(args)
@@ -278,13 +360,58 @@ end
 do
 	local prev = 0
 	function mod:GroundDamage(args)
-		if self:Me(args.destGUID) then
+		if self:Me(args.destGUID) and not mindControlled then
 			local t = args.time
 			if t-prev > 2 then
 				prev = t
 				self:PlaySound(args.spellId, "underyou")
 				self:PersonalMessage(args.spellId, "underyou")
 			end
+		end
+	end
+end
+
+function mod:ReturnOfTheDamned(args)
+	if self:Me(args.destGUID) then
+		mindControlled = true
+	end
+end
+
+function mod:ReturnOfTheDamnedRemoved(args)
+	if self:Me(args.destGUID) then
+		mindControlled = false
+	end
+end
+
+function mod:BansheesCry(args)
+	local canDo, ready = self:Interrupter(args.sourceGUID)
+	if canDo then
+		self:Message(args.spellId, "yellow")
+		if ready then
+			self:PlaySound(args.spellId, "alarm")
+		end
+	end
+end
+
+do
+	local scheduled = nil
+	local bossUnits = {"boss1", "boss2", "boss3", "boss4", "boss5", "arena1", "arena2", "arena3"}
+	function mod:SoulReaverMarker()
+		local mark = 8
+		for i = 1, #bossUnits do
+			local unit = bossUnits[i] -- boss5 arena1 arena2 were used
+			if self:MobId(unit) == 176974 then -- Soul Reaver
+				self:CustomIcon(soulReaverMarker, unit, mark)
+				mark = mark - 1
+				if mark < 6 then break end
+			end
+		end
+		scheduled = nil
+	end
+	function mod:MarchOfTheForsakenSummon(args)
+		if not scheduled and self:GetOption(soulReaverMarker) then
+			-- Delayed for IEEU
+			scheduled = self:ScheduleTimer("SoulReaverMarker", 0.3)
 		end
 	end
 end
