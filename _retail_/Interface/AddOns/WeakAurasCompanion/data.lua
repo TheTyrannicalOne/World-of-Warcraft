@@ -1,12 +1,14 @@
 -- file generated automatically
 WeakAurasCompanion = {
-  slugs = {
-  },
-  uids = {
-  },
-  ids = {
-  },
-  stash = {
+  WeakAuras = {
+    slugs = {
+    },
+    uids = {
+    },
+    ids = {
+    },
+    stash = {
+    },
   },
   Plater = {
     slugs = {

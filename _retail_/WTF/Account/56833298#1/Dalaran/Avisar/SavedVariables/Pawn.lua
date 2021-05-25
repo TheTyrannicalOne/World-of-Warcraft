@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0418,
-	["LastPlayerFullName"] = "Avisar-Dalaran",
-	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -85,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:172767::::::::120:70::25:6:6387:6388:1552:4786:6516:6513:::|h[Corrupted Gladiator's Greatsword]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Avisar-Dalaran",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {
@@ -98,7 +99,6 @@ PawnOptions = {
 			["Name"] = "Ashbringer",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

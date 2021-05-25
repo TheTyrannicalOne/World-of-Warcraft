@@ -1,478 +1,509 @@
 # AllTheThings
 
-## [SL-2.3.0](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.0) (2021-04-21)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/Shadowlands-2.2.9...SL-2.3.0) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.3.1](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.1) (2021-05-21)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.0...SL-2.3.1) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-- Temporarily cleaned up some logic for 'Contains' which returned progress information for itself... which is probably not necessary now that the search results are actually accurate prior to building the Contains text  
-    Note about 'cost' on container items causing inaccurate numbers when they are both a cost elsewhere for a Thing which they contain... (i.e. tier tokens) [will have to revisit]  
-- Fixed collection info not showing in tooltips for some items in older raids  
-    Reduced indentation of our main search function  
-- Comments for later  
-- some night fae updates  
-    removed attached questIDs from soulshapes that drop from rares in ardenweald (they will show up as collectible for night fae, but not other covenants)  
-    added missing night fae map to the night fae covenant files  
-- Adjusted Update logic for popout windows since Toggle performs an Update anyway  
-- Removed note about account-wide quests on the quest chain window header  
-- added sources to missing unsorted items (all items for hunter)  
-- Added some additional hash logic for headers so they don't merge together when they have conflicting race/class/faction assignments  
-- some work in NYI  
-- Fixed some quest information in Org... likely different than Classic/etc. and it will need other help for those versions  
-- Fixed Recipe Lib key value  
-- Fixed Molten Core showing Lothos Riftwalker as the row icon/tooltip model by putting him by himself with a symlink instead  
-- Cravitz Lorent is now listed in Legion Dalaran, not only Northrend Dalaran.  
-- Fixed creature id for Slicer Blade  
-- Quest Chain Popout windows will now ignore Account-Wide Quest completion  
-    Tiny adjustments to some quest logic performance  
-- Added some data caching for Faction info  
-- Added caching logic for static Encounter group information  
-    Fixed 'saved' property of Herilooms (though not entirely sure it's useful to have...)  
-- When display information for a group has to be calculated, the result is now cached for that group  
-    Added new caching logic for static Instance group information  
-- Modified DisplayInfo to be returned for any group with creatures as a final fallback attempt  
-    Consolidated a lot of basic true/false function references  
-    Consolidated Vignette logic using the base Quest logic (since it's mostly identical)  
-- ring of warding PoA  
-- broke up venthyr covenant  
-- broke up night fae covenant  
-- broke up necrolord covenant  
-- broke up kyrian covenant  
-- Locale sync  
-- zhCN string I missed  
-- Converted Vignette lib to optimized format  
-- Converted Toy lib to optimized format  
-- Converted Title lib into optimized format  
-- Converted Tier lib into optimized format  
-- Converted Species lib to optimized format  
-- Converted Spell lib to optimized format  
-    Added simple true/false functions which can be re-used  
-- Converted Recipe lib to optimized format  
-- Formatting  
-- added first 6 path of ascension fights (the wip of all wips)  
-- Fixed Quest Items being considered collected when they aren't  
-- Fixed a source quest in The Brood of Onyxia chain  
-- Fixed visibility of completed groups in the Tradeskill window from inheriting their source group visibility  
-- Sync locales  
-- Fixed some collected-as-cost logic  
-- fixed 3 cooking items  
-- cata jewelcrafting items now have class requirements  
-- valiant of stormwind cant be done if you done valiant of exodar???  
+- Sync localization (#764)  
+- Sync localization (#763)  
+- Small reformatting  
+- Auolocalize "Renown" header and remove old string  
+- level 50 boost set is now tagged a bnet balance required  
+- trial set change  
+- Sync locale strings for drop chances setting  
+- Missing Source messages should no longer manage to show up prior to ATT being fully loaded  
+- renown headers added  
+- Reparsed since wow was extremely unhappy with the previous Categories.lua for some unknown reason  
+- Marked The Netherlight Crucible quest as removed. Minor legion paladin updates.  
+- Last BfA source quest fix for today  
+- added brightscale hatchling to sika's extravagant tribute  
+- fixed a couple pvp items for sanct xoxo  
+- More BfA source quest ammendments  
+- More BfA source quest additions  
+- More Tiragarde Sound source quest additions  
+- Added a Tiragarde Sound source quest  
+- Re-designed population of world quest rewards within /attwq so that they are populated dynamically instead of all at once when building the list. This should lead to lower memory usage when repeatedly clicking 'Update' (out of habit) and allow for existing quest records to simply insert their rewards into themselves. Also hopefully nothing is very broken but I'll probably have to re-visit the logic and clean it up. Please screenshot anything horribly broken in #errors. Thanks  
+    Also SelfCallback calls can be converted back into Callbacks since passing arguments works properly  
+- Fixed some items which were supposed to be currencies  
+- TBC's last patch was a different number than I had in the parser. Update TBC parser.  
+- Explicitly linked Cooking Profession Skills for TBC Classic zones.  
+- Updated the Cooking Recipes within the Profession header.  
+- Marked Firecracker Helm, Girdle & Slippers as unobtainable  
+- Reworked First Aid and its associated classic quests.  
+- Better fixed World Quests list population for certain items/quests (will need to revisit the 'Treat Currencies as Containers' logic though for accuracy)  
+    Fixed a bug with CreateObject that would effectively delete all incoming raw data when turning the data into an object  
+    Also spacing on variables  
+    Note to fix the Wakening Essence vendor  
+    Cleaned up some Callback-argument logic for clarity  
+    Added 'tierID' as a valid hash key  
+- Updated the Herbalism Recipes within the Profession header.  
+- Updated the Mining Recipes within the Profession header.  
+- Added Viridian Phase-Hunter store mount. Added/updated various legion quests.  
+- TBC xpac icon was way to bright!  
+- Updated the TBC build tool to build to the TBC folder rather than to Beta.  
+- Cleaned up and added timeline information for Azuremyst Isle.  
+- Added some Pandaria source quests  
+- Cleaned up and added timeline information for Ammen Vale.  
+- Cleaned up and added timeline information for Bloodmyst Isle.  
+- Fixed some item tooltips when they contain a modID and bonusID (like /attwq warfront boxes and WoD Normal Warforged items)  
+- Just when you thought "man only one quest in the Exodar, what a dead zone" and it turns out it wasn't added until Wrath.  
+- Cleaned up The Exodar quests. Moved all of the breadcrumbs to Stormwind City where they belong.  
+- Moved the breadcrumb quest "Wulf Calls" to Stormwind. (TODO: Fix formatting.)  
+- Moved the breadcrumb A Summons from Ander Germaine to Stormwind.  
+- Updated all Parser versions to build for their new folders. Contribs: Going forward, please start using the "Parser for Retail" executable. We're gonna be deprecating the "Parser V2" executable in a few weeks.  
+- Added a Tooltip setting for whether 'Drop Chance' information should be calculated for an Item in an ATT list  
+- Now using Grey/Yellow question marks (instead of a 'star') to denote Quests in lists which the player is on and/or ready to turn in (to match how it shows in-game for in progress quests)  
+- Added quest arrow icon  
+- Added 3 icons  
+    Small update to BC xpac Icon now closer to the new BC "classic" icon  
+    Added both a yellow & Grey "?" icon  
 - Various minor updates  
-- Added Slime Serpent mount to Plaguefall  
-- Fixed the missing map message on login for auto-minilist  
-- Marked an ally-only warboard quest  
-- Merge branch 'master' of https://github.com/DFortun81/AllTheThings  
-- When 'Use More Colors' is enabled, Class & Faction requirements in tooltips will now be colored appropriately  
-    'Use More Colors' no longer considered 'Beta' :)  
-    Moved the 'Beta' Label to be a separate localized string  
-- Added coords for an alchemy quest  
-- Various tweaks and adjustments to loading performance/logic  
-    Adjustment to Minilist location update logic to skip trying to update sooner if the window is not visible  
-- Added Time-Lost Hellfire Peninsula Vendor information.  
-- SourceID Harvest 2021-04-17  
-- Finished up and verified the Necrolord Offhand Item costs/modIDs  
-- necrolord bead/spherule weapons (sans offhands)  
-- Added a function to perform a callback on a method on the next game frame (so we don't have to spawn coroutines that literally do one thing and go away)  
-    Cleaned up a lot of nested coroutine logic when Refreshing windows  
-    The in-game source harvester now performs less retries for retriving data for items, and the previous retry limit is restored after the harvester fully completes  
-- night fae mythic bead/spherule weapons  
-- night fae heroic bead/spherule weapons  
-- night fae normal bead/spherule weapons  
-- kyrian mythic bead/spherule weapons  
-    night fae lfr bead/spherule weapons  
-- kyrian heroic bead/spherule weapons  
-- kyrian lfr and normal bead/spherule modIDs  
-- kyrian normal bead/spherule weapons  
-- Fixed infinite item retrival attempts  
-- Tagging removed / added quests  
-- Initial touch up of Hellfire Peninsula.  
-- Added all Engineering quests up to TBC.  
-- Missed one!  
-- Added future proofed quest data for Cooking.  
-- Added a number of Alchemy quests.  
-- Reimplemented the Rogue Legendary Quest chain for Dragon Soul using the latest cost tech.  
-- Fixed a bug with Parser where it would crash if -- #endif was on the last line with no newline to follow.  
-- venthyr mythic bead/spherule weapons  
-- venthyr heroic bead/spherule weapons  
-- venthyr normal bead/spherule weapons  
-- ACTUALLY fixed venthyr LFR items (i hate numbers)  
-- fixed venthyr lfr bead/spherule weapons (additional modID fix to come)  
-- fixed kyrian lfr bead/spherule weapons (additional modID fix to come)  
-- Cleaned up A "Noble" Event and its rewards. Also made it so that ATTWQ didn't lose references to it as a result.  
-- fixed apogee anima bead itemID, started adding kyrian LFR weapon costs (please let me die)  
-- ATTWQ now picks up the world bosses in Darkshore and Arathi Highlands once again.  
-- added mikanikos follower to 'an earned bond' kyrian quest  
-- I swapped for no reason :/ update to elite unique offhand  
-- A "Noble Event" modifications, part 1.  
-- The Rainy Day is Here no longer appears in the mini list in addition to relative to the Celestial Tournament.  
-- Western Plaguelands source quest fixes  
-- Fixed Music Rolls and Selfie Filters account wide setting. (missing an "And")  
-    Anywhere where we check for Account Mode or Debug Mode now uses a simple boolean.  
-- Removed a lot of old commented code  
-- Removed some filter-checking logic for Items which was being run a gazillion times and seems pretty unnecessary  
-    Slight improvement in checking the item filter type when updating groups  
-    Flight Paths no longer attempt to reinsert themselves into the Main list every time the groups update  
-    Minor improvements to Debug toggle refreshing speed  
-    Slight adjustments to Settings logic  
-- Wrong phase for the zone drop.  
-- Updated Deadwind Pass formatting for Classic.  
-- When running Parser, you now have to Opt-In to execute Debug Mode on the Database.  
-- Parser is now x64 and supports Lua 5.4.  
-- Fix typo in new preprocessor directive  
-- Sync localization (#747)  
-- Things which require specific Races will now Faction-color based on the Faction of those Races  
-- Refactored Molten Core to add better handle their legacy quests and rewards.  
-- Cleaned up Classic World Bosses and their respective loot.  
-- ember court is neverending  
-- Now properly handling the Lord Kazzak / Highlord Kruul swap that happens with TBC.  
-- marked sinister gladiator's halberd as NYI (it's either NYI or removed, but there's no matching horde item so i assumed this weird 13th alliance item was never implemented)  
-- missing ember court restock quest  
-- Also updated the Parser for PTR to consider the same build options!  
-- Made several adjustments to Parser to provide better version and phase filtering.  
-    Added the initial rebuild of Karazhan. (which can literally be copy/pasted between Retail and TBC and rebuilt using specific versions of Parser)  
-- Fixed including items in 'Contains' for cost item tooltips where the modID plays a factor in the purchasable items (i.e. Nathria Anima Spherules)  
-    Fixed treating Things in the Main list as collectible if they include a modID as a part of their cost requirement (i.e. Nathria Anima Spherules)  
-    Added some further information to Venthyr raid weapon vendors as (hopefully) a standard format for Covenant weapon vendors  
-    Added a couple Venthyr weapon costs while testing  
-    Flagged Night Fae Soulshape Quests with Night Fae Covenant  
-    Removed unnecessary quest info from Soulshape items in CN (They become collectible to Night Fae characters automatically)  
-- More Class Hall improvements and some vanilla source quest tweaks  
-- Updated Parser to support "BEFORE" and "AFTER" commands.  
-- Flight paths no longer overburden the addon when looking at a Taxi Node NPC for the first time per continent when you have hardly any cached.  
-- SearchForField now only returns cached field data. It's the single most used search function we have and to have it occasionally search the entire DB recursively on error and such is a bit dangerous.  
-- Removed this random vendor from being tagged with Mark of Honor  
-- Marked the Every Bit Counts quests as breadcrumbs  
-- Cleaned up a few more Gorgond quests  
-- Modernized formatting of Gorgrond quests that are provided by items  
-- Removed the header that was causing the debug message to appear.  
-- Beginning Deadwind Pass and Karazhan TBC modifications.  
-- Fixed Artifact Appearance collection statuses basically being completely inaccurate (Artifact collections will need to be re-cached per character due to API restrictions)  
-- The Classic and TBC versions of the Parser tool now build to the .tools directory and work with a database inside the .db folder.  
-- Added the Parser for PTR executable.  
-- Restored the old Parser (Retail).  
-- Removed the Retail to Classic Converter project since it was not used.  
-    The Parser tool now supports exporting PTR database information to the PTR folder in WoW and the Classic Beta (TBC) database information to the TBC Beta folder in WoW.  
-- Fixed SetPoint for Border/Background of a row Texture used in some cases (Artifacts)  
-- Parser now supports a number of new preprocessor commands for its Lua database.  
-    You start a command with this: -- #if  
-    The follow it up with a condition like this: CLASSIC, TBC, WRATH, SHADOWLANDS, etc  
-    And then write some code to execute for the condition.  
-    Then finish it off with a -- #else, -- #elseif, -- #elif, or -- #endif.  
-    You can nest and chain however many conditions as you want!  
-- Marking these two Alliance Exlie's Reach flight paths as Never Implemented until we can prove they actually exist at some point  
-- Small optimization for checking if a player is in an NPE zone when logging in  
-- Modified some Flight Path DB/logic to have more accurate & consistent collectibility/display in both the main Flight Path list and within individual Zones  
-    Added some Flight Nodes to the Flight Path DB which were only listed in Zones  
-- shriekwing creatureID fix  
-- a couple 'best friend' quests for ember court, info about summoning the rare that drops char  
-- More Blade's Edge stuff.  
-- Some more Outland stuff.  
-- added new achievements that grant increased anima rewards  
-- couple more nazmir quest fixes  
-- Ruins of Gilneas is no longer nested inside Silverpine Forest (Needs some nice-ing up of the group info though...)  
-    Fixed some Flightpath logic for collectibility status in Debug/Account modes  
-- Modified Quest logic when Quest is tied to a Faction such that it will be considered Collected if the associated Faction is also considered Collected  
-    Additional Quest logic when tied to a Faction to provide more information/be more accurate in collectibility concerns  
-- Now caching factionID.  
-- some nazmir quest fixes  
-- blizz decided to add a neck to a dazar'alor/nazmir quest in 9.0.1 for some reason  
-- Cleaned up some parts of Outland.  
-    Added Ogri'la as a Faction in Blade's Edge.  
-- Achievements/Criteria which is Covenant specific will now be filtered when not in Account Mode  
-- GetRelative* functions will now include and prefer to check the Source parent group for pertinent information  
-- Modified logic of the Source information for 'Contains' entries to not show when literally looking at the Item container or NPC which contains the Items  
-    Source information for 'Contains' entries will now include the source Profession name for those items which are Crafted  
-- Headers once again can use Quests and get checked off as saved. (I didn't realize how prevelant this was.)  
-- Optimized the Item object type by factoring out the Collectible as Cost behaviour after no usage of itemIDAsCost was found. (by replacing the meta)  
-- Fixed the parenting issue caused by sourceParent.  
-- Fixed a bug with the CloneData function where it would cause a weird lookup cycle to occur for items dependent on location in the addon resulting in a retrieving data display.  
-- Retrieving Data in the source locations tooltip should now cause the UI to refresh.  
-- Consolidated duplicated logic for building the 'Contains' portion of a tooltip  
-- some missing zuldazar mapIDs + adding a missing map to a coord  
-- forgot one + added another reminder to the TODO  
-- some dazar'alor intro questline tweaks/a TODO  
-- Updated criteria of BB King achievement to match the current faction leaders in game.  
-    Fixed an Azsuna treasure chest.  
-    Added horde version of Proving Grounds quest.  
-- Added some Source information for Items shown in the 'Contains' list [WIP] (Needs further adjustments and feedback)  
-- Revert the ATT-Classic style of Source Location information in tooltips until we figure out a more accurate way to reflect the data in a condensed format  
-- Shaman class hall tidy part 2  
-- Fixed treating Things as collectible due to being a needed cost item when they are under a parent to which the current character is 'saved'  
-- Reverted the collectible as cost modification other than for quests themselves until we can find an appropriate fix.  
-- various small fixes for 9.0.5 content  
-- EASTERN\_KINGDOMS is now the map ID constant value 13.  
-- KALIMDOR is now the map ID constant value 12.  
-- WORLD\_QUESTS now represent the -34 header ID.  
-- FLIGHT\_PATHS now represent the -228 header ID.  
-- Found some missing ISLE\_OF\_QUELDANAS map IDs.  
-- THE\_EXODAR is now the map ID constant value 103.  
-- AMMEN\_VALE is now the map ID constant value 468.  
-- BLOODMYST\_ISLE is now the map ID constant value 106.  
-- AZUREMYST\_ISLE is now the map ID constant value 97.  
-- SHADOWMOON\_VALLEY is now the map ID constant value 104.  
-- TEROKKAR\_FOREST is now the map ID constant value 108.  
-- NETHERSTORM is now the map ID constant value 109.  
-- NAGRAND is now the map ID constant value 107.  
-- ZANGARMARSH is now the map ID constant value 102.  
-- BLADES\_EDGE\_MOUNTAINS is now the map ID constant value 105.  
-- HELLFIRE\_PENINSULA  is now the map ID constant value 100. (Can't even describe how awful finding and replacing that was!)  
-- SHATTRATH\_CITY is now the map ID constant value 111.  
-    Fixed a number of Silvermoon City references in Midsummer Fire Festival that incorrectly said they were map ID 111, which they aren't. They're 110. Constants are good.  
-- SILVERMOON\_CITY is now the map ID constant value 110.  
-- ISLE\_OF\_QUELDANAS is now the map ID constant value 122.  
-- GHOSTLANDS is now the map ID constant value 95.  
-- EVERSONG\_WOODS is now the map ID constant value 94.  
-- Replacing ID-based constants for Outland / TBC Maps with CONSTANTS for easy transition to TBC-Classic database.  
-    OUTLAND is now the map ID constant value 101.  
-- Just making sure the repeatable flags are in there correctly.  
-- ...  
-- Added remaining Noblegarden quests in Ember Court  
-    Further Ember Court HQTs  
-- Now excluding quests from the Dreamweaver Provisions sym link.  
-- Yet another fix for CloneData.  
-- Cloning all the key values.  
-- CloneData function now copies over the id every time.  
-- Source Locations summarization improvements from ATT-Classic. (testing)  
-- Once again filtering the Source Locations list of groups which contain the current Thing as a 'cost'  
-- AltQuestID has been purged from the addon.  
-    Optimized the Source Quest List in the Tooltips. (still need to refactor them in the pop out, but one thing at a time!)  
-    Optimized the Quest object type.  
-- Quests in the database now need to use "name" instead of "title" as part of an optimization.  
-- Properly escape localized strings  
-- SourceQuest and coordinate fixes in Eastern Plaguelands  
-- One more  
-- Localization fixes  
-- Fixed Incarnadine Ink quest to not be alliance only  
-- Added all of the coins and baits (as well as which baits catch which coin) for The Wish Remover in Dalaran (The Broken Isles).  
-- Minor formatting difference between this and the rest of the places it was listed.  
-- Now only Repeatable quests with either an itemID (a standalone quest item) or a defined cost in ATT will appear in the list outside of other filters.  
-- same with some dalaran mining quests  
-- marked some suramar mining quests with requireSkill so they don't show up for players with other professions  
-- Fixed a bug with the mini list where Vendors didn't merge into the Vendor header already present in the zone.  
-- Updated some PVP vendors in Stormwind.  
-- fix for torghast vendor (maybe?)  
-- Cleaned up SearchForLink.  
-- Fixed Encounter tooltips on instance maps.  
-- Removed a bunch of useless comments to make the tooltip logic easier to read.  
-- Now showing the usage of items and currencies as cost in the Source locations portion of the tooltip as originally designed.  
-- Optimized the "HasCost" function.  
-- Don't use contains this way.  
-    Collectible as Cost now works with things that have groups that have things within them. (IE: Burden of Eternity)  
-- Adjusted the timeline isle armor tokens and burden of eternity to show a thinner tooltip for the same amount of info.  
-- The portion of the tooltip used by the "Known By" section now hides the realm name for characters on your realm.  
-- Flipped the state of the EnforceSkillRequirements so that profession related content is not displayed in the mini list.  
-    Bind On Pickup crafted items now follow the skill enforcement regardless.  
-- Cleaned up Firelands upgrade vendor items.  
-- Modified search logic to include cost information even when a direct item link is provided  
-    Cleaned up the Trashmaster Quests since new search logic handles it with cost properly  
-- Cleaned up the Selfie Filter implementation.  
-- Manually fix ruRU strings, will look into it later  
-- Sync localization (#744)  
-- Need to install requests explicitly too now  
-- I will never edit yaml outside of configured editor again  
-- Fix kerfuffle  
-- Set up Python explicitly in workflows  
-- Fix GetSpellInfo objects and prettify a bit  
-- selfie filter option is now free, kinda  
-- Prepare localization for new objects  
-- Optimized and the PVP Rank and Selfie Camera object types.  
-    The S.E.L.F.I.E. Camera MkII toy now properly shows the filters in its tooltip.  
-- Tome of Cold Weather Flight was never a World Drop.  
-- Fixing providers for Nazjatar profession quests.  
-    Nuked the NYI files to simplify the structure.  
-- Optimized the Profession object type.  
-    Also destroyed a number of headers that were pretending to be a profession.  
-- Priest Class Hall clean-up part 2  
-- Couple Quest fixes  
-- Found some more references to "creatureID" that was actually intended for "headerID"... yikes.  
-- This was necessary for World Quest lists in /attwq to not show "RETRIEVING DATA" on certain items.  
-- World Quests will no longer show themselves in the list if they are active without additional filtering.  
-- Optimized the Pet Lib object classes.  
-- New parser!  
-- I used my big boy brain to export the data associated with objects that are in enUS and add the missing keys as an empty string for a simple copy+paste!  
-- Parser now spits out a long list of objectIDs that are missing localization for enUS.  
-- Rearranged some Island Expedition sequential Missions  
-    Further Quest Clean up  
-- Fixed a string in the Parser that got changed in Source  
-- Various Quest clean up  
-    Removed many HQTs which are listed on an actual Thing already  
-- Optimized the world Object object type.  
-    Objects now report when they are missing localization on startup. (have fun!)  
-- Fixed the Purified Titan Essence symbolic link.  
-- Fixed the ToT tooltip issue.  
-- Fixed an issue with the Mini List where it wouldn't reapply the achievement data for the header if it was a map.  
-- Saved is now more consistent for trackable things.  
-- Fixed Quest Items not being considered collected account-wide  
-- Modified Quest Item logic to use the same collection logic as actual Quests  
-- I removed this earlier. :)  
-- Optimized the NPC object type. Converted the piggy backed negative NPC IDs (aka "custom npcs) into their own object key, "headerID".  
-- Quests now only show the in-row checkmark if the current character has completed the Quest  
-- Fixed value for map info API call  
-- Not sure why this fixes the display in ATTWQ, but it does.  
-- Optimized the Music Roll object type.  
-- Optimized the Mount object type.  
-- Optimized the Map object type.  
-- Added a bit of logic to the Parser to save a list of duplicate-listed Quests at the end of the output (only visible by opening the log.txt file created by the Parser). These show most non-repeatable Quest entries which are directly listed more than once in the Source  
-- Missed the new item as cost cache for determining a filterID for items.  
-- Moving forward for Classic/TBC, we are no longer writing filterID for Reagents and Quest Items. (these are auto detected on the front end now)  
-- Priest & Shaman Class Hall improvements & tidy up  
-- Ember Court HQT updates  
-    Some Easter Egg repeatables for Ember Court during Noblegarden  
-- Removed the old collectible as cost function.  
-- Greatly improved the performance of the Item object type. (And it now supports 4 different types of collectible detection: Quest, Faction, Achievement, and Transmog)  
-- Shifted some things around based on TBC-Classic structure.  
-- Moved Ulduar enchanting patterns to Common Boss Drops, these have been confirmed to drop from more bosses than the ones that were listed  
-- Optimized the Instance object type. You can now link the dungeon journal listing in chat by shift left clicking the name of the instance in ATT.  
-- ...  
-- ...  
-- Optimized the Illusions object type.  
-    Cleaned up all of the Illusions created by Enchanting. They're now listed in their respective "Crafted Items" sections.  
-- some more unsorted dungeon satchels that were bugging me  
-- Optimized the Holiday object type. Additionally, fixed the icon bug that caused the icons to get cut off.  
-- Signficantly improved overall addon performance by optimizing the Achievement Criteria object type.  
-- Optimized the Heirloom object types.  
-    Also fixed a bug with removed from game heirlooms where they would fail to retrieve an icon.  
-- Optimized the Gear Set object types.  
-- Optimized the Garrison object types.  
-- Greatly improved performance for the Achievement and Follower object types.  
-- Just some TODOs for future  
-- Optimized the Flight Path object type.  
-- Improved the performance of the Flight Path object type.  
-- Optimized the Filter object type.  
-- Factions now show their reputation levels in the tooltip and how much reputation remains to Exalted/Best Friend.  
-    Greatly optimized the Faction object type.  
-- Optimized the Difficulty and Encounter object types. Cleaned up the lockout tooltip code.  
-- The icons used for sections in the Profession Window now match the Main List.  
-- Added the Death Tracker module. (Total Deaths - currently only visible while in Debug Mode.)  
-- Optimized the Currency Object type.  
-- Removed some unused data from the Unit Class.  
-- some hqt stuff/garrison quests  
-- Minor class improvement for the Character Class object type. Also removed a pointless comment block.  
-- Removed the default 10 second timer.  
-- Fixed an issue with Soft Reserve Edit Boxes.  
-- Removed some useless block comments.  
-- Synchronizing base.lua updates between Classic and Retail ATT.  
-- Small tweak for Faction mode string  
-- Localize prep for Faction mode  
-- removed helya recipe rank3 from heroic  
-- added reagents for synchronous thread, an hqt, and fixed crs for a horde siege of boralus encounter  
-- Added a TBC build configuration for the Parser tool.  
-    Parser now supports excluding data based on Phase Identifiers.  
-- Added "Only Current Faction" for Account Mode to show account data for the current faction. (Shaman and Paladin content is also hidden in ATT-Classic for their respective enemy faction while in this mode.)  
-    This new mode will be indicated as "Faction ___ Mode" in the mode string.  
-- Now using the app.asset helper function for local ATT assets.  
-- Enforcing the naming convention for Category Icons.  
-- Now using the app.asset helper function for commonly referenced assets.  
-- Enforcing the naming convention for Difficulty Icons.  
-- More Expansion Lib modifications.  
-- Removed an unused comment chunk.  
-- ATT Asset naming convention enforcement: Expansion Icons.  
-- Added Asset Helper functions. (for copy+paste between addon versions)  
-- forgot to change one instance of 'heroic' in documentation, whoops  
-- azerite armor caches drop normal-difficulty pieces now because blizzard hates us  
-- Priest Class Hall improvements and clean up  
-- Removed some usage of Valor which is no longer accurate due to the currency being re-introduced into the game for a completely new purpose  
-- all the & things 3.0 data  
-- Sync localization (#741)  
-- Small change to localization script  
-- Now reporting when an item is excluded because of its itemID. (temporary)  
-- added crs for bfa lfr queue npcs  
-    added some missing uldum/vale assault zone drop recipes  
-    hashtag errors  
-- Added Shadowlands Keystone Explorer: Season One  
-- Marked Technique: Codex of the Tranquil Mind (Rank 3) as obtainable again - confirmed that it dropped from an emissary chest (let us know if anyone gets it to drop from a dungeon boss)  
-- Added VanCleef's Boots to Hyper-Compressed Ocean drops  
-- Marked Technique: Codex of the Tranquil Mind (Rank 3) as unobtainable - no evidence that this has dropped since the end of Legion  
-- Ember Court updates & HQTs  
-- More Deathknight Class Hall improvements  
-- Fixed/reorganized all Legion mining to not show things that have already been completed as incomplete  
-- More Legion herbalism fixes to make completed things not show up incorrectly in the zone minilists  
-- removed a scenario map from overall ICC map list  
-    tweaked outposts so only real quests are utilized and moved missions hqts to the hqt file (like other expansion mission hqts)  
-- hqts, some ember court rewards, added crs to a rare in vol'dun  
-- Fixed all other Legion herbs to not show things that have already been completed as incomplete  
-- Fixed Fjarnskaggl to not show things that have already been completed as incomplete  
-- Slight memory usage improvement for repeatedly opening a popout window of a Quest group  
-    Fixed some logic concerning finding a duplicate Quest group which contains source Quests when the popout group does not contain source Quests  
-- Some clean up to reduce memory usage when creating/re-opening popout windows  
-- For those at 99% or more, the number of things to the next 1% threshold in the tooltip is now more precise.  
-- Nested Venthyr achieves under The Party Herald in the main achieves section  
-- Added several Venthyr achieves/criteria to the main achievements section  
-- Marked BoE version of Rhinestone Sunglasses as obtainable.  
-- Added HQTs for PvP ensembles (all 624 of them!)  
-- Added coords for Warden's Scroll Case and fixed name  
-- Added Trial of Style ensemble HQTs  
-- Trial of Style HQTs linked to Letter from an Admirer  
-- added a missing drop to orstus/sotiros  
-- HQT during WQ  
-- Added a couple sourceQuests in Azuremyst Isle  
-- Delete auto\_localization branch to speed up things  
-- Sync localization (#736)  
-- Adjusted the RSVP requirements for Droman Aliothe for 9.0.5 changes  
-    Added an Ember Court restock quest  
-    Fwd: Fwd: Fwd: Re: Re: Fwd: Re: Ember Court HQT's  
-- Fixed quest giver for Dread Head Redemption  
-- Removed an incorrect Felwood source quest  
-- Added Jeweled Arakkoa Effigy.  
-    Added coords for Demon Duty.  
-- Changed WOD\_CRAFTED\_ITEM to mark tiers 2-6 unobtainable. Note that this currently causes tier 1 to also be marked unobtainable (and display the 'salvage crate' red text) until parser is updated to handle it.  
-    Added a couple more AbomiThings.  
-- Adjusted some classic source quests  
-- more soul crs  
-- fixed typo in buckled plate belt itemID  
-- Added a Stormsong Valley WQ (Work Order: Solstone)  
-- hqt, added chan's imperial robes to mith'rethis in the hinterlands (not a guaranteed drop, but a very high chance for this rare item!)  
-- hqt, missing revendreth zone reward, another ember court thing sourced  
-- More localization fixes  
-- Copy esES objects to esMX when autolocalizing  
-- Update description on Endgineer Omegaplugg  
+- Warden's Scroll Case wasn't added until 6.1.0.19508.  
+- Tried to fix the OnUpdateReputation method to be usable more generically and not override user settings on visibility  
+- Fixed a quest incorrectly marked as repeatable  
+- Marked all of the Outland zones as TBC Phase One required.  
+    The Isle of Quel'Danas has a TBC Phase 5 Requirement.  
+    Removed all faction headers and dirtily smashed the quests and vendors into the places they should have been ages ago. (This will need to be touched up significantly before TBC Launch, apologies users for the temporary lack of organization, Prepatch is here and I'm out of time.)  
+    Updated information on Mr. Pinchy.  
+- Added the OnUpdateReputationRequired function that objects may subscribe to in order to enforce visibility requirements for non-player faction requirements. (Scryers & Aldor)  
+- Marked Nagrand as TBC Phase One, dirtily butchered the pointless Faction headers.  
+- Applied the TBC Phase 1 requirement to Hellfire Peninsula.  
+- Added Exploration data for Bloodmyst Isle.  
+- Engineering 'Reaves' components flagged with Engineering skill since the tracking quest for each item is otherwise is being considered for any character  
+- Added Exploration data for Azuremyst Isle.  
+- Added Exploration data for Hellfire Peninsula.  
+- Added Exploration data for Netherstorm.  
+- Added Exploration data for Blade's Edge Mountains.  
+- Added Exploration data for Zangarmarsh.  
+- Added Exploration data for Nagrand.  
+- Added Exploration data for Shadowmoon Valley.  
+- Added Empty Nightcap Cask  
+- Added Fashion Abomination achievement.  Necrolord abomi-thing costs are now tracked under Fashion Abomination instead of Wardrobe Makeover, since all criteria for the latter will be marked complete by blizz once you have finished the achieve for 25, but the criteria for the former will stay incomplete until you have finished all 35 things.  Added provider/coords for hunter mount quest in legion.  
+- Marked Conservator's Leather Tunic as never implemented since it has been reported to not come from the expected ensemble.  
+    More various legion quests updated.  
+- a couple useless ember court items out of unsorted  
+- Slight reversion of the .editorconfig, but keeping the extra EOL new line purging intact! :)  
+- Updated the .editorconfig file to match expected file format standards. No spaces to indent in file format and no extra line at the end.  
+- Fixed some Party Sync logic when a player goes offline without leaving the party  
+    Added logic for Toy collection to be improved (not active until I find a new Toy to test...)  
+- Fixed logic for Party Sync indicator on non-available quests (it only works on quests that have already been completed by the character)  
+    Prepped for new quest indicator icons soon...  
+- Initial formatting for Azuremyst, Bloodmyst, and the Exodar for timeline manipulation. (not including quest changes yet)  
 - Locale sync  
-- Update zhCN (#733)  
-- ammen vale is now a subzone of azuremyst isle, similar to the other starting areas  
-- icon for caverns  
-- burden of eternity fix  
-    marked a breadcrumb  
-    more ashran shit  
-- Improved Tradeskill window logic and fixed bugs (fixes #694) (fixes #734)  
-- Reworked Tydormu to use "cost" so that he no longer will show tokens for PvP items that he doesn't sell  
-- Fixed Merciless Gladiator's Felweave helm/shoulder tokens that were backwards  
-- Removed a double description  
-- caverns are now finished (and not only on allthethings)  
-- fix for the previous scroll items  
-- caverns of time split  
-- removed some duplicating from the great sea scroll quest. Still a bit buggy and displaying the azerite items with 2 sources (4 if debug) when it should only be 1 source (2 in debug)  
-- Sync localization (#731)  
-- Another fix  
-- More fixes :D  
-- Fix sync script  
-- Add auto localization for object names (#727)  
-- extra info for some azerite items  
-- Added more AbomiThings  
-- Added some sourceQuests (25422 & 25423)  
-- Added some missing Ashran achievement criteria  
-- added pre-req for the quest Assisting the Consortium  
-- #errors (delete garrisons)  
-    marked some breadcrumbs  
-    really nothing else of value/import  
-- Missing WQ tag in Broken Shore  
-- Added map to Crossing Legion Lines (43394)  
-- Added Purity's Edge Greatblade  
-- Added Abomination Station tier 4 quests  
-- Slight adjustment to caching items so that the raw ItemID always exists in the cache  
-- Removed some currently unnecessary logic with a note for future me to adjust  
-    Added suspected source quests for a couple Night Fae souls quests  
-    Added a T5 Ember Court quest and RSVP/HQTs for The Countess  
-- Fixed categories, manually.  
-- Undid a thing.  
-- Legion Class Hall (Warlock, Shaman & Priest) clean-up & some #errors  
-- Fixed a broken quest in arathi highland not showing the correct quest-chain.  
-- Determined a couple specific HQTs for Ember Court Guests  
-- Removed nested marks of thrallmar / honor hold  
-- Legion Class Hall (Shaman & Warlock) updates part 1  
-- Added The Vials of Eternity as sourceQuest for the Scale of the Sands ring questlines  
-- Formatting (and misleading comments :D)  
-- And now after parsing...  
-- Legion DK class hall quests & HQTs  
-- Another legion enchanting quest added.  
-- added 3 quests in the legion enchanting questline.  
-- Added a couple maps to a Legion quest  
-    Removed duplicate Ember Court quest and added a missing one  
+- Hopefully final review of Quest + Reputation logic  
+    Removed fake breadcrumb statuses from 2 Consortium quests (now that Quest + Reputation should be working properly to show accurate collectibility/collection)  
+- Added Exploration data for Terokkar Forest for TBC.  
+- Added Ghostlands Exploration data. The ZA flight path confirmed not implemented until Phase 4.  
+- Reviewed Quest collection logic for Quests which grant reputation so that it should correctly accomodate both ways of collecting (Reputation / Quest)  
+- Added Area IDs for the Ghostlands. (now to explore and match them to texture coordinates!)  
+- Added Exploration for Eversong Woods. (to Classic, Retail is not ready!)  
+- Added some future tech for Exploration objects... soon.  
+- Fixed items collectible as cost from having a tooltip Total +1 greater than their actual Contains count  
+- Cleaned up a lot of "easy-to-fix" duplicated quest entries ( > 51046)  
+- Moved headerID "Common Vendor Items" to -20, added "Exploration" as headerID -15 as it is in Classic.  
+- Checking source quests on beta yielded some unexpected results in the Ghostlands.  
+- Finished the Ghostlands timeline adjustments for TBC.  
+- New parser writes some information about the chunk that failed now.  
+- Recipe: Transmute Skyfire Diamond is no longer marked Alchemy.  
+- Fixed popouts of collectible as 'cost' items to generate a popout list which matches their Contains tooltip  
+- Removed some commented info  
+    Changed Party Sync logic a little to show that uncollected Quests which cannot be re-played in the current session to have the 'Incomplete' (blue X) as the left-side indicator  
+- Removed TODO which was nowhere near the thinging needing to-doing  
+- Added proper costs for T5 tokens on IoQD  
+- Added some extra quest info and zone drops unique to Eversong Woods.  
+- Finished Silvermoon City timeline adjustments for TBC.  
+- Added a Common Cataclysm Recipe group for Enchanting.  
+- Added a Common Cataclysm Recipe group for Jewelcrafting. (a doozy!)  
+- Added Common Cataclysm Recipe groups for Blacksmithing, Leatherworking, and Tailoring vendor recipes. Working on the rest next, but figured it'd be a huge commit if I did them all in one push.  
+- I've moved the rest of the garbage to Orgrimmar. Someone else can deal with the duplication and consolidate it, I don't have time!  
+- Consolidated the quest "Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)" in Orgrimmar. (Why do they do this...)  
+- Consolidated the quest "Meet with Gordul" back into Orgrimmar.  
+- Consolidated Kazak's Behest (SL+) / Kranosh's Behest (WOD+) / Zevrost's Behest (Cata+), since it's a breadcrumb, it goes in Orgrimmar with maps linking it elsewhere.  
+- another weekly poa quest  
+- First pass cleaning up Ghostlands and Silvermoon City lead me on a Priest Quest nightmare! I'm not done!  
+- Right Click any quest to see its Quest Chain Requirements  
+- Added Commander's Downfall quest.  
+    Removed misleading description from Thaumaturge Vashreen.  
+- Explicitly marked the spellIDs associated with the recipes in Black Temple.  
+- Explicitly marked class requirements for the Ashtongue Talisman trinkets in BT.  
+- No longer accidentally marking Sense Undead as a TBC Phase One required spell.  
+- Updated Eversong Woods and Sunstrider Isle to utilize timelines in preparation for TBC.  
+- Added source quests for MoP war board Quest breadcrumbs  
+    Modified Quest Removed to trigger a callback so that it only updates once per frame (i.e. leaving Party Sync or using a macro to abandon multiple quests at once)  
+- Warlock Class Hall questID fix  
+- Added some logic to automatically show otherwise unavailable quests when entering a Party Sync session. The 'saved' checkmark (left side) will show whether your character is able to pick up/replay the quest  
+    Registered another event for removal of a quest from the player's log so that windows can update properly in case any show active quests  
+    Determined another sourceQuest for a Nagrand Quest  
+    Fixed Breadcrumb skip warning to only activate if getting locked out of a breadcrumb that the player can acquire on the current character  
+- Fixed the Death Tracker freaking out in Debug Mode on a fresh character.  
+- Data was nil when right clicking on "Return to Sathiel" in Eversong Woods. Feel free to try debugging. :)  
+- Applied customCollect to all Covenant main quests  
+    Cleaned up some Nested Quest Chain Requirements (NQCR) logic  
+    Modified NQCR logic to ignore Quests which do not meet the current character's custom collect requirements, unless the root Quest already does not meet the customCollect requirement  
+- Added an additional Help Text for Quest entries as it became apparent this was not common knowledge of the special popout functionality on a Quest-related group  
+    Added a coord for 'Bell of Remembrance' to help point in the right direction for the mob drop  
+- Commented out some pre-filtering code when showing NPC tooltips which seems rather unnecessary due to the same logic being applied later on  
+    Commented out a currently-unused function  
+    Consolidated logic of SearchForObjectClone  
+    Removed logic which bypassed cloning certain popout window results since it allowed for searches within that popout to alter the structure of the popout data (fixes #761)  
+    Moved Blingtron quests into generic Quests headers under the respective expansion craftables so that the Engineering filter is not enforced on the Quests themselves  
+- Sync localization (#762)  
+- Remove more unused headers/object names  
+- Battle Pets linked using maps now properly go underneath the Pet Battles filter header in the mini list.  
+- Removed a profession header that only contained Bloated Smallfish from several zones. Moved Classic crafted items for Fishing to the Crafted Items section.  
+- Added a note and 'contained' HQT unlocks for the Ember Court BoA Items so you can prevent making the same mistake I may or may not have made  
+    Consolidated accurate Tooltip integration check logic and applied it in missing tooltip attachments (fixes #340)  
+    Uncommented many Holiday Icons from DeadSerious (still requires further source clean up for a couple of them to work properly everywhere)  
+    Adjusted logic for Contains to accurately check the entire parent path of the Thing to ensure it is obtainable by the current character (fixes #383) [this will break Blingtron tooltips for non-Engineers until Bling is moved somewhere else in the DB... and maybe other things]  
+- Added/updated more Legion Hunter quests  
+- parser test 2  
+- parser test  
+- Removed a couple unnecessary clone methods since the retrieved data is not modified  
+- Added proper filter to Ragnaros group of 15th anniversary items (fixes #654)  
+- Consolidated logic for generating Spec icons in rows/tooltips  
+- Removed symlinks from SoO Essences since they are properly using 'cost'  
+    Improved handling/logic of showing Spec Icons in window rows  
+- Fixed hash function for items with spellIDs since sometimes different items can use the same spellID and they need to be distinguished properly (fixes #700)  
+- Trinkets/Crafted Items are no longer getting their recipeID used as a collectible attribute of the item (i.e. collectible trinkets) (fixes #671) (Likely due to Parser fixes from before)  
+- removed drop is back!  
+- Mark all repeatable Chromie quests as such and remove one dupe in SW  
+- Sync some localization strings  
+- Various legion quest updates  
+- Thori'dal, the Stars' Fury achievement is now Warrior, Rogue, Hunter only.  
+- Raid quests are supposed to be contained within their respective raid.  
+- Updated Ruins of Ahn'Qiraj and associated quests to Classic's future timelines. (these files now match between ATT-Clasic and AllTheThings!)  
+- Moved the Black Empire containers to the Assaults themselves. (Restructure this stuff when possible.)  
+- Added a finalized section for the Tier 0.5 Sets, which were tested thoroughly in the Classic version of ATT!  
+- Updated Blackwing Lair and associated quests to Classic's future timelines. (these files now match between ATT-Clasic and AllTheThings!)  
+- Updated Molten Core and associated quests to Classic's future timelines. (these files now match between ATT-Clasic and AllTheThings!)  
+- Legion quest updates for hunter, DH, DK  
+- HQT from Revendreth WQ  
+- Updated Onyxia's Lair and its associated quests.  
+- Slight change to "!" size  
+- ...  
+- Fixed Adventurer: Nemea quest and Nemea follower for Kyrians. More Hunter legion quest updates.  
+- Updated quest header icon path  
+- Universal quest header icon  
+- More Legion hunter updates. Removed quest trigger attached to Arsenal: Winterborn Weapons.  
+- Added paths for more icons  
+    Added a path for Rare, Quest, Icon, Treasure chest and legion invasions  
+- Gave the quest icons a little love  
+- New/updated icons + small change to content file  
+    Added quest icon  
+    Added daily quest icon  
+    Added daily quest turn in icon  
+- Added Paths for Hoilday Icons  
+- Name change icons to mmatch others  
+- Added Hoilday icons for sorting  
+- Added some Paladin Class Hall HQTs  
+- Explicitly added class requirements to the tokens because of classic's limitation.  
+- Restructured Sunwell Plateau.  
+- Cleaned up heroic ZA to match.  
+- Made use of the lvlsquish helper function instead of inline preprocessor commands.  
+- Cleaned up Zul'Aman and its associated quests.  
+    Added helper functions to clean up the more common #if #endif blocks for readability.  
+- Fixed showing unobtainable quest pre-requisites when not in Debug mode  
+- Fixed a bug with crafting logic where recipes which do not create an item (enchanting etc.) cause an error  
+- lost winged ritual kris exists woooo  
+- Fixed making a popout window from within a popout window changing the indentation of the group from the first popout window  
+- Moved a couple functions around  
+    Altered the logic of the popout window to actually perform the same logic as when searching for that Thing (if it doesn't already contain things). This way, the tooltip of an Item/Currency used to purchase Things will match the popout window of that same Item/Currency as expected  
+- Couple Naval Mission HQTs  
+    Clicking in the Scrollbar area on an ATT window will now scroll exactly the same amount as the number of currently visible rows in the window (the arrow buttons are still weird though)  
+- Removed inaccurate description for Scunner  
+    Fixed duplicate descriptions showing for some creature tooltips  
+- More legion quest updates, mostly Hunter  
+- Updated parser to allow for "u" and "timeline" resolution.  
+- Added some legion HQTs  
+- Further minor improvements to performance of some duplicate-prevention logic during tooltip/search processing  
+    Moved duplicate prevention to 'Descriptions' on NPC's only instead of for all tooltip Info generated (Please report weird duplicate tooltip data if noticed)  
+- Minor performance adjustments for tooltips/search performance [WIP]  
+- added sq for a night fae quest  
+- Added/updated more Legion hunter quests  
+- moved some mounts from temel to the tributes they allegedly drop from  
+    some ember court hqts  
+- Added an item to Garrison missions  
+- Fixed creature/etc. Models showing for Items with a SourceID when other display data is associated with the Item  
+    Stopped trying to show Models for all Items with SourceIDs, only showing for Artifact variants currently (probably needs the player model to display certain visuals properly)  
+- Made some progress on Black Temple.  
+- Moved the Vials of Eternity to the Caverns of Time.  
+- Moved all quests relevant to Hyjal Summit into the Hyjal Summit file as per design specifications.  
+    Added a constant for CAVERNS\_OF\_TIME.  
+- Updated Hyjal Summit to work with Classic data and requirements.  
+- updated description for droman aliothe's rsvp quest  
+- Re-organized and cleaned up "Love is in the Air"  
+- Updated the formatting of Tempest Keep based on weird retail behaviour. (perhaps revisit later)  
+- Fixed a bug with the legendary weapons in Tempest Keep.  
+- Level squish was Shadowlands.  
+- Updated the formatting of SSC and added explicit class requirements to T4/T5 Tokens.  
+- Updated/added some legion Hunter quests  
+- Cleaned up Magtheridon's Lair and its associated quests.  
+- New localization string  
+- ....  
+- ...  
+- Added Thrown weapons up to and including TBC.  
+- Sync localization (#759)  
+- Fix last  
+- Fix path in localization script  
+- More Noblegarden, added cost to vendor items  
+- Warlock Class Hall tidy up  
+- Since cost is now a thing, I've cleaned up all of the explicit references in the raids for tier tokens for Burning Crusade. (someone else feel free to do newer content)  
+- Added an unsorted item from Death Knight mission  
+- Removed all references to "order", "ordered", and "sort" properties. As it turns out, if you were using a non-English client, this could severely affect your bootup time if you are running on a potato.  
+- More Death Knight adjustments from playing through  
+    Now caching 'nextQuests' (from breadcrumbs)  
+    With Breadcrumbs considered collectible, accepting a Quest that will prevent a known prior Breadcrumb from being collected will cause a warning sound and chat alert to be presented  
+- Renamed ZA's file to sort by release order.  
+- Achievements weren't added until Wrath, so for Classic to use these files, they need to be dynamically ripped out.  
+- Removed all of the remaining unnecessary explicit color definitions from descriptions.  
+- Removed some more unnecessary explicit color definitions from various descriptions.  
+    Added information about Skyshards and associated them with Alani.  
+- Removed some unnecessary explicit color definitions from various descriptions... not even halfway done. Please do not do this.  
+- Fixed an issue where flight path data would not always attribute unobtainable data on refreshes after the first.  
+    Also no longer adding the reference to ATT > Flight Paths to the cache as it is unnecessary bloat, the source within the addon is the only important information.  
+- Fixed newly received artifacts being collected immediately  
+    More various Death Knight adjustments  
+- Fixed some Minilist logic when the current mapID has no data attached to it  
+    Fixed/added some Death Knight legion artifact quest chain info  
+    Added a sourceQuest to the Legion Death Knight Order Hall flight path  
+- Fixed 'Contains' on Artifacts to properly show the nested Variants  
+- Minor adjustments to Artifact search/display/tooltips  
+- Artifacts with a SourceID display proper tooltips now  
+    Underlight Angler shows the proper artifact variants in the Model preview  
+    Any SourceID can be visually previewed via the Model preview when manually searching for a Source (/att s:###)  
+    Fixed ItemID for a random Legion Leatherworking recipe  
+    Harvester saves Artifact sources separately from other sources since they use a different format  
+    Parser now reads and associates SourceIDs for ArtifactIDs  
+    Removed temporary artifact item caching logic now that all artifacts have their known SourceIDs  
+    Modified Harvester so it can re-harvest during the same game session using the same or new parameters  
+- Add Wago.io integration (#758)  
+- Minor Update to shop Icon  
+- Minor update to Item Sets icon  
+- Small event Icon update  
+    More to come  
+- Minor fixes and updated Timewalking  
+- Deleting old icon  
+- Deleting to make a small update  
+- Deleting to make a small update  
+- Deleting to make a small update  
+- Deleting to make a small update  
+- Xpac Features updated (Blue +)  
+- Deleting old icon  
+- Small update to Dugeon and Raids Icon (swirly portal)  
+- Deleting Old Icon  
+- New Zone Icon (mini Azeroth)  
+- Deleting Old Icon  
+- Added Revamped Xpac icons  
+- Deleting Old Xpac Icon  
+- Deleting Old Xpac Icon  
+- Deleting Old Xpac Icon  
+- Deleting Old Xpac Icon  
+- Deleting Old Xpac Icon  
+- Deleting Old Xpac Icon  
+- Deleting Old Xpac Icon  
+- Deleting Old Xpac Icon  
+- Deleting Old Xpac Icon  
+- Various minor updates  
+- Added more Necrolord crafting things  
+- Harvester now collects Artifact SourceIDs [WIP]  
+    Harvester now has an option to clear existing data when starting a new harvest (instead of always doing it)  
+    All Artifact ItemIDs are cached when data is loaded so that stand-alone Artifacts show their proper Model (i.e. Sourced Hidden Appearances) [Likely temporary work-around]  
+- Fixed comments on two Deadmines items  
+    Fixed modID on Cookie's Tenderizer  
+    Slight improvement to harvester performance  
+- Fixed dynamic flight path section sorting  
+- The Flight Paths dynamic section now fills itself with cached metadata.  
+- Added possible Source ID to group tooltips which do not have/generate their own Item link (i.e. artifact variants)  
+- Fixed Parser not actually including the offHand data for Artifacts as Items  
+- Removed lots of unused custom headers  
+- Fixed a couple weird artifacts which were nested inside of their hidden unlock Item under the main artifact category  
+    Added 'isOffHand' to the Parser/artifacts so we can store extra information about artifacts in order to generate the proper item link  
+    Fixed a lot of artifact logic so that the model shows properly for the current artifact variant  
+    Relative Artifact ItemID is cached properly so that artifacts listed elsewhere (hidden artifacts, etc.) will show their proper model with the tooltip [WIP]  
+- update zhCN by fredako (萌丶汉丶纸) (#749)  
+- Some manual fixes for object localization  
+- Localization fixes (#756)  
+- More Priest and Warlock Class Hall tidy up  
+- Rename BfA expansion features folder  
+- Move secrets in evironment to the step level from job level in release workflow  
+- Fixed a bug when trying to open a popout list using a sourceID which isn't in the DB  
+    Small logic adjustments to try and improve performance concerning items  
+    Small adjustments to try and improve performance when searching for item links  
+    Removed some unnecessary lines  
+- Converted Mount Collection refreshing into an After-Combat callback  
+    Improved update performance of checking all collected mounts (plus it should refresh correctly if learning multiple mounts during combat or within a single game frame)  
+- Converted the RefreshSaves coroutine into an After-Combat callback  
+- Fixed unnecessary yield which caused problems when a mapID can not be retrieved when changing zones  
+- Old goblin/gnome engineer quests are back to being removed.  
+- Updated more Warlock legion things  
+- Fixed Items from alt-collected Quests being treated as an available 'cost'  
+- Modified Faction objects to behave similar to other objects for being 'saved' in that it is based on the current character's actual reputation  
+- Fixed Callback functionality to actually utilize parameters properly  
+    Added an 'AfterCombatCallback' function so we don't need to create repeated combat-checking coroutines and can just register a function to process once combat ends  
+    Moved Quest completion checking into an After-Combat callback so that it does not trigger during combat and will only trigger once per frame  
+    Moved Location/Minilist refresh into an After-Combat callback  
+- another poa weekly  
+- Partially fixed some logic for groups which have a cost but can be alt-collected via altQuests  
+    Groups with a total that also have a cost can cause variable collection states based on update progress when refreshing or changing collection filters [WIP]  
+- another dredger butler quest  
+- Added/updated more Rogue legion quests  
+- Added Daisy pet.  Added details for several more warlock legion quests.  
+- Added all known Holidays to holiday icon table  
+- Added an Ember Court Dredger butler upgrade Item/Quest  
+- Another Ember Court HQT  
+- Added an Ember Court Restock quest  
+- Couple Sootible Hat HQTs  
+- Fixed Recipe SpellID's being applied sometimes to Items which match the name of the Recipe but do not contain a colon in the name (still blaming Blizzard for this travesty)  
+- Fixed auto-expanding of the minilist current difficulty  
+- Further clean up of Noblegarden + costs on some achievements (maybe it's all good now?)  
+- Further cleanup of Noblegarden + Quests  
+- Added logic to allow for custom Holiday icons in one place rather than all over Source files  
+    Added a Source constant for Noblegarden's unobtainable filter value and implemented in some places  
+    Converted all Noblegarden headers to use the consistent 'Holiday' group logic  
+    Cleaned up a lot of horribly weird mashup of items and achievements (we have better ways to handle this intention now) [WIP]  
+- Paladin Class Hall tidy up part 3  
+- more path of ascension and some other small covenant additions  
+- Modified LFR groupings for BFA:BoD to be uncollectible faction-specific achievement headers  
+- Removed remaining locailization comments  
+- Updated some Legion Rogue quests  
+- Some more Legion quest cleanup  
+- Adjusted the 'saved' property throughout to consistently represent a boolean value for whether the current character has completed a specific group, or is otherwise locked from completing a group  
+    Fixed not auto-expanding Saved groups  
+    Cleaned up some looped variable declarations  
+    Added lazy window update when accepting a quest so that the current quest indicator shows properly if necessary  
+- More Legion quest cleanup - fixed quests that were incorrectly marked as removed and/or alliance-only; updated providers, coords, formatting etc.  
+- a few night fae map names added in comments  
+- Undid last couple ICC changes; instead removed marks from common boss drops. Now you can see the marks you still need on each of the exact bosses that drop them, and since the marks are costs they contain the tier items linked to them from the vendors.  
+- Removed duplicate marks under several other ICC bosses that are already under Common Boss Drops  
+- Removed duplicate marks under Deathbringer Saurfang that are already under Common Boss Drops  
+    Added A Timely Summons from Northrend quest  
+- Updated more legion warlock quests  
+- Added a 'Star' indicator which shows next to any Quest row which is currently active for your character  
+- Modified some collection update logic to reduce lag when collecting certain types of Things  
+- Consolidated Flight Path collection logic further  
+- Fixed Refresh logic for Quest Chain Windows to ignore Account-Wide Quest collection (i.e. while moving/resizing the window)  
+    Fixed initial Update/Refresh for Quest Chain Windows not taking place  
+- Consolidated some Parser Merge logic  
+- Converted WOD crafted items to utilize 'cost' instead of being nested inside their upgrade item (which is irrelevant now anyway...)  
+- Added a few Warlock legion quests  
+- Added HQT for Unworthy Crown  
+- Added Unity quest  
+- Modified the Class Preset filters to include various filterIDs which are applied to normally non-collectible Things, so they do not inherently hide actual collectibles below themselves (i.e. Containers with Appearances)  
+    Modified the Update method to only propogate to child groups if it is itself visible (instead of inside out, due to our filtering not always being applied to the collectible nodes)  
+- unique mode fix for legendary from firelands  
+- Fixed missing Artifact account-wide data check (fixes #754)  
+- Fixed some filtering logic which was ignoring specific filters (fishing poles, etc.) and was always showing them (due to trying to work-around for something else previously...)  
+    Fixed group update logic to ensure visibility when sub-groups are supposed to be visible  
+- Fixed Tooltips not showing SourceID for Items with hidden SourceID's  
+    Fixed Things with hidden SourceID's not being applied/utilized properly (fishing poles, etc.)  
+- some NYI stuff  
+- some NYI items (maybe we get some info for those)  
+- tagged some pet battle quests as not repeatable even with party sync  
+- THE\_MAW map constant  
+- REVENDRETH map constant  
+- ARDENWEALD map constant  
+- fix for a NYI item & a class/profession book  
+- Formatting  
+- MALDRAXXUS map constant  
+- ORIBOS map constant  
+- SHADOWLANDS map constant  
+- BASTION map constant  
+- Formatting, CHAMBER\_OF\_HEART constants  
+- Paladin Class Hall tidy up pt 2  
+- Assign lvl 50 to all BfA raids  
+- more necrolord stuff  
+- Paladin Class Hall tidy up pt 1  
+- Removed weird achievement tagging from Juggling Torch which made it become permanently uncollectible  
+- HQT for Ember Court unlock  
+- Adjusted Update logic to process based on actual Windows instead of all existing data and cloned data during an entire game session  
+    Added/modified Callback functionality for self-calling function callbacks  
+    Collecting Pets no longer causes excess lag  
+- Fixed Debug mode from hiding Things  
+- Fixed a bug when switching between Unique and Comp modes.  
+- Fixed Parser logic from attempting to associate a recipeID to something that isn't an Item or is a Profession-specific Toy  
+    Removed printing of automated recipe associations--we need to move towards consolidated/automated information not into spreading the same information into thousands of new places  
+- Recipe fixes I  
+- Parser now outputs the missing Recipe Skill using the proper Skill constant string  
+- Converted one example Recipe  
+- Fixed Recipe syncing with their Items for approximately 1400 Items  
+    Parser now shows which ItemIDs need to have their proper recipe/skill information included in Source eventually  
+- mapped battle for stromgarde quests to their scenario  
+- adding missing object names so my loading screens aren't 3 minutes long on an ssd  
+    slumber emoji dagger emoji  
+- Mole machine tidy up  
+- Quests from darkal & put the entire black dagger questline together under kultiras (alliance) & zandalar (horde)  
+- The old ArtifactRelicItemLevels table has ilvls that are far too high to be possible. I'm going to allow this table to get wiped out with the transition.  
+- Added a note and customCollect  
+- Quest Chain Requirement popouts will now include the Item which starts the initial Quest of the sequence for clarity (if the Item has been Sourced)  
+    Removed QuestID from Lifewoven Bracelet as it is already used as a provider for that Quest  
+- Ember Court additions and clean up/speculation/organization  
+- Improved performance of tooltip rendering for Items  
+- Due to an annoying race condition involving PLAYER\_LOGIN, I've refactored the event into VARIABLES\_LOADED.  
+- Item icon IDs are also cached once retrieved  
+- Add two new object names  
+- Remove some redundant info from source files  
+- Added support for Square minimaps.  
+- sourcetree crashed  
+- some level tagging  
+- quest provided by darkal  
+- order change with pandaria files  
+- Now ignoring the sync tool's log file.  
+- Added some missing helper files.  
+- Refactored the ATT Sync Tool to work with the latest SavedVariables format standard.  
+- quests provided by darkal  
+- Pet Battle quests and altQuests  
+- Vulpera heritage tracking quest  
+- Added Swords Deck to DMF  
+- The CollectedSources table is now stored in the ATTAccountWideData table.  
+- All account wide collection tables other than CollectedSources are now stored in ATTAccountWideData.  
+- Sorting functionality is no longer recursive  
+- Commented out some update logic that doesn't pertain to Retail  
+- Adjusted IsNPCQuestGiver to match variable-naming and formatting and to only consider objects with questID for the requested NPC (#750)  
+    Removed regroup logic from IsNPCQuestGiver since 'visible' for groups is calculated based on active filters already  
+- Add IsNPCQuestGiver (#750)  
+    Added IsNPCQuestGiver function  
+    * Exposes a public method to query if the current character has any Quests available from the provided NPCID  
+- Modified Callback functionality so that a method can Callback itself  
+    Converted the CustomCollectibility table into the new ATTCharacterData format  
+    Fixed issue where CustomCollectibility attempts to process prior to having addon variables loaded  
+- added crs for final thread to gieger, some more necrolord stuff  
+- corrected a necrolord sq, added isdaily tag to a treasure chest in maldraxxus  
+- Refactored some unnecessary globals and fixed the AH Module.  
+- nyi items + parser  
+- fixing tahonta note  
+- bloop  
+- Fixed level on Ancient Tome of Teleport: Dalaran description  
+    Removed Legion intro quest description incorrect post squish  
+- Mark "Assault on Violet Hold: Into the Violet Hold" as removed in DH Class Hall  
+- Sync localization (#753)  
+- Localize "ItemFilter" window  
+- Fix percent notes on Vicious Saddle, fixes #751  
+- Removed all references to CollectedFactionBonusReputationPerCharacter as it was not saved, backed up, or even used. Good job, drunk Crieve!  
+- Removed a massive chunk of unused data in the saved variables pertaining to Source Sets, which are used to display an item's relevant Transmog Sets for other characters. The memory cost was not worth the feature.  
+- Slightly changed how Achievements are cached.  
+- Cleaned up how we save the Artifact Relic Level data used for calculating the usefulness of an Artifact Relic.  
+- Converted the AzeriteEssenceRanks table into the new ATTCharacterData format.  
+- Converted the Spells table into the new ATTCharacterData format.  
+- Converted the Buildings table into the new ATTCharacterData format.  
+- Converted the Factions table into the new ATTCharacterData format.  
+- Converted the Titles table into the new ATTCharacterData format.  
+- Converted the Flight Paths and Quests tables into the new ATTCharacterData format.  
+- Converted the Followers table into the new ATTCharacterData format.  
+- Converted the lockouts table to exist relative to the character in saved data.  
+- Fixed the account wide death counter.  
+- Adjusted how we cache Achievement collection data. (and where)  
+- starting on necrolord verification/updates  
+- Corrected a number of issues caused by my last OnUpdate modification.  
+    Also removed a ton of unnecessary in line localization comments. (please don't do this)  
+- Converted the Characters table into the ATTCharacterData table.  
+    Converted the Death Tracker to utilize the new Character Data table.  
+    The UpdateGroups pipeline has been modified to use the standard Update Loop rather than... whatever the hell it was doing instead.  
+- Dark Iron mole machines should now collect appropriately as 'Quests'  
+- Commented out the 'infintie source quest loop' check for now...  
+- some night fae quest/map adjustments  
+- Fix some localized strings  
+- scooted ensembles beneath arsenals in boralus, added a missing object for a night fae campaign quest  
+- The deaths tracker now hides the realm name for characters on your realm.  
+- Added the "ItemFilter" window. You can access it from this debug script: /script AllTheThings:GetWindow("ItemFilter"):Toggle()  
+- Updated Parser now properly writes OnUpdate.  
+- Fixed unobtainable status of 2 Exile's Reach FP's for Alliance  
+- Keys are now also removed from the filter list.  

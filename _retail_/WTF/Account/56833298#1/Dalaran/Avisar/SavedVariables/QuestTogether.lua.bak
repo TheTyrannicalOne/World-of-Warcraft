@@ -19,10 +19,10 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[53436] = {
@@ -36,10 +36,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[62801] = {
@@ -47,9 +47,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[57006] = {
@@ -79,12 +80,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[54438] = {
@@ -93,10 +92,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[36615] = {
@@ -106,16 +105,15 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[50599] = {
@@ -124,10 +122,11 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[56119] = {
@@ -173,16 +172,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
+			},
+		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
-			},
-		},
-		[56211] = {
-			["title"] = "Scrying Stones",
-			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[54485] = {
@@ -194,8 +194,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

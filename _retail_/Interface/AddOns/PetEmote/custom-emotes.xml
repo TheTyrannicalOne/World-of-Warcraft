@@ -15796,7 +15796,7 @@
                     <ChildNodes />
                   </EmoteNode>
                   <EmoteNode>
-                    <Text>her  ear.</Text>
+                    <Text>her ear.</Text>
                     <Properties>
                       <Condition>PlayerIsFemale</Condition>
                       <MustContinue>false</MustContinue>
@@ -15840,12 +15840,12 @@
                     <ChildNodes />
                   </EmoteNode>
                   <EmoteNode>
-                    <Text>him on the forehead.</Text>
+                    <Text>her on the forehead.</Text>
                     <Properties>
                       <Condition>PlayerIsFemale</Condition>
                       <MustContinue>false</MustContinue>
                       <Keywords>
-                        <Keyword>him</Keyword>
+                        <Keyword>her</Keyword>
                         <Keyword>the</Keyword>
                         <Keyword>forehead</Keyword>
                       </Keywords>

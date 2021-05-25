@@ -433,6 +433,7 @@ function PetEmote_DoEmote (text, ret)
 	end
 
 	if (PetEmote_HasPet()) then
+		local nameAdd, family
 
 		if (string.sub(UnitName("player"), string.len(UnitName("player"))) == "s") then
 			nameAdd = PetEmote_apos
@@ -593,13 +594,12 @@ end
 
 
 function PetEmote_GetRandomEmoteTree (treeType)
+	local tree
 
 	if (treeType == "COMBAT") then
 
 		if (PetEmote_CombatEmotes == nil) then
 			return nil
-		elseif (PetEmote_CombatEmotes[UnitName("pet")] ~= nil) then
-			tree = PetEmote_CombatEmotes[UnitName("pet")]
 		elseif (PetEmote_CombatEmotes[UnitCreatureFamily("pet")] ~= nil) then
 			tree = PetEmote_CombatEmotes[UnitCreatureFamily("pet")]
 		elseif (PetEmote_CombatEmotes[UnitCreatureFamily("pet") .. "-" .. PETEMOTE_LOCAL_LANG] ~= nil) then
@@ -612,8 +612,6 @@ function PetEmote_GetRandomEmoteTree (treeType)
 
 		if (PetEmote_FeedingEmotes == nil) then
 			return nil
-		elseif (PetEmote_FeedingEmotes[UnitName("pet")] ~= nil) then
-			tree = PetEmote_FeedingEmotes[UnitName("pet")]
 		elseif (PetEmote_FeedingEmotes[UnitCreatureFamily("pet")] ~= nil) then
 			tree = PetEmote_FeedingEmotes[UnitCreatureFamily("pet")]
 		elseif (PetEmote_FeedingEmotes[UnitCreatureFamily("pet") .. "-" .. PETEMOTE_LOCAL_LANG] ~= nil) then
@@ -626,8 +624,6 @@ function PetEmote_GetRandomEmoteTree (treeType)
 
 		if (PetEmote_DefaultEmotes == nil) then
 			return nil
-		elseif (PetEmote_DefaultEmotes[UnitName("pet")] ~= nil) then
-			tree = PetEmote_DefaultEmotes[UnitName("pet")]
 		elseif (PetEmote_DefaultEmotes[UnitCreatureFamily("pet")] ~= nil) then
 			tree = PetEmote_DefaultEmotes[UnitCreatureFamily("pet")]
 		elseif (PetEmote_DefaultEmotes[UnitCreatureFamily("pet") .. "-" .. PETEMOTE_LOCAL_LANG] ~= nil) then
@@ -985,7 +981,7 @@ function PetEmote_new_AddMessage (obj, message, r, g, b)
 
 	if (string.find(message, PetEmote_apos) ~= nil and string.find(message, PetEmote_nbsp) ~= nil) then
 		if (PetEmote_Settings["UseMask"] == true) then
-			s, e = string.find(message, PetEmote_nbsp)
+			local s, e = string.find(message, PetEmote_nbsp)
 			message = string.sub(message, s + 2)
 		end
 	end

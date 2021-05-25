@@ -1,0 +1,6 @@
+5/11 12:24:45.975  vendor: GenuineIntel
+5/11 12:24:45.975  branding:        Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz
+5/11 12:24:45.975  features: lahf64 cmpxchg16b sse sse2 sse3 ssse3 sse41 sse42 avx aesni clmul rdrand 
+5/11 12:24:45.975  sockets: 1
+5/11 12:24:45.975  cores: 6
+5/11 12:24:45.975  threads: 12

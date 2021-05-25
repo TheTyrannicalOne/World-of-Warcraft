@@ -1,16 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
-			},
-		},
-		[42234] = {
-			["title"] = "The Valarjar",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[48977] = {
@@ -35,10 +29,9 @@ QuestTogether = {
 				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[61981] = {
@@ -59,11 +52,6 @@ QuestTogether = {
 				"0/1 Information found", -- [1]
 			},
 		},
-		[28069] = {
-			["title"] = "Adventurers Wanted: Blackrock Depths",
-			["objectives"] = {
-			},
-		},
 		[46745] = {
 			["title"] = "Supplies From the Court",
 			["objectives"] = {
@@ -73,6 +61,12 @@ QuestTogether = {
 			["title"] = "Tirna Scithe: A Warning Silence",
 			["objectives"] = {
 				"1/1 Tred'ova slain", -- [1]
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[47129] = {
@@ -112,10 +106,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[44948] = {
@@ -130,9 +124,15 @@ QuestTogether = {
 				"1/1 Speak with Ve'nari", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
+			},
+		},
+		[62730] = {
+			["title"] = "Fruit of the Gods",
+			["objectives"] = {
+				"0/1 Ripe Purian", -- [1]
 			},
 		},
 		[48305] = {
@@ -165,18 +165,6 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
-			},
-		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
@@ -187,16 +175,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[31443] = {
-			["title"] = "Flying Tiger Gourami",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/1 Flying Tiger Gourami", -- [1]
-			},
-		},
-		[48642] = {
-			["title"] = "Argussian Reach",
-			["objectives"] = {
-				"2/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[57462] = {
@@ -205,22 +187,28 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
+		[42170] = {
+			["title"] = "The Dreamweavers",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+			},
+		},
 		[57403] = {
 			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[62730] = {
-			["title"] = "Fruit of the Gods",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/1 Ripe Purian", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[30567] = {
@@ -235,16 +223,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

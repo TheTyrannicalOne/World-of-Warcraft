@@ -5734,7 +5734,7 @@ PetEmote_DefaultEmotes["Carrion Bird"] = {
 								["keywords"] = { "his", "ear" },
 							},
 							[2] = {
-								["text"] = "her  ear.",
+								["text"] = "her ear.",
 								["condition"] = PlayerIsFemale,
 								["keywords"] = { "her", "ear" },
 							},
@@ -5750,9 +5750,9 @@ PetEmote_DefaultEmotes["Carrion Bird"] = {
 								["keywords"] = { "him", "the", "forehead" },
 							},
 							[2] = {
-								["text"] = "him on the forehead.",
+								["text"] = "her on the forehead.",
 								["condition"] = PlayerIsFemale,
-								["keywords"] = { "him", "the", "forehead" },
+								["keywords"] = { "her", "the", "forehead" },
 							},
 						},
 					},

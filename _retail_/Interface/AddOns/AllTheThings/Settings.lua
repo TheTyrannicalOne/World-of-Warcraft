@@ -164,6 +164,7 @@ local TooltipSettingsBase = {
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
 		["SourceLocations:Things"] = true,
+		["DropChances"] = true,
 		["SpecializationRequirements"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
@@ -470,7 +471,7 @@ end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode);
 	self:UpdateMode();
-	wipe(app.GetDataMember("CollectedSources"));
+	wipe(ATTAccountWideData.Sources);
 	app.RefreshCollections();
 end
 settings.ToggleCompletionistMode = function(self)
@@ -485,7 +486,7 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:SetCompletedGroups(true, true);
 		settings:SetCollectedThings(true, true);
 		if not self:Get("Thing:Transmog") then
-			wipe(app.GetDataMember("CollectedSources"));
+			wipe(ATTAccountWideData.Sources);
 			app.RefreshCollections();
 			debugMode = "R";
 		end
@@ -697,11 +698,6 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AchievementFilter = 4;
 	else
 		app.AchievementFilter = 13;
-	end
-	if self:Get("AccountWide:Recipes") then
-		app.RecipeChecker = app.GetDataSubMember;
-	else
-		app.RecipeChecker = app.GetTempDataSubMember;
 	end
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
@@ -1023,7 +1019,7 @@ function(self)
 	settings:Set("Thing:Transmog", self:GetChecked());
 	settings:UpdateMode();
 	if self:GetChecked() then
-		wipe(app.GetDataMember("CollectedSources"));
+		wipe(ATTAccountWideData.Sources);
 		app.RefreshCollections();
 	end
 	app:RefreshData(nil,nil,true);
@@ -1882,7 +1878,6 @@ f:SetWidth(80);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
-	local active, count = 0, 0;
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = true
 	end
@@ -1907,7 +1902,6 @@ f:SetWidth(100);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
-	local active, count = 0, 0;
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = false
 	end
@@ -2817,6 +2811,24 @@ function(self)
 end);
 ShowCompletedSourceLocationsForCheckBox:SetATTTooltip(L["COMPLETED_SOURCES_CHECKBOX_TOOLTIP"]);
 ShowCompletedSourceLocationsForCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "BOTTOMLEFT", 8, 4);
+
+local ShowDropChancesCheckbox = settings:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("DropChances"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("DropChances", self:GetChecked());
+end);
+ShowDropChancesCheckbox:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"]);
+ShowDropChancesCheckbox:SetPoint("TOP", ShowCompletedSourceLocationsForCheckBox, "TOP", 0, 0);
+ShowDropChancesCheckbox:SetPoint("LEFT", ShowModelsCheckBox, "LEFT", 0, 0);
 
 local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],
 function(self)

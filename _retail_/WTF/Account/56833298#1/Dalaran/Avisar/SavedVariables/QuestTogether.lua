@@ -19,10 +19,10 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[50601] = {
-			["title"] = "Storm's Wake",
+		[50600] = {
+			["title"] = "Order of Embers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
+				"0/4 Complete 4 world quests in Drustvar", -- [1]
 			},
 		},
 		[53436] = {
@@ -36,10 +36,9 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[62801] = {
@@ -47,10 +46,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[57006] = {
@@ -92,10 +91,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[36615] = {
@@ -105,15 +104,16 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[50599] = {
@@ -129,10 +129,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56119] = {
-			["title"] = "The Waveblade Ankoan",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -194,8 +194,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

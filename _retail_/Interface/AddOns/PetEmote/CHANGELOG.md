@@ -1,8 +1,17 @@
 # PetEmote
 
-## [v1.8.16](https://github.com/Ravendwyr/PetEmote/tree/v1.8.16) (2020-12-31)
-[Full Changelog](https://github.com/Ravendwyr/PetEmote/compare/v1.8.15...v1.8.16) [Previous Releases](https://github.com/Ravendwyr/PetEmote/releases)
+## [v1.8.17](https://github.com/Ravendwyr/PetEmote/tree/v1.8.17) (2021-05-21)
+[Full Changelog](https://github.com/Ravendwyr/PetEmote/commits/v1.8.17) [Previous Releases](https://github.com/Ravendwyr/PetEmote/releases)
 
+- Bump version number to 1.8.17.  
+- Add packager support for Wago Addons.  
+- Begin adding support for Burning Crusade Classic.  
+- Fix global namespace pollution.  
+- Don't use the pet's name to discern what species it is.  
+- Bump Interface number to 90005.  
+- Enabled Classic package creation.  
+- Minor emote fixes from Varethyn.  
+- Fixed WoWinterface packaging.  
 - Update issue config.  
 - Bump version number to 1.8.16.  
 - More emote updates. Thanks Varethyn!  
@@ -10,3 +19,37 @@
 - Bump Interface number to 90002.  
 - Don't include README or CHANGELOG in the package.  
 - Migrate from Travis CI to GitHub Actions.  
+- Update issue templates  
+- Update _config.yml  
+- Bump Interface number to 90001.  
+- More emote updates. Thanks Varethyn!  
+- Update README.md  
+- Bump Interface number to 90000.  
+- Bump version number to 1.8.15.  
+- More emote updates. Thanks Varethyn!  
+- Bump Interface number to 80300.  
+- Bump version number to 1.8.14.  
+- Create .pkgmeta  
+- Set theme jekyll-theme-leap-day  
+- Update README.md  
+- Updated issue config.  
+- Updated issue templates.  
+- Create FUNDING.yml  
+- Enabled Travis-CI packager.  
+- Bump version number to 1.8.13.  
+- Update README.md  
+- Fixed a broken Wolf emote.  
+- Fixed a broken Feathermane emote.  
+- Bump version number to 1.8.12.  
+- Fixed a taint issue with the Guild & Communities UI.  
+- Fixed a broken Lizard emote.  
+- Bump version number to 1.8.11.  
+- Bump Interface number to 80000.  
+- More emote updates. Thanks Varethyn!  
+- Fixed an error introduced in WoW 8.0.1.  
+- Bump version number to 1.8.10.  
+- More emote updates. Thanks Varethyn!  
+- Fixed an invalid chat event.  
+- Bump Interface number to 70300.  
+- Bump version number to 1.8.9.  
+- Bump Inferface number to 70000.  
