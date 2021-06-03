@@ -432,6 +432,12 @@ function ItemInfo.RegisterInfoChangeCallback(callback)
 	tinsert(private.infoChangeCallbacks, callback)
 end
 
+--- Sets whether or not query updates are paused on the item info DB
+-- @tparam boolean paused Whether or not query updates are paused
+function ItemInfo.SetQueryUpdatesPaused(paused)
+	private.db:SetQueryUpdatesPaused(paused)
+end
+
 --- Store the name of an item.
 -- This function is used to opportunistically populate the item cache with item names.
 -- @tparam string itemString The itemString
@@ -1168,6 +1174,10 @@ function private.StoreGetItemInfoInstant(itemString)
 		-- some items (such as i:37445) give a classId of -1 for some reason in which case we can look up the classId
 		if classId < 0 then
 			classId = ItemClass.GetClassIdFromClassString(classStr)
+			if not classId and TSM.IsWowClassic() then
+				-- this can happen for items which don't yet exist in classic (i.e. WoW Tokens)
+				return
+			end
 			assert(subClassStr == "")
 			subClassId = 0
 		end

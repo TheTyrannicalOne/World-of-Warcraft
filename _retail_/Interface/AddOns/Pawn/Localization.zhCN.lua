@@ -24,7 +24,7 @@ PawnLocal =
 	["FailedToGetUnenchantedItemMessage"] = "获取基本物品数值失败，这可能缘于一次模组冲突。",
 	["FoundStatMessage"] = "   %d %s",
 	["GemList2"] = "%s 或 %s",
-	["GemListMany"] = "%d 提升潜力(点击Pawn按钮查看详细)",
+	["GemListMany"] = "(点击Pawn按钮查看详细)",
 	["GenericGemLink"] = "|Hitem:%d|h[宝石 %d]|h",
 	["GenericGemName"] = "(宝石 %d)",
 	["HiddenScalesHeader"] = "其它属性权重",
@@ -118,6 +118,7 @@ PawnLocal =
 		["Mail"] = "锁甲",
 		["MailInfo"] = "物品类型为锁甲。",
 		["MasteryInfo"] = "精通等级，从你投入点数最多的天赋树中获得的奖励。",
+		["MetaSocketEffectInfo"] = "元宝石特效。 为元宝石的非属性部分分配的点数（例如，“小跑速度增加”或“1% 法术反射”）。",
 		["MinorStats"] = "副属性",
 		["MovementSpeedInfo"] = "移动速度，使你的角色跑得更快。",
 		["Mp5"] = "每5秒回蓝",
@@ -275,6 +276,7 @@ PawnLocal =
 		["Crossbow"] = "^弩$",
 		["Dagger"] = "^匕首$",
 		["DefenseRating"] = "^装备： 防御等级提高#。$",
+		["DefenseRating2"] = "^UNUSED$",
 		["DefenseRatingSimple"] = "^%+?# 防御等级$",
 		["DefenseSkill"] = "^装备： ?防御技能提高#点。$",
 		["DefenseSkillSimple"] = "^%+?# 防御$",
@@ -300,6 +302,7 @@ PawnLocal =
 		["Equip"] = "装备：",
 		["ExpertiseRating"] = "^装备： 使你的精准等级提高#点。$",
 		["FeralAp"] = "^装备： ?在猎豹、熊和巨熊形态下的攻击强度提高#点。$",
+		["FeralApMoonkin"] = "^装备： 在猎豹、熊、巨熊和枭兽形态下的攻击强度提高#点。$",
 		["FireResist"] = "^%+?# 火焰抗性$",
 		["FireSpellDamage"] = "^%+# 火焰法术伤害$",
 		["FireSpellDamage2"] = "^装备： ?提高火焰法术和效果所造成的伤害，最多#点。$",
@@ -317,6 +320,7 @@ PawnLocal =
 		["HaventCollectedAppearance"] = "^你尚未收藏过此外观$",
 		["Healing"] = "^%+# 治疗量$",
 		["Healing2"] = "^装备： ?提高法术所造成的治疗效果，最多#点。$",
+		["Healing3"] = "^%+# 治疗$",
 		["HeirloomLevelRange"] = "^需要等级 %d+ 到 (%d+)",
 		["HeirloomXpBoost"] = "^装备： ?获得的经验值提高",
 		["HeirloomXpBoost2"] = "^UNUSED$",
@@ -390,10 +394,13 @@ PawnLocal =
 		["SpellDamage3"] = "^装备： ?提高法术所造成的治疗效果，最多#点。$",
 		["SpellDamage4"] = "^装备： ?使治疗法术和效果所回复的生命值提高#点。$",
 		["SpellDamageAndHealing"] = "^装备： 使法术治疗提高最多#点，法术伤害提高最多#点。$",
+		["SpellDamageAndHealingEnchant"] = "^UNUSED$",
+		["SpellDamageAndHealingShort"] = "^%+# 法术治疗，%+# 法术伤害$",
 		["SpellHasteRating"] = "^装备： 法术急速等级提高#点。$",
 		["SpellHasteRatingShort"] = "^%+?# 法术急速等级$",
 		["SpellHit"] = "^装备： ?使你的法术击中敌人的几率提高#%%。$",
 		["SpellHitRating"] = "^装备： 使你的法术命中等级提高#。$",
+		["SpellHitRating2"] = "^UNUSED$",
 		["SpellHitRatingShort"] = "^%+?# 法术命中等级$",
 		["SpellPenetration"] = "^装备： 使你的法术穿透提高#。$",
 		["SpellPenetrationShort"] = "^%+?# 法术穿透$",
@@ -662,7 +669,7 @@ Pawn插件默认已经参考AskMrRobot给所有职业的专精建立了标准评
 	}
 }
 
--- Special case: weapon actually use different text on live vs. classic. Function of Intellect is different too.
+-- Special case: wands use different text on Classic.
 -- So, patch things up here.
 if VgerCore.IsClassic or VgerCore.IsBurningCrusade then
 
@@ -682,8 +689,6 @@ if VgerCore.IsClassic or VgerCore.IsBurningCrusade then
 		["WeaponDamageNatureExact"] = "^%+?# 自然伤害$",
 		["WeaponDamageShadow"] = "^%+?# %- #暗影伤害$",
 		["WeaponDamageShadowExact"] = "^%+?# 暗影伤害$",
-
-		["IntellectInfo"] = "智力 - 增加法术爆击几率, 更快地提高武器熟练度.",
 	}
 
 	local Key, NewString
@@ -698,6 +703,7 @@ if VgerCore.IsBurningCrusade then
 	{
 		["Block"] = "^#格挡$",
 		["BlockValue"] = "^装备： 使你的盾牌格挡值提高#点。$",
+		["SpellHit"] = "^装备： 法术命中等级提高#点。$",
 	}
 
 	local Key, NewString

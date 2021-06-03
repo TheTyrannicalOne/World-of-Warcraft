@@ -1,5 +1,7 @@
-## v4.10.39 Changes
+## v4.10.41 Changes
 
-* [BCC] Fixed error when creating/updating the TSM macro
+* [BCC] Fixed Master professions not loading
+* [BCC] Honor support for vendoring
+* [BCC] Updated disenchanting/prospecting info
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

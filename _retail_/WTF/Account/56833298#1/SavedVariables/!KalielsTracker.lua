@@ -94,17 +94,17 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[44989] = {
-						["title"] = "Raising Your Sharptalon",
-						["zone"] = "Battle Pets",
-						["level"] = 50,
-						["startMapID"] = 0,
-						["isCalling"] = false,
-					},
 					[32806] = {
 						["title"] = "The King and the Council",
 						["zone"] = "Pandaren Campaign",
 						["level"] = 35,
+						["startMapID"] = 0,
+						["isCalling"] = false,
+					},
+					[44989] = {
+						["title"] = "Raising Your Sharptalon",
+						["zone"] = "Battle Pets",
+						["level"] = 50,
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
@@ -208,16 +208,13 @@ KalielsTrackerDB = {
 		["Bathal - Argent Dawn"] = {
 			["collapsed"] = true,
 		},
-		["Tynster - Dalaran"] = {
-			["collapsed"] = true,
-		},
-		["Tyranasticus - Zul'jin"] = {
-			["collapsed"] = true,
-		},
 		["Illingrath - Dalaran"] = {
 			["quests"] = {
 				["num"] = 22,
 			},
+		},
+		["Tyranasticus - Zul'jin"] = {
+			["collapsed"] = true,
 		},
 		["Brotus - Argent Dawn"] = {
 			["quests"] = {
@@ -280,18 +277,18 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[14424] = {
-						["state"] = "complete",
-						["title"] = "Need More Science",
-						["zone"] = "Azshara",
-						["level"] = 21,
-						["startMapID"] = 0,
-						["isCalling"] = false,
-					},
 					[13618] = {
 						["state"] = "complete",
 						["title"] = "Find Gorat!",
 						["zone"] = "Ashenvale",
+						["level"] = 21,
+						["startMapID"] = 0,
+						["isCalling"] = false,
+					},
+					[14424] = {
+						["state"] = "complete",
+						["title"] = "Need More Science",
+						["zone"] = "Azshara",
 						["level"] = 21,
 						["startMapID"] = 0,
 						["isCalling"] = false,
@@ -338,9 +335,10 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[13612] = {
-						["title"] = "Mor'shan Defense",
-						["zone"] = "Ashenvale",
+					[28510] = {
+						["state"] = "complete",
+						["title"] = "Warchief's Command: Feralas!",
+						["zone"] = "Feralas",
 						["level"] = 21,
 						["startMapID"] = 0,
 						["isCalling"] = false,
@@ -373,10 +371,9 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[28510] = {
-						["state"] = "complete",
-						["title"] = "Warchief's Command: Feralas!",
-						["zone"] = "Feralas",
+					[13612] = {
+						["title"] = "Mor'shan Defense",
+						["zone"] = "Ashenvale",
 						["level"] = 21,
 						["startMapID"] = 0,
 						["isCalling"] = false,
@@ -398,6 +395,9 @@ KalielsTrackerDB = {
 				},
 				["num"] = 24,
 			},
+		},
+		["Tynster - Dalaran"] = {
+			["collapsed"] = true,
 		},
 		["Durlok - Black Dragonflight"] = {
 			["quests"] = {
@@ -562,19 +562,20 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[49133] = {
-						["title"] = "Antorus, the Burning Throne: The Heart of Argus",
-						["zone"] = "Antorus, the Burning Throne",
+					[40329] = {
+						["title"] = "Battle Pet Tamers: Warlords",
+						["zone"] = "Battle Pets",
 						["level"] = 60,
 						["isCalling"] = false,
-						["startMapID"] = 0,
+						["startMapID"] = 590,
 					},
-					[48642] = {
-						["title"] = "Argussian Reach",
-						["zone"] = "Mac'Aree",
+					[60267] = {
+						["state"] = "complete",
+						["title"] = "Prison of the Forgotten",
+						["zone"] = "Venthyr Campaign",
 						["level"] = 60,
-						["startMapID"] = 0,
 						["isCalling"] = false,
+						["startMapID"] = 0,
 					},
 					[45381] = {
 						["title"] = "The Nighthold: Talisman of the Shal'dorei",
@@ -583,16 +584,17 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[45382] = {
-						["title"] = "The Nighthold: Talisman of the Shal'dorei",
-						["zone"] = "The Nighthold",
+					[49133] = {
+						["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+						["zone"] = "Antorus, the Burning Throne",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[45383] = {
-						["title"] = "The Nighthold: Talisman of the Shal'dorei",
-						["zone"] = "The Nighthold",
+					[62371] = {
+						["state"] = "complete",
+						["title"] = "Tirna Scithe: A Warning Silence",
+						["zone"] = "Dungeon",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -618,13 +620,12 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[60267] = {
-						["state"] = "complete",
-						["title"] = "Prison of the Forgotten",
-						["zone"] = "Venthyr Campaign",
+					[48642] = {
+						["title"] = "Argussian Reach",
+						["zone"] = "Mac'Aree",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
 					[24756] = {
 						["title"] = "Blood Infusion",
@@ -640,12 +641,12 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 875,
 					},
-					[57919] = {
-						["title"] = "An Abuse of Power",
-						["zone"] = "Revendreth",
-						["level"] = 60,
-						["isCalling"] = false,
+					[50603] = {
+						["title"] = "Voldunai",
+						["zone"] = "Vol'dun",
+						["level"] = 50,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
 					[48305] = {
 						["title"] = "The Burning Coven",
@@ -675,12 +676,12 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[50603] = {
-						["title"] = "Voldunai",
-						["zone"] = "Vol'dun",
-						["level"] = 50,
-						["startMapID"] = 0,
+					[57919] = {
+						["title"] = "An Abuse of Power",
+						["zone"] = "Revendreth",
+						["level"] = 60,
 						["isCalling"] = false,
+						["startMapID"] = 0,
 					},
 					[61981] = {
 						["title"] = "Replenish the Reservoir",
@@ -710,20 +711,19 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 76,
 					},
-					[62371] = {
-						["state"] = "complete",
-						["title"] = "Tirna Scithe: A Warning Silence",
-						["zone"] = "Dungeon",
+					[45383] = {
+						["title"] = "The Nighthold: Talisman of the Shal'dorei",
+						["zone"] = "The Nighthold",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[40329] = {
-						["title"] = "Battle Pet Tamers: Warlords",
-						["zone"] = "Battle Pets",
+					[45382] = {
+						["title"] = "The Nighthold: Talisman of the Shal'dorei",
+						["zone"] = "The Nighthold",
 						["level"] = 60,
 						["isCalling"] = false,
-						["startMapID"] = 590,
+						["startMapID"] = 0,
 					},
 				},
 			},
@@ -731,18 +731,13 @@ KalielsTrackerDB = {
 		["Brewnheimer - Darkspear"] = {
 			["collapsed"] = true,
 		},
-		["Varlouris - Dalaran"] = {
-			["quests"] = {
-				["num"] = 20,
-			},
+		["Shimzo - Zul'jin"] = {
+			["collapsed"] = true,
 		},
 		["Gillbourn - Runetotem"] = {
 			["collapsed"] = true,
 		},
-		["Okona - Zul'jin"] = {
-			["quests"] = {
-				["num"] = 2,
-			},
+		["Tinkster - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Shathiel - Darkspear"] = {
@@ -997,9 +992,10 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[13871] = {
-						["title"] = "Security!",
-						["zone"] = "Ashenvale",
+					[28548] = {
+						["state"] = "complete",
+						["title"] = "Warchief's Command: Desolace!",
+						["zone"] = "Desolace",
 						["level"] = 13,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -1011,10 +1007,9 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[28548] = {
-						["state"] = "complete",
-						["title"] = "Warchief's Command: Desolace!",
-						["zone"] = "Desolace",
+					[13871] = {
+						["title"] = "Security!",
+						["zone"] = "Ashenvale",
 						["level"] = 13,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -1038,11 +1033,16 @@ KalielsTrackerDB = {
 				["num"] = 22,
 			},
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
+			["quests"] = {
+				["num"] = 2,
+			},
 			["collapsed"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
-			["collapsed"] = true,
+		["Varlouris - Dalaran"] = {
+			["quests"] = {
+				["num"] = 20,
+			},
 		},
 		["Beeronimo - Dalaran"] = {
 			["collapsed"] = true,
@@ -1075,7 +1075,7 @@ KalielsTrackerDB = {
 		["Mulmok - Argent Dawn"] = "Default",
 		["Fantastiburo - Argent Dawn"] = "Default",
 		["Serbitechna - Darkspear"] = "Default",
-		["Claugh - Runetotem"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Tyriinid - Dalaran"] = "Default",
 		["Dialdaas - Darkspear"] = "Default",
 		["Avisar - Dalaran"] = "Default",
@@ -1086,7 +1086,7 @@ KalielsTrackerDB = {
 		["Shanyt - Argent Dawn"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
@@ -1106,11 +1106,11 @@ KalielsTrackerDB = {
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
 		["Beeronimo - Dalaran"] = "Default",
 		["Migimong - Runetotem"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Claugh - Runetotem"] = "Default",
 		["Narisaric - Dalaran"] = "Default",
 	},
 	["global"] = {

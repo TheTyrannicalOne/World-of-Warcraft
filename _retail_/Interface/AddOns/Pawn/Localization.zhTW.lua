@@ -24,7 +24,7 @@ PawnLocal =
 	["FailedToGetUnenchantedItemMessage"] = "   獲取基本物品數值失敗.  這可能緣於一次模組衝突.",
 	["FoundStatMessage"] = "   %d %s",
 	["GemList2"] = "%s 或 %s",
-	["GemListMany"] = "%d 提升潛力(點擊Pawn按鈕查看詳細)",
+	["GemListMany"] = "(點擊Pawn按鈕查看詳細)",
 	["GenericGemLink"] = "|Hitem:%d|h[寶石 %d]|h",
 	["GenericGemName"] = "(寶石 %d)",
 	["HiddenScalesHeader"] = "其它權重",
@@ -120,6 +120,7 @@ PawnLocal =
 		["Mail"] = "鎖甲",
 		["MailInfo"] = "此物若為鎖甲，則增計多少分數。",
 		["MasteryInfo"] = "精通: 提高你主天賦的特有加成。",
+		["MetaSocketEffectInfo"] = "元寶石特效。 為元寶石的非屬性部分分配的點數（例如，“小跑速度增加”或“1% 法術反射”）。",
 		["MinorStats"] = "其他",
 		["MovementSpeedInfo"] = "移動速度: 提高你角色的移動速度",
 		["Mp5"] = "法力每5秒",
@@ -278,6 +279,7 @@ PawnLocal =
 		["Crossbow"] = "^弩$",
 		["Dagger"] = "^匕首$",
 		["DefenseRating"] = "^裝備: 防禦等級提高#點。$",
+		["DefenseRating2"] = "^裝備: 提高#點防禦。$",
 		["DefenseRatingSimple"] = "^%+?#防禦等級$",
 		["DefenseSkill"] = "^Equip: Increased Defense %+#%.$",
 		["DefenseSkillSimple"] = "^%+?耐力$",
@@ -303,6 +305,7 @@ PawnLocal =
 		["Equip"] = "裝備: ",
 		["ExpertiseRating"] = "^裝備: 提高#點熟練。$",
 		["FeralAp"] = "^裝備： 在獵豹、熊或巨熊形態下的攻擊強度提高#點。$",
+		["FeralApMoonkin"] = "^裝備: 在獵豹、熊、巨熊和梟獸形態下的攻擊強度提高#點。$",
 		["FireResist"] = "^%+?# 火焰抗性$",
 		["FireSpellDamage"] = "^%+# 火焰法術傷$",
 		["FireSpellDamage2"] = "^裝備： 提高火焰法術和效果所造成的傷害，最多#點。$",
@@ -321,6 +324,7 @@ PawnLocal =
 		["HaventCollectedAppearance"] = "^你尚未收藏過此外觀$",
 		["Healing"] = "^%+# 治療法術$",
 		["Healing2"] = "^裝備： 提高法術和魔法效果所造成的治療效果，最多#點。$",
+		["Healing3"] = "^%+#治療$",
 		["HeirloomLevelRange"] = "^需要等級(%d+)至(%d+)%((%d+)%)",
 		["HeirloomXpBoost"] = "^裝備: .*獲得的經驗值提高%d+%%。",
 		["HeirloomXpBoost2"] = "^UNUSED$",
@@ -394,10 +398,13 @@ PawnLocal =
 		["SpellDamage3"] = "^裝備: 使所有法術和魔法效果所造成的傷害和治療效果提高最多#點。$",
 		["SpellDamage4"] = "^UNUSED$",
 		["SpellDamageAndHealing"] = "^果提高最多#點，法術傷害提高最多#點。$",
+		["SpellDamageAndHealingEnchant"] = "^%+#治療和%+#法術傷害",
+		["SpellDamageAndHealingShort"] = "^%+#治療法術和%+#傷害法術",
 		["SpellHasteRating"] = "^裝備: 提高#點法術加速。$",
 		["SpellHasteRatingShort"] = "^%+?#法術加速等級$",
 		["SpellHit"] = "^裝備： 使你的法術擊中敵人的機率提高#%%。$",
 		["SpellHitRating"] = "^裝備: 使你的法術命中等級提高#點。$",
+		["SpellHitRating2"] = "^裝備: 提高#點法術命中。$",
 		["SpellHitRatingShort"] = "^%+?#法術命中等級$",
 		["SpellPenetration"] = "^裝備: 使你的法術穿透力提高#點。$",
 		["SpellPenetrationShort"] = "^%+?#法術穿透力$",
@@ -687,7 +694,7 @@ WoW中所有的物件都有個ID，通常只有寫插件的人才需要這些資
 
 -- Special case: weapons actually use different text on live versus classic.
 -- So, patch things up here.
-if VgerCore.IsClassic or VgerCore.IsBurningCrusade then
+if VgerCore.IsClassic then
 
 	local TooltipParsing_Classic =
 	{
@@ -716,7 +723,32 @@ if VgerCore.IsClassic or VgerCore.IsBurningCrusade then
 end
 
 if VgerCore.IsBurningCrusade then
-	PawnLocal.TooltipParsing.BlockValue = "^裝備: 使你盾牌的格擋值提高#點。$"
+
+	local TooltipParsing_BurningCrusade =
+	{
+		["BlockValue"] = "^裝備: 使你盾牌的格擋值提高#點。$",
+		["Dps"] = "^%（每秒傷害#%）$",
+		["WeaponDamage"] = "^# %- #傷害$",
+		["WeaponDamageArcane"] = "^%+?# %- #秘法傷害$",
+		["WeaponDamageArcaneExact"] = "^%+?#秘法傷害$",
+		["WeaponDamageEquip"] = "^裝備: %+?#武器傷害。$",
+		["WeaponDamageExact"] = "^%+?#傷害$",
+		["WeaponDamageFire"] = "^%+?# %- #火焰傷害$",
+		["WeaponDamageFireExact"] = "^%+?#火焰傷害$",
+		["WeaponDamageFrost"] = "^%+?# %- #冰霜傷害$",
+		["WeaponDamageFrostExact"] = "^%+?#冰霜傷害$",
+		["WeaponDamageHoly"] = "^%+?# %- #神聖傷害$",
+		["WeaponDamageHolyExact"] = "^%+?#神聖傷害$",
+		["WeaponDamageNature"] = "^%+?# %- #自然傷害$",
+		["WeaponDamageNatureExact"] = "^%+?#自然傷害$",
+		["WeaponDamageShadow"] = "^%+?# %- #暗影傷害$",
+		["WeaponDamageShadowExact"] = "^%+?#暗影傷害$",
+	}
+
+	local Key, NewString
+	for Key, NewString in pairs(TooltipParsing_BurningCrusade) do
+		PawnLocal.TooltipParsing[Key] = NewString
+	end	
 end
 
 PawnLocal.Specs =
