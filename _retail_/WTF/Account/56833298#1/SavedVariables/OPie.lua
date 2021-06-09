@@ -35,7 +35,7 @@ OneRing_Config = {
 				["Utility11"] = "ALT-E",
 				["Mounts61"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
-				["Utility8"] = "ALT-E",
+				["Utility9"] = "ALT-E",
 				["Utility5"] = "ALT-E",
 				["Utility3"] = "ALT-E",
 				["Mounts6"] = "ALT-Q",
@@ -50,7 +50,7 @@ OneRing_Config = {
 				["Mounts2"] = "ALT-Q",
 				["Mounts15"] = "ALT-Q",
 				["Mounts4"] = "ALT-Q",
-				["Utility9"] = "ALT-E",
+				["Utility8"] = "ALT-E",
 			},
 		},
 	},
@@ -149,10 +149,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["Utility9"] = {
 				{
@@ -208,10 +208,10 @@ OneRing_Config = {
 					["id"] = 1459,
 					["sliceToken"] = "OPCMTn",
 				}, -- [5]
-				["limit"] = "MAGE",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "MAGE",
 			},
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,

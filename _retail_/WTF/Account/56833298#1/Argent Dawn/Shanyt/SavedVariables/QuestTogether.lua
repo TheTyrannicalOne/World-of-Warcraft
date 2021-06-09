@@ -29,6 +29,12 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+			["objectives"] = {
+				"3/4 Fragment of the Guardian's Seal", -- [1]
+			},
+		},
 		[57563] = {
 			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
@@ -95,16 +101,28 @@ QuestTogether = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[45383] = {
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[42233] = {
+			["title"] = "Highmountain Tribes",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 		[44948] = {
@@ -145,16 +163,14 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[46748] = {
+			["title"] = "Supplies From the Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[31891] = {
@@ -167,19 +183,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-			},
-		},
-		[46748] = {
-			["title"] = "Supplies From the Nightfallen",
-			["objectives"] = {
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 		[57462] = {
@@ -188,28 +195,21 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
-			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
-			},
-		},
 		[57403] = {
 			["title"] = "Reconstructing \"Fear and Flesh\"",
 			["objectives"] = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[30567] = {
@@ -224,10 +224,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[45381] = {
+		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 	},

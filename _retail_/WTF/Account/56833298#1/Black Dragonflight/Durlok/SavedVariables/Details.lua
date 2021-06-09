@@ -21,7 +21,7 @@ _detalhes_database = {
 		["pos"] = {
 		},
 	},
-	["last_version"] = "v9.0.5.8406",
+	["last_version"] = "9.0.58516",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -143,7 +143,7 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = 1.52587890625e-05,
+			["use_spark"] = true,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -153,7 +153,6 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -165,10 +164,11 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["font_size"] = 10,
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_spark"] = true,
+			["y"] = 1.52587890625e-05,
 			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
@@ -201,7 +201,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["last_day"] = "16",
+	["last_day"] = "08",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -213,7 +213,7 @@ _detalhes_database = {
 	["combat_id"] = 0,
 	["savedStyles"] = {
 	},
-	["combat_counter"] = 34,
+	["combat_counter"] = 42,
 	["force_font_outline"] = "",
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -412,10 +412,10 @@ _detalhes_database = {
 		}, -- [2]
 	},
 	["character_data"] = {
-		["logons"] = 17,
+		["logons"] = 21,
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1622480053,
+		["nextreset"] = 1624138045,
 		["last_version"] = 14,
 	},
 	["announce_cooldowns"] = {
@@ -435,6 +435,6 @@ _detalhes_database = {
 	},
 	["cached_specs"] = {
 		["Player-96-0CBEA15E"] = 104,
-		["Player-104-0BB04725"] = 264,
+		["Player-67-0DE6EEF2"] = 65,
 	},
 }

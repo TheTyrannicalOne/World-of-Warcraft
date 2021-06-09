@@ -23,8 +23,8 @@ FishingBuddy_Info = {
 	["DataFish"] = 0,
 	["KnownZones"] = {
 		[1527] = "Uldum",
-		[1355] = "Chitterspine Caverns",
 		[534] = "Hellfire Citadel",
+		[1355] = "Chitterspine Caverns",
 		[641] = "Thas'talah Basin",
 	},
 	["FishingHoles"] = {
@@ -36,10 +36,10 @@ FishingBuddy_Info = {
 			[27422] = 1,
 		},
 		[534001] = {
-			[118391] = 1,
-			[127759] = 1,
 			[127994] = 3,
+			[127759] = 1,
 			[127991] = 8,
+			[118391] = 1,
 		},
 		[534002] = {
 			[127991] = 3,
@@ -87,18 +87,18 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 133923,
 		},
+		[127759] = {
+			["color"] = "ff0070dd",
+			["enUS"] = "Felblight",
+			["quality"] = 3,
+			["texture"] = 576311,
+		},
 		[134568] = {
 			["enUS"] = "Huge Mossgill Perch",
 			["canopen"] = false,
 			["texture"] = 350868,
 			["quest"] = true,
 			["quality"] = 1,
-		},
-		[127759] = {
-			["color"] = "ff0070dd",
-			["enUS"] = "Felblight",
-			["quality"] = 3,
-			["texture"] = 576311,
 		},
 		[127994] = {
 			["color"] = "ff0070dd",

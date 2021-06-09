@@ -2,32 +2,42 @@
 BFAInvasionTimerDB = {
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
+		["Armaguth - Zul'jin"] = "Default",
+		["Charbeatic - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Banuumine - Zul'jin"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Tynkster - Dalaran"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Avisar - Dalaran"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
-		["Thorinbane - Dalaran"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Laymonan - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Tynkster - Dalaran"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
+		["Abyronterner - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+		["Jasmoney - Zul'jin"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
+		["Mandles - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -41,6 +51,6 @@ BFAInvasionTimerDB = {
 	},
 }
 BFAInvasionData = {
-	1622246405, -- [1]
-	1, -- [2]
+	1623135612, -- [1]
+	2, -- [2]
 }

@@ -1,25 +1,10 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
 	["KOSData"] = {
 	},
+	["IgnoreData"] = {
+	},
 	["PlayerData"] = {
-		["Freezerman-Mannoroth"] = {
-			["mapID"] = 10,
-			["zone"] = "Northern Barrens",
-			["mapY"] = 0.31,
-			["class"] = "ROGUE",
-			["isEnemy"] = true,
-			["mapX"] = 0.68,
-			["isGuess"] = true,
-			["race"] = "Night Elf",
-			["subZone"] = "",
-			["level"] = 120,
-			["time"] = 1588564465,
-			["name"] = "Freezerman-Mannoroth",
-		},
 		["Wisperingi-Stormrage"] = {
 			["mapID"] = 10,
 			["guild"] = "timeless endeavour",
@@ -29,12 +14,13 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["loses"] = 1,
 			["mapX"] = 0.66,
-			["time"] = 1588564675,
+			["name"] = "Wisperingi-Stormrage",
 			["race"] = "Night Elf",
 			["subZone"] = "",
 			["level"] = 120,
 			["isGuess"] = false,
-			["name"] = "Wisperingi-Stormrage",
+			["time"] = 1588564675,
 		},
 	},
+	["version"] = "1.1",
 }

@@ -1,8 +1,9 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
+	},
+	["KOSData"] = {
 	},
 	["PlayerData"] = {
 		["Pierunea-Gilneas"] = {
@@ -307,5 +308,4 @@ SpyPerCharDB = {
 			["loses"] = 1,
 		},
 	},
-	["version"] = "1.1",
 }

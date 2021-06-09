@@ -2,68 +2,98 @@
 HandyNotes_WarfrontTreasuresDB = {
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Armaguth - Zul'jin"] = "Armaguth - Zul'jin",
+		["Charbeatic - Zul'jin"] = "Charbeatic - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Banuumine - Zul'jin"] = "Banuumine - Zul'jin",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Dachas - Zul'jin"] = "Dachas - Zul'jin",
+		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
 		},
-		["Tyranasticus - Zul'jin"] = {
+		["Armaguth - Zul'jin"] = {
 		},
-		["Illingrath - Dalaran"] = {
-		},
-		["Brotus - Argent Dawn"] = {
-		},
-		["Tyrannithal - Argent Dawn"] = {
-		},
-		["Kotalkhan - Zul'jin"] = {
-		},
-		["Kelvalatar - Dalaran"] = {
-		},
-		["Shimzo - Zul'jin"] = {
-		},
-		["Okona - Zul'jin"] = {
-		},
-		["Jingojaggot - Zul'jin"] = {
+		["Charbeatic - Zul'jin"] = {
 		},
 		["Shaekhan - Zul'jin"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Shanyt - Zul'jin"] = {
 		},
 		["Avisar - Dalaran"] = {
 		},
-		["Shanyt - Zul'jin"] = {
+		["Banuumine - Zul'jin"] = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
 		["Shaekhan - Argent Dawn"] = {
 		},
 		["Ruffinton - Dalaran"] = {
+		},
+		["Malivant - Dalaran"] = {
+		},
+		["Durlok - Black Dragonflight"] = {
+		},
+		["Dachas - Zul'jin"] = {
+		},
+		["Tyranasticus - Zul'jin"] = {
+		},
+		["Illingrath - Dalaran"] = {
+		},
+		["Tyrannithal - Argent Dawn"] = {
+		},
+		["Zulbathal - Zul'jin"] = {
+		},
+		["Kelvalatar - Dalaran"] = {
+		},
+		["Banesmuncy - Zul'jin"] = {
+		},
+		["Shimzo - Zul'jin"] = {
+		},
+		["Guufnah - Zul'jin"] = {
+		},
+		["Okona - Zul'jin"] = {
+		},
+		["Brotus - Argent Dawn"] = {
+		},
+		["Jingojaggot - Zul'jin"] = {
+		},
+		["Kotalkhan - Zul'jin"] = {
+		},
+		["Laymonan - Zul'jin"] = {
+		},
+		["Shanyt - Argent Dawn"] = {
 		},
 		["Vadder - Argent Dawn"] = {
 		},
@@ -75,17 +105,17 @@ HandyNotes_WarfrontTreasuresDB = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Malivant - Dalaran"] = {
-		},
-		["Durlok - Black Dragonflight"] = {
-		},
 		["Fantastiburo - Zul'jin"] = {
+		},
+		["Abyronterner - Zul'jin"] = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Jasmoney - Zul'jin"] = {
 		},
-		["Shanyt - Argent Dawn"] = {
+		["Tinkster - Dalaran"] = {
+		},
+		["Mandles - Zul'jin"] = {
 		},
 	},
 }

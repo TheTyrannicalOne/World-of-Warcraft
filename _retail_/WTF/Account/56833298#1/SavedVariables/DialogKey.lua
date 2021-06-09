@@ -1,12 +1,23 @@
 
 DialogKeyDB = {
 	["profileKeys"] = {
-		["Avisar - Dalaran"] = "Default",
+		["Armaguth - Zul'jin"] = "Default",
+		["Charbeatic - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Banuumine - Zul'jin"] = "Default",
+		["Laymonan - Zul'jin"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Abyronterner - Zul'jin"] = "Default",
+		["Jasmoney - Zul'jin"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
+		["Mandles - Zul'jin"] = "Default",
 	},
 	["global"] = {
 		["shownBindWarning"] = true,

@@ -65,10 +65,10 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[36614] = {
@@ -78,23 +78,25 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[40019] = {
-			["title"] = "An Empathetic Herb",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"9/15 Healthy Dreamleaf", -- [1]
-				"5/5 Blight-Infested Dreamleaf", -- [2]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
-			},
-		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[44989] = {
@@ -114,15 +116,10 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 		[52444] = {
@@ -131,19 +128,28 @@ QuestTogether = {
 				"0/1 Review final foothold", -- [1]
 			},
 		},
+		[50604] = {
+			["title"] = "Tortollan Seekers",
+			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+			},
+		},
 		[51432] = {
 			["title"] = "An Unusual Mentor",
 			["objectives"] = {
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[40019] = {
+			["title"] = "An Empathetic Herb",
+			["objectives"] = {
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[61874] = {
@@ -151,12 +157,6 @@ QuestTogether = {
 			["objectives"] = {
 				"1/1 Learn about your leaders' fate", -- [1]
 				"0/1 Take the Death Gate to Acherus", -- [2]
-			},
-		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
-			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 		[49901] = {
@@ -169,7 +169,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

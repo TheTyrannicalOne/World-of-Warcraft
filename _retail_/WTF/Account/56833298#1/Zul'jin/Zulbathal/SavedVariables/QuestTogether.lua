@@ -46,11 +46,10 @@ QuestTogether = {
 				"0/100 Dream Seeds planted", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[31015] = {
+			["title"] = "Your Private Collection",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
+				"0/1 An empty bookshelf", -- [1]
 			},
 		},
 		[42129] = {
@@ -66,9 +65,14 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[36614] = {
@@ -78,22 +82,22 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[51432] = {
@@ -106,28 +110,15 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
-			},
-		},
-		[50603] = {
-			["title"] = "Voldunai",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
-			},
-		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[52444] = {
@@ -136,14 +127,10 @@ QuestTogether = {
 				"0/1 Review final foothold", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[40019] = {
@@ -153,23 +140,36 @@ QuestTogether = {
 				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
+			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
+			},
+		},
 		[49901] = {
 			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
 				"0/1 Yazma slain", -- [1]
 			},
 		},
-		[31015] = {
-			["title"] = "Your Private Collection",
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
 			["objectives"] = {
-				"0/1 An empty bookshelf", -- [1]
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

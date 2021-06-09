@@ -18,7 +18,7 @@ SET particleDensity "100.000000"
 SET lodObjectMinSize "20.000000"
 SET componentTextureLevel "0.000000"
 SET lodObjectFadeScale "150.000000"
-SET MSAAQuality "3,0"
+SET MSAAQuality "1,0"
 SET rippleDetail "2.000000"
 SET graphicsLiquidDetail "4"
 SET graphicsShadowQuality "6"
@@ -40,7 +40,7 @@ SET graphicsSSAO "5"
 SET particleMTDensity "100.000000"
 SET volumeFogLevel "2.000000"
 SET weatherDensity "3.000000"
-SET RenderScale "2"
+SET RenderScale "1"
 SET worldBaseMip "0.000000"
 SET shadowSoft "1.000000"
 SET graphicsTextureFiltering "6"
@@ -58,3 +58,5 @@ SET textureFilteringMode "5.000000"
 
 
 
+
+SET shadowRt "3"
