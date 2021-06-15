@@ -25,21 +25,21 @@ QuestTogether = {
 				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[53101] = {
+			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
-		[40643] = {
-			["title"] = "A Summons From Moonglade",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[51432] = {
@@ -50,24 +50,26 @@ QuestTogether = {
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10  ", -- [1]
+				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[44989] = {
@@ -82,29 +84,27 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
-			},
-		},
 		[50604] = {
 			["title"] = "Tortollan Seekers",
 			["objectives"] = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[42234] = {
+			["title"] = "The Valarjar",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
 			},
 		},
 		[31891] = {
@@ -117,9 +117,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 		[47105] = {
@@ -128,10 +129,9 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[40643] = {
+			["title"] = "A Summons From Moonglade",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 	},

@@ -1,5 +1,16 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			["boss"] = "Tunk",
+		}, -- [1]
+		{
+			["boss"] = "Tunk",
+		}, -- [2]
+		{
+			["boss"] = "Tunk",
+		}, -- [3]
+	},
 	["encounter_spells"] = {
 		[308455] = {
 			["school"] = 1,
@@ -25,10 +36,5 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tunk",
 		},
-	},
-	["emotes"] = {
-		{
-			["boss"] = "Tunk",
-		}, -- [1]
 	},
 }

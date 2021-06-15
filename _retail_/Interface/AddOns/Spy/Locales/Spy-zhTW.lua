@@ -72,6 +72,8 @@ L["Silithus"] = "希利蘇斯"
 L["Chamber of Heart"] = "心之室"
 L["Hall of Ancient Paths"] = "远古通路大厅"
 L["Sanctum of the Sages"] = "賢者聖所"
+L["Rustbolt"] = "锈栓镇"
+L["Oribos"] = "奥利波斯"
 
 -- Display
 L["DisplayOptions"] = "顯示"

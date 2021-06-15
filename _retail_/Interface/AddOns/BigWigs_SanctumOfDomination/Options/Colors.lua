@@ -3,7 +3,7 @@ BigWigs:AddColors("The Tarragrue", {
 	[346985] = {"blue","purple"},
 	[346986] = {"blue","purple"},
 	[347269] = {"blue","yellow"},
-	[347274] = "blue",
+	[347274] = {"blue","yellow"},
 	[347283] = {"blue","green","orange","red"},
 	[347286] = "blue",
 	[347369] = {"green","red"},
@@ -11,9 +11,9 @@ BigWigs:AddColors("The Tarragrue", {
 	[347668] = {"blue","red"},
 	[347679] = {"cyan","yellow"},
 	[352368] = "yellow",
-	[352382] = "cyan",
-	[352389] = "cyan",
-	[352398] = "cyan",
+	[352382] = {"blue","cyan"},
+	[352389] = {"blue","cyan"},
+	[352398] = {"blue","cyan"},
 })
 
 BigWigs:AddColors("The Eye of the Jailer", {
@@ -61,7 +61,6 @@ BigWigs:AddColors("Remnant of Ner'zhul", {
 	[350388] = "blue",
 	[350469] = {"blue","orange","yellow"},
 	[350489] = "blue",
-	[350676] = "yellow",
 	[351066] = "cyan",
 	[355123] = "yellow",
 })
@@ -82,7 +81,6 @@ BigWigs:AddColors("Soulrender Dormazain", {
 BigWigs:AddColors("Painsmith Raznal", {
 	[348456] = {"blue","orange"},
 	[348508] = {"blue","yellow"},
-	[352052] = "red",
 	[355505] = {"blue","yellow"},
 	[355534] = "yellow",
 	[355568] = {"blue","yellow"},

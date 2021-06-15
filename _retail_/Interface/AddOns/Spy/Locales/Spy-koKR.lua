@@ -72,6 +72,8 @@ L["Silithus"] = "실리더스"
 L["Chamber of Heart"] = "심장의 방"
 L["Hall of Ancient Paths"] = "고대 길의 전당"
 L["Sanctum of the Sages"] = "현자의 성소"
+L["Rustbolt"] = "녹슨나사"
+L["Oribos"] = "오리보스"
 
 -- Display
 L["DisplayOptions"] = "디스플레이"

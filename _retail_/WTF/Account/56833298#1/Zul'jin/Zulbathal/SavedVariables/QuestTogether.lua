@@ -58,21 +58,17 @@ QuestTogether = {
 				"0/1 Pendant of Starlight", -- [1]
 			},
 		},
-		[42719] = {
-			["title"] = "Eye of Azshara: Cleansing the Dreamway",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/25 Rarefied Water", -- [1]
-				"0/1 Wrath of Azshara slain", -- [2]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[40019] = {
+			["title"] = "An Empathetic Herb",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[36614] = {
@@ -100,9 +96,10 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
+		[52444] = {
+			["title"] = "The Final Foothold",
 			["objectives"] = {
+				"0/1 Review final foothold", -- [1]
 			},
 		},
 		[44555] = {
@@ -115,16 +112,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[52444] = {
-			["title"] = "The Final Foothold",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"0/1 Review final foothold", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[50604] = {
@@ -133,17 +130,19 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[40019] = {
-			["title"] = "An Empathetic Herb",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"9/15 Healthy Dreamleaf", -- [1]
-				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[61874] = {
@@ -153,16 +152,17 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
+		[42719] = {
+			["title"] = "Eye of Azshara: Cleansing the Dreamway",
+			["objectives"] = {
+				"0/25 Rarefied Water", -- [1]
+				"0/1 Wrath of Azshara slain", -- [2]
+			},
+		},
 		[49901] = {
 			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
 				"0/1 Yazma slain", -- [1]
-			},
-		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
-			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 	},

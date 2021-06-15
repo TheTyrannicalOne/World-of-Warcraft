@@ -7,7 +7,7 @@ local fonts = SM:List("font")
 local _
 
 Spy = LibStub("AceAddon-3.0"):NewAddon("Spy", "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceTimer-3.0")
-Spy.Version = "3.8.1"
+Spy.Version = "3.8.2"
 Spy.DatabaseVersion = "1.1"
 Spy.Signature = "[Spy]"
 Spy.ButtonLimit = 15
@@ -163,6 +163,8 @@ Spy.options = {
 						["Krasus' Landing"] = L["Krasus' Landing"],
 						["The Violet Gate"] = L["The Violet Gate"],		
 						["Magni's Encampment"] = L["Magni's Encampment"],
+						["Rustbolt"] = L["Rustbolt"],
+						["Oribos"] = L["Oribos"],
 					},
 				},
 				ShowOnDetection = {
@@ -1437,6 +1439,8 @@ local Default_Profile = {
 			["Krasus' Landing"] = false,
 			["The Violet Gate"] = false,
 			["Magni's Encampment"] = false,
+			["Rustbolt"] = false,
+			["Oribos"] = false,			
 		},
 	},
 }
@@ -2136,7 +2140,7 @@ timestamp, event, hideCaster, srcGUID, srcName, srcFlags, sourceRaidFlags, dstGU
 						if not playerData.wins then playerData.wins = 0 end
 							playerData.wins = playerData.wins + 1
 --							PlaySoundFile("Interface\\AddOns\\Spy\\Sounds\\neck-snap.mp3", Spy.db.profile.SoundChannel)
---							DEFAULT_CHAT_FRAME:AddMessage("Your pet/guardian killed " .. dstName);							
+							DEFAULT_CHAT_FRAME:AddMessage("Your pet/guardian killed " .. dstName);							
 					end				
 				end
 			end

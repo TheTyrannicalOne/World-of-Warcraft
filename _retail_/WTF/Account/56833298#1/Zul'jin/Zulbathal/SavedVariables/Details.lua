@@ -201,7 +201,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["last_day"] = "08",
+	["last_day"] = "13",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -213,7 +213,7 @@ _detalhes_database = {
 	["combat_id"] = 0,
 	["savedStyles"] = {
 	},
-	["combat_counter"] = 42,
+	["combat_counter"] = 58,
 	["force_font_outline"] = "",
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -412,7 +412,7 @@ _detalhes_database = {
 		}, -- [2]
 	},
 	["character_data"] = {
-		["logons"] = 21,
+		["logons"] = 29,
 	},
 	["nick_tag_cache"] = {
 		["nextreset"] = 1624137799,
@@ -434,9 +434,8 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-64-0E618251"] = 65,
 		["Player-61-0CA8EB69"] = 102,
-		["Player-61-0B96FF0B"] = 64,
-		["Player-3676-0D9B4533"] = 264,
+		["Player-52-05DBCAC3"] = 270,
+		["Player-76-0B59684F"] = 265,
 	},
 }

@@ -72,6 +72,8 @@ L["Silithus"] = "Silithus"
 L["Chamber of Heart"] = "Die Herzkammer"
 L["Hall of Ancient Paths"] = "Halle der Uralten Pfade"
 L["Sanctum of the Sages"] = "Das Sanktum der Weisen"
+L["Rustbolt"] = "Rostbolzen"
+L["Oribos"] = "Oribos"
 
 -- Display
 L["DisplayOptions"] = "Anzeigen"

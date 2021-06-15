@@ -1,3 +1,7 @@
+06/13/2021 version 4.11.14
+- Better handling of bugged pets on the 9.1 PTR.
+- Fix for topmost wrong-covenant pets in the queue (or pets otherwise unsummonable for reasons other than being dead) causing teams to silently fail to load completely.
+
 04/24/2021 version 4.11.13
 - Pet cards now display a background based on the expansion the pet is from, when applicable.
 - Fix for Gnawface and Gorefu target recognition.

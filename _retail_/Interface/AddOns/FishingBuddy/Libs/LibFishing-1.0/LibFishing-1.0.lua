@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 101078
+local MINOR_VERSION = 101080
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -36,7 +36,7 @@ if ( GetBuildInfo ) then
     WOW.major = tonumber(maj);
     WOW.minor = tonumber(min);
     WOW.dot = tonumber(dot);
-    WOW.classic = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC)
+    WOW.classic = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC or _G.WOW_PROJECT_ID == _G.WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
 else
     WOW.major = 1;
     WOW.minor = 9;
@@ -1673,7 +1673,7 @@ function FishLib:GetCurrentFishingLevel()
     local mapID = self:GetCurrentMapId()
     local current_max = 0
     if LT.GetFishinglevel then
-        current_max = LT:GetFishingLevel(mapID)
+        _, current_max = LT:GetFishingLevel(mapID)
     end
     local continent, _ = self:GetCurrentMapContinent()
     if current_max == 0 then

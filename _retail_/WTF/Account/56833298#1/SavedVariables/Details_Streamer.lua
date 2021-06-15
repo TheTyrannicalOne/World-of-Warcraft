@@ -11,16 +11,17 @@ Details_StreamerDB = {
 		["Avisar - Dalaran"] = "Shanyt - Argent Dawn",
 		["Banuumine - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Shaekhan - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Vadder - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Dachas - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Banesmuncy - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Tyran - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Darnastris - Dalaran"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Illingrath - Dalaran"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
 		["Abyronterner - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
+		["Illingrath - Dalaran"] = "Shanyt - Argent Dawn",
 		["Jasmoney - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Banesmuncy - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Dachas - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Mandles - Zul'jin"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
@@ -53,17 +54,17 @@ Details_StreamerDB = {
 			["row_height"] = 20,
 			["row_texture"] = "Details Serenity",
 			["point"] = "CENTER",
-			["author"] = "Details! Team",
 			["row_color"] = {
 				0.1, -- [1]
 				0.1, -- [2]
 				0.1, -- [3]
 				0.4, -- [4]
 			},
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["y"] = 1.52587890625e-05,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -73,11 +74,6 @@ Details_StreamerDB = {
 			},
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["y"] = 1.52587890625e-05,
-			["use_spark"] = true,
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -89,6 +85,11 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["font_size"] = 10,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["use_spark"] = true,
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = false,
 			["use_square_mode"] = false,

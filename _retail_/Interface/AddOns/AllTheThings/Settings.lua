@@ -204,6 +204,15 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
 
+	-- force re-enable of optional filters which become not optional
+	-- (any filterID's here must be 'true' in all class presets)
+	local reEnableFilters = { 50 };
+	for _,filterID in ipairs(reEnableFilters) do
+		if not AllTheThingsSettingsPerCharacter.Filters[filterID] then
+			AllTheThingsSettingsPerCharacter.Filters[filterID] = nil;
+		end
+	end
+
 	self.ContainsSlider:SetValue(self:GetTooltipSetting("ContainsCount") or 25);
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations") or 5);
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
@@ -237,25 +246,27 @@ settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
 settings.GetModeString = function(self)
-	local mode = L["MODE"] .. " " .. app.Version;		-- L["MODE"] = "Mode"
+	local mode = L["MODE"] .. " " .. app.Version;
 	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
 		if self:Get("Completionist") then
-			mode = L["TITLE_COMPLETIONIST"] .. mode;	-- L["TITLE_COMPLETIONIST"] = "Completionist ";
+			mode = L["TITLE_COMPLETIONIST"] .. mode;
 		else
-			mode = L["TITLE_UNIQUE_APPEARANCE"] .. mode;		-- L["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
+			mode = L["TITLE_UNIQUE_APPEARANCE"] .. mode;
 		end
 	end
 	if self:Get("DebugMode") then
-		mode = L["TITLE_DEBUG"] .. mode;		-- L["TITLE_DEBUG"] = "Debug "
+		mode = L["TITLE_DEBUG"] .. mode;
 	else
 		if self:Get("AccountMode") then
 			if self:Get("FactionMode") then
 				mode = FACTION .. " " .. mode;
 			else
-				mode = L["TITLE_ACCOUNT"] .. mode;		-- L["TITLE_ACCOUNT"] = "Account ";
+				mode = L["TITLE_ACCOUNT"] .. mode;
 			end
 		elseif self:Get("MainOnly") and not self:Get("Completionist") then
-			mode = mode .. L["TITLE_MAIN_ONLY"];		-- L["TITLE_MAIN_ONLY"] = " (Main Only)";
+			mode = app.ClassName .. " " .. mode .. L["TITLE_MAIN_ONLY"];
+		else
+			mode = app.ClassName .. " " .. mode;
 		end
 
 		local things = {};
@@ -271,19 +282,29 @@ settings.GetModeString = function(self)
 			end
 		end
 		if thingCount == 0 then
-			mode = L["TITLE_NONE_THINGS"] .. mode;		-- L["TITLE_NONE_THINGS"] = "None of the Things ";
+			mode = L["TITLE_NONE_THINGS"] .. mode;
 		elseif thingCount == 1 then
-			mode = things[1] .. L["TITLE_ONLY"] .. mode;		-- L["TITLE_ONLY"] = " Only ";
+			mode = things[1] .. L["TITLE_ONLY"] .. mode;
 		elseif thingCount == 2 then
 			mode = things[1] .. " + " .. things[2] .. L["TITLE_ONLY"] .. mode;
 		elseif thingCount == totalThingCount then
-			mode = L["TITLE_INSANE"] .. mode;		-- L["TITLE_INSANE"] = "Insane ";
+			-- only insane if not hiding anything!
+			if
+			-- Hiding BoE's
+			(not self:Get("Filter:BoEs") and self:Get("Hide:BoEs")) or
+			-- Hiding PvP
+			(app.GetDataMember("FilterUnobtainableItems") and not app.GetDataMember("UnobtainableItemFilters")[12])
+			then
+				-- don't add insane :)
+			else
+				mode = L["TITLE_INSANE"] .. mode;
+			end
 		elseif not settings:Get("Thing:Transmog") then
-			mode = L["TITLE_SOME_THINGS"] .. mode;		-- L["TITLE_SOME_THINGS"] = "Some of the Things ";
+			mode = L["TITLE_SOME_THINGS"] .. mode;
 		end
 	end
 	if self:Get("Filter:ByLevel") then
-		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode;		-- L["TITLE_LEVEL"] = "Level ";
+		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode;
 	end
 	return mode;
 end
@@ -307,7 +328,17 @@ settings.GetShortModeString = function(self)
 		if thingCount == 0 then
 			style = "N";
 		elseif thingCount == totalThingCount then
-			style = "I";
+			-- only insane if not hiding anything!
+			if
+			-- Hiding BoE's
+			(not self:Get("Filter:BoEs") and self:Get("Hide:BoEs")) or
+			-- Hiding PvP
+			(app.GetDataMember("FilterUnobtainableItems") and not app.GetDataMember("UnobtainableItemFilters")[12])
+			then
+				-- don't add insane :)
+			else
+				style = "I";
+			end
 		else
 			style = "";
 		end
@@ -690,6 +721,7 @@ settings.UpdateMode = function(self, doRefresh)
 
 		app.MODE_DEBUG = nil;
 	end
+	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 	if self:Get("Show:CompletedGroups") then
 		app.GroupVisibilityFilter = app.NoFilter;
 	else
@@ -897,7 +929,7 @@ FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 170, 0);
 
 -- This creates the "Precision" slider.
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", settings, "OptionsSliderTemplate");
-PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
+PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -25, 0);
 PrecisionSlider:SetPoint("TOP", ModeLabel, "BOTTOM", 0, -12);
 table.insert(settings.MostRecentTab.objects, PrecisionSlider);
 settings.PrecisionSlider = PrecisionSlider;
@@ -926,7 +958,7 @@ end);
 -- This creates the "Minimap Button Size" slider.
 local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", settings, "OptionsSliderTemplate");
 MinimapButtonSizeSlider:SetPoint("LEFT", PrecisionSlider, "LEFT", 0, 0);
-MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -24);
+MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -22);
 MinimapButtonSizeSlider:SetPoint("RIGHT", PrecisionSlider, "RIGHT", 0, 0);
 table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
 settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
@@ -1523,7 +1555,8 @@ function(self)
 	end
 end);
 ShowMinimapButtonCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"]);
-ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsAccountWideCheckBox, "TOPLEFT", 160, 24);
+ShowMinimapButtonCheckBox:SetPoint("LEFT", AchievementsAccountWideCheckBox.Text, "RIGHT", 50, 0);
+ShowMinimapButtonCheckBox:SetPoint("TOP", MinimapButtonSizeSlider.Label, "BOTTOM", 0, -2);
 
 local MinimapButtonStyleCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
 function(self)
@@ -1553,7 +1586,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"]);
-ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", -4, -2);
+ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", -4, 0);
 
 local ShowCollectedThingsCheckBox = settings:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
 function(self)
@@ -1636,7 +1669,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 FilterThingsByLevelCheckBox:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"]);
-FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", -4, -2);
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", -4, 0);
 
 local HideBoEItemsCheckBox = settings:CreateCheckBox(L["HIDE_BOE_CHECKBOX"],
 function(self)
@@ -1673,6 +1706,27 @@ end);
 IgnoreFiltersForBoEsCheckBox:SetATTTooltip(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"]);
 IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLEFT", 0, 4);
 
+local HidePvPItemsCheckBox = settings:CreateCheckBox(L["HIDE_PVP_CHECKBOX"],
+function(self)
+	self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[12]);
+	if not app.GetDataMember("FilterUnobtainableItems") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	local val = app.GetDataMember("UnobtainableItemFilters");
+	val[12] = not self:GetChecked();
+	app.SetDataMember("UnobtainableItemFilters", val);
+	settings:Refresh();
+	app:RefreshData(nil,nil,true);
+end);
+HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
+HidePvPItemsCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ExpandDifficultyCheckBox = settings:CreateCheckBox(L["EXPAND_DIFFICULTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"));
@@ -1681,7 +1735,7 @@ function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
 end);
 ExpandDifficultyCheckBox:SetATTTooltip(L["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"]);
-ExpandDifficultyCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, -2);
+ExpandDifficultyCheckBox:SetPoint("TOPLEFT", HidePvPItemsCheckBox, "BOTTOMLEFT", 0, 0);
 
 local WarnDifficultyCheckBox = settings:CreateCheckBox(L["WARN_DIFFICULTY_CHECKBOX"],
 function(self)
@@ -1701,7 +1755,7 @@ function(self)
 	settings:SetTooltipSetting("Report:Collected", self:GetChecked());
 end);
 ReportCollectedThingsCheckBox:SetATTTooltip(L["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
-ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, -4);
+ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, 0);
 
 local ReportCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
 function(self)
@@ -1802,7 +1856,7 @@ end
 
 -- Weird Boys
 yoffset = -4;
-local miscWeaponTypes = { 50, 57, 34, 35, 27 }
+local miscWeaponTypes = { 11, 57, 34, 35, 27 }
 for i,filterID in ipairs(miscWeaponTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
@@ -1813,7 +1867,7 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-local miscWeaponTypes2 = { 11, 2, 3, 10, 9, 33, 32, 31 }
+local miscWeaponTypes2 = { 2, 3, 10, 9, 32, 33, 31 }
 for i,filterID in ipairs(miscWeaponTypes2) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
@@ -2321,10 +2375,10 @@ highChanceFrame:SetHeight(90);
 local highChanceAll = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
 	local isTrue = true
-	local val = app.GetDataMember("UnobtainableItemFilters")
+	local val = app.GetDataMember("UnobtainableItemFilters");
 	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 3 then
-			isTrue = isTrue and not val[k]
+			isTrue = isTrue and not val[k];
 		end
 	end
 	self:SetChecked(isTrue);
@@ -2337,17 +2391,17 @@ function(self)
 	end
 end,
 function(self)
-	local val = app.GetDataMember("UnobtainableItemFilters")
+	local val = app.GetDataMember("UnobtainableItemFilters");
 	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 3 then
-			val[k] = not self:GetChecked()
+			val[k] = not self:GetChecked();
 		end
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
 	app:RefreshData(nil,nil,true);
 end);
-highChanceAll:SetPoint("TOPLEFT",highChance, 300, 7)
+highChanceAll:SetPoint("TOPLEFT",highChance, 300, 7);
 
 local last = highChanceFrame;
 local x = 5;
@@ -2367,22 +2421,22 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			end
 		end,
 		function(self)
-			local val = app.GetDataMember("UnobtainableItemFilters")
-			val[k]= not self:GetChecked()
+			local val = app.GetDataMember("UnobtainableItemFilters");
+			val[k]= not self:GetChecked();
 			app.SetDataMember("UnobtainableItemFilters", val);
 			settings:Refresh();
 			app:RefreshData(nil,nil,true);
 		end);
 		filter:SetATTTooltip(v[2]);
-		filter:SetPoint("TOPLEFT",last,x,-y)
-		last = filter
+		filter:SetPoint("TOPLEFT",last,x,-y);
+		last = filter;
 		x = 0;
 		y = 20;
 		count = count + 1;
 		if count == 4 then
-			x = 300
-			y = 5
-			last = highChanceFrame
+			x = 300;
+			y = 5;
+			last = highChanceFrame;
 		end
 	end
 end

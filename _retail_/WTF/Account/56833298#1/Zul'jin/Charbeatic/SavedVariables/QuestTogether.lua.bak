@@ -7,12 +7,6 @@ QuestTogether = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[59978] = {
-			["title"] = "Right Beneath Their Eyes",
-			["objectives"] = {
-				"0/1 Ask Herbert to perform ogre transformation spell", -- [1]
-			},
-		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
@@ -35,11 +29,18 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[59984] = {
+			["title"] = "Dungeon: Darkmaul Citadel",
+			["objectives"] = {
+				"Use the Group Finder to enter the dungeon, \"Darkmaul Citadel\"", -- [1]
+				"0/1 Gor'groth's final ritual stopped", -- [2]
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

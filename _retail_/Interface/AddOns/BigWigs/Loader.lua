@@ -36,7 +36,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "0d7c508" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "8250f23" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[=[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -88,7 +88,7 @@ local next, tonumber, type, strsplit = next, tonumber, type, strsplit
 local SendAddonMessage, Ambiguate, CTimerAfter, CTimerNewTicker = C_ChatInfo.SendAddonMessage, Ambiguate, C_Timer.After, C_Timer.NewTicker
 local GetInstanceInfo, GetBestMapForUnit, GetMapInfo = GetInstanceInfo, C_Map.GetBestMapForUnit, C_Map.GetMapInfo
 local UnitName, UnitGUID = UnitName, UnitGUID
-local debugstack = debugstack
+local debugstack, print = debugstack, print
 
 -- Try to grab unhooked copies of critical funcs (hooked by some crappy addons)
 public.GetBestMapForUnit = GetBestMapForUnit
@@ -115,6 +115,7 @@ local highestFoundVersion = BIGWIGS_VERSION
 local highestFoundGuildVersion = BIGWIGS_GUILD_VERSION
 
 -- Loading
+local isMouseDown = false
 local loadOnCoreEnabled = {} -- BigWigs modulepacks that should load when a hostile zone is entered or the core is manually enabled, this would be the default plugins Bars, Messages etc
 local loadOnZone = {} -- BigWigs modulepack that should load on a specific zone
 local loadOnSlash = {} -- BigWigs modulepacks that can load from a chat command
@@ -166,7 +167,6 @@ do
 		[544] = bc, -- Magtheridon's Lair
 		[534] = bc, -- The Battle for Mount Hyjal
 		[564] = bc, -- Black Temple
-		[560] = bc, -- The Escape from Durnholde
 		[580] = bc, -- The Sunwell
 		--[[ BigWigs: Wrath of the Lich King ]]--
 		[533] = wotlk, -- Naxxramas
@@ -342,6 +342,12 @@ local EnableAddOn, GetAddOnEnableState, GetAddOnInfo, IsAddOnLoaded, LoadAddOn =
 local GetAddOnMetadata, IsInGroup, IsInRaid, UnitAffectingCombat, UnitGroupRolesAssigned = GetAddOnMetadata, IsInGroup, IsInRaid, UnitAffectingCombat, UnitGroupRolesAssigned
 local GetSpecialization, GetSpecializationRole, IsPartyLFG, UnitIsDeadOrGhost, UnitSetRole = GetSpecialization, GetSpecializationRole, IsPartyLFG, UnitIsDeadOrGhost, UnitSetRole
 
+local reqFuncAddons = {
+	BigWigs_Core = true,
+	BigWigs_Options = true,
+	BigWigs_Plugins = true,
+}
+
 local function IsAddOnEnabled(addon)
 	local character = UnitName("player")
 	return GetAddOnEnableState(character, addon) > 0
@@ -361,6 +367,13 @@ local function load(obj, index)
 			end
 		end
 		loadOnSlash[index] = nil
+	end
+
+	if reqFuncAddons[index] then
+		reqFuncAddons[index] = nil
+		if index == "BigWigs_Core" then
+			reqFuncAddons.BigWigs_Plugins = nil
+		end
 	end
 
 	EnableAddOn(index) -- Make sure it wasn't left disabled for whatever reason
@@ -422,17 +435,17 @@ local dataBroker = ldb:NewDataObject("BigWigs",
 )
 
 function dataBroker.OnClick(self, button)
+	-- If you are a dev and need the BigWigs options loaded to do something, please come talk to us on Discord about your use case
 	if button == "RightButton" then
-		--local trace = debugstack(2)
-		--if strfind(trace, "LibDBIcon%-1%.0%.lua:%d+>\n?$") then
+		if isMouseDown then
 			loadCoreAndOpenOptions()
-		--else
-		--	public.stack = trace
-		--	sysprint("|cFFff0000WARNING!|r")
-		--	sysprint("One of your addons was prevented from force loading the BigWigs options.")
-		--	sysprint("Contact us on the BigWigs Discord about this, it should not be happening.")
-		--	return
-		--end
+		else
+			local trace = debugstack(2)
+			public.mstack = trace
+			sysprint("|cFFff0000WARNING!|r")
+			sysprint("One of your addons was prevented from force loading the BigWigs options.")
+			sysprint("Contact us on the BigWigs Discord about this, it should not be happening.")
+		end
 	end
 end
 
@@ -482,11 +495,6 @@ end
 --
 
 do
-	local reqFuncAddons = {
-		BigWigs_Core = true,
-		BigWigs_Options = true,
-		BigWigs_Plugins = true,
-	}
 	local loadOnInstanceAddons = {} -- Will contain all names of addons with an X-BigWigs-LoadOn-InstanceId directive
 	local loadOnWorldBoss = {} -- Addons that should load when targetting a specific mob
 	local extraMenus = {} -- Addons that contain extra zone menus to appear in the GUI
@@ -711,7 +719,21 @@ do
 end
 
 function mod:ADDON_LOADED(addon)
-	if addon ~= "BigWigs" then return end
+	if addon ~= "BigWigs" then
+		-- If you are a dev and need the BigWigs options loaded to do something, please come talk to us on Discord about your use case
+		if reqFuncAddons[addon] then
+			local trace = debugstack(2)
+			public.lstack = trace
+			sysprint("|cFFff0000WARNING!|r")
+			sysprint("One of your addons is force loading the BigWigs options.")
+			sysprint("Contact us on the BigWigs Discord about this, it should not be happening.")
+			reqFuncAddons = {}
+		end
+		return
+	end
+
+	bwFrame:RegisterEvent("GLOBAL_MOUSE_DOWN")
+	bwFrame:RegisterEvent("GLOBAL_MOUSE_UP")
 
 	bwFrame:RegisterEvent("ZONE_CHANGED")
 	bwFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -771,9 +793,21 @@ function mod:ADDON_LOADED(addon)
 		C_CVar.SetCVar("Sound_MaxCacheSizeInBytes", "67108864") -- Set the cache to the "Small (64MB)" setting as a minimum
 	end
 
-	bwFrame:UnregisterEvent("ADDON_LOADED")
-	self.ADDON_LOADED = nil
+	--bwFrame:UnregisterEvent("ADDON_LOADED")
+	--self.ADDON_LOADED = nil
 	bwFrame.UnregisterEvent(UIParent, "TALKINGHEAD_REQUESTED") -- Prevent the event order re-shuffling mid-instance
+end
+
+function mod:GLOBAL_MOUSE_DOWN(button)
+	if button == "RightButton" then
+		isMouseDown = true
+	end
+end
+
+function mod:GLOBAL_MOUSE_UP(button)
+	if button == "RightButton" then
+		isMouseDown = false
+	end
 end
 
 -- We can't do our addon loading in ADDON_LOADED as the target addons may be registering that
@@ -938,7 +972,7 @@ do
 		--esMX = "Spanish (esMX)",
 		--deDE = "German (deDE)",
 		--ptBR = "Portuguese (ptBR)",
-		frFR = "French (frFR)",
+		--frFR = "French (frFR)",
 	}
 	if locales[L] then
 		delayedMessages[#delayedMessages+1] = ("BigWigs is missing translations for %s. Can you help? Visit git.io/vpBye or ask us on Discord for more info."):format(locales[L])
@@ -1516,6 +1550,7 @@ end
 SLASH_BigWigs1 = "/bw"
 SLASH_BigWigs2 = "/bigwigs"
 SlashCmdList.BigWigs = function()
+	-- If you are a dev and need the BigWigs options loaded to do something, please come talk to us on Discord about your use case
 	local trace = debugstack(2)
 	if strfind(trace, "[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>", nil, true) then
 		loadCoreAndOpenOptions()

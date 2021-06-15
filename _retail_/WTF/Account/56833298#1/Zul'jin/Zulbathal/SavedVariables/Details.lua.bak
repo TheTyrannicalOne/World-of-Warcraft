@@ -190,7 +190,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["last_day"] = "08",
+	["last_day"] = "13",
 	["cd_tracker"] = {
 		["enabled"] = false,
 		["cds_enabled"] = {
@@ -207,7 +207,7 @@ _detalhes_database = {
 		["last_version"] = 14,
 	},
 	["character_data"] = {
-		["logons"] = 20,
+		["logons"] = 28,
 	},
 	["combat_id"] = 0,
 	["savedStyles"] = {
@@ -409,7 +409,7 @@ _detalhes_database = {
 			}, -- [4]
 		},
 	},
-	["combat_counter"] = 40,
+	["combat_counter"] = 56,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -435,7 +435,5 @@ _detalhes_database = {
 	},
 	["cached_specs"] = {
 		["Player-61-0CA8EB69"] = 102,
-		["Player-64-0E618251"] = 65,
-		["Player-3676-0D9B4533"] = 264,
 	},
 }
