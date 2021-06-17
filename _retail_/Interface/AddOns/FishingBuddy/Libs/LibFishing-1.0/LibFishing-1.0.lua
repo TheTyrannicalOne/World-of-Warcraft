@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 101080
+local MINOR_VERSION = 101082
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -124,7 +124,7 @@ FishLib.continent_fishing = {
 
 local FISHING_LEVELS = {
     300,        -- Classic
-    75,         -- Outland
+    375,        -- Outland
     75,         -- Northrend
     75,         -- Cataclsym
     75,         -- Pandaria
@@ -615,6 +615,15 @@ end
 function FishLib:HasLureBuff()
     for _,lure in ipairs(FISHINGLURES) do
         if self:HasBuff(lure.spell) then
+            return true
+        end
+    end
+    -- return nil
+end
+
+function FishLib:HasHatBuff()
+    for _,hat in ipairs(FISHINGHATS) do
+        if self:HasBuff(hat.spell) then
             return true
         end
     end

@@ -216,6 +216,13 @@ X: 0
 Y: -263
 W: 300
 H: 300
+Frame: PlayerTalentFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 646
+H: 468
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER
