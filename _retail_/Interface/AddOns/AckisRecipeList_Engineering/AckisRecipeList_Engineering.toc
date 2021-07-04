@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Engineering
 ## Notes: Engineering data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: 7fa487c
+## Version: 9.0.1.1
+## X-Revision: 79da5eb
 ## X-Date: 2020-10-13T17:51:47Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

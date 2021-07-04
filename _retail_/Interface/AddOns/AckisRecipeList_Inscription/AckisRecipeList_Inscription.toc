@@ -1,10 +1,10 @@
-## Interface: 90001
+## Interface: 90005
 ## Title: Ackis Recipe List: Inscription
 ## Notes: Inscription data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: aac87fa
-## X-Date: 2020-10-13T17:52:29Z
+## Version: 9.0.2
+## X-Revision: a2a951c
+## X-Date: 2021-06-29T0:13:38Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

@@ -1,12 +1,30 @@
-tag ddb6a01b16f41c370432cdefcf6f8a93255bd11c 9.0.1
+tag 3a31a1a1d36188312eb179a0c08b687bf3eb7747 9.0.1.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Oct 13 14:03:16 2020 -0400
+Date:	Mon Jun 28 13:32:55 2021 -0400
 
-9.0. update - includes scans of older vendors
+9.0.1.1 update
 
-commit 40b3166a5df94462999f2e26f17f9527240dc449
+commit 9264f8f89a373d04cb84e30a444727a7a20bca73
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Oct 13 13:53:24 2020 -0400
+Date:   Sun Jun 27 20:23:33 2021 -0400
 
-    9.0 update
+    Update to Module Version 4
+
+commit 3f934febdc9ab2ce81450de4c6487abef429fb71
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:23:19 2021 -0400
+
+    Fix Shadowlands recipes
+
+commit b0b538da9ce8e27fc6cad352897c1bde0d8b16e7
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:22:55 2021 -0400
+
+    Remove World Quest Custom
+
+commit 29bfd7bab78f66d3e59e7f2f4ba939ffa0ba998b
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Nov 18 20:58:36 2020 -0500
+
+    Rescan of Jewelcrafting
 

@@ -19,12 +19,9 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
 			},
 		},
 		[53436] = {
@@ -33,16 +30,15 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[50600] = {
+			["title"] = "Order of Embers",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"0/4 Complete 4 world quests in Drustvar", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[62801] = {
@@ -50,10 +46,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[57006] = {
@@ -70,9 +66,10 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[39060] = {
@@ -95,10 +92,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[36615] = {
@@ -106,6 +103,12 @@ QuestTogether = {
 			["objectives"] = {
 				"172/2000 Garrison Resources gathered (Optional)", -- [1]
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
+			},
+		},
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
+			["objectives"] = {
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[32806] = {
@@ -119,15 +122,11 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
-			},
-		},
-		[50600] = {
-			["title"] = "Order of Embers",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[58632] = {
@@ -173,16 +172,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
+			},
+		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
-			},
-		},
-		[56211] = {
-			["title"] = "Scrying Stones",
-			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[54485] = {
@@ -195,7 +195,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

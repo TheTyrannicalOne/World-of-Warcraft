@@ -1,6 +1,11 @@
 # LegionInvasionTimer
 
-## [v9.0.4](https://github.com/funkydude/LegionInvasionTimer/tree/v9.0.4) (2021-03-11)
-[Full Changelog](https://github.com/funkydude/LegionInvasionTimer/compare/v9.0.3...v9.0.4) [Previous Releases](https://github.com/funkydude/LegionInvasionTimer/releases)
+## [v9.1.0](https://github.com/funkydude/LegionInvasionTimer/tree/v9.1.0) (2021-06-30)
+[Full Changelog](https://github.com/funkydude/LegionInvasionTimer/compare/v9.0.4...v9.1.0) [Previous Releases](https://github.com/funkydude/LegionInvasionTimer/releases)
 
-- bump toc  
+- Bump toc  
+- Update workflow  
+- Update workflow  
+- Address luacheck issues  
+- Address luacheck issues  
+- Add luacheck file  

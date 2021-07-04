@@ -1,12 +1,18 @@
-tag 39a6d13328f4840ef4acc8971abee221b201e9e6 9.0.1
+tag 74799027977d5d6dc95a610cd119ea4245b40ef7 9.0.1.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Oct 13 14:04:22 2020 -0400
+Date:	Mon Jun 28 13:31:29 2021 -0400
 
-9.0. update - includes scans of older vendors
+9.0.1.1 update
 
-commit 6d756bce6d98cda7631f1a4395558c978919abff
+commit 07b603f4aa650d21ff3e9caacdca2d2c4633d069
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Oct 13 13:54:18 2020 -0400
+Date:   Sun Jun 27 20:22:15 2021 -0400
 
-    9.0 update
+    Update to Module Version 4
+
+commit 2aad822545b08190f0f77e1b0c0d4c3c01561010
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Nov 18 20:59:36 2020 -0500
+
+    Removed all Shadowlands recipes
 

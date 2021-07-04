@@ -5,8 +5,8 @@ itIT localization strings for Ackis Recipe List
 ************************************************************************
 File date: 2012-08-18T4:52:05Z 
 File revision: 4d6b8e446c1381fe41575a671a6c54702932e4db 
-Project revision: 08bcd10c50d88ac18b01b3db1f94b2db490aab4b
-Project version: 9.0.2
+Project revision: 237aa06c29296dad9ac1d16a4e9dc51561544827
+Project version: 9.0.1.1
 ************************************************************************
 Original translated by: Pettigrow
 Currently maintained by:
@@ -29,6 +29,7 @@ local L = LibStub("AceLocale-3.0"):NewLocale("Ackis Recipe List", "itIT", false)
 
 if not L then return end
 
+L["\"Cap'n\" Byron Mehlsack"] = "\"Capitan\" Byron Mehlsack"
 L["\"Chef\" Overheat"] = "\"Chef\" Scuocipasta"
 L["\"Cookie\" McWeaksauce"] = "Cracco Saltaforte"
 L["\"Jack\" Pisarek Slamfix"] = "Pisarek \"Jack\" Fissachiavi"
@@ -43,6 +44,7 @@ L["ACQUIRETOOLTIPPOSITION_DESC"] = "Cambia il luogo del tooltip contenente le in
 L["Acquisition"] = "Acquisizione"
 L["Adele Fielder"] = true
 L["Adelene Sunlance"] = "Adelene Solancia"
+L["Adjutant Nikos"] = "Aiutante Nikos"
 L["Aelthin"] = true
 L["Aendel Windspear"] = "Aendel Brezzalama"
 L["Aessa Silverdew"] = "Aessa Brinargento"

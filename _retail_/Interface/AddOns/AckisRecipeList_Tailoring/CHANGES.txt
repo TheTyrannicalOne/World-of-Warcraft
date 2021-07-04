@@ -1,12 +1,60 @@
-tag 5b83d384193d907ee50ecc7440ef2f8ee36b35cd 9.0.1
+tag 6643021f3ab39b41c0fb15238f27a4141190cddd 9.0.1.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Oct 13 14:04:41 2020 -0400
+Date:	Mon Jun 28 13:30:31 2021 -0400
 
-9.0. update - includes scans of older vendors
+9.0.1.1 update
 
-commit 5fff5816fe5505fa279c6ef0266240909774b1f2
+commit 64afb83dfbb0babc8cfd7b633520b2d9388097aa
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Oct 13 13:54:45 2020 -0400
+Date:   Sun Jun 27 20:22:03 2021 -0400
 
-    9.0 update
+    Update to Module Version 4
+
+commit 87a10393943b3a9d865409a29461d4b02dfd976e
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:21:55 2021 -0400
+
+    Fix Shadowlands recipes
+
+commit 741edc7514da0ef4fbe58207e3cc8ae1d663eb64
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:21:34 2021 -0400
+
+    Remove World Quest Custom
+
+commit b5110accec6be865f221edbeba73b8eb1f2d2ce6
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:21:12 2021 -0400
+
+    Rescan of skill levels
+
+commit 9396d78651db0328a850333bc5381dc91a17f65c
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:20:38 2021 -0400
+
+    Rescan of Trainers
+
+commit cdb9b9b41a9350f6fcc3da5cadd8c920a38851ad
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Jun 9 22:51:00 2021 -0400
+
+    To add vendor to Royal Satchel
+
+commit 83309702d6e33be7b0d8489d4ec74193d9beef16
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Nov 18 20:59:53 2020 -0500
+
+    Rescan of Tailoring
+
+commit 3fe8e893a173c5c6a7ea75cd59d21bb1d2ca6e1b
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Oct 26 20:57:29 2020 -0400
+
+    Rescan of trainers in Nazjatar
+
+commit 582033bce37b2773887968c8ea2a7f68dbc08a1e
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Oct 26 20:55:02 2020 -0400
+
+    To remove as they're causing issues in live
 

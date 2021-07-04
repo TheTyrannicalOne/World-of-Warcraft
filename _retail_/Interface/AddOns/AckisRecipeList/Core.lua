@@ -42,7 +42,7 @@ private.TextDump = LibStub("LibTextDump-1.0"):New(private.addon_name)
 -- ----------------------------------------------------------------------------
 -- Constants.
 -- ----------------------------------------------------------------------------
-local SUPPORTED_MODULE_VERSION = 3
+local SUPPORTED_MODULE_VERSION = 4
 
 -- ----------------------------------------------------------------------------
 -- Dialogs.
@@ -263,6 +263,7 @@ function addon:OnInitialize()
 					worlddrop = true,
 					worldevent = true,
 					tradeskill = true,
+					mixed = true,
 				},
 				-- ----------------------------------------------------------------------------
 				-- Profession Item Filters
@@ -382,7 +383,7 @@ function addon:OnInitialize()
 			return
 		end
 		local id_num = private.MobGUIDToIDNum(_G.UnitGUID(tooltip_unit))
-		local unit = private.AcquireTypes.MobDrop:GetEntity(id_num) or private.AcquireTypes.Vendor:GetEntity(id_num) or private.AcquireTypes.Trainer:GetEntity(id_num)
+		local unit = private.AcquireTypes.MobDrop:GetEntity(id_num) or private.AcquireTypes.Vendor:GetEntity(id_num) or private.AcquireTypes.Trainer:GetEntity(id_num) or private.AcquireTypes.Mixed:GetEntity(id_num)
 
 		if not unit or not unit.item_list then
 			return
@@ -637,6 +638,7 @@ do
 		addon:InitTrainer()
 		addon:InitWorldEvents()
 		addon:InitVendor()
+		addon:InitMixed()
 
 		InitializeLookups = nil
 	end
@@ -1032,6 +1034,7 @@ do
 				HORDE = LFAC.HORDE,
 				TRAINER = L["Trainer"],
 				VENDOR = L["Vendor"],
+				MIXED = L["Trainer & Vendor"],
 				INSTANCE = _G.INSTANCE,
 				RAID = _G.RAID,
 				WORLD_EVENT = _G.EVENTS_LABEL,

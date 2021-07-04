@@ -1,9 +1,9 @@
 ## Author: Ackis, Torhal, Ressy
 
-## Interface: 90001
-## Version: 9.0.2
-## X-Revision: 08bcd10c
-## X-Date: 2020-10-13T17:48:41Z
+## Interface: 90002
+## Version: 9.0.1.1
+## X-Revision: 237aa06c
+## X-Date: 2021-06-28T0:35:31Z
 
 ## X-Credits: Zhinjio, FGWarmonger, Kagaro, Speeddymon, Xinhuan, Aesir, BWMerlin, everyone who translated stuff and more!
 ## X-Category: Tradeskill
@@ -43,7 +43,7 @@
 ## Notes: Ackis Recipe List is an addon which will scan your trade skills and provide information on how to obtain recipes. It works for all tradeskills including Runeforging.
 ## Notes-frFR: Ackis Recipe List est un addon qui analyse vos métiers et fournit des informations sur la façon d'obtenir les recettes manquantes. Il fonctionne pour tous les métiers, y compris Runeforge.
 ## Notes-deDE: Ackis Recipelist ist ein AddOn, das deine Berufe durchsucht und dir mitteilt, wo du fehlende Rezepte bekommst. Es funktioniert mit allen Berufen, inklusive Runenschmiedens.
-## Notes-koKR: Ackis Recipe List|1은;는; 당신의 전문 기술들을 훑어서 제조법들을 얻는 방법에 대한 정보를 제공할 애드온입니다. 룬 벼리기를 포함하여 모든 전문 기술들에 작용합니다.
+## Notes-koKR: Ackis Recipe List는 전문 기술을 훑어서 제조법을 얻는 방법에 대한 정보를 제공하는 애드온입니다. 룬 벼리기를 포함한 모든 전문 기술에 작동합니다.
 ## Notes-itIT: Ackis Recipe List è un addon che scansiona le tue competenze nelle professioni e fornisce informazioni su come ottenere ricette. Funziona per tutte le professioni, inclusa Forgiarune.
 ## Notes-esMX: Examina sus profesiones y se dice cómo obtener las recetas que faltan. Se funciona con todas las profesiones, incluias Forja de runas.
 ## Notes-ruRU: Сканирует ваши профессии, составляет список отсутствующих рецептов, отображает информацию о способах их получения.
@@ -72,6 +72,7 @@ Objects\AcquireType\BaseAcquireType.lua
 Objects\AcquireType\Achievement.lua
 Objects\AcquireType\Custom.lua
 Objects\AcquireType\Discovery.lua
+Objects\AcquireType\Mixed.lua
 Objects\AcquireType\MobDrop.lua
 Objects\AcquireType\Quest.lua
 Objects\AcquireType\Reputation.lua

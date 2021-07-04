@@ -1,12 +1,42 @@
-tag d7dbf5cc1a69d50cee99c8c81924f2047f1a34a1 9.0.1
+tag aedd8b56db27f3da1d4fada2583a82c26ce08c5f 9.0.1.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Oct 13 14:01:24 2020 -0400
+Date:	Mon Jun 28 13:38:03 2021 -0400
 
-9.0. update - includes scans of older vendors
+9.0.1.1 update
 
-commit dac2b84af24e2a5bb03344ca7ececcbdd3139b4b
+commit 7ccbced4a283a893896907e119a49ccc5d23ca75
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Oct 13 13:50:19 2020 -0400
+Date:   Mon Jun 28 13:25:42 2021 -0400
 
-    9.0 update
+    Update Module Version
+
+commit aba1c31ae498ec2cecfaae935530c965199d4dcf
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Jun 28 13:25:33 2021 -0400
+
+    Filling out Shadowlands recipes
+
+commit 2a44fff1a4962370d1e2d1696a532a98f050ae48
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Jun 28 13:25:17 2021 -0400
+
+    Removal of World Quest Custom
+
+commit 3cd116ebe4a235ac78298a6cf3cec1cdcfd5c9bc
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Jun 28 13:24:34 2021 -0400
+
+    Fix indents
+
+commit 238184c9c58c822c659b2eedeed7fa7a51ffbd06
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Jun 28 13:24:10 2021 -0400
+
+    Change of Pandaria Trainer & Vendor to a 'mixed' type of NPC
+
+commit 3ded4009d08604ae9b37fbcaa26bffce0fa8ccdf
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Nov 18 20:57:02 2020 -0500
+
+    Rescan blacksmithing
 

@@ -1567,6 +1567,7 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldEvent("WINTER_VEIL")
+	recipe:AddCustom("PRESENTS")
 
 	-- Rugged Leather -- 22331
 	recipe = AddRecipe(22331, V.ORIG, Q.COMMON)
@@ -5156,6 +5157,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(124127, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 600, 602, 605)
 	recipe:SetCraftedItem(83765, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(86235, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddRepVendor(FAC.GOLDEN_LOTUS, REP.HONORED, 59908)
@@ -5164,6 +5166,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(124128, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 600, 602, 605)
 	recipe:SetCraftedItem(83763, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(86276, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.TANK)
 	recipe:AddRepVendor(FAC.GOLDEN_LOTUS, REP.HONORED, 59908)
@@ -5172,6 +5175,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(124129, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 600, 602, 605)
 	recipe:SetCraftedItem(83764, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(86295, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddRepVendor(FAC.GOLDEN_LOTUS, REP.HONORED, 59908)
@@ -7670,7 +7674,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128879, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
 	recipe:AddQuest(41640)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Warhide Gloves -- 194714
 	recipe = AddRecipe(194714, V.LEGION, Q.COMMON)
@@ -7679,7 +7682,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128878, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
 	recipe:AddQuest(41644)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Warhide Footpads -- 194715
 	recipe = AddRecipe(194715, V.LEGION, Q.COMMON)
@@ -7688,7 +7690,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128877, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
 	recipe:AddQuest(41642)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Warhide Belt -- 194716
 	recipe = AddRecipe(194716, V.LEGION, Q.COMMON)
@@ -7966,7 +7967,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128899, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
 	recipe:AddQuest(41641)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Battlebound Leggings -- 194752
 	recipe = AddRecipe(194752, V.LEGION, Q.COMMON)
@@ -7975,7 +7975,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128896, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
 	recipe:AddQuest(41643)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Battlebound Warhelm -- 194753
 	recipe = AddRecipe(194753, V.LEGION, Q.COMMON)
@@ -8016,7 +8015,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128897, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
 	recipe:AddQuest(41639)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Battlebound Hauberk -- 194758
 	recipe = AddRecipe(194758, V.LEGION, Q.COMMON)
@@ -10338,12 +10336,12 @@ function module:InitializeRecipes()
 	-- ----------------------------------------------------------------------------
 	-- Shadowlands.
 	-- ----------------------------------------------------------------------------
-
 	-- Heavy Callous Hide -- 308897
 	recipe = AddRecipe(308897, V.SHA, Q.RARE)
 	recipe:SetSkillLevels(80, 80, 90, 95, 100)
 	recipe:SetRecipeItem(183839, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(172097, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddRepVendor(FAC.COURT_OF_HARVESTERS, REP.REVERED, 156822)
 	recipe:AddTrainer(156669)
 
@@ -10351,782 +10349,968 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(308899, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(70, 70, 80, 85, 90)
 	recipe:SetCraftedItem(172096, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(156669)
 
 	-- Drums of Deathly Ferocity -- 309173
 	recipe = AddRecipe(309173, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 110, 115, 120)
 	recipe:SetCraftedItem(172233, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CREATED_ITEM")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Leather Treads -- 309174
 	recipe = AddRecipe(309174, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(10, 10, 20, 25, 30)
 	recipe:SetCraftedItem(172235, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Desolate Leather Vest -- 309175
 	recipe = AddRecipe(309175, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(25, 25, 35, 40, 45)
 	recipe:SetCraftedItem(172234, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Leather Gauntlets -- 309176
 	recipe = AddRecipe(309176, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(10, 10, 20, 25, 30)
 	recipe:SetCraftedItem(172236, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Leather Helm -- 309177
 	recipe = AddRecipe(309177, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(20, 20, 30, 35, 40)
 	recipe:SetCraftedItem(172237, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Leather Leggings -- 309178
 	recipe = AddRecipe(309178, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(30, 30, 40, 45, 50)
 	recipe:SetCraftedItem(172238, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Leather Pauldrons -- 309179
 	recipe = AddRecipe(309179, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(35, 35, 45, 50, 55)
 	recipe:SetCraftedItem(172239, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Leather Waistguard -- 309180
 	recipe = AddRecipe(309180, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(5, 5, 15, 20, 25)
 	recipe:SetCraftedItem(172240, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Leather Armguards -- 309181
 	recipe = AddRecipe(309181, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(5, 5, 15, 20, 25)
 	recipe:SetCraftedItem(172241, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Desolate Scale Treads -- 309182
 	recipe = AddRecipe(309182, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(10, 10, 20, 25, 30)
 	recipe:SetCraftedItem(172243, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Desolate Scale Vest -- 309183
 	recipe = AddRecipe(309183, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(25, 25, 35, 40, 45)
 	recipe:SetCraftedItem(172242, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Scale Gauntlets -- 309184
 	recipe = AddRecipe(309184, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(10, 10, 20, 25, 30)
 	recipe:SetCraftedItem(172244, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Scale Helm -- 309185
 	recipe = AddRecipe(309185, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(20, 20, 30, 35, 40)
 	recipe:SetCraftedItem(172245, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Scale Greaves -- 309186
 	recipe = AddRecipe(309186, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(30, 30, 40, 45, 50)
 	recipe:SetCraftedItem(172246, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Scale Pauldrons -- 309187
 	recipe = AddRecipe(309187, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(35, 35, 45, 50, 55)
 	recipe:SetCraftedItem(172247, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Scale Waistguard -- 309188
 	recipe = AddRecipe(309188, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(5, 5, 15, 20, 25)
 	recipe:SetCraftedItem(172248, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Scale Armguards -- 309189
 	recipe = AddRecipe(309189, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(5, 5, 15, 20, 25)
 	recipe:SetCraftedItem(172249, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Bone Bound Knuckles -- 309190
 	recipe = AddRecipe(309190, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 25, 30, 35)
 	recipe:SetCraftedItem(172349, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FIST")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Leather Cestus -- 309191
 	recipe = AddRecipe(309191, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 25, 30, 35)
 	recipe:SetCraftedItem(172348, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FIST")
 	recipe:AddTrainer(156669)
 
 	-- Composite Bow -- 309192
 	recipe = AddRecipe(309192, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(25, 25, 35, 40, 45)
 	recipe:SetCraftedItem(172350, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_BOW")
 	recipe:AddTrainer(156669)
 
 	-- Composite Crossbow -- 309193
 	recipe = AddRecipe(309193, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(45, 45, 55, 60, 65)
 	recipe:SetCraftedItem(172351, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_BOW")
 	recipe:AddTrainer(156669)
 
 	-- Umbrahide Treads -- 309198
 	recipe = AddRecipe(309198, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 110, 115, 120)
 	recipe:SetCraftedItem(172315, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddTrainer(156669)
 
 	-- Umbrahide Vest -- 309199
 	recipe = AddRecipe(309199, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 110, 115, 120)
 	recipe:SetCraftedItem(172314, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
+	recipe:AddTrainer(156669)
 
 	-- Umbrahide Gauntlets -- 309200
 	recipe = AddRecipe(309200, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 110, 115, 120)
 	recipe:SetCraftedItem(172316, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddTrainer(156669)
 
 	-- Umbrahide Helm -- 309201
 	recipe = AddRecipe(309201, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 110, 115, 120)
 	recipe:SetCraftedItem(172317, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
+	recipe:AddTrainer(156669)
 
 	-- Umbrahide Leggings -- 309202
 	recipe = AddRecipe(309202, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172318, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddTrainer(156669)
 
 	-- Umbrahide Pauldrons -- 309203
 	recipe = AddRecipe(309203, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172319, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddTrainer(156669)
 
 	-- Umbrahide Waistguard -- 309204
 	recipe = AddRecipe(309204, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172320, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddTrainer(156669)
 
 	-- Umbrahide Armguards -- 309205
 	recipe = AddRecipe(309205, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172321, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddTrainer(156669)
 
 	-- Boneshatter Treads -- 309206
 	recipe = AddRecipe(309206, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172323, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddTrainer(156669)
 
 	-- Boneshatter Vest -- 309207
 	recipe = AddRecipe(309207, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172322, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
+	recipe:AddTrainer(156669)
 
 	-- Boneshatter Gauntlets -- 309208
 	recipe = AddRecipe(309208, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172324, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddTrainer(156669)
 
 	-- Boneshatter Helm -- 309209
 	recipe = AddRecipe(309209, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172325, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
+	recipe:AddTrainer(156669)
 
 	-- Boneshatter Greaves -- 309210
 	recipe = AddRecipe(309210, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172326, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddTrainer(156669)
 
 	-- Boneshatter Pauldrons -- 309211
 	recipe = AddRecipe(309211, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172327, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
+	recipe:AddTrainer(156669)
 
 	-- Boneshatter Waistguard -- 309212
 	recipe = AddRecipe(309212, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172328, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddTrainer(156669)
 
 	-- Boneshatter Armguards -- 309213
 	recipe = AddRecipe(309213, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172329, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddTrainer(156669)
 
 	-- Shadebound Treads -- 309230
 	recipe = AddRecipe(309230, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(55, 55, 65, 70, 75)
 	recipe:SetCraftedItem(172251, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
 	recipe:AddTrainer(156669)
 
 	-- Shadebound Vest -- 309231
 	recipe = AddRecipe(309231, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(80, 80, 90, 95, 100)
 	recipe:SetCraftedItem(172250, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
 	recipe:AddTrainer(156669)
 
 	-- Shadebound Gauntlets -- 309232
 	recipe = AddRecipe(309232, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(65, 65, 75, 80, 85)
 	recipe:SetCraftedItem(172252, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
 	recipe:AddTrainer(156669)
 
 	-- Shadebound Helm -- 309233
 	recipe = AddRecipe(309233, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 85, 90, 95)
 	recipe:SetCraftedItem(172253, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
 	recipe:AddTrainer(156669)
 
 	-- Shadebound Leggings -- 309234
 	recipe = AddRecipe(309234, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(90, 90, 100, 105, 110)
 	recipe:SetCraftedItem(172254, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
 	recipe:AddTrainer(156669)
 
 	-- Shadebound Pauldrons -- 309235
 	recipe = AddRecipe(309235, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(95, 95, 105, 110, 115)
 	recipe:SetCraftedItem(172255, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
 	recipe:AddTrainer(156669)
 
 	-- Shadebound Waistguard -- 309236
 	recipe = AddRecipe(309236, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(60, 60, 70, 75, 80)
 	recipe:SetCraftedItem(172256, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
 	recipe:AddTrainer(156669)
 
 	-- Shadebound Armguards -- 309237
 	recipe = AddRecipe(309237, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(50, 50, 60, 65, 70)
 	recipe:SetCraftedItem(172257, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
 	recipe:AddTrainer(156669)
 
 	-- Shadowscale Treads -- 309238
 	recipe = AddRecipe(309238, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(55, 55, 65, 70, 75)
 	recipe:SetCraftedItem(172259, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
 	recipe:AddTrainer(156669)
 
 	-- Shadowscale Vest -- 309239
 	recipe = AddRecipe(309239, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(80, 80, 90, 95, 100)
 	recipe:SetCraftedItem(172258, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
 	recipe:AddTrainer(156669)
 
 	-- Shadowscale Gauntlets -- 309240
 	recipe = AddRecipe(309240, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(65, 65, 75, 80, 85)
 	recipe:SetCraftedItem(172260, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
 	recipe:AddTrainer(156669)
 
 	-- Shadowscale Helm -- 309241
 	recipe = AddRecipe(309241, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 85, 90, 95)
 	recipe:SetCraftedItem(172261, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
 	recipe:AddTrainer(156669)
 
 	-- Shadowscale Leggings -- 309242
 	recipe = AddRecipe(309242, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(90, 90, 100, 105, 110)
 	recipe:SetCraftedItem(172262, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
 	recipe:AddTrainer(156669)
 
 	-- Shadowscale Pauldrons -- 309243
 	recipe = AddRecipe(309243, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(95, 95, 105, 110, 115)
 	recipe:SetCraftedItem(172263, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
 	recipe:AddTrainer(156669)
 
 	-- Shadowscale Waistguard -- 309244
 	recipe = AddRecipe(309244, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(60, 60, 70, 75, 80)
 	recipe:SetCraftedItem(172264, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
 	recipe:AddTrainer(156669)
 
 	-- Shadowscale Armguards -- 309245
 	recipe = AddRecipe(309245, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(50, 50, 60, 65, 70)
 	recipe:SetCraftedItem(172265, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
 	recipe:AddTrainer(156669)
 
 	-- Desolate Armor Kit -- 324087
 	recipe = AddRecipe(324087, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(10, 10, 20, 25, 30)
+	recipe:SetCraftedItem(172346, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
+	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Heavy Desolate Armor Kit -- 324088
-	recipe = AddRecipe(324088, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe = AddRecipe(324088, V.SHA, Q.UNCOMMON)
+	recipe:SetSkillLevels(50, 50, 60, 62, 65)
+	recipe:SetRecipeItem(183100, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(172264, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
+	recipe:AddRepVendor(FAC.THE_WILD_HUNT, REP.HONORED, 158556)
 
 	-- Comfortable Rider's Barding -- 324735
 	recipe = AddRecipe(324735, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(80, 80, 90, 95, 100)
 	recipe:SetCraftedItem(168419, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CREATED_ITEM")
 	recipe:AddTrainer(156669)
 
 	-- Relic of the Past I -- 330180
 	recipe = AddRecipe(330180, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past II -- 330181
 	recipe = AddRecipe(330181, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(25, 25, 35, 40, 45)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past III -- 330183
 	recipe = AddRecipe(330183, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(50, 50, 60, 65, 70)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past IV -- 330184
 	recipe = AddRecipe(330184, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(75, 75, 85, 90, 95)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past V -- 330185
 	recipe = AddRecipe(330185, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past I -- 330186
 	recipe = AddRecipe(330186, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past II -- 330187
 	recipe = AddRecipe(330187, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past III -- 330188
 	recipe = AddRecipe(330188, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past IV -- 330189
 	recipe = AddRecipe(330189, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past V -- 330190
 	recipe = AddRecipe(330190, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past I -- 330191
 	recipe = AddRecipe(330191, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 25, 30, 35)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past II -- 330192
 	recipe = AddRecipe(330192, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(30, 30, 40, 45, 50)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past III -- 330193
 	recipe = AddRecipe(330193, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(45, 45, 55, 60, 65)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past IV -- 330194
 	recipe = AddRecipe(330194, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(60, 60, 70, 75, 80)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past V -- 330195
 	recipe = AddRecipe(330195, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 85, 90, 95)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past I -- 330196
 	recipe = AddRecipe(330196, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past II -- 330197
 	recipe = AddRecipe(330197, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past III -- 330198
 	recipe = AddRecipe(330198, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past IV -- 330199
 	recipe = AddRecipe(330199, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past V -- 330200
 	recipe = AddRecipe(330200, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past I -- 330201
 	recipe = AddRecipe(330201, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
 
 	-- Relic of the Past II -- 330202
 	recipe = AddRecipe(330202, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
 
 	-- Relic of the Past III -- 330203
 	recipe = AddRecipe(330203, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
 
 	-- Relic of the Past IV -- 330204
 	recipe = AddRecipe(330204, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
 
 	-- Relic of the Past V -- 330205
 	recipe = AddRecipe(330205, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
-
-	-- Relic of the Past I -- 330206
-	recipe = AddRecipe(330206, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past II -- 330207
-	recipe = AddRecipe(330207, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past III -- 330208
-	recipe = AddRecipe(330208, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past IV -- 330209
-	recipe = AddRecipe(330209, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past V -- 330210
-	recipe = AddRecipe(330210, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past I -- 330211
-	recipe = AddRecipe(330211, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past II -- 330212
-	recipe = AddRecipe(330212, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past III -- 330213
-	recipe = AddRecipe(330213, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past IV -- 330214
-	recipe = AddRecipe(330214, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past V -- 330215
-	recipe = AddRecipe(330215, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
 
 	-- Relic of the Past I -- 330216
 	recipe = AddRecipe(330216, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(122698, 136063)
 
 	-- Relic of the Past II -- 330218
 	recipe = AddRecipe(330218, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(122698, 136063)
 
 	-- Relic of the Past III -- 330219
 	recipe = AddRecipe(330219, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(122698, 136063)
 
 	-- Relic of the Past IV -- 330220
 	recipe = AddRecipe(330220, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(122698, 136063)
 
 	-- Relic of the Past V -- 330221
 	recipe = AddRecipe(330221, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(122698, 136063)
 
 	-- Umbrahide Treads -- 332014
 	recipe = AddRecipe(332014, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172315, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Vest -- 332015
 	recipe = AddRecipe(332015, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172314, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Gauntlets -- 332016
 	recipe = AddRecipe(332016, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172316, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Helm -- 332017
 	recipe = AddRecipe(332017, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172317, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Leggings -- 332018
 	recipe = AddRecipe(332018, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172318, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Pauldrons -- 332019
 	recipe = AddRecipe(332019, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172319, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Waistguard -- 332020
 	recipe = AddRecipe(332020, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172320, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Armguards -- 332021
 	recipe = AddRecipe(332021, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172321, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Treads -- 332022
 	recipe = AddRecipe(332022, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172323, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Vest -- 332023
 	recipe = AddRecipe(332023, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172322, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Gauntlets -- 332024
 	recipe = AddRecipe(332024, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172324, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Helm -- 332025
 	recipe = AddRecipe(332025, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172325, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Greaves -- 332026
 	recipe = AddRecipe(332026, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172326, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Pauldrons -- 332027
 	recipe = AddRecipe(332027, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172327, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Waistguard -- 332028
 	recipe = AddRecipe(332028, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172328, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Armguards -- 332029
 	recipe = AddRecipe(332029, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172329, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Treads -- 332049
 	recipe = AddRecipe(332049, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172315, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Vest -- 332050
 	recipe = AddRecipe(332050, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172314, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Gauntlets -- 332051
 	recipe = AddRecipe(332051, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172316, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Helm -- 332052
 	recipe = AddRecipe(332052, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172317, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Leggings -- 332053
 	recipe = AddRecipe(332053, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172318, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Pauldrons -- 332054
 	recipe = AddRecipe(332054, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172319, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Waistguard -- 332055
 	recipe = AddRecipe(332055, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172320, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Armguards -- 332056
 	recipe = AddRecipe(332056, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172321, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Treads -- 332057
 	recipe = AddRecipe(332057, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172323, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Vest -- 332058
 	recipe = AddRecipe(332058, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172322, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Gauntlets -- 332059
 	recipe = AddRecipe(332059, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172324, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Helm -- 332060
 	recipe = AddRecipe(332060, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172325, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Greaves -- 332061
 	recipe = AddRecipe(332061, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172326, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Pauldrons -- 332062
 	recipe = AddRecipe(332062, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172327, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Waistguard -- 332063
 	recipe = AddRecipe(332063, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172328, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Armguards -- 332064
 	recipe = AddRecipe(332064, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Dyed Runestag Leather -- 338253
-	recipe = AddRecipe(338253, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Runestag Leather Strap -- 338254
-	recipe = AddRecipe(338254, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Stalker's Leather Quiver -- 338255
-	recipe = AddRecipe(338255, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Steelhide Leather Harness -- 338257
-	recipe = AddRecipe(338257, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Steelhide Leather Belt -- 338258
-	recipe = AddRecipe(338258, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Steelhide Leather Strap -- 338259
-	recipe = AddRecipe(338259, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Bonestudded Fist -- 338260
-	recipe = AddRecipe(338260, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Cleaned Hide -- 338262
-	recipe = AddRecipe(338262, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Courtly Leather Boots -- 338263
-	recipe = AddRecipe(338263, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Tortured Sole -- 338264
-	recipe = AddRecipe(338264, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Softened Leather -- 338265
-	recipe = AddRecipe(338265, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172329, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Vest -- 338979
 	recipe = AddRecipe(338979, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172314, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Treads -- 338980
 	recipe = AddRecipe(338980, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172315, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Gauntlets -- 338981
 	recipe = AddRecipe(338981, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172316, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Helm -- 338982
 	recipe = AddRecipe(338982, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172317, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Leggings -- 338983
 	recipe = AddRecipe(338983, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172318, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Pauldrons -- 338984
 	recipe = AddRecipe(338984, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172319, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Waistguard -- 338985
 	recipe = AddRecipe(338985, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172320, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Umbrahide Armguards -- 338986
 	recipe = AddRecipe(338986, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172321, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Vest -- 338987
 	recipe = AddRecipe(338987, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172322, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Treads -- 338988
 	recipe = AddRecipe(338988, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172323, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Gauntlets -- 338989
 	recipe = AddRecipe(338989, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172324, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Helm -- 338990
 	recipe = AddRecipe(338990, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172325, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Greaves -- 338991
 	recipe = AddRecipe(338991, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172326, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Pauldrons -- 338992
 	recipe = AddRecipe(338992, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172327, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_SHOULDER")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Waistguard -- 338993
 	recipe = AddRecipe(338993, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172328, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Boneshatter Armguards -- 338994
 	recipe = AddRecipe(338994, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(172329, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Crafter's Mark II -- 343193
 	recipe = AddRecipe(343193, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(183870, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddRepVendor(FAC.THE_VENARI, REP.REVERED, 162804)
 
 	-- Crafter's Mark I -- 343195
 	recipe = AddRecipe(343195, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(45, 45, 55, 60, 65)
 	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(156669)
 
 	-- Novice Crafter's Mark -- 343660
 	recipe = AddRecipe(343660, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetSkillLevels(50, 50, 60, 65, 70)
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(156669)
 
 	self.InitializeRecipes = nil

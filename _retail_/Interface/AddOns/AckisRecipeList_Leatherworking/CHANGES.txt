@@ -1,24 +1,30 @@
-tag 04d75bb2bd28cf35febe1a3a570ad7bde3adbb43 9.0.1
+tag fe8f7cd98bc09c5e99f9c969a4f44fe38cd95ab2 9.0.1.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Oct 13 14:03:46 2020 -0400
+Date:	Mon Jun 28 13:32:12 2021 -0400
 
-9.0. update - includes scans of older vendors
+9.0.1.1 update
 
-commit 7f121669e75281cd139fe16595abfceefb9b6232
+commit e8e85f3459fadc5f7862bd09ae5e64d377a7b783
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Oct 13 13:53:56 2020 -0400
+Date:   Sun Jun 27 20:24:39 2021 -0400
 
-    9.0 update
+    Update to Module Version 4
 
-commit 968bbf93f6a5d4fbb4dd7f69a733e8bd61293ece
+commit 767abb3f47442c3665b13d1fc251c26c28725894
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Sep 6 22:06:00 2020 -0400
+Date:   Sun Jun 27 20:24:26 2021 -0400
 
-    Fix alignment issues
+    Fix Shadowlands recipes
 
-commit 04cc230ce89c81737fccaad4552dfc0fcac4327e
+commit d8fcceec3c8166f787aedc438325f03d19d5944d
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jul 5 14:58:51 2020 -0400
+Date:   Sun Jun 27 20:24:08 2021 -0400
 
-    Scan of Nazmir profession trainer, update
+    Remove World Quest Custom
+
+commit 00d7a698fac4dfb0a2f3330cd4b76e579f2a3ea1
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Nov 18 20:59:08 2020 -0500
+
+    Rescan of Leatherworking
 

@@ -4,555 +4,27 @@ ElvCharacterDB = {
 	},
 	["ChatEditHistory"] = {
 		"/cancelform", -- [1]
-		"/p weird", -- [2]
-		"/wAVE", -- [3]
-		"/click ExtraActionButton1", -- [4]
-		"/omen", -- [5]
-		"/omnicc", -- [6]
-		"/invite melene-blackhand", -- [7]
+		"/wave", -- [2]
+		"/fishingbuddy", -- [3]
+		"/opie", -- [4]
+		"/omnicc", -- [5]
+		"/omen", -- [6]
+		"/click extraaddonbutton1", -- [7]
 		"/dance", -- [8]
-		"/p cant it says an invite pending", -- [9]
-		"/click extraaddonbutton1", -- [10]
-		"/skada hide", -- [11]
-		"/fishingbuddy", -- [12]
-		"/opie", -- [13]
+		"/skada hide", -- [9]
+		"/canimogit", -- [10]
+		"/p cant it says an invite pending", -- [11]
+		"/wAVE", -- [12]
+		"/allthethings", -- [13]
 		"/reload", -- [14]
 		"/invite melene-bladefist", -- [15]
-		"/canimogit", -- [16]
-		"/wave", -- [17]
+		"/invite melene-blackhand", -- [16]
+		"/p weird", -- [17]
 		"/reloadui", -- [18]
-		"/allthethings", -- [19]
+		"/click ExtraActionButton1", -- [19]
 		"/skada toggle", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"WTS MYTHIC +15 for 129k (two for 205k) // +14 for 109k (two for 175k) // Torghast Layer 8 // Level boosting 51-60 // Mythic & Heroic CN // Rare mounts // RBG boosts to 2100 // Gold only, PST!", -- [1]
-			"Sampost-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sampost-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			928, -- [11]
-			"Player-61-0E6F939F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Sampost|r",
-			[51] = 1623263316,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"!!<WTS> M +15.(130K UNTIMED)..(BUY 2 GET FREE LOOTFUNNEL))>..M+15.. TIMED.../..((SPECIAL DEAL FOR 4 RUNS OR 8 )) Keys +7 -20!¡¡Torghast/TC 1-8... leveling <51-60>// SELL >> CN RAID SPOTS (HERO - MYTH) 2/3/4+FUNNEL <Huokan Community> PM¡ <ONLY GOLD>", -- [1]
-			"Guandrer-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Guandrer-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			929, -- [11]
-			"Player-61-0E45689D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cGuandrer|r",
-			[51] = 1623263331,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"WTS Mythic & Heroic Castle Nathria 10/10 Full Clear w/Loot Funnels, Last Two, AOTC || M+ +2 to +18 || Torghast 1 to 8 || Gold Only, PST! Better prices than Huokan :)", -- [1]
-			"Brokermonkey-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Brokermonkey-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			937, -- [11]
-			"Player-61-0E7DD13C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Brokermonkey|r",
-			[51] = 1623263336,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"!!WTS M+15 Only 130k (Buy 2 Get Free Loot Funnels) +14 110K/ +12 90k/ +10 75K (DISCOUNT DEALS FOR 4 Mythic Pluss WIPS for more info) Torghast LAYER 1-8 || KSM 185k per key!! \"Only Gold\" >>Huokan Community<<", -- [1]
-			"Korita-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Korita-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			957, -- [11]
-			"Player-61-0E7BC6A3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Korita|r",
-			[51] = 1623263348,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"WTS M+ 0-20 keys Timed and untimed || World Tour M0 || KSM || Level Boost 51-60 || Castle Nathria full clears/Last 2 || Torghast all layers || GOLD ONLY |||| HUOKAN BOOSTING COMMUNITY |||| BEST PRICES !! Only buy from Huokan GuildBanks", -- [1]
-			"Happysales-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Happysales-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			990, -- [11]
-			"Player-61-0E74768C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Happysales|r",
-			[51] = 1623263369,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"NEW PRICES!!! wts M+ 0-20 / ksm whit key +15/ +15=130k untimed / +14=110k untimed  // +10=75k  Untimed// special price x4  or more // 2  or more Funnel  / Get to level 60 fast / CN H/M / Torghast/ mount / Huokan community /only gold / Whip for more ", -- [1]
-			"Cuajínais-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cuajínais-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1008, -- [11]
-			"Player-61-0E7E525A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Cuajínais|r",
-			[51] = 1623263387,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"WTS MYTHIC +15 for 129k (two for 205k) // +14 for 109k (two for 175k) // Torghast Layer 8 // Level boosting 51-60 // Mythic & Heroic CN // Rare mounts // RBG boosts to 2100 // Gold only, PST!", -- [1]
-			"Sampost-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sampost-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1009, -- [11]
-			"Player-61-0E6F939F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Sampost|r",
-			[51] = 1623263391,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"WTS Mythic+ 10-20 || 15 130k || 14 110k || 12 90k || 10 75k || BUY 2 FREE LOOT FUNNEL || BUY 4 OR MORE SPECIAL PRICE || WTS KSM || WTS CN Raid H/M || WTS Torghast & TC || WTS Power Leveling 51-60 || Arena Carries [2s/3s/RBG] || Huokan || GOLD ONLY", -- [1]
-			"Abblock-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Abblock-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			539, -- [11]
-			"Player-61-0E789041", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edAbblock|r",
-			[51] = 1623442395,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"wow org seems real empty", -- [1]
-			"Sawmancer-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sawmancer-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			640, -- [11]
-			"Player-61-07BB093F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Sawmancer|r",
-			[51] = 1623442444,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"I DID A WARSONG BRAWL", -- [1]
-			"Lxr-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lxr-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			648, -- [11]
-			"Player-61-0E739801", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaLxr|r",
-			[51] = 1623442457,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"but no rated", -- [1]
-			"Lxr-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lxr-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			649, -- [11]
-			"Player-61-0E739801", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaLxr|r",
-			[51] = 1623442458,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"<WTS> Heroic/Mythic CN, Mythic+2-+17, Torghast layer 1-8, RBG, or Leveling. Contact now to learn about all offerings. Gold Only!", -- [1]
-			"Thrasamworr-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Thrasamworr-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			656, -- [11]
-			"Player-61-0E77776E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Thrasamworr|r",
-			[51] = 1623442471,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"[WTS] 1 x +15 for 129k || 2 x M+15 for 233k (FREE LOOT SHARE) || 2 x +14 for 197k || 1 x +14 for 109k || Mythic and Heroic CN || PVP & LEVELLING DEALS || ^GOLD ONLY^", -- [1]
-			"Mercatori-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mercatori-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			678, -- [11]
-			"Player-61-0E6EA93C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Mercatori|r",
-			[51] = 1623442481,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"!!WTS +15 Only 130k>> BUY 2 GET FREE LOOT FUNNELS)+15 185k TIMED SPECIFIC KEY/Mythic Keys +10-20!/+14 110K /+12 90k /+10 75K /(SPECIAL DEAL FOR 4 RUNS)<WTS  CN HC/M>!WTS! Torghast/WTS leveling 51-60) ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
-			"Hakuris-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hakuris-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			694, -- [11]
-			"Player-61-0E33C50A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Hakuris|r",
-			[51] = 1623442488,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"<Emerald Parrots> is a 10/10H + 4/10M relaxed semi-hardcore raiding guild full of semi-mature adults. Looking for a few good players to fill our no drama Mythic Raiding Team (Wed+Sun 9:30p-12:30a EST).  Whisper for details.", -- [1]
-			"Furrymayhem-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Furrymayhem-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			755, -- [11]
-			"Player-61-0E6F3C1D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Furrymayhem|r",
-			[51] = 1623442516,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
-			"Mudarfa-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mudarfa-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			47, -- [11]
-			"Player-61-0E7A4FC4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cMudarfa|r",
-			[51] = 1623514766,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			">>HUOKAN COMMUNITY<< WTS +10-15keys >> +15 Only 130k >>> Buy 2 = Free Loot Funnels . +15 TIMED 180k ( Special Deal for 4 Runs ) >>> WTS Torghast / WTS POWER LEVELING 51-60 ) GOLD ONLY", -- [1]
-			"Honeykisser-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Honeykisser-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			128, -- [11]
-			"Player-61-0E7D613F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edHoneykisser|r",
-			[51] = 1623514841,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"Any Rogue in Org that could open |cff1eff00|Hitem:179311::::::::60:102::23:1:6826:2:9:60:28:749:::|h[Oxxein Lockbox]|h|r? Will tip 50g.", -- [1]
-			"Vilirio-Zul'jin", -- [2]
-			"", -- [3]
-			"1. General - Orgrimmar", -- [4]
-			"Vilirio-Zul'jin", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Orgrimmar", -- [9]
-			0, -- [10]
-			169, -- [11]
-			"Player-61-0E0F59CB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Vilirio|r",
-			[51] = 1623514931,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"don't eng and bs get keys still ", -- [1]
-			"Drunkcow-Zul'jin", -- [2]
-			"", -- [3]
-			"1. General - Orgrimmar", -- [4]
-			"Drunkcow-Zul'jin", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Orgrimmar", -- [9]
-			0, -- [10]
-			258, -- [11]
-			"Player-61-0E7DFCB2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Drunkcow|r",
-			[51] = 1623515042,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"Wts |cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|r 50k - Up Now! (I have Summon)", -- [1]
-			"Zotiana-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zotiana-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			272, -- [11]
-			"Player-61-0DE6A71A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Zotiana|r",
-			[51] = 1623515053,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			">>HUOKAN COMMUNITY<< WTS +10-15keys >> +15 Only 130k >>> Buy 2 = Free Loot Funnels . +15 TIMED 180k ( Special Deal for 4 Runs ) >>> WTS Torghast / WTS POWER LEVELING 51-60 ) GOLD ONLY", -- [1]
-			"Honeykisser-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Honeykisser-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			313, -- [11]
-			"Player-61-0E7D613F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edHoneykisser|r",
-			[51] = 1623515076,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"The key I had could only be used by Blacksmiths", -- [1]
-			"Vilirio-Zul'jin", -- [2]
-			"", -- [3]
-			"1. General - Orgrimmar", -- [4]
-			"Vilirio-Zul'jin", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Orgrimmar", -- [9]
-			0, -- [10]
-			315, -- [11]
-			"Player-61-0E0F59CB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Vilirio|r",
-			[51] = 1623515077,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"!!WTS +15 Only 120K || +14 99K || M+ 0-20 Keys || BUY 2 = FREE Armor Stacked || Special Deals 4+ Runs || KSM Deal || Castle Nathria Mythic & Heroic + Loot Funnels || 51-60 LvL Boost || Torghast || PvP || Legacy Content || <Huokan Verified Adv> Gold Only!", -- [1]
-			"Tgz-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tgz-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			325, -- [11]
-			"Player-61-0E7061E0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Tgz|r",
-			[51] = 1623515083,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"<HUOKAN DEALS > !!WTS +15 Only 120k>> BUY X2 AND GET ARMOR STACK FREE || +15 TIMED SPECIFIC KEY 176K || Mythic Keys +10-+22! ||+14 99k ||+12 85k||+ 10 75k/ SPECIAL DEALS FOR 4 RUNS|| CN HC/M|| MOUNTS|| LEVELING || LEGACY ACH||  **GOLD ONLY**", -- [1]
-			"Horkumage-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Horkumage-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			377, -- [11]
-			"Player-61-0E4105F0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaHorkumage|r",
-			[51] = 1623515122,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
 		{
 			">>HUOKAN COMMUNITY<< WTS +10-15keys >> +15 Only 130k >>> Buy 2 = Free Loot Funnels . +15 TIMED 180k ( Special Deal for 4 Runs ) >>> WTS Torghast / WTS POWER LEVELING 51-60 ) GOLD ONLY", -- [1]
 			"Honeykisser-Zul'jin", -- [2]
@@ -574,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHoneykisser|r",
 			[51] = 1623515123,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [1]
 		{
 			"[Divergent] Est. 2012 - Is your guild dead? Tired of being alone? We are like a Family. Casual raiding, fun, laid back guild. All guild heirlooms & mounts unlocked. All welcome to join!  Raid Fri & Sat 7:45-10:30pm Server. Pst me", -- [1]
 			"Yoduckie-Zul'jin", -- [2]
@@ -596,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Yoduckie|r",
 			[51] = 1623515142,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [2]
 		{
 			"!!WTS +15 Only 120K || +14 99K || M+ 0-20 Keys || BUY 2 = FREE Armor Stacked || Special Deals 4+ Runs || KSM Deal || Castle Nathria Mythic & Heroic + Loot Funnels || 51-60 LvL Boost || Torghast || PvP || Legacy Content || <Huokan Verified Adv> Gold Only!", -- [1]
 			"Tgz-Zul'jin", -- [2]
@@ -618,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Tgz|r",
 			[51] = 1623515547,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [3]
 		{
 			">>HUOKAN COMMUNITY<< WTS +10-15keys >> +15 Only 130k >>> Buy 2 = Free Loot Funnels . +15 TIMED 180k ( Special Deal for 4 Runs ) >>> WTS Torghast / WTS POWER LEVELING 51-60 ) GOLD ONLY", -- [1]
 			"Honeykisser-Zul'jin", -- [2]
@@ -640,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHoneykisser|r",
 			[51] = 1623515553,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [4]
 		{
 			"Selling M+ 0-20 Including full KSM! M14 110k/M15 130k || ANY timed 15 185k || Big Sales for 4 Key Bundles (4 15s for 444k) || Rent up to 2.6k io Team || All PvP rating (0-2.4 and Glad)  || Full Mythic/Heroic Castle Nathria w/Funnels ", -- [1]
 			"Creditss-Zul'jin", -- [2]
@@ -662,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Creditss|r",
 			[51] = 1623515566,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [5]
 		{
 			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
 			"Mudarfa-Zul'jin", -- [2]
@@ -684,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMudarfa|r",
 			[51] = 1623515641,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [6]
 		{
 			"If you think about it, there is an inordinate amount of warcraft in this world.", -- [1]
 			"Wolfmoon-Medivh", -- [2]
@@ -706,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeWolfmoon-Medivh|r",
 			[51] = 1623515669,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [7]
 		{
 			">>HUOKAN COMMUNITY<< WTS +10-15keys >> +15 Only 130k >>> Buy 2 = Free Loot Funnels . +15 TIMED 180k ( Special Deal for 4 Runs ) >>> WTS Torghast / WTS POWER LEVELING 51-60 ) GOLD ONLY", -- [1]
 			"Honeykisser-Zul'jin", -- [2]
@@ -728,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHoneykisser|r",
 			[51] = 1623515679,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [8]
 		{
 			"That's the selling point/", -- [1]
 			"Endrada-Zul'jin", -- [2]
@@ -750,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Endrada|r",
 			[51] = 1623515685,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [9]
 		{
 			"I guess.", -- [1]
 			"Wolfmoon-Medivh", -- [2]
@@ -772,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeWolfmoon-Medivh|r",
 			[51] = 1623515696,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [10]
 		{
 			"there could be more warcraft, tbh. apparently its a \"war crime\" when a warchief does a bit of war around here", -- [1]
 			"Stanos-Zul'jin", -- [2]
@@ -794,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Stanos|r",
 			[51] = 1623515704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [11]
 		{
 			"\"Chevaliers Immortels\"  Nous recrutons des Dps pour  notre core Mythic pour 9,1, Mardi/merc 8h-11h. Tous les bons joueurs sont les bienvenus pour des Tryout. ", -- [1]
 			"Kwikemart-Zul'jin", -- [2]
@@ -816,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaKwikemart|r",
 			[51] = 1623515711,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [12]
 		{
 			"I wish PvP was what it used to be.", -- [1]
 			"Wolfmoon-Medivh", -- [2]
@@ -838,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeWolfmoon-Medivh|r",
 			[51] = 1623515733,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [13]
 		{
 			"WTS M+ 0-20 keys Timed and untimed || World Tour M0 || KSM || Level Boost 51-60 || Castle Nathria full clears/Last 2 || Torghast all layers || GOLD ONLY |||| HUOKAN BOOSTING COMMUNITY |||| BEST PRICES !! Only buy from Huokan GuildBanks", -- [1]
 			"Happysales-Zul'jin", -- [2]
@@ -860,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Happysales|r",
 			[51] = 1623515826,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [14]
 		{
 			"cherche guild pve", -- [1]
 			"Oakaren-Zul'jin", -- [2]
@@ -882,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOakaren|r",
 			[51] = 1623515929,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [15]
 		{
 			"WTS M+ 0-20 keys Timed and untimed || World Tour M0 || KSM || Level Boost 51-60 || Castle Nathria full clears/Last 2 || Torghast all layers || GOLD ONLY |||| HUOKAN BOOSTING COMMUNITY |||| BEST PRICES !! Only buy from Huokan GuildBanks", -- [1]
 			"Happysales-Zul'jin", -- [2]
@@ -904,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Happysales|r",
 			[51] = 1623515941,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [16]
 		{
 			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
 			"Mudarfa-Zul'jin", -- [2]
@@ -926,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMudarfa|r",
 			[51] = 1623515985,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [17]
 		{
 			"!!WTS +15 Only 120K || +14 99K || M+ 0-20 Keys || BUY 2 = FREE Armor Stacked || Special Deals 4+ Runs || KSM Deal || Castle Nathria Mythic & Heroic + Loot Funnels || 51-60 LvL Boost || Torghast || PvP || Legacy Content || <Huokan Verified Adv> Gold Only!", -- [1]
 			"Tgz-Zul'jin", -- [2]
@@ -948,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Tgz|r",
 			[51] = 1623515993,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [18]
 		{
 			"|cffa335ee|Hitem:184778::::::::60:268::6:4:7187:6652:1498:6646:1:28:753:::|h[Decadent Nathrian Shawl]|h|r|cffa335ee|Hitem:183008::::::::60:268::6:4:7187:6652:1498:6646:1:28:753:::|h[Supple Supplicant's Gloves]|h|r wts cheaper the ah pst me", -- [1]
 			"Inspectorlee-Zul'jin", -- [2]
@@ -970,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Inspectorlee|r",
 			[51] = 1623516010,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [19]
 		{
 			"Shamy/monk cherche une guilde pve", -- [1]
 			"Oakaren-Zul'jin", -- [2]
@@ -992,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOakaren|r",
 			[51] = 1623516046,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [20]
 		{
 			"looking for a pve guild", -- [1]
 			"Oakaren-Zul'jin", -- [2]
@@ -1014,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOakaren|r",
 			[51] = 1623516058,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [21]
 		{
 			"♥Winter Wyverns ♥ is a fun, social guild led by veteran players. Accepting ALL LEVELS! Laid back group! Casual player? Ok! Raid/M+Keys? Yes plz! LF Tank, Druid heals/dps os, RDPS & DH--Sat/Sun nite raids.  Leveling only? Alrightie! Pst for invite.", -- [1]
 			"Tyralynn-Zul'jin", -- [2]
@@ -1036,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralynn|r",
 			[51] = 1623516098,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [22]
 		{
 			"<HUOKAN DEALS > !!WTS +15 Only 120k>> BUY X2 AND GET ARMOR STACK FREE || +15 TIMED SPECIFIC KEY 176K || Mythic Keys +10-+22! ||+14 99k ||+12 85k||+ 10 75k/ SPECIAL DEALS FOR 4 RUNS|| CN HC/M|| MOUNTS|| LEVELING || LEGACY ACH||  **GOLD ONLY**", -- [1]
 			"Horkumage-Zul'jin", -- [2]
@@ -1058,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaHorkumage|r",
 			[51] = 1623516230,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [23]
 		{
 			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
 			"Mudarfa-Zul'jin", -- [2]
@@ -1080,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMudarfa|r",
 			[51] = 1623516248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [24]
 		{
 			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1102,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623516441,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [25]
 		{
 			"Houkan is looking for GUILDS, BOOSTERS and ADVERTISERS that wish to earn gold doing carries,  feel free to join and be a part of the biggest community in NA https://discord.gg/U5yybstqbp FREE AOTC Giveaway Everyday!", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1124,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623516442,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [26]
 		{
 			"<Winter Wyverns> is adding to our raid team for Normal then Heroic. Wanting to push AOTC after patch. LF Tank, Druid Heals/Dps OS, DH, Monk or any RDPS. Sat/Sun 8-10:30pm EST. Also progressing in keys.  Pst for invite! All are welcome!", -- [1]
 			"Tyralynn-Zul'jin", -- [2]
@@ -1146,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralynn|r",
 			[51] = 1623516452,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [27]
 		{
 			">>GOOD PRICES HUOKAN COMMUNITY<< WTS M+ 0-20 / +15 for 120K / +14 for 99K (BUY 2 and get FreeFunnel) / <<KSM +15 Specific Key for 176K / SPECIAL DEAL x4 / WORLD TOUR M+0 / Leveling 10-60 // Casttle Nathria HC, MYTHIC  and AOTC // ONLY GOLD /w", -- [1]
 			"Kuranashy-Zul'jin", -- [2]
@@ -1168,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cKuranashy|r",
 			[51] = 1623516547,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [28]
 		{
 			"WTS M+ 0-20 keys Timed and untimed || World Tour M0 || KSM || Level Boost 51-60 || Castle Nathria full clears/Last 2 || Torghast all layers || GOLD ONLY |||| HUOKAN BOOSTING COMMUNITY |||| BEST PRICES !! Only buy from Huokan GuildBanks", -- [1]
 			"Happysales-Zul'jin", -- [2]
@@ -1190,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Happysales|r",
 			[51] = 1623516580,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [29]
 		{
 			"[Divergent] Est. 2012 - Is your guild dead? Tired of being alone? We are like a Family. Casual raiding, fun, laid back guild. All guild heirlooms & mounts unlocked. All welcome to join!  Raid Fri & Sat 7:45-10:30pm Server. Pst me", -- [1]
 			"Lilducky-Zul'jin", -- [2]
@@ -1212,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLilducky|r",
 			[51] = 1623516618,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [30]
 		{
 			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
 			"Mudarfa-Zul'jin", -- [2]
@@ -1234,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMudarfa|r",
 			[51] = 1623516646,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [31]
 		{
 			"WTS CN Hero Run Tonight!! We still have funnels :D ||Gold Only, Huokan verified! PSt me :D ", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1256,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623516664,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [32]
 		{
 			"Selling M+ 0-20 Including full KSM! M14 110k/M15 130k || SPECIFIC  timed 15 185k || Big Sales for 4 Key Bundles (4 15s for 444k) || Rent up to 2.6k io Team || All PvP rating (0-2.4 and Glad)  || Full Mythic/Heroic Castle Nathria w/Funnels ", -- [1]
 			"Creditss-Zul'jin", -- [2]
@@ -1278,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Creditss|r",
 			[51] = 1623516738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [33]
 		{
 			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1300,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623516835,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [34]
 		{
 			"Houkan is looking for GUILDS, BOOSTERS and ADVERTISERS that wish to earn gold doing carries,  feel free to join and be a part of the biggest community in NA https://discord.gg/U5yybstqbp FREE AOTC Giveaway Everyday!", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1322,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623516835,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [35]
 		{
 			"<Winter Wyverns> is adding to our raid team for Normal then Heroic. Wanting to push AOTC after patch. LF Tank, Druid Heals/Dps OS, DH, Monk or any RDPS. Sat/Sun 8-10:30pm EST. Also progressing in keys.  Pst for invite! All are welcome!", -- [1]
 			"Tyralynn-Zul'jin", -- [2]
@@ -1344,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralynn|r",
 			[51] = 1623516840,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [36]
 		{
 			"Selling M+ 0-20 Including full KSM! M14 110k/M15 130k || SPECIFIC  timed 15 185k || Big Sales for 4 Key Bundles (4 15s for 444k) || Rent up to 2.6k io Team || All PvP rating (0-2.4 and Glad)  || Full Mythic/Heroic Castle Nathria w/Funnels ", -- [1]
 			"Creditss-Zul'jin", -- [2]
@@ -1366,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Creditss|r",
 			[51] = 1623516988,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [37]
 		{
 			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1388,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623517036,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [38]
 		{
 			"WTS M+ 0-20 keys Timed and untimed || World Tour M0 || KSM || Level Boost 51-60 || Castle Nathria full clears/Last 2 || Torghast all layers || GOLD ONLY |||| HUOKAN BOOSTING COMMUNITY |||| BEST PRICES !! Only buy from Huokan GuildBanks", -- [1]
 			"Happysales-Zul'jin", -- [2]
@@ -1410,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Happysales|r",
 			[51] = 1623517099,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [39]
 		{
 			">HUOKAN COMMUNITY< WTS cheap keys! m+ 10 in 75k> 12's in 85k> 14's in 99k> 15's> 120k> BUY 2 BASE RUNS AND GET FREE LOOT FUNNEL<|| SPECIFIC TIMED!! 15 in 176k come and get your KSM|| Gearing bundles!! || lvl boosting and more. GOLD ONLY!!", -- [1]
 			"Visnuh-Zul'jin", -- [2]
@@ -1432,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcVisnuh|r",
 			[51] = 1623520759,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [40]
 		{
 			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1454,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623517247,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [41]
 		{
 			"Houkan is looking for GUILDS, BOOSTERS and ADVERTISERS that wish to earn gold doing carries,  feel free to join and be a part of the biggest community in NA https://discord.gg/U5yybstqbp FREE AOTC Giveaway Everyday!", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1476,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623517247,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [42]
 		{
 			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
 			"Mudarfa-Zul'jin", -- [2]
@@ -1498,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMudarfa|r",
 			[51] = 1623517251,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [43]
 		{
 			"♥Winter Wyverns ♥ is a fun, social guild led by veteran players. Accepting ALL LEVELS! Laid back group! Casual player? Ok! Raid/M+Keys? Yes plz! LF Tank, Druid heals/dps os, RDPS & DH--Sat/Sun nite raids.  Leveling only? Alrightie! Pst for invite.", -- [1]
 			"Tyralynn-Zul'jin", -- [2]
@@ -1520,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralynn|r",
 			[51] = 1623517293,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [44]
 		{
 			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1542,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623517377,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [45]
 		{
 			"<Winter Wyverns> is adding to our raid team for Normal then Heroic. Wanting to push AOTC after patch. LF Tank, Druid Heals/Dps OS, DH, Monk or any RDPS. Sat/Sun 8-10:30pm EST. Also progressing in keys.  Pst for invite! All are welcome!", -- [1]
 			"Tyralynn-Zul'jin", -- [2]
@@ -1564,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralynn|r",
 			[51] = 1623517380,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [46]
 		{
 			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
 			"Mudarfa-Zul'jin", -- [2]
@@ -1586,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMudarfa|r",
 			[51] = 1623517482,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [47]
 		{
 			"EXCELLENT DEALS ON  10+ - +15 KEYS -> Armor stack + Specific Key option avail!! CHEAP HEROIC CASTLE NATHRIA AND TORGHAST  (all wings and corridors) AND >FREEHOLD LEVELING< !  GOLD ONLY Any server! HIT MEE UPPP :heart:", -- [1]
 			"Mariehlovey-Zul'jin", -- [2]
@@ -1608,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mariehlovey|r",
 			[51] = 1623517516,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [48]
 		{
 			"WTS M+10-18 Keys || Mythic CN || GLORY MOUNTS || Torghast Clears || Rare, Achievement, and any other MOUNTS || PVP boosts 0-2100 || And so much more, All purchases come with a chance to win 100kg gold EVERYDAY! GOLD ONLY! whisper me for more info!", -- [1]
 			"Zardian-Zul'jin", -- [2]
@@ -1630,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZardian|r",
 			[51] = 1623517607,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [49]
 		{
 			"WTS |cff71d5ff|Hspell:288499:0|h[Frightened Kodo]|h|r, |cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|r, |cff71d5ff|Hspell:261395:0|h[The Hivemind]|h|r, |cff71d5ff|Hspell:171620:0|h[Bloodhoof Bull]|h|r. GET A MOUNT AND ENTER TO WIN 100K GOLD", -- [1]
 			"Zardian-Zul'jin", -- [2]
@@ -1652,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZardian|r",
 			[51] = 1623517607,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [50]
 		{
 			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1674,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623517608,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [51]
 		{
 			"Houkan is looking for GUILDS, BOOSTERS and ADVERTISERS that wish to earn gold doing carries,  feel free to join and be a part of the biggest community in NA https://discord.gg/U5yybstqbp FREE AOTC Giveaway Everyday!", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1696,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623517609,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [52]
 		{
 			"EXCELLENT DEALS ON  10+ - +15 KEYS -> Armor stack + Specific Key option avail!! CHEAP HEROIC CASTLE NATHRIA AND TORGHAST  (all wings and corridors) AND >FREEHOLD LEVELING< !  GOLD ONLY Any server! HIT MEE UPPP :heart:", -- [1]
 			"Mariehlovey-Zul'jin", -- [2]
@@ -1718,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mariehlovey|r",
 			[51] = 1623517657,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [53]
 		{
 			"WTS PVP BOOSTS 2s-3s-RBGS We got it all!!!! 1400, 1600, 1800, 2100+ We giving rating out like Oprah over here, Pst for pricing and more info!! ALSO A CHANCE TO WIN 100k GOLD!!!", -- [1]
 			"Zardian-Zul'jin", -- [2]
@@ -1740,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZardian|r",
 			[51] = 1623517662,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [54]
 		{
 			"WTS |cff71d5ff|Hspell:261395:0|h[The Hivemind]|h|r GROUPS 2-5 people or solo!!!! great deal on group pricing!!!! PST ME FOR PRICING AND A CHANCE TO WIN 100kg!!! Come big brain this game with the only 5 person mount!!! (everything is handled for you)", -- [1]
 			"Zardian-Zul'jin", -- [2]
@@ -1762,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZardian|r",
 			[51] = 1623517663,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [55]
 		{
 			">HUOKAN COMMUNITY< WTS cheap keys! m+ 10 in 75k> 12's in 85k> 14's in 99k> 15's> 120k> BUY 2 BASE RUNS AND GET FREE LOOT FUNNEL<|| SPECIFIC TIMED!! 15 in 176k come and get your KSM|| Gearing bundles!! || lvl boosting and more. GOLD ONLY!!", -- [1]
 			"Visnuh-Zul'jin", -- [2]
@@ -1784,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcVisnuh|r",
 			[51] = 1623517671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [56]
 		{
 			"Divergent, est. 2012 - We have WoW addicts, players during daytime hours and while working, couples, teens - 73 yr olds, non-elitist and very casual laid back raids. Raids Fri & Sat 7:45-10:30pm Server time. Need melee.", -- [1]
 			"Awiza-Zul'jin", -- [2]
@@ -1806,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edAwiza|r",
 			[51] = 1623517686,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [57]
 		{
 			"!!WTS +15 Only 130k>> BUY 2 GET FREE LOOT FUNNELS)+15 185k TIMED SPECIFIC KEY/Mythic Keys +10-20!/+14 110K /+12 90k /+10 75K /(SPECIAL DEAL FOR 4 RUNS)<WTS  CN HC/M>!WTS! Torghast/WTS leveling 51-60) ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Hakuris-Zul'jin", -- [2]
@@ -1828,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Hakuris|r",
 			[51] = 1623517710,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [58]
 		{
 			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1850,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623517715,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [59]
 		{
 			"<Winter Wyverns> is adding to our raid team for Normal then Heroic. Wanting to push AOTC after patch. LF Tank, Druid Heals/Dps OS, DH, Monk or any RDPS. Sat/Sun 8-10:30pm EST. Also progressing in keys.  Pst for invite! All are welcome!", -- [1]
 			"Tyralynn-Zul'jin", -- [2]
@@ -1872,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralynn|r",
 			[51] = 1623517774,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [60]
 		{
 			"WTS PVP BOOSTS 2s-3s-RBGS We got it all!!!! 1400, 1600, 1800, 2100+ We giving rating out like Oprah over here, Pst for pricing and more info!! ALSO A CHANCE TO WIN 100k GOLD!!!", -- [1]
 			"Zardian-Zul'jin", -- [2]
@@ -1894,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZardian|r",
 			[51] = 1623517781,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [61]
 		{
 			"WTS |cff71d5ff|Hspell:261395:0|h[The Hivemind]|h|r GROUPS 2-5 people or solo!!!! great deal on group pricing!!!! PST ME FOR PRICING AND A CHANCE TO WIN 100kg!!! Come big brain this game with the only 5 person mount!!! (everything is handled for you)", -- [1]
 			"Zardian-Zul'jin", -- [2]
@@ -1916,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZardian|r",
 			[51] = 1623517781,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [62]
 		{
 			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
 			"Mudarfa-Zul'jin", -- [2]
@@ -1938,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMudarfa|r",
 			[51] = 1623517792,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [63]
 		{
 			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
 			"Pandimage-Zul'jin", -- [2]
@@ -1960,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPandimage|r",
 			[51] = 1623517810,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [64]
 		{
 			"**WTS Mythic+ 2x 15s = 215k (Single 119k)  |||| 2x 14s = 175k (Single 98k)  All Loot is Yours!!! ||||  Mythic & Heroic Castle Nathria w/ Loot Funnels Available TONIGHT! |||| Rare Mounts |||| Level Boosting 51-60 |||| Torghast 1-8 |||| Gold Only, PST*", -- [1]
 			"Brokedtoast-Zul'jin", -- [2]
@@ -1982,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Brokedtoast|r",
 			[51] = 1623524975,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [65]
 		{
 			"WTS M+15 >120k< DEALS for 4x14s & 4x15s || 15 Timed&Key 176k || m+14 99k I m+12 85k || Buy 2 BASE Keys FREE FUNNELS || Torghast || Mounts || RAIDS || Level || GOLD ONLY! > Be Adv/Boost. Also AOTC & CE Giveaways at HUOKAN https://discord.gg/hjKSCJ6HDv ", -- [1]
 			"Wilhuo-Zul'jin", -- [2]
@@ -2004,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Wilhuo|r",
 			[51] = 1623524983,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [66]
 		{
 			"!WTS M+10-20 !!M+15Untimed 120K ||M+14 99K ||BUY 2 Get Free Loot Funnels ||SPECIFIC KEY TIMED +15 176K ||Gearing Deals Bundles 4Keys || WTS CN M & HC ||Torghast 1-8 ||Mounts||Legacy Achievs/Raids ||Gold Only. >Huokan Community<", -- [1]
 			"Garnaard-Zul'jin", -- [2]
@@ -2026,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cGarnaard|r",
 			[51] = 1623524994,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [67]
 		{
 			"EXCELLENT DEALS ON  10+ - +15 KEYS -> Armor stack + Specific Key option avail!! CHEAP HEROIC CASTLE NATHRIA AND TORGHAST  (all wings and corridors) AND >FREEHOLD LEVELING< !  GOLD ONLY Any server! HIT MEE UPPP :heart:", -- [1]
 			"Mariehlovey-Zul'jin", -- [2]
@@ -2048,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mariehlovey|r",
 			[51] = 1623525068,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [68]
 		{
 			"<WTS M+ 0-20s> Special KSM DEAL. We offer specific keys and armor stacks .SPECIAL DEALS for buy 2 or 4 runs |||| TORGHAST Layers 1-8 and TC !...<POWERLEVELING 51 - 60>.<RAID CN full clear> HC AOTC..whisper me for more info ONLY GOLD <HUOKAN COMMUNITY>", -- [1]
 			"Mudarfa-Zul'jin", -- [2]
@@ -2070,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMudarfa|r",
 			[51] = 1623525084,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [69]
 		{
 			"Crafting any Rank 1 Leather/Mail for free with your Mats, pst", -- [1]
 			"Bregish-Zul'jin", -- [2]
@@ -2092,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Bregish|r",
 			[51] = 1623525089,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [70]
 		{
 			"WTS MYTHIC +15 for 119k or +14 for 98k, bundle deals // Torghast Layer 8 // Level boosting 51-60 // Mythic & Heroic CN // Rare mounts // RBG boosts to 2100 // Gold only, PST!", -- [1]
 			"Sampost-Zul'jin", -- [2]
@@ -2114,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Sampost|r",
 			[51] = 1623597110,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [71]
 		{
 			"< A N A R C H Y > Nous Recrutons!  CN: 10/10N 9/10H", -- [1]
 			"Lapelouse-Zul'jin", -- [2]
@@ -2136,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lapelouse|r",
 			[51] = 1623597110,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [72]
 		{
 			"18+ / Familiale. À la recherche de nouveau joueur pour Raider pour 9.1: Mardi/Dimanche 20h à 22h.. Plaisir et Humour au RDV. Aucun drama tolérer, cela entraine une expulsion automatique. ", -- [1]
 			"Lapelouse-Zul'jin", -- [2]
@@ -2158,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lapelouse|r",
 			[51] = 1623597110,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [73]
 		{
 			"wts|cffa335ee|Hitem:183035::::::::60:70::6:5:7187:6652:7194:1498:6646:1:28:753:::|h[Ardent Sunstar Signet]|h|r226|cffa335ee|Hitem:183035::::::::60:70::6:5:7187:6652:6935:1498:6646:1:28:753:::|h[Ardent Sunstar Signet]|h|rsocket 226 pst'", -- [1]
 			"Hiradc-Zul'jin", -- [2]
@@ -2180,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Hiradc|r",
 			[51] = 1623597129,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [74]
 		{
 			"WTS +15 Only 130k>> Buy 2 GET FREE ARMOR STACK) +15 185k TIMED SPECIFIC KEY/MYTHIC KEYS +7-20/ +14 110k/+12 90k/+10 75k /(SPECIAL DEAL FOR 4 RUNS) !WTS! Torghast/WTS leveling 51-60 ) WTS CN HEROIC FULL CLEAR ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Burningskz-Zul'jin", -- [2]
@@ -2201,6 +1673,534 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cfffef367Burningskz|r",
 			[51] = 1623597157,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"<NOVA> Is Offering || Castle Nathria Heroic For 165k || With Each Funnel Selling For 105K, ||x3 Funnel + Full clear : 460k || Starting At 09:20   PM EST.|| Accepting Gold From All Realms. || PST For More Info.", -- [1]
+			"Novadante-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novadante-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			990, -- [11]
+			"Player-61-0E56A4FE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Novadante|r",
+			[51] = 1623626335,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"WTB|cffa335ee|Hitem:184785::::::::60:105:::::::|h[Gaiazelle's Spiked Collar]|h|r100k pst", -- [1]
+			"Tunnêlvision-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tunnêlvision-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1059, -- [11]
+			"Player-61-082D170D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Tunnêlvision|r",
+			[51] = 1623626362,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"♥WTS +15 Only 120k>> BUY 2 GET FRE ARMOR STACK) ♥ +15 176k TIMED SPECIFIC KEY/Mythic Keys +7-20!/+14 99K /+12 85k /+10 75K /(SPECIAL DEAL FOR 4 RUNS) !WTS! Torghast/WTS leveling 51-60)WTS CN HEROIC FULL CLEAR WITH FUNNELS || ONLY GOLD >>HUOKAN ", -- [1]
+			"Stevejr-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Stevejr-Zul'jin", -- [5]
+			"AFK", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1062, -- [11]
+			"Player-61-0E7B7646", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cStevejr|r",
+			[51] = 1623626367,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"WTS  NEW PRICES!  M+ 0-20 >> M+15 120K<< ( BUY 2 GET FREE ARMOR STACK) || >>> M+15 Timed & Key 176K <<< || M+ Bundles  (4x10, 4x12, 4x15) || CN (Hero & Myth) || AOTC 45K || Torghast 1-8 || Huokan Verified! GOLD ONLY  :)", -- [1]
+			"Pandimage-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pandimage-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1097, -- [11]
+			"Player-61-0E7C596E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaPandimage|r",
+			[51] = 1623626417,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"Houkan is looking for GUILDS, BOOSTERS and ADVERTISERS that wish to earn gold doing carries,  feel free to join and be a part of the biggest community in NA https://discord.gg/U5yybstqbp FREE AOTC Giveaway Everyday!", -- [1]
+			"Pandimage-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pandimage-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1100, -- [11]
+			"Player-61-0E7C596E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaPandimage|r",
+			[51] = 1623626417,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"<Spartan's community> Weekend Deals We're offering tonight Castle nathria 10/10 Heroic with funnels at 9:00  GOLD ONLY. 2X spots left for 4x plate/mail funnel for ONLY 499K. Come one come all", -- [1]
+			"Raidzgrill-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Raidzgrill-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1110, -- [11]
+			"Player-61-0E5532C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cRaidzgrill|r",
+			[51] = 1623626421,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"♥Winter Wyverns ♥ is a fun, social guild led by veteran players. Accepting ALL LEVELS! We are a laid back group! Casual players, raiders, m+keys, leveling alts - ALL ARE WELCOME.  Sat/Sun Nite Heroic Raids 8pm-10:30pm EST Server time.  Pst for invite!", -- [1]
+			"Tyralynn-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tyralynn-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1121, -- [11]
+			"Player-61-0D7B58D1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Tyralynn|r",
+			[51] = 1623626425,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"WEEKEND DEALS!! WTS HC & M Nathria runs   || Also selling +10-20 M+ runs  w/Lootstack&Specific keys |cffffff00|Hachievement:14532:Player-61-0E54D0F8:1:1:8:21:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Keystone Master: Season One]|h|r || Torghast boosts || Legacy (Glories and more) || GOLD ONLY", -- [1]
+			"Bankrardhtwo-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bankrardhtwo-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1142, -- [11]
+			"Player-61-0E54D0F8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Bankrardhtwo|r",
+			[51] = 1623626435,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"<NOVA> Is Offering || Castle Nathria Heroic For 165k || With Each Funnel Selling For 105K, ||x3 Funnel + Full clear : 460k || Starting At 09:20   PM EST.|| Accepting Gold From All Realms. || PST For More Info.", -- [1]
+			"Novadante-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novadante-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1144, -- [11]
+			"Player-61-0E56A4FE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Novadante|r",
+			[51] = 1623626435,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"WTB |cffa335ee|Hitem:184785::::::::60:105:::::::|h[Gaiazelle's Spiked Collar]|h|r100k pst", -- [1]
+			"Tunnêlvision-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tunnêlvision-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1175, -- [11]
+			"Player-61-082D170D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Tunnêlvision|r",
+			[51] = 1623626451,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"<Vanlune Community> WTS Heroic CN with Funnels 10 PM EST tonight|| M+ Timed and with funnels || KSM || Torghast || 2v2 and 3v3 carries || Mounts || Legacy Content || Whisper me for more info. Only Buy from Vanlune Bank!  [GOLD ONLY]", -- [1]
+			"Dalado-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dalado-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1180, -- [11]
+			"Player-61-0E65597E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Dalado|r",
+			[51] = 1623626460,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"FRIDAY DEAL! If you buy 3 M15 Boosts you get your AOTC Free TODAY! (Only Gold)", -- [1]
+			"Boosteame-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Boosteame-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1684, -- [11]
+			"Player-61-0E7D94E5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Boosteame|r",
+			[51] = 1624038855,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"WTS +15 120k  (BUY 2 RUNS AND GET FREE LOOT FUNNEL)|| +15 TIMED + SPECIFIC KEY 176K || +14 99K || +12 85K ||+10 75K || SPECIAL DEALS  FOR 4 RUNS || HEROIC & MYTHIC  CN ||Legacy ||Mounts||Level Boost 51-60|| Gold Only ||  <Huokan Community >", -- [1]
+			"Charsales-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Charsales-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1704, -- [11]
+			"Player-61-0E730128", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Charsales|r",
+			[51] = 1624038860,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"!!WTS +15 Only 120k>> BUY 2 GET FREE LOOT FUNNELS)+15 176k TIMED SPECIFIC KEY/Mythic Keys +10-20!/+14 99K /+12 85k /+10 75K /(SPECIAL DEAL FOR 4 RUNS)<WTS  CN HC/M>!WTS! Torghast/WTS leveling 51-60) ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
+			"Hakuris-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hakuris-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1769, -- [11]
+			"Player-61-0E33C50A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Hakuris|r",
+			[51] = 1624038879,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"Hey, I noticed your mount is looking a bit shabby, what a pitty. Lucky <Gold Cap Group> is selling tons of rare mounts such as the Time Lost Proto Drake and many more! There is even a special offer on all mounts we sell till 29th of June!", -- [1]
+			"Gcggold-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Gcggold-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1772, -- [11]
+			"Player-61-0E808F57", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaGcggold|r",
+			[51] = 1624038880,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"WTS|cffa335ee|Hitem:183035::::::::60:257::6:5:7187:41:6935:1498:6646:1:28:753:::|h[Ardent Sunstar Signet]|h|r3STATS SOCK 300K", -- [1]
+			"Lalola-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lalola-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1779, -- [11]
+			"Player-61-0E494313", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeLalola|r",
+			[51] = 1624038882,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			">>HOUKAN COMMUNITY<< ONLY GOLD WTS M+ 0-20 /+15=120k +14=99k 10=75k // Raid M/H, KSM (+15+key timed) / special deals x2 or more / / Leveling / Torghast / PvP / Monut and more!  Wisp for more info", -- [1]
+			"Kachïnsales-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kachïnsales-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1793, -- [11]
+			"Player-61-0E8052C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cKachïnsales|r",
+			[51] = 1624038890,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"WTS M+15 >120k< DEALS for 4x14s & 4x15s || 15 Timed&Key 176k || m+14 99k I m+12 85k || Buy 2 BASE Keys FREE FUNNELS || Torghast || Mounts || RAIDS || Level || GOLD ONLY! > Be Adv/Boost. Also AOTC & CE Giveaways at HUOKAN https://discord.gg/hjKSCJ6HDv ", -- [1]
+			"Wilhu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wilhu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1799, -- [11]
+			"Player-61-0E80380F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Wilhu|r",
+			[51] = 1624038897,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"!!WTS +15 Only 120K || +14 99K || M+ 0-20 Keys || BUY 2 = FREE Armor Stacked || Special Deals 4+ Runs || KSM Deal || Castle Nathria Mythic & Heroic + Loot Funnels || 51-60 LvL Boost || Torghast || PvP || Legacy Content || <Huokan Verified Adv> Gold Only!", -- [1]
+			"Tgz-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tgz-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1858, -- [11]
+			"Player-61-0E7061E0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Tgz|r",
+			[51] = 1624038933,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"<Army of Darkness>10/10 N 10/10 H is looking for a healer and some dps  for our raid team for the next raid tier. Raid times are Tues/Thurs 8:30-11PM  EST.   we run M+ keys also PST if interested! Casual players welcome also!", -- [1]
+			"Serribus-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Serribus-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1888, -- [11]
+			"Player-61-06FE3E78", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSerribus|r",
+			[51] = 1624038944,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"Hey, I noticed your mount is looking a bit shabby, what a pitty. Lucky <Gold Cap Group> is selling tons of rare mounts such as the Time Lost Proto Drake and many more! There is even a special offer on all mounts we sell till 29th of June!", -- [1]
+			"Gcggold-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Gcggold-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1900, -- [11]
+			"Player-61-0E808F57", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaGcggold|r",
+			[51] = 1624038948,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"WTS|cffa335ee|Hitem:183035::::::::60:257::6:5:7187:41:6935:1498:6646:1:28:753:::|h[Ardent Sunstar Signet]|h|r3STATS SOCK 300K", -- [1]
+			"Lalola-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lalola-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1902, -- [11]
+			"Player-61-0E494313", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeLalola|r",
+			[51] = 1624038948,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"<Zug Zug> is looking for competent healers and ranged DPS to get into mythic prog in 9.1! We raid Tues/Wed 8:30-11:30 server time. PST for more details, and join the discord to apply || https://discord.gg/dNYmrkvs", -- [1]
+			"Dévítt-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dévítt-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1913, -- [11]
+			"Player-61-0E3E0826", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cDévítt|r",
+			[51] = 1624038952,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"<<Gold Cap Group>> Selling KSM ||125k per timed 15! Come get KSM BEFORE JUNE 29th!// https://discord.gg/h27AcyHt", -- [1]
+			"Gcggold-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Gcggold-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1972, -- [11]
+			"Player-61-0E808F57", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaGcggold|r",
+			[51] = 1624038994,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

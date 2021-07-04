@@ -19,10 +19,9 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[53436] = {
@@ -31,18 +30,15 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[62801] = {
@@ -50,10 +46,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[57006] = {
@@ -70,9 +66,10 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[39060] = {
@@ -95,10 +92,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[36615] = {
@@ -108,32 +105,35 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -173,16 +173,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
+			},
+		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
-			},
-		},
-		[56211] = {
-			["title"] = "Scrying Stones",
-			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[54485] = {
@@ -194,8 +195,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

@@ -1,6 +1,6 @@
 ## Interface: 90005
 ## Title: Fishing Buddy
-## Version: 1.16.3
+## Version: 1.16.5
 ## Notes: Help with fishing related tasks -- clothing, fish information, etc.
 ## Notes-deDE: Erleichtert das Angeln - Ausrüstung und Fish-Infos
 ## Notes-frFR: Vous facilite la vie de pecheur. Informations sur les poissons, changement d'habits, etc.

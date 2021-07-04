@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Alchemy
 ## Notes: Alchemy data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: 8ff83a3
+## Version: 9.0.1.1
+## X-Revision: ed1d94f
 ## X-Date: 2020-10-13T17:49:04Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

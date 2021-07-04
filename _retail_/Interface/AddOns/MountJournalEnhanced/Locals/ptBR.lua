@@ -95,6 +95,8 @@ L["Crows"] = "Corvos"
 L["Demonic Hounds"] = "Cães Demoníacos"
 L["Demonic Steeds"] = "Corcéis Demoníacos"
 L["Demons"] = "Demônios"
+--[[Translation missing --]]
+--[[ L["Devourer"] = "Devourer"--]] 
 L["Dinosaurs"] = "Dinossauros"
 L["Dire Wolves"] = "Lobos Hediondos"
 L["Direhorns"] = "Escornantes"
@@ -109,9 +111,13 @@ L["Fathom Rays"] = "Raias-Profundas"
 L["Feathermanes"] = "Aquifélix"
 L["Felsabers"] = "Sabrevis"
 L["Fish"] = "Peixe"
+--[[Translation missing --]]
+--[[ L["Flies"] = "Flies"--]] 
 L["Flying Steeds"] = "Corcéis Voadores"
 L["Foxes"] = "Raposas"
 L["Gargon"] = "Gargono"
+--[[Translation missing --]]
+--[[ L["Gargoyle"] = "Gargoyle"--]] 
 L["Goats"] = "Bodes"
 L["Gorger"] = "Engolidor"
 L["Gorm"] = "Gorm"
@@ -119,6 +125,8 @@ L["Grand Drakes"] = "Dracos Grandes"
 L["Gronnlings"] = "Gronnídeos"
 L["Gryphons"] = "Grifos"
 L["Gyrocopters"] = "Girocóptero"
+--[[Translation missing --]]
+--[[ L["Hands"] = "Hands"--]] 
 L["Hawkstriders"] = "Falcostruzes"
 L["Hippogryphs"] = "Hipogrifos"
 L["Horned Steeds"] = "Corcéis com Chifres"
@@ -139,6 +147,8 @@ L["Lions"] = "Leões"
 L["Mammoths"] = "Mamutes"
 L["Mana Rays"] = "Arraias de Mana"
 L["Manasabers"] = "Manassabres"
+--[[Translation missing --]]
+--[[ L["Mauler"] = "Mauler"--]] 
 L["Mechanical Animals"] = "Animais Mecânicos"
 L["Mechanical Birds"] = "Pássaros Mecânicos"
 L["Mechanical Cats"] = "Gatos Mecânicos"
@@ -166,6 +176,8 @@ L["Raptors"] = "Raptores"
 L["Rats"] = "Ratos"
 L["Ravagers"] = "Assoladores"
 L["Rays"] = "Arraias"
+--[[Translation missing --]]
+--[[ L["Razorwing"] = "Razorwing"--]] 
 L["Reptiles"] = "Répteis"
 L["Rhinos"] = "Rinocerontes"
 L["Riverbeasts"] = "Feras-do-rio"
@@ -204,6 +216,8 @@ L["Vulpin"] = "Vulpino"
 L["Vultures"] = "Abutres"
 L["War Wolves"] = "Lobos de Guerra"
 L["Water Striders"] = "Caminhante das Águas "
+--[[Translation missing --]]
+--[[ L["Wilderlings"] = "Wilderlings"--]] 
 L["Wind Drakes"] = "Dracos do Vento"
 L["Wolfhawks"] = "Falcolobos"
 L["Wolves"] = "Lobos"

@@ -2,7 +2,7 @@
 -- Constants
 -------------------------------------------------------------------------------
 local MODULE_NAME = "Alchemy"
-local MODULE_VERSION = 3
+local MODULE_VERSION = 4
 
 -------------------------------------------------------------------------------
 -- AddOn namespace.

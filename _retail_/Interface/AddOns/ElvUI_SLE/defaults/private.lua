@@ -12,6 +12,9 @@ V["sle"] = {
 		["conditions"] = "",
 		["lockbutton"] = false,
 	},
+	media = {
+		enable = true,
+	},
 	--Minimap Module
 	["minimap"] = {
 		rectangle = false,
@@ -38,9 +41,7 @@ V["sle"] = {
 			["relureThreshold"] = 8,
 		},
 	},
-
 	["module"] = {
-		["screensaver"] = false,
 		["blizzmove"] = {
 			["enable"] = true,
 			["remember"] = false,
@@ -214,7 +215,7 @@ if G["profileCopy"] then
 		["raidmarkers"] = {
 			["general"] = true,
 		},
-		["screensaver"] = {
+		["afk"] = {
 			["general"] = true,
 		},
 		["shadows"] = {

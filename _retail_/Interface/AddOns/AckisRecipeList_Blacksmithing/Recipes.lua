@@ -4906,56 +4906,64 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(25, 25, 35, 40, 45)
 	recipe:SetCraftedItem(82903, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost-Forged Shoulders -- 122577
 	recipe = AddRecipe(122577, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 25, 30, 35)
 	recipe:SetCraftedItem(82904, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost-Forged Breastplate -- 122578
 	recipe = AddRecipe(122578, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(25, 25, 35, 40, 45)
 	recipe:SetCraftedItem(82905, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost-Forged Gauntlets -- 122579
 	recipe = AddRecipe(122579, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(82906, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost-Forged Legplates -- 122580
 	recipe = AddRecipe(122580, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(5, 5, 15, 20, 25)
 	recipe:SetCraftedItem(82907, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost-Forged Bracers -- 122581
 	recipe = AddRecipe(122581, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(82908, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost-Forged Boots -- 122582
 	recipe = AddRecipe(122582, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(5, 5, 15, 20, 25)
 	recipe:SetCraftedItem(82909, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost-Forged Belt -- 122583
 	recipe = AddRecipe(122583, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(82910, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Helm -- 122592
 	recipe = AddRecipe(122592, V.MOP, Q.COMMON)
@@ -4963,15 +4971,15 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84224, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Shoulders -- 122593
 	recipe = AddRecipe(122593, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 575, 575, 600)
 	recipe:SetRecipeItem(84227, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MIXED)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Breastplate -- 122594
 	recipe = AddRecipe(122594, V.MOP, Q.COMMON)
@@ -4979,7 +4987,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84222, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Gauntlets -- 122595
 	recipe = AddRecipe(122595, V.MOP, Q.COMMON)
@@ -4987,7 +4995,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84223, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Legplates -- 122596
 	recipe = AddRecipe(122596, V.MOP, Q.COMMON)
@@ -4995,7 +5003,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84225, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Bracers -- 122597
 	recipe = AddRecipe(122597, V.MOP, Q.COMMON)
@@ -5003,7 +5011,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84221, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Boots -- 122598
 	recipe = AddRecipe(122598, V.MOP, Q.COMMON)
@@ -5011,7 +5019,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84220, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Belt -- 122599
 	recipe = AddRecipe(122599, V.MOP, Q.COMMON)
@@ -5019,7 +5027,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84219, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Revenant Helm -- 122616
 	recipe = AddRecipe(122616, V.MOP, Q.COMMON)
@@ -5027,7 +5035,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84163, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Revenant Shoulders -- 122617
 	recipe = AddRecipe(122617, V.MOP, Q.COMMON)
@@ -5035,7 +5043,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84165, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Revenant Breastplate -- 122618
 	recipe = AddRecipe(122618, V.MOP, Q.COMMON)
@@ -5043,7 +5051,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84161, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Revenant Gauntlets -- 122619
 	recipe = AddRecipe(122619, V.MOP, Q.COMMON)
@@ -5051,7 +5059,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84162, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Revenant Legplates -- 122620
 	recipe = AddRecipe(122620, V.MOP, Q.COMMON)
@@ -5059,7 +5067,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84164, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Revenant Bracers -- 122621
 	recipe = AddRecipe(122621, V.MOP, Q.COMMON)
@@ -5067,7 +5075,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84160, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Revenant Boots -- 122622
 	recipe = AddRecipe(122622, V.MOP, Q.COMMON)
@@ -5075,7 +5083,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84159, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Revenant Belt -- 122623
 	recipe = AddRecipe(122623, V.MOP, Q.COMMON)
@@ -5083,7 +5091,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84158, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Spirit Helm -- 122624
 	recipe = AddRecipe(122624, V.MOP, Q.COMMON)
@@ -5091,7 +5099,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84171, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Spirit Shoulders -- 122625
 	recipe = AddRecipe(122625, V.MOP, Q.COMMON)
@@ -5099,7 +5107,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84173, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Spirit Breastplate -- 122626
 	recipe = AddRecipe(122626, V.MOP, Q.COMMON)
@@ -5107,7 +5115,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84169, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Spirit Gauntlets -- 122627
 	recipe = AddRecipe(122627, V.MOP, Q.COMMON)
@@ -5115,7 +5123,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84170, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Spirit Legplates -- 122628
 	recipe = AddRecipe(122628, V.MOP, Q.COMMON)
@@ -5123,7 +5131,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84172, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Spirit Bracers -- 122629
 	recipe = AddRecipe(122629, V.MOP, Q.COMMON)
@@ -5131,7 +5139,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84168, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Spirit Boots -- 122630
 	recipe = AddRecipe(122630, V.MOP, Q.COMMON)
@@ -5139,7 +5147,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84167, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Contender's Spirit Belt -- 122631
 	recipe = AddRecipe(122631, V.MOP, Q.COMMON)
@@ -5147,7 +5155,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84166, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Living Steel Belt Buckle -- 122632
 	recipe = AddRecipe(122632, V.MOP, Q.COMMON)
@@ -5162,7 +5170,8 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(82960, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SKELETON_KEY")
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Lightsteel Shield -- 122635
 	recipe = AddRecipe(122635, V.MOP, Q.COMMON)
@@ -5170,7 +5179,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82961, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Spiritguard Shield -- 122636
 	recipe = AddRecipe(122636, V.MOP, Q.COMMON)
@@ -5178,7 +5188,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82962, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
 	recipe:AddFilters(F.DPS)
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Forgewire Axe -- 122637
 	recipe = AddRecipe(122637, V.MOP, Q.COMMON)
@@ -5186,7 +5197,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82963, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_AXE")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost-Forged Blade -- 122638
 	recipe = AddRecipe(122638, V.MOP, Q.COMMON)
@@ -5194,7 +5206,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82964, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Phantasmal Hammer -- 122639
 	recipe = AddRecipe(122639, V.MOP, Q.COMMON)
@@ -5202,7 +5215,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82965, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_MACE")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Spiritblade Decimator -- 122640
 	recipe = AddRecipe(122640, V.MOP, Q.COMMON)
@@ -5210,7 +5224,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82966, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Ghost Shard -- 122641
 	recipe = AddRecipe(122641, V.MOP, Q.COMMON)
@@ -5218,7 +5233,8 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82967, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(16823, 19341, 64058, 64085, 65114, 65129, 92264, 92265)
+	recipe:AddTrainer(16823, 19341, 65114, 65129, 92264, 92265)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Lightsteel Shield -- 122642
 	recipe = AddRecipe(122642, V.MOP, Q.COMMON)
@@ -5227,7 +5243,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82968, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Spiritguard Shield -- 122643
 	recipe = AddRecipe(122643, V.MOP, Q.COMMON)
@@ -5236,7 +5252,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(82969, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
 	recipe:AddFilters(F.DPS)
-	recipe:AddVendor(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Masterwork Forgewire Axe -- 122644
 	recipe = AddRecipe(122644, V.MOP, Q.COMMON)
@@ -6649,7 +6665,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(123898, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddCustom("WORLD_QUEST")
 	recipe:AddQuest(41634)
 
 	-- Leystone Waistguard -- 182971
@@ -6666,7 +6681,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(123938, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(123896, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
-	recipe:AddCustom("WORLD_QUEST")
 	recipe:AddQuest(41637)
 
 	-- Leystone Breastplate -- 182973
@@ -6676,7 +6690,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(123891, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddCustom("WORLD_QUEST")
 	recipe:AddQuest(41636)
 
 	-- Demonsteel Armguards -- 182974
@@ -6847,7 +6860,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(123892, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
 	recipe:AddQuest(41635)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Leystone Helm -- 191929
 	recipe = AddRecipe(191929, V.LEGION, Q.COMMON)
@@ -6865,7 +6877,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(123893, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddQuest(41638)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Leystone Greaves -- 191931
 	recipe = AddRecipe(191931, V.LEGION, Q.COMMON)
@@ -6874,7 +6885,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(123895, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
 	recipe:AddQuest(41633)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Terrorspike -- 209496
 	recipe = AddRecipe(209496, V.LEGION, Q.COMMON)
@@ -7225,7 +7235,11 @@ function module:InitializeRecipes()
 
 	-- Monelite Reinforced Chassis -- 265937
 	recipe = AddRecipe(265937, V.BFA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(160, 160, 165, 170, 175)
+	recipe:SetRecipeItem(169529, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(158887, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddMobDrop(144246)
 
 	-- Monelite Skeleton Key -- 269064
 	recipe = AddRecipe(269064, V.BFA, Q.COMMON)
@@ -8542,21 +8556,21 @@ function module:InitializeRecipes()
 
 	-- Ceremonious Reaper -- 307676
 	recipe = AddRecipe(307676, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(15, 15, 25, 30, 35)
+	recipe:SetSkillLevels(25, 25, 35, 40, 45)
 	recipe:SetCraftedItem(171389, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_AXE")
 	recipe:AddTrainer(156666)
 
 	-- Ceremonious Smasher -- 307677
 	recipe = AddRecipe(307677, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(5, 5, 15, 20, 25)
+	recipe:SetSkillLevels(15, 15, 25, 30, 35)
 	recipe:SetCraftedItem(171384, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
 	recipe:AddTrainer(156666)
 
 	-- Ceremonious Claymore -- 307678
 	recipe = AddRecipe(307678, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(25, 25, 35, 40, 45)
+	recipe:SetSkillLevels(5, 5, 15, 20, 25)
 	recipe:SetCraftedItem(171383, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_SWORD")
 	recipe:AddTrainer(156666)
@@ -8594,47 +8608,56 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetCraftedItem(171419, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+	recipe:AddTrainer(156666)
 
 	-- Shadowghast Waistguard -- 307706
 	recipe = AddRecipe(307706, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetCraftedItem(171418, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+	recipe:AddTrainer(156666)
 
 	-- Shadowghast Pauldrons -- 307707
 	recipe = AddRecipe(307707, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetCraftedItem(171417, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
+	recipe:AddTrainer(156666)
 
 	-- Shadowghast Greaves -- 307708
 	recipe = AddRecipe(307708, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetCraftedItem(171416, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddTrainer(156666)
 
 	-- Shadowghast Helm -- 307709
 	recipe = AddRecipe(307709, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetCraftedItem(171415, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddTrainer(156666)
 
 	-- Shadowghast Gauntlets -- 307710
 	recipe = AddRecipe(307710, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetCraftedItem(171414, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddTrainer(156666)
 
 	-- Shadowghast Sabatons -- 307711
 	recipe = AddRecipe(307711, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetCraftedItem(171413, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddTrainer(156666)
 
 	-- Shadowghast Breastplate -- 307712
 	recipe = AddRecipe(307712, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetCraftedItem(171412, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddTrainer(156666)
 
 	-- Porous Sharpening Stone -- 307717
 	recipe = AddRecipe(307717, V.SHA, Q.COMMON)
@@ -8874,75 +8897,35 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Relic of the Past II -- 330160
 	recipe = AddRecipe(330160, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Relic of the Past III -- 330161
 	recipe = AddRecipe(330161, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Relic of the Past IV -- 330162
 	recipe = AddRecipe(330162, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(64058, 64085)
+	recipe:AddMixed(64058, 64085)
 
 	-- Relic of the Past V -- 330163
 	recipe = AddRecipe(330163, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(64058, 64085)
-
-	-- Relic of the Past I -- 330164
-	recipe = AddRecipe(330164, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past II -- 330165
-	recipe = AddRecipe(330165, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past III -- 330166
-	recipe = AddRecipe(330166, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past IV -- 330167
-	recipe = AddRecipe(330167, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past V -- 330168
-	recipe = AddRecipe(330168, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past I -- 330169
-	recipe = AddRecipe(330169, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past II -- 330170
-	recipe = AddRecipe(330170, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past III -- 330171
-	recipe = AddRecipe(330171, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past IV -- 330172
-	recipe = AddRecipe(330172, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Relic of the Past V -- 330173
-	recipe = AddRecipe(330173, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:AddMixed(64058, 64085)
 
 	-- Relic of the Past I -- 330174
 	recipe = AddRecipe(330174, V.SHA, Q.COMMON)
@@ -8981,99 +8964,171 @@ function module:InitializeRecipes()
 
 	-- Shadowghast Armguards -- 332006
 	recipe = AddRecipe(332006, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171419, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Waistguard -- 332007
 	recipe = AddRecipe(332007, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171418, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Pauldrons -- 332008
 	recipe = AddRecipe(332008, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171417, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Greaves -- 332009
 	recipe = AddRecipe(332009, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171416, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Helm -- 332010
 	recipe = AddRecipe(332010, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171415, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Gauntlets -- 332011
 	recipe = AddRecipe(332011, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171414, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Sabatons -- 332012
 	recipe = AddRecipe(332012, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171413, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Breastplate -- 332013
 	recipe = AddRecipe(332013, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171412, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Armguards -- 332041
 	recipe = AddRecipe(332041, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 100, 100, 100)
+	recipe:SetCraftedItem(171419, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Waistguard -- 332042
 	recipe = AddRecipe(332042, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171418, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Pauldrons -- 332043
 	recipe = AddRecipe(332043, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171417, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Greaves -- 332044
 	recipe = AddRecipe(332044, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171416, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Helm -- 332045
 	recipe = AddRecipe(332045, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171415, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Gauntlets -- 332046
 	recipe = AddRecipe(332046, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171414, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Sabatons -- 332047
 	recipe = AddRecipe(332047, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171413, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Breastplate -- 332048
 	recipe = AddRecipe(332048, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171412, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Breastplate -- 338968
 	recipe = AddRecipe(338968, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171412, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Sabatons -- 338969
 	recipe = AddRecipe(338969, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171413, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Gauntlets -- 338970
 	recipe = AddRecipe(338970, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171414, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Helm -- 338971
 	recipe = AddRecipe(338971, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171415, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Greaves -- 338972
 	recipe = AddRecipe(338972, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171416, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Pauldrons -- 338974
 	recipe = AddRecipe(338974, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171417, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Waistguard -- 338975
 	recipe = AddRecipe(338975, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171418, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Armguards -- 338976
 	recipe = AddRecipe(338976, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(171419, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Crafter's Mark I -- 343184
 	recipe = AddRecipe(343184, V.SHA, Q.COMMON)
@@ -9092,7 +9147,7 @@ function module:InitializeRecipes()
 
 	-- Novice Crafter's Mark -- 343662
 	recipe = AddRecipe(343662, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetSkillLevels(50, 50, 60, 65, 70)
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
 	recipe:AddTrainer(156666)

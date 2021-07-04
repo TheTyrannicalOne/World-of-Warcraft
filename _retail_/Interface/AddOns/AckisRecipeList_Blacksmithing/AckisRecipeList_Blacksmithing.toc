@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Blacksmithing
 ## Notes: Blacksmithing data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: dac2b84
+## Version: 9.0.1.1
+## X-Revision: 7ccbced
 ## X-Date: 2020-10-13T17:50:19Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

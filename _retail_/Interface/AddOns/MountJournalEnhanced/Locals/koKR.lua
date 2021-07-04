@@ -117,6 +117,8 @@ L["Crows"] = "까마귀"
 L["Demonic Hounds"] = "지옥사냥개"
 L["Demonic Steeds"] = "지옥군마"
 L["Demons"] = "악마"
+--[[Translation missing --]]
+--[[ L["Devourer"] = "Devourer"--]] 
 L["Dinosaurs"] = "공룡"
 L["Dire Wolves"] = "다이어울프"
 L["Direhorns"] = "다이어혼"
@@ -131,10 +133,14 @@ L["Fathom Rays"] = "심해 가오리"
 L["Feathermanes"] = "뾰족갈기"
 L["Felsabers"] = "지옥표범"
 L["Fish"] = "물고기"
+--[[Translation missing --]]
+--[[ L["Flies"] = "Flies"--]] 
 L["Flying Steeds"] = "비행군마"
 L["Foxes"] = "여우"
 --[[Translation missing --]]
 --[[ L["Gargon"] = "Gargon"--]] 
+--[[Translation missing --]]
+--[[ L["Gargoyle"] = "Gargoyle"--]] 
 L["Goats"] = "염소"
 --[[Translation missing --]]
 --[[ L["Gorger"] = "Gorger"--]] 
@@ -144,6 +150,8 @@ L["Grand Drakes"] = "거대 비룡"
 L["Gronnlings"] = "그론링"
 L["Gryphons"] = "그리폰"
 L["Gyrocopters"] = "자이로콥터"
+--[[Translation missing --]]
+--[[ L["Hands"] = "Hands"--]] 
 L["Hawkstriders"] = "매타조"
 L["Hippogryphs"] = "히포그리프"
 L["Horned Steeds"] = "뿔 군마"
@@ -165,6 +173,8 @@ L["Lions"] = "사자"
 L["Mammoths"] = "매머드"
 L["Mana Rays"] = "마나 가오리"
 L["Manasabers"] = "마나호랑이"
+--[[Translation missing --]]
+--[[ L["Mauler"] = "Mauler"--]] 
 L["Mechanical Animals"] = "기계형 야수"
 L["Mechanical Birds"] = "기계형 새"
 L["Mechanical Cats"] = "기계형 고양이"
@@ -194,6 +204,8 @@ L["Raptors"] = "랩터"
 L["Rats"] = "쥐"
 L["Ravagers"] = "칼날발톱"
 L["Rays"] = "가오리"
+--[[Translation missing --]]
+--[[ L["Razorwing"] = "Razorwing"--]] 
 L["Reptiles"] = "파충류"
 L["Rhinos"] = "코뿔소"
 L["Riverbeasts"] = "강물하마"
@@ -238,6 +250,8 @@ L["Vehicles"] = "차량"
 --[[ L["Vultures"] = "Vultures"--]] 
 L["War Wolves"] = "전투 늑대"
 L["Water Striders"] = "소금쟁이"
+--[[Translation missing --]]
+--[[ L["Wilderlings"] = "Wilderlings"--]] 
 L["Wind Drakes"] = "바람 비룡"
 L["Wolfhawks"] = "늑대매"
 L["Wolves"] = "늑대"

@@ -1,18 +1,48 @@
-tag 84b05a92407e1d660b82bff028bd7f1d69ec9062 9.0.1
+tag fb5683b869e5d9cbdd567478abd64b4b04539577 9.0.1.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Oct 13 14:02:11 2020 -0400
+Date:	Mon Jun 28 13:35:29 2021 -0400
 
-9.0. update - includes scans of older vendors
+9.0.1.1 update
 
-commit c223930b21477418d6ecf23b08d9a67aa186930f
+commit f6aceedbafc4b14fa25076c06494ef692fd156b6
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Oct 13 13:51:12 2020 -0400
+Date:   Sun Jun 27 20:16:01 2021 -0400
 
-    9.0 update
+    Update to Module Version 4
 
-commit 878ab70b396680ce1cf9651d3b86e967f62ab999
+commit 1b7ed07073e562c41ddc7984faa8421d40cb7427
 Author: Ressy <resa1983@hotmail.com>
-Date:   Thu Feb 27 12:03:03 2020 -0500
+Date:   Sun Jun 27 20:15:02 2021 -0400
 
-    Fix Ticket #9, Accord of Haste wrong itemID
+    Scan of Enchanting
+
+commit b811fc3a97f89084f169e660ca5e4e1fbdc04157
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:14:49 2021 -0400
+
+    Removal of World Quest Custom
+
+commit 24467c0b55124f3d8a37c2c45a7f989a1cadf389
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Jun 9 22:50:10 2021 -0400
+
+    To update to fix Enchanting & Tailoring error
+
+commit 479eea72d8f4c8e15a5d831f554e32c9626b92f2
+Author: Ressy <resa1983@hotmail.com>
+Date:   Tue Nov 24 18:12:42 2020 -0500
+
+    Removal again
+
+commit 78853f61858569e22bae9fbb58b3e039c9eb87d6
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Nov 18 20:57:49 2020 -0500
+
+    Rescan of Enchanting
+
+commit cb573805159b3e9d4cb1d0a19d4e7c5f19f98716
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Oct 26 20:54:24 2020 -0400
+
+    To fix issues
 

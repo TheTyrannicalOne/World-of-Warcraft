@@ -2,7 +2,6 @@
 -- Module Declaration
 --
 
-if not IsTestBuild() then return end
 local mod, CL = BigWigs:NewBoss("Kel'Thuzad", 2450, 2440)
 if not mod then return end
 mod:RegisterEnableMob(175559, 176703, 176973, 176974, 176929) -- Kel'Thuzad, Frostbound Devoted, Unstoppable Abomination, Soul Reaver, Remnant of Kel'Thuzad
@@ -19,7 +18,6 @@ local mobCollector = {}
 local glacialSpikeMarks = {}
 local mindControlled = false
 local inPhylactry = false
-
 local darkEvocationCount = 1
 local blizzardCount = 1
 local soulFractureCount = 1
@@ -88,6 +86,7 @@ function mod:GetOptions()
 		[347292] = L.silence, -- Oblivion's Echo (Silence)
 		[348760] = CL.meteor, -- Frost Blast (Meteor)
 		[354289] = L.miasma, -- Necrotic Miasma (Miasma)
+		[352293] = self:SpellName(249436), -- Necrotic Destruction (Destruction)
 	}
 end
 
@@ -140,9 +139,6 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "ReturnOfTheDamned", 348638)
 	self:Log("SPELL_AURA_REMOVED", "ReturnOfTheDamnedRemoved", 348638)
 
-	-- self:RegisterEvent("GROUP_ROSTER_UPDATE")
-	-- self:GROUP_ROSTER_UPDATE()
-
 	if self:GetOption("custom_on_nameplate_fixate") then
 		self:ShowPlates()
 	end
@@ -181,21 +177,11 @@ end
 -- Event Handlers
 --
 
--- function mod:GROUP_ROSTER_UPDATE() -- Compensate for quitters (LFR)
--- 	tankList = {}
--- 	for unit in self:IterateGroup() do
--- 		if self:Tank(unit) then
--- 			tankList[#tankList+1] = unit
--- 		end
--- 	end
--- end
-
 -- Stage One: Chains and Ice
 function mod:HowlingBlizzardStart(args)
 	self:Message(args.spellId, "cyan", CL.casting:format(args.spellName))
 	self:PlaySound(args.spellId, "long")
 end
-
 
 function mod:HowlingBlizzard(args)
 	self:CastBar(args.spellId, 20, CL.count:format(args.spellName, blizzardCount))
@@ -403,9 +389,42 @@ function mod:NecroticMiasmaApplied(args)
 	end
 end
 
+function mod:NecroticDestruction(args)
+	self:Message(args.spellId, "yellow", CL.casting:format(self:SpellName(249436)))
+	self:PlaySound(args.spellId, "long")
+	self:CastBar(args.spellId, 45, self:SpellName(249436)) -- Destruction
+
+	-- UNIT_SPELLCAST_SUCCEEDED Events which are 2.5~s faster to do a stage change on:
+	-- ClearAllDebuffs-34098-npc:175559
+	-- Cosmetic Death-351625-npc:175559
+	-- Teleport to Floor-351418-npc:175559
+
+	self:StopBar(CL.count:format(self:SpellName(348071), soulFractureCount)) -- Soul Fracture
+	self:StopBar(CL.count:format(L.silence, oblivionsEchoCount)) -- Oblivion's Echo
+	self:StopBar(CL.count:format(L.spikes, glacialWrathCount)) -- Glacial Wrath
+	self:StopBar(CL.count:format(CL.meteor, frostBlastCount)) -- Frost Blast
+	self:StopBar(CL.count:format(self:SpellName(352530), darkEvocationCount)) -- Dark Evocation
+	self:StopBar(CL.count:format(self:SpellName(354198), blizzardCount)) -- Howling Blizzard
+
+	self:SetStage(2)
+	local remnant = self:GetBossId(176929) -- was only ever boss2, but just to make sure
+	if remnant and self:GetHealth(remnant) < 34 then -- final stage 2
+		self:CDBar(355055, 3) -- Glacial Winds
+		self:CDBar(352379, 11) -- Freezing Blast
+		-- if self:Mythic() then
+		-- 	self:CDBar(355127, 7) -- Foul Winds
+		-- end
+	else
+		-- XXX probably varies based on the first person entering?
+		self:CDBar(352379, self:Mythic() and 3 or 7) -- Freezing Blast
+		if self:Mythic() then
+			self:CDBar(355127, 7) -- Foul Winds
+		end
+	end
+end
+
 function mod:NecroticSurgeApplied(args)
 	if not self:IsEngaged() then return end
-
 	self:NewStackMessage(args.spellId, "cyan", args.destName, args.amount)
 	self:PlaySound(args.spellId, "info")
 
@@ -459,40 +478,6 @@ function mod:NecroticSurgeApplied(args)
 			self:CDBar(348760, 29.8, CL.count:format(CL.meteor, frostBlastCount)) -- Frost Blast
 		end
 		self:CDBar(352348, 34) -- Onslaught of the Damned
-	end
-end
-
-function mod:NecroticDestruction(args)
-	self:Message(args.spellId, "yellow", CL.casting:format(args.spellName))
-	self:PlaySound(args.spellId, "long")
-	self:CastBar(args.spellId, 45, self:SpellName(249436)) -- Destruction
-
-	-- UNIT_SPELLCAST_SUCCEEDED Events which are 2.5~s faster to do a stage change on:
-	-- ClearAllDebuffs-34098-npc:175559
-	-- Cosmetic Death-351625-npc:175559
-	-- Teleport to Floor-351418-npc:175559
-
-	self:StopBar(CL.count:format(self:SpellName(348071), soulFractureCount)) -- Soul Fracture
-	self:StopBar(CL.count:format(L.silence, oblivionsEchoCount)) -- Oblivion's Echo
-	self:StopBar(CL.count:format(L.spikes, glacialWrathCount)) -- Glacial Wrath
-	self:StopBar(CL.count:format(CL.meteor, frostBlastCount)) -- Frost Blast
-	self:StopBar(CL.count:format(self:SpellName(352530), darkEvocationCount)) -- Dark Evocation
-	self:StopBar(CL.count:format(self:SpellName(354198), blizzardCount)) -- Howling Blizzard
-
-	self:SetStage(2)
-	local remnant = self:GetBossId(176929) -- was only ever boss2, but just to make sure
-	if remnant and self:GetHealth(remnant) < 34 then -- final stage 2 -- XXX check why this was invalid
-		self:CDBar(355055, 3) -- Glacial Winds
-		self:CDBar(352379, 11) -- Freezing Blast
-		-- if self:Mythic() then
-		-- 	self:CDBar(355127, 7) -- Foul Winds
-		-- end
-	else
-		-- XXX probably varies based on the first person entering?
-		self:CDBar(352379, self:Mythic() and 3 or 7) -- Freezing Blast
-		if self:Mythic() then
-			self:CDBar(355127, 7) -- Foul Winds
-		end
 	end
 end
 

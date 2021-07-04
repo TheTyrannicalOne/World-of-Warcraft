@@ -153,6 +153,8 @@ L["Crocolisks"] = "Кроколиск"
 --[[Translation missing --]]
 --[[ L["Demons"] = "Demons"--]] 
 --[[Translation missing --]]
+--[[ L["Devourer"] = "Devourer"--]] 
+--[[Translation missing --]]
 --[[ L["Dinosaurs"] = "Dinosaurs"--]] 
 --[[Translation missing --]]
 --[[ L["Dire Wolves"] = "Dire Wolves"--]] 
@@ -176,10 +178,14 @@ L["Elekks"] = "Элекки"
 --[[ L["Felsabers"] = "Felsabers"--]] 
 L["Fish"] = "Рыбы"
 --[[Translation missing --]]
+--[[ L["Flies"] = "Flies"--]] 
+--[[Translation missing --]]
 --[[ L["Flying Steeds"] = "Flying Steeds"--]] 
 L["Foxes"] = "лисицы"
 --[[Translation missing --]]
 --[[ L["Gargon"] = "Gargon"--]] 
+--[[Translation missing --]]
+--[[ L["Gargoyle"] = "Gargoyle"--]] 
 L["Goats"] = "Козлы"
 --[[Translation missing --]]
 --[[ L["Gorger"] = "Gorger"--]] 
@@ -191,6 +197,8 @@ L["Gronnlings"] = "Малые гронны"
 L["Gryphons"] = "Грифоны"
 --[[Translation missing --]]
 --[[ L["Gyrocopters"] = "Gyrocopters"--]] 
+--[[Translation missing --]]
+--[[ L["Hands"] = "Hands"--]] 
 L["Hawkstriders"] = "Крылобеги"
 L["Hippogryphs"] = "Гиппогрифы"
 --[[Translation missing --]]
@@ -223,6 +231,8 @@ L["Mammoths"] = "Мамонты"
 --[[ L["Mana Rays"] = "Mana Rays"--]] 
 --[[Translation missing --]]
 --[[ L["Manasabers"] = "Manasabers"--]] 
+--[[Translation missing --]]
+--[[ L["Mauler"] = "Mauler"--]] 
 --[[Translation missing --]]
 --[[ L["Mechanical Animals"] = "Mechanical Animals"--]] 
 --[[Translation missing --]]
@@ -267,6 +277,8 @@ L["Rats"] = "Крысы"
 L["Ravagers"] = "Разорители"
 --[[Translation missing --]]
 --[[ L["Rays"] = "Rays"--]] 
+--[[Translation missing --]]
+--[[ L["Razorwing"] = "Razorwing"--]] 
 --[[Translation missing --]]
 --[[ L["Reptiles"] = "Reptiles"--]] 
 L["Rhinos"] = "Носороги"
@@ -332,6 +344,8 @@ L["Turtles"] = "Черепахи"
 --[[Translation missing --]]
 --[[ L["War Wolves"] = "War Wolves"--]] 
 L["Water Striders"] = "Водные долгоноги"
+--[[Translation missing --]]
+--[[ L["Wilderlings"] = "Wilderlings"--]] 
 --[[Translation missing --]]
 --[[ L["Wind Drakes"] = "Wind Drakes"--]] 
 --[[Translation missing --]]

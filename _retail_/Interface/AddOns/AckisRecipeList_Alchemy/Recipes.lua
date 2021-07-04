@@ -3079,7 +3079,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(127837, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_ELIXIR")
 	recipe:AddQuest(41657, 41662)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Draught of Raw Magic -- 188309
 	recipe = AddRecipe(188309, V.LEGION, Q.COMMON)
@@ -3104,7 +3103,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(127838, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_ELIXIR")
 	recipe:AddQuest(41658)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Sylvan Elixir -- 188312
 	recipe = AddRecipe(188312, V.LEGION, Q.COMMON)
@@ -3129,7 +3127,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(127839, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_ELIXIR")
 	recipe:AddQuest(41659)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Avalanche Elixir -- 188315
 	recipe = AddRecipe(188315, V.LEGION, Q.COMMON)
@@ -3178,7 +3175,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(127841, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_POTION")
 	recipe:AddQuest(41661)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Skystep Potion -- 188321
 	recipe = AddRecipe(188321, V.LEGION, Q.COMMON)
@@ -5042,7 +5038,7 @@ function module:InitializeRecipes()
 
 	-- Novice Crafter's Mark -- 343675
 	recipe = AddRecipe(343675, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(125, 125, 135, 140, 145)
+	recipe:SetSkillLevels(150, 150, 135, 140, 145)
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_MISC")
 	recipe:AddTrainer(156687)
@@ -5057,7 +5053,7 @@ function module:InitializeRecipes()
 
 	-- Crafter's Mark I -- 343679
 	recipe = AddRecipe(343679, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(150, 150, 160, 165, 170)
+	recipe:SetSkillLevels(125, 125, 160, 165, 170)
 	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_MISC")
 	recipe:AddTrainer(156687)
@@ -5068,7 +5064,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(184090, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_POTION")
 	recipe:AddTrainer(156687)
-
 
 	self.InitializeRecipes = nil
 end

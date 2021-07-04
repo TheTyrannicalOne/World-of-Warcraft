@@ -929,6 +929,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(17716, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_TOY")
 	recipe:AddWorldEvent("WINTER_VEIL")
+	recipe:AddCustom("PRESENTS")
 
 	-- Field Repair Bot 74A -- 22704
 	recipe = AddRecipe(22704, V.ORIG, Q.COMMON)
@@ -3790,8 +3791,12 @@ function module:InitializeRecipes()
 	recipe:AddRepVendor(FAC.STORMS_WAKE, REP.REVERED, 135800)
 
 	-- Super-Charged Engine -- 256132
-	recipe = AddRecipe(256132, V.BFA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe = AddRecipe(256132, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(160, 160, 170, 172, 175)
+	recipe:SetRecipeItem(169609, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(158886, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_MOUNT")
+	recipe:AddMobDrop(144246)
 
 	-- Deployable Attire Rearranger -- 256154
 	recipe = AddRecipe(256154, V.BFA, Q.COMMON)
@@ -4851,22 +4856,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENGINEERING_PET")
 	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.EXALTED, 160470)
 
-	-- Bug Zapifier -- 338119
-	recipe = AddRecipe(338119, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Power Hammer -- 338213
-	recipe = AddRecipe(338213, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Boneclad  Stake Launcher -- 338217
-	recipe = AddRecipe(338217, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Duelist's Pistol -- 338220
-	recipe = AddRecipe(338220, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
 	-- Crafter's Mark I -- 343099
 	recipe = AddRecipe(343099, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(45, 45, 55, 60, 65)
@@ -4884,7 +4873,7 @@ function module:InitializeRecipes()
 
 	-- Novice Crafter's Mark -- 343661
 	recipe = AddRecipe(343661, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetSkillLevels(85, 85, 95, 100, 105)
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
 	recipe:AddTrainer(156691)
@@ -4895,7 +4884,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(184308, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddTrainer(156691)
-
 
 	self.InitializeRecipes = nil
 end

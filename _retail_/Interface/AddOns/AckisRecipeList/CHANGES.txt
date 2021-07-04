@@ -1,12 +1,108 @@
-tag 99dc480010ff2f7f27efb95af4660938e3471ef6 9.0.2
+tag 0a407ac54daa6db0cf951dce7d904f7c92b5522e 9.0.1.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Thu Oct 15 19:22:29 2020 -0400
+Date:	Mon Jun 28 13:39:01 2021 -0400
 
-Updated lib url, it'll build now
+9.0.1.1 update
 
-commit 08bcd10c50d88ac18b01b3db1f94b2db490aab4b
+commit 237aa06c29296dad9ac1d16a4e9dc51561544827
 Author: Ressy <resa1983@hotmail.com>
-Date:   Thu Oct 15 19:18:19 2020 -0400
+Date:   Mon Jun 28 13:27:59 2021 -0400
 
-    Cuz apparently this is causing the build to fail
+    Update Version Module
+
+commit b20fc979ebd76d769e13218424cc94d2e3f66dd6
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:42:13 2021 -0400
+
+    Add additional things to support updates to modules
+
+commit fcda5a10e10c07186357ae4d5e420ca1e3dd55bc
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:41:36 2021 -0400
+
+    Add Venari vendor
+
+commit 92dd904772dcf9833df149cdca627154aef96d6e
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:40:54 2021 -0400
+
+    Add Shadowlands Discovery method
+
+commit 4fbcdb04ac9a18c280ee6f583075d87c7232ce83
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:40:30 2021 -0400
+
+    Removal of World Quest Custom
+
+commit cddea97ba2fa624ae62b0dd34fb9d0fbd93fe6e0
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:40:17 2021 -0400
+
+    Fix for scanning vendors & trainers in Garrison - never returns XY
+
+commit a7595260ac271a2cfbfb36a8d48059a9229f5cce
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:39:20 2021 -0400
+
+    Blacklist training/quest recipes
+
+commit 8119605edf47bdf128c5c55b7cb77ab1898ecfd4
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:38:51 2021 -0400
+
+    1 more entry for Trainer & Vendor NPCs
+
+commit 6424fadea40501a4a3bd2f0150fc47145cc8926a
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:38:31 2021 -0400
+
+    Streamline Uldum & Vale invasion maps - just using main maps - removed invasion versions
+
+commit 6a4db161043fd9f57ca31ebecf11bf583a4f0437
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:37:16 2021 -0400
+
+    Fix how the button looks
+
+commit 2e7681a5dffbc2542c456a4e6340a9ea1da7d045
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun Jun 27 20:35:31 2021 -0400
+
+    Add support for Single NPC being both Trainer & Vendor
+
+commit c8e5ac576c915fbdd68691687066ebe3a7961e19
+Author: Ressy <resa1983@hotmail.com>
+Date:   Wed Jun 9 22:49:37 2021 -0400
+
+    To update to stop Enchanting & Tailoring errors
+
+commit 569f96b85583dc689ee5a68a7f88a0b1a9aa85b3
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sat Nov 21 15:08:35 2020 -0500
+
+    Bump toc
+
+commit a5e3024b7c1adef319f7838e3bf8fee586df99eb
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sat Nov 21 15:08:28 2020 -0500
+
+    Add The Venari as a faction
+
+commit 7d49db3c93af0f431d2b4b468cb0d04361324aae
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sat Nov 21 15:06:39 2020 -0500
+
+    Add quest recipe
+
+commit 657364d07dd9c110487825b638e60aae5880dfff
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Oct 26 20:59:00 2020 -0400
+
+    Change comments - mainly just a way to repackage to bring in LibToast fixes
+
+commit 657364d07dd9c110487825b638e60aae5880dfff
+Author: Ressy <resa1983@hotmail.com>
+Date:   Mon Oct 26 20:59:00 2020 -0400
+
+    Change comments - mainly just a way to repackage to bring in LibToast fixes
 

@@ -1,8 +1,12 @@
 # PetEmote
 
-## [v1.8.17](https://github.com/Ravendwyr/PetEmote/tree/v1.8.17) (2021-05-21)
-[Full Changelog](https://github.com/Ravendwyr/PetEmote/commits/v1.8.17) [Previous Releases](https://github.com/Ravendwyr/PetEmote/releases)
+## [v1.8.18](https://github.com/Ravendwyr/PetEmote/tree/v1.8.18) (2021-07-03)
+[Full Changelog](https://github.com/Ravendwyr/PetEmote/commits/v1.8.18) [Previous Releases](https://github.com/Ravendwyr/PetEmote/releases)
 
+- Bump version number to 1.8.18.  
+- Bump Interface number to 90100.  
+- More emote updates. Thanks Varethyn!  
+- Update issue config.  
 - Bump version number to 1.8.17.  
 - Add packager support for Wago Addons.  
 - Begin adding support for Burning Crusade Classic.  
@@ -49,7 +53,3 @@
 - Fixed an error introduced in WoW 8.0.1.  
 - Bump version number to 1.8.10.  
 - More emote updates. Thanks Varethyn!  
-- Fixed an invalid chat event.  
-- Bump Interface number to 70300.  
-- Bump version number to 1.8.9.  
-- Bump Inferface number to 70000.  

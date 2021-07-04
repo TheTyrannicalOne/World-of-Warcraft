@@ -102,6 +102,8 @@ L["Crows"] = "乌鸦"
 L["Demonic Hounds"] = "恶魔犬"
 L["Demonic Steeds"] = "恶魔马"
 L["Demons"] = "恶魔"
+--[[Translation missing --]]
+--[[ L["Devourer"] = "Devourer"--]] 
 L["Dinosaurs"] = "恐龙"
 L["Dire Wolves"] = "恐狼"
 L["Direhorns"] = "恐角龙"
@@ -116,9 +118,13 @@ L["Fathom Rays"] = "海波鳐"
 L["Feathermanes"] = "羽鬃"
 L["Felsabers"] = "邪刃豹"
 L["Fish"] = "鱼"
+--[[Translation missing --]]
+--[[ L["Flies"] = "Flies"--]] 
 L["Flying Steeds"] = "天马"
 L["Foxes"] = "狐"
 L["Gargon"] = "加尔贡"
+--[[Translation missing --]]
+--[[ L["Gargoyle"] = "Gargoyle"--]] 
 L["Goats"] = "山羊"
 L["Gorger"] = "饕餮者"
 L["Gorm"] = "甲虫"
@@ -126,6 +132,8 @@ L["Grand Drakes"] = "大型龙"
 L["Gronnlings"] = "小戈隆"
 L["Gryphons"] = "狮鹫"
 L["Gyrocopters"] = "旋翼"
+--[[Translation missing --]]
+--[[ L["Hands"] = "Hands"--]] 
 L["Hawkstriders"] = "陆行鸟"
 L["Hippogryphs"] = "角鹰"
 L["Horned Steeds"] = "角马"
@@ -146,6 +154,8 @@ L["Lions"] = "狮"
 L["Mammoths"] = "猛犸象"
 L["Mana Rays"] = "法力鳐"
 L["Manasabers"] = "魔刃豹"
+--[[Translation missing --]]
+--[[ L["Mauler"] = "Mauler"--]] 
 L["Mechanical Animals"] = "机械生物"
 L["Mechanical Birds"] = "机械鸟"
 L["Mechanical Cats"] = "机械猫"
@@ -174,6 +184,8 @@ L["Raptors"] = "迅猛龙"
 L["Rats"] = "鼠"
 L["Ravagers"] = "掠夺者"
 L["Rays"] = "鳐"
+--[[Translation missing --]]
+--[[ L["Razorwing"] = "Razorwing"--]] 
 L["Reptiles"] = "爬虫"
 L["Rhinos"] = "犀牛"
 L["Riverbeasts"] = "淡水兽"
@@ -212,6 +224,8 @@ L["Vulpin"] = "烁裘"
 L["Vultures"] = "秃鹫"
 L["War Wolves"] = "战狼"
 L["Water Striders"] = "水黾"
+--[[Translation missing --]]
+--[[ L["Wilderlings"] = "Wilderlings"--]] 
 L["Wind Drakes"] = "风幼龙"
 L["Wolfhawks"] = "狼鹰"
 L["Wolves"] = "狼"

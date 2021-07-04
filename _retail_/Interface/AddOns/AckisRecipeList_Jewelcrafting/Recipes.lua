@@ -7300,9 +7300,9 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(127772, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(127761, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_GEM_PRISMATIC")
-	recipe:AddDiscovery("DISCOVERY_JC_WOD")
 	recipe:AddCustom("MYTHIC")
 	recipe:AddMobDrop(76266)
+	recipe:AddDiscovery("DISCOVERY_JC_WOD")
 
 	-- Immaculate Mastery Taladite -- 187636
 	recipe = AddRecipe(187636, V.WOD, Q.COMMON)
@@ -7820,7 +7820,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(130223, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
 	recipe:AddQuest(41652)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Skystone Loop -- 195924
 	recipe = AddRecipe(195924, V.LEGION, Q.COMMON)
@@ -7837,7 +7836,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(130225, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
 	recipe:AddQuest(41656)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Deep Amber Pendant -- 195926
 	recipe = AddRecipe(195926, V.LEGION, Q.COMMON)
@@ -7854,7 +7852,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(130227, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
 	recipe:AddQuest(41653)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Azsunite Pendant -- 195928
 	recipe = AddRecipe(195928, V.LEGION, Q.COMMON)
@@ -7863,7 +7860,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(130228, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
 	recipe:AddQuest(41651)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Prophetic Band -- 195929
 	recipe = AddRecipe(195929, V.LEGION, Q.COMMON)
@@ -8061,7 +8057,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(136711, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
 	recipe:AddQuest(41654)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Queen's Opal Pendant -- 209610
 	recipe = AddRecipe(209610, V.LEGION, Q.COMMON)
@@ -8070,7 +8065,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(136712, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
 	recipe:AddQuest(41655)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Shadowruby Band -- 209611
 	recipe = AddRecipe(209611, V.LEGION, Q.COMMON)
@@ -9042,104 +9036,86 @@ function module:InitializeRecipes()
 
 	-- Shadowghast Ring -- 327920
 	recipe = AddRecipe(327920, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(178926, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddTrainer(156670)
 
 	-- Shadowghast Necklace -- 327921
 	recipe = AddRecipe(327921, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(178927, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
+	recipe:AddTrainer(156670)
 
 	-- Shadowghast Ring -- 332039
 	recipe = AddRecipe(332039, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(178926, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Necklace -- 332040
 	recipe = AddRecipe(332040, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(178927, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Ring -- 332074
 	recipe = AddRecipe(332074, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(178926, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Necklace -- 332075
 	recipe = AddRecipe(332075, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(178927, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Crown of the Righteous -- 334548
 	recipe = AddRecipe(334548, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Gem Studded Bangle -- 338238
-	recipe = AddRecipe(338238, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Engraved Phaedrum Band -- 338239
-	recipe = AddRecipe(338239, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Polished Gemstones -- 338240
-	recipe = AddRecipe(338240, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Gleaming Kyranite Necklace -- 338241
-	recipe = AddRecipe(338241, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Kyranite Dangle -- 338242
-	recipe = AddRecipe(338242, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Solenium Wire -- 338243
-	recipe = AddRecipe(338243, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Carved Crystal Ring -- 338244
-	recipe = AddRecipe(338244, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Hollowed Crystal -- 338245
-	recipe = AddRecipe(338245, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Faceted Crystal -- 338246
-	recipe = AddRecipe(338246, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Sinister Choker -- 338247
-	recipe = AddRecipe(338247, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Brilliant Bauble -- 338248
-	recipe = AddRecipe(338248, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-
-	-- Fine Sinvyr Chain -- 338249
-	recipe = AddRecipe(338249, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 10, 15, 20)
+	recipe:SetCraftedItem(180760, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_COSMETIC")
+	recipe:AddCustom("CLOUDWALKERS_COFFER")
 
 	-- Shadowghast Necklace -- 338977
 	recipe = AddRecipe(338977, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(178927, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Shadowghast Ring -- 338978
 	recipe = AddRecipe(338978, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(178926, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
 	-- Novice Crafter's Mark -- 343693
 	recipe = AddRecipe(343693, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetSkillLevels(70, 70, 80, 85, 90)
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(156670)
 
 	-- Crafter's Mark II -- 343696
 	recipe = AddRecipe(343696, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 110, 115, 120)
 	recipe:SetCraftedItem(173382, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddRepVendor(FAC.THE_AVOWED, REP.REVERED, 173705)
 
 	-- Crafter's Mark I -- 343697
 	recipe = AddRecipe(343697, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(45, 45, 55, 60, 65)
 	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(156670)
 
 	self.InitializeRecipes = nil

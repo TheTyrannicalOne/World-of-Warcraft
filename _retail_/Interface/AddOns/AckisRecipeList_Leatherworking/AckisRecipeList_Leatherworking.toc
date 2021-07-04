@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Leatherworking
 ## Notes: Leatherworking data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: 7f12166
+## Version: 9.0.1.1
+## X-Revision: e8e85f3
 ## X-Date: 2020-10-13T17:53:56Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

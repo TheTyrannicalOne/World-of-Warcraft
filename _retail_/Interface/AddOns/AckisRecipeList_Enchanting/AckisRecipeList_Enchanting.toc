@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Enchanting
 ## Notes: Enchanting data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: c223930
+## Version: 9.0.1.1
+## X-Revision: f6aceed
 ## X-Date: 2020-10-13T17:51:12Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

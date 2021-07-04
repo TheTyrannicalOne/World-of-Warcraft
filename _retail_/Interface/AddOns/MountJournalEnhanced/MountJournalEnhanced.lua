@@ -13,7 +13,7 @@ local function InitUI()
     frame:RegisterEvent("ZONE_CHANGED_INDOORS")
     frame:RegisterEvent("MOUNT_JOURNAL_USABILITY_CHANGED")
     frame:RegisterEvent("MOUNT_JOURNAL_SEARCH_UPDATED")
-    frame:SetScript("OnEvent", function(sender, ...)
+    frame:SetScript("OnEvent", function()
         if CollectionsJournal:IsShown() then
             ADDON.Api:UpdateIndex(true)
             ADDON.UI:UpdateMountList()
@@ -41,24 +41,24 @@ local frame = CreateFrame("Frame")
 frame:RegisterEvent("PLAYER_LOGIN")
 frame:RegisterEvent("NEW_MOUNT_ADDED")
 frame:RegisterEvent("ADDON_LOADED")
-frame:SetScript("OnEvent", function(self, event, ...)
+frame:SetScript("OnEvent", function(_, event, ...)
     if MountJournal then
         frame:UnregisterEvent("ADDON_LOADED")
         ADDON.Events:TriggerEvent("OnJournalLoaded")
-        ADDON.Events:UnregisterAllCallbacksByEvent("OnJournalLoaded")
+        ADDON.Events:UnregisterEvents({"OnJournalLoaded"})
     end
 
     if event == "PLAYER_LOGIN" then
         ADDON:ResetIngameFilter()
         ADDON.Events:TriggerEvent("OnInit")
-        --ADDON.Debug:CheckListTaint("pre-login")
         ADDON.Events:TriggerEvent("OnLogin")
-        --ADDON.Debug:CheckListTaint("post-login")
-        ADDON.Events:UnregisterAllCallbacksByEvent("OnInit")
-        ADDON.Events:UnregisterAllCallbacksByEvent("OnLogin")
+        ADDON.Events:UnregisterEvents({"OnInit", "OnLogin"})
     elseif event == "NEW_MOUNT_ADDED" then
-        ADDON.Events:TriggerEvent("OnNewMount", ...)
-        ADDON.Api:UpdateIndex()
+        local param1, param2, param3 = ...
+        C_Timer.After(1, function() -- mount infos are not properly updated in current frame
+            ADDON.Events:TriggerEvent("OnNewMount", param1, param2, param3)
+            ADDON.Api:UpdateIndex()
+        end)
     end
 end)
 
@@ -69,17 +69,10 @@ EventRegistry:RegisterCallback("MountJournal.OnShow", function()
         InitUI()
         ADDON.initialized = true
 
-        --ADDON.Debug:CheckListTaint("pre preloadUI")
         ADDON.Events:TriggerEvent("preloadUI")
-        --ADDON.Debug:CheckListTaint("pre loadUI")
         ADDON.Events:TriggerEvent("loadUI")
-        --ADDON.Debug:CheckListTaint("pre postloadUI")
         ADDON.Events:TriggerEvent("postloadUI")
-        --ADDON.Debug:CheckListTaint("post postloadUI")
-
-        ADDON.Events:UnregisterAllCallbacksByEvent("preloadUI")
-        ADDON.Events:UnregisterAllCallbacksByEvent("loadUI")
-        ADDON.Events:UnregisterAllCallbacksByEvent("postloadUI")
+        ADDON.Events:UnregisterEvents({"preloadUI", "loadUI", "postloadUI"})
 
         if ADDON.Api:GetSelected() == nil then
             ADDON.Api:SetSelected(select(12, ADDON.Api:GetDisplayedMountInfo(1)))

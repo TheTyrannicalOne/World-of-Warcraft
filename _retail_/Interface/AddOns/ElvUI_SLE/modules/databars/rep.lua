@@ -1,6 +1,6 @@
 ﻿local SLE, T, E, L = unpack(select(2, ...))
-local DB = SLE:GetModule('DataBars')
-local EDB = E:GetModule('DataBars')
+local DB = SLE.DataBars
+local EDB = E.DataBars
 
 --GLOBALS: hooksecurefunc
 local _G = _G
@@ -60,8 +60,9 @@ end
 
 local function ReputationBar_Update()
 	if not SLE.initialized or not E.db.sle.databars.reputation.longtext then return end
-
 	local bar = EDB.StatusBars.Reputation
+
+	if not bar.db.enable or bar:ShouldHide() then return end
 
 	local displayString, textFormat, label = '', EDB.db.reputation.textFormat
 	local name, reaction, minValue, maxValue, curValue, factionID = GetWatchedFactionInfo()
@@ -75,7 +76,7 @@ local function ReputationBar_Update()
 		end
 	elseif C_Reputation_IsFactionParagon(factionID) then
 		local current, threshold
-		current, threshold, _, rewardPending = C_Reputation_GetFactionParagonInfo(factionID)
+		current, threshold = C_Reputation_GetFactionParagonInfo(factionID)
 
 		if current and threshold then
 			label, minValue, maxValue, curValue, reaction = L["Paragon"], 0, threshold, current % threshold, 9
@@ -111,10 +112,10 @@ end
 function DB:PopulateRepPatterns()
 	local symbols = {'%.$','%(','%)','|3%-7%%%(%%s%%%)','%%s([^%%])','%+','%%d','%%.1f','%%.','%%(','%%)','(.-)','(.-)%1','%%+','(%%d-)','(%%d-)'}
 	local pattern
-	pattern = T.rgsub(FACTION_STANDING_INCREASED, unpack(symbols));
+	pattern = T.rgsub(FACTION_STANDING_INCREASED, unpack(symbols))
 	tinsert(DB.RepIncreaseStrings, pattern)
 
-	pattern = T.rgsub(FACTION_STANDING_INCREASED_ACH_BONUS, unpack(symbols));
+	pattern = T.rgsub(FACTION_STANDING_INCREASED_ACH_BONUS, unpack(symbols))
 	tinsert(DB.RepIncreaseStrings, pattern)
 
 	pattern = T.rgsub(FACTION_STANDING_DECREASED, unpack(symbols))
@@ -144,7 +145,7 @@ function DB:FilterReputation(_, message, ...)
 end
 
 function DB:ScanFactions()
-	DB.factions = GetNumFactions();
+	DB.factions = GetNumFactions()
 	for i = 1, DB.factions do
 		local name, _, standingID, _, _, barValue, _, _, isHeader, _, hasRep, _, _, factionID = GetFactionInfo(i)
 
@@ -152,7 +153,7 @@ function DB:ScanFactions()
 			DB.factionVars[name] = DB.factionVars[name] or {}
 			DB.factionVars[name].Standing = standingID
 			if C_Reputation_IsFactionParagon(factionID) then
-				local currentValue = C_Reputation_GetFactionParagonInfo(factionID);
+				local currentValue = C_Reputation_GetFactionParagonInfo(factionID)
 				DB.factionVars[name].Value = currentValue
 				DB.factionVars[name].isParagon = true
 			else
@@ -183,7 +184,7 @@ function DB:NewRepString()
 
 		if (not isHeader or hasRep) and DB.factionVars[name] then
 			if DB.factionVars[name].isParagon then
-				local currentValue = C_Reputation_GetFactionParagonInfo(factionID);
+				local currentValue = C_Reputation_GetFactionParagonInfo(factionID)
 				barValue = currentValue
 			end
 			local diff = barValue - DB.factionVars[name].Value

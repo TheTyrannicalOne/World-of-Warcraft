@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Cooking
 ## Notes: Cooking data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: b7213e7
+## Version: 9.0.1.1
+## X-Revision: 4a04067
 ## X-Date: 2020-10-13T17:50:46Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

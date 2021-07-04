@@ -151,6 +151,8 @@ L["Demonic Hounds"] = "Molosses Démoniaques"
 --[[Translation missing --]]
 --[[ L["Demons"] = "Demons"--]] 
 --[[Translation missing --]]
+--[[ L["Devourer"] = "Devourer"--]] 
+--[[Translation missing --]]
 --[[ L["Dinosaurs"] = "Dinosaurs"--]] 
 --[[Translation missing --]]
 --[[ L["Dire Wolves"] = "Dire Wolves"--]] 
@@ -173,10 +175,14 @@ L["Elementals"] = "Élémentaires"
 --[[ L["Felsabers"] = "Felsabers"--]] 
 L["Fish"] = "Poissons"
 --[[Translation missing --]]
+--[[ L["Flies"] = "Flies"--]] 
+--[[Translation missing --]]
 --[[ L["Flying Steeds"] = "Flying Steeds"--]] 
 L["Foxes"] = "Renards"
 --[[Translation missing --]]
 --[[ L["Gargon"] = "Gargon"--]] 
+--[[Translation missing --]]
+--[[ L["Gargoyle"] = "Gargoyle"--]] 
 L["Goats"] = "Chèvres"
 --[[Translation missing --]]
 --[[ L["Gorger"] = "Gorger"--]] 
@@ -188,6 +194,8 @@ L["Gronnlings"] = "Gronnlins"
 L["Gryphons"] = "Griffons"
 --[[Translation missing --]]
 --[[ L["Gyrocopters"] = "Gyrocopters"--]] 
+--[[Translation missing --]]
+--[[ L["Hands"] = "Hands"--]] 
 L["Hawkstriders"] = "Faucon-Pérégrins"
 L["Hippogryphs"] = "Hippogriffes"
 --[[Translation missing --]]
@@ -219,6 +227,8 @@ L["Mammoths"] = "Mammouths"
 --[[ L["Mana Rays"] = "Mana Rays"--]] 
 --[[Translation missing --]]
 --[[ L["Manasabers"] = "Manasabers"--]] 
+--[[Translation missing --]]
+--[[ L["Mauler"] = "Mauler"--]] 
 --[[Translation missing --]]
 --[[ L["Mechanical Animals"] = "Mechanical Animals"--]] 
 --[[Translation missing --]]
@@ -262,6 +272,8 @@ L["Raptors"] = "Raptors"
 L["Rats"] = "Rats"
 L["Ravagers"] = "Saccageurs"
 L["Rays"] = "Raies"
+--[[Translation missing --]]
+--[[ L["Razorwing"] = "Razorwing"--]] 
 --[[Translation missing --]]
 --[[ L["Reptiles"] = "Reptiles"--]] 
 L["Rhinos"] = "Rhinocéros"
@@ -327,6 +339,8 @@ L["Turtles"] = "Tortues"
 --[[Translation missing --]]
 --[[ L["War Wolves"] = "War Wolves"--]] 
 L["Water Striders"] = "Trotteurs aquatiques"
+--[[Translation missing --]]
+--[[ L["Wilderlings"] = "Wilderlings"--]] 
 --[[Translation missing --]]
 --[[ L["Wind Drakes"] = "Wind Drakes"--]] 
 --[[Translation missing --]]

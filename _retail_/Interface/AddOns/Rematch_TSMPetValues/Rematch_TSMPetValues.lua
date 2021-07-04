@@ -3,9 +3,9 @@
 ------------------------------------------------------------------------------
 -- Rematch_TSMPetValues.lua - Main addon file
 --
--- Author: Expelliarm5s / April 2021 / All Rights Reserved
+-- Author: Expelliarm5s / July 2021 / All Rights Reserved
 --
--- Version 1.1.21
+-- Version 1.1.22
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 

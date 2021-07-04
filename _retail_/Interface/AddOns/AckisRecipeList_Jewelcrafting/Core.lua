@@ -2,7 +2,7 @@
 -- Constants
 -------------------------------------------------------------------------------
 local MODULE_NAME = "Jewelcrafting"
-local MODULE_VERSION = 3
+local MODULE_VERSION = 4
 
 -------------------------------------------------------------------------------
 -- AddOn namespace.

@@ -837,6 +837,7 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldEvent("WINTER_VEIL")
+	recipe:AddCustom("PRESENTS")
 
 	-- Spellpower -- 22749
 	recipe = AddRecipe(22749, V.ORIG, Q.RARE)
@@ -3159,7 +3160,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128537, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddQuest(41669)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Haste -- 191010
 	recipe = AddRecipe(191010, V.LEGION, Q.COMMON)
@@ -3168,7 +3168,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128538, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddQuest(41672)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Mastery -- 191011
 	recipe = AddRecipe(191011, V.LEGION, Q.COMMON)
@@ -3177,7 +3176,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128539, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddQuest(41673)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Versatility -- 191012
 	recipe = AddRecipe(191012, V.LEGION, Q.COMMON)
@@ -3226,7 +3224,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128545, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddQuest(41671)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Agility -- 191018
 	recipe = AddRecipe(191018, V.LEGION, Q.COMMON)
@@ -3235,7 +3232,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128546, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddQuest(41670)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Intellect -- 191019
 	recipe = AddRecipe(191019, V.LEGION, Q.COMMON)
@@ -3244,7 +3240,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128547, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddQuest(41674)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Binding of Strength -- 191020
 	recipe = AddRecipe(191020, V.LEGION, Q.COMMON)
@@ -4422,7 +4417,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(155, 155, 165, 170, 175)
 	recipe:SetCraftedItem(168412, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
-	recipe:AddTrainer(122702, 136041)
+	recipe:AddTrainer(122702, 136041, 153811)
 
 	-- Uncanny Combatant's Sorcerous Scepter -- 305936
 	recipe = AddRecipe(305936, V.BFA, Q.COMMON)
@@ -4638,7 +4633,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(182666, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(172437, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
-	recipe:AddRepVendor(FAC.THE_AVOWED, REP.HONORED, 173705)
+	recipe:AddTrainer(156683)
 
 	-- Enchanted Heavy Desolate Hide -- 309637
 	recipe = AddRecipe(309637, V.SHA, Q.COMMON)
@@ -4720,7 +4715,7 @@ function module:InitializeRecipes()
 
 	-- Novice Crafter's Mark -- 343680
 	recipe = AddRecipe(343680, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetSkillLevels(50, 50, 50, 55, 60)
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddTrainer(156683)
@@ -4738,10 +4733,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddTrainer(156683)
-
-	-- Boundless Basket -- 346026
-	recipe = AddRecipe(346026, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
 
 	self.InitializeRecipes = nil
 end

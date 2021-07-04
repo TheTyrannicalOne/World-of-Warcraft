@@ -5,8 +5,8 @@ enUS localization strings for Ackis Recipe List
 ************************************************************************
 File date: 2012-08-18T4:52:05Z 
 File revision: 4d6b8e446c1381fe41575a671a6c54702932e4db 
-Project revision: 08bcd10c50d88ac18b01b3db1f94b2db490aab4b
-Project version: 9.0.2
+Project revision: 237aa06c29296dad9ac1d16a4e9dc51561544827
+Project version: 9.0.1.1
 ************************************************************************
 Translation credits: http://www.wowace.com/addons/arl/localization/translators/
 
@@ -230,6 +230,7 @@ L["Brawn"] = true
 L["BRD_MAIL"] = "There are four spawn spots in Blackrock Depths: just before entering the Manufactory, in Golem Lord Arglemach's room, in the Manufactory on a bench, or in the Mold Foundry."
 L["BRD_SHOULDERS"] = "There is one rare spawn spot in Blackrock Depths: the room just after the shadowforge lock and just before the arena, in the corner on some bunk beds."
 L["Brek Stonehoof"] = true
+L["Brightgleam"] = true
 L["Brikk Keencraft"] = true
 L["Brock Stoneseeker"] = true
 L["Bro'kin"] = true
@@ -294,6 +295,7 @@ L["Close GUI"] = "Close with Tradeskill UI"
 L["CLOSE_DESC"] = "Close the Recipe List Window."
 L["CLOSEGUI_DESC"] = "Close the ARL window when the crafting window is closed."
 L["Cloth"] = true
+L["CLOUDWALKERS_COFFER"] = "Contained within the Cloudwalker's Coffer."
 L["Clyde Ranthal"] = true
 L["Coilfang Oracle"] = true
 L["Coilfang Sorceress"] = true
@@ -457,6 +459,7 @@ L["DISCOVERY_JC_WOD"] = "Obtained via the drop, or randomly via creating other e
 L["DISCOVERY_LW_BFA"] = "Discovered randomly from creating a lower iLvl item in the same slot."
 L["DISCOVERY_LW_HARDENED_PANDARIA"] = "Discovered by crafting Hardened Magnificent Hide, or via the pattern for the Hardened Magnificent Hide."
 L["DISCOVERY_LW_PANDARIA"] = "Obtained randomly via the daily Magnificence of Leather and Magnificence of Scales."
+L["DISCOVERY_SHADOWLANDS"] = "Discovered by crafting the lower ilvl version enough times to fill the profession leveling bar."
 L["DISCOVERY_TAILOR_BFA"] = "Discovered randomly from creating a lower iLvl item in the same slot."
 L["DISCOVERY_TAILOR_CELESTIAL_PANDARIA"] = "Discovered by crafting Celestial Cloth, or via the dropped recipe for Celestial Cloth."
 L["DISCOVERY_TAILOR_PANDARIA"] = "Obtained randomly via the daily Imperial Silk cooldown."
@@ -1063,6 +1066,7 @@ L["MissingFromDB"] = [=[": is missing from the database.
 Please inform the author of the add-on about this recipe."]=]
 L["Mistress Mihaela"] = true
 L["Misty Merriweather"] = true
+L["MIXED_DESC"] = "Recipes obtained via NPCs that are both Trainer & Vendor should be included in the scan."
 L["Mixie Farshot"] = true
 L["Mo'arg Weaponsmith"] = true
 L["Mob Drop"] = true
@@ -1205,6 +1209,7 @@ L["Potion"] = true
 L["Pozzlow"] = true
 L["Pratt McGrubben"] = true
 L["PREREQ"] = "Actions must be performed before the acquire source is accessible."
+L["PRESENTS"] = "Visit Grandfather Winter, and loot the presents."
 L["Primal Ooze"] = true
 L["Primal Stalker"] = true
 L["PRISMATIC_GEM"] = "Prismatic"
@@ -1440,6 +1445,7 @@ L["Staff"] = true
 L["Stalriss Dawnrunner"] = true
 L["Steeg Haskell"] = true
 L["Stephen Ryback"] = true
+L["Stephen Wong"] = true
 L["Steven Cochrane"] = true
 L["Stitcher Au'phes"] = true
 L["Stoic Mammoth"] = true
@@ -1553,6 +1559,7 @@ L["Torn Fin Oracle"] = true
 L["Torn Fin Tidehunter"] = true
 L["Trader Narasu"] = true
 L["Trainer"] = true
+L["Trainer & Vendor"] = true
 L["TRAINER_DESC"] = "Recipes learned from trainers should be included in the scan."
 L["TRANQUIL_MIND"] = "Scroll located in the back right of the shop on the counter."
 L["Transmute"] = true
@@ -1593,6 +1600,7 @@ L["Vargus"] = true
 L["Vazario Linkgrease"] = true
 L["Vekh'nir Dreadhawk"] = true
 L["Velia Moonbow"] = true
+L["Ve'nari"] = true
 L["Vendor"] = true
 L["VENDOR_DESC"] = "Recipes purchased from vendors should be included in the scan."
 L["Vendor-Tron 1000"] = true

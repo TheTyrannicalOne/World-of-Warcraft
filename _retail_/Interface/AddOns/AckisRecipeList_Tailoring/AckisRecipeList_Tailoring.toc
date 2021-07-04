@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Tailoring
 ## Notes: Tailoring data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: 5fff581
+## Version: 9.0.1.1
+## X-Revision: 64afb83
 ## X-Date: 2020-10-13T17:54:45Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

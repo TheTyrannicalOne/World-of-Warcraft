@@ -123,6 +123,7 @@ function module:InitializeVendors()
 	AddVendor(58706,	L["Gina Mudclaw"],			Z.VALLEY_OF_THE_FOUR_WINDS,	52.4,	51.6,	"Neutral")
 	AddVendor(63721,	L["Nat Pagle"],				Z.KRASARANG_WILDS,		68.4, 	43.5,	"Neutral")
 	AddVendor(64084,	L["Jojo"],				Z.VALE_OF_ETERNAL_BLOSSOMS,	62.4,	26.6,	"Alliance") -- Needs updating
+	AddVendor(64126,	L["Stephen Wong"],			Z.VALLEY_OF_THE_FOUR_WINDS,	59.1,	16.2,	"Horde")
 	AddVendor(64395,	L["Nam Ironpaw"],			Z.VALLEY_OF_THE_FOUR_WINDS,	53.5,	51.3,	"Neutral")
 	AddVendor(64465,	L["Noodles"],				Z.VALLEY_OF_THE_FOUR_WINDS,	52.4,	51.6,	"Neutral")
 	AddVendor(76928,	L["Kraank"],				Z.FROSTWALL,			36.8,	39.6,	"Horde")

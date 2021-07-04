@@ -1,8 +1,11 @@
 # BigWigs
 
-## [v223.3](https://github.com/BigWigsMods/BigWigs/tree/v223.3) (2021-06-14)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v223.2...v223.3) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v225](https://github.com/BigWigsMods/BigWigs/tree/v225) (2021-06-29)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v224...v225) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- parser: Don't match args.spellId when checking if statements  
-- Loader: Remove duplicate zone id  
-- Loader: Last bit of load printing  
+- bump version  
+- Bump toc  
+- Remove load guards for a future release  
+- Loader: Add Tazavesh, the Veiled Market (#1077)  
+- SanctumOfDomination: Remove load guards  
+- Core/BossPrototype: Tweak :CustomIcon  

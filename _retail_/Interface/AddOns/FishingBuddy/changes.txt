@@ -1,3 +1,9 @@
+Version 1.16.5
+- Latest version of LibBabble-SubZone
+
+Version 1.16.4
+- Again with the max lure issue (thanks again bolerro619!)
+
 Version 1.16.3
 - Fix max lure issue (thanks again bolerro619!)
 - See if we can avoid hat buff stomping

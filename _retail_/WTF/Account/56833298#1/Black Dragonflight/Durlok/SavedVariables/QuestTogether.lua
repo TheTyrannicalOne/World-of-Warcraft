@@ -36,10 +36,9 @@ QuestTogether = {
 				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[40643] = {
+			["title"] = "A Summons From Moonglade",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[51432] = {
@@ -50,14 +49,13 @@ QuestTogether = {
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10 Fresh Star Moss", -- [1]
+				"2/10  ", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[44948] = {
@@ -66,10 +64,10 @@ QuestTogether = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[44989] = {
@@ -84,10 +82,10 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
 		[50603] = {
@@ -102,9 +100,11 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[31891] = {
@@ -117,10 +117,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
 		[47105] = {
@@ -129,16 +129,16 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[40643] = {
-			["title"] = "A Summons From Moonglade",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

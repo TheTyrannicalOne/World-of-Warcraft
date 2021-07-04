@@ -1,9 +1,5 @@
-v4.22 [alpha]
+v4.23 [6/30/2021]
 
 Fixes:
-- Fixed Help Icon not rendering
-- Changed Error check on health element
-- Reputation bar fixes for full display didnt seem to work as intended
-
-Added:
-- Added Discord url for support
+- Transmog error on inspecting
+- Nil error in config option for armory stats

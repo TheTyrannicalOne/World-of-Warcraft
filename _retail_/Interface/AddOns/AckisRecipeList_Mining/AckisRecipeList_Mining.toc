@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Mining
 ## Notes: Mining data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: 6d756bc
+## Version: 9.0.1.1
+## X-Revision: 07b603f
 ## X-Date: 2020-10-13T17:54:18Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

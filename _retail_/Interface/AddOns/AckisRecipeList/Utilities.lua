@@ -401,6 +401,7 @@ do
 		"Trainer",
 		"Vendor",
 		"WorldEvent",
+		"Trainer & Vendor",
 	}
 
 	function addon:DumpProfessionLists(target_profession_name)

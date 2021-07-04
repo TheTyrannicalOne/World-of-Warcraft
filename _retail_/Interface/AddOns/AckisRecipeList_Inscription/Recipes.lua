@@ -982,7 +982,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(65651, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(63246, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
-	recipe:AddWorldDrop(Z.ULDUM_INVASION)
+	recipe:AddWorldDrop(Z.ULDUM)
 
 	-- Key to the Planes -- 86648
 	recipe = AddRecipe(86648, V.CATA, Q.COMMON)
@@ -2233,7 +2233,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128987, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
 	recipe:AddQuest(41665)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Vantus Rune: Nythendra -- 192892
 	recipe = AddRecipe(192892, V.LEGION, Q.COMMON)
@@ -2242,7 +2241,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128988, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
 	recipe:AddQuest(41666)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Vantus Rune: Il'gynoth, The Heart of Corruption -- 192893
 	recipe = AddRecipe(192893, V.LEGION, Q.COMMON)
@@ -2251,7 +2249,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128989, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
 	recipe:AddQuest(41668)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Vantus Rune: Dragons of Nightmare -- 192894
 	recipe = AddRecipe(192894, V.LEGION, Q.COMMON)
@@ -2260,7 +2257,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128990, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
 	recipe:AddQuest(41664)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Vantus Rune: Xavius -- 192895
 	recipe = AddRecipe(192895, V.LEGION, Q.COMMON)
@@ -2269,7 +2265,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128991, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
 	recipe:AddQuest(41667)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Vantus Rune: Elerethe Renferal -- 192896
 	recipe = AddRecipe(192896, V.LEGION, Q.COMMON)
@@ -2278,7 +2273,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128992, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
 	recipe:AddQuest(41663)
-	recipe:AddCustom("WORLD_QUEST")
 
 	-- Vantus Rune: Cenarius -- 192897
 	recipe = AddRecipe(192897, V.LEGION, Q.COMMON)
@@ -4132,10 +4126,11 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(90, 90, 100, 105, 110)
 	recipe:SetCraftedItem(180755, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_HEAD")
+	recipe:AddVendor(172634)
 
 	-- Novice Crafter's Mark -- 343686
 	recipe = AddRecipe(343686, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetSkillLevels(50, 50, 50, 55, 60)
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_MATERIALS")
 	recipe:AddTrainer(156685)

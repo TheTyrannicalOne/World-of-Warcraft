@@ -37,15 +37,18 @@ Benik, The Slacker
 Blazeflack
 Boradan
 Camealion
+Eltreum
 Merathilis, The Confused
+Nihilistzsche
 Nils Ruesch
 Omega1970
 Pvtschlag
+Releaf
+Roxanne
 Shenzo
 Simpy, The Heretic
 Sinaris
-Swordyy
-Whiro]]
+Swordyy]]
 
 
 local function configTable()

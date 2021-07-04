@@ -1,14 +1,14 @@
-6/15 19:50:01.943  Loading add-on AngryWorldQuests
-6/15 19:50:01.943  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
-6/15 19:50:01.943  (null)
-6/15 19:50:01.943  Loading add-on Hekili
-6/15 19:50:01.943  ** Loading table of contents Interface\AddOns\Hekili\Hekili.toc
-6/15 19:50:01.943  ++ Loading file Interface\AddOns\Hekili\embeds.xml
-6/15 19:50:01.943  Interface\AddOns\Hekili\Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml(1): error: not well-formed (invalid token)
-6/15 19:50:01.943  Interface\AddOns\Hekili\Libs\AceTimer-3.0\AceTimer-3.0.xml(1): error: not well-formed (invalid token)
-6/15 19:50:01.943  Interface\AddOns\Hekili\Libs\AceSerializer-3.0\AceSerializer-3.0.xml(1): error: not well-formed (invalid token)
-6/15 19:50:01.943  Interface\AddOns\Hekili\Libs\LibSharedMedia-3.0\lib.xml(1): error: not well-formed (invalid token)
-6/15 19:50:01.943  Interface\AddOns\Hekili\Libs\AceGUI-3.0_SFX-Widgets\AceGUI-3.0_SFX-Widgets.xml(1): error: not well-formed (invalid token)
-6/15 19:50:01.943  Interface\AddOns\Hekili\Libs\LibItemBuffs-1.0\LibItemBuffs-1.0.xml(1): error: not well-formed (invalid token)
-6/15 19:50:01.943  Interface\AddOns\Hekili\Libs\LibCustomGlow-1.0\LibCustomGlow-1.0.xml(1): error: not well-formed (invalid token)
-6/15 19:50:01.943  Interface\AddOns\Hekili\Libs\LibChatAnims\LibChatAnims.xml(1): error: not well-formed (invalid token)
+6/19 11:58:34.636  Loading add-on AngryWorldQuests
+6/19 11:58:34.636  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
+6/19 11:58:34.636  (null)
+6/19 11:58:34.636  Loading add-on Hekili
+6/19 11:58:34.636  ** Loading table of contents Interface\AddOns\Hekili\Hekili.toc
+6/19 11:58:34.636  ++ Loading file Interface\AddOns\Hekili\embeds.xml
+6/19 11:58:34.636  Interface\AddOns\Hekili\Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml(1): error: not well-formed (invalid token)
+6/19 11:58:34.636  Interface\AddOns\Hekili\Libs\AceTimer-3.0\AceTimer-3.0.xml(1): error: not well-formed (invalid token)
+6/19 11:58:34.636  Interface\AddOns\Hekili\Libs\AceSerializer-3.0\AceSerializer-3.0.xml(1): error: not well-formed (invalid token)
+6/19 11:58:34.636  Interface\AddOns\Hekili\Libs\LibSharedMedia-3.0\lib.xml(1): error: not well-formed (invalid token)
+6/19 11:58:34.636  Interface\AddOns\Hekili\Libs\AceGUI-3.0_SFX-Widgets\AceGUI-3.0_SFX-Widgets.xml(1): error: not well-formed (invalid token)
+6/19 11:58:34.636  Interface\AddOns\Hekili\Libs\LibItemBuffs-1.0\LibItemBuffs-1.0.xml(1): error: not well-formed (invalid token)
+6/19 11:58:34.636  Interface\AddOns\Hekili\Libs\LibCustomGlow-1.0\LibCustomGlow-1.0.xml(1): error: not well-formed (invalid token)
+6/19 11:58:34.636  Interface\AddOns\Hekili\Libs\LibChatAnims\LibChatAnims.xml(1): error: not well-formed (invalid token)

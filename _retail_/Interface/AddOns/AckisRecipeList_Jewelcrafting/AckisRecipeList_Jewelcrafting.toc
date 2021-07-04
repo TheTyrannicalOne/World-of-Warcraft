@@ -2,8 +2,8 @@
 ## Title: Ackis Recipe List: Jewelcrafting
 ## Notes: Jewelcrafting data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1
-## X-Revision: 40b3166
+## Version: 9.0.1.1
+## X-Revision: 9264f8f
 ## X-Date: 2020-10-13T17:53:24Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1

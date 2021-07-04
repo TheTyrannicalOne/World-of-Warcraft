@@ -1528,7 +1528,7 @@
     <FeedingEmotes />
   </EmoteConfiguration>
   <EmoteConfiguration>
-    <Name>Aqir</Name>
+    <Name>Aqiri</Name>
     <PetFamily>
       <Name>Silithid</Name>
       <Language>en</Language>
@@ -1620,6 +1620,84 @@
             </Properties>
             <ChildNodes />
           </EmoteNode>
+          <EmoteNode>
+            <Text>eagerly</Text>
+            <Properties>
+              <Condition>PetIsHappy</Condition>
+              <MustContinue>false</MustContinue>
+              <Keywords>
+                <Keyword>eagerly</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes />
+          </EmoteNode>
+          <EmoteNode>
+            <Text>excitedly</Text>
+            <Properties>
+              <Condition>TargetIsFriendly</Condition>
+              <MustContinue>false</MustContinue>
+              <Keywords>
+                <Keyword>excitedly</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes>
+              <EmoteNode>
+                <Text>when he</Text>
+                <Properties>
+                  <Condition>PetIsMale</Condition>
+                  <MustContinue>true</MustContinue>
+                  <Keywords>
+                    <Keyword>when</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes>
+                  <EmoteNode>
+                    <Text>sees %t</Text>
+                    <Properties>
+                      <Condition>TargetIsFriendly</Condition>
+                      <MustContinue>false</MustContinue>
+                      <Keywords>
+                        <Keyword>sees</Keyword>
+                        <Keyword>%t</Keyword>
+                      </Keywords>
+                      <Chance>100</Chance>
+                    </Properties>
+                    <ChildNodes />
+                  </EmoteNode>
+                </ChildNodes>
+              </EmoteNode>
+              <EmoteNode>
+                <Text>when she</Text>
+                <Properties>
+                  <Condition>PetIsFemale</Condition>
+                  <MustContinue>true</MustContinue>
+                  <Keywords>
+                    <Keyword>when</Keyword>
+                    <Keyword>she</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes>
+                  <EmoteNode>
+                    <Text>sees %t</Text>
+                    <Properties>
+                      <Condition>TargetIsFriendly</Condition>
+                      <MustContinue>false</MustContinue>
+                      <Keywords>
+                        <Keyword>sees</Keyword>
+                        <Keyword>%t</Keyword>
+                      </Keywords>
+                      <Chance>100</Chance>
+                    </Properties>
+                    <ChildNodes />
+                  </EmoteNode>
+                </ChildNodes>
+              </EmoteNode>
+            </ChildNodes>
+          </EmoteNode>
         </ChildNodes>
       </EmoteNode>
       <EmoteNode>
@@ -1705,12 +1783,17 @@
             <ChildNodes />
           </EmoteNode>
           <EmoteNode>
-            <Text>squeals happily and leaps from side to side</Text>
+            <Text>squeals happily, leaping from side to side</Text>
             <Properties>
               <Condition>None</Condition>
               <MustContinue>false</MustContinue>
               <Keywords>
                 <Keyword>squeals</Keyword>
+                <Keyword>happily</Keyword>
+                <Keyword>leaping</Keyword>
+                <Keyword>from</Keyword>
+                <Keyword>side</Keyword>
+                <Keyword>side</Keyword>
               </Keywords>
               <Chance>100</Chance>
             </Properties>
@@ -1797,14 +1880,18 @@
             </ChildNodes>
           </EmoteNode>
           <EmoteNode>
-            <Text>gibbers and shrieks maniacally, while darting towards %t.</Text>
+            <Text>darts toward them, gibbering and shrieking maniacally</Text>
             <Properties>
               <Condition>TargetIsUnfriendly</Condition>
               <MustContinue>false</MustContinue>
               <Keywords>
-                <Keyword>gibbers</Keyword>
-                <Keyword>shrieks</Keyword>
-                <Keyword>darting</Keyword>
+                <Keyword>darts</Keyword>
+                <Keyword>toward</Keyword>
+                <Keyword>them</Keyword>
+                <Keyword>gibbering</Keyword>
+                <Keyword>and</Keyword>
+                <Keyword>shrieking</Keyword>
+                <Keyword>maniacally</Keyword>
               </Keywords>
               <Chance>100</Chance>
             </Properties>
@@ -2004,34 +2091,6 @@
         </Properties>
         <ChildNodes>
           <EmoteNode>
-            <Text>from side to side, unable to contain his excitement</Text>
-            <Properties>
-              <Condition>PetIsMale</Condition>
-              <MustContinue>false</MustContinue>
-              <Keywords>
-                <Keyword>from</Keyword>
-                <Keyword>side</Keyword>
-                <Keyword>side</Keyword>
-              </Keywords>
-              <Chance>100</Chance>
-            </Properties>
-            <ChildNodes />
-          </EmoteNode>
-          <EmoteNode>
-            <Text>from side to side, unable to contain her excitement</Text>
-            <Properties>
-              <Condition>PetIsFemale</Condition>
-              <MustContinue>false</MustContinue>
-              <Keywords>
-                <Keyword>from</Keyword>
-                <Keyword>side</Keyword>
-                <Keyword>side</Keyword>
-              </Keywords>
-              <Chance>100</Chance>
-            </Properties>
-            <ChildNodes />
-          </EmoteNode>
-          <EmoteNode>
             <Text>his abdomen back and forth</Text>
             <Properties>
               <Condition>PetIsMale</Condition>
@@ -2062,6 +2121,49 @@
               <Chance>100</Chance>
             </Properties>
             <ChildNodes />
+          </EmoteNode>
+          <EmoteNode>
+            <Text>from side to side, unable to contain</Text>
+            <Properties>
+              <Condition>None</Condition>
+              <MustContinue>true</MustContinue>
+              <Keywords>
+                <Keyword>from</Keyword>
+                <Keyword>side</Keyword>
+                <Keyword>side</Keyword>
+                <Keyword>unable</Keyword>
+                <Keyword>contain</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes>
+              <EmoteNode>
+                <Text>his excitement</Text>
+                <Properties>
+                  <Condition>PetIsMale</Condition>
+                  <MustContinue>false</MustContinue>
+                  <Keywords>
+                    <Keyword>his</Keyword>
+                    <Keyword>excitement</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes />
+              </EmoteNode>
+              <EmoteNode>
+                <Text>her excitement</Text>
+                <Properties>
+                  <Condition>PetIsFemale</Condition>
+                  <MustContinue>false</MustContinue>
+                  <Keywords>
+                    <Keyword>her</Keyword>
+                    <Keyword>excitement</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes />
+              </EmoteNode>
+            </ChildNodes>
           </EmoteNode>
         </ChildNodes>
       </EmoteNode>
@@ -2189,26 +2291,28 @@
         </Properties>
         <ChildNodes>
           <EmoteNode>
-            <Text>his claws</Text>
+            <Text>his</Text>
             <Properties>
               <Condition>PetIsMale</Condition>
-              <MustContinue>false</MustContinue>
+              <MustContinue>true</MustContinue>
               <Keywords>
-                <Keyword>claws</Keyword>
+                <Keyword>his</Keyword>
               </Keywords>
               <Chance>100</Chance>
             </Properties>
             <ChildNodes>
               <EmoteNode>
-                <Text>unearths a small animal and eats it.</Text>
+                <Text>claws and unearths a small animal, which he eats</Text>
                 <Properties>
                   <Condition>None</Condition>
-                  <MustContinue>false</MustContinue>
+                  <MustContinue>true</MustContinue>
                   <Keywords>
+                    <Keyword>claws</Keyword>
+                    <Keyword>and</Keyword>
                     <Keyword>unearths</Keyword>
                     <Keyword>small</Keyword>
-                    <Keyword>animals</Keyword>
-                    <Keyword>and</Keyword>
+                    <Keyword>animal</Keyword>
+                    <Keyword>which</Keyword>
                     <Keyword>eats</Keyword>
                   </Keywords>
                   <Chance>100</Chance>
@@ -2216,11 +2320,12 @@
                 <ChildNodes />
               </EmoteNode>
               <EmoteNode>
-                <Text>Finding nothing, he leaps into the air and nets a bird with his web. Crunch!</Text>
+                <Text>claws. Finding nothing, he leaps into the air and nets a bird with his web. Crunch!</Text>
                 <Properties>
                   <Condition>None</Condition>
                   <MustContinue>false</MustContinue>
                   <Keywords>
+                    <Keyword>claws</Keyword>
                     <Keyword>Finding</Keyword>
                     <Keyword>nothing</Keyword>
                     <Keyword>leaps</Keyword>
@@ -2234,6 +2339,18 @@
                     <Keyword>his</Keyword>
                     <Keyword>web</Keyword>
                     <Keyword>Crunch</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes />
+              </EmoteNode>
+              <EmoteNode>
+                <Text>claws</Text>
+                <Properties>
+                  <Condition>None</Condition>
+                  <MustContinue>false</MustContinue>
+                  <Keywords>
+                    <Keyword>claws</Keyword>
                   </Keywords>
                   <Chance>100</Chance>
                 </Properties>
@@ -2242,26 +2359,29 @@
             </ChildNodes>
           </EmoteNode>
           <EmoteNode>
-            <Text>her claws</Text>
+            <Text>her</Text>
             <Properties>
               <Condition>PetIsFemale</Condition>
-              <MustContinue>false</MustContinue>
+              <MustContinue>true</MustContinue>
               <Keywords>
-                <Keyword>claws</Keyword>
+                <Keyword>her</Keyword>
               </Keywords>
               <Chance>100</Chance>
             </Properties>
             <ChildNodes>
               <EmoteNode>
-                <Text>unearths a small animal and eats it.</Text>
+                <Text>claws and unearths a small animal, which she eats</Text>
                 <Properties>
                   <Condition>None</Condition>
                   <MustContinue>false</MustContinue>
                   <Keywords>
+                    <Keyword>claws</Keyword>
+                    <Keyword>and</Keyword>
                     <Keyword>unearths</Keyword>
                     <Keyword>small</Keyword>
                     <Keyword>animal</Keyword>
-                    <Keyword>and</Keyword>
+                    <Keyword>which</Keyword>
+                    <Keyword>she</Keyword>
                     <Keyword>eats</Keyword>
                   </Keywords>
                   <Chance>100</Chance>
@@ -2269,13 +2389,15 @@
                 <ChildNodes />
               </EmoteNode>
               <EmoteNode>
-                <Text>Finding nothing, she leaps into the air and nets a bird with her web. Crunch!</Text>
+                <Text>claws. Finding nothing, she leaps into the air and nets a bird with her web. Crunch!</Text>
                 <Properties>
                   <Condition>None</Condition>
                   <MustContinue>false</MustContinue>
                   <Keywords>
+                    <Keyword>claws</Keyword>
                     <Keyword>Finding</Keyword>
                     <Keyword>nothing</Keyword>
+                    <Keyword>she</Keyword>
                     <Keyword>leaps</Keyword>
                     <Keyword>into</Keyword>
                     <Keyword>the</Keyword>
@@ -2284,9 +2406,21 @@
                     <Keyword>nets</Keyword>
                     <Keyword>bird</Keyword>
                     <Keyword>with</Keyword>
-                    <Keyword>his</Keyword>
+                    <Keyword>her</Keyword>
                     <Keyword>web</Keyword>
                     <Keyword>Crunch</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes />
+              </EmoteNode>
+              <EmoteNode>
+                <Text>claws</Text>
+                <Properties>
+                  <Condition>None</Condition>
+                  <MustContinue>false</MustContinue>
+                  <Keywords>
+                    <Keyword>claws</Keyword>
                   </Keywords>
                   <Chance>100</Chance>
                 </Properties>
@@ -4281,33 +4415,108 @@
     </PetFamily>
     <DefaultEmotes>
       <EmoteNode>
-        <Text>flutters around anxiously</Text>
+        <Text>flutters around</Text>
         <Properties>
-          <Condition>PetIsUnhappy</Condition>
+          <Condition>None</Condition>
           <MustContinue>false</MustContinue>
           <Keywords>
             <Keyword>flutters</Keyword>
-            <Keyword>anxiously</Keyword>
+            <Keyword>around</Keyword>
           </Keywords>
           <Chance>100</Chance>
         </Properties>
-        <ChildNodes />
+        <ChildNodes>
+          <EmoteNode>
+            <Text>anxiously</Text>
+            <Properties>
+              <Condition>PetIsUnhappy</Condition>
+              <MustContinue>false</MustContinue>
+              <Keywords>
+                <Keyword>anxiously</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes />
+          </EmoteNode>
+          <EmoteNode>
+            <Text>curiously</Text>
+            <Properties>
+              <Condition>PetIsHappy</Condition>
+              <MustContinue>false</MustContinue>
+              <Keywords>
+                <Keyword>curiously</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes />
+          </EmoteNode>
+          <EmoteNode>
+            <Text>looking for food</Text>
+            <Properties>
+              <Condition>PetIsContent</Condition>
+              <MustContinue>false</MustContinue>
+              <Keywords>
+                <Keyword>looking</Keyword>
+                <Keyword>for</Keyword>
+                <Keyword>food</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes />
+          </EmoteNode>
+        </ChildNodes>
       </EmoteNode>
       <EmoteNode>
-        <Text>squeals nervously</Text>
+        <Text>squeals</Text>
         <Properties>
-          <Condition>PetIsContent</Condition>
+          <Condition>None</Condition>
           <MustContinue>false</MustContinue>
           <Keywords>
             <Keyword>squeals</Keyword>
-            <Keyword>nervously</Keyword>
           </Keywords>
           <Chance>100</Chance>
         </Properties>
-        <ChildNodes />
+        <ChildNodes>
+          <EmoteNode>
+            <Text>nervously</Text>
+            <Properties>
+              <Condition>PetIsUnhappy</Condition>
+              <MustContinue>false</MustContinue>
+              <Keywords>
+                <Keyword>nervously</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes />
+          </EmoteNode>
+          <EmoteNode>
+            <Text>inquisitively</Text>
+            <Properties>
+              <Condition>PetIsContent</Condition>
+              <MustContinue>false</MustContinue>
+              <Keywords>
+                <Keyword>inquisitively</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes />
+          </EmoteNode>
+          <EmoteNode>
+            <Text>excitedly</Text>
+            <Properties>
+              <Condition>PetIsHappy</Condition>
+              <MustContinue>false</MustContinue>
+              <Keywords>
+                <Keyword>excitedly</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes />
+          </EmoteNode>
+        </ChildNodes>
       </EmoteNode>
       <EmoteNode>
-        <Text>swoops around, looking for food</Text>
+        <Text>swoops around, looking for a quick snack</Text>
         <Properties>
           <Condition>PetIsContent</Condition>
           <MustContinue>true</MustContinue>
@@ -4315,6 +4524,9 @@
             <Keyword>swoops</Keyword>
             <Keyword>around</Keyword>
             <Keyword>looking</Keyword>
+            <Keyword>for</Keyword>
+            <Keyword>quick</Keyword>
+            <Keyword>snack</Keyword>
           </Keywords>
           <Chance>100</Chance>
         </Properties>
@@ -4388,28 +4600,43 @@
         </Properties>
         <ChildNodes>
           <EmoteNode>
-            <Text>ledge and hangs upside down</Text>
+            <Text>ledge</Text>
             <Properties>
               <Condition>None</Condition>
-              <MustContinue>false</MustContinue>
+              <MustContinue>true</MustContinue>
               <Keywords>
                 <Keyword>ledge</Keyword>
-                <Keyword>and</Keyword>
-                <Keyword>hangs</Keyword>
-                <Keyword>upside</Keyword>
-                <Keyword>down</Keyword>
               </Keywords>
               <Chance>100</Chance>
             </Properties>
             <ChildNodes>
               <EmoteNode>
-                <Text>crooning contentedly</Text>
+                <Text>and hangs upside down, crooning contentedly</Text>
                 <Properties>
                   <Condition>None</Condition>
                   <MustContinue>false</MustContinue>
                   <Keywords>
+                    <Keyword>and</Keyword>
+                    <Keyword>hangs</Keyword>
+                    <Keyword>upside</Keyword>
+                    <Keyword>down</Keyword>
                     <Keyword>crooning</Keyword>
                     <Keyword>contentedly</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes />
+              </EmoteNode>
+              <EmoteNode>
+                <Text>and hangs upside down</Text>
+                <Properties>
+                  <Condition>None</Condition>
+                  <MustContinue>false</MustContinue>
+                  <Keywords>
+                    <Keyword>and</Keyword>
+                    <Keyword>hangs</Keyword>
+                    <Keyword>upside</Keyword>
+                    <Keyword>down</Keyword>
                   </Keywords>
                   <Chance>100</Chance>
                 </Properties>
@@ -4418,28 +4645,88 @@
             </ChildNodes>
           </EmoteNode>
           <EmoteNode>
-            <Text>overhang and hangs upside down</Text>
+            <Text>overhang</Text>
             <Properties>
               <Condition>None</Condition>
-              <MustContinue>false</MustContinue>
+              <MustContinue>true</MustContinue>
               <Keywords>
                 <Keyword>overhang</Keyword>
-                <Keyword>and</Keyword>
-                <Keyword>hangs</Keyword>
-                <Keyword>upside</Keyword>
-                <Keyword>down</Keyword>
               </Keywords>
               <Chance>100</Chance>
             </Properties>
             <ChildNodes>
               <EmoteNode>
-                <Text>crooning contentedly</Text>
+                <Text>and hangs upside down, crooning contentedly</Text>
                 <Properties>
                   <Condition>None</Condition>
                   <MustContinue>false</MustContinue>
                   <Keywords>
+                    <Keyword>and</Keyword>
+                    <Keyword>hangs</Keyword>
+                    <Keyword>upside</Keyword>
+                    <Keyword>down</Keyword>
                     <Keyword>crooning</Keyword>
                     <Keyword>contentedly</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes />
+              </EmoteNode>
+              <EmoteNode>
+                <Text>and hangs upside down</Text>
+                <Properties>
+                  <Condition>None</Condition>
+                  <MustContinue>false</MustContinue>
+                  <Keywords>
+                    <Keyword>and</Keyword>
+                    <Keyword>hangs</Keyword>
+                    <Keyword>upside</Keyword>
+                    <Keyword>down</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes />
+              </EmoteNode>
+            </ChildNodes>
+          </EmoteNode>
+          <EmoteNode>
+            <Text>tree</Text>
+            <Properties>
+              <Condition>None</Condition>
+              <MustContinue>true</MustContinue>
+              <Keywords>
+                <Keyword>tree</Keyword>
+              </Keywords>
+              <Chance>100</Chance>
+            </Properties>
+            <ChildNodes>
+              <EmoteNode>
+                <Text>and hangs upside down, crooning contentedly</Text>
+                <Properties>
+                  <Condition>None</Condition>
+                  <MustContinue>false</MustContinue>
+                  <Keywords>
+                    <Keyword>and</Keyword>
+                    <Keyword>hangs</Keyword>
+                    <Keyword>upside</Keyword>
+                    <Keyword>down</Keyword>
+                    <Keyword>crooning</Keyword>
+                    <Keyword>contentedly</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes />
+              </EmoteNode>
+              <EmoteNode>
+                <Text>and hangs upside down</Text>
+                <Properties>
+                  <Condition>None</Condition>
+                  <MustContinue>false</MustContinue>
+                  <Keywords>
+                    <Keyword>and</Keyword>
+                    <Keyword>hangs</Keyword>
+                    <Keyword>upside</Keyword>
+                    <Keyword>down</Keyword>
                   </Keywords>
                   <Chance>100</Chance>
                 </Properties>
@@ -5208,6 +5495,24 @@
             </ChildNodes>
           </EmoteNode>
         </ChildNodes>
+      </EmoteNode>
+      <EmoteNode>
+        <Text>emits a series of clicks and squeaks, seeking prey</Text>
+        <Properties>
+          <Condition>None</Condition>
+          <MustContinue>false</MustContinue>
+          <Keywords>
+            <Keyword>emits</Keyword>
+            <Keyword>series</Keyword>
+            <Keyword>clicks</Keyword>
+            <Keyword>and</Keyword>
+            <Keyword>squeaks</Keyword>
+            <Keyword>seeking</Keyword>
+            <Keyword>prey</Keyword>
+          </Keywords>
+          <Chance>100</Chance>
+        </Properties>
+        <ChildNodes />
       </EmoteNode>
     </DefaultEmotes>
     <CombatEmotes />
@@ -16564,86 +16869,42 @@
         </Properties>
         <ChildNodes>
           <EmoteNode>
-            <Text>his</Text>
+            <Text>his master's pack, looking for a choice piece of meat.</Text>
             <Properties>
               <Condition>PetIsMale</Condition>
               <MustContinue>true</MustContinue>
-              <Keywords />
+              <Keywords>
+                <Keyword>his</Keyword>
+                <Keyword>master's</Keyword>
+                <Keyword>pack</Keyword>
+                <Keyword>looking</Keyword>
+                <Keyword>for</Keyword>
+                <Keyword>choice</Keyword>
+                <Keyword>piece</Keyword>
+                <Keyword>meat</Keyword>
+              </Keywords>
               <Chance>100</Chance>
             </Properties>
-            <ChildNodes>
-              <EmoteNode>
-                <Text>master's pack, looking for a choice piece of meat.</Text>
-                <Properties>
-                  <Condition>PlayerIsMale</Condition>
-                  <MustContinue>false</MustContinue>
-                  <Keywords>
-                    <Keyword>master's</Keyword>
-                    <Keyword>pack</Keyword>
-                    <Keyword>looking</Keyword>
-                    <Keyword>meat</Keyword>
-                  </Keywords>
-                  <Chance>100</Chance>
-                </Properties>
-                <ChildNodes />
-              </EmoteNode>
-              <EmoteNode>
-                <Text>mistress's pack, looking for a choice piece of meat.</Text>
-                <Properties>
-                  <Condition>PlayerIsFemale</Condition>
-                  <MustContinue>false</MustContinue>
-                  <Keywords>
-                    <Keyword>mistress's</Keyword>
-                    <Keyword>pack</Keyword>
-                    <Keyword>looking</Keyword>
-                    <Keyword>meat</Keyword>
-                  </Keywords>
-                  <Chance>100</Chance>
-                </Properties>
-                <ChildNodes />
-              </EmoteNode>
-            </ChildNodes>
+            <ChildNodes />
           </EmoteNode>
           <EmoteNode>
-            <Text>her</Text>
+            <Text>her master's pack, looking for a choice piece of meat.</Text>
             <Properties>
               <Condition>PetIsFemale</Condition>
               <MustContinue>true</MustContinue>
-              <Keywords />
+              <Keywords>
+                <Keyword>her</Keyword>
+                <Keyword>master's</Keyword>
+                <Keyword>pack</Keyword>
+                <Keyword>looking</Keyword>
+                <Keyword>for</Keyword>
+                <Keyword>choice</Keyword>
+                <Keyword>piece</Keyword>
+                <Keyword>meat</Keyword>
+              </Keywords>
               <Chance>100</Chance>
             </Properties>
-            <ChildNodes>
-              <EmoteNode>
-                <Text>master's pack, looking for a choice piece of meat.</Text>
-                <Properties>
-                  <Condition>PlayerIsMale</Condition>
-                  <MustContinue>false</MustContinue>
-                  <Keywords>
-                    <Keyword>master's</Keyword>
-                    <Keyword>pack</Keyword>
-                    <Keyword>looking</Keyword>
-                    <Keyword>meat</Keyword>
-                  </Keywords>
-                  <Chance>100</Chance>
-                </Properties>
-                <ChildNodes />
-              </EmoteNode>
-              <EmoteNode>
-                <Text>mistress's pack, looking for a choice piece of meat.</Text>
-                <Properties>
-                  <Condition>PlayerIsFemale</Condition>
-                  <MustContinue>false</MustContinue>
-                  <Keywords>
-                    <Keyword>mistress's</Keyword>
-                    <Keyword>pack</Keyword>
-                    <Keyword>looking</Keyword>
-                    <Keyword>meat</Keyword>
-                  </Keywords>
-                  <Chance>100</Chance>
-                </Properties>
-                <ChildNodes />
-              </EmoteNode>
-            </ChildNodes>
+            <ChildNodes />
           </EmoteNode>
         </ChildNodes>
       </EmoteNode>
@@ -33851,7 +34112,7 @@
                 <Text>master's</Text>
                 <Properties>
                   <Condition>None</Condition>
-                  <MustContinue>false</MustContinue>
+                  <MustContinue>true</MustContinue>
                   <Keywords>
                     <Keyword>master's</Keyword>
                   </Keywords>
@@ -34724,7 +34985,7 @@
         <Text>charges off</Text>
         <Properties>
           <Condition>IsFirstCall</Condition>
-          <MustContinue>false</MustContinue>
+          <MustContinue>true</MustContinue>
           <Keywords>
             <Keyword>charges</Keyword>
             <Keyword>off</Keyword>
@@ -34733,92 +34994,43 @@
         </Properties>
         <ChildNodes>
           <EmoteNode>
-            <Text>because</Text>
+            <Text>after spotting something</Text>
             <Properties>
               <Condition>None</Condition>
               <MustContinue>true</MustContinue>
               <Keywords>
-                <Keyword>because</Keyword>
+                <Keyword>after</Keyword>
+                <Keyword>spotting</Keyword>
+                <Keyword>something</Keyword>
               </Keywords>
               <Chance>100</Chance>
             </Properties>
             <ChildNodes>
               <EmoteNode>
-                <Text>he saw something</Text>
+                <Text>interesting to investigate</Text>
                 <Properties>
-                  <Condition>PetIsMale</Condition>
+                  <Condition>None</Condition>
                   <MustContinue>false</MustContinue>
                   <Keywords>
-                    <Keyword>saw</Keyword>
-                    <Keyword>something</Keyword>
+                    <Keyword>interesting</Keyword>
+                    <Keyword>investigate</Keyword>
                   </Keywords>
                   <Chance>100</Chance>
                 </Properties>
-                <ChildNodes>
-                  <EmoteNode>
-                    <Text>interesting</Text>
-                    <Properties>
-                      <Condition>None</Condition>
-                      <MustContinue>false</MustContinue>
-                      <Keywords>
-                        <Keyword>interesting</Keyword>
-                      </Keywords>
-                      <Chance>100</Chance>
-                    </Properties>
-                    <ChildNodes />
-                  </EmoteNode>
-                  <EmoteNode>
-                    <Text>tasty</Text>
-                    <Properties>
-                      <Condition>None</Condition>
-                      <MustContinue>false</MustContinue>
-                      <Keywords>
-                        <Keyword>tasty</Keyword>
-                      </Keywords>
-                      <Chance>100</Chance>
-                    </Properties>
-                    <ChildNodes />
-                  </EmoteNode>
-                </ChildNodes>
+                <ChildNodes />
               </EmoteNode>
               <EmoteNode>
-                <Text>she saw something</Text>
+                <Text>tasty to chase</Text>
                 <Properties>
-                  <Condition>PetIsFemale</Condition>
+                  <Condition>None</Condition>
                   <MustContinue>false</MustContinue>
                   <Keywords>
-                    <Keyword>she</Keyword>
-                    <Keyword>saw</Keyword>
-                    <Keyword>something</Keyword>
+                    <Keyword>tasty</Keyword>
+                    <Keyword>chase</Keyword>
                   </Keywords>
                   <Chance>100</Chance>
                 </Properties>
-                <ChildNodes>
-                  <EmoteNode>
-                    <Text>interesting</Text>
-                    <Properties>
-                      <Condition>None</Condition>
-                      <MustContinue>false</MustContinue>
-                      <Keywords>
-                        <Keyword>interesting</Keyword>
-                      </Keywords>
-                      <Chance>100</Chance>
-                    </Properties>
-                    <ChildNodes />
-                  </EmoteNode>
-                  <EmoteNode>
-                    <Text>tasty</Text>
-                    <Properties>
-                      <Condition>None</Condition>
-                      <MustContinue>false</MustContinue>
-                      <Keywords>
-                        <Keyword>tasty</Keyword>
-                      </Keywords>
-                      <Chance>100</Chance>
-                    </Properties>
-                    <ChildNodes />
-                  </EmoteNode>
-                </ChildNodes>
+                <ChildNodes />
               </EmoteNode>
             </ChildNodes>
           </EmoteNode>
@@ -34867,6 +35079,48 @@
                     <Properties>
                       <Condition>PetIsFemale</Condition>
                       <MustContinue>true</MustContinue>
+                      <Keywords>
+                        <Keyword>her</Keyword>
+                        <Keyword>master</Keyword>
+                      </Keywords>
+                      <Chance>100</Chance>
+                    </Properties>
+                    <ChildNodes />
+                  </EmoteNode>
+                </ChildNodes>
+              </EmoteNode>
+              <EmoteNode>
+                <Text>again, jumping playfully over</Text>
+                <Properties>
+                  <Condition>None</Condition>
+                  <MustContinue>true</MustContinue>
+                  <Keywords>
+                    <Keyword>again</Keyword>
+                    <Keyword>jumping</Keyword>
+                    <Keyword>playfully</Keyword>
+                    <Keyword>over</Keyword>
+                  </Keywords>
+                  <Chance>100</Chance>
+                </Properties>
+                <ChildNodes>
+                  <EmoteNode>
+                    <Text>his master</Text>
+                    <Properties>
+                      <Condition>PetIsMale</Condition>
+                      <MustContinue>false</MustContinue>
+                      <Keywords>
+                        <Keyword>his</Keyword>
+                        <Keyword>master</Keyword>
+                      </Keywords>
+                      <Chance>100</Chance>
+                    </Properties>
+                    <ChildNodes />
+                  </EmoteNode>
+                  <EmoteNode>
+                    <Text>her master</Text>
+                    <Properties>
+                      <Condition>PetIsFemale</Condition>
+                      <MustContinue>false</MustContinue>
                       <Keywords>
                         <Keyword>her</Keyword>
                         <Keyword>master</Keyword>
@@ -52659,24 +52913,6 @@
         <ChildNodes />
       </EmoteNode>
       <EmoteNode>
-        <Text>cocks its leg and has an oil leak</Text>
-        <Properties>
-          <Condition>None</Condition>
-          <MustContinue>false</MustContinue>
-          <Keywords>
-            <Keyword>cocks</Keyword>
-            <Keyword>its</Keyword>
-            <Keyword>leg</Keyword>
-            <Keyword>and</Keyword>
-            <Keyword>has</Keyword>
-            <Keyword>oil</Keyword>
-            <Keyword>leak</Keyword>
-          </Keywords>
-          <Chance>100</Chance>
-        </Properties>
-        <ChildNodes />
-      </EmoteNode>
-      <EmoteNode>
         <Text>abuptly declairs, "Error 418: I'm A Teapot"</Text>
         <Properties>
           <Condition>None</Condition>
@@ -52773,12 +53009,12 @@
         </ChildNodes>
       </EmoteNode>
       <EmoteNode>
-        <Text>siezes up as its sound files begin skipping erratically. Don't worry, a good kick will solve that.</Text>
+        <Text>seizes up as its sound files begin skipping erratically. Don't worry, a good kick will solve that.</Text>
         <Properties>
           <Condition>None</Condition>
           <MustContinue>false</MustContinue>
           <Keywords>
-            <Keyword>siezes</Keyword>
+            <Keyword>seizes</Keyword>
             <Keyword>its</Keyword>
             <Keyword>sound</Keyword>
             <Keyword>files</Keyword>
@@ -66949,7 +67185,7 @@
       <EmoteNode>
         <Text>sways back and forth hypnotically</Text>
         <Properties>
-          <Condition>PetIsHappy</Condition>
+          <Condition>IsFirstCall</Condition>
           <MustContinue>false</MustContinue>
           <Keywords>
             <Keyword>sways</Keyword>
@@ -77253,166 +77489,6 @@
           <Chance>100</Chance>
         </Properties>
         <ChildNodes />
-      </EmoteNode>
-      <EmoteNode>
-        <Text>pulls out a top hat and cane when</Text>
-        <Properties>
-          <Condition>None</Condition>
-          <MustContinue>true</MustContinue>
-          <Keywords>
-            <Keyword>pulls</Keyword>
-            <Keyword>out</Keyword>
-            <Keyword>top</Keyword>
-            <Keyword>hat</Keyword>
-            <Keyword>and</Keyword>
-            <Keyword>cane</Keyword>
-            <Keyword>when</Keyword>
-          </Keywords>
-          <Chance>25</Chance>
-        </Properties>
-        <ChildNodes>
-          <EmoteNode>
-            <Text>his master's back is turned and starts dancing, but stops when</Text>
-            <Properties>
-              <Condition>PetIsMale</Condition>
-              <MustContinue>true</MustContinue>
-              <Keywords>
-                <Keyword>his</Keyword>
-                <Keyword>master's</Keyword>
-                <Keyword>back</Keyword>
-                <Keyword>turned</Keyword>
-                <Keyword>and</Keyword>
-                <Keyword>starts</Keyword>
-                <Keyword>dancing</Keyword>
-                <Keyword>but</Keyword>
-                <Keyword>stops</Keyword>
-                <Keyword>when</Keyword>
-              </Keywords>
-              <Chance>100</Chance>
-            </Properties>
-            <ChildNodes>
-              <EmoteNode>
-                <Text>he turns around</Text>
-                <Properties>
-                  <Condition>PlayerIsMale</Condition>
-                  <MustContinue>false</MustContinue>
-                  <Keywords>
-                    <Keyword>turns</Keyword>
-                    <Keyword>around</Keyword>
-                  </Keywords>
-                  <Chance>100</Chance>
-                </Properties>
-                <ChildNodes />
-              </EmoteNode>
-              <EmoteNode>
-                <Text>she turns around</Text>
-                <Properties>
-                  <Condition>PlayerIsFemale</Condition>
-                  <MustContinue>false</MustContinue>
-                  <Keywords>
-                    <Keyword>she</Keyword>
-                    <Keyword>turns</Keyword>
-                    <Keyword>around</Keyword>
-                  </Keywords>
-                  <Chance>100</Chance>
-                </Properties>
-                <ChildNodes />
-              </EmoteNode>
-            </ChildNodes>
-          </EmoteNode>
-          <EmoteNode>
-            <Text>her master's back is turned and starts dancing, but stops when</Text>
-            <Properties>
-              <Condition>PetIsFemale</Condition>
-              <MustContinue>true</MustContinue>
-              <Keywords>
-                <Keyword>her</Keyword>
-                <Keyword>master's</Keyword>
-                <Keyword>back</Keyword>
-                <Keyword>turned</Keyword>
-                <Keyword>and</Keyword>
-                <Keyword>starts</Keyword>
-                <Keyword>dancing</Keyword>
-                <Keyword>but</Keyword>
-                <Keyword>stops</Keyword>
-                <Keyword>when</Keyword>
-              </Keywords>
-              <Chance>100</Chance>
-            </Properties>
-            <ChildNodes>
-              <EmoteNode>
-                <Text>he turns around</Text>
-                <Properties>
-                  <Condition>PlayerIsMale</Condition>
-                  <MustContinue>false</MustContinue>
-                  <Keywords>
-                    <Keyword>turns</Keyword>
-                    <Keyword>around</Keyword>
-                  </Keywords>
-                  <Chance>100</Chance>
-                </Properties>
-                <ChildNodes />
-              </EmoteNode>
-              <EmoteNode>
-                <Text>she turns around</Text>
-                <Properties>
-                  <Condition>PlayerIsFemale</Condition>
-                  <MustContinue>false</MustContinue>
-                  <Keywords>
-                    <Keyword>she</Keyword>
-                    <Keyword>turns</Keyword>
-                    <Keyword>around</Keyword>
-                  </Keywords>
-                  <Chance>100</Chance>
-                </Properties>
-                <ChildNodes />
-              </EmoteNode>
-            </ChildNodes>
-          </EmoteNode>
-        </ChildNodes>
-      </EmoteNode>
-      <EmoteNode>
-        <Text>dons a tweed suit and starts boasting about how great</Text>
-        <Properties>
-          <Condition>None</Condition>
-          <MustContinue>true</MustContinue>
-          <Keywords>
-            <Keyword>dons</Keyword>
-            <Keyword>tweed</Keyword>
-            <Keyword>suit</Keyword>
-            <Keyword>and</Keyword>
-            <Keyword>starts</Keyword>
-            <Keyword>boasting</Keyword>
-            <Keyword>about</Keyword>
-            <Keyword>how</Keyword>
-            <Keyword>great</Keyword>
-          </Keywords>
-          <Chance>25</Chance>
-        </Properties>
-        <ChildNodes>
-          <EmoteNode>
-            <Text>he is</Text>
-            <Properties>
-              <Condition>PetIsMale</Condition>
-              <MustContinue>false</MustContinue>
-              <Keywords />
-              <Chance>100</Chance>
-            </Properties>
-            <ChildNodes />
-          </EmoteNode>
-          <EmoteNode>
-            <Text>she is</Text>
-            <Properties>
-              <Condition>PetIsFemale</Condition>
-              <MustContinue>false</MustContinue>
-              <Keywords>
-                <Keyword>she</Keyword>
-              </Keywords>
-              <Chance>100</Chance>
-            </Properties>
-            <ChildNodes />
-          </EmoteNode>
-        </ChildNodes>
       </EmoteNode>
       <EmoteNode>
         <Text>makes a heartfelt speech about preserving memories and offers to save the game</Text>

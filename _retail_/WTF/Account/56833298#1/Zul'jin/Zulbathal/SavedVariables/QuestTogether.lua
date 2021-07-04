@@ -64,11 +64,9 @@ QuestTogether = {
 				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
-		[40019] = {
-			["title"] = "An Empathetic Herb",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"9/15 Healthy Dreamleaf", -- [1]
-				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[36614] = {
@@ -76,6 +74,13 @@ QuestTogether = {
 			["objectives"] = {
 				"1589/2000 Garrison resources gathered (Optional)", -- [1]
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
+			},
+		},
+		[40019] = {
+			["title"] = "An Empathetic Herb",
+			["objectives"] = {
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[44948] = {
@@ -96,20 +101,15 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[52444] = {
-			["title"] = "The Final Foothold",
-			["objectives"] = {
-				"0/1 Review final foothold", -- [1]
-			},
-		},
 		[44555] = {
 			["title"] = "Khadgar's Discovery",
 			["objectives"] = {
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[52444] = {
+			["title"] = "The Final Foothold",
 			["objectives"] = {
+				"0/1 Review final foothold", -- [1]
 			},
 		},
 		[31486] = {
@@ -168,8 +168,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

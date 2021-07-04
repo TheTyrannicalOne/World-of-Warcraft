@@ -941,46 +941,33 @@ L["ScalesList_CustomGroupName"] = "Custom Scales"
 L["ScalesList_DefaultGroupName"] = "Default Scales"
 --[[Translation missing --]]
 L["ScaleWeightEditor_Title"] = "%s Scale Weight Editor"
---[[Translation missing --]]
 L["Slash_Command"] = "/azerite"
---[[Translation missing --]]
-L["Slash_Error_Unkown"] = "ERROR: Something went wrong!"
+L["Slash_Error_Unkown"] = "ERRORE: Qualcosa è andato storto!"
 --[[Translation missing --]]
 L["Slash_RemindConfig"] = "Check ESC -> Interface -> AddOns -> %s for settings."
---[[Translation missing --]]
-L["WeightEditor_CreateNewText"] = "Create New"
+L["WeightEditor_CreateNewText"] = "Crea Nuovo"
 --[[Translation missing --]]
 L["WeightEditor_CurrentScale"] = "Current scale: %s"
---[[Translation missing --]]
-L["WeightEditor_DeleteText"] = "Delete"
+L["WeightEditor_DeleteText"] = "Cancella"
 --[[Translation missing --]]
 L["WeightEditor_EnableScaleText"] = "Use this Scale"
---[[Translation missing --]]
-L["WeightEditor_ExportText"] = "Export"
---[[Translation missing --]]
-L["WeightEditor_ImportText"] = "Import"
+L["WeightEditor_ExportText"] = "Esporta"
+L["WeightEditor_ImportText"] = "importa"
 --[[Translation missing --]]
 L["WeightEditor_Major"] = "Major"
---[[Translation missing --]]
-L["WeightEditor_MassImportText"] = "Mass Import"
+L["WeightEditor_MassImportText"] = "Importazione di Massa"
 --[[Translation missing --]]
 L["WeightEditor_Minor"] = "Minor"
 --[[Translation missing --]]
 L["WeightEditor_ModeToEssences"] = "Change to Essences"
 --[[Translation missing --]]
 L["WeightEditor_ModeToTraits"] = "Change to Traits"
---[[Translation missing --]]
-L["WeightEditor_RenameText"] = "Rename"
---[[Translation missing --]]
-L["WeightEditor_TimestampText_Created"] = "Created %s"
---[[Translation missing --]]
-L["WeightEditor_TimestampText_Imported"] = "Imported %s"
---[[Translation missing --]]
-L["WeightEditor_TimestampText_Updated"] = "Updated %s"
---[[Translation missing --]]
-L["WeightEditor_TooltipText"] = "Show in Tooltips"
---[[Translation missing --]]
-L["WeightEditor_VersionText"] = "Version %s"
+L["WeightEditor_RenameText"] = "Rinomina"
+L["WeightEditor_TimestampText_Created"] = "Creato il %s"
+L["WeightEditor_TimestampText_Imported"] = "Importato il %s"
+L["WeightEditor_TimestampText_Updated"] = "Aggiornato il %s"
+L["WeightEditor_TooltipText"] = "Mostra nel Tooltip"
+L["WeightEditor_VersionText"] = "Versione %s"
 
 
 elseif LOCALE == "koKR" then -- Killberos (52)
@@ -1471,14 +1458,10 @@ L["WeightEditor_VersionText"] = "Версия %s"
 elseif LOCALE == "zhCN" then -- plok245 (27), riggzh (29), xlfd2008 (33)
 	-- 27 + 29 + 47 = 103
 	-- 0% translated
---[[Translation missing --]]
-L["Config_Enable_Essences"] = "Azerite Essences"
---[[Translation missing --]]
-L["Config_Enable_Essences_Desc"] = "Enable %s for Azerite Essences."
---[[Translation missing --]]
-L["Config_Enable_Traits"] = "Azerite Traits"
---[[Translation missing --]]
-L["Config_Enable_Traits_Desc"] = "Enable %s for Azerite Empowered items."
+L["Config_Enable_Essences"] = "艾泽里特精华"
+L["Config_Enable_Essences_Desc"] = "启用 %s 的艾泽里特精华。"
+L["Config_Enable_Traits"] = "艾泽里特特质"
+L["Config_Enable_Traits_Desc"] = "启用 %s 的艾泽里特强化装备。"
 L["Config_Importing_ImportingCanUpdate"] = "允许导入覆盖现有配置"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "当导入配置名称相同并且职业专精一致时，将覆盖现有配置，而不是新建配置。"
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "可以有多个同名配置，只要它们用于不同的专精或职业。"
@@ -1494,10 +1477,8 @@ L["Config_Score_AddPrimaryStatToScore"] = "将主属性计入到所有分数中"
 L["Config_Score_AddPrimaryStatToScore_Desc"] = "将艾泽里特护甲的主属性值(%s/%s/%s)计入所有当前已选分数、当前可选最高分和全部解锁最高分的计算中。"
 L["Config_Score_OutlineScores"] = "给分数描边"
 L["Config_Score_OutlineScores_Desc"] = "给艾泽里特特质/精华图标上的分数描绘边框，从而更轻松地阅读艾泽里特特质/精华图标上的数字。"
---[[Translation missing --]]
-L["Config_Score_PreferBiSMajor"] = "Prefer best major essence"
---[[Translation missing --]]
-L["Config_Score_PreferBiSMajor_Desc"] = "Always pick the highest scored major essence even when sometimes you could get better overall score by not selecting the best major essence. When this setting is disabled, the addon will calculate few different score combinations and will pick the best overall score."
+L["Config_Score_PreferBiSMajor"] = "首选最佳主插槽精华"
+L["Config_Score_PreferBiSMajor_Desc"] = "始终选取最高分的主插槽精华 ( 放弃选择非最佳主插槽精华来提高总评分 )。当此选项禁用时，插件会计算出若干不同分数的组合，并选取总评分最佳的组合。"
 L["Config_Score_RelativeScore"] = "在鼠标提示中显示相对值而不是绝对值"
 L["Config_Score_RelativeScore_Desc"] = "不在鼠标提示中显示权值的绝对值，而是计算与当前装备相比的相对值，并以百分比显示。"
 L["Config_Score_ScaleByAzeriteEmpowered"] = "按％s的权值计算物品等级分数"
@@ -1594,10 +1575,8 @@ L["WeightEditor_ImportText"] = "导入"
 L["WeightEditor_Major"] = "主要"
 L["WeightEditor_MassImportText"] = "批量导入"
 L["WeightEditor_Minor"] = "次要"
---[[Translation missing --]]
-L["WeightEditor_ModeToEssences"] = "Change to Essences"
---[[Translation missing --]]
-L["WeightEditor_ModeToTraits"] = "Change to Traits"
+L["WeightEditor_ModeToEssences"] = "切换至精华"
+L["WeightEditor_ModeToTraits"] = "切换到特质"
 L["WeightEditor_RenameText"] = "重命名"
 L["WeightEditor_TimestampText_Created"] = "创建于 %s"
 L["WeightEditor_TimestampText_Imported"] = "导入于 %s"

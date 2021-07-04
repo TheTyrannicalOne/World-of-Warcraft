@@ -145,6 +145,7 @@ private.COMMON_FLAGS_WORD1 = {
 	WORLD_DROP		= 0x00040000,	-- 19
 	WORLD_EVENT		= 0x00080000,	-- 20
 	TRADE_SKILL		= 0x00100000,	-- 21
+	MIXED 			= 0x00200000,	-- 22
 }
 
 -- ----------------------------------------------------------------------------
@@ -294,6 +295,7 @@ private.FACTION_LABELS_FROM_ID = {
 	[2410]	= "THE_UNDYING_ARMY",
 	[2413]	= "COURT_OF_HARVESTERS",
 	[2422]	= "THE_WILD_HUNT",
+	[2432]	= "THE_VENARI",
 	[2439]	= "THE_AVOWED",
 
 }
@@ -392,6 +394,7 @@ private.EXPANSION9_REPUTATIONS = {
 	"THE_AVOWED",
 	"COURT_OF_HARVESTERS",
 	"THE_UNDYING_ARMY",
+	"THE_VENARI",
 	"THE_WILD_HUNT",
 
 }
@@ -598,6 +601,7 @@ private.BOSS_NAMES = {
 	DOOMS_HOWL = _G.EJ_GetEncounterInfo(2213),
 	HIGH_TINKER_MEKKATORQUE = _G.EJ_GetEncounterInfo(2334),
 	KING_RASTAKHAN = _G.EJ_GetEncounterInfo(2335),
+	KUJ0 = _G.EJ_GetEncounterInfo(2339),
 	LADY_JAINA_PROUDMOORE = _G.EJ_GetEncounterInfo(2343),
 	NZOTH_THE_CORRUPTOR = _G.EJ_GetEncounterInfo(2375),
 }

@@ -1768,6 +1768,8 @@ GrailDatabase = {
 				"38556|enUS|6000019|942:72.64,30.83", -- [1567]
 				"38556|enUS|3000126|85:52.77,75.33|101527", -- [1568]
 				"38556|enUS|3000131|84:62.34,74.28|43929", -- [1569]
+				"38556|enUS|6000023|650:57.00,21.61", -- [1570]
+				"38556|enUS|3000142||58632", -- [1571]
 			},
 			["QUEST_CODE"] = {
 				"0|enUS|0|A:153684", -- [1]
@@ -8880,9 +8882,12 @@ GrailDatabase = {
 				"115|38556|enUS|35564|T:11142", -- [7108]
 				"115|38556|enUS|35564|T:10387", -- [7109]
 				"115|38556|enUS|35564|T:10997", -- [7110]
+				"115|38556|enUS|40985|T:-650", -- [7111]
+				"115|38556|enUS|40985|A:6000023", -- [7112]
+				"115|38556|enUS|42170|L50", -- [7113]
 			},
 		},
-		["delayEventsHandled"] = true,
+		["delayEvents"] = true,
 		["Tracking"] = {
 			"2020-04-20 23:25 Argent Dawn/Shanyt/Horde/WARRIOR/Scourge/2/enUS/US/33941", -- [1]
 			"New quest completed 55604 UNKNOWN NAME", -- [2]
@@ -23032,7 +23037,7 @@ GrailDatabase = {
 			"New quest completed 54649 Flames of War", -- [14146]
 			"New quest completed 54646 Grand Marshal Fury", -- [14147]
 		},
-		["delayEvents"] = true,
+		["delayEventsHandled"] = true,
 	},
 	["BadQuestData"] = {
 	},

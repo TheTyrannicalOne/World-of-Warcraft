@@ -21,11 +21,33 @@ FishingBuddy_Info = {
 		[641001] = 0,
 	},
 	["DataFish"] = 0,
-	["KnownZones"] = {
-		[1527] = "Uldum",
-		[1355] = "Chitterspine Caverns",
-		[534] = "Hellfire Citadel",
-		[641] = "Thas'talah Basin",
+	["FishSchools"] = {
+		[641] = {
+			{
+				["y"] = 0.6958590428832376,
+				["x"] = 0.4698031428195008,
+				["sidx"] = 641000,
+				["kind"] = 0,
+				["fish"] = {
+					[134568] = 1,
+				},
+				["count"] = 1,
+			}, -- [1]
+		},
+		[534] = {
+			{
+				["y"] = 0.5028248506417881,
+				["x"] = 0.446218222459582,
+				["sidx"] = 534000,
+				["kind"] = 0,
+				["count"] = 9,
+				["fish"] = {
+					[127759] = 1,
+					[127994] = 2,
+					[127991] = 6,
+				},
+			}, -- [1]
+		},
 	},
 	["FishingHoles"] = {
 		[1355001] = {
@@ -36,10 +58,10 @@ FishingBuddy_Info = {
 			[27422] = 1,
 		},
 		[534001] = {
-			[127991] = 8,
-			[127759] = 1,
-			[118391] = 1,
 			[127994] = 3,
+			[127759] = 1,
+			[127991] = 8,
+			[118391] = 1,
 		},
 		[534002] = {
 			[127991] = 3,
@@ -48,10 +70,10 @@ FishingBuddy_Info = {
 			[134568] = 1,
 		},
 	},
-	["Version"] = 19500,
 	["Settings"] = {
 		["CreateMacro"] = true,
 	},
+	["Version"] = 19500,
 	["FishInfo2"] = 0,
 	["SubZones"] = {
 		[641000] = 1,
@@ -68,76 +90,54 @@ FishingBuddy_Info = {
 	["Fishies"] = {
 		[168646] = {
 			["enUS"] = "Mauve Stinger",
-			["texture"] = 3007472,
 			["quality"] = 1,
+			["texture"] = 3007472,
 		},
 		[118391] = {
 			["enUS"] = "Worm Supreme",
-			["quality"] = 1,
 			["texture"] = 970852,
+			["quality"] = 1,
 		},
 		[45188] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Withered Kelp",
-			["quality"] = 0,
 			["texture"] = 134192,
+			["quality"] = 0,
 		},
 		[27422] = {
 			["enUS"] = "Barbed Gill Trout",
-			["quality"] = 1,
 			["texture"] = 133923,
+			["quality"] = 1,
+		},
+		[127991] = {
+			["enUS"] = "Felmouth Frenzy",
+			["texture"] = 132107,
+			["quality"] = 1,
 		},
 		[134568] = {
 			["enUS"] = "Huge Mossgill Perch",
 			["canopen"] = false,
-			["texture"] = 350868,
-			["quest"] = true,
 			["quality"] = 1,
-		},
-		[127759] = {
-			["color"] = "ff0070dd",
-			["enUS"] = "Felblight",
-			["quality"] = 3,
-			["texture"] = 576311,
+			["quest"] = true,
+			["texture"] = 350868,
 		},
 		[127994] = {
 			["color"] = "ff0070dd",
 			["enUS"] = "Felmouth Frenzy Lunker",
-			["quality"] = 3,
 			["texture"] = 132103,
+			["quality"] = 3,
 		},
-		[127991] = {
-			["enUS"] = "Felmouth Frenzy",
-			["quality"] = 1,
-			["texture"] = 132107,
+		[127759] = {
+			["color"] = "ff0070dd",
+			["enUS"] = "Felblight",
+			["texture"] = 576311,
+			["quality"] = 3,
 		},
 	},
-	["FishSchools"] = {
-		[641] = {
-			{
-				["y"] = 0.6958590428832376,
-				["x"] = 0.4698031428195008,
-				["sidx"] = 641000,
-				["kind"] = 0,
-				["count"] = 1,
-				["fish"] = {
-					[134568] = 1,
-				},
-			}, -- [1]
-		},
-		[534] = {
-			{
-				["y"] = 0.5028248506417881,
-				["x"] = 0.446218222459582,
-				["sidx"] = 534000,
-				["kind"] = 0,
-				["fish"] = {
-					[127759] = 1,
-					[127994] = 2,
-					[127991] = 6,
-				},
-				["count"] = 9,
-			}, -- [1]
-		},
+	["KnownZones"] = {
+		[1527] = "Uldum",
+		[641] = "Thas'talah Basin",
+		[1355] = "Chitterspine Caverns",
+		[534] = "Hellfire Citadel",
 	},
 }
